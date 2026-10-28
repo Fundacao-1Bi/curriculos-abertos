@@ -8,15 +8,16 @@ import re
 
 
 def words_from_page(page):
-    return [{'x0':w[0],'top':w[1],'x1':w[2],'bottom':w[3],'text':w[4]} for w in page.get_text('words',sort=True)]
+    return [{'x0':w[0],'top':w[1],'x1':w[2],'bottom':w[3],'text':w[4],'block':w[5],'line':w[6],'word':w[7]} for w in page.get_text('words',sort=True)]
 
 
 def words_text(words):
     lines={}
     for word in words:
-        key=round(word['top']/3)*3
+        key=(word.get('block',0),word.get('paragraph',0),word['line']) if 'line' in word else ('geometry',round(word['top']/3)*3)
         lines.setdefault(key,[]).append(word)
-    return '\n'.join(' '.join(w['text'] for w in sorted(row,key=lambda w:w['x0'])) for _,row in sorted(lines.items()))
+    ordered=sorted(lines.values(),key=lambda row:(min(w['top'] for w in row),min(w['x0'] for w in row)))
+    return '\n'.join(' '.join(w['text'] for w in sorted(row,key=lambda w:w['x0'])) for row in ordered)
 
 
 def clipped_words(words,left,top,right,bottom):
@@ -26,6 +27,9 @@ def clipped_words(words,left,top,right,bottom):
 def declared_columns(source,page_number,page,words,code_re,make_item,clean_text):
     output=[]
     rules=[r for r in source.get('layout_rules',[]) if r.get('page_start',0)<=page_number<=r.get('page_end',0)]
+    if any(rule.get('mode')=='separate_ruled_row' for rule in rules):
+        from es_ei_rows import extract_rows
+        output.extend(extract_rows(source,page,page_number,code_re,make_item,clean_text))
     for rule in rules:
         if rule.get('mode') not in ('separate_code_text','combined_code_text','trailing_code_text'):continue
         code_left,code_right=rule['code_x'];text_left,text_right=rule['text_x'];y_min,y_max=rule.get('y_range',[20,page.rect.height-20])
@@ -75,15 +79,19 @@ def recover_missing_columns(source,page_number,page,words,tables,existing,code_r
         center=((word['x0']+word['x1'])/2,(word['top']+word['bottom'])/2)
         represented=False
         for item in existing:
-            if item.get('code')!=code:continue
+            if not item.get('code') or not item['code'].startswith(code):continue
             bbox=item['evidence'][0].get('bbox')
             if bbox and bbox[0]-2<=center[0]<=bbox[2]+2 and bbox[1]-2<=center[1]<=bbox[3]+2:
                 represented=True;break
         if represented:continue
         boxes=[]
         for table_index,table in enumerate(tables):
+            extracted_rows=table.extract()
+            learning_columns=learning_column_indices(table,extracted_rows)
+            if source.get('id')=='pb-proposta-ei-ef' and not learning_columns:continue
             for row_index,row in enumerate(table.rows):
                 for cell_index,box in enumerate(row.cells):
+                    if learning_columns and cell_index not in learning_columns:continue
                     if box and box[0]-1<=center[0]<=box[2]+1 and box[1]-1<=center[1]<=box[3]+1:
                         boxes.append((box,table.bbox,table_index,row_index,cell_index))
         if not boxes:continue
@@ -127,14 +135,27 @@ def normalize_native_page(page):
     original_rotation=page.rotation
     if page.rotation:page.remove_rotation()
     directions=collections.Counter()
-    for block in page.get_text('dict').get('blocks',[]):
+    for block in page.get_text('dict',flags=__import__('pymupdf').TEXTFLAGS_DICT & ~__import__('pymupdf').TEXT_PRESERVE_IMAGES).get('blocks',[]):
         for line in block.get('lines',[]):
             direction=tuple(round(number,2) for number in line.get('dir',(1,0)))
             directions[direction]+=sum(len(span.get('text','')) for span in line.get('spans',[]))
     dominant,weight=directions.most_common(1)[0] if directions else ((1,0),0)
     angle={(0.0,-1.0):90,(0.0,1.0):270,(-1.0,0.0):180}.get(dominant,0)
     transform=None
-    if angle and weight>=0.6*sum(directions.values()):
+    if angle and weight>=128 and weight>=0.6*sum(directions.values()):
         page.set_rotation(angle);transform=list(page.remove_rotation())
     else:angle=0
     return {'method':'pdf-rotation-and-dominant-glyph-direction-v1','original_rotation':original_rotation,'native_body_rotation_applied':angle,'inverse_display_matrix':transform,'source_file_modified':False}
+
+
+def learning_column_indices(table,rows):
+    """A merged full-table heading applies to every covered child column."""
+    columns=set();width=table.bbox[2]-table.bbox[0]
+    for row_index,row in enumerate(rows[:4]):
+        for cell_index,value in enumerate(row):
+            if not value or not re.match(r'^(?:OBJETIVOS(?: DE APRENDIZAGEM)?|HABILIDADES)(?:$|[ /\n])',value.strip(),re.IGNORECASE):continue
+            box=table.rows[row_index].cells[cell_index]
+            if box and box[2]-box[0]>.8*width and sum(bool(cell) for cell in row)==1:
+                columns.update(range(max(len(r) for r in rows)))
+            else:columns.add(cell_index)
+    return columns

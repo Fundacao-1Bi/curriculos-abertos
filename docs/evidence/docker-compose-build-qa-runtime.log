@@ -1,0 +1,132 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 661B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.01kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/node:22.23.4-bookworm-slim
+#3 DONE 0.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 264B done
+#4 DONE 0.0s
+
+#5 [dependencies 1/4] FROM docker.io/library/node:22.23.4-bookworm-slim@sha256:0ad4c2bbb7c43cdb0b7b1726ef3a8485174f477596942378b548ee60d4e229e6
+#5 resolve docker.io/library/node:22.23.4-bookworm-slim@sha256:0ad4c2bbb7c43cdb0b7b1726ef3a8485174f477596942378b548ee60d4e229e6 done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 51.08MB 0.3s done
+#6 DONE 0.4s
+
+#7 [dependencies 2/4] WORKDIR /app
+#7 CACHED
+
+#8 [dependencies 3/4] COPY package.json package-lock.json ./
+#8 DONE 0.0s
+
+#9 [dependencies 4/4] RUN npm install --global npm@11.6.2 && npm ci
+#9 4.489 
+#9 4.489 removed 11 packages, and changed 70 packages in 4s
+#9 4.489 
+#9 4.489 28 packages are looking for funding
+#9 4.489   run `npm fund` for details
+#9 6.807 npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+#9 11.97 
+#9 11.97 added 463 packages, and audited 464 packages in 7s
+#9 11.97 
+#9 11.97 173 packages are looking for funding
+#9 11.97   run `npm fund` for details
+#9 11.97 
+#9 11.97 found 0 vulnerabilities
+#9 11.97 npm notice
+#9 11.97 npm notice New major version of npm available! 11.6.2 -> 12.2.1
+#9 11.97 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+#9 11.97 npm notice To update run: npm install -g npm@12.2.1
+#9 11.97 npm notice
+#9 DONE 12.3s
+
+#10 [build 1/2] COPY . .
+#10 DONE 0.9s
+
+#11 [build 2/2] RUN npm run build
+#11 0.152 
+#11 0.152 > curriculos-abertos@0.1.0 build
+#11 0.152 > next build
+#11 0.152 
+#11 0.317 ▲ Next.js 16.4.3 (Turbopack)
+#11 0.336 ✓ Running next.config.ts took 19ms
+#11 0.345 
+#11 0.360   Creating an optimized production build ...
+#11 2.933 ✓ Compiled successfully in 2.6s
+#11 2.936   Running TypeScript ...
+#11 6.353   Finished TypeScript in 3.4s ...
+#11 6.355   Collecting page data using 9 workers ...
+#11 6.876   Generating static pages using 9 workers (0/4) ...
+#11 6.955   Generating static pages using 9 workers (1/4) 
+#11 6.970   Generating static pages using 9 workers (2/4) 
+#11 6.971   Generating static pages using 9 workers (3/4) 
+#11 6.972 ✓ Generating static pages using 9 workers (4/4) in 97ms
+#11 6.975   Finalizing page optimization ...
+#11 6.981 
+#11 6.983 Route (app)
+#11 6.983 ┌ ƒ /
+#11 6.983 ├ ○ /_not-found
+#11 6.983 ├ ƒ /admin
+#11 6.983 ├ ƒ /analises
+#11 6.983 ├ ƒ /api/admin/[...path]
+#11 6.983 ├ ƒ /api/auth/[...all]
+#11 6.983 ├ ƒ /api/health
+#11 6.983 ├ ƒ /api/metrics
+#11 6.983 ├ ƒ /api/ready
+#11 6.983 ├ ƒ /api/v1/[[...path]]
+#11 6.983 ├ ƒ /aprendizagens/[id]
+#11 6.983 ├ ƒ /buscar
+#11 6.983 ├ ƒ /comparar
+#11 6.983 ├ ƒ /contribuir
+#11 6.983 ├ ƒ /curriculos/[id]
+#11 6.983 ├ ƒ /desenvolvedores
+#11 6.983 ├ ƒ /desenvolvedores/openapi
+#11 6.983 ├ ƒ /downloads
+#11 6.983 ├ ƒ /fontes
+#11 6.983 ├ ○ /icon.svg
+#11 6.983 ├ ƒ /mcp
+#11 6.983 ├ ƒ /panorama/[id]
+#11 6.983 ├ ƒ /publicacoes
+#11 6.983 └ ƒ /ufs/[uf]
+#11 6.983 
+#11 6.983 
+#11 6.983 ○  (Static)   prerendered as static content
+#11 6.983 ƒ  (Dynamic)  server-rendered on demand
+#11 6.983 
+#11 DONE 7.0s
+
+#12 [production 3/6] COPY pipeline/requirements.txt /tmp/pipeline-requirements.txt
+#12 CACHED
+
+#13 [production 4/6] RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-venv poppler-utils tesseract-ocr tesseract-ocr-por tesseract-ocr-osd ca-certificates && rm -rf /var/lib/apt/lists/*  && python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r /tmp/pipeline-requirements.txt && npm install --global npm@11.6.2
+#13 CACHED
+
+#14 [production 5/6] COPY --from=build --chown=node:node /app ./
+#14 DONE 2.7s
+
+#15 [production 6/6] RUN mkdir -p /app/var /app/data/raw /app/data/extracted && chown -R node:node /app/var /app/data
+#15 DONE 0.4s
+
+#16 exporting to image
+#16 exporting layers
+#16 exporting layers 15.6s done
+#16 exporting manifest sha256:7cd3111ce7f1c4e157b0373bfc3c2c9b088e7716efb5e93d5eceb8ff47efd21f done
+#16 exporting config sha256:96e87c5db4e2edafd4e071d15c2f1b415e4ef19aae7139a72aac8d7ac49b1a70 done
+#16 exporting attestation manifest sha256:d5fb34c102d9e054b8df1b051c95343e7efdf1aa3d6c151f84e62e42fd8253db done
+#16 exporting manifest list sha256:8a09232ce9636cd675f9b156eac160609125a420b33a98fc99337fab8f6cc3df done
+#16 naming to docker.io/library/curriculos-abertos:local done
+#16 unpacking to docker.io/library/curriculos-abertos:local
+#16 unpacking to docker.io/library/curriculos-abertos:local 3.9s done
+#16 DONE 19.6s
+
+#17 resolving provenance for metadata file
+#17 DONE 0.0s
+ curriculos-abertos:local  Built

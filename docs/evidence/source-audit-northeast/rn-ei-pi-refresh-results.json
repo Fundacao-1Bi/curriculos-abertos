@@ -1,0 +1,44 @@
+{
+  "at": "2026-10-28T05:24:41.936434+00:00",
+  "actor_type": "automated",
+  "results": [
+    {
+      "source_id": "rn-documento-ei-2018",
+      "artifact_sha256": "3bd81df59cc129ec6cbf0646125fa5f76fdedbaa455b11d0363d845c9f14483b",
+      "extraction_revision": "page-cell-v1.4.0",
+      "extraction_config_sha256": "c71a10406ea43aedd1e4e7baf208c8d454bb951fd53c060f2c270c923e7c7f10",
+      "document_pages": 177,
+      "processed_pages": 177,
+      "coded_candidates": 126,
+      "ocr_pending": false,
+      "warnings": [
+        {
+          "confidence": 0.58,
+          "issue": "ocr_orientation_low_confidence",
+          "page": 1,
+          "status": "requires_documentary_review",
+          "suggested_rotation": 0
+        },
+        {
+          "issue": "ocr_used",
+          "method": "tesseract-tsv-por",
+          "ocr_cache_key": "186fa7b5e8780c1fe36aafef036667ab3e35e5a59930dd269f0764c673da9ee3",
+          "page": 1,
+          "status": "requires_documentary_review"
+        }
+      ]
+    },
+    {
+      "source_id": "pi-curriculo-ei-ef",
+      "artifact_sha256": "609e955a2774afe6b25451b6d597005fcedc9b769cbf1a00916caaaab40f426e",
+      "extraction_revision": "page-cell-v1.4.0",
+      "extraction_config_sha256": "3718e44326ed2d552bd6fa30069306d43b01605e0ab55e4490544625a3ac3bd9",
+      "document_pages": 313,
+      "processed_pages": 313,
+      "coded_candidates": 1632,
+      "ocr_pending": false,
+      "warnings": []
+    }
+  ],
+  "whole_uf_reconciliation_asserted": false
+}

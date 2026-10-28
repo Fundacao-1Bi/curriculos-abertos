@@ -1009,7 +1009,16 @@
           "uf": "GO"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "e9864fbe24048e2b0be28f4cc0849bad89130140502281fbef867e0175463863",
+        "observed_source_structure": "16 objetivos explicitamente codificados nas três colunas de grupos etários; fonte distingue códigos locais com sufixos de códigos base.",
+        "findings": [],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "go-dcgo-ef-ai",
@@ -1744,7 +1753,16 @@
           "uf": "GO"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "accbe6ed5bb8d65c8d349f98762611f55c9e3b89f7dd694a33dd10ee733d9bdc",
+        "observed_source_structure": "11 habilidades no quadro Geografia 1º Ano; exemplos de códigos no texto introdutório acima não entram no denominador do quadro.",
+        "findings": [],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "go-dcgoem-portal-atual",
@@ -1854,7 +1872,19 @@
           "uf": "GO"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "f0a3ace9c8b37b8cef44de2b687a9de3285a0b83d742649c70d274754eb23bda",
+        "observed_source_structure": "Quadro de objetivos de aprendizagem GO-EMLGG... adjacentes à habilidade BNCC.",
+        "findings": [
+          "Gramática local GO-EMLGG101A omitida no cache v1.3.",
+          "Texto contém ligaturas Type3 sem Unicode correto; U+001C/U+001D não são texto oficial aceitável."
+        ],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "mt-drc-ei-primario-2018",
@@ -2249,7 +2279,18 @@
           "uf": "MT"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "293064817ba5125bc439818d894c8ba8cb0bb47d2d4473b2596a4cb01225964e",
+        "observed_source_structure": "Nove objetivos nas três colunas de grupos etários do campo Traços, sons, cores e formas.",
+        "findings": [
+          "Cache v1.3 omite os três objetivos EI03TS01/EI03TS02/EI03TS03 da terceira coluna."
+        ],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "mt-drc-ef-ai-primario-2018",
@@ -2597,7 +2638,16 @@
           "uf": "MT"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "805fa8f7fc264fd61c14949cc469317e03ec4746fcb60a951438091c1a13e1e4",
+        "observed_source_structure": "Cinco habilidades EF01MA01..05, coluna central HABILIDADES, 1º Ano explícito; objetos na direita não são objetivos.",
+        "findings": [],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "mt-drc-em-2021",
@@ -2992,7 +3042,16 @@
           "uf": "MT"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "8ae3c5eb0730ddba35c7bd6ac14de4fa0b7324577b9f458b583085ae2c36f23f",
+        "observed_source_structure": "Seis habilidades locais com sufixos .1.PDCMT/.1.PCDMT, texto na esquerda e objetos do conhecimento na direita. Não corrigir grafia PCDMT para PDCMT sem ato editorial.",
+        "findings": [],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "ms-cr-eief-v110",
@@ -3615,7 +3674,18 @@
           "uf": "MS"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "feca6aacdd62aa09f76b7c73a3e2bb3bd71bbc5fdd46daf95bb107d8dfaa1cb6",
+        "observed_source_structure": "Dez objetivos EI, seis .s. e quatro .n.00 com sequências locais distintas; ações didáticas na direita não são objetivos.",
+        "findings": [
+          "Cache v1.3 trunca sufixos com espaços e colapsa quatro códigos locais .n.07/.08/.09/.10."
+        ],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "ms-cr-eief-v110",
@@ -3668,7 +3738,18 @@
           "uf": "MS"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "fcf6532b373a300e6b5cb4a0044c0cfe090250c9b474c66e46a108bead134313",
+        "observed_source_structure": "Quadro LP 2º Ano com três habilidades MS.EF02LP10.s.10,11.s.11,12.s.12; última continua na página seguinte. Referências MS.EF01LP15.s.15 aparecem nas ações didáticas.",
+        "findings": [
+          "Cache v1.3 não extrai nenhuma das três habilidades da coluna Habilidades."
+        ],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "ms-cr-em-v11",
@@ -4566,7 +4647,18 @@
           "uf": "MS"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "d21f302ab995dcca111ff6fec24805162d5aa14212aafd9fbe573df8c1341b5c",
+        "observed_source_structure": "Quadro de seriação por agrupamentos, códigos apenas; 1º Ano explícito, sem texto de habilidade no quadro.",
+        "findings": [
+          "Cache v1.3 transforma referências em habilidades com textos compostos de outros códigos e não preserva seriação explicitada."
+        ],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "pr-referencial-eief-2025",
@@ -4676,7 +4768,18 @@
           "uf": "PR"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "7451259ef34cd61086efe9c487ed6a47dc7421a66be68d24ad3bb41b5a719d9d",
+        "observed_source_structure": "EI crianças bem pequenas 1 ano: um objetivo BNCC EI02EF01 e onze objetivos estaduais sem código na mesma coluna; saberes na esquerda.",
+        "findings": [
+          "Adapter PR deve estruturar todos os onze objetivos, sem promover saberes e conhecimentos."
+        ],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "pr-referencial-eief-2025",
@@ -5044,7 +5147,18 @@
           "uf": "PR"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "aff9bc26c1ebb0198108d86a372f120fc9594ab3875a300ebd5d4c157fa330f1",
+        "observed_source_structure": "Arte 1º Ano explícito: cinco códigos EF15AR13..17; três parágrafos estaduais adicionais sem código.",
+        "findings": [
+          "Posicionamento oficial 1º Ano precisa prevalecer ao bloco 1–5 derivado do código."
+        ],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "pr-referencial-em-volume2-atual",
@@ -5382,7 +5496,16 @@
           "uf": "PR"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "c017930dae32b36a77a23d0770090d04c015e0fd4037ca0d0c83a10ff65dfe91",
+        "observed_source_structure": "Cinco habilidades LGG centrais, competência 2 na esquerda e objetos por componente na direita; fronteiras de células preservam tipos distintos.",
+        "findings": [],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "rs-rcg-ei-2018",
@@ -6248,7 +6371,18 @@
           "uf": "RS"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "cf3469a322bdd20f311ce35f3cc6df2672397a0a7784c70fc13d7f8f2b0fcfea",
+        "observed_source_structure": "Nove objetivos: três BNCC e seis RS em colunas separadas.",
+        "findings": [
+          "Cache v1.3 duplica cinco locais e um nacional e omite EI01EO03RS-01; deduplicar sozinho ainda perderia um objetivo."
+        ],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "rs-rcg-ef",
@@ -6717,7 +6851,18 @@
           "uf": "RS"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "33861cda5532869af835a33b9aba8a65d996e10627da64d60aecaeb0c676c38e",
+        "observed_source_structure": "Arte 1º e 2º Ano explícito, habilidades nacionais e estaduais em colunas distintas; última linha continua próxima página.",
+        "findings": [
+          "Posicionamento dos locais RS12 deve ser 1–2, não 1–5."
+        ],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "rs-rcg-em",
@@ -7055,7 +7200,18 @@
           "uf": "RS"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "44187a0f0081e1ed0fbcb0a676745d8e528921f9761acbaffa2b57b0674d7cbb",
+        "observed_source_structure": "Habilidades nacionais na esquerda, objetivos contextualizados sem código na coluna central e anos na direita.",
+        "findings": [
+          "Objetivos locais sem código e anos explícitos precisam estruturação; códigos nacionais sozinhos não completam a parte."
+        ],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "sc-cb-eief-2019-atual",
@@ -7621,7 +7777,16 @@
           "uf": "SC"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "f89350fc6613123c9fe8a693bd113843cb9b4529487ff7e2930eb478df921d3c",
+        "observed_source_structure": "Nove objetivos EI no campo Espaços, tempos, quantidades, relações e transformações em três colunas etárias.",
+        "findings": [],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "sc-cb-eief-2019-atual",
@@ -7674,7 +7839,18 @@
           "uf": "SC"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "f76e9dab0f11fa3247a7ea94f0b30663ebacb17296e1a94df9f36e1c6598478e",
+        "observed_source_structure": "Seis habilidades LP 3º a 5º Ano sem código, coluna central; conteúdos na direita.",
+        "findings": [
+          "Resolvido por adaptador sc-explicit-skill-columns: seis registros factuais desta página e demais organizadores."
+        ],
+        "completeness_claim": false
+      }
     },
     {
       "source_id": "sc-cb-em-caderno-2",
@@ -8147,7 +8323,19 @@
           "uf": "SC"
         }
       ],
-      "cache_exists": true
+      "cache_exists": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "method": "Renderização do PDF oficial + leitura de cabeçalhos/colunas/códigos/texto e confronto com itens v1.3",
+        "image_sha256": "a4067a36172c85cad3e59ba4fcc4319686cf6c725cd0c558cfa4c3d67ed63a11",
+        "observed_source_structure": "Habilidade sem código demandada da consulta pública entre EM13MAT313 e EM13MAT101; campos conceituais na esquerda.",
+        "findings": [
+          "Resolvido por adaptador SC EM: quatro habilidades adicionais nas páginas 30/32/33."
+        ],
+        "completeness_claim": false
+      }
     }
-  ]
+  ],
+  "scope_note": "Amostragem efetivamente inspecionada nas seis UFs acima, complementada por auditoria integral dos objetivos DF registrada separadamente. Não constitui reconciliação de todos os componentes/partes."
 }

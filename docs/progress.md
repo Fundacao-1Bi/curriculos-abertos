@@ -27,3 +27,30 @@ Estado geral: em execução. Nenhum requisito de lançamento declarado verificad
 - Locknpm regenerado emcontextolimpo para depsopcionaisLinux; adicionarqualquerdependência pede regenerarsemnode_modules. packageManager11.6.2fixado. ÚltimoparserQA stream-json3.7.0 já incluído.
 - FontesALComputação de blog comprocedênciapendente permanecem pesquisa privada/nãopublicáveis, requisito continua no denominador. CAPTCHA/artefatocorrompido/HTTPHTML/lacunasnormativas estãoem sourcesreports; parser/estrutura incompletos são trabalho interno, nãobloqueioexterno.
 - Próximo: concluir v1.4+shards/import, consolidarestruturaportal, rebuildimagemcódigofinal, produçãoComposeisolada/restart/backuprestore, QA integral e auditor/gatebloqueante.
+
+## Checkpoint operacional — 2026-10-28 02:06 BRT
+
+- Build PADRÃO Docker Compose executado com sucesso, imagem técnica curriculos-abertos:local SHA69060a8a...; runtimearm64Node22.23.4/npm11.6.2/Python3.11.2/PyMuPDF1.26.7 verificado. EndpointsDockerbuild/pull deixaram de impedir execução após obtençãoRegistrypúblicoSHA+loadlocal. Imagemtécnica não é o código final.
+- Backup lógico privado112MiB e restauração em volumeNOVO verificados com21tabelasduráveis+digests iguais. Cutoverprincipal dedicado55437 paraPG17.11Bookwormconcluído: collation2.36=actual, zeroíndicesinválidos. Oldvolumecurriculos-abertos_database e envrollback preservados. ContentiZAP5432 intacto.
+- App/workerHOST foram parados comSIGTERM para cutover e continuamPARADOS aguardando buildcom008/009+adminingest. Não apresentar localhost3000 como ativo neste intervalo.
+- Migrações001..009 aplicadas no principal.008corrige exposição de preparação: lifecycleprivado/público fora snapshotimutável, serviços públicos404para prepared, publicação atomizada/históricoretido.39/39testes reais/contratos passaram antesaplicação.009normaliza espaços nos códigos sópara busca.
+- Nova integração obrigatória identificada: jobingest deve importar candidatoPREPARED do seucheckpoint específico e permitirinspeção/validação/publicaçãoadmin semcorreçãofictícia; opsimplementa. Rollback deve apenas alternarversõesjápublicadas.
+- ArtefatoSHARDED técnico ca-9d9b45e82947bd8fe35c entregue e inspecionadointegralmente:20.612itens/2.851relações/7partes,117.288.380Bdecoded, zeroerros/hashesconferidos; candidatoPARCIAL. DefaultDB permanececa-77fb...38.322itenspara evitar regressãodecobertura.
+- Nativev1.4+OCR/layoutfixes seguem em var/pipeline-national-v14.log e docs/data-progress.md. OCRNorte2.157páginas executado; transcrição/colunasAM ainda sendo corrigidas, semconfundirzeroerrodeexecuçãocomreconciliação.
+- Sidecars integrais reais:AC2.191;PR3.971;DF2.659;RSEM121;BR1.186nós+1.721skills;SC EPT/Magistério6.314 emintegração, SC C3 emextração. FonteSPII2026anexos eRN DCEC819padquiridosnovamentecomproveniênciaprimária.
+- Git checkpoint4f7056ca581b03dfd91bd8e0ca817f4196f5553e. Alteraçõesposteriores permanecem naárvore; arquivosgeradospycache removidos apenasdoíndice e agoraignorados, originais/cacheslocais preservados.
+- Próximo: fecharadminingest e correçõesv1.4; importar artefatofinalpreparado; buildincremental exato; iniciarapp/worker; executar QAprivacidade/API/MCP/browseradmin/public, instalaçãoComposeisolada+persistência+backuprestore+desempenho; auditar/gate. MVPnacionalcontinua não concluído.
+
+## Retomada e integração — 2026-10-28 10:47 BRT
+
+O limite de uso interrompeu os agentes; o usuário informou o reset e autorizou a continuação. Todas as frentes essenciais foram reativadas com seus contratos e arquivos existentes. Não foi reiniciado o projeto nem descartado trabalho.
+
+- Serviços Compose permaneceram ativos: app/worker saudáveis em localhost:3000, banco principal PG17.11 em55437, default `ca-77fb8076598b567e1ba3`. Serviço ContentiZAP5432 preservado.
+- Nova imagem técnica `sha256:acd1b70caff6453a0f5ba465ac97a9fcca29a73c1a90746a69409ede8adbb335` construída normalmente. Fingerprint da imagem e host coincidiu no build; pipeline ainda receberá correções, logo a imagem não é a distribuição final.
+- Administração em navegador real PASSOU desktop/mobile após corrigir foco das regiões roláveis. AXE sem violações; login/erro/logout, fonte/registro com publicação fixa, rascunho de redação idêntica validado uma vez, contribuição e autoria automatizada conferidos. Conta temporária e sessões removidas. Evidências: `admin-browser-verification.json`, `admin-browser-scroll-fix.log`. Execução final via wrapper do gate ainda pendente.
+- Domínio concluiu48/48 testes reais sem skips; migração010 de busca por palavras quebradas aplicada ao principal. Textos originais e compostos legítimos preservados. Latência transitória de14s em consulta individual está em investigação, sem atribuição causal não provada.
+- Ops26checks de autenticação/autorização e lifecycle privado/público passaram. Fluxo J11 real foi interrompido pelo verificador de evidência PR; reparo preserva3971 IDs/textos e troca somente uma evidência ampla por7spans originais. Reteste do job em execução, com pausa/restart/retomada/publish/rollback.
+- UI agora preserva parent_id ao reaplicar filtros e exportar; área é filtro explícito. Suíte pública inclui navegação nas27UFs e hierarquia sem código, sem skips. Publicação antiga ainda falha por AM sem registros e BR sem hierarquia; não remover esses critérios para obter verde.
+- Pipeline consolida artefato sharded integral após GO/MT/AM/PR e sidecars. PB1983registros, DF3065 e SC novas hierarquias/objetivos em verificação/incorporação; complementos PE atuais estão em aquisição/inventário legítimos. Nada disso é automaticamente UF pronta.
+- Auditor exige schema_path+schema_sha256 e provas finais de18tipos. Sequência de distribuição isolada: qa-production → qa-reimport (downloads reais+DB descartável) → qa-recovery. Nenhuma dessas provas finais foi substituída por descrição ou existência de script.
+- Dados obrigatórios ausentes e reconciliações internas continuam impedindo ACE-01/02. Gate anterior reprovou corretamente e caso negativo controlado passou. Próximo: artefato consolidado, inspeção integral, publicação administrativa e todas as jornadas/gates sobre a mesma versão e código.

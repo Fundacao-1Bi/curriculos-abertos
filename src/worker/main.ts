@@ -1,10 +1,12 @@
 import { spawn, type ChildProcess } from 'node:child_process';
 import { mkdir, readFile, rename } from 'node:fs/promises';
-import { dirname } from 'node:path';
+import { existsSync } from 'node:fs';
+import { dirname,resolve } from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { pool } from '../db/client';
 import { claimJob, enqueueJob, jobEvent, safeExportPath, type Job } from './jobs';
 import { streamExportToFile } from '../domain/stream-exports';
+import {completedIngestionCheckpoint,importPreparedIngestion} from './ingestion';
 import type { Query } from '../shared/contracts';
 const owner=`worker-${randomUUID()}`;
 let stopping=false;
@@ -25,8 +27,10 @@ async function runPipeline(job:Job) {
     if(!/^[a-zA-Z0-9_.:-]{1,200}$/.test(job.payload.source))throw new Error('ID da fonte inválido.');
     args.push('--source',job.payload.source);
   }
+  if(job.type==='ingest'&&job.payload.cached_only===true)args.push('--cached-only');
   // Every parameter is a discrete argv; source data never becomes a shell program.
-  const child=spawn(process.env.PYTHON_BIN || 'python3',args,{stdio:['ignore','pipe','pipe'],env:process.env});
+  const python=process.env.PIPELINE_PYTHON || process.env.PYTHON_BIN || (existsSync('var/venv-pipeline/bin/python')?resolve('var/venv-pipeline/bin/python'):'python3');
+  const child=spawn(python,args,{stdio:['ignore','pipe','pipe'],env:process.env});
   activeChild=child;
   let buffer='',stderr='',outputBytes=0;
   const timeout=setTimeout(()=>terminateChild(child),Number(process.env.JOB_TIMEOUT_SECONDS || 7200)*1000);
@@ -79,7 +83,8 @@ async function execute(job:Job) {
     await rename(temporary,path);
     return {...result,storage_key};
   }
-  if(job.type==='ingest' || job.type==='source-check')return runPipeline(job);
+  if(job.type==='ingest'){if(!await completedIngestionCheckpoint(job.id))await runPipeline(job);return importPreparedIngestion(job,owner);}
+  if(job.type==='source-check')return runPipeline(job);
   if(job.type==='validate') {
     const { validateDraft }=await import('../admin/curation');
     if(typeof job.payload.draft_id!=='string')throw new Error('Draft ausente.');

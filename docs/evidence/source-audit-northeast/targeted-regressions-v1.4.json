@@ -1,0 +1,94 @@
+{
+  "at": "2026-10-28T05:00:01.349083+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast",
+  "extraction_revision": "page-cell-v1.4.0",
+  "checks": [
+    {
+      "source_id": "ce-dcrc-ei-ef-2019",
+      "page": 344,
+      "code": "EF89EF05",
+      "expected_from": "Original physical semantic HABILIDADES row, independent of extracted IDs",
+      "result": "source_skill_code_prose_preserved",
+      "extracted_text": "Identificar as transfor- mações históricas do fenômeno esportivo e discutir alguns de seus problemas (doping, corrupção, violência etc.) e a forma como as mídias os apresentam.",
+      "source_cell": "(EF89EF05) Identificar as transfor- mações históricas do fenômeno esportivo e discutir alguns de seus problemas (doping, corrupção, violência etc.) e a forma como as mídias os apresentam.",
+      "item_id": "ca:ce-dcrc-ei-ef-2019:05342a26e0dfe6b23ef9"
+    },
+    {
+      "source_id": "ce-dcrc-ei-ef-2019",
+      "page": 344,
+      "code": "EF89EF06",
+      "expected_from": "Original physical semantic HABILIDADES row, independent of extracted IDs",
+      "result": "source_skill_code_prose_preserved",
+      "extracted_text": "Verificar locais disponí- veis na comunidade para a prática de esportes e das demais práticas corporais tematizadas na escola, propondo e produzindo alternativas para utilizá-los no tempo livre.",
+      "source_cell": "(EF89EF06) Verificar locais disponí- veis na comunidade para a prática de esportes e das demais práticas corporais tematizadas na escola, propondo e produzindo alternativas para utilizá-los no tempo livre.",
+      "item_id": "ca:ce-dcrc-ei-ef-2019:9a650b11ae9623e44782"
+    },
+    {
+      "source_id": "ce-dcrc-ei-ef-2019",
+      "page": 344,
+      "code": "EF89EF07",
+      "expected_from": "Original physical semantic HABILIDADES row, independent of extracted IDs",
+      "result": "source_skill_code_prose_preserved",
+      "extracted_text": "Experimentar e fruir um ou mais programas de exercícios físicos, identificando as exigências corporais desses diferentes progra- mas e reconhecendo a importância de uma prática individualizada, adequada às características e neces- sidades de cada sujeito.",
+      "source_cell": "(EF89EF07) Experimentar e fruir um ou mais programas de exercícios físicos, identificando as exigências corporais desses diferentes progra- mas e reconhecendo a importância de uma prática individualizada, adequada às características e neces- sidades de cada sujeito.",
+      "item_id": "ca:ce-dcrc-ei-ef-2019:a1608676c484e1c2f7f5"
+    },
+    {
+      "source_id": "ce-dcrc-ei-ef-2019",
+      "page": 344,
+      "code": "EF89EF08",
+      "expected_from": "Original physical semantic HABILIDADES row, independent of extracted IDs",
+      "result": "source_skill_code_prose_preserved",
+      "extracted_text": "Discutir as transfor- mações históricas dos padrões de desempenho, saúde e beleza, considerando a forma como são apresentados nos diferentes meios (científico, midiático etc.).",
+      "source_cell": "(EF89EF08) Discutir as transfor- mações históricas dos padrões de desempenho, saúde e beleza, considerando a forma como são apresentados nos diferentes meios (científico, midiático etc.).",
+      "item_id": "ca:ce-dcrc-ei-ef-2019:8891b9d8b319ec0806e9"
+    },
+    {
+      "source_id": "ce-dcrc-ei-ef-2019",
+      "page": 344,
+      "code": "EF67EF06",
+      "result": "reference_not_fabricated_as_learning",
+      "limitation": "Generic source relations still need explicit structural representation; their disappearance as fake skills is not full source reconciliation."
+    },
+    {
+      "source_id": "ce-dcrc-ei-ef-2019",
+      "page": 344,
+      "code": "EF67EF07",
+      "result": "reference_not_fabricated_as_learning",
+      "limitation": "Generic source relations still need explicit structural representation; their disappearance as fake skills is not full source reconciliation."
+    },
+    {
+      "source_id": "pb-proposta-ei-ef",
+      "page": 310,
+      "code": "EF06MA07",
+      "result": "trailing_code_preceding_objective_preserved",
+      "item_id": "ca:pb-proposta-ei-ef:b97f2273f54cf4deae9a",
+      "source_cell": "Compreender, comparar e ordenar frações associadas às ideias\nde partes de inteiros e resultado de divisão, identificando frações\nequivalentes. (EF06MA06)\nReconhecer que os números racionais positivos podem ser\nexpressos nas formas fracionária e decimal, estabelecer relações\nentre essas representações, passando de uma representação\npara outra, e relacioná-los a pontos na reta numérica.\n(EF06MA07)",
+      "extracted_text": "Reconhecer que os números racionais positivos podem ser expressos nas formas fracionária e decimal, estabelecer relações entre essas representações, passando de uma representação para outra, e relacioná-los a pontos na reta numérica."
+    },
+    {
+      "source_id": "pb-proposta-ei-ef",
+      "page": 139,
+      "result": "local_uncoded_objective_structuring_pending",
+      "source_local_objective": "Pesquisar, apreciar e analisar formas contemporâneas de representação artística visual de artistas paraibanos, nordestinos, brasileiros e estrangeiros, em diferentes contextos históricos e matrizes estéticas e culturais",
+      "limitation": "No national code may be fabricated for local objective; preserve documented row references separately."
+    },
+    {
+      "source_id": "pb-proposta-ei-ef",
+      "page": 100,
+      "literal_code": "EF67PB01",
+      "heading_evidence_page": 99,
+      "heading": "6º Ano",
+      "result": "literal_non_national_code_requires_source_classification",
+      "limitation": "Preserve literal identifier and local objective context; no PB national component or6+7year mapping inferred."
+    }
+  ],
+  "summary": {
+    "correct_source_code_prose_pairs": 5,
+    "reference_codes_no_longer_fabricated": 2,
+    "open_structure_classification_checks": 2,
+    "whole_sources_reconciled_by_this_test": 0
+  },
+  "scope": "Specific regression anchors only; requires affected-range reprocessing/reconciliation before source-level acceptance."
+}

@@ -1,6 +1,6 @@
 {
   "kind": "admin",
-  "at": "2026-10-28T04:07:37.626Z",
+  "at": "2026-10-28T05:41:48.238Z",
   "base_publication": "ca-77fb8076598b567e1ba3",
   "checks": [
     {
@@ -32,6 +32,10 @@
       "result": "passed"
     },
     {
+      "name": "curator_cannot_control_ingestion_jobs",
+      "result": "passed"
+    },
+    {
       "name": "public_contribution_persisted",
       "result": "passed"
     },
@@ -48,7 +52,23 @@
       "result": "passed"
     },
     {
+      "name": "private_preconditions_exist_before_public_visibility_probes",
+      "result": "passed"
+    },
+    {
+      "name": "rollback_cannot_publish_prepared_revision",
+      "result": "passed"
+    },
+    {
+      "name": "prepared_snapshot_and_cached_export_unavailable_to_public_api_and_real_mcp",
+      "result": "passed"
+    },
+    {
       "name": "atomic_default_publication_changed",
+      "result": "passed"
+    },
+    {
+      "name": "published_revision_visible_to_public_api_and_real_mcp",
       "result": "passed"
     },
     {
@@ -61,6 +81,10 @@
     },
     {
       "name": "default_rollback_preserves_history",
+      "result": "passed"
+    },
+    {
+      "name": "published_history_remains_public_after_default_rollback",
       "result": "passed"
     },
     {

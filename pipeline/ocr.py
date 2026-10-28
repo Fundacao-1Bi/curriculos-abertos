@@ -64,10 +64,23 @@ def _configuration() -> dict[str, Any]:
     if psm not in (3, 6, 11, 12):
         raise OcrError('OCR_PSM must be one of 3, 6, 11 or 12.')
     tessdata = os.getenv('TESSDATA_PREFIX')
-    model_hashes: dict[str, str | None] = {}
+    if not tessdata:
+        try:
+            languages = subprocess.run([shutil.which('tesseract') or 'tesseract', '--list-langs'],
+                                       check=True, capture_output=True, timeout=5)
+            reported = (languages.stdout + languages.stderr).decode('utf-8', 'replace')
+            directory = re.search(r'List of available languages in "([^"\n]+)"', reported)
+            tessdata = directory.group(1) if directory else None
+        except (subprocess.SubprocessError, OSError):
+            tessdata = None
+        if not tessdata:
+            raise OcrError('Cannot identify the effective Tesseract model directory; configure TESSDATA_PREFIX explicitly.')
+    model_hashes: dict[str, str] = {}
     for name in language.split('+'):
-        path = Path(tessdata) / f'{name}.traineddata' if tessdata else None
-        model_hashes[name] = hashlib.sha256(path.read_bytes()).hexdigest() if path and path.is_file() else None
+        path = Path(tessdata) / f'{name}.traineddata'
+        if not path.is_file():
+            raise OcrError(f'Cannot fingerprint installed OCR language model {name}; configure TESSDATA_PREFIX explicitly.')
+        model_hashes[name] = hashlib.sha256(path.read_bytes()).hexdigest()
     try:
         threads = int(os.getenv('OCR_THREADS', '1'))
     except ValueError as error:

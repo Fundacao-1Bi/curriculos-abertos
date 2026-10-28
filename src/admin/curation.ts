@@ -84,6 +84,8 @@ export async function publishDraft(actor:Actor,id:string,reason:string) {
 export async function rollbackPublication(actor:Actor,id:string,reason:string) {
   if(actor.role!=='administrator')throw new AdminError(403,'forbidden','Somente administrador pode reverter publicação.');
   if(reason.length<8)throw new AdminError(422,'reason_required','Informe justificativa.');
+  const visibility=(await pool.query('SELECT status FROM publication_visibility WHERE publication_id=$1',[id])).rows[0]?.status;
+  if(visibility!=='published')throw new AdminError(409,'not_published','A reversão exige uma publicação anteriormente publicada. Use a ação explícita de publicação para um candidato preparado.');
   const result=await setDefaultPublication(id,{...actor,reason});
   await audit(actor,'rollback_default','publication',id,reason,{publication:result.previous_id},{publication:result.id});
   return result;

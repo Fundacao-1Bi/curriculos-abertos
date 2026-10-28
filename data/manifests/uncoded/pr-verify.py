@@ -3,7 +3,7 @@
 Does not import pr-extract.py or derive expected IDs from extracted records.
 """
 from pathlib import Path
-import fitz,json,re,hashlib,collections,unicodedata
+import fitz,json,re,hashlib,collections,unicodedata,runpy
 ROOT=Path(__file__).resolve().parents[3];OUT=ROOT/'docs/evidence/source-audit-pr';SID='pr-referencial-eief-2025'
 def norm(t):return re.sub(r'\s+',' ',t).strip()
 def compact(t):return ''.join(c for c in unicodedata.normalize('NFC',t) if c.isalnum())
@@ -79,5 +79,7 @@ def run():
   else:dverified.append(r['id'])
  dexp=set(digital['expected_item_ids']);dact={r['id'] for r in drecords}
  combined={'source_id':SID,'artifact_sha256':source['sha256'],'actor_type':'automated','actor_id':'agent:pr_adapter','volume1_expected':len(expected),'volume1_verified':len(verified),'volume2_expected':len(dexp),'volume2_verified':len(dverified),'total_expected':len(expected)+len(dexp),'total_actual':len(allrecords),'total_verified':len(verified)+len(dverified),'digital_missing':sorted(dexp-dact),'digital_extra':sorted(dact-dexp),'digital_errors':derr,'all_deterministic_checks_pass':report['all_deterministic_checks_pass'] and not(derr or dexp-dact or dact-dexp) and len(allrecords)==len(expected)+len(dexp),'human_review_performed':False}
+ imported=runpy.run_path(str(ROOT/'data/manifests/uncoded/pr-importer-verify.py'))['run']()
+ combined['central_importer_checks_pass']=imported['all_importer_checks_pass'];combined['all_deterministic_checks_pass']=combined['all_deterministic_checks_pass'] and imported['all_importer_checks_pass']
  save('pr-all-verification.json',combined);print(json.dumps(combined,ensure_ascii=False))
 if __name__=='__main__':run()

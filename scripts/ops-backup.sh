@@ -5,7 +5,7 @@ backup_stamp=$(date -u +%Y%m%dT%H%M%SZ)
 mkdir -p var/backups
 backup_dir=$(mktemp -d "var/backups/${backup_stamp}-XXXXXX")
 docker compose exec -T db sh -c 'pg_dump -U "$POSTGRES_USER" -d "$POSTGRES_DB" -Fc' > "$backup_dir/database.dump"
-tar -czf "$backup_dir/data.tgz" data/manifests data/bundles data/coverage-manifest.json
+tar -czf "$backup_dir/data.tgz" data/manifests data/bundles data/schema data/coverage-manifest.json
 # Public exports, worker checkpoints and OCR/source monitor state share the persistent storage volume.
 docker compose exec -T worker tar -czf - -C /app/var --exclude='./backups' . > "$backup_dir/storage.tgz"
 node --input-type=module - "$backup_dir" <<'JS'

@@ -1,5 +1,5 @@
 import * as domain from '@/domain/service';
-import { canonicalQuery, BatchSchema, CompareSchema, ContributionSchema, ExportSchema, ResultSchema, SearchResultSchema, LearningResultSchema, SourcesResultSchema, SourceResultSchema, RelationsResultSchema, BatchResultSchema, PanoramaResultSchema, ComparisonResultSchema, parseQuery } from '@/mcp/contracts';
+import { canonicalQuery, BatchSchema, CompareSchema, ContributionSchema, ExportSchema, ResultSchema, SearchResultSchema, LearningResultSchema, SourcesResultSchema, SourceResultSchema, RelationsResultSchema, BatchResultSchema, PanoramaResultSchema, ComparisonResultSchema, StructureResultSchema, parseQuery } from '@/mcp/contracts';
 import { checkRequest, errorResponse, HttpError, jsonResponse, readJson } from '@/mcp/http';
 import { recordRequestMetric } from '@/admin/metrics';
 import { openapi } from '@/mcp/openapi';
@@ -62,7 +62,7 @@ async function handle(request:Request,context:Context){
      return new Response(body,{headers:{...headers,'Content-Type':result.mime_type,'Content-Disposition':`attachment; filename="${result.filename.replace(/[^a-zA-Z0-9._-]/g,'_')}"`,'X-Content-SHA256':checksum,'X-Data-Publication':result.publication,'Cache-Control':'public, max-age=31536000, immutable','X-Content-Type-Options':'nosniff'}});
     }
     const result=job.result as Record<string,unknown>|null;
-    return jsonResponse(request,{id:job.id,status:job.status,progress:job.progress,error:job.error?'Falha no processamento. Solicite novamente ou informe este identificador.':null,publication:result?.publication??null,sha256:result?.sha256??null,size:result?.size??null,record_count:result?.record_count??null,download_url:job.status==='succeeded'?`/api/v1/exportacoes/${job.id}/arquivo`:null},200,headers);
+    return jsonResponse(request,{id:job.id,status:job.status,progress:job.progress,error:job.error?'Falha no processamento. Solicite novamente ou informe este identificador.':null,publication:result?.publication??job.publication,sha256:result?.sha256??null,size:result?.size??null,record_count:result?.record_count??null,download_url:job.status==='succeeded'?`/api/v1/exportacoes/${job.id}/arquivo`:null},200,headers);
    }
    throw new HttpError(405,'METHOD_NOT_ALLOWED','Método não permitido para esta operação.');
   }
@@ -88,7 +88,7 @@ async function handle(request:Request,context:Context){
     default:throw new HttpError(404,'NOT_FOUND','Operação não encontrada. Consulte /api/v1/openapi.json.');
    }
   }else throw new HttpError(405,'METHOD_NOT_ALLOWED','Método não permitido.');
-  const outputSchema=path[0]==='aprendizagens'?(request.method==='POST'?BatchResultSchema:path[1]?LearningResultSchema:SearchResultSchema):path[0]==='fontes'?(path[1]?SourceResultSchema:SourcesResultSchema):path[0]==='correspondencias'?RelationsResultSchema:path[0]==='bncc'?PanoramaResultSchema:path[0]==='comparacoes'?ComparisonResultSchema:ResultSchema;
+  const outputSchema=path[0]==='curriculos'&&path[2]==='estrutura'?StructureResultSchema:path[0]==='aprendizagens'?(request.method==='POST'?BatchResultSchema:path[1]?LearningResultSchema:SearchResultSchema):path[0]==='fontes'?(path[1]?SourceResultSchema:SourcesResultSchema):path[0]==='correspondencias'?RelationsResultSchema:path[0]==='bncc'?PanoramaResultSchema:path[0]==='comparacoes'?ComparisonResultSchema:ResultSchema;
   const parsed=outputSchema.safeParse(result);
   if(!parsed.success)throw new HttpError(502,'DOMAIN_CONTRACT','Resposta de domínio inválida. Informe o identificador da requisição.');
   const validated=parsed.data;

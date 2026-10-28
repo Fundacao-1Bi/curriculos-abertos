@@ -1,12 +1,12 @@
 {
-  "at": "2026-10-28T04:20:15.820017+00:00",
+  "at": "2026-10-28T04:55:26.531221+00:00",
   "actor_type": "automated",
   "actor_id": "codex:data_northeast",
   "manifest": "data/manifests/northeast.json",
-  "sources": 63,
-  "acquired": 60,
-  "pages": 15223,
-  "bytes": 611000805,
+  "sources": 64,
+  "acquired": 62,
+  "pages": 16099,
+  "bytes": 624789948,
   "ufs": [
     "AL",
     "BA",
@@ -19,12 +19,17 @@
     "SE"
   ],
   "status_counts": {
-    "acquired": 60,
-    "unavailable": 2,
+    "acquired": 62,
+    "unavailable": 1,
     "research_pending": 1
   },
+  "fully_reconciled_sources": [
+    "ba-resolucao-249-2026",
+    "pe-historia-pernambuco-2026",
+    "rn-portaria-11123-2025"
+  ],
   "fully_reconciled_ufs": 0,
-  "scope": "Artifact integrity and required metadata only. This does not verify extraction completeness or pedagogical review.",
+  "scope": "Artifact integrity, required metadata and explicit source reconciliation states only. Source/physical page counts do not represent learnings or national completeness.",
   "checks": [
     {
       "source_id": "ce-dcrc-ei-ef-2019",
@@ -32,7 +37,8 @@
       "pdf_pages": 618,
       "bytes": 4150452,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "ce-dcrc-em-2021",
@@ -40,7 +46,8 @@
       "pdf_pages": 411,
       "bytes": 15939729,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "ce-trilhas-aprofundamento-2023",
@@ -48,7 +55,8 @@
       "pdf_pages": 16,
       "bytes": 46735144,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "ba-dcrb-ei-ef",
@@ -56,7 +64,8 @@
       "pdf_pages": 482,
       "bytes": 13563688,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "ba-dcrb-em-vol2-2022",
@@ -64,7 +73,8 @@
       "pdf_pages": 563,
       "bytes": 27188691,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "pe-curriculo-em-2021",
@@ -72,7 +82,8 @@
       "pdf_pages": 709,
       "bytes": 5044846,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "pe-curriculo-ef",
@@ -80,7 +91,8 @@
       "pdf_pages": 612,
       "bytes": 8183466,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "pi-curriculo-ei-ef",
@@ -88,7 +100,8 @@
       "pdf_pages": 313,
       "bytes": 10068485,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "pi-curriculo-em-caderno1-2021",
@@ -96,7 +109,8 @@
       "pdf_pages": 344,
       "bytes": 4642781,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "ma-dctm-em-vol2",
@@ -104,7 +118,8 @@
       "pdf_pages": 254,
       "bytes": 12789159,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-recal-ei-2019",
@@ -112,7 +127,8 @@
       "pdf_pages": 144,
       "bytes": 3833050,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-recal-ef",
@@ -120,7 +136,8 @@
       "pdf_pages": 738,
       "bytes": 10134032,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-recal-em",
@@ -128,7 +145,8 @@
       "pdf_pages": 539,
       "bytes": 5043633,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "rn-referencial-em",
@@ -136,7 +154,8 @@
       "pdf_pages": 570,
       "bytes": 5137039,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "rn-documento-ei-2018",
@@ -144,7 +163,8 @@
       "pdf_pages": 177,
       "bytes": 19642369,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "pb-proposta-ei-ef",
@@ -152,7 +172,8 @@
       "pdf_pages": 635,
       "bytes": 7950105,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "ma-dctm-ei-ef",
@@ -160,7 +181,8 @@
       "pdf_pages": 482,
       "bytes": 49563761,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "rn-documento-ef-2018",
@@ -168,7 +190,8 @@
       "pdf_pages": 1103,
       "bytes": 9918369,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "pi-curriculo-em-caderno2-2021",
@@ -176,7 +199,8 @@
       "pdf_pages": 434,
       "bytes": 13232086,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "pi-computacao-ei-ef",
@@ -184,7 +208,8 @@
       "pdf_pages": 147,
       "bytes": 2595019,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "se-curriculo-ei-ef",
@@ -192,7 +217,8 @@
       "pdf_pages": 666,
       "bytes": 20327179,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "se-curriculo-em",
@@ -200,7 +226,8 @@
       "pdf_pages": 571,
       "bytes": 17236565,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "se-computacao-2026",
@@ -208,7 +235,8 @@
       "pdf_pages": 54,
       "bytes": 816884,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "se-bncc-computacao-2025",
@@ -216,7 +244,8 @@
       "pdf_pages": 218,
       "bytes": 4161866,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "se-natureza-vol2",
@@ -224,7 +253,8 @@
       "pdf_pages": 90,
       "bytes": 2367376,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "se-humanas-vol2",
@@ -232,7 +262,8 @@
       "pdf_pages": 79,
       "bytes": 916039,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "se-matematica-vol2",
@@ -240,7 +271,8 @@
       "pdf_pages": 66,
       "bytes": 744497,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "se-linguagens-vol2",
@@ -248,7 +280,8 @@
       "pdf_pages": 82,
       "bytes": 870138,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "se-linguagens-parte2-vol2",
@@ -256,7 +289,8 @@
       "pdf_pages": 83,
       "bytes": 950451,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "se-projeto-vida",
@@ -264,7 +298,8 @@
       "pdf_pages": 21,
       "bytes": 581860,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "ba-matrizes-em-2025",
@@ -272,7 +307,8 @@
       "pdf_pages": 20,
       "bytes": 12913680,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "ba-ementas-itinerarios",
@@ -280,7 +316,8 @@
       "pdf_pages": 13,
       "bytes": 7366068,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "ba-resolucao-249-2026",
@@ -288,7 +325,8 @@
       "pdf_pages": 7,
       "bytes": 577570,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "pe-curriculo-ei",
@@ -296,7 +334,8 @@
       "pdf_pages": 134,
       "bytes": 2505568,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "pe-cedim-2026",
@@ -304,7 +343,8 @@
       "pdf_pages": 682,
       "bytes": 23005319,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "pe-historia-pernambuco-2026",
@@ -312,7 +352,8 @@
       "pdf_pages": 8,
       "bytes": 483583,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "ce-dcrc-computacao",
@@ -320,7 +361,8 @@
       "pdf_pages": 247,
       "bytes": 4041351,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "ce-resolucao-526-2026",
@@ -328,7 +370,8 @@
       "pdf_pages": 4,
       "bytes": 5343179,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-parecer-27-2026-doe",
@@ -336,7 +379,8 @@
       "pdf_pages": 152,
       "bytes": 5064037,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-recal-computacao",
@@ -344,7 +388,8 @@
       "pdf_pages": 89,
       "bytes": 15007721,
       "result": "verified_local_artifact",
-      "publication_eligible": false
+      "publication_eligible": false,
+      "mandatory": true
     },
     {
       "source_id": "rn-diretrizes-ifa",
@@ -352,7 +397,8 @@
       "pdf_pages": 167,
       "bytes": 3037835,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "rn-trilhas-aprofundamento",
@@ -360,7 +406,17 @@
       "pdf_pages": 485,
       "bytes": 6056769,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "rn-dcec-computacao",
+      "sha256": "886cdd02d96a63c50be00e93faf0fe5a9f7f305a959bd9920bcbdd429be134bd",
+      "pdf_pages": 819,
+      "bytes": 7045290,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "rn-estrutura-em-2026-diurno",
@@ -368,7 +424,8 @@
       "pdf_pages": 15,
       "bytes": 3459967,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "rn-estrutura-em-2026-noturno",
@@ -376,7 +433,8 @@
       "pdf_pages": 17,
       "bytes": 5573683,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "rn-estrutura-em-2026-em_tempo_integral",
@@ -384,7 +442,8 @@
       "pdf_pages": 26,
       "bytes": 6050263,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-matrizes-em-2026",
@@ -392,7 +451,8 @@
       "pdf_pages": 44,
       "bytes": 7577308,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-organizador-fgb-2025",
@@ -400,7 +460,8 @@
       "pdf_pages": 125,
       "bytes": 5937147,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-ifa-pit-1-2026",
@@ -408,7 +469,8 @@
       "pdf_pages": 82,
       "bytes": 25237545,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-ifa-tac-1-2026",
@@ -416,7 +478,8 @@
       "pdf_pages": 124,
       "bytes": 13449433,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-ifa-praticas-lgg-chs-2-2026",
@@ -424,7 +487,8 @@
       "pdf_pages": 75,
       "bytes": 10475738,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-ifa-temas-lgg-chs-2-2026",
@@ -432,7 +496,8 @@
       "pdf_pages": 129,
       "bytes": 15665542,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-ifa-praticas-mat-cnt-2-2026",
@@ -440,7 +505,8 @@
       "pdf_pages": 117,
       "bytes": 13296418,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-ifa-temas-mat-cnt-2-2026",
@@ -448,7 +514,8 @@
       "pdf_pages": 122,
       "bytes": 13360727,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-ifa-praticas-lgg-chs-3-2026",
@@ -456,7 +523,8 @@
       "pdf_pages": 56,
       "bytes": 12297260,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-ifa-temas-lgg-chs-3-2026",
@@ -464,7 +532,8 @@
       "pdf_pages": 133,
       "bytes": 14321494,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-ifa-praticas-mat-cnt-3-2026",
@@ -472,7 +541,8 @@
       "pdf_pages": 56,
       "bytes": 10802694,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-ifa-temas-mat-cnt-3-2026",
@@ -480,7 +550,8 @@
       "pdf_pages": 162,
       "bytes": 16403506,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": true
     },
     {
       "source_id": "al-projeto-vida-guia-1",
@@ -488,7 +559,8 @@
       "pdf_pages": 243,
       "bytes": 9360463,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": false
     },
     {
       "source_id": "al-projeto-vida-guia-2",
@@ -496,7 +568,8 @@
       "pdf_pages": 240,
       "bytes": 9635935,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": false
     },
     {
       "source_id": "al-projeto-vida-guia-3",
@@ -504,7 +577,17 @@
       "pdf_pages": 228,
       "bytes": 8364243,
       "result": "verified_local_artifact",
-      "publication_eligible": true
+      "publication_eligible": true,
+      "mandatory": false
+    },
+    {
+      "source_id": "rn-portaria-11123-2025",
+      "sha256": "8e8a23b5e500d1ac4aae981c64bd2b6ec8f20e939f4b260701741e90ae5af8b9",
+      "pdf_pages": 57,
+      "bytes": 6743853,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
     }
   ]
 }

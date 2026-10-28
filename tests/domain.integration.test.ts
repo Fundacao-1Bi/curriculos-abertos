@@ -46,14 +46,14 @@ test('immutable import, snapshot pinning and auditable rollback',{skip:!allowed}
  await assert.rejects(()=>pool.query("UPDATE items SET text='corrupted' WHERE id='sp-a'"),/immutable/);
  const next={...bundle,id:'test-publication-2',created_at:'2026-10-28T02:00:00Z',items:bundle.items.map(i=>i.id==='sp-a'?{...i,text:'Revisão de transcrição.'}:i)};
  await importBundle(next,{makeDefault:true});assert.equal((await getLearning('sp-a')).data.text,'Revisão de transcrição.');assert.equal((await getLearning('sp-a',{publication:'test-publication-1'})).data.text,bundle.items[1].text);
- await setDefaultPublication('test-publication-1',{id:'test-runner',actor_type:'automated',reason:'Controlled rollback test'});assert.equal((await getLearning('sp-a')).publication,'test-publication-1');assert.equal((await listPublications()).total,3);
+ await setDefaultPublication('test-publication-1',{id:'test-runner',actor_type:'automated',reason:'Controlled rollback test'});assert.equal((await getLearning('sp-a')).publication,'test-publication-1');assert.equal((await listPublications()).total,2);assert.ok(!(await listPublications()).data.some(x=>x.id.includes('-slice-')));
  const events=await pool.query("SELECT actor_type FROM publication_events WHERE actor_id='test-runner'");assert.equal(events.rows[0].actor_type,'automated');
  await migrate();
 });
 
 test('positionless items remain unknown and enter year filters only through explicit option and documented source context',{skip:!allowed},async()=>{
  const unknown={...item('sp-positionless','SP','UNCLASSIFIED',null,'Seção com posicionamento não identificado.'),code:null,positions:[],kind:'secao_normativa',position_unknown_reason:'Posicionamento não identificado na extração.'};
- const edition={...bundle,id:'test-unpositioned-publication',items:[...bundle.items,unknown]};await importBundle(edition,{makeDefault:false});
+ const edition={...bundle,id:'test-unpositioned-publication',items:[...bundle.items,unknown]};await importBundle(edition,{makeDefault:true});
  const base={publication:edition.id,uf:'SP',year:'7'};
  assert.equal((await searchLearnings(base)).total,2);
  const included=await searchLearnings({...base,include_unknown_positions:true});assert.equal(included.total,3);assert.deepEqual(included.data.find(x=>x.id===unknown.id)?.positions,[]);
@@ -67,7 +67,7 @@ test('destructive integration guard validates the database path rather than cred
 
 test('real sharded import verifies every part before atomic promotion and streams self-contained snapshots',{skip:!allowed},async()=>{
  const {mkdir,mkdtemp,writeFile,readFile,rm}=await import('node:fs/promises');const {resolve,relative}=await import('node:path');const {gzipSync}=await import('node:zlib');const {createHash}=await import('node:crypto');
- const {importShardedManifest,verifyShardedManifest}=await import('../src/domain/shards');const {streamExportToFile}=await import('../src/domain/stream-exports');
+ const {importShardedManifest,verifyShardedManifest,importArtifactFile}=await import('../src/domain/shards');const {streamExportToFile}=await import('../src/domain/stream-exports');
  await mkdir('var',{recursive:true});const root=await mkdtemp(resolve('var','domain-shard-test-'));const digest=(b:Buffer|string)=>createHash('sha256').update(b).digest('hex');
  try{
   const {items:fixtureItems,relations:fixtureRelations,...metadata}=bundle;
@@ -75,9 +75,11 @@ test('real sharded import verifies every part before atomic promotion and stream
   const manifest={...metadata,id:'test-sharded-publication',format:'curriculos-abertos/sharded-v1' as const,item_count:fixtureItems.length,relation_count:fixtureRelations.length,parts:[await part('items',fixtureItems,'items'),await part('relations',fixtureRelations,'relations')]};
   assert.deepEqual(await verifyShardedManifest(manifest,root),{item_count:4,relation_count:2,source_count:3});
   const hash=digest(JSON.stringify(manifest));assert.equal((await importShardedManifest(manifest,hash,{root,makeDefault:false})).already_imported,false);assert.equal((await importShardedManifest(manifest,hash,{root})).already_imported,true);
+  await assert.rejects(()=>getLearning('sp-a',{publication:manifest.id}),e=>e instanceof Error&&'status'in e&&e.status===404);await assert.rejects(()=>batchLearnings(['sp-a'],{publication:manifest.id}),e=>e instanceof Error&&'status'in e&&e.status===404);await assert.rejects(()=>exportData({publication:manifest.id}),e=>e instanceof Error&&'status'in e&&e.status===404);assert.ok(!(await listPublications()).data.some(x=>x.id===manifest.id));
+  const internal=await import('../src/domain/service');assert.equal((await internal.getLearningInternal('sp-a',manifest.id)).data.text,bundle.items[1].text);assert.equal((await internal.searchLearningsInternal({publication:manifest.id,uf:'SP'})).total,2);assert.equal((await internal.getPublicationInternal(manifest.id)).data.visibility_status,'prepared');assert.equal((await internal.listSourcesInternal({publication:manifest.id})).total,3);await setDefaultPublication(manifest.id,{id:'authorized-test-publisher',actor_type:'automated',reason:'Explicit publication of an isolated test snapshot.'});
   const stored=await pool.query("SELECT storage_format,payload ? 'items' AS embedded_items,item_count FROM publications WHERE id=$1",[manifest.id]);assert.equal(stored.rows[0].storage_format,'relational-v1');assert.equal(stored.rows[0].embedded_items,false);assert.equal(stored.rows[0].item_count,4);
   assert.equal((await getLearning('sp-a',{publication:manifest.id})).data.text,bundle.items[1].text);
-  const exported=await streamExportToFile({publication:manifest.id},'json',resolve(root,'snapshot.json'));const bytes=await readFile(resolve(root,'snapshot.json'));assert.equal(exported.sha256,digest(bytes));assert.equal(exported.size,bytes.length);const decoded=JSON.parse(bytes.toString());validateBundle(decoded);assert.equal(decoded.items.length,4);assert.equal(decoded.relations.length,2);assert.equal((await importBundle(decoded)).already_imported,true);
+  const exported=await streamExportToFile({publication:manifest.id},'json',resolve(root,'snapshot.json'));const bytes=await readFile(resolve(root,'snapshot.json'));assert.equal(exported.sha256,digest(bytes));assert.equal(exported.size,bytes.length);const decoded=JSON.parse(bytes.toString());validateBundle(decoded);assert.equal(decoded.items.length,4);assert.equal(decoded.relations.length,2);assert.equal((await importBundle(decoded)).already_imported,true);await writeFile(resolve(root,'snapshot.json.sha256'),digest(bytes));const converted=await importArtifactFile(resolve(root,'snapshot.json'),{root,makeDefault:false,streamSnapshot:true,cacheRoot:resolve(root,'cache')});assert.equal(converted.already_imported,true);assert.equal(converted.id,manifest.id);
   const csv=await streamExportToFile({publication:manifest.id,uf:'SP'},'csv',resolve(root,'snapshot.csv'));assert.equal(csv.record_count,2);assert.match(await readFile(resolve(root,'snapshot.csv'),'utf8'),/record_type,id,payload_json/);
   const broken={...manifest,id:'test-sharded-invalid',parts:[manifest.parts[0],await part('relations',[{...fixtureRelations[0],members:[{item_id:'absent',role:'source',scope:'test'},{item_id:'br-a',role:'target',scope:'test'}]},fixtureRelations[1]],'broken')]};
   await assert.rejects(()=>importShardedManifest(broken,digest(JSON.stringify(broken)),{root,makeDefault:true}),/Membro inválido/);assert.equal((await pool.query('SELECT count(*)::int count FROM publications WHERE id=$1',[broken.id])).rows[0].count,0);
@@ -89,7 +91,7 @@ test('curation clones relational snapshots without embedding collections or turn
  const {validateRelationalRevision,prepareRelationalRevision}=await import('../src/domain/revisions');
  const meta={id:'test-relational-revision',created_at:'2026-10-28T05:00:00Z',extraction_revision:'test-curation',mapping_revision:'test-curation'};
  const changes=[{entity:'item' as const,record_id:'sp-a',text:'Transcrição corrigida para teste isolado.',reason:'Conferência técnica no teste isolado.',actor_id:'automated-test-runner',actor_type:'automated' as const,at:'2026-10-28T05:00:00Z'},{entity:'relation' as const,record_id:'r1',decision:'accept' as const,review_type:'publication' as const,reason:'Decisão de publicação automatizada de teste.',actor_id:'automated-test-runner',actor_type:'automated' as const,at:'2026-10-28T05:00:00Z'}];
- const validation=await validateRelationalRevision(bundle.id,changes,meta);const result=await prepareRelationalRevision(bundle.id,changes,meta,{sha256:validation.sha256});assert.equal(result.item_count,4);assert.equal((await getLearning('sp-a',{publication:meta.id})).data.text,changes[0].text);assert.equal((await getLearning('sp-a',{publication:bundle.id})).data.text,bundle.items[1].text);
+ const validation=await validateRelationalRevision(bundle.id,changes,meta);const result=await prepareRelationalRevision(bundle.id,changes,meta,{sha256:validation.sha256});assert.equal(result.item_count,4);await assert.rejects(()=>getLearning('sp-a',{publication:meta.id}),e=>e instanceof Error&&'status'in e&&e.status===404);await setDefaultPublication(meta.id,{id:'authorized-test-publisher',actor_type:'automated',reason:'Explicitly publish curated isolated fixture.'});assert.equal((await getLearning('sp-a',{publication:meta.id})).data.text,changes[0].text);assert.equal((await getLearning('sp-a',{publication:bundle.id})).data.text,bundle.items[1].text);
  const relation=(await listRelations({publication:meta.id,item_id:'sp-a'})).data[0];assert.equal(relation.origin,'source_declaration');assert.equal(relation.pedagogical_review_status,'not_reviewed');assert.equal(relation.publication_status,'published');
  const record=(await pool.query("SELECT storage_format,payload ? 'items' AS embedded FROM publications WHERE id=$1",[meta.id])).rows[0];assert.equal(record.storage_format,'relational-v1');assert.equal(record.embedded,false);
  const exported=JSON.parse((await exportData({publication:meta.id})).data.content);assert.equal((await importBundle(exported)).already_imported,true);
@@ -97,11 +99,62 @@ test('curation clones relational snapshots without embedding collections or turn
 
 
 test('documented code aliases preserve canonical glyphs and hierarchy supports direct child navigation',{skip:!allowed},async()=>{
- const node={...item('sp-node','SP','TECHNICAL-NODE',[6,7,8,9],'Unidade temática documentada.'),code:null,kind:'unidade_tematica'};
+ const node={...item('sp-node','SP','TECHNICAL-NODE',[6,7,8,9],'Unidade temática documentada.'),code:null,kind:'unidade_tematica',source_number:2,source_order:40,document_order:3};
+ const spaced={...item('sp-spaced','SP','MS.EI01EO00. n. 07',[1],'Código local com espaçamento documentado.'),code_search_form:'MS.EI01EO00.n.07'};
  const aliased={...item('sp-alias','SP','EF05CO011',[5],'Código com grafia original preservada.'),code_aliases:['EF05CO11']};
- const edition={...bundle,id:'test-hierarchy-and-aliases',items:[...bundle.items.map(i=>i.id==='sp-a'?{...i,parent_id:node.id}:i),node,aliased]};await importBundle(edition,{makeDefault:false});
+ const edition={...bundle,id:'test-hierarchy-and-aliases',items:[...bundle.items.map(i=>i.id==='sp-a'?{...i,parent_id:node.id}:i),node,aliased,spaced]};await importBundle(edition,{makeDefault:true});
  const found=await searchLearnings({publication:edition.id,q:'ef05co11'});assert.equal(found.total,1);assert.equal(found.data[0].code,'EF05CO011');assert.deepEqual(found.data[0].code_aliases,['EF05CO11']);
+ const compact=await searchLearnings({publication:edition.id,q:'MS.EI01EO00.n.07'});assert.equal(compact.total,1);assert.equal(compact.data[0].code,'MS.EI01EO00. n. 07');
  const children=await searchLearnings({publication:edition.id,parent_id:node.id});assert.equal(children.total,1);assert.equal(children.data[0].id,'sp-a');
- const structure=await getStructure('test-source-SP',{publication:edition.id});const hierarchy=structure.hierarchy as {nodes:{id:string;child_count:number;learning_child_count:number}[]};assert.equal(hierarchy.nodes.find(n=>n.id===node.id)?.child_count,1);assert.equal(hierarchy.nodes.find(n=>n.id===node.id)?.learning_child_count,1);
+ const structure=await getStructure('test-source-SP',{publication:edition.id});const hierarchy=structure.hierarchy as {nodes:{id:string;child_count:number;learning_child_count:number;source_number:number;source_order:number;document_order:number}[]};assert.equal(hierarchy.nodes.find(n=>n.id===node.id)?.child_count,1);assert.equal(hierarchy.nodes.find(n=>n.id===node.id)?.learning_child_count,1);assert.equal(hierarchy.nodes.find(n=>n.id===node.id)?.source_number,2);assert.equal(hierarchy.nodes.find(n=>n.id===node.id)?.source_order,40);assert.equal(hierarchy.nodes.find(n=>n.id===node.id)?.document_order,3);
  const cyclic={...bundle,items:bundle.items.map(i=>i.id==='sp-a'?{...i,parent_id:'sp-b'}:i.id==='sp-b'?{...i,parent_id:'sp-a'}:i)};assert.throws(()=>validateBundle(cyclic),/cíclica/);
+});
+
+
+test('prepared visibility cannot be bypassed by IDs or direct default-pointer writes',{skip:!allowed},async()=>{
+ const edition={...bundle,id:'test-prepared-private'};await importBundle(edition,{makeDefault:false});
+ await assert.rejects(()=>pool.query('UPDATE current_publication SET publication_id=$1 WHERE singleton=true',[edition.id]),/explicitly published/);
+ for(const operation of [()=>listPublications({publication:edition.id}),()=>searchLearnings({publication:edition.id}),()=>panorama('br-a',{publication:edition.id}),()=>compare({publication:edition.id,ufs:['SP','RJ']}),()=>listSources({publication:edition.id}),()=>coverage({publication:edition.id})])await assert.rejects(operation,e=>e instanceof Error&&'status'in e&&e.status===404);
+ await setDefaultPublication(edition.id,{id:'test-authorized-administrator',actor_type:'automated',reason:'Authorization test publishes a complete isolated snapshot.'});assert.equal((await searchLearnings({publication:edition.id})).total,4);
+ await setDefaultPublication(bundle.id,{id:'test-authorized-administrator',actor_type:'automated',reason:'Rollback preserves previously published snapshot visibility.'});assert.equal((await getLearning('sp-a',{publication:edition.id})).data.id,'sp-a');
+ await assert.rejects(()=>pool.query("UPDATE publication_visibility SET status='prepared',published_at=NULL WHERE publication_id=$1",[edition.id]),/cannot be erased/);
+});
+
+
+test('national matrix excludes structural/legal records but includes explicitly classified uncoded competencies',{skip:!allowed},async()=>{
+ const object={...item('br-object','BR','CONTEXT',null,'Objeto de conhecimento usado apenas como contexto.'),code:null,kind:'objeto_conhecimento'};
+ const act={...item('br-act','BR','NORM',null,'Artigo normativo usado apenas como contexto.'),code:null,kind:'artigo_normativo'};
+ const competency={...item('br-competency','BR','COMP',null,'Competência geral de aprendizagem explicitamente classificada.'),code:null,kind:'competencia_geral'};
+ const edition={...bundle,id:'test-national-learning-matrix',items:[...bundle.items,object,act,competency]};await importBundle(edition,{makeDefault:true});
+ const report=await analyses({publication:edition.id});assert.equal(report.data.unique_items,7);assert.equal(report.data.learning_items,5);assert.equal(report.data.structural_or_documentary_items,2);assert.equal(report.data.matrix.total,2);assert.deepEqual(new Set(report.data.matrix.rows.map(r=>r.national_item.id)),new Set(['br-a','br-competency']));assert.ok(report.data.matrix.learning_kinds_included.includes('competencia_geral'));const first=await analyses({publication:edition.id,limit:1});assert.match(String(first.data.matrix.next),/^\/api\/v1\/analises\?/);const second=await analyses({publication:edition.id,limit:1,page:2});assert.notEqual(first.data.matrix.rows[0].national_item.id,second.data.matrix.rows[0].national_item.id);
+ const structural=await analyses({publication:edition.id,kind:'objeto_conhecimento'});assert.equal(structural.data.unique_items,1);assert.equal(structural.data.matrix.total,0);assert.match(structural.data.matrix.no_rows_reason??'',/estrutural ou documental/);
+});
+
+
+test('local curriculum filters project unique national references while preserving unmatched local items and other UF contexts',{skip:!allowed},async()=>{
+ const unmatched=item('sp-unmapped','SP','SP-LOCAL-ONLY',[6,7,8,9],'Aprendizagem local legítima sem vínculo identificado.');
+ const edition={...bundle,id:'test-local-matrix-projection',items:[...bundle.items,unmatched]};await importBundle(edition,{makeDefault:true});
+ const report=await analyses({publication:edition.id,uf:'SP',curriculum:'test-source-SP'});const matrix=report.data.matrix;assert.equal(matrix.total,1);assert.equal(matrix.rows[0].national_item.id,'br-a');assert.equal(matrix.scope.mode,'local_reference_projection');assert.equal(matrix.scope.local_items_consulted,3);assert.equal(matrix.scope.local_items_with_identified_link,2);assert.equal(matrix.scope.local_items_without_identified_link,1);assert.equal(matrix.scope.projected_national_references,1);assert.match(matrix.definition,/não é o total da BNCC/);
+ assert.equal(matrix.rows[0].ufs.find(x=>x.uf==='SP')?.item_count,2);assert.equal(matrix.rows[0].ufs.find(x=>x.uf==='RJ')?.item_count,1);assert.equal(matrix.rows[0].ufs.find(x=>x.uf==='SP')?.cohort_limited,true);assert.ok(!Object.hasOwn(matrix.scope.column_filters,'curriculum'));
+ const textual=await analyses({publication:edition.id,uf:'SP',curriculum:'test-source-SP',q:'frações'});assert.equal(textual.data.matrix.total,1);assert.equal(textual.data.matrix.scope.local_items_consulted,1);assert.equal(textual.data.matrix.rows[0].ufs.find(x=>x.uf==='SP')?.item_count,1);assert.equal(textual.data.matrix.rows[0].ufs.find(x=>x.uf==='RJ')?.item_count,1);
+ const absent=await analyses({publication:edition.id,uf:'SP',q:'LOCAL-ONLY'});assert.equal(absent.data.matrix.total,0);assert.equal(absent.data.matrix.scope.local_items_without_identified_link,1);assert.match(absent.data.matrix.no_rows_reason??'',/não comprova ausência pedagógica/);
+ const incompatible=await analyses({publication:edition.id,uf:'SP',curriculum:'test-source-RJ'});assert.equal(incompatible.data.matrix.total,0);assert.equal(incompatible.data.matrix.scope.comparable,false);assert.match(incompatible.data.matrix.no_rows_reason??'',/não ser comparável/);
+ const national=await analyses({publication:edition.id,uf:'BR',curriculum:'test-source-BR'});assert.equal(national.data.matrix.total,1);assert.equal(national.data.matrix.scope.mode,'national_learning_inventory');assert.equal(national.data.matrix.rows[0].ufs.find(x=>x.uf==='RJ')?.item_count,1);
+});
+
+test('many-to-many comparison never promotes an unpaged local group member to national reference',{skip:!allowed},async()=>{
+ const relation={...bundle.relations[0],id:'many-many-one-group',members:[...bundle.relations[0].members,{item_id:'rj-a',role:'source' as const,scope:'Documented local participant'}]};
+ const edition={...bundle,id:'test-many-many-reference',relations:[relation]};await importBundle(edition,{makeDefault:true});
+ const report=await compare({publication:edition.id,ufs:['SP','RJ'],limit:1});assert.deepEqual(report.data.shared_references.map(x=>x.item_id),['br-a']);assert.equal(report.data.shared_references[0].equivalence_established,false);
+});
+
+
+test('Portuguese search indexes joined PDF line-break words while preserving canonical hyphens and list markers',{skip:!allowed},async()=>{
+ const broken=item('sp-pdf-word','SP','SP-WORD-BREAK',[6],'Desenvolver progres- sivamente as aprendizagens.');
+ const compound=item('sp-compound','SP','SP-COMPOUND',[6],'Utilizar guarda-chuva em uma situação descrita.');
+ const marker=item('sp-marker','SP','SP-MARKER',[6],'Resolver a - b em uma situação descrita.');
+ const edition={...bundle,id:'test-portuguese-pdf-word-search',items:[...bundle.items,broken,compound,marker]};await importBundle(edition,{makeDefault:true});
+ assert.equal((await searchLearnings({publication:edition.id,q:'progressivamente'})).data[0].id,broken.id);assert.equal((await searchLearnings({publication:edition.id,q:'progressiv'})).data[0].id,broken.id);assert.equal((await searchLearnings({publication:edition.id,q:'progres- sivamente'})).data[0].id,broken.id);
+ assert.equal((await searchLearnings({publication:edition.id,q:'guarda-chuva'})).data[0].id,compound.id);assert.equal((await searchLearnings({publication:edition.id,q:'guardachuva'})).total,0);assert.ok(!(await searchLearnings({publication:edition.id,q:'ab'})).data.some(x=>x.id===marker.id));
+ assert.equal((await getLearning(broken.id,{publication:edition.id})).data.text,broken.text);assert.equal((await getLearning(compound.id,{publication:edition.id})).data.text,compound.text);assert.equal((await getLearning(marker.id,{publication:edition.id})).data.text,marker.text);
 });

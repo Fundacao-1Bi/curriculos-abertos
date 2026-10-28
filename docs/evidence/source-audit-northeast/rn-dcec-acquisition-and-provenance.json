@@ -1,0 +1,53 @@
+{
+  "at": "2026-10-28T04:48:33.713252+00:00",
+  "source_id": "rn-dcec-computacao",
+  "sha256": "886cdd02d96a63c50be00e93faf0fe5a9f7f305a959bd9920bcbdd429be134bd",
+  "pdf_pages": 819,
+  "bytes": 7045290,
+  "edition": "2026",
+  "provenance_chain": {
+    "actor_type": "automated",
+    "actor_id": "codex:data_northeast",
+    "at": "2026-10-28T04:48:33.713252+00:00",
+    "steps": [
+      {
+        "url": "https://antoniomartins.rn.gov.br/secretarias/secretaria-de-educacao/",
+        "verification": "Página oficial municipal identifica seu Portal SIGEduc e liga expressamente o domínio distribuidor."
+      },
+      {
+        "url": "https://antoniomartins-rn.portalsigeduc.com.br/app/public/home.jsf?modo=classico",
+        "verification": "Portal público municipal contém notícia Documento Curricular Educação Digital e Midiática e link Baixar Anexo para idProducao10000532."
+      },
+      {
+        "url": "https://antoniomartins-rn.portalsigeduc.com.br/app/verProducao?idProducao=10000532&key=42b15752fc3afea405671f8e35e2319f",
+        "verification": "Artefato PDF819p adquirido legitimamente; capa/expediente/CIP declaram DCEC/RN, órgãos colaboradores e edição2026."
+      }
+    ],
+    "snapshots": [
+      {
+        "url": "https://antoniomartins.rn.gov.br/secretarias/secretaria-de-educacao/",
+        "local_path": "data/raw/RN/rn-dcec-municipal-distributor.html",
+        "sha256": "628ce48dc0ad942a4bf4c3b59467dc56c99b6b2cdf2ceab609b1e11cdaf776c4",
+        "bytes": 238990,
+        "contains_official_portal_link": true,
+        "contains_artifact_id": false
+      },
+      {
+        "url": "https://antoniomartins-rn.portalsigeduc.com.br/app/public/home.jsf?modo=classico",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ]
+  },
+  "license": {
+    "declared_name": "CC BY-NC-ND",
+    "version": null,
+    "attribution_required": true,
+    "noncommercial": true,
+    "no_derivatives": true,
+    "evidence_page": 6,
+    "evidence_excerpt": "CC BY-NC-ND (Atribuição - NãoComercial - SemDerivações): A mais restritiva. Apenas permite baixar e compartilhar a obra, desde que o crédito seja dado, sem poder alterar de forma alguma ou usar para fins comerciais.",
+    "verification": "Declaração literal da fonte; versão da licença não inferida."
+  },
+  "access_previous_403_resolved": true,
+  "documentary_reconciliation_complete": false
+}

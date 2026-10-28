@@ -1,0 +1,184 @@
+{
+  "source_id": "rn-dcec-computacao",
+  "artifact_sha256": "886cdd02d96a63c50be00e93faf0fe5a9f7f305a959bd9920bcbdd429be134bd",
+  "extraction_revision": "page-cell-v1.4.0",
+  "extracted_at": "2026-10-28T05:09:02.101848+00:00",
+  "pdf_pages": 819,
+  "processed_pages": 819,
+  "coded_candidates": 1386,
+  "all_candidates_including_documentary_sections": 2197,
+  "ocr_pending": false,
+  "ocr_required_pages": [
+    1,
+    11,
+    37,
+    55,
+    253,
+    665,
+    766,
+    819
+  ],
+  "ocr_completed_pages": [
+    1,
+    11,
+    37,
+    55,
+    253,
+    665,
+    766,
+    819
+  ],
+  "warnings": [
+    {
+      "detail": "Detected 96 diacritics\n",
+      "issue": "ocr_engine_diagnostic",
+      "page": 1
+    },
+    {
+      "count": 8,
+      "denominator": 33,
+      "issue": "ocr_low_confidence_words",
+      "page": 1,
+      "status": "requires_documentary_review"
+    },
+    {
+      "issue": "ocr_used",
+      "method": "tesseract-tsv-por",
+      "ocr_cache_key": "e239f9271e343615d0461971e93ca65be6b78cb005c56e600f0f0b57ce04c6e7",
+      "page": 1,
+      "status": "requires_documentary_review"
+    },
+    {
+      "issue": "ocr_orientation_inconclusive",
+      "page": 11,
+      "status": "requires_documentary_review"
+    },
+    {
+      "issue": "ocr_no_words",
+      "page": 11,
+      "status": "source_page_requires_review"
+    },
+    {
+      "issue": "ocr_used",
+      "method": "tesseract-tsv-por",
+      "ocr_cache_key": "395b939293d0aa7cbed38e6fc7895c5208c86c0e6477cbfd7ff92933ae7ddc7b",
+      "page": 11,
+      "status": "requires_documentary_review"
+    },
+    {
+      "issue": "ocr_orientation_inconclusive",
+      "page": 37,
+      "status": "requires_documentary_review"
+    },
+    {
+      "issue": "ocr_no_words",
+      "page": 37,
+      "status": "source_page_requires_review"
+    },
+    {
+      "issue": "ocr_used",
+      "method": "tesseract-tsv-por",
+      "ocr_cache_key": "9e01531edeaa3f3335a32625f6303fc5f776f8719fbd9b105ed7a4045cbdc89c",
+      "page": 37,
+      "status": "requires_documentary_review"
+    },
+    {
+      "issue": "ocr_orientation_inconclusive",
+      "page": 55,
+      "status": "requires_documentary_review"
+    },
+    {
+      "issue": "ocr_no_words",
+      "page": 55,
+      "status": "source_page_requires_review"
+    },
+    {
+      "issue": "ocr_used",
+      "method": "tesseract-tsv-por",
+      "ocr_cache_key": "583e2a83104745895d8b32e3f9148b72f362fae4af82c915a810a90b3457718a",
+      "page": 55,
+      "status": "requires_documentary_review"
+    },
+    {
+      "confidence": 1.17,
+      "issue": "ocr_orientation_low_confidence",
+      "page": 253,
+      "status": "requires_documentary_review",
+      "suggested_rotation": 180
+    },
+    {
+      "issue": "ocr_no_words",
+      "page": 253,
+      "status": "source_page_requires_review"
+    },
+    {
+      "issue": "ocr_used",
+      "method": "tesseract-tsv-por",
+      "ocr_cache_key": "30715afe4db580affdc607d9f63aaba19307318fc011066941fda001945bc6ac",
+      "page": 253,
+      "status": "requires_documentary_review"
+    },
+    {
+      "issue": "ocr_orientation_inconclusive",
+      "page": 665,
+      "status": "requires_documentary_review"
+    },
+    {
+      "detail": "Detected 103 diacritics\n",
+      "issue": "ocr_engine_diagnostic",
+      "page": 665
+    },
+    {
+      "issue": "ocr_no_words",
+      "page": 665,
+      "status": "source_page_requires_review"
+    },
+    {
+      "issue": "ocr_used",
+      "method": "tesseract-tsv-por",
+      "ocr_cache_key": "b8d8671180c9ce3d3996ada8806e380eb8c6265ec584cf32d1dbf16804f98c1d",
+      "page": 665,
+      "status": "requires_documentary_review"
+    },
+    {
+      "issue": "ocr_orientation_inconclusive",
+      "page": 766,
+      "status": "requires_documentary_review"
+    },
+    {
+      "issue": "ocr_no_words",
+      "page": 766,
+      "status": "source_page_requires_review"
+    },
+    {
+      "issue": "ocr_used",
+      "method": "tesseract-tsv-por",
+      "ocr_cache_key": "95593ee8358918623990b26085aeb390c0e9bbee82e6d4a7320102d1f59fa662",
+      "page": 766,
+      "status": "requires_documentary_review"
+    },
+    {
+      "confidence": 1.02,
+      "issue": "ocr_orientation_low_confidence",
+      "page": 819,
+      "status": "requires_documentary_review",
+      "suggested_rotation": 0
+    },
+    {
+      "count": 3,
+      "denominator": 8,
+      "issue": "ocr_low_confidence_words",
+      "page": 819,
+      "status": "requires_documentary_review"
+    },
+    {
+      "issue": "ocr_used",
+      "method": "tesseract-tsv-por",
+      "ocr_cache_key": "8e6cb1e8200f423aece86158349eaa5442aac091c58e1c37f971fea1e32c1373",
+      "page": 819,
+      "status": "requires_documentary_review"
+    }
+  ],
+  "reconciliation_status": "pending",
+  "scope": "Native+OCR execution completed, not semantic/documentary reconciliation. References and repeated codes are not a learning denominator."
+}

@@ -34,10 +34,10 @@ make down
 
 ## Dados e manutenção
 
-O ponteiro `data/bundles/latest.json` identifica um arquivo JSON real entregue, tamanho e SHA-256. Cada bundle tem sidecar `.sha256`. A importação verifica o checksum e a estrutura antes da transação; snapshots anteriores permanecem imutáveis. JSONs de teste ficam apenas em bancos descartáveis, fora do corpus.
+O ponteiro `data/bundles/latest.json` identifica o artefato entregue, tamanho, formato e SHA-256. Publicações grandes usam um manifesto `sharded-v1` com partes JSONL comprimidas, contagens e hashes dos bytes comprimidos e descomprimidos; a instalação inclui todas as partes. JSON/gzip anteriores continuam aceitos. A importação verifica checksums, esquema e referências antes da transação; snapshots anteriores permanecem imutáveis. Dados de teste ficam apenas em bancos descartáveis, fora do corpus. Uma candidata parcial não substitui automaticamente a publicação principal.
 
 ```sh
-make data-import DATA_BUNDLE=data/bundles/ID.json
+make data-import DATA_BUNDLE=data/bundles/ID.manifest.json
 make data-ingest
 make sources-check
 make backup

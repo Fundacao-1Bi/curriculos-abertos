@@ -1,0 +1,31 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast",
+  "attempts": [
+    {
+      "source_id": "pb-pcem",
+      "at": "2026-10-28T04:44:18.397310+00:00",
+      "url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+      "method": "Unauthenticated standard HTTP GET, bounded8192byte prefix; no challenge solving/authentication/bypass.",
+      "http_status": 200,
+      "content_type": "text/html",
+      "prefix_sha256": "41d0c63fe9cba8e54dcb5406f5d9b3d7b75593f62355e840ca9a0b918e87e665",
+      "bytes_sampled": 8192,
+      "is_pdf": false,
+      "challenge_detected": true
+    },
+    {
+      "source_id": "rn-dcec-computacao",
+      "at": "2026-10-28T04:44:18.398282+00:00",
+      "url": "https://antoniomartins-rn.portalsigeduc.com.br/app/verProducao?idProducao=10000532&key=42b15752fc3afea405671f8e35e2319f",
+      "method": "Unauthenticated standard HTTP GET, bounded8192byte prefix; no challenge solving/authentication/bypass.",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "prefix_sha256": "0b4f082d1cb3883788538c5b30f8ab56ba80ef83f2b8b51006c0edc9bfd49786",
+      "bytes_sampled": 8192,
+      "is_pdf": true,
+      "challenge_detected": false
+    }
+  ],
+  "note": "Errors do not prove artifact nonexistence; they demonstrate access limitations of the current environment."
+}

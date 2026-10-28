@@ -1,0 +1,11 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { randomBytes } from 'node:crypto';
+import { mkdir,writeFile,rm } from 'node:fs/promises';
+import { isolatedEnvironment } from '../scripts/qa-production';
+test('QA impõe volumes/DB/portas próprios mesmo com overrides herdados da produção',async()=>{
+ const token=randomBytes(6).toString('hex');const env_file=`var/qa-clean-unit-${token}.env`,project=`curriculos-abertos-clean-unit-${token}`;
+ await mkdir('var',{recursive:true});await writeFile(env_file,`POSTGRES_USER=curriculos_qa\nPOSTGRES_DB=curriculos_qa\nPOSTGRES_PASSWORD=${randomBytes(32).toString('hex')}\nBETTER_AUTH_SECRET=${randomBytes(32).toString('hex')}\nPUBLIC_URL=http://localhost:3001\nPORT=3001\nDATABASE_PORT=55438\nDATABASE_VOLUME=main-production-volume\nDATABASE_VOLUME_EXTERNAL=true\nSTORAGE_VOLUME=main-storage\nDATA_BUNDLE=data/bundles/wrong.json\n`,{mode:0o600});
+ const previous=Object.fromEntries(['DATABASE_VOLUME','DATABASE_VOLUME_EXTERNAL','PUBLIC_URL','POSTGRES_USER'].map(key=>[key,process.env[key]]));
+ try{process.env.DATABASE_VOLUME='main-production-volume';process.env.DATABASE_VOLUME_EXTERNAL='true';process.env.PUBLIC_URL='http://localhost:3000';process.env.POSTGRES_USER='main_admin';const env=isolatedEnvironment({project,env_file});assert.equal(env.DATABASE_VOLUME,project+'_database');assert.equal(env.STORAGE_VOLUME,project+'_storage');assert.equal(env.DATABASE_VOLUME_EXTERNAL,'false');assert.equal(env.POSTGRES_USER,'curriculos_qa');assert.equal(env.POSTGRES_DB,'curriculos_qa');assert.equal(env.PORT,'3001');assert.equal(env.DATABASE_PORT,'55438');assert.equal(env.PUBLIC_URL,'http://localhost:3001');assert.equal(env.DATA_BUNDLE,'');assert.equal(env.COMPOSE_PROJECT_NAME,project);assert.equal(env.COMPOSE_ENV_FILES,env_file);assert.ok(env.COMPOSE_FILE.endsWith('/compose.yaml'));assert.throws(()=>isolatedEnvironment({project:'curriculos-abertos',env_file}),/Projeto QA/);assert.throws(()=>isolatedEnvironment({project,env_file:'var/qa-clean-../../.env'}),/fora do isolamento/);}finally{for(const[key,value]of Object.entries(previous)){if(value===undefined)delete process.env[key];else process.env[key]=value;}await rm(env_file,{force:true});}
+});

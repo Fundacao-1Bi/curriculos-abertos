@@ -137,6 +137,14 @@ Estas contagens são de artefatos documentais, não de cobertura de aprendizagen
 | `go-eletivas-2026` | EM | 2026 | 127 | acquired | [Emissor](https://goias.gov.br/educacao/ensino-medio-goiano/) |
 | `go-eletivas-fic-2026` | EM | 2026 | 35 | acquired | [Emissor](https://goias.gov.br/educacao/ensino-medio-goiano/) |
 
+| `ms-projeto-vida-orientacoes-2024` | EF, EM | 2024 | 127 | acquired | [Emissor](https://www.sed.ms.gov.br/programas-e-projetos/novo-ensino-medio/) |
+
 ## Evidência de integridade executada
 
-Conferência final do cache em28/10/2026:57 fontes cadastradas,54 PDFs adquiridos e parseáveis,48 documentos/partes selecionados como obrigatórios,47 obrigatórios adquiridos. Conferência SHA256 de todos os54 arquivos: **zero divergências e zero arquivos ausentes**. Volume material total642.293.327 bytes,19.238 páginas (inclui representações alternativas preservadas). Reconciliação integral concluída neste relatório: **0 fontes**. Um obrigatório permanece sem artefato PDF legível (`ms-if-projeto-vida-2023`).
+Conferência do cache em 28/10/2026, evidência `source-audit-central-south/source-integrity.json`: 58 fontes cadastradas, 55 PDFs adquiridos e parseáveis, 49 documentos/partes obrigatórios, 48 obrigatórios adquiridos. SHA256 dos 55 arquivos: **zero divergências e zero arquivos ausentes**. Volume total de 659.023.349 bytes e 19.365 páginas físicas (inclui representações alternativas preservadas). Reconciliação integral concluída neste relatório: **0 fontes**. Um obrigatório permanece sem artefato PDF legível (`ms-if-projeto-vida-2023`).
+
+## Adaptadores documentais e integração verificada
+
+DF: 2.659 objetivos das colunas originais EI/EF e 406 nós de cabeçalhos literais foram importados pelo pipeline real (3.065 IDs únicos, zero pais ausentes, zero alteração de texto/evidência/posição das folhas). SC: 2.906 registros em cinco fontes foram conferidos fragmento a fragmento com os PDFs; o Caderno 3 inclui 1.157 registros, e os 400 objetivos do Caderno 4 estão vinculados aos 25 roteiros efetivamente declarados. Os tipos distinguem aprendizagem, palavra-chave, estrutura e fragmentos incompletos originais. Hierarquias adicionais de SC seguem em frente específica.
+
+Os adaptadores independentes de PR (3.971 registros), RS EM (121), SC EPT/Magistério (6.314), GO EM (443) e MS Projeto de Vida 2024 (681) estão referenciados no manifesto. Suas provas e limites estão nos relatórios próprios; a incorporação ao bundle nacional final e a reconciliação de todas as partes permanecem etapas distintas. O novo complemento MS 2024 não substitui a ementa obrigatória de 2023 ainda inacessível. A versão de MS 2024 usa somente cabeçalhos visíveis: texto nativo oculto sob preenchimentos posteriores foi excluído do posicionamento.

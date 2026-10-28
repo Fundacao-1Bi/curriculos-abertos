@@ -1,24 +1,71 @@
-{"event":"test_database_ready","container":"ca-tests-67bcaecf8153","database":"curriculum_test_67bcaecf8153","files":3,"fixture_policy":"Isolated test database only; published data untouched."}
-✔ consulta aceita aliases e fixa paginação/publicação sem alterar código (7.250791ms)
-✔ comparação livre exige 2 ou 3 UFs distintas e lote preserva entrada inválida por item (6.256375ms)
-✔ contribuição admite URL relativa, restringe protocolos e evita campos privados inesperados (1.038792ms)
-✔ HTTP recusa DNS rebinding e origem não autorizada sem confiar em proxy automaticamente (59.910958ms)
-✔ leitor JSON aplica teto ao corpo recebido, inclusive sem content-length (3.680083ms)
-✔ OpenAPI documenta todas operações obrigatórias, exports e contribuições (0.18975ms)
+
+> curriculos-abertos@0.1.0 test
+> tsx scripts/test-all.ts
+
+{"event":"test_database_ready","mode":"disposable_container","container":"ca-tests-b546dbb2e20a","database":"curriculum_test_b546dbb2e20a","files":11,"fixture_policy":"Isolated owned test database only; published data untouched."}
+✔ reporter administrativo remove segredos de falhas sem perder contexto acionável (0.65225ms)
+✔ suite administrativa tem desktop/mobile e não herda trace/video/screenshot de autenticação (0.582917ms)
+✔ consulta aceita aliases e fixa paginação/publicação sem alterar código (3.864583ms)
+✔ comparação livre exige 2 ou 3 UFs distintas e lote preserva entrada inválida por item (1.49975ms)
+✔ contribuição admite URL relativa, restringe protocolos e evita campos privados inesperados (0.283375ms)
+✔ HTTP recusa DNS rebinding e origem não autorizada sem confiar em proxy automaticamente (16.34875ms)
+✔ leitor JSON aplica teto ao corpo recebido, inclusive sem content-length (1.109584ms)
+✔ OpenAPI documenta todas operações obrigatórias, exports e contribuições (0.054208ms)
+✔ exportação valida contexto antes de enfileirar trabalho persistente (0.935542ms)
+✔ limite de uso recusa excesso com retry-after sem ampliar confiança no proxy (0.144375ms)
+✔ JSON nacional é validado registro a registro e reconcilia contagens/IDs/texto/evidência (11.616459ms)
+✔ CSV incremental preserva JSON relacionado com vírgulas/aspas/quebras de linha e rejeita perda de referência (3.72875ms)
+✔ download usa bytes em fluxo e confere SHA256 sem Response.text/JSON.parse nacional (18.041375ms)
+✔ estrutura preserva agrupamento antigo, evidências e hierarquia sem confundir seus denominadores (4.146209ms)
+✔ contrato impede contagens falsas, ID duplicado e perda do localizador na hierarquia (0.394875ms)
+✔ filtro parent_id preserva ID opaco; aliases de busca nunca substituem código canônico (1.245125ms)
+✔ OpenAPI declara resposta estrutural e parent_id em busca, preservando aliases na saída (0.05675ms)
+✔ auditor lê todas partes e compara amostra por conteúdo, independente da ordem JSONB (28.666541ms)
+✔ erro semântico na última parte de itens é encontrado, sem aceitar apenas manifesto/primeira parte (5.543584ms)
+✔ corrupção gzip, checksum decodificado e parte fora da raiz bloqueiam a inspeção (15.265333ms)
+✔ compressed bundle verifies compressed and decoded checksums with bounded decompression (8.114333ms)
+✔ uncompressed bundle requires a matching artifact hash and rejects root traversal (1.362084ms)
 {"event":"migration_applied","name":"001-domain.sql","sha256":"8f510934477eb058263031f4208d105fb7cbe4a85ecd9f148b0fb9bafbb3ac46"}
 {"event":"migration_applied","name":"002-admin.sql","sha256":"8f30dfff0ba46b80f83f02d1d9d1cc44d198d2f750221b8952e72c31e62cf98b"}
 {"event":"migration_applied","name":"003-draft-revision.sql","sha256":"c49d8af72a677786111c14443fbc238431fe69f4934d634285ece8040ec7c576"}
-✔ bundle validation rejects duplicate IDs, dangling sources and missing localizers (139.249167ms)
-✔ CSV neutralizes executable formulas and quotes without altering canonical JSON (0.319625ms)
-✔ real PostgreSQL contracts and filters (327.883416ms)
-✔ immutable import, snapshot pinning and auditable rollback (75.369042ms)
-✔ evidência exige código/publicação e artefatos íntegros, nunca somente um pronto manual (7.782ms)
-✔ hash de código muda com alteração e independe de docs de progresso (2.170041ms)
-ℹ tests 12
+{"event":"migration_applied","name":"004-domain-search.sql","sha256":"73ee404adf457f74d21e5133f1f08fd4d15a73454cdf676f58b58e281056d4d2"}
+{"event":"migration_applied","name":"005-domain-metadata.sql","sha256":"e9fdf7dcfb11634dc3f443780b5446e40e907d1c4b9f3d7e435d442f4b5f2def"}
+{"event":"migration_applied","name":"006-relational-publications.sql","sha256":"e0061e134edb154711ae3fcaf51b0a92bbe5b21d47231775c451e8f49462803f"}
+{"event":"migration_applied","name":"007-hierarchy-and-code-aliases.sql","sha256":"e66d3d52d73382930aae11a8c114c694429f8a0e3539b46d7331433aef132bed"}
+{"event":"migration_applied","name":"008-publication-visibility.sql","sha256":"acb01ee2cf41e614ec2015c37a837dc7859427f14258effe24b8c9fb6501bdb7"}
+{"event":"migration_applied","name":"009-compact-code-search.sql","sha256":"727327c7b78cfcea66a9038265baee564bdd54d08e22d1a140a44fc850488ee7"}
+{"event":"migration_applied","name":"010-pdf-word-search.sql","sha256":"d7178f0a4e9972f1acd1c1890bebb9847e7e925c2fa69dd862efd3812c956168"}
+✔ bundle validation rejects duplicate IDs, dangling sources and missing localizers (87.117416ms)
+✔ CSV neutralizes executable formulas and quotes without altering canonical JSON (0.121042ms)
+✔ real PostgreSQL contracts and filters (187.368833ms)
+✔ immutable import, snapshot pinning and auditable rollback (31.474583ms)
+✔ positionless items remain unknown and enter year filters only through explicit option and documented source context (17.612834ms)
+✔ destructive integration guard validates the database path rather than credentials/host substrings (0.193708ms)
+✔ real sharded import verifies every part before atomic promotion and streams self-contained snapshots (101.386375ms)
+✔ curation clones relational snapshots without embedding collections or turning publication approval into pedagogy (37.394167ms)
+✔ documented code aliases preserve canonical glyphs and hierarchy supports direct child navigation (13.1265ms)
+✔ prepared visibility cannot be bypassed by IDs or direct default-pointer writes (20.441958ms)
+✔ national matrix excludes structural/legal records but includes explicitly classified uncoded competencies (24.880125ms)
+✔ local curriculum filters project unique national references while preserving unmatched local items and other UF contexts (31.189084ms)
+✔ many-to-many comparison never promotes an unpaged local group member to national reference (10.1795ms)
+✔ Portuguese search indexes joined PDF line-break words while preserving canonical hyphens and list markers (21.190333ms)
+✔ snapshot conversion preserves canonical records and metadata while emitting bounded deterministic shards (1427.627417ms)
+✔ gzip snapshots validate both byte identities and preserve the same publication and texts (6.655791ms)
+✔ conversion rejects raw corruption, decoded corruption and a modified cached shard (6.931125ms)
+✔ stream bounds and grammar guards fail without changing the input artifact (120.442959ms)
+✔ JSONL preserves Unicode line and paragraph separators inside canonical strings (4.316917ms)
+✔ PDF search joins only letter-hyphen-whitespace-letter sequences (49.410166ms)
+✔ partial PDF search indexes find auxiliary words and preserve canonical records (16.083792ms)
+✔ QA impõe volumes/DB/portas próprios mesmo com overrides herdados da produção (8.735292ms)
+✔ evidência exige código/publicação e artefatos íntegros, nunca somente um pronto manual (3.241ms)
+✔ hash de código muda com alteração e independe de docs de progresso (1.260417ms)
+✔ gate recusa execução de navegador filtrada ou teste parcial antes de iniciar processo (0.413458ms)
+✔ schema público de dados invalida evidência quando adicionado, alterado ou removido (1.343084ms)
+ℹ tests 48
 ℹ suites 0
-ℹ pass 12
+ℹ pass 48
 ℹ fail 0
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 2598.70575
+ℹ duration_ms 5347.87

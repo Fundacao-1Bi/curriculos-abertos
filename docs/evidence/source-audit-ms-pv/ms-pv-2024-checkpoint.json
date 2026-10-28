@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-28T05:37:06.379625+00:00",
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:ms-pv",
+  "source_id": "ms-projeto-vida-orientacoes-2024",
+  "sidecar_sha256": "77eb9feaa003382a73741f36f3379d83aa945debae1cd128b7ad95513e781f08",
+  "implemented": [
+    "681structuredrecords",
+    "sharedvisibleglyphhelper",
+    "all73physicaltablesand141rows",
+    "stage/year/periodphysicalhierarchy",
+    "independent508checks",
+    "51visualpages",
+    "sourceonly827literalfragmentchecks",
+    "80693bodyglyphs0missing0extra",
+    "byteidempotence",
+    "shared loader681/681 passed",
+    "shared finalizer681/681 passed with unchanged positions and resolved hierarchy",
+    "central negative validator rejects invisible glyph despite matching native text"
+  ],
+  "pending": [
+    "Read-only comparison of681MSrecords and827evidences in final sharded candidate; awaiting pipeline path",
+    "Database import and API/MCP journeys owned by integration",
+    "Foundation narrative reconciliation remains outside this organizer adapter"
+  ],
+  "next_command": "var/venv-pipeline/bin/python data/manifests/uncoded/ms-pv-2024-verify-artifact.py --manifest <explicit final candidate path from pipeline>",
+  "ownership": "AdapterandMSglyphelperauthoredbyrs_adapter;globalingestownedbypipeline;manifestownedbydata_central_south",
+  "publication_claim": "Notpublished/imported/API-MCPverifiedinthisfront",
+  "status": "verified_sidecar_and_shared_loader_awaiting_final_sharded_candidate"
+}

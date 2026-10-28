@@ -1,0 +1,12 @@
+--- a/pipeline/ingest.py
++++ b/pipeline/ingest.py
+@@ -224,7 +224,8 @@
+         # A citation in the middle of a sentence is not a new coded objective.
+         prefix=cell[:match.start()]
+         line_prefix=prefix.rsplit('\n',1)[-1].strip()
+-        if line_prefix not in ('','(','[','•','-') and not re.match(r'^Habilidades?\b.*:\s*\(*$',line_prefix,re.IGNORECASE):continue
++        local_go_goal=(source or {}).get('id')=='go-dcgoem-portal-atual' and re.match(r'GO(?:[-.]\s*|\s+)EM',match.group()) and prefix.rstrip().endswith('(') and cell[match.end():].lstrip().startswith(')')
++        if not local_go_goal and line_prefix not in ('','(','[','•','-') and not re.match(r'^Habilidades?\b.*:\s*\(*$',line_prefix,re.IGNORECASE):continue
+         matches.append(match)
+     found=[]
+     for index,match in enumerate(matches):

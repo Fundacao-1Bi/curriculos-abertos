@@ -23,7 +23,7 @@ type SourceMarker={file_sha256:string;bytes:number;decoded_sha256:string;decoded
 const digest=(value:Buffer|string)=>createHash('sha256').update(value).digest('hex');
 const isHash=(value:unknown):value is string=>typeof value==='string'&&/^[a-f0-9]{64}$/.test(value);
 function streamLimit(){const n=Number(process.env.DATA_MAX_STREAM_BYTES??10*1024*1024*1024);if(!Number.isSafeInteger(n)||n<1||n>64*1024*1024*1024)throw Error('DATA_MAX_STREAM_BYTES deve estar entre 1 byte e 64 GiB.');return n;}
-async function sidecar(path:string){const value=(await readFile(path+'.sha256','utf8')).trim().split(/\s/)[0];if(!isHash(value))throw Error('Sidecar SHA-256 inválido.');return value;}
+async function sidecar(path:string){const info=await stat(path+'.sha256');if(!info.isFile()||info.size>4096)throw Error('Sidecar SHA-256 excede limite.');const value=(await readFile(path+'.sha256','utf8')).trim().split(/\s/)[0];if(!isHash(value))throw Error('Sidecar SHA-256 inválido.');return value;}
 function workspaceRelative(path:string){const value=relative(process.cwd(),path).split(sep).join('/');if(!value||value==='..'||value.startsWith('../')||value.startsWith('/'))throw Error('Cache de importação precisa estar dentro do workspace para caminhos portáveis.');return value;}
 function ordered(value:unknown):unknown {if(Array.isArray(value))return value.map(ordered);if(value&&typeof value==='object')return Object.fromEntries(Object.keys(value).sort().map(key=>[key,ordered((value as Record<string,unknown>)[key])]));return value;}
 
@@ -55,7 +55,7 @@ class PartsWriter {
 
 async function cachedResult(directory:string,rawHash:string,bytes:number,expected:BundleFileExpected|undefined,maxDecoded:number){
  const path=resolve(directory,'snapshot.manifest.json');let marker:SourceMarker;
- try{marker=JSON.parse(await readFile(resolve(directory,'source.json'),'utf8'));}catch(error){if((error as NodeJS.ErrnoException).code==='ENOENT')return undefined;throw Error('Cache de conversão inválido; preserve-o para inspeção e reconstrua em outro cache.');}
+ try{const actual=await realpath(directory);if(actual!==directory)throw Error('Cache de conversão não pode redirecionar para outro caminho.');const markerPath=resolve(directory,'source.json');const info=await stat(markerPath);if(!info.isFile()||info.size>4096)throw Error('Marcador de cache excede limite.');marker=JSON.parse(await readFile(markerPath,'utf8'));}catch(error){if((error as NodeJS.ErrnoException).code==='ENOENT')return undefined;throw Error('Cache de conversão inválido; preserve-o para inspeção e reconstrua em outro cache.');}
  if(marker.file_sha256!==rawHash||marker.bytes!==bytes||!isHash(marker.decoded_sha256)||!Number.isSafeInteger(marker.decoded_bytes)||marker.decoded_bytes<1||marker.decoded_bytes>maxDecoded)throw Error('Identidade do cache de conversão não confere.');
  if(expected?.decoded_sha256!==undefined&&expected.decoded_sha256!==marker.decoded_sha256)throw Error('Checksum decodificado diverge do manifesto.');
  if(expected?.decoded_bytes!==undefined&&expected.decoded_bytes!==marker.decoded_bytes)throw Error('Tamanho decodificado diverge do manifesto.');
@@ -64,7 +64,7 @@ async function cachedResult(directory:string,rawHash:string,bytes:number,expecte
  const manifest=JSON.parse(raw.toString('utf8'));validateShardedManifest(manifest);
  if(manifest.transcode_provenance&&((manifest.transcode_provenance as Record<string,unknown>).input_file_sha256!==rawHash))throw Error('Proveniência do cache diverge do arquivo de entrada.');
  for(const part of manifest.parts)for await(const _record of shardRecords(part,directory)){void _record;}
- return{manifest,manifest_sha256:hash,root:directory,path};
+ return{manifest,manifest_sha256:hash,root:directory,path,input:marker};
 }
 
 /** Converts complete JSON snapshots without retaining their national item/relation arrays. */
@@ -81,10 +81,11 @@ export async function convertSnapshotFileToShards(filename:string,options:Snapsh
  if(!isHash(expectedDecoded))throw Error('Checksum decodificado obrigatório para snapshot gzip.');
  if(options.expected?.decoded_sha256!==undefined&&options.expected.decoded_sha256!==expectedDecoded)throw Error('Checksum decodificado diverge do manifesto.');
  if(options.expected?.decoded_bytes!==undefined&&(!Number.isSafeInteger(options.expected.decoded_bytes)||options.expected.decoded_bytes<1||options.expected.decoded_bytes>maxDecoded))throw Error('Tamanho decodificado excede limite de fluxo.');
+ const cacheExpected={...options.expected,decoded_sha256:expectedDecoded};
  const cacheRoot=resolve(options.cacheRoot??'data/extracted');workspaceRelative(cacheRoot);await mkdir(cacheRoot,{recursive:true});
  const cacheBase=await realpath(cacheRoot);workspaceRelative(cacheBase);
  const directory=resolve(cacheBase,`import-${rawHash}`);
- const previous=await cachedResult(directory,rawHash,info.size,options.expected,maxDecoded);if(previous)return previous;
+ const previous=await cachedResult(directory,rawHash,info.size,cacheExpected,maxDecoded);if(previous)return previous;
  const temporary=await mkdtemp(resolve(cacheBase,`.import-${rawHash}-tmp-`));
  try{
   const writer=new PartsWriter(temporary,directory);const pending:{kind:Kind;value:unknown}[]=[];const seenArrays=new Set<Kind>();
@@ -127,7 +128,7 @@ export async function convertSnapshotFileToShards(filename:string,options:Snapsh
   const manifestBytes=Buffer.from(JSON.stringify(ordered(manifest))+'\n');if(manifestBytes.length>MAX_METADATA_BYTES)throw Error('Manifesto convertido excede limite de metadados.');
   const manifestHash=digest(manifestBytes);await writeFile(resolve(temporary,'snapshot.manifest.json'),manifestBytes,{flag:'wx',mode:0o600});await writeFile(resolve(temporary,'snapshot.manifest.json.sha256'),manifestHash+'  snapshot.manifest.json\n',{flag:'wx',mode:0o600});
   await writeFile(resolve(temporary,'source.json'),JSON.stringify({file_sha256:rawHash,bytes:info.size,decoded_sha256:actualDecoded,decoded_bytes:decodedBytes} satisfies SourceMarker)+'\n',{flag:'wx',mode:0o600});
-  try{await rename(temporary,directory);}catch(error){if(!['EEXIST','ENOTEMPTY'].includes((error as NodeJS.ErrnoException).code??''))throw error;const winner=await cachedResult(directory,rawHash,info.size,options.expected,maxDecoded);if(!winner||winner.manifest_sha256!==manifestHash)throw Error('Conversões concorrentes produziram cache divergente.');await rm(temporary,{recursive:true,force:true});return winner;}
-  return{manifest:manifest as ShardedManifest,manifest_sha256:manifestHash,root:directory,path:resolve(directory,'snapshot.manifest.json')};
+  try{await rename(temporary,directory);}catch(error){if(!['EEXIST','ENOTEMPTY'].includes((error as NodeJS.ErrnoException).code??''))throw error;const winner=await cachedResult(directory,rawHash,info.size,cacheExpected,maxDecoded);if(!winner||winner.manifest_sha256!==manifestHash)throw Error('Conversões concorrentes produziram cache divergente.');await rm(temporary,{recursive:true,force:true});return winner;}
+  return{manifest:manifest as ShardedManifest,manifest_sha256:manifestHash,root:directory,path:resolve(directory,'snapshot.manifest.json'),input:{file_sha256:rawHash,bytes:info.size,decoded_sha256:actualDecoded,decoded_bytes:decodedBytes}};
  }catch(error){await rm(temporary,{recursive:true,force:true});throw error;}
 }

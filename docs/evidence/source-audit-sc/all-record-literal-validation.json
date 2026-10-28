@@ -1,17 +1,35 @@
 {
   "actor_type": "automated",
   "actor_id": "agent:data_central_south",
-  "method": "pipeline_evidence_check_against_all_source_PDF_fragments_and_page_cache",
+  "method": "Every record: immutable original SHA256, unique source/page/locator, every literal fragment against original page or PDF bounding box and normalized join against canonical text",
   "adapter_hashes": {
     "data/manifests/uncoded/sc-eief-items.json": "7aae29168b5d76834987b2fc3bdc8a38c9c9d82ef5c669a0da2e436d6e23ed6e",
-    "data/manifests/uncoded/sc-em-items.json": "083565bf09acb9ce09166c37b30814bdaf9a575f1ed659c9adc249a7b98375cf"
+    "data/manifests/uncoded/sc-em-items.json": "65ab8b27fb841dac96680bd860126d01d0a8d42d4761dbfcbf08d714d815bfcd",
+    "data/manifests/uncoded/sc-trilhas-all-items.json": "f5bf31ffd738aee4ac2d34c77117fa741971383f3414c33d4bfeabf5d684848f"
   },
-  "records": 1749,
+  "source_hashes": {
+    "sc-cb-eief-2019-atual": "21c4835c6bf6bc752de83cfea4e7190c56be591811ff9bdcab931ee3c6ee291c",
+    "sc-lingua-inglesa-ai": "3d9c5785a8ab77e944d4ceb3377a0465978d8e92a42bcaa06ea3cd47dfbad2c0",
+    "sc-cb-em-caderno-2": "4acddf8d9f59ab8ccc60c9480b69f009e89e51ba27de79c0ce68ee264eb8df03",
+    "sc-cb-em-caderno-4": "675b44cc84611883e12761c52410e710c6139c9f13bd3e38b7298d6297c889f3",
+    "sc-cb-em-caderno-3": "4c367e03aa4e05c99612e3398361057ee1aeb4aa963b1e195a2a3aa0b1eee36b"
+  },
+  "records": 2906,
   "verified_by_source": {
     "sc-cb-eief-2019-atual": 1202,
     "sc-lingua-inglesa-ai": 143,
     "sc-cb-em-caderno-2": 4,
-    "sc-cb-em-caderno-4": 400
+    "sc-cb-em-caderno-4": 400,
+    "sc-cb-em-caderno-3": 1157
   },
-  "failures": []
+  "kinds": {
+    "habilidade": 2205,
+    "objeto_conhecimento": 3,
+    "objetivo_aprendizagem": 529,
+    "estrutura_curricular": 111,
+    "palavra_chave_habilidade": 55,
+    "secao_normativa": 3
+  },
+  "failures": [],
+  "scope_limit": "Exhaustive technical literal check of these adapters; broader documentary inventory and all curricular parts are not declared reconciled."
 }

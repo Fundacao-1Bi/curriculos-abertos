@@ -19,7 +19,8 @@ test('snapshot conversion preserves canonical records and metadata while emittin
  const output=await convertSnapshotFileToShards(path,{root,cacheRoot:cache,expected:{sha256:digest(raw),bytes:raw.length}});
  assert.equal(output.manifest.id,original.id);assert.equal(output.manifest.item_count,5001);assert.equal(output.manifest.relation_count,0);assert.equal(output.manifest.parts.length,2);assert.deepEqual(output.manifest.parts.map(p=>p.records),[5000,1]);assert.ok(output.manifest.parts.every(p=>p.decoded_bytes<=20*1024*1024));
  assert.equal(Object.hasOwn(output.manifest,'items'),false);assert.equal(Object.hasOwn(output.manifest,'relations'),false);assert.deepEqual(output.manifest.extension,original.extension);assert.deepEqual(output.manifest.source_content_identity,original.content_identity);
- const hash=createHash('sha256');let count=0;for(const part of output.manifest.parts){for await(const row of shardRecords(part,output.root)){assert.deepEqual(row,original.items[count++]);hash.update(JSON.stringify(Object.fromEntries(Object.entries(row).sort(([a],[b])=>a.localeCompare(b)))));}}
+ const hash=createHash('sha256');let count=0;for(const part of output.manifest.parts){for await(const row of shardRecords(part,output.root,chunk=>hash.update(chunk))){assert.deepEqual(row,original.items[count++]);}}
+ assert.equal((output.manifest.content_identity as Record<string,unknown>).items_jsonl_sha256,hash.digest('hex'));
  assert.equal(count,5001);assert.equal((await verifyShardedManifest(output.manifest,output.root)).item_count,5001);
  const second=await convertSnapshotFileToShards(path,{root,cacheRoot:cache});assert.equal(second.path,output.path);assert.equal(second.manifest_sha256,output.manifest_sha256);assert.deepEqual(await readFile(path),raw);
  const file=await readFile(output.path);assert.equal(digest(file),output.manifest_sha256);assert.equal((await readFile(output.path+'.sha256','utf8')).split(/\s/)[0],output.manifest_sha256);
@@ -28,9 +29,10 @@ test('snapshot conversion preserves canonical records and metadata while emittin
 test('gzip snapshots validate both byte identities and preserve the same publication and texts',async()=>scope(async(root,cache)=>{
  const original=fixture(),decoded=Buffer.from(JSON.stringify(original)),raw=gzipSync(decoded);const path=await artifact(root,'snapshot.json.gz',raw);await writeFile(resolve(root,'snapshot.json.sha256'),digest(decoded));
  const output=await convertSnapshotFileToShards(path,{root,cacheRoot:cache,expected:{sha256:digest(raw),bytes:raw.length,decoded_sha256:digest(decoded),decoded_bytes:decoded.length}});
- assert.equal(output.manifest.id,original.id);assert.deepEqual(output.manifest.sources,original.sources);assert.deepEqual(output.manifest.coverage,original.coverage);assert.deepEqual(output.manifest.changelog,original.changelog);assert.equal((output.manifest.transcode_provenance as Record<string,unknown>).input_decoded_sha256,digest(decoded));
+ assert.equal(output.manifest.id,original.id);assert.equal(output.input.file_sha256,digest(raw));assert.equal(output.input.decoded_sha256,digest(decoded));assert.equal(output.input.decoded_bytes,decoded.length);assert.deepEqual(output.manifest.sources,original.sources);assert.deepEqual(output.manifest.coverage,original.coverage);assert.deepEqual(output.manifest.changelog,original.changelog);assert.equal((output.manifest.transcode_provenance as Record<string,unknown>).input_decoded_sha256,digest(decoded));
  const rows=[];for await(const row of shardRecords(output.manifest.parts[0],output.root))rows.push(row);assert.deepEqual(rows,original.items);
  await assert.rejects(()=>convertSnapshotFileToShards(path,{root,cacheRoot:cache,expected:{decoded_sha256:'0'.repeat(64)}}),/Checksum/);
+ await writeFile(resolve(root,'snapshot.json.sha256'),'f'.repeat(64));await assert.rejects(()=>convertSnapshotFileToShards(path,{root,cacheRoot:cache}),/Checksum decodificado/);
 }));
 
 test('conversion rejects raw corruption, decoded corruption and a modified cached shard',async()=>scope(async(root,cache)=>{
@@ -43,8 +45,18 @@ test('conversion rejects raw corruption, decoded corruption and a modified cache
 test('stream bounds and grammar guards fail without changing the input artifact',async()=>scope(async(root,cache)=>{
  const raw=Buffer.from(JSON.stringify(fixture())),path=await artifact(root,'snapshot.json',raw);const previous=process.env.DATA_MAX_STREAM_BYTES;
  try{process.env.DATA_MAX_STREAM_BYTES='10';await assert.rejects(()=>convertSnapshotFileToShards(path,{root,cacheRoot:cache}),/limite de fluxo/);}finally{if(previous===undefined)delete process.env.DATA_MAX_STREAM_BYTES;else process.env.DATA_MAX_STREAM_BYTES=previous;}
+ const bombDecoded=Buffer.from(JSON.stringify({...fixture(1),extension:'x'.repeat(20000)})),bombRaw=gzipSync(bombDecoded);const bombPath=await artifact(root,'bomb.json.gz',bombRaw);await writeFile(resolve(root,'bomb.json.sha256'),digest(bombDecoded));
+ try{process.env.DATA_MAX_STREAM_BYTES='2048';assert.ok(bombRaw.length<2048);await assert.rejects(()=>convertSnapshotFileToShards(bombPath,{root,cacheRoot:cache}),/decodificado excede/);}finally{if(previous===undefined)delete process.env.DATA_MAX_STREAM_BYTES;else process.env.DATA_MAX_STREAM_BYTES=previous;}
  const oversized={...fixture(1),extension:'x'.repeat(8*1024*1024+1)};const largePath=await artifact(root,'oversized.json',JSON.stringify(oversized));await assert.rejects(()=>convertSnapshotFileToShards(largePath,{root,cacheRoot:cache}),/String JSON excede/);
  const duplicatePath=await artifact(root,'duplicate.json','{"id":"a","id":"b","items":[],"relations":[]}');await assert.rejects(()=>convertSnapshotFileToShards(duplicatePath,{root,cacheRoot:cache}),/Chave de topo duplicada/);
  const privatePath=await artifact(root,'private.json',JSON.stringify({...fixture(),users:[]}));await assert.rejects(()=>convertSnapshotFileToShards(privatePath,{root,cacheRoot:cache}),/administrativos/);
  assert.deepEqual(await readFile(path),raw);
+}));
+
+test('JSONL preserves Unicode line and paragraph separators inside canonical strings',async()=>scope(async(root,cache)=>{
+ const original=fixture(2);original.items[0].text='Texto antes\u2028separador de linha\u2029separador de parágrafo depois.';original.items[0].evidence[0].excerpt=original.items[0].text;
+ const path=await artifact(root,'unicode-separators.json',JSON.stringify(original));const output=await convertSnapshotFileToShards(path,{root,cacheRoot:cache});
+ const rows=[];for(const part of output.manifest.parts)for await(const row of shardRecords(part,output.root))rows.push(row);
+ assert.deepEqual(rows,original.items);assert.equal((await verifyShardedManifest(output.manifest,output.root)).item_count,2);
+ const cached=await convertSnapshotFileToShards(path,{root,cacheRoot:cache});assert.equal(cached.manifest_sha256,output.manifest_sha256);
 }));

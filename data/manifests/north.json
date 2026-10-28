@@ -333,7 +333,33 @@
         }
       }
     ],
-    "structure_note": "Faixas documentais por seção conferidas; não equivalem a aprendizagem estruturada por capacidade. Há capacidades, conteúdos, propostas de atividades e avaliação sem códigos BNCC em grande parte do EF."
+    "structure_note": "Faixas documentais por seção conferidas; não equivalem a aprendizagem estruturada por capacidade. Há capacidades, conteúdos, propostas de atividades e avaliação sem códigos BNCC em grande parte do EF.",
+    "temporal_research": [
+      {
+        "at": "2026-10-28T04:31:28.607433+00:00",
+        "official_url": "https://see.ac.gov.br/referenciais-curriculares-bncc-computacao/",
+        "local_evidence": "data/raw/AC/ac-computacao-research.html",
+        "sha256": "0ba93049afaf39f5855d03f057dc9e14d330d19468ab0af27d8c9efaac19ff17",
+        "finding": "SEE anuncia atualização dos referenciais para Computação com implementação prevista em2026. Documento curricular atualizado e ato de aprovação ainda não localizados; fonte antiga não declarada completa para2026.",
+        "status": "pending_primary_curricular_artifact"
+      }
+    ],
+    "uncoded_items_path": "data/manifests/uncoded/ac-objectives-items.json",
+    "adapter_authority": {
+      "coded_learning_pages": [
+        47,
+        134
+      ],
+      "mode": "sidecar_authoritative_for_coded_EI_objectives_and_uncoded_children",
+      "scope_note": "Generic code extraction in this inclusive physical range must be suppressed to avoid duplicate objectives. Documentary page sections are retained. EF code references at end of orientations remain non-definitions.",
+      "review_status": "automated_source_adapter_checked_not_UF_acceptance",
+      "evidence": "docs/evidence/source-audit-ac/",
+      "generic_coded_reference_pages": [
+        135,
+        1714
+      ],
+      "generic_coded_reference_note": "Na parte EF, aprendizagens estão nas capacidades/objetivos da primeira coluna cobertos pelo sidecar. Códigos BNCC em conteúdo ou orientação são referências documentais; preservar como referencia_no_documento sem contar como definições de habilidades."
+    }
   },
   {
     "id": "ac-cru-em",
@@ -381,7 +407,17 @@
       ],
       "errors": []
     },
-    "expected_max_bytes": 167772160
+    "expected_max_bytes": 167772160,
+    "temporal_research": [
+      {
+        "at": "2026-10-28T04:31:28.607433+00:00",
+        "official_url": "https://see.ac.gov.br/wp-content/uploads/2025/10/meta-03.pdf",
+        "local_evidence": "data/raw/AC/ac-meta03-2025.pdf",
+        "sha256": "bd0108402bf71475dfde89ab4767a64c45e52642b2106f6205043e0675a2d26e",
+        "finding": "Relatório de monitoramento da SEE registra matriz de transição implementada em2025 e previsão de nova resolução/matriz em2026. Artefato dessa norma2026 ainda não localizado; não inferir ausência nem vigência do referencial antigo.",
+        "status": "pending_primary_normative_artifact"
+      }
+    ]
   },
   {
     "id": "am-rca-ei",
@@ -406,7 +442,10 @@
     "application_period": null,
     "document_type": "referencial_curricular",
     "normative_parts": [
-      "Documento integral; reconciliação de índice e partes pendente"
+      "Referencial integral de Educação Infantil: fundamentos e orientações",
+      "Capítulo 10: cinco campos de experiências, objetivos e contextualizações (páginas68–154)",
+      "Capítulo11: Atividades de rotina (a partir da página155)",
+      "Planejamento/avaliação, transições, família/comunidade e demais capítulos: reconciliação fina pendente"
     ],
     "redistribution": "Condição de redistribuição não estabelecida; snapshot privado para conferência. Direitos da fonte preservados.",
     "collected_at": "2026-10-28T03:27:45.096850+00:00",
@@ -484,6 +523,141 @@
         "resolution": "Token-level candidate normalization requires original OCR token, documented code shape, page geometry and review evidence. No global replacement of body text. Local -AM relation is not inferred without documentary rule.",
         "evidence_image": "data/raw/AM/am-ei-p69-upright.png",
         "at": "2026-10-28T04:23:01.737939+00:00"
+      }
+    ],
+    "structure_sections": [
+      {
+        "id": "am-ei-campo-68",
+        "title": "O eu, o outro e o nós",
+        "stage": "EI",
+        "component": "O eu, o outro e o nós",
+        "page_start": 68,
+        "page_end": 87,
+        "evidence": {
+          "source_id": "am-rca-ei",
+          "page": 69,
+          "printed_page": "69",
+          "section": "Capítulo 10: Campos de experiências",
+          "excerpt": "O eu, o outro e o nós",
+          "image_path": "data/raw/AM/am-ei-p69-upright.png",
+          "section_start_ocr_page": 68
+        },
+        "verification": {
+          "actor_type": "automated",
+          "actor_id": "data_north",
+          "method": "Full OCR chapter headings; rendered opening pages 88/99/107/131 and table69 visually checked; boundary155 is next chapter.",
+          "at": "2026-10-28T04:37:34.783124+00:00"
+        }
+      },
+      {
+        "id": "am-ei-campo-88",
+        "title": "Corpo, gestos e movimentos",
+        "stage": "EI",
+        "component": "Corpo, gestos e movimentos",
+        "page_start": 88,
+        "page_end": 98,
+        "evidence": {
+          "source_id": "am-rca-ei",
+          "page": 88,
+          "printed_page": "88",
+          "section": "Capítulo 10: Campos de experiências",
+          "excerpt": "Corpo, gestos e movimentos",
+          "image_path": "data/raw/AM/am-ei-p88-upright.png"
+        },
+        "verification": {
+          "actor_type": "automated",
+          "actor_id": "data_north",
+          "method": "Full OCR chapter headings; rendered opening pages 88/99/107/131 and table69 visually checked; boundary155 is next chapter.",
+          "at": "2026-10-28T04:37:34.783124+00:00"
+        }
+      },
+      {
+        "id": "am-ei-campo-99",
+        "title": "Traços, sons, cores e formas",
+        "stage": "EI",
+        "component": "Traços, sons, cores e formas",
+        "page_start": 99,
+        "page_end": 106,
+        "evidence": {
+          "source_id": "am-rca-ei",
+          "page": 99,
+          "printed_page": "99",
+          "section": "Capítulo 10: Campos de experiências",
+          "excerpt": "Traços, sons, cores e formas",
+          "image_path": "data/raw/AM/am-ei-p99-upright.png"
+        },
+        "verification": {
+          "actor_type": "automated",
+          "actor_id": "data_north",
+          "method": "Full OCR chapter headings; rendered opening pages 88/99/107/131 and table69 visually checked; boundary155 is next chapter.",
+          "at": "2026-10-28T04:37:34.783124+00:00"
+        }
+      },
+      {
+        "id": "am-ei-campo-107",
+        "title": "Escuta, fala, pensamento e imaginação",
+        "stage": "EI",
+        "component": "Escuta, fala, pensamento e imaginação",
+        "page_start": 107,
+        "page_end": 130,
+        "evidence": {
+          "source_id": "am-rca-ei",
+          "page": 107,
+          "printed_page": "107",
+          "section": "Capítulo 10: Campos de experiências",
+          "excerpt": "Escuta, fala, pensamento e imaginação",
+          "image_path": "data/raw/AM/am-ei-p107-upright.png"
+        },
+        "verification": {
+          "actor_type": "automated",
+          "actor_id": "data_north",
+          "method": "Full OCR chapter headings; rendered opening pages 88/99/107/131 and table69 visually checked; boundary155 is next chapter.",
+          "at": "2026-10-28T04:37:34.783124+00:00"
+        }
+      },
+      {
+        "id": "am-ei-campo-131",
+        "title": "Espaços, tempos, quantidades, relações e transformações",
+        "stage": "EI",
+        "component": "Espaços, tempos, quantidades, relações e transformações",
+        "page_start": 131,
+        "page_end": 154,
+        "evidence": {
+          "source_id": "am-rca-ei",
+          "page": 131,
+          "printed_page": "131",
+          "section": "Capítulo 10: Campos de experiências",
+          "excerpt": "Espaços, tempos, quantidades, relações e transformações",
+          "image_path": "data/raw/AM/am-ei-p131-upright.png"
+        },
+        "verification": {
+          "actor_type": "automated",
+          "actor_id": "data_north",
+          "method": "Full OCR chapter headings; rendered opening pages 88/99/107/131 and table69 visually checked; boundary155 is next chapter.",
+          "at": "2026-10-28T04:37:34.783124+00:00"
+        }
+      }
+    ],
+    "toc_page_discrepancies": [
+      {
+        "section": "10.2 Corpo, gestos e movimentos",
+        "toc_claimed_page": 85,
+        "actual_heading_page": 88
+      },
+      {
+        "section": "10.3 Traços, sons, cores e formas",
+        "toc_claimed_page": 96,
+        "actual_heading_page": 99
+      },
+      {
+        "section": "10.4 Escuta, fala, pensamento e imaginação",
+        "toc_claimed_page": 103,
+        "actual_heading_page": 107
+      },
+      {
+        "section": "10.5 Espaços, tempos, quantidades, relações e transformações",
+        "toc_claimed_page": 125,
+        "actual_heading_page": 131
       }
     ]
   },
@@ -589,7 +763,27 @@
       "drive.usercontent.google.com"
     ],
     "requires_ocr": true,
-    "ocr_reason": "Scanned bitmap or vectorized/corrupt body text; native header length alone does not demonstrate readable body."
+    "ocr_reason": "Scanned bitmap or vectorized/corrupt body text; native header length alone does not demonstrate readable body.",
+    "position_contexts": [
+      {
+        "page": 106,
+        "stage": "EF",
+        "component": "Língua Portuguesa",
+        "years": [
+          6
+        ],
+        "year_label": "6ºano",
+        "evidence": {
+          "source_id": "am-rca-ef-af",
+          "page": 106,
+          "section": "LÍNGUA PORTUGUESA6ºANO / CAMPOJORNALÍSTICO/MIDIÁTICO",
+          "excerpt": "LÍNGUA PORTUGUESA 6º ANO",
+          "verification": "visual_source_page",
+          "image_path": "data/raw/AM/am-ef-af-p106-upright.png"
+        },
+        "note": "CódigoEF67LP03 apresenta aplicação local6ºano nesta página; código nacional não substitui posição local."
+      }
+    ]
   },
   {
     "id": "am-rca-em",
@@ -601,14 +795,32 @@
     "stages": [
       "EM"
     ],
-    "components": [],
+    "components": [
+      "Língua Portuguesa",
+      "Língua Inglesa",
+      "Arte",
+      "Educação Física",
+      "Matemática",
+      "Biologia",
+      "Física",
+      "Química",
+      "História",
+      "Geografia",
+      "Filosofia",
+      "Sociologia"
+    ],
     "edition": null,
     "document_date": null,
     "homologation_date": "2021-07-21",
-    "application_period": "ResoluçãoAdReferendum085/2021estabelece implementaçãoapartir2022. Reestruturação209/2024define transição2025/2026/2027; situaçãointegralvigente2026aindapendente.",
+    "application_period": "A Resolução Ad Referendum 085/2021 estabelece implementação a partir de 2022. A Resolução 209/2024 define transição em 2025/2026/2027; a situação integral vigente em 2026 ainda está pendente de reconciliação.",
     "document_type": "referencial_curricular",
     "normative_parts": [
-      "Documento integral; reconciliação de índice e partes pendente"
+      "Apresentação e contexto do Ensino Médio no Amazonas",
+      "Formação Geral Básica: Linguagens e suas Tecnologias, Matemática e suas Tecnologias, Ciências da Natureza e suas Tecnologias, Ciências Humanas e Sociais Aplicadas",
+      "Organizadores curriculares e objetivos de aprendizagem das quatro áreas",
+      "Itinerários Formativos: organização, eixos estruturantes, unidades curriculares comuns, aprofundamentos, eletivas e formação técnica e profissional",
+      "Ensino Médio e diversas ofertas: educação escolar indígena, campo, especial, EJA, integral e noturno",
+      "Orientações para implementação"
     ],
     "redistribution": "Condição de redistribuição não estabelecida; snapshot privado para conferência. Direitos da fonte preservados.",
     "collected_at": "2026-10-28T03:27:52.331991+00:00",
@@ -646,6 +858,32 @@
       "source_id": "am-aprovacao-em-85-2021",
       "page": 1,
       "section": "Artigo1º"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Língua Portuguesa",
+        "Língua Inglesa",
+        "Arte",
+        "Educação Física",
+        "Matemática",
+        "Biologia",
+        "Física",
+        "Química",
+        "História",
+        "Geografia",
+        "Filosofia",
+        "Sociologia"
+      ]
+    },
+    "inventory_evidence": {
+      "source_id": "am-rca-em",
+      "pages": [
+        8,
+        9,
+        13
+      ],
+      "method": "full_document_OCR_TOC_and_explicit_five_part_presentation",
+      "note": "Cinco partes declaradas pela própria apresentação na página13; sumário8–9 lista organizadores, itinerários e modalidades. Não representa reconciliação integral."
     }
   },
   {
@@ -5594,8 +5832,8 @@
     "application_period": null,
     "document_type": "ato_normativo",
     "normative_parts": [
-      "Resolução32/2025de29demaio2025",
-      "Anexo de matrizes EM parcial, integral, indígena, EJA e EF integral"
+      "Resolução 32/2025 de 29 de maio de 2025",
+      "Anexo de matrizes do Ensino Médio parcial, integral, indígena e EJA e do Ensino Fundamental integral"
     ],
     "redistribution": "Direito de redistribuição do PDF não estabelecido; original privado para conferência.",
     "collected_at": "2026-10-28T04:26:11.066716+00:00",
@@ -5657,7 +5895,7 @@
     "application_period": null,
     "document_type": "ato_normativo",
     "normative_parts": [
-      "Resolução38/2025:diretrizesPRETI,artigos1–15"
+      "Resolução 38/2025: diretrizes do PRETI, artigos 1–15"
     ],
     "redistribution": "Direito de redistribuição do PDF não estabelecido; original privado para conferência.",
     "collected_at": "2026-10-28T04:26:11.066716+00:00",
@@ -5714,14 +5952,14 @@
     "edition": null,
     "document_date": "2024-11-12",
     "homologation_date": null,
-    "application_period": "Implementação escalonada a partir de2025; modelosAnexosI/II/III distinguem coortes2025/2026/2027. Não equivale a substituição integral doRCA2021.",
+    "application_period": "Implementação escalonada a partir de 2025; os modelos dos Anexos I/II/III distinguem coortes de 2025/2026/2027. Não equivale a substituição integral do RCA 2021.",
     "document_type": "ato_normativo",
     "normative_parts": [
-      "Resolução209/2024,artigos1–16(páginas1–4)",
-      "DocumentoOrientadorReestruturaçãoEM(páginas5–24)",
-      "AnexoI matriz a partir2025(página22)",
-      "AnexoII transição2ªsérie2025e3ª2026(página23)",
-      "AnexoIII transição3ªsérie2025(página24)"
+      "Resolução 209/2024: artigos 1–16 (páginas 1–4)",
+      "Documento Orientador sobre Reestruturação do Ensino Médio (páginas 5–24)",
+      "Anexo I: matriz a partir de 2025 (página 22)",
+      "Anexo II: transição da 2ª série em 2025 e 3ª série em 2026 (página 23)",
+      "Anexo III: transição da 3ª série em 2025 (página 24)"
     ],
     "redistribution": "Direito de redistribuição do PDF não estabelecido; original privado para conferência.",
     "collected_at": "2026-10-28T04:26:11.066716+00:00",
@@ -5781,7 +6019,7 @@
       23,
       24
     ],
-    "scope_note": "Páginas25–26 são reproduçãoDOE que mistura ato de equivalência227 e cópia daRes209 já contida integralmente em1–4. Excluídas da extração para evitar duplicata e atos alheios."
+    "scope_note": "As páginas 25–26 são reprodução do Diário Oficial que mistura o ato de equivalência 227 com cópia da Resolução 209, já contida integralmente nas páginas 1–4. Foram excluídas da extração para evitar duplicação e atos alheios."
   },
   {
     "id": "am-aprovacao-em-85-2021",
@@ -5797,10 +6035,10 @@
     "edition": null,
     "document_date": "2021-07-21",
     "homologation_date": null,
-    "application_period": "Art.2º,parágrafoúnico: implementaçãoRCAEMa partirdoano2022; art.3º vigência após assinatura com posterior publicaçãoDOE.",
+    "application_period": "Art. 2º, parágrafo único: implementação do RCAEM a partir do ano de 2022. Art. 3º: vigência após assinatura com posterior publicação no Diário Oficial.",
     "document_type": "ato_normativo",
     "normative_parts": [
-      "Resolução Ad Referendum085de21dejulho2021,artigos1–3eassinatura"
+      "Resolução Ad Referendum 085 de 21 de julho de 2021: artigos 1–3 e assinatura"
     ],
     "redistribution": "Direito de redistribuição do PDF não estabelecido; original privado para conferência.",
     "collected_at": "2026-10-28T04:26:11.066716+00:00",
@@ -5947,8 +6185,231 @@
         }
       }
     ],
-    "include_in_corpus": false,
-    "exclusion_reason": "Ato obrigatório adquirido e mantido no denominador. Integração aguarda suporte às regiões ordenadas para não importar atos de reconhecimento escolar ou dados fiscais alheios.",
-    "privacy_note": "Processar apenas page_regions explícitas; não publicar texto completo de páginas81/82 nem DOIinteiro."
+    "include_in_corpus": true,
+    "privacy_note": "Processar apenas page_regions explícitas; não publicar texto completo de páginas81/82 nem DOIinteiro.",
+    "scope_verification": {
+      "at": "2026-10-28T04:45:56.296695+00:00",
+      "actor_type": "automated",
+      "extraction_revision": "page-cell-v1.4.0",
+      "pages": 3,
+      "documentary_sections": 3,
+      "warnings": 0,
+      "result": "passed_includes_acts043_and001_excludes_school_recognition_and_fiscal_identifiers"
+    }
+  },
+  {
+    "id": "to-dct-guia-ei-ef",
+    "uf": "TO",
+    "title": "Guia de Implementação do Documento Curricular do Tocantins — Educação Infantil e Ensino Fundamental",
+    "issuer": "Secretaria de Estado da Educação do Tocantins",
+    "official_url": "https://sites.google.com/seduc.to.gov.br/gcaa/materiais",
+    "artifact_url": "https://central.to.gov.br/download/209819",
+    "stages": [
+      "EI",
+      "EF"
+    ],
+    "components": [],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": "A apresentação (página5) informa implementação do DCT a partir de2020; relação com atualizações2026 ainda não confirmada.",
+    "document_type": "orientacao_curricular",
+    "normative_parts": [
+      "Apresentação",
+      "Governança de implementação e equipe ProBNCC",
+      "Atribuições das Diretorias Regionais de Educação e Secretarias Municipais de Educação",
+      "Formador-multiplicador",
+      "Unidade Escolar: diretor e coordenação pedagógica",
+      "Ambiente de ensino e aprendizagem",
+      "Processo avaliativo da implementação do DCT",
+      "Reflexões sobre implementação e competências gerais da BNCC na gestão escolar",
+      "Transições da Educação Infantil ao Ensino Fundamental e dos anos iniciais aos finais"
+    ],
+    "redistribution": "Direito de redistribuição do PDF não estabelecido; original privado para conferência.",
+    "collected_at": "2026-10-28T04:34:48.232518+00:00",
+    "sha256": "2443021be88d928b0abfed0424a37f27da0a1f63ee17ccea3a76447d34a2bf7d",
+    "local_path": "data/raw/TO/to-guia-ei-ef.pdf",
+    "status": "acquired",
+    "bytes": 4671672,
+    "document_pages": 24,
+    "mandatory": true,
+    "expected": true,
+    "inventory_status": "in_progress",
+    "reconciliation_status": "pending",
+    "attempts": [
+      {
+        "at": "2026-10-28T04:34:48.232518+00:00",
+        "url": "https://central.to.gov.br/download/209819",
+        "result": "acquired_verified_tls"
+      }
+    ],
+    "requires_ocr": true,
+    "inventory_evidence": {
+      "source_id": "to-dct-guia-ei-ef",
+      "pages": [
+        4,
+        5
+      ],
+      "method": "Portuguese_OCR_source_TOC_and_presentation",
+      "review_status": "automated_not_human_pedagogical_review"
+    }
+  },
+  {
+    "id": "to-dct-orientador-em-2023",
+    "uf": "TO",
+    "title": "Documento Orientador Técnico Complementar — Implementação do Documento Curricular Etapa Ensino Médio",
+    "issuer": "Secretaria de Estado da Educação do Tocantins",
+    "official_url": "https://www.to.gov.br/seduc/documento-orientador-tecnico-complementar/14fz6pl12ttc",
+    "artifact_url": "https://central.to.gov.br/download/317721",
+    "stages": [
+      "EM"
+    ],
+    "components": [],
+    "edition": "2023",
+    "document_date": "2023",
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "orientacao_curricular",
+    "normative_parts": [
+      "Apresentação",
+      "Estruturação do DCT-TO Ensino Médio: Cadernos 1–5",
+      "Principais mudanças no currículo",
+      "Organização curricular dos itinerários formativos: projeto de vida, eletivas, trilhas e FTP",
+      "Orientações gerais para operacionalização nas escolas",
+      "Considerações finais",
+      "Referências"
+    ],
+    "redistribution": "Direito de redistribuição do PDF não estabelecido; original privado para conferência.",
+    "collected_at": "2026-10-28T04:34:48.232518+00:00",
+    "sha256": "7d866ab47459976e21db1e2c565d828850e69ec9300187521823692c5dd2785d",
+    "local_path": "data/raw/TO/to-orientador-em.pdf",
+    "status": "acquired",
+    "bytes": 1496417,
+    "document_pages": 55,
+    "mandatory": true,
+    "expected": true,
+    "inventory_status": "in_progress",
+    "reconciliation_status": "pending",
+    "attempts": [
+      {
+        "at": "2026-10-28T04:34:48.232518+00:00",
+        "url": "https://central.to.gov.br/download/317721",
+        "result": "acquired_verified_tls"
+      }
+    ],
+    "requires_ocr": false
+  },
+  {
+    "id": "ac-computacao-667-2025",
+    "uf": "AC",
+    "title": "Resolução CEE/AC 667/2025 — Aprovação do Currículo de Educação Digital, Midiática e Computacional",
+    "issuer": "Conselho Estadual de Educação do Acre",
+    "official_url": "https://diario.ac.gov.br/",
+    "artifact_url": "https://diario.ac.gov.br/download.php?arquivo=KEQxQHI3IyEpRE8xNzY5MDMyNzE4Mjc2NC5wZGY=",
+    "stages": [
+      "EI",
+      "EF",
+      "EM"
+    ],
+    "components": [
+      "Computação"
+    ],
+    "edition": "Diário Oficial 14.191 de 21 de janeiro de 2026",
+    "document_date": "2025-12-22",
+    "homologation_date": "2025-12-22",
+    "application_period": "Publicação em 21 de janeiro de 2026; Art.9º determina implementação em 2026. Art.8º deixa adesão ou ato próprio a critério dos sistemas municipais.",
+    "document_type": "ato_normativo",
+    "normative_parts": [
+      "Resolução CEE/AC 667/2025: artigos 1–10 e assinatura, páginas físicas39–40"
+    ],
+    "redistribution": "Direito de redistribuição do PDF não estabelecido; original completo privado e corpus restrito às regiões educacionais declaradas.",
+    "collected_at": "2026-10-28T04:45:08.526817+00:00",
+    "sha256": "71d47a5067d527a5a1428a5a59aa77a7b669625e9215d23ede15e0124c0d284e",
+    "local_path": "data/raw/AC/ac-doe-14191-20260121.pdf",
+    "status": "acquired",
+    "bytes": 23298193,
+    "document_pages": 217,
+    "mandatory": true,
+    "expected": true,
+    "inventory_status": "in_progress",
+    "reconciliation_status": "pending",
+    "attempts": [
+      {
+        "at": "2026-10-28T04:45:08.526817+00:00",
+        "url": "https://diario.ac.gov.br/",
+        "method": "public date search POST data=20260121; no publication mutation",
+        "result": "official edition14191 found"
+      },
+      {
+        "at": "2026-10-28T04:45:08.526817+00:00",
+        "url": "https://diario.ac.gov.br/download.php?arquivo=KEQxQHI3IyEpRE8xNzY5MDMyNzE4Mjc2NC5wZGY=",
+        "result": "acquired_verified_tls"
+      }
+    ],
+    "extraction_pages": [
+      39,
+      40
+    ],
+    "page_regions": [
+      {
+        "page": 39,
+        "regions": [
+          [
+            15,
+            320,
+            583,
+            824
+          ]
+        ],
+        "reading_order": "as_declared",
+        "coordinate_space": "original_pdf_page",
+        "evidence": {
+          "page": 39,
+          "section": "Início Resolução667/2025",
+          "verification": "Renderização e bbox nativos conferidos: órgão emissor inicia y324; ato contratual anterior termina acima. Região restringe a norma curricular."
+        }
+      },
+      {
+        "page": 40,
+        "regions": [
+          [
+            15,
+            40,
+            583,
+            480
+          ]
+        ],
+        "reading_order": "as_declared",
+        "coordinate_space": "original_pdf_page",
+        "evidence": {
+          "page": 40,
+          "section": "Continuação e final Resolução667/2025",
+          "verification": "Renderização e bbox conferidos: continuaçãoIII y42.85; assinatura/aprovação terminam y477.56; próximaResolução468 começa no órgão emissor y490.7 e fica fora."
+        }
+      }
+    ],
+    "include_in_corpus": true,
+    "expected_related_documents": [
+      {
+        "title": "Currículo de Educação Digital, Midiática e Computacional do Estado do Acre",
+        "mandatory": true,
+        "status": "research_pending",
+        "evidence": {
+          "source_id": "ac-computacao-667-2025",
+          "page": 39,
+          "section": "Considerandos e artigo1º"
+        },
+        "reason": "A resolução incorpora currículo com introdução, concepções e quadros organizadores por etapas; o texto integral desse currículo não consta nestas páginas e ainda precisa ser obtido. Consulta pública2025 está encerrada; vídeos tutoriais não são o artefato curricular."
+      }
+    ],
+    "scope_verification": {
+      "at": "2026-10-28T04:45:56.296976+00:00",
+      "actor_type": "automated",
+      "extraction_revision": "page-cell-v1.4.0",
+      "pages": 2,
+      "documentary_sections": 2,
+      "warnings": 0,
+      "result": "passed_includes667_excludes_previous_contract_and_next468"
+    }
   }
 ]

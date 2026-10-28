@@ -10,7 +10,7 @@ import json
 import re
 import tempfile
 from pathlib import Path
-from ingest import ROOT, UFS, STAGES, EXTRACTION_REVISION, canonical, load_sources, sha_bytes, sha_file, write_json
+from ingest import ROOT, UFS, STAGES, EXTRACTION_REVISION, expected_source_parts, canonical, load_sources, sha_bytes, sha_file, write_json
 
 
 def inventory_scopes(inventory):
@@ -18,10 +18,11 @@ def inventory_scopes(inventory):
     for uf in UFS:
         for stage in STAGES:
             scoped=[s for s in inventory if s.get('uf')==uf and stage in s.get('stages',[]) and s.get('mandatory',True)]
-            components=sorted({c for s in scoped for c in s.get('stage_component_inventory',{}).get(stage,s.get('components',[]) if len(s.get('stages',[]))==1 else [])}) or [None]
+            components=sorted({c for s in scoped for c in s.get('stage_component_inventory',{}).get(stage,s.get('components',[]) if len(s.get('stages',[]))==1 else [])})
+            if not components or any(not s.get('stage_component_inventory',{}).get(stage,s.get('components',[]) if len(s.get('stages',[]))==1 else []) for s in scoped):components.append(None)
             for component in components:
-                sources=[s for s in scoped if component is None or component in s.get('stage_component_inventory',{}).get(stage,s.get('components',[]) if len(s.get('stages',[]))==1 else [])]
-                parts={(s['id'],part) for s in sources for part in s.get('normative_parts',[])}
+                sources=[s for s in scoped if (component is None and not s.get('stage_component_inventory',{}).get(stage,s.get('components',[]) if len(s.get('stages',[]))==1 else [])) or component in s.get('stage_component_inventory',{}).get(stage,s.get('components',[]) if len(s.get('stages',[]))==1 else [])]
+                parts={(part['source_id'],part['part']) for source in sources for part in expected_source_parts(source)}
                 scopes[(uf,stage,component)]={'sources':sources,'parts':parts}
     return scopes
 

@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { StructureResultSchema } from '../src/mcp/contracts';
 import { downloadAndHash, validatePublishedJsonFile, validatePublishedCsvFile } from './api-export-stream';
 
 const base=process.env.TEST_BASE_URL??process.env.VERIFY_BASE_URL??process.env.PUBLIC_URL??'http://localhost:3000';
@@ -17,7 +18,7 @@ const pin=(path:string)=>`${path}${path.includes('?')?'&':'?'}publication=${enco
 async function exportAndRead(format:'json'|'csv',extra:Record<string,unknown>={}){
  const job=await json('exportacoes',202,post({publication,format,...extra}));assert.ok(job.id);assert.equal(job.publication,publication);let status=job;
  for(let attempt=0;attempt<120;attempt++){
-  status=await json(`exportacoes/${job.id}`);if(status.status==='succeeded')break;if(status.status==='failed')throw new Error(`Exportação ${job.id} falhou.`);
+  status=await json(`exportacoes/${job.id}`);assert.equal(status.publication,publication,'Job pendente deve preservar sua publicação fixada.');if(status.status==='succeeded')break;if(status.status==='failed')throw new Error(`Exportação ${job.id} falhou.`);
   if(attempt===0)await json(`exportacoes/${job.id}/arquivo`,409);
   await new Promise(resolve=>setTimeout(resolve,1000));
  }
@@ -36,7 +37,7 @@ try{
  const ufsResponse=await request(pin('ufs'));const ufs=await ufsResponse.json();assert.equal(ufs.publication,publication);assert.equal(ufs.data.length,27);assert.equal(new Set(ufs.data.map((r:{uf:string})=>r.uf)).size,27);
  const etag=ufsResponse.headers.get('etag');assert.ok(etag);await request(pin('ufs'),304,{headers:{'If-None-Match':etag}});
  for(const op of ['redes','curriculos','cobertura','fontes','analises','correspondencias']){const data=await json(pin(op));assert.equal(data.publication,publication);assert.ok('data'in data);}
- const curricula=await json(pin('curriculos'));assert.ok(curricula.data.length>0);const curriculum=curricula.data[0];await json(pin(`curriculos/${encodeURIComponent(curriculum.id)}`));await json(pin(`curriculos/${encodeURIComponent(curriculum.id)}/estrutura`));
+ const curricula=await json(pin('curriculos'));assert.ok(curricula.data.length>0);const curriculum=curricula.data[0];await json(pin(`curriculos/${encodeURIComponent(curriculum.id)}`));const structure=StructureResultSchema.parse(await json(pin(`curriculos/${encodeURIComponent(curriculum.id)}/estrutura`)));assert.equal(structure.hierarchy.total,structure.hierarchy.nodes.length);const parent=structure.hierarchy.nodes.find(node=>node.child_count>0);if(parent){const children=await json(pin(`aprendizagens?parent_id=${encodeURIComponent(parent.id)}&limit=100`));assert.equal(children.total,parent.child_count);for(const child of children.data)assert.equal(child.parent_id,parent.id);report.hierarchy_parent_id=parent.id;}
  const sources=await json(pin('fontes'));assert.ok(sources.data.length>0);await json(pin(`fontes/${encodeURIComponent(sources.data[0].id)}`));
  const first=await json(pin('aprendizagens?limit=2'));assert.ok(first.data.length>0,'Busca deve consultar registros reais, não scaffold.');const item=first.data[0];assert.ok(item.evidence?.length>0);assert.ok(item.text?.length>0);report.real_item_id=item.id;expectedSample={id:item.id,text:item.text,evidence:item.evidence};
  const itemResult=await json(pin(`aprendizagens/${encodeURIComponent(item.id)}`));assert.equal(itemResult.data.text,item.text);assert.deepEqual(itemResult.data.evidence,item.evidence);

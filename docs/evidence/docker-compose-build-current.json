@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "command": [
+    "docker",
+    "compose",
+    "--progress",
+    "plain",
+    "build",
+    "app"
+  ],
+  "started_at": "2026-10-28T04:38:57.339Z",
+  "completed_at": "2026-10-28T04:43:12.718Z",
+  "exit_code": 0,
+  "method": "standard-docker-compose-build",
+  "image": "curriculos-abertos:local",
+  "image_id": "sha256:69060a8a7eaedaabcc4a8eda7524103a409ba58a4e1576c7f5f4e965dce088cc",
+  "runtime": {
+    "node": "v22.23.4",
+    "architecture": "arm64",
+    "uid": 1000,
+    "npm": "11.6.2",
+    "python": "{\"python\": \"3.11.2\", \"pymupdf\": \"1.26.7\", \"pypdf_installed\": false, \"pdfplumber_installed\": false}",
+    "source_tree_sha256": "4a6de4adbc06a4e4f6b783ea0baf93ed7342ced7eb0a773485b1b7def7dfcb6b",
+    "agpl_license_present": true
+  },
+  "log": "docs/evidence/docker-compose-build-current.log",
+  "log_sha256": "cd849bd66738706ed25117e270a3f3882f3cdc16faef392e4e8fd4bc33ac9358",
+  "passed": true,
+  "final_image": false,
+  "limitation": "Technical build while source/data fronts remain active; final build must match frozen source fingerprint."
+}

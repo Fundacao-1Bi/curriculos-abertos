@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-10-28T04:41:33.503Z",
+  "completed_at": "2026-10-28T04:44:53.119Z",
+  "project": "curriculos-abertos",
+  "source_container": "d0d6ead9618140c0f519a32c2c76a0064a107cb1ed24c70e52f5c62bd6d8fa9e",
+  "source_volume": "curriculos-abertos_database",
+  "source_image": "sha256:bac8128cd62a35471a1e97966861aa2ac88c8d2f408767a425ae70695a607c99",
+  "target_image": "postgres:17.11-bookworm",
+  "target_image_id": "sha256:8cd540d6ac172b5f392d9c70e67dad05b54074f75a144bb32e0f4f36793ac777",
+  "target_container": "curriculos-abertos-pg1711-restore-20261028044133-f64587bb",
+  "target_volume": "curriculos-abertos_database_pg1711_20261028044133-f64587bb",
+  "backup_dir": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/backups/pg1711-20261028044133-f64587bb",
+  "backup_dump_sha256": "23a17c1e6e4f9e6ee61a8d4e5bc72c04e53c544bcd352f40c8c58443adcd5031",
+  "database": "curriculos",
+  "user": "curriculos",
+  "source_collation": {
+    "server_version": "17.7 (Debian 17.7-3.pgdg13+1)",
+    "encoding": "UTF8",
+    "timezone": "UTC",
+    "datname": "curriculos",
+    "datcollate": "en_US.utf8",
+    "datctype": "en_US.utf8",
+    "datcollversion": "2.41",
+    "actual_version": "2.41"
+  },
+  "target_collation": {
+    "server_version": "17.11 (Debian 17.11-1.pgdg12+2)",
+    "encoding": "UTF8",
+    "timezone": "UTC",
+    "datname": "curriculos",
+    "datcollate": "en_US.utf8",
+    "datctype": "en_US.utf8",
+    "datcollversion": "2.36",
+    "actual_version": "2.36"
+  },
+  "snapshot": {
+    "account": {
+      "count": "0",
+      "row_digest_md5": null
+    },
+    "admin_roles": {
+      "count": "0",
+      "row_digest_md5": null
+    },
+    "audit_events": {
+      "count": "16",
+      "row_digest_md5": "d061a6a5bc0dc4ccfaf41ba1b8310d70"
+    },
+    "contributions": {
+      "count": "6",
+      "row_digest_md5": "341695de02497cf5b97515411681f8f8"
+    },
+    "current_publication": {
+      "count": "1",
+      "row_digest_md5": "1576c64ab7604440087fc099062d09d2"
+    },
+    "drafts": {
+      "count": "2",
+      "row_digest_md5": "514852071435ea935bda1137c4ebf79a"
+    },
+    "items": {
+      "count": "78752",
+      "row_digest_md5": "6949dd63da7d467c914189efb60abfcd"
+    },
+    "job_events": {
+      "count": "17",
+      "row_digest_md5": "e520e289cd7ad99a8f71c94a893add53"
+    },
+    "jobs": {
+      "count": "9",
+      "row_digest_md5": "32206bd5a7832340f2f86920717bb438"
+    },
+    "publication_coverage": {
+      "count": "704",
+      "row_digest_md5": "b062c5b38682a4da4c0b740fe609bc80"
+    },
+    "publication_events": {
+      "count": "4",
+      "row_digest_md5": "31ccf9604319a8270a43106ed12c8091"
+    },
+    "publication_metadata": {
+      "count": "3",
+      "row_digest_md5": "2685feff22e24ad50d9c0b9ffa6dc8c4"
+    },
+    "publications": {
+      "count": "3",
+      "row_digest_md5": "a6221c07cf8205d6f6a65bf5e53d1cab"
+    },
+    "relation_members": {
+      "count": "52028",
+      "row_digest_md5": "7bcd5d0854a4843011f16e17ea1b5732"
+    },
+    "relations": {
+      "count": "26014",
+      "row_digest_md5": "e721f0986d2714883f83ed230a4943a6"
+    },
+    "request_metrics": {
+      "count": "55",
+      "row_digest_md5": "2d977e3308b452b6815bae30746d005e"
+    },
+    "schema_migrations": {
+      "count": "7",
+      "row_digest_md5": "8c0694329bba81e34cf619622d3f4a4c"
+    },
+    "session": {
+      "count": "0",
+      "row_digest_md5": null
+    },
+    "source_checks": {
+      "count": "0",
+      "row_digest_md5": null
+    },
+    "sources": {
+      "count": "625",
+      "row_digest_md5": "537e9c7e59ca8b1c97ddb84900f829f9"
+    },
+    "user": {
+      "count": "0",
+      "row_digest_md5": null
+    },
+    "verification": {
+      "count": "0",
+      "row_digest_md5": null
+    },
+    "worker_heartbeats": {
+      "count": "1",
+      "row_digest_md5": "e3e35f3b5cd08a6d091106adeda91067"
+    }
+  },
+  "restored_snapshot": {
+    "account": {
+      "count": "0",
+      "row_digest_md5": null
+    },
+    "admin_roles": {
+      "count": "0",
+      "row_digest_md5": null
+    },
+    "audit_events": {
+      "count": "16",
+      "row_digest_md5": "d061a6a5bc0dc4ccfaf41ba1b8310d70"
+    },
+    "contributions": {
+      "count": "6",
+      "row_digest_md5": "341695de02497cf5b97515411681f8f8"
+    },
+    "current_publication": {
+      "count": "1",
+      "row_digest_md5": "1576c64ab7604440087fc099062d09d2"
+    },
+    "drafts": {
+      "count": "2",
+      "row_digest_md5": "514852071435ea935bda1137c4ebf79a"
+    },
+    "items": {
+      "count": "78752",
+      "row_digest_md5": "6949dd63da7d467c914189efb60abfcd"
+    },
+    "job_events": {
+      "count": "17",
+      "row_digest_md5": "e520e289cd7ad99a8f71c94a893add53"
+    },
+    "jobs": {
+      "count": "9",
+      "row_digest_md5": "32206bd5a7832340f2f86920717bb438"
+    },
+    "publication_coverage": {
+      "count": "704",
+      "row_digest_md5": "b062c5b38682a4da4c0b740fe609bc80"
+    },
+    "publication_events": {
+      "count": "4",
+      "row_digest_md5": "31ccf9604319a8270a43106ed12c8091"
+    },
+    "publication_metadata": {
+      "count": "3",
+      "row_digest_md5": "2685feff22e24ad50d9c0b9ffa6dc8c4"
+    },
+    "publications": {
+      "count": "3",
+      "row_digest_md5": "a6221c07cf8205d6f6a65bf5e53d1cab"
+    },
+    "relation_members": {
+      "count": "52028",
+      "row_digest_md5": "7bcd5d0854a4843011f16e17ea1b5732"
+    },
+    "relations": {
+      "count": "26014",
+      "row_digest_md5": "e721f0986d2714883f83ed230a4943a6"
+    },
+    "request_metrics": {
+      "count": "55",
+      "row_digest_md5": "2d977e3308b452b6815bae30746d005e"
+    },
+    "schema_migrations": {
+      "count": "7",
+      "row_digest_md5": "8c0694329bba81e34cf619622d3f4a4c"
+    },
+    "session": {
+      "count": "0",
+      "row_digest_md5": null
+    },
+    "source_checks": {
+      "count": "0",
+      "row_digest_md5": null
+    },
+    "sources": {
+      "count": "625",
+      "row_digest_md5": "537e9c7e59ca8b1c97ddb84900f829f9"
+    },
+    "user": {
+      "count": "0",
+      "row_digest_md5": null
+    },
+    "verification": {
+      "count": "0",
+      "row_digest_md5": null
+    },
+    "worker_heartbeats": {
+      "count": "1",
+      "row_digest_md5": "e3e35f3b5cd08a6d091106adeda91067"
+    }
+  },
+  "restoration_verified": true,
+  "cutover_executed": false,
+  "collation_method": "Logical restore into fresh database and newly built indexes under libc2.36; oldlibc2.41 data directory was not mounted by the new runtime.",
+  "row_digest_algorithm": "md5 of sorted row JSON digests, PostgreSQL C collation; backup file uses SHA-256"
+}

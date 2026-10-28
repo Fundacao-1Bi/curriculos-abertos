@@ -6,7 +6,7 @@ define scope. No national-code equality or school-year mapping is inferred.
 from pathlib import Path
 import re,json,collections,hashlib,datetime
 import fitz
-from extract_sc_uncoded import ROOT,SOURCES,norm,canonical_text,paragraphs,words_in
+from extract_sc_uncoded import ROOT,SOURCES,norm,canonical_text,paragraphs,words_in,words_text
 REV='sc-explicit-em-objective-lists-v1.0.0'
 def position(component,area=None):return {'stage':'EM','component':component,'area':area,'years':None,'year_label':None,'age_group':None,'period':None,'position_origin':'explicit_source_section_heading','position_note':'Seção explícita do Ensino Médio; série/semestre não declarados neste objetivo.'}
 def record(sid,pn,locator,text,bbox,component,context,area=None):
@@ -37,13 +37,43 @@ def native_lines(p):
  return sorted(out,key=lambda l:(l['bbox'][1],l['bbox'][0]))
 def course_context(p,pn):
  t=p.get_text()
- if 'Carga horária:' not in t or 'RESUMO' not in t:return None
+ # Four genuine covers place RESUMO on the following physical page.
+ if 'Carga horária:' not in t or not ('AUTORES' in t or 'ÁREAS' in t):return None
  spans=[s for b in p.get_text('dict')['blocks'] for l in b.get('lines',[]) for s in l['spans'] if 75<s['bbox'][1]<155 and 'bold' in s['font'].lower()]
  title=norm(' '.join(s['text'] for s in spans if s['bbox'][0]>250 and s['size']<12))
  group=norm(' '.join(s['text'] for s in spans if s['size']>=14))
  return {'course_title':canonical_text(title),'course_group':canonical_text(group),'course_cover_page':pn,'source_cover_heading_excerpt':norm(' '.join(s['text'] for s in spans))}
+def unit_context(p,pn,line,next_page=None):
+ path=ROOT/f'docs/evidence/source-audit-sc/c4-table-geometry-p{pn}.json'
+ if path.exists():tables=json.loads(path.read_text())
+ else:
+  tables=[{'bbox':list(t.bbox),'rows':[list(r.cells) for r in t.rows]} for t in p.find_tables().tables];path.write_text(json.dumps(tables))
+ hx=(line['bbox'][0]+line['bbox'][2])/2;hy=(line['bbox'][1]+line['bbox'][3])/2;found=[]
+ for ti,t in enumerate(tables):
+  for ri,row in enumerate(t['rows']):
+   for ci,c in enumerate(row):
+    if c and c[0]-1<=hx<=c[2]+1 and c[1]-1<=hy<=c[3]+1:found.append((ti,ri,ci,c,row))
+ if not found:return {'unit_context_pending':'No source table cell recognized for explicit unit heading'}
+ ti,ri,ci,cell,row=min(found,key=lambda v:(v[3][2]-v[3][0])*(v[3][3]-v[3][1]));context=[]
+ for j,c in enumerate(row):
+  if c and j<ci:context.append({'column':j,'text':canonical_text(words_text(words_in(p,c))),'bbox':c})
+ result={'unit_title':context[0]['text'] if context else None,'unit_duration':context[1]['text'] if len(context)>1 else None,'unit_source_context':context,'unit_source_locator':f'table:{ti}/row:{ri}','unit_learning_cell_bbox':cell}
+ # A Word table can place a vertically centered row title on its following
+ # physical page while the objective starts on this page. Resolve only the
+ # first matching continued source row, retaining both page coordinates.
+ if not result['unit_title'] and next_page is not None and ri==len(tables[ti]['rows'])-1:
+  for nti,nt in enumerate(next_page.find_tables().tables):
+   for nri,nrow in enumerate(nt.rows):
+    cells=nrow.cells
+    if len(cells)<3 or not cells[0] or not cells[1] or not cells[-1]:continue
+    title=canonical_text(words_text(words_in(next_page,cells[0])));duration=canonical_text(words_text(words_in(next_page,cells[1])))
+    if not title or 'TÍTULO' in title:continue
+    # Facing-page margins shift this official table by about 28 points.
+    if abs(cells[-1][0]-cell[0])>45 or abs(cells[-1][2]-cell[2])>45:continue
+    result.update(unit_title=title,unit_duration=duration,unit_title_page=pn+1,unit_title_locator=f'table:{nti}/row:{nri}',unit_title_context_origin='explicit_title_in_first_continued_row_next_page',unit_title_evidence=[{'page':pn+1,'text':title,'bbox':cells[0]},{'page':pn+1,'text':duration,'bbox':cells[1]}]);return result
+ return result
 def extract_c4():
- sid='sc-cb-em-caderno-4';doc=fitz.open(ROOT/SOURCES[sid]['local_path']);out=[];audit=[];active=False;current=None;context=None;intro=[];column_left=0;objective_scope=None
+ sid='sc-cb-em-caderno-4';doc=fitz.open(ROOT/SOURCES[sid]['local_path']);out=[];audit=[];active=False;current=None;context=None;intro=[];column_left=0;objective_scope=None;unit={}
  for i,p in enumerate(doc):
   pn=i+1
   if pn<25:continue # front matter/table of contents isn't a learning list
@@ -53,7 +83,7 @@ def extract_c4():
   for li,line in enumerate(native_lines(p)):
    txt=line['text'];clean=norm(txt)
    if clean=='OBJETIVOS DE APRENDIZAGEM' or clean in ('Objetivos','Objetivo'):
-    active=True;active_here=True;current=None;intro=[];column_left=line['bbox'][0]-1;objective_scope='course_objectives' if clean=='OBJETIVOS DE APRENDIZAGEM' else 'unit_objectives';audit.append({'page':pn,'heading':clean,'heading_bbox':line['bbox'],'course_context':context,'objective_scope':objective_scope,'source_marker_count':0});continue
+    active=True;active_here=True;current=None;intro=[];column_left=line['bbox'][0]-1;objective_scope='course_objectives' if clean=='OBJETIVOS DE APRENDIZAGEM' else 'unit_objectives';unit={} if objective_scope=='course_objectives' else unit_context(p,pn,line,doc[pn] if pn<len(doc) else None);audit.append({'page':pn,'heading':clean,'heading_bbox':line['bbox'],'course_context':context,'objective_scope':objective_scope,'unit':unit,'source_marker_count':0});continue
    section_heading=line['bold'] and (line['max_size']>=13 or re.match(r'^Resumo:?$',clean,re.I)) and len(clean)>5 and not line['bullet']
    if section_heading:
     active=False;current=None
@@ -63,7 +93,7 @@ def extract_c4():
     literal=re.sub(r'^[\s\u001f\uf0b7•»]+','',txt).strip()
     loc=f'sc-elective-objective-list:line:{li}'
     if not context or not context.get('course_title'):raise ValueError(f'Objective list lacks explicit course context at page{pn}')
-    ctx={'section':'Componentes Curriculares Eletivos – '+context['course_title'],'official_code_absent':True,'source_list_marker_present':True,'list_intro':norm(' '.join(intro)),'objective_scope':objective_scope,**context}
+    ctx={'section':'Componentes Curriculares Eletivos – '+context['course_title'],'official_code_absent':True,'source_list_marker_present':True,'list_intro':norm(' '.join(intro)),'objective_scope':objective_scope,**context,**unit}
     current=record(sid,pn,loc,literal,line['bbox'],'Componentes Curriculares Eletivos',ctx);out.append(current)
     if audit:audit[-1]['source_marker_count']+=1
    elif current:

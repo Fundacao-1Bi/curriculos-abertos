@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url';
 export interface Assertion { name:string; passed:boolean; details?:unknown }
 export interface ExecutionEvidence { schema_version:1; kind:string; command:string[]; producer:string; started_at:string; completed_at:string; exit_code:number|null; source_tree_sha256:string; publication:string|null; assertions:Assertion[]; artifacts:{path:string;sha256:string}[]; [key:string]:unknown }
 export interface Check {id:string; passed:boolean; detail:string; evidence:string[]}
-const trackedRoots=['src','scripts','pipeline','tests'];
+const trackedRoots=['src','scripts','pipeline','tests','data/schema'];
 const trackedFiles=['package.json','package-lock.json','tsconfig.json','next.config.ts','Dockerfile','compose.yaml','Makefile','.env.example','.dockerignore','eslint.config.mjs','playwright.config.ts','docs/requirements.md'];
 export const sha256=(data:string|Buffer)=>createHash('sha256').update(data).digest('hex');
 export function sourceTreeHash(root=process.cwd()):string {
@@ -46,6 +46,7 @@ const evidenceKinds={
   api:['npx','tsx','scripts/api-verify.ts'], mcp:['npx','tsx','scripts/mcp-verify.ts'],
   browser:['npx','playwright','test'], production:['npx','tsx','scripts/qa-production.ts'], recovery:['npx','tsx','scripts/qa-recovery.ts'], operations:['npx','tsx','scripts/ops-smoke.ts'],
   performance:['npx','tsx','scripts/qa-performance.ts'], admin:['npx','tsx','scripts/ops-verify.ts','--admin'],
+  admin_browser:['npx','tsx','scripts/qa-admin-browser.ts'], ingestion:['npx','tsx','scripts/qa-ingestion-admin.ts'], reimport:['npx','tsx','scripts/qa-reimport.ts'],
   sources:['bash','scripts/sources-check.sh'], audit:['npx','tsx','scripts/audit-verify.ts'],
 } as const;
 export type EvidenceKind=keyof typeof evidenceKinds;
@@ -66,15 +67,20 @@ export function recordExecution(kind:EvidenceKind, args:string[], root=process.c
   writeFileSync(join(root,`${prefix}.log`),log);
   const assertions:Assertion[]=[{name:'processo concluiu com sucesso',passed:result.status===0}];
   const artifacts:{path:string;sha256:string}[]=[{path:`${prefix}.log`,sha256:sha256(log)}];
-  const reports:Partial<Record<EvidenceKind,string>>={api:'docs/evidence/api-verification.json',mcp:'docs/evidence/mcp-interoperability.json',browser:'docs/evidence/browser-results.json',admin:'docs/evidence/admin-operations.json',performance:'docs/evidence/performance.json',audit:'docs/evidence/audit-integrated.json',production:'docs/evidence/production-install.json',recovery:'docs/evidence/backup-restore.json'};
+  const reports:Partial<Record<EvidenceKind,string>>={api:'docs/evidence/api-verification.json',mcp:'docs/evidence/mcp-interoperability.json',browser:'docs/evidence/browser-results.json',admin:'docs/evidence/admin-operations.json',performance:'docs/evidence/performance.json',audit:'docs/evidence/audit-integrated.json',production:'docs/evidence/production-install.json',recovery:'docs/evidence/backup-restore.json',admin_browser:'docs/evidence/admin-browser-verification.json',ingestion:'docs/evidence/ingestion-admin-flow.json',reimport:'docs/evidence/reimport.json'};
   const object=(value:unknown):Record<string,unknown>=>value&&typeof value==='object'&&!Array.isArray(value)?value as Record<string,unknown>:{};
   const path=reports[kind];
   if(path){let report:Record<string,unknown>={};let reportCurrent=false;try{const bytes=readFileSync(join(root,path));report=object(JSON.parse(bytes.toString('utf8')));reportCurrent=statSync(join(root,path)).mtimeMs>=Date.parse(started_at)-1000;artifacts.push({path,sha256:sha256(bytes)});}catch{/* missing execution proof */}
    let reportedPublications:unknown[]=[];let reportPassed=false;
    if(kind==='api'){reportedPublications=[report.publication];reportPassed=report.success===true;}
    else if(kind==='mcp'){const results=Array.isArray(report.results)?report.results.map(object):[];reportedPublications=results.map(row=>row.publication).filter(Boolean);reportPassed=report.success===true&&['http','stdio'].every(transport=>results.some(row=>row.transport===transport&&row.success===true));}
-   else if(kind==='admin'){reportedPublications=[report.base_publication];reportPassed=report.result==='passed';}
+   else if(kind==='admin'){reportedPublications=[report.base_publication];const checks=Array.isArray(report.checks)?report.checks.map(object):[];reportPassed=report.result==='passed'&&['private_preconditions_exist_before_public_visibility_probes','prepared_snapshot_and_cached_export_unavailable_to_public_api_and_real_mcp','published_revision_visible_to_public_api_and_real_mcp','published_history_remains_public_after_default_rollback'].every(name=>checks.some(check=>check.name===name&&check.result==='passed'));}
+   else if(kind==='admin_browser'){reportedPublications=[report.publication];const summary=object(report.browser_summary),tests=Array.isArray(summary.tests)?summary.tests.map(object):[];reportPassed=report.result==='passed'&&summary.status==='passed'&&tests.length===2&&tests.every(test=>test.status==='passed');}
+   else if(kind==='ingestion'){reportedPublications=[report.original_default];const checks=Array.isArray(report.checks)?report.checks.map(object):[];reportPassed=report.passed===true&&typeof report.job_id==='string'&&typeof report.source==='string'&&['real_ingestion_paused_during_prepared_import','actual_compose_worker_restart_preserved_paused_job_and_prepared_snapshot','resume_reused_same_job_artifact_and_imported_idempotently_without_duplicate_records','ingested_candidate_explicitly_published_through_authenticated_administration','rollback_restored_original_default_and_retained_published_history'].every(name=>checks.some(check=>check.name===name&&check.passed===true));}
+   else if(kind==='reimport'){reportedPublications=[report.publication];const national=object(report.national),slice=object(report.slice);reportPassed=report.passed===true&&national.passed===true&&slice.passed===true&&Number(national.items)>0&&Number(slice.items)>0&&national.records_verified===true&&slice.records_verified===true&&national.reimported===true&&slice.reimported===true;}
    else if(kind==='performance'){reportedPublications=[report.publication];reportPassed=report.exit_code===0;}
+   else if(kind==='audit'){const artifact=object(report.artifact);reportedPublications=[report.publication];reportPassed=report.passed===true&&artifact.passed===true&&Number(artifact.items)>0&&Number(artifact.sources)>0&&Number(report.http_sample_batches)>0&&artifact.schema_verified===true&&typeof artifact.manifest_sha256==='string'&&(artifact.format!=='curriculos-abertos/sharded-v1'||Number(artifact.parts_verified)>0);}
+   else if(kind==='production'||kind==='recovery'){const artifact=object(report.artifact);reportedPublications=[report.publication];reportPassed=report.passed===true&&Number(artifact.items)>0&&Number(artifact.sources)>0&&artifact.schema_verified===true&&typeof artifact.manifest_sha256==='string'&&(artifact.format!=='curriculos-abertos/sharded-v1'||Number(artifact.parts_verified)>0);}
    else if(kind==='browser'){const annotations:Record<string,unknown>[]=[];const visit=(value:unknown)=>{if(Array.isArray(value)){for(const entry of value)visit(entry);}else if(value&&typeof value==='object'){const row=object(value);if(row.type==='data-publication')annotations.push(row);for(const nested of Object.values(row))visit(nested);}};visit(report.suites);reportedPublications=annotations.map(row=>row.description);const stats=object(report.stats),config=object(report.config),projects=Array.isArray(config.projects)?config.projects.map(object):[];reportPassed=Number(stats.expected)>0&&stats.unexpected===0&&stats.skipped===0&&Number(stats.flaky||0)===0&&annotations.length>=Number(stats.expected)&&['desktop','mobile'].every(name=>projects.some(project=>project.name===name));}
    else {reportedPublications=[report.publication];reportPassed=report.passed===true;}
    const unique=[...new Set(reportedPublications.filter((value):value is string=>typeof value==='string'&&value.length>0))];if(!publication&&unique.length===1)publication=unique[0];
@@ -91,16 +97,16 @@ export function recordExecution(kind:EvidenceKind, args:string[], root=process.c
 const requirementsEvidence:Record<string,string[]>={
  'ESC-01':['data','browser','api','mcp'],'ESC-02':['data','audit'],'ESC-03':['browser','api','mcp','admin','operations'],'ESC-04':['audit'],'ESC-05':['audit','browser','api','mcp'],
  'ORQ-01':['audit'],'ORQ-02':['audit'],
- 'DAT-01':['data','tests','api'],'DAT-02':['data','tests','audit'],'DAT-03':['tests','browser','api','mcp'],'DAT-04':['tests','api','mcp','operations'],'DAT-05':['data','audit'],
- 'ING-01':['data'],'ING-02':['data','operations','admin'],'ING-03':['data'],'ING-04':['data','operations'],'ING-05':['data'],
- 'FUN-01':['data','browser'],'FUN-02':['data','browser'],'FUN-03':['tests','browser','api'],'FUN-04':['browser','api'],'FUN-05':['data','browser','api'],'FUN-06':['browser','api','tests'],'FUN-07':['data','browser','api'],'FUN-08':['browser','api','operations'],'FUN-09':['data','browser','operations'],'FUN-10':['browser','api','mcp'],'FUN-11':['browser','admin'],'FUN-12':['browser'],
+ 'DAT-01':['data','tests','api'],'DAT-02':['data','tests','audit'],'DAT-03':['tests','browser','api','mcp'],'DAT-04':['tests','api','mcp','operations','reimport'],'DAT-05':['data','audit'],
+ 'ING-01':['data'],'ING-02':['data','operations','admin','ingestion'],'ING-03':['data'],'ING-04':['data','operations'],'ING-05':['data'],
+ 'FUN-01':['data','browser'],'FUN-02':['data','browser'],'FUN-03':['tests','browser','api'],'FUN-04':['browser','api'],'FUN-05':['data','browser','api'],'FUN-06':['browser','api','tests'],'FUN-07':['data','browser','api'],'FUN-08':['browser','api','operations'],'FUN-09':['data','browser','operations','reimport'],'FUN-10':['browser','api','mcp'],'FUN-11':['browser','admin'],'FUN-12':['browser'],
  'API-01':['api'],'API-02':['api','tests'], 'MCP-01':['mcp'],'MCP-02':['mcp'],'MCP-03':['mcp'],
- 'ADM-01':['admin'],'ADM-02':['admin','operations'],'ADM-03':['sources','operations'],
+ 'ADM-01':['admin','admin_browser'],'ADM-02':['admin','admin_browser','operations','ingestion'],'ADM-03':['sources','operations'],
  'ARQ-01':['types','build','containers','operations'],'ARQ-02':['tests','production','operations'],'ARQ-03':['audit','data'],
- 'SEG-01':['audit','tests','api','admin'],'SEG-02':['operations','admin','production','recovery'],
+ 'SEG-01':['audit','tests','api','admin','admin_browser','ingestion'],'SEG-02':['operations','admin','production','recovery'],
  'OPS-01':['containers','production','operations','data','negative'],'OPS-02':['data','operations','recovery'],'OPS-03':['production'],'OPS-04':['production','recovery','operations','admin'],
- 'QA-01':['lint','types','tests','build','api','mcp','browser','data','negative'],'QA-02':['browser','api','mcp','admin','operations'],'QA-03':['browser'],'QA-04':['performance','data'],'QA-05':['audit'],
- 'ACE-01':['data','browser','api','mcp'],'ACE-02':['data','negative','containers','lint','types','tests','build','api','mcp','browser','admin','operations','production','recovery','performance','audit'],'ACE-03':['audit'],'ACE-04':['audit'],
+ 'QA-01':['lint','types','tests','build','api','mcp','browser','data','negative'],'QA-02':['browser','api','mcp','admin','admin_browser','ingestion','reimport','operations','production','recovery'],'QA-03':['browser','admin_browser'],'QA-04':['performance','data'],'QA-05':['audit'],
+ 'ACE-01':['data','browser','api','mcp'],'ACE-02':['data','negative','containers','lint','types','tests','build','api','mcp','browser','admin','admin_browser','ingestion','reimport','operations','production','recovery','performance','audit'],'ACE-03':['audit'],'ACE-04':['audit'],
 };
 const implementations:Record<string,string>={ESC:'src/shared/contracts.ts; src/domain; portal/API/MCP',ORQ:'docs/architecture.md; docs/progress.md',DAT:'src/shared/contracts.ts; src/db; src/domain',ING:'pipeline; data/manifests; data/bundles; data/coverage-manifest.json',FUN:'src/app; src/components; src/domain/service.ts',API:'src/app/api/v1; src/mcp/contracts.ts',MCP:'src/app/mcp; src/mcp; scripts/mcp-verify.ts',ADM:'src/admin; src/app/admin; src/worker',ARQ:'package-lock.json; src/db; compose.yaml',SEG:'src/admin; src/mcp; pipeline; testes de autorização',OPS:'Dockerfile; compose.yaml; scripts/ops*; Makefile',QA:'tests; docs/evidence; scripts/release-check.ts',ACE:'docs/audit.md; relatório deste comando'};
 
@@ -127,7 +133,7 @@ export function evaluateRelease(root=process.cwd(), bundleArg?:string){
  }
  const matrix=ids.map(({id,title})=>{
   const needed=requirementsEvidence[id]||['unmapped'];const failed=needed.filter(kind=>!checks.find(c=>c.id===kind)?.passed);
-  return {id,requirement:title,implementation:implementations[id.split('-')[0]]||'',test_or_inspection:needed,code_sha256:codeHash,publication,result:failed.length?'não verificado':'verificado',pending:failed,evidence:needed.flatMap(kind=>checks.find(c=>c.id===kind)?.evidence||[])};
+  return {id,requirement:title,implementation:implementations[id.split('-')[0]]||'',test_or_inspection:needed,code_sha256:codeHash,publication,result:failed.length?(failed.some(kind=>checks.find(check=>check.id===kind)?.detail==='execução não registrada')?'não executado':'não verificado'):'verificado',pending:failed,evidence:needed.flatMap(kind=>checks.find(c=>c.id===kind)?.evidence||[])};
  });
  return {schema_version:1,generated_at:new Date().toISOString(),actor_type:'automated',actor_id:'codex-independent-auditor',source_tree_sha256:codeHash,publication,passed:matrix.every(row=>row.result==='verificado'),checks,requirements:matrix,documentary_report:dataReport,negative_report:negativeReport,documentary_execution:{command:dataCommand,exit_code:data.status,error:data.error?.message||null,stderr:data.stderr?.slice(0,2000)||null},evidence:evidenceDetails,limitations:['Conferência automatizada; não equivale a homologação institucional ou revisão pedagógica humana.','Registros de execução comprovam os comandos e artefatos. A auditoria independente deve conferir o conteúdo dos testes e a cobertura das jornadas.']};
 }

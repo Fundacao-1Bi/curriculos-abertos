@@ -1,0 +1,35 @@
+{
+  "actor_type": "automated",
+  "actor_id": "data_bncc_southeast",
+  "executed_at": "2026-10-28T04:40:47.240569+00:00",
+  "source_id": "br-bncc-computacao-2022",
+  "source_artifact_sha256": "b0f021db3c7c2c042b821cec5fab7d77ed1888dbb61590461ce2afef404865b7",
+  "relation_type": "relacao_generica",
+  "origin": "declaracao_fonte",
+  "from_item_id": "ca:br-bncc-computacao-2022:EM13CO05",
+  "to_item_id": "ca:br-bncc-2018:EM13MAT315",
+  "evidence": [
+    {
+      "source_id": "br-bncc-computacao-2022",
+      "page": 67,
+      "section": "Exemplos — linha da habilidade EM13CO05",
+      "excerpt": "Possui relação direta com (EM13MAT315).",
+      "bbox": [
+        313.5589904785156,
+        551.3579711914062,
+        497.5729675292969,
+        560.3579711914062
+      ],
+      "screenshot": "docs/evidence/source-audit-southeast/br-computacao-p67.png"
+    },
+    {
+      "source_id": "br-bncc-computacao-2022",
+      "page": 66,
+      "section": "Habilidade na linha correspondente da tabela de páginas espelhadas",
+      "excerpt": "(EM13CO05) Identificar os limites da Computação para diferenciar o\nque pode ou não ser automatizado, buscando uma compreensão\nmais ampla dos limites dos processos mentais envolvidos na\nresolução de problemas.",
+      "screenshot": "docs/evidence/source-audit-southeast/br-computacao-p66.png"
+    }
+  ],
+  "verification": "Both facing table pages rendered and visually reviewed. Reference occurs in Examples of same fifth row as EM13CO05. The source says a direct relation; does not assert equivalence, prerequisite or coverage union.",
+  "publication_status": "documented_pending_pipeline_support"
+}

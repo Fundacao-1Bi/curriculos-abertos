@@ -22,3 +22,8 @@ test('hash de código muda com alteração e independe de docs de progresso',()=
 });
 
 test('gate recusa execução de navegador filtrada ou teste parcial antes de iniciar processo',()=>{assert.throws(()=>recordExecution('browser',['--','npx','playwright','test','--grep','um caso']),/execução integral/);assert.throws(()=>recordExecution('tests',['--','npm','test','--','um-arquivo']),/execução integral/);assert.throws(()=>recordExecution('api',['--','true']),/Comando obrigatório/);});
+
+test('schema público de dados invalida evidência quando adicionado, alterado ou removido',()=>{
+ const root=mkdtempSync(join(tmpdir(),'curriculos-schema-'));
+ try{writeFileSync(join(root,'package.json'),'{}');const absent=sourceTreeHash(root);mkdirSync(join(root,'data/schema'),{recursive:true});const path=join(root,'data/schema/1.0.0.json');writeFileSync(path,'{"type":"object"}');const before=sourceTreeHash(root);assert.notEqual(before,absent);writeFileSync(path,'{"type":"array"}');assert.notEqual(sourceTreeHash(root),before);rmSync(path);assert.equal(sourceTreeHash(root),absent);}finally{rmSync(root,{recursive:true,force:true});}
+});

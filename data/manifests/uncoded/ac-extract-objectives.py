@@ -5,6 +5,8 @@ No OCR, invented official codes, inferred grade or pedagogical equivalence.
 import argparse,collections,datetime,hashlib,json,re,sys,unicodedata
 from pathlib import Path
 import fitz
+if sys.version_info<(3,11)or tuple(map(int,fitz.VersionBind.split('.')[:3]))<(1,26,7):
+ raise RuntimeError('Use patched Python >=3.11/PyMuPDF >=1.26.7: var/venv-pipeline/bin/python')
 ROOT=Path(__file__).resolve().parents[3]
 SOURCE_ID='ac-cru-ei-ef'
 REVISION='ac-objective-columns-v1.0.0'
@@ -74,19 +76,32 @@ def extract(source):
   evidence=[]
   for g in groups:
    raw_fragment='\n'.join(l['text']for l in g['lines']);evidence.append({'source_id':SOURCE_ID,'page':g['page'],'printed_page':str(g['page']-1),'section':active['section'],'excerpt':ws(re.sub(r'^['+MARKERS+r']\s*','',raw_fragment)),'raw_text':raw_fragment,'locator':loc+f"/fragment:{len(evidence)+1}",'bbox':bbox(g['lines']),'coordinate_space':'native unrotated PDF points; page.rotation=0','method':REVISION})
-  item={'source_id':SOURCE_ID,'artifact_sha256':sha,'code':None,'kind':active['kind'],'text':text,'raw_text':raw,'page':first['page'],'printed_page':str(first['page']-1),'locator':loc,'positions':[active['position']],'evidence':evidence,'source_context':{'document_part':active['part'],'hierarchy':active['hierarchy'],'official_code_absent':True,'column_role':active['category'],'parent_objective_heading':active.get('parent'),'parent_code_original':(re.search(r'\(([A-Z0-9]+)\)',active.get('parent')or'').group(1)if re.search(r'\(([A-Z0-9]+)\)',active.get('parent')or'')else None),'context_header':active['section'],'classification_basis':active['basis'],'formatting_policy':'Source characters and punctuation preserved; only whitespace collapsed in text. Raw line fragments are preserved separately.'},'extraction_method':REVISION,'extraction_revision':REVISION,'actor_type':'automated','actor_id':ACTOR,'technical_validation_status':'geometric_column_and_fragment_text_checked','pedagogical_review_status':'not_reviewed','publication_status':'extracted_candidate'}
+  item={'source_id':SOURCE_ID,'artifact_sha256':sha,'code':None,'kind':active['kind'],'text':text,'raw_text':raw,'page':first['page'],'printed_page':str(first['page']-1),'locator':loc,'positions':[active['position']],'evidence':evidence,'parent_key':active.get('parent_key'),'source_context':{'document_part':active['part'],'hierarchy':active['hierarchy'],'official_code_absent':True,'column_role':active['category'],'parent_objective_heading':active.get('parent'),'parent_code_original':(re.search(r'\(([A-Z0-9]+)\)',active.get('parent')or'').group(1)if re.search(r'\(([A-Z0-9]+)\)',active.get('parent')or'')else None),'context_header':active['section'],'classification_basis':active['basis'],'formatting_policy':'Source characters and punctuation preserved; only whitespace collapsed in text. Raw line fragments are preserved separately.'},'extraction_method':REVISION,'extraction_revision':REVISION,'actor_type':'automated','actor_id':ACTOR,'technical_validation_status':'geometric_column_and_fragment_text_checked','pedagogical_review_status':'not_reviewed','publication_status':'extracted_candidate'}
   items.append(item)
   for e in evidence:fragments.append({'page':e['page'],'locator':e['locator'],'bbox':e['bbox'],'raw_sha256':hashlib.sha256(e['raw_text'].encode()).hexdigest(),'item_locator':loc})
   active=None
- def start(category,kind,p,line,pos,section,part,hierarchy,parent=None,basis=None):
+ def start(category,kind,p,line,pos,section,part,hierarchy,parent=None,basis=None,parent_key=None):
   nonlocal active
-  flush();active={'category':category,'kind':kind,'lines':[(p,line)],'position':pos,'section':section,'part':part,'hierarchy':hierarchy,'parent':parent,'basis':basis or 'Marcador literal em seção explicitamente normativa.'}
+  flush();active={'category':category,'kind':kind,'lines':[(p,line)],'position':pos,'section':section,'part':part,'hierarchy':hierarchy,'parent':parent,'parent_key':parent_key,'basis':basis or 'Marcador literal em seção explicitamente normativa.'}
   starts.append({'page':p,'bbox':line['bbox'],'category':category,'component':pos['component'],'year_label':pos['year_label'],'age_group':pos['age_group'],'section':section,'anchor_text':line['text'],'part':part})
  def append(p,line):
   if active:active['lines'].append((p,line))
   else:orphan.append({'page':p,**line})
  # EI local rights and specific learning, explicitly separated from experiences/evaluation.
- age=None;field=None;mode=None;parent=None;last_title=None
+ age=None;field=None;mode=None;parent=None;parent_lines=[];parent_key=None;last_title=None
+ def emit_parent():
+  nonlocal parent_key
+  if not parent_lines:return
+  full=ws(' '.join(line['text']for _,line in parent_lines));m=re.search(r'Objetivo de aprendizagem e desenvolvimento:\s*\(([A-Z0-9]+)\)\s*[-–—]?\s*(.*)',full,re.I)
+  if not m:raise RuntimeError('Could not segment literal coded EI parent: '+full)
+  code=m[1];text=m[2];p=parent_lines[0][0];parent_key=f'ei-objective:{code}:{p}'
+  evidence=[]
+  for pno in sorted({pno for pno,_ in parent_lines}):
+   ls=[line for pn,line in parent_lines if pn==pno];raw='\n'.join(line['text']for line in ls);fragment=ws(raw)
+   if not evidence:fragment=re.sub(r'^.*?Objetivo de aprendizagem e desenvolvimento:\s*\([A-Z0-9]+\)\s*[-–—]?\s*','',fragment,flags=re.I)
+   evidence.append({'source_id':SOURCE_ID,'page':pno,'printed_page':str(pno-1),'section':'Objetivo de aprendizagem e desenvolvimento — '+field,'excerpt':fragment,'raw_text':raw,'locator':parent_key+f'/fragment:{len(evidence)+1}','bbox':bbox(ls),'coordinate_space':'native unrotated PDF points; page.rotation=0','method':REVISION})
+  record={'source_id':SOURCE_ID,'artifact_sha256':sha,'code':code,'key':parent_key,'kind':'objetivo_aprendizagem','text':text,'raw_text':full,'page':p,'printed_page':str(p-1),'locator':parent_key,'positions':[position('EI',field,age=age)],'evidence':evidence,'source_context':{'document_part':'EDUCAÇÃO INFANTIL','hierarchy':[last_title,field,full],'column_role':'ei-coded-parent','official_code_absent':False,'source_heading':full,'code_spelling_policy':'Original preserved, including printed EIO* letter O; no automatic replacement or equivalence.'},'extraction_method':REVISION,'extraction_revision':REVISION,'actor_type':'automated','actor_id':ACTOR,'technical_validation_status':'literal_heading_code_text_and_explicit_context_checked','pedagogical_review_status':'not_reviewed','publication_status':'extracted_candidate'}
+  items.append(record);contexts.append({'page':p,'type':'ei-coded-parent','code':code,'key':parent_key,'text':full,'component':field,'age_group':age})
  for pno in range(47,135):
   page=doc[pno-1];lines=clip_lines(page,(56,65,790,530))
   for line in lines:
@@ -102,14 +117,14 @@ def extract(source):
     continue
    if re.match(r'^\d+\.\d+\.\s*Direitos de aprendizagem',t,re.I):flush();mode='rights';parent=None;contexts.append({'page':pno,'type':'ei-rights','text':t,'component':field,'age_group':age});continue
    if 'objetivo de aprendizagem e desenvolvimento:'in n:
-    flush();mode='objective-heading';parent=t;continue
+    flush();mode='objective-heading';parent=t;parent_lines=[(pno,line)];parent_key=None;continue
    if n.startswith('aprendizagens especificas'):
-    flush();mode='specific';contexts.append({'page':pno,'type':'ei-specific','text':t,'parent':parent,'component':field,'age_group':age});continue
+    flush();emit_parent();mode='specific';contexts.append({'page':pno,'type':'ei-specific','text':t,'parent':parent,'component':field,'age_group':age});continue
    if re.match(r'^sugest(?:ao|oes) de experiencias',n)or re.match(r'^\d+\.\d+\.\s*(?:avaliacao|referencias)',n):flush();mode='context';continue
-   if mode=='objective-heading':parent=ws((parent or '')+' '+t);continue
+   if mode=='objective-heading':parent=ws((parent or '')+' '+t);parent_lines.append((pno,line));continue
    if mode in ['specific','rights']:
-    if marker(t):start('ei-'+mode,'aprendizagem_especifica'if mode=='specific'else'direito_aprendizagem',pno,line,position('EI',field,age=age),('Aprendizagens específicas'if mode=='specific'else'Direitos de aprendizagem e desenvolvimento'),'EDUCAÇÃO INFANTIL',[last_title,field,parent,'Aprendizagens específicas'if mode=='specific'else'Direitos de aprendizagem e desenvolvimento'],parent)
-    elif mode=='specific'and line['bbox'][0]>=90 and re.match(r'^(?:Ler|Aprimorar|Ampliar|Utilizar)\b',t):start('ei-specific-unmarked','aprendizagem_especifica',pno,line,position('EI',field,age=age),'Aprendizagens específicas','EDUCAÇÃO INFANTIL',[last_title,field,parent,'Aprendizagens específicas'],parent,basis='Parágrafo individual sem marcador na subseção explícita Aprendizagens específicas; recuo inicial e limite de parágrafo documentais.')
+    if marker(t):start('ei-'+mode,'aprendizagem_especifica'if mode=='specific'else'direito_aprendizagem',pno,line,position('EI',field,age=age),('Aprendizagens específicas'if mode=='specific'else'Direitos de aprendizagem e desenvolvimento'),'EDUCAÇÃO INFANTIL',[last_title,field,parent,'Aprendizagens específicas'if mode=='specific'else'Direitos de aprendizagem e desenvolvimento'],parent,parent_key=parent_key if mode=='specific'else None)
+    elif mode=='specific'and line['bbox'][0]>=90 and re.match(r'^(?:Ler|Aprimorar|Ampliar|Utilizar)\b',t):start('ei-specific-unmarked','aprendizagem_especifica',pno,line,position('EI',field,age=age),'Aprendizagens específicas','EDUCAÇÃO INFANTIL',[last_title,field,parent,'Aprendizagens específicas'],parent,basis='Parágrafo individual sem marcador na subseção explícita Aprendizagens específicas; recuo inicial e limite de parágrafo documentais.',parent_key=parent_key)
     elif active:append(pno,line)
     elif t.strip():orphan.append({'page':pno,'reason':'ei_unanchored_text','mode':mode,**line})
  flush()
@@ -165,7 +180,7 @@ def extract(source):
     if g:
      flush();years=[int(g[1])];year_label=ws(t);mode=True;lastgrade=t;contexts.append({'page':pno,'type':'ef-grade-rights','part':part['title'],'year_label':year_label,'text':t});continue
     if re.match(r'^5[.\s]+',t)and 'COMPET' in t.upper():flush();mode=False;continue
-    if re.match(r'^4\.\d+\.',t):flush();mode=False;years=None;year_label=t;continue
+    if re.match(r'^4\.\d+(?:\.|\s)',t):flush();mode=False;years=None;year_label=t;continue
     if re.search(r'(?:sejam capazes|capazes de):?\s*$',norm(t)):
      flush();mode=True
      gblock=re.search(r'([1-9])[º°]\s*ao\s*([1-9])[º°]\s*ano',norm(t))
@@ -181,15 +196,15 @@ def extract(source):
      # Large paragraph gaps delimit source objectives that have no bullet, notably LP 3º/5º and English 8º.
      prevpage,prev=active['lines'][-1]
      gap=line['bbox'][1]-prev['bbox'][3]if prevpage==pno else 0
-     if gap>8 and line['bbox'][0]<180 and re.match(r'^(?:Conhecer|Interagir|Compreender|Expressar|Comunicar|Ler|Utilizar|Produzir)\b',t):start('ef-grade-rights-unmarked','direito_aprendizagem',pno,line,position('EF',part.get('component'),years,year_label),f"Direitos / objetivos por ano — {year_label}",part['title'],[part['title'],lastgrade,unit,'Direitos / objetivos de aprendizagem'],basis='Parágrafo individual sem marcador sob cabeçalho explícito de ano; separação vertical documental preservada.')
+     if gap>8 and line['bbox'][0]<180 and re.match(r'^(?:Conhecer|Interagir|Compreender|Expressar|Comunicar|Ler|Utilizar|Produzir|Identificar)\b',t):start('ef-grade-rights-unmarked','direito_aprendizagem',pno,line,position('EF',part.get('component'),years,year_label),f"Direitos / objetivos por ano — {year_label}",part['title'],[part['title'],lastgrade,unit,'Direitos / objetivos de aprendizagem'],basis='Parágrafo individual sem marcador sob cabeçalho explícito de ano; separação vertical documental preservada.')
      else:append(pno,line)
-    elif re.match(r'^(?:Conhecer|Interagir|Compreender|Expressar|Comunicar|Ler|Utilizar|Produzir)\b',t):start('ef-grade-rights-unmarked','direito_aprendizagem',pno,line,position('EF',part.get('component'),years,year_label),f"Direitos / objetivos por ano — {year_label}",part['title'],[part['title'],lastgrade,unit,'Direitos / objetivos de aprendizagem'],basis='Parágrafo individual sem marcador sob cabeçalho explícito de ano; sem código oficial.')
+    elif re.match(r'^(?:Conhecer|Interagir|Compreender|Expressar|Comunicar|Ler|Utilizar|Produzir|Identificar)\b',t):start('ef-grade-rights-unmarked','direito_aprendizagem',pno,line,position('EF',part.get('component'),years,year_label),f"Direitos / objetivos por ano — {year_label}",part['title'],[part['title'],lastgrade,unit,'Direitos / objetivos de aprendizagem'],basis='Parágrafo individual sem marcador sob cabeçalho explícito de ano; sem código oficial.')
     else:orphan.append({'page':pno,'reason':'ef_grade_rights_unanchored','text':t,'bbox':line['bbox'],'year_label':year_label})
   flush()
  # IDs are the exact technical key the central pipeline derives from uncoded source/page/locator.
  for item in items:
-  token=f"{SOURCE_ID}|{item['page']}|{item['locator']}|uncoded|occurrence:0";item['id']='ca:'+SOURCE_ID+':'+hashlib.sha256(token.encode()).hexdigest()[:20]
- return {'source_id':SOURCE_ID,'artifact_sha256':sha,'actor_type':'automated','actor_id':ACTOR,'method':REVISION,'generated_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'scope':'Integral pass over all 1,714 pages: uncoded EI rights/specific learnings, EF objective columns and explicit grade rights. Coded EI parent objectives are context and remain the central coded extractor responsibility. Contents/activity/evaluation columns are excluded from learning text; normative document pages remain in central corpus.','items':items}, {'tables':tables,'table_pages':grade_tables,'contexts':contexts,'anchors':starts,'fragments':fragments,'orphans':orphan,'ignored':ignored}
+  token=f"{SOURCE_ID}|{item['page']}|{item['locator']}|{item.get('code')or'uncoded'}|occurrence:0";item['id']=('ca:'+SOURCE_ID+':section:'+item['key'])if item.get('key')else('ca:'+SOURCE_ID+':'+hashlib.sha256(token.encode()).hexdigest()[:20])
+ return {'source_id':SOURCE_ID,'artifact_sha256':sha,'actor_type':'automated','actor_id':ACTOR,'method':REVISION,'generated_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'scope':'Integral pass over all 1,714 pages: EI literal coded parent objectives, uncoded rights/specific learnings, EF objective columns and explicit grade rights. Contents/activity/evaluation columns are excluded from learning text; normative document pages remain in central corpus.','items':items}, {'tables':tables,'table_pages':grade_tables,'contexts':contexts,'anchors':starts,'fragments':fragments,'orphans':orphan,'ignored':ignored}
 
 def validate(doc,wrapper,audit):
  errors=[];seen=set();fragment_count=0;clip_checks=0
@@ -202,7 +217,7 @@ def validate(doc,wrapper,audit):
    fragment_count+=1;p=doc[evidence['page']-1];rect=fitz.Rect(evidence['bbox']);rect.x0-=.3;rect.y0-=.3;rect.x1+=.3;rect.y1+=.3
    raw=p.get_text(clip=rect)
    # Native reading order can differ when a visual line is split into multiple text runs.
-   wanted=collections.Counter(re.findall(r'\S+',evidence['raw_text']));actual=collections.Counter(re.findall(r'\S+',raw))
+   wanted=collections.Counter(re.findall(r'\S+',evidence['raw_text']));actual=collections.Counter(w[4]for w in p.get_text('words')if w[0]>=rect.x0 and w[1]>=rect.y0 and w[2]<=rect.x1 and w[3]<=rect.y1)
    if any(actual[t]<n for t,n in wanted.items()):errors.append({'id':item['id'],'page':evidence['page'],'error':'fragment_token_not_in_literal_clip','missing':list((wanted-actual).elements())[:20]})
    elif any(wanted[t]<n for t,n in actual.items()):errors.append({'id':item['id'],'page':evidence['page'],'error':'source_clip_has_unassigned_tokens','extra':list((actual-wanted).elements())[:20]})
    else:clip_checks+=1
@@ -215,7 +230,12 @@ def main():
  if args.validate_only:
   wrapper=json.loads(OUTPUT.read_text());audit={key:json.loads((AUDIT/(key+'.json')).read_text())for key in ['tables','table_pages','contexts','anchors','fragments','orphans','ignored']}
  else:
-  wrapper,audit=extract(source);write(OUTPUT,wrapper)
+  wrapper,audit=extract(source)
+  if OUTPUT.exists():
+   previous=json.loads(OUTPUT.read_text())
+   if previous.get('artifact_sha256')==wrapper['artifact_sha256']and previous.get('items')==wrapper['items']:
+    wrapper['generated_at']=previous['generated_at'];write(AUDIT/'idempotence.json',{'source_id':SOURCE_ID,'artifact_sha256':wrapper['artifact_sha256'],'unchanged_item_count':len(wrapper['items']),'same_item_payloads':True,'same_item_ids':True,'timestamp_preserved':True,'method':'Full adapter re-execution compared every item payload and ID against previous complete execution.'})
+  write(OUTPUT,wrapper)
   for key,data in audit.items():write(AUDIT/(key+'.json'),data)
  doc=fitz.open(ROOT/source['local_path']);report=validate(doc,wrapper,audit);write(AUDIT/'validation.json',report)
  if args.render_samples:

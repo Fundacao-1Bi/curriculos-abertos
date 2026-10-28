@@ -1,0 +1,33 @@
+{
+  "kind": "admin-browser",
+  "finished_at": "2026-10-28T05:46:25.713Z",
+  "status": "interrupted",
+  "trace": "off",
+  "video": "off",
+  "automatic_screenshots": "off",
+  "tests": [
+    {
+      "title": "administração real: login, fontes, registro fixado, curadoria segura, teclado e acessibilidade",
+      "project": "admin-desktop",
+      "status": "interrupted",
+      "duration_ms": 83557,
+      "errors": [
+        "Error: locator.selectOption: Test ended.\nCall log:\n\u001b[2m  - waiting for locator('section').filter({ has: getByRole('heading', { name: 'Rascunhos e publicações', exact: true }) }).getByLabel('Publicação base', { exact: true })\u001b[22m\n"
+      ],
+      "annotations": [
+        {
+          "type": "publication",
+          "description": "ca-77fb8076598b567e1ba3"
+        },
+        {
+          "type": "actor_type",
+          "description": "automated"
+        },
+        {
+          "type": "scope",
+          "description": "rascunho idêntico + validação técnica, sem preparar/publicar"
+        }
+      ]
+    }
+  ]
+}

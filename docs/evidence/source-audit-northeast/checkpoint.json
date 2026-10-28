@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-28T05:27:06.885603+00:00",
+  "actor_type": "automated",
+  "owner": "/root/data_northeast",
+  "scope_ufs": [
+    "AL",
+    "BA",
+    "CE",
+    "MA",
+    "PB",
+    "PE",
+    "PI",
+    "RN",
+    "SE"
+  ],
+  "manifest": "data/manifests/northeast.json",
+  "sources": 64,
+  "selected_pdf_sources": 62,
+  "physical_pages_selected": 16099,
+  "fully_reconciled_source_ids": [
+    "ba-resolucao-249-2026",
+    "pe-historia-pernambuco-2026",
+    "rn-portaria-11123-2025"
+  ],
+  "fully_reconciled_ufs": 0,
+  "inflight_owned_job": null,
+  "completed_special_runs": {
+    "rn_dcec_819": "Native+OCRcomplete,2197candidates/1386coded,8OCRpages,ocr_pendingFalse,25reviewwarnings; source not reconciled",
+    "ce_resolution526_4": "OCR complete4p,9warnings,notreconciled",
+    "pe_history_8": "91records/92literalfragments/90parents,fullartifactreconciled",
+    "ba_resolution249_7": "45normativeparts/237lines exactlyonce,fullartifactreconciled",
+    "rn_portaria11123": "12normativeparts/24lines,onlysafeDOEpage21region,fullactreconciled",
+    "al_pv_optional": "182occurrences,61literaltexts distinct globally,75tables,all182importer/finalizer checks pass; not normative denominator",
+    "rn_ei_https": "Official HTTPS2018representation selected; exact native text/dimensions match177pages, word geometry differs; original retained, fresh177p v1.4cache completed",
+    "pi_ei_93": "25physicaltable objective-column adapters across21pages; independent93codes/prose verified93/93; EF/otherEIstructures still pending"
+  },
+  "open_external_or_provenance": {
+    "pb_pcem": "HTTP200text/html challenge persists; no bypass",
+    "ba_dcrb_em2026": "Approved for implementation2027, integral artifact not located;2022edition remains distinct",
+    "al_recal_computacao": "89pprivate research copy acquired,primarydistributionidentitypending,publication_eligibleFalse",
+    "pe_ei": "Primarydistributionchain still must be fully confirmed"
+  },
+  "open_internal": {
+    "source_reconciliation": "Most source parts remain pending; 0UFready, cannot attribute all incompleteness to external conditions",
+    "pe_em_p535": "Confirmed truncation: recovery treats secondprefixcode inside SAMEcell as neighborcolumn; report sentpipeline",
+    "pi_ei_p58": "Resolved objective-column contamination across all93EIobjectives, not whole source completion",
+    "pb_uncoded_objectives": "Local objectives and many-to-many BNCCreferences still need typedstructure/relations; EF67PB01 requires source classification, preserve literalcode and6thyearheading",
+    "al_doe_page37": "Two-column crop source.page_regions declared; include_in_corpusFalse until pipeline probe+fullscope verification. Must staymandatory denominator",
+    "principal_159_anchor_audit": "Reapply current recheck after source caches settle; supports verified RN177 artifact-rebase and currentconfigchecks. Most sourceparts still pending.",
+    "algorithm_cache_provenance": "Pipelinecode modified duringv1.4nativebatch; ensure frozen algorithm/config trace before production claims"
+  },
+  "next_commands": [
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/recheck.py",
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/verify-targeted-regressions.py",
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/verify-artifacts.py"
+  ],
+  "privacy": "OriginalPDFs,data/extracted and allsourcePNG renders remain gitignored/private; publicevidence hasmetadata,hashes,locators andlimitedtextnecessary."
+}

@@ -1,0 +1,564 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:data_central_south",
+  "checked_at": "2026-10-28T05:03:19.842474+00:00",
+  "source_count": 58,
+  "acquired_sources": 55,
+  "mandatory": 49,
+  "mandatory_acquired": 48,
+  "bytes": 659023349,
+  "pages": 19365,
+  "failures": [],
+  "files": [
+    {
+      "source_id": "go-dcgo-ei",
+      "path": "data/raw/GO/go-dcgo-ei.pdf",
+      "exists": true,
+      "bytes": 4283832,
+      "sha256": "1301604e0652ca9c1c981219b490daf1da8f6b2ce08f19c54c00c3ec4afb930a",
+      "hash_matches": true,
+      "pages": 174,
+      "parseable": true
+    },
+    {
+      "source_id": "go-dcgo-ef-ai",
+      "path": "data/raw/GO/go-dcgo-ef-ai.pdf",
+      "exists": true,
+      "bytes": 6540997,
+      "sha256": "b614dff56ebcf6f216c0723adf9f9df06fb3bc93eef322acb5e977f3bc744bb3",
+      "hash_matches": true,
+      "pages": 437,
+      "parseable": true
+    },
+    {
+      "source_id": "go-dcgo-ef-af",
+      "path": "data/raw/GO/go-dcgo-ef-af.pdf",
+      "exists": true,
+      "bytes": 6401942,
+      "sha256": "656b8669fe35750533400ead193c26e41ae2f12c6a31a7f20b984788a24a3088",
+      "hash_matches": true,
+      "pages": 434,
+      "parseable": true
+    },
+    {
+      "source_id": "go-dcgoem-2021",
+      "path": "data/raw/GO/go-dcgoem-2021.pdf",
+      "exists": true,
+      "bytes": 12394280,
+      "sha256": "64f0909fd0b519e06ddfb9a94530d91897df1fb639598fec7034bdf6a4f76654",
+      "hash_matches": true,
+      "pages": 1397,
+      "parseable": true
+    },
+    {
+      "source_id": "go-dcgoem-portal-atual",
+      "path": "data/raw/GO/go-dcgoem-portal-atual.pdf",
+      "exists": true,
+      "bytes": 11477472,
+      "sha256": "2b350b8a53e5072ba915489c749f55b91284f4d23531a08faf5ea7fed89ae1a9",
+      "hash_matches": true,
+      "pages": 1397,
+      "parseable": true
+    },
+    {
+      "source_id": "df-cm-ei-2018",
+      "path": "data/raw/DF/df-cm-ei-2018.pdf",
+      "exists": true,
+      "bytes": 12003895,
+      "sha256": "c87949b1e196a909301abeab92b816a8f8322675e3c79ea61749a71793ee2e4a",
+      "hash_matches": true,
+      "pages": 106,
+      "parseable": true
+    },
+    {
+      "source_id": "df-cm-ef-2018",
+      "path": "data/raw/DF/df-cm-ef-2018.pdf",
+      "exists": true,
+      "bytes": 13428827,
+      "sha256": "45f9774c412cb245823a66283278de3c6455e8d9f8a564425e585cbcdcb0cb1b",
+      "hash_matches": true,
+      "pages": 312,
+      "parseable": true
+    },
+    {
+      "source_id": "df-cm-em",
+      "path": "data/raw/DF/df-cm-em.pdf",
+      "exists": true,
+      "bytes": 2861717,
+      "sha256": "1c2f4c333ff2205d7b484148ab25292464bfdefe473652024a9a753a6830e584",
+      "hash_matches": true,
+      "pages": 208,
+      "parseable": true
+    },
+    {
+      "source_id": "df-cm-pressupostos",
+      "path": "data/raw/DF/df-cm-pressupostos.pdf",
+      "exists": true,
+      "bytes": 1076244,
+      "sha256": "f95bf5cb42cd51ad28a8a2cf28abb5598007edea6b941b0d9b78e5ac7b2081f8",
+      "hash_matches": true,
+      "pages": 92,
+      "parseable": true
+    },
+    {
+      "source_id": "ms-cr-eief-v110",
+      "path": "data/raw/MS/ms-cr-eief-v110.pdf",
+      "exists": true,
+      "bytes": 8309618,
+      "sha256": "176d738032cba747e02e1ce2c73bb1a7e8d2d0e1d7f875340a2215e599e37271",
+      "hash_matches": true,
+      "pages": 821,
+      "parseable": true
+    },
+    {
+      "source_id": "ms-cr-em-v11",
+      "path": "data/raw/MS/ms-cr-em-v11.pdf",
+      "exists": true,
+      "bytes": 4483388,
+      "sha256": "7d3047c91b6cdb87112a50ab6b8b268ad8c48b4fb627ec5883ec02b6b2de9809",
+      "hash_matches": true,
+      "pages": 357,
+      "parseable": true
+    },
+    {
+      "source_id": "ms-if-nucleo-integrador",
+      "path": "data/raw/MS/ms-if-nucleo-integrador.pdf",
+      "exists": true,
+      "bytes": 1743722,
+      "sha256": "bbec5ee305321090c9c89d99240749dbb01181f1d3843d2c9787cc3e6faa186e",
+      "hash_matches": true,
+      "pages": 134,
+      "parseable": true
+    },
+    {
+      "source_id": "pr-referencial-eief-2018",
+      "path": "data/raw/PR/pr-referencial-eief-2018.pdf",
+      "exists": true,
+      "bytes": 10871576,
+      "sha256": "3a0a57111fdc73403c85894e1d157e67ff3a912239aa7d57c47750b7f83c5ac2",
+      "hash_matches": true,
+      "pages": 901,
+      "parseable": true
+    },
+    {
+      "source_id": "rs-rcg-ef",
+      "path": "data/raw/RS/rs-rcg-ef.pdf",
+      "exists": true,
+      "bytes": 21517131,
+      "sha256": "431fc24a61648b95e84786bf684b68295a1aa22ed2bee27b43407f67a63c32e3",
+      "hash_matches": true,
+      "pages": 1379,
+      "parseable": true
+    },
+    {
+      "source_id": "rs-rcg-em",
+      "path": "data/raw/RS/rs-rcg-em.pdf",
+      "exists": true,
+      "bytes": 2027651,
+      "sha256": "01478f372c7d4d77002c68877f1b6018535218d419b1efd5583cb739825daaf7",
+      "hash_matches": true,
+      "pages": 287,
+      "parseable": true
+    },
+    {
+      "source_id": "rs-rcg-em-jul22",
+      "path": "data/raw/RS/rs-rcg-em-jul22.pdf",
+      "exists": true,
+      "bytes": 2804538,
+      "sha256": "f94a06b36f95eec20a9ac363221d96fe412566bb8acf87cb6f0161dfb0f45d02",
+      "hash_matches": true,
+      "pages": 287,
+      "parseable": true
+    },
+    {
+      "source_id": "mt-drc-ei-2018",
+      "path": "data/raw/MT/mt-drc-ei-2018.pdf",
+      "exists": true,
+      "bytes": 1169673,
+      "sha256": "ebeba4757a59d6a0583fbe6dc191f154ac8e2f9ecdc24a6d66eb743b7e58d8e3",
+      "hash_matches": true,
+      "pages": 76,
+      "parseable": true
+    },
+    {
+      "source_id": "sc-cb-em-caderno-1",
+      "path": "data/raw/SC/sc-cb-em-caderno-1.pdf",
+      "exists": true,
+      "bytes": 1980471,
+      "sha256": "b6f1f9ee0f4dd112c5b6094fb4cafb8a4e21e9b1cdfe8aa2b51511bfc6a8e708",
+      "hash_matches": true,
+      "pages": 124,
+      "parseable": true
+    },
+    {
+      "source_id": "sc-cb-em-caderno-2",
+      "path": "data/raw/SC/sc-cb-em-caderno-2.pdf",
+      "exists": true,
+      "bytes": 1964326,
+      "sha256": "4acddf8d9f59ab8ccc60c9480b69f009e89e51ba27de79c0ce68ee264eb8df03",
+      "hash_matches": true,
+      "pages": 212,
+      "parseable": true
+    },
+    {
+      "source_id": "sc-cb-em-caderno-3",
+      "path": "data/raw/SC/sc-cb-em-caderno-3.pdf",
+      "exists": true,
+      "bytes": 2811274,
+      "sha256": "4c367e03aa4e05c99612e3398361057ee1aeb4aa963b1e195a2a3aa0b1eee36b",
+      "hash_matches": true,
+      "pages": 344,
+      "parseable": true
+    },
+    {
+      "source_id": "sc-cb-em-caderno-4",
+      "path": "data/raw/SC/sc-cb-em-caderno-4.pdf",
+      "exists": true,
+      "bytes": 2777847,
+      "sha256": "675b44cc84611883e12761c52410e710c6139c9f13bd3e38b7298d6297c889f3",
+      "hash_matches": true,
+      "pages": 360,
+      "parseable": true
+    },
+    {
+      "source_id": "sc-cb-eief-2019-atual",
+      "path": "data/raw/SC/sc-cb-eief-2019-atual.pdf",
+      "exists": true,
+      "bytes": 5026302,
+      "sha256": "21c4835c6bf6bc752de83cfea4e7190c56be591811ff9bdcab931ee3c6ee291c",
+      "hash_matches": true,
+      "pages": 492,
+      "parseable": true
+    },
+    {
+      "source_id": "sc-lingua-inglesa-ai",
+      "path": "data/raw/SC/sc-lingua-inglesa-ai.pdf",
+      "exists": true,
+      "bytes": 3051174,
+      "sha256": "3d9c5785a8ab77e944d4ceb3377a0465978d8e92a42bcaa06ea3cd47dfbad2c0",
+      "hash_matches": true,
+      "pages": 31,
+      "parseable": true
+    },
+    {
+      "source_id": "sc-resolucao-070-2025",
+      "path": "data/raw/SC/sc-resolucao-070-2025.pdf",
+      "exists": true,
+      "bytes": 265617,
+      "sha256": "433db1cefebb78c76a65072ff838fc1999284f0677a724c7355d3347bc8452e6",
+      "hash_matches": true,
+      "pages": 18,
+      "parseable": true
+    },
+    {
+      "source_id": "sc-parecer-446-2025",
+      "path": "data/raw/SC/sc-parecer-446-2025.pdf",
+      "exists": true,
+      "bytes": 180903,
+      "sha256": "a21825e9fa87d637f8c86665896651b1075d86fe2051fdb7cef89a8198cb932f",
+      "hash_matches": true,
+      "pages": 5,
+      "parseable": true
+    },
+    {
+      "source_id": "ms-educacao-digital-v13",
+      "path": "data/raw/MS/ms-educacao-digital-v13.pdf",
+      "exists": true,
+      "bytes": 10891526,
+      "sha256": "025c80f8ccb50c524163df9056733a77d3324c01877c1402305f35c9faaa6df4",
+      "hash_matches": true,
+      "pages": 611,
+      "parseable": true
+    },
+    {
+      "source_id": "mt-drc-ef-2018",
+      "path": "data/raw/MT/mt-drc-ef-2018.pdf",
+      "exists": true,
+      "bytes": 1553164,
+      "sha256": "8fbf94a4df556019dbf7aeca0a3b2a886937bf30eb4e06029498a60baf012377",
+      "hash_matches": true,
+      "pages": 151,
+      "parseable": true
+    },
+    {
+      "source_id": "mt-drc-em-2021",
+      "path": "data/raw/MT/mt-drc-em-2021.pdf",
+      "exists": true,
+      "bytes": 10480988,
+      "sha256": "2373809f38f90dd93f87f76c0b089ea9d0482137cb511aebd8bc2fa7008cf594",
+      "hash_matches": true,
+      "pages": 771,
+      "parseable": true
+    },
+    {
+      "source_id": "pr-deliberacao-0325",
+      "path": "data/raw/PR/pr-deliberacao-0325.pdf",
+      "exists": true,
+      "bytes": 908754,
+      "sha256": "b8f6035ee7baddd6d85a68c53e4bd4f1a463ef62d44927f1d4b7799ffb790e90",
+      "hash_matches": true,
+      "pages": 81,
+      "parseable": true
+    },
+    {
+      "source_id": "pr-referencial-em-2025",
+      "path": "data/raw/PR/pr-referencial-em-2025.pdf",
+      "exists": true,
+      "bytes": 143877122,
+      "sha256": "a6aff047ef49628ca1e09f37b84597b62d72c9fbfbcd0c6ebdbfb2a618f71a04",
+      "hash_matches": true,
+      "pages": 924,
+      "parseable": true
+    },
+    {
+      "source_id": "pr-referencial-eief-2025",
+      "path": "data/raw/PR/pr-referencial-eief-2025.pdf",
+      "exists": true,
+      "bytes": 12482212,
+      "sha256": "ce72aefb003c006d41e0912bc0744eaf2fb6dfca941d6de716293b593a495f46",
+      "hash_matches": true,
+      "pages": 1028,
+      "parseable": true
+    },
+    {
+      "source_id": "pr-deliberacao-0725",
+      "path": "data/raw/PR/pr-deliberacao-0725.pdf",
+      "exists": true,
+      "bytes": 120193,
+      "sha256": "17243aaa4b77a822ef821ed2fd9c582b90d5bb98c42c5ccfef552db306a0fd5d",
+      "hash_matches": true,
+      "pages": 8,
+      "parseable": true
+    },
+    {
+      "source_id": "pr-referencial-em-volume1-atual",
+      "path": "data/raw/PR/pr-referencial-em-volume1-atual.pdf",
+      "exists": true,
+      "bytes": 1093563,
+      "sha256": "c4bdd70c3f507100d505e198e7688fb9a1b8769be46fe603bf7b2ca5c811fb08",
+      "hash_matches": true,
+      "pages": 105,
+      "parseable": true
+    },
+    {
+      "source_id": "pr-referencial-em-volume2-atual",
+      "path": "data/raw/PR/pr-referencial-em-volume2-atual.pdf",
+      "exists": true,
+      "bytes": 5243261,
+      "sha256": "475cee47bbf5dcb46bbd1ccec41e18c76a48e398d566c9206abc955c8145fd1d",
+      "hash_matches": true,
+      "pages": 676,
+      "parseable": true
+    },
+    {
+      "source_id": "pr-referencial-em-volume3-atual",
+      "path": "data/raw/PR/pr-referencial-em-volume3-atual.pdf",
+      "exists": true,
+      "bytes": 1062863,
+      "sha256": "2d2396667a832d3c958f4eeea654ea1f39dfff76e235cac3aa0598db765f34a3",
+      "hash_matches": true,
+      "pages": 142,
+      "parseable": true
+    },
+    {
+      "source_id": "df-catalogo-ifa-2026",
+      "path": "data/raw/DF/df-catalogo-ifa-2026.pdf",
+      "exists": true,
+      "bytes": 173444102,
+      "sha256": "1bc5dbcbb5bc44efdb6c4917c565f82afe947fefd2d16b9e95a44d84dd578da8",
+      "hash_matches": true,
+      "pages": 552,
+      "parseable": true
+    },
+    {
+      "source_id": "df-orientador-if-2025",
+      "path": "data/raw/DF/df-orientador-if-2025.pdf",
+      "exists": true,
+      "bytes": 10748983,
+      "sha256": "a2adf4b9bfe6dad1288de4e46b97a6c5a065b64b9125fbd60851645dc6fa4cf8",
+      "hash_matches": true,
+      "pages": 65,
+      "parseable": true
+    },
+    {
+      "source_id": "df-catalogo-pee",
+      "path": "data/raw/DF/df-catalogo-pee.pdf",
+      "exists": true,
+      "bytes": 6982126,
+      "sha256": "0b0b87f1744941afab1111caf638cc03fa96582e236bc035246f19319f6aeec5",
+      "hash_matches": true,
+      "pages": 272,
+      "parseable": true
+    },
+    {
+      "source_id": "df-competencias-digitais-vol1",
+      "path": "data/raw/DF/df-competencias-digitais-vol1.pdf",
+      "exists": true,
+      "bytes": 6185290,
+      "sha256": "08c49c2b516e821a7a1c907aabfdaec2c4447154975c793cce7311a468dc3300",
+      "hash_matches": true,
+      "pages": 64,
+      "parseable": true
+    },
+    {
+      "source_id": "df-competencias-digitais-vol2",
+      "path": "data/raw/DF/df-competencias-digitais-vol2.pdf",
+      "exists": true,
+      "bytes": 3079664,
+      "sha256": "61ce27903cc1e113a8b9e282c207cce6de6a275847dc935adc052b8417b744c7",
+      "hash_matches": true,
+      "pages": 77,
+      "parseable": true
+    },
+    {
+      "source_id": "df-competencias-digitais-vol3",
+      "path": "data/raw/DF/df-competencias-digitais-vol3.pdf",
+      "exists": true,
+      "bytes": 2342075,
+      "sha256": "39e5f657705d0db6866e8966302ca00cc2eea697e40715d5aac209b9aed7aedd",
+      "hash_matches": true,
+      "pages": 140,
+      "parseable": true
+    },
+    {
+      "source_id": "df-competencias-digitais-vol4",
+      "path": "data/raw/DF/df-competencias-digitais-vol4.pdf",
+      "exists": true,
+      "bytes": 3585618,
+      "sha256": "91eb16e817d3aa9176288160a36e78061dae874069a7888abfd3fef7ad4cd7f8",
+      "hash_matches": true,
+      "pages": 91,
+      "parseable": true
+    },
+    {
+      "source_id": "df-competencias-digitais-vol5",
+      "path": "data/raw/DF/df-competencias-digitais-vol5.pdf",
+      "exists": true,
+      "bytes": 3331270,
+      "sha256": "7a20f9fe0bcaf504a7fccbdac34eb2df37f8d752361d67af8e158e8290500332",
+      "hash_matches": true,
+      "pages": 46,
+      "parseable": true
+    },
+    {
+      "source_id": "rs-rcg-ei-2018",
+      "path": "data/raw/RS/rs-rcg-ei-2018.pdf",
+      "exists": true,
+      "bytes": 3938294,
+      "sha256": "8396c57829603eb037b1a72bebde39662a6db137ad90ac5a0abfbafd4fe091a2",
+      "hash_matches": true,
+      "pages": 142,
+      "parseable": true
+    },
+    {
+      "source_id": "sc-cb-em-caderno-5",
+      "path": "data/raw/SC/sc-cb-em-caderno-5.pdf",
+      "exists": true,
+      "bytes": 8523015,
+      "sha256": "cc9d7f60be1588334b1a3a5542f6517a079e23b3e55159e331b63b546cb41934",
+      "hash_matches": true,
+      "pages": 824,
+      "parseable": true
+    },
+    {
+      "source_id": "sc-cb-em-caderno-6",
+      "path": "data/raw/SC/sc-cb-em-caderno-6.pdf",
+      "exists": true,
+      "bytes": 26967425,
+      "sha256": "1fa4e94263494ce01f76f30d87d6cc41c71dd8d61e9569e9dc2907a746f5ad78",
+      "hash_matches": true,
+      "pages": 638,
+      "parseable": true
+    },
+    {
+      "source_id": "sc-educacao-digital",
+      "path": "data/raw/SC/sc-educacao-digital.pdf",
+      "exists": true,
+      "bytes": 33522218,
+      "sha256": "6ce6e2b404b1caf79fb0a684b9b8e8ba21139b34a17e6b4e4e59b87f64b9be57",
+      "hash_matches": true,
+      "pages": 484,
+      "parseable": true
+    },
+    {
+      "source_id": "mt-drc-concepcoes-2018",
+      "path": "data/raw/MT/mt-drc-concepcoes-2018.pdf",
+      "exists": true,
+      "bytes": 2441170,
+      "sha256": "af084a354b3aa840eaec22ba447cea19b3a2d200cfd61d9f4d88d1e1e5af0cff",
+      "hash_matches": true,
+      "pages": 138,
+      "parseable": true
+    },
+    {
+      "source_id": "mt-drc-ei-primario-2018",
+      "path": "data/raw/MT/mt-drc-ei-primario-2018.pdf",
+      "exists": true,
+      "bytes": 1288343,
+      "sha256": "2e09792783f770cb97325ebf3acc92ad672988a168519de9d84bdd5ac20eb30c",
+      "hash_matches": true,
+      "pages": 76,
+      "parseable": true
+    },
+    {
+      "source_id": "mt-drc-ef-ai-primario-2018",
+      "path": "data/raw/MT/mt-drc-ef-ai-primario-2018.pdf",
+      "exists": true,
+      "bytes": 1890516,
+      "sha256": "fce3928bc526dde07744bf6e94889882f16329d9dee636219c6cee4d9468cf8f",
+      "hash_matches": true,
+      "pages": 151,
+      "parseable": true
+    },
+    {
+      "source_id": "mt-drc-ef-af-2018",
+      "path": "data/raw/MT/mt-drc-ef-af-2018.pdf",
+      "exists": true,
+      "bytes": 3094485,
+      "sha256": "43a67669c80263ca799519409df891b260e8cdddbaa770d567b40f8e9e94b0bc",
+      "hash_matches": true,
+      "pages": 319,
+      "parseable": true
+    },
+    {
+      "source_id": "go-matriz-orientador-2026",
+      "path": "data/raw/GO/go-matriz-orientador-2026.pdf",
+      "exists": true,
+      "bytes": 3594388,
+      "sha256": "c1f367b946b1e06eadb08ca5cc02d49a09d7663ccc4694747023278a5f1c7ed0",
+      "hash_matches": true,
+      "pages": 115,
+      "parseable": true
+    },
+    {
+      "source_id": "go-eletivas-2026",
+      "path": "data/raw/GO/go-eletivas-2026.pdf",
+      "exists": true,
+      "bytes": 17260427,
+      "sha256": "51778ac9246e6b25db6199895ac26a7373c71d481b74b3447902e683bc6a99b4",
+      "hash_matches": true,
+      "pages": 127,
+      "parseable": true
+    },
+    {
+      "source_id": "go-eletivas-fic-2026",
+      "path": "data/raw/GO/go-eletivas-fic-2026.pdf",
+      "exists": true,
+      "bytes": 905855,
+      "sha256": "2b6d6a7773a1e65079be4e48a98df28a89ceafcdbc7e8ebf5c650cab47f9424c",
+      "hash_matches": true,
+      "pages": 35,
+      "parseable": true
+    },
+    {
+      "source_id": "ms-projeto-vida-orientacoes-2024",
+      "path": "data/raw/MS/ms-orientacoes-projeto-vida-2024.pdf",
+      "exists": true,
+      "bytes": 16730022,
+      "sha256": "eff8fcd19d69b1f5d614cbb2ca1599d98e11c697772084b56694a142fecf7048",
+      "hash_matches": true,
+      "pages": 127,
+      "parseable": true
+    }
+  ]
+}

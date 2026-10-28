@@ -8,7 +8,7 @@ from pathlib import Path
 import json,re,hashlib,datetime,collections,argparse
 import fitz
 ROOT=Path(__file__).resolve().parents[3]
-REVISION='df-objective-columns-v1.1.0'
+REVISION='df-objective-columns-v1.2.0'
 BULLET=re.compile(r'^\s*[•\uf0b7]\s*')
 SOURCES={s['id']:s for s in json.loads((ROOT/'data/manifests/central-south.json').read_text())}
 FIELDS=[(67,69,'O eu, o outro e o nós'),(72,77,'Corpo, gestos e movimentos'),(81,87,'Traços, sons, cores e formas'),(90,95,'Escuta, fala, pensamento e imaginação'),(98,102,'Espaços, tempos, quantidades, relações e transformações')]
@@ -36,7 +36,7 @@ def lines_in(page,box):
    if dy<2.5 or (dy<7 and short and min(row['bbox'][3],prior['bbox'][3])>max(row['bbox'][1],prior['bbox'][1])):
     prior['words']+=row['words'];prior['bbox']=[min(prior['bbox'][0],row['bbox'][0]),min(prior['bbox'][1],row['bbox'][1]),max(prior['bbox'][2],row['bbox'][2]),max(prior['bbox'][3],row['bbox'][3])];prior['bold']=prior['bold'] and row['bold'];continue
   merged.append(row)
- return [{'text':' '.join(w[4] for w in sorted(r['words'],key=lambda w:w[0])),'bbox':r['bbox'],'bold':r['bold']} for r in merged]
+ return [{'text':' '.join(w[4] for w in sorted(r['words'],key=lambda w:w[0])),'bbox':r['bbox'],'bold':r['bold'],'native_block_ids':sorted(set(w[5] for w in r['words']))} for r in merged]
 def printed_page(page):
  vals=[w[4] for w in page.get_text('words') if re.fullmatch(r'\d{1,3}',w[4]) and (w[0]<56 or w[0]>page.rect.width-56) and (w[1]<72 or w[1]>page.rect.height-72)]
  return vals[0] if len(set(vals))==1 else None
@@ -47,12 +47,16 @@ def component(page):
   if token in h:return comp,area,h
  raise ValueError('Objective table has no explicit component header: '+h)
 def segments(lines, initial_theme=None):
- out=[];prefix=[];current=None;theme=initial_theme
+ out=[];prefix=[];current=None;theme=initial_theme;previous_bold_blocks=set();last_was_bold=False;previous_bold_bbox=None
  for line in lines:
   if line.get('bold') and not BULLET.match(line['text']) and len(line['text'])<100:
    if current:out.append(current);current=None
-   theme=line['text']
+   blocks=set(line.get('native_block_ids',[]))
+   contiguous=previous_bold_bbox is not None and line['bbox'][1]-previous_bold_bbox[3] <= max(6,(line['bbox'][3]-line['bbox'][1])*0.5)
+   theme=(theme+' '+line['text']) if last_was_bold and contiguous and theme else line['text']
+   previous_bold_blocks=blocks;last_was_bold=True;previous_bold_bbox=line['bbox']
    continue
+  last_was_bold=False;previous_bold_blocks=set();previous_bold_bbox=None
   if BULLET.match(line['text']):
    if current:out.append(current)
    current={'text':BULLET.sub('',line['text']),'lines':[line],'theme':theme}

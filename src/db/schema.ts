@@ -5,7 +5,7 @@ export const publications=pgTable('publications',{
  id:text('id').primaryKey(),schemaVersion:text('schema_version').notNull(),createdAt:timestamp('created_at',{withTimezone:true}).notNull(),
  extractionRevision:text('extraction_revision').notNull(),mappingRevision:text('mapping_revision').notNull(),sha256:text('sha256').notNull(),
  itemCount:integer('item_count').notNull(),sourceCount:integer('source_count').notNull(),relationCount:integer('relation_count').notNull(),
- payload:jsonb('payload').$type<Bundle>().notNull(),importedAt:timestamp('imported_at',{withTimezone:true}).notNull(),
+ payload:jsonb('payload').$type<Bundle>().notNull(),storageFormat:text('storage_format').notNull(),artifactManifestSha256:text('artifact_manifest_sha256'),importedAt:timestamp('imported_at',{withTimezone:true}).notNull(),
 });
 export const currentPublication=pgTable('current_publication',{singleton:boolean('singleton').primaryKey(),publicationId:text('publication_id').notNull().references(()=>publications.id)});
 export const sources=pgTable('sources',{publicationId:text('publication_id').notNull().references(()=>publications.id),id:text('id').notNull(),uf:text('uf').notNull(),payload:jsonb('payload').$type<Source>().notNull()},t=>[primaryKey({columns:[t.publicationId,t.id]})]);
@@ -14,3 +14,5 @@ export const relations=pgTable('relations',{publicationId:text('publication_id')
 
 export const publicationMetadata=pgTable('publication_metadata',{publicationId:text('publication_id').primaryKey().references(()=>publications.id),changelog:jsonb('changelog').$type<unknown[]>().notNull(),payload:jsonb('payload').notNull()});
 export const publicationCoverage=pgTable('publication_coverage',{publicationId:text('publication_id').notNull().references(()=>publications.id),rowIndex:integer('row_index').notNull(),uf:text('uf'),stage:text('stage'),component:text('component'),payload:jsonb('payload').notNull()},t=>[primaryKey({columns:[t.publicationId,t.rowIndex]})]);
+
+export const publicationVisibility=pgTable('publication_visibility',{publicationId:text('publication_id').primaryKey().references(()=>publications.id),status:text('status').notNull(),publishedAt:timestamp('published_at',{withTimezone:true}),actorId:text('actor_id'),actorType:text('actor_type'),evidence:text('evidence').notNull()});

@@ -1,16 +1,16 @@
 # Fontes BNCC e Sudeste — execução e conferência documental
 
-Checkpoint 2026-10-28T03:57:07.648338+00:00. Responsável: agente `data_bncc_southeast`, ator automatizado. Propriedade: manifesto bncc-southeast, snapshots BR/ES/MG/RJ/SP e este relatório.
+Checkpoint 2026-10-28T04:58:13.362695+00:00. Responsável: agente `data_bncc_southeast`, ator automatizado. Propriedade: manifesto bncc-southeast, snapshots BR/ES/MG/RJ/SP e este relatório.
 
-Foram adquiridos 51 PDFs reais, 11,470 páginas e 166,518,664 bytes. Hashes SHA-256 e URLs efetivas estão em `data/manifests/bncc-southeast.json`. Essa aquisição não declara UFs prontas nem substitui estruturação/reconciliação integral.
+Foram adquiridos 54 PDFs reais, 11.499 páginas e 167.375.665 bytes. Hashes SHA-256 e URLs efetivas estão em `data/manifests/bncc-southeast.json`. Essa aquisição não declara UFs prontas nem substitui estruturação/reconciliação integral.
 
 | Jurisdição | Fontes adquiridas | Páginas | Etapas no inventário | Estado |
 |---|---:|---:|---|---|
-| BR | 4 | 721 | EF, EI, EM | adquirido; extração e reconciliação em andamento |
+| BR | 5 | 734 | EF, EI, EM | adquirido; extração e reconciliação em andamento |
 | ES | 33 | 4271 | EF, EI, EM | adquirido; extração e reconciliação em andamento |
 | MG | 5 | 1436 | EF, EI, EM | adquirido; extração e reconciliação em andamento |
 | RJ | 6 | 4266 | EF, EI, EM | adquirido; extração e reconciliação em andamento |
-| SP | 3 | 776 | EF, EI, EM | adquirido; extração e reconciliação em andamento |
+| SP | 5 | 792 | EF, EI, EM | adquirido; extração e reconciliação em andamento |
 
 ## Inventário e escolhas documentais
 
@@ -24,13 +24,13 @@ Foram adquiridos 51 PDFs reais, 11,470 páginas e 166,518,664 bytes. Hashes SHA-
 
 A página inicial MEC retornou403 na pesquisa; URLs antigas de BNCC em gov.br devolveram HTML/404. O PDF RJ EI/EF no domínio MEC foi acessível diretamente. A BNCC completa/anexo foram obtidos de cópia procedente fixada por commit e checksum; a URL primária e o impedimento original permanecem no manifesto. O espelho UFES consultado tem versão EI/EF anterior, sem EM, por isso não substituiu o PDF nacional completo.
 
-O portal antigo Novo Ensino Médio RJ falhou na validação TLS por certificado expirado. A validação não foi desativada. A alternativa legítima foi o Google Sites em domínio institucional `educa.rj.gov.br`, que publica os links dos PDFs no Drive; downloads e hashes foram registrados. O endpoint legado MG EM devolveu HTML; o PDF foi recuperado no atual Portal Pedagógico da SEE-MG. Todos os51 arquivos deste inventário foram adquiridos; não há fonte deste lote marcada indisponível, embora validação de abrangência/vigência continue aberta.
+O portal antigo Novo Ensino Médio RJ falhou na validação TLS por certificado expirado. A validação não foi desativada. A alternativa legítima foi o Google Sites em domínio institucional `educa.rj.gov.br`, que publica os links dos PDFs no Drive; downloads e hashes foram registrados. O endpoint legado MG EM devolveu HTML; o PDF foi recuperado no atual Portal Pedagógico da SEE-MG. Todos os 54 arquivos deste inventário foram adquiridos; não há fonte deste lote marcada indisponível, embora validação de abrangência/vigência continue aberta.
 
 Os PDFs são de terceiros e permanecem em `data/raw/` ignorado no Git; o manifesto não concede nova licença sobre eles. Dados estruturados reutilizados de **bncc.dev (mantido pela Profy)** são CC BY4.0, conforme `dados/LICENSE.md` daquele projeto; código upstream MIT. Atribuir o repositório e preservar a licença da compilação. Não apresentar os PDFs sob uma licença global do projeto.
 
 ## Evidência independente e adapter sem códigos
 
-- `data/manifests/southeast-code-inventory.json`: índice independente de todas as menções de códigos por página em49 documentos curriculares, preservando códigos locais, EM13LP de dois dígitos, EMIF e sufixos. Inclui referências e exemplos; **não é contagem de aprendizagens nem denominador de completude**. Dois documentos normativos nacionais adicionais não têm índice curricular de códigos.
+- `data/manifests/southeast-code-inventory.json`: índice independente de todas as menções de códigos por página em49 documentos curriculares, preservando códigos locais, EM13LP de dois dígitos, EMIF e sufixos. Inclui referências e exemplos; **não é contagem de aprendizagens nem denominador de completude**. Cinco documentos normativos adicionais não têm índice curricular de códigos.
 - `inventory_evidence` em cada fonte contém localizadores de sumários/índices, número de páginas e método de conferência. `stage_component_inventory` separa campos EI de componentes EF.
 - `docs/evidence/source-audit-southeast/expected.json`:16 amostras dirigidas com código completo, texto lido visualmente da página rasterizada, posicionamento explícito quando há, checksum e captura. Tipo de revisor: automatizado. Não há revisão pedagógica humana.
 - `docs/evidence/source-audit-southeast/extraction-audit-v13.json`: confronto executado contra cachesv1.3; SP EM13LP02A/B confirmadas, inclusive continuação75→76. O relatório distingue falha de extração de cache ainda não produzido. Reexecutar contra a revisão final após correções.
@@ -121,3 +121,56 @@ Próximo passo: pipeline reprocessar fontes afetadas com rules/adapter/rotação
 | `rj-em-lab-humanas-2025` | EM | 8 | [Ementas — Laboratório de Ciências Humanas e Sociais Aplicadas](https://sites.google.com/educa.rj.gov.br/ementas2024/orienta%C3%A7%C3%B5es-curriculares/ementas-2025) |
 | `br-dcn-em-2024` | EM | 22 | [Resolução CNE/CEB nº 2, de 13 de novembro de 2024 — Diretrizes Curriculares Nacionais para o Ensino Médio](https://portalpedagogico.educacao.mg.gov.br/estrutura-curricular-e-ensino/ensino-medio/principais-legislacoes-ensino-medio/) |
 | `br-ifa-parametros-2025` | EM | 24 | [Resolução CNE/CEB nº 4, de 12 de maio de 2025 — Parâmetros Nacionais para os Itinerários Formativos de Aprofundamento](https://portalpedagogico.educacao.mg.gov.br/estrutura-curricular-e-ensino/ensino-medio/principais-legislacoes-ensino-medio/) |
+
+## Continuação nacional — estrutura tipada além das habilidades codificadas
+
+Os extratores nacionais preservam a organização real dos documentos com `code:null`, número original separado em `source_number`, chaves técnicas e `parent_key`. Cada texto emitido tem página e regiões conferidas no PDF primário.
+
+| Sidecar | Nós sem código | Conteúdo e vínculos |
+| --- | ---: | --- |
+| `br-bncc-structure.json` | 1.048 | Dez competências gerais, 105 específicas, seis direitos EI, cinco campos com definições completas, nove áreas, 21 componentes, três grupos etários e 879 contextos organizadores: 775 objetos, 77 unidades temáticas, 13 campos de atuação, nove práticas e cinco eixos. Há 1.580 vínculos de habilidades a pais e contextos documentados. |
+| `br-computacao-structure.json` | 80 | Sete competências da seção EF e sete específicas EM, três eixos, 59 objetos, etapas e raiz, com 141 vínculos estruturais. As sete competências EF não foram automaticamente atribuídas à EI ou ao EM. |
+| `br-ifa-2025-annex.json` | 58 | Anexo curricular completo das páginas PDF 17–24 da Resolução CNE/CEB 4/2025: dez competências comuns, 21 objetivos específicos (seis de Linguagens e cinco de cada outra área), 21 grupos completos de capacidades e seus agrupamentos. |
+
+A compilação de entrada do **bncc.dev (mantido pela Profy)**, CC BY 4.0, permanece com commit, checksums e atribuição em `br-structure-input.json`. Seus rótulos foram conferidos contra texto primário. O campo jornalístico-midiático usa hífen no PDF e barra na planilha reutilizada; a diferença está registrada. Cinco competências exigiram conferência tipográfica dirigida: ligaturas, barra com quebra e hífens lexicais em fim de linha. As páginas PDF 200, 359, 368 e 572 foram rasterizadas e inspecionadas pelo agente. A redação e a pontuação canônicas foram preservadas. Caracteres de controle não imprimíveis da extração são retirados do canônico, mantendo o trecho bruto para auditoria.
+
+O verificador independente passou com 1.128 nós e zero erros: hashes, fragmentos brutos, bbox, texto integral por sequência de glifos, chaves únicas, hierarquia acíclica e pais existentes. O denominador das 115 competências foi conferido contra os numerais físicos das listas no PDF; os seis direitos contra seis bullets; e os 1.721 vínculos contra os códigos curriculares das fontes. Os 879 contextos são o universo do inventário independente das planilhas compiladas, com todos os rótulos localizados no PDF. Isso não comprova, isoladamente, a estruturação de cada parágrafo introdutório.
+
+A auditoria preservou uma diferença editorial relevante: o anexo Computação imprime **EF05CO011** na página PDF 36, enquanto o upstream canonizou `EF05CO11`. O produto mantém o primeiro como código original, o segundo como alias e uma nota editorial, com ID técnico estável. A referência `EM13MAT315`, página 67, aparece numa explicação de relação e não é uma nova habilidade de Computação; está fora do denominador 141.
+
+Comandos executados:
+
+```sh
+.venv/bin/python data/manifests/uncoded/extract_br_structure.py
+.venv/bin/python data/manifests/uncoded/verify_br_structure.py
+.venv/bin/python data/manifests/uncoded/extract_br_ifa_2025.py
+.venv/bin/python data/manifests/uncoded/reconcile_br_ifa_2025.py
+```
+
+O teste real do pipeline (`extract_bncc_dataset`, `source_uncoded_items`, `finalize_items` e `attach_hierarchy`) passou com **2.907 IDs únicos: 1.721 habilidades e 1.186 nós sem código**. As 1.721 habilidades têm pai resolvido; não há referências de pais ausentes. A reconstrução dos três sidecars foi repetida e manteve os hashes integrais. Isso comprova o contrato de importação com fontes reais; publicação no banco e jornadas do portal são verificações distintas.
+
+Há reconciliação parcial formal das cinco partes do anexo IFA, em `data/manifests/reconciliation/br-ifa-parametros-2025.json`, com denominador físico independente e todos os 58 itens. Os artigos normativos das páginas 1–16 permanecem pendentes. Nenhum código alfanumérico IFA nacional ou equivalência BNCC foi inventado, e a fonte inteira não foi declarada pronta.
+
+As evidências ficam em `docs/evidence/source-audit-southeast/`: `br-structure-reconciliation.json`, `br-ifa-2025-reconciliation.json`, `br-uncoded-loader-test.json`, `br-hierarchy-integration-test.json` e `br-reconstruction-determinism.json`. A conferência das 16 amostras estaduais exige caches da revisão final; a execução inicial v1.4 registrou os 16 como pendentes de cache, sem reaproveitar aprovação de revisão anterior.
+
+### Conferência dirigida da revisão v1.4
+
+`var/venv-pipeline/bin/python docs/evidence/source-audit-southeast/probe_final_revision.py` executa as 16 expectativas visuais independentes contra páginas oficiais reais, usando caches temporários e o finalizador do pipeline. Não substitui os caches integrais nem modifica a publicação. Na última execução, **14 amostras passaram**. A continuação de SP EM13LP02B entre as páginas 75–76 e a separação das colunas de exemplos em MG Computação passaram.
+
+As quatro pendências iniciais de posição foram resolvidas por inventário de cabeçalhos ao longo dos documentos completos: 44 contextos explícitos em ES Linguagens, 52 em ES Língua Portuguesa, 170 em RJ FGB e duas seções de área em ES IFA. O script `enrich_southeast_document_context.py` reconstrói essas declarações com trechos primários. Série EM vem dos cabeçalhos; não foi inferida do código. As seções de área do IFA não recebem série.
+
+A execução inicial mantinha duas pendências: MG EI01EO07MG conserva a quebra física como `progres- sivamente`, e ES EI precisava combinar a célula de código com a célula de objetivo na mesma linha. No documento ES, todos os 105 códigos curriculares das páginas 72–128 foram localizados na coluna física 168–233,5; o texto fica na coluna 233,5–493. Códigos estão centralizados verticalmente na linha, por isso cortar o texto no topo do código perde conteúdo. A regra documental `separate_ruled_row` está registrada para integração do adaptador, com evidência da linha real. Essas pendências impedem declarar a conferência amostral integral aprovada.
+
+Foi também preservada uma relação nacional expressa no anexo Computação: a linha de EM13CO05 contém, na coluna de exemplos da página PDF 67, “Possui relação direta com (EM13MAT315).” As duas páginas espelhadas 66–67 foram inspecionadas visualmente; a evidência em `br-computacao-explicit-reference.json` não a transforma em equivalência ou pré-requisito. Sua publicação aguarda suporte explícito no pipeline.
+
+O adaptador `pipeline/es_ei_rows.py` foi implementado em coordenação com o responsável pelo pipeline. A conferência independente de **todas as 105 ocorrências primárias** passou: 105 objetivos extraídos, zero códigos perdidos, extras ou duplicados e zero divergências de texto contra o recorte completo da célula. A prova contém os 105 registros em `es-ei-physical-rows-check.json`; o comando reproduzível é `var/venv-pipeline/bin/python docs/evidence/source-audit-southeast/verify_es_ei_physical_rows.py`. Essa verificação cobre as tabelas codificadas, sem afirmar a estruturação integral dos parágrafos introdutórios e explicativos. O adaptador foi integrado ao caller compartilhado e a amostra ES passou. A reexecução das 16 amostras registrou 14 aprovadas, mas detectou regressão em RJ: um candidato geométrico truncado passou a impedir o leitor de parágrafos rotulados. A pendência MG de hifenização permanece; o responsável pelo pipeline recebeu o diagnóstico. O resultado atual segue sem aprovação integral da amostra.
+
+### Atualização normativa e matrizes paulistas de 2026
+
+O inventário atual totaliza **54 PDFs, 11.499 páginas e 167.375.665 bytes**, com todos os hashes novamente conferidos. Foi acrescentado o original MEC da Resolução CNE/CEB nº 2, de 21 de março de 2025, sobre educação digital e midiática: 13 páginas, com os artigos 1–42 em sequência. Não substitui o complemento BNCC Computação de 2022 e permanece com reconciliação normativa pendente. Fonte primária: [MEC](https://www.gov.br/mec/pt-br/cne/2025/marco/rceb002_25.pdf).
+
+Em São Paulo, a [Resolução SEDUC nº 156/2025](https://doe.sp.gov.br/executivo/secretaria-da-educacao/resolucao-seduc-n-156-de-28-de-novembro-de-2025-20251129112312201498325) explicita a organização do ano letivo de 2026. O fac-símile oficial CPS contém o corpo completo de 16 artigos na página 21 do DOE, junto de trechos de atos vizinhos, sem os anexos. Os **nove anexos originais** foram obtidos separadamente no PDF de 15 páginas do próprio DOE: matrizes diurno, noturno, PEI de sete e nove horas para MAT/CNT e LGG/CHS, além de formação docente. Alguns títulos ficam no fim da página anterior à tabela, o que exige preservar sua continuidade. As páginas 9, 14 e 15 são realmente brancas: renderização integral com valores 255, sem imagens ou comandos de desenho.
+
+O navegador local estava desabilitado. A alternativa legítima foi a API pública anônima utilizada pelo leitor oficial do DOE: endpoint e ID do anexo foram localizados nos arquivos JavaScript públicos e no JSON público da publicação. O download respondeu PDF sem tokens, cookies, login ou bypass. Os metadados, o fac-símile e o anexo originais estão preservados em `data/raw/SP/`, e as fontes `sp-seduc156-corpo-2026` e `sp-seduc156-anexos-matrizes-2026` estão no manifesto.
+
+A [Resolução SEDUC nº 103, publicada em outubro de 2026](https://doe.sp.gov.br/executivo/secretaria-da-educacao/resolucao-seduc-n-103-de-16-de-outubro-de-2026-20261016112412202211650), prevê adoção das novas matrizes no ano letivo de **2027**, quando determina a revogação da Resolução 156/2025. Não foi aplicada retroativamente a 2026. Esse registro de atualização não constitui revisão jurídica integral de vigência.

@@ -74,7 +74,9 @@ def write_publication(root,metadata,items,relations):
     else:
         tmp=path.with_suffix('.json.tmp');tmp.write_bytes(canonical(manifest));tmp.replace(path)
     digest=file_hash(path);path.with_suffix('.json.sha256').write_text(f'{digest}  {path.name}\n')
-    latest={'id':publication,'path':str(path.relative_to(root)),'sha256':digest,'bytes':path.stat().st_size,'format':FORMAT,'schema_version':manifest['schema_version'],'item_count':len(items),'relation_count':len(relations),'total_compressed_bytes':sum(p['bytes'] for p in parts),'total_decoded_bytes':sum(p['decoded_bytes'] for p in parts),'national_release_ready':manifest['national_release_ready']}
+    from validate_artifact import validate_artifact
+    validation=validate_artifact(root,path)
+    latest={'validation':validation,'id':publication,'path':str(path.relative_to(root)),'sha256':digest,'bytes':path.stat().st_size,'format':FORMAT,'schema_version':manifest['schema_version'],'item_count':len(items),'relation_count':len(relations),'total_compressed_bytes':sum(p['bytes'] for p in parts),'total_decoded_bytes':sum(p['decoded_bytes'] for p in parts),'national_release_ready':manifest['national_release_ready']}
     pointer=root/'data/bundles/latest.json';temp=pointer.with_suffix('.json.tmp');temp.write_bytes(canonical(latest));temp.replace(pointer)
     return manifest,path,digest,latest
 

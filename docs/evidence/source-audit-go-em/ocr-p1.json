@@ -1,0 +1,301 @@
+{
+  "actor_type": "automated",
+  "artifact_sha256": "2b350b8a53e5072ba915489c749f55b91284f4d23531a08faf5ea7fed89ae1a9",
+  "cache_key": "7e98b7d166353eeaf9e199c207da0a31034aa6d860f33f2a2b63434bde19d54c",
+  "configuration": {
+    "autorotate": true,
+    "engine": "tesseract 5.5.2",
+    "language": "por",
+    "max_dimension": 2200,
+    "model_sha256": {
+      "por": "c4932b937207a9514b7514d518b931a99938c02a28a5a5a553f8599ed58b7deb"
+    },
+    "orientation_model_sha256": "9cf5d576fcc47564f11265841e5ca839001e7e6f38ff7f7aacf46d15a96b00ff",
+    "psm": 3,
+    "rasterizer": "PyMuPDF 1.26.7",
+    "revision": "tesseract-tsv-por-v1.2.1",
+    "threads": 1
+  },
+  "coordinate_space": "supplied_page.rect_display_units",
+  "layout_coordinate_space": "upright_ocr_page_points",
+  "layout_rect": [
+    0,
+    0,
+    613.6,
+    860.0
+  ],
+  "layout_to_original": [
+    1.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0
+  ],
+  "layout_words": [
+    {
+      "block": 1,
+      "bottom": 78.0,
+      "confidence": 84.291176,
+      "line": 1,
+      "paragraph": 1,
+      "text": "—",
+      "top": 73.6,
+      "x0": 116.4,
+      "x1": 175.2
+    },
+    {
+      "block": 1,
+      "bottom": 87.2,
+      "confidence": 92.930717,
+      "line": 1,
+      "paragraph": 1,
+      "text": "DOCUMENTO",
+      "top": 64.4,
+      "x0": 199.2,
+      "x1": 416.4
+    },
+    {
+      "block": 1,
+      "bottom": 78.0,
+      "confidence": 45.427719,
+      "line": 1,
+      "paragraph": 1,
+      "text": "—-",
+      "top": 73.6,
+      "x0": 438.0,
+      "x1": 496.8
+    },
+    {
+      "block": 2,
+      "bottom": 144.4,
+      "confidence": 96.253593,
+      "line": 1,
+      "paragraph": 1,
+      "text": "CURRICULAR",
+      "top": 98.4,
+      "x0": 94.8,
+      "x1": 520.8
+    },
+    {
+      "block": 3,
+      "bottom": 181.6,
+      "confidence": 92.8255,
+      "line": 1,
+      "paragraph": 1,
+      "text": "PARA",
+      "top": 159.6,
+      "x0": 94.8,
+      "x1": 180.8
+    },
+    {
+      "block": 3,
+      "bottom": 184.8,
+      "confidence": 0.0,
+      "line": 1,
+      "paragraph": 1,
+      "text": "[c[6)",
+      "top": 150.8,
+      "x0": 183.6,
+      "x1": 246.4
+    },
+    {
+      "block": 3,
+      "bottom": 184.8,
+      "confidence": 0.0,
+      "line": 1,
+      "paragraph": 1,
+      "text": "[4]",
+      "top": 150.8,
+      "x0": 254.4,
+      "x1": 293.6
+    },
+    {
+      "block": 3,
+      "bottom": 177.6,
+      "confidence": 94.885201,
+      "line": 1,
+      "paragraph": 1,
+      "text": "ETAPA",
+      "top": 164.4,
+      "x0": 310.4,
+      "x1": 370.8
+    },
+    {
+      "block": 3,
+      "bottom": 178.0,
+      "confidence": 19.264593,
+      "line": 1,
+      "paragraph": 1,
+      "text": "ENSINO",
+      "top": 164.0,
+      "x0": 376.8,
+      "x1": 450.4
+    },
+    {
+      "block": 3,
+      "bottom": 178.0,
+      "confidence": 84.837914,
+      "line": 1,
+      "paragraph": 1,
+      "text": "MÉDIO",
+      "top": 160.0,
+      "x0": 457.6,
+      "x1": 520.8
+    }
+  ],
+  "method": "tesseract-tsv-por",
+  "ocr_rotation_applied": 0,
+  "page": 1,
+  "page_rect": [
+    0.0,
+    0.0,
+    613.2755737304688,
+    859.8897705078125
+  ],
+  "pdf_to_raster_matrix": [
+    2.5,
+    0.0,
+    0.0,
+    2.5,
+    0.0,
+    0.0
+  ],
+  "raster_dimensions": [
+    1534,
+    2150
+  ],
+  "result_sha256": "8912686b6c765b9c2f6be98299ce165e88218a0e659d0c0a597aa4abbfb09f0e",
+  "review_status": "ocr_candidate_not_documentary_reconciliation",
+  "revision": "tesseract-tsv-por-v1.2.1",
+  "text": "— DOCUMENTO —-\nCURRICULAR\nPARA [c[6) [4] ETAPA ENSINO MÉDIO",
+  "warnings": [
+    {
+      "detail": "Detected 57 diacritics\n",
+      "issue": "ocr_engine_diagnostic",
+      "page": 1
+    },
+    {
+      "count": 4,
+      "denominator": 10,
+      "issue": "ocr_low_confidence_words",
+      "page": 1,
+      "status": "requires_documentary_review"
+    }
+  ],
+  "word_count": 10,
+  "words": [
+    {
+      "block": 1,
+      "bottom": 78.0,
+      "confidence": 84.291176,
+      "line": 1,
+      "paragraph": 1,
+      "text": "—",
+      "top": 73.5999984741211,
+      "x0": 116.4000015258789,
+      "x1": 175.1999969482422
+    },
+    {
+      "block": 1,
+      "bottom": 87.20000457763672,
+      "confidence": 92.930717,
+      "line": 1,
+      "paragraph": 1,
+      "text": "DOCUMENTO",
+      "top": 64.4000015258789,
+      "x0": 199.1999969482422,
+      "x1": 416.3999938964844
+    },
+    {
+      "block": 1,
+      "bottom": 78.0,
+      "confidence": 45.427719,
+      "line": 1,
+      "paragraph": 1,
+      "text": "—-",
+      "top": 73.5999984741211,
+      "x0": 438.0,
+      "x1": 496.8000183105469
+    },
+    {
+      "block": 2,
+      "bottom": 144.40000915527344,
+      "confidence": 96.253593,
+      "line": 1,
+      "paragraph": 1,
+      "text": "CURRICULAR",
+      "top": 98.4000015258789,
+      "x0": 94.80000305175781,
+      "x1": 520.7999877929688
+    },
+    {
+      "block": 3,
+      "bottom": 181.60000610351562,
+      "confidence": 92.8255,
+      "line": 1,
+      "paragraph": 1,
+      "text": "PARA",
+      "top": 159.60000610351562,
+      "x0": 94.80000305175781,
+      "x1": 180.8000030517578
+    },
+    {
+      "block": 3,
+      "bottom": 184.8000030517578,
+      "confidence": 0.0,
+      "line": 1,
+      "paragraph": 1,
+      "text": "[c[6)",
+      "top": 150.8000030517578,
+      "x0": 183.60000610351562,
+      "x1": 246.40000915527344
+    },
+    {
+      "block": 3,
+      "bottom": 184.8000030517578,
+      "confidence": 0.0,
+      "line": 1,
+      "paragraph": 1,
+      "text": "[4]",
+      "top": 150.8000030517578,
+      "x0": 254.40000915527344,
+      "x1": 293.6000061035156
+    },
+    {
+      "block": 3,
+      "bottom": 177.60000610351562,
+      "confidence": 94.885201,
+      "line": 1,
+      "paragraph": 1,
+      "text": "ETAPA",
+      "top": 164.40000915527344,
+      "x0": 310.3999938964844,
+      "x1": 370.8000183105469
+    },
+    {
+      "block": 3,
+      "bottom": 178.0,
+      "confidence": 19.264593,
+      "line": 1,
+      "paragraph": 1,
+      "text": "ENSINO",
+      "top": 164.0,
+      "x0": 376.8000183105469,
+      "x1": 450.3999938964844
+    },
+    {
+      "block": 3,
+      "bottom": 178.0,
+      "confidence": 84.837914,
+      "line": 1,
+      "paragraph": 1,
+      "text": "MÉDIO",
+      "top": 160.0,
+      "x0": 457.6000061035156,
+      "x1": 520.7999877929688
+    }
+  ],
+  "cache_hit": true,
+  "source_id": "go-dcgoem-portal-atual"
+}

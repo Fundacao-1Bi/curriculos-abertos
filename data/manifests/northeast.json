@@ -933,7 +933,8 @@
     "mandatory": true,
     "inventory_status": "in_progress",
     "allowed_redirect_hosts": [],
-    "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais."
+    "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais.",
+    "requires_ocr": true
   },
   {
     "id": "ba-dcrb-ei-ef",
@@ -1378,7 +1379,8 @@
         "Ciências da Natureza e suas Tecnologias",
         "Ciências Humanas e Sociais Aplicadas"
       ]
-    }
+    },
+    "edition_transition_note": "Edição2022 preservada. Res249/2026 adota revisão2026 e determina implementação a partir2027; não se infere inaplicabilidade desta edição em todo o ano2026 sem documentar o escalonamento adotado pela rede."
   },
   {
     "id": "pb-pcem",
@@ -1431,6 +1433,18 @@
         "http_status": 200,
         "content_type": "text/html",
         "error": "access_challenge_CAPTCHA_JavaScript"
+      },
+      {
+        "source_id": "pb-pcem",
+        "at": "2026-10-28T04:44:18.397310+00:00",
+        "url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+        "method": "Unauthenticated standard HTTP GET, bounded8192byte prefix; no challenge solving/authentication/bypass.",
+        "http_status": 200,
+        "content_type": "text/html",
+        "prefix_sha256": "41d0c63fe9cba8e54dcb5406f5d9b3d7b75593f62355e840ca9a0b918e87e665",
+        "bytes_sampled": 8192,
+        "is_pdf": false,
+        "challenge_detected": true
       }
     ],
     "inventory_complete": false,
@@ -1440,7 +1454,19 @@
     "mandatory": true,
     "inventory_status": "in_progress",
     "allowed_redirect_hosts": [],
-    "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais."
+    "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais.",
+    "last_access_verification": {
+      "source_id": "pb-pcem",
+      "at": "2026-10-28T04:44:18.397310+00:00",
+      "url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+      "method": "Unauthenticated standard HTTP GET, bounded8192byte prefix; no challenge solving/authentication/bypass.",
+      "http_status": 200,
+      "content_type": "text/html",
+      "prefix_sha256": "41d0c63fe9cba8e54dcb5406f5d9b3d7b75593f62355e840ca9a0b918e87e665",
+      "bytes_sampled": 8192,
+      "is_pdf": false,
+      "challenge_detected": true
+    }
   },
   {
     "id": "pe-curriculo-em-2021",
@@ -1988,6 +2014,687 @@
         "História",
         "Ensino Religioso"
       ]
+    },
+    "layout_rules": [
+      {
+        "id": "pi-ei-objective-column-p53-t0",
+        "page_start": 53,
+        "page_end": 53,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          319.1086883544922,
+          752.0579833984375
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 53,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p54-t0",
+        "page_start": 54,
+        "page_end": 54,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          738.5936889648438
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 54,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p55-t0",
+        "page_start": 55,
+        "page_end": 55,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          735.3981323242188
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 55,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p56-t0",
+        "page_start": 56,
+        "page_end": 56,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          556.7266845703125
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 56,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p56-t1",
+        "page_start": 56,
+        "page_end": 56,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          577.0691528320312,
+          751.3370971679688
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 56,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p57-t0",
+        "page_start": 57,
+        "page_end": 57,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          774.2916870117188
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 57,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p58-t0",
+        "page_start": 58,
+        "page_end": 58,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          673.9910278320312
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 58,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p59-t0",
+        "page_start": 59,
+        "page_end": 59,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          614.057373046875
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 59,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p60-t0",
+        "page_start": 60,
+        "page_end": 60,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          383.81182861328125
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 60,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p60-t1",
+        "page_start": 60,
+        "page_end": 60,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          404.1542282104492,
+          718.6611938476562
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 60,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p61-t0",
+        "page_start": 61,
+        "page_end": 61,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          700.6602783203125
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 61,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p62-t0",
+        "page_start": 62,
+        "page_end": 62,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          538.2874755859375
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 62,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p62-t1",
+        "page_start": 62,
+        "page_end": 62,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          558.6300964355469,
+          688.1290893554688
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 62,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p63-t0",
+        "page_start": 63,
+        "page_end": 63,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          650.7255249023438
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 63,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p64-t0",
+        "page_start": 64,
+        "page_end": 64,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          661.2255249023438
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 64,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p65-t0",
+        "page_start": 65,
+        "page_end": 65,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          746.6945190429688
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 65,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p66-t0",
+        "page_start": 66,
+        "page_end": 66,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          683.6945190429688
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 66,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p67-t0",
+        "page_start": 67,
+        "page_end": 67,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          765.1337280273438
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 67,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p68-t0",
+        "page_start": 68,
+        "page_end": 68,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          550.2188110351562
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 68,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p68-t1",
+        "page_start": 68,
+        "page_end": 68,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          570.5612182617188,
+          760.9985961914062
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 68,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p69-t0",
+        "page_start": 69,
+        "page_end": 69,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          746.6965942382812
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 69,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p70-t0",
+        "page_start": 70,
+        "page_end": 70,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          665.1260986328125
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 70,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p71-t0",
+        "page_start": 71,
+        "page_end": 71,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          765.1337280273438
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 71,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p72-t0",
+        "page_start": 72,
+        "page_end": 72,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          757.1945190429688
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 72,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      },
+      {
+        "id": "pi-ei-objective-column-p73-t0",
+        "page_start": 73,
+        "page_end": 73,
+        "text_x": [
+          135.5,
+          271.8
+        ],
+        "code_x": [
+          135.5,
+          210
+        ],
+        "y_range": [
+          154.47877502441406,
+          630.2266845703125
+        ],
+        "mode": "combined_code_text",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 73,
+          "section": "Quadros EI: Faixa Etária / Objetivo de aprendizagem e desenvolvimento / Possibilidades pedagógicas",
+          "verification": "AllEIcodes are in the objective column x138.6. Left age column and right pedagogical possibilities are distinct. One rule per physical table prevents intermediate headers becoming prior objective text.",
+          "actor_type": "automated"
+        }
+      }
+    ],
+    "non_curricular_code_pages": [
+      38
+    ],
+    "code_rules": [
+      {
+        "id": "pi-source-age-year-and-local-addition-convention",
+        "pattern": "^((?:EI|EF)\\d{2}[A-Z]{2}\\d{2})(?:\\.\\d{2}PI)?$",
+        "national_code_group": 1,
+        "mapping_allowed": false,
+        "position_from_national_code": true,
+        "origin": "regra_explicada_fonte",
+        "evidence": {
+          "source_id": "pi-curriculo-ei-ef",
+          "page": 38,
+          "section": "Estrutura do currículo / figura de codificação",
+          "excerpt": "37\nESTRUTURA DO CURRÍCULO\nO primeiro par de letras indica\na etapa de Educação Infantil.\nEI02TS01.01PI\nO segundo par de letras indica\no campo de experiências:\nO terceiro par de números\nindica a posição da habilidade\nna numeração sequencial do\ncampo de experiências para\ncada grupo/faixa etária.\nHabilidades acrescidas\npara o Estado do Piauí\nEDUCAÇÃO INFANTIL\nO primeiro par de números\nindica o grupo por faixa etária:\n01 = Bebês (zero a 1 ano e 6 meses)\n02 = Crianças bem pequenas\n(1 ano e 7 meses a 3 anos e 11 meses)\n03 = Crianças pequenas\n(4 anos a 5 anos e 11 meses)\nEO = O eu, o outro e o nós\nCG = Corpo, gestos e movimentos\nTS = Traços, sons, cores e formas\nEF = Escuta, fala, pensamento e imaginação\nET = Espaços, tempos, quantidades, relações e transformações\nO primeiro par de letras indica\na etapa de Ensino Fundamental\nEF67LP01\nO primeiro par de números \nindica o ano (01 a 09) a que\nse refere a habilidade, ou, no caso\nde Lìngua Portuguesa, Arte e\nEducação Física, o bloco de anos, \ncomo segue:\nLíngua Portuguesa/Arte\n15 = 1º ao 5º ano\n69 = 6º ao 9º ano\nLíngua Portuguesa/Educação Física\n12 = 1º e 2º anos\n35 = 3º ao 5º anos\n67 = 6º e 7º anos\n89 = 8º e 9º anos\nO segundo par de letras indica\no componente curricular.\nEsse par de números\nindica a posição da habilidade\nna numeração sequencial do\nano ou do bloco de anos.\nExemplo: habilidade 01,\nhabilidade 02, habilidade 03.\nENSINO FUNDAMENTAL\nDocumento_Curricular_Piaui.indd   37\n22/09/2020   17:03:20\n",
+          "interpretation": "Source explicitly documentsEIagegroups/experiencefields andEFyearblocks. Suffix .NNPI denotes added state skills; no same-number national equivalence asserted. Figure example is not counted as a learning."
+        }
+      }
+    ],
+    "learning_table_inventory": {
+      "actor_type": "automated",
+      "source_id": "pi-curriculo-ei-ef",
+      "scope": "EIobjective tables only, not wholeEI/EF source",
+      "pages": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "objective_occurrences": 93,
+      "distinct_literal_codes": 93,
+      "expectation_origin": "Explicit objective column plus repeat headers, independently inspected native source; all code anchors atx138.6; illustrative p38 excluded.",
+      "inventory_path": "docs/evidence/source-audit-northeast/pi-ei-objective-column-inventory.json",
+      "reconciliation_status": "93objective_code_prose_pairs_verified_other_structures_pending",
+      "verification_path": "docs/evidence/source-audit-northeast/pi-ei-objective-column-verification.json"
     }
   },
   {
@@ -2232,7 +2939,13 @@
     "stages": [
       "EI"
     ],
-    "components": [],
+    "components": [
+      "O eu, o outro e o nós",
+      "Corpo, gestos e movimentos",
+      "Traços, sons, cores e formas",
+      "Escuta, fala, pensamento e imaginação",
+      "Espaços, tempos, quantidades, relações e transformações"
+    ],
     "edition": "2019",
     "document_date": null,
     "homologation_date": null,
@@ -2315,7 +3028,23 @@
     "non_curricular_code_pages": [
       80
     ],
-    "non_curricular_code_pages_reason": "Páginas de figura/explicação da codificação e exemplos; preservadas como seções documentais, não duplicadas como aprendizagens."
+    "non_curricular_code_pages_reason": "Páginas de figura/explicação da codificação e exemplos; preservadas como seções documentais, não duplicadas como aprendizagens.",
+    "stage_component_inventory": {
+      "EI": [
+        "O eu, o outro e o nós",
+        "Corpo, gestos e movimentos",
+        "Traços, sons, cores e formas",
+        "Escuta, fala, pensamento e imaginação",
+        "Espaços, tempos, quantidades, relações e transformações"
+      ]
+    },
+    "stage_inventory_evidence": {
+      "page": 80,
+      "section": "Organização das tabelas e campos de experiências",
+      "excerpt": "O segundo par de letras indica o campo de experiências:",
+      "verification": "Cinco campos nomeados explicitamente e confirmados nos grupos amostrados; inventário de aprendizagens integral permanece pendente.",
+      "actor_type": "automated"
+    }
   },
   {
     "id": "al-recal-ef",
@@ -2767,8 +3496,8 @@
     "uf": "RN",
     "title": "Documento Curricular do Estado do Rio Grande do Norte: Educação Infantil",
     "issuer": "Secretaria de Estado da Educação de Rio Grande do Norte",
-    "official_url": "http://www.adcon.rn.gov.br/ACERVO/seec/DOC/DOC000000000190572.PDF",
-    "artifact_url": "http://www.adcon.rn.gov.br/ACERVO/seec/DOC/DOC000000000190572.PDF",
+    "official_url": "https://antoniomartins-rn.portalsigeduc.com.br/app/public/home.jsf?modo=classico",
+    "artifact_url": "https://antoniomartins-rn.portalsigeduc.com.br/app/verProducao?idProducao=10000127&key=ef147790e99c2a700cfa2c3603ebe608",
     "stages": [
       "EI"
     ],
@@ -2788,9 +3517,9 @@
       "Educação Infantil"
     ],
     "redistribution": "Direitos de terceiros: redistribuição do PDF não estabelecida; snapshot local privado para conferência e processamento.",
-    "collected_at": "2026-10-28T03:33:14.583849+00:00",
-    "sha256": "f79982d796d12a9ad54ffc6dd7db887c59e070cdb2993957f307c73ed1318651",
-    "local_path": "data/raw/RN/rn-documento-ei-2018.pdf",
+    "collected_at": "2026-10-28T05:04:07.805559+00:00",
+    "sha256": "3bd81df59cc129ec6cbf0646125fa5f76fdedbaa455b11d0363d845c9f14483b",
+    "local_path": "data/raw/RN/rn-documento-ei-2018-https-mirror.pdf",
     "status": "acquired",
     "attempts": [
       {
@@ -2816,13 +3545,22 @@
         "result": "file_validated",
         "bytes": 19642369,
         "pdf_pages": 177
+      },
+      {
+        "source_id": "rn-documento-ei-2018",
+        "at": "2026-10-28T05:04:07.805559+00:00",
+        "url": "https://antoniomartins-rn.portalsigeduc.com.br/app/verProducao?idProducao=10000127&key=ef147790e99c2a700cfa2c3603ebe608",
+        "sha256": "3bd81df59cc129ec6cbf0646125fa5f76fdedbaa455b11d0363d845c9f14483b",
+        "bytes": 3147453,
+        "same_as_selected_artifact": false,
+        "local_path": "data/raw/RN/rn-documento-ei-2018-https-mirror.pdf"
       }
     ],
     "inventory_complete": false,
     "reconciliation_status": "pending",
     "reviewer_type": "automated",
     "error": null,
-    "bytes": 19642369,
+    "bytes": 3147453,
     "pdf_pages": 177,
     "inventory_evidence": {
       "type": "automated_cover_and_index_inspection",
@@ -2856,6 +3594,37 @@
         "Escuta, fala, pensamento e imaginação",
         "Espaços, tempos, quantidades, relações e transformações"
       ]
+    },
+    "alternate_artifacts": [
+      {
+        "source_id": "rn-documento-ei-2018",
+        "at": "2026-10-28T05:04:07.805559+00:00",
+        "url": "https://antoniomartins-rn.portalsigeduc.com.br/app/verProducao?idProducao=10000127&key=ef147790e99c2a700cfa2c3603ebe608",
+        "sha256": "3bd81df59cc129ec6cbf0646125fa5f76fdedbaa455b11d0363d845c9f14483b",
+        "bytes": 3147453,
+        "same_as_selected_artifact": false,
+        "local_path": "data/raw/RN/rn-documento-ei-2018-https-mirror.pdf"
+      }
+    ],
+    "artifact_history": [
+      {
+        "artifact_url": "http://www.adcon.rn.gov.br/ACERVO/seec/DOC/DOC000000000190572.PDF",
+        "official_url": "http://www.adcon.rn.gov.br/ACERVO/seec/DOC/DOC000000000190572.PDF",
+        "sha256": "f79982d796d12a9ad54ffc6dd7db887c59e070cdb2993957f307c73ed1318651",
+        "local_path": "data/raw/RN/rn-documento-ei-2018.pdf",
+        "bytes": 19642369,
+        "collected_at": "2026-10-28T03:33:14.583849+00:00",
+        "reason": "Official HTTPS municipal distribution replaces inaccessible HTTPS/legacyHTTP route; same2018edition and exact native page text across177pages, distinct representation/geometry. Original PDF retained privately."
+      }
+    ],
+    "distribution_chain_url": "https://antoniomartins.rn.gov.br/secretarias/secretaria-de-educacao/",
+    "artifact_representation_change": {
+      "at": "2026-10-28T05:08:52.305870+00:00",
+      "actor_type": "automated",
+      "comparison_evidence": "docs/evidence/source-audit-northeast/rn-ei-alternate-text-comparison.json",
+      "facts": "Official municipal catalog supplies177p firstedition2018 PDF overHTTPS; native text exactly matches previously selectedPDF on everypage, dimensionsmatch, bytes/wordgeometry/drawingsdiffer. This is not asserted as new officialcurriculumedition. Extraction must use newartifacthash/coordinates.",
+      "previous_sha256": "f79982d796d12a9ad54ffc6dd7db887c59e070cdb2993957f307c73ed1318651",
+      "selected_sha256": "3bd81df59cc129ec6cbf0646125fa5f76fdedbaa455b11d0363d845c9f14483b"
     }
   },
   {
@@ -3232,8 +4001,8 @@
     "uf": "RN",
     "title": "Documento Curricular do Estado do Rio Grande do Norte: Ensino Fundamental",
     "issuer": "Secretaria de Estado da Educação de Rio Grande do Norte",
-    "official_url": "http://www.adcon.rn.gov.br/ACERVO/seec/DOC/DOC000000000192020.PDF",
-    "artifact_url": "http://www.adcon.rn.gov.br/ACERVO/seec/DOC/DOC000000000192020.PDF",
+    "official_url": "https://antoniomartins-rn.portalsigeduc.com.br/app/public/home.jsf?modo=classico",
+    "artifact_url": "https://antoniomartins-rn.portalsigeduc.com.br/app/verProducao?idProducao=10000125&key=af1a2343b19059d2206f4b7e5d57768f",
     "stages": [
       "EF"
     ],
@@ -3267,6 +4036,14 @@
         "result": "file_validated",
         "bytes": 9918369,
         "pdf_pages": 1103
+      },
+      {
+        "source_id": "rn-documento-ef-2018",
+        "at": "2026-10-28T05:04:07.806638+00:00",
+        "url": "https://antoniomartins-rn.portalsigeduc.com.br/app/verProducao?idProducao=10000125&key=af1a2343b19059d2206f4b7e5d57768f",
+        "sha256": "187ff82e9115f569ed328aea70e194cafce71a115d69be782d85ebd64d2e3f4c",
+        "bytes": 9918369,
+        "same_as_selected_artifact": true
       }
     ],
     "inventory_complete": false,
@@ -3348,7 +4125,14 @@
         "História",
         "Ensino Religioso"
       ]
-    }
+    },
+    "artifact_url_history": [
+      {
+        "url": "http://www.adcon.rn.gov.br/ACERVO/seec/DOC/DOC000000000192020.PDF",
+        "reason": "Original HTTP official distribution; legitimate HTTPS official municipal mirror verified byte-identical."
+      }
+    ],
+    "distribution_chain_url": "https://antoniomartins.rn.gov.br/secretarias/secretaria-de-educacao/"
   },
   {
     "id": "pi-curriculo-em-caderno2-2021",
@@ -3434,7 +4218,7 @@
       "EF"
     ],
     "components": [
-      "Computação / Educação Digital e Midiática"
+      "Computação"
     ],
     "edition": null,
     "document_date": null,
@@ -3535,7 +4319,17 @@
       "7.15 do PNE (Lei nº 13.005/2014), que prevê a universalização da internet rápida em todas as escolas",
       "6.1 Panorama Geral do Estado do Piauí",
       "6.2 Panorama Geral da Rede Estadual"
-    ]
+    ],
+    "catalog_topic_label_previous": "Computação / Educação Digital e Midiática",
+    "stage_component_inventory": {
+      "EI": [
+        "Computação"
+      ],
+      "EF": [
+        "Computação"
+      ]
+    },
+    "component_metadata_note": "Rótulo concatenado do catálogo descrevia o tópico Computação/Educação Digital e Midiática, não dois componentes. Faceta Computação corresponde ao componente e aos códigos CO; organização local específica permanece nos títulos e evidências."
   },
   {
     "id": "se-curriculo-ei-ef",
@@ -3863,7 +4657,7 @@
       "EM"
     ],
     "components": [
-      "Computação / Educação Digital e Midiática"
+      "Computação"
     ],
     "edition": "2026",
     "document_date": null,
@@ -3912,7 +4706,20 @@
     "mandatory": true,
     "inventory_status": "in_progress",
     "allowed_redirect_hosts": [],
-    "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais."
+    "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais.",
+    "catalog_topic_label_previous": "Computação / Educação Digital e Midiática",
+    "stage_component_inventory": {
+      "EI": [
+        "Computação"
+      ],
+      "EF": [
+        "Computação"
+      ],
+      "EM": [
+        "Computação"
+      ]
+    },
+    "component_metadata_note": "Rótulo concatenado do catálogo descrevia o tópico Computação/Educação Digital e Midiática, não dois componentes. Faceta Computação corresponde ao componente e aos códigos CO; organização local específica permanece nos títulos e evidências."
   },
   {
     "id": "se-bncc-computacao-2025",
@@ -3927,7 +4734,7 @@
       "EM"
     ],
     "components": [
-      "Computação / Educação Digital e Midiática"
+      "Computação"
     ],
     "edition": "2025",
     "document_date": null,
@@ -3970,7 +4777,20 @@
     "mandatory": true,
     "inventory_status": "in_progress",
     "allowed_redirect_hosts": [],
-    "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais."
+    "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais.",
+    "catalog_topic_label_previous": "Computação / Educação Digital e Midiática",
+    "stage_component_inventory": {
+      "EI": [
+        "Computação"
+      ],
+      "EF": [
+        "Computação"
+      ],
+      "EM": [
+        "Computação"
+      ]
+    },
+    "component_metadata_note": "Rótulo concatenado do catálogo descrevia o tópico Computação/Educação Digital e Midiática, não dois componentes. Faceta Computação corresponde ao componente e aos códigos CO; organização local específica permanece nos títulos e evidências."
   },
   {
     "id": "se-natureza-vol2",
@@ -4332,7 +5152,9 @@
     "stages": [
       "EM"
     ],
-    "components": [],
+    "components": [
+      "Projeto de Vida"
+    ],
     "edition": null,
     "document_date": null,
     "homologation_date": null,
@@ -4371,7 +5193,19 @@
     "mandatory": true,
     "inventory_status": "in_progress",
     "allowed_redirect_hosts": [],
-    "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais."
+    "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais.",
+    "stage_component_inventory": {
+      "EM": [
+        "Projeto de Vida"
+      ]
+    },
+    "normative_scope_basis": {
+      "page": 5,
+      "section": "Apresentação",
+      "excerpt": "O Caderno Complementar de Projeto de Vida, parte integrante do Currículo de Sergipe - Etapa Ensino Médio, tem o intuito de dar suporte ao trabalho dos professores da Rede Pública Estadual de Ensino de Sergipe que atuarão no Novo Ensino Médio.",
+      "verification": "Emissor declara expressamente que o Caderno é parte integrante do Currículo de Sergipe, etapaEM; isso o distingue de apoio didático sem integração demonstrada. Atualização/vigência e reconciliação dos itens permanecem pendentes.",
+      "actor_type": "automated"
+    }
   },
   {
     "id": "ba-matrizes-em-2025",
@@ -4479,7 +5313,7 @@
     "id": "ba-resolucao-249-2026",
     "uf": "BA",
     "title": "Resolução CEE nº 249 de 7 de julho de 2026: DCRB",
-    "issuer": "Secretaria de Estado da Educação de Bahia",
+    "issuer": "Conselho Estadual de Educação da Bahia",
     "official_url": "https://www.ba.gov.br/conselhodeeducacao/publicacoes/1849/resolucao-cee-no-249-de-07-de-julho-de-2026",
     "artifact_url": "https://www.ba.gov.br/conselhodeeducacao/sites/site-cee/files/2026-08/RESOLU%C3%87%C3%83O%20CEE%20N%C2%BA%20249-2026%20-%20DCRB%20-PARA%20PUBLICIZA%C3%87%C3%83O%20%281%29.pdf",
     "stages": [
@@ -4494,7 +5328,7 @@
     "edition": "2026",
     "document_date": "2026-07-07",
     "homologation_date": "2026-08-26",
-    "application_period": null,
+    "application_period": "A partir do ano letivo de2027 (ResoluçãoCEE249/2026,art16)",
     "document_type": "ato_normativo",
     "normative_parts": [
       "Documento completo"
@@ -4512,29 +5346,24 @@
         "pdf_pages": 7
       }
     ],
-    "inventory_complete": false,
-    "reconciliation_status": "pending",
+    "inventory_complete": true,
+    "reconciliation_status": "automated_documentary_reconciled",
     "reviewer_type": "automated",
     "vigency_status": "vigente",
     "error": null,
     "bytes": 577570,
     "pdf_pages": 7,
     "inventory_evidence": {
-      "type": "automated_cover_and_index_inspection",
       "actor_type": "automated",
       "actor_id": "codex:data_northeast",
-      "method": "Leitura das páginas iniciais e identificação literal das entradas de sumário; conjunto ainda não reconciliado. Componentes não reconhecidos pela extração de texto permanecem pendentes.",
-      "components_observed": [
-        "Linguagens e suas Tecnologias",
-        "Matemática e suas Tecnologias",
-        "Ciências da Natureza e suas Tecnologias",
-        "Ciências Humanas e Sociais Aplicadas"
-      ],
-      "status": "in_progress",
-      "stage_component_inventory_note": "Apenas nomes literais já observados em sumário/figuras das páginas inspecionadas, separados por etapa. Inventário em andamento; lista não é afirmação de inexistência de outras partes."
+      "artifact_sha256": "c108df4fe4cb56dc0eb9290803025a84b4fa7c72c587d7ea00e6a3e59cee2573",
+      "method": "Leitura integral independente;237linhasoriginais atribuídas1vez a45partes (22artigos/8capítulos/9considerandos/etc),4continuações; extração/importador/finalizadorv1.4verificados.",
+      "inventory_path": "docs/evidence/source-audit-northeast/ba-resolucao249-inventory.json",
+      "verification_path": "docs/evidence/source-audit-northeast/ba-resolucao249-verification.json",
+      "scope": "Ato específico; não substituiDCRB-EM2026, nem representaBAcompleta ou revisãohumana."
     },
     "mandatory": true,
-    "inventory_status": "in_progress",
+    "inventory_status": "complete",
     "allowed_redirect_hosts": [],
     "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais.",
     "stage_component_inventory": {
@@ -4544,6 +5373,27 @@
         "Ciências da Natureza e suas Tecnologias",
         "Ciências Humanas e Sociais Aplicadas"
       ]
+    },
+    "normative_status": "adopted_2026_for_implementation_from_2027",
+    "application_evidence": {
+      "source_id": "ba-resolucao-249-2026",
+      "page": 7,
+      "section": "CapítuloVIII / Art16",
+      "excerpt": "As instituições integrantes do Sistema Estadual de Ensino da Bahia promoverão as adequações de suas propostas pedagógicas, currículos, matrizes curriculares e regimentos escolares ao disposto nesta Resolução, para implementação a partir do ano letivo de 2027.",
+      "verification": "Conteúdo e ano conferidos no PDF; espaços normalizados para exibição. Vigência do ato e início da implementação são fatos distintos.",
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T04:30:07.809185+00:00"
+    },
+    "publication_date": "2026-08-27",
+    "uncoded_items_path": "data/manifests/uncoded/ba-resolucao-249-items.json",
+    "inventory_scope": "this_artifact_only",
+    "stage_inventory_evidence": {
+      "source_id": "ba-resolucao-249-2026",
+      "page": 3,
+      "section": "Art5",
+      "verification": "Art5nomeia explicitamente as quatro áreas e seus componentes na organizaçãoEM.",
+      "actor_type": "automated"
     }
   },
   {
@@ -4556,11 +5406,16 @@
     "stages": [
       "EM"
     ],
-    "components": [],
+    "components": [
+      "Linguagens e suas Tecnologias",
+      "Matemática e suas Tecnologias",
+      "Ciências da Natureza e suas Tecnologias",
+      "Ciências Humanas e Sociais Aplicadas"
+    ],
     "edition": "2026",
     "document_date": null,
     "homologation_date": null,
-    "application_period": null,
+    "application_period": "A partir do ano letivo de2027 (ResoluçãoCEE249/2026,art16)",
     "document_type": "referencial_curricular",
     "normative_parts": [
       "Documento revisado completo",
@@ -4576,7 +5431,7 @@
     "inventory_complete": false,
     "reconciliation_status": "pending",
     "reviewer_type": "automated",
-    "error": "Resolução CEE249/2026 vigente confirma DCRB-EM2026; catálogo SEC consultado ainda entrega PDF2022. Artefato da revisão2026 não localizado nas páginas oficiais consultadas.",
+    "error": "Documento revisado DCRB-EM2026 é adotado pela ResoluçãoCEE249/2026, com implementação a partir do ano letivo2027; artefato curricular integral não localizado. O PDF acessível no catálogo é edição2022, preservada como edição distinta; não prova a edição2026.",
     "artifact_url_is_landing_page": true,
     "inventory_evidence": {
       "type": "official_normative_act",
@@ -4588,7 +5443,33 @@
     "mandatory": true,
     "inventory_status": "in_progress",
     "allowed_redirect_hosts": [],
-    "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais."
+    "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais.",
+    "normative_status": "adopted_2026_for_implementation_from_2027",
+    "application_evidence": {
+      "source_id": "ba-resolucao-249-2026",
+      "page": 7,
+      "section": "CapítuloVIII / Art16",
+      "excerpt": "As instituições integrantes do Sistema Estadual de Ensino da Bahia promoverão as adequações de suas propostas pedagógicas, currículos, matrizes curriculares e regimentos escolares ao disposto nesta Resolução, para implementação a partir do ano letivo de 2027.",
+      "verification": "Conteúdo e ano conferidos no PDF; espaços normalizados para exibição. Vigência do ato e início da implementação são fatos distintos.",
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T04:30:07.809185+00:00"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Linguagens e suas Tecnologias",
+        "Matemática e suas Tecnologias",
+        "Ciências da Natureza e suas Tecnologias",
+        "Ciências Humanas e Sociais Aplicadas"
+      ]
+    },
+    "stage_inventory_evidence": {
+      "source_id": "ba-resolucao-249-2026",
+      "page": 3,
+      "section": "Art5",
+      "verification": "Art5nomeia explicitamente quatro áreas e seus componentes; ato e DCRB adotado abrangem a etapaEM inteira. Documento curricular2026continua pendente.",
+      "actor_type": "automated"
+    }
   },
   {
     "id": "pe-curriculo-ei",
@@ -4681,7 +5562,7 @@
       "EM"
     ],
     "components": [
-      "Computação / Educação Digital e Midiática"
+      "Computação"
     ],
     "edition": "2026",
     "document_date": null,
@@ -4798,7 +5679,20 @@
       "REFERÊNCIAS ................................ ................................ ................................ ................. 664",
       "FICHA TÉCNICA ................................ ................................ ................................ ............... 668"
     ],
-    "pdf_pages": 682
+    "pdf_pages": 682,
+    "catalog_topic_label_previous": "Computação / Educação Digital e Midiática",
+    "stage_component_inventory": {
+      "EI": [
+        "Computação"
+      ],
+      "EF": [
+        "Computação"
+      ],
+      "EM": [
+        "Computação"
+      ]
+    },
+    "component_metadata_note": "Rótulo concatenado do catálogo descrevia o tópico Computação/Educação Digital e Midiática, não dois componentes. Faceta Computação corresponde ao componente e aos códigos CO; organização local específica permanece nos títulos e evidências."
   },
   {
     "id": "pe-historia-pernambuco-2026",
@@ -4827,13 +5721,13 @@
     "local_path": "data/raw/PE/pe-historia-pernambuco-2026.pdf",
     "status": "acquired",
     "attempts": [],
-    "inventory_complete": false,
-    "reconciliation_status": "pending",
+    "inventory_complete": true,
+    "reconciliation_status": "automated_documentary_reconciled",
     "reviewer_type": "automated",
     "error": null,
     "bytes": 483583,
     "mandatory": true,
-    "inventory_status": "in_progress",
+    "inventory_status": "complete",
     "allowed_redirect_hosts": [],
     "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais.",
     "pdf_pages": 8,
@@ -4860,7 +5754,17 @@
       "EM": [
         "História de Pernambuco"
       ]
-    }
+    },
+    "inventory_evidence": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "artifact_sha256": "1b7b6c325b74b580697325f1c7af59780799fbdb9582fe98a0dab63a9203a832",
+      "method": "Leitura integral e inventário explícito de estruturas/bullets de8p; denominador independente do outputcodificado.",
+      "inventory_path": "docs/evidence/source-audit-northeast/pe-complete-structure-inventory.json",
+      "verification_path": "docs/evidence/source-audit-northeast/pe-complete-structure-import-check.json",
+      "scope": "Esta fonte específica; não representa completude PE/EM ou revisão humana."
+    },
+    "inventory_scope": "this_artifact_only"
   },
   {
     "id": "ce-dcrc-computacao",
@@ -4875,7 +5779,7 @@
       "EM"
     ],
     "components": [
-      "Computação / Educação Digital e Midiática"
+      "Computação"
     ],
     "edition": "2026",
     "document_date": null,
@@ -5107,13 +6011,26 @@
       ],
       "note": "Physical page count differs from bibliographic pagination due in part to double-page spreads. Neither count alone proves full completeness. Distinguish PDF page from printed page.",
       "actor_type": "automated"
-    }
+    },
+    "catalog_topic_label_previous": "Computação / Educação Digital e Midiática",
+    "stage_component_inventory": {
+      "EI": [
+        "Computação"
+      ],
+      "EF": [
+        "Computação"
+      ],
+      "EM": [
+        "Computação"
+      ]
+    },
+    "component_metadata_note": "Rótulo concatenado do catálogo descrevia o tópico Computação/Educação Digital e Midiática, não dois componentes. Faceta Computação corresponde ao componente e aos códigos CO; organização local específica permanece nos títulos e evidências."
   },
   {
     "id": "ce-resolucao-526-2026",
     "uf": "CE",
     "title": "Resolução CEE nº 526/2026: Diretrizes Complementares BNCC Computação",
-    "issuer": "Secretaria de Estado da Educação de Ceará",
+    "issuer": "Conselho Estadual de Educação do Ceará",
     "official_url": "https://legislacao.cee.ce.gov.br/publicacoes/resolucao-cee-no-5262026-2026/",
     "artifact_url": "https://legislacao.cee.ce.gov.br/media/publicacoes/resolucoes/conselho-estadual-de-educacao/2026/resolucao-cee-526-2026.pdf",
     "stages": [
@@ -5121,7 +6038,9 @@
       "EF",
       "EM"
     ],
-    "components": [],
+    "components": [
+      "Computação"
+    ],
     "edition": "2026",
     "document_date": null,
     "homologation_date": null,
@@ -5145,13 +6064,32 @@
     "inventory_status": "in_progress",
     "allowed_redirect_hosts": [],
     "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais.",
-    "pdf_pages": 4
+    "pdf_pages": 4,
+    "stage_component_inventory": {
+      "EI": [
+        "Computação"
+      ],
+      "EF": [
+        "Computação"
+      ],
+      "EM": [
+        "Computação"
+      ]
+    },
+    "requires_ocr": true,
+    "stage_inventory_evidence": {
+      "page": 1,
+      "section": "Ementa / Arts1–3",
+      "method": "automated_visual_original_page_review",
+      "verification": "Resolução institui diretrizes BNCCComputação integrada àBNCC/DCRC e refere diferentes etapas daeducaçãobásica. PDFdigitalizado: OCR e reconciliação ainda pendentes.",
+      "private_render": "var/private-evidence/source-audit-northeast/ce-res526-p1.png"
+    }
   },
   {
     "id": "al-parecer-27-2026-doe",
     "uf": "AL",
     "title": "Parecer CEE/AL27/2026 e Resolução sobre ReCAL Computação, DOE29/04/2026",
-    "issuer": "Secretaria de Estado da Educação de Alagoas",
+    "issuer": "Conselho Estadual de Educação de Alagoas",
     "official_url": "https://diario.imprensaoficial.al.gov.br/apinova/api/editions/viewPdf/51513",
     "artifact_url": "https://diario.imprensaoficial.al.gov.br/apinova/api/editions/viewPdf/51513",
     "stages": [
@@ -5159,7 +6097,9 @@
       "EF",
       "EM"
     ],
-    "components": [],
+    "components": [
+      "Computação"
+    ],
     "edition": "2026",
     "document_date": null,
     "homologation_date": null,
@@ -5176,7 +6116,7 @@
     "status": "acquired",
     "attempts": [],
     "inventory_complete": false,
-    "reconciliation_status": "pending",
+    "reconciliation_status": "pending_structure_and_transcription_review",
     "reviewer_type": "automated",
     "extraction_pages": [
       34,
@@ -5184,17 +6124,88 @@
       36,
       37
     ],
-    "privacy_note": "Página37 em duas colunas: preservar esquerda [28,50,295,800] e direita [302,50,570,380]. Não cortar texto globalmente no marcadorSEFAZ; isso apagariaartigos11/12àesquerda.",
+    "privacy_note": "Preserve only declared two-column curricular regions of34–37; whole152pageDOE remainsprivate. Fiscal material starts in right column of37belowthe selected region.",
     "error": null,
     "bytes": 5064037,
     "mandatory": true,
     "inventory_status": "in_progress",
     "allowed_redirect_hosts": [],
     "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais.",
-    "include_in_corpus": false,
-    "exclusion_reason": "Ato obrigatório preservado com processamento pendente de suporte à união ordenada de regiões da página37. Não é exclusão definitiva do denominador; marcador linear é inseguro por intercalar colunas curricular e fiscal.",
+    "include_in_corpus": true,
     "pdf_pages": 152,
     "page_regions": [
+      {
+        "page": 34,
+        "regions": [
+          [
+            28,
+            50,
+            295,
+            800
+          ],
+          [
+            302,
+            50,
+            570,
+            800
+          ]
+        ],
+        "reading_order": "as_declared",
+        "coordinate_space": "original_pdf_page",
+        "evidence": {
+          "page": 34,
+          "section": "Parecer27/2026",
+          "verification": "Source two-column reading order. Pages34–36 are curricular acts throughout. Page37 left continues tobottom; right ends atsignature/protocol beforeSEFAZy391.899. Original152pagePDF remainsprivate."
+        }
+      },
+      {
+        "page": 35,
+        "regions": [
+          [
+            28,
+            50,
+            295,
+            800
+          ],
+          [
+            302,
+            50,
+            570,
+            800
+          ]
+        ],
+        "reading_order": "as_declared",
+        "coordinate_space": "original_pdf_page",
+        "evidence": {
+          "page": 35,
+          "section": "Parecer27/2026",
+          "verification": "Source two-column reading order. Pages34–36 are curricular acts throughout. Page37 left continues tobottom; right ends atsignature/protocol beforeSEFAZy391.899. Original152pagePDF remainsprivate."
+        }
+      },
+      {
+        "page": 36,
+        "regions": [
+          [
+            28,
+            50,
+            295,
+            800
+          ],
+          [
+            302,
+            50,
+            570,
+            800
+          ]
+        ],
+        "reading_order": "as_declared",
+        "coordinate_space": "original_pdf_page",
+        "evidence": {
+          "page": 36,
+          "section": "Resolução10/2026",
+          "verification": "Source two-column reading order. Pages34–36 are curricular acts throughout. Page37 left continues tobottom; right ends atsignature/protocol beforeSEFAZy391.899. Original152pagePDF remainsprivate."
+        }
+      },
       {
         "page": 37,
         "regions": [
@@ -5215,11 +6226,24 @@
         "coordinate_space": "original_pdf_page",
         "evidence": {
           "page": 37,
-          "section": "Fim da Resolução10/2026 e início SEFAZ na coluna direita",
-          "verification": "Inspeção visual automatizada: esquerda continua arts8–12 até rodapé; direita arts13–17 e assinatura encerram antes y380; SEFAZ inicia y391.899. Recorte linear pelo marcador perderia artigos da esquerda."
+          "section": "Resolução10/2026",
+          "verification": "Source two-column reading order. Pages34–36 are curricular acts throughout. Page37 left continues tobottom; right ends atsignature/protocol beforeSEFAZy391.899. Original152pagePDF remainsprivate."
         }
       }
-    ]
+    ],
+    "stage_component_inventory": {
+      "EI": [
+        "Computação"
+      ],
+      "EF": [
+        "Computação"
+      ],
+      "EM": [
+        "Computação"
+      ]
+    },
+    "processing_scope": "curated_normative_regions",
+    "extraction_regions_verification": "docs/evidence/source-audit-northeast/al-doe-regions-verification.json"
   },
   {
     "id": "al-recal-computacao",
@@ -5471,8 +6495,8 @@
   {
     "id": "rn-dcec-computacao",
     "uf": "RN",
-    "title": "Diretrizes Curriculares do Ensino de Computação na Educação Básica do Rio Grande do Norte",
-    "issuer": "Secretaria de Estado da Educação de Rio Grande do Norte",
+    "title": "Educação Digital e Midiática: Diretrizes Curriculares do Ensino de Computação na Educação Básica no Rio Grande do Norte",
+    "issuer": "SEEC/RN, UNDIME-RN e UNCME-RN",
     "official_url": "https://antoniomartins-rn.portalsigeduc.com.br/app/public/home.jsf?modo=classico",
     "artifact_url": "https://antoniomartins-rn.portalsigeduc.com.br/app/verProducao?idProducao=10000532&key=42b15752fc3afea405671f8e35e2319f",
     "stages": [
@@ -5480,38 +6504,886 @@
       "EF",
       "EM"
     ],
-    "components": [],
-    "edition": "2025",
+    "components": [
+      "Computação"
+    ],
+    "edition": "2026",
     "document_date": null,
-    "homologation_date": null,
+    "homologation_date": "2025-12-12",
     "application_period": null,
     "document_type": "complemento_curricular",
     "normative_parts": [
-      "Educação Infantil",
-      "Ensino Fundamental",
-      "Ensino Médio"
+      "Histórico e governança / fundamentos / modalidades / formação docente",
+      "Implementação transversal: Educação Infantil",
+      "Implementação transversal: Ensino Fundamental anos iniciais",
+      "Implementação transversal: Ensino Fundamental anos finais por áreas",
+      "Implementação transversal: Ensino Médio por áreas",
+      "Implementação como componente: Ensino Fundamental e EJA",
+      "Anos iniciais e finais: novas habilidades de Computação",
+      "Considerações finais e referências"
     ],
-    "redistribution": "Direitos de terceiros: redistribuição do PDF não estabelecida; snapshot local privado para conferência e processamento.",
-    "collected_at": null,
-    "sha256": null,
-    "local_path": null,
-    "status": "unavailable",
+    "redistribution": "A fonte declara CC BY-NC-ND (versão não especificada), com atribuição, uso não comercial e sem derivações. Imagens têm autorização restrita a fins pedagógicos/institucionais/não comerciais. PDF privado; textos originais não são relicenciados MIT/CC0; condições específicas devem acompanhar qualquer redistribuição. A mudança técnica de formato não foi automaticamente equiparada a adaptação criativa.",
+    "collected_at": "2026-10-28T04:45:00.345113+00:00",
+    "sha256": "886cdd02d96a63c50be00e93faf0fe5a9f7f305a959bd9920bcbdd429be134bd",
+    "local_path": "data/raw/RN/rn-dcec-computacao.pdf",
+    "status": "acquired",
     "attempts": [
       {
         "time": "2026-10-28T03:41:17.492971+00:00",
         "url": "https://antoniomartins-rn.portalsigeduc.com.br/app/verProducao?idProducao=10000532&key=42b15752fc3afea405671f8e35e2319f",
         "http_status": 403,
         "error": "HTTP403 Forbidden"
+      },
+      {
+        "source_id": "rn-dcec-computacao",
+        "at": "2026-10-28T04:44:18.398282+00:00",
+        "url": "https://antoniomartins-rn.portalsigeduc.com.br/app/verProducao?idProducao=10000532&key=42b15752fc3afea405671f8e35e2319f",
+        "method": "Unauthenticated standard HTTP GET, bounded8192byte prefix; no challenge solving/authentication/bypass.",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "prefix_sha256": "0b4f082d1cb3883788538c5b30f8ab56ba80ef83f2b8b51006c0edc9bfd49786",
+        "bytes_sampled": 8192,
+        "is_pdf": true,
+        "challenge_detected": false
+      },
+      {
+        "at": "2026-10-28T04:45:00.345113+00:00",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "url": "https://antoniomartins-rn.portalsigeduc.com.br/app/verProducao?idProducao=10000532&key=42b15752fc3afea405671f8e35e2319f",
+        "final_url": "https://antoniomartins-rn.portalsigeduc.com.br/app/verProducao?idProducao=10000532&key=42b15752fc3afea405671f8e35e2319f",
+        "bytes": 7045290,
+        "sha256": "886cdd02d96a63c50be00e93faf0fe5a9f7f305a959bd9920bcbdd429be134bd",
+        "method": "Unauthenticated public HTTPS GET,45second timeout,100MiB bound,PDFsignature and parser opening checked."
       }
     ],
     "inventory_complete": false,
-    "reconciliation_status": "pending",
+    "reconciliation_status": "pending_documentary_reconciliation",
     "reviewer_type": "automated",
-    "error": "HTTP403 na obtenção do anexo público SIGEduc. Documento e abrangência confirmados pelo portal e PortariaSEI11123/2025, mas sem PDF adquirido. Não foi contornado o bloqueio.",
+    "error": null,
     "mandatory": true,
     "inventory_status": "in_progress",
     "allowed_redirect_hosts": [],
-    "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais."
+    "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais.",
+    "stage_component_inventory": {
+      "EI": [
+        "Computação"
+      ],
+      "EF": [
+        "Computação"
+      ],
+      "EM": [
+        "Computação"
+      ]
+    },
+    "last_access_verification": {
+      "source_id": "rn-dcec-computacao",
+      "at": "2026-10-28T04:44:18.398282+00:00",
+      "url": "https://antoniomartins-rn.portalsigeduc.com.br/app/verProducao?idProducao=10000532&key=42b15752fc3afea405671f8e35e2319f",
+      "method": "Unauthenticated standard HTTP GET, bounded8192byte prefix; no challenge solving/authentication/bypass.",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "prefix_sha256": "0b4f082d1cb3883788538c5b30f8ab56ba80ef83f2b8b51006c0edc9bfd49786",
+      "bytes_sampled": 8192,
+      "is_pdf": true,
+      "challenge_detected": false
+    },
+    "bytes": 7045290,
+    "pdf_pages": 819,
+    "publisher": "União dos Dirigentes Municipais de Educação",
+    "provenance_status": "official_municipal_distribution_chain_verified",
+    "license": {
+      "declared_name": "CC BY-NC-ND",
+      "version": null,
+      "attribution_required": true,
+      "noncommercial": true,
+      "no_derivatives": true,
+      "evidence_page": 6,
+      "evidence_excerpt": "CC BY-NC-ND (Atribuição - NãoComercial - SemDerivações): A mais restritiva. Apenas permite baixar e compartilhar a obra, desde que o crédito seja dado, sem poder alterar de forma alguma ou usar para fins comerciais.",
+      "verification": "Declaração literal da fonte; versão da licença não inferida."
+    },
+    "rights_review_status": "source_specific_restrictions_recorded_preserve_unchanged_text_and_attribution",
+    "provenance_chain": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T04:48:33.713252+00:00",
+      "steps": [
+        {
+          "url": "https://antoniomartins.rn.gov.br/secretarias/secretaria-de-educacao/",
+          "verification": "Página oficial municipal identifica seu Portal SIGEduc e liga expressamente o domínio distribuidor."
+        },
+        {
+          "url": "https://antoniomartins-rn.portalsigeduc.com.br/app/public/home.jsf?modo=classico",
+          "verification": "Portal público municipal contém notícia Documento Curricular Educação Digital e Midiática e link Baixar Anexo para idProducao10000532."
+        },
+        {
+          "url": "https://antoniomartins-rn.portalsigeduc.com.br/app/verProducao?idProducao=10000532&key=42b15752fc3afea405671f8e35e2319f",
+          "verification": "Artefato PDF819p adquirido legitimamente; capa/expediente/CIP declaram DCEC/RN, órgãos colaboradores e edição2026."
+        }
+      ],
+      "snapshots": [
+        {
+          "url": "https://antoniomartins.rn.gov.br/secretarias/secretaria-de-educacao/",
+          "local_path": "data/raw/RN/rn-dcec-municipal-distributor.html",
+          "sha256": "628ce48dc0ad942a4bf4c3b59467dc56c99b6b2cdf2ceab609b1e11cdaf776c4",
+          "bytes": 238990,
+          "contains_official_portal_link": true,
+          "contains_artifact_id": false
+        },
+        {
+          "url": "https://antoniomartins-rn.portalsigeduc.com.br/app/public/home.jsf?modo=classico",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ]
+    },
+    "normative_scope_basis": {
+      "page": 12,
+      "section": "Apresentação",
+      "excerpt": "Este dispositivo complementa os Documentos Curriculares de Referência da Educação Básica publicados pela SEEC/RN, abrangendo tanto os documentos publicados em 2018, referentes às etapas da Educação Infantil e do Ensino Fundamental (anos iniciais e anos finais), quanto o documento publicado em 2021, correspondente a etapa do Ensino Médio e suas modalidades.",
+      "verification": "Documento declara complementar referenciaisEI/EF2018 eEM2021. PortariaSEI11123/2025/Parecer160/2025 citados na apresentação; não se presume adoção universal municipal.",
+      "actor_type": "automated"
+    },
+    "homologation_evidence": {
+      "page": 12,
+      "section": "Apresentação",
+      "declared_normative_act_url": "https://webdisk.diariooficial.rn.gov.br/Jornal/12025-12-13.pdf",
+      "note": "Data da Portaria12/12/2025 declarada pelo documento e ato oficial localizado; edição editorial2026 é fato distinto."
+    },
+    "inventory_evidence": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "method": "Capa, expediente, CIP, apresentação e sumário integral7–11PDF lidos diretamente. Nenhum contador de códigos foi usado como denominador de aprendizagens.",
+      "index_pages": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "printed_pagination_note": "Sumário refere páginas editoriais até1528; PDF possui819folhas físicas,714duplas. Não confundir índices impressos com índicesPDF nem declararcompletude porcontagem.",
+      "expected_structure_excerpt": "SUMÁRIO\nAPRESENTAÇÃO .  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   11\n1.\t HISTÓRICO E GOVERNANÇA .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . 14\n1.1 \u0007ORGANIZAÇÃO DA GOVERNANÇA DA  \nCOMPUTAÇÃO NA REDE ESTADUAL DO RN .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  16\n1.2 ORGANIZAÇÃO DA GOVERNANÇA DA COMPUTAÇÃO NA UNDIME/RN .   .   .   .   17\n1.3 IDENTIDADE DA REDE ESTADUAL E MUNICIPAIS DE EDUCAÇÃO .  .   .  .   .  .  .  . 19\n1.3.1 Histórico em Tecnologias na Educação .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  . 19\n1.4 INFRAESTRUTURA .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  21\n1.4.1. Rede Estadual .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  . 21\n1.4.2 Redes Municipais .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  . 23\n1.5 FORMATOS DE OFERTA .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  . 25\n2.\t PARA INÍCIO DE CONVERSA  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . 27\n2.1 POR QUE E COMO ENSINAR COMPUTAÇÃO NA EDUCAÇÃO BÁSICA? .   .   .   .   .  28\n2.2 FORMATO DE IMPLEMENTAÇÃO .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  35\n3.\t COMPETÊNCIAS E HABILIDADES DA COMPUTAÇÃO .   . 37\n4.\t MODALIDADES DE ENSINO .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   39\n4.1 EDUCAÇÃO DO CAMPO, QUILOMBOLA E INDÍGENA: MARCOS LEGAIS, \nPRINCÍPIOS E DESAFIOS NA ERA DIGITAL .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  . 39\n4.2 EDUCAÇÃO ESPECIAL INCLUSIVA .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  . 41\n(a) No âmbito nacional  .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  . 42\n(b) No Rio Grande do Norte .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  . 42\n4.3 EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA  .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  . 45\n4.4 EDUCAÇÃO DE JOVENS E ADULTOS .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  47\n4.5 MODALIDADES DE ENSINO NAS REDES MUNICIPAIS DE ENSINO .  .   .  .   .  .  . 50\n\n5.\t FORMAÇÃO DOCENTE .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   51\n5.1. REDE ESTADUAL .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   51\n5.2 REDES MUNICIPAIS .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  . 52\n6.\t IMPLEMENTAÇÃO DE FORMA TRANSVERSAL  .   .   .   .   .   55\nETAPA DA EDUCAÇÃO INFANTIL .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  . 56\nEducação Infantil .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  61\nENSINO FUNDAMENTAL ANOS INICIAIS .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  . 77\n1º Ano  .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  .  . 78\n2º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 110\n3º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 140\n4º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  .  172\n5º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 204\n1º ao 5º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  . 258\nLINGUAGENS ENSINO FUNDAMENTAL ANOS FINAIS .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  . 300\n6º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 301\n7º Ano  .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 319\n8º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 337\n9º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 375\n6º ao 9º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  411\nMATEMÁTICA ENSINO FUNDAMENTAL ANOS FINAIS .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  . 442\n6º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 443\n7º Ano  .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 477\n8º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 507\n9º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 543\n6º ao 9º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  . 567\nCIÊNCIAS HUMANAS ENSINO FUNDAMENTAL ANOS FINAIS .   .   .   .   .   .   .   .   .   .   .  608\n6º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 609\n7º Ano  .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 629\n8º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 661\n9º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 689\n6º ao 9º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  711\n\nCIÊNCIAS DA NATUREZA ENSINO FUNDAMENTAL ANOS FINAIS  .  .   .  .   .  .   .  .  . 718\n6º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 719\n7º Ano  .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 739\n8º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 763\n9º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 785\n6º ao 9º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  . 805\nENSINO MÉDIO LINGUAGENS .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  847\n1ª a 3ª Série .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   848\nENSINO MÉDIO MATEMÁTICA .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  . 912\n1ª a 3ª Série .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   913\nENSINO MÉDIO CIÊNCIAS HUMANAS E SOCIAIS APLICADAS  .  .   .  .   .  .   .  .  .  .  . 951\n1ª a 3ª Série .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   953\nENSINO MÉDIO CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS .   .   .   .   .   .   .   .  1005\n1ª a 3ª Série .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . 1007\n7.\t IMPLEMENTAÇÃO COMO COMPONENTE CURRICULAR .  .  . 1059\nCOMPETÊNCIAS DA BNCC COMPUTAÇÃO  .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  . 1060\nA ESTRUTURA DO CURRÍCULO: EIXOS FORMATIVOS .   .   .   .   .   .   .   .   .   .   .   .   .   .   . 1062\nORGANIZAÇÃO DO DOCUMENTO .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  1063\n1. Quadro separado por ano (1º ao 5º ano individualmente) .  .   .  .   .  .  .  1063\n2. Quadro único com todas as habilidades do 1º ao 5º ano juntos .  .   .  1064\nREFLEXÕES TEÓRICO-METODOLÓGICAS .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . 1065\nAVALIAÇÃO  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   1068\nFORMAÇÃO CONTINUADA DOS PROFESSORES .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  1069\nATUALIZAÇÃO DOS PROJETOS POLÍTICOS PEDAGÓGICOS  .  .   .  .   .  .   .  .  .  .  .  1070\nENSINO FUNDAMENTAL ANOS INICIAIS .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  1072\n1º Ano  .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  1073\n2º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  1087\n3º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 1101\n4º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  1126\n5º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 1151\n1º ao 5º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  . 1187\n\nENSINO FUNDAMENTAL ANOS FINAIS .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  1240\n6º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  1242\n7º Ano  .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  1263\n8º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  1297\n9º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 1327\n6º ao 9º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  1353\nEDUCAÇÃO DE JOVENS E ADULTOS (EJA) .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . 1388\nNível 1 e 2 .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 1391\nNível 3 e 4 .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  .  . 1415\nANOS INICIAIS E FINAIS COMPUTAÇÃO NOVAS HABILIDADES  .   .   .   .   .   .   .   .   .   1436\n1º ao 5º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  1437\n6º ao 9º Ano .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  .  .  .  .  1485\n8.\t CONSIDERAÇÕES FINAIS  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . 1525\nREFERÊNCIAS .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  1527\nEnsino Infantil .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  1527\nEnsino Fundamental e Médio .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .   .  .  .  .  .  .  .  .  1528\n\n"
+    },
+    "physical_layout": {
+      "pdf_pages": 819,
+      "double_width_page_count": 714,
+      "double_width_pages": [
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519,
+        520,
+        521,
+        522,
+        523,
+        524,
+        525,
+        526,
+        527,
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        582,
+        583,
+        584,
+        585,
+        586,
+        587,
+        588,
+        589,
+        590,
+        591,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612,
+        613,
+        614,
+        615,
+        616,
+        617,
+        618,
+        619,
+        620,
+        621,
+        622,
+        623,
+        624,
+        625,
+        626,
+        627,
+        628,
+        629,
+        630,
+        631,
+        632,
+        633,
+        634,
+        635,
+        636,
+        637,
+        638,
+        639,
+        640,
+        641,
+        642,
+        643,
+        644,
+        645,
+        646,
+        647,
+        648,
+        649,
+        650,
+        651,
+        652,
+        653,
+        654,
+        655,
+        656,
+        657,
+        658,
+        659,
+        660,
+        661,
+        662,
+        663,
+        664,
+        667,
+        668,
+        669,
+        670,
+        671,
+        672,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        681,
+        682,
+        683,
+        684,
+        685,
+        686,
+        687,
+        688,
+        689,
+        690,
+        691,
+        692,
+        693,
+        694,
+        695,
+        696,
+        697,
+        698,
+        699,
+        700,
+        701,
+        702,
+        703,
+        704,
+        705,
+        706,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712,
+        713,
+        714,
+        715,
+        716,
+        717,
+        718,
+        719,
+        720,
+        721,
+        722,
+        723,
+        724,
+        725,
+        726,
+        727,
+        728,
+        729,
+        730,
+        731,
+        732,
+        733,
+        734,
+        735,
+        736,
+        737,
+        738,
+        739,
+        744,
+        745,
+        746,
+        747,
+        748,
+        749,
+        750,
+        751,
+        752,
+        753,
+        754,
+        755,
+        756,
+        757,
+        758,
+        759,
+        760,
+        761,
+        762,
+        763,
+        764,
+        765,
+        768,
+        769,
+        770,
+        771,
+        772,
+        773,
+        774,
+        775,
+        776,
+        777,
+        778,
+        779,
+        780,
+        781,
+        782,
+        783,
+        784,
+        785,
+        786,
+        787,
+        788,
+        789,
+        790,
+        791,
+        792,
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799,
+        800,
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807,
+        808,
+        809,
+        810,
+        811
+      ],
+      "note": "Pranchas duplas exigem localizar página impressa separadamente; distribuição física não prova reconciliação."
+    }
   },
   {
     "id": "rn-estrutura-em-2026-diurno",
@@ -7359,6 +9231,93 @@
       "official_catalog_label": "CADERNOS PEDAGÓGICOS DE PROJETO DE VIDA",
       "decision": "Material oficial de apoio com objetivos próprios, mantido opcional. Presença de habilidades não prova autoridade normativa.",
       "reconsider_if": "Ato, referencial ou declaração emissora demonstrar adoção, indispensabilidade ou integração como parte do currículo selecionado."
+    }
+  },
+  {
+    "id": "rn-portaria-11123-2025",
+    "uf": "RN",
+    "title": "Portaria-SEI11123/2025: homologação das Diretrizes Curriculares do Ensino de Computação do RN",
+    "issuer": "Secretaria de Estado da Educação, do Esporte e do Lazer do Rio Grande do Norte",
+    "official_url": "https://webdisk.diariooficial.rn.gov.br/Jornal/12025-12-13.pdf",
+    "artifact_url": "https://webdisk.diariooficial.rn.gov.br/Jornal/12025-12-13.pdf",
+    "stages": [
+      "EI",
+      "EF",
+      "EM"
+    ],
+    "components": [
+      "Computação"
+    ],
+    "stage_component_inventory": {
+      "EI": [
+        "Computação"
+      ],
+      "EF": [
+        "Computação"
+      ],
+      "EM": [
+        "Computação"
+      ]
+    },
+    "edition": "2025",
+    "document_date": "2025-12-12",
+    "homologation_date": "2025-12-12",
+    "publication_date": "2025-12-13",
+    "application_period": null,
+    "document_type": "ato_normativo",
+    "normative_parts": [
+      "Portaria-SEI11123/2025 integral"
+    ],
+    "redistribution": "Texto de ato normativo oficial; documento diário completo preservado privado e matérias alheias excluídas do recorte curricular. Nenhuma relicença de imagens/diagramação/atos de terceiros é presumida.",
+    "collected_at": "2026-10-28T04:52:15.234050+00:00",
+    "sha256": "8e8a23b5e500d1ac4aae981c64bd2b6ec8f20e939f4b260701741e90ae5af8b9",
+    "local_path": "data/raw/RN/rn-portaria-11123-2025-doe.pdf",
+    "status": "acquired",
+    "bytes": 6743853,
+    "pdf_pages": 57,
+    "mandatory": true,
+    "include_in_corpus": true,
+    "inventory_complete": true,
+    "inventory_status": "complete",
+    "reconciliation_status": "automated_documentary_reconciled",
+    "reviewer_type": "automated",
+    "error": null,
+    "attempts": [
+      {
+        "at": "2026-10-28T04:52:15.234050+00:00",
+        "method": "Public HTTPS PDF acquired,57pages opened and SHA256 checked. Only act region page21 enters corpus."
+      }
+    ],
+    "extraction_pages": [
+      21
+    ],
+    "page_regions": [
+      {
+        "page": 21,
+        "regions": [
+          [
+            28,
+            560,
+            395,
+            800
+          ]
+        ],
+        "reading_order": "as_declared",
+        "coordinate_space": "original_pdf_page",
+        "evidence": {
+          "section": "Portaria11123 startsy563.484,endssignaturey796.168",
+          "verification": "Original PDF visually reviewed. The previous disciplinary act endsy554.964 and next UERN headingstartsy811.817; adjacent DOE columns and employee records are outside the declared region."
+        }
+      }
+    ],
+    "uncoded_items_path": "data/manifests/uncoded/rn-portaria-11123-items.json",
+    "jurisdiction_scope": "Homologação estadual. O parecer recomenda adesão municipal formalizada com anuência do Conselho Municipal de Educação; não se presume adoção universal.",
+    "inventory_scope": "this_act_region_only",
+    "inventory_evidence": {
+      "actor_type": "automated",
+      "inventory_path": "docs/evidence/source-audit-northeast/rn-portaria11123-inventory.json",
+      "verification_path": "docs/evidence/source-audit-northeast/rn-portaria11123-verification.json",
+      "scope": "12partes do ato integral; demais56páginasDOE eoutrosatos da mesma21foraescopocurricular."
     }
   }
 ]

@@ -1,0 +1,50 @@
+--- a/pipeline/ingest.py
++++ b/pipeline/ingest.py
+@@ -183,7 +183,7 @@
+     if local_df:
+         return {'stage':'EM','component':'Língua Portuguesa' if local_df[1]=='LP' else None,'area':{'LP':'Linguagens e suas Tecnologias','LGG':'Linguagens e suas Tecnologias','CHSA':'Ciências Humanas e Sociais Aplicadas','MAT':'Matemática e suas Tecnologias','CN':'Ciências da Natureza e suas Tecnologias','EPT':'Educação Profissional e Técnica'}.get(local_df[1]),'years':None,'year_label':None,'age_group':None,'period':None,'position_origin':'document_local_code','position_note':'Código próprio do Currículo em Movimento; FG/IF preservados, sem relação BNCC inferida.'}
+     go_local=re.fullmatch(r'(?:GO[-.]?)?EM(LGG|MAT|CNT|CHS|LP|CH)\d{2,3}[-.]?[A-Z]?',re.sub(r'\s+','',code))
+-    if go_local:return {'stage':'EM','component':None,'area':COMPONENTS.get(go_local[1]),'years':None,'year_label':None,'age_group':None,'period':None,'position_origin':'source_local_code_context','position_note':'Objetivo próprio de Goiás sem código nacional atribuído por transformação.'}
++    if go_local:return {'stage':'EM','component':'Língua Portuguesa' if go_local[1]=='LP' else None,'area':'Linguagens e suas Tecnologias' if go_local[1]=='LP' else COMPONENTS.get(go_local[1]),'years':None,'year_label':None,'age_group':None,'period':None,'position_origin':'source_local_code_context','position_note':'Objetivo próprio de Goiás sem código nacional atribuído por transformação.'}
+     match = NATIONAL_BASE.search(code)
+     if not match:
+         stage_match=re.search(r'(?:^|[-. \t\n])(EI|EF|EM)',code)
+@@ -218,13 +218,13 @@
+     return re.sub(r'[ \t]+', ' ', re.sub(r'\s*\n\s*', ' ', re.sub(r'\u00ad\s*', '', text))).strip()
+ 
+ 
+-def candidates_from_cell(cell, next_cell=None, source=None):
++def candidates_from_cell(cell, next_cell=None, source=None, cell_header=None):
+     matches=[]
+     for match in CODE_ANY.finditer(cell):
+         # A citation in the middle of a sentence is not a new coded objective.
+         prefix=cell[:match.start()]
+         line_prefix=prefix.rsplit('\n',1)[-1].strip()
+-        local_go_goal=(source or {}).get('id')=='go-dcgoem-portal-atual' and re.match(r'GO(?:[-.]\s*|\s+)EM',match.group()) and prefix.rstrip().endswith('(') and cell[match.end():].lstrip().startswith(')')
++        local_go_goal=(source or {}).get('id')=='go-dcgoem-portal-atual' and (re.match(r'GO(?:[-.]\s*|\s+)EM',match.group()) or (match.group().startswith('EMIF') and re.match(r'^Habilidades?(?:$|\s)',cell_header or '',re.IGNORECASE))) and prefix.rstrip().endswith('(') and cell[match.end():].lstrip().startswith(')')
+         if not local_go_goal and line_prefix not in ('','(','[','•','-') and not re.match(r'^Habilidades?\b.*:\s*\(*$',line_prefix,re.IGNORECASE):continue
+         matches.append(match)
+     found=[]
+@@ -420,7 +420,7 @@
+                                 previous['cross_page_continuation']=True
+                                 if re.search(r'[.!?;:][)\"”]*$',fragment):previous['extraction_flags']=[flag for flag in previous.get('extraction_flags',[]) if flag not in ('possible_page_continuation','code_only_waiting_page_continuation')]
+                                 open_cells.pop(column_key,None)
+-                            cell_candidates=candidates_from_cell(value, following, source)
++                            cell_candidates=candidates_from_cell(value, following, source, cell_header=column_headers.get(cell_index))
+                             code_matches=list(CODE_ANY.finditer(value))
+                             if cell_index in learning_columns and code_matches and not value[code_matches[-1].end():].strip(' ()[]\n\t.;:'):
+                                 trailing=[];previous_end=0
+--- a/pipeline/geometry.py
++++ b/pipeline/geometry.py
+@@ -79,7 +79,10 @@
+         center=((word['x0']+word['x1'])/2,(word['top']+word['bottom'])/2)
+         represented=False
+         for item in existing:
+-            if not item.get('code') or not item['code'].startswith(code):continue
++            item_code=re.sub(r'\s+','',item.get('code') or '')
++            word_code=re.sub(r'\s+','',code)
++            go_wrapped_equivalent=source.get('id')=='go-dcgoem-portal-atual' and item_code.startswith('GO') and item_code[2:].lstrip('-.')==word_code
++            if not item_code or not (item_code.startswith(word_code) or go_wrapped_equivalent):continue
+             bbox=item['evidence'][0].get('bbox')
+             if bbox and bbox[0]-2<=center[0]<=bbox[2]+2 and bbox[1]-2<=center[1]<=bbox[3]+2:
+                 represented=True;break

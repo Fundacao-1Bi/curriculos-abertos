@@ -1,0 +1,769 @@
+{
+  "config": {
+    "argv": [
+      "/opt/homebrew/Cellar/node/25.2.1/bin/node",
+      "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/playwright.config.ts",
+    "rootDir": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "product.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "product.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop",
+        "testDir": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests",
+        "snapshotDir": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests",
+        "testIgnore": [],
+        "testMatch": "product.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://localhost:3000",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "mobile",
+        "testDir": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests",
+        "snapshotDir": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests",
+        "testIgnore": [],
+        "testMatch": "product.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://localhost:3000",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1",
+          "viewport": {
+            "width": 390,
+            "height": 664
+          },
+          "screen": {
+            "width": 390,
+            "height": 844
+          },
+          "deviceScaleFactor": 3,
+          "isMobile": true,
+          "hasTouch": true,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "docs/evidence/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "product.spec.ts",
+      "file": "product.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-77fb8076598b567e1ba3"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6611,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:3000/\u001b[7mbuscar?q=CHSA01FG&\u001b[27mpublication=ca-77fb8076598b567e1ba3\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:3000/\u001b[7m?\u001b[27mpublication=ca-77fb8076598b567e1ba3\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    - waiting for \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\"\u001b[22m\n\u001b[2m    14 × locator resolved to <html lang=\"pt-BR\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:3000/\u001b[7mbuscar?q=CHSA01FG&\u001b[27mpublication=ca-77fb8076598b567e1ba3\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:3000/\u001b[7m?\u001b[27mpublication=ca-77fb8076598b567e1ba3\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    - waiting for \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\"\u001b[22m\n\u001b[2m    14 × locator resolved to <html lang=\"pt-BR\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\"\u001b[22m\n\n    at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:19:41",
+                    "location": {
+                      "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                      "column": 41,
+                      "line": 19
+                    },
+                    "snippet": "  17 |  const searchUrl=page.url();await page.locator('.learning-list a').first().click();\n  18 |  await expect(page.locator('h1')).toBeVisible();await expect(page.getByText(item.text,{exact:false}).first()).toBeVisible();\n> 19 |  await page.goBack();await expect(page).toHaveURL(searchUrl);\n     |                                         ^\n  20 |  await page.goto('/fontes?publication='+encodeURIComponent(found.publication));await expect(page.locator('main')).toContainText(/Fonte|fonte/);\n  21 |  await page.goto('/comparar?uf=SP&publication='+encodeURIComponent(found.publication));\n  22 |  await expect(page.locator('h1')).toBeVisible();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                        "column": 41,
+                        "line": 19
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:3000/\u001b[7mbuscar?q=CHSA01FG&\u001b[27mpublication=ca-77fb8076598b567e1ba3\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:3000/\u001b[7m?\u001b[27mpublication=ca-77fb8076598b567e1ba3\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    - waiting for \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\"\u001b[22m\n\u001b[2m    14 × locator resolved to <html lang=\"pt-BR\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\"\u001b[22m\n\n\n  17 |  const searchUrl=page.url();await page.locator('.learning-list a').first().click();\n  18 |  await expect(page.locator('h1')).toBeVisible();await expect(page.getByText(item.text,{exact:false}).first()).toBeVisible();\n> 19 |  await page.goBack();await expect(page).toHaveURL(searchUrl);\n     |                                         ^\n  20 |  await page.goto('/fontes?publication='+encodeURIComponent(found.publication));await expect(page.locator('main')).toContainText(/Fonte|fonte/);\n  21 |  await page.goto('/comparar?uf=SP&publication='+encodeURIComponent(found.publication));\n  22 |  await expect(page.locator('h1')).toBeVisible();\n    at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:19:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T05:39:49.370Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-77fb8076598b567e1ba3"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-desktop/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-desktop/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-desktop/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                    "column": 41,
+                    "line": 19
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-ae3ed8571cbad8afac32",
+          "file": "product.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "busca vazia, código local, panorama nacional e contribuição persistida",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-77fb8076598b567e1ba3"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1180,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T05:39:56.531Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-77fb8076598b567e1ba3"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-33faabc29c3535b8ddce",
+          "file": "product.spec.ts",
+          "line": 44,
+          "column": 1
+        },
+        {
+          "title": "J01 nacional: cada UF expõe registros reais e fontes na mesma publicação",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-77fb8076598b567e1ba3"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1584,
+                  "error": {
+                    "message": "Error: AM precisa registros reais, não apenas cadastro\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                    "stack": "Error: AM precisa registros reais, não apenas cadastro\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:66:84",
+                    "location": {
+                      "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                      "column": 84,
+                      "line": 66
+                    },
+                    "snippet": "  64 |   const response=await request.get('/api/v1/aprendizagens?uf='+uf.uf+'&limit=1&publication='+encodeURIComponent(catalog.publication));\n  65 |   expect(response.ok()).toBeTruthy();const result=await response.json();\n> 66 |   expect(result.data.length,uf.uf+' precisa registros reais, não apenas cadastro').toBeGreaterThan(0);\n     |                                                                                    ^\n  67 |   const item=result.data[0];expect(item.evidence.length).toBeGreaterThan(0);expect(item.uf).toBe(uf.uf);\n  68 |   await page.goto('/ufs/'+uf.uf+'?publication='+encodeURIComponent(catalog.publication));\n  69 |   await expect(page.locator('main')).toContainText(uf.name);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                        "column": 84,
+                        "line": 66
+                      },
+                      "message": "Error: AM precisa registros reais, não apenas cadastro\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  64 |   const response=await request.get('/api/v1/aprendizagens?uf='+uf.uf+'&limit=1&publication='+encodeURIComponent(catalog.publication));\n  65 |   expect(response.ok()).toBeTruthy();const result=await response.json();\n> 66 |   expect(result.data.length,uf.uf+' precisa registros reais, não apenas cadastro').toBeGreaterThan(0);\n     |                                                                                    ^\n  67 |   const item=result.data[0];expect(item.evidence.length).toBeGreaterThan(0);expect(item.uf).toBe(uf.uf);\n  68 |   await page.goto('/ufs/'+uf.uf+'?publication='+encodeURIComponent(catalog.publication));\n  69 |   await expect(page.locator('main')).toContainText(uf.name);\n    at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:66:84"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T05:39:57.811Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-77fb8076598b567e1ba3"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-J01-nacional-cada--f135b--fontes-na-mesma-publicação-desktop/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-J01-nacional-cada--f135b--fontes-na-mesma-publicação-desktop/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-J01-nacional-cada--f135b--fontes-na-mesma-publicação-desktop/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                    "column": 84,
+                    "line": 66
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-91294337bb68163e41bb",
+          "file": "product.spec.ts",
+          "line": 60,
+          "column": 1
+        },
+        {
+          "title": "J01 estrutura documental: navegar até filhos e evidência sem conhecer código",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-77fb8076598b567e1ba3"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 190,
+                  "error": {
+                    "message": "Error: Hierarquia original com nós sem código e filhos documentados necessária\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mundefined\u001b[39m",
+                    "stack": "Error: Hierarquia original com nós sem código e filhos documentados necessária\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mundefined\u001b[39m\n    at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:86:93",
+                    "location": {
+                      "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                      "column": 93,
+                      "line": 86
+                    },
+                    "snippet": "  84 |   if(node){selected={curriculum:curriculum.id,node};break;}\n  85 |  }\n> 86 |  expect(selected,'Hierarquia original com nós sem código e filhos documentados necessária').toBeDefined();\n     |                                                                                             ^\n  87 |  const {curriculum,node}=selected!;\n  88 |  await page.goto('/curriculos/'+encodeURIComponent(curriculum)+'?publication='+encodeURIComponent(catalog.publication));\n  89 |  await page.getByRole('searchbox',{name:'Buscar na estrutura'}).fill(node.text);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                        "column": 93,
+                        "line": 86
+                      },
+                      "message": "Error: Hierarquia original com nós sem código e filhos documentados necessária\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mundefined\u001b[39m\n\n  84 |   if(node){selected={curriculum:curriculum.id,node};break;}\n  85 |  }\n> 86 |  expect(selected,'Hierarquia original com nós sem código e filhos documentados necessária').toBeDefined();\n     |                                                                                             ^\n  87 |  const {curriculum,node}=selected!;\n  88 |  await page.goto('/curriculos/'+encodeURIComponent(curriculum)+'?publication='+encodeURIComponent(catalog.publication));\n  89 |  await page.getByRole('searchbox',{name:'Buscar na estrutura'}).fill(node.text);\n    at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:86:93"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T05:39:59.783Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-77fb8076598b567e1ba3"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-J01-estrutura-docu-1b2f6-idência-sem-conhecer-código-desktop/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-J01-estrutura-docu-1b2f6-idência-sem-conhecer-código-desktop/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-J01-estrutura-docu-1b2f6-idência-sem-conhecer-código-desktop/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                    "column": 93,
+                    "line": 86
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-642fa690a30614eb314b",
+          "file": "product.spec.ts",
+          "line": 76,
+          "column": 1
+        },
+        {
+          "title": "consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-77fb8076598b567e1ba3"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6513,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:3000/\u001b[7mbuscar?q=CHSA01FG&\u001b[27mpublication=ca-77fb8076598b567e1ba3\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:3000/\u001b[7m?\u001b[27mpublication=ca-77fb8076598b567e1ba3\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    - waiting for \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\"\u001b[22m\n\u001b[2m    13 × locator resolved to <html lang=\"pt-BR\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:3000/\u001b[7mbuscar?q=CHSA01FG&\u001b[27mpublication=ca-77fb8076598b567e1ba3\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:3000/\u001b[7m?\u001b[27mpublication=ca-77fb8076598b567e1ba3\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    - waiting for \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\"\u001b[22m\n\u001b[2m    13 × locator resolved to <html lang=\"pt-BR\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\"\u001b[22m\n\n    at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:19:41",
+                    "location": {
+                      "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                      "column": 41,
+                      "line": 19
+                    },
+                    "snippet": "  17 |  const searchUrl=page.url();await page.locator('.learning-list a').first().click();\n  18 |  await expect(page.locator('h1')).toBeVisible();await expect(page.getByText(item.text,{exact:false}).first()).toBeVisible();\n> 19 |  await page.goBack();await expect(page).toHaveURL(searchUrl);\n     |                                         ^\n  20 |  await page.goto('/fontes?publication='+encodeURIComponent(found.publication));await expect(page.locator('main')).toContainText(/Fonte|fonte/);\n  21 |  await page.goto('/comparar?uf=SP&publication='+encodeURIComponent(found.publication));\n  22 |  await expect(page.locator('h1')).toBeVisible();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                        "column": 41,
+                        "line": 19
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:3000/\u001b[7mbuscar?q=CHSA01FG&\u001b[27mpublication=ca-77fb8076598b567e1ba3\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:3000/\u001b[7m?\u001b[27mpublication=ca-77fb8076598b567e1ba3\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    - waiting for \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\" navigation to finish...\u001b[22m\n\u001b[2m    - navigated to \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\"\u001b[22m\n\u001b[2m    13 × locator resolved to <html lang=\"pt-BR\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:3000/?publication=ca-77fb8076598b567e1ba3\"\u001b[22m\n\n\n  17 |  const searchUrl=page.url();await page.locator('.learning-list a').first().click();\n  18 |  await expect(page.locator('h1')).toBeVisible();await expect(page.getByText(item.text,{exact:false}).first()).toBeVisible();\n> 19 |  await page.goBack();await expect(page).toHaveURL(searchUrl);\n     |                                         ^\n  20 |  await page.goto('/fontes?publication='+encodeURIComponent(found.publication));await expect(page.locator('main')).toContainText(/Fonte|fonte/);\n  21 |  await page.goto('/comparar?uf=SP&publication='+encodeURIComponent(found.publication));\n  22 |  await expect(page.locator('h1')).toBeVisible();\n    at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:19:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T05:40:00.420Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-77fb8076598b567e1ba3"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-mobile/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-mobile/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-mobile/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                    "column": 41,
+                    "line": 19
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-65017dbf7e1a70ac5d21",
+          "file": "product.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "busca vazia, código local, panorama nacional e contribuição persistida",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-77fb8076598b567e1ba3"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1668,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T05:40:07.411Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-77fb8076598b567e1ba3"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-c810bf864211c3546938",
+          "file": "product.spec.ts",
+          "line": 44,
+          "column": 1
+        },
+        {
+          "title": "J01 nacional: cada UF expõe registros reais e fontes na mesma publicação",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-77fb8076598b567e1ba3"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1574,
+                  "error": {
+                    "message": "Error: AM precisa registros reais, não apenas cadastro\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                    "stack": "Error: AM precisa registros reais, não apenas cadastro\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:66:84",
+                    "location": {
+                      "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                      "column": 84,
+                      "line": 66
+                    },
+                    "snippet": "  64 |   const response=await request.get('/api/v1/aprendizagens?uf='+uf.uf+'&limit=1&publication='+encodeURIComponent(catalog.publication));\n  65 |   expect(response.ok()).toBeTruthy();const result=await response.json();\n> 66 |   expect(result.data.length,uf.uf+' precisa registros reais, não apenas cadastro').toBeGreaterThan(0);\n     |                                                                                    ^\n  67 |   const item=result.data[0];expect(item.evidence.length).toBeGreaterThan(0);expect(item.uf).toBe(uf.uf);\n  68 |   await page.goto('/ufs/'+uf.uf+'?publication='+encodeURIComponent(catalog.publication));\n  69 |   await expect(page.locator('main')).toContainText(uf.name);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                        "column": 84,
+                        "line": 66
+                      },
+                      "message": "Error: AM precisa registros reais, não apenas cadastro\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  64 |   const response=await request.get('/api/v1/aprendizagens?uf='+uf.uf+'&limit=1&publication='+encodeURIComponent(catalog.publication));\n  65 |   expect(response.ok()).toBeTruthy();const result=await response.json();\n> 66 |   expect(result.data.length,uf.uf+' precisa registros reais, não apenas cadastro').toBeGreaterThan(0);\n     |                                                                                    ^\n  67 |   const item=result.data[0];expect(item.evidence.length).toBeGreaterThan(0);expect(item.uf).toBe(uf.uf);\n  68 |   await page.goto('/ufs/'+uf.uf+'?publication='+encodeURIComponent(catalog.publication));\n  69 |   await expect(page.locator('main')).toContainText(uf.name);\n    at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:66:84"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T05:40:09.181Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-77fb8076598b567e1ba3"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-J01-nacional-cada--f135b--fontes-na-mesma-publicação-mobile/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-J01-nacional-cada--f135b--fontes-na-mesma-publicação-mobile/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-J01-nacional-cada--f135b--fontes-na-mesma-publicação-mobile/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                    "column": 84,
+                    "line": 66
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-e609a9c021ed0dfdc965",
+          "file": "product.spec.ts",
+          "line": 60,
+          "column": 1
+        },
+        {
+          "title": "J01 estrutura documental: navegar até filhos e evidência sem conhecer código",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-77fb8076598b567e1ba3"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 208,
+                  "error": {
+                    "message": "Error: Hierarquia original com nós sem código e filhos documentados necessária\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mundefined\u001b[39m",
+                    "stack": "Error: Hierarquia original com nós sem código e filhos documentados necessária\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mundefined\u001b[39m\n    at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:86:93",
+                    "location": {
+                      "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                      "column": 93,
+                      "line": 86
+                    },
+                    "snippet": "  84 |   if(node){selected={curriculum:curriculum.id,node};break;}\n  85 |  }\n> 86 |  expect(selected,'Hierarquia original com nós sem código e filhos documentados necessária').toBeDefined();\n     |                                                                                             ^\n  87 |  const {curriculum,node}=selected!;\n  88 |  await page.goto('/curriculos/'+encodeURIComponent(curriculum)+'?publication='+encodeURIComponent(catalog.publication));\n  89 |  await page.getByRole('searchbox',{name:'Buscar na estrutura'}).fill(node.text);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                        "column": 93,
+                        "line": 86
+                      },
+                      "message": "Error: Hierarquia original com nós sem código e filhos documentados necessária\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mundefined\u001b[39m\n\n  84 |   if(node){selected={curriculum:curriculum.id,node};break;}\n  85 |  }\n> 86 |  expect(selected,'Hierarquia original com nós sem código e filhos documentados necessária').toBeDefined();\n     |                                                                                             ^\n  87 |  const {curriculum,node}=selected!;\n  88 |  await page.goto('/curriculos/'+encodeURIComponent(curriculum)+'?publication='+encodeURIComponent(catalog.publication));\n  89 |  await page.getByRole('searchbox',{name:'Buscar na estrutura'}).fill(node.text);\n    at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:86:93"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-28T05:40:11.152Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-77fb8076598b567e1ba3"
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-J01-estrutura-docu-1b2f6-idência-sem-conhecer-código-mobile/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-J01-estrutura-docu-1b2f6-idência-sem-conhecer-código-mobile/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/test-results/product-J01-estrutura-docu-1b2f6-idência-sem-conhecer-código-mobile/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts",
+                    "column": 93,
+                    "line": 86
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-e0443cae904d54de8a7e",
+          "file": "product.spec.ts",
+          "line": 76,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-28T05:39:48.884Z",
+    "duration": 22604.213,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 6,
+    "flaky": 0
+  }
+}

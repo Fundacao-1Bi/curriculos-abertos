@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "command": [
+    "docker",
+    "compose",
+    "--progress",
+    "plain",
+    "build",
+    "app"
+  ],
+  "completed_at": "2026-10-28T13:45:26.724Z",
+  "exit_code": 0,
+  "method": "standard-docker-compose-build",
+  "image": "curriculos-abertos:local",
+  "image_id": "sha256:acd1b70caff6453a0f5ba465ac97a9fcca29a73c1a90746a69409ede8adbb335",
+  "image_source_tree_sha256": "be4c3e4cbb71dc8d81d49df10013d8164382688bb789ef3ff7a91444c64febf7",
+  "current_source_tree_sha256": "be4c3e4cbb71dc8d81d49df10013d8164382688bb789ef3ff7a91444c64febf7",
+  "matches_current_source": true,
+  "ready": {
+    "status": 200,
+    "body": {
+      "status": "ready",
+      "database": "ok",
+      "publication": "ca-77fb8076598b567e1ba3",
+      "worker": "ok"
+    }
+  },
+  "log": "docs/evidence/docker-compose-build-admin-a11y.log",
+  "log_sha256": "bd4f9c3581d6742712436d9bcd3d5d8ba55d74080111a939de6dd0145469d0d7",
+  "passed": true,
+  "final_image": false,
+  "limitation": "Integrated QA image with matching current code fingerprint. Final corpus and transversal release evidence remain under coordination."
+}

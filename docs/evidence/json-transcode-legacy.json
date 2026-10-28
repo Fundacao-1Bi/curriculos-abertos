@@ -1,0 +1,51 @@
+{
+  "producer": "src/domain/json-snapshot-file.ts",
+  "verified_at": "2026-10-28 04:32:59 UTC",
+  "source_code_sha256": "0fba1997b9846a4f417d6d7e709d2003ee3555b37debf1080d69b6b849db264a",
+  "parser": "stream-json@3.7.0; bounded record-by-record transcode",
+  "scope": "Integrity and scale of a real legacy snapshot conversion; not national editorial completeness or a new official curriculum edition.",
+  "source": "data/bundles/ca-77fb8076598b567e1ba3.json.gz",
+  "publication": "ca-77fb8076598b567e1ba3",
+  "input": {
+    "file_sha256": "0e5bdcfa80f39712bf0751e9364289a4ce91110e300c1446c913eaa7b7bcab36",
+    "bytes": 24253561,
+    "decoded_sha256": "c029b5eb768e4d660865000a74e41ccb398ecc252b4c6729b8e626a8407f9b1c",
+    "decoded_bytes": 237695811
+  },
+  "output": {
+    "manifest": "data/extracted/import-0e5bdcfa80f39712bf0751e9364289a4ce91110e300c1446c913eaa7b7bcab36/snapshot.manifest.json",
+    "manifest_sha256": "75d31ee766ad89c9b2feb41254d50ea4be15cfe86b79e2fc5c1168543740a0e2",
+    "items": 38322,
+    "relations": 13007,
+    "parts": 14
+  },
+  "elapsed_ms": 45281.982584000005,
+  "max_rss_kib": 398112,
+  "assertions": [
+    {
+      "name": "raw_hash_verified_before_parsing",
+      "passed": true
+    },
+    {
+      "name": "raw_hash_rechecked_during_parsing",
+      "passed": true
+    },
+    {
+      "name": "decoded_hash_and_bytes_verified",
+      "passed": true
+    },
+    {
+      "name": "national_arrays_not_materialized",
+      "passed": true
+    },
+    {
+      "name": "immutable_source_unchanged",
+      "passed": true
+    },
+    {
+      "name": "bounded_shards_published_atomically",
+      "passed": true
+    }
+  ],
+  "exit_code": 0
+}

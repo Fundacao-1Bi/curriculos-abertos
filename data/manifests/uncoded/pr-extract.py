@@ -105,7 +105,18 @@ def run():
    item={'id':ident(pn,loc),'source_id':SID,'artifact_sha256':sha,'code':None,'kind':kind,'text':text,'page':pn,'locator':loc,'positions':[s['position']],'evidence':[ev],'source_context':{'document_part':'Volume 1','hierarchy':[s['position']['stage'],s['position']['component'],s['position']['age_group'] or s['position']['year_label']],'objective_column_bbox':s['bbox'],'official_code_absent':True,'row_bounds':[rowlo,rowhi],'row_context':row_context,'reference_codes':effective['codes'],'reference_evidence':effective,'reference_relationship':'desdobramento_documentado_por_agrupamento_na_coluna' if s['position']['stage']=='EI' else 'agrupamento_documental_sem_equivalencia','classification_basis':'Texto literal sem código na coluna OBJETIVOS; EI marcador de objetivo, EF parágrafo local sem negrito.'},'extraction_method':REV,'extraction_revision':REV,'actor_type':'automated','actor_id':'agent:pr_adapter','technical_validation_status':'source_column_and_fragment_text_checked','pedagogical_review_status':'not_reviewed','publication_status':'extracted_candidate'}
    if any(re.fullmatch(r'\d+',l['text']) for l in ls):
     item['source_context']['two_dimensional_text_layout']=[{'text':l['text'],'bbox':l['bbox']} for l in ls]
-    item['source_context']['text_layout_note']='Fração bidimensional preservada por glifos e caixas; transcrição linear mantém numerador e denominador sem inventar pontuação.'
+    # Preserve PDF source ordering with one exact proof per original font span.
+    # A single union rectangle reorders stacked fraction numerators above the
+    # sentence under the importer's geometry reading order.
+    span_evidence=[]
+    for line in ls:
+     for span in line['spans']:
+      literal=norm(span['text'])
+      if literal:
+       span_evidence.append(dict(ev,excerpt=literal,bbox=list(span['bbox']),locator=loc+'/span:'+str(len(span_evidence)+1),method='pr-source-span-fragments-v1.0.0'))
+    assert norm(' '.join(e['excerpt'] for e in span_evidence))==text
+    item['evidence']=span_evidence
+    item['source_context']['text_layout_note']='Fração bidimensional preservada por glifos e caixas; transcrição linear mantém numerador e denominador sem inventar pontuação. Cada span original tem prova própria, em ordem de conteúdo do PDF.'
    records.append(item);lastitem=item
   lastspec=s
  records.extend(runpy.run_path(str(OUT/'pr-digital.py'))['extract']())

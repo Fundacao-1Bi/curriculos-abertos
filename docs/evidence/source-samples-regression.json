@@ -1,17 +1,56 @@
 {
-  "publication": "ca-77fb8076598b567e1ba3",
-  "bundle_sha256": "0e5bdcfa80f39712bf0751e9364289a4ce91110e300c1446c913eaa7b7bcab36",
-  "created_at": "2026-10-28T03:53:20.197680+00:00",
+  "publication": "ca-9d9b45e82947bd8fe35c",
+  "bundle_sha256": "b0550dc21fe55d2c9bc28f2b848bfb7fd787976a643ca574b471a69c618c9c68",
+  "created_at": "2026-10-28T04:46:12.642355+00:00",
   "producer": "scripts/qa-source-samples.py",
+  "item_records_read": 20612,
+  "item_parts": [
+    {
+      "path": "data/bundles/ca-9d9b45e82947bd8fe35c/items-0001.jsonl.gz",
+      "records": 4581,
+      "sha256": "375dccefbe67cd569bce8111c657c6e3d2261b3ad92b3573e8cb801d4992d67f",
+      "passed": true
+    },
+    {
+      "path": "data/bundles/ca-9d9b45e82947bd8fe35c/items-0002.jsonl.gz",
+      "records": 3958,
+      "sha256": "eaf477510533d8d07309d6cf1fdce826686edc5cb961dc05f0bec9a094c468e9",
+      "passed": true
+    },
+    {
+      "path": "data/bundles/ca-9d9b45e82947bd8fe35c/items-0003.jsonl.gz",
+      "records": 3669,
+      "sha256": "4ef030607fe889c1f45c9fe433a2e245406771e9e9f9a55a67d0f841269da120",
+      "passed": true
+    },
+    {
+      "path": "data/bundles/ca-9d9b45e82947bd8fe35c/items-0004.jsonl.gz",
+      "records": 3158,
+      "sha256": "ca8c5cb971c4ccdb5b96a371463220eb24ceca84159c3d2b5dedbd1ae9759862",
+      "passed": true
+    },
+    {
+      "path": "data/bundles/ca-9d9b45e82947bd8fe35c/items-0005.jsonl.gz",
+      "records": 3410,
+      "sha256": "5f238c346f2c5b05a7411c74118e17f164036dbe05607e220936aaed24d3f9b2",
+      "passed": true
+    },
+    {
+      "path": "data/bundles/ca-9d9b45e82947bd8fe35c/items-0006.jsonl.gz",
+      "records": 1836,
+      "sha256": "37bbad23ba3d8f93c0e2e020001245e4496031ea3c36e26762e80114dd9bfb0a",
+      "passed": true
+    }
+  ],
   "checks": [
     {
       "source_id": "sp-curriculo-eief-isbn",
       "code": "EI01EO01",
       "page": 47,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500",
       "text_matches": false,
       "position_matches": false,
+      "source_hash_matches": true,
       "passed": false,
       "actual_candidates": [],
       "verifier_type": "automated",
@@ -22,9 +61,9 @@
       "code": "EF01LP10A",
       "page": 85,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500",
       "text_matches": false,
       "position_matches": false,
+      "source_hash_matches": true,
       "passed": false,
       "actual_candidates": [],
       "verifier_type": "automated",
@@ -35,9 +74,9 @@
       "code": "EF01LP06",
       "page": 85,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500",
       "text_matches": false,
       "position_matches": false,
+      "source_hash_matches": true,
       "passed": false,
       "actual_candidates": [],
       "verifier_type": "automated",
@@ -48,10 +87,10 @@
       "code": "EM13LP02A",
       "page": 75,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "e4c262968644a78181a308af6dea4f7d06260e4c232b61548479fe69b4d2da04",
       "text_matches": true,
-      "position_matches": false,
-      "passed": false,
+      "position_matches": true,
+      "source_hash_matches": true,
+      "passed": true,
       "actual_candidates": [
         {
           "id": "ca:sp-curriculo-em-isbn:0fa510716655e8319ea1",
@@ -60,10 +99,18 @@
             {
               "age_group": null,
               "area": "Linguagens e suas Tecnologias",
-              "component": null,
+              "component": "Língua Portuguesa",
               "period": null,
+              "position_evidence": {
+                "excerpt": "Para as habilidades que foram desmembradas inclui-se uma letra no final do código, por exemplo, EM13LGG103A e EM13LGG103B, o que significa que a habilidade 3, da competência 1, foi desmembrada em duas habilidades (A e B).",
+                "page": 49,
+                "printed_page": null,
+                "section": "Composição do código alfanumérico da Formação Geral Básica",
+                "source_id": "sp-curriculo-em-isbn"
+              },
               "position_note": "O código EM não determina série; a fonte deve explicitar o posicionamento.",
-              "position_origin": "national_code_convention",
+              "position_origin": "documented_source_code_rule",
+              "position_rule_id": "sp-em-sufixo-letra-desmembramento",
               "stage": "EM",
               "year_label": null,
               "years": null
@@ -79,10 +126,10 @@
       "code": "EM13LP02B",
       "page": 75,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "e4c262968644a78181a308af6dea4f7d06260e4c232b61548479fe69b4d2da04",
       "text_matches": true,
-      "position_matches": false,
-      "passed": false,
+      "position_matches": true,
+      "source_hash_matches": true,
+      "passed": true,
       "actual_candidates": [
         {
           "id": "ca:sp-curriculo-em-isbn:9b543d0a615311f82055",
@@ -91,10 +138,18 @@
             {
               "age_group": null,
               "area": "Linguagens e suas Tecnologias",
-              "component": null,
+              "component": "Língua Portuguesa",
               "period": null,
+              "position_evidence": {
+                "excerpt": "Para as habilidades que foram desmembradas inclui-se uma letra no final do código, por exemplo, EM13LGG103A e EM13LGG103B, o que significa que a habilidade 3, da competência 1, foi desmembrada em duas habilidades (A e B).",
+                "page": 49,
+                "printed_page": null,
+                "section": "Composição do código alfanumérico da Formação Geral Básica",
+                "source_id": "sp-curriculo-em-isbn"
+              },
               "position_note": "O código EM não determina série; a fonte deve explicitar o posicionamento.",
-              "position_origin": "national_code_convention",
+              "position_origin": "documented_source_code_rule",
+              "position_rule_id": "sp-em-sufixo-letra-desmembramento",
               "stage": "EM",
               "year_label": null,
               "years": null
@@ -110,9 +165,9 @@
       "code": "EI03CO01",
       "page": 28,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "a59a5e3f64ce19a016eb93b24c90899c4af9eafcbeeae8a15ab125c3ef1eeb93",
       "text_matches": true,
       "position_matches": true,
+      "source_hash_matches": true,
       "passed": true,
       "actual_candidates": [
         {
@@ -141,9 +196,9 @@
       "code": "EI01EO07MG",
       "page": 72,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "792857369c0c80dd87fff092137053e7a5cbed1c61fcbbd6caa6efbc072154ea",
       "text_matches": false,
       "position_matches": false,
+      "source_hash_matches": true,
       "passed": false,
       "actual_candidates": [],
       "verifier_type": "automated",
@@ -154,9 +209,9 @@
       "code": "EM13LGG106MG",
       "page": 118,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
       "text_matches": false,
       "position_matches": false,
+      "source_hash_matches": true,
       "passed": false,
       "actual_candidates": [],
       "verifier_type": "automated",
@@ -167,9 +222,9 @@
       "code": "EI01EO01/ES",
       "page": 72,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "5e720424ec0bc771440dc9b0b331fe6460ee0aa3c5aad0ee69e608ec1a1a1035",
       "text_matches": false,
       "position_matches": false,
+      "source_hash_matches": true,
       "passed": false,
       "actual_candidates": [],
       "verifier_type": "automated",
@@ -180,9 +235,9 @@
       "code": "EM13LGG101ARTa/ES",
       "page": 9,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "46fc39fb5834ac63b87d34410d775e797198ea0f2fc0c0c568ec59d3366f013d",
       "text_matches": false,
       "position_matches": false,
+      "source_hash_matches": true,
       "passed": false,
       "actual_candidates": [],
       "verifier_type": "automated",
@@ -193,29 +248,11 @@
       "code": "EM13LP01",
       "page": 3,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "b3405b1e5ffeb82df9d2817e86e8949199c3ae14c9cd59daf69b69bac48773d8",
-      "text_matches": true,
+      "text_matches": false,
       "position_matches": false,
+      "source_hash_matches": true,
       "passed": false,
-      "actual_candidates": [
-        {
-          "id": "ca:es-em-l-ngua-portuguesa:43435c2e9eb1ade2f635",
-          "text": "Relacionar o texto, tanto na produção como na leitura/escuta, com suas condições de produção e seu contexto sócio-histórico de circulação (leitor/audiência previstos, objetivos, pontos de vista e perspectivas, papel social do autor, época, gênero do discurso etc.), de forma a ampliar as possibilidades de construção de sentidos e de análise crítica e produzir textos adequados a diferentes situações.",
-          "positions": [
-            {
-              "age_group": null,
-              "area": "Linguagens e suas Tecnologias",
-              "component": null,
-              "period": null,
-              "position_note": "O código EM não determina série; a fonte deve explicitar o posicionamento.",
-              "position_origin": "national_code_convention",
-              "stage": "EM",
-              "year_label": null,
-              "years": null
-            }
-          ]
-        }
-      ],
+      "actual_candidates": [],
       "verifier_type": "automated",
       "scope": "Independent visual sample regression, not whole-document reconciliation"
     },
@@ -224,29 +261,11 @@
       "code": "EMIFACNT201",
       "page": 26,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "e0600fd2fe84e7a62a79fea438a541fabc59adece3307fa6aa6694695f482f0a",
-      "text_matches": true,
+      "text_matches": false,
       "position_matches": false,
+      "source_hash_matches": true,
       "passed": false,
-      "actual_candidates": [
-        {
-          "id": "ca:es-ifa-cntmat:fe649be0c0ac25264be0",
-          "text": "Utilizar os conhecimentos das Ciências da Natureza na análise de desafios contemporâneos, apontando soluções relacionadas à sustentabilidade ambiental, saúde individual e coletiva, transição energética e cadeias produtivas;",
-          "positions": [
-            {
-              "age_group": null,
-              "area": null,
-              "component": null,
-              "period": null,
-              "position_note": "Código de itinerário; área/série não inferidas sem declaração documental.",
-              "position_origin": "document_code_context",
-              "stage": "EM",
-              "year_label": null,
-              "years": null
-            }
-          ]
-        }
-      ],
+      "actual_candidates": [],
       "verifier_type": "automated",
       "scope": "Independent visual sample regression, not whole-document reconciliation"
     },
@@ -255,9 +274,9 @@
       "code": "EF01LP01",
       "page": 135,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "b915967926c621164aba46d5cbdbd74406a658410695199ef6ae3926de138bf6",
       "text_matches": false,
       "position_matches": false,
+      "source_hash_matches": true,
       "passed": false,
       "actual_candidates": [],
       "verifier_type": "automated",
@@ -268,9 +287,9 @@
       "code": "EM13LP01",
       "page": 32,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "d5b0700da3a2ef3ca10ab46ec4e69691968f1b00b377ce7d12e8d83683fd38b8",
       "text_matches": false,
       "position_matches": false,
+      "source_hash_matches": true,
       "passed": false,
       "actual_candidates": [],
       "verifier_type": "automated",
@@ -281,9 +300,9 @@
       "code": "EM13LGG101",
       "page": 16,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "77b9009c0880120860ca53b1743df572a5ed3dcf836149296bbbc7a08e978a76",
       "text_matches": false,
       "position_matches": false,
+      "source_hash_matches": true,
       "passed": false,
       "actual_candidates": [],
       "verifier_type": "automated",
@@ -294,35 +313,18 @@
       "code": "EM13CO01",
       "page": 118,
       "expected_file": "docs/evidence/source-audit-southeast/expected.json",
-      "source_hash": "47f6a0e132e319635cae06aa74ffa9dd01f2bc98cb97956e9a976b13c4f1409d",
       "text_matches": false,
       "position_matches": false,
+      "source_hash_matches": true,
       "passed": false,
-      "actual_candidates": [
-        {
-          "id": "ca:mg-crmg-computacao-2025:5e1568cc8d102b411f64",
-          "text": "Explorar e construir a solução códigos de bibliotecas, (ii) pelo lado de problemas por meio da reutilização de conceitual, deve-se trabalhar a construção partes de soluções existentes. da solução através da comparação (transformando) do problema a ser resolvido com outros problemas já solucionados, e assim usando (e eventualmente adaptando) as soluções existentes.",
-          "positions": [
-            {
-              "age_group": null,
-              "area": "Computação",
-              "component": null,
-              "period": null,
-              "position_note": "O código EM não determina série; a fonte deve explicitar o posicionamento.",
-              "position_origin": "national_code_convention",
-              "stage": "EM",
-              "year_label": null,
-              "years": null
-            }
-          ]
-        }
-      ],
+      "actual_candidates": [],
       "verifier_type": "automated",
       "scope": "Independent visual sample regression, not whole-document reconciliation"
     }
   ],
   "passed": false,
   "limitations": [
-    "Independent targeted visual samples; passing does not establish national completeness."
+    "Directed independent visual samples; passing does not establish national completeness.",
+    "Relationship shards are outside this visual regression; the independent artifact auditor verifies them."
   ]
 }

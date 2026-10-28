@@ -4,7 +4,7 @@
 
 PostgreSQL é a fonte de verdade. As migrations em `src/db/migrations/` são versionadas, transacionais, ordenadas e protegidas por advisory lock. Uma migration já aplicada com conteúdo alterado é recusada. `src/db/schema.ts` representa as tabelas por Drizzle; resolução de publicação usa consultas tipadas. Consultas nacionais e agregações usam SQL parametrizado pelos serviços compartilhados.
 
-`publications` contém o snapshot JSONB canônico e contagens. `publication_metadata` e `publication_coverage` materializam metadados pequenos para evitar descomprimir o JSONB nacional em cada leitura pública. `sources`, `items`, `relations` e `relation_members` materializam a consulta indexada. Triggers recusam UPDATE/DELETE de snapshots e registros públicos; correções criam outro snapshot. A transação só disponibiliza o conjunto completo. `current_publication` é um apontador alterável com eventos em `publication_events`; rollback muda o apontador sem apagar o histórico.
+`publications` contém contagens e metadados imutáveis. Snapshots legados `embedded-v1` conservam o JSONB integral; publicações novas `relational-v1` guardam somente o manifesto e os metadados, com registros canônicos nas tabelas de itens/relações/membros. `publication_metadata` e `publication_coverage` materializam metadados pequenos para evitar descomprimir o JSONB nacional em cada leitura pública. `sources`, `items`, `relations` e `relation_members` materializam a consulta indexada. Triggers recusam UPDATE/DELETE de snapshots e registros públicos; correções criam outro snapshot. A transação só disponibiliza o conjunto completo. `current_publication` é um apontador alterável com eventos em `publication_events`; rollback muda o apontador sem apagar o histórico.
 
 IDs de aprendizagem são escopados à fonte e localização. Código oficial é um atributo, pode repetir entre documentos e manter sufixos/asteriscos. Um registro sem código recebe ID técnico, nunca código oficial inventado. `text` é redação canônica extraída, `normalized_text` é auxiliar, `editorial_note` é comentário do projeto. O índice de busca deriva sua própria normalização sem modificar o payload canônico entregue.
 
@@ -20,7 +20,7 @@ Versões separadas: documento/edição oficial por fonte; `extraction_revision`;
 
 ## Busca e recortes
 
-A busca normaliza acentos, caixa e espaços somente para comparação. Códigos exatos recebem prioridade 100; prefixos, 80; fragmentos textuais, 20; busca lexical portuguesa, 1. Desempate por código e ID. `plainto_tsquery('portuguese', ...)`, índice GIN lexical e índices trigramas de código/texto permitem pesquisa lexical e por fragmentos sem provedor pago. Não existe anúncio de busca semântica por embeddings.
+A busca normaliza acentos, caixa e espaços somente para comparação. Códigos exatos recebem prioridade 100; aliases documentados, 90; prefixos, 80; fragmentos textuais, 20; busca lexical portuguesa, 1. Desempate por código e ID. `plainto_tsquery('portuguese', ...)`, índice GIN lexical e índices trigramas de código/texto permitem pesquisa lexical e por fragmentos sem provedor pago. Não existe anúncio de busca semântica por embeddings.
 
 Filtros combinam UF, currículo, edição, etapa, componente/área, tipo, faixa, período e dimensões de relação/revisão. Ano individual ou faixa inclui blocos cuja lista documentada de anos intersecta a consulta. Itens sem ano ficam fora, salvo `include_unknown_positions=true`. Isso não atribui um ano ao item. Registros com `positions: []` também podem ser incluídos explicitamente: a etapa precisa constar da fonte, e o fallback de componente só se aplica quando a fonte declara um único componente compatível. Filtros de área/faixa/período não são inferidos para um item sem posicionamento. Limite de página: 100; lote: 100; comparação: duas ou três UFs distintas. Comparações podem selecionar currículo e edição individualmente por UF.
 
@@ -58,3 +58,18 @@ Esta é uma orientação de interoperabilidade; o produto não declara certifica
 | Posicionamento | educationLevel / metadata | Blocos, EI e períodos preservam os rótulos próprios da fonte. |
 
 Referência consultável: https://www.imsglobal.org/spec/CASE/v1p1/impl . O mapeamento é de conceitos; não promete endpoints CASE.
+
+
+## Distribuição em partes e memória limitada
+
+A instalação preferida recebe manifesto `curriculos-abertos/sharded-v1`, com metadados, fontes, cobertura, versões, contagens e partes JSONL/gzip. Cada parte declara SHA/tamanho comprimido e decodificado, tipo e quantidade. Limites: 20 MiB decodificados por parte, 5000 registros e 8 MiB por registro. O importador verifica cada checksum antes de descomprimir e todos os schemas/referências/ciclos antes de publicar. Uma segunda leitura dentro da transação evita promover arquivos alterados durante o processo. Falhas preservam o padrão anterior.
+
+Downloads nacionais JSON/CSV são escritos em fluxo pelo worker com consultas keyset à publicação fixada. A seleção em recortes mantém membros e ancestrais necessários, identificados como suporte. Arquivos são persistidos com checksum e nunca cortados ao tamanho de uma página.
+
+Snapshots JSON completos grandes podem ser reimportados: `stream-json` descarta as coleções em memória após cada registro e produz um cache de partes verificado. O caminho de fluxo tem limite total configurável `DATA_MAX_STREAM_BYTES` (padrão 10 GiB), além dos limites menores de string/registro/parte/metadados; ele não eleva o limite de buffers do loader legado. O original não é modificado. Hashes físicos podem mudar entre representações sem mudar o conteúdo: reaproveitar um ID só é aceito após comparar todos os registros e metadados semânticos.
+
+JSONL usa exclusivamente LF como delimitador. U+2028 e U+2029 literais dentro de strings são preservados, e UTF-8 inválido é rejeitado. Isso foi exercitado no corpus real, não apenas em fixtures.
+
+O campo `checksum_kind` nas publicações distingue SHA de serialização JSON legada, SHA do manifesto de instalação e hash lógico base+patch em revisões de curadoria. O checksum do arquivo de download é calculado sobre os bytes entregues e exposto separadamente. Nenhum desses hashes afirma revisão pedagógica ou vigência oficial.
+
+Aliases são auxiliares de busca e não alteram o código exibido nem estabelecem equivalência. Origens legadas com nomes equivalentes (por exemplo regra_explicada_fonte/regra_fonte) são aceitas na filtragem e classificadas como documentadas, preservando o valor canônico de cada registro.

@@ -12,7 +12,7 @@ RUN npm run build
 FROM ${NODE_IMAGE} AS production
 WORKDIR /app
 COPY pipeline/requirements.txt /tmp/pipeline-requirements.txt
-RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-venv poppler-utils tesseract-ocr tesseract-ocr-por ca-certificates && rm -rf /var/lib/apt/lists/* \
+RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-venv poppler-utils tesseract-ocr tesseract-ocr-por tesseract-ocr-osd ca-certificates && rm -rf /var/lib/apt/lists/* \
  && python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r /tmp/pipeline-requirements.txt && npm install --global npm@11.6.2
 ENV NODE_ENV=production NEXT_TELEMETRY_DISABLED=1 PATH="/opt/venv/bin:$PATH"
 COPY --from=build --chown=node:node /app ./

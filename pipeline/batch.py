@@ -17,7 +17,7 @@ def one(source):
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--workers',type=int,default=4);parser.add_argument('--uf');parser.add_argument('--skip-ocr',action='store_true');args=parser.parse_args()
     if args.skip_ocr: os.environ['SOURCE_SKIP_OCR']='1'
-    sources=[s for s in load_sources() if s.get('local_path') and safe_path(s['local_path']).exists() and (not args.uf or s['uf']==args.uf)]
+    sources=[s for s in load_sources() if s.get('include_in_corpus',True) and s.get('local_path') and safe_path(s['local_path']).exists() and (not args.uf or s['uf']==args.uf)]
     # Short/native artifacts first for useful incremental integration; all remain mandatory.
     sources.sort(key=lambda s:safe_path(s['local_path']).stat().st_size)
     results=[];path=ROOT/'var/jobs/national-extraction.json'

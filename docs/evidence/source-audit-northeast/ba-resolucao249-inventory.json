@@ -1,0 +1,892 @@
+{
+  "created_at": "2026-10-28T04:32:14.447581+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:al_current_materials",
+  "source_id": "ba-resolucao-249-2026",
+  "artifact_sha256": "c108df4fe4cb56dc0eb9290803025a84b4fa7c72c587d7ea00e6a3e59cee2573",
+  "adapter_revision": "ba-resolution249-document-partition-v1.0.0",
+  "shared_pipeline_revision": "page-cell-v1.4.0",
+  "method": "Complete independent reading of7page original; fixed expected9considerandos/8chapters/22articles before source partition. Boundary anchors come from original PDF lines, not previously extracted itemIDs. All non-whitespace source lines assigned exactly once.",
+  "expected_counts_from_document_reading": {
+    "ato_normativo": 1,
+    "ementa_normativa": 1,
+    "preambulo_normativo": 1,
+    "considerando_normativo": 9,
+    "dispositivo_deliberativo": 1,
+    "capitulo_normativo": 8,
+    "artigo_normativo": 22,
+    "assinatura_normativa": 1,
+    "registro_homologacao_publicacao": 1
+  },
+  "actual_partition_counts": {
+    "ato_normativo": 1,
+    "ementa_normativa": 1,
+    "preambulo_normativo": 1,
+    "considerando_normativo": 9,
+    "dispositivo_deliberativo": 1,
+    "capitulo_normativo": 8,
+    "artigo_normativo": 22,
+    "assinatura_normativa": 1,
+    "registro_homologacao_publicacao": 1
+  },
+  "expected_chapter_articles_from_document_reading": {
+    "I": [
+      1,
+      2,
+      3
+    ],
+    "II": [
+      4
+    ],
+    "III": [
+      5,
+      6
+    ],
+    "IV": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "V": [
+      12
+    ],
+    "VI": [
+      13
+    ],
+    "VII": [
+      14,
+      15
+    ],
+    "VIII": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ]
+  },
+  "actual_chapter_articles": {
+    "I": [
+      1,
+      2,
+      3
+    ],
+    "II": [
+      4
+    ],
+    "III": [
+      5,
+      6
+    ],
+    "IV": [
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "V": [
+      12
+    ],
+    "VI": [
+      13
+    ],
+    "VII": [
+      14,
+      15
+    ],
+    "VIII": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ]
+  },
+  "source_nonempty_lines": 237,
+  "assigned_line_count": 237,
+  "unassigned_line_count": 0,
+  "multiply_assigned_line_count": 0,
+  "canonical_partition_equals_source_line_text": true,
+  "item_count": 45,
+  "items_with_literal_evidence_passed": 45,
+  "orphans": 0,
+  "cycles": 0,
+  "multi_page_parts": [
+    {
+      "key": "article-2",
+      "pages": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "article-5",
+      "pages": [
+        3,
+        4
+      ]
+    },
+    {
+      "key": "article-9",
+      "pages": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "article-12",
+      "pages": [
+        5,
+        6
+      ]
+    }
+  ],
+  "parts": [
+    {
+      "key": "resolution-249",
+      "kind": "ato_normativo",
+      "source_number": null,
+      "parent_key": null,
+      "pages": [
+        1
+      ],
+      "line_range": [
+        0,
+        0
+      ],
+      "line_count": 1,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:resolution-249",
+      "text_sha256": "ecde2c8bf06e7a2e4af4ff6272848d21011e5bec49f423497ddbe070c369d137"
+    },
+    {
+      "key": "ementa",
+      "kind": "ementa_normativa",
+      "source_number": null,
+      "parent_key": "resolution-249",
+      "pages": [
+        1
+      ],
+      "line_range": [
+        1,
+        6
+      ],
+      "line_count": 6,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:ementa",
+      "text_sha256": "eadf43b24e47415dc8eef212a1e4b4221ca9c896bbbf2120f7f2a17feaf6a162"
+    },
+    {
+      "key": "preamble",
+      "kind": "preambulo_normativo",
+      "source_number": null,
+      "parent_key": "resolution-249",
+      "pages": [
+        1
+      ],
+      "line_range": [
+        7,
+        10
+      ],
+      "line_count": 4,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:preamble",
+      "text_sha256": "e3b0a7503915ad267141532bbc5a615f3792d02ab83d7d2fbf2f880bea41feb7"
+    },
+    {
+      "key": "considerando-1",
+      "kind": "considerando_normativo",
+      "source_number": null,
+      "parent_key": "resolution-249",
+      "pages": [
+        1
+      ],
+      "line_range": [
+        11,
+        14
+      ],
+      "line_count": 4,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:considerando-1",
+      "text_sha256": "50e561cef793e31606fcb7dd9de156ebcc1ab194c53507a32968ad3f1d4ab41d"
+    },
+    {
+      "key": "considerando-2",
+      "kind": "considerando_normativo",
+      "source_number": null,
+      "parent_key": "resolution-249",
+      "pages": [
+        1
+      ],
+      "line_range": [
+        15,
+        16
+      ],
+      "line_count": 2,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:considerando-2",
+      "text_sha256": "d3a72c8cff078824a8b40b7aeac2996526777e98f330c992f9afe5976cfb6007"
+    },
+    {
+      "key": "considerando-3",
+      "kind": "considerando_normativo",
+      "source_number": null,
+      "parent_key": "resolution-249",
+      "pages": [
+        1
+      ],
+      "line_range": [
+        17,
+        19
+      ],
+      "line_count": 3,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:considerando-3",
+      "text_sha256": "79834f2cde0e8aba83fe47db5642c5bd99f93517e39bb0752256c3c1a9bbf363"
+    },
+    {
+      "key": "considerando-4",
+      "kind": "considerando_normativo",
+      "source_number": null,
+      "parent_key": "resolution-249",
+      "pages": [
+        1
+      ],
+      "line_range": [
+        20,
+        23
+      ],
+      "line_count": 4,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:considerando-4",
+      "text_sha256": "b8aa6cd3681b818ff936937efad9eb1f6f457d94970d5be2c7463ff02b442c87"
+    },
+    {
+      "key": "considerando-5",
+      "kind": "considerando_normativo",
+      "source_number": null,
+      "parent_key": "resolution-249",
+      "pages": [
+        1
+      ],
+      "line_range": [
+        24,
+        26
+      ],
+      "line_count": 3,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:considerando-5",
+      "text_sha256": "5c36bf6ccb6b8e11a1fde9da954ecda5894ee1c8a8246565f7b44241d27a412d"
+    },
+    {
+      "key": "considerando-6",
+      "kind": "considerando_normativo",
+      "source_number": null,
+      "parent_key": "resolution-249",
+      "pages": [
+        1
+      ],
+      "line_range": [
+        27,
+        30
+      ],
+      "line_count": 4,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:considerando-6",
+      "text_sha256": "0ed905663e03efc72631d4861528b76bf0086d8b2f1e86d0c3605b019c2a425d"
+    },
+    {
+      "key": "considerando-7",
+      "kind": "considerando_normativo",
+      "source_number": null,
+      "parent_key": "resolution-249",
+      "pages": [
+        1
+      ],
+      "line_range": [
+        31,
+        34
+      ],
+      "line_count": 4,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:considerando-7",
+      "text_sha256": "fd503179f073be6e5e3b7023a58a901f9a10511c119ae78d26c3aebad77ed22e"
+    },
+    {
+      "key": "considerando-8",
+      "kind": "considerando_normativo",
+      "source_number": null,
+      "parent_key": "resolution-249",
+      "pages": [
+        2
+      ],
+      "line_range": [
+        35,
+        40
+      ],
+      "line_count": 6,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:considerando-8",
+      "text_sha256": "c6e2d928ec820b9562ae90b8f656dd1a517a38a5ea539a12e481db2715f0554d"
+    },
+    {
+      "key": "considerando-9",
+      "kind": "considerando_normativo",
+      "source_number": null,
+      "parent_key": "resolution-249",
+      "pages": [
+        2
+      ],
+      "line_range": [
+        41,
+        44
+      ],
+      "line_count": 4,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:considerando-9",
+      "text_sha256": "03b6f56a6ed2398b8361ee056b6b73a2216dd1180c09caf084410495cd4cf7f9"
+    },
+    {
+      "key": "resolve",
+      "kind": "dispositivo_deliberativo",
+      "source_number": null,
+      "parent_key": "resolution-249",
+      "pages": [
+        2
+      ],
+      "line_range": [
+        45,
+        45
+      ],
+      "line_count": 1,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:resolve",
+      "text_sha256": "22158f36212aecb73e3fb2f2ccb7f87aca7424b5815b862eb775aaba51c785b8"
+    },
+    {
+      "key": "chapter-I",
+      "kind": "capitulo_normativo",
+      "source_number": "I",
+      "parent_key": "resolution-249",
+      "pages": [
+        2
+      ],
+      "line_range": [
+        46,
+        47
+      ],
+      "line_count": 2,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:chapter-I",
+      "text_sha256": "89c553445467c0ff34042948eaf9c7e74311daf788436d4228e2c6c332219e8f"
+    },
+    {
+      "key": "article-1",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 1º",
+      "parent_key": "chapter-I",
+      "pages": [
+        2
+      ],
+      "line_range": [
+        48,
+        55
+      ],
+      "line_count": 8,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-1",
+      "text_sha256": "13c9099d21ae21ad6a399715d79ee84cc987f7ac9cffe3798f28cd587a8409df"
+    },
+    {
+      "key": "article-2",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 2º",
+      "parent_key": "chapter-I",
+      "pages": [
+        2,
+        3
+      ],
+      "line_range": [
+        56,
+        74
+      ],
+      "line_count": 19,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-2",
+      "text_sha256": "cf80af66fdf0b922e93e77487c125b0f750c933679bde00b260c2c4149abf104"
+    },
+    {
+      "key": "article-3",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 3º",
+      "parent_key": "chapter-I",
+      "pages": [
+        3
+      ],
+      "line_range": [
+        75,
+        78
+      ],
+      "line_count": 4,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-3",
+      "text_sha256": "7a1f14ebed0b70dfc034cc27a8587c24e6233eb2fb3f22944eef4b249c004ee4"
+    },
+    {
+      "key": "chapter-II",
+      "kind": "capitulo_normativo",
+      "source_number": "II",
+      "parent_key": "resolution-249",
+      "pages": [
+        3
+      ],
+      "line_range": [
+        79,
+        80
+      ],
+      "line_count": 2,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:chapter-II",
+      "text_sha256": "4624f1e55ef5e7d0cc476e2ec18cbf9ce8f6c76f008892f83c415e17108eabf7"
+    },
+    {
+      "key": "article-4",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 4º",
+      "parent_key": "chapter-II",
+      "pages": [
+        3
+      ],
+      "line_range": [
+        81,
+        90
+      ],
+      "line_count": 10,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-4",
+      "text_sha256": "3fbc589e24e3b3845081743f85b5cff2386c477fba8e3a990a7a4f4c8659c15e"
+    },
+    {
+      "key": "chapter-III",
+      "kind": "capitulo_normativo",
+      "source_number": "III",
+      "parent_key": "resolution-249",
+      "pages": [
+        3
+      ],
+      "line_range": [
+        91,
+        92
+      ],
+      "line_count": 2,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:chapter-III",
+      "text_sha256": "43240919e426fe19aa07ba480af814fb2238e9bdb6b20c726d4e96504052c97b"
+    },
+    {
+      "key": "article-5",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 5º",
+      "parent_key": "chapter-III",
+      "pages": [
+        3,
+        4
+      ],
+      "line_range": [
+        93,
+        110
+      ],
+      "line_count": 18,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-5",
+      "text_sha256": "5fc65369bb650ce54093aea6f11d3426c4f90b7bf09276241b47f0e72f873b2f"
+    },
+    {
+      "key": "article-6",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 6º",
+      "parent_key": "chapter-III",
+      "pages": [
+        4
+      ],
+      "line_range": [
+        111,
+        119
+      ],
+      "line_count": 9,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-6",
+      "text_sha256": "8e20251b491a85aac3a2d3923ab813af175c3a5ec7677d50cc463645f69862cb"
+    },
+    {
+      "key": "chapter-IV",
+      "kind": "capitulo_normativo",
+      "source_number": "IV",
+      "parent_key": "resolution-249",
+      "pages": [
+        4
+      ],
+      "line_range": [
+        120,
+        121
+      ],
+      "line_count": 2,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:chapter-IV",
+      "text_sha256": "4008e009a97a70579428ee72a2bebb267cea9acab9ee2364d02bfa69b378a3f0"
+    },
+    {
+      "key": "article-7",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 7º",
+      "parent_key": "chapter-IV",
+      "pages": [
+        4
+      ],
+      "line_range": [
+        122,
+        125
+      ],
+      "line_count": 4,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-7",
+      "text_sha256": "9e8c42943b17dc3fabc2bbdd872f38a33abfc9360a4f9e8b04cf9f5c73a83395"
+    },
+    {
+      "key": "article-8",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 8º",
+      "parent_key": "chapter-IV",
+      "pages": [
+        4
+      ],
+      "line_range": [
+        126,
+        131
+      ],
+      "line_count": 6,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-8",
+      "text_sha256": "ca1d261046837f1377c960019d8fcec679d928ee7ba8ce9d7100693e3462b773"
+    },
+    {
+      "key": "article-9",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 9º",
+      "parent_key": "chapter-IV",
+      "pages": [
+        4,
+        5
+      ],
+      "line_range": [
+        132,
+        141
+      ],
+      "line_count": 10,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-9",
+      "text_sha256": "7260ddb13a33f4a74916f7e3076d358986208170ea55e35cb369ab23c0a140f2"
+    },
+    {
+      "key": "article-10",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 10.",
+      "parent_key": "chapter-IV",
+      "pages": [
+        5
+      ],
+      "line_range": [
+        142,
+        145
+      ],
+      "line_count": 4,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-10",
+      "text_sha256": "cae0d5008e93da2824a3df890c53eb6431c852475484c43493d67181f9888bcb"
+    },
+    {
+      "key": "article-11",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 11.",
+      "parent_key": "chapter-IV",
+      "pages": [
+        5
+      ],
+      "line_range": [
+        146,
+        155
+      ],
+      "line_count": 10,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-11",
+      "text_sha256": "3ea670cb9fd40b49b77f86b77eb53e037263f36ee7a771648aff5f7be1e3b120"
+    },
+    {
+      "key": "chapter-V",
+      "kind": "capitulo_normativo",
+      "source_number": "V",
+      "parent_key": "resolution-249",
+      "pages": [
+        5
+      ],
+      "line_range": [
+        156,
+        158
+      ],
+      "line_count": 3,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:chapter-V",
+      "text_sha256": "4366ec9418807e2628717c7c39499047243ef9687ba2bde1d81b4eb105b3d0b0"
+    },
+    {
+      "key": "article-12",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 12.",
+      "parent_key": "chapter-V",
+      "pages": [
+        5,
+        6
+      ],
+      "line_range": [
+        159,
+        186
+      ],
+      "line_count": 28,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-12",
+      "text_sha256": "37d4fd0714b49cecfd1951b253f9a65ea7d855898c2951805cfea0fd73a7a948"
+    },
+    {
+      "key": "chapter-VI",
+      "kind": "capitulo_normativo",
+      "source_number": "VI",
+      "parent_key": "resolution-249",
+      "pages": [
+        6
+      ],
+      "line_range": [
+        187,
+        188
+      ],
+      "line_count": 2,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:chapter-VI",
+      "text_sha256": "c75e114a8f6c73b70316bc4f82c647833e667c932340e948d8ea48e81a9859dd"
+    },
+    {
+      "key": "article-13",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 13.",
+      "parent_key": "chapter-VI",
+      "pages": [
+        6
+      ],
+      "line_range": [
+        189,
+        194
+      ],
+      "line_count": 6,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-13",
+      "text_sha256": "0da9595c1c46e3bf05f209a12cf2cb805edbec03218d08bac3fc21d5ee3dc8ad"
+    },
+    {
+      "key": "chapter-VII",
+      "kind": "capitulo_normativo",
+      "source_number": "VII",
+      "parent_key": "resolution-249",
+      "pages": [
+        6
+      ],
+      "line_range": [
+        195,
+        196
+      ],
+      "line_count": 2,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:chapter-VII",
+      "text_sha256": "a5a632639fa9096e0d7873e1e923540c45f59d336776ceddcfd4f91d602a5151"
+    },
+    {
+      "key": "article-14",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 14.",
+      "parent_key": "chapter-VII",
+      "pages": [
+        6
+      ],
+      "line_range": [
+        197,
+        199
+      ],
+      "line_count": 3,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-14",
+      "text_sha256": "9b392dc909089fc86ce6449a800f4cf525c1c3aaee6a839c7efd853805a83cd0"
+    },
+    {
+      "key": "article-15",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 15.",
+      "parent_key": "chapter-VII",
+      "pages": [
+        6
+      ],
+      "line_range": [
+        200,
+        209
+      ],
+      "line_count": 10,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-15",
+      "text_sha256": "4bc4cda94897c3e3fc48814857d0d78170ca0296b4843881b7b9816ce96cb8c0"
+    },
+    {
+      "key": "chapter-VIII",
+      "kind": "capitulo_normativo",
+      "source_number": "VIII",
+      "parent_key": "resolution-249",
+      "pages": [
+        7
+      ],
+      "line_range": [
+        210,
+        211
+      ],
+      "line_count": 2,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:chapter-VIII",
+      "text_sha256": "2bbaf90fe7278299a13c33199d68c45bb413c50e9751eb4f8391b57bfd9160e7"
+    },
+    {
+      "key": "article-16",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 16.",
+      "parent_key": "chapter-VIII",
+      "pages": [
+        7
+      ],
+      "line_range": [
+        212,
+        214
+      ],
+      "line_count": 3,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-16",
+      "text_sha256": "1453fb43ebb4a5ca4f32e2f5340f925d02e85ad367602a42edf682a71f8ada6f"
+    },
+    {
+      "key": "article-17",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 17.",
+      "parent_key": "chapter-VIII",
+      "pages": [
+        7
+      ],
+      "line_range": [
+        215,
+        218
+      ],
+      "line_count": 4,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-17",
+      "text_sha256": "e0551148fe19d4b557478e0e030e0aa33de8199e93458f4d323f3b03148e61a5"
+    },
+    {
+      "key": "article-18",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 18.",
+      "parent_key": "chapter-VIII",
+      "pages": [
+        7
+      ],
+      "line_range": [
+        219,
+        222
+      ],
+      "line_count": 4,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-18",
+      "text_sha256": "451381b875851a2e37beef13095d2bea981385bf1128cc9141cd86efb4399f6f"
+    },
+    {
+      "key": "article-19",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 19.",
+      "parent_key": "chapter-VIII",
+      "pages": [
+        7
+      ],
+      "line_range": [
+        223,
+        225
+      ],
+      "line_count": 3,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-19",
+      "text_sha256": "a95734816c9acd0d3aa61a34045b7624f4cf9763a3c2d8e847ad65fbeedb30b0"
+    },
+    {
+      "key": "article-20",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 20.",
+      "parent_key": "chapter-VIII",
+      "pages": [
+        7
+      ],
+      "line_range": [
+        226,
+        227
+      ],
+      "line_count": 2,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-20",
+      "text_sha256": "c0e7c65349a1845c9353ee00555a7fc238fdaa20207dad70eb5471dc62082a02"
+    },
+    {
+      "key": "article-21",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 21.",
+      "parent_key": "chapter-VIII",
+      "pages": [
+        7
+      ],
+      "line_range": [
+        228,
+        230
+      ],
+      "line_count": 3,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-21",
+      "text_sha256": "9cc6f143127f4f4b84302f206d1e754f14cf481eac694daa93db4e2156fa9c72"
+    },
+    {
+      "key": "article-22",
+      "kind": "artigo_normativo",
+      "source_number": "Art. 22.",
+      "parent_key": "chapter-VIII",
+      "pages": [
+        7
+      ],
+      "line_range": [
+        231,
+        231
+      ],
+      "line_count": 1,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:article-22",
+      "text_sha256": "0c0a3dd433301f24c21a57efc7304838dcd39e396c1bbf9c881b6e3963640a7a"
+    },
+    {
+      "key": "signature",
+      "kind": "assinatura_normativa",
+      "source_number": null,
+      "parent_key": "resolution-249",
+      "pages": [
+        7
+      ],
+      "line_range": [
+        232,
+        234
+      ],
+      "line_count": 3,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:signature",
+      "text_sha256": "a0d8397be6dd793c7123ad9ad12aec6f431faf1f8b1fb946ff3ed3d661bff703"
+    },
+    {
+      "key": "homologation-publication",
+      "kind": "registro_homologacao_publicacao",
+      "source_number": null,
+      "parent_key": "resolution-249",
+      "pages": [
+        7
+      ],
+      "line_range": [
+        235,
+        236
+      ],
+      "line_count": 2,
+      "expected_item_id": "ca:ba-resolucao-249-2026:section:homologation-publication",
+      "text_sha256": "8ae8ebe02e440eb3bf3e23761ea158e91b242d48f0b23f96d62a3367b5e89da5"
+    }
+  ],
+  "temporal_facts": {
+    "resolution_date": "2026-07-07",
+    "homologation_date": "2026-08-26",
+    "publication_date": "2026-08-27",
+    "vigency_rule_evidence_article": 22,
+    "implementation_start_year": 2027,
+    "implementation_evidence_article": 16
+  },
+  "limits": [
+    "This resolution adopts the revisedDCRB-EM2026 but does not contain its full curriculum. Reconciliation of this7page act does not resolve the missing revised curriculum artifact.",
+    "Normative provisions are not learning items.",
+    "No human pedagogical review, UF acceptance or national release asserted."
+  ],
+  "standalone_shared_import_test": "passed",
+  "verification_report": "docs/evidence/source-audit-northeast/ba-resolucao249-verification.json"
+}

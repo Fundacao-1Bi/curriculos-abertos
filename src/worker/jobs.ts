@@ -1,6 +1,9 @@
 import { randomUUID } from 'node:crypto';
+import { z } from 'zod';
 import { resolve, sep } from 'node:path';
 import { pool } from '../db/client';
+import { resolvePublication } from '../domain/service';
+import { DomainError } from '../domain/errors';
 export type Job = {id:string;type:string;status:'queued'|'running'|'paused'|'succeeded'|'failed';payload:Record<string,unknown>;result:Record<string,unknown>|null;progress:Record<string,unknown>;error:string|null;attempts:number;max_attempts:number;lease_owner:string|null;created_at:string;updated_at:string};
 export async function enqueueJob(type:string,payload:Record<string,unknown>,idempotencyKey?:string):Promise<Job> {
   if(!['ingest','source-check','export','validate'].includes(type)) throw new Error('Tipo de job não permitido.');
@@ -10,13 +13,16 @@ export async function enqueueJob(type:string,payload:Record<string,unknown>,idem
   return result.rows[0];
 }
 export async function getJob(id:string):Promise<Job|null> {
-  if(!/^[a-f0-9-]{36}$/i.test(id))return null;
+  if(!z.uuid().safeParse(id).success)return null;
   return (await pool.query<Job>('SELECT * FROM jobs WHERE id=$1',[id])).rows[0] || null;
 }
 export async function getPublicExport(id:string) {
   const job=await getJob(id);
   if(!job || job.type!=='export')return null;
   const query=job.payload.query as {publication?:string}|undefined;
+  if(typeof query?.publication!=='string')return null;
+  try{await resolvePublication(query.publication);}catch(error){if(error instanceof DomainError&&error.status===404)return null;throw error;}
+  if(job.result&&job.result.publication!==query.publication)return null;
   return {id:job.id,status:job.status,publication:query?.publication || null,progress:job.progress,result:job.result,error:job.error ? 'A exportação falhou. Tente novamente mais tarde.' : null};
 }
 export function safeExportPath(storageKey:string) {

@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-28T04:39:46.812786+00:00",
+  "actor_type": "automated",
+  "source_id": "am-rca-em",
+  "artifact_sha256": "46dd801703b5bca3a849df1c8b16fef800f4d07538bf177797cb1ee1f3640313",
+  "extraction_revision": "page-cell-v1.4.0",
+  "physical_pages": 292,
+  "coded_candidates": 217,
+  "documentary_sections": 288,
+  "strict_code_mentions_in_raw_ocr": 241,
+  "strict_unique_codes_in_raw_ocr": 176,
+  "strict_unique_candidate_codes": 167,
+  "sample": {
+    "page": 40,
+    "code": "EM13LGG101",
+    "item_id": "ca:am-rca-em:8bfdef97faf0e32406fe",
+    "candidate_text": "Compreender analisar processos de produção e nas e escolhas fundamentadas função de interesses pessoais coletivos. linguagens, para fazer em e",
+    "visually_confirmed_primary_text": "Compreender e analisar processos de produção e circulação de discursos, nas diferentes linguagens, para fazer escolhas fundamentadas em função de interesses pessoais e coletivos.",
+    "result": "failed_text_line_order_and_completeness",
+    "root_cause_evidence": [
+      "TSV line key(block6,paragraph1,line1) spans y417.x–421.6; code top420.0.",
+      "Geometry selection top>=418 excluded words from the same line; grouping round(top/3) rearranged surviving words."
+    ],
+    "image_path": "data/raw/AM/am-em-p40.png"
+  },
+  "acceptance": "not_accepted_pending_OCR_layout_repair",
+  "not_asserted": [
+    "UF completeness",
+    "correct learning-text extraction",
+    "human review"
+  ],
+  "count_scope_note": "Strict mention and unique comparisons use the same EMNN(2–3letters)(2–3digits) grammar; all coded_candidates also include other literal code families."
+}

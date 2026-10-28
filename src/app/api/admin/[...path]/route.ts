@@ -5,6 +5,8 @@ import { pool } from '../../../../db/client';
 import { requireActor,requireSameOrigin,audit,AdminError } from '../../../../admin/auth';
 import { createDraft,addChange,validateDraft,prepareDraft,publishDraft,rollbackPublication } from '../../../../admin/curation';
 import { enqueueJob,controlJob } from '../../../../worker/jobs';
+import {listIngestCandidates,getIngestCandidate,validateIngestCandidate,publishIngestCandidate} from '../../../../admin/candidates';
+import {searchLearningsInternal,getLearningInternal} from '../../../../domain/service';
 export const dynamic='force-dynamic';
 export const runtime='nodejs';
 const limits=new Map<string,{at:number;count:number}>();
@@ -28,11 +30,23 @@ export async function GET(request:Request,context:{params:Promise<{path:string[]
         pool.query('SELECT * FROM contributions ORDER BY created_at DESC LIMIT 100'),
         pool.query('SELECT id,base_publication,title,status,validation,prepared_publication,created_by,created_at,updated_at,jsonb_array_length(changes) AS change_count FROM drafts ORDER BY created_at DESC LIMIT 100'),
         pool.query('SELECT * FROM source_checks ORDER BY checked_at DESC LIMIT 100'),
-        pool.query('SELECT id,item_count,source_count,created_at FROM publications ORDER BY created_at DESC'),
+        pool.query("SELECT p.id,p.item_count,p.source_count,p.created_at,v.status AS visibility,(c.publication_id=p.id) IS TRUE AS is_default FROM publications p JOIN publication_visibility v ON v.publication_id=p.id LEFT JOIN current_publication c ON c.singleton=true ORDER BY p.created_at DESC"),
         pool.query('SELECT * FROM audit_events ORDER BY created_at DESC LIMIT 100'),
         pool.query('SELECT * FROM worker_heartbeats')
       ]);
       data={actor,jobs:jobs.rows,contributions:contributions.rows,drafts:drafts.rows,source_checks:checks.rows,publications:publications.rows,audit:events.rows,workers:workers.rows};
+    }else if(path[0]==='candidates') {
+      if(path.length===1)data=await listIngestCandidates();
+      else if(path.length===2)data=await getIngestCandidate(path[1]);
+      else if(path[2]==='items'&&path.length===4){
+        const record=await getLearningInternal(path[3],path[1]);
+        return Response.json({...record,request_id:requestId},{headers:{'Cache-Control':'no-store'}});
+      }else if(path[2]==='items'&&path.length===3){
+        const parameters=new URL(request.url).searchParams;
+        const record=await searchLearningsInternal({publication:path[1],page:Number(parameters.get('page')||1),limit:Number(parameters.get('limit')||25),q:parameters.get('q')||undefined});
+        const next=record.next?`/api/admin/candidates/${encodeURIComponent(path[1])}/items?${new URLSearchParams({page:String(Number(record.page)+1),limit:String(record.limit),...(parameters.get('q')?{q:parameters.get('q')!}:{})})}`:null;
+        return Response.json({...record,next,request_id:requestId},{headers:{'Cache-Control':'no-store'}});
+      }else throw new AdminError(404,'not_found','Operação administrativa de candidato não encontrada.');
     }else if(path[0]==='jobs'&&path[1]) {
       z.uuid().parse(path[1]);
       const [job,events]=await Promise.all([pool.query('SELECT * FROM jobs WHERE id=$1',[path[1]]),pool.query('SELECT event,created_at FROM job_events WHERE job_id=$1 ORDER BY id DESC LIMIT 200',[path[1]])]);
@@ -52,15 +66,20 @@ export async function POST(request:Request,context:{params:Promise<{path:string[
     const {path}=await context.params;const body=await parseBody(request);
     let data:unknown;
     if(path.join('/')==='jobs') {
-      const input=z.object({type:z.enum(['ingest','source-check','validate']),source:z.string().regex(/^[a-zA-Z0-9_.:-]{1,200}$/).optional(),draft_id:z.uuid().optional()}).parse(body);
+      const input=z.object({type:z.enum(['ingest','source-check','validate']),source:z.string().regex(/^[a-zA-Z0-9_.:-]{1,200}$/).optional(),draft_id:z.uuid().optional(),cached_only:z.boolean().default(false)}).parse(body);
       if(input.type==='ingest'&&actor.role!=='administrator')throw new AdminError(403,'forbidden','Somente administrador inicia ingestão.');
-      data=await enqueueJob(input.type,{source:input.source,draft_id:input.draft_id});
+      data=await enqueueJob(input.type,{source:input.source,draft_id:input.draft_id,cached_only:input.cached_only,requested_by:{id:actor.id,actor_type:actor.actor_type}});
       await audit(actor,'enqueue_job','job',(data as {id:string}).id,'Processamento solicitado pela administração.',null,{type:input.type,source:input.source});
     }else if(path[0]==='jobs'&&path[1]&&path[2]) {
       const action=z.enum(['pause','resume','retry']).parse(path[2]);
       const job=await pool.query('SELECT type FROM jobs WHERE id=$1',[z.uuid().parse(path[1])]);
       if(job.rows[0]?.type==='ingest'&&actor.role!=='administrator')throw new AdminError(403,'forbidden','Somente administrador controla jobs de ingestão.');
       data=await controlJob(path[1],action);await audit(actor,action,'job',path[1],`Operação de job: ${action}.`);
+    }else if(path[0]==='candidates'&&path.length===3){
+      const input=z.object({reason:z.string().min(8).max(4000)}).parse(body);
+      if(path[2]==='validate')data=await validateIngestCandidate(actor,path[1],input.reason);
+      else if(path[2]==='publish')data=await publishIngestCandidate(actor,path[1],input.reason);
+      else throw new AdminError(404,'not_found','Operação administrativa de candidato não encontrada.');
     }else if(path.join('/')==='drafts')data=await createDraft(actor,body);
     else if(path[0]==='drafts'&&path[1]&&path[2]) {
       z.uuid().parse(path[1]);

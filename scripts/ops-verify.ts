@@ -3,6 +3,8 @@ import { randomBytes,randomUUID } from 'node:crypto';
 import { spawn } from 'node:child_process';
 import { mkdir,writeFile } from 'node:fs/promises';
 import { pool } from '../src/db/client';
+import { setDefaultPublication } from '../src/domain/publication';
+import { assertPreparedNotPublic,assertPublishedVisible } from './qa-prepared-boundary';
 import { enqueueJob,claimJob,controlJob,getJob } from '../src/worker/jobs';
 const base=process.env.VERIFY_URL || process.env.PUBLIC_URL || 'http://localhost:3000';
 const origin=new URL(process.env.PUBLIC_URL || base).origin;
@@ -22,7 +24,7 @@ async function createAccount(email:string,password:string,role:string){
 async function login(email:string,password:string){const {response}=await request('/api/auth/sign-in/email',{email,password});assert.equal(response.status,200,'login Better Auth real');const cookies=response.headers.getSetCookie();assert(cookies.length>0,'Cookie de sessão emitido.');return cookies.map(c=>c.split(';')[0]).join('; ');}
 async function mutation(path:string,body:unknown,cookie:string){const {response,json}=await request(path,body,cookie);assert.equal(response.status,200,`${path}: ${JSON.stringify(json)}`);return json.data;}
 const stamp=randomUUID().slice(0,8);const adminEmail=`qa-${stamp}@example.invalid`,curatorEmail=`qa-curator-${stamp}@example.invalid`;const password=randomBytes(30).toString('base64url');
-let adminId:string|null=null,curatorId:string|null=null;let originalPublication:string|null=null;let preparedPublication:string|null=null;
+let adminId:string|null=null,curatorId:string|null=null;let originalPublication:string|null=null;let preparedPublication:string|null=null;let preparedExportJob:string|null=null;
 try{
  const current=await pool.query('SELECT publication_id FROM current_publication WHERE singleton=true');originalPublication=current.rows[0]?.publication_id;assert(originalPublication,'Publicação real carregada.');
  const item=(await pool.query('SELECT id,payload FROM items WHERE publication_id=$1 ORDER BY id LIMIT 1',[originalPublication])).rows[0];assert(item,'Corpus real precisa conter aprendizagem.');
@@ -48,12 +50,21 @@ try{
  await mutation(`/api/admin/drafts/${draft.id}/changes`,{entity:'relation',record_id:relation.id,decision:'accept',actor_type:'human',reason:'Ensaio automatizado de decisão de publicação; preserva origem e não afirma homologação pedagógica humana.'},cookie);
  const validation=await mutation(`/api/admin/drafts/${draft.id}/validate`,{},cookie);assert.equal(validation.valid,true);assert.equal(validation.human_pedagogical_approval,false);passed('draft_schema_and_references_validated');
  const prepared=await mutation(`/api/admin/drafts/${draft.id}/prepare`,{reason:'Snapshot técnico de verificação automatizada, com textos oficiais preservados.'},cookie);preparedPublication=prepared.id;assert(prepared.id!==originalPublication);passed('immutable_snapshot_prepared');
+ preparedExportJob=randomUUID();
+ await pool.query("INSERT INTO jobs(id,type,status,pause_requested,payload) VALUES($1,'export','paused',true,$2::jsonb)",[preparedExportJob,JSON.stringify({query:{publication:prepared.id},format:'json'})]);
+ const preparedPrivate=(await pool.query('SELECT v.status,p.item_count FROM publications p JOIN publication_visibility v ON v.publication_id=p.id WHERE p.id=$1',[prepared.id])).rows[0];assert.equal(preparedPrivate?.status,'prepared');assert(preparedPrivate.item_count>0);
+ const preparedJob=(await pool.query('SELECT type,status,payload FROM jobs WHERE id=$1',[preparedExportJob])).rows[0];assert.equal(preparedJob.type,'export');assert.equal(preparedJob.status,'paused');assert.equal(preparedJob.payload.query.publication,prepared.id);passed('private_preconditions_exist_before_public_visibility_probes');
+ assert.equal((await request('/api/admin/publications/rollback',{publication:prepared.id,reason:'Ensaio automatizado: reversão não pode publicar um candidato preparado.'},cookie)).response.status,409);assert.equal((await pool.query('SELECT publication_id FROM current_publication WHERE singleton=true')).rows[0].publication_id,originalPublication);passed('rollback_cannot_publish_prepared_revision');
+ await assertPreparedNotPublic({base,publication:prepared.id,itemId:item.id,sourceId:item.payload.source_id,exportJobId:preparedExportJob});
+ passed('prepared_snapshot_and_cached_export_unavailable_to_public_api_and_real_mcp');
  await mutation(`/api/admin/drafts/${draft.id}/publish`,{reason:'Publicação temporária para verificar integração e reversão em ambiente local.'},cookie);
  assert.equal((await pool.query('SELECT publication_id FROM current_publication WHERE singleton=true')).rows[0].publication_id,prepared.id);passed('atomic_default_publication_changed');
+ await assertPublishedVisible({base,publication:prepared.id,itemId:item.id});passed('published_revision_visible_to_public_api_and_real_mcp');
  const snapshots=await pool.query('SELECT publication_id,payload FROM items WHERE publication_id=ANY($1::text[]) AND id=$2 ORDER BY publication_id',[[originalPublication,prepared.id],item.id]);assert.equal(snapshots.rows.length,2);for(const row of snapshots.rows)assert.equal(row.payload.text,item.payload.text);passed('original_and_revision_preserve_official_text');
  const reviewed=(await pool.query('SELECT payload FROM relations WHERE publication_id=$1 AND id=$2',[prepared.id,relation.id])).rows[0].payload;assert.equal(reviewed.origin,relation.payload.origin);assert.equal(reviewed.pedagogical_review_status,relation.payload.pedagogical_review_status);assert.equal(reviewed.review_events.at(-1).review_type,'publication');assert.equal(reviewed.review_events.at(-1).actor_type,'automated');passed('relation_origin_and_pedagogical_status_preserved_on_publication_decision');
  await mutation('/api/admin/publications/rollback',{publication:originalPublication,reason:'Retorno à publicação original após ensaio automatizado com histórico preservado.'},cookie);
  assert.equal((await pool.query('SELECT publication_id FROM current_publication WHERE singleton=true')).rows[0].publication_id,originalPublication);passed('default_rollback_preserves_history');
+ await assertPublishedVisible({base,publication:prepared.id,itemId:item.id});passed('published_history_remains_public_after_default_rollback');
  const audit=(await pool.query('SELECT actor_type,action FROM audit_events WHERE actor_id=$1',[adminId])).rows;assert(audit.length>=8);assert(audit.every(row=>row.actor_type==='automated'));passed('admin_audit_trail_automated',{events:audit.length});
  const rotatedPassword=randomBytes(30).toString('base64url');
  const reset=spawn(process.execPath,['--import','tsx','scripts/admin-reset.ts','--email',adminEmail],{stdio:['pipe','pipe','pipe'],env:process.env});
@@ -79,7 +90,8 @@ try{
  await mkdir('docs/evidence',{recursive:true});await writeFile('docs/evidence/admin-operations.json',JSON.stringify(report,null,2)+'\n');
  console.error(message);process.exitCode=1;
 }finally{
- if(originalPublication&&preparedPublication)await pool.query('UPDATE current_publication SET publication_id=$1 WHERE singleton=true AND publication_id=$2',[originalPublication,preparedPublication]);
+ if(originalPublication&&preparedPublication){const current=(await pool.query('SELECT publication_id FROM current_publication WHERE singleton=true')).rows[0]?.publication_id;if(current===preparedPublication)await setDefaultPublication(originalPublication,{id:'ops-verification-cleanup',actor_type:'automated',reason:'Restauração auditada do default original após ensaio administrativo local.'});}
+ if(preparedExportJob)await pool.query('DELETE FROM jobs WHERE id=$1',[preparedExportJob]);
  // Revoke test accounts after execution. Audit events retain UUID and actor type, without authentication secrets.
  for(const id of [adminId,curatorId])if(id)await pool.query('DELETE FROM "user" WHERE id=$1',[id]);
  await pool.end();
