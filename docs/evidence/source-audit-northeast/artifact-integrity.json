@@ -1,12 +1,12 @@
 {
-  "at": "2026-10-28T04:55:26.531221+00:00",
+  "at": "2026-10-28T17:41:09.134217+00:00",
   "actor_type": "automated",
   "actor_id": "codex:data_northeast",
   "manifest": "data/manifests/northeast.json",
-  "sources": 64,
-  "acquired": 62,
-  "pages": 16099,
-  "bytes": 624789948,
+  "sources": 90,
+  "acquired": 86,
+  "pages": 17486,
+  "bytes": 667622099,
   "ufs": [
     "AL",
     "BA",
@@ -19,17 +19,33 @@
     "SE"
   ],
   "status_counts": {
-    "acquired": 62,
+    "acquired": 86,
     "unavailable": 1,
-    "research_pending": 1
+    "research_pending": 3
   },
   "fully_reconciled_sources": [
+    "ma-portaria-181-2026-recomposicao-doe"
+  ],
+  "own_source_v2_reconciled": [
+    "ba-resolucao-249-2026",
+    "rn-portaria-11123-2025",
+    "ma-resolucao-211-2026-doe",
+    "ma-portaria-181-2026-recomposicao-doe"
+  ],
+  "legacy_source_status_labels_not_gate_proof": [
     "ba-resolucao-249-2026",
     "pe-historia-pernambuco-2026",
-    "rn-portaria-11123-2025"
+    "rn-portaria-11123-2025",
+    "ma-resolucao-211-2026-doe",
+    "ma-portaria-181-2026-recomposicao-doe"
   ],
+  "reconciliation_evidence": {
+    "path": "docs/evidence/source-audit-northeast/reconciliation-v2-current-verification.json",
+    "sha256": "9b5134a6dd430a92bedb2f4f3dc9048d13523519ca33f89050af4519675938ed",
+    "executed_at": "2026-10-28T17:37:40.187414+00:00"
+  },
   "fully_reconciled_ufs": 0,
-  "scope": "Artifact integrity, required metadata and explicit source reconciliation states only. Source/physical page counts do not represent learnings or national completeness.",
+  "scope": "Artifact integrity and separately pinned executed documentary-gate snapshot. Legacy Source flags are not reconciliation proof. Own-source and required-document closure remain distinct; source/physical page counts do not represent learnings or national completeness.",
   "checks": [
     {
       "source_id": "ce-dcrc-ei-ef-2019",
@@ -159,9 +175,9 @@
     },
     {
       "source_id": "rn-documento-ei-2018",
-      "sha256": "f79982d796d12a9ad54ffc6dd7db887c59e070cdb2993957f307c73ed1318651",
+      "sha256": "3bd81df59cc129ec6cbf0646125fa5f76fdedbaa455b11d0363d845c9f14483b",
       "pdf_pages": 177,
-      "bytes": 19642369,
+      "bytes": 3147453,
       "result": "verified_local_artifact",
       "publication_eligible": true,
       "mandatory": true
@@ -585,6 +601,222 @@
       "sha256": "8e8a23b5e500d1ac4aae981c64bd2b6ec8f20e939f4b260701741e90ae5af8b9",
       "pdf_pages": 57,
       "bytes": 6743853,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-matematica-c6335b8d",
+      "sha256": "c6335b8d1961d8c3478c9a2def970dfd14d26bf606d9e3c15f427fbecdb301f4",
+      "pdf_pages": 55,
+      "bytes": 764361,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-arte-cb58c164",
+      "sha256": "cb58c1647f952ebc66761e7cf725da4a885b9acdc00d73db68fa9bd95fa3eb8b",
+      "pdf_pages": 37,
+      "bytes": 489916,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-educacao-fisica-d997d37c",
+      "sha256": "d997d37cc3c8b1a05c8ad42a3b29fd6bdea7506f86755cfc895a1d5f2213f682",
+      "pdf_pages": 59,
+      "bytes": 642119,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-lingua-inglesa-360febf4",
+      "sha256": "360febf484d1acba6567c9660cb58bf9035cf68e2740ab11c5205002cbff2a9b",
+      "pdf_pages": 32,
+      "bytes": 510077,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-lingua-portuguesa-f9f839b5",
+      "sha256": "f9f839b56f6a718515df9d5d0d2358c388258b3c2b596eecadfb1104b882b579",
+      "pdf_pages": 103,
+      "bytes": 1265489,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-filosofia-d3d771c6",
+      "sha256": "d3d771c6b0ef86b0e66736a6389da3adc4fa7c55a31495f3ffe006b4dd5eaee8",
+      "pdf_pages": 20,
+      "bytes": 401853,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-geografia-916f592c",
+      "sha256": "916f592ce7b4f230c0a2eb7f5ad7002e98cf5c9fe3fef5834ddf00e0907f393c",
+      "pdf_pages": 37,
+      "bytes": 563093,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-historia-d8799974",
+      "sha256": "d8799974119d10d3db8f483a60f959e97d7a32df75e5d5f14a7514141237636d",
+      "pdf_pages": 35,
+      "bytes": 538218,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-sociologia-7acc310e",
+      "sha256": "7acc310ee6d18afce13c8f5da0cceac8f184246b9cecc295ef628d6db0629353",
+      "pdf_pages": 17,
+      "bytes": 362413,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-biologia-7f902274",
+      "sha256": "7f9022743762eacc209bc199de2e8081fe209892d2a599fcb9a798e5f59bad5a",
+      "pdf_pages": 32,
+      "bytes": 508446,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-fisica-cd2ccadd",
+      "sha256": "cd2ccaddf37e176441928df24f02801fd5c790af8ff4a84a4b526f63d8ab1b32",
+      "pdf_pages": 30,
+      "bytes": 486288,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-quimica-007bc04c",
+      "sha256": "007bc04c823bea7cb17d2e148219372d12228bc13ca923ca757798d6ac549ecc",
+      "pdf_pages": 24,
+      "bytes": 419034,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-ifa-matriz-anexo-i-c4ba842e",
+      "sha256": "c4ba842e9fd17f7b0af3531721586765f8304e5571b5b29c7b54b70958a5627a",
+      "pdf_pages": 37,
+      "bytes": 1904971,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-ifa-matriz-anexo-ii-c6f9ef30",
+      "sha256": "c6f9ef30769137afec8ea0ac713f6d5051b5b9cd4e02b95dee8b7cf7aca5c5db",
+      "pdf_pages": 45,
+      "bytes": 2705944,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pi-computacao-em-2025",
+      "sha256": "e6eda1fbcf82e4fb5554ce121ec3b6c1bdf13c9345ef716658c0946a1a71e61f",
+      "pdf_pages": 137,
+      "bytes": 2156942,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ce-matrizes-2026",
+      "sha256": "676689026bd43a8e93e9785f1575c54b2922c5467468a6f6c6c4db06a3abd701",
+      "pdf_pages": 100,
+      "bytes": 22870882,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ce-resolucao-521-2025",
+      "sha256": "16a905b5d685d9d6a2209344c9a3ef210361b802e83a4b012b7f92fe198f558c",
+      "pdf_pages": 26,
+      "bytes": 5282076,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pi-resolucao-188-2025",
+      "sha256": "154db33551a1501916dca9eaf9ba1e428d2cb4f9bb3dec41603343be2416ad10",
+      "pdf_pages": 2,
+      "bytes": 707580,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pi-parecer-190-2025",
+      "sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+      "pdf_pages": 6,
+      "bytes": 4201834,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pb-proposta-ei-ef-cedoc",
+      "sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+      "pdf_pages": 392,
+      "bytes": 7115062,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ma-resolucao-211-2026-doe",
+      "sha256": "5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3",
+      "pdf_pages": 38,
+      "bytes": 1139909,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ma-portaria-181-2026-recomposicao-doe",
+      "sha256": "d24ce340f3d74c9461d99079d8fdf9aab9d720c024fad89b7d198af2990a8f7e",
+      "pdf_pages": 100,
+      "bytes": 2760281,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ba-resolucao-266-2025-computacao",
+      "sha256": "dae336de6d45da873386a66f01de53a483c790b502254c5faef3def5d5f00e17",
+      "pdf_pages": 21,
+      "bytes": 856939,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ba-resolucao-125-2024-historia",
+      "sha256": "7861ece3cb8b64980e39d5e54f1d2fcac4db0993c8c974a0d99232cb4b93d388",
+      "pdf_pages": 2,
+      "bytes": 673340,
       "result": "verified_local_artifact",
       "publication_eligible": true,
       "mandatory": true

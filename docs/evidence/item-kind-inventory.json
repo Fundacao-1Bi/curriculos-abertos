@@ -1,0 +1,2688 @@
+{
+  "at": "2026-10-28T17:41:31.578Z",
+  "producer": "src/domain/item-kinds.ts",
+  "policy": {
+    "version": "documentary-item-roles-2026-10-28-v4",
+    "unit": "unique_canonical_item_record",
+    "categories": {
+      "learning": [
+        "habilidade",
+        "objetivo_aprendizagem",
+        "competencia_geral",
+        "competencia_especifica",
+        "habilidade_ifa",
+        "habilidade_projeto_vida",
+        "competencia_comum_ifa",
+        "competencia_geral_computacao",
+        "competencia",
+        "competencia_profissional",
+        "competencia_geral_docente",
+        "capacidade",
+        "aprendizagem_especifica",
+        "conjunto_capacidades_demonstradas",
+        "objetivo_geral",
+        "objetivo_curso_especifico",
+        "habilidade_local_sem_codigo",
+        "habilidade_componente",
+        "habilidade_componente_sem_codigo",
+        "habilidade_eixo",
+        "habilidade_eixo_sem_codigo",
+        "sintese_aprendizagem"
+      ],
+      "formative_purpose": [
+        "objetivo_curso_geral",
+        "objetivo_trilha",
+        "objetivo_formativo",
+        "objetivo_curricular"
+      ],
+      "experience": [
+        "experiencia_aprendizagem",
+        "experiencia_sugerida"
+      ],
+      "rights": [
+        "direito_aprendizagem"
+      ],
+      "assessment": [
+        "criterio_avaliacao",
+        "sugestao_avaliacao_processual",
+        "indicador_observacao",
+        "orientacao_avaliacao"
+      ],
+      "normative": [
+        "preambulo",
+        "considerando",
+        "marcador_normativo",
+        "assinatura_documental",
+        "homologacao",
+        "objetivo_normativo",
+        "ato_normativo",
+        "preambulo_normativo",
+        "considerando_normativo",
+        "dispositivo_deliberativo",
+        "artigo_normativo",
+        "comando_publicacao",
+        "assinatura_normativa",
+        "capitulo_normativo",
+        "anexo_normativo",
+        "secao_anexo_normativo",
+        "quadro_normativo",
+        "registro_homologacao_publicacao",
+        "ementa_normativa",
+        "titulo_normativo",
+        "paragrafo_normativo",
+        "inciso_normativo",
+        "alinea_normativa",
+        "secao_ato_normativo",
+        "subsecao_normativa",
+        "assinatura_ato_normativo"
+      ],
+      "context": [
+        "campo_sintese_aprendizagem",
+        "acao_docente",
+        "contexto_curricular",
+        "contexto_observacao",
+        "contexto_planejamento",
+        "contexto_temas_integradores",
+        "orientacao_implementacao",
+        "orientacao_transicao",
+        "pilar_matriz_saberes",
+        "saber_curricular",
+        "reflexao_docente",
+        "rotulo_direito",
+        "tema_integrador",
+        "valor_principio",
+        "anexo_curricular",
+        "grupo_competencias",
+        "area_conhecimento",
+        "secao_normativa",
+        "principio_curricular",
+        "objeto_conhecimento",
+        "estrutura_curricular",
+        "palavra_chave_habilidade",
+        "referencial",
+        "grupo_curricular",
+        "etapa",
+        "componente_curricular",
+        "campo_experiencias",
+        "descricao_campo_experiencias",
+        "grupo_etario",
+        "unidade_tematica",
+        "eixo",
+        "campo_atuacao",
+        "pratica_linguagem",
+        "orientacao_docente",
+        "campo_experiencia",
+        "ciclo_escolar",
+        "ano_escolar",
+        "linguagem_artistica",
+        "curso_tecnico",
+        "itinerario_formativo",
+        "unidade_curricular",
+        "eixo_estruturante",
+        "orientacao_metodologica",
+        "apresentacao",
+        "secao_curricular",
+        "abordagem_interdisciplinar",
+        "periodo_curricular",
+        "tematica",
+        "desdobramento",
+        "tema_transversal",
+        "producao_sugerida",
+        "volume_documental",
+        "quadro_curricular",
+        "eixo_computacao",
+        "etapa_curricular",
+        "pilar_estruturante",
+        "etapa_fluxo_pedagogico",
+        "referencia_no_documento",
+        "mencao_codigo",
+        "ementa",
+        "narrativa_curricular",
+        "credito_documental",
+        "rotulo_documental",
+        "organizador_curricular",
+        "metadado_documental",
+        "registro_documental",
+        "detalhamento_objetivo",
+        "orientacao_didatica",
+        "cartao_referencias_eixo",
+        "documento_curricular",
+        "ementa_curricular",
+        "entrada_indice_curricular",
+        "formacao_docente",
+        "grupo_areas_conhecimento",
+        "grupo_objetivos",
+        "grupo_referencias_eixos",
+        "indice_unidades_curriculares",
+        "matriz_curricular",
+        "modulo_curricular",
+        "problematica_curricular",
+        "quadro_habilidades_eixos",
+        "referencia_bibliografica",
+        "sugestao_didatico_metodologica",
+        "tema_contemporaneo_transversal",
+        "titulo_trilha",
+        "trilha_aprofundamento"
+      ]
+    },
+    "definition": "Aprendizagens são expectativas de aprendizagem ou qualificação explicitamente rotuladas pela fonte. Competências, capacidades, objetivos e habilidades mantêm tipos e granularidades diferentes. Blocos de capacidades contam como um registro; não se inventam subitens. Sínteses de aprendizagem EI são expectativas documentais heterogêneas, nunca pré-requisitos para EF nem evidência do desenvolvimento de um estudante. Classificação não valida a transcrição OCR nem substitui revisão documental. Experiências/propostas pedagógicas locais, finalidades de curso/trilha/componente, direitos, avaliação, contextos e normas são contados separadamente e continuam consultáveis. Tipos desconhecidos não são promovidos automaticamente a aprendizagens.",
+    "legacy_complement": "structural_or_documentary_items é o complemento histórico de learning_items; inclui também experiências/propostas pedagógicas, finalidades, direitos, avaliação e tipos não classificados, sem os rebatizar como estrutura ou normas."
+  },
+  "scope": "Inventory of kind labels across real uncoded sidecars, including overlapping versions/adapters. Occurrence counts are NOT deduplicated publication totals or national coverage evidence. Source manifest binding records configuration only; it does not prove import, literal verification, reconciliation, readiness, or publication.",
+  "counters": {
+    "files": 82,
+    "source_manifest_bound_files": 43,
+    "unbound_or_research_files": 39,
+    "all_sidecar_record_occurrences": 66394,
+    "source_manifest_bound_record_occurrences": 41323
+  },
+  "observed_kinds": 143,
+  "unclassified": [],
+  "kind_category_occurrences": {
+    "learning": 46939,
+    "formative_purpose": 504,
+    "experience": 896,
+    "rights": 1085,
+    "assessment": 505,
+    "normative": 1105,
+    "context": 15360,
+    "unclassified": 0
+  },
+  "kinds": [
+    {
+      "kind": "abordagem_interdisciplinar",
+      "sidecar_occurrences": 4,
+      "category": "context"
+    },
+    {
+      "kind": "acao_docente",
+      "sidecar_occurrences": 221,
+      "category": "context"
+    },
+    {
+      "kind": "alinea_normativa",
+      "sidecar_occurrences": 153,
+      "category": "normative"
+    },
+    {
+      "kind": "anexo_curricular",
+      "sidecar_occurrences": 2,
+      "category": "context"
+    },
+    {
+      "kind": "anexo_normativo",
+      "sidecar_occurrences": 1,
+      "category": "normative"
+    },
+    {
+      "kind": "ano_escolar",
+      "sidecar_occurrences": 133,
+      "category": "context"
+    },
+    {
+      "kind": "aprendizagem_especifica",
+      "sidecar_occurrences": 548,
+      "category": "learning"
+    },
+    {
+      "kind": "apresentacao",
+      "sidecar_occurrences": 1,
+      "category": "context"
+    },
+    {
+      "kind": "area_conhecimento",
+      "sidecar_occurrences": 33,
+      "category": "context"
+    },
+    {
+      "kind": "artigo_normativo",
+      "sidecar_occurrences": 266,
+      "category": "normative"
+    },
+    {
+      "kind": "assinatura_ato_normativo",
+      "sidecar_occurrences": 4,
+      "category": "normative"
+    },
+    {
+      "kind": "assinatura_documental",
+      "sidecar_occurrences": 2,
+      "category": "normative"
+    },
+    {
+      "kind": "assinatura_normativa",
+      "sidecar_occurrences": 4,
+      "category": "normative"
+    },
+    {
+      "kind": "ato_normativo",
+      "sidecar_occurrences": 12,
+      "category": "normative"
+    },
+    {
+      "kind": "campo_atuacao",
+      "sidecar_occurrences": 13,
+      "category": "context"
+    },
+    {
+      "kind": "campo_experiencia",
+      "sidecar_occurrences": 179,
+      "category": "context"
+    },
+    {
+      "kind": "campo_experiencias",
+      "sidecar_occurrences": 5,
+      "category": "context"
+    },
+    {
+      "kind": "campo_sintese_aprendizagem",
+      "sidecar_occurrences": 5,
+      "category": "context"
+    },
+    {
+      "kind": "capacidade",
+      "sidecar_occurrences": 838,
+      "category": "learning"
+    },
+    {
+      "kind": "capitulo_normativo",
+      "sidecar_occurrences": 47,
+      "category": "normative"
+    },
+    {
+      "kind": "cartao_referencias_eixo",
+      "sidecar_occurrences": 741,
+      "category": "context"
+    },
+    {
+      "kind": "ciclo_escolar",
+      "sidecar_occurrences": 28,
+      "category": "context"
+    },
+    {
+      "kind": "comando_publicacao",
+      "sidecar_occurrences": 2,
+      "category": "normative"
+    },
+    {
+      "kind": "competencia",
+      "sidecar_occurrences": 5004,
+      "category": "learning"
+    },
+    {
+      "kind": "competencia_comum_ifa",
+      "sidecar_occurrences": 20,
+      "category": "learning"
+    },
+    {
+      "kind": "competencia_especifica",
+      "sidecar_occurrences": 223,
+      "category": "learning"
+    },
+    {
+      "kind": "competencia_geral",
+      "sidecar_occurrences": 112,
+      "category": "learning"
+    },
+    {
+      "kind": "competencia_geral_computacao",
+      "sidecar_occurrences": 7,
+      "category": "learning"
+    },
+    {
+      "kind": "competencia_geral_docente",
+      "sidecar_occurrences": 10,
+      "category": "learning"
+    },
+    {
+      "kind": "competencia_profissional",
+      "sidecar_occurrences": 460,
+      "category": "learning"
+    },
+    {
+      "kind": "componente_curricular",
+      "sidecar_occurrences": 515,
+      "category": "context"
+    },
+    {
+      "kind": "conjunto_capacidades_demonstradas",
+      "sidecar_occurrences": 42,
+      "category": "learning"
+    },
+    {
+      "kind": "considerando",
+      "sidecar_occurrences": 2,
+      "category": "normative"
+    },
+    {
+      "kind": "considerando_normativo",
+      "sidecar_occurrences": 32,
+      "category": "normative"
+    },
+    {
+      "kind": "contexto_curricular",
+      "sidecar_occurrences": 539,
+      "category": "context"
+    },
+    {
+      "kind": "contexto_observacao",
+      "sidecar_occurrences": 22,
+      "category": "context"
+    },
+    {
+      "kind": "contexto_planejamento",
+      "sidecar_occurrences": 29,
+      "category": "context"
+    },
+    {
+      "kind": "contexto_temas_integradores",
+      "sidecar_occurrences": 74,
+      "category": "context"
+    },
+    {
+      "kind": "credito_documental",
+      "sidecar_occurrences": 92,
+      "category": "context"
+    },
+    {
+      "kind": "criterio_avaliacao",
+      "sidecar_occurrences": 42,
+      "category": "assessment"
+    },
+    {
+      "kind": "curso_tecnico",
+      "sidecar_occurrences": 3,
+      "category": "context"
+    },
+    {
+      "kind": "descricao_campo_experiencias",
+      "sidecar_occurrences": 5,
+      "category": "context"
+    },
+    {
+      "kind": "desdobramento",
+      "sidecar_occurrences": 11,
+      "category": "context"
+    },
+    {
+      "kind": "detalhamento_objetivo",
+      "sidecar_occurrences": 459,
+      "category": "context"
+    },
+    {
+      "kind": "direito_aprendizagem",
+      "sidecar_occurrences": 1085,
+      "category": "rights"
+    },
+    {
+      "kind": "dispositivo_deliberativo",
+      "sidecar_occurrences": 4,
+      "category": "normative"
+    },
+    {
+      "kind": "documento_curricular",
+      "sidecar_occurrences": 1,
+      "category": "context"
+    },
+    {
+      "kind": "eixo",
+      "sidecar_occurrences": 11,
+      "category": "context"
+    },
+    {
+      "kind": "eixo_computacao",
+      "sidecar_occurrences": 78,
+      "category": "context"
+    },
+    {
+      "kind": "eixo_estruturante",
+      "sidecar_occurrences": 42,
+      "category": "context"
+    },
+    {
+      "kind": "ementa",
+      "sidecar_occurrences": 1,
+      "category": "context"
+    },
+    {
+      "kind": "ementa_curricular",
+      "sidecar_occurrences": 362,
+      "category": "context"
+    },
+    {
+      "kind": "ementa_normativa",
+      "sidecar_occurrences": 3,
+      "category": "normative"
+    },
+    {
+      "kind": "entrada_indice_curricular",
+      "sidecar_occurrences": 198,
+      "category": "context"
+    },
+    {
+      "kind": "estrutura_curricular",
+      "sidecar_occurrences": 364,
+      "category": "context"
+    },
+    {
+      "kind": "etapa",
+      "sidecar_occurrences": 6,
+      "category": "context"
+    },
+    {
+      "kind": "etapa_curricular",
+      "sidecar_occurrences": 3,
+      "category": "context"
+    },
+    {
+      "kind": "etapa_fluxo_pedagogico",
+      "sidecar_occurrences": 7,
+      "category": "context"
+    },
+    {
+      "kind": "experiencia_aprendizagem",
+      "sidecar_occurrences": 585,
+      "category": "experience"
+    },
+    {
+      "kind": "experiencia_sugerida",
+      "sidecar_occurrences": 311,
+      "category": "experience"
+    },
+    {
+      "kind": "formacao_docente",
+      "sidecar_occurrences": 198,
+      "category": "context"
+    },
+    {
+      "kind": "grupo_areas_conhecimento",
+      "sidecar_occurrences": 7,
+      "category": "context"
+    },
+    {
+      "kind": "grupo_competencias",
+      "sidecar_occurrences": 2,
+      "category": "context"
+    },
+    {
+      "kind": "grupo_curricular",
+      "sidecar_occurrences": 259,
+      "category": "context"
+    },
+    {
+      "kind": "grupo_etario",
+      "sidecar_occurrences": 102,
+      "category": "context"
+    },
+    {
+      "kind": "grupo_objetivos",
+      "sidecar_occurrences": 66,
+      "category": "context"
+    },
+    {
+      "kind": "grupo_referencias_eixos",
+      "sidecar_occurrences": 198,
+      "category": "context"
+    },
+    {
+      "kind": "habilidade",
+      "sidecar_occurrences": 13125,
+      "category": "learning"
+    },
+    {
+      "kind": "habilidade_componente",
+      "sidecar_occurrences": 62,
+      "category": "learning"
+    },
+    {
+      "kind": "habilidade_componente_sem_codigo",
+      "sidecar_occurrences": 3413,
+      "category": "learning"
+    },
+    {
+      "kind": "habilidade_eixo",
+      "sidecar_occurrences": 733,
+      "category": "learning"
+    },
+    {
+      "kind": "habilidade_eixo_sem_codigo",
+      "sidecar_occurrences": 184,
+      "category": "learning"
+    },
+    {
+      "kind": "habilidade_ifa",
+      "sidecar_occurrences": 8,
+      "category": "learning"
+    },
+    {
+      "kind": "habilidade_local_sem_codigo",
+      "sidecar_occurrences": 478,
+      "category": "learning"
+    },
+    {
+      "kind": "habilidade_projeto_vida",
+      "sidecar_occurrences": 182,
+      "category": "learning"
+    },
+    {
+      "kind": "homologacao",
+      "sidecar_occurrences": 1,
+      "category": "normative"
+    },
+    {
+      "kind": "inciso_normativo",
+      "sidecar_occurrences": 393,
+      "category": "normative"
+    },
+    {
+      "kind": "indicador_observacao",
+      "sidecar_occurrences": 259,
+      "category": "assessment"
+    },
+    {
+      "kind": "indice_unidades_curriculares",
+      "sidecar_occurrences": 33,
+      "category": "context"
+    },
+    {
+      "kind": "itinerario_formativo",
+      "sidecar_occurrences": 5,
+      "category": "context"
+    },
+    {
+      "kind": "linguagem_artistica",
+      "sidecar_occurrences": 4,
+      "category": "context"
+    },
+    {
+      "kind": "marcador_normativo",
+      "sidecar_occurrences": 1,
+      "category": "normative"
+    },
+    {
+      "kind": "matriz_curricular",
+      "sidecar_occurrences": 344,
+      "category": "context"
+    },
+    {
+      "kind": "metadado_documental",
+      "sidecar_occurrences": 3,
+      "category": "context"
+    },
+    {
+      "kind": "modulo_curricular",
+      "sidecar_occurrences": 395,
+      "category": "context"
+    },
+    {
+      "kind": "objetivo_aprendizagem",
+      "sidecar_occurrences": 21310,
+      "category": "learning"
+    },
+    {
+      "kind": "objetivo_curricular",
+      "sidecar_occurrences": 16,
+      "category": "formative_purpose"
+    },
+    {
+      "kind": "objetivo_curso_especifico",
+      "sidecar_occurrences": 158,
+      "category": "learning"
+    },
+    {
+      "kind": "objetivo_curso_geral",
+      "sidecar_occurrences": 34,
+      "category": "formative_purpose"
+    },
+    {
+      "kind": "objetivo_formativo",
+      "sidecar_occurrences": 256,
+      "category": "formative_purpose"
+    },
+    {
+      "kind": "objetivo_geral",
+      "sidecar_occurrences": 3,
+      "category": "learning"
+    },
+    {
+      "kind": "objetivo_normativo",
+      "sidecar_occurrences": 8,
+      "category": "normative"
+    },
+    {
+      "kind": "objetivo_trilha",
+      "sidecar_occurrences": 198,
+      "category": "formative_purpose"
+    },
+    {
+      "kind": "objeto_conhecimento",
+      "sidecar_occurrences": 1472,
+      "category": "context"
+    },
+    {
+      "kind": "organizador_curricular",
+      "sidecar_occurrences": 100,
+      "category": "context"
+    },
+    {
+      "kind": "orientacao_avaliacao",
+      "sidecar_occurrences": 5,
+      "category": "assessment"
+    },
+    {
+      "kind": "orientacao_didatica",
+      "sidecar_occurrences": 180,
+      "category": "context"
+    },
+    {
+      "kind": "orientacao_docente",
+      "sidecar_occurrences": 7,
+      "category": "context"
+    },
+    {
+      "kind": "orientacao_implementacao",
+      "sidecar_occurrences": 36,
+      "category": "context"
+    },
+    {
+      "kind": "orientacao_metodologica",
+      "sidecar_occurrences": 13,
+      "category": "context"
+    },
+    {
+      "kind": "orientacao_transicao",
+      "sidecar_occurrences": 7,
+      "category": "context"
+    },
+    {
+      "kind": "palavra_chave_habilidade",
+      "sidecar_occurrences": 165,
+      "category": "context"
+    },
+    {
+      "kind": "paragrafo_normativo",
+      "sidecar_occurrences": 123,
+      "category": "normative"
+    },
+    {
+      "kind": "periodo_curricular",
+      "sidecar_occurrences": 3,
+      "category": "context"
+    },
+    {
+      "kind": "pilar_estruturante",
+      "sidecar_occurrences": 226,
+      "category": "context"
+    },
+    {
+      "kind": "pilar_matriz_saberes",
+      "sidecar_occurrences": 4,
+      "category": "context"
+    },
+    {
+      "kind": "pratica_linguagem",
+      "sidecar_occurrences": 9,
+      "category": "context"
+    },
+    {
+      "kind": "preambulo",
+      "sidecar_occurrences": 1,
+      "category": "normative"
+    },
+    {
+      "kind": "preambulo_normativo",
+      "sidecar_occurrences": 8,
+      "category": "normative"
+    },
+    {
+      "kind": "principio_curricular",
+      "sidecar_occurrences": 24,
+      "category": "context"
+    },
+    {
+      "kind": "problematica_curricular",
+      "sidecar_occurrences": 33,
+      "category": "context"
+    },
+    {
+      "kind": "producao_sugerida",
+      "sidecar_occurrences": 6,
+      "category": "context"
+    },
+    {
+      "kind": "quadro_curricular",
+      "sidecar_occurrences": 96,
+      "category": "context"
+    },
+    {
+      "kind": "quadro_habilidades_eixos",
+      "sidecar_occurrences": 4,
+      "category": "context"
+    },
+    {
+      "kind": "quadro_normativo",
+      "sidecar_occurrences": 1,
+      "category": "normative"
+    },
+    {
+      "kind": "referencia_bibliografica",
+      "sidecar_occurrences": 199,
+      "category": "context"
+    },
+    {
+      "kind": "referencia_no_documento",
+      "sidecar_occurrences": 585,
+      "category": "context"
+    },
+    {
+      "kind": "referencial",
+      "sidecar_occurrences": 6,
+      "category": "context"
+    },
+    {
+      "kind": "reflexao_docente",
+      "sidecar_occurrences": 45,
+      "category": "context"
+    },
+    {
+      "kind": "registro_documental",
+      "sidecar_occurrences": 1,
+      "category": "context"
+    },
+    {
+      "kind": "registro_homologacao_publicacao",
+      "sidecar_occurrences": 1,
+      "category": "normative"
+    },
+    {
+      "kind": "rotulo_direito",
+      "sidecar_occurrences": 30,
+      "category": "context"
+    },
+    {
+      "kind": "rotulo_documental",
+      "sidecar_occurrences": 52,
+      "category": "context"
+    },
+    {
+      "kind": "saber_curricular",
+      "sidecar_occurrences": 15,
+      "category": "context"
+    },
+    {
+      "kind": "secao_anexo_normativo",
+      "sidecar_occurrences": 17,
+      "category": "normative"
+    },
+    {
+      "kind": "secao_ato_normativo",
+      "sidecar_occurrences": 5,
+      "category": "normative"
+    },
+    {
+      "kind": "secao_curricular",
+      "sidecar_occurrences": 19,
+      "category": "context"
+    },
+    {
+      "kind": "secao_normativa",
+      "sidecar_occurrences": 5108,
+      "category": "context"
+    },
+    {
+      "kind": "sintese_aprendizagem",
+      "sidecar_occurrences": 19,
+      "category": "learning"
+    },
+    {
+      "kind": "subsecao_normativa",
+      "sidecar_occurrences": 2,
+      "category": "normative"
+    },
+    {
+      "kind": "sugestao_avaliacao_processual",
+      "sidecar_occurrences": 199,
+      "category": "assessment"
+    },
+    {
+      "kind": "sugestao_didatico_metodologica",
+      "sidecar_occurrences": 323,
+      "category": "context"
+    },
+    {
+      "kind": "tema_contemporaneo_transversal",
+      "sidecar_occurrences": 33,
+      "category": "context"
+    },
+    {
+      "kind": "tema_integrador",
+      "sidecar_occurrences": 19,
+      "category": "context"
+    },
+    {
+      "kind": "tema_transversal",
+      "sidecar_occurrences": 10,
+      "category": "context"
+    },
+    {
+      "kind": "tematica",
+      "sidecar_occurrences": 13,
+      "category": "context"
+    },
+    {
+      "kind": "titulo_normativo",
+      "sidecar_occurrences": 12,
+      "category": "normative"
+    },
+    {
+      "kind": "titulo_trilha",
+      "sidecar_occurrences": 33,
+      "category": "context"
+    },
+    {
+      "kind": "trilha_aprofundamento",
+      "sidecar_occurrences": 33,
+      "category": "context"
+    },
+    {
+      "kind": "unidade_curricular",
+      "sidecar_occurrences": 272,
+      "category": "context"
+    },
+    {
+      "kind": "unidade_tematica",
+      "sidecar_occurrences": 369,
+      "category": "context"
+    },
+    {
+      "kind": "valor_principio",
+      "sidecar_occurrences": 3,
+      "category": "context"
+    },
+    {
+      "kind": "volume_documental",
+      "sidecar_occurrences": 4,
+      "category": "context"
+    }
+  ],
+  "files": [
+    {
+      "path": "data/manifests/uncoded/ac-em-pv-items.json",
+      "sha256": "535611af0023abffda03e3b4cc899e5a4b02b286a224303d99f8cfde26114909",
+      "records": 158,
+      "source_bindings": [
+        {
+          "source_id": "ac-cru-em",
+          "manifest": "data/manifests/north.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "ac-cru-em"
+      ],
+      "by_kind": {
+        "secao_normativa": 6,
+        "objetivo_aprendizagem": 146,
+        "competencia": 6
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ac-objectives-items.json",
+      "sha256": "6309ec0a74b6b8ddb63b6c07ec59ad15f165bd0c7f07e19067ff2a075def3886",
+      "records": 2191,
+      "source_bindings": [
+        {
+          "source_id": "ac-cru-ei-ef",
+          "manifest": "data/manifests/north.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "ac-cru-ei-ef"
+      ],
+      "by_kind": {
+        "direito_aprendizagem": 725,
+        "objetivo_aprendizagem": 93,
+        "aprendizagem_especifica": 548,
+        "capacidade": 825
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/al-pv-items.json",
+      "sha256": "b45cbcbb3db2112a9bf0626b7c6cdc0b2f9acdd3bb00963b7bb47937e44d7b5d",
+      "records": 182,
+      "source_bindings": [
+        {
+          "source_id": "al-projeto-vida-guia-1",
+          "manifest": "data/manifests/northeast.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        },
+        {
+          "source_id": "al-projeto-vida-guia-2",
+          "manifest": "data/manifests/northeast.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        },
+        {
+          "source_id": "al-projeto-vida-guia-3",
+          "manifest": "data/manifests/northeast.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "al-projeto-vida-guia-1",
+        "al-projeto-vida-guia-2",
+        "al-projeto-vida-guia-3"
+      ],
+      "by_kind": {
+        "habilidade_projeto_vida": 182
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ap-rca614-items.json",
+      "sha256": "98ea0d2503f69bfd0ab488ebb87a1b606a21e39987bc51294b317dabbe814bdf",
+      "records": 2441,
+      "source_bindings": [
+        {
+          "source_id": "ap-rca-ei-ef-mec",
+          "manifest": "data/manifests/north.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "ap-rca-ei-ef-mec"
+      ],
+      "by_kind": {
+        "secao_normativa": 17,
+        "competencia_geral": 10,
+        "objetivo_normativo": 8,
+        "direito_aprendizagem": 6,
+        "campo_experiencia": 5,
+        "organizador_curricular": 99,
+        "objetivo_aprendizagem": 93,
+        "experiencia_aprendizagem": 465,
+        "competencia_especifica": 101,
+        "objetivo_formativo": 4,
+        "habilidade": 1633
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ba-resolucao-249-items.json",
+      "sha256": "49b5095aac436474f3b116ec7823bfb9282900c462801cdf374a153cab616ba1",
+      "records": 45,
+      "source_bindings": [
+        {
+          "source_id": "ba-resolucao-249-2026",
+          "manifest": "data/manifests/northeast.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "ba-resolucao-249-2026"
+      ],
+      "by_kind": {
+        "ato_normativo": 1,
+        "ementa_normativa": 1,
+        "preambulo_normativo": 1,
+        "considerando_normativo": 9,
+        "dispositivo_deliberativo": 1,
+        "capitulo_normativo": 8,
+        "artigo_normativo": 22,
+        "assinatura_normativa": 1,
+        "registro_homologacao_publicacao": 1
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/br-bncc-structure.json",
+      "sha256": "f3ad584e304e6f5694c8cd04d21d12507c268c3b00e44aeef7db86336fd61845",
+      "records": 1048,
+      "source_bindings": [
+        {
+          "source_id": "br-bncc-2018",
+          "manifest": "data/manifests/bncc-southeast.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "br-bncc-2018"
+      ],
+      "by_kind": {
+        "referencial": 1,
+        "grupo_curricular": 1,
+        "etapa": 3,
+        "area_conhecimento": 9,
+        "componente_curricular": 21,
+        "campo_experiencias": 5,
+        "descricao_campo_experiencias": 5,
+        "grupo_etario": 3,
+        "competencia_geral": 10,
+        "competencia_especifica": 105,
+        "direito_aprendizagem": 6,
+        "objeto_conhecimento": 775,
+        "unidade_tematica": 77,
+        "eixo": 5,
+        "campo_atuacao": 13,
+        "pratica_linguagem": 9
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/br-computacao-structure.json",
+      "sha256": "37a152d183a5dd56681c5922d0c4120dc04950853cd5e332c14899dcb50a8499",
+      "records": 80,
+      "source_bindings": [
+        {
+          "source_id": "br-bncc-computacao-2022",
+          "manifest": "data/manifests/bncc-southeast.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "br-bncc-computacao-2022"
+      ],
+      "by_kind": {
+        "referencial": 1,
+        "etapa": 3,
+        "competencia_geral_computacao": 7,
+        "competencia_especifica": 7,
+        "eixo": 3,
+        "objeto_conhecimento": 59
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/br-dcn-2024-normative.json",
+      "sha256": "354a2775791186304054251cabc50910e2a983b62cac9df0f58a243724d48537",
+      "records": 347,
+      "source_bindings": [
+        {
+          "source_id": "br-dcn-em-2024",
+          "manifest": "data/manifests/bncc-southeast.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "br-dcn-em-2024"
+      ],
+      "by_kind": {
+        "preambulo_normativo": 1,
+        "ato_normativo": 1,
+        "titulo_normativo": 5,
+        "capitulo_normativo": 9,
+        "artigo_normativo": 44,
+        "paragrafo_normativo": 61,
+        "credito_documental": 22,
+        "inciso_normativo": 152,
+        "alinea_normativa": 47,
+        "secao_ato_normativo": 2,
+        "subsecao_normativa": 2,
+        "assinatura_ato_normativo": 1
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/br-digital-2025-normative.json",
+      "sha256": "ca4d9172e585a22ea9006a46d422f3d152ca977811300f06a72366efc0d118a4",
+      "records": 164,
+      "source_bindings": [
+        {
+          "source_id": "br-educacao-digital-midiatica-2025",
+          "manifest": "data/manifests/bncc-southeast.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "br-educacao-digital-midiatica-2025"
+      ],
+      "by_kind": {
+        "preambulo_normativo": 1,
+        "ato_normativo": 1,
+        "titulo_normativo": 3,
+        "capitulo_normativo": 13,
+        "artigo_normativo": 42,
+        "paragrafo_normativo": 44,
+        "credito_documental": 13,
+        "inciso_normativo": 43,
+        "secao_ato_normativo": 3,
+        "assinatura_ato_normativo": 1
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/br-if-2019-structure.json",
+      "sha256": "92e202363a9ef23f735bf227a8205616e978140f9e0b497531354485461f623d",
+      "records": 217,
+      "source_bindings": [
+        {
+          "source_id": "br-referenciais-if-2019",
+          "manifest": "data/manifests/bncc-southeast.json",
+          "include_in_corpus": true,
+          "publication_eligible": true
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "br-referenciais-if-2019"
+      ],
+      "by_kind": {
+        "referencial": 1,
+        "credito_documental": 9,
+        "grupo_curricular": 57,
+        "secao_normativa": 34,
+        "objetivo_formativo": 16,
+        "eixo_estruturante": 12,
+        "habilidade": 72,
+        "area_conhecimento": 16
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/br-ifa-2025-annex.json",
+      "sha256": "b01e92b37eaa65db3d43a6b4c9ef510acbfd087e4a8631bad937fe9ca6fabee5",
+      "records": 58,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "br-ifa-parametros-2025"
+      ],
+      "by_kind": {
+        "anexo_curricular": 1,
+        "grupo_competencias": 1,
+        "competencia_comum_ifa": 10,
+        "area_conhecimento": 4,
+        "objetivo_aprendizagem": 21,
+        "conjunto_capacidades_demonstradas": 21
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/br-ifa-2025-normative-only.json",
+      "sha256": "df24d5486fe34fb14ba7c3c19a9f94bbeced119c675fc3a14e7a00359362dae7",
+      "records": 225,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "br-ifa-parametros-2025"
+      ],
+      "by_kind": {
+        "preambulo_normativo": 1,
+        "ato_normativo": 1,
+        "titulo_normativo": 2,
+        "artigo_normativo": 31,
+        "inciso_normativo": 99,
+        "credito_documental": 24,
+        "paragrafo_normativo": 9,
+        "capitulo_normativo": 4,
+        "alinea_normativa": 53,
+        "assinatura_ato_normativo": 1
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/br-ifa-2025-normative-with-annex.json",
+      "sha256": "6bef077afac647484fb8aa8da987a6e3cf14a108a8ec5f20fd16106c9faf8b03",
+      "records": 335,
+      "source_bindings": [
+        {
+          "source_id": "br-ifa-parametros-2025",
+          "manifest": "data/manifests/bncc-southeast.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "br-ifa-parametros-2025"
+      ],
+      "by_kind": {
+        "preambulo_normativo": 1,
+        "ato_normativo": 1,
+        "titulo_normativo": 2,
+        "artigo_normativo": 31,
+        "inciso_normativo": 99,
+        "credito_documental": 24,
+        "paragrafo_normativo": 9,
+        "capitulo_normativo": 4,
+        "alinea_normativa": 53,
+        "assinatura_ato_normativo": 1,
+        "anexo_curricular": 1,
+        "grupo_competencias": 1,
+        "competencia_comum_ifa": 10,
+        "area_conhecimento": 4,
+        "objetivo_aprendizagem": 21,
+        "conjunto_capacidades_demonstradas": 21,
+        "rotulo_documental": 52
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/br-structure-input.json",
+      "sha256": "b1147eed1c277ed0818e1024d042ab1cb947a1514aec922c989144f6f4722235",
+      "records": 0,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [],
+      "by_kind": {}
+    },
+    {
+      "path": "data/manifests/uncoded/df-digital-complete-context-df-competencias-digitais-vol2.json",
+      "sha256": "f40c428c23f93e11b386524b64e14ca05657647744889505157d6f623caae04a",
+      "records": 552,
+      "source_bindings": [
+        {
+          "source_id": "df-competencias-digitais-vol2",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "df-competencias-digitais-vol2"
+      ],
+      "by_kind": {
+        "volume_documental": 1,
+        "quadro_curricular": 2,
+        "grupo_etario": 4,
+        "eixo_computacao": 12,
+        "campo_experiencia": 57,
+        "objetivo_aprendizagem": 395,
+        "secao_normativa": 77,
+        "orientacao_metodologica": 4
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/df-digital-complete-context-df-competencias-digitais-vol3.json",
+      "sha256": "75a37ea54a1f1cd524ebb9ca9cd99b41dba16311e2d29c4a53910696f939d6ce",
+      "records": 1185,
+      "source_bindings": [
+        {
+          "source_id": "df-competencias-digitais-vol3",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "df-competencias-digitais-vol3"
+      ],
+      "by_kind": {
+        "volume_documental": 1,
+        "quadro_curricular": 9,
+        "ano_escolar": 9,
+        "eixo_computacao": 27,
+        "componente_curricular": 228,
+        "unidade_tematica": 25,
+        "objetivo_aprendizagem": 795,
+        "secao_normativa": 91
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/df-digital-items.json",
+      "sha256": "eaf5647402002573828836e30af8cd68db419586f3eaba391f0278b9199b58f8",
+      "records": 1565,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "df-competencias-digitais-vol2",
+        "df-competencias-digitais-vol3"
+      ],
+      "by_kind": {
+        "volume_documental": 2,
+        "quadro_curricular": 11,
+        "grupo_etario": 4,
+        "eixo_computacao": 39,
+        "campo_experiencia": 57,
+        "ano_escolar": 9,
+        "componente_curricular": 228,
+        "unidade_tematica": 25,
+        "objetivo_aprendizagem": 1190
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/df-hierarchy-items.json",
+      "sha256": "3e7702d2eab40a233c5b0e93c7cde944b2fe0b9b1c4311f5c5657a63c093a60a",
+      "records": 3065,
+      "source_bindings": [
+        {
+          "source_id": "df-cm-ei-2018",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        },
+        {
+          "source_id": "df-cm-ef-2018",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "df-cm-ef-2018",
+        "df-cm-ei-2018"
+      ],
+      "by_kind": {
+        "campo_experiencia": 5,
+        "ciclo_escolar": 28,
+        "grupo_etario": 15,
+        "componente_curricular": 9,
+        "ano_escolar": 103,
+        "unidade_tematica": 242,
+        "linguagem_artistica": 4,
+        "objetivo_aprendizagem": 2659
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/df-items.json",
+      "sha256": "6073b22d21b626a6b8d43efa532ef260fa897958a47629a82526b1fea82e61e4",
+      "records": 2659,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "df-cm-ef-2018",
+        "df-cm-ei-2018"
+      ],
+      "by_kind": {
+        "objetivo_aprendizagem": 2659
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/es-ef-competencies-prose-items.json",
+      "sha256": "fa99f01571389a5efdfdc68836f8f1c3c71736ace534a62698b6356bae8990e6",
+      "records": 98,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "es-curr-culo-es-2019-vol-02-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-da-natureza-e-matem-tica-m",
+        "es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso",
+        "es-curr-culo-es-2019-vol-04-ensino-fundamental-anos-iniciais-rea-de-linguagens-arte-e-educa-o-f-sica-mi",
+        "es-curr-culo-es-2019-vol-05-ensino-fundamental-anos-iniciais-rea-de-linguagens-l-ngua-portuguesa-miolo",
+        "es-curr-culo-es-2020-vol-06-ensino-fundamental-anos-finais-rea-de-ci-ncias-da-natureza-e-matem-tica-mio",
+        "es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m",
+        "es-curr-culo-es-2020-vol-08-ensino-fundamental-anos-finais-rea-de-linguagens-arte-educa-o-f-sica-e-l-ng",
+        "es-curr-culo-es-2020-vol-09-ensino-fundamental-anos-finais-rea-de-linguagens-l-ngua-portuguesa-miolo"
+      ],
+      "by_kind": {
+        "secao_normativa": 10,
+        "competencia": 80,
+        "objetivo_curricular": 8
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/es-ef-competencies-vol02.json",
+      "sha256": "ca3d271d0eba952637945dd6ef40b0574f8965d387b299c172d8974cb4acbef7",
+      "records": 494,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "es-curr-culo-es-2019-vol-02-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-da-natureza-e-matem-tica-m"
+      ],
+      "by_kind": {
+        "secao_normativa": 61,
+        "competencia": 433
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/es-ef-competencies-vol03.json",
+      "sha256": "77b8bdfb4ab08a70c9d7aa17153a7df19ab6ad6f4c01d0e44f4d1fb4e0563683",
+      "records": 506,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso"
+      ],
+      "by_kind": {
+        "secao_normativa": 66,
+        "competencia": 436,
+        "objetivo_curricular": 4
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/es-ef-competencies-vol04.json",
+      "sha256": "38044f312de1509c20fec6eb177b57f18479fa9332a71fd2d0dd75b2c6735291",
+      "records": 554,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "es-curr-culo-es-2019-vol-04-ensino-fundamental-anos-iniciais-rea-de-linguagens-arte-e-educa-o-f-sica-mi"
+      ],
+      "by_kind": {
+        "secao_normativa": 70,
+        "competencia": 484
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/es-ef-competencies-vol05.json",
+      "sha256": "91e53c4913182aadbd12e2741e0992f19867bf28e08a1f466257ab81f9208a1c",
+      "records": 422,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "es-curr-culo-es-2019-vol-05-ensino-fundamental-anos-iniciais-rea-de-linguagens-l-ngua-portuguesa-miolo"
+      ],
+      "by_kind": {
+        "secao_normativa": 52,
+        "competencia": 370
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/es-ef-competencies-vol06.json",
+      "sha256": "9b166689e3228cd56b84822a7508dcba9e6dd9e8e589e301b9462a1d65ba04bf",
+      "records": 525,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "es-curr-culo-es-2020-vol-06-ensino-fundamental-anos-finais-rea-de-ci-ncias-da-natureza-e-matem-tica-mio"
+      ],
+      "by_kind": {
+        "secao_normativa": 60,
+        "competencia": 465
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/es-ef-competencies-vol07.json",
+      "sha256": "8deed271af92f983b063e3f03bb85ddc95c25db7b777652b3096235c9e9f3cdc",
+      "records": 831,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m"
+      ],
+      "by_kind": {
+        "secao_normativa": 93,
+        "competencia": 734,
+        "objetivo_curricular": 4
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/es-ef-competencies-vol08.json",
+      "sha256": "950ea07f4bd49988e6370311f7ba6de50ada9ca62b6350d93e6664b1c44c9dae",
+      "records": 928,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "es-curr-culo-es-2020-vol-08-ensino-fundamental-anos-finais-rea-de-linguagens-arte-educa-o-f-sica-e-l-ng"
+      ],
+      "by_kind": {
+        "secao_normativa": 112,
+        "competencia": 816
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/es-ef-competencies-vol09.json",
+      "sha256": "d6d6b58d0d643853870f530928447c7f7c19896cd386944cda911c6f09699030",
+      "records": 1052,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "es-curr-culo-es-2020-vol-09-ensino-fundamental-anos-finais-rea-de-linguagens-l-ngua-portuguesa-miolo"
+      ],
+      "by_kind": {
+        "secao_normativa": 107,
+        "competencia": 945
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/es-ei-items.json",
+      "sha256": "f902d3329425890bdb993ba64fa7fcbcf5bf779b1ad899f3fd70d3f4c8346d3d",
+      "records": 1309,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026"
+      ],
+      "by_kind": {
+        "secao_normativa": 77,
+        "campo_experiencia": 5,
+        "direito_aprendizagem": 36,
+        "grupo_etario": 15,
+        "contexto_planejamento": 29,
+        "acao_docente": 221,
+        "contexto_observacao": 22,
+        "indicador_observacao": 259,
+        "principio_curricular": 3,
+        "valor_principio": 3,
+        "pilar_matriz_saberes": 4,
+        "contexto_curricular": 539,
+        "saber_curricular": 15,
+        "reflexao_docente": 45,
+        "orientacao_avaliacao": 5,
+        "orientacao_transicao": 7,
+        "campo_sintese_aprendizagem": 5,
+        "sintese_aprendizagem": 19
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/es-temas-items.json",
+      "sha256": "917160fabe55d76c2d99bd9f0ee9a0a7565e6bcaae4f81087dda38cec5358760",
+      "records": 130,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "es-tema-integrador-final-24-10"
+      ],
+      "by_kind": {
+        "secao_normativa": 1,
+        "tema_integrador": 19,
+        "contexto_temas_integradores": 74,
+        "orientacao_implementacao": 36
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/go-em-uncoded-items.json",
+      "sha256": "dbc441a6e756f0e31c9010ec83fe37d7c472616f3565324b70fc954729144135",
+      "records": 443,
+      "source_bindings": [
+        {
+          "source_id": "go-dcgoem-portal-atual",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "go-dcgoem-portal-atual"
+      ],
+      "by_kind": {
+        "curso_tecnico": 3,
+        "itinerario_formativo": 4,
+        "unidade_curricular": 63,
+        "habilidade": 281,
+        "objetivo_aprendizagem": 92
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ma-181-items.json",
+      "sha256": "e3e12025f883a2468ee8e15e03cc1dc9ccef9317c7a7e3bfd1f609146e4ab296",
+      "records": 76,
+      "source_bindings": [
+        {
+          "source_id": "ma-portaria-181-2026-recomposicao-doe",
+          "manifest": "data/manifests/northeast.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "ma-portaria-181-2026-recomposicao-doe"
+      ],
+      "by_kind": {
+        "ato_normativo": 1,
+        "ementa_normativa": 1,
+        "preambulo_normativo": 1,
+        "considerando_normativo": 10,
+        "dispositivo_deliberativo": 1,
+        "capitulo_normativo": 9,
+        "artigo_normativo": 25,
+        "comando_publicacao": 1,
+        "assinatura_normativa": 1,
+        "anexo_normativo": 1,
+        "secao_anexo_normativo": 17,
+        "quadro_normativo": 1,
+        "etapa_fluxo_pedagogico": 7
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ma-211-items.json",
+      "sha256": "7e62414648b4172dcf6eae4d3f028046ab0eb0351ec93f7f28d9fe3963bfdc64",
+      "records": 19,
+      "source_bindings": [
+        {
+          "source_id": "ma-resolucao-211-2026-doe",
+          "manifest": "data/manifests/northeast.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "ma-resolucao-211-2026-doe"
+      ],
+      "by_kind": {
+        "ato_normativo": 1,
+        "ementa_normativa": 1,
+        "preambulo_normativo": 1,
+        "considerando_normativo": 8,
+        "dispositivo_deliberativo": 1,
+        "artigo_normativo": 6,
+        "assinatura_normativa": 1
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/mg-ept-quadro37-items.json",
+      "sha256": "54bb8bb64958e40183e5c89170ee8328aa9d3eb6a1f6e59852d815476695e1a5",
+      "records": 24,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "mg-crmg-em"
+      ],
+      "by_kind": {
+        "quadro_curricular": 1,
+        "competencia": 4,
+        "habilidade": 19
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ms-pv-2024-items.json",
+      "sha256": "77eb9feaa003382a73741f36f3379d83aa945debae1cd128b7ad95513e781f08",
+      "records": 681,
+      "source_bindings": [
+        {
+          "source_id": "ms-projeto-vida-orientacoes-2024",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "ms-projeto-vida-orientacoes-2024"
+      ],
+      "by_kind": {
+        "etapa_curricular": 3,
+        "ano_escolar": 12,
+        "quadro_curricular": 73,
+        "habilidade": 141,
+        "pilar_estruturante": 226,
+        "objeto_conhecimento": 226
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ms-pv-2024-primary-text-checks.json",
+      "sha256": "e8a0b14c448fd2e08bc58f5be10c6b883ebdf9ce7c0e874ecdfbc9c36bfd1c9d",
+      "records": 0,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [],
+      "by_kind": {}
+    },
+    {
+      "path": "data/manifests/uncoded/pa-dcepa-habilidades-v1-combined-items.json",
+      "sha256": "7294cebd0c8cd3008c7f9498312cd66268843aeabcbd94c4a158651cd7de9ed6",
+      "records": 4027,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "pa-dcepa-ei-ef"
+      ],
+      "by_kind": {
+        "competencia": 41,
+        "direito_aprendizagem": 6,
+        "secao_normativa": 749,
+        "objetivo_aprendizagem": 1176,
+        "habilidade": 2055
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/pa-dcepa-habilidades-v1-items.json",
+      "sha256": "2ecc8449b8723bbc56264aa3eda770f8924bea778e79e2a9cbe762e6d06667ca",
+      "records": 2055,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "pa-dcepa-ei-ef"
+      ],
+      "by_kind": {
+        "habilidade": 2055
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/pa-dcepa-items.json",
+      "sha256": "946e4f16523b127bbbf35e15947655bd52a6d890920cc3e7cce49753b35c424b",
+      "records": 1972,
+      "source_bindings": [
+        {
+          "source_id": "pa-dcepa-ei-ef",
+          "manifest": "data/manifests/north.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "pa-dcepa-ei-ef"
+      ],
+      "by_kind": {
+        "competencia": 41,
+        "direito_aprendizagem": 6,
+        "secao_normativa": 749,
+        "objetivo_aprendizagem": 1176
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/pa-dcepa-narrative-items.json",
+      "sha256": "8378eecbf09b7044011a99bb9ae2f72a6897a60cefc98e55f21ff434071eff1b",
+      "records": 51,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "pa-dcepa-ei-ef"
+      ],
+      "by_kind": {
+        "competencia": 41,
+        "objetivo_aprendizagem": 4,
+        "direito_aprendizagem": 6
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/pb-cedoc-392-items.json",
+      "sha256": "4336a71d0676c2b48f1e363e06f4ef0368c0eba9e2980ff3fc3c79f2865f998b",
+      "records": 1946,
+      "source_bindings": [
+        {
+          "source_id": "pb-proposta-ei-ef-cedoc",
+          "manifest": "data/manifests/northeast.json",
+          "include_in_corpus": true,
+          "publication_eligible": true
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "pb-proposta-ei-ef-cedoc"
+      ],
+      "by_kind": {
+        "direito_aprendizagem": 111,
+        "secao_normativa": 32,
+        "objetivo_aprendizagem": 1554,
+        "principio_curricular": 15,
+        "habilidade": 234
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/pb-eief-indigenous.json",
+      "sha256": "98022b5d4795ac6da5fcf67f4a5a09df41552c184f40b0dd9a5973ab1a161dd9",
+      "records": 180,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "pb-proposta-ei-ef"
+      ],
+      "by_kind": {
+        "secao_normativa": 42,
+        "objetivo_aprendizagem": 63,
+        "competencia": 54,
+        "criterio_avaliacao": 21
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/pb-eief-items.json",
+      "sha256": "b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514",
+      "records": 2008,
+      "source_bindings": [
+        {
+          "source_id": "pb-proposta-ei-ef",
+          "manifest": "data/manifests/northeast.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "pb-proposta-ei-ef"
+      ],
+      "by_kind": {
+        "objetivo_aprendizagem": 1620,
+        "direito_aprendizagem": 28,
+        "principio_curricular": 6,
+        "habilidade": 234,
+        "objetivo_geral": 3,
+        "secao_normativa": 42,
+        "competencia": 54,
+        "criterio_avaliacao": 21
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/pe-historia-items.json",
+      "sha256": "965ce2a8f721785c3c3d2f52038ed0bd72b795487aaf65de75419f0113290c9c",
+      "records": 91,
+      "source_bindings": [
+        {
+          "source_id": "pe-historia-pernambuco-2026",
+          "manifest": "data/manifests/northeast.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "pe-historia-pernambuco-2026"
+      ],
+      "by_kind": {
+        "itinerario_formativo": 1,
+        "apresentacao": 1,
+        "secao_curricular": 19,
+        "orientacao_metodologica": 5,
+        "abordagem_interdisciplinar": 4,
+        "periodo_curricular": 3,
+        "tematica": 13,
+        "desdobramento": 11,
+        "eixo_estruturante": 10,
+        "tema_transversal": 10,
+        "habilidade_ifa": 8,
+        "producao_sugerida": 6
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/pi-resolucao-188-2025-items.json",
+      "sha256": "fa56051d8e4677615a33e5d2d1edea7634cdde1330b9b274698377b7f56180e2",
+      "records": 14,
+      "source_bindings": [
+        {
+          "source_id": "pi-resolucao-188-2025",
+          "manifest": "data/manifests/northeast.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "pi-resolucao-188-2025"
+      ],
+      "by_kind": {
+        "ato_normativo": 1,
+        "metadado_documental": 3,
+        "ementa": 1,
+        "preambulo": 1,
+        "considerando": 2,
+        "marcador_normativo": 1,
+        "artigo_normativo": 1,
+        "registro_documental": 1,
+        "assinatura_documental": 2,
+        "homologacao": 1
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/pr-digital-items.json",
+      "sha256": "35ad4720031179adc7b826ba4e1d0aff51077af95e0f0be6e799148a54b47b56",
+      "records": 68,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "pr-referencial-eief-2025"
+      ],
+      "by_kind": {
+        "habilidade_local_sem_codigo": 68
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/pr-items.json",
+      "sha256": "55ead34e8c38e912c5eba83549c7fd92765375cdfb5efe0566d0f94af4c1ae00",
+      "records": 3971,
+      "source_bindings": [
+        {
+          "source_id": "pr-referencial-eief-2025",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "pr-referencial-eief-2025"
+      ],
+      "by_kind": {
+        "objetivo_aprendizagem": 3896,
+        "orientacao_docente": 7,
+        "habilidade_local_sem_codigo": 68
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/rj-ei-rights.json",
+      "sha256": "7286b5d5415afb3e89cad75406a77320213695931d3946da59ea0eca65b47c8e",
+      "records": 30,
+      "source_bindings": [
+        {
+          "source_id": "rj-doc-eief-2019",
+          "manifest": "data/manifests/bncc-southeast.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "rj-doc-eief-2019"
+      ],
+      "by_kind": {
+        "direito_aprendizagem": 30
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/rn-portaria-11123-items.json",
+      "sha256": "fabbccb6eb933ba772b2c17c0cb0984d332323c7d5626e04ef9821ac9718649f",
+      "records": 12,
+      "source_bindings": [
+        {
+          "source_id": "rn-portaria-11123-2025",
+          "manifest": "data/manifests/northeast.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "rn-portaria-11123-2025"
+      ],
+      "by_kind": {
+        "ato_normativo": 1,
+        "preambulo_normativo": 1,
+        "considerando_normativo": 5,
+        "dispositivo_deliberativo": 1,
+        "artigo_normativo": 2,
+        "comando_publicacao": 1,
+        "assinatura_normativa": 1
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/rn-trilhas-items.json",
+      "sha256": "551f90cca125541f09975b3d62f8457695a4cdc7a742f096360f609854749602",
+      "records": 3851,
+      "source_bindings": [
+        {
+          "source_id": "rn-trilhas-aprofundamento",
+          "manifest": "data/manifests/northeast.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "rn-trilhas-aprofundamento"
+      ],
+      "by_kind": {
+        "documento_curricular": 1,
+        "grupo_areas_conhecimento": 7,
+        "trilha_aprofundamento": 33,
+        "grupo_objetivos": 66,
+        "objetivo_aprendizagem": 185,
+        "indice_unidades_curriculares": 33,
+        "entrada_indice_curricular": 198,
+        "titulo_trilha": 33,
+        "tema_contemporaneo_transversal": 33,
+        "problematica_curricular": 33,
+        "unidade_curricular": 198,
+        "modulo_curricular": 395,
+        "formacao_docente": 198,
+        "grupo_referencias_eixos": 198,
+        "ementa_curricular": 362,
+        "objeto_conhecimento": 396,
+        "sugestao_didatico_metodologica": 323,
+        "sugestao_avaliacao_processual": 199,
+        "referencia_bibliografica": 199,
+        "cartao_referencias_eixo": 741,
+        "quadro_habilidades_eixos": 4,
+        "eixo_estruturante": 16
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ro-digital-ei-primary-organizer.json",
+      "sha256": "244252c9163f77d1665718b0a1e4af1a9d3516428b7ef2d7443d03c43e4772af",
+      "records": 168,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "ro-educacao-digital-2026"
+      ],
+      "by_kind": {
+        "organizador_curricular": 1,
+        "eixo": 3,
+        "grupo_etario": 1,
+        "objetivo_aprendizagem": 11,
+        "experiencia_sugerida": 32,
+        "referencia_no_documento": 119,
+        "objetivo_formativo": 1
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ro-ef-spanish-complete.json",
+      "sha256": "38a049fbe79b2a6a588fc1ac352d953ca16c6a85ddc147aab177ef017838fba4",
+      "records": 149,
+      "source_bindings": [
+        {
+          "source_id": "ro-rcro-ef",
+          "manifest": "data/manifests/north.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "ro-rcro-ef"
+      ],
+      "by_kind": {
+        "componente_curricular": 1,
+        "grupo_curricular": 4,
+        "habilidade": 144
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ro-ei-complete-primary.json",
+      "sha256": "614d26c2a9ef233ad290d0b879a934954a7eaa9be0eca209c31177b539e9d8a7",
+      "records": 773,
+      "source_bindings": [
+        {
+          "source_id": "ro-rcro-ei",
+          "manifest": "data/manifests/north.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "ro-rcro-ei"
+      ],
+      "by_kind": {
+        "referencial": 1,
+        "grupo_curricular": 17,
+        "campo_experiencia": 5,
+        "referencia_no_documento": 1,
+        "grupo_etario": 15,
+        "objetivo_aprendizagem": 516,
+        "competencia_geral": 10,
+        "direito_aprendizagem": 35,
+        "secao_normativa": 173
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ro-eletivas-competency-fields-v3.json",
+      "sha256": "6feac57d112b6ee10ab26eb26533728c9d95b29cd95055b9f62a6da35d5e8a95",
+      "records": 915,
+      "source_bindings": [
+        {
+          "source_id": "ro-eletivas-2026",
+          "manifest": "data/manifests/north.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "ro-eletivas-2026"
+      ],
+      "by_kind": {
+        "grupo_curricular": 63,
+        "secao_normativa": 139,
+        "competencia_especifica": 2,
+        "objetivo_aprendizagem": 157,
+        "objetivo_formativo": 85,
+        "competencia_geral": 80,
+        "habilidade": 274,
+        "habilidade_local_sem_codigo": 40,
+        "capacidade": 9,
+        "referencia_no_documento": 66
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ro-eletivas-objectives-primary.json",
+      "sha256": "30f45aa4bc9ed3d3ad7f925cf1d5aa65d0be73b905bc2a4a56e846558f766bf2",
+      "records": 415,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "ro-eletivas-2026"
+      ],
+      "by_kind": {
+        "grupo_curricular": 44,
+        "secao_normativa": 137,
+        "competencia_especifica": 1,
+        "objetivo_aprendizagem": 157,
+        "objetivo_formativo": 75,
+        "competencia_geral": 1
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ro-eletivas-skill-fields-v2.json",
+      "sha256": "bcbdf02dd68566aeec6b2e22ad51f192454ea81c3e50f74854c4d3ec9c8797fd",
+      "records": 809,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "ro-eletivas-2026"
+      ],
+      "by_kind": {
+        "grupo_curricular": 62,
+        "secao_normativa": 137,
+        "competencia_especifica": 1,
+        "objetivo_aprendizagem": 157,
+        "objetivo_formativo": 75,
+        "competencia_geral": 1,
+        "habilidade": 274,
+        "habilidade_local_sem_codigo": 40,
+        "capacidade": 4,
+        "referencia_no_documento": 58
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ro-itinerarios-2026-native-structure.json",
+      "sha256": "ba08814d55062873d00d470ff7f85fe945cb0ccd4435c3a35e67b3041cd2620d",
+      "records": 32,
+      "source_bindings": [
+        {
+          "source_id": "ro-itinerarios-2026",
+          "manifest": "data/manifests/north.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "ro-itinerarios-2026"
+      ],
+      "by_kind": {
+        "ato_normativo": 1,
+        "artigo_normativo": 18,
+        "secao_normativa": 13
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ro-matrizes-2025-native-structure.json",
+      "sha256": "546b2190502a5eacbb3940792239e9eb8afb05b66d721190714c7bfb0a5b0589",
+      "records": 381,
+      "source_bindings": [
+        {
+          "source_id": "ro-matrizes-2025",
+          "manifest": "data/manifests/north.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "ro-matrizes-2025"
+      ],
+      "by_kind": {
+        "ato_normativo": 1,
+        "artigo_normativo": 24,
+        "secao_normativa": 26,
+        "matriz_curricular": 330
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ro-matrizes-2026-native-structure.json",
+      "sha256": "04788ff9cba9478e3adf1c1f573b89d6321f5acad932c31d027779938455c7e2",
+      "records": 42,
+      "source_bindings": [
+        {
+          "source_id": "ro-matrizes-2026",
+          "manifest": "data/manifests/north.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "ro-matrizes-2026"
+      ],
+      "by_kind": {
+        "ato_normativo": 1,
+        "artigo_normativo": 20,
+        "secao_normativa": 11,
+        "matriz_curricular": 10
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ro-rcem-lgg-organizer.json",
+      "sha256": "a6ae34de74db85aac316c6568f4c1f3c6cf5bd41483a6ae5a05435af6d5be6a4",
+      "records": 620,
+      "source_bindings": [
+        {
+          "source_id": "ro-rcem-2022",
+          "manifest": "data/manifests/north.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "ro-rcem-2022"
+      ],
+      "by_kind": {
+        "referencial": 1,
+        "matriz_curricular": 2,
+        "referencia_no_documento": 183,
+        "grupo_curricular": 11,
+        "habilidade": 133,
+        "componente_curricular": 28,
+        "habilidade_local_sem_codigo": 262
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/ro-rcem-progression-position-proof.json",
+      "sha256": "c973690d8b4d9a3b2f90fc3c35a38e1513d9da70f649f4bc03d4d64ab8303910",
+      "records": 0,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [],
+      "by_kind": {}
+    },
+    {
+      "path": "data/manifests/uncoded/ro-rcem-progressions.json",
+      "sha256": "faffba4c01ca9e85a2edf4201dc6bf96474e8deee7b441f38e63e3e161b2ae2c",
+      "records": 159,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "ro-rcem-2022"
+      ],
+      "by_kind": {
+        "referencial": 1,
+        "matriz_curricular": 2,
+        "referencia_no_documento": 156
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/rr-ei-organizers-age-v2-items.json",
+      "sha256": "98992856b485be462bac63fdaaf071c8c375d7584f8a01cadab70bedcc60a206",
+      "records": 346,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "rr-dcr-ei-ef"
+      ],
+      "by_kind": {
+        "referencia_no_documento": 1,
+        "campo_experiencia": 15,
+        "objetivo_aprendizagem": 90,
+        "experiencia_aprendizagem": 60,
+        "detalhamento_objetivo": 90,
+        "orientacao_didatica": 90
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/rr-ei-organizers-items.json",
+      "sha256": "f8a5d668ced4ab21e2223d8fb4e73926968806d1c23142e4f220f63d681ace84",
+      "records": 346,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "rr-dcr-ei-ef"
+      ],
+      "by_kind": {
+        "referencia_no_documento": 1,
+        "campo_experiencia": 15,
+        "objetivo_aprendizagem": 90,
+        "experiencia_aprendizagem": 60,
+        "detalhamento_objetivo": 90,
+        "orientacao_didatica": 90
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/rs-em-items.json",
+      "sha256": "00894701a2788c6043080376864edfb2591ca1eecf31cfdc2b4fb9d23934911d",
+      "records": 121,
+      "source_bindings": [
+        {
+          "source_id": "rs-rcg-em",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "rs-rcg-em"
+      ],
+      "by_kind": {
+        "secao_normativa": 5,
+        "habilidade": 75,
+        "unidade_curricular": 11,
+        "objeto_conhecimento": 10,
+        "eixo_estruturante": 4,
+        "objetivo_aprendizagem": 12,
+        "orientacao_metodologica": 4
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/sc-eief-items.json",
+      "sha256": "7aae29168b5d76834987b2fc3bdc8a38c9c9d82ef5c669a0da2e436d6e23ed6e",
+      "records": 1345,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "sc-cb-eief-2019-atual",
+        "sc-lingua-inglesa-ai"
+      ],
+      "by_kind": {
+        "habilidade": 1253,
+        "objeto_conhecimento": 3,
+        "objetivo_aprendizagem": 89
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/sc-em-ept-annex-items.json",
+      "sha256": "9f3a18a33e0db44f324afe8a5a24caeb65b9830e028b102ca7f5bfbf6b813eae",
+      "records": 62,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "sc-cb-em-caderno-6"
+      ],
+      "by_kind": {
+        "secao_normativa": 62
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/sc-em-ept-items.json",
+      "sha256": "0ceb6883d3c79ebe702e5685e533c77f616258ccb415bd11a65b99d4a7a43d1b",
+      "records": 6314,
+      "source_bindings": [
+        {
+          "source_id": "sc-cb-em-caderno-5",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        },
+        {
+          "source_id": "sc-cb-em-caderno-6",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "sc-cb-em-caderno-5",
+        "sc-cb-em-caderno-6"
+      ],
+      "by_kind": {
+        "objetivo_curso_geral": 34,
+        "objetivo_curso_especifico": 158,
+        "competencia_profissional": 460,
+        "objetivo_trilha": 198,
+        "objetivo_aprendizagem": 905,
+        "habilidade_componente_sem_codigo": 3413,
+        "competencia_geral_docente": 10,
+        "habilidade_componente": 62,
+        "habilidade_eixo_sem_codigo": 184,
+        "habilidade_eixo": 733,
+        "secao_normativa": 157
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/sc-em-items.json",
+      "sha256": "65ab8b27fb841dac96680bd860126d01d0a8d42d4761dbfcbf08d714d815bfcd",
+      "records": 404,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "sc-cb-em-caderno-2",
+        "sc-cb-em-caderno-4"
+      ],
+      "by_kind": {
+        "habilidade": 4,
+        "objetivo_aprendizagem": 400
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/sc-hierarchy-sc-cb-eief-2019-atual.json",
+      "sha256": "310111ae9f18732fd6a815ca2d903802a72f74ee6faf9cbb4e9306c694524255",
+      "records": 2114,
+      "source_bindings": [
+        {
+          "source_id": "sc-cb-eief-2019-atual",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "sc-cb-eief-2019-atual"
+      ],
+      "by_kind": {
+        "secao_normativa": 912,
+        "habilidade": 1110,
+        "objeto_conhecimento": 3,
+        "objetivo_aprendizagem": 89
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/sc-hierarchy-sc-cb-em-caderno-2.json",
+      "sha256": "e554c874a6bc5d1ab41f273ea94cb0796dbc8de3d15945bfa65e01836f98e0d9",
+      "records": 6,
+      "source_bindings": [
+        {
+          "source_id": "sc-cb-em-caderno-2",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "sc-cb-em-caderno-2"
+      ],
+      "by_kind": {
+        "secao_normativa": 2,
+        "habilidade": 4
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/sc-hierarchy-sc-cb-em-caderno-3.json",
+      "sha256": "d9d270d4e1ea3ded6dd27f691c66e8a9a0c5c987559389a41ded0ca462c0037c",
+      "records": 1430,
+      "source_bindings": [
+        {
+          "source_id": "sc-cb-em-caderno-3",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "sc-cb-em-caderno-3"
+      ],
+      "by_kind": {
+        "secao_normativa": 276,
+        "estrutura_curricular": 111,
+        "habilidade": 948,
+        "objetivo_aprendizagem": 40,
+        "palavra_chave_habilidade": 55
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/sc-hierarchy-sc-cb-em-caderno-4.json",
+      "sha256": "0ef3a1d0a0c56d934374b5dd89bfaac807517baf37f080ffd09ae56756c8f4d8",
+      "records": 570,
+      "source_bindings": [
+        {
+          "source_id": "sc-cb-em-caderno-4",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "sc-cb-em-caderno-4"
+      ],
+      "by_kind": {
+        "secao_normativa": 170,
+        "objetivo_aprendizagem": 400
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/sc-hierarchy-sc-lingua-inglesa-ai.json",
+      "sha256": "98f9c52bcf3620036362802d7103c962268ebffbe22f88bb05da35c75cb99924",
+      "records": 284,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "sc-lingua-inglesa-ai"
+      ],
+      "by_kind": {
+        "secao_normativa": 141,
+        "habilidade": 143
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/sc-li-ai-complete-items.json",
+      "sha256": "c5174064be009c797ec13334ff07894b552eac421f89184c7df9ff851701f904",
+      "records": 338,
+      "source_bindings": [
+        {
+          "source_id": "sc-lingua-inglesa-ai",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "sc-lingua-inglesa-ai"
+      ],
+      "by_kind": {
+        "secao_normativa": 158,
+        "habilidade": 143,
+        "estrutura_curricular": 31,
+        "competencia_especifica": 6
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/sc-res070-items.json",
+      "sha256": "c0b03183c7c8c35bd65b0de1bcf095937b4dd0c2f834c7fe4a68d4d2afae19ae",
+      "records": 35,
+      "source_bindings": [
+        {
+          "source_id": "sc-resolucao-070-2025",
+          "manifest": "data/manifests/central-south.json",
+          "include_in_corpus": true,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "sc-resolucao-070-2025"
+      ],
+      "by_kind": {
+        "secao_normativa": 35
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/sc-trilhas-all-items.json",
+      "sha256": "eb4abf0c3d9889ed79c17619329681bd62d848bfc25ab8facfcf805efcbb093f",
+      "records": 1157,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "sc-cb-em-caderno-3"
+      ],
+      "by_kind": {
+        "estrutura_curricular": 111,
+        "habilidade": 948,
+        "objetivo_aprendizagem": 40,
+        "palavra_chave_habilidade": 55,
+        "secao_normativa": 3
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/sc-trilhas-items.json",
+      "sha256": "99479a8b68d9162f2a827c255ba2521d51e8fcbdb0640df81141a333d1fa53f5",
+      "records": 46,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "sc-cb-em-caderno-3"
+      ],
+      "by_kind": {
+        "objetivo_aprendizagem": 40,
+        "secao_normativa": 1,
+        "estrutura_curricular": 5
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/sc-trilhas-table-items.json",
+      "sha256": "e7732ba41bf9dd0c2ec6032376ff707b6a6f64b6187053fcfa4fc4880097c7fe",
+      "records": 1111,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "sc-cb-em-caderno-3"
+      ],
+      "by_kind": {
+        "estrutura_curricular": 106,
+        "habilidade": 948,
+        "palavra_chave_habilidade": 55,
+        "secao_normativa": 2
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/to-ei-organizers-age-v2-items.json",
+      "sha256": "fbb08f66d3c681db8d842dc60d5c88fbb2ff74d2c2dad46283ac6717026841bd",
+      "records": 329,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "to-dct-ei"
+      ],
+      "by_kind": {
+        "direito_aprendizagem": 30,
+        "campo_experiencia": 5,
+        "grupo_etario": 15,
+        "objetivo_aprendizagem": 93,
+        "detalhamento_objetivo": 93,
+        "experiencia_sugerida": 93
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/to-ei-organizers-items.json",
+      "sha256": "5a922ebf4b2cb1dd49cf2a72c26ec37b31abab78706e14d451d2d69bf6266b6c",
+      "records": 329,
+      "source_bindings": [],
+      "binding_status": "unbound_sidecar_or_research",
+      "source_ids": [
+        "to-dct-ei"
+      ],
+      "by_kind": {
+        "direito_aprendizagem": 30,
+        "campo_experiencia": 5,
+        "grupo_etario": 15,
+        "objetivo_aprendizagem": 93,
+        "detalhamento_objetivo": 93,
+        "experiencia_sugerida": 93
+      }
+    },
+    {
+      "path": "data/manifests/uncoded/to-ei-rights-v3-items.json",
+      "sha256": "3e15a87ca5489c9afd5b6aca6e9aa2970e0ff6fe391d32fe168534ac9e1beeab",
+      "records": 359,
+      "source_bindings": [
+        {
+          "source_id": "to-dct-ei",
+          "manifest": "data/manifests/north.json",
+          "include_in_corpus": null,
+          "publication_eligible": null
+        }
+      ],
+      "binding_status": "source_manifest_bound",
+      "source_ids": [
+        "to-dct-ei"
+      ],
+      "by_kind": {
+        "direito_aprendizagem": 30,
+        "rotulo_direito": 30,
+        "campo_experiencia": 5,
+        "grupo_etario": 15,
+        "objetivo_aprendizagem": 93,
+        "detalhamento_objetivo": 93,
+        "experiencia_sugerida": 93
+      }
+    }
+  ]
+}

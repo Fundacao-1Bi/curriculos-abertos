@@ -1,0 +1,28 @@
+{
+  "classification": "diagnostic_concurrent_work_not_final_freeze",
+  "at": "2026-10-28T17:15:48.334415+00:00",
+  "command": "npm test",
+  "exit_code": 0,
+  "statistics": {
+    "tests": 91,
+    "pass": 91,
+    "fail": 0,
+    "skipped": 0
+  },
+  "test_database_policy": "Fresh runner-owned disposable PostgreSQL17.11-bookworm container/database; application main untouched",
+  "postgres_image_id": "sha256:8cd540d6ac172b5f392d9c70e67dad05b54074f75a144bb32e0f4f36793ac777",
+  "before_tree_sha256": "a2abf16f56400ef9d17107ad7fbe4b7cf4f5387b1ba5da87786eb43beb06b75a",
+  "after_tree_sha256": "ab7bcb3e8042f6c10e56a7d603e36d421e370124e2641d70924c436a91a53513",
+  "changed_since_start": [
+    "data/manifests/uncoded/es-ei-items.json",
+    "data/manifests/uncoded/es-ei-temas-adapter.py",
+    "data/manifests/uncoded/es-temas-items.json",
+    "data/manifests/uncoded/ms-pv-2024-primary-text-checks.json",
+    "data/manifests/uncoded/ms-pv-2024-primary-text-checks.py",
+    "data/manifests/uncoded/ro-eletivas-objectives-primary.json"
+  ],
+  "log": "docs/evidence/domain-suite-diagnostic.log",
+  "typecheck_exit_code": 0,
+  "targeted_eslint_exit_code": 0,
+  "limitation": "Concurrent source/manifests/code work; this is a diagnostic, not final immutable release verification."
+}

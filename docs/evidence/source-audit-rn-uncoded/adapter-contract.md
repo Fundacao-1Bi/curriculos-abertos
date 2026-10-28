@@ -1,0 +1,19 @@
+# RN Trilhas — contrato e histórico de implementação
+
+Fonte: `rn-trilhas-aprofundamento`, SHA `fac7333112fcfaac3d99d74f72f206bea8e9a4b256e770a9ea0f2eace99b027a`, PDF privado de 485 páginas. Ator autor automatizado: `agent:rs_adapter`; peer designado: `portal`, independente do parser autor. Este arquivo preserva as decisões iniciais; estado executado e hashes ficam em README.md, rn-trilhas-full-verification.json e rn-trilhas-integration-handoff.json. Não é certificado de prontidão de UF.
+
+O denominador de TOC/quadro foi produzido pelo peer antes dos outputs: 33 trilhas em sete grupos, com variantes literais preservadas. A arquitetura nominal de seis UCs e dois módulos não será imposta ao corpo. A varredura autoral fonte-only encontrou 198 cabeçalhos primários de UC, 33 fichas com dois cabeçalhos de objetivos cada e 152 marcadores vetoriais nos objetivos específicos, além dos 33 gerais. Os 617 rótulos físicos de módulos incluem continuações. O conjunto ainda precisa de partição integral e cotejo independente das células.
+
+A página 403 imprime “Módulo 1” em dois blocos distintos, com nova Ementa no bloco inferior direito. A segunda instância não será renomeada. Há 34 UCs com apenas uma Ementa impressa; em exemplos como a página 115 ela é compartilhada pela UC, fora das barras dos módulos. Portanto, Ementa não será usada automaticamente como prova de um módulo, nem duplicada para preencher expectativas.
+
+Hierarquia prevista: documento → grupo de área(s) → trilha → UC → módulo quando documentado → campo. Objetivos gerais/específicos explícitos pertencem à trilha; os específicos serão divididos pelos marcadores impressos, não pelos verbos ou ponto e vírgula. A formação do professor é requisito docente literal, não componente de aprendizagem inferido. Ano escolar/período não será deduzido de UC ou módulo.
+
+Ementas, objetos, sugestões metodológicas, avaliação e fontes terão tipos próprios. Seu texto inteiro e as continuações serão preservados por regiões físicas. Referências EMIF nos 741 cartões não receberão prosa vizinha como definição. Os 48 códigos definidos nas folhas 16–19 e as 2.882 referências já tipadas pelo helper serão preservados. Novos nós de cartão/eixo guardam os rótulos/códigos e seu âmbito; não declaram equivalência.
+
+O proprietário do pipeline implementou o contrato compartilhado de vínculo após `finalize_items`: `item_parent_links` admite `item_id`, ou seletor exato `page/locator/code`, mais `parent_key` e evidência. O fallback só por código agora rejeita ambiguidade. Será usado o seletor explícito para as referências repetidas, preservando seus IDs/textos/códigos/tipos/posições. Não haverá edição central por esta frente.
+
+A geometria usa cabeçalhos, cartões vetoriais e barras verticais de escopo com rótulo “UCn”/“Módulo n”, respeitando colunas e continuação. As barras distinguem campos compartilhados pela UC daqueles delimitados por módulo. Todos os fragmentos serão confrontados com o PDF; o peer será reativado com denominador/sidecar/provas para revisar todas as unidades/células. Seus arquivos iniciais estão em `source-audit-rn-fidelity/trilhas-toc-peer-denominator.json`.
+
+Restrição temporária do host: disco crítico. Nenhum novo render grande ou dump não comprimido até recuperação. O cache derivado de linhas foi comprimido sem perda para `var/private-evidence/source-audit-rn-uncoded/source-page-lines.json.gz`, recuperando cerca de 24,3 MB; o original não foi alterado.
+
+Estado atualizado: modelo integral, censo, sidecar3.851, vínculos2.930, parser real485p/importador/finalizador, esquema1.1.0, pais/ciclos, idempotência e nove controles negativos executados, sem falhas. Peer independente concluiu o censo e está terminando o cotejo dos escopos gráficos. Integração do Source pelo proprietário NE e incorporação nacional ainda são verificações separadas. O cotejo MS681/827 no futuro FULL imutável continua prioritário quando o pipeline enviar caminho e SHA.

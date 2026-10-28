@@ -30,7 +30,7 @@ RANGES=[(73,120,'Língua Portuguesa'),(121,178,'Arte'),(179,206,'Educação Fís
 # Radar graphics, an explicitly illustrative Art table, content-map and assessment rubric.
 ROWSET_CONTINUATIONS={(406,407),(408,409),(409,410),(410,411),(411,412),(412,413),(413,414),(414,415),(415,416),(416,417),(417,418),(438,439),(451,452)}
 EXCLUDED_TABLE_PAGES={143:'Explicit methodological example, not an additional organizer objective',145:'radar_graphic',146:'radar_graphic',150:'radar_graphic',151:'radar_graphic',161:'radar_graphic',162:'radar_graphic',171:'radar_graphic',172:'radar_graphic',185:'rights_table_processed_separately',186:'rights_table_processed_separately',191:'nominal_content_map_not_learning_objectives',446:'assessment_rubric_not_learning_objectives',447:'assessment_rubric_not_learning_objectives'}
-MARK=re.compile(r'^\s*(?:(\d+)\s*[-–—.]\s*|([\uf0b7•●\-–])\s*)(.*)',re.S)
+MARK=re.compile(r'^\s*(?:(\d+)\s*[-–—.]+\s*|([\uf0b7•●\-–])\s*)(.*)',re.S)
 GRADE=re.compile(r'((?:\d\s*[º°ª]?\s*(?:,|[Ee]|[Aa][Oo]?)?\s*)+)\s*[Aa][Nn][Oo][Ss]?')
 def component(pn):return next((c for lo,hi,c in RANGES if lo<=pn<=hi),None)
 def selected_lines(page,box):
@@ -102,8 +102,44 @@ def heading_events(p,c):
    events.append((bb[1],{'eja_cycle':txt,'cycle_evidence':ev,'years':None,'year_label':txt}))
  return sorted(events,key=lambda x:x[0])
 
+def reference_lines(native,pn,box,cache):
+ # Native PDF lines may physically span content and reference columns. Clip
+ # individual word centers to the actual reference cell instead of dropping
+ # the entire cross-column line. Literal separated tokens stay separated.
+ if pn not in cache:cache[pn]=native[pn-1].get_text('words')
+ x,y,xx,yy=box
+ words=sorted([w for w in cache[pn] if x-.5<=(w[0]+w[2])/2<=xx+.5 and y-.5<=(w[1]+w[3])/2<yy+.5],key=lambda w:(round(w[1],1),w[0]))
+ result=[]
+ for w in words:
+  if result and abs(result[-1]['bbox'][1]-w[1])<1.2:
+   l=result[-1];l['text']+=' '+w[4];l['bbox']=[min(l['bbox'][0],w[0]),min(l['bbox'][1],w[1]),max(l['bbox'][2],w[2]),max(l['bbox'][3],w[3])]
+  else:result.append({'text':w[4],'bbox':list(w[:4])})
+ return result
+
+def semantic_evidence(item):
+ # Keep the literal original source fragment alongside the semantic excerpt.
+ # Numbered-list markers and literal trailing code remain source metadata;
+ # neither becomes an extra word of the objective itself.
+ ev=item['evidence'];raw=norm(' '.join(e['excerpt'] for e in ev));text=norm(item['text'])
+ start=raw.find(text)
+ if start<0:raise ValueError(('semantic_evidence_not_contiguous',item['key'],raw,text))
+ end=start+len(text);offset=0;result=[];code_locator=None
+ for e in ev:
+  original=e['excerpt'];a=offset;b=a+len(original);offset=b+1
+  left=max(start,a)-a;right=min(end,b)-a
+  if right>left:
+   part=dict(e,source_original_excerpt=original,excerpt=original[left:right].strip());result.append(part)
+  elif item.get('code') and item['code'] in original:
+   result.append(dict(e,source_original_excerpt=original,excerpt=item['code'],evidence_role='code_locator'))
+  else:raise ValueError(('marker_only_fragment',item['key'],original))
+  if item.get('code') and item['code'] in original and right>left:
+   code_locator=dict(e,source_original_excerpt=original,excerpt=item['code'],evidence_role='code_locator',locator=e['locator']+'/literal-code')
+ if code_locator:result.append(code_locator)
+ assert norm(' '.join(e['excerpt'] for e in result if e.get('evidence_role')!='code_locator'))==text
+ item['evidence']=result
+
 def table_rows(s,pages):
- rows=[];inventory=[];excluded=[];ctx={};lastc=None;active=False
+ rows=[];inventory=[];excluded=[];ctx={};lastc=None;active=False;native=fitz.open(ROOT/s['local_path']);word_cache={}
  for p in pages:
   pn=p['page'];c=component(pn)
   if not c:continue
@@ -146,7 +182,7 @@ def table_rows(s,pages):
     refboxes=overlapping_cells(refcol) if refcol is not None else[]
     refls=[]
     for bb in refboxes:
-     for ll in selected_lines(p,bb):
+     for ll in reference_lines(native,pn,bb,word_cache):
       if ll not in refls:refls.append(ll)
     refls.sort(key=lambda l:(l['bbox'][1],l['bbox'][0]))
     reftext=norm(' '.join(l['text'] for l in refls));codes=CODE.findall(reftext)
@@ -266,17 +302,38 @@ def art_rights(s,pages):
    items.append(rec(s,None,m.group(2),pn,loc,position('Arte'),ev,{'document_part':'Arte','hierarchy':['Ensino Fundamental','Arte',language,'Direitos de aprendizagem'],'art_language':language,'official_code_absent':True,'reference_codes':[],'heading_evidence':{'page':first,'bbox':head['bbox'],'excerpt':norm(head['text'])}},'direito_aprendizagem',m.group(1)))
  return items
 
+def eja_general_goals(s,pages):
+ records=[]
+ for pn in range(455,469):
+  p=pages[pn-1];heads=[l for l in p['lines'] if norm(l['text']).startswith('OBJETIVO GERAL:')]
+  for hi,h in enumerate(heads):
+   cyc=[l for l in p['lines'] if norm(l['text']).startswith('CICLO:') and l['bbox'][1]<h['bbox'][1]];assert cyc
+   label=norm(cyc[-1]['text']);tables=[t['bbox'][1] for t in p['tables'] if t['bbox'][1]>h['bbox'][1]];bottom=min(tables) if tables else 785
+   groups=[(pn,selected_lines(p,[80,h['bbox'][1]-1,545,bottom]))]
+   if not tables:
+    nxt=pages[pn];ends=[t['bbox'][1] for t in nxt['tables']];assert ends
+    groups.append((pn+1,selected_lines(nxt,[80,65,545,min(ends)])))
+   raw=norm(' '.join(l['text'] for _,ls in groups for l in ls));assert raw.startswith('OBJETIVO GERAL:');text=raw[len('OBJETIVO GERAL:'):].strip();loc=f'eja-general-goal:{pn}';ev=[evidence(n,ls,loc+f'/fragment:{n}',label) for n,ls in groups]
+   records.append(rec(s,None,text,pn,loc,position('Ensino Religioso','EF',label=label),ev,{'document_part':'Ensino Religioso na EJA','modality':'Educação de Jovens e Adultos','hierarchy':['Educação de Jovens e Adultos','Ensino Religioso',label,'Objetivo geral'],'reference_codes':[],'official_code_absent':True,'cycle_label':label},'objetivo_geral'))
+ return records
+
 def run():
  s=source();path=ROOT/s['local_path'];assert hashlib.sha256(path.read_bytes()).hexdigest()==s['sha256'];assert tuple(map(int,fitz.VersionBind.split('.'))) >=(1,26,7)
  if not (AUDIT/'pb-extractor-layout-cache.json').exists():cache_layout()
  cache=json.loads((AUDIT/'pb-extractor-layout-cache.json').read_text());assert cache['sha256']==s['sha256'];pages=cache['pages'];items,eispec=ei_items(s,pages);rows,inventory,excluded=table_rows(s,pages)
  for row in rows:items.extend(row_items(s,row))
  items.extend(ef_rights(s,pages));items.extend(art_rights(s,pages))
+ general=eja_general_goals(s,pages);cycle_parents={i["source_context"]["cycle_label"]:i["key"] for i in general}
+ for item in items:
+  if item.get("source_context",{}).get("modality")=="Educação de Jovens e Adultos" and not item.get("parent_key"):
+   item["parent_key"]=cycle_parents.get(item["positions"][0]["year_label"])
+ items.extend(general)
  indigenous=ROOT/'data/manifests/uncoded/pb-eief-indigenous.json'
  if indigenous.exists():
   import runpy
   data=runpy.run_path(str(indigenous.with_suffix('.py')))['extract'](write=True);items.extend(data['items'])
  for item in items:
+  semantic_evidence(item)
   if 'source_order' not in item:
    bb=item['evidence'][0]['bbox'];item['source_order']=[item['page'],round(bb[1],3),round(bb[0],3)]
  items.sort(key=lambda item:(item['page'],item['evidence'][0]['bbox'][1],item['evidence'][0]['bbox'][0],item['key']))

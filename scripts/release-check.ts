@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url';
 export interface Assertion { name:string; passed:boolean; details?:unknown }
 export interface ExecutionEvidence { schema_version:1; kind:string; command:string[]; producer:string; started_at:string; completed_at:string; exit_code:number|null; source_tree_sha256:string; publication:string|null; assertions:Assertion[]; artifacts:{path:string;sha256:string}[]; [key:string]:unknown }
 export interface Check {id:string; passed:boolean; detail:string; evidence:string[]}
-const trackedRoots=['src','scripts','pipeline','tests','data/schema'];
+const trackedRoots=['src','scripts','pipeline','tests','data/schema','data/manifests'];
 const trackedFiles=['package.json','package-lock.json','tsconfig.json','next.config.ts','Dockerfile','compose.yaml','Makefile','.env.example','.dockerignore','eslint.config.mjs','playwright.config.ts','docs/requirements.md'];
 export const sha256=(data:string|Buffer)=>createHash('sha256').update(data).digest('hex');
 export function sourceTreeHash(root=process.cwd()):string {
@@ -26,6 +26,7 @@ export function validateEvidence(value:unknown, root:string, codeHash:string, pu
   const e=value as Partial<ExecutionEvidence>;
   if(e.schema_version!==1)errors.push('schema de evidência não suportado');
   if(!e.kind||!e.producer||!Array.isArray(e.command)||!e.command.length)errors.push('tipo, produtor ou comando ausente');
+  else errors.push(...commandErrors(e.kind,e.command));
   if(e.exit_code!==0)errors.push('execução não terminou com exit 0');
   if(e.source_tree_sha256!==codeHash)errors.push('código da execução difere da árvore atual');
   if(publication&&!['types','lint','build','tests'].includes(e.kind||'')&&e.publication!==publication)errors.push('publicação da execução difere do bundle');
@@ -50,14 +51,44 @@ const evidenceKinds={
   sources:['bash','scripts/sources-check.sh'], audit:['npx','tsx','scripts/audit-verify.ts'],
 } as const;
 export type EvidenceKind=keyof typeof evidenceKinds;
+/** A successful partial ingestion exercise is not proof of a non-destructive global source update. */
+export function ingestionScopeErrors(value:unknown):string[]{
+ const object=(entry:unknown):Record<string,unknown>=>entry&&typeof entry==='object'&&!Array.isArray(entry)?entry as Record<string,unknown>:{};
+ const report=object(value),scope=object(report.update_scope),errors:string[]=[];
+ if(scope.mode!=='base-plus-source-update')return ['J11 global não demonstrado: candidato parcial ou reconstrução sem base publicada preservada'];
+ const strings=(entry:unknown)=>Array.isArray(entry)&&entry.every(value=>typeof value==='string')?entry as string[]:[];
+ const baseSources=strings(scope.base_source_ids),targets=strings(scope.target_source_ids),proofs=Array.isArray(scope.unaffected_sources)?scope.unaffected_sources.map(object):[];
+ if(!report.original_default||scope.base_publication!==report.original_default||!report.publication||scope.candidate_publication!==report.publication)errors.push('base/candidato da preservação divergem da execução real');
+ if(targets.length!==1||targets[0]!==report.source)errors.push('o ensaio de fonte única precisa delimitar exatamente sua fonte alvo');
+ if(baseSources.length<2||new Set(baseSources).size!==baseSources.length)errors.push('inventário da base para preservar outras fontes está ausente ou duplicado');
+ const expected=baseSources.filter(id=>!targets.includes(id)).sort(),actual=proofs.map(row=>row.source_id).sort();
+ if(JSON.stringify(expected)!==JSON.stringify(actual))errors.push('conferência das fontes não alteradas difere do inventário da base');
+ const hash=(entry:unknown)=>typeof entry==='string'&&/^[a-f0-9]{64}$/.test(entry);
+ let preservedItems=0;
+ for(const proof of proofs){const before=object(proof.before),after=object(proof.after);if(!Number.isSafeInteger(before.items)||Number(before.items)<0||before.items!==after.items||!hash(before.source_sha256)||before.source_sha256!==after.source_sha256||!hash(before.items_sha256)||before.items_sha256!==after.items_sha256)errors.push('hash/contagem de fonte ou itens não preservados: '+String(proof.source_id));else preservedItems+=Number(before.items);}
+ if(!preservedItems)errors.push('não há registros reais de outras fontes preservados');
+ for(const key of ['relations_excluding_target','coverage_excluding_target']){const proof=object(scope[key]);if(!Number.isSafeInteger(proof.before_count)||Number(proof.before_count)<0||proof.before_count!==proof.after_count||!hash(proof.before_sha256)||proof.before_sha256!==proof.after_sha256)errors.push('integridade fora do recorte não demonstrada: '+key);}
+ const event=object(scope.publication_event);if(typeof event.id!=='string'||!event.id||event.previous_id!==scope.base_publication||event.publication_id!==scope.candidate_publication)errors.push('evento de publicação não fixa a base efetivamente substituída');
+ if(scope.actor_type!=='automated'||typeof scope.actor_id!=='string'||!scope.actor_id||typeof scope.method!=='string'||scope.method.length<8)errors.push('autoria/método da conferência de escopo ausentes');
+ return errors;
+}
+function commandErrors(kind:string,command:string[]):string[]{
+ if(!Object.hasOwn(evidenceKinds,kind))return ['tipo de execução não corresponde ao gate'];
+ const expected=evidenceKinds[kind as EvidenceKind];
+ if(!expected.every((part,index)=>command[index]===part))return [`Comando obrigatório para ${kind}: ${expected.join(' ')}`];
+ const suffix=command.slice(expected.length);
+ if(!suffix.length)return [];
+ if(kind==='mcp'&&suffix.length===1&&suffix[0]==='--stdio')return [];
+ if(kind==='sources'&&suffix.length===2&&suffix[0]==='--source'&&/^[a-zA-Z0-9][a-zA-Z0-9._-]{0,159}$/.test(suffix[1]))return [];
+ return ['O gate exige execução integral do comando, sem help, filtros ou opções não previstas.'];
+}
 function option(args:string[],key:string):string|undefined{const i=args.indexOf(key);return i<0?undefined:args[i+1];}
 export function recordExecution(kind:EvidenceKind, args:string[], root=process.cwd()):number{
   if(!(kind in evidenceKinds))throw new Error('Tipo desconhecido de evidência');
   const sep=args.indexOf('--'); const command=sep<0?[...evidenceKinds[kind]]:args.slice(sep+1);
   const expected=evidenceKinds[kind];
-  if(!expected.every((part,i)=>command[i]===part))throw new Error(`Comando obrigatório para ${kind}: ${expected.join(' ')}`);
+  const commandProblems=commandErrors(kind,command);if(commandProblems.length)throw new Error(commandProblems.join('; '));
   let publication=option(args,'--publication')||null;
-  if((kind==='browser'||kind==='tests')&&command.length!==expected.length)throw new Error('O gate exige execução integral, sem filtro de testes, grep, projeto ou shard.');
   const producer=kind==='containers'?'Dockerfile':kind==='types'||kind==='build'||kind==='lint'||kind==='tests'?'package.json':kind==='browser'?'playwright.config.ts':kind==='sources'?'scripts/sources-check.sh':expected[2]||expected[1];
   const source_tree_sha256=sourceTreeHash(root), started_at=new Date().toISOString();
   const result=spawnSync(command[0],command.slice(1),{cwd:root,encoding:'utf8',timeout:600_000,maxBuffer:32*1024*1024,env:process.env});
@@ -76,7 +107,7 @@ export function recordExecution(kind:EvidenceKind, args:string[], root=process.c
    else if(kind==='mcp'){const results=Array.isArray(report.results)?report.results.map(object):[];reportedPublications=results.map(row=>row.publication).filter(Boolean);reportPassed=report.success===true&&['http','stdio'].every(transport=>results.some(row=>row.transport===transport&&row.success===true));}
    else if(kind==='admin'){reportedPublications=[report.base_publication];const checks=Array.isArray(report.checks)?report.checks.map(object):[];reportPassed=report.result==='passed'&&['private_preconditions_exist_before_public_visibility_probes','prepared_snapshot_and_cached_export_unavailable_to_public_api_and_real_mcp','published_revision_visible_to_public_api_and_real_mcp','published_history_remains_public_after_default_rollback'].every(name=>checks.some(check=>check.name===name&&check.result==='passed'));}
    else if(kind==='admin_browser'){reportedPublications=[report.publication];const summary=object(report.browser_summary),tests=Array.isArray(summary.tests)?summary.tests.map(object):[];reportPassed=report.result==='passed'&&summary.status==='passed'&&tests.length===2&&tests.every(test=>test.status==='passed');}
-   else if(kind==='ingestion'){reportedPublications=[report.original_default];const checks=Array.isArray(report.checks)?report.checks.map(object):[];reportPassed=report.passed===true&&typeof report.job_id==='string'&&typeof report.source==='string'&&['real_ingestion_paused_during_prepared_import','actual_compose_worker_restart_preserved_paused_job_and_prepared_snapshot','resume_reused_same_job_artifact_and_imported_idempotently_without_duplicate_records','ingested_candidate_explicitly_published_through_authenticated_administration','rollback_restored_original_default_and_retained_published_history'].every(name=>checks.some(check=>check.name===name&&check.passed===true));}
+   else if(kind==='ingestion'){reportedPublications=[report.original_default];const checks=Array.isArray(report.checks)?report.checks.map(object):[],scopeErrors=ingestionScopeErrors(report);reportPassed=report.passed===true&&typeof report.job_id==='string'&&typeof report.source==='string'&&scopeErrors.length===0&&['real_ingestion_paused_during_prepared_import','actual_compose_worker_restart_preserved_paused_job_and_prepared_snapshot','resume_reused_same_job_artifact_and_imported_idempotently_without_duplicate_records','ingested_candidate_explicitly_published_through_authenticated_administration','rollback_restored_original_default_and_retained_published_history'].every(name=>checks.some(check=>check.name===name&&check.passed===true));assertions.push({name:'J11 preserva as outras fontes da base publicada, não apenas a mecânica de um candidato parcial',passed:scopeErrors.length===0,details:{scope_errors:scopeErrors}});}
    else if(kind==='reimport'){reportedPublications=[report.publication];const national=object(report.national),slice=object(report.slice);reportPassed=report.passed===true&&national.passed===true&&slice.passed===true&&Number(national.items)>0&&Number(slice.items)>0&&national.records_verified===true&&slice.records_verified===true&&national.reimported===true&&slice.reimported===true;}
    else if(kind==='performance'){reportedPublications=[report.publication];reportPassed=report.exit_code===0;}
    else if(kind==='audit'){const artifact=object(report.artifact);reportedPublications=[report.publication];reportPassed=report.passed===true&&artifact.passed===true&&Number(artifact.items)>0&&Number(artifact.sources)>0&&Number(report.http_sample_batches)>0&&artifact.schema_verified===true&&typeof artifact.manifest_sha256==='string'&&(artifact.format!=='curriculos-abertos/sharded-v1'||Number(artifact.parts_verified)>0);}
@@ -99,7 +130,7 @@ const requirementsEvidence:Record<string,string[]>={
  'ORQ-01':['audit'],'ORQ-02':['audit'],
  'DAT-01':['data','tests','api'],'DAT-02':['data','tests','audit'],'DAT-03':['tests','browser','api','mcp'],'DAT-04':['tests','api','mcp','operations','reimport'],'DAT-05':['data','audit'],
  'ING-01':['data'],'ING-02':['data','operations','admin','ingestion'],'ING-03':['data'],'ING-04':['data','operations'],'ING-05':['data'],
- 'FUN-01':['data','browser'],'FUN-02':['data','browser'],'FUN-03':['tests','browser','api'],'FUN-04':['browser','api'],'FUN-05':['data','browser','api'],'FUN-06':['browser','api','tests'],'FUN-07':['data','browser','api'],'FUN-08':['browser','api','operations'],'FUN-09':['data','browser','operations','reimport'],'FUN-10':['browser','api','mcp'],'FUN-11':['browser','admin'],'FUN-12':['browser'],
+ 'FUN-01':['data','browser'],'FUN-02':['data','browser'],'FUN-03':['tests','browser','api'],'FUN-04':['browser','api'],'FUN-05':['data','browser','api'],'FUN-06':['browser','api','tests'],'FUN-07':['data','browser','api'],'FUN-08':['browser','api','operations','reimport'],'FUN-09':['data','browser','api','admin','audit'],'FUN-10':['browser','api','mcp'],'FUN-11':['browser','admin'],'FUN-12':['browser'],
  'API-01':['api'],'API-02':['api','tests'], 'MCP-01':['mcp'],'MCP-02':['mcp'],'MCP-03':['mcp'],
  'ADM-01':['admin','admin_browser'],'ADM-02':['admin','admin_browser','operations','ingestion'],'ADM-03':['sources','operations'],
  'ARQ-01':['types','build','containers','operations'],'ARQ-02':['tests','production','operations'],'ARQ-03':['audit','data'],

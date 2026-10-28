@@ -1,0 +1,81 @@
+{
+  "sources": [
+    {
+      "source_id": "rn-trilhas-aprofundamento",
+      "independent_source_occurrences": 2930,
+      "candidate_coded_items": 2930,
+      "source_roles": {
+        "learning_definition": 48,
+        "explicit_reference_code_card": 2882
+      },
+      "candidate_kinds": {
+        "habilidade": 48,
+        "referencia_no_documento": 2882
+      },
+      "missing_or_role_findings": 0,
+      "extra_unanchored_items": 0,
+      "outside_region_examples": [],
+      "baseline_fragments_confronted": 495,
+      "baseline_failures_confronted": 365,
+      "baseline_negative_cases_confronted": 130,
+      "primary_signatures_checked": 0,
+      "primary_signature_findings": 0,
+      "documented_primary_locator_relocations": 0,
+      "primary_wordings_changed": 0
+    },
+    {
+      "source_id": "rn-dcec-computacao",
+      "independent_source_occurrences": 1392,
+      "candidate_coded_items": 1390,
+      "source_roles": {
+        "outside_classified_region": 2,
+        "knowledge_object_context": 11,
+        "learning_definition": 773,
+        "explanation_reference_context": 593,
+        "pedagogical_reference_context": 6,
+        "example_reference_context": 7
+      },
+      "candidate_kinds": {
+        "referencia_no_documento": 617,
+        "habilidade": 773
+      },
+      "missing_or_role_findings": 0,
+      "extra_unanchored_items": 0,
+      "outside_region_examples": [
+        {
+          "source_id": "rn-dcec-computacao",
+          "page": 61,
+          "code": "EI03CO05",
+          "ordinal_in_page": 0,
+          "original_role": "outside_classified_region",
+          "matching_items": 0,
+          "kinds": [],
+          "disposition": "narrative_example_retained_in_page_section",
+          "source_section_retained": true
+        },
+        {
+          "source_id": "rn-dcec-computacao",
+          "page": 574,
+          "code": "EF35CO10RN",
+          "ordinal_in_page": 0,
+          "original_role": "outside_classified_region",
+          "matching_items": 0,
+          "kinds": [],
+          "disposition": "narrative_example_retained_in_page_section",
+          "source_section_retained": true
+        }
+      ],
+      "baseline_fragments_confronted": 1386,
+      "baseline_failures_confronted": 114,
+      "baseline_negative_cases_confronted": 1272,
+      "primary_signatures_checked": 773,
+      "primary_signature_findings": 0,
+      "documented_primary_locator_relocations": 1,
+      "primary_wordings_changed": 49
+    }
+  ],
+  "all_baseline_cases": 1881,
+  "all_baseline_cases_disposed": true,
+  "findings": 0,
+  "claim_scope": "Native coded definitions/references, source roles, baseline regression and source-code occurrence coverage only; uncoded objectives, OCR and source documentary completeness not approved."
+}

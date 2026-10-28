@@ -1,0 +1,76 @@
+{
+  "at": "2026-10-28T16:02:10.720871+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast",
+  "source_id": "pb-pcem",
+  "official_view_url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf/view",
+  "view_observation": {
+    "content_type_label": "application/pdf",
+    "size_label": "7.6 MB",
+    "last_modified_label": "25/04/2023 09h27",
+    "date_semantics": "Portal last-modified only, not editorial/adoption date.",
+    "browser_pdf_pages_visible": 867,
+    "browser_cover_visible": "CURRÍCULO DO NOVO ENSINO MÉDIO DA PARAÍBA"
+  },
+  "browser_download_attempt": "Normal FileSaveAs and actual download link opened Save panel with disabled Save, even Downloads/unique filename. No bytes acquired through UI; direct ordinary GET of newly observed public endpoint is separate acquisition.",
+  "attempts": [
+    {
+      "at": "2026-10-28T16:02:07.880081+00:00",
+      "url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf/@@download/file/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+      "method": "Ordinary urllib HTTPS GET of exact public download link observed in official view page; no cookies, credentials, browser headers, token replay, challenge solving or TLS bypass.",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": "50006",
+      "final_url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf/@@download/file/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+      "result": "error",
+      "error": "AssertionError: Non-PDF prefix: b'<!DOCTYPE html>\\r'"
+    },
+    {
+      "at": "2026-10-28T16:02:09.804432+00:00",
+      "url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf/@@download/file/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+      "method": "Ordinary urllib HTTPS GET of exact public download link observed in official view page; no cookies, credentials, browser headers, token replay, challenge solving or TLS bypass.",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": "50214",
+      "final_url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf/@@download/file/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+      "result": "error",
+      "error": "AssertionError: Non-PDF prefix: b'<!DOCTYPE html>\\r'"
+    }
+  ],
+  "scope": "Acquisition validation only, not full extraction, edition/current adoption, documentary reconciliation or UF readiness.",
+  "save_dialog_diagnostic": {
+    "at": "2026-10-28T16:08:27.233305+00:00",
+    "normal_viewer_download_confirmed": true,
+    "viewer_control_method": "Keyboard Tab focus visibly confirmed on actual downward-arrow Download icon, then Return; printer control was not activated.",
+    "dialog_title": "Save",
+    "name_field_label": "Save As:",
+    "name_field_value": "curriculos-abertos-pb-pcem-20261028.pdf",
+    "where_label": "Downloads",
+    "save_button_enabled": false,
+    "new_folder_enabled": false,
+    "cancel_enabled": true,
+    "error_message_visible": null,
+    "other_destinations_tested": [
+      "data/raw/PB",
+      "Shared"
+    ],
+    "same_disabled_result": true,
+    "filename_has_invalid_characters": false,
+    "collapsed_screenshot_dimensions": [
+      678,
+      182
+    ],
+    "collapsed_screenshot_bytes": 17759,
+    "screenshot_scope": "Only collapsed dialog: filename,Tags,WhereDownloads,Cancel,disabledSave; no personal file listing.",
+    "screenshot_storage": "In-memory CUA capture; published tool API has no filesystem persistence method. No undocumented filesystem access through browser tool used.",
+    "no_derivation": "NoPrintToPDF,noannotations,noPDFedits; source remainsoriginal browser viewer.",
+    "native_filename_edit_test": {
+      "method": "Right, space, BackSpace, Tab in actual filename field after normal viewer Download",
+      "filename_unchanged": "curriculos-abertos-pb-pcem-20261028.pdf",
+      "focus_moved_to": "Tags",
+      "save_enabled_after": false,
+      "at": "2026-10-28T16:10:30.545252+00:00"
+    },
+    "handoff_state": "Dialog cancelled; original867p viewer and official view page retained as handoff tabs. No local PDF exists."
+  }
+}

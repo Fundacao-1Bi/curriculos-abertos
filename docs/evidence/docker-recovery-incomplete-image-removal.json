@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-10-28T16:53:50.818816+00:00",
+  "reason": "e88c failed package JSON proof: zero bytes; unreferenced incomplete image from disk incident, not a rollback candidate",
+  "preserved": [
+    "running c2eb containers",
+    "lznmgx833qprpv6b37g7y6tn4",
+    "r6ldlil6v76qvwhrmrbxo6yyc",
+    "all volumes and official runtime bases",
+    "private verified c2eb filesystem archive"
+  ],
+  "operations": [
+    {
+      "command": [
+        "docker",
+        "image",
+        "rm",
+        "curriculos-abertos:local",
+        "curriculos-abertos:recovery-verified-20261028"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: curriculos-abertos:local\nUntagged: curriculos-abertos:recovery-verified-20261028\nDeleted: sha256:e88c4909b56248bf90186ae8ee0071a286a4668c89c27047e8d28089871a59a0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=s4z1yyeehpqrfp61phrq2v5gt"
+      ],
+      "exit_code": 0,
+      "stdout": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\ns4z1yyeehpqrfp61phrq2v5gt               \ttrue \t\t32.94kB   \tAbout an hour ago\nTotal:\t32.94kB\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=9b0ix6ewxd0qnu39otydz5ldb"
+      ],
+      "exit_code": 0,
+      "stdout": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\n9b0ix6ewxd0qnu39otydz5ldb               \ttrue \t\t2.546GB   \tLess than a second ago\nTotal:\t2.546GB\n",
+      "stderr": ""
+    }
+  ],
+  "completed_at": "2026-10-28T16:53:55.066070+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "actor_type": "automated",
+  "sources": [
+    {
+      "id": "rn-trilhas-aprofundamento",
+      "sha256": "fac7333112fcfaac3d99d74f72f206bea8e9a4b256e770a9ea0f2eace99b027a",
+      "document_role_adapter": "rn-document-roles-v1",
+      "ready": false,
+      "notes": "48 explicit definitions on physical16..19;2882 literal references in741 vectorcards. Ementa/knowledge objects/method suggestions retained as document sections; uncoded hierarchy not certified complete."
+    },
+    {
+      "id": "rn-dcec-computacao",
+      "sha256": "886cdd02d96a63c50be00e93faf0fe5a9f7f305a959bd9920bcbdd429be134bd",
+      "native_text_order": "glyph_cluster_stream",
+      "document_role_adapter": "rn-document-roles-v1",
+      "ready": false,
+      "notes": "Header geometry distinguishes773 primary code mentions from617 context references.2 narrative examples outside tables remain sections.6528 ligature expansions witnessed independently;21 ActualText/geometry cell discrepancies retained, not globally repaired."
+    }
+  ],
+  "applied_by_this_agent": false,
+  "evidence": ["geometric-role-reconciliation.json", "physical-glyph-verification-summary.json", "physical-glyph-cell-verification.json", "all-code-occurrences.json"]
+}

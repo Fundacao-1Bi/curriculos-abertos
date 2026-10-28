@@ -1,0 +1,45 @@
+{
+  "source_id": "pa-dcepa-ei-ef",
+  "artifact_sha256": "6b101a029e7fc40b10feb79969309251337eb01fc2491c9e0b38563094fa8ec5",
+  "method": "pa2019-stroke-cell-word-centers-v1.0.0",
+  "kind_counts": {
+    "secao_normativa": 749,
+    "objetivo_aprendizagem": 1176,
+    "competencia": 41,
+    "direito_aprendizagem": 6
+  },
+  "ef_boards": 64,
+  "ef_local_objectives": 676,
+  "ef_axis_nodes": 256,
+  "ef_subaxis_nodes": 411,
+  "source_anomalies": [
+    {
+      "page": 280,
+      "role": "Eixo",
+      "literal": "INGUAGEM E SUAS FORMAS COMUNICATIVAS",
+      "action": "Preserved literal; new independent axis cell, no silent spelling correction"
+    },
+    {
+      "page": 311,
+      "role": "Subeixo",
+      "literal": null,
+      "action": "Empty subaxis cell for Mathematics9; three objectives parented to axis and blank disclosed, not borrowed from previous year"
+    },
+    {
+      "page": 77,
+      "role": "EI objective definition",
+      "literal": "Participar de atividades individuais e coletivas",
+      "action": "Uncoded own-column paragraph separated as child without inherited official code; parent keeps only its coded paragraph"
+    }
+  ],
+  "ei_coded_objectives": 93,
+  "ei_local_experiences": 401,
+  "ei_unkeyed_own_column_objectives": 2,
+  "ei_groups": 3,
+  "ei_field_nodes": 15,
+  "adjacent_reference_cells": 2117,
+  "warnings": [],
+  "expected_denominator_sha256": "6ab2bbee801b1c642af91611c6b63898b6e6138a7f176946b5caa1776c33d4c2",
+  "adapter_sha256": "946e4f16523b127bbbf35e15947655bd52a6d890920cc3e7cce49753b35c424b",
+  "scope": "EI93 own-coded objective definitions,2 explicitly separated uncoded own-column objectives and401 local experiences; EF676 uncoded objective definitions with physical Eixo/Subeixo/year hierarchy and adjacent code reference audit. Also51 explicit general/area/component competencies, ER objectives and EI rights from the source-first narrative inventory; remaining normative prose stays documentary context."
+}

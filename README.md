@@ -76,6 +76,7 @@ node --env-file=.env --import tsx scripts/mcp-verify.ts --stdio
 npx playwright test
 npx tsx scripts/qa-performance.ts
 npx tsx scripts/qa-production.ts
+npx tsx scripts/qa-reimport.ts
 npx tsx scripts/qa-recovery.ts
 ```
 

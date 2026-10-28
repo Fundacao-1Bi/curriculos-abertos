@@ -1,17 +1,20 @@
 SHELL := /bin/bash
 COMPOSE ?= docker compose
 ADMIN_TTY := $(shell if test -t 0; then printf '%s' ''; else printf '%s' '-T'; fi)
-.PHONY: configure runtime-images image bootstrap up down verify release-check data-import data-ingest sources-check backup restore admin-create admin-reset logs
+.PHONY: configure preflight runtime-images image bootstrap up down verify release-check data-import data-ingest sources-check backup restore admin-create admin-reset logs
 configure:
 	npm exec -- tsx scripts/ops-configure.ts
 runtime-images:
 	python3 scripts/ops-pull-runtime.py all
-image: configure
+preflight: configure
+	node --env-file=.env --import tsx scripts/ops-preflight.ts
+image: preflight
 ifeq ($(IMAGE_BUILD_METHOD),lifecycle)
 	node --env-file=.env --import tsx scripts/ops-build-fallback.ts
 else
 	$(COMPOSE) build
 endif
+	node --env-file=.env --import tsx scripts/ops-image-verify.ts
 bootstrap: image
 	$(COMPOSE) up -d --wait db
 	$(COMPOSE) run --rm app npm run db:migrate
@@ -30,7 +33,7 @@ verify:
 	$(COMPOSE) exec -T app npm exec -- tsx scripts/ops-smoke.ts
 	$(COMPOSE) exec -T app npm exec -- tsx scripts/api-verify.ts
 release-check:
-	$(COMPOSE) exec -T app npm exec -- tsx scripts/release-check.ts
+	$(COMPOSE) run --rm --no-deps -T -v "$(CURDIR)/docs:/app/docs" app npm exec -- tsx scripts/release-check.ts
 
 data-import:
 	$(COMPOSE) run --rm -e DATA_BUNDLE="$(DATA_BUNDLE)" app npm exec -- tsx scripts/import-data.ts $(DATA_BUNDLE)

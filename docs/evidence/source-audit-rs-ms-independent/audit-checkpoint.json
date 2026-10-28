@@ -1,0 +1,288 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:df_digital",
+  "captured_at": "2026-10-28T14:52:13.931476+00:00",
+  "scope": "Independent original-PDF header/column/anchor inventory and stratified visual audit of RS EI/MS EF pure helper; not final national incorporation or entire-source completeness",
+  "runtime": {
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "pymupdf": [
+      "1.26.7",
+      "1.26.12",
+      null
+    ]
+  },
+  "independent_original_denominators": {
+    "RS_native_code_occurrences": 340,
+    "RS_printed_age_sections": 15,
+    "RS_printed_field_sections": 5,
+    "RS_painted_column_headers": 30,
+    "MS_components": 10,
+    "MS_header_regions": 713,
+    "MS_native_definition_occurrences": 1737,
+    "MS_visual_component_year_block_strata": 92
+  },
+  "visual_review": {
+    "RS_field_age_strata": 15,
+    "MS_component_year_block_strata": 92,
+    "all_selected_strata_inspected": true,
+    "directed_pages_complete": true
+  },
+  "findings": [
+    {
+      "id": "MS-HEADER-SINGULAR",
+      "severity": "high",
+      "pages": [
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444
+      ],
+      "finding": "Língua Espanhola uses singular Habilidade; initial exact-plural helper omitted this component.",
+      "evidence": "ms-spanish-singular-header-inventory.json",
+      "status": "Verified in frozen helper f85f208c88957570f85fc6802745fff53b358f58c3c2c46a99e5aec1bee16e4e; source occurrences and all original positional scopes agree; directed final checks pass.",
+      "historical_status": "Owner changed code; fresh p421 execution recovered all6physical anchors and literal component, final frozen snapshot recheck pending.",
+      "final_verification": "frozen-output-independent-verification.json"
+    },
+    {
+      "id": "MS-SPLIT-LOCAL-CODES",
+      "severity": "high",
+      "pages": [
+        311,
+        320,
+        330,
+        426,
+        427,
+        429
+      ],
+      "finding": "Printed local code can be split into native words: MS.EF15AR14 .s.14 and MS.EF04LE00.n. 01/02/03, MS.EF05LE00.n. 03. The suffix must not become objective text.",
+      "evidence": "ms-independent-anchor-comparison.json",
+      "status": "Verified in frozen helper f85f208c88957570f85fc6802745fff53b358f58c3c2c46a99e5aec1bee16e4e; source occurrences and all original positional scopes agree; directed final checks pass.",
+      "historical_status": "Owner reports fix; LE directed sample preserved inner spaces; final snapshot recheck pending.",
+      "final_verification": "frozen-output-independent-verification.json"
+    },
+    {
+      "id": "MS-MALFORMED-IDENTIFIERS",
+      "severity": "high",
+      "pages": [
+        380,
+        431,
+        738
+      ],
+      "finding": "Originals print MS.EF67EF19.s.1)8, MS.EF06LE.00.n.01 and MS.EF07HI.00.n.04. Do not manufacture normal-looking replacement codes.",
+      "evidence": "ms-independent-header-column-inventory.json",
+      "status": "Verified in frozen helper f85f208c88957570f85fc6802745fff53b358f58c3c2c46a99e5aec1bee16e4e; source occurrences and all original positional scopes agree; directed final checks pass.",
+      "historical_status": "Owner reports grammar preservation fix; final snapshot recheck pending.",
+      "final_verification": "frozen-output-independent-verification.json"
+    },
+    {
+      "id": "MS-FOOTER-IN-LEARNING-TEXT",
+      "severity": "high",
+      "pages": [
+        119,
+        155,
+        156,
+        421,
+        449,
+        700,
+        802
+      ],
+      "finding": "page.height-32 includes the printed footer at y778.74..792.97 in the same x-column as skills. Initial snapshot had547suspect own-page suffixes; cross-page instances can also be contaminated internally.",
+      "evidence": "ms-footer-leak-finding.json",
+      "status": "Verified in frozen helper f85f208c88957570f85fc6802745fff53b358f58c3c2c46a99e5aec1bee16e4e; source occurrences and all original positional scopes agree; directed final checks pass.",
+      "historical_status": "Owner reports geometry-based footer fix; final snapshot recheck pending.",
+      "final_verification": "frozen-output-independent-verification.json"
+    },
+    {
+      "id": "MS-SPANISH-GRADE8-HEADER-WIDTH",
+      "severity": "high",
+      "pages": [
+        437,
+        438,
+        439,
+        440
+      ],
+      "finding": "Old helper omitted20definitions on438–440 and projected two EF08codes on437 to the prior7ºano header. Independent painted header geometry identifies the wider8ºano learning column.",
+      "evidence": "ms-spanish-grade8-header-finding.json",
+      "status": "Verified in frozen helper f85f208c88957570f85fc6802745fff53b358f58c3c2c46a99e5aec1bee16e4e; source occurrences and all original positional scopes agree; directed final checks pass.",
+      "historical_status": "Owner reports wider real-column limit fix; final snapshot recheck pending.",
+      "final_verification": "frozen-output-independent-verification.json"
+    },
+    {
+      "id": "RS126-BORDER-AND-NATIVE-LAYER",
+      "severity": "high",
+      "pages": [
+        126
+      ],
+      "finding": "Old output borrowed e/a from the left overhanging native line into right goals. Source render also visibly clips some final left-column letters; distinguish that source quality issue from invented restoration or cross-column borrowing.",
+      "evidence": "rs126-border-detail.png",
+      "status": "Verified in frozen helper f85f208c88957570f85fc6802745fff53b358f58c3c2c46a99e5aec1bee16e4e; source occurrences and all original positional scopes agree; directed final checks pass.",
+      "historical_status": "Owner refining NativeGlyphText; frozen output required to verify no neighbouring letters are borrowed. Original por mo phrase must remain as printed.",
+      "final_verification": "frozen-output-independent-verification.json",
+      "source_quality_limit": "Original visual clipping persists in the PDF itself; native glyph text is preserved with explicit source typography note. No missing glyph was reconstructed."
+    },
+    {
+      "id": "MS-DOCUMENTARY-IDENTIFIER-GRAMMAR",
+      "severity": "high",
+      "pages": [
+        352,
+        674
+      ],
+      "finding": "Three original definitions use MS. EF... or MS.F... labels; they must increase the denominator and remain distinct from prior goal prose.",
+      "status": "Verified in frozen helper f85f208c88957570f85fc6802745fff53b358f58c3c2c46a99e5aec1bee16e4e; source occurrences and all original positional scopes agree; directed final checks pass.",
+      "historical_status": "Owner correcting helper; final frozen-output check pending.",
+      "final_verification": "frozen-output-independent-verification.json"
+    },
+    {
+      "id": "MS-FOUR-HEADER-BOUNDS",
+      "severity": "high",
+      "pages": [
+        398,
+        413,
+        428,
+        434
+      ],
+      "finding": "Earlier helper bounds began too far right and omitted first words. Independent painted-header inner bounds were provided to the owner.",
+      "evidence": "ms-four-original-column-bounds.json",
+      "status": "Frozen output physical columns now cover every original inner header bound; final verification passed."
+    },
+    {
+      "id": "MS-EMPTY-PRIMARY-ANCHOR",
+      "severity": "high",
+      "pages": [
+        439,
+        440
+      ],
+      "finding": "MS.EF08LE00.n.14 is printed without prose on439; its entire objective starts on440. The definition must survive the empty primary cell.",
+      "evidence": "ms439-440-empty-primary-continuation-finding.json",
+      "status": "Frozen output preserves original anchor and complete next-page prose; final verification passed."
+    },
+    {
+      "id": "AUDITOR-CENSUS-INNER-PADDING",
+      "severity": "audit-correction",
+      "pages": [
+        119
+      ],
+      "finding": "The independent comparator initially stripped the space before the original closing parenthesis in (MS.EF15LP02.s.02 ). The helper correctly preserved it. Census now retains the original inner padding; denominator unchanged.",
+      "evidence": "ms119-original-inner-padding-verification.json",
+      "status": "Corrected census literal normalization; strict final comparison passed without modifying the helper."
+    }
+  ],
+  "negative_checks": [
+    {
+      "id": "RS-ALL-PHYSICAL-CODE-OCCURRENCES",
+      "result": "340original anchors(93BNCC+247RS) match340helper records by page/literal code; no missing/extra in this coded recorte.",
+      "evidence": "rs-native-anchor-inventory.json"
+    },
+    {
+      "id": "RS-INTRAPAGE-AGE-BOUNDARIES",
+      "pages": [
+        103,
+        114
+      ],
+      "result": "Different physical age sections on one page are preserved as different positions in the directed helper samples; no global page age override observed.",
+      "evidence": "live-directed-helper-samples.json"
+    },
+    {
+      "id": "RS-CONTINUATION-NARRATIVE-BOUNDARY",
+      "pages": [
+        108,
+        109
+      ],
+      "result": "EI03CG05RS-05 continues only inside the top right ruled cell on109; later Traços/Sons field narrative is not appended.",
+      "evidence": "rs-rcg-ei-2018-p109.png"
+    },
+    {
+      "id": "RS-ORIGINAL-ZERO-AND-DUPLICATE",
+      "pages": [
+        88,
+        126
+      ],
+      "result": "EI01E003RS-01 preserves the original zero. Two EI03EF08RS-02occurrences on126 have different original texts and must remain separate, without invented renumbering.",
+      "evidence": "rs-native-anchor-inventory.json"
+    },
+    {
+      "id": "MS-INTRAPAGE-YEAR-BOUNDARY",
+      "pages": [
+        700
+      ],
+      "result": "Directed helper returns MS.EF02HI11.s.11 with2ºano and MS.EF03HI01.s.01 with3ºano under distinct printed headers.",
+      "evidence": "live-directed-helper-samples.json"
+    },
+    {
+      "id": "MS-DIDACTIC-CITATION-NOT-DEFINITION",
+      "pages": [
+        155,
+        567
+      ],
+      "result": "MS155right-column referenceMS.EF01LP15.s.15 is not promoted; only3left definitions. On567referenceMS.EF06MA12.s.12 is physically in AçõesDidáticas(x359.83), outside learning column, and the fresh helper returns only2actual8ºano definitions. Initial image-only suspicion was rejected after coordinate verification.",
+      "evidence": "live-directed-helper-samples.json"
+    }
+  ],
+  "pending": [
+    "Whole-source narrative, competency and uncoded structural parts remain separate mandatory reconciliation.",
+    "Final national incorporation, global IDs and publication acceptance belong to the central integration pipeline."
+  ],
+  "readiness_claim": false,
+  "denominator_amendment": {
+    "previous_count": 1734,
+    "new_count": 1737,
+    "reason": "Broad documentary scan and actual renders confirmed two MS. EF... labels on352 and one MS.F... label on674; these are definitions outside the initial grammar, not exclusions.",
+    "evidence": "ms-nonstandard-original-label-candidates.json"
+  },
+  "finalized_at": "2026-10-28T15:35:19.947196+00:00",
+  "frozen_helper_sha256": "f85f208c88957570f85fc6802745fff53b358f58c3c2c46a99e5aec1bee16e4e",
+  "verification_result": {
+    "passed": true,
+    "checks": 25,
+    "failures": [],
+    "report": "frozen-output-independent-verification.json",
+    "snapshots": {
+      "rs": {
+        "sha256": "f6c0a0032c3c02f584580ee5b31b3e82c98717d813e6cbc09d7c43c0abdcf8d9",
+        "records": 340,
+        "positions_checked": 340
+      },
+      "ms": {
+        "sha256": "4ac535d3b09ab55ff73257c206f67f6add80408b5e135e29ab520bbafb868cd8",
+        "records": 1737,
+        "positions_checked": 1737
+      }
+    },
+    "zero_anchor_prefixes_with_prose": 2,
+    "zero_anchor_prefixes_all_native_words_preserved": 2,
+    "own_page_number_suffixes_remaining": 0
+  },
+  "continuation_original_census": {
+    "painted_header_regions": 713,
+    "regions_without_own_anchor": 16,
+    "regions_without_own_anchor_with_prose": 2,
+    "prose_pages": [
+      441,
+      522
+    ],
+    "all_native_prefix_words_retained_in_output": true,
+    "second_page_prose_chain_found": false,
+    "evidence": "ms-zero-anchor-prefix-inventory.json"
+  },
+  "external_blockers": []
+}

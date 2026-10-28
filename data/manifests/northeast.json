@@ -1387,7 +1387,7 @@
     "uf": "PB",
     "title": "Proposta Curricular do Ensino Médio da Paraíba",
     "issuer": "Secretaria de Estado da Educação de Paraíba",
-    "official_url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+    "official_url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf/view",
     "artifact_url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
     "stages": [
       "EM"
@@ -1445,28 +1445,76 @@
         "bytes_sampled": 8192,
         "is_pdf": false,
         "challenge_detected": true
+      },
+      {
+        "source_id": "pb-pcem",
+        "at": "2026-10-28T14:03:09.338102+00:00",
+        "url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+        "method": "Unauthenticated standard HTTP GET; bounded8192-byte prefix; no challenge solving, credentials or bypass.",
+        "http_status": 200,
+        "content_type": "text/html",
+        "bytes_sampled": 8192,
+        "prefix_sha256": "cb9fa75eedf1fb77bde51a17bb6afe4064a2a02474b336d8835eb85f2eb7d826",
+        "is_pdf": false,
+        "challenge_detected": true
+      },
+      {
+        "at": "2026-10-28T16:02:07.880081+00:00",
+        "url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf/@@download/file/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+        "method": "Ordinary urllib HTTPS GET of exact public download link observed in official view page; no cookies, credentials, browser headers, token replay, challenge solving or TLS bypass.",
+        "http_status": 200,
+        "content_type": "text/html",
+        "content_length": "50006",
+        "final_url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf/@@download/file/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+        "result": "error",
+        "error": "AssertionError: Non-PDF prefix: b'<!DOCTYPE html>\\r'"
+      },
+      {
+        "at": "2026-10-28T16:02:09.804432+00:00",
+        "url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf/@@download/file/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+        "method": "Ordinary urllib HTTPS GET of exact public download link observed in official view page; no cookies, credentials, browser headers, token replay, challenge solving or TLS bypass.",
+        "http_status": 200,
+        "content_type": "text/html",
+        "content_length": "50214",
+        "final_url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf/@@download/file/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+        "result": "error",
+        "error": "AssertionError: Non-PDF prefix: b'<!DOCTYPE html>\\r'"
       }
     ],
     "inventory_complete": false,
     "reconciliation_status": "pending",
     "reviewer_type": "automated",
-    "error": "Portal governamental retorna desafio CAPTCHA/JavaScript (HTTP200 text/html), não PDF. Tentadas URLs original, www e copy_of/@@download, e MEC alternativo. Nenhum bloqueio foi contornado.",
+    "error": "Original browser PDF renders867p and official file view declaresapplication/pdf7.6MB, but local acquisition remains blocked: normal Save panel disabled; ordinary GET of original and newly observed public download endpoint returnsHTML challenge. No bypass/session replay used. Edition and current normative application not confirmed.",
     "mandatory": true,
     "inventory_status": "in_progress",
     "allowed_redirect_hosts": [],
     "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais.",
     "last_access_verification": {
-      "source_id": "pb-pcem",
-      "at": "2026-10-28T04:44:18.397310+00:00",
-      "url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
-      "method": "Unauthenticated standard HTTP GET, bounded8192byte prefix; no challenge solving/authentication/bypass.",
-      "http_status": 200,
-      "content_type": "text/html",
-      "prefix_sha256": "41d0c63fe9cba8e54dcb5406f5d9b3d7b75593f62355e840ca9a0b918e87e665",
-      "bytes_sampled": 8192,
-      "is_pdf": false,
-      "challenge_detected": true
-    }
+      "at": "2026-10-28T16:02:10.720871+00:00",
+      "method": "Ordinary Chrome navigation and official site search, no challenge solving, security bypass or session replication.",
+      "pdf_viewer_pages": 867,
+      "cover_title": "Currículo do Novo Ensino Médio da Paraíba",
+      "official_view_mime_label": "application/pdf",
+      "official_view_size_label": "7.6 MB",
+      "official_view_last_modified": "25/04/2023 09h27",
+      "date_semantics": "Portal modification date only; edition/current normative application unconfirmed.",
+      "normal_download_result": "Save panel displayed disabled Save button in Downloads and raw/PB; downloadMedia waited for destination and timed out. No local artifact obtained.",
+      "evidence": "docs/evidence/source-audit-northeast/pb-em-official-acquisition.json"
+    },
+    "download_url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf/@@download/file/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+    "browser_access_observation": {
+      "at": "2026-10-28T16:02:10.720871+00:00",
+      "method": "Ordinary Chrome navigation and official site search, no challenge solving, security bypass or session replication.",
+      "pdf_viewer_pages": 867,
+      "cover_title": "Currículo do Novo Ensino Médio da Paraíba",
+      "official_view_mime_label": "application/pdf",
+      "official_view_size_label": "7.6 MB",
+      "official_view_last_modified": "25/04/2023 09h27",
+      "date_semantics": "Portal modification date only; edition/current normative application unconfirmed.",
+      "normal_download_result": "Save panel displayed disabled Save button in Downloads and raw/PB; downloadMedia waited for destination and timed out. No local artifact obtained.",
+      "evidence": "docs/evidence/source-audit-northeast/pb-em-official-acquisition.json"
+    },
+    "access_status": "browser_render_available_local_acquisition_pending"
   },
   {
     "id": "pe-curriculo-em-2021",
@@ -2852,7 +2900,7 @@
       }
     ],
     "inventory_complete": false,
-    "reconciliation_status": "pending",
+    "reconciliation_status": "native_glyph_fidelity_verified_full_documentary_reconciliation_pending",
     "reviewer_type": "automated",
     "error": null,
     "bytes": 12789159,
@@ -2927,6 +2975,17 @@
         "Ciências da Natureza e suas Tecnologias",
         "Ciências Humanas e Sociais Aplicadas"
       ]
+    },
+    "native_text_order": "glyph_cluster_stream",
+    "native_text_order_evidence": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:09:40.197413+00:00",
+      "artifact_sha256": "ca271258eccee9bf73682267ec680e32ec7fa43bc12216e7c30ea50c77a9dcd9",
+      "independent_cell_inventory": "docs/evidence/source-audit-ma-fidelity/cell-inventory.json",
+      "physical_glyph_evidence": "docs/evidence/source-audit-ma-fidelity/physical-glyph-verification-summary.json",
+      "shared_core_probe": "docs/evidence/source-audit-ma-fidelity/isolated-pipeline-probe-summary.json",
+      "scope": "Full736physicalpage two-source run through real shared extractor;1932candidatefragments/0literal failures,9 preselected regressions pass. Source glyph-cluster order preserved without dictionary replacement; whole-source normative hierarchy/reconciliation remains pending."
     }
   },
   {
@@ -3240,6 +3299,72 @@
         "Geografia",
         "História"
       ]
+    },
+    "native_text_order": "glyph_cluster_stream",
+    "native_text_order_pages": [
+      115,
+      121,
+      139,
+      141,
+      145,
+      156,
+      161,
+      162,
+      165,
+      166,
+      173,
+      175,
+      182,
+      192,
+      198,
+      208,
+      211,
+      214,
+      220,
+      224,
+      233,
+      234,
+      240,
+      294,
+      311,
+      317,
+      323,
+      325,
+      331,
+      334,
+      386,
+      387,
+      394,
+      396,
+      399,
+      403,
+      430,
+      440,
+      450,
+      524,
+      613,
+      650,
+      654,
+      705,
+      706
+    ],
+    "native_text_order_evidence": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:50:18.395839+00:00",
+      "artifact_sha256": "0c6b97015b1e3c6f0630306c84132518469182a1746c7b21b8721ffd74acbea5",
+      "proof": "docs/evidence/source-audit-northeast/proposals/al-failed-cells-glyph-trace.json",
+      "physical_cells": 49,
+      "coded_fragments": 55,
+      "all_fragments_pass": true,
+      "scope": "Only listed physical pages of known glyph-order failures and explicit native regression cells; no whole-source reconciliation or unreviewed page mode switch.",
+      "comparison_witness": "Fullpage rawdict clusters independently compared with physical glyphtrace. When trace Unicode is undefined, exact source ActualText operators bound to source font and Identity CID→GID witness the same physical glyph. Canonical source Unicode unchanged; no dictionary/spelling correction."
+    },
+    "document_role_adapter": "al-desdp-document-roles-v1",
+    "document_role_evidence": {
+      "path": "docs/evidence/source-audit-northeast/proposals/al-desdp-full-role-proof.json",
+      "scope": "All738physicalpages,119nativeheadergroups;192literalcode references in DesdobramentosDidático-Pedagógicos,839primary and723unclassifiedcodeanchors retained. This is code-role fidelity, not complete DesDP uncoded curriculum/hierarchy reconciliation.",
+      "actor_type": "automated"
     }
   },
   {
@@ -3324,6 +3449,75 @@
         "Ciências da Natureza e suas Tecnologias",
         "Ciências Humanas e Sociais Aplicadas"
       ]
+    },
+    "native_text_order": "glyph_cluster_stream",
+    "native_text_order_pages": [
+      124,
+      129,
+      133,
+      148,
+      301,
+      304,
+      309,
+      310,
+      312,
+      313,
+      315,
+      317,
+      325,
+      336,
+      339,
+      341,
+      343,
+      345,
+      347,
+      352,
+      354,
+      357,
+      359,
+      361,
+      369,
+      375,
+      376,
+      402,
+      403,
+      404,
+      415,
+      416,
+      417,
+      429,
+      430,
+      431,
+      446,
+      447,
+      459,
+      460,
+      461,
+      468,
+      469,
+      476,
+      477,
+      478,
+      488,
+      489,
+      500,
+      501,
+      514,
+      515,
+      516,
+      517
+    ],
+    "native_text_order_evidence": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:50:18.396174+00:00",
+      "artifact_sha256": "9314fbd3b27c0118e6b5591dd6ce400c4ffd857830ca9cc86158673488f6116a",
+      "proof": "docs/evidence/source-audit-northeast/proposals/al-failed-cells-glyph-trace.json",
+      "physical_cells": 95,
+      "coded_fragments": 140,
+      "all_fragments_pass": true,
+      "scope": "Only listed physical pages of known glyph-order failures and explicit native regression cells; no whole-source reconciliation or unreviewed page mode switch.",
+      "comparison_witness": "Fullpage rawdict clusters independently compared with physical glyphtrace. When trace Unicode is undefined, exact source ActualText operators bound to source font and Identity CID→GID witness the same physical glyph. Canonical source Unicode unchanged; no dictionary/spelling correction."
     }
   },
   {
@@ -3685,7 +3879,7 @@
       }
     ],
     "inventory_complete": false,
-    "reconciliation_status": "pending",
+    "reconciliation_status": "authoritative_learning_adapter_verified_full_documentary_hierarchy_pending",
     "reviewer_type": "automated",
     "error": null,
     "bytes": 7950105,
@@ -3863,6 +4057,37 @@
           "required_behavior": "Preserve local objective as code:null and use adjacent BNCC code set as documented references, allowing many-to-many relations. Never copy national code onto authored local objective merely because it appears in the right column."
         }
       ]
+    },
+    "uncoded_items_path": "data/manifests/uncoded/pb-eief-items.json",
+    "adapter_authority": {
+      "generic_coded_reference_pages": [
+        1,
+        635
+      ],
+      "coded_learning_pages": [
+        259,
+        325
+      ]
+    },
+    "authoritative_adapter_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:01:20.713134+00:00",
+      "sidecar_sha256": "b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514",
+      "independent_evidence": "docs/evidence/source-audit-pb/pb-independent-verification-summary.json",
+      "items": 2008,
+      "physical_cells_expected": 1157,
+      "physical_cells_covered": 1157,
+      "EI_expected": 103,
+      "EI_matched": 103,
+      "indigenous_expected": 138,
+      "indigenous_matched": 138,
+      "rights_expected": 34,
+      "rights_matched": 34,
+      "unit_anchors_expected": 823,
+      "unit_anchors_matched": 823,
+      "errors": 0,
+      "scope": "Authoritative objective/rights/organizer adapter across this635page artifact; no UF-wide adoption, EM availability or human pedagogical review claim."
     }
   },
   {
@@ -3923,7 +4148,7 @@
       }
     ],
     "inventory_complete": false,
-    "reconciliation_status": "pending",
+    "reconciliation_status": "native_glyph_fidelity_verified_full_documentary_reconciliation_pending",
     "reviewer_type": "automated",
     "error": null,
     "bytes": 49563761,
@@ -3994,6 +4219,17 @@
         "História",
         "Ensino Religioso"
       ]
+    },
+    "native_text_order": "glyph_cluster_stream",
+    "native_text_order_evidence": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:09:40.197104+00:00",
+      "artifact_sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
+      "independent_cell_inventory": "docs/evidence/source-audit-ma-fidelity/cell-inventory.json",
+      "physical_glyph_evidence": "docs/evidence/source-audit-ma-fidelity/physical-glyph-verification-summary.json",
+      "shared_core_probe": "docs/evidence/source-audit-ma-fidelity/isolated-pipeline-probe-summary.json",
+      "scope": "Full736physicalpage two-source run through real shared extractor;1932candidatefragments/0literal failures,9 preselected regressions pass. Source glyph-cluster order preserved without dictionary replacement; whole-source normative hierarchy/reconciliation remains pending."
     }
   },
   {
@@ -4329,7 +4565,12 @@
         "Computação"
       ]
     },
-    "component_metadata_note": "Rótulo concatenado do catálogo descrevia o tópico Computação/Educação Digital e Midiática, não dois componentes. Faceta Computação corresponde ao componente e aos códigos CO; organização local específica permanece nos títulos e evidências."
+    "component_metadata_note": "Rótulo concatenado do catálogo descrevia o tópico Computação/Educação Digital e Midiática, não dois componentes. Faceta Computação corresponde ao componente e aos códigos CO; organização local específica permanece nos títulos e evidências.",
+    "related_normative_source_ids": [
+      "pi-resolucao-188-2025",
+      "pi-parecer-190-2025"
+    ],
+    "related_normative_scope_note": "Original2+6page acts acquired; ParecerPDFp1 identifies two submitted Computação documents,SEI0021327173(EM) and0021327177(EI/EF). No publication-readiness or universal application claim."
   },
   {
     "id": "se-curriculo-ei-ef",
@@ -4642,6 +4883,41 @@
         ]
       },
       "scope_note": "27 pages contain exact general itinerary header. This is an observed subset, not a full learning denominator; continuation/header variants require inspection."
+    },
+    "native_text_order": "glyph_cluster_stream",
+    "native_text_order_pages": [
+      185,
+      198,
+      201,
+      204,
+      207,
+      210,
+      214,
+      219,
+      223,
+      226,
+      229,
+      232,
+      235,
+      245,
+      257,
+      305,
+      316,
+      327,
+      334,
+      367,
+      401
+    ],
+    "native_text_order_evidence": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:07:45.102152+00:00",
+      "artifact_sha256": "91fb4796d01e14370b67d0ca11b7069438a4127ff9c13c068ed2a6f65c3cb69b",
+      "geometry_evidence": "docs/evidence/source-audit-northeast/proposals/geometry-scan.json",
+      "cell_evidence": "docs/evidence/source-audit-northeast/proposals/se-glyph-trace-verification.json",
+      "peer_check": "docs/evidence/source-audit-ma-fidelity/se235-peer-check.json",
+      "scope": "Exactly21 reviewed physical IFA-table pages,109 coded cells.105 native-clip literal matches and4 visually confirmed clip-glyph leaks;2 table.extract ligature-order cases independently peer checked. Not full571page reconciliation.",
+      "unfiltered_trace_limitation": "Unfiltered trace contains clipped/hidden template text; only21/109 unfiltered comparisons match. No full trace claim."
     }
   },
   {
@@ -5394,7 +5670,39 @@
       "section": "Art5",
       "verification": "Art5nomeia explicitamente as quatro áreas e seus componentes na organizaçãoEM.",
       "actor_type": "automated"
-    }
+    },
+    "adapter_authority": {
+      "uncoded_page_sections_pages": [
+        1,
+        7
+      ]
+    },
+    "adapter_authority_evidence": "docs/evidence/source-audit-northeast/reconciled-acts-combined-integration.json",
+    "expected_related_documents": [
+      {
+        "title": "DCRB-EM2026 integral aprovado e adotado pelo Art2",
+        "related_source_id": "ba-dcrb-em-2026",
+        "artifact_sha256": null,
+        "mandatory": true,
+        "evidence": [
+          {
+            "source_id": "ba-resolucao-249-2026",
+            "page": 2,
+            "printed_page": null,
+            "section": "Capítulo I / Art. 2º",
+            "excerpt": "Art. 2º Fica adotado o Documento Curricular Referencial da Bahia – Etapa do Ensino Médio – Volume 2, em sua versão revisada e atualizada (DCRB-EM 2026), aprovado com fundamento no Parecer CEE/BA nº 318, de 07 de julho de 2026, como documento orientador da organização curricular do Ensino Médio no âmbito do Sistema Estadual de Ensino da Bahia. § 1º As instituições de ensino integrantes do Sistema Estadual de Ensino da Bahia devem adotar o DCRB-EM 2026 como referência na elaboração e na atualização de suas propostas pedagógicas, currículos e matrizes curriculares, podendo contextualizá-lo, ampliá-lo e diversificá-lo em consonância de seus projetos institucionais e das características de seus territórios e estudantes, respeitada a autonomia pedagógica assegurada pelos arts. 12 e 15 da Lei nº 9.394, de 20 de dezembro de 1996, observadas a Base Nacional Comum Curricular e as normas nacionais e estaduais vigentes. § 2º As modalidades da Educação Básica ofertadas na etapa do Ensino Médio serão objeto de Documentos Curriculares Referenciais Específicos, a serem apreciados e homologados por este Conselho, os quais disporão sobre as adequações da organização curricular às especificidades de cada modalidade, observadas as diretrizes nacionais correspondentes.",
+            "bbox": [
+              70.94400024414062,
+              533.8299560546875,
+              527.2119750976562,
+              766.9199829101562
+            ],
+            "locator": "resolution249/article-2/pdf-page-2",
+            "method": "document-specific-normative-partition"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ba-dcrb-em-2026",
@@ -5764,7 +6072,15 @@
       "verification_path": "docs/evidence/source-audit-northeast/pe-complete-structure-import-check.json",
       "scope": "Esta fonte específica; não representa completude PE/EM ou revisão humana."
     },
-    "inventory_scope": "this_artifact_only"
+    "inventory_scope": "this_artifact_only",
+    "adapter_authority": {
+      "uncoded_page_sections_pages": [
+        3,
+        8
+      ]
+    },
+    "adapter_authority_evidence": "docs/evidence/source-audit-northeast/pe-combined-generic-adapter-verification.json",
+    "adapter_scope_note": "Sidecar91 covers curricular bodyPDF3–8 only; native generic sectionsPDF1cover/emitter/year andPDF2institutionalcredits are legitimate documentary context and retained, total93records/8learnings."
   },
   {
     "id": "ce-dcrc-computacao",
@@ -6418,7 +6734,7 @@
     "error": null,
     "bytes": 6056769,
     "mandatory": true,
-    "inventory_status": "in_progress",
+    "inventory_status": "complete_uncoded_adapter_and_coded_role_census_bound_documentary_reconciliation_pending",
     "allowed_redirect_hosts": [],
     "jurisdiction_scope": "Referencial estadual; não implica adoção universal pelas redes municipais.",
     "inventory_evidence": {
@@ -6490,6 +6806,50 @@
         "Ciências da Natureza e suas Tecnologias",
         "Ciências Humanas e Sociais Aplicadas"
       ]
+    },
+    "document_role_adapter": "rn-document-roles-v1",
+    "document_role_adapter_evidence": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T15:08:07.034896+00:00",
+      "source_sha256": "fac7333112fcfaac3d99d74f72f206bea8e9a4b256e770a9ea0f2eace99b027a",
+      "inventory": "docs/evidence/source-audit-rn-fidelity/geometric-role-reconciliation.json",
+      "shared_core_probe": "docs/evidence/source-audit-rn-fidelity/isolated-pipeline-probe-summary.json",
+      "source_mentions": "docs/evidence/source-audit-rn-fidelity/all-code-occurrences.json",
+      "literal_fragments_total_two_sources": 4320,
+      "literal_failures_in_probe": 0,
+      "notes": "48 explicit definitions on physical16..19;2882 literal references in741 vectorcards. Ementa/knowledge objects/method suggestions retained as document sections; uncoded hierarchy not certified complete.",
+      "whole_source_reconciled": false
+    },
+    "uncoded_items_path": "data/manifests/uncoded/rn-trilhas-items.json",
+    "adapter_authority": {
+      "uncoded_page_sections_ranges": [
+        [
+          16,
+          19
+        ],
+        [
+          31,
+          485
+        ]
+      ]
+    },
+    "uncoded_adapter_verification": {
+      "sidecar_sha256": "551f90cca125541f09975b3d62f8457695a4cdc7a742f096360f609854749602",
+      "actor_type": "automated",
+      "peer_evidence": "docs/evidence/source-audit-rn-fidelity/rn-uncoded-peer-summary.json",
+      "peer_evidence_sha256": "008f8b9645d838805f5a574456c89e5076d721a4c06ed8e5d8fa41b904436be4",
+      "scope": "3851uncodednodes,185ownobjectives,198UC,395modules,741referencecards; coded2930 preserved,26genericfrontcontexts retained.16–19and31–485 generic containers superseded only after full glyph coverage proof.",
+      "documentary_unit_count": 3851,
+      "own_learning_objective_count": 185,
+      "full_combined_record_count": 6807,
+      "remaining_front_generic_contexts": 26,
+      "source_original_pages_preserved": 485,
+      "whole_UF_ready": false,
+      "full_execution_evidence": "docs/evidence/source-audit-rn-uncoded/rn-trilhas-full-verification.json",
+      "full_execution_sha256": "cb85f3747424e7d2af2d92dc98829fb8b709ffafcf6ff41a37f18c054ae48c1a",
+      "handoff_evidence": "docs/evidence/source-audit-rn-uncoded/rn-trilhas-integration-handoff.json",
+      "handoff_sha256": "5258e26306ab1eb3c0b8a4abf6cd5d668675710d7442b537c3eebe24f5463552"
     }
   },
   {
@@ -6558,7 +6918,7 @@
       }
     ],
     "inventory_complete": false,
-    "reconciliation_status": "pending_documentary_reconciliation",
+    "reconciliation_status": "document_roles_and_native_stream_verified_hierarchy_and_OCR_review_pending",
     "reviewer_type": "automated",
     "error": null,
     "mandatory": true,
@@ -7383,6 +7743,21 @@
         811
       ],
       "note": "Pranchas duplas exigem localizar página impressa separadamente; distribuição física não prova reconciliação."
+    },
+    "document_role_adapter": "rn-document-roles-v1",
+    "native_text_order": "glyph_cluster_stream",
+    "document_role_adapter_evidence": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T15:08:07.035262+00:00",
+      "source_sha256": "886cdd02d96a63c50be00e93faf0fe5a9f7f305a959bd9920bcbdd429be134bd",
+      "inventory": "docs/evidence/source-audit-rn-fidelity/geometric-role-reconciliation.json",
+      "shared_core_probe": "docs/evidence/source-audit-rn-fidelity/isolated-pipeline-probe-summary.json",
+      "source_mentions": "docs/evidence/source-audit-rn-fidelity/all-code-occurrences.json",
+      "literal_fragments_total_two_sources": 4320,
+      "literal_failures_in_probe": 0,
+      "notes": "Header geometry distinguishes773 primary code mentions from617 context references.2 narrative examples outside tables remain sections.6528 ligature expansions witnessed independently;21 ActualText/geometry cell discrepancies retained, not globally repaired.",
+      "whole_source_reconciled": false
     }
   },
   {
@@ -9318,6 +9693,3518 @@
       "inventory_path": "docs/evidence/source-audit-northeast/rn-portaria11123-inventory.json",
       "verification_path": "docs/evidence/source-audit-northeast/rn-portaria11123-verification.json",
       "scope": "12partes do ato integral; demais56páginasDOE eoutrosatos da mesma21foraescopocurricular."
+    },
+    "adapter_authority": {
+      "uncoded_page_sections_pages": [
+        21,
+        21
+      ]
+    },
+    "adapter_authority_evidence": "docs/evidence/source-audit-northeast/reconciled-acts-combined-integration.json",
+    "expected_related_documents": [
+      {
+        "title": "Parecer160/2025 CEB/CEE-RN homologado: identidade integral do DCEC aprovado ainda não confrontada",
+        "related_source_id": null,
+        "artifact_sha256": null,
+        "mandatory": true,
+        "evidence": [
+          {
+            "source_id": "rn-portaria-11123-2025",
+            "page": 21,
+            "printed_page": "21",
+            "section": "Portaria-SEI11123/2025 / artigo-1",
+            "excerpt": "Art. 1º Homologar o Parecer nº 160/2025 - CEB/CEE-RN.",
+            "bbox": [
+              28,
+              560,
+              395,
+              800
+            ],
+            "locator": "norma:portaria11123/artigo-1",
+            "method": "independent_native_region_and_original_line_partition"
+          }
+        ],
+        "identity_status": "Exact homologated Parecer and DCEC artifact identity/edition are not proven by title similarity. Current official DCEC remains separately selected and mandatory; no equivalence inferred."
+      }
+    ]
+  },
+  {
+    "id": "pe-fgb-trimestral-matematica-c6335b8d",
+    "uf": "PE",
+    "title": "Organizador Curricular Trimestral da Formação Geral Básica — Matemática",
+    "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+    "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+    "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Matematica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Matematica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Matemática"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Organizador Curricular por Trimestre da Formação Geral Básica",
+      "Habilidades de área da BNCC",
+      "Habilidades específicas dos componentes",
+      "Objetos de conhecimento",
+      "Articulação com BNCC Computação e possibilidades de abordagens"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+    "collected_at": "2026-10-28T05:42:08.142871+00:00",
+    "sha256": "c6335b8d1961d8c3478c9a2def970dfd14d26bf606d9e3c15f427fbecdb301f4",
+    "local_path": "data/raw/PE/c6335b8d1961d8c3478c9a2def970dfd14d26bf606d9e3c15f427fbecdb301f4.pdf",
+    "status": "acquired",
+    "bytes": 764361,
+    "pages": 55,
+    "pdf_pages": 55,
+    "http_status": 200,
+    "attempts": [
+      {
+        "at": "2026-10-28T05:42:08.142826+00:00",
+        "result": "acquired_and_pdf_parsed",
+        "http_status": 200,
+        "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Matematica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+        "content_type": "application/pdf",
+        "etag": "\"69985cf1-ba9c9\"",
+        "last_modified": "Fri, 20 Feb 2026 13:09:05 GMT",
+        "bytes": 764361
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "inventory_status": "source_and_document_parts_identified_extraction_pending",
+    "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+    "portal_group": "2026",
+    "portal_panel_block_id": "d4bc102",
+    "portal_link_label": "Matemática Organizador Curricular Trimestral da FGB",
+    "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+    "artifact_metadata": {
+      "format": "PDF 1.4",
+      "title": "Matemática_Organizador Curricular Trimestral da FGB.docx",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "Skia/PDF m146 Google Docs Renderer",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "inventory_preview": "data/raw/PE/c6335b8d1961d8c3478c9a2def970dfd14d26bf606d9e3c15f427fbecdb301f4.inventory.txt",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Capa",
+        "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) MATEMÁTICA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+        "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+      }
+    ],
+    "scope_basis": {
+      "page": 3,
+      "section": "Organizador curricular",
+      "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+    },
+    "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+    "scope_school_years": [
+      1,
+      2,
+      3
+    ],
+    "scope_period_organization": "trimestres",
+    "normative_reference_review": {
+      "instruction": null,
+      "instruction_original_artifact_obtained": false,
+      "edition_not_inferred_from_url_or_portal": true
+    },
+    "typology_status": "official_current_curricular_organizer_or_ifa_part",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:rs_adapter:pe-current-inventory",
+      "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+      "at": "2026-10-28T13:57:58.516198+00:00"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Matemática"
+      ]
+    },
+    "inventory_evidence_path": "docs/evidence/source-audit-pe-current/document-part-inventory.json",
+    "inventory_complete": false,
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "source_distribution_status": "official_portal_direct_artifact_verified",
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T13:59:37.250132+00:00",
+      "method": "Independent SHA256/pages/bytes, exact link in preserved official portal panel, document-part inventory hash, and unknown editorial/legal dates preserved."
+    },
+    "document_role_adapter": "pe-fgb-document-roles-v1",
+    "document_role_evidence": {
+      "path": "docs/evidence/source-audit-northeast/proposals/pe-fgb-source-role-census.json",
+      "actor_type": "automated",
+      "scope": "Printed national-area and local-specific columns retained as learning; only secondary Computing/articulation/context coded references retyped, full wording preserved; unknown roles retained. All481p source-only role census; not semantic-learning denominator or full reconciliation.",
+      "source_role_occurrences": {
+        "pages": 55,
+        "national_area_learning": 44,
+        "local_specific_learning": 51,
+        "computing_articulation_reference": 108,
+        "reference_literal_checks": 108
+      },
+      "position_policy": "Years/trimester only printed source headings; reset without a new year heading invalidates year rather than inferring it."
     }
+  },
+  {
+    "id": "pe-fgb-trimestral-arte-cb58c164",
+    "uf": "PE",
+    "title": "Organizador Curricular Trimestral da Formação Geral Básica — Arte",
+    "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+    "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+    "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Arte_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Arte_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Arte"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Organizador Curricular por Trimestre da Formação Geral Básica",
+      "Habilidades de área da BNCC",
+      "Habilidades específicas dos componentes",
+      "Objetos de conhecimento",
+      "Articulação com BNCC Computação e possibilidades de abordagens"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+    "collected_at": "2026-10-28T05:42:07.716210+00:00",
+    "sha256": "cb58c1647f952ebc66761e7cf725da4a885b9acdc00d73db68fa9bd95fa3eb8b",
+    "local_path": "data/raw/PE/cb58c1647f952ebc66761e7cf725da4a885b9acdc00d73db68fa9bd95fa3eb8b.pdf",
+    "status": "acquired",
+    "bytes": 489916,
+    "pages": 37,
+    "pdf_pages": 37,
+    "http_status": 200,
+    "attempts": [
+      {
+        "at": "2026-10-28T05:42:07.716169+00:00",
+        "result": "acquired_and_pdf_parsed",
+        "http_status": 200,
+        "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Arte_Organizador-Curricular-Trimestral-da-FGB.pdf",
+        "content_type": "application/pdf",
+        "etag": "\"69985d13-779bc\"",
+        "last_modified": "Fri, 20 Feb 2026 13:09:39 GMT",
+        "bytes": 489916
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "inventory_status": "source_and_document_parts_identified_extraction_pending",
+    "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+    "portal_group": "2026",
+    "portal_panel_block_id": "d4bc102",
+    "portal_link_label": "Arte Organizador Curricular Trimestral da FGB",
+    "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+    "artifact_metadata": {
+      "format": "PDF 1.4",
+      "title": "Arte_Organizador Curricular Trimestral da FGB.docx",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "Skia/PDF m146 Google Docs Renderer",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "inventory_preview": "data/raw/PE/cb58c1647f952ebc66761e7cf725da4a885b9acdc00d73db68fa9bd95fa3eb8b.inventory.txt",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Capa",
+        "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) Arte ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+        "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+      }
+    ],
+    "scope_basis": {
+      "page": 3,
+      "section": "Organizador curricular",
+      "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+    },
+    "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+    "scope_school_years": [
+      1,
+      2,
+      3
+    ],
+    "scope_period_organization": "trimestres",
+    "normative_reference_review": {
+      "instruction": null,
+      "instruction_original_artifact_obtained": false,
+      "edition_not_inferred_from_url_or_portal": true
+    },
+    "typology_status": "official_current_curricular_organizer_or_ifa_part",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:rs_adapter:pe-current-inventory",
+      "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+      "at": "2026-10-28T13:57:58.902773+00:00"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Arte"
+      ]
+    },
+    "inventory_evidence_path": "docs/evidence/source-audit-pe-current/document-part-inventory.json",
+    "inventory_complete": false,
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "source_distribution_status": "official_portal_direct_artifact_verified",
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T13:59:37.251307+00:00",
+      "method": "Independent SHA256/pages/bytes, exact link in preserved official portal panel, document-part inventory hash, and unknown editorial/legal dates preserved."
+    },
+    "document_role_adapter": "pe-fgb-document-roles-v1",
+    "document_role_evidence": {
+      "path": "docs/evidence/source-audit-northeast/proposals/pe-fgb-source-role-census.json",
+      "actor_type": "automated",
+      "scope": "Printed national-area and local-specific columns retained as learning; only secondary Computing/articulation/context coded references retyped, full wording preserved; unknown roles retained. All481p source-only role census; not semantic-learning denominator or full reconciliation.",
+      "source_role_occurrences": {
+        "pages": 37,
+        "national_area_learning": 18,
+        "local_specific_learning": 18,
+        "computing_articulation_reference": 16,
+        "reference_literal_checks": 16,
+        "unknown": 18
+      },
+      "position_policy": "Years/trimester only printed source headings; reset without a new year heading invalidates year rather than inferring it."
+    }
+  },
+  {
+    "id": "pe-fgb-trimestral-educacao-fisica-d997d37c",
+    "uf": "PE",
+    "title": "Organizador Curricular Trimestral da Formação Geral Básica — Educação Física",
+    "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+    "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+    "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Educacao-Fisica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Educacao-Fisica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Educação Física"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Organizador Curricular por Trimestre da Formação Geral Básica",
+      "Habilidades de área da BNCC",
+      "Habilidades específicas dos componentes",
+      "Objetos de conhecimento",
+      "Articulação com BNCC Computação e possibilidades de abordagens"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+    "collected_at": "2026-10-28T05:42:07.992556+00:00",
+    "sha256": "d997d37cc3c8b1a05c8ad42a3b29fd6bdea7506f86755cfc895a1d5f2213f682",
+    "local_path": "data/raw/PE/d997d37cc3c8b1a05c8ad42a3b29fd6bdea7506f86755cfc895a1d5f2213f682.pdf",
+    "status": "acquired",
+    "bytes": 642119,
+    "pages": 59,
+    "pdf_pages": 59,
+    "http_status": 200,
+    "attempts": [
+      {
+        "at": "2026-10-28T05:42:07.992496+00:00",
+        "result": "acquired_and_pdf_parsed",
+        "http_status": 200,
+        "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Educacao-Fisica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+        "content_type": "application/pdf",
+        "etag": "\"69985d2a-9cc47\"",
+        "last_modified": "Fri, 20 Feb 2026 13:10:02 GMT",
+        "bytes": 642119
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "inventory_status": "source_and_document_parts_identified_extraction_pending",
+    "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+    "portal_group": "2026",
+    "portal_panel_block_id": "d4bc102",
+    "portal_link_label": "Educação Física Organizador Curricular Trimestral da FGB",
+    "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+    "artifact_metadata": {
+      "format": "PDF 1.4",
+      "title": "Educação física_Organizador Curricular Trimestral da FGB.docx",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "Skia/PDF m146 Google Docs Renderer",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "inventory_preview": "data/raw/PE/d997d37cc3c8b1a05c8ad42a3b29fd6bdea7506f86755cfc895a1d5f2213f682.inventory.txt",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Capa",
+        "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) EDUCAÇÃO FÍSICA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+        "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+      }
+    ],
+    "scope_basis": {
+      "page": 3,
+      "section": "Organizador curricular",
+      "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+    },
+    "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+    "scope_school_years": [
+      1,
+      2,
+      3
+    ],
+    "scope_period_organization": "trimestres",
+    "normative_reference_review": {
+      "instruction": null,
+      "instruction_original_artifact_obtained": false,
+      "edition_not_inferred_from_url_or_portal": true
+    },
+    "typology_status": "official_current_curricular_organizer_or_ifa_part",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:rs_adapter:pe-current-inventory",
+      "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+      "at": "2026-10-28T13:58:00.144803+00:00"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Educação Física"
+      ]
+    },
+    "inventory_evidence_path": "docs/evidence/source-audit-pe-current/document-part-inventory.json",
+    "inventory_complete": false,
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "source_distribution_status": "official_portal_direct_artifact_verified",
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T13:59:37.252648+00:00",
+      "method": "Independent SHA256/pages/bytes, exact link in preserved official portal panel, document-part inventory hash, and unknown editorial/legal dates preserved."
+    },
+    "document_role_adapter": "pe-fgb-document-roles-v1",
+    "document_role_evidence": {
+      "path": "docs/evidence/source-audit-northeast/proposals/pe-fgb-source-role-census.json",
+      "actor_type": "automated",
+      "scope": "Printed national-area and local-specific columns retained as learning; only secondary Computing/articulation/context coded references retyped, full wording preserved; unknown roles retained. All481p source-only role census; not semantic-learning denominator or full reconciliation.",
+      "source_role_occurrences": {
+        "pages": 59,
+        "national_area_learning": 43,
+        "local_specific_learning": 43,
+        "computing_articulation_reference": 80,
+        "reference_literal_checks": 80
+      },
+      "position_policy": "Years/trimester only printed source headings; reset without a new year heading invalidates year rather than inferring it."
+    }
+  },
+  {
+    "id": "pe-fgb-trimestral-lingua-inglesa-360febf4",
+    "uf": "PE",
+    "title": "Organizador Curricular Trimestral da Formação Geral Básica — Língua Inglesa",
+    "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+    "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+    "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Lingua-Inglesa-Organizador-Curricular-Trimestral-da-FGB_.pdf",
+    "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Lingua-Inglesa-Organizador-Curricular-Trimestral-da-FGB_.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Língua Inglesa"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Organizador Curricular por Trimestre da Formação Geral Básica",
+      "Habilidades de área da BNCC",
+      "Habilidades específicas dos componentes",
+      "Objetos de conhecimento",
+      "Articulação com BNCC Computação e possibilidades de abordagens"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+    "collected_at": "2026-10-28T05:42:08.783847+00:00",
+    "sha256": "360febf484d1acba6567c9660cb58bf9035cf68e2740ab11c5205002cbff2a9b",
+    "local_path": "data/raw/PE/360febf484d1acba6567c9660cb58bf9035cf68e2740ab11c5205002cbff2a9b.pdf",
+    "status": "acquired",
+    "bytes": 510077,
+    "pages": 32,
+    "pdf_pages": 32,
+    "http_status": 200,
+    "attempts": [
+      {
+        "at": "2026-10-28T05:42:08.783807+00:00",
+        "result": "acquired_and_pdf_parsed",
+        "http_status": 200,
+        "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Lingua-Inglesa-Organizador-Curricular-Trimestral-da-FGB_.pdf",
+        "content_type": "application/pdf",
+        "etag": "\"69985d41-7c87d\"",
+        "last_modified": "Fri, 20 Feb 2026 13:10:25 GMT",
+        "bytes": 510077
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "inventory_status": "source_and_document_parts_identified_extraction_pending",
+    "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+    "portal_group": "2026",
+    "portal_panel_block_id": "d4bc102",
+    "portal_link_label": "Língua Inglesa Organizador Curricular Trimestral da FGB",
+    "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+    "artifact_metadata": {
+      "format": "PDF 1.4",
+      "title": "Língua Inglesa - Organizador Curricular Trimestral da FGB ",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "Skia/PDF m146 Google Docs Renderer",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "inventory_preview": "data/raw/PE/360febf484d1acba6567c9660cb58bf9035cf68e2740ab11c5205002cbff2a9b.inventory.txt",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Capa",
+        "excerpt": "- ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) LÍNGUA INGLESA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+        "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+      }
+    ],
+    "scope_basis": {
+      "page": 3,
+      "section": "Organizador curricular",
+      "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+    },
+    "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+    "scope_school_years": [
+      1,
+      2,
+      3
+    ],
+    "scope_period_organization": "trimestres",
+    "normative_reference_review": {
+      "instruction": null,
+      "instruction_original_artifact_obtained": false,
+      "edition_not_inferred_from_url_or_portal": true
+    },
+    "typology_status": "official_current_curricular_organizer_or_ifa_part",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:rs_adapter:pe-current-inventory",
+      "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+      "at": "2026-10-28T13:58:00.961952+00:00"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Língua Inglesa"
+      ]
+    },
+    "inventory_evidence_path": "docs/evidence/source-audit-pe-current/document-part-inventory.json",
+    "inventory_complete": false,
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "source_distribution_status": "official_portal_direct_artifact_verified",
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T13:59:37.253716+00:00",
+      "method": "Independent SHA256/pages/bytes, exact link in preserved official portal panel, document-part inventory hash, and unknown editorial/legal dates preserved."
+    },
+    "document_role_adapter": "pe-fgb-document-roles-v1",
+    "document_role_evidence": {
+      "path": "docs/evidence/source-audit-northeast/proposals/pe-fgb-source-role-census.json",
+      "actor_type": "automated",
+      "scope": "Printed national-area and local-specific columns retained as learning; only secondary Computing/articulation/context coded references retyped, full wording preserved; unknown roles retained. All481p source-only role census; not semantic-learning denominator or full reconciliation.",
+      "source_role_occurrences": {
+        "pages": 32,
+        "national_area_learning": 25,
+        "local_specific_learning": 25,
+        "computing_articulation_reference": 18,
+        "reference_literal_checks": 18,
+        "unknown": 8
+      },
+      "position_policy": "Years/trimester only printed source headings; reset without a new year heading invalidates year rather than inferring it."
+    }
+  },
+  {
+    "id": "pe-fgb-trimestral-lingua-portuguesa-f9f839b5",
+    "uf": "PE",
+    "title": "Organizador Curricular Trimestral da Formação Geral Básica — Língua Portuguesa",
+    "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+    "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+    "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Lingua-Portuguesa-Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Lingua-Portuguesa-Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Língua Portuguesa"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Organizador Curricular por Trimestre da Formação Geral Básica",
+      "Habilidades de área da BNCC",
+      "Habilidades específicas dos componentes",
+      "Objetos de conhecimento",
+      "Articulação com BNCC Computação e possibilidades de abordagens"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+    "collected_at": "2026-10-28T05:42:09.881081+00:00",
+    "sha256": "f9f839b56f6a718515df9d5d0d2358c388258b3c2b596eecadfb1104b882b579",
+    "local_path": "data/raw/PE/f9f839b56f6a718515df9d5d0d2358c388258b3c2b596eecadfb1104b882b579.pdf",
+    "status": "acquired",
+    "bytes": 1265489,
+    "pages": 103,
+    "pdf_pages": 103,
+    "http_status": 200,
+    "attempts": [
+      {
+        "at": "2026-10-28T05:42:09.881000+00:00",
+        "result": "acquired_and_pdf_parsed",
+        "http_status": 200,
+        "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Lingua-Portuguesa-Organizador-Curricular-Trimestral-da-FGB.pdf",
+        "content_type": "application/pdf",
+        "etag": "\"69985d55-134f51\"",
+        "last_modified": "Fri, 20 Feb 2026 13:10:45 GMT",
+        "bytes": 1265489
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "inventory_status": "source_and_document_parts_identified_extraction_pending",
+    "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+    "portal_group": "2026",
+    "portal_panel_block_id": "d4bc102",
+    "portal_link_label": "Língua Portuguesa Organizador Curricular Trimestral da FGB",
+    "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+    "artifact_metadata": {
+      "format": "PDF 1.4",
+      "title": "Organizador Curricular Trimestral de Língua Portuguesa - Versão final 2026.docx",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "Skia/PDF m146 Google Docs Renderer",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "inventory_preview": "data/raw/PE/f9f839b56f6a718515df9d5d0d2358c388258b3c2b596eecadfb1104b882b579.inventory.txt",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Capa",
+        "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) LÍNGUA PORTUGUESA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+        "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+      }
+    ],
+    "scope_basis": {
+      "page": 3,
+      "section": "Organizador curricular",
+      "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+    },
+    "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+    "scope_school_years": [
+      1,
+      2,
+      3
+    ],
+    "scope_period_organization": "trimestres",
+    "normative_reference_review": {
+      "instruction": null,
+      "instruction_original_artifact_obtained": false,
+      "edition_not_inferred_from_url_or_portal": true
+    },
+    "typology_status": "official_current_curricular_organizer_or_ifa_part",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:rs_adapter:pe-current-inventory",
+      "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+      "at": "2026-10-28T13:58:03.521320+00:00"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Língua Portuguesa"
+      ]
+    },
+    "inventory_evidence_path": "docs/evidence/source-audit-pe-current/document-part-inventory.json",
+    "inventory_complete": false,
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "source_distribution_status": "official_portal_direct_artifact_verified",
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T13:59:37.256630+00:00",
+      "method": "Independent SHA256/pages/bytes, exact link in preserved official portal panel, document-part inventory hash, and unknown editorial/legal dates preserved."
+    },
+    "document_role_adapter": "pe-fgb-document-roles-v1",
+    "document_role_evidence": {
+      "path": "docs/evidence/source-audit-northeast/proposals/pe-fgb-source-role-census.json",
+      "actor_type": "automated",
+      "scope": "Printed national-area and local-specific columns retained as learning; only secondary Computing/articulation/context coded references retyped, full wording preserved; unknown roles retained. All481p source-only role census; not semantic-learning denominator or full reconciliation.",
+      "source_role_occurrences": {
+        "pages": 103,
+        "national_area_learning": 126,
+        "local_specific_learning": 129,
+        "computing_articulation_reference": 45,
+        "reference_literal_checks": 45,
+        "unknown": 1
+      },
+      "position_policy": "Years/trimester only printed source headings; reset without a new year heading invalidates year rather than inferring it."
+    }
+  },
+  {
+    "id": "pe-fgb-trimestral-filosofia-d3d771c6",
+    "uf": "PE",
+    "title": "Organizador Curricular Trimestral da Formação Geral Básica — Filosofia",
+    "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+    "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+    "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Filosofia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Filosofia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Filosofia"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Organizador Curricular por Trimestre da Formação Geral Básica",
+      "Habilidades de área da BNCC",
+      "Habilidades específicas dos componentes",
+      "Objetos de conhecimento",
+      "Articulação com BNCC Computação e possibilidades de abordagens"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+    "collected_at": "2026-10-28T05:42:09.085983+00:00",
+    "sha256": "d3d771c6b0ef86b0e66736a6389da3adc4fa7c55a31495f3ffe006b4dd5eaee8",
+    "local_path": "data/raw/PE/d3d771c6b0ef86b0e66736a6389da3adc4fa7c55a31495f3ffe006b4dd5eaee8.pdf",
+    "status": "acquired",
+    "bytes": 401853,
+    "pages": 20,
+    "pdf_pages": 20,
+    "http_status": 200,
+    "attempts": [
+      {
+        "at": "2026-10-28T05:42:09.085950+00:00",
+        "result": "acquired_and_pdf_parsed",
+        "http_status": 200,
+        "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Filosofia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+        "content_type": "application/pdf",
+        "etag": "\"69985d8b-621bd\"",
+        "last_modified": "Fri, 20 Feb 2026 13:11:39 GMT",
+        "bytes": 401853
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "inventory_status": "source_and_document_parts_identified_extraction_pending",
+    "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+    "portal_group": "2026",
+    "portal_panel_block_id": "d4bc102",
+    "portal_link_label": "Filosofia Organizador Curricular Trimestral da FGB",
+    "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+    "artifact_metadata": {
+      "format": "PDF 1.4",
+      "title": "Filosofia_Organizador Curricular Trimestral da FGB",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "Skia/PDF m146 Google Docs Renderer",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "inventory_preview": "data/raw/PE/d3d771c6b0ef86b0e66736a6389da3adc4fa7c55a31495f3ffe006b4dd5eaee8.inventory.txt",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Capa",
+        "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) FILOSOFIA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+        "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+      }
+    ],
+    "scope_basis": {
+      "page": 3,
+      "section": "Organizador curricular",
+      "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+    },
+    "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+    "scope_school_years": [
+      1,
+      2,
+      3
+    ],
+    "scope_period_organization": "trimestres",
+    "normative_reference_review": {
+      "instruction": null,
+      "instruction_original_artifact_obtained": false,
+      "edition_not_inferred_from_url_or_portal": true
+    },
+    "typology_status": "official_current_curricular_organizer_or_ifa_part",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:rs_adapter:pe-current-inventory",
+      "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+      "at": "2026-10-28T13:58:03.986760+00:00"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Filosofia"
+      ]
+    },
+    "inventory_evidence_path": "docs/evidence/source-audit-pe-current/document-part-inventory.json",
+    "inventory_complete": false,
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "source_distribution_status": "official_portal_direct_artifact_verified",
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T13:59:37.257820+00:00",
+      "method": "Independent SHA256/pages/bytes, exact link in preserved official portal panel, document-part inventory hash, and unknown editorial/legal dates preserved."
+    },
+    "document_role_adapter": "pe-fgb-document-roles-v1",
+    "document_role_evidence": {
+      "path": "docs/evidence/source-audit-northeast/proposals/pe-fgb-source-role-census.json",
+      "actor_type": "automated",
+      "scope": "Printed national-area and local-specific columns retained as learning; only secondary Computing/articulation/context coded references retyped, full wording preserved; unknown roles retained. All481p source-only role census; not semantic-learning denominator or full reconciliation.",
+      "source_role_occurrences": {
+        "pages": 20,
+        "national_area_learning": 19,
+        "local_specific_learning": 19,
+        "computing_articulation_reference": 22,
+        "reference_literal_checks": 22,
+        "unknown": 15
+      },
+      "position_policy": "Years/trimester only printed source headings; reset without a new year heading invalidates year rather than inferring it."
+    }
+  },
+  {
+    "id": "pe-fgb-trimestral-geografia-916f592c",
+    "uf": "PE",
+    "title": "Organizador Curricular Trimestral da Formação Geral Básica — Geografia",
+    "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+    "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+    "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Geografia-Organizador-Curricular-Trimestral-da-FGB_.pdf",
+    "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Geografia-Organizador-Curricular-Trimestral-da-FGB_.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Geografia"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Organizador Curricular por Trimestre da Formação Geral Básica",
+      "Habilidades de área da BNCC",
+      "Habilidades específicas dos componentes",
+      "Objetos de conhecimento",
+      "Articulação com BNCC Computação e possibilidades de abordagens"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+    "collected_at": "2026-10-28T05:42:09.995270+00:00",
+    "sha256": "916f592ce7b4f230c0a2eb7f5ad7002e98cf5c9fe3fef5834ddf00e0907f393c",
+    "local_path": "data/raw/PE/916f592ce7b4f230c0a2eb7f5ad7002e98cf5c9fe3fef5834ddf00e0907f393c.pdf",
+    "status": "acquired",
+    "bytes": 563093,
+    "pages": 37,
+    "pdf_pages": 37,
+    "http_status": 200,
+    "attempts": [
+      {
+        "at": "2026-10-28T05:42:09.995214+00:00",
+        "result": "acquired_and_pdf_parsed",
+        "http_status": 200,
+        "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Geografia-Organizador-Curricular-Trimestral-da-FGB_.pdf",
+        "content_type": "application/pdf",
+        "etag": "\"69985d9b-89795\"",
+        "last_modified": "Fri, 20 Feb 2026 13:11:55 GMT",
+        "bytes": 563093
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "inventory_status": "source_and_document_parts_identified_extraction_pending",
+    "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+    "portal_group": "2026",
+    "portal_panel_block_id": "d4bc102",
+    "portal_link_label": "Geografia Organizador Curricular Trimestral da FGB",
+    "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+    "artifact_metadata": {
+      "format": "PDF 1.4",
+      "title": "Geografia - Organizador Curricular Trimestral da FGB ",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "Skia/PDF m146 Google Docs Renderer",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "inventory_preview": "data/raw/PE/916f592ce7b4f230c0a2eb7f5ad7002e98cf5c9fe3fef5834ddf00e0907f393c.inventory.txt",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Capa",
+        "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) GEOGRAFIA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+        "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+      }
+    ],
+    "scope_basis": {
+      "page": 3,
+      "section": "Organizador curricular",
+      "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+    },
+    "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+    "scope_school_years": [
+      1,
+      2,
+      3
+    ],
+    "scope_period_organization": "trimestres",
+    "normative_reference_review": {
+      "instruction": null,
+      "instruction_original_artifact_obtained": false,
+      "edition_not_inferred_from_url_or_portal": true
+    },
+    "typology_status": "official_current_curricular_organizer_or_ifa_part",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:rs_adapter:pe-current-inventory",
+      "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+      "at": "2026-10-28T13:58:04.770170+00:00"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Geografia"
+      ]
+    },
+    "inventory_evidence_path": "docs/evidence/source-audit-pe-current/document-part-inventory.json",
+    "inventory_complete": false,
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "source_distribution_status": "official_portal_direct_artifact_verified",
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T13:59:37.259069+00:00",
+      "method": "Independent SHA256/pages/bytes, exact link in preserved official portal panel, document-part inventory hash, and unknown editorial/legal dates preserved."
+    },
+    "document_role_adapter": "pe-fgb-document-roles-v1",
+    "document_role_evidence": {
+      "path": "docs/evidence/source-audit-northeast/proposals/pe-fgb-source-role-census.json",
+      "actor_type": "automated",
+      "scope": "Printed national-area and local-specific columns retained as learning; only secondary Computing/articulation/context coded references retyped, full wording preserved; unknown roles retained. All481p source-only role census; not semantic-learning denominator or full reconciliation.",
+      "source_role_occurrences": {
+        "pages": 37,
+        "national_area_learning": 25,
+        "local_specific_learning": 27,
+        "computing_articulation_reference": 38,
+        "reference_literal_checks": 38
+      },
+      "position_policy": "Years/trimester only printed source headings; reset without a new year heading invalidates year rather than inferring it."
+    }
+  },
+  {
+    "id": "pe-fgb-trimestral-historia-d8799974",
+    "uf": "PE",
+    "title": "Organizador Curricular Trimestral da Formação Geral Básica — História",
+    "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+    "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+    "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Historia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Historia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "História"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Organizador Curricular por Trimestre da Formação Geral Básica",
+      "Habilidades de área da BNCC",
+      "Habilidades específicas dos componentes",
+      "Objetos de conhecimento",
+      "Articulação com BNCC Computação e possibilidades de abordagens"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+    "collected_at": "2026-10-28T05:42:10.202772+00:00",
+    "sha256": "d8799974119d10d3db8f483a60f959e97d7a32df75e5d5f14a7514141237636d",
+    "local_path": "data/raw/PE/d8799974119d10d3db8f483a60f959e97d7a32df75e5d5f14a7514141237636d.pdf",
+    "status": "acquired",
+    "bytes": 538218,
+    "pages": 35,
+    "pdf_pages": 35,
+    "http_status": 200,
+    "attempts": [
+      {
+        "at": "2026-10-28T05:42:10.202721+00:00",
+        "result": "acquired_and_pdf_parsed",
+        "http_status": 200,
+        "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Historia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+        "content_type": "application/pdf",
+        "etag": "\"69985dc8-8366a\"",
+        "last_modified": "Fri, 20 Feb 2026 13:12:40 GMT",
+        "bytes": 538218
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "inventory_status": "source_and_document_parts_identified_extraction_pending",
+    "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+    "portal_group": "2026",
+    "portal_panel_block_id": "d4bc102",
+    "portal_link_label": "História Organizador Curricular Trimestral da FGB",
+    "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+    "artifact_metadata": {
+      "format": "PDF 1.4",
+      "title": "História_Organizador Curricular Trimestral da FGB.docx",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "Skia/PDF m146 Google Docs Renderer",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "inventory_preview": "data/raw/PE/d8799974119d10d3db8f483a60f959e97d7a32df75e5d5f14a7514141237636d.inventory.txt",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Capa",
+        "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) HISTÓRIA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+        "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+      }
+    ],
+    "scope_basis": {
+      "page": 3,
+      "section": "Organizador curricular",
+      "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+    },
+    "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+    "scope_school_years": [
+      1,
+      2,
+      3
+    ],
+    "scope_period_organization": "trimestres",
+    "normative_reference_review": {
+      "instruction": null,
+      "instruction_original_artifact_obtained": false,
+      "edition_not_inferred_from_url_or_portal": true
+    },
+    "typology_status": "official_current_curricular_organizer_or_ifa_part",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:rs_adapter:pe-current-inventory",
+      "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+      "at": "2026-10-28T13:58:05.544420+00:00"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "História"
+      ]
+    },
+    "inventory_evidence_path": "docs/evidence/source-audit-pe-current/document-part-inventory.json",
+    "inventory_complete": false,
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "source_distribution_status": "official_portal_direct_artifact_verified",
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T13:59:37.260368+00:00",
+      "method": "Independent SHA256/pages/bytes, exact link in preserved official portal panel, document-part inventory hash, and unknown editorial/legal dates preserved."
+    },
+    "document_role_adapter": "pe-fgb-document-roles-v1",
+    "document_role_evidence": {
+      "path": "docs/evidence/source-audit-northeast/proposals/pe-fgb-source-role-census.json",
+      "actor_type": "automated",
+      "scope": "Printed national-area and local-specific columns retained as learning; only secondary Computing/articulation/context coded references retyped, full wording preserved; unknown roles retained. All481p source-only role census; not semantic-learning denominator or full reconciliation.",
+      "source_role_occurrences": {
+        "pages": 35,
+        "national_area_learning": 47,
+        "local_specific_learning": 47,
+        "computing_articulation_reference": 43,
+        "reference_literal_checks": 43,
+        "unknown": 6
+      },
+      "position_policy": "Years/trimester only printed source headings; reset without a new year heading invalidates year rather than inferring it."
+    }
+  },
+  {
+    "id": "pe-fgb-trimestral-sociologia-7acc310e",
+    "uf": "PE",
+    "title": "Organizador Curricular Trimestral da Formação Geral Básica — Sociologia",
+    "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+    "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+    "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Sociologia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Sociologia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Sociologia"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Organizador Curricular por Trimestre da Formação Geral Básica",
+      "Habilidades de área da BNCC",
+      "Habilidades específicas dos componentes",
+      "Objetos de conhecimento",
+      "Articulação com BNCC Computação e possibilidades de abordagens"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+    "collected_at": "2026-10-28T05:42:10.827011+00:00",
+    "sha256": "7acc310ee6d18afce13c8f5da0cceac8f184246b9cecc295ef628d6db0629353",
+    "local_path": "data/raw/PE/7acc310ee6d18afce13c8f5da0cceac8f184246b9cecc295ef628d6db0629353.pdf",
+    "status": "acquired",
+    "bytes": 362413,
+    "pages": 17,
+    "pdf_pages": 17,
+    "http_status": 200,
+    "attempts": [
+      {
+        "at": "2026-10-28T05:42:10.826979+00:00",
+        "result": "acquired_and_pdf_parsed",
+        "http_status": 200,
+        "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Sociologia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+        "content_type": "application/pdf",
+        "etag": "\"69985ddd-587ad\"",
+        "last_modified": "Fri, 20 Feb 2026 13:13:01 GMT",
+        "bytes": 362413
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "inventory_status": "source_and_document_parts_identified_extraction_pending",
+    "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+    "portal_group": "2026",
+    "portal_panel_block_id": "d4bc102",
+    "portal_link_label": "Sociologia Organizador Curricular Trimestral da FGB",
+    "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+    "artifact_metadata": {
+      "format": "PDF 1.4",
+      "title": " Sociologia_Organizador Curricular Trimestral da FGB.docx",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "Skia/PDF m146 Google Docs Renderer",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "inventory_preview": "data/raw/PE/7acc310ee6d18afce13c8f5da0cceac8f184246b9cecc295ef628d6db0629353.inventory.txt",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Capa",
+        "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) SOCIOLOGIA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+        "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+      }
+    ],
+    "scope_basis": {
+      "page": 3,
+      "section": "Organizador curricular",
+      "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+    },
+    "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+    "scope_school_years": [
+      1,
+      2,
+      3
+    ],
+    "scope_period_organization": "trimestres",
+    "normative_reference_review": {
+      "instruction": null,
+      "instruction_original_artifact_obtained": false,
+      "edition_not_inferred_from_url_or_portal": true
+    },
+    "typology_status": "official_current_curricular_organizer_or_ifa_part",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:rs_adapter:pe-current-inventory",
+      "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+      "at": "2026-10-28T13:58:05.932598+00:00"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Sociologia"
+      ]
+    },
+    "inventory_evidence_path": "docs/evidence/source-audit-pe-current/document-part-inventory.json",
+    "inventory_complete": false,
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "source_distribution_status": "official_portal_direct_artifact_verified",
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T13:59:37.261274+00:00",
+      "method": "Independent SHA256/pages/bytes, exact link in preserved official portal panel, document-part inventory hash, and unknown editorial/legal dates preserved."
+    },
+    "document_role_adapter": "pe-fgb-document-roles-v1",
+    "document_role_evidence": {
+      "path": "docs/evidence/source-audit-northeast/proposals/pe-fgb-source-role-census.json",
+      "actor_type": "automated",
+      "scope": "Printed national-area and local-specific columns retained as learning; only secondary Computing/articulation/context coded references retyped, full wording preserved; unknown roles retained. All481p source-only role census; not semantic-learning denominator or full reconciliation.",
+      "source_role_occurrences": {
+        "pages": 17,
+        "national_area_learning": 10,
+        "local_specific_learning": 9,
+        "computing_articulation_reference": 12,
+        "reference_literal_checks": 12,
+        "unknown": 6
+      },
+      "position_policy": "Years/trimester only printed source headings; reset without a new year heading invalidates year rather than inferring it."
+    }
+  },
+  {
+    "id": "pe-fgb-trimestral-biologia-7f902274",
+    "uf": "PE",
+    "title": "Organizador Curricular Trimestral da Formação Geral Básica — Biologia",
+    "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+    "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+    "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Biologia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Biologia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Biologia"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Organizador Curricular por Trimestre da Formação Geral Básica",
+      "Habilidades de área da BNCC",
+      "Habilidades específicas dos componentes",
+      "Objetos de conhecimento",
+      "Articulação com BNCC Computação e possibilidades de abordagens"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+    "collected_at": "2026-10-28T05:42:11.005477+00:00",
+    "sha256": "7f9022743762eacc209bc199de2e8081fe209892d2a599fcb9a798e5f59bad5a",
+    "local_path": "data/raw/PE/7f9022743762eacc209bc199de2e8081fe209892d2a599fcb9a798e5f59bad5a.pdf",
+    "status": "acquired",
+    "bytes": 508446,
+    "pages": 32,
+    "pdf_pages": 32,
+    "http_status": 200,
+    "attempts": [
+      {
+        "at": "2026-10-28T05:42:11.005446+00:00",
+        "result": "acquired_and_pdf_parsed",
+        "http_status": 200,
+        "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Biologia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+        "content_type": "application/pdf",
+        "etag": "\"69985e0b-7c21e\"",
+        "last_modified": "Fri, 20 Feb 2026 13:13:47 GMT",
+        "bytes": 508446
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "inventory_status": "source_and_document_parts_identified_extraction_pending",
+    "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+    "portal_group": "2026",
+    "portal_panel_block_id": "d4bc102",
+    "portal_link_label": "Biologia Organizador Curricular Trimestral da FGB",
+    "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+    "artifact_metadata": {
+      "format": "PDF 1.4",
+      "title": "Biologia_Organizador Curricular Trimestral da FGB.docx",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "Skia/PDF m146 Google Docs Renderer",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "inventory_preview": "data/raw/PE/7f9022743762eacc209bc199de2e8081fe209892d2a599fcb9a798e5f59bad5a.inventory.txt",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Capa",
+        "excerpt": ". ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) BIOLOGIA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+        "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+      }
+    ],
+    "scope_basis": {
+      "page": 3,
+      "section": "Organizador curricular",
+      "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+    },
+    "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+    "scope_school_years": [
+      1,
+      2,
+      3
+    ],
+    "scope_period_organization": "trimestres",
+    "normative_reference_review": {
+      "instruction": null,
+      "instruction_original_artifact_obtained": false,
+      "edition_not_inferred_from_url_or_portal": true
+    },
+    "typology_status": "official_current_curricular_organizer_or_ifa_part",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:rs_adapter:pe-current-inventory",
+      "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+      "at": "2026-10-28T13:58:06.632162+00:00"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Biologia"
+      ]
+    },
+    "inventory_evidence_path": "docs/evidence/source-audit-pe-current/document-part-inventory.json",
+    "inventory_complete": false,
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "source_distribution_status": "official_portal_direct_artifact_verified",
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T13:59:37.262809+00:00",
+      "method": "Independent SHA256/pages/bytes, exact link in preserved official portal panel, document-part inventory hash, and unknown editorial/legal dates preserved."
+    },
+    "document_role_adapter": "pe-fgb-document-roles-v1",
+    "document_role_evidence": {
+      "path": "docs/evidence/source-audit-northeast/proposals/pe-fgb-source-role-census.json",
+      "actor_type": "automated",
+      "scope": "Printed national-area and local-specific columns retained as learning; only secondary Computing/articulation/context coded references retyped, full wording preserved; unknown roles retained. All481p source-only role census; not semantic-learning denominator or full reconciliation.",
+      "source_role_occurrences": {
+        "pages": 32,
+        "national_area_learning": 26,
+        "local_specific_learning": 26,
+        "computing_articulation_reference": 70,
+        "reference_literal_checks": 70,
+        "unknown": 6
+      },
+      "position_policy": "Years/trimester only printed source headings; reset without a new year heading invalidates year rather than inferring it."
+    }
+  },
+  {
+    "id": "pe-fgb-trimestral-fisica-cd2ccadd",
+    "uf": "PE",
+    "title": "Organizador Curricular Trimestral da Formação Geral Básica — Física",
+    "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+    "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+    "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Fisica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Fisica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Física"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Organizador Curricular por Trimestre da Formação Geral Básica",
+      "Habilidades de área da BNCC",
+      "Habilidades específicas dos componentes",
+      "Objetos de conhecimento",
+      "Articulação com BNCC Computação e possibilidades de abordagens"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+    "collected_at": "2026-10-28T05:42:11.170463+00:00",
+    "sha256": "cd2ccaddf37e176441928df24f02801fd5c790af8ff4a84a4b526f63d8ab1b32",
+    "local_path": "data/raw/PE/cd2ccaddf37e176441928df24f02801fd5c790af8ff4a84a4b526f63d8ab1b32.pdf",
+    "status": "acquired",
+    "bytes": 486288,
+    "pages": 30,
+    "pdf_pages": 30,
+    "http_status": 200,
+    "attempts": [
+      {
+        "at": "2026-10-28T05:42:11.170434+00:00",
+        "result": "acquired_and_pdf_parsed",
+        "http_status": 200,
+        "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Fisica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+        "content_type": "application/pdf",
+        "etag": "\"69985dfd-76b90\"",
+        "last_modified": "Fri, 20 Feb 2026 13:13:33 GMT",
+        "bytes": 486288
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "inventory_status": "source_and_document_parts_identified_extraction_pending",
+    "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+    "portal_group": "2026",
+    "portal_panel_block_id": "d4bc102",
+    "portal_link_label": "Física Organizador Curricular Trimestral da FGB",
+    "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+    "artifact_metadata": {
+      "format": "PDF 1.4",
+      "title": "Física_Organizador Curricular Trimestral da FGB.docx",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "Skia/PDF m146 Google Docs Renderer",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "inventory_preview": "data/raw/PE/cd2ccaddf37e176441928df24f02801fd5c790af8ff4a84a4b526f63d8ab1b32.inventory.txt",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Capa",
+        "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) FÍSICA​ ​ ​ ​ ​ ​ ​ ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+        "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+      }
+    ],
+    "scope_basis": {
+      "page": 3,
+      "section": "Organizador curricular",
+      "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+    },
+    "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+    "scope_school_years": [
+      1,
+      2,
+      3
+    ],
+    "scope_period_organization": "trimestres",
+    "normative_reference_review": {
+      "instruction": null,
+      "instruction_original_artifact_obtained": false,
+      "edition_not_inferred_from_url_or_portal": true
+    },
+    "typology_status": "official_current_curricular_organizer_or_ifa_part",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:rs_adapter:pe-current-inventory",
+      "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+      "at": "2026-10-28T13:58:07.390659+00:00"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Física"
+      ]
+    },
+    "inventory_evidence_path": "docs/evidence/source-audit-pe-current/document-part-inventory.json",
+    "inventory_complete": false,
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "source_distribution_status": "official_portal_direct_artifact_verified",
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T13:59:37.264125+00:00",
+      "method": "Independent SHA256/pages/bytes, exact link in preserved official portal panel, document-part inventory hash, and unknown editorial/legal dates preserved."
+    },
+    "document_role_adapter": "pe-fgb-document-roles-v1",
+    "document_role_evidence": {
+      "path": "docs/evidence/source-audit-northeast/proposals/pe-fgb-source-role-census.json",
+      "actor_type": "automated",
+      "scope": "Printed national-area and local-specific columns retained as learning; only secondary Computing/articulation/context coded references retyped, full wording preserved; unknown roles retained. All481p source-only role census; not semantic-learning denominator or full reconciliation.",
+      "source_role_occurrences": {
+        "pages": 30,
+        "national_area_learning": 30,
+        "local_specific_learning": 30,
+        "computing_articulation_reference": 41,
+        "reference_literal_checks": 41
+      },
+      "position_policy": "Years/trimester only printed source headings; reset without a new year heading invalidates year rather than inferring it."
+    }
+  },
+  {
+    "id": "pe-fgb-trimestral-quimica-007bc04c",
+    "uf": "PE",
+    "title": "Organizador Curricular Trimestral da Formação Geral Básica — Química",
+    "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+    "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+    "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Quimica__Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Quimica__Organizador-Curricular-Trimestral-da-FGB.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Química"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Organizador Curricular por Trimestre da Formação Geral Básica",
+      "Habilidades de área da BNCC",
+      "Habilidades específicas dos componentes",
+      "Objetos de conhecimento",
+      "Articulação com BNCC Computação e possibilidades de abordagens"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+    "collected_at": "2026-10-28T05:42:11.793987+00:00",
+    "sha256": "007bc04c823bea7cb17d2e148219372d12228bc13ca923ca757798d6ac549ecc",
+    "local_path": "data/raw/PE/007bc04c823bea7cb17d2e148219372d12228bc13ca923ca757798d6ac549ecc.pdf",
+    "status": "acquired",
+    "bytes": 419034,
+    "pages": 24,
+    "pdf_pages": 24,
+    "http_status": 200,
+    "attempts": [
+      {
+        "at": "2026-10-28T05:42:11.793951+00:00",
+        "result": "acquired_and_pdf_parsed",
+        "http_status": 200,
+        "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Quimica__Organizador-Curricular-Trimestral-da-FGB.pdf",
+        "content_type": "application/pdf",
+        "etag": "\"69985e16-664da\"",
+        "last_modified": "Fri, 20 Feb 2026 13:13:58 GMT",
+        "bytes": 419034
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "inventory_status": "source_and_document_parts_identified_extraction_pending",
+    "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+    "portal_group": "2026",
+    "portal_panel_block_id": "d4bc102",
+    "portal_link_label": "Química Organizador Curricular Trimestral da FGB",
+    "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+    "artifact_metadata": {
+      "format": "PDF 1.4",
+      "title": "Química__Organizador Curricular Trimestral da FGB.docx",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "Skia/PDF m146 Google Docs Renderer",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "inventory_preview": "data/raw/PE/007bc04c823bea7cb17d2e148219372d12228bc13ca923ca757798d6ac549ecc.inventory.txt",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Capa",
+        "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) QUÍMICA​ ​ ​ ​ ​ ​ ​ ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+        "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+      }
+    ],
+    "scope_basis": {
+      "page": 3,
+      "section": "Organizador curricular",
+      "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+    },
+    "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+    "scope_school_years": [
+      1,
+      2,
+      3
+    ],
+    "scope_period_organization": "trimestres",
+    "normative_reference_review": {
+      "instruction": null,
+      "instruction_original_artifact_obtained": false,
+      "edition_not_inferred_from_url_or_portal": true
+    },
+    "typology_status": "official_current_curricular_organizer_or_ifa_part",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:rs_adapter:pe-current-inventory",
+      "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+      "at": "2026-10-28T13:58:07.989936+00:00"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Química"
+      ]
+    },
+    "inventory_evidence_path": "docs/evidence/source-audit-pe-current/document-part-inventory.json",
+    "inventory_complete": false,
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "source_distribution_status": "official_portal_direct_artifact_verified",
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T13:59:37.265385+00:00",
+      "method": "Independent SHA256/pages/bytes, exact link in preserved official portal panel, document-part inventory hash, and unknown editorial/legal dates preserved."
+    },
+    "document_role_adapter": "pe-fgb-document-roles-v1",
+    "document_role_evidence": {
+      "path": "docs/evidence/source-audit-northeast/proposals/pe-fgb-source-role-census.json",
+      "actor_type": "automated",
+      "scope": "Printed national-area and local-specific columns retained as learning; only secondary Computing/articulation/context coded references retyped, full wording preserved; unknown roles retained. All481p source-only role census; not semantic-learning denominator or full reconciliation.",
+      "source_role_occurrences": {
+        "pages": 24,
+        "national_area_learning": 32,
+        "local_specific_learning": 33,
+        "computing_articulation_reference": 33,
+        "reference_literal_checks": 33
+      },
+      "position_policy": "Years/trimester only printed source headings; reset without a new year heading invalidates year rather than inferring it."
+    }
+  },
+  {
+    "id": "pe-ifa-matriz-anexo-i-c4ba842e",
+    "uf": "PE",
+    "title": "Caderno de Implementação para os Itinerários Formativos de Aprofundamento — Matriz Anexo I",
+    "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+    "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+    "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-1.pdf",
+    "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-1.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Linguagens e suas Tecnologias",
+      "Ciências Humanas e Sociais Aplicadas",
+      "Ciências da Natureza e suas Tecnologias"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Apresentação e princípios dos IFA",
+      "Eixos estruturantes e temas contemporâneos transversais",
+      "Competências comuns e objetivos de aprendizagem",
+      "Projetos integradores e orientações metodológicas",
+      "Organização curricular da matriz anexa"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+    "collected_at": "2026-10-28T05:42:12.605697+00:00",
+    "sha256": "c4ba842e9fd17f7b0af3531721586765f8304e5571b5b29c7b54b70958a5627a",
+    "local_path": "data/raw/PE/c4ba842e9fd17f7b0af3531721586765f8304e5571b5b29c7b54b70958a5627a.pdf",
+    "status": "acquired",
+    "bytes": 1904971,
+    "pages": 37,
+    "pdf_pages": 37,
+    "http_status": 200,
+    "attempts": [
+      {
+        "at": "2026-10-28T05:42:12.605659+00:00",
+        "result": "acquired_and_pdf_parsed",
+        "http_status": 200,
+        "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-1.pdf",
+        "content_type": "application/pdf",
+        "etag": "\"69d3c511-1d114b\"",
+        "last_modified": "Mon, 06 Apr 2026 14:37:05 GMT",
+        "bytes": 1904971
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "inventory_status": "source_and_document_parts_identified_extraction_pending",
+    "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+    "portal_group": "2026",
+    "portal_panel_block_id": "d4bc102",
+    "portal_link_label": "Caderno de Implementação para os IFA – Matriz de anexo 1",
+    "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+    "artifact_metadata": {
+      "format": "PDF 1.4",
+      "title": "Caderno de Implementação para os IFA - Matriz de anexo 1 IFA Matriz 1 - LGG + CHSA",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "Skia/PDF m148 Google Docs Renderer",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "inventory_preview": "data/raw/PE/c4ba842e9fd17f7b0af3531721586765f8304e5571b5b29c7b54b70958a5627a.inventory.txt",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Capa",
+        "excerpt": "Matriz Anexo I",
+        "verification": "Anexo e anos1–3 estão identificados na capa."
+      },
+      {
+        "page": 5,
+        "section": "Princípios dos IFA",
+        "excerpt": "Instrução Normativa nº 03/2026",
+        "verification": "Citação textual da base estadual; ato integral ainda em obtenção."
+      }
+    ],
+    "scope_basis": {
+      "page": 5,
+      "section": "Princípios para arquitetura dos IFA",
+      "finding": "Documento declara vinculação à IN SEE/PE03/2026 e Resolução CNE/CEB4/2025, e organiza componentes/objetivos de aprendizagem do anexo. A referência não prova por si só a edição editorial ou o período de aplicação."
+    },
+    "table_role_note": "Competências comuns, objetivos, eixos e propostas de projetos possuem tipos distintos. Referências nacionais e objetivos sem código não autorizam criar códigos oficiais.",
+    "scope_school_years": [
+      1,
+      2,
+      3
+    ],
+    "scope_period_organization": "trimestres",
+    "normative_reference_review": {
+      "instruction": "IN SEE/PE03/2026",
+      "instruction_original_artifact_obtained": false,
+      "edition_not_inferred_from_url_or_portal": true
+    },
+    "typology_status": "official_current_curricular_organizer_or_ifa_part",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:rs_adapter:pe-current-inventory",
+      "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+      "at": "2026-10-28T13:58:09.442195+00:00"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Linguagens e suas Tecnologias",
+        "Ciências Humanas e Sociais Aplicadas",
+        "Ciências da Natureza e suas Tecnologias"
+      ]
+    },
+    "inventory_evidence_path": "docs/evidence/source-audit-pe-current/document-part-inventory.json",
+    "inventory_complete": false,
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "source_distribution_status": "official_portal_direct_artifact_verified",
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T13:59:37.267659+00:00",
+      "method": "Independent SHA256/pages/bytes, exact link in preserved official portal panel, document-part inventory hash, and unknown editorial/legal dates preserved."
+    }
+  },
+  {
+    "id": "pe-ifa-matriz-anexo-ii-c6f9ef30",
+    "uf": "PE",
+    "title": "Caderno de Implementação para os Itinerários Formativos de Aprofundamento — Matriz Anexo II",
+    "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+    "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+    "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-2.pdf",
+    "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-2.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Matemática e suas Tecnologias",
+      "Ciências da Natureza e suas Tecnologias",
+      "Ciências Humanas e Sociais Aplicadas"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Apresentação e princípios dos IFA",
+      "Eixos estruturantes e temas contemporâneos transversais",
+      "Competências comuns e objetivos de aprendizagem",
+      "Projetos integradores e orientações metodológicas",
+      "Organização curricular da matriz anexa"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+    "collected_at": "2026-10-28T05:42:13.178643+00:00",
+    "sha256": "c6f9ef30769137afec8ea0ac713f6d5051b5b9cd4e02b95dee8b7cf7aca5c5db",
+    "local_path": "data/raw/PE/c6f9ef30769137afec8ea0ac713f6d5051b5b9cd4e02b95dee8b7cf7aca5c5db.pdf",
+    "status": "acquired",
+    "bytes": 2705944,
+    "pages": 45,
+    "pdf_pages": 45,
+    "http_status": 200,
+    "attempts": [
+      {
+        "at": "2026-10-28T05:42:13.178599+00:00",
+        "result": "acquired_and_pdf_parsed",
+        "http_status": 200,
+        "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-2.pdf",
+        "content_type": "application/pdf",
+        "etag": "\"69d3c51c-294a18\"",
+        "last_modified": "Mon, 06 Apr 2026 14:37:16 GMT",
+        "bytes": 2705944
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "inventory_status": "source_and_document_parts_identified_extraction_pending",
+    "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+    "portal_group": "2026",
+    "portal_panel_block_id": "d4bc102",
+    "portal_link_label": "Caderno de Implementação para os IFA – Matriz de anexo 2",
+    "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+    "artifact_metadata": {
+      "format": "PDF 1.4",
+      "title": "Caderno de Implementação para os IFA - Matriz de anexo 2_MAT+CNT",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "Skia/PDF m148 Google Docs Renderer",
+      "creationDate": "",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "inventory_preview": "data/raw/PE/c6f9ef30769137afec8ea0ac713f6d5051b5b9cd4e02b95dee8b7cf7aca5c5db.inventory.txt",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Capa",
+        "excerpt": "Matriz Anexo II",
+        "verification": "Anexo e anos1–3 estão identificados na capa."
+      },
+      {
+        "page": 5,
+        "section": "Princípios dos IFA",
+        "excerpt": "Instrução Normativa nº 03/2026",
+        "verification": "Citação textual da base estadual; ato integral ainda em obtenção."
+      }
+    ],
+    "scope_basis": {
+      "page": 5,
+      "section": "Princípios para arquitetura dos IFA",
+      "finding": "Documento declara vinculação à IN SEE/PE03/2026 e Resolução CNE/CEB4/2025, e organiza componentes/objetivos de aprendizagem do anexo. A referência não prova por si só a edição editorial ou o período de aplicação."
+    },
+    "table_role_note": "Competências comuns, objetivos, eixos e propostas de projetos possuem tipos distintos. Referências nacionais e objetivos sem código não autorizam criar códigos oficiais.",
+    "scope_school_years": [
+      1,
+      2,
+      3
+    ],
+    "scope_period_organization": "trimestres",
+    "normative_reference_review": {
+      "instruction": "IN SEE/PE03/2026",
+      "instruction_original_artifact_obtained": false,
+      "edition_not_inferred_from_url_or_portal": true
+    },
+    "typology_status": "official_current_curricular_organizer_or_ifa_part",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:rs_adapter:pe-current-inventory",
+      "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+      "at": "2026-10-28T13:58:11.103116+00:00"
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Matemática e suas Tecnologias",
+        "Ciências da Natureza e suas Tecnologias",
+        "Ciências Humanas e Sociais Aplicadas"
+      ]
+    },
+    "inventory_evidence_path": "docs/evidence/source-audit-pe-current/document-part-inventory.json",
+    "inventory_complete": false,
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "source_distribution_status": "official_portal_direct_artifact_verified",
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T13:59:37.270525+00:00",
+      "method": "Independent SHA256/pages/bytes, exact link in preserved official portal panel, document-part inventory hash, and unknown editorial/legal dates preserved."
+    }
+  },
+  {
+    "id": "pi-computacao-em-2025",
+    "uf": "PI",
+    "title": "Currículo de Computação do Estado do Piauí — organizador transversal Ensino Médio",
+    "issuer": "Secretaria de Estado da Educação do Piauí",
+    "official_url": "https://seduc.pi.gov.br/diretrizes",
+    "artifact_url": "https://seduc.pi.gov.br/download/diretrizes/Curriculo_de_Computacao___EM.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Computação"
+    ],
+    "stage_component_inventory": {
+      "EM": [
+        "Computação"
+      ]
+    },
+    "edition": "2025",
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Carta aos leitores e apresentação",
+      "Histórico e governança",
+      "Justificativa e referencial teórico",
+      "Formato de implementação e etapas/modalidades",
+      "Infraestrutura",
+      "Formação de professores",
+      "Avaliação e encaminhamentos metodológicos",
+      "Competências e habilidades da Computação",
+      "Organizador curricular transversal da rede do Ensino Médio: Linguagens",
+      "Organizador curricular transversal: Ciências Humanas",
+      "Organizador curricular transversal: Ciências da Natureza",
+      "Organizador curricular transversal: Matemática",
+      "Referências"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders originais privados, sem redistribuição do fac-símile.",
+    "collected_at": "2026-10-28T14:09:28.892140+00:00",
+    "sha256": "e6eda1fbcf82e4fb5554ce121ec3b6c1bdf13c9345ef716658c0946a1a71e61f",
+    "local_path": "data/raw/PI/pi-computacao-em.pdf",
+    "status": "acquired",
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "inventory_complete": false,
+    "inventory_status": "document_parts_identified_full_reconciliation_pending",
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "pdf_pages": 137,
+    "pages": 137,
+    "bytes": 2156942,
+    "artifact_metadata": {
+      "format": "PDF 1.5",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "PDFsam Basic v5.4.1",
+      "producer": "SAMBox 3.0.28",
+      "creationDate": "",
+      "modDate": "D:20260202143600-03'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "attempts": [
+      {
+        "at": "2026-10-28T14:09:28.892140+00:00",
+        "url": "https://seduc.pi.gov.br/download/diretrizes/Curriculo_de_Computacao___EM.pdf",
+        "result": "acquired_and_pdf_parsed",
+        "sha256": "e6eda1fbcf82e4fb5554ce121ec3b6c1bdf13c9345ef716658c0946a1a71e61f",
+        "bytes": 2156942,
+        "pages": 137
+      }
+    ],
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:09:28.892140+00:00",
+      "method": "Direct official issuer distribution, full private artifact acquired and SHA/pages verified, cover/CIP/table-of-contents read. No complete learning reconciliation or legal application inferred."
+    },
+    "inventory_evidence": [
+      {
+        "page": 4,
+        "section": "Ficha catalográfica",
+        "excerpt": "Teresina: SEDUC/PI, 2025. 136p. ISBN: 978-65-999766-4-3",
+        "note": "137physicalPDFpages;136printedpages inCIP,notcontradictory."
+      },
+      {
+        "page": 6,
+        "section": "Sumário",
+        "excerpt": "10.1. Organizador Curricular Transversal da rede do Ensino Médio;10.1.1 Linguagens;10.1.2 Ciências Humanas;10.1.3 Ciências da Natureza;10.1.4 Matemática."
+      },
+      {
+        "page": 2,
+        "section": "Carta aos leitores",
+        "excerpt": "complementando o Currículo do Piauí, aprovado pela Resolução CEE/PI nº 188/2025.",
+        "note": "Reference only; original act and exact scope not yet acquired."
+      }
+    ],
+    "scope_note": "Portal labels this artifact EM. Intro discusses EF as context, but indexed learning organizer is transversal EM across four areas; no extra EF learning inventory inferred from introductory mentions.",
+    "related_normative_source_ids": [
+      "pi-resolucao-188-2025",
+      "pi-parecer-190-2025"
+    ],
+    "related_normative_scope_note": "Original2+6page acts acquired; ParecerPDFp1 identifies two submitted Computação documents,SEI0021327173(EM) and0021327177(EI/EF). No publication-readiness or universal application claim."
+  },
+  {
+    "id": "ce-matrizes-2026",
+    "uf": "CE",
+    "title": "Matrizes Curriculares para o Ano Letivo de 2026 — V2",
+    "issuer": "Secretaria da Educação do Ceará",
+    "official_url": "https://www.ce.gov.br/seduc/2025/12/17/seduc-divulga-matrizes-curriculares-2026/",
+    "artifact_url": "https://www.ce.gov.br/seduc/wp-content/uploads/sites/63/2025/12/Matrizes-Curriculares-2026-V2.pdf",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Linguagens e suas Tecnologias",
+      "Matemática e suas Tecnologias",
+      "Ciências da Natureza e suas Tecnologias",
+      "Ciências Humanas e Sociais Aplicadas"
+    ],
+    "stage_component_inventory": {
+      "EM": [
+        "Linguagens e suas Tecnologias",
+        "Matemática e suas Tecnologias",
+        "Ciências da Natureza e suas Tecnologias",
+        "Ciências Humanas e Sociais Aplicadas"
+      ]
+    },
+    "edition": "2026 (arquivoV2)",
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": "Ano letivo2026;1ªe2ªséries adaptadas,3ªséries mantêm arquitetura anterior,conformePDFp6. Modalidades têm regras específicas.",
+    "document_type": "complemento_curricular",
+    "normative_parts": [
+      "Apresentação e transição escalonada2025–2026",
+      "Ensino Médio Regular",
+      "Ensino Médio Noturno e variantesQP/EPT",
+      "Instituto de Educação dos Surdos",
+      "EJA/CEJA e variantes",
+      "Escolas Estaduais de Educação Profissional",
+      "Ensino Médio em Tempo Integral35h/45h e projetos específicos",
+      "Escolas militares/bilíngues/quilombolas",
+      "Educação do Campo e demais matrizes do sumário"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders originais privados, sem redistribuição do fac-símile.",
+    "collected_at": "2026-10-28T14:09:28.892140+00:00",
+    "sha256": "676689026bd43a8e93e9785f1575c54b2922c5467468a6f6c6c4db06a3abd701",
+    "local_path": "data/raw/CE/ce-matrizes-2026.pdf",
+    "status": "acquired",
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "inventory_complete": false,
+    "inventory_status": "document_parts_identified_full_reconciliation_pending",
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "pdf_pages": 100,
+    "pages": 100,
+    "bytes": 22870882,
+    "artifact_metadata": {
+      "format": "PDF 1.3",
+      "title": "Matrizes Curriculares 2026 - V2.cdr",
+      "author": "Alain Rodrigues Moreira",
+      "subject": "",
+      "keywords": "",
+      "creator": "CorelDRAW 2025",
+      "producer": "Corel PDF Engine Version 26.2.0.170",
+      "creationDate": "D:20251219112928-03'00'",
+      "modDate": "D:20251219142021-03'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "attempts": [
+      {
+        "at": "2026-10-28T14:09:28.892140+00:00",
+        "url": "https://www.ce.gov.br/seduc/wp-content/uploads/sites/63/2025/12/Matrizes-Curriculares-2026-V2.pdf",
+        "result": "acquired_and_pdf_parsed",
+        "sha256": "676689026bd43a8e93e9785f1575c54b2922c5467468a6f6c6c4db06a3abd701",
+        "bytes": 22870882,
+        "pages": 100
+      }
+    ],
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:09:28.892140+00:00",
+      "method": "Direct official issuer distribution, full private artifact acquired and SHA/pages verified, cover/CIP/table-of-contents read. No complete learning reconciliation or legal application inferred."
+    },
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Capa",
+        "excerpt": "MATRIZES CURRICULARES 2026"
+      },
+      {
+        "page": 5,
+        "section": "Apresentação",
+        "excerpt": "Matrizes Curriculares para o Ano Letivo de 2026",
+        "related_reference": "Resolução nº 521/2025"
+      },
+      {
+        "page": 6,
+        "section": "Transição",
+        "source_summary": "Transição iniciada nas primeiras séries em 2025 e ampliada para segundas séries em 2026; terceiras séries preservam cargas horárias de 2025.",
+        "verification": "Paraphrase, not presented as a verbatim contiguous excerpt."
+      },
+      {
+        "page": 7,
+        "section": "Sumário",
+        "note": "Parts identified directly from source table ofcontents,not extracted learning records."
+      }
+    ],
+    "official_distribution_evidence": {
+      "private_snapshot_path": "data/raw/CE/ce-matrizes-2026-news.html",
+      "sha256": "692eb7ebd883c942f86867cb65c87b9beb734ed791d721da7087d019271449c3",
+      "exact_pdf_link_found": "https://www.ce.gov.br/seduc/wp-content/uploads/sites/63/2025/12/Matrizes-Curriculares-2026-V2.pdf",
+      "method": "macOS /usr/bin/curl with TLS verification enabled,HTTP200. Python trust path failed; no insecure TLS bypass.",
+      "news_date": "2025-12-17",
+      "news_date_not_asserted_as_pdf_revision_date": true
+    }
+  },
+  {
+    "id": "ce-resolucao-521-2025",
+    "uf": "CE",
+    "title": "Resolução CEE nº 521/2025 — organização e oferta do Ensino Médio e Itinerários Formativos",
+    "issuer": "Conselho Estadual de Educação do Ceará",
+    "official_url": "https://legislacao.cee.ce.gov.br/publicacoes/resolucao-cee-no-5212025-2025/",
+    "artifact_url": "https://legislacao.cee.ce.gov.br/publicacoes/resolucao-cee-no-5212025-2025/abrir/",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Linguagens e suas Tecnologias",
+      "Matemática e suas Tecnologias",
+      "Ciências da Natureza e suas Tecnologias",
+      "Ciências Humanas e Sociais Aplicadas"
+    ],
+    "stage_component_inventory": {
+      "EM": [
+        "Linguagens e suas Tecnologias",
+        "Matemática e suas Tecnologias",
+        "Ciências da Natureza e suas Tecnologias",
+        "Ciências Humanas e Sociais Aplicadas"
+      ]
+    },
+    "edition": "Resolução nº521/2025",
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "ato_normativo",
+    "normative_parts": [
+      "Documento completo: ato e eventuais anexos a inventariar porOCR"
+    ],
+    "redistribution": "Direitos da fonte não determinados. PDF e renders originais privados, sem redistribuição do fac-símile.",
+    "collected_at": "2026-10-28T14:09:28.892140+00:00",
+    "sha256": "16a905b5d685d9d6a2209344c9a3ef210361b802e83a4b012b7f92fe198f558c",
+    "local_path": "data/raw/CE/ce-resolucao-521-2025.pdf",
+    "status": "acquired",
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "inventory_complete": false,
+    "inventory_status": "scanned_full_act_acquired_OCR_and_structure_pending",
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "pdf_pages": 26,
+    "pages": 26,
+    "bytes": 5282076,
+    "artifact_metadata": {
+      "format": "PDF 1.7",
+      "title": "",
+      "author": "",
+      "subject": "",
+      "keywords": "",
+      "creator": "",
+      "producer": "GPL Ghostscript 10.06.0",
+      "creationDate": "D:20260611112830-03'00'",
+      "modDate": "D:20260611112830-03'00'",
+      "trapped": "",
+      "encryption": null
+    },
+    "attempts": [
+      {
+        "at": "2026-10-28T14:09:28.892140+00:00",
+        "url": "https://legislacao.cee.ce.gov.br/publicacoes/resolucao-cee-no-5212025-2025/abrir/",
+        "result": "acquired_and_pdf_parsed",
+        "sha256": "16a905b5d685d9d6a2209344c9a3ef210361b802e83a4b012b7f92fe198f558c",
+        "bytes": 5282076,
+        "pages": 26
+      }
+    ],
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:09:28.892140+00:00",
+      "method": "Direct official issuer distribution, full private artifact acquired and SHA/pages verified, cover/CIP/table-of-contents read. No complete learning reconciliation or legal application inferred."
+    },
+    "requires_ocr": true,
+    "final_url": "https://legislacao.cee.ce.gov.br/media/publicacoes/resolucoes/conselho-estadual-de-educacao/2025/resolucao-cee-521-2025.pdf",
+    "inventory_evidence": [
+      {
+        "official_url": "https://legislacao.cee.ce.gov.br/legislacao/resolucoes/conselho-estadual-de-educacao/",
+        "section": "Resolução CEE nº521/2025",
+        "excerpt": "Institui normas complementares para a organização e oferta do curso de Ensino Médio; orienta a implementação dos Itinerários Formativos (IFs) e dá outras providências."
+      }
+    ]
+  },
+  {
+    "id": "pe-instrucao-normativa-03-2026",
+    "uf": "PE",
+    "title": "IN SEE/PE03/2026 — referência citada nos cadernos IFA; texto original pendente",
+    "issuer": "Secretaria de Educação de Pernambuco, conforme citação oficial nos cadernos IFA",
+    "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+    "artifact_url": null,
+    "artifact_landing_url": "https://diariooficial.cepe.com.br/diariooficialweb/",
+    "artifact_url_unknown_reason": "URL do documento original não localizada; a landing page e o endpoint público observado não são apresentados como PDF.",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Itinerários Formativos de Aprofundamento"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "ato_normativo",
+    "normative_parts": [
+      "Texto normativo citado; partes e eventuais anexos ainda não inventariados"
+    ],
+    "redistribution": "Texto original não obtido; nenhuma condição de redistribuição atribuída.",
+    "collected_at": null,
+    "sha256": null,
+    "local_path": null,
+    "status": "research_pending",
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "inventory_status": "original_act_and_full_scope_pending",
+    "validity_status": "citation_confirmed_original_text_and_application_period_not_verified",
+    "source_number": "03/2026",
+    "scope_note": "O registro comprova apenas o vínculo declarado nos dois cadernos IFA do Ensino Médio; não presume título integral, data de publicação, revogações ou escopo completo do ato.",
+    "citation_evidence": [
+      {
+        "source_id": "pe-ifa-matriz-anexo-i-c4ba842e",
+        "artifact_sha256": "c4ba842e9fd17f7b0af3531721586765f8304e5571b5b29c7b54b70958a5627a",
+        "official_artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-1.pdf",
+        "page": 5,
+        "excerpt": "Instrução Normativa nº 03/2026",
+        "claim": "O caderno declara consonância com a instrução. O texto original não foi obtido."
+      },
+      {
+        "source_id": "pe-ifa-matriz-anexo-ii-c6f9ef30",
+        "artifact_sha256": "c6f9ef30769137afec8ea0ac713f6d5051b5b9cd4e02b95dee8b7cf7aca5c5db",
+        "official_artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-2.pdf",
+        "page": 5,
+        "excerpt": "Instrução Normativa nº 03/2026",
+        "claim": "O caderno declara consonância com a instrução. O texto original não foi obtido."
+      }
+    ],
+    "attempts": [
+      {
+        "url": "https://diariooficial.cepe.com.br/diariooficial/public/home/cadernos?dataPublicacao=21%2F01%2F2026",
+        "http_status": 403,
+        "result": "ordinary_public_GET_refused",
+        "date_parameter_note": "Data candidata de pesquisa; não é uma data de publicação confirmada."
+      },
+      {
+        "url": "https://diariooficial.cepe.com.br/diariooficial/public/home/cadernos?dataPublicacao=26%2F06%2F2026",
+        "http_status": 403,
+        "result": "ordinary_public_GET_refused",
+        "date_parameter_note": "Data candidata de pesquisa; não é uma data de publicação confirmada."
+      }
+    ],
+    "research_evidence_path": "docs/evidence/source-audit-pe-current/normative-act-attempts.json",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:rs_adapter:pe-current-inventory",
+      "at": "2026-10-28T14:04:06.538751+00:00",
+      "method": "Conferência literal das duas citações oficiais e registro de tentativas, sem atribuir texto ou vigência não obtidos."
+    }
+  },
+  {
+    "id": "pi-resolucao-188-2025",
+    "uf": "PI",
+    "title": "Resolução CEE/PI nº188/2025 — aprova Parecer190/2025 sobre Currículo da Computação",
+    "issuer": "Conselho Estadual de Educação do Piauí",
+    "official_url": "https://www.ceepi.pro.br/Resolu%C3%A7%C3%B5es%20%20%202025/0%20resolu%C3%A7%C3%A3o%202025.htm",
+    "artifact_url": "https://ceepi.pro.br/Resolu%C3%A7%C3%B5es%20%20%202025/2025%20Resolucao%20188.pdf",
+    "stages": [
+      "EI",
+      "EF",
+      "EM"
+    ],
+    "components": [
+      "Computação"
+    ],
+    "stage_component_inventory": {
+      "EI": [
+        "Computação"
+      ],
+      "EF": [
+        "Computação"
+      ],
+      "EM": [
+        "Computação"
+      ]
+    },
+    "edition": "2025",
+    "document_date": "2025-12-18",
+    "homologation_date": "2025-12-19",
+    "application_period": null,
+    "document_type": "ato_normativo",
+    "normative_parts": [
+      "ResoluçãoCEE/PI188/2025: título,ementa,preâmbulo,doisconsiderandos,art1,sessão eassinatura daPresidência",
+      "Homologação:declaraçãoPDF1 eassinatura/função doSecretárioPDF2",
+      "Contexto documental público:emissor,processo/data eidentificaçãoSEI"
+    ],
+    "redistribution": "Ato público original preservado em cache privado; publicação estruturada depende de OCR/transcrição e reconciliação.",
+    "collected_at": "2026-10-28T14:13:18.947983+00:00",
+    "sha256": "154db33551a1501916dca9eaf9ba1e428d2cb4f9bb3dec41603343be2416ad10",
+    "local_path": "data/raw/PI/154db33551a1501916dca9eaf9ba1e428d2cb4f9bb3dec41603343be2416ad10.pdf",
+    "status": "acquired",
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "requires_ocr": true,
+    "pdf_pages": 2,
+    "pages": 2,
+    "bytes": 707580,
+    "inventory_complete": true,
+    "inventory_status": "complete_independent_act_inventory_and_peer_verified_adapter_current_cache_refresh_pending",
+    "reconciliation_status": "pending",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Cabeçalho",
+        "excerpt": "Teresina-PI, 18 de dezembro de 2025",
+        "method": "Automated visual inspection of original private render"
+      },
+      {
+        "page": 1,
+        "section": "Deliberação/relato",
+        "excerpt": "16/12/2025",
+        "note": "Date of plenary/report differs from header date; preserved separately."
+      }
+    ],
+    "approval_or_report_date": "2025-12-16",
+    "date_scope_note": "18/12 is document header date;16/12 is plenary/report. Resolution index lists15.12.25; conflicting catalogue value is not silently substituted. Homologation19/12 is visible electronic signature on resolutionPDFp2. No verified application period inferred.",
+    "acquisition_evidence": "docs/evidence/source-audit-northeast/pi-res188-acquisition.json",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:18:00.098441+00:00",
+      "method": "Exact official index hrefs, secure canonical hostname withoutwww, TLS verification enabled, full PDF SHA/page count, private visual cover/header/signature inspection; not cryptographic signature verification."
+    },
+    "independent_inventory_path": "docs/evidence/source-audit-northeast/pi-res188-source-only-inventory.json",
+    "uncoded_items_path": "data/manifests/uncoded/pi-resolucao-188-2025-items.json",
+    "adapter_authority": {
+      "uncoded_page_sections_pages": [
+        1,
+        2
+      ]
+    },
+    "uncoded_adapter_verification": {
+      "sidecar_sha256": "fa56051d8e4677615a33e5d2d1edea7634cdde1330b9b274698377b7f56180e2",
+      "peer_path": "docs/evidence/source-audit-pi-res188-peer/peer-verification.json",
+      "peer_sha256": "15062b7f854e4d921eee7d73951880816acefa5bc879e3de6964b9cc70a722eb",
+      "source_visual_denominator": "docs/evidence/source-audit-pi-res188-peer/source-visual-denominator.json",
+      "real_loader_finalizer_proof": "docs/evidence/source-audit-northeast/pi-res188-real-import-verification.json",
+      "records": 14,
+      "learning_items": 0,
+      "article_count": 1,
+      "considerandos": 2,
+      "parent_links": 13,
+      "scope": "Complete selected act+homologation, public institutional/SEI context;14nodes from15independentpublicvisualunits withprocess/dategrouped. Electronic authentication identifiers/QR are private source metadata, not omitted curricular content. No native-text claim; actual OCR+visual-review evidence.",
+      "human_pedagogical_review": false
+    },
+    "expected_related_documents": [
+      {
+        "title": "ParecerCEE/PI190/2025",
+        "related_source_id": "pi-parecer-190-2025",
+        "artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+        "mandatory": true,
+        "evidence": [
+          {
+            "source_id": "pi-resolucao-188-2025",
+            "page": 1,
+            "section": "Artigo1º",
+            "excerpt": "Aprovar o Parecer CEE/PI nº 190/2025"
+          }
+        ]
+      }
+    ],
+    "documentary_context_policy": {
+      "private_regions": [
+        {
+          "page": 2,
+          "role": "electronic_authentication_QR_and_employee_identifiers",
+          "reason": "Non-curricular certification metadata preserved in original and immutable private OCR; public act and homologation bodies remain complete."
+        }
+      ],
+      "public_identification_preserved": "Institutional issuer/process/date/publicfunction and SEIdocument/process footer.",
+      "private_reference_evidence": "docs/evidence/source-audit-northeast/pi-res188-ocr-execution.json"
+    }
+  },
+  {
+    "id": "pi-parecer-190-2025",
+    "uf": "PI",
+    "title": "Parecer CEE/PI nº190/2025 — Currículo da Computação EI/EF/EM",
+    "issuer": "Conselho Estadual de Educação do Piauí",
+    "official_url": "https://ceepi.pro.br/Pareceres%20%20%20%20%20%202025/0%20pareceres%202025.htm",
+    "artifact_url": "https://ceepi.pro.br/Pareceres%20%20%20%20%20%202025/2025%20Parecer%20190.pdf",
+    "stages": [
+      "EI",
+      "EF",
+      "EM"
+    ],
+    "components": [
+      "Computação"
+    ],
+    "stage_component_inventory": {
+      "EI": [
+        "Computação"
+      ],
+      "EF": [
+        "Computação"
+      ],
+      "EM": [
+        "Computação"
+      ]
+    },
+    "edition": "2025",
+    "document_date": "2025-12-18",
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "parecer",
+    "normative_parts": [
+      "Identificação,processo e relatório",
+      "Introdução e documentos submetidos",
+      "Análise e fundamentação",
+      "Voto,conclusão e decisão",
+      "Assinaturas"
+    ],
+    "redistribution": "Ato público original preservado em cache privado; publicação estruturada depende de OCR/transcrição e reconciliação.",
+    "collected_at": "2026-10-28T14:16:25.009397+00:00",
+    "sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+    "local_path": "data/raw/PI/pi-parecer-190-2025.pdf",
+    "status": "acquired",
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "requires_ocr": true,
+    "pdf_pages": 6,
+    "pages": 6,
+    "bytes": 4201834,
+    "inventory_complete": false,
+    "inventory_status": "scanned_act_acquired_OCR_and_structure_pending",
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Cabeçalho",
+        "excerpt": "Teresina-PI, 18 de dezembro de 2025",
+        "method": "Automated visual inspection of original private render"
+      },
+      {
+        "page": 1,
+        "section": "Deliberação/relato",
+        "excerpt": "16/12/2025",
+        "note": "Date of plenary/report differs from header date; preserved separately."
+      }
+    ],
+    "approval_or_report_date": "2025-12-16",
+    "date_scope_note": "18/12 is document header date;16/12 is plenary/report. Resolution index lists15.12.25; conflicting catalogue value is not silently substituted. Homologation19/12 is visible electronic signature on resolutionPDFp2. No verified application period inferred.",
+    "acquisition_evidence": "docs/evidence/source-audit-northeast/pi-parecer190-acquisition.json",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:18:00.098441+00:00",
+      "method": "Exact official index hrefs, secure canonical hostname withoutwww, TLS verification enabled, full PDF SHA/page count, private visual cover/header/signature inspection; not cryptographic signature verification."
+    }
+  },
+  {
+    "id": "pb-proposta-ei-ef-cedoc",
+    "uf": "PB",
+    "title": "Proposta Curricular do Estado da Paraíba — Educação Infantil e Ensino Fundamental (snapshot CEDOC de 392 páginas)",
+    "issuer": "Secretaria de Estado da Educação e da Ciência e Tecnologia da Paraíba",
+    "author": "Secretaria da Educação do Estado da Paraíba",
+    "official_url": "https://drive.google.com/file/d/1qQbrcc_3AmUaIbaDZtPR2ONtiZhqOjlL/view",
+    "catalogPage": "https://observatoriodeeducacao.institutounibanco.org.br/cedoc/detalhe/tf-proposta-curricular-do-estado-da-paraiba-educacao-infantil-e-ensino-fundamental,39027aab-c324-4c7e-bb44-0cc164c79a01",
+    "originalSource": "https://drive.google.com/file/d/1qQbrcc_3AmUaIbaDZtPR2ONtiZhqOjlL/view",
+    "artifact_url": "https://observatoriodeeducacao.institutounibanco.org.br/api/assets/observatorio/89fd023c-293c-460d-a282-87588f43eaee/?download=0",
+    "effective_url": "https://observatoriodeeducacao.institutounibanco.org.br/api/assets/observatorio/89fd023c-293c-460d-a282-87588f43eaee/?download=0",
+    "capturedate": "2026-10-28T14:13:10.223919+00:00",
+    "catalog_publisher": "Instituto Unibanco — Observatório de Educação/CEDOC",
+    "catalog_publication_year_claim": "2020",
+    "catalog_license_claim": "Domínio Público; catalog assertion, independent redistribution assessment not established",
+    "catalog_capture": {
+      "at": "2026-10-28T14:15:25.125388+00:00",
+      "requested_url": "https://observatoriodeeducacao.institutounibanco.org.br/cedoc/detalhe/tf-proposta-curricular-do-estado-da-paraiba-educacao-infantil-e-ensino-fundamental,39027aab-c324-4c7e-bb44-0cc164c79a01",
+      "effective_url": "https://observatoriodeeducacao.institutounibanco.org.br/cedoc/detalhe/tf-proposta-curricular-do-estado-da-paraiba-educacao-infantil-e-ensino-fundamental,39027aab-c324-4c7e-bb44-0cc164c79a01",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "40f95ffb2bfece937d47d7323acf66af77017ac673e6fe17840be689eff226f4",
+      "bytes": 79837,
+      "private_snapshot": "data/raw/PB/pb-proposta-ei-ef-cedoc-catalog.html",
+      "catalog_field_evidence": [
+        {
+          "label": "Data de publicação:",
+          "literal_context": "Data de publicação: 2020 Local de publicação: João Pessoa Instituição(ões) relacionada(s): Secretaria da Educação do Estado da Paraíba (Autora) Fonte: Abre em uma nova guia https://drive.google.com/file/d/1qQbr"
+        },
+        {
+          "label": "Local de publicação:",
+          "literal_context": "Local de publicação: João Pessoa Instituição(ões) relacionada(s): Secretaria da Educação do Estado da Paraíba (Autora) Fonte: Abre em uma nova guia https://drive.google.com/file/d/1qQbrcc_3AmUaIbaDZtPR2ONtiZhqO"
+        },
+        {
+          "label": "Instituição(ões) relacionada(s):",
+          "literal_context": "Instituição(ões) relacionada(s): Secretaria da Educação do Estado da Paraíba (Autora) Fonte: Abre em uma nova guia https://drive.google.com/file/d/1qQbrcc_3AmUaIbaDZtPR2ONtiZhqOjlL/view Data de Acesso à Fonte: "
+        },
+        {
+          "label": "Data de Acesso à Fonte:",
+          "literal_context": "Data de Acesso à Fonte: 28/08/2023 Suporte: Texto Tipologia: Manuais, materiais e textos de orientação e apoio Tamanho: 392 páginas Tipo Licença: Domínio Público fechar Desigualdade racial na Educação Educação "
+        },
+        {
+          "label": "Tamanho:",
+          "literal_context": "Tamanho: 392 páginas Tipo Licença: Domínio Público fechar Desigualdade racial na Educação Educação Integral BNCC OBSERVATÓRIO DE EDUCAÇÃO Home Em Debate Formações CEDOC Luz, Câmera, Gestão Banco de Soluções Pan"
+        },
+        {
+          "label": "Tipo Licença:",
+          "literal_context": "Tipo Licença: Domínio Público fechar Desigualdade racial na Educação Educação Integral BNCC OBSERVATÓRIO DE EDUCAÇÃO Home Em Debate Formações CEDOC Luz, Câmera, Gestão Banco de Soluções Panorama dos Territórios"
+        }
+      ],
+      "originalSource_url_present_in_html": true
+    },
+    "technicalvalidation": {
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "content_type_pdf": true,
+      "pdf_signature": true,
+      "parser": "PyMuPDF 1.26.7",
+      "all_page_objects_checked": 392,
+      "page_errors": [],
+      "is_repaired": false,
+      "metadata": {
+        "format": "PDF 1.4",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Adobe InDesign CC 13.1 (Windows)",
+        "producer": "Adobe PDF Library 15.0",
+        "creationDate": "D:20190201095944-02'00'",
+        "modDate": "D:20190201100012-02'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "status": "passed",
+      "parser_open_is_completeness": false
+    },
+    "edition_vigencycheck": {
+      "edition": null,
+      "vigency": null,
+      "status": "pending_documentary_comparison_not_inferred_from_catalog_2020",
+      "technical_date_observation": "PDF metadata InDesign2019; catalog2020 publication-year claim is distinct from edition and normative adoption."
+    },
+    "stages": [
+      "EI",
+      "EF"
+    ],
+    "components": [
+      "O eu, o outro e o nós",
+      "Corpo, gestos e movimentos",
+      "Traços, sons, cores e formas",
+      "Escuta, fala, pensamento e imaginação",
+      "Espaços, tempos, quantidades, relações e transformações",
+      "Língua Portuguesa",
+      "Arte",
+      "Educação Física",
+      "Língua Inglesa",
+      "Matemática",
+      "Ciências",
+      "Geografia",
+      "História",
+      "Ensino Religioso"
+    ],
+    "edition": null,
+    "document_date": null,
+    "homologation_date": null,
+    "application_period": null,
+    "document_type": "referencial_curricular",
+    "normative_parts": [
+      "Apresentação e trajetória curricular14–26",
+      "Educação Infantil27–70: direitos, campos, três faixas, objetivos, condições pedagógicas e transição",
+      "Ensino Fundamental71–380: fundamentos, nove componentes e seus direitos, princípios, objetivos, conteúdos, metodologia e avaliação",
+      "Referências381–392; inclui contracapa decorativa392"
+    ],
+    "redistribution": "Snapshot privado; catálogo declara Domínio Público, afirmação separada da verificação independente de direitos. Original não publicado pelo projeto.",
+    "collected_at": "2026-10-28T14:13:10.223919+00:00",
+    "sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+    "local_path": "data/raw/PB/pb-proposta-ei-ef-cedoc.pdf",
+    "status": "acquired",
+    "bytes": 7115062,
+    "document_pages": 392,
+    "attempts": [
+      {
+        "at": "2026-10-28T14:13:10.223919+00:00",
+        "attempt": 1,
+        "http_status": 200,
+        "effective_url": "https://observatoriodeeducacao.institutounibanco.org.br/api/assets/observatorio/89fd023c-293c-460d-a282-87588f43eaee/?download=0",
+        "headers": {
+          "content-type": "application/pdf",
+          "accept-ranges": "bytes",
+          "etag": "0",
+          "vary": "Auth-State,X-Fields,X-Flatten,X-Languages,X-NoCleanup,X-NoEnrichment,X-NoResolveLanguages,X-ResolveFlow,X-ResolveUrls,X-Unpublished",
+          "x-xss-protection": "1; mode=block",
+          "x-appid": "c1829165-6a8e-4217-9372-d1a25493e9c8",
+          "x-costs": "0.5",
+          "content-security-policy": "script-src 'none'",
+          "content-disposition": "inline; filename=PB_curriculo_EIEF_Proposta_Curricular_do_Estado_da_Para_ba_-_Educa__o_Infantil_e_Ensino_Fundamental__Publica__o_.pdf; filename*=UTF-8''PB_curriculo_EIEF_Proposta_Curricular_do_Estado_da_Para%C3%ADba_-_Educa%C3%A7%C3%A3o_Infantil_e_Ensino_Fundamental__Publica%C3%A7%C3%A3o_.pdf",
+          "x-envoy-upstream-service-time": "78",
+          "expires": "Wed, 28 Oct 2026 14:13:10 GMT",
+          "cache-control": "max-age=0, no-cache, no-store",
+          "pragma": "no-cache",
+          "date": "Wed, 28 Oct 2026 14:13:10 GMT",
+          "connection": "close",
+          "content-length": "7115062"
+        },
+        "bytes": 7115062,
+        "sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+        "prefix_hex": "255044462d312e340d25e2e3cfd30d0a",
+        "is_pdf": true,
+        "seconds": 5.519
+      }
+    ],
+    "expected": true,
+    "mandatory": true,
+    "include_in_corpus": true,
+    "inventory_complete": false,
+    "reconciliation_status": "user_requested_structured_adapter_independently_verified_documentary_scope_pending",
+    "requires_document_specific_adapter": true,
+    "source_relationship": {
+      "type": "different_layout_and_scope_pending_documentary_comparison",
+      "related_source_id": "pb-proposta-ei-ef",
+      "never_replaces_validated_635_page_adapter_implicitly": true,
+      "source635_sidecar_unchanged": true
+    },
+    "expected_max_bytes": 33554432,
+    "issuer_evidence": {
+      "page": 3,
+      "excerpt": "Secretaria de Estado da Educação e da Ciência e Tecnologia da Paraíba",
+      "method": "native_pdf_text",
+      "author_catalog_claim_separate": "Secretaria da Educação do Estado da Paraíba"
+    },
+    "primary_source_check": {
+      "url": "https://drive.google.com/file/d/1qQbrcc_3AmUaIbaDZtPR2ONtiZhqOjlL/view",
+      "at": "2026-10-28T14:22:00.082105+00:00",
+      "method": "web.open standard public page",
+      "result": "not_accessible_via_tool",
+      "catalog_indicated_origin_only": true,
+      "does_not_invalidate_successful_cedoc_asset_retrieval": true
+    },
+    "processing": {
+      "extraction_cache": "data/extracted/af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453-page-cell-v1.4.0.json",
+      "native_and_generic_extraction_status": "completed_pending_document_specific_adapter",
+      "pages": 392,
+      "records": 746,
+      "coded_candidates": 365,
+      "coded_candidates_are_accepted_learnings": false,
+      "documentary_page_sections": 381,
+      "warnings": 2,
+      "warning_resolution_evidence": "docs/evidence/source-audit-cedoc-ap-pb/pb-cedoc-cover-ocr-validation.json",
+      "warning_note": "Initial generic extraction OCR-model path was not configured for image cover/backcover; targeted OCR subsequently executed with explicit Portuguese model path and visual review. Generic cache retains its historical warnings and ocr_pending=true; no claim of reconciled completeness."
+    },
+    "pdf_pages": 392,
+    "pages": 392,
+    "publication_eligible": true,
+    "provenance_status": "catalogued_state_issued_document_content_verified_primary_origin_unconfirmed",
+    "official_url_status": "catalog_indicated_origin_not_authenticated_as_issuer_distribution",
+    "normative_scope_basis": {
+      "classification": "user_requested_distinct_snapshot_processing_required",
+      "basis": "User explicitly requested CEDOC collection and continued structured extraction.392page source is an independent implementation deliverable despite selected635page artifact. It remains required in acceptance denominator; no claim of current normative adoption, EM coverage or equivalence to635. Own392adapter is pending with data_north.",
+      "related_source_id": "pb-proposta-ei-ef",
+      "review_status": "distinct_source_adapter_required_edition_scope_comparison_pending"
+    },
+    "stage_component_inventory": {
+      "EI": [
+        "O eu, o outro e o nós",
+        "Corpo, gestos e movimentos",
+        "Traços, sons, cores e formas",
+        "Escuta, fala, pensamento e imaginação",
+        "Espaços, tempos, quantidades, relações e transformações"
+      ],
+      "EF": [
+        "Língua Portuguesa",
+        "Arte",
+        "Educação Física",
+        "Língua Inglesa",
+        "Matemática",
+        "Ciências",
+        "Geografia",
+        "História",
+        "Ensino Religioso"
+      ]
+    },
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:26:11.959273+00:00",
+      "pdf_sha256_verified": true,
+      "physical_pages": 392,
+      "bytes": 7115062,
+      "selected635_sidecar_sha256_unchanged": "b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514"
+    },
+    "required": true,
+    "processing_required": true,
+    "user_requested": true,
+    "uncoded_items_path": "data/manifests/uncoded/pb-cedoc-392-items.json",
+    "adapter_authority": {
+      "generic_coded_reference_pages": [
+        1,
+        392
+      ],
+      "coded_learning_pages": [
+        234,
+        284
+      ]
+    },
+    "publication_scope": "user_requested_catalogued_snapshot_with_unconfirmed_edition_and_normative_application",
+    "current_normative_application_confirmed": false,
+    "primary_distribution_chain_confirmed": false,
+    "authoritative_adapter_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T15:04:35.943221+00:00",
+      "sidecar_sha256": "4336a71d0676c2b48f1e363e06f4ef0368c0eba9e2980ff3fc3c79f2865f998b",
+      "record_count": 1946,
+      "physical_cells": 1055,
+      "EF_individual_anchors": 1689,
+      "EI_objectives": 99,
+      "lists": 120,
+      "rights_sections": 6,
+      "independent_errors": 0,
+      "scope": "This exact user-requested392page snapshot only. Not EM, not current normative adoption, not equivalent to635page Source. Primary-origin link remains a catalogue assertion."
+    },
+    "inventory_evidence": {
+      "path": "docs/evidence/source-audit-cedoc-ap-pb/pb-cedoc-392-source-inventory.json",
+      "method": "Independent of adapter records: original PDF TOC10–13 and actual organizer headings50–54/87/136/174/198/234/299/332/352/370. No output record census used as source denominator.",
+      "actor_type": "automated",
+      "at": "2026-10-28T15:09:21.360091+00:00"
+    },
+    "scope_exclusions": "No ER-EI/EJA or final modality chapters imported from635. References to modalities in introductory prose are preserved as context; not reconstructed absent chapters. NoEMsource."
+  },
+  {
+    "uf": "MA",
+    "issuer": "Conselho Estadual de Educação do Maranhão",
+    "stages": [
+      "EI",
+      "EF",
+      "EM"
+    ],
+    "components": [
+      "Computação"
+    ],
+    "homologation_date": null,
+    "redistribution": "Original integral mantido em cache privado; redistribuição do PDF não estabelecida.",
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "actor_type": "automated",
+    "id": "ma-resolucao-211-2026-doe",
+    "title": "Resolução CEE/MA 211/2026 — aprovação do DCTMA Educação Digital e Midiática",
+    "official_url": "https://diariooficial.ma.gov.br/acervo/",
+    "artifact_url": "https://diariooficial.ma.gov.br/download.php?arq=EX20260731",
+    "edition": "2026 (numeração do ato)",
+    "document_date": "2026-07-21",
+    "publication_date": "2026-07-31",
+    "application_period": "Vigência do ato na publicação, conforme art.6; art.5 reserva diretrizes operacionais e prazos de transição a ato posterior. Não fixa cronograma de implantação do complemento.",
+    "document_type": "ato_normativo",
+    "normative_parts": [
+      "Resolução211/2026: ementa, preâmbulo, oito considerandos, seis artigos e assinaturas"
+    ],
+    "status": "acquired",
+    "inventory_status": "complete",
+    "inventory_complete": true,
+    "reconciliation_status": "automated_documentary_reconciled",
+    "sha256": "5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3",
+    "local_path": "data/raw/MA/5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3.pdf",
+    "bytes": 1139909,
+    "pdf_pages": 38,
+    "collected_at": "2026-10-28T14:25:13.434453+00:00",
+    "extraction_pages": [
+      20,
+      21
+    ],
+    "processing_scope": "curated_normative_regions",
+    "page_regions": [
+      {
+        "page": 20,
+        "regions": [
+          [
+            300,
+            150,
+            556,
+            800
+          ]
+        ],
+        "reading_order": "as_declared",
+        "coordinate_space": "original_pdf_page",
+        "evidence": {
+          "page": 20,
+          "section": "Resolução CEE/MA211/2026",
+          "verification": "Automated visual and native-text inspection: p20 right column begins after SEMA signature; p21 left column contains continuation and signatures, right top ends before Secretaria de Cultura."
+        }
+      },
+      {
+        "page": 21,
+        "regions": [
+          [
+            40,
+            70,
+            295,
+            795
+          ],
+          [
+            300,
+            70,
+            556,
+            140
+          ]
+        ],
+        "reading_order": "as_declared",
+        "coordinate_space": "original_pdf_page",
+        "evidence": {
+          "page": 21,
+          "section": "Resolução CEE/MA211/2026",
+          "verification": "Automated visual and native-text inspection: p20 right column begins after SEMA signature; p21 left column contains continuation and signatures, right top ends before Secretaria de Cultura."
+        }
+      }
+    ],
+    "jurisdiction_scope": "Sistema Estadual de Ensino do Maranhão; não presume adoção municipal universal.",
+    "scope_note": "Ato aprova documento normativo complementar de Educação Básica. Não contém o PDF do currículo, nem anexo/URL/QR para seu conteúdo. Matérias de SEMA/Cultura excluídas pelos recortes.",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:ma_acts",
+      "at": "2026-10-28T14:29:02.505978+00:00",
+      "method": "Public archive catalogue plus original official PDF, selected regions and complete visual inspection of p20/21."
+    },
+    "source_topics": [
+      "Educação Digital e Midiática"
+    ],
+    "stage_component_inventory": {
+      "EI": [
+        "Computação"
+      ],
+      "EF": [
+        "Computação"
+      ],
+      "EM": [
+        "Computação"
+      ]
+    },
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:38:21.543447+00:00",
+      "method": "Independent originalPDF SHA/pages/bytes/region bounds and peer evidence review; mandatory current source scope distinct from unclassified EITI/programmatic sources. Unknown curriculum artifact URL stays null."
+    },
+    "uncoded_items_path": "data/manifests/uncoded/ma-211-items.json",
+    "adapter_authority": {
+      "uncoded_page_sections_pages": [
+        20,
+        21
+      ]
+    },
+    "reconciliation_evidence": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:59:05.124731+00:00",
+      "sidecar_sha256": "7e62414648b4172dcf6eae4d3f028046ab0eb0351ec93f7f28d9fe3963bfdc64",
+      "shared_importer_finalizer_proof": "docs/evidence/source-audit-ma-current/ma-normative-import-verification.json",
+      "independent_peer_proof": "docs/evidence/source-audit-ma-current/acts/adapter-peer-review.json",
+      "reconciliation_path": "data/manifests/reconciliation/ma-resolucao-211-2026-doe.json",
+      "typed_structural_records": 19,
+      "human_pedagogical_review": false,
+      "scope": "Complete selected normative act and appendix only; no UF curricular completion claim."
+    },
+    "expected_related_documents": [
+      {
+        "title": "DCTMA Educação Digital e Midiática integral aprovado pelo Art1",
+        "related_source_id": "ma-dctma-educacao-digital-midiatica",
+        "artifact_sha256": null,
+        "mandatory": true,
+        "evidence": [
+          {
+            "source_id": "ma-resolucao-211-2026-doe",
+            "page": 20,
+            "printed_page": "20",
+            "section": "article-1",
+            "excerpt": "Art. 1º Aprovar o Documento Curricular do Território Ma­ ranhense (DCTMA) – Educação Digital e Midiática, elaborado pela Secretaria de Estado da Educação do Maranhão (SEDUC/MA), como documento normativo complementar para a Educação Básica no âm­ bito do Sistema Estadual de Ensino do Maranhão.",
+            "bbox": [
+              306.1416931152344,
+              671.1541748046875,
+              556.4277954101562,
+              726.6212158203125
+            ],
+            "locator": "ma-normative/article-1",
+            "method": "document-specific-normative-partition"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uf": "MA",
+    "homologation_date": null,
+    "redistribution": "Original integral mantido em cache privado; redistribuição do PDF não estabelecida.",
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "actor_type": "automated",
+    "id": "ma-portaria-181-2026-recomposicao-doe",
+    "title": "Portaria SEDUC/MA 181/2026 e Anexo Único — Recomposição das Aprendizagens no Ensino Médio parcial",
+    "issuer": "Secretaria de Estado da Educação do Maranhão",
+    "official_url": "https://diariooficial.ma.gov.br/acervo/",
+    "artifact_url": "https://diariooficial.ma.gov.br/download.php?arq=EX20260831",
+    "edition": "2026 (numeração do ato)",
+    "document_date": "2026-08-26",
+    "publication_date": "2026-08-31",
+    "application_period": "Vigência na publicação; efeitos retroativos a05/08/2026 conforme art25. Recorte exclusivo Ensino Médio Regular em regime parcial da rede estadual.",
+    "document_type": "ato_normativo",
+    "normative_parts": [
+      "Portaria181/2026:25artigos em9capítulos",
+      "Anexo Único integrante:Diretrizes Pedagógicas,17seções e quadro de7etapas"
+    ],
+    "status": "acquired",
+    "inventory_status": "complete",
+    "inventory_complete": true,
+    "reconciliation_status": "automated_documentary_reconciled",
+    "sha256": "d24ce340f3d74c9461d99079d8fdf9aab9d720c024fad89b7d198af2990a8f7e",
+    "local_path": "data/raw/MA/d24ce340f3d74c9461d99079d8fdf9aab9d720c024fad89b7d198af2990a8f7e.pdf",
+    "bytes": 2760281,
+    "pdf_pages": 100,
+    "collected_at": "2026-10-28T14:30:09.759875+00:00",
+    "stages": [
+      "EM"
+    ],
+    "components": [
+      "Língua Portuguesa",
+      "Matemática"
+    ],
+    "extraction_pages": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "processing_scope": "curated_normative_regions",
+    "page_regions": [
+      {
+        "page": 31,
+        "regions": [
+          [
+            40,
+            70,
+            296,
+            800
+          ],
+          [
+            300,
+            70,
+            558,
+            800
+          ]
+        ],
+        "reading_order": "as_declared",
+        "coordinate_space": "original_pdf_page",
+        "evidence": {
+          "page": 31,
+          "section": "Portaria SEDUC/MA 181/2026 e Anexo Único — Recomposição das Aprendizagens no Ensino Médio parcial",
+          "verification": "Automated native-text and visual boundary inspection; unrelated disciplinary/food/culture matters excluded."
+        }
+      },
+      {
+        "page": 32,
+        "regions": [
+          [
+            40,
+            70,
+            296,
+            800
+          ],
+          [
+            300,
+            70,
+            558,
+            800
+          ]
+        ],
+        "reading_order": "as_declared",
+        "coordinate_space": "original_pdf_page",
+        "evidence": {
+          "page": 32,
+          "section": "Portaria SEDUC/MA 181/2026 e Anexo Único — Recomposição das Aprendizagens no Ensino Médio parcial",
+          "verification": "Automated native-text and visual boundary inspection; unrelated disciplinary/food/culture matters excluded."
+        }
+      },
+      {
+        "page": 33,
+        "regions": [
+          [
+            40,
+            70,
+            296,
+            800
+          ],
+          [
+            300,
+            70,
+            558,
+            800
+          ]
+        ],
+        "reading_order": "as_declared",
+        "coordinate_space": "original_pdf_page",
+        "evidence": {
+          "page": 33,
+          "section": "Portaria SEDUC/MA 181/2026 e Anexo Único — Recomposição das Aprendizagens no Ensino Médio parcial",
+          "verification": "Automated native-text and visual boundary inspection; unrelated disciplinary/food/culture matters excluded."
+        }
+      },
+      {
+        "page": 34,
+        "regions": [
+          [
+            40,
+            70,
+            296,
+            800
+          ],
+          [
+            300,
+            70,
+            558,
+            800
+          ]
+        ],
+        "reading_order": "as_declared",
+        "coordinate_space": "original_pdf_page",
+        "evidence": {
+          "page": 34,
+          "section": "Portaria SEDUC/MA 181/2026 e Anexo Único — Recomposição das Aprendizagens no Ensino Médio parcial",
+          "verification": "Automated native-text and visual boundary inspection; unrelated disciplinary/food/culture matters excluded."
+        }
+      },
+      {
+        "page": 35,
+        "regions": [
+          [
+            40,
+            70,
+            296,
+            800
+          ],
+          [
+            300,
+            70,
+            558,
+            800
+          ]
+        ],
+        "reading_order": "as_declared",
+        "coordinate_space": "original_pdf_page",
+        "evidence": {
+          "page": 35,
+          "section": "Portaria SEDUC/MA 181/2026 e Anexo Único — Recomposição das Aprendizagens no Ensino Médio parcial",
+          "verification": "Automated native-text and visual boundary inspection; unrelated disciplinary/food/culture matters excluded."
+        }
+      },
+      {
+        "page": 36,
+        "regions": [
+          [
+            40,
+            70,
+            296,
+            800
+          ],
+          [
+            300,
+            70,
+            558,
+            153
+          ]
+        ],
+        "reading_order": "as_declared",
+        "coordinate_space": "original_pdf_page",
+        "evidence": {
+          "page": 36,
+          "section": "Portaria SEDUC/MA 181/2026 e Anexo Único — Recomposição das Aprendizagens no Ensino Médio parcial",
+          "verification": "Automated native-text and visual boundary inspection; unrelated disciplinary/food/culture matters excluded."
+        }
+      }
+    ],
+    "jurisdiction_scope": "Ensino Médio Regular em regime parcial da Rede Pública Estadual de Ensino do Maranhão",
+    "scope_note": "Normas e anexo integrante de planejamento/recomposição; art1§2 e Anexo16 preservam matriz, carga total e componentes. Não é catálogo de novas habilidades locais e não prova substituição dos organizadores curriculares.",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:ma_acts",
+      "at": "2026-10-28T14:30:09.759875+00:00",
+      "method": "Official public diary, selected column regions, all article markers and private page renders."
+    },
+    "stage_component_inventory": {
+      "EM": [
+        "Língua Portuguesa",
+        "Matemática"
+      ]
+    },
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:38:21.557718+00:00",
+      "method": "Independent originalPDF SHA/pages/bytes/region bounds and peer evidence review; mandatory current source scope distinct from unclassified EITI/programmatic sources. Unknown curriculum artifact URL stays null."
+    },
+    "uncoded_items_path": "data/manifests/uncoded/ma-181-items.json",
+    "adapter_authority": {
+      "uncoded_page_sections_pages": [
+        31,
+        36
+      ]
+    },
+    "reconciliation_evidence": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:59:05.127398+00:00",
+      "sidecar_sha256": "e3e12025f883a2468ee8e15e03cc1dc9ccef9317c7a7e3bfd1f609146e4ab296",
+      "shared_importer_finalizer_proof": "docs/evidence/source-audit-ma-current/ma-normative-import-verification.json",
+      "independent_peer_proof": "docs/evidence/source-audit-ma-current/acts/adapter-peer-review.json",
+      "reconciliation_path": "data/manifests/reconciliation/ma-portaria-181-2026-recomposicao-doe.json",
+      "typed_structural_records": 76,
+      "human_pedagogical_review": false,
+      "scope": "Complete selected normative act and appendix only; no UF curricular completion claim."
+    }
+  },
+  {
+    "uf": "MA",
+    "issuer": "Secretaria de Estado da Educação do Maranhão, conforme art.1 da Resolução CEE/MA211/2026",
+    "stages": [
+      "EI",
+      "EF",
+      "EM"
+    ],
+    "components": [
+      "Computação"
+    ],
+    "homologation_date": null,
+    "redistribution": "Documento integral ainda não obtido; nenhuma condição de redistribuição atribuída.",
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "reconciled": false,
+    "actor_type": "automated",
+    "id": "ma-dctma-educacao-digital-midiatica",
+    "title": "Documento Curricular do Território Maranhense (DCTMA) — Educação Digital e Midiática",
+    "official_url": "https://diariooficial.ma.gov.br/download.php?arq=EX20260731",
+    "artifact_url": null,
+    "artifact_landing_url": "https://www.educacao.ma.gov.br/",
+    "edition": null,
+    "document_date": null,
+    "application_period": null,
+    "document_type": "curriculo_complementar",
+    "normative_parts": [
+      "Documento normativo complementar da Educação Básica aprovado pela Resolução CEE/MA211/2026; índice e partes internas ainda não obtidos"
+    ],
+    "status": "research_pending",
+    "inventory_status": "original_curriculum_and_internal_denominator_pending",
+    "inventory_complete": false,
+    "sha256": null,
+    "local_path": null,
+    "collected_at": null,
+    "approval_date": "2026-07-21",
+    "approval_evidence": {
+      "source_id": "ma-resolucao-211-2026-doe",
+      "artifact_sha256": "5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3",
+      "page": 20,
+      "article": "1",
+      "excerpt": "como documento normativo complementar para a Educação Básica"
+    },
+    "scope_note": "Existência e natureza normativa comprovadas pelo ato oficial; edição editorial, índice, conteúdo, PDF e aplicação detalhada permanecem desconhecidos. Não confundir com orientações do componente Educação Digital do EM.",
+    "source_topics": [
+      "Educação Digital e Midiática"
+    ],
+    "stage_component_inventory": {
+      "EI": [
+        "Computação"
+      ],
+      "EF": [
+        "Computação"
+      ],
+      "EM": [
+        "Computação"
+      ]
+    },
+    "integration_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:data_northeast",
+      "at": "2026-10-28T14:38:21.557756+00:00",
+      "method": "Independent originalPDF SHA/pages/bytes/region bounds and peer evidence review; mandatory current source scope distinct from unclassified EITI/programmatic sources. Unknown curriculum artifact URL stays null."
+    }
+  },
+  {
+    "id": "ba-resolucao-266-2025-computacao",
+    "uf": "BA",
+    "issuer": "Conselho Estadual de Educação da Bahia",
+    "official_url": "https://www.ba.gov.br/conselhodeeducacao/biblioteca-documentos/resolucoes-normativas",
+    "artifact_url": "https://www.ba.gov.br/conselhodeeducacao/sites/site-cee/files/2026-04/Resolu%C3%A7%C3%A3o%20CEE%20BA%20n%C2%BA%20266%202025%20-%20PARA%20PUBLICIZA%C3%87%C3%83O.pdf",
+    "stages": [
+      "EI",
+      "EF",
+      "EM"
+    ],
+    "document_type": "ato_normativo",
+    "redistribution": "Texto normativo oficial atribuído ao emissor; PDF,diagramação e eventuais elementos de terceiros não relicenciados. Snapshot integral privado para conferência/processamento.",
+    "collected_at": "2026-10-28T17:02:34.790730+00:00",
+    "sha256": "dae336de6d45da873386a66f01de53a483c790b502254c5faef3def5d5f00e17",
+    "local_path": "data/raw/BA/ba-resolucao-266-2025-computacao.pdf",
+    "status": "acquired",
+    "pdf_pages": 21,
+    "bytes": 856939,
+    "attempts": [
+      {
+        "at": "2026-10-28T17:02:34.790730+00:00",
+        "url": "https://www.ba.gov.br/conselhodeeducacao/sites/site-cee/files/2026-04/Resolu%C3%A7%C3%A3o%20CEE%20BA%20n%C2%BA%20266%202025%20-%20PARA%20PUBLICIZA%C3%87%C3%83O.pdf",
+        "method": "OrdinaryHTTPSGET of literal PDF link discovered in official CEE public catalogue; no credentials, TLS bypass or session replication.",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_length": "856939",
+        "final_url": "https://www.ba.gov.br/conselhodeeducacao/sites/site-cee/files/2026-04/Resolu%C3%A7%C3%A3o%20CEE%20BA%20n%C2%BA%20266%202025%20-%20PARA%20PUBLICIZA%C3%87%C3%83O.pdf",
+        "result": "acquired_and_pdf_validated",
+        "bytes": 856939,
+        "sha256": "dae336de6d45da873386a66f01de53a483c790b502254c5faef3def5d5f00e17",
+        "pdf_pages": 21,
+        "native_characters_by_page": [
+          2551,
+          2233,
+          2792,
+          2394,
+          2636,
+          1854,
+          2858,
+          2257,
+          2408,
+          1851,
+          2195,
+          1045,
+          2669,
+          2651,
+          3014,
+          2996,
+          2878,
+          3223,
+          2730,
+          3237,
+          2513
+        ],
+        "local_path": "data/raw/BA/ba-resolucao-266-2025-computacao.pdf",
+        "pdf_metadata": {
+          "format": "PDF 1.5",
+          "title": "",
+          "author": "ana.cleide",
+          "subject": "",
+          "keywords": "",
+          "creator": "Microsoft® Word 2016",
+          "producer": "Microsoft® Word 2016",
+          "creationDate": "D:20260327162111-03'00'",
+          "modDate": "D:20260327162111-03'00'",
+          "trapped": "",
+          "encryption": null
+        }
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "publication_eligible": true,
+    "inventory_complete": false,
+    "inventory_status": "original_articles_and_stage_scope_inventoried_structured_processing_pending",
+    "reconciliation_status": "pending",
+    "reviewer_type": "automated",
+    "pedagogical_review_status": "not_reviewed",
+    "requires_ocr": false,
+    "inventory_evidence": [
+      {
+        "source_id": "ba-resolucao-266-2025-computacao",
+        "page": 4,
+        "section": "Art4 e§1",
+        "excerpt": "A presente normativa estabelece diretrizes para orientar o conjunto dos estabelecimentos de ensino da Educação Básica integrantes do sistema de ensino do estado da Bahia."
+      },
+      {
+        "source_id": "ba-resolucao-266-2025-computacao",
+        "page": 5,
+        "section": "Art5–6",
+        "excerpt": "A organização curricular da Educação Digital e Midiática poderá ocorrer"
+      },
+      {
+        "source_id": "ba-resolucao-266-2025-computacao",
+        "page": 12,
+        "section": "Art20–21",
+        "excerpt": "Esta Resolução entra em vigor na data de sua publicação."
+      }
+    ],
+    "processing_evidence": "docs/evidence/source-audit-northeast/ba-current-acts-acquisition.json",
+    "catalogue_status_observed": "VIGENTE no catálogo oficial na coleta; não substitui checagem de vigência futura ou de adesão municipal.",
+    "catalogue_observed_at": "2026-10-28T17:08:07.713443+00:00",
+    "title": "Resolução CEE/BA266/2025 e Parecer CEE365/2025: BNCC Computação e Educação Escolar Digital/Midiática",
+    "components": [
+      "Computação"
+    ],
+    "edition": "2025",
+    "document_date": "2025-10-21",
+    "homologation_date": "2026-03-24",
+    "publication_date": "2026-03-26",
+    "application_period": "Art20: prazo de um ano após publicação para inserção curricular; art21: vigência do ato na publicação. Não equiparar vigência e prazo de implementação.",
+    "normative_parts": [
+      "ResoluçãoCEE266/2025: quatro capítulos,21artigos,duas seções e quatro subseções por etapas/modalidades (PDF1–12)",
+      "ParecerCEE365/2025: relatório, fundamentação, voto e citações bibliográficas (PDF13–21)"
+    ],
+    "jurisdiction_scope": "Sistema estadual de ensino da Bahia; municípios podem aderir ou editar normas próprias, art4§1. Não implica adesão universal municipal.",
+    "source_topics": [
+      "Educação Digital e Midiática"
+    ],
+    "stage_component_inventory": [
+      {
+        "stage": "EI",
+        "components": [
+          "Computação"
+        ],
+        "source_pages": [
+          6,
+          7
+        ],
+        "scope_note": "Integrada aos campos de experiências,arts9–10; não inferir disciplina/anosEF."
+      },
+      {
+        "stage": "EF",
+        "components": [
+          "Computação"
+        ],
+        "source_pages": [
+          8,
+          9
+        ],
+        "scope_note": "Anos iniciais/finais discriminados nosarts11–12."
+      },
+      {
+        "stage": "EM",
+        "components": [
+          "Computação"
+        ],
+        "source_pages": [
+          9,
+          10
+        ],
+        "scope_note": "Arts13–14."
+      }
+    ],
+    "mandatory_basis": "Regulamenta explicitamente complementoBNCCComputação e organização curricular EI/EF/EM, arts4–14; integra conjunto normativo selecionado, não material didático de apoio.",
+    "expected_outer_normative_articles": 21,
+    "expected_parecer_in_same_file": {
+      "number": "365/2025",
+      "page_range": [
+        13,
+        21
+      ]
+    },
+    "related_national_source_topics": [
+      "BNCCComputação2022",
+      "DiretrizesOperacionaisEducaçãoDigitalMidiática2025"
+    ]
+  },
+  {
+    "id": "ba-resolucao-125-2024-historia",
+    "uf": "BA",
+    "issuer": "Conselho Estadual de Educação da Bahia",
+    "official_url": "https://www.ba.gov.br/conselhodeeducacao/biblioteca-documentos/resolucoes-normativas",
+    "artifact_url": "https://www.ba.gov.br/conselhodeeducacao/sites/site-cee/files/2025-02/RESOLUCAO_CEE_N_125_2024_HISTORIA_DA_BAHIA.pdf",
+    "stages": [
+      "EI",
+      "EF",
+      "EM"
+    ],
+    "document_type": "ato_normativo",
+    "redistribution": "Texto normativo oficial atribuído ao emissor; PDF,diagramação e eventuais elementos de terceiros não relicenciados. Snapshot integral privado para conferência/processamento.",
+    "collected_at": "2026-10-28T17:02:35.908054+00:00",
+    "sha256": "7861ece3cb8b64980e39d5e54f1d2fcac4db0993c8c974a0d99232cb4b93d388",
+    "local_path": "data/raw/BA/ba-resolucao-125-2024-historia.pdf",
+    "status": "acquired",
+    "pdf_pages": 2,
+    "bytes": 673340,
+    "attempts": [
+      {
+        "at": "2026-10-28T17:02:35.908054+00:00",
+        "url": "https://www.ba.gov.br/conselhodeeducacao/sites/site-cee/files/2025-02/RESOLUCAO_CEE_N_125_2024_HISTORIA_DA_BAHIA.pdf",
+        "method": "OrdinaryHTTPSGET of literal PDF link discovered in official CEE public catalogue; no credentials, TLS bypass or session replication.",
+        "http_status": 200,
+        "content_type": "application/pdf",
+        "content_length": "673340",
+        "final_url": "https://www.ba.gov.br/conselhodeeducacao/sites/site-cee/files/2025-02/RESOLUCAO_CEE_N_125_2024_HISTORIA_DA_BAHIA.pdf",
+        "result": "acquired_and_pdf_validated",
+        "bytes": 673340,
+        "sha256": "7861ece3cb8b64980e39d5e54f1d2fcac4db0993c8c974a0d99232cb4b93d388",
+        "pdf_pages": 2,
+        "native_characters_by_page": [
+          2701,
+          2852
+        ],
+        "local_path": "data/raw/BA/ba-resolucao-125-2024-historia.pdf",
+        "pdf_metadata": {
+          "format": "PDF 1.5",
+          "title": "",
+          "author": "isabel.freitas",
+          "subject": "",
+          "keywords": "",
+          "creator": "Microsoft® Word 2016",
+          "producer": "www.ilovepdf.com",
+          "creationDate": "D:20240812123820+00'00'",
+          "modDate": "D:20240812123820Z",
+          "trapped": "",
+          "encryption": null
+        }
+      }
+    ],
+    "mandatory": true,
+    "required": true,
+    "include_in_corpus": true,
+    "publication_eligible": true,
+    "inventory_complete": false,
+    "inventory_status": "original_articles_and_stage_scope_inventoried_structured_processing_pending",
+    "reconciliation_status": "pending",
+    "reviewer_type": "automated",
+    "pedagogical_review_status": "not_reviewed",
+    "requires_ocr": false,
+    "inventory_evidence": [
+      {
+        "source_id": "ba-resolucao-125-2024-historia",
+        "page": 2,
+        "section": "Art2",
+        "excerpt": "Torna-se obrigatória a inserção de componente curricular vinculado à História da Bahia"
+      },
+      {
+        "source_id": "ba-resolucao-125-2024-historia",
+        "page": 1,
+        "section": "Art1/Art19§2",
+        "excerpt": "Documento Curricular Referencial da Bahia – volume 1 (Educação Infantil e Ensino Fundamental) e Documento Curricular Referencial da Bahia – volume 2 (Ensino Médio)"
+      }
+    ],
+    "processing_evidence": "docs/evidence/source-audit-northeast/ba-current-acts-acquisition.json",
+    "catalogue_status_observed": "VIGENTE no catálogo oficial na coleta; não substitui checagem de vigência futura ou de adesão municipal.",
+    "catalogue_observed_at": "2026-10-28T17:08:07.730625+00:00",
+    "title": "Resolução CEE/BA125/2024: diretrizes e componente curricular História da Bahia",
+    "components": [
+      "História da Bahia"
+    ],
+    "edition": "2024",
+    "document_date": "2024-06-21",
+    "homologation_date": "2024-06-25",
+    "publication_date": "2024-06-26",
+    "application_period": "Vigência do ato na publicação,art6. Art2 exige componenteHistória daBahia na parte diversificada EF/EM e mínimo20horas anuais; não se infere série específica.",
+    "normative_parts": [
+      "ResoluçãoCEE125/2024: ementa,preâmbulo,seis artigos,assinatura e publicação (PDF1–2)",
+      "Art1: nova redação citada doArt19 daRes26/2016,com três parágrafos e três incisos por etapa,continuaçãoPDF1→2"
+    ],
+    "jurisdiction_scope": "Instituições do sistema estadual; conselhos municipais podem aderir,art4; não implica adesão universal municipal.",
+    "source_topics": [
+      "História local",
+      "Independência do Brasil na Bahia"
+    ],
+    "stage_component_inventory": [
+      {
+        "stage": "EI",
+        "components": [],
+        "source_pages": [
+          1
+        ],
+        "scope_note": "História da própria criança como construção de sentidos,Art19§2I; não se cria disciplinaEF paraEI."
+      },
+      {
+        "stage": "EF",
+        "components": [
+          "História da Bahia"
+        ],
+        "source_pages": [
+          1,
+          2
+        ],
+        "scope_note": "Componente obrigatório na parte diversificada,art2; séries não especificadas."
+      },
+      {
+        "stage": "EM",
+        "components": [
+          "História da Bahia"
+        ],
+        "source_pages": [
+          2
+        ],
+        "scope_note": "Componente obrigatório na parte diversificada,art2; séries não especificadas."
+      }
+    ],
+    "mandatory_basis": "Art2 obriga componente local EF/EM; Art1 altera oPPP ligado explicitamente aos doisDCRB selecionados. É complemento curricular indispensável e não material de apoio.",
+    "expected_outer_normative_articles": 6,
+    "quoted_article_distinct_from_new_articles": "Art19 daRes26/2016 transcrito dentro doArt1; não contar como sétimo artigo destaRes125."
   }
 ]

@@ -1,0 +1,29 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:ms-primary-text-v2",
+  "source_id": "ms-projeto-vida-orientacoes-2024",
+  "artifact_sha256": "eff8fcd19d69b1f5d614cbb2ca1599d98e11c697772084b56694a142fecf7048",
+  "sidecar_sha256": "77eb9feaa003382a73741f36f3379d83aa945debae1cd128b7ad95513e781f08",
+  "receipt_path": "data/manifests/uncoded/ms-pv-2024-primary-text-checks.json",
+  "receipt_sha256": "e8a0b14c448fd2e08bc58f5be10c6b883ebdf9ce7c0e874ecdfbc9c36bfd1c9d",
+  "counts": {
+    "items": 681,
+    "primary_evidence_fragments": 827,
+    "physical_cells_rechecked": 423,
+    "independent_prior_checks": 508,
+    "v2_gate_verified": 681,
+    "v2_gate_issues": 0
+  },
+  "stage_part_counts": {
+    "ef-ai": 245,
+    "ef-af": 207,
+    "em": 229
+  },
+  "gate_version": "reconciliation-gate/2.0",
+  "controlled_text_mutation_rejected": true,
+  "controlled_diacritic_only_mutation_rejected": true,
+  "failures": [],
+  "status": "passed",
+  "source_ready": false,
+  "whole_source_reconciliation": false
+}

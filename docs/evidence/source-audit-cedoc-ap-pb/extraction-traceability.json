@@ -1,0 +1,57 @@
+{
+  "at": "2026-10-28T14:25:07.385231+00:00",
+  "PB": {
+    "source_id": "pb-proposta-ei-ef-cedoc",
+    "artifact_sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+    "cache_path": "data/extracted/af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453-page-cell-v1.4.0.json",
+    "cache_sha256": "ab4d3a0e6cf0d0b46f90acb33a24ef91cf9b48cf884596a185f352b356163ee8",
+    "pages": 392,
+    "records": 746,
+    "kinds": {
+      "habilidade": 365,
+      "secao_normativa": 381
+    },
+    "coded_candidates": 365,
+    "code_mentions": 2568,
+    "table_count": 198,
+    "evidence_fragments": 746,
+    "evidence_page_and_source_scope_errors": [],
+    "extraction_revision": "page-cell-v1.4.0",
+    "parser_fingerprint": "1eea82f32a8c2c524550864d4cba2af03cb1f86fad061ec82c3dd8d844df984c",
+    "runtime": {
+      "implementation": "CPython",
+      "pillow": "13.0.0",
+      "pymupdf": "1.26.7",
+      "python": "3.11.15"
+    },
+    "warnings": [
+      {
+        "error": "Cannot fingerprint installed OCR language model por; configure TESSDATA_PREFIX explicitly.",
+        "issue": "no_extractable_text_or_ocr_failed",
+        "page": 1
+      },
+      {
+        "error": "Cannot fingerprint installed OCR language model por; configure TESSDATA_PREFIX explicitly.",
+        "issue": "no_extractable_text_or_ocr_failed",
+        "page": 392
+      }
+    ],
+    "ocr_pending_in_historical_generic_cache": true,
+    "targeted_cover_ocr_evidence": "docs/evidence/source-audit-cedoc-ap-pb/pb-cedoc-cover-ocr-validation.json",
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "accepted_learning_count": null,
+    "include_in_corpus": false,
+    "generic_parser_open_is_not_documentary_reconciliation": true
+  },
+  "AP": {
+    "source_id": "ap-rca-ei-ef-cedoc",
+    "artifact_sha256": "bcf0aa03705580d2f92c7471a68ddf71121748d3407928840f0c9bba402e5c7e",
+    "direct_generic_extraction_attempt": "All614 pages traversed; final cache write correctly rejected by parser fingerprint guard because parser files changed during run. No mixed-parser cache accepted.",
+    "attempt_log": "var/ap-cedoc-extract.log",
+    "repeat_deferred_by_pipeline_owner": "Avoid duplicate CPU before consolidated FULL; source intentionally excluded from corpus because all614 page contents match existingMECsource.",
+    "full_page_equivalence_evidence": "docs/evidence/source-audit-cedoc-ap-pb/ap-614-mec-cedoc-comparison.json",
+    "existing_content_source_id": "ap-rca-ei-ef-mec",
+    "accepted_learning_count": null,
+    "include_in_corpus": false
+  }
+}

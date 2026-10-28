@@ -10,13 +10,14 @@ import { loadBundleFile } from '../src/domain/bundle-file';
 import { shardRecords,validateShardedManifest,type ShardedManifest,type ShardPart } from '../src/domain/shards';
 import { LearningSchema,RelationSchema } from '../src/mcp/contracts';
 import type { Bundle,Learning,Relation,Source,UF } from '../src/shared/contracts';
+import { LEARNING_KINDS } from '../src/domain/item-kinds';
 export const canonical=(value:unknown):string=>Array.isArray(value)?'['+value.map(canonical).join(',')+']':value&&typeof value==='object'?'{'+Object.entries(value).sort(([a],[b])=>a<b?-1:a>b?1:0).map(([key,v])=>JSON.stringify(key)+':'+canonical(v)).join(',')+'}':JSON.stringify(value)??'null';
 export const digestValue=(value:unknown)=>createHash('sha256').update(canonical(value)).digest('hex');
 export const digestText=(value:string)=>createHash('sha256').update(value).digest('hex');
 export async function hashArtifactFile(path:string){const digest=createHash('sha256');for await(const chunk of createReadStream(path))digest.update(chunk);return digest.digest('hex');}
 export interface SampleReference {id:string;uf:UF|'BR';source_id:string;code:string|null;kind:string;text_sha256:string;text_length:number;evidence_sha256:string;positions_sha256:string;}
 export interface ArtifactHandle {path:string;root:string;header:Bundle|ShardedManifest;format:'embedded-v1'|'curriculos-abertos/sharded-v1';sha256:string;item_count:number;relation_count:number;parts:ShardPart[];collection_hashes:Partial<Record<'items'|'relations',string>>;records(kind:'items'|'relations'):AsyncGenerator<Learning|Relation>;}
-const learningKinds=new Set(['habilidade','objetivo_aprendizagem','competencia_geral','competencia_especifica','habilidade_ifa','habilidade_projeto_vida']);
+const learningKinds=new Set<string>(LEARNING_KINDS);
 export interface MatrixReference {national:SampleReference;ufs:{uf:string;item_ids:string[];relation_ids:string[]}[]}
 export interface HierarchyReference {parent:SampleReference;child_count:number;learning_child_count:number;child:SampleReference;}
 export interface ArtifactInspection {publication:string;format:ArtifactHandle['format'];manifest_path:string;manifest_sha256:string;schema_verified:boolean;schema_path:string|null;schema_sha256:string|null;items:number;relations:number;sources:number;parts_verified:number;collection_hashes:Partial<Record<'items'|'relations',string>>;compressed_bytes:number;decoded_bytes:number;by_uf:Record<string,number>;by_kind:Record<string,number>;learning_by_uf:Record<string,number>;position_occurrences:number;hierarchy_samples:HierarchyReference[];matrix_samples:MatrixReference[];coded_by_uf:Record<string,number>;stages_by_uf:Record<string,string[]>;samples:SampleReference[];national:SampleReference|null;shared_artifacts_across_ufs:{sha256:string;sources:{id:string;uf:string}[]}[];item_errors:number;relation_errors:number;errors:{kind:string;id:string;message:string}[];passed:boolean;}

@@ -1,0 +1,153 @@
+{
+  "source_id": "ap-rca-ei-ef-mec",
+  "artifact_sha256": "23c42348e0b0e00d4135a108366141a257bec54b7b1bff79e521c822d9903f89",
+  "sidecar_sha256": "98ea0d2503f69bfd0ab488ebb87a1b606a21e39987bc51294b317dabbe814bdf",
+  "binding_ready": true,
+  "binding_scope": "Technical binding of this own614page adapter only; not UF readiness, vigency or339/614 equivalence",
+  "source_patch": {
+    "uncoded_items_path": "data/manifests/uncoded/ap-rca614-items.json",
+    "components": [
+      "Língua Portuguesa",
+      "Arte",
+      "Educação Física",
+      "Língua Inglesa",
+      "Matemática",
+      "Ciências",
+      "História",
+      "Geografia",
+      "Ensino Religioso"
+    ],
+    "stage_component_inventory": {
+      "EI": [
+        "O eu, o outro e o nós",
+        "Corpo, gestos e movimentos",
+        "Traços, sons, cores e formas",
+        "Escuta, fala, pensamento e imaginação",
+        "Espaços, tempos, quantidades, relações e transformações"
+      ],
+      "EF": [
+        "Língua Portuguesa",
+        "Arte",
+        "Educação Física",
+        "Língua Inglesa",
+        "Matemática",
+        "Ciências",
+        "História",
+        "Geografia",
+        "Ensino Religioso"
+      ]
+    },
+    "adapter_authority": {
+      "coded_learning_ranges": [
+        [
+          93,
+          131
+        ],
+        [
+          240,
+          362
+        ],
+        [
+          365,
+          376
+        ],
+        [
+          381,
+          396
+        ],
+        [
+          401,
+          413
+        ],
+        [
+          421,
+          479
+        ],
+        [
+          483,
+          503
+        ],
+        [
+          508,
+          534
+        ],
+        [
+          539,
+          568
+        ],
+        [
+          570,
+          578
+        ]
+      ],
+      "generic_coded_reference_ranges": [
+        [
+          1,
+          614
+        ]
+      ],
+      "uncoded_page_sections_ranges": []
+    },
+    "normative_parts": [
+      "Introdução",
+      "Modalidades de Ensino",
+      "Educação Infantil",
+      "Ensino Fundamental",
+      "Referências"
+    ],
+    "part_processing_evidence": [
+      {
+        "part": "Educação Infantil — organizador curricular",
+        "status": "automated_primary_cells_reconciled",
+        "objective_code_anchors": 93,
+        "experience_bullets": 465,
+        "field_organizers": 5,
+        "age_organizers": 15,
+        "age_scope": "Numeric macro/micro bounds have own header Evidence[]; no code-derived age",
+        "proof": "docs/evidence/source-audit-ap-peer/verification614.json"
+      },
+      {
+        "part": "Ensino Fundamental — colunas de habilidades",
+        "status": "automated_primary_cells_and_native_fragments_reconciled",
+        "coded_skills": 1632,
+        "uncoded_skills": 1,
+        "declared_components": 9,
+        "proof": "docs/evidence/source-audit-ap-eief/ap614-source-denominators.json"
+      },
+      {
+        "part": "Direitos/competências/objetivos explicitamente rotulados",
+        "status": "own_labelled_lists_structured_and_literal_fragments_checked",
+        "general_competences": 10,
+        "ei_rights": 6,
+        "specific_competence_occurrences": 101,
+        "religious_education_formative_objectives": 4,
+        "indigenous_policy_objectives_not_student_skills": 8,
+        "proof": "docs/evidence/source-audit-ap-eief/ap614-labelled-list-trace.json"
+      },
+      {
+        "part": "Fundamentos/modalidades/organização pedagógica/referências",
+        "status": "primary_page_context_preserved_documentary_reconciliation_pending",
+        "note": "Do not count PDF, OCR or generic page sections as reconciled learning coverage."
+      }
+    ]
+  },
+  "integration_notes": [
+    "Physical pages are1based; authority ranges suppress generic CODED definitions only where the adapter exhausts actual learning-column cells.",
+    "Generic coded occurrences elsewhere stay referencia_no_documento; no AP suffix stripping or national equivalence invented.",
+    "No generic uncoded page sections are suppressed: retain full primary documentary context as secao_normativa, never count these pages as learning coverage. This is deliberate; sidecar records are the structured learning denominator.",
+    "Keep current valid page240 position_contexts metadata; the adapter has its own per-cell positions and explicit monthly intervals. Do not force sort=False to satisfy evidence. Production sort=True passes.",
+    "Do not use non_curricular_code_pages for these ranges: the finalizer also applies that field to genuine coded adapter items.",
+    "No include/publication flag, edition, enactment date,339 source, CEDOC duplicate source or raw file is changed by this proposal.",
+    "Integrate serially and execute actual Source loader/finalizer/schema again, checking exact text/code/positions/age bounds/parent/evidence preservation."
+  ],
+  "verification_paths": {
+    "production_loader_schema_and_4483_fragments": "docs/evidence/source-audit-ap-eief/ap614-verification.json",
+    "byte_identical_reproduction": "docs/evidence/source-audit-ap-eief/ap614-reproduction.json",
+    "literal_1638_cells": "docs/evidence/source-audit-ap-eief/ap614-cell-character-check.json",
+    "peer": "docs/evidence/source-audit-ap-peer/verification614.json",
+    "negative_controls": "docs/evidence/source-audit-ap-peer/negative-verification.json",
+    "invariants": "docs/evidence/source-audit-ap-eief/ap614-peer-patch-invariants.json"
+  },
+  "human_pedagogical_review": false,
+  "UF_ready": false
+}

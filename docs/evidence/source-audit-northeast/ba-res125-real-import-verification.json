@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-28T17:48:10.931904+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast:real_importer",
+  "source_id": "ba-resolucao-125-2024-historia",
+  "source_sha256": "7861ece3cb8b64980e39d5e54f1d2fcac4db0993c8c974a0d99232cb4b93d388",
+  "source_only_inventory_path": "docs/evidence/source-audit-northeast/ba-res125-source-only-inventory.json",
+  "sidecar_path": "data/manifests/uncoded/ba-resolucao-125-items.json",
+  "sidecar_sha256": "94d39ad35e9afef059bab94ae956d118139b61c5830a17fc7d9b95cc8bd0812e",
+  "extraction_revision": "page-cell-v1.5.0",
+  "cache_sha256": "236b57d29b4246641a69ece9a2b3a37726b70833f96c1ae374c97b35512cbdb1",
+  "current_original_Source_cache_config_matches": true,
+  "generic_inputs": 2,
+  "sidecar_inputs": 23,
+  "final_count": 23,
+  "expected_independent_ID_count": 23,
+  "literal_fragments_checked": 23,
+  "parent_links": 22,
+  "orphans": 0,
+  "cycles": 0,
+  "schema_failures": 0,
+  "kind_counts": {
+    "ato_normativo": 1,
+    "ementa_normativa": 1,
+    "preambulo_normativo": 1,
+    "dispositivo_deliberativo": 1,
+    "artigo_normativo": 6,
+    "dispositivo_normativo_alterado": 1,
+    "paragrafo_normativo": 4,
+    "inciso_normativo": 3,
+    "registro_documental": 1,
+    "assinatura_normativa": 1,
+    "registro_homologacao_publicacao": 1,
+    "metadado_documental": 2
+  },
+  "idempotent_sidecar_bytes": true,
+  "Source_clone_authority": {
+    "uncoded_page_sections_pages": [
+      1,
+      2
+    ]
+  },
+  "actual_Source_changed": false,
+  "extraction_invoked": false,
+  "peer_review": "pending",
+  "result": "passed",
+  "scope": "Complete generic+adapter real importer/finalizer using existing native1.5cache and cloned Source path/authority. Source binding and exact post-binding cache/V2 verification remain separate; no normative or UF readiness claim."
+}

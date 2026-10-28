@@ -3,10 +3,9 @@ from pathlib import Path
 import json,sys,hashlib,collections
 ROOT=Path(__file__).resolve().parents[3];sys.path.insert(0,str(ROOT/'pipeline'));import ingest
 path='data/manifests/uncoded/df-hierarchy-items.json'
-sources=[s for s in json.loads((ROOT/'data/manifests/central-south.json').read_text()) if s['id'] in ('df-curriculo-ei-2018','df-curriculo-ef-2018')]
+sources=[s for s in json.loads((ROOT/'data/manifests/central-south.json').read_text()) if s['id'] in ('df-cm-ei-2018','df-cm-ef-2018')]
 # Source IDs remain explicit; source selection is not derived from extraction.
-if not sources:
- ids={x['source_id'] for x in json.loads((ROOT/path).read_text())};sources=[s for s in json.loads((ROOT/'data/manifests/central-south.json').read_text()) if s['id'] in ids]
+assert len(sources)==2
 extracts={}
 for s in sources:
  s['uncoded_items_path']=path

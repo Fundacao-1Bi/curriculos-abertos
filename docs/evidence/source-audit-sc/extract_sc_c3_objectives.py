@@ -38,7 +38,7 @@ def main():
    text=b['text'];numbered=re.match(r'^(\d+(?:\.\d+)*)\.?\s+',text)
    h=heading(b,pn)
    if h:
-    if h['level']<=2:unit=None
+    if h['level']<=2 or re.match(r'^\d+(?:\.\d+)*\.?\s+Trilha\s+\d',text,re.I):unit=None
     apply_heading(hierarchy,h)
    if re.match(r'^Unidade\s+[Cc]urricular\s+[IVX\d]+',text):unit={'page':pn,'title':text,'bbox':b['bbox']}
    if LABEL.match(text):

@@ -62,7 +62,7 @@ def write_parts(root,publication,kind,records):
     return parts
 
 
-def write_publication(root,metadata,items,relations):
+def write_publication(root,metadata,items,relations,advertise=True):
     identity_metadata={key:value for key,value in metadata.items() if key not in ('id','created_at')}
     publication,identity_payload=identity(identity_metadata,items,relations)
     path=root/'data/bundles'/f'{publication}.manifest.json'
@@ -77,7 +77,8 @@ def write_publication(root,metadata,items,relations):
     from validate_artifact import validate_artifact
     validation=validate_artifact(root,path)
     latest={'validation':validation,'id':publication,'path':str(path.relative_to(root)),'sha256':digest,'bytes':path.stat().st_size,'format':FORMAT,'schema_version':manifest['schema_version'],'item_count':len(items),'relation_count':len(relations),'total_compressed_bytes':sum(p['bytes'] for p in parts),'total_decoded_bytes':sum(p['decoded_bytes'] for p in parts),'national_release_ready':manifest['national_release_ready']}
-    pointer=root/'data/bundles/latest.json';temp=pointer.with_suffix('.json.tmp');temp.write_bytes(canonical(latest));temp.replace(pointer)
+    if advertise:
+        pointer=root/'data/bundles/latest.json';temp=pointer.with_suffix('.json.tmp');temp.write_bytes(canonical(latest));temp.replace(pointer)
     return manifest,path,digest,latest
 
 

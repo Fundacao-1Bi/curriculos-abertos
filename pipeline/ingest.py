@@ -6,6 +6,7 @@ The web process must run this program in a separate worker process.
 """
 from __future__ import annotations
 import argparse
+import base64
 import collections
 import contextlib
 import datetime as dt
@@ -28,9 +29,11 @@ from pathlib import Path
 from urllib.parse import urljoin, urlsplit, quote
 
 ROOT = Path(__file__).resolve().parents[1]
-EXTRACTION_REVISION = 'page-cell-v1.4.0'
-MAPPING_REVISION = 'documented-code-rules-v1.1.0'
-SCHEMA_VERSION = '1.0.0'
+from runtime import parser_fingerprint,runtime_identity,source_parser_fingerprint,publication_fingerprint
+LOADED_PARSER_FINGERPRINT=parser_fingerprint()
+EXTRACTION_REVISION = 'page-cell-v1.5.0'
+MAPPING_REVISION = 'documented-code-rules-v1.2.0'
+SCHEMA_VERSION = '1.1.0'
 UFS = 'AC AL AM AP BA CE DF ES GO MA MG MS MT PA PB PE PI PR RJ RN RO RR RS SC SE SP TO'.split()
 STAGES = ('EI', 'EF', 'EM')
 MAX_BYTES = int(os.getenv('SOURCE_MAX_BYTES', '209715200'))
@@ -43,7 +46,7 @@ STOP = False
 NATIONAL_PATTERN = r'(?:EI\d{2}[A-Z]{2}\d{2}|EF\d{2}[A-Z]{2}\d{2,3}|EM\d{2}(?:[A-Z]{3}\d{3}|LP\d{1,4}|CO\d{2}))'
 NATIONAL_BASE = re.compile(NATIONAL_PATTERN)
 NATIONAL = re.compile(r'(?<![A-Z0-9])'+NATIONAL_PATTERN+r'(?![A-Z0-9])')
-CODE_ANY = re.compile(r'(?<![A-Z0-9])(?:(?:'+'|'.join(UFS+['BR'])+r')(?:[-.]\s*|[ \t]+))?(?:'+NATIONAL_PATTERN+r'|EMIF[A-Z]{2,6}\d{1,3}|EM(?:LGG|MAT|CNT|CHS)\d{3}[A-Z]?|EM(?:LP|CH)\d{2,3}(?:[-.]?[A-Z])?|EM[123]PV\d{2}|PV\d{2}|(?:LP|LGG|CHSA|MAT|CN|EPT)\d{2,3}(?:FG|IF))(?:(?:\.\s*[scadn]\s*\.\s*\d{2})|(?:[A-Z][A-Za-z0-9]{0,12}|[a-z]|\*)|[/.-][A-Za-z0-9-]+)*(?![A-Z0-9])')
+CODE_ANY = re.compile(r'(?<!\w)(?:(?:'+'|'.join(UFS+['BR'])+r')(?:[-.]\s*|[ \t]+))?(?:'+NATIONAL_PATTERN+r'|EMIF[A-Z]{2,6}\d{1,3}|EM(?:LGG|MAT|CNT|CHS)\d{3}[A-Z]?|EM(?:LP|CH)\d{2,3}(?:[-.]?[A-Z])?|EM[123]PV\d{2}|PV\d{2}|(?:LP|LGG|CHSA|MAT|CN|EPT)\d{2,3}(?:FG|IF))(?:(?:\.\s*[scadn]\s*\.\s*\d{2})|(?:[A-Z][A-Za-z0-9]{0,12}|[a-z]|\*)|[/.-][A-Za-z0-9-]+)*(?!\w)')
 CODE = CODE_ANY
 COMPONENTS = {'LP':'Língua Portuguesa','MA':'Matemática','CI':'Ciências','GE':'Geografia','HI':'História','AR':'Arte','EF':'Educação Física','LI':'Língua Inglesa','ER':'Ensino Religioso','LGG':'Linguagens e suas Tecnologias','MAT':'Matemática e suas Tecnologias','CNT':'Ciências da Natureza e suas Tecnologias','CHS':'Ciências Humanas e Sociais Aplicadas','EO':'O eu, o outro e o nós','CG':'Corpo, gestos e movimentos','TS':'Traços, sons, cores e formas','EF-EI':'Escuta, fala, pensamento e imaginação','ET':'Espaços, tempos, quantidades, relações e transformações','CO':'Computação'}
 
@@ -62,6 +65,15 @@ def write_json(path, value):
     tmp = path.with_name(path.name + '.tmp')
     tmp.write_bytes(canonical(value))
     tmp.replace(path)
+def write_extraction_cache(path,value):
+    write_json(path,value)
+    checksum=path.with_suffix(path.suffix+'.sha256')
+    checksum.write_text(f'{sha_file(path)}  {path.name}\n')
+def read_extraction_cache(path):
+    checksum=path.with_suffix(path.suffix+'.sha256')
+    if not path.exists() or not checksum.exists():return None
+    if checksum.read_text().split()[0]!=sha_file(path):return None
+    return json.loads(path.read_text())
 def normalize(text): return ' '.join(unicodedata.normalize('NFKD', re.sub(r'\u00ad\s*', '', re.sub(r'(?<=[a-zà-ÿ])-\s+(?=[a-zà-ÿ])', '', text))).encode('ascii', 'ignore').decode().casefold().split())
 def safe_path(relative, root=ROOT):
     candidate = (root / relative).resolve()
@@ -156,6 +168,7 @@ class SafeDownloader:
         raise ValueError('Source redirect limit exceeded')
 
     def acquire(self, source):
+        if not source.get('artifact_url'):raise ValueError('Official artifact URL not located; acquisition research remains pending.')
         last = None
         for attempt in range(1, MAX_ATTEMPTS + 1):
             try:
@@ -183,7 +196,7 @@ def national_position(code):
     if local_df:
         return {'stage':'EM','component':'Língua Portuguesa' if local_df[1]=='LP' else None,'area':{'LP':'Linguagens e suas Tecnologias','LGG':'Linguagens e suas Tecnologias','CHSA':'Ciências Humanas e Sociais Aplicadas','MAT':'Matemática e suas Tecnologias','CN':'Ciências da Natureza e suas Tecnologias','EPT':'Educação Profissional e Técnica'}.get(local_df[1]),'years':None,'year_label':None,'age_group':None,'period':None,'position_origin':'document_local_code','position_note':'Código próprio do Currículo em Movimento; FG/IF preservados, sem relação BNCC inferida.'}
     go_local=re.fullmatch(r'(?:GO[-.]?)?EM(LGG|MAT|CNT|CHS|LP|CH)\d{2,3}[-.]?[A-Z]?',re.sub(r'\s+','',code))
-    if go_local:return {'stage':'EM','component':None,'area':COMPONENTS.get(go_local[1]),'years':None,'year_label':None,'age_group':None,'period':None,'position_origin':'source_local_code_context','position_note':'Objetivo próprio de Goiás sem código nacional atribuído por transformação.'}
+    if go_local:return {'stage':'EM','component':'Língua Portuguesa' if go_local[1]=='LP' else None,'area':'Linguagens e suas Tecnologias' if go_local[1]=='LP' else COMPONENTS.get(go_local[1]),'years':None,'year_label':None,'age_group':None,'period':None,'position_origin':'source_local_code_context','position_note':'Objetivo próprio de Goiás sem código nacional atribuído por transformação.'}
     match = NATIONAL_BASE.search(code)
     if not match:
         stage_match=re.search(r'(?:^|[-. \t\n])(EI|EF|EM)',code)
@@ -218,14 +231,36 @@ def clean_text(text):
     return re.sub(r'[ \t]+', ' ', re.sub(r'\s*\n\s*', ' ', re.sub(r'\u00ad\s*', '', text))).strip()
 
 
-def candidates_from_cell(cell, next_cell=None, source=None):
+def literal_identifier_cell(value,header=None):
+    """Preserve a complete local identifier in an explicit code-only cell.
+
+    A known code anchor may be followed by printed range/local suffixes split
+    across lines. This is not a suffix-to-national mapping or spelling repair.
+    Prose and multiple independent code anchors are deliberately rejected.
+    """
+    raw=value.strip()
+    if len(raw)>160:return None
+    if len(raw)>1 and (raw[0],raw[-1]) in (('(',')'),('[',']')):raw=raw[1:-1].strip()
+    matches=list(CODE_ANY.finditer(raw))
+    if len(matches)!=1 or matches[0].start()!=0:return None
+    suffix=raw[matches[0].end():]
+    if suffix and not re.search(r'\b(?:codigo(?:s)? (?:da|de|das) habilidade(?:s)?|identificador(?:es)?)\b',normalize(header or '')):return None
+    if not re.fullmatch(r'(?:[\s/\\.\-‐‑‒–—]*[A-Z0-9]{1,6}[a-z]?|\s*[a-z]|\s*\*)*',suffix):return None
+    return raw
+
+
+def candidates_from_cell(cell, next_cell=None, source=None, cell_header=None):
     matches=[]
     for match in CODE_ANY.finditer(cell):
         # A citation in the middle of a sentence is not a new coded objective.
         prefix=cell[:match.start()]
         line_prefix=prefix.rsplit('\n',1)[-1].strip()
-        local_go_goal=(source or {}).get('id')=='go-dcgoem-portal-atual' and re.match(r'GO(?:[-.]\s*|\s+)EM',match.group()) and prefix.rstrip().endswith('(') and cell[match.end():].lstrip().startswith(')')
-        if not local_go_goal and line_prefix not in ('','(','[','•','-') and not re.match(r'^Habilidades?\b.*:\s*\(*$',line_prefix,re.IGNORECASE):continue
+        line_prefix=''.join(ch for ch in line_prefix if unicodedata.category(ch)!='Cf')
+        local_go_goal=(source or {}).get('id')=='go-dcgoem-portal-atual' and (re.match(r'GO(?:[-.]\s*|\s+)EM',match.group()) or (match.group().startswith('EMIF') and re.match(r'^Habilidades?(?:$|\s)',cell_header or '',re.IGNORECASE))) and prefix.rstrip().endswith('(') and cell[match.end():].lstrip().startswith(')')
+        classified_prefix=''.join(ch for ch in prefix if unicodedata.category(ch)!='Cf')
+        inline_boundary=(re.search(r'[.!?;]\s*\($',classified_prefix) and cell[match.end():].lstrip().startswith(')')) or (re.search(r'[.!?;]\s*$',classified_prefix) and re.match(r'\s*[-‐‑‒–—:]',cell[match.end():]))
+        inline_definition=bool(re.match(r'^(?:habilidades?|objetivos?)(?:$|\s)',normalize(cell_header or '')) and inline_boundary)
+        if not local_go_goal and not inline_definition and line_prefix not in ('','(','[','•','-') and not re.match(r'^Habilidades?\b.*:\s*\(*$',line_prefix,re.IGNORECASE):continue
         matches.append(match)
     found=[]
     for index,match in enumerate(matches):
@@ -238,10 +273,12 @@ def candidates_from_cell(cell, next_cell=None, source=None):
         source_id=(source or {}).get('id','')
         boundaries=[]
         if source_id=='rj-em-curriculo-referencial': boundaries=['Objetos de conhecimento:','Campos de Atuação Social:','Competência específica',r'Habilidades? de[^\n]*:']
-        if source_id.startswith('es-ifa-'): boundaries=[r'Competência \d+']
+        if source_id.startswith('es-ifa-'): boundaries=[r'(?m)^\s*Competência\s*\d+']
         for marker in boundaries:
-            boundary=re.search(marker,tail,flags=re.IGNORECASE)
-            if boundary: tail=tail[:boundary.start()].rstrip()
+            for boundary in re.finditer(marker,tail,flags=re.IGNORECASE):
+                prefix=tail[:boundary.start()]
+                if source_id.startswith('es-ifa-') and (prefix.count('[')>prefix.count(']') or prefix.count('(')>prefix.count(')')):continue
+                tail=tail[:boundary.start()].rstrip();break
         if tail: found.append((match.group(),clean_text(tail),cell))
     return found
 
@@ -251,7 +288,7 @@ def make_item(source, code, text, page, method, locator, context=None, quality='
     position = national_position(code or '')
     if position and position['stage'] not in source.get('stages',[]): position = None
     item = {'id':f'ca:{source["id"]}:{sha_bytes(token.encode())[:20]}','curriculum_id':source.get('curriculum_id') or f'{source["uf"].lower()}:{source["id"]}','source_id':source['id'],'uf':source['uf'],'code':code,'text':text,'normalized_text':normalize(text),'editorial_note':None,'kind':'objetivo_aprendizagem' if position and position['stage']=='EI' else 'habilidade' if code and position else 'referencia_no_documento' if code else 'secao_normativa','parent_id':None,'positions':[position] if position else [],'evidence':[{'source_id':source['id'],'page':page,'printed_page':None,'section':context,'excerpt':text,'locator':locator,'method':method}],'extraction_revision':EXTRACTION_REVISION,'extraction_status':quality,'technical_validation_status':'pending_literal_and_documentary_verification','pedagogical_review_status':'not_reviewed','publication_status':'extracted_candidate','canonical_text_policy':'PDF line wraps normalized; spelling/punctuation unaltered','review_events':[{'actor_type':'automated','actor_id':'curriculos-abertos:page-cell-extractor','method':EXTRACTION_REVISION,'result':quality,'at':now()}]}
-    if source.get('document_type') in ('ato_normativo','resolucao','parecer'):
+    if (source.get('document_type') or source.get('doc_type')) in ('ato_normativo','resolucao','parecer','norma_curricular'):
         item['kind']='referencia_no_documento' if code else 'artigo_normativo'
         item['positions']=[]
     if not item['positions']: item['position_unknown_reason']='Fonte não explicita posicionamento estruturado deste trecho ou contexto ainda não processado; nenhum ano/etapa inventado.'
@@ -268,6 +305,7 @@ def extract_bncc_dataset(source, path):
     if source['id'] not in mapping or (not upstream.exists() and not fixed_inputs):return None
     document=fitz.open(path)
     pages=[{'page':i+1,'text':page.get_text('text',sort=True),'text_sha256':sha_bytes(page.get_text('text',sort=True).encode()),'code_mentions':len(CODE_ANY.findall(page.get_text('text'))),'method':'pymupdf-native'} for i,page in enumerate(document)]
+    primary_view={'source_id':source['id'],'sha256':sha_file(path),'pages':pages}
     items=[];warnings=[]
     for relative,key in mapping[source['id']]:
         data=fixed_inputs.get(relative) or json.loads((upstream/relative).read_text())
@@ -294,24 +332,80 @@ def extract_bncc_dataset(source, path):
             item['source_context']={**(item.get('source_context') or {}),**{k:v for k,v in record.items() if k not in ('texto','codigo','fonte','vigencia')}}
             if not literal_code: warnings.append({'page':page_number,'code':code,'issue':'primary_code_locator_not_verified'})
             if not literal_text: item['extraction_flags']=['primary_text_order_requires_cell_review']
+            from br_primary_evidence import apply_primary_evidence
+            item=apply_primary_evidence(ROOT,source,item)
+            item['normalized_text']=normalize(item['text'])
+            if (item.get('source_context') or {}).get('primary_locator_review'):
+                if not evidence_check(item,primary_view,document):raise ValueError(f'National reviewed primary locator no longer verifies: {item["id"]}')
+                item['technical_validation_status']='primary_code_and_text_in_physical_region_checked'
+                item['extraction_flags']=[flag for flag in item.get('extraction_flags',[]) if flag!='primary_text_order_requires_cell_review']
             items.append(item)
-    return {'source_id':source['id'],'sha256':sha_file(path),'extraction_revision':EXTRACTION_REVISION,'pages':pages,'items':items,'warnings':warnings,'table_count':None,'page_count':len(pages),'document_page_count':len(document),'code_mentions':sum(p['code_mentions'] for p in pages),'coded_items':len(items),'extracted_at':now(),'reconciliation_status':'licensed_dataset_cross_checked_primary_locator','dataset_attribution':'bncc-dev/bncc-dados, CC-BY-4.0, commit 9c268978efa2aa250834c6a9edb6074432752838','ocr_pending':False}
+    # The licensed skill adapter is not a denominator for the whole national
+    # document. Preserve its remaining primary context with an honest section
+    # type; the independently structured competencies/rights/objects are loaded
+    # separately, and documentary completeness remains pending by part.
+    for page in pages:
+        if len(page['text'].strip())>=100:
+            section=make_item(source,None,clean_text(page['text']),page['page'],'pymupdf-page-section','page-section',quality='pending_structure_review')
+            section['extraction_flags']=['uncoded_documentary_section_not_classified_learning']
+            items.append(section)
+    return {'source_id':source['id'],'sha256':sha_file(path),'extraction_revision':EXTRACTION_REVISION,'pages':pages,'items':items,'warnings':warnings,'table_count':None,'page_count':len(pages),'document_page_count':len(document),'code_mentions':sum(p['code_mentions'] for p in pages),'coded_items':sum(bool(item['code']) for item in items),'extracted_at':now(),'reconciliation_status':'licensed_dataset_cross_checked_primary_locator','dataset_attribution':'bncc-dev/bncc-dados, CC-BY-4.0, commit 9c268978efa2aa250834c6a9edb6074432752838','ocr_pending':False}
 
 
 def extraction_config_hash(source):
-    fields=('id','uf','stages','components','stage_component_inventory','normative_parts','non_curricular_code_pages','code_rules','position_contexts','structure_sections','uncoded_items_path','layout_rules','extraction_pages','scope_pages','page_text_end_markers','requires_ocr','glyph_replacements','page_regions','extraction_page_ranges')
+    validate_position_contexts(source)
+    for kind in ('coded_learning','generic_coded_reference','uncoded_page_sections'):authority_ranges(source.get('adapter_authority') or {},kind)
+    from document_roles import adapter_name
+    adapter_name(source)
+    fields=('id','uf','curriculum_id','stages','document_type','doc_type','components','stage_component_inventory','normative_parts','non_curricular_code_pages','code_rules','position_contexts','structure_sections','uncoded_items_path','layout_rules','extraction_pages','scope_pages','page_text_end_markers','requires_ocr','native_text_order','native_text_order_pages','glyph_replacements','page_regions','extraction_page_ranges','adapter_authority','cell_text_mode','document_role_adapter','position_review_path','position_review_sha256')
     import pymupdf
     config={field:source.get(field) for field in fields}
     config['native_engine']={'name':'PyMuPDF','version':pymupdf.__version__}
     config['extraction_revision']=EXTRACTION_REVISION
+    config['parser_fingerprint']=source_parser_fingerprint(source,LOADED_PARSER_FINGERPRINT)
+    config['runtime']=runtime_identity()
     if source.get('uncoded_items_path'):
         path=safe_path(source['uncoded_items_path'])
         if path.exists():config['uncoded_items_sha256']=sha_file(path)
+    if source.get('position_review_path'):
+        path=safe_path(source['position_review_path'])
+        if not path.exists() or sha_file(path)!=source.get('position_review_sha256'):raise ValueError('Position review artifact is missing or its pinned checksum differs')
+        config['position_review_actual_sha256']=sha_file(path)
     return sha_bytes(canonical(config))
 
 
+def validate_position_contexts(source):
+    for index,context in enumerate(source.get('position_contexts',[])):
+        if not isinstance(context,dict) or 'pages' in context or 'item_positions' in context:raise ValueError(f'Unsupported position context shape: {source["id"]} index {index}; use explicit page or page_start/page_end and code-scoped entries')
+        start=context.get('page',context.get('page_start'));end=context.get('page_end',start)
+        if isinstance(start,bool) or not isinstance(start,int) or start<1 or isinstance(end,bool) or not isinstance(end,int) or end<start:raise ValueError(f'Position context lacks a valid explicit page/range: {source["id"]} index {index}')
+        if context.get('stage') not in source.get('stages',[]):raise ValueError(f'Position context stage is absent or outside source stages: {source["id"]} index {index}')
+        years=context.get('years')
+        if years is not None and (not isinstance(years,list) or any(isinstance(y,bool) or not isinstance(y,int) or not 1<=y<=12 for y in years)):raise ValueError(f'Invalid documented position years: {source["id"]} index {index}')
+
+
+def authority_ranges(authority,kind):
+    """Inclusive, explicit physical ranges; preserve the legacy single interval."""
+    ranges=[]
+    legacy=authority.get(kind+'_pages')
+    if legacy:ranges.append(legacy)
+    disjoint=authority.get(kind+'_ranges',[])
+    if not isinstance(disjoint,list):raise ValueError(f'Invalid disjoint adapter authority: {kind}')
+    ranges.extend(disjoint)
+    for interval in ranges:
+        if not isinstance(interval,list) or len(interval)!=2 or any(isinstance(p,bool) or not isinstance(p,int) or p<1 for p in interval) or interval[1]<interval[0]:raise ValueError(f'Invalid physical adapter authority interval: {kind} {interval!r}')
+    return ranges
+
+
+def authority_covers(authority,kind,page):
+    return any(start<=page<=end for start,end in authority_ranges(authority,kind))
+
+
 def extract_pdf(source, path, force=False):
+    expected_parser=source_parser_fingerprint(source,LOADED_PARSER_FINGERPRINT)
+    if parser_fingerprint(source)!=expected_parser:raise RuntimeError('Parser files changed after worker startup; restart the worker before processing another source.')
     import pymupdf as fitz
+    fitz.no_recommend_layout()
     if tuple(map(int,fitz.__version__.split('.')[:3]))<(1,26,7):raise RuntimeError('PyMuPDF>=1.26.7 required. Use var/venv-pipeline/bin/python or patched worker runtime.')
     digest = sha_file(path)
     config_hash=extraction_config_hash(source)
@@ -319,14 +413,17 @@ def extract_pdf(source, path, force=False):
     if expected and expected != digest: raise ValueError('Artifact SHA-256 mismatch')
     cache_path = ROOT / 'data/extracted' / f'{digest}-{EXTRACTION_REVISION}.json'
     if cache_path.exists() and not force:
-        cached = json.loads(cache_path.read_text())
-        if cached.get('source_id') == source['id'] and cached.get('extraction_config_sha256')==config_hash and not (cached.get('ocr_pending') and not os.getenv('SOURCE_SKIP_OCR')):
+        cached = read_extraction_cache(cache_path)
+        if cached and cached.get('source_id') == source['id'] and cached.get('extraction_config_sha256')==config_hash and not (cached.get('ocr_pending') and not os.getenv('SOURCE_SKIP_OCR')):
             log('extraction_cache_hit', source_id=source['id'], sha256=digest)
             return cached
     reused=extract_bncc_dataset(source,path)
     if reused is not None:
+        if parser_fingerprint(source)!=expected_parser:raise RuntimeError('Parser changed during structured extraction; restart worker and retry.')
         reused['extraction_config_sha256']=config_hash
-        write_json(cache_path,reused)
+        reused['parser_fingerprint']=expected_parser
+        reused['runtime']=runtime_identity()
+        write_extraction_cache(cache_path,reused)
         log('structured_reuse_complete',source_id=source['id'],items=len(reused['items']),pages=reused['page_count'])
         return reused
     document = fitz.open(path)
@@ -344,7 +441,11 @@ def extract_pdf(source, path, force=False):
         if scoped_pages and page_number not in scoped_pages:continue
         if ranges and not any(r['page_start']<=page_number<=r['page_end'] for r in ranges):continue
         page_normalization=normalize_native_page(page)
-        plain=page.get_text('text',sort=not bool(source.get('glyph_replacements'))) or ''
+        native_cluster_mode=source.get('native_text_order')=='glyph_cluster_stream' and (not source.get('native_text_order_pages') or page_number in source['native_text_order_pages'])
+        if native_cluster_mode:
+            from native_glyphs import source_cell_text
+            plain=source_cell_text(source,page)
+        else:plain=page.get_text('text',sort=not bool(source.get('glyph_replacements'))) or ''
         method='pymupdf-native'
         page_words=words_from_page(page)
         ocr_result=None
@@ -388,20 +489,52 @@ def extract_pdf(source, path, force=False):
         # Restrict costly table detection to pages with curriculum codes.
         if not ocr_result and CODE_ANY.search(plain) and page_number not in source.get('non_curricular_code_pages',[]):
             try:
-                tables = page.find_tables(strategy='lines').tables
+                from ne_geometry import table_detection_configuration
+                table_kwargs,table_geometry_evidence=table_detection_configuration(source,page,CODE_ANY)
+                if source['uf']=='ES':
+                    from es_geometry import table_detection_configuration as es_table_configuration
+                    es_kwargs,es_geometry_evidence=es_table_configuration(source,page,page_number)
+                    if es_kwargs:table_kwargs.update(es_kwargs);table_geometry_evidence=es_geometry_evidence
+                tables = page.find_tables(strategy='lines',**table_kwargs).tables
                 for table_index, table in enumerate(tables):
                     rows=table.extract()
-                    if source.get('glyph_replacements'):
+                    if native_cluster_mode:
+                        rows=[[decode_source_text(source,source_cell_text(source,page,box)) if box else None for box in row.cells] for row in table.rows]
+                    elif source.get('glyph_replacements'):
                         rows=[[decode_source_text(source,page.get_text('text',clip=fitz.Rect(box)+(-0.2,-0.2,0.2,0.2),sort=False)) if box else None for box in row.cells] for row in table.rows]
+                    if source['uf']=='ES':
+                        from es_geometry import cell_text as es_cell_text
+                        for ri,physical_row in enumerate(table.rows):
+                            for ci,box in enumerate(physical_row.cells):
+                                replacement=es_cell_text(source,page,page_number,box)
+                                if replacement is not None:rows[ri][ci]=replacement
                     if not rows:continue
-                    from geometry import learning_column_indices
+                    from geometry import learning_column_indices,contextual_column_indices,contextual_cell_role
                     learning_columns=learning_column_indices(table,rows)
+                    contextual_columns=contextual_column_indices(table,rows)
                     column_headers={ci:' '.join(str(row[ci] or '') for row in rows[:3] if ci<len(row)) for ci in range(max(len(row) for row in rows))}
                     blocked_columns={ci for ci,header in column_headers.items() if normalize(header).startswith('relacao ')}
                     table_count += 1
                     for row_index, row in enumerate(rows):
                         for cell_index, value in enumerate(row):
                             if not value or cell_index in blocked_columns:continue
+                            # In ES identifier/value tables the preceding explicit
+                            # code cell identifies this whole prose cell. Codes
+                            # mentioned in its wording are references, not a new
+                            # definition (nor trailing identifiers for that prose).
+                            if source['uf']=='ES' and cell_index>0:
+                                previous_header=normalize(column_headers.get(cell_index-1,''))
+                                if re.search(r'\bcodigo(?:s)?\s+(?:(?:da|de|das)\s+)?habilidade',previous_header) and literal_identifier_cell(row[cell_index-1],column_headers.get(cell_index-1)):
+                                    continue
+                            if cell_index in contextual_columns or (cell_index not in learning_columns and contextual_cell_role(row,cell_index)):
+                                for reference_index,reference in enumerate(CODE_ANY.finditer(value)):
+                                    ref=make_item(source,reference.group(),clean_text(value),page_number,'explicit-contextual-code-reference',f'table:{table_index}/row:{row_index}/cell:{cell_index}/reference:{reference_index}',quality='explicit_context_column_not_learning_definition')
+                                    ref['kind']='referencia_no_documento';ref['positions']=[];ref['position_unknown_reason']='Código citado em coluna contextual explicitamente rotulada; não é definição adicional de aprendizagem.'
+                                    bounds=table.rows[row_index].cells[cell_index]
+                                    if bounds:ref['evidence'][0]['bbox']=list(bounds)
+                                    ref['source_context']={'documentary_column_role':column_headers.get(cell_index),'source_column_index':cell_index,'source_table_index':table_index,'full_original_cell':value}
+                                    page_items.append(ref)
+                                continue
                             if source['id']=='pb-proposta-ei-ef' and (not learning_columns or cell_index not in learning_columns):continue
                             next_header=normalize(column_headers.get(cell_index+1,''))
                             following=row[cell_index+1] if cell_index+1<len(row) and re.match(r'^(?:habilidades?|objetivos de aprendizagem|descricao da habilidade)(?:$|\s)',next_header) else None
@@ -411,6 +544,9 @@ def extract_pdf(source, path, force=False):
                             prefix=value[:first_code.start()] if first_code else value
                             prefix=prefix.rstrip().rstrip('(').strip()
                             prior=open_cells.get(column_key)
+                            if prior and page_number in prior['item'].get('resolved_source_continuation_pages',[]):
+                                open_cells.pop(column_key,None)
+                                prior=None
                             if row_index<3 and prior and prior['page']==page_number-1 and len(prefix)>10 and (prefix[0].islower() or not prior['item']['text']) and not normalize(prefix).startswith(('objetivos','habilidades','campo','criancas','bebes')):
                                 fragment=clean_text(prefix)
                                 previous=prior['item']
@@ -420,7 +556,16 @@ def extract_pdf(source, path, force=False):
                                 previous['cross_page_continuation']=True
                                 if re.search(r'[.!?;:][)\"”]*$',fragment):previous['extraction_flags']=[flag for flag in previous.get('extraction_flags',[]) if flag not in ('possible_page_continuation','code_only_waiting_page_continuation')]
                                 open_cells.pop(column_key,None)
-                            cell_candidates=candidates_from_cell(value, following, source)
+                            cell_candidates=candidates_from_cell(value, following, source, cell_header=column_headers.get(cell_index))
+                            identifier=literal_identifier_cell(value,column_headers.get(cell_index)) if following else None
+                            if identifier:cell_candidates=[(identifier,clean_text(following),value)]
+                            joint_codes=None
+                            if source['id']=='pe-curriculo-em-2021':
+                                from ne_geometry import joint_prefix
+                                joint=joint_prefix(value,CODE_ANY)
+                                if joint:
+                                    joint_codes,shared_prose=joint
+                                    cell_candidates=[(joint_codes[0],clean_text(shared_prose),value)]
                             code_matches=list(CODE_ANY.finditer(value))
                             if cell_index in learning_columns and code_matches and not value[code_matches[-1].end():].strip(' ()[]\n\t.;:'):
                                 trailing=[];previous_end=0
@@ -435,8 +580,18 @@ def extract_pdf(source, path, force=False):
                                 if len(list(CODE_ANY.finditer(raw))) > 1: item['extraction_flags']=['multiple_codes_in_cell']
                                 if len(text)>3500: item['extraction_flags']=item.get('extraction_flags',[])+['long_cell_requires_review']
                                 if bounds:item['evidence'][0]['bbox']=list(bounds)
+                                from ne_geometry import only_code_mentions
+                                if following and bounds and (identifier or only_code_mentions(value,CODE_ANY)) and clean_text(following)==text:
+                                    text_bounds=table.rows[row_index].cells[cell_index+1]
+                                    if text_bounds:
+                                        item['evidence'][0]['bbox']=list(text_bounds)
+                                        item['evidence'].append({'source_id':source['id'],'page':page_number,'printed_page':None,'section':'Código na célula física associada à redação','excerpt':code,'locator':f'table:{table_index}/row:{row_index}/cell:{cell_index}/code-locator','bbox':list(bounds),'method':'physical-code-cell-locator','evidence_role':'code_locator'})
                                 item['source_context']={'table_row':{str(ci):value for ci,value in enumerate(row) if value},'column_headers':column_headers,'source_column_index':cell_index,'source_table_index':table_index}
-                                if row_index==len(rows)-1 and candidate_index==len(cell_candidates)-1 and not re.search(r'[.!?;:][)\"”]*$',text):
+                                if len(item['evidence'])>1 and item['evidence'][-1].get('method')=='physical-code-cell-locator':item['source_context'].update(code_column_index=cell_index,text_column_index=cell_index+1)
+                                if identifier:item['source_context'].update(identifier_from_complete_physical_code_cell=True,original_code_cell=value)
+                                if joint_codes:item['source_context'].update(joint_source_codes=joint_codes,joint_code_semantics='One wording with multiple literal source identifiers in the same physical cell; no national or cross-area equivalence inferred.')
+                                if table_geometry_evidence:item['source_context']['table_geometry_evidence']=table_geometry_evidence
+                                if bounds and bounds[3]>=table.bbox[3]-.75 and candidate_index==len(cell_candidates)-1 and not re.search(r'[.!?;:][)\"”]*$',text):
                                     open_cells[column_key]={'page':page_number,'item':item}
                                     item['extraction_flags']=item.get('extraction_flags',[])+['possible_page_continuation']
                                 page_items.append(item)
@@ -449,6 +604,7 @@ def extract_pdf(source, path, force=False):
             for word_index,word in enumerate(code_words):
                 same_line=[w for w in words if (w.get('block'),w.get('paragraph'),w.get('line'))==(word.get('block'),word.get('paragraph'),word.get('line'))] if ocr_result else [w for w in words if abs(w['top']-word['top'])<3]
                 if any(word['x0']-50<w['x0']<word['x0']-8 for w in same_line if w['text'].strip('()') not in ('•','-')):continue
+                if source['uf']=='ES' and any(0<=word['x0']-w['x1']<50 for w in same_line if w['text'].strip('()') not in ('','•','-','–','—')):continue
                 next_y=min([other['top'] for other in code_words if other['top']>word['top']+5 and abs(other['x0']-word['x0'])<35] or [layout_height-24])
                 right=min([other['x0']-4 for other in code_words if other['x0']>word['x0']+50 and abs(other['top']-word['top'])<80] or [layout_width-20])
                 if ocr_result:
@@ -458,7 +614,9 @@ def extract_pdf(source, path, force=False):
                 else:selected=[w for w in words if w['top']>=word['top']-2 and w['bottom']<=next_y+1 and w['x0']>=word['x0']-8 and w['x1']<=right]
                 from geometry import words_text
                 segment=words_text(selected)
-                if source.get('glyph_replacements'):
+                if native_cluster_mode and not ocr_result:
+                    segment=decode_source_text(source,source_cell_text(source,page,[word['x0']-8,word['top']-2,right,next_y]))
+                elif source.get('glyph_replacements'):
                     segment=decode_source_text(source,page.get_text('text',clip=fitz.Rect(word['x0']-8,word['top']-2,right,next_y),sort=False))
                 for code,text,raw in candidates_from_cell(segment, source=source):
                     if len(text)>3500: continue
@@ -473,6 +631,10 @@ def extract_pdf(source, path, force=False):
         else:
             recovered_items=recover_missing_columns(source,page_number,page,page_words,tables,page_items,CODE_ANY,make_item,clean_text)
             page_items.extend(recovered_items)
+        if source['id'] in ('rs-rcg-ei-2018','ms-cr-eief-v110'):
+            from rs_ms_geometry import handles_source_page,extract_source_cells
+            if handles_source_page(source,page,page_number):
+                page_items=[item for item in page_items if not item.get('code')]+extract_source_cells(source,page,page_number,CODE_ANY,make_item,clean_text)
         for recovered in page_items:
             if 'code_only_waiting_page_continuation' in recovered.get('extraction_flags',[]):
                 box=recovered['evidence'][0].get('bbox')
@@ -482,8 +644,33 @@ def extract_pdf(source, path, force=False):
             for candidate_index,(code,text,raw) in enumerate(candidates_from_cell(plain,source=source)):
                 item=make_item(source,code,text,page_number,'labelled-objective-paragraph',f'labelled-code:{candidate_index}',quality='labelled_source_paragraph_checked')
                 page_items.append(item)
+        if ocr_result and source['id'] in ('am-rca-ei','am-rca-ef-ai','am-rca-ef-af','am-rca-em'):
+            from am_ocr_grid import extract_grid_items
+            grid_items,grid_report=extract_grid_items(source,page,page_number,ocr_result,make_item,clean_text)
+            pages[-1]['ocr_grid']=grid_report
+            if grid_report.get('applicable'):page_items=grid_items
+            if grid_report.get('unassigned_code_tokens'):warnings.append({'page':page_number,'issue':'ocr_grid_unassigned_code_tokens','tokens':grid_report['unassigned_code_tokens'],'status':'requires_primary_glyph_and_column_review'})
+            if page_items:
+                from am_positions import positions_for_page,position_for_item
+                position_report=positions_for_page(source,page,page_number,ocr_result,grid_report)
+                pages[-1]['physical_position_report']=position_report
+                for item in page_items:
+                    resolution=position_for_item(item,position_report)
+                    item['positions']=resolution['positions']
+                    item.setdefault('source_context',{})['physical_position_candidates']=resolution['candidate_context']
+                    item['position_validation_status']=resolution['status']
+                    if resolution.get('position_unknown_reason'):item['position_unknown_reason']=resolution['position_unknown_reason']
+                    else:item.pop('position_unknown_reason',None)
+                    item['canonical_text_policy']='Transcrição candidata de OCR; grafia e pontuação dependem de conferência dos glifos no PDF original, que permanece a autoridade.'
         if region_rule:
             page_items=[item for item in page_items if all(not evidence.get('bbox') or any(evidence['bbox'][0]>=region[0]-1 and evidence['bbox'][1]>=region[1]-1 and evidence['bbox'][2]<=region[2]+1 and evidence['bbox'][3]<=region[3]+1 for region in region_rule['regions']) for evidence in item['evidence'])]
+        if source['uf']=='ES':
+            from es_geometry import rewrite_page as rewrite_es_page
+            page_items,continuation_report=rewrite_es_page(source,page_number,page,tables,page_items,CODE_ANY,make_item,clean_text)
+            if continuation_report:pages[-1]['physical_continuation_report']=continuation_report
+        from document_roles import rewrite_page as rewrite_document_roles
+        page_items,role_report=rewrite_document_roles(source,page_number,page,tables,page_items,CODE_ANY,make_item,clean_text)
+        if role_report is not None:pages[-1]['document_role_report']=role_report
         for item in page_items:
             for evidence in item['evidence']:
                 evidence['page_normalization']=page_normalization
@@ -511,20 +698,42 @@ def extract_pdf(source, path, force=False):
             item=make_item(source,None,text,page['page'],'pymupdf-page-section','page-section',quality='pending_structure_review')
             item['extraction_flags']=['uncoded_documentary_section_not_classified_learning']
             items.append(item)
-    result={'source_id':source['id'],'sha256':digest,'extraction_revision':EXTRACTION_REVISION,'pages':pages,'items':items,'warnings':warnings,'table_count':table_count,'page_count':len(pages),'document_page_count':len(document),'code_mentions':sum(p['code_mentions'] for p in pages),'coded_items':sum(i['code'] is not None for i in items),'extracted_at':now(),'reconciliation_status':'pending_documentary_reconciliation','source_text_decoding':source.get('glyph_replacements',[]),'ocr_pending':any(p.get('ocr_required') and not p.get('ocr_completed') for p in pages)}
+    result={'source_id':source['id'],'sha256':digest,'extraction_revision':EXTRACTION_REVISION,'pages':pages,'items':items,'warnings':warnings,'table_count':table_count,'page_count':len(pages),'document_page_count':len(document),'code_mentions':sum(p['code_mentions'] for p in pages),'coded_items':sum(i['code'] is not None for i in items),'extracted_at':now(),'reconciliation_status':'pending_documentary_reconciliation','source_text_decoding':source.get('glyph_replacements',[]),'source_native_text_order':source.get('native_text_order'),'source_native_text_order_pages':source.get('native_text_order_pages'),'ocr_pending':any(p.get('ocr_required') and not p.get('ocr_completed') for p in pages)}
+    if parser_fingerprint(source)!=expected_parser:raise RuntimeError('Parser files changed during extraction; prior completed cache preserved. Restart and retry this source.')
     result['extraction_config_sha256']=config_hash
-    write_json(cache_path,result)
+    result['parser_fingerprint']=expected_parser
+    result['runtime']=runtime_identity()
+    result['quality']={'ocr_execution_pending':result['ocr_pending'],'ocr_transcription_review_pending':any(p.get('ocr_completed') for p in pages),'unresolved_printed_code_records':sum(i.get('official_code_present_in_source') is True and i.get('code') is None for i in items),'unresolved_ocr_code_like_records':sum(i.get('code_like_token_recognized_by_OCR') is True and i.get('code') is None for i in items),'unassigned_ocr_code_tokens':sum(len(p.get('ocr_grid',{}).get('unassigned_code_tokens',[])) for p in pages),'documentary_page_sections_not_typed_as_learning':sum(i.get('kind')=='secao_normativa' for i in items),'meaning':'Execution, code transcription and primary-document reconciliation are separate; OCR execution completion is not glyph or pedagogical verification. An OCR code-like token does not certify an official printed code.'}
+    write_extraction_cache(cache_path,result)
     log('extract_complete',source_id=source['id'],pages=len(pages),items=len(items),warnings=len(warnings))
     return result
 
 
 def evidence_check(item, extracted, pdf=None):
     pages={p['page']:p for p in extracted['pages']}
+    normalized_pages=extracted.setdefault('_normalized_evidence_pages',{})
+    def normalized_page(page):
+        cached=normalized_pages.get(page['page'])
+        if cached is None or cached[0]!=page['text']:
+            cached=(page['text'],normalize(page['text']));normalized_pages[page['page']]=cached
+        return cached[1]
     fragments=[]
     for evidence in item.get('evidence',[]):
         page=pages.get(evidence.get('page'))
         if not page:return False
         excerpt=evidence.get('excerpt','')
+        if evidence.get('method')=='pymupdf-native-glyph-cluster-v1':
+            if pdf is None or not evidence.get('bbox'):return False
+            if evidence.get('source_id')!=extracted.get('source_id') or item.get('source_id')!=extracted.get('source_id'):return False
+            if evidence.get('artifact_sha256') and evidence['artifact_sha256']!=extracted.get('sha256'):return False
+            from geometry import normalize_native_page
+            from native_glyphs import NativeGlyphText
+            actual_page=pdf[evidence['page']-1]
+            normalize_native_page(actual_page)
+            literal=NativeGlyphText(actual_page).text(evidence['bbox'])
+            if normalize(excerpt) not in normalize(literal):return False
+            if evidence.get('evidence_role')!='code_locator':fragments.append(excerpt)
+            continue
         if evidence.get('ocr_reference_path'):
             proof_path=safe_path(evidence['ocr_reference_path'])
             if not proof_path.exists() or proof_path.stat().st_size>32*1024*1024 or sha_file(proof_path)!=evidence.get('ocr_reference_sha256'):return False
@@ -533,13 +742,9 @@ def evidence_check(item, extracted, pdf=None):
             if proof.get('page') and proof['page']!=evidence['page']:return False
             proof_text=proof.get('text')
             if proof_text is None:
-                from geometry import words_text
-                proof_words=[]
-                for word in proof.get('words',[]):
-                    if word.get('bbox'):
-                        box=word['bbox'];proof_words.append({'x0':box[0],'top':box[1],'x1':box[2],'bottom':box[3],'text':word['text'],'line':str(word.get('line',0)),'block':0})
-                    else:proof_words.append(word)
-                proof_text=words_text(proof_words)
+                # TSV order is the recorded OCR reading order. Resorting by y
+                # silently moves superscripts or accents across logical lines.
+                proof_text=' '.join(word['text'] for word in proof.get('words',[]))
             if normalize(excerpt) not in normalize(proof_text):return False
             fragments.append(excerpt)
             continue
@@ -553,14 +758,20 @@ def evidence_check(item, extracted, pdf=None):
             if normalize(excerpt) not in normalize(visible):return False
             fragments.append(excerpt)
             continue
-        if normalize(excerpt) not in normalize(page['text']):
+        if normalize(excerpt) not in normalized_page(page):
             if pdf is None or not evidence.get('bbox'):return False
             import pymupdf as fitz
             actual_page=pdf[evidence['page']-1]
             from geometry import normalize_native_page,words_from_page,clipped_words,words_text
             normalize_native_page(actual_page)
             box=fitz.Rect(evidence['bbox'])+(-1,-1,1,1)
-            clipped=actual_page.get_text('text',clip=box,sort=not bool(extracted.get('source_text_decoding')))
+            from es_geometry import cell_text as es_cell_text
+            specific=es_cell_text({'id':extracted['source_id'],'sha256':extracted['sha256']},actual_page,evidence['page'],evidence['bbox'])
+            if specific is not None:clipped=specific
+            elif extracted.get('source_native_text_order')=='glyph_cluster_stream' and (not extracted.get('source_native_text_order_pages') or evidence['page'] in extracted['source_native_text_order_pages']):
+                from native_glyphs import source_cell_text
+                clipped=source_cell_text({'native_text_order':'glyph_cluster_stream'},actual_page,list(box))
+            else:clipped=actual_page.get_text('text',clip=box,sort=not bool(extracted.get('source_text_decoding')))
             for mapping in extracted.get('source_text_decoding',[]):clipped=clipped.replace(mapping['from'],mapping['to'])
             if evidence.get('method')=='pymupdf-rendered-glyph-trace-v1':
                 from ms_glyphs import rendered_glyph_text
@@ -574,13 +785,44 @@ def evidence_check(item, extracted, pdf=None):
                     if not isinstance(typography,dict) or not typography.get('method') or not typography.get('evidence') or typographic(excerpt) not in typographic(clipped):return False
         if evidence.get('evidence_role')!='code_locator':fragments.append(excerpt)
     if not fragments:return False
-    primary=pages[item['evidence'][0]['page']]['text']
+    primary='\n'.join(pages[e['page']]['text'] for e in item['evidence'])
     code=item.get('code')
-    if code and code not in primary and code not in re.sub(r'\s+','',primary):return False
-    return normalize(' '.join(fragments))==normalize(item['text'])
+    code_locator_proved=any(e.get('bbox') and e.get('evidence_role') in ('code_locator','literal_code_reference') and re.sub(r'\s+','',e.get('excerpt',''))==re.sub(r'\s+','',code or '') for e in item['evidence'])
+    if code and not code_locator_proved and code not in primary and re.sub(r'\s+','',code) not in re.sub(r'\s+','',primary):
+        formatting=item.get('code_formatting_equivalence') or {}
+        original=item.get('code_original')
+        if formatting.get('method')!='source_code_soft_hyphen_and_line_wrap' or not formatting.get('evidence') or not isinstance(original,str):return False
+        compact=lambda value:re.sub(r'\s+','',value)
+        if compact(original.replace('\u00ad',''))!=compact(code):return False
+        original_proved=compact(original) in compact(primary) or any(e.get('evidence_role')=='code_locator' and compact(e.get('excerpt',''))==compact(original) for e in item['evidence'])
+        if not original_proved:return False
+    joined=' '.join(fragments)
+    return normalize(joined)==normalize(item['text'])
+
+
+def encode_secondary_controls(item):
+    """Lossless transport encoding of PDF controls in secondary context only.
+
+    Canonical text, codes and evidence are deliberately not repaired here. A NUL
+    in those fields remains a blocking validation error. Each original context
+    value is retained as UTF-8 base64, so the encoding is exactly reversible.
+    """
+    records=[]
+    def visit(value,path):
+        if isinstance(value,str) and '\x00' in value:
+            raw=value.encode('utf-8')
+            records.append({'path':path,'original_utf8_base64':base64.b64encode(raw).decode('ascii'),'original_sha256':sha_bytes(raw),'method':'secondary_pdf_control_escape_v1','meaning':'Transport representation of original control; no official glyph interpretation claimed.'})
+            return value.replace('\x00',r'\u0000')
+        if isinstance(value,list):return [visit(child,f'{path}/{index}') for index,child in enumerate(value)]
+        if isinstance(value,dict):return {key:visit(child,f'{path}/{key}') for key,child in value.items()}
+        return value
+    if item.get('source_context') is not None:item['source_context']=visit(item['source_context'],'/source_context')
+    if records:item['secondary_context_transport_encoding']=records
+    return item
 
 
 def finalize_items(items,sources):
+    for source in sources:validate_position_contexts(source)
     source_by_id={s['id']:s for s in sources}
     ordinals=collections.Counter()
     finalized=[]
@@ -591,15 +833,13 @@ def finalize_items(items,sources):
         if not item.get('text','').strip():continue
         if item.get('code') and item['evidence'][0].get('page') in source.get('non_curricular_code_pages',[]):continue
         authority=source.get('adapter_authority',{})
-        section_range=authority.get('uncoded_page_sections_pages')
-        if section_range and len(section_range)==2 and not item.get('document_specific_adapter') and item['evidence'][0].get('method')=='pymupdf-page-section' and section_range[0]<=item['evidence'][0].get('page',0)<=section_range[1]:continue
-        reference_range=authority.get('generic_coded_reference_pages')
-        if reference_range and len(reference_range)==2 and item.get('code') and not item.get('document_specific_adapter') and reference_range[0]<=item['evidence'][0].get('page',0)<=reference_range[1]:
+        page=item['evidence'][0].get('page',0)
+        if not item.get('document_specific_adapter') and item['evidence'][0].get('method')=='pymupdf-page-section' and authority_covers(authority,'uncoded_page_sections',page):continue
+        if item.get('code') and not item.get('document_specific_adapter') and authority_covers(authority,'generic_coded_reference',page):
             item['kind']='referencia_no_documento'
             item['positions']=[]
             item['position_unknown_reason']='Código citado em orientações/atividades, não definição de aprendizagem; capacidades locais estão no adaptador documental.'
-        authority_range=authority.get('coded_learning_pages')
-        if authority_range and len(authority_range)==2 and item.get('code') and not item.get('document_specific_adapter') and authority_range[0]<=item['evidence'][0].get('page',0)<=authority_range[1]:continue
+        if item.get('code') and not item.get('document_specific_adapter') and authority_covers(authority,'coded_learning',page):continue
         evidence=item.get('evidence',[])
         if not evidence: continue
         page=evidence[0].get('page')
@@ -616,12 +856,19 @@ def finalize_items(items,sources):
         positions=[dict(p) for p in item.get('positions',[]) if p.get('stage') in source.get('stages',[])]
         for position in positions:
             if not item.get('document_specific_adapter') and position.get('stage')=='EM' and not position.get('component') and item.get('code') and re.search(r'EM\d{2}LP\d{2}',item['code']):position['component']='Língua Portuguesa'
-        for context in source.get('position_contexts',[]):
+        # Page/code context is a generic fallback. A document adapter has already
+        # resolved the original cell (which may place the same code in several
+        # years on one page); a page-wide context must not merge those positions.
+        generic_contexts=[] if item.get('document_specific_adapter') else source.get('position_contexts',[])
+        for context in generic_contexts:
             start=context.get('page_start',context.get('page',0));end=context.get('page_end',start)
             if start<=page<=end and (not context.get('code') or context['code']==item.get('code')):
                 explicit={k:context.get(k) for k in ('stage','component','area','years','year_label','age_group','period')}
                 if explicit.get('stage'):
                     explicit.update(position_origin='source_document_context',position_evidence=context.get('evidence'))
+                    if context.get('position_note'):explicit['position_note']=context['position_note']
+                    if context.get('position_unknown_reason'):item['position_unknown_reason']=context['position_unknown_reason']
+                    elif explicit.get('years') or explicit.get('age_group'):item.pop('position_unknown_reason',None)
                     positions=[explicit]
         if item.get('code'):
             for rule in source.get('code_rules',[]):
@@ -629,12 +876,24 @@ def finalize_items(items,sources):
                 if not pattern or len(pattern)>500:continue
                 match=re.fullmatch(pattern,item['code'])
                 if not match:continue
+                def position_is_explicit(position):return bool(item.get('document_specific_adapter') or position.get('position_origin','').startswith('explicit_') or position.get('position_origin') in ('source_document_context','source_document_physical_row','physical_source_header_OCR'))
                 if rule.get('position_from_national_code') and positions:
-                    for position in positions:position.update(position_origin='documented_source_code_rule',position_evidence=rule.get('evidence'),position_rule_id=rule.get('id'))
+                    for position in positions:
+                        if not position_is_explicit(position):position.update(position_origin='documented_source_code_rule',position_evidence=rule.get('evidence'),position_rule_id=rule.get('id'))
                 if rule.get('position_year_group') and positions:
                     group=str(match.group(int(rule['position_year_group'])))
                     if group.isdigit() and 1<=int(group)<=12:
-                        for position in positions:position.update(years=[int(group)],year_label=f'{int(group)}º ano',position_origin='documented_source_code_rule',position_evidence=rule.get('evidence'),position_rule_id=rule.get('id'))
+                        for position in positions:
+                            if not position_is_explicit(position):position.update(years=[int(group)],year_label=f'{int(group)}º ano',position_origin='documented_source_code_rule',position_evidence=rule.get('evidence'),position_rule_id=rule.get('id'))
+        if source['uf']!='BR' and not item.get('document_specific_adapter'):
+            for position in positions:
+                if position.get('position_origin')=='national_code_convention':
+                    # A national block can be redistributed by a local table
+                    # (e.g. RS Arte EF15 in a 1st/2nd-year organizer). Keep the
+                    # code interpretation inspectable without asserting a local
+                    # grade/age absent a documented source rule or heading.
+                    item.setdefault('candidate_code_position',[]).append(dict(position))
+                    position.update(years=None,year_label=None,age_group=None,position_origin='code_context_local_grade_unverified',position_note='Etapa/componente identificados pelo código; ano/bloco/faixa etária local dependem de cabeçalho ou regra documental conferida.')
         item['positions']=positions
         if item.get('kind')=='secao_normativa':
             for section in source.get('structure_sections',[]):
@@ -650,31 +909,33 @@ def finalize_items(items,sources):
             if item.get('code') and item.get('kind') in ('habilidade','objetivo_aprendizagem'):item['kind']='referencia_no_documento'
         for event in item.get('review_events',[]):
             if not event.get('at'):event['at']=source.get('collected_at')
-        finalized.append(item)
+        finalized.append(encode_secondary_controls(item))
     return finalized
 
 
-def source_uncoded_items(sources,extracts):
+def source_uncoded_items(sources,extracts,validation_errors=None):
     import pymupdf as fitz
     items=[]
     for source in sources:
         relative=source.get('uncoded_items_path')
-        if not relative or source.get('include_in_corpus') is False:continue
+        if not relative or source.get('include_in_corpus') is False or source.get('publication_eligible') is False:continue
+        extracted=extracts.get(source['id'])
+        if not extracted:continue
         raw_adapter=json.loads(safe_path(relative).read_text())
         if isinstance(raw_adapter,list):
             adapter={'source_id':source['id'],'artifact_sha256':source.get('sha256'),'actor_type':'automated','actor_id':'document-specific-source-adapter','items':[record for record in raw_adapter if record.get('source_id')==source['id']]}
         else:adapter=raw_adapter
         if adapter.get('source_id')!=source['id'] or adapter.get('artifact_sha256')!=source.get('sha256'):raise ValueError('Uncoded adapter source/hash mismatch')
-        extracted=extracts.get(source['id'])
-        if not extracted:continue
         if source.get('glyph_replacements'):extracted['source_text_decoding']=source['glyph_replacements']
+        if source.get('native_text_order'):extracted['source_native_text_order']=source['native_text_order']
+        if source.get('native_text_order_pages'):extracted['source_native_text_order_pages']=source['native_text_order_pages']
         with fitz.open(safe_path(source['local_path'])) as document:
             for record in adapter.get('items',[]):
                 if record.get('artifact_sha256',source.get('sha256'))!=source.get('sha256'):raise ValueError('Uncoded item artifact hash mismatch')
                 item=make_item(source,record.get('code'),record['text'],record['page'],'document-specific-uncoded-adapter',record['locator'],quality='literal_text_and_explicit_context_checked')
                 item['kind']=record['kind'];item['positions']=record.get('positions',[])
                 item['document_specific_adapter']=True
-                for field in ('source_number','title','source_dataset','primary_typographic_equivalence','source_right_label'):
+                for field in ('source_number','title','source_dataset','primary_typographic_equivalence','source_right_label','source_order','code_original','code_formatting_equivalence','official_code_present_in_source'):
                     if field in record:item[field]=record[field]
                 if record.get('key'):
                     item['structural_key']=record['key']
@@ -689,30 +950,66 @@ def source_uncoded_items(sources,extracts):
                 item['technical_validation_status']=record.get('technical_validation_status','literal_text_and_explicit_context_checked')
                 item['publication_status']='source_attributed'
                 item['review_events']=[{'actor_type':record.get('actor_type',adapter.get('actor_type','automated')),'actor_id':record.get('actor_id',adapter.get('actor_id','document-adapter')),'method':record.get('extraction_method',adapter.get('method')),'at':adapter.get('generated_at') or source.get('collected_at'),'result':'literal_source_context_verified'}]
-                if not evidence_check(item,extracted,document):raise ValueError(f'Uncoded adapter text/code/page verification failed: {source["id"]} {record["locator"]}')
+                if not evidence_check(item,extracted,document):
+                    failure={'source_id':source['id'],'page':record['page'],'locator':record['locator'],'id':item['id'],'check':'adapter_literal_text_code_page'}
+                    if validation_errors is not None:
+                        validation_errors.append(failure)
+                        continue
+                    raise ValueError(f'Uncoded adapter text/code/page verification failed: {source["id"]} {record["locator"]}')
                 items.append(item)
     return items
 
 
-def attach_hierarchy(items,sources):
-    by_source_code={(item['source_id'],item['code']):item for item in items if item.get('code')}
+def attach_hierarchy(items,sources,skip_source_ids=()):
+    by_source_code=collections.defaultdict(dict)
+    by_id={item['id']:item for item in items}
+    by_selector=collections.defaultdict(list)
+    for item in items:
+        if item.get('code'):by_source_code[(item['source_id'],item['code'])][item['id']]=item
+        first=item['evidence'][0]
+        by_selector[(item['source_id'],first.get('page'),first.get('locator'),item.get('code'))].append(item)
     nodes={(item['source_id'],item['structural_key']):item for item in items if item.get('structural_key')}
     for item in items:
-        for alias in item.get('code_aliases',[]):by_source_code[(item['source_id'],alias)]=item
+        for alias in item.get('code_aliases',[]):by_source_code[(item['source_id'],alias)][item['id']]=item
     for source in sources:
+        if source['id'] in skip_source_ids:continue
         if not source.get('uncoded_items_path'):continue
         adapter=json.loads(safe_path(source['uncoded_items_path']).read_text())
         if not isinstance(adapter,dict):continue
         for link in adapter.get('item_parent_links',[]):
-            item=by_source_code.get((source['id'],link['code']))
+            if link.get('item_id'):
+                item=by_id.get(link['item_id'])
+            else:
+                candidates=by_selector.get((source['id'],link.get('page'),link.get('locator'),link.get('code')),[]) if link.get('locator') else list(by_source_code.get((source['id'],link.get('code')),{}).values())
+                if len(candidates)>1:raise ValueError(f'Ambiguous structural code reference requires item_id or page/locator/code: {source["id"]} {link.get("code")}')
+                item=candidates[0] if candidates else None
             parent=nodes.get((source['id'],link['parent_key']))
-            if not item or not parent:raise ValueError(f'Unresolved structural parent: {source["id"]} {link["code"]}')
+            if not item or item['source_id']!=source['id'] or not parent:raise ValueError(f'Unresolved structural parent: {source["id"]} {link.get("code") or link.get("item_id")}')
             item['parent_id']=parent['id']
             item['structural_context_ids']=[nodes[(source['id'],key)]['id'] for key in link.get('context_keys',[]) if (source['id'],key) in nodes]
             item['structural_competency_ids']=[nodes[(source['id'],key)]['id'] for key in link.get('competency_keys',[]) if (source['id'],key) in nodes]
             item['hierarchy_evidence']=link.get('evidence')
             item['hierarchy_origin']='declared_document_structure'
     return items
+
+
+def ocr_code_reference_pending(item):
+    """Explicit OCR provenance cannot certify an official source identifier."""
+    if item.get('official_code_presence_validation')=='pending_source_glyph_verification':return True
+    if item.get('code_like_token_recognized_by_OCR') is True:return True
+    if set(item.get('extraction_flags',[])) & {'ocr_layout_requires_documentary_review','ocr_transcription_requires_source_glyph_verification','ocr_code_confusable_requires_source_glyph_verification'}:return True
+    return any(e.get('method') in ('tesseract-tsv-por','am-raster-grid-tsv') or e.get('ocr_upright_bbox') is not None for e in item.get('evidence',[]))
+
+
+def ocr_reference_candidate(relation):
+    if relation.get('technical_validation_status')=='ocr_code_pending_source_glyph_verification':return relation
+    candidate=dict(relation)
+    candidate['id']='ca:relation:'+sha_bytes((relation['id']+'|ocr-code-unverified').encode())[:24]
+    candidate.update(relation_type='referencia_nacional',origin='sugestao_automatica',publication_status='candidata_pendente',technical_validation_status='ocr_code_pending_source_glyph_verification',pedagogical_review_status='not_reviewed',scope='Candidata de referência nacional baseada em token de OCR. Os glifos do identificador original não foram conferidos; não é declaração comprovada da fonte, equivalência ou cobertura curricular.')
+    candidate['candidate_relation_type']=relation['relation_type']
+    candidate['members']=[dict(member,scope='Possible reference based on unverified OCR token; source identifier requires primary glyph verification.') for member in relation['members']]
+    candidate['review_events']=[dict(event,result='ocr_code_reference_candidate_not_source_declared') for event in relation.get('review_events',[])]
+    return candidate
 
 
 def relations_for(items,sources):
@@ -739,6 +1036,8 @@ def relations_for(items,sources):
         for declaration in declarations:
             for national in nationals[declaration['national_code']]:
                 key=(source['id'],declaration['rule_id'],national['id'],declaration['relation_type'])
+                pending_ocr=ocr_code_reference_pending(item)
+                if pending_ocr:key=key+('ocr-code-unverified',)
                 if key not in groups:
                     rid='ca:relation:'+sha_bytes('|'.join(key).encode())[:24]
                     groups[key]={'id':rid,'members':[{'item_id':national['id'],'role':'target','scope':'national reference item'}],'relation_type':declaration['relation_type'],'origin':declaration['origin'],'technical_validation_status':'literal_code_checked' if declaration['rule_id']=='literal-national-code' else 'documented_source_rule_applied','pedagogical_review_status':'not_reviewed','publication_status':'documented_reference','method':MAPPING_REVISION,'rule_id':declaration['rule_id'],'evidence':declaration['evidence'],'scope':declaration['scope'],'review_events':[{'actor_type':'automated','actor_id':'curriculos-abertos:documented-code-rules','method':MAPPING_REVISION,'at':item['review_events'][0].get('at'),'result':'documented_reference_without_equivalence'}]}
@@ -746,20 +1045,36 @@ def relations_for(items,sources):
                 relation['members'].append({'item_id':item['id'],'role':'source','scope':declaration['scope']})
     from correspondence import documentary_links,lexical_candidates
     documented=list(groups.values())+documentary_links(items,sources)
+    by_id={item['id']:item for item in items}
+    documented=[ocr_reference_candidate(relation) if any(ocr_code_reference_pending(by_id[member['item_id']]) for member in relation['members'] if member['role']=='source') else relation for relation in documented]
     return documented+lexical_candidates(items,documented,normalize)
 
 
 def expected_source_parts(source):
     parts=[{'source_id':source['id'],'part':part,'edition':source.get('edition')} for part in (source.get('normative_parts') or ['inventário detalhado de partes pendente'])]
     for related in source.get('expected_related_documents',[]):
-        if related.get('mandatory',True) and related.get('status') not in ('processed_reconciled','resolved'):
-            parts.append({'source_id':source['id'],'part':'Documento curricular obrigatório referenciado: '+related['title'],'edition':related.get('edition'),'required_related_document_pending':True,'evidence':related.get('evidence'),'reason':related.get('reason')})
+        if related.get('mandatory',True):
+            parts.append({'source_id':source['id'],'part':'Documento curricular obrigatório referenciado: '+related['title'],'edition':related.get('edition'),'required_related_document_pending':True,'related_source_id':related.get('related_source_id'),'related_artifact_sha256':related.get('artifact_sha256'),'evidence':related.get('evidence'),'reason':related.get('reason')})
     return parts
 
 
-def coverage_for(sources, extracts, items, relations):
+def source_reconciliation_reports(sources,extracts,items):
+    from reconciliation import evaluate_source_reconciliation,resolve_source_dependencies
+    by_source=collections.defaultdict(list)
+    for item in items:by_source[item['source_id']].append(item)
+    reports={}
+    for source in sources:
+        path=ROOT/'data/manifests/reconciliation'/f'{source["id"]}.json'
+        record=json.loads(path.read_text()) if path.exists() else {}
+        report=evaluate_source_reconciliation(source,extracts.get(source['id']),by_source[source['id']],record,EXTRACTION_REVISION,expected_parts=[entry['part'] for entry in expected_source_parts(source) if not entry.get('required_related_document_pending')])
+        reports[source['id']]={**report,'source_id':source['id'],'record_path':str(path.relative_to(ROOT)) if path.exists() else None,'record_sha256':sha_file(path) if path.exists() else None}
+    return resolve_source_dependencies(reports)
+
+
+def coverage_for(sources, extracts, items, relations, reconciliation_reports=None):
     by_source=collections.defaultdict(list)
     for item in items: by_source[item['source_id']].append(item)
+    reconciliation_reports=reconciliation_reports if reconciliation_reports is not None else source_reconciliation_reports(sources,extracts,items)
     relation_index=collections.defaultdict(set)
     relation_by_id={r['id']:r for r in relations}
     for relation in relations:
@@ -774,37 +1089,42 @@ def coverage_for(sources, extracts, items, relations):
                 source_ids=[s['id'] for s in scoped if (component is None and not s.get('stage_component_inventory',{}).get(stage,s.get('components',[]) if len(s.get('stages',[]))==1 else [])) or component in s.get('stage_component_inventory',{}).get(stage,s.get('components',[]) if len(s.get('stages',[]))==1 else [])]
                 stage_items=[i for sid in source_ids for i in by_source[sid] if any(p.get('stage')==stage and (component is None or p.get('component')==component or p.get('area')==component) for p in i.get('positions',[]))]
                 expected=[part for s in scoped if s['id'] in source_ids for part in expected_source_parts(s)]
-                processed=[x for x in expected if x['source_id'] in extracts and not x.get('required_related_document_pending') and not extracts[x['source_id']].get('ocr_pending')]
+                def entry_processed(entry):
+                    sid=entry.get('related_source_id') if entry.get('required_related_document_pending') else entry['source_id']
+                    extracted=extracts.get(sid)
+                    return bool(extracted and not extracted.get('ocr_pending') and (not entry.get('required_related_document_pending') or extracted.get('sha256')==entry.get('related_artifact_sha256')))
+                processed=[entry for entry in expected if entry_processed(entry)]
                 # Reconciliation evidence must exist independently, keyed to exact artifact hash.
-                reconciled=[]
+                reconciled=[];partial=[]
                 for entry in processed:
-                    file=ROOT/'data/manifests/reconciliation'/f'{entry["source_id"]}.json'
-                    if not file.exists(): continue
-                    record=json.loads(file.read_text())
-                    extracted=extracts[entry['source_id']]
-                    record_revision=record.get('target_publication_extraction_revision') or record.get('publication_extraction_revision') or record.get('extraction_revision')
-                    if record_revision!=EXTRACTION_REVISION or record.get('source_id')!=entry['source_id'] or not record.get('method') or not record.get('actor_id') or record.get('actor_type') not in ('automated','human'):continue
-                    actual_item_ids={item['id'] for item in by_source[entry['source_id']]}
-                    for part in record.get('parts',[]):
-                        if part.get('name')==entry['part'] and record.get('artifact_sha256')==extracted['sha256'] and part.get('expected_item_ids')==part.get('verified_item_ids') and part.get('expected_item_ids') and set(part['verified_item_ids']).issubset(actual_item_ids) and part.get('evidence') and not part.get('findings'):
-                            reconciled.append(entry)
+                    report=reconciliation_reports[entry['source_id']]
+                    if entry.get('required_related_document_pending'):
+                        related=reconciliation_reports.get(entry.get('related_source_id'),{})
+                        if report.get('whole_source_reconciled') and related.get('whole_source_reconciled') and related.get('artifact_sha256')==entry.get('related_artifact_sha256'):reconciled.append(entry)
+                        continue
+                    if entry['part'] in report.get('reconciled_parts',[]):reconciled.append(entry)
+                    if entry['part'] in report.get('partial_parts',[]):partial.append(entry)
                 relation_ids={rid for item in stage_items for rid in relation_index[item['id']]}
                 applicable_relations=[relation_by_id[rid] for rid in relation_ids]
                 errors=[{'source_id':s['id'],'error':s.get('processing_error')} for s in scoped if s.get('processing_error')]
                 pending=[]
+                if errors:pending.append('Falhas críticas de processamento das fontes deste recorte')
                 if not scoped: pending.append('Inventário oficial deste recorte não concluído')
                 if len(processed)<len(expected): pending.append('Documentos/partes obrigatórias não processados')
                 if len(reconciled)<len(expected) or not expected: pending.append('Reconciliação documental por parte não concluída')
+                incomplete_sources=[sid for sid in source_ids if not reconciliation_reports[sid].get('whole_source_reconciled')]
+                if incomplete_sources:pending.append('Reconciliação integral das fontes deste recorte não comprovada por inventário independente e união exata de registros/textos')
                 if len(reconciled)<len(expected) and any(i.get('extraction_flags') for i in stage_items): pending.append('Candidatos com fronteiras/estrutura pendentes de revisão')
-                result.append({'uf':uf,'stage':stage,'component':component,'source_ids':source_ids,'editions':sorted({s.get('edition') or 'edição não confirmada' for s in scoped}),'expected_parts':expected,'processed_parts':processed,'reconciled_parts':reconciled,'expected_parts_count':len(expected),'processed_parts_count':len(processed),'reconciled_parts_count':len(reconciled),'item_count':len(stage_items),'learning_types':dict(collections.Counter(i['kind'] for i in stage_items)),'items_with_evidence':sum(bool(i['evidence']) for i in stage_items),'relations':dict(collections.Counter(r['origin'] for r in applicable_relations)),'relation_types':dict(collections.Counter(r['relation_type'] for r in applicable_relations)),'review_statuses':dict(collections.Counter(r['pedagogical_review_status'] for r in applicable_relations)),'critical_errors':errors,'pending':pending,'editorial_completeness':'reconciled' if expected and len(reconciled)==len(expected) and not pending else 'pending','technical_verification':'partial' if processed else 'not_processed','mapping_coverage':'literal_code_references_only','reconciled':bool(expected and len(reconciled)==len(expected) and not pending),'ready':bool(expected and len(reconciled)==len(expected) and not pending),'denominator_definition':'Mandatory source parts identified in the independent source inventory; source inventory itself remains pending until documented reconciliation.'})
+                result.append({'uf':uf,'stage':stage,'component':component,'source_ids':source_ids,'editions':sorted({s.get('edition') or 'edição não confirmada' for s in scoped}),'expected_parts':expected,'processed_parts':processed,'reconciled_parts':reconciled,'expected_parts_count':len(expected),'processed_parts_count':len(processed),'reconciled_parts_count':len(reconciled),'item_count':len(stage_items),'learning_types':dict(collections.Counter(i['kind'] for i in stage_items)),'items_with_evidence':sum(bool(i['evidence']) for i in stage_items),'relations':dict(collections.Counter(r['origin'] for r in applicable_relations)),'relation_types':dict(collections.Counter(r['relation_type'] for r in applicable_relations)),'review_statuses':dict(collections.Counter(r['pedagogical_review_status'] for r in applicable_relations)),'critical_errors':errors,'pending':pending,'editorial_completeness':'reconciled' if expected and len(reconciled)==len(expected) and not pending else 'pending','technical_verification':'partial' if processed else 'not_processed','mapping_coverage':'documented_associations_and_separate_unvalidated_lexical_candidates','reconciled':bool(expected and len(reconciled)==len(expected) and not pending),'ready':bool(expected and len(reconciled)==len(expected) and not pending),'denominator_definition':'Mandatory source parts identified in the independent source inventory; source inventory itself remains pending until documented reconciliation.'})
+                result[-1].update(partial_parts=partial,partial_parts_count=len(partial),whole_sources_reconciled=[sid for sid in source_ids if sid not in incomplete_sources],whole_sources_pending=incomplete_sources,reconciliation_issues=[{'source_id':sid,'issues':reconciliation_reports[sid].get('issues',[]),'unaccounted_item_count':len(reconciliation_reports[sid].get('unaccounted_item_ids',[]))} for sid in incomplete_sources])
     return result
 
 
-def stratified_samples(items, extracts):
+def stratified_samples(items, extracts, sources=None):
     strata=collections.defaultdict(list)
     for item in items:
         for position in item.get('positions',[]): strata[(item['uf'],position['stage'],position.get('component') or position.get('area'))].append(item)
-    samples=[]
+    samples=[];selected=collections.defaultdict(list)
     for key, candidates in sorted(strata.items(),key=lambda pair:str(pair[0])):
         ordered=sorted(candidates,key=lambda item:sha_bytes(item['id'].encode()))
         chosen=ordered[:min(3,len(ordered))]
@@ -812,24 +1132,59 @@ def stratified_samples(items, extracts):
         chosen.extend(sorted(candidates,key=lambda i:(i['source_id'],i['evidence'][0]['page']))[:1])
         chosen.extend(sorted(candidates,key=lambda i:(i['source_id'],i['evidence'][0]['page']))[-1:])
         for item in {i['id']:i for i in chosen}.values():
-            samples.append({'uf':key[0],'stage':key[1],'component':key[2],'item_id':item['id'],'source_id':item['source_id'],'page':item['evidence'][0]['page'],'code':item['code'],'literal_text_in_page':evidence_check(item,extracts[item['source_id']]),'actor_type':'automated','actor_id':'curriculos-abertos:deterministic-page-check','method':'stratified-hash-first-last-v1','scope':'Literal text/code location only; no visual table or pedagogical validation claimed','extraction_flags':item.get('extraction_flags',[])})
+            sample={'uf':key[0],'stage':key[1],'component':key[2],'item_id':item['id'],'source_id':item['source_id'],'page':item['evidence'][0]['page'],'code':item['code'],'literal_text_in_page':False,'actor_type':'automated','actor_id':'curriculos-abertos:deterministic-page-check','method':'stratified-hash-first-last-v1','scope':'Literal text/code location only; no visual table or pedagogical validation claimed','extraction_flags':item.get('extraction_flags',[])}
+            samples.append(sample);selected[item['source_id']].append((sample,item))
+    source_map={source['id']:source for source in (sources if sources is not None else load_sources())}
+    import pymupdf
+    for sid,records in selected.items():
+        source=source_map.get(sid,{})
+        path=safe_path(source['local_path']) if source.get('local_path') else None
+        if not path or not path.exists():
+            for sample,item in records:sample['validation_error']='Primary PDF is unavailable for exact region verification'
+            continue
+        if sha_file(path)!=extracts[sid].get('sha256'):raise ValueError(f'Sampled primary artifact changed: {sid}')
+        with pymupdf.open(path) as document:
+            for sample,item in records:
+                sample['literal_text_in_page']=evidence_check(item,extracts[sid],document)
+                sample['artifact_sha256']=extracts[sid]['sha256']
     return samples
 
 
 def ingest(args):
     sources=load_sources()
     if not sources: raise ValueError('No registered sources. Source inventory is required before ingestion.')
-    selected=[s for s in sources if (not args.source or s['id']==args.source) and (not args.uf or s['uf']==args.uf)]
+    targets=set(args.target_source_id or [])
+    missing_targets=targets-{s['id'] for s in sources}
+    if missing_targets:raise ValueError('Pinned source targets are not registered: '+', '.join(sorted(missing_targets)))
+    selected=[s for s in sources if (not args.source or s['id']==args.source) and (not args.uf or s['uf']==args.uf) and (not targets or s['id'] in targets)]
     if not selected: raise ValueError('Selected source/UF was not registered')
+    context=None
+    if args.base_artifact or args.base_publication:
+        if not args.base_artifact or not args.base_publication or not (args.source or args.uf or targets):raise ValueError('Incremental receipt requires --base-artifact, --base-publication and an explicit source/UF target')
+        if any(s['uf']=='BR' for s in selected):raise ValueError('National reference updates require a full dependent-corpus rebuild; BR cannot be a delta target')
+        from ingestion_context import read_national_context
+        context=read_national_context(ROOT,safe_path(args.base_artifact),args.base_publication,{s['id'] for s in selected})
     job_id=args.job_id or 'ingest-'+dt.datetime.now().strftime('%Y%m%dT%H%M%S')
     if not re.fullmatch(r'[A-Za-z0-9_-]{1,100}',job_id): raise ValueError('Invalid job ID')
     checkpoint_path=ROOT/'var/jobs'/f'{job_id}.json'
     checkpoint=json.loads(checkpoint_path.read_text()) if checkpoint_path.exists() else {'id':job_id,'created_at':now(),'completed':[],'errors':{},'state':'running'}
+    if context:
+        target_ids=sorted(s['id'] for s in selected)
+        if checkpoint.get('base_publication') not in (None,context['base_publication']) or checkpoint.get('base_artifact_sha256') not in (None,context['base_artifact_sha256']) or checkpoint.get('target_source_ids') not in (None,target_ids):raise ValueError('Job resume attempted with a different pinned base or source target')
+        checkpoint.update(base_publication=context['base_publication'],base_artifact=context['base_artifact'],base_artifact_sha256=context['base_artifact_sha256'],base_publication_sha256=context['base_publication_sha256'],target_source_ids=target_ids,context_source_ids=context['context_source_ids'])
+    if checkpoint.get('state')=='completed' and checkpoint.get('artifact') and checkpoint.get('artifact_sha256'):
+        from validate_artifact import validate_artifact
+        artifact_path=safe_path(checkpoint['artifact'])
+        validated=validate_artifact(ROOT,artifact_path)
+        if validated['artifact_sha256']!=checkpoint['artifact_sha256']:raise ValueError('Completed job artifact no longer matches its immutable receipt')
+        log('completed_job_replay',job_id=job_id,publication=checkpoint['publication'],artifact=checkpoint['artifact'],sha256=checkpoint['artifact_sha256'])
+        return 0
+    checkpoint.pop('error',None)
     checkpoint['state']='running'; write_json(checkpoint_path,checkpoint)
     downloader=SafeDownloader(sources)
     extracts={}
     for source in selected:
-        if source.get('include_in_corpus') is False: continue
+        if source.get('include_in_corpus') is False or source.get('publication_eligible') is False: continue
         if STOP:
             checkpoint['state']='paused';write_json(checkpoint_path,checkpoint);return 75
         try:
@@ -849,7 +1204,10 @@ def ingest(args):
                 if not cache.exists():
                     source['processing_error']='Local artifact acquired; extraction pending in batch worker'
                     continue
-                extracted=json.loads(cache.read_text())
+                extracted=read_extraction_cache(cache)
+                if extracted is None:
+                    source['processing_error']='Extraction cache checksum missing or invalid; reprocessing required'
+                    continue
                 if extracted.get('extraction_config_sha256')!=extraction_config_hash(source):
                     source['processing_error']='Extraction config changed; reprocessing required before packaging'
                     continue
@@ -869,8 +1227,9 @@ def ingest(args):
             write_json(checkpoint_path,checkpoint)
             log('source_failed',job_id=job_id,source_id=source['id'],error=str(error))
     # Always use all available cached sources for consistent national candidate, not only selected source.
-    for source in sources:
-        if source.get('include_in_corpus') is False: continue
+    if context and set(extracts)!={s['id'] for s in selected}:raise ValueError('Pinned source update is incomplete; no replacement receipt written. Missing targets: '+', '.join(sorted({s['id'] for s in selected}-set(extracts))))
+    for source in ([] if context else sources):
+        if source.get('include_in_corpus') is False or source.get('publication_eligible') is False: continue
         if source['id'] in extracts: continue
         local=source.get('local_path')
         if not local: continue
@@ -879,33 +1238,48 @@ def ingest(args):
         digest=sha_file(path)
         cached=ROOT/'data/extracted'/f'{digest}-{EXTRACTION_REVISION}.json'
         if cached.exists():
-            record=json.loads(cached.read_text())
-            if record.get('extraction_config_sha256')==extraction_config_hash(source):extracts[source['id']]=record
+            record=read_extraction_cache(cached)
+            if record and record.get('extraction_config_sha256')==extraction_config_hash(source):extracts[source['id']]=record
     items=[]
+    if context:
+        sources=selected+context['sources']
+    for source in sources:
+        extracted=extracts.get(source['id'])
+        if extracted:source['extraction']={'revision':extracted['extraction_revision'],'page_count':extracted['page_count'],'code_mentions':extracted['code_mentions'],'coded_items':extracted['coded_items'],'reconciliation_status':extracted['reconciliation_status'],'extraction_config_sha256':extracted.get('extraction_config_sha256'),'parser_fingerprint':extracted.get('parser_fingerprint'),'runtime':extracted.get('runtime'),'ocr_pending':extracted.get('ocr_pending'),'quality':extracted.get('quality')}
     for source_id,extracted in sorted(extracts.items()): items.extend(extracted['items'])
     if not items:raise ValueError('No valid extraction cache available; existing candidate/publication left untouched')
     items.extend(source_uncoded_items(sources,extracts))
     items=finalize_items(items,sources)
-    items=attach_hierarchy(items,sources)
+    if context:items.extend(context['items'])
+    items=attach_hierarchy(items,sources,skip_source_ids=context['context_source_ids'] if context else ())
     ids=[i['id'] for i in items]
     if len(ids)!=len(set(ids)): raise ValueError('Duplicate canonical item IDs detected')
+    if parser_fingerprint()!=LOADED_PARSER_FINGERPRINT:raise RuntimeError('Parser files changed before packaging; completed source caches preserved, restart the packaging process')
+    expected_producer=publication_fingerprint(ROOT/'data/schema'/f'{SCHEMA_VERSION}.json')
     relations=relations_for(items,sources)
-    coverage=coverage_for(sources,extracts,items,relations)
-    samples=stratified_samples(items,extracts)
+    reconciliation_reports=source_reconciliation_reports(sources,extracts,items)
+    coverage=coverage_for(sources,extracts,items,relations,reconciliation_reports)
+    samples=stratified_samples([item for item in items if item['source_id'] in extracts],extracts,sources)
     # Streamed, sharded distribution avoids a national string exceeding runtime limits.
     from distribution import write_publication
-    metadata={'schema_version':SCHEMA_VERSION,'created_at':checkpoint['created_at'],'extraction_revision':EXTRACTION_REVISION,'mapping_revision':MAPPING_REVISION,'schema_path':'data/schema/1.0.0.json','schema_sha256':sha_file(ROOT/'data/schema/1.0.0.json'),'sources':sources,'coverage':coverage,'publication_kind':'incomplete_documentary_candidate','national_release_ready':all(row['ready'] for row in coverage),'coverage_statement':'Extração real; completude e reconciliação são estados independentes. Seções documentais sem código não são habilidades inventadas.','changelog':[{'type':'initial_source_collection','description':'Primeira coleta destas edições, sem inventar histórico oficial anterior.'},{'type':'extraction_revision','revision':EXTRACTION_REVISION,'description':'Revisão identificada de extração/identificadores, regras documentadas e geometria. Não representa alteração oficial de currículo.'}],'verification':{'samples':samples,'verifier_type':'automated','human_pedagogical_review':False},'rights':{'code':'MIT','project_metadata':'CC0-1.0 only where rights are held by project','third_party_materials':'Original source rights retained; no blanket relicensing; source PDFs are not redistributed.','licensed_dataset':'bncc-dev/bncc-dados CC-BY-4.0 attribution retained on reused records.'}}
-    bundle,bundle_path,digest,pointer=write_publication(ROOT,metadata,items,relations)
+    metadata={'schema_version':SCHEMA_VERSION,'created_at':checkpoint['created_at'],'extraction_revision':EXTRACTION_REVISION,'mapping_revision':MAPPING_REVISION,'schema_path':f'data/schema/{SCHEMA_VERSION}.json','schema_sha256':sha_file(ROOT/'data/schema'/f'{SCHEMA_VERSION}.json'),'sources':sources,'coverage':coverage,'publication_kind':'incomplete_documentary_candidate','national_release_ready':all(row['ready'] for row in coverage),'coverage_statement':'Extração real; completude e reconciliação são estados independentes. Seções documentais sem código não são habilidades inventadas.','changelog':[{'type':'initial_source_collection','description':'Primeira coleta destas edições, sem inventar histórico oficial anterior.'},{'type':'extraction_revision','revision':EXTRACTION_REVISION,'description':'Revisão identificada de extração/identificadores, regras documentadas e geometria. Não representa alteração oficial de currículo.'}],'verification':{'samples':samples,'verifier_type':'automated','human_pedagogical_review':False},'rights':{'code':'MIT','project_metadata':'CC0-1.0 only where rights are held by project','third_party_materials':'Original source rights retained; no blanket relicensing; source PDFs are not redistributed.','licensed_dataset':'bncc-dev/bncc-dados CC-BY-4.0 attribution retained on reused records.'}}
+    metadata['build_context']={'parser_fingerprint':LOADED_PARSER_FINGERPRINT,'runtime':runtime_identity()}
+    metadata['producer_fingerprint']=expected_producer
+    metadata['source_reconciliation']=[{key:value for key,value in report.items() if key!='unaccounted_item_ids'} | {'unaccounted_item_count':len(report.get('unaccounted_item_ids',[]))} for report in reconciliation_reports.values()]
+    metadata['national_release_ready']=bool(metadata['national_release_ready'] and all(reconciliation_reports[source['id']].get('whole_source_reconciled') for source in sources if source.get('mandatory',True)))
+    if publication_fingerprint(ROOT/'data/schema'/f'{SCHEMA_VERSION}.json')!=expected_producer:raise RuntimeError('Generator or reconciliation gate changed during packaging; no candidate advertised, source caches preserved')
+    if context:metadata.update(publication_kind='source_update_receipt',base_publication=context['base_publication'],base_publication_sha256=context['base_publication_sha256'],base_artifact=context['base_artifact'],base_artifact_sha256=context['base_artifact_sha256'],context_publication=context['context_publication'],target_source_ids=sorted(s['id'] for s in selected),context_source_ids=context['context_source_ids'],national_release_ready=False)
+    bundle,bundle_path,digest,pointer=write_publication(ROOT,metadata,items,relations,advertise=not bool(context))
     identity=bundle['id']
-    write_json(ROOT/'data/coverage-manifest.json',{'publication':identity,'generated_at':now(),'national_release_ready':bundle['national_release_ready'],'ufs_ready':sorted({r['uf'] for r in coverage if all(row['ready'] for row in coverage if row['uf']==r['uf'])}),'coverage':coverage})
-    write_json(ROOT/'docs/evidence/data-samples.json',{'publication':identity,'samples':samples,'scope':'Automated literal page verification only; visual/documentary reconciliation remains separate.'})
-    write_json(ROOT/'docs/evidence/ingestion-summary.json',{'publication':identity,'bundle_sha256':digest,'distribution_format':bundle.get('format'),'compressed_bytes':pointer.get('total_compressed_bytes'),'decoded_bytes':pointer.get('total_decoded_bytes'),'sources_registered':len(sources),'sources_extracted':len(extracts),'items':len(items),'coded_items':sum(bool(i['code']) for i in items),'relations':len(relations),'errors':checkpoint['errors'],'national_release_ready':bundle['national_release_ready'],'created_at':now(),'job_id':job_id})
+    write_json((ROOT/'var/jobs'/f'{job_id}-coverage.json') if context else ROOT/'data/coverage-manifest.json',{'publication':identity,'generated_at':now(),'national_release_ready':bundle['national_release_ready'],'ufs_ready':sorted({r['uf'] for r in coverage if all(row['ready'] for row in coverage if row['uf']==r['uf'])}),'coverage':coverage})
+    write_json((ROOT/'var/jobs'/f'{job_id}-samples.json') if context else ROOT/'docs/evidence/data-samples.json',{'publication':identity,'samples':samples,'scope':'Automated literal page verification only; visual/documentary reconciliation remains separate.'})
+    write_json((ROOT/'var/jobs'/f'{job_id}-summary.json') if context else ROOT/'docs/evidence/ingestion-summary.json',{'publication':identity,'bundle_sha256':digest,'distribution_format':bundle.get('format'),'compressed_bytes':pointer.get('total_compressed_bytes'),'decoded_bytes':pointer.get('total_decoded_bytes'),'sources_registered':len(sources),'sources_extracted':len(extracts),'items':len(items),'coded_items':sum(bool(i['code']) for i in items),'relations':len(relations),'errors':checkpoint['errors'],'national_release_ready':bundle['national_release_ready'],'created_at':now(),'job_id':job_id})
     report=['# Cobertura documental real',f'\nPublicação candidata: `{identity}`. Fontes registradas: {len(sources)}; processadas: {len(extracts)}; registros: {len(items)}; relações de referência literal: {len(relations)}.', '\nUma extração não significa reconciliação. Nenhuma parte é marcada pronta só por conter registros. Códigos não determinam equivalência.', '\n| UF | Fontes | Itens codificados | EI/EF/EM | Reconciliação |','|---|---:|---:|---|---|']
     for uf in UFS:
         scoped=[s for s in sources if s['uf']==uf]
         stages=', '.join(stage+': '+str(sum(1 for i in items if i['uf']==uf and i['code'] and any(p['stage']==stage for p in i['positions']))) for stage in STAGES)
         report.append(f'| {uf} | {len(scoped)} | {sum(i["uf"]==uf and bool(i["code"]) for i in items)} | {stages} | pendente |')
-    (ROOT/'docs/data-coverage.md').write_text('\n'.join(report)+'\n')
+    ((ROOT/'var/jobs'/f'{job_id}-coverage.md') if context else ROOT/'docs/data-coverage.md').write_text('\n'.join(report)+'\n')
     checkpoint.update(state='completed_with_errors' if checkpoint['errors'] else 'completed',publication=identity,artifact=str(bundle_path.relative_to(ROOT)),artifact_sha256=digest,validation=pointer.get('validation'),finished_at=now());write_json(checkpoint_path,checkpoint)
     log('candidate_written',job_id=job_id,publication=identity,path=str(bundle_path.relative_to(ROOT)),sha256=digest,items=len(items),relations=len(relations),national_release_ready=bundle['national_release_ready'])
     return 1 if checkpoint['errors'] else 0
@@ -944,6 +1318,7 @@ def sources_check(args):
             if response['status']==304:
                 entry={**prior,'source_id':source['id'],'checked_at':now(),'status':'unchanged','http_status':304}
             else:
+                if b'%PDF-' not in response['body'][:1024]:raise ValueError('Official artifact endpoint returned non-PDF content (for example an HTML challenge); document unavailable for hash comparison.')
                 digest=sha_bytes(response['body']);baseline=prior.get('sha256') or source.get('sha256')
                 entry={'source_id':source['id'],'checked_at':now(),'sha256':digest,'baseline_sha256':baseline,'etag':response['headers'].get('etag'),'last_modified':response['headers'].get('last-modified'),'status':'content_changed_requires_review' if baseline and digest!=baseline else 'unchanged' if baseline else 'baseline_observed','http_status':200,'task_required':bool(baseline and digest!=baseline),'new_edition_confirmed':False}
         except InterruptedError:persist('paused');return 75
@@ -962,7 +1337,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     sub=parser.add_subparsers(dest='command',required=True)
     for name in ('ingest','sources-check','extract'):
-        action=sub.add_parser(name);action.add_argument('--source');action.add_argument('--uf',choices=UFS+['BR']);action.add_argument('--job-id');action.add_argument('--force',action='store_true');action.add_argument('--cached-only',action='store_true')
+        action=sub.add_parser(name);action.add_argument('--source');action.add_argument('--target-source-id',action='append');action.add_argument('--uf',choices=UFS+['BR']);action.add_argument('--job-id');action.add_argument('--force',action='store_true');action.add_argument('--cached-only',action='store_true');action.add_argument('--base-artifact');action.add_argument('--base-publication')
     args=parser.parse_args()
     try:
         if args.command=='extract':

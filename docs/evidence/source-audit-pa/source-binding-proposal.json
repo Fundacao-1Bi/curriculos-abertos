@@ -1,0 +1,33 @@
+{
+  "source_id": "pa-dcepa-ei-ef",
+  "artifact_sha256": "6b101a029e7fc40b10feb79969309251337eb01fc2491c9e0b38563094fa8ec5",
+  "adapter_sha256": "946e4f16523b127bbbf35e15947655bd52a6d890920cc3e7cce49753b35c424b",
+  "mutation_executed": false,
+  "mutation_owner": "parent data_north, serial manifest binding",
+  "proposed_merge": {
+    "uncoded_items_path": "data/manifests/uncoded/pa-dcepa-items.json",
+    "adapter_authority": {
+      "coded_learning_pages": [
+        73,
+        88
+      ],
+      "mode": "sidecar_authoritative_for_full_EI_objective_definitions_uncoded_paragraphs_experiences_and_local_EF_objectives",
+      "scope_note": "Suppress generic coded EI definitions in this physical range only, avoiding duplicate93parents. Keep generic EF Habilidades definitions as genuine definitions; local numeric objectives only reference their adjacent codes. Do not infer equivalence.",
+      "evidence": "docs/evidence/source-audit-pa/ADAPTER.md",
+      "review_status": "automated_primary_documentary_adapter_verified_not_UF_acceptance"
+    }
+  },
+  "must_not_apply": {
+    "generic_coded_reference_pages": [
+      112,
+      323
+    ],
+    "reason": "EF Habilidades column contains genuine published coded definitions; contextual references to those codes from local objectives do not invalidate the original definitions."
+  },
+  "invariants": [
+    "No sidecar forces inventory_complete/coverageReady/edition-current claims.",
+    "Do not merge PA620 alternative without independent edition/artifact comparison.",
+    "No human pedagogical review performed.",
+    "Source7 explicitly declares2nd revised edition2019 and approval resolution769/2018; current applicability and later normative complements remain separate investigation."
+  ]
+}

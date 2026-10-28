@@ -1,0 +1,87 @@
+{
+  "adapter_path": "data/manifests/uncoded/ro-itinerarios-2026-native-structure.json",
+  "adapter_sha256": "ba08814d55062873d00d470ff7f85fe945cb0ccd4435c3a35e67b3041cd2620d",
+  "command": "var/venv-pipeline/bin/python docs/evidence/source-audit-ro/build_normative_sidecars.py",
+  "engine": {
+    "pymupdf": "1.26.7",
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "evidence_check": {
+    "checked": 32,
+    "failed": 0,
+    "passed": 32
+  },
+  "expected_inventory": {
+    "annexes_declared_in_primary": 4,
+    "numbered_articles": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "physical_pages": 13,
+    "raster_regions_require_separate_verification": 1,
+    "student_learning_definitions": 0
+  },
+  "kinds": {
+    "artigo_normativo": 18,
+    "ato_normativo": 1,
+    "secao_normativa": 13
+  },
+  "missing_required_processing": [
+    "OCR and legible primary readback for raster annex matrices/figures. Native cells/articles are not a complete curriculum or complete annex inventory."
+  ],
+  "native_tables": [],
+  "raster_regions": [
+    {
+      "bbox": [
+        240.95925903320312,
+        28.5,
+        353.1905822753906,
+        164.13784790039062
+      ],
+      "height": 182,
+      "page": 1,
+      "status": "raster_content_requires_OCR_and_primary_readback_not_counted_as_parsed_matrix",
+      "width": 150,
+      "xref": 91
+    }
+  ],
+  "ready": false,
+  "reconciled": false,
+  "records": 32,
+  "schema_1_1_0": {
+    "checked": 32,
+    "failed": 0
+  },
+  "source_id": "ro-itinerarios-2026",
+  "source_modified": false,
+  "source_sha256": "5849beb6c06a70ff42c402277295e3afb67ac1586c47616a27abcf408bec1bd9",
+  "source_update_fields": {
+    "adapter_authority": {
+      "uncoded_page_sections_pages": [
+        1,
+        13
+      ]
+    },
+    "document_date": "2025-12-29",
+    "stages": [
+      "EM"
+    ],
+    "uncoded_items_path": "data/manifests/uncoded/ro-itinerarios-2026-native-structure.json"
+  }
+}

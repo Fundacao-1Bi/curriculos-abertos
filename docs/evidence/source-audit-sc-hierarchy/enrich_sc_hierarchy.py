@@ -4,19 +4,20 @@ Only literal, source-verifiable labels become structural nodes; no official code
 or grade is invented. Outputs are separate source wrappers, never input edits.
 """
 from pathlib import Path
-import json,re,hashlib,collections,sys,copy,argparse,datetime
+import json,re,hashlib,collections,sys,copy,argparse,datetime,os
 import fitz
 ROOT=Path(__file__).resolve().parents[3];OUT=ROOT/'docs/evidence/source-audit-sc-hierarchy';sys.path.insert(0,str(ROOT/'pipeline'))
 from ingest import normalize,evidence_check,source_uncoded_items
 from geometry import normalize_native_page
 REV='sc-literal-hierarchy-v1.0.0'
 INPUTS=['data/manifests/uncoded/sc-eief-items.json','data/manifests/uncoded/sc-em-items.json','data/manifests/uncoded/sc-trilhas-all-items.json']
-def dump(path,x):path.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n')
+def dump(path,x):
+ temp=path.with_name(path.name+'.'+str(os.getpid())+'.tmp');temp.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n');temp.replace(path)
 def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def bbox_union(boxes):return [min(b[0] for b in boxes),min(b[1] for b in boxes),max(b[2] for b in boxes),max(b[3] for b in boxes)]
 class Enricher:
  def __init__(self,source):
-  self.source=source;self.sid=source['id'];self.d=fitz.open(ROOT/source['local_path']);self.cache={};self.nodes={};self.failures=[];self.links=[]
+  self.source=source;self.sid=source['id'];self.d=fitz.open(ROOT/source['local_path']);self.cache={};self.nodes={};self.failures=[];self.findings=[];self.links=[]
   assert digest(ROOT/source['local_path'])==source['sha256']
  def page(self,pn):
   if pn not in self.cache:
@@ -106,12 +107,18 @@ class Enricher:
     if not ub:ub=next((x.get('bbox') for x in cells if normalize(title) in normalize(x.get('text',''))),None)
     parent=self.add_label('unit_title',title,parent,p,pn=up,box=ub,scope=['unit',cover,title,parent],required=True)
   elif self.sid=='sc-cb-em-caderno-3':
+   parent=self.add_label('document_section',c.get('section','Trilhas de Aprofundamento'),parent,rootpos,before=before,scope=['document_section'],required=True)
    for h in c.get('source_heading_path',[]):
     if h.get('page') and h.get('bbox') and (h['page']<pn or h['bbox'][3]<=y):parent=self.add_label('source_heading',h.get('title'),parent,rootpos,pn=h['page'],box=h['bbox'],scope=['heading',h['page'],h.get('title'),parent],required=True)
    for row in c.get('table_source_context') or []:
     for text,box in zip(row.get('texts',[]),row.get('cells',[])):
      if text and box and normalize(text).startswith('quadro'):
       tp=c.get('table_context_page') or c.get('column_header_page') or pn;parent=self.add_label('table_caption',text,parent,p,pn=tp,box=box,required=True)
+   unit_context=c.get('unit_context')
+   if unit_context:
+    latest_heading=max((h.get('page',0) for h in c.get('source_heading_path',[])),default=0)
+    if unit_context.get('page',0)>=latest_heading:parent=self.add_label('unit_heading',unit_context.get('title'),parent,p,pn=unit_context.get('page'),box=unit_context.get('bbox'),scope=['unit_heading',unit_context.get('page'),unit_context.get('title'),parent],required=True)
+    else:self.findings.append({'page':pn,'locator':leaf['locator'],'finding':'Older unit_context precedes current trail heading; retained on original leaf but not used as parent.','unit_context':unit_context,'current_heading_page':latest_heading})
    unit=c.get('unit_title');uid=c.get('unit_identifier');up=c.get('unit_title_page',pn)
    rows=c.get('table_source_context') or []
    if uid:
@@ -152,7 +159,7 @@ def run(include_c3=False):
   checksource=dict(manifest[sid],uncoded_items_path=str(path.relative_to(ROOT)));import_error=None
   try:imported=source_uncoded_items([checksource],{sid:extracted});assert len(imported)==len(nodes)+len(leaves)
   except Exception as ex:import_error=str(ex)
-  entry={'source_id':sid,'source_sha256':manifest[sid]['sha256'],'original_leaves':len(original),'enriched_leaves':len(leaves),'nodes':len(nodes),'role_counts':dict(collections.Counter(n['source_context']['structural_role'] for n in nodes)),'leaves_unchanged_except_parent_key':True,'all_parents_resolved':True,'no_cycles':True,'leaves_with_parent':sum(bool(r.get('parent_key')) for r in leaves),'literal_import_pass':import_error is None,'import_error':import_error,'unlocated_labels':e.failures,'output':str(path.relative_to(ROOT)),'output_sha256':digest(path)};report.append(entry);dump(OUT/f'{sid}-audit.json',entry);print(json.dumps({k:v for k,v in entry.items() if k!='unlocated_labels'},ensure_ascii=False),flush=True)
+  entry={'source_id':sid,'source_sha256':manifest[sid]['sha256'],'original_leaves':len(original),'enriched_leaves':len(leaves),'nodes':len(nodes),'role_counts':dict(collections.Counter(n['source_context']['structural_role'] for n in nodes)),'leaves_unchanged_except_parent_key':True,'all_parents_resolved':True,'no_cycles':True,'leaves_with_parent':sum(bool(r.get('parent_key')) for r in leaves),'literal_import_pass':import_error is None,'import_error':import_error,'unlocated_labels':e.failures,'hierarchy_findings':e.findings,'output':str(path.relative_to(ROOT)),'output_sha256':digest(path)};report.append(entry);dump(OUT/f'{sid}-audit.json',entry);print(json.dumps({k:v for k,v in entry.items() if k!='unlocated_labels'},ensure_ascii=False),flush=True)
  for fp in fingerprints:assert digest(ROOT/fp['path'])==fp['sha256'],'Input changed during run'
  dump(OUT/'hierarchy-report.json',{'revision':REV,'actor_type':'automated','input_fingerprints':fingerprints,'sources':report,'human_review_performed':False,'ready_uf':False})
 if __name__=='__main__':

@@ -1,0 +1,40 @@
+{
+  "source_id": "pa-dcepa-ei-ef",
+  "artifact_sha256": "6b101a029e7fc40b10feb79969309251337eb01fc2491c9e0b38563094fa8ec5",
+  "baseline_path": "data/manifests/uncoded/pa-dcepa-items.json",
+  "baseline_sha256": "946e4f16523b127bbbf35e15947655bd52a6d890920cc3e7cce49753b35c424b",
+  "additive_path": "data/manifests/uncoded/pa-dcepa-habilidades-v1-items.json",
+  "additive_sha256": "2ecc8449b8723bbc56264aa3eda770f8924bea778e79e2a9cbe762e6d06667ca",
+  "aggregate_path": "data/manifests/uncoded/pa-dcepa-habilidades-v1-combined-items.json",
+  "aggregate_sha256": "7294cebd0c8cd3008c7f9498312cd66268843aeabcbd94c4a158651cd7de9ed6",
+  "mutation_executed": false,
+  "mutation_owner": "parent data_north, serial Source binding",
+  "proposed_merge": {
+    "uncoded_items_path": "data/manifests/uncoded/pa-dcepa-habilidades-v1-combined-items.json",
+    "adapter_authority": {
+      "coded_learning_pages": [
+        73,
+        88
+      ],
+      "coded_learning_ranges": [
+        [
+          112,
+          323
+        ]
+      ],
+      "mode": "sidecar_authoritative_for_complete_EI_and_EF_published_definitions_and_local_units_in_explicit_disjoint_physical_ranges",
+      "scope_note": "Preserve frozen1972 baseline values and append2055own Habilidades definitions. Suppress generic coded duplicates only73–88 and112–323; retain gap89–111 and all documentary page sections. Own Habilidades remain habilidade, never demoted for association with left objectives.",
+      "evidence": "docs/evidence/source-audit-pa/habilidades-v1-ADAPTER.md",
+      "review_status": "automated_primary_scope_reconciled_not_human_pedagogical_or_UF_acceptance"
+    }
+  },
+  "expected_adapter_records": 4027,
+  "expected_new_definitions": 2055,
+  "do_not_apply": [
+    "Do not rewrite/delete frozen1972 baseline.",
+    "Do not use generic_coded_reference_pages to demote genuine EF Habilidades.",
+    "Do not broaden authority to73–323 across unreviewed89–111.",
+    "Do not count1543distinct literal codes as2055unique national skills or merge repeated source occurrences.",
+    "Do not mark whole-source/UF ready solely from this additive scope."
+  ]
+}

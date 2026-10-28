@@ -6,22 +6,31 @@
     },
     {
       "path": "data/manifests/uncoded/pr-extract.py",
-      "sha256": "3854c8e4a1e34ef9db63cd309ff18066a9108779bdc5bc1b05b14f8d657f9f04"
+      "sha256": "cc8e26a6fd92de840ce72ccfaa717adb30c27d694e26ab72bcb6dfc56cac2870"
+    },
+    {
+      "path": "data/manifests/uncoded/pr-importer-verify.py",
+      "sha256": "ec7e8fedf3eb15a0df1e2e9bd9568b2a30a247b603ce249dd214dde502596d82"
     },
     {
       "path": "data/manifests/uncoded/pr-verify.py",
-      "sha256": "abee6cb8bd4934d210f99c3df204ac08c5713602567e3d516419ef345b1c5289"
+      "sha256": "cd28976217cc65c110d35b95e08c909c4e2602a54b0c7fb311730e8bdf89d825"
     }
   ],
   "source_id": "pr-referencial-eief-2025",
   "source_sha256": "ce72aefb003c006d41e0912bc0744eaf2fb6dfca941d6de716293b593a495f46",
-  "output_sha256": "91073732d14d44f735ab000d6b5473a73e526d08b3c8a4edd19f55faba1c3ad3",
-  "status": "implemented_executed_verified_local_adapter",
+  "output_sha256": "55ead34e8c38e912c5eba83549c7fd92765375cdfb5efe0566d0f94af4c1ae00",
+  "status": "implemented_executed_verified_actual_central_importer",
   "pending": [
     "Independent agent audit",
     "Central pipeline ingestion/import and integrated journeys for this source",
     "Reconciliation of coded items and remaining mandatory PR sources"
   ],
   "remote_actions": false,
-  "human_review": false
+  "human_review": false,
+  "repair_evidence": [
+    "pr-span-repair-equivalence.json",
+    "pr-importer-verification.json"
+  ],
+  "current_candidate_frozen_for_J11": true
 }

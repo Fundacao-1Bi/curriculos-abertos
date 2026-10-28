@@ -1,0 +1,31 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:pe-current-inventory",
+  "observations": [
+    {
+      "source_id": "pe-atividades-complementares-d489fa8a",
+      "page": 5,
+      "private_render": "var/private-evidence/source-audit-pe-current/current-15-p5.png",
+      "finding": "Dois quadros de matriz interna para escolas35h e45h explicitam componentes, aulas e carga horária por1º/2º/3ºano. Na35h, Cultura Digital/Midiática aparece somente1º/2ºano e PTS somente3º. Na45h, os oito componentes aparecem nos três anos. Fonte mais específica que simples exemplo didático, mas base normativa do ato ainda pendente.",
+      "required_processing": "OCR ou transcrição geométrica da imagem: camada nativa só contém os títulos das duas tabelas."
+    },
+    {
+      "source_id": "pe-ifa-matriz-anexo-i-c4ba842e",
+      "pages": [
+        36,
+        37
+      ],
+      "finding": "Anexos ilustrativos declaram auxílio de NotebookLM e datas18/03/2026 e19/03/2026; datas de produção de partes, não atribuídas como edição ou publicação integral do caderno.",
+      "private_renders": [
+        "var/private-evidence/source-audit-pe-current/current-13-p36.png",
+        "var/private-evidence/source-audit-pe-current/current-13-p37.png"
+      ]
+    },
+    {
+      "scope": "12FGBcovers",
+      "private_render": "var/private-evidence/source-audit-pe-current/fgb-covers-contact.png",
+      "finding": "Todas as capas foram inspecionadas: identificam componente, FGB, Ensino Médio e anos1–3; não exibem ano editorial."
+    }
+  ],
+  "privacy_note": "Renders e PDFs mantidos em caminhos gitignored; evidência pública contém apenas locadores e observações."
+}

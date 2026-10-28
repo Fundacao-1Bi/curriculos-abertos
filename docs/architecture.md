@@ -22,3 +22,28 @@ src/db/client.ts exporta pool pg. Tabelas administrativas acordadas com agente d
 ## Escala: distribuição particionada
 
 ADR003 define `curriculos-abertos/sharded-v1`: manifesto+partesJSONL.gz, integridade por parte e publicação relacional imutável. Transporte público mantémRESTv1/MCP; exports são escritos em streaming pelo worker. O formato monolítico inicial permanece importável. Detalhes concretos e limites implementados ficam em docs/domain-model.md e docs/data-reconciliation.md.
+
+
+## Contratos de integração consolidados — 2026-10-28
+
+### Dados e proveniência
+
+As versões locais de JSON Schema são imutáveis. A versão1.0.0 permanece byte a byte preservada;1.1.0 permite `Source.artifact_url=null` quando o arquivo não foi localizado. Página de procedência não substitui URL de download. Versão/caminho/SHA devem concordar com o registro revisado e os bytes locais; importação e transcode validam o contrato antes de SQL, sem resolver schemas na rede. Compatibilidade legada sem pin é declarada apenas para1.0.0.
+
+Código nulo não afirma ausência de código na fonte. `official_code_present_in_source=true` com `code=null` representa leitura pendente; candidatos OCR não são exibidos como código confirmado. Ausência original exige evidência própria. A apresentação de datas preserva ano, ano/mês ou data completa; não inventa dia01 ou converte um calendário sem horário por fuso. Timestamps são apresentados no fuso America/Sao_Paulo. Os dados canônicos permanecem intactos.
+
+### Atualização por fonte
+
+O enqueue autenticado fixa a publicação pública base, seu SHA e as fontes-alvo sob lock. O worker exporta contexto nacional da mesma base, reprocessa o arquivo oficial conferido e recebe um artefato parcial técnico. Esse artefato não é importado como publicação global nem substitui o padrão.
+
+O domínio compõe um novo artefato global em partes: substitui somente as fontes-alvo e seus registros afetados; preserva metadados, itens, evidências, posições, relações e cobertura fora do alvo. Dependências cruzadas e recortes mistos têm verificações explícitas. Hashes por fonte são complementados por igualdade JSONB exata; não se aceita apenas contagem. O recibo global tem identidade e checksum próprios, separados do recibo bruto e do arquivo de referência.
+
+O job persiste sua preparação privada para pausa/restart/retomada. Replay deve conferir base/alvo/ator, artefatos, schema e recibos e reutilizar a mesma publicação, sem duplicação. A publicação autenticada usa comparação e troca: se o padrão já não for a base fixada, retorna conflito, preservando a preparação e a versão concorrente. Revisores e jobs automatizados não se tornam humanos pelo uso da administração.
+
+Provas reais preliminares: a base ca77(247fontes/38322itens/13007relações) gerou candidata global com38413itens ao substituir PE8→99; as246fontes fora do alvo foram preservadas. Isso não comprova cobertura nacional nem substitui a jornada final HTTP/worker/restart, instalação limpa ou recuperação.
+
+### Coleta e execução
+
+O parser e o runtime possuem fingerprints próprios; mudanças durante processamento abortam a confirmação. Caches produzidos em runtime diferente não são rotulados como execução do runtime atual. Probes paralelos usam snapshots de código imutáveis e preservam os caches nacionais. Após os helpers estabilizarem, o lote completo acessível será reexecutado e cotejado com inventários independentes. Caches antigos, integridade de chunks ou sucesso de OCR não comprovam completude editorial.
+
+Os assets CEDOC AP614/PB392 solicitados pelo usuário são EI/EF, sem crédito para EM. AP contém o mesmo conteúdo do snapshot MEC614 e é registrado como distribuição alternativa sem duplicar cobertura. PB392 possui alterações e escopo distintos do635; suas transcrições, IDs, contexto e evidências são separados, sem inferir vigência pelo catálogo.

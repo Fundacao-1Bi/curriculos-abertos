@@ -13,6 +13,7 @@ ROOT=Path(__file__).resolve().parents[3]
 PORTAL='https://portal.educacao.pe.gov.br/ensino-medio/'
 AUDIT=ROOT/'docs/evidence/source-audit-pe-current'
 RAW=ROOT/'data/raw/PE'
+PRIVATE=ROOT/'var/private-evidence/source-audit-pe-current'
 ALLOWED={'portal.educacao.pe.gov.br','educacao.pe.gov.br','www.educacao.pe.gov.br','drive.google.com','drive.usercontent.google.com'}
 def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
 def norm(t):return re.sub(r'\s+',' ',t).strip()
@@ -89,7 +90,7 @@ def download(entry):
     return {**entry,'status':'acquisition_failed','attempts':attempts}
 
 def main():
-    AUDIT.mkdir(parents=True,exist_ok=True);RAW.mkdir(parents=True,exist_ok=True)
+    AUDIT.mkdir(parents=True,exist_ok=True);RAW.mkdir(parents=True,exist_ok=True);PRIVATE.mkdir(parents=True,exist_ok=True)
     portal=portal_inventory();group=portal['groups'][0]
     entries=[];seen=set()
     for link in group['links']:
@@ -103,7 +104,13 @@ def main():
         for f in concurrent.futures.as_completed(future):
             r=f.result();results.append(r);print(json.dumps({'label':r['label'],'status':r['status'],'pages':r.get('pages'),'sha256':r.get('sha256')},ensure_ascii=False),flush=True)
     results.sort(key=lambda r:entries.index(next(e for e in entries if e['url']==r['url'])))
-    dump(AUDIT/'acquisition-results.json',results)
+    dump(PRIVATE/'acquisition-results-full.json',results)
+    public_results=[]
+    for result in results:
+        safe={k:v for k,v in result.items() if k!='first_pages'}
+        safe['early_year_mentions']=[{k:v for k,v in mention.items() if k!='preview'} for mention in result.get('early_year_mentions',[])]
+        public_results.append(safe)
+    dump(AUDIT/'acquisition-results.json',public_results)
     print(json.dumps({'selected':len(entries),'acquired':sum(r['status']=='acquired' for r in results),'failed':sum(r['status']!='acquired' for r in results)},ensure_ascii=False))
 
 if __name__=='__main__':main()

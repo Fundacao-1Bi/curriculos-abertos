@@ -1,0 +1,286 @@
+{
+  "adapter_path": "data/manifests/uncoded/ro-matrizes-2026-native-structure.json",
+  "adapter_sha256": "04788ff9cba9478e3adf1c1f573b89d6321f5acad932c31d027779938455c7e2",
+  "command": "var/venv-pipeline/bin/python docs/evidence/source-audit-ro/build_normative_sidecars.py",
+  "engine": {
+    "pymupdf": "1.26.7",
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "evidence_check": {
+    "checked": 42,
+    "failed": 0,
+    "passed": 42
+  },
+  "expected_inventory": {
+    "annexes_declared_in_primary": 11,
+    "numbered_articles": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      14,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "physical_pages": 11,
+    "raster_regions_require_separate_verification": 11,
+    "student_learning_definitions": 0
+  },
+  "kinds": {
+    "artigo_normativo": 20,
+    "ato_normativo": 1,
+    "matriz_curricular": 10,
+    "secao_normativa": 11
+  },
+  "missing_required_processing": [
+    "OCR and legible primary readback for raster annex matrices/figures. Native cells/articles are not a complete curriculum or complete annex inventory."
+  ],
+  "native_tables": [
+    {
+      "bbox": [
+        88.01042175292969,
+        699.50146484375,
+        553.3129272460938,
+        709.419921875
+      ],
+      "columns": 2,
+      "nonempty_native_cells": 2,
+      "page": 3,
+      "rows": 1,
+      "table": 0
+    },
+    {
+      "bbox": [
+        88.01042175292969,
+        723.650634765625,
+        276.8913269042969,
+        733.569091796875
+      ],
+      "columns": 2,
+      "nonempty_native_cells": 2,
+      "page": 3,
+      "rows": 1,
+      "table": 1
+    },
+    {
+      "bbox": [
+        88.01042175292969,
+        737.88134765625,
+        260.9356384277344,
+        747.7998046875
+      ],
+      "columns": 2,
+      "nonempty_native_cells": 2,
+      "page": 3,
+      "rows": 1,
+      "table": 2
+    },
+    {
+      "bbox": [
+        88.01042175292969,
+        752.112060546875,
+        534.7698364257812,
+        762.030517578125
+      ],
+      "columns": 2,
+      "nonempty_native_cells": 2,
+      "page": 3,
+      "rows": 1,
+      "table": 3
+    },
+    {
+      "bbox": [
+        88.01042175292969,
+        776.26123046875,
+        528.30126953125,
+        786.1796875
+      ],
+      "columns": 2,
+      "nonempty_native_cells": 2,
+      "page": 3,
+      "rows": 1,
+      "table": 4
+    }
+  ],
+  "raster_regions": [
+    {
+      "bbox": [
+        58.255210876464844,
+        28.499755859375,
+        544.6882934570312,
+        346.3199157714844
+      ],
+      "height": 590,
+      "page": 6,
+      "status": "raster_content_requires_OCR_and_primary_readback_not_counted_as_parsed_matrix",
+      "width": 903,
+      "xref": 111
+    },
+    {
+      "bbox": [
+        58.255210876464844,
+        354.0820007324219,
+        545.5506591796875,
+        643.0093994140625
+      ],
+      "height": 536,
+      "page": 6,
+      "status": "raster_content_requires_OCR_and_primary_readback_not_counted_as_parsed_matrix",
+      "width": 904,
+      "xref": 112
+    },
+    {
+      "bbox": [
+        58.255210876464844,
+        28.5,
+        548.5693359375,
+        324.3271789550781
+      ],
+      "height": 549,
+      "page": 7,
+      "status": "raster_content_requires_OCR_and_primary_readback_not_counted_as_parsed_matrix",
+      "width": 910,
+      "xref": 117
+    },
+    {
+      "bbox": [
+        58.255210876464844,
+        332.0893859863281,
+        544.6882934570312,
+        601.6112060546875
+      ],
+      "height": 500,
+      "page": 7,
+      "status": "raster_content_requires_OCR_and_primary_readback_not_counted_as_parsed_matrix",
+      "width": 903,
+      "xref": 118
+    },
+    {
+      "bbox": [
+        58.255210876464844,
+        28.49951171875,
+        565.3875122070312,
+        383.4058532714844
+      ],
+      "height": 659,
+      "page": 8,
+      "status": "raster_content_requires_OCR_and_primary_readback_not_counted_as_parsed_matrix",
+      "width": 941,
+      "xref": 123
+    },
+    {
+      "bbox": [
+        58.255210876464844,
+        391.1684875488281,
+        563.66259765625,
+        746.0748291015625
+      ],
+      "height": 659,
+      "page": 8,
+      "status": "raster_content_requires_OCR_and_primary_readback_not_counted_as_parsed_matrix",
+      "width": 938,
+      "xref": 124
+    },
+    {
+      "bbox": [
+        58.255210876464844,
+        28.49951171875,
+        566.2499389648438,
+        385.1308288574219
+      ],
+      "height": 662,
+      "page": 9,
+      "status": "raster_content_requires_OCR_and_primary_readback_not_counted_as_parsed_matrix",
+      "width": 943,
+      "xref": 129
+    },
+    {
+      "bbox": [
+        58.255210876464844,
+        392.89306640625,
+        565.3875122070312,
+        745.6432495117188
+      ],
+      "height": 655,
+      "page": 9,
+      "status": "raster_content_requires_OCR_and_primary_readback_not_counted_as_parsed_matrix",
+      "width": 941,
+      "xref": 130
+    },
+    {
+      "bbox": [
+        58.255210876464844,
+        28.49951171875,
+        548.1381225585938,
+        343.7322692871094
+      ],
+      "height": 585,
+      "page": 10,
+      "status": "raster_content_requires_OCR_and_primary_readback_not_counted_as_parsed_matrix",
+      "width": 909,
+      "xref": 135
+    },
+    {
+      "bbox": [
+        58.255210876464844,
+        351.4945983886719,
+        544.6882934570312,
+        667.58984375
+      ],
+      "height": 587,
+      "page": 10,
+      "status": "raster_content_requires_OCR_and_primary_readback_not_counted_as_parsed_matrix",
+      "width": 903,
+      "xref": 136
+    },
+    {
+      "bbox": [
+        58.25521469116211,
+        28.5,
+        547.7069091796875,
+        346.3201904296875
+      ],
+      "height": 590,
+      "page": 11,
+      "status": "raster_content_requires_OCR_and_primary_readback_not_counted_as_parsed_matrix",
+      "width": 908,
+      "xref": 141
+    }
+  ],
+  "ready": false,
+  "reconciled": false,
+  "records": 42,
+  "schema_1_1_0": {
+    "checked": 42,
+    "failed": 0
+  },
+  "source_id": "ro-matrizes-2026",
+  "source_modified": false,
+  "source_sha256": "168994c561367beb636c2c8e967a1e9b0aaa2d320fad98194f1aaae44459d879",
+  "source_update_fields": {
+    "adapter_authority": {
+      "uncoded_page_sections_pages": [
+        1,
+        11
+      ]
+    },
+    "document_date": "2026-01-06",
+    "stages": [
+      "EF"
+    ],
+    "uncoded_items_path": "data/manifests/uncoded/ro-matrizes-2026-native-structure.json"
+  }
+}

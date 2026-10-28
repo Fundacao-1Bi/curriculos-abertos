@@ -1,0 +1,42 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:ma-active-source-integration",
+  "at": "2026-10-28T15:04:50.815457+00:00",
+  "mode": "read_only_active_source_metadata_and_shared_importer",
+  "status": "source_wiring_and_literal_import_passed_cache_refresh_required",
+  "sources": [
+    {
+      "source_id": "ma-resolucao-211-2026-doe",
+      "records": 19,
+      "sidecar_sha256": "7e62414648b4172dcf6eae4d3f028046ab0eb0351ec93f7f28d9fe3963bfdc64",
+      "authority": {
+        "uncoded_page_sections_pages": [
+          20,
+          21
+        ]
+      },
+      "active_source_paths_and_expected_ids_match": true,
+      "stored_cache_matches_current_parser_configuration": false,
+      "reconciliation_path": "data/manifests/reconciliation/ma-resolucao-211-2026-doe.json",
+      "reconciliation_sha256": "c43dde5d428398971c179984f6020a11d30be795ea79c430b9ec52ca013e96e3"
+    },
+    {
+      "source_id": "ma-portaria-181-2026-recomposicao-doe",
+      "records": 76,
+      "sidecar_sha256": "e3e12025f883a2468ee8e15e03cc1dc9ccef9317c7a7e3bfd1f609146e4ab296",
+      "authority": {
+        "uncoded_page_sections_pages": [
+          31,
+          36
+        ]
+      },
+      "active_source_paths_and_expected_ids_match": true,
+      "stored_cache_matches_current_parser_configuration": false,
+      "reconciliation_path": "data/manifests/reconciliation/ma-portaria-181-2026-recomposicao-doe.json",
+      "reconciliation_sha256": "a4f9dcfceacefdd3ebfec5679d45bc427312d884367137a6f2b7a2115629b242"
+    }
+  ],
+  "total_records": 95,
+  "scope_limit": "Verifies active manifest wiring, literal sidecar importer and reconciliation IDs only. Does not prove national immutable candidate or database incorporation.",
+  "cache_configuration_status": "Both existing extracts differ from the current active Source/parser/runtime fingerprint; pipeline must re-extract before FULL. No stale cache claimed current."
+}

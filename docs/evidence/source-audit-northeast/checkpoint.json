@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-28T05:27:06.885603+00:00",
+  "at": "2026-10-28T17:41:09.134217+00:00",
   "actor_type": "automated",
   "owner": "/root/data_northeast",
   "scope_ufs": [
@@ -14,45 +14,91 @@
     "SE"
   ],
   "manifest": "data/manifests/northeast.json",
-  "sources": 64,
-  "selected_pdf_sources": 62,
-  "physical_pages_selected": 16099,
+  "sources": 90,
+  "selected_pdf_sources": 86,
+  "physical_pages_selected": 17486,
   "fully_reconciled_source_ids": [
-    "ba-resolucao-249-2026",
-    "pe-historia-pernambuco-2026",
-    "rn-portaria-11123-2025"
+    "ma-portaria-181-2026-recomposicao-doe"
   ],
   "fully_reconciled_ufs": 0,
   "inflight_owned_job": null,
   "completed_special_runs": {
     "rn_dcec_819": "Native+OCRcomplete,2197candidates/1386coded,8OCRpages,ocr_pendingFalse,25reviewwarnings; source not reconciled",
     "ce_resolution526_4": "OCR complete4p,9warnings,notreconciled",
-    "pe_history_8": "91records/92literalfragments/90parents,fullartifactreconciled",
-    "ba_resolution249_7": "45normativeparts/237lines exactlyonce,fullartifactreconciled",
-    "rn_portaria11123": "12normativeparts/24lines,onlysafeDOEpage21region,fullactreconciled",
+    "pe_history_8": "93whole records=91body+2frontmatter; sidecar91/92fragments/90parents remains correct forPDF3–8. Source authority[3,8]; current1.5config refresh/V2 pending",
+    "ba_resolution249_7": "45nodes/237source lines/current1.5V2 own passed49fragments; required DCRB2026missing, whole dependency closurefalse",
+    "rn_portaria11123": "12nodes/24lines/current1.5V2 ownpassed; Parecer160/DCECapproved identity not proven, dependency closurefalse",
     "al_pv_optional": "182occurrences,61literaltexts distinct globally,75tables,all182importer/finalizer checks pass; not normative denominator",
     "rn_ei_https": "Official HTTPS2018representation selected; exact native text/dimensions match177pages, word geometry differs; original retained, fresh177p v1.4cache completed",
-    "pi_ei_93": "25physicaltable objective-column adapters across21pages; independent93codes/prose verified93/93; EF/otherEIstructures still pending"
+    "pi_ei_93": "25physicaltable objective-column adapters across21pages; independent93codes/prose verified93/93; EF/otherEIstructures still pending",
+    "ne_integrated_probes": "27/27 checks passed across23pages:CE3,PE14,SE1,BA9; cache writes disabled, full reprocessing remains pending",
+    "pe_current_sources": "14officialparts/563pages;12FGBroles481p registry+fullcensus526referenceproofs,445national/457specific/60unknownmentions retained; editorialdatesnull, whole hierarchy/reconciliationpending",
+    "pb_authoritative_adapter": "2008items sidecar linked,1157/1157physicalcells,103EI,138indigenous,34rights,823anchors,0independenterrors; Math234,Source cache reprocess pending,notUFready",
+    "se_cluster_reader": "109filteredcodedcells:105nativeclipmatches+4visualsourceconfirmations of spurious clip i/l;unfilteredtrace21/109 due hidden template,fulltraceproofnotclaimed",
+    "ma_glyph_fidelity": "Full736p real isolated extractor,1932codedfragments/0literal failures,9regressions pass;sourceflags activated,shared reprocessing pending",
+    "current_ce_pi": "CE matrices2026V2 100p +Res52126p scanned +PIComputacaoEM2025 137p acquired/integrated; no completeness/legal date inferred",
+    "pb_cedoc_392": "1946items activated,1055/1055cells,99EI,1689EFanchors,120lists independently verified; user requested snapshot, current normative application unconfirmed",
+    "ma_normative": "95nodes/118fragments/726lines importer/finalizer+peer PASS; current1.5 cache and V2 own proof passed for both.211 related complement missing;181 dependency closure passed within selected act/annex",
+    "pi_normative": "Res18814public nodes/14image fragments/peer final PASS, true OCR and3local visual glyph corrections, active Source binding and cache refresh pending; Parecer190separately required/reconciliation pending",
+    "pe_correlation_roles": "All682p old-cache projection:2764bad candidates replaced2828literal references,0remaining literal errors;951primary and220unknown anchors retained; FULL still pending",
+    "al_glyph_subset": "195fragments/144cells/99pages independent native/ActualText proof, Source cluster flags restricted to reviewed pages; full reprocess pending",
+    "rn_role_fidelity": "4320literal fragments/4322source mentions conserved;773+48definitions and617+2882references. Full Trilhas uncoded adapter3851nodes+2930coded+26context=6807,21423fragments peerPASS, Source binding active; globalFULL1.5/V2 still pending",
+    "al_desdp_roles": "Full738p old-cache projection,119nativeheadergroups:105badcandidates replaced192literalcode references,0referencefailures;839primary/723unknown retained. Production module delivered; core hookup/full reprocess and uncodedDesDP hierarchy remain pending.",
+    "ba_current_acts": "BA266Computacao21p856939B/Parecer365included; BA125Historia2p673340B acquiredofficially,total1530279B; bothinFULL303,uncodednormativestructure/V2pending",
+    "v2_negative_probes": "10/10 in-memory tamper/missing/count/scope/legacy/dependencyflag cases correctly rejected; actual currentcache inputs, no writes to Sources/sidecars/caches"
   },
   "open_external_or_provenance": {
-    "pb_pcem": "HTTP200text/html challenge persists; no bypass",
+    "pb_pcem": "Browser renders original867p and official file view declaresapplication/pdf7.6MB, but normal viewer Download opens disabledSave dialog; original/newpublicdownload standardHTTP returnsHTML. Local artifact acquisition pending, edition/current adoption not inferred.",
     "ba_dcrb_em2026": "Approved for implementation2027, integral artifact not located;2022edition remains distinct",
     "al_recal_computacao": "89pprivate research copy acquired,primarydistributionidentitypending,publication_eligibleFalse",
-    "pe_ei": "Primarydistributionchain still must be fully confirmed"
+    "pe_ei": "Primarydistributionchain still must be fully confirmed",
+    "pe_in03_2026": "Cited by2IFA acquired sources; integral official act/matrices not acquired, public CEPE requests403, no bypass",
+    "ma_digital_complement": "Res211 approves required DCTMA digital complement; integral artifact not acquired; artifact_url null and mandatory research_pending"
   },
   "open_internal": {
     "source_reconciliation": "Most source parts remain pending; 0UFready, cannot attribute all incompleteness to external conditions",
-    "pe_em_p535": "Confirmed truncation: recovery treats secondprefixcode inside SAMEcell as neighborcolumn; report sentpipeline",
+    "pe_em_p535": "Joint-prefix14cells integrated/probes passed; new global reprocessing pending",
     "pi_ei_p58": "Resolved objective-column contamination across all93EIobjectives, not whole source completion",
-    "pb_uncoded_objectives": "Local objectives and many-to-many BNCCreferences still need typedstructure/relations; EF67PB01 requires source classification, preserve literalcode and6thyearheading",
-    "al_doe_page37": "Two-column crop source.page_regions declared; include_in_corpusFalse until pipeline probe+fullscope verification. Must staymandatory denominator",
-    "principal_159_anchor_audit": "Reapply current recheck after source caches settle; supports verified RN177 artifact-rebase and currentconfigchecks. Most sourceparts still pending.",
-    "algorithm_cache_provenance": "Pipelinecode modified duringv1.4nativebatch; ensure frozen algorithm/config trace before production claims"
+    "pb_uncoded_objectives": "635/2008 and392/1946 own adapters independently verified+bound; currentFULL/full source hierarchy/legal scope still pending",
+    "al_doe_page37": "Safe curated page_regions implemented and probe passed; include_in_corpus true, full act transcription/structure still pending",
+    "principal_159_anchor_audit": "Recheck pending after global frozen parser batch; prior159anchors now addressed by NEgeometry27checks,MA9regressions,PB2008adapter and4multipagechecks, not whole-source reconciliation",
+    "algorithm_cache_provenance": "Runtime1.5 frozen and FULL303inprogress. Four small acts read actual currentcache with exact Sourceconfig; PE93/PI14selective refresh needed,159anchors full recheck afterFULL.",
+    "correction_proposals": "Frozen1.5registry includesNEgeometry/RN/PE/AL roles/MA-AL-SEglyphreaders. CurrentFULLand159anchor recheck remain; no core edits byNE.",
+    "pe_atividades_complementares": "42p acquired, mandatory/support typology pending official matrix evidence; visible in pe-current-supplement.json, not silently excluded",
+    "additional_current_research": "NewBA266/125normative23p accessible andmandatory; structure/reconciliationpending. PIRes188adapter14peerpassed; Parecer190requiredseparately. MA digital,PEIN03external; newGPD/ACtypology preserved.",
+    "rn_uncoded": "3851node adapter bound,185own objectives,198UC/395modules/741cards/2930coded links peer verified; disjoint authority16–19and31–485 preserves26contexts. Current global FULL and V2 whole source remain pending",
+    "disk_capacity": "Global frozen-runtime FULL303sources executing via pipeline owner; no competing extraction or large artifacts launched by NE."
   },
   "next_commands": [
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/verify-reconciled-current-caches.py",
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/upgrade-reconciliation-v2.py",
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/verify-reconciliation-v2-negatives.py",
     "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/recheck.py",
-    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/verify-targeted-regressions.py",
-    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/verify-artifacts.py"
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/verify-artifacts.py",
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/build-factual-coverage.py"
   ],
-  "privacy": "OriginalPDFs,data/extracted and allsourcePNG renders remain gitignored/private; publicevidence hasmetadata,hashes,locators andlimitedtextnecessary."
+  "privacy": "OriginalPDFs,data/extracted and allsourcePNG renders remain gitignored/private; publicevidence hasmetadata,hashes,locators andlimitedtextnecessary.",
+  "collaborators": {
+    "MA": "/root/portal fidelity completed; /root/rs_adapter current acquisition and95normative nodes completed",
+    "PB": "/root/data_north comprehensive uncoded/coded adapter",
+    "PE_current": "/root/rs_adapter14parts acquired/integrated; extraction/reconciliation pending",
+    "RN_uncoded": "/root/rs_adapter objectives/hierarchy; /root/portal independent roles"
+  },
+  "selected_bytes": 667622099,
+  "factual_coverage": "docs/evidence/source-audit-northeast/factual-coverage-current.json",
+  "own_source_v2_verified_ids": [
+    "ba-resolucao-249-2026",
+    "rn-portaria-11123-2025",
+    "ma-resolucao-211-2026-doe",
+    "ma-portaria-181-2026-recomposicao-doe"
+  ],
+  "v2_gate_evidence": "docs/evidence/source-audit-northeast/reconciliation-v2-current-verification.json",
+  "global_pipeline_job": {
+    "owner": "/root/pipeline",
+    "id": "national-extraction-v150-20261028",
+    "revision": "page-cell-v1.5.0",
+    "snapshot_sources": 303,
+    "status": "running_as_last_observed",
+    "competing_NE_extraction": false
+  }
 }

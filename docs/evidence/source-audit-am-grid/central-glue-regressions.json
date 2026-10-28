@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "publication_modified": false,
+  "structured_cache_and_checksum_writes_mocked": true,
+  "ingest_sha256": "764c3101f9c379dab076467e620ac06e91840d95b1761dac63810ac6ab41a70d",
+  "checks": [
+    {
+      "source_id": "am-rca-em",
+      "page": 40,
+      "items": 9,
+      "assertions": {
+        "central_grid_called": true,
+        "canonical_cache_not_written": true,
+        "no_extra_source_page": true,
+        "no_generic_OCR_learning_retained": true,
+        "coordinates_transformed_once": true,
+        "no_false_reconciliation": true,
+        "next_row_not_appended": true
+      },
+      "passed": true,
+      "central_extraction_config_sha256": "dcdb7451ba884fae09ee7915a8229cd057fa8ca5e012a331c6f1e24c9aec8627",
+      "raw_OCR_sha256": "0c25422432c0179e9ba146a5a202f8a331f0b83bea1711f8e4e5f3219e8bf3fa"
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "page": 106,
+      "items": 5,
+      "assertions": {
+        "central_grid_called": true,
+        "canonical_cache_not_written": true,
+        "no_extra_source_page": true,
+        "no_generic_OCR_learning_retained": true,
+        "coordinates_transformed_once": true,
+        "no_false_reconciliation": true,
+        "object_column_not_appended": true
+      },
+      "passed": true,
+      "central_extraction_config_sha256": "54db451523a7d2d51e18da6615fb33d380463d144be3cc8a646db93cad414584",
+      "raw_OCR_sha256": "8c17f1f108620871954a04fa24f70d5efb3d1ea43d946e93431ee4d7ef991c09"
+    },
+    {
+      "source_id": "am-rca-ei",
+      "page": 69,
+      "items": 5,
+      "assertions": {
+        "central_grid_called": true,
+        "canonical_cache_not_written": true,
+        "no_extra_source_page": true,
+        "no_generic_OCR_learning_retained": true,
+        "coordinates_transformed_once": true,
+        "no_false_reconciliation": true,
+        "OCR_code_candidates_not_official": true
+      },
+      "passed": true,
+      "central_extraction_config_sha256": "d9bd19b35d770b039a7bbc256580cdc7f52e75e8dd617edf2f402a5992bf6a00",
+      "raw_OCR_sha256": "b25c42fdf1df823cc8f17f2039c75b259cce27f68b36bb3de3a8ca4087756205"
+    }
+  ]
+}

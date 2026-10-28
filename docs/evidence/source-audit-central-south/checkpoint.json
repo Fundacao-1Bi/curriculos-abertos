@@ -1,0 +1,285 @@
+{
+  "at": "2026-10-28T17:34:28.193172+00:00",
+  "actor_type": "automated",
+  "actor_id": "agent:data_central_south",
+  "scope_ufs": [
+    "DF",
+    "GO",
+    "MT",
+    "MS",
+    "PR",
+    "RS",
+    "SC"
+  ],
+  "source_integrity_evidence": "docs/evidence/source-audit-central-south/source-integrity.json",
+  "registered_sources": 58,
+  "acquired_sources": 55,
+  "mandatory_sources": 49,
+  "mandatory_acquired": 48,
+  "registered_adapter_inputs": [
+    {
+      "source_id": "go-dcgoem-portal-atual",
+      "path": "data/manifests/uncoded/go-em-uncoded-items.json",
+      "sha256": "dbc441a6e756f0e31c9010ec83fe37d7c472616f3565324b70fc954729144135",
+      "records": 443,
+      "kinds": {
+        "curso_tecnico": 3,
+        "itinerario_formativo": 4,
+        "unidade_curricular": 63,
+        "habilidade": 281,
+        "objetivo_aprendizagem": 92
+      }
+    },
+    {
+      "source_id": "df-cm-ei-2018",
+      "path": "data/manifests/uncoded/df-hierarchy-items.json",
+      "sha256": "3e7702d2eab40a233c5b0e93c7cde944b2fe0b9b1c4311f5c5657a63c093a60a",
+      "records": 678,
+      "kinds": {
+        "campo_experiencia": 5,
+        "ciclo_escolar": 5,
+        "grupo_etario": 15,
+        "objetivo_aprendizagem": 653
+      }
+    },
+    {
+      "source_id": "df-cm-ef-2018",
+      "path": "data/manifests/uncoded/df-hierarchy-items.json",
+      "sha256": "3e7702d2eab40a233c5b0e93c7cde944b2fe0b9b1c4311f5c5657a63c093a60a",
+      "records": 2387,
+      "kinds": {
+        "componente_curricular": 9,
+        "ciclo_escolar": 23,
+        "ano_escolar": 103,
+        "unidade_tematica": 242,
+        "linguagem_artistica": 4,
+        "objetivo_aprendizagem": 2006
+      }
+    },
+    {
+      "source_id": "rs-rcg-em",
+      "path": "data/manifests/uncoded/rs-em-items.json",
+      "sha256": "00894701a2788c6043080376864edfb2591ca1eecf31cfdc2b4fb9d23934911d",
+      "records": 121,
+      "kinds": {
+        "secao_normativa": 5,
+        "habilidade": 75,
+        "unidade_curricular": 11,
+        "objeto_conhecimento": 10,
+        "eixo_estruturante": 4,
+        "objetivo_aprendizagem": 12,
+        "orientacao_metodologica": 4
+      }
+    },
+    {
+      "source_id": "sc-cb-em-caderno-2",
+      "path": "data/manifests/uncoded/sc-hierarchy-sc-cb-em-caderno-2.json",
+      "sha256": "e554c874a6bc5d1ab41f273ea94cb0796dbc8de3d15945bfa65e01836f98e0d9",
+      "records": 6,
+      "kinds": {
+        "secao_normativa": 2,
+        "habilidade": 4
+      }
+    },
+    {
+      "source_id": "sc-cb-em-caderno-3",
+      "path": "data/manifests/uncoded/sc-hierarchy-sc-cb-em-caderno-3.json",
+      "sha256": "d9d270d4e1ea3ded6dd27f691c66e8a9a0c5c987559389a41ded0ca462c0037c",
+      "records": 1430,
+      "kinds": {
+        "secao_normativa": 276,
+        "estrutura_curricular": 111,
+        "habilidade": 948,
+        "objetivo_aprendizagem": 40,
+        "palavra_chave_habilidade": 55
+      }
+    },
+    {
+      "source_id": "sc-cb-em-caderno-4",
+      "path": "data/manifests/uncoded/sc-hierarchy-sc-cb-em-caderno-4.json",
+      "sha256": "0ef3a1d0a0c56d934374b5dd89bfaac807517baf37f080ffd09ae56756c8f4d8",
+      "records": 570,
+      "kinds": {
+        "secao_normativa": 170,
+        "objetivo_aprendizagem": 400
+      }
+    },
+    {
+      "source_id": "sc-cb-eief-2019-atual",
+      "path": "data/manifests/uncoded/sc-hierarchy-sc-cb-eief-2019-atual.json",
+      "sha256": "310111ae9f18732fd6a815ca2d903802a72f74ee6faf9cbb4e9306c694524255",
+      "records": 2114,
+      "kinds": {
+        "secao_normativa": 912,
+        "habilidade": 1110,
+        "objeto_conhecimento": 3,
+        "objetivo_aprendizagem": 89
+      }
+    },
+    {
+      "source_id": "sc-lingua-inglesa-ai",
+      "path": "data/manifests/uncoded/sc-li-ai-complete-items.json",
+      "sha256": "c5174064be009c797ec13334ff07894b552eac421f89184c7df9ff851701f904",
+      "records": 338,
+      "kinds": {
+        "secao_normativa": 158,
+        "habilidade": 143,
+        "estrutura_curricular": 31,
+        "competencia_especifica": 6
+      }
+    },
+    {
+      "source_id": "sc-resolucao-070-2025",
+      "path": "data/manifests/uncoded/sc-res070-items.json",
+      "sha256": "c0b03183c7c8c35bd65b0de1bcf095937b4dd0c2f834c7fe4a68d4d2afae19ae",
+      "records": 35,
+      "kinds": {
+        "secao_normativa": 35
+      }
+    },
+    {
+      "source_id": "pr-referencial-eief-2025",
+      "path": "data/manifests/uncoded/pr-items.json",
+      "sha256": "55ead34e8c38e912c5eba83549c7fd92765375cdfb5efe0566d0f94af4c1ae00",
+      "records": 3971,
+      "kinds": {
+        "objetivo_aprendizagem": 3896,
+        "orientacao_docente": 7,
+        "habilidade_local_sem_codigo": 68
+      }
+    },
+    {
+      "source_id": "df-competencias-digitais-vol2",
+      "path": "data/manifests/uncoded/df-digital-complete-context-df-competencias-digitais-vol2.json",
+      "sha256": "f40c428c23f93e11b386524b64e14ca05657647744889505157d6f623caae04a",
+      "records": 552,
+      "kinds": {
+        "volume_documental": 1,
+        "quadro_curricular": 2,
+        "grupo_etario": 4,
+        "eixo_computacao": 12,
+        "campo_experiencia": 57,
+        "objetivo_aprendizagem": 395,
+        "secao_normativa": 77,
+        "orientacao_metodologica": 4
+      }
+    },
+    {
+      "source_id": "df-competencias-digitais-vol3",
+      "path": "data/manifests/uncoded/df-digital-complete-context-df-competencias-digitais-vol3.json",
+      "sha256": "75a37ea54a1f1cd524ebb9ca9cd99b41dba16311e2d29c4a53910696f939d6ce",
+      "records": 1185,
+      "kinds": {
+        "volume_documental": 1,
+        "quadro_curricular": 9,
+        "ano_escolar": 9,
+        "eixo_computacao": 27,
+        "componente_curricular": 228,
+        "unidade_tematica": 25,
+        "objetivo_aprendizagem": 795,
+        "secao_normativa": 91
+      }
+    },
+    {
+      "source_id": "sc-cb-em-caderno-5",
+      "path": "data/manifests/uncoded/sc-em-ept-items.json",
+      "sha256": "0ceb6883d3c79ebe702e5685e533c77f616258ccb415bd11a65b99d4a7a43d1b",
+      "records": 4549,
+      "kinds": {
+        "objetivo_curso_geral": 34,
+        "objetivo_curso_especifico": 158,
+        "competencia_profissional": 448,
+        "objetivo_trilha": 198,
+        "objetivo_aprendizagem": 871,
+        "habilidade_componente_sem_codigo": 2840
+      }
+    },
+    {
+      "source_id": "sc-cb-em-caderno-6",
+      "path": "data/manifests/uncoded/sc-em-ept-items.json",
+      "sha256": "0ceb6883d3c79ebe702e5685e533c77f616258ccb415bd11a65b99d4a7a43d1b",
+      "records": 1765,
+      "kinds": {
+        "objetivo_aprendizagem": 34,
+        "competencia_geral_docente": 10,
+        "competencia_profissional": 12,
+        "habilidade_componente": 62,
+        "habilidade_componente_sem_codigo": 573,
+        "habilidade_eixo_sem_codigo": 184,
+        "habilidade_eixo": 733,
+        "secao_normativa": 157
+      }
+    },
+    {
+      "source_id": "ms-projeto-vida-orientacoes-2024",
+      "path": "data/manifests/uncoded/ms-pv-2024-items.json",
+      "sha256": "77eb9feaa003382a73741f36f3379d83aa945debae1cd128b7ad95513e781f08",
+      "records": 681,
+      "kinds": {
+        "etapa_curricular": 3,
+        "ano_escolar": 12,
+        "quadro_curricular": 73,
+        "habilidade": 141,
+        "pilar_estruturante": 226,
+        "objeto_conhecimento": 226
+      }
+    }
+  ],
+  "completed_documentary_reconciliation_sources": [
+    "sc-parecer-446-2025",
+    "sc-lingua-inglesa-ai",
+    "sc-resolucao-070-2025"
+  ],
+  "uf_ready_claim": false,
+  "helper_candidate": {
+    "path": "pipeline/rs_ms_geometry.py",
+    "sha256": "f85f208c88957570f85fc6802745fff53b358f58c3c2c46a99e5aec1bee16e4e",
+    "status": "full_original_anchor_literal_glyph_and_independent_verification_passed",
+    "rs_scope_anchor_denominator": 340,
+    "ms_scope_anchor_denominator": 1737,
+    "pipeline_glue_status": "core_glue_integrated; real finalizer preserves2077explicit positions; final national full-cache/sharded incorporation awaits owner run",
+    "evidence": "docs/evidence/source-audit-central-south/rs-ms-helper-full-verification.json",
+    "independent_verification_path": "docs/evidence/source-audit-rs-ms-independent/frozen-output-independent-verification.json",
+    "finalizer_position_verification_path": "docs/evidence/source-audit-central-south/rs-ms-real-finalizer-position-verification.json"
+  },
+  "external_blockers": [
+    {
+      "source_id": "ms-if-projeto-vida-2023",
+      "fact": "Official attachment page exposes PDF link, but ordinary direct request redirects to trailing-slash HTML homepage HTTP200,609771bytes, not PDF. No CAPTCHA/WAF cause inferred.2024complement does not replace mandatory2023source.",
+      "evidence": "docs/evidence/source-audit-central-south/ms2023-final-retry.json",
+      "latest_evidence": "docs/evidence/source-audit-central-south/ms2023-latest-ordinary-retry.json"
+    }
+  ],
+  "pending": [
+    "National sharded incorporation and full caches rebuilt after final parser/source freeze",
+    "Full documentary reconciliation of genuinely unverified mandatory parts, including fundamentals/rights/context and residual unencoded sections; two whole sources and threeMS2024organizer parts are closed",
+    "MS2023official PDF remains inaccessible; legitimate ordinary retries returnedHTML",
+    "Applicability/validity of official complements where primary text does not establish it"
+  ],
+  "completed_documentary_reconciliation_parts": {
+    "ms-projeto-vida-orientacoes-2024": [
+      "Organizador curricular - Ensino Fundamental Anos Iniciais",
+      "Organizador curricular - Ensino Fundamental Anos Finais",
+      "Organizador curricular - Ensino Medio"
+    ]
+  },
+  "reconciliation_gate": "reconciliation-gate/2.0",
+  "target_extraction_revision": "page-cell-v1.5.0",
+  "v2_gate_verification_paths": [
+    "docs/evidence/source-audit-sc/sc-parecer-v2-gate-verification.json",
+    "docs/evidence/source-audit-sc-li-complete/v2-gate-verification.json",
+    "docs/evidence/source-audit-sc/sc-res070-v2-gate-verification.json"
+  ],
+  "completed_documentary_reconciliation_parts_status": "V2 page-cell-v1.5.0 primary exact text checks681/681/827evidence passed; three parts reconciled, whole_source false for real fundamentals pending",
+  "ms_v2_parts_gate_path": "docs/evidence/source-audit-central-south/ms-pv-v2-parts-gate-verification.json",
+  "df_digital_context_status": {
+    "records": 1737,
+    "unchanged_baseline_records": 1565,
+    "new_contexts": 172,
+    "core_records_with_pages": 1948,
+    "whole_source_reconciled": false,
+    "pending": "Independent source-first paragraph boundary/ID denominator for1190organizer objectives; peer assigned byroot. All211native page IDs and texts match original, all1948literal checks pass.",
+    "evidence": "docs/evidence/source-audit-df-digital/whole-source-actual-core-import-verification.json"
+  },
+  "private_primary_images_manifest": "docs/evidence/source-audit-central-south/private-primary-image-inventory.json"
+}

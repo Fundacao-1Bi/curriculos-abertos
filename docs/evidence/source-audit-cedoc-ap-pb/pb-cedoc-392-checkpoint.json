@@ -1,0 +1,133 @@
+{
+  "at": "2026-10-28T15:09:40.382217+00:00",
+  "source_id": "pb-proposta-ei-ef-cedoc",
+  "artifact_sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+  "sidecar_path": "data/manifests/uncoded/pb-cedoc-392-items.json",
+  "sidecar_sha256": "4336a71d0676c2b48f1e363e06f4ef0368c0eba9e2980ff3fc3c79f2865f998b",
+  "state": "source392_adapter_complete_verified_and_bound_ready_for_consolidated_corpus",
+  "implemented": true,
+  "executed": true,
+  "verified": true,
+  "records": 1946,
+  "independent": {
+    "at": "2026-10-28T15:03:55.320178+00:00",
+    "source_id": "pb-proposta-ei-ef-cedoc",
+    "source_sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+    "sidecar_sha256": "4336a71d0676c2b48f1e363e06f4ef0368c0eba9e2980ff3fc3c79f2865f998b",
+    "runtime_pymupdf": "1.26.7",
+    "items": 1946,
+    "native_fragment_checks": 3477,
+    "semantic_and_source_text_checks": 1946,
+    "reference_fragment_checks": 1284,
+    "original_code_checks": 234,
+    "formatted_code_checks": 37,
+    "native_context_checks": 445,
+    "explicit_year_checks": 1704,
+    "independent_reference_set_checks": 1453,
+    "independent_physical_cells": 1055,
+    "cells_covered": 1055,
+    "independent_unit_anchors": 1689,
+    "unit_anchors_matched": 1689,
+    "independent_EI_objectives": 99,
+    "EI_matched": 99,
+    "EI_field_parents": 15,
+    "EI_age_parents": 3,
+    "EI_complete_right_sections": 6,
+    "independent_labelled_list_items": 120,
+    "labelled_lists_matched": 120,
+    "errors": 0,
+    "uncovered_cells": 0,
+    "status": "passed",
+    "actor_type": "automated",
+    "human_pedagogical_review": false
+  },
+  "native_selfcheck": {
+    "at": "2026-10-28T15:00:33.529363+00:00",
+    "source_id": "pb-proposta-ei-ef-cedoc",
+    "sidecar_sha256": "4336a71d0676c2b48f1e363e06f4ef0368c0eba9e2980ff3fc3c79f2865f998b",
+    "artifact_sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+    "items": 1946,
+    "native_fragments": 2193,
+    "failures": 0,
+    "missing_parents": [],
+    "word_order_differences": 0,
+    "status": "passed"
+  },
+  "integration": {
+    "at": "2026-10-28T15:06:23.386053+00:00",
+    "actor_type": "automated",
+    "source_id": "pb-proposta-ei-ef-cedoc",
+    "artifact_sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+    "sidecar_path": "data/manifests/uncoded/pb-cedoc-392-items.json",
+    "sidecar_sha256": "4336a71d0676c2b48f1e363e06f4ef0368c0eba9e2980ff3fc3c79f2865f998b",
+    "extraction_revision": "page-cell-v1.4.0",
+    "native_cache_sha256": "ab4d3a0e6cf0d0b46f90acb33a24ef91cf9b48cf884596a185f352b356163ee8",
+    "adapter_records_loaded": 1946,
+    "coded_literal_math_records": 234,
+    "soft_formatted_code_occurrences": 37,
+    "finalized_source_records": 2478,
+    "generic_code_definition_count": 0,
+    "kinds": {
+      "direito_aprendizagem": 111,
+      "secao_normativa": 32,
+      "objetivo_aprendizagem": 1554,
+      "principio_curricular": 15,
+      "habilidade": 234
+    },
+    "check": "real loader/finalizer preserve literal text/type/position/hierarchy/source_order/soft-code proof; no generic duplicates or EM positions",
+    "manifest_mutated": false,
+    "actual_manifest_binding_matches_verified_contract": true,
+    "manifest_binding_required": true,
+    "original_manifest_flags": {
+      "include_in_corpus": true,
+      "publication_eligible": true
+    },
+    "status": "passed"
+  },
+  "reproducibility": {
+    "at": "2026-10-28T15:02:01.677374+00:00",
+    "source_id": "pb-proposta-ei-ef-cedoc",
+    "status": "passed",
+    "check": "two successive source392 rebuilds produce identical bytes; original source635 adapter unchanged",
+    "before_sha256": "4336a71d0676c2b48f1e363e06f4ef0368c0eba9e2980ff3fc3c79f2865f998b",
+    "after_sha256": "4336a71d0676c2b48f1e363e06f4ef0368c0eba9e2980ff3fc3c79f2865f998b",
+    "source635_adapter_sha256": "b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514",
+    "python": "3.11.15"
+  },
+  "binding": {
+    "uncoded_items_path": "data/manifests/uncoded/pb-cedoc-392-items.json",
+    "adapter_authority": {
+      "generic_coded_reference_pages": [
+        1,
+        392
+      ],
+      "coded_learning_pages": [
+        234,
+        284
+      ]
+    },
+    "include_in_corpus": true,
+    "publication_eligible": true,
+    "processing_required": true,
+    "user_requested": true
+  },
+  "source635_preserved": {
+    "pdf_sha256": "b55786376874ab6a46064c44726d578d37f550a99a702069fe7065946ce26383",
+    "sidecar_sha256": "b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514"
+  },
+  "source_specific_implementation_pending": [],
+  "remaining_separate_work": {
+    "consolidated_corpus": "Pipeline owner executes/verifies consolidated candidate, import/API/portal/publication separately.",
+    "primary_distribution_chain_and_current_vigency": "Unconfirmed; distinct from completed required extraction.",
+    "human_pedagogical_review": "not_performed",
+    "EM_sources": "PB EM CAPTCHA and AP EM corrupted source remain separate external blockers; new assets are EI/EF."
+  },
+  "evidence": [
+    "docs/evidence/source-audit-cedoc-ap-pb/pb-cedoc-392-adapter.md",
+    "docs/evidence/source-audit-cedoc-ap-pb/pb-independent-392-acceptance.md",
+    "docs/evidence/source-audit-cedoc-ap-pb/pb-independent-392-verification-summary.json",
+    "docs/evidence/source-audit-cedoc-ap-pb/pb-cedoc-392-selfcheck.json",
+    "docs/evidence/source-audit-cedoc-ap-pb/pb-cedoc-392-integration-check.json",
+    "docs/evidence/source-audit-cedoc-ap-pb/pb-cedoc-392-reproducibility.json"
+  ]
+}

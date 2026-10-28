@@ -1,0 +1,1 @@
+{'passed': True, 'unique_pdf_fragments': 1036, 'native_literal_fragment_failures': 0, 'trace_fragment_failures': 0, 'position_verified': 2513, 'position_failures': 0, 'all_canonical_fields_preserved': True}

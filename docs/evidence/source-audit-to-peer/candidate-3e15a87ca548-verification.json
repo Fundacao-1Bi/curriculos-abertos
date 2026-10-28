@@ -1,0 +1,65 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:independent-to-peer",
+  "human_review": false,
+  "executed_at": "2026-10-28T17:32:52.480744+00:00",
+  "source_id": "to-dct-ei",
+  "original_sha256": "42b3e65fce43bf993518bb6e0426d90ab8069c5ec319906b1ffcdbc87d35d3bc",
+  "candidate": "data/manifests/uncoded/to-ei-rights-v3-items.json",
+  "candidate_sha256": "3e15a87ca5489c9afd5b6aca6e9aa2970e0ff6fe391d32fe168534ac9e1beeab",
+  "candidate_record_count": 359,
+  "denominators": {
+    "objectives": 93,
+    "detail_cells": 93,
+    "experience_cells": 93,
+    "field_specific_rights": 30,
+    "explicit_fields": 5,
+    "explicit_age_headers": 15
+  },
+  "comparison": {
+    "errors": [],
+    "checked": {
+      "full_right_definitions": 30,
+      "right_labels_only": 30,
+      "campo_experiencia": 5,
+      "grupo_etario": 15,
+      "objetivo_aprendizagem": 93,
+      "detalhamento_objetivo": 93,
+      "experiencia_sugerida": 93
+    }
+  },
+  "remaining_findings": [],
+  "production_loader_finalizer_schema": {
+    "loaded": 359,
+    "finalized": 359,
+    "unique_ids": 359,
+    "production_evidence_check_passed": 359,
+    "schema_errors": []
+  },
+  "controlled_negatives": [
+    {
+      "case": "same_text_and_age_label_borrowed_other_field",
+      "blocked": true
+    },
+    {
+      "case": "truncated_text_and_excerpt",
+      "blocked": true
+    },
+    {
+      "case": "duplicate_real_record",
+      "blocked": true
+    },
+    {
+      "case": "real_child_assigned_other_valid_objective_parent",
+      "blocked": true
+    }
+  ],
+  "whole_source_reconciled": false,
+  "uf_ready": false,
+  "result": "verified_candidate_scope_with_documentary_gap",
+  "limits": [
+    "Original chapters, normative prose and references outside organisers were read but are not individually reconciled by this organiser-only candidate.",
+    "Right labels are distinct from the 30 field-specific full definitions; full definitions checked: 30/30.",
+    "No SourceWholeV2 receipt, human approval, publication import or UF readiness is asserted."
+  ]
+}

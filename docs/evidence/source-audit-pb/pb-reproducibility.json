@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-28T13:59:47.477920+00:00",
+  "source_id": "pb-proposta-ei-ef",
+  "actor_type": "automated",
+  "status": "passed",
+  "check": "two successive source-specific rebuilds produce identical sidecar bytes",
+  "before": {
+    "data/manifests/uncoded/pb-eief-items.json": "b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514",
+    "data/manifests/uncoded/pb-eief-indigenous.json": "98022b5d4795ac6da5fcf67f4a5a09df41552c184f40b0dd9a5973ab1a161dd9"
+  },
+  "after": {
+    "data/manifests/uncoded/pb-eief-items.json": "b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514",
+    "data/manifests/uncoded/pb-eief-indigenous.json": "98022b5d4795ac6da5fcf67f4a5a09df41552c184f40b0dd9a5973ab1a161dd9"
+  },
+  "python": "3.11.15"
+}

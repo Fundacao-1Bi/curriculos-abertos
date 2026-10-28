@@ -1,0 +1,17 @@
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+2026-10-28 16:46:43.709 UTC [1] LOG:  starting PostgreSQL 17.11 (Debian 17.11-1.pgdg12+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit
+2026-10-28 16:46:43.709 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-10-28 16:46:43.709 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-10-28 16:46:43.711 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-10-28 16:46:43.714 UTC [29] LOG:  database system was interrupted; last known up at 2026-10-28 15:28:16 UTC
+2026-10-28 16:46:43.977 UTC [29] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-28 16:46:43.978 UTC [29] LOG:  redo starts at 0/BEB235A8
+2026-10-28 16:46:43.982 UTC [29] LOG:  invalid record length at 0/BEB301E8: expected at least 24, got 0
+2026-10-28 16:46:43.982 UTC [29] LOG:  redo done at 0/BEB301C0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-28 16:46:43.988 UTC [27] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-28 16:46:44.003 UTC [27] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.004 s, total=0.017 s; sync files=8, longest=0.001 s, average=0.001 s; distance=51 kB, estimate=51 kB; lsn=0/BEB301E8, redo lsn=0/BEB301E8
+2026-10-28 16:46:44.012 UTC [1] LOG:  database system is ready to accept connections
+2026-10-28 16:47:00.667 UTC [66] ERROR:  column "version" does not exist at character 469
+2026-10-28 16:47:00.667 UTC [66] STATEMENT:  SELECT json_build_object($$server_version$$,version(),$$in_recovery$$,pg_is_in_recovery(),$$publication$$,p.id,$$sha256$$,p.sha256,$$items$$,(SELECT count(*) FROM items WHERE publication_id=p.id),$$relations$$,(SELECT count(*) FROM relations WHERE publication_id=p.id),$$sources$$,(SELECT count(*) FROM sources WHERE publication_id=p.id)) FROM current_publication c JOIN publications p ON p.id=c.publication_id; SELECT row_to_json(m) FROM schema_migrations m ORDER BY version;
+2026-10-28 16:51:43.041 UTC [27] LOG:  checkpoint starting: time
+2026-10-28 16:51:43.468 UTC [27] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.412 s, sync=0.009 s, total=0.427 s; sync files=26, longest=0.002 s, average=0.001 s; distance=196 kB, estimate=196 kB; lsn=0/BEB61360, redo lsn=0/BEB61308

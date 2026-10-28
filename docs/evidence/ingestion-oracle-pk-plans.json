@@ -1,0 +1,137 @@
+{
+  "at": "2026-10-28T15:24:14.538Z",
+  "explain_only": true,
+  "plans": {
+    "old-null-safe-pk": [
+      {
+        "Plan": {
+          "Node Type": "Limit",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Startup Cost": 0,
+          "Total Cost": 7582.43,
+          "Plan Rows": 1,
+          "Plan Width": 51,
+          "Plans": [
+            {
+              "Node Type": "Nested Loop",
+              "Parent Relationship": "Outer",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Join Type": "Left",
+              "Startup Cost": 0,
+              "Total Cost": 291036421.55,
+              "Plan Rows": 38383,
+              "Plan Width": 51,
+              "Inner Unique": false,
+              "Join Filter": "(NOT (a.id IS DISTINCT FROM b.id))",
+              "Filter": "((a.publication_id IS NULL) OR (a.uf IS DISTINCT FROM b.uf) OR (a.curriculum_id IS DISTINCT FROM b.curriculum_id) OR (a.source_id IS DISTINCT FROM b.source_id) OR (a.code IS DISTINCT FROM b.code) OR (a.text IS DISTINCT FROM b.text) OR (a.normalized_text IS DISTINCT FROM b.normalized_text) OR (a.kind IS DISTINCT FROM b.kind) OR (a.positions IS DISTINCT FROM b.positions) OR (a.evidence IS DISTINCT FROM b.evidence) OR (a.payload IS DISTINCT FROM b.payload))",
+              "Plans": [
+                {
+                  "Node Type": "Seq Scan",
+                  "Parent Relationship": "Outer",
+                  "Parallel Aware": false,
+                  "Async Capable": false,
+                  "Relation Name": "items",
+                  "Alias": "b",
+                  "Startup Cost": 0,
+                  "Total Cost": 31336.95,
+                  "Plan Rows": 38383,
+                  "Plan Width": 1228,
+                  "Filter": "((source_id <> ALL ('{pe-historia-pernambuco-2026}'::text[])) AND (publication_id = 'ca-77fb8076598b567e1ba3'::text))"
+                },
+                {
+                  "Node Type": "Materialize",
+                  "Parent Relationship": "Inner",
+                  "Parallel Aware": false,
+                  "Async Capable": false,
+                  "Startup Cost": 0,
+                  "Total Cost": 37384.81,
+                  "Plan Rows": 38245,
+                  "Plan Width": 1268,
+                  "Plans": [
+                    {
+                      "Node Type": "Seq Scan",
+                      "Parent Relationship": "Outer",
+                      "Parallel Aware": false,
+                      "Async Capable": false,
+                      "Relation Name": "items",
+                      "Alias": "a",
+                      "Startup Cost": 0,
+                      "Total Cost": 31142.59,
+                      "Plan Rows": 38245,
+                      "Plan Width": 1268,
+                      "Filter": "(publication_id = 'ca-update-030922b2b405195b333a3e97b0e39be9'::text)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "indexed-nonnull-pk": [
+      {
+        "Plan": {
+          "Node Type": "Limit",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Startup Cost": 0.84,
+          "Total Cost": 4.19,
+          "Plan Rows": 1,
+          "Plan Width": 51,
+          "Plans": [
+            {
+              "Node Type": "Merge Join",
+              "Parent Relationship": "Outer",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Join Type": "Left",
+              "Startup Cost": 0.84,
+              "Total Cost": 128632.83,
+              "Plan Rows": 38383,
+              "Plan Width": 51,
+              "Inner Unique": true,
+              "Merge Cond": "(b.id = a.id)",
+              "Filter": "((a.publication_id IS NULL) OR (a.uf IS DISTINCT FROM b.uf) OR (a.curriculum_id IS DISTINCT FROM b.curriculum_id) OR (a.source_id IS DISTINCT FROM b.source_id) OR (a.code IS DISTINCT FROM b.code) OR (a.text IS DISTINCT FROM b.text) OR (a.normalized_text IS DISTINCT FROM b.normalized_text) OR (a.kind IS DISTINCT FROM b.kind) OR (a.positions IS DISTINCT FROM b.positions) OR (a.evidence IS DISTINCT FROM b.evidence) OR (a.payload IS DISTINCT FROM b.payload))",
+              "Plans": [
+                {
+                  "Node Type": "Index Scan",
+                  "Parent Relationship": "Outer",
+                  "Parallel Aware": false,
+                  "Async Capable": false,
+                  "Scan Direction": "Forward",
+                  "Index Name": "items_pkey",
+                  "Relation Name": "items",
+                  "Alias": "b",
+                  "Startup Cost": 0.42,
+                  "Total Cost": 63687.08,
+                  "Plan Rows": 38383,
+                  "Plan Width": 1228,
+                  "Index Cond": "(publication_id = 'ca-77fb8076598b567e1ba3'::text)",
+                  "Filter": "(source_id <> ALL ('{pe-historia-pernambuco-2026}'::text[]))"
+                },
+                {
+                  "Node Type": "Index Scan",
+                  "Parent Relationship": "Inner",
+                  "Parallel Aware": false,
+                  "Async Capable": false,
+                  "Scan Direction": "Forward",
+                  "Index Name": "items_pkey",
+                  "Relation Name": "items",
+                  "Alias": "a",
+                  "Startup Cost": 0.42,
+                  "Total Cost": 63462.83,
+                  "Plan Rows": 38245,
+                  "Plan Width": 1268,
+                  "Index Cond": "(publication_id = 'ca-update-030922b2b405195b333a3e97b0e39be9'::text)"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

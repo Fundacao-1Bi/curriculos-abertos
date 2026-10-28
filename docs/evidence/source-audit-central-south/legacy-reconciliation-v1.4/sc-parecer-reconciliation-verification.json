@@ -1,0 +1,60 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:data_central_south",
+  "source_id": "sc-parecer-446-2025",
+  "artifact_sha256": "a21825e9fa87d637f8c86665896651b1075d86fe2051fdb7cef89a8198cb932f",
+  "extraction_revision": "page-cell-v1.4.0",
+  "cache_sha256": "c702a1196dbee062d2978ab11ba0f484656fb2bc2142141ac7ac65a8aa101756",
+  "denominator_path": "docs/evidence/source-audit-sc/sc-parecer-independent-denominator.json",
+  "checks": [
+    {
+      "page": 1,
+      "id": "ca:sc-parecer-446-2025:838c864dc64d6f13d346",
+      "native_token_count": 418,
+      "whole_page_token_multiset_equal": true,
+      "literal_evidence_check": true,
+      "documentary_type_correct": true,
+      "explicit_document_scope_position_correct": true
+    },
+    {
+      "page": 2,
+      "id": "ca:sc-parecer-446-2025:b27d16cbe3e0ae2bd0e2",
+      "native_token_count": 375,
+      "whole_page_token_multiset_equal": true,
+      "literal_evidence_check": true,
+      "documentary_type_correct": true,
+      "explicit_document_scope_position_correct": true
+    },
+    {
+      "page": 3,
+      "id": "ca:sc-parecer-446-2025:512283748e1b551cf727",
+      "native_token_count": 519,
+      "whole_page_token_multiset_equal": true,
+      "literal_evidence_check": true,
+      "documentary_type_correct": true,
+      "explicit_document_scope_position_correct": true
+    },
+    {
+      "page": 4,
+      "id": "ca:sc-parecer-446-2025:eef91dbcb14003365c58",
+      "native_token_count": 146,
+      "whole_page_token_multiset_equal": true,
+      "literal_evidence_check": true,
+      "documentary_type_correct": true,
+      "explicit_document_scope_position_correct": true
+    },
+    {
+      "page": 5,
+      "id": "ca:sc-parecer-446-2025:cc75bb6a1d31ef2fb9a6",
+      "native_token_count": 139,
+      "whole_page_token_multiset_equal": true,
+      "literal_evidence_check": true,
+      "documentary_type_correct": true,
+      "explicit_document_scope_position_correct": true
+    }
+  ],
+  "expected_count": 5,
+  "verified_count": 5,
+  "findings": [],
+  "scope": "This five-page legal opinion only; no SC UF readiness, no referenced-resolution completeness or cryptographic signature validity claimed."
+}

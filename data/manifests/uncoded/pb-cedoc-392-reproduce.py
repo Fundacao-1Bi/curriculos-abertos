@@ -1,0 +1,6 @@
+"""Prove byte determinism of the source392 adapter without touching source635."""
+from pathlib import Path
+import subprocess,hashlib,json,sys,datetime
+ROOT=Path(__file__).resolve().parents[3];path=ROOT/'data/manifests/uncoded/pb-cedoc-392-items.json';before=hashlib.sha256(path.read_bytes()).hexdigest();old=ROOT/'data/manifests/uncoded/pb-eief-items.json';old_before=hashlib.sha256(old.read_bytes()).hexdigest()
+subprocess.run([sys.executable,str(ROOT/'data/manifests/uncoded/pb-cedoc-392-extract.py')],cwd=ROOT,check=True);after=hashlib.sha256(path.read_bytes()).hexdigest();assert before==after;assert hashlib.sha256(old.read_bytes()).hexdigest()==old_before=='b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514'
+r={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'source_id':'pb-proposta-ei-ef-cedoc','status':'passed','check':'two successive source392 rebuilds produce identical bytes; original source635 adapter unchanged','before_sha256':before,'after_sha256':after,'source635_adapter_sha256':old_before,'python':sys.version.split()[0]};(ROOT/'docs/evidence/source-audit-cedoc-ap-pb/pb-cedoc-392-reproducibility.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n');print(r)

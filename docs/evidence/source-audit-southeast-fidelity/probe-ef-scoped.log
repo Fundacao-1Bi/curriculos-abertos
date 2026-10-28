@@ -1,0 +1,30 @@
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+{"time": "2026-10-28T14:28:44.044580+00:00", "event": "extract_complete", "source_id": "es-curr-culo-es-2019-vol-02-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-da-natureza-e-matem-tica-m", "pages": 1, "items": 4, "warnings": 0}
+es-curr-culo-es-2019-vol-02-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-da-natureza-e-matem-tica-m coded 3 failed 0 changes 0
+{"time": "2026-10-28T14:28:44.217406+00:00", "event": "extract_complete", "source_id": "es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso", "pages": 1, "items": 6, "warnings": 0}
+es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso coded 5 failed 0 changes 0
+{"time": "2026-10-28T14:28:44.520998+00:00", "event": "extract_complete", "source_id": "es-curr-culo-es-2019-vol-04-ensino-fundamental-anos-iniciais-rea-de-linguagens-arte-e-educa-o-f-sica-mi", "pages": 1, "items": 1, "warnings": 0}
+es-curr-culo-es-2019-vol-04-ensino-fundamental-anos-iniciais-rea-de-linguagens-arte-e-educa-o-f-sica-mi coded 0 failed 0 changes 0
+{"time": "2026-10-28T14:28:44.612591+00:00", "event": "extract_complete", "source_id": "es-curr-culo-es-2019-vol-05-ensino-fundamental-anos-iniciais-rea-de-linguagens-l-ngua-portuguesa-miolo", "pages": 1, "items": 1, "warnings": 0}
+es-curr-culo-es-2019-vol-05-ensino-fundamental-anos-iniciais-rea-de-linguagens-l-ngua-portuguesa-miolo coded 0 failed 0 changes 0
+{"time": "2026-10-28T14:28:44.731823+00:00", "event": "extract_complete", "source_id": "es-curr-culo-es-2020-vol-06-ensino-fundamental-anos-finais-rea-de-ci-ncias-da-natureza-e-matem-tica-mio", "pages": 1, "items": 4, "warnings": 0}
+es-curr-culo-es-2020-vol-06-ensino-fundamental-anos-finais-rea-de-ci-ncias-da-natureza-e-matem-tica-mio coded 3 failed 0 changes 0
+{"time": "2026-10-28T14:28:45.042670+00:00", "event": "extract_complete", "source_id": "es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m", "pages": 1, "items": 3, "warnings": 0}
+es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m coded 2 failed 0 changes 0
+{"time": "2026-10-28T14:28:45.246079+00:00", "event": "extract_complete", "source_id": "es-curr-culo-es-2020-vol-08-ensino-fundamental-anos-finais-rea-de-linguagens-arte-educa-o-f-sica-e-l-ng", "pages": 1, "items": 1, "warnings": 0}
+es-curr-culo-es-2020-vol-08-ensino-fundamental-anos-finais-rea-de-linguagens-arte-educa-o-f-sica-e-l-ng coded 0 failed 0 changes 0
+{"time": "2026-10-28T14:28:45.362617+00:00", "event": "extract_complete", "source_id": "es-curr-culo-es-2020-vol-09-ensino-fundamental-anos-finais-rea-de-linguagens-l-ngua-portuguesa-miolo", "pages": 1, "items": 1, "warnings": 0}
+Traceback (most recent call last):
+  File "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/docs/evidence/source-audit-southeast-fidelity/probe_es_isolated.py", line 47, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/docs/evidence/source-audit-southeast-fidelity/probe_es_isolated.py", line 43, in main
+    invpath=OUT/'inventory'/(s['sha256'][:16]+'.json');inv=json.loads(invpath.read_text());summary={'source_id':s['id'],'artifact_sha256':s['sha256'],'candidate_path':str(candidates[s['id']].relative_to(ROOT)),'candidate_sha256':sha(candidates[s['id']]),'coded_items':len(coded),'coded_fragments':len(fragment_checks),'literal_failed_items':bad,'rawdict_unmatched_fragments':[f for f in fragment_checks if not f['rawdict_cluster_match']],'trace_unmatched_fragments':[f for f in fragment_checks if not f['trace_match']],'canonical_changes_against_old_cache':changed,'production_cache_before_sha256':before,'production_cache_after_sha256':sha(prod),'production_checksum_unchanged':True,'independent_inventory_code_occurrences':inv['code_occurrences'],'independent_inventory_code_cells':inv['cells_with_codes'],'ocr_skipped_explicitly':True,'ocr_pending':x['ocr_pending'],'extraction_warnings':x['warnings']};summaries.append(summary);checks.extend([{'source_id':s['id'],**c}for c in fragment_checks]);print(s['id'],'coded',len(coded),'failed',len(bad),'changes',len(changed),flush=True)
+                                                                      ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15_4/Frameworks/Python.framework/Versions/3.11/lib/python3.11/pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15_4/Frameworks/Python.framework/Versions/3.11/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/docs/evidence/source-audit-southeast-fidelity/inventory/6bc96909d0199bd9.json'

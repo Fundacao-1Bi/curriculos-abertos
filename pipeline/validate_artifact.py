@@ -21,8 +21,10 @@ def contains_nul(value):
     return False
 
 
-def validators(root):
-    schema=json.loads((root/'data/schema/1.0.0.json').read_text())
+def validators(root,version='1.1.0'):
+    import re
+    if not re.fullmatch(r'\d+\.\d+\.\d+',version):raise ValueError('Invalid schema version')
+    schema=json.loads((root/'data/schema'/f'{version}.json').read_text())
     Draft202012Validator.check_schema(schema)
     return {kind:Draft202012Validator({'$schema':schema['$schema'],'$ref':f'#/$defs/{kind}','$defs':schema['$defs']}) for kind in ('Source','Learning','Relation')}
 
@@ -35,7 +37,11 @@ def validate_artifact(root,path):
     if expected!=actual:raise ValueError('Manifest checksum mismatch')
     manifest=json.loads(path.read_text())
     if manifest.get('format')!='curriculos-abertos/sharded-v1':raise ValueError('Sharded artifact required for bounded verification')
-    schema=validators(root);sources={}
+    schema_path=(root/manifest.get('schema_path','')).resolve()
+    if not schema_path.is_relative_to(root/'data/schema') or not schema_path.is_file():raise ValueError('Publication must pin a schema within data/schema')
+    if digest(schema_path)!=manifest.get('schema_sha256'):raise ValueError('Publication schema checksum mismatch')
+    if schema_path!=root/'data/schema'/f'{manifest["schema_version"]}.json':raise ValueError('Publication schema version/path mismatch')
+    schema=validators(root,manifest['schema_version']);sources={}
     for source in manifest['sources']:
         schema['Source'].validate(source)
         if source['id'] in sources:raise ValueError('Duplicate source ID')

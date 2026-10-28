@@ -1,0 +1,30 @@
+{
+  "resolved": [
+    {
+      "code": "RN-CODE-DEFINITION-INLINE-001",
+      "source_id": "rn-dcec-computacao",
+      "physical_page": 177,
+      "original_code": "EF15CI06",
+      "baseline_id": "ca:rn-dcec-computacao:efb5f983496abd5d0d57",
+      "first_snapshot_fingerprint": "936eff0365e46a7d0e3a76cfd2b78b4d95b7cd8716478b50c99320fd4ac5f42d",
+      "first_snapshot_literal_findings": 0,
+      "first_snapshot_missing_original_primary_definitions": 1,
+      "cause": "The source prints resultados.EF15CI06 followed by dash within the HABILIDADE cell. Native prefix parsing swallowed its wording into the preceding EF15MA22 definition; a literal substring check alone did not detect the missing coded record.",
+      "correction": "Strict sentence-terminator/code/dash definition boundary in explicit primary cell; source visual confirmed; all773 primary mentions scanned and exactlyone eligible boundary found. Owner also fixed central candidate parsing.",
+      "new_locator": "table:0/row:2/cell:1/inline-definition:1",
+      "status": "resolved_in_final_snapshot_and_bounded_current_core_peer_check",
+      "evidence": [
+        "inline-definition-full-scan.json",
+        "inline-idempotence.json",
+        "current-core-p177-peer.json",
+        "candidate-comparison-summary.json"
+      ]
+    }
+  ],
+  "retained_limits": [
+    "21 trace/ActualText/geometry cell differences are not globally repaired",
+    "2 narrative code examples remain document sections",
+    "OCR and uncoded-objective reconciliation are pending"
+  ],
+  "source_ready": false
+}

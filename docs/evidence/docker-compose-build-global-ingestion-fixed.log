@@ -1,0 +1,1182 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 661B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.04kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/node:22.23.4-bookworm-slim
+#3 DONE 0.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 272B done
+#4 DONE 0.0s
+
+#5 [dependencies 1/4] FROM docker.io/library/node:22.23.4-bookworm-slim@sha256:0ad4c2bbb7c43cdb0b7b1726ef3a8485174f477596942378b548ee60d4e229e6
+#5 resolve docker.io/library/node:22.23.4-bookworm-slim@sha256:0ad4c2bbb7c43cdb0b7b1726ef3a8485174f477596942378b548ee60d4e229e6 done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 ...
+
+#7 [dependencies 2/4] WORKDIR /app
+#7 DONE 0.1s
+
+#6 [internal] load build context
+#6 transferring context: 245.82MB 1.5s done
+#6 DONE 1.6s
+
+#8 [dependencies 3/4] COPY package.json package-lock.json ./
+#8 ...
+
+#9 [production 3/6] COPY pipeline/requirements.txt /tmp/pipeline-requirements.txt
+#9 DONE 0.9s
+
+#8 [dependencies 3/4] COPY package.json package-lock.json ./
+#8 DONE 0.9s
+
+#10 [dependencies 4/4] RUN npm install --global npm@11.6.2 && npm ci
+#10 ...
+
+#11 [production 4/6] RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-venv poppler-utils tesseract-ocr tesseract-ocr-por tesseract-ocr-osd ca-certificates && rm -rf /var/lib/apt/lists/*  && python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r /tmp/pipeline-requirements.txt && npm install --global npm@11.6.2
+#11 0.424 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#11 0.479 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+#11 0.499 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+#11 0.521 Get:4 http://deb.debian.org/debian bookworm/main arm64 Packages [8689 kB]
+#11 0.762 Get:5 http://deb.debian.org/debian bookworm-updates/main arm64 Packages [6936 B]
+#11 0.762 Get:6 http://deb.debian.org/debian-security bookworm-security/main arm64 Packages [356 kB]
+#11 1.341 Fetched 9294 kB in 1s (9529 kB/s)
+#11 1.341 Reading package lists...
+#11 1.702 Reading package lists...
+#11 1.928 Building dependency tree...
+#11 1.987 Reading state information...
+#11 2.059 The following additional packages will be installed:
+#11 2.059   fontconfig fontconfig-config fonts-dejavu-core libarchive13 libbrotli1
+#11 2.059   libbsd0 libcairo2 libcurl4 libdatrie1 libdeflate0 libexpat1 libfontconfig1
+#11 2.059   libfreetype6 libfribidi0 libgif7 libglib2.0-0 libgomp1 libgraphite2-3
+#11 2.059   libgssapi-krb5-2 libharfbuzz0b libicu72 libjbig0 libjpeg62-turbo
+#11 2.059   libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 liblcms2-2 libldap-2.5-0
+#11 2.059   liblept5 liblerc4 libncursesw6 libnghttp2-14 libnsl2 libnspr4 libnss3
+#11 2.059   libopenjp2-7 libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+#11 2.059   libpixman-1-0 libpng16-16 libpoppler126 libpsl5 libpython3-stdlib
+#11 2.059   libpython3.11-minimal libpython3.11-stdlib libreadline8 librtmp1 libsasl2-2
+#11 2.059   libsasl2-modules-db libsqlite3-0 libssh2-1 libssl3 libtesseract5
+#11 2.059   libthai-data libthai0 libtiff6 libtirpc-common libtirpc3 libwebp7
+#11 2.059   libwebpmux3 libx11-6 libx11-data libxau6 libxcb-render0 libxcb-shm0 libxcb1
+#11 2.060   libxdmcp6 libxext6 libxml2 libxrender1 media-types openssl python3-distutils
+#11 2.060   python3-lib2to3 python3-minimal python3-pip-whl python3-setuptools-whl
+#11 2.060   python3.11 python3.11-minimal python3.11-venv readline-common
+#11 2.060   tesseract-ocr-eng
+#11 2.060 Suggested packages:
+#11 2.060   lrzip low-memory-monitor krb5-doc krb5-user liblcms2-utils python3-doc
+#11 2.060   python3-tk python3.11-doc binutils binfmt-support readline-doc
+#11 2.060 Recommended packages:
+#11 2.060   libglib2.0-data shared-mime-info xdg-user-dirs krb5-locales libldap-common
+#11 2.060   libgpm2 poppler-data publicsuffix libsasl2-modules
+#11 2.340 The following NEW packages will be installed:
+#11 2.340   ca-certificates fontconfig fontconfig-config fonts-dejavu-core libarchive13
+#11 2.340   libbrotli1 libbsd0 libcairo2 libcurl4 libdatrie1 libdeflate0 libexpat1
+#11 2.340   libfontconfig1 libfreetype6 libfribidi0 libgif7 libglib2.0-0 libgomp1
+#11 2.340   libgraphite2-3 libgssapi-krb5-2 libharfbuzz0b libicu72 libjbig0
+#11 2.340   libjpeg62-turbo libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0
+#11 2.340   liblcms2-2 libldap-2.5-0 liblept5 liblerc4 libncursesw6 libnghttp2-14
+#11 2.340   libnsl2 libnspr4 libnss3 libopenjp2-7 libpango-1.0-0 libpangocairo-1.0-0
+#11 2.340   libpangoft2-1.0-0 libpixman-1-0 libpng16-16 libpoppler126 libpsl5
+#11 2.340   libpython3-stdlib libpython3.11-minimal libpython3.11-stdlib libreadline8
+#11 2.340   librtmp1 libsasl2-2 libsasl2-modules-db libsqlite3-0 libssh2-1 libssl3
+#11 2.340   libtesseract5 libthai-data libthai0 libtiff6 libtirpc-common libtirpc3
+#11 2.340   libwebp7 libwebpmux3 libx11-6 libx11-data libxau6 libxcb-render0 libxcb-shm0
+#11 2.340   libxcb1 libxdmcp6 libxext6 libxml2 libxrender1 media-types openssl
+#11 2.340   poppler-utils python3 python3-distutils python3-lib2to3 python3-minimal
+#11 2.340   python3-pip-whl python3-setuptools-whl python3-venv python3.11
+#11 2.340   python3.11-minimal python3.11-venv readline-common tesseract-ocr
+#11 2.340   tesseract-ocr-eng tesseract-ocr-osd tesseract-ocr-por
+#11 2.394 0 upgraded, 91 newly installed, 0 to remove and 1 not upgraded.
+#11 2.394 Need to get 46.9 MB of archives.
+#11 2.394 After this operation, 149 MB of additional disk space will be used.
+#11 2.394 Get:1 http://deb.debian.org/debian-security bookworm-security/main arm64 libssl3 arm64 3.0.22-1~deb12u2 [1829 kB]
+#11 2.513 Get:2 http://deb.debian.org/debian-security bookworm-security/main arm64 libpython3.11-minimal arm64 3.11.2-6+deb12u9 [814 kB]
+#11 2.520 Get:3 http://deb.debian.org/debian-security bookworm-security/main arm64 libexpat1 arm64 2.5.0-1+deb12u5 [91.7 kB]
+#11 2.571 Get:4 http://deb.debian.org/debian-security bookworm-security/main arm64 python3.11-minimal arm64 3.11.2-6+deb12u9 [1862 kB]
+#11 2.597 Get:5 http://deb.debian.org/debian bookworm/main arm64 python3-minimal arm64 3.11.2-1+b1 [26.3 kB]
+#11 2.597 Get:6 http://deb.debian.org/debian bookworm/main arm64 media-types all 10.0.0 [26.1 kB]
+#11 2.614 Get:7 http://deb.debian.org/debian bookworm/main arm64 libncursesw6 arm64 6.4-4 [122 kB]
+#11 2.615 Get:8 http://deb.debian.org/debian bookworm/main arm64 libkrb5support0 arm64 1.20.1-2+deb12u5 [32.6 kB]
+#11 2.615 Get:9 http://deb.debian.org/debian bookworm/main arm64 libk5crypto3 arm64 1.20.1-2+deb12u5 [79.9 kB]
+#11 2.616 Get:10 http://deb.debian.org/debian bookworm/main arm64 libkeyutils1 arm64 1.6.3-2 [8844 B]
+#11 2.633 Get:11 http://deb.debian.org/debian bookworm/main arm64 libkrb5-3 arm64 1.20.1-2+deb12u5 [316 kB]
+#11 2.653 Get:12 http://deb.debian.org/debian bookworm/main arm64 libgssapi-krb5-2 arm64 1.20.1-2+deb12u5 [124 kB]
+#11 2.656 Get:13 http://deb.debian.org/debian bookworm/main arm64 libtirpc-common all 1.3.3+ds-1 [14.0 kB]
+#11 2.656 Get:14 http://deb.debian.org/debian bookworm/main arm64 libtirpc3 arm64 1.3.3+ds-1 [80.9 kB]
+#11 2.657 Get:15 http://deb.debian.org/debian bookworm/main arm64 libnsl2 arm64 1.3.0-2 [36.9 kB]
+#11 2.657 Get:16 http://deb.debian.org/debian bookworm/main arm64 readline-common all 8.2-1.3 [69.0 kB]
+#11 2.676 Get:17 http://deb.debian.org/debian bookworm/main arm64 libreadline8 arm64 8.2-1.3 [155 kB]
+#11 2.693 Get:18 http://deb.debian.org/debian bookworm/main arm64 libsqlite3-0 arm64 3.40.1-2+deb12u2 [786 kB]
+#11 2.720 Get:19 http://deb.debian.org/debian-security bookworm-security/main arm64 libpython3.11-stdlib arm64 3.11.2-6+deb12u9 [1750 kB]
+#11 2.764 Get:20 http://deb.debian.org/debian-security bookworm-security/main arm64 python3.11 arm64 3.11.2-6+deb12u9 [575 kB]
+#11 2.770 Get:21 http://deb.debian.org/debian bookworm/main arm64 libpython3-stdlib arm64 3.11.2-1+b1 [9296 B]
+#11 2.770 Get:22 http://deb.debian.org/debian bookworm/main arm64 python3 arm64 3.11.2-1+b1 [26.3 kB]
+#11 2.771 Get:23 http://deb.debian.org/debian-security bookworm-security/main arm64 openssl arm64 3.0.22-1~deb12u2 [1410 kB]
+#11 2.819 Get:24 http://deb.debian.org/debian-security bookworm-security/main arm64 ca-certificates all 20250419~deb12u2 [161 kB]
+#11 2.837 Get:25 http://deb.debian.org/debian-security bookworm-security/main arm64 libbrotli1 arm64 1.0.9-2+deb12u1 [267 kB]
+#11 2.857 Get:26 http://deb.debian.org/debian-security bookworm-security/main arm64 libpng16-16 arm64 1.6.39-2+deb12u6 [271 kB]
+#11 2.878 Get:27 http://deb.debian.org/debian bookworm/main arm64 libfreetype6 arm64 2.12.1+dfsg-5+deb12u4 [368 kB]
+#11 2.902 Get:28 http://deb.debian.org/debian bookworm/main arm64 fonts-dejavu-core all 2.37-6 [1068 kB]
+#11 2.930 Get:29 http://deb.debian.org/debian bookworm/main arm64 fontconfig-config arm64 2.14.1-4 [315 kB]
+#11 2.951 Get:30 http://deb.debian.org/debian bookworm/main arm64 libfontconfig1 arm64 2.14.1-4 [381 kB]
+#11 2.973 Get:31 http://deb.debian.org/debian bookworm/main arm64 fontconfig arm64 2.14.1-4 [449 kB]
+#11 2.994 Get:32 http://deb.debian.org/debian bookworm/main arm64 libicu72 arm64 72.1-3+deb12u1 [9202 kB]
+#11 3.135 Get:33 http://deb.debian.org/debian bookworm/main arm64 libxml2 arm64 2.9.14+dfsg-1.3~deb12u6 [620 kB]
+#11 3.162 Get:34 http://deb.debian.org/debian-security bookworm-security/main arm64 libarchive13 arm64 3.6.2-1+deb12u5 [318 kB]
+#11 3.186 Get:35 http://deb.debian.org/debian bookworm/main arm64 libbsd0 arm64 0.11.7-2 [115 kB]
+#11 3.206 Get:36 http://deb.debian.org/debian bookworm/main arm64 libpixman-1-0 arm64 0.42.2-1 [470 kB]
+#11 3.210 Get:37 http://deb.debian.org/debian bookworm/main arm64 libxau6 arm64 1:1.0.9-1 [19.7 kB]
+#11 3.211 Get:38 http://deb.debian.org/debian bookworm/main arm64 libxdmcp6 arm64 1:1.1.2-3 [25.4 kB]
+#11 3.228 Get:39 http://deb.debian.org/debian bookworm/main arm64 libxcb1 arm64 1.15-1 [143 kB]
+#11 3.248 Get:40 http://deb.debian.org/debian bookworm/main arm64 libx11-data all 2:1.8.4-2+deb12u2 [292 kB]
+#11 3.270 Get:41 http://deb.debian.org/debian bookworm/main arm64 libx11-6 arm64 2:1.8.4-2+deb12u2 [735 kB]
+#11 3.295 Get:42 http://deb.debian.org/debian bookworm/main arm64 libxcb-render0 arm64 1.15-1 [115 kB]
+#11 3.315 Get:43 http://deb.debian.org/debian bookworm/main arm64 libxcb-shm0 arm64 1.15-1 [106 kB]
+#11 3.315 Get:44 http://deb.debian.org/debian bookworm/main arm64 libxext6 arm64 2:1.3.4-1+b1 [51.7 kB]
+#11 3.318 Get:45 http://deb.debian.org/debian bookworm/main arm64 libxrender1 arm64 1:0.9.10-1.1 [32.0 kB]
+#11 3.339 Get:46 http://deb.debian.org/debian bookworm/main arm64 libcairo2 arm64 1.16.0-7 [527 kB]
+#11 3.344 Get:47 http://deb.debian.org/debian bookworm/main arm64 libsasl2-modules-db arm64 2.1.28+dfsg-10 [20.8 kB]
+#11 3.345 Get:48 http://deb.debian.org/debian bookworm/main arm64 libsasl2-2 arm64 2.1.28+dfsg-10 [58.0 kB]
+#11 3.370 Get:49 http://deb.debian.org/debian bookworm/main arm64 libldap-2.5-0 arm64 2.5.13+dfsg-5 [171 kB]
+#11 3.372 Get:50 http://deb.debian.org/debian bookworm/main arm64 libnghttp2-14 arm64 1.52.0-1+deb12u3 [69.0 kB]
+#11 3.373 Get:51 http://deb.debian.org/debian bookworm/main arm64 libpsl5 arm64 0.21.2-1 [58.6 kB]
+#11 3.375 Get:52 http://deb.debian.org/debian bookworm/main arm64 librtmp1 arm64 2.4+20151223.gitfa8646d.1-2+b2 [59.4 kB]
+#11 3.391 Get:53 http://deb.debian.org/debian-security bookworm-security/main arm64 libssh2-1 arm64 1.10.0-3+deb12u1 [169 kB]
+#11 3.411 Get:54 http://deb.debian.org/debian bookworm/main arm64 libcurl4 arm64 7.88.1-10+deb12u15 [367 kB]
+#11 3.414 Get:55 http://deb.debian.org/debian bookworm/main arm64 libdatrie1 arm64 0.2.13-2+b1 [42.6 kB]
+#11 3.415 Get:56 http://deb.debian.org/debian bookworm/main arm64 libdeflate0 arm64 1.14-1 [54.3 kB]
+#11 3.415 Get:57 http://deb.debian.org/debian bookworm/main arm64 libfribidi0 arm64 1.0.8-2.1 [64.9 kB]
+#11 3.416 Get:58 http://deb.debian.org/debian bookworm/main arm64 libgif7 arm64 5.2.1-2.5+deb12u1 [42.6 kB]
+#11 3.433 Get:59 http://deb.debian.org/debian bookworm/main arm64 libglib2.0-0 arm64 2.74.6-2+deb12u9 [1316 kB]
+#11 3.472 Get:60 http://deb.debian.org/debian bookworm/main arm64 libgomp1 arm64 12.2.0-14+deb12u1 [104 kB]
+#11 3.473 Get:61 http://deb.debian.org/debian bookworm/main arm64 libgraphite2-3 arm64 1.3.14-1+deb12u1 [68.7 kB]
+#11 3.494 Get:62 http://deb.debian.org/debian bookworm/main arm64 libharfbuzz0b arm64 6.0.0+dfsg-3 [1914 kB]
+#11 3.524 Get:63 http://deb.debian.org/debian bookworm/main arm64 libjbig0 arm64 2.1-6.1 [30.0 kB]
+#11 3.526 Get:64 http://deb.debian.org/debian bookworm/main arm64 libjpeg62-turbo arm64 1:2.1.5-2 [171 kB]
+#11 3.544 Get:65 http://deb.debian.org/debian bookworm/main arm64 liblcms2-2 arm64 2.14-2+deb12u1 [144 kB]
+#11 3.568 Get:66 http://deb.debian.org/debian bookworm/main arm64 libopenjp2-7 arm64 2.5.0-2+deb12u3 [176 kB]
+#11 3.592 Get:67 http://deb.debian.org/debian bookworm/main arm64 liblerc4 arm64 4.0.0+ds-2 [138 kB]
+#11 3.612 Get:68 http://deb.debian.org/debian bookworm/main arm64 libwebp7 arm64 1.2.4-0.2+deb12u1 [260 kB]
+#11 3.635 Get:69 http://deb.debian.org/debian bookworm/main arm64 libtiff6 arm64 4.5.0-6+deb12u4 [301 kB]
+#11 3.658 Get:70 http://deb.debian.org/debian bookworm/main arm64 libwebpmux3 arm64 1.2.4-0.2+deb12u1 [109 kB]
+#11 3.679 Get:71 http://deb.debian.org/debian bookworm/main arm64 liblept5 arm64 1.82.0-3+b3 [973 kB]
+#11 3.704 Get:72 http://deb.debian.org/debian bookworm/main arm64 libnspr4 arm64 2:4.35-1 [105 kB]
+#11 3.724 Get:73 http://deb.debian.org/debian-security bookworm-security/main arm64 libnss3 arm64 2:3.87.1-1+deb12u4 [1216 kB]
+#11 3.754 Get:74 http://deb.debian.org/debian bookworm/main arm64 libthai-data all 0.1.29-1 [176 kB]
+#11 3.755 Get:75 http://deb.debian.org/debian bookworm/main arm64 libthai0 arm64 0.1.29-1 [56.2 kB]
+#11 3.777 Get:76 http://deb.debian.org/debian bookworm/main arm64 libpango-1.0-0 arm64 1.50.12+ds-1 [200 kB]
+#11 3.779 Get:77 http://deb.debian.org/debian bookworm/main arm64 libpangoft2-1.0-0 arm64 1.50.12+ds-1 [44.5 kB]
+#11 3.780 Get:78 http://deb.debian.org/debian bookworm/main arm64 libpangocairo-1.0-0 arm64 1.50.12+ds-1 [32.0 kB]
+#11 3.799 Get:79 http://deb.debian.org/debian-security bookworm-security/main arm64 libpoppler126 arm64 22.12.0-2+deb12u3 [1753 kB]
+#11 3.846 Get:80 http://deb.debian.org/debian bookworm/main arm64 libtesseract5 arm64 5.3.0-2 [1123 kB]
+#11 3.861 Get:81 http://deb.debian.org/debian-security bookworm-security/main arm64 poppler-utils arm64 22.12.0-2+deb12u3 [177 kB]
+#11 3.862 Get:82 http://deb.debian.org/debian bookworm/main arm64 python3-lib2to3 all 3.11.2-3 [76.3 kB]
+#11 3.905 Get:83 http://deb.debian.org/debian bookworm/main arm64 python3-distutils all 3.11.2-3 [131 kB]
+#11 3.925 Get:84 http://deb.debian.org/debian bookworm/main arm64 python3-pip-whl all 23.0.1+dfsg-1 [1717 kB]
+#11 3.979 Get:85 http://deb.debian.org/debian bookworm/main arm64 python3-setuptools-whl all 66.1.1-1+deb12u2 [1112 kB]
+#11 4.007 Get:86 http://deb.debian.org/debian-security bookworm-security/main arm64 python3.11-venv arm64 3.11.2-6+deb12u9 [5896 B]
+#11 4.007 Get:87 http://deb.debian.org/debian bookworm/main arm64 python3-venv arm64 3.11.2-1+b1 [1200 B]
+#11 4.024 Get:88 http://deb.debian.org/debian bookworm/main arm64 tesseract-ocr-eng all 1:4.1.0-2 [1594 kB]
+#11 4.072 Get:89 http://deb.debian.org/debian bookworm/main arm64 tesseract-ocr-osd all 1:4.1.0-2 [2992 kB]
+#11 4.150 Get:90 http://deb.debian.org/debian bookworm/main arm64 tesseract-ocr arm64 5.3.0-2 [363 kB]
+#11 4.174 Get:91 http://deb.debian.org/debian bookworm/main arm64 tesseract-ocr-por all 1:4.1.0-2 [859 kB]
+#11 4.276 debconf: delaying package configuration, since apt-utils is not installed
+#11 4.293 Fetched 46.9 MB in 2s (25.5 MB/s)
+#11 4.319 Selecting previously unselected package libssl3:arm64.
+#11 4.319 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6090 files and directories currently installed.)
+#11 4.340 Preparing to unpack .../libssl3_3.0.22-1~deb12u2_arm64.deb ...
+#11 4.344 Unpacking libssl3:arm64 (3.0.22-1~deb12u2) ...
+#11 4.463 Selecting previously unselected package libpython3.11-minimal:arm64.
+#11 4.464 Preparing to unpack .../libpython3.11-minimal_3.11.2-6+deb12u9_arm64.deb ...
+#11 4.466 Unpacking libpython3.11-minimal:arm64 (3.11.2-6+deb12u9) ...
+#11 4.559 Selecting previously unselected package libexpat1:arm64.
+#11 4.560 Preparing to unpack .../libexpat1_2.5.0-1+deb12u5_arm64.deb ...
+#11 4.562 Unpacking libexpat1:arm64 (2.5.0-1+deb12u5) ...
+#11 4.583 Selecting previously unselected package python3.11-minimal.
+#11 4.583 Preparing to unpack .../python3.11-minimal_3.11.2-6+deb12u9_arm64.deb ...
+#11 4.588 Unpacking python3.11-minimal (3.11.2-6+deb12u9) ...
+#11 4.701 Setting up libssl3:arm64 (3.0.22-1~deb12u2) ...
+#11 4.706 Setting up libpython3.11-minimal:arm64 (3.11.2-6+deb12u9) ...
+#11 4.712 Setting up libexpat1:arm64 (2.5.0-1+deb12u5) ...
+#11 4.716 Setting up python3.11-minimal (3.11.2-6+deb12u9) ...
+#11 5.081 Selecting previously unselected package python3-minimal.
+#11 5.081 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6418 files and directories currently installed.)
+#11 5.086 Preparing to unpack .../00-python3-minimal_3.11.2-1+b1_arm64.deb ...
+#11 5.087 Unpacking python3-minimal (3.11.2-1+b1) ...
+#11 5.101 Selecting previously unselected package media-types.
+#11 5.101 Preparing to unpack .../01-media-types_10.0.0_all.deb ...
+#11 5.103 Unpacking media-types (10.0.0) ...
+#11 5.117 Selecting previously unselected package libncursesw6:arm64.
+#11 5.117 Preparing to unpack .../02-libncursesw6_6.4-4_arm64.deb ...
+#11 5.119 Unpacking libncursesw6:arm64 (6.4-4) ...
+#11 5.139 Selecting previously unselected package libkrb5support0:arm64.
+#11 5.140 Preparing to unpack .../03-libkrb5support0_1.20.1-2+deb12u5_arm64.deb ...
+#11 5.141 Unpacking libkrb5support0:arm64 (1.20.1-2+deb12u5) ...
+#11 5.155 Selecting previously unselected package libk5crypto3:arm64.
+#11 5.156 Preparing to unpack .../04-libk5crypto3_1.20.1-2+deb12u5_arm64.deb ...
+#11 5.158 Unpacking libk5crypto3:arm64 (1.20.1-2+deb12u5) ...
+#11 5.175 Selecting previously unselected package libkeyutils1:arm64.
+#11 5.176 Preparing to unpack .../05-libkeyutils1_1.6.3-2_arm64.deb ...
+#11 5.178 Unpacking libkeyutils1:arm64 (1.6.3-2) ...
+#11 5.191 Selecting previously unselected package libkrb5-3:arm64.
+#11 5.191 Preparing to unpack .../06-libkrb5-3_1.20.1-2+deb12u5_arm64.deb ...
+#11 5.192 Unpacking libkrb5-3:arm64 (1.20.1-2+deb12u5) ...
+#11 5.220 Selecting previously unselected package libgssapi-krb5-2:arm64.
+#11 5.221 Preparing to unpack .../07-libgssapi-krb5-2_1.20.1-2+deb12u5_arm64.deb ...
+#11 5.222 Unpacking libgssapi-krb5-2:arm64 (1.20.1-2+deb12u5) ...
+#11 5.238 Selecting previously unselected package libtirpc-common.
+#11 5.239 Preparing to unpack .../08-libtirpc-common_1.3.3+ds-1_all.deb ...
+#11 5.240 Unpacking libtirpc-common (1.3.3+ds-1) ...
+#11 5.252 Selecting previously unselected package libtirpc3:arm64.
+#11 5.253 Preparing to unpack .../09-libtirpc3_1.3.3+ds-1_arm64.deb ...
+#11 5.254 Unpacking libtirpc3:arm64 (1.3.3+ds-1) ...
+#11 5.269 Selecting previously unselected package libnsl2:arm64.
+#11 5.269 Preparing to unpack .../10-libnsl2_1.3.0-2_arm64.deb ...
+#11 5.271 Unpacking libnsl2:arm64 (1.3.0-2) ...
+#11 5.284 Selecting previously unselected package readline-common.
+#11 5.284 Preparing to unpack .../11-readline-common_8.2-1.3_all.deb ...
+#11 5.286 Unpacking readline-common (8.2-1.3) ...
+#11 5.305 Selecting previously unselected package libreadline8:arm64.
+#11 5.306 Preparing to unpack .../12-libreadline8_8.2-1.3_arm64.deb ...
+#11 5.308 Unpacking libreadline8:arm64 (8.2-1.3) ...
+#11 5.328 Selecting previously unselected package libsqlite3-0:arm64.
+#11 5.328 Preparing to unpack .../13-libsqlite3-0_3.40.1-2+deb12u2_arm64.deb ...
+#11 5.331 Unpacking libsqlite3-0:arm64 (3.40.1-2+deb12u2) ...
+#11 5.369 Selecting previously unselected package libpython3.11-stdlib:arm64.
+#11 5.369 Preparing to unpack .../14-libpython3.11-stdlib_3.11.2-6+deb12u9_arm64.deb ...
+#11 5.371 Unpacking libpython3.11-stdlib:arm64 (3.11.2-6+deb12u9) ...
+#11 5.546 Selecting previously unselected package python3.11.
+#11 5.547 Preparing to unpack .../15-python3.11_3.11.2-6+deb12u9_arm64.deb ...
+#11 5.548 Unpacking python3.11 (3.11.2-6+deb12u9) ...
+#11 5.565 Selecting previously unselected package libpython3-stdlib:arm64.
+#11 5.566 Preparing to unpack .../16-libpython3-stdlib_3.11.2-1+b1_arm64.deb ...
+#11 5.567 Unpacking libpython3-stdlib:arm64 (3.11.2-1+b1) ...
+#11 5.578 Setting up python3-minimal (3.11.2-1+b1) ...
+#11 5.676 Selecting previously unselected package python3.
+#11 5.676 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6926 files and directories currently installed.)
+#11 5.684 Preparing to unpack .../00-python3_3.11.2-1+b1_arm64.deb ...
+#11 5.687 Unpacking python3 (3.11.2-1+b1) ...
+#11 5.700 Selecting previously unselected package openssl.
+#11 5.701 Preparing to unpack .../01-openssl_3.0.22-1~deb12u2_arm64.deb ...
+#11 5.702 Unpacking openssl (3.0.22-1~deb12u2) ...
+#11 5.772 Selecting previously unselected package ca-certificates.
+#11 5.772 Preparing to unpack .../02-ca-certificates_20250419~deb12u2_all.deb ...
+#11 5.773 Unpacking ca-certificates (20250419~deb12u2) ...
+#11 5.796 Selecting previously unselected package libbrotli1:arm64.
+#11 5.797 Preparing to unpack .../03-libbrotli1_1.0.9-2+deb12u1_arm64.deb ...
+#11 5.798 Unpacking libbrotli1:arm64 (1.0.9-2+deb12u1) ...
+#11 5.821 Selecting previously unselected package libpng16-16:arm64.
+#11 5.822 Preparing to unpack .../04-libpng16-16_1.6.39-2+deb12u6_arm64.deb ...
+#11 5.823 Unpacking libpng16-16:arm64 (1.6.39-2+deb12u6) ...
+#11 5.844 Selecting previously unselected package libfreetype6:arm64.
+#11 5.845 Preparing to unpack .../05-libfreetype6_2.12.1+dfsg-5+deb12u4_arm64.deb ...
+#11 5.846 Unpacking libfreetype6:arm64 (2.12.1+dfsg-5+deb12u4) ...
+#11 5.869 Selecting previously unselected package fonts-dejavu-core.
+#11 5.870 Preparing to unpack .../06-fonts-dejavu-core_2.37-6_all.deb ...
+#11 5.871 Unpacking fonts-dejavu-core (2.37-6) ...
+#11 5.937 Selecting previously unselected package fontconfig-config.
+#11 5.938 Preparing to unpack .../07-fontconfig-config_2.14.1-4_arm64.deb ...
+#11 5.972 Unpacking fontconfig-config (2.14.1-4) ...
+#11 5.989 Selecting previously unselected package libfontconfig1:arm64.
+#11 5.990 Preparing to unpack .../08-libfontconfig1_2.14.1-4_arm64.deb ...
+#11 5.991 Unpacking libfontconfig1:arm64 (2.14.1-4) ...
+#11 6.005 Selecting previously unselected package fontconfig.
+#11 6.005 Preparing to unpack .../09-fontconfig_2.14.1-4_arm64.deb ...
+#11 6.006 Unpacking fontconfig (2.14.1-4) ...
+#11 6.023 Selecting previously unselected package libicu72:arm64.
+#11 6.024 Preparing to unpack .../10-libicu72_72.1-3+deb12u1_arm64.deb ...
+#11 6.025 Unpacking libicu72:arm64 (72.1-3+deb12u1) ...
+#11 ...
+
+#10 [dependencies 4/4] RUN npm install --global npm@11.6.2 && npm ci
+#10 6.332 
+#10 6.332 removed 11 packages, and changed 70 packages in 6s
+#10 6.332 
+#10 6.332 28 packages are looking for funding
+#10 6.332   run `npm fund` for details
+#10 9.164 npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+#10 ...
+
+#11 [production 4/6] RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-venv poppler-utils tesseract-ocr tesseract-ocr-por tesseract-ocr-osd ca-certificates && rm -rf /var/lib/apt/lists/*  && python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r /tmp/pipeline-requirements.txt && npm install --global npm@11.6.2
+#11 6.445 Selecting previously unselected package libxml2:arm64.
+#11 6.445 Preparing to unpack .../11-libxml2_2.9.14+dfsg-1.3~deb12u6_arm64.deb ...
+#11 6.446 Unpacking libxml2:arm64 (2.9.14+dfsg-1.3~deb12u6) ...
+#11 6.487 Selecting previously unselected package libarchive13:arm64.
+#11 6.488 Preparing to unpack .../12-libarchive13_3.6.2-1+deb12u5_arm64.deb ...
+#11 6.489 Unpacking libarchive13:arm64 (3.6.2-1+deb12u5) ...
+#11 6.512 Selecting previously unselected package libbsd0:arm64.
+#11 6.513 Preparing to unpack .../13-libbsd0_0.11.7-2_arm64.deb ...
+#11 6.514 Unpacking libbsd0:arm64 (0.11.7-2) ...
+#11 6.527 Selecting previously unselected package libpixman-1-0:arm64.
+#11 6.528 Preparing to unpack .../14-libpixman-1-0_0.42.2-1_arm64.deb ...
+#11 6.528 Unpacking libpixman-1-0:arm64 (0.42.2-1) ...
+#11 6.546 Selecting previously unselected package libxau6:arm64.
+#11 6.546 Preparing to unpack .../15-libxau6_1%3a1.0.9-1_arm64.deb ...
+#11 6.547 Unpacking libxau6:arm64 (1:1.0.9-1) ...
+#11 6.555 Selecting previously unselected package libxdmcp6:arm64.
+#11 6.555 Preparing to unpack .../16-libxdmcp6_1%3a1.1.2-3_arm64.deb ...
+#11 6.556 Unpacking libxdmcp6:arm64 (1:1.1.2-3) ...
+#11 6.566 Selecting previously unselected package libxcb1:arm64.
+#11 6.566 Preparing to unpack .../17-libxcb1_1.15-1_arm64.deb ...
+#11 6.567 Unpacking libxcb1:arm64 (1.15-1) ...
+#11 6.581 Selecting previously unselected package libx11-data.
+#11 6.582 Preparing to unpack .../18-libx11-data_2%3a1.8.4-2+deb12u2_all.deb ...
+#11 6.584 Unpacking libx11-data (2:1.8.4-2+deb12u2) ...
+#11 6.627 Selecting previously unselected package libx11-6:arm64.
+#11 6.629 Preparing to unpack .../19-libx11-6_2%3a1.8.4-2+deb12u2_arm64.deb ...
+#11 6.631 Unpacking libx11-6:arm64 (2:1.8.4-2+deb12u2) ...
+#11 6.679 Selecting previously unselected package libxcb-render0:arm64.
+#11 6.679 Preparing to unpack .../20-libxcb-render0_1.15-1_arm64.deb ...
+#11 6.681 Unpacking libxcb-render0:arm64 (1.15-1) ...
+#11 6.699 Selecting previously unselected package libxcb-shm0:arm64.
+#11 6.700 Preparing to unpack .../21-libxcb-shm0_1.15-1_arm64.deb ...
+#11 6.701 Unpacking libxcb-shm0:arm64 (1.15-1) ...
+#11 6.718 Selecting previously unselected package libxext6:arm64.
+#11 6.719 Preparing to unpack .../22-libxext6_2%3a1.3.4-1+b1_arm64.deb ...
+#11 6.720 Unpacking libxext6:arm64 (2:1.3.4-1+b1) ...
+#11 6.735 Selecting previously unselected package libxrender1:arm64.
+#11 6.735 Preparing to unpack .../23-libxrender1_1%3a0.9.10-1.1_arm64.deb ...
+#11 6.737 Unpacking libxrender1:arm64 (1:0.9.10-1.1) ...
+#11 6.749 Selecting previously unselected package libcairo2:arm64.
+#11 6.749 Preparing to unpack .../24-libcairo2_1.16.0-7_arm64.deb ...
+#11 6.750 Unpacking libcairo2:arm64 (1.16.0-7) ...
+#11 6.779 Selecting previously unselected package libsasl2-modules-db:arm64.
+#11 6.779 Preparing to unpack .../25-libsasl2-modules-db_2.1.28+dfsg-10_arm64.deb ...
+#11 6.781 Unpacking libsasl2-modules-db:arm64 (2.1.28+dfsg-10) ...
+#11 6.791 Selecting previously unselected package libsasl2-2:arm64.
+#11 6.791 Preparing to unpack .../26-libsasl2-2_2.1.28+dfsg-10_arm64.deb ...
+#11 6.792 Unpacking libsasl2-2:arm64 (2.1.28+dfsg-10) ...
+#11 6.805 Selecting previously unselected package libldap-2.5-0:arm64.
+#11 6.805 Preparing to unpack .../27-libldap-2.5-0_2.5.13+dfsg-5_arm64.deb ...
+#11 6.806 Unpacking libldap-2.5-0:arm64 (2.5.13+dfsg-5) ...
+#11 6.824 Selecting previously unselected package libnghttp2-14:arm64.
+#11 6.824 Preparing to unpack .../28-libnghttp2-14_1.52.0-1+deb12u3_arm64.deb ...
+#11 6.826 Unpacking libnghttp2-14:arm64 (1.52.0-1+deb12u3) ...
+#11 6.838 Selecting previously unselected package libpsl5:arm64.
+#11 6.839 Preparing to unpack .../29-libpsl5_0.21.2-1_arm64.deb ...
+#11 6.840 Unpacking libpsl5:arm64 (0.21.2-1) ...
+#11 6.852 Selecting previously unselected package librtmp1:arm64.
+#11 6.853 Preparing to unpack .../30-librtmp1_2.4+20151223.gitfa8646d.1-2+b2_arm64.deb ...
+#11 6.854 Unpacking librtmp1:arm64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+#11 6.865 Selecting previously unselected package libssh2-1:arm64.
+#11 6.866 Preparing to unpack .../31-libssh2-1_1.10.0-3+deb12u1_arm64.deb ...
+#11 6.867 Unpacking libssh2-1:arm64 (1.10.0-3+deb12u1) ...
+#11 6.884 Selecting previously unselected package libcurl4:arm64.
+#11 6.885 Preparing to unpack .../32-libcurl4_7.88.1-10+deb12u15_arm64.deb ...
+#11 6.886 Unpacking libcurl4:arm64 (7.88.1-10+deb12u15) ...
+#11 6.910 Selecting previously unselected package libdatrie1:arm64.
+#11 6.910 Preparing to unpack .../33-libdatrie1_0.2.13-2+b1_arm64.deb ...
+#11 6.911 Unpacking libdatrie1:arm64 (0.2.13-2+b1) ...
+#11 6.920 Selecting previously unselected package libdeflate0:arm64.
+#11 6.920 Preparing to unpack .../34-libdeflate0_1.14-1_arm64.deb ...
+#11 6.921 Unpacking libdeflate0:arm64 (1.14-1) ...
+#11 6.931 Selecting previously unselected package libfribidi0:arm64.
+#11 6.931 Preparing to unpack .../35-libfribidi0_1.0.8-2.1_arm64.deb ...
+#11 6.932 Unpacking libfribidi0:arm64 (1.0.8-2.1) ...
+#11 6.942 Selecting previously unselected package libgif7:arm64.
+#11 6.943 Preparing to unpack .../36-libgif7_5.2.1-2.5+deb12u1_arm64.deb ...
+#11 6.943 Unpacking libgif7:arm64 (5.2.1-2.5+deb12u1) ...
+#11 6.959 Selecting previously unselected package libglib2.0-0:arm64.
+#11 6.960 Preparing to unpack .../37-libglib2.0-0_2.74.6-2+deb12u9_arm64.deb ...
+#11 6.961 Unpacking libglib2.0-0:arm64 (2.74.6-2+deb12u9) ...
+#11 7.108 Selecting previously unselected package libgomp1:arm64.
+#11 7.108 Preparing to unpack .../38-libgomp1_12.2.0-14+deb12u1_arm64.deb ...
+#11 7.109 Unpacking libgomp1:arm64 (12.2.0-14+deb12u1) ...
+#11 7.122 Selecting previously unselected package libgraphite2-3:arm64.
+#11 7.123 Preparing to unpack .../39-libgraphite2-3_1.3.14-1+deb12u1_arm64.deb ...
+#11 7.124 Unpacking libgraphite2-3:arm64 (1.3.14-1+deb12u1) ...
+#11 7.138 Selecting previously unselected package libharfbuzz0b:arm64.
+#11 7.139 Preparing to unpack .../40-libharfbuzz0b_6.0.0+dfsg-3_arm64.deb ...
+#11 7.141 Unpacking libharfbuzz0b:arm64 (6.0.0+dfsg-3) ...
+#11 7.188 Selecting previously unselected package libjbig0:arm64.
+#11 7.189 Preparing to unpack .../41-libjbig0_2.1-6.1_arm64.deb ...
+#11 7.190 Unpacking libjbig0:arm64 (2.1-6.1) ...
+#11 7.204 Selecting previously unselected package libjpeg62-turbo:arm64.
+#11 7.204 Preparing to unpack .../42-libjpeg62-turbo_1%3a2.1.5-2_arm64.deb ...
+#11 7.206 Unpacking libjpeg62-turbo:arm64 (1:2.1.5-2) ...
+#11 7.226 Selecting previously unselected package liblcms2-2:arm64.
+#11 7.226 Preparing to unpack .../43-liblcms2-2_2.14-2+deb12u1_arm64.deb ...
+#11 7.228 Unpacking liblcms2-2:arm64 (2.14-2+deb12u1) ...
+#11 7.246 Selecting previously unselected package libopenjp2-7:arm64.
+#11 7.247 Preparing to unpack .../44-libopenjp2-7_2.5.0-2+deb12u3_arm64.deb ...
+#11 7.249 Unpacking libopenjp2-7:arm64 (2.5.0-2+deb12u3) ...
+#11 7.269 Selecting previously unselected package liblerc4:arm64.
+#11 7.269 Preparing to unpack .../45-liblerc4_4.0.0+ds-2_arm64.deb ...
+#11 7.271 Unpacking liblerc4:arm64 (4.0.0+ds-2) ...
+#11 7.288 Selecting previously unselected package libwebp7:arm64.
+#11 7.289 Preparing to unpack .../46-libwebp7_1.2.4-0.2+deb12u1_arm64.deb ...
+#11 7.290 Unpacking libwebp7:arm64 (1.2.4-0.2+deb12u1) ...
+#11 7.309 Selecting previously unselected package libtiff6:arm64.
+#11 7.309 Preparing to unpack .../47-libtiff6_4.5.0-6+deb12u4_arm64.deb ...
+#11 7.311 Unpacking libtiff6:arm64 (4.5.0-6+deb12u4) ...
+#11 7.335 Selecting previously unselected package libwebpmux3:arm64.
+#11 7.336 Preparing to unpack .../48-libwebpmux3_1.2.4-0.2+deb12u1_arm64.deb ...
+#11 7.337 Unpacking libwebpmux3:arm64 (1.2.4-0.2+deb12u1) ...
+#11 7.354 Selecting previously unselected package liblept5:arm64.
+#11 7.354 Preparing to unpack .../49-liblept5_1.82.0-3+b3_arm64.deb ...
+#11 7.356 Unpacking liblept5:arm64 (1.82.0-3+b3) ...
+#11 7.413 Selecting previously unselected package libnspr4:arm64.
+#11 7.414 Preparing to unpack .../50-libnspr4_2%3a4.35-1_arm64.deb ...
+#11 7.416 Unpacking libnspr4:arm64 (2:4.35-1) ...
+#11 7.437 Selecting previously unselected package libnss3:arm64.
+#11 7.438 Preparing to unpack .../51-libnss3_2%3a3.87.1-1+deb12u4_arm64.deb ...
+#11 7.440 Unpacking libnss3:arm64 (2:3.87.1-1+deb12u4) ...
+#11 7.507 Selecting previously unselected package libthai-data.
+#11 7.508 Preparing to unpack .../52-libthai-data_0.1.29-1_all.deb ...
+#11 7.510 Unpacking libthai-data (0.1.29-1) ...
+#11 7.534 Selecting previously unselected package libthai0:arm64.
+#11 7.535 Preparing to unpack .../53-libthai0_0.1.29-1_arm64.deb ...
+#11 7.536 Unpacking libthai0:arm64 (0.1.29-1) ...
+#11 7.554 Selecting previously unselected package libpango-1.0-0:arm64.
+#11 7.556 Preparing to unpack .../54-libpango-1.0-0_1.50.12+ds-1_arm64.deb ...
+#11 7.558 Unpacking libpango-1.0-0:arm64 (1.50.12+ds-1) ...
+#11 7.580 Selecting previously unselected package libpangoft2-1.0-0:arm64.
+#11 7.580 Preparing to unpack .../55-libpangoft2-1.0-0_1.50.12+ds-1_arm64.deb ...
+#11 7.583 Unpacking libpangoft2-1.0-0:arm64 (1.50.12+ds-1) ...
+#11 7.601 Selecting previously unselected package libpangocairo-1.0-0:arm64.
+#11 7.601 Preparing to unpack .../56-libpangocairo-1.0-0_1.50.12+ds-1_arm64.deb ...
+#11 7.603 Unpacking libpangocairo-1.0-0:arm64 (1.50.12+ds-1) ...
+#11 7.617 Selecting previously unselected package libpoppler126:arm64.
+#11 7.618 Preparing to unpack .../57-libpoppler126_22.12.0-2+deb12u3_arm64.deb ...
+#11 7.620 Unpacking libpoppler126:arm64 (22.12.0-2+deb12u3) ...
+#11 7.709 Selecting previously unselected package libtesseract5:arm64.
+#11 7.710 Preparing to unpack .../58-libtesseract5_5.3.0-2_arm64.deb ...
+#11 7.713 Unpacking libtesseract5:arm64 (5.3.0-2) ...
+#11 7.800 Selecting previously unselected package poppler-utils.
+#11 7.801 Preparing to unpack .../59-poppler-utils_22.12.0-2+deb12u3_arm64.deb ...
+#11 7.802 Unpacking poppler-utils (22.12.0-2+deb12u3) ...
+#11 7.829 Selecting previously unselected package python3-lib2to3.
+#11 7.830 Preparing to unpack .../60-python3-lib2to3_3.11.2-3_all.deb ...
+#11 7.831 Unpacking python3-lib2to3 (3.11.2-3) ...
+#11 7.855 Selecting previously unselected package python3-distutils.
+#11 7.856 Preparing to unpack .../61-python3-distutils_3.11.2-3_all.deb ...
+#11 7.857 Unpacking python3-distutils (3.11.2-3) ...
+#11 7.883 Selecting previously unselected package python3-pip-whl.
+#11 7.884 Preparing to unpack .../62-python3-pip-whl_23.0.1+dfsg-1_all.deb ...
+#11 7.886 Unpacking python3-pip-whl (23.0.1+dfsg-1) ...
+#11 7.961 Selecting previously unselected package python3-setuptools-whl.
+#11 7.962 Preparing to unpack .../63-python3-setuptools-whl_66.1.1-1+deb12u2_all.deb ...
+#11 7.963 Unpacking python3-setuptools-whl (66.1.1-1+deb12u2) ...
+#11 8.015 Selecting previously unselected package python3.11-venv.
+#11 8.015 Preparing to unpack .../64-python3.11-venv_3.11.2-6+deb12u9_arm64.deb ...
+#11 8.016 Unpacking python3.11-venv (3.11.2-6+deb12u9) ...
+#11 8.029 Selecting previously unselected package python3-venv.
+#11 8.030 Preparing to unpack .../65-python3-venv_3.11.2-1+b1_arm64.deb ...
+#11 8.032 Unpacking python3-venv (3.11.2-1+b1) ...
+#11 8.045 Selecting previously unselected package tesseract-ocr-eng.
+#11 8.046 Preparing to unpack .../66-tesseract-ocr-eng_1%3a4.1.0-2_all.deb ...
+#11 8.047 Unpacking tesseract-ocr-eng (1:4.1.0-2) ...
+#11 8.152 Selecting previously unselected package tesseract-ocr-osd.
+#11 8.154 Preparing to unpack .../67-tesseract-ocr-osd_1%3a4.1.0-2_all.deb ...
+#11 8.157 Unpacking tesseract-ocr-osd (1:4.1.0-2) ...
+#11 8.366 Selecting previously unselected package tesseract-ocr.
+#11 8.367 Preparing to unpack .../68-tesseract-ocr_5.3.0-2_arm64.deb ...
+#11 8.369 Unpacking tesseract-ocr (5.3.0-2) ...
+#11 8.423 Selecting previously unselected package tesseract-ocr-por.
+#11 8.424 Preparing to unpack .../69-tesseract-ocr-por_1%3a4.1.0-2_all.deb ...
+#11 8.426 Unpacking tesseract-ocr-por (1:4.1.0-2) ...
+#11 8.484 Setting up media-types (10.0.0) ...
+#11 8.490 Setting up libgraphite2-3:arm64 (1.3.14-1+deb12u1) ...
+#11 8.495 Setting up liblcms2-2:arm64 (2.14-2+deb12u1) ...
+#11 8.502 Setting up libpixman-1-0:arm64 (0.42.2-1) ...
+#11 8.508 Setting up libxau6:arm64 (1:1.0.9-1) ...
+#11 8.514 Setting up python3-setuptools-whl (66.1.1-1+deb12u2) ...
+#11 8.520 Setting up libkeyutils1:arm64 (1.6.3-2) ...
+#11 8.527 Setting up libpsl5:arm64 (0.21.2-1) ...
+#11 8.532 Setting up libicu72:arm64 (72.1-3+deb12u1) ...
+#11 8.538 Setting up liblerc4:arm64 (4.0.0+ds-2) ...
+#11 8.545 Setting up tesseract-ocr-por (1:4.1.0-2) ...
+#11 8.550 Setting up libdatrie1:arm64 (0.2.13-2+b1) ...
+#11 8.555 Setting up libglib2.0-0:arm64 (2.74.6-2+deb12u9) ...
+#11 8.563 No schema files found: doing nothing.
+#11 8.567 Setting up libtirpc-common (1.3.3+ds-1) ...
+#11 8.571 Setting up libbrotli1:arm64 (1.0.9-2+deb12u1) ...
+#11 8.575 Setting up libsqlite3-0:arm64 (3.40.1-2+deb12u2) ...
+#11 8.579 Setting up libnghttp2-14:arm64 (1.52.0-1+deb12u3) ...
+#11 8.585 Setting up libdeflate0:arm64 (1.14-1) ...
+#11 8.591 Setting up tesseract-ocr-eng (1:4.1.0-2) ...
+#11 8.597 Setting up libgomp1:arm64 (12.2.0-14+deb12u1) ...
+#11 8.604 Setting up libjbig0:arm64 (2.1-6.1) ...
+#11 8.610 Setting up libkrb5support0:arm64 (1.20.1-2+deb12u5) ...
+#11 8.617 Setting up libsasl2-modules-db:arm64 (2.1.28+dfsg-10) ...
+#11 8.624 Setting up libjpeg62-turbo:arm64 (1:2.1.5-2) ...
+#11 8.630 Setting up libx11-data (2:1.8.4-2+deb12u2) ...
+#11 8.638 Setting up libnspr4:arm64 (2:4.35-1) ...
+#11 8.645 Setting up librtmp1:arm64 (2.4+20151223.gitfa8646d.1-2+b2) ...
+#11 8.652 Setting up libfribidi0:arm64 (1.0.8-2.1) ...
+#11 8.659 Setting up libpng16-16:arm64 (1.6.39-2+deb12u6) ...
+#11 8.663 Setting up fonts-dejavu-core (2.37-6) ...
+#11 8.692 Setting up libncursesw6:arm64 (6.4-4) ...
+#11 8.698 Setting up libk5crypto3:arm64 (1.20.1-2+deb12u5) ...
+#11 8.705 Setting up libsasl2-2:arm64 (2.1.28+dfsg-10) ...
+#11 8.711 Setting up libwebp7:arm64 (1.2.4-0.2+deb12u1) ...
+#11 8.717 Setting up libgif7:arm64 (5.2.1-2.5+deb12u1) ...
+#11 8.722 Setting up libtiff6:arm64 (4.5.0-6+deb12u4) ...
+#11 8.726 Setting up libopenjp2-7:arm64 (2.5.0-2+deb12u3) ...
+#11 8.733 Setting up libthai-data (0.1.29-1) ...
+#11 8.743 Setting up libssh2-1:arm64 (1.10.0-3+deb12u1) ...
+#11 8.750 Setting up libkrb5-3:arm64 (1.20.1-2+deb12u5) ...
+#11 8.759 Setting up tesseract-ocr-osd (1:4.1.0-2) ...
+#11 8.764 Setting up openssl (3.0.22-1~deb12u2) ...
+#11 8.771 Setting up libwebpmux3:arm64 (1.2.4-0.2+deb12u1) ...
+#11 8.776 Setting up libbsd0:arm64 (0.11.7-2) ...
+#11 8.780 Setting up readline-common (8.2-1.3) ...
+#11 8.787 Setting up libxml2:arm64 (2.9.14+dfsg-1.3~deb12u6) ...
+#11 8.791 Setting up libxdmcp6:arm64 (1:1.1.2-3) ...
+#11 8.795 Setting up libxcb1:arm64 (1.15-1) ...
+#11 8.800 Setting up libarchive13:arm64 (3.6.2-1+deb12u5) ...
+#11 8.804 Setting up libxcb-render0:arm64 (1.15-1) ...
+#11 8.809 Setting up fontconfig-config (2.14.1-4) ...
+#11 8.868 debconf: unable to initialize frontend: Dialog
+#11 8.868 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#11 8.868 debconf: falling back to frontend: Readline
+#11 8.868 debconf: unable to initialize frontend: Readline
+#11 8.868 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/aarch64-linux-gnu/perl/5.36.0 /usr/local/share/perl/5.36.0 /usr/lib/aarch64-linux-gnu/perl5/5.36 /usr/share/perl5 /usr/lib/aarch64-linux-gnu/perl-base /usr/lib/aarch64-linux-gnu/perl/5.36 /usr/share/perl/5.36 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+#11 8.868 debconf: falling back to frontend: Teletype
+#11 8.961 Setting up libreadline8:arm64 (8.2-1.3) ...
+#11 8.966 Setting up libnss3:arm64 (2:3.87.1-1+deb12u4) ...
+#11 8.971 Setting up libxcb-shm0:arm64 (1.15-1) ...
+#11 8.981 Setting up libldap-2.5-0:arm64 (2.5.13+dfsg-5) ...
+#11 8.985 Setting up liblept5:arm64 (1.82.0-3+b3) ...
+#11 8.991 Setting up libthai0:arm64 (0.1.29-1) ...
+#11 8.995 Setting up ca-certificates (20250419~deb12u2) ...
+#11 9.056 debconf: unable to initialize frontend: Dialog
+#11 9.056 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#11 9.056 debconf: falling back to frontend: Readline
+#11 9.056 debconf: unable to initialize frontend: Readline
+#11 9.056 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/aarch64-linux-gnu/perl/5.36.0 /usr/local/share/perl/5.36.0 /usr/lib/aarch64-linux-gnu/perl5/5.36 /usr/share/perl5 /usr/lib/aarch64-linux-gnu/perl-base /usr/lib/aarch64-linux-gnu/perl/5.36 /usr/share/perl/5.36 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+#11 9.056 debconf: falling back to frontend: Teletype
+#11 9.245 Updating certificates in /etc/ssl/certs...
+#11 9.673 148 added, 0 removed; done.
+#11 9.730 Setting up libfreetype6:arm64 (2.12.1+dfsg-5+deb12u4) ...
+#11 9.734 Setting up libgssapi-krb5-2:arm64 (1.20.1-2+deb12u5) ...
+#11 9.739 Setting up libcurl4:arm64 (7.88.1-10+deb12u15) ...
+#11 9.743 Setting up libx11-6:arm64 (2:1.8.4-2+deb12u2) ...
+#11 9.746 Setting up libharfbuzz0b:arm64 (6.0.0+dfsg-3) ...
+#11 9.749 Setting up libfontconfig1:arm64 (2.14.1-4) ...
+#11 9.753 Setting up libtirpc3:arm64 (1.3.3+ds-1) ...
+#11 9.758 Setting up fontconfig (2.14.1-4) ...
+#11 9.761 Regenerating fonts cache... done.
+#11 11.86 Setting up libxrender1:arm64 (1:0.9.10-1.1) ...
+#11 11.86 Setting up python3-pip-whl (23.0.1+dfsg-1) ...
+#11 11.86 Setting up libpango-1.0-0:arm64 (1.50.12+ds-1) ...
+#11 11.87 Setting up libxext6:arm64 (2:1.3.4-1+b1) ...
+#11 11.88 Setting up libcairo2:arm64 (1.16.0-7) ...
+#11 11.88 Setting up libpoppler126:arm64 (22.12.0-2+deb12u3) ...
+#11 11.88 Setting up libtesseract5:arm64 (5.3.0-2) ...
+#11 11.89 Setting up libnsl2:arm64 (1.3.0-2) ...
+#11 11.89 Setting up poppler-utils (22.12.0-2+deb12u3) ...
+#11 11.90 Setting up libpangoft2-1.0-0:arm64 (1.50.12+ds-1) ...
+#11 11.90 Setting up libpangocairo-1.0-0:arm64 (1.50.12+ds-1) ...
+#11 11.91 Setting up libpython3.11-stdlib:arm64 (3.11.2-6+deb12u9) ...
+#11 11.92 Setting up tesseract-ocr (5.3.0-2) ...
+#11 11.92 Setting up libpython3-stdlib:arm64 (3.11.2-1+b1) ...
+#11 11.93 Setting up python3.11 (3.11.2-6+deb12u9) ...
+#11 12.48 Setting up python3 (3.11.2-1+b1) ...
+#11 12.50 running python rtupdate hooks for python3.11...
+#11 12.50 running python post-rtupdate hooks for python3.11...
+#11 12.62 Setting up python3-lib2to3 (3.11.2-3) ...
+#11 12.73 Setting up python3-distutils (3.11.2-3) ...
+#11 12.79 Setting up python3.11-venv (3.11.2-6+deb12u9) ...
+#11 12.84 Setting up python3-venv (3.11.2-1+b1) ...
+#11 12.84 Processing triggers for libc-bin (2.36-9+deb12u14) ...
+#11 12.88 Processing triggers for ca-certificates (20250419~deb12u2) ...
+#11 12.89 Updating certificates in /etc/ssl/certs...
+#11 13.09 0 added, 0 removed; done.
+#11 13.09 Running hooks in /etc/ca-certificates/update.d...
+#11 13.09 done.
+#11 ...
+
+#10 [dependencies 4/4] RUN npm install --global npm@11.6.2 && npm ci
+#10 14.69 
+#10 14.69 added 463 packages, and audited 464 packages in 8s
+#10 14.69 
+#10 14.69 173 packages are looking for funding
+#10 14.69   run `npm fund` for details
+#10 14.69 
+#10 14.69 found 0 vulnerabilities
+#10 14.70 npm notice
+#10 14.70 npm notice New major version of npm available! 11.6.2 -> 12.2.1
+#10 14.70 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+#10 14.70 npm notice To update run: npm install -g npm@12.2.1
+#10 14.70 npm notice
+#10 DONE 15.8s
+
+#11 [production 4/6] RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-venv poppler-utils tesseract-ocr tesseract-ocr-por tesseract-ocr-osd ca-certificates && rm -rf /var/lib/apt/lists/*  && python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r /tmp/pipeline-requirements.txt && npm install --global npm@11.6.2
+#11 ...
+
+#12 [build 1/2] COPY . .
+#12 ...
+
+#11 [production 4/6] RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-venv poppler-utils tesseract-ocr tesseract-ocr-por tesseract-ocr-osd ca-certificates && rm -rf /var/lib/apt/lists/*  && python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r /tmp/pipeline-requirements.txt && npm install --global npm@11.6.2
+#11 16.15 Collecting PyMuPDF==1.26.7
+#11 16.23   Downloading pymupdf-1.26.7-cp310-abi3-manylinux_2_28_aarch64.whl (23.5 MB)
+#11 16.67      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.5/23.5 MB 61.4 MB/s eta 0:00:00
+#11 16.86 Collecting Pillow==13.0.0
+#11 16.88   Downloading pillow-13.0.0-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (6.5 MB)
+#11 16.97      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.5/6.5 MB 73.9 MB/s eta 0:00:00
+#11 17.01 Collecting jsonschema==4.25.1
+#11 17.03   Downloading jsonschema-4.25.1-py3-none-any.whl (90 kB)
+#11 17.03      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.0/90.0 kB 204.7 MB/s eta 0:00:00
+#11 17.06 Collecting attrs==26.1.0
+#11 17.07   Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+#11 17.08      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.5/67.5 kB 90.3 MB/s eta 0:00:00
+#11 17.10 Collecting jsonschema-specifications==2025.9.1
+#11 17.12   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+#11 17.15 Collecting referencing==0.37.0
+#11 17.17   Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+#11 17.49 Collecting rpds-py==2026.9.1
+#11 17.51   Downloading rpds_py-2026.9.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (377 kB)
+#11 17.52      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 377.8/377.8 kB 146.9 MB/s eta 0:00:00
+#11 17.55 Collecting typing_extensions==4.16.0
+#11 17.57   Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+#11 17.57      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 594.2 MB/s eta 0:00:00
+#11 17.65 Installing collected packages: typing_extensions, rpds-py, PyMuPDF, Pillow, attrs, referencing, jsonschema-specifications, jsonschema
+#11 19.27 Successfully installed Pillow-13.0.0 PyMuPDF-1.26.7 attrs-26.1.0 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 referencing-0.37.0 rpds-py-2026.9.1 typing_extensions-4.16.0
+#11 ...
+
+#12 [build 1/2] COPY . .
+#12 DONE 7.1s
+
+#13 [build 2/2] RUN npm run build
+#13 0.330 
+#13 0.330 > curriculos-abertos@0.1.0 build
+#13 0.330 > next build
+#13 0.330 
+#13 0.797 ▲ Next.js 16.4.3 (Turbopack)
+#13 0.912 ✓ Running next.config.ts took 115ms
+#13 0.919 
+#13 0.934   Creating an optimized production build ...
+#13 6.849 ✓ Compiled successfully in 5.9s
+#13 6.857   Running TypeScript ...
+#13 ...
+
+#11 [production 4/6] RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-venv poppler-utils tesseract-ocr tesseract-ocr-por tesseract-ocr-osd ca-certificates && rm -rf /var/lib/apt/lists/*  && python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r /tmp/pipeline-requirements.txt && npm install --global npm@11.6.2
+#11 30.50 
+#11 30.50 removed 11 packages, and changed 70 packages in 11s
+#11 30.50 
+#11 30.50 28 packages are looking for funding
+#11 30.50   run `npm fund` for details
+#11 DONE 30.8s
+
+#13 [build 2/2] RUN npm run build
+#13 12.78   Finished TypeScript in 5.9s ...
+#13 12.78   Collecting page data using 9 workers ...
+#13 13.60   Generating static pages using 9 workers (0/4) ...
+#13 13.71   Generating static pages using 9 workers (1/4) 
+#13 13.73   Generating static pages using 9 workers (2/4) 
+#13 13.73   Generating static pages using 9 workers (3/4) 
+#13 13.73 ✓ Generating static pages using 9 workers (4/4) in 132ms
+#13 13.74 Turbopack build encountered 13 warnings:
+#13 13.74 ./src/domain/bundle-file.ts:38:57
+#13 13.74 Warning: Dynamic filesystem access causes tracing of the whole project
+#13 13.74   [90m36 |[0m ...(rootInput);[36mlet[0m latest:([33mBundleFileExpected[0m&{path?:string})|[36mundefined[0m;
+#13 13.74   [90m37 |[0m ...latest=[33mJSON[0m.parse([36mawait[0m readFile(resolve(root,[32m'latest.json'[0m),[32m'utf8'[0m));}[36mcatch[0m(error){[36mif[0m(...
+#13 13.74 [33m[1m>[0m [90m38 |[0m ...licit||latest?.path?[36mundefined[0m:([36mawait[0m readdir(root)).filter(x=>[35m/\.json(?:\.gz)?$/[0m.test(x...
+#13 13.74   [90m   |[0m                                         [33m[1m^^^^^^^^^^^^^[0m
+#13 13.74   [90m39 |[0m ...licit??latest?.path??(fallback?resolve(root,fallback):[36mundefined[0m);
+#13 13.74   [90m40 |[0m ... [33mError[0m([32m'Nenhuma publicação entregue em data/bundles.'[0m);
+#13 13.74   [90m41 |[0m ...e(filename),expected:explicit?[36mundefined[0m:latest,root};
+#13 13.74 
+#13 13.74 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#13 13.74 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#13 13.74 This can slow down deployments or lead to failures when size limits are exceeded.
+#13 13.74 To resolve this, you can
+#13 13.74 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#13 13.74 - only use them in development, or
+#13 13.74 - opt out by adding an ignore comment to the highlighted call: fs.readdir(/*turbopackIgnore: true*/ ...), or
+#13 13.74 - remove them.
+#13 13.74 
+#13 13.74 Import traces:
+#13 13.74   #1 [App Route]:
+#13 13.74     ./src/domain/bundle-file.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74   #2 [App Route]:
+#13 13.74     ./src/domain/bundle-file.ts
+#13 13.74     ./src/domain/shard-writer.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74 
+#13 13.74 ./src/domain/bundle-file.ts:14:19
+#13 13.74 Warning: Dynamic filesystem access causes tracing of the whole project
+#13 13.74   [90m12 |[0m [90m/** Verifies compressed bytes before bounded decompression, then verifies the decoded arti...[0m
+#13 13.74   [90m13 |[0m [36mexport[0m [36masync[0m [36mfunction[0m loadBundleFile(filename:string,options:[33mBundleFileOptions[0m={}) {
+#13 13.74 [33m[1m>[0m [90m14 |[0m  [36mconst[0m root=[36mawait[0m realpath(resolve(options.root??[32m'data/bundles'[0m)),path=[36mawait[0m realpath(reso...
+#13 13.74   [90m   |[0m                   [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#13 13.74   [90m15 |[0m  [36mif[0m(!path.startsWith(root+sep)||![35m/\.json(?:\.gz)?$/[0m.test(path))[36mthrow[0m [33mError[0m([32m'Bundle precisa...[0m
+#13 13.74   [90m16 |[0m  [36mconst[0m compressed=path.endsWith([32m'.gz'[0m);
+#13 13.74   [90m17 |[0m  [36mconst[0m maxFileBytes=bound(options.maxFileBytes,[33mNumber[0m(process.env.[33mDATA_MAX_FILE_BYTES[0m??[35m268...[0m
+#13 13.74 
+#13 13.74 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#13 13.74 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#13 13.74 This can slow down deployments or lead to failures when size limits are exceeded.
+#13 13.74 To resolve this, you can
+#13 13.74 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#13 13.74 - only use them in development, or
+#13 13.74 - opt out by adding an ignore comment to the highlighted call: fs.realpath(/*turbopackIgnore: true*/ ...), or
+#13 13.74 - remove them.
+#13 13.74 
+#13 13.74 Import traces:
+#13 13.74   #1 [App Route]:
+#13 13.74     ./src/domain/bundle-file.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74   #2 [App Route]:
+#13 13.74     ./src/domain/bundle-file.ts
+#13 13.74     ./src/domain/shard-writer.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74 
+#13 13.74 ./src/domain/bundle-file.ts:14:28
+#13 13.74 Warning: Dynamic filesystem access causes tracing of the whole project
+#13 13.74   [90m12 |[0m ...[90m* Verifies compressed bytes before bounded decompression, then verifies the decoded art...[0m
+#13 13.74   [90m13 |[0m ...[36mport[0m [36masync[0m [36mfunction[0m loadBundleFile(filename:string,options:[33mBundleFileOptions[0m={}) {
+#13 13.74 [33m[1m>[0m [90m14 |[0m ...[36monst[0m root=[36mawait[0m realpath(resolve(options.root??[32m'data/bundles'[0m)),path=[36mawait[0m realpath(res...
+#13 13.74   [90m   |[0m                             [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#13 13.74   [90m15 |[0m ...[36mf[0m(!path.startsWith(root+sep)||![35m/\.json(?:\.gz)?$/[0m.test(path))[36mthrow[0m [33mError[0m([32m'Bundle precis...[0m
+#13 13.74   [90m16 |[0m ...[36monst[0m compressed=path.endsWith([32m'.gz'[0m);
+#13 13.74   [90m17 |[0m ...[36monst[0m maxFileBytes=bound(options.maxFileBytes,[33mNumber[0m(process.env.[33mDATA_MAX_FILE_BYTES[0m??[35m26...[0m
+#13 13.74 
+#13 13.74 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#13 13.74 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#13 13.74 This can slow down deployments or lead to failures when size limits are exceeded.
+#13 13.74 To resolve this, you can
+#13 13.74 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#13 13.74 - only use them in development, or
+#13 13.74 - opt out by adding an ignore comment to the highlighted call: path.resolve(/*turbopackIgnore: true*/ ...), or
+#13 13.74 - remove them.
+#13 13.74 
+#13 13.74 Import traces:
+#13 13.74   #1 [App Route]:
+#13 13.74     ./src/domain/bundle-file.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74   #2 [App Route]:
+#13 13.74     ./src/domain/bundle-file.ts
+#13 13.74     ./src/domain/shard-writer.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74 
+#13 13.74 ./src/domain/bundle-file.ts:36:13
+#13 13.74 Warning: Dynamic filesystem access causes tracing of the whole project
+#13 13.74   [90m34 |[0m }
+#13 13.74   [90m35 |[0m [36mexport[0m [36masync[0m [36mfunction[0m resolveBundleFile(explicit?:string,rootInput=[32m'data/bundles'[0m) {
+#13 13.74 [33m[1m>[0m [90m36 |[0m  [36mconst[0m root=resolve(rootInput);[36mlet[0m latest:([33mBundleFileExpected[0m&{path?:string})|[36mundefined[0m;
+#13 13.74   [90m   |[0m             [33m[1m^^^^^^^^^^^^^^^^^^[0m
+#13 13.74   [90m37 |[0m  [36mif[0m(!explicit){[36mtry[0m{latest=[33mJSON[0m.parse([36mawait[0m readFile(resolve(root,[32m'latest.json'[0m),[32m'utf8'[0m));}[36m...[0m
+#13 13.74   [90m38 |[0m  [36mconst[0m fallback=explicit||latest?.path?[36mundefined[0m:([36mawait[0m readdir(root)).filter(x=>[35m/\.json(?...[0m
+#13 13.74   [90m39 |[0m  [36mconst[0m filename=explicit??latest?.path??(fallback?resolve(root,fallback):[36mundefined[0m);
+#13 13.74 
+#13 13.74 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#13 13.74 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#13 13.74 This can slow down deployments or lead to failures when size limits are exceeded.
+#13 13.74 To resolve this, you can
+#13 13.74 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#13 13.74 - only use them in development, or
+#13 13.74 - opt out by adding an ignore comment to the highlighted call: path.resolve(/*turbopackIgnore: true*/ ...), or
+#13 13.74 - remove them.
+#13 13.74 
+#13 13.74 Import traces:
+#13 13.74   #1 [App Route]:
+#13 13.74     ./src/domain/bundle-file.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74   #2 [App Route]:
+#13 13.74     ./src/domain/bundle-file.ts
+#13 13.74     ./src/domain/shard-writer.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74 
+#13 13.74 ./src/domain/json-snapshot-file.ts:72:25
+#13 13.74 Warning: Dynamic filesystem access causes tracing of the whole project
+#13 13.74   [90m70 |[0m ...[90mConverts complete JSON snapshots without retaining their national item/relation arrays. */[0m
+#13 13.74   [90m71 |[0m ...[36mrt[0m [36masync[0m [36mfunction[0m convertSnapshotFileToShards(filename:string,options:[33mSnapshotConversio...[0m
+#13 13.74 [33m[1m>[0m [90m72 |[0m ...[36mst[0m sourceRoot=[36mawait[0m realpath(resolve(options.root??[32m'data/bundles'[0m));
+#13 13.74   [90m   |[0m                        [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#13 13.74   [90m73 |[0m ...[36mst[0m path=[36mawait[0m realpath(resolve(filename));
+#13 13.74   [90m74 |[0m ...!path.startsWith(sourceRoot+sep)||![35m/\.json(?:\.gz)?$/[0m.test(path))[36mthrow[0m [33mError[0m([32m'Snapshot ...[0m
+#13 13.74   [90m75 |[0m ...[36mst[0m maxDecoded=streamLimit();[36mconst[0m info=[36mawait[0m stat(path);[36mif[0m(!info.isFile()||info.size<[35m1[0m|...
+#13 13.74 
+#13 13.74 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#13 13.74 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#13 13.74 This can slow down deployments or lead to failures when size limits are exceeded.
+#13 13.74 To resolve this, you can
+#13 13.74 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#13 13.74 - only use them in development, or
+#13 13.74 - opt out by adding an ignore comment to the highlighted call: fs.realpath(/*turbopackIgnore: true*/ ...), or
+#13 13.74 - remove them.
+#13 13.74 
+#13 13.74 Import traces:
+#13 13.74   #1 [App Route]:
+#13 13.74     ./src/domain/json-snapshot-file.ts
+#13 13.74     ./src/domain/shard-writer.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74   #2 [App Route]:
+#13 13.74     ./src/domain/json-snapshot-file.ts
+#13 13.74     ./src/domain/shards.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74 
+#13 13.74 ./src/domain/json-snapshot-file.ts:86:24
+#13 13.74 Warning: Dynamic filesystem access causes tracing of the whole project
+#13 13.74   [90m84 |[0m  [36mconst[0m cacheExpected={...options.expected,decoded_sha256:expectedDecoded};
+#13 13.74   [90m85 |[0m  [36mconst[0m cacheRoot=resolve(options.cacheRoot??[32m'data/extracted'[0m);workspaceRelative(cacheRoot).[36m..[0m
+#13 13.74 [33m[1m>[0m [90m86 |[0m  [36mconst[0m cacheBase=[36mawait[0m realpath(cacheRoot);workspaceRelative(cacheBase);
+#13 13.74   [90m   |[0m                        [33m[1m^^^^^^^^^^^^^^^^^^^[0m
+#13 13.74   [90m87 |[0m  [36mconst[0m directory=resolve(cacheBase,[32m`import-[0m${rawHash[32m}`[0m);
+#13 13.74   [90m88 |[0m  [36mconst[0m previous=[36mawait[0m cachedResult(directory,rawHash,info.size,cacheExpected,maxDecoded);[36mi.[0m..
+#13 13.74   [90m89 |[0m  [36mconst[0m temporary=[36mawait[0m mkdtemp(resolve(cacheBase,[32m`.import-[0m${rawHash[32m}-tmp-`[0m));
+#13 13.74 
+#13 13.74 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#13 13.74 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#13 13.74 This can slow down deployments or lead to failures when size limits are exceeded.
+#13 13.74 To resolve this, you can
+#13 13.74 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#13 13.74 - only use them in development, or
+#13 13.74 - opt out by adding an ignore comment to the highlighted call: fs.realpath(/*turbopackIgnore: true*/ ...), or
+#13 13.74 - remove them.
+#13 13.74 
+#13 13.74 Import traces:
+#13 13.74   #1 [App Route]:
+#13 13.74     ./src/domain/json-snapshot-file.ts
+#13 13.74     ./src/domain/shard-writer.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74   #2 [App Route]:
+#13 13.74     ./src/domain/json-snapshot-file.ts
+#13 13.74     ./src/domain/shards.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74 
+#13 13.74 ./src/domain/json-snapshot-file.ts:72:34
+#13 13.74 Warning: Dynamic filesystem access causes tracing of the whole project
+#13 13.74   [90m70 |[0m ...[90merts complete JSON snapshots without retaining their national item/relation arrays. */[0m
+#13 13.74   [90m71 |[0m ...[36msync[0m [36mfunction[0m convertSnapshotFileToShards(filename:string,options:[33mSnapshotConversionOpt...[0m
+#13 13.74 [33m[1m>[0m [90m72 |[0m ...ourceRoot=[36mawait[0m realpath(resolve(options.root??[32m'data/bundles'[0m));
+#13 13.74   [90m   |[0m                             [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#13 13.74   [90m73 |[0m ...ath=[36mawait[0m realpath(resolve(filename));
+#13 13.74   [90m74 |[0m ...h.startsWith(sourceRoot+sep)||![35m/\.json(?:\.gz)?$/[0m.test(path))[36mthrow[0m [33mError[0m([32m'Snapshot prec...[0m
+#13 13.74   [90m75 |[0m ...axDecoded=streamLimit();[36mconst[0m info=[36mawait[0m stat(path);[36mif[0m(!info.isFile()||info.size<[35m1[0m||inf...
+#13 13.74 
+#13 13.74 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#13 13.74 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#13 13.74 This can slow down deployments or lead to failures when size limits are exceeded.
+#13 13.74 To resolve this, you can
+#13 13.74 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#13 13.74 - only use them in development, or
+#13 13.74 - opt out by adding an ignore comment to the highlighted call: path.resolve(/*turbopackIgnore: true*/ ...), or
+#13 13.74 - remove them.
+#13 13.74 
+#13 13.74 Import traces:
+#13 13.74   #1 [App Route]:
+#13 13.74     ./src/domain/json-snapshot-file.ts
+#13 13.74     ./src/domain/shard-writer.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74   #2 [App Route]:
+#13 13.74     ./src/domain/json-snapshot-file.ts
+#13 13.74     ./src/domain/shards.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74 
+#13 13.74 ./src/domain/json-snapshot-file.ts:85:18
+#13 13.74 Warning: Dynamic filesystem access causes tracing of the whole project
+#13 13.74   [90m83 |[0m  [36mif[0m(options.expected?.decoded_bytes!==[36mundefined[0m&&(![33mNumber[0m.isSafeInteger(options.expected.d...
+#13 13.74   [90m84 |[0m  [36mconst[0m cacheExpected={...options.expected,decoded_sha256:expectedDecoded};
+#13 13.74 [33m[1m>[0m [90m85 |[0m  [36mconst[0m cacheRoot=resolve(options.cacheRoot??[32m'data/extracted'[0m);workspaceRelative(cacheRoot).[36m..[0m
+#13 13.74   [90m   |[0m                  [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#13 13.74   [90m86 |[0m  [36mconst[0m cacheBase=[36mawait[0m realpath(cacheRoot);workspaceRelative(cacheBase);
+#13 13.74   [90m87 |[0m  [36mconst[0m directory=resolve(cacheBase,[32m`import-[0m${rawHash[32m}`[0m);
+#13 13.74   [90m88 |[0m  [36mconst[0m previous=[36mawait[0m cachedResult(directory,rawHash,info.size,cacheExpected,maxDecoded);[36mi.[0m..
+#13 13.74 
+#13 13.74 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#13 13.74 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#13 13.74 This can slow down deployments or lead to failures when size limits are exceeded.
+#13 13.74 To resolve this, you can
+#13 13.74 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#13 13.74 - only use them in development, or
+#13 13.74 - opt out by adding an ignore comment to the highlighted call: path.resolve(/*turbopackIgnore: true*/ ...), or
+#13 13.74 - remove them.
+#13 13.74 
+#13 13.74 Import traces:
+#13 13.74   #1 [App Route]:
+#13 13.74     ./src/domain/json-snapshot-file.ts
+#13 13.74     ./src/domain/shard-writer.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74   #2 [App Route]:
+#13 13.74     ./src/domain/json-snapshot-file.ts
+#13 13.74     ./src/domain/shards.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74 
+#13 13.74 ./src/domain/schema-pin.ts:50:20
+#13 13.74 Warning: Dynamic filesystem access causes tracing of the whole project
+#13 13.74   [90m48 |[0m  [36mtry[0m{
+#13 13.74   [90m49 |[0m   [36mif[0m(([36mawait[0m lstat(root)).isSymbolicLink()||([36mawait[0m lstat(path)).isSymbolicLink())fail([32m'SCHE...[0m
+#13 13.74 [33m[1m>[0m [90m50 |[0m   [36mconst[0m base=[36mawait[0m realpath(root),located=[36mawait[0m realpath(path);[36mif[0m(located!==join(base,vers...
+#13 13.74   [90m   |[0m                    [33m[1m^^^^^^^^^^^^^^[0m
+#13 13.74   [90m51 |[0m   [36mconst[0m file=[36mawait[0m open(located,constants.[33mO_RDONLY[0m|constants.[33mO_NOFOLLOW[0m);[36mlet[0m bytes:[33mBuffer[0m;
+#13 13.74   [90m52 |[0m   [36mtry[0m{[36mconst[0m info=[36mawait[0m file.stat();[36mif[0m(!info.isFile()||info.size<[35m1[0m||info.size>[33mMAX_SCHEMA_BY...[0m
+#13 13.74   [90m53 |[0m   [36mconst[0m hash=createHash([32m'sha256'[0m).update(bytes).digest([32m'hex'[0m);[36mif[0m(hash!==[33mPUBLICATION_SCHEMA.[0m..
+#13 13.74 
+#13 13.74 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#13 13.74 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#13 13.74 This can slow down deployments or lead to failures when size limits are exceeded.
+#13 13.74 To resolve this, you can
+#13 13.74 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#13 13.74 - only use them in development, or
+#13 13.74 - opt out by adding an ignore comment to the highlighted call: fs.realpath(/*turbopackIgnore: true*/ ...), or
+#13 13.74 - remove them.
+#13 13.74 
+#13 13.74 Import traces:
+#13 13.74   #1 [App Route]:
+#13 13.74     ./src/domain/schema-pin.ts
+#13 13.74     ./src/domain/publication.ts
+#13 13.74     ./src/admin/curation.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74   #2 [Server Component]:
+#13 13.74     ./src/domain/schema-pin.ts
+#13 13.74     ./src/domain/publication.ts
+#13 13.74     ./src/domain/service.ts
+#13 13.74     ./src/app/desenvolvedores/page.tsx
+#13 13.74 
+#13 13.74   #3 [App Route]:
+#13 13.74     ./src/domain/schema-pin.ts
+#13 13.74     ./src/domain/shard-writer.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74 
+#13 13.74 ./src/domain/schema-pin.ts:44:13
+#13 13.74 Warning: Dynamic filesystem access causes tracing of the whole project
+#13 13.74   [90m42 |[0m [90m/** Original/restore bundle roots share data/schema; transcode caches explicitly retain th...[0m
+#13 13.74   [90m43 |[0m [36mexport[0m [36mfunction[0m schemaRootForBundleRoot(bundleRoot?:string):string{
+#13 13.74 [33m[1m>[0m [90m44 |[0m  [36mconst[0m root=resolve(bundleRoot??[32m'data/bundles'[0m);[36mreturn[0m basename(root)===[32m'bundles'[0m&&basenam...
+#13 13.74   [90m   |[0m             [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#13 13.74   [90m45 |[0m }
+#13 13.74   [90m46 |[0m [36mexport[0m [36masync[0m [36mfunction[0m verifyPublicationSchema(value:[33mDeclaration[0m,options:[33mSchemaPinOptions[0m={...
+#13 13.74   [90m47 |[0m  [36mconst[0m version=assertSchemaDeclaration(value),root=resolve(options.schemaRoot??[32m'data/schem..[0m.
+#13 13.74 
+#13 13.74 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#13 13.74 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#13 13.74 This can slow down deployments or lead to failures when size limits are exceeded.
+#13 13.74 To resolve this, you can
+#13 13.74 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#13 13.74 - only use them in development, or
+#13 13.74 - opt out by adding an ignore comment to the highlighted call: path.resolve(/*turbopackIgnore: true*/ ...), or
+#13 13.74 - remove them.
+#13 13.74 
+#13 13.74 Import traces:
+#13 13.74   #1 [App Route]:
+#13 13.74     ./src/domain/schema-pin.ts
+#13 13.74     ./src/domain/publication.ts
+#13 13.74     ./src/admin/curation.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74   #2 [Server Component]:
+#13 13.74     ./src/domain/schema-pin.ts
+#13 13.74     ./src/domain/publication.ts
+#13 13.74     ./src/domain/service.ts
+#13 13.74     ./src/app/desenvolvedores/page.tsx
+#13 13.74 
+#13 13.74   #3 [App Route]:
+#13 13.74     ./src/domain/schema-pin.ts
+#13 13.74     ./src/domain/shard-writer.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74 
+#13 13.74 ./src/domain/schema-pin.ts:47:52
+#13 13.74 Warning: Dynamic filesystem access causes tracing of the whole project
+#13 13.74   [90m45 |[0m ...
+#13 13.74   [90m46 |[0m ...ublicationSchema(value:[33mDeclaration[0m,options:[33mSchemaPinOptions[0m={}):[33mPromise[0m<[33mVerifiedPublica...[0m
+#13 13.74 [33m[1m>[0m [90m47 |[0m ...claration(value),root=resolve(options.schemaRoot??[32m'data/schema'[0m),path=join(root,version.[32m..[0m
+#13 13.74   [90m   |[0m                          [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#13 13.74   [90m48 |[0m ...
+#13 13.74   [90m49 |[0m ...mbolicLink()||([36mawait[0m lstat(path)).isSymbolicLink())fail([32m'SCHEMA_PATH_ESCAPE'[0m,[32m'JSON Sche...[0m
+#13 13.74   [90m50 |[0m ...oot),located=[36mawait[0m realpath(path);[36mif[0m(located!==join(base,version+[32m'.json'[0m))fail([32m'SCHEMA_...[0m
+#13 13.74 
+#13 13.74 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#13 13.74 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#13 13.74 This can slow down deployments or lead to failures when size limits are exceeded.
+#13 13.74 To resolve this, you can
+#13 13.74 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#13 13.74 - only use them in development, or
+#13 13.74 - opt out by adding an ignore comment to the highlighted call: path.resolve(/*turbopackIgnore: true*/ ...), or
+#13 13.74 - remove them.
+#13 13.74 
+#13 13.74 Import traces:
+#13 13.74   #1 [App Route]:
+#13 13.74     ./src/domain/schema-pin.ts
+#13 13.74     ./src/domain/publication.ts
+#13 13.74     ./src/admin/curation.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74   #2 [Server Component]:
+#13 13.74     ./src/domain/schema-pin.ts
+#13 13.74     ./src/domain/publication.ts
+#13 13.74     ./src/domain/service.ts
+#13 13.74     ./src/app/desenvolvedores/page.tsx
+#13 13.74 
+#13 13.74   #3 [App Route]:
+#13 13.74     ./src/domain/schema-pin.ts
+#13 13.74     ./src/domain/shard-writer.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74 
+#13 13.74 ./src/domain/shard-writer.ts:107:61
+#13 13.74 Warning: Dynamic filesystem access causes tracing of the whole project
+#13 13.74   [90m105 |[0m ...ath(process.cwd());[36mconst[0m requestedRoot=resolve(options.root??[32m'data/bundles'[0m);
+#13 13.74   [90m106 |[0m ...rkspace))[36mthrow[0m [33mError[0m([32m'Raiz do artefato deve estar no workspace.'[0m);
+#13 13.74 [33m[1m>[0m [90m107 |[0m ...requestedRoot);[36mconst[0m root=[36mawait[0m realpath(requestedRoot);
+#13 13.74   [90m    |[0m                                    [33m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+#13 13.74   [90m108 |[0m ...[36mthrow[0m [33mError[0m([32m'Raiz física do artefato fora do workspace.'[0m);
+#13 13.74   [90m109 |[0m ...solve(options.directory);
+#13 13.74   [90m110 |[0m ...ry,root))[36mthrow[0m [33mError[0m([32m'Diretório de artefato fora da raiz permitida.'[0m);
+#13 13.74 
+#13 13.74 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#13 13.74 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#13 13.74 This can slow down deployments or lead to failures when size limits are exceeded.
+#13 13.74 To resolve this, you can
+#13 13.74 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#13 13.74 - only use them in development, or
+#13 13.74 - opt out by adding an ignore comment to the highlighted call: fs.realpath(/*turbopackIgnore: true*/ ...), or
+#13 13.74 - remove them.
+#13 13.74 
+#13 13.74 Import trace:
+#13 13.74   App Route:
+#13 13.74     ./src/domain/shard-writer.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74 
+#13 13.74 ./src/domain/shard-writer.ts:105:68
+#13 13.74 Warning: Dynamic filesystem access causes tracing of the whole project
+#13 13.74   [90m103 |[0m ...
+#13 13.74   [90m104 |[0m ...[32mers'[0m,[32m'contributions'[0m,[32m'admin'[0m,[32m'sessions'[0m,[32m'passwords'[0m])[36mif[0m([33mObject[0m.hasOwn(header,key))[36mthro.[0m.[33m.[0m
+#13 13.74 [33m[1m>[0m [90m105 |[0m ...d());[36mconst[0m requestedRoot=resolve(options.root??[32m'data/bundles'[0m);
+#13 13.74   [90m    |[0m                             [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#13 13.74   [90m106 |[0m ... [33mError[0m([32m'Raiz do artefato deve estar no workspace.'[0m);
+#13 13.74   [90m107 |[0m ...;[36mconst[0m root=[36mawait[0m realpath(requestedRoot);
+#13 13.74   [90m108 |[0m ...[32maiz física do artefato fora do workspace.'[0m);
+#13 13.74 
+#13 13.74 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#13 13.74 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#13 13.74 This can slow down deployments or lead to failures when size limits are exceeded.
+#13 13.74 To resolve this, you can
+#13 13.74 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#13 13.74 - only use them in development, or
+#13 13.74 - opt out by adding an ignore comment to the highlighted call: path.resolve(/*turbopackIgnore: true*/ ...), or
+#13 13.74 - remove them.
+#13 13.74 
+#13 13.74 Import trace:
+#13 13.74   App Route:
+#13 13.74     ./src/domain/shard-writer.ts
+#13 13.74     ./src/domain/ingestion-update.ts
+#13 13.74     ./src/admin/candidates.ts
+#13 13.74     ./src/app/api/admin/[...path]/route.ts
+#13 13.74 
+#13 13.74 
+#13 13.74   Finalizing page optimization ...
+#13 13.78 
+#13 13.80 Route (app)
+#13 13.80 ┌ ƒ /
+#13 13.80 ├ ○ /_not-found
+#13 13.80 ├ ƒ /admin
+#13 13.80 ├ ƒ /analises
+#13 13.80 ├ ƒ /api/admin/[...path]
+#13 13.80 ├ ƒ /api/auth/[...all]
+#13 13.80 ├ ƒ /api/health
+#13 13.80 ├ ƒ /api/metrics
+#13 13.80 ├ ƒ /api/ready
+#13 13.80 ├ ƒ /api/v1/[[...path]]
+#13 13.80 ├ ƒ /aprendizagens/[id]
+#13 13.80 ├ ƒ /buscar
+#13 13.80 ├ ƒ /comparar
+#13 13.80 ├ ƒ /contribuir
+#13 13.80 ├ ƒ /curriculos/[id]
+#13 13.80 ├ ƒ /desenvolvedores
+#13 13.80 ├ ƒ /desenvolvedores/openapi
+#13 13.80 ├ ƒ /downloads
+#13 13.80 ├ ƒ /fontes
+#13 13.80 ├ ○ /icon.svg
+#13 13.80 ├ ƒ /mcp
+#13 13.80 ├ ƒ /panorama/[id]
+#13 13.80 ├ ƒ /publicacoes
+#13 13.80 └ ƒ /ufs/[uf]
+#13 13.80 
+#13 13.80 
+#13 13.80 ○  (Static)   prerendered as static content
+#13 13.80 ƒ  (Dynamic)  server-rendered on demand
+#13 13.80 
+#13 DONE 14.2s
+
+#14 [production 5/6] COPY --from=build --chown=node:node /app ./
+#14 DONE 11.2s
+
+#15 [production 6/6] RUN mkdir -p /app/var /app/data/raw /app/data/extracted && chown node:node /app/var /app/data /app/data/raw /app/data/extracted
+#15 DONE 0.3s
+
+#16 exporting to image
+#16 exporting layers
+#16 exporting layers 36.8s done
+#16 exporting manifest sha256:4bdec79a76cf413e8e292709dce81a869170191931d9419fe8df625fdd90afa1
+#16 exporting manifest sha256:4bdec79a76cf413e8e292709dce81a869170191931d9419fe8df625fdd90afa1 0.0s done
+#16 exporting config sha256:886598ca09cee266a149e9de84e9564173f32e0820736e03f7713e0f32f92597 done
+#16 exporting attestation manifest sha256:6f6f512df3607037a8a78689d6d662ec3245c780c6d85c5e2eae6659a1765a1e done
+#16 exporting manifest list sha256:e88c4909b56248bf90186ae8ee0071a286a4668c89c27047e8d28089871a59a0 done
+#16 naming to docker.io/library/curriculos-abertos:local done
+#16 unpacking to docker.io/library/curriculos-abertos:local
+#16 unpacking to docker.io/library/curriculos-abertos:local 50.4s done
+#16 DONE 87.3s
+
+#17 resolving provenance for metadata file
+#17 DONE 0.0s
+ curriculos-abertos:local  Built

@@ -22,7 +22,7 @@ try {
   const parsed=new URL(process.env.TEST_DATABASE_ADMIN_URL);parsed.pathname='/'+database;url=parsed.toString();
  }else {
   await run('docker',['info','--format','{{.ServerVersion}}'],process.env,true);
-  const image=process.env.TEST_POSTGRES_IMAGE??'postgres:17';
+  const image=process.env.TEST_POSTGRES_IMAGE??'postgres:17.11-bookworm';
   await run('docker',['run','-d','--rm','--name',container,'-p','127.0.0.1::5432','-e','POSTGRES_USER=curriculum_test','-e',`POSTGRES_DB=${database}`,'-e','POSTGRES_PASSWORD',image],{...process.env,POSTGRES_PASSWORD:password},true);createdContainer=true;
   const portOutput=await run('docker',['port',container,'5432/tcp'],process.env,true);
   const port=portOutput.match(/127\.0\.0\.1:(\d+)/)?.[1];if(!port)throw Error('Disposable PostgreSQL port not found.');

@@ -1,0 +1,1389 @@
+{
+  "adapter_path": "data/manifests/uncoded/ro-eletivas-competency-fields-v3.json",
+  "adapter_sha256": "6feac57d112b6ee10ab26eb26533728c9d95b29cd95055b9f62a6da35d5e8a95",
+  "base809_preserved": true,
+  "binding_ready": true,
+  "census_correction": {
+    "actual_all_fields": 43,
+    "missing_heading": "COMPETENCIA GERAL",
+    "page": 70,
+    "previous_accented_fields": 42,
+    "prior_missing_field_claim_retracted": true,
+    "project": "MAT10"
+  },
+  "command": "var/venv-pipeline/bin/python docs/evidence/source-audit-ro/build_eletivas_competencies.py",
+  "complete_competency_fields": 43,
+  "engine": {
+    "pymupdf": "1.26.7",
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "field_units": [
+    {
+      "bbox": [
+        105.77999877929688,
+        545.4869995117188,
+        951.7200927734375,
+        641.8516845703125
+      ],
+      "field_key": "projeto-LGG1-p24-campo-2",
+      "page": 24,
+      "project": "LGG1",
+      "text_sha256": "aa42ac76099e27a70e848f1402ba9f705da9590ff228334437fbdc9507f623db",
+      "units": [
+        {
+          "end": 267,
+          "key": "projeto-LGG1-p24-campo-2-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "aa42ac76099e27a70e848f1402ba9f705da9590ff228334437fbdc9507f623db"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        109.77935791015625,
+        550.8204345703125,
+        944.5443725585938,
+        624.3950805664062
+      ],
+      "field_key": "projeto-LGG2-p27-campo-5",
+      "page": 27,
+      "project": "LGG2",
+      "text_sha256": "99980ec002675003fd7d212f505676dfd889e80fcb10c52e5700af31b2d41899",
+      "units": [
+        {
+          "end": 369,
+          "key": "projeto-LGG2-p27-campo-5-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "99980ec002675003fd7d212f505676dfd889e80fcb10c52e5700af31b2d41899"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        562.1183471679688,
+        322.3332214355469,
+        951.09912109375,
+        427.0948486328125
+      ],
+      "field_key": "projeto-LGG3-p29-campo-8",
+      "page": 29,
+      "project": "LGG3",
+      "text_sha256": "a420dd871a44971c28a7586ca16d7ae8dc2198814c92414e7ec20ecbc14fd401",
+      "units": [
+        {
+          "end": 78,
+          "key": "projeto-LGG3-p29-campo-8-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "cbd9f1af1600482be640ee41feed665526708c6b4702a90aa1620468c2895270"
+        },
+        {
+          "end": 120,
+          "key": "projeto-LGG3-p29-campo-8-competencia-unidade-2",
+          "kind": "competencia_geral",
+          "start": 78,
+          "text_sha256": "d2f71637e63ec54c6fda6f1a4ef50f997f40084f0a062384cce6ae7b7d58d717"
+        },
+        {
+          "end": 184,
+          "key": "projeto-LGG3-p29-campo-8-competencia-unidade-3",
+          "kind": "objetivo_formativo",
+          "start": 120,
+          "text_sha256": "34a031b7a73ef0c945979a3c4ac4e737df2295c67bfd328d653853a56dc365f5"
+        },
+        {
+          "end": 237,
+          "key": "projeto-LGG3-p29-campo-8-competencia-unidade-4",
+          "kind": "competencia_geral",
+          "start": 184,
+          "text_sha256": "3fa248a2e8f4e46ee64fbb4ae4ea9208d3caab4513c6cfa8d2bbd6908d897cdc"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        565.0800170898438,
+        317.7960205078125,
+        950.9955444335938,
+        736.8076171875
+      ],
+      "field_key": "projeto-LGG4-p31-campo-11",
+      "page": 31,
+      "project": "LGG4",
+      "text_sha256": "31a88cdb578b6e987c782373f2717bb79e0786edde24131a4840ec57eb7d60e1",
+      "units": [
+        {
+          "end": 160,
+          "key": "projeto-LGG4-p31-campo-11-competencia-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "40679ef1778d95f19ec1202c965cf3ac7e81a033a9860533d4c471f9eae9f815"
+        },
+        {
+          "end": 226,
+          "key": "projeto-LGG4-p31-campo-11-competencia-unidade-2",
+          "kind": "competencia_geral",
+          "start": 160,
+          "text_sha256": "1168dd702a076301160b9139009365777fed6d9007af600850d1b6bf93fb213c"
+        },
+        {
+          "end": 280,
+          "key": "projeto-LGG4-p31-campo-11-competencia-unidade-3",
+          "kind": "competencia_geral",
+          "start": 226,
+          "text_sha256": "aaefb3dceadde0d89e9494a80cef2342837c71f4e8b3dfb00b1912a53915c665"
+        },
+        {
+          "end": 380,
+          "key": "projeto-LGG4-p31-campo-11-competencia-unidade-4",
+          "kind": "competencia_geral",
+          "start": 280,
+          "text_sha256": "b3f7ff7c51f22aa9abae2c102289779903c8848af4b9a8d46e19a26a176c18d5"
+        },
+        {
+          "end": 465,
+          "key": "projeto-LGG4-p31-campo-11-competencia-unidade-5",
+          "kind": "competencia_geral",
+          "start": 380,
+          "text_sha256": "f62448d743875d7cdfaf73ec07ab89d32f0b89ac027fc38faa6ddbe3da9fb929"
+        },
+        {
+          "end": 578,
+          "key": "projeto-LGG4-p31-campo-11-competencia-unidade-6",
+          "kind": "competencia_geral",
+          "start": 465,
+          "text_sha256": "7205f8eed2d68ae46b31b52027ead4a9cf5ac7cd1df89dfc0b7df5be804b68b6"
+        },
+        {
+          "end": 701,
+          "key": "projeto-LGG4-p31-campo-11-competencia-unidade-7",
+          "kind": "competencia_geral",
+          "start": 578,
+          "text_sha256": "b13a02a82cf782ce3c9e2f26e5ca416d6dea3326aa66ba61b92c4ed655a02fe2"
+        },
+        {
+          "end": 776,
+          "key": "projeto-LGG4-p31-campo-11-competencia-unidade-8",
+          "kind": "competencia_geral",
+          "start": 701,
+          "text_sha256": "aa5610426953a12ef4e03c625afa7ca7aecf68bf1cf04a3e3d142ec3bcc2f59d"
+        },
+        {
+          "end": 979,
+          "key": "projeto-LGG4-p31-campo-11-competencia-unidade-9",
+          "kind": "competencia_geral",
+          "start": 776,
+          "text_sha256": "8f3eed83d30b5aee798a5d231ad38d4063df38982400cc3b6ed71a6b6cd85438"
+        },
+        {
+          "end": 1077,
+          "key": "projeto-LGG4-p31-campo-11-competencia-unidade-10",
+          "kind": "competencia_geral",
+          "start": 979,
+          "text_sha256": "b40fdab6a73b235562e91be083474674c029c5e47c49a8a48fcb9768e800edbb"
+        },
+        {
+          "end": 1214,
+          "key": "projeto-LGG4-p31-campo-11-competencia-unidade-11",
+          "kind": "competencia_geral",
+          "start": 1077,
+          "text_sha256": "9c843c50964eb7c345bf88b283a2569bc2f333b6bf36e5531159912fd6d71f52"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        548.0183715820312,
+        318.5460205078125,
+        951.078857421875,
+        528.523681640625
+      ],
+      "field_key": "projeto-LGG5-p34-campo-14",
+      "page": 34,
+      "project": "LGG5",
+      "text_sha256": "3d5993a2d9731695e30c52e9a2b46a484cf0336f49adc906ac773b06c2d87b10",
+      "units": [
+        {
+          "end": 218,
+          "key": "projeto-LGG5-p34-campo-14-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "269bc4c45be2a38cb82aa6a04809eb6fdcd59996b6da16f69aba41932312103c"
+        },
+        {
+          "end": 439,
+          "key": "projeto-LGG5-p34-campo-14-competencia-unidade-2",
+          "kind": "competencia_geral",
+          "start": 218,
+          "text_sha256": "d6c59dc0e2db6e0f5ace126ce58030896a7b272e62c9e1366e376fdd7cfab103"
+        },
+        {
+          "end": 628,
+          "key": "projeto-LGG5-p34-campo-14-competencia-unidade-3",
+          "kind": "competencia_geral",
+          "start": 439,
+          "text_sha256": "80251d9e527b682ee8ca05284068dd71fade8ede786c8257d477913d232fbd86"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        568.8504028320312,
+        327.85321044921875,
+        951.7359008789062,
+        416.0164489746094
+      ],
+      "field_key": "projeto-LGG6-p35-campo-17",
+      "page": 35,
+      "project": "LGG6",
+      "text_sha256": "8deada31894d4dbe5279d47ccd35e53b31b45f98b1cee3a9917595b900fba013",
+      "units": [
+        {
+          "end": 74,
+          "key": "projeto-LGG6-p35-campo-17-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "ec7fcc63d06869565f1bf68d4dd5237d7decbb6dd47bed61809bafd89ee3e660"
+        },
+        {
+          "end": 196,
+          "key": "projeto-LGG6-p35-campo-17-competencia-unidade-2",
+          "kind": "competencia_geral",
+          "start": 74,
+          "text_sha256": "4285b877c1e373aa6174ad4ff3f415236ed56cb15439215fd2e07c7423546d90"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.67967987060547,
+        640.8948364257812,
+        515.8914184570312,
+        762.438232421875
+      ],
+      "field_key": "projeto-LGG7-p36-campo-20",
+      "page": 36,
+      "project": "LGG7",
+      "text_sha256": "2b9b8eabfc6715004574e4c17e2f3d7aed553ae6364117d03332bff6dd650884",
+      "units": [
+        {
+          "end": 379,
+          "key": "projeto-LGG7-p36-campo-20-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "2b9b8eabfc6715004574e4c17e2f3d7aed553ae6364117d03332bff6dd650884"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75959777832031,
+        541.2072143554688,
+        550.818603515625,
+        648.715576171875
+      ],
+      "field_key": "projeto-LGG8-p40-campo-23",
+      "page": 40,
+      "project": "LGG8",
+      "text_sha256": "846ff34f465ec456f71fa3195cb7a2c66ecde58a9103c6a20a8774ebcde6cf3d",
+      "units": [
+        {
+          "end": 363,
+          "key": "projeto-LGG8-p40-campo-23-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "846ff34f465ec456f71fa3195cb7a2c66ecde58a9103c6a20a8774ebcde6cf3d"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        104.207275390625,
+        500.6880187988281,
+        950.13232421875,
+        579.9493408203125
+      ],
+      "field_key": "projeto-LGG9-p44-campo-26",
+      "page": 44,
+      "project": "LGG9",
+      "text_sha256": "4eebe3c096ab7f74564833c95b76f7936ccfda0e7b0d6783ef303fbb5f37f53c",
+      "units": [
+        {
+          "end": 362,
+          "key": "projeto-LGG9-p44-campo-26-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "4eebe3c096ab7f74564833c95b76f7936ccfda0e7b0d6783ef303fbb5f37f53c"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        106.16975402832031,
+        674.2056274414062,
+        951.3297729492188,
+        793.5916748046875
+      ],
+      "field_key": "projeto-LGG10-p47-campo-29",
+      "page": 47,
+      "project": "LGG10",
+      "text_sha256": "2a3045050e28c7fcc37fd304295a33a037673eff6c14233de8737a4dbf7c33f6",
+      "units": [
+        {
+          "end": 68,
+          "key": "projeto-LGG10-p47-campo-29-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "a2c5d9611bfe5f934da3c1492db5d81ae81fc062e740552db70ea3b560ac5586"
+        },
+        {
+          "end": 136,
+          "key": "projeto-LGG10-p47-campo-29-competencia-unidade-2",
+          "kind": "competencia_geral",
+          "start": 68,
+          "text_sha256": "8ef98cfdf5e24eaa37ddfc9a52f0450e542a8edd9138fca9b2501d077cc9f94b"
+        },
+        {
+          "end": 173,
+          "key": "projeto-LGG10-p47-campo-29-competencia-unidade-3",
+          "kind": "competencia_geral",
+          "start": 136,
+          "text_sha256": "c199b907983171048362817e2152cfabb4929c53b8afa0680a5347a5e8217484"
+        },
+        {
+          "end": 214,
+          "key": "projeto-LGG10-p47-campo-29-competencia-unidade-4",
+          "kind": "competencia_geral",
+          "start": 173,
+          "text_sha256": "17cbd56ddb70f2311e434d12c52adb1b5cbcdb61902532483594b45f91f781ed"
+        },
+        {
+          "end": 260,
+          "key": "projeto-LGG10-p47-campo-29-competencia-unidade-5",
+          "kind": "competencia_geral",
+          "start": 214,
+          "text_sha256": "46a25df263102c8912c50e2f5c33abda01bdaf8e787e0311fc3ffe28af8b5fbd"
+        },
+        {
+          "end": 318,
+          "key": "projeto-LGG10-p47-campo-29-competencia-unidade-6",
+          "kind": "competencia_geral",
+          "start": 260,
+          "text_sha256": "039788ffc032fa6bfb86e73894b0083a1c0561384d7ce20910e3d8dfaabdc94f"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        546.5135498046875,
+        326.2219543457031,
+        951.74755859375,
+        735.05029296875
+      ],
+      "field_key": "projeto-MAT1-p54-campo-31",
+      "page": 54,
+      "project": "MAT1",
+      "text_sha256": "35539309cb847e55b40a374b3fb4afec77fe376247e62e7822087aa1d2acc843",
+      "units": [
+        {
+          "end": 1219,
+          "key": "projeto-MAT1-p54-campo-31-competencia-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "35539309cb847e55b40a374b3fb4afec77fe376247e62e7822087aa1d2acc843"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        578.8944091796875,
+        306.8585510253906,
+        951.73291015625,
+        380.1004638671875
+      ],
+      "field_key": "projeto-MAT2-p56-campo-35",
+      "page": 56,
+      "project": "MAT2",
+      "text_sha256": "ac84cf7417504710d8773d4eafcee93e1a5eabe70c4a59d3384b533b9de89715",
+      "units": [
+        {
+          "end": 164,
+          "key": "projeto-MAT2-p56-campo-35-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "ac84cf7417504710d8773d4eafcee93e1a5eabe70c4a59d3384b533b9de89715"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        533.77197265625,
+        307.07574462890625,
+        951.740966796875,
+        709.458251953125
+      ],
+      "field_key": "projeto-MAT3-p57-campo-37",
+      "page": 57,
+      "project": "MAT3",
+      "text_sha256": "ac04934069381cda8fb63eca8b501e3e0443e186e39275c597ed7f5c5a9ae694",
+      "units": [
+        {
+          "end": 209,
+          "key": "projeto-MAT3-p57-campo-37-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "e1645db92eac7df250ba51e19b27acc160723a8e2befd8cd865de30b4ef14a9d"
+        },
+        {
+          "end": 371,
+          "key": "projeto-MAT3-p57-campo-37-competencia-unidade-2",
+          "kind": "competencia_geral",
+          "start": 209,
+          "text_sha256": "8e4a18e937e83fb56c611053d0c98730887acb50e1411f410dfc2859229a3cbb"
+        },
+        {
+          "end": 512,
+          "key": "projeto-MAT3-p57-campo-37-competencia-unidade-3",
+          "kind": "competencia_geral",
+          "start": 371,
+          "text_sha256": "527a1053acc6baeaa87cb1aefd1ac4a041d2a57261dbdad31ee212a42639920f"
+        },
+        {
+          "end": 652,
+          "key": "projeto-MAT3-p57-campo-37-competencia-unidade-4",
+          "kind": "competencia_geral",
+          "start": 512,
+          "text_sha256": "093535288cdc17c9f6b9085f46d8d0e726498c8dd87b9d59741efc6e2e5066a9"
+        },
+        {
+          "end": 816,
+          "key": "projeto-MAT3-p57-campo-37-competencia-unidade-5",
+          "kind": "competencia_geral",
+          "start": 652,
+          "text_sha256": "3aecd0876a740f08192b104ade11445adbd36f6d03d2cae841934656e1bd8180"
+        },
+        {
+          "end": 922,
+          "key": "projeto-MAT3-p57-campo-37-competencia-unidade-6",
+          "kind": "competencia_geral",
+          "start": 816,
+          "text_sha256": "2ec4274c99e148f5856f9d690118127fb45f102088f25bc1c10cc4b38124869b"
+        },
+        {
+          "end": 998,
+          "key": "projeto-MAT3-p57-campo-37-competencia-unidade-7",
+          "kind": "competencia_geral",
+          "start": 922,
+          "text_sha256": "70c70c4fb60d54bff43f9490ffcaa742b5837b393a90cb45d4dd843fe582c61d"
+        },
+        {
+          "end": 1088,
+          "key": "projeto-MAT3-p57-campo-37-competencia-unidade-8",
+          "kind": "competencia_geral",
+          "start": 998,
+          "text_sha256": "966cd5679bede6e24f1f1fda7eb604b6c857acac1cb2e250043aaf73b3beb900"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        554.6544189453125,
+        307.82696533203125,
+        951.21240234375,
+        438.373779296875
+      ],
+      "field_key": "projeto-MAT4-p59-campo-40",
+      "page": 59,
+      "project": "MAT4",
+      "text_sha256": "4819a64145b1adda13f85384723cefae548a795dfa515ac4ac93cad8899db2b8",
+      "units": [
+        {
+          "end": 415,
+          "key": "projeto-MAT4-p59-campo-40-competencia-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "4819a64145b1adda13f85384723cefae548a795dfa515ac4ac93cad8899db2b8"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        537.5496215820312,
+        311.1161804199219,
+        951.7438354492188,
+        633.6004638671875
+      ],
+      "field_key": "projeto-MAT5-p61-campo-43",
+      "page": 61,
+      "project": "MAT5",
+      "text_sha256": "c4576530dd7196ff57967957ebeeffaca84be3850fc067d7f185749ee684fdb8",
+      "units": [
+        {
+          "end": 368,
+          "key": "projeto-MAT5-p61-campo-43-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "da41865a68495b6571148cbb59c39600e4301d27a3d640e9dcfdcf3b1345309a"
+        },
+        {
+          "end": 737,
+          "key": "projeto-MAT5-p61-campo-43-competencia-unidade-2",
+          "kind": "competencia_geral",
+          "start": 368,
+          "text_sha256": "af47d513244221c0accb41f60100ecb9eb5f36d627a536ea407c50100a5cce48"
+        },
+        {
+          "end": 1086,
+          "key": "projeto-MAT5-p61-campo-43-competencia-unidade-3",
+          "kind": "competencia_geral",
+          "start": 737,
+          "text_sha256": "e4a8ea91fd88bf6e76f55637f43a3a116bd2a8f5555953fc38b4c454a1715be7"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        538.1664428710938,
+        308.0405578613281,
+        950.5374755859375,
+        465.91680908203125
+      ],
+      "field_key": "projeto-MAT6-p63-campo-46",
+      "page": 63,
+      "project": "MAT6",
+      "text_sha256": "a2e6be741fffbdf7eda429ea87bc1daee0fb7718fbb4016afdabd2605492a22f",
+      "units": [
+        {
+          "end": 391,
+          "key": "projeto-MAT6-p63-campo-46-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "a2e6be741fffbdf7eda429ea87bc1daee0fb7718fbb4016afdabd2605492a22f"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.7850341796875,
+        501.12054443359375,
+        951.717529296875,
+        575.3548583984375
+      ],
+      "field_key": "projeto-MAT7-p64-campo-50",
+      "page": 64,
+      "project": "MAT7",
+      "text_sha256": "aa8152626092deaff2b6daf8f99b058e514acc22f302211cf9fe9921bc84f82c",
+      "units": [
+        {
+          "end": 372,
+          "key": "projeto-MAT7-p64-campo-50-competencia-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "aa8152626092deaff2b6daf8f99b058e514acc22f302211cf9fe9921bc84f82c"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        106.34832000732422,
+        762.9065551757812,
+        951.7108764648438,
+        836.390869140625
+      ],
+      "field_key": "projeto-MAT8-p66-campo-52",
+      "page": 66,
+      "project": "MAT8",
+      "text_sha256": "868c7d96c289e2a13ffec26e296d8167cecb99d0228d77726f493a8bfddb0f08",
+      "units": [
+        {
+          "end": 406,
+          "key": "projeto-MAT8-p66-campo-52-competencia-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "868c7d96c289e2a13ffec26e296d8167cecb99d0228d77726f493a8bfddb0f08"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.77616119384766,
+        604.2125854492188,
+        951.7236938476562,
+        709.9324951171875
+      ],
+      "field_key": "projeto-MAT9-p68-campo-54",
+      "page": 68,
+      "project": "MAT9",
+      "text_sha256": "9be689a34177ad490fbaedca9f45af69afe8b604f43dc1d766f26ff962fb7ba6",
+      "units": [
+        {
+          "end": 343,
+          "key": "projeto-MAT9-p68-campo-54-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "b3a25114b732923c496cdd9bed42ae4b85ed714e91d187d43c9489ea4b2541f2"
+        },
+        {
+          "end": 543,
+          "key": "projeto-MAT9-p68-campo-54-competencia-unidade-2",
+          "kind": "competencia_geral",
+          "start": 343,
+          "text_sha256": "bbd7a717d0ef33f66b24275d03ace76240a53117bac6842a9264c10093180205"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        546.0503540039062,
+        317.5733642578125,
+        951.7373657226562,
+        456.3076477050781
+      ],
+      "field_key": "projeto-CNT1-p74-campo-59",
+      "page": 74,
+      "project": "CNT1",
+      "text_sha256": "8157d9ae44a11491da37058253fb447a969f7d38291ba4409c3456c04b6aa264",
+      "units": [
+        {
+          "end": 437,
+          "key": "projeto-CNT1-p74-campo-59-competencia-unidade-1",
+          "kind": "competencia_especifica",
+          "start": 0,
+          "text_sha256": "8157d9ae44a11491da37058253fb447a969f7d38291ba4409c3456c04b6aa264"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        536.0327758789062,
+        318.54296875,
+        951.737548828125,
+        505.81243896484375
+      ],
+      "field_key": "projeto-CNT2-p76-campo-62",
+      "page": 76,
+      "project": "CNT2",
+      "text_sha256": "828a074a8e39b8b11becbed0966d7456ddf4021ac20751cb835da0bb3ba46e1c",
+      "units": [
+        {
+          "end": 661,
+          "key": "projeto-CNT2-p76-campo-62-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "828a074a8e39b8b11becbed0966d7456ddf4021ac20751cb835da0bb3ba46e1c"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        534.9744262695312,
+        318.3221435546875,
+        951.7374267578125,
+        472.8076477050781
+      ],
+      "field_key": "projeto-CNT3-p78-campo-65",
+      "page": 78,
+      "project": "CNT3",
+      "text_sha256": "ae77c08090db9c04adfc36796220b4081644dba2a40e07de028c4b30b562da1d",
+      "units": [
+        {
+          "end": 540,
+          "key": "projeto-CNT3-p78-campo-65-competencia-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "ae77c08090db9c04adfc36796220b4081644dba2a40e07de028c4b30b562da1d"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        543.8544311523438,
+        318.3221435546875,
+        951.7314453125,
+        390.3076477050781
+      ],
+      "field_key": "projeto-CNT4-p80-campo-68",
+      "page": 80,
+      "project": "CNT4",
+      "text_sha256": "8cf84517566e5e9468787e1a0c0c2de914b62b6555fdb4d6e3452da4e0693371",
+      "units": [
+        {
+          "end": 155,
+          "key": "projeto-CNT4-p80-campo-68-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "8cf84517566e5e9468787e1a0c0c2de914b62b6555fdb4d6e3452da4e0693371"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        544.3775634765625,
+        316.0733642578125,
+        951.7415771484375,
+        522.4486083984375
+      ],
+      "field_key": "projeto-CNT5-p82-campo-71",
+      "page": 82,
+      "project": "CNT5",
+      "text_sha256": "bb50c91fbb6c869c0763ffe8198949a1b9c6a4385d8b76aeb5d1cc70a5e2e9fa",
+      "units": [
+        {
+          "end": 558,
+          "key": "projeto-CNT5-p82-campo-71-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "2bf7c7395571f9265d7cdfb15b6538616a9095c745ad7843d9b1a6e708fdc12f"
+        },
+        {
+          "end": 763,
+          "key": "projeto-CNT5-p82-campo-71-competencia-unidade-2",
+          "kind": "secao_normativa",
+          "start": 558,
+          "text_sha256": "23102da26d8c656ec723e5fda5af361d6deb3cab078d518421d2ea9d0d6c4d85"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        531.5183715820312,
+        316.6589660644531,
+        951.7388916015625,
+        555.14208984375
+      ],
+      "field_key": "projeto-CNT6-p84-campo-74",
+      "page": 84,
+      "project": "CNT6",
+      "text_sha256": "30d284fb05b1abd01d5c43f795fb51d37e7c29018d0d40fb4bb1beb3f8dbf7d5",
+      "units": [
+        {
+          "end": 32,
+          "key": "projeto-CNT6-p84-campo-74-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "6fc0bfa945abcb128e78128e08b06eb805b02286e1ec883b584c32b70dac99ff"
+        },
+        {
+          "end": 92,
+          "key": "projeto-CNT6-p84-campo-74-competencia-unidade-2",
+          "kind": "competencia_geral",
+          "start": 32,
+          "text_sha256": "aca37488eb3a65f88edd8f2f21ba45c0cc74471c7df5863bcbe5ca9f1aa36ea2"
+        },
+        {
+          "end": 139,
+          "key": "projeto-CNT6-p84-campo-74-competencia-unidade-3",
+          "kind": "competencia_geral",
+          "start": 92,
+          "text_sha256": "eea9d7256cd08b3f36bdbb2bfc5fd4b3d2a8c6050627550f01c88a987a190930"
+        },
+        {
+          "end": 173,
+          "key": "projeto-CNT6-p84-campo-74-competencia-unidade-4",
+          "kind": "competencia_geral",
+          "start": 139,
+          "text_sha256": "79f0bc2ede099c963af6cb0837cddac50d98594b0ba2bce364915b36d090164e"
+        },
+        {
+          "end": 225,
+          "key": "projeto-CNT6-p84-campo-74-competencia-unidade-5",
+          "kind": "competencia_geral",
+          "start": 173,
+          "text_sha256": "6cd13adf8c7c04b8dcf6dd7129b5e1030329ca9892bcec156f46fd2aef9e5093"
+        },
+        {
+          "end": 268,
+          "key": "projeto-CNT6-p84-campo-74-competencia-unidade-6",
+          "kind": "competencia_geral",
+          "start": 225,
+          "text_sha256": "3f7d5f781eb51399aa01c3cd7ae1528620dc03e65b584aca228424f4805b0538"
+        },
+        {
+          "end": 333,
+          "key": "projeto-CNT6-p84-campo-74-competencia-unidade-7",
+          "kind": "competencia_geral",
+          "start": 268,
+          "text_sha256": "bb00f9b5eefcfca6aa0f4c73df565afc0ee6e702324e9f8ff84289a1d779d555"
+        },
+        {
+          "end": 374,
+          "key": "projeto-CNT6-p84-campo-74-competencia-unidade-8",
+          "kind": "competencia_geral",
+          "start": 333,
+          "text_sha256": "e7a52bb73699a0e9599923cf6191459240c17041a82076cc0c8d60aea8874345"
+        },
+        {
+          "end": 422,
+          "key": "projeto-CNT6-p84-campo-74-competencia-unidade-9",
+          "kind": "competencia_geral",
+          "start": 374,
+          "text_sha256": "2141cb12de945c103faf8055c0d643435f08c6a57c51cd85a4e44139ee0c868d"
+        },
+        {
+          "end": 496,
+          "key": "projeto-CNT6-p84-campo-74-competencia-unidade-10",
+          "kind": "competencia_geral",
+          "start": 422,
+          "text_sha256": "7fdf0b92525545cd17a910db8e5c657d9172997e974852940042dba051351f26"
+        },
+        {
+          "end": 538,
+          "key": "projeto-CNT6-p84-campo-74-competencia-unidade-11",
+          "kind": "competencia_geral",
+          "start": 496,
+          "text_sha256": "3ad51cd769c756033274a4220d26ccb9ad13441e59e0935e8bda37fe8621e387"
+        },
+        {
+          "end": 577,
+          "key": "projeto-CNT6-p84-campo-74-competencia-unidade-12",
+          "kind": "competencia_geral",
+          "start": 538,
+          "text_sha256": "512c414c436f74603a6f06053ab2b2528aa7407828c1d984a61f5eec24dd720d"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        533.0951538085938,
+        315.3233642578125,
+        951.7413940429688,
+        572.556396484375
+      ],
+      "field_key": "projeto-CNT7-p86-campo-77",
+      "page": 86,
+      "project": "CNT7",
+      "text_sha256": "81f1b1d68187cb58b6360380af60fdb31df3a219e5aff4913cbb0d8b56d8f7cc",
+      "units": [
+        {
+          "end": 195,
+          "key": "projeto-CNT7-p86-campo-77-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "f24922003cd286e6a55729f4c6cb17cfcd0708b369fb6a7bea7cb1ad36997385"
+        },
+        {
+          "end": 221,
+          "key": "projeto-CNT7-p86-campo-77-competencia-unidade-2",
+          "kind": "grupo_curricular",
+          "start": 195,
+          "text_sha256": "2384421252a6a21ef069a43b92aafaa8cf2747bd7e13b2e3974e0816cf3fafaf"
+        },
+        {
+          "end": 321,
+          "key": "projeto-CNT7-p86-campo-77-competencia-unidade-3",
+          "kind": "capacidade",
+          "start": 221,
+          "text_sha256": "3d57028ea9b81fb384ea57423037a04357fa3cd70f949ae0c3bcdf9aeb80989a"
+        },
+        {
+          "end": 437,
+          "key": "projeto-CNT7-p86-campo-77-competencia-unidade-4",
+          "kind": "capacidade",
+          "start": 321,
+          "text_sha256": "babba24d51e9f83d069013be859eac435fefbc17feef03f5b6175b9ecad36406"
+        },
+        {
+          "end": 553,
+          "key": "projeto-CNT7-p86-campo-77-competencia-unidade-5",
+          "kind": "capacidade",
+          "start": 437,
+          "text_sha256": "eb8b79e040057f528c5972a96edc96730a756e8f8211cde038af6529b9a9be77"
+        },
+        {
+          "end": 682,
+          "key": "projeto-CNT7-p86-campo-77-competencia-unidade-6",
+          "kind": "capacidade",
+          "start": 553,
+          "text_sha256": "1e2c28e089b20e700608fee41b0c71cb705af5e7de984b0afc1d6f16bd6ceadf"
+        },
+        {
+          "end": 778,
+          "key": "projeto-CNT7-p86-campo-77-competencia-unidade-7",
+          "kind": "capacidade",
+          "start": 682,
+          "text_sha256": "061fad6d8d1a2f5f08ac701ab0a4fde7b6fcdbee7fbc09e1bb5adbaa0118b197"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        536.0303955078125,
+        314.0849609375,
+        951.7374267578125,
+        538.8076171875
+      ],
+      "field_key": "projeto-CNT8-p88-campo-80",
+      "page": 88,
+      "project": "CNT8",
+      "text_sha256": "34ef24e66d30657b2cb356b3cf1446f34c73c952ad545f5339d6f21494d6a7ad",
+      "units": [
+        {
+          "end": 304,
+          "key": "projeto-CNT8-p88-campo-80-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "afbe3656712c462fbf9e8defd471ecf5943e88a98e14d0df87f446317ff1218a"
+        },
+        {
+          "end": 762,
+          "key": "projeto-CNT8-p88-campo-80-competencia-unidade-2",
+          "kind": "competencia_geral",
+          "start": 304,
+          "text_sha256": "c28ffa26bff303363d46d8414357e32791e2c5b03670114184b4c9066578ad20"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        536.0279541015625,
+        317.47137451171875,
+        951.7387084960938,
+        689.4541625976562
+      ],
+      "field_key": "projeto-CNT9-p90-campo-83",
+      "page": 90,
+      "project": "CNT9",
+      "text_sha256": "af3a97e63d8ec02dc295716a40dde22ac39ff9de838b9e7ba364866ae95b1621",
+      "units": [
+        {
+          "end": 360,
+          "key": "projeto-CNT9-p90-campo-83-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "6cdc335fadd0848ca3ab1db61fcdd368bd26b027cedd3673abc5320dcf25aff8"
+        },
+        {
+          "end": 708,
+          "key": "projeto-CNT9-p90-campo-83-competencia-unidade-2",
+          "kind": "competencia_geral",
+          "start": 360,
+          "text_sha256": "cbe60f3ce684fccb7add016bfcbe53a1c89966d4d8b0be14dcc81729f253f145"
+        },
+        {
+          "end": 1032,
+          "key": "projeto-CNT9-p90-campo-83-competencia-unidade-3",
+          "kind": "competencia_geral",
+          "start": 708,
+          "text_sha256": "36dccaa323811ef4af8f996a0914ae865673b1ea4074e33da544c45c1cdf0ddc"
+        },
+        {
+          "end": 1402,
+          "key": "projeto-CNT9-p90-campo-83-competencia-unidade-4",
+          "kind": "competencia_geral",
+          "start": 1032,
+          "text_sha256": "3bef99e5f07afaa041d5d4830c0fae967d478fa0a5f074326a1ad3fe93cbead7"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        536.0303955078125,
+        316.0733642578125,
+        951.7381591796875,
+        548.5928955078125
+      ],
+      "field_key": "projeto-CNT10-p92-campo-86",
+      "page": 92,
+      "project": "CNT10",
+      "text_sha256": "d5c94150f2dbbaee1d92105db5650d839b149b3325239e8fa3958dec4165dc41",
+      "units": [
+        {
+          "end": 287,
+          "key": "projeto-CNT10-p92-campo-86-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "3f4417a282cefca713e69fd345acc35c44d8be5571b3567d1f69168f7e118ccd"
+        },
+        {
+          "end": 738,
+          "key": "projeto-CNT10-p92-campo-86-competencia-unidade-2",
+          "kind": "competencia_geral",
+          "start": 287,
+          "text_sha256": "cc1bb13998cff830278c1f58118320e342eda2a910d8ee428efb1558e54fbe6d"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        537.410400390625,
+        316.0733642578125,
+        951.7404174804688,
+        410.4638977050781
+      ],
+      "field_key": "projeto-CNT11-p95-campo-89",
+      "page": 95,
+      "project": "CNT11",
+      "text_sha256": "275ab70e253cf02d3a4ac9d675409384528722d5c006c218dfd461137864e552",
+      "units": [
+        {
+          "end": 233,
+          "key": "projeto-CNT11-p95-campo-89-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "275ab70e253cf02d3a4ac9d675409384528722d5c006c218dfd461137864e552"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        536.03515625,
+        316.0733642578125,
+        951.733154296875,
+        439.8076477050781
+      ],
+      "field_key": "projeto-CNT12-p96-campo-92",
+      "page": 96,
+      "project": "CNT12",
+      "text_sha256": "cdc74028280f8790509b99645b0015fd291c10a144a4b543da9abff160787340",
+      "units": [
+        {
+          "end": 389,
+          "key": "projeto-CNT12-p96-campo-92-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "cdc74028280f8790509b99645b0015fd291c10a144a4b543da9abff160787340"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        536.03515625,
+        316.81256103515625,
+        951.733154296875,
+        440.5468444824219
+      ],
+      "field_key": "projeto-CNT13-p97-campo-95",
+      "page": 97,
+      "project": "CNT13",
+      "text_sha256": "cdc74028280f8790509b99645b0015fd291c10a144a4b543da9abff160787340",
+      "units": [
+        {
+          "end": 389,
+          "key": "projeto-CNT13-p97-campo-95-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "cdc74028280f8790509b99645b0015fd291c10a144a4b543da9abff160787340"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        542.5775756835938,
+        316.8677673339844,
+        951.3373413085938,
+        439.8076477050781
+      ],
+      "field_key": "projeto-CHT1-p99-campo-98",
+      "page": 99,
+      "project": "CHT1",
+      "text_sha256": "147a7243aa14348ad277c4c4ed20d00b34c1647b201e3ed7f1cac91222e44f53",
+      "units": [
+        {
+          "end": 351,
+          "key": "projeto-CHT1-p99-campo-98-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "147a7243aa14348ad277c4c4ed20d00b34c1647b201e3ed7f1cac91222e44f53"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        539.9400024414062,
+        315.99896240234375,
+        951.738037109375,
+        474.2332458496094
+      ],
+      "field_key": "projeto-CHT2-p101-campo-101",
+      "page": 101,
+      "project": "CHT2",
+      "text_sha256": "16afafd645edad4ae1d7ab183345204c61a7275df9d1b4765dc693c24b84c85a",
+      "units": [
+        {
+          "end": 506,
+          "key": "projeto-CHT2-p101-campo-101-competencia-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "16afafd645edad4ae1d7ab183345204c61a7275df9d1b4765dc693c24b84c85a"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        535.4495849609375,
+        316.0733642578125,
+        951.1498413085938,
+        456.3076477050781
+      ],
+      "field_key": "projeto-CHT3-p103-campo-104",
+      "page": 103,
+      "project": "CHT3",
+      "text_sha256": "65ca0d4ac0882531e1e3c058b39bd0f941609c45e9c1c784e32f9e602d290b61",
+      "units": [
+        {
+          "end": 476,
+          "key": "projeto-CHT3-p103-campo-104-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "65ca0d4ac0882531e1e3c058b39bd0f941609c45e9c1c784e32f9e602d290b61"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        537.098388671875,
+        315.1817626953125,
+        951.735107421875,
+        472.6660461425781
+      ],
+      "field_key": "projeto-CHT4-p105-campo-107",
+      "page": 105,
+      "project": "CHT4",
+      "text_sha256": "54bbc4de06c6e4a2f1464c0512e8ab96615ca027ab9be43778350aefe2ecaad4",
+      "units": [
+        {
+          "end": 529,
+          "key": "projeto-CHT4-p105-campo-107-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "54bbc4de06c6e4a2f1464c0512e8ab96615ca027ab9be43778350aefe2ecaad4"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        536.03759765625,
+        316.0721435546875,
+        951.7296142578125,
+        402.23712158203125
+      ],
+      "field_key": "projeto-CHT5-p108-campo-110",
+      "page": 108,
+      "project": "CHT5",
+      "text_sha256": "2f7ee5cced708e7230bb717bcd88e0e36652be577a0c33a84f3390799429aa64",
+      "units": [
+        {
+          "end": 205,
+          "key": "projeto-CHT5-p108-campo-110-competencia-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "2f7ee5cced708e7230bb717bcd88e0e36652be577a0c33a84f3390799429aa64"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        536.03759765625,
+        316.0733642578125,
+        951.7326049804688,
+        423.3076477050781
+      ],
+      "field_key": "projeto-CHT6-p110-campo-112",
+      "page": 110,
+      "project": "CHT6",
+      "text_sha256": "bb3c37d740d0033c1246e85a59d058e524ea384844f9db7ade162e1645740fa1",
+      "units": [
+        {
+          "end": 290,
+          "key": "projeto-CHT6-p110-campo-112-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "bb3c37d740d0033c1246e85a59d058e524ea384844f9db7ade162e1645740fa1"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        533.5751953125,
+        316.0733642578125,
+        950.9899291992188,
+        413.9326477050781
+      ],
+      "field_key": "projeto-CHT7-p111-campo-116",
+      "page": 111,
+      "project": "CHT7",
+      "text_sha256": "e470f56bff7261921bd96a599cea7d1815abf8b684e6c37e74d4ced52b25bb3c",
+      "units": [
+        {
+          "end": 248,
+          "key": "projeto-CHT7-p111-campo-116-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "e470f56bff7261921bd96a599cea7d1815abf8b684e6c37e74d4ced52b25bb3c"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        539.6783447265625,
+        316.0733642578125,
+        951.7380981445312,
+        456.3076477050781
+      ],
+      "field_key": "projeto-CHT8-p112-campo-119",
+      "page": 112,
+      "project": "CHT8",
+      "text_sha256": "9f0cafe63b2e3c4e908979de7daadb633a0f50dcf82c5ce0e3bbc6393246e0c2",
+      "units": [
+        {
+          "end": 457,
+          "key": "projeto-CHT8-p112-campo-119-competencia-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "9f0cafe63b2e3c4e908979de7daadb633a0f50dcf82c5ce0e3bbc6393246e0c2"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        536.0327758789062,
+        316.0733642578125,
+        951.7344970703125,
+        472.8076477050781
+      ],
+      "field_key": "projeto-CHT9-p114-campo-122",
+      "page": 114,
+      "project": "CHT9",
+      "text_sha256": "104fd4ee55b0695bce43b557b89d717774b557736fbf4bed2ce3f4f842c20405",
+      "units": [
+        {
+          "end": 19,
+          "key": "projeto-CHT9-p114-campo-122-competencia-unidade-1",
+          "kind": "referencia_no_documento",
+          "start": 0,
+          "text_sha256": "8c1108b6794a5c1a0e7680f27d5e59cc45b6ea39992968987792c196608032e9"
+        },
+        {
+          "end": 45,
+          "key": "projeto-CHT9-p114-campo-122-competencia-unidade-2",
+          "kind": "referencia_no_documento",
+          "start": 19,
+          "text_sha256": "f7ac6807923eca49d0527f938a86af2e687b1c6ff83a69aa9026176d10ac2923"
+        },
+        {
+          "end": 63,
+          "key": "projeto-CHT9-p114-campo-122-competencia-unidade-3",
+          "kind": "referencia_no_documento",
+          "start": 45,
+          "text_sha256": "67cbd4af9984cce08425ca29123e4cf02ef98c384a6bdb14c4b0a0ddf3a5d3e3"
+        },
+        {
+          "end": 96,
+          "key": "projeto-CHT9-p114-campo-122-competencia-unidade-4",
+          "kind": "referencia_no_documento",
+          "start": 63,
+          "text_sha256": "88483447ffa4b982d3a7fecd2729735d9eba21a1ce8c970abdc0ebd95c9a45c5"
+        },
+        {
+          "end": 115,
+          "key": "projeto-CHT9-p114-campo-122-competencia-unidade-5",
+          "kind": "referencia_no_documento",
+          "start": 96,
+          "text_sha256": "facc45b74b31da2d7d9ae9104f55758a267c6dd300641153b9378c4f36e91805"
+        },
+        {
+          "end": 152,
+          "key": "projeto-CHT9-p114-campo-122-competencia-unidade-6",
+          "kind": "referencia_no_documento",
+          "start": 115,
+          "text_sha256": "92aa0b6caf11baa612e4057ec7efa3bcc4c52fad8ae5116a918855922e9664a3"
+        },
+        {
+          "end": 179,
+          "key": "projeto-CHT9-p114-campo-122-competencia-unidade-7",
+          "kind": "referencia_no_documento",
+          "start": 152,
+          "text_sha256": "1e40d800a9852e0a07b9cd77f6f3e6ec25daa0ff6879da1ccafee730dfd316cb"
+        },
+        {
+          "end": 213,
+          "key": "projeto-CHT9-p114-campo-122-competencia-unidade-8",
+          "kind": "referencia_no_documento",
+          "start": 179,
+          "text_sha256": "be5c1eab2aeae5e402fd67f6a6327162a1d16557a84c505afa03f97f6c22c654"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        540.6624145507812,
+        289.532958984375,
+        951.7381591796875,
+        430.5172424316406
+      ],
+      "field_key": "projeto-CHT10-p116-campo-125",
+      "page": 116,
+      "project": "CHT10",
+      "text_sha256": "a2771493ec283c4df44fd062f0f77e6a584b9e4e4c48246912ea1b80124d6a18",
+      "units": [
+        {
+          "end": 148,
+          "key": "projeto-CHT10-p116-campo-125-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "a2771493ec283c4df44fd062f0f77e6a584b9e4e4c48246912ea1b80124d6a18"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.7017593383789,
+        470.6485900878906,
+        952.0392456054688,
+        594.3844604492188
+      ],
+      "field_key": "projeto-MAT10-p70-campo-127",
+      "page": 70,
+      "project": "MAT10",
+      "text_sha256": "e227eef6740c097550ebc7f83a503a55c47e7b223731f3789362ec85736f43c1",
+      "units": [
+        {
+          "end": 343,
+          "key": "projeto-MAT10-p70-campo-127-competencia-unidade-1",
+          "kind": "competencia_geral",
+          "start": 0,
+          "text_sha256": "b3a25114b732923c496cdd9bed42ae4b85ed714e91d187d43c9489ea4b2541f2"
+        },
+        {
+          "end": 704,
+          "key": "projeto-MAT10-p70-campo-127-competencia-unidade-2",
+          "kind": "competencia_geral",
+          "start": 343,
+          "text_sha256": "7b7d610d0c744ba127c36d43843c35989fbef25dcb510ef11e22ba15af53e920"
+        }
+      ]
+    }
+  ],
+  "kinds": {
+    "capacidade": 9,
+    "competencia_especifica": 2,
+    "competencia_geral": 80,
+    "grupo_curricular": 63,
+    "habilidade": 274,
+    "habilidade_local_sem_codigo": 40,
+    "objetivo_aprendizagem": 157,
+    "objetivo_formativo": 85,
+    "referencia_no_documento": 66,
+    "secao_normativa": 139
+  },
+  "literal_competency_number_mismatch_not_repaired": [
+    {
+      "body_begins": "Exercitar a empatia, o diálogo",
+      "note": "Literal source kept; no national numbering correction, alias or identity/equivalence claim.",
+      "page": 105,
+      "project": "CHT4",
+      "source_prints": "Competência geral 5"
+    }
+  ],
+  "ready": false,
+  "real_finalizer_schema_records": 915,
+  "reconciled": false,
+  "records": 915,
+  "remaining_scope": [
+    "All knowledge objects/axis/methodological context/rubrics and introductory normative chapter structure still need full typed reconciliation."
+  ],
+  "source_id": "ro-eletivas-2026",
+  "source_sha256": "709c00a8a8993683a3529f2cfb0d7674f2b79ced733ad45be2e8213f39217ddb"
+}

@@ -6,6 +6,10 @@ PostgreSQL mantém publicação, autenticação, fila e auditoria. App é Next.j
 
 Requisitos: Docker Engine + Compose v2, Node 22 LTS+ e npm para a primeira configuração, espaço suficiente para banco, fontes e backups. A imagem contém Python, Poppler, Tesseract português e PyMuPDF fixado em pipeline/requirements.txt. Node 22.23.4 e PostgreSQL 17.11 são os defaults documentados; `POSTGRES_IMAGE` permite selecionar imagem compatível explicitamente. O lockfile fixa dependências JavaScript; instalação e operação na imagem usam npm 11.6.2, igual ao packageManager declarado. As versões padrão foram conferidas nas fontes oficiais de [Node LTS](https://nodejs.org/en/about/previous-releases) e [PostgreSQL](https://www.postgresql.org/support/versioning/); o relatório de execução identifica os digests efetivamente usados. Fontes PDF não são redistribuídas automaticamente: o diretório `data/raw` é cache de coleta, fora do Git.
 
+`make preflight` antecede `image` e `bootstrap`. O guard exige por padrão 15 GiB livres no filesystem do projeto (`BUILD_MIN_FREE_BYTES`), verifica configuração e Docker/Compose e, quando a imagem Node já está local, confere também espaço no filesystem Docker com um probe descartável sem rede. A margem considera o pico de exportação/unpack observado neste projeto. Esse guard não garante integridade do daemon nem substitui monitorar espaço de volumes e do disco virtual do Docker Desktop. Sem imagem base local, o espaço interno ainda não pode ser medido e isso fica explícito no resultado; o preflight não faz pull. `node --import tsx scripts/ops-preflight.ts --disk-only` permite conferir apenas o espaço do host sem acessar o Docker.
+
+Depois de construir, `make image` executa `scripts/ops-image-verify.ts` antes de qualquer recriação de serviços. Um container descartável, sem rede, somente leitura e sem segredos verifica JSONs críticos, BUILD_ID, UID e o fingerprint dos arquivos efetivamente exportados na imagem, comparando-o ao repositório. A verificação falha diante de arquivo vazio, imagem incompleta ou edição concorrente durante o build. O resultado fica em `docs/evidence/image-files-verification.json`. Para conferir uma tag específica: `node --import tsx scripts/ops-image-verify.ts --image curriculos-abertos:TAG`. Um build com exit0 ou um processo Node funcional, isoladamente, não comprova a integridade da imagem.
+
 ## Instalação limpa e início
 
 ```
@@ -71,7 +75,7 @@ make verify
 make release-check
 ```
 
-`verify` executa tipos, testes, cliente MCP real, checks HTTP e API. `release-check` executa o gate transversal baseado em inventário, dados publicados e evidências reais; retorna não zero enquanto obrigatório estiver pendente. A área `/api/metrics` exige administrador e mostra agregados de contagem/latência e jobs. `/api/ready` requer banco, publicação carregada e worker recente; `/api/health` responde pelo processo. Logs são JSON com IDs de requisição/job. A existência desses comandos não é evidência de que passaram: consulte `docs/evidence` e o relatório final.
+`verify` executa tipos, testes, cliente MCP real, checks HTTP e API. `release-check` executa o gate transversal baseado em inventário, dados publicados e evidências reais; retorna não zero enquanto obrigatório estiver pendente. Usa o runtime da imagem em um container descartável com `docs` do repositório montado, para conferir os relatórios atuais e salvar a matriz no repositório. A pasta deve permitir escrita pelo UID 1000 usado na imagem. A área `/api/metrics` exige administrador e mostra agregados de contagem/latência e jobs. `/api/ready` requer banco, publicação carregada e worker recente; `/api/health` responde pelo processo. Logs são JSON com IDs de requisição/job. A existência desses comandos não é evidência de que passaram: consulte `docs/evidence` e o relatório final.
 
 ## Backup e restauração exercitável
 

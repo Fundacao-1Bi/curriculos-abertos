@@ -1,0 +1,679 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:df_digital",
+  "method": "Independent original header/code census, all-position comparison, source zero-anchor word coverage, and directed anomaly/continuation negative assertions after owner completed frozen marker",
+  "helper_sha256": "f85f208c88957570f85fc6802745fff53b358f58c3c2c46a99e5aec1bee16e4e",
+  "owner_marker_sha256": "2bd52c6bfaf51969fae2ec6eb4068392b6eb73c3e3563cd2147df87f4b35e947",
+  "comparison_snapshot_sha256": {
+    "ms": "4ac535d3b09ab55ff73257c206f67f6add80408b5e135e29ab520bbafb868cd8",
+    "rs": "f6c0a0032c3c02f584580ee5b31b3e82c98717d813e6cbc09d7c43c0abdcf8d9"
+  },
+  "checks": [
+    {
+      "name": "ms-original-anchor-occurrences-match",
+      "passed": true,
+      "details": {
+        "count": 1737,
+        "snapshot_sha256": "4ac535d3b09ab55ff73257c206f67f6add80408b5e135e29ab520bbafb868cd8"
+      }
+    },
+    {
+      "name": "rs-original-anchor-occurrences-match",
+      "passed": true,
+      "details": {
+        "count": 340,
+        "snapshot_sha256": "f6c0a0032c3c02f584580ee5b31b3e82c98717d813e6cbc09d7c43c0abdcf8d9"
+      }
+    },
+    {
+      "name": "ms-all-original-table-component-years-match",
+      "passed": true,
+      "details": {
+        "checked": 1737,
+        "failures": []
+      }
+    },
+    {
+      "name": "rs-all-original-field-age-scopes-match",
+      "passed": true,
+      "details": {
+        "checked": 340,
+        "failures": []
+      }
+    },
+    {
+      "name": "ms-no-own-page-number-in-text",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "ms-zero-anchor-prefix-441-all-native-words-retained",
+      "passed": true,
+      "details": {
+        "original_prefix": "espanhola (Equador, Colômbia e Venezuela).",
+        "prior_own_anchor": {
+          "page": 440,
+          "code": "MS.EF08LE00.n.22"
+        },
+        "matched_evidence": [
+          {
+            "code": "MS.EF08LE00.n.22",
+            "source_page": 440,
+            "evidence_page": 441,
+            "excerpt": "espanhola (Equador, Colômbia e Venezuela)."
+          }
+        ],
+        "following_prefix_scan": {
+          "status": "new_explicit_component_or_year",
+          "page": 441,
+          "component": "Língua Espanhola",
+          "years": [
+            9
+          ]
+        }
+      }
+    },
+    {
+      "name": "ms-zero-anchor-prefix-522-all-native-words-retained",
+      "passed": true,
+      "details": {
+        "original_prefix": "decimal seja finita, utilizando estratégias diversas, como cálculo por estimativa, cálculo mental e algoritmos.",
+        "prior_own_anchor": {
+          "page": 521,
+          "code": "MS.EF05MA07.s.07"
+        },
+        "matched_evidence": [
+          {
+            "code": "MS.EF05MA07.s.07",
+            "source_page": 521,
+            "evidence_page": 522,
+            "excerpt": "decimal seja finita, utilizando estratégias diversas, como cálculo por estimativa, cálculo mental e algoritmos."
+          }
+        ],
+        "following_prefix_scan": {
+          "status": "same_explicit_year_next_region",
+          "page": 523,
+          "native_word_count": 0,
+          "native_text": ""
+        }
+      }
+    },
+    {
+      "name": "ms-no-second-prose-page-after-zero-anchor-region",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "ms-nonstandard-original-label-352-MS. EF69AR24.s.27",
+      "passed": true,
+      "details": {
+        "original": {
+          "page": 352,
+          "component": "Arte",
+          "years": [
+            8,
+            9
+          ],
+          "original_label": "MS. EF69AR24.s.27",
+          "native_line": "(MS. EF69AR24.s.27)",
+          "bbox": [
+            246.52999877929688,
+            142.66481018066406,
+            317.4780578613281,
+            153.0283660888672
+          ],
+          "header_title": "ARTE - 8º e 9º ANOS",
+          "review_status": "confirmed_original_learning_definition_in_render",
+          "actor_type": "automated",
+          "actor_id": "agent:df_digital",
+          "render": "docs/evidence/source-audit-rs-ms-independent/ms-cr-eief-v110-p352.png"
+        },
+        "found_codes": [
+          "MS. EF69AR24.s.27"
+        ]
+      }
+    },
+    {
+      "name": "ms-nonstandard-original-label-352-MS. EF69AR25.s.28",
+      "passed": true,
+      "details": {
+        "original": {
+          "page": 352,
+          "component": "Arte",
+          "years": [
+            8,
+            9
+          ],
+          "original_label": "MS. EF69AR25.s.28",
+          "native_line": "(MS. EF69AR25.s.28)",
+          "bbox": [
+            246.52999877929688,
+            302.77484130859375,
+            317.4780578613281,
+            313.1383972167969
+          ],
+          "header_title": "ARTE - 8º e 9º ANOS",
+          "review_status": "confirmed_original_learning_definition_in_render",
+          "actor_type": "automated",
+          "actor_id": "agent:df_digital",
+          "render": "docs/evidence/source-audit-rs-ms-independent/ms-cr-eief-v110-p352.png"
+        },
+        "found_codes": [
+          "MS. EF69AR25.s.28"
+        ]
+      }
+    },
+    {
+      "name": "ms-nonstandard-original-label-674-MS.F07GE05.s.06",
+      "passed": true,
+      "details": {
+        "original": {
+          "page": 674,
+          "component": "Geografia",
+          "years": [
+            7
+          ],
+          "original_label": "MS.F07GE05.s.06",
+          "native_line": "(MS.F07GE05.s.06)",
+          "bbox": [
+            244.49000549316406,
+            579.0347900390625,
+            308.83807373046875,
+            589.3983764648438
+          ],
+          "header_title": "GEOGRAFIA - 7° ANO",
+          "review_status": "confirmed_original_learning_definition_in_render",
+          "actor_type": "automated",
+          "actor_id": "agent:df_digital",
+          "render": "docs/evidence/source-audit-rs-ms-independent/ms-cr-eief-v110-p674.png"
+        },
+        "found_codes": [
+          "MS.F07GE05.s.06"
+        ]
+      }
+    },
+    {
+      "name": "ms439-empty-primary-code-text-starts-on440",
+      "passed": true,
+      "details": {
+        "original": {
+          "actor_type": "automated",
+          "actor_id": "agent:df_digital",
+          "source_id": "ms-cr-eief-v110",
+          "artifact_sha256": "176d738032cba747e02e1ce2c73bb1a7e8d2d0e1d7f875340a2215e599e37271",
+          "method": "Original painted column bounds, literal empty primary code cell and following-page prefix before next identifier",
+          "original_anchor": {
+            "code": "MS.EF08LE00.n.14",
+            "line_text": "(MS.EF08LE00.n.14)",
+            "bbox": [
+              272.92999267578125,
+              748.6207885742188,
+              340.7312927246094,
+              758.984375
+            ],
+            "word_count_in_code": 1,
+            "original_identifier_anomaly": null
+          },
+          "anchor_page": 439,
+          "first_prose_page": 440,
+          "expected_prose_prefix": "Explorar o caráter polissêmico de palavras de acordo com contexto de uso.",
+          "prefix_bbox": [
+            272.92999267578125,
+            133.4599609375,
+            372.67401123046875,
+            185.1448516845703
+          ]
+        },
+        "found_texts": [
+          "Explorar o caráter polissêmico de palavras de acordo com contexto de uso."
+        ]
+      }
+    },
+    {
+      "name": "ms-four-pages-physical-columns-cover-original-painted-bounds",
+      "passed": true,
+      "details": [
+        {
+          "page": 398,
+          "code": "MS.EF04LI00.n.14",
+          "original_painted_column_x": [
+            246.41000366210938,
+            349.0299987792969
+          ],
+          "observed_physical_column_bbox": [
+            241.00999450683594,
+            142.219970703125,
+            354.42999267578125,
+            304.469970703125
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 398,
+          "code": "MS.EF05LI00.n.01",
+          "original_painted_column_x": [
+            248.2100067138672,
+            350.3500061035156
+          ],
+          "observed_physical_column_bbox": [
+            242.80999755859375,
+            362.0899963378906,
+            355.75,
+            778.2438354492188
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 398,
+          "code": "MS.EF05LI00.n.02",
+          "original_painted_column_x": [
+            248.2100067138672,
+            350.3500061035156
+          ],
+          "observed_physical_column_bbox": [
+            242.80999755859375,
+            362.0899963378906,
+            355.75,
+            778.2438354492188
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 398,
+          "code": "MS.EF05LI00.n.03",
+          "original_painted_column_x": [
+            248.2100067138672,
+            350.3500061035156
+          ],
+          "observed_physical_column_bbox": [
+            242.80999755859375,
+            362.0899963378906,
+            355.75,
+            778.2438354492188
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 398,
+          "code": "MS.EF05LI00.n.04",
+          "original_painted_column_x": [
+            248.2100067138672,
+            350.3500061035156
+          ],
+          "observed_physical_column_bbox": [
+            242.80999755859375,
+            362.0899963378906,
+            355.75,
+            778.2438354492188
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 413,
+          "code": "MS.EF08LI19.s.19",
+          "original_painted_column_x": [
+            253.61000061035156,
+            355.3900146484375
+          ],
+          "observed_physical_column_bbox": [
+            248.2100067138672,
+            142.219970703125,
+            360.7900085449219,
+            530.0899658203125
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 413,
+          "code": "MS.EF08LI20.s.20",
+          "original_painted_column_x": [
+            253.61000061035156,
+            355.3900146484375
+          ],
+          "observed_physical_column_bbox": [
+            248.2100067138672,
+            142.219970703125,
+            360.7900085449219,
+            530.0899658203125
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 413,
+          "code": "MS.EF08LI00.n.21",
+          "original_painted_column_x": [
+            253.61000061035156,
+            355.3900146484375
+          ],
+          "observed_physical_column_bbox": [
+            248.2100067138672,
+            142.219970703125,
+            360.7900085449219,
+            530.0899658203125
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 413,
+          "code": "MS.EF09LI01.s.01",
+          "original_painted_column_x": [
+            246.41000366210938,
+            349.0299987792969
+          ],
+          "observed_physical_column_bbox": [
+            241.00999450683594,
+            587.8299560546875,
+            354.42999267578125,
+            778.2438354492188
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 413,
+          "code": "MS.EF09LI02.s.02",
+          "original_painted_column_x": [
+            246.41000366210938,
+            349.0299987792969
+          ],
+          "observed_physical_column_bbox": [
+            241.00999450683594,
+            587.8299560546875,
+            354.42999267578125,
+            778.2438354492188
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 428,
+          "code": "MS.EF04LE00.n.09",
+          "original_painted_column_x": [
+            246.41000366210938,
+            356.1099853515625
+          ],
+          "observed_physical_column_bbox": [
+            241.00999450683594,
+            142.219970703125,
+            361.510009765625,
+            584.68994140625
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 428,
+          "code": "MS.EF04LE00.n.10",
+          "original_painted_column_x": [
+            246.41000366210938,
+            356.1099853515625
+          ],
+          "observed_physical_column_bbox": [
+            241.00999450683594,
+            142.219970703125,
+            361.510009765625,
+            584.68994140625
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 428,
+          "code": "MS.EF04LE00.n.11",
+          "original_painted_column_x": [
+            246.41000366210938,
+            356.1099853515625
+          ],
+          "observed_physical_column_bbox": [
+            241.00999450683594,
+            142.219970703125,
+            361.510009765625,
+            584.68994140625
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 428,
+          "code": "MS.EF04LE00.n.12",
+          "original_painted_column_x": [
+            246.41000366210938,
+            356.1099853515625
+          ],
+          "observed_physical_column_bbox": [
+            241.00999450683594,
+            142.219970703125,
+            361.510009765625,
+            584.68994140625
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 428,
+          "code": "MS.EF04LE00.n.13",
+          "original_painted_column_x": [
+            246.41000366210938,
+            356.1099853515625
+          ],
+          "observed_physical_column_bbox": [
+            241.00999450683594,
+            142.219970703125,
+            361.510009765625,
+            584.68994140625
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 428,
+          "code": "MS.EF05LE00.n.01",
+          "original_painted_column_x": [
+            248.2100067138672,
+            350.3500061035156
+          ],
+          "observed_physical_column_bbox": [
+            242.80999755859375,
+            642.4299926757812,
+            355.75,
+            778.2438354492188
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 434,
+          "code": "MS.EF06LE00.n.24",
+          "original_painted_column_x": [
+            262.6099853515625,
+            362.2339782714844
+          ],
+          "observed_physical_column_bbox": [
+            257.2099914550781,
+            142.219970703125,
+            367.6300048828125,
+            264.47998046875
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 434,
+          "code": "MS.EF07LE00.n.01",
+          "original_painted_column_x": [
+            264.5299987792969,
+            362.9540100097656
+          ],
+          "observed_physical_column_bbox": [
+            259.1300048828125,
+            322.25,
+            368.3500061035156,
+            778.2438354492188
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 434,
+          "code": "MS.EF07LE00.n02",
+          "original_painted_column_x": [
+            264.5299987792969,
+            362.9540100097656
+          ],
+          "observed_physical_column_bbox": [
+            259.1300048828125,
+            322.25,
+            368.3500061035156,
+            778.2438354492188
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 434,
+          "code": "MS.EF07LE00.n.03",
+          "original_painted_column_x": [
+            264.5299987792969,
+            362.9540100097656
+          ],
+          "observed_physical_column_bbox": [
+            259.1300048828125,
+            322.25,
+            368.3500061035156,
+            778.2438354492188
+          ],
+          "covers_original_header_inner_bounds": true
+        },
+        {
+          "page": 434,
+          "code": "MS.EF07LE00.n.04",
+          "original_painted_column_x": [
+            264.5299987792969,
+            362.9540100097656
+          ],
+          "observed_physical_column_bbox": [
+            259.1300048828125,
+            322.25,
+            368.3500061035156,
+            778.2438354492188
+          ],
+          "covers_original_header_inner_bounds": true
+        }
+      ]
+    },
+    {
+      "name": "rs-technical-ids-unique",
+      "passed": true,
+      "details": {
+        "records": 340,
+        "unique_ids": 340
+      }
+    },
+    {
+      "name": "ms-technical-ids-unique",
+      "passed": true,
+      "details": {
+        "records": 1737,
+        "unique_ids": 1737
+      }
+    },
+    {
+      "name": "rs126-no-left-letter-in-first-right-goal",
+      "passed": true,
+      "details": "Identificar um livro pela leitura do título."
+    },
+    {
+      "name": "rs126-original-duplicate-code-two-texts-preserved",
+      "passed": true,
+      "details": [
+        "Apresentar uma história, mostrando a capa do livro, o título e o nome do autor",
+        "Identificar portadores e gêneros textuais que sejam típicos da cultura local e regional."
+      ]
+    },
+    {
+      "name": "rs126-no-extra-a-in-right-goal",
+      "passed": true,
+      "details": [
+        "Apresentar uma história, mostrando a capa do livro, o título e o nome do autor",
+        "Identificar portadores e gêneros textuais que sejam típicos da cultura local e regional."
+      ]
+    },
+    {
+      "name": "rs126-source-clipping-quality-note-retained",
+      "passed": true,
+      "details": {
+        "column_header": "BNCC",
+        "physical_column_bbox": [
+          14.06400032043457,
+          78.3199462890625,
+          262.3199920654297,
+          752.8003336588541
+        ],
+        "source_identifier_preserved": true,
+        "generic_table_rows_ignored": "Artificial merged-row subdivisions are not additional source occurrences.",
+        "original_native_text_overflows_physical_border": [
+          {
+            "text": "de",
+            "bbox": [
+              254.52003479003906,
+              309.8399963378906,
+              267.9120178222656,
+              326.2200012207031
+            ]
+          },
+          {
+            "text": "e",
+            "bbox": [
+              261.2400207519531,
+              330.5999755859375,
+              267.9120178222656,
+              346.97998046875
+            ]
+          },
+          {
+            "text": "a",
+            "bbox": [
+              261.1212463378906,
+              371.9999694824219,
+              267.7932434082031,
+              388.3799743652344
+            ]
+          }
+        ],
+        "source_typography_note": "Native primary text is preserved; the original PDF can visually clip glyphs at a column border. No missing glyph is reconstructed."
+      }
+    },
+    {
+      "name": "rs126-original-mo-spelling-not-invented",
+      "passed": true,
+      "details": "Levantar hipóteses em relação à linguagem escrita, realizando registros de palavras por mo de escrita espontânea."
+    },
+    {
+      "name": "rs88-zero-code-preserved-no-corrected-code-manufactured",
+      "passed": true,
+      "details": [
+        "EI01E003RS-01"
+      ]
+    },
+    {
+      "name": "rs108-109-only-ruled-cell-carried",
+      "passed": true,
+      "details": "Manipular objetos pequenos, construindo brinquedos ou jogos e utilizar instrumentos como palitos, rolos e pequenas espátulas em suas construções, cada vez com maior destreza."
+    },
+    {
+      "name": "ms155-didactic-reference-not-definition",
+      "passed": true,
+      "details": [
+        "MS.EF02LP10.s.10",
+        "MS.EF02LP11.s.11",
+        "MS.EF02LP12.s.12"
+      ]
+    },
+    {
+      "name": "ms155-156-continuation-no-footer",
+      "passed": true,
+      "details": "Ler e compreender com certa autonomia cantigas, letras de canção, dentre outros gêneros do campo da vida cotidiana, considerando a situação comunicativa e o tema/assunto do texto e relacionando sua forma de organização à sua finalidade."
+    },
+    {
+      "name": "ms567-right-didactic-reference-filtered",
+      "passed": true,
+      "details": [
+        "MS.EF08MA01.s.01",
+        "MS.EF08MA02.s.02"
+      ]
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "readiness_claim": false,
+  "scope": "These physical coded columns and sampled visual contexts only. No full-source narrative/competency/uncoded structure or national UF readiness claim."
+}

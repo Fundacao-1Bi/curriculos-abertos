@@ -1,0 +1,186 @@
+{
+  "at": "2026-10-28T15:38:10.122403+00:00",
+  "status": "passed",
+  "method": "Real am_positions.positions_for_page with original PDF and validated OCR cache; compare chapter scopes off/on; do not modify module.",
+  "samples": [
+    {
+      "source_id": "am-rca-ef-af",
+      "page": 277,
+      "before": {
+        "component": null,
+        "area": null,
+        "years": null
+      },
+      "after": {
+        "component": "Arte",
+        "area": "Linguagens",
+        "years": null
+      },
+      "section_evidence": {
+        "source_id": "am-rca-ef-af",
+        "page": 275,
+        "printed_page": "275",
+        "section": "Arte",
+        "excerpt": "Arte",
+        "evidence_role": "chapter_opening",
+        "method": "original_render_visually_reviewed",
+        "image_path": "var/private-evidence/source-audit-am-sections/af-page-275.png",
+        "image_sha256": "ff2315792b8eecae9d9fc3fc5eca465d44e531dd93d6b8bf921f93a86a4f9179"
+      },
+      "source_context_preserves_physical_year": true
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "page": 315,
+      "before": {
+        "component": "Arte",
+        "area": null,
+        "years": [
+          9
+        ]
+      },
+      "after": {
+        "component": "Arte",
+        "area": "Linguagens",
+        "years": [
+          9
+        ]
+      },
+      "section_evidence": {
+        "source_id": "am-rca-ef-af",
+        "page": 275,
+        "printed_page": "275",
+        "section": "Arte",
+        "excerpt": "Arte",
+        "evidence_role": "chapter_opening",
+        "method": "original_render_visually_reviewed",
+        "image_path": "var/private-evidence/source-audit-am-sections/af-page-275.png",
+        "image_sha256": "ff2315792b8eecae9d9fc3fc5eca465d44e531dd93d6b8bf921f93a86a4f9179"
+      },
+      "source_context_preserves_physical_year": true
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "page": 473,
+      "before": {
+        "component": null,
+        "area": null,
+        "years": null
+      },
+      "after": {
+        "component": null,
+        "area": "Ciências Humanas",
+        "years": null
+      },
+      "section_evidence": {
+        "source_id": "am-rca-ef-af",
+        "page": 473,
+        "printed_page": "473",
+        "section": "COMPETÊNCIAS ESPECÍFICAS DE CIÊNCIAS HUMANAS PARA O ENSINO FUNDAMENTAL",
+        "excerpt": "COMPETÊNCIAS ESPECÍFICAS DE CIÊNCIAS HUMANAS PARA O ENSINO FUNDAMENTAL",
+        "method": "original_render_visually_reviewed",
+        "image_path": "var/private-evidence/source-audit-am-sections/af-page-473.png",
+        "image_sha256": "1e9de1da1135c15f4edb3bfc4bd49691619b8f6009b685d96734e3feab8cfc44"
+      },
+      "source_context_preserves_physical_year": true
+    },
+    {
+      "source_id": "am-rca-em",
+      "page": 138,
+      "before": {
+        "component": null,
+        "area": null,
+        "years": null
+      },
+      "after": {
+        "component": null,
+        "area": "Matemática e suas Tecnologias",
+        "years": null
+      },
+      "section_evidence": {
+        "source_id": "am-rca-em",
+        "artifact_sha256": "46dd801703b5bca3a849df1c8b16fef800f4d07538bf177797cb1ee1f3640313",
+        "page": 137,
+        "section": "Printed opening heading",
+        "excerpt": "2.3 Área de Matemática e suas Tecnologias",
+        "bbox": [
+          90.5999984741211,
+          96.19999694824219,
+          333.0,
+          116.5999984741211
+        ],
+        "upright_bbox": [
+          90.6,
+          96.2,
+          333.0,
+          116.6
+        ],
+        "coordinate_space": "original_pdf_display_after_ocr_inverse_transform",
+        "method": "Original printed section opening located in raw OCR and source pixels; scope ends before next printed section opening.",
+        "image_private_path": "var/private-evidence/source-audit-am-grid/EM-section-review/heading-137.png",
+        "image_sha256": "4b9bfd5f7a70fa424a1d1cd446a92156fb187f3f9a0f7c861967d456b986519d",
+        "source_pixel_sha256": "9e58fe17158ff9975ad7558c994c6f50effad5726fd659de91505c320bb6bc5d",
+        "raw_OCR_sha256": "686ef36bef350be06780151e7ca80f01b93b45c73b4d8ef1685f42f384a080e3"
+      },
+      "source_context_preserves_physical_year": true
+    },
+    {
+      "source_id": "am-rca-em",
+      "page": 117,
+      "before": {
+        "component": null,
+        "area": null,
+        "years": null
+      },
+      "after": {
+        "component": "Língua Portuguesa",
+        "area": "Linguagens e suas Tecnologias",
+        "years": null
+      },
+      "section_evidence": {
+        "source_id": "am-rca-em",
+        "artifact_sha256": "46dd801703b5bca3a849df1c8b16fef800f4d07538bf177797cb1ee1f3640313",
+        "page": 116,
+        "section": "Printed opening heading",
+        "excerpt": "2.2.6 Organizador Curricular de Língua Portuguesa",
+        "bbox": [
+          91.0,
+          486.6000061035156,
+          109.4000015258789,
+          753.7999877929688
+        ],
+        "upright_bbox": [
+          88.2,
+          91.0,
+          355.4,
+          109.4
+        ],
+        "coordinate_space": "original_pdf_display_after_ocr_inverse_transform",
+        "method": "Original printed section opening located in raw OCR and source pixels; scope ends before next printed section opening.",
+        "image_private_path": "var/private-evidence/source-audit-am-grid/EM-section-review/heading-116.png",
+        "image_sha256": "44ceaf828239d2e88b29d8076a2c63187aa728ded484127bb8b9768816d475ef",
+        "source_pixel_sha256": "90eb66119dfe0616341a6d5461cb3546415bbe7e0ae5b5f71f516e48529dede6",
+        "raw_OCR_sha256": "b1dc4b3205e3ee77f6aa460ab6dde1c101f0772e3cadc609286d79cc57bf28df",
+        "raw_OCR_heading_text": "2.2.6 Organizador Curricular de Lingua Portuguesa",
+        "transcription_note": "Accent restored from directly inspected printed source heading; original OCR text and SHA retained."
+      },
+      "source_context_preserves_physical_year": true
+    },
+    {
+      "source_id": "am-rca-em",
+      "page": 230,
+      "before": {
+        "component": null,
+        "area": null,
+        "years": null
+      },
+      "after": {
+        "component": null,
+        "area": null,
+        "years": null
+      },
+      "section_evidence": null,
+      "source_context_preserves_physical_year": true
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "actor_type": "automated",
+  "current_ingest_sha256": "23e2413d65d6a0e021d15b71ed3e7cc7f9bb858b74006515f8073507c0138c76",
+  "new_pattern": "(?<!\\w)(?:(?:AC|AL|AM|AP|BA|CE|DF|ES|GO|MA|MG|MS|MT|PA|PB|PE|PI|PR|RJ|RN|RO|RR|RS|SC|SE|SP|TO|BR)(?:[-.]\\s*|[ \\t]+))?(?:(?:EI\\d{2}[A-Z]{2}\\d{2}|EF\\d{2}[A-Z]{2}\\d{2,3}|EM\\d{2}(?:[A-Z]{3}\\d{3}|LP\\d{1,4}|CO\\d{2}))|EMIF[A-Z]{2,6}\\d{1,3}|EM(?:LGG|MAT|CNT|CHS)\\d{3}[A-Z]?|EM(?:LP|CH)\\d{2,3}(?:[-.]?[A-Z])?|EM[123]PV\\d{2}|PV\\d{2}|(?:LP|LGG|CHSA|MAT|CN|EPT)\\d{2,3}(?:FG|IF))(?:(?:\\.\\s*[scadn]\\s*\\.\\s*\\d{2})|(?:[A-Z][A-Za-z0-9]{0,12}|[a-z]|\\*)|[/.-][A-Za-z0-9-]+)*(?!\\w)",
+  "sources": [
+    {
+      "source_id": "rn-trilhas-aprofundamento",
+      "existing_native_stream_occurrences": 2930,
+      "all_existing_code_forms_valid_unicode_guard": true,
+      "existing_UF_prefixed_forms": 0,
+      "preserved_page_buffer_old_matches": 2930,
+      "preserved_page_buffer_new_matches": 2930,
+      "page_buffer_differences": [],
+      "cache_sha256": "f1b939473736fc7bd491b878ff6b50cc58a2b9921c501f6f8d2f4182b326cde4"
+    },
+    {
+      "source_id": "rn-dcec-computacao",
+      "existing_native_stream_occurrences": 1392,
+      "all_existing_code_forms_valid_unicode_guard": true,
+      "existing_UF_prefixed_forms": 0,
+      "preserved_page_buffer_old_matches": 1392,
+      "preserved_page_buffer_new_matches": 1392,
+      "page_buffer_differences": [],
+      "cache_sha256": "c334ad3503c7ee3c3e510d47e5ffaa18c38b8714b34a8061ba5d727d70748a5e"
+    }
+  ],
+  "false_UF_suffix_negative_cases": [
+    {
+      "text": "TRANSFORMAÇÕES EI03ET02PE",
+      "found": [
+        "EI03ET02PE"
+      ]
+    },
+    {
+      "text": "RELAÇÕES EMIFLGG01",
+      "found": [
+        "EMIFLGG01"
+      ]
+    }
+  ],
+  "new_full_PDF_read": false,
+  "scope": "Revalidate every4322 previously physically localized RN code form and compare old/new boundaries over all1304 preserved page text buffers. This does not claim a new current-core FULL extraction."
+}

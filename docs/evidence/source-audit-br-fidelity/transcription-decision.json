@@ -1,0 +1,42 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex-project-coordinator",
+  "recorded_by": "codex-independent-br-fidelity-auditor",
+  "recorded_at": "2026-10-28T16:04:50.833090+00:00",
+  "decision": "B: primary literal PDF transcription in a new extraction/publication",
+  "requirements": [
+    "DAT-01",
+    "DAT-04",
+    "DAT-05"
+  ],
+  "scope": {
+    "affected_ids": [
+      "ca:br-bncc-2018:EM13CHS302",
+      "ca:br-bncc-2018:EM13CHS606",
+      "ca:br-bncc-2018:EM13CNT107",
+      "ca:br-bncc-2018:EM13LP26",
+      "ca:br-bncc-2018:EM13LP34",
+      "ca:br-bncc-2018:EM13LP37",
+      "ca:br-bncc-2018:EM13LP40",
+      "ca:br-bncc-2018:EM13LP54"
+    ],
+    "affected_records": 8,
+    "primary_EN_DASH_glyphs": 16,
+    "other_licensed_texts_unchanged": 1713,
+    "ids_codes_aliases_unchanged": true,
+    "old_publications_immutable": true,
+    "upstream_dataset_files_unchanged": true
+  },
+  "implementation_contract": {
+    "text": "Primary PDF literal wording and punctuation, whitespace normalized only, including U+2013 EN DASH",
+    "upstream_text": "Original CC-BY dataset text preserved byte-exact as Unicode string",
+    "primary_source_text": "Unmodified native primary body excerpt, including source line breaks and EN DASH",
+    "provenance": "Primary source SHA, upstream/source/corrected text hashes, all 16 rawdict/trace glyph differences and actual bboxes/renders",
+    "review": "Explicit automated extraction correction event; never human pedagogical approval or claimed official curriculum amendment",
+    "extraction_revision": "page-cell-v1.5.0 after shared freeze",
+    "checker": "Original literal checker; remove proposed special typography mapping bypass; no global search/formatter/normalizer change"
+  },
+  "supersedes": "Initial evidence-only constraint for exactly these eight canonical fields. All initial ID/code/text invariants remain for the other1713 licensed records. The initial frozen baseline remains untouched as the before-state.",
+  "authorization_evidence": "Explicit coordinating-agent instruction choosing B after options and risks were presented; local project user mandate authorizes reversible implementation and identified extraction revisions.",
+  "national_release_asserted": false
+}

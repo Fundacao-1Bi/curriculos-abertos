@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "actor_type": "automated",
+  "started_at": "2026-10-28T14:00:31.907Z",
+  "completed_at": "2026-10-28T14:00:46.316Z",
+  "source": "pe-historia-pernambuco-2026",
+  "job_id": "ba36e7da-6bd6-4762-9af4-0b2c4a84b135",
+  "publication": null,
+  "original_default": "ca-77fb8076598b567e1ba3",
+  "checks": [
+    {
+      "name": "temporary_automated_administrator_logged_in",
+      "passed": true
+    },
+    {
+      "name": "official_cached_source_enqueued_through_authenticated_api",
+      "passed": true,
+      "detail": {
+        "job_id": "ba36e7da-6bd6-4762-9af4-0b2c4a84b135",
+        "source": "pe-historia-pernambuco-2026"
+      }
+    }
+  ],
+  "passed": false,
+  "error": "Pipeline real recusou montar o candidato: No valid extraction cache available; existing candidate/publication left untouched"
+}

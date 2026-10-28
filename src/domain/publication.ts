@@ -3,7 +3,9 @@ import { pool } from '../db/client';
 import { UFS, type Bundle } from '../shared/contracts';
 import { DomainError } from './errors';
 import { normalize } from './normalize';
+import {validatePositionAge} from './age';
 import { publishVisibility } from './visibility';
+import {assertSchemaDeclaration,verifyPublicationSchema,type SchemaPinOptions} from './schema-pin';
 
 export function validateHierarchy(parents:Map<string,string>,ids:Set<string>) {
  for(const[id,parent]of parents)if(!ids.has(parent))throw new DomainError(422,'DANGLING_PARENT',id);
@@ -16,6 +18,7 @@ export function validateBundle(value:unknown):asserts value is Bundle {
  const checkReviews=(entity:Record<string,unknown>)=>{const events=entity.review_events;if(events!==undefined&&!Array.isArray(events))throw new DomainError(422,'INVALID_REVIEWS','Eventos de revisão devem ser uma lista.');if(Array.isArray(events))for(const event of events){if(!event||typeof event!=='object'||!['human','automated'].includes(event.actor_type)||typeof event.actor_id!=='string'||!event.actor_id)throw new DomainError(422,'INVALID_REVIEW_ACTOR','Revisão exige identidade e tipo real de ator.');}if(typeof entity.pedagogical_review_status==='string'&&/human|humana/.test(entity.pedagogical_review_status)&&(!Array.isArray(events)||!events.some(e=>e.actor_type==='human')))throw new DomainError(422,'UNSUPPORTED_HUMAN_REVIEW','Revisão humana alegada sem evento humano identificado.');};
  if(!/^[a-zA-Z0-9][a-zA-Z0-9._-]{0,159}$/.test(b.id??'')) throw new DomainError(422,'INVALID_BUNDLE_ID','ID da publicação inválido.');
  for(const key of ['schema_version','created_at','extraction_revision','mapping_revision'] as const) if(typeof b[key]!=='string'||!b[key]) throw new DomainError(422,'INVALID_BUNDLE',`Campo obrigatório: ${key}`);
+ assertSchemaDeclaration(b);
  if(!Number.isFinite(Date.parse(b.created_at))) throw new DomainError(422,'INVALID_BUNDLE','Data de criação inválida.');
  if(!Array.isArray(b.sources)||!Array.isArray(b.items)||!Array.isArray(b.relations)||!Array.isArray(b.coverage)||!Array.isArray(b.changelog)) throw new DomainError(422,'INVALID_BUNDLE','Coleções obrigatórias ausentes.');
  for(const [key,records]of [['item_count',b.items],['relation_count',b.relations],['source_count',b.sources]] as const)if(Object.hasOwn(b,key)&&b[key]!==records.length)throw new DomainError(422,'BUNDLE_COUNT_MISMATCH',`Contagem ${key} difere dos registros.`);
@@ -24,8 +27,10 @@ export function validateBundle(value:unknown):asserts value is Bundle {
  for(const s of b.sources) {
   if(typeof s.id!=='string'||!s.id||s.id.length>500||sourceIds.has(s.id)) throw new DomainError(422,'DUPLICATE_SOURCE',`Fonte duplicada ou inválida: ${s.id}`);
   if(s.uf!=='BR' && !Object.hasOwn(UFS,s.uf)) throw new DomainError(422,'INVALID_UF',`UF inválida: ${s.uf}`);
-  for(const key of ['title','issuer','official_url','artifact_url','document_type','redistribution','status']) if(typeof s[key]!=='string') throw new DomainError(422,'INVALID_SOURCE',`Fonte ${s.id}: ${key} ausente.`);
-  for(const key of ['official_url','artifact_url']) {try {const u=new URL(s[key] as string);if(!['https:','http:'].includes(u.protocol))throw Error();}catch{throw new DomainError(422,'INVALID_SOURCE_URL',`Fonte ${s.id}: URL inválida.`);}}
+  for(const key of ['title','issuer','official_url','document_type','redistribution','status']) if(typeof s[key]!=='string') throw new DomainError(422,'INVALID_SOURCE',`Fonte ${s.id}: ${key} ausente.`);
+  if(s.artifact_url!==null&&typeof s.artifact_url!=='string')throw new DomainError(422,'INVALID_SOURCE',`Fonte ${s.id}: artifact_url deve ser URL ou nulo explícito.`);
+  if(b.schema_version==='1.0.0'&&s.artifact_url===null)throw new DomainError(422,'SOURCE_SCHEMA_VERSION','artifact_url nulo exige schema 1.1.0; o contrato histórico 1.0.0 permanece preservado.');
+  for(const key of ['official_url','artifact_url']) {if(key==='artifact_url'&&s[key]===null)continue;try {const u=new URL(s[key] as string);if(!['https:','http:'].includes(u.protocol))throw Error();}catch{throw new DomainError(422,'INVALID_SOURCE_URL',`Fonte ${s.id}: URL inválida.`);}}
   if(!Array.isArray(s.stages)||s.stages.some(x=>!['EI','EF','EM'].includes(x))) throw new DomainError(422,'INVALID_SOURCE','Etapa inválida.');
   if(!Array.isArray(s.components)||s.components.some(c=>typeof c!=='string')||!Array.isArray(s.normative_parts)||s.normative_parts.some(p=>typeof p!=='string'))throw new DomainError(422,'INVALID_SOURCE','Componentes e partes esperadas devem ser listas.');
   if(s.sha256!==null&&!/^[a-f0-9]{64}$/.test(s.sha256??''))throw new DomainError(422,'INVALID_SOURCE_HASH',s.id);
@@ -43,7 +48,7 @@ export function validateBundle(value:unknown):asserts value is Bundle {
   checkReviews(item);
   if(item.code!==null&&typeof item.code!=='string')throw new DomainError(422,'INVALID_ITEM','Código deve ser texto ou nulo.');
   if(!Array.isArray(item.positions)||!Array.isArray(item.evidence)||!item.evidence.length)throw new DomainError(422,'MISSING_EVIDENCE',`Item sem evidência: ${item.id}`);
-  for(const p of item.positions) {for(const field of ['component','area','year_label','age_group','period'] as const)if(p[field]!==null&&typeof p[field]!=='string')throw new DomainError(422,'INVALID_POSITION',`Campo de posicionamento ${field} inválido: ${item.id}`);if(!sourcesById.get(item.source_id)?.stages.includes(p.stage))throw new DomainError(422,'ITEM_SOURCE_STAGE_MISMATCH',`Etapa divergente da fonte: ${item.id}`);if(!['EI','EF','EM'].includes(p.stage))throw new DomainError(422,'INVALID_POSITION',item.id);if(p.years!==null&&(!Array.isArray(p.years)||p.years.some(y=>!Number.isInteger(y)||y<1||y>12)))throw new DomainError(422,'INVALID_POSITION',item.id);}
+  for(const p of item.positions) {validatePositionAge(p as unknown as Record<string,unknown>,item.source_id);for(const field of ['component','area','year_label','age_group','period'] as const)if(p[field]!==null&&typeof p[field]!=='string')throw new DomainError(422,'INVALID_POSITION',`Campo de posicionamento ${field} inválido: ${item.id}`);if(!sourcesById.get(item.source_id)?.stages.includes(p.stage))throw new DomainError(422,'ITEM_SOURCE_STAGE_MISMATCH',`Etapa divergente da fonte: ${item.id}`);if(!['EI','EF','EM'].includes(p.stage))throw new DomainError(422,'INVALID_POSITION',item.id);if(p.years!==null&&(!Array.isArray(p.years)||p.years.some(y=>!Number.isInteger(y)||y<1||y>12)))throw new DomainError(422,'INVALID_POSITION',item.id);}
   if(!item.evidence.some(e=>e.source_id===item.source_id))throw new DomainError(422,'MISSING_PRIMARY_EVIDENCE',item.id);
   for(const e of item.evidence) if(!sourceIds.has(e.source_id)||typeof e.excerpt!=='string'||!e.excerpt.trim()||(e.page!==null&&(!Number.isInteger(e.page)||e.page<1))||(e.page===null&&!e.section)||(e.printed_page!==null&&typeof e.printed_page!=='string')||(e.section!==null&&typeof e.section!=='string'))throw new DomainError(422,'INVALID_EVIDENCE',`Localizador ausente/inválido: ${item.id}`);
   itemIds.add(item.id);
@@ -81,8 +86,9 @@ async function samePublishedBundle(client:import('pg').PoolClient,id:string,bund
  return true;
 }
 
-export async function importBundle(bundle:Bundle,options:{sha256?:string;makeDefault?:boolean}={}) {
+export async function importBundle(bundle:Bundle,options:{sha256?:string;makeDefault?:boolean}&SchemaPinOptions={}) {
  validateBundle(bundle);
+ const schema=await verifyPublicationSchema(bundle,options);for(const source of bundle.sources)schema.validate('Source',source);for(const item of bundle.items)schema.validate('Learning',item);for(const relation of bundle.relations)schema.validate('Relation',relation);
  const serialized=JSON.stringify(bundle);
  let digest=createHash('sha256').update(serialized).digest('hex');
  if(options.sha256&&options.sha256!==digest)throw new DomainError(422,'CHECKSUM_MISMATCH','Checksum do conteúdo canônico divergente.');

@@ -1,0 +1,1704 @@
+{
+  "format": "curriculos-abertos/source-proposal-v1",
+  "integration_status": "fourteen_sources_integrated_into_northeast_manifest_one_typology_pending",
+  "integration_note": "Loader intentionally ignores proposed_sources and pending_typology_sources. Northeast owner must validate and incorporate a single Source location, preserving undecided scope as pending, never silently excluded.",
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:pe-current-inventory",
+  "proposed_sources": [
+    {
+      "id": "pe-fgb-trimestral-matematica-c6335b8d",
+      "uf": "PE",
+      "title": "Organizador Curricular Trimestral da Formação Geral Básica — Matemática",
+      "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Matematica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Matematica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "Matemática"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "complemento_curricular",
+      "normative_parts": [
+        "Organizador Curricular por Trimestre da Formação Geral Básica",
+        "Habilidades de área da BNCC",
+        "Habilidades específicas dos componentes",
+        "Objetos de conhecimento",
+        "Articulação com BNCC Computação e possibilidades de abordagens"
+      ],
+      "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+      "collected_at": "2026-10-28T05:42:08.142871+00:00",
+      "sha256": "c6335b8d1961d8c3478c9a2def970dfd14d26bf606d9e3c15f427fbecdb301f4",
+      "local_path": "data/raw/PE/c6335b8d1961d8c3478c9a2def970dfd14d26bf606d9e3c15f427fbecdb301f4.pdf",
+      "status": "acquired",
+      "bytes": 764361,
+      "pages": 55,
+      "pdf_pages": 55,
+      "http_status": 200,
+      "attempts": [
+        {
+          "at": "2026-10-28T05:42:08.142826+00:00",
+          "result": "acquired_and_pdf_parsed",
+          "http_status": 200,
+          "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Matematica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+          "content_type": "application/pdf",
+          "etag": "\"69985cf1-ba9c9\"",
+          "last_modified": "Fri, 20 Feb 2026 13:09:05 GMT",
+          "bytes": 764361
+        }
+      ],
+      "mandatory": true,
+      "required": true,
+      "include_in_corpus": true,
+      "reconciled": false,
+      "inventory_status": "source_and_document_parts_identified_extraction_pending",
+      "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+      "portal_group": "2026",
+      "portal_panel_block_id": "d4bc102",
+      "portal_link_label": "Matemática Organizador Curricular Trimestral da FGB",
+      "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+      "artifact_metadata": {
+        "format": "PDF 1.4",
+        "title": "Matemática_Organizador Curricular Trimestral da FGB.docx",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Skia/PDF m146 Google Docs Renderer",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "inventory_preview": "data/raw/PE/c6335b8d1961d8c3478c9a2def970dfd14d26bf606d9e3c15f427fbecdb301f4.inventory.txt",
+      "inventory_evidence": [
+        {
+          "page": 1,
+          "section": "Capa",
+          "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) MATEMÁTICA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+          "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+        }
+      ],
+      "scope_basis": {
+        "page": 3,
+        "section": "Organizador curricular",
+        "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+      },
+      "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+      "scope_school_years": [
+        1,
+        2,
+        3
+      ],
+      "scope_period_organization": "trimestres",
+      "normative_reference_review": {
+        "instruction": null,
+        "instruction_original_artifact_obtained": false,
+        "edition_not_inferred_from_url_or_portal": true
+      },
+      "typology_status": "official_current_curricular_organizer_or_ifa_part",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+        "at": "2026-10-28T13:57:58.516198+00:00"
+      }
+    },
+    {
+      "id": "pe-fgb-trimestral-arte-cb58c164",
+      "uf": "PE",
+      "title": "Organizador Curricular Trimestral da Formação Geral Básica — Arte",
+      "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Arte_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Arte_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "Arte"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "complemento_curricular",
+      "normative_parts": [
+        "Organizador Curricular por Trimestre da Formação Geral Básica",
+        "Habilidades de área da BNCC",
+        "Habilidades específicas dos componentes",
+        "Objetos de conhecimento",
+        "Articulação com BNCC Computação e possibilidades de abordagens"
+      ],
+      "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+      "collected_at": "2026-10-28T05:42:07.716210+00:00",
+      "sha256": "cb58c1647f952ebc66761e7cf725da4a885b9acdc00d73db68fa9bd95fa3eb8b",
+      "local_path": "data/raw/PE/cb58c1647f952ebc66761e7cf725da4a885b9acdc00d73db68fa9bd95fa3eb8b.pdf",
+      "status": "acquired",
+      "bytes": 489916,
+      "pages": 37,
+      "pdf_pages": 37,
+      "http_status": 200,
+      "attempts": [
+        {
+          "at": "2026-10-28T05:42:07.716169+00:00",
+          "result": "acquired_and_pdf_parsed",
+          "http_status": 200,
+          "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Arte_Organizador-Curricular-Trimestral-da-FGB.pdf",
+          "content_type": "application/pdf",
+          "etag": "\"69985d13-779bc\"",
+          "last_modified": "Fri, 20 Feb 2026 13:09:39 GMT",
+          "bytes": 489916
+        }
+      ],
+      "mandatory": true,
+      "required": true,
+      "include_in_corpus": true,
+      "reconciled": false,
+      "inventory_status": "source_and_document_parts_identified_extraction_pending",
+      "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+      "portal_group": "2026",
+      "portal_panel_block_id": "d4bc102",
+      "portal_link_label": "Arte Organizador Curricular Trimestral da FGB",
+      "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+      "artifact_metadata": {
+        "format": "PDF 1.4",
+        "title": "Arte_Organizador Curricular Trimestral da FGB.docx",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Skia/PDF m146 Google Docs Renderer",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "inventory_preview": "data/raw/PE/cb58c1647f952ebc66761e7cf725da4a885b9acdc00d73db68fa9bd95fa3eb8b.inventory.txt",
+      "inventory_evidence": [
+        {
+          "page": 1,
+          "section": "Capa",
+          "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) Arte ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+          "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+        }
+      ],
+      "scope_basis": {
+        "page": 3,
+        "section": "Organizador curricular",
+        "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+      },
+      "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+      "scope_school_years": [
+        1,
+        2,
+        3
+      ],
+      "scope_period_organization": "trimestres",
+      "normative_reference_review": {
+        "instruction": null,
+        "instruction_original_artifact_obtained": false,
+        "edition_not_inferred_from_url_or_portal": true
+      },
+      "typology_status": "official_current_curricular_organizer_or_ifa_part",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+        "at": "2026-10-28T13:57:58.902773+00:00"
+      }
+    },
+    {
+      "id": "pe-fgb-trimestral-educacao-fisica-d997d37c",
+      "uf": "PE",
+      "title": "Organizador Curricular Trimestral da Formação Geral Básica — Educação Física",
+      "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Educacao-Fisica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Educacao-Fisica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "Educação Física"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "complemento_curricular",
+      "normative_parts": [
+        "Organizador Curricular por Trimestre da Formação Geral Básica",
+        "Habilidades de área da BNCC",
+        "Habilidades específicas dos componentes",
+        "Objetos de conhecimento",
+        "Articulação com BNCC Computação e possibilidades de abordagens"
+      ],
+      "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+      "collected_at": "2026-10-28T05:42:07.992556+00:00",
+      "sha256": "d997d37cc3c8b1a05c8ad42a3b29fd6bdea7506f86755cfc895a1d5f2213f682",
+      "local_path": "data/raw/PE/d997d37cc3c8b1a05c8ad42a3b29fd6bdea7506f86755cfc895a1d5f2213f682.pdf",
+      "status": "acquired",
+      "bytes": 642119,
+      "pages": 59,
+      "pdf_pages": 59,
+      "http_status": 200,
+      "attempts": [
+        {
+          "at": "2026-10-28T05:42:07.992496+00:00",
+          "result": "acquired_and_pdf_parsed",
+          "http_status": 200,
+          "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Educacao-Fisica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+          "content_type": "application/pdf",
+          "etag": "\"69985d2a-9cc47\"",
+          "last_modified": "Fri, 20 Feb 2026 13:10:02 GMT",
+          "bytes": 642119
+        }
+      ],
+      "mandatory": true,
+      "required": true,
+      "include_in_corpus": true,
+      "reconciled": false,
+      "inventory_status": "source_and_document_parts_identified_extraction_pending",
+      "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+      "portal_group": "2026",
+      "portal_panel_block_id": "d4bc102",
+      "portal_link_label": "Educação Física Organizador Curricular Trimestral da FGB",
+      "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+      "artifact_metadata": {
+        "format": "PDF 1.4",
+        "title": "Educação física_Organizador Curricular Trimestral da FGB.docx",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Skia/PDF m146 Google Docs Renderer",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "inventory_preview": "data/raw/PE/d997d37cc3c8b1a05c8ad42a3b29fd6bdea7506f86755cfc895a1d5f2213f682.inventory.txt",
+      "inventory_evidence": [
+        {
+          "page": 1,
+          "section": "Capa",
+          "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) EDUCAÇÃO FÍSICA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+          "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+        }
+      ],
+      "scope_basis": {
+        "page": 3,
+        "section": "Organizador curricular",
+        "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+      },
+      "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+      "scope_school_years": [
+        1,
+        2,
+        3
+      ],
+      "scope_period_organization": "trimestres",
+      "normative_reference_review": {
+        "instruction": null,
+        "instruction_original_artifact_obtained": false,
+        "edition_not_inferred_from_url_or_portal": true
+      },
+      "typology_status": "official_current_curricular_organizer_or_ifa_part",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+        "at": "2026-10-28T13:58:00.144803+00:00"
+      }
+    },
+    {
+      "id": "pe-fgb-trimestral-lingua-inglesa-360febf4",
+      "uf": "PE",
+      "title": "Organizador Curricular Trimestral da Formação Geral Básica — Língua Inglesa",
+      "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Lingua-Inglesa-Organizador-Curricular-Trimestral-da-FGB_.pdf",
+      "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Lingua-Inglesa-Organizador-Curricular-Trimestral-da-FGB_.pdf",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "Língua Inglesa"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "complemento_curricular",
+      "normative_parts": [
+        "Organizador Curricular por Trimestre da Formação Geral Básica",
+        "Habilidades de área da BNCC",
+        "Habilidades específicas dos componentes",
+        "Objetos de conhecimento",
+        "Articulação com BNCC Computação e possibilidades de abordagens"
+      ],
+      "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+      "collected_at": "2026-10-28T05:42:08.783847+00:00",
+      "sha256": "360febf484d1acba6567c9660cb58bf9035cf68e2740ab11c5205002cbff2a9b",
+      "local_path": "data/raw/PE/360febf484d1acba6567c9660cb58bf9035cf68e2740ab11c5205002cbff2a9b.pdf",
+      "status": "acquired",
+      "bytes": 510077,
+      "pages": 32,
+      "pdf_pages": 32,
+      "http_status": 200,
+      "attempts": [
+        {
+          "at": "2026-10-28T05:42:08.783807+00:00",
+          "result": "acquired_and_pdf_parsed",
+          "http_status": 200,
+          "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Lingua-Inglesa-Organizador-Curricular-Trimestral-da-FGB_.pdf",
+          "content_type": "application/pdf",
+          "etag": "\"69985d41-7c87d\"",
+          "last_modified": "Fri, 20 Feb 2026 13:10:25 GMT",
+          "bytes": 510077
+        }
+      ],
+      "mandatory": true,
+      "required": true,
+      "include_in_corpus": true,
+      "reconciled": false,
+      "inventory_status": "source_and_document_parts_identified_extraction_pending",
+      "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+      "portal_group": "2026",
+      "portal_panel_block_id": "d4bc102",
+      "portal_link_label": "Língua Inglesa Organizador Curricular Trimestral da FGB",
+      "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+      "artifact_metadata": {
+        "format": "PDF 1.4",
+        "title": "Língua Inglesa - Organizador Curricular Trimestral da FGB ",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Skia/PDF m146 Google Docs Renderer",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "inventory_preview": "data/raw/PE/360febf484d1acba6567c9660cb58bf9035cf68e2740ab11c5205002cbff2a9b.inventory.txt",
+      "inventory_evidence": [
+        {
+          "page": 1,
+          "section": "Capa",
+          "excerpt": "- ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) LÍNGUA INGLESA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+          "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+        }
+      ],
+      "scope_basis": {
+        "page": 3,
+        "section": "Organizador curricular",
+        "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+      },
+      "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+      "scope_school_years": [
+        1,
+        2,
+        3
+      ],
+      "scope_period_organization": "trimestres",
+      "normative_reference_review": {
+        "instruction": null,
+        "instruction_original_artifact_obtained": false,
+        "edition_not_inferred_from_url_or_portal": true
+      },
+      "typology_status": "official_current_curricular_organizer_or_ifa_part",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+        "at": "2026-10-28T13:58:00.961952+00:00"
+      }
+    },
+    {
+      "id": "pe-fgb-trimestral-lingua-portuguesa-f9f839b5",
+      "uf": "PE",
+      "title": "Organizador Curricular Trimestral da Formação Geral Básica — Língua Portuguesa",
+      "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Lingua-Portuguesa-Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Lingua-Portuguesa-Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "Língua Portuguesa"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "complemento_curricular",
+      "normative_parts": [
+        "Organizador Curricular por Trimestre da Formação Geral Básica",
+        "Habilidades de área da BNCC",
+        "Habilidades específicas dos componentes",
+        "Objetos de conhecimento",
+        "Articulação com BNCC Computação e possibilidades de abordagens"
+      ],
+      "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+      "collected_at": "2026-10-28T05:42:09.881081+00:00",
+      "sha256": "f9f839b56f6a718515df9d5d0d2358c388258b3c2b596eecadfb1104b882b579",
+      "local_path": "data/raw/PE/f9f839b56f6a718515df9d5d0d2358c388258b3c2b596eecadfb1104b882b579.pdf",
+      "status": "acquired",
+      "bytes": 1265489,
+      "pages": 103,
+      "pdf_pages": 103,
+      "http_status": 200,
+      "attempts": [
+        {
+          "at": "2026-10-28T05:42:09.881000+00:00",
+          "result": "acquired_and_pdf_parsed",
+          "http_status": 200,
+          "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Lingua-Portuguesa-Organizador-Curricular-Trimestral-da-FGB.pdf",
+          "content_type": "application/pdf",
+          "etag": "\"69985d55-134f51\"",
+          "last_modified": "Fri, 20 Feb 2026 13:10:45 GMT",
+          "bytes": 1265489
+        }
+      ],
+      "mandatory": true,
+      "required": true,
+      "include_in_corpus": true,
+      "reconciled": false,
+      "inventory_status": "source_and_document_parts_identified_extraction_pending",
+      "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+      "portal_group": "2026",
+      "portal_panel_block_id": "d4bc102",
+      "portal_link_label": "Língua Portuguesa Organizador Curricular Trimestral da FGB",
+      "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+      "artifact_metadata": {
+        "format": "PDF 1.4",
+        "title": "Organizador Curricular Trimestral de Língua Portuguesa - Versão final 2026.docx",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Skia/PDF m146 Google Docs Renderer",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "inventory_preview": "data/raw/PE/f9f839b56f6a718515df9d5d0d2358c388258b3c2b596eecadfb1104b882b579.inventory.txt",
+      "inventory_evidence": [
+        {
+          "page": 1,
+          "section": "Capa",
+          "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) LÍNGUA PORTUGUESA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+          "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+        }
+      ],
+      "scope_basis": {
+        "page": 3,
+        "section": "Organizador curricular",
+        "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+      },
+      "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+      "scope_school_years": [
+        1,
+        2,
+        3
+      ],
+      "scope_period_organization": "trimestres",
+      "normative_reference_review": {
+        "instruction": null,
+        "instruction_original_artifact_obtained": false,
+        "edition_not_inferred_from_url_or_portal": true
+      },
+      "typology_status": "official_current_curricular_organizer_or_ifa_part",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+        "at": "2026-10-28T13:58:03.521320+00:00"
+      }
+    },
+    {
+      "id": "pe-fgb-trimestral-filosofia-d3d771c6",
+      "uf": "PE",
+      "title": "Organizador Curricular Trimestral da Formação Geral Básica — Filosofia",
+      "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Filosofia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Filosofia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "Filosofia"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "complemento_curricular",
+      "normative_parts": [
+        "Organizador Curricular por Trimestre da Formação Geral Básica",
+        "Habilidades de área da BNCC",
+        "Habilidades específicas dos componentes",
+        "Objetos de conhecimento",
+        "Articulação com BNCC Computação e possibilidades de abordagens"
+      ],
+      "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+      "collected_at": "2026-10-28T05:42:09.085983+00:00",
+      "sha256": "d3d771c6b0ef86b0e66736a6389da3adc4fa7c55a31495f3ffe006b4dd5eaee8",
+      "local_path": "data/raw/PE/d3d771c6b0ef86b0e66736a6389da3adc4fa7c55a31495f3ffe006b4dd5eaee8.pdf",
+      "status": "acquired",
+      "bytes": 401853,
+      "pages": 20,
+      "pdf_pages": 20,
+      "http_status": 200,
+      "attempts": [
+        {
+          "at": "2026-10-28T05:42:09.085950+00:00",
+          "result": "acquired_and_pdf_parsed",
+          "http_status": 200,
+          "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Filosofia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+          "content_type": "application/pdf",
+          "etag": "\"69985d8b-621bd\"",
+          "last_modified": "Fri, 20 Feb 2026 13:11:39 GMT",
+          "bytes": 401853
+        }
+      ],
+      "mandatory": true,
+      "required": true,
+      "include_in_corpus": true,
+      "reconciled": false,
+      "inventory_status": "source_and_document_parts_identified_extraction_pending",
+      "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+      "portal_group": "2026",
+      "portal_panel_block_id": "d4bc102",
+      "portal_link_label": "Filosofia Organizador Curricular Trimestral da FGB",
+      "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+      "artifact_metadata": {
+        "format": "PDF 1.4",
+        "title": "Filosofia_Organizador Curricular Trimestral da FGB",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Skia/PDF m146 Google Docs Renderer",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "inventory_preview": "data/raw/PE/d3d771c6b0ef86b0e66736a6389da3adc4fa7c55a31495f3ffe006b4dd5eaee8.inventory.txt",
+      "inventory_evidence": [
+        {
+          "page": 1,
+          "section": "Capa",
+          "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) FILOSOFIA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+          "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+        }
+      ],
+      "scope_basis": {
+        "page": 3,
+        "section": "Organizador curricular",
+        "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+      },
+      "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+      "scope_school_years": [
+        1,
+        2,
+        3
+      ],
+      "scope_period_organization": "trimestres",
+      "normative_reference_review": {
+        "instruction": null,
+        "instruction_original_artifact_obtained": false,
+        "edition_not_inferred_from_url_or_portal": true
+      },
+      "typology_status": "official_current_curricular_organizer_or_ifa_part",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+        "at": "2026-10-28T13:58:03.986760+00:00"
+      }
+    },
+    {
+      "id": "pe-fgb-trimestral-geografia-916f592c",
+      "uf": "PE",
+      "title": "Organizador Curricular Trimestral da Formação Geral Básica — Geografia",
+      "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Geografia-Organizador-Curricular-Trimestral-da-FGB_.pdf",
+      "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Geografia-Organizador-Curricular-Trimestral-da-FGB_.pdf",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "Geografia"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "complemento_curricular",
+      "normative_parts": [
+        "Organizador Curricular por Trimestre da Formação Geral Básica",
+        "Habilidades de área da BNCC",
+        "Habilidades específicas dos componentes",
+        "Objetos de conhecimento",
+        "Articulação com BNCC Computação e possibilidades de abordagens"
+      ],
+      "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+      "collected_at": "2026-10-28T05:42:09.995270+00:00",
+      "sha256": "916f592ce7b4f230c0a2eb7f5ad7002e98cf5c9fe3fef5834ddf00e0907f393c",
+      "local_path": "data/raw/PE/916f592ce7b4f230c0a2eb7f5ad7002e98cf5c9fe3fef5834ddf00e0907f393c.pdf",
+      "status": "acquired",
+      "bytes": 563093,
+      "pages": 37,
+      "pdf_pages": 37,
+      "http_status": 200,
+      "attempts": [
+        {
+          "at": "2026-10-28T05:42:09.995214+00:00",
+          "result": "acquired_and_pdf_parsed",
+          "http_status": 200,
+          "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Geografia-Organizador-Curricular-Trimestral-da-FGB_.pdf",
+          "content_type": "application/pdf",
+          "etag": "\"69985d9b-89795\"",
+          "last_modified": "Fri, 20 Feb 2026 13:11:55 GMT",
+          "bytes": 563093
+        }
+      ],
+      "mandatory": true,
+      "required": true,
+      "include_in_corpus": true,
+      "reconciled": false,
+      "inventory_status": "source_and_document_parts_identified_extraction_pending",
+      "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+      "portal_group": "2026",
+      "portal_panel_block_id": "d4bc102",
+      "portal_link_label": "Geografia Organizador Curricular Trimestral da FGB",
+      "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+      "artifact_metadata": {
+        "format": "PDF 1.4",
+        "title": "Geografia - Organizador Curricular Trimestral da FGB ",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Skia/PDF m146 Google Docs Renderer",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "inventory_preview": "data/raw/PE/916f592ce7b4f230c0a2eb7f5ad7002e98cf5c9fe3fef5834ddf00e0907f393c.inventory.txt",
+      "inventory_evidence": [
+        {
+          "page": 1,
+          "section": "Capa",
+          "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) GEOGRAFIA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+          "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+        }
+      ],
+      "scope_basis": {
+        "page": 3,
+        "section": "Organizador curricular",
+        "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+      },
+      "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+      "scope_school_years": [
+        1,
+        2,
+        3
+      ],
+      "scope_period_organization": "trimestres",
+      "normative_reference_review": {
+        "instruction": null,
+        "instruction_original_artifact_obtained": false,
+        "edition_not_inferred_from_url_or_portal": true
+      },
+      "typology_status": "official_current_curricular_organizer_or_ifa_part",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+        "at": "2026-10-28T13:58:04.770170+00:00"
+      }
+    },
+    {
+      "id": "pe-fgb-trimestral-historia-d8799974",
+      "uf": "PE",
+      "title": "Organizador Curricular Trimestral da Formação Geral Básica — História",
+      "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Historia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Historia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "História"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "complemento_curricular",
+      "normative_parts": [
+        "Organizador Curricular por Trimestre da Formação Geral Básica",
+        "Habilidades de área da BNCC",
+        "Habilidades específicas dos componentes",
+        "Objetos de conhecimento",
+        "Articulação com BNCC Computação e possibilidades de abordagens"
+      ],
+      "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+      "collected_at": "2026-10-28T05:42:10.202772+00:00",
+      "sha256": "d8799974119d10d3db8f483a60f959e97d7a32df75e5d5f14a7514141237636d",
+      "local_path": "data/raw/PE/d8799974119d10d3db8f483a60f959e97d7a32df75e5d5f14a7514141237636d.pdf",
+      "status": "acquired",
+      "bytes": 538218,
+      "pages": 35,
+      "pdf_pages": 35,
+      "http_status": 200,
+      "attempts": [
+        {
+          "at": "2026-10-28T05:42:10.202721+00:00",
+          "result": "acquired_and_pdf_parsed",
+          "http_status": 200,
+          "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Historia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+          "content_type": "application/pdf",
+          "etag": "\"69985dc8-8366a\"",
+          "last_modified": "Fri, 20 Feb 2026 13:12:40 GMT",
+          "bytes": 538218
+        }
+      ],
+      "mandatory": true,
+      "required": true,
+      "include_in_corpus": true,
+      "reconciled": false,
+      "inventory_status": "source_and_document_parts_identified_extraction_pending",
+      "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+      "portal_group": "2026",
+      "portal_panel_block_id": "d4bc102",
+      "portal_link_label": "História Organizador Curricular Trimestral da FGB",
+      "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+      "artifact_metadata": {
+        "format": "PDF 1.4",
+        "title": "História_Organizador Curricular Trimestral da FGB.docx",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Skia/PDF m146 Google Docs Renderer",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "inventory_preview": "data/raw/PE/d8799974119d10d3db8f483a60f959e97d7a32df75e5d5f14a7514141237636d.inventory.txt",
+      "inventory_evidence": [
+        {
+          "page": 1,
+          "section": "Capa",
+          "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) HISTÓRIA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+          "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+        }
+      ],
+      "scope_basis": {
+        "page": 3,
+        "section": "Organizador curricular",
+        "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+      },
+      "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+      "scope_school_years": [
+        1,
+        2,
+        3
+      ],
+      "scope_period_organization": "trimestres",
+      "normative_reference_review": {
+        "instruction": null,
+        "instruction_original_artifact_obtained": false,
+        "edition_not_inferred_from_url_or_portal": true
+      },
+      "typology_status": "official_current_curricular_organizer_or_ifa_part",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+        "at": "2026-10-28T13:58:05.544420+00:00"
+      }
+    },
+    {
+      "id": "pe-fgb-trimestral-sociologia-7acc310e",
+      "uf": "PE",
+      "title": "Organizador Curricular Trimestral da Formação Geral Básica — Sociologia",
+      "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Sociologia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Sociologia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "Sociologia"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "complemento_curricular",
+      "normative_parts": [
+        "Organizador Curricular por Trimestre da Formação Geral Básica",
+        "Habilidades de área da BNCC",
+        "Habilidades específicas dos componentes",
+        "Objetos de conhecimento",
+        "Articulação com BNCC Computação e possibilidades de abordagens"
+      ],
+      "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+      "collected_at": "2026-10-28T05:42:10.827011+00:00",
+      "sha256": "7acc310ee6d18afce13c8f5da0cceac8f184246b9cecc295ef628d6db0629353",
+      "local_path": "data/raw/PE/7acc310ee6d18afce13c8f5da0cceac8f184246b9cecc295ef628d6db0629353.pdf",
+      "status": "acquired",
+      "bytes": 362413,
+      "pages": 17,
+      "pdf_pages": 17,
+      "http_status": 200,
+      "attempts": [
+        {
+          "at": "2026-10-28T05:42:10.826979+00:00",
+          "result": "acquired_and_pdf_parsed",
+          "http_status": 200,
+          "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Sociologia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+          "content_type": "application/pdf",
+          "etag": "\"69985ddd-587ad\"",
+          "last_modified": "Fri, 20 Feb 2026 13:13:01 GMT",
+          "bytes": 362413
+        }
+      ],
+      "mandatory": true,
+      "required": true,
+      "include_in_corpus": true,
+      "reconciled": false,
+      "inventory_status": "source_and_document_parts_identified_extraction_pending",
+      "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+      "portal_group": "2026",
+      "portal_panel_block_id": "d4bc102",
+      "portal_link_label": "Sociologia Organizador Curricular Trimestral da FGB",
+      "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+      "artifact_metadata": {
+        "format": "PDF 1.4",
+        "title": " Sociologia_Organizador Curricular Trimestral da FGB.docx",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Skia/PDF m146 Google Docs Renderer",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "inventory_preview": "data/raw/PE/7acc310ee6d18afce13c8f5da0cceac8f184246b9cecc295ef628d6db0629353.inventory.txt",
+      "inventory_evidence": [
+        {
+          "page": 1,
+          "section": "Capa",
+          "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) SOCIOLOGIA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+          "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+        }
+      ],
+      "scope_basis": {
+        "page": 3,
+        "section": "Organizador curricular",
+        "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+      },
+      "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+      "scope_school_years": [
+        1,
+        2,
+        3
+      ],
+      "scope_period_organization": "trimestres",
+      "normative_reference_review": {
+        "instruction": null,
+        "instruction_original_artifact_obtained": false,
+        "edition_not_inferred_from_url_or_portal": true
+      },
+      "typology_status": "official_current_curricular_organizer_or_ifa_part",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+        "at": "2026-10-28T13:58:05.932598+00:00"
+      }
+    },
+    {
+      "id": "pe-fgb-trimestral-biologia-7f902274",
+      "uf": "PE",
+      "title": "Organizador Curricular Trimestral da Formação Geral Básica — Biologia",
+      "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Biologia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Biologia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "Biologia"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "complemento_curricular",
+      "normative_parts": [
+        "Organizador Curricular por Trimestre da Formação Geral Básica",
+        "Habilidades de área da BNCC",
+        "Habilidades específicas dos componentes",
+        "Objetos de conhecimento",
+        "Articulação com BNCC Computação e possibilidades de abordagens"
+      ],
+      "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+      "collected_at": "2026-10-28T05:42:11.005477+00:00",
+      "sha256": "7f9022743762eacc209bc199de2e8081fe209892d2a599fcb9a798e5f59bad5a",
+      "local_path": "data/raw/PE/7f9022743762eacc209bc199de2e8081fe209892d2a599fcb9a798e5f59bad5a.pdf",
+      "status": "acquired",
+      "bytes": 508446,
+      "pages": 32,
+      "pdf_pages": 32,
+      "http_status": 200,
+      "attempts": [
+        {
+          "at": "2026-10-28T05:42:11.005446+00:00",
+          "result": "acquired_and_pdf_parsed",
+          "http_status": 200,
+          "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Biologia_Organizador-Curricular-Trimestral-da-FGB.pdf",
+          "content_type": "application/pdf",
+          "etag": "\"69985e0b-7c21e\"",
+          "last_modified": "Fri, 20 Feb 2026 13:13:47 GMT",
+          "bytes": 508446
+        }
+      ],
+      "mandatory": true,
+      "required": true,
+      "include_in_corpus": true,
+      "reconciled": false,
+      "inventory_status": "source_and_document_parts_identified_extraction_pending",
+      "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+      "portal_group": "2026",
+      "portal_panel_block_id": "d4bc102",
+      "portal_link_label": "Biologia Organizador Curricular Trimestral da FGB",
+      "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+      "artifact_metadata": {
+        "format": "PDF 1.4",
+        "title": "Biologia_Organizador Curricular Trimestral da FGB.docx",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Skia/PDF m146 Google Docs Renderer",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "inventory_preview": "data/raw/PE/7f9022743762eacc209bc199de2e8081fe209892d2a599fcb9a798e5f59bad5a.inventory.txt",
+      "inventory_evidence": [
+        {
+          "page": 1,
+          "section": "Capa",
+          "excerpt": ". ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) BIOLOGIA ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+          "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+        }
+      ],
+      "scope_basis": {
+        "page": 3,
+        "section": "Organizador curricular",
+        "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+      },
+      "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+      "scope_school_years": [
+        1,
+        2,
+        3
+      ],
+      "scope_period_organization": "trimestres",
+      "normative_reference_review": {
+        "instruction": null,
+        "instruction_original_artifact_obtained": false,
+        "edition_not_inferred_from_url_or_portal": true
+      },
+      "typology_status": "official_current_curricular_organizer_or_ifa_part",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+        "at": "2026-10-28T13:58:06.632162+00:00"
+      }
+    },
+    {
+      "id": "pe-fgb-trimestral-fisica-cd2ccadd",
+      "uf": "PE",
+      "title": "Organizador Curricular Trimestral da Formação Geral Básica — Física",
+      "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Fisica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Fisica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "Física"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "complemento_curricular",
+      "normative_parts": [
+        "Organizador Curricular por Trimestre da Formação Geral Básica",
+        "Habilidades de área da BNCC",
+        "Habilidades específicas dos componentes",
+        "Objetos de conhecimento",
+        "Articulação com BNCC Computação e possibilidades de abordagens"
+      ],
+      "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+      "collected_at": "2026-10-28T05:42:11.170463+00:00",
+      "sha256": "cd2ccaddf37e176441928df24f02801fd5c790af8ff4a84a4b526f63d8ab1b32",
+      "local_path": "data/raw/PE/cd2ccaddf37e176441928df24f02801fd5c790af8ff4a84a4b526f63d8ab1b32.pdf",
+      "status": "acquired",
+      "bytes": 486288,
+      "pages": 30,
+      "pdf_pages": 30,
+      "http_status": 200,
+      "attempts": [
+        {
+          "at": "2026-10-28T05:42:11.170434+00:00",
+          "result": "acquired_and_pdf_parsed",
+          "http_status": 200,
+          "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Fisica_Organizador-Curricular-Trimestral-da-FGB.pdf",
+          "content_type": "application/pdf",
+          "etag": "\"69985dfd-76b90\"",
+          "last_modified": "Fri, 20 Feb 2026 13:13:33 GMT",
+          "bytes": 486288
+        }
+      ],
+      "mandatory": true,
+      "required": true,
+      "include_in_corpus": true,
+      "reconciled": false,
+      "inventory_status": "source_and_document_parts_identified_extraction_pending",
+      "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+      "portal_group": "2026",
+      "portal_panel_block_id": "d4bc102",
+      "portal_link_label": "Física Organizador Curricular Trimestral da FGB",
+      "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+      "artifact_metadata": {
+        "format": "PDF 1.4",
+        "title": "Física_Organizador Curricular Trimestral da FGB.docx",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Skia/PDF m146 Google Docs Renderer",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "inventory_preview": "data/raw/PE/cd2ccaddf37e176441928df24f02801fd5c790af8ff4a84a4b526f63d8ab1b32.inventory.txt",
+      "inventory_evidence": [
+        {
+          "page": 1,
+          "section": "Capa",
+          "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) FÍSICA​ ​ ​ ​ ​ ​ ​ ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+          "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+        }
+      ],
+      "scope_basis": {
+        "page": 3,
+        "section": "Organizador curricular",
+        "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+      },
+      "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+      "scope_school_years": [
+        1,
+        2,
+        3
+      ],
+      "scope_period_organization": "trimestres",
+      "normative_reference_review": {
+        "instruction": null,
+        "instruction_original_artifact_obtained": false,
+        "edition_not_inferred_from_url_or_portal": true
+      },
+      "typology_status": "official_current_curricular_organizer_or_ifa_part",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+        "at": "2026-10-28T13:58:07.390659+00:00"
+      }
+    },
+    {
+      "id": "pe-fgb-trimestral-quimica-007bc04c",
+      "uf": "PE",
+      "title": "Organizador Curricular Trimestral da Formação Geral Básica — Química",
+      "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Quimica__Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Quimica__Organizador-Curricular-Trimestral-da-FGB.pdf",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "Química"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "complemento_curricular",
+      "normative_parts": [
+        "Organizador Curricular por Trimestre da Formação Geral Básica",
+        "Habilidades de área da BNCC",
+        "Habilidades específicas dos componentes",
+        "Objetos de conhecimento",
+        "Articulação com BNCC Computação e possibilidades de abordagens"
+      ],
+      "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+      "collected_at": "2026-10-28T05:42:11.793987+00:00",
+      "sha256": "007bc04c823bea7cb17d2e148219372d12228bc13ca923ca757798d6ac549ecc",
+      "local_path": "data/raw/PE/007bc04c823bea7cb17d2e148219372d12228bc13ca923ca757798d6ac549ecc.pdf",
+      "status": "acquired",
+      "bytes": 419034,
+      "pages": 24,
+      "pdf_pages": 24,
+      "http_status": 200,
+      "attempts": [
+        {
+          "at": "2026-10-28T05:42:11.793951+00:00",
+          "result": "acquired_and_pdf_parsed",
+          "http_status": 200,
+          "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/02/Quimica__Organizador-Curricular-Trimestral-da-FGB.pdf",
+          "content_type": "application/pdf",
+          "etag": "\"69985e16-664da\"",
+          "last_modified": "Fri, 20 Feb 2026 13:13:58 GMT",
+          "bytes": 419034
+        }
+      ],
+      "mandatory": true,
+      "required": true,
+      "include_in_corpus": true,
+      "reconciled": false,
+      "inventory_status": "source_and_document_parts_identified_extraction_pending",
+      "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+      "portal_group": "2026",
+      "portal_panel_block_id": "d4bc102",
+      "portal_link_label": "Química Organizador Curricular Trimestral da FGB",
+      "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+      "artifact_metadata": {
+        "format": "PDF 1.4",
+        "title": "Química__Organizador Curricular Trimestral da FGB.docx",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Skia/PDF m146 Google Docs Renderer",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "inventory_preview": "data/raw/PE/007bc04c823bea7cb17d2e148219372d12228bc13ca923ca757798d6ac549ecc.inventory.txt",
+      "inventory_evidence": [
+        {
+          "page": 1,
+          "section": "Capa",
+          "excerpt": "ORGANIZADOR CURRICULAR Formação Geral Básica (FGB) QUÍMICA​ ​ ​ ​ ​ ​ ​ ENSINO MÉDIO 1° ANO / 2° ANO / 3° ANO",
+          "verification": "Componente, Ensino Médio e anos1–3 declarados. Capa não declara ano editorial."
+        }
+      ],
+      "scope_basis": {
+        "page": 3,
+        "section": "Organizador curricular",
+        "finding": "Quadro oficial distingue habilidades da BNCC, redações locais do componente, objetos e articulações de Computação. São partes curriculares do catálogo atual selecionado; quantidade de códigos não comprova cobertura."
+      },
+      "table_role_note": "Colunas de habilidades da BNCC Computação são referências explícitas de articulação; a coluna de possibilidades de abordagens contém sugestões. Nenhuma delas vira código local ou equivalência automática.",
+      "scope_school_years": [
+        1,
+        2,
+        3
+      ],
+      "scope_period_organization": "trimestres",
+      "normative_reference_review": {
+        "instruction": null,
+        "instruction_original_artifact_obtained": false,
+        "edition_not_inferred_from_url_or_portal": true
+      },
+      "typology_status": "official_current_curricular_organizer_or_ifa_part",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+        "at": "2026-10-28T13:58:07.989936+00:00"
+      }
+    },
+    {
+      "id": "pe-ifa-matriz-anexo-i-c4ba842e",
+      "uf": "PE",
+      "title": "Caderno de Implementação para os Itinerários Formativos de Aprofundamento — Matriz Anexo I",
+      "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-1.pdf",
+      "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-1.pdf",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "Linguagens e suas Tecnologias",
+        "Ciências Humanas e Sociais Aplicadas",
+        "Ciências da Natureza e suas Tecnologias"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "complemento_curricular",
+      "normative_parts": [
+        "Apresentação e princípios dos IFA",
+        "Eixos estruturantes e temas contemporâneos transversais",
+        "Competências comuns e objetivos de aprendizagem",
+        "Projetos integradores e orientações metodológicas",
+        "Organização curricular da matriz anexa"
+      ],
+      "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+      "collected_at": "2026-10-28T05:42:12.605697+00:00",
+      "sha256": "c4ba842e9fd17f7b0af3531721586765f8304e5571b5b29c7b54b70958a5627a",
+      "local_path": "data/raw/PE/c4ba842e9fd17f7b0af3531721586765f8304e5571b5b29c7b54b70958a5627a.pdf",
+      "status": "acquired",
+      "bytes": 1904971,
+      "pages": 37,
+      "pdf_pages": 37,
+      "http_status": 200,
+      "attempts": [
+        {
+          "at": "2026-10-28T05:42:12.605659+00:00",
+          "result": "acquired_and_pdf_parsed",
+          "http_status": 200,
+          "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-1.pdf",
+          "content_type": "application/pdf",
+          "etag": "\"69d3c511-1d114b\"",
+          "last_modified": "Mon, 06 Apr 2026 14:37:05 GMT",
+          "bytes": 1904971
+        }
+      ],
+      "mandatory": true,
+      "required": true,
+      "include_in_corpus": true,
+      "reconciled": false,
+      "inventory_status": "source_and_document_parts_identified_extraction_pending",
+      "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+      "portal_group": "2026",
+      "portal_panel_block_id": "d4bc102",
+      "portal_link_label": "Caderno de Implementação para os IFA – Matriz de anexo 1",
+      "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+      "artifact_metadata": {
+        "format": "PDF 1.4",
+        "title": "Caderno de Implementação para os IFA - Matriz de anexo 1 IFA Matriz 1 - LGG + CHSA",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Skia/PDF m148 Google Docs Renderer",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "inventory_preview": "data/raw/PE/c4ba842e9fd17f7b0af3531721586765f8304e5571b5b29c7b54b70958a5627a.inventory.txt",
+      "inventory_evidence": [
+        {
+          "page": 1,
+          "section": "Capa",
+          "excerpt": "Matriz Anexo I",
+          "verification": "Anexo e anos1–3 estão identificados na capa."
+        },
+        {
+          "page": 5,
+          "section": "Princípios dos IFA",
+          "excerpt": "Instrução Normativa nº 03/2026",
+          "verification": "Citação textual da base estadual; ato integral ainda em obtenção."
+        }
+      ],
+      "scope_basis": {
+        "page": 5,
+        "section": "Princípios para arquitetura dos IFA",
+        "finding": "Documento declara vinculação à IN SEE/PE03/2026 e Resolução CNE/CEB4/2025, e organiza componentes/objetivos de aprendizagem do anexo. A referência não prova por si só a edição editorial ou o período de aplicação."
+      },
+      "table_role_note": "Competências comuns, objetivos, eixos e propostas de projetos possuem tipos distintos. Referências nacionais e objetivos sem código não autorizam criar códigos oficiais.",
+      "scope_school_years": [
+        1,
+        2,
+        3
+      ],
+      "scope_period_organization": "trimestres",
+      "normative_reference_review": {
+        "instruction": "IN SEE/PE03/2026",
+        "instruction_original_artifact_obtained": false,
+        "edition_not_inferred_from_url_or_portal": true
+      },
+      "typology_status": "official_current_curricular_organizer_or_ifa_part",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+        "at": "2026-10-28T13:58:09.442195+00:00"
+      }
+    },
+    {
+      "id": "pe-ifa-matriz-anexo-ii-c6f9ef30",
+      "uf": "PE",
+      "title": "Caderno de Implementação para os Itinerários Formativos de Aprofundamento — Matriz Anexo II",
+      "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-2.pdf",
+      "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-2.pdf",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "Matemática e suas Tecnologias",
+        "Ciências da Natureza e suas Tecnologias",
+        "Ciências Humanas e Sociais Aplicadas"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "complemento_curricular",
+      "normative_parts": [
+        "Apresentação e princípios dos IFA",
+        "Eixos estruturantes e temas contemporâneos transversais",
+        "Competências comuns e objetivos de aprendizagem",
+        "Projetos integradores e orientações metodológicas",
+        "Organização curricular da matriz anexa"
+      ],
+      "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+      "collected_at": "2026-10-28T05:42:13.178643+00:00",
+      "sha256": "c6f9ef30769137afec8ea0ac713f6d5051b5b9cd4e02b95dee8b7cf7aca5c5db",
+      "local_path": "data/raw/PE/c6f9ef30769137afec8ea0ac713f6d5051b5b9cd4e02b95dee8b7cf7aca5c5db.pdf",
+      "status": "acquired",
+      "bytes": 2705944,
+      "pages": 45,
+      "pdf_pages": 45,
+      "http_status": 200,
+      "attempts": [
+        {
+          "at": "2026-10-28T05:42:13.178599+00:00",
+          "result": "acquired_and_pdf_parsed",
+          "http_status": 200,
+          "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-2.pdf",
+          "content_type": "application/pdf",
+          "etag": "\"69d3c51c-294a18\"",
+          "last_modified": "Mon, 06 Apr 2026 14:37:16 GMT",
+          "bytes": 2705944
+        }
+      ],
+      "mandatory": true,
+      "required": true,
+      "include_in_corpus": true,
+      "reconciled": false,
+      "inventory_status": "source_and_document_parts_identified_extraction_pending",
+      "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+      "portal_group": "2026",
+      "portal_panel_block_id": "d4bc102",
+      "portal_link_label": "Caderno de Implementação para os IFA – Matriz de anexo 2",
+      "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+      "artifact_metadata": {
+        "format": "PDF 1.4",
+        "title": "Caderno de Implementação para os IFA - Matriz de anexo 2_MAT+CNT",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Skia/PDF m148 Google Docs Renderer",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "inventory_preview": "data/raw/PE/c6f9ef30769137afec8ea0ac713f6d5051b5b9cd4e02b95dee8b7cf7aca5c5db.inventory.txt",
+      "inventory_evidence": [
+        {
+          "page": 1,
+          "section": "Capa",
+          "excerpt": "Matriz Anexo II",
+          "verification": "Anexo e anos1–3 estão identificados na capa."
+        },
+        {
+          "page": 5,
+          "section": "Princípios dos IFA",
+          "excerpt": "Instrução Normativa nº 03/2026",
+          "verification": "Citação textual da base estadual; ato integral ainda em obtenção."
+        }
+      ],
+      "scope_basis": {
+        "page": 5,
+        "section": "Princípios para arquitetura dos IFA",
+        "finding": "Documento declara vinculação à IN SEE/PE03/2026 e Resolução CNE/CEB4/2025, e organiza componentes/objetivos de aprendizagem do anexo. A referência não prova por si só a edição editorial ou o período de aplicação."
+      },
+      "table_role_note": "Competências comuns, objetivos, eixos e propostas de projetos possuem tipos distintos. Referências nacionais e objetivos sem código não autorizam criar códigos oficiais.",
+      "scope_school_years": [
+        1,
+        2,
+        3
+      ],
+      "scope_period_organization": "trimestres",
+      "normative_reference_review": {
+        "instruction": "IN SEE/PE03/2026",
+        "instruction_original_artifact_obtained": false,
+        "edition_not_inferred_from_url_or_portal": true
+      },
+      "typology_status": "official_current_curricular_organizer_or_ifa_part",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+        "at": "2026-10-28T13:58:11.103116+00:00"
+      }
+    }
+  ],
+  "pending_typology_sources": [
+    {
+      "id": "pe-atividades-complementares-d489fa8a",
+      "uf": "PE",
+      "title": "Caderno das Atividades Complementares",
+      "issuer": "Secretaria de Educação de Pernambuco — Secretaria Executiva de Ensino Médio e Profissional",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-das-Atividades-Complementares-1.pdf",
+      "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-das-Atividades-Complementares-1.pdf",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "Corpo, Arte e Movimento",
+        "Cultura Digital e Midiática",
+        "Estudo Orientado",
+        "Investigação e Modelagem",
+        "Leitura e Produção Textual",
+        "Letramento Linguístico",
+        "Matemática Básica",
+        "Projeto, Trabalho e Sociedade"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "orientacao_curricular_classificacao_pendente",
+      "normative_parts": [
+        "Apresentação das atividades complementares para escolas35h/45h",
+        "Identificação, temas, percursos metodológicos e planejamento dos oito componentes"
+      ],
+      "redistribution": "Direitos da fonte não determinados. PDF e renders permanecem em cache privado, sem redistribuição.",
+      "collected_at": "2026-10-28T05:42:13.382550+00:00",
+      "sha256": "d489fa8adcba5296fd543234489117e2f053c88754f6d8e88f405af0e33f2b93",
+      "local_path": "data/raw/PE/d489fa8adcba5296fd543234489117e2f053c88754f6d8e88f405af0e33f2b93.pdf",
+      "status": "acquired",
+      "bytes": 1068485,
+      "pages": 42,
+      "pdf_pages": 42,
+      "http_status": 200,
+      "attempts": [
+        {
+          "at": "2026-10-28T05:42:13.382509+00:00",
+          "result": "acquired_and_pdf_parsed",
+          "http_status": 200,
+          "final_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-das-Atividades-Complementares-1.pdf",
+          "content_type": "application/pdf",
+          "etag": "\"69e8bc0f-104dc5\"",
+          "last_modified": "Wed, 22 Apr 2026 12:16:15 GMT",
+          "bytes": 1068485
+        }
+      ],
+      "mandatory": null,
+      "required": null,
+      "include_in_corpus": null,
+      "reconciled": false,
+      "inventory_status": "source_and_document_parts_identified_extraction_pending",
+      "validity_status": "listed_in_official_portal_group_2026_editorial_date_and_application_not_established",
+      "portal_group": "2026",
+      "portal_panel_block_id": "d4bc102",
+      "portal_link_label": "Caderno das Atividades Complementares",
+      "portal_temporal_note": "O grupo2026 é rótulo da página, separado da edição editorial, publicação do PDF e vigência normativa.",
+      "artifact_metadata": {
+        "format": "PDF 1.4",
+        "title": "Caderno das Atividade Complementar final.docx",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "",
+        "producer": "Skia/PDF m149 Google Docs Renderer",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "inventory_preview": "data/raw/PE/d489fa8adcba5296fd543234489117e2f053c88754f6d8e88f405af0e33f2b93.inventory.txt",
+      "inventory_evidence": [
+        {
+          "page": 4,
+          "section": "Apresentação",
+          "excerpt": "matrizes curriculares das escolas integrais que englobam a carga horária das escolas de 35h e 45h",
+          "verification": "Recorte declarado da orientação, sem concluir obrigatoriedade."
+        }
+      ],
+      "scope_basis": {
+        "page": 4,
+        "section": "Apresentação",
+        "finding": "A fonte se dirige às atividades complementares das matrizes de escolas integrais35h/45h nos três anos. A obrigação/abrangência depende do ato/matriz; existência de objetivos ou mera presença no portal não bastam. Não classificado como exclusão."
+      },
+      "table_role_note": "Distinguir objetivos, percursos metodológicos, atividades exemplificativas e sugestões. A tipologia normativa deste complemento está pendente da prova de matriz/IN.",
+      "scope_school_years": [
+        1,
+        2,
+        3
+      ],
+      "scope_period_organization": "trimestres",
+      "normative_reference_review": {
+        "instruction": null,
+        "instruction_original_artifact_obtained": false,
+        "edition_not_inferred_from_url_or_portal": true
+      },
+      "typology_status": "pending_normative_scope_confirmation_not_excluded",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "method": "Official portal DOM, acquired PDF hash/page count, cover, headings and source-role inspection; no learning completeness claimed.",
+        "at": "2026-10-28T13:58:11.847043+00:00"
+      }
+    }
+  ],
+  "existing_source_ids_not_duplicated": [
+    "pe-curriculo-em-2021",
+    "pe-curriculo-ef",
+    "pe-curriculo-ei",
+    "pe-cedim-2026",
+    "pe-historia-pernambuco-2026"
+  ],
+  "open_normative_sources": [
+    "pe-instrucao-normativa-03-2026"
+  ],
+  "scope_limit": "Acquisition and source inventory only. No learning extraction, documentary reconciliation, UF readiness or national publication claimed.",
+  "integrated_source_ids": [
+    "pe-fgb-trimestral-matematica-c6335b8d",
+    "pe-fgb-trimestral-arte-cb58c164",
+    "pe-fgb-trimestral-educacao-fisica-d997d37c",
+    "pe-fgb-trimestral-lingua-inglesa-360febf4",
+    "pe-fgb-trimestral-lingua-portuguesa-f9f839b5",
+    "pe-fgb-trimestral-filosofia-d3d771c6",
+    "pe-fgb-trimestral-geografia-916f592c",
+    "pe-fgb-trimestral-historia-d8799974",
+    "pe-fgb-trimestral-sociologia-7acc310e",
+    "pe-fgb-trimestral-biologia-7f902274",
+    "pe-fgb-trimestral-fisica-cd2ccadd",
+    "pe-fgb-trimestral-quimica-007bc04c",
+    "pe-ifa-matriz-anexo-i-c4ba842e",
+    "pe-ifa-matriz-anexo-ii-c6f9ef30"
+  ],
+  "integrated_manifest_path": "data/manifests/northeast.json",
+  "integration_confirmation": {
+    "actor_type": "automated",
+    "actor_id": "agent:data_northeast",
+    "at": "2026-10-28T14:01:03.092316+00:00",
+    "evidence": "docs/evidence/source-audit-northeast/pe-current-integration-check.json",
+    "scope": "14Source records incorporated; learning extraction/reconciliation and readiness are not claimed."
+  },
+  "research_pending_sources": [
+    {
+      "id": "pe-instrucao-normativa-03-2026",
+      "uf": "PE",
+      "title": "IN SEE/PE03/2026 — referência citada nos cadernos IFA; texto original pendente",
+      "issuer": "Secretaria de Educação de Pernambuco, conforme citação oficial nos cadernos IFA",
+      "official_url": "https://portal.educacao.pe.gov.br/ensino-medio/",
+      "artifact_url": null,
+      "artifact_landing_url": "https://diariooficial.cepe.com.br/diariooficialweb/",
+      "artifact_url_unknown_reason": "URL do documento original não localizada; a landing page e o endpoint público observado não são apresentados como PDF.",
+      "stages": [
+        "EM"
+      ],
+      "components": [
+        "Itinerários Formativos de Aprofundamento"
+      ],
+      "edition": null,
+      "document_date": null,
+      "homologation_date": null,
+      "application_period": null,
+      "document_type": "ato_normativo",
+      "normative_parts": [
+        "Texto normativo citado; partes e eventuais anexos ainda não inventariados"
+      ],
+      "redistribution": "Texto original não obtido; nenhuma condição de redistribuição atribuída.",
+      "collected_at": null,
+      "sha256": null,
+      "local_path": null,
+      "status": "research_pending",
+      "mandatory": true,
+      "required": true,
+      "include_in_corpus": true,
+      "reconciled": false,
+      "inventory_status": "original_act_and_full_scope_pending",
+      "validity_status": "citation_confirmed_original_text_and_application_period_not_verified",
+      "source_number": "03/2026",
+      "scope_note": "O registro comprova apenas o vínculo declarado nos dois cadernos IFA do Ensino Médio; não presume título integral, data de publicação, revogações ou escopo completo do ato.",
+      "citation_evidence": [
+        {
+          "source_id": "pe-ifa-matriz-anexo-i-c4ba842e",
+          "artifact_sha256": "c4ba842e9fd17f7b0af3531721586765f8304e5571b5b29c7b54b70958a5627a",
+          "official_artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-1.pdf",
+          "page": 5,
+          "excerpt": "Instrução Normativa nº 03/2026",
+          "claim": "O caderno declara consonância com a instrução. O texto original não foi obtido."
+        },
+        {
+          "source_id": "pe-ifa-matriz-anexo-ii-c6f9ef30",
+          "artifact_sha256": "c6f9ef30769137afec8ea0ac713f6d5051b5b9cd4e02b95dee8b7cf7aca5c5db",
+          "official_artifact_url": "https://portal.educacao.pe.gov.br/wp-content/uploads/2026/04/Caderno-de-Implementacao-para-os-IFA-Matriz-de-anexo-2.pdf",
+          "page": 5,
+          "excerpt": "Instrução Normativa nº 03/2026",
+          "claim": "O caderno declara consonância com a instrução. O texto original não foi obtido."
+        }
+      ],
+      "attempts": [
+        {
+          "url": "https://diariooficial.cepe.com.br/diariooficial/public/home/cadernos?dataPublicacao=21%2F01%2F2026",
+          "http_status": 403,
+          "result": "ordinary_public_GET_refused",
+          "date_parameter_note": "Data candidata de pesquisa; não é uma data de publicação confirmada."
+        },
+        {
+          "url": "https://diariooficial.cepe.com.br/diariooficial/public/home/cadernos?dataPublicacao=26%2F06%2F2026",
+          "http_status": 403,
+          "result": "ordinary_public_GET_refused",
+          "date_parameter_note": "Data candidata de pesquisa; não é uma data de publicação confirmada."
+        }
+      ],
+      "research_evidence_path": "docs/evidence/source-audit-pe-current/normative-act-attempts.json",
+      "document_verification": {
+        "actor_type": "automated",
+        "actor_id": "agent:rs_adapter:pe-current-inventory",
+        "at": "2026-10-28T14:04:06.538751+00:00",
+        "method": "Conferência literal das duas citações oficiais e registro de tentativas, sem atribuir texto ou vigência não obtidos."
+      }
+    }
+  ]
+}

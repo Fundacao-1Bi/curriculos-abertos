@@ -1,0 +1,38 @@
+{
+  "source_id": "to-dct-ei",
+  "artifact_sha256": "42b3e65fce43bf993518bb6e0426d90ab8069c5ec319906b1ffcdbc87d35d3bc",
+  "adapter_sha256": "3e15a87ca5489c9afd5b6aca6e9aa2970e0ff6fe391d32fe168534ac9e1beeab",
+  "binding_ready": true,
+  "fields": {
+    "uncoded_items_path": "data/manifests/uncoded/to-ei-rights-v3-items.json",
+    "adapter_authority": {
+      "coded_learning_pages": [
+        54,
+        103
+      ]
+    },
+    "adapter_part_verification": {
+      "actor_type": "automated",
+      "review_path": "docs/evidence/source-audit-to-peer/candidate-3e15a87ca548-verification.json",
+      "review_sha256": "269561afc93a977de97113d310e4c114eab8650523b9c9b6792384e8f88d6492",
+      "sidecar_sha256": "3e15a87ca5489c9afd5b6aca6e9aa2970e0ff6fe391d32fe168534ac9e1beeab",
+      "scope": "Organizers and complete field-specific rights only; other narrative parts remain unreconciled.",
+      "source_official_edition_changed": false,
+      "kind_correction_label_to_rotulo_direito": 30,
+      "new_full_right_statements": 30
+    }
+  },
+  "technical_revision": "full-field-right-definitions-and-label-order-v3",
+  "prior_sidecar_path": "data/manifests/uncoded/to-ei-organizers-items.json",
+  "prior_sidecar_sha256": "5a922ebf4b2cb1dd49cf2a72c26ec37b31abab78706e14d451d2d69bf6266b6c",
+  "whole_document_reconciled": false,
+  "independent_verification": {
+    "path": "docs/evidence/source-audit-to-peer/candidate-3e15a87ca548-verification.json",
+    "sha256": "269561afc93a977de97113d310e4c114eab8650523b9c9b6792384e8f88d6492",
+    "actor_type": "automated",
+    "complete_field_right_definitions": 30,
+    "organizer_column_cells": 279,
+    "records": 359,
+    "whole_source_reconciled": false
+  }
+}

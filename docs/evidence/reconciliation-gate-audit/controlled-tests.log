@@ -1,0 +1,23 @@
+test_classification_as_context_without_verified_text_and_denominator_is_insufficient (isolated_gate_cases.ReconciliationGate) ... ok
+test_denominator_cannot_be_derived_from_only_successful_extraction (isolated_gate_cases.ReconciliationGate) ... ok
+test_duplicate_records_and_checks_do_not_inflate_counts (isolated_gate_cases.ReconciliationGate) ... ok
+test_hash_binds_exact_text_including_accents_and_whitespace (isolated_gate_cases.ReconciliationGate) ... ok
+test_incomplete_independent_inventory_cannot_be_fixed_with_manual_flags (isolated_gate_cases.ReconciliationGate) ... ok
+test_independently_reconciled_related_source_can_satisfy_explicit_dependency (isolated_gate_cases.ReconciliationGate) ... ok
+test_known_id_with_changed_text_cannot_pass_by_id (isolated_gate_cases.ReconciliationGate) ... ok
+test_legacy_id_only_receipt_preserves_partial_without_whole_ready (isolated_gate_cases.ReconciliationGate) ... ok
+test_legitimate_parts_are_subsets_not_individual_whole_source_equalities (isolated_gate_cases.ReconciliationGate) ... ok
+test_mandatory_part_cannot_be_removed_by_caller_subset (isolated_gate_cases.ReconciliationGate) ... ok
+test_missing_receipt_or_wrong_hash_revision_actor_fails_closed (isolated_gate_cases.ReconciliationGate) ... ok
+test_new_content_evidence_requires_explicit_source_binding (isolated_gate_cases.ReconciliationGate) ... ok
+test_related_mandatory_document_is_not_resolved_by_status_flag (isolated_gate_cases.ReconciliationGate) ... ok
+test_related_source_cycles_are_blocking_not_recursive_success (isolated_gate_cases.ReconciliationGate) ... ok
+test_scoped_diary_uses_declared_pages_not_all_unrelated_publications (isolated_gate_cases.ReconciliationGate) ... ok
+test_source_scope_change_invalidates_prior_inventory (isolated_gate_cases.ReconciliationGate) ... ok
+test_unknown_extra_cannot_hide_behind_a_verified_subset (isolated_gate_cases.ReconciliationGate) ... ok
+test_unresolved_findings_and_missing_source_hash_cannot_be_overridden (isolated_gate_cases.ReconciliationGate) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.002s
+
+OK

@@ -4,9 +4,45 @@ import { resolve, sep } from 'node:path';
 import { pool } from '../db/client';
 import { resolvePublication } from '../domain/service';
 import { DomainError } from '../domain/errors';
+import {readdir,readFile} from 'node:fs/promises';
 export type Job = {id:string;type:string;status:'queued'|'running'|'paused'|'succeeded'|'failed';payload:Record<string,unknown>;result:Record<string,unknown>|null;progress:Record<string,unknown>;error:string|null;attempts:number;max_attempts:number;lease_owner:string|null;created_at:string;updated_at:string};
+async function ingestionTargetSources(source:unknown):Promise<string[]> {
+  if(source!==undefined&&(typeof source!=='string'||!/^[A-Za-z0-9][A-Za-z0-9._-]{0,239}$/.test(source)))throw new DomainError(422,'INVALID_SOURCE_SCOPE','ID de fonte inválido.');
+  const directory=resolve('data/manifests'),registered=new Map<string,{included:boolean;uf:unknown}>();
+  for(const file of await readdir(directory,{withFileTypes:true})){
+    if(!file.isFile()||!file.name.endsWith('.json'))continue;
+    const value=JSON.parse(await readFile(resolve(directory,file.name),'utf8'));
+    const rows=Array.isArray(value)?value:value.sources;
+    if(!Array.isArray(rows))continue;
+    for(const row of rows){
+      if(!row||typeof row.id!=='string'||!/^[A-Za-z0-9][A-Za-z0-9._-]{0,239}$/.test(row.id))throw new DomainError(422,'INVALID_SOURCE_SCOPE','Inventário contém ID inválido.');
+      if(registered.has(row.id))throw new DomainError(422,'DUPLICATE_SOURCE_SCOPE','Inventário contém fonte duplicada.');
+      registered.set(row.id,{included:row.include_in_corpus!==false&&row.publication_eligible!==false,uf:row.uf});
+    }
+  }
+  if(source!==undefined&&!registered.get(source as string)?.included)throw new DomainError(422,'INVALID_SOURCE_SCOPE','Fonte solicitada não está registrada para processamento.');
+  if(source!==undefined&&registered.get(source as string)?.uf==='BR')throw new DomainError(422,'NATIONAL_UPDATE_REQUIRES_GLOBAL_REBUILD','Atualizar o referencial nacional exige reconstrução explícita dos vínculos dependentes.');
+  const targets=source===undefined?[...registered].filter(([,row])=>row.included&&row.uf!=='BR').map(([id])=>id):[source as string];
+  if(!targets.length)throw new DomainError(422,'EMPTY_SOURCE_SCOPE','Atualização exige fontes alvo registradas.');
+  if(targets.length>500)throw new DomainError(422,'SOURCE_SCOPE_TOO_LARGE','Atualização admite até 500 fontes alvo; separe as solicitações.');
+  return targets.sort();
+}
 export async function enqueueJob(type:string,payload:Record<string,unknown>,idempotencyKey?:string):Promise<Job> {
   if(!['ingest','source-check','export','validate'].includes(type)) throw new Error('Tipo de job não permitido.');
+  if(type==='ingest'){
+    if(idempotencyKey){const existing=(await pool.query<Job>('SELECT * FROM jobs WHERE idempotency_key=$1',[idempotencyKey])).rows[0];if(existing){if(existing.type!==type)throw new DomainError(409,'IDEMPOTENCY_CONFLICT','Chave de idempotência já usada por outro tipo de job.');return existing;}}
+    const target_sources=await ingestionTargetSources(payload.source),client=await pool.connect();
+    try{
+      await client.query('BEGIN');await client.query('SELECT pg_advisory_xact_lock(81726354)');
+      const base=(await client.query("SELECT p.id,p.sha256 FROM current_publication c JOIN publications p ON p.id=c.publication_id JOIN publication_visibility v ON v.publication_id=p.id WHERE c.singleton=true AND v.status='published'")).rows[0];
+      if(!base)throw new DomainError(409,'INGESTION_BASE_REQUIRED','Importe e publique uma base antes de iniciar atualização global.');
+      const fixed={...payload,base_publication:base.id,base_publication_sha256:base.sha256,target_sources,update_mode:'base-plus-source-update'};
+      if(JSON.stringify(fixed).length>20000)throw new DomainError(422,'JOB_PAYLOAD_TOO_LARGE','Escopo da atualização excede o limite de payload. Solicite fontes separadamente.');
+      const result=await client.query<Job>('INSERT INTO jobs(id,type,payload,idempotency_key) VALUES($1,$2,$3::jsonb,$4) ON CONFLICT(idempotency_key) DO UPDATE SET idempotency_key=excluded.idempotency_key RETURNING *',[randomUUID(),type,JSON.stringify(fixed),idempotencyKey||null]);
+      if(result.rows[0].type!==type)throw new DomainError(409,'IDEMPOTENCY_CONFLICT','Chave de idempotência já usada por outro tipo de job.');
+      await client.query('COMMIT');return result.rows[0];
+    }catch(error){await client.query('ROLLBACK');throw error;}finally{client.release();}
+  }
   if(JSON.stringify(payload).length>20000) throw new Error('Payload do job excede o limite.');
   const id=randomUUID();
   const result=await pool.query<Job>('INSERT INTO jobs(id,type,payload,idempotency_key) VALUES($1,$2,$3::jsonb,$4) ON CONFLICT(idempotency_key) DO UPDATE SET idempotency_key=excluded.idempotency_key RETURNING *',[id,type,JSON.stringify(payload),idempotencyKey || null]);

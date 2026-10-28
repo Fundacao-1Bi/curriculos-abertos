@@ -1,0 +1,42 @@
+{
+  "actor_type": "automated",
+  "scope_ufs": [
+    "SP",
+    "MG",
+    "RJ"
+  ],
+  "exclude_ufs": [
+    "BR",
+    "ES"
+  ],
+  "native_source_census": {
+    "sources": 16,
+    "physical_pages": 6494,
+    "source_hashes_checked": true,
+    "evidence": "source-census.json"
+  },
+  "implemented_and_executed": [
+    {
+      "source_id": "mg-crmg-em",
+      "part": "Quadro37",
+      "sidecar": "data/manifests/uncoded/mg-ept-quadro37-items.json",
+      "items": 24,
+      "competencies": 4,
+      "local_coded_skills": 19,
+      "actual_importer_and_finalizer_passed": true,
+      "unresolved_parents": 0
+    }
+  ],
+  "concrete_next_omissions": [
+    "Numbered competencies/learning rights in SP/MG/RJ currently only generic page sections except RJ30EI rights",
+    "RJ itineraries1679p contains explicit Objetivos do Componente Curricular prose and course/trilha/grade hierarchy, unparsed by generic code reader",
+    "RJ integral/technical1729p contains independent local course/training families beyond initial17page narrative; do not drop appendices"
+  ],
+  "current_priority": "RN uncoded peer completed; await any final FULL coded-reader confrontation while continuing SP/MG/RJ. NE PI2page peer requested, priority coordinated with root.",
+  "external_access_blockers": [],
+  "constraints": [
+    "No new renders, raw copies or large JSON while disk warning applies",
+    "Do not edit core/manifest/existing helpers without coordination",
+    "No source or UF marked ready by this front"
+  ]
+}

@@ -69,7 +69,8 @@ export async function POST(request:Request,context:{params:Promise<{path:string[
       const input=z.object({type:z.enum(['ingest','source-check','validate']),source:z.string().regex(/^[a-zA-Z0-9_.:-]{1,200}$/).optional(),draft_id:z.uuid().optional(),cached_only:z.boolean().default(false)}).parse(body);
       if(input.type==='ingest'&&actor.role!=='administrator')throw new AdminError(403,'forbidden','Somente administrador inicia ingestão.');
       data=await enqueueJob(input.type,{source:input.source,draft_id:input.draft_id,cached_only:input.cached_only,requested_by:{id:actor.id,actor_type:actor.actor_type}});
-      await audit(actor,'enqueue_job','job',(data as {id:string}).id,'Processamento solicitado pela administração.',null,{type:input.type,source:input.source});
+      const queued=data as {id:string;payload:Record<string,unknown>};
+      await audit(actor,'enqueue_job','job',queued.id,'Processamento solicitado pela administração.',null,{type:input.type,source:input.source,base_publication:queued.payload.base_publication??null,target_sources:queued.payload.target_sources??null});
     }else if(path[0]==='jobs'&&path[1]&&path[2]) {
       const action=z.enum(['pause','resume','retry']).parse(path[2]);
       const job=await pool.query('SELECT type FROM jobs WHERE id=$1',[z.uuid().parse(path[1])]);

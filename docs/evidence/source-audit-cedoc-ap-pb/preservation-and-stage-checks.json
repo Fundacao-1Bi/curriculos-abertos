@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-28T14:23:18.973938+00:00",
+  "status": "passed",
+  "checks": [
+    {
+      "path": "data/raw/PB/pb-proposta-ei-ef.pdf",
+      "sha256": "b55786376874ab6a46064c44726d578d37f550a99a702069fe7065946ce26383",
+      "expected_sha256": "b55786376874ab6a46064c44726d578d37f550a99a702069fe7065946ce26383",
+      "unchanged": true
+    },
+    {
+      "path": "data/manifests/uncoded/pb-eief-items.json",
+      "sha256": "b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514",
+      "expected_sha256": "b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514",
+      "unchanged": true
+    },
+    {
+      "path": "data/raw/AP/ap-rca-em.pdf",
+      "sha256": "991aa4b3aa94c8a40ed9c9609421bcbfb4a1a7a8486ca4c7dcdf12905443bdfe",
+      "expected_sha256": "991aa4b3aa94c8a40ed9c9609421bcbfb4a1a7a8486ca4c7dcdf12905443bdfe",
+      "unchanged": true
+    },
+    {
+      "source_id": "ap-rca-ei-ef-cedoc",
+      "stages": [
+        "EI",
+        "EF"
+      ],
+      "no_EM_classification": true,
+      "download_parameter_exact": true,
+      "include_in_corpus": false
+    },
+    {
+      "source_id": "pb-proposta-ei-ef-cedoc",
+      "stages": [
+        "EI",
+        "EF"
+      ],
+      "no_EM_classification": true,
+      "download_parameter_exact": true,
+      "include_in_corpus": false
+    }
+  ],
+  "PB_EM_Captcha_source_reclassified": false,
+  "AP_EM_corrupt_source_replaced": false
+}

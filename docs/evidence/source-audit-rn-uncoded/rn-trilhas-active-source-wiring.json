@@ -1,0 +1,27 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:rn-active-source-readonly-check",
+  "source_id": "rn-trilhas-aprofundamento",
+  "source_sha256": "fac7333112fcfaac3d99d74f72f206bea8e9a4b256e770a9ea0f2eace99b027a",
+  "active_source_fields": {
+    "uncoded_items_path": "data/manifests/uncoded/rn-trilhas-items.json",
+    "adapter_authority": {
+      "uncoded_page_sections_ranges": [
+        [
+          16,
+          19
+        ],
+        [
+          31,
+          485
+        ]
+      ]
+    },
+    "document_role_adapter": "rn-document-roles-v1"
+  },
+  "sidecar_sha256": "551f90cca125541f09975b3d62f8457695a4cdc7a742f096360f609854749602",
+  "status": "active_source_wiring_matches_verified_candidate",
+  "national_sharded_integration_verified": false,
+  "shared_cache_not_written": true,
+  "scope": "Read-only active NE manifest wiring; not proof of current extraction cache or national artifact incorporation."
+}

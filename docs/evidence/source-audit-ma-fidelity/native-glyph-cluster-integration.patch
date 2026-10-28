@@ -1,0 +1,143 @@
+--- a/pipeline/ingest.py
++++ b/pipeline/ingest.py
+@@ -302,7 +302,7 @@
+ 
+ 
+ def extraction_config_hash(source):
+-    fields=('id','uf','stages','components','stage_component_inventory','normative_parts','non_curricular_code_pages','code_rules','position_contexts','structure_sections','uncoded_items_path','layout_rules','extraction_pages','scope_pages','page_text_end_markers','requires_ocr','glyph_replacements','page_regions','extraction_page_ranges','adapter_authority','native_text_order','cell_text_mode')
++    fields=('id','uf','stages','components','stage_component_inventory','normative_parts','non_curricular_code_pages','code_rules','position_contexts','structure_sections','uncoded_items_path','layout_rules','extraction_pages','scope_pages','page_text_end_markers','requires_ocr','native_text_order','glyph_replacements','page_regions','extraction_page_ranges','adapter_authority','native_text_order','cell_text_mode')
+     import pymupdf
+     config={field:source.get(field) for field in fields}
+     config['native_engine']={'name':'PyMuPDF','version':pymupdf.__version__}
+@@ -353,7 +353,11 @@
+         if scoped_pages and page_number not in scoped_pages:continue
+         if ranges and not any(r['page_start']<=page_number<=r['page_end'] for r in ranges):continue
+         page_normalization=normalize_native_page(page)
+-        plain=page.get_text('text',sort=not bool(source.get('glyph_replacements'))) or ''
++        native_cluster_mode=source.get('native_text_order')=='glyph_cluster_stream'
++        if native_cluster_mode:
++            from native_glyphs import source_cell_text
++            plain=source_cell_text(source,page)
++        else:plain=page.get_text('text',sort=not bool(source.get('glyph_replacements'))) or ''
+         method='pymupdf-native'
+         page_words=words_from_page(page)
+         ocr_result=None
+@@ -402,7 +406,9 @@
+                 tables = page.find_tables(strategy='lines',**table_kwargs).tables
+                 for table_index, table in enumerate(tables):
+                     rows=table.extract()
+-                    if source.get('glyph_replacements'):
++                    if native_cluster_mode:
++                        rows=[[decode_source_text(source,source_cell_text(source,page,box)) if box else None for box in row.cells] for row in table.rows]
++                    elif source.get('glyph_replacements'):
+                         rows=[[decode_source_text(source,page.get_text('text',clip=fitz.Rect(box)+(-0.2,-0.2,0.2,0.2),sort=False)) if box else None for box in row.cells] for row in table.rows]
+                     if not rows:continue
+                     from geometry import learning_column_indices
+@@ -478,7 +484,9 @@
+                 else:selected=[w for w in words if w['top']>=word['top']-2 and w['bottom']<=next_y+1 and w['x0']>=word['x0']-8 and w['x1']<=right]
+                 from geometry import words_text
+                 segment=words_text(selected)
+-                if source.get('glyph_replacements'):
++                if native_cluster_mode and not ocr_result:
++                    segment=decode_source_text(source,source_cell_text(source,page,[word['x0']-8,word['top']-2,right,next_y]))
++                elif source.get('glyph_replacements'):
+                     segment=decode_source_text(source,page.get_text('text',clip=fitz.Rect(word['x0']-8,word['top']-2,right,next_y),sort=False))
+                 for code,text,raw in candidates_from_cell(segment, source=source):
+                     if len(text)>3500: continue
+@@ -531,7 +539,7 @@
+             item=make_item(source,None,text,page['page'],'pymupdf-page-section','page-section',quality='pending_structure_review')
+             item['extraction_flags']=['uncoded_documentary_section_not_classified_learning']
+             items.append(item)
+-    result={'source_id':source['id'],'sha256':digest,'extraction_revision':EXTRACTION_REVISION,'pages':pages,'items':items,'warnings':warnings,'table_count':table_count,'page_count':len(pages),'document_page_count':len(document),'code_mentions':sum(p['code_mentions'] for p in pages),'coded_items':sum(i['code'] is not None for i in items),'extracted_at':now(),'reconciliation_status':'pending_documentary_reconciliation','source_text_decoding':source.get('glyph_replacements',[]),'ocr_pending':any(p.get('ocr_required') and not p.get('ocr_completed') for p in pages)}
++    result={'source_id':source['id'],'sha256':digest,'extraction_revision':EXTRACTION_REVISION,'pages':pages,'items':items,'warnings':warnings,'table_count':table_count,'page_count':len(pages),'document_page_count':len(document),'code_mentions':sum(p['code_mentions'] for p in pages),'coded_items':sum(i['code'] is not None for i in items),'extracted_at':now(),'reconciliation_status':'pending_documentary_reconciliation','source_text_decoding':source.get('glyph_replacements',[]),'source_native_text_order':source.get('native_text_order'),'ocr_pending':any(p.get('ocr_required') and not p.get('ocr_completed') for p in pages)}
+     if parser_fingerprint()!=LOADED_PARSER_FINGERPRINT:raise RuntimeError('Parser files changed during extraction; prior completed cache preserved. Restart and retry this source.')
+     result['extraction_config_sha256']=config_hash
+     result['parser_fingerprint']=LOADED_PARSER_FINGERPRINT
+@@ -579,7 +587,10 @@
+             from geometry import normalize_native_page,words_from_page,clipped_words,words_text
+             normalize_native_page(actual_page)
+             box=fitz.Rect(evidence['bbox'])+(-1,-1,1,1)
+-            clipped=actual_page.get_text('text',clip=box,sort=not bool(extracted.get('source_text_decoding')))
++            if extracted.get('source_native_text_order')=='glyph_cluster_stream':
++                from native_glyphs import source_cell_text
++                clipped=source_cell_text({'native_text_order':'glyph_cluster_stream'},actual_page,list(box))
++            else:clipped=actual_page.get_text('text',clip=box,sort=not bool(extracted.get('source_text_decoding')))
+             for mapping in extracted.get('source_text_decoding',[]):clipped=clipped.replace(mapping['from'],mapping['to'])
+             if evidence.get('method')=='pymupdf-rendered-glyph-trace-v1':
+                 from ms_glyphs import rendered_glyph_text
+@@ -717,6 +728,7 @@
+         extracted=extracts.get(source['id'])
+         if not extracted:continue
+         if source.get('glyph_replacements'):extracted['source_text_decoding']=source['glyph_replacements']
++        if source.get('native_text_order'):extracted['source_native_text_order']=source['native_text_order']
+         with fitz.open(safe_path(source['local_path'])) as document:
+             for record in adapter.get('items',[]):
+                 if record.get('artifact_sha256',source.get('sha256'))!=source.get('sha256'):raise ValueError('Uncoded item artifact hash mismatch')
+--- /dev/null
++++ b/pipeline/native_glyphs.py
+@@ -0,0 +1,65 @@
++"""Proposed native glyph-cluster reader; no dictionary or spelling substitution.
++
++Read the full page once. A zero-advance Unicode character produced by a ligature
++belongs to its physical base glyph, even when PyMuPDF places its caret box after
++the next kerned letter or leaks it through get_text(clip). Region selection uses
++the physical base glyph's center, then keeps every Unicode character in source
++stream order. The caller normalizes PDF rotation before constructing the reader.
++"""
++from __future__ import annotations
++
++
++class NativeGlyphText:
++    def __init__(self, page):
++        import pymupdf
++        self.lines = []
++        self.unattached_zero_advance = []
++        flags = pymupdf.TEXTFLAGS_RAWDICT & ~pymupdf.TEXT_PRESERVE_IMAGES
++        for block in page.get_text('rawdict', flags=flags).get('blocks', []):
++            for line in block.get('lines', []):
++                clusters = []
++                for span in line.get('spans', []):
++                    for char in span.get('chars', []):
++                        box = list(char['bbox'])
++                        zero = abs(box[2] - box[0]) < .005 or abs(box[3] - box[1]) < .005
++                        if zero and clusters:
++                            clusters[-1]['text'] += char['c']
++                            clusters[-1]['chars'].append(char)
++                        else:
++                            cluster = {'text': char['c'], 'box': box, 'chars': [char], 'font': span['font']}
++                            clusters.append(cluster)
++                            if zero:
++                                self.unattached_zero_advance.append(char)
++                if clusters:
++                    self.lines.append(clusters)
++
++    def text(self, bbox=None):
++        output = []
++        for clusters in self.lines:
++            selected = []
++            for cluster in clusters:
++                box = cluster['box']
++                x, y = (box[0] + box[2]) / 2, (box[1] + box[3]) / 2
++                if bbox is None or (bbox[0] <= x < bbox[2] and bbox[1] <= y < bbox[3]):
++                    selected.append(cluster['text'])
++            text = ''.join(selected)
++            if text.strip():
++                output.append(text)
++        return '\n'.join(output)
++
++
++def source_cell_text(source, page, bbox=None):
++    """Read an explicitly enabled source; cache only on the current page object.
++
++    The source manifest remains the owner's responsibility. This function returns
++    source Unicode, without glyph substitutions or canonical line-wrap cleaning.
++    Existing source-specific decoders can be applied separately by the caller.
++    """
++    if source.get('native_text_order') != 'glyph_cluster_stream':
++        raise ValueError('Native glyph-cluster reading requires an explicit reviewed source flag')
++    signature = (page.rotation, tuple(page.rect), tuple(page.get_contents()))
++    cached = getattr(page, '_curriculos_native_glyph_text', None)
++    if cached is None or cached[0] != signature:
++        cached = (signature, NativeGlyphText(page))
++        page._curriculos_native_glyph_text = cached
++    return cached[1].text(bbox)

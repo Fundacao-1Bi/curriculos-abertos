@@ -61,7 +61,7 @@ A inspeção visual independente atravessou todos os 12 anos e os quatro bimestr
 Evidências em `docs/evidence/source-audit-ms-pv/`:
 
 - `independent-denominator.json`: inventário documental independente.
-- `independent-adapter-comparison.json` e `independent-cell-checks.json`: confronto integral e identificação do hash conferido.
+- `independent-adapter-comparison.json` e `independent-adapter-cell-checks.json`: confronto integral e identificação do hash conferido.
 - `independent-visual-review.json`, folhas de contato e PNGs: seleção, revisor automatizado e achados visuais.
 - `ms-pv-2024-table-inventory.json` / `ms-pv-2024-row-inventory.json`: 73 quadros, 141 linhas e seus limites reais.
 - `ms-pv-2024-extraction-report.json`: contagens e hash atual do sidecar.
@@ -70,3 +70,15 @@ Evidências em `docs/evidence/source-audit-ms-pv/`:
 - `ms-pv-2024-idempotence.json`: reexecução e comparação integral dos bytes e IDs.
 
 Prontidão desta extração, integração com o pipeline, publicação nacional e consulta no produto são fatos distintos. As evidências nomeadas registram o que foi efetivamente executado, sem transformar revisão técnica automatizada em revisão pedagógica humana.
+
+## Recibo de texto primário para o gate V2
+
+`ms-pv-2024-primary-text-checks.py` constrói os 681 textos esperados e seus IDs **antes de abrir o sidecar**, usando o inventário primário independente e seu leitor de glifos. Reconfere as 423 células do PDF atual, os 12 cabeçalhos de ano, os 73 cabeçalhos triplos e os três divisores de etapa. As 226 porções de objetos são delimitadas pelos títulos de pilar inequívocos do modelo documental, com contagem de ocorrências validada; nenhum limite vem do texto extraído do adapter.
+
+Depois desse cotejo, calcula SHA-256 dos bytes UTF-8 exatos, sem normalizar acentos ou grafia para o hash. O recibo `data/manifests/uncoded/ms-pv-2024-primary-text-checks.json` contém `expected_item_text_sha256`, 681 `item_checks` e 827 evidências localizáveis. O gate `reconciliation-gate/2.0` aceitou 681/681 e rejeitou tanto uma alteração de palavra quanto uma alteração só de diacrítico. Os grupos documentais são 245 EF-AI, 207 EF-AF e 229 EM. SHA do recibo: `e8a0b14c448fd2e08bc58f5be10c6b883ebdf9ce7c0e874ecdfbc9c36bfd1c9d`.
+
+```sh
+var/venv-pipeline/bin/python data/manifests/uncoded/ms-pv-2024-verify.py --primary-text-checks
+```
+
+A execução também repetiu os 827 fragmentos, 282 células completas, 80.693 glifos e importador/finalizador 681/681. O sidecar original não mudou. O modelo esperado e a prova V2 estão em `ms-pv-2024-primary-text-model.json` e `ms-pv-2024-primary-text-v2-verification.json`. A frente responsável pelo manifesto integra o recibo somente nos três organizadores; as orientações 1–49/126–127 permanecem pendentes. A comparação no futuro artefato nacional sharded continua aguardando caminho e SHA imutáveis.

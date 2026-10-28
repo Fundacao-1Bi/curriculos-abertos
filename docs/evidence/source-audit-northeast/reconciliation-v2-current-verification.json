@@ -1,0 +1,172 @@
+{
+  "at": "2026-10-28T17:37:40.187414+00:00",
+  "actor_type": "automated",
+  "gate_version": "reconciliation-gate/2.0",
+  "extraction_revision": "page-cell-v1.5.0",
+  "checks": [
+    {
+      "source_id": "ba-resolucao-249-2026",
+      "status": "own_source_v2_verified",
+      "own_source_reconciled": true,
+      "whole_source_reconciled": false,
+      "records": 45,
+      "literal_fragments": 49,
+      "receipt_path": "data/manifests/reconciliation/ba-resolucao-249-2026.json",
+      "receipt_sha256": "19caa46a50e0765deabf35a2a7e25a59d573c4202929ccc81a686d36bc50419e",
+      "cache": {
+        "path": "data/extracted/c108df4fe4cb56dc0eb9290803025a84b4fa7c72c587d7ea00e6a3e59cee2573-page-cell-v1.5.0.json",
+        "sha256": "00b61b0f586a563aed2138c8867f60f737671d129d565c4c938a084d125ee06c",
+        "extraction_config_sha256": "3b4e56a65a345789522c9c35d903dc60632eda8be4ee522da6b3803f11a95a40",
+        "extraction_revision": "page-cell-v1.5.0",
+        "parser_fingerprint": {
+          "algorithm": "sha256-of-sorted-parser-file-digests",
+          "files": {
+            "document_roles.py": "ea4e0b161d015f6e87e4fa2b7dde202e1605815efff1e6ec48adf137f311a20f",
+            "geometry.py": "f0f2f7230602a051712fd116bce3c9d62bcb3e316d07412f8ed7ff3cda37467d",
+            "ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+            "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
+            "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
+            "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
+            "runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce"
+          },
+          "sha256": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+        },
+        "runtime": {
+          "implementation": "CPython",
+          "pillow": "13.0.0",
+          "pymupdf": "1.26.7",
+          "python": "3.11.15"
+        }
+      },
+      "dependency_issues": [
+        "related_document:DCRB-EM2026 integral aprovado e adotado pelo Art2:explicit_source_hash_or_declaration_evidence_missing"
+      ]
+    },
+    {
+      "source_id": "pe-historia-pernambuco-2026",
+      "status": "current_cache_or_source_config_refresh_pending",
+      "receipt_written": false
+    },
+    {
+      "source_id": "rn-portaria-11123-2025",
+      "status": "own_source_v2_verified",
+      "own_source_reconciled": true,
+      "whole_source_reconciled": false,
+      "records": 12,
+      "literal_fragments": 12,
+      "receipt_path": "data/manifests/reconciliation/rn-portaria-11123-2025.json",
+      "receipt_sha256": "83f1070e13b42ba95bc01dd44cc77b75b193dc168cd5f6c5842806214fd18dff",
+      "cache": {
+        "path": "data/extracted/8e8a23b5e500d1ac4aae981c64bd2b6ec8f20e939f4b260701741e90ae5af8b9-page-cell-v1.5.0.json",
+        "sha256": "d4af118b2428b110733ea62362f9f952aab5eca613211967ea59a63642f54c96",
+        "extraction_config_sha256": "6d15dd1468aca97f5539b4ad098a6869c24f28500c45efc76808570d6462bcdc",
+        "extraction_revision": "page-cell-v1.5.0",
+        "parser_fingerprint": {
+          "algorithm": "sha256-of-sorted-parser-file-digests",
+          "files": {
+            "document_roles.py": "ea4e0b161d015f6e87e4fa2b7dde202e1605815efff1e6ec48adf137f311a20f",
+            "geometry.py": "f0f2f7230602a051712fd116bce3c9d62bcb3e316d07412f8ed7ff3cda37467d",
+            "ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+            "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
+            "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
+            "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
+            "runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce"
+          },
+          "sha256": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+        },
+        "runtime": {
+          "implementation": "CPython",
+          "pillow": "13.0.0",
+          "pymupdf": "1.26.7",
+          "python": "3.11.15"
+        }
+      },
+      "dependency_issues": [
+        "related_document:Parecer160/2025 CEB/CEE-RN homologado: identidade integral do DCEC aprovado ainda não confrontada:explicit_source_hash_or_declaration_evidence_missing"
+      ]
+    },
+    {
+      "source_id": "ma-resolucao-211-2026-doe",
+      "status": "own_source_v2_verified",
+      "own_source_reconciled": true,
+      "whole_source_reconciled": false,
+      "records": 19,
+      "literal_fragments": 20,
+      "receipt_path": "data/manifests/reconciliation/ma-resolucao-211-2026-doe.json",
+      "receipt_sha256": "8f330a64d78bcc932c8eb3b9621cc71afea3457ff5b16b60c5d5cd889f5c7d60",
+      "cache": {
+        "path": "data/extracted/5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3-page-cell-v1.5.0.json",
+        "sha256": "fe45346a3c01c537834b292b82c6306adda3150a42791f1e6bc594d266290e75",
+        "extraction_config_sha256": "bafc2b9fbe871ffb56a728141cdfaac678d62c67001234f0829da3c4cf9996b9",
+        "extraction_revision": "page-cell-v1.5.0",
+        "parser_fingerprint": {
+          "algorithm": "sha256-of-sorted-parser-file-digests",
+          "files": {
+            "document_roles.py": "ea4e0b161d015f6e87e4fa2b7dde202e1605815efff1e6ec48adf137f311a20f",
+            "geometry.py": "f0f2f7230602a051712fd116bce3c9d62bcb3e316d07412f8ed7ff3cda37467d",
+            "ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+            "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
+            "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
+            "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
+            "runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce"
+          },
+          "sha256": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+        },
+        "runtime": {
+          "implementation": "CPython",
+          "pillow": "13.0.0",
+          "pymupdf": "1.26.7",
+          "python": "3.11.15"
+        }
+      },
+      "dependency_issues": [
+        "related_document:DCTMA Educação Digital e Midiática integral aprovado pelo Art1:explicit_source_hash_or_declaration_evidence_missing"
+      ]
+    },
+    {
+      "source_id": "ma-portaria-181-2026-recomposicao-doe",
+      "status": "own_source_v2_verified",
+      "own_source_reconciled": true,
+      "whole_source_reconciled": true,
+      "records": 76,
+      "literal_fragments": 98,
+      "receipt_path": "data/manifests/reconciliation/ma-portaria-181-2026-recomposicao-doe.json",
+      "receipt_sha256": "02159267fac0ba43c0ce142cfe1828e6639c90716b93aa86a1e23d0cc54ee7a7",
+      "cache": {
+        "path": "data/extracted/d24ce340f3d74c9461d99079d8fdf9aab9d720c024fad89b7d198af2990a8f7e-page-cell-v1.5.0.json",
+        "sha256": "698cb7bfe2b8503f31c8bfada0229a31bdf903c4dd9181b51b7493d37fd5417f",
+        "extraction_config_sha256": "bca47869155e1b3840620d57d85ec7feb35a0d1241d320f6af8ec6ba80812ec9",
+        "extraction_revision": "page-cell-v1.5.0",
+        "parser_fingerprint": {
+          "algorithm": "sha256-of-sorted-parser-file-digests",
+          "files": {
+            "document_roles.py": "ea4e0b161d015f6e87e4fa2b7dde202e1605815efff1e6ec48adf137f311a20f",
+            "geometry.py": "f0f2f7230602a051712fd116bce3c9d62bcb3e316d07412f8ed7ff3cda37467d",
+            "ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+            "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
+            "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
+            "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
+            "runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce"
+          },
+          "sha256": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+        },
+        "runtime": {
+          "implementation": "CPython",
+          "pillow": "13.0.0",
+          "pymupdf": "1.26.7",
+          "python": "3.11.15"
+        }
+      },
+      "dependency_issues": []
+    },
+    {
+      "source_id": "pi-resolucao-188-2025",
+      "status": "current_cache_or_source_config_refresh_pending",
+      "receipt_written": false
+    }
+  ],
+  "own_source_passed": 4,
+  "dependency_closed_sources": 1,
+  "UF_ready": 0,
+  "scope": "Current cache only, no extraction. Expected keys and record counts derive source-only censuses. Own-act completion is separate from required documents, production incorporation and pedagogical review."
+}

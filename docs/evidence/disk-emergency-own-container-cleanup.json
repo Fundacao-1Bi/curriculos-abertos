@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "at": "2026-10-28T16:01:23.900Z",
+  "scope": "remove only stopped containers of this project, no -v and no data volume removal",
+  "commands": [
+    {
+      "command": [
+        "docker",
+        "inspect",
+        "curriculos-abertos-app-1",
+        "--format",
+        "{{index .Config.Labels \"com.docker.compose.project\"}} {{.State.Status}}"
+      ],
+      "status": 0,
+      "stdout": "curriculos-abertos exited\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "inspect",
+        "curriculos-abertos-worker-1",
+        "--format",
+        "{{index .Config.Labels \"com.docker.compose.project\"}} {{.State.Status}}"
+      ],
+      "status": 0,
+      "stdout": "curriculos-abertos exited\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "rm",
+        "curriculos-abertos-app-1",
+        "curriculos-abertos-worker-1"
+      ],
+      "status": 1,
+      "stdout": "",
+      "stderr": "Error response from daemon: cannot remove container \"curriculos-abertos-app-1\": write /var/lib/desktop-containerd/daemon/io.containerd.metadata.v1.bolt/meta.db: input/output error\nError response from daemon: cannot remove container \"curriculos-abertos-worker-1\": write /var/lib/desktop-containerd/daemon/io.containerd.metadata.v1.bolt/meta.db: input/output error\n"
+    }
+  ],
+  "removed": false
+}

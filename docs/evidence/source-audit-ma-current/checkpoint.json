@@ -1,0 +1,64 @@
+{
+  "at": "2026-10-28T14:57:41.795868+00:00",
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:ma-current-inventory",
+  "proposal_path": "data/manifests/ma-current-supplement.json",
+  "proposal_sha256": "5e9a4ef9c8a6a9f32f6c24d4696d7508f134e50d5c2ae972ecc8386dc288794f",
+  "implemented": [
+    "Reproducible public metadata catalogue probes",
+    "21-label source-only catalogue inventory",
+    "Non-autoloaded Source proposal supplement",
+    "Original official normative-region acquisition and verification"
+  ],
+  "executed": {
+    "public_metadata_queries": 13,
+    "new_pdf_files_acquired": 5,
+    "original_pdf_pages": 638,
+    "required_normative_source_proposals": 2,
+    "acquired_pending_typology_source_proposals": 3,
+    "mandatory_research_pending_sources": 1,
+    "catalogue_labels": 21,
+    "new_catalogue_candidate_labels": 20
+  },
+  "verified": {
+    "all_six_Source_proposals_schema": "1.1.0",
+    "five_original_hashes_rechecked": true,
+    "article_markers_in_curated_regions": 60,
+    "public_pdf_renders": 0,
+    "three_acquired_scopes_secondary_reviewed": true
+  },
+  "pending": [
+    "Original DCTMA Educação Digital e Midiática, internal index and learning corpus",
+    "Four GPD and current matrix/curricular catalogue PDF identities/content; SUGEDA direct pages require authentication",
+    "Full Parecer242/2026 and any subsequent operational act mentioned by Resolution211 Article5",
+    "Normative/support typology of two program acts and one EITI modality policy and learning reconciliation of new documents",
+    "Matrizes de Recomposição and SEDUC/Eureka materials cited in Portaria181 annex5: original identities/content and documentary typology pending"
+  ],
+  "scope_limit": "638 original diary pages include unrelated matters. Only selected regions belong to proposed Sources; no national/UF readiness, structured-learning completeness or corpus publication claimed.",
+  "typology_disposition": "Res162 moved to pending typology under ESC02: modality-specific documents are not automatically required. No source omitted or excluded.",
+  "integration_status": "three_sources_integrated_into_northeast_manifest",
+  "integrated_source_ids": [
+    "ma-resolucao-211-2026-doe",
+    "ma-portaria-181-2026-recomposicao-doe",
+    "ma-dctma-educacao-digital-midiatica"
+  ],
+  "normative_adapters": {
+    "records": 95,
+    "literal_fragments": 118,
+    "source_lines": 726,
+    "shared_importer_finalizer": "passed",
+    "peer_review": "passed",
+    "sidecar_hashes": {
+      "ma-resolucao-211-2026-doe": "7e62414648b4172dcf6eae4d3f028046ab0eb0351ec93f7f28d9fe3963bfdc64",
+      "ma-portaria-181-2026-recomposicao-doe": "e3e12025f883a2468ee8e15e03cc1dc9ccef9317c7a7e3bfd1f609146e4ab296"
+    },
+    "reconciliation_files": [
+      "data/manifests/reconciliation/ma-resolucao-211-2026-doe.json",
+      "data/manifests/reconciliation/ma-portaria-181-2026-recomposicao-doe.json"
+    ],
+    "source_path_activation": "verified_in_active_northeast_manifest",
+    "national_candidate_incorporation": "not_verified",
+    "active_source_importer_records": 95,
+    "cache_configuration_status": "refresh_required_under_current_parser_source_configuration"
+  }
+}

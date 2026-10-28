@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "actor_type": "automated",
+  "approval": {
+    "source": "Human user reply relayed by parent /root in current task",
+    "text": "Autorizar o rein\u00edcio do Docker Desktop",
+    "scope": "ONE normal restart, temporary impact shared services, preserve images/volumes/backups; no reset or deletion",
+    "observed_before_action_at": "2026-10-28T16:46:24Z"
+  },
+  "restart": {
+    "command": [
+      "docker",
+      "desktop",
+      "restart",
+      "--detach"
+    ],
+    "count": 1,
+    "requested_at": "2026-10-28T16:46:24Z",
+    "cli_exit_code": 0,
+    "cli_output": "Starting Docker Desktop"
+  },
+  "checks": {
+    "engine": {
+      "exit_code": 0,
+      "stdout": "29.1.3 Docker Desktop",
+      "stderr": ""
+    },
+    "containers": {
+      "exit_code": 0,
+      "stdout": "curriculos-abertos-worker-1 Up 5 minutes (healthy)\ncurriculos-abertos-app-1 Up 5 minutes (healthy)\ncurriculos-abertos-db-1 Up 5 minutes (healthy)\ncontentizap-payload-1 Exited (0) 9 months ago\ncontentizap-postgres-1 Up 5 minutes",
+      "stderr": ""
+    },
+    "foreign_postgres": {
+      "exit_code": 0,
+      "stdout": "/var/run/postgresql:5432 - accepting connections",
+      "stderr": ""
+    },
+    "volumes": {
+      "exit_code": 0,
+      "stdout": "curriculos-abertos_database_pg1711_20261028044133-f64587bb local\ncurriculos-abertos_database local\ncurriculos-abertos_storage local",
+      "stderr": ""
+    },
+    "publication": {
+      "exit_code": 0,
+      "stdout": "{\"id\" : \"ca-77fb8076598b567e1ba3\", \"sha256\" : \"da8fb61ce80b2aec4a83d4f0e9cdeb306505c384315af59a76b0fc9fabc03eb0\", \"items\" : 38322, \"relations\" : 13007, \"sources\" : 247, \"in_recovery\" : false}",
+      "stderr": ""
+    },
+    "migrations": {
+      "count": 10,
+      "all_host_hashes_match": true,
+      "ledger": [
+        {
+          "name": "001-domain.sql",
+          "sha256": "8f510934477eb058263031f4208d105fb7cbe4a85ecd9f148b0fb9bafbb3ac46",
+          "executed_at": "2026-10-28T03:34:49.521722+00:00"
+        },
+        {
+          "name": "002-admin.sql",
+          "sha256": "8f30dfff0ba46b80f83f02d1d9d1cc44d198d2f750221b8952e72c31e62cf98b",
+          "executed_at": "2026-10-28T03:34:49.543499+00:00"
+        },
+        {
+          "name": "003-draft-revision.sql",
+          "sha256": "c49d8af72a677786111c14443fbc238431fe69f4934d634285ece8040ec7c576",
+          "executed_at": "2026-10-28T03:41:47.95606+00:00"
+        },
+        {
+          "name": "004-domain-search.sql",
+          "sha256": "73ee404adf457f74d21e5133f1f08fd4d15a73454cdf676f58b58e281056d4d2",
+          "executed_at": "2026-10-28T03:47:06.883595+00:00"
+        },
+        {
+          "name": "005-domain-metadata.sql",
+          "sha256": "e9fdf7dcfb11634dc3f443780b5446e40e907d1c4b9f3d7e435d442f4b5f2def",
+          "executed_at": "2026-10-28T03:58:12.772983+00:00"
+        },
+        {
+          "name": "006-relational-publications.sql",
+          "sha256": "e0061e134edb154711ae3fcaf51b0a92bbe5b21d47231775c451e8f49462803f",
+          "executed_at": "2026-10-28T04:34:24.220524+00:00"
+        },
+        {
+          "name": "007-hierarchy-and-code-aliases.sql",
+          "sha256": "e66d3d52d73382930aae11a8c114c694429f8a0e3539b46d7331433aef132bed",
+          "executed_at": "2026-10-28T04:41:05.920783+00:00"
+        },
+        {
+          "name": "008-publication-visibility.sql",
+          "sha256": "acb01ee2cf41e614ec2015c37a837dc7859427f14258effe24b8c9fb6501bdb7",
+          "executed_at": "2026-10-28T05:02:55.56794+00:00"
+        },
+        {
+          "name": "009-compact-code-search.sql",
+          "sha256": "727327c7b78cfcea66a9038265baee564bdd54d08e22d1a140a44fc850488ee7",
+          "executed_at": "2026-10-28T05:02:55.606046+00:00"
+        },
+        {
+          "name": "010-pdf-word-search.sql",
+          "sha256": "d7178f0a4e9972f1acd1c1890bebb9847e7e925c2fa69dd862efd3812c956168",
+          "executed_at": "2026-10-28T05:39:48.731719+00:00"
+        }
+      ]
+    },
+    "old_job": {
+      "exit_code": 0,
+      "stdout": "{\"id\" : \"0cce93a2-d759-4fdf-9e9a-3d0ef0cc40bf\", \"status\" : \"paused\", \"attempts\" : 1}",
+      "stderr": ""
+    },
+    "indices_collation": {
+      "exit_code": 0,
+      "stdout": "{\"invalid_indices\" : 0, \"collation\" : \"2.36\", \"actual\" : \"2.36\"}",
+      "stderr": ""
+    },
+    "backup": {
+      "path": "var/backups/pg1711-20261028044133-f64587bb/database.dump",
+      "sha256": "23a17c1e6e4f9e6ee61a8d4e5bc72c04e53c544bcd352f40c8c58443adcd5031",
+      "bytes": 117189177,
+      "unchanged": true
+    },
+    "wal": {
+      "log": "docs/evidence/docker-recovery-postgres.log",
+      "redo_completed": true,
+      "ready": true,
+      "in_recovery": false
+    },
+    "amcheck": {
+      "command": "pg_amcheck --install-missing --parent-check --rootdescend --verbose",
+      "exit_code": 0,
+      "log": "docs/evidence/docker-recovery-pg-amcheck.log",
+      "extension_installed": "amcheck",
+      "scope": "current database heap, TOAST and Btree structural checks; does not certify semantic content or foreign services"
+    },
+    "ready": {
+      "exit_code": 0,
+      "stdout": "{\"status\":\"ready\",\"database\":\"ok\",\"publication\":\"ca-77fb8076598b567e1ba3\",\"worker\":\"ok\"}",
+      "stderr": ""
+    },
+    "preflight": {
+      "event": "ops_preflight_passed",
+      "at": "2026-10-28T16:50:51.394Z",
+      "disk_only": false,
+      "checks": [
+        {
+          "name": "Limite de espa\u00e7o v\u00e1lido",
+          "passed": true
+        },
+        {
+          "name": "Espa\u00e7o livre para o pico de build e uma reserva",
+          "passed": true,
+          "detail": {
+            "available_bytes": 16236531712,
+            "minimum_bytes": 16106127360,
+            "available_gib": 15.12
+          }
+        },
+        {
+          "name": "Node compat\u00edvel com package.json",
+          "passed": true,
+          "detail": {
+            "version": "v25.2.1"
+          }
+        },
+        {
+          "name": "Configura\u00e7\u00e3o local obrigat\u00f3ria presente",
+          "passed": true
+        },
+        {
+          "name": "URL p\u00fablica HTTP(S) sem credenciais embutidas",
+          "passed": true
+        },
+        {
+          "name": "Docker Engine acess\u00edvel",
+          "passed": true,
+          "detail": {
+            "version": "29.1.3"
+          }
+        },
+        {
+          "name": "Docker Compose v2 dispon\u00edvel",
+          "passed": true
+        },
+        {
+          "name": "Refer\u00eancia de imagem sem credenciais embutidas",
+          "passed": true
+        },
+        {
+          "name": "Leitura real do armazenamento Docker",
+          "passed": true
+        },
+        {
+          "name": "Espa\u00e7o livre no filesystem do Docker para o build",
+          "passed": true,
+          "detail": {
+            "available_bytes": 427583696896,
+            "minimum_bytes": 16106127360
+          }
+        }
+      ]
+    },
+    "storage": "docs/evidence/docker-recovery-storage-verification.json",
+    "final_preflight": {
+      "event": "ops_preflight_passed",
+      "at": "2026-10-28T16:57:43.660Z",
+      "disk_only": false,
+      "checks": [
+        {
+          "name": "Limite de espa\u00e7o v\u00e1lido",
+          "passed": true
+        },
+        {
+          "name": "Espa\u00e7o livre para o pico de build e uma reserva",
+          "passed": true,
+          "detail": {
+            "available_bytes": 16384589824,
+            "minimum_bytes": 16106127360,
+            "available_gib": 15.26
+          }
+        },
+        {
+          "name": "Node compat\u00edvel com package.json",
+          "passed": true,
+          "detail": {
+            "version": "v25.2.1"
+          }
+        },
+        {
+          "name": "Configura\u00e7\u00e3o local obrigat\u00f3ria presente",
+          "passed": true
+        },
+        {
+          "name": "URL p\u00fablica HTTP(S) sem credenciais embutidas",
+          "passed": true
+        },
+        {
+          "name": "Docker Engine acess\u00edvel",
+          "passed": true,
+          "detail": {
+            "version": "29.1.3"
+          }
+        },
+        {
+          "name": "Docker Compose v2 dispon\u00edvel",
+          "passed": true
+        },
+        {
+          "name": "Refer\u00eancia de imagem sem credenciais embutidas",
+          "passed": true
+        },
+        {
+          "name": "Leitura real do armazenamento Docker",
+          "passed": true
+        },
+        {
+          "name": "Espa\u00e7o livre no filesystem do Docker para o build",
+          "passed": true,
+          "detail": {
+            "available_bytes": 430129885184,
+            "minimum_bytes": 16106127360
+          }
+        }
+      ]
+    }
+  },
+  "image_limitations": [
+    "Live c2eb app/worker and their existing snapshots remain healthy; old image registry entry has a missing digest and was not used to recreate services.",
+    "Private filesystem-only c2eb export was restored successfully with static non-secret config, isolated health200 and matching fingerprint. Temporary restore image/container removed; archive retained.",
+    "Incomplete e88c image had zero-byte package.json and was removed only after proving it had no container references. No new build or release occurred."
+  ],
+  "eio_after_restart_observed": false,
+  "new_build_started": false,
+  "completed_at": "2026-10-28T16:57:58.931520+00:00",
+  "passed_infrastructure_checks": true,
+  "rollback_archive": "docs/evidence/docker-recovery-runtime-rollback-archive.json",
+  "discardable_restore_verified": true,
+  "incomplete_image_removed": "docs/evidence/docker-recovery-incomplete-image-removal.json",
+  "directed_gc_evidence": [
+    "docs/evidence/post-restart-directed-cache-plan.json",
+    "docs/evidence/post-restart-directed-cache-cleanup.json",
+    "docs/evidence/post-restart-directed-tools-cleanup.json"
+  ]
+}

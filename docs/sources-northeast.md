@@ -1,22 +1,22 @@
 # Fontes Nordeste — inventário e checkpoint
 
-Inspeção automatizada por `codex:data_northeast`; atualização 2026-10-28T04:54:51.969642+00:00. Nenhuma revisão pedagógica humana foi realizada.
+Inspeção automatizada por `codex:data_northeast`; atualização 2026-10-28T17:41:09.134217+00:00. Nenhuma revisão pedagógica humana foi realizada.
 
-Estado: em execução. 64 entradas, 62 artefatos PDF adquiridos, 16099 páginas físicas de fonte, 624789948 bytes. **0 UFs reconciliadas/ACE-01 prontas** neste lote. Uma cópia de pesquisa AL Computação é privada e explicitamente não publicável enquanto sua procedência integral não for confirmada. Esses totais são de documentos, não de aprendizagens nem prova de completude.
+Estado: em execução. 90 entradas, 86 artefatos PDF adquiridos, 17486 páginas físicas de fonte, 667622099 bytes. **0 UFs reconciliadas/ACE-01 prontas** neste lote. Quatro atos têm prova própria V2 no cache atual1.5; somenteMA181 fecha também suas dependências declaradas. PE93 ePI14aguardam refresh seletivo. A incorporação em candidato e produção é verificação distinta. Uma cópia de pesquisa AL Computação é privada e não publicável enquanto sua procedência integral não for confirmada. Esses totais são de documentos, não de aprendizagens nem prova de completude.
 
 ## Cobertura de aquisição
 
 | UF | PDFs adquiridos | Etapas com artefatos | Pendência obrigatória conhecida |
 |---|---:|---|---|
-| AL | 20 | EF, EI, EM | ReCAL Computação: cópia privada adquirida, cadeia de distribuição primária pendente; atos DOE exigem recorte; 15 complementos EM integrados; reconciliação documental pendente |
-| BA | 5 | EF, EI, EM | DCRB-EM2026 aprovado para implementação2027 ainda não localizado; edição2022 preservada como distinta; ato249/2026 reconciliado |
-| CE | 5 | EF, EI, EM | Reconciliação de partes/etapas e tabelas giradas; catálogo de trilhas requer OCR |
-| MA | 2 | EF, EI, EM | Organizador EM requer correção de tipologia; verificação de complementos/vigência e reconciliação |
-| PB | 1 | EF, EI | Ensino Médio: fonte oficial retorna CAPTCHA/JavaScript; parser de objetivos/referências requer correção |
-| PE | 5 | EF, EI, EM | Reconciliação de CEDIM e referências/itinerários; cadeia oficial da EI pendente; 8 habilidades História EM verificadas, demais estruturas pendentes |
-| PI | 4 | EF, EI, EM | Caderno2 declara versão preliminar; confirmar edição final e Computação EM; corrigir colunas EI e reconciliar |
-| RN | 10 | EF, EI, EM | DCEC Computação2026 agora adquirido819p, cadeia oficial confirmada; ato de homologação reconciliado; currículo, estruturas2026, trilhas e IFA ainda em reconciliação |
-| SE | 10 | EF, EI, EM | Tabelas de itinerários com fronteiras incorretas; reconciliar Computação e eletivas; distinguir atualização da página e edição |
+| AL | 20 | EF, EI, EM | Computação cadeia primária; estruturas/DesDP/IFA e atos em reconciliação |
+| BA | 7 | EF, EI, EM | DCRB2026 integral não localizado; implementação2027;249 reconciliada, referenciais pendentes |
+| CE | 7 | EF, EI, EM | Matrizes2026 adquiridas100p eRes52126p digitalizadas; OCR/reconciliação internos pendentes |
+| MA | 4 | EF, EI, EM | 211/181 reconciliados; complemento digital integral faltante; referenciais e GPD/SUGEDA pendentes |
+| PB | 2 | EF, EI | 635 e392 sidecars2008/1946 verificados; EM867p renderiza, aquisição local pendente por Save desabilitado/HTTPHTML; V2 integral pendente |
+| PE | 19 | EF, EI, EM | 14partes atuais563p adquiridas; EI cadeia primária; IN03/2026 faltante; CEDIM/hierarquia pendentes |
+| PI | 7 | EF, EI, EM | ComputaçãoEM137p e atos8p adquiridos; Res18814nós/peerPASS ligado, refresh/V2 e Parecer190 integral pendentes |
+| RN | 10 | EF, EI, EM | Trilhas3851nós sem código/hierarquia e2930links verificados e ligados; FULL/V2 e DCEC completo pendentes |
+| SE | 10 | EF, EI, EM | Geometria/glifos corrigidos em recortes provados; FULL e reconciliação pendentes |
 
 ## Catálogo de artefatos
 
@@ -88,21 +88,47 @@ Os metadados, URLs primárias, tentativas, hashes SHA-256, páginas e caminhos p
 | `al-projeto-vida-guia-2` | EM | Não confirmada | acquired | 240 |
 | `al-projeto-vida-guia-3` | EM | Não confirmada | acquired | 228 |
 | `rn-portaria-11123-2025` | EI, EF, EM | 2025 | acquired | 57 |
+| `pe-fgb-trimestral-matematica-c6335b8d` | EM | Não confirmada | acquired | 55 |
+| `pe-fgb-trimestral-arte-cb58c164` | EM | Não confirmada | acquired | 37 |
+| `pe-fgb-trimestral-educacao-fisica-d997d37c` | EM | Não confirmada | acquired | 59 |
+| `pe-fgb-trimestral-lingua-inglesa-360febf4` | EM | Não confirmada | acquired | 32 |
+| `pe-fgb-trimestral-lingua-portuguesa-f9f839b5` | EM | Não confirmada | acquired | 103 |
+| `pe-fgb-trimestral-filosofia-d3d771c6` | EM | Não confirmada | acquired | 20 |
+| `pe-fgb-trimestral-geografia-916f592c` | EM | Não confirmada | acquired | 37 |
+| `pe-fgb-trimestral-historia-d8799974` | EM | Não confirmada | acquired | 35 |
+| `pe-fgb-trimestral-sociologia-7acc310e` | EM | Não confirmada | acquired | 17 |
+| `pe-fgb-trimestral-biologia-7f902274` | EM | Não confirmada | acquired | 32 |
+| `pe-fgb-trimestral-fisica-cd2ccadd` | EM | Não confirmada | acquired | 30 |
+| `pe-fgb-trimestral-quimica-007bc04c` | EM | Não confirmada | acquired | 24 |
+| `pe-ifa-matriz-anexo-i-c4ba842e` | EM | Não confirmada | acquired | 37 |
+| `pe-ifa-matriz-anexo-ii-c6f9ef30` | EM | Não confirmada | acquired | 45 |
+| `pi-computacao-em-2025` | EM | 2025 | acquired | 137 |
+| `ce-matrizes-2026` | EM | 2026 (arquivoV2) | acquired | 100 |
+| `ce-resolucao-521-2025` | EM | Resolução nº521/2025 | acquired | 26 |
+| `pe-instrucao-normativa-03-2026` | EM | Não confirmada | research_pending | — |
+| `pi-resolucao-188-2025` | EI, EF, EM | 2025 | acquired | 2 |
+| `pi-parecer-190-2025` | EI, EF, EM | 2025 | acquired | 6 |
+| `pb-proposta-ei-ef-cedoc` | EI, EF | Não confirmada | acquired | 392 |
+| `ma-resolucao-211-2026-doe` | EI, EF, EM | 2026 (numeração do ato) | acquired | 38 |
+| `ma-portaria-181-2026-recomposicao-doe` | EM | 2026 (numeração do ato) | acquired | 100 |
+| `ma-dctma-educacao-digital-midiatica` | EI, EF, EM | Não confirmada | research_pending | — |
+| `ba-resolucao-266-2025-computacao` | EI, EF, EM | 2025 | acquired | 21 |
+| `ba-resolucao-125-2024-historia` | EI, EF, EM | 2024 | acquired | 2 |
 
 ## Evidências e decisões materiais
 
-- **PB EM — bloqueio externo real:** o portal `paraiba.pb.gov.br` devolve HTTP200 `text/html` com desafio de CAPTCHA/JavaScript em lugar do PDF. Foram tentadas as publicações original, `www`, `copy_of` e `@@download`; o portal MEC alternativo também devolveu desafio. Nenhum controle foi contornado. Snippets de busca não foram usados para preencher aprendizagens. O exemplar do Instituto Unibanco foi usado apenas para descoberta, pois a página informa restrições de download/reprodução. Intervenção mínima: fonte primária alternativa acessível ou arquivo oficial obtido legitimamente com proveniência.
+- **PB EM — aquisição ainda pendente:** o PDF oficial abriu normalmente no Chrome com867p e a ficha `/view` declara `application/pdf`,7.6MB e modificação25/04/2023 (esta não é data editorial). O botão Download próprio do viewer e o link de download da ficha abrem diálogoSave comSave desabilitado emDownloads/nomeASCIIválido e outros destinos, sem mensagem de erro; nenhuma cópia local foi obtida. A prova está em `pb-em-official-acquisition.json`. Em requisições HTTP padrão sem sessão, o portal `paraiba.pb.gov.br` devolve HTTP200 `text/html` com desafio de CAPTCHA/JavaScript em lugar do PDF. Foram tentadas as publicações original, `www`, `copy_of` e `@@download`; o portal MEC alternativo também devolveu desafio. Nenhum controle foi contornado. Snippets de busca não foram usados para preencher aprendizagens. O exemplar do Instituto Unibanco foi usado apenas para descoberta, pois a página informa restrições de download/reprodução. Intervenção mínima: fonte primária alternativa acessível ou arquivo oficial obtido legitimamente com proveniência.
 - **BA EM — divergência de edição:** a Resolução CEE249/2026, página1 do PDF adquirido, confirma revisão DCRB-EM2026. O art16, na PDF p7, determina implementação a partir do ano letivo2027; o art22 dá vigência ao ato na publicação. Esses marcos não foram equiparados. O catálogo SEC `https://www.ba.gov.br/educacao/coordenacao-do-ensino-medio` entrega PDF cujo CIP/capa diz2022. O host legado `dcrb.educacao.ba.gov.br` deu timeout TLS; o arquivo2022 foi adquirido legitimamente no novo domínio, preservando essa diferença. A revisão2026 permanece como fonte aprovada pendente com início de aplicação2027; isso não comprova que a edição2022 seja inaplicável em todo o ano2026. Não se excluiu a edição2022 sem esclarecer o escalonamento.
 - **CE EI/EF — alternativa oficial resolvida:** o host antigo `www.seduc.ce.gov.br` falhou validação TLS. A publicação oficial movida para `www.ce.gov.br/seduc/wp-content/uploads/sites/63/2020/02/DCRC_2019_OFICIAL.pdf` foi adquirida sem desabilitar verificação de certificado.
 - **PI — substituição de caminho resolvida:** `/arquivos/diretrizes/` retornou404; `/download/diretrizes/` entregou PDFs oficiais EI/EF e EM. O caderno2 adquirido traz “VERSÃO PRELIMINAR” na capa; sua homologação não foi presumida.
 - **SE — WPDM público:** PDFs adquiridos pelo link público `data-downloadurl` do próprio portal. No manifesto preserva-se URL estável `?wpdmdl=ID`, sem depender do parâmetro efêmero `refresh`; downloads não exigiram autenticação. Datas de atualização da página2026 não foram tomadas como edição dos PDFs.
-- **RN — extensão do referencial:** o catálogo oficial contém RCEMP2021, trilhas e diretrizes IFA; página de estruturas acrescenta diurno/noturno/integral2026. Os três documentos2026 foram adquiridos. O DCEC/RN Computação inicialmente retornou403; nova requisição pública às04:44UTC retornou200/PDF e permitiu adquirir819 páginas físicas. A cadeia oficial municipal.gov→SIGEduc→PDF foi confirmada; isto resolve acesso, não reconciliação. O ato estadual de homologação foi adquirido e sua região curricular integral reconciliada, preservando matérias alheias fora do recorte.
-- **AL — escopo do Diário Oficial:** o PDF de152p contém matérias não curriculares. Somente parecer27/2026 p34-35 e Resolução10/2026 p36-37 pertencem ao recorte. P37 contém duas colunas: a esquerda segue curricular até o rodapé e a direita encerra a resolução antes da SEFAZ. Cortar a sequência global pelo marcador apagaria os artigos11/12 à esquerda. `page_regions` registra a união ordenada de duas regiões curriculares; até existir implementação e prova de recorte seguro, `include_in_corpus:false` preserva metadados e bloqueia processamento completo do ato. Isso é pendência técnica, não exclusão do conjunto obrigatório.
+- **RN — extensão do referencial:** o catálogo oficial contém RCEMP2021, trilhas e diretrizes IFA; página de estruturas acrescenta diurno/noturno/integral2026. Os três documentos2026 foram adquiridos. O DCEC/RN Computação inicialmente retornou403; nova requisição pública às04:44UTC retornou200/PDF e permitiu adquirir819 páginas físicas. A cadeia oficial municipal.gov→SIGEduc→PDF foi confirmada; isto resolve acesso, não reconciliação. O ato estadual de homologação foi adquirido; sua região curricular tem gate próprioV2, preservando matérias alheias fora do recorte. A identidade do Parecer160/2025 e do texto DCEC aprovado não foi inferida por semelhança de título ou pelo PDF2026 disponível.
+- **AL — escopo do Diário Oficial:** o PDF de152p contém matérias não curriculares. Somente parecer27/2026 p34-35 e Resolução10/2026 p36-37 pertencem ao recorte. P37 contém duas colunas: a esquerda segue curricular até o rodapé e a direita encerra a resolução antes da SEFAZ. Cortar a sequência global pelo marcador apagaria os artigos11/12 à esquerda. `page_regions` registra a união ordenada de duas regiões curriculares; a implementação v1.4 e a conferência do recorte passaram nas quatro páginas, preservando artigos11–17 e excluindo SEFAZ/CNPJ/matérias tributárias. `include_in_corpus:true` está habilitado apenas para essas regiões. A estrutura normativa e a fidelidade dos glifos ainda exigem reconciliação documental; o conjunto permanece obrigatório.
 - **Direitos MA EI/EF:** o próprio PDF declara reprodução permitida com citação da fonte e distribuição gratuita. Demais permissões de redistribuição de PDFs permanecem não estabelecidas, salvo indicação específica em fonte; direitos sobre texto oficial, diagramação e fotos não foram misturados à licença MIT do código.
 
 ## Inventário e verificação
 
-`stages`, `components`, `normative_parts`, `index_entries` e `inventory_evidence` registram expectativas observadas em fontes/capas/sumários. Com exceção da fonte específica PE História já reconciliada, os estados de inventário e reconciliação permanecem pendentes: o denominador não foi substituído pelos registros que o parser conseguiu extrair. A leitura inicial não comprova extração integral, associação código/texto em todas as tabelas, OCR ou revisão humana. As partes internas das modalidades que integram o documento principal permanecem dentro do PDF processado; materiais didáticos, cadernos trimestrais e documentos específicos de modalidade fora do referencial principal devem ser classificados separadamente, com justificativa, antes de excluir.
+`stages`, `components`, `normative_parts`, `index_entries` e `inventory_evidence` registram expectativas observadas em fontes/capas/sumários. O gateV2 atual verificou quatro artefatos próprios(BA249,RN11123,MA211,MA181); somenteMA181 fecha suas dependências declaradas. PEHistória93ePI18814aguardam refresh seletivo antes doV2. Os demais estados de inventário e reconciliação permanecem pendentes: o denominador não foi substituído pelos registros que o parser conseguiu extrair. A leitura inicial não comprova extração integral, associação código/texto em todas as tabelas, OCR ou revisão humana. As partes internas das modalidades que integram o documento principal permanecem dentro do PDF processado; materiais didáticos, cadernos trimestrais e documentos específicos de modalidade fora do referencial principal devem ser classificados separadamente, com justificativa, antes de excluir.
 
 ## Retomada executável
 
@@ -122,7 +148,7 @@ scripts/data-ingest.sh --cached-only --job-id nacional-nordeste-checkpoint
 
 ## Auditoria independente de estrutura, código e posição
 
-A aquisição dos arquivos não conclui a reconciliação. O quadro de amostragem em `docs/evidence/source-audit-northeast/audit-report.json` foi construído diretamente de ocorrências nativas dos PDFs, por UF, etapa e componente, antes de consultar os IDs extraídos. Abrange 159 estratos das nove UFs. Ocorrência de código inclui exemplos e referências e **não é o denominador de aprendizagens**.
+A aquisição dos arquivos não conclui a reconciliação. O quadro de amostragem em `docs/evidence/source-audit-northeast/audit-report.json` foi construído diretamente de ocorrências nativas dos PDFs, por UF, etapa e componente, antes de consultar os IDs extraídos. Abrange 159 pontos de amostragem em 157 combinações distintas de UF, etapa e componente, nas nove UFs. Ocorrência de código inclui exemplos e referências e **não é o denominador de aprendizagens**.
 
 A primeira execução preservada encontrou muitos caches ainda ausentes. `recheck.py` reaplica os mesmos 159 pontos aos caches atuais, sem selecionar novos exemplos a partir do resultado. A execução v1.3 preservada em `audit-recheck-v1.3.json` inspecionou 110 estratos, encontrou 30 ocorrências ainda sem item codificado correspondente e 19 estratos sem cache. `audit-recheck.json` acompanha separadamente o reprocessamento v1.4; um cache ainda ausente nessa rodada não significa perda confirmada de conteúdo. Entre os itens comparados, 78 passaram na conferência literal de célula; isso não atesta semântica ou completude. Os resultados de candidatos e a disposição histórica individual estão preservados em `finding-dispositions-v1.3.json`. Correções do v1.4 exigem nova conferência; não são consideradas resolvidas apenas por alteração de código.
 
@@ -152,11 +178,11 @@ A figura original do CE EI/EF, PDF p.25, contém conflito verificável: repete a
 
 O PDF oficial `pe-historia-pernambuco-2026` tem oito páginas e se refere especificamente ao **IFA de História de Pernambuco do 2º ano do Ensino Médio**. O escopo do manifesto foi corrigido para esse artefato. O componente integra a área de Ciências Humanas e Sociais Aplicadas; a apresentação pede contribuição de História, Geografia, Sociologia e Filosofia.
 
-A fonte foi integralmente inventariada por títulos, subdivisões e bullets, independentemente dos itens codificados do parser. O resultado contém 91 registros tipados: oito habilidades, 13 temáticas, 11 desdobramentos, dez eixos, dez temas transversais, seis produções sugeridas, apresentação, orientações e títulos. Há 90 vínculos hierárquicos e 92 fragmentos de evidência. As habilidades se distribuem em três, duas e três por trimestre; uma continua da PDF p.5 à p.6. Todos os códigos permanecem nulos.
+O corpo curricular das páginas PDF3–8 foi inventariado por títulos, subdivisões e bullets, independentemente dos itens codificados do parser. Esse corpo contém91 registros tipados: oito habilidades, 13 temáticas, 11 desdobramentos, dez eixos, dez temas transversais, seis produções sugeridas, apresentação, orientações e títulos. Há 90 vínculos hierárquicos e 92 fragmentos de evidência. As habilidades se distribuem em três, duas e três por trimestre; uma continua da PDF p.5 à p.6. Todos os códigos permanecem nulos.
 
 `data/manifests/uncoded/pe-historia-items.json` preserva os textos, série, período e hierarquia. Os IDs foram derivados do inventário documental e do contrato canônico do finalizador. `build-pe-structure.py` permite reconstruir o inventário, e `verify-pe-structure.py` confronta importação, IDs e parentesco com a expectativa independente.
 
-A execução com PyMuPDF1.26.7 e pipelinev1.4 verificou os 91 registros, 92 fragmentos e 90 pais, sem órfãos, warnings ou OCR pendente. As evidências estão em `pe-complete-structure-inventory.json` e `pe-complete-structure-import-check.json`. A reconciliação documental **desta fonte específica** foi concluída por agente automatizado. Isso não atesta completude de PE/EM, do conjunto estadual ou revisão pedagógica humana.
+A execução com PyMuPDF1.26.7 e pipelinev1.4 verificou os 91 registros, 92 fragmentos e 90 pais, sem órfãos, warnings ou OCR pendente. As evidências estão em `pe-complete-structure-inventory.json` e `pe-complete-structure-import-check.json`. Esse teste antigo validava o corpo curricular. A revisão posterior preserva também a capa e os créditos PDF1–2: a fonte integral tem93registros(91corpo+2contextos),94fragmentos e90pais. O binding corrigido aguarda refresh seletivo1.5 e reciboV2 atual; não há completude PE/EM ou revisão pedagógica humana.
 
 ## Alagoas: complementos e apoio didático
 
@@ -183,7 +209,7 @@ var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/audit.py
 
 A Resolução CEE249/2026 foi estruturada integralmente em 45 partes: 22 artigos, oito capítulos, nove considerandos e demais elementos do ato. O inventário independente atribuiu as 237 linhas originais não vazias exatamente uma vez. Quatro artigos atravessam páginas; seus fragmentos foram preservados. Os registros são normativos, **não habilidades de aprendizagem**.
 
-O cache de sete páginas foi produzido pelo pipelinev1.4/PyMuPDF1.26.7, sem warnings ou OCR pendente. Importação, finalização e evidências passaram para os 45 nós, sem órfãos ou ciclos. A reconciliação documental desse ato específico foi concluída, sem substituir a revisão curricular DCRB-EM2026 que continua pendente de aquisição. Comandos e evidências estão em `ba-resolucao249.md`, `ba-resolucao249-inventory.json` e `ba-resolucao249-verification.json`.
+O cache de sete páginas foi produzido pelo pipelinev1.4/PyMuPDF1.26.7, sem warnings ou OCR pendente. Importação, finalização e evidências passaram para os 45 nós, sem órfãos ou ciclos. O gateV2 em cache atual1.5 verificou o ato próprio45/45,49fragmentos. A dependência DCRB-EM2026 continua faltante e impede fechamento documental conjunto. Comandos e evidências estão em `ba-resolucao249.md`, `ba-resolucao249-inventory.json` e `ba-resolucao249-verification.json`.
 
 O ato é de 07/07/2026, foi homologado em 26/08/2026 e publicado em 27/08/2026. O art22 estabelece vigência na publicação; o art16 determina implementação da organização curricular a partir do ano letivo2027. A edição DCRB2022 não foi descartada com base apenas na data do ato.
 
@@ -194,6 +220,37 @@ O DCEC/RN foi adquirido integralmente após nova requisição pública, sem reso
 
 A apresentação declara que o documento complementa os referenciais EI/EF2018 e EM2021 e remete à Portaria-SEI11123/2025. O PDF declara **CC BY-NC-ND**, sem especificar versão, na página física6. As condições de atribuição, não comercialização e ausência de adaptações estão registradas no manifesto; imagens não foram incluídas nos dados estruturados. O original não é relicenciado pela licença MIT do software ou pela licença dos metadados do projeto. Alteração editorial de texto e mera mudança técnica de formato são fatos distintos.
 
-O [DOE13/12/2025](https://webdisk.diariooficial.rn.gov.br/Jornal/12025-12-13.pdf) contém a Portaria-SEI11123/2025 na páginaPDF21. O diário completo fica privado. Somente a região do ato `[28,560,395,800]` entra no corpus: a portaria anterior trata de questão disciplinar e a seguinte de outro órgão. Inspeção visual, inventário de 24 linhas, extração e importação v1.4 verificaram as 12 partes normativas do ato, sem referências a essas matérias vizinhas, órfãos, warnings ou OCR pendente. Este ato foi reconciliado; o currículo de819 páginas permanece em processamento/reconciliação.
+O [DOE13/12/2025](https://webdisk.diariooficial.rn.gov.br/Jornal/12025-12-13.pdf) contém a Portaria-SEI11123/2025 na páginaPDF21. O diário completo fica privado. Somente a região do ato `[28,560,395,800]` entra no corpus: a portaria anterior trata de questão disciplinar e a seguinte de outro órgão. Inspeção visual, inventário de 24 linhas, extração e importação v1.4 verificaram as 12 partes normativas do ato, sem referências a essas matérias vizinhas, órfãos, warnings ou OCR pendente. O gateV2 próprio em cache atual1.5 passou12/12; a dependência Parecer160/DCEC aprovado tem identidade integral não confrontada. O currículo de819páginas permanece em processamento/reconciliação.
 
 Evidências: `rn-dcec-acquisition-and-provenance.json`, `rn-portaria11123-inventory.json` e `rn-portaria11123-verification.json`. As limitações de acesso anteriores são preservadas no histórico de tentativas; não se mantêm como bloqueio atual após a aquisição bem-sucedida. PBEM continua respondendoHTML com desafio na verificação mais recente.
+
+
+Atualização de auditoria v1.4 e propostas de correção
+
+A reaplicação atual dos159 pontos inspecionou126 pontos com registros e encontrou33 ocorrências ainda sem item codificado. As comparações de célula deram108 passes literais,15 divergências e4 casos multipágina. Os quatro casos multipágina foram depois conferidos em todos os8 fragmentos: caixas físicas, redação concatenada e sequência de páginas passaram4/4 (`multipage-anchor-verification.json`). Esses resultados não concluem a reconciliação de uma UF.
+
+As33 ocorrências sem item não foram reclassificadas em bloco como referências. Nove pontos BA EI/EF têm habilidades próprias ausentes: o desenho do documento deixa aberta a borda direita da tabela e o detector omitia toda a coluna. Uma varredura das482 páginas encontrou243 páginas com fechamento dedutível dos finais repetidos das linhas horizontais, recuperando2161 células codificadas antes ausentes do detector; os9 pontos independentes passaram no teste de recuperação. Isso é proposta de correção de extração, ainda dependente de integração e reprocessamento, e não denominador final de aprendizagens.
+
+As propostas isoladas em `proposals/geometry_proposal.py` também tratam a recuperação indevida de texto posterior a listas de códigos no CE,14 células PE com dois prefixos literais para uma redação compartilhada e as grades artificiais formadas por decoração oculta no SE. Todos os códigos conjuntos PE permanecem literais do documento; não estabelecem equivalência nacional. A auditoria MA de glifos foi entregue à frente `source-audit-ma-fidelity`. O achado NUL do RN EF está somente no contexto secundário de um diagrama da página743, não no texto da habilidade EF01MA09: fonte LOVEAMY e ToUnicode inválido foram registrados em `rn-nul-secondary-context-evidence.json`; a correção autorizada é serialização reversível de metadado, sem descarte ou troca global de glifos.
+
+Os33 pontos sem item codificado têm disposição individual em `unrepresented-anchor-dispositions-v1.4.json`:9 lacunas BA por geometria,1 erro do rótulo de amostragem AL (o documento e o registro usam literalmente AL.EF05LI16),7 menções CE em colunas de relações,6 listas em organizadores MA sem redação própria naquela célula,9 pontos PB aguardando adaptador integral e1 citação explicativa PI. Classificar uma menção como referência não remove a estrutura ou parte normativa do escopo.
+
+
+Foram integradas14 partes oficiais PE atuais:12 organizadores FGB por componente e2 cadernos IFA (matrizes anexosI/II),563 páginas físicas. Os hashes, páginas, bytes, links exatos no painel oficial e inventário de partes foram revalidados. As fontes permanecem sem edição/data/aplicação inferidas; o rótulo do portal2026 está em campo separado. A extração e reconciliação desses novos documentos estão pendentes. O Caderno de Atividades Complementares42p também foi adquirido, mas sua tipologia/obrigatoriedade segue aberta no suplemento, sem exclusão silenciosa. O ato integral IN SEE/PE03/2026 e matrizes ainda não foi adquirido; há citações nos dois cadernos IFA.
+
+O adaptador PB2008 foi ligado ao manifesto após conferência do SHA final e da revisão independente:1157/1157 células físicas,103/103 objetivos EI,138/138 folhas indígenas,34/34 direitos/princípios e823/823 âncoras, sem erros. A autoridade distingue234 habilidades matemáticas com códigos literais de referências de códigos nas demais colunas. A ligação não substitui reprocessamento do cache, hierarquia documental integral ou confirmação do Ensino Médio indisponível; não há declaração de UF pronta.
+
+
+Atualização adicional de fontes: PI Computação EM137p tem edição2025 declarada na ficha catalográfica (136p impressas,137p físicas). O sumário identifica o organizador transversal por quatro áreas; a ResoluçãoCEE/PI188/2025(2p) e o Parecer190/2025(6p) foram adquiridos. Res188tem14nós públicos com OCRreal/peer visual integral e binding ativo; refresh seletivo1.5/V2 e Parecer190integral seguem pendentes. CE Matrizes2026 V2,100p, está diretamente ligada na notícia oficial preservada e declara transição escalonada por série; não substitui automaticamente o referencial anterior. Resolução CEE521/2025,26p escaneadas, foi adquirida do portal legislativo oficial e requer OCR e inventário de artigos/anexos. Nenhuma data legal foi inferida dos metadados de criação do PDF. O ato PE IN03/2026 está agora no denominador como research_pending obrigatório; a URL do artefato original é desconhecida/null, com landing separada e tentativas403 registradas.
+
+A prova MA cobre736p e1932 fragmentos codificados no extrator real:zero falhas literais e9 regressões corrigidas; isso habilitou `native_text_order=glyph_cluster_stream` nas duas fontes. No SE, o mesmo modo está restrito às21 páginas de grade revisadas e tem peer check das duas células235. Os caches produtivos integrais ainda devem ser reprocessados sob o fingerprint congelado; os testes isolados não foram publicados como cache nacional.
+
+## Quadro factual de reconciliação atualizado
+
+O [quadro por fonte e parte](evidence/source-audit-northeast/factual-coverage-current.md) distingue provas próprias V2, fechamento das dependências, sidecars auditados, fidelidade e processamento interno pendente. Os recibos V2 de BA249/RN11123/MA211/MA181 contêm45/12/19/76registros derivados de estrutura documental independente e conferidos contra o cache real1.5. SomenteMA181fecha as dependências declaradas. PEHistória93(91corpo+2contextos) ePI18814têm integração corrigida e aguardam refresh seletivo/V2. Nenhuma revisão automatizada é apresentada como revisão pedagógica humana. PB392 permanece entrega de processamento solicitada pelo usuário; edição/vigência desconhecidas e635p preservado.
+
+RNTrilhas recebeu o sidecar completo3851nós,185objetivos locais,198UC,395módulos,741cartões,2930links codificados; o peer conferiu21423fragmentos e774445glifos. O finalizador real retorna6807registros, incluindo26contextos legítimos. A autoridade disjunta suprime somente contêineres redundantes16–19e31–485, com prova de cobertura dos12375glifos16–19. O binding já entrou no FULL1.5; V2integral seguependente.
+
+PE12FGB usa o handler confiável `pe-fgb-document-roles-v1`, congelado no runtime1.5: habilidades nacionais da área e específicas preservadas, somente menções em colunas contextuais de Computação/objetos/eixos reclassificadas como referências com redação integral em contexto. O censo de481p verificou526referências literais,457menções específicas,445nacionais e60desconhecidas preservadas. Esses números são ocorrências diagnósticas, não denominador de aprendizagens.
+
+Dois atos BA adicionais foram adquiridos oficialmente e incluídos no snapshot global303: Res266/2025Computação(21p,comParecer365/2025integral) eRes125/2024HistóriaBahia(2p). A partição normativa, hierarquia e reconciliação desses23p continuam trabalho interno obrigatório. A publicação daRes266em26/03/2026 e o prazo deumano doArt20 são fatos distintos; Res125exigeHistóriaBahiaEF/EM,sem transformá-la automaticamente em componenteEI.

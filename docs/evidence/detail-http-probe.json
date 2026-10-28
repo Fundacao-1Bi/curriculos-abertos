@@ -1,0 +1,248 @@
+{
+  "producer": "scripts/domain-detail-probe.ts",
+  "started_at": "2026-10-28T13:52:14.024Z",
+  "completed_at": "2026-10-28T13:52:14.174Z",
+  "scope": "Small warm HTTP diagnostic of the exact previously slow item in two published snapshots. Not the final 10-client/200-request production performance gate; no cold-plan reproduction or causal attribution.",
+  "id": "ca:ac-cru-em:0090948210886854c3a6",
+  "publications": [
+    "ca-77fb8076598b567e1ba3",
+    "ca-77fb8076598b567e1ba3.r-1e4bc6d6-e20a-465d-b4b1-1c14a0c857ab"
+  ],
+  "database": {
+    "database": "curriculos",
+    "version": "PostgreSQL 17.11 (Debian 17.11-1.pgdg12+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit"
+  },
+  "planner_statistics": [
+    {
+      "relname": "items",
+      "n_live_tup": "117074",
+      "n_mod_since_analyze": "0",
+      "last_analyze": null,
+      "last_autoanalyze": "2026-10-28T05:41:58.073Z"
+    },
+    {
+      "relname": "publications",
+      "n_live_tup": "4",
+      "n_mod_since_analyze": "4",
+      "last_analyze": null,
+      "last_autoanalyze": null
+    },
+    {
+      "relname": "relation_members",
+      "n_live_tup": "78042",
+      "n_mod_since_analyze": "0",
+      "last_analyze": null,
+      "last_autoanalyze": "2026-10-28T05:41:58.775Z"
+    },
+    {
+      "relname": "relations",
+      "n_live_tup": "39021",
+      "n_mod_since_analyze": "0",
+      "last_analyze": null,
+      "last_autoanalyze": "2026-10-28T05:42:00.591Z"
+    }
+  ],
+  "summary": {
+    "requests": 24,
+    "concurrency": 4,
+    "failures": 0,
+    "p50_ms": 9.22183300000006,
+    "p95_ms": 47.624000000000024,
+    "max_ms": 63.71608299999997
+  },
+  "samples": [
+    {
+      "index": 0,
+      "publication": "ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "ms": 63.71608299999997,
+      "bytes": 5542,
+      "request_id": "50d5a0c4-68ce-47c2-9cc0-142d54395acf"
+    },
+    {
+      "index": 1,
+      "publication": "ca-77fb8076598b567e1ba3.r-1e4bc6d6-e20a-465d-b4b1-1c14a0c857ab",
+      "status": 200,
+      "ms": 41.486125000000015,
+      "bytes": 6055,
+      "request_id": "41596d7e-402e-483a-8918-62ba017d48fb"
+    },
+    {
+      "index": 2,
+      "publication": "ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "ms": 42.89408400000002,
+      "bytes": 5542,
+      "request_id": "a4433cb6-b947-45ff-8125-2b6af31490cf"
+    },
+    {
+      "index": 3,
+      "publication": "ca-77fb8076598b567e1ba3.r-1e4bc6d6-e20a-465d-b4b1-1c14a0c857ab",
+      "status": 200,
+      "ms": 47.624000000000024,
+      "bytes": 6055,
+      "request_id": "4b33902e-679c-453e-a8ab-8335a412a3c7"
+    },
+    {
+      "index": 4,
+      "publication": "ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "ms": 15.781874999999957,
+      "bytes": 5542,
+      "request_id": "b2fa121e-a929-4422-ada7-3be56a5d3fca"
+    },
+    {
+      "index": 5,
+      "publication": "ca-77fb8076598b567e1ba3.r-1e4bc6d6-e20a-465d-b4b1-1c14a0c857ab",
+      "status": 200,
+      "ms": 11.735874999999965,
+      "bytes": 6055,
+      "request_id": "73afabc7-5cdd-4090-9052-4238279fb6d6"
+    },
+    {
+      "index": 6,
+      "publication": "ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "ms": 13.520667000000003,
+      "bytes": 5542,
+      "request_id": "dad99888-78e9-43e0-9ce1-2193cd88b4af"
+    },
+    {
+      "index": 7,
+      "publication": "ca-77fb8076598b567e1ba3.r-1e4bc6d6-e20a-465d-b4b1-1c14a0c857ab",
+      "status": 200,
+      "ms": 7.703790999999967,
+      "bytes": 6055,
+      "request_id": "09748206-5b13-4a61-ac81-7dce40d2e897"
+    },
+    {
+      "index": 8,
+      "publication": "ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "ms": 7.868334000000004,
+      "bytes": 5542,
+      "request_id": "b230c4bb-d691-408a-a0b4-7cc721ce7358"
+    },
+    {
+      "index": 9,
+      "publication": "ca-77fb8076598b567e1ba3.r-1e4bc6d6-e20a-465d-b4b1-1c14a0c857ab",
+      "status": 200,
+      "ms": 7.491292000000044,
+      "bytes": 6055,
+      "request_id": "bd1f452f-6d43-4ee6-8c28-337384b192cf"
+    },
+    {
+      "index": 10,
+      "publication": "ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "ms": 7.035166000000004,
+      "bytes": 5542,
+      "request_id": "e5c4e2e0-b035-48ca-aa1a-1366259cccfe"
+    },
+    {
+      "index": 11,
+      "publication": "ca-77fb8076598b567e1ba3.r-1e4bc6d6-e20a-465d-b4b1-1c14a0c857ab",
+      "status": 200,
+      "ms": 6.616542000000095,
+      "bytes": 6055,
+      "request_id": "abe88a18-8ba0-4f07-ba80-1f02d669aaff"
+    },
+    {
+      "index": 12,
+      "publication": "ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "ms": 9.245249999999942,
+      "bytes": 5542,
+      "request_id": "bfd5d489-fa4a-43ea-bd1d-fa3f47f0d607"
+    },
+    {
+      "index": 13,
+      "publication": "ca-77fb8076598b567e1ba3.r-1e4bc6d6-e20a-465d-b4b1-1c14a0c857ab",
+      "status": 200,
+      "ms": 9.106792000000041,
+      "bytes": 6055,
+      "request_id": "a1703057-37cd-469f-b71a-531f573998ad"
+    },
+    {
+      "index": 14,
+      "publication": "ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "ms": 8.421917000000008,
+      "bytes": 5542,
+      "request_id": "f46eabee-c6fa-4762-8af7-fcb3f46328be"
+    },
+    {
+      "index": 15,
+      "publication": "ca-77fb8076598b567e1ba3.r-1e4bc6d6-e20a-465d-b4b1-1c14a0c857ab",
+      "status": 200,
+      "ms": 21.40962499999989,
+      "bytes": 6055,
+      "request_id": "22d8041e-74bf-4fca-b45d-00dd2f27b5bc"
+    },
+    {
+      "index": 16,
+      "publication": "ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "ms": 7.55012499999998,
+      "bytes": 5542,
+      "request_id": "c81cae74-cbc7-40a3-886e-6a61dabf2961"
+    },
+    {
+      "index": 17,
+      "publication": "ca-77fb8076598b567e1ba3.r-1e4bc6d6-e20a-465d-b4b1-1c14a0c857ab",
+      "status": 200,
+      "ms": 7.5726660000000265,
+      "bytes": 6055,
+      "request_id": "ad5ba1aa-fead-4393-a989-b0ecbe02abda"
+    },
+    {
+      "index": 18,
+      "publication": "ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "ms": 7.487582999999972,
+      "bytes": 5542,
+      "request_id": "d139be88-a74a-4bba-8022-971874d3774e"
+    },
+    {
+      "index": 19,
+      "publication": "ca-77fb8076598b567e1ba3.r-1e4bc6d6-e20a-465d-b4b1-1c14a0c857ab",
+      "status": 200,
+      "ms": 9.239416000000006,
+      "bytes": 6055,
+      "request_id": "ea83fa14-79b4-42d6-a9eb-5cd8144e1a4c"
+    },
+    {
+      "index": 20,
+      "publication": "ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "ms": 9.22183300000006,
+      "bytes": 5542,
+      "request_id": "16e535de-6281-4e64-824a-9f457dce5095"
+    },
+    {
+      "index": 21,
+      "publication": "ca-77fb8076598b567e1ba3.r-1e4bc6d6-e20a-465d-b4b1-1c14a0c857ab",
+      "status": 200,
+      "ms": 9.13595799999996,
+      "bytes": 6055,
+      "request_id": "b31ba552-9eaa-49ec-a5bf-c122a3ca4670"
+    },
+    {
+      "index": 22,
+      "publication": "ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "ms": 9.564917000000037,
+      "bytes": 5542,
+      "request_id": "acc0f434-3afc-44b5-8c16-e806f75f5c78"
+    },
+    {
+      "index": 23,
+      "publication": "ca-77fb8076598b567e1ba3.r-1e4bc6d6-e20a-465d-b4b1-1c14a0c857ab",
+      "status": 200,
+      "ms": 9.452208999999925,
+      "bytes": 6055,
+      "request_id": "1f280cad-cb30-47c0-b650-ce9f56015829"
+    }
+  ],
+  "exit_code": 0
+}

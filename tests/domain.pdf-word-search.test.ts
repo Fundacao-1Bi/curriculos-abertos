@@ -27,7 +27,7 @@ const items: Learning[] = canonical.map((text, index) => ({
  extraction_revision: 'test',
 }));
 const bundle: Bundle = {
- id: publication, schema_version: '1', created_at: '2026-10-28T00:00:00Z',
+ id: publication, schema_version: '1.0.0', created_at: '2026-10-28T00:00:00Z',
  extraction_revision: 'test', mapping_revision: 'test', sources: [source], items,
  relations: [], coverage: [], changelog: [],
 };

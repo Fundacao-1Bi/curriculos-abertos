@@ -1,0 +1,54 @@
+{
+  "actor_type": "automated",
+  "started_at": "2026-10-28T14:44:42.208Z",
+  "completed_at": "2026-10-28T14:44:44.866Z",
+  "source_tree_sha256": "0c4aa6d05b9f44eae670c76a1c15491dfd172b5316baaa34745ee36e1bc28fbc",
+  "source_tree_sha256_after": "0c4aa6d05b9f44eae670c76a1c15491dfd172b5316baaa34745ee36e1bc28fbc",
+  "artifact": "data/bundles/ca-9d9b45e82947bd8fe35c.manifest.json",
+  "method": "Read-only bounded complete verification of real shard records; invalid pins mutated only in memory; no SQL import, promotion or network request.",
+  "baseline_legacy_accepted": true,
+  "baseline": {
+    "item_count": 20612,
+    "relation_count": 2851,
+    "source_count": 269
+  },
+  "pinned_1_0_accepted": true,
+  "pinned": {
+    "item_count": 20612,
+    "relation_count": 2851,
+    "source_count": 269
+  },
+  "checks": [
+    {
+      "name": "different-version-path",
+      "rejected": true,
+      "code": "SCHEMA_VERSION_PATH_MISMATCH"
+    },
+    {
+      "name": "wrong-checksum",
+      "rejected": true,
+      "code": "SCHEMA_PIN_MISMATCH"
+    },
+    {
+      "name": "incomplete-pin",
+      "rejected": true,
+      "code": "INCOMPLETE_SCHEMA_PIN"
+    },
+    {
+      "name": "unknown-version",
+      "rejected": true,
+      "code": "UNSUPPORTED_DATA_SCHEMA"
+    },
+    {
+      "name": "unpinned-new-version",
+      "rejected": true,
+      "code": "SCHEMA_PIN_REQUIRED"
+    }
+  ],
+  "passed": true,
+  "schema_file_sha256": {
+    "1.0.0": "23d783e8be1893a25f53abfb5d8d555b686b6dc6833c7506f0faa203c4abf416",
+    "1.1.0": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df"
+  },
+  "main_publication_modified": false
+}

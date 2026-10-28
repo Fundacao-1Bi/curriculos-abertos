@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "completed_at": "2026-10-28T16:55:28.556673+00:00",
+  "scope": "private filesystem-only export of existing c2eb app container; Docker export excludes mounted volumes and runtime Config.Env",
+  "path": "var/backups/runtime-rollback-c2eb-20261028.tar.gz",
+  "mode": "0o600",
+  "bytes": 843182713,
+  "sha256": "c42d8794a2ea99bebc35c55d3777d3fa8b40122361a66d108e46706742369f15",
+  "gzip_tar_roundtrip_valid": true,
+  "entries": 49163,
+  "checked_files": {
+    "app/.next/BUILD_ID": {
+      "bytes": 21,
+      "sha256": "dc91d7351c37de0047086630f06c3647bc29b70f31705ccfd764b54aaab9a95e"
+    },
+    "app/package-lock.json": {
+      "bytes": 284349,
+      "sha256": "ad9fa270547e039d6db5d5acc3d2c556eb672f12c3250f74b9c2617e7dd38327",
+      "valid_json": true
+    },
+    "app/package.json": {
+      "bytes": 1338,
+      "sha256": "c8a81fda8c74d3d9f9dc420c571d9e789c534a9ab60d3209663d5426b2896b66",
+      "valid_json": true
+    }
+  },
+  "runtime_env_config_exported": false,
+  "mounted_exports_or_env_file_found": false,
+  "restore_import_static_config_only": true,
+  "discardable_restore_probe": {
+    "passed": true,
+    "image": "sha256:476a3bcfd997f79d685de117b120090204405afffc607cb3b0e19a80010aa69c",
+    "fingerprint": "7b664f0ed1f5bb22c5d97621d0c73837c43906dce8cc4ec0eba343acd750481e",
+    "health": {
+      "http_status": 200,
+      "body": {
+        "status": "ok",
+        "service": "curriculos-abertos",
+        "at": "2026-10-28T16:55:27.509Z"
+      }
+    },
+    "runtime_env_names": [
+      "NODE_ENV",
+      "NEXT_TELEMETRY_DISABLED",
+      "PATH"
+    ],
+    "config_exactly_static_dockerfile": true,
+    "network": "none",
+    "read_only": true,
+    "external_or_own_database_access": false,
+    "limitations": "Health and source fingerprint prove the runtime restore; database/volume recovery was verified separately on the live project."
+  },
+  "import_command": [
+    "docker",
+    "image",
+    "import",
+    "--platform",
+    "linux/arm64",
+    "--change",
+    "WORKDIR /app",
+    "--change",
+    "USER node",
+    "--change",
+    "ENV NODE_ENV=production",
+    "--change",
+    "ENV NEXT_TELEMETRY_DISABLED=1",
+    "--change",
+    "ENV PATH=/opt/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "--change",
+    "CMD [\"npm\", \"start\"]",
+    "--change",
+    "EXPOSE 3000",
+    "var/backups/runtime-rollback-c2eb-20261028.tar.gz",
+    "curriculos-abertos:rollback-restored"
+  ],
+  "cleanup": {
+    "container_stop": "Flag --time has been deprecated, use --timeout instead\ncurriculos-recovery-rollback-probe-20261028",
+    "container_remove": "curriculos-recovery-rollback-probe-20261028",
+    "temporary_image_remove": "Untagged: curriculos-abertos:rollback-restore-probe-20261028\nDeleted: sha256:476a3bcfd997f79d685de117b120090204405afffc607cb3b0e19a80010aa69c",
+    "private_archive_preserved": true,
+    "live_containers_and_snapshots_unchanged": true
+  }
+}

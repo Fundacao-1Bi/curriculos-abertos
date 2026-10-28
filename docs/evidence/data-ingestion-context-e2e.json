@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-28T15:43:30.302032+00:00",
+  "kind": "source_update_receipt_e2e",
+  "scope": "Real acquired PE official PDF plus pinned BR records exported from the actual base publication; technical workflow only, not national acceptance.",
+  "job_id": "receipt-host-context-20261028",
+  "receipt": "data/bundles/ca-1570c340fa33b9a527f3.manifest.json",
+  "receipt_sha256": "14774517994bb804d890ebf48dbef8fea8c3113e6f99bb749d397d5b08827dd3",
+  "base_publication": "ca-77fb8076598b567e1ba3",
+  "base_publication_sha256": "da8fb61ce80b2aec4a83d4f0e9cdeb306505c384315af59a76b0fc9fabc03eb0",
+  "base_artifact": "data/bundles/ingestion-context-ca77-v2/snapshot.manifest.json",
+  "base_artifact_sha256": "699286e96d4cdab29e0b748a1cec52b9b5ee9807b8a6f8b33e3b317db4fc913e",
+  "target_source_ids": [
+    "pe-historia-pernambuco-2026"
+  ],
+  "context_source_ids": [
+    "br-bncc-2018",
+    "br-bncc-computacao-2022",
+    "br-dcn-em-2024",
+    "br-ifa-parametros-2025"
+  ],
+  "validation": {
+    "artifact": "data/bundles/ca-1570c340fa33b9a527f3.manifest.json",
+    "artifact_sha256": "14774517994bb804d890ebf48dbef8fea8c3113e6f99bb749d397d5b08827dd3",
+    "format": "curriculos-abertos/sharded-v1",
+    "item_count": 1866,
+    "parts": 1,
+    "publication": "ca-1570c340fa33b9a527f3",
+    "relation_count": 0,
+    "schema_version": "1.1.0",
+    "scope": "JSON Schema, hashes, counts, source/UF/stage, references and hierarchy only; not national editorial completeness or pedagogical validation.",
+    "source_count": 5,
+    "status": "verified_integrity"
+  },
+  "completed_job_replay_same_artifact": true,
+  "latest_sha256_before": "fd42874f47facf9c9e277f67326f80b4236c476768a5b91002a9ae9b11ef19fd",
+  "latest_sha256_after": "fd42874f47facf9c9e277f67326f80b4236c476768a5b91002a9ae9b11ef19fd",
+  "public_default_modified": false,
+  "latest_unchanged": true
+}

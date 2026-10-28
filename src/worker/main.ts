@@ -6,7 +6,7 @@ import { randomUUID } from 'node:crypto';
 import { pool } from '../db/client';
 import { claimJob, enqueueJob, jobEvent, safeExportPath, type Job } from './jobs';
 import { streamExportToFile } from '../domain/stream-exports';
-import {completedIngestionCheckpoint,importPreparedIngestion} from './ingestion';
+import {completedIngestionCheckpoint,importPreparedIngestion,ensureIngestionBase,ingestionPin} from './ingestion';
 import type { Query } from '../shared/contracts';
 const owner=`worker-${randomUUID()}`;
 let stopping=false;
@@ -23,6 +23,11 @@ function terminateChild(child=activeChild){
 for(const signal of ['SIGTERM','SIGINT'] as const)process.on(signal,()=>{stopping=true;terminateChild();});
 async function runPipeline(job:Job) {
   const args=['pipeline/ingest.py',job.type==='source-check'?'sources-check':'ingest','--job-id',job.id];
+  if(job.type==='ingest'){
+    const base=await ensureIngestionBase(job,owner);
+    args.push('--base-artifact',base.artifact,'--base-publication',base.base_publication);
+    for(const id of ingestionPin(job).target_sources)args.push('--target-source-id',id);
+  }
   if(typeof job.payload.source==='string') {
     if(!/^[a-zA-Z0-9_.:-]{1,200}$/.test(job.payload.source))throw new Error('ID da fonte inválido.');
     args.push('--source',job.payload.source);

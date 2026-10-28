@@ -4,6 +4,7 @@ import collections,datetime,difflib,hashlib,json,re,sys
 from pathlib import Path
 import fitz
 ROOT=Path(__file__).resolve().parents[3];OUT=Path(__file__).resolve().parent;OUT.mkdir(parents=True,exist_ok=True)
+PRIVATE=ROOT/'var/private-evidence/source-audit-ma-fidelity';PRIVATE.mkdir(parents=True,exist_ok=True)
 if sys.version_info<(3,11)or tuple(map(int,fitz.VersionBind.split('.')[:3]))<(1,26,7):raise RuntimeError('Use patched var/venv-pipeline/bin/python')
 sys.path.insert(0,str(ROOT/'pipeline'))
 from geometry import normalize_native_page
@@ -55,7 +56,7 @@ for source in sources:
       ops=[{'tag':tag,'table':ws(table_text)[a:b],'native':ws(native)[c:d]}for tag,a,b,c,d in difflib.SequenceMatcher(None,ws(table_text),ws(native),autojunk=False).get_opcodes()if tag!='equal'];record['diff_ops']=ops
       key=(source['id'],tuple(record['zero_width_fonts']))
       if key not in sample_keys or('físicos'in native and not any(s.get('selection')=='fisicos_literal'for s in samples if s['source_id']==source['id'])):
-       sample_keys.add(key);name=f"{source['id']}-p{number}-t{ti}-r{ri}-c{ci}.png";clip=expanded+(-5,-5,5,5);page.get_pixmap(matrix=fitz.Matrix(2,2),clip=clip).save(OUT/name);samples.append({**{k:record[k]for k in['source_id','page','table','row','column','bbox','zero_width_fonts']},'image':str((OUT/name).relative_to(ROOT)),'selection':'fisicos_literal'if'físicos'in native else'font_combination','table_text':table_text,'native_text':native,'visual_status':'pending'})
+       sample_keys.add(key);name=f"{source['id']}-p{number}-t{ti}-r{ri}-c{ci}.png";clip=expanded+(-5,-5,5,5);page.get_pixmap(matrix=fitz.Matrix(2,2),clip=clip).save(PRIVATE/name);samples.append({**{k:record[k]for k in['source_id','page','table','row','column','bbox','zero_width_fonts']},'image':str((PRIVATE/name).relative_to(ROOT)),'selection':'fisicos_literal'if'físicos'in native else'font_combination','table_text':table_text,'native_text':native,'visual_status':'pending'})
   pages.append({'source_id':source['id'],'page':number,'native_text_sha256':hashlib.sha256(text.encode()).hexdigest(),'native_characters':len(text),'native_code_mentions':len(CODE_ANY.findall(text)),'trace_expansions':len(page_pseudo),'zero_width_characters':len(page_zero),'tables':len(tables),'normalization':normalization})
   if number%50==0:print(json.dumps({'source_id':source['id'],'page':number,'pages':len(document),'tables':counts['tables'],'cells':counts['nonempty_cells'],'glyph_affected_cells':counts['glyph_affected_cells']}),flush=True)
  # All cached learning excerpts are compared to original source, not sampled.

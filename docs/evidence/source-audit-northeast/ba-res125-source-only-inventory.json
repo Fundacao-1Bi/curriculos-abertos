@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-28T17:46:58.589105+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast:source_reader",
+  "source_id": "ba-resolucao-125-2024-historia",
+  "artifact_sha256": "7861ece3cb8b64980e39d5e54f1d2fcac4db0993c8c974a0d99232cb4b93d388",
+  "method": "Complete original2page visual and native reading before adapter construction. Fixed outer6articles, quoted amendedArt19,3quotedparagraphs/3stageincisos, separate Art2paragraph, legal metadata and2letterhead-footers. No generic extracted records used as denominator.",
+  "expected_documentary_records": 23,
+  "expected_normative_body_records": 21,
+  "expected_documentary_footer_records": 2,
+  "outer_article_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "quoted_article_number": 19,
+  "quoted_paragraph_numbers": [
+    1,
+    2,
+    3
+  ],
+  "quoted_stage_inciso_numbers": [
+    "I",
+    "II",
+    "III"
+  ],
+  "expected_structural_keys": [
+    "resolution-125",
+    "ementa",
+    "preamble",
+    "resolve",
+    "article-1",
+    "amended-article-19",
+    "amended-paragraph-1",
+    "amended-paragraph-2",
+    "amended-paragraph-2-inciso-I",
+    "amended-paragraph-2-inciso-II",
+    "amended-paragraph-2-inciso-III",
+    "amended-paragraph-3",
+    "article-2",
+    "article-2-paragraph",
+    "article-3",
+    "article-4",
+    "article-5",
+    "article-6",
+    "session-date",
+    "signature",
+    "homologation-publication",
+    "footer-page-1",
+    "footer-page-2"
+  ],
+  "source_pages": [
+    1,
+    2
+  ],
+  "private_visuals": [
+    {
+      "path": "var/private-evidence/source-audit-northeast/ba-res125-p1.png",
+      "sha256": "83eded102d05c0744b9680e5b2db0400de55e2002ec300a842f200c66eb89152"
+    },
+    {
+      "path": "var/private-evidence/source-audit-northeast/ba-res125-p2.png",
+      "sha256": "f65818ef56dd3182a5c373c26458881c6d4c1fb366110fb36394e6241794cb00"
+    }
+  ],
+  "pedagogical_review_status": "not_reviewed",
+  "source_scope_limit": "Only this complete act. References to earlier DCRB/acts are preserved as references, not synthetic local skills. Article3 addresses universities; stage positions for general legal-context nodes are document scope, not clause applicability."
+}

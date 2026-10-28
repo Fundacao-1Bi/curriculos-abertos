@@ -14,6 +14,10 @@ Emissores, títulos, páginas de publicação, artefatos e condições conhecida
 
 Versões exatas e dependências transitivas constam em package-lock.json. Inventário de licenças gerado em docs/evidence/dependency-licenses.json após a instalação final.
 
+As versões Python são fixadas em pipeline/requirements.txt. O inventário consultado diretamente no PyPI, com versões, licenças declaradas pelo fornecedor e vulnerabilidades informadas para cada versão, está em docs/evidence/python-dependency-audit-current.json. Os pacotes instalados conservam seus próprios avisos e arquivos de licença na distribuição Python da imagem.
+
+Pillow é usado na inspeção de linhas e colunas de imagens documentais. A versão 13.0.0 declara a licença MIT-CMU no [registro do fornecedor no PyPI](https://pypi.org/project/pillow/13.0.0/). A inspeção geométrica não altera o PDF original nem atribui significado pedagógico aos pixels.
+
 ## Processamento documental — PyMuPDF/MuPDF
 
 O worker documental utiliza PyMuPDF, distribuído pelo fornecedor sob AGPL ou contrato comercial. Esta entrega usa o componente open source e preserva a licença em LICENSES/PyMuPDF-AGPL-3.0.txt. A licença MIT do código de autoria do projeto não relicencia o parser nem elimina as condições AGPL aplicáveis à distribuição e à disponibilização em rede.

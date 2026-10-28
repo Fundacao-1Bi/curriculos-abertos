@@ -5,6 +5,7 @@ Never changes the donor, publication pointer, shards, manifest or pipeline.
 Only writes the integration proof under this adapter's evidence directory.
 """
 from pathlib import Path
+from datetime import datetime,timezone
 import argparse,collections,gzip,hashlib,json
 ROOT=Path(__file__).resolve().parents[3]
 SID='ms-projeto-vida-orientacoes-2024'
@@ -17,10 +18,11 @@ def file_sha(path):
     return h.hexdigest()
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--manifest',required=True);args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--manifest',required=True);parser.add_argument('--expected-sha256',required=True);args=parser.parse_args()
     manifestpath=Path(args.manifest)
     if not manifestpath.is_absolute():manifestpath=ROOT/manifestpath
     manifestpath=manifestpath.resolve();assert manifestpath.is_relative_to(ROOT.resolve())
+    manifestsha=file_sha(manifestpath);assert manifestsha==args.expected_sha256,'Manifest differs from the immutable candidate supplied by pipeline'
     manifest=json.loads(manifestpath.read_text());assert manifest.get('format')=='curriculos-abertos/sharded-v1'
     sidecarpath=ROOT/'data/manifests/uncoded/ms-pv-2024-items.json';sidecarsha=file_sha(sidecarpath);assert sidecarsha==EXPECTED_SIDECAR_SHA,'Sidecar changed after independent audit; re-audit before claiming integrated evidence'
     sidecar=json.loads(sidecarpath.read_text());expected={r['id']:r for r in sidecar['items']};assert len(expected)==681
@@ -72,7 +74,7 @@ def main():
     if generic_coded:failures.append({'issue':'superseded_generic_coded_rows_remain','ids':generic_coded})
     if generic_sections:failures.append({'issue':'corrupt_generic_page_sections_remain_in_adapter_scope','ids':generic_sections})
     if evidence_total!=827:failures.append({'issue':'evidence_count_mismatch','expected':827,'actual':evidence_total})
-    report={'source_id':SID,'source_artifact_sha256':sidecar['artifact_sha256'],'sidecar_path':str(sidecarpath.relative_to(ROOT)),'sidecar_sha256':sidecarsha,'manifest_path':str(manifestpath.relative_to(ROOT)),'manifest_sha256':file_sha(manifestpath),'publication_id':manifest['id'],'actor_type':'automated','actor_id':'agent:rs_adapter:ms-pv-artifact-verifier','mode':'read_only_publication_verification','expected_adapter_records':681,'matched_adapter_records':len(found),'actual_adapter_records':len(adapter_records),'total_source_records_in_publication':len(source_records),'evidence_fragments_expected':827,'evidence_fragments_actual':evidence_total,'ids_texts_codes_kinds_positions_evidence_and_parents_checks':len(checks),'missing_ids':missing,'extra_adapter_ids':extra_adapters,'superseded_generic_coded_rows':len(generic_coded),'superseded_generic_page_sections':len(generic_sections),'national_item_shards_verified':len(partchecks),'national_item_records_streamed':itemlines,'part_integrity':partchecks,'failures':failures,'status':'passed' if not failures else 'failed','scope_limit':'Proves MS organizer incorporation in this immutable candidate artifact, not database import, API/MCP journeys, all-MS foundation reconciliation, or national release readiness.'}
+    report={'source_id':SID,'source_artifact_sha256':sidecar['artifact_sha256'],'sidecar_path':str(sidecarpath.relative_to(ROOT)),'sidecar_sha256':sidecarsha,'manifest_path':str(manifestpath.relative_to(ROOT)),'manifest_sha256':manifestsha,'expected_manifest_sha256':args.expected_sha256,'publication_id':manifest['id'],'at':datetime.now(timezone.utc).isoformat(),'actor_type':'automated','actor_id':'agent:rs_adapter:ms-pv-artifact-verifier','mode':'read_only_publication_verification','expected_adapter_records':681,'matched_adapter_records':len(found),'actual_adapter_records':len(adapter_records),'total_source_records_in_publication':len(source_records),'evidence_fragments_expected':827,'evidence_fragments_actual':evidence_total,'ids_texts_codes_kinds_positions_evidence_and_parents_checks':len(checks),'missing_ids':missing,'extra_adapter_ids':extra_adapters,'superseded_generic_coded_rows':len(generic_coded),'superseded_generic_page_sections':len(generic_sections),'national_item_shards_verified':len(partchecks),'national_item_records_streamed':itemlines,'part_integrity':partchecks,'failures':failures,'status':'passed' if not failures else 'failed','scope_limit':'Proves MS organizer incorporation in this immutable candidate artifact, not database import, API/MCP journeys, all-MS foundation reconciliation, or national release readiness.'}
     out=ROOT/'docs/evidence/source-audit-ms-pv/ms-pv-2024-sharded-integration.json';out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     (out.parent/'ms-pv-2024-sharded-field-checks.json').write_text(json.dumps(checks,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({k:v for k,v in report.items() if k not in ('part_integrity','failures')},ensure_ascii=False))

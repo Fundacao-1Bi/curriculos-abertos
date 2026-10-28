@@ -1,0 +1,41 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:pe-current-inventory",
+  "source": "IN SEE/PE03/2026 and curricular matrices",
+  "status": "original_act_not_acquired",
+  "attempts": [
+    {
+      "url": "https://diariooficial.cepe.com.br/diariooficialweb/",
+      "result": "200 Angular public shell; language-loading label is client template, not a legal document."
+    },
+    {
+      "url": "https://diariooficial.cepe.com.br/diariooficial/public/home/cadernos?dataPublicacao=21%2F01%2F2026",
+      "result": "403 Forbidden; ordinary public GET route identified from official client source."
+    },
+    {
+      "url": "https://diariooficial.cepe.com.br/diariooficial/public/home/cadernos?dataPublicacao=26%2F06%2F2026",
+      "result": "403 Forbidden; no bypass attempted."
+    },
+    {
+      "method": "Browser UI fallback",
+      "result": "Local browser use disabled in Work settings."
+    },
+    {
+      "url": "https://portal.educacao.pe.gov.br/wp-json/wp/v2/media?search=NORMATIVA&per_page=100",
+      "result": "Official media search returned older2025/2024 acts; no original03/2026 located."
+    }
+  ],
+  "source_citations_obtained": [
+    {
+      "source_id": "pe-ifa-matriz-anexo-i-c4ba842e",
+      "page": 5,
+      "reference": "IN SEE/PE03/2026"
+    },
+    {
+      "source_id": "pe-ifa-matriz-anexo-ii-c6f9ef30",
+      "page": 5,
+      "reference": "IN SEE/PE03/2026"
+    }
+  ],
+  "decision": "Do not infer act publication date, repeal, global validity or mandatory scope of activity booklet from portal label or unofficial news."
+}

@@ -33,7 +33,8 @@ export async function streamExportToFile(input:Query={},format:'json'|'csv'='jso
  let client:pg.PoolClient|undefined;let recordCount=0;let manifest:Record<string,unknown>={};
  try{client=await pool.connect();await client.query('BEGIN ISOLATION LEVEL REPEATABLE READ');
  const row=(await client.query("SELECT schema_version,created_at,extraction_revision,mapping_revision,item_count,source_count,relation_count,storage_format,(payload - 'items' - 'relations') AS metadata FROM publications WHERE id=$1",[publication])).rows[0];
- const baseManifest={publication,schema_version:row.schema_version,filters:input,generated_at:row.created_at,extraction_revision:row.extraction_revision,mapping_revision:row.mapping_revision,rights:'Código MIT; textos oficiais preservam direitos dos órgãos emissores. Consulte cada fonte. CSV é uma tabela tipada de payloads JSON com neutralização de fórmulas.'};
+ const schemaPin=typeof row.metadata?.schema_path==='string'&&typeof row.metadata?.schema_sha256==='string'?{schema_path:row.metadata.schema_path,schema_sha256:row.metadata.schema_sha256}:{};
+ const baseManifest={publication,schema_version:row.schema_version,...schemaPin,filters:input,generated_at:row.created_at,extraction_revision:row.extraction_revision,mapping_revision:row.mapping_revision,rights:'Código MIT; textos oficiais preservam direitos dos órgãos emissores. Consulte cada fonte. CSV é uma tabela tipada de payloads JSON com neutralização de fórmulas.'};
  if(['panorama','comparison','analyses'].includes(String(q.view))){let report:unknown;
  if(q.view==='panorama'){if(typeof q.item_id!=='string')throw new DomainError(400,'MISSING_ITEM_ID','Panorama exige item_id.');report=await panorama(q.item_id,{...q,publication},{unpaginated:true});}
  else if(q.view==='comparison'){const ufs=Array.isArray(q.ufs)?q.ufs:String(q.ufs??'').split(',');report=await compare({...q,publication,ufs:ufs as string[]},{unpaginated:true});}

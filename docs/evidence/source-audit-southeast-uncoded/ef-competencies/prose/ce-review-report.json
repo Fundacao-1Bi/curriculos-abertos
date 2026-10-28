@@ -1,0 +1,294 @@
+{
+  "actor_type": "automated",
+  "reviewer": "ef-prose independent source review",
+  "scope": "Read-only critical review of parent extractor and independent source/inventory probes. No new competence sidecar or pipeline changes. This is not parent finalizer acceptance.",
+  "input_hashes": {
+    "data/manifests/uncoded/es-ef-competencies-extract.py": "32e019bd9b73315e1a48bc3f8ac28e3453bca99add55f5a32e7d4fe743684169",
+    "docs/evidence/source-audit-southeast-uncoded/ef-competencies/census_roles.py": "3871c247f6edef96ed33290f44ee2fa6f5713c352619ad1b7938db2f0def5208",
+    "docs/evidence/source-audit-southeast-uncoded/ef-competencies/census_structure.py": "317680b40161782e3847ef1a71c2dff8afea38e0d7883968c878fb2c22ecc575",
+    "docs/evidence/source-audit-southeast-uncoded/ef-competencies/competence-field-denominator.json": "0af1744d1a54ce37993d4eb7f0c75202f73f130e3d4e3ee206c3e05ecd7a579a"
+  },
+  "census_at_review": {
+    "positive_anchors": 4603,
+    "excluded_markers": 0
+  },
+  "cases": [
+    {
+      "source_id": "es-curr-culo-es-2020-vol-08-ensino-fundamental-anos-finais-rea-de-linguagens-arte-educa-o-f-sica-e-l-ng",
+      "artifact_sha256": "9609375a9630bc434f56f0c5ee3de908f1238b2b2c9d7e288f0f9d79264d7eee",
+      "volume": "08",
+      "page": 251,
+      "printed_page": "251",
+      "code": "CElI01",
+      "code_bbox": [
+        108.60800170898438,
+        138.9499969482422,
+        135.42800903320312,
+        149.4980010986328
+      ],
+      "native_code": "CElI01",
+      "trace_code": "CElI01",
+      "code_preserved_exact": true,
+      "current_regex_fullmatch": true,
+      "source_cell_bbox": [
+        99.50400107247489,
+        137.4233194986979,
+        365.95142691476,
+        262.6099853515625
+      ],
+      "source_cell_text": "(CElI01) Identificar o lugar de si e do outro em um mundo\nplurilíngue e multicultural, refletindo, criticamente, sobre com\naprendizagem da língua inglesa contribui para a inserção dos\nsujeitos no mundo globalizado, inclusive no que concerne ao\nmundo do trabalho.\n(CELI02) Comunicar‐se na língua inglesa, por meio do uso variado\nde linguagens em mídias impressas ou digitais, reconhecendo‐a\ncomo ferramenta de acesso ao conhecimento de ampliação das\nperspectivas e de possibilidades para a compreensão dos valores e\ninteresses de outras culturas e para o exercício do protagonismo\nsocial.",
+      "competence_excerpt": "(CElI01) Identificar o lugar de si e do outro em um mundo plurilíngue e multicultural, refletindo, criticamente, sobre com aprendizagem da língua inglesa contribui para a inserção dos sujeitos no mundo globalizado, inclusive no que concerne ao mundo do trabalho.",
+      "competence_bbox": [
+        104.9000015258789,
+        138.9499969482422,
+        362.39306640625,
+        191.7379913330078
+      ],
+      "body_native_match_whitespace_only": true,
+      "body_trace_match_whitespace_only": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "reviewed": true,
+        "raster_in_memory_only": true,
+        "raster_sha256": "683b5a33e3e9fbcd28089e2236789f1ce8e8e8971b03970a655bdf17f6453d70",
+        "raster_scale": 2,
+        "clip_bbox": [
+          89.50400107247489,
+          102.42331949869791,
+          375.95142691476,
+          267.6099853515625
+        ],
+        "observed": "Printed marker belongs to original Competências Específicas column. Canonical inline text includes the original marker; no source spelling repair/equivalence is justified."
+      }
+    },
+    {
+      "source_id": "es-curr-culo-es-2020-vol-06-ensino-fundamental-anos-finais-rea-de-ci-ncias-da-natureza-e-matem-tica-mio",
+      "artifact_sha256": "04cf2e73e969a862e1fb8f7e439844d6a7914c2e4a6501a4d32480b29377d149",
+      "volume": "06",
+      "page": 93,
+      "printed_page": "93",
+      "code": "CIEF03",
+      "code_bbox": [
+        108.36800384521484,
+        470.67999267578125,
+        137.33900451660156,
+        481.22796630859375
+      ],
+      "native_code": "CIEF03",
+      "trace_code": "CIEF03",
+      "code_preserved_exact": true,
+      "current_regex_fullmatch": true,
+      "source_cell_bbox": [
+        99.26400097933683,
+        342.04998779296875,
+        363.31145546653056,
+        546.6699829101562
+      ],
+      "source_cell_text": "(CE01) Compreender as ciências da natureza como\nempreendimento humano, e o conhecimento científico como\nprovisório, cultural e histórico.\n(CE02) Compreender conceitos fundamentais e estruturas\nexplicativas das ciências da natureza, bem como dominar\nprocessos, práticas e procedimentos da investigação científica, de\nmodo a sentir segurança no debate de questões científicas,\ntecnológicas, socioambientais e do mundo do trabalho, continuar\naprendendo e colaborar para a construção de uma sociedade justa,\ndemocrática e inclusiva.\n(CIEF03) Analisar, compreender e explicar características,\nfenômenos e processos relativos ao mundo natural, social e\ntecnológico (incluindo o digital), como também as relações que se\nestabelecem entre eles, exercitando a curiosidade para fazer\nperguntas, buscar respostas e criar soluções (inclusive\ntecnológicas) com base nos conhecimentos das Ciências da\nNatureza.",
+      "competence_excerpt": "(CIEF03) Analisar, compreender e explicar características, fenômenos e processos relativos ao mundo natural, social e tecnológico (incluindo o digital), como também as relações que se estabelecem entre eles, exercitando a curiosidade para fazer perguntas, buscar respostas e criar soluções (inclusive tecnológicas) com base nos conhecimentos das Ciências da Natureza.",
+      "competence_bbox": [
+        104.66000366210938,
+        470.67999267578125,
+        359.8900146484375,
+        544.5879516601562
+      ],
+      "body_native_match_whitespace_only": true,
+      "body_trace_match_whitespace_only": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "reviewed": true,
+        "raster_in_memory_only": true,
+        "raster_sha256": "1aacd9fcd58804b6ae014a27fd18bd2d01e08bcb3904a025481eebe23c176f66",
+        "raster_scale": 2,
+        "clip_bbox": [
+          89.26400097933683,
+          307.04998779296875,
+          373.31145546653056,
+          551.6699829101562
+        ],
+        "observed": "Printed marker belongs to original Competências Específicas column. Canonical inline text includes the original marker; no source spelling repair/equivalence is justified."
+      }
+    },
+    {
+      "source_id": "es-curr-culo-es-2019-vol-05-ensino-fundamental-anos-iniciais-rea-de-linguagens-l-ngua-portuguesa-miolo",
+      "artifact_sha256": "e0ab216989ee5c743722d00e5526629e44f7d8aa192e614ff6e37de7928857c2",
+      "volume": "05",
+      "page": 103,
+      "printed_page": "103",
+      "code": "LPEFO9",
+      "code_bbox": [
+        111.8479995727539,
+        507.15997314453125,
+        143.96002197265625,
+        517.7079467773438
+      ],
+      "native_code": "LPEFO9",
+      "trace_code": "LPEFO9",
+      "code_preserved_exact": true,
+      "current_regex_fullmatch": true,
+      "source_cell_bbox": [
+        102.74160079956054,
+        137.4219767252604,
+        364.15,
+        750.2159772600446
+      ],
+      "source_cell_text": "(LPEF01) Compreender a língua como fenômeno cultural,\nhistórico, social, variável, heterogêneo e sensível aos contextos de\nuso, reconhecendo-a como meio de construção de identidades de\nseus usuários e da comunidade a que pertencem.\n(LPEF03) Ler, escutar e produzir textos orais, escritos e\nmultissemióticos que circulam em diferentes campos de atuação\ne mídias, com compreensão, autonomia, fluência e criticidade, de\nmodo a se expressar e partilhar informações, experiências, ideias\ne sentimentos, e continuar aprendendo.\n(LPEF05) Empregar, nas interações sociais, a variedade e o estilo\nde linguagem adequados à situação comunicativa, ao(s)\ninterlocutor(es) e ao gênero do discurso/gênero textual.\n(LPEF07) Reconhecer o texto como lugar de manifestação e\nnegociação de sentidos, valores e ideologias.\n(LPEFO9) Envolver-se em práticas de leitura literária que\npossibilitem o desenvolvimento do senso estético para fruição,\nvalorizando a literatura e outras manifestações artístico-culturais\ncomo formas de acesso às dimensões lúdicas, de imaginário e\nencantamento, reconhecendo o potencial transformador e\nhumanizador da experiência com a literatura.",
+      "competence_excerpt": "(LPEFO9) Envolver-se em práticas de leitura literária que possibilitem o desenvolvimento do senso estético para fruição, valorizando a literatura e outras manifestações artístico-culturais como formas de acesso às dimensões lúdicas, de imaginário e encantamento, reconhecendo o potencial transformador e humanizador da experiência com a literatura.",
+      "competence_bbox": [
+        108.13999938964844,
+        507.15997314453125,
+        360.7149658203125,
+        570.3880004882812
+      ],
+      "body_native_match_whitespace_only": true,
+      "body_trace_match_whitespace_only": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "reviewed": true,
+        "raster_in_memory_only": true,
+        "raster_sha256": "7094fcddcb5dd93573d36f552ff7e4324489b84a59fcc2c3a6cf45407217bb6e",
+        "raster_scale": 2,
+        "clip_bbox": [
+          92.74160079956054,
+          102.42197672526041,
+          374.15,
+          755.2159772600446
+        ],
+        "observed": "Printed marker belongs to original Competências Específicas column. Canonical inline text includes the original marker; no source spelling repair/equivalence is justified."
+      }
+    },
+    {
+      "source_id": "es-curr-culo-es-2019-vol-02-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-da-natureza-e-matem-tica-m",
+      "artifact_sha256": "b989ff3253f2346b3de8dbe5548f47608e8a35d302e43c956ed38ca3e1a7e9f5",
+      "volume": "02",
+      "page": 83,
+      "printed_page": "83",
+      "code": "CIEF04",
+      "code_bbox": [
+        116.91014099121094,
+        232.40963745117188,
+        144.78713989257812,
+        242.95806884765625
+      ],
+      "native_code": "CIEF04",
+      "trace_code": "CIEF04",
+      "code_preserved_exact": true,
+      "current_regex_fullmatch": true,
+      "source_cell_bbox": [
+        108.0,
+        137.4000015258789,
+        363.23999938964846,
+        285.1714324951172
+      ],
+      "source_cell_text": "(CE03) Analisar, compreender e explicar características,\nfenômenos e processos relativos ao mundo natural, social e\ntecnológico (incluindo o digital), como também as relações que\nse estabelecem entre eles, exercitando a curiosidade para fazer\nperguntas, buscar respostas e criar soluções (inclusive\ntecnológicas) com base nos conhecimentos das ciências da\nnatureza.\n(CIEF04) Avaliar aplicações e implicações políticas,\nsocioambientais e culturais da ciência e de suas tecnologias para\npropor alternativas aos desafios do mundo contemporâneo,\nincluindo aqueles relativos ao mundo do trabalho.",
+      "competence_excerpt": "(CIEF04) Avaliar aplicações e implicações políticas, socioambientais e culturais da ciência e de suas tecnologias para propor alternativas aos desafios do mundo contemporâneo, incluindo aqueles relativos ao mundo do trabalho.",
+      "competence_bbox": [
+        113.39999389648438,
+        232.40963745117188,
+        359.8598937988281,
+        274.6380615234375
+      ],
+      "body_native_match_whitespace_only": true,
+      "body_trace_match_whitespace_only": true,
+      "visual_review": {
+        "actor_type": "automated",
+        "reviewed": true,
+        "raster_in_memory_only": true,
+        "raster_sha256": "8a8267c151c8e9c1de5bfb8e629dda20c28031ec2f6c0997e0593c865495b8a8",
+        "raster_scale": 2,
+        "clip_bbox": [
+          98.0,
+          102.4000015258789,
+          373.23999938964846,
+          290.1714324951172
+        ],
+        "observed": "Printed marker belongs to original Competências Específicas column. Canonical inline text includes the original marker; no source spelling repair/equivalence is justified."
+      }
+    }
+  ],
+  "broader_alphabet_crosscheck": {
+    "method": "Every original labelled competence/description column in all eight physical inventories scanned with broader leading [A-Za-z]{2,10}+digits; generated sidecars never read. These line hits are lexical cross-checks, not the independently glyph-bounded anchor denominator.",
+    "line_hits": 4591,
+    "literal_tokens": {
+      "CE01": 271,
+      "CE02": 438,
+      "CE03": 340,
+      "CE04": 244,
+      "CE05": 292,
+      "CE06": 229,
+      "CE07": 113,
+      "CE08": 127,
+      "CE09": 63,
+      "CE1": 11,
+      "CE10": 38,
+      "CE2": 9,
+      "CE3": 5,
+      "CE4": 5,
+      "CE5": 6,
+      "CE6": 7,
+      "CEAR01": 140,
+      "CEAR02": 71,
+      "CEAR03": 89,
+      "CEAR04": 106,
+      "CEAR05": 102,
+      "CEAR06": 30,
+      "CEAR07": 103,
+      "CEAR08": 120,
+      "CEAR09": 87,
+      "CEF03": 1,
+      "CELI01": 9,
+      "CELI02": 49,
+      "CELI03": 58,
+      "CELI04": 59,
+      "CELI05": 32,
+      "CELI06": 15,
+      "CElI01": 25,
+      "CIEF03": 1,
+      "CIEF04": 1,
+      "LPEF01": 154,
+      "LPEF010": 14,
+      "LPEF02": 153,
+      "LPEF03": 150,
+      "LPEF04": 124,
+      "LPEF05": 144,
+      "LPEF06": 118,
+      "LPEF07": 145,
+      "LPEF08": 83,
+      "LPEF09": 75,
+      "LPEF10": 134,
+      "LPEFO9": 1
+    },
+    "outside_current_identifier_regex": []
+  },
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "medium",
+      "finding": "Originally, structural expected IDs were added from the generated records themselves, limiting independence for new hierarchy nodes.",
+      "status": "corrected_in_reviewed_code",
+      "proof": "census_structure.py reads only field denominator and original inventories; verify now reads structural-denominator.json before comparing final IDs.",
+      "verified_in_current_script": true
+    },
+    {
+      "id": "R2",
+      "severity": "medium",
+      "finding": "Source table caption says Artes on vol08 p246, while the chapter is Língua Inglesa; p247 carries CELI02–06 in the continuation, so the caption conflict/context must accompany both pages.",
+      "status": "correction_visible_recheck_final_outputs_with_owner",
+      "proof_pages": [
+        246,
+        247
+      ],
+      "visual_reviewed": true,
+      "recommendation": "Preserve original caption proof from p246 and explicit chapter/banner proofs, keep conflict flag on246 and247. Owner chose conservative component:null in both; no source equivalence invented."
+    }
+  ],
+  "positive_findings": [
+    "All four requested spellings are actually printed and accepted by the current literal regex without code repair. CIEF03 and CIEF04 source volumes were corrected to06 and02 respectively.",
+    "Inline canonical text retains printed marker; separately bounded code evidence uses code_locator role. Intro descriptions omit the separate identifier-column prose while preserving independent code proof.",
+    "Physical competence-field roles limit promotion; national EF text embedded in the competence field is retained as documentary reference rather than a new competence.",
+    "No same-page chapter heading used by the current context algorithm was found below its competence anchor.",
+    "All positions intentionally leave years null; chapter/banner proof supplies component context, not national code semantics."
+  ],
+  "human_review": false,
+  "pending": "Owner must finish new extraction and whole real importer/finalizer verification; this report does not assert acceptance of unseen generated outputs."
+}

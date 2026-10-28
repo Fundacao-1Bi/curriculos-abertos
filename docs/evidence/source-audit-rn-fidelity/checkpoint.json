@@ -1,0 +1,86 @@
+{
+  "task": "RN coded text fidelity and documentary roles",
+  "actor_type": "automated",
+  "updated_at": "2026-10-28T15:07:23.634615+00:00",
+  "implemented": [
+    "source-scoped role helper",
+    "full-source code occurrence and table/card inventories",
+    "independent physical glyph witnesses",
+    "negative source-role controls",
+    "immutable parser snapshot probe",
+    "inline definition full scan"
+  ],
+  "executed": [
+    "1304 source pages",
+    "1881 baseline coded fragments",
+    "479 baseline failure IDs",
+    "765 detected tables",
+    "8639 detected nonempty cells",
+    "741 explicit reference cards",
+    "4322 literal source-code occurrences"
+  ],
+  "verified": [
+    "6528 DCEC ligature expansions paired with physical trace",
+    "48 Trilhas definition source codes and2882 card references independently localized",
+    "negative controls all pass",
+    "original sources and production caches not rewritten",
+    "4320/4320 native coded fragments literal",
+    "4322 independent source occurrences confronted; zero missing/extra/wrong role",
+    "1881 baseline cases disposed, including1402 previous literal-negative controls",
+    "773 DCEC primary records preserved,49 wordings corrected by glyph fidelity or explicit definition boundary,1 documented physical locator relocation",
+    "immutable snapshot fingerprint before/after identical",
+    "production patch git apply --check passed; no central files changed"
+  ],
+  "in_progress": null,
+  "not_claimed": [
+    "source ready",
+    "uncoded curriculum/hierarchy completeness",
+    "OCR completeness",
+    "human review",
+    "current-core FULL release approval"
+  ],
+  "external_access_blockers": [],
+  "ownership": "Only docs/evidence/source-audit-rn-fidelity and private evidence. No central pipeline or manifest edits.",
+  "front_status": "implemented_executed_verified_for_native_coded_fidelity",
+  "pending": [
+    "owner integrates source-scoped helper and native DCEC metadata",
+    "full current-core national rebuild after final freeze",
+    "OCR completeness (explicitly skipped in this probe)",
+    "uncoded objective/unit hierarchy, semantics and documentary reconciliation"
+  ],
+  "final_snapshot_fingerprint": "a3b51fb66cc94d19ff570968883c06042c4ae7328b23236a8e8032e95034d39e",
+  "independent_uncoded_peer": {
+    "owner": "rs_adapter",
+    "denominator_file": "trilhas-toc-peer-denominator.json",
+    "toc_trilhas": 33,
+    "groups": [
+      4,
+      4,
+      4,
+      6,
+      5,
+      5,
+      5
+    ],
+    "nominal_units": 198,
+    "nominal_modules": 396,
+    "body_counts_approved": false,
+    "adapter_output_read": false,
+    "full_native_extraction_repeated": false
+  },
+  "uncoded_peer": {
+    "status": "passed",
+    "sidecar_sha256": "551f90cca125541f09975b3d62f8457695a4cdc7a742f096360f609854749602",
+    "nodes": 3851,
+    "evidence_fragments": 21423,
+    "physical_cell_fragments": 2050,
+    "explicit_field_headers": 1875,
+    "independent_eligible_body_glyphs": 774445,
+    "uncovered_body_glyphs": 0,
+    "module_rails": 625,
+    "unit_rails": 329,
+    "module_keys": 395,
+    "coded_parent_selectors": 2930,
+    "source_ready": false
+  }
+}

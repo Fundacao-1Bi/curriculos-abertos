@@ -1,0 +1,79 @@
+{
+  "watched_file_sha256": {
+    "data/manifests/uncoded/ap-rca614-verify.py": "9182f8c2de271176dd8dcdfe1589f7958a9bb35ae9fdd789c7950c1d5cd0f005",
+    "data/manifests/uncoded/ap-rca614-extract.py": "c4a510f479467a83801e34292c64a86318184b7491031a0ac968030d51d82548",
+    "data/manifests/uncoded/ap-rca614-labelled.py": "693adfb04628e4c93c967b8c353763c193a52184ce0aee28ff1d0f026e67c29f",
+    "pipeline/ingest.py": "b05928403f1dedeb4aa76dea99676f00b9a65d6efbdbe3a1d63327d6ec15a93b"
+  },
+  "source_id": "ap-rca-ei-ef-mec",
+  "artifact_sha256": "23c42348e0b0e00d4135a108366141a257bec54b7b1bff79e521c822d9903f89",
+  "sidecar_sha256": "98ea0d2503f69bfd0ab488ebb87a1b606a21e39987bc51294b317dabbe814bdf",
+  "actor_type": "automated",
+  "human_pedagogical_review": false,
+  "checks": {
+    "source_sha": true,
+    "document_pages": 614,
+    "unique_keys": true,
+    "all_parents_resolved": true,
+    "ei_source_code_anchors": {
+      "expected": 93,
+      "actual": 93
+    },
+    "ei_experience_markers": {
+      "expected": 465,
+      "actual": 465
+    },
+    "ef_coded_source_anchors": {
+      "expected": 1632,
+      "actual": 1632
+    },
+    "ef_uncoded_objective": {
+      "expected": 1,
+      "actual": 1
+    },
+    "parser_warnings": [],
+    "loader": {
+      "accepted": 2441,
+      "rejected": 0,
+      "finalized": 2441,
+      "source_copy_overrides": {},
+      "legacy_metadata_validation_error": null,
+      "isolated_adapter_only": false
+    },
+    "physical_cell_reconciliation": {
+      "expected": 1638,
+      "actual": 1638,
+      "missing": [],
+      "extra": []
+    },
+    "AP_codes": {
+      "source_anchors": 373,
+      "sidecar_own_coded_records": 373
+    },
+    "inline_code_triage": [],
+    "finalizer_preservation_errors": [],
+    "sidecar_bytes_unchanged_during_check": true,
+    "schema_errors": [],
+    "age_bounds_and_evidence_errors": [],
+    "position_evidence_errors": [],
+    "source_metadata_changed_during_check": false,
+    "watched_file_mutations": []
+  },
+  "counts": {
+    "secao_normativa": 17,
+    "competencia_geral": 10,
+    "objetivo_normativo": 8,
+    "direito_aprendizagem": 6,
+    "campo_experiencia": 5,
+    "organizador_curricular": 99,
+    "objetivo_aprendizagem": 93,
+    "experiencia_aprendizagem": 465,
+    "competencia_especifica": 101,
+    "objetivo_formativo": 4,
+    "habilidade": 1633
+  },
+  "fragment_count": 4483,
+  "errors": [],
+  "loader_errors": [],
+  "does_not_claim_UF_or_edition_equivalence_acceptance": true
+}

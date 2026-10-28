@@ -1,0 +1,75 @@
+{
+  "source_id": "pa-dcepa-ei-ef",
+  "additive_sha256": "2ecc8449b8723bbc56264aa3eda770f8924bea778e79e2a9cbe762e6d06667ca",
+  "checks": [
+    {
+      "name": "positive_primary_literal_and_header",
+      "passed": true,
+      "gate": "Primary source stream plus explicit physical header"
+    },
+    {
+      "name": "one_repeated_code_occurrence_dropped_is_rejected",
+      "passed": true,
+      "gate": "Source occurrence multiset; distinct-code count alone would miss the loss"
+    },
+    {
+      "name": "merged_second_definition_text_rejected",
+      "passed": true,
+      "gate": "Primary definition boundaries at exact source code tokens"
+    },
+    {
+      "name": "full_cell_rectangle_includes_inline_neighbor_rejected",
+      "passed": true,
+      "gate": "Independent original-PDF word-center rectangle gate"
+    },
+    {
+      "name": "lost_crosspage_continuation_rejected",
+      "passed": true,
+      "gate": "All original words, including continuation135, required"
+    },
+    {
+      "name": "underscore_deletion_rejected",
+      "passed": true,
+      "gate": "Literal punctuation preserved; black underscore glyph rendered/trace-confirmed"
+    },
+    {
+      "name": "leading_hyphen_deletion_rejected",
+      "passed": true,
+      "gate": "Literal original native punctuation"
+    },
+    {
+      "name": "code_year_overrides_three_year_local_block_rejected",
+      "passed": true,
+      "gate": "Physical source board1º2º3º, not code convention"
+    },
+    {
+      "name": "code_letters_override_estudos_amazonicos_rejected",
+      "passed": true,
+      "gate": "Actual local component header, notGE code letters"
+    },
+    {
+      "name": "own_definition_demoted_to_reference_rejected",
+      "passed": true,
+      "gate": "Own Habilidades column role remains definition regardless of left-column association"
+    },
+    {
+      "name": "baseline1972_value_mutation_rejected",
+      "passed": true,
+      "gate": "Frozen baseline record prefix exact-value gate"
+    },
+    {
+      "name": "unproven_authority_gap_suppression_rejected",
+      "passed": true,
+      "gate": "Disjoint ranges must preserve89–111; broad range is not the proposal"
+    },
+    {
+      "name": "local_suffix_silently_removed_rejected",
+      "passed": true,
+      "gate": "Original literal source code, no inferred equivalence"
+    }
+  ],
+  "passed": 13,
+  "total": 13,
+  "result": "pass",
+  "method": "In-memory mutations only. Source PDF, frozen1972, manifests, core, DB and bundles unchanged. Positive primary control included."
+}

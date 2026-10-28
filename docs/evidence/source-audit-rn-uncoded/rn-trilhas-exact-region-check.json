@@ -1,0 +1,73 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:rn-exact-region-check",
+  "source_id": "rn-trilhas-aprofundamento",
+  "source_sha256": "fac7333112fcfaac3d99d74f72f206bea8e9a4b256e770a9ea0f2eace99b027a",
+  "sidecar_sha256": "551f90cca125541f09975b3d62f8457695a4cdc7a742f096360f609854749602",
+  "method": "Every evidence bbox selects original native glyph clusters by physical glyph center, independently of whole-page substring. Whole-region equality is checked first, then physical x order for split text objects. Overlapping font boxes are verified against one unique actual glyph baseline and all overlaps are recorded. No dictionary/wording replacement, bbox repair or paint-visibility claim.",
+  "counts": {
+    "fragments": 21423,
+    "exact_native_region_matches": 20565,
+    "physical_glyph_cluster_order_matches": 855,
+    "overlapping_baseline_region_matches": 3
+  },
+  "overlapping_regions": [
+    {
+      "key": "uc-p338:field:p339:c0:raw11",
+      "fragment": 50,
+      "page": 339,
+      "bbox": [
+        473.3166809082031,
+        530.4961547851562,
+        700.6024169921875,
+        542.3905639648438
+      ],
+      "expected": "vE&ab_channel=MPB%3A%3AAsMelhores%21",
+      "all_native_text_in_box": "vE&ab_channel=MPB%3A%3AAsMelhores%21 \nGênero, Sexualidade e Saúde:",
+      "matched_original_baseline": {
+        "baseline": 540.47,
+        "text": "vE&ab_channel=MPB%3A%3AAsMelhores%21 "
+      },
+      "disposition": "Original font bbox contains neighboring baseline; target glyphs verified without cropping, deleting or merging neighboring content."
+    },
+    {
+      "key": "uc-p366:field:p366:c1:raw88",
+      "fragment": 0,
+      "page": 366,
+      "bbox": [
+        499.35357666015625,
+        272.1688537597656,
+        741.7184448242188,
+        287.97406005859375
+      ],
+      "expected": "Sugestões de Avaliação Processual",
+      "all_native_text_in_box": "inário;\nSugestões de Avaliação Processual",
+      "matched_original_baseline": {
+        "baseline": 284.72,
+        "text": "Sugestões de Avaliação Processual"
+      },
+      "disposition": "Original font bbox contains neighboring baseline; target glyphs verified without cropping, deleting or merging neighboring content."
+    },
+    {
+      "key": "uc-p422",
+      "fragment": 3,
+      "page": 422,
+      "bbox": [
+        60.71207809448242,
+        167.5484619140625,
+        392.33526611328125,
+        199.16294860839844
+      ],
+      "expected": "Podem Te Dar Uma Luz!",
+      "all_native_text_in_box": "Podem Te Dar Uma Luz!\nFísica e Matemátic",
+      "matched_original_baseline": {
+        "baseline": 192.65,
+        "text": "Podem Te Dar Uma Luz!"
+      },
+      "disposition": "Original font bbox contains neighboring baseline; target glyphs verified without cropping, deleting or merging neighboring content."
+    }
+  ],
+  "failure_count": 0,
+  "failures": [],
+  "source_ready": false
+}

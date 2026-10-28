@@ -921,6 +921,7 @@
       "Arte",
       "Educação Física",
       "Língua Inglesa",
+      "Língua Espanhola",
       "Matemática",
       "Ciências",
       "Geografia",
@@ -958,6 +959,12 @@
         "page": 3,
         "section": "Identificação documental",
         "excerpt": " \n \n \n3 \n \n \n \n \nCURRÍCULO DE  \nREFERÊNCIA DE  \nMATO GROSSO  \nDO SUL \nEDUCAÇÃO INFANTIL E  \nENSINO FUNDAMENTAL \n \n \n \n \n \n \n \n \n \n \n \n \nORGANIZADORES \n \nHelio Queiroz Daher \nKalícia de Brito França \nManuelina Martins da Silva Arantes Cabral \n \nSED-MS \n2020 \n"
+      },
+      {
+        "page": 17,
+        "section": "Sumário dos componentes EF",
+        "excerpt": "LÍNGUA ESPANHOLA",
+        "verification": "Capítulo obrigatório confirmado no original; quadros de habilidades singular Habilidade naspáginas421–444. Não excluído por diferir dos nove componentes usuais."
       }
     ],
     "document_verification": {
@@ -1043,7 +1050,44 @@
         "actor_type": "automated",
         "actor_id": "agent:data_central_south"
       }
-    ]
+    ],
+    "stage_component_inventory": {
+      "EI": [
+        "O eu, o outro e o nós",
+        "Corpo, gestos e movimentos",
+        "Traços, sons, cores e formas",
+        "Escuta, fala, pensamento e imaginação",
+        "Espaços, tempos, quantidades, relações e transformações"
+      ],
+      "EF": [
+        "Língua Portuguesa",
+        "Arte",
+        "Educação Física",
+        "Língua Inglesa",
+        "Língua Espanhola",
+        "Matemática",
+        "Ciências",
+        "Geografia",
+        "História",
+        "Ensino Religioso"
+      ]
+    },
+    "native_text_order": "glyph_cluster_stream",
+    "native_text_order_evidence": {
+      "artifact_sha256": "176d738032cba747e02e1ce2c73bb1a7e8d2d0e1d7f875340a2215e599e37271",
+      "method": "rs-ms-physical-learning-columns-v1.0.0",
+      "actor_type": "automated",
+      "actor_id": "agent:data_central_south + agent:df_digital",
+      "verification_path": "docs/evidence/source-audit-central-south/rs-ms-helper-full-verification.json",
+      "independent_verification_path": "docs/evidence/source-audit-rs-ms-independent/frozen-output-independent-verification.json",
+      "scope": "Every extracted learning fragment checked against original native glyph stream, independent original anchor/position inventories and targeted real-PDF renders; no dictionary substitution."
+    },
+    "adapter_authority": {
+      "preserve_explicit_positions": true,
+      "method": "rs-ms-physical-learning-columns-v1.0.0",
+      "artifact_sha256": "176d738032cba747e02e1ce2c73bb1a7e8d2d0e1d7f875340a2215e599e37271",
+      "verification_path": "docs/evidence/source-audit-rs-ms-independent/frozen-output-independent-verification.json"
+    }
   },
   {
     "id": "ms-cr-em-v11",
@@ -1213,6 +1257,18 @@
         "response_sha256": "5ed457ad656caf2ed3879ad61e54852fa904710696ac25ee5e5df7f695391a16",
         "response_prefix": "<!DOCTYPE html>\r\n<html lang=\"pt-BR\">\r\n\r\n<head><script src=\"/common.js?matcher\"></script><script src=\"/common.js?single\"></script>\r\n    <meta charset=\"utf-8\">\r\n    <meta http-equiv=",
         "result": "not_pdf"
+      },
+      {
+        "url": "https://www.sed.ms.gov.br/wp-content/uploads/2025/10/PROJETO-DE-VIDA-Ementa-Nucleo-Integrador-2023.v.1.0.pdf",
+        "at": "2026-10-28T13:51:17.579061+00:00",
+        "method": "Ordinary official attachment link; no query changes, no access-control workaround",
+        "final_url": "https://www.sed.ms.gov.br/wp-content/uploads/2025/10/PROJETO-DE-VIDA-Ementa-Nucleo-Integrador-2023.v.1.0.pdf/",
+        "status": 200,
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 609771,
+        "sha256": "7b97a55ba4899c146c000ccf62eff2b948bd71575cff7e291eb4639af7dbae01",
+        "pdf_magic": false,
+        "cache_path": "data/raw/MS/ms2023-final-retry-response.html"
       }
     ],
     "mandatory": true,
@@ -1223,7 +1279,8 @@
       "url": "https://www.sed.ms.gov.br/wp-json/wp/v2/media?search=PROJETO-DE-VIDA-Ementa&per_page=20",
       "media_id": 80798,
       "source_url": "https://www.sed.ms.gov.br/wp-content/uploads/2025/10/PROJETO-DE-VIDA-Ementa-Nucleo-Integrador-2023.v.1.0.pdf"
-    }
+    },
+    "processing_error": "Official attachment page still links mandatory2023PDF; ordinary direct request redirected to trailing-slash HTML homepage, HTTP200 text/html, not PDF. Last retry evidence docs/evidence/source-audit-central-south/ms2023-final-retry.json. No cause attributed to CAPTCHA/WAF."
   },
   {
     "id": "pr-referencial-em-2021",
@@ -1787,11 +1844,15 @@
       "method": "conferência de identificação, sumário e componentes; não reconciliação integral",
       "at": "2026-10-28T03:40:39.937771+00:00"
     },
-    "uncoded_items_path": "data/manifests/uncoded/sc-em-items.json",
+    "uncoded_items_path": "data/manifests/uncoded/sc-hierarchy-sc-cb-em-caderno-2.json",
     "uncoded_adapter": {
-      "method": "sc-explicit-em-objective-lists-v1.0.0",
+      "path": "data/manifests/uncoded/sc-hierarchy-sc-cb-em-caderno-2.json",
+      "method": "Literal source objective/skill extraction plus documented SC heading hierarchy; canonical leaf fields unchanged",
       "actor_type": "automated",
-      "scope": "Habilidades adicionais da consulta pública FGB e listas explícitas de objetivos de curso/unidade das eletivas; outras partes permanecem pendentes."
+      "actor_id": "agent:pr_adapter + agent:data_central_south",
+      "scope": "4 folhas originais preservadas integralmente e 2 nós estruturais com rótulos literais; não reconciliação integral da fonte/UF.",
+      "verification_path": "docs/evidence/source-audit-sc-hierarchy/actual-importer-finalizer-verification.json",
+      "sha256": "e554c874a6bc5d1ab41f273ea94cb0796dbc8de3d15945bfa65e01836f98e0d9"
     }
   },
   {
@@ -1845,13 +1906,15 @@
       "method": "conferência de identificação, sumário e componentes; não reconciliação integral",
       "at": "2026-10-28T03:40:40.289203+00:00"
     },
-    "uncoded_items_path": "data/manifests/uncoded/sc-trilhas-all-items.json",
+    "uncoded_items_path": "data/manifests/uncoded/sc-hierarchy-sc-cb-em-caderno-3.json",
     "uncoded_adapter": {
-      "method": "sc-trilhas-labelled-objectives-v1.0.0 + sc-trilhas-explicit-skill-columns-v1.0.0",
+      "path": "data/manifests/uncoded/sc-hierarchy-sc-cb-em-caderno-3.json",
+      "method": "Literal source objective/skill extraction plus documented SC heading hierarchy; canonical leaf fields unchanged",
       "actor_type": "automated",
-      "actor_id": "agent:data_central_south",
-      "scope": "1157registros:46 sob33cabeçalhos explícitos +1111 nas colunas/linhas explícitas de habilidades,22continuações físicas revisadas; palavras-chave/subtítulos/fragmentos incompletos possuem tipos separados. Demais partes exigem reconciliação integral.",
-      "verification_path": "docs/evidence/source-audit-sc/all-record-literal-validation.json"
+      "actor_id": "agent:pr_adapter + agent:data_central_south",
+      "scope": "1157 folhas originais preservadas integralmente e 273 nós estruturais com rótulos literais; não reconciliação integral da fonte/UF.",
+      "verification_path": "docs/evidence/source-audit-sc-hierarchy/actual-importer-finalizer-verification.json",
+      "sha256": "d9d270d4e1ea3ded6dd27f691c66e8a9a0c5c987559389a41ded0ca462c0037c"
     }
   },
   {
@@ -1905,11 +1968,15 @@
       "method": "conferência de identificação, sumário e componentes; não reconciliação integral",
       "at": "2026-10-28T03:40:40.616290+00:00"
     },
-    "uncoded_items_path": "data/manifests/uncoded/sc-em-items.json",
+    "uncoded_items_path": "data/manifests/uncoded/sc-hierarchy-sc-cb-em-caderno-4.json",
     "uncoded_adapter": {
-      "method": "sc-explicit-em-objective-lists-v1.0.0",
+      "path": "data/manifests/uncoded/sc-hierarchy-sc-cb-em-caderno-4.json",
+      "method": "Literal source objective/skill extraction plus documented SC heading hierarchy; canonical leaf fields unchanged",
       "actor_type": "automated",
-      "scope": "Habilidades adicionais da consulta pública FGB e listas explícitas de objetivos de curso/unidade das eletivas; outras partes permanecem pendentes."
+      "actor_id": "agent:pr_adapter + agent:data_central_south",
+      "scope": "400 folhas originais preservadas integralmente e 170 nós estruturais com rótulos literais; não reconciliação integral da fonte/UF.",
+      "verification_path": "docs/evidence/source-audit-sc-hierarchy/actual-importer-finalizer-verification.json",
+      "sha256": "0ef3a1d0a0c56d934374b5dd89bfaac807517baf37f080ffd09ae56756c8f4d8"
     }
   },
   {
@@ -1984,11 +2051,15 @@
       "method": "conferência de identificação, sumário e componentes; não reconciliação integral",
       "at": "2026-10-28T03:40:41.099476+00:00"
     },
-    "uncoded_items_path": "data/manifests/uncoded/sc-eief-items.json",
+    "uncoded_items_path": "data/manifests/uncoded/sc-hierarchy-sc-cb-eief-2019-atual.json",
     "uncoded_adapter": {
-      "method": "sc-explicit-skill-columns-v1.1.0",
+      "path": "data/manifests/uncoded/sc-hierarchy-sc-cb-eief-2019-atual.json",
+      "method": "Literal source objective/skill extraction plus documented SC heading hierarchy; canonical leaf fields unchanged",
       "actor_type": "automated",
-      "scope": "Colunas explícitas HABILIDADES/OBJETIVOS nos organizadores curriculares; contexto normativo fora das tabelas permanece pendente de reconciliação."
+      "actor_id": "agent:pr_adapter + agent:data_central_south",
+      "scope": "1202 folhas originais preservadas integralmente e 912 nós estruturais com rótulos literais; não reconciliação integral da fonte/UF.",
+      "verification_path": "docs/evidence/source-audit-sc-hierarchy/actual-importer-finalizer-verification.json",
+      "sha256": "310111ae9f18732fd6a815ca2d903802a72f74ee6faf9cbb4e9306c694524255"
     }
   },
   {
@@ -2004,7 +2075,7 @@
     "components": [
       "Língua Inglesa"
     ],
-    "edition": null,
+    "edition": "2026",
     "document_date": null,
     "homologation_date": null,
     "application_period": null,
@@ -2017,7 +2088,7 @@
     "sha256": "3d9c5785a8ab77e944d4ceb3377a0465978d8e92a42bcaa06ea3cd47dfbad2c0",
     "local_path": "data/raw/SC/sc-lingua-inglesa-ai.pdf",
     "status": "acquired",
-    "inventory_status": "components_identified_reconciliation_pending",
+    "inventory_status": "whole_source_v2_independent31pages362records_verified",
     "required": true,
     "bytes": 3051174,
     "pages": 31,
@@ -2028,32 +2099,142 @@
     "mandatory": true,
     "include_in_corpus": true,
     "validity_status": "edition_consulted_validity_requires_documentary_confirmation",
-    "reconciled": false,
+    "reconciled": true,
     "inventory_evidence": [
       {
         "page": 9,
         "section": "Sumário",
         "excerpt": "1. LÍNGUA INGLESA ................................................................................................\n10\n1.1 A construção coletiva do currículo de língua inglesa: Anos\nIniciais do Ensino Fundamental (1º ao 5º Ano) .................................................\n10\n1.2 BNCC e CBTC no Ensino Fundamental ..........................................................\n10\n1.3 Competências específicas de língua inglesa para o Ensino\nFundamental .........................................................................................................................\n11\nREFERÊNCIAS .........................................................................................................\n12\nAPÊNDICE A - Língua Inglesa - unidades temáticas, objetos de\nconhecimento e habilidades dos anos iniciais do Ensino\nFundamental .........................................................................................................................\n13\nSUMÁRIO"
+      },
+      {
+        "page": 1,
+        "section": "Capa2026",
+        "excerpt": "2026",
+        "verification": "Visible original cover and native titlepage3 establish2026edition; not inferred from URL/upload. Native cover-layer truncation resolved by real bound rasterOCR."
+      },
+      {
+        "page": 13,
+        "section": "Competências e eixos",
+        "excerpt": "1.3 Competências específicas de língua inglesa para o Ensino Fundamental",
+        "verification": "Sixnumberedcompetences and fiveaxisdefinitions fully typed; no invented BNCCcodes."
       }
     ],
     "document_verification": {
       "actor_type": "automated",
-      "actor": "data_central_south",
-      "method": "conferência de identificação, sumário e componentes; não reconciliação integral",
-      "at": "2026-10-28T03:40:41.286279+00:00"
+      "actor_id": "agent:data_central_south",
+      "method": "All31physicalpages inventoried;78learningcells143paragraphs2729nativewords,6competences5axisdefinitions25axisoccurrences and full-page text checked against actual original. Whole original hierarchy independently derived; real extraction/importer/finalizer362/362,0missing/extra/parents. Four blankpages and graphics-onlybackcover inspected; actual rasterOCR used for cover-text defect and backcover check.",
+      "at": "2026-10-28T16:35:09.670033+00:00",
+      "evidence_path": "docs/evidence/source-audit-sc-li-complete/full-verification.json",
+      "v2_evidence_path": "docs/evidence/source-audit-sc-li-complete/v2-gate-verification.json"
     },
-    "uncoded_items_path": "data/manifests/uncoded/sc-eief-items.json",
+    "uncoded_items_path": "data/manifests/uncoded/sc-li-ai-complete-items.json",
     "uncoded_adapter": {
-      "method": "sc-explicit-skill-columns-v1.1.0",
+      "path": "data/manifests/uncoded/sc-li-ai-complete-items.json",
+      "sha256": "c5174064be009c797ec13334ff07894b552eac421f89184c7df9ff851701f904",
+      "method": "sc-li-ai-full-document-v1.0.0",
       "actor_type": "automated",
-      "scope": "Colunas explícitas HABILIDADES/OBJETIVOS nos organizadores curriculares; contexto normativo fora das tabelas permanece pendente de reconciliação."
+      "actor_id": "agent:data_central_south",
+      "scope": "Whole31-page original:143skills unchanged,6numberedcompetences,5axisdefinitions25axisoccurrences,foundations,references,authorship,indices and sourcearea/cover;338adapterrecords+24documentarypageitems,362expected/verified. No UF readiness or human pedagogical review.",
+      "verification_path": "docs/evidence/source-audit-sc-li-complete/full-verification.json"
+    },
+    "native_text_order": "glyph_cluster_stream",
+    "structure_sections": [
+      {
+        "title": "Língua Inglesa – Anos Iniciais",
+        "page_start": 1,
+        "page_end": 14,
+        "stage": "EF",
+        "component": "Língua Inglesa",
+        "area": "Linguagens",
+        "years": null,
+        "year_label": null,
+        "age_group": null,
+        "period": null
+      },
+      {
+        "title": "Organizador curricular Língua Inglesa – 1º ano",
+        "page_start": 15,
+        "page_end": 17,
+        "stage": "EF",
+        "component": "Língua Inglesa",
+        "area": "Linguagens",
+        "years": [
+          1
+        ],
+        "year_label": "1º ANO",
+        "age_group": null,
+        "period": null
+      },
+      {
+        "title": "Organizador curricular Língua Inglesa – 2º ano",
+        "page_start": 18,
+        "page_end": 20,
+        "stage": "EF",
+        "component": "Língua Inglesa",
+        "area": "Linguagens",
+        "years": [
+          2
+        ],
+        "year_label": "2º ANO",
+        "age_group": null,
+        "period": null
+      },
+      {
+        "title": "Organizador curricular Língua Inglesa – 3º ano",
+        "page_start": 21,
+        "page_end": 23,
+        "stage": "EF",
+        "component": "Língua Inglesa",
+        "area": "Linguagens",
+        "years": [
+          3
+        ],
+        "year_label": "3º ANO",
+        "age_group": null,
+        "period": null
+      },
+      {
+        "title": "Organizador curricular Língua Inglesa – 4º ano",
+        "page_start": 24,
+        "page_end": 26,
+        "stage": "EF",
+        "component": "Língua Inglesa",
+        "area": "Linguagens",
+        "years": [
+          4
+        ],
+        "year_label": "4º ANO",
+        "age_group": null,
+        "period": null
+      },
+      {
+        "title": "Organizador curricular Língua Inglesa – 5º ano",
+        "page_start": 27,
+        "page_end": 29,
+        "stage": "EF",
+        "component": "Língua Inglesa",
+        "area": "Linguagens",
+        "years": [
+          5
+        ],
+        "year_label": "5º ANO",
+        "age_group": null,
+        "period": null
+      }
+    ],
+    "reconciliation_evidence_path": "data/manifests/reconciliation/sc-lingua-inglesa-ai.json",
+    "native_text_order_evidence": {
+      "artifact_sha256": "3d9c5785a8ab77e944d4ceb3377a0465978d8e92a42bcaa06ea3cd47dfbad2c0",
+      "actor_type": "automated",
+      "actor_id": "agent:data_central_south",
+      "verification_path": "docs/evidence/source-audit-sc-li-complete/full-verification.json"
     }
   },
   {
     "id": "sc-resolucao-070-2025",
     "uf": "SC",
     "title": "Resolução 2025/070/CEE/SC – Organização e oferta do Ensino Médio",
-    "issuer": "Secretaria de Estado da Educação de Santa Catarina",
+    "issuer": "Conselho Estadual de Educação de Santa Catarina",
     "official_url": "https://www.cee.sc.gov.br/index.php/downloads/documentos-diversos/curriculo-base-do-territorio-catarinense/",
     "artifact_url": "https://www.cee.sc.gov.br/index.php/downloads/documentos-diversos/curriculo-base-do-territorio-catarinense/2959-resolucao-2025-070-cee-sc-8/file",
     "stages": [
@@ -2063,9 +2244,9 @@
       "Organização e oferta do Ensino Médio"
     ],
     "edition": "2025",
-    "document_date": null,
+    "document_date": "2025-11-25",
     "homologation_date": null,
-    "application_period": null,
+    "application_period": "Implementação efetiva a partir do ano letivo de2026 (Art.24).",
     "document_type": "normativo",
     "normative_parts": [
       "Organização e oferta do Ensino Médio"
@@ -2075,7 +2256,7 @@
     "sha256": "433db1cefebb78c76a65072ff838fc1999284f0677a724c7355d3347bc8452e6",
     "local_path": "data/raw/SC/sc-resolucao-070-2025.pdf",
     "status": "acquired",
-    "inventory_status": "components_identified_reconciliation_pending",
+    "inventory_status": "whole_source_v2_independent18pages27articles5chapters53records_verified",
     "required": true,
     "bytes": 265617,
     "pages": 18,
@@ -2085,8 +2266,8 @@
     "attempts": [],
     "mandatory": true,
     "include_in_corpus": true,
-    "validity_status": "edition_consulted_validity_requires_documentary_confirmation",
-    "reconciled": false,
+    "validity_status": "act_date_and_application_clause_verified_publication_date_unknown",
+    "reconciled": true,
     "inventory_evidence": [
       {
         "page": 2,
@@ -2097,9 +2278,28 @@
     "document_verification": {
       "actor_type": "automated",
       "actor": "data_central_south",
-      "method": "conferência de identificação, sumário e componentes; não reconciliação integral",
-      "at": "2026-10-28T03:40:41.387739+00:00"
-    }
+      "method": "Full original18-page/27-article/5-chapter inventory, all18Poppler renders, all53records exactUTF8primary-text hashes, actual importer/finalizer and whole_source V2 gate; no cryptographic-signature claim.",
+      "at": "2026-10-28T17:08:48.781331+00:00",
+      "evidence_path": "docs/evidence/source-audit-sc/sc-res070-v2-gate-verification.json"
+    },
+    "uncoded_items_path": "data/manifests/uncoded/sc-res070-items.json",
+    "native_text_order": "glyph_cluster_stream",
+    "structure_sections": [
+      {
+        "title": "Organização e oferta do Ensino Médio",
+        "page_start": 1,
+        "page_end": 18,
+        "stage": "EM",
+        "component": "Organização e oferta do Ensino Médio",
+        "area": null,
+        "years": null,
+        "year_label": null,
+        "age_group": null,
+        "period": null,
+        "position_origin": "explicit_source_legal_scope",
+        "position_note": "Legal organization/offering rules; no grade or learning objective inferred."
+      }
+    ]
   },
   {
     "id": "sc-parecer-446-2025",
@@ -2127,7 +2327,7 @@
     "sha256": "a21825e9fa87d637f8c86665896651b1075d86fe2051fdb7cef89a8198cb932f",
     "local_path": "data/raw/SC/sc-parecer-446-2025.pdf",
     "status": "acquired",
-    "inventory_status": "components_identified_reconciliation_pending",
+    "inventory_status": "whole_source_v2_independent5pages6sections_verified",
     "required": true,
     "bytes": 180903,
     "pages": 5,
@@ -2138,7 +2338,7 @@
     "mandatory": true,
     "include_in_corpus": true,
     "validity_status": "edition_consulted_validity_requires_documentary_confirmation",
-    "reconciled": false,
+    "reconciled": true,
     "inventory_evidence": [
       {
         "page": 1,
@@ -2148,10 +2348,33 @@
     ],
     "document_verification": {
       "actor_type": "automated",
-      "actor": "data_central_south",
-      "method": "conferência de identificação, sumário e componentes; não reconciliação integral",
-      "at": "2026-10-28T03:40:41.426054+00:00"
-    }
+      "actor_id": "agent:data_central_south",
+      "method": "Five original PDF pages and six sections independently inventoried; all page tokens/multiplicity, literal evidence, documentary types and derived IDs verified, not cryptographic signature validation",
+      "at": "2026-10-28T13:50:04.210526+00:00",
+      "evidence_path": "docs/evidence/source-audit-sc/sc-parecer-reconciliation-verification.json",
+      "v2_evidence_path": "docs/evidence/source-audit-sc/sc-parecer-v2-gate-verification.json"
+    },
+    "structure_sections": [
+      {
+        "title": "Organização e oferta do Ensino Médio",
+        "page_start": 1,
+        "page_end": 5,
+        "stage": "EM",
+        "component": "Organização e oferta do Ensino Médio",
+        "area": null,
+        "years": null,
+        "year_label": null,
+        "age_group": null,
+        "period": null,
+        "evidence": {
+          "source_id": "sc-parecer-446-2025",
+          "page": 1,
+          "section": "OBJETO",
+          "excerpt": "Regulamentação da organização e oferta do Ensino Médio no Sistema Estadual de Educação de Santa Catarina"
+        }
+      }
+    ],
+    "native_text_order": "glyph_cluster_stream"
   },
   {
     "id": "ms-educacao-digital-v13",
@@ -2993,7 +3216,7 @@
     "sha256": "61ce27903cc1e113a8b9e282c207cce6de6a275847dc935adc052b8417b744c7",
     "local_path": "data/raw/DF/df-competencias-digitais-vol2.pdf",
     "status": "acquired",
-    "inventory_status": "components_identified_reconciliation_pending",
+    "inventory_status": "all_native_pages_context_and_graphic_cover_verified_independent_organizer_id_union_pending",
     "required": true,
     "bytes": 3079664,
     "pages": 77,
@@ -3015,9 +3238,20 @@
     "document_verification": {
       "actor_type": "automated",
       "actor": "data_central_south",
-      "method": "conferência de identificação, sumário e componentes; não reconciliação integral",
-      "at": "2026-10-28T03:40:48.566788+00:00"
-    }
+      "method": "All217physicalpages processed with real1.5core, every canonical record literal, all211native whole-page record IDs and exacttexts independently derived; original1565organizer records preserved and172contexts added. Covers verified by real regionOCR/render, no wholeSource promotion before independent organizer-ID denominator.",
+      "at": "2026-10-28T17:28:59.033473+00:00",
+      "evidence_path": "docs/evidence/source-audit-df-digital/whole-source-actual-core-import-verification.json"
+    },
+    "uncoded_items_path": "data/manifests/uncoded/df-digital-complete-context-df-competencias-digitais-vol2.json",
+    "uncoded_adapter": {
+      "method": "df-digital-three-axis-column-source-adapter",
+      "actor_type": "automated",
+      "actor_id": "agent:data_central_south/df_digital",
+      "scope": "Objetivos literais dos organizadores EI/EF relacionados na fonte aos três eixos;1190objetivos+375nós nas2fontes, todas23977palavras de783células e194continuações verificadas. Não equivalência automática com BNCC; demais partes fora dos quadros pendentes.",
+      "sha256": "eaf5647402002573828836e30af8cd68db419586f3eaba391f0278b9199b58f8",
+      "verification_path": "docs/evidence/source-audit-df-digital/pipeline-import-verification.json"
+    },
+    "native_text_order": "glyph_cluster_stream"
   },
   {
     "id": "df-competencias-digitais-vol3",
@@ -3045,7 +3279,7 @@
     "sha256": "39e5f657705d0db6866e8966302ca00cc2eea697e40715d5aac209b9aed7aedd",
     "local_path": "data/raw/DF/df-competencias-digitais-vol3.pdf",
     "status": "acquired",
-    "inventory_status": "components_identified_reconciliation_pending",
+    "inventory_status": "all_native_pages_context_and_graphic_cover_verified_independent_organizer_id_union_pending",
     "required": true,
     "bytes": 2342075,
     "pages": 140,
@@ -3067,9 +3301,20 @@
     "document_verification": {
       "actor_type": "automated",
       "actor": "data_central_south",
-      "method": "conferência de identificação, sumário e componentes; não reconciliação integral",
-      "at": "2026-10-28T03:40:48.766380+00:00"
-    }
+      "method": "All217physicalpages processed with real1.5core, every canonical record literal, all211native whole-page record IDs and exacttexts independently derived; original1565organizer records preserved and172contexts added. Covers verified by real regionOCR/render, no wholeSource promotion before independent organizer-ID denominator.",
+      "at": "2026-10-28T17:28:59.033473+00:00",
+      "evidence_path": "docs/evidence/source-audit-df-digital/whole-source-actual-core-import-verification.json"
+    },
+    "uncoded_items_path": "data/manifests/uncoded/df-digital-complete-context-df-competencias-digitais-vol3.json",
+    "uncoded_adapter": {
+      "method": "df-digital-three-axis-column-source-adapter",
+      "actor_type": "automated",
+      "actor_id": "agent:data_central_south/df_digital",
+      "scope": "Objetivos literais dos organizadores EI/EF relacionados na fonte aos três eixos;1190objetivos+375nós nas2fontes, todas23977palavras de783células e194continuações verificadas. Não equivalência automática com BNCC; demais partes fora dos quadros pendentes.",
+      "sha256": "eaf5647402002573828836e30af8cd68db419586f3eaba391f0278b9199b58f8",
+      "verification_path": "docs/evidence/source-audit-df-digital/pipeline-import-verification.json"
+    },
+    "native_text_order": "glyph_cluster_stream"
   },
   {
     "id": "df-competencias-digitais-vol4",
@@ -3260,8 +3505,47 @@
         ],
         "actor_type": "automated",
         "actor_id": "agent:data_central_south"
+      },
+      {
+        "id": "rcg-ei-bncc-column-declared-age-field-convention",
+        "pattern": "^(EI\\d{2}(?:EO|CG|TS|EF|ET)\\d{2})$",
+        "position_from_national_code": true,
+        "origin": "regra_explicada_fonte",
+        "scope": "Position-only rule for unchanged codes in the original BNCC column. The same source legend pp84–85 explicitly defines01/02/03agegroups and field symbols; no local year or pedagogical equivalence inferred. No national_code_group/relation_type added by this rule.",
+        "evidence": {
+          "source_id": "rs-rcg-ei-2018",
+          "page": 84,
+          "printed_page": "84",
+          "section": "Organização dos objetivos e código alfanumérico",
+          "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+        },
+        "supporting_evidence": [
+          {
+            "source_id": "rs-rcg-ei-2018",
+            "page": 85,
+            "printed_page": "85",
+            "section": "Convenção do código",
+            "excerpt": " 85 \n \n \n \n \n \n  \n- O segundo par de letras indica um dos Campos de Experiências: EO = \nO Eu, o Outro e o Nós; CG = Corpo, Gestos e Movimentos; TS = Traços, Sons, \nCores e Formas; EF = Escuta, Fala, Pensamento e Imaginação; ET = Espaços, \nTempos, Quantidades, Relações e Transformações. \n- Os dois números seguintes indicam a posição do Objetivo na numeração \nsequencial do Campo de Experiências para cada grupo etário; no entanto a \nsequência dos códigos alfanuméricos não sugere ordem ou hierarquia entre os \nobjetivos de aprendizagem e desenvolvimento. \n-  O terceiro par de letras (RS) indica o Estado do Rio Grande do Sul. \n- Os dois últimos números indicam a posição do objetivo na numeração \ndo Campo de Experiências para cada grupo/faixa etária dentro do território \ngaúcho. \n"
+          }
+        ]
       }
-    ]
+    ],
+    "native_text_order": "glyph_cluster_stream",
+    "native_text_order_evidence": {
+      "artifact_sha256": "8396c57829603eb037b1a72bebde39662a6db137ad90ac5a0abfbafd4fe091a2",
+      "method": "rs-ms-physical-learning-columns-v1.0.0",
+      "actor_type": "automated",
+      "actor_id": "agent:data_central_south + agent:df_digital",
+      "verification_path": "docs/evidence/source-audit-central-south/rs-ms-helper-full-verification.json",
+      "independent_verification_path": "docs/evidence/source-audit-rs-ms-independent/frozen-output-independent-verification.json",
+      "scope": "Every extracted learning fragment checked against original native glyph stream, independent original anchor/position inventories and targeted real-PDF renders; no dictionary substitution."
+    },
+    "adapter_authority": {
+      "preserve_explicit_positions": true,
+      "method": "rs-ms-physical-learning-columns-v1.0.0",
+      "artifact_sha256": "8396c57829603eb037b1a72bebde39662a6db137ad90ac5a0abfbafd4fe091a2",
+      "verification_path": "docs/evidence/source-audit-rs-ms-independent/frozen-output-independent-verification.json"
+    }
   },
   {
     "id": "sc-cb-em-caderno-5",
@@ -3856,7 +4140,7 @@
     "sha256": "eff8fcd19d69b1f5d614cbb2ca1599d98e11c697772084b56694a142fecf7048",
     "local_path": "data/raw/MS/ms-orientacoes-projeto-vida-2024.pdf",
     "status": "acquired",
-    "inventory_status": "components_identified_reconciliation_pending",
+    "inventory_status": "three_organizer_parts_reconciled_narrative_and_references_pending",
     "required": true,
     "bytes": 16730022,
     "pages": 127,
@@ -3920,6 +4204,22 @@
       "method": "ms-pv-2024-physical-cells-glyphtrace-v1.0.0",
       "actor_type": "automated",
       "scope": "681records:141habilidades,226pilares,226objetos,73quadros,12anos e3etapas. Denominadorindependente73/141/226/48; glifos visiveis e oclusao por pintura verificados. Positions do adapter preservadas; sem override global por pagina."
+    },
+    "stage_component_inventory": {
+      "EF": [
+        "Projeto de Vida"
+      ],
+      "EM": [
+        "Projeto de Vida"
+      ]
+    },
+    "reconciliation_evidence_path": "data/manifests/reconciliation/ms-projeto-vida-orientacoes-2024.json",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "agent:data_central_south",
+      "method": "Three organizer parts completely reconciled from independent original73tables141skills226pillars226objects census; every681record imported and independent508checks passed. Narrative1–49 and closing/references126–127 remain pending.",
+      "at": "2026-10-28T15:59:02.019690+00:00",
+      "evidence_path": "docs/evidence/source-audit-central-south/ms-pv-organizer-reconciliation-verification.json"
     }
   }
 ]

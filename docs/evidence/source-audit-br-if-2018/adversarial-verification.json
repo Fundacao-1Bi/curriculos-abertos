@@ -1,0 +1,34 @@
+{
+  "adapter_sha256": "92e202363a9ef23f735bf227a8205616e978140f9e0b497531354485461f623d",
+  "source_adapter_unchanged": true,
+  "tests": [
+    {
+      "case": "omit_last_skill",
+      "rejected": true
+    },
+    {
+      "case": "alter_last_skill_text",
+      "rejected": true
+    },
+    {
+      "case": "alias_chsa_to_chs",
+      "rejected": true
+    },
+    {
+      "case": "reclassify_formative_goal_as_learning",
+      "rejected": true
+    },
+    {
+      "case": "alter_goal_accent",
+      "rejected": true
+    },
+    {
+      "case": "omit_context",
+      "rejected": true
+    }
+  ],
+  "passed": 6,
+  "failed": 0,
+  "skipped": 0,
+  "policy": "Only isolated temporary copies were mutated; every corruption was rejected; canonical adapter untouched."
+}

@@ -1,0 +1,35 @@
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+{"time": "2026-10-28T14:42:22.297095+00:00", "event": "extract_progress", "source_id": "rn-trilhas-aprofundamento", "page": 50, "pages": 485, "items": 120}
+{"time": "2026-10-28T14:42:24.840094+00:00", "event": "extract_progress", "source_id": "rn-trilhas-aprofundamento", "page": 100, "pages": 485, "items": 345}
+{"time": "2026-10-28T14:42:26.968853+00:00", "event": "extract_progress", "source_id": "rn-trilhas-aprofundamento", "page": 150, "pages": 485, "items": 581}
+{"time": "2026-10-28T14:42:28.937324+00:00", "event": "extract_progress", "source_id": "rn-trilhas-aprofundamento", "page": 200, "pages": 485, "items": 797}
+{"time": "2026-10-28T14:42:31.305465+00:00", "event": "extract_progress", "source_id": "rn-trilhas-aprofundamento", "page": 250, "pages": 485, "items": 1193}
+{"time": "2026-10-28T14:42:34.356692+00:00", "event": "extract_progress", "source_id": "rn-trilhas-aprofundamento", "page": 300, "pages": 485, "items": 1571}
+{"time": "2026-10-28T14:42:37.897427+00:00", "event": "extract_progress", "source_id": "rn-trilhas-aprofundamento", "page": 350, "pages": 485, "items": 1941}
+{"time": "2026-10-28T14:42:41.490495+00:00", "event": "extract_progress", "source_id": "rn-trilhas-aprofundamento", "page": 400, "pages": 485, "items": 2275}
+{"time": "2026-10-28T14:42:44.782061+00:00", "event": "extract_progress", "source_id": "rn-trilhas-aprofundamento", "page": 450, "pages": 485, "items": 2635}
+{"time": "2026-10-28T14:42:47.055289+00:00", "event": "extract_complete", "source_id": "rn-trilhas-aprofundamento", "pages": 485, "items": 3393, "warnings": 0}
+{"time": "2026-10-28T14:42:54.461990+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 50, "pages": 819, "items": 0}
+{"time": "2026-10-28T14:43:06.220560+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 100, "pages": 819, "items": 109}
+{"time": "2026-10-28T14:43:24.156462+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 150, "pages": 819, "items": 279}
+{"time": "2026-10-28T14:43:39.496324+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 200, "pages": 819, "items": 416}
+{"time": "2026-10-28T14:43:51.961676+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 250, "pages": 819, "items": 469}
+{"time": "2026-10-28T14:44:06.903914+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 300, "pages": 819, "items": 585}
+{"time": "2026-10-28T14:44:20.514795+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 350, "pages": 819, "items": 720}
+{"time": "2026-10-28T14:44:37.667455+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 400, "pages": 819, "items": 786}
+{"time": "2026-10-28T14:44:57.040831+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 450, "pages": 819, "items": 939}
+{"time": "2026-10-28T14:45:13.104027+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 500, "pages": 819, "items": 1052}
+{"time": "2026-10-28T14:45:28.756955+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 550, "pages": 819, "items": 1107}
+{"time": "2026-10-28T14:45:43.574874+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 600, "pages": 819, "items": 1149}
+{"time": "2026-10-28T14:45:57.501227+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 650, "pages": 819, "items": 1205}
+{"time": "2026-10-28T14:46:07.137205+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 700, "pages": 819, "items": 1256}
+{"time": "2026-10-28T14:46:22.534185+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 750, "pages": 819, "items": 1308}
+{"time": "2026-10-28T14:46:41.357107+00:00", "event": "extract_progress", "source_id": "rn-dcec-computacao", "page": 800, "pages": 819, "items": 1373}
+Traceback (most recent call last):
+  File "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/docs/evidence/source-audit-rn-fidelity/rn-isolated-pipeline-probe.py", line 24, in <module>
+    cache=ROOT/'data/extracted'/f'{source["sha256"]}-page-cell-v1.4.0.json';before=digest(cache);result=namespace['extract_pdf'](source,ROOT/source['local_path'],force=True);after=digest(cache)
+                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/pipeline/ingest.py", line 599, in extract_pdf
+    if page_number % 50 == 0: log('extract_progress',source_id=source['id'],page=page_number,pages=len(document),items=len(items))
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Parser files changed during extraction; prior completed cache preserved. Restart and retry this source.

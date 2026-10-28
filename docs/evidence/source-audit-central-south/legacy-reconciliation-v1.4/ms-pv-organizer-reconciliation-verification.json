@@ -1,0 +1,66 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:data_central_south",
+  "source_id": "ms-projeto-vida-orientacoes-2024",
+  "artifact_sha256": "eff8fcd19d69b1f5d614cbb2ca1599d98e11c697772084b56694a142fecf7048",
+  "extraction_revision": "page-cell-v1.4.0",
+  "adapter_sha256": "77eb9feaa003382a73741f36f3379d83aa945debae1cd128b7ad95513e781f08",
+  "independent_denominator_sha256": "752bdad091299b98be4a6ff2ebe51d1409ee11021840e311af8a34643da69541",
+  "expected_id_derivation": "Public structural grammar: stagekey; {ef|em}-year-{year}; table-p{page}; skill-p{page}-r{physical_row}; pillar-p{page}-r{row}-n{pillar}; objects-p{page}-r{row}-n{pillar}. No adapter IDs consulted before expectation construction.",
+  "parts": [
+    {
+      "name": "Organizador curricular - Ensino Fundamental Anos Iniciais",
+      "expected_records": 245,
+      "verified_records": 245,
+      "source_tables": 27,
+      "source_physical_skills": 44,
+      "source_pillars": 84,
+      "source_objects": 84,
+      "source_years": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "name": "Organizador curricular - Ensino Fundamental Anos Finais",
+      "expected_records": 207,
+      "verified_records": 207,
+      "source_tables": 20,
+      "source_physical_skills": 36,
+      "source_pillars": 73,
+      "source_objects": 73,
+      "source_years": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "name": "Organizador curricular - Ensino Medio",
+      "expected_records": 229,
+      "verified_records": 229,
+      "source_tables": 26,
+      "source_physical_skills": 61,
+      "source_pillars": 69,
+      "source_objects": 69,
+      "source_years": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "records_expected": 681,
+  "records_imported": 681,
+  "unresolved_parent_ids": [],
+  "independent_checks": 508,
+  "independent_failed_checks": 0,
+  "pending_real_parts": [
+    "Concepcao, pilares, estrategias e orientacoes pedagogicas: substantive narrative1–49 and remaining references/closing126–127 require original-glyph/documentary review."
+  ],
+  "uf_ready_claim": false
+}

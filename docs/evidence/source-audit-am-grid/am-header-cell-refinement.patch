@@ -1,0 +1,85 @@
+--- a/pipeline/am_ocr_grid.py
++++ b/pipeline/am_ocr_grid.py
+@@ -22,7 +22,7 @@
+ import unicodedata
+ from pathlib import Path
+ 
+-REVISION='am-raster-grid-tsv-v1.1.2'
++REVISION='am-raster-grid-tsv-v1.2.0'
+ SUPPORTED={'am-rca-ei','am-rca-ef-ai','am-rca-ef-af','am-rca-em'}
+ TOKEN=re.compile(r'\(([^()\s]{5,40})\)')
+ CODELIKE=re.compile(r'(?:E[IL1][O0I1LZ23]{2,3}[A-Z0-9]{3,7}|EF[O0I1L2-9SZGB]{2}[A-Z0-9]{4,7}|EM[O0I1L2-9SZGB]{2}[A-Z0-9]{4,9})(?:-AM)?$',re.I)
+@@ -121,6 +121,49 @@
+     body={'configuration':config,'words':words,'words_sha256':hashlib.sha256(json.dumps(words,sort_keys=True,separators=(',',':')).encode()).hexdigest()}
+     temporary=path.with_suffix('.tmp');temporary.write_text(json.dumps(body,ensure_ascii=False,sort_keys=True));temporary.replace(path)
+     return words,{'cache_key':key,'cache_hit':False,'configuration':config}
++
++
++
++def _read_header_cell_role(source,page_number,image,scale,column,ocr):
++    """Classify the actual colored header cell, including centered-code tables."""
++    from PIL import Image,ImageOps,ImageChops
++    left,right=column;x0=max(0,int(left*scale)+4);x1=min(image.width,int(right*scale)-4)
++    cap=min(image.height,int(ocr['layout_rect'][3]*.32*scale))
++    search=image.crop((x0,0,x1,cap));red,green,blue=search.split()
++    high=ImageChops.lighter(ImageChops.lighter(red,green),blue);low=ImageChops.darker(ImageChops.darker(red,green),blue)
++    saturation=ImageChops.subtract(high,low).point(lambda value:255 if value>40 else 0)
++    active=[y for y in range(cap)if saturation.crop((0,y,saturation.width,y+1)).histogram()[255]>saturation.width*.55]
++    if not active:return [],{'status':'colored_header_region_not_confirmed','column':column}
++    top=min(active);bottom=max(active)+1;bounds=[x0,top,x1,bottom]
++    crop=ImageOps.autocontrast(image.crop(bounds).convert('L'))
++    config={'revision':'am-single-colored-header-cell-proposal-v2','source_sha256':source['sha256'],'page':page_number,'bbox_pixels':bounds,'header_region_method':'colored_row_support>.55;channel_spread>40;upper_page_32_percent','pixel_sha256':hashlib.sha256(crop.tobytes()).hexdigest(),'OCR_configuration':ocr['configuration'],'Pillow':Image.__version__,'modes':['gray','binary140'],'PSM':6}
++    key=hashlib.sha256(json.dumps(config,sort_keys=True,separators=(',',':')).encode()).hexdigest()
++    root=Path(__file__).resolve().parents[1];directory=root/'var/private-evidence/source-audit-am-grid/header-cell-cache';directory.mkdir(parents=True,exist_ok=True);path=directory/f'{key}.json'
++    record=json.loads(path.read_text())if path.exists()else None
++    if record is not None and record.get('configuration')!=config:raise RuntimeError('AM header-cell cache configuration mismatch')
++    if record is None:
++        variants=[]
++        with tempfile.TemporaryDirectory(prefix='curriculos-AM-header-cell-')as temporary:
++            for mode in('gray','binary140'):
++                rendered=crop if mode=='gray'else crop.point(lambda value:255 if value>140 else 0)
++                name=Path(temporary)/f'{mode}.png';rendered.save(name)
++                result=subprocess.run([shutil.which('tesseract')or'tesseract',str(name),'stdout','-l',ocr['configuration']['language'],'--psm','6'],capture_output=True,timeout=20,env={**os.environ,'OMP_THREAD_LIMIT':'1'})
++                if result.returncode or len(result.stdout)>100000:raise RuntimeError('Scoped AM header OCR failed or exceeded bound')
++                variants.append({'mode':mode,'text':result.stdout.decode('utf-8')})
++        record={'configuration':config,'variants':variants};temporary=path.with_suffix('.tmp');temporary.write_text(json.dumps(record,ensure_ascii=False,sort_keys=True));temporary.replace(path)
++    matching=[]
++    for variant in record['variants']:
++        words=variant['text'].split()
++        for index in range(len(words)):
++            for length in(1,2,3):
++                raw_words=words[index:index+length]
++                if _header_is_learning(''.join(raw_words)):matching.append({'raw_words':raw_words,'mode':variant['mode']})
++    proof={'source_id':source['id'],'artifact_sha256':source['sha256'],'page':page_number,'header_bbox':[x0/scale,top/scale,x1/scale,bottom/scale],'column':column,'configuration':config,'proof_path':str(path.relative_to(root)),'proof_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'matches':matching,'official_body_text_rewritten':False}
++    if not matching:return [],proof
++    exact=next((match for match in matching if len(match['raw_words'])==1 and _normal(match['raw_words'][0])=='habilidades'),matching[0])
++    box=proof['header_bbox']
++    word={'x0':box[0],'top':box[1],'x1':box[2],'bottom':box[3],'text':''.join(exact['raw_words']),'block':-3,'paragraph':1,'line':1,'bbox_kind':'OCR_header_region_not_individual_glyph_box','role_evidence':proof}
++    return [word],proof
+ 
+ 
+ def raster_grid(source,page_number,page,ocr,anchors):
+@@ -161,10 +204,13 @@
+                 columns.append((left['x'],right['x']))
+     columns=sorted(set(columns))
+     header_learning=[w for w in header_words if _header_is_learning(w['text'])]
+-    rejected_columns=[]
++    rejected_columns=[];header_cell_proofs=[]
+     if source['id']in('am-rca-ef-ai','am-rca-ef-af'):
+         accepted=[]
+         for column in columns:
++            if not any(column[0]<(w['x0']+w['x1'])/2<column[1]for w in header_learning):
++                role_words,role_proof=_read_header_cell_role(source,page_number,image,scale,column,ocr)
++                header_words.extend(role_words);header_learning.extend(role_words);header_cell_proofs.append(role_proof)
+             if any(column[0]<(w['x0']+w['x1'])/2<column[1]for w in header_learning):accepted.append(column)
+             else:rejected_columns.append(column)
+         columns=accepted
+@@ -179,7 +225,7 @@
+             box=strip.getbbox()
+             if box:last.append((top+box[3]+30)/scale)
+         if last:table_bottom=sorted(last)[len(last)//2]+1
+-    return {'columns':[list(c)for c in columns],'rejected_non_learning_columns':rejected_columns,'header_learning_words':header_learning,'header_words':header_words,'header_proof':header_proof,'table_bottom':table_bottom,'vertical_rules':boundaries,'raster_sha256':hashlib.sha256(pixmap.samples).hexdigest(),'raster_dimensions':[pixmap.width,pixmap.height],'method':'source_raster_long_rules_no_synthetic_edges','engine':{'rasterizer':f'PyMuPDF {pymupdf.VersionBind}','raster_geometry':f'Pillow {Image.__version__}'},'opening_half_span_pixels':30,'pixel_thresholds':{'dark':145,'channel_spread':40,'filled_row_ratio':.45}}
++    return {'columns':[list(c)for c in columns],'rejected_non_learning_columns':rejected_columns,'header_learning_words':header_learning,'header_words':header_words,'header_proof':header_proof,'header_cell_role_proofs':header_cell_proofs,'table_bottom':table_bottom,'vertical_rules':boundaries,'raster_sha256':hashlib.sha256(pixmap.samples).hexdigest(),'raster_dimensions':[pixmap.width,pixmap.height],'method':'source_raster_long_rules_no_synthetic_edges','engine':{'rasterizer':f'PyMuPDF {pymupdf.VersionBind}','raster_geometry':f'Pillow {Image.__version__}'},'opening_half_span_pixels':30,'pixel_thresholds':{'dark':145,'channel_spread':40,'filled_row_ratio':.45}}
+ 
+ 
+ def _explicit_position(source,page_number,words,column,stage):

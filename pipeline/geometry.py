@@ -5,6 +5,7 @@ All coordinates refer to the displayed PDF page after remove_rotation().
 """
 from __future__ import annotations
 import re
+import unicodedata
 
 
 def words_from_page(page):
@@ -79,23 +80,36 @@ def recover_missing_columns(source,page_number,page,words,tables,existing,code_r
         center=((word['x0']+word['x1'])/2,(word['top']+word['bottom'])/2)
         represented=False
         for item in existing:
-            if not item.get('code') or not item['code'].startswith(code):continue
-            bbox=item['evidence'][0].get('bbox')
-            if bbox and bbox[0]-2<=center[0]<=bbox[2]+2 and bbox[1]-2<=center[1]<=bbox[3]+2:
+            item_code=re.sub(r'\s+','',item.get('code') or '')
+            word_code=re.sub(r'\s+','',code)
+            bboxes=[e.get('bbox') for e in item['evidence'] if e.get('page')==page_number and e.get('bbox')]
+            contains_anchor=any(bbox[0]-2<=center[0]<=bbox[2]+2 and bbox[1]-2<=center[1]<=bbox[3]+2 for bbox in bboxes)
+            joint={re.sub(r'\s+','',value) for value in (item.get('source_context') or {}).get('joint_source_codes',[])}
+            if contains_anchor and (word_code in joint or (item_code and item_code!=word_code and word_code in re.sub(r'\s+','',item.get('text','')))):
+                represented=True;break
+            go_wrapped_equivalent=source.get('id')=='go-dcgoem-portal-atual' and item_code.startswith('GO') and item_code[2:].lstrip('-.')==word_code
+            if not item_code or not (item_code.startswith(word_code) or go_wrapped_equivalent):continue
+            if contains_anchor:
                 represented=True;break
         if represented:continue
         boxes=[]
         for table_index,table in enumerate(tables):
             extracted_rows=table.extract()
             learning_columns=learning_column_indices(table,extracted_rows)
+            contextual_columns=contextual_column_indices(table,extracted_rows)
             if source.get('id')=='pb-proposta-ei-ef' and not learning_columns:continue
             for row_index,row in enumerate(table.rows):
                 for cell_index,box in enumerate(row.cells):
+                    if cell_index in contextual_columns or (cell_index not in learning_columns and contextual_cell_role(extracted_rows[row_index],cell_index)):continue
                     if learning_columns and cell_index not in learning_columns:continue
                     if box and box[0]-1<=center[0]<=box[2]+1 and box[1]-1<=center[1]<=box[3]+1:
                         boxes.append((box,table.bbox,table_index,row_index,cell_index))
         if not boxes:continue
         box,tablebox,ti,ri,ci=min(boxes,key=lambda value:(value[0][2]-value[0][0])*(value[0][3]-value[0][1]))
+        from ne_geometry import cell_recovery_is_reference
+        code_only_cell=cell_recovery_is_reference(page,box,code_re)
+        ei_bottom_placeholder=code.startswith('EI') and word['bottom']>=tablebox[3]-25
+        if code_only_cell and not ei_bottom_placeholder:continue
         left,right=box[0],box[2]
         # A merged cell spanning other code columns cannot merge their prose.
         neighbours=[other['x0'] for other,other_code in anchors if other['x0']>word['x0']+40 and abs(other['top']-word['top'])<30 and other['x0']<right]
@@ -150,12 +164,40 @@ def normalize_native_page(page):
 
 def learning_column_indices(table,rows):
     """A merged full-table heading applies to every covered child column."""
-    columns=set();width=table.bbox[2]-table.bbox[0]
+    columns=set();broad=False;width=table.bbox[2]-table.bbox[0]
     for row_index,row in enumerate(rows[:4]):
         for cell_index,value in enumerate(row):
-            if not value or not re.match(r'^(?:OBJETIVOS(?: DE APRENDIZAGEM)?|HABILIDADES)(?:$|[ /\n])',value.strip(),re.IGNORECASE):continue
+            classifier=''.join(ch for ch in (value or '') if unicodedata.category(ch)!='Cf').strip()
+            if not classifier or not re.match(r'^(?:OBJETIVOS?(?: DE APRENDIZAGEM)?|HABILIDADES?)(?:$|[ /\n])',classifier,re.IGNORECASE):continue
             box=table.rows[row_index].cells[cell_index]
             if box and box[2]-box[0]>.8*width and sum(bool(cell) for cell in row)==1:
-                columns.update(range(max(len(r) for r in rows)))
+                broad=True
             else:columns.add(cell_index)
-    return columns
+    return columns or (set(range(max(len(r) for r in rows))) if broad else set())
+
+
+def contextual_column_indices(table,rows):
+    """Explicit context headings cannot define new learning occurrences."""
+    roles={};width=table.bbox[2]-table.bbox[0]
+    for row_index,row in enumerate(rows[:4]):
+        for index,value in enumerate(row):
+            if index in roles or not value:continue
+            box=table.rows[row_index].cells[index]
+            if box and box[2]-box[0]>.8*width and sum(bool(cell) for cell in row)==1:continue
+            header=' '.join(unicodedata.normalize('NFKD',value).encode('ascii','ignore').decode().split()).rstrip(':')
+            if len(header)>180:continue
+            if re.fullmatch(r'(?:HABILIDADES?|OBJETIVOS?(?: DE APRENDIZAGEM(?: E DESENVOLVIMENTO)?)?)',header,re.IGNORECASE):roles[index]='learning'
+            elif is_contextual_label(header):roles[index]='context'
+    return {index for index,role in roles.items() if role=='context'}
+
+
+def is_contextual_label(value):
+    header=' '.join(unicodedata.normalize('NFKD',value or '').encode('ascii','ignore').decode().split()).rstrip(':')
+    if len(header)>180:return False
+    return bool(re.fullmatch(r'(?:OBJETOS?(?: DE)? CONHECIMENTO|EXPLICACOES?(?: DA HABILIDADE)?|EXPLICACAO(?: DA HABILIDADE)?|SUGESTOES?(?: DE (?:ATIVIDADES|PRATICAS|ABORDAGEM)| METODOLOGICAS| DIDATICAS)?|ORIENTACOES?(?: DIDATICAS| METODOLOGICAS| DIDATICO-METODOLOGICAS)?|TEMAS(?: INTEGRADORES(?: E INTERDISCIPLINARIDADE)?| TRANSVERSAIS| CONTEMPORANEOS TRANSVERSAIS)?|INTERDISCIPLINARIDADE|RELACAO (?:ENTRE COMPONENTES|DENTRO DO PROPRIO COMPONENTE)|COMENTARIOS?)',header,re.IGNORECASE))
+
+
+def contextual_cell_role(row,index):
+    """Field/value organizers can place objects and skills in the same column."""
+    if index and any(is_contextual_label(value) for value in row[:index] if value):return True
+    return False

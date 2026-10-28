@@ -1,0 +1,69 @@
+[
+  {
+    "page": 1,
+    "role": "cover",
+    "status": "ocr_completed",
+    "text": "PROPOSTA\nTS CURRICULAR\n» DO ESTADO\n48 DA PARAÍBA\nEDUCAÇÃO INFANTIL E ENSINO FUNDAMENTAL",
+    "words": 14,
+    "method": "tesseract-tsv-por",
+    "private_reference": "data/raw/PB/pb-cedoc-ocr-1.json",
+    "private_reference_sha256": "02767be68731fe5ae7b6bfb59b5067f83bb39c203d39c4efb66e08b461751435",
+    "warnings": [
+      {
+        "issue": "ocr_orientation_inconclusive",
+        "status": "requires_documentary_review",
+        "page": 1
+      },
+      {
+        "page": 1,
+        "issue": "ocr_engine_diagnostic",
+        "detail": "Detected 15 diacritics\n"
+      },
+      {
+        "page": 1,
+        "issue": "ocr_low_confidence_words",
+        "count": 4,
+        "denominator": 14,
+        "status": "requires_documentary_review"
+      }
+    ],
+    "not_a_structured_learning": true,
+    "visual_review": {
+      "reviewer_type": "automated_agent",
+      "rendered_original_viewed": true,
+      "finding": "Cover title explicitly reads Proposta Curricular do Estado da Paraíba — Educação Infantil e Ensino Fundamental; no visible edition year. OCR symbol noise is retained as raw output, not canonical title.",
+      "image_path": "var/private-evidence/source-audit-cedoc-ap-pb/pb-cedoc-metadata-page-001.png",
+      "at": "2026-10-28T14:22:00.081581+00:00"
+    }
+  },
+  {
+    "page": 392,
+    "role": "back_cover",
+    "status": "ocr_completed",
+    "text": "",
+    "words": 0,
+    "method": "tesseract-tsv-por",
+    "private_reference": "data/raw/PB/pb-cedoc-ocr-392.json",
+    "private_reference_sha256": "15de75cfdc82ff6d5cd7c8f15329ac8bdd38687c7f021471c9dd8a6f96115c72",
+    "warnings": [
+      {
+        "issue": "ocr_orientation_inconclusive",
+        "status": "requires_documentary_review",
+        "page": 392
+      },
+      {
+        "page": 392,
+        "issue": "ocr_no_words",
+        "status": "source_page_requires_review"
+      }
+    ],
+    "not_a_structured_learning": true,
+    "visual_review": {
+      "reviewer_type": "automated_agent",
+      "rendered_original_viewed": true,
+      "finding": "Back cover contains only decorative color geometry; no curricular text visible.",
+      "image_path": "var/private-evidence/source-audit-cedoc-ap-pb/pb-cedoc-metadata-page-392.png",
+      "at": "2026-10-28T14:22:00.081711+00:00"
+    }
+  }
+]

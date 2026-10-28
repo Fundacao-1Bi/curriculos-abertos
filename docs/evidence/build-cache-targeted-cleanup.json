@@ -1,0 +1,427 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-10-28T13:57:41.101Z",
+  "completed_at": "2026-10-28T13:57:48.496Z",
+  "scope": "only explicitly identified obsolete project cache COPY layers and their private RUN/chown children",
+  "documentation": "https://docs.docker.com/reference/cli/docker/buildx/prune/",
+  "records": [
+    {
+      "parent": "o6tmcvtlubm4wm2tk0mdaauof",
+      "child": "jtjzuiuzhzed9a2xdxeet87tw",
+      "parent_before": "ID:           o6tmcvtlubm4wm2tk0mdaauof\nParents:\n - go7ahtq9r63t6ct7095h8kd3m\nCreated at:   2026-10-28 04:41:41.421884718 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         1.454GB\nDescription:  [production 5/6] COPY --from=build --chown=node:node /app ./\nUsage count:  1\nLast used:    9 hours ago\nType:         regular\n\n",
+      "child_before": "ID:           jtjzuiuzhzed9a2xdxeet87tw\nParents:\n - o6tmcvtlubm4wm2tk0mdaauof\nCreated at:   2026-10-28 04:41:44.240536261 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         316.5MB\nDescription:  mount / from exec /bin/sh -c mkdir -p /app/var /app/data/raw /app/data/extracted && chown -R node:node /app/var /app/data\nUsage count:  1\nLast used:    9 hours ago\nType:         regular\n\n",
+      "removed": [
+        {
+          "id": "jtjzuiuzhzed9a2xdxeet87tw",
+          "output": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\njtjzuiuzhzed9a2xdxeet87tw               \ttrue \t\t316.5MB   \t9 hours ago\nTotal:\t316.5MB\n",
+          "after": ""
+        },
+        {
+          "id": "o6tmcvtlubm4wm2tk0mdaauof",
+          "output": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\no6tmcvtlubm4wm2tk0mdaauof               \ttrue \t\t1.454GB   \t9 hours ago\nTotal:\t1.454GB\n",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "parent": "rrpnu1invumxr71asdfjmzarq",
+      "child": "ohlcm66ss1tbdjms79l0m9v7f",
+      "parent_before": "ID:           rrpnu1invumxr71asdfjmzarq\nParents:\n - nrudrc8fmb60w8j2tqcgtm6qv\nCreated at:   2026-10-28 05:37:01.134876129 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         1.475GB\nDescription:  [production 5/6] COPY --from=build --chown=node:node /app ./\nUsage count:  1\nLast used:    8 hours ago\nType:         regular\n\n",
+      "child_before": "ID:           ohlcm66ss1tbdjms79l0m9v7f\nParents:\n - rrpnu1invumxr71asdfjmzarq\nCreated at:   2026-10-28 05:37:01.609629129 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         134.4MB\nDescription:  mount / from exec /bin/sh -c mkdir -p /app/var /app/data/raw /app/data/extracted && chown -R node:node /app/var /app/data\nUsage count:  1\nLast used:    8 hours ago\nType:         regular\n\n",
+      "removed": [
+        {
+          "id": "ohlcm66ss1tbdjms79l0m9v7f",
+          "output": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nohlcm66ss1tbdjms79l0m9v7f               \ttrue \t\t134.4MB   \t8 hours ago\nTotal:\t134.4MB\n",
+          "after": ""
+        },
+        {
+          "id": "rrpnu1invumxr71asdfjmzarq",
+          "output": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nrrpnu1invumxr71asdfjmzarq               \ttrue \t\t1.475GB   \t8 hours ago\nTotal:\t1.475GB\n",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "parent": "i3htizr06e4pld6xt326hab4b",
+      "child": "ioetkg1p8a2mf6qw4uk0e6m3e",
+      "parent_before": "ID:           i3htizr06e4pld6xt326hab4b\nParents:\n - nrudrc8fmb60w8j2tqcgtm6qv\nCreated at:   2026-10-28 05:43:45.680616136 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         1.52GB\nDescription:  [production 5/6] COPY --from=build --chown=node:node /app ./\nUsage count:  1\nLast used:    8 hours ago\nType:         regular\n\n",
+      "child_before": "ID:           ioetkg1p8a2mf6qw4uk0e6m3e\nParents:\n - i3htizr06e4pld6xt326hab4b\nCreated at:   2026-10-28 05:43:46.494625678 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         160.3MB\nDescription:  mount / from exec /bin/sh -c mkdir -p /app/var /app/data/raw /app/data/extracted && chown -R node:node /app/var /app/data\nUsage count:  1\nLast used:    8 hours ago\nType:         regular\n\n",
+      "removed": [
+        {
+          "id": "ioetkg1p8a2mf6qw4uk0e6m3e",
+          "output": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nioetkg1p8a2mf6qw4uk0e6m3e               \ttrue \t\t160.3MB   \t8 hours ago\nTotal:\t160.3MB\n",
+          "after": ""
+        },
+        {
+          "id": "i3htizr06e4pld6xt326hab4b",
+          "output": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\ni3htizr06e4pld6xt326hab4b               \ttrue \t\t1.52GB    \t8 hours ago\nTotal:\t1.52GB\n",
+          "after": ""
+        }
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "docker",
+        "image",
+        "inspect",
+        "curriculos-abertos:local",
+        "--format",
+        "{{.Id}}"
+      ],
+      "exit_code": 0,
+      "output": "sha256:acd1b70caff6453a0f5ba465ac97a9fcca29a73c1a90746a69409ede8adbb335\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "inspect",
+        "contentizap-postgres-1",
+        "--format",
+        "{{.Id}} {{.State.Running}}"
+      ],
+      "exit_code": 0,
+      "output": "112684466a57f2eee8b63c631778eab0cf4280d25933439f331a9eb069a42910 true\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=o6tmcvtlubm4wm2tk0mdaauof",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "output": "ID:           o6tmcvtlubm4wm2tk0mdaauof\nParents:\n - go7ahtq9r63t6ct7095h8kd3m\nCreated at:   2026-10-28 04:41:41.421884718 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         1.454GB\nDescription:  [production 5/6] COPY --from=build --chown=node:node /app ./\nUsage count:  1\nLast used:    9 hours ago\nType:         regular\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=jtjzuiuzhzed9a2xdxeet87tw",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "output": "ID:           jtjzuiuzhzed9a2xdxeet87tw\nParents:\n - o6tmcvtlubm4wm2tk0mdaauof\nCreated at:   2026-10-28 04:41:44.240536261 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         316.5MB\nDescription:  mount / from exec /bin/sh -c mkdir -p /app/var /app/data/raw /app/data/extracted && chown -R node:node /app/var /app/data\nUsage count:  1\nLast used:    9 hours ago\nType:         regular\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=jtjzuiuzhzed9a2xdxeet87tw"
+      ],
+      "exit_code": 0,
+      "output": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\njtjzuiuzhzed9a2xdxeet87tw               \ttrue \t\t316.5MB   \t9 hours ago\nTotal:\t316.5MB\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=jtjzuiuzhzed9a2xdxeet87tw",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "output": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=o6tmcvtlubm4wm2tk0mdaauof"
+      ],
+      "exit_code": 0,
+      "output": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\no6tmcvtlubm4wm2tk0mdaauof               \ttrue \t\t1.454GB   \t9 hours ago\nTotal:\t1.454GB\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=o6tmcvtlubm4wm2tk0mdaauof",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "output": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=rrpnu1invumxr71asdfjmzarq",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "output": "ID:           rrpnu1invumxr71asdfjmzarq\nParents:\n - nrudrc8fmb60w8j2tqcgtm6qv\nCreated at:   2026-10-28 05:37:01.134876129 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         1.475GB\nDescription:  [production 5/6] COPY --from=build --chown=node:node /app ./\nUsage count:  1\nLast used:    8 hours ago\nType:         regular\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=ohlcm66ss1tbdjms79l0m9v7f",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "output": "ID:           ohlcm66ss1tbdjms79l0m9v7f\nParents:\n - rrpnu1invumxr71asdfjmzarq\nCreated at:   2026-10-28 05:37:01.609629129 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         134.4MB\nDescription:  mount / from exec /bin/sh -c mkdir -p /app/var /app/data/raw /app/data/extracted && chown -R node:node /app/var /app/data\nUsage count:  1\nLast used:    8 hours ago\nType:         regular\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=ohlcm66ss1tbdjms79l0m9v7f"
+      ],
+      "exit_code": 0,
+      "output": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nohlcm66ss1tbdjms79l0m9v7f               \ttrue \t\t134.4MB   \t8 hours ago\nTotal:\t134.4MB\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=ohlcm66ss1tbdjms79l0m9v7f",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "output": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=rrpnu1invumxr71asdfjmzarq"
+      ],
+      "exit_code": 0,
+      "output": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nrrpnu1invumxr71asdfjmzarq               \ttrue \t\t1.475GB   \t8 hours ago\nTotal:\t1.475GB\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=rrpnu1invumxr71asdfjmzarq",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "output": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=i3htizr06e4pld6xt326hab4b",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "output": "ID:           i3htizr06e4pld6xt326hab4b\nParents:\n - nrudrc8fmb60w8j2tqcgtm6qv\nCreated at:   2026-10-28 05:43:45.680616136 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         1.52GB\nDescription:  [production 5/6] COPY --from=build --chown=node:node /app ./\nUsage count:  1\nLast used:    8 hours ago\nType:         regular\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=ioetkg1p8a2mf6qw4uk0e6m3e",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "output": "ID:           ioetkg1p8a2mf6qw4uk0e6m3e\nParents:\n - i3htizr06e4pld6xt326hab4b\nCreated at:   2026-10-28 05:43:46.494625678 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         160.3MB\nDescription:  mount / from exec /bin/sh -c mkdir -p /app/var /app/data/raw /app/data/extracted && chown -R node:node /app/var /app/data\nUsage count:  1\nLast used:    8 hours ago\nType:         regular\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=ioetkg1p8a2mf6qw4uk0e6m3e"
+      ],
+      "exit_code": 0,
+      "output": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nioetkg1p8a2mf6qw4uk0e6m3e               \ttrue \t\t160.3MB   \t8 hours ago\nTotal:\t160.3MB\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=ioetkg1p8a2mf6qw4uk0e6m3e",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "output": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=i3htizr06e4pld6xt326hab4b"
+      ],
+      "exit_code": 0,
+      "output": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\ni3htizr06e4pld6xt326hab4b               \ttrue \t\t1.52GB    \t8 hours ago\nTotal:\t1.52GB\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=i3htizr06e4pld6xt326hab4b",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "output": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "image",
+        "inspect",
+        "curriculos-abertos:local",
+        "--format",
+        "{{.Id}}"
+      ],
+      "exit_code": 0,
+      "output": "sha256:acd1b70caff6453a0f5ba465ac97a9fcca29a73c1a90746a69409ede8adbb335\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "inspect",
+        "contentizap-postgres-1",
+        "--format",
+        "{{.Id}} {{.State.Running}}"
+      ],
+      "exit_code": 0,
+      "output": "112684466a57f2eee8b63c631778eab0cf4280d25933439f331a9eb069a42910 true\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "volume",
+        "inspect",
+        "curriculos-abertos_database",
+        "--format",
+        "{{.Name}}"
+      ],
+      "exit_code": 0,
+      "output": "curriculos-abertos_database\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "volume",
+        "inspect",
+        "curriculos-abertos_database_pg1711_20261028044133-f64587bb",
+        "--format",
+        "{{.Name}}"
+      ],
+      "exit_code": 0,
+      "output": "curriculos-abertos_database_pg1711_20261028044133-f64587bb\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "volume",
+        "inspect",
+        "curriculos-abertos_storage",
+        "--format",
+        "{{.Name}}"
+      ],
+      "exit_code": 0,
+      "output": "curriculos-abertos_storage\n",
+      "stderr": ""
+    }
+  ],
+  "protected": {
+    "image_id": "sha256:acd1b70caff6453a0f5ba465ac97a9fcca29a73c1a90746a69409ede8adbb335",
+    "contentizap": "112684466a57f2eee8b63c631778eab0cf4280d25933439f331a9eb069a42910 true",
+    "volumes": [
+      "curriculos-abertos_database",
+      "curriculos-abertos_database_pg1711_20261028044133-f64587bb",
+      "curriculos-abertos_storage"
+    ]
+  },
+  "complete": true,
+  "preceding_pair": {
+    "parent": "6qkq1zfjnag04hq2qhs7uex4x",
+    "child": "w5fwaibv7w41unqw01a8nuo6l",
+    "method": "explicit child ID pruned before explicit parent ID; both subsequently absent in buildx du",
+    "commands": [
+      [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=w5fwaibv7w41unqw01a8nuo6l"
+      ],
+      [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=6qkq1zfjnag04hq2qhs7uex4x"
+      ]
+    ],
+    "verified_absent": [
+      "6qkq1zfjnag04hq2qhs7uex4x",
+      "w5fwaibv7w41unqw01a8nuo6l"
+    ]
+  },
+  "total_records_removed": 8,
+  "filesystem_after": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1   460Gi   417Gi    14Gi    97%     19M  152M   11%   /System/Volumes/Data\n"
+}

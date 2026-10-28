@@ -7,7 +7,9 @@ this establishes no cross-document or national equivalence.
 import re
 
 def only_code_mentions(text, code_re):
-    return not code_re.sub('',text).strip(' \t\r\n(),;:.[]/•-–—')
+    import unicodedata
+    classification_text=''.join(c for c in text if unicodedata.category(c)!='Cf')
+    return not code_re.sub('',classification_text).strip(' \t\r\n(),;:.[]/•-–—')
 
 def cell_recovery_is_reference(page, box, code_re):
     """Never borrow later rows' prose for a physical code-list cell."""
@@ -44,4 +46,42 @@ def sergipe_final_cell_paths(page):
         if max(r.x1 for r in rectangles)-min(r.x1 for r in rectangles)>1:continue
         paths.append(path)
     columns={(round(p['rect'].x0),round(p['rect'].x1)) for p in paths}
-    return paths if len(columns)>=3 else None
+    if len(columns)<3:return None
+    # Some alternating row fills are a single rectangle, while the same column's
+    # other row/header fills share a composite path. Retain every exact column
+    # rectangle, excluding hidden decorative backgrounds with different edges.
+    selected=[]
+    for path in page.get_drawings():
+        if not path['items'] or any(i[0]!='re' for i in path['items']):continue
+        rectangles=[i[1] for i in path['items']]
+        if all((round(r.x0),round(r.x1)) in columns and r.height>=15 for r in rectangles):selected.append(path)
+    return selected
+
+def bahia_open_skill_edge(page,code_re):
+    """Close the source's implied right edge only where repeated row rules prove it.
+
+    Bahia's EF tables intentionally omit the outer right stroke. The source
+    horizontal rules end at that boundary, but generic table detection drops the
+    entire skills column. Exact endpoints and y-extent derive from source paths.
+    """
+    import collections
+    lines=[]
+    for path in page.get_drawings():
+        for item in path['items']:
+            if item[0]!='l':continue
+            a,b=item[1:3]
+            if abs(a.y-b.y)>0.2 or abs(a.x-b.x)<90:continue
+            left,right=sorted((a.x,b.x));y=(a.y+b.y)/2
+            if not (20<y<page.rect.height-60 and right<page.rect.width-20):continue
+            lines.append((left,right,y))
+    groups=collections.defaultdict(list)
+    for left,right,y in lines:groups[round(right,1)].append((left,right,y))
+    words=page.get_text('words');closures=[]
+    for endpoint,segments in groups.items():
+        if len(segments)<3:continue
+        top=min(x[2] for x in segments);bottom=max(x[2] for x in segments)
+        left=min(x[0] for x in segments)
+        if any(code_re.search(w[4]) and left<w[0]<endpoint and top<w[1]<bottom for w in words):
+            closures.append(((endpoint,top),(endpoint,bottom)))
+    # Only the outermost proven right edge; internal table columns stay original.
+    return [max(closures,key=lambda line:line[0][0])] if closures else []

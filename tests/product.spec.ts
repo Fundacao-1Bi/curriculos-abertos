@@ -37,7 +37,9 @@ test('consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2),'Sem overflow horizontal global').toBeTruthy();
  const a11y=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa']).analyze();
  expect(a11y.violations.map(v=>({id:v.id,impact:v.impact,description:v.description,nodes:v.nodes.map(n=>n.target)}))).toEqual([]);
- await page.goto('/?publication='+encodeURIComponent(found.publication));await page.keyboard.press('Tab');expect(await page.evaluate(()=>document.activeElement?.tagName)).toBe('A');
+ await page.goto('/?publication='+encodeURIComponent(found.publication));await expect(page.locator('.uf-card')).toHaveCount(27);
+ await page.keyboard.press('Tab');expect(await page.evaluate(()=>document.activeElement?.tagName)).toBe('A');
+ await page.getByRole('heading',{level:1}).click();
  expect(errors).toEqual([]);
  await mkdir('docs/evidence/screenshots',{recursive:true});await page.screenshot({path:`docs/evidence/screenshots/home-${testInfo.project.name}.png`,fullPage:true});
 });
@@ -99,4 +101,18 @@ test('J01 estrutura documental: navegar até filhos e evidência sem conhecer c�
  await page.locator('.learning-list a').first().click();
  await expect(page).toHaveURL(/\/aprendizagens\//);
  await expect(page.locator('.detail-text')).not.toBeEmpty();await expect(page.locator('main')).toContainText('Confira a evidência');
+});
+
+test('J02 ficha preserva relações ao chegar de uma página posterior da busca',async({page,request})=>{
+ const response=await request.get(pinned('/api/v1/correspondencias?limit=1'));expect(response.ok()).toBeTruthy();
+ const result=await response.json();test.info().annotations.push({type:'data-publication',description:result.publication});
+ expect(result.data.length,'Publicação integrada precisa vínculos reais verificáveis').toBeGreaterThan(0);
+ const relation=result.data[0];expect(relation.members.length).toBeGreaterThan(1);
+ const item=relation.members[0],other=relation.members.find((member:{item_id:string})=>member.item_id!==item.item_id);expect(other).toBeDefined();
+ await page.goto('/aprendizagens/'+encodeURIComponent(item.item_id)+'?'+new URLSearchParams({publication:result.publication,page:'2'}));
+ const section=page.locator('.detail-block').filter({has:page.getByRole('heading',{name:'Relações curriculares',exact:true})});
+ await expect(section.getByRole('link',{name:other.item_id,exact:true}).first()).toBeVisible();
+ await expect(section).toContainText(relation.method);
+ await page.getByRole('link',{name:'← Voltar aos resultados com os filtros',exact:true}).click();
+ await expect(page).toHaveURL(/\/buscar\?/);expect(new URL(page.url()).searchParams.get('page')).toBe('2');
 });

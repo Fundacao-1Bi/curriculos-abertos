@@ -1,0 +1,104 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:rn-integration-handoff",
+  "source_id": "rn-trilhas-aprofundamento",
+  "source_sha256": "fac7333112fcfaac3d99d74f72f206bea8e9a4b256e770a9ea0f2eace99b027a",
+  "sidecar_path": "data/manifests/uncoded/rn-trilhas-items.json",
+  "sidecar_sha256": "551f90cca125541f09975b3d62f8457695a4cdc7a742f096360f609854749602",
+  "proposed_source_fields": {
+    "uncoded_items_path": "data/manifests/uncoded/rn-trilhas-items.json",
+    "document_role_adapter": "rn-document-roles-v1",
+    "adapter_authority": {
+      "uncoded_page_sections_ranges": [
+        [
+          16,
+          19
+        ],
+        [
+          31,
+          485
+        ]
+      ]
+    }
+  },
+  "authority_semantics": "Retain all2930 shared coded definitions/references. Suppress only fully covered definition-sheet page containers16–19 and body/back-cover page containers31–485. Retain26 unique front contexts1–15/20–30. Every12375nonspace glyph on16–19, including footer digits, has a preserved representation.",
+  "counts": {
+    "documento_curricular": 1,
+    "grupo_areas_conhecimento": 7,
+    "trilha_aprofundamento": 33,
+    "grupo_objetivos": 66,
+    "objetivo_aprendizagem": 185,
+    "indice_unidades_curriculares": 33,
+    "entrada_indice_curricular": 198,
+    "titulo_trilha": 33,
+    "tema_contemporaneo_transversal": 33,
+    "problematica_curricular": 33,
+    "unidade_curricular": 198,
+    "modulo_curricular": 395,
+    "formacao_docente": 198,
+    "grupo_referencias_eixos": 198,
+    "ementa_curricular": 362,
+    "objeto_conhecimento": 396,
+    "sugestao_didatico_metodologica": 323,
+    "sugestao_avaliacao_processual": 199,
+    "referencia_bibliografica": 199,
+    "cartao_referencias_eixo": 741,
+    "quadro_habilidades_eixos": 4,
+    "eixo_estruturante": 16
+  },
+  "full_probe_report": "docs/evidence/source-audit-rn-uncoded/rn-trilhas-full-verification.json",
+  "full_probe_report_sha256": "cb85f3747424e7d2af2d92dc98829fb8b709ffafcf6ff41a37f18c054ae48c1a",
+  "independent_source_denominators": [
+    "docs/evidence/source-audit-rn-fidelity/trilhas-toc-peer-denominator.json",
+    "docs/evidence/source-audit-rn-fidelity/trilhas-independent-body-census.json"
+  ],
+  "peer_final_status": "passed_full_uncoded_physical_cell_text_and_scope_confrontation",
+  "back_cover_classification": "graphic_back_cover_not_curricular_body",
+  "back_cover_ocr_completed": true,
+  "back_cover_ocr_low_confidence_warning_preserved": true,
+  "real_parser_cache_write_suppressed": true,
+  "national_sharded_integration_verified": false,
+  "source_ready": false,
+  "uf_ready": false,
+  "limits": [
+    "Front contexts1–15/20–30 remain generic; definition sheets16–19 are fully structured including footer metadata and their four generic containers are suppressed.",
+    "OCR warnings refer only to noncurricular graphic back cover485; execution is not transcription/human/pedagogical certification.",
+    "Source owner integration and future national immutable shard check are separate from this Source clone test."
+  ],
+  "sidecar_bytes": 16006548,
+  "full_finalized": 6807,
+  "generic_contexts_retained": 26,
+  "peer_report": "docs/evidence/source-audit-rn-fidelity/rn-uncoded-peer-summary.json",
+  "peer_report_sha256": "008f8b9645d838805f5a574456c89e5076d721a4c06ed8e5d8fa41b904436be4",
+  "source_specific_adapter_ready_for_owner_integration": true,
+  "verified_evidence": [
+    {
+      "path": "docs/evidence/source-audit-rn-uncoded/rn-trilhas-full-verification.json",
+      "sha256": "cb85f3747424e7d2af2d92dc98829fb8b709ffafcf6ff41a37f18c054ae48c1a"
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-uncoded/rn-trilhas-negative-controls.json",
+      "sha256": "d186f4fb6da815485e6b1b32d2ccc3b9a10f11dae9c3cfc6a2db1ac28f5a20f8"
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-uncoded/rn-trilhas-exact-region-check.json",
+      "sha256": "33711a9e3d351ac859406a3d94ba2c1aa93181d15ee95d11adef2891d59bb127"
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-uncoded/rn-trilhas-front-container-inventory.json",
+      "sha256": "3255c73d46920308854527f467261d9573b92ff72b3d9146f0d49014735ad497"
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-uncoded/rn-trilhas-complete-cell-inventory.json",
+      "sha256": "fc3cf2d0d668ffc20873f124253b77552de4490166e5aeef2a349d899dfe4298"
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-uncoded/rn-trilhas-position-check.json",
+      "sha256": "552274f81b7e9efdc501bbcad15700174bc8240ffd24f6f843f94bd53bd0073e"
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-uncoded/rn-trilhas-parser-snapshot.json",
+      "sha256": "de2317f1cfcf0b8d11ad44eda4448728a6e4834a31dac657e79fad8b9e581867"
+    }
+  ]
+}

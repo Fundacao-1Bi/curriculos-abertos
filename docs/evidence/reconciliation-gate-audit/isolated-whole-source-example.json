@@ -1,0 +1,331 @@
+{
+  "warning": "SYNTHETIC ISOLATED TEST EXAMPLE. Never import into the corpus or coverage counts.",
+  "source": {
+    "id": "isolated-source",
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "normative_parts": [
+      "Parte A",
+      "Parte B"
+    ],
+    "inventory_complete": true,
+    "reconciliation_status": "complete"
+  },
+  "extracted": {
+    "source_id": "isolated-source",
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "extraction_revision": "isolated-r1",
+    "document_page_count": 3,
+    "pages": [
+      {
+        "page": 1
+      },
+      {
+        "page": 2
+      },
+      {
+        "page": 3
+      }
+    ]
+  },
+  "actual_items": [
+    {
+      "id": "isolated:a",
+      "source_id": "isolated-source",
+      "kind": "habilidade",
+      "text": "Redação oficial A."
+    },
+    {
+      "id": "isolated:b",
+      "source_id": "isolated-source",
+      "kind": "objetivo_aprendizagem",
+      "text": "Redação oficial B."
+    },
+    {
+      "id": "isolated:context",
+      "source_id": "isolated-source",
+      "kind": "secao_normativa",
+      "text": "Contexto documental literal."
+    }
+  ],
+  "reconciliation_receipt": {
+    "source_id": "isolated-source",
+    "artifact_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "extraction_revision": "isolated-r1",
+    "actor_type": "automated",
+    "actor_id": "isolated-reviewer",
+    "reviewed_at": "2026-10-28T12:00:00Z",
+    "method": "Conferência automatizada identificada, sem alegar revisão humana.",
+    "parts": [
+      {
+        "name": "Parte A",
+        "expected_item_ids": [
+          "isolated:a"
+        ],
+        "verified_item_ids": [
+          "isolated:a"
+        ],
+        "evidence": [
+          {
+            "source_id": "isolated-source",
+            "page": 1,
+            "section": "Parte documentada",
+            "excerpt": "Trecho do documento primário."
+          }
+        ],
+        "findings": [],
+        "item_checks": [
+          {
+            "item_id": "isolated:a",
+            "text_sha256": "30c00f0c6e8d0f3775057dfe253bb2c860b306185d9fca0cd4c970b3061642fe",
+            "evidence": [
+              {
+                "source_id": "isolated-source",
+                "page": 1,
+                "section": "Parte documentada",
+                "excerpt": "Trecho do documento primário."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Parte B",
+        "expected_item_ids": [
+          "isolated:b"
+        ],
+        "verified_item_ids": [
+          "isolated:b"
+        ],
+        "evidence": [
+          {
+            "source_id": "isolated-source",
+            "page": 2,
+            "section": "Parte documentada",
+            "excerpt": "Trecho do documento primário."
+          }
+        ],
+        "findings": [],
+        "item_checks": [
+          {
+            "item_id": "isolated:b",
+            "text_sha256": "3a1e7d26ca21b6ae5819a7230e0f6c18ec1d342e793f88176fbabed96929dd0f",
+            "evidence": [
+              {
+                "source_id": "isolated-source",
+                "page": 2,
+                "section": "Parte documentada",
+                "excerpt": "Trecho do documento primário."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "reconciliation_scope": "whole_source",
+    "document_inventory": {
+      "basis": "primary_document_review",
+      "method": "Inventário de todas as partes, páginas e registros no original.",
+      "evidence": [
+        {
+          "source_id": "isolated-source",
+          "page": 1,
+          "section": "Parte documentada",
+          "excerpt": "Trecho do documento primário."
+        }
+      ],
+      "required_parts": [
+        "Parte A",
+        "Parte B"
+      ],
+      "source_scope_sha256": "0a2d032d090057991635e76aee733b99a5a8cb87df2d52a4ac60eb92d1e9d83c",
+      "units": [
+        {
+          "unit_id": "independent:0",
+          "part": "Parte A",
+          "role": "curricular",
+          "page_ranges": [
+            [
+              1,
+              1
+            ]
+          ],
+          "method": "Conferência documental independente dos limites e papel.",
+          "expected_record_count": 1,
+          "denominator": {
+            "basis": "primary_document_review",
+            "unit": "documentary_records",
+            "expected_count": 1,
+            "method": "Contagem documental anterior à comparação com a extração.",
+            "evidence": [
+              {
+                "source_id": "isolated-source",
+                "page": 1,
+                "section": "Parte documentada",
+                "excerpt": "Trecho do documento primário."
+              }
+            ]
+          },
+          "evidence": [
+            {
+              "source_id": "isolated-source",
+              "page": 1,
+              "section": "Parte documentada",
+              "excerpt": "Trecho do documento primário."
+            }
+          ],
+          "item_checks": [
+            {
+              "item_id": "isolated:a",
+              "text_sha256": "30c00f0c6e8d0f3775057dfe253bb2c860b306185d9fca0cd4c970b3061642fe",
+              "evidence": [
+                {
+                  "source_id": "isolated-source",
+                  "page": 1,
+                  "section": "Parte documentada",
+                  "excerpt": "Trecho do documento primário."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_id": "independent:1",
+          "part": "Parte B",
+          "role": "curricular",
+          "page_ranges": [
+            [
+              2,
+              2
+            ]
+          ],
+          "method": "Conferência documental independente dos limites e papel.",
+          "expected_record_count": 1,
+          "denominator": {
+            "basis": "primary_document_review",
+            "unit": "documentary_records",
+            "expected_count": 1,
+            "method": "Contagem documental anterior à comparação com a extração.",
+            "evidence": [
+              {
+                "source_id": "isolated-source",
+                "page": 2,
+                "section": "Parte documentada",
+                "excerpt": "Trecho do documento primário."
+              }
+            ]
+          },
+          "evidence": [
+            {
+              "source_id": "isolated-source",
+              "page": 2,
+              "section": "Parte documentada",
+              "excerpt": "Trecho do documento primário."
+            }
+          ],
+          "item_checks": [
+            {
+              "item_id": "isolated:b",
+              "text_sha256": "3a1e7d26ca21b6ae5819a7230e0f6c18ec1d342e793f88176fbabed96929dd0f",
+              "evidence": [
+                {
+                  "source_id": "isolated-source",
+                  "page": 2,
+                  "section": "Parte documentada",
+                  "excerpt": "Trecho do documento primário."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "unit_id": "independent:2",
+          "part": "Parte A",
+          "role": "documentary_context",
+          "page_ranges": [
+            [
+              3,
+              3
+            ]
+          ],
+          "method": "Conferência documental independente dos limites e papel.",
+          "expected_record_count": 1,
+          "denominator": {
+            "basis": "primary_document_review",
+            "unit": "documentary_records",
+            "expected_count": 1,
+            "method": "Contagem documental anterior à comparação com a extração.",
+            "evidence": [
+              {
+                "source_id": "isolated-source",
+                "page": 3,
+                "section": "Parte documentada",
+                "excerpt": "Trecho do documento primário."
+              }
+            ]
+          },
+          "evidence": [
+            {
+              "source_id": "isolated-source",
+              "page": 3,
+              "section": "Parte documentada",
+              "excerpt": "Trecho do documento primário."
+            }
+          ],
+          "item_checks": [
+            {
+              "item_id": "isolated:context",
+              "text_sha256": "98ecc11a090a8c131ac3256d19c0b26783cfc9c16ad074c0ad257241fae17092",
+              "evidence": [
+                {
+                  "source_id": "isolated-source",
+                  "page": 3,
+                  "section": "Parte documentada",
+                  "excerpt": "Trecho do documento primário."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "computed_gate": {
+    "gate_version": "reconciliation-gate/2.0",
+    "source_id": "isolated-source",
+    "artifact_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "extraction_revision": "isolated-r1",
+    "reconciled_parts": [
+      "Parte A",
+      "Parte B"
+    ],
+    "partial_parts": [],
+    "part_results": [
+      {
+        "name": "Parte A",
+        "status": "content_verified_part",
+        "verified_item_count": 1
+      },
+      {
+        "name": "Parte B",
+        "status": "content_verified_part",
+        "verified_item_count": 1
+      }
+    ],
+    "whole_source_reconciled": true,
+    "own_source_reconciled": true,
+    "required_related_documents": [],
+    "actual_item_count": 3,
+    "accounted_item_count": 3,
+    "unaccounted_item_ids": [],
+    "issues": [],
+    "required_parts": [
+      "Parte A",
+      "Parte B"
+    ],
+    "expected_scope_pages": [
+      1,
+      2,
+      3
+    ]
+  }
+}

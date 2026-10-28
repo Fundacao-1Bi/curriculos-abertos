@@ -22,3 +22,9 @@ A ementa Projeto de Vida/Núcleo Integrador 2023 v1.0, media oficial WordPress 8
 `ms2023-public-media-search.json` registra buscas públicas por Projeto de Vida, Núcleo Integrador e 2023. Uma alternativa oficial, media 56144, foi baixada e inspecionada: é portfólio escolar de 49 páginas de produção de alunos do 7º ano em 2022, não a ementa curricular. Foi excluída do corpus; a classificação e a renderização da página 2 estão registradas. Ela não substitui a fonte faltante. `ms2023-alternatives.json` e `ms2023-media56144-attempt.json` guardam URLs, resultados, hashes e a limitação factual.
 
 Não há declaração de prontidão das sete UFs baseada na simples obtenção de PDFs, contagem de códigos ou amostragem. As partes normativas sem denominador e conferência completos continuam pendentes.
+
+## Hierarquia DF e incorporação
+
+`enrich_df_hierarchy.py` preserva integralmente as2.659 folhas e acrescenta406 nós: cinco campos de experiência,15 grupos etários, nove componentes, quatro linguagens artísticas,28 ciclos,103 organizadores anuais e242 unidades temáticas. Todos os nós têm citação/caixa literal da fonte. O importador real do pipeline verificou3.065 registros,3.065 IDs únicos, zero pais ausentes e zero alteração de texto/evidência/posição das folhas. Provas atuais: `df-hierarchy-verification.json` e `df-hierarchy-import-verification.json`. Os relatórios v1.1 anteriores permanecem como histórico, com hash da revisão a que pertencem.
+
+Última tentativa ordinária: a página oficial de anexo foi obtida e continua expondo o mesmo link PDF (`ms2023-attachment-attempt.json`). O pedido direto em28/10/2026 13:51UTC redirecionou para o mesmo endereço com barra final e devolveu609.771bytes HTML, HTTP200, sem assinatura `%PDF-` (`ms2023-final-retry.json`). O bloqueio documental persiste; não se atribui causa a mecanismo de acesso sem evidência.

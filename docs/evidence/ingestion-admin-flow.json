@@ -1,26 +1,54 @@
 {
   "schema_version": 1,
   "actor_type": "automated",
-  "started_at": "2026-10-28T13:46:19.741Z",
-  "completed_at": "2026-10-28T13:47:23.642Z",
+  "started_at": "2026-10-28T15:01:31.434Z",
+  "completed_at": "2026-10-28T15:04:09.257Z",
   "source": "pe-historia-pernambuco-2026",
-  "job_id": "dc2b475a-72e1-4e03-a960-f78187c8caee",
+  "job_id": "0cce93a2-d759-4fdf-9e9a-3d0ef0cc40bf",
   "publication": null,
   "original_default": "ca-77fb8076598b567e1ba3",
   "checks": [
+    {
+      "name": "official_local_artifact_sha256_verified_inside_worker",
+      "passed": true,
+      "detail": {
+        "source_id": "pe-historia-pernambuco-2026",
+        "path": "data/raw/PE/pe-historia-pernambuco-2026.pdf",
+        "sha256": "1b7b6c325b74b580697325f1c7af59780799fbdb9582fe98a0dab63a9203a832",
+        "bytes": 483583,
+        "network_acquisition_required": false
+      }
+    },
     {
       "name": "temporary_automated_administrator_logged_in",
       "passed": true
     },
     {
-      "name": "official_cached_source_enqueued_through_authenticated_api",
+      "name": "official_source_enqueued_through_authenticated_api",
       "passed": true,
       "detail": {
-        "job_id": "dc2b475a-72e1-4e03-a960-f78187c8caee",
-        "source": "pe-historia-pernambuco-2026"
+        "job_id": "0cce93a2-d759-4fdf-9e9a-3d0ef0cc40bf",
+        "source": "pe-historia-pernambuco-2026",
+        "cached_only": false,
+        "method": "parse verified local official artifact in current worker runtime"
       }
+    },
+    {
+      "name": "ingestion_job_pins_published_base_sha256_and_explicit_target_sources",
+      "passed": true,
+      "detail": {
+        "base_publication": "ca-77fb8076598b567e1ba3",
+        "base_publication_sha256": "da8fb61ce80b2aec4a83d4f0e9cdeb306505c384315af59a76b0fc9fabc03eb0",
+        "target_source_ids": [
+          "pe-historia-pernambuco-2026"
+        ]
+      }
+    },
+    {
+      "name": "real_ingestion_paused_during_prepared_import",
+      "passed": true
     }
   ],
   "passed": false,
-  "error": "Pipeline real recusou montar o candidato: Unresolved NUL in record ca:rn-documento-ef-2018:1c98e4abda01b69b1481"
+  "error": "candidate unaffected relation hashes: canceling statement due to statement timeout"
 }

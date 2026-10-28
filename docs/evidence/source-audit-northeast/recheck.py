@@ -23,7 +23,11 @@ for anchor in original['samples']:
    rebases[sid]={'original_frame_sha256':anchor['sha256'],'current_artifact_sha256':digest,'evidence':proof_path,'scope':'Exact native text/page count/dimensions match across177pages; word geometry differs and is verified against current PDF, not reused from old artifact.'}
   docs[sid]=fitz.open(path)
   cache=ROOT/'data/extracted'/f'{digest}-{revision}.json'
-  extracts[sid]=json.loads(cache.read_text()) if cache.exists() else None
+  extracts[sid]=ingest.read_extraction_cache(cache) if cache.exists() else None
+  if extracts[sid] and extracts[sid].get('extraction_config_sha256')==ingest.extraction_config_hash(source):
+   # Audit the same fully integrated records that publication uses, including
+   # authoritative PB objectives; raw generic candidates alone are insufficient.
+   extracts[sid]['_audit_final_items']=ingest.finalize_items(extracts[sid]['items']+ingest.source_uncoded_items([source],{sid:extracts[sid]}),[source])
  result={k:v for k,v in anchor.items() if k not in ['result','reason','checks','matched_item_ids']};ex=extracts[sid]
  if sid in rebases:result['artifact_representation_rebase']=rebases[sid]
  if (sid,result['component']) in [('pb-proposta-ei-ef','PB0'),('ma-dctm-em-vol2','LP1')]:
@@ -34,7 +38,12 @@ for anchor in original['samples']:
  result['cache_extracted_at']=ex.get('extracted_at');result['cache_config_sha256']=ex.get('extraction_config_sha256')
  if ex.get('extraction_config_sha256')!=ingest.extraction_config_hash(source):
   result['result']='pending_source_configuration_reprocess';samples.append(result);continue
- candidates=[i for i in ex['items'] if i.get('code')==anchor['code'] and any(e.get('page')==anchor['page'] for e in i.get('evidence',[]))]
+ literal_code=anchor['code']
+ if sid=='al-recal-ef' and anchor['page']==442 and anchor['code']=='EF05LI16':
+  literal_code='AL.EF05LI16'
+  result['literal_source_code']=literal_code
+  result['sampling_label_disposition']='Original sampling regex omitted literal AL. prefix; source and stored item remain unchanged. Verified directly in source page442.'
+ candidates=[i for i in ex.get('_audit_final_items',ex['items']) if i.get('code')==literal_code and any(e.get('page')==anchor['page'] for e in i.get('evidence',[]))]
  result['matched_item_ids']=[i['id'] for i in candidates]
  if not candidates:
   result['result']='unrepresented_code_occurrence_requires_semantic_classification';samples.append(result);continue
@@ -50,10 +59,22 @@ for anchor in original['samples']:
    normalized_pages.add(page_key)
   if not box:checks.append({'item_id':item['id'],'result':'coordinate_pending'});continue
   variants=[p.get_text('text',clip=fitz.Rect(box),sort=True),p.get_text('text',clip=fitz.Rect(box),sort=False),p.get_textbox(fitz.Rect(box))]
+  if source.get('native_text_order')=='glyph_cluster_stream' and (not source.get('native_text_order_pages') or anchor['page'] in source['native_text_order_pages']):
+   from native_glyphs import source_cell_text
+   variants.append(source_cell_text(source,p,box))
   code_e=item.get('code_evidence')
-  code_present=any(anchor['code'] in v for v in variants) or bool(code_e and code_e.get('code')==anchor['code'])
+  code_present=any(literal_code in v for v in variants) or bool(code_e and code_e.get('code')==anchor['code']) or any(e.get('evidence_role') in ['code_locator','literal_code_reference'] and ingest.normalize(literal_code)==ingest.normalize(e.get('excerpt','')) for e in item.get('evidence',[]))
   text_present=any(norm(item['text']) in norm(v) for v in variants)
-  checks.append({'item_id':item['id'],'method':ev.get('method'),'bbox':box,'code_present':code_present,'text_literal_matched_any_native_order':text_present,'result':'literal_cell_pass_semantics_still_unreviewed' if code_present and text_present else 'multi_page_requires_fragment_check' if item.get('cross_page_continuation') else 'literal_cell_candidate_mismatch','extracted_text':item['text'][:1500],'source_cell_native_order':variants[1][:1500]})
+  all_fragments_pass=ingest.evidence_check(item,ex,docs[sid])
+  outcome='literal_cell_pass_semantics_still_unreviewed' if code_present and text_present and all_fragments_pass else 'multi_page_fragments_literal_pass_semantics_still_unreviewed' if all_fragments_pass and item.get('cross_page_continuation') else 'authoritative_source_fragment_pass_clip_order_requires_context_review' if all_fragments_pass else 'literal_cell_candidate_mismatch'
+  checks.append({'item_id':item['id'],'method':ev.get('method'),'bbox':box,'code_present':code_present,'text_literal_matched_any_native_order':text_present,'all_current_source_fragments_verified':all_fragments_pass,'result':outcome,'extracted_text':item['text'][:1500],'source_cell_native_order':variants[1][:1500]})
  result['checks']=checks;result['result']='sample_inspected';samples.append(result)
 report={'created_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'actor_type':'automated','actor_id':'codex:data_northeast','extraction_revision':revision,'independent_sampling_frame':'audit-report.json (unchanged source hashes, anchors chosen directly from native PDFs)','limitations':['Literal match is necessary but insufficient for semantic classification, completeness or pedagogical review.','National-code occurrences in reference columns and examples are not expected learning items.','Original audit sort=True mismatches remain preserved; recheck accepts native PDF sort=False and textbox order to avoid rotation/glyph-order false positives.','Code evidence in separate code_evidence is accepted only as location evidence, not proof that code is authored local identifier.'],'samples':samples,'summary':{'sample_anchors':len(samples),'distinct_reviewed_uf_stage_component_combinations':len({(s['uf'],s['stage'],s['component']) for s in samples}),'ufs':sorted({s['uf'] for s in samples}),'by_result':dict(collections.Counter(s['result'] for s in samples)),'check_results':dict(collections.Counter(c['result'] for s in samples for c in s.get('checks',[]))),'fully_reconciled_parts_in_principal_source_audit_cohort':0,'other_sources_reconciled_in_registry':[s['id'] for s in sources.values() if s.get('reconciliation_status')=='automated_documentary_reconciled']}}
+report['integration_contract']='Full generic plus Source-bound sidecar finalizer; exact current Source config, original independent159anchor frame and PDF identity retained. All-fragment evidence_check uses the current verified native/cluster/OCR-proof methods; a whole-page text match alone is not semantic learning classification.'
+oldpath=OUT/'audit-recheck.json'
+if oldpath.exists():
+ old=json.loads(oldpath.read_text());oldrevision=old.get('extraction_revision')
+ if oldrevision and oldrevision!=revision:
+  archive=OUT/f'audit-recheck-{oldrevision}.json'
+  if not archive.exists():archive.write_bytes(oldpath.read_bytes())
 (OUT/'audit-recheck.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps(report['summary'],ensure_ascii=False,indent=2))

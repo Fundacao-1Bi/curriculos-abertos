@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Complete literal, physical-cell and shared-loader verification of MS PV2024."""
 from pathlib import Path
-import collections,hashlib,json,re,sys
+import collections,hashlib,json,re,sys,argparse,importlib.util
 import fitz
 ROOT=Path(__file__).resolve().parents[3]
 sys.path.insert(0,str(ROOT));sys.path.insert(0,str(ROOT/'pipeline'))
@@ -13,7 +13,7 @@ def dump(p,d):p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n')
 def glyphs(page,bb,policy):
     return collections.Counter((run['seqno'],char['text'],tuple(round(v,3) for v in char['bbox'])) for run in rendered_glyph_runs(page,bb,color_policy=policy) for char in run['chars'])
 
-def run():
+def run(primary_text_checks=False):
     source=next(s for s in json.loads((ROOT/'data/manifests/central-south.json').read_text()) if s['id']==SID)
     file=ROOT/source['local_path'];sha=hashlib.sha256(file.read_bytes()).hexdigest();assert sha==source['sha256']
     sidecar=ROOT/'data/manifests/uncoded/ms-pv-2024-items.json';wrapper=json.loads(sidecar.read_text());items=wrapper['items'];assert wrapper['artifact_sha256']==sha
@@ -87,4 +87,8 @@ def run():
         dump(AUDIT/'ms-pv-2024-verification.json',report);dump(AUDIT/'ms-pv-2024-all-literal-fragments.json',checks);dump(AUDIT/'ms-pv-2024-full-cell-accounting.json',regions)
         print(json.dumps({k:v for k,v in report.items() if k!='strata'},ensure_ascii=False));assert not failures
 
-if __name__=='__main__':run()
+    if primary_text_checks:
+        path=Path(__file__).with_name('ms-pv-2024-primary-text-checks.py');spec=importlib.util.spec_from_file_location('ms_primary_text_checks',path);module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);module.run()
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser();parser.add_argument('--primary-text-checks',action='store_true',help='Regenerate exactUTF8 gateV2 hashes from the independent primary visible-glyph model.');args=parser.parse_args();run(primary_text_checks=args.primary_text_checks)

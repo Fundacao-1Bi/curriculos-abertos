@@ -118,3 +118,17 @@ TEST_BASE_URL=http://localhost:3000 TEST_PUBLICATION=PUBLICACAO \
 ```
 
 O modo de descoberta encontrou dois testes (desktop/mobile). Lint e tipos da implementação foram verificados; dois testes isolados conferem sanitização de segredos e a política de captura. **As jornadas reais, axe e screenshots desta nova suíte ainda não foram executados** enquanto a aplicação aguarda o novo build. Quando executada, a suíte registra `docs/evidence/admin-browser-verification.json` e evidências por run em `docs/evidence/admin-browser/`; não se deve interpretar a existência dos arquivos de teste como aprovação de ADM-02 ou QA-03.
+
+
+### Fontes com arquivo ainda não localizado — schema 1.1.0
+
+`Source.artifact_url` admite `null` explícito quando o endereço do arquivo não foi localizado. `official_url` continua registrando a página de procedência conhecida; ela não é inventada como endereço de download. Os campos de autoria, edição, vigência, coleta e integridade permanecem independentes. A ausência de um arquivo obrigatório continua no inventário e no denominador de cobertura; não representa ausência de currículo ou aprendizagem.
+
+O schema `data/schema/1.1.0.json` documenta essa ampliação. O arquivo `1.0.0.json` foi preservado byte a byte para os artefatos históricos. Publicações novas fixam versão, caminho e hash do schema. Os testes `tests/source-contract.test.ts` verificam a preservação de `null` nos contratos e na validação de importação, rejeição de campo omitido e recusa de URLs não HTTP(S). A interface não oferece um link de arquivo inexistente.
+
+
+## Idade documental em meses (FUN-03)
+
+`age_months` aceita string com inteiro ou faixa crescente inclusiva entre 0 e 1800, por exemplo `0`, `0-6` e `48-71`. API REST, ferramentas MCP, comparação e exportação compartilham esse contrato. A consulta usa interseção com limites explicitados pela fonte. `age_group` consulta o grupo macro ou rótulo específico com normalização portuguesa. Rótulo, código e agrupamento escolar não geram limites automaticamente. Posições sem limites continuam desconhecidas; entram no recorte etário apenas com `include_unknown_positions=true`.
+
+`Position` pode preservar `age_label`, `age_min_months`, `age_max_months`, `age_evidence` (array de `Evidence`), `age_interval_origin` e `age_unknown_reason`. Limites são ambos ausentes/nulos ou ambos inteiros coerentes de 0 a 1800. Limites presentes exigem evidência com fonte, trecho literal não vazio e página ou seção. A origem admitida é `explicit_source_header_units_to_months`. Os campos são opcionais para preservar compatibilidade de publicações existentes; o schema documental 1.1 fixado permanece inalterado. `tests/api-age.test.ts` verifica limites, ausência documental, evidência e propagação a OpenAPI/comparação/exportação. A execução real depende da próxima publicação e build coordenados.

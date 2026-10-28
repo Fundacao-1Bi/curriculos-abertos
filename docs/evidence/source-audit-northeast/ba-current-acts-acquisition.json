@@ -1,0 +1,101 @@
+{
+  "at": "2026-10-28T17:02:36.957568+00:00",
+  "actor_type": "automated",
+  "sources": [
+    {
+      "source_id": "ba-resolucao-266-2025-computacao",
+      "official_catalogue_url": "https://www.ba.gov.br/conselhodeeducacao/biblioteca-documentos/resolucoes-normativas",
+      "attempts": [
+        {
+          "at": "2026-10-28T17:02:34.790730+00:00",
+          "url": "https://www.ba.gov.br/conselhodeeducacao/sites/site-cee/files/2026-04/Resolu%C3%A7%C3%A3o%20CEE%20BA%20n%C2%BA%20266%202025%20-%20PARA%20PUBLICIZA%C3%87%C3%83O.pdf",
+          "method": "OrdinaryHTTPSGET of literal PDF link discovered in official CEE public catalogue; no credentials, TLS bypass or session replication.",
+          "http_status": 200,
+          "content_type": "application/pdf",
+          "content_length": "856939",
+          "final_url": "https://www.ba.gov.br/conselhodeeducacao/sites/site-cee/files/2026-04/Resolu%C3%A7%C3%A3o%20CEE%20BA%20n%C2%BA%20266%202025%20-%20PARA%20PUBLICIZA%C3%87%C3%83O.pdf",
+          "result": "acquired_and_pdf_validated",
+          "bytes": 856939,
+          "sha256": "dae336de6d45da873386a66f01de53a483c790b502254c5faef3def5d5f00e17",
+          "pdf_pages": 21,
+          "native_characters_by_page": [
+            2551,
+            2233,
+            2792,
+            2394,
+            2636,
+            1854,
+            2858,
+            2257,
+            2408,
+            1851,
+            2195,
+            1045,
+            2669,
+            2651,
+            3014,
+            2996,
+            2878,
+            3223,
+            2730,
+            3237,
+            2513
+          ],
+          "local_path": "data/raw/BA/ba-resolucao-266-2025-computacao.pdf",
+          "pdf_metadata": {
+            "format": "PDF 1.5",
+            "title": "",
+            "author": "ana.cleide",
+            "subject": "",
+            "keywords": "",
+            "creator": "Microsoft® Word 2016",
+            "producer": "Microsoft® Word 2016",
+            "creationDate": "D:20260327162111-03'00'",
+            "modDate": "D:20260327162111-03'00'",
+            "trapped": "",
+            "encryption": null
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "ba-resolucao-125-2024-historia",
+      "official_catalogue_url": "https://www.ba.gov.br/conselhodeeducacao/biblioteca-documentos/resolucoes-normativas",
+      "attempts": [
+        {
+          "at": "2026-10-28T17:02:35.908054+00:00",
+          "url": "https://www.ba.gov.br/conselhodeeducacao/sites/site-cee/files/2025-02/RESOLUCAO_CEE_N_125_2024_HISTORIA_DA_BAHIA.pdf",
+          "method": "OrdinaryHTTPSGET of literal PDF link discovered in official CEE public catalogue; no credentials, TLS bypass or session replication.",
+          "http_status": 200,
+          "content_type": "application/pdf",
+          "content_length": "673340",
+          "final_url": "https://www.ba.gov.br/conselhodeeducacao/sites/site-cee/files/2025-02/RESOLUCAO_CEE_N_125_2024_HISTORIA_DA_BAHIA.pdf",
+          "result": "acquired_and_pdf_validated",
+          "bytes": 673340,
+          "sha256": "7861ece3cb8b64980e39d5e54f1d2fcac4db0993c8c974a0d99232cb4b93d388",
+          "pdf_pages": 2,
+          "native_characters_by_page": [
+            2701,
+            2852
+          ],
+          "local_path": "data/raw/BA/ba-resolucao-125-2024-historia.pdf",
+          "pdf_metadata": {
+            "format": "PDF 1.5",
+            "title": "",
+            "author": "isabel.freitas",
+            "subject": "",
+            "keywords": "",
+            "creator": "Microsoft® Word 2016",
+            "producer": "www.ilovepdf.com",
+            "creationDate": "D:20240812123820+00'00'",
+            "modDate": "D:20240812123820Z",
+            "trapped": "",
+            "encryption": null
+          }
+        }
+      ]
+    }
+  ],
+  "total_acquired_bytes": 1530279,
+  "scope": "Actual official artifact acquisition; no wholeUF or structured/reconciled act readiness inferred. Source metadata/inventory follow original contents."
+}

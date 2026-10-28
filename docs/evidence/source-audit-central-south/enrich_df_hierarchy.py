@@ -60,6 +60,7 @@ def main():
   found=found or locate(sid,pn,title,col,prefer_right)
   if not found:
    pending.append({'source_id':sid,'page':pn,'kind':kind,'title':title,'parent_key':parent});return parent
+  pos={**pos,'position_origin':'explicit_source_heading','position_note':'Cabeçalho literal da fonte; ano/faixa etária somente quando este nó representa o organizador explicitamente identificado.'}
   loc='df-structure:'+key;ev={'source_id':sid,'page':found['page'],'printed_page':None,'section':'Cabeçalho estrutural literal do currículo','excerpt':found['text'],'bbox':found['bbox'],'locator':loc,'method':REV,'coordinate_space':'page display coordinates after remove_rotation'}
   nodes[(sid,key)]={'key':key,'parent_key':parent,'source_id':sid,'artifact_sha256':SOURCES[sid]['sha256'],'code':None,'kind':kind,'title':found['text'],'text':found['text'],'page':found['page'],'locator':loc,'positions':[pos],'evidence':[ev],'source_context':{'official_code_absent':True,'structure_origin':'literal_source_heading','technical_key_is_not_official_code':True},'extraction_method':REV,'extraction_revision':REV,'actor_type':'automated','actor_id':'agent:data_central_south','technical_validation_status':'literal_source_heading_and_geometry_checked','pedagogical_review_status':'not_reviewed','publication_status':'extracted_candidate'};seen_types[kind]+=1
   return key

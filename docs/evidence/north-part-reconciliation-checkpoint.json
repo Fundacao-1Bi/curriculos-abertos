@@ -1,0 +1,220 @@
+{
+  "at": "2026-10-28T16:03:20.695883+00:00",
+  "actor_type": "automated",
+  "actor_id": "agent:data_north",
+  "method": "Separate acquisition, technical extraction, documentary unit/position verification and UF acceptance. Only explicit independently evidenced denominators are populated; null means not established, not zero.",
+  "parts": [
+    {
+      "uf": "AC",
+      "part": "CRU EI/EF: objetivos/capacidades/experiências/direitos dos organizadores",
+      "verified": "2191 registros;148quadros completos, confronto independente por fonte",
+      "denominator": {
+        "physical_tables": 148,
+        "items": 2191
+      },
+      "evidence": [
+        "docs/evidence/source-audit-ac/validation.json",
+        "docs/evidence/source-audit-ac/independent-reconciliation.json"
+      ],
+      "remaining": "Contexto/competências e partes normativas/edição/vigência daUF separados; este recorte não aprovaUF."
+    },
+    {
+      "uf": "AC",
+      "part": "CRU EM459p FGB/IF/anexos",
+      "verified": "Aquisição/checksum e processamento genérico disponíveis; não há censo independente próprio fechado ainda",
+      "denominator": null,
+      "remaining": "Tarefa interna sobdata_north: inventário físico/roles+sidecarsemcódigo/definição×ref e auditoria integral."
+    },
+    {
+      "uf": "AC",
+      "part": "Resolução667/2025",
+      "verified": "Ato artigos1–10 nas regiões39–40 doDOE conferido,2páginas/2seções/0warnings",
+      "denominator": {
+        "scoped_pages": 2,
+        "act_articles": 10
+      },
+      "evidence": [
+        "docs/sources-north-scope-check.json"
+      ],
+      "remaining": "Texto integral do currículo incorporado deComputação ausente; external_source_gap, não compensado pelo ato."
+    },
+    {
+      "uf": "AM",
+      "part": "EI/EF-AI/EF-AF/EM",
+      "verified": "OCR de2157p do lote concluído semfalhas de execução; posições/chapters emreview_packets e structure_sections ligados",
+      "denominator": {
+        "ocr_pages_original_lot": 2157
+      },
+      "evidence": [
+        "docs/sources-north-ocr-completion.json",
+        "docs/evidence/source-audit-am-sections/README.md"
+      ],
+      "remaining": "Reconciliação de corpos, códigosprimários e unidades/definição×ref porparte continua interna; não contarOCR ou posição como aprendizagens completas."
+    },
+    {
+      "uf": "AP",
+      "part": "EI/EF614MEC/CEDOC e339aprovado2019",
+      "verified": "614/614páginas de conteúdo idênticas entreCEDOC/MEC;339distinto nãoequiparado. CensoAP614inicial93objetivosEI+465marcadores experiências locais",
+      "denominator": {
+        "content_equivalent_pages_614": 614,
+        "EI_coded_objectives_initial": 93,
+        "EI_experience_markers_initial": 465
+      },
+      "evidence": [
+        "docs/evidence/source-audit-cedoc-ap-pb/ap-614-mec-cedoc-comparison.json",
+        "docs/evidence/source-audit-ap-eief/ap614-source-census.json"
+      ],
+      "remaining": "Adapter/contraprova porquadros e campos,EFmulti-coluna econtinuações; livro339OCR requerconfronto. Tarefa interna pb_independent; semaceiteUF."
+    },
+    {
+      "uf": "AP",
+      "part": "EMprincipal/focal",
+      "verified": "Principal147976903B foiobtido duasvezes com mesmoSHA, mas árvorede páginascorrompida; tentativas de reparo incompletas rejeitadas. FocalTLS/404 indisponível.",
+      "denominator": null,
+      "evidence": [
+        "docs/sources-north.md"
+      ],
+      "remaining": "External_corrupted_source eexternal_unavailable_source: nãoresolvercom PDFsEI/EF."
+    },
+    {
+      "uf": "AP",
+      "part": "Parecer043/2025 eResolução001/2026",
+      "verified": "Escopo normativo80–82 doDOE incluindoapenasatoscurricularesconferido,3seções/0warnings",
+      "denominator": {
+        "scoped_pages": 3,
+        "acts": 2
+      },
+      "evidence": [
+        "docs/sources-north-scope-check.json"
+      ],
+      "remaining": "Não substituicurrículoEMdanificado; integração deato emdataset normativo nãoéaprendizagemEM."
+    },
+    {
+      "uf": "RO",
+      "part": "8fontes EI/EF/EM/Computação/eletivas/matrizes/IF",
+      "verified": "Censo físico2060p/8fontes comSourceSHAs concluído pela frenteindependente",
+      "denominator": {
+        "sources": 8,
+        "physical_pages": 2060
+      },
+      "evidence": [
+        "docs/evidence/source-audit-ro/physical-census.json"
+      ],
+      "remaining": "SidecarEI173comdireitos/competências/sínteses iniciado porflat; matrizes2026p6–11/2025p8–19raster exigemOCR verificado. Tarefa interna exclusiva flat_json_import, semoverlap."
+    },
+    {
+      "uf": "RR",
+      "part": "4fontes EI/EF/EM/matrizes/tempo-integral",
+      "verified": "Aquisição/checksums; ainda semcenso independente de partes/objetivos fechado nesta frente",
+      "denominator": null,
+      "remaining": "Tarefa interna data_north, precisa inventários físicos e papéis das células antes alegarcompletude."
+    },
+    {
+      "uf": "PA",
+      "part": "8fontes versõesEI/EF361/620,EM646,Computação+atos2025/2026",
+      "verified": "Arquivosacessíveisadquiridos/checksums; versões deEI/EFaindasemreconciliaçãoeditorial; semcenso independentesemântico fechado",
+      "denominator": null,
+      "remaining": "Tarefa interna data_north: inventários físicos porparte, versões/atos/apensos,objetivossemcódigo e definição×ref. Nenhum bloqueio externo documentado para substituir essetrabalho."
+    },
+    {
+      "uf": "TO",
+      "part": "65fontes:EI/EF,cadernosEM,anexosFGB,IF,trilhas,eletivas,FTP,guias",
+      "verified": "Coleta/checksum eíndicecoleção; semdenominador independente fechado porparte/caderno/trilha",
+      "denominator": null,
+      "remaining": "Tarefa interna data_north: inventário porparte e reconciliação de todoescopo, sem somar PDFs/links comocobertura."
+    }
+  ],
+  "UF_ready_claims": [],
+  "external_source_gaps": [
+    "AP_EM_corrupted_primary_and_unavailable_focal",
+    "AC_Computacao_full_curriculum_incorporated_by667_not_obtained"
+  ],
+  "all_other_remaining_work_classification": "Internal implementation/source-inventory/reconciliation unless future primary evidence establishes a specific external blocker.",
+  "latest_checkpoint_at": "2026-10-28T16:48:15.349790+00:00",
+  "latest_serial_integrations": [
+    {
+      "source_id": "ac-cru-em",
+      "part": "PV/Pós-Médio: body and annex Habilidades and annex COMPETÊNCIA",
+      "records": 158,
+      "objectives": 146,
+      "competency_cells": 6,
+      "independently_verified": true,
+      "actual_source_binding": true,
+      "proof_path": "docs/evidence/source-audit-ac-em/pv-binding-verification.json",
+      "remaining": "Other FGB/IF/narrative/content columns; artifact ends with Anexo2title only; no external network failure inferred."
+    },
+    {
+      "source_ids": [
+        "ro-rcro-ei",
+        "ro-matrizes-2026",
+        "ro-itinerarios-2026",
+        "ro-matrizes-2025",
+        "ro-rcem-2022"
+      ],
+      "records_by_source": [
+        773,
+        42,
+        32,
+        381,
+        159
+      ],
+      "actual_source_binding": true,
+      "proof_path": "docs/evidence/north-source-bindings-verification.json",
+      "remaining": "ROowner continuing other source parts; raster annex regions11/1/12 remain unverified; EM159are references, not learning definitions."
+    }
+  ],
+  "new_candidates_not_yet_bound": [
+    {
+      "source_id": "rr-dcr-ei-ef",
+      "sidecar_path": "data/manifests/uncoded/rr-ei-organizers-items.json",
+      "sidecar_sha256": "f8a5d668ced4ab21e2223d8fb4e73926968806d1c23142e4f220f63d681ace84",
+      "records": 346,
+      "kinds": {
+        "referencia_no_documento": 1,
+        "campo_experiencia": 15,
+        "objetivo_aprendizagem": 90,
+        "experiencia_aprendizagem": 60,
+        "detalhamento_objetivo": 90,
+        "orientacao_didatica": 90
+      },
+      "technical_verification": "passed",
+      "independent_review": "pending",
+      "actual_source_binding": false,
+      "proof_path": "docs/evidence/source-audit-rr/ei-organizers-adapter-report.json",
+      "whole_source_ready": false
+    },
+    {
+      "source_id": "to-dct-ei",
+      "sidecar_path": "data/manifests/uncoded/to-ei-organizers-items.json",
+      "sidecar_sha256": "5a922ebf4b2cb1dd49cf2a72c26ec37b31abab78706e14d451d2d69bf6266b6c",
+      "records": 329,
+      "kinds": {
+        "direito_aprendizagem": 30,
+        "campo_experiencia": 5,
+        "grupo_etario": 15,
+        "objetivo_aprendizagem": 93,
+        "detalhamento_objetivo": 93,
+        "experiencia_sugerida": 93
+      },
+      "technical_verification": "passed",
+      "independent_review": "pending",
+      "actual_source_binding": false,
+      "proof_path": "docs/evidence/source-audit-to/ei-organizers-adapter-report.json",
+      "whole_source_ready": false
+    }
+  ],
+  "position_context_repair": {
+    "all_north_shapes_passed": true,
+    "proof_path": "docs/evidence/north-source-bindings-verification.json",
+    "PA_AP_observational_notes_separate_from_literal_heading_quotes": true,
+    "RO_EM_position_cells_materialized_as_references_without_page_code_union": true
+  },
+  "AM_private_primary_assets": {
+    "relocation_inventory": "docs/evidence/source-audit-am-sections/primary-assets-relocation.json",
+    "images": 92,
+    "bytes": 58097546,
+    "original_bytes_preserved": true,
+    "images_publicly_redistributable_claimed": false
+  },
+  "whole_UF_ready_claimed": false
+}

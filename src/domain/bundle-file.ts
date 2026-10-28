@@ -4,7 +4,7 @@ import { createHash } from 'node:crypto';
 import { gunzipSync } from 'node:zlib';
 import type { Bundle } from '../shared/contracts';
 export interface BundleFileExpected {sha256?:string;bytes?:number;decoded_sha256?:string;decoded_bytes?:number;}
-export interface BundleFileOptions {root?:string;expected?:BundleFileExpected;maxFileBytes?:number;maxDecodedBytes?:number;}
+export interface BundleFileOptions {root?:string;expected?:BundleFileExpected;maxFileBytes?:number;maxDecodedBytes?:number;schemaRoot?:string;}
 function bound(value:number|undefined,fallback:number):number {const selected=value??fallback;if(!Number.isSafeInteger(selected)||selected<1||selected>2_147_483_647)throw Error('Limite de tamanho de bundle inválido.');return selected;}
 const sha=(value:Buffer)=>createHash('sha256').update(value).digest('hex');
 function hash(value:unknown):value is string{return typeof value==='string'&&/^[a-f0-9]{64}$/.test(value);}

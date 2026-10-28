@@ -1,0 +1,108 @@
+{
+  "at": "2026-10-28T16:18:38.617532+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast:source_visual_inventory",
+  "source_id": "pi-resolucao-188-2025",
+  "artifact_sha256": "154db33551a1501916dca9eaf9ba1e428d2cb4f9bb3dec41603343be2416ad10",
+  "method": "Visual reading of both complete original pages using existing private renders. Expected units fixed before OCR/extracted candidate IDs. This is an inventory, not an extracted transcript or completed reconciliation.",
+  "source_pages": 2,
+  "native_text_is_image_only": true,
+  "requires_ocr": true,
+  "parts": [
+    {
+      "part_key": "resolution_body",
+      "page_range": [
+        1,
+        1
+      ],
+      "expected_source_units": [
+        "resolution_title_188_2025",
+        "ementa_approves_parecer190_computation_eiefem",
+        "authority_preamble_president_in_exercise",
+        "considerando_process_request",
+        "considerando_plenary_16dec2025",
+        "resolve_marker",
+        "article_1_approves_parecer190",
+        "plenary_session_venue_and_date",
+        "president_name_and_public_function"
+      ]
+    },
+    {
+      "part_key": "homologation",
+      "page_range": [
+        1,
+        2
+      ],
+      "expected_source_units": [
+        "homologation_statement_page1_continues_with_signature_page2",
+        "secretary_name_and_public_function"
+      ]
+    },
+    {
+      "part_key": "document_authentication_context",
+      "page_range": [
+        2,
+        2
+      ],
+      "expected_source_units": [
+        "electronic_attestation_president_18dec2025",
+        "electronic_attestation_secretary_19dec2025",
+        "public_sei_authenticity_check_notice",
+        "process_and_document_identification_footer"
+      ],
+      "type": "documentary_authenticity_metadata_not_curricular_learning"
+    }
+  ],
+  "expected_normative_article_count": 1,
+  "expected_considerando_count": 2,
+  "expected_anexos_in_this_pdf": 0,
+  "cross_page_requirement": "The HOMOLOGO statement is on page1 and its secretary signature/function on page2; preserve both fragments and parent relationship.",
+  "dates_distinguished": {
+    "printed_act_header": "2025-12-18",
+    "plenary_decision": "2025-12-16",
+    "president_electronic_attestation": "2025-12-18",
+    "secretary_homologation_electronic_attestation": "2025-12-19",
+    "render_print_timestamp": "2025-12-22",
+    "notes": "Print timestamp, electronic attestation and act/plenary dates are distinct; no cryptographic signature validation or current application inferred. Catalogue15Dec conflict remains recorded."
+  },
+  "scope": {
+    "stages_explicitly_named": [
+      "EI",
+      "EF",
+      "EM"
+    ],
+    "component": "Computação",
+    "related_source_id": "pi-parecer-190-2025",
+    "relationship": "Article1 approves that opinion; the resolution does not itself contain the complete EI/EF/EM curriculum text."
+  },
+  "private_render_paths": [
+    "var/private-evidence/source-audit-northeast/pi-res188-p1.png",
+    "var/private-evidence/source-audit-northeast/pi-res188-p2.png"
+  ],
+  "extracted_learning_denominator": null,
+  "reconciliation_status": "peer_verified_act_partition_current_extraction_config_refresh_pending",
+  "human_pedagogical_review": false,
+  "UF_ready": false,
+  "public_context_part": {
+    "part_key": "public_document_context",
+    "expected_source_units": [
+      "issuer_heading_and_public_contact",
+      "process_and_act_header_date",
+      "process_and_document_identification_footer"
+    ],
+    "page_range": [
+      1,
+      2
+    ],
+    "method": "Issuer/contact line and process+date header visually read onPDF1; publicSEIfooter read onPDF2. Process/dateareonecontextnode; peerindependentlycounted15publicvisualunits,groupingthispairgives14typednodes."
+  },
+  "expected_public_documentary_records": 14,
+  "expected_public_normative_records": 11,
+  "private_context_units": [
+    "electronic_attestation_president_18dec2025",
+    "electronic_attestation_secretary_19dec2025",
+    "public_sei_authenticity_check_notice"
+  ],
+  "private_context_policy": "Raw complete original/OCR retained privately; not curricular statements and not additional public act nodes. Public normative body/homologation are unabridged.",
+  "secondary_peer_path": "docs/evidence/source-audit-pi-res188-peer/peer-verification.json"
+}
