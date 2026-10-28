@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-10-28T04:06:12.991Z",
+  "completed_at": "2026-10-28T04:06:18.163Z",
+  "runtime": "public.ecr.aws/docker/library/node@sha256:efd0ab5780c2d9ab1f0f869571a00d5edb17793bff4cce4a2792e3eb0ffc7562",
+  "platform": "linux/amd64",
+  "image": "curriculos-abertos:local",
+  "commands": [
+    [
+      "docker",
+      "image",
+      "inspect",
+      "public.ecr.aws/docker/library/node@sha256:efd0ab5780c2d9ab1f0f869571a00d5edb17793bff4cce4a2792e3eb0ffc7562"
+    ],
+    [
+      "docker",
+      "create",
+      "--platform",
+      "linux/amd64",
+      "--name",
+      "curriculos-build-a47f1aa4-97a",
+      "--cpus",
+      "4",
+      "--memory",
+      "6g",
+      "--entrypoint",
+      "sh",
+      "curriculos-runtime-tools:node22-pdf-v1",
+      "-c",
+      "trap \"exit 0\" TERM INT; while :; do sleep 30; done"
+    ],
+    [
+      "docker",
+      "start",
+      "curriculos-build-a47f1aa4-97a"
+    ],
+    [
+      "docker",
+      "exec",
+      "--user",
+      "root",
+      "curriculos-build-a47f1aa4-97a",
+      "sh",
+      "-c",
+      "mkdir -p /app /app/var /app/data/raw /app/data/extracted"
+    ],
+    [
+      "tar",
+      "--no-xattrs",
+      "-cf",
+      "var/build-context-f1971905-a767-42f7-87ad-709bd9cfad4a.tar",
+      "--exclude=.env",
+      "--exclude=.env.local",
+      "--exclude=node_modules",
+      "--exclude=.next",
+      "--exclude=.git",
+      "--exclude=.venv",
+      "--exclude=var",
+      "--exclude=data/raw",
+      "--exclude=data/extracted",
+      "package.json",
+      "package-lock.json"
+    ],
+    [
+      "docker",
+      "cp",
+      "-",
+      "curriculos-build-a47f1aa4-97a:/app"
+    ],
+    [
+      "docker",
+      "exec",
+      "--user",
+      "root",
+      "--workdir",
+      "/app",
+      "curriculos-build-a47f1aa4-97a",
+      "npm",
+      "ci"
+    ]
+  ],
+  "source_tree_sha256": "",
+  "passed": false,
+  "error": "docker exec terminou com código 1."
+}

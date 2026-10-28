@@ -1,0 +1,114 @@
+{
+  "started_at": "2026-10-28T04:06:01.153Z",
+  "base": "http://localhost:3000",
+  "client": "@modelcontextprotocol/sdk Client",
+  "sdk": "1.32.2",
+  "protocol_advertised": "2025-11-25",
+  "protocol_supported": [
+    "2025-11-25",
+    "2025-06-18",
+    "2025-03-26",
+    "2024-11-05",
+    "2024-10-07"
+  ],
+  "results": [
+    {
+      "transport": "http",
+      "server": {
+        "name": "curriculos-abertos",
+        "version": "0.1.0"
+      },
+      "capabilities": {
+        "tools": {
+          "listChanged": true
+        }
+      },
+      "protocol_negotiated": "2025-11-25",
+      "checks": [
+        "initialize",
+        "tools/list",
+        "consultar_publicacoes",
+        "buscar_aprendizagens",
+        "consultar_aprendizagens",
+        "buscar_aprendizagens",
+        "buscar_aprendizagens",
+        "consultar_panorama_bncc",
+        "comparar_curriculos",
+        "consultar_correspondencias",
+        "listar_curriculos",
+        "consultar_analises",
+        "consultar_fontes",
+        "consultar_cobertura",
+        "invalid_input",
+        "controlled_error",
+        "api_consistency"
+      ],
+      "success": true,
+      "tools": [
+        "listar_curriculos",
+        "buscar_aprendizagens",
+        "consultar_aprendizagens",
+        "consultar_correspondencias",
+        "consultar_panorama_bncc",
+        "comparar_curriculos",
+        "consultar_analises",
+        "consultar_fontes",
+        "consultar_cobertura",
+        "consultar_publicacoes"
+      ],
+      "publication": "ca-77fb8076598b567e1ba3",
+      "real_item_id": "ca:df-cm-em:2b81674fc578d77bc751",
+      "national_item_id": "ca:br-bncc-2018:EF01CI01",
+      "data_failures": []
+    },
+    {
+      "transport": "stdio",
+      "server": {
+        "name": "curriculos-abertos",
+        "version": "0.1.0"
+      },
+      "capabilities": {
+        "tools": {
+          "listChanged": true
+        }
+      },
+      "checks": [
+        "initialize",
+        "tools/list",
+        "consultar_publicacoes",
+        "buscar_aprendizagens",
+        "consultar_aprendizagens",
+        "buscar_aprendizagens",
+        "buscar_aprendizagens",
+        "consultar_panorama_bncc",
+        "comparar_curriculos",
+        "consultar_correspondencias",
+        "listar_curriculos",
+        "consultar_analises",
+        "consultar_fontes",
+        "consultar_cobertura",
+        "invalid_input",
+        "controlled_error",
+        "api_consistency"
+      ],
+      "success": true,
+      "tools": [
+        "listar_curriculos",
+        "buscar_aprendizagens",
+        "consultar_aprendizagens",
+        "consultar_correspondencias",
+        "consultar_panorama_bncc",
+        "comparar_curriculos",
+        "consultar_analises",
+        "consultar_fontes",
+        "consultar_cobertura",
+        "consultar_publicacoes"
+      ],
+      "publication": "ca-77fb8076598b567e1ba3",
+      "real_item_id": "ca:df-cm-em:2b81674fc578d77bc751",
+      "national_item_id": "ca:br-bncc-2018:EF01CI01",
+      "data_failures": []
+    }
+  ],
+  "success": true
+}

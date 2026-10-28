@@ -1,0 +1,28 @@
+
+> curriculos-abertos@0.1.0 test
+> tsx scripts/test-all.ts
+
+{"event":"test_database_ready","container":"ca-tests-8535d0dc4e3c","database":"curriculum_test_8535d0dc4e3c","files":3,"fixture_policy":"Isolated test database only; published data untouched."}
+✔ consulta aceita aliases e fixa paginação/publicação sem alterar código (45.449917ms)
+✔ comparação livre exige 2 ou 3 UFs distintas e lote preserva entrada inválida por item (18.0625ms)
+✔ contribuição admite URL relativa, restringe protocolos e evita campos privados inesperados (1.235208ms)
+✔ HTTP recusa DNS rebinding e origem não autorizada sem confiar em proxy automaticamente (139.952959ms)
+✔ leitor JSON aplica teto ao corpo recebido, inclusive sem content-length (11.900875ms)
+✔ OpenAPI documenta todas operações obrigatórias, exports e contribuições (0.675709ms)
+{"event":"migration_applied","name":"001-domain.sql","sha256":"8f510934477eb058263031f4208d105fb7cbe4a85ecd9f148b0fb9bafbb3ac46"}
+{"event":"migration_applied","name":"002-admin.sql","sha256":"8f30dfff0ba46b80f83f02d1d9d1cc44d198d2f750221b8952e72c31e62cf98b"}
+{"event":"migration_applied","name":"003-draft-revision.sql","sha256":"c49d8af72a677786111c14443fbc238431fe69f4934d634285ece8040ec7c576"}
+✔ bundle validation rejects duplicate IDs, dangling sources and missing localizers (167.259833ms)
+✔ CSV neutralizes executable formulas and quotes without altering canonical JSON (0.499083ms)
+✔ real PostgreSQL contracts and filters (324.363209ms)
+✔ immutable import, snapshot pinning and auditable rollback (87.579833ms)
+✔ evidência exige código/publicação e artefatos íntegros, nunca somente um pronto manual (8.452833ms)
+✔ hash de código muda com alteração e independe de docs de progresso (3.015ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3342.586666

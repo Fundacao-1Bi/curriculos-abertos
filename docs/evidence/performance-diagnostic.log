@@ -1,0 +1,53 @@
+{
+  "publication": "ca-77fb8076598b567e1ba3",
+  "requests": 200,
+  "concurrency": 10,
+  "distributions": [
+    {
+      "operation": "id",
+      "requests": 40,
+      "p50_ms": 130.04533300000003,
+      "p95_ms": 258.3197909999999,
+      "target_p95_ms": 500,
+      "errors": 0,
+      "passed": true
+    },
+    {
+      "operation": "code",
+      "requests": 40,
+      "p50_ms": 114.71058399999993,
+      "p95_ms": 221.96691599999986,
+      "target_p95_ms": 500,
+      "errors": 0,
+      "passed": true
+    },
+    {
+      "operation": "search",
+      "requests": 40,
+      "p50_ms": 619.5766669999994,
+      "p95_ms": 996.7357499999998,
+      "target_p95_ms": 1500,
+      "errors": 0,
+      "passed": true
+    },
+    {
+      "operation": "panorama",
+      "requests": 40,
+      "p50_ms": 240.63616700000057,
+      "p95_ms": 423.172333,
+      "target_p95_ms": 1500,
+      "errors": 0,
+      "passed": true
+    },
+    {
+      "operation": "compare",
+      "requests": 40,
+      "p50_ms": 261.3831659999996,
+      "p95_ms": 403.18945800000006,
+      "target_p95_ms": 3000,
+      "errors": 0,
+      "passed": true
+    }
+  ],
+  "exit_code": 0
+}

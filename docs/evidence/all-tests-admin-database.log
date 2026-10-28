@@ -1,0 +1,44 @@
+{"event":"test_database_ready","mode":"explicit_admin_connection","database":"curriculum_test_7bafc6f073c2","files":6,"fixture_policy":"Isolated owned test database only; published data untouched."}
+✔ consulta aceita aliases e fixa paginação/publicação sem alterar código (13.059625ms)
+✔ comparação livre exige 2 ou 3 UFs distintas e lote preserva entrada inválida por item (9.600166ms)
+✔ contribuição admite URL relativa, restringe protocolos e evita campos privados inesperados (0.782042ms)
+✔ HTTP recusa DNS rebinding e origem não autorizada sem confiar em proxy automaticamente (48.391417ms)
+✔ leitor JSON aplica teto ao corpo recebido, inclusive sem content-length (3.371959ms)
+✔ OpenAPI documenta todas operações obrigatórias, exports e contribuições (0.151583ms)
+✔ exportação valida contexto antes de enfileirar trabalho persistente (2.825667ms)
+✔ limite de uso recusa excesso com retry-after sem ampliar confiança no proxy (0.508833ms)
+✔ JSON nacional é validado registro a registro e reconcilia contagens/IDs/texto/evidência (34.335625ms)
+✔ CSV incremental preserva JSON relacionado com vírgulas/aspas/quebras de linha e rejeita perda de referência (11.102875ms)
+✔ download usa bytes em fluxo e confere SHA256 sem Response.text/JSON.parse nacional (55.988625ms)
+✔ auditor lê todas partes e compara amostra por conteúdo, independente da ordem JSONB (121.146833ms)
+✔ erro semântico na última parte de itens é encontrado, sem aceitar apenas manifesto/primeira parte (23.935042ms)
+✔ corrupção gzip, checksum decodificado e parte fora da raiz bloqueiam a inspeção (58.872583ms)
+✔ compressed bundle verifies compressed and decoded checksums with bounded decompression (20.392667ms)
+✔ uncompressed bundle requires a matching artifact hash and rejects root traversal (4.983333ms)
+{"event":"migration_applied","name":"001-domain.sql","sha256":"8f510934477eb058263031f4208d105fb7cbe4a85ecd9f148b0fb9bafbb3ac46"}
+{"event":"migration_applied","name":"002-admin.sql","sha256":"8f30dfff0ba46b80f83f02d1d9d1cc44d198d2f750221b8952e72c31e62cf98b"}
+{"event":"migration_applied","name":"003-draft-revision.sql","sha256":"c49d8af72a677786111c14443fbc238431fe69f4934d634285ece8040ec7c576"}
+{"event":"migration_applied","name":"004-domain-search.sql","sha256":"73ee404adf457f74d21e5133f1f08fd4d15a73454cdf676f58b58e281056d4d2"}
+{"event":"migration_applied","name":"005-domain-metadata.sql","sha256":"e9fdf7dcfb11634dc3f443780b5446e40e907d1c4b9f3d7e435d442f4b5f2def"}
+{"event":"migration_applied","name":"006-relational-publications.sql","sha256":"e0061e134edb154711ae3fcaf51b0a92bbe5b21d47231775c451e8f49462803f"}
+{"event":"migration_applied","name":"007-hierarchy-and-code-aliases.sql","sha256":"476e0917a8068a9b452d07548ac6b2b9a1904188ba7478a9050506d6f4818ec0"}
+✔ bundle validation rejects duplicate IDs, dangling sources and missing localizers (199.922ms)
+✔ CSV neutralizes executable formulas and quotes without altering canonical JSON (0.380167ms)
+✔ real PostgreSQL contracts and filters (451.933875ms)
+✔ immutable import, snapshot pinning and auditable rollback (137.698875ms)
+✔ positionless items remain unknown and enter year filters only through explicit option and documented source context (58.345ms)
+✔ destructive integration guard validates the database path rather than credentials/host substrings (0.614ms)
+✔ real sharded import verifies every part before atomic promotion and streams self-contained snapshots (158.363166ms)
+✔ curation clones relational snapshots without embedding collections or turning publication approval into pedagogy (103.689417ms)
+✔ documented code aliases preserve canonical glyphs and hierarchy supports direct child navigation (33.958666ms)
+✔ evidência exige código/publicação e artefatos íntegros, nunca somente um pronto manual (7.584584ms)
+✔ hash de código muda com alteração e independe de docs de progresso (4.51725ms)
+✔ gate recusa execução de navegador filtrada ou teste parcial antes de iniciar processo (1.222958ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5122.358792

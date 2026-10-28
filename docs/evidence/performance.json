@@ -1,0 +1,121 @@
+{
+  "producer": "scripts/qa-performance.ts",
+  "command": "npx tsx scripts/qa-performance.ts",
+  "started_at": "2026-10-28T04:05:45.935Z",
+  "completed_at": "2026-10-28T04:05:52.737Z",
+  "publication": "ca-77fb8076598b567e1ba3",
+  "environment": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "cpus": 10,
+    "cpu": "Apple M4",
+    "memory_bytes": 25769803776,
+    "node": "v25.2.1",
+    "reference": "4 vCPU / 8 GB; medição no host entregue, sem normalizar metas"
+  },
+  "dataset": {
+    "visible_total": 38322,
+    "local_count": 200
+  },
+  "scope_note": "Medição sobre a publicação identificada; completude nacional é verificada separadamente pelo gate documental.",
+  "concurrency": 10,
+  "requests": 200,
+  "initial": [
+    {
+      "kind": "id",
+      "ms": 25.465333999999984,
+      "status": 200,
+      "ok": true
+    },
+    {
+      "kind": "code",
+      "ms": 27.89133300000003,
+      "status": 200,
+      "ok": true
+    },
+    {
+      "kind": "search",
+      "ms": 343.15999999999997,
+      "status": 200,
+      "ok": true
+    },
+    {
+      "kind": "panorama",
+      "ms": 43.113249999999994,
+      "status": 200,
+      "ok": true
+    },
+    {
+      "kind": "compare",
+      "ms": 140.53429100000005,
+      "status": 200,
+      "ok": true
+    }
+  ],
+  "distributions": [
+    {
+      "operation": "id",
+      "requests": 40,
+      "p50_ms": 130.04533300000003,
+      "p95_ms": 258.3197909999999,
+      "target_p95_ms": 500,
+      "errors": 0,
+      "passed": true
+    },
+    {
+      "operation": "code",
+      "requests": 40,
+      "p50_ms": 114.71058399999993,
+      "p95_ms": 221.96691599999986,
+      "target_p95_ms": 500,
+      "errors": 0,
+      "passed": true
+    },
+    {
+      "operation": "search",
+      "requests": 40,
+      "p50_ms": 619.5766669999994,
+      "p95_ms": 996.7357499999998,
+      "target_p95_ms": 1500,
+      "errors": 0,
+      "passed": true
+    },
+    {
+      "operation": "panorama",
+      "requests": 40,
+      "p50_ms": 240.63616700000057,
+      "p95_ms": 423.172333,
+      "target_p95_ms": 1500,
+      "errors": 0,
+      "passed": true
+    },
+    {
+      "operation": "compare",
+      "requests": 40,
+      "p50_ms": 261.3831659999996,
+      "p95_ms": 403.18945800000006,
+      "target_p95_ms": 3000,
+      "errors": 0,
+      "passed": true
+    }
+  ],
+  "assertions": [
+    {
+      "name": "mandatory_operations_present",
+      "passed": true
+    },
+    {
+      "name": "200_requests_10_clients",
+      "passed": true
+    },
+    {
+      "name": "no_application_errors",
+      "passed": true
+    },
+    {
+      "name": "latency_targets",
+      "passed": true
+    }
+  ],
+  "exit_code": 0
+}

@@ -1,0 +1,402 @@
+{
+  "producer": "scripts/domain-real-check.ts",
+  "started_at": "2026-10-28T04:00:27.612Z",
+  "completed_at": "2026-10-28T04:00:28.594Z",
+  "publication": "ca-77fb8076598b567e1ba3",
+  "scope": "Sequential service diagnostics over real loaded corpus; not HTTP load test and not evidence of national editorial completeness.",
+  "checks": [
+    {
+      "name": "ufs",
+      "ms": 31.038124999999923,
+      "details": {
+        "total": 27,
+        "ready": 0,
+        "item_count": 36555,
+        "by_uf": [
+          {
+            "uf": "AC",
+            "item_count": 863,
+            "source_count": 2,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "AL",
+            "item_count": 219,
+            "source_count": 5,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "AM",
+            "item_count": 0,
+            "source_count": 4,
+            "status": "dados_insuficientes"
+          },
+          {
+            "uf": "AP",
+            "item_count": 2016,
+            "source_count": 4,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "BA",
+            "item_count": 7,
+            "source_count": 6,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "CE",
+            "item_count": 3099,
+            "source_count": 5,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "DF",
+            "item_count": 1274,
+            "source_count": 12,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "ES",
+            "item_count": 7772,
+            "source_count": 33,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "GO",
+            "item_count": 600,
+            "source_count": 8,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "MA",
+            "item_count": 0,
+            "source_count": 2,
+            "status": "dados_insuficientes"
+          },
+          {
+            "uf": "MG",
+            "item_count": 236,
+            "source_count": 5,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "MS",
+            "item_count": 511,
+            "source_count": 5,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "MT",
+            "item_count": 2352,
+            "source_count": 7,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "PA",
+            "item_count": 6275,
+            "source_count": 8,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "PB",
+            "item_count": 0,
+            "source_count": 2,
+            "status": "dados_insuficientes"
+          },
+          {
+            "uf": "PE",
+            "item_count": 201,
+            "source_count": 5,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "PI",
+            "item_count": 465,
+            "source_count": 4,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "PR",
+            "item_count": 336,
+            "source_count": 9,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "RJ",
+            "item_count": 317,
+            "source_count": 6,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "RN",
+            "item_count": 345,
+            "source_count": 9,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "RO",
+            "item_count": 19,
+            "source_count": 8,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "RR",
+            "item_count": 0,
+            "source_count": 2,
+            "status": "dados_insuficientes"
+          },
+          {
+            "uf": "RS",
+            "item_count": 1203,
+            "source_count": 4,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "SC",
+            "item_count": 1339,
+            "source_count": 12,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "SE",
+            "item_count": 2037,
+            "source_count": 10,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "SP",
+            "item_count": 1327,
+            "source_count": 3,
+            "status": "processamento_parcial"
+          },
+          {
+            "uf": "TO",
+            "item_count": 3742,
+            "source_count": 63,
+            "status": "processamento_parcial"
+          }
+        ]
+      }
+    },
+    {
+      "name": "national_lookup",
+      "ms": 10.147000000000048,
+      "details": {
+        "total": 1767,
+        "id": "ca:br-bncc-2018:EF01CI01",
+        "code": "EF01CI01"
+      }
+    },
+    {
+      "name": "exact_code",
+      "ms": 15.913457999999991,
+      "details": {
+        "total": 40,
+        "returned": 5,
+        "next": "/api/v1/aprendizagens?publication=ca-77fb8076598b567e1ba3&q=EF01CI01&limit=5&page=2"
+      }
+    },
+    {
+      "name": "get_national_item",
+      "ms": 8.004541999999901,
+      "details": {
+        "id": "ca:br-bncc-2018:EF01CI01",
+        "source_id": "br-bncc-2018",
+        "evidence": 1,
+        "relations": 8
+      }
+    },
+    {
+      "name": "panorama",
+      "ms": 29.933042,
+      "details": {
+        "uf_count": 27,
+        "total_local_items": 8,
+        "states": [
+          {
+            "uf": "AC",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "AL",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "AM",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "AP",
+            "status": "correspondencia_documentada",
+            "total": 1
+          },
+          {
+            "uf": "BA",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "CE",
+            "status": "correspondencia_documentada",
+            "total": 3
+          },
+          {
+            "uf": "DF",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "ES",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "GO",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "MA",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "MG",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "MS",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "MT",
+            "status": "correspondencia_documentada",
+            "total": 1
+          },
+          {
+            "uf": "PA",
+            "status": "correspondencia_documentada",
+            "total": 2
+          },
+          {
+            "uf": "PB",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "PE",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "PI",
+            "status": "correspondencia_documentada",
+            "total": 1
+          },
+          {
+            "uf": "PR",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "RJ",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "RN",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "RO",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "RR",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "RS",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "SC",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "SE",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "SP",
+            "status": "dados_insuficientes",
+            "total": 0
+          },
+          {
+            "uf": "TO",
+            "status": "dados_insuficientes",
+            "total": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "compare_three_ufs",
+      "ms": 322.65154199999995,
+      "details": {
+        "comparable": true,
+        "columns": [
+          {
+            "uf": "SP",
+            "total": 1327,
+            "returned": 5
+          },
+          {
+            "uf": "MG",
+            "total": 236,
+            "returned": 5
+          },
+          {
+            "uf": "PR",
+            "total": 336,
+            "returned": 5
+          }
+        ],
+        "shared_references": 0
+      }
+    },
+    {
+      "name": "analyses",
+      "ms": 490.1385,
+      "details": {
+        "unique_items": 12539,
+        "relations": 9882,
+        "matrix_total": 1408,
+        "matrix_returned": 5
+      }
+    },
+    {
+      "name": "publications",
+      "ms": 31.149541,
+      "details": {
+        "total": 2,
+        "ids": [
+          "ca-77fb8076598b567e1ba3",
+          "ca-64e60bb2c92be368dcd7"
+        ]
+      }
+    }
+  ],
+  "exit_code": 0
+}

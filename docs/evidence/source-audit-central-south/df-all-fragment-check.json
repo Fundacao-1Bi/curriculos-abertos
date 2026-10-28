@@ -1,0 +1,28 @@
+{
+  "actor_type": "automated",
+  "method": "independent-native-word-center-region-validation-all-fragments",
+  "extraction_revision": "df-objective-columns-v1.1.0",
+  "records": 2659,
+  "fragments_verified": 2785,
+  "failures": [
+    {
+      "page": 88,
+      "source_id": "df-cm-ef-2018",
+      "locator": "df-objective-column:2/bullet:3",
+      "expected": "Explorar a criação artística por meio de fotografias, vídeos, áudios e outros.",
+      "found": "Explorar a criação artística fotografias, por vídeos, meio de áudios e outros.",
+      "visual_review": {
+        "actor_type": "automated",
+        "actor_id": "agent:data_central_south",
+        "result": "adapter_text_verified_in_render",
+        "image_path": "docs/evidence/source-audit-central-south/df-cm-ef-2018-p88.png",
+        "image_sha256": "5b3233644cfe4ff9afa1b47a5fa3143fef56da9aaa9aef63466f030b41677f95",
+        "note": "A posição visual confirma por meio de fotografias, vídeos, áudios e outros; ordem nativa de words intercala linhas da célula."
+      }
+    }
+  ],
+  "adapter_sha256": "cda5ac5a2c58e0734a7f7164d9490d096b75fea1c7a52841ef556b098128e892",
+  "actor_id": "agent:data_central_south",
+  "fragments_verified_by_visual_review": 1,
+  "unresolved_failures": 0
+}

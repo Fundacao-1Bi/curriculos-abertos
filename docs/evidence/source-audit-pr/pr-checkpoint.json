@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "path": "data/manifests/uncoded/pr-digital.py",
+      "sha256": "7c5b05bb519cf6c151c119d8202047796512b038febaf441ea355ead9fee642f"
+    },
+    {
+      "path": "data/manifests/uncoded/pr-extract.py",
+      "sha256": "3854c8e4a1e34ef9db63cd309ff18066a9108779bdc5bc1b05b14f8d657f9f04"
+    },
+    {
+      "path": "data/manifests/uncoded/pr-verify.py",
+      "sha256": "abee6cb8bd4934d210f99c3df204ac08c5713602567e3d516419ef345b1c5289"
+    }
+  ],
+  "source_id": "pr-referencial-eief-2025",
+  "source_sha256": "ce72aefb003c006d41e0912bc0744eaf2fb6dfca941d6de716293b593a495f46",
+  "output_sha256": "91073732d14d44f735ab000d6b5473a73e526d08b3c8a4edd19f55faba1c3ad3",
+  "status": "implemented_executed_verified_local_adapter",
+  "pending": [
+    "Independent agent audit",
+    "Central pipeline ingestion/import and integrated journeys for this source",
+    "Reconciliation of coded items and remaining mandatory PR sources"
+  ],
+  "remote_actions": false,
+  "human_review": false
+}

@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-10-28T04:19:42.088140+00:00",
+  "actor_type": "automated",
+  "method": "anonymous-official-registry-v2-verified-docker-archive-local-load",
+  "sources": [
+    "https://github.com/docker-library/official-images",
+    "https://nodejs.org/en/download/archive/v22.23.4",
+    "https://www.postgresql.org/support/security/17/"
+  ],
+  "images": [
+    {
+      "repository": "library/node",
+      "tag": "node:22.23.4-bookworm-slim",
+      "platform": "linux/arm64",
+      "index_digest": "sha256:de170b39439eb0e5a3444ad7d60b015614a381e10fecae2e30ec9e735122f38d",
+      "manifest_digest": "sha256:ceb43e5c219139035fb742900629e4abed89fe0997f7c03250c499e1f2710c9e",
+      "config_digest": "sha256:7323ec8ada5c53c30d18c1d92134274097efa099b4ecb810d65a613a32da973e",
+      "image_id": "sha256:0ad4c2bbb7c43cdb0b7b1726ef3a8485174f477596942378b548ee60d4e229e6",
+      "repo_digests": [
+        "node@sha256:0ad4c2bbb7c43cdb0b7b1726ef3a8485174f477596942378b548ee60d4e229e6"
+      ],
+      "version_output": "v22.23.4",
+      "layers": [
+        {
+          "compressed_sha256": "sha256:41b2195c355367079ebad200f9591fe3c2cb886c3b1e67abaaf2090dc11c04d9",
+          "compressed_bytes": 28138425,
+          "diff_id": "sha256:3b7c7ecdb9b2a2a7651551c07dc748fee9e27902c8b88c25cb3af3fbbc0a4b87",
+          "uncompressed_bytes": 100270080
+        },
+        {
+          "compressed_sha256": "sha256:10e48733c6ecb8ca0b186658d0e103d9ae7728ae2a10e79e4df4a760474ad5fe",
+          "compressed_bytes": 3308,
+          "diff_id": "sha256:f1f50388e9b5917c7e755407003b137b070a5299abf6fe98ffef0554bbe30753",
+          "uncompressed_bytes": 21504
+        },
+        {
+          "compressed_sha256": "sha256:45f4d16cf8ff92019a313bb4f67c1b5b8f5861181a5972355c2d8a057224d23e",
+          "compressed_bytes": 50022733,
+          "diff_id": "sha256:01059d6b8eb5b69280077ea50e706f5b19f62cb40e995e1a73c0a66f3f1cee86",
+          "uncompressed_bytes": 144626176
+        },
+        {
+          "compressed_sha256": "sha256:4dceb4523c022ddfcb19a6a0df4d7f341c21ab6af25a2a2d039c854237ce201a",
+          "compressed_bytes": 1713004,
+          "diff_id": "sha256:50c1ffaa0b938451cdad97b31086765d7546f3d09812c9d11e544228d9d0c96f",
+          "uncompressed_bytes": 7217152
+        },
+        {
+          "compressed_sha256": "sha256:3d414f437f98e684911193d7be6d963eec339ef59c845c7676528385b8d82b6d",
+          "compressed_bytes": 447,
+          "diff_id": "sha256:d72a2c8cab73329990739d51780198727b17bc315e2bd4d6e995822bd26c45b8",
+          "uncompressed_bytes": 3584
+        }
+      ],
+      "archive": "var/runtime-images/node/22.23.4-bookworm-slim/docker-image.tar",
+      "archive_sha256": "sha256:6be17768b8098843e12dfea26d27d0e3ca2308b1df2b95f7499fbbbacd9cc8ba",
+      "archive_bytes": 252160000,
+      "load_output": "Loaded image: node:22.23.4-bookworm-slim",
+      "verified_at": "2026-10-28T04:19:50.388549+00:00",
+      "passed": true
+    },
+    {
+      "repository": "library/postgres",
+      "tag": "postgres:17.11-bookworm",
+      "platform": "linux/arm64",
+      "index_digest": "sha256:858bb5e98eed02eb8cafbcdc007f9a65d1b613972028944a8ec2133ccaf80d27",
+      "manifest_digest": "sha256:f97ca6038b7641359fef23126949d824ac68edd8a7081b424d6a78e1f7076f8e",
+      "config_digest": "sha256:8942ba4a60918c2b98bcad5c842453a765898854a9fec87f64ec816bf44559be",
+      "image_id": "sha256:8cd540d6ac172b5f392d9c70e67dad05b54074f75a144bb32e0f4f36793ac777",
+      "repo_digests": [
+        "postgres@sha256:8cd540d6ac172b5f392d9c70e67dad05b54074f75a144bb32e0f4f36793ac777"
+      ],
+      "version_output": "postgres (PostgreSQL) 17.11 (Debian 17.11-1.pgdg12+2)",
+      "layers": [
+        {
+          "compressed_sha256": "sha256:41b2195c355367079ebad200f9591fe3c2cb886c3b1e67abaaf2090dc11c04d9",
+          "compressed_bytes": 28138425,
+          "diff_id": "sha256:3b7c7ecdb9b2a2a7651551c07dc748fee9e27902c8b88c25cb3af3fbbc0a4b87",
+          "uncompressed_bytes": 100270080
+        },
+        {
+          "compressed_sha256": "sha256:6558a0d3f15ddb510708bf4d1eb2cd43345b2d354e55f3075e6bedbc38475938",
+          "compressed_bytes": 1167,
+          "diff_id": "sha256:72d972d34277ceb4509855df55cfbe11f62b4921cc0fdcfeb6e7129aee0e1a8c",
+          "uncompressed_bytes": 12288
+        },
+        {
+          "compressed_sha256": "sha256:a19e03d5dfb12da3912123e74fb3371ecce064ea7eb1ad29dadb1e30aa5044e9",
+          "compressed_bytes": 4519571,
+          "diff_id": "sha256:1c49d01144e736c1252b3d28b872b5dc4c8e96d4ff5b3698c4a465c2f0173c16",
+          "uncompressed_bytes": 11299840
+        },
+        {
+          "compressed_sha256": "sha256:364e1feb80d71f5d2d3af96a5168d6c2c6dfd873d31cbfc7f723bc4b8f641273",
+          "compressed_bytes": 1203817,
+          "diff_id": "sha256:2bee807081156f15c76961a1c6472a522cf769e2172c92260f2944b2ee8f5041",
+          "uncompressed_bytes": 3659776
+        },
+        {
+          "compressed_sha256": "sha256:e8ba393934836f90b0a90329f1fb80bc1270384570a065f5ac733ea46e5c7fd5",
+          "compressed_bytes": 8066490,
+          "diff_id": "sha256:7e5b71a036c07394079f0c70e98cf6859118b34e80123e7b70fd8b829bd3143c",
+          "uncompressed_bytes": 25775616
+        },
+        {
+          "compressed_sha256": "sha256:b32732b44d92d11f06b205a9d64e48449383e845e89363493a56059a7a08ab4d",
+          "compressed_bytes": 1108993,
+          "diff_id": "sha256:8b0dbfd17278502eb553200211b672a97bceef35f9ddb0c5168ee4e8abc71e91",
+          "uncompressed_bytes": 3191808
+        },
+        {
+          "compressed_sha256": "sha256:aae881a2fde2a957f46a467da10767a3b77584b1020ff1d2fd26e3a9fea8836a",
+          "compressed_bytes": 116,
+          "diff_id": "sha256:18b1e7b1d2f0bb74da7f546b629130340d5e426ee5897f974f9412784d38f2c3",
+          "uncompressed_bytes": 1536
+        },
+        {
+          "compressed_sha256": "sha256:b9e10ec972e8b022113a61206bf62fa6080cb6e8a8957ae8026a68a63ecce9cc",
+          "compressed_bytes": 3142,
+          "diff_id": "sha256:64828ab8e747b40d1626f9c4e19f964af0dec268732777a285c4cd9474f37dec",
+          "uncompressed_bytes": 7680
+        },
+        {
+          "compressed_sha256": "sha256:0602aa5ac6f3338df7397e7e236e079e954637dd8184a7281b5321dd834d946a",
+          "compressed_bytes": 111147672,
+          "diff_id": "sha256:b5944f7f6c29277f511eef2d742415fa5f547755f14662275dc15ac63e5d1c9e",
+          "uncompressed_bytes": 322179584
+        },
+        {
+          "compressed_sha256": "sha256:f2257632e5f476516b5f1a23b73014a9cefb950bb846f80ca7ad112e4eeed732",
+          "compressed_bytes": 10359,
+          "diff_id": "sha256:592e358305a2ef78b32e7a6f3c785948d01f8d51742094bc03f869e3e7f14358",
+          "uncompressed_bytes": 70656
+        },
+        {
+          "compressed_sha256": "sha256:a34e0e922b48cf9c2cadec86699d6b190408669331555c27f305ac5d6fc510ff",
+          "compressed_bytes": 128,
+          "diff_id": "sha256:7b5d439a05a28add3c5908f52b857c37e370e1eae9f6241b5228b3e61a691db2",
+          "uncompressed_bytes": 2048
+        },
+        {
+          "compressed_sha256": "sha256:769a3202f9eab1542aed7fc323ca58328790ac663021820f3bcd7adce9bce08a",
+          "compressed_bytes": 166,
+          "diff_id": "sha256:ef13d81e5416b155d3e99762350affa59ca1e4002367afb6f85ce595a15cd5b3",
+          "uncompressed_bytes": 3072
+        },
+        {
+          "compressed_sha256": "sha256:1e65b45280692a81c194a21d96ddfe039a064690b3267eabc13ef4b645a50723",
+          "compressed_bytes": 6113,
+          "diff_id": "sha256:99ae96afc4156adf40183551867322da2b374a6834dd7998f01f2bf2deb2a6da",
+          "uncompressed_bytes": 20992
+        },
+        {
+          "compressed_sha256": "sha256:ae28089f608c6a1f552f13fa96b08cfb188383a29d7119c44eafea92734b827c",
+          "compressed_bytes": 182,
+          "diff_id": "sha256:5b8acf25b35a363bb302c3cf2abf9e70082f8c34f3feb343ea9ecbd1a6d7ef45",
+          "uncompressed_bytes": 3072
+        }
+      ],
+      "archive": "var/runtime-images/postgres/17.11-bookworm/docker-image.tar",
+      "archive_sha256": "sha256:d0324d6a64aaf56d5ad4ca4c812ea88d950d44c0a8b059ecef9112748f72d8be",
+      "archive_bytes": 466544640,
+      "load_output": "Loaded image: postgres:17.11-bookworm",
+      "verified_at": "2026-10-28T04:20:04.250073+00:00",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "remote_deployment": false,
+  "tokens_logged_or_persisted": false,
+  "completed_at": "2026-10-28T04:20:04.252162+00:00"
+}

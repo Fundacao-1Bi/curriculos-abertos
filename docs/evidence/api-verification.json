@@ -1,0 +1,534 @@
+{
+  "started_at": "2026-10-28T04:09:22.982Z",
+  "base": "http://localhost:3000",
+  "client": "Node fetch HTTP",
+  "checks": [
+    {
+      "name": "GET openapi.json",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET publicacoes",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET ufs?publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET ufs?publication=ca-77fb8076598b567e1ba3",
+      "status": 304,
+      "success": true
+    },
+    {
+      "name": "GET redes?publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET curriculos?publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET cobertura?publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET fontes?publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET analises?publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET correspondencias?publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET curriculos?publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET curriculos/ac%3Aac-cru-em?publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET curriculos/ac%3Aac-cru-em/estrutura?publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET fontes?publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET fontes/ac-cru-ei-ef?publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET aprendizagens?limit=2&publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET aprendizagens/ca%3Adf-cm-em%3A2b81674fc578d77bc751?publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET aprendizagens?limit=2&page=2&publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET aprendizagens?limit=1&uf=SP&publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET aprendizagens?limit=100&q=CHSA01FG&publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET aprendizagens?limit=2&q=Analisar&publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "POST aprendizagens/consulta-lote",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET aprendizagens?uf=BR&limit=1&publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET bncc/aprendizagens/ca%3Abr-bncc-2018%3AEF01CI01/panorama?publication=ca-77fb8076598b567e1ba3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "POST comparacoes",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "POST comparacoes",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "POST comparacoes",
+      "status": 400,
+      "success": true
+    },
+    {
+      "name": "POST comparacoes",
+      "status": 400,
+      "success": true
+    },
+    {
+      "name": "GET aprendizagens?limit=101",
+      "status": 400,
+      "success": true
+    },
+    {
+      "name": "GET aprendizagens?page=0",
+      "status": 400,
+      "success": true
+    },
+    {
+      "name": "GET aprendizagens?uf=ZZ",
+      "status": 400,
+      "success": true
+    },
+    {
+      "name": "GET aprendizagens?include_unpositioned=maybe",
+      "status": 400,
+      "success": true
+    },
+    {
+      "name": "GET aprendizagens?sql=select",
+      "status": 400,
+      "success": true
+    },
+    {
+      "name": "GET aprendizagens?publication=controlled-nonexistent-publication",
+      "status": 404,
+      "success": true
+    },
+    {
+      "name": "GET aprendizagens/controlled-nonexistent-id?publication=ca-77fb8076598b567e1ba3",
+      "status": 404,
+      "success": true
+    },
+    {
+      "name": "GET controlled-not-found-route",
+      "status": 404,
+      "success": true
+    },
+    {
+      "name": "POST aprendizagens/consulta-lote",
+      "status": 400,
+      "success": true
+    },
+    {
+      "name": "POST exportacoes",
+      "status": 400,
+      "success": true
+    },
+    {
+      "name": "POST exportacoes",
+      "status": 400,
+      "success": true
+    },
+    {
+      "name": "POST exportacoes",
+      "status": 400,
+      "success": true
+    },
+    {
+      "name": "POST exportacoes",
+      "status": 400,
+      "success": true
+    },
+    {
+      "name": "POST comparacoes",
+      "status": 415,
+      "success": true
+    },
+    {
+      "name": "POST comparacoes",
+      "status": 413,
+      "success": true
+    },
+    {
+      "name": "GET ufs",
+      "status": 403,
+      "success": true
+    },
+    {
+      "name": "POST contribuicoes",
+      "status": 201,
+      "success": true
+    },
+    {
+      "name": "GET contribuicoes/ea601da4-efa3-4f01-bebf-8189f3b74f95",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "POST contribuicoes",
+      "status": 400,
+      "success": true
+    },
+    {
+      "name": "POST exportacoes",
+      "status": 202,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/f3f5756a-b0fa-4688-a44e-74c256174806",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/f3f5756a-b0fa-4688-a44e-74c256174806/arquivo",
+      "status": 409,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/f3f5756a-b0fa-4688-a44e-74c256174806",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/f3f5756a-b0fa-4688-a44e-74c256174806",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/f3f5756a-b0fa-4688-a44e-74c256174806",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/f3f5756a-b0fa-4688-a44e-74c256174806",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/f3f5756a-b0fa-4688-a44e-74c256174806",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/f3f5756a-b0fa-4688-a44e-74c256174806",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/f3f5756a-b0fa-4688-a44e-74c256174806",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/f3f5756a-b0fa-4688-a44e-74c256174806",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/f3f5756a-b0fa-4688-a44e-74c256174806",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/f3f5756a-b0fa-4688-a44e-74c256174806",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/f3f5756a-b0fa-4688-a44e-74c256174806",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/f3f5756a-b0fa-4688-a44e-74c256174806/arquivo",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "POST exportacoes",
+      "status": 202,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/635c2776-0223-49ee-aad6-0241fc19f27a",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/635c2776-0223-49ee-aad6-0241fc19f27a/arquivo",
+      "status": 409,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/635c2776-0223-49ee-aad6-0241fc19f27a",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/635c2776-0223-49ee-aad6-0241fc19f27a",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/635c2776-0223-49ee-aad6-0241fc19f27a",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/635c2776-0223-49ee-aad6-0241fc19f27a",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/635c2776-0223-49ee-aad6-0241fc19f27a",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/635c2776-0223-49ee-aad6-0241fc19f27a",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/635c2776-0223-49ee-aad6-0241fc19f27a",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/635c2776-0223-49ee-aad6-0241fc19f27a",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/635c2776-0223-49ee-aad6-0241fc19f27a",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/635c2776-0223-49ee-aad6-0241fc19f27a",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/635c2776-0223-49ee-aad6-0241fc19f27a",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/635c2776-0223-49ee-aad6-0241fc19f27a",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/635c2776-0223-49ee-aad6-0241fc19f27a/arquivo",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "POST exportacoes",
+      "status": 202,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/0a701558-467f-4635-8c9f-8d98e38f0beb",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/0a701558-467f-4635-8c9f-8d98e38f0beb/arquivo",
+      "status": 409,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/0a701558-467f-4635-8c9f-8d98e38f0beb",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/0a701558-467f-4635-8c9f-8d98e38f0beb",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/0a701558-467f-4635-8c9f-8d98e38f0beb/arquivo",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "POST exportacoes",
+      "status": 202,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/ca5896ac-eee7-4548-a8b6-ad551b4cdaf1",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/ca5896ac-eee7-4548-a8b6-ad551b4cdaf1/arquivo",
+      "status": 409,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/ca5896ac-eee7-4548-a8b6-ad551b4cdaf1",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/ca5896ac-eee7-4548-a8b6-ad551b4cdaf1",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/ca5896ac-eee7-4548-a8b6-ad551b4cdaf1",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/ca5896ac-eee7-4548-a8b6-ad551b4cdaf1",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/ca5896ac-eee7-4548-a8b6-ad551b4cdaf1/arquivo",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "POST exportacoes",
+      "status": 202,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/d41617de-a5d3-407b-b53e-842d264bcac3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/d41617de-a5d3-407b-b53e-842d264bcac3/arquivo",
+      "status": 409,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/d41617de-a5d3-407b-b53e-842d264bcac3",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET exportacoes/d41617de-a5d3-407b-b53e-842d264bcac3/arquivo",
+      "status": 200,
+      "success": true
+    }
+  ],
+  "data_failures": [],
+  "publication": "ca-77fb8076598b567e1ba3",
+  "real_item_id": "ca:df-cm-em:2b81674fc578d77bc751",
+  "national_item_id": "ca:br-bncc-2018:EF01CI01",
+  "test_contribution_id": "ea601da4-efa3-4f01-bebf-8189f3b74f95",
+  "downloads": [
+    {
+      "path": "var/qa-downloads/f3f5756a-b0fa-4688-a44e-74c256174806.json",
+      "bytes": 241529822,
+      "sha256": "8e55a6fbb4a2df18c20f0b4f282597f943c0a176139ed0f2bd4c304b943a1be3",
+      "id": "ca-77fb8076598b567e1ba3",
+      "schema_version": "1.0.0",
+      "sources": 247,
+      "items": 38322,
+      "relations": 13007,
+      "coverage": 307,
+      "sample_matches": 1,
+      "max_record_bytes": 226622,
+      "parser": "stream-json@3.7.0; record-by-record",
+      "json_valid": true,
+      "references_valid": true
+    },
+    {
+      "path": "var/qa-downloads/635c2776-0223-49ee-aad6-0241fc19f27a.csv",
+      "bytes": 247018913,
+      "sha256": "ecdc4f20a78ace0e5938209987237f7abe09ddf951ff85e96bd5484e2246387d",
+      "id": "ca-77fb8076598b567e1ba3",
+      "schema_version": "1.0.0",
+      "sources": 247,
+      "items": 38322,
+      "relations": 13007,
+      "coverage": 307,
+      "sample_matches": 1,
+      "max_record_bytes": 226622,
+      "parser": "stream-json@3.7.0; record-by-record",
+      "json_valid": true,
+      "references_valid": true
+    }
+  ],
+  "exported_items": 38322,
+  "success": true,
+  "finished_at": "2026-10-28T04:10:17.381Z"
+}

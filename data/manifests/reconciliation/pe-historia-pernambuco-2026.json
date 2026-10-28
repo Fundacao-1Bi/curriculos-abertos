@@ -1,0 +1,584 @@
+{
+  "source_id": "pe-historia-pernambuco-2026",
+  "artifact_sha256": "1b7b6c325b74b580697325f1c7af59780799fbdb9582fe98a0dab63a9203a832",
+  "extraction_revision": "page-cell-v1.4.0",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast",
+  "reviewed_at": "2026-10-28T03:58:19.934170+00:00",
+  "method": "Inventário independente dos títulos e bullets do documento inteiro8p; não derivado dosIDsjáextraídos.8habilidadessemcódigo, em3trimestres, comcontinuaçãodep5ap6.",
+  "parts": [
+    {
+      "name": "História de Pernambuco",
+      "expected_item_ids": [
+        "ca:pe-historia-pernambuco-2026:cbd68117f2c615a6b47b",
+        "ca:pe-historia-pernambuco-2026:3dc75e007bfca299bde0",
+        "ca:pe-historia-pernambuco-2026:4d80afa3d5d204765779",
+        "ca:pe-historia-pernambuco-2026:c0ce6156822eb5a1719a",
+        "ca:pe-historia-pernambuco-2026:3c9d3cb1cf956d112167",
+        "ca:pe-historia-pernambuco-2026:b9e36e8bdf79c158408f",
+        "ca:pe-historia-pernambuco-2026:e29360f166f05695148b",
+        "ca:pe-historia-pernambuco-2026:d11a93036897bab6499c"
+      ],
+      "verified_item_ids": [],
+      "expected_components": [
+        "História de Pernambuco"
+      ],
+      "page_ranges": [
+        [
+          3,
+          8
+        ]
+      ],
+      "sample_item_ids": [],
+      "evidence": [
+        {
+          "page": 3,
+          "section": "Título e área",
+          "excerpt": "HISTÓRIA DE PERNAMBUCO - 2° ano - ENSINO MÉDIO",
+          "verification": "Cabeçalho explícito fixa etapa/série, sem inferir pela ordem das tabelas."
+        },
+        {
+          "page": 5,
+          "section": "I-TRIMESTRE / IV-HabilidadesdoIFA",
+          "excerpt": "IV- Habilidades do IFA:",
+          "verification": "3bullets, terceirocontinua na página6"
+        },
+        {
+          "page": 7,
+          "section": "II-TRIMESTRE / IV-HabilidadesdoIFA",
+          "excerpt": "IV- Habilidades do IFA:",
+          "verification": "2bullets"
+        },
+        {
+          "page": 8,
+          "section": "III-TRIMESTRE / IV-HabilidadesdoIFA",
+          "excerpt": "IV- Habilidades do IFA:",
+          "verification": "3bullets"
+        }
+      ],
+      "findings": [
+        {
+          "severity": "critical",
+          "requirement": "ING-02/DAT-01/ESC-02",
+          "issue": "uncoded_learning_structure_missing",
+          "evidence": "v1.3cache contém0coded_items e apenas8seçõesde páginas;8habilidadesexplícitas nãoforamclassificadascomo aprendizagens. Importar inventáriomanualouadaptadordeestruturaantesreconciliação.",
+          "status": "learning_adapter_import_verified_context_structure_pending",
+          "verification_evidence": "docs/evidence/source-audit-northeast/pe-sidecar-import-check.json"
+        }
+      ]
+    }
+  ],
+  "manual_learning_inventory": [
+    {
+      "id": "ca:pe-historia-pernambuco-2026:cbd68117f2c615a6b47b",
+      "curriculum_id": "pe:pe-historia-pernambuco-2026",
+      "source_id": "pe-historia-pernambuco-2026",
+      "uf": "PE",
+      "code": null,
+      "text": "Avaliar fontes confiáveis e variadas para analisar processos históricos, políticos, econômicos, sociais, ambientais e culturais, considerando diferentes perspectivas, inclusive a feminina, assegurando a diversidade epistemológica no estudo de fenômenos sociais, promovendo o combate à desinformação por meio da verificação crítica e da disseminação responsável do conhecimento.",
+      "normalized_text": "avaliar fontes confiaveis e variadas para analisar processos historicos, politicos, economicos, sociais, ambientais e culturais, considerando diferentes perspectivas, inclusive a feminina, assegurando a diversidade epistemologica no estudo de fenomenos sociais, promovendo o combate a desinformacao por meio da verificacao critica e da disseminacao responsavel do conhecimento.",
+      "editorial_note": null,
+      "kind": "habilidade_ifa",
+      "parent_id": null,
+      "positions": [
+        {
+          "stage": "EM",
+          "component": "História de Pernambuco",
+          "area": "Ciências Humanas e Sociais Aplicadas",
+          "years": [
+            2
+          ],
+          "year_label": "2º ano",
+          "age_group": null,
+          "period": "1º trimestre",
+          "position_origin": "explicit_document_heading"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "pe-historia-pernambuco-2026",
+          "page": 5,
+          "printed_page": "4",
+          "section": "I - TRIMESTRE / IV - Habilidades do IFA",
+          "excerpt": "Avaliar fontes confiáveis e variadas para analisar processos históricos, políticos, econômicos, sociais, ambientais e culturais, considerando diferentes perspectivas, inclusive a feminina, assegurando a diversidade epistemológica no estudo de fenômenos sociais, promovendo o combate à desinformação por meio da verificação crítica e da disseminação responsável do conhecimento."
+        }
+      ],
+      "extraction_revision": "manual-source-structure-v1.0.0",
+      "source_context": {
+        "hierarchy": [
+          "Itinerário Formativo de Aprofundamento",
+          "História de Pernambuco",
+          "1º trimestre",
+          "Habilidades do IFA"
+        ]
+      },
+      "review_events": [
+        {
+          "actor_type": "automated",
+          "actor_id": "codex:data_northeast",
+          "at": "2026-10-28T03:58:19.934170+00:00",
+          "method": "Leitura integral do PDF8p, segmentação por títulos/bullets, conferência literal de todos8itens; terceiroitemT1continua na página6",
+          "result": "documentary_inventory_verified_not_human_review"
+        }
+      ],
+      "page": 5,
+      "printed_page": "4",
+      "locator": "ifa:trimestre-1/habilidade-1",
+      "artifact_sha256": "1b7b6c325b74b580697325f1c7af59780799fbdb9582fe98a0dab63a9203a832",
+      "technical_validation_status": "literal_text_and_explicit_section_checked",
+      "pedagogical_review_status": "not_reviewed"
+    },
+    {
+      "id": "ca:pe-historia-pernambuco-2026:3dc75e007bfca299bde0",
+      "curriculum_id": "pe:pe-historia-pernambuco-2026",
+      "source_id": "pe-historia-pernambuco-2026",
+      "uf": "PE",
+      "code": null,
+      "text": "Analisar dados e evidências provenientes de diferentes métodos científicos, como análises quantitativas e qualitativas, utilizando-os para compreender fenômenos locais, regionais, nacionais e globais em diferentes contextos temporais.",
+      "normalized_text": "analisar dados e evidencias provenientes de diferentes metodos cientificos, como analises quantitativas e qualitativas, utilizando-os para compreender fenomenos locais, regionais, nacionais e globais em diferentes contextos temporais.",
+      "editorial_note": null,
+      "kind": "habilidade_ifa",
+      "parent_id": null,
+      "positions": [
+        {
+          "stage": "EM",
+          "component": "História de Pernambuco",
+          "area": "Ciências Humanas e Sociais Aplicadas",
+          "years": [
+            2
+          ],
+          "year_label": "2º ano",
+          "age_group": null,
+          "period": "1º trimestre",
+          "position_origin": "explicit_document_heading"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "pe-historia-pernambuco-2026",
+          "page": 5,
+          "printed_page": "4",
+          "section": "I - TRIMESTRE / IV - Habilidades do IFA",
+          "excerpt": "Analisar dados e evidências provenientes de diferentes métodos científicos, como análises quantitativas e qualitativas, utilizando-os para compreender fenômenos locais, regionais, nacionais e globais em diferentes contextos temporais."
+        }
+      ],
+      "extraction_revision": "manual-source-structure-v1.0.0",
+      "source_context": {
+        "hierarchy": [
+          "Itinerário Formativo de Aprofundamento",
+          "História de Pernambuco",
+          "1º trimestre",
+          "Habilidades do IFA"
+        ]
+      },
+      "review_events": [
+        {
+          "actor_type": "automated",
+          "actor_id": "codex:data_northeast",
+          "at": "2026-10-28T03:58:19.934170+00:00",
+          "method": "Leitura integral do PDF8p, segmentação por títulos/bullets, conferência literal de todos8itens; terceiroitemT1continua na página6",
+          "result": "documentary_inventory_verified_not_human_review"
+        }
+      ],
+      "page": 5,
+      "printed_page": "4",
+      "locator": "ifa:trimestre-1/habilidade-2",
+      "artifact_sha256": "1b7b6c325b74b580697325f1c7af59780799fbdb9582fe98a0dab63a9203a832",
+      "technical_validation_status": "literal_text_and_explicit_section_checked",
+      "pedagogical_review_status": "not_reviewed"
+    },
+    {
+      "id": "ca:pe-historia-pernambuco-2026:4d80afa3d5d204765779",
+      "curriculum_id": "pe:pe-historia-pernambuco-2026",
+      "source_id": "pe-historia-pernambuco-2026",
+      "uf": "PE",
+      "code": null,
+      "text": "Construir argumentos fundamentados e coerentes, integrando conhecimentos científicos, históricos e culturais, contemplando a valorização da produção científica de grupos marginalizados, para posicionar-se criticamente sobre questões sociais e propor soluções para problemas contemporâneos de maneira ética e embasada; e",
+      "normalized_text": "construir argumentos fundamentados e coerentes, integrando conhecimentos cientificos, historicos e culturais, contemplando a valorizacao da producao cientifica de grupos marginalizados, para posicionar-se criticamente sobre questoes sociais e propor solucoes para problemas contemporaneos de maneira etica e embasada; e",
+      "editorial_note": null,
+      "kind": "habilidade_ifa",
+      "parent_id": null,
+      "positions": [
+        {
+          "stage": "EM",
+          "component": "História de Pernambuco",
+          "area": "Ciências Humanas e Sociais Aplicadas",
+          "years": [
+            2
+          ],
+          "year_label": "2º ano",
+          "age_group": null,
+          "period": "1º trimestre",
+          "position_origin": "explicit_document_heading"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "pe-historia-pernambuco-2026",
+          "page": 5,
+          "printed_page": "4",
+          "section": "I - TRIMESTRE / IV - Habilidades do IFA",
+          "excerpt": "Construir argumentos fundamentados e coerentes, integrando conhecimentos científicos, históricos e culturais, contemplando a valorização da produção científica de grupos"
+        },
+        {
+          "source_id": "pe-historia-pernambuco-2026",
+          "page": 6,
+          "printed_page": "5",
+          "section": "I - TRIMESTRE / IV - Habilidades do IFA",
+          "excerpt": "marginalizados, para posicionar-se criticamente sobre questões sociais e propor soluções para problemas contemporâneos de maneira ética e embasada; e"
+        }
+      ],
+      "extraction_revision": "manual-source-structure-v1.0.0",
+      "source_context": {
+        "hierarchy": [
+          "Itinerário Formativo de Aprofundamento",
+          "História de Pernambuco",
+          "1º trimestre",
+          "Habilidades do IFA"
+        ]
+      },
+      "review_events": [
+        {
+          "actor_type": "automated",
+          "actor_id": "codex:data_northeast",
+          "at": "2026-10-28T03:58:19.934170+00:00",
+          "method": "Leitura integral do PDF8p, segmentação por títulos/bullets, conferência literal de todos8itens; terceiroitemT1continua na página6",
+          "result": "documentary_inventory_verified_not_human_review"
+        }
+      ],
+      "page": 5,
+      "printed_page": "4",
+      "locator": "ifa:trimestre-1/habilidade-3",
+      "artifact_sha256": "1b7b6c325b74b580697325f1c7af59780799fbdb9582fe98a0dab63a9203a832",
+      "technical_validation_status": "literal_text_and_explicit_section_checked",
+      "pedagogical_review_status": "not_reviewed"
+    },
+    {
+      "id": "ca:pe-historia-pernambuco-2026:c0ce6156822eb5a1719a",
+      "curriculum_id": "pe:pe-historia-pernambuco-2026",
+      "source_id": "pe-historia-pernambuco-2026",
+      "uf": "PE",
+      "code": null,
+      "text": "Relacionar os resultados das análises científicas às dinâmicas sociais e culturais, avaliando os impactos políticos, econômicos e ambientais de decisões humanas e refletindo sobre sua própria atuação como agente transformador na sociedade.",
+      "normalized_text": "relacionar os resultados das analises cientificas as dinamicas sociais e culturais, avaliando os impactos politicos, economicos e ambientais de decisoes humanas e refletindo sobre sua propria atuacao como agente transformador na sociedade.",
+      "editorial_note": null,
+      "kind": "habilidade_ifa",
+      "parent_id": null,
+      "positions": [
+        {
+          "stage": "EM",
+          "component": "História de Pernambuco",
+          "area": "Ciências Humanas e Sociais Aplicadas",
+          "years": [
+            2
+          ],
+          "year_label": "2º ano",
+          "age_group": null,
+          "period": "2º trimestre",
+          "position_origin": "explicit_document_heading"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "pe-historia-pernambuco-2026",
+          "page": 7,
+          "printed_page": "6",
+          "section": "II - TRIMESTRE / IV - Habilidades do IFA",
+          "excerpt": "Relacionar os resultados das análises científicas às dinâmicas sociais e culturais, avaliando os impactos políticos, econômicos e ambientais de decisões humanas e refletindo sobre sua própria atuação como agente transformador na sociedade."
+        }
+      ],
+      "extraction_revision": "manual-source-structure-v1.0.0",
+      "source_context": {
+        "hierarchy": [
+          "Itinerário Formativo de Aprofundamento",
+          "História de Pernambuco",
+          "2º trimestre",
+          "Habilidades do IFA"
+        ]
+      },
+      "review_events": [
+        {
+          "actor_type": "automated",
+          "actor_id": "codex:data_northeast",
+          "at": "2026-10-28T03:58:19.934170+00:00",
+          "method": "Leitura integral do PDF8p, segmentação por títulos/bullets, conferência literal de todos8itens; terceiroitemT1continua na página6",
+          "result": "documentary_inventory_verified_not_human_review"
+        }
+      ],
+      "page": 7,
+      "printed_page": "6",
+      "locator": "ifa:trimestre-2/habilidade-1",
+      "artifact_sha256": "1b7b6c325b74b580697325f1c7af59780799fbdb9582fe98a0dab63a9203a832",
+      "technical_validation_status": "literal_text_and_explicit_section_checked",
+      "pedagogical_review_status": "not_reviewed"
+    },
+    {
+      "id": "ca:pe-historia-pernambuco-2026:3c9d3cb1cf956d112167",
+      "curriculum_id": "pe:pe-historia-pernambuco-2026",
+      "source_id": "pe-historia-pernambuco-2026",
+      "uf": "PE",
+      "code": null,
+      "text": "Analisar criticamente as desigualdades históricas e estruturais que impactam diferentes grupos sociais, compreendendo os mecanismos de exclusão e os desafios enfrentados pelas minorias na luta por direitos e transformações sociais.",
+      "normalized_text": "analisar criticamente as desigualdades historicas e estruturais que impactam diferentes grupos sociais, compreendendo os mecanismos de exclusao e os desafios enfrentados pelas minorias na luta por direitos e transformacoes sociais.",
+      "editorial_note": null,
+      "kind": "habilidade_ifa",
+      "parent_id": null,
+      "positions": [
+        {
+          "stage": "EM",
+          "component": "História de Pernambuco",
+          "area": "Ciências Humanas e Sociais Aplicadas",
+          "years": [
+            2
+          ],
+          "year_label": "2º ano",
+          "age_group": null,
+          "period": "2º trimestre",
+          "position_origin": "explicit_document_heading"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "pe-historia-pernambuco-2026",
+          "page": 7,
+          "printed_page": "6",
+          "section": "II - TRIMESTRE / IV - Habilidades do IFA",
+          "excerpt": "Analisar criticamente as desigualdades históricas e estruturais que impactam diferentes grupos sociais, compreendendo os mecanismos de exclusão e os desafios enfrentados pelas minorias na luta por direitos e transformações sociais."
+        }
+      ],
+      "extraction_revision": "manual-source-structure-v1.0.0",
+      "source_context": {
+        "hierarchy": [
+          "Itinerário Formativo de Aprofundamento",
+          "História de Pernambuco",
+          "2º trimestre",
+          "Habilidades do IFA"
+        ]
+      },
+      "review_events": [
+        {
+          "actor_type": "automated",
+          "actor_id": "codex:data_northeast",
+          "at": "2026-10-28T03:58:19.934170+00:00",
+          "method": "Leitura integral do PDF8p, segmentação por títulos/bullets, conferência literal de todos8itens; terceiroitemT1continua na página6",
+          "result": "documentary_inventory_verified_not_human_review"
+        }
+      ],
+      "page": 7,
+      "printed_page": "6",
+      "locator": "ifa:trimestre-2/habilidade-2",
+      "artifact_sha256": "1b7b6c325b74b580697325f1c7af59780799fbdb9582fe98a0dab63a9203a832",
+      "technical_validation_status": "literal_text_and_explicit_section_checked",
+      "pedagogical_review_status": "not_reviewed"
+    },
+    {
+      "id": "ca:pe-historia-pernambuco-2026:b9e36e8bdf79c158408f",
+      "curriculum_id": "pe:pe-historia-pernambuco-2026",
+      "source_id": "pe-historia-pernambuco-2026",
+      "uf": "PE",
+      "code": null,
+      "text": "Avaliar as relações entre ações humanas e o espaço geográfico, utilizando a análise de dados, padrões e variações de fenômenos naturais para compreender impactos ambientais e subsidiar a tomada de decisões frente à emergência climática.",
+      "normalized_text": "avaliar as relacoes entre acoes humanas e o espaco geografico, utilizando a analise de dados, padroes e variacoes de fenomenos naturais para compreender impactos ambientais e subsidiar a tomada de decisoes frente a emergencia climatica.",
+      "editorial_note": null,
+      "kind": "habilidade_ifa",
+      "parent_id": null,
+      "positions": [
+        {
+          "stage": "EM",
+          "component": "História de Pernambuco",
+          "area": "Ciências Humanas e Sociais Aplicadas",
+          "years": [
+            2
+          ],
+          "year_label": "2º ano",
+          "age_group": null,
+          "period": "3º trimestre",
+          "position_origin": "explicit_document_heading"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "pe-historia-pernambuco-2026",
+          "page": 8,
+          "printed_page": "7",
+          "section": "III - TRIMESTRE / IV - Habilidades do IFA",
+          "excerpt": "Avaliar as relações entre ações humanas e o espaço geográfico, utilizando a análise de dados, padrões e variações de fenômenos naturais para compreender impactos ambientais e subsidiar a tomada de decisões frente à emergência climática."
+        }
+      ],
+      "extraction_revision": "manual-source-structure-v1.0.0",
+      "source_context": {
+        "hierarchy": [
+          "Itinerário Formativo de Aprofundamento",
+          "História de Pernambuco",
+          "3º trimestre",
+          "Habilidades do IFA"
+        ]
+      },
+      "review_events": [
+        {
+          "actor_type": "automated",
+          "actor_id": "codex:data_northeast",
+          "at": "2026-10-28T03:58:19.934170+00:00",
+          "method": "Leitura integral do PDF8p, segmentação por títulos/bullets, conferência literal de todos8itens; terceiroitemT1continua na página6",
+          "result": "documentary_inventory_verified_not_human_review"
+        }
+      ],
+      "page": 8,
+      "printed_page": "7",
+      "locator": "ifa:trimestre-3/habilidade-1",
+      "artifact_sha256": "1b7b6c325b74b580697325f1c7af59780799fbdb9582fe98a0dab63a9203a832",
+      "technical_validation_status": "literal_text_and_explicit_section_checked",
+      "pedagogical_review_status": "not_reviewed"
+    },
+    {
+      "id": "ca:pe-historia-pernambuco-2026:e29360f166f05695148b",
+      "curriculum_id": "pe:pe-historia-pernambuco-2026",
+      "source_id": "pe-historia-pernambuco-2026",
+      "uf": "PE",
+      "code": null,
+      "text": "Avaliar os impactos das decisões mediadas sobre diferentes grupos sociais, garantindo que os processos de resolução de conflitos sejam inclusivos, equitativos e coerentes com princípios éticos e democráticos.",
+      "normalized_text": "avaliar os impactos das decisoes mediadas sobre diferentes grupos sociais, garantindo que os processos de resolucao de conflitos sejam inclusivos, equitativos e coerentes com principios eticos e democraticos.",
+      "editorial_note": null,
+      "kind": "habilidade_ifa",
+      "parent_id": null,
+      "positions": [
+        {
+          "stage": "EM",
+          "component": "História de Pernambuco",
+          "area": "Ciências Humanas e Sociais Aplicadas",
+          "years": [
+            2
+          ],
+          "year_label": "2º ano",
+          "age_group": null,
+          "period": "3º trimestre",
+          "position_origin": "explicit_document_heading"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "pe-historia-pernambuco-2026",
+          "page": 8,
+          "printed_page": "7",
+          "section": "III - TRIMESTRE / IV - Habilidades do IFA",
+          "excerpt": "Avaliar os impactos das decisões mediadas sobre diferentes grupos sociais, garantindo que os processos de resolução de conflitos sejam inclusivos, equitativos e coerentes com princípios éticos e democráticos."
+        }
+      ],
+      "extraction_revision": "manual-source-structure-v1.0.0",
+      "source_context": {
+        "hierarchy": [
+          "Itinerário Formativo de Aprofundamento",
+          "História de Pernambuco",
+          "3º trimestre",
+          "Habilidades do IFA"
+        ]
+      },
+      "review_events": [
+        {
+          "actor_type": "automated",
+          "actor_id": "codex:data_northeast",
+          "at": "2026-10-28T03:58:19.934170+00:00",
+          "method": "Leitura integral do PDF8p, segmentação por títulos/bullets, conferência literal de todos8itens; terceiroitemT1continua na página6",
+          "result": "documentary_inventory_verified_not_human_review"
+        }
+      ],
+      "page": 8,
+      "printed_page": "7",
+      "locator": "ifa:trimestre-3/habilidade-2",
+      "artifact_sha256": "1b7b6c325b74b580697325f1c7af59780799fbdb9582fe98a0dab63a9203a832",
+      "technical_validation_status": "literal_text_and_explicit_section_checked",
+      "pedagogical_review_status": "not_reviewed"
+    },
+    {
+      "id": "ca:pe-historia-pernambuco-2026:d11a93036897bab6499c",
+      "curriculum_id": "pe:pe-historia-pernambuco-2026",
+      "source_id": "pe-historia-pernambuco-2026",
+      "uf": "PE",
+      "code": null,
+      "text": "Analisar dados e evidências provenientes de diferentes métodos científicos, como análises quantitativas e qualitativas, utilizando-os para compreender fenômenos locais, regionais, nacionais e globais em diferentes contextos temporais.",
+      "normalized_text": "analisar dados e evidencias provenientes de diferentes metodos cientificos, como analises quantitativas e qualitativas, utilizando-os para compreender fenomenos locais, regionais, nacionais e globais em diferentes contextos temporais.",
+      "editorial_note": null,
+      "kind": "habilidade_ifa",
+      "parent_id": null,
+      "positions": [
+        {
+          "stage": "EM",
+          "component": "História de Pernambuco",
+          "area": "Ciências Humanas e Sociais Aplicadas",
+          "years": [
+            2
+          ],
+          "year_label": "2º ano",
+          "age_group": null,
+          "period": "3º trimestre",
+          "position_origin": "explicit_document_heading"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "pe-historia-pernambuco-2026",
+          "page": 8,
+          "printed_page": "7",
+          "section": "III - TRIMESTRE / IV - Habilidades do IFA",
+          "excerpt": "Analisar dados e evidências provenientes de diferentes métodos científicos, como análises quantitativas e qualitativas, utilizando-os para compreender fenômenos locais, regionais, nacionais e globais em diferentes contextos temporais."
+        }
+      ],
+      "extraction_revision": "manual-source-structure-v1.0.0",
+      "source_context": {
+        "hierarchy": [
+          "Itinerário Formativo de Aprofundamento",
+          "História de Pernambuco",
+          "3º trimestre",
+          "Habilidades do IFA"
+        ]
+      },
+      "review_events": [
+        {
+          "actor_type": "automated",
+          "actor_id": "codex:data_northeast",
+          "at": "2026-10-28T03:58:19.934170+00:00",
+          "method": "Leitura integral do PDF8p, segmentação por títulos/bullets, conferência literal de todos8itens; terceiroitemT1continua na página6",
+          "result": "documentary_inventory_verified_not_human_review"
+        }
+      ],
+      "page": 8,
+      "printed_page": "7",
+      "locator": "ifa:trimestre-3/habilidade-3",
+      "artifact_sha256": "1b7b6c325b74b580697325f1c7af59780799fbdb9582fe98a0dab63a9203a832",
+      "technical_validation_status": "literal_text_and_explicit_section_checked",
+      "pedagogical_review_status": "not_reviewed"
+    }
+  ],
+  "manual_inventory_schema": "src/shared/contracts.ts Learning + source_context/review_events; IDs técnicos não são códigos oficiais",
+  "reconciliation_status": "learning_subset_verified_full_context_pending",
+  "learning_subset_verification": {
+    "actor_type": "automated",
+    "actor_id": "codex:data_northeast",
+    "at": "2026-10-28T04:19:24.393760+00:00",
+    "scope": "Todas as8habilidades enumeradas doIFA nos3trimestres, sem afirmar estruturação de todos os demais elementos do documento.",
+    "expected_item_ids": [
+      "ca:pe-historia-pernambuco-2026:cbd68117f2c615a6b47b",
+      "ca:pe-historia-pernambuco-2026:3dc75e007bfca299bde0",
+      "ca:pe-historia-pernambuco-2026:4d80afa3d5d204765779",
+      "ca:pe-historia-pernambuco-2026:c0ce6156822eb5a1719a",
+      "ca:pe-historia-pernambuco-2026:3c9d3cb1cf956d112167",
+      "ca:pe-historia-pernambuco-2026:b9e36e8bdf79c158408f",
+      "ca:pe-historia-pernambuco-2026:e29360f166f05695148b",
+      "ca:pe-historia-pernambuco-2026:d11a93036897bab6499c"
+    ],
+    "verified_item_ids": [
+      "ca:pe-historia-pernambuco-2026:cbd68117f2c615a6b47b",
+      "ca:pe-historia-pernambuco-2026:3dc75e007bfca299bde0",
+      "ca:pe-historia-pernambuco-2026:4d80afa3d5d204765779",
+      "ca:pe-historia-pernambuco-2026:c0ce6156822eb5a1719a",
+      "ca:pe-historia-pernambuco-2026:3c9d3cb1cf956d112167",
+      "ca:pe-historia-pernambuco-2026:b9e36e8bdf79c158408f",
+      "ca:pe-historia-pernambuco-2026:e29360f166f05695148b",
+      "ca:pe-historia-pernambuco-2026:d11a93036897bab6499c"
+    ],
+    "evidence": "docs/evidence/source-audit-northeast/pe-sidecar-import-check.json",
+    "result": "all_8_literal_learnings_and_explicit_positions_verified",
+    "pending": "Hierarquia e classificação dos demais elementos curriculares seguem pendentes. Conferência do adaptador não é reconciliação integral da fonte.",
+    "adapter_and_finalizer_revision": "page-cell-v1.4.0"
+  }
+}

@@ -1,0 +1,93 @@
+# Operação autogerida
+
+## Contrato operacional
+
+PostgreSQL mantém publicação, autenticação, fila e auditoria. App é Next.js em `next start` de produção; worker Node executa parsing Python por subprocesso, fora das requisições. Leitura pública não exige conta ou chave de modelo. O projeto não seleciona uma conta externa nem cria recursos pagos.
+
+Requisitos: Docker Engine + Compose v2, Node 22 LTS+ e npm para a primeira configuração, espaço suficiente para banco, fontes e backups. A imagem contém Python, Poppler, Tesseract português e PyMuPDF fixado em pipeline/requirements.txt. Node 22.23.4 e PostgreSQL 17.11 são os defaults documentados; `POSTGRES_IMAGE` permite selecionar imagem compatível explicitamente. O lockfile fixa dependências JavaScript; instalação e operação na imagem usam npm 11.6.2, igual ao packageManager declarado. As versões padrão foram conferidas nas fontes oficiais de [Node LTS](https://nodejs.org/en/about/previous-releases) e [PostgreSQL](https://www.postgresql.org/support/versioning/); o relatório de execução identifica os digests efetivamente usados. Fontes PDF não são redistribuídas automaticamente: o diretório `data/raw` é cache de coleta, fora do Git.
+
+## Instalação limpa e início
+
+```
+npm ci
+make configure
+make bootstrap
+```
+
+`configure` cria `.env` com permissão 0600, senha PostgreSQL e segredo Better Auth aleatórios. Nunca imprime segredos. Se `.env` já existe, preserva o arquivo. `bootstrap` constrói imagens, inicia banco, executa migrations, importa um bundle pronto em `data/bundles` apenas quando ainda não existe publicação, e inicia app/worker. Verifica checksum sidecar e integridade do bundle antes de promover. O loader aceita JSON ou JSON gzip, com limite padrão de 256 MiB do arquivo compactado e 512 MiB do JSON decodificado (`DATA_MAX_FILE_BYTES`/`DATA_MAX_DECODED_BYTES`); confere checksums de ambos quando compactado. Não coleta a internet a cada boot. O estado real de cobertura vem do manifesto: subir uma publicação parcial não libera lançamento nacional.
+
+Para escolher outro bundle entregue, use `make bootstrap DATA_BUNDLE=data/bundles/ID.json`. Se houver dados existentes, `bootstrap` não os substitui. Nova publicação é importação explícita: `make data-import DATA_BUNDLE=data/bundles/ID.json`. Publicações com o mesmo ID e conteúdo diferente são rejeitadas.
+
+Para obter localmente as imagens oficiais atuais ARM64 quando o daemon não consegue baixar mas o host tem acesso HTTPS, `make runtime-images` usa Registryv2 anônimo, valida digests do index/manifest/config e de cada layer compactado/descompactado e executa `docker load`. O helper é específico para linux/arm64 nesta entrega; o Dockerfile padrão permanece multi-arquitetura. Tokens e URLs assinadas não são registrados. `docs/evidence/runtime-images.json` comprova os digests e as verificações reais de Node22.23.4 e PostgreSQL17.11. Ele não troca o banco em execução: atualize `POSTGRES_IMAGE` e reinicie somente o projeto após backup.
+
+Se o endpoint de build/pull do Docker ficar indisponível mas o ciclo normal de containers funcionar, o fallback explícito é `make bootstrap IMAGE_BUILD_METHOD=lifecycle`. Ele exige uma imagem oficial de runtime já presente, selecionada por `NODE_IMAGE`, e produz a aplicação por create/cp/exec/commit isolados, com npm ci e build de produção reais. Não reinicia daemon nem acessa serviços alheios. O contexto exclui .env, PDFs brutos, caches, Git e diretórios privados; o fingerprint interno confere o código antes do commit. O relatório `docs/evidence/docker-build.json` registra runtime/digest/plataforma/comandos/resultado. Esse método foi necessário neste ambiente; o Dockerfile continua sendo o caminho padrão de distribuição. A imagem cache de ferramentas contém somente runtime, ferramentas públicas e package files, sem configurações privadas.
+
+O endereço local padrão é `http://localhost:3000`; API `/api/v1`, MCP `/mcp`, administração `/admin`, saúde `/api/health`, prontidão `/api/ready`. O PostgreSQL é acessível somente no loopback `127.0.0.1:55437` para ferramentas locais; app e worker usam a rede interna do Compose. App se mantém em loopback e deve ser publicado por proxy TLS no servidor remoto.
+
+## Primeiro administrador, curador e recuperação
+
+```
+make admin-create EMAIL=administrador@seu-dominio NAME='Responsável' ACTOR_TYPE=human
+make admin-create EMAIL=curadoria@seu-dominio ROLE=curator ACTOR_TYPE=human
+make admin-reset EMAIL=administrador@seu-dominio
+```
+
+Cada comando solicita senha de 14 a 128 caracteres por stdin, sem colocá-la em argumento ou log. Em terminal interativo a entrada fica oculta; para execução automatizada encaminhe um segredo de seu gerenciador para stdin. Não há senha padrão, registro público de usuários nem e-mail pago obrigatório. A recuperação exige acesso administrativo local ao ambiente e revoga todas as sessões da conta. O comando recusa conta inexistente ou e-mail duplicado.
+
+O padrão `ACTOR_TYPE=automated` previne atribuição indevida de humanidade ao uso por agentes. `human` deve ser escolhido somente para a conta de uma pessoa. Administradores podem publicar/reverter e iniciar ingestão; curadores podem revisar, preparar rascunhos, tratar contribuições e monitorar. Toda rota de mutação verifica sessão, papel, Host/Origin e validação no servidor. Contas automatizadas continuam registradas como automatizadas, independentemente do papel.
+
+As tabelas Better Auth são migradas pelo projeto. Sessões duram oito horas, com renovação e cookies HttpOnly; HTTPS ativa cookies Secure. O cadastro web está desativado. Para rodar atrás de proxy, configure `PUBLIC_URL` com o endereço externo real e encaminhe corretamente Host/Origin. Não desative a proteção para contornar erro de configuração.
+
+## Curadoria e publicação
+
+Na administração: consulte a fonte, confira o ID e os localizadores; crie rascunho a partir de snapshot; registre correção de transcrição ou aceite/rejeição/contestação de relação com justificativa; valide tecnicamente; prepare snapshot imutável; publique como padrão. É possível reverter o padrão para qualquer snapshot válido anterior sem apagar histórico. Correções não fingem que a secretaria mudou o currículo. A origem das relações não muda com a aceitação. Validação técnica e revisão automatizada não constituem homologação pedagógica humana.
+
+Contribuições públicas entram em fila privada persistente e não alteram dados públicos diretamente. Uma decisão de contribuição não publica texto; o responsável deve preparar uma nova revisão. Contatos não são coletados nesse formulário. Eventos de auditoria mostram ator, tipo real, data, antes/depois e justificativa.
+
+## Worker e fontes
+
+```
+make data-ingest
+make data-ingest SOURCE=ID_DA_FONTE
+make sources-check
+make sources-check SOURCE=ID_DA_FONTE
+make logs
+```
+
+A fila em PostgreSQL usa `FOR UPDATE SKIP LOCKED`, lease de 45 segundos e heartbeat de 10 segundos. Tentativas têm backoff, máximo três; a administração permite pausar, retomar e repetir. Reinício reaproveita checkpoints do mesmo job. Jobs pausados não publicam nada. Um lease expirado é retomável; atingir tentativas sem sucesso torna o erro explícito. SIGTERM encerra o subprocesso, devolve trabalho interrompido à fila e preserva progresso.
+
+A aquisição tem limites configuráveis por documento (`SOURCE_MAX_BYTES=209715200`, 200 MiB; `SOURCE_MAX_PAGES=2500`; `SOURCE_TIMEOUT_SECONDS=90`). O limite de 200 MiB inclui referenciais oficiais extensos sem permitir downloads ilimitados. O parsing roda fora do processo web, em worker sem capabilities adicionais e com `no-new-privileges`, memória padrão 4 GiB, 2 CPUs, limite 256 processos e temporários limitados a 512 MiB. `WORKER_MEMORY_LIMIT` e `WORKER_CPUS` permitem ajustar a instalação. OCR limita threads a duas.
+
+O monitor executa `pipeline/ingest.py sources-check`, registra hashes/metadados e abre avaliação. Não promove edição automaticamente. Configure `SOURCE_CHECK_ENABLED=true` e `SOURCE_CHECK_INTERVAL_SECONDS` (mínimo 60; padrão 86400) para agendar jobs internos. O monitor distingue os estados produzidos pelo pipeline; nova edição exige confirmação documental e revisão. Nenhuma mensagem externa é enviada.
+
+Exports grandes são jobs persistentes com publicação fixada. Arquivos ficam em `STORAGE_DIR/exports`, escritos primeiro em temporário e renomeados atomicamente. UUID e extensão são validados antes de resolver caminhos. Exports públicos não incluem usuários, contribuições ou auditoria. Não se anuncia validade temporária: arquivos são mantidos até política de retenção explicitamente configurada pelo operador.
+
+## Verificações
+
+```
+make verify
+make release-check
+```
+
+`verify` executa tipos, testes, cliente MCP real, checks HTTP e API. `release-check` executa o gate transversal baseado em inventário, dados publicados e evidências reais; retorna não zero enquanto obrigatório estiver pendente. A área `/api/metrics` exige administrador e mostra agregados de contagem/latência e jobs. `/api/ready` requer banco, publicação carregada e worker recente; `/api/health` responde pelo processo. Logs são JSON com IDs de requisição/job. A existência desses comandos não é evidência de que passaram: consulte `docs/evidence` e o relatório final.
+
+## Backup e restauração exercitável
+
+```
+make backup
+make restore BACKUP=var/backups/AAAAmmddTHHMMSSZ RESTORE_DB=curriculos_restore_test
+```
+
+Backup é privado: contém usuários/sessões/auditoria e deve ser criptografado e guardado com acesso restrito pelo operador. Inclui `pg_dump` custom, manifestos/bundles, exports/checkpoints/monitor e manifesto com SHA-256. Não inclui `.env` nem segredos de configuração; preserve-os em gerenciador seguro. Fontes brutas não redistribuíveis devem ser preservadas à parte se a política do órgão permitir; a instalação de leitura depende do bundle pronto, não da disponibilidade do PDF remoto.
+
+Restore valida checksums e nomes de membros tar e exige um banco novo com prefixo `curriculos_restore_`; nunca sobrescreve a produção. Restaura banco e arquivos em `var/restore/DB`, imprime contagens, permitindo compará-las às originais. Um restore de desastre para produção exige parada planejada, restauração em volume/banco novo, verificação e troca explícita de `DATABASE_URL`; preserve o banco anterior para rollback. O relatório de verificação deve registrar execução real, contagens, restart e isolamento. A documentação isoladamente não atesta recuperação.
+
+## Produção Linux, domínio e TLS
+
+1. Instale Docker/Compose no servidor autorizado; copie este repositório, bundles e `.env` seguro. Use volumes com backup e espaço monitorado.
+2. Configure `PUBLIC_URL=https://curriculos.seu-dominio`, `MCP_ALLOWED_HOSTS=curriculos.seu-dominio` e as credenciais geradas; ajuste `PORT` se necessário.
+3. Execute bootstrap e crie a conta administrativa. Verifique `/api/ready`, API e cliente MCP pela origem externa.
+4. Configure DNS no provedor autorizado para o servidor; coloque Nginx/Caddy existente como proxy para `127.0.0.1:3000`, com certificado TLS válido, preservando Host, Origin, `X-Forwarded-Proto` e suporte a streaming do MCP. Não bufferize SSE. Exemplo Caddy: `curriculos.seu-dominio { reverse_proxy 127.0.0.1:3000 }`.
+5. Mantenha banco sem exposição pública, discos/volumes persistentes, logs rotacionados e backup fora da máquina. Configurar DNS/certificado exige domínio e alvo remoto reais; nenhum foi inventado pelo projeto.
+
+Atualizar: faça backup, registre tag/imagem anterior, execute build, migrations, importe nova publicação apenas explicitamente, `make up`, smoke/MCP/gate. Rollback de código usa imagem anterior por `RELEASE_TAG`, sem apagar volumes; não reverta schema destrutivamente. Rollback dos dados usa a administração e mantém snapshots. Rode `make down` para parar preservando volumes; não use `down -v` como operação cotidiana. Rotação do segredo Better Auth exige gerar novo segredo local e reiniciar app; revogue sessões se houver incidente. Rotação PostgreSQL exige ALTER ROLE autorizado e atualização coerente da configuração, nunca logar a senha.
