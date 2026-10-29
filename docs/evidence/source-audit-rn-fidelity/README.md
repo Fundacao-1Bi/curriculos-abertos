@@ -85,3 +85,16 @@ As declarações da fonte p24 (seis UC por trilha) e p29 (dois módulos por UC) 
 - Os 741 cartões e os **2.930 seletores de pais dos registros codificados existentes** conferem, sem trocar código, locator ou identidade. Os dois cabeçalhos reiterados de Avaliação326/327 e Fontes346/347 são ocorrências reais; preservá-los separados não é duplicação inventada. Vínculos documentais complementares podem ser registrados sem apagar os nós.
 
 Resultado detalhado: `rn-uncoded-peer-summary.json`, `rn-uncoded-peer-*-checks.json`, `rn-uncoded-peer-native-body-coverage.json`. O proprietário executou separadamente o importador, schema, idempotência, OCR da contracapa485 e autoridade disjunta dos genéricos. Este peer aprova o recorte de texto/geometria/hierarquia conferido; não a prontidão integral da UF, uma revisão humana ou a futura distribuição nacional.
+
+
+## Cotejo dos caches atuais1.5 após FULL/refresh
+
+`rn-current-cache-confront-v150.py` confrontou os dois caches atuais1.5 com os censos independentes produzidos anteriormente, preservando seus arquivos históricos. PDFs originais, inventário, ocorrências e caches foram protegidos por SHA; os fingerprints específicos dos dois caches coincidem com o parser atual e permaneceram iguais antes/depois. Não houve reextração nem escrita em cache/manifesto.
+
+Passaram todas as4.322menções originais, com4.320registros codificados atuais:48definições+2.882referências nas Trilhas;773definições+617referências na Computação. Não há faltas/extras ou troca de referência por habilidade. Os dois exemplos narrativos continuam em contexto. Passaram também os1.881casos da baseline e todos os821fragmentos primários de prosa. O inventário nativo previamente comprovado resolveu todas as773definições da Computação; somente as quatro folhas16–19 das Trilhas precisaram nova leitura de regiões do PDF. As1.304páginas não foram extraídas outra vez.
+
+Resultados novos: `current-cache-confront-v150-summary.json`, `current-cache-confront-v150-occurrences.json`, `current-cache-confront-v150-baseline-cases.json`. O escopo é fidelidade/papel/ocorrências nativas dos caches atuais; não concede reconciliação dos objetivos sem código/OCR, SourceWhole, UFpronta, revisão humana ou aprovação de uma publicação nacional posterior. O peer sem códigos permanece no PIN próprio551f90cc…4602.
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 var/venv-pipeline/bin/python -B docs/evidence/source-audit-rn-fidelity/rn-current-cache-confront-v150.py
+```

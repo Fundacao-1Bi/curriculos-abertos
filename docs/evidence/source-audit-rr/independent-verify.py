@@ -60,6 +60,9 @@ for ex in expected:
    for pos in rec['positions']:
     check('field_from_actual_heading',pos.get('component')==field and pos.get('field')==field and pos.get('stage')=='EI',key=rec['key'])
     ages=ex['roles']['faixa_etaria'];age=ages[0] if ages else org_age.get(ex['organizer']);want=source_age(age['text']) if age else None
+    compact=lambda value:re.sub(r'\s+','',value or '').casefold()
+    expected_group=age['text'].split('(',1)[0].strip() if age else None
+    check('age_group_from_caption_letters_not_code',compact(pos.get('age_group'))==compact(expected_group),key=rec['key'])
     check('explicit_numeric_age_bounds',want is not None and (pos.get('age_min_months'),pos.get('age_max_months'))==want,key=rec['key'],expected=want,actual=[pos.get('age_min_months'),pos.get('age_max_months')])
     ae=pos.get('age_evidence');check('age_evidence_array',isinstance(ae,list) and bool(ae),key=rec['key'])
     for e in ae or []:
@@ -69,6 +72,18 @@ for ex in expected:
      candidates=[(row['page'],row['cells'][1]) for row in s['physical_rows'] if row['organizer']==ex['organizer'] and row['cells'][1]['text']]
      center=((e['bbox'][0]+e['bbox'][2])/2,(e['bbox'][1]+e['bbox'][3])/2)
      check('age_evidence_primary_own_organizer_cell',any(pn==e['page'] and cell['bbox'][0]-2<=center[0]<=cell['bbox'][2]+2 and cell['bbox'][1]-2<=center[1]<=cell['bbox'][3]+2 and source_age(cell['text'])==want for pn,cell in candidates),key=rec['key'])
+# The15 organizer nodes also carry age metadata; check their physical scope,
+# not merely the330 objectives/experiences/approaches/orientations beneath them.
+for oid,org in orgs.items():
+ parents=[i for i in items if i['kind']=='campo_experiencia' and i['page']==org['page'] and T(i['text'])==T(org['field_heading'])]
+ check('unique_source_organizer',len(parents)==1,page=org['page'])
+ if len(parents)!=1:continue
+ parent=parents[0];want=source_age(org_age[oid]['text']);field=org['field_heading'].split('–',1)[-1].strip()
+ check('organizer_position_cardinality',len(parent['positions'])==1,key=parent['key'])
+ for pos in parent['positions']:
+  check('organizer_field_from_heading',pos.get('component')==field and pos.get('field')==field and pos.get('stage')=='EI',key=parent['key'])
+  check('organizer_age_from_numeric_caption',(pos.get('age_min_months'),pos.get('age_max_months'))==want,key=parent['key'])
+  check('organizer_age_proof',isinstance(pos.get('age_evidence'),list) and bool(pos['age_evidence']) and all(source_age(e['excerpt'])==want for e in pos['age_evidence']),key=parent['key'])
 # Independently verify every nested secondary evidence against its OWN box,
 # avoiding the common checker's permissive page-level shortcut for repeats.
 secondary=[]
@@ -105,5 +120,5 @@ lookup={i['id']:i for i in final};check('finalizer_preserves_all_positions_text_
 schema=validators(R);schema_errors=[{'id':i['id'],'path':list(e.path),'error':e.message} for i in final for e in schema['Learning'].iter_errors(i)];check('learning_schema',not schema_errors,errors=schema_errors)
 after={str(p.relative_to(R)):hashlib.sha256(p.read_bytes()).hexdigest() for p in watch};check('immutable_helper_schema_snapshot',before==after,changed=[p for p in before if before[p]!=after[p]])
 check('candidate_and_primary_census_unchanged',F.read_bytes()==frozen and (A/'independent-source-census.json').read_bytes()==blind_cb and (A/'independent-source-census-page-grid.json').read_bytes()==cb)
-report={'source_id':SID,'artifact_sha256':s['artifact_sha256'],'candidate_path':str(F.relative_to(R)),'candidate_sha256':expected_sha,'source_only_census_sha256':pin['census_sha256'],'page_local_geometry_census_sha256':hashlib.sha256(cb).hexdigest(),'census_correction_note':'Original blind inventory remains byte-identical. One header-to-body border drift onp35 was corrected from actual page-local grid edges; no candidate text used as source expected.','actor_type':'automated_independent_peer','human_pedagogical_review':False,'counts':s['counts'],'candidate_counts':dict(collections.Counter(i['kind'] for i in items)),'checks':checks,'failed_checks':errors,'passed':not errors,'watched_file_sha256':before,'does_not_claim_whole_RR_ready':True}
+report={'source_id':SID,'artifact_sha256':s['artifact_sha256'],'candidate_path':str(F.relative_to(R)),'candidate_sha256':expected_sha,'source_only_census_sha256':pin['census_sha256'],'page_local_geometry_census_sha256':hashlib.sha256(cb).hexdigest(),'census_correction_note':'Original blind inventory remains byte-identical. One header-to-body border drift onp35 was corrected from actual page-local grid edges; no candidate text used as source expected.','actor_type':'automated_independent_peer','human_pedagogical_review':False,'counts':s['counts'],'candidate_counts':dict(collections.Counter(i['kind'] for i in items)),'candidate_fragment_count':sum(len(i['evidence']) for i in items),'checks':checks,'failed_checks':errors,'passed':not errors,'watched_file_sha256':before,'does_not_claim_whole_RR_ready':True}
 (A/'independent-verification.json').write_text(json.dumps(report,ensure_ascii=False,separators=(',',':'))+'\n');print(json.dumps({'checks':len(checks),'failures':len(errors),'first_failures':errors[:6],'ordinary_failed':ordinary},ensure_ascii=False))

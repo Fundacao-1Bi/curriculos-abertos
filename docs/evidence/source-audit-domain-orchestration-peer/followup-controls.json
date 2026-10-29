@@ -1,0 +1,86 @@
+{
+  "scope": "followup-pure-controls; SQL/artifact inputs stubbed; actual schema validation; owned child only",
+  "hashes": {
+    "src/domain/ingestion-update.ts": "6315fbebdd40eff7696cdcb37c7ed031145e4cc1c04ea2fc4cb589b20127b1ab",
+    "src/domain/ingestion-provenance.ts": "8d37ab39c750d87f93e4fac77221433418774f06d85b7779bf151f54ccabe94c"
+  },
+  "gate": [
+    {
+      "field": "technical_supersessions",
+      "label": "absent",
+      "code": "PEER_SQL_ENTRY"
+    },
+    {
+      "field": "technical_supersessions",
+      "label": "empty-array",
+      "code": "INGESTION_PROVENANCE_REQUIRED"
+    },
+    {
+      "field": "technical_supersessions",
+      "label": "object",
+      "code": "INGESTION_PROVENANCE_REQUIRED"
+    },
+    {
+      "field": "technical_supersessions",
+      "label": "null",
+      "code": "INGESTION_PROVENANCE_REQUIRED"
+    },
+    {
+      "field": "technical_supersessions",
+      "label": "string",
+      "code": "INGESTION_PROVENANCE_REQUIRED"
+    },
+    {
+      "field": "technical_supersessions",
+      "label": "nonempty-array",
+      "code": "INGESTION_PROVENANCE_REQUIRED"
+    },
+    {
+      "field": "technical_extraction_corrections",
+      "label": "absent",
+      "code": "PEER_SQL_ENTRY"
+    },
+    {
+      "field": "technical_extraction_corrections",
+      "label": "empty-array",
+      "code": "INGESTION_PROVENANCE_REQUIRED"
+    },
+    {
+      "field": "technical_extraction_corrections",
+      "label": "object",
+      "code": "INGESTION_PROVENANCE_REQUIRED"
+    },
+    {
+      "field": "technical_extraction_corrections",
+      "label": "null",
+      "code": "INGESTION_PROVENANCE_REQUIRED"
+    },
+    {
+      "field": "technical_extraction_corrections",
+      "label": "string",
+      "code": "INGESTION_PROVENANCE_REQUIRED"
+    },
+    {
+      "field": "technical_extraction_corrections",
+      "label": "nonempty-array",
+      "code": "INGESTION_PROVENANCE_REQUIRED"
+    }
+  ],
+  "postWriter": {
+    "writerCalls": 1,
+    "imports": 0,
+    "commits": 0,
+    "rollbacks": 1
+  },
+  "runtimeGuard": {
+    "initial": "accepted",
+    "changedAfterLoad": "INGESTION_PROVENANCE_MISMATCH",
+    "storage": "in-memory; no runtime files mutated"
+  },
+  "childCancellation": {
+    "reasonMatched": true,
+    "promiseStayedPendingBeforeClose": true,
+    "elapsedMs": 5004,
+    "aliveAfterClose": false
+  }
+}

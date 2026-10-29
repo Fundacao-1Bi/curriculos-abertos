@@ -1,0 +1,71 @@
+{
+  "scope": "Additive binding only, coordinated owner must compare source SHA/previous path before applying. No generic section or coded item suppression, no reconciliation or readiness update.",
+  "sources": [
+    {
+      "source_id": "sp-curriculo-eief-isbn",
+      "source_sha256": "f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500",
+      "expected_previous_uncoded_items_path": null,
+      "proposed_uncoded_items_path": "data/manifests/uncoded/sp-eief-structured-items.json",
+      "sidecar_sha256": "1f40faf53de864fbda0078053a9e8cc1446f045c392906b017f9e3d31fb59e34",
+      "bytes": 422811,
+      "nodes": 115,
+      "real_importer_proof": "docs/evidence/source-audit-southeast-completeness/sp-eief-structured-items-real-importer-proof.json",
+      "real_importer_finalizer_schema_idempotence_passed": true,
+      "adapter_authority_proposed": false,
+      "source_ready": false
+    },
+    {
+      "source_id": "mg-crmg-eief-atualizada",
+      "source_sha256": "792857369c0c80dd87fff092137053e7a5cbed1c61fcbbd6caa6efbc072154ea",
+      "expected_previous_uncoded_items_path": null,
+      "proposed_uncoded_items_path": "data/manifests/uncoded/mg-eief-structured-items.json",
+      "sidecar_sha256": "9615a86a6cb029bf46f12eac429ed0088f81e2772b6b80c423269d6374c3d4c4",
+      "bytes": 416785,
+      "nodes": 113,
+      "real_importer_proof": "docs/evidence/source-audit-southeast-completeness/mg-eief-structured-items-real-importer-proof.json",
+      "real_importer_finalizer_schema_idempotence_passed": true,
+      "adapter_authority_proposed": false,
+      "source_ready": false
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "source_sha256": "b915967926c621164aba46d5cbdbd74406a658410695199ef6ae3926de138bf6",
+      "expected_previous_uncoded_items_path": "data/manifests/uncoded/rj-ei-rights.json",
+      "proposed_uncoded_items_path": "data/manifests/uncoded/rj-eief-structured-items.json",
+      "sidecar_sha256": "dbbf047c569cbadee6afcd69cf16d504275942d9894c4acb0fbca041086d9eeb",
+      "bytes": 353279,
+      "nodes": 136,
+      "real_importer_proof": "docs/evidence/source-audit-southeast-completeness/rj-eief-structured-items-real-importer-proof.json",
+      "real_importer_finalizer_schema_idempotence_passed": true,
+      "adapter_authority_proposed": false,
+      "source_ready": false
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "source_sha256": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
+      "expected_previous_uncoded_items_path": null,
+      "proposed_uncoded_items_path": "data/manifests/uncoded/mg-ept-quadro37-items.json",
+      "sidecar_sha256": "54bb8bb64958e40183e5c89170ee8328aa9d3eb6a1f6e59852d815476695e1a5",
+      "bytes": 62999,
+      "nodes": 24,
+      "real_importer_proof": "docs/evidence/source-audit-southeast-completeness/mg-ept-quadro37-items-real-importer-proof.json",
+      "real_importer_finalizer_schema_idempotence_passed": true,
+      "adapter_authority_proposed": false,
+      "source_ready": false
+    },
+    {
+      "source_id": "rj-em-itinerarios",
+      "source_sha256": "77b9009c0880120860ca53b1743df572a5ed3dcf836149296bbbc7a08e978a76",
+      "expected_previous_uncoded_items_path": null,
+      "proposed_uncoded_items_path": "data/manifests/uncoded/rj-itinerarios-objectives-items.json",
+      "sidecar_sha256": "f7237754b308220133a4410926dd6b3dcf5f408c31ddec58e3a42817cf3a41f1",
+      "bytes": 670999,
+      "nodes": 182,
+      "real_importer_proof": "docs/evidence/source-audit-southeast-completeness/rj-itinerarios-objectives-items-real-importer-proof.json",
+      "real_importer_finalizer_schema_idempotence_passed": true,
+      "adapter_authority_proposed": false,
+      "source_ready": false
+    }
+  ],
+  "source_manifest_edited_by_this_front": false
+}

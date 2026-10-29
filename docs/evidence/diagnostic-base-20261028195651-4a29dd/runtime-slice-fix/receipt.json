@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-10-28T21:21:44.418Z",
+  "diagnostic_only": true,
+  "main_unchanged": true,
+  "project": "curriculos-abertos-clean-20261028205403-f517a7",
+  "publication": "ca-7d302a9c674a97b83278",
+  "source_tree_sha256": "ba309e4c7acb53d2e17ac37db9eef46341748b654f451481ac2b092a5a6dcc98",
+  "image_id": "sha256:edf22936409b349fbba836a7ae565f7b6d7a2fd816f217aff59574aa96701bd0",
+  "snapshot_before": {
+    "publication": "ca-7d302a9c674a97b83278",
+    "publications": 1,
+    "items": 200724,
+    "sources": 303,
+    "relations": 57425,
+    "admins": 1,
+    "publication_metadata_digest": "3182dedfc9ff5e99f35d85cae1349017",
+    "items_digest": "6ee5e618bab80746df27043f6037fd9b",
+    "source_digest": "cd8c766f9a58b00722a7ed7d73de5bd5",
+    "relations_digest": "7e65ab85ef7fd00be27ce28f484fe681"
+  },
+  "snapshot_after": {
+    "publication": "ca-7d302a9c674a97b83278",
+    "publications": 1,
+    "items": 200724,
+    "sources": 303,
+    "relations": 57425,
+    "admins": 1,
+    "publication_metadata_digest": "3182dedfc9ff5e99f35d85cae1349017",
+    "items_digest": "6ee5e618bab80746df27043f6037fd9b",
+    "source_digest": "cd8c766f9a58b00722a7ed7d73de5bd5",
+    "relations_digest": "7e65ab85ef7fd00be27ce28f484fe681"
+  },
+  "preserved_exports": [
+    {
+      "id": "18bc8cee-360f-4462-9f11-74f72bca5d84",
+      "sha256": "1f9afaebe64ed6a72600c37ba10abdf47ce82624c5bc8c39f0ed60617f0f0b1a",
+      "size": 1451121538,
+      "storage_key": "exports/18bc8cee-360f-4462-9f11-74f72bca5d84/1-a502873b-1f02-4e48-a0f4-954d39996f4e.json"
+    },
+    {
+      "id": "034a6754-5799-4786-9cbb-fff419efc7f3",
+      "sha256": "028ac2a6aa6801a43436169a7e9169be3b29b0a0f01b328473a1ac46127a8432",
+      "size": 245144028,
+      "storage_key": "exports/034a6754-5799-4786-9cbb-fff419efc7f3/1-a502873b-1f02-4e48-a0f4-954d39996f4e.json"
+    }
+  ],
+  "only_change_to_old_jobs": [
+    {
+      "id": "18bc8cee-360f-4462-9f11-74f72bca5d84",
+      "idempotency_key": "diagnostic-preserved:source-count-failure:18bc8cee-360f-4462-9f11-74f72bca5d84"
+    },
+    {
+      "id": "034a6754-5799-4786-9cbb-fff419efc7f3",
+      "idempotency_key": "diagnostic-preserved:source-count-failure:034a6754-5799-4786-9cbb-fff419efc7f3"
+    }
+  ],
+  "reason": "Preserve failed J09 artifacts and avoid reusing succeeded exports from superseded writer; original install report/state kept, new runtime amendment explicitly recorded",
+  "passed": true
+}

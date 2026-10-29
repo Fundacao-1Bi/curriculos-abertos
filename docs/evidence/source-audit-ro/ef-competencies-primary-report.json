@@ -1,0 +1,30 @@
+{
+  "adapter_path": "data/manifests/uncoded/ro-ef-spanish-and-competencies-v2.json",
+  "adapter_sha256": "a8cc77cdd1570d1578f6d8d17840dc20f25d8347197022f619398120b2d8d487",
+  "all_primary_competencies": 100,
+  "binding_ready": true,
+  "command": "var/venv-pipeline/bin/python docs/evidence/source-audit-ro/build_ef_competencies.py",
+  "engine": {
+    "pymupdf": "1.26.7",
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "groups": 13,
+  "kinds": {
+    "competencia_especifica": 90,
+    "competencia_geral": 10,
+    "componente_curricular": 1,
+    "grupo_competencias": 13,
+    "grupo_curricular": 4,
+    "habilidade": 144
+  },
+  "ready": false,
+  "real_loader_finalizer_schema_records": 262,
+  "reconciled": false,
+  "records": 262,
+  "remaining_scope": [
+    "Other EF coded organizers, objects/units/context and normative parts still require full review."
+  ],
+  "source_id": "ro-rcro-ef",
+  "source_sha256": "c8a25381bc5311326bf0fe1528c9941fb78d618d1b0696f0129baf6fa75f1ea2",
+  "spanish149_preserved_exactly": true
+}

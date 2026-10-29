@@ -1,0 +1,31 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:data_central_south",
+  "method": "Source typography and independently reviewed page boundaries replace suffix-only verb heuristic. All1563unaffected original records are byte-for-byte unchanged at object level, including technicallocators/evidence/positions/sourcecontext.",
+  "revision": "df-digital-explicit-column-v1.2.0",
+  "legacy_sha256": "eaf5647402002573828836e30af8cd68db419586f3eaba391f0278b9199b58f8",
+  "independent_boundary_proof_sha256": "9bda58778c8ebd188c76b8a3fa697923830ad84cd62ac6a8e6f35024f1394d50",
+  "old_objectives": 1190,
+  "corrected_objectives": 1189,
+  "preserved_records": 1563,
+  "changed_records": [
+    {
+      "source_id": "df-competencias-digitais-vol3",
+      "page": 133,
+      "old_text": "Localizar o Sistema",
+      "corrected_text": "Localizar o Sistema Solar na nossa galáxia.",
+      "locator": "df-digital-table:0/column:0/paragraph:1"
+    }
+  ],
+  "record_supersessions": [
+    {
+      "superseded_record_id": "ca:df-competencias-digitais-vol3:28caefc514211c917686",
+      "replacement_record_id": "ca:df-competencias-digitais-vol3:c595cf98d8b206f7dc64",
+      "relation": "technical_record_merge_not_curricular_equivalence",
+      "reason": "Two incorrectly split fragments are one literal original objective. FirstID retained, false secondID superseded; later paragraph locators do not shift."
+    }
+  ],
+  "full_source_reconciled": false,
+  "uf_ready": false,
+  "candidate_sha256": "81cfbd6afc943c48bbb5472a949c531be6c9858a17ab0ab7b084f28e50180257"
+}

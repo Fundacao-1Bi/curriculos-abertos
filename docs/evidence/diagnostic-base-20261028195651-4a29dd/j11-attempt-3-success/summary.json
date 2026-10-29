@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-29T16:17:16.148224+00:00",
+  "diagnostic_only": true,
+  "passed": true,
+  "national_release_asserted": false,
+  "project": "curriculos-abertos-clean-20261028205403-f517a7",
+  "base_publication": "ca-7d302a9c674a97b83278",
+  "global_candidate": "ca-update-8cbb97cb7ffd83aa8d35f6ffeaba7ba7",
+  "source": "pe-historia-pernambuco-2026",
+  "started_at": "2026-10-29T15:48:18.554Z",
+  "completed_at": "2026-10-29T16:16:37.651Z",
+  "top_level_checks": 17,
+  "image_id": "sha256:9ea498032eabfae9f1b4ec49a6645cf5ec8bd6616f28c5a83f71c02d1cf8336c",
+  "source_tree_sha256": "c45d75aa62c07230fe354027da8cdb04f50fdd2b60eb4563b7db318be9b33beb",
+  "history": {
+    "attempt_1": "RAW_RELATION_OUTSIDE_SCOPE: delta receipt carried BR-only explicit relation; fixed in pipeline/distribution.py (amendment 5), guard unchanged, parser fingerprint unchanged 541aa337…",
+    "attempt_2": "product correct (candidate ca-update-cc8f819144a42541e6ec2d8414e813a1 prepared and paused after ~18.7 min) but harness fixed 300s pause wait expired; job 78f1f727… preserved paused",
+    "attempt_3": "harness waits bounded by INGESTION_TEST_TIMEOUT_MS (default 60 min, amendment 6); full journey passed in ~28 min"
+  },
+  "main_default_unchanged": "ca-77fb8076598b567e1ba3",
+  "files_sha256": {
+    "amendment-5-receipt.json": "78d70289385695234d9369a93d3e144e7c1afded99dc2949cecc9e4bc67b5da6",
+    "amendment-5.json": "30ef1772e20070ce9caf2c0c9c46223ba87b19fbacc1a43963c57ebb3409f89c",
+    "amendment-6-receipt.json": "868424d60869a97ebe39a7a47d8ede1e6ac875eb3ee16106427c7a233fcf7a0d",
+    "amendment-6.json": "b44a501da7f135a9bcc8f685523566104c06e5748e6302e35be4a7662e744776",
+    "diagnostic-j11-ingestion.log": "86d5755682716182cd3a700e72c1c4ac65a7a61aa549aad93439e8760cbc68ce",
+    "ingestion-admin-flow.json": "b1273cfeadaf312e79fe162fa690bc94d4cf02b65a524637d60192cabe67b57d"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-10-28T22:16:01.693812+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex-independent-rn-fgb-peer",
+  "candidate_sha256": "505ef93e5f24f36d0d03c537f5dcfea5823be56df4c5d3bbe83432cdc69a3050",
+  "findings": [
+    {
+      "id": "RN-FGB-P1-NESTED-TABLE-READING-ORDER",
+      "priority": "P1",
+      "status": "open",
+      "page": 311,
+      "continued_on_page": 312,
+      "candidate_key": "fgb-cell-p311-table0-row3-column2",
+      "primary_nested_table_bbox": [
+        437.1300048828125,
+        264.8699951171875,
+        716.47998046875,
+        374.6499938964844
+      ],
+      "primary_table_shape": {
+        "rows": 8,
+        "columns": 8,
+        "unique_detected_regions": 50,
+        "nonempty_regions": 10,
+        "native_words": 17
+      },
+      "primary_placement": "Between paragraph ending cada uma delas. and paragraph starting Propor aos estudantes que se organizem em grupos",
+      "candidate_placement": "After the unfinished final clause ...suficiente para atender; before continuation p312 aos objetivos...",
+      "finding": "Flattened native stream moves embedded table words to end of prose and loses nested grid structure. Literal/word-stream identity alone cannot approve primary reading order.",
+      "evidence": [
+        "primary-census.json",
+        "context-comparison.json",
+        "private-renders.json",
+        "nested-table-order.json"
+      ],
+      "required_correction": "Represent embedded documentary table in its primary placement with explicit geometry/rows/columns, or separate verified textual fragments and table context. Preserve all source characters, pins and existing coded records.",
+      "producer_acknowledged": true,
+      "producer_correction_plan": "After this pinned receipt: preserve primary BEFORE → nested table → AFTER ordering with explicit 50-region grid and continuation311–312. No candidate/binding change yet."
+    },
+    {
+      "id": "RN-FGB-P2-PAGINATION-ROLE",
+      "priority": "P2",
+      "status": "open",
+      "affected_records": 388,
+      "evidence": "outside-comparison.json",
+      "finding": "Page-number-only nodes are classified narrativa_curricular. Preserve pagination in metadata or an explicit documentary marker role; do not count it as curricular narrative.",
+      "producer_acknowledged": true,
+      "producer_correction_plan": "After pinned receipt, reclassify isolated pagination as documentary metadata. No change yet."
+    }
+  ],
+  "pending_full_acceptance_axes": [
+    {
+      "id": "context_logical_continuity",
+      "status": "pending",
+      "examples": [
+        [
+          399,
+          400
+        ],
+        [
+          500,
+          501
+        ],
+        [
+          311,
+          312
+        ]
+      ],
+      "observed": "Full physical regions retained; contextual continuation beyond cells explicitly unapproved. Native coverage is not full logical structure."
+    },
+    {
+      "id": "raster_figures",
+      "status": "pending",
+      "embedded_image_occurrences": 4,
+      "pages": [
+        73,
+        74,
+        75
+      ],
+      "evidence": "figure-pins.json",
+      "observed": "Native captions retained; visual diagram/example content not structurally transcribed/approved."
+    },
+    {
+      "id": "vector_color_semantics",
+      "status": "pending",
+      "native_social_field_label_occurrences": 1155,
+      "evidence": "source-only-structure.json",
+      "observed": "Text tokens retained but visual selected/unselected distinction not approved as data."
+    }
+  ],
+  "native_documentary_coverage_verified": true,
+  "full_FGB_acceptance": false,
+  "binding_approved_by_peer": false,
+  "SourceWhole_or_UF_ready": false,
+  "human_pedagogical_review": false
+}

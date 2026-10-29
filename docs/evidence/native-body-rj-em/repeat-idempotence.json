@@ -1,0 +1,21 @@
+{
+  "actor_type": "automated",
+  "method": "Reran full data-only recover.py after successful real runtime verification; every candidate/evidence byte hash remained identical. No cache/core mutation.",
+  "checks": {
+    "sidecar": true,
+    "evidence_files": {
+      "docs/evidence/native-body-rj-em/source-pin.json": true,
+      "docs/evidence/native-body-rj-em/native-code-census.json": true,
+      "docs/evidence/native-body-rj-em/native-body-proofs.json": true,
+      "docs/evidence/native-body-rj-em/recovery-report.json": true,
+      "docs/evidence/native-body-rj-em/three-page-diagnosis.json": true
+    },
+    "scripts": {
+      "docs/evidence/native-body-rj-em/prepare.py": true,
+      "docs/evidence/native-body-rj-em/census.py": true,
+      "docs/evidence/native-body-rj-em/recover.py": true,
+      "docs/evidence/native-body-rj-em/verify.py": true
+    }
+  },
+  "sidecar_sha256": "47d6fada2777147b2743b0aeb7f6234ee63e7b8fb072a7a28c407393f9e77787"
+}

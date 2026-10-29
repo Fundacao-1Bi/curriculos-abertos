@@ -1,0 +1,212 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex-independent-pe-ei-provenance-auditor",
+  "requests": [
+    {
+      "key": "cee114current",
+      "requested_url": "https://www.cee.pe.gov.br/wp-content/uploads/2025/10/PARECER-114-2018.pdf",
+      "retrieved_at": "2026-10-28T20:16:45.204233+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "key": "see-media-curriculo",
+      "requested_url": "https://portal.educacao.pe.gov.br/wp-json/wp/v2/media?search=curriculo&per_page=100&_fields=id,date,link,title,source_url",
+      "retrieved_at": "2026-10-28T20:16:45.205276+00:00",
+      "http_status": 200,
+      "final_url": "https://portal.educacao.pe.gov.br/wp-json/wp/v2/media?search=curriculo&per_page=100&_fields=id,date,link,title,source_url",
+      "content_type": "application/json; charset=UTF-8",
+      "bytes": 3186,
+      "sha256": "64afcf994980c5e01746aee9b6a8b35b53f9727037ff31ecb72dba8129e9a723",
+      "private_snapshot": "var/private-evidence/pe-ei-provenance-peer/see-media-curriculo.json"
+    },
+    {
+      "key": "see-posts-curriculo",
+      "requested_url": "https://portal.educacao.pe.gov.br/wp-json/wp/v2/posts?search=curr%C3%ADculo&per_page=100&_fields=id,date,link,title,content",
+      "retrieved_at": "2026-10-28T20:16:45.205506+00:00",
+      "http_status": 200,
+      "final_url": "https://portal.educacao.pe.gov.br/wp-json/wp/v2/posts?search=curr%C3%ADculo&per_page=100&_fields=id,date,link,title,content",
+      "content_type": "application/json; charset=UTF-8",
+      "bytes": 978578,
+      "sha256": "c61743c35c818db2865b6e70a4f8d258c3c557632283b2a6a6a07e7b4fc63240",
+      "private_snapshot": "var/private-evidence/pe-ei-provenance-peer/see-posts-curriculo.json"
+    },
+    {
+      "key": "see-posts-alfabetizada",
+      "requested_url": "https://portal.educacao.pe.gov.br/wp-json/wp/v2/posts?search=alfabetizada&per_page=100&_fields=id,date,link,title,content",
+      "retrieved_at": "2026-10-28T20:16:45.205824+00:00",
+      "http_status": 200,
+      "final_url": "https://portal.educacao.pe.gov.br/wp-json/wp/v2/posts?search=alfabetizada&per_page=100&_fields=id,date,link,title,content",
+      "content_type": "application/json; charset=UTF-8",
+      "bytes": 302175,
+      "sha256": "7331bd5b4b3d124a5c72100325513ea32dd4eb449a0df3d9d194ad6a53533c31",
+      "private_snapshot": "var/private-evidence/pe-ei-provenance-peer/see-posts-alfabetizada.json"
+    },
+    {
+      "key": "primary-old-https",
+      "requested_url": "https://www.educacao.pe.gov.br/portal/?pag=1&cat=18&art=4419",
+      "retrieved_at": "2026-10-28T20:19:37.722692+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "primary-old-http",
+      "requested_url": "http://www.educacao.pe.gov.br/portal/?pag=1&cat=18&art=4419",
+      "retrieved_at": "2026-10-28T20:19:37.723408+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "cee114-no-www",
+      "requested_url": "https://cee.pe.gov.br/wp-content/uploads/2025/10/PARECER-114-2018.pdf",
+      "retrieved_at": "2026-10-28T20:19:37.723565+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "key": "google-landing",
+      "requested_url": "https://sites.google.com/view/programacriancaalfabetizadape/materiais-pedag%C3%B3gicos/material-de-apoio-pedag%C3%B3gico/educa%C3%A7%C3%A3o-infantil",
+      "retrieved_at": "2026-10-28T20:19:37.723682+00:00",
+      "http_status": 200,
+      "final_url": "https://sites.google.com/view/programacriancaalfabetizadape/materiais-pedag%C3%B3gicos/material-de-apoio-pedag%C3%B3gico/educa%C3%A7%C3%A3o-infantil",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 318128,
+      "sha256": "1c8afdaf7f6ab2e12362741c3491110f755bed6d0386b5c19b0a096bfc486de9",
+      "private_snapshot": "var/private-evidence/pe-ei-provenance-peer/google-landing.html"
+    },
+    {
+      "key": "municipal-slm-pdf",
+      "requested_url": "https://transparencia.slm.pe.gov.br/uploads/5371/1/atos-oficiais/2024/currculo-da-educao/1722948431_curriculo-de-pernambuco--educacao-infantil.pdf",
+      "retrieved_at": "2026-10-28T20:19:37.774606+00:00",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "key": "official-doe-20181229",
+      "requested_url": "https://cepebr-prod.s3.amazonaws.com/1/cadernos/2018/20181229/1-PoderExecutivo/PoderExecutivo%2820181229%29.pdf",
+      "retrieved_at": "2026-10-28T20:19:37.863661+00:00",
+      "http_status": 200,
+      "final_url": "https://cepebr-prod.s3.amazonaws.com/1/cadernos/2018/20181229/1-PoderExecutivo/PoderExecutivo%2820181229%29.pdf",
+      "content_type": "application/pdf",
+      "bytes": 4164585,
+      "sha256": "cca03a92ae24b1d18dc31468f61828e2b9e03f2ef21882836a4e9bf6901d7d65",
+      "private_snapshot": "var/private-evidence/pe-ei-provenance-peer/official-doe-20181229.pdf"
+    },
+    {
+      "key": "cee114-download",
+      "requested_url": "https://www.cee.pe.gov.br/wp-content/uploads/2025/10/PARECER-114-2018.pdf?download=1",
+      "retrieved_at": "2026-10-28T20:19:38.245056+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "key": "cee-portarias",
+      "requested_url": "https://www.cee.pe.gov.br/?page_id=15123",
+      "retrieved_at": "2026-10-28T20:19:38.551764+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "key": "see-home",
+      "requested_url": "https://portal.educacao.pe.gov.br/",
+      "retrieved_at": "2026-10-28T20:24:26.754518+00:00",
+      "http_status": 200,
+      "final_url": "https://portal.educacao.pe.gov.br/",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 175059,
+      "sha256": "a0b643a445080e8e035049ffb454a2f4cb604bfbf7844f522537e02b8b00dda2",
+      "private_snapshot": "var/private-evidence/pe-ei-provenance-peer/see-home.html"
+    },
+    {
+      "key": "cepe-diario-app",
+      "requested_url": "https://diariooficial.cepe.com.br/diariooficialweb/",
+      "retrieved_at": "2026-10-28T20:24:26.755220+00:00",
+      "http_status": 200,
+      "final_url": "https://diariooficial.cepe.com.br/diariooficialweb/",
+      "content_type": "text/html",
+      "bytes": 1653,
+      "sha256": "e99b4606e294eea12cf56bcfc48cd3763bfcc605bb8ff5ceab4d245d065cc284",
+      "private_snapshot": "var/private-evidence/pe-ei-provenance-peer/cepe-diario-app.html"
+    },
+    {
+      "key": "drive-exact-current",
+      "requested_url": "https://drive.google.com/uc?id=1hnNk221nOEBv7fgxPtCDjRhMyDZ9sEBk&export=download",
+      "retrieved_at": "2026-10-28T20:24:26.755492+00:00",
+      "http_status": 200,
+      "final_url": "https://drive.usercontent.google.com/download?id=1hnNk221nOEBv7fgxPtCDjRhMyDZ9sEBk&export=download",
+      "content_type": "application/octet-stream",
+      "bytes": 2505568,
+      "sha256": "a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3",
+      "private_snapshot": "var/private-evidence/pe-ei-provenance-peer/drive-exact-current.pdf"
+    },
+    {
+      "key": "undime-documents",
+      "requested_url": "https://undimepe.org.br/portal/documentos",
+      "retrieved_at": "2026-10-28T20:24:26.755709+00:00",
+      "http_status": 200,
+      "final_url": "https://undimepe.org.br/portal/documentos",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 14563,
+      "sha256": "5fd98b9af2315ae63af6526189d570d9ecc456f7ee06f075195340388f40bec2",
+      "private_snapshot": "var/private-evidence/pe-ei-provenance-peer/undime-documents.html"
+    },
+    {
+      "key": "cee2021-corrob",
+      "requested_url": "https://www.cee.pe.gov.br/wp-content/uploads/2025/10/PARECER-007-2021.pdf",
+      "retrieved_at": "2026-10-28T20:24:27.374426+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "key": "cepe-app-config",
+      "requested_url": "https://diariooficial.cepe.com.br/diariooficialweb/app/app.config.js",
+      "retrieved_at": "2026-10-28T20:26:07.305957+00:00",
+      "http_status": 200,
+      "final_url": "https://diariooficial.cepe.com.br/diariooficialweb/app/app.config.js",
+      "content_type": "application/javascript",
+      "bytes": 120,
+      "sha256": "bfb0b7e46ff5000b22ec3878175dd1fb8c6eb4d85322730ab90a194b8d315de7",
+      "private_snapshot": "var/private-evidence/pe-ei-provenance-peer/cepe-app-config.html"
+    },
+    {
+      "key": "cepe-app-min",
+      "requested_url": "https://diariooficial.cepe.com.br/diariooficialweb/content/scripts-min/app-cdb1880b4f.min.js",
+      "retrieved_at": "2026-10-28T20:26:07.306696+00:00",
+      "http_status": 200,
+      "final_url": "https://diariooficial.cepe.com.br/diariooficialweb/content/scripts-min/app-cdb1880b4f.min.js",
+      "content_type": "application/javascript",
+      "bytes": 2497472,
+      "sha256": "d98478e7a952c1ddd10dede4137cce547f6cd2b8d6e7cf69ce036c48daf45e10",
+      "private_snapshot": "var/private-evidence/pe-ei-provenance-peer/cepe-app-min.html"
+    },
+    {
+      "key": "undime-institutional-catalog",
+      "requested_url": "https://undimepe.org.br/portal/documentos?category=2",
+      "retrieved_at": "2026-10-28T20:34:54.132872+00:00",
+      "http_status": 200,
+      "final_url": "https://undimepe.org.br/portal/documentos?category=2",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 76831,
+      "sha256": "097117cf8ff0486eaee0afef6b8aa74775922f2e00db65c8bdb8bd332613795f",
+      "private_snapshot": "var/private-evidence/pe-ei-provenance-peer/undime-institutional-catalog.html"
+    },
+    {
+      "key": "afogados-municipal-mirror",
+      "requested_url": "https://www.afogadosdaingazeira.pe.gov.br/selecao-simplificada/CURRICULO-DE-PERNAMBUCO-EDUCACAO-INFANTIL-3.pdf",
+      "retrieved_at": "2026-10-28T20:34:54.135673+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "cepe-official-download",
+      "requested_url": "https://diariooficial.cepe.com.br/diariooficial/public/home/baixarJornal?codigoDiario=1&dataPublicacao=29%2F12%2F2018&edicaoExtra=false",
+      "retrieved_at": "2026-10-28T20:30:14.851453+00:00",
+      "http_status": 200,
+      "final_url": "https://diariooficial.cepe.com.br/diariooficial/public/home/baixarJornal?codigoDiario=1&dataPublicacao=29%2F12%2F2018&edicaoExtra=false",
+      "content_type": "application/json;charset=UTF-8",
+      "bytes": 5317336,
+      "sha256": "fc078ae42841d9a449dff94ca744ce8b6d8a7766d5da13c664038e84f91170c5",
+      "private_snapshot": "var/private-evidence/pe-ei-provenance-peer/cepe-official-download.json",
+      "decoded_pdf": {
+        "path": "var/private-evidence/pe-ei-provenance-peer/official-doe-signed-route-20181229.pdf",
+        "bytes": 3987927,
+        "sha256": "80a054a0feee9ebe2358a2f1d1d91675d42f2956acd86e05318fd8392befc2fd",
+        "file_name": "PoderExecutivo(20181229).pdf",
+        "media_type": "application/pdf",
+        "cryptographic_signature_validity_tested": false
+      }
+    }
+  ],
+  "snapshots_remain_private": true
+}

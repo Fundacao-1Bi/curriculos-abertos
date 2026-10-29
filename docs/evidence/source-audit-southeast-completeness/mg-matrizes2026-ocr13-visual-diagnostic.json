@@ -1,0 +1,41 @@
+{
+  "source_id": "mg-matrizes-2026",
+  "source_sha256": "bbc01f6b27a10f1794162bbe9effe5fc430796972abcbd45b74e05958534f2bc",
+  "actor_type": "automated",
+  "actor_id": "curriculos-abertos:southeast-completeness",
+  "reviewed_at": "2026-10-28T21:47:30.709750+00:00",
+  "visual_diagnostic_pages": [
+    {
+      "page": 1,
+      "path": "var/private-evidence/source-audit-southeast-completeness/mg-matrizes2026-ocr13/page-01-original-raster.png",
+      "sha256": "0fd3b5c4f94bd3c92bc34643687135438f3723d2e723c7cf962c5005a1fcd948"
+    },
+    {
+      "page": 7,
+      "path": "var/private-evidence/source-audit-southeast-completeness/mg-matrizes2026-ocr13/page-07-original-raster.png",
+      "sha256": "5fab1af23e20ebb4f807ab2eb11112990a3e3589c1e13a633529ea81e86c8a2b"
+    },
+    {
+      "page": 13,
+      "path": "var/private-evidence/source-audit-southeast-completeness/mg-matrizes2026-ocr13/page-13-original-raster.png",
+      "sha256": "1021f223d73ec99d9c35440a7477e910d3feda54ab5d4b3bf3c1180502b2daf2"
+    }
+  ],
+  "observations": [
+    "Original page1 is a legible government resolution with proper Portuguese text; corrupt cache is a text-encoding defect.",
+    "Middle page7 clearly displays ChapterIII and Articles28–30; native layer does not represent those characters.",
+    "Last page13 clearly displays Articles54/55, date and official signature/authentication, confirming the legal body ends before annexes14+."
+  ],
+  "full_literal_transcription_review_completed": false,
+  "high_ocr_confidence_is_not_source_verification": true,
+  "all6355words_require_conference_not_only_low_confidence94": true,
+  "pending_priority_token_inventory": {
+    "path": "var/private-evidence/source-audit-southeast-completeness/mg-matrizes2026-ocr13/all-low-confidence-words.json",
+    "sha256": "b14b5ad108bfef0150de777949828d724f719f6e1d28c33aef31a46a4cca1f06",
+    "tokens": 94
+  },
+  "binding_proposed": false,
+  "source_manifest_edited": false,
+  "production_cache_modified": false,
+  "status": "diagnosis_confirmed_OCR_candidates_pending_full_glyph_and_documentary_conference"
+}

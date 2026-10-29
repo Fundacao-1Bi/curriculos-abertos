@@ -1,0 +1,46 @@
+{
+  "scope": "Read-only inspection of an identified offline extraction cache, not a claim about the currently served publication or freshFULL.",
+  "source_id": "sp-curriculo-eief-isbn",
+  "source_sha256": "f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500",
+  "cache_path": "data/extracted/f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500-page-cell-v1.5.0.json",
+  "cache_sha256": "a9bf5491a557ba9f5c0639ba476dcc1530f7ad69f925d8c580f6947bb361ce49",
+  "extraction_revision": "page-cell-v1.5.0",
+  "unrecognized_original_code_item_ids": {
+    "EIO2TS04": [],
+    "EIO3TS04": [],
+    "EF069AR16": []
+  },
+  "all_three_absent": true,
+  "adjacent_existing_EI01TS04": {
+    "id": "ca:sp-curriculo-eief-isbn:74b08376476d6a096ca7",
+    "evidence": [
+      {
+        "bbox": [
+          90.9390013217926,
+          187.82000732421875,
+          220.7501844926314,
+          291.469970703125
+        ],
+        "excerpt": "Conhecer diferentes mani- festações artísticas de sua comunidade e de outras culturas.",
+        "locator": "table:0/row:1/cell:0",
+        "method": "pymupdf-ruled-cell",
+        "page": 50,
+        "page_normalization": {
+          "inverse_display_matrix": null,
+          "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+          "native_body_rotation_applied": 0,
+          "original_rotation": 0,
+          "source_file_modified": false
+        },
+        "printed_page": null,
+        "section": "Tabela 1, linha 2",
+        "source_id": "sp-curriculo-eief-isbn"
+      }
+    ],
+    "text_sha256": "e3d449684de6a60ffc04c2fda9b81325c439ed8f43676e271ec9c2f68732dbb2",
+    "contains_other_recovered_cells": false
+  },
+  "supersession_required_by_this_recovery": false,
+  "production_cache_modified": false,
+  "source_ready": false
+}

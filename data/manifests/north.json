@@ -418,7 +418,7 @@
         "status": "pending_primary_normative_artifact"
       }
     ],
-    "uncoded_items_path": "data/manifests/uncoded/ac-em-pv-items.json",
+    "uncoded_items_path": "data/manifests/uncoded/ac-em-fgb-v1-combined-items.json",
     "adapter_part_verification": {
       "actor_type": "automated",
       "part": "PV/Pós-Médio explicit Habilidades objectives and annex COMPETÊNCIA cells",
@@ -429,6 +429,23 @@
       "objectives": 146,
       "competencies": 6,
       "whole_document_reconciled": false
+    },
+    "adapter_authority": {
+      "coded_learning_ranges": [
+        [
+          122,
+          384
+        ]
+      ],
+      "mode": "versioned_sidecar_authoritative_for_reviewed_published_FGB_organizer_code_occurrences",
+      "evidence": "docs/evidence/source-audit-ac-em/fgb-v1-ADAPTER.md",
+      "review_status": "automated_primary_documentary_scope_reconciled_not_human_pedagogical_or_UF_acceptance"
+    },
+    "structured_adapter_binding": {
+      "sidecar_sha256": "e8d40d8a44d5971cc5e01301698e20c403f954de0dc7165f9bf0a2894eea44a2",
+      "records": 1292,
+      "actor_type": "automated",
+      "scope": "AC EM FGB reviewed pages and previous PV, not whole source"
     }
   },
   {
@@ -4176,16 +4193,22 @@
         "note": "Automated primary visual review: a single Habilidades column is under this explicit local year-block heading. This observation is not a literal quotation; no broader page range or prerequisite relation is inferred."
       }
     ],
-    "uncoded_items_path": "data/manifests/uncoded/pa-dcepa-items.json",
+    "uncoded_items_path": "data/manifests/uncoded/pa-dcepa-habilidades-v1-combined-items.json",
     "adapter_authority": {
       "coded_learning_pages": [
         73,
         88
       ],
-      "mode": "sidecar_authoritative_for_full_EI_objective_definitions_uncoded_paragraphs_experiences_and_local_EF_objectives",
-      "scope_note": "Suppress generic coded EI definitions in this physical range only, avoiding duplicate93parents. Keep generic EF Habilidades definitions as genuine definitions; local numeric objectives only reference their adjacent codes. Do not infer equivalence.",
-      "evidence": "docs/evidence/source-audit-pa/ADAPTER.md",
-      "review_status": "automated_primary_documentary_adapter_verified_not_UF_acceptance"
+      "coded_learning_ranges": [
+        [
+          112,
+          323
+        ]
+      ],
+      "mode": "sidecar_authoritative_for_complete_EI_and_EF_published_definitions_and_local_units_in_explicit_disjoint_physical_ranges",
+      "scope_note": "Preserve frozen1972 baseline values and append2055own Habilidades definitions. Suppress generic coded duplicates only73–88 and112–323; retain gap89–111 and all documentary page sections. Own Habilidades remain habilidade, never demoted for association with left objectives.",
+      "evidence": "docs/evidence/source-audit-pa/habilidades-v1-ADAPTER.md",
+      "review_status": "automated_primary_scope_reconciled_not_human_pedagogical_or_UF_acceptance"
     }
   },
   {
@@ -12257,7 +12280,23 @@
           }
         ]
       }
-    ]
+    ],
+    "uncoded_items_path": "data/manifests/uncoded/rr-ei-organizers-age-v2-items.json",
+    "adapter_authority": {
+      "coded_learning_pages": [
+        28,
+        99
+      ]
+    },
+    "adapter_part_verification": {
+      "actor_type": "automated",
+      "review_path": "docs/evidence/source-audit-rr/independent-final-summary.json",
+      "review_sha256": "0b6393d9c4d51de12a553945002804f8a778f8eb156de726fa0e0b58652c896d",
+      "sidecar_sha256": "98992856b485be462bac63fdaaf071c8c375d7584f8a01cadab70bedcc60a206",
+      "scope": "Only primary EI legend28 and organizers29–99; EF and other contexts not declared complete.",
+      "old_snapshot_preserved": true,
+      "intervals_only_from_original_physical_age_captions": true
+    }
   },
   {
     "id": "rr-dcr-em",
@@ -12585,7 +12624,24 @@
     "application_period": null,
     "document_type": "referencial_curricular",
     "normative_parts": [
-      "Documento integral; reconciliação de índice e partes pendente"
+      "Preliminares documentais: capa, identificação, apresentação e sumário (páginas1–11)",
+      "Capítulo 1: Introdução",
+      "Capítulo 2: Pacto Interfederativo: Sua Relevância na (Re)Elaboração do Referencial Curricular de Rondônia",
+      "Capítulo 3: Educação Infantil no Estado de Rondônia – Contextualização",
+      "Capítulo 4: Os Fundamentos Pedagógicos da Educação Infantil",
+      "Capítulo 5: Concepções Basilares da Educação Infantil",
+      "Capítulo 6: Modalidades na Educação Infantil",
+      "Capítulo 7: O Currículo da Educação Infantil por Campos de Experiências",
+      "Capítulo 8: Campos de experiências",
+      "Capítulo 9: Organização do Trabalho Pedagógico",
+      "Capítulo 10: Transição para e na Educação Infantil",
+      "Capítulo 11: O Docente da Educação Infantil",
+      "Capítulo 12: A Coordenação Pedagógica na Educação Infantil",
+      "Capítulo 13: Formação continuada",
+      "Capítulo 14: A necessária e Fundamental Parceria com as Famílias",
+      "Capítulo 15: Transição da Educação Infantil para o Ensino Fundamental",
+      "Capítulo 16: Síntese das Aprendizagens",
+      "Capítulo 17: Bibliografia"
     ],
     "redistribution": "Condição de redistribuição não estabelecida; snapshot privado para conferência. Direitos da fonte preservados.",
     "collected_at": "2026-10-28T03:31:10.287230+00:00",
@@ -12692,7 +12748,24 @@
         173
       ]
     },
-    "uncoded_items_path": "data/manifests/uncoded/ro-ei-complete-primary.json"
+    "uncoded_items_path": "data/manifests/uncoded/ro-ei-complete-primary.json",
+    "whole_primary_inventory_verification": {
+      "actor_type": "automated",
+      "path": "docs/evidence/source-audit-ro/ei-whole-primary-inventory.json",
+      "sha256": "9d6d9d942a64a65b64434bd92c418ed48d0c55aef7a9f1a5faf1de45ecca3339",
+      "source_derived_denominator": 773,
+      "source_pages": 173,
+      "native_blocks": 3747,
+      "nonwhite_characters": 246117,
+      "all_original_index_entries": 48,
+      "explicit_noncurricular_exclusions": {
+        "blocks": 12,
+        "not_learner_definitions": true,
+        "page": 5,
+        "scope": "Institutional credit names/hidden overlays and repeated footer only; full normative opening retained."
+      },
+      "receipt_current_runtime_pending": true
+    }
   },
   {
     "id": "ro-rcro-ef",
@@ -12763,9 +12836,15 @@
       "coded_learning_pages": [
         258,
         278
+      ],
+      "coded_learning_ranges": [
+        [
+          544,
+          551
+        ]
       ]
     },
-    "uncoded_items_path": "data/manifests/uncoded/ro-ef-spanish-complete.json"
+    "uncoded_items_path": "data/manifests/uncoded/ro-ef-spanish-competencies-er-v3.json"
   },
   {
     "id": "to-dct-ef-cn-mat",
@@ -17357,6 +17436,12 @@
           [
             30,
             56,
+            296,
+            808
+          ],
+          [
+            302,
+            56,
             566,
             808
           ]
@@ -17364,10 +17449,20 @@
         "reading_order": "as_declared",
         "coordinate_space": "original_pdf_page",
         "evidence": {
+          "source_id": "ap-plano-em-001-2026",
           "page": 80,
-          "section": "Parecer043/2025",
-          "verification": "Página integral do parecer, sem atos alheios."
-        }
+          "printed_page": "80",
+          "section": "Parecer043/2025 — início do histórico",
+          "excerpt": "I - HISTÓRICO",
+          "bbox": [
+            35.43394470214844,
+            169.38095092773438,
+            102.6639404296875,
+            179.38095092773438
+          ],
+          "method": "native-heading-and-primary-two-column-visual-readback"
+        },
+        "scope_verification_note": "Automated observation: read the complete left column then the complete right column. All843original scoped word identities/coordinates retained exactly once; the previous wide region interleaved columns."
       },
       {
         "page": 81,
@@ -17422,7 +17517,115 @@
       "documentary_sections": 3,
       "warnings": 0,
       "result": "passed_includes_acts043_and001_excludes_school_recognition_and_fiscal_identifiers"
-    }
+    },
+    "uncoded_items_path": "data/manifests/uncoded/ap-plan-acts-primary-items.json",
+    "adapter_authority": {
+      "uncoded_page_sections_pages": [
+        80,
+        82
+      ]
+    },
+    "adapter_part_verification": {
+      "actor_type": "automated",
+      "scope": "Complete declared act regions only; referenced curriculum/plan body remains separate.",
+      "review_path": "docs/evidence/source-audit-north-norms-independent/verification-summary.json",
+      "review_sha256": "881031892e7e13f846d80b07f14ae8406221663b4f95c69d26f943b41b8a533a",
+      "sidecar_sha256": "f9a016239ece1a6d4886bc77501987dbef444c3a6fcc426b45cc8718041ae008",
+      "documentary_role_partition_verified": true,
+      "whole_uf_claimed": false
+    },
+    "expected_related_documents": [
+      {
+        "title": "Plano de Ação da Secretaria de Estado da Educação - SEED para implementação da Política Nacional do Ensino Médio na Rede Pública de Ensino do Estado do Amapá",
+        "mandatory": true,
+        "status": "research_pending",
+        "evidence": [
+          {
+            "source_id": "ap-plano-em-001-2026",
+            "page": 81,
+            "printed_page": "81",
+            "section": "res001-artigo-1",
+            "excerpt": "Art. 1º Aprovar o Plano de Ação da Secretaria de Estado",
+            "bbox": [
+              304.7169189453125,
+              618.9270629882812,
+              562.616943359375,
+              628.9442749023438
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res001-artigo-1:line:1",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ap-plano-em-001-2026",
+            "page": 81,
+            "printed_page": "81",
+            "section": "res001-artigo-1",
+            "excerpt": "da Educação - SEED para implementação da Política",
+            "bbox": [
+              304.7169189453125,
+              630.9270629882812,
+              562.6160278320312,
+              640.9270629882812
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res001-artigo-1:line:2",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ap-plano-em-001-2026",
+            "page": 81,
+            "printed_page": "81",
+            "section": "res001-artigo-1",
+            "excerpt": "Nacional do Ensino Médio na Rede Pública de Ensino",
+            "bbox": [
+              304.7169189453125,
+              642.9270629882812,
+              562.59130859375,
+              652.9270629882812
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res001-artigo-1:line:3",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ap-plano-em-001-2026",
+            "page": 81,
+            "printed_page": "81",
+            "section": "res001-artigo-1",
+            "excerpt": "do Estado do Amapá, em conformidade com a Lei nº",
+            "bbox": [
+              304.7169189453125,
+              654.9270629882812,
+              562.614990234375,
+              664.9270629882812
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res001-artigo-1:line:4",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ap-plano-em-001-2026",
+            "page": 81,
+            "printed_page": "81",
+            "section": "res001-artigo-1",
+            "excerpt": "14.945/2024, Resolução CNE/CEB nº 2/2024, Resolução",
+            "bbox": [
+              304.7169189453125,
+              666.9270629882812,
+              562.5949096679688,
+              676.9270629882812
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res001-artigo-1:line:5",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          }
+        ],
+        "edition": null,
+        "reason": "The act approves a separate Plan; the opinion describes its curriculum matrices/tables that are not attached in these scoped act pages. The year2026belongs to the approving Resolution, not an inferred Plan edition.",
+        "related_source_id": null
+      }
+    ]
   },
   {
     "id": "to-dct-guia-ei-ef",
@@ -17621,11 +17824,56 @@
         "title": "Currículo de Educação Digital, Midiática e Computacional do Estado do Acre",
         "mandatory": true,
         "status": "research_pending",
-        "evidence": {
-          "source_id": "ac-computacao-667-2025",
-          "page": 39,
-          "section": "Considerandos e artigo1º"
-        },
+        "evidence": [
+          {
+            "source_id": "ac-computacao-667-2025",
+            "page": 39,
+            "printed_page": "39",
+            "section": "res667-artigo-1",
+            "excerpt": "Art. 1º – A presente Resolução institui e aprova o Currículo de Educação Digital, Midiática e Computacional do Estado do Acre, a ser incorporado ao Currículo",
+            "bbox": [
+              17.00790023803711,
+              610.49951171875,
+              580.504638671875,
+              621.4194946289062
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res667-artigo-1:line:1",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ac-computacao-667-2025",
+            "page": 39,
+            "printed_page": "39",
+            "section": "res667-artigo-1",
+            "excerpt": "de Referência Único do Estado do Acre, nos termos da BNCC, e orienta o processo de implementação e operacionalização nos Sistemas Estadual e Municipais",
+            "bbox": [
+              17.00790023803711,
+              620.0419921875,
+              580.4998779296875,
+              630.9619750976562
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res667-artigo-1:line:2",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ac-computacao-667-2025",
+            "page": 39,
+            "printed_page": "39",
+            "section": "res667-artigo-1",
+            "excerpt": "de Ensino do Acre.",
+            "bbox": [
+              17.00790023803711,
+              629.5845947265625,
+              84.16390991210938,
+              640.5045776367188
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res667-artigo-1:line:3",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          }
+        ],
         "reason": "A resolução incorpora currículo com introdução, concepções e quadros organizadores por etapas; o texto integral desse currículo não consta nestas páginas e ainda precisa ser obtido. Consulta pública2025 está encerrada; vídeos tutoriais não são o artefato curricular."
       }
     ],
@@ -17637,6 +17885,22 @@
       "documentary_sections": 2,
       "warnings": 0,
       "result": "passed_includes667_excludes_previous_contract_and_next468"
+    },
+    "uncoded_items_path": "data/manifests/uncoded/ac-digital-act-primary-items.json",
+    "adapter_authority": {
+      "uncoded_page_sections_pages": [
+        39,
+        40
+      ]
+    },
+    "adapter_part_verification": {
+      "actor_type": "automated",
+      "scope": "Complete declared act regions only; referenced curriculum/plan body remains separate.",
+      "review_path": "docs/evidence/source-audit-north-norms-independent/verification-summary.json",
+      "review_sha256": "881031892e7e13f846d80b07f14ae8406221663b4f95c69d26f943b41b8a533a",
+      "sidecar_sha256": "922089eaab340e35dc5379ff23a7536be3382f4bc1ca82d0a883f1f96569d9c4",
+      "documentary_role_partition_verified": true,
+      "whole_uf_claimed": false
     }
   },
   {

@@ -1,0 +1,213 @@
+{
+  "source_id": "rj-doc-eief-2019",
+  "status": "ready_for_root_binding_review",
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:body-runtime-verifier",
+  "manifest_path": "data/manifests/bncc-southeast.json",
+  "expected_manifest_sha256_before_any_binding": "4ac8f7ff71edb63e756e1566fdf26859c83ef7fb11cd9706f1219987fe6dbb34",
+  "source_sha256": "b915967926c621164aba46d5cbdbd74406a658410695199ef6ae3926de138bf6",
+  "expected_current_source_fields": {
+    "uncoded_items_path": "data/manifests/uncoded/rj-eief-structured-items.json",
+    "uncoded_items_sha256": "dbbf047c569cbadee6afcd69cf16d504275942d9894c4acb0fbca041086d9eeb",
+    "adapter_authority": null
+  },
+  "proposed_source_fields": {
+    "uncoded_items_path": "data/manifests/uncoded/rj-coded-body-composed-rj-doc-eief-2019-v1-items.json",
+    "adapter_authority": {
+      "coded_learning_ranges": [
+        [
+          143,
+          143
+        ],
+        [
+          158,
+          158
+        ],
+        [
+          163,
+          163
+        ],
+        [
+          184,
+          184
+        ],
+        [
+          202,
+          202
+        ],
+        [
+          210,
+          210
+        ],
+        [
+          215,
+          215
+        ],
+        [
+          222,
+          222
+        ],
+        [
+          224,
+          224
+        ],
+        [
+          234,
+          234
+        ],
+        [
+          254,
+          254
+        ],
+        [
+          275,
+          275
+        ],
+        [
+          286,
+          286
+        ],
+        [
+          310,
+          310
+        ],
+        [
+          328,
+          328
+        ],
+        [
+          340,
+          340
+        ],
+        [
+          352,
+          352
+        ],
+        [
+          359,
+          360
+        ],
+        [
+          368,
+          368
+        ],
+        [
+          377,
+          377
+        ],
+        [
+          379,
+          389
+        ],
+        [
+          409,
+          410
+        ],
+        [
+          413,
+          413
+        ],
+        [
+          417,
+          417
+        ],
+        [
+          421,
+          421
+        ],
+        [
+          437,
+          437
+        ],
+        [
+          456,
+          456
+        ],
+        [
+          464,
+          464
+        ],
+        [
+          475,
+          475
+        ]
+      ]
+    },
+    "technical_supersessions": [
+      {
+        "format": "record_replacement_pairs_v1",
+        "path": "docs/evidence/native-body-completeness-audit/rj-doc-eief-2019-technical-supersessions.json",
+        "sha256": "77d5c60b840671a9671ee8b5de21d43289b5a9f5d300583826b3cdf2892a0f59",
+        "scope": "technical_extraction_correction"
+      }
+    ]
+  },
+  "proposed_adapter_sha256": "6048e83c63dbbd0d44f48eee3af64bc635c6cf500494589812552a9bf90b25d5",
+  "verification_report": "docs/evidence/native-body-completeness-audit/rj-doc-eief-2019-runtime-verification.json",
+  "verification_report_sha256": "f3ac87b639caf6d61e030c746bbbdeccf0f20d9adaefbe27f1fd5ff55e6a0088",
+  "verified_counts": {
+    "cache_items": 2028,
+    "baseline_items": 2164,
+    "body_repairs": 200,
+    "composed_adapter_records": 336,
+    "real_loader_records": 336,
+    "real_finalizer_records": 2165,
+    "schema_passed": 2165,
+    "literal_adapter_evidence_passed": 336,
+    "complete_character_receipts": 200,
+    "valid_coded_id_context_preserved": 198,
+    "valid_coded_full_context_exact": 198,
+    "unaffected_records_preserved": 1965,
+    "unaffected_records_exact_including_review_time": 1829,
+    "automated_revalidation_event_timestamps": 136,
+    "explicit_invalid_supersessions": 1,
+    "new_canonical_records": 2,
+    "documentary_EI_age_context_enrichments": 0
+  },
+  "composition_inputs": [
+    {
+      "path": "data/manifests/uncoded/rj-eief-structured-items.json",
+      "sha256": "dbbf047c569cbadee6afcd69cf16d504275942d9894c4acb0fbca041086d9eeb",
+      "record_count": 136
+    },
+    {
+      "path": "data/manifests/uncoded/rj-coded-body-rj-doc-eief-2019-v1-items.json",
+      "sha256": "c624bd49f904237c818d08bff8ef1252ec528b88aeb9f6060f1b4720aa57c1be",
+      "record_count": 200
+    }
+  ],
+  "supersession_ledger": [
+    {
+      "old_id": "ca:rj-doc-eief-2019:2a06518986d550be2dcb",
+      "old_code": "EF07CI15Interpretar",
+      "old_text": "fenômenos naturais (como vulcões, terremotos e tsunamis) e justificar a rara ocorrência desses fenômenos no Brasil, com base no modelo das placas tectônicas, identificando os fenômenos naturais que influenciam e ocorra na localidade, cidade e medidas para prevenção de desastre.",
+      "new_code": "EF07CI15",
+      "locator": "table:0/row:17/cell:6",
+      "page": 383,
+      "source_token_literal": "(EF07CI15Interpretar",
+      "reason": "Native source omits the separator after its eight identifier glyphs; generic lexer incorrectly consumed body word Interpretar into the code. Directed technical restoration only; no official curriculum change.",
+      "requires_root_technical_acceptance": true,
+      "new_id": "ca:rj-doc-eief-2019:6eb5db5e20d78b7496e9",
+      "new_page": 383
+    }
+  ],
+  "binding_constraints": [
+    "Change only uncoded_items_path, merge the explicit coded_learning_ranges and append the pinned technical_supersessions entries; preserve every other existing Source field and official PDF bytes.",
+    "The coded ranges suppress only generic coded records, all of which are re-emitted with protected identities/contexts or explicit invalid-identifier supersessions. Generic uncoded normative/page sections remain enabled.",
+    "Composed path and bytes are final: do not regenerate or overwrite the adapter while applying the binding.",
+    "An individual manifest file can contain several Sources: apply all approved sibling Source changes against one reviewed manifest diff rather than using an obsolete whole-file hash after the first binding.",
+    "Technical replacement ledger preserves all previous publication snapshots; never rewrite an earlier publication or interpret an ER literal as an EF alias."
+  ],
+  "whole_source_reconciled": false,
+  "uf_ready": false,
+  "human_review": false,
+  "manifest_modified": false,
+  "technical_supersession_append_entries": [
+    {
+      "format": "record_replacement_pairs_v1",
+      "path": "docs/evidence/native-body-completeness-audit/rj-doc-eief-2019-technical-supersessions.json",
+      "sha256": "77d5c60b840671a9671ee8b5de21d43289b5a9f5d300583826b3cdf2892a0f59",
+      "scope": "technical_extraction_correction"
+    }
+  ]
+}

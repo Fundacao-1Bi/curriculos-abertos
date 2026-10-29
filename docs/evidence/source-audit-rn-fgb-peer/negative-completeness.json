@@ -1,0 +1,46 @@
+{
+  "candidate_sha256": "505ef93e5f24f36d0d03c537f5dcfea5823be56df4c5d3bbe83432cdc69a3050",
+  "actor_type": "automated",
+  "native_content_denominator_baseline_pass": true,
+  "negative_controls": [
+    {
+      "case": "omit_primary_coded_slot",
+      "baseline_passed": true,
+      "mutation_blocked": true
+    },
+    {
+      "case": "drop_real_crosspage_body_tail_and_evidence_consistently",
+      "baseline_passed": true,
+      "mutation_blocked": true
+    },
+    {
+      "case": "omit_knowledge_object_physical_region",
+      "baseline_passed": true,
+      "mutation_blocked": true
+    },
+    {
+      "case": "change_didactic_last_word",
+      "baseline_passed": true,
+      "mutation_blocked": true
+    },
+    {
+      "case": "omit_repeated_physical_competence_header_occurrence",
+      "baseline_passed": true,
+      "mutation_blocked": true
+    },
+    {
+      "case": "invent_grade",
+      "baseline_passed": true,
+      "mutation_blocked": true
+    },
+    {
+      "case": "omit_outside_grid_native_prose",
+      "baseline_passed": true,
+      "mutation_blocked": true
+    }
+  ],
+  "negative_controls_passed": 7,
+  "full_FGB_acceptance": false,
+  "reason": "Native textual coverage does not discharge pagination-role findings, unresolved raster/vector information or logical continuation of contextual fields.",
+  "no_production_mutation": true
+}

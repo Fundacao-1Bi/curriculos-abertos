@@ -9,7 +9,7 @@ from pathlib import Path
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from correspondence import lexical_candidates
-from distribution import write_parts
+from distribution import scoped_receipt_relations,write_parts
 from ingest import normalize
 from validate_artifact import validate_artifact
 
@@ -29,6 +29,12 @@ class DistributionContracts(unittest.TestCase):
     def test_record_bounds_do_not_silently_truncate(self):
         with tempfile.TemporaryDirectory() as directory:
             with self.assertRaises(ValueError):write_parts(Path(directory),'isolated-test','items',[{'text':'x'*(8*1024*1024)}])
+
+    def test_delta_receipt_keeps_only_relations_touching_targets(self):
+        items=[{'id':'br-a','source_id':'br-bncc-computacao-2022'},{'id':'br-b','source_id':'br-bncc-2018'},{'id':'pe-a','source_id':'pe-historia-pernambuco-2026'}]
+        national={'id':'br-only','members':[{'item_id':'br-a','role':'source'},{'item_id':'br-b','role':'target'}]}
+        local={'id':'pe-ref','members':[{'item_id':'pe-a','role':'source'},{'item_id':'br-b','role':'target'}]}
+        self.assertEqual(scoped_receipt_relations([national,local],items,{'pe-historia-pernambuco-2026'}),[local])
 
     def test_schema_hash_is_a_blocking_artifact_contract(self):
         with tempfile.TemporaryDirectory() as directory:

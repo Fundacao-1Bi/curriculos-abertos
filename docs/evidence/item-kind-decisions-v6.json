@@ -1,0 +1,198 @@
+{
+  "at": "2026-10-28T18:28:23.328Z",
+  "policy_version": "documentary-item-roles-2026-10-28-v6",
+  "actor_type": "automated",
+  "actor_id": "agent:domain",
+  "human_pedagogical_review_claimed": false,
+  "learning_kinds_unchanged": 22,
+  "authority": "Root explicit authorization; documentary role confirmations by data_northeast and portal source owners",
+  "decisions": {
+    "dispositivo_normativo_alterado": "normative",
+    "grupo_direitos_aprendizagem": "context",
+    "oferta_trilha": "context",
+    "trilha_curricular": "context"
+  },
+  "rationale": {
+    "dispositivo_normativo_alterado": "BA125 Art1 cites/amends the prior Res26/2016 Art19: remains child of Art1, not a seventh outer article or student outcome.",
+    "grupo_direitos_aprendizagem": "SP/MG general EI rights heading, distinct from the complete right statements.",
+    "oferta_trilha": "RJ exact source trail offering in documented area/grade context, not a student expectation.",
+    "trilha_curricular": "RJ exact source trail title and organizational identity, not an objective or semantic equivalence."
+  },
+  "witnesses": [
+    {
+      "kind": "dispositivo_normativo_alterado",
+      "category": "normative",
+      "path": "data/manifests/uncoded/ba-resolucao-125-items.json",
+      "sha256": "f6f1a1579883c97bdce5ab0592357e59af86681b004d6747f8789db6828ffa9d",
+      "count": 1,
+      "sample": {
+        "source_id": "ba-resolucao-125-2024-historia",
+        "kind": "dispositivo_normativo_alterado",
+        "code": null,
+        "text": "Art. 19. O Projeto Político Pedagógico - PPP é um instrumento de exercício da autonomia pedagógica e de gestão da instituição de ensino, observados os parâmetros norteadores da mantenedora, e representa um dos meios de viabilizar a formação cidadã dos estudantes na educação formal.",
+        "page": 1,
+        "parent_key": "article-1",
+        "source_context": {
+          "source_native_line_ordinals": [
+            21,
+            22,
+            23,
+            24
+          ],
+          "documentary_role": "normative",
+          "quoted_amended_article_not_seventh_outer_article": true,
+          "stage_position_scope": "Clause-specific when explicitly named; otherwise whole-act documentary scope only, not applicability to every education stage. Article3universities preserved as a normative clause, not a school learning item."
+        }
+      }
+    },
+    {
+      "kind": "grupo_direitos_aprendizagem",
+      "category": "context",
+      "path": "data/manifests/uncoded/mg-eief-rights-items.json",
+      "sha256": "8eaf48f81b25a0404520c6a11e24d8bef102df8d274fc31e8fdf628293994564",
+      "count": 1,
+      "sample": {
+        "source_id": "mg-crmg-eief-atualizada",
+        "kind": "grupo_direitos_aprendizagem",
+        "code": null,
+        "text": "2.5.1 Direitos de Aprendizagem",
+        "page": 34,
+        "parent_key": null,
+        "source_context": {
+          "source_role": "Original general EI rights heading",
+          "classification": "documentary_context",
+          "learning_objective_claim": false,
+          "national_reuse": "The source explicitly attributes the general panel to BNCC. No automatic equivalence or full curriculum coverage is inferred."
+        }
+      }
+    },
+    {
+      "kind": "grupo_direitos_aprendizagem",
+      "category": "context",
+      "path": "data/manifests/uncoded/mg-eief-structured-items.json",
+      "sha256": "9615a86a6cb029bf46f12eac429ed0088f81e2772b6b80c423269d6374c3d4c4",
+      "count": 1,
+      "sample": {
+        "source_id": "mg-crmg-eief-atualizada",
+        "kind": "grupo_direitos_aprendizagem",
+        "code": null,
+        "text": "2.5.1 Direitos de Aprendizagem",
+        "page": 34,
+        "parent_key": null,
+        "source_context": {
+          "source_role": "Original general EI rights heading",
+          "classification": "documentary_context",
+          "learning_objective_claim": false,
+          "national_reuse": "The source explicitly attributes the general panel to BNCC. No automatic equivalence or full curriculum coverage is inferred."
+        }
+      }
+    },
+    {
+      "kind": "oferta_trilha",
+      "category": "context",
+      "path": "data/manifests/uncoded/rj-itinerarios-objectives-items.json",
+      "sha256": "f7237754b308220133a4410926dd6b3dcf5f408c31ddec58e3a42817cf3a41f1",
+      "count": 54,
+      "sample": {
+        "source_id": "rj-em-itinerarios",
+        "kind": "oferta_trilha",
+        "code": null,
+        "text": "MÍDIAS: LINGUAGEM EM AÇÃO",
+        "page": 12,
+        "parent_key": "trail:7d03f82c0350836b",
+        "source_context": {
+          "literal_trail_header": "TRILHA DE APRENDIZAGEM: MÍDIAS: LINGUAGEM EM AÇÃO",
+          "source_offering_boundary": [
+            12,
+            6
+          ],
+          "literal_grade_header": "NOVO ENSINO MÉDIO - 2ª série",
+          "grade_header_evidence": {
+            "source_id": "rj-em-itinerarios",
+            "page": 12,
+            "printed_page": "12",
+            "section": "grade",
+            "excerpt": "NOVO ENSINO MÉDIO - 2ª série",
+            "locator": "line:7",
+            "bbox": [
+              77.66400146484375,
+              292.7179870605469,
+              260.0899963378906,
+              306.0019836425781
+            ],
+            "coordinate_space": "display_pdf_after_normalization",
+            "page_normalization": {
+              "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+              "original_rotation": 0,
+              "native_body_rotation_applied": 0,
+              "inverse_display_matrix": null,
+              "source_file_modified": false
+            },
+            "method": "rj-native-explicit-source-line-v1"
+          }
+        }
+      }
+    },
+    {
+      "kind": "trilha_curricular",
+      "category": "context",
+      "path": "data/manifests/uncoded/rj-itinerarios-objectives-items.json",
+      "sha256": "f7237754b308220133a4410926dd6b3dcf5f408c31ddec58e3a42817cf3a41f1",
+      "count": 13,
+      "sample": {
+        "source_id": "rj-em-itinerarios",
+        "kind": "trilha_curricular",
+        "code": null,
+        "text": "MÍDIAS: LINGUAGEM EM AÇÃO",
+        "page": 12,
+        "parent_key": "area:d8de26c6ab9d8f75",
+        "source_context": {
+          "literal_header": "TRILHA DE APRENDIZAGEM: MÍDIAS: LINGUAGEM EM AÇÃO",
+          "identity_grain": "Exact source title within exact declared area, not semantic curriculum equivalence."
+        }
+      }
+    },
+    {
+      "kind": "grupo_direitos_aprendizagem",
+      "category": "context",
+      "path": "data/manifests/uncoded/sp-eief-rights-items.json",
+      "sha256": "33d9103e7631e8ad61659551efc8a3972de487e52b06c9d2c7cdfed7cc848a3e",
+      "count": 1,
+      "sample": {
+        "source_id": "sp-curriculo-eief-isbn",
+        "kind": "grupo_direitos_aprendizagem",
+        "code": null,
+        "text": "Direitos de Aprendizagem e Desenvolvimento",
+        "page": 44,
+        "parent_key": null,
+        "source_context": {
+          "source_role": "Original general EI rights heading",
+          "classification": "documentary_context",
+          "learning_objective_claim": false,
+          "national_reuse": "The source explicitly attributes the general panel to BNCC. No automatic equivalence or full curriculum coverage is inferred."
+        }
+      }
+    },
+    {
+      "kind": "grupo_direitos_aprendizagem",
+      "category": "context",
+      "path": "data/manifests/uncoded/sp-eief-structured-items.json",
+      "sha256": "1f40faf53de864fbda0078053a9e8cc1446f045c392906b017f9e3d31fb59e34",
+      "count": 1,
+      "sample": {
+        "source_id": "sp-curriculo-eief-isbn",
+        "kind": "grupo_direitos_aprendizagem",
+        "code": null,
+        "text": "Direitos de Aprendizagem e Desenvolvimento",
+        "page": 44,
+        "parent_key": null,
+        "source_context": {
+          "source_role": "Original general EI rights heading",
+          "classification": "documentary_context",
+          "learning_objective_claim": false,
+          "national_reuse": "The source explicitly attributes the general panel to BNCC. No automatic equivalence or full curriculum coverage is inferred."
+        }
+      }
+    }
+  ]
+}

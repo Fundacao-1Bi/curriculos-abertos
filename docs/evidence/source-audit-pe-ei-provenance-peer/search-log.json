@@ -1,0 +1,57 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex-independent-pe-ei-provenance-auditor",
+  "recorded_at": "2026-10-28T20:41:01.607578+00:00",
+  "method": "Live web search, official-site/API reads, direct bounded HTTPS fetches, PDF native text and small private render; no private-account search or Source/core/cache edits.",
+  "queries": [
+    "site:educacao.pe.gov.br \"Currículo de Pernambuco\" \"Educação Infantil\"",
+    "site:cee.pe.gov.br \"Currículo de Pernambuco\" homologação",
+    "site:educacao.pe.gov.br \"programacriancaalfabetizadape\"",
+    "site:cee.pe.gov.br \"Educação Infantil\" \"2018\" \"currículo\"",
+    "site:cee.pe.gov.br \"114/2018\" currículo",
+    "site:portal.educacao.pe.gov.br \"Currículo\" \"Infantil\" filetype:pdf",
+    "\"1hnNk221nOEBv7fgxPtCDjRhMyDZ9sEBk\"",
+    "site:portal.educacao.pe.gov.br \"sites.google.com/view/programacriancaalfabetizadape\"",
+    "\"Currículo de Pernambuco\" homologação \"2018\" \"Portaria\"",
+    "\"Currículo de Pernambuco\" \"Educação Infantil\" \"18\" \"dezembro\"",
+    "site:portal.educacao.pe.gov.br \"currículo\" \"5570\"",
+    "site:educacao.pe.gov.br \"currículo\" \"sites.google.com\" \"infantil\"",
+    "site:portal.educacao.pe.gov.br \"programacriancaalfabetizadape\"",
+    "site:cee.pe.gov.br \"5570/2018\"",
+    "site:educacao.pe.gov.br \"4419\" currículo",
+    "site:undime.org.br Pernambuco currículo \"Infantil\" 2019",
+    "site:undimepe.org.br \"Currículo\" \"Infantil\"",
+    "\"sites.google.com/view/programacriancaalfabetizadape\" \"Secretaria\"",
+    "site:portal.educacao.pe.gov.br \"sites.google.com\" \"alfabetizada\"",
+    "site:educacao.pe.gov.br \"programacriancaalfabetizada\"",
+    "\"Programa Criança Alfabetizada\" \"Currículo\" \"Educação Infantil\" \"site\"",
+    "site:undimepe.org.br/portal/documentos \"curriculo\" \"infantil\"",
+    "site:cepe.com.br \"cepebr-prod\"",
+    "site:diariooficial.cepe.com.br \"2018\" \"29\" \"dezembro\"",
+    "site:portal.cepe.com.br \"diário\" \"acervo\"",
+    "\"PORTARIA SEE Nº 5570\" \"2018\"",
+    "site:pe.gov.br \"programacriancaalfabetizadape\"",
+    "site:pe.gov.br \"sites.google.com\" \"Programa Criança Alfabetizada\"",
+    "site:gov.br \"programacriancaalfabetizadape\"",
+    "\"CURRICULO-DE-PERNAMBUCO-EDUCACAO-INFANTIL-3.pdf\""
+  ],
+  "primary_positive_URLs": [
+    "https://www.cee.pe.gov.br/wp-content/uploads/2025/10/PARECER-114-2018.pdf",
+    "https://www.portal.cepe.com.br/",
+    "https://diariooficial.cepe.com.br/diariooficialweb/",
+    "https://diariooficial.cepe.com.br/diariooficial/public/home/baixarJornal?codigoDiario=1&dataPublicacao=29%2F12%2F2018&edicaoExtra=false"
+  ],
+  "context_only_not_exact_EI_artifact_authentication": [
+    "https://portal.educacao.pe.gov.br/wp-content/uploads/2024/08/CURRICULO-DE-PERNAMBUCO-ENSINO-FUNDAMENTAL.pdf",
+    "https://portal.educacao.pe.gov.br/wp-content/uploads/2023/11/CURRICULO_DE_PERNAMBUCO_DO_ENSINO-MEDIO-2021_Final.pdf",
+    "https://undimepe.org.br/portal/documentos?category=2"
+  ],
+  "non_primary_leads_not_promoted": [
+    "Municipal Afogados curriculum mirror URL returned404",
+    "Municipal São Lourenço da Mata transparency PDF could not be resolved from this environment",
+    "Municipal Recife training PDF and university thesis cite the GoogleSite, but are not a publication by the state issuer authenticating its ownership",
+    "Private mirrors/study-material sites were discovery leads only, not authority"
+  ],
+  "CEE_access_observation": "Official114/2018 PDF was returned as24pages by the web reader and its official indexed text records plenary approval20/12/2018 and DOE29/12/2018. Repeated direct byte fetches then returned503; no local114PDF hash is claimed. The original publishing Portaria was independently recovered through the official CEPE application backend and verified locally.",
+  "absence_scope": "No state issuer→target GoogleSite/Drive linkage was observed in these bounded searches. This does not prove that no institutional publication exists."
+}

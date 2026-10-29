@@ -57,10 +57,30 @@ export function itemFilter(q:Query,publication:string,alias='i'):Filter {
  if(positionConditions.length){const positioned=`EXISTS(SELECT 1 FROM jsonb_array_elements(${alias}.positions) p WHERE ${positionConditions.join(' AND ')})`;const includeUnknown=q.include_unknown_positions===true||q.include_unknown_positions==='true';
   if(includeUnknown&&!q.area&&!q.age_group&&!q.period){const sourceContext=[`sx.publication_id=${alias}.publication_id`,`sx.id=${alias}.source_id`];if(q.stage)sourceContext.push(`sx.payload->'stages' @> ${bind(JSON.stringify([q.stage]))}::jsonb`);if(q.component)sourceContext.push(`jsonb_array_length(sx.payload->'components')=1 AND lower(unaccent(sx.payload->'components'->>0))=${bind(normalize(String(q.component)))}`);conditions.push(`(${positioned} OR (jsonb_array_length(${alias}.positions)=0 AND EXISTS(SELECT 1 FROM sources sx WHERE ${sourceContext.join(' AND ')})))`);}else conditions.push(positioned);
  }
- let rank='(0+0)';
- if(q.q&&normalize(String(q.q))){const needle=normalize(String(q.q));const codeNeedle=needle.replace(/[\p{White_Space}\uFEFF]/gu,'');const like=bind('%'+needle.replace(/[\\%_]/g,'\\$&')+'%'),n=bind(needle),code=bind(codeNeedle),codeLike=bind('%'+codeNeedle.replace(/[\\%_]/g,'\\$&')+'%'),aliasNeedle=bind(JSON.stringify([codeNeedle]));conditions.push(`(curriculum_search_code(${alias}.code)=${code} OR curriculum_search_code(${alias}.code) LIKE ${codeLike} ESCAPE '\\' OR ${alias}.normalized_text LIKE ${like} ESCAPE '\\' OR ${alias}.search_vector @@ plainto_tsquery('portuguese',${n}) OR curriculum_search_aliases(${alias}.payload->'code_aliases') @> ${aliasNeedle}::jsonb OR (${alias}.normalized_text ~ '[[:alpha:]]-[[:space:]]+[[:alpha:]]' AND (public.curriculum_join_pdf_hyphens(${alias}.normalized_text) LIKE ${like} ESCAPE '\\' OR pg_catalog.to_tsvector('pg_catalog.portuguese'::pg_catalog.regconfig,public.curriculum_join_pdf_hyphens(${alias}.normalized_text)) @@ pg_catalog.plainto_tsquery('pg_catalog.portuguese'::pg_catalog.regconfig,${n}))))`);rank=`CASE WHEN curriculum_search_code(${alias}.code)=${code} THEN 100 WHEN curriculum_search_aliases(${alias}.payload->'code_aliases') @> ${aliasNeedle}::jsonb THEN 90 WHEN curriculum_search_code(${alias}.code) LIKE (${code} || '%') THEN 80 WHEN ${alias}.normalized_text LIKE ${like} ESCAPE '\\' THEN 20 WHEN ${alias}.normalized_text ~ '[[:alpha:]]-[[:space:]]+[[:alpha:]]' AND public.curriculum_join_pdf_hyphens(${alias}.normalized_text) LIKE ${like} ESCAPE '\\' THEN 18 ELSE 1 END`;}
+ let rank='(0+0)';let searchPredicates:string[]=[];
+ if(q.q&&normalize(String(q.q))){
+  const needle=normalize(String(q.q)),codeNeedle=needle.replace(/[\p{White_Space}\uFEFF]/gu,'');
+  const like=bind('%'+needle.replace(/[\\%_]/g,'\\$&')+'%'),n=bind(needle),code=bind(codeNeedle),codeLike=bind('%'+codeNeedle.replace(/[\\%_]/g,'\\$&')+'%'),aliasNeedle=bind(JSON.stringify([codeNeedle]));
+  const pdfHyphen=`${alias}.normalized_text ~ '[[:alpha:]]-[[:space:]]+[[:alpha:]]'`;
+  searchPredicates=[
+   `curriculum_search_code(${alias}.code)=${code}`,
+   `curriculum_search_code(${alias}.code) LIKE ${codeLike} ESCAPE '\\'`,
+   `${alias}.normalized_text LIKE ${like} ESCAPE '\\'`,
+   `${alias}.search_vector @@ plainto_tsquery('portuguese',${n})`,
+   `curriculum_search_aliases(${alias}.payload->'code_aliases') @> ${aliasNeedle}::jsonb`,
+   `(${pdfHyphen}) AND public.curriculum_join_pdf_hyphens(${alias}.normalized_text) LIKE ${like} ESCAPE '\\'`,
+   `(${pdfHyphen}) AND pg_catalog.to_tsvector('pg_catalog.portuguese'::pg_catalog.regconfig,public.curriculum_join_pdf_hyphens(${alias}.normalized_text)) @@ pg_catalog.plainto_tsquery('pg_catalog.portuguese'::pg_catalog.regconfig,${n})`,
+  ];
+  rank=`CASE WHEN curriculum_search_code(${alias}.code)=${code} THEN 100 WHEN curriculum_search_aliases(${alias}.payload->'code_aliases') @> ${aliasNeedle}::jsonb THEN 90 WHEN curriculum_search_code(${alias}.code) LIKE (${code} || '%') THEN 80 WHEN ${alias}.normalized_text LIKE ${like} ESCAPE '\\' THEN 20 WHEN ${alias}.normalized_text ~ '[[:alpha:]]-[[:space:]]+[[:alpha:]]' AND public.curriculum_join_pdf_hyphens(${alias}.normalized_text) LIKE ${like} ESCAPE '\\' THEN 18 ELSE 1 END`;
+ }
  if(q.relation_type||q.origin||q.pedagogical_review_status||q.technical_validation_status||q.publication_status){const r=[`rm.publication_id=${alias}.publication_id`,`rm.item_id=${alias}.id`];for(const k of ['relation_type','origin','technical_validation_status','pedagogical_review_status','publication_status'] as const)if(q[k])r.push(k==='origin'?`rr.origin=ANY(${bind(originValues(q[k]))}::text[])`:`rr.${k}=${bind(q[k])}`);conditions.push(`EXISTS(SELECT 1 FROM relation_members rm JOIN relations rr ON rr.publication_id=rm.publication_id AND rr.id=rm.relation_id WHERE ${r.join(' AND ')})`);}
- return{where:conditions.join(' AND '),values,rank};
+ // Keep the seven indexed searches separate. A combined BitmapOr causes
+ // false-positive trigram candidates to recheck aliases/PDF forms in wide
+ // payloads. UNION deduplicates only IDs; the original relevance/order and
+ // every publication/context filter still apply to each branch and the result.
+ const baseWhere=conditions.join(' AND ');
+ const where=searchPredicates.length?`${baseWhere} AND ${alias}.id IN (${searchPredicates.map(predicate=>`SELECT ${alias}.id FROM items ${alias} WHERE ${baseWhere} AND (${predicate})`).join(' UNION ')})`:baseWhere;
+ return{where,values,rank};
 }
 
 async function searchAt(q:Query&{page:number;limit:number},publication:string) {

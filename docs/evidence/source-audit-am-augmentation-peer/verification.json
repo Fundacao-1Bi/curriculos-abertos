@@ -1,0 +1,119 @@
+{
+  "at": "2026-10-28T21:39:36.927692+00:00",
+  "actor_type": "automated",
+  "actor_id": "agent:domain:augmentation-stage-peer",
+  "human_review_claimed": false,
+  "input_module_pins": {
+    "pipeline/raster_augmentation.py": "414ce3f395dbaf7f38e04e073f0ce93747f3f965626099777d663508b3f81263",
+    "pipeline/raster_review_scoped.py": "3808cc1a5ab930bfac8edeebc853bc6f5716e1abd394fd0352de792c13eda2b3",
+    "pipeline/raster_review.py": "8774d4372d0c0d83e73ccabd80d98dafec28f0723e7e5da8ead0c9aa78413781",
+    "pipeline/distribution.py": "88e0d758369eedb70418a7d65da33450b109038b128c4a52d34530bfa2e09f6e",
+    "pipeline/validate_artifact.py": "2a7f3e6b672d0b723ed1ca973776871da2fc0a07c7272a0c9c446d527c141e35",
+    "scripts/augment-ingestion-raw.py": "fdb357ce378c2aac84bb998c215fd4b377e90fdec5980b91cdff0dc4895f8698",
+    "data/schema/1.1.0.json": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df"
+  },
+  "base_manifest_sha256": "be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d",
+  "database_accessed": false,
+  "default_changed": false,
+  "results": {
+    "rn-referencial-em": {
+      "elapsed_seconds": 6.539,
+      "original_raw_receipt": {
+        "publication": "ca-b3c8bbce0697d146fb2d",
+        "artifact": "data/bundles/ca-b3c8bbce0697d146fb2d.manifest.json",
+        "artifact_sha256": "9cf294b26493c0aa857b24a4cf3a9bbe5404c55f8229b894c870a49bcb902baa"
+      },
+      "effective_raw_receipt": {
+        "artifact": "data/bundles/ca-b3c8bbce0697d146fb2d.manifest.json",
+        "artifact_sha256": "9cf294b26493c0aa857b24a4cf3a9bbe5404c55f8229b894c870a49bcb902baa",
+        "publication": "ca-b3c8bbce0697d146fb2d"
+      },
+      "external_stage_file_sha256": "77f07fe2d2c2b93b7bf63330e405bdf78a551133e12339e7a206443a5816b006",
+      "internal_receipt_sha256": "d1203e07cebae2035406cc324dd3fa590c2c2bed8e4a172dcb86661ad7e90e0b",
+      "raw_items_preserved": 5359,
+      "raw_relations_preserved": 171,
+      "added_records": 0,
+      "base_metadata_preserved": true,
+      "input_files_unchanged": 8,
+      "exact_repeat_verified": true,
+      "source_root_primary_pdfs": 0,
+      "stage_path": "var/domain-am-augmentation-peer/rn-referencial-em/var/peer/stage.json"
+    },
+    "am-rca-ei": {
+      "elapsed_seconds": 15.348,
+      "original_raw_receipt": {
+        "publication": "ca-45a51f784722d558a688",
+        "artifact": "data/bundles/ca-45a51f784722d558a688.manifest.json",
+        "artifact_sha256": "7c9b88d39599dc705735938f9d6294709305f62751e91ec11bf364c7bc2598e3"
+      },
+      "effective_raw_receipt": {
+        "artifact": "data/bundles/ca-4c544b50c4eb62a9ef98.manifest.json",
+        "artifact_sha256": "65683b6d804154c093582989d29627809273d8c68c739d9d124c9589b0aa80ae",
+        "publication": "ca-4c544b50c4eb62a9ef98"
+      },
+      "external_stage_file_sha256": "b38360c8d387d39a7ad715e400ee8c87bab9e53af5ff6bed06ef679aaab42607",
+      "internal_receipt_sha256": "b9ea87c1d1beeeec527c12c69981d66865077390c89bbf81b1911a57f5bfe9bf",
+      "raw_items_preserved": 4928,
+      "raw_relations_preserved": 90,
+      "added_records": 152,
+      "base_metadata_preserved": true,
+      "input_files_unchanged": 8,
+      "exact_repeat_verified": false,
+      "source_root_primary_pdfs": 1,
+      "stage_path": "var/domain-am-augmentation-peer/am-rca-ei/var/peer/stage.json"
+    }
+  },
+  "negatives": [
+    {
+      "name": "swap_publication_and_context_sha",
+      "result": "rejected"
+    },
+    {
+      "name": "wrong_target",
+      "result": "rejected"
+    },
+    {
+      "name": "duplicate_target",
+      "result": "rejected"
+    },
+    {
+      "name": "wrong_raw_sha",
+      "result": "rejected"
+    },
+    {
+      "name": "escaping_receipt_path",
+      "result": "rejected"
+    },
+    {
+      "name": "escaping_receipt_path",
+      "result": "rejected"
+    },
+    {
+      "name": "same_id_conflicting_payload",
+      "result": "rejected"
+    },
+    {
+      "name": "do_not_preserve_stale_ready_flag",
+      "result": "rejected"
+    },
+    {
+      "name": "cli_immutable_output_conflict",
+      "result": "rejected"
+    }
+  ],
+  "portable_source_root": {
+    "primary_pdfs": [
+      "data/raw/AM/am-rca-ei.pdf"
+    ],
+    "private_images": 0,
+    "non_target_primary_pdfs_present": false
+  },
+  "immutable_inputs": true,
+  "result": "passed",
+  "scope_limits": [
+    "No fullAM or body transcription review",
+    "No SQL/import/worker/default mutation",
+    "Technical-event identity belongs to separate technical_provenance peer, not this raster stage",
+    "Source-scoped primary pixel verifier independently reviewed by auditor; this peer verifies stage admission, CLI, receipts and preservation"
+  ]
+}

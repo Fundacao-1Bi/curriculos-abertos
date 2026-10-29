@@ -1,0 +1,75 @@
+{
+  "at": "2026-10-28T18:27:22.740694+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast:primary_cell_reader",
+  "source_id": "pe-curriculo-ei",
+  "artifact_sha256": "a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3",
+  "method": "Original introduction2.12 PDF83–84 explicitly declares3agegroups and6columns(firstrights,remaining5experiencefields); original85–86 explains codepairs/agegroups/fieldpairs/PEsuffix. Read all31organizer pages87–117 in native logical cells; source-only logical-cell reading found115coded objectives; preliminary regex census113missed two physically printed nonconforming identifiers, which remain literal. No generic-output IDs used as expected denominator.",
+  "source_defined_age_group_count": 3,
+  "source_defined_experience_fields_per_group": 5,
+  "expected_coded_objective_records": 115,
+  "expected_group_records": 3,
+  "expected_field_container_records": 15,
+  "expected_intro_records": 1,
+  "expected_code_legend_records": 1,
+  "expected_adapter_records": 135,
+  "organizer_scope_pages": [
+    87,
+    117
+  ],
+  "whole134page_source_reconciled": false,
+  "provenance_status": "pending_primary_distribution_chain",
+  "source_rule_pages": [
+    83,
+    84,
+    85,
+    86
+  ],
+  "age_groups": [
+    {
+      "code_group": "01",
+      "page_start": 87,
+      "page_end": 95,
+      "age_group": "Bebês (zero a um ano e seis meses)"
+    },
+    {
+      "code_group": "02",
+      "page_start": 96,
+      "page_end": 106,
+      "age_group": "Crianças bem pequenas (um ano e sete meses a três anos e onze meses)"
+    },
+    {
+      "code_group": "03",
+      "page_start": 107,
+      "page_end": 117,
+      "age_group": "Crianças pequenas (quatro anos a cinco anos e onze meses)"
+    }
+  ],
+  "fields": [
+    {
+      "code_pair": "EO",
+      "component": "O eu, o outro e o nós"
+    },
+    {
+      "code_pair": "CG",
+      "component": "Corpo, gestos e movimentos"
+    },
+    {
+      "code_pair": "TS",
+      "component": "Traços, sons, cores e formas"
+    },
+    {
+      "code_pair": "EF",
+      "component": "Escuta, fala, pensamento e imaginação"
+    },
+    {
+      "code_pair": "ET",
+      "component": "Espaços, tempos, quantidades, relações e transformações"
+    }
+  ],
+  "limits": [
+    "This repairs complete coded organizer and its introduction/code legend, not the remaining rights/principles/narrative/reference/credits of134page source.",
+    "Exact issuer→GoogleSites→Drive distribution chain remains pending; title/native words do not establish official provenance or current adoption.",
+    "Document explains spaces between codepairs. Compact search identifier is separate from code_original, which retains printed spacing/linebreaks. Missing characters/suffixes are never invented."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-10-28T20:11:06.134Z",
+  "image": "curriculos-abertos:diag-base-20261028t195651-4a29dd",
+  "network": "none",
+  "read_only": true,
+  "runtime_secrets_injected": false,
+  "passed": true,
+  "expected_source_tree_sha256": "58dad59390009174f945c8a4069fb7429db0f81b91255ae371762769147ef972",
+  "image_id": "sha256:e14d8dfeb847a545869d11280f57bfddb9204b35ace483dcd41ea0065c420b41",
+  "image_files": {
+    "critical_files": [
+      {
+        "path": "package.json",
+        "bytes": 1338,
+        "sha256": "c8a81fda8c74d3d9f9dc420c571d9e789c534a9ab60d3209663d5426b2896b66"
+      },
+      {
+        "path": "package-lock.json",
+        "bytes": 284349,
+        "sha256": "ad9fa270547e039d6db5d5acc3d2c556eb672f12c3250f74b9c2617e7dd38327"
+      },
+      {
+        "path": ".next/BUILD_ID",
+        "bytes": 21,
+        "sha256": "75e76bebaab480589d915dc027967b49751268833acf9a13417673085c1f67dc"
+      }
+    ],
+    "source_tree_sha256": "58dad59390009174f945c8a4069fb7429db0f81b91255ae371762769147ef972",
+    "node": "v22.23.4",
+    "uid": 1000,
+    "filesystem_free_bytes": 413424615424
+  },
+  "completed_at": "2026-10-28T20:11:08.067Z"
+}

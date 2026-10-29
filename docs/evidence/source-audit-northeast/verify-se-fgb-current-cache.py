@@ -1,0 +1,24 @@
+"""Actual SE571p cache after bounded24FGBpage union; IFA305 unchanged."""
+import copy,datetime,json,pathlib,sys
+import pymupdf,jsonschema
+R=pathlib.Path(__file__).resolve().parents[3];O=pathlib.Path(__file__).parent;V=R/'var/ne-se-fgb-post-binding';sys.path.insert(0,str(R/'pipeline'));import ingest
+SID='se-curriculo-em';s=next(s for s in ingest.load_sources() if s['id']==SID);before=json.loads((V/'refresh-before.json').read_text());assert ingest.sha_bytes(ingest.canonical(s))==before['loaded_Source_binding_sha256'];assert ingest.LOADED_PARSER_FINGERPRINT['sha256']==before['parser_fingerprint']['sha256'];cache=R/'data/extracted'/f'{s["sha256"]}-{ingest.EXTRACTION_REVISION}.json';pin=ingest.sha_file(cache);ex=ingest.read_extraction_cache(cache);assert ex['page_count']==ex['document_page_count']==571 and not ex['ocr_pending'];assert ex['extraction_config_sha256']==before['Source_config_sha256']==ingest.extraction_config_hash(s);assert ex['parser_fingerprint']==ingest.source_parser_fingerprint(s,ingest.LOADED_PARSER_FINGERPRINT);assert ex['runtime']==ingest.runtime_identity();assert ingest.sha_file(ingest.safe_path(s['uncoded_items_path']))==before['sidecar_sha256']=='75b8e08eb5fb7b710ea6a1df66e504c0c3b446b9e85f7e0fb9b696a962781941'
+old=ingest.read_extraction_cache(R/before['previous_cache_preserved_at']);assert old;prior=ingest.finalize_items(old['items']+ingest.source_uncoded_items([s],{SID:old}),[s]);current=ingest.finalize_items(ex['items']+ingest.source_uncoded_items([s],{SID:ex}),[s]);oldby={i['id']:i for i in prior};byid={i['id']:i for i in current};assert set(oldby)==set(byid);integration=json.loads((O/'se-fgb-glyph-source-integration.json').read_text());mask=set(integration['new_reviewed_pages']);assert len(mask)==24 and 111 not in s['native_text_order_pages'];outside=[i['id'] for i in prior if i['evidence'][0]['page'] not in mask]
+def projection(i):
+ x=copy.deepcopy(i)
+ for e in x.get('review_events',[]):e.pop('at',None)
+ return x
+for id in outside:assert projection(oldby[id])==projection(byid[id]),id
+oldpages={p['page']:p for p in old['pages']};newpages={p['page']:p for p in ex['pages']};assert all(oldpages[p]['text']==newpages[p]['text'] for p in oldpages if p not in mask)
+routing=json.loads((O/'remaining-original622-current-routing.json').read_text());targets=[r for r in routing['records'] if r['source_id']==SID and r['page'] in mask];assert len(targets)==30;schema=json.loads((R/'data/schema/1.1.0.json').read_text());validator=jsonschema.Draft202012Validator({'$ref':'#/$defs/Learning','$defs':schema['$defs']});checked=[]
+with pymupdf.open(R/s['local_path']) as pdf:
+ for i in current:validator.validate(i)
+ for t in targets:
+  i=byid[t['id']];assert ingest.evidence_check(i,ex,pdf),t['id'];checked.append({'id':i['id'],'page':t['page'],'code':i['code'],'literal_pass':True})
+ selected=[i for i in current if i['evidence'][0]['page'] in mask]
+ for i in selected:assert ingest.evidence_check(i,ex,pdf),i['id']
+ adapter=[i for i in current if i.get('document_specific_adapter')];assert len(adapter)==305
+ for i in adapter:assert ingest.evidence_check(i,ex,pdf),i['id']
+ unreviewed=[i for i in current if i['evidence'][0]['page']==111 and i['code']];remaining111=[i['id'] for i in unreviewed if not ingest.evidence_check(i,ex,pdf)]
+job=R/'var/jobs/national-extraction-v150-se-fgb-glyph-delta-20261028.json';assert json.loads(job.read_text())['state']=='completed';assert pin==ingest.sha_file(cache)
+r={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'actor_type':'automated','source_id':SID,'artifact_sha256':s['sha256'],'result':'passed','Source_raw_binding_sha256':before['raw_manifest_Source_binding_sha256'],'cache_path':str(cache.relative_to(R)),'cache_sha256':pin,'source_config_sha256':ex['extraction_config_sha256'],'current_runtime_and_config':True,'global_parser_fingerprint_sha256':ingest.LOADED_PARSER_FINGERPRINT['sha256'],'integral_source_pages':571,'new_reviewed_FGB_pages':sorted(mask),'previous_IFA_flag_pages_preserved':21,'flag_pages_total':45,'IFA_authority40_unchanged':True,'IFA_sidecar305_literal_pass':305,'all_final_item_IDs_preserved':len(current),'new_reviewed_page_records_literal_pass':len(selected),'old_failed_IDs_current_literal_pass':30,'outside_page_texts_byte_identical':547,'outside_record_projection_equal':len(outside),'projection_omits_only':'review_events[*].at','explicitly_rejected_page':111,'remaining_unreviewed111_native_literal_failure_IDs':remaining111,'Source_cache_modified_by_verifier':False,'whole_source_reconciled':False,'UF_ready':False,'old_publications_immutable':True,'job_path':str(job.relative_to(R)),'job_sha256':ingest.sha_file(job),'checks':checked};(O/'se-fgb-current-cache-verification.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n');print(json.dumps({k:v for k,v in r.items() if k not in ['checks','new_reviewed_FGB_pages']},ensure_ascii=False))

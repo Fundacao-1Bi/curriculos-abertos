@@ -130,7 +130,7 @@
     "AC_Computacao_full_curriculum_incorporated_by667_not_obtained"
   ],
   "all_other_remaining_work_classification": "Internal implementation/source-inventory/reconciliation unless future primary evidence establishes a specific external blocker.",
-  "latest_checkpoint_at": "2026-10-28T16:48:15.349790+00:00",
+  "latest_checkpoint_at": "2026-10-28T19:00:20.790276+00:00",
   "latest_serial_integrations": [
     {
       "source_id": "ac-cru-em",
@@ -163,46 +163,7 @@
       "remaining": "ROowner continuing other source parts; raster annex regions11/1/12 remain unverified; EM159are references, not learning definitions."
     }
   ],
-  "new_candidates_not_yet_bound": [
-    {
-      "source_id": "rr-dcr-ei-ef",
-      "sidecar_path": "data/manifests/uncoded/rr-ei-organizers-items.json",
-      "sidecar_sha256": "f8a5d668ced4ab21e2223d8fb4e73926968806d1c23142e4f220f63d681ace84",
-      "records": 346,
-      "kinds": {
-        "referencia_no_documento": 1,
-        "campo_experiencia": 15,
-        "objetivo_aprendizagem": 90,
-        "experiencia_aprendizagem": 60,
-        "detalhamento_objetivo": 90,
-        "orientacao_didatica": 90
-      },
-      "technical_verification": "passed",
-      "independent_review": "pending",
-      "actual_source_binding": false,
-      "proof_path": "docs/evidence/source-audit-rr/ei-organizers-adapter-report.json",
-      "whole_source_ready": false
-    },
-    {
-      "source_id": "to-dct-ei",
-      "sidecar_path": "data/manifests/uncoded/to-ei-organizers-items.json",
-      "sidecar_sha256": "5a922ebf4b2cb1dd49cf2a72c26ec37b31abab78706e14d451d2d69bf6266b6c",
-      "records": 329,
-      "kinds": {
-        "direito_aprendizagem": 30,
-        "campo_experiencia": 5,
-        "grupo_etario": 15,
-        "objetivo_aprendizagem": 93,
-        "detalhamento_objetivo": 93,
-        "experiencia_sugerida": 93
-      },
-      "technical_verification": "passed",
-      "independent_review": "pending",
-      "actual_source_binding": false,
-      "proof_path": "docs/evidence/source-audit-to/ei-organizers-adapter-report.json",
-      "whole_source_ready": false
-    }
-  ],
+  "new_candidates_not_yet_bound": [],
   "position_context_repair": {
     "all_north_shapes_passed": true,
     "proof_path": "docs/evidence/north-source-bindings-verification.json",
@@ -216,5 +177,266 @@
     "original_bytes_preserved": true,
     "images_publicly_redistributable_claimed": false
   },
-  "whole_UF_ready_claimed": false
+  "whole_UF_ready_claimed": false,
+  "current_source_state_path": "docs/evidence/north-current-source-state.json",
+  "current_own_source_v2_path": "docs/evidence/north-current-own-source-v2-verification.json",
+  "current_bound_adapters": [
+    {
+      "source_id": "ac-cru-ei-ef",
+      "uf": "AC",
+      "sidecar_path": "data/manifests/uncoded/ac-objectives-items.json",
+      "sidecar_sha256": "6309ec0a74b6b8ddb63b6c07ec59ad15f165bd0c7f07e19067ff2a075def3886",
+      "records": 2191,
+      "kinds": {
+        "direito_aprendizagem": 725,
+        "objetivo_aprendizagem": 93,
+        "aprendizagem_especifica": 548,
+        "capacidade": 825
+      },
+      "source_scope": "Integral pass over all 1,714 pages: EI literal coded parent objectives, uncoded rights/specific learnings, EF objective columns and explicit grade rights. Contents/activity/evaluation columns are excluded from learning text; normative document pages remain in central corpus."
+    },
+    {
+      "source_id": "ac-cru-em",
+      "uf": "AC",
+      "sidecar_path": "data/manifests/uncoded/ac-em-pv-items.json",
+      "sidecar_sha256": "535611af0023abffda03e3b4cc899e5a4b02b286a224303d99f8cfde26114909",
+      "records": 158,
+      "kinds": {
+        "secao_normativa": 6,
+        "objetivo_aprendizagem": 146,
+        "competencia": 6
+      },
+      "source_scope": null
+    },
+    {
+      "source_id": "pa-dcepa-ei-ef",
+      "uf": "PA",
+      "sidecar_path": "data/manifests/uncoded/pa-dcepa-habilidades-v1-combined-items.json",
+      "sidecar_sha256": "7294cebd0c8cd3008c7f9498312cd66268843aeabcbd94c4a158651cd7de9ed6",
+      "records": 4027,
+      "kinds": {
+        "competencia": 41,
+        "direito_aprendizagem": 6,
+        "secao_normativa": 749,
+        "objetivo_aprendizagem": 1176,
+        "habilidade": 2055
+      },
+      "source_scope": "Frozen1972baseline records remain identical prefix; complete2055own EF Habilidades definitions appended. No manifest/core/bundle mutation."
+    },
+    {
+      "source_id": "ro-rcem-2022",
+      "uf": "RO",
+      "sidecar_path": "data/manifests/uncoded/ro-rcem-lgg-organizer.json",
+      "sidecar_sha256": "a6ae34de74db85aac316c6568f4c1f3c6cf5bd41483a6ae5a05435af6d5be6a4",
+      "records": 620,
+      "kinds": {
+        "referencial": 1,
+        "matriz_curricular": 2,
+        "referencia_no_documento": 183,
+        "grupo_curricular": 11,
+        "habilidade": 133,
+        "componente_curricular": 28,
+        "habilidade_local_sem_codigo": 262
+      },
+      "source_scope": null
+    },
+    {
+      "source_id": "ro-eletivas-2026",
+      "uf": "RO",
+      "sidecar_path": "data/manifests/uncoded/ro-eletivas-competency-fields-v3.json",
+      "sidecar_sha256": "6feac57d112b6ee10ab26eb26533728c9d95b29cd95055b9f62a6da35d5e8a95",
+      "records": 915,
+      "kinds": {
+        "grupo_curricular": 63,
+        "secao_normativa": 139,
+        "competencia_especifica": 2,
+        "objetivo_aprendizagem": 157,
+        "objetivo_formativo": 85,
+        "competencia_geral": 80,
+        "habilidade": 274,
+        "habilidade_local_sem_codigo": 40,
+        "capacidade": 9,
+        "referencia_no_documento": 66
+      },
+      "source_scope": null
+    },
+    {
+      "source_id": "rr-dcr-ei-ef",
+      "uf": "RR",
+      "sidecar_path": "data/manifests/uncoded/rr-ei-organizers-age-v2-items.json",
+      "sidecar_sha256": "98992856b485be462bac63fdaaf071c8c375d7584f8a01cadab70bedcc60a206",
+      "records": 346,
+      "kinds": {
+        "referencia_no_documento": 1,
+        "campo_experiencia": 15,
+        "objetivo_aprendizagem": 90,
+        "experiencia_aprendizagem": 60,
+        "detalhamento_objetivo": 90,
+        "orientacao_didatica": 90
+      },
+      "source_scope": "All original organizer grid role cells on physical29–99 plus code legend28; narrative intro/EF outside this adapter. Blank source cells stay blank. No 1/I, field/code or missing national code repair."
+    },
+    {
+      "source_id": "to-dct-ei",
+      "uf": "TO",
+      "sidecar_path": "data/manifests/uncoded/to-ei-rights-v3-items.json",
+      "sidecar_sha256": "3e15a87ca5489c9afd5b6aca6e9aa2970e0ff6fe391d32fe168534ac9e1beeab",
+      "records": 359,
+      "kinds": {
+        "direito_aprendizagem": 30,
+        "rotulo_direito": 30,
+        "campo_experiencia": 5,
+        "grupo_etario": 15,
+        "objetivo_aprendizagem": 93,
+        "detalhamento_objetivo": 93,
+        "experiencia_sugerida": 93
+      },
+      "source_scope": "All three organizer column roles54–103 plus the30completefield-right quotations53/64–65/72/77/92. Thirty repeated organizer labels are explicitly typed rotulo_direito; complete definitions are distinct documentary units. Other narrative sections110page book not globally reconciled."
+    },
+    {
+      "source_id": "ro-rcro-ei",
+      "uf": "RO",
+      "sidecar_path": "data/manifests/uncoded/ro-ei-complete-primary.json",
+      "sidecar_sha256": "614d26c2a9ef233ad290d0b879a934954a7eaa9be0eca209c31177b539e9d8a7",
+      "records": 773,
+      "kinds": {
+        "referencial": 1,
+        "grupo_curricular": 17,
+        "campo_experiencia": 5,
+        "referencia_no_documento": 1,
+        "grupo_etario": 15,
+        "objetivo_aprendizagem": 516,
+        "competencia_geral": 10,
+        "direito_aprendizagem": 35,
+        "secao_normativa": 173
+      },
+      "source_scope": null
+    },
+    {
+      "source_id": "ro-rcro-ef",
+      "uf": "RO",
+      "sidecar_path": "data/manifests/uncoded/ro-ef-spanish-competencies-er-v3.json",
+      "sidecar_sha256": "29242fcafeae43b526a4a40978829f0cae1fd065d4a67caf93e4a971692281f7",
+      "records": 429,
+      "kinds": {
+        "componente_curricular": 1,
+        "grupo_curricular": 4,
+        "habilidade": 207,
+        "grupo_competencias": 13,
+        "competencia_geral": 10,
+        "competencia_especifica": 90,
+        "area_conhecimento": 1,
+        "organizador_curricular": 1,
+        "ano_escolar": 9,
+        "unidade_tematica": 63,
+        "objeto_conhecimento": 30
+      },
+      "source_scope": null
+    },
+    {
+      "source_id": "ap-rca-ei-ef-mec",
+      "uf": "AP",
+      "sidecar_path": "data/manifests/uncoded/ap-rca614-items.json",
+      "sidecar_sha256": "98ea0d2503f69bfd0ab488ebb87a1b606a21e39987bc51294b317dabbe814bdf",
+      "records": 2441,
+      "kinds": {
+        "secao_normativa": 17,
+        "competencia_geral": 10,
+        "objetivo_normativo": 8,
+        "direito_aprendizagem": 6,
+        "campo_experiencia": 5,
+        "organizador_curricular": 99,
+        "objetivo_aprendizagem": 93,
+        "experiencia_aprendizagem": 465,
+        "competencia_especifica": 101,
+        "objetivo_formativo": 4,
+        "habilidade": 1633
+      },
+      "source_scope": "Own614page native objectives/experiences/skills, preserving original AP codes and source-only literal contexts; explicit labelled rights/competencies/normative lists included; independent review pending"
+    },
+    {
+      "source_id": "ro-educacao-digital-2026",
+      "uf": "RO",
+      "sidecar_path": "data/manifests/uncoded/ro-digital-ei-primary-organizer.json",
+      "sidecar_sha256": "244252c9163f77d1665718b0a1e4af1a9d3516428b7ef2d7443d03c43e4772af",
+      "records": 168,
+      "kinds": {
+        "organizador_curricular": 1,
+        "eixo": 3,
+        "grupo_etario": 1,
+        "objetivo_aprendizagem": 11,
+        "experiencia_sugerida": 32,
+        "referencia_no_documento": 119,
+        "objetivo_formativo": 1
+      },
+      "source_scope": null
+    },
+    {
+      "source_id": "ro-matrizes-2026",
+      "uf": "RO",
+      "sidecar_path": "data/manifests/uncoded/ro-matrizes-2026-native-structure.json",
+      "sidecar_sha256": "04788ff9cba9478e3adf1c1f573b89d6321f5acad932c31d027779938455c7e2",
+      "records": 42,
+      "kinds": {
+        "ato_normativo": 1,
+        "artigo_normativo": 20,
+        "secao_normativa": 11,
+        "matriz_curricular": 10
+      },
+      "source_scope": null
+    },
+    {
+      "source_id": "ro-itinerarios-2026",
+      "uf": "RO",
+      "sidecar_path": "data/manifests/uncoded/ro-itinerarios-2026-native-structure.json",
+      "sidecar_sha256": "ba08814d55062873d00d470ff7f85fe945cb0ccd4435c3a35e67b3041cd2620d",
+      "records": 32,
+      "kinds": {
+        "ato_normativo": 1,
+        "artigo_normativo": 18,
+        "secao_normativa": 13
+      },
+      "source_scope": null
+    },
+    {
+      "source_id": "ro-matrizes-2025",
+      "uf": "RO",
+      "sidecar_path": "data/manifests/uncoded/ro-matrizes-2025-native-structure.json",
+      "sidecar_sha256": "546b2190502a5eacbb3940792239e9eb8afb05b66d721190714c7bfb0a5b0589",
+      "records": 381,
+      "kinds": {
+        "ato_normativo": 1,
+        "artigo_normativo": 24,
+        "secao_normativa": 26,
+        "matriz_curricular": 330
+      },
+      "source_scope": null
+    },
+    {
+      "source_id": "ap-plano-em-001-2026",
+      "uf": "AP",
+      "sidecar_path": "data/manifests/uncoded/ap-plan-acts-primary-items.json",
+      "sidecar_sha256": "f9a016239ece1a6d4886bc77501987dbef444c3a6fcc426b45cc8718041ae008",
+      "records": 16,
+      "kinds": {
+        "ato_normativo": 2,
+        "secao_normativa": 10,
+        "artigo_normativo": 4
+      },
+      "source_scope": "Complete declared act regions only; source legal sections/articles/signatures and technical publication markers kept distinct. No law citation promoted to own device or learning. Referenced curricula/plans are not presumed embedded."
+    },
+    {
+      "source_id": "ac-computacao-667-2025",
+      "uf": "AC",
+      "sidecar_path": "data/manifests/uncoded/ac-digital-act-primary-items.json",
+      "sidecar_sha256": "922089eaab340e35dc5379ff23a7536be3382f4bc1ca82d0a883f1f96569d9c4",
+      "records": 12,
+      "kinds": {
+        "ato_normativo": 1,
+        "artigo_normativo": 10,
+        "secao_normativa": 1
+      },
+      "source_scope": "Complete declared act regions only; source legal sections/articles/signatures and technical publication markers kept distinct. No law citation promoted to own device or learning. Referenced curricula/plans are not presumed embedded."
+    }
+  ]
 }

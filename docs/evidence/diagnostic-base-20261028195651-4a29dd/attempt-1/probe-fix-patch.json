@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "at": "2026-10-28T20:04:31.319862+00:00",
+  "reason": "Read-only image verifier needs bounded tmpfs for tsx transform cache; no network or credentials added",
+  "approved_by": "parent root, current task",
+  "snapshot_only_controlled_patch": true,
+  "patches": [
+    {
+      "root": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap",
+      "path": "scripts/ops-image-verify.ts",
+      "before_sha256": "7105862c06eff372a284d9664f32f038cf0e3b14b3e6b305f98694df356e2e77",
+      "after_sha256": "598b8d799ac1f89727894e9354da0474e4bfff549b57abf5ee1d0c144466d9ee"
+    },
+    {
+      "root": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd",
+      "path": "scripts/ops-image-verify.ts",
+      "before_sha256": "7105862c06eff372a284d9664f32f038cf0e3b14b3e6b305f98694df356e2e77",
+      "after_sha256": "598b8d799ac1f89727894e9354da0474e4bfff549b57abf5ee1d0c144466d9ee"
+    }
+  ],
+  "original_capture_receipt": "var/diagnostic-context-20261028195651-4a29dd.json",
+  "host_manifests_already_changed": true,
+  "matches_current_host_asserted": false
+}

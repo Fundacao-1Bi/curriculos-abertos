@@ -1,0 +1,160 @@
+{
+  "source_id": "to-dct-ef-ch-er",
+  "uf": "TO",
+  "artifact_sha256": "60c3d30b2323fc4b41e55c91623d2a0a5770de544174b9fc38429daaada46cbf",
+  "cache_path": "data/extracted/60c3d30b2323fc4b41e55c91623d2a0a5770de544174b9fc38429daaada46cbf-page-cell-v1.5.0.json",
+  "status": "read_completed_with_explicit_scope",
+  "audit_revision": "independent-vector-rules-native-code-boundaries-v3",
+  "counts": {
+    "coded_cache_records": 391,
+    "primary_pages_read": 82,
+    "independently_bounded_native_bodies": 375,
+    "bounded_body_equal": 373,
+    "primary_code_boundary_not_indexed_on_page": 135,
+    "body_prefix_not_aligned_to_independent_column_start": 15,
+    "text_too_short_for_prefix_alignment": 1,
+    "strict_prefix_candidates": 2,
+    "prefix_definition_candidate": 2
+  },
+  "negative_examples": [
+    {
+      "case": "equal_complete_body",
+      "code": "EF01GE01",
+      "page": 20,
+      "cache_item_id": "ca:to-dct-ef-ch-er:cca0b41390142668c636",
+      "result": "not_truncation",
+      "body_sha256": "25f1189377d20c3dfbc5bb9ea0a966669cd273cf1fd0f9fbc9e40b2ec142dcb8"
+    },
+    {
+      "case": "equal_complete_body",
+      "code": "EF01GE02",
+      "page": 20,
+      "cache_item_id": "ca:to-dct-ef-ch-er:29a75419baad39807a24",
+      "result": "not_truncation",
+      "body_sha256": "ff3b9e80352e87fd940a8f008c81642101e76c6b543ef8ae986f50591439f6bb"
+    }
+  ],
+  "findings": [
+    {
+      "source_id": "to-dct-ef-ch-er",
+      "code": "EF06HI11",
+      "page": 74,
+      "cache_item_id": "ca:to-dct-ef-ch-er:354d44cadcf42cb639d9",
+      "finalized_id_if_retained": "ca:to-dct-ef-ch-er:a4cec5c46e62125c154b",
+      "evidence_locator": "table:0/row:3/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 130,
+      "physical_expected_characters": 239,
+      "extracted_sha256": "24ecca3bdd07a413a5a1db986ec8a940704f7096ad4cfcda7b14d303a7b608d3",
+      "physical_expected_sha256": "73c6ab18b0980077e70aeb3044eab1511a02079402f32d0750070ab25fd432cb",
+      "extracted_head": "Caracterizar o processo de formação da Roma Antiga e suas configurações sociais e políticas nos períodos monárquico e republicano.",
+      "extracted_tail": "Caracterizar o processo de formação da Roma Antiga e suas configurações sociais e políticas nos períodos monárquico e republicano.",
+      "expected_tail": "Caracterizar o processo de formação da Roma Antiga e suas confi­ gurações sociais e políticas nos períodos monárquico e republicano. (EF06HI12) Associar o conceito de cidadania a dinâmi­ cas de inclusão e exclusão na Grécia e Roma antigas.",
+      "extra_normalized_prefix": " (ef06hi12) associar o conceito de cidadania a dinamicas de inclusao e exclusao na grecia e roma antigas.",
+      "independent_boundary": {
+        "anchor": [
+          189.14529418945312,
+          222.17471313476562,
+          230.26629638671875,
+          235.6347198486328
+        ],
+        "body_bbox": [
+          181.47,
+          222.17471313476562,
+          353.52,
+          306.1747131347656
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 306.1747131347656,
+        "physical_bottom_rule_y": 306.1747131347656,
+        "column": [
+          181.47,
+          353.52
+        ]
+      },
+      "cached_header_hint": {
+        "0": "HISTÓRIA - 6º ANO - 3º BIMESTRE UNIDADES TEMÁTICAS A invenção do mundo clás­\nsico e o contraponto com\noutras sociedades",
+        "1": " HABILIDADES (EF06HI09) Discutir o conceito de Anti­\nguidade Clássica, seu alcance e limite na\ntradição ocidental, assim como os impactos\nsobre outras sociedades e culturas.",
+        "2": " OBJETOS DE CONHECIMENTO O Ocidente Clássico: aspectos da cultura na Grécia e\nem Roma.",
+        "3": " SUGESTÕES PEDAGÓGICAS A antiguidade clássica, que ideia os estudantes têm sobre a Grécia e a\nRoma antiga? Que legado nos deixaram? Por que usamos o termo anti­\nguidade?"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-ch-er",
+      "code": "EF01ER06",
+      "page": 96,
+      "cache_item_id": "ca:to-dct-ef-ch-er:6d3dba7937e45c370ffe",
+      "finalized_id_if_retained": "ca:to-dct-ef-ch-er:a8c5b8207eb580966c8d",
+      "evidence_locator": "table:0/row:3/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 137,
+      "physical_expected_characters": 151,
+      "extracted_sha256": "11190c2ec79cc7354275e78205db0d7dd1b4da093a81a5488c42d29ade008349",
+      "physical_expected_sha256": "3d31ea273a9a7ea118199ecb61dc3d4a3e18550533f2eee40b56567f386a41be",
+      "extracted_head": "Identificar as diferentes formas pelas quais as pessoas manifestam sentimentos, ideias, memórias, gostos e crenças em diferentes espaços.",
+      "extracted_tail": "Identificar as diferentes formas pelas quais as pessoas manifestam sentimentos, ideias, memórias, gostos e crenças em diferentes espaços.",
+      "expected_tail": "Identificar as diferentes for­ mas pelas quais as pessoas manifestam sentimentos, ideias, memórias, gostos e crenças em diferentes espaços. HABILIDADES",
+      "extra_normalized_prefix": " habilidades",
+      "independent_boundary": {
+        "anchor": [
+          214.04519653320312,
+          235.94509887695312,
+          256.6781921386719,
+          249.4051055908203
+        ],
+        "body_bbox": [
+          206.37,
+          235.94509887695312,
+          376.29,
+          442.2801208496094
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 442.2801208496094,
+        "physical_bottom_rule_y": 442.2801208496094,
+        "column": [
+          206.37,
+          376.29
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Manifestações Religiosas ENSINO RELIGIOSO - 1º ANO - 4º BIMESTRE UNIDADES TEMÁTICAS",
+        "1": "  HABILIDADES",
+        "2": "Os Símbolos religiosos e o\ntranscendente.  OBJETOS DE CONHECIMENTO",
+        "3": "de Vinícius de Morais, e explorar o que os deixam felizes, tristes, com raiva e construir\numa tabela com o resultado da pesquisa e depois criar um gráfico. O professor deve\nexplicar que todos nós temos dias bons e dias ruins, que é normal ficar triste ou alegre.\nEm seguida, perguntar: que lembranças esses sentimentos trazem? Remetem a que me­\nmórias? O que estão fazendo? Que pessoas estão com você? Onde você está? Esclarecer\nque cada um tem saberes e que precisam ser respeitados e valorizados. O professor\ndeve conversar e pedir que desenhem essas lembranças e depois, fará exposição na sala\nde aula criando um painel: “Lembranças e Memórias”.  SUGESTÕES PEDAGÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    }
+  ],
+  "reader_failures": [],
+  "limits": [
+    "Ruled native columns only; unavailable geometry/anchors remain unverified, not absent.",
+    "Strict physical prefix candidates need role/documentary review. This is not SourceWhole reconciliation."
+  ],
+  "cache_sha256": "8df038363d15e4e69f4e61368b41e550f31153cf27998ffe5d25aa0b2bfd8513",
+  "cache_meta": {
+    "source_id": "to-dct-ef-ch-er",
+    "sha256": "60c3d30b2323fc4b41e55c91623d2a0a5770de544174b9fc38429daaada46cbf",
+    "extraction_revision": "page-cell-v1.5.0",
+    "page_count": 114,
+    "document_page_count": 114,
+    "items": 496,
+    "pages": 114,
+    "quality": {
+      "documentary_page_sections_not_typed_as_learning": 105,
+      "meaning": "Execution, code transcription and primary-document reconciliation are separate; OCR execution completion is not glyph or pedagogical verification. An OCR code-like token does not certify an official printed code.",
+      "ocr_execution_pending": false,
+      "ocr_transcription_review_pending": true,
+      "unassigned_ocr_code_tokens": 0,
+      "unresolved_ocr_code_like_records": 0,
+      "unresolved_printed_code_records": 0
+    },
+    "parser_fingerprint": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+  },
+  "primary_page_count": 114,
+  "cache_unchanged_after_audit": true
+}

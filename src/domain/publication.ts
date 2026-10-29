@@ -4,6 +4,7 @@ import { UFS, type Bundle } from '../shared/contracts';
 import { DomainError } from './errors';
 import { normalize } from './normalize';
 import {validatePositionAge} from './age';
+import {validEvidence} from './record-contract';
 import { publishVisibility } from './visibility';
 import {assertSchemaDeclaration,verifyPublicationSchema,type SchemaPinOptions} from './schema-pin';
 
@@ -25,6 +26,7 @@ export function validateBundle(value:unknown):asserts value is Bundle {
  for(const row of b.coverage)if(!row||typeof row!=='object'||Array.isArray(row))throw new DomainError(422,'INVALID_COVERAGE','Cobertura precisa de linhas estruturadas por recorte.');
  const sourceIds=new Set<string>(), sourcesById=new Map<string,Bundle['sources'][number]>(), itemIds=new Set<string>(), relationIds=new Set<string>();
  for(const s of b.sources) {
+  if(!s||typeof s!=='object'||Array.isArray(s))throw new DomainError(422,'INVALID_SOURCE','Fonte deve ser objeto.');
   if(typeof s.id!=='string'||!s.id||s.id.length>500||sourceIds.has(s.id)) throw new DomainError(422,'DUPLICATE_SOURCE',`Fonte duplicada ou inválida: ${s.id}`);
   if(s.uf!=='BR' && !Object.hasOwn(UFS,s.uf)) throw new DomainError(422,'INVALID_UF',`UF inválida: ${s.uf}`);
   for(const key of ['title','issuer','official_url','document_type','redistribution','status']) if(typeof s[key]!=='string') throw new DomainError(422,'INVALID_SOURCE',`Fonte ${s.id}: ${key} ausente.`);
@@ -33,11 +35,12 @@ export function validateBundle(value:unknown):asserts value is Bundle {
   for(const key of ['official_url','artifact_url']) {if(key==='artifact_url'&&s[key]===null)continue;try {const u=new URL(s[key] as string);if(!['https:','http:'].includes(u.protocol))throw Error();}catch{throw new DomainError(422,'INVALID_SOURCE_URL',`Fonte ${s.id}: URL inválida.`);}}
   if(!Array.isArray(s.stages)||s.stages.some(x=>!['EI','EF','EM'].includes(x))) throw new DomainError(422,'INVALID_SOURCE','Etapa inválida.');
   if(!Array.isArray(s.components)||s.components.some(c=>typeof c!=='string')||!Array.isArray(s.normative_parts)||s.normative_parts.some(p=>typeof p!=='string'))throw new DomainError(422,'INVALID_SOURCE','Componentes e partes esperadas devem ser listas.');
-  if(s.sha256!==null&&!/^[a-f0-9]{64}$/.test(s.sha256??''))throw new DomainError(422,'INVALID_SOURCE_HASH',s.id);
-  for(const field of ['edition','document_date','homologation_date','application_period','collected_at','local_path'] as const)if(s[field]!==null&&typeof s[field]!=='string')throw new DomainError(422,'INVALID_SOURCE_FIELD',`Fonte ${s.id}: ${field} deve ser texto ou nulo.`);
+  if(s.sha256!==undefined&&s.sha256!==null&&!/^[a-f0-9]{64}$/.test(s.sha256))throw new DomainError(422,'INVALID_SOURCE_HASH',s.id);
+  for(const field of ['edition','document_date','homologation_date','application_period','collected_at','local_path'] as const)if(s[field]!==undefined&&s[field]!==null&&typeof s[field]!=='string')throw new DomainError(422,'INVALID_SOURCE_FIELD',`Fonte ${s.id}: ${field} deve ser texto ou nulo.`);
   sourceIds.add(s.id);sourcesById.set(s.id,s);
  }
  for(const item of b.items) {
+  if(!item||typeof item!=='object'||Array.isArray(item))throw new DomainError(422,'INVALID_ITEM','Item deve ser objeto.');
   if(typeof item.id!=='string'||!item.id||item.id.length>500||itemIds.has(item.id)) throw new DomainError(422,'DUPLICATE_ITEM',`Item duplicado ou inválido: ${item.id}`);
   if(!sourceIds.has(item.source_id)) throw new DomainError(422,'DANGLING_SOURCE',`Fonte não encontrada: ${item.source_id}`);
   if(item.uf!==sourcesById.get(item.source_id)?.uf)throw new DomainError(422,'ITEM_SOURCE_UF_MISMATCH',`UF divergente da fonte: ${item.id}`);
@@ -48,20 +51,21 @@ export function validateBundle(value:unknown):asserts value is Bundle {
   checkReviews(item);
   if(item.code!==null&&typeof item.code!=='string')throw new DomainError(422,'INVALID_ITEM','Código deve ser texto ou nulo.');
   if(!Array.isArray(item.positions)||!Array.isArray(item.evidence)||!item.evidence.length)throw new DomainError(422,'MISSING_EVIDENCE',`Item sem evidência: ${item.id}`);
-  for(const p of item.positions) {validatePositionAge(p as unknown as Record<string,unknown>,item.source_id);for(const field of ['component','area','year_label','age_group','period'] as const)if(p[field]!==null&&typeof p[field]!=='string')throw new DomainError(422,'INVALID_POSITION',`Campo de posicionamento ${field} inválido: ${item.id}`);if(!sourcesById.get(item.source_id)?.stages.includes(p.stage))throw new DomainError(422,'ITEM_SOURCE_STAGE_MISMATCH',`Etapa divergente da fonte: ${item.id}`);if(!['EI','EF','EM'].includes(p.stage))throw new DomainError(422,'INVALID_POSITION',item.id);if(p.years!==null&&(!Array.isArray(p.years)||p.years.some(y=>!Number.isInteger(y)||y<1||y>12)))throw new DomainError(422,'INVALID_POSITION',item.id);}
-  if(!item.evidence.some(e=>e.source_id===item.source_id))throw new DomainError(422,'MISSING_PRIMARY_EVIDENCE',item.id);
-  for(const e of item.evidence) if(!sourceIds.has(e.source_id)||typeof e.excerpt!=='string'||!e.excerpt.trim()||(e.page!==null&&(!Number.isInteger(e.page)||e.page<1))||(e.page===null&&!e.section)||(e.printed_page!==null&&typeof e.printed_page!=='string')||(e.section!==null&&typeof e.section!=='string'))throw new DomainError(422,'INVALID_EVIDENCE',`Localizador ausente/inválido: ${item.id}`);
+  for(const p of item.positions) {if(!p||typeof p!=='object'||Array.isArray(p))throw new DomainError(422,'INVALID_POSITION',item.id);validatePositionAge(p as unknown as Record<string,unknown>,item.source_id);for(const field of ['component','area','year_label','age_group','period'] as const)if(p[field]!==undefined&&p[field]!==null&&typeof p[field]!=='string')throw new DomainError(422,'INVALID_POSITION',`Campo de posicionamento ${field} inválido: ${item.id}`);if(!sourcesById.get(item.source_id)?.stages.includes(p.stage))throw new DomainError(422,'ITEM_SOURCE_STAGE_MISMATCH',`Etapa divergente da fonte: ${item.id}`);if(!['EI','EF','EM'].includes(p.stage))throw new DomainError(422,'INVALID_POSITION',item.id);if(p.years!==undefined&&p.years!==null&&(!Array.isArray(p.years)||p.years.some(y=>!Number.isInteger(y)||y<1||y>12)))throw new DomainError(422,'INVALID_POSITION',item.id);}
+  if(!item.evidence.some(e=>e?.source_id===item.source_id))throw new DomainError(422,'MISSING_PRIMARY_EVIDENCE',item.id);
+  for(const e of item.evidence) if(!validEvidence(e,sourceIds)||!e.excerpt.trim())throw new DomainError(422,'INVALID_EVIDENCE',`Localizador ausente/inválido: ${item.id}`);
   itemIds.add(item.id);
  }
  validateHierarchy(new Map(b.items.filter(i=>i.parent_id).map(i=>[i.id,i.parent_id!])),itemIds);
  for(const r of b.relations) {
+  if(!r||typeof r!=='object'||Array.isArray(r))throw new DomainError(422,'INVALID_RELATION','Relação deve ser objeto.');
   if(typeof r.id!=='string'||!r.id||r.id.length>500||relationIds.has(r.id))throw new DomainError(422,'DUPLICATE_RELATION',r.id);
   for(const key of ['relation_type','origin','technical_validation_status','pedagogical_review_status','publication_status','method'])if(typeof r[key]!=='string'||!r[key])throw new DomainError(422,'INVALID_RELATION',`Dimensão obrigatória ausente: ${key}`);
   if(!Array.isArray(r.members)||!r.members.some(m=>m.role==='source')||!r.members.some(m=>m.role==='target'))throw new DomainError(422,'INVALID_RELATION',`Relação sem direção: ${r.id}`);
   const keys=new Set<string>();for(const m of r.members) {if(!itemIds.has(m.item_id)||!['source','target'].includes(m.role)||typeof m.scope!=='string')throw new DomainError(422,'DANGLING_MEMBER',r.id);const key=m.item_id+':'+m.role;if(keys.has(key))throw new DomainError(422,'DUPLICATE_MEMBER',r.id);keys.add(key);}
   checkReviews(r);
   if(!Array.isArray(r.evidence))throw new DomainError(422,'INVALID_RELATION',r.id);
-  for(const e of r.evidence)if(!sourceIds.has(e.source_id)||typeof e.excerpt!=='string'||(e.page!==null&&(!Number.isInteger(e.page)||e.page<1))||(e.page===null&&!e.section)||(e.printed_page!==null&&typeof e.printed_page!=='string')||(e.section!==null&&typeof e.section!=='string'))throw new DomainError(422,'DANGLING_RELATION_EVIDENCE',r.id);
+  for(const e of r.evidence)if(!validEvidence(e,sourceIds))throw new DomainError(422,'DANGLING_RELATION_EVIDENCE',r.id);
   relationIds.add(r.id);
  }
 }

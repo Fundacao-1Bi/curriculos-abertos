@@ -1,0 +1,52 @@
+{
+  "source_id": "ac-cru-em",
+  "artifact_sha256": "9ff75d1d5d9397aa145dccedd8023a01ed3b862692f58bb7d2cb2c84fc7602ad",
+  "baseline_path": "data/manifests/uncoded/ac-em-pv-items.json",
+  "baseline_sha256": "535611af0023abffda03e3b4cc899e5a4b02b286a224303d99f8cfde26114909",
+  "baseline_records": 158,
+  "additive_path": "data/manifests/uncoded/ac-em-fgb-v1-items.json",
+  "additive_sha256": "ca0432b91b599e06c767732913364d71cb1bd2307886e7926d6f63f8b40e1a22",
+  "additive_records": 1134,
+  "aggregate_path": "data/manifests/uncoded/ac-em-fgb-v1-combined-items.json",
+  "aggregate_sha256": "e8d40d8a44d5971cc5e01301698e20c403f954de0dc7165f9bf0a2894eea44a2",
+  "aggregate_records": 1292,
+  "package_automated_gates_passed": true,
+  "source_binding_executed": false,
+  "global_ingest_executed": false,
+  "production_executed": false,
+  "mutation_owner": "root/data_north or root; serial binding only after BASE consolidation",
+  "observed_current_Source": {
+    "uncoded_items_path": "data/manifests/uncoded/ac-em-pv-items.json",
+    "adapter_authority": null
+  },
+  "proposed_merge_preserve_other_Source_fields": {
+    "uncoded_items_path": "data/manifests/uncoded/ac-em-fgb-v1-combined-items.json",
+    "adapter_authority": {
+      "coded_learning_ranges": [
+        [
+          122,
+          384
+        ]
+      ],
+      "mode": "versioned_sidecar_authoritative_for_reviewed_published_FGB_organizer_code_occurrences",
+      "evidence": "docs/evidence/source-audit-ac-em/fgb-v1-ADAPTER.md",
+      "review_status": "automated_primary_documentary_scope_reconciled_not_human_pedagogical_or_UF_acceptance"
+    }
+  },
+  "preconditions": [
+    "Check Source and baseline pins again after BASE consolidation.",
+    "Preserve all existing Source fields and any subsequently added independent authority ranges.",
+    "Use the aggregate1292, keeping frozen PV158 values as exact prefix; do not bind standalone FGB alone if PV must remain.",
+    "Range122–384 suppresses coded duplicates only; do not broadly suppress49–459 or unrelated FTP/IF.",
+    "Keep 45 numeric reference-only math labels structural; do not copy competence bodies into them.",
+    "Keep short literal EM13LGG40, source adaptation footnote and Spanish IF component track; do not silently repair code or infer equivalence."
+  ],
+  "gates": {
+    "all_gates": "docs/evidence/source-audit-ac-em/fgb-v1-all-gates.json",
+    "replay": "docs/evidence/source-audit-ac-em/fgb-v1-reproducibility.json",
+    "negative_controls": "docs/evidence/source-audit-ac-em/fgb-v1-negative-controls.json"
+  },
+  "whole_source_UF_ready": false,
+  "human_pedagogical_review": false,
+  "external_blocker_for_local_package": null
+}

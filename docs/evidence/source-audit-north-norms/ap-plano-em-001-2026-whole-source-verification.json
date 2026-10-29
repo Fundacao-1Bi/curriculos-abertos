@@ -1,0 +1,209 @@
+{
+  "actor_type": "automated",
+  "source_id": "ap-plano-em-001-2026",
+  "receipt_path": "docs/evidence/source-audit-north-norms/ap-plano-em-001-2026-whole-source-receipt.json",
+  "receipt_sha256": "c03eba1bc4965c3d1ca227d3a25da81db238d67a583bb43a29b6439b993de9b6",
+  "records": 16,
+  "negative_controls": [
+    {
+      "mutation": "missing_normative_record",
+      "blocked": true,
+      "issues": [
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:checked_item_absent:ca:ap-plano-em-001-2026:section:res001-protocolo",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:verified_records_do_not_match_independent_denominator",
+        "mandatory_parts_not_fully_verified",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ]
+    },
+    {
+      "mutation": "normative_text_changed",
+      "blocked": true,
+      "issues": [
+        "part_content_proof_failed:Resolução 001/2026-CEE/AP, publicada em 8 de janeiro de 2026",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:item_text_changed_or_unbound:ca:ap-plano-em-001-2026:section:res001-protocolo",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:verified_records_do_not_match_independent_denominator",
+        "mandatory_parts_not_fully_verified",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ]
+    },
+    {
+      "mutation": "one_scope_page_removed",
+      "blocked": true,
+      "issues": [
+        "declared_source_pages_not_fully_processed"
+      ]
+    },
+    {
+      "mutation": "inventory_unit_removed",
+      "blocked": true,
+      "issues": [
+        "mandatory_parts_not_fully_verified",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ]
+    },
+    {
+      "mutation": "different_declared_source_scope",
+      "blocked": true,
+      "issues": [
+        "independent_inventory_source_scope_mismatch",
+        "declared_source_pages_not_fully_processed",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:1:invalid_document_page_range",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:1:missing_item_documentary_evidence:ca:ap-plano-em-001-2026:section:parecer043-secao-III",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:1:missing_item_documentary_evidence:ca:ap-plano-em-001-2026:section:parecer043-secao-IV",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:1:missing_item_documentary_evidence:ca:ap-plano-em-001-2026:section:parecer-publicacao-p81-0",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:1:missing_item_documentary_evidence:ca:ap-plano-em-001-2026:section:parecer043-protocolo",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:1:verified_records_do_not_match_independent_denominator",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:invalid_document_page_range",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:invalid_document_page_range",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:documentary_verification_evidence_missing",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:independent_record_denominator_missing_or_inconsistent",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:missing_item_documentary_evidence:ca:ap-plano-em-001-2026:section:res-publicacao-p81-1",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:missing_item_documentary_evidence:ca:ap-plano-em-001-2026:section:res001-root",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:missing_item_documentary_evidence:ca:ap-plano-em-001-2026:section:res001-artigo-1",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:missing_item_documentary_evidence:ca:ap-plano-em-001-2026:section:res001-artigo-2",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:missing_item_documentary_evidence:ca:ap-plano-em-001-2026:section:res001-artigo-3",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:missing_item_documentary_evidence:ca:ap-plano-em-001-2026:section:res001-artigo-4",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:missing_item_documentary_evidence:ca:ap-plano-em-001-2026:section:res001-assinatura",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:missing_item_documentary_evidence:ca:ap-plano-em-001-2026:section:res-publicacao-p82-0",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:missing_item_documentary_evidence:ca:ap-plano-em-001-2026:section:res001-protocolo",
+        "inventory_unit:ap-plano-em-001-2026:documentary-part:2:verified_records_do_not_match_independent_denominator",
+        "mandatory_parts_not_fully_verified",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ]
+    }
+  ],
+  "gate_result": {
+    "gate_version": "reconciliation-gate/2.0",
+    "source_id": "ap-plano-em-001-2026",
+    "artifact_sha256": "34761767efc3b08cb11fe396cdd7577b170bb193d197cdcce87c1b2a61b9d87a",
+    "extraction_revision": "page-cell-v1.5.0",
+    "reconciled_parts": [
+      "Parecer 043/2025-CEB/CEE-AP, aprovado em 5 de dezembro de 2025",
+      "Resolução 001/2026-CEE/AP, publicada em 8 de janeiro de 2026"
+    ],
+    "partial_parts": [],
+    "part_results": [
+      {
+        "name": "Parecer 043/2025-CEB/CEE-AP, aprovado em 5 de dezembro de 2025",
+        "status": "content_verified_part",
+        "verified_item_count": 7
+      },
+      {
+        "name": "Resolução 001/2026-CEE/AP, publicada em 8 de janeiro de 2026",
+        "status": "content_verified_part",
+        "verified_item_count": 9
+      }
+    ],
+    "whole_source_reconciled": false,
+    "own_source_reconciled": true,
+    "required_related_documents": [
+      {
+        "title": "Plano de Ação da Secretaria de Estado da Educação - SEED para implementação da Política Nacional do Ensino Médio na Rede Pública de Ensino do Estado do Amapá",
+        "related_source_id": null,
+        "artifact_sha256": null,
+        "evidence": [
+          {
+            "source_id": "ap-plano-em-001-2026",
+            "page": 81,
+            "printed_page": "81",
+            "section": "res001-artigo-1",
+            "excerpt": "Art. 1º Aprovar o Plano de Ação da Secretaria de Estado",
+            "bbox": [
+              304.7169189453125,
+              618.9270629882812,
+              562.616943359375,
+              628.9442749023438
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res001-artigo-1:line:1",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ap-plano-em-001-2026",
+            "page": 81,
+            "printed_page": "81",
+            "section": "res001-artigo-1",
+            "excerpt": "da Educação - SEED para implementação da Política",
+            "bbox": [
+              304.7169189453125,
+              630.9270629882812,
+              562.6160278320312,
+              640.9270629882812
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res001-artigo-1:line:2",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ap-plano-em-001-2026",
+            "page": 81,
+            "printed_page": "81",
+            "section": "res001-artigo-1",
+            "excerpt": "Nacional do Ensino Médio na Rede Pública de Ensino",
+            "bbox": [
+              304.7169189453125,
+              642.9270629882812,
+              562.59130859375,
+              652.9270629882812
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res001-artigo-1:line:3",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ap-plano-em-001-2026",
+            "page": 81,
+            "printed_page": "81",
+            "section": "res001-artigo-1",
+            "excerpt": "do Estado do Amapá, em conformidade com a Lei nº",
+            "bbox": [
+              304.7169189453125,
+              654.9270629882812,
+              562.614990234375,
+              664.9270629882812
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res001-artigo-1:line:4",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ap-plano-em-001-2026",
+            "page": 81,
+            "printed_page": "81",
+            "section": "res001-artigo-1",
+            "excerpt": "14.945/2024, Resolução CNE/CEB nº 2/2024, Resolução",
+            "bbox": [
+              304.7169189453125,
+              666.9270629882812,
+              562.5949096679688,
+              676.9270629882812
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res001-artigo-1:line:5",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          }
+        ]
+      }
+    ],
+    "actual_item_count": 16,
+    "accounted_item_count": 16,
+    "unaccounted_item_ids": [],
+    "issues": [
+      "related_document:Plano de Ação da Secretaria de Estado da Educação - SEED para implementação da Política Nacional do Ensino Médio na Rede Pública de Ensino do Estado do Amapá:explicit_source_hash_or_declaration_evidence_missing"
+    ],
+    "required_parts": [
+      "Parecer 043/2025-CEB/CEE-AP, aprovado em 5 de dezembro de 2025",
+      "Resolução 001/2026-CEE/AP, publicada em 8 de janeiro de 2026"
+    ],
+    "expected_scope_pages": [
+      80,
+      81,
+      82
+    ]
+  },
+  "production_incorporation_verified": false
+}

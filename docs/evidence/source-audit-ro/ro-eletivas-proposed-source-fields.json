@@ -1,11 +1,14 @@
 {
   "adapter_sha256": "30f45aa4bc9ed3d3ad7f925cf1d5aa65d0be73b905bc2a4a56e846558f766bf2",
   "artifact_sha256": "709c00a8a8993683a3529f2cfb0d7674f2b79ced733ad45be2e8213f39217ddb",
-  "binding_ready": true,
+  "binding_ready": false,
+  "current_application_note": "Historical validated proposal only. Apply latest v3 against the current manifest; do not replay an old path-only proposal while retaining newer coded-authority metadata.",
   "fields": {
     "uncoded_items_path": "data/manifests/uncoded/ro-eletivas-objectives-primary.json"
   },
+  "historical_validation_passed": true,
   "ready": false,
   "reconciled": false,
-  "source_id": "ro-eletivas-2026"
+  "source_id": "ro-eletivas-2026",
+  "superseded_by": "docs/evidence/source-audit-ro/ro-eletivas-competencies-proposed-source-fields.json"
 }

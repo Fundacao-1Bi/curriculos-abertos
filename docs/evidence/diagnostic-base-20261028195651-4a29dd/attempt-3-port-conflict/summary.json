@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "at": "2026-10-28T20:54:02.797365+00:00",
+  "diagnostic_only": true,
+  "production_passed": false,
+  "snapshot_source_tree_sha256": "674dd1ddad35f1c12c399f3bd10f07894d1a763891c1ea2ddd75b53cd44669a6",
+  "image": "sha256:c8c96262fd976f36fcacdca7a898b96feb086df68d5c679ed71c0ccf6637a278",
+  "failure_stage": "new QA PostgreSQL bind; port55438 already occupied by preserved prior QA",
+  "project": "curriculos-abertos-clean-20261028205058-c3b319",
+  "base_unmodified": true,
+  "old_services_unchanged": true,
+  "next_attempt_ports": {
+    "app": 3002,
+    "database": 55439
+  },
+  "artifacts": [
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-3-port-conflict/domain-patch.json",
+      "sha256": "828f02dd6241bdfed7fe2663c0ee9286f00f81da26d65420ad7880a7e3e9ec85"
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-3-port-conflict/manual-domain-scan.json",
+      "sha256": "8fa8edcf275da9cbafb7d48e08505b483ebeb866b06d5e251c42eb6aa042b1ff"
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-3-port-conflict/importer-postgres-tests.log",
+      "sha256": "9b41ceea6c4329089cfe98ab521fc351a5c1589926f0e4c0754b2636e58ff7c0"
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-3-port-conflict/build.log",
+      "sha256": "07bb22bd75c80f893afb86cb2cb940587fc58e5eb8c9734c656b7d3f8321694e"
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-3-port-conflict/image-verification.json",
+      "sha256": "69e419acd4483fb698b9219deafc57d3eb23c780b950719e2c3f52f5ed66a4eb"
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-3-port-conflict/production-install.log",
+      "sha256": "58885ec359e757ba7306ebecddd6778c168917869dd96dd880c4319f87271fa7"
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-3-port-conflict/production-install.json",
+      "sha256": "58885ec359e757ba7306ebecddd6778c168917869dd96dd880c4319f87271fa7"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-28T18:28:41.770364+00:00",
+  "actor_type": "automated",
+  "purpose": "Regression for standalone age_months export identity, scope, sources, relations and coverage, plus current complete tests",
+  "commands": [
+    [
+      "npm",
+      "test"
+    ],
+    [
+      "npm",
+      "run",
+      "typecheck"
+    ]
+  ],
+  "results": {
+    "tests": 95,
+    "passed": 95,
+    "failed": 0,
+    "skipped": 0,
+    "types_exit_code": 0
+  },
+  "evidence": [
+    {
+      "path": "docs/evidence/export-age-regression-tests.log",
+      "sha256": "9da6006d5f9cf3e3e450420dab0f59bc3b2284ded1426532a7b1d5160a7b183d"
+    },
+    {
+      "path": "docs/evidence/export-age-regression-types.log",
+      "sha256": "02e35bf0eaf0150ec7911ffcbe2df519a799a6ad76bd497210557e6ed4028fd9"
+    }
+  ],
+  "test_database": "owned disposable PostgreSQL17.11; removed by test runner finally",
+  "release_evidence": false,
+  "reason": "Concurrent source integrations; final frozen production verification remains required."
+}

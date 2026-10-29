@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-28T17:34:28.193172+00:00",
+  "at": "2026-10-28T18:15:50.382982+00:00",
   "actor_type": "automated",
   "actor_id": "agent:data_central_south",
   "scope_ufs": [
@@ -166,9 +166,9 @@
     },
     {
       "source_id": "df-competencias-digitais-vol3",
-      "path": "data/manifests/uncoded/df-digital-complete-context-df-competencias-digitais-vol3.json",
-      "sha256": "75a37ea54a1f1cd524ebb9ca9cd99b41dba16311e2d29c4a53910696f939d6ce",
-      "records": 1185,
+      "path": "data/manifests/uncoded/df-digital-complete-context-v1.2-candidate-df-competencias-digitais-vol3.json",
+      "sha256": "e6a42d4cea4be93a3cff2469f5055c8881272411f45daa258916d57a4e0c2845",
+      "records": 1184,
       "kinds": {
         "volume_documental": 1,
         "quadro_curricular": 9,
@@ -176,7 +176,7 @@
         "eixo_computacao": 27,
         "componente_curricular": 228,
         "unidade_tematica": 25,
-        "objetivo_aprendizagem": 795,
+        "objetivo_aprendizagem": 794,
         "secao_normativa": 91
       }
     },
@@ -228,7 +228,9 @@
   "completed_documentary_reconciliation_sources": [
     "sc-parecer-446-2025",
     "sc-lingua-inglesa-ai",
-    "sc-resolucao-070-2025"
+    "sc-resolucao-070-2025",
+    "df-competencias-digitais-vol2",
+    "df-competencias-digitais-vol3"
   ],
   "uf_ready_claim": false,
   "helper_candidate": {
@@ -268,18 +270,26 @@
   "v2_gate_verification_paths": [
     "docs/evidence/source-audit-sc/sc-parecer-v2-gate-verification.json",
     "docs/evidence/source-audit-sc-li-complete/v2-gate-verification.json",
-    "docs/evidence/source-audit-sc/sc-res070-v2-gate-verification.json"
+    "docs/evidence/source-audit-sc/sc-res070-v2-gate-verification.json",
+    "docs/evidence/source-audit-df-digital-candidate-v1.2/v2-gate-df-competencias-digitais-vol2.json",
+    "docs/evidence/source-audit-df-digital-candidate-v1.2/v2-gate-df-competencias-digitais-vol3.json"
   ],
   "completed_documentary_reconciliation_parts_status": "V2 page-cell-v1.5.0 primary exact text checks681/681/827evidence passed; three parts reconciled, whole_source false for real fundamentals pending",
   "ms_v2_parts_gate_path": "docs/evidence/source-audit-central-south/ms-pv-v2-parts-gate-verification.json",
   "df_digital_context_status": {
-    "records": 1737,
-    "unchanged_baseline_records": 1565,
+    "records": 1736,
+    "objectives": 1189,
+    "structure_nodes": 375,
+    "unchanged_legacy_objects": 1563,
+    "changed_first_objective": 1,
+    "superseded_false_fragment": 1,
     "new_contexts": 172,
-    "core_records_with_pages": 1948,
-    "whole_source_reconciled": false,
-    "pending": "Independent source-first paragraph boundary/ID denominator for1190organizer objectives; peer assigned byroot. All211native page IDs and texts match original, all1948literal checks pass.",
-    "evidence": "docs/evidence/source-audit-df-digital/whole-source-actual-core-import-verification.json"
+    "core_records_with_pages": 1947,
+    "whole_source_reconciled": true,
+    "independent_peer_source_first": true,
+    "national_refresh_and_runtime_verification_pending": true,
+    "evidence": "docs/evidence/source-audit-df-digital-candidate-v1.2/whole-source-reconciliation-verification.json",
+    "lineage": "docs/evidence/source-audit-df-digital-candidate-v1.2/granularity-correction.json"
   },
   "private_primary_images_manifest": "docs/evidence/source-audit-central-south/private-primary-image-inventory.json"
 }

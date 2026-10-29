@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "at": "2026-10-28T20:16:52.168Z",
+  "diagnostic_only": true,
+  "measurement_only": true,
+  "does_not_override_failed_contract_check": true,
+  "artifact_sha256": "be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d",
+  "footprint": {
+    "publication": "ca-7d302a9c674a97b83278",
+    "compressed_bytes": 127292150,
+    "decoded_bytes": 1402879768,
+    "metadata_bytes": 13751874,
+    "items": 200724,
+    "largest_uf": "ES",
+    "largest_uf_primary_bytes": 222040039,
+    "largest_uf_items": 19791,
+    "national_json_upper_bytes": 2845067184
+  },
+  "budget": {
+    "stage": "production",
+    "components": [
+      {
+        "name": "new database including indexes",
+        "bytes": 5690134368,
+        "basis": "estimate: 2 × verified artifact JSON upper bound; replaced by measured PG size after import"
+      },
+      {
+        "name": "WAL during import",
+        "bytes": 5690134368,
+        "basis": "one estimated database or 1GiB"
+      },
+      {
+        "name": "index build workspace",
+        "bytes": 1422533592,
+        "basis": "25% of estimated database"
+      }
+    ],
+    "subtotal_bytes": 12802802328,
+    "reserve_bytes": 2560560466,
+    "required_free_bytes": 15363362794,
+    "notes": [
+      "Estimated before the first database exists; no claim of measured FULL runtime size.",
+      "Existing main/rollback databases and the production image are already allocated and are not reclaimable budget inputs."
+    ]
+  },
+  "capacity": {
+    "host_free_bytes": 66249281536,
+    "required_free_bytes": 15363362794
+  }
+}

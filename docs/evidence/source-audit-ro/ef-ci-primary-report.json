@@ -1,0 +1,83 @@
+{
+  "adapter_path": "data/manifests/uncoded/ro-ef-with-ciencias-v6.json",
+  "adapter_sha256": "89edb5cdf279236cbebbb8203a781466fc7ddfb3a12aff33155ff6343d4265ae",
+  "base1003_preserved_exactly": true,
+  "binding_ready": false,
+  "body_continuation_fragments": 5,
+  "coded_science_definitions": 120,
+  "command": "var/venv-pipeline/bin/python docs/evidence/source-audit-ro/build_ef_ciencias.py",
+  "engine": {
+    "pymupdf": "1.26.7",
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "grade_counts": {
+    "1": 6,
+    "2": 8,
+    "3": 10,
+    "4": 11,
+    "5": 13,
+    "6": 16,
+    "7": 20,
+    "8": 18,
+    "9": 18
+  },
+  "independent_readback_passed": true,
+  "kinds": {
+    "ano_escolar": 36,
+    "area_conhecimento": 1,
+    "competencia_especifica": 90,
+    "competencia_geral": 10,
+    "componente_curricular": 4,
+    "grupo_competencias": 13,
+    "grupo_curricular": 4,
+    "habilidade": 610,
+    "objeto_conhecimento": 255,
+    "organizador_curricular": 4,
+    "unidade_tematica": 163
+  },
+  "nonstandard_local_identifiers": [
+    {
+      "code": "EF06CI01.RO",
+      "page": 451
+    },
+    {
+      "code": "EF06CI02.RO",
+      "page": 451
+    },
+    {
+      "code": "EF07CI03.RO",
+      "page": 452
+    },
+    {
+      "code": "EF07CI04.RO",
+      "page": 452
+    },
+    {
+      "code": "EF07CI05.RO",
+      "page": 452
+    },
+    {
+      "code": "EF07CI06.RO",
+      "page": 453
+    },
+    {
+      "code": "EF08CI07.RO",
+      "page": 454
+    },
+    {
+      "code": "EF08CI12RO",
+      "page": 454
+    },
+    {
+      "code": "EF09CI08.RO",
+      "page": 455
+    }
+  ],
+  "proposal_withheld_for_manifest_owner_checkpoint": true,
+  "ready": false,
+  "real_loader_finalizer_schema_records": 1190,
+  "reconciled": false,
+  "records": 1190,
+  "source_id": "ro-rcro-ef",
+  "source_sha256": "c8a25381bc5311326bf0fe1528c9941fb78d618d1b0696f0129baf6fa75f1ea2"
+}

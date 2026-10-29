@@ -1,0 +1,12 @@
+"""Coordinated one-worker full392 refresh; previous cache already preserved."""
+import datetime,hashlib,json,os,pathlib,shutil,subprocess,sys,time
+R=pathlib.Path(__file__).resolve().parents[3];V=R/'var/ne-pb392-appendix-post-binding';sys.path.insert(0,str(R/'pipeline'));import ingest
+s=next(s for s in ingest.load_sources() if s['id']=='pb-proposta-ei-ef-cedoc');raw=next(s for s in json.loads((R/'data/manifests/northeast.json').read_text()) if s['id']==s['id']) if False else next(x for x in json.loads((R/'data/manifests/northeast.json').read_text()) if x['id']==s['id']);assert hashlib.sha256(ingest.canonical(raw)).hexdigest()=='1da2468e469531c005128aaf375d50aeaab3048a202f9bd32bc0b0299982bfc1';assert ingest.sha_file(R/s['uncoded_items_path'])=='fc939a0bdc6aeb243acc8a86c18e071e0a7f3697d9942012aa4e776a9f33c27e';assert ingest.LOADED_PARSER_FINGERPRINT['sha256']=='541aa3377fd409f9c172e1580ae988f5869b25e5331c98528ab68fb9a09360db';job='national-extraction-v150-pb392-appendix-delta-20261028';cfg=ingest.extraction_config_hash(s);env=os.environ.copy();env['TESSDATA_PREFIX']=str(R/'var/tessdata');env.pop('SOURCE_SKIP_OCR',None);before={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'source_id':s['id'],'raw_Source_sha256':hashlib.sha256(ingest.canonical(raw)).hexdigest(),'Source_config_sha256':cfg,'sidecar_sha256':ingest.sha_file(R/s['uncoded_items_path']),'global_parser_fingerprint':ingest.LOADED_PARSER_FINGERPRINT['sha256'],'OCR_enabled':True,'job_id':job};(V/'refresh-before.json').write_text(json.dumps(before,indent=2)+'\n');start=time.monotonic();free=[]
+with (V/'refresh.log').open('w') as log,(V/'refresh-time.txt').open('w') as timing:
+ p=subprocess.Popen(['/usr/bin/time','-l','/usr/bin/nice','-n','10',str(R/'var/venv-pipeline/bin/python'),str(R/'pipeline/batch.py'),'--source',s['id'],'--workers','1','--job-id',job],cwd=R,env=env,stdout=log,stderr=timing)
+ while p.poll() is None:
+  n=shutil.disk_usage(R).free;free.append(n)
+  if n<5*1024**3:p.terminate();raise RuntimeError('Disk guard below5GiB; extraction terminated')
+  time.sleep(1)
+ status=p.returncode
+result={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'source_id':s['id'],'job_id':job,'exit_code':status,'elapsed_seconds':round(time.monotonic()-start,3),'minimum_free_disk_bytes':min(free) if free else shutil.disk_usage(R).free,'single_worker_nice10':True,'OCR_enabled':True,'BASE_immutable':True};(V/'refresh-execution.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result));raise SystemExit(status)

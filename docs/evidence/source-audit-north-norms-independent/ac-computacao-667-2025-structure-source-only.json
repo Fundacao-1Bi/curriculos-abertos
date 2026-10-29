@@ -1,0 +1,1077 @@
+{
+  "source_id": "ac-computacao-667-2025",
+  "artifact_sha256": "71d47a5067d527a5a1428a5a59aa77a7b669625e9215d23ede15e0124c0d284e",
+  "stage": "SOURCE_ONLY_FROZEN_BEFORE_ADAPTER",
+  "adapter_read": false,
+  "method": "Independent literal source line partition, physical-region order confirmed on all originals; no pipeline module/cache/OCR/extractor imported",
+  "scope_regions": [
+    {
+      "page": 39,
+      "regions": [
+        [
+          15,
+          320,
+          583,
+          824
+        ]
+      ],
+      "reading_order": "as_declared",
+      "coordinate_space": "original_pdf_page",
+      "evidence": {
+        "page": 39,
+        "section": "Início Resolução667/2025",
+        "verification": "Renderização e bbox nativos conferidos: órgão emissor inicia y324; ato contratual anterior termina acima. Região restringe a norma curricular."
+      }
+    },
+    {
+      "page": 40,
+      "regions": [
+        [
+          15,
+          40,
+          583,
+          480
+        ]
+      ],
+      "reading_order": "as_declared",
+      "coordinate_space": "original_pdf_page",
+      "evidence": {
+        "page": 40,
+        "section": "Continuação e final Resolução667/2025",
+        "verification": "Renderização e bbox conferidos: continuaçãoIII y42.85; assinatura/aprovação terminam y477.56; próximaResolução468 começa no órgão emissor y490.7 e fica fora."
+      }
+    }
+  ],
+  "counts": {
+    "issuer": 1,
+    "document_title": 1,
+    "ementa": 1,
+    "preamble": 1,
+    "considerando": 6,
+    "enacting_formula": 1,
+    "article_caput": 10,
+    "paragraph": 5,
+    "inciso": 7,
+    "sole_paragraph": 1,
+    "closing_formula": 1,
+    "place_date": 1,
+    "signature": 1,
+    "collegiate_approval": 1
+  },
+  "unit_count": 38,
+  "fragments": 38,
+  "native_words_selected_once": 1681,
+  "nonblank_source_lines": 94,
+  "all_nonblank_lines_assigned_exactly_once": true,
+  "exact_region_text_reassembled": true,
+  "units": [
+    {
+      "id": "issuer",
+      "role": "issuer",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 0,
+          "line_end_exclusive": 4,
+          "region_char_start": 0,
+          "region_char_end": 90,
+          "text": "GOVERNO DO ESTADO DO ACRE\nSECRETARIA DE EDUCAÇÃO E CULTURA\nCONSELHO ESTADUAL DE EDUCAÇÃO\n\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 0,
+      "raw_text": "GOVERNO DO ESTADO DO ACRE\nSECRETARIA DE EDUCAÇÃO E CULTURA\nCONSELHO ESTADUAL DE EDUCAÇÃO"
+    },
+    {
+      "id": "title",
+      "role": "document_title",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 4,
+          "line_end_exclusive": 5,
+          "region_char_start": 90,
+          "region_char_end": 119,
+          "text": "RESOLUÇÃO CEE/AC Nº 667/2025\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 1,
+      "raw_text": "RESOLUÇÃO CEE/AC Nº 667/2025"
+    },
+    {
+      "id": "ementa",
+      "role": "ementa",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 5,
+          "line_end_exclusive": 8,
+          "region_char_start": 119,
+          "region_char_end": 474,
+          "text": "Aprova o Currículo de Educação Digital, Midiática e Computacional do Estado do Acre, a ser incorporado ao Currículo de Referência Único do Estado do Acre,\nnos termos da legislação nacional e da BNCC Computação e orienta o processo de implementação e operacionalização nas escolas públicas e privadas, dos\nSistemas Estadual e Municipais de Ensino do Acre.\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 2,
+      "raw_text": "Aprova o Currículo de Educação Digital, Midiática e Computacional do Estado do Acre, a ser incorporado ao Currículo de Referência Único do Estado do Acre,\nnos termos da legislação nacional e da BNCC Computação e orienta o processo de implementação e operacionalização nas escolas públicas e privadas, dos\nSistemas Estadual e Municipais de Ensino do Acre."
+    },
+    {
+      "id": "preamble",
+      "role": "preamble",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 8,
+          "line_end_exclusive": 10,
+          "region_char_start": 474,
+          "region_char_end": 679,
+          "text": "A Presidente do Conselho Estadual de Educação do Acre, Conselheira Elisete Silva Machado, no uso das atribuições legais que lhe confere a Lei Complemen­\ntar nº 162, de 20 de junho de 2006, e considerando:\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 3,
+      "raw_text": "A Presidente do Conselho Estadual de Educação do Acre, Conselheira Elisete Silva Machado, no uso das atribuições legais que lhe confere a Lei Complemen­\ntar nº 162, de 20 de junho de 2006, e considerando:"
+    },
+    {
+      "id": "considerando1",
+      "role": "considerando",
+      "parent_id": "preamble",
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 10,
+          "line_end_exclusive": 12,
+          "region_char_start": 679,
+          "region_char_end": 978,
+          "text": "A Lei nº 14.533/2023 que institui a Política Nacional de Educação Digital (PNED), estabelece que “a educação digital, com foco no letramento digital e no ensino\nde computação, programação, robótica e outras competências digitais, será componente curricular do ensino fundamental e do ensino médio”;\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 4,
+      "raw_text": "A Lei nº 14.533/2023 que institui a Política Nacional de Educação Digital (PNED), estabelece que “a educação digital, com foco no letramento digital e no ensino\nde computação, programação, robótica e outras competências digitais, será componente curricular do ensino fundamental e do ensino médio”;"
+    },
+    {
+      "id": "considerando2",
+      "role": "considerando",
+      "parent_id": "preamble",
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 12,
+          "line_end_exclusive": 15,
+          "region_char_start": 978,
+          "region_char_end": 1284,
+          "text": "A Resolução CNE/CEB nº 1/2022 que define normas sobre Computação na Educação Básica – Complemento à Base Nacional Comum Curricular (BNCC),\nestabelece competências e habilidades relativas à cultura digital, ao mundo digital e ao pensamento computacional em todas as etapas e modalidades da\nEducação Básica;\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 5,
+      "raw_text": "A Resolução CNE/CEB nº 1/2022 que define normas sobre Computação na Educação Básica – Complemento à Base Nacional Comum Curricular (BNCC),\nestabelece competências e habilidades relativas à cultura digital, ao mundo digital e ao pensamento computacional em todas as etapas e modalidades da\nEducação Básica;"
+    },
+    {
+      "id": "considerando3",
+      "role": "considerando",
+      "parent_id": "preamble",
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 15,
+          "line_end_exclusive": 17,
+          "region_char_start": 1284,
+          "region_char_end": 1555,
+          "text": "A Resolução CNE/CEB nº 2/2025 que define as Diretrizes Operacionais Nacionais sobre o uso de dispositivos digitais em espaços escolares e a integração\ncurricular da educação digital e midiática, estabelece prazo para implementação obrigatória dessas diretrizes até 2026;\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 6,
+      "raw_text": "A Resolução CNE/CEB nº 2/2025 que define as Diretrizes Operacionais Nacionais sobre o uso de dispositivos digitais em espaços escolares e a integração\ncurricular da educação digital e midiática, estabelece prazo para implementação obrigatória dessas diretrizes até 2026;"
+    },
+    {
+      "id": "considerando4",
+      "role": "considerando",
+      "parent_id": "preamble",
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 17,
+          "line_end_exclusive": 20,
+          "region_char_start": 1555,
+          "region_char_end": 1987,
+          "text": "A Resolução CIF/FNDE nº 15/2025 que aprova a metodologia de aferição das condicionalidades de melhoria de gestão previstas no art. 14, § 1º, incisos I, IV\ne V, da Lei nº 14.113, de 25 de dezembro de 2020, no exercício de 2025, para fins de distribuição dos recursos da complementação do Valor Anual por Aluno –\nVAAR no exercício de 2026, e condiciona à adequação dos referenciais curriculares das redes de ensino à BNCC Computação;\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 7,
+      "raw_text": "A Resolução CIF/FNDE nº 15/2025 que aprova a metodologia de aferição das condicionalidades de melhoria de gestão previstas no art. 14, § 1º, incisos I, IV\ne V, da Lei nº 14.113, de 25 de dezembro de 2020, no exercício de 2025, para fins de distribuição dos recursos da complementação do Valor Anual por Aluno –\nVAAR no exercício de 2026, e condiciona à adequação dos referenciais curriculares das redes de ensino à BNCC Computação;"
+    },
+    {
+      "id": "considerando5",
+      "role": "considerando",
+      "parent_id": "preamble",
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 20,
+          "line_end_exclusive": 24,
+          "region_char_start": 1987,
+          "region_char_end": 2555,
+          "text": "O OFÍCIO Nº 14.718/2025/SEE que encaminha, para apreciação deste Conselho, o Currículo de Educação Digital, Midiática e Computacional do Estado do\nAcre, que se incorpora ao Currículo de Referência Único do Acre, destinado à Educação Infantil, Ensino Fundamental anos iniciais e finais, Ensino Médio e\nrespectivas modalidades, Educação de Jovens e Adultos, Educação Especial, Educação do Campo, das Águas e das Florestas e a Educação Indígena, respei­\ntando a sua territorialidade e os direitos interculturais e específicos aos quais fazem jus às populações indígenas;\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 8,
+      "raw_text": "O OFÍCIO Nº 14.718/2025/SEE que encaminha, para apreciação deste Conselho, o Currículo de Educação Digital, Midiática e Computacional do Estado do\nAcre, que se incorpora ao Currículo de Referência Único do Acre, destinado à Educação Infantil, Ensino Fundamental anos iniciais e finais, Ensino Médio e\nrespectivas modalidades, Educação de Jovens e Adultos, Educação Especial, Educação do Campo, das Águas e das Florestas e a Educação Indígena, respei­\ntando a sua territorialidade e os direitos interculturais e específicos aos quais fazem jus às populações indígenas;"
+    },
+    {
+      "id": "considerando6",
+      "role": "considerando",
+      "parent_id": "preamble",
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 24,
+          "line_end_exclusive": 29,
+          "region_char_start": 2555,
+          "region_char_end": 3230,
+          "text": "O disposto no documento encaminhado, intitulado de Currículo de Educação Digital, Midiática e Computacional do Estado do Acre, a ser incorporado ao Cur­\nrículo de Referência Único do Estado do Acre, que se compõe de Apresentação, Introdução, Abordagem sobre a Função Social do Currículo, Concepção de\nCurrículo de Educação Digital, Midiática e Computacional, nos termos da BNCC Computação e um detalhamento do currículo por etapas do ensino e suas\nmodalidades, onde estão expressas os Campos de Experiências e Premissas, os três grandes eixos da BNCC Computação, e os Quadros Organizadores\ncontendo: os conteúdos, as competências e habilidades e os componentes relacionados.\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 9,
+      "raw_text": "O disposto no documento encaminhado, intitulado de Currículo de Educação Digital, Midiática e Computacional do Estado do Acre, a ser incorporado ao Cur­\nrículo de Referência Único do Estado do Acre, que se compõe de Apresentação, Introdução, Abordagem sobre a Função Social do Currículo, Concepção de\nCurrículo de Educação Digital, Midiática e Computacional, nos termos da BNCC Computação e um detalhamento do currículo por etapas do ensino e suas\nmodalidades, onde estão expressas os Campos de Experiências e Premissas, os três grandes eixos da BNCC Computação, e os Quadros Organizadores\ncontendo: os conteúdos, as competências e habilidades e os componentes relacionados."
+    },
+    {
+      "id": "resolve",
+      "role": "enacting_formula",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 29,
+          "line_end_exclusive": 30,
+          "region_char_start": 3230,
+          "region_char_end": 3239,
+          "text": "RESOLVE:\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 10,
+      "raw_text": "RESOLVE:"
+    },
+    {
+      "id": "art1",
+      "role": "article_caput",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 30,
+          "line_end_exclusive": 33,
+          "region_char_start": 3239,
+          "region_char_end": 3568,
+          "text": "Art. 1º – A presente Resolução institui e aprova o Currículo de Educação Digital, Midiática e Computacional do Estado do Acre, a ser incorporado ao Currículo\nde Referência Único do Estado do Acre, nos termos da BNCC, e orienta o processo de implementação e operacionalização nos Sistemas Estadual e Municipais\nde Ensino do Acre.\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 11,
+      "raw_text": "Art. 1º – A presente Resolução institui e aprova o Currículo de Educação Digital, Midiática e Computacional do Estado do Acre, a ser incorporado ao Currículo\nde Referência Único do Estado do Acre, nos termos da BNCC, e orienta o processo de implementação e operacionalização nos Sistemas Estadual e Municipais\nde Ensino do Acre."
+    },
+    {
+      "id": "art1-p1",
+      "role": "paragraph",
+      "parent_id": "art1",
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 33,
+          "line_end_exclusive": 37,
+          "region_char_start": 3568,
+          "region_char_end": 4198,
+          "text": "§ 1º – O Currículo de Educação Digital, Midiática e Computacional do Estado do Acre, nos termos da BNCC Computação, vem para complementar e aprofundar os\npressupostos já estabelecidos pelas Competências Gerais da Base Nacional Comum Curricular, especialmente a Competência 5, que trata da compreensão, utiliza­\nção e criação das tecnologias digitais e de comunicação de forma crítica, significativa, reflexiva e ética nas diversas práticas sociais (incluindo as escolares) para se\ncomunicar, acessar e disseminar informações, produzir conhecimentos, resolver problemas e exercer protagonismo e autoria na vida pessoal e coletiva.\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 12,
+      "raw_text": "§ 1º – O Currículo de Educação Digital, Midiática e Computacional do Estado do Acre, nos termos da BNCC Computação, vem para complementar e aprofundar os\npressupostos já estabelecidos pelas Competências Gerais da Base Nacional Comum Curricular, especialmente a Competência 5, que trata da compreensão, utiliza­\nção e criação das tecnologias digitais e de comunicação de forma crítica, significativa, reflexiva e ética nas diversas práticas sociais (incluindo as escolares) para se\ncomunicar, acessar e disseminar informações, produzir conhecimentos, resolver problemas e exercer protagonismo e autoria na vida pessoal e coletiva."
+    },
+    {
+      "id": "art1-p2",
+      "role": "paragraph",
+      "parent_id": "art1",
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 37,
+          "line_end_exclusive": 40,
+          "region_char_start": 4198,
+          "region_char_end": 4626,
+          "text": "§ 2º – O Currículo de Educação Digital, Midiática e Computacional do Estado do Acre, fundamentado nos princípios da inclusão, da equidade e da justiça social,\ncompreende a BNCC Computação como política pública estruturante voltada à garantia do acesso universal às tecnologias digitais, à cultura midiática e ao\ndesenvolvimento do pensamento computacional, na perspectiva emancipadora e crítica, no contexto da educação básica.\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 13,
+      "raw_text": "§ 2º – O Currículo de Educação Digital, Midiática e Computacional do Estado do Acre, fundamentado nos princípios da inclusão, da equidade e da justiça social,\ncompreende a BNCC Computação como política pública estruturante voltada à garantia do acesso universal às tecnologias digitais, à cultura midiática e ao\ndesenvolvimento do pensamento computacional, na perspectiva emancipadora e crítica, no contexto da educação básica."
+    },
+    {
+      "id": "art1-p3",
+      "role": "paragraph",
+      "parent_id": "art1",
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 40,
+          "line_end_exclusive": 43,
+          "region_char_start": 4626,
+          "region_char_end": 5086,
+          "text": "§ 3º – Os Sistemas Estadual e Municipais de Ensino devem atualizar seus documentos curriculares, de forma a contemplar os conteúdos estabelecidos no Cur­\nrículo da Educação Digital, Midiática e Computacional do Estado Acre, adequando seus documentos escolares como: Propostas Pedagógicas, Projetos Político\nPedagógicos, Regimentos Escolares e os Planos de Cursos, considerando as competências e habilidades estabelecidas para a formação integral do estudante.\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 14,
+      "raw_text": "§ 3º – Os Sistemas Estadual e Municipais de Ensino devem atualizar seus documentos curriculares, de forma a contemplar os conteúdos estabelecidos no Cur­\nrículo da Educação Digital, Midiática e Computacional do Estado Acre, adequando seus documentos escolares como: Propostas Pedagógicas, Projetos Político\nPedagógicos, Regimentos Escolares e os Planos de Cursos, considerando as competências e habilidades estabelecidas para a formação integral do estudante."
+    },
+    {
+      "id": "art2",
+      "role": "article_caput",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 43,
+          "line_end_exclusive": 47,
+          "region_char_start": 5086,
+          "region_char_end": 5654,
+          "text": "Art. 2º – Os currículos escolares da Educação Infantil, Ensino Fundamental Anos Iniciais e Finais e Ensino Médio e suas modalidades devem incorporar e im­\nplementar os conteúdos da Educação Digital, Midiática e Computacional, a partir das competências e habilidades dispostas no Currículo de Referência Único\ndo Estado do Acre, garantindo o direito do estudante ao letramento digital, na perspectiva emancipadora e crítica, isto é, aprender a ler, a escrever, calcular e\nprogramar, e assim compreender os fundamentos da Computação, organizados a partir de três eixos:\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 15,
+      "raw_text": "Art. 2º – Os currículos escolares da Educação Infantil, Ensino Fundamental Anos Iniciais e Finais e Ensino Médio e suas modalidades devem incorporar e im­\nplementar os conteúdos da Educação Digital, Midiática e Computacional, a partir das competências e habilidades dispostas no Currículo de Referência Único\ndo Estado do Acre, garantindo o direito do estudante ao letramento digital, na perspectiva emancipadora e crítica, isto é, aprender a ler, a escrever, calcular e\nprogramar, e assim compreender os fundamentos da Computação, organizados a partir de três eixos:"
+    },
+    {
+      "id": "art2-i",
+      "role": "inciso",
+      "parent_id": "art2",
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 47,
+          "line_end_exclusive": 50,
+          "region_char_start": 5654,
+          "region_char_end": 6082,
+          "text": "I – O eixo Pensamento Computacional, que se refere à capacidade de compreender, analisar, definir, modelar, resolver, comparar e automatizar problemas e\nsuas soluções de forma metódica e sistemática, por meio do desenvolvimento da capacidade de criar e adaptar algoritmos, com aplicação de fundamentos da\ncomputação para alavancar e aprimorar a aprendizagem e o pensamento criativo e crítico nas diversas áreas do conhecimento;\n",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 16,
+      "raw_text": "I – O eixo Pensamento Computacional, que se refere à capacidade de compreender, analisar, definir, modelar, resolver, comparar e automatizar problemas e\nsuas soluções de forma metódica e sistemática, por meio do desenvolvimento da capacidade de criar e adaptar algoritmos, com aplicação de fundamentos da\ncomputação para alavancar e aprimorar a aprendizagem e o pensamento criativo e crítico nas diversas áreas do conhecimento;"
+    },
+    {
+      "id": "art2-ii",
+      "role": "inciso",
+      "parent_id": "art2",
+      "fragments": [
+        {
+          "page": 39,
+          "region_index": 0,
+          "line_start_zero_based": 50,
+          "line_end_exclusive": 52,
+          "region_char_start": 6082,
+          "region_char_end": 6274,
+          "text": "II – O eixo Mundo Digital, que envolve a aprendizagem sobre hardware, como computadores, celulares e tablets, e sobre o ambiente digital baseado na internet,\ncomo sua arquitetura e aplicações;",
+          "region_bbox": [
+            15,
+            320,
+            583,
+            824
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 17,
+      "raw_text": "II – O eixo Mundo Digital, que envolve a aprendizagem sobre hardware, como computadores, celulares e tablets, e sobre o ambiente digital baseado na internet,\ncomo sua arquitetura e aplicações;"
+    },
+    {
+      "id": "art2-iii",
+      "role": "inciso",
+      "parent_id": "art2",
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 0,
+          "line_end_exclusive": 3,
+          "region_char_start": 0,
+          "region_char_end": 416,
+          "text": "III – O eixo Cultura Digital, que envolve aprendizagem destinada à participação consciente e democrática por meio das tecnologias digitais, o que pressupõe\ncompreensão dos impactos da revolução digital e seus avanços na sociedade, a construção de atitude crítica, ética e responsável em relação à multiplicidade\nde ofertas midiáticas e digitais e os diferentes usos das tecnologias e dos conteúdos disponibilizados.\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 18,
+      "raw_text": "III – O eixo Cultura Digital, que envolve aprendizagem destinada à participação consciente e democrática por meio das tecnologias digitais, o que pressupõe\ncompreensão dos impactos da revolução digital e seus avanços na sociedade, a construção de atitude crítica, ética e responsável em relação à multiplicidade\nde ofertas midiáticas e digitais e os diferentes usos das tecnologias e dos conteúdos disponibilizados."
+    },
+    {
+      "id": "art3",
+      "role": "article_caput",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 3,
+          "line_end_exclusive": 5,
+          "region_char_start": 416,
+          "region_char_end": 696,
+          "text": "Art. 3º – Os conteúdos escolares da Educação Digital, Midiática e Computacional na Educação Básica e suas modalidades, podem ser organizados e ofertados\nna forma de componente curricular específico ou na forma de Tema Transversal alinhado aos componentes curriculares existentes.\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 19,
+      "raw_text": "Art. 3º – Os conteúdos escolares da Educação Digital, Midiática e Computacional na Educação Básica e suas modalidades, podem ser organizados e ofertados\nna forma de componente curricular específico ou na forma de Tema Transversal alinhado aos componentes curriculares existentes."
+    },
+    {
+      "id": "art4",
+      "role": "article_caput",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 5,
+          "line_end_exclusive": 7,
+          "region_char_start": 696,
+          "region_char_end": 914,
+          "text": "Art. 4º – As instituições de ensino que optarem pela oferta de componente curricular específico devem inseri-lo na matriz curricular e constituir-se de carga\nhorária e horário normal de estudo, a ser desenvolvido por:\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 20,
+      "raw_text": "Art. 4º – As instituições de ensino que optarem pela oferta de componente curricular específico devem inseri-lo na matriz curricular e constituir-se de carga\nhorária e horário normal de estudo, a ser desenvolvido por:"
+    },
+    {
+      "id": "art4-i",
+      "role": "inciso",
+      "parent_id": "art4",
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 7,
+          "line_end_exclusive": 9,
+          "region_char_start": 914,
+          "region_char_end": 1125,
+          "text": "I – Professor(a) habilitado(a) em Licenciatura na área de Computação ou equivalente, Licenciatura em Informática, Licenciatura em Ciências da Computação\nou Licenciatura em Robótica Educacional, entre outros; ou\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 21,
+      "raw_text": "I – Professor(a) habilitado(a) em Licenciatura na área de Computação ou equivalente, Licenciatura em Informática, Licenciatura em Ciências da Computação\nou Licenciatura em Robótica Educacional, entre outros; ou"
+    },
+    {
+      "id": "art4-ii",
+      "role": "inciso",
+      "parent_id": "art4",
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 9,
+          "line_end_exclusive": 10,
+          "region_char_start": 1125,
+          "region_char_end": 1247,
+          "text": "II – Professor(a) habilitado(a) em outra Licenciatura com Especialização em Computação ou Especialização em área afim; ou\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 22,
+      "raw_text": "II – Professor(a) habilitado(a) em outra Licenciatura com Especialização em Computação ou Especialização em área afim; ou"
+    },
+    {
+      "id": "art4-iii",
+      "role": "inciso",
+      "parent_id": "art4",
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 10,
+          "line_end_exclusive": 11,
+          "region_char_start": 1247,
+          "region_char_end": 1368,
+          "text": "III – Bacharel(a) habilitado(a) em Computação com complementação pedagógica, e com formação continuada em Computação; ou\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 23,
+      "raw_text": "III – Bacharel(a) habilitado(a) em Computação com complementação pedagógica, e com formação continuada em Computação; ou"
+    },
+    {
+      "id": "art4-iv",
+      "role": "inciso",
+      "parent_id": "art4",
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 11,
+          "line_end_exclusive": 12,
+          "region_char_start": 1368,
+          "region_char_end": 1461,
+          "text": "IV – Professor(a) habilitado(a) em outra licenciatura com formação continuada em Computação.\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 24,
+      "raw_text": "IV – Professor(a) habilitado(a) em outra licenciatura com formação continuada em Computação."
+    },
+    {
+      "id": "art5",
+      "role": "article_caput",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 12,
+          "line_end_exclusive": 15,
+          "region_char_start": 1461,
+          "region_char_end": 1938,
+          "text": "Art. 5º – Os sistemas Estadual e Municipais de ensino que optarem pela oferta na forma de Tema Transversal alinhado aos componentes curriculares existentes, de­\nvem garantir obrigatoriamente que os(as) professores(as) do ano-série tenham formação continuada nos eixos da BNCC Computação – Pensamento Computacional,\nMundo Digital e Cultura Digital, permitindo o desenvolvimento das habilidades e competências específicas previstas no currículo da rede ou instituição de ensino.\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 25,
+      "raw_text": "Art. 5º – Os sistemas Estadual e Municipais de ensino que optarem pela oferta na forma de Tema Transversal alinhado aos componentes curriculares existentes, de­\nvem garantir obrigatoriamente que os(as) professores(as) do ano-série tenham formação continuada nos eixos da BNCC Computação – Pensamento Computacional,\nMundo Digital e Cultura Digital, permitindo o desenvolvimento das habilidades e competências específicas previstas no currículo da rede ou instituição de ensino."
+    },
+    {
+      "id": "art5-pu",
+      "role": "sole_paragraph",
+      "parent_id": "art5",
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 15,
+          "line_end_exclusive": 19,
+          "region_char_start": 1938,
+          "region_char_end": 2445,
+          "text": "Parágrafo único – O desenvolvimento, de forma transversal, das competências e habilidades da Computação nos currículos escolares da educação infantil,\nensino fundamental anos iniciais e finais e ensino médio e suas modalidades, deve ser efetivado por todos os(as) professores(as) em suas áreas de conheci­\nmento/componentes curriculares e/ou por meio de projetos que envolvam parte dos(as) professores(as) e suas áreas/componentes, sempre em conformidade\ncom a proposta pedagógica da instituição de ensino.\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 26,
+      "raw_text": "Parágrafo único – O desenvolvimento, de forma transversal, das competências e habilidades da Computação nos currículos escolares da educação infantil,\nensino fundamental anos iniciais e finais e ensino médio e suas modalidades, deve ser efetivado por todos os(as) professores(as) em suas áreas de conheci­\nmento/componentes curriculares e/ou por meio de projetos que envolvam parte dos(as) professores(as) e suas áreas/componentes, sempre em conformidade\ncom a proposta pedagógica da instituição de ensino."
+    },
+    {
+      "id": "art6",
+      "role": "article_caput",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 19,
+          "line_end_exclusive": 22,
+          "region_char_start": 2445,
+          "region_char_end": 2898,
+          "text": "Art. 6º – As instituições integrantes dos Sistemas Estadual e Municipais de Ensino devem incluir os conteúdos da Educação Digital, Midiática e Computacional\nnos currículos escolares da educação infantil, ensino fundamental anos iniciais e finais e ensino médio e suas modalidades, em seus Planos de Formação\nContinuada periódica e sistemática a todos os(as) professores(as) ou possibilitar que participem de formações ofertadas por outras instituições.\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 27,
+      "raw_text": "Art. 6º – As instituições integrantes dos Sistemas Estadual e Municipais de Ensino devem incluir os conteúdos da Educação Digital, Midiática e Computacional\nnos currículos escolares da educação infantil, ensino fundamental anos iniciais e finais e ensino médio e suas modalidades, em seus Planos de Formação\nContinuada periódica e sistemática a todos os(as) professores(as) ou possibilitar que participem de formações ofertadas por outras instituições."
+    },
+    {
+      "id": "art7",
+      "role": "article_caput",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 22,
+          "line_end_exclusive": 25,
+          "region_char_start": 2898,
+          "region_char_end": 3346,
+          "text": "Art. 7º – A Formação Continuada de professores(as) deve contemplar estudos e aprendizagens para que o(a) professor(a) compreenda, fortaleça e se aproprie\ndo Currículo de Educação Digital, Midiática e Computacional do Estado do Acre, incorporado ao Currículo de Referência Único do Estado do Acre, nos termos\nda BNCC Computação, nos seus três eixos: Pensamento Computacional, Cultura Digital e Mundo Digital, com ênfase em Pensamento Computacional.\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 28,
+      "raw_text": "Art. 7º – A Formação Continuada de professores(as) deve contemplar estudos e aprendizagens para que o(a) professor(a) compreenda, fortaleça e se aproprie\ndo Currículo de Educação Digital, Midiática e Computacional do Estado do Acre, incorporado ao Currículo de Referência Único do Estado do Acre, nos termos\nda BNCC Computação, nos seus três eixos: Pensamento Computacional, Cultura Digital e Mundo Digital, com ênfase em Pensamento Computacional."
+    },
+    {
+      "id": "art7-p1",
+      "role": "paragraph",
+      "parent_id": "art7",
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 25,
+          "line_end_exclusive": 28,
+          "region_char_start": 3346,
+          "region_char_end": 3754,
+          "text": "§ 1º – Os sistemas Estadual e Municipais de Ensino devem apresentar Plano de Formação Continuada, contendo os conteúdos a serem trabalhados com os\nprofessores, possibilitando o domínio das ferramentas tecnológicas para que possam atuar na docência com competência necessária a fim de promover de­\nsenvolvimento de competências e habilidades junto aos estudantes da Educação Básica e respectivas modalidades;\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 29,
+      "raw_text": "§ 1º – Os sistemas Estadual e Municipais de Ensino devem apresentar Plano de Formação Continuada, contendo os conteúdos a serem trabalhados com os\nprofessores, possibilitando o domínio das ferramentas tecnológicas para que possam atuar na docência com competência necessária a fim de promover de­\nsenvolvimento de competências e habilidades junto aos estudantes da Educação Básica e respectivas modalidades;"
+    },
+    {
+      "id": "art7-p2",
+      "role": "paragraph",
+      "parent_id": "art7",
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 28,
+          "line_end_exclusive": 30,
+          "region_char_start": 3754,
+          "region_char_end": 4079,
+          "text": "§ 2º – Os sistemas Estadual e Municipais de Ensino devem garantir recursos tecnológicos, acessibilidade e banda larga e demais ferramentas necessárias nas insti­\ntuições de ensino e nos cursos de formação continuada aos professores, objetivando efetivar a política de formação da Educação Digital, Midiática e Computacional.\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 30,
+      "raw_text": "§ 2º – Os sistemas Estadual e Municipais de Ensino devem garantir recursos tecnológicos, acessibilidade e banda larga e demais ferramentas necessárias nas insti­\ntuições de ensino e nos cursos de formação continuada aos professores, objetivando efetivar a política de formação da Educação Digital, Midiática e Computacional."
+    },
+    {
+      "id": "art8",
+      "role": "article_caput",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 30,
+          "line_end_exclusive": 33,
+          "region_char_start": 4079,
+          "region_char_end": 4557,
+          "text": "Art. 8º – Fica a critério dos sistemas municipais a adesão a esta Resolução e/ou a emissão de ato normativo próprio, para instituir o Currículo de Educação Digital,\nMidiática e Computacional do Estado do Acre incorporado ao Currículo de Referência Único do Estado do Acre, nos termos da BNCC Computação, bem como aos\ndocumentos escolares, tendo em vista o teor da Lei que Institui o Sistema Público da Educação Básica do Estado do Acre (Lei nº 1.694 de 21 de dezembro de 2005).\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 31,
+      "raw_text": "Art. 8º – Fica a critério dos sistemas municipais a adesão a esta Resolução e/ou a emissão de ato normativo próprio, para instituir o Currículo de Educação Digital,\nMidiática e Computacional do Estado do Acre incorporado ao Currículo de Referência Único do Estado do Acre, nos termos da BNCC Computação, bem como aos\ndocumentos escolares, tendo em vista o teor da Lei que Institui o Sistema Público da Educação Básica do Estado do Acre (Lei nº 1.694 de 21 de dezembro de 2005)."
+    },
+    {
+      "id": "art9",
+      "role": "article_caput",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 33,
+          "line_end_exclusive": 35,
+          "region_char_start": 4557,
+          "region_char_end": 4790,
+          "text": "Art. 9º – Os sistemas Estadual e Municipais deverão implementar e operacionalizar, em 2026, o Currículo de Educação Digital, Midiática e Computacional do\nEstado do Acre incorporado ao Currículo de Referência Único do Estado do Acre.\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 32,
+      "raw_text": "Art. 9º – Os sistemas Estadual e Municipais deverão implementar e operacionalizar, em 2026, o Currículo de Educação Digital, Midiática e Computacional do\nEstado do Acre incorporado ao Currículo de Referência Único do Estado do Acre."
+    },
+    {
+      "id": "art10",
+      "role": "article_caput",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 35,
+          "line_end_exclusive": 36,
+          "region_char_start": 4790,
+          "region_char_end": 4857,
+          "text": "Art. 10 – Esta Resolução entra em vigor na data de sua publicação.\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 33,
+      "raw_text": "Art. 10 – Esta Resolução entra em vigor na data de sua publicação."
+    },
+    {
+      "id": "closing",
+      "role": "closing_formula",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 36,
+          "line_end_exclusive": 39,
+          "region_char_start": 4857,
+          "region_char_end": 4891,
+          "text": "REGISTRE-SE\nPUBLIQUE-SE\nCUMPRA-SE\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 34,
+      "raw_text": "REGISTRE-SE\nPUBLIQUE-SE\nCUMPRA-SE"
+    },
+    {
+      "id": "place-date",
+      "role": "place_date",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 39,
+          "line_end_exclusive": 41,
+          "region_char_start": 4891,
+          "region_char_end": 4931,
+          "text": "Rio Branco-AC, 22 de dezembro de 2025.\n\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 35,
+      "raw_text": "Rio Branco-AC, 22 de dezembro de 2025."
+    },
+    {
+      "id": "signature",
+      "role": "signature",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 41,
+          "line_end_exclusive": 43,
+          "region_char_start": 4931,
+          "region_char_end": 4981,
+          "text": "Cons.ª Elisete Silva Machado\nPresidente do CEE/AC\n",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 36,
+      "raw_text": "Cons.ª Elisete Silva Machado\nPresidente do CEE/AC"
+    },
+    {
+      "id": "approval",
+      "role": "collegiate_approval",
+      "parent_id": null,
+      "fragments": [
+        {
+          "page": 40,
+          "region_index": 0,
+          "line_start_zero_based": 43,
+          "line_end_exclusive": 44,
+          "region_char_start": 4981,
+          "region_char_end": 5037,
+          "text": "Aprovada na Reunião Ordinária do Colegiado em 22/12/2025",
+          "region_bbox": [
+            15,
+            40,
+            583,
+            480
+          ],
+          "coordinate_space": "original_pdf_page"
+        }
+      ],
+      "order": 37,
+      "raw_text": "Aprovada na Reunião Ordinária do Colegiado em 22/12/2025"
+    }
+  ],
+  "visual_verification": {
+    "all_scoped_pages_seen": true,
+    "source_images": [
+      {
+        "page": 39,
+        "path": "var/private-evidence/source-audit-north-norms-independent/ac-computacao-667-2025-p039-primary.jpg",
+        "sha256": "96258273f4f3cc9bcd2338a742e52cab1c515b8f6f4221be8d1db9ae21b27506"
+      },
+      {
+        "page": 40,
+        "path": "var/private-evidence/source-audit-north-norms-independent/ac-computacao-667-2025-p040-primary.jpg",
+        "sha256": "bfb15601371a04b150cf5053191d3fa40053f816fb6fa28d3014f19353df1853"
+      }
+    ]
+  },
+  "limitations": [
+    "This inventory proves the scoped normative act text and structure only, not the external curriculum/action-plan body, present legal force, UF completion or pedagogical human acceptance."
+  ],
+  "continuations": [
+    {
+      "from_page": 39,
+      "to_page": 40,
+      "unit": "art2",
+      "child_on_next_page": "art2-iii",
+      "reason": "Incisos I and II precede III in the same enacted article; Art3 follows III."
+    }
+  ],
+  "documentary_dependencies": [
+    {
+      "id": "separate-digital-curriculum",
+      "status": "referenced_body_not_present_in_scoped_act",
+      "evidence_unit": "considerando6",
+      "title_literal": "Currículo de Educação Digital, Midiática e Computacional do Estado do Acre",
+      "required_parts_explicit": [
+        "Apresentação",
+        "Introdução",
+        "Abordagem sobre a Função Social do Currículo",
+        "Concepção de Currículo de Educação Digital, Midiática e Computacional",
+        "detalhamento do currículo por etapas do ensino e suas modalidades",
+        "Campos de Experiências e Premissas",
+        "três grandes eixos da BNCC Computação",
+        "Quadros Organizadores contendo conteúdos, competências e habilidades e componentes relacionados"
+      ],
+      "scope_evidence_unit": "considerando5",
+      "stages_explicit": [
+        "Educação Infantil",
+        "Ensino Fundamental anos iniciais e finais",
+        "Ensino Médio"
+      ],
+      "modalities_literal": [
+        "Educação de Jovens e Adultos",
+        "Educação Especial",
+        "Educação do Campo, das Águas e das Florestas",
+        "Educação Indígena"
+      ],
+      "not_satisfied_by_this_act": true
+    }
+  ]
+}

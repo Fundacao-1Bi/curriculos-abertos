@@ -1,0 +1,110 @@
+{
+  "source_id": "mg-crmg-em",
+  "status": "ready_for_root_binding_review",
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:body-runtime-verifier",
+  "manifest_path": "data/manifests/bncc-southeast.json",
+  "expected_manifest_sha256_before_any_binding": "4ac8f7ff71edb63e756e1566fdf26859c83ef7fb11cd9706f1219987fe6dbb34",
+  "source_sha256": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
+  "expected_current_source_fields": {
+    "uncoded_items_path": "data/manifests/uncoded/mg-em-structured-v2-items.json",
+    "uncoded_items_sha256": "e28b252203c761cacb038d3bd54c9ab320173b77abe81ba2b0345318072257b0",
+    "adapter_authority": null
+  },
+  "proposed_source_fields": {
+    "uncoded_items_path": "data/manifests/uncoded/mg-coded-body-composed-mg-crmg-em-v1-items.json",
+    "adapter_authority": {
+      "coded_learning_ranges": [
+        [
+          115,
+          115
+        ],
+        [
+          141,
+          141
+        ],
+        [
+          143,
+          143
+        ],
+        [
+          146,
+          146
+        ],
+        [
+          150,
+          150
+        ],
+        [
+          165,
+          170
+        ],
+        [
+          172,
+          172
+        ],
+        [
+          269,
+          269
+        ],
+        [
+          294,
+          296
+        ],
+        [
+          299,
+          300
+        ],
+        [
+          318,
+          319
+        ]
+      ]
+    }
+  },
+  "proposed_adapter_sha256": "dc29bd01a862f0445820ee6710bcaf045457b96f98dd2a7c29afcaccf1db42e4",
+  "verification_report": "docs/evidence/native-body-completeness-audit/mg-crmg-em-runtime-verification.json",
+  "verification_report_sha256": "1845b8f3b4b9045de35825de14805a40db32f2ea879882512b6883f286ecb298",
+  "verified_counts": {
+    "cache_items": 823,
+    "baseline_items": 918,
+    "body_repairs": 117,
+    "composed_adapter_records": 212,
+    "real_loader_records": 212,
+    "real_finalizer_records": 918,
+    "schema_passed": 918,
+    "literal_adapter_evidence_passed": 212,
+    "complete_character_receipts": 117,
+    "valid_coded_id_context_preserved": 117,
+    "valid_coded_full_context_exact": 117,
+    "unaffected_records_preserved": 801,
+    "unaffected_records_exact_including_review_time": 706,
+    "automated_revalidation_event_timestamps": 95,
+    "explicit_invalid_supersessions": 0,
+    "new_canonical_records": 0,
+    "documentary_EI_age_context_enrichments": 0
+  },
+  "composition_inputs": [
+    {
+      "path": "data/manifests/uncoded/mg-em-structured-v2-items.json",
+      "sha256": "e28b252203c761cacb038d3bd54c9ab320173b77abe81ba2b0345318072257b0",
+      "record_count": 95
+    },
+    {
+      "path": "data/manifests/uncoded/mg-coded-body-mg-crmg-em-v1-items.json",
+      "sha256": "eca5a40ff64f76bf48c5e72f635740f446b929fa0824921efce3a41f2fe97ab5",
+      "record_count": 117
+    }
+  ],
+  "supersession_ledger": [],
+  "binding_constraints": [
+    "Change only uncoded_items_path and merge the explicit coded_learning_ranges; preserve every other existing Source field and official PDF bytes.",
+    "The coded ranges suppress only generic coded records, all of which are re-emitted with protected identities/contexts or explicit invalid-identifier supersessions. Generic uncoded normative/page sections remain enabled.",
+    "Composed path and bytes are final: do not regenerate or overwrite the adapter while applying the binding.",
+    "An individual manifest file can contain several Sources: apply all approved sibling Source changes against one reviewed manifest diff rather than using an obsolete whole-file hash after the first binding."
+  ],
+  "whole_source_reconciled": false,
+  "uf_ready": false,
+  "human_review": false,
+  "manifest_modified": false
+}

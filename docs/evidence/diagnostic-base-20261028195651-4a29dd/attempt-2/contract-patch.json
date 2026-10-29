@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "at": "2026-10-28T20:24:34.703634+00:00",
+  "reason": "Align optional nullable Position/Evidence/Source transport fields with published JSONSchema1.1, preserving omission and canonical bytes; no defaults",
+  "approved_by": "root after full cross-language scan passed",
+  "patches": [
+    {
+      "path": "src/mcp/contracts.ts",
+      "source_sha256": "b954b3d645a26a57d0835e1b15d9255f1572d0251da23c0d8d1ff6c898674ab2",
+      "before_sha256": "b7747ad4a0693902867a7db78f7d9da834ef2834a7ca5c15ebf79bd8712a1aaa"
+    },
+    {
+      "path": "src/shared/contracts.ts",
+      "source_sha256": "0b42791386e7fd642d1bf0d9094ba8c615fd150df4248227341c623446a67faa",
+      "before_sha256": "ec1013e7bb9aba48e021dc3d0d598b55c743f08372e69b059a93ded40fbae2c7"
+    },
+    {
+      "path": "tests/api-published-contract.test.ts",
+      "source_sha256": "3ae379d208c7a28c4e34379c44ec042fbfb2370e4f92809dca3e4b826b464a95",
+      "before_sha256": null
+    }
+  ],
+  "source_snapshot_before": "58dad59390009174f945c8a4069fb7429db0f81b91255ae371762769147ef972",
+  "base_and_schema_unmodified": true,
+  "full_scan": {
+    "path": "var/cross-language-v150/after-contract-fix-report.json",
+    "sha256": "58b88cd1101fbde2cbea8ec3ba83c99bff2dd577968e85ea1a9f915511f56876",
+    "sources": 303,
+    "items": 200724,
+    "relations": 57425,
+    "shards": 75,
+    "errors": 0,
+    "coercions": 0
+  },
+  "matches_current_host_asserted": false
+}

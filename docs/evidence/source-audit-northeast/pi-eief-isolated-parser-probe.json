@@ -1,0 +1,444 @@
+{
+  "at": "2026-10-28T21:13:08.260467+00:00",
+  "actor_type": "automated",
+  "source_id": "pi-curriculo-ei-ef",
+  "artifact_sha256": "609e955a2774afe6b25451b6d597005fcedc9b769cbf1a00916caaaab40f426e",
+  "result": "findings_require_review",
+  "pages": 37,
+  "document_pages": 313,
+  "probed_native_records": 429,
+  "probed_coded_records": 392,
+  "source_coded_occurrence_signature_preserved": false,
+  "missing_coded_occurrences": [
+    [
+      257,
+      "table:0/column:158.5-380.6/anchor:0",
+      "EF02GE03"
+    ],
+    [
+      257,
+      "table:0/column:158.5-380.6/anchor:9",
+      "EF02GE11"
+    ],
+    [
+      265,
+      "table:0/column:157.8-380.6/anchor:2",
+      "EF07GE011.01PI"
+    ],
+    [
+      269,
+      "table:0/column:158.5-380.6/anchor:0",
+      "EF09GE04"
+    ],
+    [
+      279,
+      "table:0/column:158.7-380.6/anchor:4",
+      "EF05HI06"
+    ],
+    [
+      281,
+      "table:0/column:158.5-380.6/anchor:6",
+      "EF06HI16"
+    ]
+  ],
+  "new_coded_occurrences": [
+    [
+      257,
+      "table:0/row:2/cell:1",
+      "EF02GE03"
+    ],
+    [
+      257,
+      "table:0/row:10/cell:1",
+      "EF02GE11"
+    ],
+    [
+      265,
+      "table:0/row:3/cell:1",
+      "EF07GE011.01PI"
+    ],
+    [
+      269,
+      "table:0/row:2/cell:1",
+      "EF09GE04"
+    ],
+    [
+      279,
+      "table:0/row:5/cell:1",
+      "EF05HI06"
+    ],
+    [
+      281,
+      "table:0/row:5/cell:1",
+      "EF06HI16"
+    ]
+  ],
+  "previous_literal_failures_on_same_scope": [
+    {
+      "id": "ca:pi-curriculo-ei-ef:a5c848828b4f40683203",
+      "page": 82,
+      "code": "EF12LP04"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:214f1d9cd88cec6d08b1",
+      "page": 86,
+      "code": "EF02LP18"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:61a69b213b2f973df76b",
+      "page": 89,
+      "code": "EF03LP14"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:5cc5eeb7ddde9f28ed2e",
+      "page": 89,
+      "code": "EF03LP17"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:2db88f4b992de1e44320",
+      "page": 97,
+      "code": "EF05LP25"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:8049e0da6d8abc2a20ad",
+      "page": 98,
+      "code": "EF06LP07"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:598d7963604f5164b084",
+      "page": 98,
+      "code": "EF06LP12"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:2404f48c6866e3bfd916",
+      "page": 98,
+      "code": "EF67LP04"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:33fead4a69280e098200",
+      "page": 99,
+      "code": "EF67LP05"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:0b0c2910659ba93ef9a2",
+      "page": 99,
+      "code": "EF67LP08"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:55c43ff07ca8fb3a11fd",
+      "page": 99,
+      "code": "EF67LP09"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:c9f7170c865298d68b9b",
+      "page": 99,
+      "code": "EF67LP10"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:bb37ca982d6c3e2a9e10",
+      "page": 100,
+      "code": "EF67LP14"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:4eb18e26e58910a0b942",
+      "page": 101,
+      "code": "EF67LP22"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:9d0b9c08d763a6c4c325",
+      "page": 111,
+      "code": "EF69LP43"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:53f4e2388a8cd5263a68",
+      "page": 111,
+      "code": "EF69LP46"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:e4a87120a61faa3d386a",
+      "page": 111,
+      "code": "EF69LP47"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:cd701fc89edf2586cd81",
+      "page": 118,
+      "code": "EF89LP12"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:37fc79b53f800e5345c0",
+      "page": 136,
+      "code": "EF12EF05"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:15bd988ccb45e990e35a",
+      "page": 139,
+      "code": "EF35EF06.03PI"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:316953b0df7d3626413b",
+      "page": 144,
+      "code": "EF89EF02"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:c5908f3c941d7dd143de",
+      "page": 145,
+      "code": "EF89EF18"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:395a647a844208e6dd8e",
+      "page": 145,
+      "code": "EF89EF20"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:5c152e6f3d09f3e0566b",
+      "page": 163,
+      "code": "EF69AR02"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:a69e7eabb37edb8c2fd7",
+      "page": 169,
+      "code": "EF69AR22"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:2c6f2ecaa1e232b3b6d8",
+      "page": 174,
+      "code": "EF69AR29"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:fd9aee945acfa80123bc",
+      "page": 184,
+      "code": "EF06LI11"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:37f5721240879b3d4dad",
+      "page": 186,
+      "code": "EF07LI11"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:c735e33a7a24cf377671",
+      "page": 186,
+      "code": "EF07LI15"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:927545f6e102c47a32f5",
+      "page": 203,
+      "code": "EF02MA17"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:f507baf868218701bea8",
+      "page": 204,
+      "code": "EF02MA20"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:c61053d207d11986bf2d",
+      "page": 215,
+      "code": "EF06MA17"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:61182161c0a320152065",
+      "page": 224,
+      "code": "EF09MA11"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:4203276dd7445b077f06",
+      "page": 224,
+      "code": "EF09MA13"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:1ae023dec4e4becd297a",
+      "page": 233,
+      "code": "EF01CI01"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:3c2725466677cfaac1ae",
+      "page": 233,
+      "code": "EF01CI03"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:c265f9b6b65cf8540bf2",
+      "page": 237,
+      "code": "EF05CI01"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:641603eaaaf4f2dbd072",
+      "page": 237,
+      "code": "EF05CI05"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:6993170263b266c2be5e",
+      "page": 237,
+      "code": "EF05CI07"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:e97bf2c579b60c72f7df",
+      "page": 243,
+      "code": "EF09CI01"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:53c082453ba6b4d6ab36",
+      "page": 257,
+      "code": "EF02GE08"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:3253213d2e6d4cde5808",
+      "page": 260,
+      "code": "EF04GE05"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:3f8f4e1d3584212cbfd9",
+      "page": 260,
+      "code": "EF04GE08"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:60973e546e2bd329bd46",
+      "page": 260,
+      "code": "EF04GE08.01PI"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:a225161547f7ba9bbd67",
+      "page": 260,
+      "code": "EF04GE11"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:803844c86bb0fe0982f8",
+      "page": 265,
+      "code": "EF07GE10"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:c97249e5b1ae49526049",
+      "page": 267,
+      "code": "EF08GE12"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:3d713d1dcf5933e4a179",
+      "page": 267,
+      "code": "EF08GE18"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:787a59a103ca5bd2cdd3",
+      "page": 269,
+      "code": "EF09GE14"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:cb2a3d648b174657c612",
+      "page": 278,
+      "code": "EF04HI06"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:5f35696cf51212c5db6d",
+      "page": 279,
+      "code": "EF05HI02"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:448f8bc717de52826cd2",
+      "page": 279,
+      "code": "EF05HI09"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:4e5dbbffd46bd52e7863",
+      "page": 279,
+      "code": "EF06HI01.01PI"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:6ba4697e2056cdc81e66",
+      "page": 281,
+      "code": "EF07HI01"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:dde53e90233ee1b7dcab",
+      "page": 281,
+      "code": "EF06HI16"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:67e64da6f93e021a0f7e",
+      "page": 285,
+      "code": "EF08HI16"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:f76fc58e810bfe173c4b",
+      "page": 285,
+      "code": "EF08HI23"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:1509c91a019f89d553c6",
+      "page": 287,
+      "code": "EF09HI17"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:9e796a834d360dfcb860",
+      "page": 287,
+      "code": "EF09HI18"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:1d3618d8fc9f6b142f44",
+      "page": 287,
+      "code": "EF09HI19"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:3403f7f13125458662c7",
+      "page": 298,
+      "code": "EF05ER02"
+    },
+    {
+      "id": "ca:pi-curriculo-ei-ef:d8260794d65466374322",
+      "page": 298,
+      "code": "EF06ER05"
+    }
+  ],
+  "new_literal_failures": [],
+  "routed_failures": 62,
+  "routed_IDs_represented": 61,
+  "isolated_cache_path": "var/ne-pi-eief-glyph-candidate/isolated-extraction.json",
+  "isolated_cache_sha256": "fa8ad3f4feeceb3032e7fc7e5ed89efbc8725ceb288c39254f70f13c16db889f",
+  "production_cache_sha256_before": "18087f5d7d80975c943577d56228d984678645f56fc84ff382843df096a12d5e",
+  "production_cache_sha256_after": "18087f5d7d80975c943577d56228d984678645f56fc84ff382843df096a12d5e",
+  "Source_binding_sha256_before": "22304b1140b4c40a5d44c7b5e31726309f2981719dfefa67dad97e25016e691d",
+  "Source_binding_sha256_after": "22304b1140b4c40a5d44c7b5e31726309f2981719dfefa67dad97e25016e691d",
+  "native_text_order_pages_proposal": [
+    82,
+    86,
+    89,
+    97,
+    98,
+    99,
+    100,
+    101,
+    111,
+    118,
+    136,
+    139,
+    144,
+    145,
+    163,
+    169,
+    174,
+    184,
+    186,
+    203,
+    204,
+    215,
+    224,
+    233,
+    237,
+    243,
+    257,
+    260,
+    265,
+    267,
+    269,
+    278,
+    279,
+    281,
+    285,
+    287,
+    298
+  ],
+  "global_parser_fingerprint_sha256": "541aa3377fd409f9c172e1580ae988f5869b25e5331c98528ab68fb9a09360db",
+  "source_parser_fingerprint_sha256": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df",
+  "manifest_modified": false,
+  "production_cache_modified": false,
+  "runtime_modified": false,
+  "whole_source_reconciled": false,
+  "UF_ready": false,
+  "scope": "Actual1.5parser on Source clone and37explicit pages, with output intercepted only to var. Complete production source cache must be independently refreshed after any authorized Source flag binding; this scoped cache may never substitute for the full book. EI25declared layout rules are retained in Source clone and remain outside37EFpages."
+}

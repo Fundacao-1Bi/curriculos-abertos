@@ -1,0 +1,82 @@
+{
+  "source_id": "ac-computacao-667-2025",
+  "artifact_sha256": "71d47a5067d527a5a1428a5a59aa77a7b669625e9215d23ede15e0124c0d284e",
+  "adapter_sha256": "922089eaab340e35dc5379ff23a7536be3382f4bc1ca82d0a883f1f96569d9c4",
+  "binding_ready": true,
+  "fields": {
+    "uncoded_items_path": "data/manifests/uncoded/ac-digital-act-primary-items.json",
+    "adapter_authority": {
+      "uncoded_page_sections_pages": [
+        39,
+        40
+      ]
+    },
+    "adapter_part_verification": {
+      "actor_type": "automated",
+      "scope": "Complete declared act regions only; referenced curriculum/plan body remains separate.",
+      "review_path": "docs/evidence/source-audit-north-norms-independent/verification-summary.json",
+      "review_sha256": "881031892e7e13f846d80b07f14ae8406221663b4f95c69d26f943b41b8a533a",
+      "sidecar_sha256": "922089eaab340e35dc5379ff23a7536be3382f4bc1ca82d0a883f1f96569d9c4",
+      "documentary_role_partition_verified": true,
+      "whole_uf_claimed": false
+    },
+    "expected_related_documents": [
+      {
+        "title": "Currículo de Educação Digital, Midiática e Computacional do Estado do Acre",
+        "mandatory": true,
+        "status": "research_pending",
+        "evidence": [
+          {
+            "source_id": "ac-computacao-667-2025",
+            "page": 39,
+            "printed_page": "39",
+            "section": "res667-artigo-1",
+            "excerpt": "Art. 1º – A presente Resolução institui e aprova o Currículo de Educação Digital, Midiática e Computacional do Estado do Acre, a ser incorporado ao Currículo",
+            "bbox": [
+              17.00790023803711,
+              610.49951171875,
+              580.504638671875,
+              621.4194946289062
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res667-artigo-1:line:1",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ac-computacao-667-2025",
+            "page": 39,
+            "printed_page": "39",
+            "section": "res667-artigo-1",
+            "excerpt": "de Referência Único do Estado do Acre, nos termos da BNCC, e orienta o processo de implementação e operacionalização nos Sistemas Estadual e Municipais",
+            "bbox": [
+              17.00790023803711,
+              620.0419921875,
+              580.4998779296875,
+              630.9619750976562
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res667-artigo-1:line:2",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ac-computacao-667-2025",
+            "page": 39,
+            "printed_page": "39",
+            "section": "res667-artigo-1",
+            "excerpt": "de Ensino do Acre.",
+            "bbox": [
+              17.00790023803711,
+              629.5845947265625,
+              84.16390991210938,
+              640.5045776367188
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res667-artigo-1:line:3",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          }
+        ],
+        "reason": "A resolução incorpora currículo com introdução, concepções e quadros organizadores por etapas; o texto integral desse currículo não consta nestas páginas e ainda precisa ser obtido. Consulta pública2025 está encerrada; vídeos tutoriais não são o artefato curricular."
+      }
+    ]
+  }
+}

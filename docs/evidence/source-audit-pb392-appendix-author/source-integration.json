@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-28T22:09:50.793423+00:00",
+  "actor_type": "automated",
+  "source_id": "pb-proposta-ei-ef-cedoc",
+  "artifact_sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+  "raw_Source_before_sha256": "0b2751242589089732fc0a6cfe81a163a6c5146e57fbfb775652511f004b8ced",
+  "raw_Source_after_sha256": "d4f0b3c2424868d1fe43dd864f1ef9b2e8f0688dc64f362fe3cfef91d2f58962",
+  "only_changed_fields": [
+    "uncoded_items_path",
+    "adapter_authority"
+  ],
+  "sidecar_path": "data/manifests/uncoded/pb-cedoc-392-with-appendix-items.json",
+  "sidecar_sha256": "fc939a0bdc6aeb243acc8a86c18e071e0a7f3697d9942012aa4e776a9f33c27e",
+  "previous1946_sidecar_path": "data/manifests/uncoded/pb-cedoc-392-items.json",
+  "previous1946_sidecar_sha256": "4336a71d0676c2b48f1e363e06f4ef0368c0eba9e2980ff3fc3c79f2865f998b",
+  "original_wrapper_and1946_payloads_exact": true,
+  "proposed_authority_applied": {
+    "generic_coded_reference_pages": [
+      1,
+      392
+    ],
+    "coded_learning_pages": [
+      234,
+      284
+    ],
+    "coded_learning_ranges": [
+      [
+        185,
+        188
+      ]
+    ],
+    "uncoded_page_sections_ranges": [
+      [
+        185,
+        188
+      ]
+    ]
+  },
+  "independent_peer_path": "docs/evidence/source-audit-pb392-appendix-peer/independent-integration-replay.json",
+  "independent_peer_sha256": "57bb8e6c6f4cba41e573c6b28025cf2cb51c05ade4f3811436b3e3db0d3d4532",
+  "documentary_replacement_ledger": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+  "documentary_replacement_ledger_sha256": "f14582b6a92c6f804c08eeeb6a241a9e855ec3711892126f49bf8efc906930c6",
+  "replacement_pairs": 69,
+  "refresh_required": true,
+  "previous_cache_path": "data/extracted/af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453-page-cell-v1.5.0.json",
+  "previous_cache_sha256": "c6176f9eb70d473d792866c1fe6c195c13a62a655bcd30d0ffaea9d462abdd28",
+  "previous_cache_preserved_at": "var/ne-pb392-appendix-post-binding/cache-before-refresh",
+  "previous_config_sha256": "d9541cf33c3b920a4f1923bf4b27a992cde6a0f95b4649c477d6090335628d49",
+  "new_config_sha256": "8e2993c85d79e276bb576a5fa2b7c651ca7b494477a345250497931d477f185f",
+  "stage_scope_preserved": [
+    "EI",
+    "EF"
+  ],
+  "Source_PB635_unchanged": true,
+  "BASE_and_prior_publications_immutable": true,
+  "whole_source_reconciled": false,
+  "UF_ready": false
+}

@@ -1,0 +1,562 @@
+{
+  "at": "2026-10-28T20:35:42.747058+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast:BA_integral_current_cache",
+  "source_id": "ba-dcrb-em-vol2-2022",
+  "artifact_sha256": "e25aa98d630a428f75b83ac21a7d7deb18aa482c845f9d73cadb2bbdf27287f5",
+  "result": "passed",
+  "current_source_config_sha256": "7ac10d93c4e20386fd6078aefec5b2d5ca358873dd2d94f7fda7fd39c82cc8e3",
+  "current_cache_config_matches": true,
+  "current_cache_runtime_matches": true,
+  "global_parser_fingerprint_sha256": "541aa3377fd409f9c172e1580ae988f5869b25e5331c98528ab68fb9a09360db",
+  "source_parser_fingerprint_sha256": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df",
+  "cache_path": "data/extracted/e25aa98d630a428f75b83ac21a7d7deb18aa482c845f9d73cadb2bbdf27287f5-page-cell-v1.5.0.json",
+  "cache_sha256": "45be8bbd38d56615c684614ac7276d01187933495c9ee4749ffbf18052bad17b",
+  "previous_cache_path": "var/ne-ba-vol2-post-binding/cache-before-refresh/e25aa98d630a428f75b83ac21a7d7deb18aa482c845f9d73cadb2bbdf27287f5-page-cell-v1.5.0.json",
+  "previous_cache_sha256": "5f0d3db657be72adbdac25bdd2854025f0379628bcc0a6507809912faf91ccd8",
+  "refresh_job": "var/jobs/national-extraction-v150-ba-vol2-glyph-delta-20261028.json",
+  "refresh_job_sha256": "a22ad708d94d852c5239ac13629d4991edd8029b9e86bb271b6fb8607223e876",
+  "integral_source_pages": 563,
+  "reviewed_glyph_pages": [
+    155,
+    156,
+    164,
+    173,
+    183,
+    187,
+    190,
+    199,
+    218,
+    221,
+    222,
+    225,
+    237,
+    240,
+    263,
+    268,
+    286,
+    301,
+    302,
+    306,
+    313,
+    314,
+    317,
+    328,
+    334,
+    339,
+    347,
+    359,
+    364,
+    385,
+    394,
+    467,
+    470,
+    473,
+    484,
+    487,
+    491
+  ],
+  "all_item_IDs_preserved": 1291,
+  "all_coded_occurrences_preserved": 732,
+  "selected_page_records_literal_checked": 459,
+  "previously_failed_IDs_checked": 53,
+  "previously_failed_IDs_now_literal_pass": 53,
+  "outside_page_texts_byte_identical": 526,
+  "outside_record_content_projections_identical": 832,
+  "projection_omits_only": "Only review_events[*].at execution timestamps; all remaining event fields and every other record key/value stay identical.",
+  "schema_errors": 0,
+  "ocr_pending": false,
+  "checks": [
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:41b01f4e4bd7dd27e07a",
+      "page": 155,
+      "code": "EM13LP15",
+      "old_text_sha256": "e379235ae735aded4dfbd7eb9080423a06786609e0f6d95d039d9ebb63b0a810",
+      "new_text_sha256": "ec75d7f9766a356a2041c147271908ee0108888c7d4ff586a1aa825b3a147440",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:f234302485e53cd084e8",
+      "page": 156,
+      "code": "EM13LP52",
+      "old_text_sha256": "f0cfcb33c54223a7f919c736f3db18a1f87919294a20c35da24cf3a3b849005a",
+      "new_text_sha256": "e730cedb78915c1b31d6d694d88076836bb30e4f3f8943abe7b41adf00662825",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:00fb4a6e493ad8262f96",
+      "page": 156,
+      "code": "EM13LP54",
+      "old_text_sha256": "ccda4b4c7ee89e0fb3fdab289d65c343f8ff2f5f4a0b7709d065dcc1bdf686ae",
+      "new_text_sha256": "9d6298b8f306e6451998391f9a7475e951d31c8fbfca3549aa9d2dec28816789",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:95633988e590ba582961",
+      "page": 164,
+      "code": "EM13LP35",
+      "old_text_sha256": "ffcb691fb3910e6d08d2ebe931bdb86d21f853cba2972168ee46cfa204c92fd4",
+      "new_text_sha256": "99c9913c339b361e09ad7388a0014abebbaeb7eb529e8465d0e1ccbfa433df04",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:c169654e236c71ceedf1",
+      "page": 173,
+      "code": "EM13LP05",
+      "old_text_sha256": "83f316a2765d16e61ec8917a80e63a9ea73b5ff9186272974611c9c81c8558be",
+      "new_text_sha256": "c1b537c1f37419031c037e614d40b0409a0aa63b7a0a65f357d07c1e92b97fc7",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:d2d3aa874c4052af3ef0",
+      "page": 183,
+      "code": "EM13MAT303",
+      "old_text_sha256": "1346eb6fa73c11a93e5affb009665c33938f5d9fbcc0997d1088dc2db707b294",
+      "new_text_sha256": "5a382be3f1c379be44f256a1a05a7a25dcb04dded7e43870483a4bee7ff8616e",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:99d1579c99698500520a",
+      "page": 187,
+      "code": "EM13MAT303",
+      "old_text_sha256": "1346eb6fa73c11a93e5affb009665c33938f5d9fbcc0997d1088dc2db707b294",
+      "new_text_sha256": "5a382be3f1c379be44f256a1a05a7a25dcb04dded7e43870483a4bee7ff8616e",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:04571c4b8b220b492c4e",
+      "page": 190,
+      "code": "EM13MAT509",
+      "old_text_sha256": "be1471ffad0fb9bcfd738b4e5b6565712f724942a5080410adbf865f1c5420a2",
+      "new_text_sha256": "8b6b1842ccaa54a042b51c982c6114f183b79b699ece2fca013f344f27fd58d5",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:7d5ac84a5ebb732adc43",
+      "page": 199,
+      "code": "EM13CNT207",
+      "old_text_sha256": "585d88412c69370335e90a965359c47a18b6db78ba14fcd7eb7f8127ccff8692",
+      "new_text_sha256": "bcbdef817898fddaa346cbb641f40cc355947bf37ed327522f5312074d3b4849",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:6ae06d5442a36267947e",
+      "page": 218,
+      "code": "EM13CHS106",
+      "old_text_sha256": "d8f464dfbdd29e92f5c0a34711d2009b8893d5900a722da34c8b18ff4f28c270",
+      "new_text_sha256": "ad099666d57b56e204d6cf89acbe9bbd30b66d1cdb09c0e6981877ea9eac01ef",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:d897614ee3796bf72279",
+      "page": 218,
+      "code": "EM13CHS201",
+      "old_text_sha256": "e7296ff3f54af76b30ff6393821904552ab6da051025b9b8d4be61304589a4c1",
+      "new_text_sha256": "7fb75801649c3e4564aeb36ed154c3c5d203ef06856407edde5a8aefacb750b6",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:5e58f025a531a3fcce23",
+      "page": 221,
+      "code": "EM13CHS201",
+      "old_text_sha256": "e7296ff3f54af76b30ff6393821904552ab6da051025b9b8d4be61304589a4c1",
+      "new_text_sha256": "7fb75801649c3e4564aeb36ed154c3c5d203ef06856407edde5a8aefacb750b6",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:37fd5fa81dc2667586a1",
+      "page": 221,
+      "code": "EM13CHS401",
+      "old_text_sha256": "5d5020095f916c0e03c6456571d827b66ac0f1d274f90a03a22857ae40d2c831",
+      "new_text_sha256": "df8d176f68ffa24cccd60f2ba43846b38773a35d38c66265b780660412090f34",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:7cc02cc341bf90dbc1d2",
+      "page": 222,
+      "code": "EM13CHS606",
+      "old_text_sha256": "26bef11f3e161dacc72fe86cbf1206b069cbfed5b424fc5cc29c5ae2e7154235",
+      "new_text_sha256": "ab78c191858c33a3445eb81baba1642010b7bd40f09bae640e58c1e374845a97",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:d20d6fcb2253369eede9",
+      "page": 225,
+      "code": "EM13CHS606",
+      "old_text_sha256": "92c1aafab89139028a6598de4c0e21b29fd0b5a7a78fbfb21ff0b9b3d59e2bfe",
+      "new_text_sha256": "c542e85bc6578e87a7f6203e3fb87ca1cfd47051beab2202ef4f4f62f84cf016",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:9f6c752037964a8e74b4",
+      "page": 237,
+      "code": "EMIFCG03",
+      "old_text_sha256": "a1147de58a06081ee50903754de5dc5a393e538d4fd26537c33b9ba2002c58c8",
+      "new_text_sha256": "5243e20a6804abf6328f888de9cc09bdd7cc08c4611202688a5fa19fc2635547",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:0fe1b690bbb7377758a9",
+      "page": 237,
+      "code": "EMIFLGG02",
+      "old_text_sha256": "ca25ebbe4b30978b93ae551f9bdd19b743442216141d07f38d618143589b4de5",
+      "new_text_sha256": "41c0b2e8effa231ce1bbbf7e9067da7f181033b711f4dc96389383c691e4e281",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:5ffe708ece2946d6fa6a",
+      "page": 237,
+      "code": "EMIFCNT03",
+      "old_text_sha256": "34258ce23fa4e9f15f926e82425c9e59212dc5f1a80aec34fcd1753c8f518435",
+      "new_text_sha256": "576e5934cd53a284f3bd5425551d1c577447b63938e04dcdd909d6e45f2f511f",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:d2ba8abcd9ba7a89809c",
+      "page": 237,
+      "code": "EMIFMAT01",
+      "old_text_sha256": "5aec58a9a8406565641c062efadc5a316e280b0a67182bc9d8812cf8412d87e0",
+      "new_text_sha256": "a730cf7ac0d1242fad84d03f815f4f8a8cef2979759647d59e66592b0f001755",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:ed63329a86fa189c440b",
+      "page": 240,
+      "code": "EMIFCG05",
+      "old_text_sha256": "8afe492f55db2157dd34bcea312e5ef95c20e7b9a0e3a66e9d2c3276b081efc3",
+      "new_text_sha256": "752da7de8fc3056b04acd2ea04ffe67381443d4495d1a90811f8d0cb88c84fb4",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:34f05f2510ed701a787e",
+      "page": 263,
+      "code": "EMIFLGG02",
+      "old_text_sha256": "a4566400bb9483b791b1869417b7c2ce1e3e8f4725420ea63cd612195db6c32f",
+      "new_text_sha256": "1784400fb074fce1f52feeba8bc5ee4d606860091b51736937324c1697333ba5",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:e8e841851cdf6a12dc1a",
+      "page": 268,
+      "code": "EMIFCG08",
+      "old_text_sha256": "fe097caa86478a20bccf9563fdd1eaae683e7352b91fc4a9dc4e018b76ee4582",
+      "new_text_sha256": "0cfae1a8caba2c8fdb5ccebc56dd97ab6492bde99524773f8e7fb53877a2e196",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:9ebea6dc7a53874135dc",
+      "page": 286,
+      "code": "EMIFCNT02",
+      "old_text_sha256": "57ad1d14dc6bb4fffc7d5202e629bf84023ada6b615d98ae80a17f2616ec71b2",
+      "new_text_sha256": "08af737337731c3328b16da8526f2e36ff5d5d0dcf849ff2243759b26700cc52",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:b93a478232cf51f125ec",
+      "page": 301,
+      "code": "EMIFCG01",
+      "old_text_sha256": "97e773e9216042bb0df7ba60c3ebb2d1b2d3536c2c3cd90997d71eda715ee98b",
+      "new_text_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:630eae628e3889895a0f",
+      "page": 301,
+      "code": "EMIFCHSA01",
+      "old_text_sha256": "3370afcf4e3abfcc37544f1c6ce99bbe7952e4a1a324afa6e0f4dae5d2bfb6c4",
+      "new_text_sha256": "c5899bf632af9866f583b3968cc6ab05b33bf78ffc06583164dca47f73e046d3",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:882a9b2815c404325b6d",
+      "page": 301,
+      "code": "EMIFCHSA04",
+      "old_text_sha256": "cb0b8088d134f5437eebe856a287bcc8714a3554eea2c7736a4a7aa17c14fd1d",
+      "new_text_sha256": "65908f4e4453863289242cff3601de9d8e32df90dfdc095a01b59ea3192bf4b2",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:b31c12646a00ef95cf8b",
+      "page": 302,
+      "code": "EMIFCG05",
+      "old_text_sha256": "8afe492f55db2157dd34bcea312e5ef95c20e7b9a0e3a66e9d2c3276b081efc3",
+      "new_text_sha256": "752da7de8fc3056b04acd2ea04ffe67381443d4495d1a90811f8d0cb88c84fb4",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:15c1c91d76ddfc924045",
+      "page": 306,
+      "code": "EMIFCG12",
+      "old_text_sha256": "1ba126a6597dbf0134e097eefa29f6b093f02e61854c81ffa42fa85bbeec9490",
+      "new_text_sha256": "5227b08b096a1ccc06e2fef11294d078c7f786fc802bb3ce14320aa092cbdc21",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:787e903fff7ad8e2d355",
+      "page": 313,
+      "code": "EMIFMAT02",
+      "old_text_sha256": "bdb5d99ff3a53e8921529345d3013edab1904be06cbe7082f70a3b770a720aac",
+      "new_text_sha256": "18a087ec1cb9ecffb02c15c21b91b490ca215ecc998b67649f1d6eda4a5625e4",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:06266f88dfc50d843797",
+      "page": 314,
+      "code": "EMIFMAT04",
+      "old_text_sha256": "7af9ca981eaa51a12444a1656656077032716e11945193da0b3a4c1d29068c34",
+      "new_text_sha256": "0c058466f61903231ed7aa426099563ef0178e7a6155e7574b43239ae5f72a00",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:c0e00870127d01d63240",
+      "page": 317,
+      "code": "EMIFCG10",
+      "old_text_sha256": "6d5b7ebd6c16a9269f6b5a72d3b381e328ad034baf35f335eee39cc41f8c5781",
+      "new_text_sha256": "8b74cc24115e42c62782ca99f36453991d29588788f0c89a6e107555e5db79ea",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:fa7294667381441f97ad",
+      "page": 328,
+      "code": "EMIFCG12",
+      "old_text_sha256": "3fec7560a59c210b70f33ef179efe6a19478eb57645475dd9d78ba17159228b2",
+      "new_text_sha256": "9bbae862b74d8a08f29ec3246777c586e9c5e1356fcf98e21628958c72bef4f6",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:8136243c410793b56f24",
+      "page": 334,
+      "code": "EMIFCHSA03",
+      "old_text_sha256": "80b91af3d0008134fc95d9ceddff7c4671fce9f486e926b42539ede0d9645c30",
+      "new_text_sha256": "62279c198bcf8b42b5f2cbba74192f79705bcfed65fcb4a692b67fdc103381dd",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:7d2afe9b29d51070c64e",
+      "page": 334,
+      "code": "EMIFLGG02",
+      "old_text_sha256": "71e4880d527b63c966303f9fa2500da81292471a04e12ce7876866e80bb6f1cc",
+      "new_text_sha256": "97fd4f3a692208502b9e1d2686b3e1acd248ccc0ce254742ab40f49aaf39350a",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:0c2bf2c35e681e770cc2",
+      "page": 339,
+      "code": "EMIFCG11",
+      "old_text_sha256": "9dac4be3e2e96f19934fa7e9474cf251d7c56ba81828d98f296150ee9f0f9262",
+      "new_text_sha256": "53a38674030585e38a2c88272f7d73ad9e2fb36d422e81ca8eb6b030cb93ca96",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:427f47872b3cbcea6d91",
+      "page": 339,
+      "code": "EMIFCG12",
+      "old_text_sha256": "3fec7560a59c210b70f33ef179efe6a19478eb57645475dd9d78ba17159228b2",
+      "new_text_sha256": "9bbae862b74d8a08f29ec3246777c586e9c5e1356fcf98e21628958c72bef4f6",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:39bb11f0cd5bf21045ea",
+      "page": 347,
+      "code": "EMIFCG03",
+      "old_text_sha256": "a1147de58a06081ee50903754de5dc5a393e538d4fd26537c33b9ba2002c58c8",
+      "new_text_sha256": "5243e20a6804abf6328f888de9cc09bdd7cc08c4611202688a5fa19fc2635547",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:338dc6436f14764a2095",
+      "page": 359,
+      "code": "EMIFMAT02",
+      "old_text_sha256": "8cdc0c66de9eb7bb27b1ea123cf15c99b99b47e6f90bc98f0aae4f9f0b172044",
+      "new_text_sha256": "7764da4987e21abf1c6ea9ed49ceb7dd4f47d0bc1ec3b79dd3ad40d3622bcdb0",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:ea4b5a391fd41d837bd3",
+      "page": 364,
+      "code": "EMIFCG11",
+      "old_text_sha256": "08b8bf2b80e7fe2053b76f57680dc22df9f9b1b4d3595d5e988ba676b7c64091",
+      "new_text_sha256": "a48dc3dcbeb479b7a055df6457d9f54e07f73ff40e0adcb877a14c1ecbada607",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:8c8c062d9d3a44f13bd4",
+      "page": 364,
+      "code": "EMIFCG12",
+      "old_text_sha256": "3fec7560a59c210b70f33ef179efe6a19478eb57645475dd9d78ba17159228b2",
+      "new_text_sha256": "9bbae862b74d8a08f29ec3246777c586e9c5e1356fcf98e21628958c72bef4f6",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:19219feae490ca10910c",
+      "page": 385,
+      "code": "EMIFMAT02",
+      "old_text_sha256": "bdb5d99ff3a53e8921529345d3013edab1904be06cbe7082f70a3b770a720aac",
+      "new_text_sha256": "18a087ec1cb9ecffb02c15c21b91b490ca215ecc998b67649f1d6eda4a5625e4",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:de4d268c9bacba53c9a0",
+      "page": 385,
+      "code": "EMIFCHSA03",
+      "old_text_sha256": "80b91af3d0008134fc95d9ceddff7c4671fce9f486e926b42539ede0d9645c30",
+      "new_text_sha256": "62279c198bcf8b42b5f2cbba74192f79705bcfed65fcb4a692b67fdc103381dd",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:17c3658b707c301cdb84",
+      "page": 394,
+      "code": "EMIFCG11",
+      "old_text_sha256": "9928255832537b99eb81ee9a4badb668e7d5f8e6d80fbc5063f416c251098108",
+      "new_text_sha256": "8d5b11147e87c8d8b31ea11e3cc1ddfb3fba804c946acc9a09634dff25472e36",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:0adb07dee5fcc1c12ca4",
+      "page": 394,
+      "code": "EMIFCG12",
+      "old_text_sha256": "3fec7560a59c210b70f33ef179efe6a19478eb57645475dd9d78ba17159228b2",
+      "new_text_sha256": "9bbae862b74d8a08f29ec3246777c586e9c5e1356fcf98e21628958c72bef4f6",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:e833ac72818aee05ab78",
+      "page": 467,
+      "code": "EMIFCNT02",
+      "old_text_sha256": "127e6b90882584851a71a36b7deb00e96c2408ff4da9f0b4fe2ab0bf853aa145",
+      "new_text_sha256": "9bdcfa35dfdd2fec620bb6222ee2471d988d723b5ca60eae384a34e6b0e9daf3",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:e8c625dc744f1ec50d73",
+      "page": 470,
+      "code": "EMIFCNT02",
+      "old_text_sha256": "127e6b90882584851a71a36b7deb00e96c2408ff4da9f0b4fe2ab0bf853aa145",
+      "new_text_sha256": "9bdcfa35dfdd2fec620bb6222ee2471d988d723b5ca60eae384a34e6b0e9daf3",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:06b1336deff43e38c361",
+      "page": 470,
+      "code": "EMIFCNT04",
+      "old_text_sha256": "1bf1b919c2ce02b6fb87ee8ab585078a6479a98dac52642c4fac6d33863dff00",
+      "new_text_sha256": "93986c562b0c5a2f1a68ef72771541bec5fe560b6b767c88a124ab5e08196b23",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:650bc756527aa92731f7",
+      "page": 473,
+      "code": "EMIFCNT02",
+      "old_text_sha256": "127e6b90882584851a71a36b7deb00e96c2408ff4da9f0b4fe2ab0bf853aa145",
+      "new_text_sha256": "9bdcfa35dfdd2fec620bb6222ee2471d988d723b5ca60eae384a34e6b0e9daf3",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:a4c4489312be7a9ab69c",
+      "page": 484,
+      "code": "EMIFCHSA01",
+      "old_text_sha256": "3370afcf4e3abfcc37544f1c6ce99bbe7952e4a1a324afa6e0f4dae5d2bfb6c4",
+      "new_text_sha256": "c5899bf632af9866f583b3968cc6ab05b33bf78ffc06583164dca47f73e046d3",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:fd3b724d728eb106a9a8",
+      "page": 484,
+      "code": "EMIFCNT02",
+      "old_text_sha256": "127e6b90882584851a71a36b7deb00e96c2408ff4da9f0b4fe2ab0bf853aa145",
+      "new_text_sha256": "9bdcfa35dfdd2fec620bb6222ee2471d988d723b5ca60eae384a34e6b0e9daf3",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:ccd955bd3a52e1d994fa",
+      "page": 487,
+      "code": "EMIFCNT02",
+      "old_text_sha256": "127e6b90882584851a71a36b7deb00e96c2408ff4da9f0b4fe2ab0bf853aa145",
+      "new_text_sha256": "9bdcfa35dfdd2fec620bb6222ee2471d988d723b5ca60eae384a34e6b0e9daf3",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:4f416f0dff95f65418c5",
+      "page": 491,
+      "code": "EMIFCG10",
+      "old_text_sha256": "ae9783c57ad2596471cda38800e43d66df6b7776b796ee745384a2acbd56c1b9",
+      "new_text_sha256": "ec72e09558e019cae2656596de711525f2abc5d3104f169c4be51645878176c1",
+      "old_literal": false,
+      "current_literal": true
+    },
+    {
+      "id": "ca:ba-dcrb-em-vol2-2022:fb9e0c98f7a23f26bef9",
+      "page": 491,
+      "code": "EMIFCG12",
+      "old_text_sha256": "689b38f9946fc3926d1f8df8ceb5ca66e50600f094382c422afcbd68a7a323af",
+      "new_text_sha256": "5c8ad9822c9fbd5a0d1689726f1ff7f2af7ac2e718f8c59bcd05983597e8838b",
+      "old_literal": false,
+      "current_literal": true
+    }
+  ],
+  "negative_controls": [
+    "fabricated_word_rejected",
+    "scoped37page_cache_cannot_replace_integral563page_source",
+    "all53routed_ids_present_and_literal_not_removed"
+  ],
+  "manifest_modified_by_verifier": false,
+  "cache_modified_by_verifier": false,
+  "runtime_modified": false,
+  "new_national_candidate_mounted": false,
+  "BASE_modified": false,
+  "whole_source_reconciled": false,
+  "UF_ready": false,
+  "scope": "Current full563page production-path native cache on actual registered Source, with restricted37page glyph-order intervention. This verifies the53native failure repairs and preserves all other pages/records; structural/uncoded/curriculum-wide reconciliation and current adoption remain open.",
+  "strict_projection_supplement": "docs/evidence/source-audit-northeast/ba-vol2-outside-record-execution-time-control.json"
+}

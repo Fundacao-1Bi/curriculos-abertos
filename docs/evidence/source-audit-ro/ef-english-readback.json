@@ -1,0 +1,221 @@
+{
+  "adapter_sha256": "41aaec0ea6c0082604cdedd30e12dea3a469c929fd4414bbf099ac1b3dd18cb3",
+  "all_evidence_literal": true,
+  "all_real_finalizer_schema_records": 1818,
+  "base1725_preserved_exactly": true,
+  "code_grade_conflicts_preserved": [],
+  "command": "var/venv-pipeline/bin/python docs/evidence/source-audit-ro/verify_ef_ingles.py",
+  "cycles": 0,
+  "distinct_literal_LI_codes": 88,
+  "engine": {
+    "pymupdf": "1.26.7",
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "full_primary_character_coverage": [
+    {
+      "bbox": [
+        405.8213297526042,
+        640.298921472886,
+        595.2000122070312,
+        767.605058149858
+      ],
+      "characters": 280,
+      "page": 238,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        405.8213297526042,
+        0.0,
+        595.2000122070312,
+        764.7159881591797
+      ],
+      "characters": 1401,
+      "page": 239,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        405.8213297526042,
+        0.0,
+        595.2000122070312,
+        764.7468983043324
+      ],
+      "characters": 1406,
+      "page": 240,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        405.8213297526042,
+        0.0,
+        595.2000122070312,
+        487.87999725341797
+      ],
+      "characters": 849,
+      "page": 241,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        441.2899932861328,
+        523.3247721354167,
+        595.2000122070312,
+        768.1199768066406
+      ],
+      "characters": 387,
+      "page": 241,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        441.2899932861328,
+        0.0,
+        595.2000122070312,
+        764.2959662543403
+      ],
+      "characters": 1014,
+      "page": 242,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        441.2899932861328,
+        0.0,
+        595.2000122070312,
+        762.9839477539062
+      ],
+      "characters": 1017,
+      "page": 243,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        441.2899932861328,
+        0.0,
+        595.2000122070312,
+        763.3359917534722
+      ],
+      "characters": 1011,
+      "page": 244,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        441.2899932861328,
+        0.0,
+        595.2000122070312,
+        185.8699951171875
+      ],
+      "characters": 147,
+      "page": 245,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        441.2795582646909,
+        221.3165544782366,
+        595.2000122070312,
+        764.7250810102983
+      ],
+      "characters": 822,
+      "page": 245,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        441.2795582646909,
+        0.0,
+        595.2000122070312,
+        762.8399658203125
+      ],
+      "characters": 1007,
+      "page": 246,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        441.2795582646909,
+        0.0,
+        595.2000122070312,
+        763.7869096235795
+      ],
+      "characters": 1005,
+      "page": 247,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        441.2795582646909,
+        0.0,
+        595.2000122070312,
+        359.37997817993164
+      ],
+      "characters": 429,
+      "page": 248,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        419.92933146158856,
+        395.2237223307292,
+        595.2000122070312,
+        760.1999938964843
+      ],
+      "characters": 665,
+      "page": 248,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        419.92933146158856,
+        0.0,
+        595.2000122070312,
+        769.8159993489584
+      ],
+      "characters": 1126,
+      "page": 249,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        419.92933146158856,
+        0.0,
+        595.2000122070312,
+        768.39599609375
+      ],
+      "characters": 1166,
+      "page": 250,
+      "uncovered_non_whitespace_characters": 0
+    },
+    {
+      "bbox": [
+        419.92933146158856,
+        0.0,
+        595.2000122070312,
+        215.26997884114584
+      ],
+      "characters": 261,
+      "page": 251,
+      "uncovered_non_whitespace_characters": 0
+    }
+  ],
+  "manifest_cache_proposal_or_database_mutated": false,
+  "materialized_definition_occurrences": 88,
+  "original_modified": false,
+  "parents_missing": 0,
+  "raw_primary_code_occurrences": 88,
+  "ready": false,
+  "reconciled": false,
+  "records_read_back": 1818,
+  "shared_geometry_note": "Builder and readback share PyMuPDF. Separate saved-file readback, raw code census and complete per-character column coverage add tests; not absolute parser independence.",
+  "source_id": "ro-rcro-ef",
+  "source_sha256": "c8a25381bc5311326bf0fe1528c9941fb78d618d1b0696f0129baf6fa75f1ea2",
+  "source_year_definition_counts": {
+    "6": 26,
+    "7": 23,
+    "8": 20,
+    "9": 19
+  },
+  "uncovered_non_whitespace_characters": 0
+}

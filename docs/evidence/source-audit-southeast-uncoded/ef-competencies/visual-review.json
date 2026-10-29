@@ -1,0 +1,34 @@
+{
+  "actor_type": "automated",
+  "actor_id": "es-ef-competencies:visual-agent-review",
+  "method": "Agent inspected all ten original-PDF contact sheets at final extraction plus the literal chapter/caption/continued-table conflict crop; no synthetic source or spelling repair.",
+  "sample_inventory_sha256": "f349ade698e60a577f1c6586a3efab8f4e034bcda3f646404a27dc60365a5634",
+  "samples_reviewed": 37,
+  "contact_sheets_reviewed": 10,
+  "source_volumes_covered": 8,
+  "all_explicit_components_covered": true,
+  "intro_and_repeated_columns_covered": true,
+  "final_anomaly_checks": {
+    "CEAR06_embedded_in_CEAR05": "Definition is complete in the crop; CEAR05 preceding prose stays separate, physical repetition retained.",
+    "ability_reference_vol03_p79": "Canonical CE01 stops before referenced EF objective; full referenced text retained with separate bbox in source_context.",
+    "ER_intro_context": "Original ER section/covers prove component; no inherited História remains.",
+    "LI_caption_conflict": "Chapter243 names Língua Inglesa; caption246 names Artes; table continues247. Six intro competencies retain null component and both source proofs."
+  },
+  "private_raster_hashes": {
+    "legend-conflict.png": "8e9d54316cfe1212b96085985bbcd53bedb42ea99423632848c7ff7964841bae",
+    "sheet-00.png": "2d689c732d044ad2b29558f236d53f4aaba1f16a31052b782fe5ec3f3573bda4",
+    "sheet-01.png": "c14eb7e5486c18f98893290c422c6f973480c2c8f4bc90418f51c931e637a003",
+    "sheet-02.png": "e617b7fd069475b3662eb046d3bd2db84db112d10f609b2536ef8d2e8ad07517",
+    "sheet-03.png": "84557ad964a091bbf99af6a127bc863e901b130e3758d4c4f474ac03d74b1f9e",
+    "sheet-04.png": "97c099ef0674fc3b3e4781cd66e066f5ae84825a1457a26ab11cebb221ef4b4a",
+    "sheet-05.png": "96446ad1427597b7239e851cb3056ed230b38e214b3be11de81163255477b227",
+    "sheet-06.png": "5343fcbfe13c5c8c449f4260644b9cbf3d76723c3f81cf837bef7c9954f3dd9e",
+    "sheet-07.png": "30ba823067bb4ed077f276179e1b4bd871bf7280abfcc7b63462bca22cdc5c07",
+    "sheet-08.png": "4d94540383c1ed04f94915d88e7f7eb09071e7efbac1a8b5a2a3ddda414147cb",
+    "sheet-09.png": "d50c065166f5ab82d900375fa8011105d25887f389548b0d6627a91cd03508a0"
+  },
+  "separate_identifier_glyph_review": "prose/ce-review-report.json records four additional anomalous literal identifiers checked in real raster/native/trace by a separate agent.",
+  "human_review": false,
+  "ready_uf_asserted": false,
+  "passed": true
+}

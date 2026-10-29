@@ -22,6 +22,7 @@ bootstrap: image
 	$(COMPOSE) up -d --wait app worker
 	@echo 'Serviços iniciados. Crie administrador: make admin-create EMAIL=seu-email ACTOR_TYPE=human (senha via stdin).'
 up:
+	node --env-file=.env --import tsx scripts/ops-image-verify.ts
 	$(COMPOSE) up -d --wait
 
 down:

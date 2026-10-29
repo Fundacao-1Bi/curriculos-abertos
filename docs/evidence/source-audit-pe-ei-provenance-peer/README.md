@@ -1,0 +1,31 @@
+# PE Educação Infantil: procedência e atos de edição/reconhecimento
+
+A investigação preserva `pending_primary_distribution_chain` e `primary_distribution_verified:false` para `pe-curriculo-ei`, PDF SHA `a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3`. O ato de reconhecimento do currículo foi comprovado; a publicação institucional que liga a Secretaria/CEE à página Google Sites/Drive exata ainda não foi demonstrada. Não se confundem a autoridade sobre a obra e a procedência de um arquivo específico.
+
+**Evidência positiva dos atos.** O [Parecer CEE/PE nº 114/2018-CEE](https://www.cee.pe.gov.br/wp-content/uploads/2025/10/PARECER-114-2018.pdf), processo 223/2018, registra aprovação plenária em 20/12/2018. A publicação executiva foi recuperada pela rota pública do [Diário Oficial da CEPE](https://diariooficial.cepe.com.br/diariooficialweb/), acessada a partir do portal institucional da editora. O serviço de download de 29/12/2018 devolveu o PDF `PoderExecutivo(20181229).pdf`, 46 páginas, SHA `80a054a0feee9ebe2358a2f1d1d91675d42f2956acd86e05318fd8392befc2fd`. Na página 24, a Portaria SEE nº 5570, de 28/12/2018, torna público o reconhecimento do Currículo de Pernambuco em quatro volumes, incluindo Educação Infantil, como referência curricular, respeitadas as autonomias dos entes e instituições. O trecho integral do ato tem caixa, texto, hash e recorte privado conferidos em `portaria-5570-primary-proof.json`. Não foi testada validade criptográfica de assinatura.
+
+A rota é reproduzível: o [portal CEPE](https://www.portal.cepe.com.br/) aponta para o aplicativo oficial; seu HTML aponta para o JavaScript/configuração que expõem o serviço público `HomeService.getJornal`, com os parâmetros de diário/data/edição. A resposta JSON contém os bytes em base64; a decodificação foi conferida contra o PDF local. Uma representação recuperada do bucket de arquivo tem bytes diferentes, mas o texto e os pixels do ato coincidem. O recibo usa como primária a resposta do backend oficial, sem depender da identificação do bucket pelo nome.
+
+**Edição observada no exemplar.** As páginas físicas 3–4 do PDF coletado indicam 2019. A ficha catalográfica atribui a publicação à Secretaria de Educação e Esportes e à UNDIME, descreve 128 páginas e aponta `www.educacao.pe.gov.br/portal/?pag=1&cat=18&art=4419` como publicação online. O arquivo possui 134 páginas físicas e metadados técnicos PDFium com criação em 2024. Esses metadados não foram usados como data editorial. A rota institucional antiga retornou 404 nas tentativas HTTP e HTTPS desta investigação. A ficha/creditação interna não autentica, por si só, quem mantém um espelho atual.
+
+**Parte comprovada da cadeia do arquivo.** A [página Google Sites](https://sites.google.com/view/programacriancaalfabetizadape/materiais-pedag%C3%B3gicos/material-de-apoio-pedag%C3%B3gico/educa%C3%A7%C3%A3o-infantil) contém o atributo `data-embed-doc-id` e o link de download para o exato Drive ID `1hnNk221nOEBv7fgxPtCDjRhMyDZ9sEBk`. O download público atual desse ID retornou 2.505.568 bytes e reproduziu exatamente o SHA do snapshot registrado. Portanto, GoogleSite→Drive→arquivo local está verificado. Falta a aresta de publicação/autorização institucional da Secretaria/CEE para esse GoogleSite/Drive, ou outro arquivo primário com identidade comprovada ao snapshot.
+
+As buscas incluíram termos de currículo/atos/número do parecer/URL antiga/GoogleSite/Drive ID/nome do PDF; a home oficial SEE; resultados da API oficial com 9 mídias de currículo,89 posts de currículo e31 posts de alfabetizada; páginas do CEE; o catálogo documental e institucional da UNDIME; e referências de municípios/universidades. `search-log.json`, `official-catalog-search.json` e `fetch-log.json` delimitam a pesquisa. Não se afirma ausência universal de uma publicação institucional. As referências municipais, universitárias, de apostilas e espelhos privados não foram promovidas a prova de distribuição pelo emissor estadual.
+
+`report.json` separa o reconhecimento normativo da obra do caminho de distribuição do binário. O grafo considera somente ligações de distribuição comprovadas; não cria a ligação faltante a partir de título, logotipo, ficha catalográfica, semelhança com o volume oficial do Ensino Fundamental ou ato que não identifica o arquivo. Nenhum Source/MF, núcleo, cache, banco ou publicação foi alterado. A Source continua obrigatória no denominador; não se alega reconciliação integral, vigência/adoção municipal universal, SourceWhole, UF pronta ou revisão pedagógica humana.
+
+Para avançar, é necessária uma publicação autenticada do emissor/coemissor que aponte ao recurso exato, uma captura histórica verificável da rota institucional antiga contendo a ligação, ou a aquisição de um exemplar primário institucional com identidade de artefato demonstrada. Se o arquivo primário diferir, a variante deve ser documentada, sem transportar silenciosamente o SHA ou a edição entre arquivos.
+
+Snapshots completos, PDFs e imagens ficam privados em `var/private-evidence/pe-ei-provenance-peer/`. Os pequenos recibos públicos contêm URLs, horários, códigos de resposta e hashes. Reprodução dos downloads e da conferência:
+
+```sh
+var/venv-pipeline/bin/python docs/evidence/source-audit-pe-ei-provenance-peer/fetch.py
+var/venv-pipeline/bin/python docs/evidence/source-audit-pe-ei-provenance-peer/fetch-more.py
+var/venv-pipeline/bin/python docs/evidence/source-audit-pe-ei-provenance-peer/fetch-last.py
+var/venv-pipeline/bin/python docs/evidence/source-audit-pe-ei-provenance-peer/fetch-cepe-config.py
+var/venv-pipeline/bin/python docs/evidence/source-audit-pe-ei-provenance-peer/fetch-signed-doe.py
+var/venv-pipeline/bin/python docs/evidence/source-audit-pe-ei-provenance-peer/fetch-coissuer.py
+var/venv-pipeline/bin/python docs/evidence/source-audit-pe-ei-provenance-peer/compile-evidence.py
+```
+
+As observações web do CEE são complementares aos downloads: o leitor/indexador retornou o documento de 24 páginas e os metadados do ato, mas os GETs posteriores do PDF direto deram 503. O original da publicação executiva foi obtido independentemente pelo backend da CEPE. Essas situações de acesso são registradas separadamente da lacuna de procedência do PDF curricular.

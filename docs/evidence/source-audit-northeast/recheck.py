@@ -6,6 +6,9 @@ ROOT=pathlib.Path(__file__).resolve().parents[3];OUT=pathlib.Path(__file__).pare
 sys.path.insert(0,str(ROOT/'pipeline'));import ingest
 revision=os.environ.get('AUDIT_EXTRACTION_REVISION') or re.search(r"EXTRACTION_REVISION = '([^']+)'",(ROOT/'pipeline/ingest.py').read_text()).group(1)
 original=json.loads((OUT/'audit-report.json').read_text());sources={s['id']:s for s in json.loads((ROOT/'data/manifests/northeast.json').read_text())}
+reference_disposition_path=OUT/'audit-reference-dispositions.json';reference_dispositions={}
+if reference_disposition_path.exists():
+ rd=json.loads(reference_disposition_path.read_text());assert rd['original_sampling_frame_sha256']==hashlib.sha256((OUT/'audit-report.json').read_bytes()).hexdigest();reference_dispositions={(r['source_id'],r['page'],r['code']):r for r in rd['dispositions']}
 def norm(t):
  # PDF soft hyphens and zero-width glyphs are layout controls, retained separately in raw excerpts.
  t=t.replace('\u00ad\n','').replace('\u00ad','')
@@ -46,7 +49,12 @@ for anchor in original['samples']:
  candidates=[i for i in ex.get('_audit_final_items',ex['items']) if i.get('code')==literal_code and any(e.get('page')==anchor['page'] for e in i.get('evidence',[]))]
  result['matched_item_ids']=[i['id'] for i in candidates]
  if not candidates:
-  result['result']='unrepresented_code_occurrence_requires_semantic_classification';samples.append(result);continue
+  disposition=reference_dispositions.get((sid,anchor['page'],literal_code))
+  if disposition and disposition['artifact_sha256']==source['sha256']:
+   if disposition.get('authoritative_sidecar_path'):assert ingest.sha_file(ROOT/disposition['authoritative_sidecar_path'])==disposition['authoritative_sidecar_sha256']
+   result['result']='source_code_reference_documented';result['reference_disposition']={'role':disposition['documentary_role'],'evidence':'docs/evidence/source-audit-northeast/audit-reference-dispositions.json','evidence_sha256':ingest.sha_file(reference_disposition_path),'no_new_learning_definition':True,'whole_source_structure_still_pending':True}
+  else:result['result']='unrepresented_code_occurrence_requires_semantic_classification'
+  samples.append(result);continue
  checks=[]
  for item in candidates:
   ev=[e for e in item['evidence'] if e.get('page')==anchor['page']][0];box=ev.get('bbox');p=docs[sid][anchor['page']-1]
@@ -69,7 +77,7 @@ for anchor in original['samples']:
   outcome='literal_cell_pass_semantics_still_unreviewed' if code_present and text_present and all_fragments_pass else 'multi_page_fragments_literal_pass_semantics_still_unreviewed' if all_fragments_pass and item.get('cross_page_continuation') else 'authoritative_source_fragment_pass_clip_order_requires_context_review' if all_fragments_pass else 'literal_cell_candidate_mismatch'
   checks.append({'item_id':item['id'],'method':ev.get('method'),'bbox':box,'code_present':code_present,'text_literal_matched_any_native_order':text_present,'all_current_source_fragments_verified':all_fragments_pass,'result':outcome,'extracted_text':item['text'][:1500],'source_cell_native_order':variants[1][:1500]})
  result['checks']=checks;result['result']='sample_inspected';samples.append(result)
-report={'created_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'actor_type':'automated','actor_id':'codex:data_northeast','extraction_revision':revision,'independent_sampling_frame':'audit-report.json (unchanged source hashes, anchors chosen directly from native PDFs)','limitations':['Literal match is necessary but insufficient for semantic classification, completeness or pedagogical review.','National-code occurrences in reference columns and examples are not expected learning items.','Original audit sort=True mismatches remain preserved; recheck accepts native PDF sort=False and textbox order to avoid rotation/glyph-order false positives.','Code evidence in separate code_evidence is accepted only as location evidence, not proof that code is authored local identifier.'],'samples':samples,'summary':{'sample_anchors':len(samples),'distinct_reviewed_uf_stage_component_combinations':len({(s['uf'],s['stage'],s['component']) for s in samples}),'ufs':sorted({s['uf'] for s in samples}),'by_result':dict(collections.Counter(s['result'] for s in samples)),'check_results':dict(collections.Counter(c['result'] for s in samples for c in s.get('checks',[]))),'fully_reconciled_parts_in_principal_source_audit_cohort':0,'other_sources_reconciled_in_registry':[s['id'] for s in sources.values() if s.get('reconciliation_status')=='automated_documentary_reconciled']}}
+report={'created_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'actor_type':'automated','actor_id':'codex:data_northeast','extraction_revision':revision,'independent_sampling_frame':'audit-report.json (unchanged source hashes, anchors chosen directly from native PDFs)','limitations':['Literal match is necessary but insufficient for semantic classification, completeness or pedagogical review.','National-code occurrences in reference columns and examples are not expected learning items.','Original audit sort=True mismatches remain preserved; recheck accepts native PDF sort=False and textbox order to avoid rotation/glyph-order false positives.','Code evidence in separate code_evidence is accepted only as location evidence, not proof that code is authored local identifier.'],'samples':samples,'summary':{'sample_anchors':len(samples),'distinct_sampling_frame_uf_stage_component_combinations':len({(s['uf'],s['stage'],s['component']) for s in samples}),'distinct_inspected_uf_stage_component_combinations':len({(s['uf'],s['stage'],s['component']) for s in samples if s['result']=='sample_inspected'}),'ufs':sorted({s['uf'] for s in samples}),'by_result':dict(collections.Counter(s['result'] for s in samples)),'check_results':dict(collections.Counter(c['result'] for s in samples for c in s.get('checks',[]))),'fully_reconciled_parts_in_principal_source_audit_cohort':0,'other_sources_with_legacy_reconciliation_flag_not_gate_acceptance':[s['id'] for s in sources.values() if s.get('reconciliation_status')=='automated_documentary_reconciled']}}
 report['integration_contract']='Full generic plus Source-bound sidecar finalizer; exact current Source config, original independent159anchor frame and PDF identity retained. All-fragment evidence_check uses the current verified native/cluster/OCR-proof methods; a whole-page text match alone is not semantic learning classification.'
 oldpath=OUT/'audit-recheck.json'
 if oldpath.exists():

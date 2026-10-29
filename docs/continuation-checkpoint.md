@@ -1,0 +1,99 @@
+# Retomada da integração
+
+Atualização: 2026-10-28T18:07:44.893248+00:00
+
+Produto ainda em integração, sem aceite nacional. A especificação integral está em docs/requirements.md. Não substituir os requisitos por contagens de PDFs, códigos ou amostras.
+
+## Estado preservado
+
+- Commit84de9d9 contém o checkpoint amplo de código, dados, correções, testes e recuperação. Há mudanças posteriores dos agentes; preservar todas. Repositório local/main, sem PR/remoto/deploy remoto.
+- Runtime localhost3000 voltou após UM reinício NORMAL do Docker Desktop explicitamente autorizado pelo usuário. Não repetir reinício sem nova autorização. App/worker/PG17.11 saudáveis; ContentiZAP PG também aceitou conexões. Publicação principal ainda ca-77fb8076598b567e1ba3 (38322itens/13007relações/247fontes), SHA DB da8fb61ce80b2aec4a83d4f0e9cdeb306505c384315af59a76b0fc9fabc03eb0.
+- Imagem antiga c2eb executa a partir de snapshots; registro/blobs de imagem perderam integridade no incidente. NÃO recriar com e88c: package.json estava vazio e a tag foi rejeitada/removida. Exportfilesystem privado843MB temrestore real health200/fingerprint7b664f0e… e config estático semEnvsegredo. Guardas pré/pósbuild e makeup verificam espaço/arquivos/FP antesup. Backup/volumes preservados, amcheck PASS.
+- Disco oscilou de15GiB recuperados para~4–7GiB com caches/swap; host24GiB RAM e~14GiBswap. Semnovo build/benchmark durante FULL. Admin_ops foi reativado para compressãoAPFS transparente deJSONsderivados, mesmosbytes/paths/SHA; não apagarraw/volumes/rollback nemarquivarpaths1.4comleitoresativos.
+
+## Pipeline e dados
+
+- FULL1.5 terminou286tentativas:285extraídas e AP-EM falhou por malformed page tree. 56705páginas/155620candidatosbrutos. Job var/jobs/national-extraction-v150-20261028.json. Não é artefato consolidado nem SourceWhole.
+- Parser congelado SHA541aa3377fd409f9c172e1580ae988f5869b25e5331c98528ab68fb9a09360db; freeze-final SHA160223f6df66a063423cb0a5b4e0c68698f05034c79c3144cb2d8132345baf40. NÃO editar módulos parser enquanto refresh usa esta revisão. Mapping1.2.0, OCR não conferido produz candidatas, não declaração de fonte. Producerfingerprint separado captura gates/writer/mapping/schema.
+- Pipeline fará inventário EXATO de fingerprints stale, refresh seletivo, preflight e sharded FULL com RSS/time, denominadores source-first. Nove stales já conhecidos: DFdigital2/3,PA,ROeletivas,TOEI,AP614,ROdigital,PEHistória,PI188; existem inputs posteriores adicionais. Cache tem identidadeSource/config.
+- Único SHA elegível duplicado era bookletMEC14p sobES eBR. Rootprovou arquivosidenticos e corrigiu SourceES espelho: mandatoryfalse/include_in_corpusfalse/canonicalSourceBR; todosraws/conteúdo217preservados. FonteMEC/BR não é currículo estadual; semvigênciaatualinferida. Provas es-mirror-deduplication.json.
+- Schema1.0.0 preservado,1.1.0 pin cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df admiteartifact_urlnull. Node/PythonvalidampinsantesSQL. Não editar esquemas fixados.
+- ReconciliationV2 forte em pipeline/reconciliation.py: parte/legado parcial separados de Sourceinteiro; exige inventário independente, IDs/textSHA/evidências/denominadores/uniãoexata/dependências porID+SHA+revisão. Não resolvercomflagsready/contagem. GuardOCR impedeWholecomidentificadorpendente.
+
+## Software e QA
+
+- Domínio: categorias explícitas, política v4 com22tipos de aprendizagem (sínteseEI incluída comwarnnãoéprérequisito), experiências/direitos/finalidades/normas/avaliação/contextos separados. Novostiposdevemserrevistos porFonte, nunca substringautomática. Inventory143kinds/82sidecars foi0unknown naqueleinstante; inputscontinuammudando.
+- Idades: age_months inclusivo0..1800, interseção sódeboundsexplícitos+Evidence[]. age_group pesquisa macro/micro normalizados, age_label original preservado. TS/MCP/OpenAPI/exports/URLs eUI implementados; códigosOCRpossíveis não são apresentados comoausênciaoficialnemhipótesecanonizada. UIdeFontes separa catálogo/origem/recurso, integridade/vigência, espelhos; datasparciaisnãoganhamdia01.
+-91/91 testes completos diagnósticos passaram emPG17.11descartável,0skips; código/inputs mudaram depois, repetirfinalwrapper. V4teve7/7puros+types/lint. APIage18testespass. Rootkindoptionsleubancoreal(snapshotca77=3tipos), filtrosUIsemnomesinternosdigitados.
+- Gateglobal evidencia code+artifact+publicação. Fingerprint inclui data/manifests: congelar ESCRITAS de inputs por janela de build/QA final; docs deprogresso não bloqueiam.
+- J11corrigido: recibo parcial jamaispromove; basepin+SourceIDs, composiçãoglobalpreserva outrosSources/itens/relações/cobertura, CASdepublicação. OracleSQLpass246fontes38314itens13007rels307coverage. AntigoreciboPE99imutável; Source atual correto93 (91corpo+2capa/créditos),8skills. FreshJ11final apósimagem nova. Jobantigo0cce…seguepaused.
+- Ordemoperacionalfinal: qa-production → qa-reimport → qa-recovery, maisAPI/MCPHTTP+stdio,10E2Edesktop/mobile,admin,harnessadmin,ingestão,performance,fonte,audit,18wrappers. Não executados noestadofinal. PerfilproduçãoNode22/Python3.11.2 diferentehostPython3.11.15; registrarreal.
+
+## Frentes e pendências vivas
+
+- pipeline: dono exclusivo core/batch/preflight/distribution e consolidação; não SourceDefault nemcontainers.
+- admin_ops: recuperação/capacidade/guard/build/J11; reativar viafollowup_task secompleted, send_message NÃO inicia turnocompleted.
+- domain: política/taxonomia/idadeSQL, v4comprovada; novoskindsBA podemprecisarclassificação; não parser.
+- auditor: seisES EMcore semcódigo (417p), independente de pr/EF/EI; SourcebindingspropostasaRoot. APpeer jáPASS2441 antes desta frente.
+- pr_adapter: codedES+17complementos/IFAs/EPT, consolida8EF(5314)/EI1309/Temas130. ATENÇÃO novoerrocorpo: Energias285prefixostruncados/352âncoras,18p71; o oráculoantigo3655literal não provava corpo completo. Corrigir data-only comfaixasprimárias, semCORE. Ainda NÃO SourceESready.
+- portal: SP/MG/RJ16fontes6494p censo; SP108competências/nós eMG24propostos; RJ182emexecução. Corrigiu folioSP seminferirphysical−1. PeersRN/PI188/BA125 encerrados.
+- data_north efilhos: MFNorth serial; AP6142441ligadoSHA98ea… com93objetivosEI/465experiências/EF e9negativos. AP339 continuaOCRnãointeiramenteconferido. PA1972ligado, filhoverificaHabilidadesEF. ACEM158PVligado, capítulosfaltantes; RR346precisapeer; TO359ligadopóspeer; RO váriosincrementos620LGG/149Espanhol/915Eletivas/168Digitalparcial,EI773com18partesaguardarefresh+V2. Não contar citaçõesEMcomoescopodigitalRO(EI/EF).
+- flat_json_import (filhodomain): fontesRO8, sidecars/propostas aNorth, nãoMF; Digitalp74recortadafisicamente(confirmado), códigoapenas+fragmentopendente, semcompletarporoutrafonte.
+- data_northeast: MFNE90/86PDFs, atosV2dependênciasreais, PE93, PI18814ligado, BA12523ligado; BA266141aguardapeerdomain. PB3921946e6352008preservados, inclusivehashes; metasintegraisnãoinferidasdosidecar.
+- api_mcp: apóspeerTOv3 eDF1189, audita truncamentosnativos foraES (docs/evidence/native-body-completeness-audit), READONLY/censoscompactos semingest.
+- central_south:3SourcesSCinteiros(5+362+53)V2;MS3organizadores681fechadosmasfundamentos47p/infográficosrasterfaltam. DF1190tinhaSolarfalsamentesplit, novopin1564(1189objetivos)passoupeer; inserirfundamentos172v2eactualSourceapósFULL. Não alterarcandidateoldarquivoimóvel.
+- rs_adapter: MS681V2 pronto+checkshardedMSaguardapacoteimutável; agoraCodeGlyphAMdata-only:1238/2629slotslidos,1391pendentes. NÃO validarcorpoOCRporlercódigo, nãocorrigirtypoprint, nãoaliasnacional. Propostarefscode-onlyprimáriasantesbinding.
+
+## Bloqueios externos / acesso
+
+APEMPDF147MB corrompidoaquisiçõesiguais; PBEMnavegadorrenderiza867p masGETanônimoHTML eSaveUIsemhabilitar;ambasabasSourceguardadas,nãoPDFinventado. PerfisChrome pessoais, nãomudarprefssemcontextoadequado. ACCompcurrículoanexo667nãoobtido; MS2023URLHTMLapesarRESTdeclare63MB(PV2024nãosubstitui);ALCompcopyproveniência nãoconfirmada; BAnewDCRBaplicação2027integropendente; MADigitalintegralpendente. São diferentes de tarefas internas acessíveis. Não encerrar enquanto frentes independentes necessárias não forem trabalhadas/verificadas.
+
+Manter comentários ao usuário frequentes e curtos. O relatório docs/release-report.md é checkpoint, não entregaaprovada. Não claimnamespaceMCP2026-07-28:SDK1.32.2 negocia2025-11-25 ecompatíveisanteriores. Nãoháalvoremotoautorizado.
+
+## Incremento 18:28UTC
+
+Root corrigiu identidade de recorte para export age_months isolado: download não herda id/cobertura nacional. npmtest completo95/95,0skips e typesPASS, diagnósticos durante inputs concorrentes. Sources13/15bindingsSEpassaram inicialmente;2titulosERverticais foram reparados por método glyph existente, sem alterar texto/IDs/bbox/parents; rootreplay507+832PASS. MGEM95ligadoepassactualbinding,24anterioresdeep-equal. Novo scripts/verify-source-bindings.py executaMFreal+sortTrue+commonchecker+finalizer+hierarchy+schema, semcachewrites; não substitui censo de corpo inteiro. Pipeline fazrefresh29+stalesnovos; código/inputscontinuamemintegração.
+
+## Incremento 19:42 UTC — BASE e nova janela operacional
+
+- Pacote BASE diagnóstico `ca-7d302a9c674a97b83278` fechado: 200.724 registros, 57.425 relações, 303 fontes, 75 shards; manifesto `data/bundles/ca-7d302a9c674a97b83278.manifest.json`, SHA256 `be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d`. Integridade/esquema/hierarquia passaram; NÃO é lançamento. Há 3.012 falhas literais explicitamente retidas, sete fontes faltantes, zero recortes UF-etapa prontos. Recibo `docs/evidence/base-full-v150-prepared-receipt.json`, matriz `docs/evidence/source-first-current-matrix-v150-base.json`, routing `docs/evidence/literal-preflight-v150-routing/summary.json`. Default ca77 preservado.
+- Dados posteriores BASE: RN IFA 146 ligado após peer; seis fontes ES EM ligadas com 3.953 nós, relatório `docs/evidence/es-em-core-binding-integration.json`. Sidecar-only replay 3/6 sem erros e 3 exigem os itens codificados externos para resolver hierarchy; auditor faz replay completo, sem afirmar falha documental ou sucesso até resultado. Refresh/delta pendente. Outros candidatos AC EM, SP, MG/RJ e RO aguardam integração/peer e não estão no BASE.
+- Disco livre observado 79 GiB; não atribuir causa. Guard build permanece 15 GiB e plano reserva 40 GiB para QA. Admin_ops coordena freeze curto de inputs e imagem isolada para executar BASE como diagnóstico; não substituir runtime antigo ou default, respeitar verificação da imagem antes de recriação e preservar serviços externos. QA produtivo nacional final e aceite permanecem não executados.
+- Verifier raster AM isolado passou 2.629 recortes e 21 negativos; etapa augmentada separada necessária para integrar 2.628 referências sem fingir revisão de corpos OCR nem alterar fingerprint dos caches. Contrato `docs/data-extraction-validation-fingerprints.md`.
+- `scripts/verify-source-bindings.py` registra falhas de links externos ao testar sidecars isolados; não confundir este teste parcial com montagem integral da Source.
+
+## Incremento 19:57 UTC — snapshot isolado e integrações
+
+- Admin_ops capturou snapshot privado `var/diagnostic-context-20261028195651-4a29dd`, fingerprint 1ad19dcd…718f antes/depois/cópia, docs idênticos e 75 shards BASE verificados; sem copiar .env/raw/caches. Freeze liberado; build Compose app de tag diagnóstica exclusiva iniciado. Confirmação de imagem/UID/fingerprint antecede recursos de QA; nenhum serviço principal recriado. Snapshot é estado anterior às integrações seguintes; jamais confundir com produto final.
+- SP v2 154 e AC EM FGB+PV 1292 ligados, 115 e 158 registros anteriores respectivamente preservados; replay atual 154/154 e 1292/1292 passou. Evidências `docs/evidence/sp-ac-incremental-bindings.json` e `sp-ac-actual-binding-verification.json`. Cache refresh e delta pendentes. ES6 replay completo auditor 4747 nós/457 links passou `docs/evidence/source-audit-southeast-uncoded/em-core/actual-source-replay.json`; refresh pendente.
+- Ficha pública informa extração documental pendente usando extraction_status e technical_validation_status; typecheck/lint passaram. Revisão independente das 14 supersessões RJ EM e correção EF07CI15Interpretar concluída, com dois metadados descritivos a ajustar; manter pares IDs e hashes no changelog antes de integrar.
+- Pipeline trabalha producer separado raster AM com prova por Source, preservando BASE e atualizações de outras UFs; instalação da publicação pronta não deve exigir PDFs ou crops privados. NE tem candidatos SE305/PI172 ainda sem binding, com peers pendentes.
+
+## Incremento 20:30 UTC — contratos e tentativa isolada
+
+- QA tentativa 1 diagnostic BASE recusada antes de criar recursos: JSON Schema 1.1 Position permitia campos omitidos, Zod MCP exigia null/presença. Relatório `docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-1/summary.json`. Varredura BASE antes: 3393 registros/4422 issues em period/area/age_group/printed_page; após correção MCP preservando omissão e schema congelado, 303 Sources/200724 itens/57425 relações, 75 shards passaram JSON Schema e MCP sem coerções. `var/cross-language-v150/after-contract-fix-report.json`; API contract SHA b954b3… e shared 0b4279….
+- Admin_ops recompôs snapshot privado, build imagem `sha256:96488dffdc720114299260c950ce5ec106161e23a27068ba482d0da9d60f93f9`, fingerprint c63b1444…6b8095, guard PASS. Tentativa isolada de instalação BASE em andamento: banco `curriculos-abertos-clean-20261028202921-dd73eb-db-1`; portas/volumes próprios, não alterar serviço principal. Não é verificação final nem release nacional.
+- Após snapshot, bindings root: SP EM 40 e RJ integral 1076 (`sp-em-rj-integral-actual-binding-verification.json` PASS); MG EM 212/RJ EI EF 336 (`mg-em-rj-eief-sidecar-binding-verification.json` PASS); MG EI EF 2207 (`mg-eief-sidecar-binding-verification.json` PASS). Todos exigem refresh seletivo e delta; RJ e MG levam technical_supersessions pinadas para próximo changelog. Northeast ligou/refresh RN IFA, PE EI (procedência pendente), SE IFA e PI referências; BA flags 37p ligadas com refresh 563p pendente após build. Nenhum destes está no BASE.
+- Fonte PE EI: ato Parecer114/2018/CEE, DOE29/12/2018 e PortariaSEE5570/2018 corroborados por auditor, mas cadeia exata Secretaria→GoogleSites→Drive ainda pendente; não classificar proveniência oficial como confirmada só por coincidência de título.
+
+## Incremento 20:55 UTC — QA e reprocessamento seletivo
+
+- QA attempt2 chegou ao PG vazio e migrations, mas importador manual rejeitou Position.area ausente apesar de schema opcional. API alinhou domain/record-contract.ts, publication.ts, shards.ts ao schema1.1, sem coerção, e PG isolado passou 4/4 (imports embedded e sharded). Pipeline varreu BASE completo inclusive validateBundle/validateRelations/validateHierarchy/verifyShardedManifest: 0 erros/0 sockets, relatório `var/cross-language-v150/after-manual-domain-fix-report.json` SHA 8fa8edcf275da9cbafb7d48e08505b483ebeb866b06d5e251c42eb6aa042b1ff. Tentativas anteriores em `docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-1/` e no snapshot privado.
+- Admin_ops criou imagem diagnóstica `sha256:c8c96262fd976f36fcacdca7a898b96feb086df68d5c679ed71c0ccf6637a278`, fingerprint 674dd1dd…44669a6, guard PASS; tentativa anterior colidiu porta PG55438 preservada, retry com portas livres criou projeto `curriculos-abertos-clean-20261028205403-f517a7`, PG saudável e import em andamento. Não é release final: snapshot e BASE anteriores aos novos dados, 3012 falhas literais BASE, 0 UF pronta. Principal ca77 preservada.
+- Dados após snapshot: RJ integral v2 1080 replay PASS, ledger same-ID SHA193c0b…8153; RJ EM890 replay PASS, 14 supersessões ledger a8acce…ce8d. SP SEDUC156 corpo87 e anexos26, SP EI/EF v3 159 replays PASS; MF/ledger evidências em docs/evidence/*binding-integration.json. Outros pins MG/RJ citados acima continuam.
+- Pipeline iniciou lote seletivo `source-delta-v150-20261028`, 16 alvos, 1worker/nice10, `var/source-delta-v150-20261028/input-pin.json` SHA cc486df3f3e9106996a494dce169819eb0e07e59c40474ac6a680e5987c98fff; logs refresh.log/resources.log e cache-before hardlinks. NÃO editar wrappers vinculados/campos das Sources durante lote; novos candidatos em caminhos separados. Revisar stales e manifest/ledger após fim; não promover BASE.
+- AM: ensaio real RAW EI 4928→5080 (+152 refs) e RN passthrough passou em var; implementar stage adicional separado do parser e ledger antes de qualquer delta nacional, preservando textos OCR pendentes. NE 5 Sources atualizadas; RN FGB ainda tem 13 matrizes com códigos locais RN não capturados por regex e está em censo completo.
+
+## Incremento 21:xx UTC — instalação e J09
+
+- Instalação diagnóstica local passou em `localhost:3002`, projeto/portas/volumes próprios: 200724 itens,57425 relações,303 Sources, migrações, bootstrap repetido, admin/login, API/MCP/amostras, reinício e persistência. `diagnostic_only=true`, não é aceite nacional. Main ca77 permanece em localhost3000; tentativa QA antiga vazia preservada.
+- J09 falhou após download nacional 1.451.121.538B e recorte ES: `source_count` exportado do recorte permanecia nacional. Correção em `src/domain/stream-exports.ts` atualiza source_count apenas para recortes, sem alterar identidade de export nacional. Teste real export+conversão+reimport sharded e suíte completa108/108/0skip, typesPASS (`docs/evidence/export-slice-reimport-tests-fixed.log`). `scripts/test-all.ts` ativa novos testes PG optionais. Primeira tentativa minha de correção alterava também metadados nacionais e falhou2 testes; corrigida antes da emenda QA.
+- Admin_ops emendou snapshot isolado com3arquivos pinados, build+guardPASS imagem `sha256:edf22936409b349fbba836a7ae565f7b6d7a2fd816f217aff59574aa96701bd0`, fingerprint privado ba309e4c…dcc98. QA3002/worker healthy, snapshot SQL idêntico, main ready200 ca77. Downloads/jobs da falha preservados, somente chaves idempotência QA rotacionadas com recibo para produzir novos exports. J09 repetido em curso sessão66865, 37GiB livres antes dos downloads; só depois fazer recovery e J11. `docs/evidence/diagnostic-base-20261028195651-4a29dd/{runtime-slice-fix,reimport-attempt-1}/`.
+- Refresh seletivo16Sources terminou16/16, 5267p/zeroerros/zero stale conforme `var/source-delta-v150-20261028/post-refresh-verification.json` SHA23deffd…df46; lote fechado, novos candidatos podem ser ligados em delta posterior. MG orientador64 depois ligado/replayPASS, cache dele requer refresh. NE triou622:291 abertos,53 corrigidos,278 substituídos por sidecar com provas; RN FGB 667 slots/464 códigos locais distintos ainda em censo completo.
+- Pipeline produtor em var distingue identidade por eventos+proofs+base, supersessão histórica vs remoção efetiva e stage raster AM: EI RAW4928→5080, 90 relações preservadas, RN passthrough. Gerando RAW fresco 4Sources para eventos e testeSQL/worker; não promover nova publicação até esses gates.
+
+## Incremento 2026-10-29 16:20 UTC — J11 aprovada no diagnóstico
+
+- J11 PE História sobre BASE diagnóstico em localhost:3002 passou (17 controles, ~28 min): ver `docs/evidence/diagnostic-base-20261028195651-4a29dd/j11-attempt-3-success/summary.json`. Com instalação, J09, recovery e admin já aprovados, a sequência operacional diagnóstica sobre o BASE está completa. Continua `diagnostic_only`: BASE tem 3012 falhas literais retidas, 7 fontes faltantes e 0 recortes UF prontos.
+- Correção: `pipeline/distribution.py` escopa relações do recibo delta às fontes alvo (teste `test_delta_receipt_keeps_only_relations_touching_targets`). Parser congelado não foi tocado. Harness `scripts/qa-ingestion-admin.ts` usa prazo `INGESTION_TEST_TIMEOUT_MS` (padrão 60 min) na escala BASE.
+- Ainda não executado: rodada final em publicação nova pós-deltas (refresh dos bindings ligados após o BASE, stage raster AM, NE/RN FGB) e aceite nacional; bloqueios externos de acesso a fontes inalterados.

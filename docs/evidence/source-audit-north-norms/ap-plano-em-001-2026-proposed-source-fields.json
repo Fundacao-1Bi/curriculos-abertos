@@ -1,0 +1,116 @@
+{
+  "source_id": "ap-plano-em-001-2026",
+  "artifact_sha256": "34761767efc3b08cb11fe396cdd7577b170bb193d197cdcce87c1b2a61b9d87a",
+  "adapter_sha256": "f9a016239ece1a6d4886bc77501987dbef444c3a6fcc426b45cc8718041ae008",
+  "binding_ready": true,
+  "fields": {
+    "uncoded_items_path": "data/manifests/uncoded/ap-plan-acts-primary-items.json",
+    "adapter_authority": {
+      "uncoded_page_sections_pages": [
+        80,
+        82
+      ]
+    },
+    "adapter_part_verification": {
+      "actor_type": "automated",
+      "scope": "Complete declared act regions only; referenced curriculum/plan body remains separate.",
+      "review_path": "docs/evidence/source-audit-north-norms-independent/verification-summary.json",
+      "review_sha256": "881031892e7e13f846d80b07f14ae8406221663b4f95c69d26f943b41b8a533a",
+      "sidecar_sha256": "f9a016239ece1a6d4886bc77501987dbef444c3a6fcc426b45cc8718041ae008",
+      "documentary_role_partition_verified": true,
+      "whole_uf_claimed": false
+    },
+    "expected_related_documents": [
+      {
+        "title": "Plano de Ação da Secretaria de Estado da Educação - SEED para implementação da Política Nacional do Ensino Médio na Rede Pública de Ensino do Estado do Amapá",
+        "mandatory": true,
+        "status": "research_pending",
+        "evidence": [
+          {
+            "source_id": "ap-plano-em-001-2026",
+            "page": 81,
+            "printed_page": "81",
+            "section": "res001-artigo-1",
+            "excerpt": "Art. 1º Aprovar o Plano de Ação da Secretaria de Estado",
+            "bbox": [
+              304.7169189453125,
+              618.9270629882812,
+              562.616943359375,
+              628.9442749023438
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res001-artigo-1:line:1",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ap-plano-em-001-2026",
+            "page": 81,
+            "printed_page": "81",
+            "section": "res001-artigo-1",
+            "excerpt": "da Educação - SEED para implementação da Política",
+            "bbox": [
+              304.7169189453125,
+              630.9270629882812,
+              562.6160278320312,
+              640.9270629882812
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res001-artigo-1:line:2",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ap-plano-em-001-2026",
+            "page": 81,
+            "printed_page": "81",
+            "section": "res001-artigo-1",
+            "excerpt": "Nacional do Ensino Médio na Rede Pública de Ensino",
+            "bbox": [
+              304.7169189453125,
+              642.9270629882812,
+              562.59130859375,
+              652.9270629882812
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res001-artigo-1:line:3",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ap-plano-em-001-2026",
+            "page": 81,
+            "printed_page": "81",
+            "section": "res001-artigo-1",
+            "excerpt": "do Estado do Amapá, em conformidade com a Lei nº",
+            "bbox": [
+              304.7169189453125,
+              654.9270629882812,
+              562.614990234375,
+              664.9270629882812
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res001-artigo-1:line:4",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ap-plano-em-001-2026",
+            "page": 81,
+            "printed_page": "81",
+            "section": "res001-artigo-1",
+            "excerpt": "14.945/2024, Resolução CNE/CEB nº 2/2024, Resolução",
+            "bbox": [
+              304.7169189453125,
+              666.9270629882812,
+              562.5949096679688,
+              676.9270629882812
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res001-artigo-1:line:5",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          }
+        ],
+        "edition": null,
+        "reason": "The act approves a separate Plan; the opinion describes its curriculum matrices/tables that are not attached in these scoped act pages. The year2026belongs to the approving Resolution, not an inferred Plan edition.",
+        "related_source_id": null
+      }
+    ]
+  }
+}

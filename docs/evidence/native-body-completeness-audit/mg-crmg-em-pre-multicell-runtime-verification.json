@@ -1,0 +1,215 @@
+{
+  "source_id": "mg-crmg-em",
+  "result": "passed",
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:body-runtime-verifier",
+  "source_sha256": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
+  "cache_path": "data/extracted/2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44-page-cell-v1.5.0.json",
+  "cache_sha256": "0dcb89180a28c0266c8ebe8b0788f522f6161222d56b0e7b58d3cff3984d9555",
+  "input_pins": {
+    "data/manifests/uncoded/mg-coded-body-mg-crmg-em-v1-items.json": "ecb35321f10905545d310616a9f0bd03b93a49ec26b141166ea0b9f40c291cc5",
+    "docs/evidence/native-body-completeness-audit/mg-crmg-em-proposal.json": "177bcb3a47a118ba862a67147763f5885eccfdf24650d441e438eaaba733f44f",
+    "docs/evidence/native-body-completeness-audit/mg-crmg-em-body-diff.json": "cfface751560f00fc610eefa09f218239a65665dcd6b89d54b76179e8f8ee456",
+    "data/manifests/bncc-southeast.json": "e6c57e9cc39886a278c44d0d6d95f49cb9758d9e263fcd18220e86c45f83b6b3",
+    "docs/evidence/native-body-completeness-audit/repair-coded-bodies.py": "047180e4c5b1795fd2870ec65e737803c9046e4608baf24f3cc3a660e98800f8",
+    "docs/evidence/native-body-completeness-audit/audit.py": "67f010fc9f73ef9a359955212f2683ba9bce306d5c5461dbe6b822f1dca9fba4"
+  },
+  "composition_inputs": [
+    {
+      "path": "data/manifests/uncoded/mg-em-structured-v2-items.json",
+      "sha256": "e28b252203c761cacb038d3bd54c9ab320173b77abe81ba2b0345318072257b0",
+      "record_count": 95
+    },
+    {
+      "path": "data/manifests/uncoded/mg-coded-body-mg-crmg-em-v1-items.json",
+      "sha256": "ecb35321f10905545d310616a9f0bd03b93a49ec26b141166ea0b9f40c291cc5",
+      "record_count": 117
+    }
+  ],
+  "composed_path": "data/manifests/uncoded/mg-coded-body-composed-mg-crmg-em-v1-items.json",
+  "composed_sha256": "9a53f351e0860a886be9e8d282e0d49d2edab0cfd64659cd9ee84b9f9deb9774",
+  "proposed_authority": {
+    "coded_learning_ranges": [
+      [
+        115,
+        115
+      ],
+      [
+        141,
+        141
+      ],
+      [
+        143,
+        143
+      ],
+      [
+        146,
+        146
+      ],
+      [
+        150,
+        150
+      ],
+      [
+        165,
+        170
+      ],
+      [
+        172,
+        172
+      ],
+      [
+        269,
+        269
+      ],
+      [
+        294,
+        296
+      ],
+      [
+        299,
+        300
+      ],
+      [
+        318,
+        319
+      ]
+    ]
+  },
+  "blocked_pages": [],
+  "counts": {
+    "cache_items": 823,
+    "baseline_items": 918,
+    "body_repairs": 117,
+    "composed_adapter_records": 212,
+    "real_loader_records": 212,
+    "real_finalizer_records": 918,
+    "schema_passed": 918,
+    "literal_adapter_evidence_passed": 212,
+    "complete_character_receipts": 117,
+    "valid_coded_id_context_preserved": 117,
+    "unaffected_records_preserved": 801,
+    "explicit_invalid_supersessions": 0,
+    "new_canonical_records": 0
+  },
+  "new_canonical_records": [],
+  "superseded_invalid_records": [],
+  "negative_controls": [
+    {
+      "case": "strict_prefix_with_matching_excerpt_cannot_replace_complete_body",
+      "blocked": true
+    },
+    {
+      "case": "duplicate_record_even_if_every_character_matches",
+      "blocked": true
+    },
+    {
+      "case": "same_length_single_character_change",
+      "blocked": true
+    },
+    {
+      "case": "omit_actual_same_column_cross_page_continuation",
+      "blocked": true
+    },
+    {
+      "case": "absorb_new_explicit_cell_EMIFMAT03_p294_to_EMIFMAT04_p295",
+      "blocked": true
+    },
+    {
+      "case": "absorb_real_methodological_cell_after_EMIFMAT12_p296_to_p297",
+      "blocked": true,
+      "source_sha256": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
+      "primary_adjacent_role_label": "Pressupostos Metodológic os",
+      "label_bbox": [
+        85.343994140625,
+        71.519970703125,
+        134.77999877929688,
+        370.585986328125
+      ],
+      "foreign_role_body_bbox": [
+        134.77999877929688,
+        71.519970703125,
+        510.21999104817706,
+        370.585986328125
+      ],
+      "foreign_role_body_sha256": "8cd88f4a253fc39ac90ada10c7da6618ad6eb56b0547bd6ebb760f6c1f206222"
+    }
+  ],
+  "binding_requires_root_technical_acceptance": [],
+  "primary_original_rederivation": {
+    "original_native_vector_strict_cell_bodies_reproduced": 117,
+    "actual_cross_page_continuations": [
+      {
+        "code": "EM13LGG103",
+        "page": 115,
+        "fragment_pages": [
+          115,
+          116
+        ],
+        "fragment_text_hashes": [
+          "a54ff6275bc4f2ee1725b48c68a2c251c0022d1145cacf2ffa185a9b7f3d420a",
+          "6f9c0eb1f1b0bec0d43312d3a2badcd85f2b96d7521ab325035a0f926d7a8570"
+        ]
+      },
+      {
+        "code": "EM13LP16",
+        "page": 143,
+        "fragment_pages": [
+          143,
+          144
+        ],
+        "fragment_text_hashes": [
+          "6746a29db26ff64581a72500210ff8e46fb4978b914b3b3f65830991c12200c7",
+          "52c58103a9ddd0ce0cb5b3589c25d7cf8c9f6a659a49caefc432c6a2e3534c10"
+        ]
+      },
+      {
+        "code": "EM13MAT101",
+        "page": 165,
+        "fragment_pages": [
+          165,
+          166
+        ],
+        "fragment_text_hashes": [
+          "ac92d114ce2747a8c2f66dc3886231e7e53edff9e7564f5b425883041fd55f00",
+          "31cb55eb93fc30d01c62a312c78cbf189d5b9b62717e7c5da6b22c06ff80d136"
+        ]
+      },
+      {
+        "code": "EM13CHS605",
+        "page": 269,
+        "fragment_pages": [
+          269,
+          270
+        ],
+        "fragment_text_hashes": [
+          "0708e2d4325010d4c7ecdfa7454ebf72e9b84eef95ed143388dda6cf08778463",
+          "112164207ff4f6fbe5792a6fb066451cd6cbd9f6114e5eefa2fa5a91af4280f0"
+        ]
+      },
+      {
+        "code": "EMIFMAT03",
+        "page": 294,
+        "fragment_pages": [
+          294,
+          295
+        ],
+        "fragment_text_hashes": [
+          "55db041eb2b08bfc5cfff3a6a440a7107e1215604e64ada34733e6d84e3d73b5",
+          "d61145fbf27819453a91d8a866f46588904b084993fab65f018110960b5363f0"
+        ]
+      }
+    ],
+    "method": "Re-execute original primary code anchors, vector rulers, strict cells and full character comparison; candidate body evidence does not define source boundaries."
+  },
+  "reference_roles_preserved": 0,
+  "limits": [
+    "Only the proposed coded authority pages are repaired; blocked/unexamined pages remain unverified.",
+    "Full-body hashes originate in independent vector/native-word versus strict-cell character receipts; ordinary substring evidence alone is insufficient.",
+    "No database, corpus ingestion, Source manifest binding, whole-Source reconciliation, UF readiness or human approval was performed."
+  ],
+  "whole_source_reconciled": false,
+  "uf_ready": false,
+  "human_review": false,
+  "verifier_sha256": "87075ddcd9f5b1518bc5bec24265ad1296c19a6061a074e53b3256cd430152b5"
+}

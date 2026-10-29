@@ -1,0 +1,236 @@
+{
+  "source_id": "ac-cru-em",
+  "uf": "AC",
+  "artifact_sha256": "9ff75d1d5d9397aa145dccedd8023a01ed3b862692f58bb7d2cb2c84fc7602ad",
+  "cache_path": "data/extracted/9ff75d1d5d9397aa145dccedd8023a01ed3b862692f58bb7d2cb2c84fc7602ad-page-cell-v1.5.0.json",
+  "status": "read_completed_with_explicit_scope",
+  "audit_revision": "independent-vector-rules-native-code-boundaries-v3",
+  "counts": {
+    "coded_cache_records": 409,
+    "primary_pages_read": 218,
+    "body_prefix_not_aligned_to_independent_column_start": 7,
+    "independently_bounded_native_bodies": 401,
+    "bounded_body_equal": 362,
+    "extracted_extends_primary_page_region_not_truncation": 36,
+    "text_too_short_for_prefix_alignment": 1,
+    "strict_prefix_candidates": 3,
+    "prefix_definition_candidate": 2,
+    "prefix_role_unresolved": 1
+  },
+  "negative_examples": [
+    {
+      "case": "equal_complete_body",
+      "code": "EMIFCG01",
+      "page": 79,
+      "cache_item_id": "ca:ac-cru-em:80278a36661112d94b48",
+      "result": "not_truncation",
+      "body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96"
+    },
+    {
+      "case": "extracted_extends_bounded_page_region",
+      "code": "EMIFCG02",
+      "page": 79,
+      "cache_item_id": "ca:ac-cru-em:31005862abb25b917e57",
+      "result": "not_classified_as_truncation",
+      "evidence_pages": [
+        79,
+        80
+      ],
+      "extracted_tail": "speitando valores universais, como liberdade, democracia, justiça social, pluralidade, solidariedade e sustentabilidade.",
+      "bounded_page_tail": "Posicionar-se com base em critérios científicos, éticos e estéticos,"
+    },
+    {
+      "case": "equal_complete_body",
+      "code": "EMIFCG03",
+      "page": 80,
+      "cache_item_id": "ca:ac-cru-em:fa3ce4da47ac1ede6020",
+      "result": "not_truncation",
+      "body_sha256": "5243e20a6804abf6328f888de9cc09bdd7cc08c4611202688a5fa19fc2635547"
+    },
+    {
+      "case": "extracted_extends_bounded_page_region",
+      "code": "EMIFCG08",
+      "page": 80,
+      "cache_item_id": "ca:ac-cru-em:315be52a355b5c964b49",
+      "result": "not_classified_as_truncation",
+      "evidence_pages": [
+        80,
+        81
+      ],
+      "extracted_tail": " o diálogo, a colaboração, a mediação e resolução de conflitos, o combate ao preconceito e a valorização da diversidade.",
+      "bounded_page_tail": " situação, a opinião e o sentimento do outro, agindo com empatia, flexibilidade e resiliência para promover o diálogo, a"
+    }
+  ],
+  "findings": [
+    {
+      "source_id": "ac-cru-em",
+      "code": "EM13MAT312",
+      "page": 264,
+      "cache_item_id": "ca:ac-cru-em:b1fe2b53d283aca50a13",
+      "finalized_id_if_retained": "ca:ac-cru-em:9cf8a0e67453ce9126f7",
+      "evidence_locator": "table:0/row:2/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 33,
+      "physical_expected_characters": 119,
+      "extracted_sha256": "e04a2c235574325f59a9e0bbc17e0182f2bb9b5c356f5f968c00816c2f4743d8",
+      "physical_expected_sha256": "1a9d8a025cabfe14bd76007abd31d5f35a17c163e94d62cd3b3d9fe44be14054",
+      "extracted_head": "Resolver e elaborar problemas que",
+      "extracted_tail": "Resolver e elaborar problemas que",
+      "expected_tail": "Resolver e elaborar problemas que envolvem o cálculo de probabilidade de eventos em experimentos aleatórios sucessivos.",
+      "extra_normalized_prefix": " envolvem o calculo de probabilidade de eventos em experimentos aleatorios sucessivos.",
+      "independent_boundary": {
+        "anchor": [
+          70.93344116210938,
+          113.42337036132812,
+          141.85440063476562,
+          125.6446533203125
+        ],
+        "body_bbox": [
+          61.82,
+          113.42337036132812,
+          343.75,
+          191.41998291015625
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 358.9733581542969,
+        "physical_bottom_rule_y": 191.41998291015625,
+        "column": [
+          61.82,
+          343.75
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  (EM13MAT312) Resolver e elaborar problemas que\nenvolvem o cálculo de probabilidade de eventos em\nexperimentos aleatórios sucessivos.",
+        "1": "COMPETÊNCIA ESPECÍFICA 3 HABILIDADE (EM13MAT312) Resolver e elaborar problemas que",
+        "2": "  ",
+        "3": "  ",
+        "4": " OBJETOS DE CONHECIMENTO ● Probabilidade:",
+        "5": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "ac-cru-em",
+      "code": "EM13MAT303",
+      "page": 268,
+      "cache_item_id": "ca:ac-cru-em:a787e6c985b2fb6cae87",
+      "finalized_id_if_retained": "ca:ac-cru-em:4fe9022693e5f84e1412",
+      "evidence_locator": "table:0/row:4/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 36,
+      "physical_expected_characters": 218,
+      "extracted_sha256": "94faeb3a9e108fb602da9575392cb9341b6c9fb53b1d5d59d40e443fcc0f56ff",
+      "physical_expected_sha256": "5a382be3f1c379be44f256a1a05a7a25dcb04dded7e43870483a4bee7ff8616e",
+      "extracted_head": "Interpretar e comparar situações que",
+      "extracted_tail": "Interpretar e comparar situações que",
+      "expected_tail": "Interpretar e comparar situações que envolvam juros simples com as que envolvem juros compostos, por meio de representações gráficas ou análise de planilhas, destacando o crescimento linear ou exponencial de cada caso.",
+      "extra_normalized_prefix": " envolvam juros simples com as que envolvem juros compostos, por meio de representacoes graficas ou analise de planilhas, destacando o crescimento linear ou exponencial de cada caso.",
+      "independent_boundary": {
+        "anchor": [
+          70.93344116210938,
+          363.8933410644531,
+          141.85440063476562,
+          376.1146240234375
+        ],
+        "body_bbox": [
+          61.82,
+          363.8933410644531,
+          343.75,
+          541.8699951171875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 665.38330078125,
+        "physical_bottom_rule_y": 541.8699951171875,
+        "column": [
+          61.82,
+          343.75
+        ]
+      },
+      "cached_header_hint": {
+        "0": " PROPOSTAS DE ATIVIDADES\n● Estudo de Caso interpretando questões socioeconômicas, como: índice de desenvolvimento\nhumano, taxas de inflação, entre outros.\n● Utilização da metodologia Aprendizagem Baseada em Problemaspara interpretar taxas e índices\nde natureza socioeconômica, tais como: mortalidade infantil, moradia, desemprego, homicídio,\nacidentes de trânsitos, evasão escolar, suicídio, entre outros.\n● Aula expositiva e dialogada para analisar criticamente a realidade e produzir argumentos com\ntaxas e índices de natureza socioeconômica. ",
+        "1": "  COMPETÊNCIA ESPECÍFICA 3",
+        "2": "  ",
+        "3": "✔ Representação gráfica;\n✔ Representação algébrica;\n✔ Taxa de variação.  ",
+        "4": "  ",
+        "5": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "ac-cru-em",
+      "code": "EMIFCNT05",
+      "page": 407,
+      "cache_item_id": "ca:ac-cru-em:98a10f0a3cd029279826",
+      "finalized_id_if_retained": "ca:ac-cru-em:0d569e02f5f29b9e01bd",
+      "evidence_locator": "table:0/row:4/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 209,
+      "physical_expected_characters": 221,
+      "extracted_sha256": "1969418a677fb7053dad573160c69abcd2a289b216f1bfb975af22bd5b89f79a",
+      "physical_expected_sha256": "5d1c52178f8dbc49b0764e321617112129d22d73607e948b95c71ff34a192666",
+      "extracted_head": "Selecionar e mobilizar intencionalmente recursos criativos relacionados às Ciências da Natureza para resolver problemas reais do ambiente e da sociedade, explor",
+      "extracted_tail": "ionalmente recursos criativos relacionados às Ciências da Natureza para resolver problemas reais do ambiente e da sociedade, explorando e contrapondo diversas fontes de informação.",
+      "expected_tail": "Selecionar e mobilizar intencionalmente recursos criativos relacionados às Ciências da Natureza para resolver problemas reais do ambiente e da sociedade, explorando e contrapondo diversas fontes de informação. (EMIFCNT06)",
+      "extra_normalized_prefix": " (emifcnt06)",
+      "independent_boundary": {
+        "anchor": [
+          229.23944091796875,
+          636.943359375,
+          288.5352478027344,
+          649.1646118164062
+        ],
+        "body_bbox": [
+          220.49,
+          636.943359375,
+          543.7,
+          774.6959533691406
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 774.6959533691406,
+        "column": [
+          220.49,
+          543.7
+        ]
+      },
+      "cached_header_hint": {
+        "0": " CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS ",
+        "1": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    }
+  ],
+  "reader_failures": [],
+  "limits": [
+    "Ruled native columns only; unavailable geometry/anchors remain unverified, not absent.",
+    "Strict physical prefix candidates need role/documentary review. This is not SourceWhole reconciliation."
+  ],
+  "cache_sha256": "a6b7bfaa399272ba772af240fa1d8b083f79782df8dab07f3bf194364815d55a",
+  "cache_meta": {
+    "source_id": "ac-cru-em",
+    "sha256": "9ff75d1d5d9397aa145dccedd8023a01ed3b862692f58bb7d2cb2c84fc7602ad",
+    "extraction_revision": "page-cell-v1.5.0",
+    "page_count": 459,
+    "document_page_count": 459,
+    "items": 867,
+    "pages": 459,
+    "quality": {
+      "documentary_page_sections_not_typed_as_learning": 458,
+      "meaning": "Execution, code transcription and primary-document reconciliation are separate; OCR execution completion is not glyph or pedagogical verification. An OCR code-like token does not certify an official printed code.",
+      "ocr_execution_pending": false,
+      "ocr_transcription_review_pending": true,
+      "unassigned_ocr_code_tokens": 0,
+      "unresolved_ocr_code_like_records": 0,
+      "unresolved_printed_code_records": 0
+    },
+    "parser_fingerprint": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+  },
+  "primary_page_count": 459,
+  "cache_unchanged_after_audit": true
+}

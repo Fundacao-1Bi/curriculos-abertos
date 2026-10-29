@@ -1,0 +1,68 @@
+{
+  "header_counts": {
+    "component": 268,
+    "area": 242,
+    "professor": 269,
+    "method": 269,
+    "assessment": 269,
+    "code_table_header": 873,
+    "load_table_header": 39
+  },
+  "fields": 807,
+  "findings": [],
+  "next_roles": {
+    "professor→method": 269,
+    "method→assessment": 269,
+    "assessment→code_table_header": 269
+  },
+  "largest_fields": [
+    {
+      "page": 161,
+      "role": "method",
+      "chars": 2999,
+      "next": "assessment"
+    },
+    {
+      "page": 609,
+      "role": "assessment",
+      "chars": 2613,
+      "next": "code_table_header"
+    },
+    {
+      "page": 1638,
+      "role": "method",
+      "chars": 2536,
+      "next": "assessment"
+    },
+    {
+      "page": 1701,
+      "role": "method",
+      "chars": 2536,
+      "next": "assessment"
+    },
+    {
+      "page": 327,
+      "role": "method",
+      "chars": 2513,
+      "next": "assessment"
+    },
+    {
+      "page": 412,
+      "role": "method",
+      "chars": 2493,
+      "next": "assessment"
+    },
+    {
+      "page": 1435,
+      "role": "method",
+      "chars": 2486,
+      "next": "assessment"
+    },
+    {
+      "page": 688,
+      "role": "assessment",
+      "chars": 2462,
+      "next": "code_table_header"
+    }
+  ]
+}

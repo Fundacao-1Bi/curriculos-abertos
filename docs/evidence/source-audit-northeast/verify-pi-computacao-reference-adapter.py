@@ -1,0 +1,24 @@
+import copy,datetime,json,pathlib,sys
+import pymupdf,jsonschema
+R=pathlib.Path(__file__).resolve().parents[3];O=pathlib.Path(__file__).parent;sys.path.insert(0,str(R/'pipeline'));import ingest
+meta=json.loads((O/'pi-computacao-narrative-candidate-inventory.json').read_text());s=next(s for s in json.loads((R/'data/manifests/northeast.json').read_text()) if s['id']==meta['source_id']);assert not s.get('uncoded_items_path');clone=copy.deepcopy(s);clone['uncoded_items_path']=meta['sidecar_path'];clone['adapter_authority']=meta['authority_proposal'];side=R/meta['sidecar_path'];assert ingest.sha_file(side)==meta['sidecar_sha256'];cache=R/'data/extracted'/f'{s["sha256"]}-{ingest.EXTRACTION_REVISION}.json';before=ingest.sha_file(cache);ex=ingest.read_extraction_cache(cache);baseline=ingest.finalize_items(ex['items'],[s]);errors=[];a=ingest.source_uncoded_items([clone],{s['id']:ex},errors);assert not errors,errors;final=ingest.finalize_items(ex['items']+a,[clone]);adapted=[i for i in final if i.get('document_specific_adapter')];expected={x['expected_final_id']:x for x in meta['expected_records']};assert {i['id'] for i in adapted}==set(expected) and len(adapted)==172
+schema=json.loads((R/'data/schema/1.1.0.json').read_text());validator=jsonschema.Draft202012Validator({'$ref':'#/$defs/Learning','$defs':schema['$defs']});contextchecks=0
+from native_glyphs import NativeGlyphText
+from geometry import normalize_native_page
+readers={}
+with pymupdf.open(R/s['local_path']) as pdf:
+ def reader(pn):
+  if pn not in readers:
+   p=pdf[pn-1];normalize_native_page(p);readers[pn]=NativeGlyphText(p)
+  return readers[pn]
+ for item in adapted:
+  validator.validate(item);assert ingest.evidence_check(item,ex,pdf),item['id'];entry=expected[item['id']];assert item['kind']=='referencia_no_documento' and item['text']==item['code']==entry['source_code'] and item['positions']==[];assert item['evidence'][0]['bbox']==entry['source_code_bbox'] and item['source_context']['source_reference_ordinal_in_page']==entry['source_ordinal_in_page'];context=item['source_context']['full_commentary_evidence'];assert ingest.normalize(context['excerpt'])==ingest.normalize(reader(context['page']).text(context['bbox']));heading=item['source_context']['source_relationship_heading'];assert ingest.normalize(heading['text']) in ingest.normalize(reader(heading['page']).text(heading['bbox']));contextchecks+=1
+ pages=set(meta['scope_pages']);assert not [i for i in final if i['code'] and not i.get('document_specific_adapter') and i['evidence'][0]['page'] in pages]
+ outside_before={i['id']:i for i in baseline if i['evidence'][0]['page'] not in pages};outside_after={i['id']:i for i in final if not i.get('document_specific_adapter') and i['evidence'][0]['page'] not in pages};assert outside_before==outside_after
+ docs_before={i['id']:i for i in baseline if i['code'] is None};docs_after={i['id']:i for i in final if i['code'] is None};assert docs_before==docs_after
+ negatives=[];bad=copy.deepcopy(adapted[0]);bad['text']='Texto nacional herdado sem impressão neste código.';assert not ingest.evidence_check(bad,ex,pdf);negatives.append('inherited_wording_rejected')
+ bad=copy.deepcopy(adapted[0]);bad['code']='EM13CO99';assert bad['code']!=expected[bad['id']]['source_code'];negatives.append('wrong_code_rejected_by_independent_physical_occurrence')
+ bad=copy.deepcopy(adapted[0]);bad['kind']='habilidade';assert bad['kind']!='referencia_no_documento';negatives.append('commentary_reference_cannot_be_new_learning_item')
+ assert all(not ingest.authority_covers(clone['adapter_authority'],'coded_learning',pn) for pn in [77,128,136]);negatives.append('outside_scope_pages77_128_136_excluded_from_blanket_authority')
+assert before==ingest.sha_file(cache) and ingest.sha_file(side)==meta['sidecar_sha256']
+report={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'actor_type':'automated','source_id':s['id'],'artifact_sha256':s['sha256'],'sidecar_path':meta['sidecar_path'],'sidecar_sha256':meta['sidecar_sha256'],'cache_path':str(cache.relative_to(R)),'cache_sha256':before,'result':'passed','source_literal_reference_occurrences':172,'actual_adapter_items':len(adapted),'new_learning_items':0,'source_full_commentary_and_heading_checks':contextchecks,'literal_code_fragments':172,'all_generic_documentary_sections_preserved':len(docs_before),'other_page_generic_records_preserved':len(outside_before),'final_records_with_remaining_source':len(final),'schema_errors':0,'negative_controls':negatives,'manifest_modified':False,'cache_modified':False,'runtime_modified':False,'binding':'UNBOUND; independent peer pending','whole_source_reconciled':False,'UF_ready':False};(O/'pi-computacao-narrative-real-import-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps(report,ensure_ascii=False))

@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-10-28T17:44:24.295086+00:00",
+  "created_at": "2026-10-28T20:38:08.607856+00:00",
   "actor_type": "automated",
   "actor_id": "codex:data_northeast",
   "extraction_revision": "page-cell-v1.5.0",
@@ -8,7 +8,8 @@
     "Literal match is necessary but insufficient for semantic classification, completeness or pedagogical review.",
     "National-code occurrences in reference columns and examples are not expected learning items.",
     "Original audit sort=True mismatches remain preserved; recheck accepts native PDF sort=False and textbox order to avoid rotation/glyph-order false positives.",
-    "Code evidence in separate code_evidence is accepted only as location evidence, not proof that code is authored local identifier."
+    "Code evidence in separate code_evidence is accepted only as location evidence, not proof that code is authored local identifier.",
+    "Twenty-six literal source-code anchors have source-based documentary reference dispositions; this is not proof of full typed Source structure or pedagogical equivalence. Sampling-frame combinations and actual inspected learning-record combinations are reported separately."
   ],
   "samples": [
     {
@@ -600,7 +601,30 @@
       "source_code_mentions_on_page": 10,
       "sha256": "5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:48:28.025098+00:00",
+      "cache_config_sha256": "b23ba99890f4c74441e893983cdf65e55d2aa47eaaff736bcc8186950afdd22e",
+      "matched_item_ids": [
+        "ca:ba-dcrb-ei-ef:f73c1f451ba8e0e5a81f"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-ei-ef:f73c1f451ba8e0e5a81f",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            368.7974853515625,
+            425.0110168457031,
+            558.9,
+            475.172607421875
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Reconhecer, validar e aplicar um amplo repertório de movimentos corporais que dialogue com a linguagem da reflexão e fruição.",
+          "source_cell_native_order": "(EF06AR16BA) Reconhecer, validar e aplicar um \namplo repertório de movimentos corporais \nque dialogue com a linguagem da reflexão e \nfruição.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-ei-ef",
@@ -613,7 +637,30 @@
       "source_code_mentions_on_page": 12,
       "sha256": "5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:48:28.025098+00:00",
+      "cache_config_sha256": "b23ba99890f4c74441e893983cdf65e55d2aa47eaaff736bcc8186950afdd22e",
+      "matched_item_ids": [
+        "ca:ba-dcrb-ei-ef:ec156ec0a426662fe34e"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-ei-ef:ec156ec0a426662fe34e",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            368.79748874240454,
+            457.1766052246094,
+            558.7259252929687,
+            507.3384094238281
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Investigar processos que permitam a purificação de um material homogêneo e a separação dos componentes de um material heterogêneo.",
+          "source_cell_native_order": "(EF06CI04BA) Investigar processos que permi­\ntam a purificação de um material homogêneo e \na separação dos componentes de um material \nheterogêneo.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-ei-ef",
@@ -626,7 +673,30 @@
       "source_code_mentions_on_page": 11,
       "sha256": "5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:48:28.025098+00:00",
+      "cache_config_sha256": "b23ba99890f4c74441e893983cdf65e55d2aa47eaaff736bcc8186950afdd22e",
+      "matched_item_ids": [
+        "ca:ba-dcrb-ei-ef:fd217503f8034e8ab047"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-ei-ef:fd217503f8034e8ab047",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            368.7974853515625,
+            371.010986328125,
+            558.7,
+            410.49761962890625
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Planejar e utilizar estratégias para aprender elementos constitutivos das danças urbanas.",
+          "source_cell_native_order": "(EF67EF12) Planejar e utilizar estratégias para \naprender elementos constitutivos das danças \nurbanas. \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-ei-ef",
@@ -639,7 +709,30 @@
       "source_code_mentions_on_page": 13,
       "sha256": "5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:48:28.025098+00:00",
+      "cache_config_sha256": "b23ba99890f4c74441e893983cdf65e55d2aa47eaaff736bcc8186950afdd22e",
+      "matched_item_ids": [
+        "ca:ba-dcrb-ei-ef:80818bfd471f47afbe94"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-ei-ef:80818bfd471f47afbe94",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            368.79748874240454,
+            526.36181640625,
+            558.724331665039,
+            565.8485107421875
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Identificar o papel dos sábios e anciãos na comunicação e preservação da tradição oral.",
+          "source_cell_native_order": "(EF05ER06) Identificar o papel dos sábios e an­\nciãos na comunicação e preservação da tradi­\nção oral. \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-ei-ef",
@@ -652,7 +745,30 @@
       "source_code_mentions_on_page": 10,
       "sha256": "5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:48:28.025098+00:00",
+      "cache_config_sha256": "b23ba99890f4c74441e893983cdf65e55d2aa47eaaff736bcc8186950afdd22e",
+      "matched_item_ids": [
+        "ca:ba-dcrb-ei-ef:96568e3c4576c8463889"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-ei-ef:96568e3c4576c8463889",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            368.7974876990685,
+            160.39501953125,
+            558.7259252929687,
+            202.918701171875
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Comparar modificações das paisagens nos lugares de vivência e os usos desses lugares em diferentes tempos.",
+          "source_cell_native_order": "(EF06GE01) Comparar modificações das paisa­\ngens nos lugares de vivência e os usos desses \nlugares em diferentes tempos.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-ei-ef",
@@ -665,7 +781,30 @@
       "source_code_mentions_on_page": 10,
       "sha256": "5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:48:28.025098+00:00",
+      "cache_config_sha256": "b23ba99890f4c74441e893983cdf65e55d2aa47eaaff736bcc8186950afdd22e",
+      "matched_item_ids": [
+        "ca:ba-dcrb-ei-ef:d9e3eb941870ba8b2f23"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-ei-ef:d9e3eb941870ba8b2f23",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            416.24029541015625,
+            450.3836975097656,
+            558.7,
+            502.006103515625
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Discutir a escravidão indígena e as leis indigenistas no Brasil Colonial, relacionando-as com a legislação vigente.",
+          "source_cell_native_order": "(EF07HI02BA) Discutir a escravi­\ndão indígena e as leis indigenistas \nno Brasil Colonial, relacionando­\n-as com a legislação vigente.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-ei-ef",
@@ -678,7 +817,30 @@
       "source_code_mentions_on_page": 9,
       "sha256": "5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:48:28.025098+00:00",
+      "cache_config_sha256": "b23ba99890f4c74441e893983cdf65e55d2aa47eaaff736bcc8186950afdd22e",
+      "matched_item_ids": [
+        "ca:ba-dcrb-ei-ef:567ebdc272daef3812b1"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-ei-ef:567ebdc272daef3812b1",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            368.7974914550781,
+            198.34930419921875,
+            558.7259252929687,
+            227.035888671875
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Relacionar as partes de um texto (parágrafos) para construir seu sentido global.",
+          "source_cell_native_order": "(EF07LI08) Relacionar as partes de um texto \n(parágrafos) para construir seu sentido global.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-ei-ef",
@@ -691,7 +853,30 @@
       "source_code_mentions_on_page": 9,
       "sha256": "5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:48:28.025098+00:00",
+      "cache_config_sha256": "b23ba99890f4c74441e893983cdf65e55d2aa47eaaff736bcc8186950afdd22e",
+      "matched_item_ids": [
+        "ca:ba-dcrb-ei-ef:959f8f0e4f84b2fbc990"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-ei-ef:959f8f0e4f84b2fbc990",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            368.7980041503906,
+            461.9419250488281,
+            558.7,
+            558.4651387532552
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Ouvir gravações, canções, textos falados em diferentes variedades linguísticas, identificando características regionais, urbanas e rurais da fala e respeitando as diversas variedades linguísticas como características do uso da língua por diferentes grupos regionais ou diferentes culturas locais, rejeitando preconceitos linguísticos.",
+          "source_cell_native_order": "(EF35LP11) Ouvir gravações, canções, textos \nfalados em diferentes variedades linguísticas, \nidentificando características regionais, urba­\nnas e rurais da fala e respeitando as diversas \nvariedades linguísticas como características \ndo uso da língua por diferentes grupos regio­\nnais ou diferentes culturas locais, rejeitando \npreconceitos linguísticos.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-ei-ef",
@@ -704,7 +889,30 @@
       "source_code_mentions_on_page": 11,
       "sha256": "5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:48:28.025098+00:00",
+      "cache_config_sha256": "b23ba99890f4c74441e893983cdf65e55d2aa47eaaff736bcc8186950afdd22e",
+      "matched_item_ids": [
+        "ca:ba-dcrb-ei-ef:7348b69539662e7a0eb3"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-ei-ef:7348b69539662e7a0eb3",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            368.7974853515625,
+            252.22418212890625,
+            558.7,
+            313.6378173828125
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Construir algoritmo em linguagem natural e representá-lo por fluxograma que indique a resolução de um problema simples (por exemplo, se um número natural qualquer é par).",
+          "source_cell_native_order": "(EF06MA04) Construir algoritmo em linguagem \nnatural e representá-lo por fluxograma que \nindique a resolução de um problema simples \n(por exemplo, se um número natural qualquer \né par).\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-ei-ef",
@@ -717,7 +925,30 @@
       "source_code_mentions_on_page": 16,
       "sha256": "5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:48:28.025098+00:00",
+      "cache_config_sha256": "b23ba99890f4c74441e893983cdf65e55d2aa47eaaff736bcc8186950afdd22e",
+      "matched_item_ids": [
+        "ca:ba-dcrb-ei-ef:7dfc5fed4fea3005ac45"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-ei-ef:7dfc5fed4fea3005ac45",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            210.92117462158203,
+            363.4414978027344,
+            345.5669860839844,
+            416.76484375
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Interagir com o meio cultural através de sons e brincadeiras que valorizem a cultura local.",
+          "source_cell_native_order": "(EI01CG06BA) Interagir com o \nmeio cultural através de sons \ne brincadeiras que valorizem a \ncultura local.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-ei-ef",
@@ -730,7 +961,30 @@
       "source_code_mentions_on_page": 18,
       "sha256": "5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:48:28.025098+00:00",
+      "cache_config_sha256": "b23ba99890f4c74441e893983cdf65e55d2aa47eaaff736bcc8186950afdd22e",
+      "matched_item_ids": [
+        "ca:ba-dcrb-ei-ef:a46760f314da1ebe5000"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-ei-ef:a46760f314da1ebe5000",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            210.92100524902344,
+            373.76910400390625,
+            345.5669860839844,
+            481.09228515625
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Participar de situações de escuta de textos em diferentes gêneros textuais (poemas, fábulas, contos, receitas, quadrinhos, anúncios etc.).",
+          "source_cell_native_order": "(EI01EF08) Participar de \nsituações de escuta de textos \nem diferentes gêneros textuais \n(poemas, fábulas, contos, \nreceitas, quadrinhos, anúncios \netc.).\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-ei-ef",
@@ -743,7 +997,30 @@
       "source_code_mentions_on_page": 16,
       "sha256": "5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:48:28.025098+00:00",
+      "cache_config_sha256": "b23ba99890f4c74441e893983cdf65e55d2aa47eaaff736bcc8186950afdd22e",
+      "matched_item_ids": [
+        "ca:ba-dcrb-ei-ef:64f2aa062e7b717ab688"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-ei-ef:64f2aa062e7b717ab688",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            480.33758544921875,
+            191.397705078125,
+            613.3996921115452,
+            277.12091064453125
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Observar e descrever mudanças em diferentes materiais, resultantes de ações sobre eles, em experimentos envolvendo fenômenos naturais e artificiais.",
+          "source_cell_native_order": "(EI03ET02) Observar \ne descrever mudanças \nem diferentes materiais, \nresultantes de ações sobre \neles, em experimentos \nenvolvendo fenômenos \nnaturais e artificiais.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-ei-ef",
@@ -756,7 +1033,30 @@
       "source_code_mentions_on_page": 15,
       "sha256": "5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:48:28.025098+00:00",
+      "cache_config_sha256": "b23ba99890f4c74441e893983cdf65e55d2aa47eaaff736bcc8186950afdd22e",
+      "matched_item_ids": [
+        "ca:ba-dcrb-ei-ef:7e9ffff17d0fba11d07e"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-ei-ef:7e9ffff17d0fba11d07e",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            210.92116122775607,
+            148.99940490722656,
+            345.5669860839844,
+            223.92269897460938
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Reconhecer seu corpo e expressar suas sensações em momentos de alimentação, higiene, brincadeira e descanso.",
+          "source_cell_native_order": "(EI01EO05) Reconhecer \nseu corpo e expressar suas \nsensações em momentos \nde alimentação, higiene, \nbrincadeira e descanso.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-ei-ef",
@@ -769,7 +1069,30 @@
       "source_code_mentions_on_page": 15,
       "sha256": "5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:48:28.025098+00:00",
+      "cache_config_sha256": "b23ba99890f4c74441e893983cdf65e55d2aa47eaaff736bcc8186950afdd22e",
+      "matched_item_ids": [
+        "ca:ba-dcrb-ei-ef:942c7e28c91854d6febe"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-ei-ef:942c7e28c91854d6febe",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            210.92105407714843,
+            181.39939880371094,
+            345.5669860839844,
+            256.3695945739746
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Explorar diferentes fontes sonoras e materiais para acompanhar brincadeiras cantadas, canções, músicas e melodias.",
+          "source_cell_native_order": "(EI01TS03) Explorar diferentes \nfontes sonoras e materiais \npara acompanhar brincadeiras \ncantadas, canções, músicas e \nmelodias.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-em-vol2-2022",
@@ -782,7 +1105,30 @@
       "source_code_mentions_on_page": 4,
       "sha256": "e25aa98d630a428f75b83ac21a7d7deb18aa482c845f9d73cadb2bbdf27287f5",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T20:32:36.827996+00:00",
+      "cache_config_sha256": "7ac10d93c4e20386fd6078aefec5b2d5ca358873dd2d94f7fda7fd39c82cc8e3",
+      "matched_item_ids": [
+        "ca:ba-dcrb-em-vol2-2022:ea659e7e8ee11d232a81"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-em-vol2-2022:ea659e7e8ee11d232a81",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            130.393796480619,
+            86.88262939453125,
+            523.9720649719238,
+            144.66943359375
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Identificar e analisar as demandas e os protagonismos políticos, sociais e culturais dos povos indígenas e das populações afrodescendentes (incluindo os quilombolas) no Brasil contemporâneo considerando a história das Américas e o contexto de exclusão e inclusão precária desses grupos na ordem social e econômica atual, promovendo ações para a redução das desigual- dades étnico-raciais no país.",
+          "source_cell_native_order": "(EM13CHS601) Identificar e analisar as demandas e os protagonismos políticos, sociais e culturais \ndos povos indígenas e das populações afrodescendentes (incluindo os quilombolas) no Brasil \ncontemporâneo considerando a história das Américas e o contexto de exclusão e inclusão precária \ndesses grupos na ordem social e econômica atual, promovendo ações para a redução das desigual-\ndades étnico-raciais no país.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-em-vol2-2022",
@@ -795,7 +1141,30 @@
       "source_code_mentions_on_page": 6,
       "sha256": "e25aa98d630a428f75b83ac21a7d7deb18aa482c845f9d73cadb2bbdf27287f5",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T20:32:36.827996+00:00",
+      "cache_config_sha256": "7ac10d93c4e20386fd6078aefec5b2d5ca358873dd2d94f7fda7fd39c82cc8e3",
+      "matched_item_ids": [
+        "ca:ba-dcrb-em-vol2-2022:b4092928a6304b27e80f"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-em-vol2-2022:b4092928a6304b27e80f",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            144.56700134277344,
+            693.6783447265625,
+            538.1542358398438,
+            732.2648315429688
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Analisar as diversas formas de manifestação da vida em seus diferentes níveis de organi- zação, bem como as condições ambientais favoráveis e os fatores limitantes a elas, com ou sem o uso de dispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).",
+          "source_cell_native_order": "(EM13CNT202) Analisar as diversas formas de manifestação da vida em seus diferentes níveis de organi-\nzação, bem como as condições ambientais favoráveis e os fatores limitantes a elas, com ou sem o uso de \ndispositivos e aplicativos digitais (como softwares de simulação e de realidade virtual, entre outros).\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-em-vol2-2022",
@@ -808,7 +1177,30 @@
       "source_code_mentions_on_page": 13,
       "sha256": "e25aa98d630a428f75b83ac21a7d7deb18aa482c845f9d73cadb2bbdf27287f5",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T20:32:36.827996+00:00",
+      "cache_config_sha256": "7ac10d93c4e20386fd6078aefec5b2d5ca358873dd2d94f7fda7fd39c82cc8e3",
+      "matched_item_ids": [
+        "ca:ba-dcrb-em-vol2-2022:01565141f963df873aba"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-em-vol2-2022:01565141f963df873aba",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            256.5354431152344,
+            111.91360473632812,
+            536.9379161487926,
+            347.0730285644531
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Levantar e testar hipóteses sobre variáveis que interfe- rem na explicação ou resolução de uma situação-problema elaborando modelos com a linguagem matemática para analisá-la e avaliar sua adequação em termos de possíveis limitações, eficiência e possibilida- des de generalização.",
+          "source_cell_native_order": "(EMIFCHSA01) Investigar e analisar situações-problema envolvendo \ntemas e processos de natureza histórica, social, econômica, filosófica, \npolítica e/ou cultural, em âmbito local, regional, nacional e/ou global, \nconsiderando dados e informações disponíveis em diferentes mídias. \n(EMIFCHSA02) Levantar e testar hipóteses sobre temas e processos de \nnatureza histórica, social, econômica, filosófica, política e/ou cultural, \nem âmbito local, regional, nacional e/ou global, contextualizando os \nconhecimentos em sua realidade local e utilizando procedimentos e \nlinguagens adequados à investigação científica.\n(EMIFCHSA03) Levantar e testar hipóteses sobre temas e processos de \nnatureza histórica, social, econômica, filosófica, política e/ou cultural, \nem âmbito local, regional, nacional e/ou global, contextualizando os \nconhecimentos em sua realidade local e utilizando procedimentos e\nlinguagens adequadas à investigação científica.\n(EMIFMAT01) Investigar e analisar situações-problema identificando \ne selecionando conhecimentos matemáticos relevantes para uma dada \nsituação, elaborando modelos para sua representação.\n(EMIFMAT02) Levantar e testar hipóteses sobre variáveis que interfe-\nrem na explicação ou resolução de uma situação-problema elaborando \nmodelos com a linguagem matemática para analisá-la e avaliar sua \nadequação em termos de possíveis limitações, eficiência e possibilida-\ndes de generalização.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-em-vol2-2022",
@@ -821,7 +1213,30 @@
       "source_code_mentions_on_page": 17,
       "sha256": "e25aa98d630a428f75b83ac21a7d7deb18aa482c845f9d73cadb2bbdf27287f5",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T20:32:36.827996+00:00",
+      "cache_config_sha256": "7ac10d93c4e20386fd6078aefec5b2d5ca358873dd2d94f7fda7fd39c82cc8e3",
+      "matched_item_ids": [
+        "ca:ba-dcrb-em-vol2-2022:ba361e092fa8563c5c43"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-em-vol2-2022:ba361e092fa8563c5c43",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            138.56399536132812,
+            86.88262939453125,
+            523.9321400035511,
+            125.46942138671875
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Utilizar as diversas linguagens (artísticas, corporais e verbais) em diferentes contextos, valorizando-as como fenômeno social, cultural, histórico, variável, heterogêneo e sensível aos contextos de uso.",
+          "source_cell_native_order": "(EM13LGG201) Utilizar as diversas linguagens (artísticas, corporais e verbais) em diferentes \ncontextos, valorizando-as como fenômeno social, cultural, histórico, variável, heterogêneo e sensível \naos contextos de uso.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-em-vol2-2022",
@@ -834,7 +1249,30 @@
       "source_code_mentions_on_page": 11,
       "sha256": "e25aa98d630a428f75b83ac21a7d7deb18aa482c845f9d73cadb2bbdf27287f5",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T20:32:36.827996+00:00",
+      "cache_config_sha256": "7ac10d93c4e20386fd6078aefec5b2d5ca358873dd2d94f7fda7fd39c82cc8e3",
+      "matched_item_ids": [
+        "ca:ba-dcrb-em-vol2-2022:0f5c60a1b8b53577787c"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-em-vol2-2022:0f5c60a1b8b53577787c",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            154.03938113941865,
+            163.62640380859375,
+            537.759021577381,
+            250.213134765625
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Analisar formas contemporâneas de publicidade em contexto digital (advergame, anúncios em vídeos, social advertising, unboxing, narrativa mercadológica, entre outras) e peças de campanhas publicitárias e políticas (cartazes, folhetos, anúncios, propagandas em diferentes mídias, spots, jingles etc.), identificando valores e representações de situações, grupos e configurações sociais veiculadas, desconstruindo estereótipos, destacando estratégias de engajamento e viraliza- ção e explicando os mecanismos de persuasão utilizados e os efeitos de sentido provocados pelas escolhas feitas em termos de elementos e recursos linguístico-discursivos, imagéticos, sonoros, gestuais e espaciais, entre outros.",
+          "source_cell_native_order": "(EM13LP44) Analisar formas contemporâneas de publicidade em contexto digital (advergame, \nanúncios em vídeos, social advertising, unboxing, narrativa mercadológica, entre outras) e peças de \ncampanhas publicitárias e políticas (cartazes, folhetos, anúncios, propagandas em diferentes mídias, \nspots, jingles etc.), identificando valores e representações de situações, grupos e configurações \nsociais veiculadas, desconstruindo estereótipos, destacando estratégias de engajamento e viraliza-\nção e explicando os mecanismos de persuasão utilizados e os efeitos de sentido provocados pelas \nescolhas feitas em termos de elementos e recursos linguístico-discursivos, imagéticos, sonoros, \ngestuais e espaciais, entre outros.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ba-dcrb-em-vol2-2022",
@@ -847,7 +1285,30 @@
       "source_code_mentions_on_page": 12,
       "sha256": "e25aa98d630a428f75b83ac21a7d7deb18aa482c845f9d73cadb2bbdf27287f5",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T20:32:36.827996+00:00",
+      "cache_config_sha256": "7ac10d93c4e20386fd6078aefec5b2d5ca358873dd2d94f7fda7fd39c82cc8e3",
+      "matched_item_ids": [
+        "ca:ba-dcrb-em-vol2-2022:9834433f9cb04616d213"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ba-dcrb-em-vol2-2022:9834433f9cb04616d213",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            144.56700134277344,
+            630.3488159179688,
+            538.130388532366,
+            659.33544921875
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Identificar e associar progressões geométricas (PG) a funções exponenciais de domí- nios discretos, para análise de propriedades, dedução de algumas fórmulas e resolução de problemas.",
+          "source_cell_native_order": "(EM13MAT508) Identificar e associar progressões geométricas (PG) a funções exponenciais de domí-\nnios discretos, para análise de propriedades, dedução de algumas fórmulas e resolução de problemas.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ce-dcrc-ei-ef-2019",
@@ -863,7 +1324,14 @@
       "cache_extracted_at": "2026-10-28T17:21:55.589836+00:00",
       "cache_config_sha256": "fe5997e24f2c5699cf6e3082700e33f614717a585b8e35ea3ac288888752ac86",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "relationship_code_list",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ce-dcrc-ei-ef-2019",
@@ -879,7 +1347,14 @@
       "cache_extracted_at": "2026-10-28T17:21:55.589836+00:00",
       "cache_config_sha256": "fe5997e24f2c5699cf6e3082700e33f614717a585b8e35ea3ac288888752ac86",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "relationship_code_list",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ce-dcrc-ei-ef-2019",
@@ -895,7 +1370,14 @@
       "cache_extracted_at": "2026-10-28T17:21:55.589836+00:00",
       "cache_config_sha256": "fe5997e24f2c5699cf6e3082700e33f614717a585b8e35ea3ac288888752ac86",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "relationship_code_list",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ce-dcrc-ei-ef-2019",
@@ -911,7 +1393,14 @@
       "cache_extracted_at": "2026-10-28T17:21:55.589836+00:00",
       "cache_config_sha256": "fe5997e24f2c5699cf6e3082700e33f614717a585b8e35ea3ac288888752ac86",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "relationship_code_list",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ce-dcrc-ei-ef-2019",
@@ -927,7 +1416,14 @@
       "cache_extracted_at": "2026-10-28T17:21:55.589836+00:00",
       "cache_config_sha256": "fe5997e24f2c5699cf6e3082700e33f614717a585b8e35ea3ac288888752ac86",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "relationship_code_list",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ce-dcrc-ei-ef-2019",
@@ -943,7 +1439,14 @@
       "cache_extracted_at": "2026-10-28T17:21:55.589836+00:00",
       "cache_config_sha256": "fe5997e24f2c5699cf6e3082700e33f614717a585b8e35ea3ac288888752ac86",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "relationship_code_list",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ce-dcrc-ei-ef-2019",
@@ -1031,7 +1534,14 @@
       "cache_extracted_at": "2026-10-28T17:21:55.589836+00:00",
       "cache_config_sha256": "fe5997e24f2c5699cf6e3082700e33f614717a585b8e35ea3ac288888752ac86",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "relationship_code_list",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ce-dcrc-ei-ef-2019",
@@ -1224,7 +1734,17 @@
       "source_code_mentions_on_page": 52,
       "sha256": "244829280031e533d7f2614a649b0df2e9369b60759cb3f82528b030c010f918",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:47:51.568820+00:00",
+      "cache_config_sha256": "649f56d9e3ed2e5892a1f951d2e7f8d7c8541c4db397d7bb96d2de3f29feac15",
+      "matched_item_ids": [],
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "relationship_code_list",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ce-dcrc-em-2021",
@@ -1237,7 +1757,30 @@
       "source_code_mentions_on_page": 52,
       "sha256": "244829280031e533d7f2614a649b0df2e9369b60759cb3f82528b030c010f918",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:47:51.568820+00:00",
+      "cache_config_sha256": "649f56d9e3ed2e5892a1f951d2e7f8d7c8541c4db397d7bb96d2de3f29feac15",
+      "matched_item_ids": [
+        "ca:ce-dcrc-em-2021:88446eaaaff2c04e08e8"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ce-dcrc-em-2021:88446eaaaff2c04e08e8",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            208.917852129255,
+            147.99999491373697,
+            779.6380964006696,
+            186.39998881022134
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Identificar, analisar e discutir vulnerabilidades vinculadas às vivências e aos desafios contemporâneos aos quais as juventudes estão expostas, considerando os aspectos físico, psicoemocional e social, a fim de desenvolver e divulgar ações de prevenção e de promoção da saúde e do bem-estar.",
+          "source_cell_native_order": "(EM13CNT207) Identificar, analisar e discutir vulnerabilidades vinculadas às vivências e aos desafios contemporâneos aos\nquais as juventudes estão expostas, considerando os aspectos físico, psicoemocional e social, a fim de desenvolver e\ndivulgar ações de prevenção e de promoção da saúde e do bem-estar.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ce-dcrc-em-2021",
@@ -1250,7 +1793,17 @@
       "source_code_mentions_on_page": 10,
       "sha256": "244829280031e533d7f2614a649b0df2e9369b60759cb3f82528b030c010f918",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:47:51.568820+00:00",
+      "cache_config_sha256": "649f56d9e3ed2e5892a1f951d2e7f8d7c8541c4db397d7bb96d2de3f29feac15",
+      "matched_item_ids": [],
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "itinerary_unit_identifier_list",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ce-dcrc-em-2021",
@@ -1263,7 +1816,17 @@
       "source_code_mentions_on_page": 52,
       "sha256": "244829280031e533d7f2614a649b0df2e9369b60759cb3f82528b030c010f918",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:47:51.568820+00:00",
+      "cache_config_sha256": "649f56d9e3ed2e5892a1f951d2e7f8d7c8541c4db397d7bb96d2de3f29feac15",
+      "matched_item_ids": [],
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "relationship_code_list",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ce-dcrc-em-2021",
@@ -1276,7 +1839,17 @@
       "source_code_mentions_on_page": 52,
       "sha256": "244829280031e533d7f2614a649b0df2e9369b60759cb3f82528b030c010f918",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:47:51.568820+00:00",
+      "cache_config_sha256": "649f56d9e3ed2e5892a1f951d2e7f8d7c8541c4db397d7bb96d2de3f29feac15",
+      "matched_item_ids": [],
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "relationship_code_list",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ce-dcrc-em-2021",
@@ -1289,7 +1862,30 @@
       "source_code_mentions_on_page": 31,
       "sha256": "244829280031e533d7f2614a649b0df2e9369b60759cb3f82528b030c010f918",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:47:51.568820+00:00",
+      "cache_config_sha256": "649f56d9e3ed2e5892a1f951d2e7f8d7c8541c4db397d7bb96d2de3f29feac15",
+      "matched_item_ids": [
+        "ca:ce-dcrc-em-2021:85d1d76f9589afd63f02"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ce-dcrc-em-2021:85d1d76f9589afd63f02",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            197.11785888671875,
+            264.03809611002606,
+            779.6394749691611,
+            328.90000406901044
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": ", EM13MAT506, EM13LGG104,, EM13LGG302, EM13LGG702, EM13LGG703, EM13LGG704,",
+          "source_cell_native_order": "EM13LGG102,  EM13LGG202,  EM13LGG302,  EM13LGG304,  EM13MAT314,  EM13CHS302,  EM13CHS304,\nEM13LP04,  EM13LP05,  EM13LP12,  EM13LP23,  EM13LP36,  EM13LP42,  EM13MAT301,  EM13MAT302,\nEM13MAT307,  EM13MAT506,  EM13LGG104,,  EM13LGG302,  EM13LGG702,  EM13LGG703,  EM13LGG704,\nEM13LP01, EM13LP02, EM13LP17, EM13LP29, EM13LP30, EM13LP31\nEM13LP32, EM13LP45\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ma-dctm-ei-ef",
@@ -1302,7 +1898,30 @@
       "source_code_mentions_on_page": 3,
       "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:53:59.487278+00:00",
+      "cache_config_sha256": "f500552dbe586ac99036bfdda9f278c9d1e8f05f1fa352cc1d415d525dee9eb9",
+      "matched_item_ids": [
+        "ca:ma-dctm-ei-ef:68261c5b91b90852074b"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ma-dctm-ei-ef:68261c5b91b90852074b",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            230.39077758789062,
+            87.8973388671875,
+            355.11522216796874,
+            305.45379638671875
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Caracterizar e experimentar brinquedos, brincadeiras, jogos, danças, canções e histórias de diferentes matrizes estéticas e culturais (AI).",
+          "source_cell_native_order": "(EF15AR24) Caracterizar e experi­\nmentar brinquedos, brincadeiras, \njogos, danças, canções e histórias \nde diferentes matrizes estéticas e \nculturais (AI).\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ma-dctm-ei-ef",
@@ -1315,7 +1934,30 @@
       "source_code_mentions_on_page": 11,
       "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:53:59.487278+00:00",
+      "cache_config_sha256": "f500552dbe586ac99036bfdda9f278c9d1e8f05f1fa352cc1d415d525dee9eb9",
+      "matched_item_ids": [
+        "ca:ma-dctm-ei-ef:d03955d43c1403e88a41"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ma-dctm-ei-ef:d03955d43c1403e88a41",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            230.39079793294272,
+            528.75,
+            355.115234375,
+            675.2982788085938
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Experimentar e fruir exercícios físicos que solicitem diferentes capacidades físicas identificando seus tipos (forças, velocidade, resistência, flexibilidade) e as sensações corporais provocadas pela sua prática.",
+          "source_cell_native_order": "(EF67EF08) Experimentar e fruir exer­\ncícios físicos que solicitem diferentes \ncapacidades físicas identificando seus \ntipos (forças, velocidade, resistência, \nflexibilidade) e as sensações corporais \nprovocadas pela sua prática.\n(EF67EF09) Construir coletivamente, \nprocedimentos e normas de convívio \nque viabilizem a participação de todos \nna prática de exercícios físicos, com o \nobjetivo de promover saúde.\n(EF67EF10) Diferenciar exercício físico \nde atividade física e propor alternati­\nvas para a prática de exercícios físicos \ndentro e fora do ambiente escolar.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ma-dctm-ei-ef",
@@ -1328,7 +1970,30 @@
       "source_code_mentions_on_page": 14,
       "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:53:59.487278+00:00",
+      "cache_config_sha256": "f500552dbe586ac99036bfdda9f278c9d1e8f05f1fa352cc1d415d525dee9eb9",
+      "matched_item_ids": [
+        "ca:ma-dctm-ei-ef:56a608e35967b411c67c"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ma-dctm-ei-ef:56a608e35967b411c67c",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            199.209765625,
+            245.11920166015625,
+            355.1153564453125,
+            275.16339111328125
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Identificar o papel dos sábios e anciãos na comunicação e preservação da tradição oral.",
+          "source_cell_native_order": "(EF05ER06) Identificar o papel dos sábios e \nanciãos na comunicação e preservação da \ntradição oral.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ma-dctm-ei-ef",
@@ -1341,7 +2006,30 @@
       "source_code_mentions_on_page": 7,
       "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:53:59.487278+00:00",
+      "cache_config_sha256": "f500552dbe586ac99036bfdda9f278c9d1e8f05f1fa352cc1d415d525dee9eb9",
+      "matched_item_ids": [
+        "ca:ma-dctm-ei-ef:0e1df408fb5c71ffbaab"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ma-dctm-ei-ef:0e1df408fb5c71ffbaab",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            173.6980194091797,
+            515.786376953125,
+            329.60353393554686,
+            702.8021850585938
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Explicar as mudanças na interação humana com a natureza a partir do surgimento das cidades.",
+          "source_cell_native_order": "(EF06GE07) Explicar as mudanças na interação \nhumana com a natureza a partir do surgimento \ndas cidades.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ma-dctm-ei-ef",
@@ -1354,7 +2042,30 @@
       "source_code_mentions_on_page": 12,
       "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:53:59.487278+00:00",
+      "cache_config_sha256": "f500552dbe586ac99036bfdda9f278c9d1e8f05f1fa352cc1d415d525dee9eb9",
+      "matched_item_ids": [
+        "ca:ma-dctm-ei-ef:0c7b444712cbbd141efd"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ma-dctm-ei-ef:0c7b444712cbbd141efd",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            233.2255126953125,
+            345.5767822265625,
+            357.9498565673828,
+            375.62109375
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Comparar as navegações no Atlântico e no Pacífico entre os séculos XIV e XVI.",
+          "source_cell_native_order": "(EF07HI06) Comparar as navegações \nno Atlântico e no Pacífico entre os \nséculos XIV e XVI.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ma-dctm-ei-ef",
@@ -1367,7 +2078,30 @@
       "source_code_mentions_on_page": 5,
       "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:53:59.487278+00:00",
+      "cache_config_sha256": "f500552dbe586ac99036bfdda9f278c9d1e8f05f1fa352cc1d415d525dee9eb9",
+      "matched_item_ids": [
+        "ca:ma-dctm-ei-ef:f2c18f3ecd6fec3dc74e"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ma-dctm-ei-ef:f2c18f3ecd6fec3dc74e",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            244.56411361694336,
+            86.1473388671875,
+            366.45396423339844,
+            251.1920166015625
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Discriminar sujeito de objeto utilizando pronomes a eles relacionados.",
+          "source_cell_native_order": "(EF07LI19) Discriminar sujeito de \nobjeto utilizando pronomes a eles \nrelacionados.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ma-dctm-ei-ef",
@@ -1380,7 +2114,30 @@
       "source_code_mentions_on_page": 6,
       "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:53:59.487278+00:00",
+      "cache_config_sha256": "f500552dbe586ac99036bfdda9f278c9d1e8f05f1fa352cc1d415d525dee9eb9",
+      "matched_item_ids": [
+        "ca:ma-dctm-ei-ef:6017179e954324169937"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ma-dctm-ei-ef:6017179e954324169937",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            246.34151611328124,
+            243.280517578125,
+            432.16103210449216,
+            311.77679443359375
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Identificar, em texto dramático, personagem, ato, cena, fala e indicações cênicas e a organização do texto: enredo, conflitos, ideias principais, pontos de vista, universos de referência.",
+          "source_cell_native_order": "(EF67LP29) Identificar, em texto dramático, personagem, \nato, cena, fala e indicações cênicas e a organização do \ntexto: enredo, conflitos, ideias principais, pontos de vista, \nuniversos de referência.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ma-dctm-ei-ef",
@@ -1393,7 +2150,30 @@
       "source_code_mentions_on_page": 11,
       "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:53:59.487278+00:00",
+      "cache_config_sha256": "f500552dbe586ac99036bfdda9f278c9d1e8f05f1fa352cc1d415d525dee9eb9",
+      "matched_item_ids": [
+        "ca:ma-dctm-ei-ef:3b8e914e7914b9b735df"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ma-dctm-ei-ef:3b8e914e7914b9b735df",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            190.7058342827691,
+            365.24609375,
+            360.78460693359375,
+            502.7942810058594
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Reconhecer os algoritmos contidos em cada resolução de cálculos.",
+          "source_cell_native_order": "(EF06MA03) Resolver e elaborar problemas que \nenvolvam cálculos (mentais ou escritos, exatos ou \naproximados) com números naturais, por meio de \nestratégias variadas, com compreensão dos proces­\nsos neles envolvidos com e sem uso de calculadora.\n(EF06MA04MA) Reconhecer os algoritmos contidos \nem cada resolução de cálculos.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ma-dctm-ei-ef",
@@ -1406,7 +2186,30 @@
       "source_code_mentions_on_page": 10,
       "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:53:59.487278+00:00",
+      "cache_config_sha256": "f500552dbe586ac99036bfdda9f278c9d1e8f05f1fa352cc1d415d525dee9eb9",
+      "matched_item_ids": [
+        "ca:ma-dctm-ei-ef:bf9f1335d84812ede3e9"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ma-dctm-ei-ef:bf9f1335d84812ede3e9",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            89.82655143737793,
+            482.5858459472656,
+            271.48175048828125,
+            707.5119018554688
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Explorar formas de deslocamento no espaço (pular, saltar, dançar), combinando movimentos e seguindo orientações.",
+          "source_cell_native_order": "(EI02CG01) Apropriar-se de gestos e movimentos de \nsua cultura no cuidado de si e nos jogos e brincadeiras.\n(EI02CG02) Deslocar seu corpo no espaço, orientando­\n-se por noções como em frente, atrás, no alto, embaixo, \ndentro, fora etc., ao se envolver em brincadeiras e \natividades de diferentes naturezas.\n(EI02CG03) Explorar formas de deslocamento no es­\npaço (pular, saltar, dançar), combinando movimentos \ne seguindo orientações.\n(EI02CG04) Demonstrar progressiva independência no \ncuidado do seu corpo.\n(EI02CG05) Desenvolver progressivamente as habili­\ndades manuais, adquirindo controle para desenhar, \npintar, rasgar, folhear, entre outros.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ma-dctm-ei-ef",
@@ -1419,7 +2222,30 @@
       "source_code_mentions_on_page": 9,
       "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:53:59.487278+00:00",
+      "cache_config_sha256": "f500552dbe586ac99036bfdda9f278c9d1e8f05f1fa352cc1d415d525dee9eb9",
+      "matched_item_ids": [
+        "ca:ma-dctm-ei-ef:9373386a55dc78c88cf3"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ma-dctm-ei-ef:9373386a55dc78c88cf3",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            89.82655143737793,
+            79.29916381835938,
+            271.48175048828125,
+            540.4223022460938
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Relatar experiências e fatos acontecidos, histórias ouvidas, filmes ou peças teatrais assistidos etc.",
+          "source_cell_native_order": "(EI02EF01) Dialogar com crianças e adultos, expressan­\ndo seus desejos, necessidades, sentimentos e opiniões.\n(EI02EF02) Identificar e criar diferentes sons e re­\nconhecer rimas e aliterações em cantigas de roda e \ntextos poéticos.\n(EI02EF03) Demonstrar interesse e atenção ao ouvir a \nleitura de histórias e outros textos, diferenciando escri­\nta de ilustrações, e acompanhando, com orientação do \nadulto-leitor, a direção da leitura (de cima para baixo, \nda esquerda para a direita).\n(EI02EF04) Formular e responder perguntas sobre fatos \nda história narrada, identificando cenários, personagens \ne principais acontecimentos.\n(EI02EF05) Relatar experiências e fatos acontecidos, \nhistórias ouvidas, filmes ou peças teatrais assistidos etc.\n(EI02EF06) Criar e contar histórias oralmente, com base \nem imagens ou temas sugeridos.\n(EI02EF07) Manusear diferentes portadores textuais, \ndemonstrando reconhecer seus usos sociais.\n(EI02EF08) Manipular textos e participar de situações \nde escuta para ampliar seu contato com diferentes \ngêneros textuais (parlendas, histórias de aventura, \ntirinhas, cartazes de sala, cardápios, notícias etc.).\n(EI02EF09) Manusear diferentes instrumentos e su­\nportes de escrita para desenhar, traçar letras e outros \nsinais gráficos.i\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ma-dctm-ei-ef",
@@ -1432,7 +2258,30 @@
       "source_code_mentions_on_page": 8,
       "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:53:59.487278+00:00",
+      "cache_config_sha256": "f500552dbe586ac99036bfdda9f278c9d1e8f05f1fa352cc1d415d525dee9eb9",
+      "matched_item_ids": [
+        "ca:ma-dctm-ei-ef:78e7baf75ace61e0da86"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ma-dctm-ei-ef:78e7baf75ace61e0da86",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            89.82655143737793,
+            79.29916381835938,
+            271.48175048828125,
+            386.0049743652344
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Utilizar conceitos básicos de tempo (agora, antes, durante, depois, ontem, hoje, amanhã, lento, rápido, depressa, devagar).",
+          "source_cell_native_order": "(EI02ET01) Explorar e descrever semelhanças e diferen­\nças entre as características e propriedades dos objetos \n(textura, massa, tamanho).\n(EI02ET02) Observar, relatar e descrever incidentes \ndo cotidiano e fenômenos naturais (luz solar, vento, \nchuva etc.).\n(EI02ET03) Compartilhar, com outras crianças, situa­\nções de cuidado de plantas e animais nos espaços da \ninstituição e fora dela.\n(EI02ET04) Identificar relações espaciais (dentro e fora, \nem cima, embaixo, acima, abaixo, entre e do lado) e \ntemporais (antes, durante e depois).\n(EI02ET05) Classificar objetos, considerando determi­\nnado atributo (tamanho, peso, cor, forma etc.).\n(EI02ET06) Utilizar conceitos básicos de tempo (agora, \nantes, durante, depois, ontem, hoje, amanhã, lento, \nrápido, depressa, devagar).\n(EI02ET07) Contar oralmente objetos, pessoas, livros \netc., em contextos diversos.\n(EI02ET08) Registrar com números a quantidade de \ncrianças (meninas e meninos, presentes e ausentes) e \na quantidade de objetos da mesma natureza (bonecas, \nbolas, livros etc.).\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ma-dctm-ei-ef",
@@ -1445,7 +2294,30 @@
       "source_code_mentions_on_page": 13,
       "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:53:59.487278+00:00",
+      "cache_config_sha256": "f500552dbe586ac99036bfdda9f278c9d1e8f05f1fa352cc1d415d525dee9eb9",
+      "matched_item_ids": [
+        "ca:ma-dctm-ei-ef:68455deb4fd4481752aa"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ma-dctm-ei-ef:68455deb4fd4481752aa",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            89.82627582550049,
+            424.97718811035156,
+            271.48122787475586,
+            657.4154052734375
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Perceber que as pessoas têm características físicas diferentes, respeitando essas diferenças.",
+          "source_cell_native_order": "(EI02EO01) Demonstrar atitudes de cuidado e solida­\nriedade na interação com crianças e adultos.\n(EI02EO02) Demonstrar imagem positiva de si e con­\nfiança em sua capacidade para enfrentar dificuldades \ne desafios.\n(EI02EO03) Compartilhar os objetos e os espaços com \ncrianças da mesma faixa etária e adultos.\n(EI02EO04) Comunicar-se com os colegas e os adultos, \nbuscando compreendê-los e fazendo-se compreender.\n(EI02EO05) Perceber que as pessoas têm características \nfísicas diferentes, respeitando essas diferenças.\n(EI02EO06) Respeitar regras básicas de convívio social \nnas interações e brincadeiras.\n(EI02EO07) Resolver conflitos nas interações e brinca­\ndeiras, com a orientação de um adulto.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ma-dctm-ei-ef",
@@ -1458,7 +2330,30 @@
       "source_code_mentions_on_page": 6,
       "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:53:59.487278+00:00",
+      "cache_config_sha256": "f500552dbe586ac99036bfdda9f278c9d1e8f05f1fa352cc1d415d525dee9eb9",
+      "matched_item_ids": [
+        "ca:ma-dctm-ei-ef:d278732010c0a7fa2594"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ma-dctm-ei-ef:d278732010c0a7fa2594",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            89.82655143737793,
+            535.9649047851562,
+            271.48175048828125,
+            687.119384765625
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Utilizar materiais variados com possibilidades de manipulação (argila, massa de modelar), explorando cores, texturas, superfícies, planos, formas e volumes ao criar objetos tridimensionais.",
+          "source_cell_native_order": "(EI02TS01) Criar sons com materiais, objetos e instru­\nmentos musicais, para acompanhar diversos ritmos \nde música.\n(EI02TS02) Utilizar materiais variados com possibi­\nlidades de manipulação (argila, massa de modelar), \nexplorando cores, texturas, superfícies, planos, formas \ne volumes ao criar objetos tridimensionais.\n(EI02TS03) Utilizar diferentes fontes sonoras disponí­\nveis no ambiente em brincadeiras cantadas, canções, \nmúsicas e melodias.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ma-dctm-em-vol2",
@@ -1471,7 +2366,17 @@
       "source_code_mentions_on_page": 28,
       "sha256": "ca271258eccee9bf73682267ec680e32ec7fa43bc12216e7c30ea50c77a9dcd9",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:46:00.118263+00:00",
+      "cache_config_sha256": "2dd1824ad932f6f2e2a866b09ad4b7370a4e508defbb0209acc5b63939d5d6ab",
+      "matched_item_ids": [],
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "organizer_skill_identifier_list_without_wording",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ma-dctm-em-vol2",
@@ -1484,7 +2389,17 @@
       "source_code_mentions_on_page": 23,
       "sha256": "ca271258eccee9bf73682267ec680e32ec7fa43bc12216e7c30ea50c77a9dcd9",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:46:00.118263+00:00",
+      "cache_config_sha256": "2dd1824ad932f6f2e2a866b09ad4b7370a4e508defbb0209acc5b63939d5d6ab",
+      "matched_item_ids": [],
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "organizer_skill_identifier_list_without_wording",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ma-dctm-em-vol2",
@@ -1497,7 +2412,30 @@
       "source_code_mentions_on_page": 3,
       "sha256": "ca271258eccee9bf73682267ec680e32ec7fa43bc12216e7c30ea50c77a9dcd9",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:46:00.118263+00:00",
+      "cache_config_sha256": "2dd1824ad932f6f2e2a866b09ad4b7370a4e508defbb0209acc5b63939d5d6ab",
+      "matched_item_ids": [
+        "ca:ma-dctm-em-vol2:24a1c32d1bd5f0f16119"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:ma-dctm-em-vol2:24a1c32d1bd5f0f16119",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            354.33099365234375,
+            45.73004150390625,
+            538.2496744791666,
+            272.48004150390625
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Identificar e explicar normas e valores sociais relevantes à convivência cidadã no trabalho, considerando os próprios valores e crenças e suas aspirações profissionais, avaliando o próprio comportamento frente ao meio em que está inserido, a importância do respeito às diferenças individuais e à preservação do meio ambiente.",
+          "source_cell_native_order": "(EMIFFTP07) Identificar e explicar \nnormas e valores sociais relevantes \nà convivência cidadã no trabalho, \nconsiderando os próprios valores e \ncrenças e suas aspirações profissionais, \navaliando o próprio comportamento \nfrente ao meio em que está inserido, a \nimportância do respeito às diferenças \nindividuais e à preservação do meio \nambiente.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "ma-dctm-em-vol2",
@@ -1516,7 +2454,17 @@
         "section": "Explicit Portuguese chapter/6thyear table header",
         "note": "Original raw-code grouping produced a placeholder for local PB orEM23LP code family; source context resolves same Portuguese component, without national code equivalence."
       },
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:46:00.118263+00:00",
+      "cache_config_sha256": "2dd1824ad932f6f2e2a866b09ad4b7370a4e508defbb0209acc5b63939d5d6ab",
+      "matched_item_ids": [],
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "organizer_skill_identifier_list_without_wording",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ma-dctm-em-vol2",
@@ -1529,7 +2477,17 @@
       "source_code_mentions_on_page": 20,
       "sha256": "ca271258eccee9bf73682267ec680e32ec7fa43bc12216e7c30ea50c77a9dcd9",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:46:00.118263+00:00",
+      "cache_config_sha256": "2dd1824ad932f6f2e2a866b09ad4b7370a4e508defbb0209acc5b63939d5d6ab",
+      "matched_item_ids": [],
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "organizer_skill_identifier_list_without_wording",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ma-dctm-em-vol2",
@@ -1542,7 +2500,17 @@
       "source_code_mentions_on_page": 27,
       "sha256": "ca271258eccee9bf73682267ec680e32ec7fa43bc12216e7c30ea50c77a9dcd9",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:46:00.118263+00:00",
+      "cache_config_sha256": "2dd1824ad932f6f2e2a866b09ad4b7370a4e508defbb0209acc5b63939d5d6ab",
+      "matched_item_ids": [],
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "organizer_skill_identifier_list_without_wording",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "ma-dctm-em-vol2",
@@ -1555,7 +2523,17 @@
       "source_code_mentions_on_page": 30,
       "sha256": "ca271258eccee9bf73682267ec680e32ec7fa43bc12216e7c30ea50c77a9dcd9",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:46:00.118263+00:00",
+      "cache_config_sha256": "2dd1824ad932f6f2e2a866b09ad4b7370a4e508defbb0209acc5b63939d5d6ab",
+      "matched_item_ids": [],
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "organizer_skill_identifier_list_without_wording",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "pb-proposta-ei-ef",
@@ -1571,7 +2549,14 @@
       "cache_extracted_at": "2026-10-28T17:30:51.722500+00:00",
       "cache_config_sha256": "f6d56e997f6687ac5a5bdb7106e6dbe431c0c65e18a25ab6c595f688d2040c4a",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "same_physical_row_reference_preserved_in_authoritative_local_objective",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "pb-proposta-ei-ef",
@@ -1587,7 +2572,14 @@
       "cache_extracted_at": "2026-10-28T17:30:51.722500+00:00",
       "cache_config_sha256": "f6d56e997f6687ac5a5bdb7106e6dbe431c0c65e18a25ab6c595f688d2040c4a",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "same_physical_row_reference_preserved_in_authoritative_local_objective",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "pb-proposta-ei-ef",
@@ -1603,7 +2595,14 @@
       "cache_extracted_at": "2026-10-28T17:30:51.722500+00:00",
       "cache_config_sha256": "f6d56e997f6687ac5a5bdb7106e6dbe431c0c65e18a25ab6c595f688d2040c4a",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "same_physical_row_reference_preserved_in_authoritative_local_objective",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "pb-proposta-ei-ef",
@@ -1619,7 +2618,14 @@
       "cache_extracted_at": "2026-10-28T17:30:51.722500+00:00",
       "cache_config_sha256": "f6d56e997f6687ac5a5bdb7106e6dbe431c0c65e18a25ab6c595f688d2040c4a",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "same_physical_row_reference_preserved_in_authoritative_local_objective",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "pb-proposta-ei-ef",
@@ -1635,7 +2641,14 @@
       "cache_extracted_at": "2026-10-28T17:30:51.722500+00:00",
       "cache_config_sha256": "f6d56e997f6687ac5a5bdb7106e6dbe431c0c65e18a25ab6c595f688d2040c4a",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "same_physical_row_reference_preserved_in_authoritative_local_objective",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "pb-proposta-ei-ef",
@@ -1651,7 +2664,14 @@
       "cache_extracted_at": "2026-10-28T17:30:51.722500+00:00",
       "cache_config_sha256": "f6d56e997f6687ac5a5bdb7106e6dbe431c0c65e18a25ab6c595f688d2040c4a",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "same_physical_row_reference_preserved_in_authoritative_local_objective",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "pb-proposta-ei-ef",
@@ -1667,7 +2687,14 @@
       "cache_extracted_at": "2026-10-28T17:30:51.722500+00:00",
       "cache_config_sha256": "f6d56e997f6687ac5a5bdb7106e6dbe431c0c65e18a25ab6c595f688d2040c4a",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "same_physical_row_reference_preserved_in_authoritative_local_objective",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "pb-proposta-ei-ef",
@@ -1683,7 +2710,14 @@
       "cache_extracted_at": "2026-10-28T17:30:51.722500+00:00",
       "cache_config_sha256": "f6d56e997f6687ac5a5bdb7106e6dbe431c0c65e18a25ab6c595f688d2040c4a",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "same_physical_row_reference_preserved_in_authoritative_local_objective",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "pb-proposta-ei-ef",
@@ -1741,7 +2775,14 @@
       "cache_extracted_at": "2026-10-28T17:30:51.722500+00:00",
       "cache_config_sha256": "f6d56e997f6687ac5a5bdb7106e6dbe431c0c65e18a25ab6c595f688d2040c4a",
       "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "result": "source_code_reference_documented",
+      "reference_disposition": {
+        "role": "same_physical_row_reference_preserved_in_authoritative_local_objective",
+        "evidence": "docs/evidence/source-audit-northeast/audit-reference-dispositions.json",
+        "evidence_sha256": "91447aaaca8a632ec659d86fff2d6a41ce046b182d6af2daf38b30ee8c555f84",
+        "no_new_learning_definition": true,
+        "whole_source_structure_still_pending": true
+      }
     },
     {
       "source_id": "pe-curriculo-ef",
@@ -2078,20 +3119,20 @@
       "source_code_mentions_on_page": 5,
       "sha256": "a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "cache_extracted_at": "2026-10-28T17:14:39.445872+00:00",
-      "cache_config_sha256": "fabd9c549089b48054f050d07ccbb5c7f538dd75891cb813792ef8f2eb166e4e",
+      "cache_extracted_at": "2026-10-28T20:03:59.701681+00:00",
+      "cache_config_sha256": "af381c609998c47b4d09935e9cf1a1233b3cae63f69ab3de350b0b5f16cb4530",
       "matched_item_ids": [
-        "ca:pe-curriculo-ei:f8080bef9327b81020a3"
+        "ca:pe-curriculo-ei:section:objective-ei02cg03pe"
       ],
       "checks": [
         {
-          "item_id": "ca:pe-curriculo-ei:f8080bef9327b81020a3",
-          "method": "pymupdf-ruled-cell",
+          "item_id": "ca:pe-curriculo-ei:section:objective-ei02cg03pe",
+          "method": "pymupdf-native-glyph-cluster-v1",
           "bbox": [
-            283.5266621907552,
-            137.58944580078125,
-            418.250005086263,
-            522.1131504603794
+            283.489990234375,
+            137.5399932861328,
+            418.25001525878906,
+            522.2502877371652
           ],
           "code_present": true,
           "text_literal_matched_any_native_order": true,
@@ -2114,20 +3155,20 @@
       "source_code_mentions_on_page": 4,
       "sha256": "a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "cache_extracted_at": "2026-10-28T17:14:39.445872+00:00",
-      "cache_config_sha256": "fabd9c549089b48054f050d07ccbb5c7f538dd75891cb813792ef8f2eb166e4e",
+      "cache_extracted_at": "2026-10-28T20:03:59.701681+00:00",
+      "cache_config_sha256": "af381c609998c47b4d09935e9cf1a1233b3cae63f69ab3de350b0b5f16cb4530",
       "matched_item_ids": [
-        "ca:pe-curriculo-ei:04d128c1790dea8e6db5"
+        "ca:pe-curriculo-ei:section:objective-ei02ef05pe"
       ],
       "checks": [
         {
-          "item_id": "ca:pe-curriculo-ei:04d128c1790dea8e6db5",
-          "method": "pymupdf-ruled-cell",
+          "item_id": "ca:pe-curriculo-ei:section:objective-ei02ef05pe",
+          "method": "pymupdf-native-glyph-cluster-v1",
           "bbox": [
-            524.5499877929688,
-            137.59064819335939,
-            652.1100158691406,
-            520.3731602260044
+            524.469970703125,
+            137.5399932861328,
+            652.0299987792969,
+            520.570295061384
           ],
           "code_present": true,
           "text_literal_matched_any_native_order": true,
@@ -2150,20 +3191,20 @@
       "source_code_mentions_on_page": 4,
       "sha256": "a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "cache_extracted_at": "2026-10-28T17:14:39.445872+00:00",
-      "cache_config_sha256": "fabd9c549089b48054f050d07ccbb5c7f538dd75891cb813792ef8f2eb166e4e",
+      "cache_extracted_at": "2026-10-28T20:03:59.701681+00:00",
+      "cache_config_sha256": "af381c609998c47b4d09935e9cf1a1233b3cae63f69ab3de350b0b5f16cb4530",
       "matched_item_ids": [
-        "ca:pe-curriculo-ei:f0428f1500ea461e58e1"
+        "ca:pe-curriculo-ei:section:objective-ei02et05pe"
       ],
       "checks": [
         {
-          "item_id": "ca:pe-curriculo-ei:f0428f1500ea461e58e1",
-          "method": "pymupdf-ruled-cell",
+          "item_id": "ca:pe-curriculo-ei:section:objective-ei02et05pe",
+          "method": "pymupdf-native-glyph-cluster-v1",
           "bbox": [
-            652.1100158691406,
-            137.59064819335939,
-            786.7680297851563,
-            520.3731602260044
+            652.0299987792969,
+            137.5399932861328,
+            786.9000447591146,
+            520.570295061384
           ],
           "code_present": true,
           "text_literal_matched_any_native_order": true,
@@ -2186,10 +3227,30 @@
       "source_code_mentions_on_page": 4,
       "sha256": "a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "cache_extracted_at": "2026-10-28T17:14:39.445872+00:00",
-      "cache_config_sha256": "fabd9c549089b48054f050d07ccbb5c7f538dd75891cb813792ef8f2eb166e4e",
-      "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "cache_extracted_at": "2026-10-28T20:03:59.701681+00:00",
+      "cache_config_sha256": "af381c609998c47b4d09935e9cf1a1233b3cae63f69ab3de350b0b5f16cb4530",
+      "matched_item_ids": [
+        "ca:pe-curriculo-ei:section:objective-ei02eo05pe"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:pe-curriculo-ei:section:objective-ei02eo05pe",
+          "method": "pymupdf-native-glyph-cluster-v1",
+          "bbox": [
+            158.06000518798828,
+            137.5399932861328,
+            283.489990234375,
+            520.570295061384
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Perceber que as pessoas têm preferências e características físicas diferentes (altura, cor de olhos, cor da pele, tipos de cabelos, etc.), respeitando essas diferenças.",
+          "source_cell_native_order": " \n(EI02EO05PE) \n \n \n \n \nPerceber \nque \nas \npessoas \ntêm \npreferências \ne \ncaracterísticas \nfísicas \ndiferentes (altura, cor \nde olhos, cor da pele, \ntipos de cabelos, etc.), \nrespeitando \nessas \ndiferenças. \n \n \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "pe-curriculo-ei",
@@ -2202,10 +3263,30 @@
       "source_code_mentions_on_page": 5,
       "sha256": "a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "cache_extracted_at": "2026-10-28T17:14:39.445872+00:00",
-      "cache_config_sha256": "fabd9c549089b48054f050d07ccbb5c7f538dd75891cb813792ef8f2eb166e4e",
-      "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "cache_extracted_at": "2026-10-28T20:03:59.701681+00:00",
+      "cache_config_sha256": "af381c609998c47b4d09935e9cf1a1233b3cae63f69ab3de350b0b5f16cb4530",
+      "matched_item_ids": [
+        "ca:pe-curriculo-ei:section:objective-ei02ts03pe"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:pe-curriculo-ei:section:objective-ei02ts03pe",
+          "method": "pymupdf-native-glyph-cluster-v1",
+          "bbox": [
+            418.25001525878906,
+            137.5399932861328,
+            524.469970703125,
+            522.2502877371652
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Utilizar diferentes fontes sonoras disponíveis no ambiente (cantos dos pássaros, barulho do vento, da chuva e etc.) em canções, músicas, melodias e brincadeiras cantadas de diferentes culturas.",
+          "source_cell_native_order": " \n(EI02TS03PE)  \n \n \n \n \nUtilizar \ndiferentes \nfontes \nsonoras \ndisponíveis \nno \nambiente \n(cantos \ndos \npássaros, \nbarulho do vento, \nda chuva e etc.) em \ncanções, músicas, \nmelodias \ne \nbrincadeiras \ncantadas \nde \ndiferentes culturas. \n \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "pe-curriculo-em-2021",
@@ -3644,10 +4725,30 @@
       "source_code_mentions_on_page": 9,
       "sha256": "5f894abaa0309169597c7c9b7841aebaa9faaeb45e4cb759e5058b359e2ed845",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "cache_extracted_at": "2026-10-28T17:24:52.430096+00:00",
-      "cache_config_sha256": "5455e05809ccc41c41cc29331b2ff458be1edcafb677254031b5cbc47b76e1d6",
-      "matched_item_ids": [],
-      "result": "unrepresented_code_occurrence_requires_semantic_classification"
+      "cache_extracted_at": "2026-10-28T20:01:10.991750+00:00",
+      "cache_config_sha256": "c16393226f5e2591e9ebc9858860cead83f501d72bcad873e0d8b1b1ed0416df",
+      "matched_item_ids": [
+        "ca:rn-referencial-em:section:matrix-3-skill-emifcg08"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:rn-referencial-em:section:matrix-3-skill-emifcg08",
+          "method": "pymupdf-native-glyph-cluster-v1",
+          "bbox": [
+            91.05000305175781,
+            427.07000732421875,
+            308.1800231933594,
+            504.25
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Compreender e considerar a situação, a opinião e o sentimento do outro, agindo com empatia, flexibilidade e resiliência para promover o diálogo, a colaboração, a mediação e resolução de conflitos, o combate ao preconceito e a valorização da diversidade.",
+          "source_cell_native_order": "Compreender e considerar a situação, a opinião \ne o sentimento do outro, agindo com empatia, \nflexibilidade e resiliência para promover o \ndiálogo, a colaboração, a mediação e resolução \nde conflitos, o combate ao preconceito e a \nvalorização da diversidade.  \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "rn-referencial-em",
@@ -3660,8 +4761,8 @@
       "source_code_mentions_on_page": 3,
       "sha256": "5f894abaa0309169597c7c9b7841aebaa9faaeb45e4cb759e5058b359e2ed845",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "cache_extracted_at": "2026-10-28T17:24:52.430096+00:00",
-      "cache_config_sha256": "5455e05809ccc41c41cc29331b2ff458be1edcafb677254031b5cbc47b76e1d6",
+      "cache_extracted_at": "2026-10-28T20:01:10.991750+00:00",
+      "cache_config_sha256": "c16393226f5e2591e9ebc9858860cead83f501d72bcad873e0d8b1b1ed0416df",
       "matched_item_ids": [
         "ca:rn-referencial-em:b8fbddfca5cbe3639a9d"
       ],
@@ -3696,7 +4797,30 @@
       "source_code_mentions_on_page": 4,
       "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:50:27.086668+00:00",
+      "cache_config_sha256": "87351148b8c0eb8156acea7a922200e70c2beae27dd5e1caed11c24731c58995",
+      "matched_item_ids": [
+        "ca:se-curriculo-ei-ef:211b24b8524c3a4bbcb0"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-ei-ef:211b24b8524c3a4bbcb0",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            498.8106920965787,
+            388.3900146484375,
+            798.1596112932477,
+            400.989990234375
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Conhecer e reconhecer imagens referentes",
+          "source_cell_native_order": "(EF69AR01SE) Conhecer e reconhecer imagens referentes \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-ei-ef",
@@ -3709,7 +4833,30 @@
       "source_code_mentions_on_page": 6,
       "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:50:27.086668+00:00",
+      "cache_config_sha256": "87351148b8c0eb8156acea7a922200e70c2beae27dd5e1caed11c24731c58995",
+      "matched_item_ids": [
+        "ca:se-curriculo-ei-ef:985bff1b90014f067e09"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-ei-ef:985bff1b90014f067e09",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            508.9600067138672,
+            110.98726862127131,
+            784.7774810791016,
+            529.2240234375
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Investigar as intensidades de som, luz e calor, em diferentes ambientes da escola, utilizando os equipamentos convencionais (termômetro, decibelímetro e luxímetro), ou alternativos construídos de acordo com a realidade da escola e a necessidade do aluno e de pessoas com deficiência.",
+          "source_cell_native_order": "(EF06CI01) Classificar e caracterizar, misturas do \ncotidiano e dos processos produtivos regionais em \nhomogêneas e heterogêneas, investigando os seus \ncomponentes e números de fases da mistura, a partir \nda realização de observações e /ou experimentos. \n(EF06CI01SE) \nAnalisar \nos \npossíveis \nprejuízos \nambientais causados pelos resíduos oriundos da \nseparação das misturas nos processos produtivos \nlocais. \n(EF06CI02) Identificar e descrever evidências e fatores \nde transformações químicas que ocorrem nas \natividades do cotidiano e nas indústrias locais \n(petróleo, cana de açúcar, mandioca etc.), a partir da \nanálise de textos, ilustrações e experimentações.  \n(EF06CI03) Selecionar e justificar a causa da \nseparação de misturas usando métodos mais \nadequados em situações problemas, (como a \nprodução de sal de cozinha, despoluição da água \ncausada por óleo, resíduos domésticos ou industriais \ndentre outras), relacionando o tipo de processo com as \npropriedades dos materiais. \n(EF06CI04) Associar a partir da análise dos fatos \nhistóricos, ilustrações e experimentações a produção \nde medicamentos e outros materiais sintéticos ao \ndesenvolvimento \ncientífico \ne \ntecnológico, \nreconhecendo \nbenefícios \ne \navaliando \nimpactos \nsocioambientais. \n(EF06CI02SE) Investigar as intensidades de som, luz \ne calor, em diferentes ambientes da escola, utilizando \nos \nequipamentos \nconvencionais \n(termômetro, \ndecibelímetro e luxímetro), ou alternativos construídos \nde acordo com a realidade da"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-ei-ef",
@@ -3722,7 +4869,30 @@
       "source_code_mentions_on_page": 3,
       "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:50:27.086668+00:00",
+      "cache_config_sha256": "87351148b8c0eb8156acea7a922200e70c2beae27dd5e1caed11c24731c58995",
+      "matched_item_ids": [
+        "ca:se-curriculo-ei-ef:a5423d7a20c69cd0486a"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-ei-ef:a5423d7a20c69cd0486a",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            531.5899861653646,
+            136.30727594549006,
+            785.0183410644531,
+            187.61000061035156
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Experimentar, fruir e recriar danças urbanas (Ex. brake, street dance, funk, entre outros), identificando seus elementos constitutivos (ritmo, espaço, gestos).",
+          "source_cell_native_order": "(EF67EF11) Experimentar, fruir e recriar danças \nurbanas (Ex. brake, street dance, funk, entre \noutros), \nidentiﬁcando \nseus \nelementos \nconstitutivos (ritmo, espaço, gestos). \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-ei-ef",
@@ -3735,7 +4905,30 @@
       "source_code_mentions_on_page": 7,
       "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:50:27.086668+00:00",
+      "cache_config_sha256": "87351148b8c0eb8156acea7a922200e70c2beae27dd5e1caed11c24731c58995",
+      "matched_item_ids": [
+        "ca:se-curriculo-ei-ef:168a41c52dd394ee6ffc"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-ei-ef:168a41c52dd394ee6ffc",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            495.6699981689453,
+            306.65000915527344,
+            785.1281960227273,
+            345.19000244140625
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Identificar elementos da tradição oral nas culturas e religiosidades indígenas, afro-brasileiras, ciganas, entre outras.",
+          "source_cell_native_order": "(EF05ER05) Identificar elementos da tradição oral nas \nculturas e religiosidades indígenas, afro-brasileiras, \nciganas, entre outras. \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-ei-ef",
@@ -3748,7 +4941,30 @@
       "source_code_mentions_on_page": 4,
       "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:50:27.086668+00:00",
+      "cache_config_sha256": "87351148b8c0eb8156acea7a922200e70c2beae27dd5e1caed11c24731c58995",
+      "matched_item_ids": [
+        "ca:se-curriculo-ei-ef:173c136bf04de37dea92"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-ei-ef:173c136bf04de37dea92",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            563.1099853515625,
+            363.4300079345703,
+            813.793994140625,
+            490.46799926757814
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Identificar os principais recursos naturais dos países da América Latina, analisando seu uso para a produção de matéria- prima e energia e sua relevância para a cooperação entre os países do Mercosul.",
+          "source_cell_native_order": "(EF08GE22) Identificar os principais recursos \nnaturais \ndos \npaíses \nda \nAmérica \nLatina, \nanalisando seu uso para a produção de matéria-\nprima e energia e sua relevância para a \ncooperação entre os países do Mercosul. \n(EF08GE23) Identificar paisagens da América \nLatina e associá-las, por meio da cartografia, aos \ndiferentes povos da região, com base em \naspectos da geomorfologia, da biogeografia e da \nclimatologia. \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-ei-ef",
@@ -3761,7 +4977,30 @@
       "source_code_mentions_on_page": 3,
       "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:50:27.086668+00:00",
+      "cache_config_sha256": "87351148b8c0eb8156acea7a922200e70c2beae27dd5e1caed11c24731c58995",
+      "matched_item_ids": [
+        "ca:se-curriculo-ei-ef:93753bf228a2e5417123"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-ei-ef:93753bf228a2e5417123",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            563.469980875651,
+            239.8100128173828,
+            813.79833984375,
+            366.79002380371094
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Descrever as formas de organização das sociedades americanas no tempo da conquista com vistas à compreensão dos mecanismos de alianças, confrontos e resistências, com destaque para as populações ameríndias que ocupavam o território do atual Nordeste brasileiro como um todo e Sergipe especificamente.",
+          "source_cell_native_order": "(EF07HI08) Descrever as formas de organização \ndas sociedades americanas no tempo da \nconquista com vistas à compreensão dos \nmecanismos \nde \nalianças, \nconfrontos \ne \nresistências, com destaque para as populações \nameríndias que ocupavam o território do atual \nNordeste brasileiro como um todo e Sergipe \nespecificamente. \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-ei-ef",
@@ -3774,7 +5013,30 @@
       "source_code_mentions_on_page": 4,
       "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:50:27.086668+00:00",
+      "cache_config_sha256": "87351148b8c0eb8156acea7a922200e70c2beae27dd5e1caed11c24731c58995",
+      "matched_item_ids": [
+        "ca:se-curriculo-ei-ef:98ee4722ff77a3e9b6b1"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-ei-ef:98ee4722ff77a3e9b6b1",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            318.88999938964844,
+            400.87001037597656,
+            496.99000549316406,
+            488.2359985351562
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Utilizar o passado simples e o passado contínuo para produzir textos orais e escritos, mostrando relações de sequência e causalidade.",
+          "source_cell_native_order": "(EF07LI18) Utilizar o passado \nsimples e o passado contínuo para \nproduzir textos orais e escritos, \nmostrando relações de sequência \ne causalidade. \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-ei-ef",
@@ -3787,7 +5049,30 @@
       "source_code_mentions_on_page": 5,
       "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:50:27.086668+00:00",
+      "cache_config_sha256": "87351148b8c0eb8156acea7a922200e70c2beae27dd5e1caed11c24731c58995",
+      "matched_item_ids": [
+        "ca:se-curriculo-ei-ef:4360eb189a8d60ada3a2"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-ei-ef:4360eb189a8d60ada3a2",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            495.5500030517578,
+            350.95001220703125,
+            787.8990589488636,
+            427.3900146484375
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Pesquisar, analisar, planejar e produzir texto sobre tema de interesse do aluno, organizando resultados de pesquisa em fontes de informação impressas ou digitais, incluindo imagens e gráficos ou tabelas, considerando a situação comunicativa e o tema/assunto do texto.",
+          "source_cell_native_order": "(EF05LP24) Pesquisar, analisar, planejar e produzir texto \nsobre tema de interesse do aluno, organizando resultados \nde pesquisa em fontes de informação impressas ou \ndigitais, incluindo imagens e gráficos ou tabelas, \nconsiderando a situação comunicativa e o tema/assunto \ndo texto. \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-ei-ef",
@@ -3800,7 +5085,30 @@
       "source_code_mentions_on_page": 5,
       "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:50:27.086668+00:00",
+      "cache_config_sha256": "87351148b8c0eb8156acea7a922200e70c2beae27dd5e1caed11c24731c58995",
+      "matched_item_ids": [
+        "ca:se-curriculo-ei-ef:072c4c60106a438d75ba"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-ei-ef:072c4c60106a438d75ba",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            545.8300048828125,
+            290.9300079345703,
+            785.114013671875,
+            524.4240112304688
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Reconhecer a abertura do ângulo como grandeza associada às figuras geométricas, observando os objetos utilizados no cotidiano e fazer analogias aos tipos de ângulos.",
+          "source_cell_native_order": "(EF06MA25) Reconhecer a abertura do ângulo \ncomo \ngrandeza \nassociada \nàs \nfiguras \ngeométricas, observando os objetos utilizados \nno cotidiano e fazer analogias aos tipos de \nângulos. \n(EF06MA12SE) Identificar os elementos de um \nângulo, bem como a funcionalidade deste no \ncontexto das artes, da engenharia, arquitetura, \ne demais áreas. \n(EF06MA26) Resolver e criar problemas que \nenvolvam a noção de ângulo em diferentes \ncontextos e em situações reais, como ângulo \nde visão. \n(EF06MA27) Determinar medidas da abertura \nde ângulos, por meio de transferidor e/ou \ntecnologias digitais. \n(EF06MA13SE) Classificar os ângulos de \nacordo com sua medida e analisar a \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-ei-ef",
@@ -3813,7 +5121,30 @@
       "source_code_mentions_on_page": 5,
       "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:50:27.086668+00:00",
+      "cache_config_sha256": "87351148b8c0eb8156acea7a922200e70c2beae27dd5e1caed11c24731c58995",
+      "matched_item_ids": [
+        "ca:se-curriculo-ei-ef:d351f0aa9a0df3683424"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-ei-ef:d351f0aa9a0df3683424",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            71.00571877615792,
+            200.6899871826172,
+            360.0500030517578,
+            277.12998962402344
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Explorar e desenvolver formas de deslocamento no espaço (caminhar, correr, pular, saltar, rolar, dançar, entre outras formas), combinando movimentos e seguindo orientações verbais e visuais simples, bem como motivações do seu interesse em diferentes espaços do ambiente escolar.",
+          "source_cell_native_order": "(EI02CG03) \nExplorar \ne \ndesenvolver \nformas \nde \ndeslocamento no espaço (caminhar, correr, pular, saltar, \nrolar, \ndançar, \nentre \noutras \nformas), \ncombinando \nmovimentos e seguindo orientações verbais e visuais \nsimples, bem como motivações do seu interesse em \ndiferentes espaços do ambiente escolar. \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-ei-ef",
@@ -3826,7 +5157,30 @@
       "source_code_mentions_on_page": 7,
       "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:50:27.086668+00:00",
+      "cache_config_sha256": "87351148b8c0eb8156acea7a922200e70c2beae27dd5e1caed11c24731c58995",
+      "matched_item_ids": [
+        "ca:se-curriculo-ei-ef:62e5611b0104bab1fa3f"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-ei-ef:62e5611b0104bab1fa3f",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            71.01000452041626,
+            252.4099884033203,
+            360.0500030517578,
+            321.9099884033203
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Manusear diferentes portadores textuais, demonstrando reconhecer seus usos sociais e vivenciar experiências diversificadas de interação em ambientes que as convidem a explorar os diferentes materiais de escrita.",
+          "source_cell_native_order": "(EI02EF07) \nManusear \ndiferentes \nportadores \ntextuais, demonstrando reconhecer seus usos \nsociais e vivenciar experiências diversificadas de \ninteração em ambientes que as convidem a explorar \nos diferentes materiais de escrita.  \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-ei-ef",
@@ -3839,7 +5193,30 @@
       "source_code_mentions_on_page": 5,
       "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:50:27.086668+00:00",
+      "cache_config_sha256": "87351148b8c0eb8156acea7a922200e70c2beae27dd5e1caed11c24731c58995",
+      "matched_item_ids": [
+        "ca:se-curriculo-ei-ef:0a70d36e68accf5dbf32"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-ei-ef:0a70d36e68accf5dbf32",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            71.00571877615792,
+            404.11000061035156,
+            360.0500030517578,
+            493.260009765625
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": false,
+          "all_current_source_fragments_verified": true,
+          "result": "multi_page_fragments_literal_pass_semantics_still_unreviewed",
+          "extracted_text": "Utilizar conceitos básicos de tempo (agora, antes, durante, depois, ontem, hoje, amanhã, lento, rápido, depressa, devagar), tendo a oportunidade de viver situações que envolvam as noções básicas de tempo, sendo convidadas a antecipar acontecimentos do cotidiano escolar, a conversar sobre momentos de sua rotina em casa, a brincar explorando velocidades e ritmos, como depressa e lentamente, e a viver situações em que percebam relações de causa e efeito.",
+          "source_cell_native_order": "(EI02ET06) Utilizar conceitos básicos de tempo (agora, \nantes, durante, depois, ontem, hoje, amanhã, lento, \nrápido, depressa, devagar), tendo a oportunidade de viver \nsituações que envolvam as noções básicas de tempo, \nsendo convidadas a antecipar acontecimentos do \ncotidiano escolar, a conversar sobre momentos de sua \nrotina em casa, a brincar explorando velocidades e \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-ei-ef",
@@ -3852,7 +5229,30 @@
       "source_code_mentions_on_page": 6,
       "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:50:27.086668+00:00",
+      "cache_config_sha256": "87351148b8c0eb8156acea7a922200e70c2beae27dd5e1caed11c24731c58995",
+      "matched_item_ids": [
+        "ca:se-curriculo-ei-ef:d6f442f478d18e62cc91"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-ei-ef:d6f442f478d18e62cc91",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            71.00571877615792,
+            467.3800048828125,
+            367.13002014160156,
+            505.8559977213542
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": false,
+          "all_current_source_fragments_verified": true,
+          "result": "multi_page_fragments_literal_pass_semantics_still_unreviewed",
+          "extracted_text": "Criar estratégias para resolver e lidar com situações cotidianas de conflitos nas interações e brincadeiras, com a mediação e orientação de um adulto, respeitando a situação e ao mesmo tempo ajudando-as a reconhecer, expressar e conversar sobre seus sentimentos.",
+          "source_cell_native_order": "(EI02EO07) Criar estratégias para resolver e lidar com \nsituações cotidianas de conflitos nas interações e \nbrincadeiras, com a mediação e orientação de um adulto, \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-ei-ef",
@@ -3865,7 +5265,30 @@
       "source_code_mentions_on_page": 3,
       "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T17:50:27.086668+00:00",
+      "cache_config_sha256": "87351148b8c0eb8156acea7a922200e70c2beae27dd5e1caed11c24731c58995",
+      "matched_item_ids": [
+        "ca:se-curriculo-ei-ef:76d53b6d4b072adc4bc9"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-ei-ef:76d53b6d4b072adc4bc9",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            71.00000445048015,
+            245.5699920654297,
+            360.0500030517578,
+            296.6899871826172
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Utilizar materiais variados com possibilidades de manipulação (argila, areia, massa de modelar, barro, papel, tinta etc.), explorando cores, texturas, superfícies, planos, formas e volumes ao criar objetos tridimensionais.",
+          "source_cell_native_order": "(EI02TS02) Utilizar materiais variados com possibilidades \nde manipulação (argila, areia, massa de modelar, barro, \npapel, tinta etc.), explorando cores, texturas, superfícies, \nplanos, formas e volumes ao criar objetos tridimensionais. \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-em",
@@ -3878,7 +5301,30 @@
       "source_code_mentions_on_page": 5,
       "sha256": "91fb4796d01e14370b67d0ca11b7069438a4127ff9c13c068ed2a6f65c3cb69b",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T20:13:14.306351+00:00",
+      "cache_config_sha256": "53ec9d6c3ff4fe38f27a1f5b59eab219223e26d17f6e7475d5976ecb9158be5e",
+      "matched_item_ids": [
+        "ca:se-curriculo-em:aaa5533dacb2d514c083"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-em:aaa5533dacb2d514c083",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            223.49199676513672,
+            56.6929931640625,
+            301.9360008239746,
+            279.68499755859375
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Debater e ava- liar o papel da in- dústria cultural e das culturas de massa no estímu- lo ao consumis- mo, seus impac- tos econômicos e socioambien- tais, com vistas à percepção crítica das necessidades criadas pelo con- sumo e à adoção de hábitos sus- tentáveis.",
+          "source_cell_native_order": "(EM13CHS303)\nDebater e ava-\nliar o papel da in-\ndústria cultural e \ndas culturas de \nmassa no estímu-\nlo ao consumis-\nmo, seus impac-\ntos \neconômicos \ne \nsocioambien-\ntais, com vistas à \npercepção crítica \ndas necessidades \ncriadas pelo con-\nsumo e à adoção \nde hábitos sus-\ntentáveis. \n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-em",
@@ -3891,7 +5337,30 @@
       "source_code_mentions_on_page": 6,
       "sha256": "91fb4796d01e14370b67d0ca11b7069438a4127ff9c13c068ed2a6f65c3cb69b",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T20:13:14.306351+00:00",
+      "cache_config_sha256": "53ec9d6c3ff4fe38f27a1f5b59eab219223e26d17f6e7475d5976ecb9158be5e",
+      "matched_item_ids": [
+        "ca:se-curriculo-em:6cc27d4a6f0303e385d0"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-em:6cc27d4a6f0303e385d0",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            190.72600555419922,
+            297.63800048828125,
+            464.8820037841797,
+            381.2590026855469
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Reconhecer e analisar diferentes manifestações criati- vas, artísticas e culturais, por meio de vivências presenciais e virtu- ais que ampliem a visão de mundo, sensibilidade, criticidade e cria- tividade.",
+          "source_cell_native_order": "(EMIFCG04) Reconhecer e analisar diferentes manifestações criati-\nvas, artísticas e culturais, por meio de vivências presenciais e virtu-\nais que ampliem a visão de mundo, sensibilidade, criticidade e cria-\ntividade.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-em",
@@ -3904,7 +5373,30 @@
       "source_code_mentions_on_page": 3,
       "sha256": "91fb4796d01e14370b67d0ca11b7069438a4127ff9c13c068ed2a6f65c3cb69b",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T20:13:14.306351+00:00",
+      "cache_config_sha256": "53ec9d6c3ff4fe38f27a1f5b59eab219223e26d17f6e7475d5976ecb9158be5e",
+      "matched_item_ids": [
+        "ca:se-curriculo-em:0234bef07b55de8cfe86"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-em:0234bef07b55de8cfe86",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            213.26149559020996,
+            49.60699462890625,
+            345.09300231933594,
+            330.74449157714844
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Analisar os diálogos e os pro- cessos de disputa por legitimi- dade nas práticas de linguagem e em suas produções (artísticas, corporais e verbais).",
+          "source_cell_native_order": "EM13LP42\nAcompanhar, analisar e discu-\ntir a cobertura da mídia dian-\nte de acontecimentos e ques-\ntões de relevância social, lo-\ncal e global, comparando dife-\nrentes enfoques e perspectivas, \npor meio do uso de ferramen-\ntas de curadoria (como agrega-\ndores de conteúdo) e da consul-\nta a serviços e fontes de checa-\ngem e curadoria de informação, \nde forma a aprofundar o enten-\ndimento sobre um determina-\ndo fato ou questão, identificar o \nenfoque preponderante da mídia \ne manter-se implicado, de forma \ncrítica, com os fatos e as ques-\ntões que afetam a coletividade.\nEM13LGG203\nAnalisar os diálogos e os pro-\ncessos de disputa por legitimi-\ndade nas práticas de linguagem \ne em suas produções (artísticas, \ncorporais e verbais).\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-em",
@@ -3917,7 +5409,30 @@
       "source_code_mentions_on_page": 4,
       "sha256": "91fb4796d01e14370b67d0ca11b7069438a4127ff9c13c068ed2a6f65c3cb69b",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T20:13:14.306351+00:00",
+      "cache_config_sha256": "53ec9d6c3ff4fe38f27a1f5b59eab219223e26d17f6e7475d5976ecb9158be5e",
+      "matched_item_ids": [
+        "ca:se-curriculo-em:52a961ad0dc7b4176281"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-em:52a961ad0dc7b4176281",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            213.54499626159668,
+            56.6929931640625,
+            343.6800003051758,
+            290.55149841308594
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Estabelecer relações de inter- discursividade e intertextuali- dade para explicitar, sustentar e conferir consistência a posi- cionamentos e para construir e corroborar explicações e re- latos, fazendo uso de citações e paráfrases devidamente mar- cadas.",
+          "source_cell_native_order": "EM13LP04\nEstabelecer relações de inter-\ndiscursividade e intertextuali-\ndade para explicitar, sustentar \ne conferir consistência a posi-\ncionamentos e para construir \ne corroborar explicações e re-\nlatos, fazendo uso de citações \ne paráfrases devidamente mar-\ncadas.\nEM13LGG104\nUtilizar as diferentes lingua-\ngens, levando em conta seus \nfuncionamentos, para a com-\npreensão e produção de tex-\ntos e discursos em diversos \ncampos de atuação social.\n"
+        }
+      ],
+      "result": "sample_inspected"
     },
     {
       "source_id": "se-curriculo-em",
@@ -3930,12 +5445,34 @@
       "source_code_mentions_on_page": 6,
       "sha256": "91fb4796d01e14370b67d0ca11b7069438a4127ff9c13c068ed2a6f65c3cb69b",
       "selection": "interior native-code occurrence per UF/stage/component",
-      "result": "pending_extraction"
+      "cache_extracted_at": "2026-10-28T20:13:14.306351+00:00",
+      "cache_config_sha256": "53ec9d6c3ff4fe38f27a1f5b59eab219223e26d17f6e7475d5976ecb9158be5e",
+      "matched_item_ids": [
+        "ca:se-curriculo-em:e65279ec9b8a6cf2a5ce"
+      ],
+      "checks": [
+        {
+          "item_id": "ca:se-curriculo-em:e65279ec9b8a6cf2a5ce",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            217.14300537109375,
+            290.6390075683594,
+            382.87331199645996,
+            385.5120086669922
+          ],
+          "code_present": true,
+          "text_literal_matched_any_native_order": true,
+          "all_current_source_fragments_verified": true,
+          "result": "literal_cell_pass_semantics_still_unreviewed",
+          "extracted_text": "Utilizar, quando neces- sário, a notação científica para expres- sar uma medida, compreendendo as no- ções de algarismos significativos e alga- rismos duvidosos, e reconhecendo que toda medida é inevitavelmente acompa- nhada de erro.",
+          "source_cell_native_order": "(EM13MAT313) Utilizar, quando neces-\nsário, a notação científica para expres-\nsar uma medida, compreendendo as no-\nções de algarismos significativos e alga-\nrismos duvidosos, e reconhecendo que \ntoda medida é inevitavelmente acompa-\nnhada de erro.\n"
+        }
+      ],
+      "result": "sample_inspected"
     }
   ],
   "summary": {
     "sample_anchors": 159,
-    "distinct_reviewed_uf_stage_component_combinations": 157,
     "ufs": [
       "AL",
       "BA",
@@ -3948,16 +5485,17 @@
       "SE"
     ],
     "by_result": {
-      "sample_inspected": 75,
-      "pending_extraction": 65,
-      "unrepresented_code_occurrence_requires_semantic_classification": 19
+      "sample_inspected": 133,
+      "source_code_reference_documented": 26
     },
     "check_results": {
-      "literal_cell_pass_semantics_still_unreviewed": 75,
-      "multi_page_fragments_literal_pass_semantics_still_unreviewed": 2
+      "literal_cell_pass_semantics_still_unreviewed": 131,
+      "multi_page_fragments_literal_pass_semantics_still_unreviewed": 4
     },
     "fully_reconciled_parts_in_principal_source_audit_cohort": 0,
-    "other_sources_reconciled_in_registry": [
+    "distinct_sampling_frame_uf_stage_component_combinations": 157,
+    "distinct_inspected_uf_stage_component_combinations": 133,
+    "other_sources_with_legacy_reconciliation_flag_not_gate_acceptance": [
       "ba-resolucao-249-2026",
       "pe-historia-pernambuco-2026",
       "rn-portaria-11123-2025",

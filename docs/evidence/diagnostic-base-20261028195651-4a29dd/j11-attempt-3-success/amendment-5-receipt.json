@@ -1,0 +1,68 @@
+{
+  "install_snapshot": {
+    "publication": "ca-7d302a9c674a97b83278",
+    "publications": 1,
+    "items": 200724,
+    "sources": 303,
+    "relations": 57425,
+    "admins": 1,
+    "publication_metadata_digest": "3182dedfc9ff5e99f35d85cae1349017",
+    "items_digest": "6ee5e618bab80746df27043f6037fd9b",
+    "source_digest": "cd8c766f9a58b00722a7ed7d73de5bd5",
+    "relations_digest": "7e65ab85ef7fd00be27ce28f484fe681"
+  },
+  "admin_workflow_revision_preserved": "ca-7d302a9c674a97b83278.r-e6de9f90-4221-4d3c-a940-d88b2a3fd095",
+  "timestamp": "2026-10-29T15:22:41.149Z",
+  "diagnostic_only": true,
+  "main_unchanged": true,
+  "project": "curriculos-abertos-clean-20261028205403-f517a7",
+  "publication": "ca-7d302a9c674a97b83278",
+  "previous": {
+    "image_id": "sha256:edf22936409b349fbba836a7ae565f7b6d7a2fd816f217aff59574aa96701bd0",
+    "source_tree_sha256": "ba309e4c7acb53d2e17ac37db9eef46341748b654f451481ac2b092a5a6dcc98"
+  },
+  "source_tree_sha256": "93e4db2e8d8cd178d1bce43d4463360968b8b3f38a73c172c92761ebdddf8efe",
+  "image_id": "sha256:76510a41334504897c802ba1eb3f4030e7fb0d82afd09a8404d2f6ca774b22b5",
+  "files": [
+    {
+      "path": "pipeline/distribution.py",
+      "before_sha256": "88e0d758369eedb70418a7d65da33450b109038b128c4a52d34530bfa2e09f6e",
+      "after_sha256": "1195649b01d9e173d803449cca1d9fab81caa260368fa0c171603aa1e6754dbd"
+    },
+    {
+      "path": "pipeline/tests/test_distribution.py",
+      "before_sha256": "ff84845099e8b2ead0842210838271693c8da4773ea7fd825b9ca43192505986",
+      "after_sha256": "78518c188fc0146bc8f89f9c213fb5c45d49a463d25f38a9b755bba94ae8dca8"
+    }
+  ],
+  "snapshot_before": {
+    "publication": "ca-7d302a9c674a97b83278",
+    "publications": 2,
+    "items": 401448,
+    "sources": 606,
+    "relations": 114850,
+    "admins": 1,
+    "publication_metadata_digest": "c8dad2b921745f1fa5c8d6297557c8d9",
+    "items_digest": "1fb83edd51ef0fc4c99b1177e8999110",
+    "source_digest": "418d0a14156232323faa62038e81eaf9",
+    "relations_digest": "b305a5b01d1c4d860fa6b33e9bf69e54"
+  },
+  "snapshot_after": {
+    "publication": "ca-7d302a9c674a97b83278",
+    "publications": 2,
+    "items": 401448,
+    "sources": 606,
+    "relations": 114850,
+    "admins": 1,
+    "publication_metadata_digest": "c8dad2b921745f1fa5c8d6297557c8d9",
+    "items_digest": "1fb83edd51ef0fc4c99b1177e8999110",
+    "source_digest": "418d0a14156232323faa62038e81eaf9",
+    "relations_digest": "b305a5b01d1c4d860fa6b33e9bf69e54"
+  },
+  "failed_j11_job_preserved": {
+    "id": "632f5ed1-ea03-4b16-9120-3ce59ab06782",
+    "status": "paused"
+  },
+  "reason": "Delta receipt writer keeps only relations touching target sources; RAW_RELATION_OUTSIDE_SCOPE guard unchanged",
+  "passed": true
+}

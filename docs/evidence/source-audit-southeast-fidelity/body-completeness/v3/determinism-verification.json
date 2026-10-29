@@ -1,0 +1,62 @@
+{
+  "actor_type": "automated",
+  "method": "Second complete generator run; intercept all save calls in RAM and compare UTF-8 bytes/SHA to frozen files. No output file is overwritten by the replay.",
+  "checks": [
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/v3/corrective-oracle.json",
+      "existing_sha256": "1043a24cd2484f8679ae7dfc1ba7e197ff940735e4713db0398098abb4ba414b",
+      "rebuilt_sha256": "1043a24cd2484f8679ae7dfc1ba7e197ff940735e4713db0398098abb4ba414b",
+      "identical": true
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/v3/new-literal-identifiers.json",
+      "existing_sha256": "da80720cb33ba00a3ab9dbfec307225060ed7225258f367d08028c8e9eb8712e",
+      "rebuilt_sha256": "da80720cb33ba00a3ab9dbfec307225060ed7225258f367d08028c8e9eb8712e",
+      "identical": true
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/v3/canonical-body-changes.json",
+      "existing_sha256": "d07c769050c7fc526653e3895e6dde442708df792474f6a23446047434f487bf",
+      "rebuilt_sha256": "d07c769050c7fc526653e3895e6dde442708df792474f6a23446047434f487bf",
+      "identical": true
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/v3/physical-denominator-summary.json",
+      "existing_sha256": "a8499a1ec91af61b7b1a3de2a1941a9c64e74f985b03b9c9e6245d867f20b74c",
+      "rebuilt_sha256": "a8499a1ec91af61b7b1a3de2a1941a9c64e74f985b03b9c9e6245d867f20b74c",
+      "identical": true
+    },
+    {
+      "path": "data/manifests/uncoded/es-complement-coded-v3-ifa.json",
+      "existing_sha256": "c3764aac21c666462fef76da5fd99cd624537d10bea9a0f82db414beb02c6e8a",
+      "rebuilt_sha256": "c3764aac21c666462fef76da5fd99cd624537d10bea9a0f82db414beb02c6e8a",
+      "identical": true
+    },
+    {
+      "path": "data/manifests/uncoded/es-complement-coded-v3-chsa.json",
+      "existing_sha256": "4ec29487df92ee003fba2f894a4926cbd48e01494ffb0c885d437d0ba382b98f",
+      "rebuilt_sha256": "4ec29487df92ee003fba2f894a4926cbd48e01494ffb0c885d437d0ba382b98f",
+      "identical": true
+    },
+    {
+      "path": "data/manifests/uncoded/es-complement-coded-v3-energias.json",
+      "existing_sha256": "71cc613098b2eccd9e25db4e0e7695962a1a486bcadbbcbbae7680921c06db75",
+      "rebuilt_sha256": "71cc613098b2eccd9e25db4e0e7695962a1a486bcadbbcbbae7680921c06db75",
+      "identical": true
+    },
+    {
+      "path": "data/manifests/uncoded/es-complement-coded-v3-chsa-cn.json",
+      "existing_sha256": "b8712451425753d5d8135c84538896e77b3017558d76b5000bca6dd595ba9964",
+      "rebuilt_sha256": "b8712451425753d5d8135c84538896e77b3017558d76b5000bca6dd595ba9964",
+      "identical": true
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/v3/integration-proposal.json",
+      "existing_sha256": "497478af2302426e9e4615027b28ffe229cc89dedb4d65733a781ee2deb4ad7d",
+      "rebuilt_sha256": "497478af2302426e9e4615027b28ffe229cc89dedb4d65733a781ee2deb4ad7d",
+      "identical": true
+    }
+  ],
+  "passed": true,
+  "human_review": false
+}

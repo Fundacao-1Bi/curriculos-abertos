@@ -1,0 +1,251 @@
+{
+  "batch_completed": 286,
+  "batch_expected": 286,
+  "batch_state": "completed_with_errors",
+  "configuration_errors": [],
+  "eligible_unprocessed_sources": [],
+  "failed_sources": [
+    {
+      "error": "code=7: malformed page tree",
+      "source_id": "ap-rca-em",
+      "status": "failed"
+    }
+  ],
+  "job_id": "national-extraction-v150-20261028",
+  "metadata_drift_refresh_required": [
+    {
+      "batch_config_sha256": "0bb17e27b0a1169ed94cb40430c08eaea97824c9287e1444143353e0791c7c29",
+      "current_config_sha256": "271e38d6cea42c9b3c039862c122c10438de7c4387ddfbdc28d8199caaabbbab",
+      "pages": 401,
+      "source_id": "sp-curriculo-eief-isbn",
+      "uf": "SP",
+      "uncoded_items_path": "data/manifests/uncoded/sp-eief-structured-items.json"
+    },
+    {
+      "batch_config_sha256": "eecd3a66e2c3cdbeeeb625985717564d29f6462cdc600ef5b8bfbc7c528a18e2",
+      "current_config_sha256": "4da6b448bfdbc812554bce9d6dacdfcdf279650a38c0715b86eba8e7c4369368",
+      "pages": 603,
+      "source_id": "mg-crmg-eief-atualizada",
+      "uf": "MG",
+      "uncoded_items_path": "data/manifests/uncoded/mg-eief-structured-items.json"
+    },
+    {
+      "batch_config_sha256": "5b570df45bc8bd5f10f710720c4b8f9fe6991798d0cf06028e91290e4230c8fd",
+      "current_config_sha256": "55c89d58adc5ebc970ff060b73c328ebb540484f33dc47d90275da045af0815e",
+      "pages": 496,
+      "source_id": "mg-crmg-em",
+      "uf": "MG",
+      "uncoded_items_path": "data/manifests/uncoded/mg-ept-quadro37-items.json"
+    },
+    {
+      "batch_config_sha256": "c83cb4903269732049d9c24749a0b3742a0b9a9470571e358f7a41b4d14cd0cc",
+      "current_config_sha256": "bdb2bbedd413c94664bc7f549afd20b2ff89ccf344f81c00e7748474cc01ec6e",
+      "pages": 140,
+      "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+      "uf": "ES",
+      "uncoded_items_path": "data/manifests/uncoded/es-ei-items.json"
+    },
+    {
+      "batch_config_sha256": "c18de804c13404e99e99e922ff4cce93f86d2a10d7d9a229e76504e392e8ed68",
+      "current_config_sha256": "bd1ff036b9bcab5c2fe72b09d8c86410c02d1ba567d92b4367042f0bf987ea8e",
+      "pages": 15,
+      "source_id": "es-tema-integrador-final-24-10",
+      "uf": "ES",
+      "uncoded_items_path": "data/manifests/uncoded/es-temas-items.json"
+    },
+    {
+      "batch_config_sha256": "690c60a83afe7d07069920b7c5bad2805295e65bd63af733c21be5f363a56bc7",
+      "current_config_sha256": "98f8b036b6f36edcb4c3649fd3b313b1d79ba1a9ce572472cf15ff8abc7ecdf0",
+      "pages": 210,
+      "source_id": "es-curr-culo-es-2019-vol-02-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-da-natureza-e-matem-tica-m",
+      "uf": "ES",
+      "uncoded_items_path": "data/manifests/uncoded/es-ef-competencies-vol02.json"
+    },
+    {
+      "batch_config_sha256": "7c22fc2c2cf20cddce5ec99e4a59cc14f03afc8d82b53c41fb31eca2c9357443",
+      "current_config_sha256": "8415f8f83f1921e3d23ba3c5ebcd5925aeec4c22fb750596703eddc5845ad877",
+      "pages": 226,
+      "source_id": "es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso",
+      "uf": "ES",
+      "uncoded_items_path": "data/manifests/uncoded/es-ef-competencies-vol03.json"
+    },
+    {
+      "batch_config_sha256": "824f1e5ed60006f177678e15a42c721b951313bf86dd9613355392b1217552b2",
+      "current_config_sha256": "65ab1bc4d05acb4352e12b57150e2c3d2ab1ae49d29a09f9ecd64607f981b1dd",
+      "pages": 226,
+      "source_id": "es-curr-culo-es-2019-vol-04-ensino-fundamental-anos-iniciais-rea-de-linguagens-arte-e-educa-o-f-sica-mi",
+      "uf": "ES",
+      "uncoded_items_path": "data/manifests/uncoded/es-ef-competencies-vol04.json"
+    },
+    {
+      "batch_config_sha256": "dabe4a0ea01ffd24b08c16702780f8246014d4425b5de67d551be34b7b6a04d0",
+      "current_config_sha256": "d302445fae5d98d420ab125080387b0fdc81da73fc1cd37137d9828961601ad6",
+      "pages": 190,
+      "source_id": "es-curr-culo-es-2019-vol-05-ensino-fundamental-anos-iniciais-rea-de-linguagens-l-ngua-portuguesa-miolo",
+      "uf": "ES",
+      "uncoded_items_path": "data/manifests/uncoded/es-ef-competencies-vol05.json"
+    },
+    {
+      "batch_config_sha256": "471bb158da99c516c56095337ab961e63b0cc2e4287ad656ed0e427d349e1132",
+      "current_config_sha256": "1b78c459a026a9c031a56e86a18a3628c04954077ed17bc8d919566726325b2f",
+      "pages": 208,
+      "source_id": "es-curr-culo-es-2020-vol-06-ensino-fundamental-anos-finais-rea-de-ci-ncias-da-natureza-e-matem-tica-mio",
+      "uf": "ES",
+      "uncoded_items_path": "data/manifests/uncoded/es-ef-competencies-vol06.json"
+    },
+    {
+      "batch_config_sha256": "cc3ef04569f577f338fb1d17d60824a854a323dc0aacfbdebc1c699d0f3c6c4d",
+      "current_config_sha256": "940ccf3a88331ea384181fdeacd9706952b2564b27d817ef8320ba3120bdb878",
+      "pages": 280,
+      "source_id": "es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m",
+      "uf": "ES",
+      "uncoded_items_path": "data/manifests/uncoded/es-ef-competencies-vol07.json"
+    },
+    {
+      "batch_config_sha256": "9a05e47852c254ce93fc8afcc3da47f5db582c342799fd27d7b25721343fcf8d",
+      "current_config_sha256": "1e6e814cb236bc4ca83a33d25587fe1a45ffa57ffff3b4bf1f223c1b846c8479",
+      "pages": 318,
+      "source_id": "es-curr-culo-es-2020-vol-08-ensino-fundamental-anos-finais-rea-de-linguagens-arte-educa-o-f-sica-e-l-ng",
+      "uf": "ES",
+      "uncoded_items_path": "data/manifests/uncoded/es-ef-competencies-vol08.json"
+    },
+    {
+      "batch_config_sha256": "de2499ebb1ed7cd2a489d47619dd9728484dbb9124af758761365bcaac8e736b",
+      "current_config_sha256": "91e47e55db4a7ab82223240e55a21fee097243d7a5785321872313d4184180b7",
+      "pages": 298,
+      "source_id": "es-curr-culo-es-2020-vol-09-ensino-fundamental-anos-finais-rea-de-linguagens-l-ngua-portuguesa-miolo",
+      "uf": "ES",
+      "uncoded_items_path": "data/manifests/uncoded/es-ef-competencies-vol09.json"
+    },
+    {
+      "batch_config_sha256": "55ae534e8541e0024df7b1560c7c8ffcfca191e0508c8a8ebf3cd65815e6e0d3",
+      "current_config_sha256": "9675d09ff55252f7b1c9188324de74cc760866968e16259b40de8e4e035b67f4",
+      "pages": 508,
+      "source_id": "rj-doc-eief-2019",
+      "uf": "RJ",
+      "uncoded_items_path": "data/manifests/uncoded/rj-eief-structured-items.json"
+    },
+    {
+      "batch_config_sha256": "796ed17d994cce0fea17958134a41897ec9f349b7e35f8d0d097983761152cc6",
+      "current_config_sha256": "9c1f1ffedbdd75b3feeb80c85a93e1768841adfdb7ca26ea8ee12d826763e429",
+      "pages": 1679,
+      "source_id": "rj-em-itinerarios",
+      "uf": "RJ",
+      "uncoded_items_path": "data/manifests/uncoded/rj-itinerarios-objectives-items.json"
+    },
+    {
+      "batch_config_sha256": "36e2590c83dbdbcb037026a8529bc5ba0f646a3f17f30f74db5188149b01529f",
+      "current_config_sha256": "070d947fd2f8deb87277f5bc7ed669ba7dc03a00abdc367f93df9d1d1df4941c",
+      "pages": 77,
+      "source_id": "df-competencias-digitais-vol2",
+      "uf": "DF",
+      "uncoded_items_path": "data/manifests/uncoded/df-digital-complete-context-df-competencias-digitais-vol2.json"
+    },
+    {
+      "batch_config_sha256": "681383c6c797eb7cfdad1de674994e92fb0169a031f0d7b924a07a4bb886106e",
+      "current_config_sha256": "eff83ba797c445a12049b6adcbc68d4b7527a9f427f156321067ff2024b16255",
+      "pages": 140,
+      "source_id": "df-competencias-digitais-vol3",
+      "uf": "DF",
+      "uncoded_items_path": "data/manifests/uncoded/df-digital-complete-context-v1.2-candidate-df-competencias-digitais-vol3.json"
+    },
+    {
+      "batch_config_sha256": "598993412c30597626e7e50949f601ab7ec1acdd23ecc2cc19fe36f50a7c1eb2",
+      "current_config_sha256": "e81ab36b153779795ec7f22058d1bf8faa76343c14ec44c5b51002c9cd654ea2",
+      "pages": 361,
+      "source_id": "pa-dcepa-ei-ef",
+      "uf": "PA",
+      "uncoded_items_path": "data/manifests/uncoded/pa-dcepa-habilidades-v1-combined-items.json"
+    },
+    {
+      "batch_config_sha256": "d599cdb6b0269c05eafa1c23255a11beef79a65d79da996fd2d9c46452c756df",
+      "current_config_sha256": "fe96bc144d61a614463a7037c80fa3201e9f5dc962987372d3ff475629999144",
+      "pages": 119,
+      "source_id": "ro-eletivas-2026",
+      "uf": "RO",
+      "uncoded_items_path": "data/manifests/uncoded/ro-eletivas-competency-fields-v3.json"
+    },
+    {
+      "batch_config_sha256": "7eb10d41b2b2b12bee51373cf851a5b675d3bbc0a452d3cbeac8b744a74ec6bb",
+      "current_config_sha256": "2b4054aaa08c97ccfd7bcaa102db1914e76a1f6007171341ea5c9becec80958b",
+      "pages": 634,
+      "source_id": "rr-dcr-ei-ef",
+      "uf": "RR",
+      "uncoded_items_path": "data/manifests/uncoded/rr-ei-organizers-age-v2-items.json"
+    },
+    {
+      "batch_config_sha256": "a7ba6154888e94cb003a96fc684db7ac4c543b28e7b2fe3a77f6bb453db2ede5",
+      "current_config_sha256": "023d20beec0ceacf3dccf7fe14feb1373ec2f70fd34ca897938ea7f00468f91c",
+      "pages": 110,
+      "source_id": "to-dct-ei",
+      "uf": "TO",
+      "uncoded_items_path": "data/manifests/uncoded/to-ei-rights-v3-items.json"
+    },
+    {
+      "batch_config_sha256": "85b2f1537c5a3984efc17a4aedd39ff5aca1490574ca23ed3c62240530560034",
+      "current_config_sha256": "776401766aff1c037826e22c1f2072e1c5ada89db048f9cb4574ef304e53f179",
+      "pages": 173,
+      "source_id": "ro-rcro-ei",
+      "uf": "RO",
+      "uncoded_items_path": "data/manifests/uncoded/ro-ei-complete-primary.json"
+    },
+    {
+      "batch_config_sha256": "b3b29be14f38901e823d71eb06bdd5ee0249fb4f924a97a90dce7582fd24449e",
+      "current_config_sha256": "c1e5eae9934b555b117691b55bc8eb5936f215ba07675d37f058552c0d865149",
+      "pages": 614,
+      "source_id": "ap-rca-ei-ef-mec",
+      "uf": "AP",
+      "uncoded_items_path": "data/manifests/uncoded/ap-rca614-items.json"
+    },
+    {
+      "batch_config_sha256": "608fef450e39d0571a0bb0d415329936031db65c5be115d6e063e7a8538ab19a",
+      "current_config_sha256": "df0e95513e712f0c99c998d8738af8fcba0c19f57ffb6ca1eefcd46491b96cfe",
+      "pages": 267,
+      "source_id": "ro-educacao-digital-2026",
+      "uf": "RO",
+      "uncoded_items_path": "data/manifests/uncoded/ro-digital-ei-primary-organizer.json"
+    },
+    {
+      "batch_config_sha256": "99dc6d16dd09b9b25c75e9a30ef5ecf4e28ad1e1789a3c83e6754493125df4a7",
+      "current_config_sha256": "25d70277fd4ec0a6f4ff308ef4306cd72ec2dedc824b75df955a8ba5bc079e9b",
+      "pages": 3,
+      "source_id": "ap-plano-em-001-2026",
+      "uf": "AP",
+      "uncoded_items_path": null
+    },
+    {
+      "batch_config_sha256": "34e4cf5c5b0b0004e723385725ca7694de33ed5b1c9330b19720fa3f5f71a73b",
+      "current_config_sha256": "717d5a6dd4b2f595d96d1ce8c2cf2339e9ec277eb8d1803c35a1af4007c635b9",
+      "pages": 8,
+      "source_id": "pe-historia-pernambuco-2026",
+      "uf": "PE",
+      "uncoded_items_path": "data/manifests/uncoded/pe-historia-items.json"
+    },
+    {
+      "batch_config_sha256": "03af6b8a50e319d59043b96b5c4030925e5ca93576edecb96069d1851e109c38",
+      "current_config_sha256": "bfb4b5d763d0d461bc894115b1a910ba16d9f0e632c9c4649d3ebf4dbe8ad7c2",
+      "pages": 2,
+      "source_id": "pi-resolucao-188-2025",
+      "uf": "PI",
+      "uncoded_items_path": "data/manifests/uncoded/pi-resolucao-188-2025-items.json"
+    },
+    {
+      "batch_config_sha256": "e9c0be84543199b9ef944c5a23e0b4f3b9690181ed3518b38db8bebe540b20f0",
+      "current_config_sha256": "5c36d940ba1f0d4cafe3110e3bae6ca30a99d1cdf7e13f67220efbe1735f2354",
+      "pages": 21,
+      "source_id": "ba-resolucao-266-2025-computacao",
+      "uf": "BA",
+      "uncoded_items_path": "data/manifests/uncoded/ba-resolucao-266-items.json"
+    },
+    {
+      "batch_config_sha256": "eff15a6da0498cdea47c8788ee823b9fb630ed1b23fb7bc9b3ea771d45159837",
+      "current_config_sha256": "9d4fd13791f1c334dc213bf374fad3dfb0592831b4c39a5ffb851a520ecf179a",
+      "pages": 2,
+      "source_id": "ba-resolucao-125-2024-historia",
+      "uf": "BA",
+      "uncoded_items_path": "data/manifests/uncoded/ba-resolucao-125-items.json"
+    }
+  ],
+  "read_only": true,
+  "updated_at": "2026-10-28T18:16:25.362903+00:00"
+}

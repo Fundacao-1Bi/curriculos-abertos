@@ -1,0 +1,67 @@
+{
+  "adapter_path": "data/manifests/uncoded/ro-ef-with-historia-v5.json",
+  "adapter_sha256": "7d1739d8eefba5aadabc0e19de65851248c21067c652dd0792e1602bc4493eb8",
+  "base694_preserved_exactly": true,
+  "binding_ready": false,
+  "body_continuation_fragments": 11,
+  "coded_history_definitions": 156,
+  "command": "var/venv-pipeline/bin/python docs/evidence/source-audit-ro/build_ef_historia.py",
+  "engine": {
+    "pymupdf": "1.26.7",
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "grade_counts": {
+    "1": 12,
+    "2": 12,
+    "3": 12,
+    "4": 11,
+    "5": 10,
+    "6": 19,
+    "7": 17,
+    "8": 27,
+    "9": 36
+  },
+  "independent_readback_passed": true,
+  "kinds": {
+    "ano_escolar": 27,
+    "area_conhecimento": 1,
+    "competencia_especifica": 90,
+    "competencia_geral": 10,
+    "componente_curricular": 3,
+    "grupo_competencias": 13,
+    "grupo_curricular": 4,
+    "habilidade": 490,
+    "objeto_conhecimento": 226,
+    "organizador_curricular": 3,
+    "unidade_tematica": 136
+  },
+  "nonstandard_local_identifiers": [
+    {
+      "code": "EF01HI01.1RO",
+      "page": 501
+    },
+    {
+      "code": "EF01HI05.2RO",
+      "page": 502
+    },
+    {
+      "code": "EF01HI05.3RO",
+      "page": 502
+    },
+    {
+      "code": "EF01HI08.4RO",
+      "page": 503
+    },
+    {
+      "code": "EF02HI05.5RO",
+      "page": 504
+    }
+  ],
+  "proposal_withheld_for_manifest_owner_checkpoint": true,
+  "ready": false,
+  "real_loader_finalizer_schema_records": 1003,
+  "reconciled": false,
+  "records": 1003,
+  "source_id": "ro-rcro-ef",
+  "source_sha256": "c8a25381bc5311326bf0fe1528c9941fb78d618d1b0696f0129baf6fa75f1ea2"
+}

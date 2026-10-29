@@ -17,26 +17,142 @@
   },
   "implemented_and_executed": [
     {
+      "source_id": "sp-curriculo-eief-isbn",
+      "source_sha256": "f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500",
+      "expected_previous_uncoded_items_path": null,
+      "proposed_uncoded_items_path": "data/manifests/uncoded/sp-eief-structured-items.json",
+      "sidecar_sha256": "1f40faf53de864fbda0078053a9e8cc1446f045c392906b017f9e3d31fb59e34",
+      "bytes": 422811,
+      "nodes": 115,
+      "real_importer_proof": "docs/evidence/source-audit-southeast-completeness/sp-eief-structured-items-real-importer-proof.json",
+      "real_importer_finalizer_schema_idempotence_passed": true,
+      "adapter_authority_proposed": false,
+      "source_ready": false
+    },
+    {
+      "source_id": "mg-crmg-eief-atualizada",
+      "source_sha256": "792857369c0c80dd87fff092137053e7a5cbed1c61fcbbd6caa6efbc072154ea",
+      "expected_previous_uncoded_items_path": null,
+      "proposed_uncoded_items_path": "data/manifests/uncoded/mg-eief-structured-items.json",
+      "sidecar_sha256": "9615a86a6cb029bf46f12eac429ed0088f81e2772b6b80c423269d6374c3d4c4",
+      "bytes": 416785,
+      "nodes": 113,
+      "real_importer_proof": "docs/evidence/source-audit-southeast-completeness/mg-eief-structured-items-real-importer-proof.json",
+      "real_importer_finalizer_schema_idempotence_passed": true,
+      "adapter_authority_proposed": false,
+      "source_ready": false
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "source_sha256": "b915967926c621164aba46d5cbdbd74406a658410695199ef6ae3926de138bf6",
+      "expected_previous_uncoded_items_path": "data/manifests/uncoded/rj-ei-rights.json",
+      "proposed_uncoded_items_path": "data/manifests/uncoded/rj-eief-structured-items.json",
+      "sidecar_sha256": "dbbf047c569cbadee6afcd69cf16d504275942d9894c4acb0fbca041086d9eeb",
+      "bytes": 353279,
+      "nodes": 136,
+      "real_importer_proof": "docs/evidence/source-audit-southeast-completeness/rj-eief-structured-items-real-importer-proof.json",
+      "real_importer_finalizer_schema_idempotence_passed": true,
+      "adapter_authority_proposed": false,
+      "source_ready": false
+    },
+    {
       "source_id": "mg-crmg-em",
-      "part": "Quadro37",
-      "sidecar": "data/manifests/uncoded/mg-ept-quadro37-items.json",
-      "items": 24,
-      "competencies": 4,
-      "local_coded_skills": 19,
-      "actual_importer_and_finalizer_passed": true,
-      "unresolved_parents": 0
+      "source_sha256": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
+      "expected_previous_uncoded_items_path": null,
+      "proposed_uncoded_items_path": "data/manifests/uncoded/mg-ept-quadro37-items.json",
+      "sidecar_sha256": "54bb8bb64958e40183e5c89170ee8328aa9d3eb6a1f6e59852d815476695e1a5",
+      "bytes": 62999,
+      "nodes": 24,
+      "real_importer_proof": "docs/evidence/source-audit-southeast-completeness/mg-ept-quadro37-items-real-importer-proof.json",
+      "real_importer_finalizer_schema_idempotence_passed": true,
+      "adapter_authority_proposed": false,
+      "source_ready": false
+    },
+    {
+      "source_id": "rj-em-itinerarios",
+      "source_sha256": "77b9009c0880120860ca53b1743df572a5ed3dcf836149296bbbc7a08e978a76",
+      "expected_previous_uncoded_items_path": null,
+      "proposed_uncoded_items_path": "data/manifests/uncoded/rj-itinerarios-objectives-items.json",
+      "sidecar_sha256": "f7237754b308220133a4410926dd6b3dcf5f408c31ddec58e3a42817cf3a41f1",
+      "bytes": 670999,
+      "nodes": 182,
+      "real_importer_proof": "docs/evidence/source-audit-southeast-completeness/rj-itinerarios-objectives-items-real-importer-proof.json",
+      "real_importer_finalizer_schema_idempotence_passed": true,
+      "adapter_authority_proposed": false,
+      "source_ready": false
     }
   ],
-  "concrete_next_omissions": [
-    "Numbered competencies/learning rights in SP/MG/RJ currently only generic page sections except RJ30EI rights",
-    "RJ itineraries1679p contains explicit Objetivos do Componente Curricular prose and course/trilha/grade hierarchy, unparsed by generic code reader",
-    "RJ integral/technical1729p contains independent local course/training families beyond initial17page narrative; do not drop appendices"
+  "integrable_nodes": 570,
+  "preserved_existing_rj_rights": 30,
+  "new_nodes": 540,
+  "canonical_skill_count_note": "540 newly structured source nodes are not 540 new student skills:284 competency paragraphs +4localEPTcompetencies,19localEPTskills,12generalEIrights,54componentpurposes, and structural/context nodes. ExistingRJ30EIrights retained.",
+  "concrete_remaining_work": [
+    "SP/MG/RJ all sources remain unreconciled;16source native census is not normative content completeness.",
+    "MG EI differentiated rights byfield/age and uncoded didactic columns remain generic context, distinct from six general rights just added.",
+    "SP EM and MG EM general/specific competencies and uncoded formative/itinerary nodes beyond MGQ37 remain to be structured and reconciled.",
+    "RJ integral/technical1729p contains independent local course/training families, competencies, programmatic content and uncoded purposes beyond initial narrative; no appendix dropped.",
+    "RJ1679programmatic contents,activities and repeatedBNCCcompetency references remain separate from54componentpurposes and are not certified by this adapter.",
+    "SP EI field-specific rights30 are now recovered in a separate versioned candidate; other uncoded normative prose still needs typed reconciliation. A synthesis label not found in native text is not proof of absence; low-native/image pages require documentary disposition.",
+    "NationalFULL extraction+codefidelity confrontation after binding and frozenparser remains pending."
   ],
-  "current_priority": "RN uncoded peer completed; await any final FULL coded-reader confrontation while continuing SP/MG/RJ. NE PI2page peer requested, priority coordinated with root.",
   "external_access_blockers": [],
+  "source_or_uf_marked_ready": false,
+  "source_manifest_or_core_edited": false,
+  "production_cache_written": false,
+  "current_priority": "Deliver pinned bindings and real importer evidence, then continue independently inventorying the remaining source-only normative parts. RN uncoded peer PASS; RN codedReader confrontation after nationalFULL still pending.",
   "constraints": [
-    "No new renders, raw copies or large JSON while disk warning applies",
-    "Do not edit core/manifest/existing helpers without coordination",
-    "No source or UF marked ready by this front"
-  ]
+    "No new full-page renders/raw copies/large diagnosticJSON under disk restriction.",
+    "Do not edit core/manifests/existing helpers without owner coordination.",
+    "No count is a declaration of pedagogical review or source/UFready."
+  ],
+  "root_applied_additive_bindings": {
+    "proof": "bindings-observed-after-root.json",
+    "source_count": 5,
+    "passed": true,
+    "this_front_edited_manifest": false
+  },
+  "additional_versioned_increment": {
+    "source_id": "mg-crmg-em",
+    "source_sha256": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
+    "expected_previous_uncoded_items_path": "data/manifests/uncoded/mg-ept-quadro37-items.json",
+    "expected_previous_sha256": "54bb8bb64958e40183e5c89170ee8328aa9d3eb6a1f6e59852d815476695e1a5",
+    "proposed_uncoded_items_path": "data/manifests/uncoded/mg-em-structured-v2-items.json",
+    "proposed_sha256": "e28b252203c761cacb038d3bd54c9ab320173b77abe81ba2b0345318072257b0",
+    "nodes": 95,
+    "new_nodes_over_bound_Q37": 71,
+    "preserved_existing_q37_records_deep_equal": true,
+    "preserved_v1_records_deep_equal": true,
+    "source_manifest_edited": false,
+    "already_delivered_570_pins_modified": false,
+    "authority_proposed": false,
+    "full_source_reconciled": false,
+    "actual_importer_proof": "mg-em-structured-v2-items-real-importer-proof.json",
+    "passed": true,
+    "status": "proposed_for_coordinated_composition_with_coded_body_recovery",
+    "new_nodes_over_integrated570": 71
+  },
+  "additional_source_findings": {
+    "SP_differentiated_EI_rights": {
+      "fields": 5,
+      "rights": 30,
+      "nodes": 35,
+      "path": "data/manifests/uncoded/sp-ei-field-rights-v1-items.json",
+      "proof": "sp-ei-field-rights-v1-verification.json",
+      "distinct_from_general_rights": true,
+      "binding_pending": true
+    },
+    "SP_nonstandard_code_tokens": {
+      "lexical_census": "sp-all-bracketed-code-lexical-census.json",
+      "all_source_pages_read": 401,
+      "bracketed_occurrences": 1983,
+      "unrecognized_literal_tokens": [
+        "EIO2TS04",
+        "EIO3TS04",
+        "EF069AR16"
+      ],
+      "first_two_glyphs_original_visual_confirmed": true,
+      "third_glyph_visual_pending_authorized_minimal_crop": true,
+      "no_normalization_or_alias_applied": true
+    }
+  }
 }

@@ -40,3 +40,23 @@ test('ES learning synthesis keeps its source warning, pending OCR and unknown ag
  const headings=rows.filter((row:{kind:string})=>row.kind==='campo_sintese_aprendizagem');assert.equal(headings.length,5);for(const row of headings)assert.equal(itemKindCategory(row.kind),'context');
  for(const kind of ['saber_curricular','pilar_matriz_saberes','valor_principio','objetivo_curricular','indicador_observacao'])assert.equal(isLearningKind(kind),false,kind);
 });
+
+
+test('BA266 legal propositions and historical Parecer material remain legal/documentary roles without invented learning codes',async()=>{
+ const normative=['referencia_normativa_preambular','secao_normativa_ato','postulacao_curricular','parecer_normativo','registro_aprovacao','voto_parecer'];const context=['relatorio_parecer','fundamentacao_parecer','nota_documental','quadro_documental','linha_quadro_documental','fonte_quadro_documental'];
+ for(const kind of normative){assert.equal(itemKindCategory(kind),'normative',kind);assert.equal(isLearningKind(kind),false,kind);}for(const kind of context){assert.equal(itemKindCategory(kind),'context',kind);assert.equal(isLearningKind(kind),false,kind);}
+ const rows=JSON.parse(await readFile('data/manifests/uncoded/ba-resolucao-266-items.json','utf8'));assert.equal(rows.length,141);assert.ok(rows.every((row:{code:null;kind:string})=>row.code===null&&!isLearningKind(row.kind)));
+ const propositions=rows.filter((row:{kind:string})=>row.kind==='postulacao_curricular');assert.equal(propositions.length,8);for(const row of propositions){assert.match(row.key,/^article-10-inciso-/);assert.equal(row.parent_key,'article-10');assert.deepEqual(row.positions.map((p:{stage:string})=>p.stage),['EI']);}
+ const source=rows.find((row:{key:string})=>row.key==='parecer-table-source');assert.match(source.text,/^Fonte: Barcelos e Moll, 2021/);const tableRows=rows.filter((row:{kind:string})=>row.kind==='linha_quadro_documental');assert.equal(tableRows.length,2);for(const row of tableRows){assert.equal(row.source_context.printed_table_column_headers_present,false);assert.ok(Array.isArray(row.source_context.table_columns_descriptive_not_printed));}
+ assert.equal(LEARNING_KINDS.length,22);
+});
+
+
+test('amended legal quotations differ from outer articles and rights/trail headings differ from student expectations',async()=>{
+ assert.equal(itemKindCategory('dispositivo_normativo_alterado'),'normative');for(const kind of ['grupo_direitos_aprendizagem','oferta_trilha','trilha_curricular'])assert.equal(itemKindCategory(kind),'context');
+ const readRows=async(path:string)=>{const value=JSON.parse(await readFile(path,'utf8'));return Array.isArray(value)?value:value.items;};
+ const amended=(await readRows('data/manifests/uncoded/ba-resolucao-125-items.json')).filter((row:{kind:string})=>row.kind==='dispositivo_normativo_alterado');assert.equal(amended.length,1);assert.equal(amended[0].parent_key,'article-1');assert.match(amended[0].text,/^Art\. 19\./);assert.equal(amended[0].source_context.quoted_amended_article_not_seventh_outer_article,true);
+ for(const path of ['data/manifests/uncoded/sp-eief-rights-items.json','data/manifests/uncoded/mg-eief-rights-items.json']){const groups=(await readRows(path)).filter((row:{kind:string})=>row.kind==='grupo_direitos_aprendizagem');assert.equal(groups.length,1);assert.equal(groups[0].source_context.learning_objective_claim,false);assert.equal(groups[0].source_context.source_role,'Original general EI rights heading');}
+ const trails=await readRows('data/manifests/uncoded/rj-itinerarios-objectives-items.json');assert.equal(trails.filter((row:{kind:string})=>row.kind==='oferta_trilha').length,54);assert.equal(trails.filter((row:{kind:string})=>row.kind==='trilha_curricular').length,13);for(const row of trails.filter((row:{kind:string})=>['oferta_trilha','trilha_curricular'].includes(row.kind))){assert.equal(row.code,null);assert.equal(isLearningKind(row.kind),false);}
+ assert.equal(LEARNING_KINDS.length,22);assert.equal(itemKindCategory('tipo_novo_sem_revisao'),'unclassified');
+});

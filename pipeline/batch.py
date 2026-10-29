@@ -15,11 +15,15 @@ def one(source):
     except Exception as error: return {'source_id':source['id'],'status':'failed','error':str(error)}
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--workers',type=int,default=4);parser.add_argument('--uf');parser.add_argument('--skip-ocr',action='store_true');parser.add_argument('--job-id',default='national-extraction');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--workers',type=int,default=4);parser.add_argument('--uf');parser.add_argument('--source',action='append');parser.add_argument('--skip-ocr',action='store_true');parser.add_argument('--job-id',default='national-extraction');args=parser.parse_args()
     import re
     if not re.fullmatch(r'[A-Za-z0-9_-]{1,100}',args.job_id):raise ValueError('Invalid batch job ID')
     if args.skip_ocr: os.environ['SOURCE_SKIP_OCR']='1'
-    sources=[s for s in load_sources() if s.get('include_in_corpus',True) and s.get('publication_eligible',True) and s.get('local_path') and safe_path(s['local_path']).exists() and (not args.uf or s['uf']==args.uf)]
+    registered=load_sources();targets=set(args.source or [])
+    unknown=targets-{s['id'] for s in registered}
+    if unknown:raise ValueError('Unregistered source targets: '+', '.join(sorted(unknown)))
+    sources=[s for s in registered if s.get('include_in_corpus',True) and s.get('publication_eligible',True) and s.get('local_path') and safe_path(s['local_path']).exists() and (not args.uf or s['uf']==args.uf) and (not targets or s['id'] in targets)]
+    if targets and targets!={s['id'] for s in sources}:raise ValueError('Every explicit target must have an eligible locally acquired artifact')
     # Short/native artifacts first for useful incremental integration; all remain mandatory.
     sources.sort(key=lambda s:safe_path(s['local_path']).stat().st_size)
     results=[];path=ROOT/'var/jobs'/f'{args.job_id}.json';started_at=now()

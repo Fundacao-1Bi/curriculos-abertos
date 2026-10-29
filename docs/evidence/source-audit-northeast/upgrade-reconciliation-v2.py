@@ -70,6 +70,35 @@ def plan(source, old):
                  [u['expected_item_id'] for u in front], path,
                  'Independent original cover and institutional-credit pages: one complete documentary context per page; IDs derive the documented page-section identity contract.',
                  [u['evidence'] for u in front])]
+    if sid == 'ba-resolucao-125-2024-historia':
+        path = 'docs/evidence/source-audit-northeast/ba-res125-source-only-inventory.json'
+        inv = read(path)
+        assert inv['expected_documentary_records'] == 23 and inv['outer_article_numbers'] == [1,2,3,4,5,6]
+        peer = read('docs/evidence/source-audit-ba-res125-peer/peer-verification.json')
+        assert peer['passed'] and peer['sidecar_sha256'] == digest(source['uncoded_items_path'])
+        quoted = [k for k in inv['expected_structural_keys'] if k.startswith('amended-')]
+        foot = [k for k in inv['expected_structural_keys'] if k.startswith('footer-')]
+        body = [k for k in inv['expected_structural_keys'] if k not in quoted+foot]
+        assert (len(body),len(quoted),len(foot)) == (14,7,2)
+        side = read(source['uncoded_items_path'])
+        return [(parts[0] if n != 1 else parts[1], 'documentary_context' if n == 2 else 'normative',
+                 [[1,2]], section_ids(sid,keys), path, inv['method'],
+                 [e for r in side if r['key'] in keys for e in r['evidence']])
+                for n,keys in enumerate([body,quoted,foot])]
+    if sid == 'ba-resolucao-266-2025-computacao':
+        path = 'docs/evidence/source-audit-northeast/ba-res266-source-only-inventory.json'
+        inv = read(path)
+        assert (inv['expected_resolution_records'],inv['expected_parecer_records']) == (123,18)
+        peer = read('docs/evidence/source-audit-ba-res266-peer/verification.json')
+        assert peer['result'] == 'passed' and peer['pins']['sidecar'] == digest(source['uncoded_items_path'])
+        assert peer['pins']['producer_census'] == digest(path)
+        side = read(source['uncoded_items_path'])
+        return [(parts[n], 'normative' if n == 0 else 'documentary_context', ranges,
+                 section_ids(sid,keys), path, inv['method'],
+                 [e for r in side if r['key'] in samples for e in r['evidence']])
+                for n,keys,ranges,samples in [
+                    (0,inv['expected_resolution_keys'],[[1,12]],['resolution-266','article-10','article-20','article-21','resolution-homologation-publication']),
+                    (1,inv['expected_parecer_keys'],[[13,21]],['parecer-365','parecer-table-row-educommunication','parecer-footnote-1','parecer-vote','parecer-signature'])]]
     if sid.startswith('ma-'):
         path = 'docs/evidence/source-audit-ma-current/ma-normative-source-census.json'
         inv = next(s for s in read(path)['sources'] if s['source_id'] == sid)
@@ -103,7 +132,7 @@ def plan(source, old):
     inv = read(path)
     assert inv['expected_public_documentary_records'] == 14 and inv['expected_normative_article_count'] == 1 and inv['expected_considerando_count'] == 2
     peer = read('docs/evidence/source-audit-pi-res188-peer/peer-verification.json')
-    assert peer.get('status') == 'passed', peer.get('status')
+    assert peer.get('passed') is True, peer.get('passed')
     bypart = {p['part_key']: p for p in inv['parts']}
     side = read(source['uncoded_items_path'])
     assert digest(source['uncoded_items_path']) == 'fa56051d8e4677615a33e5d2d1edea7634cdde1330b9b274698377b7f56180e2'
@@ -124,7 +153,8 @@ def plan(source, old):
 sources = read('data/manifests/northeast.json')
 selected = ['ba-resolucao-249-2026', 'pe-historia-pernambuco-2026',
             'rn-portaria-11123-2025', 'ma-resolucao-211-2026-doe',
-            'ma-portaria-181-2026-recomposicao-doe', 'pi-resolucao-188-2025']
+            'ma-portaria-181-2026-recomposicao-doe', 'pi-resolucao-188-2025',
+            'ba-resolucao-125-2024-historia','ba-resolucao-266-2025-computacao']
 schema = read('data/schema/1.1.0.json')
 learning_schema = {'$ref': '#/$defs/Learning', '$defs': schema['$defs']}
 results = []

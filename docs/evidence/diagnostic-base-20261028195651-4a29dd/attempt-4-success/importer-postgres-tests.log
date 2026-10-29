@@ -1,0 +1,12 @@
+✔ all published optional fields remain absent under both manual and pinned-schema validation (93.968625ms)
+✔ manual guards reject wrong supplied values and required-field loss without coercion (1.745875ms)
+✔ real PostgreSQL embedded import preserves sparse and explicit-null records exactly (30.182584ms)
+✔ real PostgreSQL sharded import checks the same optional contract and rejects malformed supplied metadata (80.076917ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1247.228959

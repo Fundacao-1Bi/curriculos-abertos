@@ -1,0 +1,213 @@
+{
+  "source_id": "mg-matrizes-2026",
+  "source_sha256": "bbc01f6b27a10f1794162bbe9effe5fc430796972abcbd45b74e05958534f2bc",
+  "sidecar_path": "data/manifests/uncoded/mg-matrizes2026-body13-candidate-v1-items.json",
+  "sidecar_sha256": "d79aec0b269bf438745e229047912f9addfd24eb082e4bf2e114cdc93b2402a5",
+  "strict_source_glyph_and_line_checks_passed": true,
+  "direct_source_trace_glyph_occurrences": 41912,
+  "physical_baselines": 598,
+  "nonempty_source_lines": 558,
+  "original_raster_pixel_identity_pages": 13,
+  "source_pages": [
+    {
+      "page": 1,
+      "original_trace_glyph_occurrences": 2717,
+      "physical_baselines": 42
+    },
+    {
+      "page": 2,
+      "original_trace_glyph_occurrences": 2817,
+      "physical_baselines": 48
+    },
+    {
+      "page": 3,
+      "original_trace_glyph_occurrences": 3338,
+      "physical_baselines": 49
+    },
+    {
+      "page": 4,
+      "original_trace_glyph_occurrences": 3607,
+      "physical_baselines": 50
+    },
+    {
+      "page": 5,
+      "original_trace_glyph_occurrences": 3745,
+      "physical_baselines": 49
+    },
+    {
+      "page": 6,
+      "original_trace_glyph_occurrences": 3385,
+      "physical_baselines": 49
+    },
+    {
+      "page": 7,
+      "original_trace_glyph_occurrences": 3259,
+      "physical_baselines": 48
+    },
+    {
+      "page": 8,
+      "original_trace_glyph_occurrences": 3355,
+      "physical_baselines": 49
+    },
+    {
+      "page": 9,
+      "original_trace_glyph_occurrences": 3757,
+      "physical_baselines": 49
+    },
+    {
+      "page": 10,
+      "original_trace_glyph_occurrences": 3822,
+      "physical_baselines": 47
+    },
+    {
+      "page": 11,
+      "original_trace_glyph_occurrences": 3611,
+      "physical_baselines": 49
+    },
+    {
+      "page": 12,
+      "original_trace_glyph_occurrences": 3420,
+      "physical_baselines": 50
+    },
+    {
+      "page": 13,
+      "original_trace_glyph_occurrences": 1079,
+      "physical_baselines": 19
+    }
+  ],
+  "actual_importer_executed": true,
+  "actual_finalizer_executed": true,
+  "imported_nodes": 265,
+  "schema_errors": [],
+  "validation_errors": [],
+  "orphans": [],
+  "idempotent": true,
+  "negative_controls": [
+    {
+      "name": "inserted editorial words",
+      "layer": "strict_original_source_glyph_line_guard",
+      "rejected": true
+    },
+    {
+      "name": "accent substitution accepted by coarse ASCII normalization is rejected by strict glyph guard",
+      "layer": "strict_original_source_glyph_line_guard",
+      "rejected": true
+    },
+    {
+      "name": "en dash changed to em dash",
+      "layer": "strict_original_source_glyph_line_guard",
+      "rejected": true
+    },
+    {
+      "name": "ordinal changed to degree",
+      "layer": "strict_original_source_glyph_line_guard",
+      "rejected": true
+    },
+    {
+      "name": "omitted physical source line",
+      "layer": "strict_original_source_glyph_line_guard",
+      "rejected": true
+    },
+    {
+      "name": "reordered continuation lines",
+      "layer": "strict_original_source_glyph_line_guard",
+      "rejected": true
+    },
+    {
+      "name": "wrong physical evidence box",
+      "layer": "strict_original_source_glyph_line_guard",
+      "rejected": true
+    },
+    {
+      "name": "wrong reviewed-reference hash",
+      "layer": "strict_original_source_glyph_line_guard",
+      "rejected": true
+    },
+    {
+      "name": "wrong source artifact hash",
+      "layer": "strict_original_source_glyph_line_guard",
+      "rejected": true
+    },
+    {
+      "name": "other source is not accepted",
+      "layer": "strict_original_source_glyph_line_guard",
+      "rejected": true
+    },
+    {
+      "name": "article number must not be invented as learner year",
+      "layer": "strict_original_source_glyph_line_guard",
+      "rejected": true
+    },
+    {
+      "name": "official learner code must not be invented",
+      "layer": "strict_original_source_glyph_line_guard",
+      "rejected": true
+    }
+  ],
+  "before": {
+    "parser": {
+      "algorithm": "sha256-of-sorted-parser-file-digests",
+      "sha256": "541aa3377fd409f9c172e1580ae988f5869b25e5331c98528ab68fb9a09360db",
+      "files": {
+        "ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+        "geometry.py": "f0f2f7230602a051712fd116bce3c9d62bcb3e316d07412f8ed7ff3cda37467d",
+        "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
+        "es_ei_rows.py": "37f73cc3140e9ce2b696f7f6e8df5d7c0e299a3d71630fc23b7610f8178c1f72",
+        "es_geometry.py": "0c765d49f58355a8ff50e46c3e1aa8cf3d724ae50ba45609b2e918e9d7a9f80f",
+        "ms_glyphs.py": "b763a98f2c3691d05bdfbdf506804982bfdb37ef807a5fe8a7b7b85a043d21f1",
+        "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
+        "am_ocr_grid.py": "7b7e7f69141f67674171ea0c899b62bf42a4edf8e616ae2ea338f5b2b6f08883",
+        "am_positions.py": "e79b328f6d194891566a584dcf45d29e582debe1c8273d50960db9e7db060fad",
+        "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
+        "rs_ms_geometry.py": "f85f208c88957570f85fc6802745fff53b358f58c3c2c46a99e5aec1bee16e4e",
+        "rn_document_roles.py": "a805aefdf01c19908b23059b7f4e5bcabaa28be58f0e2efdcb5314c4eedf67c7",
+        "pe_document_roles.py": "b5074ce8cb27d67dd69838f1d4e9bac4bbb4c32074c9b46af2095c5520f55bd3",
+        "al_document_roles.py": "e6aa718293434e941d12523f82ed54c4c8bdcc46eae202497ba1964833adda98",
+        "pe_fgb_document_roles.py": "7f536ea2114968fe1211b7b3c7195aad52a05c6fc29edd806611c639486c2aca",
+        "document_roles.py": "ea4e0b161d015f6e87e4fa2b7dde202e1605815efff1e6ec48adf137f311a20f",
+        "br_primary_evidence.py": "db69ed6363af035b1f077af8cd7308496da44b84b5a8516293c57c4856ed16f3",
+        "runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce"
+      }
+    },
+    "manifest": "6e35f96fd2206af3d52fec3521ab7985220aa1abcf0c7afd2052a36760418d3e",
+    "production_cache": "8a1208d3a96a19ec9e7a2e1d028872db53c93d60606702c16818b000e64b3919",
+    "sidecar": "d79aec0b269bf438745e229047912f9addfd24eb082e4bf2e114cdc93b2402a5"
+  },
+  "after": {
+    "parser": {
+      "algorithm": "sha256-of-sorted-parser-file-digests",
+      "sha256": "541aa3377fd409f9c172e1580ae988f5869b25e5331c98528ab68fb9a09360db",
+      "files": {
+        "ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+        "geometry.py": "f0f2f7230602a051712fd116bce3c9d62bcb3e316d07412f8ed7ff3cda37467d",
+        "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
+        "es_ei_rows.py": "37f73cc3140e9ce2b696f7f6e8df5d7c0e299a3d71630fc23b7610f8178c1f72",
+        "es_geometry.py": "0c765d49f58355a8ff50e46c3e1aa8cf3d724ae50ba45609b2e918e9d7a9f80f",
+        "ms_glyphs.py": "b763a98f2c3691d05bdfbdf506804982bfdb37ef807a5fe8a7b7b85a043d21f1",
+        "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
+        "am_ocr_grid.py": "7b7e7f69141f67674171ea0c899b62bf42a4edf8e616ae2ea338f5b2b6f08883",
+        "am_positions.py": "e79b328f6d194891566a584dcf45d29e582debe1c8273d50960db9e7db060fad",
+        "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
+        "rs_ms_geometry.py": "f85f208c88957570f85fc6802745fff53b358f58c3c2c46a99e5aec1bee16e4e",
+        "rn_document_roles.py": "a805aefdf01c19908b23059b7f4e5bcabaa28be58f0e2efdcb5314c4eedf67c7",
+        "pe_document_roles.py": "b5074ce8cb27d67dd69838f1d4e9bac4bbb4c32074c9b46af2095c5520f55bd3",
+        "al_document_roles.py": "e6aa718293434e941d12523f82ed54c4c8bdcc46eae202497ba1964833adda98",
+        "pe_fgb_document_roles.py": "7f536ea2114968fe1211b7b3c7195aad52a05c6fc29edd806611c639486c2aca",
+        "document_roles.py": "ea4e0b161d015f6e87e4fa2b7dde202e1605815efff1e6ec48adf137f311a20f",
+        "br_primary_evidence.py": "db69ed6363af035b1f077af8cd7308496da44b84b5a8516293c57c4856ed16f3",
+        "runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce"
+      }
+    },
+    "manifest": "6e35f96fd2206af3d52fec3521ab7985220aa1abcf0c7afd2052a36760418d3e",
+    "production_cache": "8a1208d3a96a19ec9e7a2e1d028872db53c93d60606702c16818b000e64b3919",
+    "sidecar": "d79aec0b269bf438745e229047912f9addfd24eb082e4bf2e114cdc93b2402a5"
+  },
+  "parser_manifest_cache_sidecar_unchanged": true,
+  "binding_permitted": false,
+  "independent_peer_completed": false,
+  "human_review_claimed": false,
+  "source_ready": false,
+  "importer_limit": "Existing importer checks the reviewed reference file and assigns publication_status=source_attributed and event literal_source_context_verified. Those default labels do not certify an independent peer or original native Unicode; technical status remains pending, and this candidate must not be bound until peer disposition.",
+  "glyph_review_limit": "Font/GID labels are visual author transcriptions, not recovered cmap; all glyphs and complete regions were author-reviewed. Raw OCR confidence has no approval role. Independent peer is a separate gate.",
+  "passed": true
+}

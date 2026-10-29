@@ -1,0 +1,3101 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex-independent-se-ifa-peer",
+  "generated_at": "2026-10-28T20:02:12.715438+00:00",
+  "source_id": "se-curriculo-em",
+  "source_sha256": "91fb4796d01e14370b67d0ca11b7069438a4127ff9c13c068ed2a6f65c3cb69b",
+  "candidate_path": "var/ne-se-ifa-candidate/se-ifa-physical-items.json",
+  "candidate_sha256": "75b8e08eb5fb7b710ea6a1df66e504c0c3b446b9e85f7e0fb9b696a962781941",
+  "frozen_source_first_inventory_sha256": "ebb08013c130a69683474982a8bf1043f01bbcadaaa42e8e3c960dc38a826762",
+  "independent_physical_body_cells": 133,
+  "independent_primary_occurrences": 305,
+  "independent_empty_surfaces": 1,
+  "independent_header_surfaces": 74,
+  "matched_records": 305,
+  "runtime_loader_accepted": 305,
+  "formal_schema_passed": 305,
+  "checks": 3969,
+  "errors": [],
+  "negative_controls": [
+    {
+      "page": 202,
+      "case": "matching_target_and_evidence_prefix_still_incomplete",
+      "blocked_by_independent_full_field": true
+    },
+    {
+      "page": 211,
+      "case": "matching_target_and_evidence_prefix_still_incomplete",
+      "blocked_by_independent_full_field": true
+    },
+    {
+      "page": 301,
+      "case": "matching_target_and_evidence_prefix_still_incomplete",
+      "blocked_by_independent_full_field": true
+    },
+    {
+      "page": 434,
+      "case": "matching_target_and_evidence_prefix_still_incomplete",
+      "blocked_by_independent_full_field": true
+    },
+    {
+      "page": 301,
+      "case": "deduplicate_identical_code_across_two_printed_columns",
+      "blocked_by_primary_occurrence_denominator": true
+    }
+  ],
+  "occurrence_matches": [
+    {
+      "key": "ifa-physical-p182-cell1-definition1-emifcg01",
+      "primary_cell_key": "p182:visible:199.370,218.555,462.992,526.535",
+      "page": 182,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "60057cf5afebe65d7adf18fbdba05cd409d83210367c4490709533307271dd48",
+      "candidate_body_sha256": "60057cf5afebe65d7adf18fbdba05cd409d83210367c4490709533307271dd48",
+      "primary_header_page": 182
+    },
+    {
+      "key": "ifa-physical-p182-cell2-definition1-emiflgg01",
+      "primary_cell_key": "p182:visible:462.992,218.555,737.008,526.535",
+      "page": 182,
+      "code": "EMIFLGG01",
+      "primary_role": "specific",
+      "primary_body_sha256": "94440adbf0a45fceb949fde1bab01f2fc61febbd416d01212f95fc61b887aa8d",
+      "candidate_body_sha256": "94440adbf0a45fceb949fde1bab01f2fc61febbd416d01212f95fc61b887aa8d",
+      "primary_header_page": 182
+    },
+    {
+      "key": "ifa-physical-p182-cell2-definition2-emiflgg02",
+      "primary_cell_key": "p182:visible:462.992,218.555,737.008,526.535",
+      "page": 182,
+      "code": "EMIFLGG02",
+      "primary_role": "specific",
+      "primary_body_sha256": "b58f6a7c01b922c111ef63e6dd385a5e2342e6475a4cc7cc40c08779f5cd40f8",
+      "candidate_body_sha256": "b58f6a7c01b922c111ef63e6dd385a5e2342e6475a4cc7cc40c08779f5cd40f8",
+      "primary_header_page": 182
+    },
+    {
+      "key": "ifa-physical-p182-cell2-definition3-emiflgg03",
+      "primary_cell_key": "p182:visible:462.992,218.555,737.008,526.535",
+      "page": 182,
+      "code": "EMIFLGG03",
+      "primary_role": "specific",
+      "primary_body_sha256": "c9033dac6b14617f91108fbe646fe63b1d54afc27bf2c58ca62c51ca3cd1f1b4",
+      "candidate_body_sha256": "c9033dac6b14617f91108fbe646fe63b1d54afc27bf2c58ca62c51ca3cd1f1b4",
+      "primary_header_page": 182
+    },
+    {
+      "key": "ifa-physical-p202-cell1-definition1-emifcg07",
+      "primary_cell_key": "p202:visible:206.929,56.693,463.464,219.685",
+      "page": 202,
+      "code": "EMIFCG07",
+      "primary_role": "general",
+      "primary_body_sha256": "6b8ee0ffe09f46d523e3a9b50d90d5634e7d24ff865e5aecbafeb2ee75928ec7",
+      "candidate_body_sha256": "6b8ee0ffe09f46d523e3a9b50d90d5634e7d24ff865e5aecbafeb2ee75928ec7",
+      "primary_header_page": 201
+    },
+    {
+      "key": "ifa-physical-p202-cell1-definition2-emifcg08",
+      "primary_cell_key": "p202:visible:206.929,56.693,463.464,219.685",
+      "page": 202,
+      "code": "EMIFCG08",
+      "primary_role": "general",
+      "primary_body_sha256": "0cfae1a8caba2c8fdb5ccebc56dd97ab6492bde99524773f8e7fb53877a2e196",
+      "candidate_body_sha256": "0cfae1a8caba2c8fdb5ccebc56dd97ab6492bde99524773f8e7fb53877a2e196",
+      "primary_header_page": 201
+    },
+    {
+      "key": "ifa-physical-p202-cell1-definition3-emifcg09",
+      "primary_cell_key": "p202:visible:206.929,56.693,463.464,219.685",
+      "page": 202,
+      "code": "EMIFCG09",
+      "primary_role": "general",
+      "primary_body_sha256": "c57f3efbe602801308e8b4d7b936a7c49e3967e919fad9f83deeea99c6edeaa2",
+      "candidate_body_sha256": "c57f3efbe602801308e8b4d7b936a7c49e3967e919fad9f83deeea99c6edeaa2",
+      "primary_header_page": 201
+    },
+    {
+      "key": "ifa-physical-p202-cell2-definition1-emiflgg07",
+      "primary_cell_key": "p202:visible:463.465,56.693,737.467,219.685",
+      "page": 202,
+      "code": "EMIFLGG07",
+      "primary_role": "specific",
+      "primary_body_sha256": "cc4e523b63526abee1ba12ba2c2037fd06e0025b2a9b09e6630308d46b765eaf",
+      "candidate_body_sha256": "cc4e523b63526abee1ba12ba2c2037fd06e0025b2a9b09e6630308d46b765eaf",
+      "primary_header_page": 201
+    },
+    {
+      "key": "ifa-physical-p202-cell3-definition1-emifcg11",
+      "primary_cell_key": "p202:visible:206.929,219.685,463.464,344.409",
+      "page": 202,
+      "code": "EMIFCG11",
+      "primary_role": "general",
+      "primary_body_sha256": "4e5ab00fc868faab7addf66357470d1ae367acd24dd492873ee2de29e1709a00",
+      "candidate_body_sha256": "4e5ab00fc868faab7addf66357470d1ae367acd24dd492873ee2de29e1709a00",
+      "primary_header_page": 201
+    },
+    {
+      "key": "ifa-physical-p202-cell3-definition2-emifcg12",
+      "primary_cell_key": "p202:visible:206.929,219.685,463.464,344.409",
+      "page": 202,
+      "code": "EMIFCG12",
+      "primary_role": "general",
+      "primary_body_sha256": "56149f89a8c68ee665bc93957cc25ce835a3b4f1c8606df1dfdfc3b968d4d6bf",
+      "candidate_body_sha256": "56149f89a8c68ee665bc93957cc25ce835a3b4f1c8606df1dfdfc3b968d4d6bf",
+      "primary_header_page": 201
+    },
+    {
+      "key": "ifa-physical-p211-cell1-definition1-emifcg10",
+      "primary_cell_key": "p211:visible:199.370,56.693,462.992,208.962",
+      "page": 211,
+      "code": "EMIFCG10",
+      "primary_role": "general",
+      "primary_body_sha256": "0009a9ead479e02889af0ab76ba7a62c0bb637f1da61b6b6180cf9fb78289a65",
+      "candidate_body_sha256": "0009a9ead479e02889af0ab76ba7a62c0bb637f1da61b6b6180cf9fb78289a65",
+      "primary_header_page": 210
+    },
+    {
+      "key": "ifa-physical-p211-cell1-definition2-emifcg11",
+      "primary_cell_key": "p211:visible:199.370,56.693,462.992,208.962",
+      "page": 211,
+      "code": "EMIFCG11",
+      "primary_role": "general",
+      "primary_body_sha256": "ab4ace611556278a320781633aad83c1e8a74b27ccf73540a539ee1744320527",
+      "candidate_body_sha256": "ab4ace611556278a320781633aad83c1e8a74b27ccf73540a539ee1744320527",
+      "primary_header_page": 210
+    },
+    {
+      "key": "ifa-physical-p211-cell1-definition3-emifcg12",
+      "primary_cell_key": "p211:visible:199.370,56.693,462.992,208.962",
+      "page": 211,
+      "code": "EMIFCG12",
+      "primary_role": "general",
+      "primary_body_sha256": "b3c01db29a1d48f679bdddbe7ddf1fd51cf19082b2ce61719e6f854fd7f6bea6",
+      "candidate_body_sha256": "b3c01db29a1d48f679bdddbe7ddf1fd51cf19082b2ce61719e6f854fd7f6bea6",
+      "primary_header_page": 210
+    },
+    {
+      "key": "ifa-physical-p211-cell2-definition1-emiflgg11",
+      "primary_cell_key": "p211:visible:462.992,56.693,737.008,208.962",
+      "page": 211,
+      "code": "EMIFLGG11",
+      "primary_role": "specific",
+      "primary_body_sha256": "e94ef1c674d270e4be3ca289083dde00afaed70cce6a398d88da3a1c9623c90f",
+      "candidate_body_sha256": "e94ef1c674d270e4be3ca289083dde00afaed70cce6a398d88da3a1c9623c90f",
+      "primary_header_page": 210
+    },
+    {
+      "key": "ifa-physical-p211-cell2-definition2-emiflgg12",
+      "primary_cell_key": "p211:visible:462.992,56.693,737.008,208.962",
+      "page": 211,
+      "code": "EMIFLGG12",
+      "primary_role": "specific",
+      "primary_body_sha256": "d896ba633a6849cfa7d42986b59e2f6c557e5ac60c612bf44ce5d9a4a85b94c0",
+      "candidate_body_sha256": "d896ba633a6849cfa7d42986b59e2f6c557e5ac60c612bf44ce5d9a4a85b94c0",
+      "primary_header_page": 210
+    },
+    {
+      "key": "ifa-physical-p269-cell1-definition1-emifcg01",
+      "primary_cell_key": "p269:visible:198.193,202.876,464.882,387.545",
+      "page": 269,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "candidate_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "primary_header_page": 269
+    },
+    {
+      "key": "ifa-physical-p269-cell1-definition2-emifcg02",
+      "primary_cell_key": "p269:visible:198.193,202.876,464.882,387.545",
+      "page": 269,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "fead745718cb762a1d243e51b0d4cc1b164687e93df7086535f0efee0bd61b9f",
+      "candidate_body_sha256": "fead745718cb762a1d243e51b0d4cc1b164687e93df7086535f0efee0bd61b9f",
+      "primary_header_page": 269
+    },
+    {
+      "key": "ifa-physical-p269-cell1-definition3-emifcg03",
+      "primary_cell_key": "p269:visible:198.193,202.876,464.882,387.545",
+      "page": 269,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "candidate_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "primary_header_page": 269
+    },
+    {
+      "key": "ifa-physical-p269-cell2-definition1-emifmat01",
+      "primary_cell_key": "p269:visible:464.882,202.876,737.008,387.545",
+      "page": 269,
+      "code": "EMIFMAT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "2a5112d18e82de833956a5e2fa64fd95c435c6200729caf14a586564927b3a89",
+      "candidate_body_sha256": "2a5112d18e82de833956a5e2fa64fd95c435c6200729caf14a586564927b3a89",
+      "primary_header_page": 269
+    },
+    {
+      "key": "ifa-physical-p269-cell2-definition2-emifmat02",
+      "primary_cell_key": "p269:visible:464.882,202.876,737.008,387.545",
+      "page": 269,
+      "code": "EMIFMAT02",
+      "primary_role": "specific",
+      "primary_body_sha256": "dc971b17857d522469d9e72a4965135683b3ea30c904a38daef3f74861c0b811",
+      "candidate_body_sha256": "dc971b17857d522469d9e72a4965135683b3ea30c904a38daef3f74861c0b811",
+      "primary_header_page": 269
+    },
+    {
+      "key": "ifa-physical-p269-cell2-definition3-emifmat03",
+      "primary_cell_key": "p269:visible:464.882,202.876,737.008,387.545",
+      "page": 269,
+      "code": "EMIFMAT03",
+      "primary_role": "specific",
+      "primary_body_sha256": "aadbce0e155f5819469b13fb85f945484d78f58b2dd26646631bcf1418dc6700",
+      "candidate_body_sha256": "aadbce0e155f5819469b13fb85f945484d78f58b2dd26646631bcf1418dc6700",
+      "primary_header_page": 269
+    },
+    {
+      "key": "ifa-physical-p269-cell3-definition1-emifcg07",
+      "primary_cell_key": "p269:visible:198.193,387.545,464.882,529.014",
+      "page": 269,
+      "code": "EMIFCG07",
+      "primary_role": "general",
+      "primary_body_sha256": "b94f4ec2b5f231856d262f80438af6b83ca363c2a95d92fb94a9d350e976a93c",
+      "candidate_body_sha256": "b94f4ec2b5f231856d262f80438af6b83ca363c2a95d92fb94a9d350e976a93c",
+      "primary_header_page": 269
+    },
+    {
+      "key": "ifa-physical-p269-cell3-definition2-emifcg08",
+      "primary_cell_key": "p269:visible:198.193,387.545,464.882,529.014",
+      "page": 269,
+      "code": "EMIFCG08",
+      "primary_role": "general",
+      "primary_body_sha256": "e58cd7ff69efa94cf4c7a3ffd1b0e70bef8b0e54a6805337154c3e1f200cf539",
+      "candidate_body_sha256": "e58cd7ff69efa94cf4c7a3ffd1b0e70bef8b0e54a6805337154c3e1f200cf539",
+      "primary_header_page": 269
+    },
+    {
+      "key": "ifa-physical-p269-cell3-definition3-emifcg09",
+      "primary_cell_key": "p269:visible:198.193,387.545,464.882,529.014",
+      "page": 269,
+      "code": "EMIFCG09",
+      "primary_role": "general",
+      "primary_body_sha256": "c57f3efbe602801308e8b4d7b936a7c49e3967e919fad9f83deeea99c6edeaa2",
+      "candidate_body_sha256": "c57f3efbe602801308e8b4d7b936a7c49e3967e919fad9f83deeea99c6edeaa2",
+      "primary_header_page": 269
+    },
+    {
+      "key": "ifa-physical-p269-cell4-definition1-emifmat07",
+      "primary_cell_key": "p269:visible:464.882,387.545,737.008,529.014",
+      "page": 269,
+      "code": "EMIFMAT07",
+      "primary_role": "specific",
+      "primary_body_sha256": "9e1add44fb55a748d6401a054889baad8a035a7560f351d18fc94b85cec30018",
+      "candidate_body_sha256": "9e1add44fb55a748d6401a054889baad8a035a7560f351d18fc94b85cec30018",
+      "primary_header_page": 269
+    },
+    {
+      "key": "ifa-physical-p269-cell4-definition2-emifmat08",
+      "primary_cell_key": "p269:visible:464.882,387.545,737.008,529.014",
+      "page": 269,
+      "code": "EMIFMAT08",
+      "primary_role": "specific",
+      "primary_body_sha256": "77444cd5a6b44c9b66b9b3edcc780da2dd24658160e2448da4be078d4971a34b",
+      "candidate_body_sha256": "77444cd5a6b44c9b66b9b3edcc780da2dd24658160e2448da4be078d4971a34b",
+      "primary_header_page": 269
+    },
+    {
+      "key": "ifa-physical-p269-cell4-definition3-emifmat09",
+      "primary_cell_key": "p269:visible:464.882,387.545,737.008,529.014",
+      "page": 269,
+      "code": "EMIFMAT09",
+      "primary_role": "specific",
+      "primary_body_sha256": "60f07e74e72e57a10d61532a606c5ad003360fd7b885aae736418faba48dc053",
+      "candidate_body_sha256": "60f07e74e72e57a10d61532a606c5ad003360fd7b885aae736418faba48dc053",
+      "primary_header_page": 269
+    },
+    {
+      "key": "ifa-physical-p274-cell1-definition1-emifcg01",
+      "primary_cell_key": "p274:visible:198.193,152.220,464.882,347.244",
+      "page": 274,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "candidate_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "primary_header_page": 274
+    },
+    {
+      "key": "ifa-physical-p274-cell1-definition2-emifcg02",
+      "primary_cell_key": "p274:visible:198.193,152.220,464.882,347.244",
+      "page": 274,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "fead745718cb762a1d243e51b0d4cc1b164687e93df7086535f0efee0bd61b9f",
+      "candidate_body_sha256": "fead745718cb762a1d243e51b0d4cc1b164687e93df7086535f0efee0bd61b9f",
+      "primary_header_page": 274
+    },
+    {
+      "key": "ifa-physical-p274-cell1-definition3-emifcg03",
+      "primary_cell_key": "p274:visible:198.193,152.220,464.882,347.244",
+      "page": 274,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "candidate_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "primary_header_page": 274
+    },
+    {
+      "key": "ifa-physical-p274-cell2-definition1-emifmat01",
+      "primary_cell_key": "p274:visible:464.882,152.220,737.008,347.244",
+      "page": 274,
+      "code": "EMIFMAT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "2a5112d18e82de833956a5e2fa64fd95c435c6200729caf14a586564927b3a89",
+      "candidate_body_sha256": "2a5112d18e82de833956a5e2fa64fd95c435c6200729caf14a586564927b3a89",
+      "primary_header_page": 274
+    },
+    {
+      "key": "ifa-physical-p274-cell2-definition2-emifmat02",
+      "primary_cell_key": "p274:visible:464.882,152.220,737.008,347.244",
+      "page": 274,
+      "code": "EMIFMAT02",
+      "primary_role": "specific",
+      "primary_body_sha256": "dc971b17857d522469d9e72a4965135683b3ea30c904a38daef3f74861c0b811",
+      "candidate_body_sha256": "dc971b17857d522469d9e72a4965135683b3ea30c904a38daef3f74861c0b811",
+      "primary_header_page": 274
+    },
+    {
+      "key": "ifa-physical-p274-cell2-definition3-emifmat03",
+      "primary_cell_key": "p274:visible:464.882,152.220,737.008,347.244",
+      "page": 274,
+      "code": "EMIFMAT03",
+      "primary_role": "specific",
+      "primary_body_sha256": "aadbce0e155f5819469b13fb85f945484d78f58b2dd26646631bcf1418dc6700",
+      "candidate_body_sha256": "aadbce0e155f5819469b13fb85f945484d78f58b2dd26646631bcf1418dc6700",
+      "primary_header_page": 274
+    },
+    {
+      "key": "ifa-physical-p274-cell3-definition1-emifcg07",
+      "primary_cell_key": "p274:visible:198.193,347.244,464.882,519.449",
+      "page": 274,
+      "code": "EMIFCG07",
+      "primary_role": "general",
+      "primary_body_sha256": "b94f4ec2b5f231856d262f80438af6b83ca363c2a95d92fb94a9d350e976a93c",
+      "candidate_body_sha256": "b94f4ec2b5f231856d262f80438af6b83ca363c2a95d92fb94a9d350e976a93c",
+      "primary_header_page": 274
+    },
+    {
+      "key": "ifa-physical-p274-cell3-definition2-emifcg08",
+      "primary_cell_key": "p274:visible:198.193,347.244,464.882,519.449",
+      "page": 274,
+      "code": "EMIFCG08",
+      "primary_role": "general",
+      "primary_body_sha256": "7162cf65675be41b589c94886880dc120b89505ee13b2ad9b09debd9a350dee2",
+      "candidate_body_sha256": "7162cf65675be41b589c94886880dc120b89505ee13b2ad9b09debd9a350dee2",
+      "primary_header_page": 274
+    },
+    {
+      "key": "ifa-physical-p274-cell3-definition3-emifcg09",
+      "primary_cell_key": "p274:visible:198.193,347.244,464.882,519.449",
+      "page": 274,
+      "code": "EMIFCG09",
+      "primary_role": "general",
+      "primary_body_sha256": "08e603097e8531dd66b5d0f48da97f0e8f93d1d5bec709cb9ea24c3133b7798f",
+      "candidate_body_sha256": "08e603097e8531dd66b5d0f48da97f0e8f93d1d5bec709cb9ea24c3133b7798f",
+      "primary_header_page": 274
+    },
+    {
+      "key": "ifa-physical-p274-cell4-definition1-emifmat07",
+      "primary_cell_key": "p274:visible:464.882,347.244,737.008,519.449",
+      "page": 274,
+      "code": "EMIFMAT07",
+      "primary_role": "specific",
+      "primary_body_sha256": "531f9e97cd8bc9c062d610daccef45670ef478ebbac5b4575be91523d0c20530",
+      "candidate_body_sha256": "531f9e97cd8bc9c062d610daccef45670ef478ebbac5b4575be91523d0c20530",
+      "primary_header_page": 274
+    },
+    {
+      "key": "ifa-physical-p274-cell4-definition2-emifmat08",
+      "primary_cell_key": "p274:visible:464.882,347.244,737.008,519.449",
+      "page": 274,
+      "code": "EMIFMAT08",
+      "primary_role": "specific",
+      "primary_body_sha256": "77444cd5a6b44c9b66b9b3edcc780da2dd24658160e2448da4be078d4971a34b",
+      "candidate_body_sha256": "77444cd5a6b44c9b66b9b3edcc780da2dd24658160e2448da4be078d4971a34b",
+      "primary_header_page": 274
+    },
+    {
+      "key": "ifa-physical-p274-cell4-definition3-emifmat09",
+      "primary_cell_key": "p274:visible:464.882,347.244,737.008,519.449",
+      "page": 274,
+      "code": "EMIFMAT09",
+      "primary_role": "specific",
+      "primary_body_sha256": "60f07e74e72e57a10d61532a606c5ad003360fd7b885aae736418faba48dc053",
+      "candidate_body_sha256": "60f07e74e72e57a10d61532a606c5ad003360fd7b885aae736418faba48dc053",
+      "primary_header_page": 274
+    },
+    {
+      "key": "ifa-physical-p279-cell1-definition1-emifcg03",
+      "primary_cell_key": "p279:visible:197.626,154.016,464.632,324.765",
+      "page": 279,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "candidate_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "primary_header_page": 279
+    },
+    {
+      "key": "ifa-physical-p279-cell2-definition1-emifmat01",
+      "primary_cell_key": "p279:visible:464.632,154.016,736.508,324.765",
+      "page": 279,
+      "code": "EMIFMAT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "dc7431628e6891ab1a6e1e9d9cfc596adcb3255d54096fe795e42767120e977e",
+      "candidate_body_sha256": "dc7431628e6891ab1a6e1e9d9cfc596adcb3255d54096fe795e42767120e977e",
+      "primary_header_page": 279
+    },
+    {
+      "key": "ifa-physical-p279-cell2-definition2-emifmat04",
+      "primary_cell_key": "p279:visible:464.632,154.016,736.508,324.765",
+      "page": 279,
+      "code": "EMIFMAT04",
+      "primary_role": "specific",
+      "primary_body_sha256": "02e6a93ccfaf9e3ed982514cd8e7c616b01fb0eb22f8283c54fc5f16474f7b1d",
+      "candidate_body_sha256": "02e6a93ccfaf9e3ed982514cd8e7c616b01fb0eb22f8283c54fc5f16474f7b1d",
+      "primary_header_page": 279
+    },
+    {
+      "key": "ifa-physical-p279-cell3-definition1-emifcg06",
+      "primary_cell_key": "p279:visible:197.626,324.765,464.632,419.665",
+      "page": 279,
+      "code": "EMIFCG06",
+      "primary_role": "general",
+      "primary_body_sha256": "adefdfae51c5ab3897fe3b098c6fa4be3952680397a8edb22f4bc5bb439a4b1b",
+      "candidate_body_sha256": "adefdfae51c5ab3897fe3b098c6fa4be3952680397a8edb22f4bc5bb439a4b1b",
+      "primary_header_page": 279
+    },
+    {
+      "key": "ifa-physical-p279-cell4-definition1-emifmat06",
+      "primary_cell_key": "p279:visible:464.632,324.765,736.508,419.665",
+      "page": 279,
+      "code": "EMIFMAT06",
+      "primary_role": "specific",
+      "primary_body_sha256": "a576ab2d53e916b9027229fe71e4aad0708288a1d8a54360e97d0c8804a38061",
+      "candidate_body_sha256": "a576ab2d53e916b9027229fe71e4aad0708288a1d8a54360e97d0c8804a38061",
+      "primary_header_page": 279
+    },
+    {
+      "key": "ifa-physical-p283-cell1-definition1-emifcg03",
+      "primary_cell_key": "p283:visible:198.193,153.999,465.199,324.749",
+      "page": 283,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "candidate_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "primary_header_page": 283
+    },
+    {
+      "key": "ifa-physical-p283-cell2-definition1-emifmat01",
+      "primary_cell_key": "p283:visible:465.199,153.999,737.008,324.749",
+      "page": 283,
+      "code": "EMIFMAT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "dc7431628e6891ab1a6e1e9d9cfc596adcb3255d54096fe795e42767120e977e",
+      "candidate_body_sha256": "dc7431628e6891ab1a6e1e9d9cfc596adcb3255d54096fe795e42767120e977e",
+      "primary_header_page": 283
+    },
+    {
+      "key": "ifa-physical-p283-cell2-definition2-emifmat04",
+      "primary_cell_key": "p283:visible:465.199,153.999,737.008,324.749",
+      "page": 283,
+      "code": "EMIFMAT04",
+      "primary_role": "specific",
+      "primary_body_sha256": "02e6a93ccfaf9e3ed982514cd8e7c616b01fb0eb22f8283c54fc5f16474f7b1d",
+      "candidate_body_sha256": "02e6a93ccfaf9e3ed982514cd8e7c616b01fb0eb22f8283c54fc5f16474f7b1d",
+      "primary_header_page": 283
+    },
+    {
+      "key": "ifa-physical-p283-cell3-definition1-emifcg06",
+      "primary_cell_key": "p283:visible:198.193,324.749,465.199,419.649",
+      "page": 283,
+      "code": "EMIFCG06",
+      "primary_role": "general",
+      "primary_body_sha256": "adefdfae51c5ab3897fe3b098c6fa4be3952680397a8edb22f4bc5bb439a4b1b",
+      "candidate_body_sha256": "adefdfae51c5ab3897fe3b098c6fa4be3952680397a8edb22f4bc5bb439a4b1b",
+      "primary_header_page": 283
+    },
+    {
+      "key": "ifa-physical-p283-cell4-definition1-emifmat06",
+      "primary_cell_key": "p283:visible:465.199,324.749,737.008,419.649",
+      "page": 283,
+      "code": "EMIFMAT06",
+      "primary_role": "specific",
+      "primary_body_sha256": "a576ab2d53e916b9027229fe71e4aad0708288a1d8a54360e97d0c8804a38061",
+      "candidate_body_sha256": "a576ab2d53e916b9027229fe71e4aad0708288a1d8a54360e97d0c8804a38061",
+      "primary_header_page": 283
+    },
+    {
+      "key": "ifa-physical-p287-cell1-definition1-emifcg03",
+      "primary_cell_key": "p287:visible:198.193,152.929,469.451,297.638",
+      "page": 287,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "candidate_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "primary_header_page": 287
+    },
+    {
+      "key": "ifa-physical-p287-cell2-definition1-emifmat01",
+      "primary_cell_key": "p287:visible:469.451,152.929,737.008,297.638",
+      "page": 287,
+      "code": "EMIFMAT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "8c8b40e6f77f38e5627c9b1a0218336b99a68de7ce35b1c00854d3044aa97dad",
+      "candidate_body_sha256": "8c8b40e6f77f38e5627c9b1a0218336b99a68de7ce35b1c00854d3044aa97dad",
+      "primary_header_page": 287
+    },
+    {
+      "key": "ifa-physical-p287-cell2-definition2-emifmat04",
+      "primary_cell_key": "p287:visible:469.451,152.929,737.008,297.638",
+      "page": 287,
+      "code": "EMIFMAT04",
+      "primary_role": "specific",
+      "primary_body_sha256": "4884555048411393283c317921573c61ac92a478ccdb107e79939a8f52794346",
+      "candidate_body_sha256": "4884555048411393283c317921573c61ac92a478ccdb107e79939a8f52794346",
+      "primary_header_page": 287
+    },
+    {
+      "key": "ifa-physical-p287-cell3-definition1-emifcg06",
+      "primary_cell_key": "p287:visible:198.193,297.638,469.451,405.354",
+      "page": 287,
+      "code": "EMIFCG06",
+      "primary_role": "general",
+      "primary_body_sha256": "64be897b07a00521a23a6e5db38ebd3092cc528dd559497b509b58d00a2881d7",
+      "candidate_body_sha256": "64be897b07a00521a23a6e5db38ebd3092cc528dd559497b509b58d00a2881d7",
+      "primary_header_page": 287
+    },
+    {
+      "key": "ifa-physical-p287-cell4-definition1-emifmat06",
+      "primary_cell_key": "p287:visible:469.451,297.638,737.008,405.354",
+      "page": 287,
+      "code": "EMIFMAT06",
+      "primary_role": "specific",
+      "primary_body_sha256": "9c152a4ee6516063e01437cd7645d337f26a6f54ff14850a75386495587638cb",
+      "candidate_body_sha256": "9c152a4ee6516063e01437cd7645d337f26a6f54ff14850a75386495587638cb",
+      "primary_header_page": 287
+    },
+    {
+      "key": "ifa-physical-p291-cell1-definition1-emifcg04",
+      "primary_cell_key": "p291:visible:198.193,154.346,467.467,325.096",
+      "page": 291,
+      "code": "EMIFCG04",
+      "primary_role": "general",
+      "primary_body_sha256": "85370a880860bc0d36f366cfeba606505f3f8ccf72f70ca023a1856ddd9b9c00",
+      "candidate_body_sha256": "85370a880860bc0d36f366cfeba606505f3f8ccf72f70ca023a1856ddd9b9c00",
+      "primary_header_page": 291
+    },
+    {
+      "key": "ifa-physical-p291-cell1-definition2-emifcg05",
+      "primary_cell_key": "p291:visible:198.193,154.346,467.467,325.096",
+      "page": 291,
+      "code": "EMIFCG05",
+      "primary_role": "general",
+      "primary_body_sha256": "85370e5ba42016df76bbc84272d66df06d05b5dcaad5868f9b9d19af522d9aa4",
+      "candidate_body_sha256": "85370e5ba42016df76bbc84272d66df06d05b5dcaad5868f9b9d19af522d9aa4",
+      "primary_header_page": 291
+    },
+    {
+      "key": "ifa-physical-p291-cell1-definition3-emifcg06",
+      "primary_cell_key": "p291:visible:198.193,154.346,467.467,325.096",
+      "page": 291,
+      "code": "EMIFCG06",
+      "primary_role": "general",
+      "primary_body_sha256": "adefdfae51c5ab3897fe3b098c6fa4be3952680397a8edb22f4bc5bb439a4b1b",
+      "candidate_body_sha256": "adefdfae51c5ab3897fe3b098c6fa4be3952680397a8edb22f4bc5bb439a4b1b",
+      "primary_header_page": 291
+    },
+    {
+      "key": "ifa-physical-p291-cell2-definition1-emifmat03",
+      "primary_cell_key": "p291:visible:467.467,154.346,736.508,325.096",
+      "page": 291,
+      "code": "EMIFMAT03",
+      "primary_role": "specific",
+      "primary_body_sha256": "999505e2357c8b85ed67538bd19c5822d8bc639f316431ca0f02b0bec8bb5c51",
+      "candidate_body_sha256": "999505e2357c8b85ed67538bd19c5822d8bc639f316431ca0f02b0bec8bb5c51",
+      "primary_header_page": 291
+    },
+    {
+      "key": "ifa-physical-p295-cell1-definition1-emifcg04",
+      "primary_cell_key": "p295:visible:198.193,153.978,468.034,348.412",
+      "page": 295,
+      "code": "EMIFCG04",
+      "primary_role": "general",
+      "primary_body_sha256": "85370a880860bc0d36f366cfeba606505f3f8ccf72f70ca023a1856ddd9b9c00",
+      "candidate_body_sha256": "85370a880860bc0d36f366cfeba606505f3f8ccf72f70ca023a1856ddd9b9c00",
+      "primary_header_page": 295
+    },
+    {
+      "key": "ifa-physical-p295-cell1-definition2-emifcg05",
+      "primary_cell_key": "p295:visible:198.193,153.978,468.034,348.412",
+      "page": 295,
+      "code": "EMIFCG05",
+      "primary_role": "general",
+      "primary_body_sha256": "85370e5ba42016df76bbc84272d66df06d05b5dcaad5868f9b9d19af522d9aa4",
+      "candidate_body_sha256": "85370e5ba42016df76bbc84272d66df06d05b5dcaad5868f9b9d19af522d9aa4",
+      "primary_header_page": 295
+    },
+    {
+      "key": "ifa-physical-p295-cell1-definition3-emifcg06",
+      "primary_cell_key": "p295:visible:198.193,153.978,468.034,348.412",
+      "page": 295,
+      "code": "EMIFCG06",
+      "primary_role": "general",
+      "primary_body_sha256": "64be897b07a00521a23a6e5db38ebd3092cc528dd559497b509b58d00a2881d7",
+      "candidate_body_sha256": "64be897b07a00521a23a6e5db38ebd3092cc528dd559497b509b58d00a2881d7",
+      "primary_header_page": 295
+    },
+    {
+      "key": "ifa-physical-p295-cell2-definition1-emifmat04",
+      "primary_cell_key": "p295:visible:468.033,153.978,737.007,348.412",
+      "page": 295,
+      "code": "EMIFMAT04",
+      "primary_role": "specific",
+      "primary_body_sha256": "4884555048411393283c317921573c61ac92a478ccdb107e79939a8f52794346",
+      "candidate_body_sha256": "4884555048411393283c317921573c61ac92a478ccdb107e79939a8f52794346",
+      "primary_header_page": 295
+    },
+    {
+      "key": "ifa-physical-p295-cell2-definition2-emifmat05",
+      "primary_cell_key": "p295:visible:468.033,153.978,737.007,348.412",
+      "page": 295,
+      "code": "EMIFMAT05",
+      "primary_role": "specific",
+      "primary_body_sha256": "55d98551250f30c1344c3dc94a195dc539634bc6bc871da33cbfcfa642359f34",
+      "candidate_body_sha256": "55d98551250f30c1344c3dc94a195dc539634bc6bc871da33cbfcfa642359f34",
+      "primary_header_page": 295
+    },
+    {
+      "key": "ifa-physical-p295-cell3-definition1-emifcg10",
+      "primary_cell_key": "p295:visible:198.193,348.412,468.034,523.910",
+      "page": 295,
+      "code": "EMIFCG10",
+      "primary_role": "general",
+      "primary_body_sha256": "5c01f6ad9216e55ef6800fd7890e0f711e7398dd06d7d0add02a2b0457d540e2",
+      "candidate_body_sha256": "5c01f6ad9216e55ef6800fd7890e0f711e7398dd06d7d0add02a2b0457d540e2",
+      "primary_header_page": 295
+    },
+    {
+      "key": "ifa-physical-p295-cell3-definition2-emifcg11",
+      "primary_cell_key": "p295:visible:198.193,348.412,468.034,523.910",
+      "page": 295,
+      "code": "EMIFCG11",
+      "primary_role": "general",
+      "primary_body_sha256": "dd145020869c953a0908a34517893b1df13c780ec31c182db13c1ff86fccf1f5",
+      "candidate_body_sha256": "dd145020869c953a0908a34517893b1df13c780ec31c182db13c1ff86fccf1f5",
+      "primary_header_page": 295
+    },
+    {
+      "key": "ifa-physical-p295-cell3-definition3-emifcg12",
+      "primary_cell_key": "p295:visible:198.193,348.412,468.034,523.910",
+      "page": 295,
+      "code": "EMIFCG12",
+      "primary_role": "general",
+      "primary_body_sha256": "ac3104001262cefbbc586da7293c6cd77d24679049e03bbc049442d99a2f48d1",
+      "candidate_body_sha256": "ac3104001262cefbbc586da7293c6cd77d24679049e03bbc049442d99a2f48d1",
+      "primary_header_page": 295
+    },
+    {
+      "key": "ifa-physical-p295-cell4-definition1-emifmat12",
+      "primary_cell_key": "p295:visible:468.033,348.412,737.007,523.910",
+      "page": 295,
+      "code": "EMIFMAT12",
+      "primary_role": "specific",
+      "primary_body_sha256": "382d99ba07577ee9c6be8b3e516f041c0481ed3968ed7c7c4c3827108968226c",
+      "candidate_body_sha256": "382d99ba07577ee9c6be8b3e516f041c0481ed3968ed7c7c4c3827108968226c",
+      "primary_header_page": 295
+    },
+    {
+      "key": "ifa-physical-p301-cell1-definition1-emifcg01",
+      "primary_cell_key": "p301:visible:198.243,151.144,467.467,309.448",
+      "page": 301,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "candidate_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "primary_header_page": 301
+    },
+    {
+      "key": "ifa-physical-p301-cell1-definition2-emifcg02",
+      "primary_cell_key": "p301:visible:198.243,151.144,467.467,309.448",
+      "page": 301,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "b30bb95ca3b1d84fcdb24453d1ae9fad29055685445d2c2a3ff0a7055eb2eafd",
+      "candidate_body_sha256": "b30bb95ca3b1d84fcdb24453d1ae9fad29055685445d2c2a3ff0a7055eb2eafd",
+      "primary_header_page": 301
+    },
+    {
+      "key": "ifa-physical-p301-cell1-definition3-emifcg03",
+      "primary_cell_key": "p301:visible:198.243,151.144,467.467,309.448",
+      "page": 301,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "candidate_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "primary_header_page": 301
+    },
+    {
+      "key": "ifa-physical-p301-cell2-definition1-emifcg01",
+      "primary_cell_key": "p301:visible:467.467,151.144,736.508,309.448",
+      "page": 301,
+      "code": "EMIFCG01",
+      "primary_role": "specific",
+      "primary_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "candidate_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "primary_header_page": 301
+    },
+    {
+      "key": "ifa-physical-p301-cell2-definition2-emifcg02",
+      "primary_cell_key": "p301:visible:467.467,151.144,736.508,309.448",
+      "page": 301,
+      "code": "EMIFCG02",
+      "primary_role": "specific",
+      "primary_body_sha256": "b30bb95ca3b1d84fcdb24453d1ae9fad29055685445d2c2a3ff0a7055eb2eafd",
+      "candidate_body_sha256": "b30bb95ca3b1d84fcdb24453d1ae9fad29055685445d2c2a3ff0a7055eb2eafd",
+      "primary_header_page": 301
+    },
+    {
+      "key": "ifa-physical-p301-cell2-definition3-emifcg03",
+      "primary_cell_key": "p301:visible:467.467,151.144,736.508,309.448",
+      "page": 301,
+      "code": "EMIFCG03",
+      "primary_role": "specific",
+      "primary_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "candidate_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "primary_header_page": 301
+    },
+    {
+      "key": "ifa-physical-p309-cell1-definition1-emifcg01",
+      "primary_cell_key": "p309:visible:198.193,150.019,468.034,351.287",
+      "page": 309,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "candidate_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "primary_header_page": 309
+    },
+    {
+      "key": "ifa-physical-p309-cell1-definition2-emifcg02",
+      "primary_cell_key": "p309:visible:198.193,150.019,468.034,351.287",
+      "page": 309,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "b30bb95ca3b1d84fcdb24453d1ae9fad29055685445d2c2a3ff0a7055eb2eafd",
+      "candidate_body_sha256": "b30bb95ca3b1d84fcdb24453d1ae9fad29055685445d2c2a3ff0a7055eb2eafd",
+      "primary_header_page": 309
+    },
+    {
+      "key": "ifa-physical-p309-cell1-definition3-emifcg03",
+      "primary_cell_key": "p309:visible:198.193,150.019,468.034,351.287",
+      "page": 309,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "candidate_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "primary_header_page": 309
+    },
+    {
+      "key": "ifa-physical-p309-cell2-definition1-emifmat01",
+      "primary_cell_key": "p309:visible:468.033,150.019,737.007,351.287",
+      "page": 309,
+      "code": "EMIFMAT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "cd7be6dd75920f9fe887475875c658448c585831598bfd6a3e0a10cf828ee631",
+      "candidate_body_sha256": "cd7be6dd75920f9fe887475875c658448c585831598bfd6a3e0a10cf828ee631",
+      "primary_header_page": 309
+    },
+    {
+      "key": "ifa-physical-p309-cell2-definition2-emifmat02",
+      "primary_cell_key": "p309:visible:468.033,150.019,737.007,351.287",
+      "page": 309,
+      "code": "EMIFMAT02",
+      "primary_role": "specific",
+      "primary_body_sha256": "036cc1cd880d78b9cc88f3606be10c8487bf8eab7c9e6b393a83b9717ba10267",
+      "candidate_body_sha256": "036cc1cd880d78b9cc88f3606be10c8487bf8eab7c9e6b393a83b9717ba10267",
+      "primary_header_page": 309
+    },
+    {
+      "key": "ifa-physical-p309-cell2-definition3-emifmat03",
+      "primary_cell_key": "p309:visible:468.033,150.019,737.007,351.287",
+      "page": 309,
+      "code": "EMIFMAT03",
+      "primary_role": "specific",
+      "primary_body_sha256": "acf4a848084b98d1c09d2febcb3487847cd6ecab2123e9be5bd073a2cfd5c21e",
+      "candidate_body_sha256": "acf4a848084b98d1c09d2febcb3487847cd6ecab2123e9be5bd073a2cfd5c21e",
+      "primary_header_page": 309
+    },
+    {
+      "key": "ifa-physical-p309-cell3-definition1-emifcg10",
+      "primary_cell_key": "p309:visible:198.193,351.287,468.034,525.619",
+      "page": 309,
+      "code": "EMIFCG10",
+      "primary_role": "general",
+      "primary_body_sha256": "5c01f6ad9216e55ef6800fd7890e0f711e7398dd06d7d0add02a2b0457d540e2",
+      "candidate_body_sha256": "5c01f6ad9216e55ef6800fd7890e0f711e7398dd06d7d0add02a2b0457d540e2",
+      "primary_header_page": 309
+    },
+    {
+      "key": "ifa-physical-p309-cell3-definition2-emifcg11",
+      "primary_cell_key": "p309:visible:198.193,351.287,468.034,525.619",
+      "page": 309,
+      "code": "EMIFCG11",
+      "primary_role": "general",
+      "primary_body_sha256": "ab4ace611556278a320781633aad83c1e8a74b27ccf73540a539ee1744320527",
+      "candidate_body_sha256": "ab4ace611556278a320781633aad83c1e8a74b27ccf73540a539ee1744320527",
+      "primary_header_page": 309
+    },
+    {
+      "key": "ifa-physical-p309-cell3-definition3-emifcg12",
+      "primary_cell_key": "p309:visible:198.193,351.287,468.034,525.619",
+      "page": 309,
+      "code": "EMIFCG12",
+      "primary_role": "general",
+      "primary_body_sha256": "ac3104001262cefbbc586da7293c6cd77d24679049e03bbc049442d99a2f48d1",
+      "candidate_body_sha256": "ac3104001262cefbbc586da7293c6cd77d24679049e03bbc049442d99a2f48d1",
+      "primary_header_page": 309
+    },
+    {
+      "key": "ifa-physical-p309-cell4-definition1-emifmat10",
+      "primary_cell_key": "p309:visible:468.033,351.287,737.007,525.619",
+      "page": 309,
+      "code": "EMIFMAT10",
+      "primary_role": "specific",
+      "primary_body_sha256": "69a85f8e767b8a070b2d7aa520019d5e62d0ce32c55e61113c67501cb0bca2a7",
+      "candidate_body_sha256": "69a85f8e767b8a070b2d7aa520019d5e62d0ce32c55e61113c67501cb0bca2a7",
+      "primary_header_page": 309
+    },
+    {
+      "key": "ifa-physical-p309-cell4-definition2-emifmat11",
+      "primary_cell_key": "p309:visible:468.033,351.287,737.007,525.619",
+      "page": 309,
+      "code": "EMIFMAT11",
+      "primary_role": "specific",
+      "primary_body_sha256": "473a25ab6855f3160bbfe99fe1d5d0833ecafb0d1eed85a83072cedbad29e431",
+      "candidate_body_sha256": "473a25ab6855f3160bbfe99fe1d5d0833ecafb0d1eed85a83072cedbad29e431",
+      "primary_header_page": 309
+    },
+    {
+      "key": "ifa-physical-p309-cell4-definition3-emifmat12",
+      "primary_cell_key": "p309:visible:468.033,351.287,737.007,525.619",
+      "page": 309,
+      "code": "EMIFMAT12",
+      "primary_role": "specific",
+      "primary_body_sha256": "382d99ba07577ee9c6be8b3e516f041c0481ed3968ed7c7c4c3827108968226c",
+      "candidate_body_sha256": "382d99ba07577ee9c6be8b3e516f041c0481ed3968ed7c7c4c3827108968226c",
+      "primary_header_page": 309
+    },
+    {
+      "key": "ifa-physical-p312-cell1-definition1-emifcg03",
+      "primary_cell_key": "p312:visible:198.193,152.929,466.791,258.321",
+      "page": 312,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "candidate_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "primary_header_page": 312
+    },
+    {
+      "key": "ifa-physical-p312-cell2-definition1-emifmat01",
+      "primary_cell_key": "p312:visible:466.791,152.929,736.966,258.321",
+      "page": 312,
+      "code": "EMIFMAT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "dc7431628e6891ab1a6e1e9d9cfc596adcb3255d54096fe795e42767120e977e",
+      "candidate_body_sha256": "dc7431628e6891ab1a6e1e9d9cfc596adcb3255d54096fe795e42767120e977e",
+      "primary_header_page": 312
+    },
+    {
+      "key": "ifa-physical-p312-cell2-definition2-emifmat04",
+      "primary_cell_key": "p312:visible:466.791,152.929,736.966,258.321",
+      "page": 312,
+      "code": "EMIFMAT04",
+      "primary_role": "specific",
+      "primary_body_sha256": "02e6a93ccfaf9e3ed982514cd8e7c616b01fb0eb22f8283c54fc5f16474f7b1d",
+      "candidate_body_sha256": "02e6a93ccfaf9e3ed982514cd8e7c616b01fb0eb22f8283c54fc5f16474f7b1d",
+      "primary_header_page": 312
+    },
+    {
+      "key": "ifa-physical-p312-cell3-definition1-emifcg06",
+      "primary_cell_key": "p312:visible:198.193,258.321,466.791,353.221",
+      "page": 312,
+      "code": "EMIFCG06",
+      "primary_role": "general",
+      "primary_body_sha256": "adefdfae51c5ab3897fe3b098c6fa4be3952680397a8edb22f4bc5bb439a4b1b",
+      "candidate_body_sha256": "adefdfae51c5ab3897fe3b098c6fa4be3952680397a8edb22f4bc5bb439a4b1b",
+      "primary_header_page": 312
+    },
+    {
+      "key": "ifa-physical-p312-cell4-definition1-emifmat06",
+      "primary_cell_key": "p312:visible:466.791,258.321,736.966,353.221",
+      "page": 312,
+      "code": "EMIFMAT06",
+      "primary_role": "specific",
+      "primary_body_sha256": "4f0d6a5642b2dec672a10c19d0d1b94ba80dd426c2779986e4798fcbfdde3a83",
+      "candidate_body_sha256": "4f0d6a5642b2dec672a10c19d0d1b94ba80dd426c2779986e4798fcbfdde3a83",
+      "primary_header_page": 312
+    },
+    {
+      "key": "ifa-physical-p320-cell1-definition1-emifcg01",
+      "primary_cell_key": "p320:visible:198.193,150.019,466.900,349.383",
+      "page": 320,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "candidate_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "primary_header_page": 320
+    },
+    {
+      "key": "ifa-physical-p320-cell1-definition2-emifcg02",
+      "primary_cell_key": "p320:visible:198.193,150.019,466.900,349.383",
+      "page": 320,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "b30bb95ca3b1d84fcdb24453d1ae9fad29055685445d2c2a3ff0a7055eb2eafd",
+      "candidate_body_sha256": "b30bb95ca3b1d84fcdb24453d1ae9fad29055685445d2c2a3ff0a7055eb2eafd",
+      "primary_header_page": 320
+    },
+    {
+      "key": "ifa-physical-p320-cell1-definition3-emifcg03",
+      "primary_cell_key": "p320:visible:198.193,150.019,466.900,349.383",
+      "page": 320,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "candidate_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "primary_header_page": 320
+    },
+    {
+      "key": "ifa-physical-p320-cell2-definition1-emifmat01",
+      "primary_cell_key": "p320:visible:466.900,150.019,736.508,349.383",
+      "page": 320,
+      "code": "EMIFMAT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "154d89f035aa5e4e1f72d5fc87e486afa90a9a2feea7a5cf9ce23c1e80fe96c6",
+      "candidate_body_sha256": "154d89f035aa5e4e1f72d5fc87e486afa90a9a2feea7a5cf9ce23c1e80fe96c6",
+      "primary_header_page": 320
+    },
+    {
+      "key": "ifa-physical-p320-cell2-definition2-emifmat02",
+      "primary_cell_key": "p320:visible:466.900,150.019,736.508,349.383",
+      "page": 320,
+      "code": "EMIFMAT02",
+      "primary_role": "specific",
+      "primary_body_sha256": "5a196baadb885f5339f2f52c4fa36974b71b116827c7aa33951913ad61c7eac7",
+      "candidate_body_sha256": "5a196baadb885f5339f2f52c4fa36974b71b116827c7aa33951913ad61c7eac7",
+      "primary_header_page": 320
+    },
+    {
+      "key": "ifa-physical-p320-cell2-definition3-emifmat03",
+      "primary_cell_key": "p320:visible:466.900,150.019,736.508,349.383",
+      "page": 320,
+      "code": "EMIFMAT03",
+      "primary_role": "specific",
+      "primary_body_sha256": "d7d72af2c7bb4d7d6108263148c143d85849bf24fbc4d2e979342a2517d6e7da",
+      "candidate_body_sha256": "d7d72af2c7bb4d7d6108263148c143d85849bf24fbc4d2e979342a2517d6e7da",
+      "primary_header_page": 320
+    },
+    {
+      "key": "ifa-physical-p320-cell3-definition1-emifcg10",
+      "primary_cell_key": "p320:visible:198.193,349.383,466.900,524.160",
+      "page": 320,
+      "code": "EMIFCG10",
+      "primary_role": "general",
+      "primary_body_sha256": "5c01f6ad9216e55ef6800fd7890e0f711e7398dd06d7d0add02a2b0457d540e2",
+      "candidate_body_sha256": "5c01f6ad9216e55ef6800fd7890e0f711e7398dd06d7d0add02a2b0457d540e2",
+      "primary_header_page": 320
+    },
+    {
+      "key": "ifa-physical-p320-cell3-definition2-emifcg11",
+      "primary_cell_key": "p320:visible:198.193,349.383,466.900,524.160",
+      "page": 320,
+      "code": "EMIFCG11",
+      "primary_role": "general",
+      "primary_body_sha256": "ab4ace611556278a320781633aad83c1e8a74b27ccf73540a539ee1744320527",
+      "candidate_body_sha256": "ab4ace611556278a320781633aad83c1e8a74b27ccf73540a539ee1744320527",
+      "primary_header_page": 320
+    },
+    {
+      "key": "ifa-physical-p320-cell3-definition3-emifcg12",
+      "primary_cell_key": "p320:visible:198.193,349.383,466.900,524.160",
+      "page": 320,
+      "code": "EMIFCG12",
+      "primary_role": "general",
+      "primary_body_sha256": "ac3104001262cefbbc586da7293c6cd77d24679049e03bbc049442d99a2f48d1",
+      "candidate_body_sha256": "ac3104001262cefbbc586da7293c6cd77d24679049e03bbc049442d99a2f48d1",
+      "primary_header_page": 320
+    },
+    {
+      "key": "ifa-physical-p320-cell4-definition1-emifmat10",
+      "primary_cell_key": "p320:visible:466.900,349.383,736.508,524.160",
+      "page": 320,
+      "code": "EMIFMAT10",
+      "primary_role": "specific",
+      "primary_body_sha256": "69a85f8e767b8a070b2d7aa520019d5e62d0ce32c55e61113c67501cb0bca2a7",
+      "candidate_body_sha256": "69a85f8e767b8a070b2d7aa520019d5e62d0ce32c55e61113c67501cb0bca2a7",
+      "primary_header_page": 320
+    },
+    {
+      "key": "ifa-physical-p320-cell4-definition2-emifmat11",
+      "primary_cell_key": "p320:visible:466.900,349.383,736.508,524.160",
+      "page": 320,
+      "code": "EMIFMAT11",
+      "primary_role": "specific",
+      "primary_body_sha256": "473a25ab6855f3160bbfe99fe1d5d0833ecafb0d1eed85a83072cedbad29e431",
+      "candidate_body_sha256": "473a25ab6855f3160bbfe99fe1d5d0833ecafb0d1eed85a83072cedbad29e431",
+      "primary_header_page": 320
+    },
+    {
+      "key": "ifa-physical-p320-cell4-definition3-emifmat12",
+      "primary_cell_key": "p320:visible:466.900,349.383,736.508,524.160",
+      "page": 320,
+      "code": "EMIFMAT12",
+      "primary_role": "specific",
+      "primary_body_sha256": "382d99ba07577ee9c6be8b3e516f041c0481ed3968ed7c7c4c3827108968226c",
+      "candidate_body_sha256": "382d99ba07577ee9c6be8b3e516f041c0481ed3968ed7c7c4c3827108968226c",
+      "primary_header_page": 320
+    },
+    {
+      "key": "ifa-physical-p323-cell1-definition1-emifcg01",
+      "primary_cell_key": "p323:visible:198.193,150.161,468.034,358.582",
+      "page": 323,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "candidate_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "primary_header_page": 323
+    },
+    {
+      "key": "ifa-physical-p323-cell1-definition2-emifcg02",
+      "primary_cell_key": "p323:visible:198.193,150.161,468.034,358.582",
+      "page": 323,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "b30bb95ca3b1d84fcdb24453d1ae9fad29055685445d2c2a3ff0a7055eb2eafd",
+      "candidate_body_sha256": "b30bb95ca3b1d84fcdb24453d1ae9fad29055685445d2c2a3ff0a7055eb2eafd",
+      "primary_header_page": 323
+    },
+    {
+      "key": "ifa-physical-p323-cell1-definition3-emifcg03",
+      "primary_cell_key": "p323:visible:198.193,150.161,468.034,358.582",
+      "page": 323,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "candidate_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "primary_header_page": 323
+    },
+    {
+      "key": "ifa-physical-p323-cell2-definition1-emifmat01",
+      "primary_cell_key": "p323:visible:468.033,150.161,737.424,358.582",
+      "page": 323,
+      "code": "EMIFMAT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "cd7be6dd75920f9fe887475875c658448c585831598bfd6a3e0a10cf828ee631",
+      "candidate_body_sha256": "cd7be6dd75920f9fe887475875c658448c585831598bfd6a3e0a10cf828ee631",
+      "primary_header_page": 323
+    },
+    {
+      "key": "ifa-physical-p323-cell2-definition2-emifmat02",
+      "primary_cell_key": "p323:visible:468.033,150.161,737.424,358.582",
+      "page": 323,
+      "code": "EMIFMAT02",
+      "primary_role": "specific",
+      "primary_body_sha256": "036cc1cd880d78b9cc88f3606be10c8487bf8eab7c9e6b393a83b9717ba10267",
+      "candidate_body_sha256": "036cc1cd880d78b9cc88f3606be10c8487bf8eab7c9e6b393a83b9717ba10267",
+      "primary_header_page": 323
+    },
+    {
+      "key": "ifa-physical-p323-cell2-definition3-emifmat03",
+      "primary_cell_key": "p323:visible:468.033,150.161,737.424,358.582",
+      "page": 323,
+      "code": "EMIFMAT03",
+      "primary_role": "specific",
+      "primary_body_sha256": "b35bbb2b0988fa0c2a883bb6df110b03690045f8c6b0b801e39ffdbac60f7216",
+      "candidate_body_sha256": "b35bbb2b0988fa0c2a883bb6df110b03690045f8c6b0b801e39ffdbac60f7216",
+      "primary_header_page": 323
+    },
+    {
+      "key": "ifa-physical-p323-cell3-definition1-emifcg07",
+      "primary_cell_key": "p323:visible:198.193,358.582,468.034,524.410",
+      "page": 323,
+      "code": "EMIFCG07",
+      "primary_role": "general",
+      "primary_body_sha256": "9cd5e27c05f9b4b540a1577e04477a5921286d3085640a5b5532297bb296f94d",
+      "candidate_body_sha256": "9cd5e27c05f9b4b540a1577e04477a5921286d3085640a5b5532297bb296f94d",
+      "primary_header_page": 323
+    },
+    {
+      "key": "ifa-physical-p323-cell3-definition2-emifcg08",
+      "primary_cell_key": "p323:visible:198.193,358.582,468.034,524.410",
+      "page": 323,
+      "code": "EMIFCG08",
+      "primary_role": "general",
+      "primary_body_sha256": "0cfae1a8caba2c8fdb5ccebc56dd97ab6492bde99524773f8e7fb53877a2e196",
+      "candidate_body_sha256": "0cfae1a8caba2c8fdb5ccebc56dd97ab6492bde99524773f8e7fb53877a2e196",
+      "primary_header_page": 323
+    },
+    {
+      "key": "ifa-physical-p323-cell3-definition3-emifcg09",
+      "primary_cell_key": "p323:visible:198.193,358.582,468.034,524.410",
+      "page": 323,
+      "code": "EMIFCG09",
+      "primary_role": "general",
+      "primary_body_sha256": "c57f3efbe602801308e8b4d7b936a7c49e3967e919fad9f83deeea99c6edeaa2",
+      "candidate_body_sha256": "c57f3efbe602801308e8b4d7b936a7c49e3967e919fad9f83deeea99c6edeaa2",
+      "primary_header_page": 323
+    },
+    {
+      "key": "ifa-physical-p323-cell4-definition1-emifmat07",
+      "primary_cell_key": "p323:visible:468.033,358.582,737.424,524.410",
+      "page": 323,
+      "code": "EMIFMAT07",
+      "primary_role": "specific",
+      "primary_body_sha256": "9e1add44fb55a748d6401a054889baad8a035a7560f351d18fc94b85cec30018",
+      "candidate_body_sha256": "9e1add44fb55a748d6401a054889baad8a035a7560f351d18fc94b85cec30018",
+      "primary_header_page": 323
+    },
+    {
+      "key": "ifa-physical-p323-cell4-definition2-emifmat08",
+      "primary_cell_key": "p323:visible:468.033,358.582,737.424,524.410",
+      "page": 323,
+      "code": "EMIFMAT08",
+      "primary_role": "specific",
+      "primary_body_sha256": "6b99fb046182c16516c19d089eca7a074acf05ef0748c77c00f217642db964f9",
+      "candidate_body_sha256": "6b99fb046182c16516c19d089eca7a074acf05ef0748c77c00f217642db964f9",
+      "primary_header_page": 323
+    },
+    {
+      "key": "ifa-physical-p323-cell4-definition3-emifmat09",
+      "primary_cell_key": "p323:visible:468.033,358.582,737.424,524.410",
+      "page": 323,
+      "code": "EMIFMAT09",
+      "primary_role": "specific",
+      "primary_body_sha256": "0c9148e992ff8d9646bd56d9376766f0940bf0828a32574bc83e15e95b883fb1",
+      "candidate_body_sha256": "0c9148e992ff8d9646bd56d9376766f0940bf0828a32574bc83e15e95b883fb1",
+      "primary_header_page": 323
+    },
+    {
+      "key": "ifa-physical-p341-cell1-definition1-emifcg01",
+      "primary_cell_key": "p341:visible:190.093,168.661,463.757,231.023",
+      "page": 341,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "candidate_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "primary_header_page": 341
+    },
+    {
+      "key": "ifa-physical-p341-cell2-definition1-emifcnt01",
+      "primary_cell_key": "p341:visible:463.757,168.661,737.008,231.023",
+      "page": 341,
+      "code": "EMIFCNT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "ccf4986e1ee2877519866df11745c8d19ad1abad180fddee659dcf0a4d8b3478",
+      "candidate_body_sha256": "ccf4986e1ee2877519866df11745c8d19ad1abad180fddee659dcf0a4d8b3478",
+      "primary_header_page": 341
+    },
+    {
+      "key": "ifa-physical-p341-cell3-definition1-emifcg05",
+      "primary_cell_key": "p341:visible:190.093,231.023,463.757,282.530",
+      "page": 341,
+      "code": "EMIFCG05",
+      "primary_role": "general",
+      "primary_body_sha256": "980a69a1b6de65ce3bfb7df3e710a1f0fbf8a266d2e3fb8c850cdd0170e8e9ff",
+      "candidate_body_sha256": "980a69a1b6de65ce3bfb7df3e710a1f0fbf8a266d2e3fb8c850cdd0170e8e9ff",
+      "primary_header_page": 341
+    },
+    {
+      "key": "ifa-physical-p341-cell4-definition1-emifcnt05",
+      "primary_cell_key": "p341:visible:463.757,231.023,737.008,282.530",
+      "page": 341,
+      "code": "EMIFCNT05",
+      "primary_role": "specific",
+      "primary_body_sha256": "c6bd3c80191b8b13205cbd8e8c3a3064460d25635a93656d8e7e0d54a5146281",
+      "candidate_body_sha256": "c6bd3c80191b8b13205cbd8e8c3a3064460d25635a93656d8e7e0d54a5146281",
+      "primary_header_page": 341
+    },
+    {
+      "key": "ifa-physical-p341-cell5-definition1-emifcg07",
+      "primary_cell_key": "p341:visible:190.093,282.530,463.757,357.165",
+      "page": 341,
+      "code": "EMIFCG07",
+      "primary_role": "general",
+      "primary_body_sha256": "9cd5e27c05f9b4b540a1577e04477a5921286d3085640a5b5532297bb296f94d",
+      "candidate_body_sha256": "9cd5e27c05f9b4b540a1577e04477a5921286d3085640a5b5532297bb296f94d",
+      "primary_header_page": 341
+    },
+    {
+      "key": "ifa-physical-p341-cell6-definition1-emifcnt07",
+      "primary_cell_key": "p341:visible:463.757,282.530,737.008,357.165",
+      "page": 341,
+      "code": "EMIFCNT07",
+      "primary_role": "specific",
+      "primary_body_sha256": "5fcdfbcde3352b50080e7abec33cf2c8a563f42bd26d13b9f66ef499918a3cc0",
+      "candidate_body_sha256": "5fcdfbcde3352b50080e7abec33cf2c8a563f42bd26d13b9f66ef499918a3cc0",
+      "primary_header_page": 341
+    },
+    {
+      "key": "ifa-physical-p341-cell6-definition2-emifcnt08",
+      "primary_cell_key": "p341:visible:463.757,282.530,737.008,357.165",
+      "page": 341,
+      "code": "EMIFCNT08",
+      "primary_role": "specific",
+      "primary_body_sha256": "cc44f12ff61b943dc6a806d3174c03e109e7f184355e31a3da38da425b7a213e",
+      "candidate_body_sha256": "cc44f12ff61b943dc6a806d3174c03e109e7f184355e31a3da38da425b7a213e",
+      "primary_header_page": 341
+    },
+    {
+      "key": "ifa-physical-p346-cell1-definition1-emifcg01",
+      "primary_cell_key": "p346:visible:191.055,164.409,465.449,213.809",
+      "page": 346,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "candidate_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "primary_header_page": 346
+    },
+    {
+      "key": "ifa-physical-p346-cell2-definition1-emifcnt01",
+      "primary_cell_key": "p346:visible:465.449,164.409,737.008,213.809",
+      "page": 346,
+      "code": "EMIFCNT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "8f5ccf6dbe3e9fccf26b0f3588d52a0e8cd7c9d942c8207c700ff3ebd352e4d2",
+      "candidate_body_sha256": "8f5ccf6dbe3e9fccf26b0f3588d52a0e8cd7c9d942c8207c700ff3ebd352e4d2",
+      "primary_header_page": 346
+    },
+    {
+      "key": "ifa-physical-p346-cell3-definition1-emifcg05",
+      "primary_cell_key": "p346:visible:191.055,213.809,465.449,320.044",
+      "page": 346,
+      "code": "EMIFCG05",
+      "primary_role": "general",
+      "primary_body_sha256": "980a69a1b6de65ce3bfb7df3e710a1f0fbf8a266d2e3fb8c850cdd0170e8e9ff",
+      "candidate_body_sha256": "980a69a1b6de65ce3bfb7df3e710a1f0fbf8a266d2e3fb8c850cdd0170e8e9ff",
+      "primary_header_page": 346
+    },
+    {
+      "key": "ifa-physical-p346-cell4-definition1-emifcnt04",
+      "primary_cell_key": "p346:visible:465.449,213.809,737.008,320.044",
+      "page": 346,
+      "code": "EMIFCNT04",
+      "primary_role": "specific",
+      "primary_body_sha256": "7a79183fdd017677bf7b8aa519f8ce1e0d348da02a9e4c56e56ccacc7b17e3ec",
+      "candidate_body_sha256": "7a79183fdd017677bf7b8aa519f8ce1e0d348da02a9e4c56e56ccacc7b17e3ec",
+      "primary_header_page": 346
+    },
+    {
+      "key": "ifa-physical-p346-cell4-definition2-emifcnt05",
+      "primary_cell_key": "p346:visible:465.449,213.809,737.008,320.044",
+      "page": 346,
+      "code": "EMIFCNT05",
+      "primary_role": "specific",
+      "primary_body_sha256": "4555355acb77833cb07f49f34465a48096a476ded6e8657f0c312524225c2603",
+      "candidate_body_sha256": "4555355acb77833cb07f49f34465a48096a476ded6e8657f0c312524225c2603",
+      "primary_header_page": 346
+    },
+    {
+      "key": "ifa-physical-p346-cell5-definition1-emifcg07",
+      "primary_cell_key": "p346:visible:191.055,320.044,465.449,429.113",
+      "page": 346,
+      "code": "EMIFCG07",
+      "primary_role": "general",
+      "primary_body_sha256": "9cd5e27c05f9b4b540a1577e04477a5921286d3085640a5b5532297bb296f94d",
+      "candidate_body_sha256": "9cd5e27c05f9b4b540a1577e04477a5921286d3085640a5b5532297bb296f94d",
+      "primary_header_page": 346
+    },
+    {
+      "key": "ifa-physical-p346-cell6-definition1-emifcnt07",
+      "primary_cell_key": "p346:visible:465.449,320.044,737.008,429.113",
+      "page": 346,
+      "code": "EMIFCNT07",
+      "primary_role": "specific",
+      "primary_body_sha256": "5fcdfbcde3352b50080e7abec33cf2c8a563f42bd26d13b9f66ef499918a3cc0",
+      "candidate_body_sha256": "5fcdfbcde3352b50080e7abec33cf2c8a563f42bd26d13b9f66ef499918a3cc0",
+      "primary_header_page": 346
+    },
+    {
+      "key": "ifa-physical-p346-cell6-definition2-emifcnt08",
+      "primary_cell_key": "p346:visible:465.449,320.044,737.008,429.113",
+      "page": 346,
+      "code": "EMIFCNT08",
+      "primary_role": "specific",
+      "primary_body_sha256": "15696f7b25dc7fe5cdbb1b51813da4970a50710121b4b9864f2ef2900647cfd0",
+      "candidate_body_sha256": "15696f7b25dc7fe5cdbb1b51813da4970a50710121b4b9864f2ef2900647cfd0",
+      "primary_header_page": 346
+    },
+    {
+      "key": "ifa-physical-p346-cell6-definition3-emifcnt09",
+      "primary_cell_key": "p346:visible:465.449,320.044,737.008,429.113",
+      "page": 346,
+      "code": "EMIFCNT09",
+      "primary_role": "specific",
+      "primary_body_sha256": "a23792ce935d60d9c4d334d71ad1d29b4dbb20f2ccebc44c0b2da5ef9770b7c7",
+      "candidate_body_sha256": "a23792ce935d60d9c4d334d71ad1d29b4dbb20f2ccebc44c0b2da5ef9770b7c7",
+      "primary_header_page": 346
+    },
+    {
+      "key": "ifa-physical-p346-cell7-definition1-emifcg11",
+      "primary_cell_key": "p346:visible:191.055,429.113,465.449,522.501",
+      "page": 346,
+      "code": "EMIFCG11",
+      "primary_role": "general",
+      "primary_body_sha256": "84ede8a3c510edb27e0df00832bbd605af4022857ad5a0794a62739cadb6451a",
+      "candidate_body_sha256": "84ede8a3c510edb27e0df00832bbd605af4022857ad5a0794a62739cadb6451a",
+      "primary_header_page": 346
+    },
+    {
+      "key": "ifa-physical-p346-cell8-definition1-emifcnt10",
+      "primary_cell_key": "p346:visible:465.449,429.113,737.008,522.501",
+      "page": 346,
+      "code": "EMIFCNT10",
+      "primary_role": "specific",
+      "primary_body_sha256": "73e67531f6f8f35c85c20c98d430f7cf5ca54f29c835d476ed288c20a330b98f",
+      "candidate_body_sha256": "73e67531f6f8f35c85c20c98d430f7cf5ca54f29c835d476ed288c20a330b98f",
+      "primary_header_page": 346
+    },
+    {
+      "key": "ifa-physical-p346-cell8-definition2-emifcnt11",
+      "primary_cell_key": "p346:visible:465.449,429.113,737.008,522.501",
+      "page": 346,
+      "code": "EMIFCNT11",
+      "primary_role": "specific",
+      "primary_body_sha256": "081ca8c72ed9877eac9552a008f863102e5986d403eb644f55e46acf4526257e",
+      "candidate_body_sha256": "081ca8c72ed9877eac9552a008f863102e5986d403eb644f55e46acf4526257e",
+      "primary_header_page": 346
+    },
+    {
+      "key": "ifa-physical-p351-cell1-definition1-emifcg03",
+      "primary_cell_key": "p351:visible:189.921,163.559,464.882,290.626",
+      "page": 351,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "candidate_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "primary_header_page": 351
+    },
+    {
+      "key": "ifa-physical-p351-cell2-definition1-emifcnt01",
+      "primary_cell_key": "p351:visible:464.882,163.559,737.008,290.626",
+      "page": 351,
+      "code": "EMIFCNT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "ccf4986e1ee2877519866df11745c8d19ad1abad180fddee659dcf0a4d8b3478",
+      "candidate_body_sha256": "ccf4986e1ee2877519866df11745c8d19ad1abad180fddee659dcf0a4d8b3478",
+      "primary_header_page": 351
+    },
+    {
+      "key": "ifa-physical-p351-cell2-definition2-emifcnt02",
+      "primary_cell_key": "p351:visible:464.882,163.559,737.008,290.626",
+      "page": 351,
+      "code": "EMIFCNT02",
+      "primary_role": "specific",
+      "primary_body_sha256": "65e064579d43cdd8c9971c6cdaec23448911b1578bb48de2e9223e5bdd28bfb3",
+      "candidate_body_sha256": "65e064579d43cdd8c9971c6cdaec23448911b1578bb48de2e9223e5bdd28bfb3",
+      "primary_header_page": 351
+    },
+    {
+      "key": "ifa-physical-p351-cell3-definition1-emifcg05",
+      "primary_cell_key": "p351:visible:189.921,290.626,464.882,402.593",
+      "page": 351,
+      "code": "EMIFCG05",
+      "primary_role": "general",
+      "primary_body_sha256": "980a69a1b6de65ce3bfb7df3e710a1f0fbf8a266d2e3fb8c850cdd0170e8e9ff",
+      "candidate_body_sha256": "980a69a1b6de65ce3bfb7df3e710a1f0fbf8a266d2e3fb8c850cdd0170e8e9ff",
+      "primary_header_page": 351
+    },
+    {
+      "key": "ifa-physical-p351-cell4-definition1-emifcnt04",
+      "primary_cell_key": "p351:visible:464.882,290.626,737.008,402.593",
+      "page": 351,
+      "code": "EMIFCNT04",
+      "primary_role": "specific",
+      "primary_body_sha256": "7a79183fdd017677bf7b8aa519f8ce1e0d348da02a9e4c56e56ccacc7b17e3ec",
+      "candidate_body_sha256": "7a79183fdd017677bf7b8aa519f8ce1e0d348da02a9e4c56e56ccacc7b17e3ec",
+      "primary_header_page": 351
+    },
+    {
+      "key": "ifa-physical-p351-cell4-definition2-emifcnt05",
+      "primary_cell_key": "p351:visible:464.882,290.626,737.008,402.593",
+      "page": 351,
+      "code": "EMIFCNT05",
+      "primary_role": "specific",
+      "primary_body_sha256": "c6bd3c80191b8b13205cbd8e8c3a3064460d25635a93656d8e7e0d54a5146281",
+      "candidate_body_sha256": "c6bd3c80191b8b13205cbd8e8c3a3064460d25635a93656d8e7e0d54a5146281",
+      "primary_header_page": 351
+    },
+    {
+      "key": "ifa-physical-p351-cell5-definition1-emifcg07",
+      "primary_cell_key": "p351:visible:189.921,402.594,464.882,524.410",
+      "page": 351,
+      "code": "EMIFCG07",
+      "primary_role": "general",
+      "primary_body_sha256": "9cd5e27c05f9b4b540a1577e04477a5921286d3085640a5b5532297bb296f94d",
+      "candidate_body_sha256": "9cd5e27c05f9b4b540a1577e04477a5921286d3085640a5b5532297bb296f94d",
+      "primary_header_page": 351
+    },
+    {
+      "key": "ifa-physical-p351-cell6-definition1-emifcnt07",
+      "primary_cell_key": "p351:visible:464.882,402.594,737.008,524.410",
+      "page": 351,
+      "code": "EMIFCNT07",
+      "primary_role": "specific",
+      "primary_body_sha256": "5fcdfbcde3352b50080e7abec33cf2c8a563f42bd26d13b9f66ef499918a3cc0",
+      "candidate_body_sha256": "5fcdfbcde3352b50080e7abec33cf2c8a563f42bd26d13b9f66ef499918a3cc0",
+      "primary_header_page": 351
+    },
+    {
+      "key": "ifa-physical-p351-cell6-definition2-emifcnt08",
+      "primary_cell_key": "p351:visible:464.882,402.594,737.008,524.410",
+      "page": 351,
+      "code": "EMIFCNT08",
+      "primary_role": "specific",
+      "primary_body_sha256": "cc44f12ff61b943dc6a806d3174c03e109e7f184355e31a3da38da425b7a213e",
+      "candidate_body_sha256": "cc44f12ff61b943dc6a806d3174c03e109e7f184355e31a3da38da425b7a213e",
+      "primary_header_page": 351
+    },
+    {
+      "key": "ifa-physical-p351-cell6-definition3-emifcnt09",
+      "primary_cell_key": "p351:visible:464.882,402.594,737.008,524.410",
+      "page": 351,
+      "code": "EMIFCNT09",
+      "primary_role": "specific",
+      "primary_body_sha256": "59d70e46b901eca4c597791efb9de7b72aa5c0bd279ac8be3ebe8407ee31c375",
+      "candidate_body_sha256": "59d70e46b901eca4c597791efb9de7b72aa5c0bd279ac8be3ebe8407ee31c375",
+      "primary_header_page": 351
+    },
+    {
+      "key": "ifa-physical-p356-cell1-definition1-emifcg01",
+      "primary_cell_key": "p356:visible:190.630,170.079,464.882,352.213",
+      "page": 356,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "candidate_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "primary_header_page": 356
+    },
+    {
+      "key": "ifa-physical-p356-cell1-definition2-emifcg02",
+      "primary_cell_key": "p356:visible:190.630,170.079,464.882,352.213",
+      "page": 356,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "5a9b58b9f3231a3734e2bac36884c0e48856090c8073736f0ed311b70e1981b0",
+      "candidate_body_sha256": "5a9b58b9f3231a3734e2bac36884c0e48856090c8073736f0ed311b70e1981b0",
+      "primary_header_page": 356
+    },
+    {
+      "key": "ifa-physical-p356-cell1-definition3-emifcg03",
+      "primary_cell_key": "p356:visible:190.630,170.079,464.882,352.213",
+      "page": 356,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "candidate_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "primary_header_page": 356
+    },
+    {
+      "key": "ifa-physical-p356-cell2-definition1-emifcnt01",
+      "primary_cell_key": "p356:visible:464.882,170.079,737.008,352.213",
+      "page": 356,
+      "code": "EMIFCNT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "8f5ccf6dbe3e9fccf26b0f3588d52a0e8cd7c9d942c8207c700ff3ebd352e4d2",
+      "candidate_body_sha256": "8f5ccf6dbe3e9fccf26b0f3588d52a0e8cd7c9d942c8207c700ff3ebd352e4d2",
+      "primary_header_page": 356
+    },
+    {
+      "key": "ifa-physical-p356-cell2-definition2-emifcnt02",
+      "primary_cell_key": "p356:visible:464.882,170.079,737.008,352.213",
+      "page": 356,
+      "code": "EMIFCNT02",
+      "primary_role": "specific",
+      "primary_body_sha256": "4ffa11c9b38b265bdaf836da56ec8af1122b8ec60e5fe058723d64f61cb515fc",
+      "candidate_body_sha256": "4ffa11c9b38b265bdaf836da56ec8af1122b8ec60e5fe058723d64f61cb515fc",
+      "primary_header_page": 356
+    },
+    {
+      "key": "ifa-physical-p356-cell2-definition3-emifcnt03",
+      "primary_cell_key": "p356:visible:464.882,170.079,737.008,352.213",
+      "page": 356,
+      "code": "EMIFCNT03",
+      "primary_role": "specific",
+      "primary_body_sha256": "88e81fccae4a6d4b1f1fa5df139d76b281f99337af6c594b5d1894a28f48c4c2",
+      "candidate_body_sha256": "88e81fccae4a6d4b1f1fa5df139d76b281f99337af6c594b5d1894a28f48c4c2",
+      "primary_header_page": 356
+    },
+    {
+      "key": "ifa-physical-p356-cell3-definition1-emifcg04",
+      "primary_cell_key": "p356:visible:190.630,352.213,464.882,526.082",
+      "page": 356,
+      "code": "EMIFCG04",
+      "primary_role": "general",
+      "primary_body_sha256": "85370a880860bc0d36f366cfeba606505f3f8ccf72f70ca023a1856ddd9b9c00",
+      "candidate_body_sha256": "85370a880860bc0d36f366cfeba606505f3f8ccf72f70ca023a1856ddd9b9c00",
+      "primary_header_page": 356
+    },
+    {
+      "key": "ifa-physical-p356-cell4-definition1-emifcnt04",
+      "primary_cell_key": "p356:visible:464.882,352.213,737.008,526.082",
+      "page": 356,
+      "code": "EMIFCNT04",
+      "primary_role": "specific",
+      "primary_body_sha256": "7a79183fdd017677bf7b8aa519f8ce1e0d348da02a9e4c56e56ccacc7b17e3ec",
+      "candidate_body_sha256": "7a79183fdd017677bf7b8aa519f8ce1e0d348da02a9e4c56e56ccacc7b17e3ec",
+      "primary_header_page": 356
+    },
+    {
+      "key": "ifa-physical-p356-cell4-definition2-emifcnt05",
+      "primary_cell_key": "p356:visible:464.882,352.213,737.008,526.082",
+      "page": 356,
+      "code": "EMIFCNT05",
+      "primary_role": "specific",
+      "primary_body_sha256": "c6bd3c80191b8b13205cbd8e8c3a3064460d25635a93656d8e7e0d54a5146281",
+      "candidate_body_sha256": "c6bd3c80191b8b13205cbd8e8c3a3064460d25635a93656d8e7e0d54a5146281",
+      "primary_header_page": 356
+    },
+    {
+      "key": "ifa-physical-p356-cell4-definition3-emifcnt06",
+      "primary_cell_key": "p356:visible:464.882,352.213,737.008,526.082",
+      "page": 356,
+      "code": "EMIFCNT06",
+      "primary_role": "specific",
+      "primary_body_sha256": "bd4282a2b42378b35241a4811703f669af246dd498a1f0db120522341b7b266a",
+      "candidate_body_sha256": "bd4282a2b42378b35241a4811703f669af246dd498a1f0db120522341b7b266a",
+      "primary_header_page": 356
+    },
+    {
+      "key": "ifa-physical-p361-cell1-definition1-emifcg01",
+      "primary_cell_key": "p361:visible:189.921,164.901,464.882,349.570",
+      "page": 361,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "candidate_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "primary_header_page": 361
+    },
+    {
+      "key": "ifa-physical-p361-cell1-definition2-emifcg02",
+      "primary_cell_key": "p361:visible:189.921,164.901,464.882,349.570",
+      "page": 361,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "e0818d89a134bdfdf3d35b66c2803bc79295bfdb2ce459b096c41f8411031839",
+      "candidate_body_sha256": "e0818d89a134bdfdf3d35b66c2803bc79295bfdb2ce459b096c41f8411031839",
+      "primary_header_page": 361
+    },
+    {
+      "key": "ifa-physical-p361-cell1-definition3-emifcg03",
+      "primary_cell_key": "p361:visible:189.921,164.901,464.882,349.570",
+      "page": 361,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "candidate_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "primary_header_page": 361
+    },
+    {
+      "key": "ifa-physical-p361-cell2-definition1-emifcnt01",
+      "primary_cell_key": "p361:visible:464.882,164.901,737.008,349.570",
+      "page": 361,
+      "code": "EMIFCNT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "8f5ccf6dbe3e9fccf26b0f3588d52a0e8cd7c9d942c8207c700ff3ebd352e4d2",
+      "candidate_body_sha256": "8f5ccf6dbe3e9fccf26b0f3588d52a0e8cd7c9d942c8207c700ff3ebd352e4d2",
+      "primary_header_page": 361
+    },
+    {
+      "key": "ifa-physical-p361-cell2-definition2-emifcnt02",
+      "primary_cell_key": "p361:visible:464.882,164.901,737.008,349.570",
+      "page": 361,
+      "code": "EMIFCNT02",
+      "primary_role": "specific",
+      "primary_body_sha256": "65e064579d43cdd8c9971c6cdaec23448911b1578bb48de2e9223e5bdd28bfb3",
+      "candidate_body_sha256": "65e064579d43cdd8c9971c6cdaec23448911b1578bb48de2e9223e5bdd28bfb3",
+      "primary_header_page": 361
+    },
+    {
+      "key": "ifa-physical-p361-cell2-definition3-emifcnt03",
+      "primary_cell_key": "p361:visible:464.882,164.901,737.008,349.570",
+      "page": 361,
+      "code": "EMIFCNT03",
+      "primary_role": "specific",
+      "primary_body_sha256": "88e81fccae4a6d4b1f1fa5df139d76b281f99337af6c594b5d1894a28f48c4c2",
+      "candidate_body_sha256": "88e81fccae4a6d4b1f1fa5df139d76b281f99337af6c594b5d1894a28f48c4c2",
+      "primary_header_page": 361
+    },
+    {
+      "key": "ifa-physical-p361-cell3-definition1-emifcg04",
+      "primary_cell_key": "p361:visible:189.921,349.570,464.882,523.439",
+      "page": 361,
+      "code": "EMIFCG04",
+      "primary_role": "general",
+      "primary_body_sha256": "b40596ea1df09c25f1f9d37993e3fdf48d984a7bbce6007295600f94eff2e268",
+      "candidate_body_sha256": "b40596ea1df09c25f1f9d37993e3fdf48d984a7bbce6007295600f94eff2e268",
+      "primary_header_page": 361
+    },
+    {
+      "key": "ifa-physical-p361-cell3-definition2-emifcg05",
+      "primary_cell_key": "p361:visible:189.921,349.570,464.882,523.439",
+      "page": 361,
+      "code": "EMIFCG05",
+      "primary_role": "general",
+      "primary_body_sha256": "980a69a1b6de65ce3bfb7df3e710a1f0fbf8a266d2e3fb8c850cdd0170e8e9ff",
+      "candidate_body_sha256": "980a69a1b6de65ce3bfb7df3e710a1f0fbf8a266d2e3fb8c850cdd0170e8e9ff",
+      "primary_header_page": 361
+    },
+    {
+      "key": "ifa-physical-p361-cell4-definition1-emifcnt04",
+      "primary_cell_key": "p361:visible:464.882,349.570,737.008,523.439",
+      "page": 361,
+      "code": "EMIFCNT04",
+      "primary_role": "specific",
+      "primary_body_sha256": "7a79183fdd017677bf7b8aa519f8ce1e0d348da02a9e4c56e56ccacc7b17e3ec",
+      "candidate_body_sha256": "7a79183fdd017677bf7b8aa519f8ce1e0d348da02a9e4c56e56ccacc7b17e3ec",
+      "primary_header_page": 361
+    },
+    {
+      "key": "ifa-physical-p361-cell4-definition2-emifcnt05",
+      "primary_cell_key": "p361:visible:464.882,349.570,737.008,523.439",
+      "page": 361,
+      "code": "EMIFCNT05",
+      "primary_role": "specific",
+      "primary_body_sha256": "c6bd3c80191b8b13205cbd8e8c3a3064460d25635a93656d8e7e0d54a5146281",
+      "candidate_body_sha256": "c6bd3c80191b8b13205cbd8e8c3a3064460d25635a93656d8e7e0d54a5146281",
+      "primary_header_page": 361
+    },
+    {
+      "key": "ifa-physical-p361-cell4-definition3-emifcnt06",
+      "primary_cell_key": "p361:visible:464.882,349.570,737.008,523.439",
+      "page": 361,
+      "code": "EMIFCNT06",
+      "primary_role": "specific",
+      "primary_body_sha256": "bd4282a2b42378b35241a4811703f669af246dd498a1f0db120522341b7b266a",
+      "candidate_body_sha256": "bd4282a2b42378b35241a4811703f669af246dd498a1f0db120522341b7b266a",
+      "primary_header_page": 361
+    },
+    {
+      "key": "ifa-physical-p372-cell1-definition1-emifcg01",
+      "primary_cell_key": "p372:visible:189.921,151.653,466.299,347.122",
+      "page": 372,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "candidate_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "primary_header_page": 372
+    },
+    {
+      "key": "ifa-physical-p372-cell1-definition2-emifcg02",
+      "primary_cell_key": "p372:visible:189.921,151.653,466.299,347.122",
+      "page": 372,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "0b0d18578dfab33ebcee45096ad1c607e1a247e85dd77c60074b73f442ccfbb8",
+      "candidate_body_sha256": "0b0d18578dfab33ebcee45096ad1c607e1a247e85dd77c60074b73f442ccfbb8",
+      "primary_header_page": 372
+    },
+    {
+      "key": "ifa-physical-p372-cell1-definition3-emifcg03",
+      "primary_cell_key": "p372:visible:189.921,151.653,466.299,347.122",
+      "page": 372,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "8d4a18821354fecea463176d5abe424d02ec0a0c2d666ffb7f1af9aff301d7cb",
+      "candidate_body_sha256": "8d4a18821354fecea463176d5abe424d02ec0a0c2d666ffb7f1af9aff301d7cb",
+      "primary_header_page": 372
+    },
+    {
+      "key": "ifa-physical-p372-cell2-definition1-emifcnt01",
+      "primary_cell_key": "p372:visible:466.299,151.653,737.008,347.122",
+      "page": 372,
+      "code": "EMIFCNT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "ccf4986e1ee2877519866df11745c8d19ad1abad180fddee659dcf0a4d8b3478",
+      "candidate_body_sha256": "ccf4986e1ee2877519866df11745c8d19ad1abad180fddee659dcf0a4d8b3478",
+      "primary_header_page": 372
+    },
+    {
+      "key": "ifa-physical-p372-cell2-definition2-emifcnt02",
+      "primary_cell_key": "p372:visible:466.299,151.653,737.008,347.122",
+      "page": 372,
+      "code": "EMIFCNT02",
+      "primary_role": "specific",
+      "primary_body_sha256": "65e064579d43cdd8c9971c6cdaec23448911b1578bb48de2e9223e5bdd28bfb3",
+      "candidate_body_sha256": "65e064579d43cdd8c9971c6cdaec23448911b1578bb48de2e9223e5bdd28bfb3",
+      "primary_header_page": 372
+    },
+    {
+      "key": "ifa-physical-p372-cell2-definition3-emifcnt03",
+      "primary_cell_key": "p372:visible:466.299,151.653,737.008,347.122",
+      "page": 372,
+      "code": "EMIFCNT03",
+      "primary_role": "specific",
+      "primary_body_sha256": "88e81fccae4a6d4b1f1fa5df139d76b281f99337af6c594b5d1894a28f48c4c2",
+      "candidate_body_sha256": "88e81fccae4a6d4b1f1fa5df139d76b281f99337af6c594b5d1894a28f48c4c2",
+      "primary_header_page": 372
+    },
+    {
+      "key": "ifa-physical-p372-cell3-definition1-emifcg05",
+      "primary_cell_key": "p372:visible:189.921,347.122,466.299,524.410",
+      "page": 372,
+      "code": "EMIFCG05",
+      "primary_role": "general",
+      "primary_body_sha256": "980a69a1b6de65ce3bfb7df3e710a1f0fbf8a266d2e3fb8c850cdd0170e8e9ff",
+      "candidate_body_sha256": "980a69a1b6de65ce3bfb7df3e710a1f0fbf8a266d2e3fb8c850cdd0170e8e9ff",
+      "primary_header_page": 372
+    },
+    {
+      "key": "ifa-physical-p372-cell3-definition2-emifcg06",
+      "primary_cell_key": "p372:visible:189.921,347.122,466.299,524.410",
+      "page": 372,
+      "code": "EMIFCG06",
+      "primary_role": "general",
+      "primary_body_sha256": "cbab1ea89bfd588eda08662c47a561c9c10526b747920d7d6263129f563adfcc",
+      "candidate_body_sha256": "cbab1ea89bfd588eda08662c47a561c9c10526b747920d7d6263129f563adfcc",
+      "primary_header_page": 372
+    },
+    {
+      "key": "ifa-physical-p372-cell4-definition1-emifcnt04",
+      "primary_cell_key": "p372:visible:466.299,347.122,737.008,524.410",
+      "page": 372,
+      "code": "EMIFCNT04",
+      "primary_role": "specific",
+      "primary_body_sha256": "b1d084ec9e78b4bbd105d593e0a0333302bcdcb960ad984e1bcc4fa487487f12",
+      "candidate_body_sha256": "b1d084ec9e78b4bbd105d593e0a0333302bcdcb960ad984e1bcc4fa487487f12",
+      "primary_header_page": 372
+    },
+    {
+      "key": "ifa-physical-p372-cell4-definition2-emifcnt05",
+      "primary_cell_key": "p372:visible:466.299,347.122,737.008,524.410",
+      "page": 372,
+      "code": "EMIFCNT05",
+      "primary_role": "specific",
+      "primary_body_sha256": "4555355acb77833cb07f49f34465a48096a476ded6e8657f0c312524225c2603",
+      "candidate_body_sha256": "4555355acb77833cb07f49f34465a48096a476ded6e8657f0c312524225c2603",
+      "primary_header_page": 372
+    },
+    {
+      "key": "ifa-physical-p372-cell4-definition3-emifcnt06",
+      "primary_cell_key": "p372:visible:466.299,347.122,737.008,524.410",
+      "page": 372,
+      "code": "EMIFCNT06",
+      "primary_role": "specific",
+      "primary_body_sha256": "bd4282a2b42378b35241a4811703f669af246dd498a1f0db120522341b7b266a",
+      "candidate_body_sha256": "bd4282a2b42378b35241a4811703f669af246dd498a1f0db120522341b7b266a",
+      "primary_header_page": 372
+    },
+    {
+      "key": "ifa-physical-p381-cell1-definition1-emifcg01",
+      "primary_cell_key": "p381:visible:188.976,155.688,465.826,351.157",
+      "page": 381,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "candidate_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "primary_header_page": 381
+    },
+    {
+      "key": "ifa-physical-p381-cell1-definition2-emifcg02",
+      "primary_cell_key": "p381:visible:188.976,155.688,465.826,351.157",
+      "page": 381,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "0b0d18578dfab33ebcee45096ad1c607e1a247e85dd77c60074b73f442ccfbb8",
+      "candidate_body_sha256": "0b0d18578dfab33ebcee45096ad1c607e1a247e85dd77c60074b73f442ccfbb8",
+      "primary_header_page": 381
+    },
+    {
+      "key": "ifa-physical-p381-cell1-definition3-emifcg03",
+      "primary_cell_key": "p381:visible:188.976,155.688,465.826,351.157",
+      "page": 381,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "8d4a18821354fecea463176d5abe424d02ec0a0c2d666ffb7f1af9aff301d7cb",
+      "candidate_body_sha256": "8d4a18821354fecea463176d5abe424d02ec0a0c2d666ffb7f1af9aff301d7cb",
+      "primary_header_page": 381
+    },
+    {
+      "key": "ifa-physical-p381-cell2-definition1-emifcnt01",
+      "primary_cell_key": "p381:visible:465.827,155.688,736.441,351.157",
+      "page": 381,
+      "code": "EMIFCNT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "ccf4986e1ee2877519866df11745c8d19ad1abad180fddee659dcf0a4d8b3478",
+      "candidate_body_sha256": "ccf4986e1ee2877519866df11745c8d19ad1abad180fddee659dcf0a4d8b3478",
+      "primary_header_page": 381
+    },
+    {
+      "key": "ifa-physical-p381-cell2-definition2-emifcnt02",
+      "primary_cell_key": "p381:visible:465.827,155.688,736.441,351.157",
+      "page": 381,
+      "code": "EMIFCNT02",
+      "primary_role": "specific",
+      "primary_body_sha256": "65e064579d43cdd8c9971c6cdaec23448911b1578bb48de2e9223e5bdd28bfb3",
+      "candidate_body_sha256": "65e064579d43cdd8c9971c6cdaec23448911b1578bb48de2e9223e5bdd28bfb3",
+      "primary_header_page": 381
+    },
+    {
+      "key": "ifa-physical-p381-cell2-definition3-emifcnt03",
+      "primary_cell_key": "p381:visible:465.827,155.688,736.441,351.157",
+      "page": 381,
+      "code": "EMIFCNT03",
+      "primary_role": "specific",
+      "primary_body_sha256": "09beeb438151d8a76b4c348df02af83ee1edf0b9eabb3489b11167ece82d4ae5",
+      "candidate_body_sha256": "09beeb438151d8a76b4c348df02af83ee1edf0b9eabb3489b11167ece82d4ae5",
+      "primary_header_page": 381
+    },
+    {
+      "key": "ifa-physical-p381-cell3-definition1-emifcg05",
+      "primary_cell_key": "p381:visible:188.976,351.158,465.826,525.027",
+      "page": 381,
+      "code": "EMIFCG05",
+      "primary_role": "general",
+      "primary_body_sha256": "980a69a1b6de65ce3bfb7df3e710a1f0fbf8a266d2e3fb8c850cdd0170e8e9ff",
+      "candidate_body_sha256": "980a69a1b6de65ce3bfb7df3e710a1f0fbf8a266d2e3fb8c850cdd0170e8e9ff",
+      "primary_header_page": 381
+    },
+    {
+      "key": "ifa-physical-p381-cell3-definition2-emifcg06",
+      "primary_cell_key": "p381:visible:188.976,351.158,465.826,525.027",
+      "page": 381,
+      "code": "EMIFCG06",
+      "primary_role": "general",
+      "primary_body_sha256": "cbab1ea89bfd588eda08662c47a561c9c10526b747920d7d6263129f563adfcc",
+      "candidate_body_sha256": "cbab1ea89bfd588eda08662c47a561c9c10526b747920d7d6263129f563adfcc",
+      "primary_header_page": 381
+    },
+    {
+      "key": "ifa-physical-p381-cell4-definition1-emifcnt04",
+      "primary_cell_key": "p381:visible:465.827,351.158,736.441,525.027",
+      "page": 381,
+      "code": "EMIFCNT04",
+      "primary_role": "specific",
+      "primary_body_sha256": "b1d084ec9e78b4bbd105d593e0a0333302bcdcb960ad984e1bcc4fa487487f12",
+      "candidate_body_sha256": "b1d084ec9e78b4bbd105d593e0a0333302bcdcb960ad984e1bcc4fa487487f12",
+      "primary_header_page": 381
+    },
+    {
+      "key": "ifa-physical-p381-cell4-definition2-emifcnt05",
+      "primary_cell_key": "p381:visible:465.827,351.158,736.441,525.027",
+      "page": 381,
+      "code": "EMIFCNT05",
+      "primary_role": "specific",
+      "primary_body_sha256": "4555355acb77833cb07f49f34465a48096a476ded6e8657f0c312524225c2603",
+      "candidate_body_sha256": "4555355acb77833cb07f49f34465a48096a476ded6e8657f0c312524225c2603",
+      "primary_header_page": 381
+    },
+    {
+      "key": "ifa-physical-p381-cell4-definition3-emifcnt06",
+      "primary_cell_key": "p381:visible:465.827,351.158,736.441,525.027",
+      "page": 381,
+      "code": "EMIFCNT06",
+      "primary_role": "specific",
+      "primary_body_sha256": "bd4282a2b42378b35241a4811703f669af246dd498a1f0db120522341b7b266a",
+      "candidate_body_sha256": "bd4282a2b42378b35241a4811703f669af246dd498a1f0db120522341b7b266a",
+      "primary_header_page": 381
+    },
+    {
+      "key": "ifa-physical-p390-cell1-definition1-emifcg01",
+      "primary_cell_key": "p390:visible:188.504,163.485,466.299,358.954",
+      "page": 390,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "6482fb065437926500cf9bab3314f1409c4d15654b053088cd3fec3fc013e4d6",
+      "candidate_body_sha256": "6482fb065437926500cf9bab3314f1409c4d15654b053088cd3fec3fc013e4d6",
+      "primary_header_page": 390
+    },
+    {
+      "key": "ifa-physical-p390-cell2-definition1-emifcnt01",
+      "primary_cell_key": "p390:visible:466.299,163.485,737.008,358.954",
+      "page": 390,
+      "code": "EMIFCNT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "ccf4986e1ee2877519866df11745c8d19ad1abad180fddee659dcf0a4d8b3478",
+      "candidate_body_sha256": "ccf4986e1ee2877519866df11745c8d19ad1abad180fddee659dcf0a4d8b3478",
+      "primary_header_page": 390
+    },
+    {
+      "key": "ifa-physical-p390-cell2-definition2-emifcnt02",
+      "primary_cell_key": "p390:visible:466.299,163.485,737.008,358.954",
+      "page": 390,
+      "code": "EMIFCNT02",
+      "primary_role": "specific",
+      "primary_body_sha256": "65e064579d43cdd8c9971c6cdaec23448911b1578bb48de2e9223e5bdd28bfb3",
+      "candidate_body_sha256": "65e064579d43cdd8c9971c6cdaec23448911b1578bb48de2e9223e5bdd28bfb3",
+      "primary_header_page": 390
+    },
+    {
+      "key": "ifa-physical-p390-cell2-definition3-emifcnt03",
+      "primary_cell_key": "p390:visible:466.299,163.485,737.008,358.954",
+      "page": 390,
+      "code": "EMIFCNT03",
+      "primary_role": "specific",
+      "primary_body_sha256": "88e81fccae4a6d4b1f1fa5df139d76b281f99337af6c594b5d1894a28f48c4c2",
+      "candidate_body_sha256": "88e81fccae4a6d4b1f1fa5df139d76b281f99337af6c594b5d1894a28f48c4c2",
+      "primary_header_page": 390
+    },
+    {
+      "key": "ifa-physical-p390-cell3-definition1-emifcg07",
+      "primary_cell_key": "p390:visible:188.504,358.954,466.299,408.354",
+      "page": 390,
+      "code": "EMIFCG07",
+      "primary_role": "general",
+      "primary_body_sha256": "9cd5e27c05f9b4b540a1577e04477a5921286d3085640a5b5532297bb296f94d",
+      "candidate_body_sha256": "9cd5e27c05f9b4b540a1577e04477a5921286d3085640a5b5532297bb296f94d",
+      "primary_header_page": 390
+    },
+    {
+      "key": "ifa-physical-p390-cell4-definition1-emifcnt07",
+      "primary_cell_key": "p390:visible:466.299,358.954,737.008,408.354",
+      "page": 390,
+      "code": "EMIFCNT07",
+      "primary_role": "specific",
+      "primary_body_sha256": "5fcdfbcde3352b50080e7abec33cf2c8a563f42bd26d13b9f66ef499918a3cc0",
+      "candidate_body_sha256": "5fcdfbcde3352b50080e7abec33cf2c8a563f42bd26d13b9f66ef499918a3cc0",
+      "primary_header_page": 390
+    },
+    {
+      "key": "ifa-physical-p395-cell1-definition1-emifcg01",
+      "primary_cell_key": "p395:visible:198.193,172.914,466.772,394.016",
+      "page": 395,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "candidate_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "primary_header_page": 395
+    },
+    {
+      "key": "ifa-physical-p395-cell1-definition2-emifcg02",
+      "primary_cell_key": "p395:visible:198.193,172.914,466.772,394.016",
+      "page": 395,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "b30bb95ca3b1d84fcdb24453d1ae9fad29055685445d2c2a3ff0a7055eb2eafd",
+      "candidate_body_sha256": "b30bb95ca3b1d84fcdb24453d1ae9fad29055685445d2c2a3ff0a7055eb2eafd",
+      "primary_header_page": 395
+    },
+    {
+      "key": "ifa-physical-p395-cell1-definition3-emifcg03",
+      "primary_cell_key": "p395:visible:198.193,172.914,466.772,394.016",
+      "page": 395,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "af3ee7cc0aaf1c2628ba641b7699ca5659e67eaf790815fe5415b70859953e81",
+      "candidate_body_sha256": "af3ee7cc0aaf1c2628ba641b7699ca5659e67eaf790815fe5415b70859953e81",
+      "primary_header_page": 395
+    },
+    {
+      "key": "ifa-physical-p395-cell2-definition1-emifcnt01",
+      "primary_cell_key": "p395:visible:466.772,172.914,737.008,394.016",
+      "page": 395,
+      "code": "EMIFCNT01",
+      "primary_role": "specific",
+      "primary_body_sha256": "ccf4986e1ee2877519866df11745c8d19ad1abad180fddee659dcf0a4d8b3478",
+      "candidate_body_sha256": "ccf4986e1ee2877519866df11745c8d19ad1abad180fddee659dcf0a4d8b3478",
+      "primary_header_page": 395
+    },
+    {
+      "key": "ifa-physical-p395-cell2-definition2-emifcnt02",
+      "primary_cell_key": "p395:visible:466.772,172.914,737.008,394.016",
+      "page": 395,
+      "code": "EMIFCNT02",
+      "primary_role": "specific",
+      "primary_body_sha256": "65e064579d43cdd8c9971c6cdaec23448911b1578bb48de2e9223e5bdd28bfb3",
+      "candidate_body_sha256": "65e064579d43cdd8c9971c6cdaec23448911b1578bb48de2e9223e5bdd28bfb3",
+      "primary_header_page": 395
+    },
+    {
+      "key": "ifa-physical-p395-cell2-definition3-emifcnt03",
+      "primary_cell_key": "p395:visible:466.772,172.914,737.008,394.016",
+      "page": 395,
+      "code": "EMIFCNT03",
+      "primary_role": "specific",
+      "primary_body_sha256": "09beeb438151d8a76b4c348df02af83ee1edf0b9eabb3489b11167ece82d4ae5",
+      "candidate_body_sha256": "09beeb438151d8a76b4c348df02af83ee1edf0b9eabb3489b11167ece82d4ae5",
+      "primary_header_page": 395
+    },
+    {
+      "key": "ifa-physical-p395-cell3-definition1-emifcg05",
+      "primary_cell_key": "p395:visible:198.193,394.016,466.772,521.574",
+      "page": 395,
+      "code": "EMIFCG05",
+      "primary_role": "general",
+      "primary_body_sha256": "85370e5ba42016df76bbc84272d66df06d05b5dcaad5868f9b9d19af522d9aa4",
+      "candidate_body_sha256": "85370e5ba42016df76bbc84272d66df06d05b5dcaad5868f9b9d19af522d9aa4",
+      "primary_header_page": 395
+    },
+    {
+      "key": "ifa-physical-p395-cell3-definition2-emifcg06",
+      "primary_cell_key": "p395:visible:198.193,394.016,466.772,521.574",
+      "page": 395,
+      "code": "EMIFCG06",
+      "primary_role": "general",
+      "primary_body_sha256": "adefdfae51c5ab3897fe3b098c6fa4be3952680397a8edb22f4bc5bb439a4b1b",
+      "candidate_body_sha256": "adefdfae51c5ab3897fe3b098c6fa4be3952680397a8edb22f4bc5bb439a4b1b",
+      "primary_header_page": 395
+    },
+    {
+      "key": "ifa-physical-p395-cell4-definition1-emifcnt04",
+      "primary_cell_key": "p395:visible:466.772,394.016,737.008,521.574",
+      "page": 395,
+      "code": "EMIFCNT04",
+      "primary_role": "specific",
+      "primary_body_sha256": "b1d084ec9e78b4bbd105d593e0a0333302bcdcb960ad984e1bcc4fa487487f12",
+      "candidate_body_sha256": "b1d084ec9e78b4bbd105d593e0a0333302bcdcb960ad984e1bcc4fa487487f12",
+      "primary_header_page": 395
+    },
+    {
+      "key": "ifa-physical-p395-cell4-definition2-emifcnt05",
+      "primary_cell_key": "p395:visible:466.772,394.016,737.008,521.574",
+      "page": 395,
+      "code": "EMIFCNT05",
+      "primary_role": "specific",
+      "primary_body_sha256": "53072f333d4a0769c2399e86f04c9d4b0b18b81766bba6ec6e2201e5766bb6bc",
+      "candidate_body_sha256": "53072f333d4a0769c2399e86f04c9d4b0b18b81766bba6ec6e2201e5766bb6bc",
+      "primary_header_page": 395
+    },
+    {
+      "key": "ifa-physical-p407-cell1-definition1-emifcg02",
+      "primary_cell_key": "p407:visible:195.591,171.988,467.717,278.222",
+      "page": 407,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "b30bb95ca3b1d84fcdb24453d1ae9fad29055685445d2c2a3ff0a7055eb2eafd",
+      "candidate_body_sha256": "b30bb95ca3b1d84fcdb24453d1ae9fad29055685445d2c2a3ff0a7055eb2eafd",
+      "primary_header_page": 407
+    },
+    {
+      "key": "ifa-physical-p407-cell1-definition2-emifcg03",
+      "primary_cell_key": "p407:visible:195.591,171.988,467.717,278.222",
+      "page": 407,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "candidate_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "primary_header_page": 407
+    },
+    {
+      "key": "ifa-physical-p407-cell2-definition1-emifcnt03",
+      "primary_cell_key": "p407:visible:467.717,171.988,737.008,278.222",
+      "page": 407,
+      "code": "EMIFCNT03",
+      "primary_role": "specific",
+      "primary_body_sha256": "841b6a0fa55e298fcda305821e2938f06aa5a2b8b02e6b5828f580b3e8e259d9",
+      "candidate_body_sha256": "841b6a0fa55e298fcda305821e2938f06aa5a2b8b02e6b5828f580b3e8e259d9",
+      "primary_header_page": 407
+    },
+    {
+      "key": "ifa-physical-p407-cell3-definition1-emifcg05",
+      "primary_cell_key": "p407:visible:195.591,278.223,467.717,327.622",
+      "page": 407,
+      "code": "EMIFCG05",
+      "primary_role": "general",
+      "primary_body_sha256": "980a69a1b6de65ce3bfb7df3e710a1f0fbf8a266d2e3fb8c850cdd0170e8e9ff",
+      "candidate_body_sha256": "980a69a1b6de65ce3bfb7df3e710a1f0fbf8a266d2e3fb8c850cdd0170e8e9ff",
+      "primary_header_page": 407
+    },
+    {
+      "key": "ifa-physical-p407-cell4-definition1-emifcnt05",
+      "primary_cell_key": "p407:visible:467.717,278.223,737.008,327.622",
+      "page": 407,
+      "code": "EMIFCNT05",
+      "primary_role": "specific",
+      "primary_body_sha256": "53072f333d4a0769c2399e86f04c9d4b0b18b81766bba6ec6e2201e5766bb6bc",
+      "candidate_body_sha256": "53072f333d4a0769c2399e86f04c9d4b0b18b81766bba6ec6e2201e5766bb6bc",
+      "primary_header_page": 407
+    },
+    {
+      "key": "ifa-physical-p407-cell5-definition1-emifcg07",
+      "primary_cell_key": "p407:visible:195.591,327.622,467.717,423.057",
+      "page": 407,
+      "code": "EMIFCG07",
+      "primary_role": "general",
+      "primary_body_sha256": "9cd5e27c05f9b4b540a1577e04477a5921286d3085640a5b5532297bb296f94d",
+      "candidate_body_sha256": "9cd5e27c05f9b4b540a1577e04477a5921286d3085640a5b5532297bb296f94d",
+      "primary_header_page": 407
+    },
+    {
+      "key": "ifa-physical-p407-cell5-definition2-emifcg09",
+      "primary_cell_key": "p407:visible:195.591,327.622,467.717,423.057",
+      "page": 407,
+      "code": "EMIFCG09",
+      "primary_role": "general",
+      "primary_body_sha256": "c57f3efbe602801308e8b4d7b936a7c49e3967e919fad9f83deeea99c6edeaa2",
+      "candidate_body_sha256": "c57f3efbe602801308e8b4d7b936a7c49e3967e919fad9f83deeea99c6edeaa2",
+      "primary_header_page": 407
+    },
+    {
+      "key": "ifa-physical-p407-cell6-definition1-emifcnt08",
+      "primary_cell_key": "p407:visible:467.717,327.622,737.008,423.057",
+      "page": 407,
+      "code": "EMIFCNT08",
+      "primary_role": "specific",
+      "primary_body_sha256": "15696f7b25dc7fe5cdbb1b51813da4970a50710121b4b9864f2ef2900647cfd0",
+      "candidate_body_sha256": "15696f7b25dc7fe5cdbb1b51813da4970a50710121b4b9864f2ef2900647cfd0",
+      "primary_header_page": 407
+    },
+    {
+      "key": "ifa-physical-p407-cell6-definition2-emifcnt09",
+      "primary_cell_key": "p407:visible:467.717,327.622,737.008,423.057",
+      "page": 407,
+      "code": "EMIFCNT09",
+      "primary_role": "specific",
+      "primary_body_sha256": "a23792ce935d60d9c4d334d71ad1d29b4dbb20f2ccebc44c0b2da5ef9770b7c7",
+      "candidate_body_sha256": "a23792ce935d60d9c4d334d71ad1d29b4dbb20f2ccebc44c0b2da5ef9770b7c7",
+      "primary_header_page": 407
+    },
+    {
+      "key": "ifa-physical-p407-cell7-definition1-emifcg11",
+      "primary_cell_key": "p407:visible:195.591,423.057,467.717,529.292",
+      "page": 407,
+      "code": "EMIFCG11",
+      "primary_role": "general",
+      "primary_body_sha256": "84ede8a3c510edb27e0df00832bbd605af4022857ad5a0794a62739cadb6451a",
+      "candidate_body_sha256": "84ede8a3c510edb27e0df00832bbd605af4022857ad5a0794a62739cadb6451a",
+      "primary_header_page": 407
+    },
+    {
+      "key": "ifa-physical-p407-cell7-definition2-emifcg12",
+      "primary_cell_key": "p407:visible:195.591,423.057,467.717,529.292",
+      "page": 407,
+      "code": "EMIFCG12",
+      "primary_role": "general",
+      "primary_body_sha256": "ac3104001262cefbbc586da7293c6cd77d24679049e03bbc049442d99a2f48d1",
+      "candidate_body_sha256": "ac3104001262cefbbc586da7293c6cd77d24679049e03bbc049442d99a2f48d1",
+      "primary_header_page": 407
+    },
+    {
+      "key": "ifa-physical-p407-cell8-definition1-emifcnt11",
+      "primary_cell_key": "p407:visible:467.717,423.057,737.008,529.292",
+      "page": 407,
+      "code": "EMIFCNT11",
+      "primary_role": "specific",
+      "primary_body_sha256": "b36fa868dea0768337187e94d8fc4f244a5bbc630009e77f558f40cb41532bee",
+      "candidate_body_sha256": "b36fa868dea0768337187e94d8fc4f244a5bbc630009e77f558f40cb41532bee",
+      "primary_header_page": 407
+    },
+    {
+      "key": "ifa-physical-p407-cell8-definition2-emifcnt12",
+      "primary_cell_key": "p407:visible:467.717,423.057,737.008,529.292",
+      "page": 407,
+      "code": "EMIFCNT12",
+      "primary_role": "specific",
+      "primary_body_sha256": "6090e5ffa9a3bf187f64fe777c6e55ac8a60c58eddda7e499f1721fde50fd5b3",
+      "candidate_body_sha256": "6090e5ffa9a3bf187f64fe777c6e55ac8a60c58eddda7e499f1721fde50fd5b3",
+      "primary_header_page": 407
+    },
+    {
+      "key": "ifa-physical-p412-cell1-definition1-emifcg01",
+      "primary_cell_key": "p412:visible:195.591,272.652,464.882,524.410",
+      "page": 412,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "ebaeb7f9f782604695c7a2001d03b3905b6adb56c61386b561bf751f15fe1e29",
+      "candidate_body_sha256": "ebaeb7f9f782604695c7a2001d03b3905b6adb56c61386b561bf751f15fe1e29",
+      "primary_header_page": 412
+    },
+    {
+      "key": "ifa-physical-p412-cell1-definition2-emifcg02",
+      "primary_cell_key": "p412:visible:195.591,272.652,464.882,524.410",
+      "page": 412,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "42aaee06aeabdc3f9046aeca1e704168eb6d7063c66273f77728e2e725f8c0b0",
+      "candidate_body_sha256": "42aaee06aeabdc3f9046aeca1e704168eb6d7063c66273f77728e2e725f8c0b0",
+      "primary_header_page": 412
+    },
+    {
+      "key": "ifa-physical-p412-cell1-definition3-emifcg03",
+      "primary_cell_key": "p412:visible:195.591,272.652,464.882,524.410",
+      "page": 412,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "candidate_body_sha256": "f837f8a865884d12a7e8a5cef7bdb16e19984276ea6df317df1e7875a68c4835",
+      "primary_header_page": 412
+    },
+    {
+      "key": "ifa-physical-p412-cell2-definition1-emifchsa01",
+      "primary_cell_key": "p412:visible:464.882,272.652,737.008,524.410",
+      "page": 412,
+      "code": "EMIFCHSA01",
+      "primary_role": "specific",
+      "primary_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "candidate_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "primary_header_page": 412
+    },
+    {
+      "key": "ifa-physical-p412-cell2-definition2-emifchsa02",
+      "primary_cell_key": "p412:visible:464.882,272.652,737.008,524.410",
+      "page": 412,
+      "code": "EMIFCHSA02",
+      "primary_role": "specific",
+      "primary_body_sha256": "7085ab6d8731e2e7de2f0891e81e3a48bf1c0a65e383c6be8d6f6657b97432f4",
+      "candidate_body_sha256": "7085ab6d8731e2e7de2f0891e81e3a48bf1c0a65e383c6be8d6f6657b97432f4",
+      "primary_header_page": 412
+    },
+    {
+      "key": "ifa-physical-p412-cell2-definition3-emifchsa03",
+      "primary_cell_key": "p412:visible:464.882,272.652,737.008,524.410",
+      "page": 412,
+      "code": "EMIFCHSA03",
+      "primary_role": "specific",
+      "primary_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "candidate_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "primary_header_page": 412
+    },
+    {
+      "key": "ifa-physical-p418-cell1-definition1-emifcg07",
+      "primary_cell_key": "p418:visible:194.646,181.075,464.882,378.544",
+      "page": 418,
+      "code": "EMIFCG07",
+      "primary_role": "general",
+      "primary_body_sha256": "b94f4ec2b5f231856d262f80438af6b83ca363c2a95d92fb94a9d350e976a93c",
+      "candidate_body_sha256": "b94f4ec2b5f231856d262f80438af6b83ca363c2a95d92fb94a9d350e976a93c",
+      "primary_header_page": 418
+    },
+    {
+      "key": "ifa-physical-p418-cell1-definition2-emifcg08",
+      "primary_cell_key": "p418:visible:194.646,181.075,464.882,378.544",
+      "page": 418,
+      "code": "EMIFCG08",
+      "primary_role": "general",
+      "primary_body_sha256": "0cfae1a8caba2c8fdb5ccebc56dd97ab6492bde99524773f8e7fb53877a2e196",
+      "candidate_body_sha256": "0cfae1a8caba2c8fdb5ccebc56dd97ab6492bde99524773f8e7fb53877a2e196",
+      "primary_header_page": 418
+    },
+    {
+      "key": "ifa-physical-p418-cell1-definition3-emifcg09",
+      "primary_cell_key": "p418:visible:194.646,181.075,464.882,378.544",
+      "page": 418,
+      "code": "EMIFCG09",
+      "primary_role": "general",
+      "primary_body_sha256": "2a01bfeba4181f179986c1188877010f33d23bc5571bb31fa3cc74e5c2153433",
+      "candidate_body_sha256": "2a01bfeba4181f179986c1188877010f33d23bc5571bb31fa3cc74e5c2153433",
+      "primary_header_page": 418
+    },
+    {
+      "key": "ifa-physical-p418-cell2-definition1-emifchsa07",
+      "primary_cell_key": "p418:visible:464.882,181.075,737.008,378.544",
+      "page": 418,
+      "code": "EMIFCHSA07",
+      "primary_role": "specific",
+      "primary_body_sha256": "a271309827d4ba13686d8fc5517138c7e991a9812d1d96c9a03e3ec7cb0667a7",
+      "candidate_body_sha256": "a271309827d4ba13686d8fc5517138c7e991a9812d1d96c9a03e3ec7cb0667a7",
+      "primary_header_page": 418
+    },
+    {
+      "key": "ifa-physical-p418-cell2-definition2-emifchsa08",
+      "primary_cell_key": "p418:visible:464.882,181.075,737.008,378.544",
+      "page": 418,
+      "code": "EMIFCHSA08",
+      "primary_role": "specific",
+      "primary_body_sha256": "69f81ea44e6fb45b2a428a81436e5fa3525393c85e9660e7c10b1c207c701787",
+      "candidate_body_sha256": "69f81ea44e6fb45b2a428a81436e5fa3525393c85e9660e7c10b1c207c701787",
+      "primary_header_page": 418
+    },
+    {
+      "key": "ifa-physical-p418-cell2-definition3-emifchsa09",
+      "primary_cell_key": "p418:visible:464.882,181.075,737.008,378.544",
+      "page": 418,
+      "code": "EMIFCHSA09",
+      "primary_role": "specific",
+      "primary_body_sha256": "f6709d25da3caae879417066c91913cbfad19f7c18f3b1a880e897f5204d47be",
+      "candidate_body_sha256": "f6709d25da3caae879417066c91913cbfad19f7c18f3b1a880e897f5204d47be",
+      "primary_header_page": 418
+    },
+    {
+      "key": "ifa-physical-p424-cell1-definition1-emifcg01",
+      "primary_cell_key": "p424:visible:195.591,232.442,464.882,445.841",
+      "page": 424,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "candidate_body_sha256": "38293947fcb5a31660c7e87796579846f2b6cdb36cb16db971b1a968a2a342a9",
+      "primary_header_page": 424
+    },
+    {
+      "key": "ifa-physical-p424-cell1-definition2-emifcg02",
+      "primary_cell_key": "p424:visible:195.591,232.442,464.882,445.841",
+      "page": 424,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "42aaee06aeabdc3f9046aeca1e704168eb6d7063c66273f77728e2e725f8c0b0",
+      "candidate_body_sha256": "42aaee06aeabdc3f9046aeca1e704168eb6d7063c66273f77728e2e725f8c0b0",
+      "primary_header_page": 424
+    },
+    {
+      "key": "ifa-physical-p424-cell1-definition3-emifcg03",
+      "primary_cell_key": "p424:visible:195.591,232.442,464.882,445.841",
+      "page": 424,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "448313de21f74ab14ce8c4be5c979c0c8e0e7f4ba238a2dd4042de0a42f66fcf",
+      "candidate_body_sha256": "448313de21f74ab14ce8c4be5c979c0c8e0e7f4ba238a2dd4042de0a42f66fcf",
+      "primary_header_page": 424
+    },
+    {
+      "key": "ifa-physical-p424-cell2-definition1-emifchsa01",
+      "primary_cell_key": "p424:visible:464.882,232.442,737.008,445.841",
+      "page": 424,
+      "code": "EMIFCHSA01",
+      "primary_role": "specific",
+      "primary_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "candidate_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "primary_header_page": 424
+    },
+    {
+      "key": "ifa-physical-p424-cell2-definition2-emifchsa02",
+      "primary_cell_key": "p424:visible:464.882,232.442,737.008,445.841",
+      "page": 424,
+      "code": "EMIFCHSA02",
+      "primary_role": "specific",
+      "primary_body_sha256": "7085ab6d8731e2e7de2f0891e81e3a48bf1c0a65e383c6be8d6f6657b97432f4",
+      "candidate_body_sha256": "7085ab6d8731e2e7de2f0891e81e3a48bf1c0a65e383c6be8d6f6657b97432f4",
+      "primary_header_page": 424
+    },
+    {
+      "key": "ifa-physical-p424-cell2-definition3-emifchsa03",
+      "primary_cell_key": "p424:visible:464.882,232.442,737.008,445.841",
+      "page": 424,
+      "code": "EMIFCHSA03",
+      "primary_role": "specific",
+      "primary_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "candidate_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "primary_header_page": 424
+    },
+    {
+      "key": "ifa-physical-p433-cell1-definition1-emifcg01",
+      "primary_cell_key": "p433:visible:204.194,235.985,464.882,519.450",
+      "page": 433,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "candidate_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "primary_header_page": 433
+    },
+    {
+      "key": "ifa-physical-p433-cell1-definition2-emifcg02",
+      "primary_cell_key": "p433:visible:204.194,235.985,464.882,519.450",
+      "page": 433,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "ab249415412bf966633f633488d9c2cd0e807f1c7c0d5e82cef26d7cb8b01599",
+      "candidate_body_sha256": "ab249415412bf966633f633488d9c2cd0e807f1c7c0d5e82cef26d7cb8b01599",
+      "primary_header_page": 433
+    },
+    {
+      "key": "ifa-physical-p433-cell1-definition3-emifcg03",
+      "primary_cell_key": "p433:visible:204.194,235.985,464.882,519.450",
+      "page": 433,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "candidate_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "primary_header_page": 433
+    },
+    {
+      "key": "ifa-physical-p433-cell2-definition1-emifchsa01",
+      "primary_cell_key": "p433:visible:464.882,235.985,737.008,519.450",
+      "page": 433,
+      "code": "EMIFCHSA01",
+      "primary_role": "specific",
+      "primary_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "candidate_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "primary_header_page": 433
+    },
+    {
+      "key": "ifa-physical-p433-cell2-definition2-emifchsa02",
+      "primary_cell_key": "p433:visible:464.882,235.985,737.008,519.450",
+      "page": 433,
+      "code": "EMIFCHSA02",
+      "primary_role": "specific",
+      "primary_body_sha256": "7085ab6d8731e2e7de2f0891e81e3a48bf1c0a65e383c6be8d6f6657b97432f4",
+      "candidate_body_sha256": "7085ab6d8731e2e7de2f0891e81e3a48bf1c0a65e383c6be8d6f6657b97432f4",
+      "primary_header_page": 433
+    },
+    {
+      "key": "ifa-physical-p433-cell2-definition3-emifchsa03",
+      "primary_cell_key": "p433:visible:464.882,235.985,737.008,519.450",
+      "page": 433,
+      "code": "EMIFCHSA03",
+      "primary_role": "specific",
+      "primary_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "candidate_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "primary_header_page": 433
+    },
+    {
+      "key": "ifa-physical-p434-cell1-definition1-emifcg07",
+      "primary_cell_key": "p434:visible:204.194,56.693,464.882,254.162",
+      "page": 434,
+      "code": "EMIFCG07",
+      "primary_role": "general",
+      "primary_body_sha256": "6b8ee0ffe09f46d523e3a9b50d90d5634e7d24ff865e5aecbafeb2ee75928ec7",
+      "candidate_body_sha256": "6b8ee0ffe09f46d523e3a9b50d90d5634e7d24ff865e5aecbafeb2ee75928ec7",
+      "primary_header_page": 433
+    },
+    {
+      "key": "ifa-physical-p434-cell1-definition2-emifcg08",
+      "primary_cell_key": "p434:visible:204.194,56.693,464.882,254.162",
+      "page": 434,
+      "code": "EMIFCG08",
+      "primary_role": "general",
+      "primary_body_sha256": "f3b63b6d5d5ac0dcbcd91171831e53fa7b2226e4933d4e11b6ead53f9048e40f",
+      "candidate_body_sha256": "f3b63b6d5d5ac0dcbcd91171831e53fa7b2226e4933d4e11b6ead53f9048e40f",
+      "primary_header_page": 433
+    },
+    {
+      "key": "ifa-physical-p434-cell1-definition3-emifcg09",
+      "primary_cell_key": "p434:visible:204.194,56.693,464.882,254.162",
+      "page": 434,
+      "code": "EMIFCG09",
+      "primary_role": "general",
+      "primary_body_sha256": "7ae0ae54893cd0089d84971cc5913f6a6fd6352e152361138437d47d799746cd",
+      "candidate_body_sha256": "7ae0ae54893cd0089d84971cc5913f6a6fd6352e152361138437d47d799746cd",
+      "primary_header_page": 433
+    },
+    {
+      "key": "ifa-physical-p434-cell2-definition1-emifchsa07",
+      "primary_cell_key": "p434:visible:464.882,56.693,737.008,254.162",
+      "page": 434,
+      "code": "EMIFCHSA07",
+      "primary_role": "specific",
+      "primary_body_sha256": "abe3a4a93950c86bb3796e7f4597e806177ba5fa1d1df1b7b7f986d260478c95",
+      "candidate_body_sha256": "abe3a4a93950c86bb3796e7f4597e806177ba5fa1d1df1b7b7f986d260478c95",
+      "primary_header_page": 433
+    },
+    {
+      "key": "ifa-physical-p434-cell2-definition2-emifchsa08",
+      "primary_cell_key": "p434:visible:464.882,56.693,737.008,254.162",
+      "page": 434,
+      "code": "EMIFCHSA08",
+      "primary_role": "specific",
+      "primary_body_sha256": "69f81ea44e6fb45b2a428a81436e5fa3525393c85e9660e7c10b1c207c701787",
+      "candidate_body_sha256": "69f81ea44e6fb45b2a428a81436e5fa3525393c85e9660e7c10b1c207c701787",
+      "primary_header_page": 433
+    },
+    {
+      "key": "ifa-physical-p434-cell2-definition3-emifchsa09",
+      "primary_cell_key": "p434:visible:464.882,56.693,737.008,254.162",
+      "page": 434,
+      "code": "EMIFCHSA09",
+      "primary_role": "specific",
+      "primary_body_sha256": "f6709d25da3caae879417066c91913cbfad19f7c18f3b1a880e897f5204d47be",
+      "candidate_body_sha256": "f6709d25da3caae879417066c91913cbfad19f7c18f3b1a880e897f5204d47be",
+      "primary_header_page": 433
+    },
+    {
+      "key": "ifa-physical-p441-cell1-definition1-emifcg04",
+      "primary_cell_key": "p441:visible:204.094,233.103,464.881,516.569",
+      "page": 441,
+      "code": "EMIFCG04",
+      "primary_role": "general",
+      "primary_body_sha256": "7142386b3edaf3e205fd382c1cb51f344241d0d9608ff70d8244ece90d4fd325",
+      "candidate_body_sha256": "7142386b3edaf3e205fd382c1cb51f344241d0d9608ff70d8244ece90d4fd325",
+      "primary_header_page": 441
+    },
+    {
+      "key": "ifa-physical-p441-cell1-definition2-emifcg05",
+      "primary_cell_key": "p441:visible:204.094,233.103,464.881,516.569",
+      "page": 441,
+      "code": "EMIFCG05",
+      "primary_role": "general",
+      "primary_body_sha256": "86fb784c58d1e9c8ac3ec85e1a1ab74962aed26e182bdd0c088b4a5cb1fb8935",
+      "candidate_body_sha256": "86fb784c58d1e9c8ac3ec85e1a1ab74962aed26e182bdd0c088b4a5cb1fb8935",
+      "primary_header_page": 441
+    },
+    {
+      "key": "ifa-physical-p441-cell1-definition3-emifcg06",
+      "primary_cell_key": "p441:visible:204.094,233.103,464.881,516.569",
+      "page": 441,
+      "code": "EMIFCG06",
+      "primary_role": "general",
+      "primary_body_sha256": "f41e7bfd0c3125ba7ddc5eb9df1052d375c546047ff80063490ebf297a71f0f1",
+      "candidate_body_sha256": "f41e7bfd0c3125ba7ddc5eb9df1052d375c546047ff80063490ebf297a71f0f1",
+      "primary_header_page": 441
+    },
+    {
+      "key": "ifa-physical-p441-cell2-definition1-emifchsa04",
+      "primary_cell_key": "p441:visible:464.882,233.103,737.008,516.569",
+      "page": 441,
+      "code": "EMIFCHSA04",
+      "primary_role": "specific",
+      "primary_body_sha256": "427e4bc16a1f6c6b289f31cc34c3e6d6411cb2b2644c3c9c94332532d452dbae",
+      "candidate_body_sha256": "427e4bc16a1f6c6b289f31cc34c3e6d6411cb2b2644c3c9c94332532d452dbae",
+      "primary_header_page": 441
+    },
+    {
+      "key": "ifa-physical-p441-cell2-definition2-emifchsa05",
+      "primary_cell_key": "p441:visible:464.882,233.103,737.008,516.569",
+      "page": 441,
+      "code": "EMIFCHSA05",
+      "primary_role": "specific",
+      "primary_body_sha256": "9c7e73c404450ecb0a76a2902fa9152f8ffe800f232d092763208e429f7f191a",
+      "candidate_body_sha256": "9c7e73c404450ecb0a76a2902fa9152f8ffe800f232d092763208e429f7f191a",
+      "primary_header_page": 441
+    },
+    {
+      "key": "ifa-physical-p441-cell2-definition3-emifchsa06",
+      "primary_cell_key": "p441:visible:464.882,233.103,737.008,516.569",
+      "page": 441,
+      "code": "EMIFCHSA06",
+      "primary_role": "specific",
+      "primary_body_sha256": "ddeaa4fb40adcd96b336ae8d41f6be2b2fa6b4a1a7a417c92d162e2771364e00",
+      "candidate_body_sha256": "ddeaa4fb40adcd96b336ae8d41f6be2b2fa6b4a1a7a417c92d162e2771364e00",
+      "primary_header_page": 441
+    },
+    {
+      "key": "ifa-physical-p449-cell1-definition1-emifcg01",
+      "primary_cell_key": "p449:visible:205.512,183.543,464.882,402.612",
+      "page": 449,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "candidate_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "primary_header_page": 449
+    },
+    {
+      "key": "ifa-physical-p449-cell1-definition2-emifcg02",
+      "primary_cell_key": "p449:visible:205.512,183.543,464.882,402.612",
+      "page": 449,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "c7ed226a4a97c02fa071e1d5fd60ae20ca25fc0143c544373f081a5a35e90237",
+      "candidate_body_sha256": "c7ed226a4a97c02fa071e1d5fd60ae20ca25fc0143c544373f081a5a35e90237",
+      "primary_header_page": 449
+    },
+    {
+      "key": "ifa-physical-p449-cell1-definition3-emifcg03",
+      "primary_cell_key": "p449:visible:205.512,183.543,464.882,402.612",
+      "page": 449,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "098a343d59c7c0d35705737349a122461842a1ca7c8201f574f62dc2155867aa",
+      "candidate_body_sha256": "098a343d59c7c0d35705737349a122461842a1ca7c8201f574f62dc2155867aa",
+      "primary_header_page": 449
+    },
+    {
+      "key": "ifa-physical-p449-cell2-definition1-emifchsa01",
+      "primary_cell_key": "p449:visible:464.882,183.543,737.008,402.612",
+      "page": 449,
+      "code": "EMIFCHSA01",
+      "primary_role": "specific",
+      "primary_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "candidate_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "primary_header_page": 449
+    },
+    {
+      "key": "ifa-physical-p449-cell2-definition2-emifchsa02",
+      "primary_cell_key": "p449:visible:464.882,183.543,737.008,402.612",
+      "page": 449,
+      "code": "EMIFCHSA02",
+      "primary_role": "specific",
+      "primary_body_sha256": "7085ab6d8731e2e7de2f0891e81e3a48bf1c0a65e383c6be8d6f6657b97432f4",
+      "candidate_body_sha256": "7085ab6d8731e2e7de2f0891e81e3a48bf1c0a65e383c6be8d6f6657b97432f4",
+      "primary_header_page": 449
+    },
+    {
+      "key": "ifa-physical-p449-cell2-definition3-emifchsa03",
+      "primary_cell_key": "p449:visible:464.882,183.543,737.008,402.612",
+      "page": 449,
+      "code": "EMIFCHSA03",
+      "primary_role": "specific",
+      "primary_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "candidate_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "primary_header_page": 449
+    },
+    {
+      "key": "ifa-physical-p456-cell1-definition1-emifcg10",
+      "primary_cell_key": "p456:visible:206.929,174.024,464.882,364.251",
+      "page": 456,
+      "code": "EMIFCG10",
+      "primary_role": "general",
+      "primary_body_sha256": "493aa2730c3acfede0583a8d05d81f4cd81d968c24925d0d20d85c9f62cfaa64",
+      "candidate_body_sha256": "493aa2730c3acfede0583a8d05d81f4cd81d968c24925d0d20d85c9f62cfaa64",
+      "primary_header_page": 456
+    },
+    {
+      "key": "ifa-physical-p456-cell1-definition2-emifcg11",
+      "primary_cell_key": "p456:visible:206.929,174.024,464.882,364.251",
+      "page": 456,
+      "code": "EMIFCG11",
+      "primary_role": "general",
+      "primary_body_sha256": "d7480ae286d7129ecd602e09f3f933cd2dbcbec4beab55bbd85b8dd76d12eb3f",
+      "candidate_body_sha256": "d7480ae286d7129ecd602e09f3f933cd2dbcbec4beab55bbd85b8dd76d12eb3f",
+      "primary_header_page": 456
+    },
+    {
+      "key": "ifa-physical-p456-cell1-definition3-emifcg12",
+      "primary_cell_key": "p456:visible:206.929,174.024,464.882,364.251",
+      "page": 456,
+      "code": "EMIFCG12",
+      "primary_role": "general",
+      "primary_body_sha256": "686809864197556e25a163ece3051224f8550efd6c332f09c70758a48ff0c5c2",
+      "candidate_body_sha256": "686809864197556e25a163ece3051224f8550efd6c332f09c70758a48ff0c5c2",
+      "primary_header_page": 456
+    },
+    {
+      "key": "ifa-physical-p456-cell2-definition1-emifchsa10",
+      "primary_cell_key": "p456:visible:464.882,174.024,737.008,364.251",
+      "page": 456,
+      "code": "EMIFCHSA10",
+      "primary_role": "specific",
+      "primary_body_sha256": "67355bef83de5f24d17829872b554786575aea8c80a40a48d17a0e777e4c594e",
+      "candidate_body_sha256": "67355bef83de5f24d17829872b554786575aea8c80a40a48d17a0e777e4c594e",
+      "primary_header_page": 456
+    },
+    {
+      "key": "ifa-physical-p456-cell2-definition2-emifchsa11",
+      "primary_cell_key": "p456:visible:464.882,174.024,737.008,364.251",
+      "page": 456,
+      "code": "EMIFCHSA11",
+      "primary_role": "specific",
+      "primary_body_sha256": "ca4ad5450031be153dca5dc611fa94f32af41a744cbe2726037cc00199a7abd0",
+      "candidate_body_sha256": "ca4ad5450031be153dca5dc611fa94f32af41a744cbe2726037cc00199a7abd0",
+      "primary_header_page": 456
+    },
+    {
+      "key": "ifa-physical-p456-cell2-definition3-emifchsa12",
+      "primary_cell_key": "p456:visible:464.882,174.024,737.008,364.251",
+      "page": 456,
+      "code": "EMIFCHSA12",
+      "primary_role": "specific",
+      "primary_body_sha256": "b926403b67a56fc226f8d2916a6274f7a275e2d94d127c4759387ee0ccb1e344",
+      "candidate_body_sha256": "b926403b67a56fc226f8d2916a6274f7a275e2d94d127c4759387ee0ccb1e344",
+      "primary_header_page": 456
+    },
+    {
+      "key": "ifa-physical-p463-cell1-definition1-emifcg01",
+      "primary_cell_key": "p463:visible:206.929,199.404,464.882,520.629",
+      "page": 463,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "candidate_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "primary_header_page": 463
+    },
+    {
+      "key": "ifa-physical-p463-cell1-definition2-emifcg02",
+      "primary_cell_key": "p463:visible:206.929,199.404,464.882,520.629",
+      "page": 463,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "c7ed226a4a97c02fa071e1d5fd60ae20ca25fc0143c544373f081a5a35e90237",
+      "candidate_body_sha256": "c7ed226a4a97c02fa071e1d5fd60ae20ca25fc0143c544373f081a5a35e90237",
+      "primary_header_page": 463
+    },
+    {
+      "key": "ifa-physical-p463-cell1-definition3-emifcg03",
+      "primary_cell_key": "p463:visible:206.929,199.404,464.882,520.629",
+      "page": 463,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "candidate_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "primary_header_page": 463
+    },
+    {
+      "key": "ifa-physical-p463-cell2-definition1-emifchsa01",
+      "primary_cell_key": "p463:visible:464.882,199.404,737.008,520.629",
+      "page": 463,
+      "code": "EMIFCHSA01",
+      "primary_role": "specific",
+      "primary_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "candidate_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "primary_header_page": 463
+    },
+    {
+      "key": "ifa-physical-p463-cell2-definition2-emifchsa02",
+      "primary_cell_key": "p463:visible:464.882,199.404,737.008,520.629",
+      "page": 463,
+      "code": "EMIFCHSA02",
+      "primary_role": "specific",
+      "primary_body_sha256": "7085ab6d8731e2e7de2f0891e81e3a48bf1c0a65e383c6be8d6f6657b97432f4",
+      "candidate_body_sha256": "7085ab6d8731e2e7de2f0891e81e3a48bf1c0a65e383c6be8d6f6657b97432f4",
+      "primary_header_page": 463
+    },
+    {
+      "key": "ifa-physical-p463-cell2-definition3-emifchsa03",
+      "primary_cell_key": "p463:visible:464.882,199.404,737.008,520.629",
+      "page": 463,
+      "code": "EMIFCHSA03",
+      "primary_role": "specific",
+      "primary_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "candidate_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "primary_header_page": 463
+    },
+    {
+      "key": "ifa-physical-p469-cell1-definition1-emifcg01",
+      "primary_cell_key": "p469:visible:206.929,234.158,464.882,453.227",
+      "page": 469,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "candidate_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "primary_header_page": 469
+    },
+    {
+      "key": "ifa-physical-p469-cell1-definition2-emifcg02",
+      "primary_cell_key": "p469:visible:206.929,234.158,464.882,453.227",
+      "page": 469,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "c7ed226a4a97c02fa071e1d5fd60ae20ca25fc0143c544373f081a5a35e90237",
+      "candidate_body_sha256": "c7ed226a4a97c02fa071e1d5fd60ae20ca25fc0143c544373f081a5a35e90237",
+      "primary_header_page": 469
+    },
+    {
+      "key": "ifa-physical-p469-cell1-definition3-emifcg03",
+      "primary_cell_key": "p469:visible:206.929,234.158,464.882,453.227",
+      "page": 469,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "candidate_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "primary_header_page": 469
+    },
+    {
+      "key": "ifa-physical-p469-cell2-definition1-emifchsa01",
+      "primary_cell_key": "p469:visible:464.882,234.158,737.008,453.227",
+      "page": 469,
+      "code": "EMIFCHSA01",
+      "primary_role": "specific",
+      "primary_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "candidate_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "primary_header_page": 469
+    },
+    {
+      "key": "ifa-physical-p469-cell2-definition2-emifchsa02",
+      "primary_cell_key": "p469:visible:464.882,234.158,737.008,453.227",
+      "page": 469,
+      "code": "EMIFCHSA02",
+      "primary_role": "specific",
+      "primary_body_sha256": "7085ab6d8731e2e7de2f0891e81e3a48bf1c0a65e383c6be8d6f6657b97432f4",
+      "candidate_body_sha256": "7085ab6d8731e2e7de2f0891e81e3a48bf1c0a65e383c6be8d6f6657b97432f4",
+      "primary_header_page": 469
+    },
+    {
+      "key": "ifa-physical-p469-cell2-definition3-emifchsa03",
+      "primary_cell_key": "p469:visible:464.882,234.158,737.008,453.227",
+      "page": 469,
+      "code": "EMIFCHSA03",
+      "primary_role": "specific",
+      "primary_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "candidate_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "primary_header_page": 469
+    },
+    {
+      "key": "ifa-physical-p474-cell1-definition1-emifcg04",
+      "primary_cell_key": "p474:visible:206.220,188.232,464.881,352.913",
+      "page": 474,
+      "code": "EMIFCG04",
+      "primary_role": "general",
+      "primary_body_sha256": "bb016cb28d0eb1b27f30bbe0278f68e3b689075d839072fc1789cf923a8db089",
+      "candidate_body_sha256": "bb016cb28d0eb1b27f30bbe0278f68e3b689075d839072fc1789cf923a8db089",
+      "primary_header_page": 474
+    },
+    {
+      "key": "ifa-physical-p474-cell1-definition2-emifcg05",
+      "primary_cell_key": "p474:visible:206.220,188.232,464.881,352.913",
+      "page": 474,
+      "code": "EMIFCG05",
+      "primary_role": "general",
+      "primary_body_sha256": "86fb784c58d1e9c8ac3ec85e1a1ab74962aed26e182bdd0c088b4a5cb1fb8935",
+      "candidate_body_sha256": "86fb784c58d1e9c8ac3ec85e1a1ab74962aed26e182bdd0c088b4a5cb1fb8935",
+      "primary_header_page": 474
+    },
+    {
+      "key": "ifa-physical-p474-cell1-definition3-emifcg06",
+      "primary_cell_key": "p474:visible:206.220,188.232,464.881,352.913",
+      "page": 474,
+      "code": "EMIFCG06",
+      "primary_role": "general",
+      "primary_body_sha256": "f288166d01266871a0d18464b33e6efdcd5eb116df1e6a49409e8abaed6e2070",
+      "candidate_body_sha256": "f288166d01266871a0d18464b33e6efdcd5eb116df1e6a49409e8abaed6e2070",
+      "primary_header_page": 474
+    },
+    {
+      "key": "ifa-physical-p474-cell2-definition1-emifchsa04",
+      "primary_cell_key": "p474:visible:464.882,188.232,737.008,352.913",
+      "page": 474,
+      "code": "EMIFCHSA04",
+      "primary_role": "specific",
+      "primary_body_sha256": "427e4bc16a1f6c6b289f31cc34c3e6d6411cb2b2644c3c9c94332532d452dbae",
+      "candidate_body_sha256": "427e4bc16a1f6c6b289f31cc34c3e6d6411cb2b2644c3c9c94332532d452dbae",
+      "primary_header_page": 474
+    },
+    {
+      "key": "ifa-physical-p474-cell2-definition2-emifchsa05",
+      "primary_cell_key": "p474:visible:464.882,188.232,737.008,352.913",
+      "page": 474,
+      "code": "EMIFCHSA05",
+      "primary_role": "specific",
+      "primary_body_sha256": "9c7e73c404450ecb0a76a2902fa9152f8ffe800f232d092763208e429f7f191a",
+      "candidate_body_sha256": "9c7e73c404450ecb0a76a2902fa9152f8ffe800f232d092763208e429f7f191a",
+      "primary_header_page": 474
+    },
+    {
+      "key": "ifa-physical-p474-cell2-definition3-emifchsa06",
+      "primary_cell_key": "p474:visible:464.882,188.232,737.008,352.913",
+      "page": 474,
+      "code": "EMIFCHSA06",
+      "primary_role": "specific",
+      "primary_body_sha256": "ddeaa4fb40adcd96b336ae8d41f6be2b2fa6b4a1a7a417c92d162e2771364e00",
+      "candidate_body_sha256": "ddeaa4fb40adcd96b336ae8d41f6be2b2fa6b4a1a7a417c92d162e2771364e00",
+      "primary_header_page": 474
+    },
+    {
+      "key": "ifa-physical-p479-cell1-definition1-emifcg01",
+      "primary_cell_key": "p479:visible:206.929,163.474,466.299,403.936",
+      "page": 479,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "candidate_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "primary_header_page": 479
+    },
+    {
+      "key": "ifa-physical-p479-cell1-definition2-emifcg02",
+      "primary_cell_key": "p479:visible:206.929,163.474,466.299,403.936",
+      "page": 479,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "c7ed226a4a97c02fa071e1d5fd60ae20ca25fc0143c544373f081a5a35e90237",
+      "candidate_body_sha256": "c7ed226a4a97c02fa071e1d5fd60ae20ca25fc0143c544373f081a5a35e90237",
+      "primary_header_page": 479
+    },
+    {
+      "key": "ifa-physical-p479-cell1-definition3-emifcg03",
+      "primary_cell_key": "p479:visible:206.929,163.474,466.299,403.936",
+      "page": 479,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "candidate_body_sha256": "428ed4834db5e57ee287c8101a2cbedecad64c753a8034095e7927442da88de7",
+      "primary_header_page": 479
+    },
+    {
+      "key": "ifa-physical-p479-cell2-definition1-emifchsa01",
+      "primary_cell_key": "p479:visible:466.299,163.474,737.008,403.936",
+      "page": 479,
+      "code": "EMIFCHSA01",
+      "primary_role": "specific",
+      "primary_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "candidate_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "primary_header_page": 479
+    },
+    {
+      "key": "ifa-physical-p479-cell2-definition2-emifchsa02",
+      "primary_cell_key": "p479:visible:466.299,163.474,737.008,403.936",
+      "page": 479,
+      "code": "EMIFCHSA02",
+      "primary_role": "specific",
+      "primary_body_sha256": "15bd7df364f6d7b4d7eb4171485513dbf0c91546242b0224e817429666115caf",
+      "candidate_body_sha256": "15bd7df364f6d7b4d7eb4171485513dbf0c91546242b0224e817429666115caf",
+      "primary_header_page": 479
+    },
+    {
+      "key": "ifa-physical-p479-cell2-definition3-emifchsa03",
+      "primary_cell_key": "p479:visible:466.299,163.474,737.008,403.936",
+      "page": 479,
+      "code": "EMIFCHSA03",
+      "primary_role": "specific",
+      "primary_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "candidate_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "primary_header_page": 479
+    },
+    {
+      "key": "ifa-physical-p485-cell1-definition1-emifcg04",
+      "primary_cell_key": "p485:visible:205.512,180.032,465.591,348.322",
+      "page": 485,
+      "code": "EMIFCG04",
+      "primary_role": "general",
+      "primary_body_sha256": "bb016cb28d0eb1b27f30bbe0278f68e3b689075d839072fc1789cf923a8db089",
+      "candidate_body_sha256": "bb016cb28d0eb1b27f30bbe0278f68e3b689075d839072fc1789cf923a8db089",
+      "primary_header_page": 485
+    },
+    {
+      "key": "ifa-physical-p485-cell1-definition2-emifcg05",
+      "primary_cell_key": "p485:visible:205.512,180.032,465.591,348.322",
+      "page": 485,
+      "code": "EMIFCG05",
+      "primary_role": "general",
+      "primary_body_sha256": "86fb784c58d1e9c8ac3ec85e1a1ab74962aed26e182bdd0c088b4a5cb1fb8935",
+      "candidate_body_sha256": "86fb784c58d1e9c8ac3ec85e1a1ab74962aed26e182bdd0c088b4a5cb1fb8935",
+      "primary_header_page": 485
+    },
+    {
+      "key": "ifa-physical-p485-cell1-definition3-emifcg06",
+      "primary_cell_key": "p485:visible:205.512,180.032,465.591,348.322",
+      "page": 485,
+      "code": "EMIFCG06",
+      "primary_role": "general",
+      "primary_body_sha256": "f41e7bfd0c3125ba7ddc5eb9df1052d375c546047ff80063490ebf297a71f0f1",
+      "candidate_body_sha256": "f41e7bfd0c3125ba7ddc5eb9df1052d375c546047ff80063490ebf297a71f0f1",
+      "primary_header_page": 485
+    },
+    {
+      "key": "ifa-physical-p485-cell2-definition1-emifchsa04",
+      "primary_cell_key": "p485:visible:465.591,180.032,737.008,348.322",
+      "page": 485,
+      "code": "EMIFCHSA04",
+      "primary_role": "specific",
+      "primary_body_sha256": "427e4bc16a1f6c6b289f31cc34c3e6d6411cb2b2644c3c9c94332532d452dbae",
+      "candidate_body_sha256": "427e4bc16a1f6c6b289f31cc34c3e6d6411cb2b2644c3c9c94332532d452dbae",
+      "primary_header_page": 485
+    },
+    {
+      "key": "ifa-physical-p485-cell2-definition2-emifchsa05",
+      "primary_cell_key": "p485:visible:465.591,180.032,737.008,348.322",
+      "page": 485,
+      "code": "EMIFCHSA05",
+      "primary_role": "specific",
+      "primary_body_sha256": "9c7e73c404450ecb0a76a2902fa9152f8ffe800f232d092763208e429f7f191a",
+      "candidate_body_sha256": "9c7e73c404450ecb0a76a2902fa9152f8ffe800f232d092763208e429f7f191a",
+      "primary_header_page": 485
+    },
+    {
+      "key": "ifa-physical-p485-cell2-definition3-emifchsa06",
+      "primary_cell_key": "p485:visible:465.591,180.032,737.008,348.322",
+      "page": 485,
+      "code": "EMIFCHSA06",
+      "primary_role": "specific",
+      "primary_body_sha256": "ddeaa4fb40adcd96b336ae8d41f6be2b2fa6b4a1a7a417c92d162e2771364e00",
+      "candidate_body_sha256": "ddeaa4fb40adcd96b336ae8d41f6be2b2fa6b4a1a7a417c92d162e2771364e00",
+      "primary_header_page": 485
+    },
+    {
+      "key": "ifa-physical-p491-cell1-definition1-emifcg01",
+      "primary_cell_key": "p491:visible:208.346,225.353,464.881,456.376",
+      "page": 491,
+      "code": "EMIFCG01",
+      "primary_role": "general",
+      "primary_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "candidate_body_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "primary_header_page": 491
+    },
+    {
+      "key": "ifa-physical-p491-cell1-definition2-emifcg02",
+      "primary_cell_key": "p491:visible:208.346,225.353,464.881,456.376",
+      "page": 491,
+      "code": "EMIFCG02",
+      "primary_role": "general",
+      "primary_body_sha256": "afd61a4c0db7b910b816fb534f0f8a24c305e4de301c838629693c56cc64f072",
+      "candidate_body_sha256": "afd61a4c0db7b910b816fb534f0f8a24c305e4de301c838629693c56cc64f072",
+      "primary_header_page": 491
+    },
+    {
+      "key": "ifa-physical-p491-cell1-definition3-emifcg03",
+      "primary_cell_key": "p491:visible:208.346,225.353,464.881,456.376",
+      "page": 491,
+      "code": "EMIFCG03",
+      "primary_role": "general",
+      "primary_body_sha256": "533f0ff6f08b4cadf7af42346103b01b9fca7ee2b242b05136266d7843d60003",
+      "candidate_body_sha256": "533f0ff6f08b4cadf7af42346103b01b9fca7ee2b242b05136266d7843d60003",
+      "primary_header_page": 491
+    },
+    {
+      "key": "ifa-physical-p491-cell2-definition1-emifchsa01",
+      "primary_cell_key": "p491:visible:464.882,225.353,737.008,456.376",
+      "page": 491,
+      "code": "EMIFCHSA01",
+      "primary_role": "specific",
+      "primary_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "candidate_body_sha256": "9e7d39c6d01af9420a2efc3aebbc923860ff0d1f005d049788950b041aea7a2a",
+      "primary_header_page": 491
+    },
+    {
+      "key": "ifa-physical-p491-cell2-definition2-emifchsa02",
+      "primary_cell_key": "p491:visible:464.882,225.353,737.008,456.376",
+      "page": 491,
+      "code": "EMIFCHSA02",
+      "primary_role": "specific",
+      "primary_body_sha256": "7085ab6d8731e2e7de2f0891e81e3a48bf1c0a65e383c6be8d6f6657b97432f4",
+      "candidate_body_sha256": "7085ab6d8731e2e7de2f0891e81e3a48bf1c0a65e383c6be8d6f6657b97432f4",
+      "primary_header_page": 491
+    },
+    {
+      "key": "ifa-physical-p491-cell2-definition3-emifchsa03",
+      "primary_cell_key": "p491:visible:464.882,225.353,737.008,456.376",
+      "page": 491,
+      "code": "EMIFCHSA03",
+      "primary_role": "specific",
+      "primary_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "candidate_body_sha256": "1750637b6fd2eb282dbad550c845aee7c049a65d65f54f7720d4b4c8574773d7",
+      "primary_header_page": 491
+    },
+    {
+      "key": "ifa-physical-p497-cell1-definition1-emifcg07",
+      "primary_cell_key": "p497:visible:208.346,232.555,466.299,439.371",
+      "page": 497,
+      "code": "EMIFCG07",
+      "primary_role": "general",
+      "primary_body_sha256": "60550828c62dbd65848d21d903ae3128619cae89224f1f7e5c81223c11462efc",
+      "candidate_body_sha256": "60550828c62dbd65848d21d903ae3128619cae89224f1f7e5c81223c11462efc",
+      "primary_header_page": 497
+    },
+    {
+      "key": "ifa-physical-p497-cell1-definition2-emifcg08",
+      "primary_cell_key": "p497:visible:208.346,232.555,466.299,439.371",
+      "page": 497,
+      "code": "EMIFCG08",
+      "primary_role": "general",
+      "primary_body_sha256": "de60a47b6b5c208a266b01060dee4abb2840d3c44635e402d8d123a19e02297a",
+      "candidate_body_sha256": "de60a47b6b5c208a266b01060dee4abb2840d3c44635e402d8d123a19e02297a",
+      "primary_header_page": 497
+    },
+    {
+      "key": "ifa-physical-p497-cell1-definition3-emifcg09",
+      "primary_cell_key": "p497:visible:208.346,232.555,466.299,439.371",
+      "page": 497,
+      "code": "EMIFCG09",
+      "primary_role": "general",
+      "primary_body_sha256": "b9471b4639f06a01586e0c42db83a232bb67f53f80d4bf5455a79b12e182be4a",
+      "candidate_body_sha256": "b9471b4639f06a01586e0c42db83a232bb67f53f80d4bf5455a79b12e182be4a",
+      "primary_header_page": 497
+    },
+    {
+      "key": "ifa-physical-p497-cell2-definition1-emifchsa07",
+      "primary_cell_key": "p497:visible:466.299,232.555,737.008,439.371",
+      "page": 497,
+      "code": "EMIFCHSA07",
+      "primary_role": "specific",
+      "primary_body_sha256": "a5ae5d7927ba56a93b1be8ff63c42c10101b991b2ee247501b239bfacfe3659c",
+      "candidate_body_sha256": "a5ae5d7927ba56a93b1be8ff63c42c10101b991b2ee247501b239bfacfe3659c",
+      "primary_header_page": 497
+    },
+    {
+      "key": "ifa-physical-p497-cell2-definition2-emifchsa08",
+      "primary_cell_key": "p497:visible:466.299,232.555,737.008,439.371",
+      "page": 497,
+      "code": "EMIFCHSA08",
+      "primary_role": "specific",
+      "primary_body_sha256": "69f81ea44e6fb45b2a428a81436e5fa3525393c85e9660e7c10b1c207c701787",
+      "candidate_body_sha256": "69f81ea44e6fb45b2a428a81436e5fa3525393c85e9660e7c10b1c207c701787",
+      "primary_header_page": 497
+    },
+    {
+      "key": "ifa-physical-p497-cell2-definition3-emifchsa09",
+      "primary_cell_key": "p497:visible:466.299,232.555,737.008,439.371",
+      "page": 497,
+      "code": "EMIFCHSA09",
+      "primary_role": "specific",
+      "primary_body_sha256": "f6709d25da3caae879417066c91913cbfad19f7c18f3b1a880e897f5204d47be",
+      "candidate_body_sha256": "f6709d25da3caae879417066c91913cbfad19f7c18f3b1a880e897f5204d47be",
+      "primary_header_page": 497
+    }
+  ],
+  "passed": true,
+  "MF_core_cache_publication_modified": false,
+  "acceptance_scope": "Only the exact40page primary physical IFA fields; not whole571pageSource, UF closure or pedagogical/human review."
+}

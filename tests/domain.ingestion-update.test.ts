@@ -1,15 +1,17 @@
 /** Public curriculum fixtures are synthetic and isolated to the harness-owned test DB. */
 import {test,before,after} from 'node:test';
 import assert from 'node:assert/strict';
-import {mkdir,mkdtemp,rm,readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {mkdir,mkdtemp,rm,readFile,writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {migrate} from '../scripts/migrate';
 import {pool} from '../src/db/client';
 import {testDatabaseName} from './domain-safety';
 import {importBundle,setDefaultPublication} from '../src/domain/publication';
 import {getLearning,listSources,resolvePublication} from '../src/domain/service';
-import {exportIngestionBase,prepareGlobalIngestionUpdate,publishGlobalIngestionUpdate,verifyGlobalIngestionPreservation} from '../src/domain/ingestion-update';
+import {exportIngestionBase,prepareGlobalIngestionUpdate,publishGlobalIngestionUpdate,verifyGlobalIngestionPreservation,revalidatePreparedIngestionProvenance} from '../src/domain/ingestion-update';
 import {writeShardedArtifact} from '../src/domain/shard-writer';
+import {evaluateIngestionProvenance,provenanceDigest} from '../src/domain/ingestion-provenance';
 import type {Bundle,Learning,Relation,Source} from '../src/shared/contracts';
 const allowed=process.env.DOMAIN_INTEGRATION_TEST==='1';
 const source=(id:string,uf:'BR'|'SP'|'RJ'):Source=>({id,uf,title:'TEST ONLY '+id,issuer:'Synthetic isolated fixture',official_url:'https://example.org/source',artifact_url:'https://example.org/source.pdf',stages:['EF'],components:['Matemática'],edition:'fixture-1',document_date:null,homologation_date:null,application_period:null,document_type:'test_fixture',normative_parts:['part'],redistribution:'Test only',collected_at:null,sha256:null,local_path:null,status:'test',metadata_preserved:{nested:['unchanged',1]}});
@@ -100,4 +102,41 @@ test('bounded relation verification advances past entire pages affected by the t
  const graph={...base,id:'paged-relations-base',relations:[...Array.from({length:55},(_,index)=>relation('a-target-'+String(index).padStart(3,'0'),['local-a'],['national-a'])),...Array.from({length:7},(_,index)=>relation('z-outside-'+index,['other-rj'],['national-b']))]};
  await importBundle(graph,{makeDefault:false});const candidate={...graph,id:'paged-relations-candidate',update_scope:{mode:'base-plus-source-update',base_publication:graph.id,target_source_ids:['update-SP'],affected_coverage_keys:[JSON.stringify(['SP','EF','Matemática'])]}};await importBundle(candidate,{makeDefault:false});
  const proof=await verifyGlobalIngestionPreservation(graph.id,candidate.id,['update-SP']);assert.equal(proof.relations_excluding_target.before_count,7);assert.equal(proof.relations_excluding_target.after_count,7);assert.equal(proof.relations_excluding_target.before_sha256,proof.relations_excluding_target.after_sha256);assert.equal(proof.unaffected_sources.length,3);
+});
+
+test('orchestrated update uses SQL before/after, immutable proofs and code-bound global identity',{skip:!allowed},async()=>{
+ const h=(text:string)=>createHash('sha256').update(text).digest('hex');
+ await mkdir('var',{recursive:true});await mkdir('data/manifests',{recursive:true});await mkdir('data/bundles',{recursive:true});
+ const receipts=await mkdtemp(resolve('var','domain-provenance-')),proofdir=await mkdtemp(resolve('data/manifests','domain-provenance-')),directory=await mkdtemp(resolve('data/bundles','domain-provenance-'));
+ const rel=(path:string)=>path.slice(process.cwd().length+1);
+ try{
+  const proofPath=resolve(proofdir,'source-proof.json'),proofText=JSON.stringify({test_fixture:true,scope:'Synthetic isolated DB only',literal_after:'Target corrected by technical proof'});await writeFile(proofPath,proofText);
+  const ledger={format:'record_text_corrections_v1',source_id:'update-SP',source_sha256:'a'.repeat(64),actor_type:'automated',actor_id:'isolated-fixture',previous_publications_immutable:true,official_curriculum_edition_changed:false,records:[{item_id:'local-a',before_text:'local-a',after_text:'Target corrected by technical proof',before_text_sha256:h('local-a'),after_text_sha256:h('Target corrected by technical proof'),reason:'Synthetic technical correction test; not production data',proofs:[{path:rel(proofPath),sha256:h(proofText)}]}]};
+  const ledgerPath=resolve(proofdir,'ledger.json'),ledgerText=JSON.stringify(ledger);await writeFile(ledgerPath,ledgerText);
+  const targetSource={...sources[1],sha256:'a'.repeat(64),technical_extraction_corrections:[{path:rel(ledgerPath),sha256:h(ledgerText),format:'record_text_corrections_v1',scope:'technical_extraction_correction'}]};
+  const edition={...base,id:'orchestrated-base-fixture',sources:base.sources.map(source=>source.id==='update-SP'?targetSource:source)};await importBundle(edition,{makeDefault:true});
+  const context=await exportIngestionBase({base_publication:edition.id,directory:resolve(directory,'context')});
+  const changed=item('local-a','update-SP',ledger.records[0].after_text);
+  const rawHeader={id:'orchestrated-raw-fixture',schema_version:'1.1.0',schema_path:base.schema_path,schema_sha256:base.schema_sha256,created_at:'2026-10-28T01:00:00Z',extraction_revision:'fixture-2',mapping_revision:'fixture-2',sources:[sources[0],targetSource],coverage:[{...sharedCoverage,source_ids:['update-SP'],expected_parts:[parts('update-SP')],processed_parts:[parts('update-SP')],reconciled_parts:[],expected_parts_count:1,processed_parts_count:1,reconciled_parts_count:0,item_count:2}],changelog:[],publication_kind:'source_update_receipt',base_publication:edition.id,base_publication_sha256:context.base_publication_sha256,base_artifact_sha256:context.artifact_sha256,target_source_ids:['update-SP'],context_source_ids:['update-BR'],national_release_ready:false};
+  const raw=await writeShardedArtifact(rawHeader,{items:iterable([...items.filter(i=>i.uf==='BR'),changed,items[3]]),relations:iterable([relations[0]])},{directory:resolve(directory,'raw')});
+  const rawReceipt={publication:raw.manifest.id,artifact:rel(raw.filename),artifact_sha256:raw.sha256};
+  const scope={base_publication:edition.id,base_publication_sha256:context.base_publication_sha256,base_artifact_sha256:context.artifact_sha256,target_source_ids:['update-SP'],context_source_ids:['update-BR']};
+  const evaluation=await evaluateIngestionProvenance({effective_raw_receipt:rawReceipt,job_scope:scope,receipt_directory:rel(receipts)});
+  const input={base_publication:edition.id,target_source_ids:['update-SP'],raw_artifact:raw.filename,raw_artifact_sha256:raw.sha256,base_artifact_sha256:context.artifact_sha256,output_directory:resolve(directory,'global'),actor_id:'ingestion-job:provenance-fixture',provenance:{original_raw_receipt:rawReceipt,raster_stage_receipt:null,technical_evaluation_receipt:evaluation,receipt_directory:rel(receipts)}};
+  const prepared=await prepareGlobalIngestionUpdate(input);assert.equal(await resolvePublication(),edition.id);assert.ok(prepared.provenance_receipt);
+  const metadata=(await pool.query("SELECT payload->'changelog' AS changelog,payload->'orchestration_provenance' AS orchestration,payload->>'orchestration_sha256' AS digest FROM publications WHERE id=$1",[prepared.publication])).rows[0];
+  assert.equal(metadata.digest,provenanceDigest(metadata.orchestration));const event=metadata.changelog.find((v:{same_id?:boolean})=>v.same_id);assert.equal(event.observed_effect,'corrects_text_in_pinned_base');assert.equal(event.current_base_before_text_sha256,h('local-a'));
+  const captures=metadata.orchestration.technical_stage.base_record_capture;const capture=JSON.parse(await readFile(captures.path,'utf8'));assert.deepEqual(capture.queried_item_ids,['local-a']);assert.equal(capture.records[0].text,'local-a');
+  assert.deepEqual(await revalidatePreparedIngestionProvenance(input,prepared.publication),prepared.provenance_receipt);assert.equal((await prepareGlobalIngestionUpdate(input)).publication,prepared.publication);
+  await assert.rejects(()=>prepareGlobalIngestionUpdate({...input,provenance:undefined}),e=>e instanceof Error&&'code'in e&&e.code==='INGESTION_PROVENANCE_REQUIRED');
+  await assert.rejects(()=>prepareGlobalIngestionUpdate({...input,provenance:{...input.provenance,original_raw_receipt:{...rawReceipt,artifact_sha256:'f'.repeat(64)}}}),e=>e instanceof Error&&'code'in e&&e.code==='INGESTION_PROVENANCE_MISMATCH');
+  await writeFile(proofPath,JSON.stringify({test_fixture:true,literal_after:'Unapproved proof mutation'}));
+  await assert.rejects(()=>revalidatePreparedIngestionProvenance(input,prepared.publication),e=>e instanceof Error&&'code'in e&&(e.code==='INGESTION_PROVENANCE_MISMATCH'||e.code==='TECHNICAL_PROVENANCE_REPLAY_FAILED'));await writeFile(proofPath,proofText);
+  // A repinned legitimate proof changes the evaluation and orchestration identity, while RAW records stay equal.
+  const proof2=JSON.stringify({test_fixture:true,scope:'same literal, new independent proof metadata',literal_after:ledger.records[0].after_text});await writeFile(proofPath,proof2);const revisedLedger={...ledger,records:[{...ledger.records[0],proofs:[{path:rel(proofPath),sha256:h(proof2)}]}]};const revisedText=JSON.stringify(revisedLedger);await writeFile(ledgerPath,revisedText);
+  const revisedSource={...targetSource,technical_extraction_corrections:[{...targetSource.technical_extraction_corrections[0],sha256:h(revisedText)}]};
+  const raw2=await writeShardedArtifact({...rawHeader,id:'repinned-raw-fixture',sources:[sources[0],revisedSource]},{items:iterable([...items.filter(i=>i.uf==='BR'),changed,items[3]]),relations:iterable([relations[0]])},{directory:resolve(directory,'raw2')});
+  const receipt2={publication:raw2.manifest.id,artifact:rel(raw2.filename),artifact_sha256:raw2.sha256},eval2=await evaluateIngestionProvenance({effective_raw_receipt:receipt2,job_scope:scope,receipt_directory:rel(receipts)});
+  const second=await prepareGlobalIngestionUpdate({...input,raw_artifact:raw2.filename,raw_artifact_sha256:raw2.sha256,output_directory:resolve(directory,'global2'),provenance:{...input.provenance,original_raw_receipt:receipt2,technical_evaluation_receipt:eval2}});assert.notEqual(second.publication,prepared.publication);assert.notEqual(second.provenance_receipt?.orchestration_sha256,prepared.provenance_receipt?.orchestration_sha256);assert.equal(await resolvePublication(),edition.id);
+ }finally{await rm(receipts,{recursive:true,force:true});await rm(proofdir,{recursive:true,force:true});await rm(directory,{recursive:true,force:true});}
 });

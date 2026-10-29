@@ -8,14 +8,14 @@ node_modules
 var
 data/raw
 data/extracted
+# Runtime artifacts remain on the host and are mounted by both Compose services.
+data/bundles
 test-results
 playwright-report
 *.tsbuildinfo
 
 **/__pycache__
 *.pyc
-
-data/bundles/ca-77fb8076598b567e1ba3.json
 
 .playwright-cli
 output

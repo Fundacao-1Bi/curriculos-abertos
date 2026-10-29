@@ -27,9 +27,10 @@ export function SourceProvenance({source,publication}:{source:Row;publication:st
  const pages=source.document_pages??source.page_count??source.pdf_pages;
  const integrityPassed=validation.status==='passed';
  const pendingEdition=source.current_normative_application_confirmed===false||String(edition.status??'').startsWith('pending');
+ const pendingProvenance=source.provenance_status==='pending_primary_distribution_chain';
  const relationship=row(source.source_relationship);
  const alternative=source.include_in_corpus===false&&['alternative_binary_same_page_content','mirror_distribution_same_artifact'].includes(String(relationship.type));
- if(!source.author&&!pages&&!source.bytes&&!Object.keys(validation).length&&!pendingEdition&&!alternative)return null;
+ if(!source.author&&!pages&&!source.bytes&&!Object.keys(validation).length&&!pendingEdition&&!pendingProvenance&&!alternative)return null;
  return <details className="source-provenance"><summary>Procedência e verificação do arquivo</summary>
   <dl className="metadata-grid">
    {source.author?<div><dt>Instituição autora</dt><dd>{string(source.author)}</dd></div>:null}
@@ -40,6 +41,7 @@ export function SourceProvenance({source,publication}:{source:Row;publication:st
    {source.capturedate&&source.capturedate!==source.collected_at?<div><dt>Obtenção deste arquivo</dt><dd>{date(source.capturedate)}</dd></div>:null}
   </dl>
   {pendingEdition?<p>A edição consultada e sua aplicação normativa exigem verificação documental adicional.</p>:null}
+  {pendingProvenance?<p>A ligação entre esta distribuição e o órgão emissor ainda não foi comprovada. Os registros permanecem candidatos para conferência documental.</p>:null}
   {integrityPassed?<p>A integridade do PDF não comprova a extração completa de suas tabelas, aprendizagens e relações.</p>:null}
   {alternative?<p>Distribuição alternativa do mesmo conteúdo de páginas, sem duplicação de registros.
    {typeof relationship.related_source_id==='string'?<> <Link href={url('/buscar',{publication,source_id:relationship.related_source_id})}>Consultar os registros da fonte correspondente →</Link></>:null}

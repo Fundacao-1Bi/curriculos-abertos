@@ -1,0 +1,155 @@
+{
+  "at": "2026-10-28T18:16:46.143Z",
+  "policy_version": "documentary-item-roles-2026-10-28-v5",
+  "actor_type": "automated",
+  "actor_id": "agent:domain",
+  "human_pedagogical_review_claimed": false,
+  "authority": "Explicit root authorization for twelve source-reviewed documentary kinds; no learning kind added (22 retained).",
+  "sidecar_sha256": "3f9ec0e5bd173ec311bf576116a6b1a645c085a3a5803f53d75dc83c50f25f12",
+  "decisions": [
+    {
+      "kind": "referencia_normativa_preambular",
+      "category": "normative",
+      "basis": "Eleven literal normative references in the resolution preamble.",
+      "count": 11,
+      "sample": {
+        "key": "reference-1",
+        "page": 1,
+        "text": "1. Lei nº 14.109, de 14 de dezembro de 2020, que instituiu o Fundo de Universalização dos Serviços de Telecomunicações (Fust), com o compromisso de dotar todas as escolas públicas brasileiras, em especial as situadas fora da zona urbana, com acesso à internet em banda larga, em velocidades adequadas, até 2024;",
+        "parent_key": "preamble"
+      }
+    },
+    {
+      "kind": "secao_normativa_ato",
+      "category": "normative",
+      "basis": "Two actual section headings of the legal act.",
+      "count": 2,
+      "sample": {
+        "key": "section-I",
+        "page": 4,
+        "text": "SEÇÃO I Do Currículo",
+        "parent_key": "chapter-II"
+      }
+    },
+    {
+      "kind": "postulacao_curricular",
+      "category": "normative",
+      "basis": "Eight literal Art10 propositions are legal curricular directions for the EI pedagogical proposal, not automatically student outcomes.",
+      "count": 8,
+      "sample": {
+        "key": "article-10-inciso-I",
+        "page": 7,
+        "text": "I) descritivo de padrões diários na vida social, de contexto particular ou coletivo, na dimensão individual ou grupal, em configurações usuais do cotidiano, seja da ambiência natural ou daquelas conexas aos aparatos e engenhos mecânicos, automáticos ou não;",
+        "parent_key": "article-10"
+      }
+    },
+    {
+      "kind": "parecer_normativo",
+      "category": "normative",
+      "basis": "Title/root of the official Parecer365; category does not assert every passage is independently binding.",
+      "count": 1,
+      "sample": {
+        "key": "parecer-365",
+        "page": 13,
+        "text": "PARECER CEE Nº 365/2025",
+        "parent_key": null
+      }
+    },
+    {
+      "kind": "registro_aprovacao",
+      "category": "normative",
+      "basis": "Printed approval field, distinct from homologation, publication and effectiveness.",
+      "count": 1,
+      "sample": {
+        "key": "parecer-approved",
+        "page": 13,
+        "text": "Aprovado no Conselho Pleno em 21/10/2025",
+        "parent_key": "parecer-365"
+      }
+    },
+    {
+      "kind": "voto_parecer",
+      "category": "normative",
+      "basis": "Official III-VOTO submission to the council plenary.",
+      "count": 1,
+      "sample": {
+        "key": "parecer-vote",
+        "page": 21,
+        "text": "III - VOTO Sob aval das considerações elencadas neste Parecer, a Comissão submete ao Pleno do CEE-BA a Resolução concernente à Educação Escolar Digital, para todas as instituições escolares da Educação Básica que integram o Sistema de Ensino do Estado da Bahia, subjacente à implementação da BNCC – Computação e as normativas adjuntas à mesma.",
+        "parent_key": "parecer-365"
+      }
+    },
+    {
+      "kind": "relatorio_parecer",
+      "category": "context",
+      "basis": "Descriptive report of the official process, not new local learning definitions.",
+      "count": 1,
+      "sample": {
+        "key": "parecer-report",
+        "page": 13,
+        "text": "I - RELATÓRIO Em 14 de maio de 2025 publica-se no D.O.E. a Portaria nº 9/2025, designando a Conselheira Anna Cristina Pinto Croesy e os Conselheiros Ádramo Costa da Silva e Nildon Carlos Santos Pitombo, para apresentar no prazo de 90 dias, a Resolução que define orientação a respeito da BNCC – Computação para o sistema de ensino do estado da Bahia. Porém, em 28 de julho de 2025, o CEE-BA divulga a Deliberação nº 2/2025, acerca do posicionamento institucional do Conselho Estadual de Educação da Bahia relativa à BNCC Computação, no âmbito do sistema de ensino do estado da Bahia. Neste documento é feito um inventário de dispositivos legais que geram obrigações para os sistemas de ensino, a partir da BNCC – Computação, no que concerne à ampliação do caráter de recurso pedagógico das tecnologias da informação e comunicação (TICs), para o seu lugar de fenômeno cultural emergente, no contexto da sua complexidade social. Também, apontam-se os passos que foram dados na dinâmica normativa do CNE/CEB, na composição de pareceres e resoluções, desde o ano de 2017, quando se fez alusão à temática de conteúdos e processos referentes à aprendizagem de computação na educação básica, expandido por meio do Parecer CNE/CEB nº 2/2022, que deu forma ao complemento da BNCC, agregando os paradigmas do pensamento computacional (entendido como uma necessidade do século XXI), bem como o da cultura digital como ocorrência contextualizada da prática social, nesta época presente. A Deliberação CEE/BA nº 2/2025 ponderou que o ano de 2025 seria o tempo destinado para os arranjos curriculares contemplando o Parecer CNE/CEB nº 2/2022; em 2026, sob o aval da normativa relacionada com o assunto (a ser preparada pelo CEE/BA) ocorreria a implementação integralizada da BNCC – Computação. À vista disso, a Comissão referida fez o planejamento dos seus trabalhos, assinalando que o produto dele seria concernente à BNCC – Computação, com destaque para a Política Nacional de Educação Digital, instituída pela Lei nº 14.553, de 11 de janeiro de 2023, sobremaneira quanto ao trato das tecnologias de informação e comunicação (TICs), essenciais para a inclusão digital. Este é o relatório.",
+        "parent_key": "parecer-365"
+      }
+    },
+    {
+      "kind": "fundamentacao_parecer",
+      "category": "context",
+      "basis": "Argument and quoted research/national provisions, retained as documentary context.",
+      "count": 1,
+      "sample": {
+        "key": "parecer-foundation",
+        "page": 14,
+        "text": "II - FUNDAMENTAÇÃO São muitos os textos publicados sobre a inserção da educação para as mídias (midiaeducação ou mídia-educação), bem como das tecnologias da informação e comunicação (TICs) no ambiente escolar, alguns dos quais incluem a revisão desse tema ao longo do transcurso dos anos. Particularmente, Bévort e Belloni (2009) já abordava sobre a ausência de preocupação com formação das novas gerações para a apropriação das TICs e caracterizava a conceituação da mídia- educação nestes termos: A mídia-educação é parte essencial dos processos de socialização das novas gerações, mas não apenas, pois deve incluir também populações adultas, numa concepção de educação ao longo da vida. Trata-se de um elemento essencial dos processos de produção, reprodução e transmissão da cultura, pois as mídias fazem parte da cultura contemporânea e nela desempenham papéis cada vez mais importantes, sua apropriação crítica e criativa, sendo, pois, imprescindível para o exercício da cidadania. (Bévort e Belloni, 2009, p. 1083) No artigo de Cortes, Martins e Souza (2018) o enfoque inclui os tempos dos anos da década de 1960 sob influência de organismos internacionais como a UNESCO. Nesse mesmo texto, esses pesquisadores assim apresenta a maneira como a UNESCO, já na década de 1970, fazia considerações sobre a conceituação desse assunto: Em 1973, a UNESCO apresentou uma primeira definição que explicitou a dupla dimensão da Midiaeducação, dando ênfase aos meios como objeto de estudo de leitura crítica e ação interventora para alertar e minimizar os efeitos das mídias, e como ferramenta pedagógica de função educacional, de instrumento de ensino. (p. 5). Considerando a conjuntura pela qual se observa os registros escritos sobre essa temática, o paper da SBPC, ComCiência, de 12 de outubro de 2021, sintetiza os percursos sobre educação midiática, nos seguintes termos: A expressão “educação para as mídias” aparece na Unesco em 1960 e, ao longo do tempo, dado o processo histórico e cultural de transformação das tecnologias, a compreensão sobre o tema foi se ampliando. Surge na América Latina, a partir dos anos 1970, um movimento que resulta na educomunicação, após anos de construção participativa e com apontamentos de Paulo Freire sobre a relação entre comunicação e educação e a vivência contextualizada pelo professor Ismar de Oliveira Soares, do Núcleo de Comunicação e Educação (ECA/USP). (ComCiência, 2021, n.p.). Entretanto, o termo mídia-educação se consagrou nos anos da década de 1980, quando dezenove países aprovaram, na Alemanha (1982), seu sentido e significado por meio da Declaração de Grünwald1, na conotação de processos de socialização das novas gerações, em reunião proporcionada, também, pela UNESCO. Em 1998, entre os dias 18 e 20 de maio, realiza-se em São Paulo, o I Congresso Internacional sobre Comunicação e Educação, com trinta países presentes e dezenas de especialistas. Promovido pelo Núcleo de Comunicação e Educação (NCE) da ECA/USP, sob a liderança do Prof. Ismar de Oliveira Soares, coordenador do NCE. Decorrente deste evento, um ano depois a expressão “educomunicação” passa a compor a teia de inter-relações entre pesquisadores, docentes e grupos de estudos mundo a fora, no contexto dos desdobramentos entre educação e comunicação, incluindo os estudos sobre educação para as mídias, na pauta mundial desde os anos da década de 1960. Em 1999, a UNESCO viabiliza, em Viena, outra reunião temática sobre o assunto na Conferência Internacional “Educando para as mídias e para a era digital”, considerada um marco no percurso do debate sobre mídia-educação ao vincular a tese da interpretação desse tema como direito das crianças e jovens. Em 2007, a partir do encontro realizado em Paris reafirmou-se a ideia de “midia-educação” como fator preponderante para a formação da cidadania no contexto de uma sociedade cada vez próxima do mundo digital, visto como o lugar onde a subjetivação de modos de conviver estão associados às tecnologias da informação e comunicação. Neste evento produziu-se o documento “Agenda de Paris: 12 recomendações para a educação para as mídias”, dentre as quais se ratifica a importância da formação docente. Em 2010, as diretrizes curriculares nacionais para o ensino fundamental de 9 anos (Resolução CNE/CEB nº 7, de 14 de novembro de 2010), assinalam a certeza da primazia das TICs. No seu capítulo sobre a relevância e abordagem de temas que se situam na base curricular do ensino fundamental de 9 anos, no artigo 28 desta norma, traduz sua representatividade: Art. 28 A utilização qualificada das tecnologias e conteúdos das mídias como recurso aliado ao desenvolvimento do currículo contribui para o importante papel que tem a escola como ambiente de inclusão digital e de utilização crítica das tecnologias da informação e comunicação, requerendo o aporte dos sistemas de ensino no que se refere à: I - provisão de recursos midiáticos atualizados e em número suficiente para o atendimento aos alunos; II - adequada formação do professor e demais profissionais da escola. É desta época, também, a publicação do Caderno Educação e Uso de Mídias, editado pelo MEC, em 2011, da Série Mais Educação, no conjunto dos materiais relacionados com o Programa Mais Educação2, que foi instituído por meio da Portaria Interministerial nº 17/2007 e pelo Decreto n° 7.083, de 27 de janeiro de 2010. Em 2013, o Manual Operacional de Educação Integral, no âmbito do Programa Mais Educação, trata das especificações dos seus focos, com uma descrição da temática da educação para as mídias – denominada, então, de macrocampo -, desta maneira: O macrocampo Comunicação, Uso de Mídias e Cultura Digital e Tecnológica oferece às escolas a possibilidade de criarem e fortalecerem ecossistemas comunicativos, estimulando práticas de socialização e convivência no espaço escolar. Trata-se de um novo olhar sobre a relação dos campos Educação e Comunicação que, quando articuladas para fins pedagógicos, são capazes de constituir redes virtuosas de comunicação e comunicadores firmadas em práticas colaborativas e democráticas. O conceito de comunicação no Programa Mais Educação é reconhecido, portanto, pela busca do ideal de uma comunicação viva e plena, garantindo às crianças, adolescentes e jovens o direito à voz e o respeito à diversidade. A prática “educomunicativa” exige - pela natureza do paradigma que a sustenta - uma modificação no modelo cristalizado da relação entre professor e estudante: não há mais lugar para um transmissor ativo e um receptor passivo de informações, mas sim uma relação dialógica onde todos tem a palavra, para estar no mundo e com o mundo. (BRASIL/MEC, 2013, p.12). Não obstante, no artigo intitulado “O Programa Mais Educação e seu legado: possibilidades curriculares na perspectiva da formação humana integral”, seus autores – Barcelos e Moll (2021), fazem uma síntese dos focos da padronização do macrocampo Comunicação, Uso de Mídias e Cultura Digital conforme a tabela a seguir, existente à época do Programa Mais Educação: A síntese revela que o Programa Mais Educação, que foi gerenciado pela prof.ª Jaqueline Moll, diretora da Diretoria de Currículos e Educação Integral, da Secretaria de Educação Básica do MEC, à época, intencionava abranger a premissa da educação para as mídias, na confluência dos empenhos para sistematizar a área da educação para as mídias como ponto de encontro entre os campos de conhecimento da educação e comunicação, além de reafirmar a educomunicação no nível institucional dos programas de governo. Sem embargo, a BNCC consolida essa aproximação entre estes dois campos de conhecimento humano com a definição da 5ª competência geral dentre as definidas para a educação básica no Brasil, assim declarada: Compreender, utilizar e criar tecnologias digitais de informação e comunicação de forma crítica, significativa, reflexiva e ética nas diversas práticas sociais (incluindo as escolares) para se comunicar, acessar e disseminar informações, produzir conhecimentos, resolver problemas e exercer protagonismo e autoria na vida pessoal e coletiva. (MEC/BNCC, Versão Final, s.d.). Incorporada no Art. 4º da Resolução CNE/CP nº 2, de 22 de dezembro de 2017, que institui a BNCC na educação infantil e no ensino fundamental ela é, também, reafirmada no Art. 4 da Resolução CNE/CP nº 4, de 17 de dezembro de 2018, ao instituir a BNCC-Ensino Médio. Contudo, vale dizer que neste mesmo ano o próprio Conselho Nacional de Educação aprovou a Resolução CNE/CEB nº 3, de 21 de novembro de 2018, que atualizou a diretriz curricular do Ensino Médio e, ao fazê-lo, inseriu outras considerações a respeito das mídias digitais na ordenação curricular, assim formatado na alínea b, inciso II, Art. 8º: b) cultura e linguagens digitais, pensamento computacional, a compreensão do significado da ciência, das letras e das artes, das tecnologias da informação, da matemática, bem como a possibilidade de protagonismo dos estudantes para a autoria e produção de inovação; (Resolução CNE/CEB nº 2/2018). Informa-se que compêndio Base Nacional Comum Curricular – Educação é a Base, do Ministério da Educação em parceria com o Conselho Nacional de Secretários de Educação – CONSED e com a União Nacional dos Dirigentes Municipais de Educação – UNDIME, tem a configuração de documento final após as etapas de diálogo e está com acesso disponível na página web <https://basenacionalcomum.mec.gov.br/images/BNCC_EI_EF_110518_versaofinal_site.pdf>. Verifica-se que as expressões “cultura digital”, “pensamento computacional” e “mundo digital” são facilmente localizadas neste documento da BNCC, divulgado nacionalmente em 2018. Contudo, ressalva-se que esses mesmos termos constituem o fundamento da BNCC – Computação, objeto do Parecer CNE/CEB nº2, de 17 de fevereiro de 2022 (aqui mencionado), onde consta a definição correlata a cada uma dessas expressões, com expansão dos seus sentidos a partir dos verbetes do Glossário, aqui reproduzidos: Cultura Digital: Diz respeito à compreensão dos impactos da revolução digital e dos avanços do mundo digital na sociedade contemporânea, à construção de atitude crítica, ética e responsável em relação à multiplicidade de ofertas midiáticas e digitais. Também quanto aos usos das diferentes tecnologias digitais e aos conteúdos veiculados. Refere-se, ainda, à fluência no uso da tecnologia digital de forma eficiente, contextualizada e crítica. Mundo Digital: Compreende artefatos digitais – físicos (computadores, celulares, tablets) e virtuais (internet, redes sociais, programas, nuvens de dados). Mundo digital diz respeito à informação, armazenamento, proteção, e uso de códigos para representar diferentes tipos de informação, formas de processar, transmitir e distribuí-la de maneira segura e confiável. Pensamento Computacional: Conjunto de habilidades necessárias para compreender, analisar, definir, modelar, resolver, comparar e automatizar problemas e soluções de forma metódica e sistemática através do desenvolvimento da capacidade de criar e adaptar algoritmos. Utiliza-se de fundamentos da computação para alavancar e aprimorar a aprendizagem e o pensamento criativo e crítico em diversas áreas do conhecimento. (Parecer CNE/CEB nº 2/2022, Glossário, p. 13, grifo nosso). Desta forma, a BNCC – Computação, vista sob sua particularidade de complemento à BNCC, estabelece normas para o ordenamento da Educação Básica no que concerne às práticas curriculares relativas ao campo das mídias-educação, cuja origem está associada aos idos dos anos da década de 1960, com sessenta e cinco anos de percurso na história temática desse assunto na Educação Básica no Brasil. No entanto, em 2023 o Governo Federal promulga a Lei nº 14.533, de 13 de janeiro, que dispõe: Art. 3º O eixo Educação Digital Escolar tem como objetivo garantir a inserção da educação digital nos ambientes escolares, em todos os níveis e modalidades, a partir do estímulo ao letramento digital e informacional e à aprendizagem de computação, de programação, de robótica e de outras competências digitais, englobando: I - pensamento computacional, que se refere à capacidade de compreender, analisar, definir, modelar, resolver, comparar e automatizar problemas e suas soluções de forma metódica e sistemática, por meio do desenvolvimento da capacidade de criar e adaptar algoritmos, com aplicação de fundamentos da computação para alavancar e aprimorar a aprendizagem e o pensamento criativo e crítico nas diversas áreas do conhecimento; II - mundo digital, que envolve a aprendizagem sobre hardware, como computadores, celulares e tablets, e sobre o ambiente digital baseado na internet, como sua arquitetura e aplicações; III - cultura digital, que envolve aprendizagem destinada à participação consciente e democrática por meio das tecnologias digitais, o que pressupõe compreensão dos impactos da revolução digital e seus avanços na sociedade, a construção de atitude crítica, ética e responsável em relação à multiplicidade de ofertas midiáticas e digitais e os diferentes usos das tecnologias e dos conteúdos disponibilizados; IV - direitos digitais, que envolve a conscientização a respeito dos direitos sobre o uso e o tratamento de dados pessoais, nos termos da Lei nº 13.709, de 14 de agosto de 2018 (Lei Geral de Proteção de Dados Pessoais), a promoção da conectividade segura e a proteção dos dados da população mais vulnerável, em especial crianças e adolescentes; V - tecnologia assistiva, que engloba produtos, recursos, metodologias, estratégias, práticas e serviços que objetivam promover a funcionalidade e a aprendizagem, com foco na inclusão de pessoas com deficiência ou mobilidade reduzida. § 1º Constituem estratégias prioritárias do eixo Educação Digital Escolar: I - desenvolvimento de competências dos alunos da educação básica para atuação responsável na sociedade conectada e nos ambientes digitais, conforme as diretrizes da base nacional comum curricular; II - promoção de projetos e práticas pedagógicas no domínio da lógica, dos algoritmos, da programação, da ética aplicada ao ambiente digital, do letramento midiático e da cidadania na era digital; III - promoção de ferramentas de autodiagnóstico de competências digitais para os profissionais da educação e estudantes da educação básica; IV - estímulo ao interesse no desenvolvimento de competências digitais e na prossecução de carreiras de ciência, tecnologia, engenharia e matemática; V - adoção de critérios de acessibilidade, com atenção especial à inclusão dos estudantes com deficiência; VI - promoção de cursos de extensão, de graduação e de pós-graduação em competências digitais aplicadas à indústria, em colaboração com setores produtivos ligados à inovação industrial; VII - incentivo a parcerias e a acordos de cooperação; VIII - diagnóstico e monitoramento das condições de acesso à internet nas redes de ensino federais, estaduais e municipais; IX - promoção da formação inicial de professores da educação básica e da educação superior em competências digitais ligadas à cidadania digital e à capacidade de uso de tecnologia, independentemente de sua área de formação; X - promoção de tecnologias digitais como ferramenta e conteúdo programático dos cursos de formação continuada de gestores e profissionais da educação de todos os níveis e modalidades de ensino. § 2º O eixo Educação Digital Escolar deve estar em consonância com a base nacional comum curricular e com outras diretrizes curriculares específicas. O Eixo da Educação Escolar Digital tem a função de ampliar a convergência com a cidadania digital, vista a partir do foco da expansão da web e seu potencial de conexão com diferentes nexos da vida social, nesse tempo contemporâneo de vinculações hipertextuais na web. Alguns especialistas trazem entendimentos que assinalam representações desse aspecto, a exemplo de Haddad (2025, p. 2) que concebe a cidadania digital a partir da existência da sociedade em rede, baseada na informação, no conhecimento e na participação cidadã em que, por um “click” torna-se possível, de maneira autônoma, exercitar ações coletivas e influenciar movimentos sociais. De natureza igual, Menezes; Schlemmer; Di Felice (2024), em um paper sobre “algoritmização” do mundo se faz uma convocação sobre o sentido de muitos desses nexos da vida social contemporânea, assim enunciada: cidadania digital como algo que se vive, se experiencia na reticularidade, pela contínua conectividade entre humanos e não humanos, num mundo cada vez mais digitalizado e conectado. Portanto, não se trata de uma educação “para” a cidadania digital, como se fosse algo externo a nós. ........................................................... A cidadania digital é a cidadania do mundo algoritmizado, datificado, conectado, sensorizado, dos metaversos, multiversos, big data. É a expressão de um novo tipo de arquitetura do social, constituído na reticularidade pela contínua conectividade entre humanos e não humanos. Uma conexão AtoBit, simbiótica, que potencializa a emergência de uma nova ecologia feita de pessoas, dados, algoritmos, sensores, florestas, clima, vírus, cidades. Essa conexão nos desafia a uma nova política cognitiva no campo da Educação. (Menezes; Schlemmer; Di Felice, 2024, pp. 1 - 6). O Eixo da Educação Escolar Digital pretende impulsionar a situação dos níveis de habilidades digitais, em estágio preocupante quando se pensa em futuro, no país. Um estudo da Superintendência de Relações com os Consumidores (SRC) da Agência Nacional de Telecomunicações (Anatel), divulgado em 2024, revela que em média, 29,9% das pessoas no Brasil possuem habilidades digitais básicas, ou seja, enviar e-mails com arquivos anexados, transferir arquivos entre um computador e outros dispositivos, copiar ou mudar um arquivo ou pasta ou, ainda, usar ferramenta de copiar e colar para duplicar ou mover conteúdo, por exemplo, em um documento ou uma mensagem para outros lugares em ambiente digital. Esse mesmo órgão mostra que para as habilidades intermediárias, o percentual é de 17,9% das pessoas, em média, com a capacidade de usar um método aritmético básico em análise de uma planilha, conectar ou instalar novos equipamentos com ou sem fio, a exemplo de modem, impressora, filmadora, câmera, microfone ou, ainda, criação de apresentações eletrônicas com software de apresentação padrão. Tão somente 4% está apto a integrar tecnologias (incluindo a IA), com domínio de conhecimentos técnicos vinculados à formulação de decisões estratégicas a partir da extração de dados em um conjunto multivariado e, sobretudo as habilidades de proteção de sistemas e usuários, evidenciando a prática no nível avançado das competências digitais. Fazendo uma comparação com outros lugares – Portugal – por exemplo, 52% da população portuguesa demonstrava ter domínio das habilidades básicas e 32% das avançadas; isso é indicador comparativo da extensão do desafio para nosso sistema educacional e, pode-se inferir, sobre o acerto da promulgação da PNED, disposta na Lei nº 14.533/2024. Além disso, o Governo Federal divulgou o Plano Brasileiro de Inteligência Artificial (PBIA), neste ano de 2025, por intermédio do Ministério da Ciência, Tecnologia e Inovação; neste documento, a robustez de produção de sentidos é apreciável, isso porque o Plano alcança desde os controles do sucesso de fluxo escolar até impactos no desempenho escolar e, ademais, o perfil técnico da agricultura de baixa emissão de carbono. O glossário de termos ao final do documento mostra-se útil ao aclaramento dos significados de itens, alguns deles muito próximos de situações previstas na BNCC – Computação. Importa também a alusão ao Guia para Planejamento da Adoção de Dispositivos Tecnológicos na Escolas, editado pelo MEC em 2025, pelo qual se estabelecem orientações para se implementar a educação digital nas escolas e potencializar a cidadania digital por meio do uso intencional da tecnologia digital no ambiente escolar. Muito embora tenha-se esse panorama em que se vislumbra a extensão do desafio brasileiro para instalar, sistemicamente, a Educação Escolar Digital com os aportes proporcionados por essa intensa rede de regulação, aqui explicitada, é oportuna a sinalização a respeito de dinâmicas de privatização latentes no fluxo de produção da tecnologia digital pela via do controle da digitalização, bem como pela via da datificação e sua expertise sobre como as práticas do mundo digital realizam a transformação do conhecimento em dados aptos a circular em redes digitais. Sobre esse aspecto Saura; Adrião; Arguelho (2025) fazem o aceno para se observar a pungente situação relacionada aos dois focos dessa dinâmica de privatização, sublinhando que as políticas nacionais têm a finalidade de exercer regulação social sobre as agendas tecnoeducativas, no seu alcance para as redes de escolas. À guisa de finalização, a Comissão argumenta que a Educação Escolar Digital na conformidade com a lei que a instituiu é um instrumento a serviço da Educação Básica, convergente com a complementação da BNCC, a ser regulado por este Conselho. Agrega-se a essa missão as Diretrizes Operacionais Nacionais sobre o uso de dispositivos digitais em espaços escolares e integração curricular de educação digital e midiática, próprias da Resolução CNE/CEB nº 2 de 21 de março de 2025.",
+        "parent_key": "parecer-365"
+      }
+    },
+    {
+      "kind": "nota_documental",
+      "category": "context",
+      "basis": "Two physical footnotes, not additional learning units.",
+      "count": 2,
+      "sample": {
+        "key": "parecer-footnote-1",
+        "page": 15,
+        "text": "1 Declaração aprovada por unanimidade no Simpósio Internacional, com 19 países signatários. O evento aconteceu na cidade de Grünwald, na Alemanha, em 1982, com a temática da Educação para os Media, expressão muito usada à época para tratar da presença das mídias nos processos escolares.",
+        "parent_key": "parecer-foundation"
+      }
+    },
+    {
+      "kind": "quadro_documental",
+      "category": "context",
+      "basis": "Caption of historical Programme Mais Educação illustration.",
+      "count": 1,
+      "sample": {
+        "key": "parecer-table-caption",
+        "page": 16,
+        "text": "Tabela 1 - Comunicação, Uso de Mídias e Cultura Digital",
+        "parent_key": "parecer-foundation"
+      }
+    },
+    {
+      "kind": "linha_quadro_documental",
+      "category": "context",
+      "basis": "Two historical table rows, not an actual BA curriculum matrix.",
+      "count": 2,
+      "sample": {
+        "key": "parecer-table-row-educommunication",
+        "page": 16,
+        "text": "Educomunicação Jornal escolar; Rádio escolar; Histórias em quadrinhos; Fotografia; Vídeo",
+        "parent_key": "parecer-table-caption"
+      }
+    },
+    {
+      "kind": "fonte_quadro_documental",
+      "category": "context",
+      "basis": "Physical Fonte caption below table; not a column header.",
+      "count": 1,
+      "sample": {
+        "key": "parecer-table-source",
+        "page": 16,
+        "text": "Fonte: Barcelos e Moll, 2021. Ver referências ao final deste Parecer",
+        "parent_key": "parecer-table-caption"
+      }
+    }
+  ]
+}

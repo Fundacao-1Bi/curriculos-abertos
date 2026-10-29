@@ -1,0 +1,63 @@
+{
+  "source_id": "ac-cru-em",
+  "artifact_sha256": "9ff75d1d5d9397aa145dccedd8023a01ed3b862692f58bb7d2cb2c84fc7602ad",
+  "baseline_sha256": "535611af0023abffda03e3b4cc899e5a4b02b286a224303d99f8cfde26114909",
+  "baseline_PV158_exact_prefix": true,
+  "additive_records": 1134,
+  "combined_records": 1292,
+  "additive_sha256": "ca0432b91b599e06c767732913364d71cb1bd2307886e7926d6f63f8b40e1a22",
+  "combined_sha256": "e8d40d8a44d5971cc5e01301698e20c403f954de0dc7165f9bf0a2894eea44a2",
+  "native_fragments": {
+    "checked": 1392,
+    "passed": 1392,
+    "native_words_checked": 54002
+  },
+  "materialized_source_cell_partitions": {
+    "checked": 1179,
+    "passed": 1179
+  },
+  "source_code_occurrences": 240,
+  "physical_position_definition_errors": [],
+  "actual_loader": {
+    "loaded": 1292,
+    "errors": []
+  },
+  "actual_finalizer": {
+    "finalized": 1292,
+    "roundtrip_errors": []
+  },
+  "actual_Learning_schema": {
+    "checked": 1292,
+    "errors": []
+  },
+  "synthetic_scoped_duplicate_probe": {
+    "not_generic_cache_snapshot": true,
+    "supplied": 240,
+    "final_records": 1292,
+    "boundaries": {
+      "121": false,
+      "122": true,
+      "384": true,
+      "385": false
+    }
+  },
+  "runtime_before": {
+    "pipeline/ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+    "pipeline/runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce",
+    "src/shared/contracts.ts": "ec1013e7bb9aba48e021dc3d0d598b55c743f08372e69b059a93ded40fbae2c7",
+    "data/schema/1.1.0.json": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df"
+  },
+  "runtime_after": {
+    "pipeline/ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+    "pipeline/runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce",
+    "src/shared/contracts.ts": "ec1013e7bb9aba48e021dc3d0d598b55c743f08372e69b059a93ded40fbae2c7",
+    "data/schema/1.1.0.json": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df"
+  },
+  "runtime_stable": true,
+  "no_manifest_core_PV_cache_bundle_database_mutation": true,
+  "source_only_denominator_before_adapter": true,
+  "whole_source_UF_ready": false,
+  "human_pedagogical_review": false,
+  "issues": [],
+  "result": "pass"
+}

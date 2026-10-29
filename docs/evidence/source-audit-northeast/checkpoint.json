@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-28T17:41:09.134217+00:00",
+  "at": "2026-10-28T20:51:30.447585+00:00",
   "actor_type": "automated",
   "owner": "/root/data_northeast",
   "scope_ufs": [
@@ -18,14 +18,136 @@
   "selected_pdf_sources": 86,
   "physical_pages_selected": 17486,
   "fully_reconciled_source_ids": [
-    "ma-portaria-181-2026-recomposicao-doe"
+    "pe-historia-pernambuco-2026",
+    "ma-portaria-181-2026-recomposicao-doe",
+    "ba-resolucao-125-2024-historia",
+    "ba-resolucao-266-2025-computacao"
   ],
   "fully_reconciled_ufs": 0,
   "inflight_owned_job": null,
   "completed_special_runs": {
+    "v2_source_artifacts": "8own Source V2 proofs/423records/465fragments,4selected-artifact dependency closures;0UFready. Current evidence reconciliation-v2-current-verification.json.",
+    "current_peer_reviewed_subsets": "4bound subsets,758typedrecords/1309fragments with actual currentSource/currentcache schema/evidence/parents replay: RN146,PE135,SE305,PI172. Not a net record increase or whole-book reconciliation.",
+    "RN_IFA": "Section7.2PDF545–558;120definition occurrences/72codes+26context nodes,275fragments. Literal five CG06source truncations preserved. FullSource570p refreshed; Sourceconfig current.",
+    "PE_EI": "115objectives+20containers/intro/legend,252fragments. Printed missingT/extra0 preserved. Five columns only; rights graphical column and whole134p pending. Primary distribution chain unproven; candidate Source provenance remains pending. Full134p cache refreshed.",
+    "SE_IFA": "305occurrences/54codes in133physical code-bearing cells on40pages,610fragments,74original headers. Peer initial121path.rect bodies refined to133individual re items while source305code denominator stayed fixed.571page Source cache refreshed; remainingFGB/uncoded scope pending.",
+    "PI_computation_commentary": "172references/50codes in595physical body lines on28pages;0newlearning items. All136generic documentary contexts preserved.77is commentary/relationship table excluded conservatively;128/136mixed.137page Source cache refreshed.",
+    "BA_vol2_glyph_proposal": "37pages/531cells/617glyph witnesses;0unmatched native or trace glyphs/0cell findings.3exact repeated paints enumerated. Isolated actual1.5parser459records/422code occurrences,53routedIDs all literalPASS;2Source flags bound without scope shrink.563page production-cache refresh running, current replay pending.",
+    "BA_vol2_current": "Full563page actual registered Source refreshed nice10/1worker:1291IDs/732codes preserved,53/53previous failures literalPASS,459selectedpage records checked,526outside pageTexts identical/832records identical except review_events[*].at. Sourceconfig/runtime current,0schema/OCRpending. Evidence ba-vol2-current-cache-verification.json.",
+    "principal159_current": "159original anchors retained:133represented/135records literalPASS(131cell+4multipage),26source references documentarily classified;0missing learning definitions among those26;157frame strata vs133inspected strata. No full principal-cohort part reconciled."
+  },
+  "open_external_or_provenance": {
+    "pb_pcem": "Browser renders original867p and official file view declaresapplication/pdf7.6MB, but normal viewer Download opens disabledSave dialog; original/newpublicdownload standardHTTP returnsHTML. Local artifact acquisition pending, edition/current adoption not inferred.",
+    "ba_dcrb_em2026": "Approved for implementation2027, integral artifact not located;2022edition remains distinct",
+    "al_recal_computacao": "89pprivate research copy acquired,primarydistributionidentitypending,publication_eligibleFalse",
+    "pe_ei": "Primarydistributionchain still must be fully confirmed",
+    "pe_in03_2026": "Cited by2IFA acquired sources; integral official act/matrices not acquired, public CEPE requests403, no bypass",
+    "ma_digital_complement": "Res211 approves required DCTMA digital complement; integral artifact not acquired; artifact_url null and mandatory research_pending"
+  },
+  "open_internal": {
+    "source_reconciliation": "Most complete source parts and structural inventories remain incomplete;0UFready. Eight selected own-Source proofs and four additional subsets do not represent all NE curricula.",
+    "national_delta": "ImmutableBASE remains unchanged. Fresh RN/PE/SE/PI caches have not yet been assembled/imported into a new global candidate by this owner.",
+    "BA_vol2_refresh": "Completed and current; source-wide uncoded/structural inventory and reconciliation still pending. Scope remains563p, only37page glyph flags changed.",
+    "current_native_failure_routing": "622native failures are the immutableBASE snapshot. Five Source updates have been refreshed/verified; new global candidate/preflight must compute actual residual failures, without subtracting page/record counts.",
+    "principal_159": "Current159frame literal/documentary role audit completed within its sampling scope,0full principal-source parts reconciled;26context/list references retain future whole-source typed-structure tasks.",
+    "uncoded_and_layout_structure": "Document-specific uncoded objectives/itineraries/containers remain to be modeled and reconciled in many accessible Source parts; acquisition and a completedNative/OCR run do not satisfy that requirement.",
+    "OCR_and_visual_review": "Scanned and embedded-image curriculum content still requires full transcription/visual evidence, source-defined denominators and validation; the small visual PI188 act does not close other PI/CE/PE materials.",
+    "PB_scope": "635p and392p remain distinct requested sources, independently verified2008/1946sidecars. Reference appendix185–188 in392p has64old native literal failures still under owner review; no claim of current adoption/EM or wholeUF.",
+    "scope_typology": "PEAtividades42p,MAEITI/programacts/SUGEDAtitles and citedEureka/matrizes need source-based classification/location; not silently omitted or automatically mandatory."
+  },
+  "next_commands": [
+    "Global mounting/import/preflight of stable RN/PE/SE/PI/BA changes remains /root/pipeline responsibility; originalBASE immutable.",
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/verify-bound-subset-refresh.py --source rn-referencial-em",
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/verify-bound-subset-refresh.py --source pe-curriculo-ei",
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/verify-bound-subset-refresh.py --source se-curriculo-em",
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/verify-bound-subset-refresh.py --source pi-computacao-em-2025",
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/verify-ba-vol2-current-cache.py",
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/recheck.py"
+  ],
+  "privacy": "OriginalPDFs,data/extracted and allsourcePNG renders remain gitignored/private; publicevidence hasmetadata,hashes,locators andlimitedtextnecessary.",
+  "collaborators": {
+    "MA": "/root/portal fidelity completed; /root/rs_adapter current acquisition and95normative nodes completed",
+    "PB": "/root/data_north comprehensive uncoded/coded adapter",
+    "PE_current": "/root/rs_adapter14parts acquired/integrated; extraction/reconciliation pending",
+    "RN_uncoded": "/root/rs_adapter objectives/hierarchy; /root/portal independent roles"
+  },
+  "selected_bytes": 667622099,
+  "factual_coverage": "docs/evidence/source-audit-northeast/factual-coverage-current.json",
+  "own_source_v2_verified_ids": [
+    "ba-resolucao-249-2026",
+    "pe-historia-pernambuco-2026",
+    "rn-portaria-11123-2025",
+    "ma-resolucao-211-2026-doe",
+    "ma-portaria-181-2026-recomposicao-doe",
+    "pi-resolucao-188-2025",
+    "ba-resolucao-125-2024-historia",
+    "ba-resolucao-266-2025-computacao"
+  ],
+  "v2_gate_evidence": "docs/evidence/source-audit-northeast/reconciliation-v2-current-verification.json",
+  "global_pipeline_job": {
+    "owner": "/root/pipeline",
+    "id": "national-extraction-v150-20261028",
+    "revision": "page-cell-v1.5.0",
+    "snapshot_sources": 303,
+    "status": "FULL_completed_286of286_17:56UTC_selective_refresh_four_sources18:18UTC_confirmed",
+    "competing_NE_extraction": false
+  },
+  "immutable_BASE_snapshot": {
+    "id": "ca-7d302a9c674a97b83278",
+    "manifest_sha256": "be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d",
+    "receipt": "docs/evidence/base-full-v150-prepared-receipt.json",
+    "receipt_sha256": "4a9c9006b1c66153e51414dbc82a3b2424fadb3f7730c381e085520c056c19f3",
+    "state": "prepared_immutable_not_production_acceptance",
+    "RN146_and_PE135_bound_in_this_snapshot": false
+  },
+  "next_delta_bound_sources": [
+    {
+      "source_id": "rn-referencial-em",
+      "sidecar_sha256": "c864aa82be21d66613a25b31e23fed253c14bd2ab87c61776447ccdb556255f5",
+      "state": "bound_and_current_native_cache_verified_next_global_candidate_pending",
+      "whole_source_ready": false
+    },
+    {
+      "source_id": "pe-curriculo-ei",
+      "sidecar_sha256": "3325af8e84729ac9791208a5953cb9cbc2aee9dbe343f5221dd6863ef7e2ddd5",
+      "state": "bound_and_current_native_cache_verified_next_global_candidate_pending",
+      "whole_source_ready": false
+    },
+    {
+      "source_id": "se-curriculo-em",
+      "sidecar_sha256": "75b8e08eb5fb7b710ea6a1df66e504c0c3b446b9e85f7e0fb9b696a962781941",
+      "state": "bound_and_current_native_cache_verified_next_global_candidate_pending",
+      "whole_source_ready": false
+    },
+    {
+      "source_id": "pi-computacao-em-2025",
+      "sidecar_sha256": "473df933616bf2dc6d67b75a93de210ca7d4202298d032848a43a474f0c29627",
+      "state": "bound_and_current_native_cache_verified_next_global_candidate_pending",
+      "whole_source_ready": false
+    }
+  ],
+  "source_counts_status": "90registered/86acquired/17486physicalpages/667622099bytes; original-artifact integrity evidence preserved; no acquired-PDF count is treated as complete UF coverage.",
+  "historical_open_internal_before_current_subsets": {
+    "source_reconciliation": "Most source parts remain pending; 0UFready, cannot attribute all incompleteness to external conditions",
+    "pe_em_p535": "Joint-prefix14cells integrated/probes passed; new global reprocessing pending",
+    "pi_ei_p58": "Resolved objective-column contamination across all93EIobjectives, not whole source completion",
+    "pb_uncoded_objectives": "635/2008 and392/1946 own adapters independently verified+bound; currentFULL/full source hierarchy/legal scope still pending",
+    "al_doe_page37": "Safe curated page_regions implemented and probe passed; include_in_corpus true, full act transcription/structure still pending",
+    "principal_159_anchor_audit": "Literal source checks completed for132represented records; classify29source codeoccurrences and integrate whole-layout data-only repairs for real PE/RN missing definitions. No allSource reconciliation claimed.",
+    "algorithm_cache_provenance": "Runtime1.5 frozen; FULL286/286 completed17:56UTC and four selective refreshes18:18UTC. Eight source-own V2 gates executed on exact current configurations. RN146 binding requires selective refresh/delta; PE135 inactive pending peer.",
+    "correction_proposals": "Runtime1.5 includes NE geometry/RN/PE/AL roles/MA-AL-SEglyph readers. All159 principal anchors available;128cell+4multipage literal checks passed,29code occurrences require semantic disposition. Current622failure diagnosis remains open.",
+    "pe_atividades_complementares": "42p acquired, mandatory/support typology pending official matrix evidence; visible in pe-current-supplement.json, not silently excluded",
+    "additional_current_research": "BA266/125 selected acts and PI188 have current V2 own proofs; BA125/266 whole selected-artifact dependency closure passed. PI Parecer190 required separately and not reconciled. MA digital/PEIN03 external; newGPD/AC typology preserved.",
+    "rn_uncoded": "3851node adapter bound,185own objectives,198UC/395modules/741cards/2930coded links peer verified; disjoint authority16–19and31–485 preserves26contexts. Current global FULL and V2 whole source remain pending",
+    "disk_capacity": "Global FULL completed; no competing extraction or large artifacts launched by NE. Runtime/extraction refresh controlled by pipeline owner.",
+    "rn_referencial_matrix": "Diagnostic320fragment-occurrences whole570p retained as a diagnostic, not unique denominator. IFA7.2 pages545–558 has146node independently verified sidecar bound; refresh/delta pending. FGB and remaining570p structure/reconciliation remain internal work.",
+    "pe_ei_candidate": "PE135/115 candidate generated and clone importer passed; independent peer in progress83–117, inactive until peer/binding. Nonconforming printed codes EI02S06PE/EI003EF11PE preserved. Primary distribution chain unproved.",
+    "literal_preflight_current": "622 NE native failures routed by final generic record IDs/cacheSHA. Read-only original-region diagnosis:427 stored excerpts do not match native physical glyph sequence,195 match but still require code/method/visual review. No repair or resolution claim. Routing docs/evidence/literal-preflight-v150-routing/northeast.json. Frozen BASE preserved."
+  },
+  "historical_completed_special_runs_before_current_subsets": {
     "rn_dcec_819": "Native+OCRcomplete,2197candidates/1386coded,8OCRpages,ocr_pendingFalse,25reviewwarnings; source not reconciled",
     "ce_resolution526_4": "OCR complete4p,9warnings,notreconciled",
-    "pe_history_8": "93whole records=91body+2frontmatter; sidecar91/92fragments/90parents remains correct forPDF3–8. Source authority[3,8]; current1.5config refresh/V2 pending",
+    "pe_history_8": "93whole records=91body+2frontmatter,94fragments,90parents; exact current1.5Source/cache+V2 own/dependency closure passed",
     "ba_resolution249_7": "45nodes/237source lines/current1.5V2 own passed49fragments; required DCRB2026missing, whole dependency closurefalse",
     "rn_portaria11123": "12nodes/24lines/current1.5V2 ownpassed; Parecer160/DCECapproved identity not proven, dependency closurefalse",
     "al_pv_optional": "182occurrences,61literaltexts distinct globally,75tables,all182importer/finalizer checks pass; not normative denominator",
@@ -39,66 +161,187 @@
     "current_ce_pi": "CE matrices2026V2 100p +Res52126p scanned +PIComputacaoEM2025 137p acquired/integrated; no completeness/legal date inferred",
     "pb_cedoc_392": "1946items activated,1055/1055cells,99EI,1689EFanchors,120lists independently verified; user requested snapshot, current normative application unconfirmed",
     "ma_normative": "95nodes/118fragments/726lines importer/finalizer+peer PASS; current1.5 cache and V2 own proof passed for both.211 related complement missing;181 dependency closure passed within selected act/annex",
-    "pi_normative": "Res18814public nodes/14image fragments/peer final PASS, true OCR and3local visual glyph corrections, active Source binding and cache refresh pending; Parecer190separately required/reconciliation pending",
+    "pi_normative": "Res18814public nodes/14visualOCRfragments/peerfinal; current1.5V2 ownpassed, Parecer190required separately and not reconciled",
     "pe_correlation_roles": "All682p old-cache projection:2764bad candidates replaced2828literal references,0remaining literal errors;951primary and220unknown anchors retained; FULL still pending",
     "al_glyph_subset": "195fragments/144cells/99pages independent native/ActualText proof, Source cluster flags restricted to reviewed pages; full reprocess pending",
     "rn_role_fidelity": "4320literal fragments/4322source mentions conserved;773+48definitions and617+2882references. Full Trilhas uncoded adapter3851nodes+2930coded+26context=6807,21423fragments peerPASS, Source binding active; globalFULL1.5/V2 still pending",
     "al_desdp_roles": "Full738p old-cache projection,119nativeheadergroups:105badcandidates replaced192literalcode references,0referencefailures;839primary/723unknown retained. Production module delivered; core hookup/full reprocess and uncodedDesDP hierarchy remain pending.",
-    "ba_current_acts": "BA266Computacao21p856939B/Parecer365included; BA125Historia2p673340B acquiredofficially,total1530279B; bothinFULL303,uncodednormativestructure/V2pending",
-    "v2_negative_probes": "10/10 in-memory tamper/missing/count/scope/legacy/dependencyflag cases correctly rejected; actual currentcache inputs, no writes to Sources/sidecars/caches"
+    "ba_current_acts": "BA266141nodes/155fragments/688bodylines+21markers and BA12523nodes/23fragments/76lines; both peerspassed, actualMF+fresh1.5cache+V2own/dependencyclosurepassed; currentartifact-only,0UFready",
+    "v2_negative_probes": "10/10 in-memory tamper/missing/count/scope/legacy/dependencyflag cases correctly rejected; actual currentcache inputs, no writes to Sources/sidecars/caches",
+    "pe_ei_organizer_candidate": "135nodes/115codedobjectives/252nativephysicalfragments;3ages/15fieldcontainers, source135clone importer/schema/parents/idempotence passed;2nonconforming printedIDs preserved; Sourceprimarychainpending, candidateNOTBOUND/peerpending",
+    "principal_159_current": "All159anchors available in1.5;130strata/132records literalPASS(128cell+4multipage),29unrepresentedcodeoccurrences requireclassification;3real PE/RNdefinition gaps, correctionsdata-only inprogress",
+    "rn_referencial_ifa": "146nodes/275fragments/120printedcode occurrences/72distinctcodes, independent peer PASS; actual Source binding active19:29UTC, selective refresh and next delta pending. Original570p source remains only partially structured."
   },
-  "open_external_or_provenance": {
-    "pb_pcem": "Browser renders original867p and official file view declaresapplication/pdf7.6MB, but normal viewer Download opens disabledSave dialog; original/newpublicdownload standardHTTP returnsHTML. Local artifact acquisition pending, edition/current adoption not inferred.",
-    "ba_dcrb_em2026": "Approved for implementation2027, integral artifact not located;2022edition remains distinct",
-    "al_recal_computacao": "89pprivate research copy acquired,primarydistributionidentitypending,publication_eligibleFalse",
-    "pe_ei": "Primarydistributionchain still must be fully confirmed",
-    "pe_in03_2026": "Cited by2IFA acquired sources; integral official act/matrices not acquired, public CEPE requests403, no bypass",
-    "ma_digital_complement": "Res211 approves required DCTMA digital complement; integral artifact not acquired; artifact_url null and mandatory research_pending"
-  },
-  "open_internal": {
-    "source_reconciliation": "Most source parts remain pending; 0UFready, cannot attribute all incompleteness to external conditions",
-    "pe_em_p535": "Joint-prefix14cells integrated/probes passed; new global reprocessing pending",
-    "pi_ei_p58": "Resolved objective-column contamination across all93EIobjectives, not whole source completion",
-    "pb_uncoded_objectives": "635/2008 and392/1946 own adapters independently verified+bound; currentFULL/full source hierarchy/legal scope still pending",
-    "al_doe_page37": "Safe curated page_regions implemented and probe passed; include_in_corpus true, full act transcription/structure still pending",
-    "principal_159_anchor_audit": "Recheck pending after global frozen parser batch; prior159anchors now addressed by NEgeometry27checks,MA9regressions,PB2008adapter and4multipagechecks, not whole-source reconciliation",
-    "algorithm_cache_provenance": "Runtime1.5 frozen and FULL303inprogress. Four small acts read actual currentcache with exact Sourceconfig; PE93/PI14selective refresh needed,159anchors full recheck afterFULL.",
-    "correction_proposals": "Frozen1.5registry includesNEgeometry/RN/PE/AL roles/MA-AL-SEglyphreaders. CurrentFULLand159anchor recheck remain; no core edits byNE.",
-    "pe_atividades_complementares": "42p acquired, mandatory/support typology pending official matrix evidence; visible in pe-current-supplement.json, not silently excluded",
-    "additional_current_research": "NewBA266/125normative23p accessible andmandatory; structure/reconciliationpending. PIRes188adapter14peerpassed; Parecer190requiredseparately. MA digital,PEIN03external; newGPD/ACtypology preserved.",
-    "rn_uncoded": "3851node adapter bound,185own objectives,198UC/395modules/741cards/2930coded links peer verified; disjoint authority16–19and31–485 preserves26contexts. Current global FULL and V2 whole source remain pending",
-    "disk_capacity": "Global frozen-runtime FULL303sources executing via pipeline owner; no competing extraction or large artifacts launched by NE."
-  },
-  "next_commands": [
-    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/verify-reconciled-current-caches.py",
-    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/upgrade-reconciliation-v2.py",
-    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/verify-reconciliation-v2-negatives.py",
-    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/recheck.py",
-    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/verify-artifacts.py",
-    "var/venv-pipeline/bin/python docs/evidence/source-audit-northeast/build-factual-coverage.py"
+  "peer_verified_current_subset_replays": [
+    {
+      "source_id": "rn-referencial-em",
+      "sidecar_sha256": "c864aa82be21d66613a25b31e23fed253c14bd2ab87c61776447ccdb556255f5",
+      "adapter_records": 146,
+      "literal_fragments": 275,
+      "cache_sha256": "e7be003c936281bdb6b1230c88eff030073811b56971f329bdb81eff9aa30763",
+      "expected_source_config_sha256": "c16393226f5e2591e9ebc9858860cead83f501d72bcad873e0d8b1b1ed0416df",
+      "current_identity_matches_now": true,
+      "provenance_status": null,
+      "primary_distribution_verified": null,
+      "evidence_path": "docs/evidence/source-audit-northeast/rn-em-ifa-actual-manifest-replay.json"
+    },
+    {
+      "source_id": "pe-curriculo-ei",
+      "sidecar_sha256": "3325af8e84729ac9791208a5953cb9cbc2aee9dbe343f5221dd6863ef7e2ddd5",
+      "adapter_records": 135,
+      "literal_fragments": 252,
+      "cache_sha256": "59a6b9ca61e16b312a1fa83a118935f544549af882b020046f7512388243180c",
+      "expected_source_config_sha256": "af381c609998c47b4d09935e9cf1a1233b3cae63f69ab3de350b0b5f16cb4530",
+      "current_identity_matches_now": true,
+      "provenance_status": "pending_primary_distribution_chain",
+      "primary_distribution_verified": false,
+      "evidence_path": "docs/evidence/source-audit-northeast/pe-ei-organizer-actual-manifest-replay.json"
+    },
+    {
+      "source_id": "se-curriculo-em",
+      "sidecar_sha256": "75b8e08eb5fb7b710ea6a1df66e504c0c3b446b9e85f7e0fb9b696a962781941",
+      "adapter_records": 305,
+      "literal_fragments": 610,
+      "cache_sha256": "f45c324aa1d68e9a3a2b01ec668c96331c37fa01fc5b34339353b0a001b953a0",
+      "expected_source_config_sha256": "53ec9d6c3ff4fe38f27a1f5b59eab219223e26d17f6e7475d5976ecb9158be5e",
+      "current_identity_matches_now": true,
+      "provenance_status": null,
+      "primary_distribution_verified": null,
+      "evidence_path": "docs/evidence/source-audit-northeast/se-ifa-actual-manifest-replay.json"
+    },
+    {
+      "source_id": "pi-computacao-em-2025",
+      "sidecar_sha256": "473df933616bf2dc6d67b75a93de210ca7d4202298d032848a43a474f0c29627",
+      "adapter_records": 172,
+      "literal_fragments": 172,
+      "cache_sha256": "f72022465d00cd0ff1c3e5dccdb7dea738ca374f990e4ef70d440693bc18aa8e",
+      "expected_source_config_sha256": "ff2ea0d3b85b69da7f42894e2d5cb6b29018f7fe1c352fa5a1fc3c1174da3bce",
+      "current_identity_matches_now": true,
+      "provenance_status": null,
+      "primary_distribution_verified": null,
+      "evidence_path": "docs/evidence/source-audit-northeast/pi-computacao-narrative-actual-manifest-replay.json"
+    }
   ],
-  "privacy": "OriginalPDFs,data/extracted and allsourcePNG renders remain gitignored/private; publicevidence hasmetadata,hashes,locators andlimitedtextnecessary.",
-  "collaborators": {
-    "MA": "/root/portal fidelity completed; /root/rs_adapter current acquisition and95normative nodes completed",
-    "PB": "/root/data_north comprehensive uncoded/coded adapter",
-    "PE_current": "/root/rs_adapter14parts acquired/integrated; extraction/reconciliation pending",
-    "RN_uncoded": "/root/rs_adapter objectives/hierarchy; /root/portal independent roles"
+  "PE_EI_separate_provenance_corroboration": {
+    "evidence": "docs/evidence/source-audit-northeast/pe-ei-provenance-association.json",
+    "evidence_sha256": "c6ff5a0751cd481f87514e2f6e1282237430e3905249c0f817f718e6cd99237f",
+    "peer_report_sha256": "6f1c2e885e5486842ed738504e38f530697487c1a77e0d8e9b7b51fd3ebeb346",
+    "status": "Issuer-to-exact-binary distribution not proven; work-recognition act and snapshot2019imprint are separate corroborations, not proof of binary authentication/current adoption.",
+    "Source_cache_unchanged": true
   },
-  "selected_bytes": 667622099,
-  "factual_coverage": "docs/evidence/source-audit-northeast/factual-coverage-current.json",
-  "own_source_v2_verified_ids": [
-    "ba-resolucao-249-2026",
-    "rn-portaria-11123-2025",
-    "ma-resolucao-211-2026-doe",
-    "ma-portaria-181-2026-recomposicao-doe"
-  ],
-  "v2_gate_evidence": "docs/evidence/source-audit-northeast/reconciliation-v2-current-verification.json",
-  "global_pipeline_job": {
-    "owner": "/root/pipeline",
-    "id": "national-extraction-v150-20261028",
-    "revision": "page-cell-v1.5.0",
-    "snapshot_sources": 303,
-    "status": "running_as_last_observed",
-    "competing_NE_extraction": false
+  "BA_current_cache_evidence": "docs/evidence/source-audit-northeast/ba-vol2-current-cache-verification.json",
+  "Source_manifest_and_cache_mutation_hold": "Current Source/cache updates SE24FGB and PIEIEF37 done; no further Source/cache mutations planned pending next coordinator stage. RNFGB census/prototype still private/unbound.",
+  "new_task_RN_FGB_inventory": {
+    "source_id": "rn-referencial-em",
+    "source_sha256": "5f894abaa0309169597c7c9b7841aebaa9faaeb45e4cb759e5058b359e2ed845",
+    "FGB_physical_pages": 469,
+    "matrix_pages": 406,
+    "matrix_parts": 17,
+    "narrative_pages": 63,
+    "physical_cells": 4090,
+    "primary_source_slots": 667,
+    "distinct_local_RN_codes": 464,
+    "national_area_occurrences": 203,
+    "literal_primary_prose_fragments": 738,
+    "crosspage_primary_records": 71,
+    "empty_primary_prose": 0,
+    "significant_narrative_images": 4,
+    "inventory_evidence": "docs/evidence/source-audit-rn-fgb/rn-fgb-physical-inventory.json",
+    "primary_prototype_evidence": "docs/evidence/source-audit-rn-fgb/rn-fgb-primary-prototype-verification.json",
+    "Source_binding_modified": false,
+    "remaining": "Complete hierarchy/articulation/object/didactic/narrative+image structures, source anomalies, production importer/schema/independent peer; notSource/UFready.",
+    "private_physical_candidate": "var/ne-rn-fgb-inventory/fgb-physical-complete-candidate.json",
+    "private_candidate_sha256": "505ef93e5f24f36d0d03c537f5dcfea5823be56df4c5d3bbe83432cdc69a3050",
+    "records": 3681,
+    "imported_finalized": 3681,
+    "literal_fragments": 6478,
+    "repeated_contextual_occurrences": 695,
+    "empty_physical_cells": 286,
+    "nonempty_physical_cells_owned": 3804,
+    "schema_errors": 0,
+    "orphans": 0,
+    "cycles": 0,
+    "negatives": 11,
+    "peer_status": "source-only_denominator_requested_from_auditor_before_outputs",
+    "Source_binding_changed": false,
+    "figures_and_vector_colors_pending": true,
+    "context_continuation_semantics_pending": true
+  },
+  "new_task_original622_current_triage": {
+    "at": "2026-10-28T21:43:43Z",
+    "path": "docs/evidence/source-audit-northeast/original622-current-triage.json",
+    "remaining_retained_literal_failure": 199,
+    "retained_literal_pass": 144,
+    "authority_supersession_checked": 278,
+    "technical_ledger_supersession_checked": 1,
+    "not_new_global_preflight": true
+  },
+  "new_task_PI_EI_EF_glyph_proposal": {
+    "old_failures": 62,
+    "reviewed_pages": 37,
+    "physical_cells": 874,
+    "same_physical_glyph_witnesses": 1145,
+    "literal_probe_records": 429,
+    "coded_occurrences_before_after": 392,
+    "new_literal_failures": 0,
+    "retained_routed_IDs": 61,
+    "six_technical_ID_replacements": "docs/evidence/source-audit-northeast/pi-eief-glyph-technical-supersessions.json",
+    "ledger_sha256": "73817aff990326ca9cb7a1cb9456be9a7f942d2f73b24e4b12b0d0c97e9010ed",
+    "peer_owner": "/root/auditor",
+    "status": "Rootbound_and_full313fresh_cache_verified",
+    "Source_cache_modified": true,
+    "peer_receipt": "docs/evidence/source-audit-pi-eief-glyph-peer/receipt.json",
+    "raw_Source_sha256": "323414e5fc76639c797d5c05ffd08a256fd65ecbba816ec72ac4a8fa19b61c7a",
+    "cache_sha256": "dda1a78ed8acf53368ef9c186eeb075876213fe549225214f363b11ef0639380",
+    "actual_verification": "docs/evidence/source-audit-northeast/pi-eief-current-cache-verification.json",
+    "six_bodies_byte_identical": true
+  },
+  "new_task_SE_FGB_glyph": {
+    "state": "Rootbound_current_full571cache_verified",
+    "new_reviewed_FGBpages": 24,
+    "prior_IFAflags_preserved": 21,
+    "totalflags": 45,
+    "IFA305_literal_pass": 305,
+    "old_failure_IDs_literal_pass": 30,
+    "rejected_page": 111,
+    "rejected_ID_still_pending": "ca:se-curriculo-em:51338ce7a5757ca10159",
+    "raw_Source_sha256": "58170cff464cc23022d8b8a40d2c4fe04a61e01c05629f92f1f1dc7e6d2b3766",
+    "cache_sha256": "0f686fa77820e5ed6a8f32ec560842749d122a4fb3fca58805656dfd9be78f40",
+    "evidence": "docs/evidence/source-audit-northeast/se-fgb-current-cache-verification.json",
+    "wholeSourceFalse": true
+  },
+  "current_delta_handoff_amendment": {
+    "path": "docs/evidence/source-audit-northeast/ne-six-source-current-delta-amendment.json",
+    "sha256": "320c4b4490ff5b93ec812fe8c33149f8073a5e1b28360adafca88e861c10cc82",
+    "sources_current": 6,
+    "previous_BASE_and_handoffs_preserved": true
+  },
+  "new_task_PB392_appendix": {
+    "source_id": "pb-proposta-ei-ef-cedoc",
+    "source_scope": [
+      185,
+      188
+    ],
+    "new_records": 74,
+    "full_BNCC_references": 69,
+    "new_sidecar_path": "data/manifests/uncoded/pb-cedoc-392-with-appendix-items.json",
+    "new_sidecar_sha256": "fc939a0bdc6aeb243acc8a86c18e071e0a7f3697d9942012aa4e776a9f33c27e",
+    "original1946_and_wrapper_preserved": true,
+    "binding": "bound_2026-10-28T22:09:50Z_plus_technical_ledger22:12:14Z_refresh_waiting_ops_CPU_lock",
+    "scope_not_EM_or_equivalence": true,
+    "source_raw_sha256": "1da2468e469531c005128aaf375d50aeaab3048a202f9bd32bc0b0299982bfc1",
+    "new_config_sha256": "8e2993c85d79e276bb576a5fa2b7c651ca7b494477a345250497931d477f185f",
+    "current_cache_status": "stale_backup_preserved",
+    "replacement_lineage_path": "docs/evidence/source-audit-pb392-appendix-author/record-replacement-pairs-v1.json",
+    "replacement_lineage_sha256": "f8b6a899a81a4304f37f207f4fd92fecedd8405b37b1c0815bb67909df9d1e69"
+  },
+  "new_task_CEComputacao_glyphs": {
+    "source_id": "ce-dcrc-computacao",
+    "read_only_audited_pages": 27,
+    "audited_table_regions": 414,
+    "glyph_witnesses": 400,
+    "glyph_trace_unmatched": 0,
+    "probe_status": "prepared_waiting_ops_CPU_latency_lock_release",
+    "manifest_modified": false
   }
 }

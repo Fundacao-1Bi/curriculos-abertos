@@ -1,0 +1,51 @@
+{
+  "at": "2026-10-28T22:19:01.168544+00:00",
+  "diagnostic_only": true,
+  "passed": false,
+  "publication": "ca-7d302a9c674a97b83278",
+  "source_tree_sha256": "ba309e4c7acb53d2e17ac37db9eef46341748b654f451481ac2b092a5a6dcc98",
+  "job": "632f5ed1-ea03-4b16-9120-3ce59ab06782",
+  "job_status": "paused",
+  "error": "RAW_RELATION_OUTSIDE_SCOPE: Rela\u00e7\u00e3o do recibo n\u00e3o toca nenhuma fonte alvo.",
+  "raw_publication": "ca-3bda11e217943ea5341f",
+  "raw_manifest_path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd/data/bundles/ca-3bda11e217943ea5341f.manifest.json",
+  "raw_manifest_sha256": "7704d3f8c39ffd56ac72ddb3a91f0b57fea7149febcd5b71304facd6dfd8600e",
+  "item_count": 4648,
+  "relation_count": 1,
+  "intruding_relation": {
+    "id": "br-computacao-em13co05-mat315-primary-reference",
+    "member_sources": [
+      "br-bncc-computacao-2022",
+      "br-bncc-2018"
+    ],
+    "target_source": "pe-historia-pernambuco-2026"
+  },
+  "no_global_candidate_imported": true,
+  "default_unchanged": true,
+  "parts_preserved_and_verified": [
+    {
+      "path": "data/bundles/ca-3bda11e217943ea5341f/items-0001.jsonl.gz",
+      "sha256": "8e2c764e57956c8618c2c90f92d37458cf0ecd25c07cbcc119d54e2d74cc92c1",
+      "bytes": 2268925,
+      "records": 4577,
+      "kind": "items"
+    },
+    {
+      "path": "data/bundles/ca-3bda11e217943ea5341f/items-0002.jsonl.gz",
+      "sha256": "a9ae9bf8aa7ec3f145a5a8410f2bd7635122e477a0fb100728692873f0452bad",
+      "bytes": 7798,
+      "records": 71,
+      "kind": "items"
+    },
+    {
+      "path": "data/bundles/ca-3bda11e217943ea5341f/relations-0001.jsonl.gz",
+      "sha256": "318b9c4651327b87891ae2cdbc1330750f6af267ac29ff2247a48ee3251b30d9",
+      "bytes": 828,
+      "records": 1,
+      "kind": "relations"
+    }
+  ],
+  "private_checkpoint_path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd/var/qa-j11-failure/checkpoint-original.json",
+  "private_checkpoint_sha256": "25a6fe9bfd727a34068520b2511d3005a52b3ae589c9dd5a6b2104117c3845e9",
+  "policy": "Do not weaken scope guard. Await producer fix/tests before retry."
+}

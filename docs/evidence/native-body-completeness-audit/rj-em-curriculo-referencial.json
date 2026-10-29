@@ -1,0 +1,43 @@
+{
+  "source_id": "rj-em-curriculo-referencial",
+  "uf": "RJ",
+  "artifact_sha256": "d5b0700da3a2ef3ca10ab46ec4e69691968f1b00b377ce7d12e8d83683fd38b8",
+  "cache_path": "data/extracted/d5b0700da3a2ef3ca10ab46ec4e69691968f1b00b377ce7d12e8d83683fd38b8-page-cell-v1.5.0.json",
+  "status": "read_completed_with_explicit_scope",
+  "audit_revision": "independent-vector-rules-native-code-boundaries-v3",
+  "counts": {
+    "coded_cache_records": 758,
+    "primary_pages_read": 237,
+    "body_prefix_not_aligned_to_independent_column_start": 758,
+    "primary_code_boundary_not_indexed_on_page": 121
+  },
+  "negative_examples": [],
+  "findings": [],
+  "reader_failures": [],
+  "limits": [
+    "Ruled native columns only; unavailable geometry/anchors remain unverified, not absent.",
+    "Strict physical prefix candidates need role/documentary review. This is not SourceWhole reconciliation."
+  ],
+  "cache_sha256": "1fb372518084d8cacda2e097e8f1b054b2d32d49e61dd25502a3f016c3100184",
+  "cache_meta": {
+    "source_id": "rj-em-curriculo-referencial",
+    "sha256": "d5b0700da3a2ef3ca10ab46ec4e69691968f1b00b377ce7d12e8d83683fd38b8",
+    "extraction_revision": "page-cell-v1.5.0",
+    "page_count": 337,
+    "document_page_count": 337,
+    "items": 1035,
+    "pages": 337,
+    "quality": {
+      "documentary_page_sections_not_typed_as_learning": 277,
+      "meaning": "Execution, code transcription and primary-document reconciliation are separate; OCR execution completion is not glyph or pedagogical verification. An OCR code-like token does not certify an official printed code.",
+      "ocr_execution_pending": false,
+      "ocr_transcription_review_pending": true,
+      "unassigned_ocr_code_tokens": 0,
+      "unresolved_ocr_code_like_records": 0,
+      "unresolved_printed_code_records": 0
+    },
+    "parser_fingerprint": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+  },
+  "primary_page_count": 337,
+  "cache_unchanged_after_audit": true
+}

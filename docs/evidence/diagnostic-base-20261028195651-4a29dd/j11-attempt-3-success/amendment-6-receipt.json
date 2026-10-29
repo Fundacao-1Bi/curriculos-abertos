@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-10-29T15:47:24.351Z",
+  "diagnostic_only": true,
+  "main_unchanged": true,
+  "project": "curriculos-abertos-clean-20261028205403-f517a7",
+  "publication": "ca-7d302a9c674a97b83278",
+  "previous": {
+    "image_id": "sha256:76510a41334504897c802ba1eb3f4030e7fb0d82afd09a8404d2f6ca774b22b5",
+    "source_tree_sha256": "93e4db2e8d8cd178d1bce43d4463360968b8b3f38a73c172c92761ebdddf8efe"
+  },
+  "source_tree_sha256": "c45d75aa62c07230fe354027da8cdb04f50fdd2b60eb4563b7db318be9b33beb",
+  "image_id": "sha256:9ea498032eabfae9f1b4ec49a6645cf5ec8bd6616f28c5a83f71c02d1cf8336c",
+  "files": [
+    {
+      "path": "scripts/qa-ingestion-admin.ts",
+      "before_sha256": "f78b0558c9f993a54f9a95487b06c537bdc89f9e5d8d2530668c22d3e844faa5",
+      "after_sha256": "e88a6667773fad0876fb9ff5f592d49ac8a30cceb734093541be2aa8ac41d06c"
+    }
+  ],
+  "snapshot_before": {
+    "publication": "ca-7d302a9c674a97b83278",
+    "publications": 3,
+    "items": 602172,
+    "sources": 909,
+    "relations": 172275,
+    "admins": 1,
+    "publication_metadata_digest": "78958e008c83e4a2fc8cce880a75a8cd",
+    "items_digest": "daa5760780caf92f60f3513f3c588229",
+    "source_digest": "7d59176bbf78aeae03fb67d3a25b0df8",
+    "relations_digest": "11f7a6648ad435b42276891bfc1152aa"
+  },
+  "snapshot_after": {
+    "publication": "ca-7d302a9c674a97b83278",
+    "publications": 3,
+    "items": 602172,
+    "sources": 909,
+    "relations": 172275,
+    "admins": 1,
+    "publication_metadata_digest": "78958e008c83e4a2fc8cce880a75a8cd",
+    "items_digest": "daa5760780caf92f60f3513f3c588229",
+    "source_digest": "7d59176bbf78aeae03fb67d3a25b0df8",
+    "relations_digest": "11f7a6648ad435b42276891bfc1152aa"
+  },
+  "preserved_jobs": [
+    {
+      "id": "632f5ed1-ea03-4b16-9120-3ce59ab06782",
+      "status": "paused"
+    },
+    {
+      "id": "78f1f727-a029-4b6b-b6c1-1d4eb2490a8c",
+      "status": "paused"
+    }
+  ],
+  "preserved_visibility": [
+    {
+      "id": "ca-7d302a9c674a97b83278",
+      "status": "published"
+    },
+    {
+      "id": "ca-7d302a9c674a97b83278.r-e6de9f90-4221-4d3c-a940-d88b2a3fd095",
+      "status": "published"
+    },
+    {
+      "id": "ca-update-cc8f819144a42541e6ec2d8414e813a1",
+      "status": "prepared"
+    }
+  ],
+  "reason": "diagnostic-only J11 harness deadline sized for BASE scale (attempt 2 paused correctly after 18.7 min; fixed 300s wait expired)",
+  "passed": true
+}

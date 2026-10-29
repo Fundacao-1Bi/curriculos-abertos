@@ -1,0 +1,54 @@
+import {createHash} from 'node:crypto';
+import {createReadStream,createWriteStream} from 'node:fs';
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {resolve,dirname} from 'node:path';
+import {createGunzip} from 'node:zlib';
+import {pathToFileURL,fileURLToPath} from 'node:url';
+import {isDeepStrictEqual} from 'node:util';
+
+const root=process.cwd(),snapshot=resolve(process.argv[2]),output=resolve(process.argv[3]);
+if(!snapshot.startsWith(resolve('var')+'/')||!output.startsWith(resolve('var')+'/'))throw Error('Snapshot/output must remain under var/');
+const metadata=JSON.parse(await readFile(resolve(snapshot,'snapshot.json'),'utf8'));
+const sha=(v:Buffer|string)=>createHash('sha256').update(v).digest('hex');
+const scannerPath=fileURLToPath(import.meta.url),scannerSha=sha(await readFile(scannerPath));
+for(const [path,digest] of Object.entries(metadata.files))if(sha(await readFile(resolve(snapshot,path)))!==digest)throw Error('TS snapshot checksum mismatch');
+const schemas=await import(pathToFileURL(resolve(snapshot,'src/mcp/contracts.ts')).href);
+const {verifyPublicationSchema}=await import(pathToFileURL(resolve(snapshot,'src/domain/schema-pin.ts')).href);
+const manifestPath=resolve('data/bundles/ca-7d302a9c674a97b83278.manifest.json');
+const bytes=await readFile(manifestPath),manifest=JSON.parse(bytes.toString());
+const baseSha='be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d';
+if(sha(bytes)!==baseSha)throw Error('BASE manifest checksum mismatch');
+const published=await verifyPublicationSchema(manifest,{schemaRoot:resolve('data/schema')});
+await mkdir(dirname(output),{recursive:true});
+const errors=createWriteStream(output+'.issues.jsonl',{flags:'w'});
+const counts={Source:0,Learning:0,Relation:0},failed={published_json_schema:0,mcp_schema:0,mcp_payload_changed:0};
+const byPath=new Map<string,number>(),bySource=new Map<string,number>();let issues=0;
+function emit(row:Record<string,unknown>){issues++;errors.write(JSON.stringify(row)+'\n');const key=String(row.validator)+':'+String(row.path??'');byPath.set(key,(byPath.get(key)??0)+1);const sid=String(row.source_id??'(relation)');bySource.set(sid,(bySource.get(sid)??0)+1);}
+function check(kind:'Source'|'Learning'|'Relation',record:any){
+ counts[kind]++;const context={kind,id:record.id,source_id:kind==='Source'?record.id:record.source_id,page:record.evidence?.[0]?.page};
+ try{published.validate(kind,record);}catch(error){failed.published_json_schema++;emit({...context,validator:'published_json_schema',error:error instanceof Error?error.message:String(error)});}
+ const parsed=schemas[kind+'Schema'].safeParse(record);
+ if(!parsed.success){failed.mcp_schema++;for(const issue of parsed.error.issues){const path=issue.path.map((p:unknown)=>typeof p==='number'?'*':String(p)).join('.');emit({...context,validator:'mcp_schema',path,issue});}}
+ else if(!isDeepStrictEqual(parsed.data,record)){failed.mcp_payload_changed++;emit({...context,validator:'mcp_payload_changed',path:'',error:'Schema parsing added/removed/coerced fields; no canonical payload repair applied.'});}
+}
+for(const source of manifest.sources)check('Source',source);
+for(const part of manifest.parts){
+ const compressed=createHash('sha256'),decoded=createHash('sha256');let records=0,size=0;
+ const input=createReadStream(resolve(root,part.path)),unzip=createGunzip();
+ input.on('data',block=>compressed.update(block));input.on('error',error=>unzip.destroy(error));input.pipe(unzip);
+ // Byte LF only. Unicode U+2028/U+2029 inside JSON strings are not JSONL
+ // delimiters; readline would incorrectly split real primary text.
+ const utf8=new TextDecoder('utf-8',{fatal:true});let pieces:Buffer[]=[],lineSize=0;
+ const consume=(piece:Buffer)=>{lineSize+=piece.length;if(lineSize>8*1024*1024)throw Error('Record exceeds bound');pieces.push(piece);};
+ const parse=()=>{if(!lineSize)throw Error('Empty JSONL record');const line=pieces.length===1?pieces[0]:Buffer.concat(pieces,lineSize);pieces=[];lineSize=0;records++;check(part.kind==='items'?'Learning':'Relation',JSON.parse(utf8.decode(line)));};
+ for await(const value of unzip){const chunk=value as Buffer;decoded.update(chunk);size+=chunk.length;let start=0,index:number;while((index=chunk.indexOf(0x0a,start))>=0){consume(chunk.subarray(start,index));parse();start=index+1;}if(start<chunk.length)consume(chunk.subarray(start));}
+ if(lineSize)parse();
+ if(compressed.digest('hex')!==part.sha256||decoded.digest('hex')!==part.decoded_sha256||size!==part.decoded_bytes||records!==part.records)throw Error('Shard checksum/count mismatch');
+ console.log(JSON.stringify({part:part.path,counts,issues}));
+}
+await new Promise<void>((resolve,reject)=>{errors.on('error',reject);errors.end(resolve);});
+if(counts.Source!==manifest.source_count||counts.Learning!==manifest.item_count||counts.Relation!==manifest.relation_count)throw Error('BASE counts mismatch');
+for(const [path,digest] of Object.entries(metadata.files))if(sha(await readFile(resolve(snapshot,path)))!==digest)throw Error('Snapshot changed during scan');
+if(sha(await readFile(scannerPath))!==scannerSha)throw Error('Scanner changed during execution');
+const result={generated_at:new Date().toISOString(),read_only:true,base_publication:manifest.id,base_sha256:baseSha,scanner_sha256:scannerSha,snapshot_sha256:metadata.sha256,files:metadata.files,counts,failed,issues,by_path:Object.fromEntries([...byPath].sort()),by_source:Object.fromEntries([...bySource].sort()),passed:issues===0,canonical_data_modified:false,database_accessed:false,limitation:'All BASE records checked under the pinned TS validator snapshot; this is a data-contract comparison, not primary fidelity or national completeness.'};
+await writeFile(output,JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));

@@ -1,0 +1,212 @@
+{
+  "at": "2026-10-28T18:15:37.637195+00:00",
+  "actor_type": "automated",
+  "parser_revision": "page-cell-v1.5.0",
+  "primary_native_order": "sort=True, production fallback/trace methods through common checker",
+  "records": 7321,
+  "sources": [
+    {
+      "source_id": "sp-curriculo-eief-isbn",
+      "expected_adapter_records": 115,
+      "loaded": 115,
+      "finalized": 115,
+      "literal_errors": [],
+      "missing_adapter_parents": [],
+      "sidecar_sha256": "1f40faf53de864fbda0078053a9e8cc1446f045c392906b017f9e3d31fb59e34",
+      "actual_source_binding": true,
+      "passed": true
+    },
+    {
+      "source_id": "mg-crmg-eief-atualizada",
+      "expected_adapter_records": 113,
+      "loaded": 113,
+      "finalized": 113,
+      "literal_errors": [],
+      "missing_adapter_parents": [],
+      "sidecar_sha256": "9615a86a6cb029bf46f12eac429ed0088f81e2772b6b80c423269d6374c3d4c4",
+      "actual_source_binding": true,
+      "passed": true
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "expected_adapter_records": 136,
+      "loaded": 136,
+      "finalized": 136,
+      "literal_errors": [],
+      "missing_adapter_parents": [],
+      "sidecar_sha256": "dbbf047c569cbadee6afcd69cf16d504275942d9894c4acb0fbca041086d9eeb",
+      "actual_source_binding": true,
+      "passed": true
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "expected_adapter_records": 24,
+      "loaded": 24,
+      "finalized": 24,
+      "literal_errors": [],
+      "missing_adapter_parents": [],
+      "sidecar_sha256": "54bb8bb64958e40183e5c89170ee8328aa9d3eb6a1f6e59852d815476695e1a5",
+      "actual_source_binding": true,
+      "passed": true
+    },
+    {
+      "source_id": "rj-em-itinerarios",
+      "expected_adapter_records": 182,
+      "loaded": 182,
+      "finalized": 182,
+      "literal_errors": [],
+      "missing_adapter_parents": [],
+      "sidecar_sha256": "f7237754b308220133a4410926dd6b3dcf5f408c31ddec58e3a42817cf3a41f1",
+      "actual_source_binding": true,
+      "passed": true
+    },
+    {
+      "source_id": "es-curr-culo-es-2019-vol-02-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-da-natureza-e-matem-tica-m",
+      "expected_adapter_records": 494,
+      "loaded": 494,
+      "finalized": 494,
+      "literal_errors": [],
+      "missing_adapter_parents": [],
+      "sidecar_sha256": "943dc230aef41ee473ec4b8b9eff80531b71d514aa996cace4d4441d13aa21e2",
+      "actual_source_binding": true,
+      "passed": true
+    },
+    {
+      "source_id": "es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso",
+      "expected_adapter_records": 507,
+      "loaded": 506,
+      "finalized": 506,
+      "literal_errors": [
+        {
+          "source_id": "es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso",
+          "page": 193,
+          "locator": "competence-chapter:es-ef-chapter-ec61b7f5deeb",
+          "id": "ca:es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso:section:es-ef-chapter-ec61b7f5deeb",
+          "check": "adapter_literal_text_code_page"
+        }
+      ],
+      "missing_adapter_parents": [
+        "ca:es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso:section:es-ef-ce-field-p196-t0-c0",
+        "ca:es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso:section:es-ef-ce-field-p203-t0-c1",
+        "ca:es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso:section:es-ef-ce-field-p205-t0-c1",
+        "ca:es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso:section:es-ef-ce-field-p207-t0-c1",
+        "ca:es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso:section:es-ef-ce-field-p209-t0-c1",
+        "ca:es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso:section:es-ef-ce-field-p211-t0-c1",
+        "ca:es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso:section:es-ef-ce-field-p213-t0-c1",
+        "ca:es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso:section:es-ef-ce-field-p215-t0-c1",
+        "ca:es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso:section:es-ef-ce-field-p217-t0-c1",
+        "ca:es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso:section:es-ef-ce-field-p219-t0-c1"
+      ],
+      "sidecar_sha256": "1a873c9fca25ca3b9b9a2a64f73bcc28833313e89bfa5a2939fbe6e8d221f69e",
+      "actual_source_binding": true,
+      "passed": false
+    },
+    {
+      "source_id": "es-curr-culo-es-2019-vol-04-ensino-fundamental-anos-iniciais-rea-de-linguagens-arte-e-educa-o-f-sica-mi",
+      "expected_adapter_records": 554,
+      "loaded": 554,
+      "finalized": 554,
+      "literal_errors": [],
+      "missing_adapter_parents": [],
+      "sidecar_sha256": "4f04d471a44bad6cd50f92f0b1aad77903e885877fd44bf9b45f30cbbde8de25",
+      "actual_source_binding": true,
+      "passed": true
+    },
+    {
+      "source_id": "es-curr-culo-es-2019-vol-05-ensino-fundamental-anos-iniciais-rea-de-linguagens-l-ngua-portuguesa-miolo",
+      "expected_adapter_records": 422,
+      "loaded": 422,
+      "finalized": 422,
+      "literal_errors": [],
+      "missing_adapter_parents": [],
+      "sidecar_sha256": "91e53c4913182aadbd12e2741e0992f19867bf28e08a1f466257ab81f9208a1c",
+      "actual_source_binding": true,
+      "passed": true
+    },
+    {
+      "source_id": "es-curr-culo-es-2020-vol-06-ensino-fundamental-anos-finais-rea-de-ci-ncias-da-natureza-e-matem-tica-mio",
+      "expected_adapter_records": 525,
+      "loaded": 525,
+      "finalized": 525,
+      "literal_errors": [],
+      "missing_adapter_parents": [],
+      "sidecar_sha256": "baddfb23900362d3ecb848add4628bdb948d2989e8cc2c84c9a80d4f419bad81",
+      "actual_source_binding": true,
+      "passed": true
+    },
+    {
+      "source_id": "es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m",
+      "expected_adapter_records": 832,
+      "loaded": 831,
+      "finalized": 831,
+      "literal_errors": [
+        {
+          "source_id": "es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m",
+          "page": 249,
+          "locator": "competence-chapter:es-ef-chapter-c48d4710ea4d",
+          "id": "ca:es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m:section:es-ef-chapter-c48d4710ea4d",
+          "check": "adapter_literal_text_code_page"
+        }
+      ],
+      "missing_adapter_parents": [
+        "ca:es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m:section:es-ef-ce-field-p252-t0-c0",
+        "ca:es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m:section:es-ef-ce-field-p259-t0-c1",
+        "ca:es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m:section:es-ef-ce-field-p261-t0-c1",
+        "ca:es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m:section:es-ef-ce-field-p263-t0-c1",
+        "ca:es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m:section:es-ef-ce-field-p265-t0-c1",
+        "ca:es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m:section:es-ef-ce-field-p267-t0-c1",
+        "ca:es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m:section:es-ef-ce-field-p269-t0-c1",
+        "ca:es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m:section:es-ef-ce-field-p271-t0-c1"
+      ],
+      "sidecar_sha256": "4712c7b8c186054cf9a1cf5b2ecbf266f223f9d21c39890f6e11b3c26e818680",
+      "actual_source_binding": true,
+      "passed": false
+    },
+    {
+      "source_id": "es-curr-culo-es-2020-vol-08-ensino-fundamental-anos-finais-rea-de-linguagens-arte-educa-o-f-sica-e-l-ng",
+      "expected_adapter_records": 928,
+      "loaded": 928,
+      "finalized": 928,
+      "literal_errors": [],
+      "missing_adapter_parents": [],
+      "sidecar_sha256": "72dcdc92fd9998d1207003a9d41aecb8bca20d148288727e6fe0ad20387b11ee",
+      "actual_source_binding": true,
+      "passed": true
+    },
+    {
+      "source_id": "es-curr-culo-es-2020-vol-09-ensino-fundamental-anos-finais-rea-de-linguagens-l-ngua-portuguesa-miolo",
+      "expected_adapter_records": 1052,
+      "loaded": 1052,
+      "finalized": 1052,
+      "literal_errors": [],
+      "missing_adapter_parents": [],
+      "sidecar_sha256": "cb9f619525ea9c2aad4c67d77f13ecc47651b03e29f9e6e7610b4fd04c246152",
+      "actual_source_binding": true,
+      "passed": true
+    },
+    {
+      "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+      "expected_adapter_records": 1309,
+      "loaded": 1309,
+      "finalized": 1309,
+      "literal_errors": [],
+      "missing_adapter_parents": [],
+      "sidecar_sha256": "f902d3329425890bdb993ba64fa7fcbcf5bf779b1ad899f3fd70d3f4c8346d3d",
+      "actual_source_binding": true,
+      "passed": true
+    },
+    {
+      "source_id": "es-tema-integrador-final-24-10",
+      "expected_adapter_records": 130,
+      "loaded": 130,
+      "finalized": 130,
+      "literal_errors": [],
+      "missing_adapter_parents": [],
+      "sidecar_sha256": "917160fabe55d76c2d99bd9f0ee9a0a7565e6bcaae4f81087dda38cec5358760",
+      "actual_source_binding": true,
+      "passed": true
+    }
+  ],
+  "passed": false,
+  "whole_source_or_uf_ready_claimed": false
+}

@@ -1,0 +1,57 @@
+{
+  "at": "2026-10-28T18:38:36.428278+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast:PE_candidate_real_importer",
+  "source_id": "pe-curriculo-ei",
+  "artifact_sha256": "a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3",
+  "sidecar_path": "data/manifests/uncoded/pe-ei-objectives-items.json",
+  "sidecar_sha256": "3325af8e84729ac9791208a5953cb9cbc2aee9dbe343f5221dd6863ef7e2ddd5",
+  "extraction_revision": "page-cell-v1.5.0",
+  "cache_sha256": "f0b54a7649101982fa66cdb42d23aa627ec01f236989b7ddf41a8d4b6f57a588",
+  "current_original_Source_cache_config_matches": true,
+  "source_defined_age_groups": 3,
+  "source_defined_fields_per_group": 5,
+  "source_defined_coded_objectives": 115,
+  "independent_adapter_IDs": 135,
+  "actual_adapter_records": 135,
+  "literal_fragments_checked": 252,
+  "source_generic_inputs": 187,
+  "final_records_including_remaining_generic_context": 245,
+  "parents_resolved": 134,
+  "schema_failures": 0,
+  "orphans": 0,
+  "cycles": 0,
+  "generic_coded_records_surviving_repaired_scope": 0,
+  "literal_nonconforming_codes_preserved": [
+    "EI02S06PE",
+    "EI003EF11PE"
+  ],
+  "two_invented_code_corrections_rejected": true,
+  "code_original_group_whitespace_preserved": true,
+  "idempotent_sidecar_bytes": true,
+  "by_kind": {
+    "organizador_curricular": 1,
+    "metadado_documental": 1,
+    "grupo_etario": 3,
+    "campo_experiencia": 15,
+    "objetivo_aprendizagem": 115
+  },
+  "proposed_authority": {
+    "coded_learning_pages": [
+      87,
+      117
+    ],
+    "uncoded_page_sections_pages": [
+      84,
+      86
+    ]
+  },
+  "provenance_status": "pending_primary_distribution_chain",
+  "actual_Source_binding_changed": false,
+  "extraction_invoked": false,
+  "peer_status": "pending",
+  "result": "passed",
+  "whole_source_reconciled": false,
+  "UF_ready": false,
+  "scope": "Complete coded organizer and its headers/legend, real importer/finalizer using immutable existing1.5 source cache and cloned Source. Source134p rights/narrative/credits/references are not reconciled. Primary distribution chain pending; no official-chain/current-adoption or pedagogical human review claim."
+}

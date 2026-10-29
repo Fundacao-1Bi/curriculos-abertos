@@ -1,36 +1,45 @@
-# Quadro factual Nordeste — escopo de verificação
+# Quadro factual Nordeste
 
-Atualizado 2026-10-28T17:42:00.025911+00:00. Autoria documental automatizada, com pares automatizados onde documentados. Nenhuma revisão pedagógica humana.
+Atualizado em 2026-10-28T21:50:16.658009+00:00. Autoria e revisão técnica por agentes automatizados; revisão pedagógica humana não realizada.
 
-**90 entradas / 86 PDFs / 17.486 páginas físicas / 667.622.099 bytes; 0 UFs integralmente reconciliadas.** Todos os arquivos adquiridos tiveram SHA, assinatura PDF, páginas e tamanho reconferidos.
+**90 entradas, 86 PDFs adquiridos, 17.486 páginas físicas e 667.622.099 bytes. Zero UFs integralmente reconciliadas.** Aquisição e processamento não são cobertura curricular completa.
 
-O gate V2 real do runtime `page-cell-v1.5.0` verificou 4 artefatos próprios. 1 fecha também suas dependências documentais declaradas. São atos/recortes selecionados, sem inferência de completude de UF ou incorporação em produção.
+O gate V2 executado no runtime `page-cell-v1.5.0` verificou 8 artefatos próprios. 4 também fecharam suas dependências declaradas no recorte selecionado. Isso não amplia o escopo desses atos para a UF inteira.
 
-| Artefato | Registros / fragmentos | Gate próprio | Dependências |
+| Artefato selecionado | Registros / fragmentos | Resultado documental |
+|---|---:|---|
+| `ba-resolucao-249-2026` | 45 / 49 | Próprio verificado; documento relacionado/identidade pendente |
+| `pe-historia-pernambuco-2026` | 93 / 94 | Próprio e dependências declaradas verificados |
+| `rn-portaria-11123-2025` | 12 / 12 | Próprio verificado; documento relacionado/identidade pendente |
+| `ma-resolucao-211-2026-doe` | 19 / 20 | Próprio verificado; documento relacionado/identidade pendente |
+| `ma-portaria-181-2026-recomposicao-doe` | 76 / 98 | Próprio e dependências declaradas verificados |
+| `pi-resolucao-188-2025` | 14 / 14 | Próprio verificado; documento relacionado/identidade pendente |
+| `ba-resolucao-125-2024-historia` | 23 / 23 | Próprio e dependências declaradas verificados |
+| `ba-resolucao-266-2025-computacao` | 141 / 155 | Próprio e dependências declaradas verificados |
+
+PE História tem 93 registros no artefato de oito páginas: 91 do corpo curricular e dois de capa/créditos. O ato PI188 contém 14 nós conferidos nas imagens originais; seu Parecer190 continua separado e pendente.
+
+| Recorte adicional auditado | Registros / fragmentos | Fonte e cache atuais | Limite |
 |---|---:|---|---|
-| `ba-resolucao-249-2026` | 45 / 49 | V2 verificado | Documentos obrigatórios/identidade pendentes |
-| `pe-historia-pernambuco-2026` | — / — | Pendente | Atualização seletiva do cache/configuração pendente |
-| `rn-portaria-11123-2025` | 12 / 12 | V2 verificado | Documentos obrigatórios/identidade pendentes |
-| `ma-resolucao-211-2026-doe` | 19 / 20 | V2 verificado | Documentos obrigatórios/identidade pendentes |
-| `ma-portaria-181-2026-recomposicao-doe` | 76 / 98 | V2 verificado | Fechadas no recorte |
-| `pi-resolucao-188-2025` | — / — | Pendente | Atualização seletiva do cache/configuração pendente |
+| `rn-referencial-em` | 146 / 275 | Verificados por identidade atual | Matriz 7.2, PDF545–558; demais partes das570 páginas pendentes. Cinco redações CG06 truncadas no próprio PDF foram preservadas. |
+| `pe-curriculo-ei` | 135 / 252 | Verificados por identidade atual | Cinco colunas de objetivos, introdução e legenda; direitos gráficos e134 páginas integrais pendentes. Procedência primária não comprovada. |
+| `se-curriculo-em` | 305 / 610 | Verificados por identidade atual | Colunas completas de habilidades em40 páginas de IFA; restante das571 páginas e FGB pendentes. Repetições literais preservadas. |
+| `pi-computacao-em-2025` | 172 / 172 | Verificados por identidade atual | Somente172 referências na prosa de28 páginas, sem criar habilidades.77/128/136 preservadas fora da autoridade. |
 
-PE História tem **93 registros integrais = 91 de corpo curricular (PDF3–8, oito habilidades próprias) + dois contextos de capa/créditos (PDF1–2)**. A autoridade suprime apenas os contêineres redundantes PDF3–8. O teste antigo de91 itens não comprovava a fonte inteira. PI Res188 tem14nós/14fragmentos revisados em imagens, incluindo homologação PDF1→2; OCR original privado preservado, três correções locais de glifos explícitas. Ambos os bindings mudaram após o snapshot global e aguardam atualização seletiva de cache e gate V2.
+Os recortes acima substituem ocorrências correspondentes; seus totais não representam acréscimo líquido ao corpus nem quantidade de habilidades distintas. Nenhum deles encerra a Source inteira.
 
-| Conjunto acessível | Verificado | Trabalho interno ainda necessário |
-|---|---|---|
-| PB635 e PB392, fontes distintas | Sidecars2008/1946,1157/1055células,103/99objetivosEI,0erros independentes, bindings ativos | FULL atual, contexto/hierarquia restante e V2 integral;392 é processamento exigido pelo usuário, sem vigência/EM presumidos |
-| PE12FGB e2IFA atuais |14PDFs/563p adquiridos;12FGB/481p com papéis de coluna delimitados: nacionais da área e próprias preservadas,526menções secundárias contextualizadas,60desconhecidas mantidas;0falhasliterais no censo | Estrutura/objetivos sem código e V2 integral. Menções não são denominador de habilidades. Edição/data dos PDFs nulas;42pAtividadesComplementares com tipologia pendente |
-| CE matrizes2026V2 eRes521 |100p/26p adquiridas, transição indicada;Res521 digitalizada | FULL com OCR habilitado, inventário estrutural, anos/colunas e V2 por parte |
-| PI ComputaçãoEM, Res188 eParecer190 |137p/2p/6p adquiridas;14registros do ato188 com peer visual final aprovado; Parecer190 é dependência separada | Refresh188, estrutura integral Parecer190 e currículos;93objetivosEI verificados são recorte da fonteEI/EF |
-| MA referenciais eatos |736p de referenciais com1932fragmentos codificados literais em probe;95nós dos atos211/181 com peer e gate próprioV2 atual | Hierarquia/objetivos sem código/OCR dos referenciais e V2 integral. Complemento digital aprovado faltante, catálogo SUGEDA20títulos novos tem acesso/login e tipologia pendentes |
-| RN Trilhas eDCEC |1304p/4320fragmentos codificados literais; Trilhas3851nós,185objetivos próprios,2930links,peer integral:21423fragmentos/774445glifos. Final real6807=3851+2930coded+26contextos; autoridade disjunta preserva frontmatter | FULL1.5 e V2 integral. Contracapa485 tem brasão/logo/ISBN e foi OCR legítimo. Identidade do DCEC aprovado no Parecer160 exige confronto documental |
-| BA atos atuais |249:45nós/V2 próprio;266Computação21p e125História2p oficiais adquiridos e incluídos no FULL303 | Partição normativa sem código/reconciliação dos dois atos novos, FGB/IFA dos referenciais e DCRB2026 integral faltante; implementação2027 distinta da vigência |
-| AL EF/EM |195fragmentos/144células/99páginas com prova glyph/ActualText; flags limitados; DesDP192referências literais por cabeçalho,839primárias e723desconhecidas preservadas | FULL, DesDP/IFA/objetivos/estrutura sem código e V2 integral; não é reconciliação das1277p |
-| BA/CE/PE/SE geometria |27probes reais em23p e8fragmentos de4âncoras multipágina passaram antes do congelamento | GlobalFULL1.5 e novo confronto159âncoras. Provas antigas não qualificam caches novos automaticamente |
+O snapshot de preflight nativo do BASE tinha622 falhas NE. As correções posteriores exigem uma nova montagem e novo preflight global; não se subtrai automaticamente a quantidade de páginas, referências ou registros desse denominador. O quadro159 foi repetido antes dos dois últimos ajustes de glifos SE/PI, com os pins preservados nesse recibo:133 âncoras representadas/135 registros literais passaram (131célula+4multipágina) e26 referências receberam disposição documental fonte-only. Os157 estratos pertencem ao frame inteiro;133 estratos tiveram registros de aprendizagem inspecionados. Isso não fecha partes curriculares integrais.
 
-**Bloqueios externos/procedência:** PBEM renderiza867p no navegador oficial, mas aquisição dos bytes originais não executada: endpoint público retorna HTML e Save normal permanece desabilitado; acesso visual e artefato local são estados distintos. BAEM2026 integral não localizado; ALComputação cadeia primária não comprovada; PEEI cadeia primária pendente; PEIN03/2026 e MADCTMADigital integrais não obtidos. Nenhum deles dispensa o processamento interno acessível.
+BAvol2: ajuste restrito a37 páginas,531 células e617 testemunhos de ligaduras/ActualText. O refresh integral563p e replay atual passaram:53/53 IDs antes falhos agora literais,1291 IDs/732 ocorrências codificadas preservados,526 páginas fora do recorte com texto idêntico e832 registros iguais salvo horários técnicos de execução. A reconciliação estrutural da Source563p continua pendente.
 
-**Tipologia pendente preservada:** PEAtividadesComplementares42p; MARes162EITI e atos programáticos;20novos rótulos SUGEDA sem adoção inferida. Matrizes/Eureka referenciados no anexoMA181 exigem localização/classificação; materiais didáticos não se tornam obrigatórios apenas por conter objetivos.
+Triagem exata do frame antigo622 após os caches SE571/PI313:199 IDs retidos ainda falham,144 retidos passam,278 ocorrências foram legitimamente substituídas por recortes autoritativos literais e uma por par técnico com peer. Os seis pares PI preservam corpos/códigos/posições; mudaram IDs/localizadores, sem reescrever publicações anteriores. Isso não é novo preflight nacional. SE tem30 IDs conferidos no cache atual e mantém a página111 explicitamente rejeitada; PI tem62 ocorrências conferidas no313p atual. Nenhum desses ajustes fecha a Source inteira.
 
-Estado individual das90fontes e partes: [factual-coverage-current.json](factual-coverage-current.json). Evidência V2: [reconciliation-v2-current-verification.json](reconciliation-v2-current-verification.json). Contagens de registros/documentos não representam qualidade curricular, adoção ou revisão pedagógica humana.
+RN FGB:469 páginas físicas,17matrizes,667slots primários (464códigos locais únicos e203ocorrências nacionais); o candidato físico completo permanece privado e sem binding, com revisão de contextos/continuações/imagens ainda pendente.
+
+Persistem tarefas internas: inventário das partes e hierarquia integral da maioria dos referenciais; objetivos sem código e continuações; verificação visual/OCR; posicionamentos documentados; papéis de referências e definições; reconciliação das partes; e requisitos normativos relacionados. PB635/392, RN Trilhas3851 e PE12FGB/2IFA possuem provas próprias, que não equivalem a UF concluída.
+
+Bloqueios de acesso ou procedência registrados: PBEM renderiza867 páginas no navegador oficial, mas a aquisição local do original segue pendente; DCRB EM2026 BA integral não localizado; cadeia primária de ALComputação e PE EI não comprovada; IN03/2026 PE e complemento digital aprovado por MA211 ainda não adquiridos. Esses bloqueios não dispensam o processamento interno dos materiais acessíveis.
+
+A tipologia continua explícita: PE Atividades Complementares42p, MA EITI/atos de programas e novos rótulos SUGEDA têm obrigação/integração curricular pendentes de prova. Material de apoio não se torna obrigatório apenas por conter objetivos.
+
+Detalhes das90 entradas: [factual-coverage-current.json](factual-coverage-current.json). Provas V2: [reconciliation-v2-current-verification.json](reconciliation-v2-current-verification.json).

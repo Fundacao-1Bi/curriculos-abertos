@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-10-28T22:10:43.524541+00:00",
+  "actor_type": "automated",
+  "candidate_sha256": "505ef93e5f24f36d0d03c537f5dcfea5823be56df4c5d3bbe83432cdc69a3050",
+  "source_id": "rn-referencial-em",
+  "source_artifact_sha256": "5f894abaa0309169597c7c9b7841aebaa9faaeb45e4cb759e5058b359e2ed845",
+  "Source_record_sha256_unchanged": "3f26c919d7bcf1d0ef4abb40658de8b3e899da4b02bcd6d0d84d31657d4e980d",
+  "production_cache_sha256_unchanged": "e7be003c936281bdb6b1230c88eff030073811b56971f329bdb81eff9aa30763",
+  "runtime_fingerprint": "541aa3377fd409f9c172e1580ae988f5869b25e5331c98528ab68fb9a09360db",
+  "imported_records": 3681,
+  "finalized_records": 3681,
+  "literal_import_failures": [],
+  "schema_errors": [],
+  "orphans": [],
+  "cycles": [],
+  "repeated_contextual_occurrences_checked": 695,
+  "repeated_occurrence_failures": [],
+  "negative_controls": [
+    {
+      "case": "drop_real_EM13CNT102_continuation_and_shorten_body_excerpt_together",
+      "literal_checker_alone_accepts": true,
+      "blocked_by_independent_complete_primary_body": true
+    },
+    {
+      "case": "forged_identifier",
+      "blocked": true
+    },
+    {
+      "case": "wrong_Source_hash",
+      "blocked": true
+    },
+    {
+      "case": "wrong_primary_bbox",
+      "blocked": true
+    },
+    {
+      "case": "omit_one_of667_primary_slots",
+      "blocked": true
+    },
+    {
+      "case": "invented_grade_not_declared_by_source",
+      "blocked": true
+    }
+  ],
+  "elapsed_seconds": 155.735,
+  "scope": "Private FGB clone only; real importer/finalizer/hierarchy/schema/evidence. Does not alter or suppress current Source IFA adapter, does not compose a whole570page Source, and does not validate figure/color semantics or logical context continuity.",
+  "Source_core_cache_candidate_DB_publication_modified": false
+}

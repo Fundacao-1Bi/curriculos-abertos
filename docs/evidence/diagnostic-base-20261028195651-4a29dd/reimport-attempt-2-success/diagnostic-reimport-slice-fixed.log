@@ -1,0 +1,266 @@
+{
+  "actor_type": "automated",
+  "producer": "scripts/qa-reimport.ts",
+  "started_at": "2026-10-28T21:22:10.710Z",
+  "source_tree_sha256": "ba309e4c7acb53d2e17ac37db9eef46341748b654f451481ac2b092a5a6dcc98",
+  "checks": [
+    {
+      "name": "orçamento J09 medido antes de criar downloads, exportações ou banco",
+      "passed": true,
+      "detail": {
+        "footprint": {
+          "publication": "ca-7d302a9c674a97b83278",
+          "compressed_bytes": 127292150,
+          "decoded_bytes": 1402879768,
+          "metadata_bytes": 13751874,
+          "items": 200724,
+          "largest_uf": "ES",
+          "largest_uf_primary_bytes": 222040039,
+          "largest_uf_items": 19791,
+          "national_json_upper_bytes": 2845067184
+        },
+        "database": {
+          "database_bytes": 1956943539,
+          "item_payload_bytes": 1314328843,
+          "relation_payload_bytes": 122541153,
+          "source_payload_bytes": 6566845,
+          "metadata_bytes": 14289943,
+          "coverage_bytes": 3998689,
+          "id_bytes": 10755324,
+          "items": 200724,
+          "largest_uf": "ES",
+          "largest_uf_primary_bytes": 230024712,
+          "largest_uf_items": 19791,
+          "national_json_upper_bytes": 1562267033
+        },
+        "budget": {
+          "stage": "reimport",
+          "components": [
+            {
+              "name": "server exports national + largest-UF closure",
+              "bytes": 3124534066,
+              "basis": "measured SQL payload upper bound; UF support bounded by entire national graph"
+            },
+            {
+              "name": "client HTTP downloads national + largest-UF closure",
+              "bytes": 3124534066,
+              "basis": "second complete copy, both checked before cleanup"
+            },
+            {
+              "name": "stream-converted shards and manifests",
+              "bytes": 3219146678,
+              "basis": "allow gzip output as large as decoded JSON plus two metadata headers and bounded chunk workspace"
+            },
+            {
+              "name": "disposable reimport database: national + UF",
+              "bytes": 3913887078,
+              "basis": "twice measured clean database, including its indexes"
+            },
+            {
+              "name": "WAL and sort workspace",
+              "bytes": 2446179424,
+              "basis": "one database of WAL and 25% index workspace"
+            }
+          ],
+          "subtotal_bytes": 15828281312,
+          "reserve_bytes": 3165656263,
+          "required_free_bytes": 18993937575,
+          "notes": [
+            "Largest primary UF ES: 19791 items/230024712 SQL bytes.",
+            "Delivered artifact: 1402879768 decoded/127292150 compressed bytes.",
+            "The national and UF copies coexist until complete byte/record verification. Cleanup occurs only after evidence, not as an assumption that reduces peak.",
+            "No fixed 3-GiB allowance; measured PostgreSQL and full payload sizes drive this budget."
+          ]
+        },
+        "available": {
+          "host_free_bytes": 39764561920,
+          "docker_free_bytes": 388731322368,
+          "required_free_bytes": 18993937575
+        }
+      }
+    },
+    {
+      "name": "real_http_download_national",
+      "passed": true,
+      "detail": {
+        "job_id": "8a3c8fd4-cf53-4324-aae2-f78767920c67",
+        "publication": "ca-7d302a9c674a97b83278",
+        "sha256": "1f9afaebe64ed6a72600c37ba10abdf47ce82624c5bc8c39f0ed60617f0f0b1a",
+        "bytes": 1451121538,
+        "items": 200724,
+        "relations": 57425
+      }
+    },
+    {
+      "name": "real_http_download_slice",
+      "passed": true,
+      "detail": {
+        "job_id": "4f7719f8-a13b-43ba-bb74-84a09e672f38",
+        "publication": "ca-7d302a9c674a97b83278-slice-a916319deb5cd303",
+        "sha256": "b116a9abcf41701f88d3c89612079cff5c92120ddcb8bd4999fca34caab3b5c7",
+        "bytes": 245144027,
+        "items": 21074,
+        "relations": 1765
+      }
+    },
+    {
+      "name": "complete_records_metadata_relations_and_idempotence_verified_in_owned_disposable_database",
+      "passed": true
+    },
+    {
+      "name": "running_clean_installation_unchanged",
+      "passed": true
+    },
+    {
+      "name": "only_owned_disposable_database_removed",
+      "passed": true
+    },
+    {
+      "name": "somente temporários e exports próprios removidos após prova integral e rechecagem SHA",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "capacity": {
+    "footprint": {
+      "publication": "ca-7d302a9c674a97b83278",
+      "compressed_bytes": 127292150,
+      "decoded_bytes": 1402879768,
+      "metadata_bytes": 13751874,
+      "items": 200724,
+      "largest_uf": "ES",
+      "largest_uf_primary_bytes": 222040039,
+      "largest_uf_items": 19791,
+      "national_json_upper_bytes": 2845067184
+    },
+    "database": {
+      "database_bytes": 1956943539,
+      "item_payload_bytes": 1314328843,
+      "relation_payload_bytes": 122541153,
+      "source_payload_bytes": 6566845,
+      "metadata_bytes": 14289943,
+      "coverage_bytes": 3998689,
+      "id_bytes": 10755324,
+      "items": 200724,
+      "largest_uf": "ES",
+      "largest_uf_primary_bytes": 230024712,
+      "largest_uf_items": 19791,
+      "national_json_upper_bytes": 1562267033
+    },
+    "budget": {
+      "stage": "reimport",
+      "components": [
+        {
+          "name": "server exports national + largest-UF closure",
+          "bytes": 3124534066,
+          "basis": "measured SQL payload upper bound; UF support bounded by entire national graph"
+        },
+        {
+          "name": "client HTTP downloads national + largest-UF closure",
+          "bytes": 3124534066,
+          "basis": "second complete copy, both checked before cleanup"
+        },
+        {
+          "name": "stream-converted shards and manifests",
+          "bytes": 3219146678,
+          "basis": "allow gzip output as large as decoded JSON plus two metadata headers and bounded chunk workspace"
+        },
+        {
+          "name": "disposable reimport database: national + UF",
+          "bytes": 3913887078,
+          "basis": "twice measured clean database, including its indexes"
+        },
+        {
+          "name": "WAL and sort workspace",
+          "bytes": 2446179424,
+          "basis": "one database of WAL and 25% index workspace"
+        }
+      ],
+      "subtotal_bytes": 15828281312,
+      "reserve_bytes": 3165656263,
+      "required_free_bytes": 18993937575,
+      "notes": [
+        "Largest primary UF ES: 19791 items/230024712 SQL bytes.",
+        "Delivered artifact: 1402879768 decoded/127292150 compressed bytes.",
+        "The national and UF copies coexist until complete byte/record verification. Cleanup occurs only after evidence, not as an assumption that reduces peak.",
+        "No fixed 3-GiB allowance; measured PostgreSQL and full payload sizes drive this budget."
+      ]
+    },
+    "available": {
+      "host_free_bytes": 39764561920,
+      "docker_free_bytes": 388731322368,
+      "required_free_bytes": 18993937575
+    }
+  },
+  "publication": "ca-7d302a9c674a97b83278",
+  "project": "curriculos-abertos-clean-20261028205403-f517a7",
+  "base": "http://localhost:3002",
+  "workdir": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd/var/qa-reimport/723ad1fd241d",
+  "national": {
+    "publication": "ca-7d302a9c674a97b83278",
+    "items": 200724,
+    "relations": 57425,
+    "sources": 303,
+    "download_sha256": "1f9afaebe64ed6a72600c37ba10abdf47ce82624c5bc8c39f0ed60617f0f0b1a",
+    "download_bytes": 1451121538,
+    "parts_verified": 74,
+    "metadata_verified": true,
+    "records_verified": true,
+    "reimported": true,
+    "idempotent": true,
+    "passed": true
+  },
+  "slice": {
+    "publication": "ca-7d302a9c674a97b83278-slice-a916319deb5cd303",
+    "items": 21074,
+    "relations": 1765,
+    "sources": 34,
+    "download_sha256": "b116a9abcf41701f88d3c89612079cff5c92120ddcb8bd4999fca34caab3b5c7",
+    "download_bytes": 245144027,
+    "parts_verified": 12,
+    "metadata_verified": true,
+    "records_verified": true,
+    "reimported": true,
+    "idempotent": true,
+    "passed": true
+  },
+  "delivered": {
+    "manifest_sha256": "be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d",
+    "parts_verified": 75
+  },
+  "database": "curriculum_reimport_434af15bf37a",
+  "slice_uf": "ES",
+  "method": "Real HTTP national+UF downloads; streaming parser+shards; all canonical records and curricular/version metadata compared to SQL and delivered artifact; isolated disposable database; no default promotion",
+  "cleanup": {
+    "cleaned": [
+      {
+        "id": "8a3c8fd4-cf53-4324-aae2-f78767920c67",
+        "publication": "ca-7d302a9c674a97b83278",
+        "storage_key": "exports/8a3c8fd4-cf53-4324-aae2-f78767920c67/1-7cb4f6d0-cde5-4bea-9301-a641aa572392.json",
+        "bytes": 1451121538,
+        "sha256": "1f9afaebe64ed6a72600c37ba10abdf47ce82624c5bc8c39f0ed60617f0f0b1a",
+        "verified_at": "2026-10-28T21:33:26.979Z",
+        "phase": "owned_file_removed",
+        "receipt_path": "/app/var/qa-cleanup-receipts/8a3c8fd4-cf53-4324-aae2-f78767920c67.json",
+        "removed_at": "2026-10-28T21:33:27.349Z"
+      },
+      {
+        "id": "4f7719f8-a13b-43ba-bb74-84a09e672f38",
+        "publication": "ca-7d302a9c674a97b83278",
+        "storage_key": "exports/4f7719f8-a13b-43ba-bb74-84a09e672f38/1-7cb4f6d0-cde5-4bea-9301-a641aa572392.json",
+        "bytes": 245144027,
+        "sha256": "b116a9abcf41701f88d3c89612079cff5c92120ddcb8bd4999fca34caab3b5c7",
+        "verified_at": "2026-10-28T21:33:27.726Z",
+        "phase": "owned_file_removed",
+        "receipt_path": "/app/var/qa-cleanup-receipts/4f7719f8-a13b-43ba-bb74-84a09e672f38.json",
+        "removed_at": "2026-10-28T21:33:28.233Z"
+      }
+    ],
+    "foreign_or_preexisting_jobs_removed": false,
+    "workdir_removed": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd/var/qa-reimport/723ad1fd241d",
+    "client_files_sha256_rechecked": true,
+    "cleanup_intent": "docs/evidence/reimport-cleanup-intent.json",
+    "canonical_artifacts_and_volumes_preserved": true
+  },
+  "completed_at": "2026-10-28T21:33:28.958Z"
+}

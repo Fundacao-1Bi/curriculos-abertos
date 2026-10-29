@@ -1,0 +1,6 @@
+
+> curriculos-abertos@0.1.0 typecheck
+> tsc --noEmit
+
+tests/domain.integration.test.ts(84,618): error TS2339: Property 'source_count' does not exist on type '{ compressed: boolean; import_method: string; transcoded_manifest_sha256: string; file_sha256: string; bytes: number; decoded_sha256: string; decoded_bytes: number; storage_format: any; ... 5 more ...; already_imported: boolean; } | { ...; } | { ...; }'.
+  Property 'source_count' does not exist on type '{ file_sha256: string; decoded_sha256: string; bytes: number; decoded_bytes: number; compressed: boolean; import_method: string; id: string; sha256: string; already_imported: boolean; item_count: number; }'.

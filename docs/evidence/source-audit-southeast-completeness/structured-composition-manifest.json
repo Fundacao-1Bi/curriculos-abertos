@@ -1,0 +1,119 @@
+{
+  "outputs": [
+    {
+      "source_id": "sp-curriculo-eief-isbn",
+      "output_path": "data/manifests/uncoded/sp-eief-structured-items.json",
+      "output_sha256": "1f40faf53de864fbda0078053a9e8cc1446f045c392906b017f9e3d31fb59e34",
+      "output_bytes": 422811,
+      "items": 115,
+      "input_sidecars": [
+        {
+          "path": "data/manifests/uncoded/sp-eief-competencies-items.json",
+          "sha256": "eda2a3681d59c3036d889eb8ffb4d0757ae0c8db352c173049f816261e9bc884",
+          "item_count": 108,
+          "original_wrapper_metadata": {
+            "source_id": "sp-curriculo-eief-isbn",
+            "artifact_sha256": "f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500",
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:southeast-completeness",
+            "method": "sp-original-numbered-competency-lists-v1",
+            "generated_at": "2026-10-28T17:47:07.002303+00:00"
+          }
+        },
+        {
+          "path": "data/manifests/uncoded/sp-eief-rights-items.json",
+          "sha256": "33d9103e7631e8ad61659551efc8a3972de487e52b06c9d2c7cdfed7cc848a3e",
+          "item_count": 7,
+          "original_wrapper_metadata": {
+            "source_id": "sp-curriculo-eief-isbn",
+            "artifact_sha256": "f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500",
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:southeast-completeness",
+            "generated_at": "2026-10-28T18:01:19.573109+00:00",
+            "method": "sp-mg-original-general-EI-rights-v1"
+          }
+        }
+      ],
+      "input_records_unchanged": true,
+      "source_manifest_modified": false,
+      "adapter_authority_proposed": false
+    },
+    {
+      "source_id": "mg-crmg-eief-atualizada",
+      "output_path": "data/manifests/uncoded/mg-eief-structured-items.json",
+      "output_sha256": "9615a86a6cb029bf46f12eac429ed0088f81e2772b6b80c423269d6374c3d4c4",
+      "output_bytes": 416785,
+      "items": 113,
+      "input_sidecars": [
+        {
+          "path": "data/manifests/uncoded/mg-eief-competencies-items.json",
+          "sha256": "b1dc2aceb6f021f34124a7a43ab700bd2a19bce2965bf96bc4629178a717aeec",
+          "item_count": 106,
+          "original_wrapper_metadata": {
+            "source_id": "mg-crmg-eief-atualizada",
+            "artifact_sha256": "792857369c0c80dd87fff092137053e7a5cbed1c61fcbbd6caa6efbc072154ea",
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:southeast-completeness",
+            "generated_at": "2026-10-28T17:57:44.698614+00:00",
+            "method": "mg-original-numbered-competency-lists-v1"
+          }
+        },
+        {
+          "path": "data/manifests/uncoded/mg-eief-rights-items.json",
+          "sha256": "8eaf48f81b25a0404520c6a11e24d8bef102df8d274fc31e8fdf628293994564",
+          "item_count": 7,
+          "original_wrapper_metadata": {
+            "source_id": "mg-crmg-eief-atualizada",
+            "artifact_sha256": "792857369c0c80dd87fff092137053e7a5cbed1c61fcbbd6caa6efbc072154ea",
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:southeast-completeness",
+            "generated_at": "2026-10-28T18:01:19.673391+00:00",
+            "method": "sp-mg-original-general-EI-rights-v1"
+          }
+        }
+      ],
+      "input_records_unchanged": true,
+      "source_manifest_modified": false,
+      "adapter_authority_proposed": false
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "output_path": "data/manifests/uncoded/rj-eief-structured-items.json",
+      "output_sha256": "dbbf047c569cbadee6afcd69cf16d504275942d9894c4acb0fbca041086d9eeb",
+      "output_bytes": 353279,
+      "items": 136,
+      "input_sidecars": [
+        {
+          "path": "data/manifests/uncoded/rj-ei-rights.json",
+          "sha256": "7286b5d5415afb3e89cad75406a77320213695931d3946da59ea0eca65b47c8e",
+          "item_count": 30,
+          "original_wrapper_metadata": {
+            "source_id": "rj-doc-eief-2019",
+            "artifact_sha256": "b915967926c621164aba46d5cbdbd74406a658410695199ef6ae3926de138bf6",
+            "actor_type": "automated",
+            "actor_id": "data_bncc_southeast",
+            "method": "rj-ei-explicit-right-anchors-v1: seis direitos nomeados por cinco campos; cabeçalhos e limites de páginas conferidos no documento. Literalidade e localização de cada texto verificadas. Sem atribuir códigos BNCC nem revisão humana.",
+            "generated_at": "2026-10-28T03:48:57.037078+00:00",
+            "scope": "Somente os 30 direitos explicitamente nomeados. Demais orientações, contexto e estrutura da EI permanecem no escopo do referencial e precisam reconciliação própria."
+          }
+        },
+        {
+          "path": "data/manifests/uncoded/rj-eief-competencies-items.json",
+          "sha256": "6d84c7503a64687bff12f188c780c786b2d2aa07d2b06fc5c89eb4491d6643b2",
+          "item_count": 106,
+          "original_wrapper_metadata": {
+            "source_id": "rj-doc-eief-2019",
+            "artifact_sha256": "b915967926c621164aba46d5cbdbd74406a658410695199ef6ae3926de138bf6",
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:southeast-completeness",
+            "generated_at": "2026-10-28T18:05:35.329287+00:00",
+            "method": "rj-original-numbered-competency-lists-v1"
+          }
+        }
+      ],
+      "input_records_unchanged": true,
+      "source_manifest_modified": false,
+      "adapter_authority_proposed": false
+    }
+  ]
+}

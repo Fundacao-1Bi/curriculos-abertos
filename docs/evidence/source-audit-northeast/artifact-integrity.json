@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-28T17:41:09.134217+00:00",
+  "at": "2026-10-28T18:38:27.307760+00:00",
   "actor_type": "automated",
   "actor_id": "codex:data_northeast",
   "manifest": "data/manifests/northeast.json",
@@ -24,13 +24,20 @@
     "research_pending": 3
   },
   "fully_reconciled_sources": [
-    "ma-portaria-181-2026-recomposicao-doe"
+    "pe-historia-pernambuco-2026",
+    "ma-portaria-181-2026-recomposicao-doe",
+    "ba-resolucao-125-2024-historia",
+    "ba-resolucao-266-2025-computacao"
   ],
   "own_source_v2_reconciled": [
     "ba-resolucao-249-2026",
+    "pe-historia-pernambuco-2026",
     "rn-portaria-11123-2025",
     "ma-resolucao-211-2026-doe",
-    "ma-portaria-181-2026-recomposicao-doe"
+    "ma-portaria-181-2026-recomposicao-doe",
+    "pi-resolucao-188-2025",
+    "ba-resolucao-125-2024-historia",
+    "ba-resolucao-266-2025-computacao"
   ],
   "legacy_source_status_labels_not_gate_proof": [
     "ba-resolucao-249-2026",
@@ -41,8 +48,8 @@
   ],
   "reconciliation_evidence": {
     "path": "docs/evidence/source-audit-northeast/reconciliation-v2-current-verification.json",
-    "sha256": "9b5134a6dd430a92bedb2f4f3dc9048d13523519ca33f89050af4519675938ed",
-    "executed_at": "2026-10-28T17:37:40.187414+00:00"
+    "sha256": "8b53e613c619f28b111fd9cd1a4a79a36603cb950ee9b78f90a3553789cd7c5a",
+    "executed_at": "2026-10-28T18:33:39.666705+00:00"
   },
   "fully_reconciled_ufs": 0,
   "scope": "Artifact integrity and separately pinned executed documentary-gate snapshot. Legacy Source flags are not reconciliation proof. Own-source and required-document closure remain distinct; source/physical page counts do not represent learnings or national completeness.",

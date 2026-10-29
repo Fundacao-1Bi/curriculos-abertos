@@ -1,0 +1,229 @@
+{
+  "source_id": "mg-crmg-eief-atualizada",
+  "status": "ready_for_root_binding_review",
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:body-runtime-verifier",
+  "manifest_path": "data/manifests/bncc-southeast.json",
+  "expected_manifest_sha256_before_any_binding": "4ac8f7ff71edb63e756e1566fdf26859c83ef7fb11cd9706f1219987fe6dbb34",
+  "source_sha256": "792857369c0c80dd87fff092137053e7a5cbed1c61fcbbd6caa6efbc072154ea",
+  "expected_current_source_fields": {
+    "uncoded_items_path": "data/manifests/uncoded/mg-eief-structured-items.json",
+    "uncoded_items_sha256": "9615a86a6cb029bf46f12eac429ed0088f81e2772b6b80c423269d6374c3d4c4",
+    "adapter_authority": null
+  },
+  "proposed_source_fields": {
+    "uncoded_items_path": "data/manifests/uncoded/mg-coded-body-composed-mg-crmg-eief-atualizada-v1-items.json",
+    "adapter_authority": {
+      "coded_learning_ranges": [
+        [
+          49,
+          49
+        ],
+        [
+          68,
+          73
+        ],
+        [
+          75,
+          75
+        ],
+        [
+          77,
+          88
+        ],
+        [
+          90,
+          90
+        ],
+        [
+          92,
+          94
+        ],
+        [
+          96,
+          103
+        ],
+        [
+          105,
+          107
+        ],
+        [
+          109,
+          134
+        ],
+        [
+          136,
+          142
+        ],
+        [
+          196,
+          306
+        ],
+        [
+          320,
+          339
+        ],
+        [
+          359,
+          367
+        ],
+        [
+          370,
+          370
+        ],
+        [
+          373,
+          374
+        ],
+        [
+          378,
+          379
+        ],
+        [
+          383,
+          384
+        ],
+        [
+          403,
+          410
+        ],
+        [
+          489,
+          489
+        ],
+        [
+          497,
+          497
+        ],
+        [
+          536,
+          547
+        ],
+        [
+          560,
+          561
+        ],
+        [
+          563,
+          567
+        ],
+        [
+          569,
+          569
+        ],
+        [
+          571,
+          572
+        ],
+        [
+          575,
+          579
+        ],
+        [
+          595,
+          603
+        ]
+      ]
+    },
+    "technical_supersessions": [
+      {
+        "format": "record_replacement_pairs_v1",
+        "path": "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-technical-supersessions.json",
+        "sha256": "bae4c560cc62d35c861d42533c0003f84ccde50705155d6884ed4e485ae1d559",
+        "scope": "technical_extraction_correction"
+      }
+    ]
+  },
+  "proposed_adapter_sha256": "1ed931e9183b540f7baed54f9093a2082fa2aba5db5f7f781b6190b88b2be8ba",
+  "verification_report": "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-runtime-verification.json",
+  "verification_report_sha256": "c01b55905fecafbcf75e12237009b3cdd281cc2ea4f47e71d3e345a453316cbf",
+  "verified_counts": {
+    "cache_items": 3067,
+    "baseline_items": 3180,
+    "body_repairs": 1826,
+    "composed_adapter_records": 2207,
+    "real_loader_records": 2207,
+    "real_finalizer_records": 3461,
+    "schema_passed": 3461,
+    "literal_adapter_evidence_passed": 2207,
+    "complete_character_receipts": 1826,
+    "valid_coded_id_context_preserved": 1810,
+    "valid_coded_full_context_exact": 1711,
+    "unaffected_records_preserved": 1367,
+    "unaffected_records_exact_including_review_time": 1254,
+    "automated_revalidation_event_timestamps": 113,
+    "explicit_invalid_supersessions": 3,
+    "new_canonical_records": 284,
+    "documentary_EI_age_context_enrichments": 99
+  },
+  "composition_inputs": [
+    {
+      "path": "data/manifests/uncoded/mg-eief-structured-items.json",
+      "sha256": "9615a86a6cb029bf46f12eac429ed0088f81e2772b6b80c423269d6374c3d4c4",
+      "record_count": 113
+    },
+    {
+      "path": "data/manifests/uncoded/mg-ei-organizers-v1-items.json",
+      "sha256": "c956fbcf53322b2b40d274758d05b1bc09e44a6bdcaa28d64ffd2fb744f7d395",
+      "record_count": 268
+    },
+    {
+      "path": "data/manifests/uncoded/mg-coded-body-mg-crmg-eief-atualizada-v1-items.json",
+      "sha256": "1f86d97c4638073b4b61b5b587d85d243050c3bb1131f8f22df370b94cb48347",
+      "record_count": 1826
+    }
+  ],
+  "supersession_ledger": [
+    {
+      "old_id": "ca:mg-crmg-eief-atualizada:55aeb8be0c9aca5ce461",
+      "old_code": "EI01TS04",
+      "old_text": "MG)",
+      "new_code": "EI01TS04 MG",
+      "locator": "table:0/row:22/cell:1",
+      "reason": "Source identifier printed with literal MG suffix in its own row; generic extraction consumed suffix as body. No official curriculum change.",
+      "new_id": "ca:mg-crmg-eief-atualizada:ca453e79fe374da2dd40",
+      "new_page": 49
+    },
+    {
+      "old_id": "ca:mg-crmg-eief-atualizada:916f09b1964be9d344a4",
+      "old_code": "EI02TS04",
+      "old_text": "MG)",
+      "new_code": "EI02TS04 MG",
+      "locator": "table:0/row:22/cell:4",
+      "reason": "Source identifier printed with literal MG suffix in its own row; generic extraction consumed suffix as body. No official curriculum change.",
+      "new_id": "ca:mg-crmg-eief-atualizada:6f91ab7834900cc02711",
+      "new_page": 49
+    },
+    {
+      "old_id": "ca:mg-crmg-eief-atualizada:75778bd7ce5571e36cb4",
+      "old_code": "EI03TS04",
+      "old_text": "MG)",
+      "new_code": "EI03TS04 MG",
+      "locator": "table:0/row:22/cell:7",
+      "reason": "Source identifier printed with literal MG suffix in its own row; generic extraction consumed suffix as body. No official curriculum change.",
+      "new_id": "ca:mg-crmg-eief-atualizada:76d1cc69f566ea387ba3",
+      "new_page": 49
+    }
+  ],
+  "authorized_context_scope": "Exactly 99 Source-native EI Objectives anchors in mapped physical Objectives columns on pages68–142. Only age fields from exact same-page captions and parent=None to proved age_key may change; every other position field and existing valid parent remains exact. Age interval counts31(0–18),34(19–47),34(48–71).",
+  "binding_constraints": [
+    "Change only uncoded_items_path, merge the explicit coded_learning_ranges and append the pinned technical_supersessions entries; preserve every other existing Source field and official PDF bytes.",
+    "The coded ranges suppress only generic coded records, all re-emitted with protected identities/contexts or explicit invalid-identifier supersessions. Generic uncoded normative/page sections remain enabled.",
+    "Preserve both immutable Portal inputs:113 existing structured nodes plus268 explicit EI organizer/context records.",
+    "Composed path and bytes are final: do not regenerate or overwrite the adapter while applying the binding.",
+    "An individual manifest file can contain several Sources: apply all approved sibling Source changes against one reviewed manifest diff rather than using an obsolete whole-file hash after the first binding.",
+    "Technical replacement ledger preserves all previous publication snapshots; never rewrite an earlier publication or interpret an ER literal as an EF alias."
+  ],
+  "whole_source_reconciled": false,
+  "uf_ready": false,
+  "human_review": false,
+  "manifest_modified": false,
+  "technical_supersession_append_entries": [
+    {
+      "format": "record_replacement_pairs_v1",
+      "path": "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-technical-supersessions.json",
+      "sha256": "bae4c560cc62d35c861d42533c0003f84ccde50705155d6884ed4e485ae1d559",
+      "scope": "technical_extraction_correction"
+    }
+  ]
+}

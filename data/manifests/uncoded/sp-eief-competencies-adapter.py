@@ -30,10 +30,12 @@ for group,pages,count,area,component in CONFIG:
  assert [a['number']for a in observed]==list(range(1,count+1)),(group,observed)
  trace_denominator.append({'group':group,'pages':pages,'expected_from_original_trace':len(observed),'anchors':observed})
 (OUT/'sp-eief-competencies-source-denominator.json').write_text(json.dumps({'source_id':SID,'source_sha256':SHA,'groups':trace_denominator,'total':sum(g['expected_from_original_trace']for g in trace_denominator),'method':'Independent get_texttrace physical baseline number census before output construction.'},ensure_ascii=False,indent=2)+'\n')
-items=[];checks=[];normalizations={};readers={}
+items=[];checks=[];normalizations={};readers={};printed_pages={}
+for pn in {n for _,pages,*_ in CONFIG for n in pages}:
+ candidates=[(''.join(s['text']for s in l['spans']).strip(),l['bbox'])for b in D[pn-1].get_text('dict')['blocks']for l in b.get('lines',[])];folios=[t for t,b in candidates if t.isdigit()and(b[1]>790 or b[3]<40)];printed_pages[pn]=folios[0]if len(folios)==1 else None
 def canon(t):return re.sub(r'\s','',unicodedata.normalize('NFC',t))
 def pos(group,area,component):return[{'stage':None if group=='general'else'EF','component':component,'area':area,'years':None,'year_label':None,'age_group':None,'period':None,'position_origin':'explicit_original_competency_list_heading','position_note':'The general list is stated across the curriculum; no exclusive EI or EF position is inferred. No year is assigned by list order.'}]
-def ev(row):return{'source_id':SID,'page':row['page'],'printed_page':str(row['page']-1),'section':row.get('section','Numbered competency list'),'excerpt':clean_text(row['text']),'locator':f'native-line:{row["ordinal"]}','bbox':row['bbox'],'coordinate_space':'display_pdf_after_normalization','page_normalization':normalizations[row['page']],'method':'pymupdf-native-glyph-cluster-v1'}
+def ev(row):return{'source_id':SID,'page':row['page'],'printed_page':printed_pages[row['page']],'section':row.get('section','Numbered competency list'),'excerpt':clean_text(row['text']),'locator':f'native-line:{row["ordinal"]}','bbox':row['bbox'],'coordinate_space':'display_pdf_after_normalization','page_normalization':normalizations[row['page']],'method':'pymupdf-native-glyph-cluster-v1'}
 def add(key,kind,text,rows,parent,positions,context):
  node={'source_id':SID,'artifact_sha256':SHA,'key':key,'parent_key':parent,'code':None,'kind':kind,'text':clean_text(text),'page':rows[0]['page'],'locator':f'sp-eief-competencies/{key}','positions':positions,'evidence':[ev(r)for r in rows],'source_context':context,'actor_type':'automated','actor_id':'curriculos-abertos:southeast-completeness','extraction_method':'sp-original-numbered-competency-lists-v1'};items.append(node);return node
 for group,pages,count,area,component in CONFIG:

@@ -62,7 +62,14 @@ def write_parts(root,publication,kind,records):
     return parts
 
 
+def scoped_receipt_relations(relations,items,target_ids):
+    """A delta receipt carries only relations touching a target; BR-only links stay in the pinned base."""
+    source_of={item['id']:item['source_id'] for item in items}
+    return [r for r in relations if any(source_of.get(m['item_id']) in target_ids for m in r['members'])]
+
+
 def write_publication(root,metadata,items,relations,advertise=True):
+    if metadata.get('publication_kind')=='source_update_receipt':relations=scoped_receipt_relations(relations,items,set(metadata['target_source_ids']))
     identity_metadata={key:value for key,value in metadata.items() if key not in ('id','created_at')}
     publication,identity_payload=identity(identity_metadata,items,relations)
     path=root/'data/bundles'/f'{publication}.manifest.json'

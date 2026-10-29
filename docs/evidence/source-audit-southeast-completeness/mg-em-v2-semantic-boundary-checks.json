@@ -1,0 +1,53 @@
+{
+  "sidecar_path": "data/manifests/uncoded/mg-em-structured-v2-items.json",
+  "sidecar_sha256": "e28b252203c761cacb038d3bd54c9ab320173b77abe81ba2b0345318072257b0",
+  "checks": [
+    {
+      "case": "Original24Q37 records preserved exactly",
+      "passed": true
+    },
+    {
+      "case": "Local lists21 records and competency lists50 records composed without rewriting",
+      "passed": true
+    },
+    {
+      "case": "Only23explicitQ37 codes exist; no code manufactured for the71new nodes",
+      "passed": true
+    },
+    {
+      "case": "Filosofia9source student capabilities retain their role",
+      "passed": true
+    },
+    {
+      "case": "Geografia10source teaching purposes are not promoted to atomic student outcomes",
+      "passed": true
+    },
+    {
+      "case": "All new positions have explicitEM but no invented year/period",
+      "passed": true
+    },
+    {
+      "case": "Area competencies have no inferred component",
+      "passed": true
+    },
+    {
+      "case": "Synopsis21andFGB21 remain separately source-attributed",
+      "passed": true
+    },
+    {
+      "case": "Same numericlabel does not silently merge different source wordings",
+      "passed": true
+    },
+    {
+      "case": "FGBNatureza quoted competencies exclude adjacent teaching commentary",
+      "passed": true
+    },
+    {
+      "case": "All hierarchy parents resolve inside the95nodes",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "source_ready": false,
+  "passed": true
+}

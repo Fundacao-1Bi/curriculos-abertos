@@ -1,0 +1,54 @@
+{
+  "at": "2026-10-28T18:39:22.157060+00:00",
+  "classification": "focused_policy_diagnostic_not_full_release_verification",
+  "policy_version": "documentary-item-roles-2026-10-28-v6",
+  "learning_kind_count": 22,
+  "strict_unknown_gate": "unchanged",
+  "commands": [
+    {
+      "command": "node --import tsx --test tests/domain.item-kinds.test.ts tests/domain.age.test.ts",
+      "exit_code": 0,
+      "tests": 9,
+      "pass": 9,
+      "fail": 0,
+      "skipped": 0,
+      "log": "docs/evidence/item-kind-v6-pure-tests.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "exit_code": 0
+    },
+    {
+      "command": "npx eslint src/domain/item-kinds.ts tests/domain.item-kinds.test.ts",
+      "exit_code": 0
+    }
+  ],
+  "inventory": {
+    "kinds": 159,
+    "unclassified": [],
+    "counters": {
+      "files": 133,
+      "source_manifest_bound_files": 61,
+      "unbound_or_research_files": 72,
+      "all_sidecar_record_occurrences": 84334,
+      "source_manifest_bound_record_occurrences": 51419,
+      "record_bearing_files": 130,
+      "files_without_item_records": 3,
+      "unbound_record_bearing_files": 69,
+      "kind_bearing_record_occurrences": 84334
+    }
+  },
+  "files_sha256": {
+    "src/domain/item-kinds.ts": "7def59786a9d3564a3d93b8674d6f3a43fc9d3aa4a6925c6b2c5a487934f55a7",
+    "tests/domain.item-kinds.test.ts": "4ecc559b131a48539c1eb219f1ebfa0e18f546699004d050c45a8b72cc349897",
+    "docs/methodology.md": "3c76fe6d799efe639a3aaac3d61c990d29d2cbb446bb0ad275af5276ef3881a7",
+    "docs/evidence/item-kind-decisions-v6.json": "be96cd4c02d14deabd929629e52579c628f7e7e13106d0c3658a04a5353a0a46",
+    "docs/evidence/item-kind-inventory.json": "c598585dd7b4e0a66bffe4192408fb2a27334d7073a603801b71da6404865090"
+  },
+  "coordination": "NE/portal confirmed four source roles; North/CentralSouth/NE/portal agreed to announce any new enum before emission and avoid coercing different roles into existing types. Current upcoming increments reuse reviewed kinds.",
+  "limitations": [
+    "No SQL/full suite, build, parser/core edits or DB mutation in this round.",
+    "Source files continue to evolve; this is not final immutable release evidence.",
+    "Previous91/91predates v4-v6 and cannot approve these policy revisions."
+  ]
+}

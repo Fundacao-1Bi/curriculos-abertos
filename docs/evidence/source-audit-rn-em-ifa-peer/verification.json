@@ -1,0 +1,299 @@
+{
+  "at": "2026-10-28T19:25:28.724114+00:00",
+  "actor_type": "automated",
+  "actor_id": "agent:domain:rn-ifa-independent-peer",
+  "human_review_claimed": false,
+  "result": "passed",
+  "source_id": "rn-referencial-em",
+  "artifact_path": "data/raw/RN/rn-referencial-oficial.pdf",
+  "artifact_sha256": "5f894abaa0309169597c7c9b7841aebaa9faaeb45e4cb759e5058b359e2ed845",
+  "sidecar_path": "data/manifests/uncoded/rn-em-ifa-items.json",
+  "sidecar_sha256": "c864aa82be21d66613a25b31e23fed253c14bd2ab87c61776447ccdb556255f5",
+  "sidecar_bytes": 618581,
+  "primary_census_sha256": "e506c0592bf1805938bb7109e68af31505f01080a48f02d58757e592f6fa6427",
+  "scope": [
+    545,
+    558
+  ],
+  "denominators": {
+    "source_pages": 570,
+    "audited_pages": 14,
+    "native_scope_lines": 1380,
+    "footer_markers_in_context": 14,
+    "source_groups": 5,
+    "knowledge_areas": 4,
+    "technical_professional_group": 1,
+    "axis_groups": 20,
+    "columns": 2,
+    "skill_occurrences": 120,
+    "unique_printed_codes": 72,
+    "section_nodes": 1,
+    "group_nodes": 5,
+    "axis_nodes": 20,
+    "total_nodes": 146,
+    "parent_links": 145,
+    "evidence_fragments": 275,
+    "cross_page_text_continuations": 9,
+    "code_only_then_body_cases": 2
+  },
+  "independent_primary_pairing": "Every120code occurrence compared to its own physically reconstructed column body and axis/group, preserving exact case/punctuation/diacritics except whitespace.",
+  "native_line_coverage": {
+    "represented": 1380,
+    "expected": 1380,
+    "missing": 0,
+    "method": "Exact primary native line+bbox matches across canonical fragments, code slots and contextual header occurrences; duplicate references are not new source records."
+  },
+  "continuations": [
+    {
+      "key": "matrix-1-skill-emiflgg02",
+      "code": "EMIFLGG02",
+      "body_pages": [
+        545,
+        546
+      ]
+    },
+    {
+      "key": "matrix-1-skill-emiflgg06",
+      "code": "EMIFLGG06",
+      "body_pages": [
+        546,
+        547
+      ]
+    },
+    {
+      "key": "matrix-1-skill-emifcg11",
+      "code": "EMIFCG11",
+      "body_pages": [
+        547,
+        548
+      ]
+    },
+    {
+      "key": "matrix-1-skill-emiflgg11",
+      "code": "EMIFLGG11",
+      "body_pages": [
+        547,
+        548
+      ]
+    },
+    {
+      "key": "matrix-2-skill-emifchsa08",
+      "code": "EMIFCHSA08",
+      "body_pages": [
+        549,
+        550
+      ]
+    },
+    {
+      "key": "matrix-3-skill-emifcg10",
+      "code": "EMIFCG10",
+      "body_pages": [
+        552,
+        553
+      ]
+    },
+    {
+      "key": "matrix-3-skill-emifmat10",
+      "code": "EMIFMAT10",
+      "body_pages": [
+        552,
+        553
+      ]
+    },
+    {
+      "key": "matrix-4-skill-emifcnt03",
+      "code": "EMIFCNT03",
+      "body_pages": [
+        553,
+        554
+      ]
+    },
+    {
+      "key": "matrix-4-skill-emifcnt08",
+      "code": "EMIFCNT08",
+      "body_pages": [
+        554,
+        555
+      ]
+    }
+  ],
+  "CG06_visual_crops": [
+    {
+      "page": 546,
+      "path": "primary-cg06-wide-546.png",
+      "bbox": [
+        83.0,
+        657.1500244140625,
+        314.0,
+        757.1500244140625
+      ]
+    },
+    {
+      "page": 549,
+      "path": "primary-cg06-wide-549.png",
+      "bbox": [
+        83.0,
+        365.0500183105469,
+        314.0,
+        465.0500183105469
+      ]
+    },
+    {
+      "page": 551,
+      "path": "primary-cg06-wide-551.png",
+      "bbox": [
+        83.0,
+        723.1699829101562,
+        314.0,
+        797.0
+      ]
+    },
+    {
+      "page": 554,
+      "path": "primary-cg06-wide-554.png",
+      "bbox": [
+        83.0,
+        446.82000732421875,
+        314.0,
+        546.8200073242188
+      ]
+    },
+    {
+      "page": 557,
+      "path": "primary-cg06-wide-557.png",
+      "bbox": [
+        83.0,
+        170.99998474121094,
+        314.0,
+        270.99998474121094
+      ]
+    }
+  ],
+  "CG06_policy": "Five literal printed difere endings retained; never completed from national text.",
+  "production": {
+    "revision": "page-cell-v1.5.0",
+    "cache_sha256": "40dd9e139c1757d18345a8568509baf4df74d60926ae0c4ad54822faac1919d8",
+    "cache_config_matches_actual_Source": true,
+    "generic_inputs": 715,
+    "adapter_inputs": 146,
+    "final_adapter_items": 146,
+    "all_final_items": 804,
+    "outside_scope_preserved": 656,
+    "boundary_uncoded_sections_preserved": 2,
+    "generic_coded_inside_authority": 0,
+    "schema": "1.1.0",
+    "schema_Source_and_Learning_passed": true,
+    "glyph_cluster_and_sortTrue_evidence_passed": 275,
+    "cloned_authority": {
+      "coded_learning_pages": [
+        545,
+        558
+      ],
+      "uncoded_page_sections_pages": [
+        546,
+        557
+      ]
+    },
+    "actual_Source_changed_by_peer": false
+  },
+  "negative_controls": [
+    {
+      "name": "wrong_MAT08_code",
+      "result": "rejected"
+    },
+    {
+      "name": "wrong_CG08_axis_parent",
+      "result": "rejected"
+    },
+    {
+      "name": "lost_CG10_continuation_553",
+      "result": "rejected"
+    },
+    {
+      "name": "code_only_550_not_joined_to_551_body",
+      "result": "rejected"
+    },
+    {
+      "name": "complete_CG06_from_national_text",
+      "result": "rejected"
+    },
+    {
+      "name": "production_checker_rejects_completed_CG06",
+      "result": "rejected"
+    }
+  ],
+  "runtime_sha256": {
+    "pipeline/am_ocr_grid.py": "7b7e7f69141f67674171ea0c899b62bf42a4edf8e616ae2ea338f5b2b6f08883",
+    "pipeline/rs_ms_geometry.py": "f85f208c88957570f85fc6802745fff53b358f58c3c2c46a99e5aec1bee16e4e",
+    "pipeline/ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+    "pipeline/rn_document_roles.py": "a805aefdf01c19908b23059b7f4e5bcabaa28be58f0e2efdcb5314c4eedf67c7",
+    "pipeline/ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
+    "pipeline/reconciliation.py": "afcbf3b22d94664caf43c08b617a5ebe6823d359c49326a3ae010d0dd4594f7f",
+    "pipeline/pe_document_roles.py": "b5074ce8cb27d67dd69838f1d4e9bac4bbb4c32074c9b46af2095c5520f55bd3",
+    "pipeline/release_check.py": "2b634dc6b76a27e01a600458443d9883e637d7f888a34c990a68c39dc8934bf7",
+    "pipeline/batch.py": "cb2efbc30275fba120baace63c27463b291f6bc509a3ca113dfcaccc633608b2",
+    "pipeline/ingestion_context.py": "faa3780952c77bd35c84461b73bce62125ccdad9afa66a58e84921ae1e141073",
+    "pipeline/ms_glyphs.py": "b763a98f2c3691d05bdfbdf506804982bfdb37ef807a5fe8a7b7b85a043d21f1",
+    "pipeline/es_geometry.py": "0c765d49f58355a8ff50e46c3e1aa8cf3d724ae50ba45609b2e918e9d7a9f80f",
+    "pipeline/runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce",
+    "pipeline/distribution.py": "88e0d758369eedb70418a7d65da33450b109038b128c4a52d34530bfa2e09f6e",
+    "pipeline/denominator.py": "7d36e4c39008fbeead54ca6a586dcd307702743987ddc90fbc0ab3602708b2eb",
+    "pipeline/ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
+    "pipeline/validate_artifact.py": "2a7f3e6b672d0b723ed1ca973776871da2fc0a07c7272a0c9c446d527c141e35",
+    "pipeline/pe_fgb_document_roles.py": "7f536ea2114968fe1211b7b3c7195aad52a05c6fc29edd806611c639486c2aca",
+    "pipeline/probe.py": "a69b76b66c00490321609a98e1924dc7458612d4dc035fd9ec8b86ca6edd25ea",
+    "pipeline/geometry.py": "f0f2f7230602a051712fd116bce3c9d62bcb3e316d07412f8ed7ff3cda37467d",
+    "pipeline/correspondence.py": "24730b98ec8bfcb423fac8aba9a5007fae92fada1fda160ff305880b9b954b46",
+    "pipeline/es_ei_rows.py": "37f73cc3140e9ce2b696f7f6e8df5d7c0e299a3d71630fc23b7610f8178c1f72",
+    "pipeline/document_roles.py": "ea4e0b161d015f6e87e4fa2b7dde202e1605815efff1e6ec48adf137f311a20f",
+    "pipeline/archive_caches.py": "92fde4f7879f717123ea523a78b581f80833c59d8844224d8a4ffe2cc16574b8",
+    "pipeline/al_document_roles.py": "e6aa718293434e941d12523f82ed54c4c8bdcc46eae202497ba1964833adda98",
+    "pipeline/am_positions.py": "e79b328f6d194891566a584dcf45d29e582debe1c8273d50960db9e7db060fad",
+    "pipeline/br_primary_evidence.py": "db69ed6363af035b1f077af8cd7308496da44b84b5a8516293c57c4856ed16f3",
+    "pipeline/native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
+    "pipeline/raster_review.py": "8774d4372d0c0d83e73ccabd80d98dafec28f0723e7e5da8ead0c9aa78413781",
+    "pipeline/source_matrix.py": "b276f809ce2c3b1eb8c8c53e395a25fb302d6683abcade412c6ae2552a3d3c70",
+    "pipeline/preflight.py": "71d7f702cce7b53b2e4b4f84ae361677ada7ea5b8c6d8ed7a7790e096e8ba7f1",
+    "data/schema/1.1.0.json": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df"
+  },
+  "immutable_inputs": {
+    "pdf": true,
+    "sidecar": true,
+    "primary_census": true,
+    "runtime": true
+  },
+  "limits": [
+    "Only14page section7.2; entire570page source/FGB andRNnationalreadiness not reconciled.",
+    "Generic boundary sections7.1/7.3 retained; code-authority replacement applies only545–558 and interior uncoded sections546–557.",
+    "CG repeats acrossfivegroups are separate contextual occurrences, not120unique national skills or equivalence.",
+    "Current actualSourcecache/config and post-binding validation remain separate from cloned replay.",
+    "NoSource/core/sidecar/cache/DBwrites, extraction, OCR or pedagogical human review."
+  ],
+  "automated_visual_review": {
+    "at": "2026-10-28T19:27:36.286386+00:00",
+    "actor_type": "automated",
+    "actor_id": "agent:domain:rn-ifa-independent-peer",
+    "method": "Direct image inspection of eleven bounded images generated from the exact pinned official PDF; no author/private crop substituted.",
+    "assertions": [
+      "FiveCG06visiblyendwithliteral difere,withoutcontinuationorfinalperiod.",
+      "550bottomhasCG01/MAT01codesonly;551topstartsrespectivetwocolumnbodies.",
+      "552retainsMAT07/MAT08/MAT09andCG08inindependentcolumns;CG10/MAT10continue553.",
+      "545preceding7.1and558following7.3lieoutsidesection7.2adapter;genericboundarycontainersarepreserved."
+    ],
+    "images_sha256": {
+      "primary-cg06-wide-546.png": "35d6dff3a39a821c3554b83cb4d4ce32f1fbcf4debd6564bc5f25ec46ecb9864",
+      "primary-cg06-wide-549.png": "db68baff55ec584c7a046f0feedbabdef45115d2fdab95b5ca21cff7f0454c71",
+      "primary-cg06-wide-551.png": "c7a0964050e9e3755e0c41fa0a40d21e35313a472018212f0e78a74c611fc8f1",
+      "primary-cg06-wide-554.png": "fbe9630436f59b6165cca49c3c3bca7f410e7204d666d9fef7634325dd20c769",
+      "primary-cg06-wide-557.png": "af8b44220fc6dc2ac087ad58ef4d91c47bb16d02babff518541f0c0c3d7010e9",
+      "primary-page-545.png": "6f6d711c8d76fc273ba46091f7800490323471cab5270bfb75998eb0785397d6",
+      "primary-page-550.png": "43bd8e36473d84df6da09e940d242ba0cb757bbe4eae35c66d0480df43979742",
+      "primary-page-551.png": "c7bdb26159d069d5872b8cd4c5fbce1c97bcac3f35e896bfa92dac2629b18918",
+      "primary-page-552.png": "1c006c9a2a654faebb4a9e1d97f40b057b9ec572f7ae804a7e13e348f7e71fb2",
+      "primary-page-553.png": "0c5b95cc031590e5ba3f3ae431f77e431edc6562690fc15d9e9ef97262b6d04b",
+      "primary-page-558.png": "97f1a521461f94407f61eaed7c5967f0cce43664f44dd2cff26fd63f13bd52fe"
+    },
+    "human_review_claimed": false
+  },
+  "source_path_correction_note": "Task suggested rn-referencial-em.pdf but it hashes differently; all retained census/crops/verification use only MF rn-referencial-oficial.pdf SHA5f894...845. Initial incidental reading of other copy generated no retained evidence."
+}

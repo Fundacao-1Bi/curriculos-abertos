@@ -1,0 +1,897 @@
+{
+  "source_id": "mg-crmg-em",
+  "result": "passed",
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:body-runtime-verifier",
+  "source_sha256": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
+  "cache_path": "data/extracted/2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44-page-cell-v1.5.0.json",
+  "cache_sha256": "0dcb89180a28c0266c8ebe8b0788f522f6161222d56b0e7b58d3cff3984d9555",
+  "input_pins": {
+    "data/manifests/uncoded/mg-coded-body-mg-crmg-em-v1-items.json": "eca5a40ff64f76bf48c5e72f635740f446b929fa0824921efce3a41f2fe97ab5",
+    "docs/evidence/native-body-completeness-audit/mg-crmg-em-proposal.json": "325a905b88f01ac894f8cbe41603ae0edab98cce790bdf4691a118aa09fce7bf",
+    "docs/evidence/native-body-completeness-audit/mg-crmg-em-body-diff.json": "2cdff3b9819e62e7463518d82292bf0fdfcc05c64839cfbf3f00ad3d4271bd41",
+    "data/manifests/bncc-southeast.json": "4ac8f7ff71edb63e756e1566fdf26859c83ef7fb11cd9706f1219987fe6dbb34",
+    "docs/evidence/native-body-completeness-audit/repair-coded-bodies.py": "4f33517cacd15524eec9078162df2ea00c9151df0966eb298b84014dd25b41c0",
+    "docs/evidence/native-body-completeness-audit/audit.py": "30e6540dde54ec1721be4d6d9c15e5ba1a47f256134085eafce7e3f7ca071c4a",
+    "data/manifests/uncoded/mg-em-structured-v2-items.json": "e28b252203c761cacb038d3bd54c9ab320173b77abe81ba2b0345318072257b0"
+  },
+  "composition_inputs": [
+    {
+      "path": "data/manifests/uncoded/mg-em-structured-v2-items.json",
+      "sha256": "e28b252203c761cacb038d3bd54c9ab320173b77abe81ba2b0345318072257b0",
+      "record_count": 95
+    },
+    {
+      "path": "data/manifests/uncoded/mg-coded-body-mg-crmg-em-v1-items.json",
+      "sha256": "eca5a40ff64f76bf48c5e72f635740f446b929fa0824921efce3a41f2fe97ab5",
+      "record_count": 117
+    }
+  ],
+  "composed_path": "data/manifests/uncoded/mg-coded-body-composed-mg-crmg-em-v1-items.json",
+  "composed_sha256": "dc29bd01a862f0445820ee6710bcaf045457b96f98dd2a7c29afcaccf1db42e4",
+  "proposed_authority": {
+    "coded_learning_ranges": [
+      [
+        115,
+        115
+      ],
+      [
+        141,
+        141
+      ],
+      [
+        143,
+        143
+      ],
+      [
+        146,
+        146
+      ],
+      [
+        150,
+        150
+      ],
+      [
+        165,
+        170
+      ],
+      [
+        172,
+        172
+      ],
+      [
+        269,
+        269
+      ],
+      [
+        294,
+        296
+      ],
+      [
+        299,
+        300
+      ],
+      [
+        318,
+        319
+      ]
+    ]
+  },
+  "blocked_pages": [],
+  "counts": {
+    "cache_items": 823,
+    "baseline_items": 918,
+    "body_repairs": 117,
+    "composed_adapter_records": 212,
+    "real_loader_records": 212,
+    "real_finalizer_records": 918,
+    "schema_passed": 918,
+    "literal_adapter_evidence_passed": 212,
+    "complete_character_receipts": 117,
+    "valid_coded_id_context_preserved": 117,
+    "valid_coded_full_context_exact": 117,
+    "unaffected_records_preserved": 801,
+    "unaffected_records_exact_including_review_time": 706,
+    "automated_revalidation_event_timestamps": 95,
+    "explicit_invalid_supersessions": 0,
+    "new_canonical_records": 0,
+    "documentary_EI_age_context_enrichments": 0
+  },
+  "new_canonical_records": [],
+  "superseded_invalid_records": [],
+  "negative_controls": [
+    {
+      "case": "strict_prefix_with_matching_excerpt_cannot_replace_complete_body",
+      "blocked": true
+    },
+    {
+      "case": "duplicate_record_even_if_every_character_matches",
+      "blocked": true
+    },
+    {
+      "case": "same_length_single_character_change",
+      "blocked": true
+    },
+    {
+      "case": "omit_actual_same_column_cross_page_continuation",
+      "blocked": true
+    },
+    {
+      "case": "absorb_new_explicit_cell_EMIFMAT03_p294_to_EMIFMAT04_p295",
+      "blocked": true
+    },
+    {
+      "case": "absorb_real_methodological_cell_after_EMIFMAT12_p296_to_p297",
+      "blocked": true,
+      "source_sha256": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
+      "primary_adjacent_role_label": "Pressupostos Metodológic os",
+      "label_bbox": [
+        85.343994140625,
+        71.519970703125,
+        134.77999877929688,
+        370.585986328125
+      ],
+      "foreign_role_body_bbox": [
+        134.77999877929688,
+        71.519970703125,
+        510.21999104817706,
+        370.585986328125
+      ],
+      "foreign_role_body_sha256": "8cd88f4a253fc39ac90ada10c7da6618ad6eb56b0547bd6ebb760f6c1f206222"
+    },
+    {
+      "case": "absorb_real_methodological_cell_after_EMIFMAT03_p294_to_p294",
+      "blocked": true,
+      "source_sha256": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
+      "primary_adjacent_role_label": "Pressupostos Metodológic os",
+      "label_bbox": [
+        85.42399342854817,
+        471.3099822998047,
+        134.77999877929688,
+        745.7519775390625
+      ],
+      "foreign_role_body_bbox": [
+        134.77999877929688,
+        471.3099822998047,
+        510.1399909125434,
+        745.7519775390625
+      ],
+      "foreign_role_body_sha256": "6539c8ee2bf85531fadd3982e9578493a66b1e0cfd51d4c7c3ed2b1a79f9070e"
+    }
+  ],
+  "binding_requires_root_technical_acceptance": [],
+  "primary_original_rederivation": {
+    "original_native_vector_strict_cell_bodies_reproduced": 117,
+    "actual_cross_page_continuations": [
+      {
+        "code": "EM13LGG103",
+        "page": 115,
+        "fragment_pages": [
+          115,
+          116
+        ],
+        "fragment_text_hashes": [
+          "a54ff6275bc4f2ee1725b48c68a2c251c0022d1145cacf2ffa185a9b7f3d420a",
+          "6f9c0eb1f1b0bec0d43312d3a2badcd85f2b96d7521ab325035a0f926d7a8570"
+        ]
+      },
+      {
+        "code": "EM13LP16",
+        "page": 143,
+        "fragment_pages": [
+          143,
+          144
+        ],
+        "fragment_text_hashes": [
+          "6746a29db26ff64581a72500210ff8e46fb4978b914b3b3f65830991c12200c7",
+          "52c58103a9ddd0ce0cb5b3589c25d7cf8c9f6a659a49caefc432c6a2e3534c10"
+        ]
+      },
+      {
+        "code": "EM13MAT101",
+        "page": 165,
+        "fragment_pages": [
+          165,
+          166
+        ],
+        "fragment_text_hashes": [
+          "ac92d114ce2747a8c2f66dc3886231e7e53edff9e7564f5b425883041fd55f00",
+          "31cb55eb93fc30d01c62a312c78cbf189d5b9b62717e7c5da6b22c06ff80d136"
+        ]
+      },
+      {
+        "code": "EM13CHS605",
+        "page": 269,
+        "fragment_pages": [
+          269,
+          270
+        ],
+        "fragment_text_hashes": [
+          "0708e2d4325010d4c7ecdfa7454ebf72e9b84eef95ed143388dda6cf08778463",
+          "112164207ff4f6fbe5792a6fb066451cd6cbd9f6114e5eefa2fa5a91af4280f0"
+        ]
+      }
+    ],
+    "method": "Re-execute original primary code anchors, vector rulers, strict cells and full character comparison; candidate body evidence does not define source boundaries."
+  },
+  "production_literal_check_execution": "Real evidence_check executed inside source_uncoded_items for every adapter record. Finalized code/text/evidence multiset is exact; no redundant second PDF check is used.",
+  "authorized_documentary_EI_age_contexts": [],
+  "automated_revalidation_event_timestamps": [
+    {
+      "id": "ca:mg-crmg-em:section:quadro37",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C.1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C1.H1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C1.H2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C1.H3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C1.H4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C1.H5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C1.H6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C1.H7",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C1.H8",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C.2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C2.H1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C2.H2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C2.H3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C2.H4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C2.H5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C.3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C3.H1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C3.H2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C3.H3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C3.H4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C.4.",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C4.H1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local:C4.H2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-component:filosofia",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-filosofia:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-filosofia:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-filosofia:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-filosofia:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-filosofia:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-filosofia:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-filosofia:number:7",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-filosofia:number:8",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-filosofia:number:9",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-component:geografia",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-geografia:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-geografia:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-geografia:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-geografia:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-geografia:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-geografia:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-geografia:number:7",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-geografia:number:8",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-geografia:number:9",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:local-geografia:number:10",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:em-competency-list:synopsis-linguagens",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-linguagens:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-linguagens:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-linguagens:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-linguagens:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-linguagens:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-linguagens:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-linguagens:number:7",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:em-competency-list:synopsis-matematica",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-matematica:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-matematica:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-matematica:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-matematica:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-matematica:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:em-competency-list:synopsis-natureza",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-natureza:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-natureza:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-natureza:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:em-competency-list:synopsis-humanas",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-humanas:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-humanas:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-humanas:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-humanas:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-humanas:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:synopsis-humanas:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:em-competency-list:fgb-linguagens",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-linguagens:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-linguagens:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-linguagens:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-linguagens:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-linguagens:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-linguagens:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-linguagens:number:7",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:em-competency-list:fgb-matematica",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-matematica:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-matematica:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-matematica:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-matematica:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-matematica:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:em-competency-list:fgb-natureza",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-natureza:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-natureza:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-natureza:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:em-competency-list:fgb-humanas",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-humanas:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-humanas:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-humanas:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-humanas:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-humanas:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-em:section:fgb-humanas:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:23:14.767124+00:00",
+      "revalidated_at": "2026-10-28T20:12:39.682867+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    }
+  ],
+  "protected_context_policy": "All valid IDs/code/locators/kinds remain exact. Exactly 99 MG EI objectives may gain source-caption age fields and parent=None may gain the proved age node; every other position field, existing parent and unaffected complete record remains exact.",
+  "reference_roles_preserved": 0,
+  "limits": [
+    "Only the proposed coded authority pages are repaired; blocked/unexamined pages remain unverified.",
+    "Full-body hashes originate in independent vector/native-word versus strict-cell character receipts; ordinary substring evidence alone is insufficient.",
+    "No database, corpus ingestion, Source manifest binding, whole-Source reconciliation, UF readiness or human approval was performed."
+  ],
+  "whole_source_reconciled": false,
+  "uf_ready": false,
+  "human_review": false,
+  "verifier_sha256": "ad510309336fef970c29a3909723d46766c439a9168d4a470081ec755fc02cec"
+}

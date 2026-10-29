@@ -1,6 +1,6 @@
 # Papéis documentais e contagens de aprendizagem
 
-A política `documentary-item-roles-2026-10-28-v4`, em `src/domain/item-kinds.ts`, classifica o papel documental do registro. Não altera `kind`, texto, código, posição, evidência, vínculo nem revisão do snapshot. Não transforma um tipo em outro por substring, verbo ou similaridade textual. Tipos novos ficam em `unclassified` até decisão explícita.
+A política `documentary-item-roles-2026-10-28-v6`, em `src/domain/item-kinds.ts`, classifica o papel documental do registro. Não altera `kind`, texto, código, posição, evidência, vínculo nem revisão do snapshot. Não transforma um tipo em outro por substring, verbo ou similaridade textual. Tipos novos ficam em `unclassified` até decisão explícita.
 
 O inventário real está em `docs/evidence/item-kind-inventory.json`, com SHA por sidecar e contagem por tipo. Há versões/adaptadores sobrepostos nesse diretório: suas ocorrências **não** são denominador nacional nem contagem deduplicada de uma publicação. As análises consultam os registros únicos da publicação fixada.
 
@@ -64,3 +64,19 @@ Essas categorias mantêm a decomposição exaustiva de `unique_items`. Contexto,
 
 
 A política v4 amplia explicitamente a lista de 21 para **22** tipos, incluindo `sintese_aprendizagem` após leitura dos 19 enunciados ES e do aviso do quadro. Não promove `saber_curricular`, valores, princípios nem prosa por similaridade de nome. As sínteses são um nível de granularidade distinto de habilidades codificadas, competências e blocos de capacidades; seus registros contam como expectativas documentais únicas, sem supor atomização, não sobreposição ou equivalência. O aviso da fonte é preservado: a síntese baliza objetivos a explorar no segmento EI e **não é condição/pré-requisito de acesso ao EF**. Sua classificação tampouco mede aprendizagem ou desenvolvimento individual. `campo_sintese_aprendizagem` nomeia apenas o campo organizador e permanece em contexto. A classificação por papel documental não confere validação ao OCR, à literalidade, à edição ou à completude do documento; esses estados seguem independentes e preservados.
+
+
+## Ato BA 266/2025 e Parecer 365/2025 — papéis da política v5
+
+A v5 mantém os 22 tipos de expectativa da v4 e acrescenta classificação explícita de doze tipos documentais do pacote BA, sem alterar texto, tipo, código, posição, pai ou revisão. O peer independente do PDF primário está em `docs/evidence/source-audit-ba-res266-peer/`, com censo, 141 nós, 155 fragmentos, prova geométrica/trace e limites. A inclusão de um documento na categoria normativa **não** certifica sua vigência externa nem torna toda passagem um comando autônomo.
+
+- `referencia_normativa_preambular`, `secao_normativa_ato`, `postulacao_curricular`, `parecer_normativo`, `registro_aprovacao` e `voto_parecer` recebem `normative`. Os oito `postulacao_curricular` são incisos literais do art. 10 sobre organização da proposta pedagógica EI: descritivos, seleção de brincadeiras, memoriais, roteiros, momentos e procedimentos. O parágrafo único determina associá-los aos campos de experiência; não são automaticamente oito habilidades individuais, códigos oficiais ou equivalências BNCC. A categoria conserva esse papel jurídico-curricular.
+- `relatorio_parecer`, `fundamentacao_parecer`, `nota_documental`, `quadro_documental`, `linha_quadro_documental` e `fonte_quadro_documental` recebem `context`. São relatório/argumentação, citações, notas e ilustração histórica; uma competência nacional citada no Parecer não vira nova definição local.
+- A tabela p. 16 tem duas linhas e duas colunas, sem rótulos impressos de cabeçalho das colunas. A legenda “Fonte” fica abaixo do quadro, não é cabeçalho. Descrições editoriais das colunas são explicitamente `table_columns_descriptive_not_printed`, com `printed_table_column_headers_present=false`. Não se converte essa referência histórica do Programa Mais Educação em matriz BA atual.
+
+A aprovação/data do ato (21/10/2025), a homologação (24/03/2026), a publicação (26/03/2026), a vigência na publicação (art. 21) e o prazo de um ano para implementação (art. 20) são papéis diferentes. Essas afirmações reproduzem o artefato selecionado; o peer não substitui verificação jurídica atual, comprovação de adesão municipal ou reconciliação das demais partes obrigatórias BA.
+
+
+## Dispositivo alterado e organizadores SP/MG/RJ — política v6
+
+A política v6 conserva os 22 tipos de aprendizagem e classifica quatro tipos após leitura dos registros e confirmação dos responsáveis pelas fontes. `dispositivo_normativo_alterado` é normativo: BA125/2024 cita e altera o art. 19 da Resolução26/2016 dentro do seu art. 1; preserva esse pai e não vira um sétimo artigo externo nem uma aprendizagem. `grupo_direitos_aprendizagem` é o cabeçalho geral de direitos EI em SP/MG, separado dos enunciados completos. `trilha_curricular` e `oferta_trilha` registram título/organização de trilha e sua oferta contextual por série/área RJ. Esses três são contexto, não expectativas individuais. As declarações e exemplos estão em `docs/evidence/item-kind-decisions-v6.json`. O gate para tipos não revisados continua recusando o inventário; nenhuma promoção por prefixo ou afrouxamento de teste foi introduzido.

@@ -14,6 +14,9 @@ with P.open('rb')as f:
  for c in iter(lambda:f.read(1024*1024),b''):h.update(c)
 if h.hexdigest()!=SHA:raise ValueError('Source SHA mismatch')
 D=fitz.open(P);lines=[];page_geometry={};low_native=[]
+printed_pages={}
+for pn,p in enumerate(D,1):
+ rows=[(''.join(s['text']for s in l['spans']).strip(),l['bbox'])for b in p.get_text('dict')['blocks']for l in b.get('lines',[])];folios=[t for t,b in rows if t.isdigit()and(b[1]>p.rect.height*.9 or b[3]<p.rect.height*.07)];printed_pages[pn]=folios[0]if len(folios)==1 else None
 def ws(t):return' '.join(t.split())
 def norm(t):return ws(unicodedata.normalize('NFC',t)).casefold()
 def role(t):
@@ -50,7 +53,7 @@ lines=physical
 # Literal header census is produced before any output item. Scope is explicit fields only.
 header_census=[{'page':l['page'],'line':l['ordinal'],'role':l['role'],'text':l['text'],'bbox':l['bbox']}for l in lines if l['role']];unknown_objective_headers=[{'page':l['page'],'text':l['text'],'bbox':l['bbox']}for l in lines if re.match(r'^\s*Objetivos?\b',l['text'],re.I)and l['role']is None];component_candidates=[i for i,l in enumerate(lines)if l['role']in('component','component_inline')];objective_candidates=[i for i,l in enumerate(lines)if l['role']=='component_objectives'];items=[];findings=[];state={'area':None,'trail':None,'grade':None,'component':None};by_key={};consumed_values=set();offering=None
 
-def evidence(row,excerpt=None):return{'source_id':SID,'page':row['page'],'printed_page':str(row['page']),'section':row['role']or'Original component objective text','excerpt':clean_text(row['text']if excerpt is None else excerpt),'locator':f'line:{row["ordinal"]}','bbox':row['bbox'],'coordinate_space':'display_pdf_after_normalization','page_normalization':page_geometry[row['page']],'method':'rj-native-explicit-source-line-v1'}
+def evidence(row,excerpt=None):return{'source_id':SID,'page':row['page'],'printed_page':printed_pages[row['page']],'section':row['role']or'Original component objective text','excerpt':clean_text(row['text']if excerpt is None else excerpt),'locator':f'line:{row["ordinal"]}','bbox':row['bbox'],'coordinate_space':'display_pdf_after_normalization','page_normalization':page_geometry[row['page']],'method':'rj-native-explicit-source-line-v1'}
 def pos(scope):return[{'stage':'EM','area':scope.get('area'),'component':scope.get('component'),'years':scope.get('years'),'year_label':scope.get('year_label'),'age_group':None,'period':None,'position_origin':'explicit_original_area_component_and_series_headers','position_note':'Year only from literal NOVO ENSINO MÉDIO/series header, not EM13. Component only from labelled Componente curricular.'}]
 def node(key,kind,text,ev,parent=None,scope=None,context=None,title=None):
  obj={'source_id':SID,'artifact_sha256':SHA,'key':key,'parent_key':parent,'code':None,'text':clean_text(text),'kind':kind,'page':ev[0]['page'],'locator':f'rj-itinerarios/{key}','positions':pos(scope or{}),'evidence':ev,'source_context':context or{},'actor_type':'automated','actor_id':'curriculos-abertos:southeast-completeness','extraction_method':'rj-itinerarios-labelled-goal-hierarchy-v1'}

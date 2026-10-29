@@ -1,0 +1,2251 @@
+{
+  "source_id": "to-dct-ef-cn-mat",
+  "uf": "TO",
+  "artifact_sha256": "aeb9486e9f0b8e34fe3542201ead1ef0a5d8f38a490e2c9fa0e1b55a483b2423",
+  "cache_path": "data/extracted/aeb9486e9f0b8e34fe3542201ead1ef0a5d8f38a490e2c9fa0e1b55a483b2423-page-cell-v1.5.0.json",
+  "status": "read_completed_with_explicit_scope",
+  "audit_revision": "independent-vector-rules-native-code-boundaries-v3",
+  "counts": {
+    "coded_cache_records": 687,
+    "primary_code_boundary_not_indexed_on_page": 13,
+    "primary_pages_read": 124,
+    "independently_bounded_native_bodies": 472,
+    "bounded_body_equal": 420,
+    "body_prefix_not_aligned_to_independent_column_start": 162,
+    "strict_prefix_candidates": 52,
+    "prefix_definition_candidate": 47,
+    "text_too_short_for_prefix_alignment": 53,
+    "prefix_role_unresolved": 5
+  },
+  "negative_examples": [
+    {
+      "case": "equal_complete_body",
+      "code": "EF01CI01",
+      "page": 22,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:c48e98cbaac109e205a4",
+      "result": "not_truncation",
+      "body_sha256": "62bec8360b92ef664d5bf64dc4ae4787eae1c6bc60d20b9614bd93c759a59e86"
+    },
+    {
+      "case": "equal_complete_body",
+      "code": "EF01CI02",
+      "page": 22,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:5a381407d3dbfa058cd5",
+      "result": "not_truncation",
+      "body_sha256": "51b46d43749c3d8b0beb831fab7f616bdbdd2c56e5b56d61c4d8a117ddef079b"
+    }
+  ],
+  "findings": [
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF01CI04",
+      "page": 22,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:5da9a6d521ed65717b11",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:a8fa5015adce67ba1802",
+      "evidence_locator": "table:0/column:140.2-300.2/anchor:4",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 181,
+      "physical_expected_characters": 219,
+      "extracted_sha256": "75f6b683855299ec0d079e2be977d0280c6d94af431c1570068b5d2208b1cce3",
+      "physical_expected_sha256": "0a22c277d80baa3967ecd7d71076b38e0095b17fc7ae308594e56303d71d3ae7",
+      "extracted_head": "Comparar características físicas entre os colegas, reconhecendo a diversidade e a importância da valorização, do acolhimento e do respeito às diferenças. (Possí",
+      "extracted_tail": "omparar características físicas entre os colegas, reconhecendo a diversidade e a importância da valorização, do acolhimento e do respeito às diferenças. (Possíveis articulações com",
+      "expected_tail": "Comparar características físicas entre os colegas, reconhecendo a diversidade e a importância da valoriza­ ção, do acolhimento e do respeito às di­ ferenças. (Possíveis articulações com as habilidades EF01HI01, EF01HI03",
+      "extra_normalized_prefix": " as habilidades ef01hi01, ef01hi03",
+      "independent_boundary": {
+        "anchor": [
+          148.435791015625,
+          479.7682189941406,
+          188.21578979492188,
+          493.22821044921875
+        ],
+        "body_bbox": [
+          140.76,
+          479.7682189941406,
+          300.21,
+          551.7682495117188
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 551.7682495117188,
+        "physical_bottom_rule_y": 551.7682495117188,
+        "column": [
+          140.76,
+          300.21
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF01CI01",
+      "page": 23,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:cb81016403f14d57a18b",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:df3ebd11f73f9e214a44",
+      "evidence_locator": "table:1/column:140.9-299.9/anchor:5",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 218,
+      "physical_expected_characters": 254,
+      "extracted_sha256": "0ce1b454718676305484e0e70c709a1092dffb786f97f76644dd8bab2640f109",
+      "physical_expected_sha256": "83ff00a86a3e7796623fe5c5ab87ddd6608ea47c87480bd2e6a69400ac9b95b8",
+      "extracted_head": "Comparar características de diferentes materiais presentes em objetos de uso cotidiano, discutindo sua origem, os modos como são descartados e como podem ser us",
+      "extracted_tail": " materiais presentes em objetos de uso cotidiano, discutindo sua origem, os modos como são descartados e como podem ser usados de forma mais consciente. (Possíveis articulações com",
+      "expected_tail": "Comparar características de diferentes materiais presentes em objetos de uso cotidiano, discutindo sua origem, os modos como são descartados e como podem ser usados de forma mais consciente. (Possíveis articulações com as habilidades EF01LP22, EF01LP23).",
+      "extra_normalized_prefix": " as habilidades ef01lp22, ef01lp23).",
+      "independent_boundary": {
+        "anchor": [
+          149.26470947265625,
+          353.5111083984375,
+          187.27670288085938,
+          366.9710998535156
+        ],
+        "body_bbox": [
+          141.76,
+          353.5111083984375,
+          299.93,
+          439.9811096191406
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 441.2895202636719,
+        "physical_bottom_rule_y": 439.9811096191406,
+        "column": [
+          141.76,
+          299.93
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF01CI01",
+      "page": 24,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:687ac1b9a10732f30718",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:900939f6db3aba59906f",
+      "evidence_locator": "table:1/column:139.4-300.4/anchor:6",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 210,
+      "physical_expected_characters": 247,
+      "extracted_sha256": "239edcdc91baa25d6764a8cfd53be4d862291c55f44caaca9a4fdc7fb10a1a48",
+      "physical_expected_sha256": "0ff3439ca0231874c229c6399593ae06df83c12166203585e1ea15450dc198f8",
+      "extracted_head": "Comparar características de diferentes materiais presentes em objetos de uso cotidiano, discutindo sua origem, os modos como são descartados e como podem ser us",
+      "extracted_tail": "ferentes materiais presentes em objetos de uso cotidiano, discutindo sua origem, os modos como são descartados e como podem ser usados de forma mais consciente. (Possíveis articula",
+      "expected_tail": "Comparar características de diferentes materiais presentes em objetos de uso cotidiano, discutindo sua origem, os modos como são descarta­ dos e como podem ser usados de forma mais consciente. (Possíveis articula­ ções com as habilidades EF01LP17,",
+      "extra_normalized_prefix": "coes com as habilidades ef01lp17,",
+      "independent_boundary": {
+        "anchor": [
+          145.79229736328125,
+          349.6031188964844,
+          183.72727966308594,
+          359.6031188964844
+        ],
+        "body_bbox": [
+          138.35,
+          349.6031188964844,
+          300.5,
+          431.1330871582031
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 431.1330871582031,
+        "physical_bottom_rule_y": 431.1330871582031,
+        "column": [
+          138.35,
+          300.5
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF01CI04",
+      "page": 25,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:c0d9e3425fc6b8254c92",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:a636ab1f947d48ec247c",
+      "evidence_locator": "table:0/column:140.8-301.0/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 173,
+      "physical_expected_characters": 210,
+      "extracted_sha256": "fb1aea44e0c009ce1baae379c54b7db8698a82b704bf633ed1f9f6f6294df18e",
+      "physical_expected_sha256": "853bd61e9618245bd8698ce28d97d36184dc5a0b832cf4d78de030828a7642fa",
+      "extracted_head": "Comparar características físicas entre os colegas, reconhecendo a diversidade e a importância da valorização, do acolhimento e do respeito às diferenças. (Possí",
+      "extracted_tail": "Comparar características físicas entre os colegas, reconhecendo a diversidade e a importância da valorização, do acolhimento e do respeito às diferenças. (Possíveis articula",
+      "expected_tail": "Comparar características físicas entre os colegas, reconhecendo a diversidade e a importância da valo­ rização, do acolhimento e do respeito às diferenças. (Possíveis articula­ ções com as habilidades EF01LP17,",
+      "extra_normalized_prefix": "coes com as habilidades ef01lp17,",
+      "independent_boundary": {
+        "anchor": [
+          149.38290405273438,
+          141.82373046875,
+          187.31788635253906,
+          151.82373046875
+        ],
+        "body_bbox": [
+          141.94,
+          141.82373046875,
+          300.69,
+          211.35369873046875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 211.35369873046875,
+        "physical_bottom_rule_y": 211.35369873046875,
+        "column": [
+          141.94,
+          300.69
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF02CI07",
+      "page": 27,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:9619f337b0bbc5f1e873",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:7c88f87c5ca110981584",
+      "evidence_locator": "table:0/column:144.1-298.8/anchor:5",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 133,
+      "physical_expected_characters": 169,
+      "extracted_sha256": "fb60059b00b986798843429f314f310a96966bbf20223330403e96241b71495b",
+      "physical_expected_sha256": "137ee230c6d4162d97236563f9752c151a099f45b3b7ba7617790e1855e4fef0",
+      "extracted_head": "Descrever as posições do Sol em diversos horários do dia e associá-las ao tamanho da sombra projetada. (Possíveis articulações com as",
+      "extracted_tail": "Descrever as posições do Sol em diversos horários do dia e associá-las ao tamanho da sombra projetada. (Possíveis articulações com as",
+      "expected_tail": "Descrever as posições do Sol em diversos horários do dia e as­ sociá-las ao tamanho da sombra proje­ tada. (Possíveis articulações com as habilidades EF01MA19, EF02HI07)",
+      "extra_normalized_prefix": " habilidades ef01ma19, ef02hi07)",
+      "independent_boundary": {
+        "anchor": [
+          151.52569580078125,
+          416.1034240722656,
+          191.30569458007812,
+          429.56341552734375
+        ],
+        "body_bbox": [
+          144.09,
+          416.1034240722656,
+          298.8,
+          538.5734252929688
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 538.5734252929688,
+        "column": [
+          144.09,
+          298.8
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF02CI01",
+      "page": 28,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:044f5f350848fcf2cce1",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:333c55a08713ef0654ed",
+      "evidence_locator": "table:0/column:139.9-301.6/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 223,
+      "physical_expected_characters": 252,
+      "extracted_sha256": "b093088cd84067a1155aee10cf51874c1fb345358c845c8ff6684bff0bea0893",
+      "physical_expected_sha256": "c6173263fd7b7e328039db42bdb90b0f8cb340e586458e427f2c49eb9a8fc5a5",
+      "extracted_head": "Identificar de que materiais (metais, madeira, vidro etc.) são feitos os objetos que fazem parte da vida cotidiana, como esses objetos são utilizados e com quai",
+      "extracted_tail": "ra, vidro etc.) são feitos os objetos que fazem parte da vida cotidiana, como esses objetos são utilizados e com quais materiais eram produzidos no passado. (Possíveis articulações",
+      "expected_tail": "Identificar de que materiais (metais, madeira, vidro etc.) são feitos os objetos que fazem parte da vida coti­ diana, como esses objetos são utilizados e com quais materiais eram produzidos no passado. (Possíveis articulações com a habilidade EF12LP17)",
+      "extra_normalized_prefix": " com a habilidade ef12lp17)",
+      "independent_boundary": {
+        "anchor": [
+          147.49159240722656,
+          139.35372924804688,
+          187.27159118652344,
+          152.81373596191406
+        ],
+        "body_bbox": [
+          140.06,
+          139.35372924804688,
+          301.63,
+          249.82369995117188
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 251.13201904296875,
+        "physical_bottom_rule_y": 249.82369995117188,
+        "column": [
+          140.06,
+          301.63
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF02CI04",
+      "page": 28,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:96ac1c60e511920ae220",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:c4d8e6a05d7032ec6722",
+      "evidence_locator": "table:0/column:139.9-301.6/anchor:2",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 218,
+      "physical_expected_characters": 249,
+      "extracted_sha256": "03573e0b2f84f900b91f3366638d0d1b728534bbb3318c191a5deebd8b1b1f72",
+      "physical_expected_sha256": "ec757bc39bd2b91417bf6b7ddfaca785ab771d6cc0b3aae79e00f9d4969b5b4b",
+      "extracted_head": "Descrever características de plantas e animais (tamanho, forma, cor, fase da vida, local onde se desenvolvem etc.) que fazem parte de seu cotidiano e relacioná-",
+      "extracted_tail": " animais (tamanho, forma, cor, fase da vida, local onde se desenvolvem etc.) que fazem parte de seu cotidiano e relacioná-las ao ambiente em que eles vivem. (Possíveis articulações",
+      "expected_tail": "Descrever características de plantas e animais (tamanho, forma, cor, fase da vida, local onde se desen­ volvem etc.) que fazem parte de seu co­ tidiano e relacioná-las ao ambiente em que eles vivem. (Possíveis articulações com a habilidade EF12LP17)",
+      "extra_normalized_prefix": " com a habilidade ef12lp17)",
+      "independent_boundary": {
+        "anchor": [
+          147.49159240722656,
+          251.13201904296875,
+          187.27159118652344,
+          264.5920104980469
+        ],
+        "body_bbox": [
+          140.06,
+          251.13201904296875,
+          301.63,
+          353.1468200683594
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 354.4552001953125,
+        "physical_bottom_rule_y": 353.1468200683594,
+        "column": [
+          140.06,
+          301.63
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF02CI05",
+      "page": 28,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:507a8b25c9669961af93",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:a9666409d8a95e70c1ce",
+      "evidence_locator": "table:0/column:139.9-301.6/anchor:4",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 106,
+      "physical_expected_characters": 141,
+      "extracted_sha256": "664f21df0b693bf4a474d6b09efe3bdcf63f5e408744f06d0965647d3ddcb95f",
+      "physical_expected_sha256": "56c41aa4d15546fb7290fccd4a52aca5c76562eb6ecaff97f393096dbf6c4115",
+      "extracted_head": "Investigar a importância da água e da luz para a manutenção da vida de plantas em geral. (Possíveis articu",
+      "extracted_tail": "Investigar a importância da água e da luz para a manutenção da vida de plantas em geral. (Possíveis articu",
+      "expected_tail": "Investigar a importância da água e da luz para a manutenção da vida de plantas em geral. (Possíveis articu­ lações com a habilidade EF12LP17)",
+      "extra_normalized_prefix": "lacoes com a habilidade ef12lp17)",
+      "independent_boundary": {
+        "anchor": [
+          147.49159240722656,
+          354.4552001953125,
+          187.27159118652344,
+          367.9151916503906
+        ],
+        "body_bbox": [
+          140.06,
+          354.4552001953125,
+          301.63,
+          456.47003173828125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 457.7782897949219,
+        "physical_bottom_rule_y": 456.47003173828125,
+        "column": [
+          140.06,
+          301.63
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF02CI06",
+      "page": 28,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:25a3be169ebc95650eda",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:b76ed3782f168e54ca4a",
+      "evidence_locator": "table:0/column:139.9-301.6/anchor:6",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 226,
+      "physical_expected_characters": 263,
+      "extracted_sha256": "2d4c9e9b16bd52e0fc4e6ce15dff366107d4e6917751f0e480aee5e589b275bd",
+      "physical_expected_sha256": "a2fae71c8eba0ecf3a1290805d9ff71d0a632974857b667cdeb4e78a68ded748",
+      "extracted_head": "Identificar as principais partes de uma planta (raiz, caule, folhas, flores e frutos) e a função desempenhada por cada uma delas, e analisar as relações entre a",
+      "extracted_tail": " (raiz, caule, folhas, flores e frutos) e a função desempenhada por cada uma delas, e analisar as relações entre as plantas, o ambiente e os demais seres vivos. (Possíveis articula",
+      "expected_tail": "Identificar as principais partes de uma planta (raiz, caule, folhas, flores e frutos) e a função desempenha­ da por cada uma delas, e analisar as re­ lações entre as plantas, o ambiente e os demais seres vivos. (Possíveis articula­ ções com a habilidade EF12LP17)",
+      "extra_normalized_prefix": "coes com a habilidade ef12lp17)",
+      "independent_boundary": {
+        "anchor": [
+          147.49159240722656,
+          457.7782897949219,
+          187.27159118652344,
+          471.23828125
+        ],
+        "body_bbox": [
+          140.06,
+          457.7782897949219,
+          301.63,
+          559.793212890625
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 559.793212890625,
+        "column": [
+          140.06,
+          301.63
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF02CI07",
+      "page": 29,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:c46d95b99e22a0825b9a",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:decbb6e919c3d90ae163",
+      "evidence_locator": "table:0/column:142.9-318.6/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 148,
+      "physical_expected_characters": 180,
+      "extracted_sha256": "92fefb59e035bb88d74eae3dd997e4bcf3625c220661ccf4b4afd5dac93d53a6",
+      "physical_expected_sha256": "d80fcec20698c56c075ca7911eaef9d9bdb3137407e6164c45edb5f06a835ec7",
+      "extracted_head": "Descrever as posições do Sol em diversos horários do dia e associá-las ao tamanho da sombra projetada. (Possíveis articulações com as habilidades EF",
+      "extracted_tail": "Descrever as posições do Sol em diversos horários do dia e associá-las ao tamanho da sombra projetada. (Possíveis articulações com as habilidades EF",
+      "expected_tail": "Descrever as posições do Sol em diversos horários do dia e associá-las ao tamanho da sombra projetada. (Possí­ veis articulações com as habilidades EF­ 01MA19, EF02HI07 e EF02LP22)",
+      "extra_normalized_prefix": "01ma19, ef02hi07 e ef02lp22)",
+      "independent_boundary": {
+        "anchor": [
+          150.3262939453125,
+          139.30728149414062,
+          190.10629272460938,
+          152.7672882080078
+        ],
+        "body_bbox": [
+          142.89,
+          139.30728149414062,
+          318.64,
+          214.34170532226562
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 215.64999389648438,
+        "physical_bottom_rule_y": 214.34170532226562,
+        "column": [
+          142.89,
+          318.64
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF03CI06",
+      "page": 31,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:2eb5f0f4e55d1e390874",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:47c0716de1f88d255f3f",
+      "evidence_locator": "table:0/column:140.7-321.5/anchor:3",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 198,
+      "physical_expected_characters": 235,
+      "extracted_sha256": "f725d2726c579b55e2e364b247ade9c00804d61042a4925ae14cf3c9896a8cb4",
+      "physical_expected_sha256": "06a0bb6b961ec4cee4e3b627bc324114d5c62c8906a604f69e7caad040e18b01",
+      "extracted_head": "Comparar alguns animais e organizar grupos com base em características externas comuns (presença de penas, pelos, escamas, bico, garras, antenas, patas etc.). (",
+      "extracted_tail": "imais e organizar grupos com base em características externas comuns (presença de penas, pelos, escamas, bico, garras, antenas, patas etc.). (Possíveis articulações com as habilida",
+      "expected_tail": "Comparar alguns animais e or­ ganizar grupos com base em características externas comuns (presença de penas, pelos, escamas, bico, garras, antenas, patas etc.). (Possíveis articulações com as habilida­ des EF03MA26, EF03MA27, EF03MA28,",
+      "extra_normalized_prefix": "des ef03ma26, ef03ma27, ef03ma28,",
+      "independent_boundary": {
+        "anchor": [
+          148.9091033935547,
+          393.52081298828125,
+          188.68910217285156,
+          406.9808044433594
+        ],
+        "body_bbox": [
+          141.47,
+          393.52081298828125,
+          321.47,
+          465.52081298828125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 465.52081298828125,
+        "physical_bottom_rule_y": 465.52081298828125,
+        "column": [
+          141.47,
+          321.47
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF03CI07",
+      "page": 32,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:d2530cac614a79938949",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:6cec63277a8a1e8410cf",
+      "evidence_locator": "table:0/column:141.4-321.5/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 247,
+      "physical_expected_characters": 284,
+      "extracted_sha256": "c5ce86bbbadc999e138757194c6e5ed6d2916f616fc3edfdde83be079424f1d4",
+      "physical_expected_sha256": "be5b561075ee9296733d47ff18572e9e60e6d4496a5cd628f1c931092155ad85",
+      "extracted_head": "Identificar características da Terra (como seu formato esférico, a presença de água, solo etc.), com base na observação, manipulação e comparação de diferentes ",
+      "extracted_tail": "presença de água, solo etc.), com base na observação, manipulação e comparação de diferentes formas de representação do planeta (mapas, globos, fotografias etc.). (Possíveis articu",
+      "expected_tail": "Identificar características da Terra (como seu formato esférico, a presença de água, solo etc.), com base na observação, manipulação e comparação de diferentes formas de representação do planeta (mapas, globos, fotografias etc.). (Possíveis articu­ lações com as habilidades EF03MA19,",
+      "extra_normalized_prefix": "lacoes com as habilidades ef03ma19,",
+      "independent_boundary": {
+        "anchor": [
+          149.32949829101562,
+          147.29071044921875,
+          189.1094970703125,
+          160.75071716308594
+        ],
+        "body_bbox": [
+          141.89,
+          147.29071044921875,
+          321.47,
+          231.29071044921875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 231.29071044921875,
+        "physical_bottom_rule_y": 231.29071044921875,
+        "column": [
+          141.89,
+          321.47
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF03CI01",
+      "page": 32,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:c90bef0f9d3d4ba9c264",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:987e210f01c1b5a65c6a",
+      "evidence_locator": "table:1/column:141.4-321.5/anchor:5",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 157,
+      "physical_expected_characters": 187,
+      "extracted_sha256": "f4730bad01fac72dae3dc8fa876b3f825cb9d1dac736aa3feac47d432d0acc22",
+      "physical_expected_sha256": "2a1fc2c45fd936d3f4204f6b6f5f304e5c42e7d5e7fb92fb98d580525f519115",
+      "extracted_head": "Produzir diferentes sons a partir da vibração de variados objetos e identificar variáveis que influem nesse fenômeno. (Possíveis articulações com as habilida",
+      "extracted_tail": "Produzir diferentes sons a partir da vibração de variados objetos e identificar variáveis que influem nesse fenômeno. (Possíveis articulações com as habilida",
+      "expected_tail": "Produzir diferentes sons a par­ tir da vibração de variados objetos e identi­ ficar variáveis que influem nesse fenômeno. (Possíveis articulações com as habilida­ des EF15AR14 e EF15AR15)",
+      "extra_normalized_prefix": "des ef15ar14 e ef15ar15)",
+      "independent_boundary": {
+        "anchor": [
+          150.32620239257812,
+          335.79461669921875,
+          190.106201171875,
+          349.2546081542969
+        ],
+        "body_bbox": [
+          142.89,
+          335.79461669921875,
+          321.47,
+          410.8290100097656
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 412.1374206542969,
+        "physical_bottom_rule_y": 410.8290100097656,
+        "column": [
+          142.89,
+          321.47
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF03CI08",
+      "page": 33,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:7e65e824b847daddbd7a",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:3f6deca3e6eecf8200ef",
+      "evidence_locator": "table:0/column:140.5-320.0/anchor:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 167,
+      "physical_expected_characters": 204,
+      "extracted_sha256": "e9ec3aacc2d6d50b82f7293108c185bac7b36c2f8cd997ed2f30699ef8d04667",
+      "physical_expected_sha256": "fc2bd51b6c6f220a5e54acd3e3348badf9fc8cf4a13c3d1370ca4cb129ce6d9d",
+      "extracted_head": "Observar, identificar e registrar os períodos diários (dia e/ou noite) em que o Sol, demais estrelas, Lua e planetas estão visíveis no céu. (Possíveis articulaç",
+      "extracted_tail": "Observar, identificar e registrar os períodos diários (dia e/ou noite) em que o Sol, demais estrelas, Lua e planetas estão visíveis no céu. (Possíveis articulações com",
+      "expected_tail": "Observar, identificar e registrar os períodos diários (dia e/ou noite) em que o Sol, demais estrelas, Lua e planetas estão visíveis no céu. (Possíveis articulações com as habilidades EF03MA17 e EF03MA22).",
+      "extra_normalized_prefix": " as habilidades ef03ma17 e ef03ma22).",
+      "independent_boundary": {
+        "anchor": [
+          148.4365997314453,
+          205.14291381835938,
+          188.2165985107422,
+          218.60292053222656
+        ],
+        "body_bbox": [
+          141.0,
+          205.14291381835938,
+          320.53,
+          327.6129150390625
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 379.806396484375,
+        "physical_bottom_rule_y": 327.6129150390625,
+        "column": [
+          141.0,
+          320.53
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF03CI03",
+      "page": 33,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:44137749a4d570c43bd9",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:07c895e9ad4293c5bfb4",
+      "evidence_locator": "table:1/column:140.5-320.0/anchor:5",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 166,
+      "physical_expected_characters": 201,
+      "extracted_sha256": "8abbb182f6d0da01856b62cc87e2bec8c0ddbfc75a4b152650d88aa842f2084f",
+      "physical_expected_sha256": "562bf87ea56572dfda667c5d198d8e06f6c2a7e4e10e7eed5137e0defbcd5168",
+      "extracted_head": "Discutir hábitos necessários para a manutenção da saúde auditiva e visual considerando as condições do ambiente em termos de som e luz. (Possíveis articulações ",
+      "extracted_tail": "Discutir hábitos necessários para a manutenção da saúde auditiva e visual considerando as condições do ambiente em termos de som e luz. (Possíveis articulações com as",
+      "expected_tail": "Discutir hábitos necessários para a manutenção da saúde auditiva e visual consi­ derando as condições do ambiente em termos de som e luz. (Possíveis articulações com as habilidades EF15AR14 e EF15AR15)",
+      "extra_normalized_prefix": " habilidades ef15ar14 e ef15ar15)",
+      "independent_boundary": {
+        "anchor": [
+          148.36019897460938,
+          423.4106140136719,
+          187.2561798095703,
+          436.87060546875
+        ],
+        "body_bbox": [
+          141.0,
+          423.4106140136719,
+          319.58,
+          486.3740234375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 487.68231201171875,
+        "physical_bottom_rule_y": 486.3740234375,
+        "column": [
+          141.0,
+          319.58
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF03CI01",
+      "page": 34,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:ae0bcf1d43a7065b27b4",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:ebd525b6bba65ddcdbe8",
+      "evidence_locator": "table:1/column:140.4-319.6/anchor:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 157,
+      "physical_expected_characters": 197,
+      "extracted_sha256": "f4730bad01fac72dae3dc8fa876b3f825cb9d1dac736aa3feac47d432d0acc22",
+      "physical_expected_sha256": "804a4d257e762c0ca838343c754cd0ad3b448502450782393f388c879556dbf4",
+      "extracted_head": "Produzir diferentes sons a partir da vibração de variados objetos e identificar variáveis que influem nesse fenômeno. (Possíveis articulações com as habilida",
+      "extracted_tail": "Produzir diferentes sons a partir da vibração de variados objetos e identificar variáveis que influem nesse fenômeno. (Possíveis articulações com as habilida",
+      "expected_tail": "Produzir diferentes sons a par­ tir da vibração de variados objetos e identi­ ficar variáveis que influem nesse fenômeno. (Possíveis articulações com as habilida­ des EF15AR14, EF15AR15, EF35LP18 e",
+      "extra_normalized_prefix": "des ef15ar14, ef15ar15, ef35lp18 e",
+      "independent_boundary": {
+        "anchor": [
+          148.43649291992188,
+          220.23971557617188,
+          188.21649169921875,
+          233.69972229003906
+        ],
+        "body_bbox": [
+          141.0,
+          220.23971557617188,
+          319.58,
+          280.2397155761719
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 280.2397155761719,
+        "physical_bottom_rule_y": 280.2397155761719,
+        "column": [
+          141.0,
+          319.58
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF04CI02",
+      "page": 35,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:651404348c56c1e88646",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:713c0274a05c356cea86",
+      "evidence_locator": "table:0/column:139.9-320.1/anchor:2",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 161,
+      "physical_expected_characters": 196,
+      "extracted_sha256": "b40fc593997cb080c8b6851dac78d6a638cc87ea747a874e10cd5f5fa477558c",
+      "physical_expected_sha256": "71d6bfea8081ef312249f93de38d0f3f42f8e3f4953f185c351af40f2c403ec0",
+      "extracted_head": "Testar e relatar transformações nos materiais do dia a dia quando expostos a diferentes condições (aquecimento, resfriamento, luz e umidade). (Possíveis articul",
+      "extracted_tail": "Testar e relatar transformações nos materiais do dia a dia quando expostos a diferentes condições (aquecimento, resfriamento, luz e umidade). (Possíveis articula",
+      "expected_tail": "Testar e relatar transformações nos materiais do dia a dia quando expostos a diferentes condições (aquecimento, resfria­ mento, luz e umidade). (Possíveis articula­ ções com a habilidade EF04MA23)",
+      "extra_normalized_prefix": "coes com a habilidade ef04ma23)",
+      "independent_boundary": {
+        "anchor": [
+          147.49169921875,
+          210.57601928710938,
+          187.27169799804688,
+          224.03602600097656
+        ],
+        "body_bbox": [
+          140.06,
+          210.57601928710938,
+          320.06,
+          273.5196228027344
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 274.8280029296875,
+        "physical_bottom_rule_y": 273.5196228027344,
+        "column": [
+          140.06,
+          320.06
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF04CI10",
+      "page": 36,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:2200b4e09bd4b67dadeb",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:f2b37762770363c6fc28",
+      "evidence_locator": "table:0/column:142.9-321.5/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 186,
+      "physical_expected_characters": 223,
+      "extracted_sha256": "ca5ff499b015d0f41435ffeaea601938217fc7fe1e2816f96657d56c06db8545",
+      "physical_expected_sha256": "541944e7b065e515a07d5bd36a71b96d0bcb43b1930d57a78db9b8329768725f",
+      "extracted_head": "Comparar as indicações dos pontos cardeais resultantes da observação das sombras de uma vara (gnômon) com aquelas obtidas por meio de uma bússola. (Possíveis ar",
+      "extracted_tail": "ar as indicações dos pontos cardeais resultantes da observação das sombras de uma vara (gnômon) com aquelas obtidas por meio de uma bússola. (Possíveis articulações com as habilida",
+      "expected_tail": "Comparar as indicações dos pontos cardeais resultantes da observação das sombras de uma vara (gnômon) com aquelas obtidas por meio de uma bússola. (Possíveis articulações com as habilida­ des EF04MA20, EF04GE09 e EF04GE10).",
+      "extra_normalized_prefix": "des ef04ma20, ef04ge09 e ef04ge10).",
+      "independent_boundary": {
+        "anchor": [
+          150.3262939453125,
+          138.64498901367188,
+          190.10629272460938,
+          152.10499572753906
+        ],
+        "body_bbox": [
+          142.89,
+          138.64498901367188,
+          321.47,
+          225.11502075195312
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 226.42330932617188,
+        "physical_bottom_rule_y": 225.11502075195312,
+        "column": [
+          142.89,
+          321.47
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF04CI04",
+      "page": 36,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:c8df5f753dfc5b98abdb",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:ac5573525795e6814666",
+      "evidence_locator": "table:1/column:142.9-321.5/anchor:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 203,
+      "physical_expected_characters": 243,
+      "extracted_sha256": "62b4468e32e5dabd77f81e7ca389261b232b981ad12575dc9a6c61f789e21c15",
+      "physical_expected_sha256": "94efeacefd2c9a921947cee65425c2c40d3c0ca39e3c0679a93e0929e5ab11f1",
+      "extracted_head": "Analisar e construir cadeias alimentares simples, reconhecendo a posição ocupada pelos seres vivos nessas cadeias e o papel do Sol como fonte primária de energi",
+      "extracted_tail": "deias alimentares simples, reconhecendo a posição ocupada pelos seres vivos nessas cadeias e o papel do Sol como fonte primária de energia na produção de alimentos. (Possíveis arti",
+      "expected_tail": "Analisar e construir cadeias ali­ mentares simples, reconhecendo a posição ocupada pelos seres vivos nessas cadeias e o papel do Sol como fonte primária de energia na produção de alimentos. (Possíveis arti­ culações com a habilidade EF04HI01).",
+      "extra_normalized_prefix": "culacoes com a habilidade ef04hi01).",
+      "independent_boundary": {
+        "anchor": [
+          150.3262939453125,
+          405.4098205566406,
+          190.10629272460938,
+          418.86981201171875
+        ],
+        "body_bbox": [
+          142.89,
+          405.4098205566406,
+          321.47,
+          527.3713989257812
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 528.6797485351562,
+        "physical_bottom_rule_y": 527.3713989257812,
+        "column": [
+          142.89,
+          321.47
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF04CI10",
+      "page": 37,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:a11e5bc948423c9d428f",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:766b920108e9af38dbbe",
+      "evidence_locator": "table:0/column:139.5-320.1/anchor:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 186,
+      "physical_expected_characters": 223,
+      "extracted_sha256": "ca5ff499b015d0f41435ffeaea601938217fc7fe1e2816f96657d56c06db8545",
+      "physical_expected_sha256": "541944e7b065e515a07d5bd36a71b96d0bcb43b1930d57a78db9b8329768725f",
+      "extracted_head": "Comparar as indicações dos pontos cardeais resultantes da observação das sombras de uma vara (gnômon) com aquelas obtidas por meio de uma bússola. (Possíveis ar",
+      "extracted_tail": "ar as indicações dos pontos cardeais resultantes da observação das sombras de uma vara (gnômon) com aquelas obtidas por meio de uma bússola. (Possíveis articulações com as habilida",
+      "expected_tail": "Comparar as indicações dos pontos cardeais resultantes da observação das sombras de uma vara (gnômon) com aquelas obtidas por meio de uma bússola. (Possíveis articulações com as habilida­ des EF04MA20, EF04GE09 e EF04GE10).",
+      "extra_normalized_prefix": "des ef04ma20, ef04ge09 e ef04ge10).",
+      "independent_boundary": {
+        "anchor": [
+          146.7830047607422,
+          226.76531982421875,
+          186.56300354003906,
+          240.22532653808594
+        ],
+        "body_bbox": [
+          139.35,
+          226.76531982421875,
+          319.58,
+          313.92340087890625
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 367.25909423828125,
+        "physical_bottom_rule_y": 313.92340087890625,
+        "column": [
+          139.35,
+          319.58
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF04CI02",
+      "page": 37,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:7bf9bf0954a28c6080af",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:19552aeae16ff4ef28f4",
+      "evidence_locator": "table:1/column:139.5-320.1/anchor:5",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 157,
+      "physical_expected_characters": 198,
+      "extracted_sha256": "c586959766a7093f971bdf455cf6463d4c1a3905f3afca17dd66058410b84c8b",
+      "physical_expected_sha256": "b3ad7641a3eac4e2f78235cd4ad0f705a926ef6fe6b0b373deec9669ac6e0f05",
+      "extracted_head": "Testar e relatar transformações nos materiais do dia a dia quando expostos a diferentes condições (aquecimento, resfriamento, luz e umidade). (Possíveis arti",
+      "extracted_tail": "Testar e relatar transformações nos materiais do dia a dia quando expostos a diferentes condições (aquecimento, resfriamento, luz e umidade). (Possíveis arti",
+      "expected_tail": "Testar e relatar transformações nos materiais do dia a dia quando expostos a diferentes condições (aquecimento, res­ friamento, luz e umidade). (Possíveis arti­ culações com as habilidades EF04MA23,",
+      "extra_normalized_prefix": "culacoes com as habilidades ef04ma23,",
+      "independent_boundary": {
+        "anchor": [
+          146.7830047607422,
+          367.25909423828125,
+          186.56300354003906,
+          380.7190856933594
+        ],
+        "body_bbox": [
+          139.35,
+          367.25909423828125,
+          320.53,
+          427.2591247558594
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 427.2591247558594,
+        "physical_bottom_rule_y": 427.2591247558594,
+        "column": [
+          139.35,
+          320.53
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF04CI06",
+      "page": 38,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:3b8358a69039bcd130d4",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:1483f73a11750de2a3e9",
+      "evidence_locator": "table:0/column:145.1-324.3/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 153,
+      "physical_expected_characters": 196,
+      "extracted_sha256": "cee92f2a29a221afec3f5380f3fda9b80b0ed4e391679cd90e65c999b49b2762",
+      "physical_expected_sha256": "c39161002ba2dee264b0afcd31d057b4592ef2a0f58d77d0fd8fcbdab9980aba",
+      "extracted_head": "Relacionar a participação de fungos e bactérias no processo de decomposição, reconhecendo a importância ambiental deste processo. (Possíveis articulações",
+      "extracted_tail": "Relacionar a participação de fungos e bactérias no processo de decomposição, reconhecendo a importância ambiental deste processo. (Possíveis articulações",
+      "expected_tail": "Relacionar a participação de fungos e bactérias no processo de decompo­ sição, reconhecendo a importância ambien­ tal deste processo. (Possíveis articulações com as habilidades EF04LP19, EF04LP20,",
+      "extra_normalized_prefix": " com as habilidades ef04lp19, ef04lp20,",
+      "independent_boundary": {
+        "anchor": [
+          152.54220581054688,
+          139.49539184570312,
+          192.32220458984375,
+          152.9553985595703
+        ],
+        "body_bbox": [
+          145.11,
+          139.49539184570312,
+          324.31,
+          199.49542236328125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 199.49542236328125,
+        "physical_bottom_rule_y": 199.49542236328125,
+        "column": [
+          145.11,
+          324.31
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF04CI02",
+      "page": 39,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:9e0b2e49a971e0f83009",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:7c45cdf2b6ed7a13050c",
+      "evidence_locator": "table:0/column:141.2-322.2/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 161,
+      "physical_expected_characters": 196,
+      "extracted_sha256": "b40fc593997cb080c8b6851dac78d6a638cc87ea747a874e10cd5f5fa477558c",
+      "physical_expected_sha256": "71d6bfea8081ef312249f93de38d0f3f42f8e3f4953f185c351af40f2c403ec0",
+      "extracted_head": "Testar e relatar transformações nos materiais do dia a dia quando expostos a diferentes condições (aquecimento, resfriamento, luz e umidade). (Possíveis articul",
+      "extracted_tail": "Testar e relatar transformações nos materiais do dia a dia quando expostos a diferentes condições (aquecimento, resfriamento, luz e umidade). (Possíveis articula",
+      "expected_tail": "Testar e relatar transformações nos materiais do dia a dia quando expostos a diferentes condições (aquecimento, resfria­ mento, luz e umidade). (Possíveis articula­ ções com a habilidade EF04MA23)",
+      "extra_normalized_prefix": "coes com a habilidade ef04ma23)",
+      "independent_boundary": {
+        "anchor": [
+          149.61770629882812,
+          137.93630981445312,
+          189.397705078125,
+          151.3963165283203
+        ],
+        "body_bbox": [
+          142.18,
+          137.93630981445312,
+          322.18,
+          212.97079467773438
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 214.27911376953125,
+        "physical_bottom_rule_y": 212.97079467773438,
+        "column": [
+          142.18,
+          322.18
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF05CI03",
+      "page": 44,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:47026ab734f04b05a8cd",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:d7bb29d76bd5fcc2b3b0",
+      "evidence_locator": "table:0/column:139.9-322.4/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 200,
+      "physical_expected_characters": 245,
+      "extracted_sha256": "5dbefdaa19ce494d6a288ee21380f3a560bff51f7288b853672fc87dbbf6ab48",
+      "physical_expected_sha256": "d4bf98b96803eb3be7dfae07bc0018a296ba4aba93f1c2fbab059398c4f48414",
+      "extracted_head": "Selecionar argumentos que justifiquem a importância da cobertura vegetal para a manutenção do ciclo da água, a conservação dos solos, dos cursos de água e da qu",
+      "extracted_tail": "s que justifiquem a importância da cobertura vegetal para a manutenção do ciclo da água, a conservação dos solos, dos cursos de água e da qualidade do ar atmosférico. (Possíveis ar",
+      "expected_tail": "Selecionar argumentos que jus­ tifiquem a importância da cobertura vegetal para a manutenção do ciclo da água, a con­ servação dos solos, dos cursos de água e da qualidade do ar atmosférico. (Possíveis ar­ ticulações com as habilidades EF35LP17,",
+      "extra_normalized_prefix": "ticulacoes com as habilidades ef35lp17,",
+      "independent_boundary": {
+        "anchor": [
+          147.49159240722656,
+          136.60159301757812,
+          187.27159118652344,
+          150.0615997314453
+        ],
+        "body_bbox": [
+          140.06,
+          136.60159301757812,
+          322.42,
+          208.60159301757812
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 208.60159301757812,
+        "physical_bottom_rule_y": 208.60159301757812,
+        "column": [
+          140.06,
+          322.42
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF05CI10",
+      "page": 45,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:4e53840b040c87684a5f",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:7c14f28c696055870cd7",
+      "evidence_locator": "table:0/column:140.6-320.6/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 214,
+      "physical_expected_characters": 252,
+      "extracted_sha256": "5e1c3c4c4fd6c5995ca9e19a04fdaa13c7ffe1859da9a33f805513d64994df2e",
+      "physical_expected_sha256": "f9bab716cb489a50ac1abcfb2e1bd1f5a09ef3c6340750fafd6990e50f47d65c",
+      "extracted_head": "Identificar algumas constelações no céu, com o apoio de recursos (como mapas celestes e aplicativos digitais, entre outros), e os períodos do ano em que elas sã",
+      "extracted_tail": "o céu, com o apoio de recursos (como mapas celestes e aplicativos digitais, entre outros), e os períodos do ano em que elas são visíveis no início da noite. (Possíveis articulações",
+      "expected_tail": "Identificar algumas constelações no céu, com o apoio de recursos (como mapas celestes e aplicativos digitais, entre outros), e os períodos do ano em que elas são visíveis no início da noite. (Possíveis articulações com as habilidades EF35LP17, EF35LP20",
+      "extra_normalized_prefix": " com as habilidades ef35lp17, ef35lp20",
+      "independent_boundary": {
+        "anchor": [
+          148.90899658203125,
+          139.35372924804688,
+          188.68899536132812,
+          152.81373596191406
+        ],
+        "body_bbox": [
+          141.47,
+          139.35372924804688,
+          320.76,
+          211.35369873046875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 211.35369873046875,
+        "physical_bottom_rule_y": 211.35369873046875,
+        "column": [
+          141.47,
+          320.76
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF06CI11",
+      "page": 47,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:66fce721fc0e8cdd3bef",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:d5510444fc1b9980d3ec",
+      "evidence_locator": "table:0/column:140.3-322.4/anchor:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 162,
+      "physical_expected_characters": 189,
+      "extracted_sha256": "782b7a76de68780a177b08fdc6919202ef481542245a406eac551c798f066393",
+      "physical_expected_sha256": "2fa8c2bddbb764c4aae3f838a37f6b8454ed2c86f828a47beafb99e291377435",
+      "extracted_head": "Identificar as diferentes camadas que estruturam o planeta Terra (da estrutura interna à atmosfera) e suas principais características. (Possíveis articulações c",
+      "extracted_tail": "Identificar as diferentes camadas que estruturam o planeta Terra (da estrutura interna à atmosfera) e suas principais características. (Possíveis articulações com",
+      "expected_tail": "Identificar as diferentes cama­ das que estruturam o planeta Terra (da es­ trutura interna à atmosfera) e suas principais características. (Possíveis articulações com a habilidade EF06GE09)",
+      "extra_normalized_prefix": " a habilidade ef06ge09)",
+      "independent_boundary": {
+        "anchor": [
+          148.4365997314453,
+          229.23739624023438,
+          188.2165985107422,
+          242.69740295410156
+        ],
+        "body_bbox": [
+          141.0,
+          229.23739624023438,
+          322.42,
+          311.68280029296875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 312.9911193847656,
+        "physical_bottom_rule_y": 311.68280029296875,
+        "column": [
+          141.0,
+          322.42
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF06CI08",
+      "page": 48,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:5ac461aeacd6a0dfa86e",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:98884c72524429aa818b",
+      "evidence_locator": "table:0/column:140.7-321.5/anchor:3",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 245,
+      "physical_expected_characters": 284,
+      "extracted_sha256": "caff51d758e3c8407f6af5d4b23e460a464b020960e6f9cd7d3d978c73a73439",
+      "physical_expected_sha256": "4fdc46900e8474a5a435534c186e55b6c34522d0be3523d94672f922ffc6dc46",
+      "extracted_head": "Explicar a importância da visão (captação e interpretação das imagens) na interação do organismo com o meio e, com base no funcionamento do olho humano, selecio",
+      "extracted_tail": "gens) na interação do organismo com o meio e, com base no funcionamento do olho humano, selecionar lentes adequadas para a correção de diferentes defeitos da visão. (Possíveis arti",
+      "expected_tail": "Explicar a importância da visão (captação e interpretação das imagens) na interação do organismo com o meio e, com base no funcionamento do olho humano, se­ lecionar lentes adequadas para a correção de diferentes defeitos da visão. (Possíveis arti­ culações com a habilidade EF67LP12)",
+      "extra_normalized_prefix": "culacoes com a habilidade ef67lp12)",
+      "independent_boundary": {
+        "anchor": [
+          148.90890502929688,
+          417.1488952636719,
+          188.68890380859375,
+          430.60888671875
+        ],
+        "body_bbox": [
+          141.47,
+          417.1488952636719,
+          321.47,
+          566.169189453125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 566.169189453125,
+        "column": [
+          141.47,
+          321.47
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF06CI11",
+      "page": 49,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:9fdbcb8fb9af6bb7d8e0",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:eeea3cf44482bbb119f7",
+      "evidence_locator": "table:0/column:139.9-320.1/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 162,
+      "physical_expected_characters": 189,
+      "extracted_sha256": "782b7a76de68780a177b08fdc6919202ef481542245a406eac551c798f066393",
+      "physical_expected_sha256": "2fa8c2bddbb764c4aae3f838a37f6b8454ed2c86f828a47beafb99e291377435",
+      "extracted_head": "Identificar as diferentes camadas que estruturam o planeta Terra (da estrutura interna à atmosfera) e suas principais características. (Possíveis articulações c",
+      "extracted_tail": "Identificar as diferentes camadas que estruturam o planeta Terra (da estrutura interna à atmosfera) e suas principais características. (Possíveis articulações com",
+      "expected_tail": "Identificar as diferentes cama­ das que estruturam o planeta Terra (da es­ trutura interna à atmosfera) e suas principais características. (Possíveis articulações com a habilidade EF06GE09)",
+      "extra_normalized_prefix": " a habilidade ef06ge09)",
+      "independent_boundary": {
+        "anchor": [
+          147.49169921875,
+          139.35372924804688,
+          187.27169799804688,
+          152.81373596191406
+        ],
+        "body_bbox": [
+          140.06,
+          139.35372924804688,
+          320.06,
+          252.09051513671875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 253.3988037109375,
+        "physical_bottom_rule_y": 252.09051513671875,
+        "column": [
+          140.06,
+          320.06
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF06CI08",
+      "page": 50,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:5d9162cb34e3e6c01125",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:cedd67019edae3e45e39",
+      "evidence_locator": "table:0/column:142.9-321.5/anchor:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 245,
+      "physical_expected_characters": 284,
+      "extracted_sha256": "caff51d758e3c8407f6af5d4b23e460a464b020960e6f9cd7d3d978c73a73439",
+      "physical_expected_sha256": "4fdc46900e8474a5a435534c186e55b6c34522d0be3523d94672f922ffc6dc46",
+      "extracted_head": "Explicar a importância da visão (captação e interpretação das imagens) na interação do organismo com o meio e, com base no funcionamento do olho humano, selecio",
+      "extracted_tail": "gens) na interação do organismo com o meio e, com base no funcionamento do olho humano, selecionar lentes adequadas para a correção de diferentes defeitos da visão. (Possíveis arti",
+      "expected_tail": "Explicar a importância da visão (captação e interpretação das imagens) na interação do organismo com o meio e, com base no funcionamento do olho humano, se­ lecionar lentes adequadas para a correção de diferentes defeitos da visão. (Possíveis arti­ culações com a habilidade EF67LP12)",
+      "extra_normalized_prefix": "culacoes com a habilidade ef67lp12)",
+      "independent_boundary": {
+        "anchor": [
+          150.3262939453125,
+          298.62359619140625,
+          190.10629272460938,
+          312.0835876464844
+        ],
+        "body_bbox": [
+          142.89,
+          298.62359619140625,
+          321.47,
+          420.5851135253906
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 421.8935241699219,
+        "physical_bottom_rule_y": 420.5851135253906,
+        "column": [
+          142.89,
+          321.47
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF06CI11",
+      "page": 50,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:02d425ebe538aef02001",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:033227007ed8c096d0da",
+      "evidence_locator": "table:0/column:142.9-321.5/anchor:3",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 158,
+      "physical_expected_characters": 191,
+      "extracted_sha256": "e6e1a327a7a348b30f4f71281041ccbcfeb56377af67c083ce99802b269d2c3d",
+      "physical_expected_sha256": "5ad675bf3fe9cdf156cb41093f2446564233f6008aa77239938f5a64319b7dde",
+      "extracted_head": "Identificar as diferentes camadas que estruturam o planeta Terra (da estrutura interna à atmosfera) e suas principais características. (Possíveis articulações",
+      "extracted_tail": "Identificar as diferentes camadas que estruturam o planeta Terra (da estrutura interna à atmosfera) e suas principais características. (Possíveis articulações",
+      "expected_tail": "Identificar as diferentes cama­ das que estruturam o planeta Terra (da es­ trutura interna à atmosfera) e suas princi­ pais características. (Possíveis articulações com a habilidade EF06GE10)",
+      "extra_normalized_prefix": " com a habilidade ef06ge10)",
+      "independent_boundary": {
+        "anchor": [
+          150.3262939453125,
+          421.8935241699219,
+          190.10629272460938,
+          435.353515625
+        ],
+        "body_bbox": [
+          142.89,
+          421.8935241699219,
+          321.47,
+          564.7518920898438
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 564.7518920898438,
+        "column": [
+          142.89,
+          321.47
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF06CI09",
+      "page": 52,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:1f30ca3187f99110288e",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:36ec767ce877393fe314",
+      "evidence_locator": "table:0/column:138.4-320.1/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 158,
+      "physical_expected_characters": 201,
+      "extracted_sha256": "cc6e6c1fb8d78b44c5aa2c4f996d809130a6af1791622f4439506561fb3c2027",
+      "physical_expected_sha256": "680ba2dd6700f043fdeb711c4ecf0019a52a7c5cd6cb0011cf879cdf771e431e",
+      "extracted_head": "Deduzir que a estrutura, a sustentação e a movimentação dos animais resultam da interação entre os sistemas muscular, ósseo e nervoso. (Possíveis articulações",
+      "extracted_tail": "Deduzir que a estrutura, a sustentação e a movimentação dos animais resultam da interação entre os sistemas muscular, ósseo e nervoso. (Possíveis articulações",
+      "expected_tail": "Deduzir que a estrutura, a sus­ tentação e a movimentação dos animais resul­ tam da interação entre os sistemas muscular, ósseo e nervoso. (Possíveis articulações com as habilidades EF06HI3, EF06HI38 e",
+      "extra_normalized_prefix": " com as habilidades ef06hi3, ef06hi38 e",
+      "independent_boundary": {
+        "anchor": [
+          144.65699768066406,
+          139.87911987304688,
+          184.43699645996094,
+          153.33912658691406
+        ],
+        "body_bbox": [
+          137.22,
+          139.87911987304688,
+          320.06,
+          199.87911987304688
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 199.87911987304688,
+        "physical_bottom_rule_y": 199.87911987304688,
+        "column": [
+          137.22,
+          320.06
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF07CI01",
+      "page": 53,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:c4777a3d63dc9e6524ee",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:866ca39520f3a36f158e",
+      "evidence_locator": "table:1/column:139.9-322.9/anchor:2",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 165,
+      "physical_expected_characters": 200,
+      "extracted_sha256": "93a2100fa18d698570633bc95fe38a33c1fb134561f6e9acb69339adec1ab76b",
+      "physical_expected_sha256": "35baff21fcf73c4365d0be38284101370ef977b1d8b27758fac61f93abd76139",
+      "extracted_head": "Discutir a aplicação, ao longo da história, das máquinas simples e propor soluções e invenções para a realização de tarefas mecânicas cotidianas. (Possíveis art",
+      "extracted_tail": "Discutir a aplicação, ao longo da história, das máquinas simples e propor soluções e invenções para a realização de tarefas mecânicas cotidianas. (Possíveis articula",
+      "expected_tail": "Discutir a aplicação, ao longo da história, das máquinas simples e propor solu­ ções e invenções para a realização de tarefas mecânicas cotidianas. (Possíveis articula­ ções com a habilidade EF07GE08)",
+      "extra_normalized_prefix": "coes com a habilidade ef07ge08)",
+      "independent_boundary": {
+        "anchor": [
+          147.49169921875,
+          323.88909912109375,
+          187.27169799804688,
+          337.3490905761719
+        ],
+        "body_bbox": [
+          140.06,
+          323.88909912109375,
+          322.89,
+          400.1338195800781
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 401.4421081542969,
+        "physical_bottom_rule_y": 400.1338195800781,
+        "column": [
+          140.06,
+          322.89
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF07CI07",
+      "page": 54,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:3054e1918dbc5d87e373",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:27bbb41c4c4a2ce152e0",
+      "evidence_locator": "table:0/column:139.2-322.9/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 258,
+      "physical_expected_characters": 287,
+      "extracted_sha256": "4a49ab3a26042b021c0bc7ce5d23b7b6c9d97fb8a21b41f463cfdaccd4116f31",
+      "physical_expected_sha256": "abebfb78681aa232780e33aab64cb9f62f972798c4034f564821a92e24902953",
+      "extracted_head": "Caracterizar os principais ecossistemas brasileiros quanto à paisagem, à quantidade de água, ao tipo de solo, à disponibilidade de luz solar, à temperatura etc.",
+      "extracted_tail": "idade de água, ao tipo de solo, à disponibilidade de luz solar, à temperatura etc., correlacionando essas características à flora e fauna específicas. (Possíveis articulações com a",
+      "expected_tail": "Caracterizar os principais ecos­ sistemas brasileiros quanto à paisagem, à quantidade de água, ao tipo de solo, à disponi­ bilidade de luz solar, à temperatura etc., corre­ lacionando essas características à flora e fau­ na específicas. (Possíveis articulações com a habilidade EF07GE11)",
+      "extra_normalized_prefix": " habilidade ef07ge11)",
+      "independent_boundary": {
+        "anchor": [
+          146.07420349121094,
+          139.35372924804688,
+          185.8542022705078,
+          152.81373596191406
+        ],
+        "body_bbox": [
+          138.64,
+          139.35372924804688,
+          322.89,
+          253.44091796875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 254.74920654296875,
+        "physical_bottom_rule_y": 253.44091796875,
+        "column": [
+          138.64,
+          322.89
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF07CI07",
+      "page": 55,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:c9d2a2fa01dcb65a9090",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:c5cfc2440c1b1ac22c0e",
+      "evidence_locator": "table:0/column:140.6-322.9/anchor:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 254,
+      "physical_expected_characters": 279,
+      "extracted_sha256": "861ed1576b511a796b8ab340444243a4114b824f072d32d7a74a2888a1068757",
+      "physical_expected_sha256": "41c5a21fcaa489a782dd021224ba2aacbf74b139c4436b3ae841b84ede38292a",
+      "extracted_head": "Caracterizar os principais ecossistemas brasileiros quanto à paisagem, à quantidade de água, ao tipo de solo, à disponibilidade de luz solar, à temperatura etc.",
+      "extracted_tail": "uantidade de água, ao tipo de solo, à disponibilidade de luz solar, à temperatura etc., correlacionando essas características à flora e fauna específicas. (Possível articulação com",
+      "expected_tail": "Caracterizar os principais ecos­ sistemas brasileiros quanto à paisagem, à quantidade de água, ao tipo de solo, à dis­ ponibilidade de luz solar, à temperatura etc., correlacionando essas características à flora e fauna específicas. (Possível articulação com Habilidade EF07GE11)",
+      "extra_normalized_prefix": " habilidade ef07ge11)",
+      "independent_boundary": {
+        "anchor": [
+          148.9091033935547,
+          254.74920654296875,
+          188.68910217285156,
+          268.2091979980469
+        ],
+        "body_bbox": [
+          141.47,
+          254.74920654296875,
+          322.89,
+          368.8365173339844
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 370.1448059082031,
+        "physical_bottom_rule_y": 368.8365173339844,
+        "column": [
+          141.47,
+          322.89
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF07CI10",
+      "page": 57,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:46a5ecfe72091e5b43aa",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:6cbe4634a7c668d80361",
+      "evidence_locator": "table:0/column:144.3-322.9/anchor:3",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 285,
+      "physical_expected_characters": 309,
+      "extracted_sha256": "c5f931ba4a3c6f1651bc3583faa7e0b5fbdcfed8d85b25d9d36d87e5ce81c059",
+      "physical_expected_sha256": "0951a7841f76a49f28bfc2f3e6302a0b738c0e4e06869d5c21967c5d987b991a",
+      "extracted_head": "Argumentar sobre a importância da vacinação para a saúde pública, com base em informações sobre a maneira como a vacina atua no organismo e o papel histórico da",
+      "extracted_tail": " como a vacina atua no organismo e o papel histórico da vacinação para a manutenção da saúde individual e coletiva e para a erradicação de doenças. (Possíveis articulações com a ha",
+      "expected_tail": "r sobre a importân­ cia da vacinação para a saúde pública, com base em informações sobre a maneira como a vacina atua no organismo e o papel históri­ co da vacinação para a manutenção da saúde individual e coletiva e para a erradicação de doenças. (Possíveis articulações com a ha­ bilidade EF67LP12)",
+      "extra_normalized_prefix": "bilidade ef67lp12)",
+      "independent_boundary": {
+        "anchor": [
+          151.7436065673828,
+          325.3489990234375,
+          191.5236053466797,
+          338.8089904785156
+        ],
+        "body_bbox": [
+          144.31,
+          325.3489990234375,
+          322.89,
+          459.31060791015625
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 460.6189270019531,
+        "physical_bottom_rule_y": 459.31060791015625,
+        "column": [
+          144.31,
+          322.89
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF07CI13",
+      "page": 57,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:d03c3e369c7e1c78ce89",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:7ce51a0468be00936ea2",
+      "evidence_locator": "table:0/column:144.3-322.9/anchor:5",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 331,
+      "physical_expected_characters": 377,
+      "extracted_sha256": "3d0dc48bd7a2c058425a32d0abb706d21527ab709cb6554e1dec01b55363df77",
+      "physical_expected_sha256": "a1827f6d2dc4cb8600bef535f0d061faf3d29f84d0ef6717fff0d740f6717a6a",
+      "extracted_head": "Descrever o mecanismo natural do efeito estufa, seu papel fundamental para o desenvolvimento da vida na Terra, discutir as ações humanas responsáveis pelo seu a",
+      "extracted_tail": "elo seu aumento artificial (queima dos combustíveis fósseis, desmatamento, queimadas etc.) e selecionar e implementar propostas para a reversão ou controle desse quadro. (Possíveis",
+      "expected_tail": "desenvolvimento da vida na Terra, discu­ tir as ações humanas responsáveis pelo seu aumento artificial (queima dos combustíveis fósseis, desmatamento, queimadas etc.) e se­ lecionar e implementar propostas para a re­ versão ou controle desse quadro. (Possíveis articulações com a habilidade EF67LP12)",
+      "extra_normalized_prefix": " articulacoes com a habilidade ef67lp12)",
+      "independent_boundary": {
+        "anchor": [
+          151.7436065673828,
+          460.6189270019531,
+          191.5236053466797,
+          474.07891845703125
+        ],
+        "body_bbox": [
+          144.31,
+          460.6189270019531,
+          322.89,
+          574.7061157226562
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 574.7061157226562,
+        "column": [
+          144.31,
+          322.89
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF07CI05",
+      "page": 58,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:3b14609f06d7180bb091",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:31fdddca0e08726970ab",
+      "evidence_locator": "table:0/column:142.9-322.9/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 240,
+      "physical_expected_characters": 275,
+      "extracted_sha256": "d9495d98294acd5025eb7614d2496878333e43a1e293dfedf569649c657d617c",
+      "physical_expected_sha256": "88336f9f95db3b67ae487da5b4ffb869510dd25ff9908ad1d2d78bf7e38f0b11",
+      "extracted_head": "Discutir o uso de diferentes tipos de combustível e máquinas térmicas ao longo do tempo, para avaliar avanços, questões econômicas e problemas socioambientais c",
+      "extracted_tail": " térmicas ao longo do tempo, para avaliar avanços, questões econômicas e problemas socioambientais causados pela produção e uso desses materiais e máquinas. (Possíveis articulações",
+      "expected_tail": "Discutir o uso de diferentes ti­ pos de combustível e máquinas térmicas ao longo do tempo, para avaliar avanços, ques­ tões econômicas e problemas socioambien­ tais causados pela produção e uso desses ma­ teriais e máquinas. (Possíveis articulações com a habilidade EF67LP21)",
+      "extra_normalized_prefix": " com a habilidade ef67lp21)",
+      "independent_boundary": {
+        "anchor": [
+          150.32620239257812,
+          139.35372924804688,
+          190.106201171875,
+          152.81373596191406
+        ],
+        "body_bbox": [
+          142.89,
+          139.35372924804688,
+          322.89,
+          273.3152160644531
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 274.62359619140625,
+        "physical_bottom_rule_y": 273.3152160644531,
+        "column": [
+          142.89,
+          322.89
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF07CI06",
+      "page": 58,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:a5d049dea1c3bda18b06",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:029187a99c0bb0a8ea7c",
+      "evidence_locator": "table:0/column:142.9-322.9/anchor:2",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 240,
+      "physical_expected_characters": 282,
+      "extracted_sha256": "d5e8d116d99a6e8667578d41c5b3de33cdba42fbd74a42e57f4f543456ba05d6",
+      "physical_expected_sha256": "8257f7bc5c3431e2d9f27a30e1e6b6d3f7f20da1163263fb52b960b4869b2e69",
+      "extracted_head": "Discutir e avaliar mudanças econômicas, culturais e sociais, tanto na vida cotidiana quanto no mundo do trabalho, decorrentes do desenvolvimento de novos materi",
+      "extracted_tail": " tanto na vida cotidiana quanto no mundo do trabalho, decorrentes do desenvolvimento de novos materiais e tecnologias (como automação e informatização). (Possíveis articulações com",
+      "expected_tail": "Discutir e avaliar mudanças econômicas, culturais e sociais, tanto na vida cotidiana quanto no mundo do trabalho, de­ correntes do desenvolvimento de novos ma­ teriais e tecnologias (como automação e in­ formatização). (Possíveis articulações com as habilidades EF06GE08 e EF07HI17)",
+      "extra_normalized_prefix": " as habilidades ef06ge08 e ef07hi17)",
+      "independent_boundary": {
+        "anchor": [
+          150.32620239257812,
+          274.62359619140625,
+          190.106201171875,
+          288.0835876464844
+        ],
+        "body_bbox": [
+          142.89,
+          274.62359619140625,
+          322.89,
+          388.7108154296875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 390.01910400390625,
+        "physical_bottom_rule_y": 388.7108154296875,
+        "column": [
+          142.89,
+          322.89
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF07CI11",
+      "page": 58,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:42952b1b58386f512bb0",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:0e774b78e63d68022d8f",
+      "evidence_locator": "table:0/column:142.9-322.9/anchor:5",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 203,
+      "physical_expected_characters": 223,
+      "extracted_sha256": "831257544290af38f238f40869e73e87c77017b910d8df906e6804d7e1fc71b0",
+      "physical_expected_sha256": "137a7011cfd8d40bc89c2983dd725de71524ce45f68cff853c0b9528642016b3",
+      "extracted_head": "Analisar historicamente o uso da tecnologia, incluindo a digital, nas diferentes dimensões da vida humana, considerando indicadores ambientais e de qualidade de",
+      "extracted_tail": " o uso da tecnologia, incluindo a digital, nas diferentes dimensões da vida humana, considerando indicadores ambientais e de qualidade de vida. (Possíveis articulações com a habili",
+      "expected_tail": "Analisar historicamente o uso da tecnologia, incluindo a digital, nas diferen­ tes dimensões da vida humana, consideran­ do indicadores ambientais e de qualidade de vida. (Possíveis articulações com a habili­ dade EF07GE10)",
+      "extra_normalized_prefix": "dade ef07ge10)",
+      "independent_boundary": {
+        "anchor": [
+          150.32620239257812,
+          390.01910400390625,
+          190.106201171875,
+          403.4790954589844
+        ],
+        "body_bbox": [
+          142.89,
+          390.01910400390625,
+          322.89,
+          562.6259155273438
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 562.6259155273438,
+        "column": [
+          142.89,
+          322.89
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF08CI01",
+      "page": 59,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:fd28fedf921bad0cba5f",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:916ff11d91a515b859f7",
+      "evidence_locator": "table:1/column:139.9-319.3/anchor:2",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 161,
+      "physical_expected_characters": 198,
+      "extracted_sha256": "a136b274e8d65c6a0f6826bebb52df5cc0282ef568b1c3d903dbd7428d10e1fe",
+      "physical_expected_sha256": "6910f4a7bef5e3426ed297ad27d785fda46b05eb3bb5e7239a0f6f605f71270f",
+      "extracted_head": "Identificar e classificar diferentes fontes (renováveis e não renováveis) e tipos de energia utilizados em residências, comunidades ou cidades. (Possíveis artic",
+      "extracted_tail": "Identificar e classificar diferentes fontes (renováveis e não renováveis) e tipos de energia utilizados em residências, comunidades ou cidades. (Possíveis articu",
+      "expected_tail": "Identificar e classificar diferen­ tes fontes (renováveis e não renováveis) e tipos de energia utilizados em residências, comunidades ou cidades. (Possíveis articu­ lações com a habilidade EF08HI03)",
+      "extra_normalized_prefix": "lacoes com a habilidade ef08hi03)",
+      "independent_boundary": {
+        "anchor": [
+          147.49169921875,
+          363.2080078125,
+          187.27169799804688,
+          376.6679992675781
+        ],
+        "body_bbox": [
+          140.06,
+          363.2080078125,
+          320.06,
+          437.16949462890625
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 438.4779052734375,
+        "physical_bottom_rule_y": 437.16949462890625,
+        "column": [
+          140.06,
+          320.06
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF08CI06",
+      "page": 60,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:6588b6ef7be96d9eb5ac",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:d66a129f06ee712b2477",
+      "evidence_locator": "table:0/column:138.3-318.6/anchor:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 254,
+      "physical_expected_characters": 300,
+      "extracted_sha256": "3f9dab436411524ae36b4e0a5f30d83eb0b5c18297c4b80e77da8fa7b1d942ac",
+      "physical_expected_sha256": "3d01033a39beb8379db79d1075fe907497f8ef2e410447833b8f96330e24ba66",
+      "extracted_head": "Discutir e avaliar usinas de geração de energia elétrica (termelétricas, hidrelétricas, eólicas etc.), suas semelhanças e diferenças, seus impactos socioambient",
+      "extracted_tail": "idrelétricas, eólicas etc.), suas semelhanças e diferenças, seus impactos socioambientais, e como essa energia chega e é usada em sua cidade, comunidade, casa ou escola. (Possíveis",
+      "expected_tail": "Discutir e avaliar usinas de ge­ ração de energia elétrica (termelétricas, hi­ drelétricas, eólicas etc.), suas semelhanças e diferenças, seus impactos socioambientais, e como essa energia chega e é usada em sua ci­ dade, comunidade, casa ou escola. (Possíveis articulações com a habilidade EF89LP12)",
+      "extra_normalized_prefix": " articulacoes com a habilidade ef89lp12)",
+      "independent_boundary": {
+        "anchor": [
+          144.65699768066406,
+          215.13201904296875,
+          184.43699645996094,
+          228.59202575683594
+        ],
+        "body_bbox": [
+          137.22,
+          215.13201904296875,
+          318.64,
+          319.02410888671875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 320.33251953125,
+        "physical_bottom_rule_y": 319.02410888671875,
+        "column": [
+          137.22,
+          318.64
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF08CI11",
+      "page": 60,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:613b9a64c46ce6eec6a9",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:f0e2e1c2608ead7b773f",
+      "evidence_locator": "table:0/column:138.3-318.6/anchor:4",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 161,
+      "physical_expected_characters": 183,
+      "extracted_sha256": "81da2238f426a63153687bd1784af5dbafc22c2f77e62f0e68b65c1d31fb2846",
+      "physical_expected_sha256": "d90b15009b5e018bc74d5477bf88fdb1fe953ca43a6e60417e55645109ee177f",
+      "extracted_head": "Selecionar argumentos que evidenciem as múltiplas dimensões da sexualidade humana (biológica, sociocultural, afetiva e ética). (Possíveis articulações com a hab",
+      "extracted_tail": "Selecionar argumentos que evidenciem as múltiplas dimensões da sexualidade humana (biológica, sociocultural, afetiva e ética). (Possíveis articulações com a habi",
+      "expected_tail": "Selecionar argumentos que evi­ denciem as múltiplas dimensões da sexuali­ dade humana (biológica, sociocultural, afetiva e ética). (Possíveis articulações com a habi­ lidade EF89LP12)",
+      "extra_normalized_prefix": "lidade ef89lp12)",
+      "independent_boundary": {
+        "anchor": [
+          144.65699768066406,
+          425.5329284667969,
+          184.43699645996094,
+          438.992919921875
+        ],
+        "body_bbox": [
+          137.22,
+          425.5329284667969,
+          318.64,
+          557.665283203125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 557.665283203125,
+        "column": [
+          137.22,
+          318.64
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF08CI12",
+      "page": 61,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:d198ca7db8deca6db3dc",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:22ac324086e3561caeed",
+      "evidence_locator": "table:0/column:139.8-318.6/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 202,
+      "physical_expected_characters": 233,
+      "extracted_sha256": "12355772e0d9f25f9e30a728dc8d661f57a65501cbdc91e9604548eaac31921c",
+      "physical_expected_sha256": "efc7f10977c4088ea42bcf7a09974cc2bdaa18493f981aa99b88ce47e849204d",
+      "extracted_head": "Justificar, por meio da construção de modelos e da observação da Lua no céu, a ocorrência das fases da Lua e dos eclipses, com base nas posições relativas entre",
+      "extracted_tail": "a construção de modelos e da observação da Lua no céu, a ocorrência das fases da Lua e dos eclipses, com base nas posições relativas entre Sol, Terra e Lua. (Possíveis articulações",
+      "expected_tail": "Justificar, por meio da cons­ trução de modelos e da observação da Lua no céu, a ocorrência das fases da Lua e dos eclipses, com base nas posições relativas en­ tre Sol, Terra e Lua. (Possíveis articulações com a habilidade EF08MA04)",
+      "extra_normalized_prefix": " com a habilidade ef08ma04)",
+      "independent_boundary": {
+        "anchor": [
+          147.49169921875,
+          139.35372924804688,
+          187.27169799804688,
+          152.81373596191406
+        ],
+        "body_bbox": [
+          140.06,
+          139.35372924804688,
+          318.64,
+          318.6376953125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 319.94610595703125,
+        "physical_bottom_rule_y": 318.6376953125,
+        "column": [
+          140.06,
+          318.64
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF08CI01",
+      "page": 62,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:73540a68898f2819f875",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:93e5ab0b0821bc62ef98",
+      "evidence_locator": "table:0/column:139.2-318.6/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 159,
+      "physical_expected_characters": 200,
+      "extracted_sha256": "a610f67240d7a659c44afb3df435074f24b7e6057e033974b42d8de4f4737336",
+      "physical_expected_sha256": "46a575b6169a2b8f83477c68be050b0373cd6e61b1502282f12680656d194500",
+      "extracted_head": "Identificar e classificar diferentes fontes (renováveis e não renováveis) e tipos de energia utilizados em residências, comunidades ou cidades. (Possíveis arti",
+      "extracted_tail": "Identificar e classificar diferentes fontes (renováveis e não renováveis) e tipos de energia utilizados em residências, comunidades ou cidades. (Possíveis arti",
+      "expected_tail": "Identificar e classificar diferen­ tes fontes (renováveis e não renováveis) e tipos de energia utilizados em residências, comunidades ou cidades. (Possíveis arti­ culações com as habilidades EF08LP03,",
+      "extra_normalized_prefix": "culacoes com as habilidades ef08lp03,",
+      "independent_boundary": {
+        "anchor": [
+          146.0742950439453,
+          139.35372924804688,
+          185.8542938232422,
+          152.81373596191406
+        ],
+        "body_bbox": [
+          138.64,
+          139.35372924804688,
+          318.64,
+          199.35369873046875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 199.35369873046875,
+        "physical_bottom_rule_y": 199.35369873046875,
+        "column": [
+          138.64,
+          318.64
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF08CI07",
+      "page": 63,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:7b0089328aec06a16ca8",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:0317ece6b413726a4024",
+      "evidence_locator": "table:0/column:140.7-321.5/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 155,
+      "physical_expected_characters": 182,
+      "extracted_sha256": "4b87c04cf24617bc71dbc8e917ef100233c3697d6d963d566930f6fc29fdc468",
+      "physical_expected_sha256": "45711843d5389af8f533126e8b0b03a054e9166f13063526c5a92bb9e0be2fb5",
+      "extracted_head": "Comparar diferentes processos reprodutivos em plantas e animais em relação aos mecanismos adaptativos e evolutivos. (Possíveis articulações com as habilida",
+      "extracted_tail": "Comparar diferentes processos reprodutivos em plantas e animais em relação aos mecanismos adaptativos e evolutivos. (Possíveis articulações com as habilida",
+      "expected_tail": "Comparar diferentes processos reprodutivos em plantas e animais em rela­ ção aos mecanismos adaptativos e evolutivos. (Possíveis articulações com as habilida­ des EF08LP03, EF69LP36)",
+      "extra_normalized_prefix": "des ef08lp03, ef69lp36)",
+      "independent_boundary": {
+        "anchor": [
+          148.90899658203125,
+          139.35372924804688,
+          188.68899536132812,
+          152.81373596191406
+        ],
+        "body_bbox": [
+          141.47,
+          139.35372924804688,
+          321.47,
+          213.31521606445312
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 214.62359619140625,
+        "physical_bottom_rule_y": 213.31521606445312,
+        "column": [
+          141.47,
+          321.47
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF08CI11",
+      "page": 63,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:c2d11dd8a34ef4b25519",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:965171ebdaca4a639731",
+      "evidence_locator": "table:0/column:140.7-321.5/anchor:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 157,
+      "physical_expected_characters": 195,
+      "extracted_sha256": "9eac474323a88230c727c9f46dcb4c49047ca71f59c2abf0bbf4bb33f7cf711d",
+      "physical_expected_sha256": "ec5a05b0347f6121e9eaca11a346c29887dac6388bb54023240316d42312b3a3",
+      "extracted_head": "Selecionar argumentos que evidenciem as múltiplas dimensões da sexualidade humana (biológica, sociocultural, afetiva e ética). (Possíveis articulações com as",
+      "extracted_tail": "Selecionar argumentos que evidenciem as múltiplas dimensões da sexualidade humana (biológica, sociocultural, afetiva e ética). (Possíveis articulações com as",
+      "expected_tail": "Selecionar argumentos que evi­ denciem as múltiplas dimensões da sexuali­ dade humana (biológica, sociocultural, afeti­ va e ética). (Possíveis articulações com as habilidades EF08LP03, EF89LP24)",
+      "extra_normalized_prefix": " habilidades ef08lp03, ef89lp24)",
+      "independent_boundary": {
+        "anchor": [
+          148.90899658203125,
+          301.89349365234375,
+          188.68899536132812,
+          315.3534851074219
+        ],
+        "body_bbox": [
+          141.47,
+          301.89349365234375,
+          321.47,
+          375.8550109863281
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 377.1634216308594,
+        "physical_bottom_rule_y": 375.8550109863281,
+        "column": [
+          141.47,
+          321.47
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF08CI08",
+      "page": 64,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:9087ec626612ce137b78",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:8fc7c98a99bc9588383d",
+      "evidence_locator": "table:0/column:139.9-321.5/anchor:2",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 153,
+      "physical_expected_characters": 196,
+      "extracted_sha256": "c2d2b370454af2478699e54d01552ff2b530a3af4c0824ab2bc433053d9a39c6",
+      "physical_expected_sha256": "6b4e2163a1e67897b0d08d366853efbc615ece5c9ae8fc4ac18c4c858a10da16",
+      "extracted_head": "Analisar e explicar as transformações que ocorrem na puberdade considerando a atuação dos hormônios sexuais e do sistema nervoso. (Possíveis articulações",
+      "extracted_tail": "Analisar e explicar as transformações que ocorrem na puberdade considerando a atuação dos hormônios sexuais e do sistema nervoso. (Possíveis articulações",
+      "expected_tail": "Analisar e explicar as transfor­ mações que ocorrem na puberdade conside­ rando a atuação dos hormônios sexuais e do sistema nervoso. (Possíveis articulações com as habilidades EF08LP03, EF69LP09,",
+      "extra_normalized_prefix": " com as habilidades ef08lp03, ef69lp09,",
+      "independent_boundary": {
+        "anchor": [
+          147.49159240722656,
+          313.89349365234375,
+          187.27159118652344,
+          327.3534851074219
+        ],
+        "body_bbox": [
+          140.06,
+          313.89349365234375,
+          321.47,
+          373.89349365234375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 373.89349365234375,
+        "physical_bottom_rule_y": 373.89349365234375,
+        "column": [
+          140.06,
+          321.47
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF08CI09",
+      "page": 65,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:326eccfed6ca467fdfef",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:d99c71066a040264f6e9",
+      "evidence_locator": "table:1/column:142.9-321.5/anchor:3",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 319,
+      "physical_expected_characters": 364,
+      "extracted_sha256": "08907dc7cf440d94fc45cbf9fd04964de2835e40c5703dc4d6482eaf887bd0e1",
+      "physical_expected_sha256": "d6979d1759d7f092cf3195acee7f521d86b7430372cc01eaa95d578b900152d8",
+      "extracted_head": "Comparar o modo de ação e a eficácia dos diversos métodos contraceptivos e justificar a necessidade de compartilhar a responsabilidade na escolha e na utilizaçã",
+      "extracted_tail": "scolha e na utilização do método mais adequado à prevenção da gravidez precoce e indesejada e de Doenças Sexualmente Transmissíveis (DST) (IST). (Possíveis articulações com as habi",
+      "expected_tail": "cep­ tivos e justificar a necessidade de compar­ tilhar a responsabilidade na escolha e na utilização do método mais adequado à pre­ venção da gravidez precoce e indesejada e de Doenças Sexualmente Transmissíveis (DST) (IST). (Possíveis articulações com as habi­ lidades EF08LP03, EF69LP09, EF89LP24)",
+      "extra_normalized_prefix": "lidades ef08lp03, ef69lp09, ef89lp24)",
+      "independent_boundary": {
+        "anchor": [
+          150.3262939453125,
+          384.6910095214844,
+          190.10629272460938,
+          398.1510009765625
+        ],
+        "body_bbox": [
+          142.89,
+          384.6910095214844,
+          321.47,
+          495.1610107421875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 496.4693298339844,
+        "physical_bottom_rule_y": 495.1610107421875,
+        "column": [
+          142.89,
+          321.47
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF08CI16",
+      "page": 66,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:14a0dd10685444fb795b",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:16e55cd5e5e0d7be6d1c",
+      "evidence_locator": "table:0/column:141.0-321.4/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 203,
+      "physical_expected_characters": 244,
+      "extracted_sha256": "d87005403a8cb604d8b3a88537675ef1c90395d30d0ce1c2e66e33037767cb3a",
+      "physical_expected_sha256": "abf91c527ec6364d8524cfb688cf97aaa62ef0e8b0fc8a7e9a2ebadc43b70bf9",
+      "extracted_head": "Discutir iniciativas que contribuam para restabelecer o equilíbrio ambiental a partir da identificação de alterações climáticas regionais e globais provocadas p",
+      "extracted_tail": "e contribuam para restabelecer o equilíbrio ambiental a partir da identificação de alterações climáticas regionais e globais provocadas pela intervenção humana. (Possíveis articula",
+      "expected_tail": "Discutir iniciativas que contri­ buam para restabelecer o equilíbrio ambien­ tal a partir da identificação de alterações cli­ máticas regionais e globais provocadas pela intervenção humana. (Possíveis articula­ ções com as habilidades EF08MA24)",
+      "extra_normalized_prefix": "coes com as habilidades ef08ma24)",
+      "independent_boundary": {
+        "anchor": [
+          149.14520263671875,
+          139.82608032226562,
+          188.92520141601562,
+          153.2860870361328
+        ],
+        "body_bbox": [
+          141.71,
+          139.82608032226562,
+          321.24,
+          237.78759765625
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 292.33001708984375,
+        "physical_bottom_rule_y": 237.78759765625,
+        "column": [
+          141.71,
+          321.24
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF09CI10",
+      "page": 69,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:91a611c50aef8f0ccba5",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:89ae2b02d792b0d8cd2d",
+      "evidence_locator": "table:0/column:140.6-321.5/anchor:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 248,
+      "physical_expected_characters": 282,
+      "extracted_sha256": "53122ef18c4683b10629e901bf717969f7aba055d4be7d33a3c3d44fe8d7a5d8",
+      "physical_expected_sha256": "86fe2aafdf2f46b7f3d8ebefecb4564f6128d86e18f4fe203a8cae132e64f238",
+      "extracted_head": "Comparar as ideias evolucionistas de Lamarck e Darwin apresentadas em textos científicos e históricos, identificando semelhanças e diferenças entre essas ideias",
+      "extracted_tail": "m textos científicos e históricos, identificando semelhanças e diferenças entre essas ideias e sua importância para explicar a diversidade biológica. (Possíveis articulações com as",
+      "expected_tail": "Comparar as ideias evolucionis­ tas de Lamarck e Darwin apresentadas em textos científicos e históricos, identificando semelhanças e diferenças entre essas ideias e sua importância para explicar a diversidade biológica. (Possíveis articulações com as habilidades EF89LP08, EF09LP03)",
+      "extra_normalized_prefix": " habilidades ef89lp08, ef09lp03)",
+      "independent_boundary": {
+        "anchor": [
+          148.90899658203125,
+          139.35372924804688,
+          188.68899536132812,
+          152.81373596191406
+        ],
+        "body_bbox": [
+          141.47,
+          139.35372924804688,
+          321.47,
+          297.8236999511719
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 299.13201904296875,
+        "physical_bottom_rule_y": 297.8236999511719,
+        "column": [
+          141.47,
+          321.47
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF09CI11",
+      "page": 70,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:96867593b6c1ec59a961",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:3b2dd51a8ce3be71ac59",
+      "evidence_locator": "table:0/column:140.3-320.5/anchor:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 193,
+      "physical_expected_characters": 233,
+      "extracted_sha256": "0d0f2aae82aad70ee8c7bd89c3850686a707431c885a0f2d488121b0d6923744",
+      "physical_expected_sha256": "e89dd9d346ffbe31e065a5b4dddc8cf44f8378d8e33525bb0a751ba3b9c39b6f",
+      "extracted_head": "Discutir a evolução e a diversidade das espécies com base na atuação da seleção natural sobre as variantes de uma mesma espécie, resultantes de processo reprodu",
+      "extracted_tail": "olução e a diversidade das espécies com base na atuação da seleção natural sobre as variantes de uma mesma espécie, resultantes de processo reprodutivo. (Possíveis articulações com",
+      "expected_tail": "Discutir a evolução e a diversi­ dade das espécies com base na atuação da seleção natural sobre as variantes de uma mesma espécie, resultantes de processo re­ produtivo. (Possíveis articulações com as habilidades EF89LP11, EF69LP37 e",
+      "extra_normalized_prefix": " as habilidades ef89lp11, ef69lp37 e",
+      "independent_boundary": {
+        "anchor": [
+          148.43649291992188,
+          275.13201904296875,
+          188.21649169921875,
+          288.5920104980469
+        ],
+        "body_bbox": [
+          141.0,
+          275.13201904296875,
+          320.53,
+          347.13201904296875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 347.13201904296875,
+        "physical_bottom_rule_y": 347.13201904296875,
+        "column": [
+          141.0,
+          320.53
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-cn-mat",
+      "code": "EF09CI17",
+      "page": 71,
+      "cache_item_id": "ca:to-dct-ef-cn-mat:ef6f7b72dd974c8ad4fe",
+      "finalized_id_if_retained": "ca:to-dct-ef-cn-mat:be60ffee5d46cf7c125b",
+      "evidence_locator": "table:0/column:139.7-321.5/anchor:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 217,
+      "physical_expected_characters": 257,
+      "extracted_sha256": "d313b123ff9cbba4403c57b16940283ca6967a172191b6a7327c65988645a233",
+      "physical_expected_sha256": "9f8e0f57668c4a74b48825b2c449c1ee7c5c1f60d38331dd2f818f526b9afa21",
+      "extracted_head": "Analisar o ciclo evolutivo do Sol (nascimento, vida e morte) baseado no conhecimento das etapas de evolução de estrelas de diferentes dimensões e os efeitos des",
+      "extracted_tail": "scimento, vida e morte) baseado no conhecimento das etapas de evolução de estrelas de diferentes dimensões e os efeitos desse processo no nosso planeta. (Possíveis articulações com",
+      "expected_tail": "Analisar o ciclo evolutivo do Sol (nascimento, vida e morte) baseado no conheci­ mento das etapas de evolução de estrelas de di­ ferentes dimensões e os efeitos desse processo no nosso planeta. (Possíveis articulações com as habilidades EF89LP11, EF69LP37).",
+      "extra_normalized_prefix": " as habilidades ef89lp11, ef69lp37).",
+      "independent_boundary": {
+        "anchor": [
+          147.33900451660156,
+          227.13201904296875,
+          185.3509979248047,
+          240.59202575683594
+        ],
+        "body_bbox": [
+          140.06,
+          227.13201904296875,
+          321.47,
+          301.6020202636719
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 363.4324035644531,
+        "physical_bottom_rule_y": 301.6020202636719,
+        "column": [
+          140.06,
+          321.47
+        ]
+      },
+      "cached_header_hint": null,
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    }
+  ],
+  "reader_failures": [],
+  "limits": [
+    "Ruled native columns only; unavailable geometry/anchors remain unverified, not absent.",
+    "Strict physical prefix candidates need role/documentary review. This is not SourceWhole reconciliation."
+  ],
+  "cache_sha256": "0b50cf7cfa21c97e2906728f68b24ce80ca4c637778b8416f6c5574a211493ec",
+  "cache_meta": {
+    "source_id": "to-dct-ef-cn-mat",
+    "sha256": "aeb9486e9f0b8e34fe3542201ead1ef0a5d8f38a490e2c9fa0e1b55a483b2423",
+    "extraction_revision": "page-cell-v1.5.0",
+    "page_count": 152,
+    "document_page_count": 152,
+    "items": 829,
+    "pages": 152,
+    "quality": {
+      "documentary_page_sections_not_typed_as_learning": 142,
+      "meaning": "Execution, code transcription and primary-document reconciliation are separate; OCR execution completion is not glyph or pedagogical verification. An OCR code-like token does not certify an official printed code.",
+      "ocr_execution_pending": false,
+      "ocr_transcription_review_pending": true,
+      "unassigned_ocr_code_tokens": 0,
+      "unresolved_ocr_code_like_records": 0,
+      "unresolved_printed_code_records": 0
+    },
+    "parser_fingerprint": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+  },
+  "primary_page_count": 152,
+  "cache_unchanged_after_audit": true
+}

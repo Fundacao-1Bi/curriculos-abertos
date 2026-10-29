@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "at": "2026-10-28T20:44:18.959508+00:00",
+  "reason": "Align manual domain optional nullable guards with published JSONSchema1.1, retaining semantic checks and omission without defaults",
+  "root_authorized_after_pg_and_full_scan": true,
+  "patches": [
+    {
+      "path": "src/domain/publication.ts",
+      "source_sha256": "238b1716025240797583cc1000aeb0856b5e0c59f2e87d74679dc9cd74d7d0ec",
+      "scan_pin": "238b1716025240797583cc1000aeb0856b5e0c59f2e87d74679dc9cd74d7d0ec",
+      "before_sha256": "22d884bd1db36e8660a00c8e54c92cdd85eb50b6a3e3afc9572e866014d9f910"
+    },
+    {
+      "path": "src/domain/shards.ts",
+      "source_sha256": "b6ec62cc12c3dad42c665821d7d80a1547d98c0308ec0cd2aab618f99e894dd5",
+      "scan_pin": "b6ec62cc12c3dad42c665821d7d80a1547d98c0308ec0cd2aab618f99e894dd5",
+      "before_sha256": "f9490e453f151ce0d761e7fa30c1ae2868f355e1295400d830edf1990086a0e8"
+    },
+    {
+      "path": "src/domain/record-contract.ts",
+      "source_sha256": "a550ae86cb66680b2da2fd72c1c32939684b50b71db40a1575861a01f1986dff",
+      "scan_pin": "a550ae86cb66680b2da2fd72c1c32939684b50b71db40a1575861a01f1986dff",
+      "before_sha256": null
+    },
+    {
+      "path": "tests/domain.published-optionals.test.ts",
+      "source_sha256": "98c75f6d5c880aa100b321cac9e46ad9b218aec18b23054106bbc54db58720ae",
+      "scan_pin": null,
+      "before_sha256": null
+    }
+  ],
+  "base_and_schema_unmodified": true,
+  "source_snapshot_before": "c63b1444157edaf3dd7975c8c1a6fdf9562a1532913a47fb484d09babf6b8095",
+  "full_manual_scan": {
+    "path": "var/cross-language-v150/after-manual-domain-fix-report.json",
+    "sha256": "8fa8edcf275da9cbafb7d48e08505b483ebeb866b06d5e251c42eb6aa042b1ff",
+    "passed": true,
+    "sources": 303,
+    "items": 200724,
+    "relations": 57425,
+    "shards": 75,
+    "errors_by_type": {
+      "header": 0,
+      "Source": 0,
+      "Learning": 0,
+      "Relation": 0,
+      "hierarchy": 0,
+      "whole_sharded_verifier": 0
+    },
+    "issues": 0
+  },
+  "real_pg_tests": {
+    "postgres": "17.11",
+    "paths": [
+      "embedded",
+      "sharded"
+    ],
+    "tests": 4,
+    "passed": 4,
+    "skipped": 0,
+    "scope": "Own temporary DB; canonical payload, omitted/null distinction and idempotence/rollback"
+  },
+  "matches_current_host_asserted": false
+}

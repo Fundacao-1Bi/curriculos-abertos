@@ -1,0 +1,174 @@
+{
+  "actor_type": "automated",
+  "producer": "scripts/qa-reimport.ts",
+  "started_at": "2026-10-28T21:06:25.077Z",
+  "source_tree_sha256": "674dd1ddad35f1c12c399f3bd10f07894d1a763891c1ea2ddd75b53cd44669a6",
+  "checks": [
+    {
+      "name": "orçamento J09 medido antes de criar downloads, exportações ou banco",
+      "passed": true,
+      "detail": {
+        "footprint": {
+          "publication": "ca-7d302a9c674a97b83278",
+          "compressed_bytes": 127292150,
+          "decoded_bytes": 1402879768,
+          "metadata_bytes": 13751874,
+          "items": 200724,
+          "largest_uf": "ES",
+          "largest_uf_primary_bytes": 222040039,
+          "largest_uf_items": 19791,
+          "national_json_upper_bytes": 2845067184
+        },
+        "database": {
+          "database_bytes": 1956730547,
+          "item_payload_bytes": 1314328843,
+          "relation_payload_bytes": 122541153,
+          "source_payload_bytes": 6566845,
+          "metadata_bytes": 14289943,
+          "coverage_bytes": 3998689,
+          "id_bytes": 10755324,
+          "items": 200724,
+          "largest_uf": "ES",
+          "largest_uf_primary_bytes": 230024712,
+          "largest_uf_items": 19791,
+          "national_json_upper_bytes": 1562267033
+        },
+        "budget": {
+          "stage": "reimport",
+          "components": [
+            {
+              "name": "server exports national + largest-UF closure",
+              "bytes": 3124534066,
+              "basis": "measured SQL payload upper bound; UF support bounded by entire national graph"
+            },
+            {
+              "name": "client HTTP downloads national + largest-UF closure",
+              "bytes": 3124534066,
+              "basis": "second complete copy, both checked before cleanup"
+            },
+            {
+              "name": "stream-converted shards and manifests",
+              "bytes": 3219146678,
+              "basis": "allow gzip output as large as decoded JSON plus two metadata headers and bounded chunk workspace"
+            },
+            {
+              "name": "disposable reimport database: national + UF",
+              "bytes": 3913461094,
+              "basis": "twice measured clean database, including its indexes"
+            },
+            {
+              "name": "WAL and sort workspace",
+              "bytes": 2445913184,
+              "basis": "one database of WAL and 25% index workspace"
+            }
+          ],
+          "subtotal_bytes": 15827589088,
+          "reserve_bytes": 3165517818,
+          "required_free_bytes": 18993106906,
+          "notes": [
+            "Largest primary UF ES: 19791 items/230024712 SQL bytes.",
+            "Delivered artifact: 1402879768 decoded/127292150 compressed bytes.",
+            "The national and UF copies coexist until complete byte/record verification. Cleanup occurs only after evidence, not as an assumption that reduces peak.",
+            "No fixed 3-GiB allowance; measured PostgreSQL and full payload sizes drive this budget."
+          ]
+        },
+        "available": {
+          "host_free_bytes": 48688230400,
+          "docker_free_bytes": 396791472128,
+          "required_free_bytes": 18993106906
+        }
+      }
+    },
+    {
+      "name": "real_http_download_national",
+      "passed": true,
+      "detail": {
+        "job_id": "18bc8cee-360f-4462-9f11-74f72bca5d84",
+        "publication": "ca-7d302a9c674a97b83278",
+        "sha256": "1f9afaebe64ed6a72600c37ba10abdf47ce82624c5bc8c39f0ed60617f0f0b1a",
+        "bytes": 1451121538,
+        "items": 200724,
+        "relations": 57425
+      }
+    }
+  ],
+  "passed": false,
+  "capacity": {
+    "footprint": {
+      "publication": "ca-7d302a9c674a97b83278",
+      "compressed_bytes": 127292150,
+      "decoded_bytes": 1402879768,
+      "metadata_bytes": 13751874,
+      "items": 200724,
+      "largest_uf": "ES",
+      "largest_uf_primary_bytes": 222040039,
+      "largest_uf_items": 19791,
+      "national_json_upper_bytes": 2845067184
+    },
+    "database": {
+      "database_bytes": 1956730547,
+      "item_payload_bytes": 1314328843,
+      "relation_payload_bytes": 122541153,
+      "source_payload_bytes": 6566845,
+      "metadata_bytes": 14289943,
+      "coverage_bytes": 3998689,
+      "id_bytes": 10755324,
+      "items": 200724,
+      "largest_uf": "ES",
+      "largest_uf_primary_bytes": 230024712,
+      "largest_uf_items": 19791,
+      "national_json_upper_bytes": 1562267033
+    },
+    "budget": {
+      "stage": "reimport",
+      "components": [
+        {
+          "name": "server exports national + largest-UF closure",
+          "bytes": 3124534066,
+          "basis": "measured SQL payload upper bound; UF support bounded by entire national graph"
+        },
+        {
+          "name": "client HTTP downloads national + largest-UF closure",
+          "bytes": 3124534066,
+          "basis": "second complete copy, both checked before cleanup"
+        },
+        {
+          "name": "stream-converted shards and manifests",
+          "bytes": 3219146678,
+          "basis": "allow gzip output as large as decoded JSON plus two metadata headers and bounded chunk workspace"
+        },
+        {
+          "name": "disposable reimport database: national + UF",
+          "bytes": 3913461094,
+          "basis": "twice measured clean database, including its indexes"
+        },
+        {
+          "name": "WAL and sort workspace",
+          "bytes": 2445913184,
+          "basis": "one database of WAL and 25% index workspace"
+        }
+      ],
+      "subtotal_bytes": 15827589088,
+      "reserve_bytes": 3165517818,
+      "required_free_bytes": 18993106906,
+      "notes": [
+        "Largest primary UF ES: 19791 items/230024712 SQL bytes.",
+        "Delivered artifact: 1402879768 decoded/127292150 compressed bytes.",
+        "The national and UF copies coexist until complete byte/record verification. Cleanup occurs only after evidence, not as an assumption that reduces peak.",
+        "No fixed 3-GiB allowance; measured PostgreSQL and full payload sizes drive this budget."
+      ]
+    },
+    "available": {
+      "host_free_bytes": 48688230400,
+      "docker_free_bytes": 396791472128,
+      "required_free_bytes": 18993106906
+    }
+  },
+  "publication": "ca-7d302a9c674a97b83278",
+  "project": "curriculos-abertos-clean-20261028205403-f517a7",
+  "base": "http://localhost:3002",
+  "workdir": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd/var/qa-reimport/626574cd8fa4",
+  "error": "Contagem source_count difere dos registros.",
+  "failure_artifacts_preserved": true,
+  "completed_at": "2026-10-28T21:13:23.990Z"
+}

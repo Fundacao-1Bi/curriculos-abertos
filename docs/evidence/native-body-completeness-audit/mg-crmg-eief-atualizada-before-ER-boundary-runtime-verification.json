@@ -1,0 +1,127 @@
+{
+  "source_id": "mg-crmg-eief-atualizada",
+  "source_sha256": "792857369c0c80dd87fff092137053e7a5cbed1c61fcbbd6caa6efbc072154ea",
+  "receipt_path": "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-body-diff.json",
+  "receipt_sha256": "650d1aaa0f6e41a34c4d4566e9de277f2ac59c5bf79cf6a4403366bcb57a653e",
+  "counts": {
+    "records_considered": 1742,
+    "no_generic_strict_bounds_special_case": 12,
+    "eligible_cell_end_to_next_literal_code_intervals": 1729,
+    "empty_contiguous_cells": 1269,
+    "unproved_contiguous_vertical_scope": 467,
+    "body_already_closed_before_strict_cell_end": 1,
+    "candidate_cells": 4
+  },
+  "findings": [
+    {
+      "source_id": "mg-crmg-eief-atualizada",
+      "page": 597,
+      "code": "EF04ER05",
+      "locator": "table:0/row:45/cell:3",
+      "kind": "habilidade",
+      "candidate_bbox": [
+        246.48,
+        518.0799999999999,
+        538.37,
+        571.675
+      ],
+      "prior_strict_bbox": [
+        246.47999572753906,
+        464.4285627092634,
+        538.4094424777561,
+        518.0585588727679
+      ],
+      "next_actual_code_y": 581.9199829101562,
+      "text_sha256": "d2077e6a0ef3d0f68130aad3bfab53233b650fd38f788f8bd668531f34f220cf",
+      "native_character_count": 209,
+      "excerpt": "(ER04ER11MG) Identificar a diversidade de expressões que podem retratar os textos sagrados na modalidade de pinturas, vitrais, construções arquitetônicas ou em diversas formas de linguagem verbal e não verbal.",
+      "status": "candidate_requires_documentary_role_review",
+      "method": "Native word characters in contiguous original vector-ruler cell after old strict bottom, before every actual same/body-adjacent-column code. No old extraction bbox/tablefinder defines the candidate."
+    },
+    {
+      "source_id": "mg-crmg-eief-atualizada",
+      "page": 599,
+      "code": "EF06ER05X",
+      "locator": "table:0/row:29/cell:3",
+      "kind": "habilidade",
+      "candidate_bbox": [
+        246.48,
+        316.22,
+        538.37,
+        369.83000000000004
+      ],
+      "prior_strict_bbox": [
+        246.47999572753906,
+        262.5999755859375,
+        538.4173319498698,
+        316.219970703125
+      ],
+      "next_actual_code_y": 385.5,
+      "text_sha256": "f0c29de635ea37e3e053c2f42ad60cee3f5d84456bd0cbdc47992a0129cb5dda",
+      "native_character_count": 177,
+      "excerpt": "(ER06ER10MG) Reconhecer que os textos sagrados registram doutrinas e códigos de conduta de diversas tradições religiosas, orientando suas práticas na vida pessoal e comunitária.",
+      "status": "candidate_requires_documentary_role_review",
+      "method": "Native word characters in contiguous original vector-ruler cell after old strict bottom, before every actual same/body-adjacent-column code. No old extraction bbox/tablefinder defines the candidate."
+    },
+    {
+      "source_id": "mg-crmg-eief-atualizada",
+      "page": 603,
+      "code": "EF09ER08X",
+      "locator": "table:0/row:41/cell:3",
+      "kind": "habilidade",
+      "candidate_bbox": [
+        246.48,
+        412.45000000000005,
+        538.37,
+        466.04999999999995
+      ],
+      "prior_strict_bbox": [
+        246.47999572753906,
+        358.8299789428711,
+        538.4291661580404,
+        412.44998931884766
+      ],
+      "next_actual_code_y": 535.3299560546875,
+      "text_sha256": "1704afb190625ab503d89f450e9c8d7f4a4f9b06af48bd75a8832ac1ad50cca9",
+      "native_character_count": 135,
+      "excerpt": "(ER09ER11MG) Identificar e valorizar ações que promovam a cultura de paz e o respeito como condição necessária para a vida comunitária.",
+      "status": "candidate_requires_documentary_role_review",
+      "method": "Native word characters in contiguous original vector-ruler cell after old strict bottom, before every actual same/body-adjacent-column code. No old extraction bbox/tablefinder defines the candidate."
+    },
+    {
+      "source_id": "mg-crmg-eief-atualizada",
+      "page": 603,
+      "code": "EF09ER08X",
+      "locator": "table:0/row:41/cell:3",
+      "kind": "habilidade",
+      "candidate_bbox": [
+        246.48,
+        466.04999999999995,
+        538.37,
+        530.48
+      ],
+      "prior_strict_bbox": [
+        246.47999572753906,
+        358.8299789428711,
+        538.4291661580404,
+        412.44998931884766
+      ],
+      "next_actual_code_y": 535.3299560546875,
+      "text_sha256": "b66a1a91e25040a769072b1088339701698e34d011c288622c1e6d42315bea6b",
+      "native_character_count": 263,
+      "excerpt": "(ER09ER12MG) Formular projetos de vida que estejam baseados em princípios e valores que superem o consumismo, o individualismo e a competição e produzam atitudes e compromissos que levem à qualidade da convivência socioambiental e às ações ",
+      "status": "candidate_requires_documentary_role_review",
+      "method": "Native word characters in contiguous original vector-ruler cell after old strict bottom, before every actual same/body-adjacent-column code. No old extraction bbox/tablefinder defines the candidate."
+    }
+  ],
+  "negative_role_exclusions": [],
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:body-runtime-verifier",
+  "whole_source_reconciled": false,
+  "uf_ready": false,
+  "limits": [
+    "Diagnostic scope: only first-page records whose independently recorded body end equals the strict-cell end.",
+    "Actual codes in both body and adjacent code column stop the scope, including mentions; zero findings is not proof of whole-Source completeness.",
+    "Unavailable/non-contiguous rulers remain unverified; no verb or sentence-shape boundary heuristic is used."
+  ]
+}

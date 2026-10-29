@@ -1,0 +1,87 @@
+{
+  "source_id": "sp-curriculo-eief-isbn",
+  "uf": "SP",
+  "artifact_sha256": "f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500",
+  "cache_path": "data/extracted/f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500-page-cell-v1.5.0.json",
+  "status": "read_completed_with_explicit_scope",
+  "audit_revision": "independent-vector-rules-native-code-boundaries-v3",
+  "counts": {
+    "coded_cache_records": 1978,
+    "primary_pages_read": 212,
+    "independently_bounded_native_bodies": 1975,
+    "bounded_body_equal": 1972,
+    "extracted_extends_primary_page_region_not_truncation": 3,
+    "body_prefix_not_aligned_to_independent_column_start": 3,
+    "primary_code_boundary_not_indexed_on_page": 144
+  },
+  "negative_examples": [
+    {
+      "case": "equal_complete_body",
+      "code": "EI01EO01",
+      "page": 47,
+      "cache_item_id": "ca:sp-curriculo-eief-isbn:680601024f0ae4d5973e",
+      "result": "not_truncation",
+      "body_sha256": "b343c6ed95336c03ba318495a186322b55b683c95681e7102eae78998320236d"
+    },
+    {
+      "case": "equal_complete_body",
+      "code": "EI02EO01",
+      "page": 47,
+      "cache_item_id": "ca:sp-curriculo-eief-isbn:07414e011492845f1b19",
+      "result": "not_truncation",
+      "body_sha256": "61902682b4ec0efb2885db9764ded213cd00012f2198f1a97dca86d4b0038b52"
+    },
+    {
+      "case": "extracted_extends_bounded_page_region",
+      "code": "EI03EF09",
+      "page": 51,
+      "cache_item_id": "ca:sp-curriculo-eief-isbn:8c005e1fd0e6e993233b",
+      "result": "not_classified_as_truncation",
+      "evidence_pages": [
+        51
+      ],
+      "extracted_tail": "ipóteses em relação à lin- guagem escrita, realizando registros de palavras e textos, por meio de escrita espontânea. 51",
+      "bounded_page_tail": "r hipóteses em relação à lin- guagem escrita, realizando registros de palavras e textos, por meio de escrita espontânea."
+    },
+    {
+      "case": "extracted_extends_bounded_page_region",
+      "code": "EI03ET08",
+      "page": 53,
+      "cache_item_id": "ca:sp-curriculo-eief-isbn:e3374ef0883a8c31412c",
+      "result": "not_classified_as_truncation",
+      "evidence_pages": [
+        53
+      ],
+      "extracted_tail": "etc.), construindo gráficos e tabelas básicos, utilizando unidades de me- didas convencionais ou não conven- cionais. 53",
+      "bounded_page_tail": "ra etc.), construindo gráficos e tabelas básicos, utilizando unidades de me- didas convencionais ou não conven- cionais."
+    }
+  ],
+  "findings": [],
+  "reader_failures": [],
+  "limits": [
+    "Ruled native columns only; unavailable geometry/anchors remain unverified, not absent.",
+    "Strict physical prefix candidates need role/documentary review. This is not SourceWhole reconciliation."
+  ],
+  "cache_sha256": "4114653b1eb9bfcc48fba24d799e428602f92474347d4d5303066d2a7cc4ca74",
+  "cache_meta": {
+    "source_id": "sp-curriculo-eief-isbn",
+    "sha256": "f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500",
+    "extraction_revision": "page-cell-v1.5.0",
+    "page_count": 401,
+    "document_page_count": 401,
+    "items": 2328,
+    "pages": 401,
+    "quality": {
+      "documentary_page_sections_not_typed_as_learning": 350,
+      "meaning": "Execution, code transcription and primary-document reconciliation are separate; OCR execution completion is not glyph or pedagogical verification. An OCR code-like token does not certify an official printed code.",
+      "ocr_execution_pending": false,
+      "ocr_transcription_review_pending": true,
+      "unassigned_ocr_code_tokens": 0,
+      "unresolved_ocr_code_like_records": 0,
+      "unresolved_printed_code_records": 0
+    },
+    "parser_fingerprint": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+  },
+  "primary_page_count": 401,
+  "cache_unchanged_after_audit": true
+}

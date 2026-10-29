@@ -1,0 +1,16 @@
+{
+  "actor_type": "automated",
+  "finding": "CNp36 CE03 is a complete competency paragraph outside the ruled table; repeated first lines were wrongly assigned running-header roles, while all words were retained.",
+  "old_sidecar_sha256": "530e5a082b9e981f76821ddfbfc7fc4fb9df2bfe54e9595784e14168121966a3",
+  "observed_old_roles": [
+    "credito_documental:first line with CE03",
+    "credito_documental:second line",
+    "secao_curricular:remaining paragraph"
+  ],
+  "old_total_CE_ordinals": 893,
+  "old_competency_occurrences": 892,
+  "resolution": "Claim the complete explicit CE paragraph before header classification. Repeated body lines are no longer treated as credits merely because they occur near the top; header roles require actual area/header direction or physical page number.",
+  "coded_text_code_ID_changed": false,
+  "core_changed": false,
+  "Source_manifest_changed": false
+}

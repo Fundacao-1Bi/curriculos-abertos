@@ -74,6 +74,8 @@ var/venv-pipeline/bin/python data/manifests/uncoded/es-ef-competencies-extract.p
 var/venv-pipeline/bin/python docs/evidence/source-audit-southeast-uncoded/ef-competencies/verify_cell_coverage.py
 var/venv-pipeline/bin/python data/manifests/uncoded/es-ef-competencies-extract.py verify
 var/venv-pipeline/bin/python docs/evidence/source-audit-southeast-uncoded/ef-competencies/visual_sample.py
+var/venv-pipeline/bin/python docs/evidence/source-audit-southeast-uncoded/ef-competencies/verify_importer.py
+var/venv-pipeline/bin/python docs/evidence/source-audit-southeast-uncoded/ef-competencies/finalize_report.py
 ```
 
 `prose/README.md` documenta também o inventário independente das figuras e o
@@ -91,6 +93,14 @@ hashes de todo `pipeline/*.py` antes/depois. `full-cell-coverage.json` contabili
 todo o texto de cada célula, incluindo referências secundárias, com comparação
 exata salvo espaços; passar apenas a contagem de marcadores não seria suficiente.
 
+Resultado integral: **5.314/5.314 IDs**, zero faltas/extras, zero alterações
+canônicas, todos os pais resolvidos, **10.077 fragmentos canônicos/de código e
+611 fragmentos de metadados** com zero falhas native/trace. O relatório separado
+da subfrente de figuras prova ainda seus cabeçalhos de colunas originais.
+`importer-final-verification.json` repete apenas o importador/finalizador em
+processo novo, sem repetir inventários ou renders, e liga o fingerprint do
+código efetivamente carregado aos arquivos atuais de todo o pipeline.
+
 As amostras estratificadas usam rasterizações dos PDFs originais, em diretório
 privado `var/private-evidence/`, sem cópias dos PDFs ou rasterização em massa.
 A revisão visual é feita pelo agente e é distinta de revisão humana. Os
@@ -102,3 +112,6 @@ Os wrappers já incluem a parte geral; apontar só para o sidecar `prose-items`
 perderia as competências específicas. Os hashes finais e a proposta exata de
 fonte/caminho ficam em `integration-proposal.json`. A integração ao manifesto e
 ao corpus global cabe ao owner e não é presumida por esta auditoria local.
+
+
+Replay de integração: os dois nós verticais de Ensino Religioso (vol03 p193 e vol07 p249) foram rejeitados com sort=True, que devolve as duas palavras na ordem inversa. O reparo em `vertical-chapter-evidence-repair.json` troca apenas o método de evidência desses dois nós pelo leitor de glifos já registrado. Texto, IDs, caixas e pais foram preservados; 507/507 e 832/832 passaram no replay do binding real. Os dois PINs foram atualizados sob autorização do coordenador; provas anteriores permanecem como histórico dos hashes anteriores.

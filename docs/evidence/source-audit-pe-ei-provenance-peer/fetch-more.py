@@ -1,0 +1,6 @@
+from pathlib import Path
+import sys,json,concurrent.futures
+sys.path.insert(0,str(Path(__file__).parent));from fetch import fetch,OUT
+URLS=[('primary-old-https','https://www.educacao.pe.gov.br/portal/?pag=1&cat=18&art=4419'),('primary-old-http','http://www.educacao.pe.gov.br/portal/?pag=1&cat=18&art=4419'),('cee114-no-www','https://cee.pe.gov.br/wp-content/uploads/2025/10/PARECER-114-2018.pdf'),('google-landing','https://sites.google.com/view/programacriancaalfabetizadape/materiais-pedag%C3%B3gicos/material-de-apoio-pedag%C3%B3gico/educa%C3%A7%C3%A3o-infantil'),('municipal-slm-pdf','https://transparencia.slm.pe.gov.br/uploads/5371/1/atos-oficiais/2024/currculo-da-educao/1722948431_curriculo-de-pernambuco--educacao-infantil.pdf'),('official-doe-20181229','https://cepebr-prod.s3.amazonaws.com/1/cadernos/2018/20181229/1-PoderExecutivo/PoderExecutivo%2820181229%29.pdf'),('cee114-download','https://www.cee.pe.gov.br/wp-content/uploads/2025/10/PARECER-114-2018.pdf?download=1'),('cee-portarias','https://www.cee.pe.gov.br/?page_id=15123')]
+if __name__=='__main__':
+ results=list(concurrent.futures.ThreadPoolExecutor(max_workers=4).map(fetch,URLS));(OUT/'fetch-more-log.json').write_text(json.dumps(results,ensure_ascii=False,indent=2)+'\n');print(json.dumps(results,ensure_ascii=False,indent=2))

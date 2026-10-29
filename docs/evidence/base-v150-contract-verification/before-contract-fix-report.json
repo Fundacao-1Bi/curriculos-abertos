@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-10-28T20:16:57.929Z",
+  "read_only": true,
+  "base_publication": "ca-7d302a9c674a97b83278",
+  "base_sha256": "be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d",
+  "scanner_sha256": "b687884ff712cfcca1b8c251aa04a9b6c4135be560c2a29e53365647d91dad90",
+  "snapshot_sha256": "b64d7d4f7b55277c5dbe3207bc24d5278f89ad5ddf99dbc20344d5a0cb174dcc",
+  "files": {
+    "src/mcp/contracts.ts": "b7747ad4a0693902867a7db78f7d9da834ef2834a7ca5c15ebf79bd8712a1aaa",
+    "src/shared/contracts.ts": "ec1013e7bb9aba48e021dc3d0d598b55c743f08372e69b059a93ded40fbae2c7",
+    "src/domain/age.ts": "c071fbf571cd42e4510d2b8370ac8377b1113874f9b65cea828908769aabf8c7",
+    "src/domain/schema-pin.ts": "cf45b4eda99d5f071e7bc14b10f76d104ddb623333238bbbbf202efbe3fdd38d",
+    "src/domain/errors.ts": "f6d9311cd12fb445441e0967fc22701fac6c6205cc2f8e269c8fe87807b7e34c"
+  },
+  "counts": {
+    "Source": 303,
+    "Learning": 200724,
+    "Relation": 57425
+  },
+  "failed": {
+    "published_json_schema": 0,
+    "mcp_schema": 3393,
+    "mcp_payload_changed": 0
+  },
+  "issues": 4422,
+  "by_path": {
+    "mcp_schema:evidence.*.printed_page": 177,
+    "mcp_schema:positions.*.age_group": 901,
+    "mcp_schema:positions.*.area": 901,
+    "mcp_schema:positions.*.period": 2443
+  },
+  "by_source": {
+    "(relation)": 3,
+    "ap-rca-ei-ef-mec": 2443,
+    "ba-resolucao-125-2024-historia": 23,
+    "pe-fgb-trimestral-arte-cb58c164": 72,
+    "pe-fgb-trimestral-biologia-7f902274": 104,
+    "pe-fgb-trimestral-educacao-fisica-d997d37c": 172,
+    "pe-fgb-trimestral-filosofia-d3d771c6": 74,
+    "pe-fgb-trimestral-fisica-cd2ccadd": 120,
+    "pe-fgb-trimestral-geografia-916f592c": 104,
+    "pe-fgb-trimestral-historia-d8799974": 188,
+    "pe-fgb-trimestral-lingua-inglesa-360febf4": 100,
+    "pe-fgb-trimestral-lingua-portuguesa-f9f839b5": 510,
+    "pe-fgb-trimestral-matematica-c6335b8d": 190,
+    "pe-fgb-trimestral-quimica-007bc04c": 130,
+    "pe-fgb-trimestral-sociologia-7acc310e": 38,
+    "sc-resolucao-070-2025": 151
+  },
+  "passed": false,
+  "canonical_data_modified": false,
+  "database_accessed": false,
+  "limitation": "All BASE records checked under the pinned TS validator snapshot; this is a data-contract comparison, not primary fidelity or national completeness."
+}

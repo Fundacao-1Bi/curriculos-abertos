@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "actor_type": "automated",
+  "started_at": "2026-10-28T21:33:57.415Z",
+  "completed_at": "2026-10-28T21:37:39.747Z",
+  "source_tree_sha256": "ba309e4c7acb53d2e17ac37db9eef46341748b654f451481ac2b092a5a6dcc98",
+  "publication": "ca-7d302a9c674a97b83278",
+  "project": "curriculos-abertos-clean-20261028205403-f517a7",
+  "backup": "var/backups/20261028T213415Z-OttUCX",
+  "restored_database": "curriculos_restore_qa_20261028213513_3bc69657",
+  "artifact": {
+    "publication": "ca-7d302a9c674a97b83278",
+    "format": "curriculos-abertos/sharded-v1",
+    "manifest_sha256": "be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d",
+    "items": 200724,
+    "relations": 57425,
+    "sources": 303,
+    "parts_verified": 75,
+    "schema_verified": true,
+    "schema_path": "data/schema/1.1.0.json",
+    "schema_sha256": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df"
+  },
+  "checks": [
+    {
+      "name": "orçamento de backup/restore medido antes de criar arquivos ou banco",
+      "passed": true,
+      "detail": {
+        "capacity": {
+          "stage": "recovery",
+          "components": [
+            {
+              "name": "pg_dump archive and restored database",
+              "bytes": 3914067302,
+              "basis": "measured clean PostgreSQL size, two copies"
+            },
+            {
+              "name": "WAL and restore index workspace",
+              "bytes": 2446292064,
+              "basis": "one database of WAL and 25% workspace"
+            },
+            {
+              "name": "data archive + extracted data",
+              "bytes": 1222964288,
+              "basis": "measured logical bytes in manifests/bundles/schema/coverage"
+            },
+            {
+              "name": "storage archive + restored storage",
+              "bytes": 3394629706,
+              "basis": "measured files in the isolated QA storage volume"
+            }
+          ],
+          "subtotal_bytes": 10977953360,
+          "reserve_bytes": 2195590672,
+          "required_free_bytes": 13173544032,
+          "notes": [
+            "Private backup archives remain preserved.",
+            "Only the uniquely named restored database and extracted QA copies may be removed after complete restore verification."
+          ]
+        },
+        "available": {
+          "host_free_bytes": 37561274368,
+          "docker_free_bytes": 388731129856,
+          "required_free_bytes": 13173544032
+        },
+        "database_bytes": 1957033651,
+        "data_bytes": 611482144,
+        "storage": {
+          "bytes": 1696266277,
+          "files": 4,
+          "entries": [
+            {
+              "path": "exports/034a6754-5799-4786-9cbb-fff419efc7f3/1-a502873b-1f02-4e48-a0f4-954d39996f4e.json",
+              "bytes": 245144028,
+              "sha256": "028ac2a6aa6801a43436169a7e9169be3b29b0a0f01b328473a1ac46127a8432"
+            },
+            {
+              "path": "exports/18bc8cee-360f-4462-9f11-74f72bca5d84/1-a502873b-1f02-4e48-a0f4-954d39996f4e.json",
+              "bytes": 1451121538,
+              "sha256": "1f9afaebe64ed6a72600c37ba10abdf47ce82624c5bc8c39f0ed60617f0f0b1a"
+            },
+            {
+              "path": "qa-cleanup-receipts/4f7719f8-a13b-43ba-bb74-84a09e672f38.json",
+              "bytes": 355,
+              "sha256": "483bb01731455e8c96d060df595a7c49971121275e74a49c1dad880c5c076abd"
+            },
+            {
+              "path": "qa-cleanup-receipts/8a3c8fd4-cf53-4324-aae2-f78767920c67.json",
+              "bytes": 356,
+              "sha256": "804411c2d17259b8f795e100444386246617a384587bbb5f84c44385ff26b6bf"
+            }
+          ],
+          "free_bytes": 388731228160
+        }
+      }
+    },
+    {
+      "name": "comando entregue backup executou pg_dump e arquivou dados/armazenamento com checksums",
+      "passed": true,
+      "detail": {
+        "backup": "var/backups/20261028T213415Z-OttUCX",
+        "checksums": {
+          "database.dump": "95785a347291afb9882cae641efd6020b0b0132e86f4a2b04357e05182d5ad03",
+          "data.tgz": "b53ab841dcccbc68fc2515c1f1bb8a04e1c37c1cc9b37aefd5b6c2013a9ea7a1",
+          "storage.tgz": "64c0251488a236cc1f2f53787a67419a907d66100f89a77cd787be732644ed9e"
+        },
+        "private": true
+      }
+    },
+    {
+      "name": "restauração real em banco descartável preservou default, IDs, textos, fontes, relações e administrador",
+      "passed": true,
+      "detail": {
+        "database": "curriculos_restore_qa_20261028213513_3bc69657",
+        "restored": {
+          "publication": "ca-7d302a9c674a97b83278",
+          "publications": 1,
+          "items": 200724,
+          "sources": 303,
+          "relations": 57425,
+          "admins": 1,
+          "publication_metadata_digest": "3182dedfc9ff5e99f35d85cae1349017",
+          "items_digest": "6ee5e618bab80746df27043f6037fd9b",
+          "source_digest": "cd8c766f9a58b00722a7ed7d73de5bd5",
+          "relations_digest": "7e65ab85ef7fd00be27ce28f484fe681"
+        }
+      }
+    },
+    {
+      "name": "manifestos, todas partes e cobertura restaurados com hashes streaming iguais",
+      "passed": true,
+      "detail": {
+        "files": 471
+      }
+    },
+    {
+      "name": "todos arquivos reais do storage restaurados com bytes e SHA iguais",
+      "passed": true,
+      "detail": {
+        "files": 4,
+        "bytes": 1696266277
+      }
+    },
+    {
+      "name": "artefato restaurado foi relido integralmente por parte, com schemas e referências conferidos",
+      "passed": true,
+      "detail": {
+        "format": "curriculos-abertos/sharded-v1",
+        "items": 200724,
+        "relations": 57425,
+        "sources": 303,
+        "parts_verified": 75,
+        "manifest_sha256": "be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d"
+      }
+    },
+    {
+      "name": "restauração não alterou banco/publicação em execução",
+      "passed": true
+    },
+    {
+      "name": "banco restaurado e cópias extraídas próprios removidos após prova; backup e volumes preservados",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "Backup contém dados administrativos privados e fica apenas em var/ ignorado no Git.",
+    "Não houve restauração sobre banco principal. Volumes QA preservados para auditoria."
+  ],
+  "cleanup": {
+    "database": "curriculos_restore_qa_20261028213513_3bc69657",
+    "extracted_directory": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd/var/restore/curriculos_restore_qa_20261028213513_3bc69657",
+    "verified_checks": 7,
+    "private_backup_preserved": true,
+    "qa_volumes_preserved": true,
+    "completed_at": "2026-10-28T21:37:38.690Z"
+  }
+}

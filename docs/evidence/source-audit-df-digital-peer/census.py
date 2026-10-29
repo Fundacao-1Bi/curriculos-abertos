@@ -106,7 +106,7 @@ def census():
         if digest(path.read_bytes()) != source['sha256']:
             raise AssertionError('Source byte identity mismatch.')
         pages, scopes, groups, prior_components = [], [], collections.defaultdict(list), {}
-        active_topics, header_events = {}, []
+        active_topics, active_topic_headers, header_events = {}, {}, []
         cell_fragments = []
         with pymupdf.open(path) as document:
             for number, page in enumerate(document, 1):
@@ -150,8 +150,10 @@ def census():
                                     component = name
                                     prior_components[(scope, column)] = component
                                     active_topics[(scope, column)] = None
+                                    active_topic_headers[(scope, column)] = None
                                 else:
                                     active_topics[(scope, column)] = name
+                                    active_topic_headers[(scope, column)] = {'page': number, 'bbox': body[index]['bbox'], 'text': name}
                                 header_events.append({'scope': scope, 'page': number, 'column': column, 'component': component, 'heading': name, 'bbox': body[index]['bbox'], 'kind': 'component' if name in COMPONENTS else 'documentary_topic'})
                                 index += size
                                 continue
@@ -159,7 +161,7 @@ def census():
                                 raise AssertionError(f'Unassigned component: vol{volume} page{number} col{column}: ' + body[index]['text'])
                             line = body[index]
                             key = (scope, column, component)
-                            item = {**line, 'page': number, 'column': column, 'topic': active_topics.get((scope, column)), 'locator': f'v{volume}:p{number}:c{column}:y{line["bbox"][1]:.3f}'}
+                            item = {**line, 'page': number, 'column': column, 'topic': active_topics.get((scope, column)), 'topic_header': active_topic_headers.get((scope, column)), 'locator': f'v{volume}:p{number}:c{column}:y{line["bbox"][1]:.3f}'}
                             groups[key].append(item)
                             added[component] += 1
                             index += 1

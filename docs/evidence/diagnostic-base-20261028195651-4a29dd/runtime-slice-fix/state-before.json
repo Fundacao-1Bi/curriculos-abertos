@@ -1,0 +1,91 @@
+{
+  "project": "curriculos-abertos-clean-20261028205403-f517a7",
+  "env_file": "var/qa-clean-20261028205403-f517a7.env",
+  "base_url": "http://localhost:3002",
+  "database_port": 55439,
+  "image": "curriculos-abertos:diag-base-20261028t195651-4a29dd",
+  "image_id": "sha256:c8c96262fd976f36fcacdca7a898b96feb086df68d5c679ed71c0ccf6637a278",
+  "publication": "ca-7d302a9c674a97b83278",
+  "snapshot": {
+    "publication": "ca-7d302a9c674a97b83278",
+    "publications": 1,
+    "items": 200724,
+    "sources": 303,
+    "relations": 57425,
+    "admins": 1,
+    "publication_metadata_digest": "3182dedfc9ff5e99f35d85cae1349017",
+    "items_digest": "6ee5e618bab80746df27043f6037fd9b",
+    "source_digest": "cd8c766f9a58b00722a7ed7d73de5bd5",
+    "relations_digest": "7e65ab85ef7fd00be27ce28f484fe681"
+  },
+  "created_at": "2026-10-28T20:54:29.480Z",
+  "source_tree_sha256": "674dd1ddad35f1c12c399f3bd10f07894d1a763891c1ea2ddd75b53cd44669a6",
+  "diagnostic_only": true,
+  "diagnostic_label": "BASE incompleto anterior aos seis bindings ES; falhas documentais conhecidas; somente diagnostico operacional",
+  "capacity": {
+    "artifact": {
+      "publication": "ca-7d302a9c674a97b83278",
+      "compressed_bytes": 127292150,
+      "decoded_bytes": 1402879768,
+      "metadata_bytes": 13751874,
+      "items": 200724,
+      "largest_uf": "ES",
+      "largest_uf_primary_bytes": 222040039,
+      "largest_uf_items": 19791,
+      "national_json_upper_bytes": 2845067184
+    },
+    "production_budget": {
+      "stage": "production",
+      "components": [
+        {
+          "name": "new database including indexes",
+          "bytes": 5690134368,
+          "basis": "estimate: 2 × verified artifact JSON upper bound; replaced by measured PG size after import"
+        },
+        {
+          "name": "WAL during import",
+          "bytes": 5690134368,
+          "basis": "one estimated database or 1GiB"
+        },
+        {
+          "name": "index build workspace",
+          "bytes": 1422533592,
+          "basis": "25% of estimated database"
+        }
+      ],
+      "subtotal_bytes": 12802802328,
+      "reserve_bytes": 2560560466,
+      "required_free_bytes": 15363362794,
+      "notes": [
+        "Estimated before the first database exists; no claim of measured FULL runtime size.",
+        "Existing main/rollback databases and the production image are already allocated and are not reclaimable budget inputs."
+      ]
+    },
+    "database": {
+      "database_bytes": 1956288179,
+      "item_payload_bytes": 1314328843,
+      "relation_payload_bytes": 122541153,
+      "source_payload_bytes": 6566845,
+      "metadata_bytes": 14289943,
+      "coverage_bytes": 3998689,
+      "id_bytes": 10755324,
+      "items": 200724,
+      "largest_uf": "ES",
+      "largest_uf_primary_bytes": 230024712,
+      "largest_uf_items": 19791,
+      "national_json_upper_bytes": 1562267033
+    }
+  },
+  "artifact": {
+    "publication": "ca-7d302a9c674a97b83278",
+    "format": "curriculos-abertos/sharded-v1",
+    "manifest_sha256": "be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d",
+    "items": 200724,
+    "relations": 57425,
+    "sources": 303,
+    "parts_verified": 75,
+    "schema_verified": true,
+    "schema_path": "data/schema/1.1.0.json",
+    "schema_sha256": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df"
+  }
+}

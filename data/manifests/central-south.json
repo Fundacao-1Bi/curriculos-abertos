@@ -3216,7 +3216,7 @@
     "sha256": "61ce27903cc1e113a8b9e282c207cce6de6a275847dc935adc052b8417b744c7",
     "local_path": "data/raw/DF/df-competencias-digitais-vol2.pdf",
     "status": "acquired",
-    "inventory_status": "all_native_pages_context_and_graphic_cover_verified_independent_organizer_id_union_pending",
+    "inventory_status": "whole_source_v2_independent_original_pages_context_objective_partition_verified",
     "required": true,
     "bytes": 3079664,
     "pages": 77,
@@ -3227,7 +3227,7 @@
     "mandatory": true,
     "include_in_corpus": true,
     "validity_status": "edition_consulted_validity_requires_documentary_confirmation",
-    "reconciled": false,
+    "reconciled": true,
     "inventory_evidence": [
       {
         "page": 5,
@@ -3237,10 +3237,10 @@
     ],
     "document_verification": {
       "actor_type": "automated",
-      "actor": "data_central_south",
-      "method": "All217physicalpages processed with real1.5core, every canonical record literal, all211native whole-page record IDs and exacttexts independently derived; original1565organizer records preserved and172contexts added. Covers verified by real regionOCR/render, no wholeSource promotion before independent organizer-ID denominator.",
-      "at": "2026-10-28T17:28:59.033473+00:00",
-      "evidence_path": "docs/evidence/source-audit-df-digital/whole-source-actual-core-import-verification.json"
+      "actor": "data_central_south + codex:api_mcp:df-digital-peer",
+      "method": "WholeSource V2 exact primary-text inventories: original source-first objectives, all375structural labels,172native/rastercontexts,211wholepage records; corrected one extraction boundary Solar, not normative change; no human pedagogical review.",
+      "at": "2026-10-28T18:13:32.004223+00:00",
+      "evidence_path": "docs/evidence/source-audit-df-digital-candidate-v1.2/v2-gate-df-competencias-digitais-vol2.json"
     },
     "uncoded_items_path": "data/manifests/uncoded/df-digital-complete-context-df-competencias-digitais-vol2.json",
     "uncoded_adapter": {
@@ -3279,7 +3279,7 @@
     "sha256": "39e5f657705d0db6866e8966302ca00cc2eea697e40715d5aac209b9aed7aedd",
     "local_path": "data/raw/DF/df-competencias-digitais-vol3.pdf",
     "status": "acquired",
-    "inventory_status": "all_native_pages_context_and_graphic_cover_verified_independent_organizer_id_union_pending",
+    "inventory_status": "whole_source_v2_independent_original_pages_context_objective_partition_verified",
     "required": true,
     "bytes": 2342075,
     "pages": 140,
@@ -3290,7 +3290,7 @@
     "mandatory": true,
     "include_in_corpus": true,
     "validity_status": "edition_consulted_validity_requires_documentary_confirmation",
-    "reconciled": false,
+    "reconciled": true,
     "inventory_evidence": [
       {
         "page": 5,
@@ -3300,12 +3300,12 @@
     ],
     "document_verification": {
       "actor_type": "automated",
-      "actor": "data_central_south",
-      "method": "All217physicalpages processed with real1.5core, every canonical record literal, all211native whole-page record IDs and exacttexts independently derived; original1565organizer records preserved and172contexts added. Covers verified by real regionOCR/render, no wholeSource promotion before independent organizer-ID denominator.",
-      "at": "2026-10-28T17:28:59.033473+00:00",
-      "evidence_path": "docs/evidence/source-audit-df-digital/whole-source-actual-core-import-verification.json"
+      "actor": "data_central_south + codex:api_mcp:df-digital-peer",
+      "method": "WholeSource V2 exact primary-text inventories: original source-first objectives, all375structural labels,172native/rastercontexts,211wholepage records; corrected one extraction boundary Solar, not normative change; no human pedagogical review.",
+      "at": "2026-10-28T18:13:32.050159+00:00",
+      "evidence_path": "docs/evidence/source-audit-df-digital-candidate-v1.2/v2-gate-df-competencias-digitais-vol3.json"
     },
-    "uncoded_items_path": "data/manifests/uncoded/df-digital-complete-context-df-competencias-digitais-vol3.json",
+    "uncoded_items_path": "data/manifests/uncoded/df-digital-complete-context-v1.2-candidate-df-competencias-digitais-vol3.json",
     "uncoded_adapter": {
       "method": "df-digital-three-axis-column-source-adapter",
       "actor_type": "automated",

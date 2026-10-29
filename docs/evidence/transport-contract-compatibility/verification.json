@@ -1,0 +1,52 @@
+{
+  "actor_type": "automated",
+  "scope": "Published 1.1.0 JSON Schema versus REST/MCP output validation; omission retained, no data repair.",
+  "published_schema": {
+    "path": "data/schema/1.1.0.json",
+    "sha256": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df",
+    "modified": false
+  },
+  "files": [
+    {
+      "path": "src/mcp/contracts.ts",
+      "sha256": "b954b3d645a26a57d0835e1b15d9255f1572d0251da23c0d8d1ff6c898674ab2"
+    },
+    {
+      "path": "src/shared/contracts.ts",
+      "sha256": "0b42791386e7fd642d1bf0d9094ba8c615fd150df4248227341c623446a67faa"
+    },
+    {
+      "path": "tests/api-published-contract.test.ts",
+      "sha256": "3ae379d208c7a28c4e34379c44ec042fbfb2370e4f92809dca3e4b826b464a95"
+    }
+  ],
+  "checks": [
+    {
+      "command": "npx tsx --test tests/api-published-contract.test.ts tests/api-age.test.ts tests/api-structure.test.ts",
+      "exit_code": 0,
+      "tests": 13,
+      "passed": 13
+    },
+    {
+      "command": "npm run typecheck",
+      "exit_code": 0
+    },
+    {
+      "command": "npx eslint src/mcp/contracts.ts src/shared/contracts.ts tests/api-published-contract.test.ts",
+      "exit_code": 0
+    }
+  ],
+  "base_unchanged": true,
+  "complete_record_scan": {
+    "path": "docs/evidence/transport-contract-compatibility/after-contract-fix-report.json",
+    "sha256": "58b88cd1101fbde2cbea8ec3ba83c99bff2dd577968e85ea1a9f915511f56876",
+    "sources": 303,
+    "items": 200724,
+    "relations": 57425,
+    "published_schema_issues": 0,
+    "transport_schema_issues": 0,
+    "payload_coercions": 0
+  },
+  "production_installation_reexecution": "pending separate ops run; these checks do not claim installation success",
+  "national_release_asserted": false
+}

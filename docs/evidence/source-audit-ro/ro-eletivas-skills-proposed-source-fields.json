@@ -1,7 +1,8 @@
 {
   "adapter_sha256": "bcbdf02dd68566aeec6b2e22ad51f192454ea81c3e50f74854c4d3ec9c8797fd",
   "artifact_sha256": "709c00a8a8993683a3529f2cfb0d7674f2b79ced733ad45be2e8213f39217ddb",
-  "binding_ready": true,
+  "binding_ready": false,
+  "current_application_note": "Historical validated proposal only. Apply latest v3 against the current manifest; do not replay an old path-only proposal while retaining newer coded-authority metadata.",
   "fields": {
     "adapter_authority": {
       "coded_learning_pages": [
@@ -11,7 +12,9 @@
     },
     "uncoded_items_path": "data/manifests/uncoded/ro-eletivas-skill-fields-v2.json"
   },
+  "historical_validation_passed": true,
   "ready": false,
   "reconciled": false,
-  "source_id": "ro-eletivas-2026"
+  "source_id": "ro-eletivas-2026",
+  "superseded_by": "docs/evidence/source-audit-ro/ro-eletivas-competencies-proposed-source-fields.json"
 }

@@ -1,0 +1,290 @@
+{
+  "source_id": "sp-curriculo-em-isbn",
+  "uf": "SP",
+  "artifact_sha256": "e4c262968644a78181a308af6dea4f7d06260e4c232b61548479fe69b4d2da04",
+  "cache_path": "data/extracted/e4c262968644a78181a308af6dea4f7d06260e4c232b61548479fe69b4d2da04-page-cell-v1.5.0.json",
+  "status": "read_completed_with_explicit_scope",
+  "audit_revision": "independent-vector-rules-native-code-boundaries-v3",
+  "counts": {
+    "coded_cache_records": 445,
+    "primary_pages_read": 138,
+    "independently_bounded_native_bodies": 423,
+    "bounded_body_equal": 357,
+    "body_prefix_not_aligned_to_independent_column_start": 20,
+    "primary_code_boundary_not_indexed_on_page": 10,
+    "extracted_extends_primary_page_region_not_truncation": 62,
+    "strict_prefix_candidates": 4,
+    "prefix_role_unresolved": 2,
+    "prefix_definition_candidate": 2,
+    "text_too_short_for_prefix_alignment": 2
+  },
+  "negative_examples": [
+    {
+      "case": "equal_complete_body",
+      "code": "EM13LGG101",
+      "page": 73,
+      "cache_item_id": "ca:sp-curriculo-em-isbn:46ce75927b9b1845fe03",
+      "result": "not_truncation",
+      "body_sha256": "b533f3a29c37b742ab0c88fe5a6aad537c19038476516871c2da539d8160fc2e"
+    },
+    {
+      "case": "equal_complete_body",
+      "code": "EM13LGG102",
+      "page": 74,
+      "cache_item_id": "ca:sp-curriculo-em-isbn:74c71884c1a64403981f",
+      "result": "not_truncation",
+      "body_sha256": "0a03f6f50b6a599f894d0c0e998260189286ecc18b9785e448fa9e6d0231533b"
+    },
+    {
+      "case": "extracted_extends_bounded_page_region",
+      "code": "EM13LP12",
+      "page": 77,
+      "cache_item_id": "ca:sp-curriculo-em-isbn:fe90228535e9693b6e16",
+      "result": "not_classified_as_truncation",
+      "evidence_pages": [
+        77,
+        78
+      ],
+      "extracted_tail": " tenha um nível de aprofundamento adequado (para além do senso comum) e contemple a sustentação das posições defendidas.",
+      "bounded_page_tail": "onfiáveis, impressas e digitais, e utilizá-los de forma referenciada, para que o texto a ser produzido tenha um nível de"
+    },
+    {
+      "case": "extracted_extends_bounded_page_region",
+      "code": "EM13LP15",
+      "page": 78,
+      "cache_item_id": "ca:sp-curriculo-em-isbn:86b06614a2555811c1e6",
+      "result": "not_classified_as_truncation",
+      "evidence_pages": [
+        78,
+        79
+      ],
+      "extracted_tail": " pontuação adequada, mecanismos de concordância nominal e verbal, regência verbal etc.), sempre que o contexto o exigir.",
+      "bounded_page_tail": "Planejar, produzir, revisar, editar, reescrever e avaliar textos escritos e"
+    }
+  ],
+  "findings": [
+    {
+      "source_id": "sp-curriculo-em-isbn",
+      "code": "EMIFMAT07",
+      "page": 215,
+      "cache_item_id": "ca:sp-curriculo-em-isbn:a16a0786e64fd423c91f",
+      "finalized_id_if_retained": "ca:sp-curriculo-em-isbn:745996fbf1b939a2022e",
+      "evidence_locator": "table:0/row:29/cell:3",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 172,
+      "physical_expected_characters": 184,
+      "extracted_sha256": "78d143612609a7f6acb1029bd8ed5b3215d64d0598d9fd658142c9f1bc505283",
+      "physical_expected_sha256": "fd25794537c9da2aac2f879be5b0829bcd8e84643290835fae90e72966e89b03",
+      "extracted_head": "Identificar e explicar questões socioculturais e ambientais aplicando conhecimentos e habilidades matemáticas para avaliar e tomar decisões em relação ao que fo",
+      "extracted_tail": "Identificar e explicar questões socioculturais e ambientais aplicando conhecimentos e habilidades matemáticas para avaliar e tomar decisões em relação ao que foi observado.",
+      "expected_tail": "Identificar e explicar questões socioculturais e ambientais aplicando conhecimentos e habilidades matemáticas para avaliar e tomar decisões em relação ao que foi observado. (EMIFMAT08)",
+      "extra_normalized_prefix": " (emifmat08)",
+      "independent_boundary": {
+        "anchor": [
+          235.56655883789062,
+          419.9662170410156,
+          292.1194763183594,
+          431.0716247558594
+        ],
+        "body_bbox": [
+          226.82,
+          419.9662170410156,
+          460.73,
+          500.3760070800781
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 500.3760070800781,
+        "column": [
+          226.82,
+          460.73
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": " (EMIFCG04) Reconhecer e analisar diferentes",
+        "2": "  ",
+        "3": "(EMIFMAT05)\nSelecionar e mobilizar intencionalmente recursos\ncriativos relacionados à Matemática para resolver\nproblemas de natureza diversa, incluindo aqueles\nque permitam a produção de novos\nconhecimentos matemáticos, comunicando com\nprecisão suas ações e reflexões relacionadas a\nconstatações, interpretações e argumentos, bem\ncomo adequando-os às situações originais.\n(EMIFMAT06)\nPropor e testar soluções éticas, estéticas, criativas\ne inovadoras para problemas reais, considerando\na aplicação dos conhecimentos matemáticos\nassociados ao domínio de operações e relações\nmatemáticas simbólicas e formais, de modo a\ndesenvolver novas abordagens e estratégias para\nenfrentar novas situações.  ",
+        "4": "variáveis, funções polinomiais do 1° grau e do 2° grau, variação entre\ngrandezas proporcionais e não proporcionais, são estruturas\nmatemáticas fundamentais para compreender, resolver e elaborar\nproblemas do cotidiano, utilizando-se de técnicas algébricas e gráficas,\ncomo ferramentas para o processo de criação. De outra parte, propõe-\nse aprofundar as noções relativas aos conceitos de linguagem de\nprogramação para selecionar e mobilizar recursos criativos relacionados\nà Matemática computacional, como as sequências, os laços de repetição,\nas variáveis, as condicionais e os algoritmos, para a modelagem de\nproblemas, soluções e suas representações por fluxogramas,\nferramentas matemáticas necessárias para resolver problemas de\nnatureza diversa, incluindo aqueles que permitam a produção de novos\nconhecimentos matemáticos. Isso poderá favorecer o estudante a\nreconhecer produtos e/ou processos criativos por meio de fruição,\nvivências e reflexão crítica na produção do conhecimento matemático, e\nsua aplicação no desenvolvimento de processos tecnológicos, e a\ncomunicar com precisão suas ações e reflexões relacionadas a\nconstatações, interpretações e argumentos, bem como a suas\nadequações às situações originais. Assim, ao desenvolver este eixo,\nespera-se que o estudante seja capaz de propor e testar soluções éticas,\nestéticas, criativas e inovadoras para problemas reais, considerando a\naplicação dos conhecimentos matemáticos associados ao domínio de\noperações e relações matemáticas simbólicas e formais, de modo a\ndesenvolver novas abordagens e estratégias, como programas de\ncomputador, aplicativos e jogos, para enfrentar novas situações de\nensino e de aprendizagem.  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "sp-curriculo-em-isbn",
+      "code": "EMIFCG02",
+      "page": 223,
+      "cache_item_id": "ca:sp-curriculo-em-isbn:e883dd98d4b833e3477a",
+      "finalized_id_if_retained": "ca:sp-curriculo-em-isbn:379b4a67ec13e53414a5",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 355,
+      "physical_expected_characters": 366,
+      "extracted_sha256": "aadd46e21fcc7251bc9a779068011d2ac6beb4cd300b99dec6bcdd2e7559c8dc",
+      "physical_expected_sha256": "e2b050741f03b3084aecf758df3046e23b702df13ccc44577b8afa83bd831402",
+      "extracted_head": "Posicionar-se com base em critérios científicos, éticos e estéticos, utilizando dados, fatos e evidências para respaldar conclusões, opiniões e argumentos, por ",
+      "extracted_tail": "ões claras, ordenadas, coerentes e compreensíveis, sempre respeitando valores universais, como liberdade, democracia, justiça social, pluralidade, solidariedade e sustentabilidade.",
+      "expected_tail": "s, utilizando dados, fatos e evidências para respaldar conclusões, opiniões e argumentos, por meio de afirmações claras, ordenadas, coerentes e compreensíveis, sempre respeitando valores universais, como liberdade, democracia, justiça social, pluralidade, solidariedade e sustentabilidade. (EMIFCG03)",
+      "extra_normalized_prefix": " (emifcg03)",
+      "independent_boundary": {
+        "anchor": [
+          79.90655517578125,
+          317.2162170410156,
+          129.82608032226562,
+          328.3216247558594
+        ],
+        "body_bbox": [
+          71.04,
+          317.2162170410156,
+          233.9,
+          501.09600830078125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 501.09600830078125,
+        "column": [
+          71.04,
+          233.9
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "HABILIDADES RELACIONADAS ÀS COMPETÊNCIAS GERAIS/EIXO ESTRUTURANTE",
+        "2": "  ",
+        "3": "  ",
+        "4": "HABILIDADES ESPECÍFICAS ASSOCIADAS AOS EIXOS ESTRUTURANTES ",
+        "5": "  ",
+        "6": "PRESSUPOSTOS METODOLÓGICOS  ",
+        "7": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "sp-curriculo-em-isbn",
+      "code": "EMIFFTP02",
+      "page": 245,
+      "cache_item_id": "ca:sp-curriculo-em-isbn:7f8d66a4e6775f6619ee",
+      "finalized_id_if_retained": "ca:sp-curriculo-em-isbn:2e5d4a6cef324afbdd8d",
+      "evidence_locator": "table:0/row:4/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Cached header hint only, not accepted as independent whole-source reconciliation.",
+      "extracted_characters": 173,
+      "physical_expected_characters": 185,
+      "extracted_sha256": "6d6f54f77b0f903f711b41f2cd5c819f30bdb8d69fa75953ec77825422ba965d",
+      "physical_expected_sha256": "806fdd164ceafced7be8d36856730368351a7a1c7d425af0aea2b580bfd04b6a",
+      "extracted_head": "Levantar e testar hipóteses para resolver problemas do cotidiano pessoal, da escola e do trabalho, utilizando procedimentos e linguagens adequados à investigaçã",
+      "extracted_tail": "Levantar e testar hipóteses para resolver problemas do cotidiano pessoal, da escola e do trabalho, utilizando procedimentos e linguagens adequados à investigação científica.",
+      "expected_tail": "Levantar e testar hipóteses para resolver problemas do cotidiano pessoal, da escola e do trabalho, utilizando procedimentos e linguagens adequados à investigação científica. (EMIFFTP03)",
+      "extra_normalized_prefix": " (emifftp03)",
+      "independent_boundary": {
+        "anchor": [
+          214.32655334472656,
+          413.606201171875,
+          268.0906066894531,
+          424.71160888671875
+        ],
+        "body_bbox": [
+          205.58,
+          413.606201171875,
+          389.81,
+          505.53599548339844
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 505.53599548339844,
+        "column": [
+          205.58,
+          389.81
+        ]
+      },
+      "cached_header_hint": {
+        "0": "HABILIDADES\nRELACIONADAS ÀS\nCOMPETÊNCIAS GERAIS\n/ EIXO ESTRUTURANTE  ",
+        "1": "  ",
+        "2": "HABILIDADES ESPECÍFICAS ASSOCIADAS AOS EIXOS ESTRUTURANTES",
+        "3": "  ",
+        "4": "PRESSUPOSTOS METODOLÓGICOS  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "sp-curriculo-em-isbn",
+      "code": "EMIFCHS11",
+      "page": 262,
+      "cache_item_id": "ca:sp-curriculo-em-isbn:d446317970f68438e657",
+      "finalized_id_if_retained": "ca:sp-curriculo-em-isbn:a290dfc4122214cbf2f0",
+      "evidence_locator": "table:0/row:1/cell:3",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 222,
+      "physical_expected_characters": 234,
+      "extracted_sha256": "90c6a93a589b8b4244e64b0083530771ef3f81022a0e41daeb57d1d87689dcb5",
+      "physical_expected_sha256": "349cc577fdea383294c0606b05f28c6d3bcbb0861757a96c09a8f24c3be927e3",
+      "extracted_head": "Selecionar e mobilizar intencionalmente conhecimentos e recursos das Ciências Humanas e Sociais Aplicadas para desenvolver um projeto pessoal ou um empreendimen",
+      "extracted_tail": "nhecimentos e recursos das Ciências Humanas e Sociais Aplicadas para desenvolver um projeto pessoal ou um empreendimento produtivo, em âmbito local, regional, nacional e/ou global.",
+      "expected_tail": "Selecionar e mobilizar intencionalmente conhecimentos e recursos das Ciências Humanas e Sociais Aplicadas para desenvolver um projeto pessoal ou um empreendimento produtivo, em âmbito local, regional, nacional e/ou global. (EMIFCHS12)",
+      "extra_normalized_prefix": " (emifchs12)",
+      "independent_boundary": {
+        "anchor": [
+          201.8465576171875,
+          362.4562072753906,
+          257.80181884765625,
+          373.5616149902344
+        ],
+        "body_bbox": [
+          192.98,
+          362.4562072753906,
+          362.81,
+          500.3760070800781
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 500.3760070800781,
+        "column": [
+          192.98,
+          362.81
+        ]
+      },
+      "cached_header_hint": {
+        "0": "opinião e o sentimento\ndo outro, agindo com\nempatia, flexibilidade e\nresiliência para promover\no diálogo, a colaboração,\na mediação e resolução\nde conflitos, o combate\nao preconceito e a\nvalorização da\ndiversidade.  ",
+        "1": " EMPREENDEDORISMO ",
+        "2": "  ",
+        "3": "relacionados às Ciências Humanas\ne Sociais Aplicadas. (EMIFCHS10)\nAvaliar como oportunidades,\nconhecimentos e recursos\nrelacionados às Ciências Humanas\ne Sociais Aplicadas podem ser\nutilizadas na concretização de\nprojetos pessoais ou produtivos, em\nâmbito local, regional, nacional e/ou\nglobal, considerando as diversas\ntecnologias disponíveis, os\nimpactos socioambientais, os\ndireitos humanos e a promoção da\ncidadania.\n(EMIFCHS11)\nSelecionar e mobilizar\nintencionalmente conhecimentos e\nrecursos das Ciências Humanas e\nSociais Aplicadas para desenvolver\num projeto pessoal ou um\nempreendimento produtivo, em\nâmbito local, regional, nacional e/ou\nglobal.\n(EMIFCHS12) ",
+        "4": " (EMIFMAT10)\nAvaliar como oportunidades,\nconhecimentos e recursos\nrelacionados à Matemática podem\nser utilizados na concretização de\nprojetos pessoais ou produtivos,\nconsiderando as diversas\ntecnologias disponíveis e os\nimpactos socioambientais.\n(EMIFMAT11)\nSelecionar e mobilizar\nintencionalmente conhecimentos e\nrecursos da Matemática para\ndesenvolver um projeto pessoal ou\num empreendimento produtivo.\n(EMIFMAT12)\nDesenvolver projetos pessoais ou\nprodutivos, utilizando processos e\nconhecimentos matemáticos para\nformular propostas concretas,\narticuladas com o projeto de vida. ",
+        "5": "deverá favorecer a atuação consciente e\nfundamentada do estudante na sociedade a partir\nda mobilização e realização de projetos. No eixo Empreendedorismo, a mobilização dos\nconhecimentos deve estar relacionada ao projeto de\nvida do estudante.\nNa integração das áreas de Ciências Humanas e\nSociais Aplicadas e Matemática, o estudante deverá\nse apropriar de conceitos fundamentais para o\ndesenvolvimento da ação empreendedora do ponto\nde vista das finanças individuais e familiares e das\nfinanças públicas, com base em rendimentos\npessoais e tributos. Nesse contexto, questões\nacerca do consumismo, acompanhamento da\nqualidade do investimento dos recursos públicos,\nentre outras, propiciam ao estudante análises de\nmercado, de maneira a tornar-se empreendedor\nfrente a demandas pessoais, familiares, sociais e\npolíticas.\nPara a proposta do eixo, são fundamentais a\nutilização de aplicativos, a criação de planilhas para\ncontrole de orçamentos etc., interligadas com a\nanálise, a interpretação e a reflexão de dados. A\npartir desses resultados, o estudante tem como\nreferência a produção e distribuição de mercadorias,\no consumo responsável, o consumismo etc. como "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    }
+  ],
+  "reader_failures": [],
+  "limits": [
+    "Ruled native columns only; unavailable geometry/anchors remain unverified, not absent.",
+    "Strict physical prefix candidates need role/documentary review. This is not SourceWhole reconciliation."
+  ],
+  "cache_sha256": "7e1e38cc7e16cfa7624a73e2326ada669b15faa38dadbc4b070f5c17a361afe3",
+  "cache_meta": {
+    "source_id": "sp-curriculo-em-isbn",
+    "sha256": "e4c262968644a78181a308af6dea4f7d06260e4c232b61548479fe69b4d2da04",
+    "extraction_revision": "page-cell-v1.5.0",
+    "page_count": 301,
+    "document_page_count": 301,
+    "items": 745,
+    "pages": 301,
+    "quality": {
+      "documentary_page_sections_not_typed_as_learning": 300,
+      "meaning": "Execution, code transcription and primary-document reconciliation are separate; OCR execution completion is not glyph or pedagogical verification. An OCR code-like token does not certify an official printed code.",
+      "ocr_execution_pending": false,
+      "ocr_transcription_review_pending": true,
+      "unassigned_ocr_code_tokens": 0,
+      "unresolved_ocr_code_like_records": 0,
+      "unresolved_printed_code_records": 0
+    },
+    "parser_fingerprint": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+  },
+  "primary_page_count": 301,
+  "cache_unchanged_after_audit": true
+}

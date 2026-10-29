@@ -17,9 +17,9 @@ try{
  const probe=String.raw`const fs=require('fs'),crypto=require('crypto'),cp=require('child_process');
  const files=['package.json','package-lock.json','.next/BUILD_ID'];const checked=[];
  for(const p of files){const b=fs.readFileSync('/app/'+p);if(!b.length)throw Error('Empty critical image file: '+p);if(p.endsWith('.json'))JSON.parse(b.toString('utf8'));checked.push({path:p,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex')});}
- const fingerprint=cp.execFileSync(process.execPath,['--import','tsx','scripts/release-check.ts','fingerprint'],{cwd:'/app',encoding:'utf8',timeout:60000,maxBuffer:1024*1024}).trim();if(!/^[a-f0-9]{64}$/.test(fingerprint))throw Error('Invalid image fingerprint');console.log(JSON.stringify({critical_files:checked,source_tree_sha256:fingerprint,node:process.version,uid:process.getuid()}));`;
+ const fingerprint=cp.execFileSync(process.execPath,['--import','tsx','scripts/release-check.ts','fingerprint'],{cwd:'/app',encoding:'utf8',timeout:60000,maxBuffer:1024*1024}).trim();if(!/^[a-f0-9]{64}$/.test(fingerprint))throw Error('Invalid image fingerprint');const disk=fs.statfsSync('/');console.log(JSON.stringify({critical_files:checked,source_tree_sha256:fingerprint,node:process.version,uid:process.getuid(),filesystem_free_bytes:disk.bavail*disk.bsize}));`;
  created=true;
- const actual=JSON.parse(docker(['run','--rm','--pull=never','--name',name,'--network','none','--read-only','--cap-drop','ALL','--security-opt','no-new-privileges','--memory','1g','--cpus','1','--pids-limit','64','--entrypoint','node',image,'-e',probe]));
+ const actual=JSON.parse(docker(['run','--rm','--pull=never','--name',name,'--network','none','--read-only','--tmpfs','/tmp:rw,noexec,nosuid,size=67108864','--cap-drop','ALL','--security-opt','no-new-privileges','--memory','1g','--cpus','1','--pids-limit','64','--entrypoint','node',image,'-e',probe]));
  created=false;report.image_files=actual;
  if(actual.uid!==1000)throw new Error('A imagem deve executar como node/UID1000.');
  if(actual.source_tree_sha256!==expected)throw new Error('Fingerprint da imagem difere do repositório atual; congele o código e refaça o build antes de iniciar serviços.');

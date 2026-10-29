@@ -33,7 +33,7 @@ try {
  const files=(await readdir('tests')).filter(n=>n.endsWith('.test.ts')).sort().map(n=>'tests/'+n);
  if(!files.length)throw Error('No test files found.');
  console.log(JSON.stringify({event:'test_database_ready',mode:createdDatabase?'explicit_admin_connection':'disposable_container',container:createdContainer?container:undefined,database,files:files.length,fixture_policy:'Isolated owned test database only; published data untouched.'}));
- await run(process.execPath,['--import','tsx','--test','--test-concurrency=1',...files],{...process.env,DATABASE_URL:url,DOMAIN_INTEGRATION_TEST:'1'});
+ await run(process.execPath,['--import','tsx','--test','--test-concurrency=1',...files],{...process.env,DATABASE_URL:url,DOMAIN_INTEGRATION_TEST:'1',OPTIONAL_CONTRACT_INTEGRATION:'1'});
 }catch(error){console.error((error as Error).message);process.exitCode=1;}finally{
  if(createdDatabase&&admin){try{await admin.query(`DROP DATABASE "${database}" WITH (FORCE)`);}catch{console.error('Owned test database cleanup failed: '+database);process.exitCode=1;}}
  await admin?.end().catch(()=>{});

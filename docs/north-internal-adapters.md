@@ -1,34 +1,50 @@
-# Norte: partes documentais e integração
+# Norte: estado documental e integração
 
-Todas as revisões descritas aqui são automáticas, executadas por agentes e verificadores identificados. Não são revisão pedagógica humana nem declaração de vigência. Aquisição, extração técnica, reconciliação por parte e aceite da UF são estados distintos.
+As revisões são automatizadas, com autoria e evidências identificadas. Aquisição, extração, reconciliação por parte, aceite de UF e incorporação em produção são estados distintos.
 
-## Partes ligadas ao manifesto
+O quadro atual reproduzível está em `docs/evidence/north-current-source-state.json`: 16 sidecars vinculados, 12.910 registros documentais. Esse número inclui estruturas e contextos; não é uma contagem de aprendizagens nem comprovação de cobertura nacional.
 
-- AC EM: `ac-em-pv-items.json`, 158 registros. Os seis quadros do corpo/anexo têm 146 objetivos locais sem código, seis competências próprias e seis seções. A revisão independente conferiu todos os textos, 161 excertos e 2.335 palavras. Os 11 pares de objetivos que diferem entre corpo e anexo continuam distintos. A extração não cobre as outras partes do currículo. O artefato termina no título Anexo 2; não foi presumida uma falha de rede.
-- RO EI: 773 registros, com 497 definições, uma referência de legenda e 64 unidades sem código, além da hierarquia documental. Créditos sobrepostos e reconciliação editorial das outras seções permanecem separados.
-- RO EM: o pacote atual de 620 registros substitui o pacote inicial de 159 referências. Contém 133 definições por ano explícito, 262 objetivos locais e referências/estrutura. O gerador relacional efetivamente produziu 156 ligações documentais entre índice e definições da mesma fonte, sem órfãos. Não são equivalências ou pré-requisitos.
-- RO atos: 42, 32 e 381 registros nativos das portarias/matrizes. Os 11/1/12 recortes raster ainda não estão reconciliados. Artigos e células da matriz não foram classificados como aprendizagens.
+## Reconciliação integral do artefato
 
-Os quatro contextos de posição com formato antes ignorado foram corrigidos. PA112 e AP240 usam cabeçalhos literais e geometria da fonte. O quadro RO120–122 mantém posições individuais por célula, inclusive a coluna de índice sem ano.
+`ro-rcro-ei`: OwnSourceV2 e fechamento de dependências declaradas passaram no gate real. Foram conferidos 773 registros, 173 páginas, 18 partes, 3.747 blocos, 246.117 caracteres curriculares/contextuais e 4.251 fragmentos. Doze blocos de créditos/overlays/footer da página5 têm exclusão não curricular explícita; a abertura normativa permanece integral. O receipt está em `data/manifests/reconciliation/ro-rcro-ei.json`.
 
-## Candidatos ainda sem vínculo
+Os atos `ac-computacao-667-2025` e `ap-plano-em-001-2026` passaram OwnSourceV2 nos recortes próprios, com 12 e16 registros. O fechamento das dependências permanece pendente: o ato não substitui o currículo digital do Acre nem o corpo/tabelas do Plano de Ação do Amapá. A aprovação em2026 não foi transformada em edição2026 do Plano. Receipts e gate atual: `docs/evidence/north-current-own-source-v2-verification.json`.
 
-- RR EI: 346 registros dos organizadores físicos 29–99 e legenda 28. São 90 objetivos literalmente codificados, 60 experiências locais sem código, 90 abordagens, 90 orientações, 15 campos/faixas e uma referência de legenda. Os identificadores impressos `E103ET04` e `EI01ET01` sob outra faixa/campo foram preservados. Nenhum texto ausente foi completado com a BNCC. Revisão independente pendente.
-- TO EI: 329 registros dos organizadores 54–103. São 93 objetivos, 93 detalhamentos, 93 sugestões de experiências, 30 rótulos de direitos, cinco campos e 15 faixas. Os rótulos de direitos não foram apresentados como definições expandidas. Revisão independente pendente.
-- PA EI/EF e AP614 estão sob extração/revisão própria. As propostas somente devem ser vinculadas depois dos respectivos pacotes finais e seus hashes.
+## Partes verificadas e vinculadas
 
-## Reprodução
+| Fonte/parte | Registros e escopo |
+|---|---|
+| AC EI/EF | 2.191 registros do adapter previamente verificado; não declarar UF por esse recorte |
+| AC EM PV/Pós-Médio | 158:146objetivos sem código,6competências próprias e6seções; corpo/anexo preservados por ocorrência |
+| AP614 | 2.441:93objetivosEI,465experiências,1.633habilidadesEF e direitos/competências/estrutura; microfaixas documentais preservadas |
+| PA361 | 4.027:base1.972 preservada e2.055definições próprias de HabilidadesEF; autoridade disjunta EI73–88/EF112–323 |
+| RR EI | 346:90objetivos,60experiências,90abordagens,90orientações,15campos/faixas e1legenda documental |
+| TO EI | 359:93objetivos,93detalhamentos,93sugestões,30direitos completos,30rótulos de contexto,5campos e15faixas |
+| RO EF | 429:149Espanhol preservados,100competências e organizadoresER; outras partes continuam pendentes |
+| RO EM | 620 registros do recorte120–236 e156relações documentais internas; sem equivalência/pré-requisito |
+| RO Eletivas | 915 registros de campos/objetivos/habilidades/competências; objetos/eixos/rubricas restantes pendentes |
+| RO Educação Digital EI | 168 registros; escopo correto EI/EF, com clipping/XObjects e outras partes explicitamente pendentes |
+| RO atos | 42/32/381 registros nativos; matrizes/regiões raster11/1/12 ainda não reconciliadas |
 
-Use `var/venv-pipeline/bin/python`; os originais privados em `data/raw` são necessários.
+Os registros de direitos/rótulos, competências, objetos, detalhamentos, orientações, finalidades e normas mantêm seus papéis. Não se transformam todos em habilidades. Códigos originais irregulares permanecem literais, inclusive `E103ET04`, `EI01ET01` no contexto diverso e variantes `LE`/`C1`; não foram criados aliases nacionais por suposição.
+
+Os snapshots RR/TO anteriores foram preservados. TOv3 documenta30correções de tipo rótulo e30novas definições, com IDs/textos/códigos/pais anteriores mantidos. As posições mensais desses recortes vêm de cabeçalhos físicos e incluem Evidence[]. PB635/PB392 congelados permanecem intactos; seus refreshes de idade são assunto separado.
+
+## Reprodução e integração
+
+Use `var/venv-pipeline/bin/python`. Os originais privados são necessários.
 
 ```sh
 var/venv-pipeline/bin/python data/manifests/uncoded/ac-em-pv-extract.py
-var/venv-pipeline/bin/python docs/evidence/source-audit-ac-em/pv-integrate.py
 var/venv-pipeline/bin/python data/manifests/uncoded/rr-ei-organizers-extract.py
-var/venv-pipeline/bin/python data/manifests/uncoded/to-ei-organizers-extract.py
-var/venv-pipeline/bin/python docs/evidence/north-apply-proposal.py docs/evidence/source-audit-ro/ro-rcem-lgg-proposed-source-fields.json
+var/venv-pipeline/bin/python data/manifests/uncoded/to-ei-rights-v3-extract.py
+var/venv-pipeline/bin/python data/manifests/uncoded/north-normative-acts-extract.py
+var/venv-pipeline/bin/python docs/evidence/source-audit-ro/reconcile_ei_whole_source.py
+var/venv-pipeline/bin/python docs/evidence/source-audit-north-norms/write-current-whole-source-receipts.py
 ```
 
-Os candidatos RR/TO reconstruíram os mesmos bytes. O aplicador serial recusa propostas marcadas `binding_ready:false`, valida hashes e executa o loader/finalizer/schema antes de alterar o manifesto. Lê novamente o manifesto antes da gravação para preservar os campos de outras frentes.
+O aplicador `docs/evidence/north-apply-proposal.py` valida hash do PDF/sidecar, loader/finalizer/schema, hierarquia, texto/código/posições/ordem e parser estável antes da gravação serial. Recusa propostas `binding_ready:false` e regressões silenciosas de identidades. Não executa o parser global. Os receipts só podem ser produzidos contra cache/config/runtime atuais; não se reescrevem fingerprints para aparentar compatibilidade.
 
-Os PNGs primários AM foram transferidos sem perda para `var/private-evidence`; o inventário old/new/SHA está em `source-audit-am-sections/primary-assets-relocation.json`. AP tem inventário equivalente. Imagens e PDFs não foram presumidos redistribuíveis.
+AM permanece com provas próprias de posição/capítulos, não de corpo textual integral. O peer de corpo é uma frente separada. Os92PNGs primários AM e79PNGs CEDOC foram movidos sem perda para `var/private-evidence`, com inventários old/new/SHA. Os dois crops ligados ao snapshot PB continuam no lugar por decisão do coordenador. AP também possui inventário próprio de imagens privadas.
+
+Nenhum resultado desta página comprova vigência atual, revisão pedagógica humana, UF integral ou produção. O quadro de pendências distingue trabalho interno, refresh técnico e falhas externas concretamente observadas.

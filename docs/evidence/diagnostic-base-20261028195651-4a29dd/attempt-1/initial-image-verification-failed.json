@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-10-28T20:02:18.628Z",
+  "image": "curriculos-abertos:diag-base-20261028t195651-4a29dd",
+  "network": "none",
+  "read_only": true,
+  "runtime_secrets_injected": false,
+  "passed": false,
+  "expected_source_tree_sha256": "1ad19dcd1094cbeb2674649f32014d6f54d50e235b0b7c73d0ccc076d567718f",
+  "image_id": "sha256:4dfd9268ed489e7c55fbb1e1f43fb12e45749c28c276405be624ca4ab762d902",
+  "error": "node:fs:1370\n  const result = binding.mkdir(\n                         ^\n\nError: ENOENT: no such file or directory, mkdir '/tmp/tsx-1000'\n    at Object.mkdirSync (node:fs:1370:26)\n    at Er.initialize (file:///app/node_modules/tsx/dist/index-DE3OBZuV.mjs:13:9375)\n    at Er.set (file:///app/node_modules/tsx/dist/index-DE3OBZuV.mjs:13:9765)\n    at transformEsmSync (file:///app/node_modules/tsx/dist/index-DE3OBZuV.mjs:14:4445)\n    at load (file:///app/node_modules/tsx/dist/register-nyXW-TH3.mjs:2:6632)\n    at nextStep (node:internal/modules/customization_hooks:189:26)\n    at loadWithHooks (node:internal/modules/customization_hooks:374:18)\n    at #loadSync (node:internal/modules/esm/loader:865:14)\n    at ModuleLoader.load (node:internal/modules/esm/loader:824:28)\n    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:609:31) {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'mkdir',\n  path: '/tmp/tsx-1000'\n}\n\nNode.js v22.23.4\nnode:child_process:955\n    throw err;\n    ^\n\nError: Command failed: /usr/local/bin/node --import tsx scripts/release-check.ts fingerprint\nnode:fs:1370\n  const result = binding.mkdir(\n                         ^\n\nError: ENOENT: no such file or directory, mkdir '/tmp/tsx-1000'\n    at Object.mkdirSync (node:fs:1370:26)\n    at Er.initialize (file:///app/node_modules/tsx/dist/index-DE3OBZuV.mjs:13:9375)\n    at Er.set (file:///app/node_modules/tsx/dist/index-DE3OBZuV.mjs:13:9765)\n    at transformEsmSync (file:///app/node_modules/tsx/dist/index-DE3OBZuV.mjs:14:4445)\n    at load (file:///app/node_modules/tsx/dist/register-nyXW-TH3.mjs:2:6632)\n    at nextStep (node:internal/modules/customization_hooks:189:26)\n    at loadWithHooks (node:internal/modules/customization_hooks:374:18)\n    at #loadSync (node:internal/modules/esm/loader:865:14)\n    at ModuleLoader.load (node:internal/modules/esm/loader:824:28)\n    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:609:31) {\n  errno: -2,\n  code: 'ENOENT',\n  syscall: 'mkdir',\n  path: '/tmp/ts",
+  "completed_at": "2026-10-28T20:02:20.128Z"
+}

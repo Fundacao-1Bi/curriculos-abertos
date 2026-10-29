@@ -1,0 +1,107 @@
+{
+  "base_capture_records": 19,
+  "command": "env PYTHONDONTWRITEBYTECODE=1 var/venv-pipeline/bin/python docs/evidence/source-audit-technical-provenance-peer/verify_followup_v101.py",
+  "corpus_manifest_cache_core_database_mutated": false,
+  "counterfactual_absent_effect": "documented_historical_text_correction",
+  "counterfactual_after_effect": "already_corrected_in_pinned_base",
+  "counterfactual_superseded_absent_effect": "documented_historical_extraction_correction",
+  "engine": {
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "events_sha256_for_this_producer": "210a92651a550a2d02327d14161ce04b159bcfd8f801452085a34f4aa536e28f",
+  "extraction_import_build_or_wiring_run": false,
+  "generated_at": "2026-10-28T21:45:29.177956+00:00",
+  "historical_receipt_and_readme_unchanged": true,
+  "identical_relation_duplicate_allowed": true,
+  "limits": [
+    "PASS concerns the three reproduced findings and pinned standalone producer only.",
+    "Manifest-byte verification remains the responsibility of the integrator; hex grammar alone cannot prove a manifest checksum.",
+    "Earlier historical99-pin report and its raster code drift remain historical; this follow-up does not republish or renew that checkpoint.",
+    "No production compositor/bypass/import/release was executed.",
+    "After/absent/third-text/collision controls are in memory only and are not the actual BASE."
+  ],
+  "malformed_base_sha_rejections_both_apis": [
+    {
+      "contextualize": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "global_id": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "input_type": "str"
+    },
+    {
+      "contextualize": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "global_id": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "input_type": "str"
+    },
+    {
+      "contextualize": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "global_id": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "input_type": "str"
+    },
+    {
+      "contextualize": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "global_id": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "input_type": "str"
+    },
+    {
+      "contextualize": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "global_id": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "input_type": "NoneType"
+    },
+    {
+      "contextualize": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "global_id": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "input_type": "int"
+    },
+    {
+      "contextualize": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "global_id": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "input_type": "list"
+    },
+    {
+      "contextualize": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "global_id": "Pinned base publication identity with hexadecimal SHA-256 required",
+      "input_type": "str"
+    }
+  ],
+  "national_base_shards_rescanned": false,
+  "negative_rejections": {
+    "claim_current_removal_absent_old": "Cannot claim removal: old ID absent from pinned base",
+    "relation_same_id_conflicting_type": "Conflicting payload for same ID in effective RAW relations: ca:relation:a16d5a2d803084dfe37eb283",
+    "same_id_third_text": "Same-ID record in pinned BASE differs from approved before/after text"
+  },
+  "new_findings": [],
+  "pins": {
+    "docs/evidence/source-audit-technical-provenance-peer/README.md": "64ce9fa8d4c2ad81724abf82780ddcba53f6a16e9e14c9950dda139480bd57fd",
+    "docs/evidence/source-audit-technical-provenance-peer/verification.json": "f71beb8e32cbe7cb64c82c9ad05025185e86c4b1189c8ccb356b47597e9f0a18",
+    "pipeline/technical_provenance.py": "bc00fa550bd0147f2ac440accdb5581436480d27938bd468ebfcc2f91fca3c2b",
+    "pipeline/tests/test_technical_provenance.py": "47513c10042e00069b45a516bc6022ee027e905268973827fd8dbb02fe901d07"
+  },
+  "producer_fingerprint": {
+    "algorithm": "sha256-of-canonical-producer-and-dependencies-v1",
+    "dependencies": {
+      "_hashlib": "1e015c6118cdd4c9247c1304e38f9071680f5107eb1983e51c581ce85374c3e1",
+      "_json": "83dc6cb12a09193f6f0bb9447744e955cbfa23147bc3025429c1a6b2f6c67d84",
+      "copy": "27dcfc53a4b9d4fbc3d90c74e549eb6eca9301524d6d2fbff9a6589cf51b6fd5",
+      "hashlib": "e2bffb462e4d43e6637b9450e259e8ba2a56626ba3037d68aa1cee68b3f61d4a",
+      "json": "d5d41e2c29049515d295d81a6d40b4890fbec8d8482cfb401630f8ef2f77e4d5",
+      "json.decoder": "9f02654649816145bc76f8c210a5fe3ba1de142d4d97a1c93105732e747c285b",
+      "json.encoder": "af7bd40a0d0d0a3e726a9b4b3a2a543019f6ab97a340d0162a9c29ca9da97869",
+      "json.scanner": "8604d9d03786d0d509abb49e9f069337278ea988c244069ae8ca2c89acc2cb08",
+      "pathlib": "3b21ac188fd9ac20bacc8ccd976fabd5d8ccf5000f8e157d3dfff005b228fb3d"
+    },
+    "producer_file_sha256": "bc00fa550bd0147f2ac440accdb5581436480d27938bd468ebfcc2f91fca3c2b",
+    "revision": "technical-provenance-v1.0.1",
+    "runtime": {
+      "cache_tag": "cpython-311",
+      "implementation": "cpython",
+      "version": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+    },
+    "sha256": "14979f7a14f96e264baabf0e17791e1e58e4029a91eee0666ffac93d77cef599"
+  },
+  "raw_items": 15276,
+  "raw_relations": 3037,
+  "real_current_effects": {
+    "supersedes_item_from_pinned_base": 18
+  },
+  "real_same_id_before_effect": "corrects_text_in_pinned_base",
+  "status": "PASS_scoped_read_only_followup"
+}
