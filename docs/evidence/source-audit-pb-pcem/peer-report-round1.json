@@ -1,0 +1,4122 @@
+{
+ "reviewer": "independent source-first peer review",
+ "pdf": "data/raw/PB/pb-pcem.pdf",
+ "pdf_sha256": "d31b7a843ecef96921434877db1bf3955b6942a3125747b11059dc3765fe5db8",
+ "sidecar": "data/manifests/uncoded/pb-pcem-items.json",
+ "records": 6368,
+ "scripts": "var/pb-pcem-peer/check*.py (independent; adapter scripts not used)",
+ "checks": {
+  "1_code_census": {
+   "status": "FAIL",
+   "coded_pages": 530,
+   "printed_code_tokens": 2900,
+   "sidecar_codes_matched": 2878,
+   "printed_missing_in_sidecar": 22,
+   "sidecar_codes_not_printed": 0,
+   "missing_breakdown": {
+    "quadro5_p54_55_EM13LP01_17": 17,
+    "absorbed_into_previous_habilidade_ifa_text": [
+     "p675 EMIFCNT09 (inside pb-pcem-ifi-hab-341 EMIFCNT08)",
+     "p688 EMIFCG03 (inside pb-pcem-ifi-hab-373 EMIFCG02)",
+     "p696 EMIFCG08 (inside pb-pcem-ifi-hab-396 EMIFCG07)"
+    ],
+    "inline_prose_mentions_p269": [
+     "EM13MAT302",
+     "EM13MAT402 (inside desdobramento EM13MAT502 text; no mention record)"
+    ]
+   },
+   "missing": [
+    {
+     "page": 54,
+     "code": "EM13LP01",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       450.5,
+       250.5,
+       461.6
+      ]
+     ]
+    },
+    {
+     "page": 54,
+     "code": "EM13LP02",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       479.0,
+       250.5,
+       490.1
+      ]
+     ]
+    },
+    {
+     "page": 54,
+     "code": "EM13LP03",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       507.4,
+       250.5,
+       518.5
+      ]
+     ]
+    },
+    {
+     "page": 54,
+     "code": "EM13LP04",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       535.9,
+       250.5,
+       547.0
+      ]
+     ]
+    },
+    {
+     "page": 54,
+     "code": "EM13LP05",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       564.3,
+       250.5,
+       575.4
+      ]
+     ]
+    },
+    {
+     "page": 54,
+     "code": "EM13LP06",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       592.7,
+       250.5,
+       603.8
+      ]
+     ]
+    },
+    {
+     "page": 54,
+     "code": "EM13LP07",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       621.2,
+       250.5,
+       632.3
+      ]
+     ]
+    },
+    {
+     "page": 54,
+     "code": "EM13LP08",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       649.6,
+       250.5,
+       660.8
+      ]
+     ]
+    },
+    {
+     "page": 54,
+     "code": "EM13LP09",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       678.1,
+       250.5,
+       689.2
+      ]
+     ]
+    },
+    {
+     "page": 54,
+     "code": "EM13LP10",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       706.5,
+       250.5,
+       717.6
+      ]
+     ]
+    },
+    {
+     "page": 54,
+     "code": "EM13LP11",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       735.1,
+       250.5,
+       746.2
+      ]
+     ]
+    },
+    {
+     "page": 55,
+     "code": "EM13LP12",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       108.7,
+       250.5,
+       119.8
+      ]
+     ]
+    },
+    {
+     "page": 55,
+     "code": "EM13LP13",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       137.2,
+       250.5,
+       148.3
+      ]
+     ]
+    },
+    {
+     "page": 55,
+     "code": "EM13LP14",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       165.6,
+       250.5,
+       176.7
+      ]
+     ]
+    },
+    {
+     "page": 55,
+     "code": "EM13LP15",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       194.0,
+       250.5,
+       205.2
+      ]
+     ]
+    },
+    {
+     "page": 55,
+     "code": "EM13LP16",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       222.5,
+       250.5,
+       233.6
+      ]
+     ]
+    },
+    {
+     "page": 55,
+     "code": "EM13LP17",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       194.6,
+       260.3,
+       250.5,
+       271.4
+      ]
+     ]
+    },
+    {
+     "page": 269,
+     "code": "EM13MAT302",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       426.4,
+       181.2,
+       492.9,
+       192.3
+      ]
+     ]
+    },
+    {
+     "page": 269,
+     "code": "EM13MAT402",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       400.1,
+       198.4,
+       466.7,
+       209.5
+      ]
+     ]
+    },
+    {
+     "page": 675,
+     "code": "EMIFCNT09",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       485.2,
+       238.2,
+       541.0,
+       248.3
+      ]
+     ]
+    },
+    {
+     "page": 688,
+     "code": "EMIFCG03",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       332.5,
+       344.9,
+       383.3,
+       355.0
+      ]
+     ]
+    },
+    {
+     "page": 696,
+     "code": "EMIFCG08",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       256.4,
+       337.4,
+       307.3,
+       347.4
+      ]
+     ]
+    }
+   ],
+   "anomalous_printed_codes": [
+    {
+     "page": 94,
+     "literal": "EM13LP 8/1,6",
+     "bbox": [
+      213.2,
+      694.4,
+      248.3,
+      704.5
+     ],
+     "sidecar": [
+      [
+       "EM13LP8/1,6",
+       "pb-pcem-lgg-lp-linha-002-cod-0-02",
+       "referencia_no_documento",
+       "EM13LP8/1,6"
+      ]
+     ]
+    },
+    {
+     "page": 95,
+     "literal": "EM13LP735",
+     "bbox": [
+      213.2,
+      484.3,
+      263.3,
+      494.3
+     ],
+     "sidecar": [
+      [
+       "EM13LP735",
+       "pb-pcem-lgg-lp-linha-002-cod-1-17",
+       "referencia_no_documento",
+       "EM13LP735"
+      ]
+     ]
+    },
+    {
+     "page": 267,
+     "literal": "EM131MAT202",
+     "bbox": [
+      121.1,
+      663.8,
+      197.6,
+      674.9
+     ],
+     "sidecar": [
+      [
+       "EM131MAT202",
+       "pb-pcem-fgbx-mat-desdobramento-EM131MAT202",
+       "desdobramento",
+       "EM131MAT202"
+      ]
+     ]
+    },
+    {
+     "page": 366,
+     "literal": "EM13CT301",
+     "bbox": [
+      161.2,
+      658.3,
+      211.8,
+      668.3
+     ],
+     "sidecar": [
+      [
+       "EM13CT301",
+       "pb-pcem-fgbx-quimica-linha-026-cod-0-07",
+       "referencia_no_documento",
+       "EM13CT301"
+      ]
+     ]
+    }
+   ],
+   "notes": [
+    "All 4 anomalous printed codes are preserved; but EM13LP 8/1,6 (p94) is normalised to code/code_original EM13LP8/1,6, which reads as habilidade 08 (row context: 46, [4]8, 49 -> printed typo of 48). Flag rather than normalise.",
+    "code_original drops printed internal spaces in 72 records (e.g. EM13LP27/ 3, 7 -> EM13LP27/3,7); excerpts remain literal.",
+    "Codes printed on pages just beyond coded ranges, in tables/lists that continue: p122 (7 LGG, Língua Inglesa last row), p134 (3, Língua Espanhola), p233 (2, Teatro), p392 (EM13CHS603-606 area skill list). Sidecar stops at range end; generic keeps them -> split representation."
+   ]
+  },
+  "2_text_loss_uncoded_pages": {
+   "status": "PASS_WITH_MINOR_LOSS",
+   "pages": 506,
+   "native_words": 142277,
+   "unmatched_by_category": {
+    "column_header_label": 384,
+    "punctuation_only": 1042,
+    "absent": 3,
+    "only_in_label_or_position_evidence": 1481
+   },
+   "interpretation": {
+    "absent": "3 words, all column-header words (p99 DO, p413/p415 área)",
+    "column_header_label": "table column-header rows (CAMPO DE ATUAÇÃO / HABILIDADE ESPECÍFICA DA ÁREA / OBJETIVO DE APRENDIZAGEM / OBJETO DE CONHECIMENTO / UNIDADE TEMÁTICA ...) not present in any evidence, label_evidence or position_evidence; generic page sections are discarded on these pages so this text is lost",
+    "only_in_label_or_position_evidence": "field labels (Carga Horária Semanal, Perfil do Professor, ...) only in source_context.label_evidence, not as item evidence",
+    "punctuation_only": "printed (EM13...) tokens whose code_locator excerpt drops the parentheses"
+   },
+   "column_header_pages": [
+    94,
+    99,
+    102,
+    115,
+    119,
+    129,
+    132,
+    147,
+    151,
+    170,
+    175,
+    197,
+    204,
+    226,
+    228,
+    231,
+    239,
+    243,
+    247,
+    276,
+    278,
+    316,
+    320,
+    325,
+    336,
+    341,
+    360,
+    366,
+    403,
+    405,
+    413,
+    415,
+    421,
+    426
+   ],
+   "boundary_truncation": [
+    "p178 objective pb-pcem-lgg-danca-linha-027-obj-04 ends \"(urbano,\" ; continuation on p179 (outside authority)",
+    "tables continue outside authority on p122, p134, p179, p211, p233 (rows/objectives not in sidecar; generic page sections remain)"
+   ],
+   "genuinely_absent_lines": [
+    {
+     "page": 99,
+     "cat": "absent",
+     "text": "DO",
+     "at": [
+      488,
+      306
+     ]
+    },
+    {
+     "page": 413,
+     "cat": "absent",
+     "text": "área",
+     "at": [
+      250,
+      196
+     ]
+    },
+    {
+     "page": 415,
+     "cat": "absent",
+     "text": "área",
+     "at": [
+      252,
+      160
+     ]
+    }
+   ]
+  },
+  "3_literal_fidelity": {
+   "status": "PASS",
+   "sample_records": 314,
+   "strata_kind_x_part": 87,
+   "sample_stats": {
+    "evidence_exact": 321,
+    "join_equal": 314,
+    "evidence_punct_diff": 39,
+    "evidence_token_mismatch": 37
+   },
+   "full_population_stats": {
+    "evidence_exact": 5822,
+    "join_equal": 6368,
+    "evidence_token_mismatch": 1063,
+    "evidence_punct_diff": 1042
+   },
+   "findings": [
+    "0 records where joined excerpts != text (sample 314 and all 6368)",
+    "0 excerpts containing words absent from their bbox",
+    "1042 code_locator excerpts omit printed parentheses: excerpt EM13MAT101 vs printed (EM13MAT101) - not strictly literal",
+    "1063 text-evidence bboxes also enclose the leading (CODE) token that the excerpt omits (bbox not tight to excerpt)"
+   ],
+   "sample_issue_records": [
+    {
+     "key": "pb-pcem-fgbx-mat-desdobramento-EM13MAT101",
+     "kind": "desdobramento",
+     "issues": [
+      {
+       "type": "punctuation_differs",
+       "page": 267,
+       "role": "code_locator",
+       "excerpt": "EM13MAT101",
+       "bbox_text": "(EM13MAT101)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-mat-desdobramento-EM131MAT202",
+     "kind": "desdobramento",
+     "issues": [
+      {
+       "type": "punctuation_differs",
+       "page": 267,
+       "role": "code_locator",
+       "excerpt": "EM131MAT202",
+       "bbox_text": "(EM131MAT202)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-143",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 600,
+       "role": null,
+       "section": "habilidade",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13CNT303)"
+       ],
+       "bbox": [
+        196.49,
+        201.15,
+        519.65,
+        273.35
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 600,
+       "role": "code_locator",
+       "excerpt": "EM13CNT303",
+       "bbox_text": "(EM13CNT303)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-022",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 560,
+       "role": null,
+       "section": "habilidade",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LP51)"
+       ],
+       "bbox": [
+        196.49,
+        249.75,
+        523.62,
+        337.46
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 560,
+       "role": "code_locator",
+       "excerpt": "EM13LP51",
+       "bbox_text": "(EM13LP51)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-161",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 605,
+       "role": null,
+       "section": "habilidade",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13CNT104)"
+       ],
+       "bbox": [
+        196.49,
+        333.3,
+        520.42,
+        405.5
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 605,
+       "role": "code_locator",
+       "excerpt": "EM13CNT104",
+       "bbox_text": "(EM13CNT104)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-125",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 596,
+       "role": null,
+       "section": "habilidade",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13CNT103)"
+       ],
+       "bbox": [
+        196.49,
+        108.03,
+        520.24,
+        164.63
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 596,
+       "role": "code_locator",
+       "excerpt": "EM13CNT103",
+       "bbox_text": "(EM13CNT103)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-474",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 713,
+       "role": null,
+       "section": "habilidade",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LP53)"
+       ],
+       "bbox": [
+        196.49,
+        344.95,
+        524.24,
+        401.54
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 713,
+       "role": "code_locator",
+       "excerpt": "EM13LP53",
+       "bbox_text": "(EM13LP53)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-559",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 746,
+       "role": null,
+       "section": "habilidade",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LGG204)"
+       ],
+       "bbox": [
+        196.49,
+        308.35,
+        523.78,
+        364.94
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 746,
+       "role": "code_locator",
+       "excerpt": "EM13LGG204",
+       "bbox_text": "(EM13LGG204)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-517",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 726,
+       "role": null,
+       "section": "habilidade",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LP09)"
+       ],
+       "bbox": [
+        196.49,
+        393.42,
+        524.13,
+        419.06
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 726,
+       "role": "code_locator",
+       "excerpt": "EM13LP09",
+       "bbox_text": "(EM13LP09)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-577",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 755,
+       "role": null,
+       "section": "habilidade",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LGG102)"
+       ],
+       "bbox": [
+        196.49,
+        364.51,
+        524.04,
+        420.98
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 755,
+       "role": "code_locator",
+       "excerpt": "EM13LGG102",
+       "bbox_text": "(EM13LGG102)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-297",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 661,
+       "role": null,
+       "section": "habilidade",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13CHS305)"
+       ],
+       "bbox": [
+        196.49,
+        647.88,
+        533.69,
+        704.47
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 661,
+       "role": "code_locator",
+       "excerpt": "EM13CHS305",
+       "bbox_text": "(EM13CHS305)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-475",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 717,
+       "role": null,
+       "section": "habilidade",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LGG502)"
+       ],
+       "bbox": [
+        196.49,
+        477.08,
+        524.14,
+        518.2
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 717,
+       "role": "code_locator",
+       "excerpt": "EM13LGG502",
+       "bbox_text": "(EM13LGG502)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-461",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 711,
+       "role": null,
+       "section": "habilidade",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LP06)"
+       ],
+       "bbox": [
+        196.49,
+        494.6,
+        523.99,
+        551.2
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 711,
+       "role": "code_locator",
+       "excerpt": "EM13LP06",
+       "bbox_text": "(EM13LP06)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-mat-habilidade-EM13MAT505",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 266,
+       "role": null,
+       "section": "area-skill-text",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13MAT505)"
+       ],
+       "bbox": [
+        85.1,
+        410.32,
+        538.06,
+        455.98
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 266,
+       "role": "code_locator",
+       "excerpt": "EM13MAT505",
+       "bbox_text": "(EM13MAT505)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-chs-habilidade-EM13CHS303",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 390,
+       "role": null,
+       "section": "area-skill-text",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13CHS303)"
+       ],
+       "bbox": [
+        85.1,
+        244.09,
+        538.48,
+        289.9
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 390,
+       "role": "code_locator",
+       "excerpt": "EM13CHS303",
+       "bbox_text": "(EM13CHS303)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-chs-habilidade-EM13CHS403",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 390,
+       "role": null,
+       "section": "area-skill-text",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13CHS403)"
+       ],
+       "bbox": [
+        85.1,
+        690.45,
+        538.27,
+        736.11
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 390,
+       "role": "code_locator",
+       "excerpt": "EM13CHS403",
+       "bbox_text": "(EM13CHS403)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-chs-habilidade-EM13CHS206",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 389,
+       "role": null,
+       "section": "area-skill-text",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13CHS206)"
+       ],
+       "bbox": [
+        85.1,
+        585.42,
+        538.6,
+        631.08
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 389,
+       "role": "code_locator",
+       "excerpt": "EM13CHS206",
+       "bbox_text": "(EM13CHS206)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-12-campo-06-h11",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 515,
+       "role": null,
+       "section": "coded-skill",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LGG303)"
+       ],
+       "bbox": [
+        210.53,
+        551.24,
+        532.72,
+        638.92
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 515,
+       "role": "code_locator",
+       "excerpt": "EM13LGG303",
+       "bbox_text": "(EM13LGG303)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-05-campo-07-h02",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 474,
+       "role": null,
+       "section": "coded-skill",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LGG202)"
+       ],
+       "bbox": [
+        202.13,
+        547.28,
+        532.19,
+        603.76
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 474,
+       "role": "code_locator",
+       "excerpt": "EM13LGG202",
+       "bbox_text": "(EM13LGG202)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-12-campo-06-h17",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 516,
+       "role": null,
+       "section": "coded-skill",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LGG703)"
+       ],
+       "bbox": [
+        210.53,
+        284.82,
+        532.71,
+        325.94
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 516,
+       "role": "code_locator",
+       "excerpt": "EM13LGG703",
+       "bbox_text": "(EM13LGG703)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-14-campo-07-h03",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 530,
+       "role": null,
+       "section": "coded-skill",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LGG704)"
+       ],
+       "bbox": [
+        210.53,
+        280.87,
+        535.7,
+        321.86
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 530,
+       "role": "code_locator",
+       "excerpt": "EM13LGG704",
+       "bbox_text": "(EM13LGG704)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-07-campo-06-h10",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 484,
+       "role": null,
+       "section": "coded-skill",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LGG303)"
+       ],
+       "bbox": [
+        209.09,
+        611.36,
+        535.2,
+        698.95
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 484,
+       "role": "code_locator",
+       "excerpt": "EM13LGG303",
+       "bbox_text": "(EM13LGG303)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-02-campo-07-h18",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 455,
+       "role": null,
+       "section": "coded-skill",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LP51)"
+       ],
+       "bbox": [
+        202.13,
+        665.51,
+        536.04,
+        721.99
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 455,
+       "role": "code_locator",
+       "excerpt": "EM13LP51",
+       "bbox_text": "(EM13LP51)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-habilidade-geral-06",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 438,
+       "role": null,
+       "section": "itinerary-general-skill",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LGG201)"
+       ],
+       "bbox": [
+        85.1,
+        681.93,
+        538.43,
+        727.71
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 438,
+       "role": "code_locator",
+       "excerpt": "EM13LGG201",
+       "bbox_text": "(EM13LGG201)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-12-campo-06-h09",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 515,
+       "role": null,
+       "section": "coded-skill",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LGG105)"
+       ],
+       "bbox": [
+        210.65,
+        438.54,
+        532.77,
+        479.68
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 515,
+       "role": "code_locator",
+       "excerpt": "EM13LGG105",
+       "bbox_text": "(EM13LGG105)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-03-campo-07-h13",
+     "kind": "habilidade",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 463,
+       "role": null,
+       "section": "coded-skill",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EM13LP31)"
+       ],
+       "bbox": [
+        202.13,
+        267.31,
+        532.18,
+        370.46
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 463,
+       "role": "code_locator",
+       "excerpt": "EM13LP31",
+       "bbox_text": "(EM13LP31)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-196",
+     "kind": "habilidade_ifa",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 616,
+       "role": null,
+       "section": "habilidade_ifa",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EMIFCNT09)"
+       ],
+       "bbox": [
+        196.37,
+        463.64,
+        526.16,
+        504.64
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 616,
+       "role": "code_locator",
+       "excerpt": "EMIFCNT09",
+       "bbox_text": "(EMIFCNT09)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-171",
+     "kind": "habilidade_ifa",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 608,
+       "role": null,
+       "section": "habilidade_ifa",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EMIFCG09)"
+       ],
+       "bbox": [
+        196.49,
+        187.59,
+        523.97,
+        244.19
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 608,
+       "role": "code_locator",
+       "excerpt": "EMIFCG09",
+       "bbox_text": "(EMIFCG09)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-107",
+     "kind": "habilidade_ifa",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 592,
+       "role": null,
+       "section": "habilidade_ifa",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EMIFCNT12)"
+       ],
+       "bbox": [
+        196.49,
+        170.07,
+        520.11,
+        211.19
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 592,
+       "role": "code_locator",
+       "excerpt": "EMIFCNT12",
+       "bbox_text": "(EMIFCNT12)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-224",
+     "kind": "habilidade_ifa",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 630,
+       "role": null,
+       "section": "habilidade_ifa",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EMIFCG01)"
+       ],
+       "bbox": [
+        217.73,
+        148.59,
+        535.88,
+        189.71
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 630,
+       "role": "code_locator",
+       "excerpt": "EMIFCG01",
+       "bbox_text": "(EMIFCG01)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-212",
+     "kind": "habilidade_ifa",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 624,
+       "role": null,
+       "section": "habilidade_ifa",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EMIFCG01)"
+       ],
+       "bbox": [
+        211.37,
+        241.71,
+        535.6,
+        282.86
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 624,
+       "role": "code_locator",
+       "excerpt": "EMIFCG01",
+       "bbox_text": "(EMIFCG01)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-362",
+     "kind": "habilidade_ifa",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 683,
+       "role": null,
+       "section": "habilidade_ifa",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EMIFCNT09)"
+       ],
+       "bbox": [
+        180.89,
+        352.86,
+        525.51,
+        393.98
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 683,
+       "role": "code_locator",
+       "excerpt": "EMIFCNT09",
+       "bbox_text": "(EMIFCNT09)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-439",
+     "kind": "habilidade_ifa",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 706,
+       "role": null,
+       "section": "habilidade_ifa",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EMIFCNT09)"
+       ],
+       "bbox": [
+        196.49,
+        496.64,
+        533.63,
+        537.76
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 706,
+       "role": "code_locator",
+       "excerpt": "EMIFCNT09",
+       "bbox_text": "(EMIFCNT09)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-433",
+     "kind": "habilidade_ifa",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 705,
+       "role": null,
+       "section": "habilidade_ifa",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EMIFCNT01)"
+       ],
+       "bbox": [
+        196.49,
+        663.71,
+        533.76,
+        720.43
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 705,
+       "role": "code_locator",
+       "excerpt": "EMIFCNT01",
+       "bbox_text": "(EMIFCNT01)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-353",
+     "kind": "habilidade_ifa",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 679,
+       "role": null,
+       "section": "habilidade_ifa",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EMIFCG03)"
+       ],
+       "bbox": [
+        196.49,
+        267.31,
+        540.97,
+        292.82
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 679,
+       "role": "code_locator",
+       "excerpt": "EMIFCG03",
+       "bbox_text": "(EMIFCG03)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-582",
+     "kind": "habilidade_ifa",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 759,
+       "role": null,
+       "section": "habilidade_ifa",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EMIFCG07)"
+       ],
+       "bbox": [
+        196.49,
+        189.63,
+        541.5,
+        246.23
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 759,
+       "role": "code_locator",
+       "excerpt": "EMIFCG07",
+       "bbox_text": "(EMIFCG07)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-402",
+     "kind": "habilidade_ifa",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 697,
+       "role": null,
+       "section": "habilidade_ifa",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EMIFCNT12)"
+       ],
+       "bbox": [
+        196.49,
+        191.68,
+        533.93,
+        232.67
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 697,
+       "role": "code_locator",
+       "excerpt": "EMIFCNT12",
+       "bbox_text": "(EMIFCNT12)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-18-campo-06-h06",
+     "kind": "habilidade_ifa",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 546,
+       "role": null,
+       "section": "coded-skill",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EMIFCG05)"
+       ],
+       "bbox": [
+        210.53,
+        397.51,
+        531.27,
+        438.5
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 546,
+       "role": "code_locator",
+       "excerpt": "EMIFCG05",
+       "bbox_text": "(EMIFCG05)"
+      }
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-18-campo-07-h11",
+     "kind": "habilidade_ifa",
+     "issues": [
+      {
+       "type": "tokens_differ",
+       "page": 548,
+       "role": null,
+       "section": "coded-skill",
+       "excerpt_not_in_bbox": [],
+       "bbox_not_in_excerpt": [
+        "(EMIFMAT09)"
+       ],
+       "bbox": [
+        210.53,
+        108.03,
+        531.07,
+        149.15
+       ]
+      },
+      {
+       "type": "punctuation_differs",
+       "page": 548,
+       "role": "code_locator",
+       "excerpt": "EMIFMAT09",
+       "bbox_text": "(EMIFMAT09)"
+      }
+     ]
+    }
+   ]
+  },
+  "4_segmentation": {
+   "status": "FAIL",
+   "objective_units": 1229,
+   "no_terminal_punctuation": 33,
+   "page_break_splits": 31,
+   "page_break_splits_with_different_parent": 26,
+   "other_no_terminal": [
+    "p130 pb-pcem-lgg-le-linha-012-obj-03: source lacks period (not a defect)",
+    "p178 pb-pcem-lgg-danca-linha-027-obj-04: truncated at authority boundary, continuation on p179"
+   ],
+   "units_bundling_multiple_objectives": 25,
+   "bundled_examples": [
+    {
+     "key": "pb-pcem-lgg-lp-linha-002-obj-17",
+     "page": 96,
+     "text": "Realizar práticas de análise crítica com apreciação ética, estética e política nas leituras dos textos literários; Fazer a apreciação de outros gêneros contemporâneos, como o Poetrix, por exemplo."
+    },
+    {
+     "key": "pb-pcem-lgg-av-linha-023-obj-01",
+     "page": 149,
+     "text": "Debater trabalhos, movimentos, práticas e obras artísticas que exploram ou desenvolvem-se na tridimensionalidade (escultura, designe de objetos, moda, arquitetura etc.), a partir da produção paraibana e da regional; Prat"
+    },
+    {
+     "key": "pb-pcem-lgg-musica-linha-005-obj-02",
+     "page": 193,
+     "text": "Conectar suas vivências musicais com as realidades locais; Identificar e manter vivas as tradições e manifestações culturais musicais regionais."
+    },
+    {
+     "key": "pb-pcem-lgg-ef-linha-001-obj-01",
+     "page": 239,
+     "text": "Pesquisar sobre os estereótipos relacionados às práticas corporais alternativas (PCA); Debater a legitimação das PCA como inerente ao processo educativo; Produzir coletivamente folder informativo sobre a importância das "
+    },
+    {
+     "key": "pb-pcem-lgg-ef-serie1-r5-obj-04",
+     "page": 240,
+     "text": "Valorizar a diversidade; Pesquisar como nasce um grupo cultural e se há grupos na comunidade."
+    },
+    {
+     "key": "pb-pcem-lgg-ef-serie2-r25-obj-01",
+     "page": 247,
+     "text": "Analisar o discurso preconceituoso nos meios de comunicação de massa relativo a lutas; Reconhecer a luta como prática corporal historicamente construída e socialmente valorizada."
+    },
+    {
+     "key": "pb-pcem-lgg-ef-linha-030-obj-01",
+     "page": 249,
+     "text": "Analisar a inter-relação entre os diversos tipos de danças; Valorizar as danças como aspecto histórico e de construção e influência social; Produzir coreografias de forma colaborativas; Valorizar a diversidade; Apropriar"
+    },
+    {
+     "key": "pb-pcem-lgg-ef-linha-031-obj-01",
+     "page": 249,
+     "text": "Criar um ambiente de aprendizagem contínua, interesse intelectual e curiosidade para o desempenho humano; Utilizar de plataformas colaborativas de divulgação de informação relacionada ao autocuidado e saúde física e psic"
+    },
+    {
+     "key": "pb-pcem-lgg-ef-serie3-r32-obj-01",
+     "page": 249,
+     "text": "Desmistificar mitos relativos aos primeiros socorros; Utilizar das redes sociais para divulgar atitudes"
+    },
+    {
+     "key": "pb-pcem-lgg-ef-serie3-r33-obj-01",
+     "page": 250,
+     "text": "simples sobre o primeiro atendimento; Utilizar plataformas colaborativas para criação de protocolos de atendimento escolar; Vivenciar práticas de primeiros socorros em diferentes circunstâncias."
+    },
+    {
+     "key": "pb-pcem-lgg-ef-linha-034-obj-01",
+     "page": 250,
+     "text": "Analisar os sistemas táticos e sua relação com a cooperação da comunicação do time, resultando no alto desempenho esportivo.; Debater temas polêmicos (gênero) relacionados ao esporte; Experimentar a equidade de acesso na"
+    },
+    {
+     "key": "pb-pcem-lgg-ef-serie3-r36-obj-01",
+     "page": 251,
+     "text": "Discutir a cidadania no esporte; Debater temas polêmicos relacionados ao esporte adaptado; Experimentar a equidade de acesso na formação esportiva; Vivenciar, experimentar e criar seu próprio repertório, cooperando de fo"
+    },
+    {
+     "key": "pb-pcem-lgg-ef-linha-037-obj-01",
+     "page": 251,
+     "text": "Debater o contexto sociocultural de criação do jogo eletrônicos; Compreender a lógica computacional na criação de jogos; Legitimar o jogo no ambiente escolar; Produzir regras coletivamente, tornando o jogo da escola e nã"
+    },
+    {
+     "key": "pb-pcem-lgg-ef-linha-039-obj-01",
+     "page": 252,
+     "text": "Utilizar dessa modalidade esportiva para aproximar-se do meio ambiente e em temas relativos à sustentabilidade; Ressignificar os ambientes públicos de lazer; Tornar tangível essa prática corporal com utilização de materi"
+    },
+    {
+     "key": "pb-pcem-lgg-ef-serie3-r40-obj-01",
+     "page": 252,
+     "text": "Analisar o discurso preconceituoso nos meios de comunicação de massa; Reconhecer a luta como prática corporal historicamente construída e socialmente valorizada; Debater e diferenciar luta de briga; Debater a violência e"
+    },
+    {
+     "key": "pb-pcem-fgbx-matematica-linha-004-obj-02",
+     "page": 275,
+     "text": "Resolver problemas envolvendo os conceitos de grandeza, porcentagem e proporcionalidade; Identificar a relação de dependência entre grandezas."
+    },
+    {
+     "key": "pb-pcem-fgbx-biologia-linha-001-obj-02",
+     "page": 316,
+     "text": "Reconhecer os conhecimentos produzidos pela etnociência; Identificar os conhecimentos produzidos por outras culturas e valorizar o conhecimento dos povos tradicionais."
+    },
+    {
+     "key": "pb-pcem-fgbx-quimica-linha-002-obj-02",
+     "page": 352,
+     "text": "Reconhecer propriedades químicas de materiais ou substâncias presentes em nosso cotidiano como efervescência, fermentação, combustão, oxidação, corrosão, toxidez; degradabilidade polimerização, acidez, neutralidade e alc"
+    },
+    {
+     "key": "pb-pcem-fgbx-quimica-linha-006-obj-10",
+     "page": 355,
+     "text": "Compreender os conceitos de número atômico, isotopia e número de massa; Identificar as características do átomo."
+    },
+    {
+     "key": "pb-pcem-fgbx-quimica-linha-006-obj-15",
+     "page": 355,
+     "text": "Compreender o caráter provisório e incerto das teorias científicas, das limitações de um modelo explicativo e da necessidade de alterá-lo, avaliando as aplicações da ciência e levando em conta as opiniões controvertidas "
+    },
+    {
+     "key": "pb-pcem-fgbx-quimica-linha-023-obj-01",
+     "page": 364,
+     "text": "Identificar e interpretar informações presentes em gráficos e tabelas sobre o equilíbrio químico; Empregar modelos explicativos para compreender o equilíbrio químico."
+    },
+    {
+     "key": "pb-pcem-fgbx-quimica-linha-026-obj-08",
+     "page": 367,
+     "text": "Conceituar fissão e fusão nuclear; Compreender e entender processos de transmutação por meio de modelos explicativos."
+    },
+    {
+     "key": "pb-pcem-fgbx-quimica-linha-029-obj-02",
+     "page": 369,
+     "text": "Compreender o conceito de hidrocarbonetos; Compreender e identificar estruturas químicas dos hidrocarbonetos."
+    },
+    {
+     "key": "pb-pcem-fgbx-quimica-linha-032-obj-04",
+     "page": 370,
+     "text": "Reconhecer as condições necessárias para que ocorram estereoisomeria cis-trans, estereoisomeria E-Z e existência de enantiômeros. Identificar a estereoisomeria cis-transnos, compostos orgânicos que apresentam ligação dup"
+    },
+    {
+     "key": "pb-pcem-fgbx-quimica-linha-037-obj-03",
+     "page": 372,
+     "text": "Diferenciar polímeros termoplásticos dos polímeros termorrígidos ou termofixos; Compreender como ocorre a formação de macromoléculas a partir de diferentes reações de polimerização."
+    }
+   ],
+   "merged_habilidade_ifa": [
+    "pb-pcem-ifi-hab-341",
+    "pb-pcem-ifi-hab-373",
+    "pb-pcem-ifi-hab-396"
+   ],
+   "splits": [
+    {
+     "head": "pb-pcem-lgg-li-linha-009-obj-06",
+     "head_parent": "pb-pcem-lgg-li-linha-009",
+     "head_end": " de textos que versem sobre ou que representem a diversidade",
+     "continuation": "pb-pcem-lgg-li-serie2-r10-obj-01",
+     "continuation_parent": "pb-pcem-lgg-li-serie2",
+     "continuation_start": "linguística global e as diversas variedades do inglês em âmb",
+     "pages": [
+      115,
+      116
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-li-linha-014-obj-04",
+     "head_parent": "pb-pcem-lgg-li-linha-014",
+     "head_end": " eventos online para prática da leitura e escrita nos canais",
+     "continuation": "pb-pcem-lgg-li-serie2-r15-obj-01",
+     "continuation_parent": "pb-pcem-lgg-li-serie2",
+     "continuation_start": "educativos.",
+     "pages": [
+      117,
+      118
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-li-linha-016-obj-03",
+     "head_parent": "pb-pcem-lgg-li-linha-016",
+     "head_end": "Adquirir informações do que é lícito ou ilícito",
+     "continuation": "pb-pcem-lgg-li-serie2-r17-obj-01",
+     "continuation_parent": "pb-pcem-lgg-li-serie2",
+     "continuation_start": "em alguns países.",
+     "pages": [
+      118,
+      119
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-li-linha-018-obj-05",
+     "head_parent": "pb-pcem-lgg-li-linha-018",
+     "head_end": "o de horários escolar, relato pessoal, anúncio publicitário,",
+     "continuation": "pb-pcem-lgg-li-linha-019-obj-01",
+     "continuation_parent": "pb-pcem-lgg-li-linha-019",
+     "continuation_start": "fotorreportagem, entre outros.",
+     "pages": [
+      119,
+      120
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-li-linha-021-obj-03",
+     "head_parent": "pb-pcem-lgg-li-linha-021",
+     "head_end": "Organizar pesquisas sobre os desafios enfrentados",
+     "continuation": "pb-pcem-lgg-li-linha-022-obj-01",
+     "continuation_parent": "pb-pcem-lgg-li-linha-022",
+     "continuation_start": "pelas pessoas com deficiência.",
+     "pages": [
+      120,
+      121
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-le-linha-009-obj-02",
+     "head_parent": "pb-pcem-lgg-le-linha-009",
+     "head_end": "Reconhecer a língua espanhola como instrumento de acesso",
+     "continuation": "pb-pcem-lgg-le-linha-010-obj-01",
+     "continuation_parent": "pb-pcem-lgg-le-linha-010",
+     "continuation_start": "cultural e social.",
+     "pages": [
+      129,
+      130
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-le-linha-018-obj-03",
+     "head_parent": "pb-pcem-lgg-le-linha-018",
+     "head_end": "Refletir criticamente sobre as produções artísticas e",
+     "continuation": "pb-pcem-lgg-le-linha-019-obj-01",
+     "continuation_parent": "pb-pcem-lgg-le-linha-019",
+     "continuation_start": "literárias produzidas em países hispânicos, levando em consi",
+     "pages": [
+      132,
+      133
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-av-serie1-r3-obj-04",
+     "head_parent": "pb-pcem-lgg-av-serie1",
+     "head_end": "patrimônio da comunidade escolar e/ou do município, buscando",
+     "continuation": "pb-pcem-lgg-av-serie1-r4-obj-01",
+     "continuation_parent": "pb-pcem-lgg-av-serie1",
+     "continuation_start": "identificar os elementos visuais que as constituem.",
+     "pages": [
+      141,
+      142
+     ],
+     "different_parent": false
+    },
+    {
+     "head": "pb-pcem-lgg-av-serie1-r5-obj-06",
+     "head_parent": "pb-pcem-lgg-av-serie1",
+     "head_end": "unicípio, percebendo e identificando visualmente elementos e",
+     "continuation": "pb-pcem-lgg-av-serie1-r6-obj-01",
+     "continuation_parent": "pb-pcem-lgg-av-serie1",
+     "continuation_start": "referências visuais e simbólicas que dialogam e contribuem p",
+     "pages": [
+      142,
+      143
+     ],
+     "different_parent": false
+    },
+    {
+     "head": "pb-pcem-lgg-av-linha-008-obj-02",
+     "head_parent": "pb-pcem-lgg-av-linha-008",
+     "head_end": "las veiculadas pelas mídias voltadas para o público juvenil,",
+     "continuation": "pb-pcem-lgg-av-serie1-r9-obj-01",
+     "continuation_parent": "pb-pcem-lgg-av-serie1",
+     "continuation_start": "em múltiplos contextos sociais, culturais e étnicos.",
+     "pages": [
+      143,
+      144
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-av-linha-011-obj-02",
+     "head_parent": "pb-pcem-lgg-av-linha-011",
+     "head_end": "adas produções artísticas visuais, observáveis na comunidade",
+     "continuation": "pb-pcem-lgg-av-linha-012-obj-01",
+     "continuation_parent": "pb-pcem-lgg-av-linha-012",
+     "continuation_start": "escolar e/ou no município, sendo capaz de identificá-las e s",
+     "pages": [
+      144,
+      145
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-av-serie1-r13-obj-02",
+     "head_parent": "pb-pcem-lgg-av-serie1",
+     "head_end": "o da intenção meramente funcional, e buscar, enquanto objeto",
+     "continuation": "pb-pcem-lgg-av-serie1-r14-obj-01",
+     "continuation_parent": "pb-pcem-lgg-av-serie1",
+     "continuation_start": "estético, oferecer uma experiência sensível.",
+     "pages": [
+      145,
+      146
+     ],
+     "different_parent": false
+    },
+    {
+     "head": "pb-pcem-lgg-av-linha-021-obj-02",
+     "head_parent": "pb-pcem-lgg-av-linha-021",
+     "head_end": "magens midiáticas produzidas e veiculadas em âmbito estadual",
+     "continuation": "pb-pcem-lgg-av-linha-022-obj-01",
+     "continuation_parent": "pb-pcem-lgg-av-linha-022",
+     "continuation_start": "e regional, sendo capaz de negociar sentidos e produzir ente",
+     "pages": [
+      148,
+      149
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-av-serie2-r24-obj-05",
+     "head_parent": "pb-pcem-lgg-av-serie2",
+     "head_end": "Planejar e mediar exposição e/ou mostra artística das",
+     "continuation": "pb-pcem-lgg-av-serie2-r25-obj-01",
+     "continuation_parent": "pb-pcem-lgg-av-serie2",
+     "continuation_start": "produções imersiva e/ou contemporânea na comunidade escolar.",
+     "pages": [
+      150,
+      151
+     ],
+     "different_parent": false
+    },
+    {
+     "head": "pb-pcem-lgg-av-linha-030-obj-02",
+     "head_parent": "pb-pcem-lgg-av-linha-030",
+     "head_end": "culiaridades, principalmente aquelas utilizadas por artistas",
+     "continuation": "pb-pcem-lgg-av-linha-031-obj-01",
+     "continuation_parent": "pb-pcem-lgg-av-linha-031",
+     "continuation_start": "da Paraíba, do Brasil e do mundo.",
+     "pages": [
+      153,
+      154
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-danca-linha-001-obj-02",
+     "head_parent": "pb-pcem-lgg-danca-linha-001",
+     "head_end": " autoconhecimento, reconhecendo o corpo em sua singularidade",
+     "continuation": "pb-pcem-lgg-danca-linha-002-obj-01",
+     "continuation_parent": "pb-pcem-lgg-danca-linha-002",
+     "continuation_start": "(escovação corporal, toque, peso, apoios).",
+     "pages": [
+      164,
+      165
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-danca-linha-005-obj-04",
+     "head_parent": "pb-pcem-lgg-danca-linha-005",
+     "head_end": " diferentes danças indígenas locais e nacionais (Toré e Coco",
+     "continuation": "pb-pcem-lgg-danca-serie1-r6-obj-01",
+     "continuation_parent": "pb-pcem-lgg-danca-serie1",
+     "continuation_start": "Potiguara, Toré e Coco Tabajara.",
+     "pages": [
+      167,
+      168
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-danca-linha-007-obj-01",
+     "head_parent": "pb-pcem-lgg-danca-linha-007",
+     "head_end": "a Dança (dança cênica, vídeo-dança, manifestações populares,",
+     "continuation": "pb-pcem-lgg-danca-linha-008-obj-01",
+     "continuation_parent": "pb-pcem-lgg-danca-linha-008",
+     "continuation_start": "danças africanas, afro- brasileiras e indígenas).",
+     "pages": [
+      168,
+      169
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-danca-linha-009-obj-03",
+     "head_parent": "pb-pcem-lgg-danca-linha-009",
+     "head_end": "o escolar como espaço cênico para debate e questionamento de",
+     "continuation": "pb-pcem-lgg-danca-serie1-r10-obj-01",
+     "continuation_parent": "pb-pcem-lgg-danca-serie1",
+     "continuation_start": "problemas sobre o contexto escolar, apontando proposições.",
+     "pages": [
+      169,
+      170
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-danca-linha-021-obj-02",
+     "head_parent": "pb-pcem-lgg-danca-linha-021",
+     "head_end": "imento e ações corporais como uma forma de aproximação com a",
+     "continuation": "pb-pcem-lgg-danca-linha-022-obj-01",
+     "continuation_parent": "pb-pcem-lgg-danca-linha-022",
+     "continuation_start": "linguagem teatral e a performance.",
+     "pages": [
+      175,
+      176
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-danca-linha-025-obj-02",
+     "head_parent": "pb-pcem-lgg-danca-linha-025",
+     "head_end": "pulação do tempo, do espaço e de dinâmicas, utilizando-se de",
+     "continuation": "pb-pcem-lgg-danca-serie3-r26-obj-01",
+     "continuation_parent": "pb-pcem-lgg-danca-serie3",
+     "continuation_start": "danças midiáticas para a composição.",
+     "pages": [
+      177,
+      178
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-musica-linha-001-obj-05",
+     "head_parent": "pb-pcem-lgg-musica-linha-001",
+     "head_end": "Relacionar as realidades de cada prática musical",
+     "continuation": "pb-pcem-lgg-musica-linha-002-obj-01",
+     "continuation_parent": "pb-pcem-lgg-musica-linha-002",
+     "continuation_start": "com seu ambiente sociocultural.",
+     "pages": [
+      190,
+      191
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-musica-linha-003-obj-06",
+     "head_parent": "pb-pcem-lgg-musica-linha-003",
+     "head_end": "Relacionar o ato de criar (composição) e transformar com as",
+     "continuation": "pb-pcem-lgg-musica-serie1-r4-obj-01",
+     "continuation_parent": "pb-pcem-lgg-musica-serie1",
+     "continuation_start": "possibilidades de compor e transformar a si mesmo.",
+     "pages": [
+      191,
+      192
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-musica-linha-009-obj-06",
+     "head_parent": "pb-pcem-lgg-musica-linha-009",
+     "head_end": "Apreender as noções básicas de ritmo, com jogos, dinâmicas,",
+     "continuation": "pb-pcem-lgg-musica-serie2-r10-obj-01",
+     "continuation_parent": "pb-pcem-lgg-musica-serie2",
+     "continuation_start": "interpretações e criações musicais.",
+     "pages": [
+      197,
+      198
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-musica-linha-013-obj-05",
+     "head_parent": "pb-pcem-lgg-musica-linha-013",
+     "head_end": "r a evolução da música ao longo do tempo, suas influências e",
+     "continuation": "pb-pcem-lgg-musica-serie2-r14-obj-01",
+     "continuation_parent": "pb-pcem-lgg-musica-serie2",
+     "continuation_start": "características próprias no tempo e no espaço.",
+     "pages": [
+      200,
+      201
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-musica-linha-020-obj-02",
+     "head_parent": "pb-pcem-lgg-musica-linha-020",
+     "head_end": "lidades e vivências da Literatura, do Teatro, do Cinema, das",
+     "continuation": "pb-pcem-lgg-musica-linha-021-obj-01",
+     "continuation_parent": "pb-pcem-lgg-musica-linha-021",
+     "continuation_start": "Artes Visuais e outras práticas artísticas com a Música na c",
+     "pages": [
+      204,
+      205
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-musica-linha-022-obj-01",
+     "head_parent": "pb-pcem-lgg-musica-linha-022",
+     "head_end": "Acessar uma maior variedade de estilos musicais nacionais e",
+     "continuation": "pb-pcem-lgg-musica-linha-023-obj-01",
+     "continuation_parent": "pb-pcem-lgg-musica-linha-023",
+     "continuation_start": "internacionais, do popular ao erudito.",
+     "pages": [
+      205,
+      206
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-musica-linha-024-obj-06",
+     "head_parent": "pb-pcem-lgg-musica-linha-024",
+     "head_end": "Depreender o desenvolvimento tecnológico dos",
+     "continuation": "pb-pcem-lgg-musica-serie3-r25-obj-01",
+     "continuation_parent": "pb-pcem-lgg-musica-serie3",
+     "continuation_start": "instrumentos e materiais sonoros em geral.",
+     "pages": [
+      207,
+      208
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-teatro-linha-002-obj-01",
+     "head_parent": "pb-pcem-lgg-teatro-linha-002",
+     "head_end": "onetes, teatro à italiana, teatro de arena, etc.) e recursos",
+     "continuation": "pb-pcem-lgg-teatro-linha-003-obj-01",
+     "continuation_parent": "pb-pcem-lgg-teatro-linha-003",
+     "continuation_start": "(dramaturgia, cenografia, indumentária, etc.) e suas relaçõe",
+     "pages": [
+      226,
+      227
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-ef-linha-026-obj-01",
+     "head_parent": "pb-pcem-lgg-ef-linha-026",
+     "head_end": "Compreender que as práticas alternativas e",
+     "continuation": "pb-pcem-lgg-ef-linha-027-obj-01",
+     "continuation_parent": "pb-pcem-lgg-ef-linha-027",
+     "continuation_start": "complementares fazem parte de um todo holístico.",
+     "pages": [
+      247,
+      248
+     ],
+     "different_parent": true
+    },
+    {
+     "head": "pb-pcem-lgg-ef-serie3-r32-obj-01",
+     "head_parent": "pb-pcem-lgg-ef-serie3",
+     "head_end": " socorros; Utilizar das redes sociais para divulgar atitudes",
+     "continuation": "pb-pcem-lgg-ef-serie3-r33-obj-01",
+     "continuation_parent": "pb-pcem-lgg-ef-serie3",
+     "continuation_start": "simples sobre o primeiro atendimento; Utilizar plataformas c",
+     "pages": [
+      249,
+      250
+     ],
+     "different_parent": false
+    }
+   ]
+  },
+  "5_positions": {
+   "status": "PASS",
+   "records_with_years": 5975,
+   "year_checks_ok": 5975,
+   "year_issues": 0,
+   "method": "year must be backed by a SÉRIE heading in position_evidence, literal at its bbox, located before the record, and equal to the nearest preceding série heading found independently by scanning the PDF backwards",
+   "component_check": "component supported by own or ancestor heading text for all records except pb-pcem-lgg-quadro5 (Língua Portuguesa inferred from section context; heading says only \"Quadro 5: Habilidades comuns...\")",
+   "minor": [
+    "109 records (narrativa_curricular, objetivo_formativo, secao_curricular, 9 habilidade_ifa p622-623, banners) carry area via position_origin explicit_itinerary_heading but position_evidence is null",
+    "3 records (pb-pcem-ifi-uc-029, ctx-114, ctx-115, p690) cite area_evidence on p691 (same table across page break; acceptable)"
+   ],
+   "sample60": [
+    {
+     "key": "pb-pcem-lgg-av-linha-010-cod-0-07",
+     "kind": "referencia_no_documento",
+     "page": 144,
+     "years": [
+      1
+     ],
+     "component": "Arte",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       140,
+       "1ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-musica-linha-023",
+     "kind": "campo_atuacao",
+     "page": 206,
+     "years": [
+      3
+     ],
+     "component": "Arte",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       204,
+       "3ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-musica-linha-001-cod-0-16",
+     "kind": "referencia_no_documento",
+     "page": 190,
+     "years": [
+      1
+     ],
+     "component": "Arte",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       190,
+       "1ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-512",
+     "kind": "habilidade",
+     "page": 726,
+     "years": [
+      3
+     ],
+     "component": "Língua Portuguesa",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       723,
+       "LÍNGUA PORTUGUESA – 3ª SÉRIE"
+      ],
+      [
+       723,
+       "Linguagens e suas Tecnologias"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-matematica-linha-004-objeto",
+     "kind": "objeto_conhecimento",
+     "page": 275,
+     "years": [
+      1
+     ],
+     "component": "Matemática",
+     "area": "Matemática e suas Tecnologias",
+     "cited": [
+      [
+       274,
+       "1ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-le-linha-020-obj-03",
+     "kind": "objetivo_aprendizagem",
+     "page": 133,
+     "years": [
+      3
+     ],
+     "component": "Língua Espanhola",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       132,
+       "3ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-540",
+     "kind": "habilidade",
+     "page": 737,
+     "years": [
+      2
+     ],
+     "component": "Língua Inglesa",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       736,
+       "LÍNGUA INGLESA – 2ª SÉRIE"
+      ],
+      [
+       736,
+       "Linguagens e suas Tecnologias"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-musica-linha-015-cod-0-05",
+     "kind": "referencia_no_documento",
+     "page": 202,
+     "years": [
+      2
+     ],
+     "component": "Arte",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       197,
+       "2ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-matematica-linha-004-cod-0-03",
+     "kind": "referencia_no_documento",
+     "page": 275,
+     "years": [
+      1
+     ],
+     "component": "Matemática",
+     "area": "Matemática e suas Tecnologias",
+     "cited": [
+      [
+       274,
+       "1ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-av-linha-008-cod-0-10",
+     "kind": "referencia_no_documento",
+     "page": 143,
+     "years": [
+      1
+     ],
+     "component": "Arte",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       140,
+       "1ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-biologia-linha-056-objeto",
+     "kind": "objeto_conhecimento",
+     "page": 328,
+     "years": [
+      3
+     ],
+     "component": "Biologia",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       325,
+       "3ª. SÉRIE - BIOLOGIA"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-450",
+     "kind": "habilidade",
+     "page": 707,
+     "years": [
+      3
+     ],
+     "component": "Física",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       705,
+       "FÍSICA - 3ª SÉRIE"
+      ],
+      [
+       705,
+       "Ciências da Natureza e suas Tecnologias"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-compgrupo-045",
+     "kind": "grupo_competencias",
+     "page": 646,
+     "years": [
+      1
+     ],
+     "component": "História",
+     "area": "Ciências Humanas e Sociais Aplicadas",
+     "cited": [
+      [
+       646,
+       "HISTÓRIA – 1ª SÉRIE"
+      ],
+      [
+       646,
+       "Ciências Humanas e Sociais Aplicadas"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-01-campo-06-h15",
+     "kind": "habilidade",
+     "page": 445,
+     "years": [
+      1
+     ],
+     "component": "Língua Portuguesa",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       443,
+       "Língua Portuguesa - 1a SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-13-campo-05-c07",
+     "kind": "competencia_especifica",
+     "page": 524,
+     "years": [
+      1
+     ],
+     "component": "Educação Física",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       523,
+       "Educação Física - 1ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-quimica-linha-016-cod-0-03",
+     "kind": "referencia_no_documento",
+     "page": 361,
+     "years": [
+      2
+     ],
+     "component": "Química",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       360,
+       "2ª SÉRIE – ENSINO MÉDIO"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-quimica-linha-019-cod-0-00",
+     "kind": "referencia_no_documento",
+     "page": 362,
+     "years": [
+      2
+     ],
+     "component": "Química",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       360,
+       "2ª SÉRIE – ENSINO MÉDIO"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-06-campo-07-h03",
+     "kind": "habilidade",
+     "page": 479,
+     "years": [
+      3
+     ],
+     "component": "Língua Inglesa",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       477,
+       "Língua Inglesa – 3ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-quimica-linha-030-obj-04",
+     "kind": "objetivo_aprendizagem",
+     "page": 370,
+     "years": [
+      3
+     ],
+     "component": "Química",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       366,
+       "3ª SÉRIE - QUÍMICA"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-biologia-linha-003-obj-02",
+     "kind": "objetivo_aprendizagem",
+     "page": 316,
+     "years": [
+      1
+     ],
+     "component": "Biologia",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       316,
+       "1ª SÉRIE - BIOLOGIA"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-comp-135",
+     "kind": "competencia_especifica",
+     "page": 705,
+     "years": [
+      3
+     ],
+     "component": "Física",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       705,
+       "FÍSICA - 3ª SÉRIE"
+      ],
+      [
+       705,
+       "Ciências da Natureza e suas Tecnologias"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-geografia-serie2",
+     "kind": "ano_escolar",
+     "page": 413,
+     "years": [
+      2
+     ],
+     "component": "Geografia",
+     "area": "Ciências Humanas e Sociais Aplicadas",
+     "cited": [
+      [
+       413,
+       "2ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-12-campo-06-h07",
+     "kind": "habilidade",
+     "page": 515,
+     "years": [
+      3
+     ],
+     "component": null,
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       513,
+       "Artes Visuais, Dança, Música, Teatro – 3ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-comp-041",
+     "kind": "competencia_especifica",
+     "page": 611,
+     "years": [
+      2
+     ],
+     "component": "Biologia",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       611,
+       "BIOLOGIA - 2ª SÉRIE"
+      ],
+      [
+       611,
+       "Ciências da Natureza e suas Tecnologias"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-li-linha-005-cod-0-03",
+     "kind": "referencia_no_documento",
+     "page": 113,
+     "years": [
+      1
+     ],
+     "component": "Língua Inglesa",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       111,
+       "1ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-185",
+     "kind": "habilidade",
+     "page": 612,
+     "years": [
+      2
+     ],
+     "component": "Biologia",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       611,
+       "BIOLOGIA - 2ª SÉRIE"
+      ],
+      [
+       611,
+       "Ciências da Natureza e suas Tecnologias"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-ef-linha-023-obj-02",
+     "kind": "objetivo_aprendizagem",
+     "page": 246,
+     "years": [
+      2
+     ],
+     "component": "Educação Física",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       243,
+       "2ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-li-linha-005-obj-02",
+     "kind": "objetivo_aprendizagem",
+     "page": 113,
+     "years": [
+      1
+     ],
+     "component": "Língua Inglesa",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       111,
+       "1ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-ef-serie1-r5-cod-0-00",
+     "kind": "referencia_no_documento",
+     "page": 240,
+     "years": [
+      1
+     ],
+     "component": "Educação Física",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       239,
+       "1ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-08-campo-07-h03",
+     "kind": "habilidade",
+     "page": 490,
+     "years": [
+      2
+     ],
+     "component": "Língua Espanhola",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       488,
+       "Língua Espanhola - 2ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-sugestao_didatico_metodologica-028",
+     "kind": "sugestao_didatico_metodologica",
+     "page": 693,
+     "years": [
+      2
+     ],
+     "component": "Química",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       690,
+       "QUÍMICA – 2ª SÉRIE"
+      ],
+      [
+       691,
+       "Ciências da Natureza e suas Tecnologias"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-lp-linha-004",
+     "kind": "campo_atuacao",
+     "page": 98,
+     "years": [
+      1
+     ],
+     "component": "Língua Portuguesa",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       94,
+       "1ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-18-campo-10",
+     "kind": "rotulo_documental",
+     "page": 548,
+     "years": [
+      3
+     ],
+     "component": "Matemática",
+     "area": "Matemática e suas Tecnologias",
+     "cited": [
+      [
+       544,
+       "Matemática - 3ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-trilha-1-linha-05",
+     "kind": "linha_quadro_documental",
+     "page": 441,
+     "years": [
+      1
+     ],
+     "component": null,
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       441,
+       "1ª SÉRIE DO ENSINO MÉDIO - TRILHA CALEIDOSCÓPIO – Passear"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-teatro-linha-017-cod-0-00",
+     "kind": "referencia_no_documento",
+     "page": 232,
+     "years": [
+      3
+     ],
+     "component": "Arte",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       231,
+       "3ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-li-linha-016-cod-0-02",
+     "kind": "referencia_no_documento",
+     "page": 118,
+     "years": [
+      2
+     ],
+     "component": "Língua Inglesa",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       115,
+       "2ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-quimica-linha-009-cod-0-04",
+     "kind": "referencia_no_documento",
+     "page": 357,
+     "years": [
+      1
+     ],
+     "component": "Química",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       351,
+       "1ª SÉRIE – QUÍMICA"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-ef-serie1-r5-cod-0-09",
+     "kind": "referencia_no_documento",
+     "page": 240,
+     "years": [
+      1
+     ],
+     "component": "Educação Física",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       239,
+       "1ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-06-campo-06-eixo-01",
+     "kind": "eixo_estruturante",
+     "page": 478,
+     "years": [
+      3
+     ],
+     "component": "Língua Inglesa",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       477,
+       "Língua Inglesa – 3ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-216",
+     "kind": "habilidade_ifa",
+     "page": 624,
+     "years": [
+      1
+     ],
+     "component": null,
+     "area": "Ciências Humanas e Sociais Aplicadas",
+     "cited": [
+      [
+       623,
+       "UNIDADE CURRICULAR – 1ª SÉRIE"
+      ],
+      [
+       623,
+       "Ciências Humanas Sociais Aplicadas (CHSA)"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-eixo-142",
+     "kind": "eixo_estruturante",
+     "page": 737,
+     "years": [
+      2
+     ],
+     "component": "Língua Inglesa",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       736,
+       "LÍNGUA INGLESA – 2ª SÉRIE"
+      ],
+      [
+       736,
+       "Linguagens e suas Tecnologias"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-historia-linha-006-cod-0-03",
+     "kind": "referencia_no_documento",
+     "page": 406,
+     "years": [
+      3
+     ],
+     "component": "História",
+     "area": "Ciências Humanas e Sociais Aplicadas",
+     "cited": [
+      [
+       405,
+       "3ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-musica-linha-021-obj-06",
+     "kind": "objetivo_aprendizagem",
+     "page": 205,
+     "years": [
+      3
+     ],
+     "component": "Arte",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       204,
+       "3ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-ef-linha-001-cod-0-03",
+     "kind": "referencia_no_documento",
+     "page": 239,
+     "years": [
+      1
+     ],
+     "component": "Educação Física",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       239,
+       "1ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-589",
+     "kind": "habilidade_ifa",
+     "page": 759,
+     "years": [
+      1
+     ],
+     "component": "Matemática",
+     "area": "Matemática e suas Tecnologias",
+     "cited": [
+      [
+       758,
+       "MATEMÁTICA – 1ª SÉRIE"
+      ],
+      [
+       758,
+       "Matemática e suas Tecnologias"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-musica-linha-026-cod-0-10",
+     "kind": "referencia_no_documento",
+     "page": 208,
+     "years": [
+      3
+     ],
+     "component": "Arte",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       204,
+       "3ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-quimica-linha-035-obj-01",
+     "kind": "objetivo_aprendizagem",
+     "page": 371,
+     "years": [
+      3
+     ],
+     "component": "Química",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       366,
+       "3ª SÉRIE - QUÍMICA"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-musica-linha-009-cod-0-03",
+     "kind": "referencia_no_documento",
+     "page": 197,
+     "years": [
+      2
+     ],
+     "component": "Arte",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       197,
+       "2ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-matematica-linha-007-cod-0-01",
+     "kind": "referencia_no_documento",
+     "page": 276,
+     "years": [
+      2
+     ],
+     "component": "Matemática",
+     "area": "Matemática e suas Tecnologias",
+     "cited": [
+      [
+       276,
+       "2ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-biologia-linha-020-cod-0-04",
+     "kind": "referencia_no_documento",
+     "page": 320,
+     "years": [
+      2
+     ],
+     "component": "Biologia",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       320,
+       "2a. SÉRIE - BIOLOGIA"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-lp-linha-002-cod-1-12",
+     "kind": "referencia_no_documento",
+     "page": 95,
+     "years": [
+      1
+     ],
+     "component": "Língua Portuguesa",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       94,
+       "1ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-av-linha-026-objeto",
+     "kind": "objeto_conhecimento",
+     "page": 151,
+     "years": [
+      3
+     ],
+     "component": "Arte",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       151,
+       "3ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-quimica-linha-035-cod-0-09",
+     "kind": "referencia_no_documento",
+     "page": 371,
+     "years": [
+      3
+     ],
+     "component": "Química",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       366,
+       "3ª SÉRIE - QUÍMICA"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-matematica-linha-009-obj-08",
+     "kind": "objetivo_aprendizagem",
+     "page": 278,
+     "years": [
+      3
+     ],
+     "component": "Matemática",
+     "area": "Matemática e suas Tecnologias",
+     "cited": [
+      [
+       278,
+       "3ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-biologia-linha-017-cod-0-03",
+     "kind": "referencia_no_documento",
+     "page": 318,
+     "years": [
+      1
+     ],
+     "component": "Biologia",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       316,
+       "1ª SÉRIE - BIOLOGIA"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-fgbx-fisica-linha-005-cod-0-05",
+     "kind": "referencia_no_documento",
+     "page": 341,
+     "years": [
+      3
+     ],
+     "component": "Física",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       340,
+       "3ª Série – FÍSICA"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifi-hab-143",
+     "kind": "habilidade",
+     "page": 600,
+     "years": [
+      1
+     ],
+     "component": "Química",
+     "area": "Ciências da Natureza e suas Tecnologias",
+     "cited": [
+      [
+       598,
+       "QUÍMICA - 1ª SÉRIE"
+      ],
+      [
+       598,
+       "Ciências da Natureza e suas Tecnologias"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-musica-serie3-r25-obj-01",
+     "kind": "objetivo_aprendizagem",
+     "page": 208,
+     "years": [
+      3
+     ],
+     "component": "Arte",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       204,
+       "3ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-lgg-ef-serie1-r12-obj-06",
+     "kind": "objetivo_aprendizagem",
+     "page": 242,
+     "years": [
+      1
+     ],
+     "component": "Educação Física",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       239,
+       "1ª SÉRIE"
+      ]
+     ]
+    },
+    {
+     "key": "pb-pcem-ifl-uc-01-organizador",
+     "kind": "organizador_curricular",
+     "page": 443,
+     "years": [
+      1
+     ],
+     "component": "Língua Portuguesa",
+     "area": "Linguagens e suas Tecnologias",
+     "cited": [
+      [
+       443,
+       "Língua Portuguesa - 1a SÉRIE"
+      ]
+     ]
+    }
+   ]
+  },
+  "6_hierarchy": {
+   "status": "FAIL",
+   "duplicate_keys": 0,
+   "unresolvable_parents": 0,
+   "cycles": 0,
+   "roots": 1,
+   "parent_after_child_source_order": 24,
+   "parent_after_child_note": "banner/titulo_trilha records parented to the following unidade_curricular (cosmetic)",
+   "campo_continuation_rows": 30,
+   "campo_continuation_examples": [
+    {
+     "key": "pb-pcem-lgg-li-linha-004",
+     "parent": "pb-pcem-lgg-li-serie1",
+     "pages": [
+      113
+     ],
+     "start": "produção de discursos/textos expositivos, analíticos e argum"
+    },
+    {
+     "key": "pb-pcem-lgg-li-linha-013",
+     "parent": "pb-pcem-lgg-li-serie2",
+     "pages": [
+      117
+     ],
+     "start": "expositivos, analíticos e argumentativos, que circulam tanto"
+    },
+    {
+     "key": "pb-pcem-lgg-li-linha-019",
+     "parent": "pb-pcem-lgg-li-serie3",
+     "pages": [
+      120
+     ],
+     "start": "interesses, afinidades, antipatias, angústias, temores etc.,"
+    },
+    {
+     "key": "pb-pcem-lgg-li-linha-022",
+     "parent": "pb-pcem-lgg-li-serie3",
+     "pages": [
+      121
+     ],
+     "start": "desse campo é fundamental para ampliar a reflexão sobre as l"
+    },
+    {
+     "key": "pb-pcem-lgg-le-linha-002",
+     "parent": "pb-pcem-lgg-le-serie1",
+     "pages": [
+      127
+     ],
+     "start": "do conhecimento sobre si (BNCC, p. 488)"
+    },
+    {
+     "key": "pb-pcem-lgg-le-linha-010",
+     "parent": "pb-pcem-lgg-le-serie2",
+     "pages": [
+      130
+     ],
+     "start": "sobre temas e questões que afetam os jovens. As vivências, e"
+    },
+    {
+     "key": "pb-pcem-lgg-le-linha-013",
+     "parent": "pb-pcem-lgg-le-serie2",
+     "pages": [
+      131
+     ],
+     "start": "como no jornalismo de divulgação científica. O domínio desse"
+    },
+    {
+     "key": "pb-pcem-lgg-le-linha-019",
+     "parent": "pb-pcem-lgg-le-serie3",
+     "pages": [
+      133
+     ],
+     "start": "multiculturalidade e a expressão de sentimentos e emoções. P"
+    },
+    {
+     "key": "pb-pcem-lgg-av-linha-002",
+     "parent": "pb-pcem-lgg-av-serie1",
+     "pages": [
+      141
+     ],
+     "start": "aprendizagens propostas nesse campo podem se constituir como"
+    },
+    {
+     "key": "pb-pcem-lgg-av-linha-012",
+     "parent": "pb-pcem-lgg-av-serie1",
+     "pages": [
+      145
+     ],
+     "start": "expressão de sentimentos e emoções. Possibilita aos estudant"
+    },
+    {
+     "key": "pb-pcem-lgg-av-linha-018",
+     "parent": "pb-pcem-lgg-av-serie2",
+     "pages": [
+      148,
+      148,
+      148
+     ],
+     "start": "expositivos, analíticos e argumentativos, que circulam tanto"
+    },
+    {
+     "key": "pb-pcem-lgg-av-linha-022",
+     "parent": "pb-pcem-lgg-av-serie2",
+     "pages": [
+      149
+     ],
+     "start": "exploração permite construir uma consciência crítica e selet"
+    },
+    {
+     "key": "pb-pcem-lgg-av-linha-031",
+     "parent": "pb-pcem-lgg-av-serie3",
+     "pages": [
+      154
+     ],
+     "start": "critérios estéticos e no exercício da sensibilidade (BNCC, p"
+    },
+    {
+     "key": "pb-pcem-lgg-danca-linha-002",
+     "parent": "pb-pcem-lgg-danca-serie1",
+     "pages": [
+      165
+     ],
+     "start": "experiências, análises críticas e aprendizagens propostas ne"
+    },
+    {
+     "key": "pb-pcem-lgg-danca-linha-008",
+     "parent": "pb-pcem-lgg-danca-serie1",
+     "pages": [
+      169
+     ],
+     "start": "relação à produção e circulação de informações, posicionamen"
+    },
+    {
+     "key": "pb-pcem-lgg-danca-linha-016",
+     "parent": "pb-pcem-lgg-danca-serie2",
+     "pages": [
+      173
+     ],
+     "start": "linguagens, contribuir para a construção do conhecimento cie"
+    },
+    {
+     "key": "pb-pcem-lgg-danca-linha-022",
+     "parent": "pb-pcem-lgg-danca-serie3",
+     "pages": [
+      176
+     ],
+     "start": "emoções. Possibilita aos estudantes, portanto, reconhecer, v"
+    },
+    {
+     "key": "pb-pcem-lgg-musica-linha-002",
+     "parent": "pb-pcem-lgg-musica-serie1",
+     "pages": [
+      191
+     ],
+     "start": "etc., que possibilitam uma ampliação de referências e experi"
+    },
+    {
+     "key": "pb-pcem-lgg-musica-linha-012",
+     "parent": "pb-pcem-lgg-musica-serie2",
+     "pages": [
+      199
+     ],
+     "start": "com base em critérios estéticos e no exercício da sensibilid"
+    },
+    {
+     "key": "pb-pcem-lgg-musica-linha-019",
+     "parent": "pb-pcem-lgg-musica-serie2",
+     "pages": [
+      204
+     ],
+     "start": "sentidos nas práticas sociais da cultura corporal de movimen"
+    },
+    {
+     "key": "pb-pcem-lgg-musica-linha-021",
+     "parent": "pb-pcem-lgg-musica-serie3",
+     "pages": [
+      205
+     ],
+     "start": "experiências, análises críticas e aprendizagens propostas ne"
+    },
+    {
+     "key": "pb-pcem-lgg-teatro-linha-003",
+     "parent": "pb-pcem-lgg-teatro-serie1",
+     "pages": [
+      227
+     ],
+     "start": "aplicação e produção de discursos/textos expositivos, analít"
+    },
+    {
+     "key": "pb-pcem-lgg-teatro-linha-007",
+     "parent": "pb-pcem-lgg-teatro-serie2",
+     "pages": [
+      229
+     ],
+     "start": "antipatias, angústias, temores etc., que possibilitam uma am"
+    },
+    {
+     "key": "pb-pcem-lgg-teatro-linha-010",
+     "parent": "pb-pcem-lgg-teatro-serie2",
+     "pages": [
+      230
+     ],
+     "start": "jornalismo de divulgação científica. O domínio desse campo é"
+    },
+    {
+     "key": "pb-pcem-lgg-teatro-linha-016",
+     "parent": "pb-pcem-lgg-teatro-serie3",
+     "pages": [
+      232
+     ],
+     "start": "de pesquisa, assim como no jornalismo de divulgação científi"
+    },
+    {
+     "key": "pb-pcem-lgg-ef-linha-004",
+     "parent": "pb-pcem-lgg-ef-serie1",
+     "pages": [
+      240
+     ],
+     "start": "geral, contribuindo para a construção da apreciação estética"
+    },
+    {
+     "key": "pb-pcem-lgg-ef-linha-007",
+     "parent": "pb-pcem-lgg-ef-serie1",
+     "pages": [
+      241
+     ],
+     "start": "produção de discursos/textos expositivos, analíticos e argum"
+    },
+    {
+     "key": "pb-pcem-lgg-ef-linha-016",
+     "parent": "pb-pcem-lgg-ef-serie2",
+     "pages": [
+      244
+     ],
+     "start": "geral, contribuindo para a construção da apreciação estética"
+    },
+    {
+     "key": "pb-pcem-lgg-ef-linha-020",
+     "parent": "pb-pcem-lgg-ef-serie2",
+     "pages": [
+      245
+     ],
+     "start": "análise, aplicação e produção de discursos/textos expositivo"
+    },
+    {
+     "key": "pb-pcem-lgg-ef-linha-030",
+     "parent": "pb-pcem-lgg-ef-serie3",
+     "pages": [
+      249
+     ],
+     "start": "estética, significativa para a constituição de identidades, "
+    }
+   ],
+   "rows_merging_multiple_campos": {
+    "pb-pcem-lgg-lp-linha-006": "p99-101: VIDA PESSOAL + ARTÍSTICO-LITERÁRIO + PRÁTICAS DE ESTUDO E PESQUISA in one row, 34 children",
+    "pb-pcem-lgg-lp-linha-010": "p103-105: ARTÍSTICO-LITERÁRIO + PRÁTICAS DE ESTUDO E PESQUISA, 34 children",
+    "pb-pcem-lgg-ef-linha-004": "p240: text ends with head of next campo \"PRÁTICA DE ESTUDO E PESQUISA Abrange a pesquisa...\" whose objectives are under linha-007"
+   },
+   "row_bands_with_children_under_different_parents": [
+    {
+     "page": 240,
+     "band_y": [
+      656,
+      752
+     ],
+     "row_ids": {
+      "serie1-r6": 3,
+      "linha-007": 2
+     },
+     "parents": {
+      "pb-pcem-lgg-ef-serie1": 3,
+      "pb-pcem-lgg-ef-linha-007": 2
+     },
+     "examples": [
+      [
+       "pb-pcem-lgg-ef-serie1-r6-cod-0-00",
+       "referencia_no_documento",
+       "EM13LGG301"
+      ],
+      [
+       "pb-pcem-lgg-ef-serie1-r6-cod-0-01",
+       "referencia_no_documento",
+       "EM13LGG401"
+      ],
+      [
+       "pb-pcem-lgg-ef-serie1-r6-cod-0-02",
+       "referencia_no_documento",
+       "EM13LGG403"
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-007-obj-01",
+       "objetivo_aprendizagem",
+       "Utilizar de plataformas colaborativas de"
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-007-objeto",
+       "objeto_conhecimento",
+       "Conhecimento sobre o corpo/Fisiologia Si"
+      ]
+     ]
+    },
+    {
+     "page": 242,
+     "band_y": [
+      100,
+      232
+     ],
+     "row_ids": {
+      "serie1-r10": 1,
+      "linha-011": 7
+     },
+     "parents": {
+      "pb-pcem-lgg-ef-serie1": 1,
+      "pb-pcem-lgg-ef-linha-011": 7
+     },
+     "examples": [
+      [
+       "pb-pcem-lgg-ef-serie1-r10-objeto",
+       "objeto_conhecimento",
+       "Fundamentos básicos da modalidade."
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-011-cod-0-00",
+       "referencia_no_documento",
+       "EM13LGG302"
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-011-cod-0-01",
+       "referencia_no_documento",
+       "EM13LGG303"
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-011-cod-0-02",
+       "referencia_no_documento",
+       "EM13LGG501"
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-011-cod-0-03",
+       "referencia_no_documento",
+       "EM13LGG502"
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-011-cod-0-04",
+       "referencia_no_documento",
+       "EM13LGG704"
+      ]
+     ]
+    },
+    {
+     "page": 244,
+     "band_y": [
+      100,
+      384
+     ],
+     "row_ids": {
+      "linha-015": 4,
+      "linha-016": 10
+     },
+     "parents": {
+      "pb-pcem-lgg-ef-linha-015": 4,
+      "pb-pcem-lgg-ef-linha-016": 10
+     },
+     "examples": [
+      [
+       "pb-pcem-lgg-ef-linha-015-obj-03",
+       "objetivo_aprendizagem",
+       "Criar coreografia de forma colaborativa."
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-015-obj-04",
+       "objetivo_aprendizagem",
+       "Compreender que a valorização da arte e "
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-015-obj-05",
+       "objetivo_aprendizagem",
+       "Produzir e publicar em ambiente virtual "
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-015-objeto",
+       "objeto_conhecimento",
+       "Características gerais. Coreografia."
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-016-cod-0-00",
+       "referencia_no_documento",
+       "EM13LGG301"
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-016-cod-0-01",
+       "referencia_no_documento",
+       "EM13LGG302"
+      ]
+     ]
+    },
+    {
+     "page": 245,
+     "band_y": [
+      100,
+      388
+     ],
+     "row_ids": {
+      "linha-019": 5,
+      "linha-020": 7
+     },
+     "parents": {
+      "pb-pcem-lgg-ef-linha-019": 5,
+      "pb-pcem-lgg-ef-linha-020": 7
+     },
+     "examples": [
+      [
+       "pb-pcem-lgg-ef-linha-019-obj-01",
+       "objetivo_aprendizagem",
+       "autocuidado e saúde física e psicológica"
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-019-obj-02",
+       "objetivo_aprendizagem",
+       "Usar a nomenclatura científica da área d"
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-019-obj-03",
+       "objetivo_aprendizagem",
+       "Relacionar respostas fisiológicas com o "
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-019-obj-04",
+       "objetivo_aprendizagem",
+       "Despertar o interesse intelectual e a cu"
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-019-objeto",
+       "objeto_conhecimento",
+       "Avaliação Física. Resistência Aeróbia. P"
+      ],
+      [
+       "pb-pcem-lgg-ef-linha-020-cod-0-00",
+       "referencia_no_documento",
+       "EM13LGG401"
+      ]
+     ]
+    },
+    {
+     "page": 370,
+     "band_y": [
+      100,
+      376
+     ],
+     "row_ids": {
+      "linha-030": 5,
+      "linha-031": 2
+     },
+     "parents": {
+      "pb-pcem-fgbx-quimica-linha-026": 5,
+      "pb-pcem-fgbx-quimica-serie3": 2
+     },
+     "examples": [
+      [
+       "pb-pcem-fgbx-quimica-linha-030-obj-01",
+       "objetivo_aprendizagem",
+       "acordo com a norma vigente pela IUPAC."
+      ],
+      [
+       "pb-pcem-fgbx-quimica-linha-030-obj-02",
+       "objetivo_aprendizagem",
+       "Compreender o conceito de função orgânic"
+      ],
+      [
+       "pb-pcem-fgbx-quimica-linha-030-obj-03",
+       "objetivo_aprendizagem",
+       "Compreender e identificar estruturas quí"
+      ],
+      [
+       "pb-pcem-fgbx-quimica-linha-030-obj-04",
+       "objetivo_aprendizagem",
+       "Determinar fórmulas estruturais e fórmul"
+      ],
+      [
+       "pb-pcem-fgbx-quimica-linha-030-objeto",
+       "objeto_conhecimento",
+       "orgânicos oxigenados e nitrogenados)."
+      ],
+      [
+       "pb-pcem-fgbx-quimica-linha-031-cod-0-00",
+       "referencia_no_documento",
+       "EM13CNT302"
+      ]
+     ]
+    },
+    {
+     "page": 421,
+     "band_y": [
+      100,
+      576
+     ],
+     "row_ids": {
+      "linha-002": 23,
+      "linha-003": 1
+     },
+     "parents": {
+      "pb-pcem-fgbx-filosofia-linha-002": 23,
+      "pb-pcem-fgbx-filosofia-linha-003": 1
+     },
+     "examples": [
+      [
+       "pb-pcem-fgbx-filosofia-linha-002-cod-1-00",
+       "referencia_no_documento",
+       "EM13CHS103"
+      ],
+      [
+       "pb-pcem-fgbx-filosofia-linha-002-cod-1-01",
+       "referencia_no_documento",
+       "EM13CHS106"
+      ],
+      [
+       "pb-pcem-fgbx-filosofia-linha-002-cod-1-02",
+       "referencia_no_documento",
+       "EM13CHS301"
+      ],
+      [
+       "pb-pcem-fgbx-filosofia-linha-002-cod-1-03",
+       "referencia_no_documento",
+       "EM13CHS302"
+      ],
+      [
+       "pb-pcem-fgbx-filosofia-linha-002-cod-1-04",
+       "referencia_no_documento",
+       "EM13CHS303"
+      ],
+      [
+       "pb-pcem-fgbx-filosofia-linha-002-cod-1-05",
+       "referencia_no_documento",
+       "EM13CHS304"
+      ]
+     ]
+    },
+    {
+     "page": 422,
+     "band_y": [
+      100,
+      688
+     ],
+     "row_ids": {
+      "linha-004": 31,
+      "linha-005": 1
+     },
+     "parents": {
+      "pb-pcem-fgbx-filosofia-linha-004": 31,
+      "pb-pcem-fgbx-filosofia-linha-005": 1
+     },
+     "examples": [
+      [
+       "pb-pcem-fgbx-filosofia-linha-004-cod-1-00",
+       "referencia_no_documento",
+       "EM13CHS104"
+      ],
+      [
+       "pb-pcem-fgbx-filosofia-linha-004-cod-1-01",
+       "referencia_no_documento",
+       "EM13CHS105"
+      ],
+      [
+       "pb-pcem-fgbx-filosofia-linha-004-cod-1-02",
+       "referencia_no_documento",
+       "EM13CHS106"
+      ],
+      [
+       "pb-pcem-fgbx-filosofia-linha-004-cod-1-03",
+       "referencia_no_documento",
+       "EM13CHS201"
+      ],
+      [
+       "pb-pcem-fgbx-filosofia-linha-004-cod-1-04",
+       "referencia_no_documento",
+       "EM13CHS202"
+      ],
+      [
+       "pb-pcem-fgbx-filosofia-linha-004-cod-1-05",
+       "referencia_no_documento",
+       "EM13CHS205"
+      ]
+     ]
+    }
+   ],
+   "row_bands_with_mismatched_subrow_ids_same_parent": 11,
+   "spot30": [
+    {
+     "row": "pb-pcem-lgg-li-linha-009",
+     "kind": "campo_atuacao",
+     "pages": [
+      115
+     ],
+     "children": 14,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-danca-linha-022",
+     "kind": "campo_atuacao",
+     "pages": [
+      176
+     ],
+     "children": 9,
+     "violations": 0,
+     "flagged": true
+    },
+    {
+     "row": "pb-pcem-lgg-teatro-linha-004",
+     "kind": "campo_atuacao",
+     "pages": [
+      227
+     ],
+     "children": 4,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-av-linha-031",
+     "kind": "campo_atuacao",
+     "pages": [
+      154
+     ],
+     "children": 8,
+     "violations": 0,
+     "flagged": true
+    },
+    {
+     "row": "pb-pcem-lgg-teatro-linha-008",
+     "kind": "campo_atuacao",
+     "pages": [
+      229
+     ],
+     "children": 11,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-danca-linha-017",
+     "kind": "campo_atuacao",
+     "pages": [
+      173
+     ],
+     "children": 10,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-danca-linha-002",
+     "kind": "campo_atuacao",
+     "pages": [
+      165
+     ],
+     "children": 7,
+     "violations": 0,
+     "flagged": true
+    },
+    {
+     "row": "pb-pcem-fgbx-matematica-linha-001",
+     "kind": "unidade_tematica",
+     "pages": [
+      274
+     ],
+     "children": 22,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-li-linha-018",
+     "kind": "campo_atuacao",
+     "pages": [
+      119
+     ],
+     "children": 12,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-ef-linha-013",
+     "kind": "campo_atuacao",
+     "pages": [
+      242
+     ],
+     "children": 17,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-le-linha-021",
+     "kind": "campo_atuacao",
+     "pages": [
+      133
+     ],
+     "children": 7,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-teatro-linha-015",
+     "kind": "campo_atuacao",
+     "pages": [
+      231
+     ],
+     "children": 6,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-ef-linha-022",
+     "kind": "campo_atuacao",
+     "pages": [
+      246
+     ],
+     "children": 16,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-le-linha-003",
+     "kind": "campo_atuacao",
+     "pages": [
+      127
+     ],
+     "children": 11,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-li-linha-007",
+     "kind": "campo_atuacao",
+     "pages": [
+      114
+     ],
+     "children": 16,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-musica-linha-012",
+     "kind": "campo_atuacao",
+     "pages": [
+      199
+     ],
+     "children": 14,
+     "violations": 0,
+     "flagged": true
+    },
+    {
+     "row": "pb-pcem-lgg-le-linha-015",
+     "kind": "campo_atuacao",
+     "pages": [
+      131
+     ],
+     "children": 8,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-musica-linha-024",
+     "kind": "campo_atuacao",
+     "pages": [
+      207
+     ],
+     "children": 27,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-teatro-linha-012",
+     "kind": "campo_atuacao",
+     "pages": [
+      230
+     ],
+     "children": 6,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-ef-linha-016",
+     "kind": "campo_atuacao",
+     "pages": [
+      244
+     ],
+     "children": 10,
+     "violations": 0,
+     "flagged": true
+    },
+    {
+     "row": "pb-pcem-lgg-lp-linha-008",
+     "kind": "campo_atuacao",
+     "pages": [
+      102
+     ],
+     "children": 10,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-ef-linha-026",
+     "kind": "campo_atuacao",
+     "pages": [
+      247
+     ],
+     "children": 3,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-li-linha-022",
+     "kind": "campo_atuacao",
+     "pages": [
+      121
+     ],
+     "children": 4,
+     "violations": 0,
+     "flagged": true
+    },
+    {
+     "row": "pb-pcem-lgg-musica-linha-018",
+     "kind": "campo_atuacao",
+     "pages": [
+      203
+     ],
+     "children": 7,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-le-linha-006",
+     "kind": "campo_atuacao",
+     "pages": [
+      128
+     ],
+     "children": 8,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-musica-linha-013",
+     "kind": "campo_atuacao",
+     "pages": [
+      200
+     ],
+     "children": 26,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-lp-linha-007",
+     "kind": "campo_atuacao",
+     "pages": [
+      101,
+      102
+     ],
+     "children": 14,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-lp-linha-003",
+     "kind": "campo_atuacao",
+     "pages": [
+      97
+     ],
+     "children": 20,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-lgg-av-linha-010",
+     "kind": "campo_atuacao",
+     "pages": [
+      144
+     ],
+     "children": 15,
+     "violations": 0,
+     "flagged": false
+    },
+    {
+     "row": "pb-pcem-fgbx-historia-linha-005",
+     "kind": "unidade_tematica",
+     "pages": [
+      405
+     ],
+     "children": 50,
+     "violations": 13,
+     "flagged": false
+    }
+   ],
+   "spot30_flagged": 6
+  },
+  "7_kinds": {
+   "status": "FAIL",
+   "objective_fragments_typed_objetivo_aprendizagem": 31,
+   "campo_fragments_typed_campo_atuacao": 30,
+   "habilidade_ifa_containing_two_habilidades": 3,
+   "no_learning_objective_typed_as_context_found": true,
+   "no_label_typed_as_learning_found": true,
+   "notes": [
+    "Perfil do estudante egresso items (pb-pcem-ifi-par-061..066) typed narrativa_curricular - acceptable, not objectives",
+    "LP/area code tokens in table columns typed referencia_no_documento (design choice, not flagged)"
+   ]
+  }
+ },
+ "authority_scope_observations": {
+  "tables_continuing_past_range_end": [
+   122,
+   134,
+   179,
+   211,
+   233,
+   392
+  ],
+  "coded_only_pages_with_sidecar_tables_and_retained_generic_page_sections": [
+   54,
+   55,
+   56,
+   57,
+   58,
+   106,
+   111,
+   126,
+   140,
+   164,
+   190,
+   262,
+   267,
+   269,
+   274,
+   279,
+   307,
+   308,
+   328,
+   332,
+   351,
+   373,
+   387,
+   388,
+   400,
+   411,
+   420,
+   425,
+   427
+  ],
+  "note": "ingest.py discards generic page sections only on uncoded_page_sections pages; on these coded-only pages sidecar table text likely coexists with generic page-section text (duplication)."
+ }
+}

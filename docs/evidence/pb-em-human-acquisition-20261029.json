@@ -1,0 +1,47 @@
+{
+  "source_id": "pb-pcem",
+  "recorded_at": "2026-10-29T18:45:22.889434+00:00",
+  "acquisition": {
+    "method": "human_browser_download",
+    "actor_type": "human",
+    "statement": "Arquivo obtido pelo usuário no navegador, no portal oficial paraiba.pb.gov.br, após resolver pessoalmente o CAPTCHA, e entregue ao projeto. Nenhuma automação resolveu, repetiu sessão ou contornou o desafio.",
+    "official_view": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf/view"
+  },
+  "validation": {
+    "pdf_signature": true,
+    "pdf_version": "1.5",
+    "bytes": 7918257,
+    "pages": 867,
+    "encrypted": false,
+    "creation_date": "2023-04-25T09:29:56-03:00",
+    "mod_date": "2023-04-25T09:29:56-03:00",
+    "producer": "Microsoft Word 2016",
+    "sha256": "d31b7a843ecef96921434877db1bf3955b6942a3125747b11059dc3765fe5db8",
+    "private_path": "data/raw/PB/pb-pcem.pdf"
+  },
+  "corroboration": [
+    "Ficha /view declara application/pdf, 7.6MB, modificação 25/04/2023",
+    "Renderização prévia no Chrome mostrou 867 páginas (pb-em-official-acquisition.json)"
+  ],
+  "limits": [
+    "Igualdade byte a byte com o binário servido não tem prova independente: GET anônimo retorna HTML.",
+    "Edição, vigência e homologação não confirmadas.",
+    "Aquisição não equivale a extração reconciliada nem a UF pronta."
+  ],
+  "extraction": {
+    "job": "pb-pcem-acquired-20261029",
+    "revision": "page-cell-v1.5.0",
+    "parser_frozen": true,
+    "cache": "data/extracted/d31b7a843ecef96921434877db1bf3955b6942a3125747b11059dc3765fe5db8-page-cell-v1.5.0.json",
+    "records": 1884,
+    "habilidade": 1018,
+    "secao_normativa": 866,
+    "distinct_codes": 165,
+    "texts_without_terminal_punctuation": 298,
+    "warnings": 3,
+    "reconciliation_status": "pending_documentary_reconciliation",
+    "verdict": "candidatos não publicáveis sem adaptador PB EM dedicado, peer e binding",
+    "slash_codes_truncated_at_comma": 25,
+    "code_model_note": "Barra e vírgula fazem parte do código local PB (p.53: habilidade/competências relacionadas); o defeito é o corte genérico na vírgula, não um falso código."
+  }
+}

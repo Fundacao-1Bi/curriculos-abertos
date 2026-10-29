@@ -1444,10 +1444,10 @@
       "Itinerários Formativos"
     ],
     "redistribution": "Direitos de terceiros: redistribuição do PDF não estabelecida; snapshot local privado para conferência e processamento.",
-    "collected_at": null,
-    "sha256": null,
-    "local_path": null,
-    "status": "unavailable",
+    "collected_at": "2026-10-29T18:38:10.355254+00:00",
+    "sha256": "d31b7a843ecef96921434877db1bf3955b6942a3125747b11059dc3765fe5db8",
+    "local_path": "data/raw/PB/pb-pcem.pdf",
+    "status": "acquired",
     "attempts": [
       {
         "time": "2026-10-28T03:27:49.287305+00:00",
@@ -1519,12 +1519,22 @@
         "final_url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf/@@download/file/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
         "result": "error",
         "error": "AssertionError: Non-PDF prefix: b'<!DOCTYPE html>\\r'"
+      },
+      {
+        "at": "2026-10-29T18:38:10.355254+00:00",
+        "url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+        "method": "Arquivo fornecido pelo usuário (download humano pós-CAPTCHA); validação local de assinatura, páginas, bytes e SHA-256.",
+        "result": "file_validated",
+        "content_type": "application/pdf",
+        "bytes": 7918257,
+        "pdf_pages": 867,
+        "sha256": "d31b7a843ecef96921434877db1bf3955b6942a3125747b11059dc3765fe5db8"
       }
     ],
     "inventory_complete": false,
-    "reconciliation_status": "pending",
+    "reconciliation_status": "document_specific_adapter_bound_peer_pass_selective_refresh_pending_documentary_reconciliation_pending",
     "reviewer_type": "automated",
-    "error": "Original browser PDF renders867p and official file view declaresapplication/pdf7.6MB, but local acquisition remains blocked: normal Save panel disabled; ordinary GET of original and newly observed public download endpoint returnsHTML challenge. No bypass/session replay used. Edition and current normative application not confirmed.",
+    "error": null,
     "mandatory": true,
     "inventory_status": "in_progress",
     "allowed_redirect_hosts": [],
@@ -1554,7 +1564,245 @@
       "normal_download_result": "Save panel displayed disabled Save button in Downloads and raw/PB; downloadMedia waited for destination and timed out. No local artifact obtained.",
       "evidence": "docs/evidence/source-audit-northeast/pb-em-official-acquisition.json"
     },
-    "access_status": "browser_render_available_local_acquisition_pending"
+    "access_status": "browser_render_available_local_acquisition_pending",
+    "bytes": 7918257,
+    "pdf_pages": 867,
+    "acquisition_provenance": {
+      "method": "human_browser_download",
+      "actor_type": "human",
+      "detail": "Cópia obtida pelo próprio usuário no navegador a partir do portal oficial paraiba.pb.gov.br após resolver pessoalmente o desafio CAPTCHA, e entregue ao projeto. Nenhuma automação resolveu ou contornou o desafio.",
+      "corroboration": {
+        "official_view_declared": "application/pdf, 7.6MB, modificação 25/04/2023",
+        "observed": "application/pdf 1.5, 7.918.257 B (7,55 MiB), 867 páginas, CreationDate/ModDate 2023-04-25T09:29:56-03:00, sem criptografia; contagem igual à renderização prévia no navegador (867p)"
+      },
+      "limits": "Igualdade com o binário servido pelo portal não pode ser comprovada por hash independente, pois o GET anônimo retorna HTML. Edição, vigência e homologação permanecem não confirmadas."
+    },
+    "uncoded_items_path": "data/manifests/uncoded/pb-pcem-items.json",
+    "adapter_authority": {
+      "coded_learning_ranges": [
+        [
+          54,
+          58
+        ],
+        [
+          94,
+          106
+        ],
+        [
+          111,
+          122
+        ],
+        [
+          126,
+          134
+        ],
+        [
+          140,
+          154
+        ],
+        [
+          164,
+          179
+        ],
+        [
+          190,
+          211
+        ],
+        [
+          226,
+          233
+        ],
+        [
+          239,
+          252
+        ],
+        [
+          262,
+          269
+        ],
+        [
+          274,
+          279
+        ],
+        [
+          307,
+          310
+        ],
+        [
+          316,
+          328
+        ],
+        [
+          332,
+          346
+        ],
+        [
+          351,
+          373
+        ],
+        [
+          387,
+          392
+        ],
+        [
+          400,
+          408
+        ],
+        [
+          411,
+          415
+        ],
+        [
+          420,
+          422
+        ],
+        [
+          425,
+          427
+        ],
+        [
+          438,
+          765
+        ]
+      ],
+      "uncoded_page_sections_ranges": [
+        [
+          54,
+          58
+        ],
+        [
+          94,
+          106
+        ],
+        [
+          111,
+          122
+        ],
+        [
+          126,
+          134
+        ],
+        [
+          140,
+          154
+        ],
+        [
+          164,
+          179
+        ],
+        [
+          190,
+          211
+        ],
+        [
+          226,
+          233
+        ],
+        [
+          239,
+          252
+        ],
+        [
+          262,
+          269
+        ],
+        [
+          274,
+          279
+        ],
+        [
+          307,
+          310
+        ],
+        [
+          316,
+          328
+        ],
+        [
+          332,
+          346
+        ],
+        [
+          351,
+          373
+        ],
+        [
+          387,
+          392
+        ],
+        [
+          400,
+          408
+        ],
+        [
+          411,
+          415
+        ],
+        [
+          420,
+          422
+        ],
+        [
+          425,
+          427
+        ],
+        [
+          433,
+          765
+        ]
+      ]
+    },
+    "requires_document_specific_adapter": true,
+    "authoritative_adapter_verification": {
+      "actor_type": "automated",
+      "actor_id": "curriculos-abertos:pb-pcem-primary",
+      "sidecar_sha256": "aeb62081e19c1e65f68168399210ceca15acd8da42ba0e269f9ae4ddfe7c0501",
+      "record_count": 6715,
+      "parts": [
+        {
+          "path": "data/manifests/uncoded/pb-pcem-part-fgb-linguagens.json",
+          "sha256": "144b7d1121a75487e0a0f1845a6bd5a0f79896bfe0f8f4116ab68aac4b12559e",
+          "records": 2472
+        },
+        {
+          "path": "data/manifests/uncoded/pb-pcem-part-fgb-exatas-humanas.json",
+          "sha256": "4a35b7b5516f18a45b4005a639b9bc3ecdf52618d187140d48d3063603d3bbc2",
+          "records": 1625
+        },
+        {
+          "path": "data/manifests/uncoded/pb-pcem-part-if-linguagens.json",
+          "sha256": "86b411968771c9daea09595266068bf5f0c67e72986d42e3ab3d82395e235956",
+          "records": 959
+        },
+        {
+          "path": "data/manifests/uncoded/pb-pcem-part-if-integrados.json",
+          "sha256": "c4f61cc510fbe16d7febf4501a9546b59e77d3d9cc88a0a96720e1f03169819a",
+          "records": 1657
+        }
+      ],
+      "literal_ingestion_path_errors": 0,
+      "scope": "FGB component/area tables and itinerary tables 3.2–3.5 in authority ranges; Projeto de Vida, Eletivas, EPT and prose chapters remain generic page sections. Not whole-source reconciliation, not edition/vigência confirmation."
+    },
+    "adapter_peer_review": {
+      "actor_type": "automated",
+      "method": "Independent source-first census (codes, words, literal bbox re-extraction, segmentation, positions, hierarchy, kinds, range ends, duplication) without using adapter scripts to define the denominator",
+      "rounds": 4,
+      "final": "PASS",
+      "at": "2026-10-29T19:39:40.596002+00:00",
+      "reports": [
+        "docs/evidence/source-audit-pb-pcem/peer-report-round1.json",
+        "docs/evidence/source-audit-pb-pcem/peer-report-round4.json"
+      ],
+      "documented_residuals": [
+        "p370 Química: one objective unit holds two objectives joined mid-line (enantiômeros. Identificar)",
+        "p241 EF: codes cell without a ruling line spans two field rows; kept under the upper row as printed",
+        "p675/688/696: five habilidade text bboxes overlap a neighbour that starts mid-line; excerpts literal",
+        "EM13LP 8/1,6 (p94) kept literal with code null; EM13LP735, EM131MAT202, EM13CT301 kept literal with anomaly flags"
+      ],
+      "sidecar_sha256": "aeb62081e19c1e65f68168399210ceca15acd8da42ba0e269f9ae4ddfe7c0501",
+      "record_count": 6715
+    },
+    "uncovered_scope": "Projeto de Vida (3.6), Eletivas (3.7), EPT (cap.4) and prose chapters outside authority ranges remain generic page sections; not structured."
   },
   {
     "id": "pe-curriculo-em-2021",

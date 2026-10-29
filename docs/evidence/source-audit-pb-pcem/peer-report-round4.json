@@ -1,0 +1,507 @@
+{
+ "round": 4,
+ "sidecar_sha256": "aeb62081e19c1e65f68168399210ceca15acd8da42ba0e269f9ae4ddfe7c0501",
+ "records": 6715,
+ "authority": {
+  "status": "PASS",
+  "coded_only_pages": [],
+  "tables_continuing_past_range_end": [],
+  "codes_outside_coded_ranges": "p52-53, p91-93 (not adapter tables)",
+  "sidecar_pages_outside_authority": [
+   3,
+   44,
+   256,
+   294,
+   381
+  ],
+  "duplicate_evidence_spans": 0
+ },
+ "checks": {
+  "1_code_census": {
+   "status": "PASS",
+   "coded_pages": 537,
+   "printed": 2916,
+   "matched": 2915,
+   "unmatched": [
+    {
+     "page": 94,
+     "code": "EM13LP8/1,6",
+     "n": 1,
+     "pdf_bbox": [
+      [
+       213.2,
+       694.4,
+       248.3,
+       704.5
+      ]
+     ]
+    }
+   ],
+   "sidecar_not_printed": 0,
+   "note": "p94 \"EM13LP 8/1,6\" unmatched by design (code=null, unresolved_printed_code_token)"
+  },
+  "2_text_loss": {
+   "status": "PASS",
+   "pages": 542,
+   "native_words": 153817,
+   "unmatched_by_category": {
+    "punctuation_only": 1049,
+    "only_in_label_or_position_evidence": 1481
+   },
+   "genuinely_absent": 0
+  },
+  "3_literal_fidelity": {
+   "status": "PASS_WITH_DOCUMENTED_MINOR",
+   "sample": 332,
+   "strata": 94,
+   "full_population": {
+    "evidence_exact": 6247,
+    "join_equal": 6715,
+    "evidence_token_mismatch": 1069,
+    "evidence_punct_diff": 1051
+   },
+   "notes": [
+    "6715/6715 joined excerpts == text; no excerpt word outside bbox",
+    "documented minor: 5 habilidade_ifa bboxes overlap neighbour (p675/688/696)",
+    "1049 code excerpts drop parentheses; 1069 text bboxes include leading (CODE)"
+   ],
+   "bbox_overlaps": [
+    {
+     "key": "pb-pcem-ifi-hab-341",
+     "page": 675
+    },
+    {
+     "key": "pb-pcem-ifi-hab-374",
+     "page": 688
+    },
+    {
+     "key": "pb-pcem-ifi-hab-375",
+     "page": 688
+    },
+    {
+     "key": "pb-pcem-ifi-hab-398",
+     "page": 696
+    },
+    {
+     "key": "pb-pcem-ifi-hab-399",
+     "page": 696
+    }
+   ]
+  },
+  "4_segmentation": {
+   "status": "PASS",
+   "units": 1254,
+   "counts": {
+    "cross_page": 76,
+    "very_short": 15,
+    "possible_merged_objectives": 1,
+    "no_terminal_punct": 0,
+    "starts_lowercase": 0,
+    "split_mid_sentence_pair": 0
+   },
+   "page_break_splits": 0,
+   "documented_residual": "p370 quimica-linha-030-obj-04"
+  },
+  "5_positions": {
+   "status": "PASS",
+   "records_with_years": 6083,
+   "ok": 6083,
+   "issues": 0
+  },
+  "6_hierarchy": {
+   "status": "PASS_WITH_AMBIGUITY",
+   "duplicate_keys": 0,
+   "unresolvable_parents": 0,
+   "cycles": 0,
+   "roots": 1,
+   "verified_fixes": [
+    "p240 EF row PRÁTICA (ef-linha-003) owns codes/objective/objeto",
+    "p232 Teatro ARTÍSTICO (linha-013) owns obj-01 and objeto",
+    "p148 \"488).\" is now tail of av-linha-006 campo; no fake row",
+    "objeto_conhecimento one container per printed cell (325; 0 multi-cell, 0 shared cells)"
+   ],
+   "ambiguous": {
+    "p241": "7 codes ef-linha-003-cod-1-05..11 (y330-474) vertically aligned with JORNALÍSTICO row ef-linha-004 but in a codes cell with no rule at y313 (merged in source); parented to upper row. Source-ambiguous; not counted as defect.",
+    "items": [
+     {
+      "child": "pb-pcem-lgg-ef-linha-003-cod-1-05",
+      "kind": "referencia_no_documento",
+      "parent": "pb-pcem-lgg-ef-linha-003",
+      "page": 241,
+      "y": 330,
+      "next_row": "pb-pcem-lgg-ef-linha-004",
+      "next_row_start": [
+       241,
+       330
+      ],
+      "text": "EM13LGG201"
+     },
+     {
+      "child": "pb-pcem-lgg-ef-linha-003-cod-1-06",
+      "kind": "referencia_no_documento",
+      "parent": "pb-pcem-lgg-ef-linha-003",
+      "page": 241,
+      "y": 354,
+      "next_row": "pb-pcem-lgg-ef-linha-004",
+      "next_row_start": [
+       241,
+       330
+      ],
+      "text": "EM13LGG202"
+     },
+     {
+      "child": "pb-pcem-lgg-ef-linha-003-cod-1-07",
+      "kind": "referencia_no_documento",
+      "parent": "pb-pcem-lgg-ef-linha-003",
+      "page": 241,
+      "y": 378,
+      "next_row": "pb-pcem-lgg-ef-linha-004",
+      "next_row_start": [
+       241,
+       330
+      ],
+      "text": "EM13LGG204"
+     },
+     {
+      "child": "pb-pcem-lgg-ef-linha-003-cod-1-08",
+      "kind": "referencia_no_documento",
+      "parent": "pb-pcem-lgg-ef-linha-003",
+      "page": 241,
+      "y": 402,
+      "next_row": "pb-pcem-lgg-ef-linha-004",
+      "next_row_start": [
+       241,
+       330
+      ],
+      "text": "EM13LGG501"
+     },
+     {
+      "child": "pb-pcem-lgg-ef-linha-003-cod-1-09",
+      "kind": "referencia_no_documento",
+      "parent": "pb-pcem-lgg-ef-linha-003",
+      "page": 241,
+      "y": 426,
+      "next_row": "pb-pcem-lgg-ef-linha-004",
+      "next_row_start": [
+       241,
+       330
+      ],
+      "text": "EM13LGG502"
+     },
+     {
+      "child": "pb-pcem-lgg-ef-linha-003-cod-1-10",
+      "kind": "referencia_no_documento",
+      "parent": "pb-pcem-lgg-ef-linha-003",
+      "page": 241,
+      "y": 450,
+      "next_row": "pb-pcem-lgg-ef-linha-004",
+      "next_row_start": [
+       241,
+       330
+      ],
+      "text": "EM13LGG503"
+     },
+     {
+      "child": "pb-pcem-lgg-ef-linha-003-cod-1-11",
+      "kind": "referencia_no_documento",
+      "parent": "pb-pcem-lgg-ef-linha-003",
+      "page": 241,
+      "y": 474,
+      "next_row": "pb-pcem-lgg-ef-linha-004",
+      "next_row_start": [
+       241,
+       330
+      ],
+      "text": "EM13LGG704"
+     }
+    ]
+   },
+   "subrow_id_mismatch_same_parent_bands": 6,
+   "spot30": [
+    {
+     "row": "pb-pcem-lgg-li-linha-004",
+     "kind": "campo_atuacao",
+     "pages": [
+      113
+     ],
+     "children": 15,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-musica-linha-009",
+     "kind": "campo_atuacao",
+     "pages": [
+      200
+     ],
+     "children": 36,
+     "violations": 2
+    },
+    {
+     "row": "pb-pcem-lgg-ef-linha-009",
+     "kind": "campo_atuacao",
+     "pages": [
+      244,
+      245
+     ],
+     "children": 14,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-danca-linha-008",
+     "kind": "campo_atuacao",
+     "pages": [
+      172,
+      173
+     ],
+     "children": 18,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-ef-linha-012",
+     "kind": "campo_atuacao",
+     "pages": [
+      246
+     ],
+     "children": 31,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-musica-linha-005",
+     "kind": "campo_atuacao",
+     "pages": [
+      195
+     ],
+     "children": 25,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-danca-linha-010",
+     "kind": "campo_atuacao",
+     "pages": [
+      174
+     ],
+     "children": 12,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-fgbx-historia-linha-002",
+     "kind": "unidade_tematica",
+     "pages": [
+      403
+     ],
+     "children": 37,
+     "violations": 3
+    },
+    {
+     "row": "pb-pcem-lgg-li-linha-010",
+     "kind": "campo_atuacao",
+     "pages": [
+      118
+     ],
+     "children": 14,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-fgbx-matematica-linha-007",
+     "kind": "unidade_tematica",
+     "pages": [
+      276
+     ],
+     "children": 24,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-av-linha-003",
+     "kind": "campo_atuacao",
+     "pages": [
+      143
+     ],
+     "children": 16,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-ef-linha-017",
+     "kind": "campo_atuacao",
+     "pages": [
+      251
+     ],
+     "children": 25,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-fgbx-fisica-linha-001",
+     "kind": "unidade_tematica",
+     "pages": [
+      332
+     ],
+     "children": 17,
+     "violations": 3
+    },
+    {
+     "row": "pb-pcem-lgg-le-linha-003",
+     "kind": "campo_atuacao",
+     "pages": [
+      128
+     ],
+     "children": 10,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-li-linha-003",
+     "kind": "campo_atuacao",
+     "pages": [
+      112,
+      113
+     ],
+     "children": 14,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-teatro-linha-005",
+     "kind": "campo_atuacao",
+     "pages": [
+      228,
+      229
+     ],
+     "children": 6,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-le-linha-013",
+     "kind": "campo_atuacao",
+     "pages": [
+      133
+     ],
+     "children": 7,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-ef-linha-002",
+     "kind": "campo_atuacao",
+     "pages": [
+      239,
+      240
+     ],
+     "children": 40,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-ef-linha-015",
+     "kind": "campo_atuacao",
+     "pages": [
+      249
+     ],
+     "children": 34,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-fgbx-matematica-linha-011",
+     "kind": "unidade_tematica",
+     "pages": [
+      279
+     ],
+     "children": 8,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-lp-linha-008",
+     "kind": "campo_atuacao",
+     "pages": [
+      101
+     ],
+     "children": 14,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-li-linha-014",
+     "kind": "campo_atuacao",
+     "pages": [
+      121
+     ],
+     "children": 14,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-teatro-linha-010",
+     "kind": "campo_atuacao",
+     "pages": [
+      231
+     ],
+     "children": 12,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-le-linha-005",
+     "kind": "campo_atuacao",
+     "pages": [
+      129
+     ],
+     "children": 8,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-teatro-linha-006",
+     "kind": "campo_atuacao",
+     "pages": [
+      229
+     ],
+     "children": 11,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-lp-linha-007",
+     "kind": "campo_atuacao",
+     "pages": [
+      100
+     ],
+     "children": 15,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-lp-linha-003",
+     "kind": "campo_atuacao",
+     "pages": [
+      97
+     ],
+     "children": 20,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-teatro-linha-002",
+     "kind": "campo_atuacao",
+     "pages": [
+      226,
+      227
+     ],
+     "children": 8,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-li-linha-012",
+     "kind": "campo_atuacao",
+     "pages": [
+      120
+     ],
+     "children": 15,
+     "violations": 0
+    },
+    {
+     "row": "pb-pcem-lgg-teatro-linha-001",
+     "kind": "campo_atuacao",
+     "pages": [
+      226
+     ],
+     "children": 8,
+     "violations": 0
+    }
+   ],
+   "spot30_flagged": 0
+  },
+  "7_kinds": {
+   "status": "PASS",
+   "notes": [
+    "no fragment campo rows, no série headings mistyped, no objective fragments"
+   ]
+  }
+ }
+}
