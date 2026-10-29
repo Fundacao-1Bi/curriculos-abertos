@@ -1581,11 +1581,11 @@
     "adapter_authority": {
       "coded_learning_ranges": [
         [
-          54,
+          53,
           58
         ],
         [
-          94,
+          91,
           106
         ],
         [
@@ -1667,11 +1667,11 @@
       ],
       "uncoded_page_sections_ranges": [
         [
-          54,
+          53,
           58
         ],
         [
-          94,
+          91,
           106
         ],
         [
@@ -1756,13 +1756,13 @@
     "authoritative_adapter_verification": {
       "actor_type": "automated",
       "actor_id": "curriculos-abertos:pb-pcem-primary",
-      "sidecar_sha256": "aeb62081e19c1e65f68168399210ceca15acd8da42ba0e269f9ae4ddfe7c0501",
-      "record_count": 6715,
+      "sidecar_sha256": "c80a391d15199fbe0a713c53e847dd26b07dcb07e7432715eef6d9a889348557",
+      "record_count": 6750,
       "parts": [
         {
           "path": "data/manifests/uncoded/pb-pcem-part-fgb-linguagens.json",
-          "sha256": "144b7d1121a75487e0a0f1845a6bd5a0f79896bfe0f8f4116ab68aac4b12559e",
-          "records": 2472
+          "sha256": "a8811501546a3e1dcba287ba17f8f141948f8171d0d1407de68ec352ead302b2",
+          "records": 2507
         },
         {
           "path": "data/manifests/uncoded/pb-pcem-part-fgb-exatas-humanas.json",
@@ -1799,8 +1799,9 @@
         "p675/688/696: five habilidade text bboxes overlap a neighbour that starts mid-line; excerpts literal",
         "EM13LP 8/1,6 (p94) kept literal with code null; EM13LP735, EM131MAT202, EM13CT301 kept literal with anomaly flags"
       ],
-      "sidecar_sha256": "aeb62081e19c1e65f68168399210ceca15acd8da42ba0e269f9ae4ddfe7c0501",
-      "record_count": 6715
+      "sidecar_sha256": "c80a391d15199fbe0a713c53e847dd26b07dcb07e7432715eef6d9a889348557",
+      "record_count": 6750,
+      "post_peer_additions": "p53 (literal prose blocks plus the Quadro 4 code example as mencao_codigo) and p91–93 Quadro 18 (18 LP habilidades with full text) added after peer round 4, replacing generic records truncated at line ends or at the comma; checked by the shared verifier and word-coverage proof."
     },
     "uncovered_scope": "Projeto de Vida (3.6), Eletivas (3.7), EPT (cap.4) and prose chapters outside authority ranges remain generic page sections; not structured."
   },

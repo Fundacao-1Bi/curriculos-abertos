@@ -92,6 +92,26 @@ for pn in (54,55):
         add(f'{P}-q5-{m.group(1)}',Q5,'referencia_no_documento',cw[0][4],[ev],AREA_POS,
             {'part':'habilidades_comuns_campos','related_competences_literal':m.group(2),'related_competences_evidence':rel,'text_is_code_only':True},code=m.group(1))
 
+# ---- p53 code-model example and p91-93 Quadro 18 ----------------------------
+# only the Quadro 4 example cell; codes cited inside prose stay in the literal prose blocks
+for w in [w for w in C.page_words(53) if w[4]=='(EM13LP51/1,2)']:
+    tok=w[4];code=tok.strip('()')
+    ev=C.fragment(53,tok,list(w[:4]),'code-model-mention');ev['evidence_role']='literal_code_reference'
+    add(f'{P}-p53-mencao-{round(w[1])}',AREA,'mencao_codigo',tok,[ev],[],
+        {'part':'modelo_codigo_alfanumerico','role':'code_cited_in_code_model_explanation','pb_code_model':'Habilidade/competências relacionadas (p.53).' if '/' in code else None,'not_learning_definition':True},code=code)
+q18=find_line(91,'Quadro 18:')
+Q18POS=[C.position('LGG','Língua Portuguesa',evidence=lf(91,q18,'quadro-title'))]
+Q18=add(f'{P}-quadro18','pb-pcem-lgg','quadro_curricular',line_text(q18),[lf(91,q18,'quadro-title')],Q18POS,
+        {'part':'habilidades_comuns_campos','role':'explicit_LP_skill_table_title'})
+for b in numbered_blocks([91,92,93],'HABILIDADES COMUNS A TODOS OS CAMPOS','2.1.3.8',r'\(EM13LP\d{2}\)'):
+    first_pn,first=b[0]
+    cw=[w for w in first if w[4].startswith('(EM13')][0];code=cw[4].strip('()')
+    rest=[(pn,[w for w in l if w is not cw]) for pn,l in b];rest=[(pn,l) for pn,l in rest if l]
+    fr=frags_of(rest,'q18-skill-text')
+    loc=C.fragment(first_pn,cw[4],list(cw[:4]),'q18-skill-code');loc['evidence_role']='code_locator'
+    add(f'{P}-q18-{code}',Q18,'habilidade',C.norm(' '.join(f['excerpt'] for f in fr)),fr+[loc],Q18POS,
+        {'part':'habilidades_comuns_campos','literal_code_with_parentheses':cw[4]},code=code)
+
 # ---- component tables -----------------------------------------------------
 LAB=[('campo',re.compile(r'CAMPOS? DE ATUAÇÃO( SOCIAL)?')),('habilidade',re.compile(r'HABILIDADES?( ESPECÍFICAS?( DA ÁREA)?)?')),
      ('objetivo',re.compile(r'(\dª SÉRIE )?OBJETIVOS? DE APRENDIZAGEM')),('objeto',re.compile(r'OBJETOS? D[EO] CONHECIMENTO'))]
@@ -268,7 +288,7 @@ for slug,a,b,secnum,component,language in COMPONENTS:
                 {'part':'organizacao_curricular_componente','role':'knowledge_object_column_container','granularity':'complete_cell_container_not_atomic_objects','row_ordinal':ix})
 
 # ---- leftover words: header labels and prose become literal records -------
-for pn in (54,55,56,57,58):page_owner[pn]=AREA
+for pn in (53,54,55,56,57,58,91,92,93):page_owner[pn]=AREA
 def inside(w,b):return b[0]-0.6<=w[0] and w[2]<=b[2]+0.6 and b[1]-0.6<=w[1] and w[3]<=b[3]+0.6
 def covered_boxes(pn):return [f['bbox'] for r in items for f in r['evidence'] if f['page']==pn]
 PUA=re.compile(r'^[-]+$')
