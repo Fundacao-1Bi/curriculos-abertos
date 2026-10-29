@@ -1,0 +1,159 @@
+{
+  "actor_type": "automated",
+  "source_id": "ac-computacao-667-2025",
+  "receipt_path": "docs/evidence/source-audit-north-norms/ac-computacao-667-2025-whole-source-receipt.json",
+  "receipt_sha256": "d41636b5da38f43ab9db0cc24fe0c24d244ce280c13234e081b3b64c1ddc5df3",
+  "records": 12,
+  "negative_controls": [
+    {
+      "mutation": "missing_normative_record",
+      "blocked": true,
+      "issues": [
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:checked_item_absent:ca:ac-computacao-667-2025:section:res667-fecho",
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:verified_records_do_not_match_independent_denominator",
+        "mandatory_parts_not_fully_verified",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ]
+    },
+    {
+      "mutation": "normative_text_changed",
+      "blocked": true,
+      "issues": [
+        "part_content_proof_failed:Resolução CEE/AC 667/2025: artigos 1–10 e assinatura, páginas físicas39–40",
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:item_text_changed_or_unbound:ca:ac-computacao-667-2025:section:res667-fecho",
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:verified_records_do_not_match_independent_denominator",
+        "mandatory_parts_not_fully_verified",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ]
+    },
+    {
+      "mutation": "one_scope_page_removed",
+      "blocked": true,
+      "issues": [
+        "declared_source_pages_not_fully_processed"
+      ]
+    },
+    {
+      "mutation": "inventory_unit_removed",
+      "blocked": true,
+      "issues": [
+        "independent_inventory_units_missing"
+      ]
+    },
+    {
+      "mutation": "different_declared_source_scope",
+      "blocked": true,
+      "issues": [
+        "independent_inventory_source_scope_mismatch",
+        "declared_source_pages_not_fully_processed",
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:invalid_document_page_range",
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:missing_item_documentary_evidence:ca:ac-computacao-667-2025:section:res667-artigo-2",
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:missing_item_documentary_evidence:ca:ac-computacao-667-2025:section:res667-artigo-3",
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:missing_item_documentary_evidence:ca:ac-computacao-667-2025:section:res667-artigo-4",
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:missing_item_documentary_evidence:ca:ac-computacao-667-2025:section:res667-artigo-5",
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:missing_item_documentary_evidence:ca:ac-computacao-667-2025:section:res667-artigo-6",
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:missing_item_documentary_evidence:ca:ac-computacao-667-2025:section:res667-artigo-7",
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:missing_item_documentary_evidence:ca:ac-computacao-667-2025:section:res667-artigo-8",
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:missing_item_documentary_evidence:ca:ac-computacao-667-2025:section:res667-artigo-9",
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:missing_item_documentary_evidence:ca:ac-computacao-667-2025:section:res667-artigo-10",
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:missing_item_documentary_evidence:ca:ac-computacao-667-2025:section:res667-fecho",
+        "inventory_unit:ac-computacao-667-2025:documentary-part:1:verified_records_do_not_match_independent_denominator",
+        "mandatory_parts_not_fully_verified",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ]
+    }
+  ],
+  "gate_result": {
+    "gate_version": "reconciliation-gate/2.0",
+    "source_id": "ac-computacao-667-2025",
+    "artifact_sha256": "71d47a5067d527a5a1428a5a59aa77a7b669625e9215d23ede15e0124c0d284e",
+    "extraction_revision": "page-cell-v1.5.0",
+    "reconciled_parts": [
+      "Resolução CEE/AC 667/2025: artigos 1–10 e assinatura, páginas físicas39–40"
+    ],
+    "partial_parts": [],
+    "part_results": [
+      {
+        "name": "Resolução CEE/AC 667/2025: artigos 1–10 e assinatura, páginas físicas39–40",
+        "status": "content_verified_part",
+        "verified_item_count": 12
+      }
+    ],
+    "whole_source_reconciled": false,
+    "own_source_reconciled": true,
+    "required_related_documents": [
+      {
+        "title": "Currículo de Educação Digital, Midiática e Computacional do Estado do Acre",
+        "related_source_id": null,
+        "artifact_sha256": null,
+        "evidence": [
+          {
+            "source_id": "ac-computacao-667-2025",
+            "page": 39,
+            "printed_page": "39",
+            "section": "res667-artigo-1",
+            "excerpt": "Art. 1º – A presente Resolução institui e aprova o Currículo de Educação Digital, Midiática e Computacional do Estado do Acre, a ser incorporado ao Currículo",
+            "bbox": [
+              17.00790023803711,
+              610.49951171875,
+              580.504638671875,
+              621.4194946289062
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res667-artigo-1:line:1",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ac-computacao-667-2025",
+            "page": 39,
+            "printed_page": "39",
+            "section": "res667-artigo-1",
+            "excerpt": "de Referência Único do Estado do Acre, nos termos da BNCC, e orienta o processo de implementação e operacionalização nos Sistemas Estadual e Municipais",
+            "bbox": [
+              17.00790023803711,
+              620.0419921875,
+              580.4998779296875,
+              630.9619750976562
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res667-artigo-1:line:2",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          },
+          {
+            "source_id": "ac-computacao-667-2025",
+            "page": 39,
+            "printed_page": "39",
+            "section": "res667-artigo-1",
+            "excerpt": "de Ensino do Acre.",
+            "bbox": [
+              17.00790023803711,
+              629.5845947265625,
+              84.16390991210938,
+              640.5045776367188
+            ],
+            "coordinate_space": "original_pdf_page",
+            "locator": "normative:res667-artigo-1:line:3",
+            "method": "original_scoped_native_glyph_and_line_partition"
+          }
+        ]
+      }
+    ],
+    "actual_item_count": 12,
+    "accounted_item_count": 12,
+    "unaccounted_item_ids": [],
+    "issues": [
+      "related_document:Currículo de Educação Digital, Midiática e Computacional do Estado do Acre:explicit_source_hash_or_declaration_evidence_missing"
+    ],
+    "required_parts": [
+      "Resolução CEE/AC 667/2025: artigos 1–10 e assinatura, páginas físicas39–40"
+    ],
+    "expected_scope_pages": [
+      39,
+      40
+    ]
+  },
+  "production_incorporation_verified": false
+}

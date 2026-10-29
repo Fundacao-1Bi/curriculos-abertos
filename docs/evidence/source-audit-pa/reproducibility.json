@@ -1,0 +1,48 @@
+{
+  "source_id": "pa-dcepa-ei-ef",
+  "before": {
+    "data/manifests/uncoded/pa-dcepa-narrative-items.json": "8378eecbf09b7044011a99bb9ae2f72a6897a60cefc98e55f21ff434071eff1b",
+    "data/manifests/uncoded/pa-dcepa-items.json": "946e4f16523b127bbbf35e15947655bd52a6d890920cc3e7cce49753b35c424b",
+    "docs/evidence/source-audit-pa/adjacent-reference-row-audit.json": "7531ace35c7013430b948278b1297b2ff77e74faf1d54cdb0ffffd85734450bd",
+    "docs/evidence/source-audit-pa/objective-row-groups.json": "4d51f9fef9448c16eb2f07f7d91f51d10ee8c678de7cad3c2a67db9e605c0446",
+    "docs/evidence/source-audit-pa/learning-table-denominator.json": "6ab2bbee801b1c642af91611c6b63898b6e6138a7f176946b5caa1776c33d4c2",
+    "docs/evidence/source-audit-pa/narrative-source-denominator.json": "8a7aa2d034f4ebcf1c92548ce2cc0a8ee5527c14fa4a42da2bcbc12ddfff21fb"
+  },
+  "after": {
+    "data/manifests/uncoded/pa-dcepa-narrative-items.json": "8378eecbf09b7044011a99bb9ae2f72a6897a60cefc98e55f21ff434071eff1b",
+    "data/manifests/uncoded/pa-dcepa-items.json": "946e4f16523b127bbbf35e15947655bd52a6d890920cc3e7cce49753b35c424b",
+    "docs/evidence/source-audit-pa/adjacent-reference-row-audit.json": "7531ace35c7013430b948278b1297b2ff77e74faf1d54cdb0ffffd85734450bd",
+    "docs/evidence/source-audit-pa/objective-row-groups.json": "4d51f9fef9448c16eb2f07f7d91f51d10ee8c678de7cad3c2a67db9e605c0446",
+    "docs/evidence/source-audit-pa/learning-table-denominator.json": "6ab2bbee801b1c642af91611c6b63898b6e6138a7f176946b5caa1776c33d4c2",
+    "docs/evidence/source-audit-pa/narrative-source-denominator.json": "8a7aa2d034f4ebcf1c92548ce2cc0a8ee5527c14fa4a42da2bcbc12ddfff21fb"
+  },
+  "byte_identical": true,
+  "source_artifact_unchanged": true,
+  "executed": [
+    {
+      "script": "pa-dcepa-inventory.py",
+      "exit_code": 0
+    },
+    {
+      "script": "pa-dcepa-narrative.py",
+      "exit_code": 0
+    },
+    {
+      "script": "pa-dcepa-extract.py",
+      "exit_code": 0
+    },
+    {
+      "script": "pa-dcepa-verify.py",
+      "exit_code": 0
+    },
+    {
+      "script": "pa-dcepa-negative-controls.py",
+      "exit_code": 0
+    },
+    {
+      "script": "pa-dcepa-loader-probe.py",
+      "exit_code": 0
+    }
+  ],
+  "method": "Complete independent source inventory+narrative+table adapter replay; all-word/header/hierarchy/source-cell partition probes,negative controls and actual pipeline loader. No dynamic timestamps in deterministic sidecars."
+}

@@ -1,0 +1,64 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:rn-real-negative-controls",
+  "source_id": "rn-trilhas-aprofundamento",
+  "sidecar_sha256": "551f90cca125541f09975b3d62f8457695a4cdc7a742f096360f609854749602",
+  "cases": [
+    {
+      "case": "positive_local_objective",
+      "result": "accepted",
+      "expected": "accept",
+      "detail": "accepted"
+    },
+    {
+      "case": "invented_objective_text",
+      "result": "rejected",
+      "expected": "literal_reject",
+      "detail": "adapter_literal_text_code_page"
+    },
+    {
+      "case": "positive_rotated_native_cluster_label",
+      "result": "accepted",
+      "expected": "accept",
+      "detail": "accepted"
+    },
+    {
+      "case": "wrong_rotated_module_number",
+      "result": "rejected",
+      "expected": "literal_reject",
+      "detail": "adapter_literal_text_code_page"
+    },
+    {
+      "case": "cross_source_native_glyph_evidence",
+      "result": "rejected",
+      "expected": "literal_reject",
+      "detail": "adapter_literal_text_code_page"
+    },
+    {
+      "case": "wrong_native_glyph_artifact_hash",
+      "result": "rejected",
+      "expected": "literal_reject",
+      "detail": "adapter_literal_text_code_page"
+    },
+    {
+      "case": "wrong_sidecar_wrapper_hash",
+      "result": "rejected",
+      "expected": "literal_reject",
+      "detail": "Uncoded adapter source/hash mismatch"
+    },
+    {
+      "case": "ambiguous_repeated_code_parent_selector",
+      "result": "rejected",
+      "expected": "literal_reject",
+      "detail": "Ambiguous structural code reference requires item_id or page/locator/code: rn-trilhas-aprofundamento EMIFLGG01"
+    },
+    {
+      "case": "missing_structural_parent",
+      "result": "rejected",
+      "expected": "literal_reject",
+      "detail": "Unresolved structural parent: rn-trilhas-aprofundamento EMIFLGG01"
+    }
+  ],
+  "failures": 0,
+  "method": "Real source_uncoded_items/finalize_items/attach_hierarchy with minimal isolated temporary sidecars. No source PDF, active manifest, cache or core modified."
+}

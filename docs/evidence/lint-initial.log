@@ -1,0 +1,37 @@
+
+> curriculos-abertos@0.1.0 lint
+> eslint src scripts tests
+
+
+/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/scripts/audit-verify.ts
+  11:166  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  29:191  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  30:118  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  30:344  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/src/app/admin/ui.tsx
+  9:32  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/src/app/admin/ui.tsx:9:32
+   7 |  const [logged,setLogged]=useState(authenticated),[overview,setOverview]=useState<Overview|null>(null),[message,setMessage]=useState(''),[busy,setBusy]=useState(false),[detail,setDetail]=useState<Row|null>(null),[selected,setSelected]=useState('');
+   8 |  async function refresh(){const response=await fetch('/api/admin/overview',{cache:'no-store'});const json=await response.json();if(!response.ok)throw new Error(json.error?.message || 'Administração indisponível.');setOverview(json.data);}
+>  9 |  useEffect(()=>{if(logged)void refresh().catch(e=>setMessage(e.message));},[logged]);
+     |                                ^^^^^^^ Avoid calling setState() directly within an effect
+  10 |  async function act(path:string,body:Row){setBusy(true);setMessage('Processando…');try{const response=await fetch(`/api/admin/${path}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});const json=await response.json();if(!response.ok)throw new Error(json.error?.message || 'Operação não concluída.');setMessage('Operação registrada com auditoria.');await refresh();return json.data;}catch(error){setMessage(error instanceof Error?error.message:'Erro.');return null;}finally{setBusy(false);}}
+  11 |  async function login(event:FormEvent<HTMLFormElement>){event.preventDefault();const form=new FormData(event.currentTarget);setBusy(true);try{const response=await fetch('/api/auth/sign-in/email',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:form.get('email'),password:form.get('password')})});if(!response.ok)throw new Error('Não foi possível entrar. Confira as credenciais.');setLogged(true);setMessage('Sessão iniciada.');}catch(error){setMessage(error instanceof Error?error.message:'Erro.');}finally{setBusy(false);}}
+  12 |  async function logout(){await fetch('/api/auth/sign-out',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'});setLogged(false);setOverview(null);setMessage('Sessão encerrada.');}  react-hooks/set-state-in-effect
+
+/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/src/app/panorama/[id]/page.tsx
+  3:32  warning  'Badge' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/src/app/publicacoes/page.tsx
+  3:51  warning  'row' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 7 problems (5 errors, 2 warnings)
+

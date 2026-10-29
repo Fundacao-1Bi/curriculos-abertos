@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+"""Confront final proposed outputs against all independent source occurrences and baseline."""
+import collections,json,sys
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[3];OUT=Path(__file__).resolve().parent;PRIVATE=ROOT/'var/private-evidence/source-audit-rn-fidelity';sys.path[:0]=[str(ROOT/'pipeline'),str(OUT)]
+from ingest import clean_text
+anchors=json.loads((OUT/'all-code-occurrences.json').read_text());baseline=json.loads((OUT/'all-cached-coded-fragment-checks.json').read_text());summaries=[];dispositions=[]
+def contains(b,x,y):return b[0]-.01<=x<b[2]+.01 and b[1]-.01<=y<b[3]+.01
+def signature(code,page,locator,bbox):return(code,page,locator,tuple(round(x,3)for x in bbox)if bbox else None)
+for sid in ['rn-trilhas-aprofundamento','rn-dcec-computacao']:
+ result=json.loads((PRIVATE/f'candidate-{sid}.json').read_text());items=[i for i in result['items']if i.get('code')];source_anchors=[a for a in anchors if a['source_id']==sid];represented=[];missing=[];extras=[]
+ for a in source_anchors:
+  x,y=(a['bbox'][0]+a['bbox'][2])/2,(a['bbox'][1]+a['bbox'][3])/2
+  matched=[i for i in items if i['code']==a['code']and any(e['page']==a['page']and e.get('bbox')and contains(e['bbox'],x,y)for e in i['evidence'])]
+  r={'source_id':sid,'page':a['page'],'code':a['code'],'ordinal_in_page':a['ordinal_in_page'],'original_role':a['role'],'matching_items':len(matched),'kinds':sorted({i['kind']for i in matched})}
+  if a['role']=='outside_classified_region':r['disposition']='narrative_example_retained_in_page_section';r['source_section_retained']=any(i.get('code')is None and i['evidence'][0]['page']==a['page']for i in result['items'])
+  elif not matched:r['disposition']='missing_source_occurrence';missing.append(r)
+  elif a['role']=='learning_definition'and not any(i['kind']=='habilidade'for i in matched):r['disposition']='primary_wrong_kind';missing.append(r)
+  elif a['role']!='learning_definition'and not all(i['kind']=='referencia_no_documento'and i['text']==i['code']for i in matched):r['disposition']='reference_wrong_kind_or_text';missing.append(r)
+  else:r['disposition']='source_role_preserved'
+  represented.append(r)
+ for i in items:
+  found=any(a['code']==i['code']and any(e['page']==a['page']and e.get('bbox')and contains(e['bbox'],(a['bbox'][0]+a['bbox'][2])/2,(a['bbox'][1]+a['bbox'][3])/2)for e in i['evidence'])for a in source_anchors)
+  if not found:extras.append({'code':i['code'],'id':i['id'],'evidence':i['evidence']})
+ signatures={signature(i['code'],e['page'],e.get('locator'),e.get('bbox')):i for i in items for e in i['evidence']}
+ old=[r for r in baseline if r['source_id']==sid];old_primary=[r for r in old if r['geometric_source_role']=='learning_definition'];stable=[]
+ for b in old:
+  native_roles=b['geometric_source_roles'];code=b['code'];n=b['page'];matches=[r for r in represented if r['code']==code and r['page']==n];dispositions.append({'source_id':sid,'old_id':b['id'],'old_page':n,'old_code':code,'baseline_failure':b['baseline_failure'],'old_literal_pass':b['literal_cluster_region_match'],'geometric_source_role':b['geometric_source_role'],'new_matching_source_occurrences':len(matches),'all_original_occurrences_correctly_typed':bool(matches)and all(r['disposition']=='source_role_preserved'for r in matches),'disposition':'reference_retyped_with_full_context'if b['geometric_source_role']!='learning_definition'else'primary_definition_retained_or_recovered'})
+  if sid=='rn-dcec-computacao'and b in old_primary:
+   sig=signature(code,n,b['locator'],b['bbox']);candidate=signatures.get(sig);relocated=next((i for i in items if i['code']==code and i['evidence'][0]['page']==n and i.get('source_context',{}).get('inline_definition_boundary')=='sentence_terminator_then_code_then_dash'),None)if candidate is None else None;compared=candidate or relocated;stable.append({'old_id':b['id'],'code':code,'page':n,'same_code_page_locator_bbox':candidate is not None,'documented_physical_cell_relocation':relocated is not None,'new_locator':relocated['evidence'][0]['locator']if relocated else None,'relocation_reason':'Original explicit inline definition now located by its containing HABILIDADE cell, replacing a cropped word-column recovery locator.'if relocated else None,'wording_changed':compared is not None and clean_text(compared['text'])!=clean_text(b['excerpt'])})
+ summaries.append({'source_id':sid,'independent_source_occurrences':len(source_anchors),'candidate_coded_items':len(items),'source_roles':dict(collections.Counter(a['role']for a in source_anchors)),'candidate_kinds':dict(collections.Counter(i['kind']for i in items)),'missing_or_role_findings':len(missing),'extra_unanchored_items':len(extras),'outside_region_examples':[r for r in represented if r['original_role']=='outside_classified_region'],'baseline_fragments_confronted':len(old),'baseline_failures_confronted':sum(r['baseline_failure']for r in old),'baseline_negative_cases_confronted':sum(not r['baseline_failure']for r in old),'primary_signatures_checked':len(stable),'primary_signature_findings':sum(not r['same_code_page_locator_bbox']and not r['documented_physical_cell_relocation']for r in stable),'documented_primary_locator_relocations':sum(r['documented_physical_cell_relocation']for r in stable),'primary_wordings_changed':sum(r['wording_changed']for r in stable),'missing':missing,'extras':extras,'primary_signature_checks':stable,'all_occurrence_checks':represented})
+(OUT/'candidate-comparison.json').write_text(json.dumps(summaries,ensure_ascii=False,indent=2)+'\n');(OUT/'baseline-dispositions.json').write_text(json.dumps(dispositions,ensure_ascii=False,indent=2)+'\n');compact=[{k:v for k,v in r.items()if k not in('missing','extras','primary_signature_checks','all_occurrence_checks')}for r in summaries];(OUT/'candidate-comparison-summary.json').write_text(json.dumps({'sources':compact,'all_baseline_cases':len(dispositions),'all_baseline_cases_disposed':all(r['all_original_occurrences_correctly_typed']for r in dispositions),'findings':sum(r['missing_or_role_findings']+r['extra_unanchored_items']+r['primary_signature_findings']for r in summaries),'claim_scope':'Native coded definitions/references, source roles, baseline regression and source-code occurrence coverage only; uncoded objectives, OCR and source documentary completeness not approved.'},ensure_ascii=False,indent=2)+'\n');print((OUT/'candidate-comparison-summary.json').read_text())

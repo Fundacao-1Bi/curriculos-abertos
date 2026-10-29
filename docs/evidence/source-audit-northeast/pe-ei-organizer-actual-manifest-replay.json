@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-28T20:08:00.223969+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast:actual_bound_current_cache_replay",
+  "source_id": "pe-curriculo-ei",
+  "source_artifact_sha256": "a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3",
+  "actual_manifest_used": true,
+  "actual_source_binding_sha256": "5fd03ec4de035f866380fba67970d625b033a4a218a8e19d0c7282ddac45b7d9",
+  "sidecar_path": "data/manifests/uncoded/pe-ei-objectives-items.json",
+  "sidecar_sha256": "3325af8e84729ac9791208a5953cb9cbc2aee9dbe343f5221dd6863ef7e2ddd5",
+  "actual_authority": {
+    "coded_learning_pages": [
+      87,
+      117
+    ],
+    "uncoded_page_sections_pages": [
+      84,
+      86
+    ]
+  },
+  "importer_finalizer_result": "passed",
+  "adapter_records": 135,
+  "literal_fragments": 252,
+  "final_records_including_remaining_source": 245,
+  "schema_errors": 0,
+  "orphans": 0,
+  "cycles": 0,
+  "cache_path": "data/extracted/a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3-page-cell-v1.5.0.json",
+  "cache_sha256": "59a6b9ca61e16b312a1fa83a118935f544549af882b020046f7512388243180c",
+  "previous_cache_preserved_at": "var/ne-pe-ei-post-binding/cache-before-refresh/a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3-page-cell-v1.5.0.json",
+  "previous_cache_sha256": "f0b54a7649101982fa66cdb42d23aa627ec01f236989b7ddf41a8d4b6f57a588",
+  "expected_source_config_sha256": "af381c609998c47b4d09935e9cf1a1233b3cae63f69ab3de350b0b5f16cb4530",
+  "cache_source_config_sha256": "af381c609998c47b4d09935e9cf1a1233b3cae63f69ab3de350b0b5f16cb4530",
+  "current_cache_config_matches": true,
+  "current_cache_runtime_matches": true,
+  "global_parser_fingerprint_sha256": "541aa3377fd409f9c172e1580ae988f5869b25e5331c98528ab68fb9a09360db",
+  "source_parser_fingerprint_sha256": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df",
+  "refresh_job_id": "national-extraction-v150-pe-ei-delta-20261028",
+  "refresh_job_sha256": "3208644f91da06cc5c59561c1107be0619a73bd237156eb9a82b674238ae2f4b",
+  "ocr_pending": false,
+  "refresh_required": false,
+  "provenance_status": "pending_primary_distribution_chain",
+  "primary_distribution_verified": false,
+  "new_delta_mounted": false,
+  "BASE_modified": false,
+  "whole_source_reconciled": false,
+  "UF_ready": false,
+  "scope": "Only this peer-reviewed documentary subset replayed with the actual registered Source and newly refreshed native cache. Remaining source parts, required documents, national mounting, provenance/current adoption and production acceptance remain separate."
+}

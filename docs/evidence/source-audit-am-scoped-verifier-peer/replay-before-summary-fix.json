@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-10-28T21:36:44.674007+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex-independent-am-scoped-verifier-peer",
+  "producer_sha256": "419a4d06b40d8099b6684b0f04dc3bc614d03b8d5b4099d9d5bec84cf3817cab",
+  "handoff_sha256": "fdb2256668c0fc0fa323e232ae701f4792bdea8cc5289cfa20e39ef197792cca",
+  "elapsed_seconds": 10.016,
+  "real_primary_replay": {
+    "producer_revision": "primary-raster-source-scoped-verifier-v1.0.0",
+    "producer_sha256": "419a4d06b40d8099b6684b0f04dc3bc614d03b8d5b4099d9d5bec84cf3817cab",
+    "handoff_path": "docs/evidence/source-audit-am-code-peer/am-code-review-handoff.json",
+    "handoff_sha256": "fdb2256668c0fc0fa323e232ae701f4792bdea8cc5289cfa20e39ef197792cca",
+    "ledger_sha256": "3666f1af298cb5a64a5d6ef3c00a6de58c31ce5af9e8cd0c31e90110d5b3afcf",
+    "review_sha256": "0c81dec5f3dbb30c79eefc4af80ce3f3317354889b73a2b5973b9fcd60746979",
+    "slots_verified": 153,
+    "primary_pages_verified": 35,
+    "references_produced": 152,
+    "by_source": {
+      "am-rca-ei": 152
+    },
+    "rejected_slots": [
+      {
+        "slot_id": "am-rca-ei:p114:slot001",
+        "code": null,
+        "reason": "not_a_code_in_this_crop"
+      }
+    ],
+    "proof_trace_sha256": "8ba32ae2117db37c190313f4e1b8abd5592150809fa362bc122e092410f4db89",
+    "reference_records_sha256": {
+      "am-rca-ei": "731b011e3708109bc1ebbcc26fb085efecfad8a3b5100bdcb3002cbcfe2f7c66"
+    },
+    "actor_type": "automated",
+    "actor_id": "codex:primary-raster-reference-verifier",
+    "source_artifacts": [
+      {
+        "source_id": "am-rca-ei",
+        "sha256": "d2fe6b304d4f9e6aee101b5cf5683125fc255184c87a597d39ee111c3ae80fd8",
+        "local_path": "data/raw/AM/am-rca-ei.pdf"
+      }
+    ],
+    "proposal_pins": [
+      {
+        "path": "data/manifests/uncoded/am-primary-code-references-ei.json",
+        "sha256": "8c4c957361483d556039860d27cb252655fdb031ddaf78b6ec1f00b3049fea0b",
+        "items": 152
+      }
+    ],
+    "OCR_used_as_evidence": false,
+    "body_verified": false,
+    "full_source_coverage_verified": false,
+    "human_review_claimed": false,
+    "equivalence_asserted": false,
+    "production_integration_performed": false,
+    "source_registry_modified": false,
+    "cache_or_publication_modified": false,
+    "dependency_verifier_sha256": "8774d4372d0c0d83e73ccabd80d98dafec28f0723e7e5da8ead0c9aa78413781",
+    "selected_source_ids": [
+      "am-rca-ei"
+    ],
+    "global_catalog": {
+      "reviewed_slots": 2629,
+      "confirmed_code_only": 2628,
+      "rejected_slots": [
+        "am-rca-ei:p114:slot001"
+      ]
+    },
+    "primary_proof_method": "source embedded-image reconstruction against pinned reviewed pixel hashes",
+    "private_assets_required_for_publication_install": false,
+    "non_target_primary_artifacts_read": false
+  },
+  "records_only_documentary_code_references": true,
+  "primary_read_paths": [
+    "data/raw/AM/am-rca-ei.pdf"
+  ],
+  "absent_private_assets_reconstructed_from_primary": 158,
+  "independent_result_equals_prior_records_and_trace": true,
+  "negative_controls": [
+    {
+      "case": "proposal_literal_mutation_in_RAM",
+      "blocked": true
+    },
+    {
+      "case": "review_literal_mutation_in_RAM",
+      "blocked": true
+    },
+    {
+      "case": "source_hash_mutation_in_RAM",
+      "blocked": true
+    },
+    {
+      "case": "present_corrupt_optional_review_asset",
+      "blocked": true
+    },
+    {
+      "case": "missing_selected_primary_PDF",
+      "blocked": true
+    }
+  ],
+  "global_summary_in_catalog_digest": false,
+  "findings": [
+    {
+      "priority": "P2",
+      "field": "global_catalog",
+      "message": "Cached summary emitted in verification is excluded from catalog digest. RAM mutation can falsify reported global denominator while slots/items stay pinned. Include global_catalog in digest or derive summary after verification."
+    }
+  ],
+  "limits": "Code-review pixels/provenance only, not independent rereading of all codes, definition bodies, full AM replay, augmentation transition, publication integration or SourceWhole."
+}

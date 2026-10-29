@@ -1,0 +1,219 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex-independent-es-em-core-auditor",
+  "generated_at": "2026-10-28T18:47:53.191203+00:00",
+  "physical_census_sha256": "9d1b81f5a0d882bf3241ba2ba5d3db4e4aa640b17d5c675c156b53ad27281779",
+  "table_census_sha256": "37fb38facd49a8ef8e0fe252930c0ac31e4d1bb4a12943b1d312f04633f782f2",
+  "method": "Exhaustive ownership and documentary roles frozen before adapter output; complete native word sets for every table field and prose block. Coded fields attributed separately and never recreated. Ordinals CE01 etc preserved in source_number and literal text, not silently mapped to a national skill code.",
+  "sidecar_generated": false,
+  "sources": [
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "artifact_sha256": "22afca52472340b6ddadab143e34a219a8d6c656772fc0c3b44840eba1b5c3df",
+      "plan_path": "var/private-evidence/es-em-core/es-em-texto-introdut-rio-plan.json.gz",
+      "plan_sha256": "45a29d2f0d1415ae9a807359d537df3d2ac7bb80bbf6dedb2122820fa8b73056",
+      "planned_records": 314,
+      "planned_kinds": {
+        "referencial": 1,
+        "credito_documental": 37,
+        "secao_curricular": 256,
+        "artigo_normativo": 3,
+        "eixo_estruturante": 4,
+        "objetivo_formativo": 4,
+        "referencia_no_documento": 9
+      },
+      "expected_competency_fields": 0,
+      "catalogue_tables": 0,
+      "native_words": 13030,
+      "new_owned_words": 13030,
+      "external_coded_owned_words": 0,
+      "physical_prose_continuations": [
+        {
+          "kept_key": "em-core-prose-p29-b11-w304",
+          "merged_key": "em-core-prose-p30-b4-w3",
+          "pages": [
+            29,
+            30
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "source_id": "es-em-linguagens",
+      "artifact_sha256": "46fc39fb5834ac63b87d34410d775e797198ea0f2fc0c0c568ec59d3366f013d",
+      "plan_path": "var/private-evidence/es-em-core/es-em-linguagens-plan.json.gz",
+      "plan_sha256": "fc4f94e48ef53e383b14c0b4e53a5905be7b31684306f159dc851e5a6afd53af",
+      "planned_records": 1031,
+      "planned_kinds": {
+        "referencial": 1,
+        "ano_escolar": 4,
+        "rotulo_documental": 265,
+        "competencia_especifica": 299,
+        "grupo_curricular": 50,
+        "objeto_conhecimento": 37,
+        "tema_transversal": 44,
+        "estrutura_curricular": 11,
+        "credito_documental": 163,
+        "secao_curricular": 28,
+        "objetivo_formativo": 1,
+        "referencia_no_documento": 128
+      },
+      "expected_competency_fields": 299,
+      "catalogue_tables": 2,
+      "native_words": 38331,
+      "new_owned_words": 28833,
+      "external_coded_owned_words": 9498,
+      "physical_prose_continuations": [
+        {
+          "kept_key": "em-core-prose-p4-b2-w1",
+          "merged_key": "em-core-prose-p5-b3-w5",
+          "pages": [
+            4,
+            5
+          ]
+        },
+        {
+          "kept_key": "em-core-prose-p5-b4-w378",
+          "merged_key": "em-core-prose-p6-b2-w1",
+          "pages": [
+            5,
+            6
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "source_id": "es-em-l-ngua-portuguesa",
+      "artifact_sha256": "b3405b1e5ffeb82df9d2817e86e8949199c3ae14c9cd59daf69b69bac48773d8",
+      "plan_path": "var/private-evidence/es-em-core/es-em-l-ngua-portuguesa-plan.json.gz",
+      "plan_sha256": "aebb0f91cc9cb0a91550728b9679d6c686c0599d051e8198a26d301b0a9643db",
+      "planned_records": 899,
+      "planned_kinds": {
+        "referencial": 1,
+        "ano_escolar": 3,
+        "rotulo_documental": 153,
+        "campo_atuacao": 155,
+        "objeto_conhecimento": 157,
+        "competencia_especifica": 250,
+        "tema_transversal": 20,
+        "credito_documental": 160
+      },
+      "expected_competency_fields": 179,
+      "catalogue_tables": 0,
+      "native_words": 31657,
+      "new_owned_words": 22305,
+      "external_coded_owned_words": 9352,
+      "physical_prose_continuations": [],
+      "issues": []
+    },
+    {
+      "source_id": "es-em-ci-ncias-da-natureza",
+      "artifact_sha256": "ed9771b0dd051602a41e3706f3453a6301f8c48fd20911b9b821e96256daa1ac",
+      "plan_path": "var/private-evidence/es-em-core/es-em-ci-ncias-da-natureza-plan.json.gz",
+      "plan_sha256": "68dfe83c7584d01b814ca820f4d0e321bdb03b8daed83d6c0c0a61d4e60ad451",
+      "planned_records": 673,
+      "planned_kinds": {
+        "referencial": 1,
+        "ano_escolar": 6,
+        "rotulo_documental": 64,
+        "competencia_especifica": 133,
+        "unidade_tematica": 45,
+        "objeto_conhecimento": 45,
+        "tema_transversal": 45,
+        "credito_documental": 115,
+        "secao_curricular": 187,
+        "grupo_curricular": 2,
+        "referencia_no_documento": 30
+      },
+      "expected_competency_fields": 133,
+      "catalogue_tables": 1,
+      "native_words": 17295,
+      "new_owned_words": 11077,
+      "external_coded_owned_words": 6218,
+      "physical_prose_continuations": [
+        {
+          "kept_key": "em-core-prose-p3-b33-w449",
+          "merged_key": "em-core-prose-p4-b3-w7",
+          "pages": [
+            3,
+            4
+          ]
+        },
+        {
+          "kept_key": "em-core-prose-p5-b37-w407",
+          "merged_key": "em-core-prose-p6-b3-w7",
+          "pages": [
+            5,
+            6
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "source_id": "es-em-ci-ncias-humanas",
+      "artifact_sha256": "de0a2853b8ff2346830f9f1b0f29616912ca7ac4237b6ce050f91781afb486f6",
+      "plan_path": "var/private-evidence/es-em-core/es-em-ci-ncias-humanas-plan.json.gz",
+      "plan_sha256": "9e8f1a21307ec22452521362e0ff1111632c3d578a8fc8f2e49a6f0f8a2132fc",
+      "planned_records": 697,
+      "planned_kinds": {
+        "referencial": 1,
+        "ano_escolar": 6,
+        "rotulo_documental": 94,
+        "grupo_curricular": 40,
+        "objeto_conhecimento": 39,
+        "competencia_especifica": 161,
+        "tema_transversal": 38,
+        "credito_documental": 75,
+        "secao_curricular": 229,
+        "referencia_no_documento": 14
+      },
+      "expected_competency_fields": 160,
+      "catalogue_tables": 0,
+      "native_words": 18927,
+      "new_owned_words": 12403,
+      "external_coded_owned_words": 6524,
+      "physical_prose_continuations": [],
+      "issues": []
+    },
+    {
+      "source_id": "es-em-matem-tica",
+      "artifact_sha256": "f54f6eb503cf56251b06e85ab42d5bc1c75050ec1941efc35492e58445667920",
+      "plan_path": "var/private-evidence/es-em-core/es-em-matem-tica-plan.json.gz",
+      "plan_sha256": "247e96d474c7dda26422347cae8326b44f2ba8da32d056a70811c59afcfdf6b4",
+      "planned_records": 318,
+      "planned_kinds": {
+        "referencial": 1,
+        "ano_escolar": 3,
+        "competencia_especifica": 50,
+        "estrutura_curricular": 2,
+        "rotulo_documental": 3,
+        "unidade_tematica": 45,
+        "objeto_conhecimento": 45,
+        "tema_transversal": 45,
+        "secao_curricular": 72,
+        "credito_documental": 34,
+        "grupo_curricular": 2,
+        "referencia_no_documento": 16
+      },
+      "expected_competency_fields": 50,
+      "catalogue_tables": 1,
+      "native_words": 8656,
+      "new_owned_words": 7154,
+      "external_coded_owned_words": 1502,
+      "physical_prose_continuations": [
+        {
+          "kept_key": "em-core-prose-p4-b20-w461",
+          "merged_key": "em-core-prose-p5-b5-w5",
+          "pages": [
+            4,
+            5
+          ]
+        }
+      ],
+      "issues": []
+    }
+  ]
+}

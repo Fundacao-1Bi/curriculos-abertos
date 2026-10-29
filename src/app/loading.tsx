@@ -1,0 +1,1 @@
+export default function Loading(){return <div className="loading" role="status"><span className="eyebrow">Consultando a publicação</span><h2>Carregando os dados…</h2><div className="loading-bar" aria-hidden="true"><span/></div></div>}

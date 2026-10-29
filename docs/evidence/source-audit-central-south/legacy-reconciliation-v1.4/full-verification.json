@@ -1,0 +1,337 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:data_central_south",
+  "source_id": "sc-lingua-inglesa-ai",
+  "artifact_sha256": "3d9c5785a8ab77e944d4ceb3377a0465978d8e92a42bcaa06ea3cd47dfbad2c0",
+  "adapter_sha256": "c5174064be009c797ec13334ff07894b552eac421f89184c7df9ff851701f904",
+  "independent_inventory_sha256": "6d26fde43f0e5e9b3fd61b12ee076d2ac998ac24c126f4d5efc5b151a6047cfc",
+  "expected_records": 362,
+  "verified_records": 362,
+  "actual_records": 362,
+  "page_sections": 24,
+  "all31pages_accounted": true,
+  "native_empty_pages": [
+    2,
+    8,
+    10,
+    30,
+    31
+  ],
+  "visually_blank_pages": [
+    2,
+    8,
+    10,
+    30
+  ],
+  "decorative_graphics_only_pages": [
+    31
+  ],
+  "ocr_required_pages": [
+    {
+      "page": 31,
+      "completed": true,
+      "method": "tesseract-tsv-por",
+      "ocr": {
+        "method": "tesseract-tsv-por",
+        "cache_key": "e7bb39f80741c66ccc6fe49879b49b3ed23ead7323ce6a6ec99927c6e0a459d6",
+        "configuration": {
+          "autorotate": true,
+          "engine": "tesseract 5.5.2",
+          "language": "por",
+          "max_dimension": 2200,
+          "model_sha256": {
+            "por": "c4932b937207a9514b7514d518b931a99938c02a28a5a5a553f8599ed58b7deb"
+          },
+          "orientation_model_sha256": "9cf5d576fcc47564f11265841e5ca839001e7e6f38ff7f7aacf46d15a96b00ff",
+          "psm": 3,
+          "rasterizer": "PyMuPDF 1.26.7",
+          "revision": "tesseract-tsv-por-v1.2.1",
+          "threads": 1
+        },
+        "result_sha256": "eb4fddc9168c0f2dd262b0ceedea502f26c8d8f2d7a031fdca218e315a7ca330",
+        "layout_to_original": [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "ocr_rotation_applied": 0
+      }
+    }
+  ],
+  "whole_page_checks": [
+    {
+      "unit": "whole_original_page",
+      "page": 3,
+      "native_tokens": 37,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 4,
+      "native_tokens": 111,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 5,
+      "native_tokens": 222,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 6,
+      "native_tokens": 201,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 7,
+      "native_tokens": 58,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 9,
+      "native_tokens": 71,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 12,
+      "native_tokens": 404,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 13,
+      "native_tokens": 351,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 14,
+      "native_tokens": 331,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 15,
+      "native_tokens": 272,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 16,
+      "native_tokens": 358,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 17,
+      "native_tokens": 184,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 18,
+      "native_tokens": 296,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 19,
+      "native_tokens": 331,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 20,
+      "native_tokens": 325,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 21,
+      "native_tokens": 284,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 22,
+      "native_tokens": 337,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 23,
+      "native_tokens": 278,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 24,
+      "native_tokens": 256,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 25,
+      "native_tokens": 335,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 26,
+      "native_tokens": 329,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 27,
+      "native_tokens": 267,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 28,
+      "native_tokens": 347,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    },
+    {
+      "unit": "whole_original_page",
+      "page": 29,
+      "native_tokens": 381,
+      "token_multiset_equal": true,
+      "literal_order_verified": true
+    }
+  ],
+  "skill_cells": 78,
+  "skill_paragraphs": 143,
+  "skill_native_words": 2729,
+  "axis_definitions": 5,
+  "axis_occurrences": 25,
+  "numbered_competences": 6,
+  "baseline_skills_preserved": 143,
+  "changed_baseline_skills": [],
+  "unresolved_parents": [],
+  "cache_writes_intercepted": [
+    "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data/extracted/3d9c5785a8ab77e944d4ceb3377a0465978d8e92a42bcaa06ea3cd47dfbad2c0-page-cell-v1.4.0.json"
+  ],
+  "findings": [],
+  "uf_ready_claim": false,
+  "source_metadata_proposal": {
+    "edition": "2026",
+    "native_text_order": "glyph_cluster_stream",
+    "uncoded_items_path": "data/manifests/uncoded/sc-li-ai-complete-items.json",
+    "structure_sections": [
+      {
+        "title": "Língua Inglesa – Anos Iniciais",
+        "page_start": 1,
+        "page_end": 14,
+        "stage": "EF",
+        "component": "Língua Inglesa",
+        "area": "Linguagens",
+        "years": null,
+        "year_label": null,
+        "age_group": null,
+        "period": null
+      },
+      {
+        "title": "Organizador curricular Língua Inglesa – 1º ano",
+        "page_start": 15,
+        "page_end": 17,
+        "stage": "EF",
+        "component": "Língua Inglesa",
+        "area": "Linguagens",
+        "years": [
+          1
+        ],
+        "year_label": "1º ANO",
+        "age_group": null,
+        "period": null
+      },
+      {
+        "title": "Organizador curricular Língua Inglesa – 2º ano",
+        "page_start": 18,
+        "page_end": 20,
+        "stage": "EF",
+        "component": "Língua Inglesa",
+        "area": "Linguagens",
+        "years": [
+          2
+        ],
+        "year_label": "2º ANO",
+        "age_group": null,
+        "period": null
+      },
+      {
+        "title": "Organizador curricular Língua Inglesa – 3º ano",
+        "page_start": 21,
+        "page_end": 23,
+        "stage": "EF",
+        "component": "Língua Inglesa",
+        "area": "Linguagens",
+        "years": [
+          3
+        ],
+        "year_label": "3º ANO",
+        "age_group": null,
+        "period": null
+      },
+      {
+        "title": "Organizador curricular Língua Inglesa – 4º ano",
+        "page_start": 24,
+        "page_end": 26,
+        "stage": "EF",
+        "component": "Língua Inglesa",
+        "area": "Linguagens",
+        "years": [
+          4
+        ],
+        "year_label": "4º ANO",
+        "age_group": null,
+        "period": null
+      },
+      {
+        "title": "Organizador curricular Língua Inglesa – 5º ano",
+        "page_start": 27,
+        "page_end": 29,
+        "stage": "EF",
+        "component": "Língua Inglesa",
+        "area": "Linguagens",
+        "years": [
+          5
+        ],
+        "year_label": "5º ANO",
+        "age_group": null,
+        "period": null
+      }
+    ]
+  }
+}

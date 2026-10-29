@@ -1,0 +1,53 @@
+{
+  "at": "2026-10-28T22:04:37.160083+00:00",
+  "actor_type": "automated",
+  "source_id": "pb-proposta-ei-ef-cedoc",
+  "artifact_sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+  "source_raw_before_sha256": "0b2751242589089732fc0a6cfe81a163a6c5146e57fbfb775652511f004b8ced",
+  "source_raw_proposed_sha256": "d4f0b3c2424868d1fe43dd864f1ef9b2e8f0688dc64f362fe3cfef91d2f58962",
+  "only_changed_fields": [
+    "uncoded_items_path",
+    "adapter_authority"
+  ],
+  "previous_sidecar_path": "data/manifests/uncoded/pb-cedoc-392-items.json",
+  "previous_sidecar_sha256": "4336a71d0676c2b48f1e363e06f4ef0368c0eba9e2980ff3fc3c79f2865f998b",
+  "new_sidecar_path": "data/manifests/uncoded/pb-cedoc-392-with-appendix-items.json",
+  "new_sidecar_sha256": "488184363a3231a050796c6c2c9832505bf55a742df36b428ff2f23d0c02ddcb",
+  "old1946_payload_preserved": false,
+  "new_records": 74,
+  "combined_records": 2020,
+  "proposed_fields": {
+    "uncoded_items_path": "data/manifests/uncoded/pb-cedoc-392-with-appendix-items.json",
+    "adapter_authority": {
+      "generic_coded_reference_pages": [
+        1,
+        392
+      ],
+      "coded_learning_pages": [
+        234,
+        284
+      ],
+      "coded_learning_ranges": [
+        [
+          185,
+          188
+        ]
+      ],
+      "uncoded_page_sections_ranges": [
+        [
+          185,
+          188
+        ]
+      ]
+    }
+  },
+  "source_only_inventory": "docs/evidence/source-audit-pb392-appendix-peer/blind-primary-inventory.json",
+  "peer_candidate_verification": "docs/evidence/source-audit-pb392-appendix-peer/candidate-verification.json",
+  "technical_verification": "docs/evidence/source-audit-pb392-appendix-author/technical-verification.json",
+  "technical_verification_sha256": "e47761518b0cc09bbd24fd40a0549e96a0f6e0ce8ef0ba9774435684233609da",
+  "scope": "Only physical appendix185–188:69fullwording BNCCreferences,4printedcycles+1annexroot. Prior1946records retained, noEM/currentadoption/equivalence claim.",
+  "binding_status": "unbound_waiting_independent_combined_replay_64ID_map_and_Root_pipeline_coordination",
+  "Source_cache_runtime_modified": false,
+  "whole_source_reconciled": false,
+  "UF_ready": false
+}

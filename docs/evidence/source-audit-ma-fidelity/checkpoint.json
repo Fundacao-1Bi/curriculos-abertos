@@ -1,0 +1,39 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:portal:ma-fidelity-audit",
+  "status": "native_fidelity_verified_in_isolated_real_pipeline",
+  "pages": 736,
+  "tables": 384,
+  "nonempty_cells": 7678,
+  "independent_cell_findings": 0,
+  "coded_records": 1932,
+  "coded_literal_findings": 0,
+  "nine_regressions_pass": true,
+  "originals_preserved": true,
+  "production_caches_modified": false,
+  "production_core_edited_by_this_agent": false,
+  "owner_applied_proposal": true,
+  "source_flags_owner": "data_northeast",
+  "source_ready": false,
+  "national_ready": false,
+  "pending": [
+    "FULL frozen-parser rebuild with OCR and current manifests by pipeline owner",
+    "Documentary/semantic reconciliation remains independent from native fidelity",
+    "Potential newer MA2026 materials need official-chain/type inventory; not silently included or excluded"
+  ],
+  "external_blockers": [],
+  "private_artifacts": [
+    {
+      "path": "var/private-evidence/source-audit-ma-fidelity/candidate-ma-dctm-em-vol2.json",
+      "sha256": "b5095eecfebd7411e8c6e0a7aeb1e7742531b67f77833536abc6c92321dca7ab"
+    },
+    {
+      "path": "var/private-evidence/source-audit-ma-fidelity/candidate-ma-dctm-ei-ef.json",
+      "sha256": "1488060d42b1c08ba5ce357f9bd1dda391cac161e316d5a36b64e4259d2f09d0"
+    }
+  ],
+  "resume_commands": [
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-ma-fidelity/ma-glyph-witness-verification.py",
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-ma-fidelity/ma-isolated-pipeline-probe.py"
+  ]
+}

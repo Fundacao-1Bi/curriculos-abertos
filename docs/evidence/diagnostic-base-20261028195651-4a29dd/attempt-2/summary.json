@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "completed_at": "2026-10-28T20:33:24.760801+00:00",
+  "diagnostic_only": true,
+  "national_release_asserted": false,
+  "base_unmodified": "ca-7d302a9c674a97b83278",
+  "manifest_sha256": "be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d",
+  "snapshot_source_tree_sha256": "c63b1444157edaf3dd7975c8c1a6fdf9562a1532913a47fb484d09babf6b8095",
+  "correspondence_scope": "private captured context plus approved probe and contract patches; not current host",
+  "image": "sha256:96488dffdc720114299260c950ce5ec106161e23a27068ba482d0da9d60f93f9",
+  "production_passed": false,
+  "project": "curriculos-abertos-clean-20261028202921-dd73eb",
+  "private_env_path": "var/qa-clean-20261028202921-dd73eb.env",
+  "passed_checks": [
+    "imagem real verificada antes de criar ambiente ou volumes QA",
+    "or\u00e7amento de instala\u00e7\u00e3o calculado pelo artefato antes de criar ambiente",
+    "projeto isolado, configura\u00e7\u00e3o efetiva pr\u00f3pria e volumes ausentes antes da instala\u00e7\u00e3o",
+    "todos shards do artefato entregue lidos e verificados antes da instala\u00e7\u00e3o",
+    "PostgreSQL inicialmente vazio confirmado",
+    "migrations em banco vazio e reexecu\u00e7\u00e3o idempotente"
+  ],
+  "failure": "docker compose --env-file: exit 1; {\"event\":\"bootstrap_import_failed\",\"message\":\"Campo de posicionamento area inv\u00e1lido: ca:pe-fgb-trimestral-arte-cb58c164:f10e1cdc5e6053beac3a\"}\nnpm notice\nnpm notice New major version of npm available! 11.6.2 -> 12.2.1\nnpm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1\nnpm notice To update run: npm install -g npm@12.2.1\nnpm notice\n\n",
+  "failure_stage": "domain manual Position validation during bootstrap import",
+  "resolution_owner": "domain, root notified",
+  "qa_database_preserved_for_diagnostics": true,
+  "qa_app_worker_started": false,
+  "main_default_preserved": "ca-77fb8076598b567e1ba3",
+  "host_free_bytes": 58714980352,
+  "artifacts": [
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-2/contract-patch.json",
+      "sha256": "618c9114891f9bd1933a7e49dadf45b1f56375935f1a14b5cd87ef770aecdc44",
+      "bytes": 1438
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-2/cross-language-scan.json",
+      "sha256": "58b88cd1101fbde2cbea8ec3ba83c99bff2dd577968e85ea1a9f915511f56876",
+      "bytes": 1369
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-2/build.log",
+      "sha256": "39da5c938367d2aeb84bbc705ee043ddc94febde9072c4bbc19d853c889cd739",
+      "bytes": 33957
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-2/image-verification.json",
+      "sha256": "393323726a3ec75e4f6cac54ea6be1d36f27954511182717b0113f56b8478fb3",
+      "bytes": 1178
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-2/production-install.log",
+      "sha256": "196d76fe2fc964b0631f2012b0478173511be7a8648e37ae403224015220d304",
+      "bytes": 4437
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-2/production-install.json",
+      "sha256": "196d76fe2fc964b0631f2012b0478173511be7a8648e37ae403224015220d304",
+      "bytes": 4437
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-2/types.log",
+      "sha256": "02e35bf0eaf0150ec7911ffcbe2df519a799a6ad76bd497210557e6ed4028fd9",
+      "bytes": 54
+    }
+  ]
+}

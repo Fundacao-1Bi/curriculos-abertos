@@ -1,0 +1,91 @@
+{
+  "source_id": "rr-dcr-ei-ef",
+  "artifact_sha256": "e95761f67d1733660b9b9bd2acee10707ed07301249c322cbf39fd86a3453112",
+  "candidate_sha256": "98992856b485be462bac63fdaaf071c8c375d7584f8a01cadab70bedcc60a206",
+  "source_only_census_sha256": "52e215f3e67ead3c6e2aba1da1c28e88a981312d745d8491b134301f4c9205d0",
+  "page_local_geometry_census_sha256": "5836ec0180b589ee5bca242890af43db4cc79d49b4292f2b92e7c8987f4d4544",
+  "actor_type": "automated_independent_peer",
+  "positive_control_passed": true,
+  "cases": [
+    {
+      "case": "editorial_correction_of_source_E103ET04",
+      "blocked_by_primary_oracle": true,
+      "source_checks": [
+        "physical_objective_anchor_multiset",
+        "unique_primary_owner"
+      ],
+      "ordinary_literal_checker_still_accepts_changed_records": false
+    },
+    {
+      "case": "code_implied_baby_age_overrides_primary_preschool_header",
+      "blocked_by_primary_oracle": true,
+      "source_checks": [
+        "primary_age_units"
+      ],
+      "ordinary_literal_checker_still_accepts_changed_records": true
+    },
+    {
+      "case": "code_implied_field_overrides_actual_Corpo_heading",
+      "blocked_by_primary_oracle": true,
+      "source_checks": [
+        "primary_field_heading"
+      ],
+      "ordinary_literal_checker_still_accepts_changed_records": true
+    },
+    {
+      "case": "self_consistent_but_primary_wrong_field_parent",
+      "blocked_by_primary_oracle": true,
+      "source_checks": [
+        "physical_field_parent",
+        "primary_age_units",
+        "primary_field_heading"
+      ],
+      "ordinary_literal_checker_still_accepts_changed_records": true
+    },
+    {
+      "case": "count60_kept_by_duplicating_one_experience_and_losing_another",
+      "blocked_by_primary_oracle": true,
+      "source_checks": [
+        "source_role_cardinality"
+      ],
+      "ordinary_literal_checker_still_accepts_changed_records": true
+    },
+    {
+      "case": "orientation_and_expectation_swapped_with_counts_preserved",
+      "blocked_by_primary_oracle": true,
+      "source_checks": [
+        "full_primary_role_text"
+      ],
+      "ordinary_literal_checker_still_accepts_changed_records": true
+    },
+    {
+      "case": "continuation_truncated_but_text_and_evidence_changed_together",
+      "blocked_by_primary_oracle": true,
+      "source_checks": [
+        "full_primary_role_text"
+      ],
+      "ordinary_literal_checker_still_accepts_changed_records": true
+    },
+    {
+      "case": "legend_promoted_to_definition_while_objective_count_and_code_stay_same",
+      "blocked_by_primary_oracle": true,
+      "source_checks": [
+        "physical_objective_anchor_multiset",
+        "unique_primary_owner"
+      ],
+      "ordinary_literal_checker_still_accepts_changed_records": true
+    },
+    {
+      "case": "secondary_quote_real_on_page_but_bbox_points_to_blank_age_cell",
+      "blocked_by_primary_oracle": true,
+      "source_checks": [
+        "secondary_bbox_not_primary"
+      ],
+      "ordinary_literal_checker_still_accepts_changed_records": true
+    }
+  ],
+  "passed": true,
+  "candidate_written": false,
+  "MF_DB_core_written": false,
+  "human_pedagogical_review": false
+}

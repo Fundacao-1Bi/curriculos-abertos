@@ -1,0 +1,70 @@
+{
+  "at": "2026-10-28T21:56:24.738948+00:00",
+  "actor_type": "automated",
+  "source_id": "rn-referencial-em",
+  "artifact_sha256": "5f894abaa0309169597c7c9b7841aebaa9faaeb45e4cb759e5058b359e2ed845",
+  "private_candidate_sha256": "505ef93e5f24f36d0d03c537f5dcfea5823be56df4c5d3bbe83432cdc69a3050",
+  "checks": [
+    {
+      "name": "canonical_word_corruption",
+      "rejected": true,
+      "gate": "production evidence_check"
+    },
+    {
+      "name": "forged_local_identifier",
+      "rejected": true,
+      "gate": "production evidence_check"
+    },
+    {
+      "name": "false_artifact_pin",
+      "rejected": true,
+      "gate": "production evidence_check"
+    },
+    {
+      "name": "false_source_identity",
+      "rejected": true,
+      "gate": "production evidence_check"
+    },
+    {
+      "name": "unrelated_physical_box",
+      "rejected": true,
+      "gate": "production evidence_check"
+    },
+    {
+      "name": "dropped_real_continuation_with_consistent_shortened_body",
+      "production_literal_alone_accepts": true,
+      "rejected": true,
+      "gate": "source-only primary-slot/prose-fragment inventory",
+      "removed_source_page": 211
+    },
+    {
+      "name": "missing_structural_parent",
+      "rejected": true,
+      "gate": "original source inventory/structure/unknown-position guard"
+    },
+    {
+      "name": "invented_grade",
+      "rejected": true,
+      "gate": "original source inventory/structure/unknown-position guard"
+    },
+    {
+      "name": "invented_period",
+      "rejected": true,
+      "gate": "original source inventory/structure/unknown-position guard"
+    },
+    {
+      "name": "omitted_primary_slot",
+      "rejected": true,
+      "gate": "original source inventory/structure/unknown-position guard"
+    },
+    {
+      "name": "invented_history_sequence_gap",
+      "rejected": true,
+      "gate": "original source inventory/structure/unknown-position guard"
+    }
+  ],
+  "negative_controls_passed": 11,
+  "Source_cache_runtime_modified": false,
+  "whole_source_reconciled": false,
+  "UF_ready": false
+}

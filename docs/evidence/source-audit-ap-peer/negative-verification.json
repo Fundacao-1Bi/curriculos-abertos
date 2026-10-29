@@ -1,0 +1,64 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex-independent-ap-peer",
+  "generated_at": "2026-10-28T17:00:40.850385+00:00",
+  "artifact_sha256": "23c42348e0b0e00d4135a108366141a257bec54b7b1bff79e521c822d9903f89",
+  "adapter_sha256": "98ea0d2503f69bfd0ab488ebb87a1b606a21e39987bc51294b317dabbe814bdf",
+  "positive_controls": {
+    "expected_physical_parent_code": "EI01EO01",
+    "one_native_bullet_per_experience": 465,
+    "original_common_checker_passed": true,
+    "specific_micro_header_in_own_column": true
+  },
+  "negative_cases": [
+    {
+      "case": "wrong_parent_and_internal_code_changed_consistently",
+      "blocked": true,
+      "reason": "Internal parent fields agree with each other but disagree with primary objective column"
+    },
+    {
+      "case": "micro_age_swapped_to_real_other_column_with_valid_limits_and_evidence",
+      "blocked": true,
+      "reason": "Real other-column numeric header cannot justify the original experience column"
+    },
+    {
+      "case": "numeric_limit_changed_without_primary_header",
+      "blocked": true,
+      "reason": "Literal primary header 0 A 1 ANO documents 0..12 months"
+    },
+    {
+      "case": "bare_macro_label_cannot_justify_inferred_numeric_interval",
+      "blocked": true,
+      "reason": "No numeric micro-header string remains; no interval is inferred from the word BEBÊS"
+    },
+    {
+      "case": "last_experience_removed",
+      "blocked": true,
+      "reason": "One frozen native bullet loses its owner"
+    },
+    {
+      "case": "duplicate_experience_hides_missing_record_with_same_count",
+      "blocked": true,
+      "reason": "Count remains465 but one physical glyph is duplicated and another missing"
+    },
+    {
+      "case": "invented_canonical_word",
+      "blocked": true,
+      "reason": "Common production literal checker rejects changed target wording"
+    },
+    {
+      "case": "invented_code",
+      "blocked": true,
+      "reason": "No primary code or matching code locator exists"
+    },
+    {
+      "case": "last_word_of_continuation_removed",
+      "blocked": true,
+      "reason": "Joined full target differs from incomplete current primary fragment"
+    }
+  ],
+  "passed": true,
+  "adapter_written": false,
+  "publication_modified": false,
+  "human_pedagogical_review_claimed": false
+}

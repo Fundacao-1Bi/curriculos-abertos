@@ -1,0 +1,83 @@
+
+Running 2 tests using 1 worker
+
+(node:35593) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › tests/product.spec.ts:7:1 › consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade (9.1s)
+(node:35685) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [mobile] › tests/product.spec.ts:7:1 › consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade (1.0m)
+
+
+  1) [desktop] › tests/product.spec.ts:7:1 › consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('h1')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('h1') with timeout 5000ms
+      - waiting for locator('h1')
+
+
+      17 |  const searchUrl=page.url();await page.locator('.learning-list a').first().click();
+      18 |  await expect(page).toHaveURL(/\/aprendizagens\//);
+    > 19 |  await expect(page.locator('h1')).toBeVisible();await expect(page.getByText(item.text,{exact:false}).first()).toBeVisible();
+         |                                   ^
+      20 |  await page.goBack();await expect(page).toHaveURL(searchUrl);
+      21 |  await page.goto('/fontes?publication='+encodeURIComponent(found.publication));await expect(page.locator('main')).toContainText(/Fonte|fonte/);
+      22 |  await page.goto('/comparar?uf=SP&publication='+encodeURIComponent(found.publication));
+        at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:19:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [mobile] › tests/product.spec.ts:7:1 › consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade 
+
+    Test timeout of 60000ms exceeded.
+
+    Error: locator.selectOption: Test timeout of 60000ms exceeded.
+    Call log:
+      - waiting for getByLabel('UF 1', { exact: true })
+
+
+      22 |  await page.goto('/comparar?uf=SP&publication='+encodeURIComponent(found.publication));
+      23 |  await expect(page.locator('h1')).toBeVisible();
+    > 24 |  await page.getByLabel('UF 1',{exact:true}).selectOption('SP');
+         |                                             ^
+      25 |  await page.getByLabel('UF 2',{exact:true}).selectOption('MG');
+      26 |  await page.getByRole('button',{name:/Comparar currículos/}).click();
+      27 |  await expect(page.locator('.compare-column')).toHaveCount(2);
+        at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:24:45
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [desktop] › tests/product.spec.ts:7:1 › consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade 
+    [mobile] › tests/product.spec.ts:7:1 › consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade 

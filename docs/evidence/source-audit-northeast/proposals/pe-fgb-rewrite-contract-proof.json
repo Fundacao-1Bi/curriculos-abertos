@@ -1,0 +1,72 @@
+{
+  "at": "2026-10-28T16:27:17.210754+00:00",
+  "actor_type": "automated",
+  "module_path": "pipeline/pe_fgb_document_roles.py",
+  "module_sha256": "7f536ea2114968fe1211b7b3c7195aad52a05c6fc29edd806611c639486c2aca",
+  "scope": "Actual native source cells through rewrite_page and real finalize_items on six independently selected year/trimester regression pages; no cache or PDF writes.",
+  "cases": [
+    {
+      "source_id": "pe-fgb-trimestral-matematica-c6335b8d",
+      "page": 3,
+      "expected_year": 1,
+      "expected_trimester": 1,
+      "primary_cells_checked": 2,
+      "national_primary_cells_checked": 1,
+      "reference_records": 1,
+      "errors": []
+    },
+    {
+      "source_id": "pe-fgb-trimestral-educacao-fisica-d997d37c",
+      "page": 3,
+      "expected_year": 1,
+      "expected_trimester": 1,
+      "primary_cells_checked": 4,
+      "national_primary_cells_checked": 2,
+      "reference_records": 0,
+      "errors": []
+    },
+    {
+      "source_id": "pe-fgb-trimestral-educacao-fisica-d997d37c",
+      "page": 24,
+      "expected_year": null,
+      "expected_trimester": 2,
+      "primary_cells_checked": 4,
+      "national_primary_cells_checked": 2,
+      "reference_records": 0,
+      "errors": []
+    },
+    {
+      "source_id": "pe-fgb-trimestral-educacao-fisica-d997d37c",
+      "page": 37,
+      "expected_year": 3,
+      "expected_trimester": 1,
+      "primary_cells_checked": 2,
+      "national_primary_cells_checked": 1,
+      "reference_records": 0,
+      "errors": []
+    },
+    {
+      "source_id": "pe-fgb-trimestral-geografia-916f592c",
+      "page": 15,
+      "expected_year": 2,
+      "expected_trimester": 1,
+      "primary_cells_checked": 2,
+      "national_primary_cells_checked": 1,
+      "reference_records": 1,
+      "errors": []
+    },
+    {
+      "source_id": "pe-fgb-trimestral-geografia-916f592c",
+      "page": 26,
+      "expected_year": null,
+      "expected_trimester": 1,
+      "primary_cells_checked": 2,
+      "national_primary_cells_checked": 1,
+      "reference_records": 1,
+      "errors": []
+    }
+  ],
+  "fabricated_heading_override_rejected": true,
+  "errors": 0,
+  "limits": "Not full-source learning reconciliation or uncoded hierarchy completion."
+}

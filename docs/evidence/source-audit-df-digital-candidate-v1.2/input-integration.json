@@ -1,0 +1,54 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:data_central_south",
+  "at": "2026-10-28T18:13:32.107935+00:00",
+  "authorization": "ParentRoot and pipeline owner released input window after FULL4; core remains frozen.",
+  "old_manifest_sha256": "9b4875d401cd7bd57f810d50ab2565bd49f82662713d916fc5aa49698c5cad64",
+  "new_manifest_sha256": "60a065ed86628a3d585a9a51757e6dc6302d16d67b257eec917e934bd374becf",
+  "changes": [
+    {
+      "source_id": "df-competencias-digitais-vol2",
+      "before_fields": {
+        "uncoded_items_path": "data/manifests/uncoded/df-digital-complete-context-df-competencias-digitais-vol2.json",
+        "reconciled": false,
+        "inventory_status": "all_native_pages_context_and_graphic_cover_verified_independent_organizer_id_union_pending",
+        "native_text_order": "glyph_cluster_stream"
+      },
+      "after_fields": {
+        "uncoded_items_path": "data/manifests/uncoded/df-digital-complete-context-df-competencias-digitais-vol2.json",
+        "reconciled": true,
+        "inventory_status": "whole_source_v2_independent_original_pages_context_objective_partition_verified",
+        "native_text_order": "glyph_cluster_stream"
+      },
+      "old_adapter_sha256": "f40c428c23f93e11b386524b64e14ca05657647744889505157d6f623caae04a",
+      "new_adapter_sha256": "f40c428c23f93e11b386524b64e14ca05657647744889505157d6f623caae04a",
+      "receipt_path": "data/manifests/reconciliation/df-competencias-digitais-vol2.json",
+      "receipt_sha256": "232a6d42d68788181d4925a9a18c3985662eff780318b3f2eac32e906eab2347",
+      "verified_records": 626
+    },
+    {
+      "source_id": "df-competencias-digitais-vol3",
+      "before_fields": {
+        "uncoded_items_path": "data/manifests/uncoded/df-digital-complete-context-df-competencias-digitais-vol3.json",
+        "reconciled": false,
+        "inventory_status": "all_native_pages_context_and_graphic_cover_verified_independent_organizer_id_union_pending",
+        "native_text_order": "glyph_cluster_stream"
+      },
+      "after_fields": {
+        "uncoded_items_path": "data/manifests/uncoded/df-digital-complete-context-v1.2-candidate-df-competencias-digitais-vol3.json",
+        "reconciled": true,
+        "inventory_status": "whole_source_v2_independent_original_pages_context_objective_partition_verified",
+        "native_text_order": "glyph_cluster_stream"
+      },
+      "old_adapter_sha256": "75a37ea54a1f1cd524ebb9ca9cd99b41dba16311e2d29c4a53910696f939d6ce",
+      "new_adapter_sha256": "e6a42d4cea4be93a3cff2469f5055c8881272411f45daa258916d57a4e0c2845",
+      "receipt_path": "data/manifests/reconciliation/df-competencias-digitais-vol3.json",
+      "receipt_sha256": "ebffa7acaf0c7d5dddf98644aeacae22c2753260a9292bf13db8866f957b1283",
+      "verified_records": 1321
+    }
+  ],
+  "extraction_correction": "Solar nominal continuation merged into Localizar...;1563unaffected objects preserved exactly; first ID retained; false second superseded. No normative edition change or automatic curricular equivalence.",
+  "supersession_path": "docs/evidence/source-audit-df-digital-candidate-v1.2/granularity-correction.json",
+  "national_refresh_and_published_corpus_verification_pending": true,
+  "uf_ready": false
+}

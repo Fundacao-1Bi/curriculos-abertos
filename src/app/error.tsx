@@ -1,0 +1,2 @@
+'use client';
+export default function ErrorPage({reset}:{error:Error&{digest?:string};reset:()=>void}){return <div className="error-message" role="alert"><span className="eyebrow">Consulta temporariamente indisponível</span><h2>Não foi possível carregar esta consulta.</h2><p>Os dados da publicação não puderam ser acessados agora. Tente novamente em instantes. Uma falha de acesso não significa ausência de conteúdo curricular.</p><button onClick={reset}>Tentar novamente ↗</button></div>}

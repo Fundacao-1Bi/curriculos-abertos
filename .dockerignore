@@ -1,0 +1,25 @@
+node_modules
+.next
+.git
+.env*
+!.env.example
+.venv
+.venv-*
+var
+data/raw
+data/extracted
+# Runtime artifacts remain on the host and are mounted by both Compose services.
+data/bundles
+test-results
+playwright-report
+*.tsbuildinfo
+
+**/__pycache__
+*.pyc
+
+.playwright-cli
+output
+.DS_Store
+
+# Primary-source page images stay local; inventory hashes are versioned.
+docs/evidence/source-audit-*/**/*.png

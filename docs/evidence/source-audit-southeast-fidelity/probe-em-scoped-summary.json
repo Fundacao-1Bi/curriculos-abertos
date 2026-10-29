@@ -1,0 +1,748 @@
+{
+  "actor_type": "automated",
+  "actor_id": "pr_adapter:es-full-isolated-import",
+  "parser_fingerprint": {
+    "algorithm": "sha256-of-sorted-parser-file-digests",
+    "sha256": "4b85e2bd0e0d5c125d56549ad84eeb49e4f5b53ca403f684094ef7fd8fbcff78",
+    "files": {
+      "ingest.py": "55c6eb9a535a9c152d058cad5b3847ab4ac2623b46db1c2a2e138fac80b660fc",
+      "geometry.py": "581d2044427ee7232ddd0326e706e773b278d3b80cccf7a3d508726cab3a414a",
+      "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
+      "es_ei_rows.py": "37f73cc3140e9ce2b696f7f6e8df5d7c0e299a3d71630fc23b7610f8178c1f72",
+      "ms_glyphs.py": "b763a98f2c3691d05bdfbdf506804982bfdb37ef807a5fe8a7b7b85a043d21f1",
+      "ne_geometry.py": "d8c9f4ccd8349099804ddaa219d83c668134661198cc1622f565f9b77c669154",
+      "am_ocr_grid.py": "cbfc9d972605897ef3d3c46bb31535426fb71bb10393b707b20024445858fd58",
+      "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
+      "rs_ms_geometry.py": "79fe7e2409da97ca19c263bf7bd58567ce20c8dcea63a0803be316b20db88a4f",
+      "runtime.py": "872329c4965d0a043cc256a3a5bd46912c7f4aab54f0a28da048eea9989c6699"
+    }
+  },
+  "extraction_revision": "page-cell-v1.4.0",
+  "pipeline_module_sha256": "55c6eb9a535a9c152d058cad5b3847ab4ac2623b46db1c2a2e138fac80b660fc",
+  "sources": [
+    {
+      "source_id": "es-em-l-ngua-portuguesa",
+      "artifact_sha256": "b3405b1e5ffeb82df9d2817e86e8949199c3ae14c9cd59daf69b69bac48773d8",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/a79c09f87faf4dbc99fd3907be24a72d3c08e3a6012115a4932caa259d00a2ef/b3405b1e5ffeb82df9d2817e86e8949199c3ae14c9cd59daf69b69bac48773d8.json",
+      "candidate_sha256": "b8c4c65c8bc9a7f2733b9da600cc0d8b461000a2830026ea2355a9fda6469a0d",
+      "coded_items": 7,
+      "coded_fragments": 14,
+      "literal_failed_items": [],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [],
+      "production_cache_before_sha256": "71199ef555fb53d23e0ba39a585af005bdf2db37fe16dd9a61b2d779ab57827b",
+      "production_cache_after_sha256": "71199ef555fb53d23e0ba39a585af005bdf2db37fe16dd9a61b2d779ab57827b",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 182,
+      "independent_inventory_code_cells": 187,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-em-ci-ncias-da-natureza",
+      "artifact_sha256": "ed9771b0dd051602a41e3706f3453a6301f8c48fd20911b9b821e96256daa1ac",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/a79c09f87faf4dbc99fd3907be24a72d3c08e3a6012115a4932caa259d00a2ef/ed9771b0dd051602a41e3706f3453a6301f8c48fd20911b9b821e96256daa1ac.json",
+      "candidate_sha256": "102e088b2bd1c781d3a52d1c7550707bf182dd66608456b8d3d2c0e0fd2903e2",
+      "coded_items": 2,
+      "coded_fragments": 3,
+      "literal_failed_items": [],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [],
+      "production_cache_before_sha256": "8b6c33d4e1e438d032f354f4309b7a32b89fafcb08f879012e9cc046c9aab1cd",
+      "production_cache_after_sha256": "8b6c33d4e1e438d032f354f4309b7a32b89fafcb08f879012e9cc046c9aab1cd",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 130,
+      "independent_inventory_code_cells": 130,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-em-ci-ncias-humanas",
+      "artifact_sha256": "de0a2853b8ff2346830f9f1b0f29616912ca7ac4237b6ce050f91781afb486f6",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/a79c09f87faf4dbc99fd3907be24a72d3c08e3a6012115a4932caa259d00a2ef/de0a2853b8ff2346830f9f1b0f29616912ca7ac4237b6ce050f91781afb486f6.json",
+      "candidate_sha256": "d849847657c607588d78308b37592752cbfabe01368d648f47b8c4b99a687d40",
+      "coded_items": 5,
+      "coded_fragments": 5,
+      "literal_failed_items": [],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [
+        {
+          "code": "EM13CHS210GEO/ES",
+          "page": 35,
+          "locator": "table:0/column:228.1-327.4/anchor:3",
+          "old": [
+            "EM13CHS2016GEO/E S"
+          ],
+          "new": []
+        }
+      ],
+      "production_cache_before_sha256": "a7a1c48d68c2d489fa3169fb7d6e42037d2f2c44ffc928fad8d0763b9cf7f374",
+      "production_cache_after_sha256": "a7a1c48d68c2d489fa3169fb7d6e42037d2f2c44ffc928fad8d0763b9cf7f374",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 148,
+      "independent_inventory_code_cells": 148,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-ifa-lingchsa-6-1",
+      "artifact_sha256": "d5ac69230fe71ac97de5c6fe0953a6a627da35bb3348fe1738c907c4ed3161cf",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/a79c09f87faf4dbc99fd3907be24a72d3c08e3a6012115a4932caa259d00a2ef/d5ac69230fe71ac97de5c6fe0953a6a627da35bb3348fe1738c907c4ed3161cf.json",
+      "candidate_sha256": "535373692e631d8ba23e0742071d3ab1e8cf1e9a206c1f9dc5f0296a366def09",
+      "coded_items": 19,
+      "coded_fragments": 19,
+      "literal_failed_items": [
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:621e22129376c8698139",
+          "code": "EMIFALGG102",
+          "page": 54,
+          "locator": "table:0/column:229.9-339.4/anchor:1",
+          "text": "e Planejamento de planejamento de diferentes mídias, Contexto participação Competência 3, Relação entre linguísticos e Competência 5, Morfossintaxe e Conteúdos gramaticais Advérbios - Expressões - Verbos - (TI06) Educação em (TI07) Educação (TI12) Trabalho, (TI14) Trabalho e",
+          "evidence": [
+            {
+              "source_id": "es-ifa-lingchsa-6-1",
+              "page": 54,
+              "printed_page": null,
+              "section": null,
+              "excerpt": "e Planejamento de planejamento de diferentes mídias, Contexto participação Competência 3, Relação entre linguísticos e Competência 5, Morfossintaxe e Conteúdos gramaticais Advérbios - Expressões - Verbos - (TI06) Educação em (TI07) Educação (TI12) Trabalho, (TI14) Trabalho e",
+              "locator": "table:0/column:229.9-339.4/anchor:1",
+              "method": "ruled-column-continuation-recovery",
+              "bbox": [
+                229.89200668334962,
+                160.27479553222656,
+                339.4436950683594,
+                484.9080047607422
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:eb929ef6e438fd979a50",
+          "code": "EMIFALGG502",
+          "page": 54,
+          "locator": "table:0/column:681.4-774.5/anchor:4",
+          "text": "e relacionadas memórias locais provocados gif, charge e Afro-Brasileira,",
+          "evidence": [
+            {
+              "source_id": "es-ifa-lingchsa-6-1",
+              "page": 54,
+              "printed_page": null,
+              "section": null,
+              "excerpt": "e relacionadas memórias locais provocados gif, charge e Afro-Brasileira,",
+              "locator": "table:0/column:681.4-774.5/anchor:4",
+              "method": "ruled-column-continuation-recovery",
+              "bbox": [
+                681.4097290039062,
+                213.67478942871094,
+                774.5211791992188,
+                484.9080047607422
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        }
+      ],
+      "rawdict_unmatched_fragments": [
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:621e22129376c8698139",
+          "code": "EMIFALGG102",
+          "page": 54,
+          "locator": "table:0/column:229.9-339.4/anchor:1",
+          "evidence_index": 0,
+          "bbox": [
+            229.89200668334962,
+            160.27479553222656,
+            339.4436950683594,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "e Planejamento de planejamento de diferentes mídias, Contexto participação Competência 3, Relação entre linguísticos e Competência 5, Morfossintaxe e Conteúdos gramaticais Advérbios - Expressões - Verbos - (TI06) Educação em (TI07) Educação (TI12) Trabalho, (TI14) Trabalho e",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": false
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:38b80b80c85221a98803",
+          "code": "EMIFALGG501",
+          "page": 54,
+          "locator": "table:0/column:594.6-681.4/anchor:3",
+          "evidence_index": 0,
+          "bbox": [
+            594.569091796875,
+            213.67478942871094,
+            681.4097290039062,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": ", textos e práticas documentação de efeitos de sentido sociais (meme, obviamente de, sem dúvida de obrigação) e Cultura",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:eb929ef6e438fd979a50",
+          "code": "EMIFALGG502",
+          "page": 54,
+          "locator": "table:0/column:681.4-774.5/anchor:4",
+          "evidence_index": 0,
+          "bbox": [
+            681.4097290039062,
+            213.67478942871094,
+            774.5211791992188,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "e relacionadas memórias locais provocados gif, charge e Afro-Brasileira,",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": false
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:a3fb391c0f3739df4f10",
+          "code": "EMIFALGG503",
+          "page": 54,
+          "locator": "table:0/column:774.5-925.5/anchor:5",
+          "evidence_index": 0,
+          "bbox": [
+            774.5211791992188,
+            213.67478942871094,
+            925.5299987792969,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "] à defesa de direitos e à (Mapa afetivo) [Eixo IV, pelos usos de recursos HQ digitais etc.) [Eixo IV, Africana e Indígena.",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:ca2a9175cb145f0bc75c",
+          "code": "EMIFALGG303",
+          "page": 54,
+          "locator": "table:0/column:321.8-415.0/anchor:6",
+          "evidence_index": 0,
+          "bbox": [
+            321.8127746582031,
+            267.33477783203125,
+            415.0456237792969,
+            321.73480224609375
+          ],
+          "role": "text",
+          "excerpt": "e textos, multissemióticos",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:4ab2a4e1bbd26d445ae4",
+          "code": "EMIFALGG304",
+          "page": 54,
+          "locator": "table:0/column:415.0-925.5/anchor:7",
+          "evidence_index": 0,
+          "bbox": [
+            415.0456237792969,
+            267.33477783203125,
+            925.5299987792969,
+            321.73480224609375
+          ],
+          "role": "text",
+          "excerpt": "] reconstrução da textualidade e efeitos de sentido provocados pelos usos de recursos - Linguagem digital e redes sociais (meme, gif, charge e HQ digitais etc.) [Eixo IV,",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:93d2d74bcb85e35c3d60",
+          "code": "EMIFALGG501",
+          "page": 54,
+          "locator": "table:0/column:321.8-408.5/anchor:8",
+          "evidence_index": 0,
+          "bbox": [
+            321.8127746582031,
+            320.73480224609375,
+            408.5430603027344,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": ", e elementos gramaticais da persuasão de dúvida: de modais: poder, em Direitos para as Relações Ciência e e Relações de",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:a516a86c4c8a4da2ddaa",
+          "code": "EMIFALGG502",
+          "page": 54,
+          "locator": "table:0/column:408.5-501.8/anchor:9",
+          "evidence_index": 0,
+          "bbox": [
+            408.5430603027344,
+            320.73480224609375,
+            501.7759094238281,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "e notacionais da talvez, provavelmente, probabilidade: é possível dever, ter que Humanos. Étnico-Raciais Tecnologia. Poder.",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:f00cecd45c2d7882fbb4",
+          "code": "EMIFALGG503",
+          "page": 54,
+          "locator": "table:0/column:501.8-925.5/anchor:10",
+          "evidence_index": 0,
+          "bbox": [
+            501.7759094238281,
+            320.73480224609375,
+            925.5299987792969,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "] escrita: certamente, obviamente que, há chances de, sem dúvida (diferentes graus de obrigação) e Ensino de História e Cultura Afro-Brasileira, Africana e Indígena.",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        }
+      ],
+      "trace_unmatched_fragments": [
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:621e22129376c8698139",
+          "code": "EMIFALGG102",
+          "page": 54,
+          "locator": "table:0/column:229.9-339.4/anchor:1",
+          "evidence_index": 0,
+          "bbox": [
+            229.89200668334962,
+            160.27479553222656,
+            339.4436950683594,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "e Planejamento de planejamento de diferentes mídias, Contexto participação Competência 3, Relação entre linguísticos e Competência 5, Morfossintaxe e Conteúdos gramaticais Advérbios - Expressões - Verbos - (TI06) Educação em (TI07) Educação (TI12) Trabalho, (TI14) Trabalho e",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": false
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:38b80b80c85221a98803",
+          "code": "EMIFALGG501",
+          "page": 54,
+          "locator": "table:0/column:594.6-681.4/anchor:3",
+          "evidence_index": 0,
+          "bbox": [
+            594.569091796875,
+            213.67478942871094,
+            681.4097290039062,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": ", textos e práticas documentação de efeitos de sentido sociais (meme, obviamente de, sem dúvida de obrigação) e Cultura",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:eb929ef6e438fd979a50",
+          "code": "EMIFALGG502",
+          "page": 54,
+          "locator": "table:0/column:681.4-774.5/anchor:4",
+          "evidence_index": 0,
+          "bbox": [
+            681.4097290039062,
+            213.67478942871094,
+            774.5211791992188,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "e relacionadas memórias locais provocados gif, charge e Afro-Brasileira,",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": false
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:a3fb391c0f3739df4f10",
+          "code": "EMIFALGG503",
+          "page": 54,
+          "locator": "table:0/column:774.5-925.5/anchor:5",
+          "evidence_index": 0,
+          "bbox": [
+            774.5211791992188,
+            213.67478942871094,
+            925.5299987792969,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "] à defesa de direitos e à (Mapa afetivo) [Eixo IV, pelos usos de recursos HQ digitais etc.) [Eixo IV, Africana e Indígena.",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:ca2a9175cb145f0bc75c",
+          "code": "EMIFALGG303",
+          "page": 54,
+          "locator": "table:0/column:321.8-415.0/anchor:6",
+          "evidence_index": 0,
+          "bbox": [
+            321.8127746582031,
+            267.33477783203125,
+            415.0456237792969,
+            321.73480224609375
+          ],
+          "role": "text",
+          "excerpt": "e textos, multissemióticos",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:4ab2a4e1bbd26d445ae4",
+          "code": "EMIFALGG304",
+          "page": 54,
+          "locator": "table:0/column:415.0-925.5/anchor:7",
+          "evidence_index": 0,
+          "bbox": [
+            415.0456237792969,
+            267.33477783203125,
+            925.5299987792969,
+            321.73480224609375
+          ],
+          "role": "text",
+          "excerpt": "] reconstrução da textualidade e efeitos de sentido provocados pelos usos de recursos - Linguagem digital e redes sociais (meme, gif, charge e HQ digitais etc.) [Eixo IV,",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:93d2d74bcb85e35c3d60",
+          "code": "EMIFALGG501",
+          "page": 54,
+          "locator": "table:0/column:321.8-408.5/anchor:8",
+          "evidence_index": 0,
+          "bbox": [
+            321.8127746582031,
+            320.73480224609375,
+            408.5430603027344,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": ", e elementos gramaticais da persuasão de dúvida: de modais: poder, em Direitos para as Relações Ciência e e Relações de",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:a516a86c4c8a4da2ddaa",
+          "code": "EMIFALGG502",
+          "page": 54,
+          "locator": "table:0/column:408.5-501.8/anchor:9",
+          "evidence_index": 0,
+          "bbox": [
+            408.5430603027344,
+            320.73480224609375,
+            501.7759094238281,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "e notacionais da talvez, provavelmente, probabilidade: é possível dever, ter que Humanos. Étnico-Raciais Tecnologia. Poder.",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:f00cecd45c2d7882fbb4",
+          "code": "EMIFALGG503",
+          "page": 54,
+          "locator": "table:0/column:501.8-925.5/anchor:10",
+          "evidence_index": 0,
+          "bbox": [
+            501.7759094238281,
+            320.73480224609375,
+            925.5299987792969,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "] escrita: certamente, obviamente que, há chances de, sem dúvida (diferentes graus de obrigação) e Ensino de História e Cultura Afro-Brasileira, Africana e Indígena.",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        }
+      ],
+      "canonical_changes_against_old_cache": [
+        {
+          "code": "EMIFALGG102",
+          "page": 54,
+          "locator": "table:0/column:229.9-339.4/anchor:1",
+          "old": [
+            "e Planejamento de planejamento de diferentes mídias, Contexto participação Competência 3, Relação entre linguísticos e Competência 5, Morfossintaxe e Conteúdos gramaticais Advérbios - - Expressões - Verbos (TI06) Educação em (TI07) Educação (TI12) Trabalho, (TI14) Trabalho e"
+          ],
+          "new": [
+            "e Planejamento de planejamento de diferentes mídias, Contexto participação Competência 3, Relação entre linguísticos e Competência 5, Morfossintaxe e Conteúdos gramaticais Advérbios - Expressões - Verbos - (TI06) Educação em (TI07) Educação (TI12) Trabalho, (TI14) Trabalho e"
+          ]
+        }
+      ],
+      "production_cache_before_sha256": "02a9e61feeefd312b20747560c0098bf630dae674882786516cca1d3e7b23cf6",
+      "production_cache_after_sha256": "02a9e61feeefd312b20747560c0098bf630dae674882786516cca1d3e7b23cf6",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 152,
+      "independent_inventory_code_cells": 51,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-curriculoem-aprofundamento-da-area-de-chsa",
+      "artifact_sha256": "a5f9bc957d202514209462c4f8a76e1b3b3270fe9818d01fadd7cc09c827de80",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/a79c09f87faf4dbc99fd3907be24a72d3c08e3a6012115a4932caa259d00a2ef/a5f9bc957d202514209462c4f8a76e1b3b3270fe9818d01fadd7cc09c827de80.json",
+      "candidate_sha256": "d4fcaf739a873a0c22abac17f620b3e5af6a5b72a059ea28df5ca5408201c998",
+      "coded_items": 32,
+      "coded_fragments": 32,
+      "literal_failed_items": [
+        {
+          "id": "ca:es-curriculoem-aprofundamento-da-area-de-chsa:2a20a4de4a21d03b9cc3",
+          "code": "EMIFCHSA03",
+          "page": 35,
+          "locator": "table:0/row:1/cell:0",
+          "text": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de campo, experimental etc.) em fontes confiáveis, informações sobre temas e processos de natureza histórica, social, econômica filosófica, política e/ou cultural, em âmbito local, regional, nacional e/ou global, identificando os diversos pontos de vista e posicionando-se mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+          "evidence": [
+            {
+              "source_id": "es-curriculoem-aprofundamento-da-area-de-chsa",
+              "page": 35,
+              "printed_page": null,
+              "section": "Tabela 1, linha 2",
+              "excerpt": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de campo, experimental etc.) em fontes confiáveis, informações sobre temas e processos de natureza histórica, social, econômica filosófica, política e/ou cultural, em âmbito local, regional, nacional e/ou global, identificando os diversos pontos de vista e posicionando-se mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+              "locator": "table:0/row:1/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                56.99127388000488,
+                117.86119384765625,
+                538.689980246804,
+                276.6099853515625
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        }
+      ],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [],
+      "production_cache_before_sha256": "0dc889ed94fa36ad5a41a014a5f5fc04a2c72e1ed5c58e889c6f908e6d1a7a71",
+      "production_cache_after_sha256": "0dc889ed94fa36ad5a41a014a5f5fc04a2c72e1ed5c58e889c6f908e6d1a7a71",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 236,
+      "independent_inventory_code_cells": 125,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22",
+      "artifact_sha256": "23223e7993fd20bf59642c94a5503e909b311aec739255dcf4d362ea21edf6f1",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/a79c09f87faf4dbc99fd3907be24a72d3c08e3a6012115a4932caa259d00a2ef/23223e7993fd20bf59642c94a5503e909b311aec739255dcf4d362ea21edf6f1.json",
+      "candidate_sha256": "8767f37e0c8e492bb06a09c6e3cb00018c8d34fec8e9c7777e42f29a1265d1ed",
+      "coded_items": 12,
+      "coded_fragments": 12,
+      "literal_failed_items": [
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:32b71c19bb7ba7cac42b",
+          "code": "EMIFCNT05",
+          "page": 47,
+          "locator": "table:0/row:48/cell:1",
+          "text": "Selecionar e mobilizar",
+          "evidence": [
+            {
+              "source_id": "es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22",
+              "page": 47,
+              "printed_page": null,
+              "section": "Tabela 1, linha 49",
+              "excerpt": "Selecionar e mobilizar",
+              "locator": "table:0/row:48/cell:1",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                220.1954475258881,
+                565.1300048828125,
+                390.23180412523675,
+                575.68994140625
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        }
+      ],
+      "rawdict_unmatched_fragments": [
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:c448864d1747606e5124",
+          "code": "EMIFCNT02",
+          "page": 47,
+          "locator": "table:0/row:20/cell:1",
+          "evidence_index": 0,
+          "bbox": [
+            220.1954475258881,
+            269.5899658203125,
+            390.23180412523675,
+            280.14996337890625
+          ],
+          "role": "text",
+          "excerpt": "Levantar e testar hipótese s",
+          "rawdict_cluster_match": false,
+          "trace_match": true,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:c163105c2db6a77f9c2e",
+          "code": "EMIFCNT04",
+          "page": 47,
+          "locator": "table:0/row:40/cell:1",
+          "evidence_index": 0,
+          "bbox": [
+            220.1954475258881,
+            480.6199951171875,
+            390.23180412523675,
+            491.17999267578125
+          ],
+          "role": "text",
+          "excerpt": "Reconhecer produtos e/o u",
+          "rawdict_cluster_match": false,
+          "trace_match": true,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:32b71c19bb7ba7cac42b",
+          "code": "EMIFCNT05",
+          "page": 47,
+          "locator": "table:0/row:48/cell:1",
+          "evidence_index": 0,
+          "bbox": [
+            220.1954475258881,
+            565.1300048828125,
+            390.23180412523675,
+            575.68994140625
+          ],
+          "role": "text",
+          "excerpt": "Selecionar e mobilizar",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": false
+        }
+      ],
+      "trace_unmatched_fragments": [
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:32b71c19bb7ba7cac42b",
+          "code": "EMIFCNT05",
+          "page": 47,
+          "locator": "table:0/row:48/cell:1",
+          "evidence_index": 0,
+          "bbox": [
+            220.1954475258881,
+            565.1300048828125,
+            390.23180412523675,
+            575.68994140625
+          ],
+          "role": "text",
+          "excerpt": "Selecionar e mobilizar",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": false
+        }
+      ],
+      "canonical_changes_against_old_cache": [],
+      "production_cache_before_sha256": "3b7491f52f7dcd9c7c7fd3f6675213ac56a0e1a127c5693345d6f2a3f3986e8f",
+      "production_cache_after_sha256": "3b7491f52f7dcd9c7c7fd3f6675213ac56a0e1a127c5693345d6f2a3f3986e8f",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 462,
+      "independent_inventory_code_cells": 354,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-curriculo-em-aprofundamento-entreareas-chsa-e-cn-alterado-20-04-22",
+      "artifact_sha256": "0abd9718b7b02fd6b5e49e5f0e722a7eb4af8f18872c3caa4a652daca3c1a662",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/a79c09f87faf4dbc99fd3907be24a72d3c08e3a6012115a4932caa259d00a2ef/0abd9718b7b02fd6b5e49e5f0e722a7eb4af8f18872c3caa4a652daca3c1a662.json",
+      "candidate_sha256": "85d2bce04286b68471cda18b7fe9caab8dcc404d2a73453b58cf8af5be364515",
+      "coded_items": 26,
+      "coded_fragments": 26,
+      "literal_failed_items": [
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-chsa-e-cn-alterado-20-04-22:ac7b7f89139e4ec92b54",
+          "code": "EMIFCHSA03",
+          "page": 31,
+          "locator": "table:0/row:1/cell:0",
+          "text": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de campo experimental etc.) em fontes confiáveis, informações sobre temas e processos de natureza histórica, social, econômica filosófica, política e/ou cultural, em âmbito local, regional, nacional e/ou global, identificando os diversos pontos de vista e posicionando-se mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+          "evidence": [
+            {
+              "source_id": "es-curriculo-em-aprofundamento-entreareas-chsa-e-cn-alterado-20-04-22",
+              "page": 31,
+              "printed_page": null,
+              "section": "Tabela 1, linha 2",
+              "excerpt": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de campo experimental etc.) em fontes confiáveis, informações sobre temas e processos de natureza histórica, social, econômica filosófica, política e/ou cultural, em âmbito local, regional, nacional e/ou global, identificando os diversos pontos de vista e posicionando-se mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+              "locator": "table:0/row:1/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                56.99127388000488,
+                103.6999755859375,
+                538.689980246804,
+                262.6899871826172
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        }
+      ],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [],
+      "production_cache_before_sha256": "a7a8510bbd434f3068224da66bd4d70b829bad13be91d4cd7bff7989f4234f38",
+      "production_cache_after_sha256": "a7a8510bbd434f3068224da66bd4d70b829bad13be91d4cd7bff7989f4234f38",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 313,
+      "independent_inventory_code_cells": 168,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    }
+  ],
+  "human_review": false,
+  "production_files_modified": false,
+  "native_only_ocr_skipped": true
+}

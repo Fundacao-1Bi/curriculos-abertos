@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-10-28T20:39:42.868Z",
+  "base_publication": "ca-7d302a9c674a97b83278",
+  "base_sha256": "be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d",
+  "scanner_sha256": "8c49eb4a0ed825139d747ea5ddc5f3681c0760bb5477c0692038ae3e86678ea2",
+  "snapshot_sha256": "0ded6507dce2e9700f6c0d80fcec36d6ee40091102deff432475fa7b915642c7",
+  "files": {
+    "src/domain/publication.ts": "238b1716025240797583cc1000aeb0856b5e0c59f2e87d74679dc9cd74d7d0ec",
+    "src/domain/shards.ts": "b6ec62cc12c3dad42c665821d7d80a1547d98c0308ec0cd2aab618f99e894dd5",
+    "src/domain/record-contract.ts": "a550ae86cb66680b2da2fd72c1c32939684b50b71db40a1575861a01f1986dff",
+    "src/domain/age.ts": "c071fbf571cd42e4510d2b8370ac8377b1113874f9b65cea828908769aabf8c7",
+    "src/domain/schema-pin.ts": "cf45b4eda99d5f071e7bc14b10f76d104ddb623333238bbbbf202efbe3fdd38d",
+    "src/domain/errors.ts": "f6d9311cd12fb445441e0967fc22701fac6c6205cc2f8e269c8fe87807b7e34c",
+    "src/domain/normalize.ts": "7f003b572506a83c629d67a5be0d72774e1908ea6145a5e05b41daf42f5c71dd",
+    "src/domain/visibility.ts": "185406b431b6517bc170b4854a120fca03c39e51fd1b3f84aee83e8aeb9e4f4b",
+    "src/domain/bundle-file.ts": "8abb9b4821443c167c07dd4ee8a72836f49630b83899402ca5fcaf950c6a518a",
+    "src/db/client.ts": "d7e7b99126c8e69cff621ca8a40e7ff638d9ec7e857a09617af1bdbd5a6e4d98",
+    "src/db/schema.ts": "6ef8cecc09fc1a5abc6fcd6ed89eab5dd2d19c5586b2f4c499e5818f453f94b9",
+    "src/shared/contracts.ts": "0b42791386e7fd642d1bf0d9094ba8c615fd150df4248227341c623446a67faa"
+  },
+  "counts": {
+    "Source": 303,
+    "Learning": 200724,
+    "Relation": 57425
+  },
+  "failed": {
+    "header": 0,
+    "Source": 0,
+    "Learning": 0,
+    "Relation": 0,
+    "hierarchy": 0,
+    "whole_sharded_verifier": 0
+  },
+  "issues": 0,
+  "by_code": {},
+  "by_source": {},
+  "whole_sharded_verifier": {
+    "item_count": 200724,
+    "relation_count": 57425,
+    "source_count": 303
+  },
+  "sockets_attempted": 0,
+  "database_accessed": false,
+  "canonical_payload_modified": false,
+  "passed": true,
+  "scope": "Real domain validateBundle and relation guards on every record, original hierarchy globally, and whole real verifyShardedManifest; canonical records are not rewritten."
+}

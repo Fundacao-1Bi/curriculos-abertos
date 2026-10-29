@@ -1,0 +1,23 @@
+# Peer independente SE: campos físicos de IFA em40páginas
+
+Aceite técnico do candidato `data/manifests/uncoded/se-ifa-physical-items.json`, SHA `75b8e08eb5fb7b710ea6a1df66e504c0c3b446b9e85f7e0fb9b696a962781941`, contra o PDF primário `se-curriculo-em`, SHA `91fb4796d01e14370b67d0ca11b7069438a4127ff9c13c068ed2a6f65c3cb69b`. `receipt.json` é o recibo pinado para o vínculo seletivo. O peer não alterou manifesto, núcleo, cache, banco ou publicação.
+
+A contagem literal305foi fixada lendo somente o PDF e a lista de páginas do dono, antes de abrir o candidato, seu censo ou algoritmo. Todas as305ocorrências estavam nas colunas físicas de habilidades. O primeiro censo geométrico contou121campos usando a caixa de cada desenho. A primeira comparação mostrou uma deficiência desse censo: em quatro páginas um desenho agrupa vários retângulos `re`. A leitura direta desses itens vetoriais do PDF refinou o denominador para133células físicas de corpo. Esse refinamento posterior à comparação é explícito em `census-checkpoints.json`, com hashes dos checkpoints; não se alega que133foi fixado antes de ver o resultado. Nenhum texto esperado é obtido do candidato.
+
+O inventário final identifica133células com códigos,305ocorrências,74superfícies de cabeçalho e uma célula específica vazia na p202. As superfícies são disjuntas e seguem retângulos nativos e a ordem de pintura. Retângulos de fundo grandes podem abranger cabeçalho e várias linhas; não autorizam absorver outro bloco. O oráculo de texto lê caracteres nativos por centro do glifo dentro do campo e conserva grafia, caixa, pontuação e hífens impressos. Só normaliza espaços/quebras. Isso também exclui saliências de glifos da célula vizinha que `get_text(clip=...)` pode devolver parcialmente. O recorte privado p269confere visualmente esse limite.
+
+As continuações202/211/434usam cabeçalhos literais das páginas201/210/433, com as mesmas colunas físicas. A página202contém CG07/08/09, LGG07 e CG11/12; o campo específico de empreendedorismo vazio não ganhou aprendizagem inventada. Na p211todos os cinco corpos estão íntegros e a área desconhecida não foi inferida do prefixoLGG. Na p434todos os seis corpos CG07/08/09 e CHSA07/08/09 foram conferidos por inteiro. Na p301o documento repete CG01/02/03 nas duas colunas, inclusive na intitulada específica: conservaram-se seis ocorrências/IDs diferentes, sem deduplicar a redação ou trocar os códigos paraMAT.
+
+`verification.json` registra3.969asserções aprovadas,305/305corpos com igualdade de caracteres ao campo primário, todas as posições e cabeçalhos comprovados, literal checker/loader/finalizador reais e JSON Schema para305registros. Os cinco controles negativos bloqueiam prefixos truncados mesmo com evidência igualmente truncada e a deduplicação dos códigos nas duas colunas da p301. O `primary-field-ledger.json` mantém páginas, caixas, papéis, cabeçalhos, códigos e SHA de cada corpo. Os inventários completos maiores ficam reproduzíveis em `var/private-evidence/se-ifa-peer/`, com pins públicos. Cinco recortes primários pequenos ficam privados, sem redistribuir imagens nesta pasta.
+
+Comandos de reprodução, com saída em `var/` e sem banco/Docker/parser nacional:
+
+```sh
+var/venv-pipeline/bin/python docs/evidence/source-audit-se-ifa-peer/source-census.py
+var/venv-pipeline/bin/python docs/evidence/source-audit-se-ifa-peer/visible-cells.py
+var/venv-pipeline/bin/python docs/evidence/source-audit-se-ifa-peer/compare.py
+```
+
+Os scripts requerem PyMuPDF, jsonschema, PDF local e candidato byte idêntico em `var/ne-se-ifa-candidate/`. A variante pública tem os mesmos bytes. O loader recebe temporariamente esse path com os metadados reais da Source; isso não é prova de publicação nem de instalação. O vínculo deve limitar `coded_learning_ranges` às40páginas unitárias conferidas, preservando page-sections e demais flags nativas existentes. Importação consolidada, migração entre identidades de publicações, reconciliação da Source571p/UF e revisão pedagógica humana são etapas distintas deste aceite de texto/código/papel primário.
+
+Vínculo real conferido: `actual-binding.json` verifica a Source atual SHA68e0721b…c3d95, path público/candidato75b8…1941,40intervalos unitários exatos, flags protegidas iguais ao recibo de integração e305registros pelo loader/finalizador/hierarquia/schema reais. Esse teste não leu ou atualizou cache: o refresh de configuração e a publicação consolidada seguem como provas distintas. O recibo inicial pinado permanece imutável para a Source referenciá-lo. A varredura ampla `authority-code-scope.json` encontrou305tokens nativos EM/EF/EI com dígitos, todos correspondentes aos IFA revisados, sem outro código a ocultar nessas40páginas.

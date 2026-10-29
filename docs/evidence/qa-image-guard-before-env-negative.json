@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "completed_at": "2026-10-28T18:41:52.663417+00:00",
+  "command": [
+    "node",
+    "--import",
+    "tsx",
+    "scripts/qa-production.ts"
+  ],
+  "release_tag": "qa-absent-before-env-20261028",
+  "expected_exit_code": 1,
+  "actual_exit_code": 1,
+  "new_env_files": [],
+  "new_volumes_or_qa_services_created": false,
+  "docker_action": "image inspect nonexistent own test tag only",
+  "passed": true
+}

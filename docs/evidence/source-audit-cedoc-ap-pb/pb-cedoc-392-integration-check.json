@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-28T15:06:23.386053+00:00",
+  "actor_type": "automated",
+  "source_id": "pb-proposta-ei-ef-cedoc",
+  "artifact_sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+  "sidecar_path": "data/manifests/uncoded/pb-cedoc-392-items.json",
+  "sidecar_sha256": "4336a71d0676c2b48f1e363e06f4ef0368c0eba9e2980ff3fc3c79f2865f998b",
+  "extraction_revision": "page-cell-v1.4.0",
+  "native_cache_sha256": "ab4d3a0e6cf0d0b46f90acb33a24ef91cf9b48cf884596a185f352b356163ee8",
+  "adapter_records_loaded": 1946,
+  "coded_literal_math_records": 234,
+  "soft_formatted_code_occurrences": 37,
+  "finalized_source_records": 2478,
+  "generic_code_definition_count": 0,
+  "kinds": {
+    "direito_aprendizagem": 111,
+    "secao_normativa": 32,
+    "objetivo_aprendizagem": 1554,
+    "principio_curricular": 15,
+    "habilidade": 234
+  },
+  "check": "real loader/finalizer preserve literal text/type/position/hierarchy/source_order/soft-code proof; no generic duplicates or EM positions",
+  "manifest_mutated": false,
+  "actual_manifest_binding_matches_verified_contract": true,
+  "manifest_binding_required": true,
+  "original_manifest_flags": {
+    "include_in_corpus": true,
+    "publication_eligible": true
+  },
+  "status": "passed"
+}

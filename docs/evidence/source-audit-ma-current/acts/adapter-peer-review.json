@@ -1,0 +1,4604 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:ma_acts:independent-adapter-peer-review",
+  "at": "2026-10-28T14:55:13.619034+00:00",
+  "mode": "read_only_sidecars_and_original_pdfs",
+  "method": "Independent direct-PDF region line census, geometric line witnesses and bbox excerpt checks; no author adapter/parser or pipeline modules imported. Sidecars were inspected before this independent recomputation; independence is methodological, not a blind first-read protocol.",
+  "runtime": {
+    "python": "var/venv-pipeline/bin/python",
+    "pymupdf": "1.26.7"
+  },
+  "status": "passed",
+  "total_records": 95,
+  "total_fragments": 118,
+  "total_source_lines": 726,
+  "sources": [
+    {
+      "source_id": "ma-resolucao-211-2026-doe",
+      "pdf_sha256": "5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3",
+      "sidecar_sha256": "7e62414648b4172dcf6eae4d3f028046ab0eb0351ec93f7f28d9fe3963bfdc64",
+      "records": 19,
+      "fragments": 20,
+      "source_only_denominator": {
+        "lines": 107,
+        "regions": [
+          {
+            "page": 20,
+            "region": 0,
+            "bbox": [
+              300,
+              150,
+              556,
+              800
+            ],
+            "lines": 50,
+            "native_lines_sha256": "440b14e132b31a77494e9639f9aba0eccc9f47ce71d0d494941064a15366f4bd"
+          },
+          {
+            "page": 21,
+            "region": 0,
+            "bbox": [
+              40,
+              70,
+              295,
+              795
+            ],
+            "lines": 51,
+            "native_lines_sha256": "a79d8575538ab30663769ce2b27e1b86fa4cf33d4bc5f2f3b3bd6117b2927099"
+          },
+          {
+            "page": 21,
+            "region": 1,
+            "bbox": [
+              300,
+              70,
+              556,
+              140
+            ],
+            "lines": 6,
+            "native_lines_sha256": "260e1bfe55f0c6179dbf1bcf246da9bac6ac61f6c21f7176f211da98c605a899"
+          }
+        ],
+        "article_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "chapter_numbers": [],
+        "annex_section_numbers": [],
+        "considerandos": 8,
+        "native_lines_match_geometric_dict_lines": true
+      },
+      "all_source_lines_assigned_exactly_once": true,
+      "all_assigned_lines_geometrically_evidenced": true,
+      "missing_line_ordinals": [],
+      "duplicated_line_ordinals": [],
+      "kind_counts": {
+        "ato_normativo": 1,
+        "ementa_normativa": 1,
+        "preambulo_normativo": 1,
+        "considerando_normativo": 8,
+        "dispositivo_deliberativo": 1,
+        "artigo_normativo": 6,
+        "assinatura_normativa": 1
+      },
+      "record_checks": [
+        {
+          "key": "resolution-211",
+          "kind": "ato_normativo",
+          "parent_key": null,
+          "source_line_count": 3,
+          "text_sha256": "6dca7f9256e41997bbab36d09ebb542acbf967a4cef75d553f168caa453b1b86",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "ementa",
+          "kind": "ementa_normativa",
+          "parent_key": "resolution-211",
+          "source_line_count": 6,
+          "text_sha256": "90346bb6c6ee416f8533a8356a4bc84822051ecc5d5d5d246a151738f3648c11",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "preamble",
+          "kind": "preambulo_normativo",
+          "parent_key": "resolution-211",
+          "source_line_count": 5,
+          "text_sha256": "f4178409eeb1740e511bbf5762c4a90e370a851d0e71ca1953109eddb29c200c",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-1",
+          "kind": "considerando_normativo",
+          "parent_key": "resolution-211",
+          "source_line_count": 2,
+          "text_sha256": "056a08e9fc2b039f3e0a9db89b70bd3aacc0d621fd175fbaa813027eae3adfb3",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-2",
+          "kind": "considerando_normativo",
+          "parent_key": "resolution-211",
+          "source_line_count": 2,
+          "text_sha256": "8dfbae245c8f0ec2c0f4986b1b87391ac29074ee3652ca009e4066513fbb7a70",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-3",
+          "kind": "considerando_normativo",
+          "parent_key": "resolution-211",
+          "source_line_count": 2,
+          "text_sha256": "43684227c80b8800f51353b72e78c93e25748f852c47f32d5ebf49bbbd5be612",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-4",
+          "kind": "considerando_normativo",
+          "parent_key": "resolution-211",
+          "source_line_count": 3,
+          "text_sha256": "6ab761cbfbdc6b95efcf1bf0738e327a855e66740857a7579ee1a948d7eb0437",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-5",
+          "kind": "considerando_normativo",
+          "parent_key": "resolution-211",
+          "source_line_count": 2,
+          "text_sha256": "bc687d9d5247510be83382504fb88fe5218e040cdd224a4d64a054eb637a1c72",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-6",
+          "kind": "considerando_normativo",
+          "parent_key": "resolution-211",
+          "source_line_count": 3,
+          "text_sha256": "c8b76d0c56c356f412cb06064e8f367490520026c71a458e4809957dc4c7a5e5",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-7",
+          "kind": "considerando_normativo",
+          "parent_key": "resolution-211",
+          "source_line_count": 4,
+          "text_sha256": "7517b061dc3a45e42a98280509ab306163f3f3b60c9841f98dbea0343b3bf1cb",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-8",
+          "kind": "considerando_normativo",
+          "parent_key": "resolution-211",
+          "source_line_count": 7,
+          "text_sha256": "12ec708d9d568ef0548d32390323a68fdc341ff0d1dd15bf0322fa8b4a0c5f1f",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "resolve",
+          "kind": "dispositivo_deliberativo",
+          "parent_key": "resolution-211",
+          "source_line_count": 1,
+          "text_sha256": "22158f36212aecb73e3fb2f2ccb7f87aca7424b5815b862eb775aaba51c785b8",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-1",
+          "kind": "artigo_normativo",
+          "parent_key": "resolve",
+          "source_line_count": 5,
+          "text_sha256": "e526f6a77c914c67b2371da0e23b4e1b536150f34b1d4b0c4deb26ae66b0d8f7",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-2",
+          "kind": "artigo_normativo",
+          "parent_key": "resolve",
+          "source_line_count": 5,
+          "text_sha256": "fb94f84812bfd10a87b32e50ac001b77120f1b5f52d2fa5848a81d1b6bb8ba5f",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-3",
+          "kind": "artigo_normativo",
+          "parent_key": "resolve",
+          "source_line_count": 4,
+          "text_sha256": "c6a9aa2120ce613b4949f43837610d7b38d111104d90911b0e613e80c970f12f",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-4",
+          "kind": "artigo_normativo",
+          "parent_key": "resolve",
+          "source_line_count": 22,
+          "text_sha256": "4809990ccfcb011a23986201fb9c14e2f206d3f19bc6ce62a8eaeb27409d87fa",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-5",
+          "kind": "artigo_normativo",
+          "parent_key": "resolve",
+          "source_line_count": 4,
+          "text_sha256": "89d81181df1aa4311e965e55e6bf2dd3ad937ec58298493e3e3efb3ab6dee400",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-6",
+          "kind": "artigo_normativo",
+          "parent_key": "resolve",
+          "source_line_count": 2,
+          "text_sha256": "98aa445d4db12187fcacad7be2959185960a3f3c3d16e325c2139008882ec0dc",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "signature",
+          "kind": "assinatura_normativa",
+          "parent_key": "resolution-211",
+          "source_line_count": 25,
+          "text_sha256": "39e27633457db014f6c5ddb18b5a62251c9a6736b7475534d94ae7f1fc45889d",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        }
+      ],
+      "fragment_checks": [
+        {
+          "key": "resolution-211",
+          "fragment": 0,
+          "page": 20,
+          "bbox": [
+            306.1416931152344,
+            153.2982177734375,
+            547.9033203125,
+            210.81021118164062
+          ],
+          "literal_excerpt_sha256": "6dca7f9256e41997bbab36d09ebb542acbf967a4cef75d553f168caa453b1b86",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "ementa",
+          "fragment": 0,
+          "page": 20,
+          "bbox": [
+            405.35430908203125,
+            220.0981903076172,
+            556.4365234375,
+            286.22119140625
+          ],
+          "literal_excerpt_sha256": "6110835e248180adfced62fcae0971c1ab21ad533d7565035c80338a161a40c7",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "preamble",
+          "fragment": 0,
+          "page": 20,
+          "bbox": [
+            306.1416931152344,
+            295.5542297363281,
+            556.4710083007812,
+            350.6212158203125
+          ],
+          "literal_excerpt_sha256": "224e5050362a7cfbc2a42e06f0d5209087d9f28c16a32d198f88b58a97d2b5b7",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-1",
+          "fragment": 0,
+          "page": 20,
+          "bbox": [
+            306.1416931152344,
+            359.2982177734375,
+            556.4182739257812,
+            381.82122802734375
+          ],
+          "literal_excerpt_sha256": "056a08e9fc2b039f3e0a9db89b70bd3aacc0d621fd175fbaa813027eae3adfb3",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-2",
+          "fragment": 0,
+          "page": 20,
+          "bbox": [
+            306.1416931152344,
+            390.49822998046875,
+            554.173095703125,
+            413.0212097167969
+          ],
+          "literal_excerpt_sha256": "1e81ed6f7ef2b88a306c514801ff3268459c5c8d43bc467d1599496fc612624f",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-3",
+          "fragment": 0,
+          "page": 20,
+          "bbox": [
+            306.1416931152344,
+            421.6982421875,
+            556.4362182617188,
+            444.2212219238281
+          ],
+          "literal_excerpt_sha256": "43684227c80b8800f51353b72e78c93e25748f852c47f32d5ebf49bbbd5be612",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-4",
+          "fragment": 0,
+          "page": 20,
+          "bbox": [
+            306.1416931152344,
+            452.8982238769531,
+            556.4263916015625,
+            485.82122802734375
+          ],
+          "literal_excerpt_sha256": "1df01d90fd0904bdd048dc4547382f02bda9c7887584ed265092198015f233b7",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-5",
+          "fragment": 0,
+          "page": 20,
+          "bbox": [
+            306.1416931152344,
+            494.49822998046875,
+            556.429931640625,
+            517.0211791992188
+          ],
+          "literal_excerpt_sha256": "bc687d9d5247510be83382504fb88fe5218e040cdd224a4d64a054eb637a1c72",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-6",
+          "fragment": 0,
+          "page": 20,
+          "bbox": [
+            306.1416931152344,
+            525.6982421875,
+            556.4244384765625,
+            558.6212158203125
+          ],
+          "literal_excerpt_sha256": "c8b76d0c56c356f412cb06064e8f367490520026c71a458e4809957dc4c7a5e5",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-7",
+          "fragment": 0,
+          "page": 20,
+          "bbox": [
+            306.1416931152344,
+            567.2982177734375,
+            554.173095703125,
+            610.6212158203125
+          ],
+          "literal_excerpt_sha256": "0bcb57303d05b35689df85134ab966c553c1284dca0fb66344143edbcdf910d9",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-8",
+          "fragment": 0,
+          "page": 20,
+          "bbox": [
+            306.1416931152344,
+            619.2982177734375,
+            556.431640625,
+            641.8212280273438
+          ],
+          "literal_excerpt_sha256": "12ec708d9d568ef0548d32390323a68fdc341ff0d1dd15bf0322fa8b4a0c5f1f",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "resolve",
+          "fragment": 0,
+          "page": 20,
+          "bbox": [
+            407.565185546875,
+            650.3541870117188,
+            452.74969482421875,
+            662.8102416992188
+          ],
+          "literal_excerpt_sha256": "22158f36212aecb73e3fb2f2ccb7f87aca7424b5815b862eb775aaba51c785b8",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-1",
+          "fragment": 0,
+          "page": 20,
+          "bbox": [
+            306.1416931152344,
+            671.1541748046875,
+            556.4277954101562,
+            726.6212158203125
+          ],
+          "literal_excerpt_sha256": "b753401a8e592e4f8bf4331a34a5e9bd6faf4b5a94769f4cc33e0dd4ba97046e",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-2",
+          "fragment": 0,
+          "page": 20,
+          "bbox": [
+            306.1416931152344,
+            735.9541625976562,
+            556.4381713867188,
+            791.4212036132812
+          ],
+          "literal_excerpt_sha256": "fb94f84812bfd10a87b32e50ac001b77120f1b5f52d2fa5848a81d1b6bb8ba5f",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-3",
+          "fragment": 0,
+          "page": 21,
+          "bbox": [
+            41.10240173339844,
+            70.43728637695312,
+            291.3942565917969,
+            116.30419921875
+          ],
+          "literal_excerpt_sha256": "50229d363b673b7fa7a57b2568116ce983c0aa479eebe27f9faf5dc6a3a2f95d",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-4",
+          "fragment": 0,
+          "page": 21,
+          "bbox": [
+            41.10240173339844,
+            126.83731079101562,
+            291.4005126953125,
+            424.10430908203125
+          ],
+          "literal_excerpt_sha256": "e9b00aeaf6fa2d3b28b910b69a34f30eefc43d88753aafc63d5dc20a894855c9",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-5",
+          "fragment": 0,
+          "page": 21,
+          "bbox": [
+            41.10240173339844,
+            434.6373291015625,
+            291.40130615234375,
+            481.10430908203125
+          ],
+          "literal_excerpt_sha256": "89d81181df1aa4311e965e55e6bf2dd3ad937ec58298493e3e3efb3ab6dee400",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-6",
+          "fragment": 0,
+          "page": 21,
+          "bbox": [
+            41.10240173339844,
+            491.6373291015625,
+            289.1338195800781,
+            515.3043212890625
+          ],
+          "literal_excerpt_sha256": "07068bcbff8d333f45cfca0c77dc5fe799eaff01b404b715a885c6e80bf75345",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "signature",
+          "fragment": 0,
+          "page": 21,
+          "bbox": [
+            41.10240173339844,
+            525.8372802734375,
+            291.3888244628906,
+            790.1043090820312
+          ],
+          "literal_excerpt_sha256": "027955e5c659ac721c805338fa5d5816d809ce39a405d569cd90c5b8f9ef7345",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "signature",
+          "fragment": 1,
+          "page": 21,
+          "bbox": [
+            342.32159423828125,
+            70.58128356933594,
+            512.3272094726562,
+            137.10430908203125
+          ],
+          "literal_excerpt_sha256": "c1933ea4ea63b7c591f5e858e034bc576c1b7095466478ef4f7beb064ae6d6ff",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        }
+      ],
+      "flow_table": null,
+      "sidecar_unchanged_after_review": true
+    },
+    {
+      "source_id": "ma-portaria-181-2026-recomposicao-doe",
+      "pdf_sha256": "d24ce340f3d74c9461d99079d8fdf9aab9d720c024fad89b7d198af2990a8f7e",
+      "sidecar_sha256": "e3e12025f883a2468ee8e15e03cc1dc9ccef9317c7a7e3bfd1f609146e4ab296",
+      "records": 76,
+      "fragments": 98,
+      "source_only_denominator": {
+        "lines": 619,
+        "regions": [
+          {
+            "page": 31,
+            "region": 0,
+            "bbox": [
+              40,
+              70,
+              296,
+              800
+            ],
+            "lines": 54,
+            "native_lines_sha256": "58361662caa203ee12dfc5d59d992d1ed22a01f1cf1fd0d70096220e12bb712b"
+          },
+          {
+            "page": 31,
+            "region": 1,
+            "bbox": [
+              300,
+              70,
+              558,
+              800
+            ],
+            "lines": 57,
+            "native_lines_sha256": "c06089811c5eb850b380ee4d73a12c3ca3b582d394b9c1f08fe1855208699df0"
+          },
+          {
+            "page": 32,
+            "region": 0,
+            "bbox": [
+              40,
+              70,
+              296,
+              800
+            ],
+            "lines": 54,
+            "native_lines_sha256": "dd2c58f79caf8b6b9a467314fe4687ae502d3078a8feabd93d491a5f28753006"
+          },
+          {
+            "page": 32,
+            "region": 1,
+            "bbox": [
+              300,
+              70,
+              558,
+              800
+            ],
+            "lines": 57,
+            "native_lines_sha256": "9a3ddeaf782b698213b9975d6455fa9585c5e3e6b2eb05480315f7bd3874ac6d"
+          },
+          {
+            "page": 33,
+            "region": 0,
+            "bbox": [
+              40,
+              70,
+              296,
+              800
+            ],
+            "lines": 54,
+            "native_lines_sha256": "adb18c0d2bed62c21e2377f657bb5949cd24588f19bba1de30b336f00179b857"
+          },
+          {
+            "page": 33,
+            "region": 1,
+            "bbox": [
+              300,
+              70,
+              558,
+              800
+            ],
+            "lines": 51,
+            "native_lines_sha256": "cafb80db9edcf30d7f8c87483e4a0ed8a0c164436a4fd76f85f1bdcc9ff13e9f"
+          },
+          {
+            "page": 34,
+            "region": 0,
+            "bbox": [
+              40,
+              70,
+              296,
+              800
+            ],
+            "lines": 50,
+            "native_lines_sha256": "de8faaf9a9e7ef13291146841499cb6488cb991ea2ecfc0ae8175c769fe85f86"
+          },
+          {
+            "page": 34,
+            "region": 1,
+            "bbox": [
+              300,
+              70,
+              558,
+              800
+            ],
+            "lines": 58,
+            "native_lines_sha256": "4482a91f545064927455d6858bc08980f0d35e13b6334635ccbb5af3e13b8bc9"
+          },
+          {
+            "page": 35,
+            "region": 0,
+            "bbox": [
+              40,
+              70,
+              296,
+              800
+            ],
+            "lines": 48,
+            "native_lines_sha256": "b4fc3f9f38995a7685abc17f24d138d25343e29ee4badd0dab2827cd0fb693df"
+          },
+          {
+            "page": 35,
+            "region": 1,
+            "bbox": [
+              300,
+              70,
+              558,
+              800
+            ],
+            "lines": 54,
+            "native_lines_sha256": "3f230f0e30e2b4ddc763686c4d8339583118e55f00186c9c69fef7c7b682d4fc"
+          },
+          {
+            "page": 36,
+            "region": 0,
+            "bbox": [
+              40,
+              70,
+              296,
+              800
+            ],
+            "lines": 76,
+            "native_lines_sha256": "6ee043913d585cd3abcbdb50cc7af95d8c8a1e0e1570db72669ea1caa4db555e"
+          },
+          {
+            "page": 36,
+            "region": 1,
+            "bbox": [
+              300,
+              70,
+              558,
+              153
+            ],
+            "lines": 6,
+            "native_lines_sha256": "4b71e9a75e5252c9b784ef7e1ab6a5e4058fe0ade2c0fd887bb0550e13d15893"
+          }
+        ],
+        "article_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "chapter_numbers": [
+          "I",
+          "II",
+          "III",
+          "IV",
+          "V",
+          "VI",
+          "VII",
+          "VIII",
+          "IX"
+        ],
+        "annex_section_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "considerandos": 10,
+        "native_lines_match_geometric_dict_lines": true
+      },
+      "all_source_lines_assigned_exactly_once": true,
+      "all_assigned_lines_geometrically_evidenced": true,
+      "missing_line_ordinals": [],
+      "duplicated_line_ordinals": [],
+      "kind_counts": {
+        "ato_normativo": 1,
+        "ementa_normativa": 1,
+        "preambulo_normativo": 1,
+        "considerando_normativo": 10,
+        "dispositivo_deliberativo": 1,
+        "capitulo_normativo": 9,
+        "artigo_normativo": 25,
+        "comando_publicacao": 1,
+        "assinatura_normativa": 1,
+        "anexo_normativo": 1,
+        "secao_anexo_normativo": 17,
+        "quadro_normativo": 1,
+        "etapa_fluxo_pedagogico": 7
+      },
+      "record_checks": [
+        {
+          "key": "portaria-181",
+          "kind": "ato_normativo",
+          "parent_key": null,
+          "source_line_count": 1,
+          "text_sha256": "e36fd16f57410a274de6e3b7b6672961c902b860ac56920f097774693a598c9b",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "ementa",
+          "kind": "ementa_normativa",
+          "parent_key": "portaria-181",
+          "source_line_count": 7,
+          "text_sha256": "9ca9362ff477fb4f041c5bc4d95bd533a7cc83f23578f55aee842ccda8166d3d",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "preamble",
+          "kind": "preambulo_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 5,
+          "text_sha256": "17088f20cdda463e700327570e051b8ad30626637becc4afc41a3dfec547a72d",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-1",
+          "kind": "considerando_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 2,
+          "text_sha256": "eef5debbdd1088a5502d43f6fc4cc34bbba2a9a84765f18c439437e9be41fbc8",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-2",
+          "kind": "considerando_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 3,
+          "text_sha256": "6eb4b3d978515bb6fef1d9fa83d5922eedc0e0083fb461e472d8f3274af931e2",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-3",
+          "kind": "considerando_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 2,
+          "text_sha256": "0841e1d82799f46fbdd0d3a186679cedde30ffc9db73727aee18d8333fd4ef5b",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-4",
+          "kind": "considerando_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 3,
+          "text_sha256": "ba3bb9887ec5a5d8f9fc317eda01e269e844da28068f76bf4f2869935026626c",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-5",
+          "kind": "considerando_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 2,
+          "text_sha256": "2b1bfe322a7aee10b226cc6c57b4ab42be77d2a682b84e3c95ea4bc9506f859e",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-6",
+          "kind": "considerando_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 6,
+          "text_sha256": "f46793b34a0f512387765f26ed0d8faa78f38a12a1bce0704bc40f0050ffbe97",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-7",
+          "kind": "considerando_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 6,
+          "text_sha256": "33cfb7fdb62c6941e25f38b971f4fc26cf6cfaf557656c0681a82a0498d22327",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-8",
+          "kind": "considerando_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 3,
+          "text_sha256": "a84f233372f827f4a59ace5d69c6b5bd1c1f1f616eea5025b3e5296242ee67c5",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-9",
+          "kind": "considerando_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 4,
+          "text_sha256": "a6d8e62de1521f9bcc0ebc3ecca96b1d89b6fca7318eaf3abd4b5b9b54150527",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "considerando-10",
+          "kind": "considerando_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 4,
+          "text_sha256": "42ee2971cca86aed35f1baf9140f171c60ae970fc809a4645a7c768f55808a80",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "resolve",
+          "kind": "dispositivo_deliberativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 1,
+          "text_sha256": "22158f36212aecb73e3fb2f2ccb7f87aca7424b5815b862eb775aaba51c785b8",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "chapter-I",
+          "kind": "capitulo_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 2,
+          "text_sha256": "89c553445467c0ff34042948eaf9c7e74311daf788436d4228e2c6c332219e8f",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "chapter_parent_root": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-1",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-I",
+          "source_line_count": 19,
+          "text_sha256": "4ba370ead6a191ddec207d4c64ebb9819d51a9bb06ae8d02b1e0b26618530a68",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-2",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-I",
+          "source_line_count": 7,
+          "text_sha256": "5b41adafdabf8c5b542308c037788f1d7275256e3487a9c426466d7f63177a29",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "chapter-II",
+          "kind": "capitulo_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 3,
+          "text_sha256": "233dd9353c4e020f78b9b28d9496c136fd9f75d92e695be6905f03392252c0b6",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "chapter_parent_root": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-3",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-II",
+          "source_line_count": 42,
+          "text_sha256": "8d0dcc97d98edceea148a3535c74cdf8f90e872f79844f728772589a5e1c99e4",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "chapter-III",
+          "kind": "capitulo_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 2,
+          "text_sha256": "547bd49736637818d45d4441848b9b23b4971bb4df5ef5c7465a90038b9ec28f",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "chapter_parent_root": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-4",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-III",
+          "source_line_count": 37,
+          "text_sha256": "75de6a9d752715caaa26e4627201b26bc3bf90783e018e1dfce54aadc96eaee7",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "chapter-IV",
+          "kind": "capitulo_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 2,
+          "text_sha256": "8fd528c930ee290dd05ddb587684f3bad862699cf13f7f3fbccb5a79d5902307",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "chapter_parent_root": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-5",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-IV",
+          "source_line_count": 5,
+          "text_sha256": "80ab3f725a622a7b99a9b0e2428b39e15a1ee2de843ae80e35e5c25723780d16",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-6",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-IV",
+          "source_line_count": 13,
+          "text_sha256": "bc04a58707ff93621e3346a79100341dc455efee032c1a2e47271a13939a69ed",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-7",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-IV",
+          "source_line_count": 7,
+          "text_sha256": "3e2305bbc725a67e79a994a7639383779d41c461c9d3ab043c0270a24837f3f4",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "chapter-V",
+          "kind": "capitulo_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 3,
+          "text_sha256": "cdaadc36b32eceb8ee66be5dee6ce0d704fbb3cf9d361a24c62245997f3bfe5e",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "chapter_parent_root": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-8",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-V",
+          "source_line_count": 7,
+          "text_sha256": "070e77a233a8947199726646bbebf3c41339ccc93965a3d68643dfc797c1405a",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-9",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-V",
+          "source_line_count": 5,
+          "text_sha256": "8fb89d2bd829cc08345bd0689118c0b24f19dbe0cd16381b9f7bcc7278848ef3",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-10",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-V",
+          "source_line_count": 4,
+          "text_sha256": "881972acee828274f5f9221aaa31247e1bb8f5a3ad5aec8b76f22ea671c7778c",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "chapter-VI",
+          "kind": "capitulo_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 2,
+          "text_sha256": "6ca406913bea843b0c9a0f12f0f748aea1183574ee67b0782709a36f00a838a4",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "chapter_parent_root": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-11",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-VI",
+          "source_line_count": 4,
+          "text_sha256": "99bad01555faa64c1bbab629e3485cfd99adddda0e69a726cb8ab1aae70d91c3",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-12",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-VI",
+          "source_line_count": 4,
+          "text_sha256": "4c9195f5c78ae4170de94e6c56a70d0f3805c9712baaa4bce0f9611ccbd38234",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-13",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-VI",
+          "source_line_count": 9,
+          "text_sha256": "bab81a1a33e57ad069c49b7b7a444a063685c2483b32720abbe7facf847c1810",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "chapter-VII",
+          "kind": "capitulo_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 2,
+          "text_sha256": "48e98f0d9f0f291ce2013c875106cfeb6c3202ddf3fee622267adeca8353aca9",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "chapter_parent_root": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-14",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-VII",
+          "source_line_count": 5,
+          "text_sha256": "cf7cd6400b16e0705aa49afb0248861ab35cc012d0b77b9d808ed5df17c65abc",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-15",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-VII",
+          "source_line_count": 5,
+          "text_sha256": "356fedc0c2440fc2f704f2a941136e5137619d5797fb3173419af6cf83cf6cd8",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-16",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-VII",
+          "source_line_count": 4,
+          "text_sha256": "c91fe7db0444964d1f8e1fd7e838a7f7d95ef1dff19578354ec1055d1c0f1827",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "chapter-VIII",
+          "kind": "capitulo_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 2,
+          "text_sha256": "71b80fcd4d698c7be6bcbabe376cfe7f4918e0e6cea6113dad2f06c3b8819f2c",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "chapter_parent_root": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-17",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-VIII",
+          "source_line_count": 9,
+          "text_sha256": "e18510003038669b84cd5786f122387025f174116c8eeee28f08118d38816eab",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-18",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-VIII",
+          "source_line_count": 23,
+          "text_sha256": "1fbed3b891e4bc6216457419f067cb779efca25a172f13890e43f3e8fc0efe48",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-19",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-VIII",
+          "source_line_count": 13,
+          "text_sha256": "e767853e7b1cb6b338cc7c1ae7524dfe845b489425e264e775aff1d5a1e31d3a",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-20",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-VIII",
+          "source_line_count": 12,
+          "text_sha256": "a8933fdc8c6917f80ea6795b6b629964934468888d25d0bb4245e385b49ff7ea",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "chapter-IX",
+          "kind": "capitulo_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 2,
+          "text_sha256": "4c9dd1a49d3dc601379c4c2d4a64bbb9e1961a84646707f5bdcfa20d7c5c7650",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "chapter_parent_root": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-21",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-IX",
+          "source_line_count": 5,
+          "text_sha256": "74b853882a7d9c7d33a73ee684d534ac4610e5b2a5803858964002cb2d8a8628",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-22",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-IX",
+          "source_line_count": 4,
+          "text_sha256": "7da9f6384cb24a0634c06db594fb5232a7a38e1b0ac0e948511e467684339c5e",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-23",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-IX",
+          "source_line_count": 4,
+          "text_sha256": "a6d3ff10249892b3db94563ddcb0c0042dcf03f13275d136db119db47f61bb6d",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-24",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-IX",
+          "source_line_count": 3,
+          "text_sha256": "f4964e9c34619d9a0c411e82348d3891d067078b4c50b166f1789c67f14dae80",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "article-25",
+          "kind": "artigo_normativo",
+          "parent_key": "chapter-IX",
+          "source_line_count": 2,
+          "text_sha256": "4e2b351acf69b3f0a3dfc057d6d89680013da534b28a35092dad6d2329070dc2",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "article_parent_matches_source_chapter": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "publication-command",
+          "kind": "comando_publicacao",
+          "parent_key": "portaria-181",
+          "source_line_count": 4,
+          "text_sha256": "b8ab433073bcca4c575394a7e7eef235bb81b50b1d79e6c871b768fb693b91d5",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "signature",
+          "kind": "assinatura_normativa",
+          "parent_key": "portaria-181",
+          "source_line_count": 2,
+          "text_sha256": "603498921facb23898bcad5a2606a1c0e590aa1f1ab1c3c7cf17f1929a5021b8",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex",
+          "kind": "anexo_normativo",
+          "parent_key": "portaria-181",
+          "source_line_count": 4,
+          "text_sha256": "8ba0d8a6f9ece980c4e9652123da872b4143aaa9567a55a6c07fab217373300e",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-1",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 25,
+          "text_sha256": "987a6f5a5c783090ee2ba32fd47ad96e4bc49d424907941eaa5f8e7bc0886d00",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-2",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 21,
+          "text_sha256": "db1ba0e73824890c3088621c3d52f26dbe891e27e65615904905482812d23220",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-3",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 32,
+          "text_sha256": "a120810b990beddd4092cbd5878282d15af474f25c483367508d46874562e060",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-4",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 20,
+          "text_sha256": "e728279e9ccd4c962e5a15e000a71d5429fe8a1e104782683d2ecdefa6af9950",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-5",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 20,
+          "text_sha256": "0d8000ed1dc2faf6fc80e5ee88c2a349fdbf91760028115109d13710e2c504bf",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-6",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 11,
+          "text_sha256": "68d0c6106efa51793283cf1bb9bf96bb303ca33bdd73b63ce68ccb102d76b508",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-7",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 11,
+          "text_sha256": "6979329dc561fae94e6dc6c13a6f804ebbee9093aba327111a7dc5ca695003a4",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-8",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 8,
+          "text_sha256": "299f4cb6ab057b67e3e4a21271477fa5406d8b0dabc6299af44652b943a6b133",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-9",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 9,
+          "text_sha256": "5681e000916d65189151232bd3ab3977e299706c4ba98c6ceaf3f804f53cd728",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-10",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 7,
+          "text_sha256": "d096a153910ef34d7c1a4123249fcbf4f7e10d3b7b623a71722a923a4c961a3e",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-11",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 23,
+          "text_sha256": "7ccf452300b4cd3a2c54ae83ecdea9be8b917891f16e84b2190acc28a30f4af5",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-12",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 6,
+          "text_sha256": "02edcd9438e44487815790913c6b6d2dcd182755e87688f86fbdfe9e78c7be3e",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-13",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 13,
+          "text_sha256": "4c2c128bc5215f961f124cff3779465b39b08dcd2e1bfe650a08c51998ce1759",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-14",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 8,
+          "text_sha256": "6d2c1ac22a997e23bf1d99cfb4c12e91882ddbef8f951138ac39835ef76b9b95",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-15",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 1,
+          "text_sha256": "d97f3ca2db893be7eb23d8c4dcde471d25fec36cdde40bba68d682220a0f6d10",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-flow-table",
+          "kind": "quadro_normativo",
+          "parent_key": "annex-section-15",
+          "source_line_count": 5,
+          "text_sha256": "e58f33398b0c46ed0e8313a8d74dd84a9328572668457e536ffca7d77f6fabc5",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-flow-row-1",
+          "kind": "etapa_fluxo_pedagogico",
+          "parent_key": "annex-flow-table",
+          "source_line_count": 4,
+          "text_sha256": "67bf34e9e42b0826b4696dc61a08f476401e33992f6564088571065ff4b822b0",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-flow-row-2",
+          "kind": "etapa_fluxo_pedagogico",
+          "parent_key": "annex-flow-table",
+          "source_line_count": 5,
+          "text_sha256": "d10207b284d153999a87335949a7552f625724e16e3461d26938dbdc366ea0c6",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-flow-row-3",
+          "kind": "etapa_fluxo_pedagogico",
+          "parent_key": "annex-flow-table",
+          "source_line_count": 4,
+          "text_sha256": "f63de3a0113044528a20dfef2f03b414003d5b7961dac9cc1a99e92d9b236adc",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-flow-row-4",
+          "kind": "etapa_fluxo_pedagogico",
+          "parent_key": "annex-flow-table",
+          "source_line_count": 5,
+          "text_sha256": "f532154cf7e467bf37b01a7dc75290afdff7372123187131ed4ae738b6f09fa8",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-flow-row-5",
+          "kind": "etapa_fluxo_pedagogico",
+          "parent_key": "annex-flow-table",
+          "source_line_count": 5,
+          "text_sha256": "ae2b97217bd7c1763f7a269b998c2a74a80c40ad551debb9f8fdb433cfb75224",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-flow-row-6",
+          "kind": "etapa_fluxo_pedagogico",
+          "parent_key": "annex-flow-table",
+          "source_line_count": 4,
+          "text_sha256": "d8f94c1fa78d2a23da94d736e902b3113ae1d614802a1e56838212b863a962a9",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-flow-row-7",
+          "kind": "etapa_fluxo_pedagogico",
+          "parent_key": "annex-flow-table",
+          "source_line_count": 5,
+          "text_sha256": "9bfb6c2b0debba6cfb7d6aef039a5450966302acc0d60e0690b5c791b06f45c3",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-16",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 30,
+          "text_sha256": "e928ad1eccaa6149d8ea008164bf1fc511423bd572bdf7cd5cdee03b67172b1b",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        },
+        {
+          "key": "annex-section-17",
+          "kind": "secao_anexo_normativo",
+          "parent_key": "annex",
+          "source_line_count": 6,
+          "text_sha256": "3e1d5c2dc50432eb99d614d524d3acdccc786303f755693e6294194a3db82668",
+          "checks": {
+            "source_line_text_matches": true,
+            "complete_evidence_matches_text": true,
+            "parent_exists": true,
+            "code_null": true,
+            "normative_not_learning": true,
+            "actor_automated": true,
+            "no_invented_years_periods": true,
+            "expected_id_from_technical_key": true,
+            "text_kind_and_parent_unchanged_from_prior_peer_cotejo": true,
+            "literal_document_scope_positions": true,
+            "position_origin_documentary": true,
+            "position_scope_basis_present": true,
+            "annex_section_parent_and_number": true,
+            "acyclic_parent_chain": true,
+            "all_assigned_lines_geometrically_evidenced": true
+          }
+        }
+      ],
+      "fragment_checks": [
+        {
+          "key": "portaria-181",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            69.06900024414062,
+            70.29232788085938,
+            261.167724609375,
+            82.74832916259766
+          ],
+          "literal_excerpt_sha256": "e36fd16f57410a274de6e3b7b6672961c902b860ac56920f097774693a598c9b",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "ementa",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            111.96849822998047,
+            92.83628845214844,
+            291.3943176269531,
+            172.15924072265625
+          ],
+          "literal_excerpt_sha256": "9ca9362ff477fb4f041c5bc4d95bd533a7cc83f23578f55aee842ccda8166d3d",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "preamble",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            41.102298736572266,
+            182.29232788085938,
+            291.3986511230469,
+            239.35919189453125
+          ],
+          "literal_excerpt_sha256": "17088f20cdda463e700327570e051b8ad30626637becc4afc41a3dfec547a72d",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-1",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            41.102298736572266,
+            243.96163940429688,
+            291.4009704589844,
+            267.42852783203125
+          ],
+          "literal_excerpt_sha256": "eef5debbdd1088a5502d43f6fc4cc34bbba2a9a84765f18c439437e9be41fbc8",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-2",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            41.102298736572266,
+            272.0307922363281,
+            291.3968200683594,
+            306.69781494140625
+          ],
+          "literal_excerpt_sha256": "6eb4b3d978515bb6fef1d9fa83d5922eedc0e0083fb461e472d8f3274af931e2",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-3",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            41.102298736572266,
+            311.3001403808594,
+            291.36669921875,
+            334.7671203613281
+          ],
+          "literal_excerpt_sha256": "0841e1d82799f46fbdd0d3a186679cedde30ffc9db73727aee18d8333fd4ef5b",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-4",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            41.102298736572266,
+            339.3694152832031,
+            291.4009094238281,
+            374.0364074707031
+          ],
+          "literal_excerpt_sha256": "ba3bb9887ec5a5d8f9fc317eda01e269e844da28068f76bf4f2869935026626c",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-5",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            41.102298736572266,
+            378.6387023925781,
+            291.39013671875,
+            402.105712890625
+          ],
+          "literal_excerpt_sha256": "2b1bfe322a7aee10b226cc6c57b4ab42be77d2a682b84e3c95ea4bc9506f859e",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-6",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            41.102298736572266,
+            406.7080078125,
+            291.3941955566406,
+            474.9750061035156
+          ],
+          "literal_excerpt_sha256": "f46793b34a0f512387765f26ed0d8faa78f38a12a1bce0704bc40f0050ffbe97",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-7",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            41.102298736572266,
+            479.57733154296875,
+            291.3878173828125,
+            547.8442993164062
+          ],
+          "literal_excerpt_sha256": "ae437546018ad26aa116348688a17867e02997a68f474e837a53a2d3b3198164",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-8",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            41.102298736572266,
+            552.4465942382812,
+            291.4028015136719,
+            587.1135864257812
+          ],
+          "literal_excerpt_sha256": "a84f233372f827f4a59ace5d69c6b5bd1c1f1f616eea5025b3e5296242ee67c5",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-9",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            41.102298736572266,
+            591.7158813476562,
+            291.3995666503906,
+            637.5829467773438
+          ],
+          "literal_excerpt_sha256": "196d8ffd2012d900f4ddd94f809db95d787decde9dd1ffc35c261339c15f26e5",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "considerando-10",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            41.102298736572266,
+            642.18505859375,
+            291.3914794921875,
+            688.0521850585938
+          ],
+          "literal_excerpt_sha256": "9e0801c4dcf7ce9e62c89fc6d062aa7327eb6097be48855e765877206c07b715",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "resolve",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            142.5258026123047,
+            698.18505859375,
+            187.70851135253906,
+            710.64111328125
+          ],
+          "literal_excerpt_sha256": "22158f36212aecb73e3fb2f2ccb7f87aca7424b5815b862eb775aaba51c785b8",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "chapter-I",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            106.3499984741211,
+            720.585205078125,
+            223.87200927734375,
+            744.2412109375
+          ],
+          "literal_excerpt_sha256": "89c553445467c0ff34042948eaf9c7e74311daf788436d4228e2c6c332219e8f",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-1",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            41.10240173339844,
+            754.18505859375,
+            289.1338195800781,
+            788.8522338867188
+          ],
+          "literal_excerpt_sha256": "f929f095b204950720aab0f9f8a48b3c01e8ef1908f8fa328f953e27977cd818",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-1",
+          "fragment": 1,
+          "page": 31,
+          "bbox": [
+            303.3070983886719,
+            70.58128356933594,
+            553.6045532226562,
+            261.38153076171875
+          ],
+          "literal_excerpt_sha256": "ec9422a3c88c1ea199d53dc15b002db27c3b2fea214b9f87709562341d3117c6",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-2",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            303.3070983886719,
+            265.1837463378906,
+            553.5973510742188,
+            345.52001953125
+          ],
+          "literal_excerpt_sha256": "62d7b48fa914e513e2707ab4f3634a2b73ee0834dab12544a5b5e973707ca38e",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "chapter-II",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            304.0079040527344,
+            359.7223205566406,
+            552.8865966796875,
+            392.9783020019531
+          ],
+          "literal_excerpt_sha256": "233dd9353c4e020f78b9b28d9496c136fd9f75d92e695be6905f03392252c0b6",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-3",
+          "fragment": 0,
+          "page": 31,
+          "bbox": [
+            303.3070983886719,
+            401.32232666015625,
+            553.6089477539062,
+            789.1514892578125
+          ],
+          "literal_excerpt_sha256": "81db0426d8680dab5578fdfc362202cf78127c10dc35b3ac7a03e710672e9d50",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-3",
+          "fragment": 1,
+          "page": 32,
+          "bbox": [
+            43.9370002746582,
+            70.44322204589844,
+            294.2306213378906,
+            206.3741455078125
+          ],
+          "literal_excerpt_sha256": "7b536a51b83a82c603cad49e52766c633928ed63ed4cbd280e8d02cdfbd91099",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "chapter-III",
+          "fragment": 0,
+          "page": 32,
+          "bbox": [
+            131.90660095214844,
+            215.70700073242188,
+            203.9993133544922,
+            238.96310424804688
+          ],
+          "literal_excerpt_sha256": "547bd49736637818d45d4441848b9b23b4971bb4df5ef5c7465a90038b9ec28f",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-4",
+          "fragment": 0,
+          "page": 32,
+          "bbox": [
+            43.9370002746582,
+            248.10714721679688,
+            294.2369689941406,
+            728.544189453125
+          ],
+          "literal_excerpt_sha256": "4a9e708b25d8d31017a575986a34047ebe4a4d9386e64b1f249087f60277516f",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "chapter-IV",
+          "fragment": 0,
+          "page": 32,
+          "bbox": [
+            93.94670104980469,
+            737.8770751953125,
+            242.4485321044922,
+            761.1331176757812
+          ],
+          "literal_excerpt_sha256": "8fd528c930ee290dd05ddb587684f3bad862699cf13f7f3fbccb5a79d5902307",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-5",
+          "fragment": 0,
+          "page": 32,
+          "bbox": [
+            43.9370002746582,
+            770.2771606445312,
+            294.2297058105469,
+            793.34423828125
+          ],
+          "literal_excerpt_sha256": "36c9c210b4a315dc98f18f5a9f64285604c15280ebc3c9c1900f30c360eef34b",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-5",
+          "fragment": 1,
+          "page": 32,
+          "bbox": [
+            306.1416931152344,
+            70.58128356933594,
+            556.43896484375,
+            104.30419921875
+          ],
+          "literal_excerpt_sha256": "563e8e7df7c390bf763f064f7e0e4a6fc8fe46053aab98198763826c869f5f43",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-6",
+          "fragment": 0,
+          "page": 32,
+          "bbox": [
+            306.1416931152344,
+            108.50650024414062,
+            556.4327392578125,
+            261.71209716796875
+          ],
+          "literal_excerpt_sha256": "396b0c4e60dc800e712c1183e5367e8026393986d56ccb3974c788ef106d4285",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-7",
+          "fragment": 0,
+          "page": 32,
+          "bbox": [
+            306.1416931152344,
+            265.9143981933594,
+            556.4642944335938,
+            348.6507263183594
+          ],
+          "literal_excerpt_sha256": "6e01a2730094e06ebac288486ca6bc68d119a8f82d9f6fe84db8521a10077453",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "chapter-V",
+          "fragment": 0,
+          "page": 32,
+          "bbox": [
+            329.85888671875,
+            363.65301513671875,
+            532.7070922851562,
+            397.7090148925781
+          ],
+          "literal_excerpt_sha256": "cdaadc36b32eceb8ee66be5dee6ce0d704fbb3cf9d361a24c62245997f3bfe5e",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-8",
+          "fragment": 0,
+          "page": 32,
+          "bbox": [
+            306.1416931152344,
+            406.85302734375,
+            556.4390869140625,
+            489.5893249511719
+          ],
+          "literal_excerpt_sha256": "b419d4f008f954f7dc5be49c769ff5abc7d546454b6f1b384d16c3e50ee02746",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-9",
+          "fragment": 0,
+          "page": 32,
+          "bbox": [
+            306.1416931152344,
+            493.7916259765625,
+            556.4407958984375,
+            549.2586059570312
+          ],
+          "literal_excerpt_sha256": "97207e4ddf7ddc07aef21ce03e5d00e327fb8ddc0e271aa7debf716f907689e1",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-10",
+          "fragment": 0,
+          "page": 32,
+          "bbox": [
+            306.1416931152344,
+            553.4608764648438,
+            556.4227294921875,
+            598.1279296875
+          ],
+          "literal_excerpt_sha256": "57c5fc7f1a4c7715fd4f89a6f5942e5d8d6b44029ce148a975e660034227ce68",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "chapter-VI",
+          "fragment": 0,
+          "page": 32,
+          "bbox": [
+            314.9195861816406,
+            607.4608764648438,
+            545.388671875,
+            630.7169189453125
+          ],
+          "literal_excerpt_sha256": "6ca406913bea843b0c9a0f12f0f748aea1183574ee67b0782709a36f00a838a4",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-11",
+          "fragment": 0,
+          "page": 32,
+          "bbox": [
+            306.1416931152344,
+            639.8609008789062,
+            556.42822265625,
+            684.5278930664062
+          ],
+          "literal_excerpt_sha256": "97b293944d98919dd16cc44fd6ae00a7d1aec36491fbeda3eb651311ffefe9d6",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-12",
+          "fragment": 0,
+          "page": 32,
+          "bbox": [
+            306.1416931152344,
+            688.7301635742188,
+            556.432861328125,
+            733.397216796875
+          ],
+          "literal_excerpt_sha256": "4f6f999822648f04fa7248d427d9839a928b09c54adfab66b0d51ee6a77062b7",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-13",
+          "fragment": 0,
+          "page": 32,
+          "bbox": [
+            306.1416931152344,
+            737.5994873046875,
+            556.4434814453125,
+            793.0665283203125
+          ],
+          "literal_excerpt_sha256": "b9f1e6c72c0719668979234b0a054b46efc728db3209b7d5f8bd73ed20f68775",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-13",
+          "fragment": 1,
+          "page": 33,
+          "bbox": [
+            41.10240173339844,
+            70.43728637695312,
+            291.3834533691406,
+            115.10430908203125
+          ],
+          "literal_excerpt_sha256": "aadf2f676886a43a8249ec7d0bb2625fe39da8a18bc51838a00ac7d961bfe1be",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "chapter-VII",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            54.947200775146484,
+            124.43728637695312,
+            275.2906494140625,
+            147.69332885742188
+          ],
+          "literal_excerpt_sha256": "48e98f0d9f0f291ce2013c875106cfeb6c3202ddf3fee622267adeca8353aca9",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-14",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            41.10240173339844,
+            156.83731079101562,
+            291.3996887207031,
+            212.30419921875
+          ],
+          "literal_excerpt_sha256": "7d1186679c9e8f0c6805236d6b57578ddd3198a1bfd9b9973bc402d49fab06d7",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-15",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            41.10240173339844,
+            216.50650024414062,
+            291.3960266113281,
+            272.17364501953125
+          ],
+          "literal_excerpt_sha256": "2e743a0899b51471f1478c4640d1ac8daf6ea0035b5a33981fd0cdcf78c82e81",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-16",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            41.10240173339844,
+            276.5758361816406,
+            291.3907165527344,
+            321.84283447265625
+          ],
+          "literal_excerpt_sha256": "ddce9e1e75ea9b170a0ca9f18f37dd4e08eed511e8234d7df335029cd0153d59",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "chapter-VIII",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            106.22699737548828,
+            331.5758056640625,
+            223.9920196533203,
+            355.03179931640625
+          ],
+          "literal_excerpt_sha256": "71b80fcd4d698c7be6bcbabe376cfe7f4918e0e6cea6113dad2f06c3b8819f2c",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-17",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            41.10240173339844,
+            364.5758056640625,
+            291.38519287109375,
+            493.1893005371094
+          ],
+          "literal_excerpt_sha256": "54caccf5a04cf1abee7d4c570f95a087ff36b7ddc177fb08027993f21cb6fb7f",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-18",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            41.10240173339844,
+            497.59161376953125,
+            291.399658203125,
+            791.5436401367188
+          ],
+          "literal_excerpt_sha256": "cb1f89eedb71009d9312d0d8f2ef74b0424a17e4ddc4882b14df47e906039f6e",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-19",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            303.3070983886719,
+            70.43728637695312,
+            551.338623046875,
+            260.05859375
+          ],
+          "literal_excerpt_sha256": "7f0fbc489638dd109cc30fb803baccb81cbfa238c70d3cd4586d809460e61137",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-20",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            303.3070983886719,
+            264.4609069824219,
+            553.6018676757812,
+            426.07440185546875
+          ],
+          "literal_excerpt_sha256": "84d1cb1321403f1710dd8f4ca07cae7d16837610c848034e1ae2c2359c754001",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "chapter-IX",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            370.5564880371094,
+            435.8074035644531,
+            484.07342529296875,
+            459.2633972167969
+          ],
+          "literal_excerpt_sha256": "4c9dd1a49d3dc601379c4c2d4a64bbb9e1961a84646707f5bdcfa20d7c5c7650",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-21",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            303.3070983886719,
+            468.8074035644531,
+            553.6088256835938,
+            525.0744018554688
+          ],
+          "literal_excerpt_sha256": "1f71628434ab35277822127ac415791485729c3b3798130e03c0264aaa6cef02",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-22",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            303.3070983886719,
+            529.4765625,
+            553.6159057617188,
+            574.7435913085938
+          ],
+          "literal_excerpt_sha256": "7da9f6384cb24a0634c06db594fb5232a7a38e1b0ac0e948511e467684339c5e",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-23",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            303.3070983886719,
+            579.1458740234375,
+            553.5887451171875,
+            624.4129028320312
+          ],
+          "literal_excerpt_sha256": "fc02e7be51c1d5a7abadd3ba879234bf115dd32590e97a16f283489b89a9b82f",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-24",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            303.3070983886719,
+            628.815185546875,
+            553.6054077148438,
+            663.0822143554688
+          ],
+          "literal_excerpt_sha256": "79ccf478bf8f63467c5951b48b969054d22dfbed0455a40cc3f10f6593b34fc6",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "article-25",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            303.3070983886719,
+            667.4844970703125,
+            551.338623046875,
+            690.7515258789062
+          ],
+          "literal_excerpt_sha256": "9de53a98d7628be9556a547114e3d09cd12d2b8106594fb7d81b5ce1cfa7b9e6",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "publication-command",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            303.3070983886719,
+            695.15380859375,
+            553.5924072265625,
+            751.9484252929688
+          ],
+          "literal_excerpt_sha256": "b8ab433073bcca4c575394a7e7eef235bb81b50b1d79e6c871b768fb693b91d5",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "signature",
+          "fragment": 0,
+          "page": 33,
+          "bbox": [
+            361.9081115722656,
+            767.1616821289062,
+            492.9625549316406,
+            790.6177368164062
+          ],
+          "literal_excerpt_sha256": "603498921facb23898bcad5a2606a1c0e590aa1f1ab1c3c7cf17f1929a5021b8",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex",
+          "fragment": 0,
+          "page": 34,
+          "bbox": [
+            44.4114990234375,
+            70.29232788085938,
+            293.74359130859375,
+            125.9483413696289
+          ],
+          "literal_excerpt_sha256": "8ba0d8a6f9ece980c4e9652123da872b4143aaa9567a55a6c07fab217373300e",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-1",
+          "fragment": 0,
+          "page": 34,
+          "bbox": [
+            43.9370002746582,
+            141.09219360351562,
+            294.2333068847656,
+            454.1560974121094
+          ],
+          "literal_excerpt_sha256": "abafedd0b51048c6ef43f4abfe6c7eb84a1562afa5d88fa9bd76954ca1600f16",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-2",
+          "fragment": 0,
+          "page": 34,
+          "bbox": [
+            43.9370002746582,
+            482.9001159667969,
+            294.235107421875,
+            789.8600463867188
+          ],
+          "literal_excerpt_sha256": "011b1491878187e7fc4b0458b950301616172607aa9dd03d4cafcb6c4fb31f72",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-3",
+          "fragment": 0,
+          "page": 34,
+          "bbox": [
+            306.1416931152344,
+            70.29232788085938,
+            556.4383544921875,
+            437.7593078613281
+          ],
+          "literal_excerpt_sha256": "a120810b990beddd4092cbd5878282d15af474f25c483367508d46874562e060",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-4",
+          "fragment": 0,
+          "page": 34,
+          "bbox": [
+            306.1416931152344,
+            447.7923278808594,
+            556.440673828125,
+            703.7593383789062
+          ],
+          "literal_excerpt_sha256": "e728279e9ccd4c962e5a15e000a71d5429fe8a1e104782683d2ecdefa6af9950",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-5",
+          "fragment": 0,
+          "page": 34,
+          "bbox": [
+            306.1416931152344,
+            713.7921752929688,
+            556.441650390625,
+            790.5592041015625
+          ],
+          "literal_excerpt_sha256": "8828e655bc00f210fb25af09c00e2d47c1f84a8be4ec5a544d6e61a84632b033",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-5",
+          "fragment": 1,
+          "page": 35,
+          "bbox": [
+            41.10240173339844,
+            70.58128356933594,
+            291.39697265625,
+            256.20428466796875
+          ],
+          "literal_excerpt_sha256": "eb29df45fec6d3e9bc04595fdc5d85d8b36095083faf5ac639510e087f881ba0",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-6",
+          "fragment": 0,
+          "page": 35,
+          "bbox": [
+            41.10240173339844,
+            267.4372863769531,
+            291.39971923828125,
+            430.7043151855469
+          ],
+          "literal_excerpt_sha256": "68d0c6106efa51793283cf1bb9bf96bb303ca33bdd73b63ce68ccb102d76b508",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-7",
+          "fragment": 0,
+          "page": 35,
+          "bbox": [
+            41.10240173339844,
+            441.93731689453125,
+            291.4023742675781,
+            593.2042846679688
+          ],
+          "literal_excerpt_sha256": "6979329dc561fae94e6dc6c13a6f804ebbee9093aba327111a7dc5ca695003a4",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-8",
+          "fragment": 0,
+          "page": 35,
+          "bbox": [
+            41.10240173339844,
+            604.437255859375,
+            291.3932189941406,
+            721.2042846679688
+          ],
+          "literal_excerpt_sha256": "299f4cb6ab057b67e3e4a21271477fa5406d8b0dabc6299af44652b943a6b133",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-9",
+          "fragment": 0,
+          "page": 35,
+          "bbox": [
+            41.10240173339844,
+            732.437255859375,
+            291.38421630859375,
+            791.2042846679688
+          ],
+          "literal_excerpt_sha256": "8c8faa784dca5f9872a082919a46a73aa26b88583838dcb17f5b37d5532a0d62",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-9",
+          "fragment": 1,
+          "page": 35,
+          "bbox": [
+            303.3070983886719,
+            70.44322204589844,
+            553.5972290039062,
+            126.56622314453125
+          ],
+          "literal_excerpt_sha256": "31ffef279da48ddbf430ed1eb44897708859a1572f4079b895d5c2a3a28c5a57",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-10",
+          "fragment": 0,
+          "page": 35,
+          "bbox": [
+            303.3070983886719,
+            137.29922485351562,
+            553.606201171875,
+            239.56622314453125
+          ],
+          "literal_excerpt_sha256": "2b0a5a16226856f0413d1c93c9e0163dcd264d7b4051b327697d6e930e051bc3",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-11",
+          "fragment": 0,
+          "page": 35,
+          "bbox": [
+            303.3070983886719,
+            250.29922485351562,
+            553.6026000976562,
+            576.5662231445312
+          ],
+          "literal_excerpt_sha256": "7ccf452300b4cd3a2c54ae83ecdea9be8b917891f16e84b2190acc28a30f4af5",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-12",
+          "fragment": 0,
+          "page": 35,
+          "bbox": [
+            303.3070983886719,
+            587.2991943359375,
+            553.6115112304688,
+            666.5662231445312
+          ],
+          "literal_excerpt_sha256": "02edcd9438e44487815790913c6b6d2dcd182755e87688f86fbdfe9e78c7be3e",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-13",
+          "fragment": 0,
+          "page": 35,
+          "bbox": [
+            303.3070983886719,
+            677.2991943359375,
+            553.603515625,
+            790.5662231445312
+          ],
+          "literal_excerpt_sha256": "4c2c128bc5215f961f124cff3779465b39b08dcd2e1bfe650a08c51998ce1759",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-14",
+          "fragment": 0,
+          "page": 36,
+          "bbox": [
+            43.9370002746582,
+            70.29232788085938,
+            294.23687744140625,
+            186.35919189453125
+          ],
+          "literal_excerpt_sha256": "6d2c1ac22a997e23bf1d99cfb4c12e91882ddbef8f951138ac39835ef76b9b95",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-15",
+          "fragment": 0,
+          "page": 36,
+          "bbox": [
+            43.9370002746582,
+            197.49234008789062,
+            255.9427947998047,
+            209.94833374023438
+          ],
+          "literal_excerpt_sha256": "d97f3ca2db893be7eb23d8c4dcde471d25fec36cdde40bba68d682220a0f6d10",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-table",
+          "fragment": 0,
+          "page": 36,
+          "bbox": [
+            63.867801666259766,
+            234.17221069335938,
+            93.03770446777344,
+            246.62820434570312
+          ],
+          "literal_excerpt_sha256": "cccec427fc51c6b206700daeda77597f2fd761b8bf6264f25cdd27f7536e77a7",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-table",
+          "fragment": 1,
+          "page": 36,
+          "bbox": [
+            125.06919860839844,
+            228.77224731445312,
+            192.9031219482422,
+            252.02822875976562
+          ],
+          "literal_excerpt_sha256": "9f4652686ebf7a701a6dd507f101da3d6c427183e78363156c9c68b62f28269b",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-table",
+          "fragment": 2,
+          "page": 36,
+          "bbox": [
+            223.9862060546875,
+            228.77224731445312,
+            273.1602783203125,
+            252.02822875976562
+          ],
+          "literal_excerpt_sha256": "a2c1eddebd9e4102ac1efd5dd7b99ce0596da9f2d7d6d611c683dfd971a72a0f",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-1",
+          "fragment": 0,
+          "page": 36,
+          "bbox": [
+            50.71049880981445,
+            264.041259765625,
+            105.70050048828125,
+            276.16424560546875
+          ],
+          "literal_excerpt_sha256": "32e084bcafe97179abdaffd0d3377c90aa55b77b96bfc79c7e1c368c1a38521a",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-1",
+          "fragment": 1,
+          "page": 36,
+          "bbox": [
+            122.00180053710938,
+            258.64111328125,
+            197.73681640625,
+            281.5640869140625
+          ],
+          "literal_excerpt_sha256": "36b5e96d1b8bb798855071d0e638ebaaca8a1f90a4ddf0a712bf4dda9fa52c7f",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-1",
+          "fragment": 2,
+          "page": 36,
+          "bbox": [
+            207.00579833984375,
+            264.041259765625,
+            289.9858093261719,
+            276.16424560546875
+          ],
+          "literal_excerpt_sha256": "7336a0828c6a73a63add73570b1c293aec0f1d221a3bd17b31c64db409cadbc4",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-2",
+          "fragment": 0,
+          "page": 36,
+          "bbox": [
+            55.21049880981445,
+            289.0814208984375,
+            101.20050048828125,
+            301.20440673828125
+          ],
+          "literal_excerpt_sha256": "8ecb7b11c65324feaad77a7d96dc9279732ef20e5cf42d1443171866f7bec94a",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-2",
+          "fragment": 1,
+          "page": 36,
+          "bbox": [
+            117.37439727783203,
+            283.68145751953125,
+            202.36143493652344,
+            306.60443115234375
+          ],
+          "literal_excerpt_sha256": "99fd73af7edeb8639c68bd9f05bd619ab71fd4ea8b5d54b390acf6181ca5c7d0",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-2",
+          "fragment": 2,
+          "page": 36,
+          "bbox": [
+            211.2530975341797,
+            283.68145751953125,
+            287.9871520996094,
+            306.60443115234375
+          ],
+          "literal_excerpt_sha256": "da282b6213ec4bbb80faf593b30831dcb55a8e074eb097117459bb774805114f",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-3",
+          "fragment": 0,
+          "page": 36,
+          "bbox": [
+            57.95930099487305,
+            314.12164306640625,
+            98.45030975341797,
+            326.24462890625
+          ],
+          "literal_excerpt_sha256": "e968a52c3e90f08dcbeb7f3a9bf283cee110f4b16350b1b4104e64a6817ba971",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-3",
+          "fragment": 1,
+          "page": 36,
+          "bbox": [
+            118.5103988647461,
+            308.72161865234375,
+            201.2294158935547,
+            331.64459228515625
+          ],
+          "literal_excerpt_sha256": "cb1a1da5c18f1781f6fd900899ff4c352b407a615e58d506a7a587f5a70963cd",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-3",
+          "fragment": 2,
+          "page": 36,
+          "bbox": [
+            206.12899780273438,
+            314.12164306640625,
+            290.8641052246094,
+            326.24462890625
+          ],
+          "literal_excerpt_sha256": "20e1350cfab5676f4b64b8e779e3168acb4125740e366f75f85958a06901430b",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-4",
+          "fragment": 0,
+          "page": 36,
+          "bbox": [
+            58.95909881591797,
+            339.1618347167969,
+            97.45210266113281,
+            351.2848205566406
+          ],
+          "literal_excerpt_sha256": "ee50086a5709540e3c5ebc4237a08e9ba454e960b9fbcae2f9dcb4aade7d2045",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-4",
+          "fragment": 1,
+          "page": 36,
+          "bbox": [
+            114.49819946289062,
+            333.7618408203125,
+            205.23623657226562,
+            356.684814453125
+          ],
+          "literal_excerpt_sha256": "18df19a1de3fdad10f57365c4b323143530866cdd3792eff71638a396584efa5",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-4",
+          "fragment": 2,
+          "page": 36,
+          "bbox": [
+            216.00140380859375,
+            333.7618408203125,
+            283.2403869628906,
+            356.684814453125
+          ],
+          "literal_excerpt_sha256": "7666b55a9ffff78055e868b8ea565b4907e4e458d1b093660830763745add5d7",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-5",
+          "fragment": 0,
+          "page": 36,
+          "bbox": [
+            60.20930099487305,
+            364.2021179199219,
+            96.20030975341797,
+            376.3251037597656
+          ],
+          "literal_excerpt_sha256": "85eb0d83d9bd5242e57e585ae04a0a9e1c7f60326e76e5ad171f97e8a8c0453b",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-5",
+          "fragment": 1,
+          "page": 36,
+          "bbox": [
+            117.5062026977539,
+            358.8021240234375,
+            202.23223876953125,
+            381.7251281738281
+          ],
+          "literal_excerpt_sha256": "59d5ad7338e5e7f8f4a323b38f8b56f65d2badba528ba60a352b6964cc3b73c6",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-5",
+          "fragment": 2,
+          "page": 36,
+          "bbox": [
+            223.50059509277344,
+            358.8021240234375,
+            275.614501953125,
+            381.7251281738281
+          ],
+          "literal_excerpt_sha256": "ab4d2f745268e5942b5c7325fc676340d314234505071d10c65db7fc59679747",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-6",
+          "fragment": 0,
+          "page": 36,
+          "bbox": [
+            60.79159927368164,
+            389.2423400878906,
+            95.62159729003906,
+            401.3653259277344
+          ],
+          "literal_excerpt_sha256": "818768e174a677b5b4cce804132c0c9998c45f836a49f80faf58044fff7f770d",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-6",
+          "fragment": 1,
+          "page": 36,
+          "bbox": [
+            119.25749969482422,
+            389.2423400878906,
+            198.23251342773438,
+            401.3653259277344
+          ],
+          "literal_excerpt_sha256": "646ec69a2e49c813b2073f762fe743d045974d4461a367cd090eac88ae179a99",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-6",
+          "fragment": 2,
+          "page": 36,
+          "bbox": [
+            223.25450134277344,
+            383.8423156738281,
+            275.8634033203125,
+            406.76531982421875
+          ],
+          "literal_excerpt_sha256": "58f18bf6b9836d32f45369910217c98e1ae8a4a80fa47c803dc2784fd6e3fc5a",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-7",
+          "fragment": 0,
+          "page": 36,
+          "bbox": [
+            54.2130012512207,
+            414.28253173828125,
+            102.20101165771484,
+            426.405517578125
+          ],
+          "literal_excerpt_sha256": "76e4db06bacbea5853fad638e6ba4ba5e12b64728167c3ee848f483985e88aad",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-7",
+          "fragment": 1,
+          "page": 36,
+          "bbox": [
+            127.62899780273438,
+            408.8825378417969,
+            192.10501098632812,
+            431.8055114746094
+          ],
+          "literal_excerpt_sha256": "25964d84aa223f5f776c639c048a987a29518a292d06b0598f46ad4337ab776b",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-flow-row-7",
+          "fragment": 2,
+          "page": 36,
+          "bbox": [
+            223.24789428710938,
+            408.8825378417969,
+            275.9879150390625,
+            431.8055114746094
+          ],
+          "literal_excerpt_sha256": "9a6434522dc3dad1ad10cb173a5eadff77fd19bfb5fe8de04078c390a1cf444f",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-16",
+          "fragment": 0,
+          "page": 36,
+          "bbox": [
+            43.9370002746582,
+            443.4385070800781,
+            294.23406982421875,
+            791.5054931640625
+          ],
+          "literal_excerpt_sha256": "e928ad1eccaa6149d8ea008164bf1fc511423bd572bdf7cd5cdee03b67172b1b",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        },
+        {
+          "key": "annex-section-17",
+          "fragment": 0,
+          "page": 36,
+          "bbox": [
+            306.1416931152344,
+            70.15420532226562,
+            556.441650390625,
+            148.42120361328125
+          ],
+          "literal_excerpt_sha256": "3e1d5c2dc50432eb99d614d524d3acdccc786303f755693e6294194a3db82668",
+          "native_bbox_contains_complete_excerpt": true,
+          "within_selected_region": true,
+          "passed": true
+        }
+      ],
+      "flow_table": {
+        "independent_find_tables_count": 1,
+        "rows_with_header": 8,
+        "columns": 3,
+        "cell_count": 24,
+        "body_steps": 7,
+        "bbox": [
+          44.56878456702599,
+          223.496337890625,
+          291.5240953233507,
+          433.0425109863281
+        ],
+        "cell_checks": [
+          {
+            "row": 0,
+            "column": 0,
+            "source_text": "ETAPA",
+            "match": true
+          },
+          {
+            "row": 0,
+            "column": 1,
+            "source_text": "PERGUNTA ORIENTADORA",
+            "match": true
+          },
+          {
+            "row": 0,
+            "column": 2,
+            "source_text": "PRODUTO ESPERADO",
+            "match": true
+          },
+          {
+            "row": 1,
+            "column": 0,
+            "source_text": "1. Diagnosticar",
+            "match": true
+          },
+          {
+            "row": 1,
+            "column": 1,
+            "source_text": "O que o estudante já aprendeu?",
+            "match": true
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "source_text": "Perfil de aprendizagem",
+            "match": true
+          },
+          {
+            "row": 2,
+            "column": 0,
+            "source_text": "2. Identificar",
+            "match": true
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "source_text": "Quais são as principais lacunas?",
+            "match": true
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "source_text": "Mapa de habilidades não consolidadas",
+            "match": true
+          },
+          {
+            "row": 3,
+            "column": 0,
+            "source_text": "3. Priorizar",
+            "match": true
+          },
+          {
+            "row": 3,
+            "column": 1,
+            "source_text": "O que é essencial para avançar?",
+            "match": true
+          },
+          {
+            "row": 3,
+            "column": 2,
+            "source_text": "Habilidades prioritárias",
+            "match": true
+          },
+          {
+            "row": 4,
+            "column": 0,
+            "source_text": "4. Planejar",
+            "match": true
+          },
+          {
+            "row": 4,
+            "column": 1,
+            "source_text": "Como desenvolver essas aprendizagens?",
+            "match": true
+          },
+          {
+            "row": 4,
+            "column": 2,
+            "source_text": "Plano/intervenção pedagógica",
+            "match": true
+          },
+          {
+            "row": 5,
+            "column": 0,
+            "source_text": "5. Intervir",
+            "match": true
+          },
+          {
+            "row": 5,
+            "column": 1,
+            "source_text": "Quais estratégias serão utilizadas?",
+            "match": true
+          },
+          {
+            "row": 5,
+            "column": 2,
+            "source_text": "Atividades de recomposição",
+            "match": true
+          },
+          {
+            "row": 6,
+            "column": 0,
+            "source_text": "6. Avaliar",
+            "match": true
+          },
+          {
+            "row": 6,
+            "column": 1,
+            "source_text": "O estudante avançou?",
+            "match": true
+          },
+          {
+            "row": 6,
+            "column": 2,
+            "source_text": "Evidências de aprendizagem",
+            "match": true
+          },
+          {
+            "row": 7,
+            "column": 0,
+            "source_text": "7. Replanejar",
+            "match": true
+          },
+          {
+            "row": 7,
+            "column": 1,
+            "source_text": "O que precisa ser ajustado?",
+            "match": true
+          },
+          {
+            "row": 7,
+            "column": 2,
+            "source_text": "Novo ciclo de intervenção",
+            "match": true
+          }
+        ],
+        "classification": "Pedagogical planning flow; not student learning skills or objectives"
+      },
+      "sidecar_unchanged_after_review": true
+    }
+  ],
+  "failures": [],
+  "human_review": false,
+  "visual_review": {
+    "actor_type": "automated",
+    "original_pages_inspected": [
+      20,
+      21,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "focus": "Normative scope starts/ends, both-column continuations, chapter/article/annex boundaries, full 8x3 pedagogical flow table, exclusion of SEMA/Cultura/Portaria182.",
+    "private_render_root": "var/private-evidence/source-audit-ma-current/acts"
+  },
+  "factual_limits": [
+    "Proves the two selected acts and annex sidecars only; no final national sharded artifact, database import or product/API journey checked here.",
+    "Source211 expands literal Educação Básica scope to EI/EF/EM and canonical topic Computação. Source181 preserves documentary scope with EM/Língua Portuguesa and EM/Matemática positions. These are normative scope classifications, not year allocations, local learning codes or automatic equivalences.",
+    "Portaria181 references Matrizes de Recomposição and structured teaching materials supplied by SEDUC in partnership with Grupo Eureka (annex section5, original p35); those materials are not reproduced by this act/sidecar, and their full curriculum-content inventory remains separate.",
+    "The approved DCTMA Educação Digital e Midiática itself and future operational act under Res211 art5 are not contained in these 95records.",
+    "Normalization reviewed here removes only soft-hyphen line breaks and collapses whitespace; no spelling/legal meaning correction or equivalence relation was inferred."
+  ],
+  "geometric_scope_tolerance_pt": 0.5,
+  "geometric_tolerance_note": "The original PDF native extraction includes complete glyphs whose extents overhang the declared clip edge by at most0.471pt. Initial0.2pt containment was overstrict. Excerpts still match complete native bbox text and all726source lines are assigned once; no neighboring matter entered.",
+  "glyph_overhang_calibration": [
+    {
+      "key": "ementa",
+      "page": 20,
+      "right_glyph_bbox_overhang_pt": 0.4365234375
+    },
+    {
+      "key": "preamble",
+      "page": 20,
+      "right_glyph_bbox_overhang_pt": 0.47100830078125
+    },
+    {
+      "key": "considerando-1",
+      "page": 20,
+      "right_glyph_bbox_overhang_pt": 0.41827392578125
+    },
+    {
+      "key": "considerando-3",
+      "page": 20,
+      "right_glyph_bbox_overhang_pt": 0.43621826171875
+    },
+    {
+      "key": "considerando-4",
+      "page": 20,
+      "right_glyph_bbox_overhang_pt": 0.4263916015625
+    },
+    {
+      "key": "considerando-5",
+      "page": 20,
+      "right_glyph_bbox_overhang_pt": 0.429931640625
+    },
+    {
+      "key": "considerando-6",
+      "page": 20,
+      "right_glyph_bbox_overhang_pt": 0.4244384765625
+    },
+    {
+      "key": "considerando-8",
+      "page": 20,
+      "right_glyph_bbox_overhang_pt": 0.431640625
+    },
+    {
+      "key": "article-1",
+      "page": 20,
+      "right_glyph_bbox_overhang_pt": 0.42779541015625
+    },
+    {
+      "key": "article-2",
+      "page": 20,
+      "right_glyph_bbox_overhang_pt": 0.43817138671875
+    }
+  ],
+  "context_metadata_findings": [
+    {
+      "source_id": "ma-portaria-181-2026-recomposicao-doe",
+      "field": "positions.component",
+      "records_affected": 76,
+      "observation": "All76positions contain component=null, while the ementa, art1 and annex explicitly delimit LP and Mathematics. Source metadata retains both components, but item facet context does not.",
+      "recommendation": "Represent two documentary-scope positions per normative node: EM/Língua Portuguesa and EM/Matemática, with years, age_group and period still null. This denotes the act scope, not student skills or code equivalence.",
+      "source_evidence": [
+        {
+          "page": 31,
+          "section": "ementa and art1"
+        },
+        {
+          "page": 34,
+          "section": "Anexo Único section1"
+        },
+        {
+          "page": 36,
+          "section": "Anexo Único section16"
+        }
+      ],
+      "author_notified": true,
+      "disposition": "resolved_by_author_and_independently_reverified",
+      "resolved_sidecar_sha256": "e3e12025f883a2468ee8e15e03cc1dc9ccef9317c7a7e3bfd1f609146e4ab296",
+      "positions_after": [
+        "EM/Língua Portuguesa",
+        "EM/Matemática"
+      ]
+    }
+  ],
+  "final_cycle_counts": {
+    "records": 95,
+    "record_assertions": 1368,
+    "fragments": 118,
+    "source_lines": 726,
+    "table_cells": 24
+  },
+  "scope_of_hash_change": "Author reported documentary positions and explicit basis metadata as the correction. This peer independently reran all95record,118fragment,726line and24table-cell checks and verified every text,kind andparent identical to the prior peer cotejo."
+}

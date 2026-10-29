@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "command": [
+    "docker",
+    "compose",
+    "--progress",
+    "plain",
+    "build",
+    "app"
+  ],
+  "completed_at": "2026-10-28T05:50:16.758Z",
+  "exit_code": 0,
+  "method": "standard-docker-compose-build",
+  "image": "curriculos-abertos:local",
+  "image_id": "sha256:e2a22710ec79cd6a55069315c5513982ac7998b360465d103ed2a38c511c8286",
+  "image_source_tree_sha256": "1602bdb851eefc77a3d79ac90c86fbc77a317959b511131d3f09dee29f4af438",
+  "current_source_tree_sha256": "be4c3e4cbb71dc8d81d49df10013d8164382688bb789ef3ff7a91444c64febf7",
+  "log": "docs/evidence/docker-compose-build-admin-labels.log",
+  "log_sha256": "2c58409d10ff11f8df9e00b2df21c084f6641d27fb0cc2a587971956b9fc9ea8",
+  "passed": true,
+  "final_image": false,
+  "limitation": "Technical QA image. Subsequent accessibility, test and pipeline changes require a grouped rebuild before final fingerprint verification."
+}

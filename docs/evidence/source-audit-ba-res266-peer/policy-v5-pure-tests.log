@@ -1,0 +1,42 @@
+✔ age range parses only bounded inclusive documented months without guessing from group labels (2.290584ms)
+✔ age SQL uses parameterized intersection and both original labels; unknowns require an explicit opt-in (4.03875ms)
+✔ documented uncoded expectations differ from formation purposes, rights, assessment and reference context (1.912125ms)
+✖ every kind in the real uncoded sidecar inventory has an explicit reviewed category (1776.722292ms)
+✔ experience counts preserve a disjoint exhaustive decomposition without inflating learning outcomes (0.891167ms)
+✔ reviewed ES component purposes, teacher guidance and observation indicators retain distinct documentary roles (42.090041ms)
+✔ ES learning synthesis keeps its source warning, pending OCR and unknown ages while remaining distinct from conceptual exposition (41.768708ms)
+✔ BA266 legal propositions and historical Parecer material remain legal/documentary roles without invented learning codes (8.617833ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 7
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2156.290459
+
+✖ failing tests:
+
+test at tests/domain.item-kinds.test.ts:1:2081
+✖ every kind in the real uncoded sidecar inventory has an explicit reviewed category (1776.722292ms)
+  AssertionError [ERR_ASSERTION]: A new documentary role needs an explicit policy decision, not a substring guess.
+  + actual - expected
+  
+  + [
+  +   'dispositivo_normativo_alterado',
+  +   'grupo_direitos_aprendizagem',
+  +   'oferta_trilha',
+  +   'trilha_curricular'
+  + ]
+  - []
+  
+      at TestContext.<anonymous> (/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/domain.item-kinds.test.ts:16:143)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 'dispositivo_normativo_alterado', 'grupo_direitos_aprendizagem', 'oferta_trilha', 'trilha_curricular' ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

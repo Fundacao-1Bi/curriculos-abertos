@@ -1,0 +1,5049 @@
+{
+  "source_id": "mg-crmg-eief-atualizada",
+  "result": "passed",
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:body-runtime-verifier",
+  "source_sha256": "792857369c0c80dd87fff092137053e7a5cbed1c61fcbbd6caa6efbc072154ea",
+  "cache_path": "data/extracted/792857369c0c80dd87fff092137053e7a5cbed1c61fcbbd6caa6efbc072154ea-page-cell-v1.5.0.json",
+  "cache_sha256": "262906229515c7c821f8196986eeab3ccf01719d73c2a7461e88f2f4c9c97768",
+  "input_pins": {
+    "data/manifests/uncoded/mg-coded-body-mg-crmg-eief-atualizada-v1-items.json": "1f86d97c4638073b4b61b5b587d85d243050c3bb1131f8f22df370b94cb48347",
+    "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-proposal.json": "a698bcd9080a2acace6d3926d8ebd17b386ea895bb2e9d984de087231dcf820d",
+    "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-body-diff.json": "10d8e25aa1e87a2863f3606528b5a1efe7428140c5f832cc8157d49f418d7d7b",
+    "data/manifests/bncc-southeast.json": "4ac8f7ff71edb63e756e1566fdf26859c83ef7fb11cd9706f1219987fe6dbb34",
+    "docs/evidence/native-body-completeness-audit/repair-coded-bodies.py": "4f33517cacd15524eec9078162df2ea00c9151df0966eb298b84014dd25b41c0",
+    "docs/evidence/native-body-completeness-audit/audit.py": "30e6540dde54ec1721be4d6d9c15e5ba1a47f256134085eafce7e3f7ca071c4a",
+    "data/manifests/uncoded/mg-eief-structured-items.json": "9615a86a6cb029bf46f12eac429ed0088f81e2772b6b80c423269d6374c3d4c4",
+    "data/manifests/uncoded/mg-ei-organizers-v1-items.json": "c956fbcf53322b2b40d274758d05b1bc09e44a6bdcaa28d64ffd2fb744f7d395",
+    "docs/evidence/source-audit-southeast-completeness/mg-ei-organizers-column-role-map-v1.json": "a4675551e5f2593dbcd51655615dc74d7988d69e6eac72631327c406a0d51357"
+  },
+  "composition_inputs": [
+    {
+      "path": "data/manifests/uncoded/mg-eief-structured-items.json",
+      "sha256": "9615a86a6cb029bf46f12eac429ed0088f81e2772b6b80c423269d6374c3d4c4",
+      "record_count": 113
+    },
+    {
+      "path": "data/manifests/uncoded/mg-ei-organizers-v1-items.json",
+      "sha256": "c956fbcf53322b2b40d274758d05b1bc09e44a6bdcaa28d64ffd2fb744f7d395",
+      "record_count": 268
+    },
+    {
+      "path": "data/manifests/uncoded/mg-coded-body-mg-crmg-eief-atualizada-v1-items.json",
+      "sha256": "1f86d97c4638073b4b61b5b587d85d243050c3bb1131f8f22df370b94cb48347",
+      "record_count": 1826
+    }
+  ],
+  "composed_path": "data/manifests/uncoded/mg-coded-body-composed-mg-crmg-eief-atualizada-v1-items.json",
+  "composed_sha256": "1ed931e9183b540f7baed54f9093a2082fa2aba5db5f7f781b6190b88b2be8ba",
+  "proposed_authority": {
+    "coded_learning_ranges": [
+      [
+        49,
+        49
+      ],
+      [
+        68,
+        73
+      ],
+      [
+        75,
+        75
+      ],
+      [
+        77,
+        88
+      ],
+      [
+        90,
+        90
+      ],
+      [
+        92,
+        94
+      ],
+      [
+        96,
+        103
+      ],
+      [
+        105,
+        107
+      ],
+      [
+        109,
+        134
+      ],
+      [
+        136,
+        142
+      ],
+      [
+        196,
+        306
+      ],
+      [
+        320,
+        339
+      ],
+      [
+        359,
+        367
+      ],
+      [
+        370,
+        370
+      ],
+      [
+        373,
+        374
+      ],
+      [
+        378,
+        379
+      ],
+      [
+        383,
+        384
+      ],
+      [
+        403,
+        410
+      ],
+      [
+        489,
+        489
+      ],
+      [
+        497,
+        497
+      ],
+      [
+        536,
+        547
+      ],
+      [
+        560,
+        561
+      ],
+      [
+        563,
+        567
+      ],
+      [
+        569,
+        569
+      ],
+      [
+        571,
+        572
+      ],
+      [
+        575,
+        579
+      ],
+      [
+        595,
+        603
+      ]
+    ]
+  },
+  "blocked_pages": [],
+  "counts": {
+    "cache_items": 3067,
+    "baseline_items": 3180,
+    "body_repairs": 1826,
+    "composed_adapter_records": 2207,
+    "real_loader_records": 2207,
+    "real_finalizer_records": 3461,
+    "schema_passed": 3461,
+    "literal_adapter_evidence_passed": 2207,
+    "complete_character_receipts": 1826,
+    "valid_coded_id_context_preserved": 1810,
+    "valid_coded_full_context_exact": 1711,
+    "unaffected_records_preserved": 1367,
+    "unaffected_records_exact_including_review_time": 1254,
+    "automated_revalidation_event_timestamps": 113,
+    "explicit_invalid_supersessions": 3,
+    "new_canonical_records": 284,
+    "documentary_EI_age_context_enrichments": 99
+  },
+  "new_canonical_records": [
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:field:2ffc1840643029b3",
+      "code": null,
+      "page": 68,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:field:2ffc1840643029b3"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:age:56034783b19a5c67",
+      "code": null,
+      "page": 68,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:age:56034783b19a5c67"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:9af558dd55b9c828d582182b",
+      "code": null,
+      "page": 68,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:9af558dd55b9c828d582182b"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:9db3ed87c617599789555f32",
+      "code": null,
+      "page": 68,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:9db3ed87c617599789555f32"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:d2e989a43b7a42b2c88019fb",
+      "code": null,
+      "page": 68,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:d2e989a43b7a42b2c88019fb"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:689abddd2e686c0f2c756a60",
+      "code": null,
+      "page": 68,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:689abddd2e686c0f2c756a60"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:f9f1608c333395dc3983093d",
+      "code": null,
+      "page": 68,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:f9f1608c333395dc3983093d"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:47bc613badaaa941d10f4a99",
+      "code": null,
+      "page": 68,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:47bc613badaaa941d10f4a99"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p68",
+      "code": null,
+      "page": 68,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p68"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p68",
+      "code": null,
+      "page": 68,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p68"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p69",
+      "code": null,
+      "page": 69,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p69"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p69",
+      "code": null,
+      "page": 69,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p69"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p70",
+      "code": null,
+      "page": 70,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p70"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p70",
+      "code": null,
+      "page": 70,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p70"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p71",
+      "code": null,
+      "page": 71,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p71"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p71",
+      "code": null,
+      "page": 71,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p71"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p72",
+      "code": null,
+      "page": 72,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p72"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p72",
+      "code": null,
+      "page": 72,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p72"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:age:b05bbd65efd43324",
+      "code": null,
+      "page": 73,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:age:b05bbd65efd43324"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:ca6a429ff3ecdc456cdf9aee",
+      "code": null,
+      "page": 73,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:ca6a429ff3ecdc456cdf9aee"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:791abe97ee5ea4a0f36a8b9d",
+      "code": null,
+      "page": 73,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:791abe97ee5ea4a0f36a8b9d"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:90abbf78dd8283b35562cc32",
+      "code": null,
+      "page": 73,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:90abbf78dd8283b35562cc32"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:82ed0fef6c4996ac614d683e",
+      "code": null,
+      "page": 73,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:82ed0fef6c4996ac614d683e"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:d40d2bf21aeedee6129c64d8",
+      "code": null,
+      "page": 73,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:d40d2bf21aeedee6129c64d8"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:d97d4698440f2473e08be811",
+      "code": null,
+      "page": 73,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:d97d4698440f2473e08be811"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p73",
+      "code": null,
+      "page": 73,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p73"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p73",
+      "code": null,
+      "page": 73,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p73"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:a8c445e91d76e6d835661138",
+      "code": null,
+      "page": 74,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:a8c445e91d76e6d835661138"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:87fcb11c11f1fdcd8f1de238",
+      "code": null,
+      "page": 74,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:87fcb11c11f1fdcd8f1de238"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p74",
+      "code": null,
+      "page": 74,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p74"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p74",
+      "code": null,
+      "page": 74,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p74"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p75",
+      "code": null,
+      "page": 75,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p75"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p75",
+      "code": null,
+      "page": 75,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p75"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p76",
+      "code": null,
+      "page": 76,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p76"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p76",
+      "code": null,
+      "page": 76,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p76"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p77",
+      "code": null,
+      "page": 77,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p77"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p77",
+      "code": null,
+      "page": 77,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p77"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p78",
+      "code": null,
+      "page": 78,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p78"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p78",
+      "code": null,
+      "page": 78,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p78"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:age:8e57865cf47b397a",
+      "code": null,
+      "page": 79,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:age:8e57865cf47b397a"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:7a489e6126e0dc0f26cdb80d",
+      "code": null,
+      "page": 79,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:7a489e6126e0dc0f26cdb80d"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:fda3eb68ad160d549a2cf4a9",
+      "code": null,
+      "page": 79,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:fda3eb68ad160d549a2cf4a9"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:aa0253b3e43b1747f57b84da",
+      "code": null,
+      "page": 79,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:aa0253b3e43b1747f57b84da"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:25e2ac77cff7f27ab83f8337",
+      "code": null,
+      "page": 79,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:25e2ac77cff7f27ab83f8337"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:2ccee5a44927a8c303abcf95",
+      "code": null,
+      "page": 79,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:2ccee5a44927a8c303abcf95"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:308cfd65a5971e69d1effc4e",
+      "code": null,
+      "page": 79,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:308cfd65a5971e69d1effc4e"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p79",
+      "code": null,
+      "page": 79,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p79"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p79",
+      "code": null,
+      "page": 79,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p79"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:879b0883eb3baab3326e18b6",
+      "code": null,
+      "page": 80,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:879b0883eb3baab3326e18b6"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:a8fa843886375c3fc67a5e7e",
+      "code": null,
+      "page": 80,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:a8fa843886375c3fc67a5e7e"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p80",
+      "code": null,
+      "page": 80,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p80"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p80",
+      "code": null,
+      "page": 80,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p80"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:1a0c6056d345711b0f1194a5",
+      "code": null,
+      "page": 81,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:1a0c6056d345711b0f1194a5"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p81",
+      "code": null,
+      "page": 81,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p81"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p81",
+      "code": null,
+      "page": 81,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p81"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:1ea2c2518494313610dd0637",
+      "code": null,
+      "page": 82,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:1ea2c2518494313610dd0637"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:7c4b455252f4e431022ce6b8",
+      "code": null,
+      "page": 82,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:7c4b455252f4e431022ce6b8"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p82",
+      "code": null,
+      "page": 82,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p82"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p82",
+      "code": null,
+      "page": 82,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p82"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:field:0f4ba8acf63ee62e",
+      "code": null,
+      "page": 83,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:field:0f4ba8acf63ee62e"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:age:d3c54bec77c3ae74",
+      "code": null,
+      "page": 83,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:age:d3c54bec77c3ae74"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:8ccfdce179bda2d3747e4bbc",
+      "code": null,
+      "page": 83,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:8ccfdce179bda2d3747e4bbc"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:3c9a3353310eb989ab9139ff",
+      "code": null,
+      "page": 83,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:3c9a3353310eb989ab9139ff"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:c893a3c3e99550a4dda95ed2",
+      "code": null,
+      "page": 83,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:c893a3c3e99550a4dda95ed2"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:3c1e3d3e32d6bb65e81a9b13",
+      "code": null,
+      "page": 83,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:3c1e3d3e32d6bb65e81a9b13"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:250a5d12b09857bcf641feb1",
+      "code": null,
+      "page": 83,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:250a5d12b09857bcf641feb1"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:a91133257f350a928094f169",
+      "code": null,
+      "page": 83,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:a91133257f350a928094f169"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p83",
+      "code": null,
+      "page": 83,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p83"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p83",
+      "code": null,
+      "page": 83,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p83"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p84",
+      "code": null,
+      "page": 84,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p84"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p84",
+      "code": null,
+      "page": 84,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p84"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p85",
+      "code": null,
+      "page": 85,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p85"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p85",
+      "code": null,
+      "page": 85,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p85"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:age:bf92117a3b96b2c7",
+      "code": null,
+      "page": 86,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:age:bf92117a3b96b2c7"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:d0d0fd80e4a581c39e6f7b0c",
+      "code": null,
+      "page": 86,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:d0d0fd80e4a581c39e6f7b0c"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:5a2694d69ec0befbe564a61d",
+      "code": null,
+      "page": 86,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:5a2694d69ec0befbe564a61d"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:435dde5d7014c79bcb22d861",
+      "code": null,
+      "page": 86,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:435dde5d7014c79bcb22d861"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:a7278a02149147f7054fe9cb",
+      "code": null,
+      "page": 86,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:a7278a02149147f7054fe9cb"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:8928d32eaba7760b082cbeba",
+      "code": null,
+      "page": 86,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:8928d32eaba7760b082cbeba"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:94e1ea1eb90c1d4f9f5b97d6",
+      "code": null,
+      "page": 86,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:94e1ea1eb90c1d4f9f5b97d6"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p86",
+      "code": null,
+      "page": 86,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p86"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p86",
+      "code": null,
+      "page": 86,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p86"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p87",
+      "code": null,
+      "page": 87,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p87"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p87",
+      "code": null,
+      "page": 87,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p87"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:28366b0ff00fb9863ede7230",
+      "code": null,
+      "page": 88,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:28366b0ff00fb9863ede7230"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p88",
+      "code": null,
+      "page": 88,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p88"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p88",
+      "code": null,
+      "page": 88,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p88"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p89",
+      "code": null,
+      "page": 89,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p89"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p89",
+      "code": null,
+      "page": 89,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p89"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p90",
+      "code": null,
+      "page": 90,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p90"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p90",
+      "code": null,
+      "page": 90,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p90"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:abe262b9fd93be7d7e56aece",
+      "code": null,
+      "page": 91,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:abe262b9fd93be7d7e56aece"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p91",
+      "code": null,
+      "page": 91,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p91"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p91",
+      "code": null,
+      "page": 91,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p91"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:age:f335b811905af2bf",
+      "code": null,
+      "page": 92,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:age:f335b811905af2bf"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:d86720a163921e39e25abdca",
+      "code": null,
+      "page": 92,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:d86720a163921e39e25abdca"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:32579a96029a90d85d80b69c",
+      "code": null,
+      "page": 92,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:32579a96029a90d85d80b69c"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:fc4423133d1eac8e0f98cc3d",
+      "code": null,
+      "page": 92,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:fc4423133d1eac8e0f98cc3d"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:636bd9d47b0be5b86eed979b",
+      "code": null,
+      "page": 92,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:636bd9d47b0be5b86eed979b"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:bbaa95cb15d07ff131d0c7b5",
+      "code": null,
+      "page": 92,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:bbaa95cb15d07ff131d0c7b5"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:4de60fbad1610d6e7326340a",
+      "code": null,
+      "page": 92,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:4de60fbad1610d6e7326340a"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p92",
+      "code": null,
+      "page": 92,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p92"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p92",
+      "code": null,
+      "page": 92,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p92"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p93",
+      "code": null,
+      "page": 93,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p93"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p93",
+      "code": null,
+      "page": 93,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p93"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p94",
+      "code": null,
+      "page": 94,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p94"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p94",
+      "code": null,
+      "page": 94,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p94"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p95",
+      "code": null,
+      "page": 95,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p95"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p95",
+      "code": null,
+      "page": 95,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p95"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:field:a00c4d96b794736c",
+      "code": null,
+      "page": 96,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:field:a00c4d96b794736c"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:age:0c41f6a0e0a85da0",
+      "code": null,
+      "page": 96,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:age:0c41f6a0e0a85da0"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:a8c989691e39b75b8a8b4841",
+      "code": null,
+      "page": 96,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:a8c989691e39b75b8a8b4841"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:5c761a4d08817843129d0275",
+      "code": null,
+      "page": 96,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:5c761a4d08817843129d0275"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:71b33fa76e233a31d9e04260",
+      "code": null,
+      "page": 96,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:71b33fa76e233a31d9e04260"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:64040d1ac146e67d4f1667bb",
+      "code": null,
+      "page": 96,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:64040d1ac146e67d4f1667bb"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:14b386776a08167dc9230b8d",
+      "code": null,
+      "page": 96,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:14b386776a08167dc9230b8d"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:0520132c3c50460f9ee81f3e",
+      "code": null,
+      "page": 96,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:0520132c3c50460f9ee81f3e"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p96",
+      "code": null,
+      "page": 96,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p96"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p96",
+      "code": null,
+      "page": 96,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p96"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p97",
+      "code": null,
+      "page": 97,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p97"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p97",
+      "code": null,
+      "page": 97,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p97"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p98",
+      "code": null,
+      "page": 98,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p98"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p98",
+      "code": null,
+      "page": 98,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p98"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:age:6c4b2643e3cc6ccb",
+      "code": null,
+      "page": 99,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:age:6c4b2643e3cc6ccb"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:16f7c6be7b9fc38751f5fc3b",
+      "code": null,
+      "page": 99,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:16f7c6be7b9fc38751f5fc3b"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:d7269eb4994f11f024516466",
+      "code": null,
+      "page": 99,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:d7269eb4994f11f024516466"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:95664bddec2e153cb5ec1d40",
+      "code": null,
+      "page": 99,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:95664bddec2e153cb5ec1d40"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:aeedd2c565f97a1194b2dd45",
+      "code": null,
+      "page": 99,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:aeedd2c565f97a1194b2dd45"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:fc1aca5ae42a06f05c0c9997",
+      "code": null,
+      "page": 99,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:fc1aca5ae42a06f05c0c9997"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:5d1784d1bbdd897f6d88c989",
+      "code": null,
+      "page": 99,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:5d1784d1bbdd897f6d88c989"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p99",
+      "code": null,
+      "page": 99,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p99"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p99",
+      "code": null,
+      "page": 99,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p99"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p100",
+      "code": null,
+      "page": 100,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p100"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p100",
+      "code": null,
+      "page": 100,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p100"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p101",
+      "code": null,
+      "page": 101,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p101"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p101",
+      "code": null,
+      "page": 101,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p101"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:age:cf4fe496705bcb48",
+      "code": null,
+      "page": 102,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:age:cf4fe496705bcb48"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:24063104849f52153ff3a335",
+      "code": null,
+      "page": 102,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:24063104849f52153ff3a335"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:722b061d954a37ba85168059",
+      "code": null,
+      "page": 102,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:722b061d954a37ba85168059"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:adb7d87ca61befa90d1c51ea",
+      "code": null,
+      "page": 102,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:adb7d87ca61befa90d1c51ea"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:2bf7cb4ccb50c694c090eeb9",
+      "code": null,
+      "page": 102,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:2bf7cb4ccb50c694c090eeb9"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:45593af437ff775d3f1c2bdc",
+      "code": null,
+      "page": 102,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:45593af437ff775d3f1c2bdc"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:285042055e89d9b5eb475371",
+      "code": null,
+      "page": 102,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:285042055e89d9b5eb475371"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p102",
+      "code": null,
+      "page": 102,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p102"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p102",
+      "code": null,
+      "page": 102,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p102"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p103",
+      "code": null,
+      "page": 103,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p103"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p103",
+      "code": null,
+      "page": 103,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p103"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p104",
+      "code": null,
+      "page": 104,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p104"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p104",
+      "code": null,
+      "page": 104,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p104"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p105",
+      "code": null,
+      "page": 105,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p105"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p105",
+      "code": null,
+      "page": 105,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p105"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:field:9041908f7990ea28",
+      "code": null,
+      "page": 106,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:field:9041908f7990ea28"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:age:e2d0ac0b0faf2c4f",
+      "code": null,
+      "page": 106,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:age:e2d0ac0b0faf2c4f"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:2f39bc8c2fd2042960c95a5c",
+      "code": null,
+      "page": 106,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:2f39bc8c2fd2042960c95a5c"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:26cb658ae1ac8075b23c8af4",
+      "code": null,
+      "page": 106,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:26cb658ae1ac8075b23c8af4"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:d10235a001ab4c5efc58eb26",
+      "code": null,
+      "page": 106,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:d10235a001ab4c5efc58eb26"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:1a303f792f974f327b9058e2",
+      "code": null,
+      "page": 106,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:1a303f792f974f327b9058e2"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:c95b88d8ab5b45aaf939476c",
+      "code": null,
+      "page": 106,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:c95b88d8ab5b45aaf939476c"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:6f53bcff9db0197fbd9d033e",
+      "code": null,
+      "page": 106,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:6f53bcff9db0197fbd9d033e"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p106",
+      "code": null,
+      "page": 106,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p106"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p106",
+      "code": null,
+      "page": 106,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p106"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p107",
+      "code": null,
+      "page": 107,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p107"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p107",
+      "code": null,
+      "page": 107,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p107"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p108",
+      "code": null,
+      "page": 108,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p108"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p108",
+      "code": null,
+      "page": 108,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p108"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p109",
+      "code": null,
+      "page": 109,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p109"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p109",
+      "code": null,
+      "page": 109,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p109"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p110",
+      "code": null,
+      "page": 110,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p110"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p110",
+      "code": null,
+      "page": 110,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p110"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p111",
+      "code": null,
+      "page": 111,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p111"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p111",
+      "code": null,
+      "page": 111,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p111"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p112",
+      "code": null,
+      "page": 112,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p112"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:age:210c504c6582b908",
+      "code": null,
+      "page": 113,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:age:210c504c6582b908"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:6606ce5daf352dabf26dc034",
+      "code": null,
+      "page": 113,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:6606ce5daf352dabf26dc034"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:1cd3a09fae84ff58256563b6",
+      "code": null,
+      "page": 113,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:1cd3a09fae84ff58256563b6"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:72637c2e94b983561cced17b",
+      "code": null,
+      "page": 113,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:72637c2e94b983561cced17b"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:9edf5c45d462489b7dcf13a7",
+      "code": null,
+      "page": 113,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:9edf5c45d462489b7dcf13a7"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:7350988db8070863fb27fb0b",
+      "code": null,
+      "page": 113,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:7350988db8070863fb27fb0b"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:b5f1709eab6a6c5288a4c7d9",
+      "code": null,
+      "page": 113,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:b5f1709eab6a6c5288a4c7d9"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p113",
+      "code": null,
+      "page": 113,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p113"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p113",
+      "code": null,
+      "page": 113,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p113"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p114",
+      "code": null,
+      "page": 114,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p114"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p114",
+      "code": null,
+      "page": 114,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p114"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p115",
+      "code": null,
+      "page": 115,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p115"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p115",
+      "code": null,
+      "page": 115,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p115"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p116",
+      "code": null,
+      "page": 116,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p116"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p116",
+      "code": null,
+      "page": 116,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p116"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p117",
+      "code": null,
+      "page": 117,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p117"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p117",
+      "code": null,
+      "page": 117,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p117"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p118",
+      "code": null,
+      "page": 118,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p118"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p118",
+      "code": null,
+      "page": 118,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p118"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:age:758c7b8b9351f039",
+      "code": null,
+      "page": 119,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:age:758c7b8b9351f039"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:6b5c474c495333e205321bf3",
+      "code": null,
+      "page": 119,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:6b5c474c495333e205321bf3"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:63a12389686a5405dd0b30a7",
+      "code": null,
+      "page": 119,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:63a12389686a5405dd0b30a7"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:6fe0b9664454d651fbaaaef5",
+      "code": null,
+      "page": 119,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:6fe0b9664454d651fbaaaef5"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:b02dd023ec8a056f5e9f6ebe",
+      "code": null,
+      "page": 119,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:b02dd023ec8a056f5e9f6ebe"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:89ddf3db635e8bc0cbc037ad",
+      "code": null,
+      "page": 119,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:89ddf3db635e8bc0cbc037ad"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:b7ad8d4b0f5cf5fa4a423f24",
+      "code": null,
+      "page": 119,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:b7ad8d4b0f5cf5fa4a423f24"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p119",
+      "code": null,
+      "page": 119,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p119"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p119",
+      "code": null,
+      "page": 119,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p119"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p120",
+      "code": null,
+      "page": 120,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p120"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p120",
+      "code": null,
+      "page": 120,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p120"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p121",
+      "code": null,
+      "page": 121,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p121"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p121",
+      "code": null,
+      "page": 121,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p121"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p122",
+      "code": null,
+      "page": 122,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p122"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p122",
+      "code": null,
+      "page": 122,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p122"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p123",
+      "code": null,
+      "page": 123,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p123"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p123",
+      "code": null,
+      "page": 123,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p123"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p124",
+      "code": null,
+      "page": 124,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p124"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p124",
+      "code": null,
+      "page": 124,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p124"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p125",
+      "code": null,
+      "page": 125,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p125"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p125",
+      "code": null,
+      "page": 125,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p125"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:field:2cecb0624b24b810",
+      "code": null,
+      "page": 126,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:field:2cecb0624b24b810"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:age:5ccaed71ea3a5484",
+      "code": null,
+      "page": 126,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:age:5ccaed71ea3a5484"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:606f49bb6dd697dad3d6453c",
+      "code": null,
+      "page": 126,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:606f49bb6dd697dad3d6453c"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:7bf0baf326f27ea7fa96e756",
+      "code": null,
+      "page": 126,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:7bf0baf326f27ea7fa96e756"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:5bb44733fe148a534dd1e9bf",
+      "code": null,
+      "page": 126,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:5bb44733fe148a534dd1e9bf"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:b27cf51059a03ff192c80d27",
+      "code": null,
+      "page": 126,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:b27cf51059a03ff192c80d27"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:8e66b19d14ff7c2b4a4a0890",
+      "code": null,
+      "page": 126,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:8e66b19d14ff7c2b4a4a0890"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:d77650fafa7101c5083bdd7e",
+      "code": null,
+      "page": 126,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:d77650fafa7101c5083bdd7e"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p126",
+      "code": null,
+      "page": 126,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p126"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p126",
+      "code": null,
+      "page": 126,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p126"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p127",
+      "code": null,
+      "page": 127,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p127"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p127",
+      "code": null,
+      "page": 127,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p127"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p128",
+      "code": null,
+      "page": 128,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p128"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p128",
+      "code": null,
+      "page": 128,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p128"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p129",
+      "code": null,
+      "page": 129,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p129"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p129",
+      "code": null,
+      "page": 129,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p129"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:age:c8cd04e505669601",
+      "code": null,
+      "page": 130,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:age:c8cd04e505669601"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:08e63da72953044dd1f0d716",
+      "code": null,
+      "page": 130,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:08e63da72953044dd1f0d716"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:62a1ef86859cc7ba7487fcf4",
+      "code": null,
+      "page": 130,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:62a1ef86859cc7ba7487fcf4"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:846fb1f622dcb8aecf377f0e",
+      "code": null,
+      "page": 130,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:846fb1f622dcb8aecf377f0e"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:9ecdde7b9271df0e5bc97215",
+      "code": null,
+      "page": 130,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:9ecdde7b9271df0e5bc97215"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:f86dcf905452c4d844cac46a",
+      "code": null,
+      "page": 130,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:f86dcf905452c4d844cac46a"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:d8e012a8b905a4808b4a0755",
+      "code": null,
+      "page": 130,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:d8e012a8b905a4808b4a0755"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p130",
+      "code": null,
+      "page": 130,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p130"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p130",
+      "code": null,
+      "page": 130,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p130"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p131",
+      "code": null,
+      "page": 131,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p131"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p131",
+      "code": null,
+      "page": 131,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p131"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p132",
+      "code": null,
+      "page": 132,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p132"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p132",
+      "code": null,
+      "page": 132,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p132"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p133",
+      "code": null,
+      "page": 133,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p133"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p133",
+      "code": null,
+      "page": 133,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p133"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p134",
+      "code": null,
+      "page": 134,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p134"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p134",
+      "code": null,
+      "page": 134,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p134"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p135",
+      "code": null,
+      "page": 135,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p135"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p135",
+      "code": null,
+      "page": 135,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p135"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:age:b04606fe89cb8935",
+      "code": null,
+      "page": 136,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:age:b04606fe89cb8935"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:012c22dcd70ad52edb85cdee",
+      "code": null,
+      "page": 136,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:012c22dcd70ad52edb85cdee"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:8a7984e30323fb1409a15d9a",
+      "code": null,
+      "page": 136,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:8a7984e30323fb1409a15d9a"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:88aaaaf354056e80518274d7",
+      "code": null,
+      "page": 136,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:88aaaaf354056e80518274d7"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:ff93a75774214e126ae482eb",
+      "code": null,
+      "page": 136,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:ff93a75774214e126ae482eb"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:84617e701537c1356ab38281",
+      "code": null,
+      "page": 136,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:84617e701537c1356ab38281"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:right:f054a55adcece58d27ba2e7e",
+      "code": null,
+      "page": 136,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:right:f054a55adcece58d27ba2e7e"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p136",
+      "code": null,
+      "page": 136,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p136"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p136",
+      "code": null,
+      "page": 136,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p136"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p137",
+      "code": null,
+      "page": 137,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p137"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p137",
+      "code": null,
+      "page": 137,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p137"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p138",
+      "code": null,
+      "page": 138,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p138"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p138",
+      "code": null,
+      "page": 138,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p138"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p139",
+      "code": null,
+      "page": 139,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p139"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p139",
+      "code": null,
+      "page": 139,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p139"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p140",
+      "code": null,
+      "page": 140,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p140"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p140",
+      "code": null,
+      "page": 140,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p140"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p141",
+      "code": null,
+      "page": 141,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p141"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p141",
+      "code": null,
+      "page": 141,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p141"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:didactic:p142",
+      "code": null,
+      "page": 142,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:didactic:p142"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:experiences:p142",
+      "code": null,
+      "page": 142,
+      "locator": "mg-ei-organizers-v1/mg-ei-organizer:experiences:p142"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:9cffb3a43a109b0223be",
+      "code": "EI01TS01",
+      "page": 49,
+      "locator": "native-coded-body:p49:column:0:identifier:EI01TS01"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:78980b34513b4b431ea1",
+      "code": "EI02TS01",
+      "page": 49,
+      "locator": "native-coded-body:p49:column:1:identifier:EI02TS01"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:d1b348e35d3371d50ef6",
+      "code": "EI03TS01X",
+      "page": 49,
+      "locator": "native-coded-body:p49:column:2:identifier:EI03TS01X"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:9717929290a0d7506acf",
+      "code": "EI01TS02",
+      "page": 49,
+      "locator": "native-coded-body:p49:column:0:identifier:EI01TS02"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:cf29c1436bba89a04a61",
+      "code": "EI02TS02X",
+      "page": 49,
+      "locator": "native-coded-body:p49:column:1:identifier:EI02TS02X"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:dcc00190856b5c5bcc6c",
+      "code": "EI03TS02",
+      "page": 49,
+      "locator": "native-coded-body:p49:column:2:identifier:EI03TS02"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:4b1399b8f4fb16989b6e",
+      "code": "EI01TS03",
+      "page": 49,
+      "locator": "native-coded-body:p49:column:0:identifier:EI01TS03"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:343481767f4844c0c5c7",
+      "code": "EI02TS03",
+      "page": 49,
+      "locator": "native-coded-body:p49:column:1:identifier:EI02TS03"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:26d9bd6f7b0b25b2cdea",
+      "code": "EI03TS03",
+      "page": 49,
+      "locator": "native-coded-body:p49:column:2:identifier:EI03TS03"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:ca453e79fe374da2dd40",
+      "code": "EI01TS04 MG",
+      "page": 49,
+      "locator": "table:0/row:22/cell:1"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:6f91ab7834900cc02711",
+      "code": "EI02TS04 MG",
+      "page": 49,
+      "locator": "table:0/row:22/cell:4"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:76d1cc69f566ea387ba3",
+      "code": "EI03TS04 MG",
+      "page": 49,
+      "locator": "table:0/row:22/cell:7"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:1d0667b439c43ae78823",
+      "code": "ER04ER11MG",
+      "page": 597,
+      "locator": "native-coded-body:p597:literal:ER04ER11MG"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:cad16d5d1ebfc1c65704",
+      "code": "ER06ER10MG",
+      "page": 599,
+      "locator": "native-coded-body:p599:literal:ER06ER10MG"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:df881599f18073a15f69",
+      "code": "ER09ER11MG",
+      "page": 603,
+      "locator": "native-coded-body:p603:literal:ER09ER11MG"
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:5db4e9872cb097809ac4",
+      "code": "ER09ER12MG",
+      "page": 603,
+      "locator": "native-coded-body:p603:literal:ER09ER12MG"
+    }
+  ],
+  "superseded_invalid_records": [
+    {
+      "old_id": "ca:mg-crmg-eief-atualizada:55aeb8be0c9aca5ce461",
+      "old_code": "EI01TS04",
+      "old_text": "MG)",
+      "new_code": "EI01TS04 MG",
+      "locator": "table:0/row:22/cell:1",
+      "reason": "Source identifier printed with literal MG suffix in its own row; generic extraction consumed suffix as body. No official curriculum change."
+    },
+    {
+      "old_id": "ca:mg-crmg-eief-atualizada:916f09b1964be9d344a4",
+      "old_code": "EI02TS04",
+      "old_text": "MG)",
+      "new_code": "EI02TS04 MG",
+      "locator": "table:0/row:22/cell:4",
+      "reason": "Source identifier printed with literal MG suffix in its own row; generic extraction consumed suffix as body. No official curriculum change."
+    },
+    {
+      "old_id": "ca:mg-crmg-eief-atualizada:75778bd7ce5571e36cb4",
+      "old_code": "EI03TS04",
+      "old_text": "MG)",
+      "new_code": "EI03TS04 MG",
+      "locator": "table:0/row:22/cell:7",
+      "reason": "Source identifier printed with literal MG suffix in its own row; generic extraction consumed suffix as body. No official curriculum change."
+    }
+  ],
+  "negative_controls": [
+    {
+      "case": "strict_prefix_with_matching_excerpt_cannot_replace_complete_body",
+      "blocked": true
+    },
+    {
+      "case": "duplicate_record_even_if_every_character_matches",
+      "blocked": true
+    },
+    {
+      "case": "same_length_single_character_change",
+      "blocked": true
+    },
+    {
+      "case": "omit_actual_same_column_cross_page_continuation",
+      "blocked": true
+    },
+    {
+      "case": "actual_MG_EI02ET08_p134_to_p135_complete",
+      "positive_passed": true,
+      "fragment_pages": [
+        134,
+        135
+      ],
+      "last_fragment_sha256": "716db7578437c1c5fd836eb7474e9d2ce7e922be8db4b3fdf151aa7ee4f9e5a3"
+    },
+    {
+      "case": "absorb_next_literal_source_P1_code_and_body",
+      "blocked": true,
+      "prior_code": "EF15AR01P1",
+      "next_literal_code": "EF15AR27MGP1",
+      "page": 320,
+      "native_code_anchor_bbox": [
+        265.8819885253906,
+        171.64996337890625,
+        329.1699523925781,
+        182.51296997070312
+      ]
+    },
+    {
+      "case": "same_caption_text_but_code_anchor_in_another_actual_column",
+      "blocked": true
+    },
+    {
+      "case": "different_numeric_age_interval_with_unchanged_header_excerpt",
+      "blocked": true
+    },
+    {
+      "case": "another_existing_age_group_node_as_parent",
+      "blocked": true
+    },
+    {
+      "case": "existing_valid_documentary_parent_preserved_exactly",
+      "positive_passed": true,
+      "control_type": "in_memory_existing_parent_invariant",
+      "existing_parent_id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:field:2ffc1840643029b3"
+    }
+  ],
+  "binding_requires_root_technical_acceptance": [],
+  "primary_original_rederivation": {
+    "original_native_vector_strict_cell_bodies_reproduced": 1826,
+    "actual_cross_page_continuations": [
+      {
+        "code": "EI02EO06",
+        "page": 77,
+        "fragment_pages": [
+          77,
+          78
+        ],
+        "fragment_text_hashes": [
+          "ed78e545cd0ed2e9831628e9dad46fa9ea6824691fcb9401eb08fd62f2435dcb",
+          "4a0bf692de2c1d5b5ffd7722322bc0a03901257a948e130a9493636e2cc7712c"
+        ]
+      },
+      {
+        "code": "EI03EO05",
+        "page": 80,
+        "fragment_pages": [
+          80,
+          81
+        ],
+        "fragment_text_hashes": [
+          "30db0276ad4ddfb99e52ed2e4c2c8d31d5cf6612e17512e25ecf29347b7447e3",
+          "9923561a2a72828b6ec690df16208cbb97ae3538be3ed682a593cece53f26e76"
+        ]
+      },
+      {
+        "code": "EI01CG04",
+        "page": 84,
+        "fragment_pages": [
+          84,
+          85
+        ],
+        "fragment_text_hashes": [
+          "7fe24db13666b09880610da53cbad3f49ede473897e135c2f279b0f44add2b6d",
+          "aab7169f95776736562aace3d285bbe4dcda544aa988fdb459c50a54fa5ef64f"
+        ]
+      },
+      {
+        "code": "EI02CG02",
+        "page": 86,
+        "fragment_pages": [
+          86,
+          87
+        ],
+        "fragment_text_hashes": [
+          "ad3350f7f0d3a2d275e6c0677b77bd13825e905084d7ba6eed530c231fe24b3d",
+          "18698ddbaee8bd49a91d0c9bddb721d8465e2ca901f57be12eb2e306df6eebbf"
+        ]
+      },
+      {
+        "code": "EI02EF03B",
+        "page": 114,
+        "fragment_pages": [
+          114,
+          115
+        ],
+        "fragment_text_hashes": [
+          "87d784f547b7bafc8217cc0de6873ccc2b49d55fa94d1c106d404a1cfd61fdac",
+          "f0fa578f413a1d026cc7f6a883e5ddd177671ee30e50869117b59e0bd45c2b35"
+        ]
+      },
+      {
+        "code": "EI02EF08",
+        "page": 117,
+        "fragment_pages": [
+          117,
+          118
+        ],
+        "fragment_text_hashes": [
+          "b2bb39b6d526d128474f0f8084efb59592030eb83cb366179ab5fc8e94a7c149",
+          "4c12b61f15ed1e626a21654cdae8354245214f585de5046bc6eccb8881f6a671"
+        ]
+      },
+      {
+        "code": "EI02ET02",
+        "page": 130,
+        "fragment_pages": [
+          130,
+          131
+        ],
+        "fragment_text_hashes": [
+          "257ce759bb5984fe9b26ba3a856e728b45ef3068be8e1c49a4c2149d6e07583e",
+          "41950db681e9e1fde626ef1c01cb33f41be4537515f1f3d210c956cf2a89f01f"
+        ]
+      },
+      {
+        "code": "EI02ET08",
+        "page": 134,
+        "fragment_pages": [
+          134,
+          135
+        ],
+        "fragment_text_hashes": [
+          "067ff529dc7669f7a9bf1de9895ad69811dd6d38c65a24595e4e793bf3dd4d9c",
+          "716db7578437c1c5fd836eb7474e9d2ce7e922be8db4b3fdf151aa7ee4f9e5a3"
+        ]
+      }
+    ],
+    "method": "Re-execute original primary code anchors, vector rulers, strict cells and full character comparison; candidate body evidence does not define source boundaries."
+  },
+  "production_literal_check_execution": "Real evidence_check executed inside source_uncoded_items for every adapter record. Finalized code/text/evidence multiset is exact; no redundant second PDF check is used.",
+  "authorized_documentary_EI_age_contexts": [
+    {
+      "id": "ca:mg-crmg-eief-atualizada:47f150a1a59a709c50f1",
+      "page": 68,
+      "code": "EI01EO01X",
+      "age_key": "mg-ei-organizer:age:56034783b19a5c67",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        200.87600708007812,
+        172.6500244140625,
+        252.56300354003906,
+        183.51303100585938
+      ],
+      "objectives_column_bbox": [
+        182.38306087917752,
+        160.62285505022322,
+        270.4125044080946,
+        799.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:afb3b4f46e941ba29987",
+      "page": 68,
+      "code": "EI01EO02",
+      "age_key": "mg-ei-organizer:age:56034783b19a5c67",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        203.87600708007812,
+        477.5,
+        249.34400939941406,
+        488.3630065917969
+      ],
+      "objectives_column_bbox": [
+        182.38306087917752,
+        160.62285505022322,
+        270.4125044080946,
+        799.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:14e8b82de6b18495762c",
+      "page": 69,
+      "code": "EI01EO03X",
+      "age_key": "mg-ei-organizer:age:56034783b19a5c67",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        200.47000122070312,
+        223.04998779296875,
+        251.968017578125,
+        233.91299438476562
+      ],
+      "objectives_column_bbox": [
+        182.37833876836868,
+        160.62285505022322,
+        270.4078616187686,
+        806.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:456c6c53ec082f95c022",
+      "page": 69,
+      "code": "EI01EO04",
+      "age_key": "mg-ei-organizer:age:56034783b19a5c67",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        203.87600708007812,
+        707.75,
+        249.34400939941406,
+        718.6129760742188
+      ],
+      "objectives_column_bbox": [
+        182.37833876836868,
+        160.62285505022322,
+        270.4078616187686,
+        806.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:1c9f8b5ae2cd53565318",
+      "page": 70,
+      "code": "EI01EO05X",
+      "age_key": "mg-ei-organizer:age:56034783b19a5c67",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        200.87600708007812,
+        432.8999938964844,
+        252.56300354003906,
+        443.76300048828125
+      ],
+      "objectives_column_bbox": [
+        182.38306087917752,
+        160.62285505022322,
+        270.4125044080946,
+        798.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:4cb1f86ffe4ecf7b6acb",
+      "page": 71,
+      "code": "EI01EO06X",
+      "age_key": "mg-ei-organizer:age:56034783b19a5c67",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        200.67599487304688,
+        604.5499877929688,
+        252.3629913330078,
+        615.4129638671875
+      ],
+      "objectives_column_bbox": [
+        182.38306087917752,
+        160.62285505022322,
+        270.4125044080946,
+        802.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:250cc6ad1ab8f9697ba0",
+      "page": 72,
+      "code": "EI01EO07MG",
+      "age_key": "mg-ei-organizer:age:56034783b19a5c67",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        196.4459991455078,
+        316.08001708984375,
+        256.67401123046875,
+        326.9430236816406
+      ],
+      "objectives_column_bbox": [
+        182.38306087917752,
+        160.62285505022322,
+        270.4125044080946,
+        789.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:dd42a7da10544e68f005",
+      "page": 73,
+      "code": "EI02EO01X",
+      "age_key": "mg-ei-organizer:age:b05bbd65efd43324",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        198.84600830078125,
+        172.6500244140625,
+        250.5330047607422,
+        183.51303100585938
+      ],
+      "objectives_column_bbox": [
+        180.583612230089,
+        160.62285505022322,
+        268.5902676052517,
+        784.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:a6f97adcc4e30d4d667e",
+      "page": 73,
+      "code": "EI02EO02",
+      "age_key": "mg-ei-organizer:age:b05bbd65efd43324",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        201.87600708007812,
+        669.75,
+        247.34400939941406,
+        680.6129760742188
+      ],
+      "objectives_column_bbox": [
+        180.583612230089,
+        160.62285505022322,
+        268.5902676052517,
+        784.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:56695b201c50cdc95db9",
+      "page": 75,
+      "code": "EI02EO03",
+      "age_key": "mg-ei-organizer:age:b05bbd65efd43324",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        201.87600708007812,
+        413.70001220703125,
+        247.34400939941406,
+        424.5630187988281
+      ],
+      "objectives_column_bbox": [
+        180.5788109188988,
+        160.62285505022322,
+        268.5887988862537,
+        806.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:fe610e832c48b68fe23f",
+      "page": 75,
+      "code": "EI02EO04",
+      "age_key": "mg-ei-organizer:age:b05bbd65efd43324",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        201.87600708007812,
+        622.3499755859375,
+        247.34400939941406,
+        633.2129516601562
+      ],
+      "objectives_column_bbox": [
+        180.5788109188988,
+        160.62285505022322,
+        268.5887988862537,
+        806.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:5303e76bebc673d47112",
+      "page": 77,
+      "code": "EI02EO05",
+      "age_key": "mg-ei-organizer:age:b05bbd65efd43324",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        201.87600708007812,
+        446.29998779296875,
+        247.34400939941406,
+        457.1629943847656
+      ],
+      "objectives_column_bbox": [
+        180.5788109188988,
+        160.62285505022322,
+        268.5887988862537,
+        796.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:0497f9e5f13de27deb16",
+      "page": 77,
+      "code": "EI02EO06",
+      "age_key": "mg-ei-organizer:age:b05bbd65efd43324",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        201.87600708007812,
+        763.5750122070312,
+        247.34400939941406,
+        774.43798828125
+      ],
+      "objectives_column_bbox": [
+        180.5788109188988,
+        160.62285505022322,
+        268.5887988862537,
+        796.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:300759b5aed8e9fbacd3",
+      "page": 78,
+      "code": "EI02EO07",
+      "age_key": "mg-ei-organizer:age:b05bbd65efd43324",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        201.87600708007812,
+        446.29998779296875,
+        247.34400939941406,
+        457.1629943847656
+      ],
+      "objectives_column_bbox": [
+        180.583612230089,
+        160.62285505022322,
+        268.5902676052517,
+        789.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:f37da34f11c454f9fd2a",
+      "page": 79,
+      "code": "EI03EO01",
+      "age_key": "mg-ei-organizer:age:8e57865cf47b397a",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.0760040283203,
+        154.41998291015625,
+        247.5440216064453,
+        165.28298950195312
+      ],
+      "objectives_column_bbox": [
+        180.7746877670288,
+        147.80887179904514,
+        268.77030181884766,
+        799.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:4b854c6d34ae63c79a75",
+      "page": 79,
+      "code": "EI03EO02",
+      "age_key": "mg-ei-organizer:age:8e57865cf47b397a",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.0760040283203,
+        463.1000061035156,
+        247.5440216064453,
+        473.9630126953125
+      ],
+      "objectives_column_bbox": [
+        180.7746877670288,
+        147.80887179904514,
+        268.77030181884766,
+        799.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:cad21071053f73734e8b",
+      "page": 79,
+      "code": "EI03EO03",
+      "age_key": "mg-ei-organizer:age:8e57865cf47b397a",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.0760040283203,
+        695.5499877929688,
+        247.5440216064453,
+        706.4129638671875
+      ],
+      "objectives_column_bbox": [
+        180.7746877670288,
+        147.80887179904514,
+        268.77030181884766,
+        799.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:6b40a4c3f68b08ee77ef",
+      "page": 80,
+      "code": "EI03EO04X",
+      "age_key": "mg-ei-organizer:age:8e57865cf47b397a",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        198.84600830078125,
+        367.8699951171875,
+        250.5330047607422,
+        378.7330017089844
+      ],
+      "objectives_column_bbox": [
+        180.7746877670288,
+        147.80887179904514,
+        268.77030181884766,
+        797.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:2f78534a4f9f49f8af10",
+      "page": 80,
+      "code": "EI03EO05",
+      "age_key": "mg-ei-organizer:age:8e57865cf47b397a",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.0760040283203,
+        753.7750244140625,
+        247.5440216064453,
+        764.6380004882812
+      ],
+      "objectives_column_bbox": [
+        180.7746877670288,
+        147.80887179904514,
+        268.77030181884766,
+        797.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:a89f649957f92eec7680",
+      "page": 81,
+      "code": "EI03EO06X",
+      "age_key": "mg-ei-organizer:age:8e57865cf47b397a",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        198.84600830078125,
+        523.3299560546875,
+        250.5330047607422,
+        534.1929321289062
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        147.80887179904514,
+        268.77037400465747,
+        801.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:a28c6faca75a8b54c078",
+      "page": 82,
+      "code": "EI03EO07",
+      "age_key": "mg-ei-organizer:age:8e57865cf47b397a",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.0760040283203,
+        353.2699890136719,
+        247.5440216064453,
+        364.13299560546875
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        147.80887179904514,
+        268.77037400465747,
+        766.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:30245277165eaac89d7d",
+      "page": 83,
+      "code": "EI01CG01",
+      "age_key": "mg-ei-organizer:age:d3c54bec77c3ae74",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.0760040283203,
+        159.45001220703125,
+        247.7510223388672,
+        170.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.9811507004958,
+        152.80887179904514,
+        268.8019127478966,
+        804.2750244140625
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:72de52388a2ecc46e183",
+      "page": 83,
+      "code": "EI01CG02",
+      "age_key": "mg-ei-organizer:age:d3c54bec77c3ae74",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.26600646972656,
+        558.719970703125,
+        247.94102478027344,
+        569.5829467773438
+      ],
+      "objectives_column_bbox": [
+        180.9811507004958,
+        152.80887179904514,
+        268.8019127478966,
+        804.2750244140625
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:0b3a973d1c48fcd18de7",
+      "page": 84,
+      "code": "EI01CG03",
+      "age_key": "mg-ei-organizer:age:d3c54bec77c3ae74",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.0760040283203,
+        301.66998291015625,
+        247.7510223388672,
+        312.5329895019531
+      ],
+      "objectives_column_bbox": [
+        180.97530937194824,
+        152.80887179904514,
+        268.7959270477295,
+        799.2750244140625
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:fbf65edfc3bbc9f6bbc7",
+      "page": 84,
+      "code": "EI01CG04",
+      "age_key": "mg-ei-organizer:age:d3c54bec77c3ae74",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.0760040283203,
+        755.375,
+        247.7510223388672,
+        766.2379760742188
+      ],
+      "objectives_column_bbox": [
+        180.97530937194824,
+        152.80887179904514,
+        268.7959270477295,
+        799.2750244140625
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:57a91bd289bb58e07260",
+      "page": 85,
+      "code": "EI01CG05",
+      "age_key": "mg-ei-organizer:age:d3c54bec77c3ae74",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.0760040283203,
+        427.29998779296875,
+        247.7510223388672,
+        438.1629943847656
+      ],
+      "objectives_column_bbox": [
+        180.9811507004958,
+        152.80887179904514,
+        268.8019127478966,
+        797.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:e6a2d6a195135350d051",
+      "page": 86,
+      "code": "EI02CG01",
+      "age_key": "mg-ei-organizer:age:bf92117a3b96b2c7",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        207.4759979248047,
+        173.45001220703125,
+        253.15101623535156,
+        184.31301879882812
+      ],
+      "objectives_column_bbox": [
+        184.15037888746994,
+        166.75527472245065,
+        276.4307626577524,
+        790.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:e19d9211b3c160c99d48",
+      "page": 86,
+      "code": "EI02CG02",
+      "age_key": "mg-ei-organizer:age:bf92117a3b96b2c7",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        207.4759979248047,
+        713.9500122070312,
+        253.15101623535156,
+        724.81298828125
+      ],
+      "objectives_column_bbox": [
+        184.15037888746994,
+        166.75527472245065,
+        276.4307626577524,
+        790.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:4b83b5655133aeb61444",
+      "page": 87,
+      "code": "EI02CG03",
+      "age_key": "mg-ei-organizer:age:bf92117a3b96b2c7",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        207.4759979248047,
+        689.1500244140625,
+        253.15101623535156,
+        700.0130004882812
+      ],
+      "objectives_column_bbox": [
+        184.15037888746994,
+        152.72524542557565,
+        276.4307626577524,
+        787.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:09e7144c534a1e35ce0e",
+      "page": 88,
+      "code": "EI02CG04",
+      "age_key": "mg-ei-organizer:age:bf92117a3b96b2c7",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        207.4759979248047,
+        509.3299560546875,
+        253.15101623535156,
+        520.1929321289062
+      ],
+      "objectives_column_bbox": [
+        184.15037888746994,
+        152.72524542557565,
+        276.4307626577524,
+        781.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:615732523a25b6a63c7a",
+      "page": 90,
+      "code": "EI02CG05",
+      "age_key": "mg-ei-organizer:age:bf92117a3b96b2c7",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        207.4759979248047,
+        689.1500244140625,
+        253.15101623535156,
+        700.0130004882812
+      ],
+      "objectives_column_bbox": [
+        184.15037888746994,
+        152.72524542557565,
+        276.4307626577524,
+        787.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:94bc4f467ca3899a5384",
+      "page": 92,
+      "code": "EI03CG01",
+      "age_key": "mg-ei-organizer:age:f335b811905af2bf",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        199.4759979248047,
+        159.45001220703125,
+        245.15101623535156,
+        170.31301879882812
+      ],
+      "objectives_column_bbox": [
+        178.181149996244,
+        152.72524542557565,
+        266.17960768479566,
+        777.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:5928f217e0ce2810ac0c",
+      "page": 92,
+      "code": "EI03CG02",
+      "age_key": "mg-ei-organizer:age:f335b811905af2bf",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        199.4759979248047,
+        597.3300170898438,
+        245.15101623535156,
+        608.1929931640625
+      ],
+      "objectives_column_bbox": [
+        178.181149996244,
+        152.72524542557565,
+        266.17960768479566,
+        777.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:e8600b66b0c9772e16aa",
+      "page": 93,
+      "code": "EI03CG03",
+      "age_key": "mg-ei-organizer:age:f335b811905af2bf",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        199.4759979248047,
+        419.70001220703125,
+        245.15101623535156,
+        430.5630187988281
+      ],
+      "objectives_column_bbox": [
+        178.181149996244,
+        152.72524542557565,
+        266.17960768479566,
+        784.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:6c2cbea4716309ffdad3",
+      "page": 94,
+      "code": "EI03CG04",
+      "age_key": "mg-ei-organizer:age:f335b811905af2bf",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        199.4759979248047,
+        275.08001708984375,
+        245.15101623535156,
+        285.9430236816406
+      ],
+      "objectives_column_bbox": [
+        178.17530822753906,
+        152.72524542557565,
+        266.17967987060547,
+        789.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:6756ce2b4dded6ed56af",
+      "page": 94,
+      "code": "EI03CG05",
+      "age_key": "mg-ei-organizer:age:f335b811905af2bf",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        199.4759979248047,
+        680.3499755859375,
+        245.15101623535156,
+        691.2129516601562
+      ],
+      "objectives_column_bbox": [
+        178.17530822753906,
+        152.72524542557565,
+        266.17967987060547,
+        789.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:aaca5bbcc72cda8bb14d",
+      "page": 96,
+      "code": "EI01TS01",
+      "age_key": "mg-ei-organizer:age:0c41f6a0e0a85da0",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        203.0760040283203,
+        159.45001220703125,
+        247.3380126953125,
+        170.31301879882812
+      ],
+      "objectives_column_bbox": [
+        181.15037888746994,
+        152.72524542557565,
+        269.01039240910455,
+        787.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:7147274e970f6badd987",
+      "page": 96,
+      "code": "EI01TS02",
+      "age_key": "mg-ei-organizer:age:0c41f6a0e0a85da0",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        203.0760040283203,
+        602.1199951171875,
+        247.3380126953125,
+        612.9829711914062
+      ],
+      "objectives_column_bbox": [
+        181.15037888746994,
+        152.72524542557565,
+        269.01039240910455,
+        787.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:02a72f21d183dae06318",
+      "page": 97,
+      "code": "EI01TS03",
+      "age_key": "mg-ei-organizer:age:0c41f6a0e0a85da0",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        203.0760040283203,
+        531.1199951171875,
+        247.3380126953125,
+        541.9829711914062
+      ],
+      "objectives_column_bbox": [
+        181.15037888746994,
+        152.72524542557565,
+        269.01039240910455,
+        793.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:f840ace549b35a5576cd",
+      "page": 98,
+      "code": "EI01TS04",
+      "age_key": "mg-ei-organizer:age:0c41f6a0e0a85da0",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        194.4459991455078,
+        329.4800109863281,
+        238.7080078125,
+        340.343017578125
+      ],
+      "objectives_column_bbox": [
+        181.15037888746994,
+        152.72524542557565,
+        269.01039240910455,
+        783.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:10e6e5c6b22dae0a16cf",
+      "page": 99,
+      "code": "EI02TS01",
+      "age_key": "mg-ei-organizer:age:6c4b2643e3cc6ccb",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.87600708007812,
+        159.45001220703125,
+        247.1380157470703,
+        170.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.84312534332275,
+        152.93202944155092,
+        268.8432312011719,
+        798.1663287618886
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:a0b979ad7fb3ea441cbe",
+      "page": 99,
+      "code": "EI02TS02X",
+      "age_key": "mg-ei-organizer:age:6c4b2643e3cc6ccb",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        199.87600708007812,
+        634.75,
+        250.1680145263672,
+        645.6129760742188
+      ],
+      "objectives_column_bbox": [
+        180.84312534332275,
+        152.93202944155092,
+        268.8432312011719,
+        798.1663287618886
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:8826163f322c7e3e62cd",
+      "page": 100,
+      "code": "EI02TS03",
+      "age_key": "mg-ei-organizer:age:6c4b2643e3cc6ccb",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.87600708007812,
+        557.3299560546875,
+        247.1380157470703,
+        568.1929321289062
+      ],
+      "objectives_column_bbox": [
+        180.84312534332275,
+        152.91383009690506,
+        268.8432312011719,
+        802.7663043478261
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:adce938b2f578ba7f772",
+      "page": 101,
+      "code": "EI02TS04",
+      "age_key": "mg-ei-organizer:age:6c4b2643e3cc6ccb",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        194.24600219726562,
+        383.70001220703125,
+        238.5080108642578,
+        394.5630187988281
+      ],
+      "objectives_column_bbox": [
+        180.84312534332275,
+        152.91287466195914,
+        268.8432312011719,
+        798.3662799337636
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:1e0f62f7b95b9f741166",
+      "page": 102,
+      "code": "EI03TS01X",
+      "age_key": "mg-ei-organizer:age:cf4fe496705bcb48",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        199.87600708007812,
+        166.45001220703125,
+        250.1680145263672,
+        177.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        159.72524542557565,
+        268.80191509540265,
+        808.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:83f64e0f01e8f1d1496a",
+      "page": 102,
+      "code": "EI03TS02",
+      "age_key": "mg-ei-organizer:age:cf4fe496705bcb48",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.87600708007812,
+        609.3499755859375,
+        247.1380157470703,
+        620.2129516601562
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        159.72524542557565,
+        268.80191509540265,
+        808.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:e5dbb4dae9e414e2d0e2",
+      "page": 103,
+      "code": "EI03TS03",
+      "age_key": "mg-ei-organizer:age:cf4fe496705bcb48",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.87600708007812,
+        672.3499755859375,
+        247.1380157470703,
+        683.2129516601562
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        152.72524542557565,
+        268.80191509540265,
+        810.2750244140625
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:77560b4c5a0b0c830cbf",
+      "page": 105,
+      "code": "EI03TS04",
+      "age_key": "mg-ei-organizer:age:cf4fe496705bcb48",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        194.24600219726562,
+        159.45001220703125,
+        238.5080108642578,
+        170.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.78950042724608,
+        152.72524542557565,
+        268.8114929199219,
+        797.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:b9812e639156d4da60c3",
+      "page": 106,
+      "code": "EI01EF01",
+      "age_key": "mg-ei-organizer:age:e2d0ac0b0faf2c4f",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.87600708007812,
+        158.45001220703125,
+        246.55303955078125,
+        169.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        151.7573531301398,
+        268.80191509540265,
+        785.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:520d05c4b357a924c19e",
+      "page": 106,
+      "code": "EI01EF02X",
+      "age_key": "mg-ei-organizer:age:e2d0ac0b0faf2c4f",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        199.87600708007812,
+        452.5,
+        249.77203369140625,
+        463.3630065917969
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        151.7573531301398,
+        268.80191509540265,
+        785.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:1efcfe54662fae743384",
+      "page": 107,
+      "code": "EI01EF03",
+      "age_key": "mg-ei-organizer:age:e2d0ac0b0faf2c4f",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.87600708007812,
+        158.45001220703125,
+        246.55303955078125,
+        169.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        151.7573531301398,
+        268.80191509540265,
+        808.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:a80cb9b9e90c74640ee5",
+      "page": 107,
+      "code": "EI01EF04",
+      "age_key": "mg-ei-organizer:age:e2d0ac0b0faf2c4f",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.87600708007812,
+        633.75,
+        246.55303955078125,
+        644.6129760742188
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        151.7573531301398,
+        268.80191509540265,
+        808.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:47ee26d255757b0e693d",
+      "page": 109,
+      "code": "EI01EF05",
+      "age_key": "mg-ei-organizer:age:e2d0ac0b0faf2c4f",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.87600708007812,
+        158.45001220703125,
+        246.55303955078125,
+        169.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.78950042724608,
+        151.7573531301398,
+        268.8114929199219,
+        786.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:5095a2da7c0a3e155b32",
+      "page": 110,
+      "code": "EI01EF06",
+      "age_key": "mg-ei-organizer:age:e2d0ac0b0faf2c4f",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.87600708007812,
+        158.45001220703125,
+        246.55303955078125,
+        169.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.78950042724608,
+        151.7573531301398,
+        268.8114929199219,
+        786.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:52f3c5675624df1dabd2",
+      "page": 111,
+      "code": "EI01EF07",
+      "age_key": "mg-ei-organizer:age:e2d0ac0b0faf2c4f",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.87600708007812,
+        158.45001220703125,
+        246.55303955078125,
+        169.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        151.7573531301398,
+        268.80191509540265,
+        786.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:529511f36a87d277aa91",
+      "page": 111,
+      "code": "EI01EF08",
+      "age_key": "mg-ei-organizer:age:e2d0ac0b0faf2c4f",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.87600708007812,
+        525.1199951171875,
+        246.55303955078125,
+        535.9829711914062
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        151.7573531301398,
+        268.80191509540265,
+        786.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:d36231394f5344b6d5ac",
+      "page": 112,
+      "code": "EI01EF09",
+      "age_key": "mg-ei-organizer:age:e2d0ac0b0faf2c4f",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.87600708007812,
+        158.45001220703125,
+        246.55303955078125,
+        169.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.78950042724608,
+        151.7573531301398,
+        268.8114929199219,
+        786.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:50d0ccc655aebe4f591b",
+      "page": 113,
+      "code": "EI02EF01",
+      "age_key": "mg-ei-organizer:age:210c504c6582b908",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        203.0760040283203,
+        165.45001220703125,
+        246.75303649902344,
+        176.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.78950042724608,
+        158.7573531301398,
+        268.8114929199219,
+        777.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:07556cc459833bdc204f",
+      "page": 114,
+      "code": "EI02EF02",
+      "age_key": "mg-ei-organizer:age:210c504c6582b908",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        203.0760040283203,
+        158.45001220703125,
+        246.75303649902344,
+        169.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        151.7573531301398,
+        268.80191509540265,
+        782.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:568fa975e60651dcfc5b",
+      "page": 114,
+      "code": "EI02EF03A",
+      "age_key": "mg-ei-organizer:age:210c504c6582b908",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        200.0760040283203,
+        622.9500122070312,
+        249.97203063964844,
+        633.81298828125
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        151.7573531301398,
+        268.80191509540265,
+        782.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:f63a300ac0228b77744c",
+      "page": 114,
+      "code": "EI02EF03B",
+      "age_key": "mg-ei-organizer:age:210c504c6582b908",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        200.0760040283203,
+        743.5750122070312,
+        249.9810333251953,
+        754.43798828125
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        151.7573531301398,
+        268.80191509540265,
+        782.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:e680a70ab7c4e2c1b9a4",
+      "page": 115,
+      "code": "EI02EF04",
+      "age_key": "mg-ei-organizer:age:210c504c6582b908",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        203.0760040283203,
+        464.8999938964844,
+        246.75303649902344,
+        475.76300048828125
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        151.7573531301398,
+        268.80191509540265,
+        776.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:46c4672e1f60805c4bc4",
+      "page": 116,
+      "code": "EI02EF05",
+      "age_key": "mg-ei-organizer:age:210c504c6582b908",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        203.0760040283203,
+        273.66998291015625,
+        246.75303649902344,
+        284.5329895019531
+      ],
+      "objectives_column_bbox": [
+        180.7746877670288,
+        151.7573531301398,
+        268.7959289550781,
+        771.2750244140625
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:bd08a5f6e75f004a9a81",
+      "page": 116,
+      "code": "EI02EF06",
+      "age_key": "mg-ei-organizer:age:210c504c6582b908",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        203.0760040283203,
+        683.75,
+        246.75303649902344,
+        694.6129760742188
+      ],
+      "objectives_column_bbox": [
+        180.7746877670288,
+        151.7573531301398,
+        268.7959289550781,
+        771.2750244140625
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:985fc66b735e8254b229",
+      "page": 117,
+      "code": "EI02EF07",
+      "age_key": "mg-ei-organizer:age:210c504c6582b908",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        203.0760040283203,
+        388.70001220703125,
+        246.75303649902344,
+        399.5630187988281
+      ],
+      "objectives_column_bbox": [
+        180.7746877670288,
+        151.7573531301398,
+        268.7959289550781,
+        783.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:b0296ef7a8b26db68a10",
+      "page": 117,
+      "code": "EI02EF08",
+      "age_key": "mg-ei-organizer:age:210c504c6582b908",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        203.0760040283203,
+        646.75,
+        246.75303649902344,
+        657.6129760742188
+      ],
+      "objectives_column_bbox": [
+        180.7746877670288,
+        151.7573531301398,
+        268.7959289550781,
+        783.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:d80f4ec39874aefa3caf",
+      "page": 118,
+      "code": "EI02EF09",
+      "age_key": "mg-ei-organizer:age:210c504c6582b908",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        203.0760040283203,
+        273.66998291015625,
+        246.75303649902344,
+        284.5329895019531
+      ],
+      "objectives_column_bbox": [
+        180.78038494403546,
+        151.7573531301398,
+        268.80191509540265,
+        769.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:e2b6ea04b257ec03dc91",
+      "page": 119,
+      "code": "EI03EF01",
+      "age_key": "mg-ei-organizer:age:758c7b8b9351f039",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.67599487304688,
+        158.04998779296875,
+        246.35302734375,
+        168.91299438476562
+      ],
+      "objectives_column_bbox": [
+        180.5993766784668,
+        151.54572187151228,
+        268.5793647766113,
+        805.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:620a6499d8d2c2d8fec1",
+      "page": 120,
+      "code": "EI03EF02",
+      "age_key": "mg-ei-organizer:age:758c7b8b9351f039",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.67599487304688,
+        158.45001220703125,
+        246.35302734375,
+        169.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.58038682204025,
+        151.7573531301398,
+        268.57960392878607,
+        811.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:6cf73a5cf79bb3d711a0",
+      "page": 120,
+      "code": "EI03EF03",
+      "age_key": "mg-ei-organizer:age:758c7b8b9351f039",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.67599487304688,
+        590.3300170898438,
+        246.35302734375,
+        601.1929931640625
+      ],
+      "objectives_column_bbox": [
+        180.58038682204025,
+        151.7573531301398,
+        268.57960392878607,
+        811.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:481d9ad096cbfeeb311a",
+      "page": 121,
+      "code": "EI03EF04",
+      "age_key": "mg-ei-organizer:age:758c7b8b9351f039",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.67599487304688,
+        420.8999938964844,
+        246.35302734375,
+        431.76300048828125
+      ],
+      "objectives_column_bbox": [
+        180.5859111439098,
+        151.54572187151228,
+        268.5795343572443,
+        802.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:4f76937c773af49eee92",
+      "page": 122,
+      "code": "EI03EF05",
+      "age_key": "mg-ei-organizer:age:758c7b8b9351f039",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.67599487304688,
+        158.45001220703125,
+        246.35302734375,
+        169.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.589501953125,
+        151.7573531301398,
+        268.57948913574216,
+        796.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:55ab10970ab2e977c6bf",
+      "page": 123,
+      "code": "EI03EF06",
+      "age_key": "mg-ei-organizer:age:758c7b8b9351f039",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.67599487304688,
+        158.45001220703125,
+        246.35302734375,
+        169.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.589501953125,
+        151.7573531301398,
+        268.57948913574216,
+        796.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:3a507fe1fd402d7b858e",
+      "page": 124,
+      "code": "EI03EF07",
+      "age_key": "mg-ei-organizer:age:758c7b8b9351f039",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.67599487304688,
+        158.45001220703125,
+        246.35302734375,
+        169.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.58038682204025,
+        151.7573531301398,
+        268.57960392878607,
+        798.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:56921ea7dca3a8933fc1",
+      "page": 124,
+      "code": "EI03EF08",
+      "age_key": "mg-ei-organizer:age:758c7b8b9351f039",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.67599487304688,
+        438.29998779296875,
+        246.35302734375,
+        449.1629943847656
+      ],
+      "objectives_column_bbox": [
+        180.58038682204025,
+        151.7573531301398,
+        268.57960392878607,
+        798.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:70560f3ff21458221946",
+      "page": 125,
+      "code": "EI03EF09",
+      "age_key": "mg-ei-organizer:age:758c7b8b9351f039",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        202.67599487304688,
+        158.45001220703125,
+        246.35302734375,
+        169.31301879882812
+      ],
+      "objectives_column_bbox": [
+        180.589501953125,
+        151.7573531301398,
+        268.57948913574216,
+        779.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:2a14fc80e2e3da7a6cac",
+      "page": 126,
+      "code": "EI01ET01",
+      "age_key": "mg-ei-organizer:age:5ccaed71ea3a5484",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        210.87600708007812,
+        158.45001220703125,
+        254.9400177001953,
+        169.31301879882812
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        151.7573531301398,
+        276.4307650052584,
+        810.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:c20506b44eeb9c6967ce",
+      "page": 126,
+      "code": "EI01ET02",
+      "age_key": "mg-ei-organizer:age:5ccaed71ea3a5484",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        210.0760040283203,
+        672.3499755859375,
+        254.1400146484375,
+        683.2129516601562
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        151.7573531301398,
+        276.4307650052584,
+        810.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:20d0cc9402dee707e301",
+      "page": 127,
+      "code": "EI01ET03X",
+      "age_key": "mg-ei-organizer:age:5ccaed71ea3a5484",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        207.87600708007812,
+        464.8999938964844,
+        258.1590270996094,
+        475.76300048828125
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        151.7573531301398,
+        276.4307650052584,
+        776.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:47eb022cc94157fc12ed",
+      "page": 128,
+      "code": "EI01ET04X",
+      "age_key": "mg-ei-organizer:age:5ccaed71ea3a5484",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        207.87600708007812,
+        158.45001220703125,
+        258.1590270996094,
+        169.31301879882812
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        151.7573531301398,
+        276.4307650052584,
+        798.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:3127915994ba35ebbf02",
+      "page": 128,
+      "code": "EI01ET05",
+      "age_key": "mg-ei-organizer:age:5ccaed71ea3a5484",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        209.26600646972656,
+        487.70001220703125,
+        253.33001708984375,
+        498.5630187988281
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        151.7573531301398,
+        276.4307650052584,
+        798.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:a355c6877d4aee0d32c7",
+      "page": 129,
+      "code": "EI01ET06",
+      "age_key": "mg-ei-organizer:age:5ccaed71ea3a5484",
+      "age_literal": "Bebês (zero a 1 ano e 6 meses)",
+      "age_min_months": 0,
+      "age_max_months": 18,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        210.87600708007812,
+        208.8499755859375,
+        254.9400177001953,
+        219.71298217773438
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        151.7573531301398,
+        276.4307650052584,
+        796.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:9bec568eb49018b3b685",
+      "page": 130,
+      "code": "EI02ET01X",
+      "age_key": "mg-ei-organizer:age:c8cd04e505669601",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        206.66600036621094,
+        170.25,
+        256.9490051269531,
+        181.11300659179688
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        163.52523643092104,
+        276.4307650052584,
+        809.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:e541a79ce253cd04f2ce",
+      "page": 130,
+      "code": "EI02ET02",
+      "age_key": "mg-ei-organizer:age:c8cd04e505669601",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        206.66600036621094,
+        743.5750122070312,
+        250.73001098632812,
+        754.43798828125
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        163.52523643092104,
+        276.4307650052584,
+        809.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:1024caa4a1d41aa51eec",
+      "page": 131,
+      "code": "EI02ET03X",
+      "age_key": "mg-ei-organizer:age:c8cd04e505669601",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        203.4759979248047,
+        440.29998779296875,
+        253.75900268554688,
+        451.1629943847656
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        163.52523643092104,
+        276.4307650052584,
+        791.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:22c3bec51670872c08cc",
+      "page": 132,
+      "code": "EI02ET04",
+      "age_key": "mg-ei-organizer:age:c8cd04e505669601",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        206.66600036621094,
+        170.25,
+        250.73001098632812,
+        181.11300659179688
+      ],
+      "objectives_column_bbox": [
+        184.19049682617188,
+        163.52523643092104,
+        276.43999633789065,
+        791.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:98e23873ea3ed8520094",
+      "page": 133,
+      "code": "EI02ET05",
+      "age_key": "mg-ei-organizer:age:c8cd04e505669601",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        206.66600036621094,
+        170.25,
+        250.73001098632812,
+        181.11300659179688
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        163.52523643092104,
+        276.4307650052584,
+        804.2750244140625
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:cb9d26283fc0a3f4200f",
+      "page": 133,
+      "code": "EI02ET06",
+      "age_key": "mg-ei-organizer:age:c8cd04e505669601",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        206.66600036621094,
+        602.1199951171875,
+        250.73001098632812,
+        612.9829711914062
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        163.52523643092104,
+        276.4307650052584,
+        804.2750244140625
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:01757dd9ecbe92e5db8b",
+      "page": 134,
+      "code": "EI02ET07",
+      "age_key": "mg-ei-organizer:age:c8cd04e505669601",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        206.66600036621094,
+        394.70001220703125,
+        250.73001098632812,
+        405.5630187988281
+      ],
+      "objectives_column_bbox": [
+        184.17699584960937,
+        163.52523643092104,
+        276.4266621907552,
+        808.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:64a92c7dd67271c24a7f",
+      "page": 134,
+      "code": "EI02ET08",
+      "age_key": "mg-ei-organizer:age:c8cd04e505669601",
+      "age_literal": "Crianças bem pequenas (1 ano e 7 meses a 3 anos e 11 meses)",
+      "age_min_months": 19,
+      "age_max_months": 47,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        206.66600036621094,
+        696.1500244140625,
+        250.73001098632812,
+        707.0130004882812
+      ],
+      "objectives_column_bbox": [
+        184.17699584960937,
+        163.52523643092104,
+        276.4266621907552,
+        808.6749877929688
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:425336ffe0460cc517ec",
+      "page": 136,
+      "code": "EI03ET01",
+      "age_key": "mg-ei-organizer:age:b04606fe89cb8935",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        208.26600646972656,
+        159.45001220703125,
+        252.33001708984375,
+        170.31301879882812
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        152.72524542557565,
+        276.4307650052584,
+        809.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:a345e54030df9a22f13b",
+      "page": 136,
+      "code": "EI03ET02",
+      "age_key": "mg-ei-organizer:age:b04606fe89cb8935",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        208.26600646972656,
+        634.75,
+        252.33001708984375,
+        645.6129760742188
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        152.72524542557565,
+        276.4307650052584,
+        809.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:4afabf38405271e31de6",
+      "page": 137,
+      "code": "EI03ET03",
+      "age_key": "mg-ei-organizer:age:b04606fe89cb8935",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        208.4759979248047,
+        476.70001220703125,
+        252.54000854492188,
+        487.5630187988281
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        152.72524542557565,
+        276.4307650052584,
+        809.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:8e11ad63e47f70d48564",
+      "page": 138,
+      "code": "EI03ET04",
+      "age_key": "mg-ei-organizer:age:b04606fe89cb8935",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        208.26600646972656,
+        351.2699890136719,
+        252.33001708984375,
+        362.13299560546875
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        152.72524542557565,
+        276.4307650052584,
+        787.4749755859375
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:c87e69a42b1ae02a7531",
+      "page": 139,
+      "code": "EI03ET05",
+      "age_key": "mg-ei-organizer:age:b04606fe89cb8935",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        208.26600646972656,
+        159.45001220703125,
+        252.33001708984375,
+        170.31301879882812
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        152.72524542557565,
+        276.4307650052584,
+        808.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:0d87cf1f19dfc0edb362",
+      "page": 139,
+      "code": "EI03ET06",
+      "age_key": "mg-ei-organizer:age:b04606fe89cb8935",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        208.26600646972656,
+        591.3200073242188,
+        252.33001708984375,
+        602.1829833984375
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        152.72524542557565,
+        276.4307650052584,
+        808.875
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:8900f4e5b6d7e12bca91",
+      "page": 140,
+      "code": "EI03ET07",
+      "age_key": "mg-ei-organizer:age:b04606fe89cb8935",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        208.26600646972656,
+        531.1199951171875,
+        252.33001708984375,
+        541.9829711914062
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        152.72524542557565,
+        276.4307650052584,
+        809.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:f068f84aed8b8dddfc75",
+      "page": 141,
+      "code": "EI03ET08X",
+      "age_key": "mg-ei-organizer:age:b04606fe89cb8935",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        205.0760040283203,
+        470.70001220703125,
+        255.3590087890625,
+        481.5630187988281
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        152.72524542557565,
+        276.4307650052584,
+        803.0750122070312
+      ]
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:4d8aac26285604ce1acc",
+      "page": 142,
+      "code": "EI03ET09MG",
+      "age_key": "mg-ei-organizer:age:b04606fe89cb8935",
+      "age_literal": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+      "age_min_months": 48,
+      "age_max_months": 71,
+      "existing_parent_preserved": false,
+      "code_anchor_bbox": [
+        200.87600708007812,
+        307.280029296875,
+        259.50201416015625,
+        318.1430358886719
+      ],
+      "objectives_column_bbox": [
+        184.181149996244,
+        152.72524542557565,
+        276.4307650052584,
+        809.875
+      ]
+    }
+  ],
+  "automated_revalidation_event_timestamps": [
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:competency-group:general",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:general:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:general:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:general:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:general:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:general:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:general:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:general:number:7",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:general:number:8",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:general:number:9",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:general:number:10",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:competency-group:linguagens",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:linguagens:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:linguagens:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:linguagens:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:linguagens:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:linguagens:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:linguagens:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:competency-group:portugues",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:portugues:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:portugues:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:portugues:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:portugues:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:portugues:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:portugues:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:portugues:number:7",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:portugues:number:8",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:portugues:number:9",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:portugues:number:10",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:competency-group:arte",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:arte:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:arte:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:arte:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:arte:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:arte:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:arte:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:arte:number:7",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:arte:number:8",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:arte:number:9",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:competency-group:educacao-fisica",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:educacao-fisica:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:educacao-fisica:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:educacao-fisica:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:educacao-fisica:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:educacao-fisica:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:educacao-fisica:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:educacao-fisica:number:7",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:educacao-fisica:number:8",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:educacao-fisica:number:9",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:educacao-fisica:number:10",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:competency-group:ingles",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:ingles:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:ingles:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:ingles:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:ingles:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:ingles:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:ingles:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:competency-group:matematica",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:matematica:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:matematica:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:matematica:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:matematica:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:matematica:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:matematica:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:matematica:number:7",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:matematica:number:8",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:competency-group:natureza",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:natureza:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:natureza:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:natureza:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:natureza:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:natureza:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:natureza:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:natureza:number:7",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:natureza:number:8",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:competency-group:humanas",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:humanas:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:humanas:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:humanas:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:humanas:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:humanas:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:humanas:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:humanas:number:7",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:competency-group:geografia",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:geografia:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:geografia:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:geografia:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:geografia:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:geografia:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:geografia:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:geografia:number:7",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:competency-group:historia",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:historia:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:historia:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:historia:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:historia:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:historia:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:historia:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:historia:number:7",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:competency-group:religioso",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:religioso:number:1",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:religioso:number:2",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:religioso:number:3",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:religioso:number:4",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:religioso:number:5",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:religioso:number:6",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:ei-rights:general",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:ei-rights:conviver",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:ei-rights:brincar",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:ei-rights:participar",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:ei-rights:explorar",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:ei-rights:expressar",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    },
+    {
+      "id": "ca:mg-crmg-eief-atualizada:section:ei-rights:conhecer-se",
+      "event_index": 0,
+      "previous_at": "2026-10-28T18:06:48.131357+00:00",
+      "revalidated_at": "2026-10-28T20:17:09.849356+00:00",
+      "reason": "Production loader regenerates the automated literal validation event at the new composition timestamp; previous immutable adapter snapshot is retained in composition_inputs."
+    }
+  ],
+  "protected_context_policy": "All valid IDs/code/locators/kinds remain exact. Exactly 99 MG EI objectives may gain source-caption age fields and parent=None may gain the proved age node; every other position field, existing parent and unaffected complete record remains exact.",
+  "reference_roles_preserved": 0,
+  "limits": [
+    "Only the proposed coded authority pages are repaired; blocked/unexamined pages remain unverified.",
+    "Full-body hashes originate in independent vector/native-word versus strict-cell character receipts; ordinary substring evidence alone is insufficient.",
+    "No database, corpus ingestion, Source manifest binding, whole-Source reconciliation, UF readiness or human approval was performed."
+  ],
+  "whole_source_reconciled": false,
+  "uf_ready": false,
+  "human_review": false,
+  "verifier_sha256": "ad510309336fef970c29a3909723d46766c439a9168d4a470081ec755fc02cec"
+}

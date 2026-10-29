@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-28T16:37:42.350285+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast",
+  "scope": "Real generic+sidecar importer/finalizer replay against immutable old1.4 native snapshots, exact independent structural-ID sets. No source text, artifact, existing publication or cache mutation; current1.5 Source configuration requires fresh extraction before packaging.",
+  "checks": [
+    {
+      "source_id": "ba-resolucao-249-2026",
+      "source_sha256": "c108df4fe4cb56dc0eb9290803025a84b4fa7c72c587d7ea00e6a3e59cee2573",
+      "generic_input_count": 7,
+      "generic_input_kinds": {
+        "artigo_normativo": 7
+      },
+      "generic_input_codes": 0,
+      "adapter_count": 45,
+      "before_authority_final": 52,
+      "after_authority_final": 45,
+      "expected_independent_ids": 45,
+      "verified_ids": 45,
+      "missing_ids": [],
+      "extra_ids": [],
+      "parent_links": 44,
+      "generic_surviving": 0,
+      "authority": {
+        "uncoded_page_sections_pages": [
+          1,
+          7
+        ]
+      },
+      "cache_path": "data/extracted/c108df4fe4cb56dc0eb9290803025a84b4fa7c72c587d7ea00e6a3e59cee2573-page-cell-v1.4.0.json",
+      "cache_sha256": "8b14e851dcd5d516101baa46bc0a2bc8bb587e2a8efb3abf3c9e5512b2ca23bf"
+    },
+    {
+      "source_id": "rn-portaria-11123-2025",
+      "source_sha256": "8e8a23b5e500d1ac4aae981c64bd2b6ec8f20e939f4b260701741e90ae5af8b9",
+      "generic_input_count": 1,
+      "generic_input_kinds": {
+        "artigo_normativo": 1
+      },
+      "generic_input_codes": 0,
+      "adapter_count": 12,
+      "before_authority_final": 13,
+      "after_authority_final": 12,
+      "expected_independent_ids": 12,
+      "verified_ids": 12,
+      "missing_ids": [],
+      "extra_ids": [],
+      "parent_links": 11,
+      "generic_surviving": 0,
+      "authority": {
+        "uncoded_page_sections_pages": [
+          21,
+          21
+        ]
+      },
+      "cache_path": "data/extracted/8e8a23b5e500d1ac4aae981c64bd2b6ec8f20e939f4b260701741e90ae5af8b9-page-cell-v1.4.0.json",
+      "cache_sha256": "9303e5a8e8e1a5ae0c03341458a91c1ee7b822fafe6f9b9da0dfb223fd161b14"
+    }
+  ],
+  "failure_root_cause": "Earlier individual verifiers passed only sidecar items into finalize_items, missing generic page containers. Explicit reviewed whole-act authority now suppresses only generic containers in the selected curriculum regions.",
+  "fully_reconciled_ufs": 0
+}

@@ -1,0 +1,47 @@
+{
+  "producer": "src/domain/shards.ts",
+  "verified_at": "2026-10-28T04:45:37.928231+00:00",
+  "publication": "ca-77fb8076598b567e1ba3",
+  "scope": "Read all real transcoded JSONL shards without modifying source/cache. Not national editorial completeness.",
+  "observed_failure_before_fix": "Node readline split literal U+2028/U+2029 inside a valid JSON string; item record 797 of part 4 was cut at character 493.",
+  "implementation": "Split only on byte LF 0x0A; enforce 8MiB record bound and fatal UTF-8 decoding.",
+  "parts": 14,
+  "items": 38322,
+  "relations": 13007,
+  "records_read": 51329,
+  "records_with_literal_unicode_separators": 4,
+  "independent_python_json_lines": 51329,
+  "assertions": [
+    {
+      "name": "all_real_records_read_and_checksummed",
+      "passed": true
+    },
+    {
+      "name": "literal_U2028_U2029_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_and_cache_not_modified",
+      "passed": true
+    },
+    {
+      "name": "reader_uses_only_LF_as_record_delimiter",
+      "passed": true
+    }
+  ],
+  "code_files": [
+    {
+      "path": "src/domain/shards.ts",
+      "sha256": "0ed26d84064779f4eaf1891b1a51f697d41443810649ad3eda5502e608563cce"
+    },
+    {
+      "path": "src/domain/json-snapshot-file.ts",
+      "sha256": "0fba1997b9846a4f417d6d7e709d2003ee3555b37debf1080d69b6b849db264a"
+    },
+    {
+      "path": "tests/domain.json-snapshot-file.test.ts",
+      "sha256": "458aeaf6fc86ae51eb1b74218a46010eb91f3f84f0b85fa31f3352274fc287f6"
+    }
+  ],
+  "exit_code": 0
+}

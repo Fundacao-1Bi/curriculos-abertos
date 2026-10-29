@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "scope": "Only complete declared AC667/AP043+001 act regions; external curricula/plans and present legal force excluded from technical claim, remaining documentary requirements stay pending",
+  "sources": [
+    {
+      "passed": true,
+      "checks": 150,
+      "failures": [],
+      "primary_nonwhite_glyphs": 9630,
+      "records": 12,
+      "evidence_fragments": 94,
+      "loader_finalizer_schema": {
+        "passed": true,
+        "loaded": 12,
+        "final": 12,
+        "schema_errors": []
+      },
+      "source_id": "ac-computacao-667-2025",
+      "adapter_sha256": "922089eaab340e35dc5379ff23a7536be3382f4bc1ca82d0a883f1f96569d9c4",
+      "artifact_sha256": "71d47a5067d527a5a1428a5a59aa77a7b669625e9215d23ede15e0124c0d284e",
+      "source_only_inventory_pinned_before_candidate": true
+    },
+    {
+      "passed": true,
+      "checks": 275,
+      "failures": [],
+      "primary_nonwhite_glyphs": 6618,
+      "records": 16,
+      "evidence_fragments": 189,
+      "loader_finalizer_schema": {
+        "passed": true,
+        "loaded": 16,
+        "final": 16,
+        "schema_errors": []
+      },
+      "source_id": "ap-plano-em-001-2026",
+      "adapter_sha256": "f9a016239ece1a6d4886bc77501987dbef444c3a6fcc426b45cc8718041ae008",
+      "artifact_sha256": "34761767efc3b08cb11fe396cdd7577b170bb193d197cdcce87c1b2a61b9d87a",
+      "source_only_inventory_pinned_before_candidate": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "source_id": "ac-computacao-667-2025",
+      "mutation": "invented_text_and_duplicate_proof",
+      "rejected": true,
+      "failed_checks": [
+        "every_scoped_nonwhite_glyph_owned_once",
+        "production_evidence_check_sort_true",
+        "source_semantic_literal_and_order",
+        "text_is_own_evidence_in_order"
+      ]
+    },
+    {
+      "source_id": "ac-computacao-667-2025",
+      "mutation": "duplicated_record_preserving_total_source_text",
+      "rejected": true,
+      "failed_checks": [
+        "every_scoped_nonwhite_glyph_owned_once",
+        "own_article_numbers",
+        "source_order_is_declared_array_order",
+        "unique_keys"
+      ]
+    },
+    {
+      "source_id": "ac-computacao-667-2025",
+      "mutation": "false_internal_parent_that_resolves",
+      "rejected": true,
+      "failed_checks": [
+        "source_document_parent"
+      ]
+    },
+    {
+      "source_id": "ac-computacao-667-2025",
+      "mutation": "dropped_article_line_with_consistent_evidence",
+      "rejected": true,
+      "failed_checks": [
+        "every_scoped_nonwhite_glyph_owned_once",
+        "source_semantic_literal_and_order"
+      ]
+    },
+    {
+      "source_id": "ap-plano-em-001-2026",
+      "mutation": "invented_text_and_duplicate_proof",
+      "rejected": true,
+      "failed_checks": [
+        "every_scoped_nonwhite_glyph_owned_once",
+        "production_evidence_check_sort_true",
+        "source_semantic_literal_and_order",
+        "text_is_own_evidence_in_order"
+      ]
+    },
+    {
+      "source_id": "ap-plano-em-001-2026",
+      "mutation": "duplicated_record_preserving_total_source_text",
+      "rejected": true,
+      "failed_checks": [
+        "every_scoped_nonwhite_glyph_owned_once",
+        "source_order_is_declared_array_order",
+        "unique_keys"
+      ]
+    },
+    {
+      "source_id": "ap-plano-em-001-2026",
+      "mutation": "false_internal_parent_that_resolves",
+      "rejected": true,
+      "failed_checks": [
+        "source_document_parent"
+      ]
+    },
+    {
+      "source_id": "ap-plano-em-001-2026",
+      "mutation": "dropped_article_line_with_consistent_evidence",
+      "rejected": true,
+      "failed_checks": [
+        "every_scoped_nonwhite_glyph_owned_once",
+        "source_semantic_literal_and_order"
+      ]
+    },
+    {
+      "source_id": "ap-plano-em-001-2026",
+      "mutation": "quoted_13_promoted_to_own_article",
+      "rejected": true,
+      "failed_checks": [
+        "external_article13_never_own_device",
+        "own_article_numbers"
+      ]
+    },
+    {
+      "source_id": "ap-plano-em-001-2026",
+      "mutation": "article2_III_truncated_at_page_break",
+      "rejected": true,
+      "failed_checks": [
+        "article2_III_cross_page_sentence",
+        "every_scoped_nonwhite_glyph_owned_once",
+        "source_semantic_literal_and_order"
+      ]
+    }
+  ],
+  "parser_pin_stable": true,
+  "manifest_pin_stable": true,
+  "no_DB_cache_or_OCR_invocation": true
+}

@@ -1,0 +1,63 @@
+{
+  "started_at": "2026-10-28T15:24:33.515Z",
+  "completed_at": "2026-10-28T15:24:36.426Z",
+  "actor_id": "curriculos-abertos:ingestion-e2e-sql-verifier",
+  "actor_type": "automated",
+  "base_publication": "ca-77fb8076598b567e1ba3",
+  "candidate_publication": "ca-update-030922b2b405195b333a3e97b0e39be9",
+  "target_source_ids": [
+    "pe-historia-pernambuco-2026"
+  ],
+  "method": "Independent PostgreSQL indexed joins and full JSONB row comparisons in both directions; explicit coverage contribution multiset comparison; excludes only publication keys, coverage row position and generated search vector",
+  "checks": [
+    {
+      "name": "global_source_inventory_equals_base_union_explicit_targets",
+      "passed": true
+    },
+    {
+      "name": "sources_all_sql_fields_unchanged_outside_target",
+      "passed": true,
+      "before_count": 246,
+      "after_count": 246
+    },
+    {
+      "name": "items_all_sql_fields_unchanged_outside_target",
+      "passed": true,
+      "before_count": 38314,
+      "after_count": 38314
+    },
+    {
+      "name": "relations_all_sql_fields_unchanged_outside_target",
+      "passed": true,
+      "before_count": 13007,
+      "after_count": 13007
+    },
+    {
+      "name": "unaffected_relation_members_roles_and_scopes_preserved",
+      "passed": true
+    },
+    {
+      "name": "publication_coverage_all_sql_fields_unchanged_outside_target",
+      "passed": true,
+      "before_count": 307,
+      "after_count": 307
+    },
+    {
+      "name": "coverage_expected_parts_outside_source_contributions_preserved",
+      "passed": true
+    },
+    {
+      "name": "coverage_processed_parts_outside_source_contributions_preserved",
+      "passed": true
+    },
+    {
+      "name": "coverage_reconciled_parts_outside_source_contributions_preserved",
+      "passed": true
+    },
+    {
+      "name": "coverage_critical_errors_outside_source_contributions_preserved",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

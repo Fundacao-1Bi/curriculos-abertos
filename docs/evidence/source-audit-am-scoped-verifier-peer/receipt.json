@@ -1,0 +1,114 @@
+{
+  "format": "independent_scoped_raster_peer_v1",
+  "generated_at": "2026-10-28T21:39:18.096624+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex-independent-am-scoped-verifier-peer",
+  "technical_acceptance": true,
+  "findings_open": [],
+  "fixed_findings": [
+    {
+      "priority": "P2",
+      "field": "global_catalog",
+      "resolution": "Included in immutable catalog digest; real RAM mutation now rejected; producer regression added.",
+      "before_producer_sha256": "419a4d06b40d8099b6684b0f04dc3bc614d03b8d5b4099d9d5bec84cf3817cab",
+      "after_producer_sha256": "3808cc1a5ab930bfac8edeebc853bc6f5716e1abd394fd0352de792c13eda2b3"
+    }
+  ],
+  "executed": {
+    "producer_tests": 7,
+    "skips": 0,
+    "selected_primary_sources": [
+      "am-rca-ei"
+    ],
+    "primary_slots_verified": 153,
+    "references_emitted": 152,
+    "rejected_prose_slots": 1,
+    "private_assets_absent_then_present": 158,
+    "non_target_PDFs_absent_in_portable_namespace": 3,
+    "records_and_trace_identical_with_assets_present_and_absent": true,
+    "own_negative_controls_blocked": 7,
+    "own_primary_geometry_negatives_blocked": 9
+  },
+  "limits": [
+    "Code-crop pixel/provenance verifier only; previous automated literal review remains externally pinned.",
+    "Not a rereading of all codes or validation of definition bodies, learning/equivalence or SourceWhole.",
+    "Global2629/2628 denominators are pinned catalog counts, not a full four-PDF replay in this peer.",
+    "Augmentation transition/SQL/worker/publication not exercised.",
+    "No Source/cache/BASE/DB/publication modified by this peer; no UF-ready or human/pedagogical claim."
+  ],
+  "input_pins": [
+    {
+      "path": "pipeline/raster_review_scoped.py",
+      "sha256": "3808cc1a5ab930bfac8edeebc853bc6f5716e1abd394fd0352de792c13eda2b3"
+    },
+    {
+      "path": "pipeline/raster_review.py",
+      "sha256": "8774d4372d0c0d83e73ccabd80d98dafec28f0723e7e5da8ead0c9aa78413781"
+    },
+    {
+      "path": "pipeline/tests/test_raster_review_scoped.py",
+      "sha256": "12639a3e240801007ddd2afc93271039c39bbe0c23b62dfc492777a41d4d3469"
+    },
+    {
+      "path": "docs/evidence/source-audit-am-code-peer/am-code-review-handoff.json",
+      "sha256": "fdb2256668c0fc0fa323e232ae701f4792bdea8cc5289cfa20e39ef197792cca"
+    }
+  ],
+  "evidence_pins": [
+    {
+      "path": "docs/evidence/source-audit-am-scoped-verifier-peer/README.md",
+      "sha256": "7b886515edc5b8ceb4351240f3eec4e7ef316ede05bdd33322a9c2cbd1b2b75d",
+      "bytes": 4105
+    },
+    {
+      "path": "docs/evidence/source-audit-am-scoped-verifier-peer/present-assets.json",
+      "sha256": "55085fec257c84ef2bbb225b07be3427f262f3cecf8186de7ac6ea522f973081",
+      "bytes": 3091
+    },
+    {
+      "path": "docs/evidence/source-audit-am-scoped-verifier-peer/present-assets.log",
+      "sha256": "44ffcea2fdfc544539e1b78200e319a9fe34aec7334b4740ac40e517f4140a72",
+      "bytes": 70
+    },
+    {
+      "path": "docs/evidence/source-audit-am-scoped-verifier-peer/present-assets.py",
+      "sha256": "192da8a2facf5512cff6c8c7ba34f3e83c1d4c8ef63b1cfc5d2c3cff9832cfc4",
+      "bytes": 2167
+    },
+    {
+      "path": "docs/evidence/source-audit-am-scoped-verifier-peer/replay-before-summary-fix.json",
+      "sha256": "8ad9e4e89555825d3293dafe55bac283ade0f0d2566102d87c25dd25e7b3c324",
+      "bytes": 4061
+    },
+    {
+      "path": "docs/evidence/source-audit-am-scoped-verifier-peer/replay-before-summary-fix.py",
+      "sha256": "ef835312d6ed1d5907a493e58e01db37199d151b8c617be241a1f69733098be2",
+      "bytes": 5904
+    },
+    {
+      "path": "docs/evidence/source-audit-am-scoped-verifier-peer/replay.json",
+      "sha256": "adf216fd72ef394e585825d02d9083e59a5913eec5c337e73a72cf0835fae5e7",
+      "bytes": 4570
+    },
+    {
+      "path": "docs/evidence/source-audit-am-scoped-verifier-peer/replay.log",
+      "sha256": "8a8424d2082fca6d015515a37369efd715261803479d09a2d8a9592f3bfcd3d3",
+      "bytes": 104
+    },
+    {
+      "path": "docs/evidence/source-audit-am-scoped-verifier-peer/replay.py",
+      "sha256": "d215d423d23b247371d81850cdb30940abb21956c6d0d8502b0dd62b813e1cb9",
+      "bytes": 8443
+    },
+    {
+      "path": "docs/evidence/source-audit-am-scoped-verifier-peer/unit-tests-before-summary-fix.log",
+      "sha256": "69cd3e61b36656f8af05fe586c96277ee903c395f54e093484d0bf0791717c8f",
+      "bytes": 1422
+    },
+    {
+      "path": "docs/evidence/source-audit-am-scoped-verifier-peer/unit-tests.log",
+      "sha256": "fe8fe7aba0fc0436b17c00a6d392392c6b355c5f3816e0292672ed3c5bb6c4f1",
+      "bytes": 1564
+    }
+  ]
+}

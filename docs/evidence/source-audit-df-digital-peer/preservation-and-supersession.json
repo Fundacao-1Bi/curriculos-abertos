@@ -1,0 +1,37 @@
+{
+  "actor_type": "automated",
+  "old_candidate_sha256": "eaf5647402002573828836e30af8cd68db419586f3eaba391f0278b9199b58f8",
+  "new_candidate_sha256": "81cfbd6afc943c48bbb5472a949c531be6c9858a17ab0ab7b084f28e50180257",
+  "unchanged_record_objects": 1563,
+  "unchanged_record_objects_include_text_code_positions_evidence_context_locator_parent": true,
+  "changed_records": [
+    {
+      "canonical_id_preserved": "ca:df-competencias-digitais-vol3:c595cf98d8b206f7dc64",
+      "source_id": "df-competencias-digitais-vol3",
+      "page": 133,
+      "locator": "df-digital-table:0/column:0/paragraph:1",
+      "before_text_sha256": "87ba49f346712c881a1defa34bccb3d6e6b54de3f078c6a043158d9b60911ebf",
+      "after_text_sha256": "ba8bdf05d9a823811125fc5f297da7672997633601e3768c34b871901ad316f3",
+      "changed_fields": [
+        "source_context",
+        "text",
+        "extraction_method",
+        "extraction_revision",
+        "evidence"
+      ]
+    }
+  ],
+  "superseded": [
+    {
+      "old_id": "ca:df-competencias-digitais-vol3:28caefc514211c917686",
+      "replacement_id": "ca:df-competencias-digitais-vol3:c595cf98d8b206f7dc64",
+      "reason": "Incorrect segmentation of the literal Sistema Solar objective; does not represent official curriculum change."
+    }
+  ],
+  "objectives_before": 1190,
+  "objectives_after": 1189,
+  "total_records_before": 1565,
+  "total_records_after": 1564,
+  "human_review": false,
+  "uf_ready": false
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "at": "2026-10-28T21:06:26.047299+00:00",
+  "diagnostic_only": true,
+  "national_release_asserted": false,
+  "base_publication": "ca-7d302a9c674a97b83278",
+  "base_national_release_ready": false,
+  "base_literal_failures_known": 3012,
+  "snapshot_root": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd",
+  "snapshot_source_tree_sha256": "674dd1ddad35f1c12c399f3bd10f07894d1a763891c1ea2ddd75b53cd44669a6",
+  "matches_current_original_repository_asserted": false,
+  "image": "sha256:c8c96262fd976f36fcacdca7a898b96feb086df68d5c679ed71c0ccf6637a278",
+  "project": "curriculos-abertos-clean-20261028205403-f517a7",
+  "base_url": "http://localhost:3002",
+  "passed": true,
+  "check_count": 16,
+  "checks": [
+    "imagem real verificada antes de criar ambiente ou volumes QA",
+    "or\u00e7amento de instala\u00e7\u00e3o calculado pelo artefato antes de criar ambiente",
+    "projeto isolado, configura\u00e7\u00e3o efetiva pr\u00f3pria e volumes ausentes antes da instala\u00e7\u00e3o",
+    "todos shards do artefato entregue lidos e verificados antes da instala\u00e7\u00e3o",
+    "PostgreSQL inicialmente vazio confirmado",
+    "migrations em banco vazio e reexecu\u00e7\u00e3o idempotente",
+    "publica\u00e7\u00e3o persistida relacionalmente sem JSON nacional embutido",
+    "bundle real importado e segundo bootstrap preserva publica\u00e7\u00e3o/contagens/checksums",
+    "PostgreSQL e maior UF medidos para or\u00e7amento das pr\u00f3ximas etapas",
+    "primeiro administrador criado por CLI com senha aleat\u00f3ria via stdin e ator automatizado",
+    "imagem executada cont\u00e9m hash de c\u00f3digo entregue e readiness de banco/publica\u00e7\u00e3o real",
+    "login administrativo real sem servi\u00e7o de email",
+    "API HTTP real e cliente MCP Streamable HTTP negociaram e consultaram publica\u00e7\u00e3o importada",
+    "amostras reais por UF e textos longos preservados na instala\u00e7\u00e3o limpa",
+    "worker real conectado ao PostgreSQL persistiu heartbeat recente",
+    "rein\u00edcio de banco/app/worker preservou default, IDs, textos, rela\u00e7\u00f5es e administrador"
+  ],
+  "artifact": {
+    "publication": "ca-7d302a9c674a97b83278",
+    "format": "curriculos-abertos/sharded-v1",
+    "manifest_sha256": "be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d",
+    "items": 200724,
+    "relations": 57425,
+    "sources": 303,
+    "parts_verified": 75,
+    "schema_verified": true,
+    "schema_path": "data/schema/1.1.0.json",
+    "schema_sha256": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df"
+  },
+  "main_default_unchanged": "ca-77fb8076598b567e1ba3",
+  "artifacts": [
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-4-success/domain-patch.json",
+      "sha256": "828f02dd6241bdfed7fe2663c0ee9286f00f81da26d65420ad7880a7e3e9ec85",
+      "bytes": 2313
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-4-success/manual-domain-scan.json",
+      "sha256": "8fa8edcf275da9cbafb7d48e08505b483ebeb866b06d5e251c42eb6aa042b1ff",
+      "bytes": 2238
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-4-success/importer-postgres-tests.log",
+      "sha256": "9b41ceea6c4329089cfe98ab521fc351a5c1589926f0e4c0754b2636e58ff7c0",
+      "bytes": 550
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-4-success/build.log",
+      "sha256": "07bb22bd75c80f893afb86cb2cb940587fc58e5eb8c9734c656b7d3f8321694e",
+      "bytes": 34101
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-4-success/image-verification.json",
+      "sha256": "c88613c1e1c74a8e037b1a8a04e40fb7d2a38a1180066c3f4ffca76ec63cadd5",
+      "bytes": 1178
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-4-success/production-install.log",
+      "sha256": "11688471a34daacd5f548a24d147e4b40a3128e5937c6b624919f8c2a32860d3",
+      "bytes": 7771
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-4-success/production-install.json",
+      "sha256": "11688471a34daacd5f548a24d147e4b40a3128e5937c6b624919f8c2a32860d3",
+      "bytes": 7771
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-4-success/types.log",
+      "sha256": "02e35bf0eaf0150ec7911ffcbe2df519a799a6ad76bd497210557e6ed4028fd9",
+      "bytes": 54
+    }
+  ]
+}

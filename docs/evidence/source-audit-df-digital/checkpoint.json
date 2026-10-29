@@ -1,0 +1,50 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:df_digital",
+  "status": "implemented_executed_verified_explicit_objective_columns_only",
+  "adapter_path": "data/manifests/uncoded/df-digital-items.json",
+  "adapter_sha256": "eaf5647402002573828836e30af8cd68db419586f3eaba391f0278b9199b58f8",
+  "runtime": {
+    "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+    "pymupdf": [
+      "1.26.5",
+      "1.26.10",
+      null
+    ]
+  },
+  "source_integrity_after_processing": {
+    "df-competencias-digitais-vol2": "61ce27903cc1e113a8b9e282c207cce6de6a275847dc935adc052b8417b744c7",
+    "df-competencias-digitais-vol3": "39e5f657705d0db6866e8966302ca00cc2eea697e40715d5aac209b9aed7aedd"
+  },
+  "record_counts": {
+    "df-competencias-digitais-vol2": 471,
+    "df-competencias-digitais-vol3": 1094
+  },
+  "kinds": {
+    "volume_documental": 2,
+    "quadro_curricular": 11,
+    "grupo_etario": 4,
+    "eixo_computacao": 39,
+    "campo_experiencia": 57,
+    "ano_escolar": 9,
+    "componente_curricular": 228,
+    "unidade_tematica": 25,
+    "objetivo_aprendizagem": 1190
+  },
+  "verified_import_records": 1565,
+  "literal_failures": 0,
+  "canonical_punctuation_failures": 0,
+  "word_accounting_failures": 0,
+  "independent_body_words": 23977,
+  "independent_body_cells": 783,
+  "visual_continuations": 194,
+  "visual_organizer_openings": 13,
+  "visual_math_unit_labels": 25,
+  "idempotent_byte_identical": true,
+  "external_blockers": [],
+  "remaining": [
+    "Parent must integrate uncoded_items_path for both sources and incorporate into final national bundle.",
+    "Whole-source reconciliation includes foundation/introduction/reference pages outside these explicit objective tables; no UF readiness asserted.",
+    "Item grain is source printed paragraph/terminal-line/infinitive segmentation, not an invented official numbered objective scheme."
+  ]
+}

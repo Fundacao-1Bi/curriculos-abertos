@@ -1,0 +1,2658 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:data_central_south",
+  "checked_at": "2026-10-28T13:58:31.404194+00:00",
+  "method": "Current extractor with exact Source clone and extraction_pages; write_json intercepted in memory, full cache hashes unchanged. Probe scope is not full reconciliation.",
+  "runtime_pymupdf": "1.26.7",
+  "intercepted_cache_writes": [
+    {
+      "attempted_path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data/extracted/8396c57829603eb037b1a72bebde39662a6db137ad90ac5a0abfbafd4fe091a2-page-cell-v1.4.0.json",
+      "source_id": "rs-rcg-ei-2018",
+      "pages": 3
+    },
+    {
+      "attempted_path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data/extracted/176d738032cba747e02e1ce2c73bb1a7e8d2d0e1d7f875340a2215e599e37271-page-cell-v1.4.0.json",
+      "source_id": "ms-cr-eief-v110",
+      "pages": 3
+    }
+  ],
+  "sources": {
+    "rs-rcg-ei-2018": {
+      "cloned_extraction_pages": [
+        87,
+        88,
+        89
+      ],
+      "full_cache_sha256_before": "711457821136725bb41aa7d3bf2927642b52669d3c911c3b416a9a7edcf9312c",
+      "full_cache_sha256_after": "711457821136725bb41aa7d3bf2927642b52669d3c911c3b416a9a7edcf9312c",
+      "full_cache_unchanged": true,
+      "extraction_revision": "page-cell-v1.4.0",
+      "warnings": [],
+      "items": [
+        {
+          "id": "ca:rs-rcg-ei-2018:a4585397df83901bf0c2",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO01",
+          "text": "Perceber que suas ações têm efeitos nas outras crianças e nos adultos.",
+          "normalized_text": "perceber que suas acoes tem efeitos nas outras criancas e nos adultos.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 88,
+              "printed_page": null,
+              "section": "Tabela 1, linha 3",
+              "excerpt": "Perceber que suas ações têm efeitos nas outras crianças e nos adultos.",
+              "locator": "table:0/row:2/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                16.357894495913857,
+                266.1198018391927,
+                257.7407145346365,
+                509.4399719238281
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.491703+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "2": "(EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações."
+            },
+            "column_headers": {
+              "0": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – BNCC (EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "1": "  ",
+              "2": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – RS (EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações.",
+              "3": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO01"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:a2620567adacdfb0bdb1",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO01RS-01",
+          "text": "Mostrar-se ativa, sem a intervenção constante de um adulto.",
+          "normalized_text": "mostrar-se ativa, sem a intervencao constante de um adulto.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "documented_source_code_rule",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_evidence": {
+                "source_id": "rs-rcg-ei-2018",
+                "page": 84,
+                "printed_page": "84",
+                "section": "Organização dos objetivos e código alfanumérico",
+                "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+              },
+              "position_rule_id": "rcg-ei-base-bncc-territorial-suffix"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 88,
+              "printed_page": null,
+              "section": "Tabela 1, linha 3",
+              "excerpt": "Mostrar-se ativa, sem a intervenção constante de um adulto.",
+              "locator": "table:0/row:2/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                257.7407145346365,
+                266.1198018391927,
+                581.2628261021206,
+                509.4399719238281
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.491919+00:00"
+            }
+          ],
+          "extraction_flags": [
+            "multiple_codes_in_cell"
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "2": "(EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações."
+            },
+            "column_headers": {
+              "0": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – BNCC (EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "1": "  ",
+              "2": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – RS (EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações.",
+              "3": "  "
+            },
+            "source_column_index": 2,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO01RS-01"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:5078be921260674dac88",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO01RS-02",
+          "text": "Envolver-se em jogos simples de dar e receber, lançar objetos no chão e manifestar-se ao recebê- los de volta.",
+          "normalized_text": "envolver-se em jogos simples de dar e receber, lancar objetos no chao e manifestar-se ao recebelos de volta.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "documented_source_code_rule",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_evidence": {
+                "source_id": "rs-rcg-ei-2018",
+                "page": 84,
+                "printed_page": "84",
+                "section": "Organização dos objetivos e código alfanumérico",
+                "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+              },
+              "position_rule_id": "rcg-ei-base-bncc-territorial-suffix"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 88,
+              "printed_page": null,
+              "section": "Tabela 1, linha 3",
+              "excerpt": "Envolver-se em jogos simples de dar e receber, lançar objetos no chão e manifestar-se ao recebê- los de volta.",
+              "locator": "table:0/row:2/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                257.7407145346365,
+                266.1198018391927,
+                581.2628261021206,
+                509.4399719238281
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.491983+00:00"
+            }
+          ],
+          "extraction_flags": [
+            "multiple_codes_in_cell"
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "2": "(EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações."
+            },
+            "column_headers": {
+              "0": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – BNCC (EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "1": "  ",
+              "2": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – RS (EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações.",
+              "3": "  "
+            },
+            "source_column_index": 2,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO01RS-02"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:0c7a6704ea012a4cabb2",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO01RS-03",
+          "text": "Demonstrar interesse em seguir algumas normas em atividades da rotina, participando em contextos de convívio social, como brincar ao lado de outras crianças imitando ou mostrando suas ações.",
+          "normalized_text": "demonstrar interesse em seguir algumas normas em atividades da rotina, participando em contextos de convivio social, como brincar ao lado de outras criancas imitando ou mostrando suas acoes.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "documented_source_code_rule",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_evidence": {
+                "source_id": "rs-rcg-ei-2018",
+                "page": 84,
+                "printed_page": "84",
+                "section": "Organização dos objetivos e código alfanumérico",
+                "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+              },
+              "position_rule_id": "rcg-ei-base-bncc-territorial-suffix"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 88,
+              "printed_page": null,
+              "section": "Tabela 1, linha 3",
+              "excerpt": "Demonstrar interesse em seguir algumas normas em atividades da rotina, participando em contextos de convívio social, como brincar ao lado de outras crianças imitando ou mostrando suas ações.",
+              "locator": "table:0/row:2/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                257.7407145346365,
+                266.1198018391927,
+                581.2628261021206,
+                509.4399719238281
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.492045+00:00"
+            }
+          ],
+          "extraction_flags": [
+            "multiple_codes_in_cell"
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "2": "(EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações."
+            },
+            "column_headers": {
+              "0": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – BNCC (EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "1": "  ",
+              "2": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – RS (EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações.",
+              "3": "  "
+            },
+            "source_column_index": 2,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO01RS-03"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:2b9e4db38ce76148d354",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO01RS-01",
+          "text": "Mostrar-se ativa, sem a intervenção",
+          "normalized_text": "mostrar-se ativa, sem a intervencao",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "documented_source_code_rule",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_evidence": {
+                "source_id": "rs-rcg-ei-2018",
+                "page": 84,
+                "printed_page": "84",
+                "section": "Organização dos objetivos e código alfanumérico",
+                "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+              },
+              "position_rule_id": "rcg-ei-base-bncc-territorial-suffix"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 88,
+              "printed_page": null,
+              "section": "Tabela 1, linha 4",
+              "excerpt": "Mostrar-se ativa, sem a intervenção",
+              "locator": "table:0/row:3/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                257.7407145346365,
+                269.63995361328125,
+                577.079833984375,
+                290.27996826171875
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.492166+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "2": "(EI01EO01RS-01) Mostrar-se ativa, sem a intervenção"
+            },
+            "column_headers": {
+              "0": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – BNCC (EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "1": "  ",
+              "2": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – RS (EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações.",
+              "3": "  "
+            },
+            "source_column_index": 2,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO01RS-01"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:823e101776c963e3a78c",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO01RS-02",
+          "text": "Envolver-se em jogos simples de dar e",
+          "normalized_text": "envolver-se em jogos simples de dar e",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "documented_source_code_rule",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_evidence": {
+                "source_id": "rs-rcg-ei-2018",
+                "page": 84,
+                "printed_page": "84",
+                "section": "Organização dos objetivos e código alfanumérico",
+                "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+              },
+              "position_rule_id": "rcg-ei-base-bncc-territorial-suffix"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 88,
+              "printed_page": null,
+              "section": "Tabela 1, linha 7",
+              "excerpt": "Envolver-se em jogos simples de dar e",
+              "locator": "table:0/row:6/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                257.7407145346365,
+                334.67999267578125,
+                577.079833984375,
+                358.3199768066406
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.492300+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "2": "(EI01EO01RS-02) Envolver-se em jogos simples de dar e"
+            },
+            "column_headers": {
+              "0": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – BNCC (EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "1": "  ",
+              "2": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – RS (EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações.",
+              "3": "  "
+            },
+            "source_column_index": 2,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO01RS-02"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:76cb7dfcfafb7948bbd8",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO01RS-03",
+          "text": "Demonstrar interesse em seguir algumas",
+          "normalized_text": "demonstrar interesse em seguir algumas",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "documented_source_code_rule",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_evidence": {
+                "source_id": "rs-rcg-ei-2018",
+                "page": 84,
+                "printed_page": "84",
+                "section": "Organização dos objetivos e código alfanumérico",
+                "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+              },
+              "position_rule_id": "rcg-ei-base-bncc-territorial-suffix"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 88,
+              "printed_page": null,
+              "section": "Tabela 1, linha 11",
+              "excerpt": "Demonstrar interesse em seguir algumas",
+              "locator": "table:0/row:10/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                257.7407145346365,
+                423.47998046875,
+                577.079833984375,
+                447.11997985839844
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.492488+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "2": "(EI01EO01RS-03) Demonstrar interesse em seguir algumas"
+            },
+            "column_headers": {
+              "0": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – BNCC (EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "1": "  ",
+              "2": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – RS (EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações.",
+              "3": "  "
+            },
+            "source_column_index": 2,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO01RS-03"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:6ae17714a0e6662eb50c",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO02",
+          "text": "Perceber as possibilidades e os limites de seu corpo nas brincadeiras e interações das quais participa.",
+          "normalized_text": "perceber as possibilidades e os limites de seu corpo nas brincadeiras e interacoes das quais participa.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 88,
+              "printed_page": null,
+              "section": "Tabela 1, linha 15",
+              "excerpt": "Perceber as possibilidades e os limites de seu corpo nas brincadeiras e interações das quais participa.",
+              "locator": "table:0/row:14/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                16.357894495913857,
+                509.4399719238281,
+                257.7407145346365,
+                684.5196533203125
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.492771+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO02) Perceber as possibilidades e\nos limites de seu corpo nas brincadeiras e\ninterações das quais participa.",
+              "2": "(EI01EO02RS-01) Desenvolver a linguagem corporal, a\natenção e a curiosidade por tudo que a rodeia.\n(EI01EO02RS-02) Interessar-se por experimentar novos\nmovimentos ao explorar objetos ou brinquedos conhecidos,\ncomo segurar objetos nas mãos e levá-los à altura dos olhos\nna busca por explorá-los, subir em objetos volumosos,\nlançar objetos em determinada direção."
+            },
+            "column_headers": {
+              "0": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – BNCC (EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "1": "  ",
+              "2": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – RS (EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações.",
+              "3": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO02"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:300a71e2183c1e56bc68",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO02RS-01",
+          "text": "Desenvolver a linguagem corporal, a atenção e a curiosidade por tudo que a rodeia.",
+          "normalized_text": "desenvolver a linguagem corporal, a atencao e a curiosidade por tudo que a rodeia.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "documented_source_code_rule",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_evidence": {
+                "source_id": "rs-rcg-ei-2018",
+                "page": 84,
+                "printed_page": "84",
+                "section": "Organização dos objetivos e código alfanumérico",
+                "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+              },
+              "position_rule_id": "rcg-ei-base-bncc-territorial-suffix"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 88,
+              "printed_page": null,
+              "section": "Tabela 1, linha 15",
+              "excerpt": "Desenvolver a linguagem corporal, a atenção e a curiosidade por tudo que a rodeia.",
+              "locator": "table:0/row:14/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                257.7407145346365,
+                509.4399719238281,
+                581.2628261021206,
+                684.5196533203125
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.492941+00:00"
+            }
+          ],
+          "extraction_flags": [
+            "multiple_codes_in_cell"
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO02) Perceber as possibilidades e\nos limites de seu corpo nas brincadeiras e\ninterações das quais participa.",
+              "2": "(EI01EO02RS-01) Desenvolver a linguagem corporal, a\natenção e a curiosidade por tudo que a rodeia.\n(EI01EO02RS-02) Interessar-se por experimentar novos\nmovimentos ao explorar objetos ou brinquedos conhecidos,\ncomo segurar objetos nas mãos e levá-los à altura dos olhos\nna busca por explorá-los, subir em objetos volumosos,\nlançar objetos em determinada direção."
+            },
+            "column_headers": {
+              "0": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – BNCC (EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "1": "  ",
+              "2": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – RS (EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações.",
+              "3": "  "
+            },
+            "source_column_index": 2,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO02RS-01"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:be87ba801028c54ea754",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO02RS-02",
+          "text": "Interessar-se por experimentar novos movimentos ao explorar objetos ou brinquedos conhecidos, como segurar objetos nas mãos e levá-los à altura dos olhos na busca por explorá-los, subir em objetos volumosos, lançar objetos em determinada direção.",
+          "normalized_text": "interessar-se por experimentar novos movimentos ao explorar objetos ou brinquedos conhecidos, como segurar objetos nas maos e leva-los a altura dos olhos na busca por explora-los, subir em objetos volumosos, lancar objetos em determinada direcao.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "documented_source_code_rule",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_evidence": {
+                "source_id": "rs-rcg-ei-2018",
+                "page": 84,
+                "printed_page": "84",
+                "section": "Organização dos objetivos e código alfanumérico",
+                "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+              },
+              "position_rule_id": "rcg-ei-base-bncc-territorial-suffix"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 88,
+              "printed_page": null,
+              "section": "Tabela 1, linha 15",
+              "excerpt": "Interessar-se por experimentar novos movimentos ao explorar objetos ou brinquedos conhecidos, como segurar objetos nas mãos e levá-los à altura dos olhos na busca por explorá-los, subir em objetos volumosos, lançar objetos em determinada direção.",
+              "locator": "table:0/row:14/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                257.7407145346365,
+                509.4399719238281,
+                581.2628261021206,
+                684.5196533203125
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.492999+00:00"
+            }
+          ],
+          "extraction_flags": [
+            "multiple_codes_in_cell"
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO02) Perceber as possibilidades e\nos limites de seu corpo nas brincadeiras e\ninterações das quais participa.",
+              "2": "(EI01EO02RS-01) Desenvolver a linguagem corporal, a\natenção e a curiosidade por tudo que a rodeia.\n(EI01EO02RS-02) Interessar-se por experimentar novos\nmovimentos ao explorar objetos ou brinquedos conhecidos,\ncomo segurar objetos nas mãos e levá-los à altura dos olhos\nna busca por explorá-los, subir em objetos volumosos,\nlançar objetos em determinada direção."
+            },
+            "column_headers": {
+              "0": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – BNCC (EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "1": "  ",
+              "2": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – RS (EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações.",
+              "3": "  "
+            },
+            "source_column_index": 2,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO02RS-02"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:c47db837d801d9f20716",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO02RS-01",
+          "text": "Desenvolver a linguagem corporal, a",
+          "normalized_text": "desenvolver a linguagem corporal, a",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "documented_source_code_rule",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_evidence": {
+                "source_id": "rs-rcg-ei-2018",
+                "page": 84,
+                "printed_page": "84",
+                "section": "Organização dos objetivos e código alfanumérico",
+                "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+              },
+              "position_rule_id": "rcg-ei-base-bncc-territorial-suffix"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 88,
+              "printed_page": null,
+              "section": "Tabela 1, linha 16",
+              "excerpt": "Desenvolver a linguagem corporal, a",
+              "locator": "table:0/row:15/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                257.7407145346365,
+                512.760009765625,
+                577.079833984375,
+                533.5199890136719
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.493108+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "2": "(EI01EO02RS-01) Desenvolver a linguagem corporal, a"
+            },
+            "column_headers": {
+              "0": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – BNCC (EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "1": "  ",
+              "2": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – RS (EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações.",
+              "3": "  "
+            },
+            "source_column_index": 2,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO02RS-01"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:2f017585f3a8d23d8410",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO02RS-02",
+          "text": "Interessar-se por experimentar novos",
+          "normalized_text": "interessar-se por experimentar novos",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "documented_source_code_rule",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_evidence": {
+                "source_id": "rs-rcg-ei-2018",
+                "page": 84,
+                "printed_page": "84",
+                "section": "Organização dos objetivos e código alfanumérico",
+                "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+              },
+              "position_rule_id": "rcg-ei-base-bncc-territorial-suffix"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 88,
+              "printed_page": null,
+              "section": "Tabela 1, linha 19",
+              "excerpt": "Interessar-se por experimentar novos",
+              "locator": "table:0/row:18/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                257.7407145346365,
+                576.4199829101562,
+                577.079833984375,
+                600.5599975585938
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.493240+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "2": "(EI01EO02RS-02) Interessar-se por experimentar novos"
+            },
+            "column_headers": {
+              "0": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – BNCC (EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "1": "  ",
+              "2": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – RS (EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações.",
+              "3": "  "
+            },
+            "source_column_index": 2,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO02RS-02"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:851c23f96a7fc518deee",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO03",
+          "text": "Interagir com crianças da mesma faixa etária e adultos ao explorar espaços, materiais, objetos, brinquedos.",
+          "normalized_text": "interagir com criancas da mesma faixa etaria e adultos ao explorar espacos, materiais, objetos, brinquedos.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 88,
+              "printed_page": null,
+              "section": "Tabela 1, linha 24",
+              "excerpt": "Interagir com crianças da mesma faixa etária e adultos ao explorar espaços, materiais, objetos, brinquedos.",
+              "locator": "table:0/row:23/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                16.357894495913857,
+                684.5196533203125,
+                257.7407145346365,
+                750.1919921875
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.493621+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO03) Interagir com crianças da\nmesma faixa etária e adultos ao explorar\nespaços, materiais, objetos, brinquedos.",
+              "2": "(EI01E003RS-01) Experienciar situações do cotidiano em\nque exista o compartilhamento de materiais, brinquedos e\nespaços com outras crianças."
+            },
+            "column_headers": {
+              "0": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – BNCC (EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "1": "  ",
+              "2": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – RS (EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações.",
+              "3": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO03"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:e0b84f280e1f18855f65",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO03",
+          "text": "Interagir com crianças da",
+          "normalized_text": "interagir com criancas da",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 88,
+              "printed_page": null,
+              "section": "Tabela 1, linha 25",
+              "excerpt": "Interagir com crianças da",
+              "locator": "table:0/row:24/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                16.357894495913857,
+                687.8399658203125,
+                251.0201644897461,
+                708.5999755859375
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.493806+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO03) Interagir com crianças da",
+              "2": "(EI01E003RS-01) Experienciar situações do cotidiano em"
+            },
+            "column_headers": {
+              "0": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – BNCC (EI01EO01) Perceber que suas ações têm\nefeitos nas outras crianças e nos adultos.",
+              "1": "  ",
+              "2": "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO – RS (EI01EO01RS-01) Mostrar-se ativa, sem a intervenção\nconstante de um adulto.\n(EI01EO01RS-02) Envolver-se em jogos simples de dar e\nreceber, lançar objetos no chão e manifestar-se ao recebê-\nlos de volta.\n(EI01EO01RS-03) Demonstrar interesse em seguir algumas\nnormas em atividades da rotina, participando em contextos\nde convívio social, como brincar ao lado de outras crianças\nimitando ou mostrando suas ações.",
+              "3": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO03"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:21f1a931b82e569ced10",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO04",
+          "text": "Comunicar necessidades, desejos e emoções, utilizando gestos, balbucios, palavras.",
+          "normalized_text": "comunicar necessidades, desejos e emocoes, utilizando gestos, balbucios, palavras.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 89,
+              "printed_page": null,
+              "section": "Tabela 1, linha 10",
+              "excerpt": "Comunicar necessidades, desejos e emoções, utilizando gestos, balbucios, palavras.",
+              "locator": "table:0/row:9/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                14.099999904632568,
+                274.0,
+                255.2405014038086,
+                667.9596354166666
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.578332+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO04) Comunicar necessidades,\ndesejos e emoções, utilizando gestos,\nbalbucios, palavras.",
+              "1": "(EI01EO04RS-01) Vivenciar um processo de inserção que\nrespeite o seu tempo e oportunize o seu acolhimento e\nadaptação.\n(EI01EO04RS-02) Comunicar-se com outros bebês e com\nadultos, fazendo uso de diferentes formas de comunicação,\nbuscando contato, atenção e prolongamento das situações\nde interação.\n(EI01EO04RS-03) Usar gestos com a intenção de conseguir\nalgo, apontando o que deseja, colocando a mão na barriga\npara manifestar que está com fome, apontar para torneira\ndemonstrando sede, apontar para pessoas ou objetos como\nforma de mostrar reconhecimento.\n(EI01EO04RS-04) Sentir-se confiante nas situações de\ncomunicação e cuidados pessoais com o adulto que escuta,\nobserva e responde aos seus interesses e necessidades."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": "  ",
+              "2": "(EI01E003RS-02) Participar de brincadeiras com professores, como esconder e achar, imitando os professores e/ou colegas e encadeando ações simples",
+              "3": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO04"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:8aea39212a61d41e84fa",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO04RS-01",
+          "text": "Vivenciar um processo de inserção que respeite o seu tempo e oportunize o seu acolhimento e adaptação.",
+          "normalized_text": "vivenciar um processo de insercao que respeite o seu tempo e oportunize o seu acolhimento e adaptacao.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "documented_source_code_rule",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_evidence": {
+                "source_id": "rs-rcg-ei-2018",
+                "page": 84,
+                "printed_page": "84",
+                "section": "Organização dos objetivos e código alfanumérico",
+                "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+              },
+              "position_rule_id": "rcg-ei-base-bncc-territorial-suffix"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 89,
+              "printed_page": null,
+              "section": "Tabela 1, linha 10",
+              "excerpt": "Vivenciar um processo de inserção que respeite o seu tempo e oportunize o seu acolhimento e adaptação.",
+              "locator": "table:0/row:9/cell:1",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                255.2405014038086,
+                274.0,
+                581.3399658203125,
+                667.9596354166666
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.578637+00:00"
+            }
+          ],
+          "extraction_flags": [
+            "multiple_codes_in_cell"
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO04) Comunicar necessidades,\ndesejos e emoções, utilizando gestos,\nbalbucios, palavras.",
+              "1": "(EI01EO04RS-01) Vivenciar um processo de inserção que\nrespeite o seu tempo e oportunize o seu acolhimento e\nadaptação.\n(EI01EO04RS-02) Comunicar-se com outros bebês e com\nadultos, fazendo uso de diferentes formas de comunicação,\nbuscando contato, atenção e prolongamento das situações\nde interação.\n(EI01EO04RS-03) Usar gestos com a intenção de conseguir\nalgo, apontando o que deseja, colocando a mão na barriga\npara manifestar que está com fome, apontar para torneira\ndemonstrando sede, apontar para pessoas ou objetos como\nforma de mostrar reconhecimento.\n(EI01EO04RS-04) Sentir-se confiante nas situações de\ncomunicação e cuidados pessoais com o adulto que escuta,\nobserva e responde aos seus interesses e necessidades."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": "  ",
+              "2": "(EI01E003RS-02) Participar de brincadeiras com professores, como esconder e achar, imitando os professores e/ou colegas e encadeando ações simples",
+              "3": "  "
+            },
+            "source_column_index": 1,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO04RS-01"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:8838a822a7ee31db6df0",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO04RS-02",
+          "text": "Comunicar-se com outros bebês e com adultos, fazendo uso de diferentes formas de comunicação, buscando contato, atenção e prolongamento das situações de interação.",
+          "normalized_text": "comunicar-se com outros bebes e com adultos, fazendo uso de diferentes formas de comunicacao, buscando contato, atencao e prolongamento das situacoes de interacao.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "documented_source_code_rule",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_evidence": {
+                "source_id": "rs-rcg-ei-2018",
+                "page": 84,
+                "printed_page": "84",
+                "section": "Organização dos objetivos e código alfanumérico",
+                "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+              },
+              "position_rule_id": "rcg-ei-base-bncc-territorial-suffix"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 89,
+              "printed_page": null,
+              "section": "Tabela 1, linha 10",
+              "excerpt": "Comunicar-se com outros bebês e com adultos, fazendo uso de diferentes formas de comunicação, buscando contato, atenção e prolongamento das situações de interação.",
+              "locator": "table:0/row:9/cell:1",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                255.2405014038086,
+                274.0,
+                581.3399658203125,
+                667.9596354166666
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.578733+00:00"
+            }
+          ],
+          "extraction_flags": [
+            "multiple_codes_in_cell"
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO04) Comunicar necessidades,\ndesejos e emoções, utilizando gestos,\nbalbucios, palavras.",
+              "1": "(EI01EO04RS-01) Vivenciar um processo de inserção que\nrespeite o seu tempo e oportunize o seu acolhimento e\nadaptação.\n(EI01EO04RS-02) Comunicar-se com outros bebês e com\nadultos, fazendo uso de diferentes formas de comunicação,\nbuscando contato, atenção e prolongamento das situações\nde interação.\n(EI01EO04RS-03) Usar gestos com a intenção de conseguir\nalgo, apontando o que deseja, colocando a mão na barriga\npara manifestar que está com fome, apontar para torneira\ndemonstrando sede, apontar para pessoas ou objetos como\nforma de mostrar reconhecimento.\n(EI01EO04RS-04) Sentir-se confiante nas situações de\ncomunicação e cuidados pessoais com o adulto que escuta,\nobserva e responde aos seus interesses e necessidades."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": "  ",
+              "2": "(EI01E003RS-02) Participar de brincadeiras com professores, como esconder e achar, imitando os professores e/ou colegas e encadeando ações simples",
+              "3": "  "
+            },
+            "source_column_index": 1,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO04RS-02"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:6460c6eeb21156589b68",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO04RS-03",
+          "text": "Usar gestos com a intenção de conseguir algo, apontando o que deseja, colocando a mão na barriga para manifestar que está com fome, apontar para torneira demonstrando sede, apontar para pessoas ou objetos como forma de mostrar reconhecimento.",
+          "normalized_text": "usar gestos com a intencao de conseguir algo, apontando o que deseja, colocando a mao na barriga para manifestar que esta com fome, apontar para torneira demonstrando sede, apontar para pessoas ou objetos como forma de mostrar reconhecimento.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "documented_source_code_rule",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_evidence": {
+                "source_id": "rs-rcg-ei-2018",
+                "page": 84,
+                "printed_page": "84",
+                "section": "Organização dos objetivos e código alfanumérico",
+                "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+              },
+              "position_rule_id": "rcg-ei-base-bncc-territorial-suffix"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 89,
+              "printed_page": null,
+              "section": "Tabela 1, linha 10",
+              "excerpt": "Usar gestos com a intenção de conseguir algo, apontando o que deseja, colocando a mão na barriga para manifestar que está com fome, apontar para torneira demonstrando sede, apontar para pessoas ou objetos como forma de mostrar reconhecimento.",
+              "locator": "table:0/row:9/cell:1",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                255.2405014038086,
+                274.0,
+                581.3399658203125,
+                667.9596354166666
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.578830+00:00"
+            }
+          ],
+          "extraction_flags": [
+            "multiple_codes_in_cell"
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO04) Comunicar necessidades,\ndesejos e emoções, utilizando gestos,\nbalbucios, palavras.",
+              "1": "(EI01EO04RS-01) Vivenciar um processo de inserção que\nrespeite o seu tempo e oportunize o seu acolhimento e\nadaptação.\n(EI01EO04RS-02) Comunicar-se com outros bebês e com\nadultos, fazendo uso de diferentes formas de comunicação,\nbuscando contato, atenção e prolongamento das situações\nde interação.\n(EI01EO04RS-03) Usar gestos com a intenção de conseguir\nalgo, apontando o que deseja, colocando a mão na barriga\npara manifestar que está com fome, apontar para torneira\ndemonstrando sede, apontar para pessoas ou objetos como\nforma de mostrar reconhecimento.\n(EI01EO04RS-04) Sentir-se confiante nas situações de\ncomunicação e cuidados pessoais com o adulto que escuta,\nobserva e responde aos seus interesses e necessidades."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": "  ",
+              "2": "(EI01E003RS-02) Participar de brincadeiras com professores, como esconder e achar, imitando os professores e/ou colegas e encadeando ações simples",
+              "3": "  "
+            },
+            "source_column_index": 1,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO04RS-03"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:8fba41f27387506eb65c",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO04RS-04",
+          "text": "Sentir-se confiante nas situações de comunicação e cuidados pessoais com o adulto que escuta, observa e responde aos seus interesses e necessidades.",
+          "normalized_text": "sentir-se confiante nas situacoes de comunicacao e cuidados pessoais com o adulto que escuta, observa e responde aos seus interesses e necessidades.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "documented_source_code_rule",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_evidence": {
+                "source_id": "rs-rcg-ei-2018",
+                "page": 84,
+                "printed_page": "84",
+                "section": "Organização dos objetivos e código alfanumérico",
+                "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+              },
+              "position_rule_id": "rcg-ei-base-bncc-territorial-suffix"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 89,
+              "printed_page": null,
+              "section": "Tabela 1, linha 10",
+              "excerpt": "Sentir-se confiante nas situações de comunicação e cuidados pessoais com o adulto que escuta, observa e responde aos seus interesses e necessidades.",
+              "locator": "table:0/row:9/cell:1",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                255.2405014038086,
+                274.0,
+                581.3399658203125,
+                667.9596354166666
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.578919+00:00"
+            }
+          ],
+          "extraction_flags": [
+            "multiple_codes_in_cell"
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO04) Comunicar necessidades,\ndesejos e emoções, utilizando gestos,\nbalbucios, palavras.",
+              "1": "(EI01EO04RS-01) Vivenciar um processo de inserção que\nrespeite o seu tempo e oportunize o seu acolhimento e\nadaptação.\n(EI01EO04RS-02) Comunicar-se com outros bebês e com\nadultos, fazendo uso de diferentes formas de comunicação,\nbuscando contato, atenção e prolongamento das situações\nde interação.\n(EI01EO04RS-03) Usar gestos com a intenção de conseguir\nalgo, apontando o que deseja, colocando a mão na barriga\npara manifestar que está com fome, apontar para torneira\ndemonstrando sede, apontar para pessoas ou objetos como\nforma de mostrar reconhecimento.\n(EI01EO04RS-04) Sentir-se confiante nas situações de\ncomunicação e cuidados pessoais com o adulto que escuta,\nobserva e responde aos seus interesses e necessidades."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": "  ",
+              "2": "(EI01E003RS-02) Participar de brincadeiras com professores, como esconder e achar, imitando os professores e/ou colegas e encadeando ações simples",
+              "3": "  "
+            },
+            "source_column_index": 1,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO04RS-04"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:3a192fc6d08fff4925de",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO05",
+          "text": "Reconhecer seu corpo e expressar suas sensações em momentos de alimentação, higiene, brincadeira e descanso.",
+          "normalized_text": "reconhecer seu corpo e expressar suas sensacoes em momentos de alimentacao, higiene, brincadeira e descanso.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 89,
+              "printed_page": null,
+              "section": "Tabela 1, linha 11",
+              "excerpt": "Reconhecer seu corpo e expressar suas sensações em momentos de alimentação, higiene, brincadeira e descanso.",
+              "locator": "table:0/row:10/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                14.099999904632568,
+                667.9596354166666,
+                255.2405014038086,
+                754.4397277832031
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.579091+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO05) Reconhecer seu corpo e\nexpressar suas sensações em momentos\nde alimentação, higiene, brincadeira e\ndescanso.",
+              "1": "(EI01EO05RS-01) Desenvolver a autoestima e afetividade\nno convívio em grupo."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": "  ",
+              "2": "(EI01E003RS-02) Participar de brincadeiras com professores, como esconder e achar, imitando os professores e/ou colegas e encadeando ações simples",
+              "3": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO05"
+        },
+        {
+          "id": "ca:rs-rcg-ei-2018:491791799e77e5dcf2b9",
+          "curriculum_id": "rs:rs-rcg-ei-2018",
+          "source_id": "rs-rcg-ei-2018",
+          "uf": "RS",
+          "code": "EI01EO05RS-01",
+          "text": "Desenvolver a autoestima e afetividade no convívio em grupo.",
+          "normalized_text": "desenvolver a autoestima e afetividade no convivio em grupo.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "documented_source_code_rule",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_evidence": {
+                "source_id": "rs-rcg-ei-2018",
+                "page": 84,
+                "printed_page": "84",
+                "section": "Organização dos objetivos e código alfanumérico",
+                "excerpt": "O Referencial Curricular Gaúcho da Educação Infantil organiza-se de \nacordo com a BNCC, em que cada objetivo de aprendizagem e desenvolvimento \naparece identificado por um código alfanumérico, acrescido do código do \nobjetivo do território gaúcho, com a seguinte composição, como demonstra a \nfigura a seguir: \n \nFonte: Código Objetivos de Aprendizagem RCG \nO esquema acima demonstra como os Objetivos de aprendizagem e \ndesenvolvimento são indicados no documento. \n- As duas primeiras letras (EI) indicam a primeira etapa da Educação \nBásica, a Educação Infantil. \n- Os dois primeiros números indicam o grupo por faixa etária, ou seja, 01 \n= Bebês (zero a 1 ano e 6 meses), 02 = Crianças bem pequenas (1 ano e 7 \nmeses a 3 anos e 11 meses) e 03 = Crianças pequenas (4 anos a 5 anos e 11 \nmeses). \n"
+              },
+              "position_rule_id": "rcg-ei-base-bncc-territorial-suffix"
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rs-rcg-ei-2018",
+              "page": 89,
+              "printed_page": null,
+              "section": "Tabela 1, linha 11",
+              "excerpt": "Desenvolver a autoestima e afetividade no convívio em grupo.",
+              "locator": "table:0/row:10/cell:1",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                255.2405014038086,
+                667.9596354166666,
+                581.3399658203125,
+                754.4397277832031
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.579344+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(EI01EO05) Reconhecer seu corpo e\nexpressar suas sensações em momentos\nde alimentação, higiene, brincadeira e\ndescanso.",
+              "1": "(EI01EO05RS-01) Desenvolver a autoestima e afetividade\nno convívio em grupo."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": "  ",
+              "2": "(EI01E003RS-02) Participar de brincadeiras com professores, como esconder e achar, imitando os professores e/ou colegas e encadeando ações simples",
+              "3": "  "
+            },
+            "source_column_index": 1,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO05RS-01"
+        }
+      ],
+      "coded_by_page": {
+        "88": 14,
+        "89": 7
+      }
+    },
+    "ms-cr-eief-v110": {
+      "cloned_extraction_pages": [
+        80,
+        155,
+        156
+      ],
+      "full_cache_sha256_before": "e7f2c317e78305f0503880fefb1b3d285678022c2f73b2ab9d0c3101f668fd21",
+      "full_cache_sha256_after": "e7f2c317e78305f0503880fefb1b3d285678022c2f73b2ab9d0c3101f668fd21",
+      "full_cache_unchanged": true,
+      "extraction_revision": "page-cell-v1.4.0",
+      "warnings": [],
+      "items": [
+        {
+          "id": "ca:ms-cr-eief-v110:c73b1912e269f6d613e3",
+          "curriculum_id": "ms:ms-cr-eief-v110",
+          "source_id": "ms-cr-eief-v110",
+          "uf": "MS",
+          "code": "MS.EI01EO01. s. 01",
+          "text": "Perceber que suas ações têm efeito nas outras crianças e nos adultos.",
+          "normalized_text": "perceber que suas acoes tem efeito nas outras criancas e nos adultos.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "ms-cr-eief-v110",
+              "page": 80,
+              "printed_page": null,
+              "section": "Tabela 1, linha 10",
+              "excerpt": "Perceber que suas ações têm efeito nas outras crianças e nos adultos.",
+              "locator": "table:0/row:9/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                85.10399627685547,
+                142.33999633789062,
+                255.2469442030963,
+                174.97998046875
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.910533+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(MS.EI01EO01. s. 01)\nPerceber que suas ações têm efeito nas\noutras crianças e nos adultos.",
+              "3": "Observar as manifestações dos bebês e suas escolhas compreendendo seus\ngestos, balbucios, olhares e expressões como comunicação de suas\npreferências e/ou rejeições garantindo que suas necessidades sejam\natendidas.\nProporcionar aos bebês momentos de ajuda, atenção, aconchego e colo de\nacordo com suas necessidades, garantindo o cuidado, a interação e o\nacolhimento.\nComunicar sua presença e intenção antes de tocar o bebê, interagindo e\ndialogando com ele nos momentos de cuidado, alimentação, sono,\nbrincadeiras, possibilitando sua expressão.\nOrganizar tempos e espaços com materiais que promovam oportunidades\nde interação entre os bebês e profissionais da instituição.\nInteragir com os bebês para ajudá-los a perceber gradativamente a\nnecessidade da troca de fraldas.\nProporcionar a vivência de diversas brincadeiras como: esconder e aparecer,\nlançar objetos e resgatar, empilhar e desempilhar, dentre outras,\npossibilitando a interação e espontaneidade entre bebês e adultos.\nOferecer aos bebês brinquedos e objetos variados em quantidade suficiente,\npara que possam fazer escolhas e explorá-los de diferentes formas.\nIncentivar os bebês a alimentarem-se com autonomia, oferecendo diversos\nalimentos e valorizando suas conquistas.\nConversar, cantar, ler e contar histórias diariamente para os bebês\nfavorecendo uma relação afetiva e social na construção da linguagem.\nOrganizar espaços diversificados e seguros para que os bebês possam\nmovimentar-se livremente, favorecendo a autonomia, a imaginação, o\nequilíbrio e a flexibilidade.\nPlanejar situações em que seja possível os bebês terem contato com crianças\nde outras turmas e de faixas etárias diferentes.\nPropiciar ações que promovam oportunidades de interação entre os bebês,\nfamiliares, crianças, professores e outros profissionais, possibilitando o\nconvívio social nos eventos culturais promovidos pela instituição.\nAcolher e auxiliar o bebê a superar momentos de frustração, medo, raiva,\ntristeza e fortalecer sentimentos de alegria, prazer e interação.\nParticipar das brincadeiras com os bebês interagindo com eles na exploração\ndos espaços, materiais e brinquedos: objetos com cores, formas, tamanhos e\ntexturas diversificadas; retalhos de tecido, argolas, bolas, bacias de metal,\nblocos de espuma, pequenas almofadas, espelho, dentre outros.\nOportunizar momentos para que sejam capazes de experimentar e utilizar os\nrecursos que dispõem, para a satisfação de suas necessidades, expressando\nseus desejos e sentimentos.\nAcolher os bebês e solicitar às famílias objetos de apego e fotos a fim de\nfavorecer o reconhecimento de si e de seus familiares.\nProporcionar atividades para a interação dos bebês com seus familiares e\nprofissionais da instituição no período de adaptação.\nPromover horário diferenciado para acolhimento e adaptação dos bebês.\nAconchegar os bebês quando demandarem ajuda: pelo choro, pedido de\ncolo, silêncio prolongado, birra, favorecendo o fortalecimento de vínculos\nafetivos."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": " BEBÊS (ZERO A 1 ANO E 6 MESES) ",
+              "2": "  ",
+              "3": "  ",
+              "4": "  ",
+              "5": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "MS.EI01EO01.s.01"
+        },
+        {
+          "id": "ca:ms-cr-eief-v110:f855b9f1e481afd1c92b",
+          "curriculum_id": "ms:ms-cr-eief-v110",
+          "source_id": "ms-cr-eief-v110",
+          "uf": "MS",
+          "code": "MS.EI01EO02. s. 02",
+          "text": "Perceber as possibilidades e os limites de seu corpo nas brincadeiras e interações das quais participa.",
+          "normalized_text": "perceber as possibilidades e os limites de seu corpo nas brincadeiras e interacoes das quais participa.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "ms-cr-eief-v110",
+              "page": 80,
+              "printed_page": null,
+              "section": "Tabela 1, linha 11",
+              "excerpt": "Perceber as possibilidades e os limites de seu corpo nas brincadeiras e interações das quais participa.",
+              "locator": "table:0/row:10/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                85.10399627685547,
+                174.97998046875,
+                255.2469442030963,
+                217.94000244140625
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.911685+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(MS.EI01EO02. s. 02)\nPerceber as possibilidades e os limites de\nseu corpo nas brincadeiras e interações das\nquais participa."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": " BEBÊS (ZERO A 1 ANO E 6 MESES) ",
+              "2": "  ",
+              "3": "  ",
+              "4": "  ",
+              "5": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "MS.EI01EO02.s.02"
+        },
+        {
+          "id": "ca:ms-cr-eief-v110:fd210b6d0a956b67fec0",
+          "curriculum_id": "ms:ms-cr-eief-v110",
+          "source_id": "ms-cr-eief-v110",
+          "uf": "MS",
+          "code": "MS.EI01EO03. s. 03",
+          "text": "Interagir com crianças da mesma faixa etária e adultos ao explorar espaços, materiais, objetos, brinquedos.",
+          "normalized_text": "interagir com criancas da mesma faixa etaria e adultos ao explorar espacos, materiais, objetos, brinquedos.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "ms-cr-eief-v110",
+              "page": 80,
+              "printed_page": null,
+              "section": "Tabela 1, linha 12",
+              "excerpt": "Interagir com crianças da mesma faixa etária e adultos ao explorar espaços, materiais, objetos, brinquedos.",
+              "locator": "table:0/row:11/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                85.10399627685547,
+                217.94000244140625,
+                255.2469442030963,
+                261.02001953125
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.911805+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(MS.EI01EO03. s. 03)\nInteragir com crianças da mesma faixa etária\ne adultos ao explorar espaços, materiais,\nobjetos, brinquedos."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": " BEBÊS (ZERO A 1 ANO E 6 MESES) ",
+              "2": "  ",
+              "3": "  ",
+              "4": "  ",
+              "5": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "MS.EI01EO03.s.03"
+        },
+        {
+          "id": "ca:ms-cr-eief-v110:b83356c0c1a391b2e62c",
+          "curriculum_id": "ms:ms-cr-eief-v110",
+          "source_id": "ms-cr-eief-v110",
+          "uf": "MS",
+          "code": "MS.EI01EO04. s. 04",
+          "text": "Comunicar necessidades, desejos e emoções, utilizando gestos, balbucios, palavras.",
+          "normalized_text": "comunicar necessidades, desejos e emocoes, utilizando gestos, balbucios, palavras.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "ms-cr-eief-v110",
+              "page": 80,
+              "printed_page": null,
+              "section": "Tabela 1, linha 13",
+              "excerpt": "Comunicar necessidades, desejos e emoções, utilizando gestos, balbucios, palavras.",
+              "locator": "table:0/row:12/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                85.10399627685547,
+                261.02001953125,
+                255.2469442030963,
+                293.45001220703125
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.911913+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(MS.EI01EO04. s. 04)\nComunicar necessidades, desejos e emoções,\nutilizando gestos, balbucios, palavras."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": " BEBÊS (ZERO A 1 ANO E 6 MESES) ",
+              "2": "  ",
+              "3": "  ",
+              "4": "  ",
+              "5": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "MS.EI01EO04.s.04"
+        },
+        {
+          "id": "ca:ms-cr-eief-v110:df63709f9656d80959e2",
+          "curriculum_id": "ms:ms-cr-eief-v110",
+          "source_id": "ms-cr-eief-v110",
+          "uf": "MS",
+          "code": "MS.EI01EO05. s. 05",
+          "text": "Reconhecer seu corpo e expressar suas sensações em momentos de alimentação, higiene, brincadeira e descanso.",
+          "normalized_text": "reconhecer seu corpo e expressar suas sensacoes em momentos de alimentacao, higiene, brincadeira e descanso.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "ms-cr-eief-v110",
+              "page": 80,
+              "printed_page": null,
+              "section": "Tabela 1, linha 14",
+              "excerpt": "Reconhecer seu corpo e expressar suas sensações em momentos de alimentação, higiene, brincadeira e descanso.",
+              "locator": "table:0/row:13/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                85.10399627685547,
+                293.45001220703125,
+                255.2469442030963,
+                336.5299835205078
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.912020+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(MS.EI01EO05. s. 05)\nReconhecer seu corpo e expressar suas\nsensações em momentos de alimentação,\nhigiene, brincadeira e descanso."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": " BEBÊS (ZERO A 1 ANO E 6 MESES) ",
+              "2": "  ",
+              "3": "  ",
+              "4": "  ",
+              "5": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "MS.EI01EO05.s.05"
+        },
+        {
+          "id": "ca:ms-cr-eief-v110:c2108ba91de1b6bba37f",
+          "curriculum_id": "ms:ms-cr-eief-v110",
+          "source_id": "ms-cr-eief-v110",
+          "uf": "MS",
+          "code": "MS.EI01EO06. s. 06",
+          "text": "Interagir com outras crianças da mesma faixa etária e adultos, adaptando-se ao convívio social.",
+          "normalized_text": "interagir com outras criancas da mesma faixa etaria e adultos, adaptando-se ao convivio social.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "ms-cr-eief-v110",
+              "page": 80,
+              "printed_page": null,
+              "section": "Tabela 1, linha 15",
+              "excerpt": "Interagir com outras crianças da mesma faixa etária e adultos, adaptando-se ao convívio social.",
+              "locator": "table:0/row:14/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                85.10399627685547,
+                336.5299835205078,
+                255.2469442030963,
+                379.6099853515625
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.912126+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(MS.EI01EO06. s. 06)\nInteragir com outras crianças da mesma faixa\netária e adultos, adaptando-se ao convívio\nsocial."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": " BEBÊS (ZERO A 1 ANO E 6 MESES) ",
+              "2": "  ",
+              "3": "  ",
+              "4": "  ",
+              "5": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "MS.EI01EO06.s.06"
+        },
+        {
+          "id": "ca:ms-cr-eief-v110:9aabf592cb8e5ec9ebab",
+          "curriculum_id": "ms:ms-cr-eief-v110",
+          "source_id": "ms-cr-eief-v110",
+          "uf": "MS",
+          "code": "MS.EI01EO00. n. 07",
+          "text": "Expressar a necessidade da atenção do adulto, aconchego e acolhimento.",
+          "normalized_text": "expressar a necessidade da atencao do adulto, aconchego e acolhimento.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "ms-cr-eief-v110",
+              "page": 80,
+              "printed_page": null,
+              "section": "Tabela 1, linha 16",
+              "excerpt": "Expressar a necessidade da atenção do adulto, aconchego e acolhimento.",
+              "locator": "table:0/row:15/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                85.10399627685547,
+                379.6099853515625,
+                255.2469442030963,
+                412.0099639892578
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.912222+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(MS.EI01EO00. n. 07)\nExpressar a necessidade da atenção do\nadulto, aconchego e acolhimento."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": " BEBÊS (ZERO A 1 ANO E 6 MESES) ",
+              "2": "  ",
+              "3": "  ",
+              "4": "  ",
+              "5": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "MS.EI01EO00.n.07"
+        },
+        {
+          "id": "ca:ms-cr-eief-v110:14d6844c9b7272d7e3ed",
+          "curriculum_id": "ms:ms-cr-eief-v110",
+          "source_id": "ms-cr-eief-v110",
+          "uf": "MS",
+          "code": "MS.EI01EO00. n. 08",
+          "text": "Manifestar emoções diante das situações vivenciadas.",
+          "normalized_text": "manifestar emocoes diante das situacoes vivenciadas.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "ms-cr-eief-v110",
+              "page": 80,
+              "printed_page": null,
+              "section": "Tabela 1, linha 17",
+              "excerpt": "Manifestar emoções diante das situações vivenciadas.",
+              "locator": "table:0/row:16/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                85.10399627685547,
+                412.0099639892578,
+                255.2469442030963,
+                444.5299835205078
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.912308+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(MS.EI01EO00. n. 08)\nManifestar emoções diante das situações\nvivenciadas."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": " BEBÊS (ZERO A 1 ANO E 6 MESES) ",
+              "2": "  ",
+              "3": "  ",
+              "4": "  ",
+              "5": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "MS.EI01EO00.n.08"
+        },
+        {
+          "id": "ca:ms-cr-eief-v110:1e8a44ba7d10a7aa6803",
+          "curriculum_id": "ms:ms-cr-eief-v110",
+          "source_id": "ms-cr-eief-v110",
+          "uf": "MS",
+          "code": "MS.EI01EO00. n. 09",
+          "text": "Identificar e reconhecer os adultos que atuam nele e sentir-se seguro, construindo vínculos afetivos com os adultos e outros bebês.",
+          "normalized_text": "identificar e reconhecer os adultos que atuam nele e sentir-se seguro, construindo vinculos afetivos com os adultos e outros bebes.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "ms-cr-eief-v110",
+              "page": 80,
+              "printed_page": null,
+              "section": "Tabela 1, linha 18",
+              "excerpt": "Identificar e reconhecer os adultos que atuam nele e sentir-se seguro, construindo vínculos afetivos com os adultos e outros bebês.",
+              "locator": "table:0/row:17/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                85.10399627685547,
+                444.5299835205078,
+                255.2469442030963,
+                498.1899871826172
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.912418+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(MS.EI01EO00. n. 09)\nIdentificar e reconhecer os adultos que\natuam nele e sentir-se seguro, construindo\nvínculos afetivos com os adultos e outros\nbebês."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": " BEBÊS (ZERO A 1 ANO E 6 MESES) ",
+              "2": "  ",
+              "3": "  ",
+              "4": "  ",
+              "5": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "MS.EI01EO00.n.09"
+        },
+        {
+          "id": "ca:ms-cr-eief-v110:7bd9667db6355f4721ef",
+          "curriculum_id": "ms:ms-cr-eief-v110",
+          "source_id": "ms-cr-eief-v110",
+          "uf": "MS",
+          "code": "MS.EI01EO00. n. 10",
+          "text": "Movimentar-se sozinho de acordo com a sua vontade e necessidade.",
+          "normalized_text": "movimentar-se sozinho de acordo com a sua vontade e necessidade.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "ms-cr-eief-v110",
+              "page": 80,
+              "printed_page": null,
+              "section": "Tabela 1, linha 19",
+              "excerpt": "Movimentar-se sozinho de acordo com a sua vontade e necessidade.",
+              "locator": "table:0/row:18/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                85.10399627685547,
+                498.1899871826172,
+                255.2469442030963,
+                729.5799560546875
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T13:58:30.912514+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "0": "(MS.EI01EO00. n. 10)\nMovimentar-se sozinho de acordo com a sua\nvontade e necessidade."
+            },
+            "column_headers": {
+              "0": "  ",
+              "1": " BEBÊS (ZERO A 1 ANO E 6 MESES) ",
+              "2": "  ",
+              "3": "  ",
+              "4": "  ",
+              "5": "  "
+            },
+            "source_column_index": 0,
+            "source_table_index": 0
+          },
+          "code_search_form": "MS.EI01EO00.n.10"
+        }
+      ],
+      "coded_by_page": {
+        "80": 10
+      }
+    }
+  }
+}

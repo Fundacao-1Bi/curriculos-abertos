@@ -1,0 +1,1728 @@
+{
+  "actor_type": "automated",
+  "helper_sha256": "5e70bd7a8840aba78abdd8e3b733dedf7a5d0dc278ab39f26272d2ab07a6b0a2",
+  "expected_rules": 12,
+  "checked": 12,
+  "created_missing_code_only_anchors": 1,
+  "passed": true,
+  "checks": [
+    {
+      "code": "EMIFALGG102",
+      "start_page": 52,
+      "continuation_page": 53,
+      "existing_identity_preserved": true,
+      "created_missing_code_only_anchor": false,
+      "normalized_text_correct": true,
+      "actual_evidence_check": true,
+      "fragments": [
+        {
+          "page": 52,
+          "excerpt": "Examinar criticamente conteúdos digitais e midiáticos, mobilizando abordagens científicas e investigativas para avaliar aspectos de privacidade, representatividade e os impactos das redes sociais na construção",
+          "bbox": [
+            230.18000520978654,
+            448.847998046875,
+            925.2694509405839,
+            488.15999603271484
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        },
+        {
+          "page": 53,
+          "excerpt": "da identidade e das relações interpessoais, bem como seu papel no enfrentamento da desinformação e das Fake News. [Eixo III e Competência 1]",
+          "bbox": [
+            230.06000518798828,
+            61.82148742675781,
+            925.6199951171875,
+            445.0559997558594
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        }
+      ],
+      "rewritten_item": {
+        "id": "ca:es-ifa-lingchsa-6-1:a2113f4ebc4d0e7e438e",
+        "curriculum_id": "es:es-ifa-lingchsa-6-1",
+        "source_id": "es-ifa-lingchsa-6-1",
+        "uf": "ES",
+        "code": "EMIFALGG102",
+        "text": "Examinar criticamente conteúdos digitais e midiáticos, mobilizando abordagens científicas e investigativas para avaliar aspectos de privacidade, representatividade e os impactos das redes sociais na construção da identidade e das relações interpessoais, bem como seu papel no enfrentamento da desinformação e das Fake News. [Eixo III e Competência 1]",
+        "normalized_text": "examinar criticamente conteudos digitais e midiaticos, mobilizando abordagens cientificas e investigativas para avaliar aspectos de privacidade, representatividade e os impactos das redes sociais na construcao da identidade e das relacoes interpessoais, bem como seu papel no enfrentamento da desinformacao e das fake news. [eixo iii e competencia 1]",
+        "editorial_note": null,
+        "kind": "habilidade",
+        "parent_id": null,
+        "positions": [
+          {
+            "stage": "EM",
+            "component": null,
+            "area": null,
+            "years": null,
+            "year_label": null,
+            "age_group": null,
+            "period": null,
+            "position_origin": "document_code_context",
+            "position_note": "Código de itinerário; área/série não inferidas sem declaração documental."
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 52,
+            "printed_page": null,
+            "section": null,
+            "excerpt": "Examinar criticamente conteúdos digitais e midiáticos, mobilizando abordagens científicas e investigativas para avaliar aspectos de privacidade, representatividade e os impactos das redes sociais na construção",
+            "locator": "table:0/row:14/cell:1",
+            "method": "pymupdf-ruled-cell",
+            "bbox": [
+              230.18000520978654,
+              448.847998046875,
+              925.2694509405839,
+              488.15999603271484
+            ]
+          },
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 53,
+            "printed_page": null,
+            "section": "Continuação da mesma célula de Habilidades do IFA",
+            "excerpt": "da identidade e das relações interpessoais, bem como seu papel no enfrentamento da desinformação e das Fake News. [Eixo III e Competência 1]",
+            "locator": "table:0/row:0/cell:1",
+            "bbox": [
+              230.06000518798828,
+              61.82148742675781,
+              925.6199951171875,
+              445.0559997558594
+            ],
+            "method": "es-ifa-physical-cell-continuation-v1",
+            "coordinate_space": "display_pdf_after_remove_rotation",
+            "actor_type": "automated"
+          }
+        ],
+        "extraction_revision": "page-cell-v1.4.0",
+        "extraction_status": "pending_documentary_review",
+        "technical_validation_status": "pending_literal_and_documentary_verification",
+        "pedagogical_review_status": "not_reviewed",
+        "publication_status": "extracted_candidate",
+        "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+        "review_events": [
+          {
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:page-cell-extractor",
+            "method": "page-cell-v1.4.0",
+            "result": "pending_documentary_review",
+            "at": "2026-10-28T16:17:41.249415+00:00"
+          }
+        ],
+        "cross_page_continuation": true,
+        "resolved_source_continuation_pages": [
+          53
+        ],
+        "extraction_flags": [],
+        "source_context": {
+          "physical_continuation": {
+            "method": "es-ifa-complete-physical-continuation-census-v1",
+            "start_page": 52,
+            "continuation_page": 53,
+            "start_cell_bbox": [
+              230.18000520978654,
+              448.847998046875,
+              925.2694509405839,
+              488.15999603271484
+            ],
+            "continuation_cell_bbox": [
+              230.06000518798828,
+              61.82148742675781,
+              925.6199951171875,
+              445.0559997558594
+            ],
+            "original_code_anchor_bbox": [
+              238.4600067138672,
+              458.2008056640625,
+              330.2256774902344,
+              471.5812683105469
+            ],
+            "actor_type": "automated",
+            "human_review": false
+          }
+        }
+      }
+    },
+    {
+      "code": "EMIFALGG604",
+      "start_page": 70,
+      "continuation_page": 71,
+      "existing_identity_preserved": true,
+      "created_missing_code_only_anchor": false,
+      "normalized_text_correct": true,
+      "actual_evidence_check": true,
+      "fragments": [
+        {
+          "page": 70,
+          "excerpt": "Empregar estratégias de comunicação em diferentes contextos socioprofissionais, utilizando a língua estrangeira e língua materna para interagir de forma ética e adequada, compreendendo normas discursivas, variações",
+          "bbox": [
+            226.8527235551314,
+            322.9915008544922,
+            931.9753840519832,
+            464.9759979248047
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        },
+        {
+          "page": 71,
+          "excerpt": "linguísticas e aspectos interculturais que se manifestam nas relações de trabalho em contextos local, regional, nacional e global. [Eixo IV e Competência 6].",
+          "bbox": [
+            226.53199462890626,
+            62.0360107421875,
+            932.2000122070312,
+            110.0615005493164
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        }
+      ],
+      "rewritten_item": {
+        "id": "ca:es-ifa-lingchsa-6-1:b14f0dd18ede66aafbab",
+        "curriculum_id": "es:es-ifa-lingchsa-6-1",
+        "source_id": "es-ifa-lingchsa-6-1",
+        "uf": "ES",
+        "code": "EMIFALGG604",
+        "text": "Empregar estratégias de comunicação em diferentes contextos socioprofissionais, utilizando a língua estrangeira e língua materna para interagir de forma ética e adequada, compreendendo normas discursivas, variações linguísticas e aspectos interculturais que se manifestam nas relações de trabalho em contextos local, regional, nacional e global. [Eixo IV e Competência 6].",
+        "normalized_text": "empregar estrategias de comunicacao em diferentes contextos socioprofissionais, utilizando a lingua estrangeira e lingua materna para interagir de forma etica e adequada, compreendendo normas discursivas, variacoes linguisticas e aspectos interculturais que se manifestam nas relacoes de trabalho em contextos local, regional, nacional e global. [eixo iv e competencia 6].",
+        "editorial_note": null,
+        "kind": "habilidade",
+        "parent_id": null,
+        "positions": [
+          {
+            "stage": "EM",
+            "component": null,
+            "area": null,
+            "years": null,
+            "year_label": null,
+            "age_group": null,
+            "period": null,
+            "position_origin": "document_code_context",
+            "position_note": "Código de itinerário; área/série não inferidas sem declaração documental."
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 70,
+            "printed_page": null,
+            "section": null,
+            "excerpt": "Empregar estratégias de comunicação em diferentes contextos socioprofissionais, utilizando a língua estrangeira e língua materna para interagir de forma ética e adequada, compreendendo normas discursivas, variações",
+            "locator": "table:0/row:9/cell:1",
+            "method": "pymupdf-ruled-cell",
+            "bbox": [
+              226.8527235551314,
+              322.9915008544922,
+              931.9753840519832,
+              464.9759979248047
+            ]
+          },
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 71,
+            "printed_page": null,
+            "section": "Continuação da mesma célula de Habilidades do IFA",
+            "excerpt": "linguísticas e aspectos interculturais que se manifestam nas relações de trabalho em contextos local, regional, nacional e global. [Eixo IV e Competência 6].",
+            "locator": "table:0/row:0/cell:1",
+            "bbox": [
+              226.53199462890626,
+              62.0360107421875,
+              932.2000122070312,
+              110.0615005493164
+            ],
+            "method": "es-ifa-physical-cell-continuation-v1",
+            "coordinate_space": "display_pdf_after_remove_rotation",
+            "actor_type": "automated"
+          }
+        ],
+        "extraction_revision": "page-cell-v1.4.0",
+        "extraction_status": "pending_documentary_review",
+        "technical_validation_status": "pending_literal_and_documentary_verification",
+        "pedagogical_review_status": "not_reviewed",
+        "publication_status": "extracted_candidate",
+        "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+        "review_events": [
+          {
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:page-cell-extractor",
+            "method": "page-cell-v1.4.0",
+            "result": "pending_documentary_review",
+            "at": "2026-10-28T16:17:41.340701+00:00"
+          }
+        ],
+        "cross_page_continuation": true,
+        "resolved_source_continuation_pages": [
+          71
+        ],
+        "extraction_flags": [],
+        "source_context": {
+          "physical_continuation": {
+            "method": "es-ifa-complete-physical-continuation-census-v1",
+            "start_page": 70,
+            "continuation_page": 71,
+            "start_cell_bbox": [
+              226.8527235551314,
+              322.9915008544922,
+              931.9753840519832,
+              464.9759979248047
+            ],
+            "continuation_cell_bbox": [
+              226.53199462890626,
+              62.0360107421875,
+              932.2000122070312,
+              110.0615005493164
+            ],
+            "original_code_anchor_bbox": [
+              236.05999755859375,
+              434.32080078125,
+              332.2293701171875,
+              447.7012939453125
+            ],
+            "actor_type": "automated",
+            "human_review": false
+          }
+        }
+      }
+    },
+    {
+      "code": "EMIFALGG103",
+      "start_page": 104,
+      "continuation_page": 105,
+      "existing_identity_preserved": true,
+      "created_missing_code_only_anchor": true,
+      "normalized_text_correct": true,
+      "actual_evidence_check": true,
+      "fragments": [
+        {
+          "page": 104,
+          "excerpt": "EMIFALGG103",
+          "bbox": [
+            240.6199951171875,
+            381.884765625,
+            331.3056640625,
+            395.2652587890625
+          ],
+          "role": "code_locator",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        },
+        {
+          "page": 105,
+          "excerpt": "Investigar discursos midiáticos, científicos, literários e artísticos, considerando suas intencionalidades, modos de construção e circulação, identificando mecanismos de persuasão, estratégias argumentativas e representações sociais, na promoção de uma leitura crítica da realidade.",
+          "bbox": [
+            231.33200073242188,
+            62.0360107421875,
+            926.9200032552084,
+            110.06000518798828
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        }
+      ],
+      "rewritten_item": {
+        "id": "ca:es-ifa-lingchsa-6-1:866202cfa9a4719c8054",
+        "curriculum_id": "es:es-ifa-lingchsa-6-1",
+        "source_id": "es-ifa-lingchsa-6-1",
+        "uf": "ES",
+        "code": "EMIFALGG103",
+        "text": "Investigar discursos midiáticos, científicos, literários e artísticos, considerando suas intencionalidades, modos de construção e circulação, identificando mecanismos de persuasão, estratégias argumentativas e representações sociais, na promoção de uma leitura crítica da realidade.",
+        "normalized_text": "investigar discursos midiaticos, cientificos, literarios e artisticos, considerando suas intencionalidades, modos de construcao e circulacao, identificando mecanismos de persuasao, estrategias argumentativas e representacoes sociais, na promocao de uma leitura critica da realidade.",
+        "editorial_note": null,
+        "kind": "habilidade",
+        "parent_id": null,
+        "positions": [
+          {
+            "stage": "EM",
+            "component": null,
+            "area": null,
+            "years": null,
+            "year_label": null,
+            "age_group": null,
+            "period": null,
+            "position_origin": "document_code_context",
+            "position_note": "Código de itinerário; área/série não inferidas sem declaração documental."
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 104,
+            "printed_page": null,
+            "section": "Habilidade do IFA com continuação na célula física seguinte",
+            "excerpt": "EMIFALGG103",
+            "locator": "table:0/row:16/cell:1",
+            "method": "es-ifa-physical-cell-continuation-v1",
+            "bbox": [
+              240.6199951171875,
+              381.884765625,
+              331.3056640625,
+              395.2652587890625
+            ],
+            "evidence_role": "code_locator"
+          },
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 105,
+            "printed_page": null,
+            "section": "Continuação da mesma célula de Habilidades do IFA",
+            "excerpt": "Investigar discursos midiáticos, científicos, literários e artísticos, considerando suas intencionalidades, modos de construção e circulação, identificando mecanismos de persuasão, estratégias argumentativas e representações sociais, na promoção de uma leitura crítica da realidade.",
+            "locator": "table:0/row:0/cell:1",
+            "bbox": [
+              231.33200073242188,
+              62.0360107421875,
+              926.9200032552084,
+              110.06000518798828
+            ],
+            "method": "es-ifa-physical-cell-continuation-v1",
+            "coordinate_space": "display_pdf_after_remove_rotation",
+            "actor_type": "automated"
+          }
+        ],
+        "extraction_revision": "page-cell-v1.4.0",
+        "extraction_status": "source_cell_continuation_proved",
+        "technical_validation_status": "pending_literal_and_documentary_verification",
+        "pedagogical_review_status": "not_reviewed",
+        "publication_status": "extracted_candidate",
+        "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+        "review_events": [
+          {
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:page-cell-extractor",
+            "method": "page-cell-v1.4.0",
+            "result": "source_cell_continuation_proved",
+            "at": "2026-10-28T16:17:41.440079+00:00"
+          }
+        ],
+        "cross_page_continuation": true,
+        "resolved_source_continuation_pages": [
+          105
+        ],
+        "extraction_flags": [],
+        "source_context": {
+          "physical_continuation": {
+            "method": "es-ifa-complete-physical-continuation-census-v1",
+            "start_page": 104,
+            "continuation_page": 105,
+            "start_cell_bbox": [
+              231.49555997495298,
+              290.95249938964844,
+              926.4694952713816,
+              399.5800018310547
+            ],
+            "continuation_cell_bbox": [
+              231.33200073242188,
+              62.0360107421875,
+              926.9200032552084,
+              110.06000518798828
+            ],
+            "original_code_anchor_bbox": [
+              240.6199951171875,
+              381.884765625,
+              331.3056640625,
+              395.2652587890625
+            ],
+            "actor_type": "automated",
+            "human_review": false
+          }
+        }
+      }
+    },
+    {
+      "code": "EMIFALGG501",
+      "start_page": 148,
+      "continuation_page": 149,
+      "existing_identity_preserved": true,
+      "created_missing_code_only_anchor": false,
+      "normalized_text_correct": true,
+      "actual_evidence_check": true,
+      "fragments": [
+        {
+          "page": 148,
+          "excerpt": "Reconhecer as relações entre linguagem, tecnologia e cultura, analisando como diferentes mídias e plataformas digitais influenciam os processos de comunicação e criação no mundo contemporâneo.",
+          "bbox": [
+            231.05600179036458,
+            388.2090072631836,
+            926.1899948120117,
+            463.38600158691406
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        },
+        {
+          "page": 149,
+          "excerpt": "IV. Mundo do Trabalho e Transformação Social",
+          "bbox": [
+            231.02000045776367,
+            60.86250305175781,
+            926.6799926757812,
+            189.6490020751953
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        }
+      ],
+      "rewritten_item": {
+        "id": "ca:es-ifa-lingchsa-6-1:248e6a6e100cadac28eb",
+        "curriculum_id": "es:es-ifa-lingchsa-6-1",
+        "source_id": "es-ifa-lingchsa-6-1",
+        "uf": "ES",
+        "code": "EMIFALGG501",
+        "text": "Reconhecer as relações entre linguagem, tecnologia e cultura, analisando como diferentes mídias e plataformas digitais influenciam os processos de comunicação e criação no mundo contemporâneo. IV. Mundo do Trabalho e Transformação Social",
+        "normalized_text": "reconhecer as relacoes entre linguagem, tecnologia e cultura, analisando como diferentes midias e plataformas digitais influenciam os processos de comunicacao e criacao no mundo contemporaneo. iv. mundo do trabalho e transformacao social",
+        "editorial_note": null,
+        "kind": "habilidade",
+        "parent_id": null,
+        "positions": [
+          {
+            "stage": "EM",
+            "component": null,
+            "area": null,
+            "years": null,
+            "year_label": null,
+            "age_group": null,
+            "period": null,
+            "position_origin": "document_code_context",
+            "position_note": "Código de itinerário; área/série não inferidas sem declaração documental."
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 148,
+            "printed_page": null,
+            "section": null,
+            "excerpt": "Reconhecer as relações entre linguagem, tecnologia e cultura, analisando como diferentes mídias e plataformas digitais influenciam os processos de comunicação e criação no mundo contemporâneo.",
+            "locator": "table:0/row:13/cell:1",
+            "method": "pymupdf-ruled-cell",
+            "bbox": [
+              231.05600179036458,
+              388.2090072631836,
+              926.1899948120117,
+              463.38600158691406
+            ]
+          },
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 149,
+            "printed_page": null,
+            "section": "Continuação da mesma célula de Habilidades do IFA",
+            "excerpt": "IV. Mundo do Trabalho e Transformação Social",
+            "locator": "table:0/row:0/cell:1",
+            "bbox": [
+              231.02000045776367,
+              60.86250305175781,
+              926.6799926757812,
+              189.6490020751953
+            ],
+            "method": "es-ifa-physical-cell-continuation-v1",
+            "coordinate_space": "display_pdf_after_remove_rotation",
+            "actor_type": "automated"
+          }
+        ],
+        "extraction_revision": "page-cell-v1.4.0",
+        "extraction_status": "pending_documentary_review",
+        "technical_validation_status": "pending_literal_and_documentary_verification",
+        "pedagogical_review_status": "not_reviewed",
+        "publication_status": "extracted_candidate",
+        "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+        "review_events": [
+          {
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:page-cell-extractor",
+            "method": "page-cell-v1.4.0",
+            "result": "pending_documentary_review",
+            "at": "2026-10-28T16:17:41.519509+00:00"
+          }
+        ],
+        "cross_page_continuation": true,
+        "resolved_source_continuation_pages": [
+          149
+        ],
+        "extraction_flags": [],
+        "source_context": {
+          "physical_continuation": {
+            "method": "es-ifa-complete-physical-continuation-census-v1",
+            "start_page": 148,
+            "continuation_page": 149,
+            "start_cell_bbox": [
+              231.05600179036458,
+              388.2090072631836,
+              926.1899948120117,
+              463.38600158691406
+            ],
+            "continuation_cell_bbox": [
+              231.02000045776367,
+              60.86250305175781,
+              926.6799926757812,
+              189.6490020751953
+            ],
+            "original_code_anchor_bbox": [
+              239.89999389648438,
+              405.7647705078125,
+              342.4656677246094,
+              419.145263671875
+            ],
+            "actor_type": "automated",
+            "human_review": false
+          }
+        }
+      }
+    },
+    {
+      "code": "EMIFACHS301",
+      "start_page": 155,
+      "continuation_page": 156,
+      "existing_identity_preserved": true,
+      "created_missing_code_only_anchor": false,
+      "normalized_text_correct": true,
+      "actual_evidence_check": true,
+      "fragments": [
+        {
+          "page": 155,
+          "excerpt": "Analisar criticamente conflitos em diferentes contextos históricos, culturais, sociais e políticos, com foco no Sul Global,",
+          "bbox": [
+            163.09555957935476,
+            335.1114959716797,
+            930.0694869192023,
+            473.67599868774414
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        },
+        {
+          "page": 156,
+          "excerpt": "identificando suas causas e impactos para fundamentar debates, aprimorar processos de mediação e fortalecer a construção de argumentações embasadas em perspectivas éticas, democráticas e sustentáveis.",
+          "bbox": [
+            162.9800033569336,
+            64.22251892089844,
+            930.280019124349,
+            222.73899459838867
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        }
+      ],
+      "rewritten_item": {
+        "id": "ca:es-ifa-lingchsa-6-1:ca4b3beed045c1a4c64c",
+        "curriculum_id": "es:es-ifa-lingchsa-6-1",
+        "source_id": "es-ifa-lingchsa-6-1",
+        "uf": "ES",
+        "code": "EMIFACHS301",
+        "text": "Analisar criticamente conflitos em diferentes contextos históricos, culturais, sociais e políticos, com foco no Sul Global, identificando suas causas e impactos para fundamentar debates, aprimorar processos de mediação e fortalecer a construção de argumentações embasadas em perspectivas éticas, democráticas e sustentáveis.",
+        "normalized_text": "analisar criticamente conflitos em diferentes contextos historicos, culturais, sociais e politicos, com foco no sul global, identificando suas causas e impactos para fundamentar debates, aprimorar processos de mediacao e fortalecer a construcao de argumentacoes embasadas em perspectivas eticas, democraticas e sustentaveis.",
+        "editorial_note": null,
+        "kind": "habilidade",
+        "parent_id": null,
+        "positions": [
+          {
+            "stage": "EM",
+            "component": null,
+            "area": null,
+            "years": null,
+            "year_label": null,
+            "age_group": null,
+            "period": null,
+            "position_origin": "document_code_context",
+            "position_note": "Código de itinerário; área/série não inferidas sem declaração documental."
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 155,
+            "printed_page": null,
+            "section": null,
+            "excerpt": "Analisar criticamente conflitos em diferentes contextos históricos, culturais, sociais e políticos, com foco no Sul Global,",
+            "locator": "table:0/row:7/cell:1",
+            "method": "pymupdf-ruled-cell",
+            "bbox": [
+              163.09555957935476,
+              335.1114959716797,
+              930.0694869192023,
+              473.67599868774414
+            ]
+          },
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 156,
+            "printed_page": null,
+            "section": "Continuação da mesma célula de Habilidades do IFA",
+            "excerpt": "identificando suas causas e impactos para fundamentar debates, aprimorar processos de mediação e fortalecer a construção de argumentações embasadas em perspectivas éticas, democráticas e sustentáveis.",
+            "locator": "table:0/row:0/cell:1",
+            "bbox": [
+              162.9800033569336,
+              64.22251892089844,
+              930.280019124349,
+              222.73899459838867
+            ],
+            "method": "es-ifa-physical-cell-continuation-v1",
+            "coordinate_space": "display_pdf_after_remove_rotation",
+            "actor_type": "automated"
+          }
+        ],
+        "extraction_revision": "page-cell-v1.4.0",
+        "extraction_status": "pending_documentary_review",
+        "technical_validation_status": "pending_literal_and_documentary_verification",
+        "pedagogical_review_status": "not_reviewed",
+        "publication_status": "extracted_candidate",
+        "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+        "review_events": [
+          {
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:page-cell-extractor",
+            "method": "page-cell-v1.4.0",
+            "result": "pending_documentary_review",
+            "at": "2026-10-28T16:17:41.621436+00:00"
+          }
+        ],
+        "cross_page_continuation": true,
+        "resolved_source_continuation_pages": [
+          156
+        ],
+        "extraction_flags": [],
+        "source_context": {
+          "physical_continuation": {
+            "method": "es-ifa-complete-physical-continuation-census-v1",
+            "start_page": 155,
+            "continuation_page": 156,
+            "start_cell_bbox": [
+              163.09555957935476,
+              335.1114959716797,
+              930.0694869192023,
+              473.67599868774414
+            ],
+            "continuation_cell_bbox": [
+              162.9800033569336,
+              64.22251892089844,
+              930.280019124349,
+              222.73899459838867
+            ],
+            "original_code_anchor_bbox": [
+              172.22000122070312,
+              454.00079345703125,
+              262.99566650390625,
+              467.38128662109375
+            ],
+            "actor_type": "automated",
+            "human_review": false
+          }
+        }
+      }
+    },
+    {
+      "code": "EMIFACHS301",
+      "start_page": 171,
+      "continuation_page": 172,
+      "existing_identity_preserved": true,
+      "created_missing_code_only_anchor": false,
+      "normalized_text_correct": true,
+      "actual_evidence_check": true,
+      "fragments": [
+        {
+          "page": 171,
+          "excerpt": "Analisar criticamente conflitos em diferentes contextos históricos, culturais, sociais e políticos, com foco no Sul Global,",
+          "bbox": [
+            163.09555957935476,
+            327.67150115966797,
+            930.3726324784128,
+            466.9860076904297
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        },
+        {
+          "page": 172,
+          "excerpt": "identificando suas causas e impactos para fundamentar debates, aprimorar processos de mediação e fortalecer a construção de argumentações embasadas em perspectivas éticas, democráticas e sustentáveis.",
+          "bbox": [
+            162.9800033569336,
+            64.2225112915039,
+            930.52001953125,
+            197.5689926147461
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        }
+      ],
+      "rewritten_item": {
+        "id": "ca:es-ifa-lingchsa-6-1:85b42468bfb6de0f3156",
+        "curriculum_id": "es:es-ifa-lingchsa-6-1",
+        "source_id": "es-ifa-lingchsa-6-1",
+        "uf": "ES",
+        "code": "EMIFACHS301",
+        "text": "Analisar criticamente conflitos em diferentes contextos históricos, culturais, sociais e políticos, com foco no Sul Global, identificando suas causas e impactos para fundamentar debates, aprimorar processos de mediação e fortalecer a construção de argumentações embasadas em perspectivas éticas, democráticas e sustentáveis.",
+        "normalized_text": "analisar criticamente conflitos em diferentes contextos historicos, culturais, sociais e politicos, com foco no sul global, identificando suas causas e impactos para fundamentar debates, aprimorar processos de mediacao e fortalecer a construcao de argumentacoes embasadas em perspectivas eticas, democraticas e sustentaveis.",
+        "editorial_note": null,
+        "kind": "habilidade",
+        "parent_id": null,
+        "positions": [
+          {
+            "stage": "EM",
+            "component": null,
+            "area": null,
+            "years": null,
+            "year_label": null,
+            "age_group": null,
+            "period": null,
+            "position_origin": "document_code_context",
+            "position_note": "Código de itinerário; área/série não inferidas sem declaração documental."
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 171,
+            "printed_page": null,
+            "section": null,
+            "excerpt": "Analisar criticamente conflitos em diferentes contextos históricos, culturais, sociais e políticos, com foco no Sul Global,",
+            "locator": "table:0/row:8/cell:1",
+            "method": "pymupdf-ruled-cell",
+            "bbox": [
+              163.09555957935476,
+              327.67150115966797,
+              930.3726324784128,
+              466.9860076904297
+            ]
+          },
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 172,
+            "printed_page": null,
+            "section": "Continuação da mesma célula de Habilidades do IFA",
+            "excerpt": "identificando suas causas e impactos para fundamentar debates, aprimorar processos de mediação e fortalecer a construção de argumentações embasadas em perspectivas éticas, democráticas e sustentáveis.",
+            "locator": "table:0/row:0/cell:1",
+            "bbox": [
+              162.9800033569336,
+              64.2225112915039,
+              930.52001953125,
+              197.5689926147461
+            ],
+            "method": "es-ifa-physical-cell-continuation-v1",
+            "coordinate_space": "display_pdf_after_remove_rotation",
+            "actor_type": "automated"
+          }
+        ],
+        "extraction_revision": "page-cell-v1.4.0",
+        "extraction_status": "pending_documentary_review",
+        "technical_validation_status": "pending_literal_and_documentary_verification",
+        "pedagogical_review_status": "not_reviewed",
+        "publication_status": "extracted_candidate",
+        "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+        "review_events": [
+          {
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:page-cell-extractor",
+            "method": "page-cell-v1.4.0",
+            "result": "pending_documentary_review",
+            "at": "2026-10-28T16:17:41.704531+00:00"
+          }
+        ],
+        "cross_page_continuation": true,
+        "resolved_source_continuation_pages": [
+          172
+        ],
+        "extraction_flags": [],
+        "source_context": {
+          "physical_continuation": {
+            "method": "es-ifa-complete-physical-continuation-census-v1",
+            "start_page": 171,
+            "continuation_page": 172,
+            "start_cell_bbox": [
+              163.09555957935476,
+              327.67150115966797,
+              930.3726324784128,
+              466.9860076904297
+            ],
+            "continuation_cell_bbox": [
+              162.9800033569336,
+              64.2225112915039,
+              930.52001953125,
+              197.5689926147461
+            ],
+            "original_code_anchor_bbox": [
+              172.4600067138672,
+              446.4407958984375,
+              263.23565673828125,
+              459.8212890625
+            ],
+            "actor_type": "automated",
+            "human_review": false
+          }
+        }
+      }
+    },
+    {
+      "code": "EMIFACHS304",
+      "start_page": 179,
+      "continuation_page": 180,
+      "existing_identity_preserved": true,
+      "created_missing_code_only_anchor": false,
+      "normalized_text_correct": true,
+      "actual_evidence_check": true,
+      "fragments": [
+        {
+          "page": 179,
+          "excerpt": "Avaliar os impactos das decisões mediadas sobre diferentes grupos sociais, garantindo que os processos de resolução",
+          "bbox": [
+            166.69555692319517,
+            293.5014953613281,
+            930.0694869192023,
+            457.14600372314453
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        },
+        {
+          "page": 180,
+          "excerpt": "de conflitos sejam inclusivos, equitativos e coerentes com princípios éticos e democráticos.",
+          "bbox": [
+            166.5320068359375,
+            51.596014404296874,
+            930.280029296875,
+            88.46150970458984
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        }
+      ],
+      "rewritten_item": {
+        "id": "ca:es-ifa-lingchsa-6-1:54d720d0630b47c4091f",
+        "curriculum_id": "es:es-ifa-lingchsa-6-1",
+        "source_id": "es-ifa-lingchsa-6-1",
+        "uf": "ES",
+        "code": "EMIFACHS304",
+        "text": "Avaliar os impactos das decisões mediadas sobre diferentes grupos sociais, garantindo que os processos de resolução de conflitos sejam inclusivos, equitativos e coerentes com princípios éticos e democráticos.",
+        "normalized_text": "avaliar os impactos das decisoes mediadas sobre diferentes grupos sociais, garantindo que os processos de resolucao de conflitos sejam inclusivos, equitativos e coerentes com principios eticos e democraticos.",
+        "editorial_note": null,
+        "kind": "habilidade",
+        "parent_id": null,
+        "positions": [
+          {
+            "stage": "EM",
+            "component": null,
+            "area": null,
+            "years": null,
+            "year_label": null,
+            "age_group": null,
+            "period": null,
+            "position_origin": "document_code_context",
+            "position_note": "Código de itinerário; área/série não inferidas sem declaração documental."
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 179,
+            "printed_page": null,
+            "section": null,
+            "excerpt": "Avaliar os impactos das decisões mediadas sobre diferentes grupos sociais, garantindo que os processos de resolução",
+            "locator": "table:0/row:7/cell:1",
+            "method": "pymupdf-ruled-cell",
+            "bbox": [
+              166.69555692319517,
+              293.5014953613281,
+              930.0694869192023,
+              457.14600372314453
+            ]
+          },
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 180,
+            "printed_page": null,
+            "section": "Continuação da mesma célula de Habilidades do IFA",
+            "excerpt": "de conflitos sejam inclusivos, equitativos e coerentes com princípios éticos e democráticos.",
+            "locator": "table:0/row:0/cell:1",
+            "bbox": [
+              166.5320068359375,
+              51.596014404296874,
+              930.280029296875,
+              88.46150970458984
+            ],
+            "method": "es-ifa-physical-cell-continuation-v1",
+            "coordinate_space": "display_pdf_after_remove_rotation",
+            "actor_type": "automated"
+          }
+        ],
+        "extraction_revision": "page-cell-v1.4.0",
+        "extraction_status": "pending_documentary_review",
+        "technical_validation_status": "pending_literal_and_documentary_verification",
+        "pedagogical_review_status": "not_reviewed",
+        "publication_status": "extracted_candidate",
+        "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+        "review_events": [
+          {
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:page-cell-extractor",
+            "method": "page-cell-v1.4.0",
+            "result": "pending_documentary_review",
+            "at": "2026-10-28T16:17:41.800681+00:00"
+          }
+        ],
+        "cross_page_continuation": true,
+        "resolved_source_continuation_pages": [
+          180
+        ],
+        "extraction_flags": [],
+        "source_context": {
+          "physical_continuation": {
+            "method": "es-ifa-complete-physical-continuation-census-v1",
+            "start_page": 179,
+            "continuation_page": 180,
+            "start_cell_bbox": [
+              166.69555692319517,
+              293.5014953613281,
+              930.0694869192023,
+              457.14600372314453
+            ],
+            "continuation_cell_bbox": [
+              166.5320068359375,
+              51.596014404296874,
+              930.280029296875,
+              88.46150970458984
+            ],
+            "original_code_anchor_bbox": [
+              179.66000366210938,
+              441.040771484375,
+              269.23565673828125,
+              454.4212646484375
+            ],
+            "actor_type": "automated",
+            "human_review": false
+          }
+        }
+      }
+    },
+    {
+      "code": "EMIFACHS404",
+      "start_page": 195,
+      "continuation_page": 196,
+      "existing_identity_preserved": true,
+      "created_missing_code_only_anchor": false,
+      "normalized_text_correct": true,
+      "actual_evidence_check": true,
+      "fragments": [
+        {
+          "page": 195,
+          "excerpt": "Desenvolver iniciativas que reflitam sobre a educação decolonial, o combate ao racismo, a valorização da diversidade",
+          "bbox": [
+            168.25555250379773,
+            329.9814987182617,
+            930.0694869192023,
+            456.54600524902344
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        },
+        {
+          "page": 196,
+          "excerpt": "cultural e a preservação dos Direitos Humanos, fortalecendo ações coletivas que busquem transformar realidades sociais e promover a inclusão e a equidade de forma ética e sustentável.",
+          "bbox": [
+            168.02000045776367,
+            51.470001220703125,
+            930.1199951171875,
+            138.83000946044922
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        }
+      ],
+      "rewritten_item": {
+        "id": "ca:es-ifa-lingchsa-6-1:e5413b2f99c088d52085",
+        "curriculum_id": "es:es-ifa-lingchsa-6-1",
+        "source_id": "es-ifa-lingchsa-6-1",
+        "uf": "ES",
+        "code": "EMIFACHS404",
+        "text": "Desenvolver iniciativas que reflitam sobre a educação decolonial, o combate ao racismo, a valorização da diversidade cultural e a preservação dos Direitos Humanos, fortalecendo ações coletivas que busquem transformar realidades sociais e promover a inclusão e a equidade de forma ética e sustentável.",
+        "normalized_text": "desenvolver iniciativas que reflitam sobre a educacao decolonial, o combate ao racismo, a valorizacao da diversidade cultural e a preservacao dos direitos humanos, fortalecendo acoes coletivas que busquem transformar realidades sociais e promover a inclusao e a equidade de forma etica e sustentavel.",
+        "editorial_note": null,
+        "kind": "habilidade",
+        "parent_id": null,
+        "positions": [
+          {
+            "stage": "EM",
+            "component": null,
+            "area": null,
+            "years": null,
+            "year_label": null,
+            "age_group": null,
+            "period": null,
+            "position_origin": "document_code_context",
+            "position_note": "Código de itinerário; área/série não inferidas sem declaração documental."
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 195,
+            "printed_page": null,
+            "section": null,
+            "excerpt": "Desenvolver iniciativas que reflitam sobre a educação decolonial, o combate ao racismo, a valorização da diversidade",
+            "locator": "table:0/row:8/cell:1",
+            "method": "pymupdf-ruled-cell",
+            "bbox": [
+              168.25555250379773,
+              329.9814987182617,
+              930.0694869192023,
+              456.54600524902344
+            ]
+          },
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 196,
+            "printed_page": null,
+            "section": "Continuação da mesma célula de Habilidades do IFA",
+            "excerpt": "cultural e a preservação dos Direitos Humanos, fortalecendo ações coletivas que busquem transformar realidades sociais e promover a inclusão e a equidade de forma ética e sustentável.",
+            "locator": "table:0/row:0/cell:1",
+            "bbox": [
+              168.02000045776367,
+              51.470001220703125,
+              930.1199951171875,
+              138.83000946044922
+            ],
+            "method": "es-ifa-physical-cell-continuation-v1",
+            "coordinate_space": "display_pdf_after_remove_rotation",
+            "actor_type": "automated"
+          }
+        ],
+        "extraction_revision": "page-cell-v1.4.0",
+        "extraction_status": "pending_documentary_review",
+        "technical_validation_status": "pending_literal_and_documentary_verification",
+        "pedagogical_review_status": "not_reviewed",
+        "publication_status": "extracted_candidate",
+        "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+        "review_events": [
+          {
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:page-cell-extractor",
+            "method": "page-cell-v1.4.0",
+            "result": "pending_documentary_review",
+            "at": "2026-10-28T16:17:41.898552+00:00"
+          }
+        ],
+        "cross_page_continuation": true,
+        "resolved_source_continuation_pages": [
+          196
+        ],
+        "extraction_flags": [],
+        "source_context": {
+          "physical_continuation": {
+            "method": "es-ifa-complete-physical-continuation-census-v1",
+            "start_page": 195,
+            "continuation_page": 196,
+            "start_cell_bbox": [
+              168.25555250379773,
+              329.9814987182617,
+              930.0694869192023,
+              456.54600524902344
+            ],
+            "continuation_cell_bbox": [
+              168.02000045776367,
+              51.470001220703125,
+              930.1199951171875,
+              138.83000946044922
+            ],
+            "original_code_anchor_bbox": [
+              179.66000366210938,
+              440.080810546875,
+              269.23565673828125,
+              453.4612731933594
+            ],
+            "actor_type": "automated",
+            "human_review": false
+          }
+        }
+      }
+    },
+    {
+      "code": "EMIFACHS203",
+      "start_page": 204,
+      "continuation_page": 205,
+      "existing_identity_preserved": true,
+      "created_missing_code_only_anchor": false,
+      "normalized_text_correct": true,
+      "actual_evidence_check": true,
+      "fragments": [
+        {
+          "page": 204,
+          "excerpt": "Elaborar argumentos fundamentados, considerando as discussões e acordos ambientais internacionais, de modo a articular o conhecimento científico e ético para defender alternativas sustentáveis a problemas socioambientais em nível local, regional,",
+          "bbox": [
+            167.46888930709272,
+            336.3115005493164,
+            929.8926520096628,
+            447.8159942626953
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        },
+        {
+          "page": 205,
+          "excerpt": "nacional e global.",
+          "bbox": [
+            167.29999923706055,
+            51.50251007080078,
+            930.1599934895834,
+            178.03899383544922
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        }
+      ],
+      "rewritten_item": {
+        "id": "ca:es-ifa-lingchsa-6-1:778723904f0399fcfc8b",
+        "curriculum_id": "es:es-ifa-lingchsa-6-1",
+        "source_id": "es-ifa-lingchsa-6-1",
+        "uf": "ES",
+        "code": "EMIFACHS203",
+        "text": "Elaborar argumentos fundamentados, considerando as discussões e acordos ambientais internacionais, de modo a articular o conhecimento científico e ético para defender alternativas sustentáveis a problemas socioambientais em nível local, regional, nacional e global.",
+        "normalized_text": "elaborar argumentos fundamentados, considerando as discussoes e acordos ambientais internacionais, de modo a articular o conhecimento cientifico e etico para defender alternativas sustentaveis a problemas socioambientais em nivel local, regional, nacional e global.",
+        "editorial_note": null,
+        "kind": "habilidade",
+        "parent_id": null,
+        "positions": [
+          {
+            "stage": "EM",
+            "component": null,
+            "area": null,
+            "years": null,
+            "year_label": null,
+            "age_group": null,
+            "period": null,
+            "position_origin": "document_code_context",
+            "position_note": "Código de itinerário; área/série não inferidas sem declaração documental."
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 204,
+            "printed_page": null,
+            "section": null,
+            "excerpt": "Elaborar argumentos fundamentados, considerando as discussões e acordos ambientais internacionais, de modo a articular o conhecimento científico e ético para defender alternativas sustentáveis a problemas socioambientais em nível local, regional,",
+            "locator": "table:0/row:9/cell:1",
+            "method": "pymupdf-ruled-cell",
+            "bbox": [
+              167.46888930709272,
+              336.3115005493164,
+              929.8926520096628,
+              447.8159942626953
+            ]
+          },
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 205,
+            "printed_page": null,
+            "section": "Continuação da mesma célula de Habilidades do IFA",
+            "excerpt": "nacional e global.",
+            "locator": "table:0/row:0/cell:1",
+            "bbox": [
+              167.29999923706055,
+              51.50251007080078,
+              930.1599934895834,
+              178.03899383544922
+            ],
+            "method": "es-ifa-physical-cell-continuation-v1",
+            "coordinate_space": "display_pdf_after_remove_rotation",
+            "actor_type": "automated"
+          }
+        ],
+        "extraction_revision": "page-cell-v1.4.0",
+        "extraction_status": "pending_documentary_review",
+        "technical_validation_status": "pending_literal_and_documentary_verification",
+        "pedagogical_review_status": "not_reviewed",
+        "publication_status": "extracted_candidate",
+        "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+        "review_events": [
+          {
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:page-cell-extractor",
+            "method": "page-cell-v1.4.0",
+            "result": "pending_documentary_review",
+            "at": "2026-10-28T16:17:41.999221+00:00"
+          }
+        ],
+        "cross_page_continuation": true,
+        "resolved_source_continuation_pages": [
+          205
+        ],
+        "extraction_flags": [],
+        "source_context": {
+          "physical_continuation": {
+            "method": "es-ifa-complete-physical-continuation-census-v1",
+            "start_page": 204,
+            "continuation_page": 205,
+            "start_cell_bbox": [
+              167.46888930709272,
+              336.3115005493164,
+              929.8926520096628,
+              447.8159942626953
+            ],
+            "continuation_cell_bbox": [
+              167.29999923706055,
+              51.50251007080078,
+              930.1599934895834,
+              178.03899383544922
+            ],
+            "original_code_anchor_bbox": [
+              177.02000427246094,
+              415.12481689453125,
+              277.75567626953125,
+              428.5052795410156
+            ],
+            "actor_type": "automated",
+            "human_review": false
+          }
+        }
+      }
+    },
+    {
+      "code": "EMIFACHS303",
+      "start_page": 216,
+      "continuation_page": 217,
+      "existing_identity_preserved": true,
+      "created_missing_code_only_anchor": false,
+      "normalized_text_correct": true,
+      "actual_evidence_check": true,
+      "fragments": [
+        {
+          "page": 216,
+          "excerpt": "Debater estratégias de mediação de conflitos e solução coletiva de problemas, de ordem política, econômica,",
+          "bbox": [
+            166.69555692319517,
+            306.31150817871094,
+            930.0694869192023,
+            469.89601135253906
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        },
+        {
+          "page": 217,
+          "excerpt": "ambiental, com base na diplomacia internacional, a partir do desenvolvimento de projetos que articulem teoria e prática.",
+          "bbox": [
+            166.5320068359375,
+            64.316015625,
+            930.280029296875,
+            117.14149475097656
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        }
+      ],
+      "rewritten_item": {
+        "id": "ca:es-ifa-lingchsa-6-1:88e49ca1872fa79bff3e",
+        "curriculum_id": "es:es-ifa-lingchsa-6-1",
+        "source_id": "es-ifa-lingchsa-6-1",
+        "uf": "ES",
+        "code": "EMIFACHS303",
+        "text": "Debater estratégias de mediação de conflitos e solução coletiva de problemas, de ordem política, econômica, ambiental, com base na diplomacia internacional, a partir do desenvolvimento de projetos que articulem teoria e prática.",
+        "normalized_text": "debater estrategias de mediacao de conflitos e solucao coletiva de problemas, de ordem politica, economica, ambiental, com base na diplomacia internacional, a partir do desenvolvimento de projetos que articulem teoria e pratica.",
+        "editorial_note": null,
+        "kind": "habilidade",
+        "parent_id": null,
+        "positions": [
+          {
+            "stage": "EM",
+            "component": null,
+            "area": null,
+            "years": null,
+            "year_label": null,
+            "age_group": null,
+            "period": null,
+            "position_origin": "document_code_context",
+            "position_note": "Código de itinerário; área/série não inferidas sem declaração documental."
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 216,
+            "printed_page": null,
+            "section": null,
+            "excerpt": "Debater estratégias de mediação de conflitos e solução coletiva de problemas, de ordem política, econômica,",
+            "locator": "table:0/row:7/cell:1",
+            "method": "pymupdf-ruled-cell",
+            "bbox": [
+              166.69555692319517,
+              306.31150817871094,
+              930.0694869192023,
+              469.89601135253906
+            ]
+          },
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 217,
+            "printed_page": null,
+            "section": "Continuação da mesma célula de Habilidades do IFA",
+            "excerpt": "ambiental, com base na diplomacia internacional, a partir do desenvolvimento de projetos que articulem teoria e prática.",
+            "locator": "table:0/row:0/cell:1",
+            "bbox": [
+              166.5320068359375,
+              64.316015625,
+              930.280029296875,
+              117.14149475097656
+            ],
+            "method": "es-ifa-physical-cell-continuation-v1",
+            "coordinate_space": "display_pdf_after_remove_rotation",
+            "actor_type": "automated"
+          }
+        ],
+        "extraction_revision": "page-cell-v1.4.0",
+        "extraction_status": "pending_documentary_review",
+        "technical_validation_status": "pending_literal_and_documentary_verification",
+        "pedagogical_review_status": "not_reviewed",
+        "publication_status": "extracted_candidate",
+        "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+        "review_events": [
+          {
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:page-cell-extractor",
+            "method": "page-cell-v1.4.0",
+            "result": "pending_documentary_review",
+            "at": "2026-10-28T16:17:42.107542+00:00"
+          }
+        ],
+        "cross_page_continuation": true,
+        "resolved_source_continuation_pages": [
+          217
+        ],
+        "extraction_flags": [],
+        "source_context": {
+          "physical_continuation": {
+            "method": "es-ifa-complete-physical-continuation-census-v1",
+            "start_page": 216,
+            "continuation_page": 217,
+            "start_cell_bbox": [
+              166.69555692319517,
+              306.31150817871094,
+              930.0694869192023,
+              469.89601135253906
+            ],
+            "continuation_cell_bbox": [
+              166.5320068359375,
+              64.316015625,
+              930.280029296875,
+              117.14149475097656
+            ],
+            "original_code_anchor_bbox": [
+              173.66000366210938,
+              454.00079345703125,
+              265.5156555175781,
+              467.38128662109375
+            ],
+            "actor_type": "automated",
+            "human_review": false
+          }
+        }
+      }
+    },
+    {
+      "code": "EMIFACHS404",
+      "start_page": 229,
+      "continuation_page": 230,
+      "existing_identity_preserved": true,
+      "created_missing_code_only_anchor": false,
+      "normalized_text_correct": true,
+      "actual_evidence_check": true,
+      "fragments": [
+        {
+          "page": 229,
+          "excerpt": "Desenvolver iniciativas que reflitam sobre a educação decolonial, o combate ao racismo, a valorização da diversidade",
+          "bbox": [
+            167.46888930709272,
+            321.67150115966797,
+            933.7326435289884,
+            476.37599182128906
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        },
+        {
+          "page": 230,
+          "excerpt": "cultural e a preservação dos Direitos Humanos, fortalecendo ações coletivas que busquem transformar realidades sociais e promover a inclusão e a equidade de forma ética e sustentável.",
+          "bbox": [
+            167.29999923706055,
+            64.22251892089844,
+            934.1199951171875,
+            208.36900329589844
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        }
+      ],
+      "rewritten_item": {
+        "id": "ca:es-ifa-lingchsa-6-1:aebb73abf3c68ce342c6",
+        "curriculum_id": "es:es-ifa-lingchsa-6-1",
+        "source_id": "es-ifa-lingchsa-6-1",
+        "uf": "ES",
+        "code": "EMIFACHS404",
+        "text": "Desenvolver iniciativas que reflitam sobre a educação decolonial, o combate ao racismo, a valorização da diversidade cultural e a preservação dos Direitos Humanos, fortalecendo ações coletivas que busquem transformar realidades sociais e promover a inclusão e a equidade de forma ética e sustentável.",
+        "normalized_text": "desenvolver iniciativas que reflitam sobre a educacao decolonial, o combate ao racismo, a valorizacao da diversidade cultural e a preservacao dos direitos humanos, fortalecendo acoes coletivas que busquem transformar realidades sociais e promover a inclusao e a equidade de forma etica e sustentavel.",
+        "editorial_note": null,
+        "kind": "habilidade",
+        "parent_id": null,
+        "positions": [
+          {
+            "stage": "EM",
+            "component": null,
+            "area": null,
+            "years": null,
+            "year_label": null,
+            "age_group": null,
+            "period": null,
+            "position_origin": "document_code_context",
+            "position_note": "Código de itinerário; área/série não inferidas sem declaração documental."
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 229,
+            "printed_page": null,
+            "section": null,
+            "excerpt": "Desenvolver iniciativas que reflitam sobre a educação decolonial, o combate ao racismo, a valorização da diversidade",
+            "locator": "table:0/row:7/cell:1",
+            "method": "pymupdf-ruled-cell",
+            "bbox": [
+              167.46888930709272,
+              321.67150115966797,
+              933.7326435289884,
+              476.37599182128906
+            ]
+          },
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 230,
+            "printed_page": null,
+            "section": "Continuação da mesma célula de Habilidades do IFA",
+            "excerpt": "cultural e a preservação dos Direitos Humanos, fortalecendo ações coletivas que busquem transformar realidades sociais e promover a inclusão e a equidade de forma ética e sustentável.",
+            "locator": "table:0/row:0/cell:1",
+            "bbox": [
+              167.29999923706055,
+              64.22251892089844,
+              934.1199951171875,
+              208.36900329589844
+            ],
+            "method": "es-ifa-physical-cell-continuation-v1",
+            "coordinate_space": "display_pdf_after_remove_rotation",
+            "actor_type": "automated"
+          }
+        ],
+        "extraction_revision": "page-cell-v1.4.0",
+        "extraction_status": "pending_documentary_review",
+        "technical_validation_status": "pending_literal_and_documentary_verification",
+        "pedagogical_review_status": "not_reviewed",
+        "publication_status": "extracted_candidate",
+        "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+        "review_events": [
+          {
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:page-cell-extractor",
+            "method": "page-cell-v1.4.0",
+            "result": "pending_documentary_review",
+            "at": "2026-10-28T16:17:42.217472+00:00"
+          }
+        ],
+        "cross_page_continuation": true,
+        "resolved_source_continuation_pages": [
+          230
+        ],
+        "extraction_flags": [],
+        "source_context": {
+          "physical_continuation": {
+            "method": "es-ifa-complete-physical-continuation-census-v1",
+            "start_page": 229,
+            "continuation_page": 230,
+            "start_cell_bbox": [
+              167.46888930709272,
+              321.67150115966797,
+              933.7326435289884,
+              476.37599182128906
+            ],
+            "continuation_cell_bbox": [
+              167.29999923706055,
+              64.22251892089844,
+              934.1199951171875,
+              208.36900329589844
+            ],
+            "original_code_anchor_bbox": [
+              174.3800048828125,
+              460.36077880859375,
+              265.0356750488281,
+              473.74127197265625
+            ],
+            "actor_type": "automated",
+            "human_review": false
+          }
+        }
+      }
+    },
+    {
+      "code": "EMIFACHS301",
+      "start_page": 241,
+      "continuation_page": 242,
+      "existing_identity_preserved": true,
+      "created_missing_code_only_anchor": false,
+      "normalized_text_correct": true,
+      "actual_evidence_check": true,
+      "fragments": [
+        {
+          "page": 241,
+          "excerpt": "Analisar criticamente conflitos em diferentes contextos históricos, culturais, sociais e políticos, com foco no Sul Global,",
+          "bbox": [
+            162.85556058530454,
+            341.47149658203125,
+            929.8294966848273,
+            468.3360137939453
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        },
+        {
+          "page": 242,
+          "excerpt": "identificando suas causas e impactos para fundamentar debates, aprimorar processos de mediação e fortalecer a construção de argumentações embasadas em perspectivas éticas, democráticas e sustentáveis.",
+          "bbox": [
+            162.7400016784668,
+            64.22000885009766,
+            930.4000244140625,
+            132.50150299072266
+          ],
+          "role": "text",
+          "rawdict_literal": true,
+          "visible_trace_literal": true
+        }
+      ],
+      "rewritten_item": {
+        "id": "ca:es-ifa-lingchsa-6-1:8f2a6240999284535fba",
+        "curriculum_id": "es:es-ifa-lingchsa-6-1",
+        "source_id": "es-ifa-lingchsa-6-1",
+        "uf": "ES",
+        "code": "EMIFACHS301",
+        "text": "Analisar criticamente conflitos em diferentes contextos históricos, culturais, sociais e políticos, com foco no Sul Global, identificando suas causas e impactos para fundamentar debates, aprimorar processos de mediação e fortalecer a construção de argumentações embasadas em perspectivas éticas, democráticas e sustentáveis.",
+        "normalized_text": "analisar criticamente conflitos em diferentes contextos historicos, culturais, sociais e politicos, com foco no sul global, identificando suas causas e impactos para fundamentar debates, aprimorar processos de mediacao e fortalecer a construcao de argumentacoes embasadas em perspectivas eticas, democraticas e sustentaveis.",
+        "editorial_note": null,
+        "kind": "habilidade",
+        "parent_id": null,
+        "positions": [
+          {
+            "stage": "EM",
+            "component": null,
+            "area": null,
+            "years": null,
+            "year_label": null,
+            "age_group": null,
+            "period": null,
+            "position_origin": "document_code_context",
+            "position_note": "Código de itinerário; área/série não inferidas sem declaração documental."
+          }
+        ],
+        "evidence": [
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 241,
+            "printed_page": null,
+            "section": null,
+            "excerpt": "Analisar criticamente conflitos em diferentes contextos históricos, culturais, sociais e políticos, com foco no Sul Global,",
+            "locator": "table:0/row:8/cell:1",
+            "method": "pymupdf-ruled-cell",
+            "bbox": [
+              162.85556058530454,
+              341.47149658203125,
+              929.8294966848273,
+              468.3360137939453
+            ]
+          },
+          {
+            "source_id": "es-ifa-lingchsa-6-1",
+            "page": 242,
+            "printed_page": null,
+            "section": "Continuação da mesma célula de Habilidades do IFA",
+            "excerpt": "identificando suas causas e impactos para fundamentar debates, aprimorar processos de mediação e fortalecer a construção de argumentações embasadas em perspectivas éticas, democráticas e sustentáveis.",
+            "locator": "table:0/row:0/cell:1",
+            "bbox": [
+              162.7400016784668,
+              64.22000885009766,
+              930.4000244140625,
+              132.50150299072266
+            ],
+            "method": "es-ifa-physical-cell-continuation-v1",
+            "coordinate_space": "display_pdf_after_remove_rotation",
+            "actor_type": "automated"
+          }
+        ],
+        "extraction_revision": "page-cell-v1.4.0",
+        "extraction_status": "pending_documentary_review",
+        "technical_validation_status": "pending_literal_and_documentary_verification",
+        "pedagogical_review_status": "not_reviewed",
+        "publication_status": "extracted_candidate",
+        "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+        "review_events": [
+          {
+            "actor_type": "automated",
+            "actor_id": "curriculos-abertos:page-cell-extractor",
+            "method": "page-cell-v1.4.0",
+            "result": "pending_documentary_review",
+            "at": "2026-10-28T16:17:42.317393+00:00"
+          }
+        ],
+        "cross_page_continuation": true,
+        "resolved_source_continuation_pages": [
+          242
+        ],
+        "extraction_flags": [],
+        "source_context": {
+          "physical_continuation": {
+            "method": "es-ifa-complete-physical-continuation-census-v1",
+            "start_page": 241,
+            "continuation_page": 242,
+            "start_cell_bbox": [
+              162.85556058530454,
+              341.47149658203125,
+              929.8294966848273,
+              468.3360137939453
+            ],
+            "continuation_cell_bbox": [
+              162.7400016784668,
+              64.22000885009766,
+              930.4000244140625,
+              132.50150299072266
+            ],
+            "original_code_anchor_bbox": [
+              172.4600067138672,
+              452.080810546875,
+              263.11566162109375,
+              465.4612731933594
+            ],
+            "actor_type": "automated",
+            "human_review": false
+          }
+        }
+      }
+    }
+  ],
+  "human_review": false
+}

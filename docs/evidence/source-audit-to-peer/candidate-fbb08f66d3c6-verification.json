@@ -1,0 +1,130 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:independent-to-peer",
+  "human_review": false,
+  "executed_at": "2026-10-28T17:23:18.646996+00:00",
+  "source_id": "to-dct-ei",
+  "original_sha256": "42b3e65fce43bf993518bb6e0426d90ab8069c5ec319906b1ffcdbc87d35d3bc",
+  "candidate": "data/manifests/uncoded/to-ei-organizers-age-v2-items.json",
+  "candidate_sha256": "fbb08f66d3c681db8d842dc60d5c88fbb2ff74d2c2dad46283ac6717026841bd",
+  "candidate_record_count": 329,
+  "denominators": {
+    "objectives": 93,
+    "detail_cells": 93,
+    "experience_cells": 93,
+    "field_specific_rights": 30,
+    "explicit_fields": 5,
+    "explicit_age_headers": 15
+  },
+  "comparison": {
+    "errors": [],
+    "checked": {
+      "right_labels_only": 30,
+      "campo_experiencia": 5,
+      "grupo_etario": 15,
+      "objetivo_aprendizagem": 93,
+      "detalhamento_objetivo": 93,
+      "experiencia_sugerida": 93
+    }
+  },
+  "remaining_findings": [
+    {
+      "check": "right_labels_order_differs_from_literal_header",
+      "field": "O eu, o outro e o nós",
+      "actual_labels": [
+        "brincar",
+        "conhecer-se",
+        "conviver",
+        "explorar",
+        "expressar",
+        "participar"
+      ]
+    },
+    {
+      "check": "right_labels_order_differs_from_literal_header",
+      "field": "Corpo, gestos e movimentos",
+      "actual_labels": [
+        "brincar",
+        "conhecer-se",
+        "conviver",
+        "explorar",
+        "expressar",
+        "participar"
+      ]
+    },
+    {
+      "check": "right_labels_order_differs_from_literal_header",
+      "field": "Traços, sons, cores e formas",
+      "actual_labels": [
+        "brincar",
+        "conhecer-se",
+        "conviver",
+        "explorar",
+        "expressar",
+        "participar"
+      ]
+    },
+    {
+      "check": "right_labels_order_differs_from_literal_header",
+      "field": "Escuta, fala, pensamento e imaginação",
+      "actual_labels": [
+        "brincar",
+        "conhecer-se",
+        "conviver",
+        "explorar",
+        "expressar",
+        "participar"
+      ]
+    },
+    {
+      "check": "right_labels_order_differs_from_literal_header",
+      "field": "Espaços, tempos, quantidades, relações e transformações",
+      "actual_labels": [
+        "brincar",
+        "conhecer-se",
+        "conviver",
+        "explorar",
+        "expressar",
+        "participar"
+      ]
+    },
+    {
+      "check": "full_field_specific_right_definitions_missing",
+      "expected": 30,
+      "actual": 0
+    }
+  ],
+  "production_loader_finalizer_schema": {
+    "loaded": 329,
+    "finalized": 329,
+    "unique_ids": 329,
+    "production_evidence_check_passed": 329,
+    "schema_errors": []
+  },
+  "controlled_negatives": [
+    {
+      "case": "same_text_and_age_label_borrowed_other_field",
+      "blocked": true
+    },
+    {
+      "case": "truncated_text_and_excerpt",
+      "blocked": true
+    },
+    {
+      "case": "duplicate_real_record",
+      "blocked": true
+    },
+    {
+      "case": "real_child_assigned_other_valid_objective_parent",
+      "blocked": true
+    }
+  ],
+  "whole_source_reconciled": false,
+  "uf_ready": false,
+  "result": "verified_candidate_scope_with_documentary_gap",
+  "limits": [
+    "Original chapters, normative prose and references outside organisers were read but are not individually reconciled by this organiser-only candidate.",
+    "Right labels are distinct from the 30 field-specific full definitions; full definitions checked: 0/30.",
+    "No SourceWholeV2 receipt, human approval, publication import or UF readiness is asserted."
+  ]
+}

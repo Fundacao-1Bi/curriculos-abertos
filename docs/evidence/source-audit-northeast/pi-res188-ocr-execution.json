@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-28T16:31:26.672039+00:00",
+  "actor_type": "automated",
+  "source_id": "pi-resolucao-188-2025",
+  "artifact_sha256": "154db33551a1501916dca9eaf9ba1e428d2cb4f9bb3dec41603343be2416ad10",
+  "pages": [
+    {
+      "page": 1,
+      "words": 249,
+      "warnings": [
+        {
+          "page": 1,
+          "issue": "ocr_low_confidence_words",
+          "count": 4,
+          "denominator": 249,
+          "status": "requires_documentary_review"
+        }
+      ],
+      "cache_path": "data/extracted/ocr/d175fe26b853193d64b05c06ca98a39b7a848e019d638a86a5aca762c6129657.json",
+      "cache_sha256": "20e3739db6771073d9028a43c53c72c23a60a1d2c85fdb85b9736ab2dfbdf172",
+      "bytes": 74550
+    },
+    {
+      "page": 2,
+      "words": 137,
+      "warnings": [
+        {
+          "page": 2,
+          "issue": "ocr_low_confidence_words",
+          "count": 3,
+          "denominator": 137,
+          "status": "requires_documentary_review"
+        }
+      ],
+      "cache_path": "data/extracted/ocr/f90921d9017df5c2674299ee4bb8a3c34f65cd0c4cf20915fb08e3b75e788b86.json",
+      "cache_sha256": "6c23d4da08d6bf29c2b66fc748774d2a8c4b2f26a349b9aa894d9a27a3e46fe9",
+      "bytes": 41825
+    }
+  ],
+  "scope": "Only2scannedresolution pages throughactual bounded OCR module; immutable raw OCR candidate cache, no full parser or national batch. Transcription/reconciliation pending visual comparison and integration.",
+  "runtime_revision": "tesseract-tsv-por-v1.2.1"
+}

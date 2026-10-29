@@ -1,0 +1,208 @@
+{
+  "at": "2026-10-28T13:51:54.877915+00:00",
+  "source_id": "rn-documento-ef-2018",
+  "sha256": "187ff82e9115f569ed328aea70e194cafce71a115d69be782d85ebd64d2e3f4c",
+  "physical_pages_scanned": 1103,
+  "nul_pages": [
+    743
+  ],
+  "nul_count": 9,
+  "nul_font": "LOVEAMY",
+  "affected_scope": "source_context.column_headers[0] and source_context.table_row[0] of EF01MA09; canonical text/code/evidence contain no NUL",
+  "font_evidence": {
+    "font_xref": 5788,
+    "to_unicode_xref": 2242,
+    "literal_cmap": "/CIDInit /ProcSet findresource begin\n12 dict begin\nbegincmap\n/CIDSystemInfo\n<< /Registry (Adobe)\n/Ordering (UCS) /Supplement 0 >> def\n/CMapName /Adobe-Identity-UCS def\n/CMapType 2 def\n1 begincodespacerange\n<0000> <FFFF>\nendcodespacerange\n2 beginbfchar\n<0000> <FFFD>\n<0002> <0045>\nendbfchar\nendcmap CMapName currentdict /CMap defineresource pop end end\n",
+    "trace": [
+      {
+        "font": "LOVEAMY",
+        "characters": [
+          {
+            "unicode": 69,
+            "glyph_id": 2,
+            "origin": [
+              148.897216796875,
+              342.28515625
+            ]
+          }
+        ]
+      },
+      {
+        "font": "LOVEAMY",
+        "characters": [
+          {
+            "unicode": 69,
+            "glyph_id": 2,
+            "origin": [
+              148.897216796875,
+              355.2811584472656
+            ]
+          },
+          {
+            "unicode": 65533,
+            "glyph_id": 0,
+            "origin": [
+              159.2742156982422,
+              355.2811584472656
+            ]
+          },
+          {
+            "unicode": 69,
+            "glyph_id": 2,
+            "origin": [
+              163.7742156982422,
+              355.2811584472656
+            ]
+          },
+          {
+            "unicode": 65533,
+            "glyph_id": 0,
+            "origin": [
+              174.15121459960938,
+              355.2811584472656
+            ]
+          },
+          {
+            "unicode": 69,
+            "glyph_id": 2,
+            "origin": [
+              178.65121459960938,
+              355.2811584472656
+            ]
+          },
+          {
+            "unicode": 69,
+            "glyph_id": 2,
+            "origin": [
+              148.897216796875,
+              368.27716064453125
+            ]
+          },
+          {
+            "unicode": 65533,
+            "glyph_id": 0,
+            "origin": [
+              159.2742156982422,
+              368.27716064453125
+            ]
+          },
+          {
+            "unicode": 69,
+            "glyph_id": 2,
+            "origin": [
+              163.7742156982422,
+              368.27716064453125
+            ]
+          },
+          {
+            "unicode": 65533,
+            "glyph_id": 0,
+            "origin": [
+              174.15121459960938,
+              368.27716064453125
+            ]
+          },
+          {
+            "unicode": 69,
+            "glyph_id": 2,
+            "origin": [
+              178.65121459960938,
+              368.27716064453125
+            ]
+          },
+          {
+            "unicode": 65533,
+            "glyph_id": 0,
+            "origin": [
+              189.02821350097656,
+              368.27716064453125
+            ]
+          },
+          {
+            "unicode": 69,
+            "glyph_id": 2,
+            "origin": [
+              193.52821350097656,
+              368.27716064453125
+            ]
+          },
+          {
+            "unicode": 69,
+            "glyph_id": 2,
+            "origin": [
+              148.897216796875,
+              381.2731628417969
+            ]
+          },
+          {
+            "unicode": 65533,
+            "glyph_id": 0,
+            "origin": [
+              159.2742156982422,
+              381.2731628417969
+            ]
+          },
+          {
+            "unicode": 69,
+            "glyph_id": 2,
+            "origin": [
+              163.7742156982422,
+              381.2731628417969
+            ]
+          },
+          {
+            "unicode": 65533,
+            "glyph_id": 0,
+            "origin": [
+              174.15121459960938,
+              381.2731628417969
+            ]
+          },
+          {
+            "unicode": 69,
+            "glyph_id": 2,
+            "origin": [
+              178.65121459960938,
+              381.2731628417969
+            ]
+          },
+          {
+            "unicode": 65533,
+            "glyph_id": 0,
+            "origin": [
+              189.02821350097656,
+              381.2731628417969
+            ]
+          },
+          {
+            "unicode": 69,
+            "glyph_id": 2,
+            "origin": [
+              193.52821350097656,
+              381.2731628417969
+            ]
+          },
+          {
+            "unicode": 65533,
+            "glyph_id": 0,
+            "origin": [
+              203.90521240234375,
+              381.2731628417969
+            ]
+          },
+          {
+            "unicode": 69,
+            "glyph_id": 2,
+            "origin": [
+              208.40521240234375,
+              381.2731628417969
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "visual_evidence_private": "var/private-evidence/source-audit-northeast/rn-ef-p743.png",
+  "visual_sha256": "0305d5692702ddfc55b2223c8cf5ac2240ef767573c8e94f598a3d695fdbd1cf",
+  "disposition": "Reversible metadata_control_escape_v1 proposed solely for secondary context, retaining original UTF8 base64/hash/path. No NUL-to-space or E-to-heart source text replacement authorized; ToUnicode maps glyph0 to replacement character, not a verified space. Canonical learning text remains strict."
+}

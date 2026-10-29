@@ -1,0 +1,107 @@
+{
+  "at": "2026-10-28T15:00:24.106996+00:00",
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:ma-normative-verifier",
+  "status": "passed",
+  "source_only_census": "docs/evidence/source-audit-ma-current/ma-normative-source-census.json",
+  "sources": [
+    {
+      "source_id": "ma-resolucao-211-2026-doe",
+      "artifact_sha256": "5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3",
+      "sidecar_path": "data/manifests/uncoded/ma-211-items.json",
+      "sidecar_sha256": "7e62414648b4172dcf6eae4d3f028046ab0eb0351ec93f7f28d9fe3963bfdc64",
+      "records": 19,
+      "literal_fragments": 20,
+      "source_lines": 107,
+      "exact_once_original_line_partition": true,
+      "complete_parent_graph": true,
+      "kind_counts": {
+        "ato_normativo": 1,
+        "ementa_normativa": 1,
+        "preambulo_normativo": 1,
+        "considerando_normativo": 8,
+        "dispositivo_deliberativo": 1,
+        "artigo_normativo": 6,
+        "assinatura_normativa": 1
+      },
+      "code_values_all_null": true,
+      "actual_extract_pdf_pages": [
+        20,
+        21
+      ],
+      "original_pdf_pages": 38,
+      "extraction_revision": "page-cell-v1.4.0",
+      "extraction_config_sha256": "adf647f6539065d997bf95f9dc90b695c0ab2a5f94723ff1da529f2295dc7173",
+      "ocr_pending": false,
+      "source_region_neighbor_exclusion": "passed",
+      "shared_importer_and_finalizer": "passed",
+      "combined_generic_and_adapter_finalizer_records": 19,
+      "superseded_generic_sections_retained": 0,
+      "all_positions_preserved": true,
+      "authority_proposal": {
+        "uncoded_page_sections_pages": [
+          20,
+          21
+        ]
+      },
+      "uncoded_items_path_proposal": "data/manifests/uncoded/ma-211-items.json"
+    },
+    {
+      "source_id": "ma-portaria-181-2026-recomposicao-doe",
+      "artifact_sha256": "d24ce340f3d74c9461d99079d8fdf9aab9d720c024fad89b7d198af2990a8f7e",
+      "sidecar_path": "data/manifests/uncoded/ma-181-items.json",
+      "sidecar_sha256": "e3e12025f883a2468ee8e15e03cc1dc9ccef9317c7a7e3bfd1f609146e4ab296",
+      "records": 76,
+      "literal_fragments": 98,
+      "source_lines": 619,
+      "exact_once_original_line_partition": true,
+      "complete_parent_graph": true,
+      "kind_counts": {
+        "ato_normativo": 1,
+        "ementa_normativa": 1,
+        "preambulo_normativo": 1,
+        "considerando_normativo": 10,
+        "dispositivo_deliberativo": 1,
+        "capitulo_normativo": 9,
+        "artigo_normativo": 25,
+        "comando_publicacao": 1,
+        "assinatura_normativa": 1,
+        "anexo_normativo": 1,
+        "secao_anexo_normativo": 17,
+        "quadro_normativo": 1,
+        "etapa_fluxo_pedagogico": 7
+      },
+      "code_values_all_null": true,
+      "actual_extract_pdf_pages": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "original_pdf_pages": 100,
+      "extraction_revision": "page-cell-v1.4.0",
+      "extraction_config_sha256": "c772ce9f163acbc81a08b950846930e380a039fd54a80b70c3924aa13338bdd9",
+      "ocr_pending": false,
+      "source_region_neighbor_exclusion": "passed",
+      "shared_importer_and_finalizer": "passed",
+      "combined_generic_and_adapter_finalizer_records": 76,
+      "superseded_generic_sections_retained": 0,
+      "all_positions_preserved": true,
+      "authority_proposal": {
+        "uncoded_page_sections_pages": [
+          31,
+          36
+        ]
+      },
+      "uncoded_items_path_proposal": "data/manifests/uncoded/ma-181-items.json"
+    }
+  ],
+  "total_records": 95,
+  "total_fragments": 118,
+  "total_source_lines": 726,
+  "field_comparisons": 570,
+  "idempotent_sidecar_bytes_and_ids": true,
+  "scope_limit": "Actual Source-region extraction, independent line census and shared importer/finalizer prove these complete acts/annex only. No full candidate, database import, current guides/complement acquisition or UF readiness claimed."
+}

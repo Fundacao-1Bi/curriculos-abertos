@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-28T14:16:24.998560+00:00",
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:pe-current-inventory",
+  "status": "source_inventory_acquired_and_fourteen_sources_integrated",
+  "proposal_path": "data/manifests/pe-current-supplement.json",
+  "proposal_sha256": "b338aca687ba2ff094d1b5fb21afdec36f4938f927381bd5931339ab029d5075",
+  "pdfs_acquired": 15,
+  "pdf_pages_acquired": 605,
+  "integrated_source_records": 14,
+  "integrated_pages": 563,
+  "pending_typology_source_ids": [
+    "pe-atividades-complementares-d489fa8a"
+  ],
+  "research_pending_source_ids": [
+    "pe-instrucao-normativa-03-2026"
+  ],
+  "private_evidence_root": "var/private-evidence/source-audit-pe-current/",
+  "outstanding": [
+    "Original IN SEE/PE03/2026 text, annexes and application evidence",
+    "Atividades Complementares normative classification, with internal35h/45h image matrices already acquired",
+    "Official government→GoogleSite→EI PDF authority chain not proved",
+    "Learning extraction and full documentary reconciliation of new sources, owned by Northeast/pipeline"
+  ],
+  "scope_limit": "No UF readiness or publication claim. Source counts and acquisition are not structured-learning completeness.",
+  "integrated_research_pending_source_ids": [
+    "pe-instrucao-normativa-03-2026"
+  ],
+  "reference_act_integration": {
+    "manifest": "data/manifests/northeast.json",
+    "status": "research_pending",
+    "original_pdf_obtained": false,
+    "actor_type": "automated"
+  }
+}

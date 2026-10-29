@@ -1,0 +1,601 @@
+{
+  "at": "2026-10-28T13:54:48.815475+00:00",
+  "actor_type": "automated",
+  "scope": "Selected native page probes, shared core invoked, all cache writes disabled. Not complete source reprocessing.",
+  "sources": {
+    "ce-dcrc-em-2021": {
+      "selected_pages": [
+        208,
+        373
+      ],
+      "page_count": 2,
+      "candidate_count": 10,
+      "warnings": [],
+      "checks": [
+        {
+          "page": 208,
+          "code": "EM13LGG703",
+          "expectation": "reference-only code occurrence must not borrow later prose",
+          "passed": true,
+          "matches": []
+        },
+        {
+          "page": 208,
+          "code": "EM13LP29",
+          "expectation": "reference-only code occurrence must not borrow later prose",
+          "passed": true,
+          "matches": []
+        },
+        {
+          "page": 373,
+          "code": "EMIFCG12",
+          "expectation": "reference-only code occurrence must not borrow later prose",
+          "passed": true,
+          "matches": []
+        }
+      ],
+      "passed": 3,
+      "total": 3
+    },
+    "pe-curriculo-em-2021": {
+      "selected_pages": [
+        349,
+        367,
+        532,
+        533,
+        535,
+        541,
+        544,
+        567,
+        574,
+        602
+      ],
+      "page_count": 10,
+      "candidate_count": 46,
+      "warnings": [],
+      "checks": [
+        {
+          "page": 349,
+          "codes": [
+            "EMIFLGG12PE",
+            "EMIFCG12PE"
+          ],
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:pe-curriculo-em-2021:0b2327725202fe09bd32",
+              "text": "Refletir, continuamente, sobre seu próprio desenvolvimento e sobre seus objetivos presentes e futuros, identificando aspirações e oportunidades, inclusive relacionadas ao mundo do trabalho, que orientem escolhas, esforços e",
+              "bbox": [
+                420.58999786376955,
+                376.95335557725696,
+                595.6199951171875,
+                517.0283447265625
+              ],
+              "joint_source_codes": [
+                "EMIFLGG12PE",
+                "EMIFCG12PE"
+              ]
+            }
+          ]
+        },
+        {
+          "page": 367,
+          "codes": [
+            "EMIFMAT01PE",
+            "EMIFCHSA01PE"
+          ],
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:pe-curriculo-em-2021:f780fd71a66a0ddd2269",
+              "text": "Investigar e analisar situações- problema, identificando e selecionando conhecimentos da Matemática Financeira relevantes para uma dada situação que relacione custo e consumo, aplicando modelos para sua representação.",
+              "bbox": [
+                426.46665954589844,
+                314.1916898091634,
+                602.1157139369419,
+                516.7250170026507
+              ],
+              "joint_source_codes": [
+                "EMIFMAT01PE",
+                "EMIFCHSA01PE"
+              ]
+            }
+          ]
+        },
+        {
+          "page": 532,
+          "codes": [
+            "EMIFMAT01PE",
+            "EMIFCHSA01PE"
+          ],
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:pe-curriculo-em-2021:a93157ecca55c97ddb43",
+              "text": "Investigar e analisar situações-problema, identificando e selecionando conhecimentos da Matemática Financeira relevantes para uma dada situação que relacione custo e consumo, aplicando modelos para sua representação.",
+              "bbox": [
+                399.046141404372,
+                180.40001678466797,
+                617.7591053355824,
+                470.25001525878906
+              ],
+              "joint_source_codes": [
+                "EMIFMAT01PE",
+                "EMIFCHSA01PE"
+              ]
+            }
+          ]
+        },
+        {
+          "page": 533,
+          "codes": [
+            "EMIFMAT03PE",
+            "EMIFCHS03PE"
+          ],
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:pe-curriculo-em-2021:67bcb46d5e64d07bc494",
+              "text": "Selecionar e sistematizar informações da Estatística para compreender e explicar a utilização das diferentes formas de redes de fornecimento,",
+              "bbox": [
+                399.0399871826172,
+                450.5000228881836,
+                617.7500152587891,
+                518.7250170026507
+              ],
+              "joint_source_codes": [
+                "EMIFMAT03PE",
+                "EMIFCHS03PE"
+              ]
+            }
+          ]
+        },
+        {
+          "page": 535,
+          "codes": [
+            "EMIFMAT01PE",
+            "EMIFCNT01PE"
+          ],
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:pe-curriculo-em-2021:99ac0d9233564f22ce41",
+              "text": "Investigar e analisar situações problema identificando e selecionando conhecimentos geométricos e trigonométricos relevantes para o funcionamento ‘das redes de fornecimento, analisando modelos para sua representação.",
+              "bbox": [
+                398.99998474121094,
+                113.92002868652344,
+                617.6500244140625,
+                218.17002868652344
+              ],
+              "joint_source_codes": [
+                "EMIFMAT01PE",
+                "EMIFCNT01PE"
+              ]
+            }
+          ]
+        },
+        {
+          "page": 535,
+          "codes": [
+            "EMIFMAT04PE",
+            "EMIFCNT04PE"
+          ],
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:pe-curriculo-em-2021:05ae4f6bf24ba51e8ee8",
+              "text": "Reconhecer produtos e/ ou processos criativos por meio de fruição, vivências e reflexão crítica na produção do conhecimento matemático, bem como da aplicação de processos tecnológicos que envolvem o funcionamento das redes de fornecimento",
+              "bbox": [
+                398.99998474121094,
+                218.17002868652344,
+                617.6500244140625,
+                337.80003356933594
+              ],
+              "joint_source_codes": [
+                "EMIFMAT04PE",
+                "EMIFCNT04PE"
+              ]
+            }
+          ]
+        },
+        {
+          "page": 535,
+          "codes": [
+            "EMIFMAT01PE",
+            "EMIFCHSA01PE"
+          ],
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:pe-curriculo-em-2021:f1ce0144ca781f55f68a",
+              "text": "Investigar e analisar situações-problema sobre a organização comunitária quanto à prestação de serviços em rede ou que dependem da base de localização para funcionamento, utilizando conhecimentos matemáticos relevantes para elaborar modelos de representação e apresentando conclusões com o uso de diferentes mídias.",
+              "bbox": [
+                398.99998474121094,
+                337.80003356933594,
+                617.6500244140625,
+                488.4500274658203
+              ],
+              "joint_source_codes": [
+                "EMIFMAT01PE",
+                "EMIFCHSA01PE"
+              ]
+            }
+          ]
+        },
+        {
+          "page": 535,
+          "codes": [
+            "EMIFMAT06PE",
+            "EMIFCHSA06PE"
+          ],
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:pe-curriculo-em-2021:3f15128110a6e302dae0",
+              "text": "Propor e testar soluções éticas para resolver problemas",
+              "bbox": [
+                398.99998474121094,
+                488.4500274658203,
+                617.6500244140625,
+                520.7250170026507
+              ],
+              "joint_source_codes": [
+                "EMIFMAT06PE",
+                "EMIFCHSA06PE"
+              ]
+            }
+          ]
+        },
+        {
+          "page": 541,
+          "codes": [
+            "EMIFMAT01PE",
+            "EMIFCHSAT01PE"
+          ],
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:pe-curriculo-em-2021:61a78f41f535d103d034",
+              "text": "Investigar e analisar situações-problema identificando e selecionando conhecimentos matemáticos e geográficos relevantes para a eficiência das redes de fornecimento, elaborando modelos para sua representação.",
+              "bbox": [
+                363.41351946662456,
+                167.530029296875,
+                559.7153883713943,
+                287.6000213623047
+              ],
+              "joint_source_codes": [
+                "EMIFMAT01PE",
+                "EMIFCHSAT01PE"
+              ]
+            }
+          ]
+        },
+        {
+          "page": 541,
+          "codes": [
+            "EMIFMAT04PE",
+            "EMIFCHSA04PE"
+          ],
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:pe-curriculo-em-2021:d9e6c55b07f08296aa6e",
+              "text": "Reconhecer produtos e/ ou processos criativos por meio de fruição, vivências e reflexão crítica na produção do conhecimento matemático e geográfico e sua aplicação no desenvolvimento de processos tecnológicos que envolvam a eficiência das redes de fornecimento.",
+              "bbox": [
+                363.41351946662456,
+                287.6000213623047,
+                559.7153883713943,
+                422.6200256347656
+              ],
+              "joint_source_codes": [
+                "EMIFMAT04PE",
+                "EMIFCHSA04PE"
+              ]
+            }
+          ]
+        },
+        {
+          "page": 544,
+          "codes": [
+            "EMIFMAT03PE",
+            "EMIFCHSA03PE"
+          ],
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:pe-curriculo-em-2021:6f560bbf7a1280c28bf6",
+              "text": "Selecionar e sistematizar, com base em estudos e/ou pesquisas, fatos e evidências para a compreensão do mapeamento das redes de telecomunicação e da qualidade relacionada à prestação de serviço dessas redes a partir dos indicadores regulamentares, observando a contribuição da Matemática na explicação desses fenômenos e identificando os diversos pontos de vista para posicionar-se mediante argumentação e apresentar conclusões com o uso de diferentes mídias.",
+              "bbox": [
+                363.37998962402344,
+                252.9700164794922,
+                559.6199951171875,
+                496.10003335135326
+              ],
+              "joint_source_codes": [
+                "EMIFMAT03PE",
+                "EMIFCHSA03PE"
+              ]
+            }
+          ]
+        },
+        {
+          "page": 567,
+          "codes": [
+            "EMIFCHSA02PE",
+            "EMIFMAT02PE"
+          ],
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:pe-curriculo-em-2021:5ddb0914bfda5693d051",
+              "text": "Conhecer a importância e os fundamentos básicos da estatística utilizando-os na coleta/tratamento/interpretação/apr",
+              "bbox": [
+                375.7799835205078,
+                434.42002868652344,
+                558.2300415039062,
+                513.1083501180013
+              ],
+              "joint_source_codes": [
+                "EMIFCHSA02PE",
+                "EMIFMAT02PE"
+              ]
+            }
+          ]
+        },
+        {
+          "page": 574,
+          "codes": [
+            "EMIFCNT06PE",
+            "EMIFCHSA06PE"
+          ],
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:pe-curriculo-em-2021:137a7bb9aba1890b210e",
+              "text": "Propondo e testar soluções éticas, estéticas, criativas e inovadoras para problemas reais relacionados à tecnologia, biotecnologia, produtividade e seus efeitos no meio ambiente, no desenvolvimento socioeconômico e na vida das pessoas e estudando a definição/origem/princípios e apoio governamental ao agronegócio,",
+              "bbox": [
+                375.7799835205078,
+                113.92002868652344,
+                558.2300415039062,
+                310.80003356933594
+              ],
+              "joint_source_codes": [
+                "EMIFCNT06PE",
+                "EMIFCHSA06PE"
+              ]
+            }
+          ]
+        },
+        {
+          "page": 602,
+          "codes": [
+            "EMIFMAT02PE",
+            "EMIFLGG02PE"
+          ],
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:pe-curriculo-em-2021:d768fdb896b5f80e5875",
+              "text": "Levantar e testar hipóteses sobre variáveis que interferem na explicação ou resolução de uma situação-problema identificando, selecionando e utilizando conhecimentos matemáticos e artísticos, estabelecendo proporções descritas a partir dos “padrões de beleza” e harmonia estética, associadas às diversas situações e contextos de um ou mais campos de atuação social, elaborando modelos para sua representação.",
+              "bbox": [
+                391.8524911063058,
+                209.92002323695593,
+                574.0522257486979,
+                438.05003356933594
+              ],
+              "joint_source_codes": [
+                "EMIFMAT02PE",
+                "EMIFLGG02PE"
+              ]
+            }
+          ]
+        }
+      ],
+      "passed": 14,
+      "total": 14
+    },
+    "se-curriculo-em": {
+      "selected_pages": [
+        235,
+        327
+      ],
+      "page_count": 2,
+      "candidate_count": 15,
+      "warnings": [],
+      "checks": [
+        {
+          "page": 327,
+          "code": "EMIFCG04",
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:se-curriculo-em:2b2bd6e5edbb88a91be2",
+              "text": "Reconhecer e analisar diferentes manifestações criati- vas, artísticas e culturais, por meio de vivências presenciais e virtu- ais que ampliem a visão de mundo, sensibilidade, criticidade e cria- tividade.",
+              "bbox": [
+                190.72600555419922,
+                297.63800048828125,
+                464.8820037841797,
+                381.2590026855469
+              ]
+            }
+          ]
+        }
+      ],
+      "passed": 1,
+      "total": 1
+    },
+    "ba-dcrb-ei-ef": {
+      "selected_pages": [
+        197,
+        278,
+        318,
+        331,
+        365,
+        391,
+        418,
+        439,
+        460
+      ],
+      "page_count": 9,
+      "candidate_count": 104,
+      "warnings": [],
+      "checks": [
+        {
+          "page": 278,
+          "code": "EF06AR16BA",
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:ba-dcrb-ei-ef:d5b129cad2fbe44342af",
+              "text": "Reconhecer, validar e aplicar um amplo repertório de movimentos corporais que dialogue com a linguagem da reflexão e fruição.",
+              "bbox": [
+                368.7974853515625,
+                425.0110168457031,
+                558.9,
+                475.172607421875
+              ]
+            }
+          ]
+        },
+        {
+          "page": 391,
+          "code": "EF06CI04BA",
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:ba-dcrb-ei-ef:fd52ee2439ac13f13b31",
+              "text": "Investigar processos que permitam a purificação de um material homogêneo e a separação dos componentes de um material heterogêneo.",
+              "bbox": [
+                368.79748874240454,
+                457.1766052246094,
+                558.7259252929687,
+                507.3384094238281
+              ]
+            }
+          ]
+        },
+        {
+          "page": 318,
+          "code": "EF67EF12",
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:ba-dcrb-ei-ef:aa462ba15c7ff13e3f7b",
+              "text": "Planejar e utilizar estratégias para aprender elementos constitutivos das danças urbanas.",
+              "bbox": [
+                368.7974853515625,
+                371.010986328125,
+                558.7,
+                410.49761962890625
+              ]
+            }
+          ]
+        },
+        {
+          "page": 460,
+          "code": "EF05ER06",
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:ba-dcrb-ei-ef:258a8087e0d460cc4866",
+              "text": "Identificar o papel dos sábios e anciãos na comunicação e preservação da tradição oral.",
+              "bbox": [
+                368.79748874240454,
+                526.36181640625,
+                558.724331665039,
+                565.8485107421875
+              ]
+            }
+          ]
+        },
+        {
+          "page": 418,
+          "code": "EF06GE01",
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:ba-dcrb-ei-ef:4e66e63d44142615dd9a",
+              "text": "Comparar modificações das paisagens nos lugares de vivência e os usos desses lugares em diferentes tempos.",
+              "bbox": [
+                368.7974876990685,
+                160.39501953125,
+                558.7259252929687,
+                202.918701171875
+              ]
+            }
+          ]
+        },
+        {
+          "page": 439,
+          "code": "EF07HI02BA",
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:ba-dcrb-ei-ef:8257f7ea163af558a8f5",
+              "text": "Discutir a escravidão indígena e as leis indigenistas no Brasil Colonial, relacionando-as com a legislação vigente.",
+              "bbox": [
+                416.24029541015625,
+                450.3836975097656,
+                558.7,
+                502.006103515625
+              ]
+            }
+          ]
+        },
+        {
+          "page": 331,
+          "code": "EF07LI08",
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:ba-dcrb-ei-ef:fec90a41ada33d522216",
+              "text": "Relacionar as partes de um texto (parágrafos) para construir seu sentido global.",
+              "bbox": [
+                368.7974914550781,
+                198.34930419921875,
+                558.7259252929687,
+                227.035888671875
+              ]
+            }
+          ]
+        },
+        {
+          "page": 197,
+          "code": "EF35LP11",
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:ba-dcrb-ei-ef:425bc15ccc9a09cca567",
+              "text": "Ouvir gravações, canções, textos falados em diferentes variedades linguísticas, identificando características regionais, urbanas e rurais da fala e respeitando as diversas variedades linguísticas como características do uso da língua por diferentes grupos regionais ou diferentes culturas locais, rejeitando preconceitos linguísticos.",
+              "bbox": [
+                368.7980041503906,
+                461.9419250488281,
+                558.7,
+                558.4651387532552
+              ]
+            }
+          ]
+        },
+        {
+          "page": 365,
+          "code": "EF06MA04",
+          "passed": true,
+          "matches": [
+            {
+              "id": "ca:ba-dcrb-ei-ef:030459353526a7372d33",
+              "text": "Construir algoritmo em linguagem natural e representá-lo por fluxograma que indique a resolução de um problema simples (por exemplo, se um número natural qualquer é par).",
+              "bbox": [
+                368.7974853515625,
+                252.22418212890625,
+                558.7,
+                313.6378173828125
+              ]
+            }
+          ]
+        }
+      ],
+      "passed": 9,
+      "total": 9
+    }
+  }
+}

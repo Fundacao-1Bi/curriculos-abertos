@@ -1,0 +1,41 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:ms-independent-auditor",
+  "unique_header_pages_inspected": 48,
+  "stage_year_contexts": 12,
+  "bimester_contexts": 4,
+  "contact_sheets": [
+    "independent-contact-EF1.png",
+    "independent-contact-EF2.png",
+    "independent-contact-EF3.png",
+    "independent-contact-EF4.png",
+    "independent-contact-EF5.png",
+    "independent-contact-EF6.png",
+    "independent-contact-EF7.png",
+    "independent-contact-EF8.png",
+    "independent-contact-EF9.png",
+    "independent-contact-EM1.png",
+    "independent-contact-EM2.png",
+    "independent-contact-EM3.png"
+  ],
+  "supplemental_pages_inspected": [
+    103,
+    111,
+    114
+  ],
+  "independent_secondary_renderer": {
+    "page": 103,
+    "renderer": "pdftoppm/Poppler",
+    "file": "independent-poppler-p103.png",
+    "finding": "No printed first-bimester label; confirms the texttrace label is invisible."
+  },
+  "findings": [
+    "All48explicit year/bimester combinations visually confirmed.",
+    "Source p51prints colhimento; no editorial correction.",
+    "Long local MS.EM13LP12325 and MS.EM13LP2740 codes are visibly printed and retained.",
+    "P59has two visible Cidadania/Compromisso Etico pillar occurrences in one physical row, both must remain.",
+    "Codes are vertically centred; full physical cell controls code/skill/object association.",
+    "P103/111/114contain no visible first-bimester label; glyph traces alone need background/overpaint filtering."
+  ],
+  "review_scope_limit": "Visual sample covers48headerpages plus3riskycontinuations. Full141physicalrows are compared deterministically; this is technical automated review, not pedagogical human review."
+}

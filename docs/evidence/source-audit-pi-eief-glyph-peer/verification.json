@@ -1,0 +1,436 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex-independent-pi-eief-glyph-peer",
+  "generated_at": "2026-10-28T21:28:56.823182+00:00",
+  "passed": true,
+  "primary_census_path": "docs/evidence/source-audit-pi-eief-glyph-peer/primary-census.json",
+  "primary_census_sha256": "7f42fa9faf8bc8bb0bcc82a1bffcae3d1675878928243b388fc0d4e60bfa54ae",
+  "primary_census_preceded_producer_output_read": true,
+  "source_id": "pi-curriculo-ei-ef",
+  "source_sha256": "609e955a2774afe6b25451b6d597005fcedc9b769cbf1a00916caaaab40f426e",
+  "Source_record_sha256_before_and_after": "f28959d50c0e0cbdcf900f3d0b0f0ec54c4a59da728eaf2339ee1d33f2134467",
+  "old_full_cache_path": "var/ne-pi-eief-glyph-candidate/previous-full-cache.json",
+  "old_full_cache_sha256": "18087f5d7d80975c943577d56228d984678645f56fc84ff382843df096a12d5e",
+  "old_full_cache_pages": 313,
+  "candidate_scoped_cache_path": "var/ne-pi-eief-glyph-candidate/isolated-extraction.json",
+  "candidate_scoped_cache_sha256": "fa8ad3f4feeceb3032e7fc7e5ed89efbc8725ceb288c39254f70f13c16db889f",
+  "candidate_scope_pages": [
+    82,
+    86,
+    89,
+    97,
+    98,
+    99,
+    100,
+    101,
+    111,
+    118,
+    136,
+    139,
+    144,
+    145,
+    163,
+    169,
+    174,
+    184,
+    186,
+    203,
+    204,
+    215,
+    224,
+    233,
+    237,
+    243,
+    257,
+    260,
+    265,
+    267,
+    269,
+    278,
+    279,
+    281,
+    285,
+    287,
+    298
+  ],
+  "candidate_scope_page_count": 37,
+  "Source_document_pages": 313,
+  "ledger_path": "docs/evidence/source-audit-northeast/pi-eief-glyph-technical-supersessions.json",
+  "ledger_sha256": "73817aff990326ca9cb7a1cb9456be9a7f942d2f73b24e4b12b0d0c97e9010ed",
+  "producer_proof_pins_verified": [
+    {
+      "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+      "sha256": "6a116d63c8b20139f972b002cfc1d17c3260a1ae69b582f44ec2fb236ecb2632"
+    },
+    {
+      "path": "docs/evidence/source-audit-northeast/pi-eief-glyph-audit-summary.json",
+      "sha256": "a90fe760daa0a3b3ad5d8553a613438800f7a4a5652846a66c7a8ad9921d77ee"
+    },
+    {
+      "path": "docs/evidence/source-audit-northeast/pi-eief-isolated-parser-probe.json",
+      "sha256": "5046a92b080154433b09dff84b0747c64f1c6a78d67ef2c881775cb70a15ad84"
+    },
+    {
+      "path": "docs/evidence/source-audit-pi-eief-glyph-peer/primary-census.json",
+      "sha256": "7f42fa9faf8bc8bb0bcc82a1bffcae3d1675878928243b388fc0d4e60bfa54ae"
+    }
+  ],
+  "old_and_new_scope_coded_occurrences": {
+    "old": 392,
+    "new": 392,
+    "page_code_multiset_equal": true
+  },
+  "exact_removed_IDs_equal_six_old_ledger_IDs": true,
+  "exact_added_IDs_equal_six_new_ledger_IDs": true,
+  "six_pairs": [
+    {
+      "page": 257,
+      "code": "EF02GE03",
+      "old_id": "ca:pi-curriculo-ei-ef:2bdd74bbd89e92b209db",
+      "new_id": "ca:pi-curriculo-ei-ef:dd91a91fca300c28f7be",
+      "old_locator": "table:0/column:158.5-380.6/anchor:0",
+      "new_locator": "table:0/row:2/cell:1",
+      "physical_cell_bbox": [
+        168.40159606933594,
+        182.277587890625,
+        380.6260070800781,
+        228.31182861328125
+      ],
+      "old_evidence_region": [
+        158.4984221458435,
+        181.8128204345703,
+        380.6260070800781,
+        228.8470001220703
+      ],
+      "new_evidence_region": [
+        158.4984221458435,
+        182.277587890625,
+        380.6260070800781,
+        228.31182861328125
+      ],
+      "new_region_spans_multiple_physical_rows": false,
+      "actual_code_occurrences": 1,
+      "same_code_kind_positions_parent": true,
+      "body_unchanged_across_pair": true,
+      "new_body_equals_complete_primary_characters": true,
+      "primary_body_sha256": "b1fd01086d2dc05d1b91e79879676503e85a4cef33a5c0ecbd46b517954f7a87",
+      "primary_ligature_witnesses": [],
+      "technical_acceptance": true
+    },
+    {
+      "page": 257,
+      "code": "EF02GE11",
+      "old_id": "ca:pi-curriculo-ei-ef:65e5bdc59df2a397dcd7",
+      "new_id": "ca:pi-curriculo-ei-ef:c1ac0ab5d972199cc6bb",
+      "old_locator": "table:0/column:158.5-380.6/anchor:9",
+      "new_locator": "table:0/row:10/cell:1",
+      "physical_cell_bbox": [
+        168.40159606933594,
+        615.1539306640625,
+        380.6260070800781,
+        682.1881103515625
+      ],
+      "old_evidence_region": [
+        158.4984221458435,
+        614.6890869140625,
+        380.6260070800781,
+        682.1881103515625
+      ],
+      "new_evidence_region": [
+        158.4984221458435,
+        615.1539306640625,
+        380.6260070800781,
+        682.1881103515625
+      ],
+      "new_region_spans_multiple_physical_rows": false,
+      "actual_code_occurrences": 1,
+      "same_code_kind_positions_parent": true,
+      "body_unchanged_across_pair": true,
+      "new_body_equals_complete_primary_characters": true,
+      "primary_body_sha256": "a8b350154e6e7f47add914c410ec33434d7f58ca1d81d28d8ff7af50319a986b",
+      "primary_ligature_witnesses": [
+        {
+          "unicode": 64257,
+          "character": "ﬁ",
+          "glyph_id": 302,
+          "origin": [
+            272.3162841796875,
+            635.9360961914062
+          ],
+          "bbox": [
+            272.3162841796875,
+            628.6513671875,
+            277.3446044921875,
+            638.1513671875
+          ],
+          "font": "Calibri",
+          "font_size": 9.5
+        }
+      ],
+      "technical_acceptance": true
+    },
+    {
+      "page": 265,
+      "code": "EF07GE011.01PI",
+      "old_id": "ca:pi-curriculo-ei-ef:22a9853fd8cd87c44517",
+      "new_id": "ca:pi-curriculo-ei-ef:159486c52575199e446c",
+      "old_locator": "table:0/column:157.8-380.6/anchor:2",
+      "new_locator": "table:0/row:3/cell:1",
+      "physical_cell_bbox": [
+        168.40159606933594,
+        263.84600830078125,
+        380.6260070800781,
+        288.88018798828125
+      ],
+      "old_evidence_region": [
+        157.838210550944,
+        263.3812255859375,
+        380.6260070800781,
+        289.41552734375
+      ],
+      "new_evidence_region": [
+        157.838210550944,
+        263.84600830078125,
+        380.6260070800781,
+        508.5513000488281
+      ],
+      "new_region_spans_multiple_physical_rows": true,
+      "actual_code_occurrences": 1,
+      "same_code_kind_positions_parent": true,
+      "body_unchanged_across_pair": true,
+      "new_body_equals_complete_primary_characters": true,
+      "primary_body_sha256": "3c96d499d18cbdebe6a505dc9ab84f3735bf0bed158ec3c319cfc614a95a1fb2",
+      "primary_ligature_witnesses": [
+        {
+          "unicode": 64257,
+          "character": "ﬁ",
+          "glyph_id": 302,
+          "origin": [
+            264.4910583496094,
+            274.12823486328125
+          ],
+          "bbox": [
+            264.4910583496094,
+            266.8434753417969,
+            269.5193786621094,
+            276.3434753417969
+          ],
+          "font": "Calibri",
+          "font_size": 9.5
+        }
+      ],
+      "technical_acceptance": true
+    },
+    {
+      "page": 269,
+      "code": "EF09GE04",
+      "old_id": "ca:pi-curriculo-ei-ef:6ad894381d37513e7885",
+      "new_id": "ca:pi-curriculo-ei-ef:fdffdbbcc0a9966ccb9a",
+      "old_locator": "table:0/column:158.5-380.6/anchor:0",
+      "new_locator": "table:0/row:2/cell:1",
+      "physical_cell_bbox": [
+        168.40159606933594,
+        182.277587890625,
+        380.6260070800781,
+        228.31182861328125
+      ],
+      "old_evidence_region": [
+        158.4984221458435,
+        181.8128204345703,
+        380.6260070800781,
+        228.8470001220703
+      ],
+      "new_evidence_region": [
+        158.4984221458435,
+        182.277587890625,
+        380.6260070800781,
+        228.31182861328125
+      ],
+      "new_region_spans_multiple_physical_rows": false,
+      "actual_code_occurrences": 1,
+      "same_code_kind_positions_parent": true,
+      "body_unchanged_across_pair": true,
+      "new_body_equals_complete_primary_characters": true,
+      "primary_body_sha256": "6527be7aae60b0e45022a4548aa5f539bcd19851b225ff7ff1d919a0ed421ce8",
+      "primary_ligature_witnesses": [],
+      "technical_acceptance": true
+    },
+    {
+      "page": 279,
+      "code": "EF05HI06",
+      "old_id": "ca:pi-curriculo-ei-ef:3a1486e15040a3dadcb7",
+      "new_id": "ca:pi-curriculo-ei-ef:81a0fab811f3233442e3",
+      "old_locator": "table:0/column:158.7-380.6/anchor:4",
+      "new_locator": "table:0/row:5/cell:1",
+      "physical_cell_bbox": [
+        168.40159606933594,
+        345.4144287109375,
+        380.62598092215404,
+        391.4486083984375
+      ],
+      "old_evidence_region": [
+        158.6507786677434,
+        344.9495849609375,
+        380.62598092215404,
+        391.98388671875
+      ],
+      "new_evidence_region": [
+        158.6507786677434,
+        345.4144287109375,
+        380.62598092215404,
+        600.6197509765625
+      ],
+      "new_region_spans_multiple_physical_rows": true,
+      "actual_code_occurrences": 1,
+      "same_code_kind_positions_parent": true,
+      "body_unchanged_across_pair": true,
+      "new_body_equals_complete_primary_characters": true,
+      "primary_body_sha256": "5ac7b65936286d3863ec6eb33e45a67c1c95e58a189d5daeb73803e8cc0cac5a",
+      "primary_ligature_witnesses": [
+        {
+          "unicode": 64257,
+          "character": "ﬁ",
+          "glyph_id": 302,
+          "origin": [
+            199.63174438476562,
+            376.69659423828125
+          ],
+          "bbox": [
+            199.63174438476562,
+            369.4118347167969,
+            204.66006469726562,
+            378.9118347167969
+          ],
+          "font": "Calibri",
+          "font_size": 9.5
+        }
+      ],
+      "technical_acceptance": true
+    },
+    {
+      "page": 281,
+      "code": "EF06HI16",
+      "old_id": "ca:pi-curriculo-ei-ef:dde53e90233ee1b7dcab",
+      "new_id": "ca:pi-curriculo-ei-ef:5ec949cddfafd679e13f",
+      "old_locator": "table:0/column:158.5-380.6/anchor:6",
+      "new_locator": "table:0/row:5/cell:1",
+      "physical_cell_bbox": [
+        168.40159606933594,
+        437.4828186035156,
+        380.62598830003003,
+        494.0169982910156
+      ],
+      "old_evidence_region": [
+        158.4984221458435,
+        437.0180969238281,
+        380.62598830003003,
+        494.55230712890625
+      ],
+      "new_evidence_region": [
+        158.4984221458435,
+        437.4828186035156,
+        380.62598830003003,
+        642.6197509765625
+      ],
+      "new_region_spans_multiple_physical_rows": true,
+      "actual_code_occurrences": 1,
+      "same_code_kind_positions_parent": true,
+      "body_unchanged_across_pair": true,
+      "new_body_equals_complete_primary_characters": true,
+      "primary_body_sha256": "ad65227ee115c427118d62306cbf8d85f29ad8783b772e42818e1d1f0eecf8c0",
+      "primary_ligature_witnesses": [],
+      "technical_acceptance": true
+    }
+  ],
+  "same_body_pairs": 6,
+  "real_literal_checker": {
+    "records": 429,
+    "errors": []
+  },
+  "formal_schema": {
+    "records": 429,
+    "errors": []
+  },
+  "negative_controls": [
+    {
+      "case": "another_new_ID_cannot_replace_this_physical_occurrence",
+      "blocked": true
+    },
+    {
+      "case": "last_word_removed_target_and_excerpt_together",
+      "blocked": true
+    },
+    {
+      "case": "change_position_without_primary_authorization",
+      "blocked": true
+    },
+    {
+      "case": "repair_irregular_printed_identifier_by_convention",
+      "blocked": true
+    },
+    {
+      "case": "ASCII_expansion_cannot_claim_exact_source_Unicode_body",
+      "blocked": true
+    },
+    {
+      "case": "promote_scoped37cache_to_whole313Source",
+      "blocked": true
+    }
+  ],
+  "bbox_scope_notes": [
+    {
+      "page": 265,
+      "code": "EF07GE011.01PI",
+      "primary_physical_cell_bbox": [
+        168.40159606933594,
+        263.84600830078125,
+        380.6260070800781,
+        288.88018798828125
+      ],
+      "new_parser_region_bbox": [
+        157.838210550944,
+        263.84600830078125,
+        380.6260070800781,
+        508.5513000488281
+      ],
+      "meaning": "Parser region contains adjacent physical rows. Exact body is still the separately proved target paragraph; do not label the whole region one exact physical cell."
+    },
+    {
+      "page": 279,
+      "code": "EF05HI06",
+      "primary_physical_cell_bbox": [
+        168.40159606933594,
+        345.4144287109375,
+        380.62598092215404,
+        391.4486083984375
+      ],
+      "new_parser_region_bbox": [
+        158.6507786677434,
+        345.4144287109375,
+        380.62598092215404,
+        600.6197509765625
+      ],
+      "meaning": "Parser region contains adjacent physical rows. Exact body is still the separately proved target paragraph; do not label the whole region one exact physical cell."
+    },
+    {
+      "page": 281,
+      "code": "EF06HI16",
+      "primary_physical_cell_bbox": [
+        168.40159606933594,
+        437.4828186035156,
+        380.62598830003003,
+        494.0169982910156
+      ],
+      "new_parser_region_bbox": [
+        158.4984221458435,
+        437.4828186035156,
+        380.62598830003003,
+        642.6197509765625
+      ],
+      "meaning": "Parser region contains adjacent physical rows. Exact body is still the separately proved target paragraph; do not label the whole region one exact physical cell."
+    }
+  ],
+  "acceptance_scope": "Six documented technical ID/locator migrations and37page literal/schema replay only. Complete body independence proved for six primary slots; not all392coded bodies or313page Source closure. No official code equivalence, amendment or human pedagogy.",
+  "MF_core_cache_candidate_database_publication_modified": false,
+  "whole_Source_UF_ready_claimed": false
+}

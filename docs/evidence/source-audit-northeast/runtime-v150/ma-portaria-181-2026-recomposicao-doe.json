@@ -1,0 +1,62 @@
+{
+  "at": "2026-10-28T17:34:55.361740+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast:current_cache_verifier",
+  "source_id": "ma-portaria-181-2026-recomposicao-doe",
+  "source_sha256": "d24ce340f3d74c9461d99079d8fdf9aab9d720c024fad89b7d198af2990a8f7e",
+  "extraction_revision": "page-cell-v1.5.0",
+  "mapping_revision": "documented-code-rules-v1.2.0",
+  "cache_path": "data/extracted/d24ce340f3d74c9461d99079d8fdf9aab9d720c024fad89b7d198af2990a8f7e-page-cell-v1.5.0.json",
+  "cache_sha256": "698cb7bfe2b8503f31c8bfada0229a31bdf903c4dd9181b51b7493d37fd5417f",
+  "source_extraction_config_sha256": "bca47869155e1b3840620d57d85ec7feb35a0d1241d320f6af8ec6ba80812ec9",
+  "parser_fingerprint": {
+    "algorithm": "sha256-of-sorted-parser-file-digests",
+    "files": {
+      "document_roles.py": "ea4e0b161d015f6e87e4fa2b7dde202e1605815efff1e6ec48adf137f311a20f",
+      "geometry.py": "f0f2f7230602a051712fd116bce3c9d62bcb3e316d07412f8ed7ff3cda37467d",
+      "ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+      "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
+      "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
+      "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
+      "runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce"
+    },
+    "sha256": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+  },
+  "runtime": {
+    "implementation": "CPython",
+    "pillow": "13.0.0",
+    "pymupdf": "1.26.7",
+    "python": "3.11.15"
+  },
+  "generic_input_count": 6,
+  "adapter_input_count": 76,
+  "final_count": 76,
+  "expected_independent_ID_count": 76,
+  "verified_ID_count": 76,
+  "missing_IDs": [],
+  "extra_IDs": [],
+  "generic_page_containers_surviving": 0,
+  "legitimate_documentary_context_pages": [],
+  "literal_fragments_checked": 98,
+  "schema_items_checked": 76,
+  "parent_links": 75,
+  "orphan_parents": 0,
+  "cycles": 0,
+  "by_kind": {
+    "ato_normativo": 1,
+    "ementa_normativa": 1,
+    "preambulo_normativo": 1,
+    "considerando_normativo": 10,
+    "dispositivo_deliberativo": 1,
+    "capitulo_normativo": 9,
+    "artigo_normativo": 25,
+    "comando_publicacao": 1,
+    "assinatura_normativa": 1,
+    "anexo_normativo": 1,
+    "secao_anexo_normativo": 17,
+    "quadro_normativo": 1,
+    "etapa_fluxo_pedagogico": 7
+  },
+  "status": "passed",
+  "scope": "Read and validated actual current1.5 extraction cache with exact Source configuration. Full generic+adapter importer/finalizer output equals independently inventoried IDs; no extraction, cache, original publication or source bytes changed. WholeUF/production completeness not claimed."
+}

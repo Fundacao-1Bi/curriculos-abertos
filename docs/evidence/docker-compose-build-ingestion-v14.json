@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "completed_at": "2026-10-28T14:10:07.353Z",
+  "method": "standard-docker-compose-build",
+  "command": [
+    "docker",
+    "compose",
+    "--progress",
+    "plain",
+    "build",
+    "app"
+  ],
+  "exit_code": 0,
+  "image_id": "sha256:2c29408f46382881053a728a5a28603202d34ee14a68207a67901a9a4b6abdd3",
+  "image_source_tree_sha256": "80ebc28262c9251955dea417fda47c2b25f8b4bf94cf884c3fe17ae3b2e0d691",
+  "current_source_tree_sha256": "c551e9e8356d6e7b59e85658ada75e122c5575623c478c626de04559b1523696",
+  "matches_current_source": false,
+  "ready": {
+    "status": 200,
+    "body": {
+      "status": "ready",
+      "database": "ok",
+      "publication": "ca-77fb8076598b567e1ba3",
+      "worker": "ok"
+    }
+  },
+  "runtime": {
+    "node": "22.23.4",
+    "python": "3.11.2",
+    "pillow": "13.0.0",
+    "pymupdf": "1.26.7",
+    "jsonschema": "4.25.1"
+  },
+  "log": "docs/evidence/docker-compose-build-ingestion-v14.log",
+  "log_sha256": "6c41ecb457c7b7c599e6435275fa4e0a2e16c70bf15cbf434c6fa025f88ecf4c",
+  "passed": true,
+  "final_image": false,
+  "limitation": "Technical image while parser/core/gates continue changing. J11 global update and final national corpus are not asserted."
+}

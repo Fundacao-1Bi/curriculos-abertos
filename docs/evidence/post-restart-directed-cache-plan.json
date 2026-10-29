@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "reason": "directed own obsolete build intermediate caches after one approved normal desktop restart; preserve active c2eb snapshots and new e88c image; no global prune",
+  "preconditions": [
+    "2026-10-28 own project build descriptions",
+    "reclaimable true",
+    "shared false",
+    "production snapshots lzn/r6 excluded",
+    "base runtime images, volumes and all other projects excluded"
+  ],
+  "records": [
+    {
+      "ID": "px4um6vel8tmme50sc3mgr1ih",
+      "Created at": "2026-10-28 04:40:55.262101127 +0000 UTC",
+      "Mutable": "true",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "94.02MB",
+      "Description": "mount / from exec /bin/sh -c npm run build",
+      "parents": [
+        "1n60v1bpjl3gao2f5wxmbgk7l"
+      ]
+    },
+    {
+      "ID": "i210992u1rjjupt5agtr6rvcu",
+      "Created at": "2026-10-28 05:23:09.543644925 +0000 UTC",
+      "Mutable": "true",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "94.35MB",
+      "Description": "mount / from exec /bin/sh -c npm run build",
+      "parents": [
+        "nu80k9607jqh0ssz3axqhrwwg"
+      ]
+    },
+    {
+      "ID": "kt8rikah0qy79o98ki8gcynj0",
+      "Created at": "2026-10-28 05:36:49.011964721 +0000 UTC",
+      "Mutable": "true",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "94.51MB",
+      "Description": "mount / from exec /bin/sh -c npm run build",
+      "parents": [
+        "kpqeo4fanqqccyp37f8skp67r"
+      ]
+    },
+    {
+      "ID": "n3jmqut57nv5cxx8i3qbyv5h2",
+      "Created at": "2026-10-28 13:58:49.177473091 +0000 UTC",
+      "Mutable": "true",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "94.56MB",
+      "Description": "mount / from exec /bin/sh -c npm run build",
+      "parents": [
+        "lmbmokz2ap1q5dtsyq4mw5c8y"
+      ]
+    },
+    {
+      "ID": "1iq2hcr3bcxf9qbmp4p0l5f4n",
+      "Created at": "2026-10-28 05:43:20.100137221 +0000 UTC",
+      "Mutable": "true",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "94.58MB",
+      "Description": "mount / from exec /bin/sh -c npm run build",
+      "parents": [
+        "ts7jp4evbzsmx03c36fi2u74f"
+      ]
+    },
+    {
+      "ID": "7mi4xv1m9quati3fdcto41ugp",
+      "Created at": "2026-10-28 13:44:01.768866333 +0000 UTC",
+      "Mutable": "true",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "94.62MB",
+      "Description": "mount / from exec /bin/sh -c npm run build",
+      "parents": [
+        "vg8dmoh0tc5j9dx9bfohexegb"
+      ]
+    },
+    {
+      "ID": "kauhmk1aq19pvhiqd3b7nmqeg",
+      "Created at": "2026-10-28 14:52:50.960898092 +0000 UTC",
+      "Mutable": "true",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "112.1MB",
+      "Description": "mount / from exec /bin/sh -c npm run build",
+      "parents": [
+        "ygsidrc8sp05alpvmi90j6kr0"
+      ]
+    },
+    {
+      "ID": "tdiulc1z8im2qj5q5uwnexvcx",
+      "Created at": "2026-10-28 15:30:09.130845127 +0000 UTC",
+      "Mutable": "true",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "114.4MB",
+      "Description": "mount / from exec /bin/sh -c npm run build",
+      "parents": [
+        "gstuw9i5ct6otnaovct5ydh43"
+      ]
+    },
+    {
+      "ID": "nu80k9607jqh0ssz3axqhrwwg",
+      "Created at": "2026-10-28 05:23:09.51810405 +0000 UTC",
+      "Mutable": "false",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "278.1MB",
+      "Description": "[build 1/2] COPY . .",
+      "parents": [
+        "n8vq9vgh3afe9yfeo7rtw8dsk"
+      ]
+    },
+    {
+      "ID": "kpqeo4fanqqccyp37f8skp67r",
+      "Created at": "2026-10-28 05:36:48.995600012 +0000 UTC",
+      "Mutable": "false",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "322.7MB",
+      "Description": "[build 1/2] COPY . .",
+      "parents": [
+        "w5lnhb977z1x25eh0cvs7xksv"
+      ]
+    },
+    {
+      "ID": "ts7jp4evbzsmx03c36fi2u74f",
+      "Created at": "2026-10-28 05:43:20.076306554 +0000 UTC",
+      "Mutable": "false",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "360.5MB",
+      "Description": "[build 1/2] COPY . .",
+      "parents": [
+        "w5lnhb977z1x25eh0cvs7xksv"
+      ]
+    },
+    {
+      "ID": "1n60v1bpjl3gao2f5wxmbgk7l",
+      "Created at": "2026-10-28 04:40:55.190291585 +0000 UTC",
+      "Mutable": "false",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "366MB",
+      "Description": "[build 1/2] COPY . .",
+      "parents": [
+        "n8vq9vgh3afe9yfeo7rtw8dsk"
+      ]
+    },
+    {
+      "ID": "vg8dmoh0tc5j9dx9bfohexegb",
+      "Created at": "2026-10-28 13:44:01.745635916 +0000 UTC",
+      "Mutable": "false",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "398.6MB",
+      "Description": "[build 1/2] COPY . .",
+      "parents": [
+        "w5lnhb977z1x25eh0cvs7xksv"
+      ]
+    },
+    {
+      "ID": "lmbmokz2ap1q5dtsyq4mw5c8y",
+      "Created at": "2026-10-28 13:58:49.139743341 +0000 UTC",
+      "Mutable": "false",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "526.1MB",
+      "Description": "[build 1/2] COPY . .",
+      "parents": [
+        "udepq67pmdxz8z8jjhgq8niiu"
+      ]
+    },
+    {
+      "ID": "ygsidrc8sp05alpvmi90j6kr0",
+      "Created at": "2026-10-28 14:52:50.869313967 +0000 UTC",
+      "Mutable": "false",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "837.9MB",
+      "Description": "[build 1/2] COPY . .",
+      "parents": [
+        "udepq67pmdxz8z8jjhgq8niiu"
+      ]
+    },
+    {
+      "ID": "w5lnhb977z1x25eh0cvs7xksv",
+      "Created at": "2026-10-28 05:36:48.068329012 +0000 UTC",
+      "Mutable": "false",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "904.3MB",
+      "Description": "mount / from exec /bin/sh -c npm install --global npm@11.6.2 && npm ci",
+      "parents": [
+        "79herjsncz7rp0sa4c9k0zptd"
+      ]
+    },
+    {
+      "ID": "n8vq9vgh3afe9yfeo7rtw8dsk",
+      "Created at": "2026-10-28 04:40:53.190649959 +0000 UTC",
+      "Mutable": "false",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "904.3MB",
+      "Description": "mount / from exec /bin/sh -c npm install --global npm@11.6.2 && npm ci",
+      "parents": [
+        "i1ym742k1f02pdsreiywa9zzd"
+      ]
+    },
+    {
+      "ID": "tn2vypnjdrb5168kgfo5mmds4",
+      "Created at": "2026-10-28 15:30:01.948000846 +0000 UTC",
+      "Mutable": "false",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "904.3MB",
+      "Description": "mount / from exec /bin/sh -c npm install --global npm@11.6.2 && npm ci",
+      "parents": [
+        "7o67b3c6dsz67kiof541tn0dh"
+      ]
+    },
+    {
+      "ID": "udepq67pmdxz8z8jjhgq8niiu",
+      "Created at": "2026-10-28 13:58:47.641943424 +0000 UTC",
+      "Mutable": "false",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "904.3MB",
+      "Description": "mount / from exec /bin/sh -c npm install --global npm@11.6.2 && npm ci",
+      "parents": [
+        "k71yo7clfyrmg1p6xqjbg8y10"
+      ]
+    },
+    {
+      "ID": "gstuw9i5ct6otnaovct5ydh43",
+      "Created at": "2026-10-28 15:30:09.068112835 +0000 UTC",
+      "Mutable": "false",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "1.053GB",
+      "Description": "[build 1/2] COPY . .",
+      "parents": [
+        "tn2vypnjdrb5168kgfo5mmds4"
+      ]
+    },
+    {
+      "ID": "ygeclwdf5ea51kc2xiznw7o5g",
+      "Created at": "2026-10-28 04:38:59.024226962 +0000 UTC",
+      "Mutable": "true",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "1.053GB",
+      "Description": "local source for context",
+      "parents": []
+    }
+  ],
+  "child_before_parent_ids": [
+    "n3jmqut57nv5cxx8i3qbyv5h2",
+    "px4um6vel8tmme50sc3mgr1ih",
+    "kauhmk1aq19pvhiqd3b7nmqeg",
+    "7mi4xv1m9quati3fdcto41ugp",
+    "tdiulc1z8im2qj5q5uwnexvcx",
+    "i210992u1rjjupt5agtr6rvcu",
+    "1iq2hcr3bcxf9qbmp4p0l5f4n",
+    "kt8rikah0qy79o98ki8gcynj0",
+    "ygeclwdf5ea51kc2xiznw7o5g",
+    "vg8dmoh0tc5j9dx9bfohexegb",
+    "ts7jp4evbzsmx03c36fi2u74f",
+    "1n60v1bpjl3gao2f5wxmbgk7l",
+    "ygsidrc8sp05alpvmi90j6kr0",
+    "nu80k9607jqh0ssz3axqhrwwg",
+    "gstuw9i5ct6otnaovct5ydh43",
+    "lmbmokz2ap1q5dtsyq4mw5c8y",
+    "kpqeo4fanqqccyp37f8skp67r",
+    "w5lnhb977z1x25eh0cvs7xksv",
+    "udepq67pmdxz8z8jjhgq8niiu",
+    "tn2vypnjdrb5168kgfo5mmds4",
+    "n8vq9vgh3afe9yfeo7rtw8dsk"
+  ]
+}

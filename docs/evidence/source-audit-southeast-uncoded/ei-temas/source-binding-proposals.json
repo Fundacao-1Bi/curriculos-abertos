@@ -1,0 +1,53 @@
+{
+  "status": "proposal_only_not_applied",
+  "actor_type": "automated",
+  "sources": [
+    {
+      "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+      "artifact_sha256": "5e720424ec0bc771440dc9b0b331fe6460ee0aa3c5aad0ee69e608ec1a1a1035",
+      "uncoded_items_path": "data/manifests/uncoded/es-ei-items.json",
+      "uncoded_items_sha256": "f902d3329425890bdb993ba64fa7fcbcf5bf779b1ad899f3fd70d3f4c8346d3d",
+      "records": 1309,
+      "kinds": {
+        "secao_normativa": 77,
+        "campo_experiencia": 5,
+        "direito_aprendizagem": 36,
+        "grupo_etario": 15,
+        "contexto_planejamento": 29,
+        "acao_docente": 221,
+        "contexto_observacao": 22,
+        "indicador_observacao": 259,
+        "principio_curricular": 3,
+        "valor_principio": 3,
+        "pilar_matriz_saberes": 4,
+        "contexto_curricular": 539,
+        "saber_curricular": 15,
+        "reflexao_docente": 45,
+        "orientacao_avaliacao": 5,
+        "orientacao_transicao": 7,
+        "campo_sintese_aprendizagem": 5,
+        "sintese_aprendizagem": 19
+      }
+    },
+    {
+      "source_id": "es-tema-integrador-final-24-10",
+      "artifact_sha256": "2fe7de739de9b3433e41cffdd93c08573dc1277e3bfa70a5b2ed2d44ec68b2d4",
+      "uncoded_items_path": "data/manifests/uncoded/es-temas-items.json",
+      "uncoded_items_sha256": "917160fabe55d76c2d99bd9f0ee9a0a7565e6bcaae4f81087dda38cec5358760",
+      "records": 130,
+      "kinds": {
+        "secao_normativa": 1,
+        "tema_integrador": 19,
+        "contexto_temas_integradores": 74,
+        "orientacao_implementacao": 36
+      }
+    }
+  ],
+  "coded_parent_links_proposal_path": "docs/evidence/source-audit-southeast-uncoded/ei-temas/coded-parent-proposals.json",
+  "note": "Only uncoded_items_path bindings requested.105 coded-parent selector links separately proved; no automatic manifest/core changes.",
+  "pending": [
+    "Manifest integration by responsible owner",
+    "Human transcription and pedagogical review",
+    "No claim of UF readiness"
+  ]
+}

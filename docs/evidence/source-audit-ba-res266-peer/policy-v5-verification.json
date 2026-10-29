@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-28T18:19:12.581020+00:00",
+  "classification": "focused_policy_diagnostic_during_source_changes",
+  "policy_version": "documentary-item-roles-2026-10-28-v5",
+  "learning_kinds": 22,
+  "commands": [
+    {
+      "command": "node --import tsx --test tests/domain.item-kinds.test.ts tests/domain.age.test.ts",
+      "exit_code": 1,
+      "tests": 8,
+      "pass": 7,
+      "fail": 1,
+      "skipped": 0,
+      "log": "policy-v5-pure-tests.log",
+      "failure": "Strict inventory gate found four new concurrent source kinds; BA-specific role test and all other focused tests passed."
+    },
+    {
+      "command": "npm run typecheck",
+      "exit_code": 0
+    },
+    {
+      "command": "npx eslint src/domain/item-kinds.ts tests/domain.item-kinds.test.ts",
+      "exit_code": 0
+    }
+  ],
+  "strict_gate_unclassified": [
+    "dispositivo_normativo_alterado",
+    "grupo_direitos_aprendizagem",
+    "oferta_trilha",
+    "trilha_curricular"
+  ],
+  "inventory_counters": {
+    "files": 123,
+    "source_manifest_bound_files": 61,
+    "unbound_or_research_files": 62,
+    "all_sidecar_record_occurrences": 80831,
+    "source_manifest_bound_record_occurrences": 51348
+  },
+  "files_sha256": {
+    "src/domain/item-kinds.ts": "b2ef35b22fcaeaf1cf546ecf84fef7a705ee92e6dfa26479f9e3f83a6bf83691",
+    "tests/domain.item-kinds.test.ts": "7320ea0242aa1f900a6b796f5b3eb4d037dbc10d3d3dab092fb1c991615b75c0",
+    "docs/methodology.md": "1fe48ce61542fb7fae7fa681d02231fd06d9e92aeab00e92b7935afcbbeb4ab4",
+    "docs/evidence/item-kind-inventory.json": "3e9aa20cece7bbd62a92256227bc3b3ee5120a60aa56723eb2ce4db85faa0d5d"
+  },
+  "limitations": [
+    "No SQL/full suite, core/parser/schema edit, build or DB mutation performed in this policy round.",
+    "Peer PDF/import validation is independently passed; global type-inventory classification remains incomplete for four concurrent non-BA266 kinds.",
+    "This diagnostic does not replace final immutable release verification."
+  ]
+}

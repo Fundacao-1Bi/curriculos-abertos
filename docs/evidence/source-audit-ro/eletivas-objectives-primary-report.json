@@ -1,0 +1,2337 @@
+{
+  "actual_projects": 43,
+  "adapter_path": "data/manifests/uncoded/ro-eletivas-objectives-primary.json",
+  "adapter_sha256": "30f45aa4bc9ed3d3ad7f925cf1d5aa65d0be73b905bc2a4a56e846558f766bf2",
+  "all_primary_fields": 126,
+  "binding_ready": true,
+  "command": "var/venv-pipeline/bin/python docs/evidence/source-audit-ro/build_eletivas_objectives.py",
+  "engine": {
+    "pymupdf": "1.26.7",
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "full_objective_fields": 41,
+  "kinds": {
+    "competencia_especifica": 1,
+    "competencia_geral": 1,
+    "grupo_curricular": 44,
+    "objetivo_aprendizagem": 157,
+    "objetivo_formativo": 75,
+    "secao_normativa": 137
+  },
+  "later_primary_census_correction": {
+    "corrected_scope": "43physical general-competency fields:42accented+MAT10unaccented COMPETENCIA GERAL p70",
+    "legacy415and809records_preserved_exactly": true,
+    "literal_heading": "COMPETENCIA GERAL",
+    "native_page": 70,
+    "new_field_has_two_complete_statements": true,
+    "new_field_key": "projeto-MAT10-p70-campo-127",
+    "previous_absence_claim_retracted": true,
+    "previous_scope": "Only42accented COMPETÊNCIA GERAL headings captured in v1/v2",
+    "ready": false,
+    "reconciled": false,
+    "source_unchanged": true
+  },
+  "objective_units": [
+    {
+      "bbox": [
+        105.77327728271484,
+        863.2313232421875,
+        951.7282104492188,
+        987.715576171875
+      ],
+      "field_key": "projeto-LGG1-p24-campo-1",
+      "field_sha256": "3a4e0e010f37875fb2ec934226670379edf2279352b678ca458ea323b7d8c24a",
+      "page": 24,
+      "project": "LGG1",
+      "units": [
+        {
+          "end": 26,
+          "key": "projeto-LGG1-p24-campo-1-unidade-1",
+          "kind": "competencia_especifica",
+          "start": 0,
+          "text_sha256": "c16a58d014604c010069e2b2eae3e80641913144151b1475cf9f7dd5973a492d"
+        },
+        {
+          "end": 265,
+          "key": "projeto-LGG1-p24-campo-1-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 26,
+          "text_sha256": "d1fe1e4e55a4cb91149cf75ce8ca6ee3bcd76d6d61b4dc3b3db34c3cc2e0d5ec"
+        },
+        {
+          "end": 558,
+          "key": "projeto-LGG1-p24-campo-1-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 265,
+          "text_sha256": "73a75d958714c16eea9e273153a2df37ba96cc0598173f997995921ee7455860"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        114.51311492919922,
+        831.21533203125,
+        520.1461181640625,
+        1348.6058349609375
+      ],
+      "field_key": "projeto-LGG2-p27-campo-4",
+      "field_sha256": "aca52d67de480c535d00eb79a4b9640ec00a07d6a3e505b729de563380b25bb1",
+      "page": 27,
+      "project": "LGG2",
+      "units": [
+        {
+          "end": 96,
+          "key": "projeto-LGG2-p27-campo-4-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "2957f5afb9f8886f1d0265fb6749990fe5f7c78bce75d6cdda4bb71f946ea7cb"
+        },
+        {
+          "end": 196,
+          "key": "projeto-LGG2-p27-campo-4-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 96,
+          "text_sha256": "871cfe394dac59e6306383e0c223f9af15005b02a0268e81cfc4704941f675d8"
+        },
+        {
+          "end": 276,
+          "key": "projeto-LGG2-p27-campo-4-unidade-3",
+          "kind": "objetivo_formativo",
+          "start": 196,
+          "text_sha256": "2dcd7c5f739a69fd875e2dce03d838e51cd7f9343d3d96f44c95d296e0f8e4c0"
+        },
+        {
+          "end": 362,
+          "key": "projeto-LGG2-p27-campo-4-unidade-4",
+          "kind": "objetivo_formativo",
+          "start": 276,
+          "text_sha256": "f57bbf1cfa1c0023fdc948ee656d8eb935f0abe6d38ca9170428969bdae0d893"
+        },
+        {
+          "end": 449,
+          "key": "projeto-LGG2-p27-campo-4-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 362,
+          "text_sha256": "19257c7a089922ba8d1e396859b5f266af5f901b8a2fac8c37bc82914920cac2"
+        },
+        {
+          "end": 533,
+          "key": "projeto-LGG2-p27-campo-4-unidade-6",
+          "kind": "objetivo_aprendizagem",
+          "start": 449,
+          "text_sha256": "88cb4c35f1367a17c9dfaabbaaca7999e159fd321868a654a32d6c3364743edd"
+        },
+        {
+          "end": 611,
+          "key": "projeto-LGG2-p27-campo-4-unidade-7",
+          "kind": "objetivo_aprendizagem",
+          "start": 533,
+          "text_sha256": "aa3648b17af7a5fa090d6b3928a50d546dd1dc3d4e6186b3d468efa7fdebae11"
+        },
+        {
+          "end": 688,
+          "key": "projeto-LGG2-p27-campo-4-unidade-8",
+          "kind": "objetivo_aprendizagem",
+          "start": 611,
+          "text_sha256": "c62adebcafea2747b62616001788a49956fb2955eae78a1408c8a744c69ceb15"
+        },
+        {
+          "end": 807,
+          "key": "projeto-LGG2-p27-campo-4-unidade-9",
+          "kind": "objetivo_aprendizagem",
+          "start": 688,
+          "text_sha256": "a2e64a8a4c269a4c205195ef8fdc2ee55d95b3a391e145e97e005a0c4534ff93"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        110.5879135131836,
+        612.995361328125,
+        555.0296630859375,
+        777.653076171875
+      ],
+      "field_key": "projeto-LGG3-p29-campo-7",
+      "field_sha256": "f1c1856139b5b91ca5916057b80de6a5d56d59e679fd40458a26b123a3bece94",
+      "page": 29,
+      "project": "LGG3",
+      "units": [
+        {
+          "end": 116,
+          "key": "projeto-LGG3-p29-campo-7-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "cd81aca08c434244cc917b5944732a04eb2ff07bf0fd184ec7e560ac38fab8fa"
+        },
+        {
+          "end": 233,
+          "key": "projeto-LGG3-p29-campo-7-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 116,
+          "text_sha256": "92ed6ffdd124b6c325469dfa00586b3e11b75b5c092e9ab21be5cd4fed799994"
+        },
+        {
+          "end": 336,
+          "key": "projeto-LGG3-p29-campo-7-unidade-3",
+          "kind": "objetivo_formativo",
+          "start": 233,
+          "text_sha256": "bfef193514d48be4a138bb6e6ab02c6052b4a5f12f5143ff49aebefce5250bec"
+        },
+        {
+          "end": 422,
+          "key": "projeto-LGG3-p29-campo-7-unidade-4",
+          "kind": "objetivo_formativo",
+          "start": 336,
+          "text_sha256": "466cb9656bbfe3de9d4943a2982d40413c9aede77a891787aace7169e6d51db7"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75312042236328,
+        805.12255859375,
+        555.078857421875,
+        1038.029052734375
+      ],
+      "field_key": "projeto-LGG4-p31-campo-10",
+      "field_sha256": "c74e2e8e63bef8081d61a905d6ef60959e4f56be0d232551a03090268e40e884",
+      "page": 31,
+      "project": "LGG4",
+      "units": [
+        {
+          "end": 125,
+          "key": "projeto-LGG4-p31-campo-10-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "715b7c23be1d47a960bf4b6646cd432c172a574e75e47314304dbe4b4afbf50c"
+        },
+        {
+          "end": 284,
+          "key": "projeto-LGG4-p31-campo-10-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 125,
+          "text_sha256": "a669d37349e43864013444f66569ff68d1d99fb083f814deea1e0341b3de56e5"
+        },
+        {
+          "end": 351,
+          "key": "projeto-LGG4-p31-campo-10-unidade-3",
+          "kind": "objetivo_formativo",
+          "start": 284,
+          "text_sha256": "45127a682c577beab20864e1bfb0651308f29008fd9ec83d8fec471e8591e2e6"
+        },
+        {
+          "end": 436,
+          "key": "projeto-LGG4-p31-campo-10-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 351,
+          "text_sha256": "7d07c960170f69c2f062915636824363954943b598e79f4ba58a87d10289d00f"
+        },
+        {
+          "end": 536,
+          "key": "projeto-LGG4-p31-campo-10-unidade-5",
+          "kind": "objetivo_formativo",
+          "start": 436,
+          "text_sha256": "294e93acb2840bf939b019c30030e5ce8aac94f8262b933f30b76406bfc70ece"
+        },
+        {
+          "end": 592,
+          "key": "projeto-LGG4-p31-campo-10-unidade-6",
+          "kind": "objetivo_formativo",
+          "start": 536,
+          "text_sha256": "2a8d70fcef9a8ca358d39728be210910862caa4085905a50529fb919839ba5cf"
+        },
+        {
+          "end": 669,
+          "key": "projeto-LGG4-p31-campo-10-unidade-7",
+          "kind": "objetivo_aprendizagem",
+          "start": 592,
+          "text_sha256": "fea64dc5fff7365af20cab2ac3fc971afb96f8665963624a806a226df46a4c00"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        106.68672180175781,
+        821.7317504882812,
+        537.6082153320312,
+        1120.2554931640625
+      ],
+      "field_key": "projeto-LGG5-p34-campo-13",
+      "field_sha256": "7ae3144f8168496f41ac4d96e5514f965612b087dc46932a52db08819fff3ee4",
+      "page": 34,
+      "project": "LGG5",
+      "units": [
+        {
+          "end": 195,
+          "key": "projeto-LGG5-p34-campo-13-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "08cd6728a0a303d78a98f4d85db4d2878fa14441ed1adbb9e7bde69e73852928"
+        },
+        {
+          "end": 373,
+          "key": "projeto-LGG5-p34-campo-13-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 195,
+          "text_sha256": "028108dc144b139b4ffb3c7755002857ea0cf434702ab16b122fe39ead281b98"
+        },
+        {
+          "end": 489,
+          "key": "projeto-LGG5-p34-campo-13-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 373,
+          "text_sha256": "2928277a158e323462f8a9bcc67004dac11e8b062f1b38c0da3b99c3a294a678"
+        },
+        {
+          "end": 615,
+          "key": "projeto-LGG5-p34-campo-13-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 489,
+          "text_sha256": "4d3c192f7de37367532ea843ccaae27152ed924d709d2362fd43103fb8c0cee2"
+        },
+        {
+          "end": 750,
+          "key": "projeto-LGG5-p34-campo-13-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 615,
+          "text_sha256": "5bad69970b4a6c036084516f8c4492e3cf233c243d02fbd534a55049e18e032b"
+        },
+        {
+          "end": 869,
+          "key": "projeto-LGG5-p34-campo-13-unidade-6",
+          "kind": "objetivo_aprendizagem",
+          "start": 750,
+          "text_sha256": "5b61be5614e2cdc958626154bdd3fec2b1e41cee68dbe1fdb5fc99db6bf8fd98"
+        },
+        {
+          "end": 995,
+          "key": "projeto-LGG5-p34-campo-13-unidade-7",
+          "kind": "objetivo_aprendizagem",
+          "start": 869,
+          "text_sha256": "cef0a842a9d2f2062f6490ce54a2572215f45bcc27d744c95dc0e35eb6a5e3a3"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75,
+        815.8025512695312,
+        555.6795043945312,
+        1575.2169189453125
+      ],
+      "field_key": "projeto-LGG6-p35-campo-16",
+      "field_sha256": "06e04c7b1569a0985628ad64bdc2519e8a0338b2daef9cb20076d1315b0cec2b",
+      "page": 35,
+      "project": "LGG6",
+      "units": [
+        {
+          "end": 114,
+          "key": "projeto-LGG6-p35-campo-16-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "4199cc6634f8b7577c50a10d76217ceb92bf99182207002e04c62511549655e7"
+        },
+        {
+          "end": 193,
+          "key": "projeto-LGG6-p35-campo-16-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 114,
+          "text_sha256": "2e36dd99a3b559e3ce418ba5825aae172145a1980c5b6226bbe67971e1a864d6"
+        },
+        {
+          "end": 297,
+          "key": "projeto-LGG6-p35-campo-16-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 193,
+          "text_sha256": "cd2df21825861b99283c8b1f060b2818dd0f9e7ebf2dcc6f670002fabd1ba261"
+        },
+        {
+          "end": 398,
+          "key": "projeto-LGG6-p35-campo-16-unidade-4",
+          "kind": "objetivo_formativo",
+          "start": 297,
+          "text_sha256": "b2549de0533b5a1937408f2fcbebdfa1b4ced37e98cb91aba0ff047f10c0d463"
+        },
+        {
+          "end": 513,
+          "key": "projeto-LGG6-p35-campo-16-unidade-5",
+          "kind": "objetivo_formativo",
+          "start": 398,
+          "text_sha256": "510a6efbdb11ead1621f933e2d59ffde02e53aaa41b1d421c6d01cf93c2a5c07"
+        },
+        {
+          "end": 618,
+          "key": "projeto-LGG6-p35-campo-16-unidade-6",
+          "kind": "objetivo_formativo",
+          "start": 513,
+          "text_sha256": "cc1927865f769e9a30f962670b8af6beafd20fbafe966ed2b65fbfffcb855207"
+        },
+        {
+          "end": 737,
+          "key": "projeto-LGG6-p35-campo-16-unidade-7",
+          "kind": "objetivo_aprendizagem",
+          "start": 618,
+          "text_sha256": "ddbd4c47488ef831211f0e5092209b3beb7e56b77c33629f795bf3f0c532f5de"
+        },
+        {
+          "end": 870,
+          "key": "projeto-LGG6-p35-campo-16-unidade-8",
+          "kind": "objetivo_aprendizagem",
+          "start": 737,
+          "text_sha256": "e67ee99855aa24bbc9708f91cd7a53916b4be83207949ee7e349e218b95e145c"
+        },
+        {
+          "end": 990,
+          "key": "projeto-LGG6-p35-campo-16-unidade-9",
+          "kind": "objetivo_aprendizagem",
+          "start": 870,
+          "text_sha256": "5ae08568706df51346de7a817e02d21d44ae56d9f2d6d9d18e353e8717f1b751"
+        },
+        {
+          "end": 1170,
+          "key": "projeto-LGG6-p35-campo-16-unidade-10",
+          "kind": "objetivo_formativo",
+          "start": 990,
+          "text_sha256": "8e4bd8f3aa62cd856e863182ff1589715beefdc8254ba3cba791b50f2fa71202"
+        },
+        {
+          "end": 1274,
+          "key": "projeto-LGG6-p35-campo-16-unidade-11",
+          "kind": "objetivo_formativo",
+          "start": 1170,
+          "text_sha256": "de5a656dfe4994d01d43f7a3f29c4b83186419396cfc4201e1079c09adefd3a7"
+        },
+        {
+          "end": 1421,
+          "key": "projeto-LGG6-p35-campo-16-unidade-12",
+          "kind": "objetivo_formativo",
+          "start": 1274,
+          "text_sha256": "b48eb4e7f9eef8a8321bc264909bfdfc7337e0ddb5e9abe9fcf201e63da017c0"
+        },
+        {
+          "end": 1547,
+          "key": "projeto-LGG6-p35-campo-16-unidade-13",
+          "kind": "objetivo_formativo",
+          "start": 1421,
+          "text_sha256": "a5e5d41020488754a1f0cfb15d313e2cf17023f9e70156f7254f6d073b0ec6a2"
+        },
+        {
+          "end": 1654,
+          "key": "projeto-LGG6-p35-campo-16-unidade-14",
+          "kind": "objetivo_formativo",
+          "start": 1547,
+          "text_sha256": "dcd2604f806a9aa351f09b76375b4a6c8e1ae8333632e2553f8d713f5c0af75c"
+        },
+        {
+          "end": 1800,
+          "key": "projeto-LGG6-p35-campo-16-unidade-15",
+          "kind": "objetivo_formativo",
+          "start": 1654,
+          "text_sha256": "0a0dd3534bce451883e1e2ee6eb015718f6569fceada7b25dfe6276bde2c1209"
+        },
+        {
+          "end": 1882,
+          "key": "projeto-LGG6-p35-campo-16-unidade-16",
+          "kind": "objetivo_aprendizagem",
+          "start": 1800,
+          "text_sha256": "c8ab9fa218196b4609e3e8d6efebb27e6bbb1ac7dd73cab71d116e5c1bb7e600"
+        },
+        {
+          "end": 2017,
+          "key": "projeto-LGG6-p35-campo-16-unidade-17",
+          "kind": "objetivo_aprendizagem",
+          "start": 1882,
+          "text_sha256": "20ba015027c47205ca612ba21f2b4f45a09d9e1c5db96a610b5778c1de4eb934"
+        },
+        {
+          "end": 2109,
+          "key": "projeto-LGG6-p35-campo-16-unidade-18",
+          "kind": "objetivo_formativo",
+          "start": 2017,
+          "text_sha256": "0a93d070c852f21afb7b0249a72c985cb05adf18c2974e23ac960db0fc94cd11"
+        },
+        {
+          "end": 2228,
+          "key": "projeto-LGG6-p35-campo-16-unidade-19",
+          "kind": "objetivo_formativo",
+          "start": 2109,
+          "text_sha256": "a886e72c2fb9335231e1e03bab310e00a4d7b6aa5ce3f8ef69ab87790640e290"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.7579116821289,
+        867.8129272460938,
+        951.742919921875,
+        1186.969482421875
+      ],
+      "field_key": "projeto-LGG7-p36-campo-19",
+      "field_sha256": "cd596af1ff669e48714ac119a1418e489b7b432b44a1e03d054b8234d09767fd",
+      "page": 36,
+      "project": "LGG7",
+      "units": [
+        {
+          "end": 164,
+          "key": "projeto-LGG7-p36-campo-19-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "61f21d3e3f30ec53c0d05971638db32402be4e41cf8285a48062f42476ebe9ba"
+        },
+        {
+          "end": 259,
+          "key": "projeto-LGG7-p36-campo-19-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 164,
+          "text_sha256": "7d8a9d8fef9796794cd4897710cb6db55ccc8cc48f2d7dcdd9def638c98b57bd"
+        },
+        {
+          "end": 346,
+          "key": "projeto-LGG7-p36-campo-19-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 259,
+          "text_sha256": "a4ab86b62cc53c3f11a86e451405be9c02e4fe33eefbcd58d04a30fa9fc2bb84"
+        },
+        {
+          "end": 586,
+          "key": "projeto-LGG7-p36-campo-19-unidade-4",
+          "kind": "objetivo_formativo",
+          "start": 346,
+          "text_sha256": "1cc14dd8a24c8c15c43f68985a82d1e10d5bf9dc60290b5dc5e966d0310be714"
+        },
+        {
+          "end": 649,
+          "key": "projeto-LGG7-p36-campo-19-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 586,
+          "text_sha256": "17ec44738e7fce0e7779023f642ac9ec202f0b7aa59630ddfaf83caf17c3ed90"
+        },
+        {
+          "end": 755,
+          "key": "projeto-LGG7-p36-campo-19-unidade-6",
+          "kind": "objetivo_aprendizagem",
+          "start": 649,
+          "text_sha256": "9b7c481cd23d53621a288087a9fc627b4da80e061823cb375333884dec233bfb"
+        },
+        {
+          "end": 992,
+          "key": "projeto-LGG7-p36-campo-19-unidade-7",
+          "kind": "objetivo_formativo",
+          "start": 755,
+          "text_sha256": "f84f13df8344d44d056cf2b34f913587e9cd41a24cd3e8d66d2b58ebfbceb2bf"
+        },
+        {
+          "end": 1204,
+          "key": "projeto-LGG7-p36-campo-19-unidade-8",
+          "kind": "objetivo_formativo",
+          "start": 992,
+          "text_sha256": "fa44def7d059e3c2043cf43e66314224a32ec1300ce0132c5b29abb2d452b735"
+        },
+        {
+          "end": 1419,
+          "key": "projeto-LGG7-p36-campo-19-unidade-9",
+          "kind": "objetivo_aprendizagem",
+          "start": 1204,
+          "text_sha256": "391e5bcb73e2f551558a98fa35c9bdc1f195e6ec6b264e2067f15de2805e5907"
+        },
+        {
+          "end": 1786,
+          "key": "projeto-LGG7-p36-campo-19-unidade-10",
+          "kind": "objetivo_aprendizagem",
+          "start": 1419,
+          "text_sha256": "108ead202c53cfbb521113fdafa687139a97a7e7c34c1a2c22fec4a10f0b2c2d"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.29280090332031,
+        770.002197265625,
+        951.7352905273438,
+        996.7677001953125
+      ],
+      "field_key": "projeto-LGG8-p40-campo-22",
+      "field_sha256": "41b409afaef85629c13d2236a57c2db95ffcef2ff32f0d385c5df2b011af9fe7",
+      "page": 40,
+      "project": "LGG8",
+      "units": [
+        {
+          "end": 237,
+          "key": "projeto-LGG8-p40-campo-22-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "ba3f1cfb6540f4685c57c0682c39ffea1d66180c30fc3aab199eae255ee2454d"
+        },
+        {
+          "end": 357,
+          "key": "projeto-LGG8-p40-campo-22-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 237,
+          "text_sha256": "6d377f7ef083c0d905172349aaee15dbc294ae6e8f2c99b0e1d9d896e1f42ed6"
+        },
+        {
+          "end": 569,
+          "key": "projeto-LGG8-p40-campo-22-unidade-3",
+          "kind": "objetivo_formativo",
+          "start": 357,
+          "text_sha256": "abb5d3d74b1de345817c4a1cde7bfae7b61a00a0019fe0d22113ff93c3937236"
+        },
+        {
+          "end": 656,
+          "key": "projeto-LGG8-p40-campo-22-unidade-4",
+          "kind": "objetivo_formativo",
+          "start": 569,
+          "text_sha256": "f3571041ff9678e5ee459405acb37591e872cd8262fe2b5f7eec0fc1c0a27acb"
+        },
+        {
+          "end": 746,
+          "key": "projeto-LGG8-p40-campo-22-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 656,
+          "text_sha256": "e0488631c5cead8692015ee7592575eb117bad814196006d367426d58bd2789b"
+        },
+        {
+          "end": 859,
+          "key": "projeto-LGG8-p40-campo-22-unidade-6",
+          "kind": "objetivo_aprendizagem",
+          "start": 746,
+          "text_sha256": "7bee45f4a4ce92584142055cbc11812eddbfd5999bacb3920ea609e2dd28d6ff"
+        },
+        {
+          "end": 975,
+          "key": "projeto-LGG8-p40-campo-22-unidade-7",
+          "kind": "objetivo_formativo",
+          "start": 859,
+          "text_sha256": "ca8d6580f7562261f1a3c5e02bd39e73a51792e3b460d78d06f5597aa391dc4e"
+        },
+        {
+          "end": 1044,
+          "key": "projeto-LGG8-p40-campo-22-unidade-8",
+          "kind": "objetivo_aprendizagem",
+          "start": 975,
+          "text_sha256": "6c822c7820dce1ee315e03940b333d9f1265f69305e07e1ca93c072f10b2c944"
+        },
+        {
+          "end": 1076,
+          "key": "projeto-LGG8-p40-campo-22-unidade-9",
+          "kind": "objetivo_aprendizagem",
+          "start": 1044,
+          "text_sha256": "26518b0740e95accf9a70480052ea0dd82d8b86b9e1442e213cfc58ef91e4c9a"
+        },
+        {
+          "end": 1331,
+          "key": "projeto-LGG8-p40-campo-22-unidade-10",
+          "kind": "objetivo_formativo",
+          "start": 1076,
+          "text_sha256": "3cfccc488ac48a45680b902a5857fb49b3f0b175e344a187a3884f90c11b8306"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        104.92896270751953,
+        763.0169677734375,
+        510.4442138671875,
+        1254.6734619140625
+      ],
+      "field_key": "projeto-LGG9-p44-campo-25",
+      "field_sha256": "5153ba4040e6b5a43b57857f3401b2593cf5dd06114743c76f63615c9fec1e16",
+      "page": 44,
+      "project": "LGG9",
+      "units": [
+        {
+          "end": 105,
+          "key": "projeto-LGG9-p44-campo-25-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "e7c648e98c6ecfba2ceef77ae202c139ca568ed62d160b47ac8d5a401c5e8b12"
+        },
+        {
+          "end": 205,
+          "key": "projeto-LGG9-p44-campo-25-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 105,
+          "text_sha256": "62afed04ef5c550858ee12c3e5212db4b698d36198a7c934745d8946522bf8d7"
+        },
+        {
+          "end": 278,
+          "key": "projeto-LGG9-p44-campo-25-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 205,
+          "text_sha256": "d82315ab2d6f7dc6bcc5fd4126776df8031e98fb7a10541acd9f2f7c33d8187d"
+        },
+        {
+          "end": 457,
+          "key": "projeto-LGG9-p44-campo-25-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 278,
+          "text_sha256": "3f4c40d1c8ec4946a2e238404c55da083fa452c588fc7204b20389b2a1f55a89"
+        },
+        {
+          "end": 589,
+          "key": "projeto-LGG9-p44-campo-25-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 457,
+          "text_sha256": "bad7bb9d7324267c7e94cfdc3e1a0f1807036fd2d26f597700dc8b80b30fc807"
+        },
+        {
+          "end": 714,
+          "key": "projeto-LGG9-p44-campo-25-unidade-6",
+          "kind": "objetivo_aprendizagem",
+          "start": 589,
+          "text_sha256": "7d65cacaaed3151de64cefcc01fc1a69e7415302eccf74863f802d5cd04b3fea"
+        },
+        {
+          "end": 810,
+          "key": "projeto-LGG9-p44-campo-25-unidade-7",
+          "kind": "objetivo_aprendizagem",
+          "start": 714,
+          "text_sha256": "7af960c9c6281b0eedf208ba3f1a9a8d7597dd81e035ef2310985ec1a9828845"
+        },
+        {
+          "end": 932,
+          "key": "projeto-LGG9-p44-campo-25-unidade-8",
+          "kind": "objetivo_aprendizagem",
+          "start": 810,
+          "text_sha256": "769aae656180f76470906384a70337b53a59c0ed155b21d654df39823a3e1a7f"
+        },
+        {
+          "end": 1002,
+          "key": "projeto-LGG9-p44-campo-25-unidade-9",
+          "kind": "objetivo_aprendizagem",
+          "start": 932,
+          "text_sha256": "4d877a3f1e589da2dde3bbf8723415e5ddde6647603db51536792e7aa28f6ffd"
+        },
+        {
+          "end": 1226,
+          "key": "projeto-LGG9-p44-campo-25-unidade-10",
+          "kind": "secao_normativa",
+          "start": 1002,
+          "text_sha256": "feb600d0fca1ca4200ee06219247921dc4ad1da58b8627adb16fda022155cd78"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75743865966797,
+        1055.6248779296875,
+        522.00439453125,
+        1167.7813720703125
+      ],
+      "field_key": "projeto-LGG10-p47-campo-28",
+      "field_sha256": "c989d017aea4fc0b75225e609694173f40bc20f9d793c5ca1d15b4197b4709e2",
+      "page": 47,
+      "project": "LGG10",
+      "units": [
+        {
+          "end": 336,
+          "key": "projeto-LGG10-p47-campo-28-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "c989d017aea4fc0b75225e609694173f40bc20f9d793c5ca1d15b4197b4709e2"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.4327163696289,
+        930.4722900390625,
+        529.3462524414062,
+        1117.97998046875
+      ],
+      "field_key": "projeto-MAT1-p54-campo-33",
+      "field_sha256": "94508d8e64cfb1afdf079cad25785c80c2c8b273d40f9fc6517d6ababbc9b65f",
+      "page": 54,
+      "project": "MAT1",
+      "units": [
+        {
+          "end": 67,
+          "key": "projeto-MAT1-p54-campo-33-unidade-1",
+          "kind": "secao_normativa",
+          "start": 0,
+          "text_sha256": "943f0b69ab31877223e147e3a7944ec236c9229770e0913ed5c039bd4e71a67b"
+        },
+        {
+          "end": 130,
+          "key": "projeto-MAT1-p54-campo-33-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 67,
+          "text_sha256": "86317572fb72df996b7812151bec15bf099175a839bc42007757985ac20f0830"
+        },
+        {
+          "end": 197,
+          "key": "projeto-MAT1-p54-campo-33-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 130,
+          "text_sha256": "7ca2af3933d6d3c02fff4d391d3cfccd630fcfac4c482ab2569b3f58da263ff7"
+        },
+        {
+          "end": 299,
+          "key": "projeto-MAT1-p54-campo-33-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 197,
+          "text_sha256": "c256540f03299d6e1bb256edb7d7e1fb7ec3d2fae521096ac62431911cd253db"
+        },
+        {
+          "end": 381,
+          "key": "projeto-MAT1-p54-campo-33-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 299,
+          "text_sha256": "d7eba155d80d5c7cb7b34b68b9ca8fc9840644402c0840566a53c8eb6b5dd866"
+        },
+        {
+          "end": 469,
+          "key": "projeto-MAT1-p54-campo-33-unidade-6",
+          "kind": "objetivo_aprendizagem",
+          "start": 381,
+          "text_sha256": "caecefdaee5b705419eb7225baab3be2ba405196fa15e59733696225792853ee"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        577.9440307617188,
+        485.4365539550781,
+        951.7373046875,
+        625.6708374023438
+      ],
+      "field_key": "projeto-MAT2-p56-campo-34",
+      "field_sha256": "3eb91ed8d5813cbd5e9ab0096c3dc330d5096d422d17f350400982a7f5881e37",
+      "page": 56,
+      "project": "MAT2",
+      "units": [
+        {
+          "end": 417,
+          "key": "projeto-MAT2-p56-campo-34-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "3eb91ed8d5813cbd5e9ab0096c3dc330d5096d422d17f350400982a7f5881e37"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        104.5483169555664,
+        819.009765625,
+        522.748291015625,
+        1102.44482421875
+      ],
+      "field_key": "projeto-MAT3-p57-campo-39",
+      "field_sha256": "f861b33dc1543271d0510470c529695033ded0c3a359ea7344860be0dbcf10dc",
+      "page": 57,
+      "project": "MAT3",
+      "units": [
+        {
+          "end": 111,
+          "key": "projeto-MAT3-p57-campo-39-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "3228b679d1b6b0883b7e6dc8ced09dd4010b1a90d08ed17bb80235c47dd28329"
+        },
+        {
+          "end": 219,
+          "key": "projeto-MAT3-p57-campo-39-unidade-2",
+          "kind": "objetivo_formativo",
+          "start": 111,
+          "text_sha256": "c4ec41bcb6ddafcb7e9151353bcde0daeecd21735e36dc64098d2ecc7f99b54e"
+        },
+        {
+          "end": 321,
+          "key": "projeto-MAT3-p57-campo-39-unidade-3",
+          "kind": "objetivo_formativo",
+          "start": 219,
+          "text_sha256": "e2a3ed7de77f53e5679f7485fe61d5a6e6425a8ca86840fd7c6c63805a0536be"
+        },
+        {
+          "end": 458,
+          "key": "projeto-MAT3-p57-campo-39-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 321,
+          "text_sha256": "be78f414707b5d1ee545abc93eccadc04c40b103d51f64ec07f8622bf30c74fd"
+        },
+        {
+          "end": 680,
+          "key": "projeto-MAT3-p57-campo-39-unidade-5",
+          "kind": "objetivo_formativo",
+          "start": 458,
+          "text_sha256": "56ef4afc49f2cf3348fff5f85830540581bc66ce28aaa9afcf4075ad28a08adb"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75456237792969,
+        728.0861206054688,
+        540.1245727539062,
+        1059.6507568359375
+      ],
+      "field_key": "projeto-MAT4-p59-campo-42",
+      "field_sha256": "c44ee547d73cf6743a8e699ca75e1b8dc360e4578296540107494c0533ce6b18",
+      "page": 59,
+      "project": "MAT4",
+      "units": [
+        {
+          "end": 77,
+          "key": "projeto-MAT4-p59-campo-42-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "5874ae7a3106e3cf4742df6372a86da270ee40457b1d9e6b6ad23dbbed39a847"
+        },
+        {
+          "end": 143,
+          "key": "projeto-MAT4-p59-campo-42-unidade-2",
+          "kind": "objetivo_formativo",
+          "start": 77,
+          "text_sha256": "8a044294491db1e178d5a579f6cb7c49ef26bd8e31c9fba1e62b0bdf86a75954"
+        },
+        {
+          "end": 182,
+          "key": "projeto-MAT4-p59-campo-42-unidade-3",
+          "kind": "secao_normativa",
+          "start": 143,
+          "text_sha256": "6aaba791bfda7621f4bb640ff22e41874663b716d84b4cdd807c9c459b02a893"
+        },
+        {
+          "end": 226,
+          "key": "projeto-MAT4-p59-campo-42-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 182,
+          "text_sha256": "fb6899f382652fca64cafe8eaa73dd789440900ef0ac62d6b841b5256d76e8d9"
+        },
+        {
+          "end": 323,
+          "key": "projeto-MAT4-p59-campo-42-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 226,
+          "text_sha256": "01db005296b3797c529d8bbeac9de56ced200fdba1d6364ae0e87b1d09f85ed6"
+        },
+        {
+          "end": 378,
+          "key": "projeto-MAT4-p59-campo-42-unidade-6",
+          "kind": "secao_normativa",
+          "start": 323,
+          "text_sha256": "5a1c6a381d6a326032f9748c12b1497ce92d2c0d25629db786d105dd7908d33a"
+        },
+        {
+          "end": 455,
+          "key": "projeto-MAT4-p59-campo-42-unidade-7",
+          "kind": "objetivo_aprendizagem",
+          "start": 378,
+          "text_sha256": "db45c5a5755dfd86fe058a10df9fc51050de8988f4c2cc8972839510e1d4768c"
+        },
+        {
+          "end": 528,
+          "key": "projeto-MAT4-p59-campo-42-unidade-8",
+          "kind": "objetivo_aprendizagem",
+          "start": 455,
+          "text_sha256": "e006cd796a26df8ce329afb07af92e65f4e04c9e42d16d637b0b13af67047bf2"
+        },
+        {
+          "end": 577,
+          "key": "projeto-MAT4-p59-campo-42-unidade-9",
+          "kind": "secao_normativa",
+          "start": 528,
+          "text_sha256": "75d1a4a88a1402e364a20fdfb2c0495a9e92679d17d8a2f136ca7bb2864a633c"
+        },
+        {
+          "end": 650,
+          "key": "projeto-MAT4-p59-campo-42-unidade-10",
+          "kind": "objetivo_aprendizagem",
+          "start": 577,
+          "text_sha256": "f9cbecec8bad59ccd62a5eac0635fb2c923b9e977d18c9d9fe27656bb99e9906"
+        },
+        {
+          "end": 723,
+          "key": "projeto-MAT4-p59-campo-42-unidade-11",
+          "kind": "objetivo_aprendizagem",
+          "start": 650,
+          "text_sha256": "a02bc00d90ac2fff4756ea3e1b33dd421fac4faf5829f3dd723345cb2b38b1ff"
+        },
+        {
+          "end": 754,
+          "key": "projeto-MAT4-p59-campo-42-unidade-12",
+          "kind": "secao_normativa",
+          "start": 723,
+          "text_sha256": "4f7950a9b1bef1679f0cda28c67e7318e1d4c657c60af4ed8f7fc0ee2e59aff4"
+        },
+        {
+          "end": 839,
+          "key": "projeto-MAT4-p59-campo-42-unidade-13",
+          "kind": "objetivo_aprendizagem",
+          "start": 754,
+          "text_sha256": "b3afd5a2b63013b017706701e9904b9a64304c673a8b902e5ec86e59406e3867"
+        },
+        {
+          "end": 911,
+          "key": "projeto-MAT4-p59-campo-42-unidade-14",
+          "kind": "objetivo_aprendizagem",
+          "start": 839,
+          "text_sha256": "4cd32c31dd6f10f2503145f877aa68fea18de4115904121ca5c25df5c429a5b0"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.43511199951172,
+        887.4365234375,
+        521.328125,
+        1080.437255859375
+      ],
+      "field_key": "projeto-MAT5-p61-campo-45",
+      "field_sha256": "c1944a5912856114bac988eb9a0eb5a6b6f7312c5fe26c83e5ead2a27f4378e0",
+      "page": 61,
+      "project": "MAT5",
+      "units": [
+        {
+          "end": 96,
+          "key": "projeto-MAT5-p61-campo-45-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "27e4bb9f1ac3ab0157c2c1e86111b87c58f329d5d274a274ac70e5b7ca4f8d22"
+        },
+        {
+          "end": 198,
+          "key": "projeto-MAT5-p61-campo-45-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 96,
+          "text_sha256": "16c81fa75390759d40e029cefa6103312d9bad9d051ff5f17df6571fb51152e1"
+        },
+        {
+          "end": 276,
+          "key": "projeto-MAT5-p61-campo-45-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 198,
+          "text_sha256": "5557a13f34d09e85631d126c3a13cfbfbddfbe370311cd8b410c4f47123e726d"
+        },
+        {
+          "end": 357,
+          "key": "projeto-MAT5-p61-campo-45-unidade-4",
+          "kind": "objetivo_formativo",
+          "start": 276,
+          "text_sha256": "e00169003316a6c278373144b26c88f4bf6cad598aa1294e79c5557cd5c4395d"
+        },
+        {
+          "end": 449,
+          "key": "projeto-MAT5-p61-campo-45-unidade-5",
+          "kind": "objetivo_formativo",
+          "start": 357,
+          "text_sha256": "02cde3da51b1365d3803065c93e9df6ad73f8a9f0c76aae61cdb8084846cd530"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        104.54783630371094,
+        719.3143310546875,
+        523.0538330078125,
+        925.5367431640625
+      ],
+      "field_key": "projeto-MAT6-p63-campo-48",
+      "field_sha256": "3260b69007c64ee54f4ec12e382fd5ff09a7a969e89206402568572180fbfc38",
+      "page": 63,
+      "project": "MAT6",
+      "units": [
+        {
+          "end": 116,
+          "key": "projeto-MAT6-p63-campo-48-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "7f9e072606ca2ddd2a062cf612e45d37e7d91144f20d74325ed70be079cd06d3"
+        },
+        {
+          "end": 223,
+          "key": "projeto-MAT6-p63-campo-48-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 116,
+          "text_sha256": "74e760ccab99fd0136ac28e8b8ebe87a99d4535c3e2d5ca4dfe42bafb8e7b8f1"
+        },
+        {
+          "end": 330,
+          "key": "projeto-MAT6-p63-campo-48-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 223,
+          "text_sha256": "338571a1f9b28294380da40aa02893a7673d851ee3a6c332533151a281c1863e"
+        },
+        {
+          "end": 512,
+          "key": "projeto-MAT6-p63-campo-48-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 330,
+          "text_sha256": "e66c18c83ece085d7178d0fef808f523bb2fb3535895866dc72c70928873a72a"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.77327728271484,
+        1418.6724853515625,
+        951.7282104492188,
+        1542.4083251953125
+      ],
+      "field_key": "projeto-MAT7-p64-campo-51",
+      "field_sha256": "22a64c602d41ece9209180a6b237fa90032cfe77f68b1db20d3c173d3bf12204",
+      "page": 64,
+      "project": "MAT7",
+      "units": [
+        {
+          "end": 80,
+          "key": "projeto-MAT7-p64-campo-51-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "e88949d6cd8abe13e0072258557775221fd06cbafa6613831edfe14dff757f82"
+        },
+        {
+          "end": 175,
+          "key": "projeto-MAT7-p64-campo-51-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 80,
+          "text_sha256": "ba950903e1f9986aa97bc2d3417ff1f32600eeef725395109a8329bad9720086"
+        },
+        {
+          "end": 242,
+          "key": "projeto-MAT7-p64-campo-51-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 175,
+          "text_sha256": "4dc0b4b1dd978fbf3f89598abec3e012a83bcfc78b9c882af7bf53b882c8f63e"
+        },
+        {
+          "end": 307,
+          "key": "projeto-MAT7-p64-campo-51-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 242,
+          "text_sha256": "463bc9efa8ae5658438c10ecdbe2965846ab5ff22c6a0cd7f0d5391212d2e80e"
+        },
+        {
+          "end": 387,
+          "key": "projeto-MAT7-p64-campo-51-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 307,
+          "text_sha256": "7a6f17c79deb4f64f7d26f8d8171c46a0e8012d3d68ce84a9824e83f2077997b"
+        },
+        {
+          "end": 474,
+          "key": "projeto-MAT7-p64-campo-51-unidade-6",
+          "kind": "objetivo_aprendizagem",
+          "start": 387,
+          "text_sha256": "a5cc52128e4ec5c0a1ddd422a335e2e73b3498a1c26111f69650d09ca0764aec"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.76559448242188,
+        805.5230102539062,
+        952.0506591796875,
+        995.2589111328125
+      ],
+      "field_key": "projeto-MAT10-p70-campo-57",
+      "field_sha256": "47d6147cc4b0c71aad86f9c60017c2a3f8091b571d40e232c267fe00d9ed9504",
+      "page": 70,
+      "project": "MAT10",
+      "units": [
+        {
+          "end": 839,
+          "key": "projeto-MAT10-p70-campo-57-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "131688a86c72582a472444efb7e91447618fa894c2a43036928d39203ff26054"
+        },
+        {
+          "end": 1199,
+          "key": "projeto-MAT10-p70-campo-57-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 839,
+          "text_sha256": "7fc006b4e186b90b5128e8622b69b23957a1bfba3ccb3c89f133633b57d29545"
+        },
+        {
+          "end": 1251,
+          "key": "projeto-MAT10-p70-campo-57-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 1199,
+          "text_sha256": "f1d2d8533bdaa56816e0b58f0d919f3fc0e0c92e7b79c5ec539ffb84cb68518c"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75959777832031,
+        727.3937377929688,
+        531.4708251953125,
+        850.3780517578125
+      ],
+      "field_key": "projeto-CNT1-p74-campo-58",
+      "field_sha256": "f9098594420ecca2472062bae1a937e90a15e571e027d45724265093665fdef7",
+      "page": 74,
+      "project": "CNT1",
+      "units": [
+        {
+          "end": 95,
+          "key": "projeto-CNT1-p74-campo-58-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "6c674f7a5abe7cc8cf21e785e89646b992a3aea00bdb8d19823ea5ea16a9127c"
+        },
+        {
+          "end": 226,
+          "key": "projeto-CNT1-p74-campo-58-unidade-2",
+          "kind": "objetivo_formativo",
+          "start": 95,
+          "text_sha256": "78dd3cc56c0a70bf66279624e78c50da1b38d55678ed671f9ccebbaef5a99135"
+        },
+        {
+          "end": 338,
+          "key": "projeto-CNT1-p74-campo-58-unidade-3",
+          "kind": "objetivo_formativo",
+          "start": 226,
+          "text_sha256": "f6c39f498f543a541bd3b5952a91c2b1d89772d536cefeab718275a7db8ff69b"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75983428955078,
+        893.23974609375,
+        521.4511108398438,
+        982.38525390625
+      ],
+      "field_key": "projeto-CNT2-p76-campo-61",
+      "field_sha256": "761eb32fb03e3425455658a8160cf493acb9e1dc8702f2107fab8e864b0cfc15",
+      "page": 76,
+      "project": "CNT2",
+      "units": [
+        {
+          "end": 241,
+          "key": "projeto-CNT2-p76-campo-61-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "761eb32fb03e3425455658a8160cf493acb9e1dc8702f2107fab8e864b0cfc15"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        106.93751525878906,
+        979.0457153320312,
+        521.4647827148438,
+        1233.27880859375
+      ],
+      "field_key": "projeto-CNT3-p78-campo-64",
+      "field_sha256": "8fef7f94eb02df24a85d4e60b802f2ee9d50025ea24243feb76ce7435300f848",
+      "page": 78,
+      "project": "CNT3",
+      "units": [
+        {
+          "end": 143,
+          "key": "projeto-CNT3-p78-campo-64-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "ed50822de528e7de58fa6a3f7addde18591ce6331b840c7f023a1d1617ed123a"
+        },
+        {
+          "end": 259,
+          "key": "projeto-CNT3-p78-campo-64-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 143,
+          "text_sha256": "0a3211c74252418432fb027b0b801bda3cd7d42a53c233aa11c8962cd2445d94"
+        },
+        {
+          "end": 369,
+          "key": "projeto-CNT3-p78-campo-64-unidade-3",
+          "kind": "objetivo_formativo",
+          "start": 259,
+          "text_sha256": "c6b2119cb06f651b1f2fd19af9de119513c7f630690d9abef0b29f4854e69045"
+        },
+        {
+          "end": 491,
+          "key": "projeto-CNT3-p78-campo-64-unidade-4",
+          "kind": "objetivo_formativo",
+          "start": 369,
+          "text_sha256": "94d05f49204f95d4c294139025a038991d874406776806d0be95a2f9dc7a05f6"
+        },
+        {
+          "end": 603,
+          "key": "projeto-CNT3-p78-campo-64-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 491,
+          "text_sha256": "1200c5fa9e25017943546ef49a277156f10dc6c1b61c705ac073c2b4b9809576"
+        },
+        {
+          "end": 769,
+          "key": "projeto-CNT3-p78-campo-64-unidade-6",
+          "kind": "objetivo_aprendizagem",
+          "start": 603,
+          "text_sha256": "7959cd8a7911bc97acf3a9026076fbb69b2f9e136bac2798a9245a9bbe289572"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.76367950439453,
+        726.6953735351562,
+        521.2127075195312,
+        817.3780517578125
+      ],
+      "field_key": "projeto-CNT4-p80-campo-67",
+      "field_sha256": "f4ec14b3bb7ea31db3a5816975c0b663cada4a57939b96a18a42d647ccb943c3",
+      "page": 80,
+      "project": "CNT4",
+      "units": [
+        {
+          "end": 65,
+          "key": "projeto-CNT4-p80-campo-67-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "2d9c24c64c014581a451ffff44dcd86a5514b222bd02f0078399911a76d927e6"
+        },
+        {
+          "end": 140,
+          "key": "projeto-CNT4-p80-campo-67-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 65,
+          "text_sha256": "91efd603776fac4240cabb28c0f6c5b362cb4e27fb134369df2871e055466e3b"
+        },
+        {
+          "end": 215,
+          "key": "projeto-CNT4-p80-campo-67-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 140,
+          "text_sha256": "ccdae3514f0e20ccf8ed0822adca0070c049d472f50113b206d49890359e3f7a"
+        },
+        {
+          "end": 283,
+          "key": "projeto-CNT4-p80-campo-67-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 215,
+          "text_sha256": "a1c637195c6191968931bf59fa4d5320a8f007fc4b3b222d7be4f59372684467"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75360107421875,
+        739.913330078125,
+        528.7468872070312,
+        1209.396484375
+      ],
+      "field_key": "projeto-CNT5-p82-campo-70",
+      "field_sha256": "99076cec554eff386d6e58930b2e45b2dd158871dcaee57a8b7adc37edf0e380",
+      "page": 82,
+      "project": "CNT5",
+      "units": [
+        {
+          "end": 189,
+          "key": "projeto-CNT5-p82-campo-70-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "1d0fbab76ed50ec272f73acf8e8c5d5326afaa1d651b46da17c5f4646e8b627e"
+        },
+        {
+          "end": 370,
+          "key": "projeto-CNT5-p82-campo-70-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 189,
+          "text_sha256": "9cd3fb498defc936188fa45dea382f03d0a5d97f7c60e495146092542eff8677"
+        },
+        {
+          "end": 576,
+          "key": "projeto-CNT5-p82-campo-70-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 370,
+          "text_sha256": "20168b863c0cd8e57dc124a61df3265c6920d37fce4aa7d0066b3a951414b675"
+        },
+        {
+          "end": 809,
+          "key": "projeto-CNT5-p82-campo-70-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 576,
+          "text_sha256": "41cba6cbe78db43d93ae1f47536e1b64bef928b8b294b5f32eab03a1248bfae8"
+        },
+        {
+          "end": 1043,
+          "key": "projeto-CNT5-p82-campo-70-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 809,
+          "text_sha256": "22db502a6f8d6d891f6e760bd95cb739f63c70aed81451ba791c1cdc7962dec6"
+        },
+        {
+          "end": 1270,
+          "key": "projeto-CNT5-p82-campo-70-unidade-6",
+          "kind": "objetivo_aprendizagem",
+          "start": 1043,
+          "text_sha256": "26023b8508c01ed21921738b8b979e9ab4573262ae5955625a21a06cd55e279a"
+        },
+        {
+          "end": 1436,
+          "key": "projeto-CNT5-p82-campo-70-unidade-7",
+          "kind": "objetivo_aprendizagem",
+          "start": 1270,
+          "text_sha256": "f585fa96bc7893bd7a98c21c52834b767b7fc02fb0df19a676dc178416986e5f"
+        },
+        {
+          "end": 1655,
+          "key": "projeto-CNT5-p82-campo-70-unidade-8",
+          "kind": "objetivo_aprendizagem",
+          "start": 1436,
+          "text_sha256": "1a8dd01d8b441876e1b119d16ae9f734ee9f2da3888770a223eaae0f72df808a"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75240325927734,
+        1161.8189697265625,
+        521.4586791992188,
+        1365.05322265625
+      ],
+      "field_key": "projeto-CNT6-p84-campo-73",
+      "field_sha256": "5d46f1335071ebe4b30c0eba3c45e5dd5d38df3e3261de36fd5657808657de59",
+      "page": 84,
+      "project": "CNT6",
+      "units": [
+        {
+          "end": 78,
+          "key": "projeto-CNT6-p84-campo-73-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "6b1d6b34c6adfb03d77c4ce0c3871b29d383512fae275552ac06b14bf142e9d1"
+        },
+        {
+          "end": 140,
+          "key": "projeto-CNT6-p84-campo-73-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 78,
+          "text_sha256": "7afa5417ae3378afbad68ef701fe042b532b7c9d3cbc021c066576fc777f16be"
+        },
+        {
+          "end": 220,
+          "key": "projeto-CNT6-p84-campo-73-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 140,
+          "text_sha256": "dd73556ca7f31ed906f22fc2d616966372389aa1c24dbb1c57e0cf5aca9b65ea"
+        },
+        {
+          "end": 281,
+          "key": "projeto-CNT6-p84-campo-73-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 220,
+          "text_sha256": "303ab073740e2f89028e208777ad8003a10d682970fdf6a07af58e2627085ea0"
+        },
+        {
+          "end": 329,
+          "key": "projeto-CNT6-p84-campo-73-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 281,
+          "text_sha256": "4895862001aeef17721a0d197a37557f28ad32ce106e00c51b5fda5cf36f04cd"
+        },
+        {
+          "end": 394,
+          "key": "projeto-CNT6-p84-campo-73-unidade-6",
+          "kind": "objetivo_formativo",
+          "start": 329,
+          "text_sha256": "f74ee90da3397837981b0b87210d4351dccc7478371b0ccf01261a670cc43033"
+        },
+        {
+          "end": 472,
+          "key": "projeto-CNT6-p84-campo-73-unidade-7",
+          "kind": "objetivo_formativo",
+          "start": 394,
+          "text_sha256": "90e9dd1565207b86b2550e3aa08ab353b3ec4a201d8920c235f9a441a5466136"
+        },
+        {
+          "end": 534,
+          "key": "projeto-CNT6-p84-campo-73-unidade-8",
+          "kind": "objetivo_aprendizagem",
+          "start": 472,
+          "text_sha256": "ac74021a100047649c327e7ea9be4197bdd088380abb7542c363a6a752eb56b3"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75191497802734,
+        934.999755859375,
+        525.5374145507812,
+        1273.2340087890625
+      ],
+      "field_key": "projeto-CNT7-p86-campo-76",
+      "field_sha256": "a0e103dfc6e88c215c9b789acbd454b6ae096b6476b608686aa3fb1837344580",
+      "page": 86,
+      "project": "CNT7",
+      "units": [
+        {
+          "end": 243,
+          "key": "projeto-CNT7-p86-campo-76-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "d07cf1888cf2fdafdad5b034025c0f943fa63b5991b9eff76052f6fee54ec877"
+        },
+        {
+          "end": 388,
+          "key": "projeto-CNT7-p86-campo-76-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 243,
+          "text_sha256": "884df016a5eb41d251e89540580ecc571253b19c5d9298d951f54e4f01151f97"
+        },
+        {
+          "end": 568,
+          "key": "projeto-CNT7-p86-campo-76-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 388,
+          "text_sha256": "81f72dea15d3135211319448f828615b42977a83779470c491e59b1d65b5741e"
+        },
+        {
+          "end": 636,
+          "key": "projeto-CNT7-p86-campo-76-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 568,
+          "text_sha256": "d4408e99ce48d5657bfd42402866273fb3d8d77aa729c3637404df12289a6cd3"
+        },
+        {
+          "end": 762,
+          "key": "projeto-CNT7-p86-campo-76-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 636,
+          "text_sha256": "91aa3ef4933f26afe73f4b6776156dee6991f858e19542065dcd3b4f3193b350"
+        },
+        {
+          "end": 1044,
+          "key": "projeto-CNT7-p86-campo-76-unidade-6",
+          "kind": "objetivo_aprendizagem",
+          "start": 762,
+          "text_sha256": "a5c12f48c8b915e7586a0517ce7bbb1a490622f671d3cf84c8e65b1d0be7a52b"
+        },
+        {
+          "end": 1142,
+          "key": "projeto-CNT7-p86-campo-76-unidade-7",
+          "kind": "objetivo_aprendizagem",
+          "start": 1044,
+          "text_sha256": "e28111298162c899f4411a742a8674279d7b4b3efc5e8d50f5aa3b3d93943ab9"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75479125976562,
+        1289.9140625,
+        520.413330078125,
+        1448.675537109375
+      ],
+      "field_key": "projeto-CNT8-p88-campo-79",
+      "field_sha256": "d617194663c254e76a50d501b36037c42cc16468611e1b95ac9a6678716c2192",
+      "page": 88,
+      "project": "CNT8",
+      "units": [
+        {
+          "end": 503,
+          "key": "projeto-CNT8-p88-campo-79-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "d617194663c254e76a50d501b36037c42cc16468611e1b95ac9a6678716c2192"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        536.0279541015625,
+        1111.8173828125,
+        951.7387084960938,
+        1485.96923828125
+      ],
+      "field_key": "projeto-CNT9-p90-campo-82",
+      "field_sha256": "923f6b847e09eff33875ecaf10e5586196d2ae274e486e66d74dc2d7555d3d19",
+      "page": 90,
+      "project": "CNT9",
+      "units": [
+        {
+          "end": 128,
+          "key": "projeto-CNT9-p90-campo-82-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "76541530522c9dc1d9292d3b220eeec7829b838bc222c3b1231b32c90e0e8c19"
+        },
+        {
+          "end": 205,
+          "key": "projeto-CNT9-p90-campo-82-unidade-2",
+          "kind": "objetivo_formativo",
+          "start": 128,
+          "text_sha256": "e8d01c64a4c36d3e86df1f75bc495b1f7097c526be41a9df52993077544db767"
+        },
+        {
+          "end": 263,
+          "key": "projeto-CNT9-p90-campo-82-unidade-3",
+          "kind": "objetivo_formativo",
+          "start": 205,
+          "text_sha256": "bffb60c708f5932856192c296030e97ef751b086aa5793a988b304bc0e4902f6"
+        },
+        {
+          "end": 401,
+          "key": "projeto-CNT9-p90-campo-82-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 263,
+          "text_sha256": "d1ea5a06ff8fb23dfb3ef1973f9b6cabc883d8c48d4c9b314939138b41bcc829"
+        },
+        {
+          "end": 478,
+          "key": "projeto-CNT9-p90-campo-82-unidade-5",
+          "kind": "objetivo_formativo",
+          "start": 401,
+          "text_sha256": "8aa8a2bbf583b7d657066dc467a8ab1dfd13625b3722a2e183ea1cbb857cd522"
+        },
+        {
+          "end": 560,
+          "key": "projeto-CNT9-p90-campo-82-unidade-6",
+          "kind": "objetivo_aprendizagem",
+          "start": 478,
+          "text_sha256": "c6ecb88c111635efeba081ab1b725adffbdf9d7c6b8475ce2af9cfecfe009ff0"
+        },
+        {
+          "end": 605,
+          "key": "projeto-CNT9-p90-campo-82-unidade-7",
+          "kind": "objetivo_aprendizagem",
+          "start": 560,
+          "text_sha256": "d42f061b2718964b9642d41312460675cc127dd0327647479978ea608bb5ce30"
+        },
+        {
+          "end": 723,
+          "key": "projeto-CNT9-p90-campo-82-unidade-8",
+          "kind": "objetivo_formativo",
+          "start": 605,
+          "text_sha256": "0a530a5ed1ea363109ebdfd89ab86f435bbab2c145bc7ffba1730821c4d66e55"
+        },
+        {
+          "end": 910,
+          "key": "projeto-CNT9-p90-campo-82-unidade-9",
+          "kind": "objetivo_formativo",
+          "start": 723,
+          "text_sha256": "0bc9037cc07cfad09b6d28e0dc7c539dec0419f98cd37ff552997e5c6a0ed7ca"
+        },
+        {
+          "end": 1102,
+          "key": "projeto-CNT9-p90-campo-82-unidade-10",
+          "kind": "objetivo_formativo",
+          "start": 910,
+          "text_sha256": "f0a1f65c8beae5f183a9ca6020a83c0d472191753b5bd050f25d72747c472549"
+        },
+        {
+          "end": 1156,
+          "key": "projeto-CNT9-p90-campo-82-unidade-11",
+          "kind": "objetivo_formativo",
+          "start": 1102,
+          "text_sha256": "e8c2f9202bb98e91e6714c012fd3e98a68646616edb30d1b0215e01a53c98077"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75,
+        875.6477661132812,
+        521.4607543945312,
+        1545.602294921875
+      ],
+      "field_key": "projeto-CNT10-p92-campo-85",
+      "field_sha256": "6077201a53db8b7a5bedeeef5023f4fb99802112a49709d001b30271aba2cda9",
+      "page": 92,
+      "project": "CNT10",
+      "units": [
+        {
+          "end": 168,
+          "key": "projeto-CNT10-p92-campo-85-unidade-1",
+          "kind": "secao_normativa",
+          "start": 0,
+          "text_sha256": "dcc1c1ebb8f85ad90e20a0c22ed63012ee7fb069b09afb5c8577137032c858d6"
+        },
+        {
+          "end": 189,
+          "key": "projeto-CNT10-p92-campo-85-unidade-2",
+          "kind": "secao_normativa",
+          "start": 168,
+          "text_sha256": "0dd2c526654e92b712452af3e51ddcd517c84a9fc27e2ef2562e95fcaf2dda5c"
+        },
+        {
+          "end": 263,
+          "key": "projeto-CNT10-p92-campo-85-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 189,
+          "text_sha256": "65260e675510e62e205e224d8fe6f560244722dcf0cf3ffc95b0031284dcc76e"
+        },
+        {
+          "end": 350,
+          "key": "projeto-CNT10-p92-campo-85-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 263,
+          "text_sha256": "d2c32f40deb161403eaf39eac3e2683d47c4418a388c850a022c414cc33752fe"
+        },
+        {
+          "end": 411,
+          "key": "projeto-CNT10-p92-campo-85-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 350,
+          "text_sha256": "796f8f2f04c2e25a61da487d82541f9712b642f30974c7c17763e5e71cd18015"
+        },
+        {
+          "end": 495,
+          "key": "projeto-CNT10-p92-campo-85-unidade-6",
+          "kind": "objetivo_aprendizagem",
+          "start": 411,
+          "text_sha256": "86ecf3b0b1935fa5415b5a6498f53dfc2be9f3fe61b3f2414cc117149916832b"
+        },
+        {
+          "end": 574,
+          "key": "projeto-CNT10-p92-campo-85-unidade-7",
+          "kind": "objetivo_formativo",
+          "start": 495,
+          "text_sha256": "b94ac4bbf2be0f915c516bca5f41582763937bb8608c2e16a535e07479dd45d7"
+        },
+        {
+          "end": 722,
+          "key": "projeto-CNT10-p92-campo-85-unidade-8",
+          "kind": "objetivo_aprendizagem",
+          "start": 574,
+          "text_sha256": "0267abdb7a148192adda3a91fe0839d04025919b41689837b638e2ecbbf58d86"
+        },
+        {
+          "end": 807,
+          "key": "projeto-CNT10-p92-campo-85-unidade-9",
+          "kind": "objetivo_aprendizagem",
+          "start": 722,
+          "text_sha256": "ff71958828b43a9894edfe8b2dd02a835a66492ab1d44dab73d94166e73c22d4"
+        },
+        {
+          "end": 980,
+          "key": "projeto-CNT10-p92-campo-85-unidade-10",
+          "kind": "objetivo_aprendizagem",
+          "start": 807,
+          "text_sha256": "f60d96e25614aa466c318d56746370a90d22c6d0cb4f45c06ecc72c7042b7fa5"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        104.40791320800781,
+        710.1437377929688,
+        520.1058959960938,
+        833.8780517578125
+      ],
+      "field_key": "projeto-CNT11-p95-campo-88",
+      "field_sha256": "02ba95ba7d64b18841bd6f0cd1bb583968c9d5acf58270517e6c3dbba28fd908",
+      "page": 95,
+      "project": "CNT11",
+      "units": [
+        {
+          "end": 85,
+          "key": "projeto-CNT11-p95-campo-88-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "91ad1869a4b56e9cb783831d3832ef6ccbfb8407f48e388fee27cfda3df1f361"
+        },
+        {
+          "end": 167,
+          "key": "projeto-CNT11-p95-campo-88-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 85,
+          "text_sha256": "282a9dfde5311540698c758daf8ba75d6a5e36485427efb80f87760686dcd6c4"
+        },
+        {
+          "end": 249,
+          "key": "projeto-CNT11-p95-campo-88-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 167,
+          "text_sha256": "b826c13b463c49ea9aa98520a5a00df087424d0b165dcfee6532f0a1cb909c5c"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.76295471191406,
+        837.0581665039062,
+        520.7799682617188,
+        929.29248046875
+      ],
+      "field_key": "projeto-CNT12-p96-campo-91",
+      "field_sha256": "53f848ee744402ccc825496100e98929c636ba874ca46290e06a0a316c50ae82",
+      "page": 96,
+      "project": "CNT12",
+      "units": [
+        {
+          "end": 66,
+          "key": "projeto-CNT12-p96-campo-91-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "4aec7ee0a1bfbf66ddeb0619868e508059c20b677291aa1661235b2453fb96e0"
+        },
+        {
+          "end": 160,
+          "key": "projeto-CNT12-p96-campo-91-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 66,
+          "text_sha256": "5451e182988e9d2efb6c0e1855228141d8469eb1fe62cee2c419dcf0aed6fe8f"
+        },
+        {
+          "end": 226,
+          "key": "projeto-CNT12-p96-campo-91-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 160,
+          "text_sha256": "ecdc23642dfde5d781eda3483c5fc816f878245cf36cc57d7711ea104dd3d8f1"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        110.31336212158203,
+        782.424560546875,
+        525.3408813476562,
+        940.6588134765625
+      ],
+      "field_key": "projeto-CNT13-p97-campo-94",
+      "field_sha256": "ac22af7db9ab62255db0106fcf375ee104fc7ff8817e3c06776e08d74006c44a",
+      "page": 97,
+      "project": "CNT13",
+      "units": [
+        {
+          "end": 113,
+          "key": "projeto-CNT13-p97-campo-94-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "7f32aa0bf8f7c699b8a78cca7818934617a273ccf9639b42efa855cced560bf8"
+        },
+        {
+          "end": 195,
+          "key": "projeto-CNT13-p97-campo-94-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 113,
+          "text_sha256": "3bad24c26f3118d4f7f08de80bd0d8806c27e5e66356ea55d84a91ebed7074ad"
+        },
+        {
+          "end": 289,
+          "key": "projeto-CNT13-p97-campo-94-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 195,
+          "text_sha256": "298888d51bf80e5c0392d732e8059adab6bf3676aad2b0c0ccb05d5f697f8a61"
+        },
+        {
+          "end": 353,
+          "key": "projeto-CNT13-p97-campo-94-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 289,
+          "text_sha256": "2fd3c11dc5b891fa60c815da82b570e8a973e79474de83926c63639b8de14be9"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75647735595703,
+        783.8501586914062,
+        528.7437133789062,
+        1020.08447265625
+      ],
+      "field_key": "projeto-CHT1-p99-campo-97",
+      "field_sha256": "2c3b41d5e034129adacf97704f13771ffd47b9bba5984d18285d5a125245f237",
+      "page": 99,
+      "project": "CHT1",
+      "units": [
+        {
+          "end": 75,
+          "key": "projeto-CHT1-p99-campo-97-unidade-1",
+          "kind": "secao_normativa",
+          "start": 0,
+          "text_sha256": "592dc8c19aa76434583a16da559088badab903c28c59574cbaf9ae6ad10e1e7d"
+        },
+        {
+          "end": 634,
+          "key": "projeto-CHT1-p99-campo-97-unidade-2",
+          "kind": "competencia_geral",
+          "start": 75,
+          "text_sha256": "d2b4c16f65655cfe172731f9ce53c5e2633d930c17d876d7ccc43ab10ad5ca31"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.56327056884766,
+        1098.570556640625,
+        521.2740478515625,
+        1552.85400390625
+      ],
+      "field_key": "projeto-CHT2-p101-campo-100",
+      "field_sha256": "5e2ce2a1c2fc673458df3a6a692bdcd5076a9f2fcd4a9e7172b3f888818b83e0",
+      "page": 101,
+      "project": "CHT2",
+      "units": [
+        {
+          "end": 141,
+          "key": "projeto-CHT2-p101-campo-100-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "0b8ed8586e71fb87b4edc42fe9efaf4b3e0a8c149d616486e7fe36c0286128d8"
+        },
+        {
+          "end": 309,
+          "key": "projeto-CHT2-p101-campo-100-unidade-2",
+          "kind": "objetivo_formativo",
+          "start": 141,
+          "text_sha256": "541a7767f82eaabde2c8c929400c5db8a0d04d9074f1e33d2900f0f57204bf5b"
+        },
+        {
+          "end": 440,
+          "key": "projeto-CHT2-p101-campo-100-unidade-3",
+          "kind": "objetivo_formativo",
+          "start": 309,
+          "text_sha256": "117705d6208595da3a5ddafa237bcc5901b665b91ac8f376a75345209b792f93"
+        },
+        {
+          "end": 597,
+          "key": "projeto-CHT2-p101-campo-100-unidade-4",
+          "kind": "objetivo_formativo",
+          "start": 440,
+          "text_sha256": "0e346103ab00fab1ac7a265a79156b0200729c2057846c53338920cee7297eef"
+        },
+        {
+          "end": 746,
+          "key": "projeto-CHT2-p101-campo-100-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 597,
+          "text_sha256": "04620df198f212b61ff2affd0f60e5da0f25f28b47f95b4331feb2dc5926a79d"
+        },
+        {
+          "end": 899,
+          "key": "projeto-CHT2-p101-campo-100-unidade-6",
+          "kind": "objetivo_formativo",
+          "start": 746,
+          "text_sha256": "ba27529390d9374633ecaf86b859688f5b7aca7df57808a738b1999e764662c5"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75191497802734,
+        709.3937377929688,
+        521.4589233398438,
+        932.8780517578125
+      ],
+      "field_key": "projeto-CHT3-p103-campo-103",
+      "field_sha256": "e4901f7d5562af0fc8efeaf832a1849597c8f0b236c2389f6a214f924e40cd68",
+      "page": 103,
+      "project": "CHT3",
+      "units": [
+        {
+          "end": 169,
+          "key": "projeto-CHT3-p103-campo-103-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "00e7a293cad7b2ab162ccae9598702e8dd6537b6cfcbefa5824b2352280a091b"
+        },
+        {
+          "end": 319,
+          "key": "projeto-CHT3-p103-campo-103-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 169,
+          "text_sha256": "5c8a9d3e5a84015e73961b57b2f405e6927d1c9bb22bf094f1496f095e03fa6c"
+        },
+        {
+          "end": 449,
+          "key": "projeto-CHT3-p103-campo-103-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 319,
+          "text_sha256": "0c9dc34dbb9d752455f99fafaca36389a0600643d62e122ef41c26c5cb794825"
+        },
+        {
+          "end": 588,
+          "key": "projeto-CHT3-p103-campo-103-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 449,
+          "text_sha256": "2e98bc694429be8bf0b01cb668f22ba8c93037bfd5a5f104992b9aeace5b618d"
+        },
+        {
+          "end": 696,
+          "key": "projeto-CHT3-p103-campo-103-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 588,
+          "text_sha256": "ee79ddd5ef9fc1a1fe0c9fe3bf2dd3b99eaac8e0bcda4a036d2f0003f7fcd1b9"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75,
+        1200.782958984375,
+        515.0857543945312,
+        1581.7418212890625
+      ],
+      "field_key": "projeto-CHT4-p105-campo-106",
+      "field_sha256": "df26a2feb509b85a2d61da64ae82a98c8b206a0295f9ff6d863496e2a6a2deb9",
+      "page": 105,
+      "project": "CHT4",
+      "units": [
+        {
+          "end": 270,
+          "key": "projeto-CHT4-p105-campo-106-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "e6ef34dcb57b4f79515440fd4135a1e2b41b0f9cfc6cfdacc9f5996f1f6d0df8"
+        },
+        {
+          "end": 382,
+          "key": "projeto-CHT4-p105-campo-106-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 270,
+          "text_sha256": "09f0dc399a41bc95c29f2489ff7df277413232d146a37ed043d2dbbee3630c0f"
+        },
+        {
+          "end": 602,
+          "key": "projeto-CHT4-p105-campo-106-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 382,
+          "text_sha256": "272ff652b1d5fe8ea85827e42838c82a68d84704306270da1f2fd88c44c69ae0"
+        },
+        {
+          "end": 787,
+          "key": "projeto-CHT4-p105-campo-106-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 602,
+          "text_sha256": "778411bcaf920105c0db826526cd7751ee0888598ac66828e9f88152e71404e9"
+        },
+        {
+          "end": 948,
+          "key": "projeto-CHT4-p105-campo-106-unidade-5",
+          "kind": "objetivo_formativo",
+          "start": 787,
+          "text_sha256": "427decadcb9fd9efa42746b530cb5512c747501f8fc9398dcc1252f3ab6dad74"
+        },
+        {
+          "end": 1172,
+          "key": "projeto-CHT4-p105-campo-106-unidade-6",
+          "kind": "objetivo_aprendizagem",
+          "start": 948,
+          "text_sha256": "4b32836dd35e78b1e41a421352d2385397c6928215d6d1d89c0d586066a64482"
+        },
+        {
+          "end": 1300,
+          "key": "projeto-CHT4-p105-campo-106-unidade-7",
+          "kind": "objetivo_formativo",
+          "start": 1172,
+          "text_sha256": "01c50a8e855351e209222128d164309db71925c99fa436966a809b0f96bb546e"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75743865966797,
+        784.9337158203125,
+        528.5789794921875,
+        925.169189453125
+      ],
+      "field_key": "projeto-CHT5-p108-campo-109",
+      "field_sha256": "de9075f12a57bd359c20ca6bf167e0aef82c678549eabd1d00c76cde8207a42b",
+      "page": 108,
+      "project": "CHT5",
+      "units": [
+        {
+          "end": 73,
+          "key": "projeto-CHT5-p108-campo-109-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "9aacd3cc50641376e96bfe10e393a246722c8ece0524af07315cdd539fd39d6d"
+        },
+        {
+          "end": 133,
+          "key": "projeto-CHT5-p108-campo-109-unidade-2",
+          "kind": "objetivo_formativo",
+          "start": 73,
+          "text_sha256": "596874dd197caeb29a027abaaa22641d528613cd5e553b92b93989c9ff2f9d66"
+        },
+        {
+          "end": 197,
+          "key": "projeto-CHT5-p108-campo-109-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 133,
+          "text_sha256": "cfd85f3ec95b10a8fdcf60296e50e649515775a2b646b76543ddfa15693eac90"
+        },
+        {
+          "end": 255,
+          "key": "projeto-CHT5-p108-campo-109-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 197,
+          "text_sha256": "a3e5732f1f02f65494272c0c8eaad9bb5e0ba2de964006f96b201a2d004d84f3"
+        },
+        {
+          "end": 304,
+          "key": "projeto-CHT5-p108-campo-109-unidade-5",
+          "kind": "objetivo_formativo",
+          "start": 255,
+          "text_sha256": "b31215dd7af808f7831f2aa476d94776408267ddf32067d9dd772fa48d581c9a"
+        },
+        {
+          "end": 363,
+          "key": "projeto-CHT5-p108-campo-109-unidade-6",
+          "kind": "objetivo_formativo",
+          "start": 304,
+          "text_sha256": "cc6c2f8aea1ce6cd8c515dba0def09a8c493567445f865800eda288b576e642f"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        104.10479736328125,
+        858.642578125,
+        523.0443115234375,
+        1230.6268310546875
+      ],
+      "field_key": "projeto-CHT6-p110-campo-114",
+      "field_sha256": "3c968d082ba53ce2f15b567d7eb599b972f6ad1f6e46a51e76e4efb24370564b",
+      "page": 110,
+      "project": "CHT6",
+      "units": [
+        {
+          "end": 16,
+          "key": "projeto-CHT6-p110-campo-114-unidade-1",
+          "kind": "secao_normativa",
+          "start": 0,
+          "text_sha256": "b0f95679f3187643ac3842fa6a9676663f6f969e477686ea154630f177ae0bce"
+        },
+        {
+          "end": 317,
+          "key": "projeto-CHT6-p110-campo-114-unidade-2",
+          "kind": "objetivo_formativo",
+          "start": 16,
+          "text_sha256": "dc27f351a467590eed460b420cf6ada04c8da3d5a108894feedb15a3c91ea03c"
+        },
+        {
+          "end": 438,
+          "key": "projeto-CHT6-p110-campo-114-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 317,
+          "text_sha256": "67c05dd1797998da81db55228bec6012384947a3286d8a93dcfc1d702e84bc1d"
+        },
+        {
+          "end": 547,
+          "key": "projeto-CHT6-p110-campo-114-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 438,
+          "text_sha256": "4f31d8cb63971f333b3f7bb6a34a71254e6b843e80ffda0b0a19871e354c94f1"
+        },
+        {
+          "end": 674,
+          "key": "projeto-CHT6-p110-campo-114-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 547,
+          "text_sha256": "abd290c81d2ad394f4227121603208ee75a92fbfab2ff4ec2e50ec2259e5b262"
+        },
+        {
+          "end": 746,
+          "key": "projeto-CHT6-p110-campo-114-unidade-6",
+          "kind": "objetivo_aprendizagem",
+          "start": 674,
+          "text_sha256": "6136693db065025602addb676bb49d6214b73325aa31ec33c79cdb8fd74764d4"
+        },
+        {
+          "end": 863,
+          "key": "projeto-CHT6-p110-campo-114-unidade-7",
+          "kind": "objetivo_aprendizagem",
+          "start": 746,
+          "text_sha256": "3f5dff5ed18fec77d5ee4a8c381b92310761bee47c0e6cb6cd60687ab9f5c35b"
+        },
+        {
+          "end": 957,
+          "key": "projeto-CHT6-p110-campo-114-unidade-8",
+          "kind": "objetivo_aprendizagem",
+          "start": 863,
+          "text_sha256": "1aaea0f543f3208e1bafc317e7378d32e821d2910dbfc48b10eb7b39a99bcfcf"
+        },
+        {
+          "end": 1071,
+          "key": "projeto-CHT6-p110-campo-114-unidade-9",
+          "kind": "objetivo_formativo",
+          "start": 957,
+          "text_sha256": "bb83e919d421121522f088007329fd3e565710ca7bc70219ae5b6d8047591390"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75,
+        813.7301635742188,
+        521.4607543945312,
+        893.8804321289062
+      ],
+      "field_key": "projeto-CHT7-p111-campo-115",
+      "field_sha256": "d2e9512b3cd29d61cedb87a21fa817323f7470ac18b426b4b6b6302e8b881c05",
+      "page": 111,
+      "project": "CHT7",
+      "units": [
+        {
+          "end": 149,
+          "key": "projeto-CHT7-p111-campo-115-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "d2e9512b3cd29d61cedb87a21fa817323f7470ac18b426b4b6b6302e8b881c05"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.4384765625,
+        891.554931640625,
+        521.45751953125,
+        1064.7891845703125
+      ],
+      "field_key": "projeto-CHT8-p112-campo-118",
+      "field_sha256": "cfbbe8014c239d3256cf13db414484ebba22131f7f4b59a12b7ac6f227f34c8a",
+      "page": 112,
+      "project": "CHT8",
+      "units": [
+        {
+          "end": 16,
+          "key": "projeto-CHT8-p112-campo-118-unidade-1",
+          "kind": "secao_normativa",
+          "start": 0,
+          "text_sha256": "b0f95679f3187643ac3842fa6a9676663f6f969e477686ea154630f177ae0bce"
+        },
+        {
+          "end": 167,
+          "key": "projeto-CHT8-p112-campo-118-unidade-2",
+          "kind": "objetivo_formativo",
+          "start": 16,
+          "text_sha256": "3ef6ea4619fc790cefeb48d6b611ac7876e39240283b2eee214fb73bf03c2d8c"
+        },
+        {
+          "end": 285,
+          "key": "projeto-CHT8-p112-campo-118-unidade-3",
+          "kind": "objetivo_formativo",
+          "start": 167,
+          "text_sha256": "5d6345751b10efc55d284431772636f14e9545a9a2f11329b908b4173d025e8d"
+        },
+        {
+          "end": 378,
+          "key": "projeto-CHT8-p112-campo-118-unidade-4",
+          "kind": "objetivo_formativo",
+          "start": 285,
+          "text_sha256": "cdb8110839d606e6f79f90841c2de537b245d7eb1f770db3f749a6f5b520dc14"
+        },
+        {
+          "end": 447,
+          "key": "projeto-CHT8-p112-campo-118-unidade-5",
+          "kind": "objetivo_formativo",
+          "start": 378,
+          "text_sha256": "e1f6e5fc5b870bcbe2a347a506dad919fcc9671414aef6f907d8794b1c77dcb1"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.76223754882812,
+        973.3937377929688,
+        521.448974609375,
+        1048.3780517578125
+      ],
+      "field_key": "projeto-CHT9-p114-campo-121",
+      "field_sha256": "e461d3fe8728cb70388a632a024c5992a33e4314d3d50c72cd71329c7e187b2b",
+      "page": 114,
+      "project": "CHT9",
+      "units": [
+        {
+          "end": 187,
+          "key": "projeto-CHT9-p114-campo-121-unidade-1",
+          "kind": "objetivo_formativo",
+          "start": 0,
+          "text_sha256": "e461d3fe8728cb70388a632a024c5992a33e4314d3d50c72cd71329c7e187b2b"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        104.49815368652344,
+        873.386962890625,
+        528.3388671875,
+        1371.85205078125
+      ],
+      "field_key": "projeto-CHT10-p116-campo-124",
+      "field_sha256": "a4fefd6a863935a4dc97243eb505fcfb9d43174dca2c786824a2b7701841e5b4",
+      "page": 116,
+      "project": "CHT10",
+      "units": [
+        {
+          "end": 148,
+          "key": "projeto-CHT10-p116-campo-124-unidade-1",
+          "kind": "objetivo_aprendizagem",
+          "start": 0,
+          "text_sha256": "a8cacb1e9650a38c99e26da353953f580ca9a453fb535f12a2bfe881b21bacdb"
+        },
+        {
+          "end": 341,
+          "key": "projeto-CHT10-p116-campo-124-unidade-2",
+          "kind": "objetivo_aprendizagem",
+          "start": 148,
+          "text_sha256": "6495fdcaa88e5b7544d99a4cfb9f1fde9fd4d892f312519e5673663c2901e947"
+        },
+        {
+          "end": 544,
+          "key": "projeto-CHT10-p116-campo-124-unidade-3",
+          "kind": "objetivo_aprendizagem",
+          "start": 341,
+          "text_sha256": "1cfb05a8ed77b049c06448a3b708711454d3f602732613a4178b8743d0a1bd48"
+        },
+        {
+          "end": 673,
+          "key": "projeto-CHT10-p116-campo-124-unidade-4",
+          "kind": "objetivo_aprendizagem",
+          "start": 544,
+          "text_sha256": "d01724c96cf8d322baff14fafb1987a208df7e36206785d5f47aa9f342290de8"
+        },
+        {
+          "end": 800,
+          "key": "projeto-CHT10-p116-campo-124-unidade-5",
+          "kind": "objetivo_aprendizagem",
+          "start": 673,
+          "text_sha256": "ece66de0bc7c3c9b15078972bbfe1a89d417efef1dc39ca5c4e6034199d07b91"
+        },
+        {
+          "end": 936,
+          "key": "projeto-CHT10-p116-campo-124-unidade-6",
+          "kind": "objetivo_aprendizagem",
+          "start": 800,
+          "text_sha256": "c8ba6da7b3e9d9ed73057d95f9d4ef74210e23c30c53e412052783b820aea6a2"
+        },
+        {
+          "end": 1070,
+          "key": "projeto-CHT10-p116-campo-124-unidade-7",
+          "kind": "objetivo_aprendizagem",
+          "start": 936,
+          "text_sha256": "b80bcf322c2e8f78f321f9c7e76f7aedda22f1d19ddcb9aa2698abf419a5df7c"
+        },
+        {
+          "end": 1215,
+          "key": "projeto-CHT10-p116-campo-124-unidade-8",
+          "kind": "objetivo_aprendizagem",
+          "start": 1070,
+          "text_sha256": "37610fef06e0671e035c1cf614e4b6468f45a0c887538b03dc0a689f3dfa9cac"
+        },
+        {
+          "end": 1318,
+          "key": "projeto-CHT10-p116-campo-124-unidade-9",
+          "kind": "objetivo_aprendizagem",
+          "start": 1215,
+          "text_sha256": "99bea5f86460088a74c09df1a2bbd0ca7074b33741238007c5b47e6183fe958e"
+        },
+        {
+          "end": 1455,
+          "key": "projeto-CHT10-p116-campo-124-unidade-10",
+          "kind": "objetivo_aprendizagem",
+          "start": 1318,
+          "text_sha256": "b9d5abab3c65f7bcf4c4fb39e8f542495c73877a55dad37954735e15d28ebe69"
+        }
+      ]
+    }
+  ],
+  "ready": false,
+  "real_finalizer_schema_records": 415,
+  "reconciled": false,
+  "records": 415,
+  "remaining_scope": [
+    "Coded skills remain in generic extraction: full statement and cited-reference reconciliation pending.",
+    "Competency fields preserved completely as source context; multiple competency units, source-mislabeled purposes and quotations require full typed reconciliation.",
+    "Knowledge objects, axis fields, methodological context, rubrics and introductory normative structure still require complete typed review.",
+    "Automated objective classification is not human pedagogical review; organizational purposes remain separate from learner goals."
+  ],
+  "source_id": "ro-eletivas-2026",
+  "source_sha256": "709c00a8a8993683a3529f2cfb0d7674f2b79ced733ad45be2e8213f39217ddb"
+}

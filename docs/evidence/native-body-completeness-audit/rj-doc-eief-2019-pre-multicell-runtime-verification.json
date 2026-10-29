@@ -1,0 +1,403 @@
+{
+  "source_id": "rj-doc-eief-2019",
+  "result": "passed",
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:body-runtime-verifier",
+  "source_sha256": "b915967926c621164aba46d5cbdbd74406a658410695199ef6ae3926de138bf6",
+  "cache_path": "data/extracted/b915967926c621164aba46d5cbdbd74406a658410695199ef6ae3926de138bf6-page-cell-v1.5.0.json",
+  "cache_sha256": "89031218928e0b1630fee0fc5dacd87e0ce84969e2a4b0ac8405e382bd661376",
+  "input_pins": {
+    "data/manifests/uncoded/rj-coded-body-rj-doc-eief-2019-v1-items.json": "5a844f803ad75d84785dacfd78b4f785d3c0bcb37c722682511c341d9c1b0314",
+    "docs/evidence/native-body-completeness-audit/rj-doc-eief-2019-proposal.json": "e6b37ef1f9a9b552fd5fbcdf93849bb4dd646925db979ff6e21f98393bc9deff",
+    "docs/evidence/native-body-completeness-audit/rj-doc-eief-2019-body-diff.json": "2481d1a410ca4d7dd3adee2f9732fb9d967531b2510f2b27829177e1620c56b6",
+    "data/manifests/bncc-southeast.json": "e6c57e9cc39886a278c44d0d6d95f49cb9758d9e263fcd18220e86c45f83b6b3",
+    "docs/evidence/native-body-completeness-audit/repair-coded-bodies.py": "047180e4c5b1795fd2870ec65e737803c9046e4608baf24f3cc3a660e98800f8",
+    "docs/evidence/native-body-completeness-audit/audit.py": "67f010fc9f73ef9a359955212f2683ba9bce306d5c5461dbe6b822f1dca9fba4"
+  },
+  "composition_inputs": [
+    {
+      "path": "data/manifests/uncoded/rj-eief-structured-items.json",
+      "sha256": "dbbf047c569cbadee6afcd69cf16d504275942d9894c4acb0fbca041086d9eeb",
+      "record_count": 136
+    },
+    {
+      "path": "data/manifests/uncoded/rj-coded-body-rj-doc-eief-2019-v1-items.json",
+      "sha256": "5a844f803ad75d84785dacfd78b4f785d3c0bcb37c722682511c341d9c1b0314",
+      "record_count": 200
+    }
+  ],
+  "composed_path": "data/manifests/uncoded/rj-coded-body-composed-rj-doc-eief-2019-v1-items.json",
+  "composed_sha256": "648c54ca29877470c0f41577c6f8a0397818643534808b9cd44113e3ffe90ff2",
+  "proposed_authority": {
+    "coded_learning_ranges": [
+      [
+        143,
+        143
+      ],
+      [
+        158,
+        158
+      ],
+      [
+        163,
+        163
+      ],
+      [
+        184,
+        184
+      ],
+      [
+        202,
+        202
+      ],
+      [
+        210,
+        210
+      ],
+      [
+        215,
+        215
+      ],
+      [
+        222,
+        222
+      ],
+      [
+        224,
+        224
+      ],
+      [
+        234,
+        234
+      ],
+      [
+        254,
+        254
+      ],
+      [
+        275,
+        275
+      ],
+      [
+        286,
+        286
+      ],
+      [
+        310,
+        310
+      ],
+      [
+        328,
+        328
+      ],
+      [
+        340,
+        340
+      ],
+      [
+        352,
+        352
+      ],
+      [
+        359,
+        360
+      ],
+      [
+        368,
+        368
+      ],
+      [
+        377,
+        377
+      ],
+      [
+        379,
+        389
+      ],
+      [
+        409,
+        410
+      ],
+      [
+        413,
+        413
+      ],
+      [
+        417,
+        417
+      ],
+      [
+        421,
+        421
+      ],
+      [
+        437,
+        437
+      ],
+      [
+        456,
+        456
+      ],
+      [
+        464,
+        464
+      ],
+      [
+        475,
+        475
+      ]
+    ]
+  },
+  "blocked_pages": [],
+  "counts": {
+    "cache_items": 2028,
+    "baseline_items": 2164,
+    "body_repairs": 200,
+    "composed_adapter_records": 336,
+    "real_loader_records": 336,
+    "real_finalizer_records": 2165,
+    "schema_passed": 2165,
+    "literal_adapter_evidence_passed": 336,
+    "complete_character_receipts": 200,
+    "valid_coded_id_context_preserved": 198,
+    "unaffected_records_preserved": 1965,
+    "explicit_invalid_supersessions": 1,
+    "new_canonical_records": 2
+  },
+  "new_canonical_records": [
+    {
+      "id": "ca:rj-doc-eief-2019:2dc2dad67b0d4a482af2",
+      "code": "EF06LI23",
+      "page": 286,
+      "locator": "native-coded-body:p286:code:EF06LI23"
+    },
+    {
+      "id": "ca:rj-doc-eief-2019:6eb5db5e20d78b7496e9",
+      "code": "EF07CI15",
+      "page": 383,
+      "locator": "table:0/row:17/cell:6"
+    }
+  ],
+  "superseded_invalid_records": [
+    {
+      "old_id": "ca:rj-doc-eief-2019:2a06518986d550be2dcb",
+      "old_code": "EF07CI15Interpretar",
+      "old_text": "fenômenos naturais (como vulcões, terremotos e tsunamis) e justificar a rara ocorrência desses fenômenos no Brasil, com base no modelo das placas tectônicas, identificando os fenômenos naturais que influenciam e ocorra na localidade, cidade e medidas para prevenção de desastre.",
+      "new_code": "EF07CI15",
+      "locator": "table:0/row:17/cell:6",
+      "page": 383,
+      "source_token_literal": "(EF07CI15Interpretar",
+      "reason": "Native source omits the separator after its nine identifier glyphs; generic lexer incorrectly consumed body word Interpretar into the code. Directed technical restoration only; no official curriculum change.",
+      "requires_root_technical_acceptance": true
+    }
+  ],
+  "negative_controls": [
+    {
+      "case": "strict_prefix_with_matching_excerpt_cannot_replace_complete_body",
+      "blocked": true
+    },
+    {
+      "case": "duplicate_record_even_if_every_character_matches",
+      "blocked": true
+    },
+    {
+      "case": "same_length_single_character_change",
+      "blocked": true
+    },
+    {
+      "case": "omit_actual_same_column_cross_page_continuation",
+      "blocked": true
+    },
+    {
+      "case": "absorb_new_explicit_cell_EF08CI01_p383_to_EF08CI02_p384",
+      "blocked": true
+    }
+  ],
+  "binding_requires_root_technical_acceptance": [
+    "ca:rj-doc-eief-2019:2a06518986d550be2dcb"
+  ],
+  "primary_original_rederivation": {
+    "original_native_vector_strict_cell_bodies_reproduced": 200,
+    "actual_cross_page_continuations": [
+      {
+        "code": "EF69LP34",
+        "page": 202,
+        "fragment_pages": [
+          202,
+          203
+        ],
+        "fragment_text_hashes": [
+          "f086ab6b1e4f04401790ce006c38bd222e01ac766d3be4c43fe19c100d9ba7ef",
+          "cea32d26edf52b74147399bc5a7f283d3856b13da69dbbaf45e45f604c5f21fa"
+        ]
+      },
+      {
+        "code": "EF69LP54",
+        "page": 215,
+        "fragment_pages": [
+          215,
+          216
+        ],
+        "fragment_text_hashes": [
+          "2494829a4cb511ab0c4169f9828febdd2d5c8d83b495602645be2b5eb810374f",
+          "09a8d76a9b05d8a4eb2942969bb51955940037c09dc8d9d1903b1d0687f0a14a"
+        ]
+      },
+      {
+        "code": "EF06LI18",
+        "page": 286,
+        "fragment_pages": [
+          286,
+          287
+        ],
+        "fragment_text_hashes": [
+          "8e2f1fc6f857bc797548de75ed53fdaf8bd4edba9ef6a1b8b77913aaeb6c54e6",
+          "e91bb16fd3c7c6f2e062c938b29e4dfcd085d6ea49f144f6eaa10ba548b73291"
+        ]
+      },
+      {
+        "code": "EF07MA13",
+        "page": 340,
+        "fragment_pages": [
+          340,
+          341
+        ],
+        "fragment_text_hashes": [
+          "4fa6d99fae9db8d5d6d24a8440d8a7e04631d62324720d0f729f3dffc562b25f",
+          "15fdc9a7917769a6f1dfcf81df0a2483d78db0d7430764aa7662e710c26f0825"
+        ]
+      },
+      {
+        "code": "EF09MA23",
+        "page": 352,
+        "fragment_pages": [
+          352,
+          353
+        ],
+        "fragment_text_hashes": [
+          "fbb38501370573203b8a6883a613e469069d4125815cb765fa9d8e08be5d32f6",
+          "b6fbeded901ab31260b1fed2dd82a523c70a0d0f1a533478541ae330d48962d7"
+        ]
+      },
+      {
+        "code": "EF06CI06",
+        "page": 377,
+        "fragment_pages": [
+          377,
+          378
+        ],
+        "fragment_text_hashes": [
+          "c99a649a46f85fa3d8a8db86053457d67785eb4ec0aa35882384ea7cdc159e79",
+          "fd685928e5b3f5e9c12a6b6d97ba5521d5f80939f5d3a53f36165afc8a72391e"
+        ]
+      },
+      {
+        "code": "EF07CI09",
+        "page": 381,
+        "fragment_pages": [
+          381,
+          382
+        ],
+        "fragment_text_hashes": [
+          "8f4041faedecf9be17e8414a57e531eca204bf7fdebeb15fd3ba259ba9e1e68b",
+          "00db1f30b98ae71ac52ad86beaabfd89e406bcc9bb97712e31a77fe0448b0ea0"
+        ]
+      },
+      {
+        "code": "EF07CI13",
+        "page": 382,
+        "fragment_pages": [
+          382,
+          383
+        ],
+        "fragment_text_hashes": [
+          "92e350fe81f9d90374b2e00bbadf31121709566c2cbfa73f6463edecd8ae1835",
+          "1bd5101cd1d6c59156a1575d3c366aff9f0d9dc01addb73e2e92b74a74c64285"
+        ]
+      },
+      {
+        "code": "EF08CI01",
+        "page": 383,
+        "fragment_pages": [
+          383,
+          384
+        ],
+        "fragment_text_hashes": [
+          "d36d742f9b9d65ac964bd7b94cd394ea259bd8d09ff22e00eae7e9d5f887fbb4",
+          "78b95a9fa01117176089714a941bdee6158a94d8c723f054f88086c0cfcff7bb"
+        ]
+      },
+      {
+        "code": "EF08CI05",
+        "page": 384,
+        "fragment_pages": [
+          384,
+          385
+        ],
+        "fragment_text_hashes": [
+          "459495c02e7320d2423de2b2690fff0373608cf0a3bd97bdae892f89be988d37",
+          "b37eb3572840e93c0fed26dcdee6fa4301dac506bc1234ab7375e591ab0c2abc"
+        ]
+      },
+      {
+        "code": "EF08CI09",
+        "page": 385,
+        "fragment_pages": [
+          385,
+          386
+        ],
+        "fragment_text_hashes": [
+          "861de89be7ed7cc6f1a37c4990b4e0c256f8162aeae8f0a5a08c45b21a0874e3",
+          "d11edbea41e89f3397b008746177ba51813fd878ea7aae0300e0008c1a29f98c"
+        ]
+      },
+      {
+        "code": "EF09CI04",
+        "page": 387,
+        "fragment_pages": [
+          387,
+          388
+        ],
+        "fragment_text_hashes": [
+          "f40b9b225810bdea09703f91ffc895472372cdb70b38409b610a79eff0b8df40",
+          "b2bb5a050f6641313ea3a9753027cfc7eb9dc6d0b67e42aeb7b043a694c2a592"
+        ]
+      },
+      {
+        "code": "EF09CI16",
+        "page": 389,
+        "fragment_pages": [
+          389,
+          390
+        ],
+        "fragment_text_hashes": [
+          "d178f94f5aa407053fee4740537150ff294f71f6d1608499aca038a010d05b78",
+          "910f4a202a87fa4c2b92de0abddc6fde8011b85a4511d735f734efa6e3c66db8"
+        ]
+      },
+      {
+        "code": "EF08HI02",
+        "page": 464,
+        "fragment_pages": [
+          464,
+          465
+        ],
+        "fragment_text_hashes": [
+          "1967017deb77c1a6316289b2afdeb4e9ddb59a5770d2818d8721f689b8cb1657",
+          "cd4f9cef2154985e80fb233309c73ae6553a4d606a7b8c581d828211b6e2b52a"
+        ]
+      }
+    ],
+    "method": "Re-execute original primary code anchors, vector rulers, strict cells and full character comparison; candidate body evidence does not define source boundaries."
+  },
+  "reference_roles_preserved": 0,
+  "limits": [
+    "Only the proposed coded authority pages are repaired; blocked/unexamined pages remain unverified.",
+    "Full-body hashes originate in independent vector/native-word versus strict-cell character receipts; ordinary substring evidence alone is insufficient.",
+    "No database, corpus ingestion, Source manifest binding, whole-Source reconciliation, UF readiness or human approval was performed."
+  ],
+  "whole_source_reconciled": false,
+  "uf_ready": false,
+  "human_review": false,
+  "verifier_sha256": "87075ddcd9f5b1518bc5bec24265ad1296c19a6061a074e53b3256cd430152b5"
+}

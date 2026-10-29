@@ -1,0 +1,82 @@
+
+> curriculos-abertos@0.1.0 build
+> next build
+
+▲ Next.js 16.4.3 (Turbopack)
+- Environments: .env
+✓ Running next.config.ts took 1773ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 8.9s
+  Running TypeScript ...
+
+  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+  	- allowJs was set to true
+  	- include was updated to add '.next/dev/types/**/*.ts'
+
+  Finished TypeScript in 7.5s ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/4) ...
+  Generating static pages using 9 workers (1/4) 
+  Generating static pages using 9 workers (2/4) 
+  Generating static pages using 9 workers (3/4) 
+✓ Generating static pages using 9 workers (4/4) in 324ms
+Turbopack build encountered 1 warning:
+./src/worker/jobs.ts:23:14
+Warning: Dynamic filesystem access causes tracing of the whole project
+  [90m21 |[0m ...[36mfunction[0m safeExportPath(storageKey:string) {
+  [90m22 |[0m ...[35m^exports\/[a-f0-9-]{36}\.(json|csv)$/[0m.test(storageKey))[36mthrow[0m [36mnew[0m [33mError[0m([32m'Chave de export...[0m
+[33m[1m>[0m [90m23 |[0m ... root=resolve(process.env.[33mEXPORT_STORAGE_DIR[0m || process.env.[33mSTORAGE_DIR[0m || [32m'var'[0m);
+  [90m   |[0m          [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m24 |[0m ... result=resolve(root,storageKey);
+  [90m25 |[0m ...esult.startsWith(root+sep))[36mthrow[0m [36mnew[0m [33mError[0m([32m'Caminho inválido.'[0m);
+  [90m26 |[0m ...[36mn[0m result;
+
+Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+This can slow down deployments or lead to failures when size limits are exceeded.
+To resolve this, you can
+- make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+- only use them in development, or
+- opt out by adding an ignore comment to the highlighted call: path.resolve(/*turbopackIgnore: true*/ ...), or
+- remove them.
+
+Import trace:
+  App Route:
+    ./src/worker/jobs.ts
+    ./src/app/api/v1/[[...path]]/route.ts
+
+
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ○ /_not-found
+├ ƒ /admin
+├ ƒ /analises
+├ ƒ /api/admin/[...path]
+├ ƒ /api/auth/[...all]
+├ ƒ /api/health
+├ ƒ /api/metrics
+├ ƒ /api/ready
+├ ƒ /api/v1/[[...path]]
+├ ƒ /aprendizagens/[id]
+├ ƒ /buscar
+├ ƒ /comparar
+├ ƒ /contribuir
+├ ƒ /curriculos/[id]
+├ ƒ /desenvolvedores
+├ ○ /desenvolvedores/openapi
+├ ƒ /downloads
+├ ƒ /fontes
+├ ƒ /mcp
+├ ƒ /panorama/[id]
+├ ƒ /publicacoes
+└ ƒ /ufs/[uf]
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

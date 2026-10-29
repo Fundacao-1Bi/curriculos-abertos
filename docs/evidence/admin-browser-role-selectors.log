@@ -1,0 +1,83 @@
+{
+  "kind": "admin-browser",
+  "actor_type": "automated",
+  "run_id": "b84b9b08-fb8c-4aa7-a458-28baed2296ad",
+  "base": "http://localhost:3000",
+  "started_at": "2026-10-28T05:46:36.132Z",
+  "checks": [
+    {
+      "name": "temporary_automated_account_created_by_secure_cli",
+      "passed": true
+    },
+    {
+      "name": "only_owned_temporary_account_removed_and_sessions_revoked",
+      "passed": true
+    }
+  ],
+  "trace": "off",
+  "video": "off",
+  "password_transport": "CLI stdin; browser child memory environment; never saved",
+  "result": "failed",
+  "publication": "ca-77fb8076598b567e1ba3",
+  "real_item_id": "ca:ac-cru-em:0090948210886854c3a6",
+  "actor_id": "f69e397a-5f1d-40bd-bf59-150e215fbd23",
+  "browser_results": "docs/evidence/admin-browser/b84b9b08-fb8c-4aa7-a458-28baed2296ad/results.json",
+  "browser_summary": {
+    "kind": "admin-browser",
+    "finished_at": "2026-10-28T05:46:45.769Z",
+    "status": "failed",
+    "trace": "off",
+    "video": "off",
+    "automatic_screenshots": "off",
+    "tests": [
+      {
+        "title": "administração real: login, fontes, registro fixado, curadoria segura, teclado e acessibilidade",
+        "project": "admin-desktop",
+        "status": "failed",
+        "duration_ms": 6942,
+        "errors": [
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 12\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"description\": \"Ensure elements that have scrollable content are accessible by keyboard in Safari\",\u001b[39m\n\u001b[31m+     \"id\": \"scrollable-region-focusable\",\u001b[39m\n\u001b[31m+     \"impact\": \"serious\",\u001b[39m\n\u001b[31m+     \"targets\": Array [\u001b[39m\n\u001b[31m+       Array [\u001b[39m\n\u001b[31m+         \".admin-record\",\u001b[39m\n\u001b[31m+       ],\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m"
+        ],
+        "annotations": [
+          {
+            "type": "publication",
+            "description": "ca-77fb8076598b567e1ba3"
+          },
+          {
+            "type": "actor_type",
+            "description": "automated"
+          },
+          {
+            "type": "scope",
+            "description": "rascunho idêntico + validação técnica, sem preparar/publicar"
+          }
+        ]
+      },
+      {
+        "title": "administração real: login, fontes, registro fixado, curadoria segura, teclado e acessibilidade",
+        "project": "admin-mobile",
+        "status": "failed",
+        "duration_ms": 1024,
+        "errors": [
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 15\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"description\": \"Ensure elements that have scrollable content are accessible by keyboard in Safari\",\u001b[39m\n\u001b[31m+     \"id\": \"scrollable-region-focusable\",\u001b[39m\n\u001b[31m+     \"impact\": \"serious\",\u001b[39m\n\u001b[31m+     \"targets\": Array [\u001b[39m\n\u001b[31m+       Array [\u001b[39m\n\u001b[31m+         \"section:nth-child(7) > .admin-scroll\",\u001b[39m\n\u001b[31m+       ],\u001b[39m\n\u001b[31m+       Array [\u001b[39m\n\u001b[31m+         \"section:nth-child(9) > .admin-scroll\",\u001b[39m\n\u001b[31m+       ],\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m"
+        ],
+        "annotations": [
+          {
+            "type": "publication",
+            "description": "ca-77fb8076598b567e1ba3"
+          },
+          {
+            "type": "actor_type",
+            "description": "automated"
+          },
+          {
+            "type": "scope",
+            "description": "navegação, inspeção, seleção e acessibilidade; sem duplicar snapshot"
+          }
+        ]
+      }
+    ]
+  },
+  "error": "Jornadas reais de navegador falharam; veja evidência sanitizada.\n\n1 !== 0\n",
+  "finished_at": "2026-10-28T05:46:45.789Z"
+}

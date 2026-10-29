@@ -1,0 +1,50 @@
+{
+  "format": "record_replacement_pairs_v1",
+  "source_id": "rj-doc-eief-2019",
+  "source_sha256": "b915967926c621164aba46d5cbdbd74406a658410695199ef6ae3926de138bf6",
+  "cache_sha256": "89031218928e0b1630fee0fc5dacd87e0ce84969e2a4b0ac8405e382bd661376",
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:native-coded-body",
+  "scope": "technical_extraction_correction",
+  "official_curriculum_edition_changed": false,
+  "pairs": [
+    {
+      "old_id": "ca:rj-doc-eief-2019:2a06518986d550be2dcb",
+      "new_id": "ca:rj-doc-eief-2019:6eb5db5e20d78b7496e9",
+      "old_code": "EF07CI15Interpretar",
+      "new_code": "EF07CI15",
+      "page": 383,
+      "locator": "table:0/row:17/cell:6",
+      "reason": "Native source omits the separator after its eight identifier glyphs; generic lexer incorrectly consumed body word Interpretar into the code. Directed technical restoration only; no official curriculum change.",
+      "source_token_literal": "(EF07CI15Interpretar",
+      "identifier_glyph_count": 8,
+      "proof_sha256": "aa81288601705648c5539bd94513ca53f406ede9d90df84b025617cad4220fd1",
+      "proof_selector": {
+        "path": "docs/evidence/native-body-completeness-audit/rj-doc-eief-2019-body-diff.json",
+        "array": "superseded",
+        "old_id": "ca:rj-doc-eief-2019:2a06518986d550be2dcb"
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "path": "docs/evidence/native-body-completeness-audit/rj-doc-eief-2019-body-diff.json",
+      "sha256": "30b5ff4fccee343e89bae7cf4a4dd1db4f262f96ffcdad603804d8bb3702d0b9"
+    },
+    {
+      "path": "docs/evidence/native-body-rj-peer/review-current.json",
+      "sha256": "4ef58b54c08ce2de05a9a7ee7fded7d788b36b581c4820a16dfea6cb7c56b75c"
+    },
+    {
+      "path": "docs/evidence/native-body-completeness-audit/rj-doc-eief-2019-metadata-eight-glyphs.json",
+      "sha256": "bc35f2eef34efc94466a7ac08a1927de1460c77f60bfb5febf44555a307dee37"
+    }
+  ],
+  "technical_acceptance": {
+    "coordinator": "/root",
+    "independent_peer_passed": true,
+    "human_review": false
+  },
+  "integration_instruction": "Emit this replacement pair and pinned proofs in the next extraction changelog/provenance; never rewrite earlier published snapshots.",
+  "previous_publications_immutable": true
+}

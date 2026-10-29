@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-28T17:58:40.344940+00:00",
+  "change": "make up verifies real image JSON/BUILD_ID/UID/source fingerprint before Compose recreation; does not invoke build preflight",
+  "dry_run": {
+    "exit_code": 0,
+    "log": "docs/evidence/up-guard-dry-run.log",
+    "executed_up": false,
+    "executed_build": false
+  },
+  "negative": {
+    "command": [
+      "node",
+      "--env-file=.env",
+      "--import",
+      "tsx",
+      "scripts/ops-image-verify.ts",
+      "--image",
+      "curriculos-abertos:qa-absent-up-guard-20261028"
+    ],
+    "exit_code": 1,
+    "report": "docs/evidence/up-guard-missing-image-negative.json",
+    "failure": "No such image",
+    "docker_actions": [
+      "image inspect of nonexistent task-owned reference"
+    ],
+    "container_created": false
+  },
+  "host_free_bytes": 5549821952,
+  "build_space_guard_invoked": false,
+  "live_services_unchanged": true,
+  "limitations": [
+    "No make up or build executed: runtime tag is intentionally orphaned and corpus is still changing.",
+    "Positive final image verification awaits frozen build."
+  ]
+}

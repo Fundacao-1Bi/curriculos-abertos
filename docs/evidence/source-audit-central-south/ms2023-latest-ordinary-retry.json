@@ -1,0 +1,51 @@
+{
+  "source_id": "ms-if-projeto-vida-2023",
+  "actor_type": "automated",
+  "actor_id": "agent:data_central_south",
+  "method": "Ordinary public official-host requests and standard Range; normal download query, no access-control bypass, no inferred WAF/CAPTCHA cause.",
+  "attempts": [
+    {
+      "requested_url": "https://www.sed.ms.gov.br/wp-content/uploads/2025/10/PROJETO-DE-VIDA-Ementa-Nucleo-Integrador-2023.v.1.0.pdf",
+      "request_method": "ordinary GET with standard public Range bytes0–2047",
+      "at": "2026-10-28T17:31:59.439256+00:00",
+      "status": 200,
+      "final_url": "https://www.sed.ms.gov.br/wp-content/uploads/2025/10/PROJETO-DE-VIDA-Ementa-Nucleo-Integrador-2023.v.1.0.pdf/",
+      "content_type": "text/html; charset=UTF-8",
+      "sample_bytes": 131072,
+      "sample_sha256": "7056d5d4b815fddfbefc7ed03c827e49151267925389a3e7a48d6f699c033ba0",
+      "pdf_signature": false
+    },
+    {
+      "requested_url": "https://www.sed.ms.gov.br/wp-content/uploads/2025/10/PROJETO-DE-VIDA-Ementa-Nucleo-Integrador-2023.v.1.0.pdf?download=1",
+      "request_method": "ordinary GET with standard public Range bytes0–2047",
+      "at": "2026-10-28T17:31:59.443676+00:00",
+      "status": 200,
+      "final_url": "https://www.sed.ms.gov.br/wp-content/uploads/2025/10/PROJETO-DE-VIDA-Ementa-Nucleo-Integrador-2023.v.1.0.pdf/?download=1",
+      "content_type": "text/html; charset=UTF-8",
+      "sample_bytes": 131072,
+      "sample_sha256": "7056d5d4b815fddfbefc7ed03c827e49151267925389a3e7a48d6f699c033ba0",
+      "pdf_signature": false
+    },
+    {
+      "requested_url": "https://www.sed.ms.gov.br/wp-json/wp/v2/media/80798",
+      "request_method": "ordinary GET with standard public Range bytes0–2047",
+      "at": "2026-10-28T17:31:59.445205+00:00",
+      "status": 200,
+      "final_url": "https://www.sed.ms.gov.br/wp-json/wp/v2/media/80798",
+      "content_type": "application/json; charset=UTF-8",
+      "sample_bytes": 1973,
+      "sample_sha256": "4eb8ad9473ff3eefdd37f7903060efc67c0c6879e21e6b5c93bf7e0789899d36",
+      "pdf_signature": false,
+      "official_media": {
+        "id": 80798,
+        "date": "2025-10-07T08:32:43",
+        "modified": "2025-10-07T08:32:43",
+        "slug": "projeto-de-vida-ementa-nucleo-integrador-2023-v-1-0",
+        "source_url": "https://www.sed.ms.gov.br/wp-content/uploads/2025/10/PROJETO-DE-VIDA-Ementa-Nucleo-Integrador-2023.v.1.0.pdf",
+        "media_type": "file",
+        "mime_type": "application/pdf",
+        "filesize": 63530818
+      }
+    }
+  ]
+}

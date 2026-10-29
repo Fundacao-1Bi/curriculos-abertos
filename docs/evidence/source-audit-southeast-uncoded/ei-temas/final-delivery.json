@@ -1,0 +1,81 @@
+{
+  "actor_type": "automated",
+  "sources": [
+    {
+      "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+      "artifact_sha256": "5e720424ec0bc771440dc9b0b331fe6460ee0aa3c5aad0ee69e608ec1a1a1035",
+      "uncoded_items_path": "data/manifests/uncoded/es-ei-items.json",
+      "uncoded_items_sha256": "f902d3329425890bdb993ba64fa7fcbcf5bf779b1ad899f3fd70d3f4c8346d3d",
+      "records": 1309,
+      "kinds": {
+        "secao_normativa": 77,
+        "campo_experiencia": 5,
+        "direito_aprendizagem": 36,
+        "grupo_etario": 15,
+        "contexto_planejamento": 29,
+        "acao_docente": 221,
+        "contexto_observacao": 22,
+        "indicador_observacao": 259,
+        "principio_curricular": 3,
+        "valor_principio": 3,
+        "pilar_matriz_saberes": 4,
+        "contexto_curricular": 539,
+        "saber_curricular": 15,
+        "reflexao_docente": 45,
+        "orientacao_avaliacao": 5,
+        "orientacao_transicao": 7,
+        "campo_sintese_aprendizagem": 5,
+        "sintese_aprendizagem": 19
+      }
+    },
+    {
+      "source_id": "es-tema-integrador-final-24-10",
+      "artifact_sha256": "2fe7de739de9b3433e41cffdd93c08573dc1277e3bfa70a5b2ed2d44ec68b2d4",
+      "uncoded_items_path": "data/manifests/uncoded/es-temas-items.json",
+      "uncoded_items_sha256": "917160fabe55d76c2d99bd9f0ee9a0a7565e6bcaae4f81087dda38cec5358760",
+      "records": 130,
+      "kinds": {
+        "secao_normativa": 1,
+        "tema_integrador": 19,
+        "contexto_temas_integradores": 74,
+        "orientacao_implementacao": 36
+      }
+    }
+  ],
+  "real_importer_records": 1439,
+  "native_fragments": 5402,
+  "recorded_ocr_fragments": 25,
+  "importer_errors": 0,
+  "human_review": false,
+  "byte_deterministic": true,
+  "manifest_modified": false,
+  "pipeline_core_modified": false,
+  "production_cache_written": false,
+  "scope": "Two assigned Sources only; complete physical native/diagram inventory and all19 raster learning summaries; conceptual raster graph wording retains explicit transcription limit.",
+  "evidence_sha256": {
+    "adapter-build-summary.json": "3260b9b392afdeb1b6cbd9f88010165ef026715f1cd469bb0174c47b0acf869a",
+    "coded-parent-proposals.json": "2d56e6ddc414fecfebff378ef8171c32e5d4407aafb9415671a0a0ea7fc2e40a",
+    "determinism.json": "f76b398424ca83d98ffbd30e4e0f177ee33933cc219a183ba30ee27469c1d291",
+    "ei-independent-inventory.json": "c671f0c3c421d6fe3aa124681c0c1d5f2fb8a8f92c91c7b9bbe7965abd277020",
+    "expected-target-ids.json": "9bd8d4895a710d62b43771678b660d75d10723adcda2d03c1ac9d61ba5044219",
+    "full-verification.json": "99e52b7fb4065c20064fadd2115ef017d40ca707294f520cbd1e16bf9a40604f",
+    "hierarchy-and-target-id-verification.json": "fc59f1575e89e0f55fd8cc74bcec927df9a4f30fc392cf35d6fe48fd00a8ca93",
+    "physical-census.json": "8da5b9fc1eda4409d26f464743cab95b1aad79641315c7abd9b77524464539a6",
+    "raster-image-inventory.json": "98882a11e7015e2feef6f375e1b0515d7d1fa16be8d28d5f8e427e7f397a0811",
+    "source-binding-proposals.json": "791dcc6ae2f5e28a4306c00dfe5e19b22be3cde370ccea0704045c0f5d05d1ba",
+    "synthesis-denominator-and-build.json": "2bd5b20301a75b285a52230c06de9f21b9e02d6a66279dbe1dcaa599d0c2bed3",
+    "synthesis-ocr-p132-EF-body.json": "d660c70fb6745127d05346f35897e06eadcbbfb3cbd5972f85b76ec5c8d6bf16",
+    "synthesis-ocr-p132-EF-field.json": "4c7c4bab182fb83e32e6aa6a60ed51fa337ed1e048e78cefe0221d362e503315",
+    "synthesis-ocr-p132-ET-body.json": "e0a6e2f9ec7293c8dc480bb5a95f93d7ca7c57fe086f93834e5fefe9c5c9e138",
+    "synthesis-ocr-p132-ET-field.json": "c7f8a696dc0cb34a283d1726e52a85306c1847296b522c0cadb3a5c1b8c0f768",
+    "synthesis-ocr-p133-CG-body.json": "24e3788ec1de0b4063f4689a61e4f8970e2578cc9b519fb75a0387074ba799ba",
+    "synthesis-ocr-p133-CG-field.json": "ba4c77f805b3c6f5fd0e4912b2f9c8916ce2237b99ea4eb8d9b4654f5844710e",
+    "synthesis-ocr-p133-EO-body.json": "0d8a7571363147d057f3f290f04ca9145804b7e46cf697b72206e7f8a487eeea",
+    "synthesis-ocr-p133-EO-field.json": "8d48f2933d34b967a845ca007318647072495f9fc6b4a33500f9e7f900008da5",
+    "synthesis-ocr-p133-TS-body.json": "c19d0219e2ddb6c824ed287f0e077951aaa895df275624ffac051ac06c431f7a",
+    "synthesis-ocr-p133-TS-field.json": "f86a4fedac5026afd6c2fad685c48b960d8b2176a3427f15a6d0a71f19a00347",
+    "synthesis-ocr-root.json": "45d3a23b82ea38110b7fe5352c0b4d7a1abf9f874eeaf378b094346e0a464125",
+    "temas-independent-inventory.json": "2523345d6baafc5d9e0609f0344ef99ff8384f968694249e3aa929180157b419",
+    "visual-inspection.json": "c0d7099b9f645856de94ec1e15a6287937df071c6ac3ec2bcd0b4138e40cfe84"
+  }
+}

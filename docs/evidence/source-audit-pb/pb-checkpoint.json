@@ -1,0 +1,135 @@
+{
+  "at": "2026-10-28T14:02:25.388704+00:00",
+  "source_id": "pb-proposta-ei-ef",
+  "artifact_sha256": "b55786376874ab6a46064c44726d578d37f550a99a702069fe7065946ce26383",
+  "sidecar_path": "data/manifests/uncoded/pb-eief-items.json",
+  "sidecar_sha256": "b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514",
+  "records": 2008,
+  "kind_counts": {
+    "objetivo_aprendizagem": 1620,
+    "direito_aprendizagem": 28,
+    "principio_curricular": 6,
+    "habilidade": 234,
+    "objetivo_geral": 3,
+    "secao_normativa": 42,
+    "competencia": 54,
+    "criterio_avaliacao": 21
+  },
+  "state": "verified_adapter_bound_in_manifest_awaiting_central_corpus_candidate",
+  "implementation": "completed",
+  "executed": true,
+  "native_all_fragments": {
+    "status": "passed",
+    "fragments": 2287,
+    "failures": 0
+  },
+  "integration": {
+    "at": "2026-10-28T14:01:58.727974+00:00",
+    "actor_type": "automated",
+    "source_id": "pb-proposta-ei-ef",
+    "sidecar_sha256": "b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514",
+    "extraction_revision": "page-cell-v1.4.0",
+    "adapter_records_loaded": 2008,
+    "coded_literal_math_records": 234,
+    "finalized_source_records": 2758,
+    "generic_code_definition_count": 0,
+    "check": "source loader and finalizer preserve literal text/type/positions/context/parents and source authority",
+    "manifest_mutated": false,
+    "actual_manifest_binding_matches_verified_contract": true,
+    "manifest_binding_required": true,
+    "status": "passed"
+  },
+  "binding": {
+    "uncoded_items_path": "data/manifests/uncoded/pb-eief-items.json",
+    "adapter_authority": {
+      "generic_coded_reference_pages": [
+        1,
+        635
+      ],
+      "coded_learning_pages": [
+        259,
+        325
+      ]
+    }
+  },
+  "ownership": {
+    "source_manifest": "agent:data_northeast",
+    "loader_finalizer_corpus": "agent:pipeline",
+    "adapter": "agent:data_north"
+  },
+  "commands": [
+    "var/venv-pipeline/bin/python data/manifests/uncoded/pb-eief-extract.py",
+    "var/venv-pipeline/bin/python data/manifests/uncoded/pb-eief-selfcheck.py",
+    "var/venv-pipeline/bin/python data/manifests/uncoded/pb-eief-verify.py",
+    "var/venv-pipeline/bin/python data/manifests/uncoded/pb-eief-integration-check.py",
+    "var/venv-pipeline/bin/python data/manifests/uncoded/pb-eief-reproduce.py"
+  ],
+  "evidence_paths": [
+    "docs/pb-eief-adapter.md",
+    "docs/evidence/source-audit-pb/pb-independent-verification-summary.json",
+    "docs/evidence/source-audit-pb/pb-visual-samples.json",
+    "docs/evidence/source-audit-pb/pb-selfcheck-all-fragments.json",
+    "docs/evidence/source-audit-pb/pb-integration-check.json",
+    "docs/evidence/source-audit-pb/pb-reproducibility.json"
+  ],
+  "remaining": {
+    "external": [
+      "PB Ensino Médio: CAPTCHA no emissor, fora do PDF EI/EF acessível; evidência sob responsabilidade do manifesto NE."
+    ],
+    "document_global": [
+      "Reconciliar edição/vigência e completude normativa da UF; esta auditoria não autoriza ready."
+    ],
+    "integration": [
+      "Consolidated corpus candidate execution/verification by pipeline; actual manifest binding already verified."
+    ]
+  },
+  "independent": {
+    "runtime_pymupdf": "1.26.7",
+    "native_context_heading_checks": 397,
+    "independent_EI_position_checks": 103,
+    "at": "2026-10-28T14:00:02.526393+00:00",
+    "actor_type": "automated",
+    "source_id": "pb-proposta-ei-ef",
+    "artifact_sha256": "b55786376874ab6a46064c44726d578d37f550a99a702069fe7065946ce26383",
+    "sidecar": "data/manifests/uncoded/pb-eief-items.json",
+    "sidecar_sha256": "b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514",
+    "items": 2008,
+    "native_fragment_checks": 3532,
+    "text_checks": 2008,
+    "reference_fragment_checks": 1245,
+    "independent_EI_expected": 103,
+    "independent_EI_matched": 103,
+    "independent_physical_cells": 1157,
+    "independent_cells_fully_covered": 1157,
+    "independent_indigenous_expected": 138,
+    "independent_indigenous_matched": 138,
+    "independent_rights_expected": 34,
+    "independent_rights_matched": 34,
+    "independent_EJA_general_expected": 3,
+    "independent_EJA_general_matched": 3,
+    "independent_unit_anchors": 823,
+    "independent_unit_anchors_matched": 823,
+    "independent_row_reference_set_checks": 1452,
+    "explicit_year_checks": 1560,
+    "errors": 0,
+    "cells_with_uncovered_words": 0,
+    "status": "passed",
+    "human_pedagogical_review": false
+  },
+  "reproducibility": {
+    "at": "2026-10-28T13:59:47.477920+00:00",
+    "source_id": "pb-proposta-ei-ef",
+    "actor_type": "automated",
+    "status": "passed",
+    "check": "two successive source-specific rebuilds produce identical sidecar bytes",
+    "before": {
+      "data/manifests/uncoded/pb-eief-items.json": "b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514",
+      "data/manifests/uncoded/pb-eief-indigenous.json": "98022b5d4795ac6da5fcf67f4a5a09df41552c184f40b0dd9a5973ab1a161dd9"
+    },
+    "after": {
+      "data/manifests/uncoded/pb-eief-items.json": "b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514",
+      "data/manifests/uncoded/pb-eief-indigenous.json": "98022b5d4795ac6da5fcf67f4a5a09df41552c184f40b0dd9a5973ab1a161dd9"
+    },
+    "python": "3.11.15"
+  }
+}

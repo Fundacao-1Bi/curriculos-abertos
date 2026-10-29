@@ -1,0 +1,22 @@
+{
+  "actor_type": "automated",
+  "started_at": "2026-10-28T14:35:36.818Z",
+  "completed_at": "2026-10-28T14:35:39.889Z",
+  "source_tree_sha256": "f71d0dc9ab41f33b4f055b7e746ea4903713219fada6726813044fee4daf1a92",
+  "artifact": "data/bundles/ca-9d9b45e82947bd8fe35c.manifest.json",
+  "method": "Read-only bounded shard verification of a real published artifact; mutated metadata exists only in memory; no PostgreSQL transaction/import/default change.",
+  "baseline": {
+    "item_count": 20612,
+    "relation_count": 2851,
+    "source_count": 269
+  },
+  "mutated": {
+    "item_count": 20612,
+    "relation_count": 2851,
+    "source_count": 269
+  },
+  "baseline_accepted": true,
+  "invalid_schema_pin_accepted": true,
+  "confirmed_finding": "Importer verification ignores schema path/version/hash despite receipt claim",
+  "main_publication_modified": false
+}

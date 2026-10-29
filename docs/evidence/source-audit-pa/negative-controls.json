@@ -1,0 +1,60 @@
+{
+  "source_id": "pa-dcepa-ei-ef",
+  "adapter_sha256": "946e4f16523b127bbbf35e15947655bd52a6d890920cc3e7cce49753b35c424b",
+  "checks": [
+    {
+      "name": "baseline_literal_and_header_accepted",
+      "passed": true,
+      "method": "Actual pipeline evidence_check plus primary native geometry/header"
+    },
+    {
+      "name": "fabricated_text_rejected",
+      "passed": true,
+      "method": "Actual pipeline evidence_check"
+    },
+    {
+      "name": "adjacent_skill_column_box_rejected",
+      "passed": true,
+      "method": "Independent all-fragment native word-center gate; page-level text matching alone cannot prove box correctness"
+    },
+    {
+      "name": "adjacent_code_as_official_local_id_rejected",
+      "passed": true,
+      "method": "Uncoded official-ID absence gate, independent source-column role"
+    },
+    {
+      "name": "year_from_adjacent_single_code_rejected",
+      "passed": true,
+      "method": "Explicit physical header says1º2º3º, cannot narrow toEF01 code year"
+    },
+    {
+      "name": "age_from_wrong_code_family_rejected",
+      "passed": true,
+      "method": "Explicit physical age header gate"
+    },
+    {
+      "name": "dropped_crosspage_experience_fragment_rejected",
+      "passed": true,
+      "method": "Source-only403-cell partition, not output-derived target count"
+    },
+    {
+      "name": "baseline_missing_subaxis_not_borrowed",
+      "passed": true,
+      "method": "Physical9º board ancestor remains9º with blank subaxis disclosed"
+    },
+    {
+      "name": "borrowed_previous_year_subaxis_rejected",
+      "passed": true,
+      "method": "Source hierarchy and year-header consistency gate"
+    },
+    {
+      "name": "wrong_source_artifact_hash_rejected",
+      "passed": true,
+      "method": "Actual source_uncoded_items early source/hash guard; no files mutated"
+    }
+  ],
+  "passed": 10,
+  "total": 10,
+  "result": "pass",
+  "method": "In-memory mutations only, source PDF/manifests/sidecars unchanged. Positive controls included."
+}

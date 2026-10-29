@@ -1,0 +1,2193 @@
+{
+  "actor_type": "automated",
+  "actor_id": "pr_adapter:es-full-isolated-import",
+  "parser_fingerprint": {
+    "algorithm": "sha256-of-sorted-parser-file-digests",
+    "sha256": "b5676d4008a2aa395a650c397acee4d5501f68f1bc1004571d1f775254d7f267",
+    "files": {
+      "ingest.py": "e07867f888d70e737349911fbbd4eb183d59e78fa0dafb3f8a6be423f4457ec1",
+      "geometry.py": "99b1dd2df6c73008a782baa8fd49ea32f45abf4b629a3fba2660693acfe88bc8",
+      "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
+      "es_ei_rows.py": "37f73cc3140e9ce2b696f7f6e8df5d7c0e299a3d71630fc23b7610f8178c1f72",
+      "ms_glyphs.py": "b763a98f2c3691d05bdfbdf506804982bfdb37ef807a5fe8a7b7b85a043d21f1",
+      "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
+      "am_ocr_grid.py": "162e44aa7f109d2ccf33a55e865506965e2486e335dcb9c4263adc09d96d0fe8",
+      "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
+      "rs_ms_geometry.py": "38c65cea5a73f7aa5f16b84e332fa54d2c61844b7a331c0eafdda26a83863a6c",
+      "runtime.py": "872329c4965d0a043cc256a3a5bd46912c7f4aab54f0a28da048eea9989c6699"
+    }
+  },
+  "extraction_revision": "page-cell-v1.4.0",
+  "pipeline_module_sha256": "e07867f888d70e737349911fbbd4eb183d59e78fa0dafb3f8a6be423f4457ec1",
+  "immutable_snapshot_path": "var/private-evidence/source-audit-southeast-fidelity/snapshots/bbb5608e21b186fd050500fbdd4a8bd75d4f26fea3ef62b00b9a2b7331ce9945/pipeline",
+  "snapshot_guard_enabled": true,
+  "sources": [
+    {
+      "source_id": "es-em-l-ngua-portuguesa",
+      "artifact_sha256": "b3405b1e5ffeb82df9d2817e86e8949199c3ae14c9cd59daf69b69bac48773d8",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/f5da74e12a11b0ddc79e52577850a396008830ff2bcad6b72d8cf257ecba3db4/b3405b1e5ffeb82df9d2817e86e8949199c3ae14c9cd59daf69b69bac48773d8.json",
+      "candidate_sha256": "4e868431392400737cfd6b5c8c0ff873b5cb2f7b809452ae5a1f5006c7c034cc",
+      "coded_items": 123,
+      "coded_fragments": 243,
+      "literal_failed_items": [],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [],
+      "production_cache_before_sha256": "71199ef555fb53d23e0ba39a585af005bdf2db37fe16dd9a61b2d779ab57827b",
+      "production_cache_after_sha256": "71199ef555fb53d23e0ba39a585af005bdf2db37fe16dd9a61b2d779ab57827b",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 182,
+      "independent_inventory_code_cells": 187,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": true,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-em-ci-ncias-da-natureza",
+      "artifact_sha256": "ed9771b0dd051602a41e3706f3453a6301f8c48fd20911b9b821e96256daa1ac",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/f5da74e12a11b0ddc79e52577850a396008830ff2bcad6b72d8cf257ecba3db4/ed9771b0dd051602a41e3706f3453a6301f8c48fd20911b9b821e96256daa1ac.json",
+      "candidate_sha256": "c54d913641a183d9cbc42cc810aa2b61181911cc943d538727dee0bdd8b7d765",
+      "coded_items": 54,
+      "coded_fragments": 83,
+      "literal_failed_items": [
+        {
+          "id": "ca:es-em-ci-ncias-da-natureza:701e49093e18b77cbeae",
+          "code": "EM13CNT205QUIb/E\nS",
+          "page": 12,
+          "locator": "table:0/row:19/cell:2",
+          "text": "Conduzir atividades experimentais, interpretar resultados e realizar previsões sobre atividades experimentais relacionadas às transformações químicas, com base nas noções de probabilidade e incerteza, reconhecendo os limites explicativos das ciências.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-da-natureza",
+              "page": 12,
+              "printed_page": null,
+              "section": "Tabela 1, linha 20",
+              "excerpt": "Conduzir atividades experimentais, interpretar resultados e realizar previsões sobre atividades experimentais relacionadas às transformações químicas, com base nas noções de probabilidade e incerteza, reconhecendo os limites explicativos das ciências.",
+              "locator": "table:0/row:19/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                327.3114013671875,
+                463.8033175998264,
+                518.2135476505055,
+                543.2908991033381
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-da-natureza",
+              "page": 12,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CNT205QUIb/E\nS",
+              "locator": "table:0/row:19/cell:2/code-locator",
+              "bbox": [
+                228.9488763809204,
+                463.8033175998264,
+                327.3114013671875,
+                543.2908991033381
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-em-ci-ncias-da-natureza:587ce6d5972cfd95a128",
+          "code": "EM13CNT101QUIi/E\nS",
+          "page": 14,
+          "locator": "table:0/row:1/cell:2",
+          "text": "Analisar e representar, com ou sem o uso de dispositivos e de aplicativos digitais específicos, a interação entre matéria e energia, considerando as diferentes ligações químicas entre carbono e demais elementos químicos, resultando em diferentes compostos químicos, agrupados em funções orgânicas com propriedades e características definidas.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-da-natureza",
+              "page": 14,
+              "printed_page": null,
+              "section": "Tabela 1, linha 2",
+              "excerpt": "Analisar e representar, com ou sem o uso de dispositivos e de aplicativos digitais específicos, a interação entre matéria e energia, considerando as diferentes ligações químicas entre carbono e demais elementos químicos, resultando em diferentes compostos químicos, agrupados em funções orgânicas com propriedades e características definidas.",
+              "locator": "table:0/row:1/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                326.3514007568359,
+                137.42198486328124,
+                517.81533203125,
+                229.82198079427084
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-da-natureza",
+              "page": 14,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CNT101QUIi/E\nS",
+              "locator": "table:0/row:1/cell:2/code-locator",
+              "bbox": [
+                230.4092030843099,
+                137.42198486328124,
+                326.3514007568359,
+                229.82198079427084
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-em-ci-ncias-da-natureza:d7f950250a29bd1008b4",
+          "code": "EM13CNT303FISa/E\nS",
+          "page": 22,
+          "locator": "table:0/row:1/cell:2",
+          "text": "Interpretar textos de divulgação científica que tratem de temáticas da Mecânica Newtoniana, da Física Moderna e Contemporânea, disponível em diferentes mídias, visando a promoção da divulgação científica na comunidade escolar além de construir estratégias de seleção de fontes confiáveis de informações.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-da-natureza",
+              "page": 22,
+              "printed_page": null,
+              "section": "Tabela 1, linha 2",
+              "excerpt": "Interpretar textos de divulgação científica que tratem de temáticas da Mecânica Newtoniana, da Física Moderna e Contemporânea, disponível em diferentes mídias, visando a promoção da divulgação científica na comunidade escolar além de construir estratégias de seleção de fontes confiáveis de informações.",
+              "locator": "table:0/row:1/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                326.35145568847656,
+                137.43498992919922,
+                517.7222290039062,
+                227.02857317243303
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-da-natureza",
+              "page": 22,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CNT303FISa/E\nS",
+              "locator": "table:0/row:1/cell:2/code-locator",
+              "bbox": [
+                230.38200208875867,
+                137.43498992919922,
+                326.35145568847656,
+                227.02857317243303
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-em-ci-ncias-da-natureza:b086fd8c188d932ddcfb",
+          "code": "EM13CNT204QUIb/E\nS",
+          "page": 24,
+          "locator": "table:0/row:35/cell:2",
+          "text": "Elaborar explicações, previsões e cálculos, envolvidos na formação de soluções, em sistemas naturais e industriais, utilizando unidades de concentração usuais e as que expressam quantidade de matéria, com ou sem o uso de dispositivos e aplicativos digitais (com softwares de simulação e de realidade virtual, entre outros).",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-da-natureza",
+              "page": 24,
+              "printed_page": null,
+              "section": "Tabela 1, linha 36",
+              "excerpt": "Elaborar explicações, previsões e cálculos, envolvidos na formação de soluções, em sistemas naturais e industriais, utilizando unidades de concentração usuais e as que expressam quantidade de matéria, com ou sem o uso de dispositivos e aplicativos digitais (com softwares de simulação e de realidade virtual, entre outros).",
+              "locator": "table:0/row:35/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                327.6713993238366,
+                638.1699905395508,
+                518.4288991292318,
+                731.1726989746094
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-da-natureza",
+              "page": 24,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CNT204QUIb/E\nS",
+              "locator": "table:0/row:35/cell:2/code-locator",
+              "bbox": [
+                229.30233510335287,
+                638.1699905395508,
+                327.6713993238366,
+                731.1726989746094
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-em-ci-ncias-da-natureza:0c0ea85f7cfac3306c8b",
+          "code": "EM13CNT205QUIe/E\nS",
+          "page": 28,
+          "locator": "table:0/row:47/cell:2",
+          "text": "Conduzir atividades experimentais, interpretar resultados e realizar previsões sobre atividades experimentais relacionadas a energia liberada ou consumida em transformações químicas, com base nas noções de probabilidade e incerteza, reconhecendo os limites explicativos das ciências.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-da-natureza",
+              "page": 28,
+              "printed_page": null,
+              "section": "Tabela 1, linha 48",
+              "excerpt": "Conduzir atividades experimentais, interpretar resultados e realizar previsões sobre atividades experimentais relacionadas a energia liberada ou consumida em transformações químicas, com base nas noções de probabilidade e incerteza, reconhecendo os limites explicativos das ciências.",
+              "locator": "table:0/row:47/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                327.6714199290556,
+                624.8049755096436,
+                518.4640075683594,
+                730.5181607333096
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-da-natureza",
+              "page": 28,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CNT205QUIe/E\nS",
+              "locator": "table:0/row:47/cell:2/code-locator",
+              "bbox": [
+                229.25640157063802,
+                624.8049755096436,
+                327.6714199290556,
+                730.5181607333096
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        }
+      ],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [
+        {
+          "code": "EM13CNT205QUIb/E\nS",
+          "page": 12,
+          "locator": "table:0/row:19/cell:2",
+          "old": [],
+          "new": [
+            "Conduzir atividades experimentais, interpretar resultados e realizar previsões sobre atividades experimentais relacionadas às transformações químicas, com base nas noções de probabilidade e incerteza, reconhecendo os limites explicativos das ciências."
+          ]
+        },
+        {
+          "code": "EM13CNT303FISa/E\nS",
+          "page": 22,
+          "locator": "table:0/row:1/cell:2",
+          "old": [],
+          "new": [
+            "Interpretar textos de divulgação científica que tratem de temáticas da Mecânica Newtoniana, da Física Moderna e Contemporânea, disponível em diferentes mídias, visando a promoção da divulgação científica na comunidade escolar além de construir estratégias de seleção de fontes confiáveis de informações."
+          ]
+        },
+        {
+          "code": "EM13CNT204QUIb/E",
+          "page": 24,
+          "locator": "table:0/row:35/cell:2",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CNT205QUIe/E\nS",
+          "page": 28,
+          "locator": "table:0/row:47/cell:2",
+          "old": [],
+          "new": [
+            "Conduzir atividades experimentais, interpretar resultados e realizar previsões sobre atividades experimentais relacionadas a energia liberada ou consumida em transformações químicas, com base nas noções de probabilidade e incerteza, reconhecendo os limites explicativos das ciências."
+          ]
+        },
+        {
+          "code": "EM13CNT303FISa/E",
+          "page": 22,
+          "locator": "table:0/row:1/cell:2",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CNT101QUIi/E\nS",
+          "page": 14,
+          "locator": "table:0/row:1/cell:2",
+          "old": [],
+          "new": [
+            "Analisar e representar, com ou sem o uso de dispositivos e de aplicativos digitais específicos, a interação entre matéria e energia, considerando as diferentes ligações químicas entre carbono e demais elementos químicos, resultando em diferentes compostos químicos, agrupados em funções orgânicas com propriedades e características definidas."
+          ]
+        },
+        {
+          "code": "EM13CNT101QUIi/E",
+          "page": 14,
+          "locator": "table:0/row:1/cell:2",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CNT205QUIb/E",
+          "page": 12,
+          "locator": "table:0/row:19/cell:2",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CNT204QUIb/E\nS",
+          "page": 24,
+          "locator": "table:0/row:35/cell:2",
+          "old": [],
+          "new": [
+            "Elaborar explicações, previsões e cálculos, envolvidos na formação de soluções, em sistemas naturais e industriais, utilizando unidades de concentração usuais e as que expressam quantidade de matéria, com ou sem o uso de dispositivos e aplicativos digitais (com softwares de simulação e de realidade virtual, entre outros)."
+          ]
+        },
+        {
+          "code": "EM13CNT205QUIe/E",
+          "page": 28,
+          "locator": "table:0/row:47/cell:2",
+          "old": [
+            "S"
+          ],
+          "new": []
+        }
+      ],
+      "production_cache_before_sha256": "8b6c33d4e1e438d032f354f4309b7a32b89fafcb08f879012e9cc046c9aab1cd",
+      "production_cache_after_sha256": "8b6c33d4e1e438d032f354f4309b7a32b89fafcb08f879012e9cc046c9aab1cd",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 130,
+      "independent_inventory_code_cells": 130,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-em-ci-ncias-humanas",
+      "artifact_sha256": "de0a2853b8ff2346830f9f1b0f29616912ca7ac4237b6ce050f91781afb486f6",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/f5da74e12a11b0ddc79e52577850a396008830ff2bcad6b72d8cf257ecba3db4/de0a2853b8ff2346830f9f1b0f29616912ca7ac4237b6ce050f91781afb486f6.json",
+      "candidate_sha256": "16e6fc0b2fd41d2a283bf663ab06f032c0237227ba177096d5bfb6482eeb92e1",
+      "coded_items": 66,
+      "coded_fragments": 91,
+      "literal_failed_items": [
+        {
+          "id": "ca:es-em-ci-ncias-humanas:511f96c4e194dc29824f",
+          "code": "EM13CHS201SOC/E\nS",
+          "page": 21,
+          "locator": "table:0/row:32/cell:2",
+          "text": "Analisar e caracterizar as dinâmicas das populações, das mercadorias e do capital nos diversos continentes, em especial na América Latina e no Brasil, compreendendo os diversos movimentos sociais e suas dinâmicas de enfrentamento político e social.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 21,
+              "printed_page": null,
+              "section": "Tabela 1, linha 33",
+              "excerpt": "Analisar e caracterizar as dinâmicas das populações, das mercadorias e do capital nos diversos continentes, em especial na América Latina e no Brasil, compreendendo os diversos movimentos sociais e suas dinâmicas de enfrentamento político e social.",
+              "locator": "table:0/row:32/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                323.74739837646484,
+                466.01611042022705,
+                497.5106201171875,
+                552.1071341378348
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 21,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CHS201SOC/E\nS",
+              "locator": "table:0/row:32/cell:2/code-locator",
+              "bbox": [
+                230.70387172698975,
+                466.01611042022705,
+                323.74739837646484,
+                552.1071341378348
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-em-ci-ncias-humanas:9481390f28142112ba66",
+          "code": "EM13CHS107GEO/E\nS",
+          "page": 33,
+          "locator": "table:0/row:2/cell:2",
+          "text": "Identificar as dinâmicas do clima, bem como a diferenciação espacial entre seus tipos e correlacionar os aspectos climáticos às características das diferentes paisagens.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 33,
+              "printed_page": null,
+              "section": "Tabela 1, linha 3",
+              "excerpt": "Identificar as dinâmicas do clima, bem como a diferenciação espacial entre seus tipos e correlacionar os aspectos climáticos às características das diferentes paisagens.",
+              "locator": "table:0/row:2/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                323.31714521135603,
+                242.781982421875,
+                497.5063587535511,
+                305.1499786376953
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 33,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CHS107GEO/E\nS",
+              "locator": "table:0/row:2/cell:2/code-locator",
+              "bbox": [
+                229.0743644020774,
+                242.781982421875,
+                323.31714521135603,
+                305.1499786376953
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-em-ci-ncias-humanas:ca157a8493de255f4682",
+          "code": "EM13CHS307GEO/E\nS",
+          "page": 33,
+          "locator": "table:0/row:4/cell:2",
+          "text": "Identificar e especializar a disponibilidade de recursos minerais no Brasil, bem como seu beneficiamento as questões socioambientais decorrentes de sua exploração.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 33,
+              "printed_page": null,
+              "section": "Tabela 1, linha 5",
+              "excerpt": "Identificar e especializar a disponibilidade de recursos minerais no Brasil, bem como seu beneficiamento as questões socioambientais decorrentes de sua exploração.",
+              "locator": "table:0/row:4/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                323.31714521135603,
+                410.0886484781901,
+                497.5063587535511,
+                475.06271084872157
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 33,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CHS307GEO/E\nS",
+              "locator": "table:0/row:4/cell:2/code-locator",
+              "bbox": [
+                229.0743644020774,
+                410.0886484781901,
+                323.31714521135603,
+                475.06271084872157
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-em-ci-ncias-humanas:7beb09041724e16505e9",
+          "code": "EM13CHS211GEO/E\nS",
+          "page": 39,
+          "locator": "table:0/row:12/cell:2",
+          "text": "Conhecer conceitos, taxas, índices demográficos, bem como utilizar a linguagem gráfica para representar a estrutura e a composição da população.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 39,
+              "printed_page": null,
+              "section": "Tabela 1, linha 13",
+              "excerpt": "Conhecer conceitos, taxas, índices demográficos, bem como utilizar a linguagem gráfica para representar a estrutura e a composição da população.",
+              "locator": "table:0/row:12/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                323.31611992331113,
+                253.94224548339844,
+                497.4953801081731,
+                318.3242623465402
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 39,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CHS211GEO/E\nS",
+              "locator": "table:0/row:12/cell:2/code-locator",
+              "bbox": [
+                229.08292388916016,
+                253.94224548339844,
+                323.31611992331113,
+                318.3242623465402
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-em-ci-ncias-humanas:222b6ae58c11af59d4b8",
+          "code": "EM13CHS309GE0/E\nS",
+          "page": 41,
+          "locator": "table:0/row:20/cell:2",
+          "text": "Identificar os tipos de industrialização nos diferentes continentes e a constituição do meio técnico-científico-informacional no mundo globalizado.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 41,
+              "printed_page": null,
+              "section": "Tabela 1, linha 21",
+              "excerpt": "Identificar os tipos de industrialização nos diferentes continentes e a constituição do meio técnico-científico-informacional no mundo globalizado.",
+              "locator": "table:0/row:20/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                323.3154022216797,
+                339.28997802734375,
+                497.4873291015625,
+                397.33455548967635
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 41,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CHS309GE0/E\nS",
+              "locator": "table:0/row:20/cell:2/code-locator",
+              "bbox": [
+                229.08920084635417,
+                339.28997802734375,
+                323.3154022216797,
+                397.33455548967635
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-em-ci-ncias-humanas:048fc393e77f8b5e2ce6",
+          "code": "EM13CHS406GEO/E\nS",
+          "page": 41,
+          "locator": "table:0/row:33/cell:2",
+          "text": "Discutir a regionalização econômica do espaço mundial, e suas ferramentas de fortalecimento tais quais os Blocos Econômicos.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 41,
+              "printed_page": null,
+              "section": "Tabela 1, linha 34",
+              "excerpt": "Discutir a regionalização econômica do espaço mundial, e suas ferramentas de fortalecimento tais quais os Blocos Econômicos.",
+              "locator": "table:0/row:33/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                323.3154022216797,
+                524.9156842912946,
+                497.4873291015625,
+                588.7681607333096
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 41,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CHS406GEO/E\nS",
+              "locator": "table:0/row:33/cell:2/code-locator",
+              "bbox": [
+                229.08920084635417,
+                524.9156842912946,
+                323.3154022216797,
+                588.7681607333096
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-em-ci-ncias-humanas:55c9c1d39a708c00848e",
+          "code": "EM13CHS214GEO/E\nS",
+          "page": 43,
+          "locator": "table:0/row:1/cell:2",
+          "text": "Localizar, identificar e avaliar a distribuição da população considerando a diversidade étnico-cultural e religiosa no Brasil e no mundo.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 43,
+              "printed_page": null,
+              "section": "Tabela 1, linha 2",
+              "excerpt": "Localizar, identificar e avaliar a distribuição da população considerando a diversidade étnico-cultural e religiosa no Brasil e no mundo.",
+              "locator": "table:0/row:1/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                310.75728716169084,
+                137.44821705537683,
+                497.54713657924106,
+                183.48153451772836
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 43,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CHS214GEO/E\nS",
+              "locator": "table:0/row:1/cell:2/code-locator",
+              "bbox": [
+                218.80828857421875,
+                137.44821705537683,
+                310.75728716169084,
+                183.48153451772836
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-em-ci-ncias-humanas:c7dcfc072962917a6476",
+          "code": "EM13CHS109GEO/E\nS",
+          "page": 63,
+          "locator": "table:0/row:3/cell:4",
+          "text": "Comparar, analisar e avaliar as modificações das paisagens do contexto local para o global e o uso desses lugares em diferentes tempos por diferentes tipos de sociedade com destaque para os povos originários.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 63,
+              "printed_page": null,
+              "section": "Tabela 1, linha 4",
+              "excerpt": "Comparar, analisar e avaliar as modificações das paisagens do contexto local para o global e o uso desses lugares em diferentes tempos por diferentes tipos de sociedade com destaque para os povos originários.",
+              "locator": "table:0/row:3/cell:4",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                310.7653350830078,
+                137.33311080932617,
+                497.5919921875,
+                307.94815340909093
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 63,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CHS109GEO/E\nS",
+              "locator": "table:0/row:3/cell:4/code-locator",
+              "bbox": [
+                218.71160278320312,
+                137.33311080932617,
+                310.7653350830078,
+                307.94815340909093
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-em-ci-ncias-humanas:49617b5b20563755ecb7",
+          "code": "EM13CHS107HIS/E\nS",
+          "page": 65,
+          "locator": "table:0/row:47/cell:2",
+          "text": "Conhecer o patrimônio cultural afro- brasileiro e indígena no Brasil e no Espírito Santo com vistas a atuar para sua valorização e preservação.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 65,
+              "printed_page": null,
+              "section": "Tabela 1, linha 48",
+              "excerpt": "Conhecer o patrimônio cultural afro- brasileiro e indígena no Brasil e no Espírito Santo com vistas a atuar para sua valorização e preservação.",
+              "locator": "table:0/row:47/cell:2",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                311.9775172642299,
+                625.2657034737723,
+                497.4873291015625,
+                690.0127064098011
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 65,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CHS107HIS/E\nS",
+              "locator": "table:0/row:47/cell:2/code-locator",
+              "bbox": [
+                220.76120096842448,
+                625.2657034737723,
+                311.9775172642299,
+                690.0127064098011
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-em-ci-ncias-humanas:938853477459c23209b6",
+          "code": "EM13CHS502HISa/E\nS",
+          "page": 69,
+          "locator": "table:0/row:3/cell:4",
+          "text": "Analisar situações da vida cotidiana (estilos de vida, valores, condutas etc.) dos povos tradicionais americanos, brasileiros e espírito-santenses, desnaturalizando e problematizando formas de desigualdade e preconceito, e propor ações que promovam os Direitos Humanos, a solidariedade e o respeito às diferenças e às escolhas individuais.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 69,
+              "printed_page": null,
+              "section": "Tabela 1, linha 4",
+              "excerpt": "Analisar situações da vida cotidiana (estilos de vida, valores, condutas etc.) dos povos tradicionais americanos, brasileiros e espírito-santenses, desnaturalizando e problematizando formas de desigualdade e preconceito, e propor ações que promovam os Direitos Humanos, a solidariedade e o respeito às diferenças e às escolhas individuais.",
+              "locator": "table:0/row:3/cell:4",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                313.59872020374644,
+                137.33185958862305,
+                497.522216796875,
+                241.1419881184896
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 69,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CHS502HISa/E\nS",
+              "locator": "table:0/row:3/cell:4/code-locator",
+              "bbox": [
+                217.422003004286,
+                137.33185958862305,
+                313.59872020374644,
+                241.1419881184896
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-em-ci-ncias-humanas:4f241ceeab3cc073a18b",
+          "code": "EM13CHS503HISb/E\nS",
+          "page": 69,
+          "locator": "table:0/row:4/cell:4",
+          "text": "Identificar diversas formas de violência (física, simbólica, psicológica etc.), sobretudo em relação a grupos minoritários (povos indígenas, afrodescendentes, camponeses, mulheres), suas causas, significados e usos políticos, sociais e culturais, avaliando e propondo mecanismos para combatê-las, com base em argumentos éticos.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 69,
+              "printed_page": null,
+              "section": "Tabela 1, linha 5",
+              "excerpt": "Identificar diversas formas de violência (física, simbólica, psicológica etc.), sobretudo em relação a grupos minoritários (povos indígenas, afrodescendentes, camponeses, mulheres), suas causas, significados e usos políticos, sociais e culturais, avaliando e propondo mecanismos para combatê-las, com base em argumentos éticos.",
+              "locator": "table:0/row:4/cell:4",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                313.59872020374644,
+                241.1419881184896,
+                497.522216796875,
+                332.9299774169922
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 69,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CHS503HISb/E\nS",
+              "locator": "table:0/row:4/cell:4/code-locator",
+              "bbox": [
+                217.422003004286,
+                241.1419881184896,
+                313.59872020374644,
+                332.9299774169922
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-em-ci-ncias-humanas:4cdc070c1793823c97c7",
+          "code": "EM13CHS603HISb/E\nS",
+          "page": 69,
+          "locator": "table:0/row:5/cell:4",
+          "text": "Compreender e aplicar conceitos políticos básicos (Estado, poder, formas, sistemas e regimes de governo, soberania etc.) na análise da formação de diferentes países, povos e nações e de suas experiências políticas com ênfase nas demandas político- sociais das mulheres.",
+          "evidence": [
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 69,
+              "printed_page": null,
+              "section": "Tabela 1, linha 6",
+              "excerpt": "Compreender e aplicar conceitos políticos básicos (Estado, poder, formas, sistemas e regimes de governo, soberania etc.) na análise da formação de diferentes países, povos e nações e de suas experiências políticas com ênfase nas demandas político- sociais das mulheres.",
+              "locator": "table:0/row:5/cell:4",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                313.59872020374644,
+                332.9299774169922,
+                497.522216796875,
+                418.10816678133875
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            },
+            {
+              "source_id": "es-em-ci-ncias-humanas",
+              "page": 69,
+              "printed_page": null,
+              "section": "Código na célula física associada à redação",
+              "excerpt": "EM13CHS603HISb/E\nS",
+              "locator": "table:0/row:5/cell:4/code-locator",
+              "bbox": [
+                217.422003004286,
+                332.9299774169922,
+                313.59872020374644,
+                418.10816678133875
+              ],
+              "method": "physical-code-cell-locator",
+              "evidence_role": "code_locator",
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        }
+      ],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [
+        {
+          "code": "EM13CHS214GEO/E\nS",
+          "page": 43,
+          "locator": "table:0/row:1/cell:2",
+          "old": [],
+          "new": [
+            "Localizar, identificar e avaliar a distribuição da população considerando a diversidade étnico-cultural e religiosa no Brasil e no mundo."
+          ]
+        },
+        {
+          "code": "EM13CHS503HISb/E",
+          "page": 69,
+          "locator": "table:0/row:4/cell:4",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CHS109GEO/E\nS",
+          "page": 63,
+          "locator": "table:0/row:3/cell:4",
+          "old": [],
+          "new": [
+            "Comparar, analisar e avaliar as modificações das paisagens do contexto local para o global e o uso desses lugares em diferentes tempos por diferentes tipos de sociedade com destaque para os povos originários."
+          ]
+        },
+        {
+          "code": "EM13CHS406GEO/E\nS",
+          "page": 41,
+          "locator": "table:0/row:33/cell:2",
+          "old": [],
+          "new": [
+            "Discutir a regionalização econômica do espaço mundial, e suas ferramentas de fortalecimento tais quais os Blocos Econômicos."
+          ]
+        },
+        {
+          "code": "EM13CHS201SOC/E\nS",
+          "page": 21,
+          "locator": "table:0/row:32/cell:2",
+          "old": [],
+          "new": [
+            "Analisar e caracterizar as dinâmicas das populações, das mercadorias e do capital nos diversos continentes, em especial na América Latina e no Brasil, compreendendo os diversos movimentos sociais e suas dinâmicas de enfrentamento político e social."
+          ]
+        },
+        {
+          "code": "EM13CHS307GEO/E\nS",
+          "page": 33,
+          "locator": "table:0/row:4/cell:2",
+          "old": [],
+          "new": [
+            "Identificar e especializar a disponibilidade de recursos minerais no Brasil, bem como seu beneficiamento as questões socioambientais decorrentes de sua exploração."
+          ]
+        },
+        {
+          "code": "EM13CHS502HISa/E",
+          "page": 69,
+          "locator": "table:0/row:3/cell:4",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CHS406GEO/E",
+          "page": 41,
+          "locator": "table:0/row:33/cell:2",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CHS603HISb/E\nS",
+          "page": 69,
+          "locator": "table:0/row:5/cell:4",
+          "old": [],
+          "new": [
+            "Compreender e aplicar conceitos políticos básicos (Estado, poder, formas, sistemas e regimes de governo, soberania etc.) na análise da formação de diferentes países, povos e nações e de suas experiências políticas com ênfase nas demandas político- sociais das mulheres."
+          ]
+        },
+        {
+          "code": "EM13CHS214GEO/E",
+          "page": 43,
+          "locator": "table:0/row:1/cell:2",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CHS107GEO/E",
+          "page": 33,
+          "locator": "table:0/row:2/cell:2",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CHS107HIS/E",
+          "page": 65,
+          "locator": "table:0/row:47/cell:2",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CHS211GEO/E",
+          "page": 39,
+          "locator": "table:0/row:12/cell:2",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CHS107GEO/E\nS",
+          "page": 33,
+          "locator": "table:0/row:2/cell:2",
+          "old": [],
+          "new": [
+            "Identificar as dinâmicas do clima, bem como a diferenciação espacial entre seus tipos e correlacionar os aspectos climáticos às características das diferentes paisagens."
+          ]
+        },
+        {
+          "code": "EM13CHS211GEO/E\nS",
+          "page": 39,
+          "locator": "table:0/row:12/cell:2",
+          "old": [],
+          "new": [
+            "Conhecer conceitos, taxas, índices demográficos, bem como utilizar a linguagem gráfica para representar a estrutura e a composição da população."
+          ]
+        },
+        {
+          "code": "EM13CHS309GE0/E\nS",
+          "page": 41,
+          "locator": "table:0/row:20/cell:2",
+          "old": [],
+          "new": [
+            "Identificar os tipos de industrialização nos diferentes continentes e a constituição do meio técnico-científico-informacional no mundo globalizado."
+          ]
+        },
+        {
+          "code": "EM13CHS503HISb/E\nS",
+          "page": 69,
+          "locator": "table:0/row:4/cell:4",
+          "old": [],
+          "new": [
+            "Identificar diversas formas de violência (física, simbólica, psicológica etc.), sobretudo em relação a grupos minoritários (povos indígenas, afrodescendentes, camponeses, mulheres), suas causas, significados e usos políticos, sociais e culturais, avaliando e propondo mecanismos para combatê-las, com base em argumentos éticos."
+          ]
+        },
+        {
+          "code": "EM13CHS502HISa/E\nS",
+          "page": 69,
+          "locator": "table:0/row:3/cell:4",
+          "old": [],
+          "new": [
+            "Analisar situações da vida cotidiana (estilos de vida, valores, condutas etc.) dos povos tradicionais americanos, brasileiros e espírito-santenses, desnaturalizando e problematizando formas de desigualdade e preconceito, e propor ações que promovam os Direitos Humanos, a solidariedade e o respeito às diferenças e às escolhas individuais."
+          ]
+        },
+        {
+          "code": "EM13CHS603HISb/E",
+          "page": 69,
+          "locator": "table:0/row:5/cell:4",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CHS109GEO/E",
+          "page": 63,
+          "locator": "table:0/row:3/cell:4",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CHS307GEO/E",
+          "page": 33,
+          "locator": "table:0/row:4/cell:2",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CHS309GE0/E",
+          "page": 41,
+          "locator": "table:0/row:20/cell:2",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CHS201SOC/E",
+          "page": 21,
+          "locator": "table:0/row:32/cell:2",
+          "old": [
+            "S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CHS210GEO/ES",
+          "page": 35,
+          "locator": "table:0/column:228.1-327.4/anchor:3",
+          "old": [
+            "EM13CHS2016GEO/E S"
+          ],
+          "new": []
+        },
+        {
+          "code": "EM13CHS107HIS/E\nS",
+          "page": 65,
+          "locator": "table:0/row:47/cell:2",
+          "old": [],
+          "new": [
+            "Conhecer o patrimônio cultural afro- brasileiro e indígena no Brasil e no Espírito Santo com vistas a atuar para sua valorização e preservação."
+          ]
+        }
+      ],
+      "production_cache_before_sha256": "a7a1c48d68c2d489fa3169fb7d6e42037d2f2c44ffc928fad8d0763b9cf7f374",
+      "production_cache_after_sha256": "a7a1c48d68c2d489fa3169fb7d6e42037d2f2c44ffc928fad8d0763b9cf7f374",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 148,
+      "independent_inventory_code_cells": 148,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-ifa-lingchsa-6-1",
+      "artifact_sha256": "d5ac69230fe71ac97de5c6fe0953a6a627da35bb3348fe1738c907c4ed3161cf",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/f5da74e12a11b0ddc79e52577850a396008830ff2bcad6b72d8cf257ecba3db4/d5ac69230fe71ac97de5c6fe0953a6a627da35bb3348fe1738c907c4ed3161cf.json",
+      "candidate_sha256": "9c737a3740c570f2684d046edfcaafadb694464a9fabd51864f8cbc8fad0a468",
+      "coded_items": 151,
+      "coded_fragments": 151,
+      "literal_failed_items": [
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:621e22129376c8698139",
+          "code": "EMIFALGG102",
+          "page": 54,
+          "locator": "table:0/column:229.9-339.4/anchor:1",
+          "text": "e Planejamento de planejamento de diferentes mídias, Contexto participação Competência 3, Relação entre linguísticos e Competência 5, Morfossintaxe e Conteúdos gramaticais Advérbios - Expressões - Verbos - (TI06) Educação em (TI07) Educação (TI12) Trabalho, (TI14) Trabalho e",
+          "evidence": [
+            {
+              "source_id": "es-ifa-lingchsa-6-1",
+              "page": 54,
+              "printed_page": null,
+              "section": null,
+              "excerpt": "e Planejamento de planejamento de diferentes mídias, Contexto participação Competência 3, Relação entre linguísticos e Competência 5, Morfossintaxe e Conteúdos gramaticais Advérbios - Expressões - Verbos - (TI06) Educação em (TI07) Educação (TI12) Trabalho, (TI14) Trabalho e",
+              "locator": "table:0/column:229.9-339.4/anchor:1",
+              "method": "ruled-column-continuation-recovery",
+              "bbox": [
+                229.89200668334962,
+                160.27479553222656,
+                339.4436950683594,
+                484.9080047607422
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:eb929ef6e438fd979a50",
+          "code": "EMIFALGG502",
+          "page": 54,
+          "locator": "table:0/column:681.4-774.5/anchor:4",
+          "text": "e relacionadas memórias locais provocados gif, charge e Afro-Brasileira,",
+          "evidence": [
+            {
+              "source_id": "es-ifa-lingchsa-6-1",
+              "page": 54,
+              "printed_page": null,
+              "section": null,
+              "excerpt": "e relacionadas memórias locais provocados gif, charge e Afro-Brasileira,",
+              "locator": "table:0/column:681.4-774.5/anchor:4",
+              "method": "ruled-column-continuation-recovery",
+              "bbox": [
+                681.4097290039062,
+                213.67478942871094,
+                774.5211791992188,
+                484.9080047607422
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        }
+      ],
+      "rawdict_unmatched_fragments": [
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:621e22129376c8698139",
+          "code": "EMIFALGG102",
+          "page": 54,
+          "locator": "table:0/column:229.9-339.4/anchor:1",
+          "evidence_index": 0,
+          "bbox": [
+            229.89200668334962,
+            160.27479553222656,
+            339.4436950683594,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "e Planejamento de planejamento de diferentes mídias, Contexto participação Competência 3, Relação entre linguísticos e Competência 5, Morfossintaxe e Conteúdos gramaticais Advérbios - Expressões - Verbos - (TI06) Educação em (TI07) Educação (TI12) Trabalho, (TI14) Trabalho e",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": false
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:38b80b80c85221a98803",
+          "code": "EMIFALGG501",
+          "page": 54,
+          "locator": "table:0/column:594.6-681.4/anchor:3",
+          "evidence_index": 0,
+          "bbox": [
+            594.569091796875,
+            213.67478942871094,
+            681.4097290039062,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": ", textos e práticas documentação de efeitos de sentido sociais (meme, obviamente de, sem dúvida de obrigação) e Cultura",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:eb929ef6e438fd979a50",
+          "code": "EMIFALGG502",
+          "page": 54,
+          "locator": "table:0/column:681.4-774.5/anchor:4",
+          "evidence_index": 0,
+          "bbox": [
+            681.4097290039062,
+            213.67478942871094,
+            774.5211791992188,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "e relacionadas memórias locais provocados gif, charge e Afro-Brasileira,",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": false
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:a3fb391c0f3739df4f10",
+          "code": "EMIFALGG503",
+          "page": 54,
+          "locator": "table:0/column:774.5-925.5/anchor:5",
+          "evidence_index": 0,
+          "bbox": [
+            774.5211791992188,
+            213.67478942871094,
+            925.5299987792969,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "] à defesa de direitos e à (Mapa afetivo) [Eixo IV, pelos usos de recursos HQ digitais etc.) [Eixo IV, Africana e Indígena.",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:ca2a9175cb145f0bc75c",
+          "code": "EMIFALGG303",
+          "page": 54,
+          "locator": "table:0/column:321.8-415.0/anchor:6",
+          "evidence_index": 0,
+          "bbox": [
+            321.8127746582031,
+            267.33477783203125,
+            415.0456237792969,
+            321.73480224609375
+          ],
+          "role": "text",
+          "excerpt": "e textos, multissemióticos",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:4ab2a4e1bbd26d445ae4",
+          "code": "EMIFALGG304",
+          "page": 54,
+          "locator": "table:0/column:415.0-925.5/anchor:7",
+          "evidence_index": 0,
+          "bbox": [
+            415.0456237792969,
+            267.33477783203125,
+            925.5299987792969,
+            321.73480224609375
+          ],
+          "role": "text",
+          "excerpt": "] reconstrução da textualidade e efeitos de sentido provocados pelos usos de recursos - Linguagem digital e redes sociais (meme, gif, charge e HQ digitais etc.) [Eixo IV,",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:93d2d74bcb85e35c3d60",
+          "code": "EMIFALGG501",
+          "page": 54,
+          "locator": "table:0/column:321.8-408.5/anchor:8",
+          "evidence_index": 0,
+          "bbox": [
+            321.8127746582031,
+            320.73480224609375,
+            408.5430603027344,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": ", e elementos gramaticais da persuasão de dúvida: de modais: poder, em Direitos para as Relações Ciência e e Relações de",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:a516a86c4c8a4da2ddaa",
+          "code": "EMIFALGG502",
+          "page": 54,
+          "locator": "table:0/column:408.5-501.8/anchor:9",
+          "evidence_index": 0,
+          "bbox": [
+            408.5430603027344,
+            320.73480224609375,
+            501.7759094238281,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "e notacionais da talvez, provavelmente, probabilidade: é possível dever, ter que Humanos. Étnico-Raciais Tecnologia. Poder.",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:f00cecd45c2d7882fbb4",
+          "code": "EMIFALGG503",
+          "page": 54,
+          "locator": "table:0/column:501.8-925.5/anchor:10",
+          "evidence_index": 0,
+          "bbox": [
+            501.7759094238281,
+            320.73480224609375,
+            925.5299987792969,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "] escrita: certamente, obviamente que, há chances de, sem dúvida (diferentes graus de obrigação) e Ensino de História e Cultura Afro-Brasileira, Africana e Indígena.",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        }
+      ],
+      "trace_unmatched_fragments": [
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:621e22129376c8698139",
+          "code": "EMIFALGG102",
+          "page": 54,
+          "locator": "table:0/column:229.9-339.4/anchor:1",
+          "evidence_index": 0,
+          "bbox": [
+            229.89200668334962,
+            160.27479553222656,
+            339.4436950683594,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "e Planejamento de planejamento de diferentes mídias, Contexto participação Competência 3, Relação entre linguísticos e Competência 5, Morfossintaxe e Conteúdos gramaticais Advérbios - Expressões - Verbos - (TI06) Educação em (TI07) Educação (TI12) Trabalho, (TI14) Trabalho e",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": false
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:38b80b80c85221a98803",
+          "code": "EMIFALGG501",
+          "page": 54,
+          "locator": "table:0/column:594.6-681.4/anchor:3",
+          "evidence_index": 0,
+          "bbox": [
+            594.569091796875,
+            213.67478942871094,
+            681.4097290039062,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": ", textos e práticas documentação de efeitos de sentido sociais (meme, obviamente de, sem dúvida de obrigação) e Cultura",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:eb929ef6e438fd979a50",
+          "code": "EMIFALGG502",
+          "page": 54,
+          "locator": "table:0/column:681.4-774.5/anchor:4",
+          "evidence_index": 0,
+          "bbox": [
+            681.4097290039062,
+            213.67478942871094,
+            774.5211791992188,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "e relacionadas memórias locais provocados gif, charge e Afro-Brasileira,",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": false
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:a3fb391c0f3739df4f10",
+          "code": "EMIFALGG503",
+          "page": 54,
+          "locator": "table:0/column:774.5-925.5/anchor:5",
+          "evidence_index": 0,
+          "bbox": [
+            774.5211791992188,
+            213.67478942871094,
+            925.5299987792969,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "] à defesa de direitos e à (Mapa afetivo) [Eixo IV, pelos usos de recursos HQ digitais etc.) [Eixo IV, Africana e Indígena.",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:ca2a9175cb145f0bc75c",
+          "code": "EMIFALGG303",
+          "page": 54,
+          "locator": "table:0/column:321.8-415.0/anchor:6",
+          "evidence_index": 0,
+          "bbox": [
+            321.8127746582031,
+            267.33477783203125,
+            415.0456237792969,
+            321.73480224609375
+          ],
+          "role": "text",
+          "excerpt": "e textos, multissemióticos",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:4ab2a4e1bbd26d445ae4",
+          "code": "EMIFALGG304",
+          "page": 54,
+          "locator": "table:0/column:415.0-925.5/anchor:7",
+          "evidence_index": 0,
+          "bbox": [
+            415.0456237792969,
+            267.33477783203125,
+            925.5299987792969,
+            321.73480224609375
+          ],
+          "role": "text",
+          "excerpt": "] reconstrução da textualidade e efeitos de sentido provocados pelos usos de recursos - Linguagem digital e redes sociais (meme, gif, charge e HQ digitais etc.) [Eixo IV,",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:93d2d74bcb85e35c3d60",
+          "code": "EMIFALGG501",
+          "page": 54,
+          "locator": "table:0/column:321.8-408.5/anchor:8",
+          "evidence_index": 0,
+          "bbox": [
+            321.8127746582031,
+            320.73480224609375,
+            408.5430603027344,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": ", e elementos gramaticais da persuasão de dúvida: de modais: poder, em Direitos para as Relações Ciência e e Relações de",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:a516a86c4c8a4da2ddaa",
+          "code": "EMIFALGG502",
+          "page": 54,
+          "locator": "table:0/column:408.5-501.8/anchor:9",
+          "evidence_index": 0,
+          "bbox": [
+            408.5430603027344,
+            320.73480224609375,
+            501.7759094238281,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "e notacionais da talvez, provavelmente, probabilidade: é possível dever, ter que Humanos. Étnico-Raciais Tecnologia. Poder.",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-ifa-lingchsa-6-1:f00cecd45c2d7882fbb4",
+          "code": "EMIFALGG503",
+          "page": 54,
+          "locator": "table:0/column:501.8-925.5/anchor:10",
+          "evidence_index": 0,
+          "bbox": [
+            501.7759094238281,
+            320.73480224609375,
+            925.5299987792969,
+            484.9080047607422
+          ],
+          "role": "text",
+          "excerpt": "] escrita: certamente, obviamente que, há chances de, sem dúvida (diferentes graus de obrigação) e Ensino de História e Cultura Afro-Brasileira, Africana e Indígena.",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        }
+      ],
+      "canonical_changes_against_old_cache": [
+        {
+          "code": "EMIFALGG102",
+          "page": 54,
+          "locator": "table:0/column:229.9-339.4/anchor:1",
+          "old": [
+            "e Planejamento de planejamento de diferentes mídias, Contexto participação Competência 3, Relação entre linguísticos e Competência 5, Morfossintaxe e Conteúdos gramaticais Advérbios - - Expressões - Verbos (TI06) Educação em (TI07) Educação (TI12) Trabalho, (TI14) Trabalho e"
+          ],
+          "new": [
+            "e Planejamento de planejamento de diferentes mídias, Contexto participação Competência 3, Relação entre linguísticos e Competência 5, Morfossintaxe e Conteúdos gramaticais Advérbios - Expressões - Verbos - (TI06) Educação em (TI07) Educação (TI12) Trabalho, (TI14) Trabalho e"
+          ]
+        }
+      ],
+      "production_cache_before_sha256": "02a9e61feeefd312b20747560c0098bf630dae674882786516cca1d3e7b23cf6",
+      "production_cache_after_sha256": "02a9e61feeefd312b20747560c0098bf630dae674882786516cca1d3e7b23cf6",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 152,
+      "independent_inventory_code_cells": 51,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": true,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-curriculoem-aprofundamento-da-area-de-chsa",
+      "artifact_sha256": "a5f9bc957d202514209462c4f8a76e1b3b3270fe9818d01fadd7cc09c827de80",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/f5da74e12a11b0ddc79e52577850a396008830ff2bcad6b72d8cf257ecba3db4/a5f9bc957d202514209462c4f8a76e1b3b3270fe9818d01fadd7cc09c827de80.json",
+      "candidate_sha256": "de0b4a51e1d4125226780b48b2f0892f3b7d530c8a2ac08eba2f0679a03ace9b",
+      "coded_items": 262,
+      "coded_fragments": 262,
+      "literal_failed_items": [
+        {
+          "id": "ca:es-curriculoem-aprofundamento-da-area-de-chsa:2a20a4de4a21d03b9cc3",
+          "code": "EMIFCHSA03",
+          "page": 35,
+          "locator": "table:0/row:1/cell:0",
+          "text": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de campo, experimental etc.) em fontes confiáveis, informações sobre temas e processos de natureza histórica, social, econômica filosófica, política e/ou cultural, em âmbito local, regional, nacional e/ou global, identificando os diversos pontos de vista e posicionando-se mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+          "evidence": [
+            {
+              "source_id": "es-curriculoem-aprofundamento-da-area-de-chsa",
+              "page": 35,
+              "printed_page": null,
+              "section": "Tabela 1, linha 2",
+              "excerpt": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de campo, experimental etc.) em fontes confiáveis, informações sobre temas e processos de natureza histórica, social, econômica filosófica, política e/ou cultural, em âmbito local, regional, nacional e/ou global, identificando os diversos pontos de vista e posicionando-se mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+              "locator": "table:0/row:1/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                56.99127388000488,
+                117.86119384765625,
+                538.689980246804,
+                276.6099853515625
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        }
+      ],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [],
+      "production_cache_before_sha256": "0dc889ed94fa36ad5a41a014a5f5fc04a2c72e1ed5c58e889c6f908e6d1a7a71",
+      "production_cache_after_sha256": "0dc889ed94fa36ad5a41a014a5f5fc04a2c72e1ed5c58e889c6f908e6d1a7a71",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 236,
+      "independent_inventory_code_cells": 125,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22",
+      "artifact_sha256": "23223e7993fd20bf59642c94a5503e909b311aec739255dcf4d362ea21edf6f1",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/f5da74e12a11b0ddc79e52577850a396008830ff2bcad6b72d8cf257ecba3db4/23223e7993fd20bf59642c94a5503e909b311aec739255dcf4d362ea21edf6f1.json",
+      "candidate_sha256": "73be015887f51b01975c8269b3155412980334657cd247eaa3e28f010b9f98d3",
+      "coded_items": 462,
+      "coded_fragments": 462,
+      "literal_failed_items": [
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:32b71c19bb7ba7cac42b",
+          "code": "EMIFCNT05",
+          "page": 47,
+          "locator": "table:0/row:48/cell:1",
+          "text": "Selecionar e mobilizar",
+          "evidence": [
+            {
+              "source_id": "es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22",
+              "page": 47,
+              "printed_page": null,
+              "section": "Tabela 1, linha 49",
+              "excerpt": "Selecionar e mobilizar",
+              "locator": "table:0/row:48/cell:1",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                220.1954475258881,
+                565.1300048828125,
+                390.23180412523675,
+                575.68994140625
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        }
+      ],
+      "rawdict_unmatched_fragments": [
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:8198b7c5f0770fa5cc2c",
+          "code": "EMIFCNT12",
+          "page": 29,
+          "locator": "anchor:11/y:497.68",
+          "evidence_index": 0,
+          "bbox": [
+            83.00800323486328,
+            495.6839904785156,
+            575.4400024414062,
+            817.9199829101562
+          ],
+          "role": "text",
+          "excerpt": "Desenvolver projetos pessoais ou produtivos, utilizando as Ciências da Natureza e suas Tecnologias para formular propostas concretas, articuladas com o projeto de vida. 53",
+          "rawdict_cluster_match": false,
+          "trace_match": true,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:08e12d700719bb615500",
+          "code": "EMIFMAT12",
+          "page": 33,
+          "locator": "anchor:11/y:549.31",
+          "evidence_index": 0,
+          "bbox": [
+            83.00800323486328,
+            547.3140258789062,
+            575.4400024414062,
+            817.9199829101562
+          ],
+          "role": "text",
+          "excerpt": "Desenvolver projetos pessoais ou produtivos, utilizando processos e conhecimentos matemáticos para formular propostas concretas, articuladas com o projeto de vida. 57",
+          "rawdict_cluster_match": false,
+          "trace_match": true,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:5eb56a6e4330daa732a3",
+          "code": "EMIFCHSA12",
+          "page": 38,
+          "locator": "anchor:11/y:591.03",
+          "evidence_index": 0,
+          "bbox": [
+            83.00800323486328,
+            589.0260009765625,
+            575.4400024414062,
+            817.9199829101562
+          ],
+          "role": "text",
+          "excerpt": "Desenvolver projetos pessoais ou produtivos, utilizando as Ciências Humanas e Sociais Aplicadas para formular propostas concretas, articuladas com o projeto de vida, em âmbito local, regional, nacional e/ou global. 62",
+          "rawdict_cluster_match": false,
+          "trace_match": true,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:c448864d1747606e5124",
+          "code": "EMIFCNT02",
+          "page": 47,
+          "locator": "table:0/row:20/cell:1",
+          "evidence_index": 0,
+          "bbox": [
+            220.1954475258881,
+            269.5899658203125,
+            390.23180412523675,
+            280.14996337890625
+          ],
+          "role": "text",
+          "excerpt": "Levantar e testar hipótese s",
+          "rawdict_cluster_match": false,
+          "trace_match": true,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:c163105c2db6a77f9c2e",
+          "code": "EMIFCNT04",
+          "page": 47,
+          "locator": "table:0/row:40/cell:1",
+          "evidence_index": 0,
+          "bbox": [
+            220.1954475258881,
+            480.6199951171875,
+            390.23180412523675,
+            491.17999267578125
+          ],
+          "role": "text",
+          "excerpt": "Reconhecer produtos e/o u",
+          "rawdict_cluster_match": false,
+          "trace_match": true,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:32b71c19bb7ba7cac42b",
+          "code": "EMIFCNT05",
+          "page": 47,
+          "locator": "table:0/row:48/cell:1",
+          "evidence_index": 0,
+          "bbox": [
+            220.1954475258881,
+            565.1300048828125,
+            390.23180412523675,
+            575.68994140625
+          ],
+          "role": "text",
+          "excerpt": "Selecionar e mobilizar",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": false
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:2e65c8eefddb4886f623",
+          "code": "EMIFCNT02",
+          "page": 59,
+          "locator": "table:0/row:17/cell:1",
+          "evidence_index": 0,
+          "bbox": [
+            220.13000304123452,
+            254.7699991861979,
+            418.68324141068894,
+            265.3299967447917
+          ],
+          "role": "text",
+          "excerpt": "Levantar e testar hipóteses sobr e",
+          "rawdict_cluster_match": false,
+          "trace_match": true,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:d5b33d3e221b1b711d73",
+          "code": "EMIFCNT04",
+          "page": 71,
+          "locator": "table:0/row:33/cell:1",
+          "evidence_index": 0,
+          "bbox": [
+            241.36993634160802,
+            399.07998911539715,
+            432.88999672202794,
+            409.1399917602539
+          ],
+          "role": "text",
+          "excerpt": "Reconhecer produtos e/ou",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:6e70db1a597db289467a",
+          "code": "EMIFCNT12",
+          "page": 80,
+          "locator": "anchor:11/y:589.63",
+          "evidence_index": 0,
+          "bbox": [
+            61.384002685546875,
+            587.6339721679688,
+            575.4400024414062,
+            817.9199829101562
+          ],
+          "role": "text",
+          "excerpt": "Desenvolver projetos pessoais ou produtivos, utilizando as Ciências da Natureza e suas Tecnologias para formular propostas concretas, articuladas com o projeto de vida. 104",
+          "rawdict_cluster_match": false,
+          "trace_match": true,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:8a55d20e1aa1f1c5de2e",
+          "code": "EMIFCNT12",
+          "page": 84,
+          "locator": "anchor:11/y:575.71",
+          "evidence_index": 0,
+          "bbox": [
+            61.384002685546875,
+            573.7139892578125,
+            575.4400024414062,
+            817.9199829101562
+          ],
+          "role": "text",
+          "excerpt": "Desenvolver projetos pessoais ou produtivos, utilizando as Ciências da Natureza e suas Tecnologias para formular propostas concretas, articuladas com o projeto de vida. 108",
+          "rawdict_cluster_match": false,
+          "trace_match": true,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:4c9beafbb6a08b5b2f32",
+          "code": "EMIFCG12",
+          "page": 89,
+          "locator": "anchor:11/y:551.23",
+          "evidence_index": 0,
+          "bbox": [
+            61.384002685546875,
+            549.2340087890625,
+            575.4400024414062,
+            817.9199829101562
+          ],
+          "role": "text",
+          "excerpt": "Refletir continuamente sobre seu próprio desenvolvimento e sobre seus objetivos presentes e futuros, identificando aspirações e oportunidades, inclusive relacionadas ao mundo do trabalho, que orientem escolhas, esforços e ações em relação à sua vida pessoal, profissional e cidadã. 113",
+          "rawdict_cluster_match": false,
+          "trace_match": true,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:99e81c415cedcd15cd37",
+          "code": "EMIFMAT12",
+          "page": 93,
+          "locator": "anchor:11/y:575.47",
+          "evidence_index": 0,
+          "bbox": [
+            61.384002685546875,
+            573.4739990234375,
+            575.4400024414062,
+            817.9199829101562
+          ],
+          "role": "text",
+          "excerpt": "Desenvolver projetos pessoais ou produtivos, utilizando processos e conhecimentos matemáticos para formular propostas concretas, articuladas com o projeto de vida. 117",
+          "rawdict_cluster_match": false,
+          "trace_match": true,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:6196cfe552b1f1edaea3",
+          "code": "EMIFLGG12",
+          "page": 97,
+          "locator": "anchor:11/y:604.27",
+          "evidence_index": 0,
+          "bbox": [
+            61.384002685546875,
+            602.2739868164062,
+            575.4400024414062,
+            817.9199829101562
+          ],
+          "role": "text",
+          "excerpt": "Desenvolver projetos pessoais ou produtivos, utilizando as práticas de linguagens socialmente relevantes, em diferentes campos de atuação, para formular propostas concretas, articuladas com o projeto de vida. 121",
+          "rawdict_cluster_match": false,
+          "trace_match": true,
+          "actual_evidence_check": true
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:94aef0f4d4f560efc420",
+          "code": "EMIFLGG12",
+          "page": 101,
+          "locator": "anchor:11/y:604.27",
+          "evidence_index": 0,
+          "bbox": [
+            61.384002685546875,
+            602.2739868164062,
+            575.4400024414062,
+            817.9199829101562
+          ],
+          "role": "text",
+          "excerpt": "Desenvolver projetos pessoais ou produtivos, utilizando as práticas de linguagens socialmente relevantes, em diferentes campos de atuação, para formular propostas concretas, articuladas com o projeto de vida. 125",
+          "rawdict_cluster_match": false,
+          "trace_match": true,
+          "actual_evidence_check": true
+        }
+      ],
+      "trace_unmatched_fragments": [
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:32b71c19bb7ba7cac42b",
+          "code": "EMIFCNT05",
+          "page": 47,
+          "locator": "table:0/row:48/cell:1",
+          "evidence_index": 0,
+          "bbox": [
+            220.1954475258881,
+            565.1300048828125,
+            390.23180412523675,
+            575.68994140625
+          ],
+          "role": "text",
+          "excerpt": "Selecionar e mobilizar",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": false
+        },
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22:d5b33d3e221b1b711d73",
+          "code": "EMIFCNT04",
+          "page": 71,
+          "locator": "table:0/row:33/cell:1",
+          "evidence_index": 0,
+          "bbox": [
+            241.36993634160802,
+            399.07998911539715,
+            432.88999672202794,
+            409.1399917602539
+          ],
+          "role": "text",
+          "excerpt": "Reconhecer produtos e/ou",
+          "rawdict_cluster_match": false,
+          "trace_match": false,
+          "actual_evidence_check": true
+        }
+      ],
+      "canonical_changes_against_old_cache": [],
+      "production_cache_before_sha256": "3b7491f52f7dcd9c7c7fd3f6675213ac56a0e1a127c5693345d6f2a3f3986e8f",
+      "production_cache_after_sha256": "3b7491f52f7dcd9c7c7fd3f6675213ac56a0e1a127c5693345d6f2a3f3986e8f",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 462,
+      "independent_inventory_code_cells": 354,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-curriculo-em-aprofundamento-entreareas-chsa-e-cn-alterado-20-04-22",
+      "artifact_sha256": "0abd9718b7b02fd6b5e49e5f0e722a7eb4af8f18872c3caa4a652daca3c1a662",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/f5da74e12a11b0ddc79e52577850a396008830ff2bcad6b72d8cf257ecba3db4/0abd9718b7b02fd6b5e49e5f0e722a7eb4af8f18872c3caa4a652daca3c1a662.json",
+      "candidate_sha256": "1955c59ce1b31898118ffa404ebc14850bde8c2ee98986a4029139c64cefeeef",
+      "coded_items": 331,
+      "coded_fragments": 331,
+      "literal_failed_items": [
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-chsa-e-cn-alterado-20-04-22:ac7b7f89139e4ec92b54",
+          "code": "EMIFCHSA03",
+          "page": 31,
+          "locator": "table:0/row:1/cell:0",
+          "text": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de campo experimental etc.) em fontes confiáveis, informações sobre temas e processos de natureza histórica, social, econômica filosófica, política e/ou cultural, em âmbito local, regional, nacional e/ou global, identificando os diversos pontos de vista e posicionando-se mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+          "evidence": [
+            {
+              "source_id": "es-curriculo-em-aprofundamento-entreareas-chsa-e-cn-alterado-20-04-22",
+              "page": 31,
+              "printed_page": null,
+              "section": "Tabela 1, linha 2",
+              "excerpt": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de campo experimental etc.) em fontes confiáveis, informações sobre temas e processos de natureza histórica, social, econômica filosófica, política e/ou cultural, em âmbito local, regional, nacional e/ou global, identificando os diversos pontos de vista e posicionando-se mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+              "locator": "table:0/row:1/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                56.99127388000488,
+                103.6999755859375,
+                538.689980246804,
+                262.6899871826172
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        }
+      ],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [],
+      "production_cache_before_sha256": "a7a8510bbd434f3068224da66bd4d70b829bad13be91d4cd7bff7989f4234f38",
+      "production_cache_after_sha256": "a7a8510bbd434f3068224da66bd4d70b829bad13be91d4cd7bff7989f4234f38",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 313,
+      "independent_inventory_code_cells": 168,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    }
+  ],
+  "human_review": false,
+  "production_files_modified": false,
+  "native_only_ocr_skipped": true
+}

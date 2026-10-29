@@ -1,0 +1,62 @@
+{
+  "format": "record_text_corrections_v1",
+  "source_id": "rj-em-integral-tecnico",
+  "source_sha256": "7a1d9ba3f4616219ef927dae652dabb9e1c1dbbba0b1b360244386905287a6e1",
+  "actor_type": "automated",
+  "actor_id": "curriculos-abertos:southeast-completeness",
+  "generated_at": "2026-10-28T20:34:03.990763+00:00",
+  "previous_publications_immutable": true,
+  "official_curriculum_edition_changed": false,
+  "records": [
+    {
+      "item_id": "ca:rj-em-integral-tecnico:f998ccafc4aba293f8c8",
+      "before_text_sha256": "de72d6ecb83042e151e469adc14b1390e6e0c48f9ec197f33fe013291f3c7595",
+      "after_text_sha256": "091eafac68ed3afb3a8a71812b26ebca0908e9b4714e5cc9777d5227a279cd6c",
+      "before_text": "Dialogar e produzir entendimento mútuo, nas diversas linguagens (artísticas, corporais e verbais), com vistas ao interesse comum pautado em princípios e valores de equidade assentados na democracia T e nos Direitos Humanos. C",
+      "after_text": "Dialogar e produzir entendimento mútuo, nas diversas linguagens (artísticas, corporais e verbais), com vistas ao interesse comum pautado em princípios e valores de equidade assentados na democracia e nos Direitos Humanos.",
+      "reason": "Correção técnica da seleção geométrica: os fragmentos T e C pertencem a palavras inteiras da coluna vizinha (Tecnologias e C):), comprovadas no PDF original e em recorte mínimo. A seleção por centros de palavras preserva integralmente a prosa da habilidade, sem correção ortográfica ou mudança da edição oficial.",
+      "proofs": [
+        {
+          "path": "docs/evidence/source-audit-southeast-completeness/rj-integral-p669-coded-body-v1-source-proof.json",
+          "sha256": "fae3e2d4f07b34e25341320d711fdd731947ca47b3743f426ead3c5b1e15fe27",
+          "selector": {
+            "source_id": "rj-em-integral-tecnico",
+            "item_id": "ca:rj-em-integral-tecnico:f998ccafc4aba293f8c8",
+            "physical_page": 669,
+            "code": "EM13LGG204"
+          }
+        },
+        {
+          "path": "docs/evidence/source-audit-southeast-completeness/rj-integral-p669-minimal-glyph-crop.json",
+          "sha256": "a10a37511f31ef2b534499a98bf334e5a7c8bd35da95fb7f552cd261274b09b3",
+          "selector": {
+            "source_id": "rj-em-integral-tecnico",
+            "item_id": "ca:rj-em-integral-tecnico:f998ccafc4aba293f8c8",
+            "physical_page": 669,
+            "code": "EM13LGG204"
+          }
+        },
+        {
+          "path": "docs/evidence/source-audit-southeast-completeness/rj-integral-v2-scope-replay-proof.json",
+          "sha256": "efb99c5eaa06ae9a85ff30799029657cd47eae413bd9d5b307263953a5912042",
+          "selector": {
+            "source_id": "rj-em-integral-tecnico",
+            "item_id": "ca:rj-em-integral-tecnico:f998ccafc4aba293f8c8",
+            "physical_page": 669,
+            "code": "EM13LGG204"
+          }
+        },
+        {
+          "path": "docs/evidence/source-audit-southeast-completeness/rj-integral-structured-v2-items-real-importer-proof.json",
+          "sha256": "ba9a6be4dbecfc4f63d723e85a89302153fe54b996a2af0af61c67a5185b217d",
+          "selector": {
+            "source_id": "rj-em-integral-tecnico",
+            "item_id": "ca:rj-em-integral-tecnico:f998ccafc4aba293f8c8",
+            "physical_page": 669,
+            "code": "EM13LGG204"
+          }
+        }
+      ]
+    }
+  ]
+}

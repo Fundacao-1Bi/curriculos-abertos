@@ -1,0 +1,148 @@
+{
+  "actor_type": "automated",
+  "source_pdf_hashes": [
+    {
+      "source_id": "es-ifa-lingchsa-6-1",
+      "source_sha256": "d5ac69230fe71ac97de5c6fe0953a6a627da35bb3348fe1738c907c4ed3161cf",
+      "source_unchanged": true
+    },
+    {
+      "source_id": "es-curriculoem-aprofundamento-da-area-de-chsa",
+      "source_sha256": "a5f9bc957d202514209462c4f8a76e1b3b3270fe9818d01fadd7cc09c827de80",
+      "source_unchanged": true
+    },
+    {
+      "source_id": "es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22",
+      "source_sha256": "23223e7993fd20bf59642c94a5503e909b311aec739255dcf4d362ea21edf6f1",
+      "source_unchanged": true
+    },
+    {
+      "source_id": "es-curriculo-em-aprofundamento-entreareas-chsa-e-cn-alterado-20-04-22",
+      "source_sha256": "0abd9718b7b02fd6b5e49e5f0e722a7eb4af8f18872c3caa4a652daca3c1a662",
+      "source_unchanged": true
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/audit_columns.py",
+      "sha256": "2dc8d24eee3855db3d5c01ce999c5bd1e25c5eec85cef9ec8f17ef095dd12c53"
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/verify_metadata.py",
+      "sha256": "58a68327b3e36bfc5d64fd2897960213a7a9925d81c40e8c0104cb746ad88d9f"
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/census_ifa_continuations.py",
+      "sha256": "0acba4857951b1901a2f8dbff2f440ce6b8eb2937410becc5c341c9f689e9eb6"
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/residual_column_census.py",
+      "sha256": "b47a6ec2ed99b0d829d14cac52c580f38968519df65307b3b626e9b4f97954c3"
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/mixed_field_headings.py",
+      "sha256": "7523cb41d02e45844429293bfc6f73a5b4ec8e235eb9fde8f2b8870234d82798"
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/census_identifier_syntax.py",
+      "sha256": "d8df0a73242b0c94f43c9190939996f9e45821d1fc445325d78810587daee09a"
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/verify_v2_contract.py",
+      "sha256": "92b0e46dab8670416f91988fedf32139b245880a3bb279838532669eba375cb8"
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/independent-ifa-continuation-census.json",
+      "sha256": "630c6c24074d9cd85518dce8d7e8bacb54e19232a7e95bfc73f1cb02cd4bcda2"
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/identifier-syntax-census.json",
+      "sha256": "f22a418b889c590f254eeb6e540c764f130e798c5de583c16c510ca7ce328454"
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/continuation-reassessment.json",
+      "sha256": "5dd6eb308164c6d20a249726b49f96670a0b3192446fe2a6e8f9c0023474ceb8"
+    },
+    {
+      "path": "data/manifests/uncoded/es-complement-coded-v2-extract.py",
+      "sha256": "3899c113c92b6da10fb69397f9a86dc4c16ce6b1f6f7527de772eac9a57517d0",
+      "scope": "generator or source role proof"
+    },
+    {
+      "path": "data/manifests/uncoded/es-complement-coded-extract.py",
+      "sha256": "0291782fdd6a6ad3e2cb2a913c3ed19ccfc9c3848eba3d575f686aff88c95f71",
+      "scope": "generator or source role proof"
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/prefix-learning-inventory.json",
+      "sha256": "dd9c1a959c2379828a54450730bfede861a78846a9090387312bae538eefa8b3",
+      "scope": "generator or source role proof"
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/expected-learning-inventory.json",
+      "sha256": "d460743d0d71d7f1d3df2e6ee9c1a046ce6fcf53725766b691e43001fe84cb24",
+      "scope": "ID/role compatibility only; old cell/body bounds are not the physical denominator."
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/coded-closure.json",
+      "sha256": "3629e805a1e03655f601efd8276656583af941913de3968536b54eb1643e5401",
+      "scope": "ID/role compatibility only; old cell/body bounds are not the physical denominator."
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/literal-physical-0abd9718b7b02fd6.json",
+      "sha256": "e25bac3dd395dbf24f79ad34297f354567ed6f89203ebc85e1925fdcb639ef1c",
+      "scope": "independent source baseline/code/column/body census"
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/literal-physical-23223e7993fd20bf.json",
+      "sha256": "6302172333a7fda9b99fd5e897bab115be7a086ec839bcd757781f3822820cd1",
+      "scope": "independent source baseline/code/column/body census"
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/literal-physical-a5f9bc957d202514.json",
+      "sha256": "3c6638bd540350a4f85076653310880d109e7b6e9a1a4eeb30954e5adff91475",
+      "scope": "independent source baseline/code/column/body census"
+    },
+    {
+      "path": "docs/evidence/source-audit-southeast-fidelity/body-completeness/literal-physical-d5ac69230fe71ac9.json",
+      "sha256": "5a7c17dcae294c2678d38e7ffd881d3e5e83f0d9aba5d8931f185d1cb998e502",
+      "scope": "independent source baseline/code/column/body census"
+    }
+  ],
+  "pipeline_verified_fingerprint": {
+    "algorithm": "sha256-of-sorted-parser-file-digests",
+    "sha256": "541aa3377fd409f9c172e1580ae988f5869b25e5331c98528ab68fb9a09360db",
+    "files": {
+      "ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+      "geometry.py": "f0f2f7230602a051712fd116bce3c9d62bcb3e316d07412f8ed7ff3cda37467d",
+      "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
+      "es_ei_rows.py": "37f73cc3140e9ce2b696f7f6e8df5d7c0e299a3d71630fc23b7610f8178c1f72",
+      "es_geometry.py": "0c765d49f58355a8ff50e46c3e1aa8cf3d724ae50ba45609b2e918e9d7a9f80f",
+      "ms_glyphs.py": "b763a98f2c3691d05bdfbdf506804982bfdb37ef807a5fe8a7b7b85a043d21f1",
+      "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
+      "am_ocr_grid.py": "7b7e7f69141f67674171ea0c899b62bf42a4edf8e616ae2ea338f5b2b6f08883",
+      "am_positions.py": "e79b328f6d194891566a584dcf45d29e582debe1c8273d50960db9e7db060fad",
+      "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
+      "rs_ms_geometry.py": "f85f208c88957570f85fc6802745fff53b358f58c3c2c46a99e5aec1bee16e4e",
+      "rn_document_roles.py": "a805aefdf01c19908b23059b7f4e5bcabaa28be58f0e2efdcb5314c4eedf67c7",
+      "pe_document_roles.py": "b5074ce8cb27d67dd69838f1d4e9bac4bbb4c32074c9b46af2095c5520f55bd3",
+      "al_document_roles.py": "e6aa718293434e941d12523f82ed54c4c8bdcc46eae202497ba1964833adda98",
+      "pe_fgb_document_roles.py": "7f536ea2114968fe1211b7b3c7195aad52a05c6fc29edd806611c639486c2aca",
+      "document_roles.py": "ea4e0b161d015f6e87e4fa2b7dde202e1605815efff1e6ec48adf137f311a20f",
+      "br_primary_evidence.py": "db69ed6363af035b1f077af8cd7308496da44b84b5a8516293c57c4856ed16f3",
+      "runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce"
+    }
+  },
+  "pipeline_hash_changes_since_real_importer_proof": {
+    "raster_review_scoped.py": {
+      "verified": null,
+      "current": "b259272e1f6df2a7f8a94ea9285a6e9f0f6423fb5dcc2b46aa8cd285a133b6ea"
+    }
+  },
+  "pipeline_unchanged": false,
+  "runtime": "var/venv-pipeline/bin/python",
+  "source_pdfs_readonly": true,
+  "extraction_caches_readonly": true,
+  "full_parser_rerun": false,
+  "human_review": false
+}

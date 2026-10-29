@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-28T14:31:44.445521+00:00",
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:ma-current-inventory",
+  "target": "Documento Curricular do Território Maranhense — Educação Digital e Midiática aprovado pela Resolução211/2026",
+  "original_url": null,
+  "pdf_obtained": false,
+  "internal_index_obtained": false,
+  "confirmed_stages": "Educação Básica, conforme art1; índice interno não obtido",
+  "not_equated_to": "Orientações Curriculares - Educação Digital.pdf no catálogo específico do Ensino Médio",
+  "queries_executed": [
+    "site:educacao.ma.gov.br \"Complemento\" \"Educação Digital\" \"2026\"",
+    "\"Documento Curricular do Território Maranhense\" \"Educação Digital e Midiática\" pdf",
+    "\"DCTMA\" \"Educação Digital\" download",
+    "\"Maranhão\" \"Complemento\" \"Educação Digital e Midiática\" \"drive\"",
+    "\"UNDIME MA\" \"Digital e Midiática\"",
+    "\"UNCME\" \"Maranhão\" \"DCTMA\" \"2026\"",
+    "\"DCTMA\" \"Complemento\" filetype:pdf"
+  ],
+  "findings": [
+    {
+      "kind": "official_state_act_acquired",
+      "url": "https://diariooficial.ma.gov.br/download.php?arq=EX20260731",
+      "conclusion": "Establishes existence and normative status. Scope verification found no attached curriculum, URL or QR in the selected act."
+    },
+    {
+      "kind": "official_municipal_citations",
+      "urls": [
+        "https://diariooficial.famem.org.br/dom/dom/publicacoesDetalhes/709161",
+        "https://diariooficial.famem.org.br/dom/dom/publicacoesDetalhes/708295"
+      ],
+      "conclusion": "Additional adoption/citation leads; municipal rules are not generalized to all Maranhão and no integral state curriculum download was located."
+    },
+    {
+      "kind": "unofficial_act_mirror",
+      "url": "https://muralpublico.com.br/ma/atos/107-67/resolucao-211-2026-cee-ma",
+      "conclusion": "Lead only; replaced by original official DOE and not imported as source."
+    }
+  ],
+  "location_limit": "No original curriculum download was identified in these searches. This is not proof of unavailability elsewhere. Authentication observed at SUGEDA does not prove the unknown complement PDF itself requires login."
+}

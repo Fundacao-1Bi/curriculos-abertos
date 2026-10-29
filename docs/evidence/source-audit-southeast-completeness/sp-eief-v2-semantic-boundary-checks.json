@@ -1,0 +1,57 @@
+{
+  "sidecar_path": "data/manifests/uncoded/sp-eief-structured-v2-items.json",
+  "sidecar_sha256": "70b258fda07c4fe56fdecfc1dfc4effda05788b57dbc7844e4bb7e0cac9b46fe",
+  "checks": [
+    {
+      "case": "All115bound records preserved exactly",
+      "passed": true
+    },
+    {
+      "case": "Distinct30field-specific rights and5fields composed unchanged",
+      "passed": true
+    },
+    {
+      "case": "General6rights remain separate from30field-specific rights",
+      "passed": true
+    },
+    {
+      "case": "Field rights do not borrow ageheaders from objective columns",
+      "passed": true
+    },
+    {
+      "case": "Only3source-provided nonstandard identifiers added",
+      "passed": true
+    },
+    {
+      "case": "No automatic EIO→EI0 or EF069→EF06/EF69 aliases",
+      "passed": true
+    },
+    {
+      "case": "Canonical body excludes identifier while preserving a literal code_locator",
+      "passed": true
+    },
+    {
+      "case": "EF069AR16year6comes from same original physical row",
+      "passed": true
+    },
+    {
+      "case": "EI nonstandard labels retain original age captions, not code decoding",
+      "passed": true
+    },
+    {
+      "case": "All154hierarchy parents resolve without fabricating a national item",
+      "passed": true
+    },
+    {
+      "case": "All3primary glyph crops observed as literal source labels within20KiBtotal",
+      "passed": true
+    },
+    {
+      "case": "Existing extraction has no items with these3identifiers; additive recovery needs no supersession",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "source_ready": false,
+  "passed": true
+}

@@ -1,0 +1,115 @@
+{
+  "kind": "admin-browser",
+  "actor_type": "automated",
+  "run_id": "b6e877f8-28c4-4c7e-a331-a1a81793dc95",
+  "base": "http://localhost:3000",
+  "started_at": "2026-10-28T13:45:42.376Z",
+  "checks": [
+    {
+      "name": "temporary_automated_account_created_by_secure_cli",
+      "passed": true
+    },
+    {
+      "name": "desktop_and_mobile_real_browser_journeys",
+      "passed": true
+    },
+    {
+      "name": "official_text_unchanged_and_draft_validated_once_without_prepare_or_publish",
+      "passed": true
+    },
+    {
+      "name": "audit_retains_automated_actor",
+      "passed": true,
+      "events": 4
+    },
+    {
+      "name": "no_password_token_trace_har_or_video_artifacts",
+      "passed": true
+    },
+    {
+      "name": "only_owned_temporary_account_removed_and_sessions_revoked",
+      "passed": true
+    }
+  ],
+  "trace": "off",
+  "video": "off",
+  "password_transport": "CLI stdin; browser child memory environment; never saved",
+  "result": "passed",
+  "publication": "ca-77fb8076598b567e1ba3",
+  "real_item_id": "ca:ac-cru-em:0090948210886854c3a6",
+  "actor_id": "737ac0df-4ba8-437d-9d12-ddafbe2921f9",
+  "browser_results": "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/results.json",
+  "browser_summary": {
+    "kind": "admin-browser",
+    "finished_at": "2026-10-28T13:45:54.988Z",
+    "status": "passed",
+    "trace": "off",
+    "video": "off",
+    "automatic_screenshots": "off",
+    "tests": [
+      {
+        "title": "administração real: login, fontes, registro fixado, curadoria segura, teclado e acessibilidade",
+        "project": "admin-desktop",
+        "status": "passed",
+        "duration_ms": 8009,
+        "errors": [],
+        "annotations": [
+          {
+            "type": "publication",
+            "description": "ca-77fb8076598b567e1ba3"
+          },
+          {
+            "type": "actor_type",
+            "description": "automated"
+          },
+          {
+            "type": "scope",
+            "description": "rascunho idêntico + validação técnica, sem preparar/publicar"
+          }
+        ]
+      },
+      {
+        "title": "administração real: login, fontes, registro fixado, curadoria segura, teclado e acessibilidade",
+        "project": "admin-mobile",
+        "status": "passed",
+        "duration_ms": 2719,
+        "errors": [],
+        "annotations": [
+          {
+            "type": "publication",
+            "description": "ca-77fb8076598b567e1ba3"
+          },
+          {
+            "type": "actor_type",
+            "description": "automated"
+          },
+          {
+            "type": "scope",
+            "description": "navegação, inspeção, seleção e acessibilidade; sem duplicar snapshot"
+          }
+        ]
+      }
+    ]
+  },
+  "draft_id": "f8c8bba5-2890-45e2-b578-5e5edfcda4c9",
+  "artifacts": [
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/admin-desktop-curation-axe.json",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/admin-desktop-curation.png",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/admin-desktop-login-axe.json",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/admin-desktop-login-error.png",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/admin-desktop-login.png",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/admin-desktop-overview-axe.json",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/admin-desktop-overview.png",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/admin-desktop-record.png",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/admin-mobile-curation-axe.json",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/admin-mobile-curation.png",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/admin-mobile-login-axe.json",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/admin-mobile-login.png",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/admin-mobile-overview-axe.json",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/admin-mobile-overview.png",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/admin-mobile-record.png",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/results.json",
+    "docs/evidence/admin-browser/b6e877f8-28c4-4c7e-a331-a1a81793dc95/runner.log"
+  ],
+  "finished_at": "2026-10-28T13:45:55.013Z"
+}

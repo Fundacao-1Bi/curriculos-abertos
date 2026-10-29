@@ -1,0 +1,1421 @@
+{
+  "at": "2026-10-28T22:19:52.042678+00:00",
+  "actor_type": "automated",
+  "source_id": "pb-proposta-ei-ef-cedoc",
+  "artifact_sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+  "raw_Source_sha256": "1da2468e469531c005128aaf375d50aeaab3048a202f9bd32bc0b0299982bfc1",
+  "actual_registered_Source_used": true,
+  "cache_path": "data/extracted/af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453-page-cell-v1.5.0.json",
+  "cache_sha256": "5ee55eb1e8559c8d168de791b06cb5952e4b4e8bdeeb0f53bdf13fa0a70732f3",
+  "source_config_sha256": "8e2993c85d79e276bb576a5fa2b7c651ca7b494477a345250497931d477f185f",
+  "runtime_and_config_current": true,
+  "global_parser_fingerprint_sha256": "541aa3377fd409f9c172e1580ae988f5869b25e5331c98528ab68fb9a09360db",
+  "integral_source_pages": 392,
+  "sidecar_path": "data/manifests/uncoded/pb-cedoc-392-with-appendix-items.json",
+  "sidecar_sha256": "fc939a0bdc6aeb243acc8a86c18e071e0a7f3697d9942012aa4e776a9f33c27e",
+  "original1946_items_and_wrapper_preserved": true,
+  "actual_adapter_records": 2020,
+  "new_appendix_records": 74,
+  "appendix_fragments_literal_pass": 145,
+  "source_footer_lines_context_preserved": 8,
+  "full_BNCC_references": 69,
+  "technical_ID_and_body_replacement_pairs": 69,
+  "old_frame64_new_wording_literal_pass": 64,
+  "other5_old_partial_literal_pass_replaced": 5,
+  "old_final_records": 2478,
+  "new_final_records": 2479,
+  "outside_scope_record_projections_equal": 2405,
+  "projection_omits_only": "review_events[*].at",
+  "all392_page_texts_byte_identical": true,
+  "schema_errors": 0,
+  "orphans": 0,
+  "cycles": 0,
+  "ocr_pending": false,
+  "technical_ledger_path": "docs/evidence/source-audit-pb392-appendix-author/record-replacement-pairs-v1.json",
+  "technical_ledger_sha256": "f8b6a899a81a4304f37f207f4fd92fecedd8405b37b1c0815bb67909df9d1e69",
+  "technical_provenance_evaluate_pass": true,
+  "technical_provenance_evaluation": {
+    "producer_fingerprint": {
+      "algorithm": "sha256-of-canonical-producer-and-dependencies-v1",
+      "sha256": "14979f7a14f96e264baabf0e17791e1e58e4029a91eee0666ffac93d77cef599",
+      "revision": "technical-provenance-v1.0.1",
+      "producer_file_sha256": "bc00fa550bd0147f2ac440accdb5581436480d27938bd468ebfcc2f91fca3c2b",
+      "dependencies": {
+        "_hashlib": "1e015c6118cdd4c9247c1304e38f9071680f5107eb1983e51c581ce85374c3e1",
+        "_json": "83dc6cb12a09193f6f0bb9447744e955cbfa23147bc3025429c1a6b2f6c67d84",
+        "copy": "27dcfc53a4b9d4fbc3d90c74e549eb6eca9301524d6d2fbff9a6589cf51b6fd5",
+        "hashlib": "e2bffb462e4d43e6637b9450e259e8ba2a56626ba3037d68aa1cee68b3f61d4a",
+        "json": "d5d41e2c29049515d295d81a6d40b4890fbec8d8482cfb401630f8ef2f77e4d5",
+        "json.decoder": "9f02654649816145bc76f8c210a5fe3ba1de142d4d97a1c93105732e747c285b",
+        "json.encoder": "af7bd40a0d0d0a3e726a9b4b3a2a543019f6ab97a340d0162a9c29ca9da97869",
+        "json.scanner": "8604d9d03786d0d509abb49e9f069337278ea988c244069ae8ca2c89acc2cb08",
+        "pathlib": "3b21ac188fd9ac20bacc8ccd976fabd5d8ccf5000f8e157d3dfff005b228fb3d"
+      },
+      "runtime": {
+        "implementation": "cpython",
+        "version": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]",
+        "cache_tag": "cpython-311"
+      }
+    },
+    "method": "documented-technical-supersessions-v1",
+    "events": [
+      {
+        "type": "extraction_correction",
+        "method": "documented-technical-supersessions-v1",
+        "source_id": "pb-proposta-ei-ef-cedoc",
+        "artifact_sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+        "ledger_path": "docs/evidence/source-audit-pb392-appendix-author/record-replacement-pairs-v1.json",
+        "ledger_sha256": "f8b6a899a81a4304f37f207f4fd92fecedd8405b37b1c0815bb67909df9d1e69",
+        "pairs": [
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:fd9c23ee928618f93aaf",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef08"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "e6101f5b02d10222c7f2da95548b09cacf4904107f40bf718f9285220a53c2ab",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:e7bbb8ba7f12aa6bd435",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef01"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "5d4a4f1b6677e215500cf5d1c46ccd6efb8a96cfb62e5b4adab7a8b4380d9824",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:4653b2c1222f892fbb62",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef09"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "ce4656d43b114144af329d161323e4d8690ec936991a98e6dac1178331b336f5",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:be875119a4d66a631c8c",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef02"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "b9a25a357c08ba9b953ed5283bd3c7d553960c1a20176fdcea993d27606d1219",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:bc13e3df6f2386ccb3e5",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef10"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "e1d3ba429751c5e038dc604a714870bb1b4105e12300262ba62c16de44fe3b4f",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:9c258a66b893c51395d6",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef11"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "cd68737addc3633f22920f950c5696c84cc8ecca292a3844b32296a4abf80d77",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:f62b8528b97aeb2edd8a",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef03"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "61d3791770bff13037d2749962f8192777e5c4c65f9ecf29b211396a0aead129",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:30ab31be7998e1cafb70",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef04"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "59f6177ff2abf4265749a8de3eddfd2fd5dbd6a2c8d4111ababb57ad15146fbf",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:b25803dbba950968cf9c",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef12"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "f973e1a1d77794dfa64f3c45f2a67fe63e314d2e4ea36fe69134fc9d2e913f21",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:f3c9af8c1ec704624c8f",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef05"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "169c6de5b95f96bc3733b5276f54f1a3afa95d1c33b80659ff0883481928df51",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:5e1fe4ddfcec28ca5c8c",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef06"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "1fc135b06caa7cb57f1b64f5c08b957f0ce12de17396ae2bcfdc5bb321164d5b",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:11c493928e3769397c5c",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef01"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "638c7d13790bca1d055a1e84edccf1f5b9e584789d4bff912e2103cfb4b33cf2",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:ecac929133b59dac8892",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef07"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "2bdcee318587168cb708b73b9e82e84f962160dd10ac190dd70a12261d6b0c99",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:3d5136654493e5801e47",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef02"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "85356628798545c963a0581c2522b2f15d3173bce3b7eb730671e01a66af22b1",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:49ebda7678d3bc5c6a56",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef03"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "912a6c16d790fd11ca190add0cbaee6a6d8a683141214e56adfe8620bc1d62f0",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:4134906be4464ade242a",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef12"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "afd887c04f72a65b23199d6c92f2db558ab92541230faf97ff7f0295c1790eae",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:87adc72dcc87a9d9302e",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef04"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "6de41e190a25a0b86bfc21392b89667d58ca239c1b2fe1faf0d45835162b2e0b",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:a03eac79a4248da0e963",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef13"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "887aeef98dbaa18d49d4043c0014355950fdeb45c9e5d7ea4b39b46b7c5e6127",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:00c9e0f4e1f6f19225f8",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef14"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "4cbc6c6a04c7044294bd301c453c98d0c1d50a20fafc7a5026ddc9d2401f720e",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:07533acaa8383619e1bc",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef05"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "a1782c57cee40fa7d08992bec95564c3f72288c7d31d875408f0909c60e0c1ac",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:62db2ec4e797810af298",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef15"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "0d2e72baf6b4af1b9518f35bf8a8b8ddfdd98286019137385f74bcfc2ec4f608",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:4ca32015203ad1794203",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef06"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "99b0528fa55eacbac8e06e2e3ca8c2d38da3ceaef4669bdb9cf520cabe46c609",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:2831f687bda606fdb2c5",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef07"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "37ec919380af1a61145836ff5fcd8b8e21835226cf685de7ce6b502efa8def74",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:d5e6673be7aeb8b34d18",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef01"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "ae5a1aa2973cc8ba3e41ed7eb4a1b37235816dd60c35ae73371d7fe66433f8dd",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:bce987fa522db4b6e888",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef08"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "88e50ecc29ddb936bba25d1a65df54ab426d1a354929cccf4a42d419b573b54e",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:8ff5d73d375596bff2c7",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef02"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "18fccf19a63c90d99589f592624c8ae5c08e8fb1b2a9ecddeef47341cc18ba83",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:f553d2feb23343e6ed1d",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef09"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "238e2e5042157982119ca4d098d64ed4ac59db5bc9a264714b7afff84a4acb4d",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:08a1fa3d8b6fb24b26f6",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef03"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "96fa882d1e414dba877b7a1f6c4ae3a353797a0b49fa98a0e4f2bc80652801ef",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:a8a97f3f798a65c24860",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef10"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "5bc37f61ee87f65ff2339bc1815823073098ff92b0780076c2ff707daca0823c",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:8b0f699509e20d91f044",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef04"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "36cbd8f70087d85c741bf33c0dbb4e68707bb0c1a83933e1ca6a22a8b969d6b6",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:448c2ddc1752e4f3dde8",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef11"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "eeb14b64a189de8bc08de7be8eb96a677ace3d1a7d28dc0f4a63f09ad918a636",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:247e7f14a62a2ad4d29b",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef05"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "7188f6d3848d15be7bad26bb20ffedd319c3b3a3dfe6ed4a5876a778b4a132c7",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:5926d1e419fdfc754e65",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef16"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "eeafebcb4cc7d5f0149a2642b7d2e226d6cfe42d6be0746215f68bf38cdf40cb",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:822c0353ddd7fa88fe9a",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef17"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "1ed76203d2555753c31e936c1b181105b90e8ab46cef6bcd9ff0385db1654c72",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:5c3cfc7bcd7a6e347772",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef06"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "0de91f589846bf46b7e2678472ae62180ef3e64c5ff17ca51c3545bf987a4aad",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:d4755e90de5ea42f59c1",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef07"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "43c0ef749b3418eee0769f8579853783e3e023407c5143aa7f4b75ffee618a26",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:abdc12057a048ca9cfad",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef18"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "9790b673c381937be62bcfc43b59df0d39847bdd6e2593fe0ce196697f4d74ec",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:fca445c6086367f60346",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef08"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "5a4bec90e679a6aca13392b2f44c97479b8a60e0e09c5a581f97d424a587204d",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:3a2d877ae9f6439ac77e",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef19"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "94fd0df0decc72764ca57bce9c956aff00ef17fab443e1c10bba8409ba3a3be5",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:c2ec9a62d2c051db037d",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef20"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "5dfb985b99d5a664f207f131b19fa7e853d3b54c964d81e0601019fde0c0f0ea",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:af71b3d84c1fc70086f2",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef09"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "d949d3240403e67b1736e6caa941c62b1460ca1a35474e65da2d0709eaa9395b",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:0ef4a1329e415fbaa418",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef21"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "2905e06880c9a10fe4022a1548e078a8ad4fb987f1fa9b8ed6f13f70d9fa8a47",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:5fd6a78f53fd2aa519ad",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef10"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "99f46d3c02a1ab911b40df200975573a81cc18ca7ec4d5774a3e9e41982edcda",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:65af2f2c858d385d7fb2",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef11"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "9164a76c648070beb1f616922046f405f4a32eff1bbae3153f9b7fb88ad3c695",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:52550e22368ab4034796",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef12"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "82cfb9c7b6124e5662ef180f2237f9d2ab0650c951acff3b98ed4134c3f2d295",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:2310ab33c27814e5a471",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef13"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "4e1f50b09f6e2f11b584f9afdbf89866b03dcaee9026d5730fb3fdf9290465e1",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:7ac5b9d2f94f0e75d82b",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef01"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "b0c1b53e4ff626872e6d91b3241701387a1b794a90d8f16965cc1e0bccfc4845",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:9ec50b3961b8775e8cc6",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef14"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "a31709fa938b3280a9e992929b750e2ebac3cee817bd0f968aa2a320bb88e59a",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:6abd561a8b265f919581",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef02"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "3ca425829c8831c6757d0a3214bd865d19d3019b016697c8f139694d18746830",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:27b8ecb5c059bc0fbe3a",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef15"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "7f9863604638bd879001650ab690db23986abc8a05ff217d529705749fd8ad03",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:4cc12f9cae5d35a489de",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef03"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "49438979940f6003095e54d13aa1bf0caeee668ee8a2c06969cb66bd556ba525",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:622aa4c88e0bc3edd98c",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef12"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "41a7d777e49b8d5d8b83777d674549bb3522de7b3d31bcd21df1bdac41728703",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:5933ae2c3eadbd8bcf7c",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef04"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "176e8e3b74601005d897dfc34156d7869de8bc6be7e477f41170a3aabe112c81",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:7755568e1490383cfd8d",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef13"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "6b7bd6a285efabf1deab0602c91dfbabf95a6641829931f460953457587d3ca6",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:f8a7f89699630fac5731",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef14"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "8457e6dd40c48abee18ac133f1ec0c53ec0592549a17c8a2325828b0c183e307",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:2a9150df1474a5469466",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef15"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "ccc4c51ed19af2ac11c29d8592ab837cff61e0c03da9b18134994d15363bf44e",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:e0055499814bcbe645ad",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef05"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "cd3ec17a026f3ff595949ac3b5d0a345fe89a771107e0958697190066679600a",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:e62e4c865e6f7a2415b4",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef16"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "5b068d405c5777913e9c338f4e1b1da739ef1ecd43367052ab76d783d21b3621",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:c45c87358968725ad154",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef06"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "9364eb9cbcc43aa2f11e42ff4ceff739364fdd9cd82de691e4a1b16dd6a9dd34",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:a0cea3c2e9d28809a4aa",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef17"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "c01dc5fa6869ce587ebb1405b18f4e6fc89cb41294edbea40c62de7c1a508435",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:372da2cf8bf310ead848",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef07"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "5f561934f05286c692066a531e721704113879acbd8e48cd1e1ca7a555665562",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:10a77a721044115aba9d",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef18"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "073c5241a4b6ded4744f222362dd4be8313e3fceb9eee55acee4848395a6f77f",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:35ec9554fc39b27095f4",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef08"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "86922cad38f6d7eedf65a3c776d8251619cf5249259f0923780e2791fe2b9e57",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:bb3c9791bc568de21a4b",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef19"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "94de6770b1ea1442e7b448e086ef10119177456136b611d890c01168aee1dab8",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:93f0b04225cd99518bfe",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef09"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "48aa040bb721143833c93ef9a626b149cd9e1e20868a30005d17e3bfb853b470",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:704bb37b234c43432d22",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef20"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "151988179ced3e3e3ac9bcf9c64b2769216ca4516d9cd531c40b8a0204ab51a4",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:cca4cb28ab240ea25222",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef10"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "797c91f4c603eb35760d214a37d9f682f87a40b1d2f3319d1a9fd05ad881408b",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:5b37f424999a5d6dea76",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef21"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "877c65479421166cda2ccf814bed856e9d91f530778b65f80a18f3c5e8dcb4ab",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          },
+          {
+            "superseded_item_id": "ca:pb-proposta-ei-ef-cedoc:14fefd224855d0f2651a",
+            "replacement_item_ids": [
+              "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef11"
+            ],
+            "proof_path": "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json",
+            "proof_sha256": "02d89c72d89dd5fbe847b3209d07139ff08537c7427b711b00c57c4e316a672a",
+            "reason": "Replace partial or malformed generic quotation by the complete same-source BNCC2017 appendix reference. Both ID and canonical body change; no new state skill, national equivalence or curriculum edition change."
+          }
+        ],
+        "actor_type": "automated",
+        "actor_id": "codex:data_northeast:PB392_appendix_documentary_replacement",
+        "previous_publications_immutable": true,
+        "official_curriculum_edition_changed": false,
+        "scope": "Extraction identity/body correction only; no national equivalence or official amendment asserted."
+      }
+    ],
+    "ledgers": [
+      {
+        "source_id": "pb-proposta-ei-ef-cedoc",
+        "format": "record_replacement_pairs_v1",
+        "path": "docs/evidence/source-audit-pb392-appendix-author/record-replacement-pairs-v1.json",
+        "sha256": "f8b6a899a81a4304f37f207f4fd92fecedd8405b37b1c0815bb67909df9d1e69",
+        "scope": "technical_extraction_correction"
+      }
+    ],
+    "proof_pins": {
+      "docs/evidence/source-audit-pb392-appendix-author/record-replacement-pairs-v1.json": "f8b6a899a81a4304f37f207f4fd92fecedd8405b37b1c0815bb67909df9d1e69",
+      "docs/evidence/source-audit-pb392-appendix-author/generic69-to-annex69-lineage.json": "f14582b6a92c6f804c08eeeb6a241a9e855ec3711892126f49bf8efc906930c6",
+      "docs/evidence/source-audit-pb392-appendix-peer/independent-integration-replay.json": "57bb8e6c6f4cba41e573c6b28025cf2cb51c05ade4f3811436b3e3db0d3d4532"
+    },
+    "superseded_ids_absent": [
+      "ca:pb-proposta-ei-ef-cedoc:00c9e0f4e1f6f19225f8",
+      "ca:pb-proposta-ei-ef-cedoc:07533acaa8383619e1bc",
+      "ca:pb-proposta-ei-ef-cedoc:08a1fa3d8b6fb24b26f6",
+      "ca:pb-proposta-ei-ef-cedoc:0ef4a1329e415fbaa418",
+      "ca:pb-proposta-ei-ef-cedoc:10a77a721044115aba9d",
+      "ca:pb-proposta-ei-ef-cedoc:11c493928e3769397c5c",
+      "ca:pb-proposta-ei-ef-cedoc:14fefd224855d0f2651a",
+      "ca:pb-proposta-ei-ef-cedoc:2310ab33c27814e5a471",
+      "ca:pb-proposta-ei-ef-cedoc:247e7f14a62a2ad4d29b",
+      "ca:pb-proposta-ei-ef-cedoc:27b8ecb5c059bc0fbe3a",
+      "ca:pb-proposta-ei-ef-cedoc:2831f687bda606fdb2c5",
+      "ca:pb-proposta-ei-ef-cedoc:2a9150df1474a5469466",
+      "ca:pb-proposta-ei-ef-cedoc:30ab31be7998e1cafb70",
+      "ca:pb-proposta-ei-ef-cedoc:35ec9554fc39b27095f4",
+      "ca:pb-proposta-ei-ef-cedoc:372da2cf8bf310ead848",
+      "ca:pb-proposta-ei-ef-cedoc:3a2d877ae9f6439ac77e",
+      "ca:pb-proposta-ei-ef-cedoc:3d5136654493e5801e47",
+      "ca:pb-proposta-ei-ef-cedoc:4134906be4464ade242a",
+      "ca:pb-proposta-ei-ef-cedoc:448c2ddc1752e4f3dde8",
+      "ca:pb-proposta-ei-ef-cedoc:4653b2c1222f892fbb62",
+      "ca:pb-proposta-ei-ef-cedoc:49ebda7678d3bc5c6a56",
+      "ca:pb-proposta-ei-ef-cedoc:4ca32015203ad1794203",
+      "ca:pb-proposta-ei-ef-cedoc:4cc12f9cae5d35a489de",
+      "ca:pb-proposta-ei-ef-cedoc:52550e22368ab4034796",
+      "ca:pb-proposta-ei-ef-cedoc:5926d1e419fdfc754e65",
+      "ca:pb-proposta-ei-ef-cedoc:5933ae2c3eadbd8bcf7c",
+      "ca:pb-proposta-ei-ef-cedoc:5b37f424999a5d6dea76",
+      "ca:pb-proposta-ei-ef-cedoc:5c3cfc7bcd7a6e347772",
+      "ca:pb-proposta-ei-ef-cedoc:5e1fe4ddfcec28ca5c8c",
+      "ca:pb-proposta-ei-ef-cedoc:5fd6a78f53fd2aa519ad",
+      "ca:pb-proposta-ei-ef-cedoc:622aa4c88e0bc3edd98c",
+      "ca:pb-proposta-ei-ef-cedoc:62db2ec4e797810af298",
+      "ca:pb-proposta-ei-ef-cedoc:65af2f2c858d385d7fb2",
+      "ca:pb-proposta-ei-ef-cedoc:6abd561a8b265f919581",
+      "ca:pb-proposta-ei-ef-cedoc:704bb37b234c43432d22",
+      "ca:pb-proposta-ei-ef-cedoc:7755568e1490383cfd8d",
+      "ca:pb-proposta-ei-ef-cedoc:7ac5b9d2f94f0e75d82b",
+      "ca:pb-proposta-ei-ef-cedoc:822c0353ddd7fa88fe9a",
+      "ca:pb-proposta-ei-ef-cedoc:87adc72dcc87a9d9302e",
+      "ca:pb-proposta-ei-ef-cedoc:8b0f699509e20d91f044",
+      "ca:pb-proposta-ei-ef-cedoc:8ff5d73d375596bff2c7",
+      "ca:pb-proposta-ei-ef-cedoc:93f0b04225cd99518bfe",
+      "ca:pb-proposta-ei-ef-cedoc:9c258a66b893c51395d6",
+      "ca:pb-proposta-ei-ef-cedoc:9ec50b3961b8775e8cc6",
+      "ca:pb-proposta-ei-ef-cedoc:a03eac79a4248da0e963",
+      "ca:pb-proposta-ei-ef-cedoc:a0cea3c2e9d28809a4aa",
+      "ca:pb-proposta-ei-ef-cedoc:a8a97f3f798a65c24860",
+      "ca:pb-proposta-ei-ef-cedoc:abdc12057a048ca9cfad",
+      "ca:pb-proposta-ei-ef-cedoc:af71b3d84c1fc70086f2",
+      "ca:pb-proposta-ei-ef-cedoc:b25803dbba950968cf9c",
+      "ca:pb-proposta-ei-ef-cedoc:bb3c9791bc568de21a4b",
+      "ca:pb-proposta-ei-ef-cedoc:bc13e3df6f2386ccb3e5",
+      "ca:pb-proposta-ei-ef-cedoc:bce987fa522db4b6e888",
+      "ca:pb-proposta-ei-ef-cedoc:be875119a4d66a631c8c",
+      "ca:pb-proposta-ei-ef-cedoc:c2ec9a62d2c051db037d",
+      "ca:pb-proposta-ei-ef-cedoc:c45c87358968725ad154",
+      "ca:pb-proposta-ei-ef-cedoc:cca4cb28ab240ea25222",
+      "ca:pb-proposta-ei-ef-cedoc:d4755e90de5ea42f59c1",
+      "ca:pb-proposta-ei-ef-cedoc:d5e6673be7aeb8b34d18",
+      "ca:pb-proposta-ei-ef-cedoc:e0055499814bcbe645ad",
+      "ca:pb-proposta-ei-ef-cedoc:e62e4c865e6f7a2415b4",
+      "ca:pb-proposta-ei-ef-cedoc:e7bbb8ba7f12aa6bd435",
+      "ca:pb-proposta-ei-ef-cedoc:ecac929133b59dac8892",
+      "ca:pb-proposta-ei-ef-cedoc:f3c9af8c1ec704624c8f",
+      "ca:pb-proposta-ei-ef-cedoc:f553d2feb23343e6ed1d",
+      "ca:pb-proposta-ei-ef-cedoc:f62b8528b97aeb2edd8a",
+      "ca:pb-proposta-ei-ef-cedoc:f8a7f89699630fac5731",
+      "ca:pb-proposta-ei-ef-cedoc:fca445c6086367f60346",
+      "ca:pb-proposta-ei-ef-cedoc:fd9c23ee928618f93aaf"
+    ],
+    "replacement_ids_present": [
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef01",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef02",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef03",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef04",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef05",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef06",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef07",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef08",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef09",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef10",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef11",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef12",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef01",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef02",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef03",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef04",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef05",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef06",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef07",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef08",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef09",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef10",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef11",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef12",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef13",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef14",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef15",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef01",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef02",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef03",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef04",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef05",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef06",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef07",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef08",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef09",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef10",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef11",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef12",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef13",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef14",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef15",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef16",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef17",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef18",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef19",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef20",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef21",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef01",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef02",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef03",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef04",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef05",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef06",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef07",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef08",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef09",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef10",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef11",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef12",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef13",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef14",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef15",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef16",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef17",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef18",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef19",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef20",
+      "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef21"
+    ],
+    "same_id_text_corrections_verified": [],
+    "relations_checked": 0,
+    "items_relations_or_sources_modified": false,
+    "official_curriculum_edition_changed": false,
+    "actor_type": "automated"
+  },
+  "job_path": "var/jobs/national-extraction-v150-pb392-appendix-delta-20261028.json",
+  "job_sha256": "ebdbaa47c93736d134b0aff4a8f540786e253236d7d3cb564c52dd3610f99348",
+  "BASE_and_previous_publications_immutable": true,
+  "new_global_candidate_mounted": false,
+  "Source_whole_reconciled": false,
+  "UF_ready": false,
+  "checks": [
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:fd9c23ee928618f93aaf",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef08",
+      "code": "EF12EF08",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:e7bbb8ba7f12aa6bd435",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef01",
+      "code": "EF12EF01",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:4653b2c1222f892fbb62",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef09",
+      "code": "EF12EF09",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:be875119a4d66a631c8c",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef02",
+      "code": "EF12EF02",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:bc13e3df6f2386ccb3e5",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef10",
+      "code": "EF12EF10",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:9c258a66b893c51395d6",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef11",
+      "code": "EF12EF11",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:f62b8528b97aeb2edd8a",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef03",
+      "code": "EF12EF03",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:30ab31be7998e1cafb70",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef04",
+      "code": "EF12EF04",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:b25803dbba950968cf9c",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef12",
+      "code": "EF12EF12",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:f3c9af8c1ec704624c8f",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef05",
+      "code": "EF12EF05",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:5e1fe4ddfcec28ca5c8c",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef06",
+      "code": "EF12EF06",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:11c493928e3769397c5c",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef01",
+      "code": "EF35EF01",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:ecac929133b59dac8892",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef12ef07",
+      "code": "EF12EF07",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:3d5136654493e5801e47",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef02",
+      "code": "EF35EF02",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:49ebda7678d3bc5c6a56",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef03",
+      "code": "EF35EF03",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:4134906be4464ade242a",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef12",
+      "code": "EF35EF12",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:87adc72dcc87a9d9302e",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef04",
+      "code": "EF35EF04",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:a03eac79a4248da0e963",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef13",
+      "code": "EF35EF13",
+      "original_failure64": false,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:00c9e0f4e1f6f19225f8",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef14",
+      "code": "EF35EF14",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:07533acaa8383619e1bc",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef05",
+      "code": "EF35EF05",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:62db2ec4e797810af298",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef15",
+      "code": "EF35EF15",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:4ca32015203ad1794203",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef06",
+      "code": "EF35EF06",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:2831f687bda606fdb2c5",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef07",
+      "code": "EF35EF07",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:d5e6673be7aeb8b34d18",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef01",
+      "code": "EF67EF01",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:bce987fa522db4b6e888",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef08",
+      "code": "EF35EF08",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:8ff5d73d375596bff2c7",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef02",
+      "code": "EF67EF02",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:f553d2feb23343e6ed1d",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef09",
+      "code": "EF35EF09",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:08a1fa3d8b6fb24b26f6",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef03",
+      "code": "EF67EF03",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:a8a97f3f798a65c24860",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef10",
+      "code": "EF35EF10",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:8b0f699509e20d91f044",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef04",
+      "code": "EF67EF04",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:448c2ddc1752e4f3dde8",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef35ef11",
+      "code": "EF35EF11",
+      "original_failure64": false,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:247e7f14a62a2ad4d29b",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef05",
+      "code": "EF67EF05",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:5926d1e419fdfc754e65",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef16",
+      "code": "EF67EF16",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:822c0353ddd7fa88fe9a",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef17",
+      "code": "EF67EF17",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:5c3cfc7bcd7a6e347772",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef06",
+      "code": "EF67EF06",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:d4755e90de5ea42f59c1",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef07",
+      "code": "EF67EF07",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:abdc12057a048ca9cfad",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef18",
+      "code": "EF67EF18",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:fca445c6086367f60346",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef08",
+      "code": "EF67EF08",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:3a2d877ae9f6439ac77e",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef19",
+      "code": "EF67EF19",
+      "original_failure64": false,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:c2ec9a62d2c051db037d",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef20",
+      "code": "EF67EF20",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:af71b3d84c1fc70086f2",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef09",
+      "code": "EF67EF09",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:0ef4a1329e415fbaa418",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef21",
+      "code": "EF67EF21",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:5fd6a78f53fd2aa519ad",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef10",
+      "code": "EF67EF10",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:65af2f2c858d385d7fb2",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef11",
+      "code": "EF67EF11",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:52550e22368ab4034796",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef12",
+      "code": "EF67EF12",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:2310ab33c27814e5a471",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef13",
+      "code": "EF67EF13",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:7ac5b9d2f94f0e75d82b",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef01",
+      "code": "EF89EF01",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:9ec50b3961b8775e8cc6",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef14",
+      "code": "EF67EF14",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:6abd561a8b265f919581",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef02",
+      "code": "EF89EF02",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:27b8ecb5c059bc0fbe3a",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef67ef15",
+      "code": "EF67EF15",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:4cc12f9cae5d35a489de",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef03",
+      "code": "EF89EF03",
+      "original_failure64": false,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:622aa4c88e0bc3edd98c",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef12",
+      "code": "EF89EF12",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:5933ae2c3eadbd8bcf7c",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef04",
+      "code": "EF89EF04",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:7755568e1490383cfd8d",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef13",
+      "code": "EF89EF13",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:f8a7f89699630fac5731",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef14",
+      "code": "EF89EF14",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:2a9150df1474a5469466",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef15",
+      "code": "EF89EF15",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:e0055499814bcbe645ad",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef05",
+      "code": "EF89EF05",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:e62e4c865e6f7a2415b4",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef16",
+      "code": "EF89EF16",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:c45c87358968725ad154",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef06",
+      "code": "EF89EF06",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:a0cea3c2e9d28809a4aa",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef17",
+      "code": "EF89EF17",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:372da2cf8bf310ead848",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef07",
+      "code": "EF89EF07",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:10a77a721044115aba9d",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef18",
+      "code": "EF89EF18",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:35ec9554fc39b27095f4",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef08",
+      "code": "EF89EF08",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:bb3c9791bc568de21a4b",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef19",
+      "code": "EF89EF19",
+      "original_failure64": false,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:93f0b04225cd99518bfe",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef09",
+      "code": "EF89EF09",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:704bb37b234c43432d22",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef20",
+      "code": "EF89EF20",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:cca4cb28ab240ea25222",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef10",
+      "code": "EF89EF10",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:5b37f424999a5d6dea76",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef21",
+      "code": "EF89EF21",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    },
+    {
+      "old_id": "ca:pb-proposta-ei-ef-cedoc:14fefd224855d0f2651a",
+      "new_id": "ca:pb-proposta-ei-ef-cedoc:section:pb392-annex-reference-ef89ef11",
+      "code": "EF89EF11",
+      "original_failure64": true,
+      "literal_new_fullwording_pass": true,
+      "both_ID_and_canonical_body_changed": true
+    }
+  ]
+}

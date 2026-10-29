@@ -1,0 +1,316 @@
+{
+  "format": "record_replacement_pairs_v1",
+  "source_id": "pi-curriculo-ei-ef",
+  "source_sha256": "609e955a2774afe6b25451b6d597005fcedc9b769cbf1a00916caaaab40f426e",
+  "cache_sha256": "fa8ad3f4feeceb3032e7fc7e5ed89efbc8725ceb288c39254f70f13c16db889f",
+  "previous_full_cache_sha256": "18087f5d7d80975c943577d56228d984678645f56fc84ff382843df096a12d5e",
+  "previous_full_cache_preserved_at": "var/ne-pi-eief-glyph-candidate/previous-full-cache.json",
+  "candidate_scoped_cache_path": "var/ne-pi-eief-glyph-candidate/isolated-extraction.json",
+  "candidate_scoped_cache_sha256": "fa8ad3f4feeceb3032e7fc7e5ed89efbc8725ceb288c39254f70f13c16db889f",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast:pi_glyph_locator_migration",
+  "at": "2026-10-28T21:17:42.820888+00:00",
+  "scope": "technical_extraction_correction",
+  "previous_publications_immutable": true,
+  "official_curriculum_edition_changed": false,
+  "pairs": [
+    {
+      "old_id": "ca:pi-curriculo-ei-ef:2bdd74bbd89e92b209db",
+      "new_id": "ca:pi-curriculo-ei-ef:dd91a91fca300c28f7be",
+      "old_code": "EF02GE03",
+      "new_code": "EF02GE03",
+      "page": 257,
+      "old_locator": "table:0/column:158.5-380.6/anchor:0",
+      "new_locator": "table:0/row:2/cell:1",
+      "locator": "table:0/row:2/cell:1",
+      "reason": "Same literal source page/code occurrence emitted through the primary table-parser region instead of continuation-recovery fallback. Canonical body is byte-identical. Region bbox may include neighboring physical rows; exact-cell geometry is not asserted. No new official skill, code or curriculum edition.",
+      "old_method": "ruled-column-continuation-recovery",
+      "new_method": "pymupdf-ruled-cell",
+      "proof_sha256": "837776e8b4fbc0666489a205599a4084482b2e3e5d84b2ff46d27a729b9f9b3a",
+      "proof_selector": {
+        "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+        "array": "six_locator_changes",
+        "old_id": "ca:pi-curriculo-ei-ef:2bdd74bbd89e92b209db"
+      },
+      "review": {
+        "actor_type": "automated",
+        "actor_id": "codex:data_northeast:physical_occurrence_correspondence",
+        "method": "Unique page/code correspondence, byte-identical canonical body, same kind/positions/parent. Direct table-parser region is not assumed to equal a physical source cell."
+      },
+      "primary_physical_evidence": {
+        "path": "docs/evidence/source-audit-pi-eief-glyph-peer/primary-census.json",
+        "sha256": "7f42fa9faf8bc8bb0bcc82a1bffcae3d1675878928243b388fc0d4e60bfa54ae",
+        "array": "slots",
+        "page": 257,
+        "code": "EF02GE03",
+        "physical_code_bbox": [
+          174.1147003173828,
+          182.8128204345703,
+          213.00770568847656,
+          195.52381896972656
+        ],
+        "physical_cell_bbox": [
+          168.40159606933594,
+          182.277587890625,
+          380.6260070800781,
+          228.31182861328125
+        ],
+        "primary_body_sha256": "b1fd01086d2dc05d1b91e79879676503e85a4cef33a5c0ecbd46b517954f7a87"
+      }
+    },
+    {
+      "old_id": "ca:pi-curriculo-ei-ef:65e5bdc59df2a397dcd7",
+      "new_id": "ca:pi-curriculo-ei-ef:c1ac0ab5d972199cc6bb",
+      "old_code": "EF02GE11",
+      "new_code": "EF02GE11",
+      "page": 257,
+      "old_locator": "table:0/column:158.5-380.6/anchor:9",
+      "new_locator": "table:0/row:10/cell:1",
+      "locator": "table:0/row:10/cell:1",
+      "reason": "Same literal source page/code occurrence emitted through the primary table-parser region instead of continuation-recovery fallback. Canonical body is byte-identical. Region bbox may include neighboring physical rows; exact-cell geometry is not asserted. No new official skill, code or curriculum edition.",
+      "old_method": "ruled-column-continuation-recovery",
+      "new_method": "pymupdf-ruled-cell",
+      "proof_sha256": "faba4c68a3bfdb024daf0cb67d598ab613e073fb65faec7d4a9c635c08d6a0f3",
+      "proof_selector": {
+        "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+        "array": "six_locator_changes",
+        "old_id": "ca:pi-curriculo-ei-ef:65e5bdc59df2a397dcd7"
+      },
+      "review": {
+        "actor_type": "automated",
+        "actor_id": "codex:data_northeast:physical_occurrence_correspondence",
+        "method": "Unique page/code correspondence, byte-identical canonical body, same kind/positions/parent. Direct table-parser region is not assumed to equal a physical source cell."
+      },
+      "primary_physical_evidence": {
+        "path": "docs/evidence/source-audit-pi-eief-glyph-peer/primary-census.json",
+        "sha256": "7f42fa9faf8bc8bb0bcc82a1bffcae3d1675878928243b388fc0d4e60bfa54ae",
+        "array": "slots",
+        "page": 257,
+        "code": "EF02GE11",
+        "physical_code_bbox": [
+          174.1147003173828,
+          615.6890869140625,
+          213.00770568847656,
+          628.4000854492188
+        ],
+        "physical_cell_bbox": [
+          168.40159606933594,
+          615.1539306640625,
+          380.6260070800781,
+          682.1881103515625
+        ],
+        "primary_body_sha256": "a8b350154e6e7f47add914c410ec33434d7f58ca1d81d28d8ff7af50319a986b"
+      }
+    },
+    {
+      "old_id": "ca:pi-curriculo-ei-ef:22a9853fd8cd87c44517",
+      "new_id": "ca:pi-curriculo-ei-ef:159486c52575199e446c",
+      "old_code": "EF07GE011.01PI",
+      "new_code": "EF07GE011.01PI",
+      "page": 265,
+      "old_locator": "table:0/column:157.8-380.6/anchor:2",
+      "new_locator": "table:0/row:3/cell:1",
+      "locator": "table:0/row:3/cell:1",
+      "reason": "Same literal source page/code occurrence emitted through the primary table-parser region instead of continuation-recovery fallback. Canonical body is byte-identical. Region bbox may include neighboring physical rows; exact-cell geometry is not asserted. No new official skill, code or curriculum edition.",
+      "old_method": "ruled-column-continuation-recovery",
+      "new_method": "pymupdf-ruled-cell",
+      "proof_sha256": "05c8c8ca9b116eed85ffd69291afb84b7023b3e698c5e968314b6f9d979e2b0b",
+      "proof_selector": {
+        "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+        "array": "six_locator_changes",
+        "old_id": "ca:pi-curriculo-ei-ef:22a9853fd8cd87c44517"
+      },
+      "review": {
+        "actor_type": "automated",
+        "actor_id": "codex:data_northeast:physical_occurrence_correspondence",
+        "method": "Unique page/code correspondence, byte-identical canonical body, same kind/positions/parent. Direct table-parser region is not assumed to equal a physical source cell."
+      },
+      "primary_physical_evidence": {
+        "path": "docs/evidence/source-audit-pi-eief-glyph-peer/primary-census.json",
+        "sha256": "7f42fa9faf8bc8bb0bcc82a1bffcae3d1675878928243b388fc0d4e60bfa54ae",
+        "array": "slots",
+        "page": 265,
+        "code": "EF07GE011.01PI",
+        "physical_code_bbox": [
+          174.1147003173828,
+          264.3812255859375,
+          237.1566925048828,
+          277.09222412109375
+        ],
+        "physical_cell_bbox": [
+          168.40159606933594,
+          263.84600830078125,
+          380.6260070800781,
+          288.88018798828125
+        ],
+        "primary_body_sha256": "3c96d499d18cbdebe6a505dc9ab84f3735bf0bed158ec3c319cfc614a95a1fb2"
+      }
+    },
+    {
+      "old_id": "ca:pi-curriculo-ei-ef:6ad894381d37513e7885",
+      "new_id": "ca:pi-curriculo-ei-ef:fdffdbbcc0a9966ccb9a",
+      "old_code": "EF09GE04",
+      "new_code": "EF09GE04",
+      "page": 269,
+      "old_locator": "table:0/column:158.5-380.6/anchor:0",
+      "new_locator": "table:0/row:2/cell:1",
+      "locator": "table:0/row:2/cell:1",
+      "reason": "Same literal source page/code occurrence emitted through the primary table-parser region instead of continuation-recovery fallback. Canonical body is byte-identical. Region bbox may include neighboring physical rows; exact-cell geometry is not asserted. No new official skill, code or curriculum edition.",
+      "old_method": "ruled-column-continuation-recovery",
+      "new_method": "pymupdf-ruled-cell",
+      "proof_sha256": "13985f045d5331d164247e81d3aeb21315c259eb4b83a6cc623070429109d1ac",
+      "proof_selector": {
+        "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+        "array": "six_locator_changes",
+        "old_id": "ca:pi-curriculo-ei-ef:6ad894381d37513e7885"
+      },
+      "review": {
+        "actor_type": "automated",
+        "actor_id": "codex:data_northeast:physical_occurrence_correspondence",
+        "method": "Unique page/code correspondence, byte-identical canonical body, same kind/positions/parent. Direct table-parser region is not assumed to equal a physical source cell."
+      },
+      "primary_physical_evidence": {
+        "path": "docs/evidence/source-audit-pi-eief-glyph-peer/primary-census.json",
+        "sha256": "7f42fa9faf8bc8bb0bcc82a1bffcae3d1675878928243b388fc0d4e60bfa54ae",
+        "array": "slots",
+        "page": 269,
+        "code": "EF09GE04",
+        "physical_code_bbox": [
+          174.1147003173828,
+          182.8128204345703,
+          213.00770568847656,
+          195.52381896972656
+        ],
+        "physical_cell_bbox": [
+          168.40159606933594,
+          182.277587890625,
+          380.6260070800781,
+          228.31182861328125
+        ],
+        "primary_body_sha256": "6527be7aae60b0e45022a4548aa5f539bcd19851b225ff7ff1d919a0ed421ce8"
+      }
+    },
+    {
+      "old_id": "ca:pi-curriculo-ei-ef:3a1486e15040a3dadcb7",
+      "new_id": "ca:pi-curriculo-ei-ef:81a0fab811f3233442e3",
+      "old_code": "EF05HI06",
+      "new_code": "EF05HI06",
+      "page": 279,
+      "old_locator": "table:0/column:158.7-380.6/anchor:4",
+      "new_locator": "table:0/row:5/cell:1",
+      "locator": "table:0/row:5/cell:1",
+      "reason": "Same literal source page/code occurrence emitted through the primary table-parser region instead of continuation-recovery fallback. Canonical body is byte-identical. Region bbox may include neighboring physical rows; exact-cell geometry is not asserted. No new official skill, code or curriculum edition.",
+      "old_method": "ruled-column-continuation-recovery",
+      "new_method": "pymupdf-ruled-cell",
+      "proof_sha256": "c1ae902134395f2caa613d383d6b17dd478192bf5a69bfd74f1dd1aefa64dc2c",
+      "proof_selector": {
+        "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+        "array": "six_locator_changes",
+        "old_id": "ca:pi-curriculo-ei-ef:3a1486e15040a3dadcb7"
+      },
+      "review": {
+        "actor_type": "automated",
+        "actor_id": "codex:data_northeast:physical_occurrence_correspondence",
+        "method": "Unique page/code correspondence, byte-identical canonical body, same kind/positions/parent. Direct table-parser region is not assumed to equal a physical source cell."
+      },
+      "primary_physical_evidence": {
+        "path": "docs/evidence/source-audit-pi-eief-glyph-peer/primary-census.json",
+        "sha256": "7f42fa9faf8bc8bb0bcc82a1bffcae3d1675878928243b388fc0d4e60bfa54ae",
+        "array": "slots",
+        "page": 279,
+        "code": "EF05HI06",
+        "physical_code_bbox": [
+          174.1147003173828,
+          345.9495849609375,
+          210.689697265625,
+          358.66058349609375
+        ],
+        "physical_cell_bbox": [
+          168.40159606933594,
+          345.4144287109375,
+          380.62598092215404,
+          391.4486083984375
+        ],
+        "primary_body_sha256": "5ac7b65936286d3863ec6eb33e45a67c1c95e58a189d5daeb73803e8cc0cac5a"
+      }
+    },
+    {
+      "old_id": "ca:pi-curriculo-ei-ef:dde53e90233ee1b7dcab",
+      "new_id": "ca:pi-curriculo-ei-ef:5ec949cddfafd679e13f",
+      "old_code": "EF06HI16",
+      "new_code": "EF06HI16",
+      "page": 281,
+      "old_locator": "table:0/column:158.5-380.6/anchor:6",
+      "new_locator": "table:0/row:5/cell:1",
+      "locator": "table:0/row:5/cell:1",
+      "reason": "Same literal source page/code occurrence emitted through the primary table-parser region instead of continuation-recovery fallback. Canonical body is byte-identical. Region bbox may include neighboring physical rows; exact-cell geometry is not asserted. No new official skill, code or curriculum edition.",
+      "old_method": "ruled-column-continuation-recovery",
+      "new_method": "pymupdf-ruled-cell",
+      "proof_sha256": "5f776fb6f23d89a2b61c4823d0deba43b5756ad2cfe0f945c744044366e5475a",
+      "proof_selector": {
+        "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+        "array": "six_locator_changes",
+        "old_id": "ca:pi-curriculo-ei-ef:dde53e90233ee1b7dcab"
+      },
+      "review": {
+        "actor_type": "automated",
+        "actor_id": "codex:data_northeast:physical_occurrence_correspondence",
+        "method": "Unique page/code correspondence, byte-identical canonical body, same kind/positions/parent. Direct table-parser region is not assumed to equal a physical source cell."
+      },
+      "primary_physical_evidence": {
+        "path": "docs/evidence/source-audit-pi-eief-glyph-peer/primary-census.json",
+        "sha256": "7f42fa9faf8bc8bb0bcc82a1bffcae3d1675878928243b388fc0d4e60bfa54ae",
+        "array": "slots",
+        "page": 281,
+        "code": "EF06HI16",
+        "physical_code_bbox": [
+          174.1147003173828,
+          438.0180969238281,
+          210.689697265625,
+          450.7290954589844
+        ],
+        "physical_cell_bbox": [
+          168.40159606933594,
+          437.4828186035156,
+          380.62598830003003,
+          494.0169982910156
+        ],
+        "primary_body_sha256": "ad65227ee115c427118d62306cbf8d85f29ad8783b772e42818e1d1f0eecf8c0"
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+      "sha256": "6a116d63c8b20139f972b002cfc1d17c3260a1ae69b582f44ec2fb236ecb2632"
+    },
+    {
+      "path": "docs/evidence/source-audit-northeast/pi-eief-glyph-audit-summary.json",
+      "sha256": "a90fe760daa0a3b3ad5d8553a613438800f7a4a5652846a66c7a8ad9921d77ee"
+    },
+    {
+      "path": "docs/evidence/source-audit-northeast/pi-eief-isolated-parser-probe.json",
+      "sha256": "5046a92b080154433b09dff84b0747c64f1c6a78d67ef2c881775cb70a15ad84"
+    },
+    {
+      "path": "docs/evidence/source-audit-pi-eief-glyph-peer/primary-census.json",
+      "sha256": "7f42fa9faf8bc8bb0bcc82a1bffcae3d1675878928243b388fc0d4e60bfa54ae"
+    }
+  ],
+  "technical_acceptance": {
+    "coordinator": "/root",
+    "independent_runtime_verification_passed": false,
+    "independent_peer_status": "requested_before_Source_binding",
+    "human_review": false
+  },
+  "integration_instruction": "Only after independent peer and Root acceptance: bind this pinned ledger through Source.technical_supersessions, emit all6pairs/proofhashes in the next extraction changelog/provenance. Never rewrite historical publications or repoint old IDs silently. Refresh the complete313page Source; scoped37page cache is not publication cache.",
+  "Source_or_production_cache_modified": false,
+  "whole_source_reconciled": false,
+  "UF_ready": false,
+  "metadata_refinement": {
+    "at": "2026-10-28T21:26:46.795026+00:00",
+    "reason": "Independent peer P2 clarified grouped parser-region bboxes; replaces exact-cell wording only. Old/new IDs, code, page, bbox, cache bytes and canonical text stay intact.",
+    "pre_refinement_ledger": "docs/evidence/source-audit-northeast/pi-eief-glyph-technical-supersessions-before-peer-region-precision.json",
+    "pre_refinement_ledger_sha256": "68daafcfe2637545db2453e2ea06467bdd9fd529558fd02b516405952f81e064"
+  }
+}

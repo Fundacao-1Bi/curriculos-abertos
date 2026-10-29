@@ -1,0 +1,146 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex-independent-auditor",
+  "producer": "scripts/qa-prepared-boundary.ts",
+  "started_at": "2026-10-28T22:16:22.881Z",
+  "completed_at": "2026-10-28T22:16:23.720Z",
+  "source_tree_sha256": "ba309e4c7acb53d2e17ac37db9eef46341748b654f451481ac2b092a5a6dcc98",
+  "publication": "ca-7d302a9c674a97b83278.r-e6de9f90-4221-4d3c-a940-d88b2a3fd095",
+  "phase": "prepared-hidden",
+  "base": "http://localhost:3002",
+  "mcp_transport": "Streamable HTTP",
+  "mcp_protocol": "2025-11-25",
+  "export_job_probe": "f17a6bba-1b87-47db-bee0-12c185492cd7",
+  "checks": [
+    {
+      "name": "API lista pública exclui preparada",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "API preparada GET ufs",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET redes",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET curriculos",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET aprendizagens?limit=1",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET aprendizagens/ca%3Aac-computacao-667-2025%3Asection%3Ares667-artigo-1",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET correspondencias?limit=1",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET bncc/aprendizagens/ca%3Aac-computacao-667-2025%3Asection%3Ares667-artigo-1/panorama",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET analises?limit=1",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET cobertura",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET fontes",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET fontes/ac-computacao-667-2025",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET publicacoes",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada POST aprendizagens/consulta-lote",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada POST comparacoes",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada POST exportacoes",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API job preparado status",
+      "passed": true,
+      "status": 404
+    },
+    {
+      "name": "API job preparado /arquivo",
+      "passed": true,
+      "status": 404
+    },
+    {
+      "name": "MCP lista pública exclui preparada",
+      "passed": true
+    },
+    {
+      "name": "MCP preparada consultar_publicacoes",
+      "passed": true,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "MCP preparada consultar_aprendizagens",
+      "passed": true,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "MCP preparada consultar_fontes",
+      "passed": true,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "MCP preparada consultar_cobertura",
+      "passed": true,
+      "code": "PUBLICATION_NOT_FOUND"
+    }
+  ],
+  "passed": true
+}

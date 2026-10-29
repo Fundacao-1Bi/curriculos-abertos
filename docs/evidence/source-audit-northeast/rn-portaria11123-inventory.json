@@ -1,0 +1,41 @@
+{
+  "source_id": "rn-portaria-11123-2025",
+  "artifact_sha256": "8e8a23b5e500d1ac4aae981c64bd2b6ec8f20e939f4b260701741e90ae5af8b9",
+  "actor_type": "automated",
+  "method": "Independent complete visual/native region reading, explicit headings/5considerandos/2articles and once-only original-line partition. No expectedIDs copied from extraction outputs.",
+  "region": [
+    28,
+    560,
+    395,
+    800
+  ],
+  "pdf_page": 21,
+  "expected_records": 12,
+  "original_nonempty_lines": 24,
+  "original_line_assignment_exactly_once": true,
+  "counts_by_kind": {
+    "ato_normativo": 1,
+    "preambulo_normativo": 1,
+    "considerando_normativo": 5,
+    "dispositivo_deliberativo": 1,
+    "artigo_normativo": 2,
+    "comando_publicacao": 1,
+    "assinatura_normativa": 1
+  },
+  "expected_item_ids": [
+    "ca:rn-portaria-11123-2025:section:ato",
+    "ca:rn-portaria-11123-2025:section:preambulo",
+    "ca:rn-portaria-11123-2025:section:considerando-1",
+    "ca:rn-portaria-11123-2025:section:considerando-2",
+    "ca:rn-portaria-11123-2025:section:considerando-3",
+    "ca:rn-portaria-11123-2025:section:considerando-4",
+    "ca:rn-portaria-11123-2025:section:considerando-5",
+    "ca:rn-portaria-11123-2025:section:resolve",
+    "ca:rn-portaria-11123-2025:section:artigo-1",
+    "ca:rn-portaria-11123-2025:section:artigo-2",
+    "ca:rn-portaria-11123-2025:section:publicacao",
+    "ca:rn-portaria-11123-2025:section:assinatura"
+  ],
+  "private_visual": "var/private-evidence/source-audit-northeast/rn-portaria11123-p21-region.png",
+  "pending": "Shared extraction/import/finalizer and privacy-boundary verification before reconciliation."
+}

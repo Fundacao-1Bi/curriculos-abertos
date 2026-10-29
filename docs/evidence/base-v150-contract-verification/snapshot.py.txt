@@ -1,0 +1,12 @@
+import hashlib,json,pathlib,sys
+root=pathlib.Path.cwd();name=sys.argv[1]
+files=['src/mcp/contracts.ts','src/shared/contracts.ts','src/domain/age.ts','src/domain/schema-pin.ts','src/domain/errors.ts']
+payload={p:(root/p).read_bytes() for p in files}
+hashes={p:hashlib.sha256(v).hexdigest() for p,v in payload.items()}
+digest=hashlib.sha256(json.dumps(hashes,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+target=root/'var/cross-language-v150'/name
+for p,v in payload.items():
+ path=target/p;path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(v)
+assert all((root/p).read_bytes()==v for p,v in payload.items()),'Validators changed during snapshot capture; retry'
+(target/'snapshot.json').write_text(json.dumps({'files':hashes,'sha256':digest},indent=2)+'\n')
+print(target)

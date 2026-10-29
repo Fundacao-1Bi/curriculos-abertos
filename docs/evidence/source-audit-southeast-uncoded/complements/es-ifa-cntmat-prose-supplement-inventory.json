@@ -1,0 +1,88 @@
+{
+  "source_id": "es-ifa-cntmat",
+  "artifact_sha256": "e0600fd2fe84e7a62a79fea438a541fabc59adece3307fa6aa6694695f482f0a",
+  "actor_type": "automated",
+  "primary_inventory": {
+    "formal_competencies": [
+      {
+        "page": 25,
+        "source_number": "1",
+        "heading": {
+          "page": 25,
+          "text": "Competência 1",
+          "bbox": [
+            70.58399963378906,
+            475.0447998046875,
+            161.76568603515625,
+            488.4252624511719
+          ]
+        },
+        "body_bbox": [
+          70.58399963378906,
+          488.3848022460937,
+          527.9939819335938,
+          528.6352783203125
+        ],
+        "body_line_count": 3
+      }
+    ],
+    "count": 1
+  },
+  "items": [
+    {
+      "source_id": "es-ifa-cntmat",
+      "artifact_sha256": "e0600fd2fe84e7a62a79fea438a541fabc59adece3307fa6aa6694695f482f0a",
+      "code": null,
+      "kind": "competencia_especifica",
+      "text": "Competência 1 Analisar criticamente as diferentes formas de produção, organização e aplicação do conhecimento científico, compreendendo sua evolução ao longo do tempo, valorizando as contribuições de diferentes povos e culturas.",
+      "page": 25,
+      "locator": "es-formal-competency:p25/y4750/number:1",
+      "positions": [
+        {
+          "stage": "EM",
+          "component": null,
+          "years": null,
+          "position_origin": "explicit_source_stage_and_formal_competency_section"
+        }
+      ],
+      "evidence": [
+        {
+          "source_id": "es-ifa-cntmat",
+          "artifact_sha256": "e0600fd2fe84e7a62a79fea438a541fabc59adece3307fa6aa6694695f482f0a",
+          "page": 25,
+          "printed_page": null,
+          "excerpt": "Competência 1 Analisar criticamente as diferentes formas de produção, organização e aplicação do conhecimento científico, compreendendo sua evolução ao longo do tempo, valorizando as contribuições de diferentes povos e culturas.",
+          "locator": "es-formal-competency:p25/y4750/number:1/fragment-page:25",
+          "bbox": [
+            70.58399963378906,
+            474.9447998046875,
+            527.9939819335938,
+            528.6352783203125
+          ],
+          "coordinate_space": "normalized_pdf_points",
+          "method": "pymupdf-native-physical-vector-cell"
+        }
+      ],
+      "actor_type": "automated",
+      "actor_id": "curriculos-abertos:es-complements-physical-fields-v1",
+      "extraction_method": "es-primary-vector-label-column-v1",
+      "source_number": "1",
+      "source_context": {
+        "source_heading": {
+          "page": 25,
+          "text": "Competência 1",
+          "bbox": [
+            70.58399963378906,
+            475.0447998046875,
+            161.76568603515625,
+            488.4252624511719
+          ]
+        },
+        "explicit_heading_only": true,
+        "no_equivalence_inferred": true,
+        "human_review": false
+      }
+    }
+  ],
+  "human_review": false
+}

@@ -1,0 +1,21 @@
+--- a/pipeline/ingest.py
++++ b/pipeline/ingest.py
+@@ -43,7 +43,7 @@
+ NATIONAL_PATTERN = r'(?:EI\d{2}[A-Z]{2}\d{2}|EF\d{2}[A-Z]{2}\d{2,3}|EM\d{2}(?:[A-Z]{3}\d{3}|LP\d{1,4}|CO\d{2}))'
+ NATIONAL_BASE = re.compile(NATIONAL_PATTERN)
+ NATIONAL = re.compile(r'(?<![A-Z0-9])'+NATIONAL_PATTERN+r'(?![A-Z0-9])')
+-CODE_ANY = re.compile(r'(?<![A-Z0-9])(?:(?:[A-Z]{2})[-.])?(?:'+NATIONAL_PATTERN+r'|EMIF[A-Z]{2,6}\d{1,3}|EM(?:LGG|MAT|CNT|CHS)\d{3}[A-Z]?|EM(?:LP|CH)\d{2,3}(?:[-.]?[A-Z])?|EM[123]PV\d{2}|PV\d{2}|(?:LP|LGG|CHSA|MAT|CN|EPT)\d{2,3}(?:FG|IF))(?:(?:\.\s*[scadn]\s*\.\s*\d{2})|(?:[A-Z][A-Za-z0-9]{0,12}|[a-z]|\*)|[/.-][A-Za-z0-9-]+)*(?![A-Z0-9])')
++CODE_ANY = re.compile(r'(?<![A-Z0-9])(?:(?:[A-Z]{2})[-.]\s*|GO\s+)?(?:'+NATIONAL_PATTERN+r'|EMIF[A-Z]{2,6}\d{1,3}|EM(?:LGG|MAT|CNT|CHS)\d{3}[A-Z]?|EM(?:LP|CH)\d{2,3}(?:[-.]?[A-Z])?|EM[123]PV\d{2}|PV\d{2}|(?:LP|LGG|CHSA|MAT|CN|EPT)\d{2,3}(?:FG|IF))(?:(?:\.\s*[scadn]\s*\.\s*\d{2})|(?:[A-Z][A-Za-z0-9]{0,12}|[a-z]|\*)|[/.-][A-Za-z0-9-]+)*(?![A-Z0-9])')
+ CODE = CODE_ANY
+ COMPONENTS = {'LP':'Língua Portuguesa','MA':'Matemática','CI':'Ciências','GE':'Geografia','HI':'História','AR':'Arte','EF':'Educação Física','LI':'Língua Inglesa','ER':'Ensino Religioso','LGG':'Linguagens e suas Tecnologias','MAT':'Matemática e suas Tecnologias','CNT':'Ciências da Natureza e suas Tecnologias','CHS':'Ciências Humanas e Sociais Aplicadas','EO':'O eu, o outro e o nós','CG':'Corpo, gestos e movimentos','TS':'Traços, sons, cores e formas','EF-EI':'Escuta, fala, pensamento e imaginação','ET':'Espaços, tempos, quantidades, relações e transformações','CO':'Computação'}
+ 
+@@ -221,7 +221,8 @@
+         # A citation in the middle of a sentence is not a new coded objective.
+         prefix=cell[:match.start()]
+         line_prefix=prefix.rsplit('\n',1)[-1].strip()
+-        if line_prefix not in ('','(','[','•','-') and not re.match(r'^Habilidades?\b.*:\s*\(*$',line_prefix,re.IGNORECASE):continue
++        local_go_goal=(source or {}).get('id')=='go-dcgoem-portal-atual' and re.match(r'GO(?:[-.]\s*|\s+)EM',match.group()) and prefix.rstrip().endswith('(') and cell[match.end():].lstrip().startswith(')')
++        if not local_go_goal and line_prefix not in ('','(','[','•','-') and not re.match(r'^Habilidades?\b.*:\s*\(*$',line_prefix,re.IGNORECASE):continue
+         matches.append(match)
+     found=[]
+     for index,match in enumerate(matches):

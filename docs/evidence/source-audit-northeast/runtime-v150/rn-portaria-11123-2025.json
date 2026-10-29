@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-28T17:34:50.365505+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast:current_cache_verifier",
+  "source_id": "rn-portaria-11123-2025",
+  "source_sha256": "8e8a23b5e500d1ac4aae981c64bd2b6ec8f20e939f4b260701741e90ae5af8b9",
+  "extraction_revision": "page-cell-v1.5.0",
+  "mapping_revision": "documented-code-rules-v1.2.0",
+  "cache_path": "data/extracted/8e8a23b5e500d1ac4aae981c64bd2b6ec8f20e939f4b260701741e90ae5af8b9-page-cell-v1.5.0.json",
+  "cache_sha256": "d4af118b2428b110733ea62362f9f952aab5eca613211967ea59a63642f54c96",
+  "source_extraction_config_sha256": "6d15dd1468aca97f5539b4ad098a6869c24f28500c45efc76808570d6462bcdc",
+  "parser_fingerprint": {
+    "algorithm": "sha256-of-sorted-parser-file-digests",
+    "files": {
+      "document_roles.py": "ea4e0b161d015f6e87e4fa2b7dde202e1605815efff1e6ec48adf137f311a20f",
+      "geometry.py": "f0f2f7230602a051712fd116bce3c9d62bcb3e316d07412f8ed7ff3cda37467d",
+      "ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+      "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
+      "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
+      "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
+      "runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce"
+    },
+    "sha256": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+  },
+  "runtime": {
+    "implementation": "CPython",
+    "pillow": "13.0.0",
+    "pymupdf": "1.26.7",
+    "python": "3.11.15"
+  },
+  "generic_input_count": 1,
+  "adapter_input_count": 12,
+  "final_count": 12,
+  "expected_independent_ID_count": 12,
+  "verified_ID_count": 12,
+  "missing_IDs": [],
+  "extra_IDs": [],
+  "generic_page_containers_surviving": 0,
+  "legitimate_documentary_context_pages": [],
+  "literal_fragments_checked": 12,
+  "schema_items_checked": 12,
+  "parent_links": 11,
+  "orphan_parents": 0,
+  "cycles": 0,
+  "by_kind": {
+    "ato_normativo": 1,
+    "preambulo_normativo": 1,
+    "considerando_normativo": 5,
+    "dispositivo_deliberativo": 1,
+    "artigo_normativo": 2,
+    "comando_publicacao": 1,
+    "assinatura_normativa": 1
+  },
+  "status": "passed",
+  "scope": "Read and validated actual current1.5 extraction cache with exact Source configuration. Full generic+adapter importer/finalizer output equals independently inventoried IDs; no extraction, cache, original publication or source bytes changed. WholeUF/production completeness not claimed."
+}

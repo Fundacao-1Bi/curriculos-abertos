@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-28T22:04:37.160083+00:00",
+  "actor_type": "automated",
+  "source_id": "pb-proposta-ei-ef-cedoc",
+  "artifact_sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+  "source_raw_before_sha256": "0b2751242589089732fc0a6cfe81a163a6c5146e57fbfb775652511f004b8ced",
+  "source_raw_proposed_sha256": "d4f0b3c2424868d1fe43dd864f1ef9b2e8f0688dc64f362fe3cfef91d2f58962",
+  "only_changed_fields": [
+    "uncoded_items_path",
+    "adapter_authority"
+  ],
+  "previous_sidecar_path": "data/manifests/uncoded/pb-cedoc-392-items.json",
+  "previous_sidecar_sha256": "4336a71d0676c2b48f1e363e06f4ef0368c0eba9e2980ff3fc3c79f2865f998b",
+  "new_sidecar_path": "data/manifests/uncoded/pb-cedoc-392-with-appendix-items.json",
+  "new_sidecar_sha256": "fc939a0bdc6aeb243acc8a86c18e071e0a7f3697d9942012aa4e776a9f33c27e",
+  "old1946_payload_preserved": true,
+  "new_records": 74,
+  "combined_records": 2020,
+  "proposed_fields": {
+    "uncoded_items_path": "data/manifests/uncoded/pb-cedoc-392-with-appendix-items.json",
+    "adapter_authority": {
+      "generic_coded_reference_pages": [
+        1,
+        392
+      ],
+      "coded_learning_pages": [
+        234,
+        284
+      ],
+      "coded_learning_ranges": [
+        [
+          185,
+          188
+        ]
+      ],
+      "uncoded_page_sections_ranges": [
+        [
+          185,
+          188
+        ]
+      ]
+    }
+  },
+  "source_only_inventory": "docs/evidence/source-audit-pb392-appendix-peer/blind-primary-inventory.json",
+  "peer_candidate_verification": "docs/evidence/source-audit-pb392-appendix-peer/candidate-verification.json",
+  "technical_verification": "docs/evidence/source-audit-pb392-appendix-author/technical-verification.json",
+  "technical_verification_sha256": "0a905a20eee408f1df48c7d3f794d3f654f04e223406b8963cf206c520304cb5",
+  "scope": "Only physical appendix185–188:69fullwording BNCCreferences,4printedcycles+1annexroot. Prior1946records retained, noEM/currentadoption/equivalence claim.",
+  "binding_status": "unbound_waiting_independent_combined_replay_64ID_map_and_Root_pipeline_coordination",
+  "Source_cache_runtime_modified": false,
+  "whole_source_reconciled": false,
+  "UF_ready": false,
+  "original_wrapper_defaults_preserved": true,
+  "composite_version_note": "Initial unbound list wrapper preserved privately; final composite retains original object wrapper actor/method defaults as well as all1946item payloads."
+}

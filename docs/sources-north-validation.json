@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-28T04:47:08.824704+00:00",
+  "actor_type": "automated",
+  "source_manifest": "data/manifests/north.json",
+  "manifest_sha256": "0f13f527d28b6654eb47a2c7c67cc4738090599a6283a4d2e7484e3f094e4917",
+  "sources": 99,
+  "acquired_originals_hash_verified": 98,
+  "by_uf": {
+    "AC": 3,
+    "AM": 6,
+    "AP": 5,
+    "PA": 8,
+    "RO": 8,
+    "RR": 4,
+    "TO": 65
+  },
+  "unavailable": [
+    "ap-curriculo-focal-em"
+  ],
+  "checks": [
+    "unique source IDs",
+    "all acquired original paths exist",
+    "SHA-256 recomputed from every acquired original and matches manifest",
+    "all code_rule evidence pages positive physical page numbers",
+    "pipeline/ocr.py py_compile passed"
+  ],
+  "not_asserted": [
+    "complete curricular inventory",
+    "current applicability of all sources",
+    "full table extraction and reconciliation",
+    "human pedagogical validation",
+    "UF acceptance"
+  ],
+  "ocr_checkpoint": "var/jobs/north-ocr-pages.json",
+  "manifest_updated_at": "2026-10-28T04:49:27.396806+00:00"
+}

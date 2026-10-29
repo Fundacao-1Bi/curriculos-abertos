@@ -1,0 +1,60 @@
+{
+  "actor_type": "automated",
+  "source_id": "rj-em-curriculo-referencial",
+  "source_sha256": "d5b0700da3a2ef3ca10ab46ec4e69691968f1b00b377ce7d12e8d83683fd38b8",
+  "cache_sha256": "1fb372518084d8cacda2e097e8f1b054b2d32d49e61dd25502a3f016c3100184",
+  "sidecar_path": "data/manifests/uncoded/rj-coded-body-rj-em-curriculo-referencial-v1-items.json",
+  "sidecar_sha256": "47d6fada2777147b2743b0aeb7f6234ee63e7b8fb072a7a28c407393f9e77787",
+  "native_code_denominator": 890,
+  "runtime_loader_count": 890,
+  "runtime_finalizer_count": 890,
+  "runtime_literal_errors": [],
+  "schema_errors": [],
+  "identity_errors": [],
+  "unique_ids": 890,
+  "retained_valid_old_id_count": 744,
+  "new_anchor_count": 146,
+  "technical_duplicate_supersessions": 14,
+  "negative_controls": {
+    "strict_prefix_and_matching_excerpt": {
+      "rejected": true
+    },
+    "body_from_another_printed_identifier": {
+      "rejected": true
+    },
+    "accent_character_changed": {
+      "rejected": true
+    },
+    "merge_next_header": {
+      "rejected": true
+    },
+    "matching_prefix_passes_literal_but_fails_completeness": {
+      "literal_checker_accepted": true,
+      "rejected": true
+    },
+    "unchanged_complete_paragraph_positive": {
+      "accepted": true
+    },
+    "no_terminal_punctuation_with_explicit_next_heading_is_complete": {
+      "accepted": true
+    },
+    "repeated_true_native_codes_remain_three_distinct_occurrences": {
+      "accepted": true
+    },
+    "phantom_duplicate_ids_absent_retained_ids_present": {
+      "accepted": true
+    },
+    "unidade_tematica_label_not_counted_as_learning": {
+      "references": 6,
+      "accepted": true
+    },
+    "all_native_anchors_in_proved_pages_represented": {
+      "accepted": true
+    }
+  },
+  "blocked_pages": [],
+  "elapsed_seconds": 83.561,
+  "script_sha256": "bf794f29467ef9508e4c698185b25078eda9573ea49e33102d442d7e5a1790cb",
+  "recovery_script_sha256": "b9f8be32380da2f2e85b1318dd4e5485f264babba2f00cb6002640b1df4de5ce",
+  "passed": true
+}

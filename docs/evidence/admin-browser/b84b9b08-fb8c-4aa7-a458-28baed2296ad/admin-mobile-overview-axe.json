@@ -1,0 +1,19 @@
+{
+  "url": "/admin",
+  "violations": [
+    {
+      "id": "scrollable-region-focusable",
+      "impact": "serious",
+      "description": "Ensure elements that have scrollable content are accessible by keyboard in Safari",
+      "targets": [
+        [
+          "section:nth-child(7) > .admin-scroll"
+        ],
+        [
+          "section:nth-child(9) > .admin-scroll"
+        ]
+      ]
+    }
+  ],
+  "passes": 27
+}

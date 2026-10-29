@@ -1,0 +1,101 @@
+{
+  "source_id": "ac-cru-em",
+  "method": "Complete sequential replay from original native source census through role/competence/footnote/unit inventories, versioned extraction, actual loader/finalizer/schema and in-memory negative controls.",
+  "before": {
+    "data/raw/AC/ac-cru-em.pdf": "9ff75d1d5d9397aa145dccedd8023a01ed3b862692f58bb7d2cb2c84fc7602ad",
+    "data/manifests/uncoded/ac-em-pv-items.json": "535611af0023abffda03e3b4cc899e5a4b02b286a224303d99f8cfde26114909",
+    "data/manifests/uncoded/ac-em-fgb-v1-items.json": "ca0432b91b599e06c767732913364d71cb1bd2307886e7926d6f63f8b40e1a22",
+    "data/manifests/uncoded/ac-em-fgb-v1-combined-items.json": "e8d40d8a44d5971cc5e01301698e20c403f954de0dc7165f9bf0a2894eea44a2",
+    "docs/evidence/source-audit-ac-em/fgb-source-role-inventory.json": "e3506f31aeeee2c9d87742e0140f847f5edd1509c9d320546ecc54a05ac6040f",
+    "docs/evidence/source-audit-ac-em/fgb-source-specific-competences.json": "cde96475b35b55ff0b4b88a659d2dcf922316dd996f4763c2bf25fd74b843965",
+    "docs/evidence/source-audit-ac-em/fgb-primary-unit-inventory.json": "23d45f4a692806143487dff946affca67a9a47a9737aec9b67f965ca86249625",
+    "pipeline/ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+    "pipeline/runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce",
+    "src/shared/contracts.ts": "ec1013e7bb9aba48e021dc3d0d598b55c743f08372e69b059a93ded40fbae2c7",
+    "data/schema/1.1.0.json": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df",
+    "data/manifests/north.json": "17c94bf5cdd0d778956c4fd2fe6dca6a24ff74403f439fec512f4517c20c3685"
+  },
+  "after": {
+    "data/raw/AC/ac-cru-em.pdf": "9ff75d1d5d9397aa145dccedd8023a01ed3b862692f58bb7d2cb2c84fc7602ad",
+    "data/manifests/uncoded/ac-em-pv-items.json": "535611af0023abffda03e3b4cc899e5a4b02b286a224303d99f8cfde26114909",
+    "data/manifests/uncoded/ac-em-fgb-v1-items.json": "ca0432b91b599e06c767732913364d71cb1bd2307886e7926d6f63f8b40e1a22",
+    "data/manifests/uncoded/ac-em-fgb-v1-combined-items.json": "e8d40d8a44d5971cc5e01301698e20c403f954de0dc7165f9bf0a2894eea44a2",
+    "docs/evidence/source-audit-ac-em/fgb-source-role-inventory.json": "e3506f31aeeee2c9d87742e0140f847f5edd1509c9d320546ecc54a05ac6040f",
+    "docs/evidence/source-audit-ac-em/fgb-source-specific-competences.json": "cde96475b35b55ff0b4b88a659d2dcf922316dd996f4763c2bf25fd74b843965",
+    "docs/evidence/source-audit-ac-em/fgb-primary-unit-inventory.json": "23d45f4a692806143487dff946affca67a9a47a9737aec9b67f965ca86249625",
+    "pipeline/ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+    "pipeline/runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce",
+    "src/shared/contracts.ts": "ec1013e7bb9aba48e021dc3d0d598b55c743f08372e69b059a93ded40fbae2c7",
+    "data/schema/1.1.0.json": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df",
+    "data/manifests/north.json": "17c94bf5cdd0d778956c4fd2fe6dca6a24ff74403f439fec512f4517c20c3685"
+  },
+  "changed_files": [],
+  "runs": [
+    {
+      "script": "docs/evidence/source-audit-ac-em/fgb-native-checkpoint.py",
+      "exit_code": 0,
+      "elapsed_seconds": 5.174,
+      "stdout_tail": "  \"ac-fgb-organizer-10\": 12\n  },\n  \"physical_table_segments_in_scope\": 245,\n  \"nonempty_cell_containers_in_scope\": 2293,\n  \"role_candidates\": {\n    \"column_header\": 577,\n    \"coded_skill_candidate_cell\": 240,\n    \"component_objects_or_proposal_pending_column_header\": 993,\n    \"blank\": 305,\n    \"activity_proposal_container\": 157,\n    \"full_width_pending_literal_role\": 194,\n    \"left_column_uncoded_or_continuation_pending\": 52,\n    \"competence_number_heading\": 80\n  },\n  \"elapsed_seconds\": 5.002\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "docs/evidence/source-audit-ac-em/fgb-source-roles.py",
+      "exit_code": 0,
+      "elapsed_seconds": 3.043,
+      "stdout_tail": "lumn_header\": 579,\n    \"own_coded_skill_definition\": 240,\n    \"component_label\": 330,\n    \"knowledge_object_fragment\": 556,\n    \"blank\": 305,\n    \"activity_proposal_fragment\": 331,\n    \"structural_heading\": 86,\n    \"coded_skill_continuation_fragment\": 52,\n    \"competence_number_heading\": 80,\n    \"specific_competence_definition_fragment\": 39\n  },\n  \"native_words_in_nonempty_cells\": 54283,\n  \"cell_containers\": 2598,\n  \"nonempty_cells\": 2293,\n  \"all_column_roles_classified\": true,\n  \"issues\": []\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "docs/evidence/source-audit-ac-em/fgb-source-competences.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.31,
+      "stdout_tail": "{\n  \"numbered_markers\": 89,\n  \"full_numbered_definitions\": 44,\n  \"numeric_reference_only_labels\": 45,\n  \"intro_definition_occurrences\": 16,\n  \"full_specific_competence_occurrences\": 60,\n  \"issues\": [],\n  \"result\": \"pass\"\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "docs/evidence/source-audit-ac-em/fgb-source-code-notes.py",
+      "exit_code": 0,
+      "elapsed_seconds": 1.197,
+      "stdout_tail": "{\"asterisk_tokens\": 2, \"guidance_notes\": 1, \"note\": \"* .A habilidade é própria da Língua Inglesa, mas, nesse caso, deve ser adaptada para a Língua Espanhola.\"}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "docs/evidence/source-audit-ac-em/fgb-source-units.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.42,
+      "stdout_tail": "240,\n    \"specific_competence_definition_occurrences\": 60,\n    \"knowledge_object_containers\": 447,\n    \"activity_proposal_containers\": 240,\n    \"physical_structural_heading_occurrences\": 86,\n    \"numeric_competence_reference_labels\": 45,\n    \"source_organizers\": 10,\n    \"explicit_out_of_grid_guidance_notes\": 1,\n    \"source_materialized_cell_fragments\": 1179\n  },\n  \"skill_fragment_count\": 292,\n  \"objects_fragment_count\": 556,\n  \"activity_fragment_count\": 331,\n  \"issues\": [],\n  \"result\": \"pass\"\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "data/manifests/uncoded/ac-em-fgb-v1-extract.py",
+      "exit_code": 0,
+      "elapsed_seconds": 0.798,
+      "stdout_tail": "e_kinds\": {\n    \"secao_normativa\": 146,\n    \"competencia_especifica\": 60,\n    \"habilidade\": 240,\n    \"objeto_conhecimento\": 447,\n    \"experiencia_sugerida\": 240,\n    \"orientacao_didatica\": 1\n  },\n  \"combined_path\": \"data/manifests/uncoded/ac-em-fgb-v1-combined-items.json\",\n  \"combined_sha256\": \"e8d40d8a44d5971cc5e01301698e20c403f954de0dc7165f9bf0a2894eea44a2\",\n  \"combined_records\": 1292,\n  \"binding_ready\": false,\n  \"source_manifest_core_cache_modified\": false,\n  \"whole_source_UF_ready\": false\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "data/manifests/uncoded/ac-em-fgb-v1-verify.py",
+      "exit_code": 0,
+      "elapsed_seconds": 4.391,
+      "stdout_tail": "errors\": []\n  },\n  \"synthetic_scoped_duplicate_probe\": {\n    \"not_generic_cache_snapshot\": true,\n    \"supplied\": 240,\n    \"final_records\": 1292,\n    \"boundaries\": {\n      \"121\": false,\n      \"122\": true,\n      \"384\": true,\n      \"385\": false\n    }\n  },\n  \"runtime_stable\": true,\n  \"no_manifest_core_PV_cache_bundle_database_mutation\": true,\n  \"source_only_denominator_before_adapter\": true,\n  \"whole_source_UF_ready\": false,\n  \"human_pedagogical_review\": false,\n  \"result\": \"pass\"\n}\nISSUE_COUNT 0\n[]\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "data/manifests/uncoded/ac-em-fgb-v1-negative-controls.py",
+      "exit_code": 0,
+      "elapsed_seconds": 1.195,
+      "stdout_tail": "\n    },\n    {\n      \"name\": \"silently_correct_literal_short_LGG_code\",\n      \"expected\": \"reject\",\n      \"actual\": \"reject\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"discard_out_of_grid_adaptation_footnote\",\n      \"expected\": \"reject\",\n      \"actual\": \"reject\",\n      \"pass\": true\n    },\n    {\n      \"name\": \"reject_widened_bbox_including_neighbor_columns\",\n      \"expected\": \"reject\",\n      \"actual\": \"reject\",\n      \"pass\": true\n    }\n  ],\n  \"passed\": 20,\n  \"total\": 20,\n  \"result\": \"pass\"\n}\n",
+      "stderr_tail": ""
+    }
+  ],
+  "actual_gate_results": {
+    "main": "pass",
+    "negative_controls": "pass"
+  },
+  "native_checkpoint_elapsed_seconds_is_nonsemantic_metadata": true,
+  "baseline_PV158_and_PDF_unchanged": true,
+  "new_sidecars_byte_identical": true,
+  "primary_unit_inventories_byte_identical": true,
+  "no_global_parser_OCR_cache_invocation": true,
+  "result": "pass"
+}

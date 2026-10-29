@@ -1,0 +1,148 @@
+{
+  "format": "independent_technical_peer_receipt_v1",
+  "generated_at": "2026-10-28T21:35:01.172358+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex-independent-pi-eief-glyph-peer",
+  "technical_acceptance": true,
+  "source_id": "pi-curriculo-ei-ef",
+  "source_artifact_sha256": "609e955a2774afe6b25451b6d597005fcedc9b769cbf1a00916caaaab40f426e",
+  "Source_record_sha256": "f28959d50c0e0cbdcf900f3d0b0f0ec54c4a59da728eaf2339ee1d33f2134467",
+  "ledger_path": "docs/evidence/source-audit-northeast/pi-eief-glyph-technical-supersessions.json",
+  "ledger_sha256": "73817aff990326ca9cb7a1cb9456be9a7f942d2f73b24e4b12b0d0c97e9010ed",
+  "primary_census_preceded_candidate_read": true,
+  "six_physical_occurrences_verified": 6,
+  "six_technical_ID_locator_migrations_verified": 6,
+  "body_text_changes_in_six_pairs": 0,
+  "same_code_kind_positions_parent": true,
+  "irregular_EF07GE011_01PI_preserved_exact": true,
+  "P2_region_wording": {
+    "status": "resolved_by_metadata_refinement",
+    "broad_parser_regions_pages": [
+      265,
+      279,
+      281
+    ],
+    "old_new_pair_invariant_fields": [
+      "old_id",
+      "new_id",
+      "old_code",
+      "new_code",
+      "page",
+      "old_locator",
+      "new_locator",
+      "locator",
+      "old_method",
+      "new_method",
+      "proof_selector"
+    ],
+    "primary_physical_cells_remain_distinct_from_parser_regions": true
+  },
+  "scoped_replay": {
+    "pages": 37,
+    "document_pages": 313,
+    "coded_page_code_occurrences_before": 392,
+    "coded_page_code_occurrences_after": 392,
+    "literal_and_schema_records": 429,
+    "errors": 0,
+    "negative_controls_blocked": 6
+  },
+  "production_cache_unchanged_sha256": "18087f5d7d80975c943577d56228d984678645f56fc84ff382843df096a12d5e",
+  "Source_flags_at_receipt": {
+    "native_text_order": null,
+    "native_text_order_pages": null,
+    "technical_supersessions": null
+  },
+  "limitations": [
+    "Independent complete-body verification covers the six selected primary occurrences. The other scoped records passed actual literal checker and formal schema, not an independent full-body census.",
+    "Producer global glyph audit is pinned evidence; its 1145 region/API witnesses are not claimed as 1145 unique independently counted physical ligatures by this peer.",
+    "37-page extraction is not a replacement for the full 313-page Source cache. Binding and full refresh require separate owner execution and verification.",
+    "No whole-Source reconciliation, UF readiness, official curricular amendment, current universal adoption, or human/pedagogical review is claimed."
+  ],
+  "producer_artifact_pins_rechecked": [
+    {
+      "path": "docs/evidence/source-audit-pi-eief-glyph-peer/primary-census.json",
+      "sha256": "7f42fa9faf8bc8bb0bcc82a1bffcae3d1675878928243b388fc0d4e60bfa54ae"
+    },
+    {
+      "path": "var/ne-pi-eief-glyph-candidate/previous-full-cache.json",
+      "sha256": "18087f5d7d80975c943577d56228d984678645f56fc84ff382843df096a12d5e"
+    },
+    {
+      "path": "var/ne-pi-eief-glyph-candidate/isolated-extraction.json",
+      "sha256": "fa8ad3f4feeceb3032e7fc7e5ed89efbc8725ceb288c39254f70f13c16db889f"
+    },
+    {
+      "path": "docs/evidence/source-audit-northeast/pi-eief-glyph-technical-supersessions.json",
+      "sha256": "73817aff990326ca9cb7a1cb9456be9a7f942d2f73b24e4b12b0d0c97e9010ed"
+    },
+    {
+      "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+      "sha256": "6a116d63c8b20139f972b002cfc1d17c3260a1ae69b582f44ec2fb236ecb2632"
+    },
+    {
+      "path": "docs/evidence/source-audit-northeast/pi-eief-glyph-audit-summary.json",
+      "sha256": "a90fe760daa0a3b3ad5d8553a613438800f7a4a5652846a66c7a8ad9921d77ee"
+    },
+    {
+      "path": "docs/evidence/source-audit-northeast/pi-eief-isolated-parser-probe.json",
+      "sha256": "5046a92b080154433b09dff84b0747c64f1c6a78d67ef2c881775cb70a15ad84"
+    },
+    {
+      "path": "docs/evidence/source-audit-pi-eief-glyph-peer/primary-census.json",
+      "sha256": "7f42fa9faf8bc8bb0bcc82a1bffcae3d1675878928243b388fc0d4e60bfa54ae"
+    }
+  ],
+  "own_evidence_files": [
+    {
+      "path": "docs/evidence/source-audit-pi-eief-glyph-peer/census.py",
+      "sha256": "9664e188947ec4cc47274202b3937d34d79c4837d9751b9dd265847c6da67918",
+      "bytes": 3739
+    },
+    {
+      "path": "docs/evidence/source-audit-pi-eief-glyph-peer/primary-census.json",
+      "sha256": "7f42fa9faf8bc8bb0bcc82a1bffcae3d1675878928243b388fc0d4e60bfa54ae",
+      "bytes": 16265
+    },
+    {
+      "path": "docs/evidence/source-audit-pi-eief-glyph-peer/verify.py",
+      "sha256": "253a90b07ada3b04d5c01b3af638a1c1029b62f9fccda6357ef0550d7dc5b6f7",
+      "bytes": 10500
+    },
+    {
+      "path": "docs/evidence/source-audit-pi-eief-glyph-peer/verification.json",
+      "sha256": "917f49cf4ab8d7a74ba827b43606f9d484e8326c38bda7949ee73cef7d43e659",
+      "bytes": 13628
+    },
+    {
+      "path": "docs/evidence/source-audit-pi-eief-glyph-peer/verification.log",
+      "sha256": "cd89751cf411db0e8012474a94234d0970212dcc61e753355426cfd506b55905",
+      "bytes": 81
+    },
+    {
+      "path": "docs/evidence/source-audit-pi-eief-glyph-peer/ledger-before-region-wording-fix.json",
+      "sha256": "68daafcfe2637545db2453e2ea06467bdd9fd529558fd02b516405952f81e064",
+      "bytes": 10160
+    },
+    {
+      "path": "docs/evidence/source-audit-pi-eief-glyph-peer/producer-proof-before-region-wording-fix.json",
+      "sha256": "3e525559dbb394f4a84443c6080db86266ac16ad95fa5f20c7e5478331f433b8",
+      "bytes": 5257
+    },
+    {
+      "path": "docs/evidence/source-audit-pi-eief-glyph-peer/private-crops.json",
+      "sha256": "2cefdb3bad8a529ace79a54ab55bb0a6ea01a917874728c8cf2c4d3a7867a2e7",
+      "bytes": 1934
+    },
+    {
+      "path": "docs/evidence/source-audit-pi-eief-glyph-peer/receipt.py",
+      "sha256": "61920aea98671fd016306b9b31cab4d635d31eeeedb5a49f6686154787406f30",
+      "bytes": 5270
+    },
+    {
+      "path": "docs/evidence/source-audit-pi-eief-glyph-peer/README.md",
+      "sha256": "4b829bfc829a2bfa06c7093d15d69f24112b0f69952e7466a4c74c7246a36437",
+      "bytes": 3876
+    }
+  ],
+  "Source_core_cache_candidate_DB_publication_modified": false
+}

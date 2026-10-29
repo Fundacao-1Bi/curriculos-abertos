@@ -1,0 +1,3515 @@
+{
+  "producer": "scripts/domain-global-update-real.ts",
+  "started_at": "2026-10-28T14:42:30.193Z",
+  "completed_at": "2026-10-28T14:45:50.735Z",
+  "scope": "Exact public base snapshot copied pagewise into newly created owned disposable DB; source/public main DB read only; no admin/auth data copied. Not national editorial acceptance or production load proof.",
+  "base_publication": "ca-77fb8076598b567e1ba3",
+  "copied": {
+    "sources": 247,
+    "items": 38322,
+    "relations": 13007
+  },
+  "base_sha256": "da8fb61ce80b2aec4a83d4f0e9cdeb306505c384315af59a76b0fc9fabc03eb0",
+  "publication": "ca-update-e93e7f67dee4718af70cc37f2fc0cedc",
+  "artifact": "data/bundles/global-update-real-curriculum_test_0c28b6c00f65/snapshot.manifest.json",
+  "artifact_sha256": "ab8fbec349ee98460005c81e1e641285bb3fbf3bde0ec99b8ccac3ca9f41471e",
+  "import_receipt": {
+    "id": "ca-update-e93e7f67dee4718af70cc37f2fc0cedc",
+    "sha256": "ab8fbec349ee98460005c81e1e641285bb3fbf3bde0ec99b8ccac3ca9f41471e",
+    "already_imported": false,
+    "item_count": 38413,
+    "relation_count": 13007,
+    "source_count": 247,
+    "storage_format": "relational-v1"
+  },
+  "raw_receipt": {
+    "publication": "ca-1570c340fa33b9a527f3",
+    "artifact": "data/bundles/ca-1570c340fa33b9a527f3.manifest.json",
+    "artifact_sha256": "14774517994bb804d890ebf48dbef8fea8c3113e6f99bb749d397d5b08827dd3"
+  },
+  "update_scope": {
+    "mode": "base-plus-source-update",
+    "base_publication": "ca-77fb8076598b567e1ba3",
+    "candidate_publication": "ca-update-e93e7f67dee4718af70cc37f2fc0cedc",
+    "base_source_ids": [
+      "ac-cru-ei-ef",
+      "ac-cru-em",
+      "al-parecer-27-2026-doe",
+      "al-recal-computacao",
+      "al-recal-ef",
+      "al-recal-ei-2019",
+      "al-recal-em",
+      "am-rca-ef-af",
+      "am-rca-ef-ai",
+      "am-rca-ei",
+      "am-rca-em",
+      "ap-curriculo-focal-em",
+      "ap-rca-ei-ef",
+      "ap-rca-ei-ef-mec",
+      "ap-rca-em",
+      "ba-dcrb-ei-ef",
+      "ba-dcrb-em-2026",
+      "ba-dcrb-em-vol2-2022",
+      "ba-ementas-itinerarios",
+      "ba-matrizes-em-2025",
+      "ba-resolucao-249-2026",
+      "br-bncc-2018",
+      "br-bncc-computacao-2022",
+      "br-dcn-em-2024",
+      "br-ifa-parametros-2025",
+      "ce-dcrc-computacao",
+      "ce-dcrc-ei-ef-2019",
+      "ce-dcrc-em-2021",
+      "ce-resolucao-526-2026",
+      "ce-trilhas-aprofundamento-2023",
+      "df-catalogo-ifa-2026",
+      "df-catalogo-pee",
+      "df-cm-ef-2018",
+      "df-cm-ei-2018",
+      "df-cm-em",
+      "df-cm-pressupostos",
+      "df-competencias-digitais-vol1",
+      "df-competencias-digitais-vol2",
+      "df-competencias-digitais-vol3",
+      "df-competencias-digitais-vol4",
+      "df-competencias-digitais-vol5",
+      "df-orientador-if-2025",
+      "es-aspiracoes-docentes-versao-revisada",
+      "es-curr-culo-es-2019-vol-02-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-da-natureza-e-matem-tica-m",
+      "es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso",
+      "es-curr-culo-es-2019-vol-04-ensino-fundamental-anos-iniciais-rea-de-linguagens-arte-e-educa-o-f-sica-mi",
+      "es-curr-culo-es-2019-vol-05-ensino-fundamental-anos-iniciais-rea-de-linguagens-l-ngua-portuguesa-miolo",
+      "es-curr-culo-es-2020-vol-06-ensino-fundamental-anos-finais-rea-de-ci-ncias-da-natureza-e-matem-tica-mio",
+      "es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m",
+      "es-curr-culo-es-2020-vol-08-ensino-fundamental-anos-finais-rea-de-linguagens-arte-educa-o-f-sica-e-l-ng",
+      "es-curr-culo-es-2020-vol-09-ensino-fundamental-anos-finais-rea-de-linguagens-l-ngua-portuguesa-miolo",
+      "es-curriculo-em-aprofundamento-da-area-cn-alterado-20-04-22",
+      "es-curriculo-em-aprofundamento-da-area-linguagens-alterado-19-04",
+      "es-curriculo-em-aprofundamento-da-area-matematica-alterado-15-09-23",
+      "es-curriculo-em-aprofundamento-entreareas-chsa-e-cn-alterado-20-04-22",
+      "es-curriculo-em-aprofundamento-entreareas-chsa-e-linguagens-alterado-20-04-22",
+      "es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22",
+      "es-curriculo-em-aprofundamento-entreareas-cn-e-linguagens-alterado-20-04-22",
+      "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+      "es-curriculoem-aprofundamento-da-area-de-chsa",
+      "es-em-ci-ncias-da-natureza",
+      "es-em-ci-ncias-humanas",
+      "es-em-ept-integrado",
+      "es-em-l-ngua-portuguesa",
+      "es-em-linguagens",
+      "es-em-matem-tica",
+      "es-em-texto-introdut-rio",
+      "es-ifa-cntmat",
+      "es-ifa-das-quatro-areas-do-conhecimento-finalizado",
+      "es-ifa-lingchsa-6-1",
+      "es-orientacoes-para-elaboracao-dos-projetos-integradores-3",
+      "es-referenciais-curriculares-para-elaboracao-de-itinerarios-formativos-1-1",
+      "es-resolucao-cee-es-no-5-190-2018-ei-e-ef",
+      "es-resolucao-cee-es-no-5-777-2020-ensino-medio",
+      "es-tema-integrador-final-24-10",
+      "go-dcgo-ef-af",
+      "go-dcgo-ef-ai",
+      "go-dcgo-ei",
+      "go-dcgoem-2021",
+      "go-dcgoem-portal-atual",
+      "go-eletivas-2026",
+      "go-eletivas-fic-2026",
+      "go-matriz-orientador-2026",
+      "ma-dctm-ei-ef",
+      "ma-dctm-em-vol2",
+      "mg-crmg-computacao-2025",
+      "mg-crmg-eief-atualizada",
+      "mg-crmg-em",
+      "mg-em-documento-orientador-2026",
+      "mg-matrizes-2026",
+      "ms-cr-eief-v110",
+      "ms-cr-em-v11",
+      "ms-educacao-digital-v13",
+      "ms-if-nucleo-integrador",
+      "ms-if-projeto-vida-2023",
+      "mt-drc-concepcoes-2018",
+      "mt-drc-ef-2018",
+      "mt-drc-ef-af-2018",
+      "mt-drc-ef-ai-primario-2018",
+      "mt-drc-ei-2018",
+      "mt-drc-ei-primario-2018",
+      "mt-drc-em-2021",
+      "pa-computacao-577-2025",
+      "pa-dcepa-aprovacao-769-2018",
+      "pa-dcepa-ei-ef",
+      "pa-dcepa-ei-ef-mec",
+      "pa-dcepa-em",
+      "pa-diretrizes-em-483-2025",
+      "pa-matrizes-595-2025",
+      "pa-politica-ei-215-2026",
+      "pb-pcem",
+      "pb-proposta-ei-ef",
+      "pe-cedim-2026",
+      "pe-curriculo-ef",
+      "pe-curriculo-ei",
+      "pe-curriculo-em-2021",
+      "pe-historia-pernambuco-2026",
+      "pi-computacao-ei-ef",
+      "pi-curriculo-ei-ef",
+      "pi-curriculo-em-caderno1-2021",
+      "pi-curriculo-em-caderno2-2021",
+      "pr-deliberacao-0325",
+      "pr-deliberacao-0725",
+      "pr-referencial-eief-2018",
+      "pr-referencial-eief-2025",
+      "pr-referencial-em-2021",
+      "pr-referencial-em-2025",
+      "pr-referencial-em-volume1-atual",
+      "pr-referencial-em-volume2-atual",
+      "pr-referencial-em-volume3-atual",
+      "rj-doc-eief-2019",
+      "rj-em-curriculo-referencial",
+      "rj-em-integral-tecnico",
+      "rj-em-itinerarios",
+      "rj-em-lab-humanas-2025",
+      "rj-em-lab-linguagens-2025",
+      "rn-dcec-computacao",
+      "rn-diretrizes-ifa",
+      "rn-documento-ef-2018",
+      "rn-documento-ei-2018",
+      "rn-estrutura-em-2026-diurno",
+      "rn-estrutura-em-2026-em_tempo_integral",
+      "rn-estrutura-em-2026-noturno",
+      "rn-referencial-em",
+      "rn-trilhas-aprofundamento",
+      "ro-educacao-digital-2026",
+      "ro-eletivas-2026",
+      "ro-itinerarios-2026",
+      "ro-matrizes-2025",
+      "ro-matrizes-2026",
+      "ro-rcem-2022",
+      "ro-rcro-ef",
+      "ro-rcro-ei",
+      "rr-dcr-ei-ef",
+      "rr-dcr-em",
+      "rs-rcg-ef",
+      "rs-rcg-ei-2018",
+      "rs-rcg-em",
+      "rs-rcg-em-jul22",
+      "sc-cb-eief-2019",
+      "sc-cb-eief-2019-atual",
+      "sc-cb-em-caderno-1",
+      "sc-cb-em-caderno-2",
+      "sc-cb-em-caderno-3",
+      "sc-cb-em-caderno-4",
+      "sc-cb-em-caderno-5",
+      "sc-cb-em-caderno-6",
+      "sc-educacao-digital",
+      "sc-lingua-inglesa-ai",
+      "sc-parecer-446-2025",
+      "sc-resolucao-070-2025",
+      "se-bncc-computacao-2025",
+      "se-computacao-2026",
+      "se-curriculo-ei-ef",
+      "se-curriculo-em",
+      "se-humanas-vol2",
+      "se-linguagens-parte2-vol2",
+      "se-linguagens-vol2",
+      "se-matematica-vol2",
+      "se-natureza-vol2",
+      "se-projeto-vida",
+      "sp-curriculo-eief-isbn",
+      "sp-curriculo-em-isbn",
+      "sp-educacao-digital-midiatica-2026",
+      "to-dct-ef-ch-er",
+      "to-dct-ef-cn-mat",
+      "to-dct-ef-linguagens",
+      "to-dct-ei",
+      "to-dct-em",
+      "to-dct-em-caderno1",
+      "to-dct-em-ch-313853",
+      "to-dct-em-ch-314419",
+      "to-dct-em-cn-313851",
+      "to-dct-em-cn-314418",
+      "to-dct-em-eletivas-314423",
+      "to-dct-em-eletivas-379617",
+      "to-dct-em-ftp-314424",
+      "to-dct-em-lg-313847",
+      "to-dct-em-lg-314420",
+      "to-dct-em-mat-313849",
+      "to-dct-em-mat-314421",
+      "to-dct-em-trilhas-314422",
+      "to-dct-trilha-360810",
+      "to-dct-trilha-360811",
+      "to-dct-trilha-360812",
+      "to-dct-trilha-360813",
+      "to-dct-trilha-360814",
+      "to-dct-trilha-360815",
+      "to-dct-trilha-360817",
+      "to-dct-trilha-360818",
+      "to-dct-trilha-360819",
+      "to-dct-trilha-360820",
+      "to-dct-trilha-360821",
+      "to-dct-trilha-360822",
+      "to-dct-trilha-360823",
+      "to-dct-trilha-360824",
+      "to-dct-trilha-360825",
+      "to-dct-trilha-360826",
+      "to-dct-trilha-360827",
+      "to-dct-trilha-360828",
+      "to-dct-trilha-360829",
+      "to-dct-trilha-360830",
+      "to-dct-trilha-360831",
+      "to-dct-trilha-360832",
+      "to-dct-trilha-360833",
+      "to-dct-trilha-360834",
+      "to-dct-trilha-360835",
+      "to-dct-trilha-360836",
+      "to-dct-trilha-360837",
+      "to-dct-trilha-360838",
+      "to-dct-trilha-360839",
+      "to-dct-trilha-360840",
+      "to-dct-trilha-360841",
+      "to-dct-trilha-360842",
+      "to-dct-trilha-360843",
+      "to-dct-trilha-360844",
+      "to-dct-trilha-360845",
+      "to-dct-trilha-360846",
+      "to-dct-trilha-360847",
+      "to-dct-trilha-360848",
+      "to-dct-trilha-360849",
+      "to-dct-trilha-360850",
+      "to-dct-trilha-360851",
+      "to-dct-trilha-370322",
+      "to-dct-trilha-370323",
+      "to-dct-trilha-370324",
+      "to-dct-trilha-370325"
+    ],
+    "target_source_ids": [
+      "pe-historia-pernambuco-2026"
+    ],
+    "affected_coverage_keys": [
+      "[\"PE\",\"EM\",\"História de Pernambuco\"]"
+    ],
+    "unaffected_sources": [
+      {
+        "source_id": "ac-cru-ei-ef",
+        "before": {
+          "items": 0,
+          "source_sha256": "359bcf14d2de14551bb9a0708b9776126591e09974c2e0b1dd547ea0b8e99dd4",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "359bcf14d2de14551bb9a0708b9776126591e09974c2e0b1dd547ea0b8e99dd4",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ac-cru-em",
+        "before": {
+          "items": 863,
+          "source_sha256": "0dc7ada22b4bb51eb61f9365f3764ff3b71a174f5ab3bdb28c0c1420bdc5137d",
+          "items_sha256": "deadaeeaae40183139f5069336fa6021e35fd84b6cdab5f075b31f9ee6611dcd"
+        },
+        "after": {
+          "items": 863,
+          "source_sha256": "0dc7ada22b4bb51eb61f9365f3764ff3b71a174f5ab3bdb28c0c1420bdc5137d",
+          "items_sha256": "deadaeeaae40183139f5069336fa6021e35fd84b6cdab5f075b31f9ee6611dcd"
+        }
+      },
+      {
+        "source_id": "al-parecer-27-2026-doe",
+        "before": {
+          "items": 0,
+          "source_sha256": "6d70e8473878845f8da665bf3716cf19bc4052bd05d2fcf5c60d86a8fdc3bbfc",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "6d70e8473878845f8da665bf3716cf19bc4052bd05d2fcf5c60d86a8fdc3bbfc",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "al-recal-computacao",
+        "before": {
+          "items": 0,
+          "source_sha256": "ecc7e39c6d8693edf2a170a7337c4a875926f546254c758fccc3cf5c655b1385",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "ecc7e39c6d8693edf2a170a7337c4a875926f546254c758fccc3cf5c655b1385",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "al-recal-ef",
+        "before": {
+          "items": 0,
+          "source_sha256": "7b91e3f75ed769d08978d7931f0797ca937c93a3b251933c3ced87a2d8d43012",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "7b91e3f75ed769d08978d7931f0797ca937c93a3b251933c3ced87a2d8d43012",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "al-recal-ei-2019",
+        "before": {
+          "items": 219,
+          "source_sha256": "5282f0e09b7d5e60ea9ee8feee990b7d495bf6709061d671f57d139790ba5b76",
+          "items_sha256": "77eb24209126cfaa8e22d4087bc121ef108af7035f88d4d41b6b65d47c1a849c"
+        },
+        "after": {
+          "items": 219,
+          "source_sha256": "5282f0e09b7d5e60ea9ee8feee990b7d495bf6709061d671f57d139790ba5b76",
+          "items_sha256": "77eb24209126cfaa8e22d4087bc121ef108af7035f88d4d41b6b65d47c1a849c"
+        }
+      },
+      {
+        "source_id": "al-recal-em",
+        "before": {
+          "items": 0,
+          "source_sha256": "2f00d872481f116b7ec59321a704d2f37cfa48ff1ff8297678c6f48b2e650868",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "2f00d872481f116b7ec59321a704d2f37cfa48ff1ff8297678c6f48b2e650868",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "am-rca-ef-af",
+        "before": {
+          "items": 0,
+          "source_sha256": "363c7929386e9ce59b385b9539a8cd19ffb8c94cd0b987b3b35a464bc4f4add9",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "363c7929386e9ce59b385b9539a8cd19ffb8c94cd0b987b3b35a464bc4f4add9",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "am-rca-ef-ai",
+        "before": {
+          "items": 0,
+          "source_sha256": "78f7ca86d80cd675e415088b1298b6370128b839044adde9329fa1764cc03f66",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "78f7ca86d80cd675e415088b1298b6370128b839044adde9329fa1764cc03f66",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "am-rca-ei",
+        "before": {
+          "items": 0,
+          "source_sha256": "8a3da3dac9a6e1fd3718c909393de2cd84c82cb659dee9a379597e7bc94c12f4",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "8a3da3dac9a6e1fd3718c909393de2cd84c82cb659dee9a379597e7bc94c12f4",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "am-rca-em",
+        "before": {
+          "items": 0,
+          "source_sha256": "ad8b7e8df0ebe4892b20d251c0ba075ff8435e65877000013fb0e45e97041b75",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "ad8b7e8df0ebe4892b20d251c0ba075ff8435e65877000013fb0e45e97041b75",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ap-curriculo-focal-em",
+        "before": {
+          "items": 0,
+          "source_sha256": "211ccaee5b09206fe813e422ac946aeca3e470ea810ef9d1388f375b48a7575b",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "211ccaee5b09206fe813e422ac946aeca3e470ea810ef9d1388f375b48a7575b",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ap-rca-ei-ef",
+        "before": {
+          "items": 0,
+          "source_sha256": "e863ac121c4e3a44c405609c2170e5efa3f78eaf30aa761bc3ad0f11ba67c7ee",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "e863ac121c4e3a44c405609c2170e5efa3f78eaf30aa761bc3ad0f11ba67c7ee",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ap-rca-ei-ef-mec",
+        "before": {
+          "items": 2016,
+          "source_sha256": "495b9301384baafe105ce9a078f217b5d803e336802979788c04332cda4414ec",
+          "items_sha256": "5d553f97a10f70a53ba2840ce2b5c3576775eb043ef4cd031bca95bebb3989e0"
+        },
+        "after": {
+          "items": 2016,
+          "source_sha256": "495b9301384baafe105ce9a078f217b5d803e336802979788c04332cda4414ec",
+          "items_sha256": "5d553f97a10f70a53ba2840ce2b5c3576775eb043ef4cd031bca95bebb3989e0"
+        }
+      },
+      {
+        "source_id": "ap-rca-em",
+        "before": {
+          "items": 0,
+          "source_sha256": "829fc3f6f13276083203bc0405fb6c90504ba87427ce8e6e80b5e65bfda98589",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "829fc3f6f13276083203bc0405fb6c90504ba87427ce8e6e80b5e65bfda98589",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ba-dcrb-ei-ef",
+        "before": {
+          "items": 0,
+          "source_sha256": "cd4395147b9771cd91e8a069219c2be0ced7178c48b00ac9c6399c78f8bc95bb",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "cd4395147b9771cd91e8a069219c2be0ced7178c48b00ac9c6399c78f8bc95bb",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ba-dcrb-em-2026",
+        "before": {
+          "items": 0,
+          "source_sha256": "6846e9b5b514084b766b69110c837b0ef2aa0ab5fa9447337698a707a89cbee2",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "6846e9b5b514084b766b69110c837b0ef2aa0ab5fa9447337698a707a89cbee2",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ba-dcrb-em-vol2-2022",
+        "before": {
+          "items": 0,
+          "source_sha256": "280d84532155af8b183e1dca1ce0291f382558fb296b3910c77e08be56b03fdd",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "280d84532155af8b183e1dca1ce0291f382558fb296b3910c77e08be56b03fdd",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ba-ementas-itinerarios",
+        "before": {
+          "items": 0,
+          "source_sha256": "bb50cac040260f59eb57bd876237d6126a01ed95adea655be7ec2ecb438ca026",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "bb50cac040260f59eb57bd876237d6126a01ed95adea655be7ec2ecb438ca026",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ba-matrizes-em-2025",
+        "before": {
+          "items": 0,
+          "source_sha256": "96289f5504f0d594a071bb0cc2b9c2b9c12b02586054413a2833118c22a25940",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "96289f5504f0d594a071bb0cc2b9c2b9c12b02586054413a2833118c22a25940",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ba-resolucao-249-2026",
+        "before": {
+          "items": 7,
+          "source_sha256": "9c83afe44a000b00a4f59fd2289314da8220f320275f715f9cc0a6d987cf833c",
+          "items_sha256": "bf82271372546c550468e399ef6e50408b446884b5c234b09d1376c3735a3066"
+        },
+        "after": {
+          "items": 7,
+          "source_sha256": "9c83afe44a000b00a4f59fd2289314da8220f320275f715f9cc0a6d987cf833c",
+          "items_sha256": "bf82271372546c550468e399ef6e50408b446884b5c234b09d1376c3735a3066"
+        }
+      },
+      {
+        "source_id": "br-bncc-2018",
+        "before": {
+          "items": 1580,
+          "source_sha256": "ff49761b054e0179809ca84b6f829ed43787721433eff297037eecff5fb493ec",
+          "items_sha256": "3a11c404ac65b7072f797a7518321c6b9253966bc747c9ed8c5ab6394acd46d5"
+        },
+        "after": {
+          "items": 1580,
+          "source_sha256": "ff49761b054e0179809ca84b6f829ed43787721433eff297037eecff5fb493ec",
+          "items_sha256": "3a11c404ac65b7072f797a7518321c6b9253966bc747c9ed8c5ab6394acd46d5"
+        }
+      },
+      {
+        "source_id": "br-bncc-computacao-2022",
+        "before": {
+          "items": 141,
+          "source_sha256": "0a191a691d674bae31738b2884860fd2a624baf9f1388c98959b7ca8b5777ae1",
+          "items_sha256": "7659b8bde1edb0ca0458fda0b28e84b94b544a3449bca3f424dfc1811d9714cc"
+        },
+        "after": {
+          "items": 141,
+          "source_sha256": "0a191a691d674bae31738b2884860fd2a624baf9f1388c98959b7ca8b5777ae1",
+          "items_sha256": "7659b8bde1edb0ca0458fda0b28e84b94b544a3449bca3f424dfc1811d9714cc"
+        }
+      },
+      {
+        "source_id": "br-dcn-em-2024",
+        "before": {
+          "items": 22,
+          "source_sha256": "1a8f894dde260fd1c84d9210b1ea4305e923f6682832c7540085fac0c834c01c",
+          "items_sha256": "b44455444718c5e0ca0ef626c37238bc7fc24c941d67e713ed6420c6b55b3993"
+        },
+        "after": {
+          "items": 22,
+          "source_sha256": "1a8f894dde260fd1c84d9210b1ea4305e923f6682832c7540085fac0c834c01c",
+          "items_sha256": "b44455444718c5e0ca0ef626c37238bc7fc24c941d67e713ed6420c6b55b3993"
+        }
+      },
+      {
+        "source_id": "br-ifa-parametros-2025",
+        "before": {
+          "items": 24,
+          "source_sha256": "8445629f0f52fdcb8f4908988014fc5cd72b962a0fb4c5c13bda7c7553f2ea9a",
+          "items_sha256": "c34ac55483617cc8ddab3be19aefb92ae5623064a4dd350c83521f529128f043"
+        },
+        "after": {
+          "items": 24,
+          "source_sha256": "8445629f0f52fdcb8f4908988014fc5cd72b962a0fb4c5c13bda7c7553f2ea9a",
+          "items_sha256": "c34ac55483617cc8ddab3be19aefb92ae5623064a4dd350c83521f529128f043"
+        }
+      },
+      {
+        "source_id": "ce-dcrc-computacao",
+        "before": {
+          "items": 875,
+          "source_sha256": "50f13188ba63bda095af27f4fd9fba75a5bee8d758ec0fcd75caa786958de6c4",
+          "items_sha256": "384ea4a588628ae249d7175796ad8cb6fe8ab87b839c2ad67fe0173ccca89061"
+        },
+        "after": {
+          "items": 875,
+          "source_sha256": "50f13188ba63bda095af27f4fd9fba75a5bee8d758ec0fcd75caa786958de6c4",
+          "items_sha256": "384ea4a588628ae249d7175796ad8cb6fe8ab87b839c2ad67fe0173ccca89061"
+        }
+      },
+      {
+        "source_id": "ce-dcrc-ei-ef-2019",
+        "before": {
+          "items": 2224,
+          "source_sha256": "2e50a04fca302bfd38d8536c5cbb1d196fce99f56dd358dec6971652dea0c57a",
+          "items_sha256": "ba73cb42991871c5a379e9e7db89d870e49f04dc8a7d5a5ac04aff27a124f6be"
+        },
+        "after": {
+          "items": 2224,
+          "source_sha256": "2e50a04fca302bfd38d8536c5cbb1d196fce99f56dd358dec6971652dea0c57a",
+          "items_sha256": "ba73cb42991871c5a379e9e7db89d870e49f04dc8a7d5a5ac04aff27a124f6be"
+        }
+      },
+      {
+        "source_id": "ce-dcrc-em-2021",
+        "before": {
+          "items": 0,
+          "source_sha256": "9b153b1005f70ff78e5807fabe734a0d38108e9386d2ed7d9debc2bc33283ef8",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "9b153b1005f70ff78e5807fabe734a0d38108e9386d2ed7d9debc2bc33283ef8",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ce-resolucao-526-2026",
+        "before": {
+          "items": 0,
+          "source_sha256": "f6522682e37a61871be949ed4fdd3f7f6f4f43deaa095c7ac508e2873ef8a6ea",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "f6522682e37a61871be949ed4fdd3f7f6f4f43deaa095c7ac508e2873ef8a6ea",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ce-trilhas-aprofundamento-2023",
+        "before": {
+          "items": 0,
+          "source_sha256": "b1c08d7485bbd63616e0f36742823952ab02f78b09afb92d024ab0f7f6133f75",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "b1c08d7485bbd63616e0f36742823952ab02f78b09afb92d024ab0f7f6133f75",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "df-catalogo-ifa-2026",
+        "before": {
+          "items": 0,
+          "source_sha256": "7921b43e234da1ce8d42c198aadf28aae944af15a97953166595796965da94b7",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "7921b43e234da1ce8d42c198aadf28aae944af15a97953166595796965da94b7",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "df-catalogo-pee",
+        "before": {
+          "items": 0,
+          "source_sha256": "ff94c653d930e3a607114f97234fc969035747f15133d36d391f01650d1eb0dc",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "ff94c653d930e3a607114f97234fc969035747f15133d36d391f01650d1eb0dc",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "df-cm-ef-2018",
+        "before": {
+          "items": 0,
+          "source_sha256": "3b6702486b6716d4b9321a00f7cdde0c0a592cf2bea91f3e594e604f2a8bb5fb",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "3b6702486b6716d4b9321a00f7cdde0c0a592cf2bea91f3e594e604f2a8bb5fb",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "df-cm-ei-2018",
+        "before": {
+          "items": 0,
+          "source_sha256": "0a202535e511345a53c42ae2d6770e50c0401b9ad437355e7db18cd694f6e18d",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "0a202535e511345a53c42ae2d6770e50c0401b9ad437355e7db18cd694f6e18d",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "df-cm-em",
+        "before": {
+          "items": 583,
+          "source_sha256": "73a7fbcddf6d9ff54c2de6f86dcd974e59c3188ba3144e9004ff9ce6131e215d",
+          "items_sha256": "0aa08def005706ed79cb3a2f52032cdf0a531f9968cffbcdebe1a1fac5e47b77"
+        },
+        "after": {
+          "items": 583,
+          "source_sha256": "73a7fbcddf6d9ff54c2de6f86dcd974e59c3188ba3144e9004ff9ce6131e215d",
+          "items_sha256": "0aa08def005706ed79cb3a2f52032cdf0a531f9968cffbcdebe1a1fac5e47b77"
+        }
+      },
+      {
+        "source_id": "df-cm-pressupostos",
+        "before": {
+          "items": 86,
+          "source_sha256": "2f8207dca8ac3bcbda1f59fde794439e81af443b4196591005b5863b6e85c3cc",
+          "items_sha256": "e17942f3b06f19b1d5c12d79649d52631365976e6dba6ada9ca847e4c757dae5"
+        },
+        "after": {
+          "items": 86,
+          "source_sha256": "2f8207dca8ac3bcbda1f59fde794439e81af443b4196591005b5863b6e85c3cc",
+          "items_sha256": "e17942f3b06f19b1d5c12d79649d52631365976e6dba6ada9ca847e4c757dae5"
+        }
+      },
+      {
+        "source_id": "df-competencias-digitais-vol1",
+        "before": {
+          "items": 0,
+          "source_sha256": "c851ec9702b349334e5b20d8763d4ae5a5c5407505446c62f5311210f31544bc",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "c851ec9702b349334e5b20d8763d4ae5a5c5407505446c62f5311210f31544bc",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "df-competencias-digitais-vol2",
+        "before": {
+          "items": 74,
+          "source_sha256": "9fbf3c23fa0cce4d8353fdab1c657eaf1cce5e2de4ed2642ed0bb2142f78276e",
+          "items_sha256": "76925c92407350e8e5682245af729865b829d5f04a08aff0b73256fc14d6291f"
+        },
+        "after": {
+          "items": 74,
+          "source_sha256": "9fbf3c23fa0cce4d8353fdab1c657eaf1cce5e2de4ed2642ed0bb2142f78276e",
+          "items_sha256": "76925c92407350e8e5682245af729865b829d5f04a08aff0b73256fc14d6291f"
+        }
+      },
+      {
+        "source_id": "df-competencias-digitais-vol3",
+        "before": {
+          "items": 137,
+          "source_sha256": "e5b5d92479256f4ef20a57e3191b900efdb9686f727e6d59baf4e5a47e0c73b2",
+          "items_sha256": "74245c65bd37460ac6a29efe973ceb0c8e29c31c424e238650632ba06175fa19"
+        },
+        "after": {
+          "items": 137,
+          "source_sha256": "e5b5d92479256f4ef20a57e3191b900efdb9686f727e6d59baf4e5a47e0c73b2",
+          "items_sha256": "74245c65bd37460ac6a29efe973ceb0c8e29c31c424e238650632ba06175fa19"
+        }
+      },
+      {
+        "source_id": "df-competencias-digitais-vol4",
+        "before": {
+          "items": 394,
+          "source_sha256": "ae165d8523b8786a5a5134debced45bc161c50b9c61f53198d534fea92995a3f",
+          "items_sha256": "f58c34aab62edaeeaff5e4cf55d88e18aee17b80b52fc3ae324529b7b7434463"
+        },
+        "after": {
+          "items": 394,
+          "source_sha256": "ae165d8523b8786a5a5134debced45bc161c50b9c61f53198d534fea92995a3f",
+          "items_sha256": "f58c34aab62edaeeaff5e4cf55d88e18aee17b80b52fc3ae324529b7b7434463"
+        }
+      },
+      {
+        "source_id": "df-competencias-digitais-vol5",
+        "before": {
+          "items": 0,
+          "source_sha256": "be0ae138636696c504fb0f39354b365aa91dccadd32f4192d8276b704d5be9ad",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "be0ae138636696c504fb0f39354b365aa91dccadd32f4192d8276b704d5be9ad",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "df-orientador-if-2025",
+        "before": {
+          "items": 0,
+          "source_sha256": "a2c1b8e7298b25944bceab886a89b82ba004c2728bee773e0c494deff8e03cb0",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "a2c1b8e7298b25944bceab886a89b82ba004c2728bee773e0c494deff8e03cb0",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "es-aspiracoes-docentes-versao-revisada",
+        "before": {
+          "items": 522,
+          "source_sha256": "165f716dda06c04ebc654a3cb33c5b4c177c51579b8f6d6d89f7ecb1cffd9895",
+          "items_sha256": "86404197a45f382422e298593cc58abe82dc1cd0092e12ec427e54ac1e0a49d1"
+        },
+        "after": {
+          "items": 522,
+          "source_sha256": "165f716dda06c04ebc654a3cb33c5b4c177c51579b8f6d6d89f7ecb1cffd9895",
+          "items_sha256": "86404197a45f382422e298593cc58abe82dc1cd0092e12ec427e54ac1e0a49d1"
+        }
+      },
+      {
+        "source_id": "es-curr-culo-es-2019-vol-02-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-da-natureza-e-matem-tica-m",
+        "before": {
+          "items": 0,
+          "source_sha256": "21551f7b24f39660b864fd26017bb9c823bc5caef9dc6b493d186534552db399",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "21551f7b24f39660b864fd26017bb9c823bc5caef9dc6b493d186534552db399",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso",
+        "before": {
+          "items": 0,
+          "source_sha256": "819b3a45d975b8f05cdf3c23ed36458a1450a9fd9de9c70bd14bc625202ecd93",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "819b3a45d975b8f05cdf3c23ed36458a1450a9fd9de9c70bd14bc625202ecd93",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "es-curr-culo-es-2019-vol-04-ensino-fundamental-anos-iniciais-rea-de-linguagens-arte-e-educa-o-f-sica-mi",
+        "before": {
+          "items": 491,
+          "source_sha256": "b9b09eb67e31217b61dc275d61195878deb9c750b2b1144ebafe00e57b0e0582",
+          "items_sha256": "1dbc796dce4b3478967144af6265be7f15ec9cd47f552d8fff079af6d163a52b"
+        },
+        "after": {
+          "items": 491,
+          "source_sha256": "b9b09eb67e31217b61dc275d61195878deb9c750b2b1144ebafe00e57b0e0582",
+          "items_sha256": "1dbc796dce4b3478967144af6265be7f15ec9cd47f552d8fff079af6d163a52b"
+        }
+      },
+      {
+        "source_id": "es-curr-culo-es-2019-vol-05-ensino-fundamental-anos-iniciais-rea-de-linguagens-l-ngua-portuguesa-miolo",
+        "before": {
+          "items": 506,
+          "source_sha256": "e4ced9e7104cb74f48081cb03f2d9312bad313d5b9d206b44534c8002066c0d5",
+          "items_sha256": "3d61f4b079f21fe3987fc445786e6974c606d58df6c4b54ab904052cd39c678d"
+        },
+        "after": {
+          "items": 506,
+          "source_sha256": "e4ced9e7104cb74f48081cb03f2d9312bad313d5b9d206b44534c8002066c0d5",
+          "items_sha256": "3d61f4b079f21fe3987fc445786e6974c606d58df6c4b54ab904052cd39c678d"
+        }
+      },
+      {
+        "source_id": "es-curr-culo-es-2020-vol-06-ensino-fundamental-anos-finais-rea-de-ci-ncias-da-natureza-e-matem-tica-mio",
+        "before": {
+          "items": 387,
+          "source_sha256": "16accac8fa6440f2a56954588cc12cc996e7899c21e0a323ee3402bbdd0d0f9a",
+          "items_sha256": "ee29dc069a5b0c12f151a9f5ff90ffc544a3a349407ad3717ca76fc7511420f3"
+        },
+        "after": {
+          "items": 387,
+          "source_sha256": "16accac8fa6440f2a56954588cc12cc996e7899c21e0a323ee3402bbdd0d0f9a",
+          "items_sha256": "ee29dc069a5b0c12f151a9f5ff90ffc544a3a349407ad3717ca76fc7511420f3"
+        }
+      },
+      {
+        "source_id": "es-curr-culo-es-2020-vol-07-ensino-fundamental-anos-finais-rea-de-ci-ncias-humanas-e-ensino-religioso-m",
+        "before": {
+          "items": 505,
+          "source_sha256": "ae1bd8ac7eda02ca3a457d75257a93a20edcec567241876cd6a9e696a7080cb8",
+          "items_sha256": "955ffbd1e99f7af0a3483f0576fda89cac9c9665f763cb1d53dd60a24db75403"
+        },
+        "after": {
+          "items": 505,
+          "source_sha256": "ae1bd8ac7eda02ca3a457d75257a93a20edcec567241876cd6a9e696a7080cb8",
+          "items_sha256": "955ffbd1e99f7af0a3483f0576fda89cac9c9665f763cb1d53dd60a24db75403"
+        }
+      },
+      {
+        "source_id": "es-curr-culo-es-2020-vol-08-ensino-fundamental-anos-finais-rea-de-linguagens-arte-educa-o-f-sica-e-l-ng",
+        "before": {
+          "items": 0,
+          "source_sha256": "4dbff5a3736e541064763a2eb08c4016d6d29a7ab562a48e2b5770342930daf9",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "4dbff5a3736e541064763a2eb08c4016d6d29a7ab562a48e2b5770342930daf9",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "es-curr-culo-es-2020-vol-09-ensino-fundamental-anos-finais-rea-de-linguagens-l-ngua-portuguesa-miolo",
+        "before": {
+          "items": 0,
+          "source_sha256": "3476714c869a0700daedf21ba4f11d48154bfc841e67048b9d7c66ecf0351282",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "3476714c869a0700daedf21ba4f11d48154bfc841e67048b9d7c66ecf0351282",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "es-curriculo-em-aprofundamento-da-area-cn-alterado-20-04-22",
+        "before": {
+          "items": 496,
+          "source_sha256": "17b82229fdde608a9dd599d4e31887fe8966cf04651a5ce3d6eb48f57c56756d",
+          "items_sha256": "cd1db5c460fa0156f05eb565d35d5be39147cbf65238e4f94f2a1e83746e5084"
+        },
+        "after": {
+          "items": 496,
+          "source_sha256": "17b82229fdde608a9dd599d4e31887fe8966cf04651a5ce3d6eb48f57c56756d",
+          "items_sha256": "cd1db5c460fa0156f05eb565d35d5be39147cbf65238e4f94f2a1e83746e5084"
+        }
+      },
+      {
+        "source_id": "es-curriculo-em-aprofundamento-da-area-linguagens-alterado-19-04",
+        "before": {
+          "items": 367,
+          "source_sha256": "125fc298786dd613782637f85fef809aabab033bd03787d16a352de92c8f416a",
+          "items_sha256": "2d5b79b70c82e336fcb71757d3bc5858cd0367dccf3fe2d9dd798f27a8d9b1ba"
+        },
+        "after": {
+          "items": 367,
+          "source_sha256": "125fc298786dd613782637f85fef809aabab033bd03787d16a352de92c8f416a",
+          "items_sha256": "2d5b79b70c82e336fcb71757d3bc5858cd0367dccf3fe2d9dd798f27a8d9b1ba"
+        }
+      },
+      {
+        "source_id": "es-curriculo-em-aprofundamento-da-area-matematica-alterado-15-09-23",
+        "before": {
+          "items": 263,
+          "source_sha256": "dadb65f8412569d1fe7f8b773f68374147651611d249916f134f8cb16c29c53c",
+          "items_sha256": "ad32228b025facfb5ee4548c554275d9eddbc4d4aac9c7a9541dc3b10672dbef"
+        },
+        "after": {
+          "items": 263,
+          "source_sha256": "dadb65f8412569d1fe7f8b773f68374147651611d249916f134f8cb16c29c53c",
+          "items_sha256": "ad32228b025facfb5ee4548c554275d9eddbc4d4aac9c7a9541dc3b10672dbef"
+        }
+      },
+      {
+        "source_id": "es-curriculo-em-aprofundamento-entreareas-chsa-e-cn-alterado-20-04-22",
+        "before": {
+          "items": 422,
+          "source_sha256": "34a27ca2d461ed9c7a4c29745eba4dd0d0e471022db52557174d0758ae85d5c9",
+          "items_sha256": "14dfe5b81de5ce7688023319a909c508c3b45f904422ae7ffc86125f65cdd61e"
+        },
+        "after": {
+          "items": 422,
+          "source_sha256": "34a27ca2d461ed9c7a4c29745eba4dd0d0e471022db52557174d0758ae85d5c9",
+          "items_sha256": "14dfe5b81de5ce7688023319a909c508c3b45f904422ae7ffc86125f65cdd61e"
+        }
+      },
+      {
+        "source_id": "es-curriculo-em-aprofundamento-entreareas-chsa-e-linguagens-alterado-20-04-22",
+        "before": {
+          "items": 359,
+          "source_sha256": "4e28f511892bbc457bd115d6975a548c89dfb0eadb605d3df3630c9096fd181d",
+          "items_sha256": "9b9adba5cd39992fd6e91c271c7655b4609b9e9fcebcaff1478f86836b4c9284"
+        },
+        "after": {
+          "items": 359,
+          "source_sha256": "4e28f511892bbc457bd115d6975a548c89dfb0eadb605d3df3630c9096fd181d",
+          "items_sha256": "9b9adba5cd39992fd6e91c271c7655b4609b9e9fcebcaff1478f86836b4c9284"
+        }
+      },
+      {
+        "source_id": "es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22",
+        "before": {
+          "items": 562,
+          "source_sha256": "27fd5e650e13be34338bc8ec3d094980e9b1606aec2d671e33b5dcc145e25669",
+          "items_sha256": "d624be54bf1aaaaf7f12039b25c295c02c3bd73b0794b60937d160355fe7348f"
+        },
+        "after": {
+          "items": 562,
+          "source_sha256": "27fd5e650e13be34338bc8ec3d094980e9b1606aec2d671e33b5dcc145e25669",
+          "items_sha256": "d624be54bf1aaaaf7f12039b25c295c02c3bd73b0794b60937d160355fe7348f"
+        }
+      },
+      {
+        "source_id": "es-curriculo-em-aprofundamento-entreareas-cn-e-linguagens-alterado-20-04-22",
+        "before": {
+          "items": 634,
+          "source_sha256": "2d7a2112cdb7aa9ea28ec5d7f41ee453ba3871bcb14e17355a65451171c5309e",
+          "items_sha256": "0ad5244cce3a03541eaeb32eaa81748fc77d83dbfd08b79b5576058794aecffc"
+        },
+        "after": {
+          "items": 634,
+          "source_sha256": "2d7a2112cdb7aa9ea28ec5d7f41ee453ba3871bcb14e17355a65451171c5309e",
+          "items_sha256": "0ad5244cce3a03541eaeb32eaa81748fc77d83dbfd08b79b5576058794aecffc"
+        }
+      },
+      {
+        "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+        "before": {
+          "items": 0,
+          "source_sha256": "190caa5e114196c0d4dc349d1bd1166074a44e99f0a252f904ff749c389a9d04",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "190caa5e114196c0d4dc349d1bd1166074a44e99f0a252f904ff749c389a9d04",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "es-curriculoem-aprofundamento-da-area-de-chsa",
+        "before": {
+          "items": 357,
+          "source_sha256": "5c95a1dd3cdbb6634995b36dfc34676be3eff40a7b98bcdf09639ecbcd414ef6",
+          "items_sha256": "eb6fe22e898c8574186213d7817d13636b54cbccea4f9c6dea152cf397713a1e"
+        },
+        "after": {
+          "items": 357,
+          "source_sha256": "5c95a1dd3cdbb6634995b36dfc34676be3eff40a7b98bcdf09639ecbcd414ef6",
+          "items_sha256": "eb6fe22e898c8574186213d7817d13636b54cbccea4f9c6dea152cf397713a1e"
+        }
+      },
+      {
+        "source_id": "es-em-ci-ncias-da-natureza",
+        "before": {
+          "items": 113,
+          "source_sha256": "2221811a72a2c71dce43f74422f4a4af92f2f29ba9e257ea699061e8d098a8de",
+          "items_sha256": "72c929dbcc874e6d6def4607416ac42791dc1d87dba09fbf8eb6e05f50a61b82"
+        },
+        "after": {
+          "items": 113,
+          "source_sha256": "2221811a72a2c71dce43f74422f4a4af92f2f29ba9e257ea699061e8d098a8de",
+          "items_sha256": "72c929dbcc874e6d6def4607416ac42791dc1d87dba09fbf8eb6e05f50a61b82"
+        }
+      },
+      {
+        "source_id": "es-em-ci-ncias-humanas",
+        "before": {
+          "items": 153,
+          "source_sha256": "4afe5876dcf845eb6d8e6e76877b0ebd3bfc5d2bd6dc3ddb7792c143383c18ea",
+          "items_sha256": "1253c5a06a048f2b356515c5105444e590bca47651914367f573ef5f8c400a12"
+        },
+        "after": {
+          "items": 153,
+          "source_sha256": "4afe5876dcf845eb6d8e6e76877b0ebd3bfc5d2bd6dc3ddb7792c143383c18ea",
+          "items_sha256": "1253c5a06a048f2b356515c5105444e590bca47651914367f573ef5f8c400a12"
+        }
+      },
+      {
+        "source_id": "es-em-ept-integrado",
+        "before": {
+          "items": 86,
+          "source_sha256": "e350209ef066e6c255490836ca4f70ed9812b99cbb0ba6de24d9219b90ae60f9",
+          "items_sha256": "bc99575ea68b711cc51a5b466d8da2905dedd8413f42f89ca9e30134f4485df9"
+        },
+        "after": {
+          "items": 86,
+          "source_sha256": "e350209ef066e6c255490836ca4f70ed9812b99cbb0ba6de24d9219b90ae60f9",
+          "items_sha256": "bc99575ea68b711cc51a5b466d8da2905dedd8413f42f89ca9e30134f4485df9"
+        }
+      },
+      {
+        "source_id": "es-em-l-ngua-portuguesa",
+        "before": {
+          "items": 232,
+          "source_sha256": "aa3be6e581b185229127fbe807dbc263c7ebccd44aaca542ed928558b6b05050",
+          "items_sha256": "20b9b5f08199aec1e8918efa5ad14f256f142c8f24a8d1191c68875382f48f9a"
+        },
+        "after": {
+          "items": 232,
+          "source_sha256": "aa3be6e581b185229127fbe807dbc263c7ebccd44aaca542ed928558b6b05050",
+          "items_sha256": "20b9b5f08199aec1e8918efa5ad14f256f142c8f24a8d1191c68875382f48f9a"
+        }
+      },
+      {
+        "source_id": "es-em-linguagens",
+        "before": {
+          "items": 289,
+          "source_sha256": "a759ded2ffc7e6c918ebc249cca205653512171d05946e13a7fe555aae5b1037",
+          "items_sha256": "ed1e3b0b4c7cd57320c9a407fe9220549e714e319ffd082694782ceca5beb578"
+        },
+        "after": {
+          "items": 289,
+          "source_sha256": "a759ded2ffc7e6c918ebc249cca205653512171d05946e13a7fe555aae5b1037",
+          "items_sha256": "ed1e3b0b4c7cd57320c9a407fe9220549e714e319ffd082694782ceca5beb578"
+        }
+      },
+      {
+        "source_id": "es-em-matem-tica",
+        "before": {
+          "items": 76,
+          "source_sha256": "6b7901fe149992a0d9fbdd7c5c0cd821a9e6037f940ae7ee975de11893802653",
+          "items_sha256": "15d94d70ae991dc78fcc7876a97583b1edc5d394a7900a6e0ca7c3dc25d37a12"
+        },
+        "after": {
+          "items": 76,
+          "source_sha256": "6b7901fe149992a0d9fbdd7c5c0cd821a9e6037f940ae7ee975de11893802653",
+          "items_sha256": "15d94d70ae991dc78fcc7876a97583b1edc5d394a7900a6e0ca7c3dc25d37a12"
+        }
+      },
+      {
+        "source_id": "es-em-texto-introdut-rio",
+        "before": {
+          "items": 37,
+          "source_sha256": "a3f5199b8ad2f891f99af9c580c2d5400d7583b0e5cb4b0ab6346811d382f6c5",
+          "items_sha256": "fa9ea53206a00873f93ae915d2cf9599d7f3ab28038480fefdbc59fd8f76beff"
+        },
+        "after": {
+          "items": 37,
+          "source_sha256": "a3f5199b8ad2f891f99af9c580c2d5400d7583b0e5cb4b0ab6346811d382f6c5",
+          "items_sha256": "fa9ea53206a00873f93ae915d2cf9599d7f3ab28038480fefdbc59fd8f76beff"
+        }
+      },
+      {
+        "source_id": "es-ifa-cntmat",
+        "before": {
+          "items": 297,
+          "source_sha256": "0c088d4da2303ff43a5102619c88695608bedbae9b0f7c954278493c33b156b8",
+          "items_sha256": "dbab8e3f763f2606f7d33d9acfa2c87141d1304f72f0a72d4859c90eafc2003e"
+        },
+        "after": {
+          "items": 297,
+          "source_sha256": "0c088d4da2303ff43a5102619c88695608bedbae9b0f7c954278493c33b156b8",
+          "items_sha256": "dbab8e3f763f2606f7d33d9acfa2c87141d1304f72f0a72d4859c90eafc2003e"
+        }
+      },
+      {
+        "source_id": "es-ifa-das-quatro-areas-do-conhecimento-finalizado",
+        "before": {
+          "items": 492,
+          "source_sha256": "0beaf821cf9b1158da135c148477a97dcd22be0740b3df9c3571980c360e3d99",
+          "items_sha256": "283f196f597875c25c7dbcdd37827ac631a0785ebfac81b256350697ed62cdab"
+        },
+        "after": {
+          "items": 492,
+          "source_sha256": "0beaf821cf9b1158da135c148477a97dcd22be0740b3df9c3571980c360e3d99",
+          "items_sha256": "283f196f597875c25c7dbcdd37827ac631a0785ebfac81b256350697ed62cdab"
+        }
+      },
+      {
+        "source_id": "es-ifa-lingchsa-6-1",
+        "before": {
+          "items": 0,
+          "source_sha256": "d9f6105004bc4372eb1a0b7401ded14c71705a22c002dd712ab888c0ce47ed0e",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "d9f6105004bc4372eb1a0b7401ded14c71705a22c002dd712ab888c0ce47ed0e",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "es-orientacoes-para-elaboracao-dos-projetos-integradores-3",
+        "before": {
+          "items": 11,
+          "source_sha256": "746df02855de658ffce7f610bb92148291ff74e945b6a4b7f827b6383e26f2bd",
+          "items_sha256": "3d35bac960ad9da0c70c54986cb79e5fae78a5f248fff2330abd26f321c4096c"
+        },
+        "after": {
+          "items": 11,
+          "source_sha256": "746df02855de658ffce7f610bb92148291ff74e945b6a4b7f827b6383e26f2bd",
+          "items_sha256": "3d35bac960ad9da0c70c54986cb79e5fae78a5f248fff2330abd26f321c4096c"
+        }
+      },
+      {
+        "source_id": "es-referenciais-curriculares-para-elaboracao-de-itinerarios-formativos-1-1",
+        "before": {
+          "items": 85,
+          "source_sha256": "705c5cb0a31b4f4669244cf2f079889c1d9ee2f1938bdd084528fb7acdec8452",
+          "items_sha256": "cf69c1b155ab4cffb5e9d3dda15df2188ffc39fb72d05a7c543de7c1efc8fb0f"
+        },
+        "after": {
+          "items": 85,
+          "source_sha256": "705c5cb0a31b4f4669244cf2f079889c1d9ee2f1938bdd084528fb7acdec8452",
+          "items_sha256": "cf69c1b155ab4cffb5e9d3dda15df2188ffc39fb72d05a7c543de7c1efc8fb0f"
+        }
+      },
+      {
+        "source_id": "es-resolucao-cee-es-no-5-190-2018-ei-e-ef",
+        "before": {
+          "items": 13,
+          "source_sha256": "ffdda0015585f6f19d3a43a88ddd9510fa21fe92e8e16ff9041b9eb650e2b522",
+          "items_sha256": "ad068605920751de8aea608775f844f31d8e55f82c32fa4cd3f1f5b84b8918a4"
+        },
+        "after": {
+          "items": 13,
+          "source_sha256": "ffdda0015585f6f19d3a43a88ddd9510fa21fe92e8e16ff9041b9eb650e2b522",
+          "items_sha256": "ad068605920751de8aea608775f844f31d8e55f82c32fa4cd3f1f5b84b8918a4"
+        }
+      },
+      {
+        "source_id": "es-resolucao-cee-es-no-5-777-2020-ensino-medio",
+        "before": {
+          "items": 2,
+          "source_sha256": "b23759b4f5804c6704ae4483def4e375b011bfed2fcf38508d27ea7570c4600b",
+          "items_sha256": "60da5d99c18907cb9b5fba27b783fb54ec0fa1b94036ff386a7416f4675f435c"
+        },
+        "after": {
+          "items": 2,
+          "source_sha256": "b23759b4f5804c6704ae4483def4e375b011bfed2fcf38508d27ea7570c4600b",
+          "items_sha256": "60da5d99c18907cb9b5fba27b783fb54ec0fa1b94036ff386a7416f4675f435c"
+        }
+      },
+      {
+        "source_id": "es-tema-integrador-final-24-10",
+        "before": {
+          "items": 15,
+          "source_sha256": "0bedf3f55cf8511a42f8b52cf58f5bb5f27234fb1dde39da0279094bcedd6194",
+          "items_sha256": "657809cbae2e041fe52b26a9de9ddebcbddb27f7677d75b443394f4e13c02389"
+        },
+        "after": {
+          "items": 15,
+          "source_sha256": "0bedf3f55cf8511a42f8b52cf58f5bb5f27234fb1dde39da0279094bcedd6194",
+          "items_sha256": "657809cbae2e041fe52b26a9de9ddebcbddb27f7677d75b443394f4e13c02389"
+        }
+      },
+      {
+        "source_id": "go-dcgo-ef-af",
+        "before": {
+          "items": 0,
+          "source_sha256": "e23d8c010cc73e618d31d68af5656ab2376e3a5344ccf5ef9d68a282de1cd5f1",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "e23d8c010cc73e618d31d68af5656ab2376e3a5344ccf5ef9d68a282de1cd5f1",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "go-dcgo-ef-ai",
+        "before": {
+          "items": 0,
+          "source_sha256": "c81e3d33222a50163913d8822d4e5804cea623ea0fd7875098e43ded0e055c46",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "c81e3d33222a50163913d8822d4e5804cea623ea0fd7875098e43ded0e055c46",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "go-dcgo-ei",
+        "before": {
+          "items": 454,
+          "source_sha256": "0367717b640048740324492999f91529c25b0d9b701fad7b1af18ac8c37a72cc",
+          "items_sha256": "93d7c9e9e0781cac9c7efdb1c11f0f6a78a6817355737eaebe470a966fe812b8"
+        },
+        "after": {
+          "items": 454,
+          "source_sha256": "0367717b640048740324492999f91529c25b0d9b701fad7b1af18ac8c37a72cc",
+          "items_sha256": "93d7c9e9e0781cac9c7efdb1c11f0f6a78a6817355737eaebe470a966fe812b8"
+        }
+      },
+      {
+        "source_id": "go-dcgoem-2021",
+        "before": {
+          "items": 0,
+          "source_sha256": "452d64be6a80f0e2d581277c4253cf549befb39a608d13da232bb335eaea451d",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "452d64be6a80f0e2d581277c4253cf549befb39a608d13da232bb335eaea451d",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "go-dcgoem-portal-atual",
+        "before": {
+          "items": 0,
+          "source_sha256": "6cbb9d4e9e58e02572d243acc1b13bd7e3d0c721795b6219c0b09586a80e2fb5",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "6cbb9d4e9e58e02572d243acc1b13bd7e3d0c721795b6219c0b09586a80e2fb5",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "go-eletivas-2026",
+        "before": {
+          "items": 0,
+          "source_sha256": "ad5d41ae3f30fb697677c400f353d398349e6347d51e90106dd8148444f752eb",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "ad5d41ae3f30fb697677c400f353d398349e6347d51e90106dd8148444f752eb",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "go-eletivas-fic-2026",
+        "before": {
+          "items": 33,
+          "source_sha256": "7302bfb72f761ae76d334614ba9b274be0e47b851b43ca87a89304d696f1dd45",
+          "items_sha256": "dcd170dd0e6c5d4575fa815ea97b7250d2b57436548eb5793a36c82fbe51840a"
+        },
+        "after": {
+          "items": 33,
+          "source_sha256": "7302bfb72f761ae76d334614ba9b274be0e47b851b43ca87a89304d696f1dd45",
+          "items_sha256": "dcd170dd0e6c5d4575fa815ea97b7250d2b57436548eb5793a36c82fbe51840a"
+        }
+      },
+      {
+        "source_id": "go-matriz-orientador-2026",
+        "before": {
+          "items": 113,
+          "source_sha256": "03ba7404a64465323b142a9d98d6bb1f34b6744fed1ba6f3e88a032923c78361",
+          "items_sha256": "abf50d6c2772cb862a8052d50cdcfcb26fd1ea6985957276e1f0dcd642a83674"
+        },
+        "after": {
+          "items": 113,
+          "source_sha256": "03ba7404a64465323b142a9d98d6bb1f34b6744fed1ba6f3e88a032923c78361",
+          "items_sha256": "abf50d6c2772cb862a8052d50cdcfcb26fd1ea6985957276e1f0dcd642a83674"
+        }
+      },
+      {
+        "source_id": "ma-dctm-ei-ef",
+        "before": {
+          "items": 0,
+          "source_sha256": "e8bc78f148a2bd621bcfe3d0b3ed8ff9393f071cf26838789c9314d4ce2c4eda",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "e8bc78f148a2bd621bcfe3d0b3ed8ff9393f071cf26838789c9314d4ce2c4eda",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ma-dctm-em-vol2",
+        "before": {
+          "items": 0,
+          "source_sha256": "9e70daefe57b9402e229757880fd5cf3c492a6fac16aeada4d7bd2c44cbaf519",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "9e70daefe57b9402e229757880fd5cf3c492a6fac16aeada4d7bd2c44cbaf519",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "mg-crmg-computacao-2025",
+        "before": {
+          "items": 236,
+          "source_sha256": "691f5156330d0137d3a02b243243dbd7674f84a272c57b11f03db08cab094c06",
+          "items_sha256": "76e49f6898321d808793ad80599de89d2fc584d74cf7337bddfb2920186182f6"
+        },
+        "after": {
+          "items": 236,
+          "source_sha256": "691f5156330d0137d3a02b243243dbd7674f84a272c57b11f03db08cab094c06",
+          "items_sha256": "76e49f6898321d808793ad80599de89d2fc584d74cf7337bddfb2920186182f6"
+        }
+      },
+      {
+        "source_id": "mg-crmg-eief-atualizada",
+        "before": {
+          "items": 0,
+          "source_sha256": "aa84c824308dadcd42da977dfdf115cf96d354ef8201c1cd75d78727e8ccc2db",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "aa84c824308dadcd42da977dfdf115cf96d354ef8201c1cd75d78727e8ccc2db",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "mg-crmg-em",
+        "before": {
+          "items": 0,
+          "source_sha256": "089353990507c1f8de47cd1e431e7dddc9b989f23c5c2428de4b56190086501b",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "089353990507c1f8de47cd1e431e7dddc9b989f23c5c2428de4b56190086501b",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "mg-em-documento-orientador-2026",
+        "before": {
+          "items": 0,
+          "source_sha256": "3d01bed301d1eb3e7fd3e20453d6f438f0c87f5ce075a83d087d107b6d9b798a",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "3d01bed301d1eb3e7fd3e20453d6f438f0c87f5ce075a83d087d107b6d9b798a",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "mg-matrizes-2026",
+        "before": {
+          "items": 0,
+          "source_sha256": "ed5870704e11fa4c217465d817a8e1a12d57516e9c5355028b1bb7686a88e335",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "ed5870704e11fa4c217465d817a8e1a12d57516e9c5355028b1bb7686a88e335",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ms-cr-eief-v110",
+        "before": {
+          "items": 0,
+          "source_sha256": "b8d6c6bfbb9e463833ff2878e0f88332ce3bb02aa905e98a85d1226172b2caa1",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "b8d6c6bfbb9e463833ff2878e0f88332ce3bb02aa905e98a85d1226172b2caa1",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ms-cr-em-v11",
+        "before": {
+          "items": 0,
+          "source_sha256": "02439b50dcd99e08a1416d9336821e7391faf975c322166acbb2ed23efcfb40d",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "02439b50dcd99e08a1416d9336821e7391faf975c322166acbb2ed23efcfb40d",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ms-educacao-digital-v13",
+        "before": {
+          "items": 0,
+          "source_sha256": "f6fba6ba49406ae8bd1d510e330f1fc50fce7f47bc9e62caeb835312c267dbad",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "f6fba6ba49406ae8bd1d510e330f1fc50fce7f47bc9e62caeb835312c267dbad",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ms-if-nucleo-integrador",
+        "before": {
+          "items": 511,
+          "source_sha256": "d69621884520020cfac9af8a6822452ad0c42836c9766f4d54a2c07c9231f903",
+          "items_sha256": "105d3f0f054b8b3ddb7d374f85090482f27e9858da6d59e829d76596f71b3ed3"
+        },
+        "after": {
+          "items": 511,
+          "source_sha256": "d69621884520020cfac9af8a6822452ad0c42836c9766f4d54a2c07c9231f903",
+          "items_sha256": "105d3f0f054b8b3ddb7d374f85090482f27e9858da6d59e829d76596f71b3ed3"
+        }
+      },
+      {
+        "source_id": "ms-if-projeto-vida-2023",
+        "before": {
+          "items": 0,
+          "source_sha256": "01babaea5a73f9f116b88e7951be839e82180372ca90457c9da0fd6798e0ddf3",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "01babaea5a73f9f116b88e7951be839e82180372ca90457c9da0fd6798e0ddf3",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "mt-drc-concepcoes-2018",
+        "before": {
+          "items": 137,
+          "source_sha256": "3f2431b36d9a9bbfabc3fce19555838ec6ab01c7805f7b7dac31bb958c64229f",
+          "items_sha256": "968fd293a2262a2a67b983c0144b720d26ac2d05308f78038afe023e35251fd3"
+        },
+        "after": {
+          "items": 137,
+          "source_sha256": "3f2431b36d9a9bbfabc3fce19555838ec6ab01c7805f7b7dac31bb958c64229f",
+          "items_sha256": "968fd293a2262a2a67b983c0144b720d26ac2d05308f78038afe023e35251fd3"
+        }
+      },
+      {
+        "source_id": "mt-drc-ef-2018",
+        "before": {
+          "items": 0,
+          "source_sha256": "eacf0778ad4c2bec1d1a4fe133b7fc51be86c5ced36abe87af309e6fa8f8dcc2",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "eacf0778ad4c2bec1d1a4fe133b7fc51be86c5ced36abe87af309e6fa8f8dcc2",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "mt-drc-ef-af-2018",
+        "before": {
+          "items": 1307,
+          "source_sha256": "de83528d704e75e434b516b2d37d1f2993dfc3de84f257b36ea4d473f0829499",
+          "items_sha256": "d94f165aa9250ed47a66bb7a79d45fbfb6a57e82d25a0559dc2ef3471e9e511f"
+        },
+        "after": {
+          "items": 1307,
+          "source_sha256": "de83528d704e75e434b516b2d37d1f2993dfc3de84f257b36ea4d473f0829499",
+          "items_sha256": "d94f165aa9250ed47a66bb7a79d45fbfb6a57e82d25a0559dc2ef3471e9e511f"
+        }
+      },
+      {
+        "source_id": "mt-drc-ef-ai-primario-2018",
+        "before": {
+          "items": 744,
+          "source_sha256": "aa852f2a1e1aae4fa1de1f888a4adc6df46cf6619d0c1e3576e7fd826ddd24d7",
+          "items_sha256": "b1b51213533a8078b56b4a42a0b4e5c1688be2740da2ca0f5555a6f7e6cddaa9"
+        },
+        "after": {
+          "items": 744,
+          "source_sha256": "aa852f2a1e1aae4fa1de1f888a4adc6df46cf6619d0c1e3576e7fd826ddd24d7",
+          "items_sha256": "b1b51213533a8078b56b4a42a0b4e5c1688be2740da2ca0f5555a6f7e6cddaa9"
+        }
+      },
+      {
+        "source_id": "mt-drc-ei-2018",
+        "before": {
+          "items": 0,
+          "source_sha256": "e4d5d4e9f7a30a7c867e15f4dab9cc7b5a4e282201c97b1c15f164b974311f04",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "e4d5d4e9f7a30a7c867e15f4dab9cc7b5a4e282201c97b1c15f164b974311f04",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "mt-drc-ei-primario-2018",
+        "before": {
+          "items": 164,
+          "source_sha256": "db16e2fe36de663d28c54704604fa49ef049494b4628ed3b162a034b5a3f2e9d",
+          "items_sha256": "14b4d5343b755ad12a297ea0bf08004767adc556c0327e64fcb618b45e27c45a"
+        },
+        "after": {
+          "items": 164,
+          "source_sha256": "db16e2fe36de663d28c54704604fa49ef049494b4628ed3b162a034b5a3f2e9d",
+          "items_sha256": "14b4d5343b755ad12a297ea0bf08004767adc556c0327e64fcb618b45e27c45a"
+        }
+      },
+      {
+        "source_id": "mt-drc-em-2021",
+        "before": {
+          "items": 0,
+          "source_sha256": "518c8bc3eac0864d6e497428555cac1a2df8e8c043051aad3db5195aebb68399",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "518c8bc3eac0864d6e497428555cac1a2df8e8c043051aad3db5195aebb68399",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pa-computacao-577-2025",
+        "before": {
+          "items": 0,
+          "source_sha256": "8c07d248dd37f401ccddf9647a1409cc9cd092b5e9ede168e9a56f6aab5df5a6",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "8c07d248dd37f401ccddf9647a1409cc9cd092b5e9ede168e9a56f6aab5df5a6",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pa-dcepa-aprovacao-769-2018",
+        "before": {
+          "items": 0,
+          "source_sha256": "f65709c198dd9774acdcaad73da8666149f9ea051662bfd991de147e7f375bff",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "f65709c198dd9774acdcaad73da8666149f9ea051662bfd991de147e7f375bff",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pa-dcepa-ei-ef",
+        "before": {
+          "items": 2485,
+          "source_sha256": "04436c1fc4c39456bf8dcbaf6a0ce5f1968914090cb4caa1b818c5c74b3b6b30",
+          "items_sha256": "1921067acefc6f187fc15edf4d8d24a0700cad3b90ab0e6457daca15e2dc7451"
+        },
+        "after": {
+          "items": 2485,
+          "source_sha256": "04436c1fc4c39456bf8dcbaf6a0ce5f1968914090cb4caa1b818c5c74b3b6b30",
+          "items_sha256": "1921067acefc6f187fc15edf4d8d24a0700cad3b90ab0e6457daca15e2dc7451"
+        }
+      },
+      {
+        "source_id": "pa-dcepa-ei-ef-mec",
+        "before": {
+          "items": 2779,
+          "source_sha256": "ad82c7ec9acfac500eb474b21b19915264ce926bf11a7bd93b0f69cf4bb4f002",
+          "items_sha256": "f2ec9776df5e78dfeae6e5098aa3d071abec80568ccbdbe0323775ec662e2ef4"
+        },
+        "after": {
+          "items": 2779,
+          "source_sha256": "ad82c7ec9acfac500eb474b21b19915264ce926bf11a7bd93b0f69cf4bb4f002",
+          "items_sha256": "f2ec9776df5e78dfeae6e5098aa3d071abec80568ccbdbe0323775ec662e2ef4"
+        }
+      },
+      {
+        "source_id": "pa-dcepa-em",
+        "before": {
+          "items": 1011,
+          "source_sha256": "3b65bba8454ca24313f34ae5e9bd483dd14da4ed00853265a94d8728613915ce",
+          "items_sha256": "e6f932624c6055706c40eb695e2124663e0f1c1df460f4511990946938f1c2b5"
+        },
+        "after": {
+          "items": 1011,
+          "source_sha256": "3b65bba8454ca24313f34ae5e9bd483dd14da4ed00853265a94d8728613915ce",
+          "items_sha256": "e6f932624c6055706c40eb695e2124663e0f1c1df460f4511990946938f1c2b5"
+        }
+      },
+      {
+        "source_id": "pa-diretrizes-em-483-2025",
+        "before": {
+          "items": 0,
+          "source_sha256": "9607661246e1235c141721347ce99d12f4ce0f75cf1178e1778b18d55cb90a17",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "9607661246e1235c141721347ce99d12f4ce0f75cf1178e1778b18d55cb90a17",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pa-matrizes-595-2025",
+        "before": {
+          "items": 0,
+          "source_sha256": "f7d5f94f56ea59c6fcb80aca471224f7dbb49c1835ebb6c717fc26a53d02c1bf",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "f7d5f94f56ea59c6fcb80aca471224f7dbb49c1835ebb6c717fc26a53d02c1bf",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pa-politica-ei-215-2026",
+        "before": {
+          "items": 0,
+          "source_sha256": "03ad6be454ad4a5dcb116b27fb3f18cb46f0ae79da4d3ac155ecd29db7c527f0",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "03ad6be454ad4a5dcb116b27fb3f18cb46f0ae79da4d3ac155ecd29db7c527f0",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pb-pcem",
+        "before": {
+          "items": 0,
+          "source_sha256": "b70bceedc65cdbc0d842a7d8375743d371d9aa3af8ce454e36f378b3acd2d582",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "b70bceedc65cdbc0d842a7d8375743d371d9aa3af8ce454e36f378b3acd2d582",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pb-proposta-ei-ef",
+        "before": {
+          "items": 0,
+          "source_sha256": "effce1ef63b05702ee6b0d8d5b90916d07a2db4e56433e3023459f072d0b4bff",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "effce1ef63b05702ee6b0d8d5b90916d07a2db4e56433e3023459f072d0b4bff",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pe-cedim-2026",
+        "before": {
+          "items": 0,
+          "source_sha256": "b7ac29a99412740d50db4e3daca71256182cf2936abf66a9056c1211203644ad",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "b7ac29a99412740d50db4e3daca71256182cf2936abf66a9056c1211203644ad",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pe-curriculo-ef",
+        "before": {
+          "items": 0,
+          "source_sha256": "351581cb7c6ba8deadfcd67801f23bb700d97a7a105dc694713b32a5a2cc6fff",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "351581cb7c6ba8deadfcd67801f23bb700d97a7a105dc694713b32a5a2cc6fff",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pe-curriculo-ei",
+        "before": {
+          "items": 193,
+          "source_sha256": "c235311df645739fb34938d723751f7b627f45b80b1f9a13ebbbdfe83d960b3c",
+          "items_sha256": "21242641d6a3dfe0c00361272caddd273e09eb31eaa18a650d943b56e2ef205d"
+        },
+        "after": {
+          "items": 193,
+          "source_sha256": "c235311df645739fb34938d723751f7b627f45b80b1f9a13ebbbdfe83d960b3c",
+          "items_sha256": "21242641d6a3dfe0c00361272caddd273e09eb31eaa18a650d943b56e2ef205d"
+        }
+      },
+      {
+        "source_id": "pe-curriculo-em-2021",
+        "before": {
+          "items": 0,
+          "source_sha256": "63ffacb2d2670f0834e4215cc27ee24c9fd122f415e76efd9f79142bdc7b99da",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "63ffacb2d2670f0834e4215cc27ee24c9fd122f415e76efd9f79142bdc7b99da",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pi-computacao-ei-ef",
+        "before": {
+          "items": 465,
+          "source_sha256": "95a7ccd87e1a4337f3ce64c98ef8bb29b62031911e4c5cc48f2b2c73264fcaeb",
+          "items_sha256": "f7b4332a01c86119cf9105d3be89e6f3990c7564f6e6d1e74f834ff0b4360fa5"
+        },
+        "after": {
+          "items": 465,
+          "source_sha256": "95a7ccd87e1a4337f3ce64c98ef8bb29b62031911e4c5cc48f2b2c73264fcaeb",
+          "items_sha256": "f7b4332a01c86119cf9105d3be89e6f3990c7564f6e6d1e74f834ff0b4360fa5"
+        }
+      },
+      {
+        "source_id": "pi-curriculo-ei-ef",
+        "before": {
+          "items": 0,
+          "source_sha256": "966c963ea78b1789a17456d4828c3903b62e5ae709f09016b767bdb22cb97fae",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "966c963ea78b1789a17456d4828c3903b62e5ae709f09016b767bdb22cb97fae",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pi-curriculo-em-caderno1-2021",
+        "before": {
+          "items": 0,
+          "source_sha256": "45f415ab97d940b8d03a116866ae0aee0f22da2250423d4ac614a2993b203e22",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "45f415ab97d940b8d03a116866ae0aee0f22da2250423d4ac614a2993b203e22",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pi-curriculo-em-caderno2-2021",
+        "before": {
+          "items": 0,
+          "source_sha256": "30eeb36fe559956bf81e97617a11e6056cfa3e4e6f4f0de3defb888f427e4bb8",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "30eeb36fe559956bf81e97617a11e6056cfa3e4e6f4f0de3defb888f427e4bb8",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pr-deliberacao-0325",
+        "before": {
+          "items": 81,
+          "source_sha256": "1bb5ac10fb143a242b4dcf47e3ee08efb688e6e9a71bc1108b87c8def197addc",
+          "items_sha256": "656427671dd5ae1e6dcb1405056c71a6278e14bc88cdf8dc820cb02577d3ed61"
+        },
+        "after": {
+          "items": 81,
+          "source_sha256": "1bb5ac10fb143a242b4dcf47e3ee08efb688e6e9a71bc1108b87c8def197addc",
+          "items_sha256": "656427671dd5ae1e6dcb1405056c71a6278e14bc88cdf8dc820cb02577d3ed61"
+        }
+      },
+      {
+        "source_id": "pr-deliberacao-0725",
+        "before": {
+          "items": 8,
+          "source_sha256": "fe36416ee115b5592903107b12c479fdf22c6a30bf5f02f01b24b161043bca60",
+          "items_sha256": "e5b5cc5952f7b2fdc470ec925ea0fec7b1fd9fdaef9defe653290e29334d50f0"
+        },
+        "after": {
+          "items": 8,
+          "source_sha256": "fe36416ee115b5592903107b12c479fdf22c6a30bf5f02f01b24b161043bca60",
+          "items_sha256": "e5b5cc5952f7b2fdc470ec925ea0fec7b1fd9fdaef9defe653290e29334d50f0"
+        }
+      },
+      {
+        "source_id": "pr-referencial-eief-2018",
+        "before": {
+          "items": 0,
+          "source_sha256": "8a00fe2de31109d0dd423f3707f8f64cd9bac20e3b370309b7f91a3930a32cd6",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "8a00fe2de31109d0dd423f3707f8f64cd9bac20e3b370309b7f91a3930a32cd6",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pr-referencial-eief-2025",
+        "before": {
+          "items": 0,
+          "source_sha256": "c3d6fbf08ac1def82fb719f0308b2476fa28b383678c2e447677ae220c270d0f",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "c3d6fbf08ac1def82fb719f0308b2476fa28b383678c2e447677ae220c270d0f",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pr-referencial-em-2021",
+        "before": {
+          "items": 0,
+          "source_sha256": "54ec42ef436825711b768da0f71a6ea037102b0facc48e65bd7c2657f08ce047",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "54ec42ef436825711b768da0f71a6ea037102b0facc48e65bd7c2657f08ce047",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pr-referencial-em-2025",
+        "before": {
+          "items": 0,
+          "source_sha256": "57a9f51911c3d6ba9506c40dbee128619ca65632344e0875234f8265a7e5b438",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "57a9f51911c3d6ba9506c40dbee128619ca65632344e0875234f8265a7e5b438",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pr-referencial-em-volume1-atual",
+        "before": {
+          "items": 105,
+          "source_sha256": "c144952534baaab22670ea62f8a29fb6cf33d023969e17351fb0dd8d91ab2855",
+          "items_sha256": "f2682f109129a096451f5dd6d8a67065a4abdd0d85fb05e683d38b690ea68cc6"
+        },
+        "after": {
+          "items": 105,
+          "source_sha256": "c144952534baaab22670ea62f8a29fb6cf33d023969e17351fb0dd8d91ab2855",
+          "items_sha256": "f2682f109129a096451f5dd6d8a67065a4abdd0d85fb05e683d38b690ea68cc6"
+        }
+      },
+      {
+        "source_id": "pr-referencial-em-volume2-atual",
+        "before": {
+          "items": 0,
+          "source_sha256": "e53b1053420f40149228df65112c61cb7b7678db837e04c89c2a212ce919ef3f",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "e53b1053420f40149228df65112c61cb7b7678db837e04c89c2a212ce919ef3f",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "pr-referencial-em-volume3-atual",
+        "before": {
+          "items": 142,
+          "source_sha256": "b2d3025cd0eabe2d3114d8eb81121c160ba0be3ad90a47de14ed0c562a71fc8e",
+          "items_sha256": "9a9d5fc923986eb1f1cc2b528c72a75e30e7c86c9472de6db3c73e61507bc21f"
+        },
+        "after": {
+          "items": 142,
+          "source_sha256": "b2d3025cd0eabe2d3114d8eb81121c160ba0be3ad90a47de14ed0c562a71fc8e",
+          "items_sha256": "9a9d5fc923986eb1f1cc2b528c72a75e30e7c86c9472de6db3c73e61507bc21f"
+        }
+      },
+      {
+        "source_id": "rj-doc-eief-2019",
+        "before": {
+          "items": 0,
+          "source_sha256": "bc7ce2e0767905032ea813995242f5ae52174437c5c0e75cab4f0a43b00fd80b",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "bc7ce2e0767905032ea813995242f5ae52174437c5c0e75cab4f0a43b00fd80b",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "rj-em-curriculo-referencial",
+        "before": {
+          "items": 288,
+          "source_sha256": "5feb231e1ddeda78cad8d5f00a7509859bce04d9263e1ee75b6da740cf6d4d6c",
+          "items_sha256": "d33557edc63172de5601c27bc615a30d67615f58ca0224abde9fa16ccf08898c"
+        },
+        "after": {
+          "items": 288,
+          "source_sha256": "5feb231e1ddeda78cad8d5f00a7509859bce04d9263e1ee75b6da740cf6d4d6c",
+          "items_sha256": "d33557edc63172de5601c27bc615a30d67615f58ca0224abde9fa16ccf08898c"
+        }
+      },
+      {
+        "source_id": "rj-em-integral-tecnico",
+        "before": {
+          "items": 0,
+          "source_sha256": "b0880d3a6ea2078f52b623d6ffe9852382c0e97a42d400b234ec578afb8c9013",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "b0880d3a6ea2078f52b623d6ffe9852382c0e97a42d400b234ec578afb8c9013",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "rj-em-itinerarios",
+        "before": {
+          "items": 0,
+          "source_sha256": "9cce02bc5c4bfe56ff650414ddb2c6f556e563ad9aaaeb7d947047bdc8857b63",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "9cce02bc5c4bfe56ff650414ddb2c6f556e563ad9aaaeb7d947047bdc8857b63",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "rj-em-lab-humanas-2025",
+        "before": {
+          "items": 21,
+          "source_sha256": "db3c3da76c6985c7d425ebf2521159abfef4d77f40a5ee260eaa1dac17cb637d",
+          "items_sha256": "adba8bc6123a307e0332618b682932a0f0e7451c7eec0c01e387aa3e17a1539c"
+        },
+        "after": {
+          "items": 21,
+          "source_sha256": "db3c3da76c6985c7d425ebf2521159abfef4d77f40a5ee260eaa1dac17cb637d",
+          "items_sha256": "adba8bc6123a307e0332618b682932a0f0e7451c7eec0c01e387aa3e17a1539c"
+        }
+      },
+      {
+        "source_id": "rj-em-lab-linguagens-2025",
+        "before": {
+          "items": 8,
+          "source_sha256": "9fc0eae36b2bcf999df7a00ecd6a9059233b4938f9ec9b2867f47b0daa6126ec",
+          "items_sha256": "0b6dbd27ba382f50abf178aaf62f309f08577408b69dc4756bf8e079f0d87d40"
+        },
+        "after": {
+          "items": 8,
+          "source_sha256": "9fc0eae36b2bcf999df7a00ecd6a9059233b4938f9ec9b2867f47b0daa6126ec",
+          "items_sha256": "0b6dbd27ba382f50abf178aaf62f309f08577408b69dc4756bf8e079f0d87d40"
+        }
+      },
+      {
+        "source_id": "rn-dcec-computacao",
+        "before": {
+          "items": 0,
+          "source_sha256": "9c1200e007cea62e3022495eb7a26d23d9bb85779cab17b8014aac11e1640cf7",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "9c1200e007cea62e3022495eb7a26d23d9bb85779cab17b8014aac11e1640cf7",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "rn-diretrizes-ifa",
+        "before": {
+          "items": 345,
+          "source_sha256": "d0ce05b816eac47d47af901881b68360bac9e07cb91fad1b805a787bf37e0bce",
+          "items_sha256": "d1d7297dc44924eafd703625b4e4e1f406c0402bfa466f15c567eda1329294ae"
+        },
+        "after": {
+          "items": 345,
+          "source_sha256": "d0ce05b816eac47d47af901881b68360bac9e07cb91fad1b805a787bf37e0bce",
+          "items_sha256": "d1d7297dc44924eafd703625b4e4e1f406c0402bfa466f15c567eda1329294ae"
+        }
+      },
+      {
+        "source_id": "rn-documento-ef-2018",
+        "before": {
+          "items": 0,
+          "source_sha256": "d238e702d5615b246c0effc4a63b1821cadd9476d22e978bd5d6c5a9f1d130f8",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "d238e702d5615b246c0effc4a63b1821cadd9476d22e978bd5d6c5a9f1d130f8",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "rn-documento-ei-2018",
+        "before": {
+          "items": 0,
+          "source_sha256": "fb23d08ae93add39a98de671af2fd1b7a44fbc303dab8d9e88510b57ff412236",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "fb23d08ae93add39a98de671af2fd1b7a44fbc303dab8d9e88510b57ff412236",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "rn-estrutura-em-2026-diurno",
+        "before": {
+          "items": 0,
+          "source_sha256": "e99f74912e296e0ecb500bc3b2fec18e4549c93b6ce030e8f938602565d66a02",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "e99f74912e296e0ecb500bc3b2fec18e4549c93b6ce030e8f938602565d66a02",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "rn-estrutura-em-2026-em_tempo_integral",
+        "before": {
+          "items": 0,
+          "source_sha256": "081754173f634685418d51e61c2d7b8ad53277e6dd24a5a258abbfd3272fcbd2",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "081754173f634685418d51e61c2d7b8ad53277e6dd24a5a258abbfd3272fcbd2",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "rn-estrutura-em-2026-noturno",
+        "before": {
+          "items": 0,
+          "source_sha256": "d347c810c5fe82857ee520d287eebd19e4977543939b5c873b3ee78b537ccb67",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "d347c810c5fe82857ee520d287eebd19e4977543939b5c873b3ee78b537ccb67",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "rn-referencial-em",
+        "before": {
+          "items": 0,
+          "source_sha256": "7c09170a4cd386f9ae2df288bc6fdcdaf24103a96961fe516f798ad2f52839e9",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "7c09170a4cd386f9ae2df288bc6fdcdaf24103a96961fe516f798ad2f52839e9",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "rn-trilhas-aprofundamento",
+        "before": {
+          "items": 0,
+          "source_sha256": "1cf82216f56ab98c97e04570455e5853ea0b5cb38380530258c344ff8ee37d57",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "1cf82216f56ab98c97e04570455e5853ea0b5cb38380530258c344ff8ee37d57",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ro-educacao-digital-2026",
+        "before": {
+          "items": 0,
+          "source_sha256": "96de0023bfcbb4672efe1069ae82a4e9acf1c5e0173a2e9a320824462e937485",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "96de0023bfcbb4672efe1069ae82a4e9acf1c5e0173a2e9a320824462e937485",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ro-eletivas-2026",
+        "before": {
+          "items": 0,
+          "source_sha256": "775f33745e546fa92bcfb9e1fb7408f8252fc561d582e8eb160180977b337d1e",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "775f33745e546fa92bcfb9e1fb7408f8252fc561d582e8eb160180977b337d1e",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ro-itinerarios-2026",
+        "before": {
+          "items": 13,
+          "source_sha256": "23c43ca9c6b95bab8760065290a0aed38a5599b044dc519c1635209ac4704293",
+          "items_sha256": "1cd6ec5fdd011fab019428a9f012f0ba84f9f5b2438dff03ac11939be6422fe6"
+        },
+        "after": {
+          "items": 13,
+          "source_sha256": "23c43ca9c6b95bab8760065290a0aed38a5599b044dc519c1635209ac4704293",
+          "items_sha256": "1cd6ec5fdd011fab019428a9f012f0ba84f9f5b2438dff03ac11939be6422fe6"
+        }
+      },
+      {
+        "source_id": "ro-matrizes-2025",
+        "before": {
+          "items": 0,
+          "source_sha256": "d9b42b40a4192b80ab966846236d0e5c3ac398652be4324fa0cc0b87dc2e9da5",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "d9b42b40a4192b80ab966846236d0e5c3ac398652be4324fa0cc0b87dc2e9da5",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ro-matrizes-2026",
+        "before": {
+          "items": 6,
+          "source_sha256": "9ecdabfc1823ce1f148f5af87c1ed0f16caf55534de6474714e7927d2016552e",
+          "items_sha256": "1ed09ad88ef7494892dea388a60e5c33da957f60f6549f51b8d44f75dd6095ea"
+        },
+        "after": {
+          "items": 6,
+          "source_sha256": "9ecdabfc1823ce1f148f5af87c1ed0f16caf55534de6474714e7927d2016552e",
+          "items_sha256": "1ed09ad88ef7494892dea388a60e5c33da957f60f6549f51b8d44f75dd6095ea"
+        }
+      },
+      {
+        "source_id": "ro-rcem-2022",
+        "before": {
+          "items": 0,
+          "source_sha256": "2437f840bfc81a2806f97406cc780c06986545e0d9ef81e492ac83d218d90267",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "2437f840bfc81a2806f97406cc780c06986545e0d9ef81e492ac83d218d90267",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ro-rcro-ef",
+        "before": {
+          "items": 0,
+          "source_sha256": "0a128684ec45c7feecee60eeb4ba120cb57b7237fa5ec642bfbf6798a75f0101",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "0a128684ec45c7feecee60eeb4ba120cb57b7237fa5ec642bfbf6798a75f0101",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "ro-rcro-ei",
+        "before": {
+          "items": 0,
+          "source_sha256": "49842cec60dcc4252babca0d4e3fe791204396f6d0e21ca1b560abe5f954835f",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "49842cec60dcc4252babca0d4e3fe791204396f6d0e21ca1b560abe5f954835f",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "rr-dcr-ei-ef",
+        "before": {
+          "items": 0,
+          "source_sha256": "c3a8069d46c69c42bc5155f93cdb0c8f238fd0a57ddb3273d2d70272df252d69",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "c3a8069d46c69c42bc5155f93cdb0c8f238fd0a57ddb3273d2d70272df252d69",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "rr-dcr-em",
+        "before": {
+          "items": 0,
+          "source_sha256": "05387918709e77faa16873104672b8841c65b38404f0864164ee5f479a70f555",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "05387918709e77faa16873104672b8841c65b38404f0864164ee5f479a70f555",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "rs-rcg-ef",
+        "before": {
+          "items": 0,
+          "source_sha256": "7079941f920d2d93ca638288f066d9e906ba3f042d6a538c7233b45cf0418260",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "7079941f920d2d93ca638288f066d9e906ba3f042d6a538c7233b45cf0418260",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "rs-rcg-ei-2018",
+        "before": {
+          "items": 530,
+          "source_sha256": "b1b328b8d88d555be07f4658b7c68d83e982afbeb69034049e2694d8365149d2",
+          "items_sha256": "f383dba263e7719ec9d00601596778a366c8308bf9d9fad4ff3146b3683071e1"
+        },
+        "after": {
+          "items": 530,
+          "source_sha256": "b1b328b8d88d555be07f4658b7c68d83e982afbeb69034049e2694d8365149d2",
+          "items_sha256": "f383dba263e7719ec9d00601596778a366c8308bf9d9fad4ff3146b3683071e1"
+        }
+      },
+      {
+        "source_id": "rs-rcg-em",
+        "before": {
+          "items": 673,
+          "source_sha256": "38c3233f65bfc27c95bd04d91eea1f59fd98aa42c22b2d60f2277814e7fc1c02",
+          "items_sha256": "02fdbe89661d606a3ce457fde31ac5df52dfaf18d4b9adb7e3b3cd41311b2bc1"
+        },
+        "after": {
+          "items": 673,
+          "source_sha256": "38c3233f65bfc27c95bd04d91eea1f59fd98aa42c22b2d60f2277814e7fc1c02",
+          "items_sha256": "02fdbe89661d606a3ce457fde31ac5df52dfaf18d4b9adb7e3b3cd41311b2bc1"
+        }
+      },
+      {
+        "source_id": "rs-rcg-em-jul22",
+        "before": {
+          "items": 0,
+          "source_sha256": "cf063dd81af6c42a1561ed4719a8b04728df29d3371da7655b4b8fcd4df58250",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "cf063dd81af6c42a1561ed4719a8b04728df29d3371da7655b4b8fcd4df58250",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "sc-cb-eief-2019",
+        "before": {
+          "items": 0,
+          "source_sha256": "4408b6997660538c770bfc2f6b5adaa378a8eb74174356c45ca35a718310343e",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "4408b6997660538c770bfc2f6b5adaa378a8eb74174356c45ca35a718310343e",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "sc-cb-eief-2019-atual",
+        "before": {
+          "items": 0,
+          "source_sha256": "8ba67d4c281eb63d438e24fb83f2c8c0afc8786184e47e3952d467cf40cc0178",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "8ba67d4c281eb63d438e24fb83f2c8c0afc8786184e47e3952d467cf40cc0178",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "sc-cb-em-caderno-1",
+        "before": {
+          "items": 118,
+          "source_sha256": "eef97a0ff465f62d52dc6c7e14aa82b045708ab8512d53570a190c4feabfc0b7",
+          "items_sha256": "12bc761556648a9124ca653b2639e185853619e17ea46e484bacabf353cef137"
+        },
+        "after": {
+          "items": 118,
+          "source_sha256": "eef97a0ff465f62d52dc6c7e14aa82b045708ab8512d53570a190c4feabfc0b7",
+          "items_sha256": "12bc761556648a9124ca653b2639e185853619e17ea46e484bacabf353cef137"
+        }
+      },
+      {
+        "source_id": "sc-cb-em-caderno-2",
+        "before": {
+          "items": 491,
+          "source_sha256": "8ee0cf375d39d5c6fcc8d4e6088e358a58de1488142f6181a07ab749f2155184",
+          "items_sha256": "177694d8675f8727b782bc2eae1edf7e804fb933eda3e3fab9c41174f400f20f"
+        },
+        "after": {
+          "items": 491,
+          "source_sha256": "8ee0cf375d39d5c6fcc8d4e6088e358a58de1488142f6181a07ab749f2155184",
+          "items_sha256": "177694d8675f8727b782bc2eae1edf7e804fb933eda3e3fab9c41174f400f20f"
+        }
+      },
+      {
+        "source_id": "sc-cb-em-caderno-3",
+        "before": {
+          "items": 331,
+          "source_sha256": "265de6bcdc8e649a151fd891c62b74d68fbbe3c2c243e7cfb149382ab9264c26",
+          "items_sha256": "13950b40fd694c2836c40bc087ff0a63a850c025a3a7d5fb8a814c77760604e8"
+        },
+        "after": {
+          "items": 331,
+          "source_sha256": "265de6bcdc8e649a151fd891c62b74d68fbbe3c2c243e7cfb149382ab9264c26",
+          "items_sha256": "13950b40fd694c2836c40bc087ff0a63a850c025a3a7d5fb8a814c77760604e8"
+        }
+      },
+      {
+        "source_id": "sc-cb-em-caderno-4",
+        "before": {
+          "items": 351,
+          "source_sha256": "1b31df6409c557342fccb86047b4464c1cce17918089e9cc86651d09c100c99b",
+          "items_sha256": "66880d262dd890ef8101e63d1daa877043e7979e26f10bfcab2a3e561c181e56"
+        },
+        "after": {
+          "items": 351,
+          "source_sha256": "1b31df6409c557342fccb86047b4464c1cce17918089e9cc86651d09c100c99b",
+          "items_sha256": "66880d262dd890ef8101e63d1daa877043e7979e26f10bfcab2a3e561c181e56"
+        }
+      },
+      {
+        "source_id": "sc-cb-em-caderno-5",
+        "before": {
+          "items": 0,
+          "source_sha256": "051afb4dd8d15ac094ca1f1faf432655837ea8ffe3b67a94602be2955aeb3916",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "051afb4dd8d15ac094ca1f1faf432655837ea8ffe3b67a94602be2955aeb3916",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "sc-cb-em-caderno-6",
+        "before": {
+          "items": 0,
+          "source_sha256": "f3dda704585ad89c493382e07d00613cc36d4ce1aebfc553d2db954cf01c0cfc",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "f3dda704585ad89c493382e07d00613cc36d4ce1aebfc553d2db954cf01c0cfc",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "sc-educacao-digital",
+        "before": {
+          "items": 0,
+          "source_sha256": "976803569f30d02e8c652d6579f2d464736009b09d2e50442aa11ebf6314d23d",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "976803569f30d02e8c652d6579f2d464736009b09d2e50442aa11ebf6314d23d",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "sc-lingua-inglesa-ai",
+        "before": {
+          "items": 25,
+          "source_sha256": "0791d863ba1ef64ad5f8c871f9ce6732c19f2d1eca139c73761e0289e570e0a4",
+          "items_sha256": "32752c3ccadcfdd00dc5543b00d0ec7e9247fb69b7cc79ede04eb4c7d725cb20"
+        },
+        "after": {
+          "items": 25,
+          "source_sha256": "0791d863ba1ef64ad5f8c871f9ce6732c19f2d1eca139c73761e0289e570e0a4",
+          "items_sha256": "32752c3ccadcfdd00dc5543b00d0ec7e9247fb69b7cc79ede04eb4c7d725cb20"
+        }
+      },
+      {
+        "source_id": "sc-parecer-446-2025",
+        "before": {
+          "items": 5,
+          "source_sha256": "ae830835235cdc8e60ba222f02f74abb0d7c2afb89bd5c57abb0d798e9d6e526",
+          "items_sha256": "107a31a03458b769d260e4b0b76e3a0513ce7a570d47c5b649eb36613be12565"
+        },
+        "after": {
+          "items": 5,
+          "source_sha256": "ae830835235cdc8e60ba222f02f74abb0d7c2afb89bd5c57abb0d798e9d6e526",
+          "items_sha256": "107a31a03458b769d260e4b0b76e3a0513ce7a570d47c5b649eb36613be12565"
+        }
+      },
+      {
+        "source_id": "sc-resolucao-070-2025",
+        "before": {
+          "items": 18,
+          "source_sha256": "60c4e54d5dca5263df131dcd4992989ff9cdd0084290d324ed535d9991570ab2",
+          "items_sha256": "70589ba60d4373f403c436f8943c430afe13ebc2c9841073b73cfc79b942fb8d"
+        },
+        "after": {
+          "items": 18,
+          "source_sha256": "60c4e54d5dca5263df131dcd4992989ff9cdd0084290d324ed535d9991570ab2",
+          "items_sha256": "70589ba60d4373f403c436f8943c430afe13ebc2c9841073b73cfc79b942fb8d"
+        }
+      },
+      {
+        "source_id": "se-bncc-computacao-2025",
+        "before": {
+          "items": 521,
+          "source_sha256": "0b11e54111a896909acab9da56cac4702c616e1a559fbe071ffc165da17a7487",
+          "items_sha256": "198318364bb7d7a9b17f062a07a6e981242ef390b7ca9c92588254bdb8c131f3"
+        },
+        "after": {
+          "items": 521,
+          "source_sha256": "0b11e54111a896909acab9da56cac4702c616e1a559fbe071ffc165da17a7487",
+          "items_sha256": "198318364bb7d7a9b17f062a07a6e981242ef390b7ca9c92588254bdb8c131f3"
+        }
+      },
+      {
+        "source_id": "se-computacao-2026",
+        "before": {
+          "items": 264,
+          "source_sha256": "ebda7d9fc7e943c63f24143551f7bd342fd3fcbe25a7e996d812e27287090d7e",
+          "items_sha256": "20cf868839f7448916ad58a73bf0309a3c9937c2f94c099302ea2013ab0552c3"
+        },
+        "after": {
+          "items": 264,
+          "source_sha256": "ebda7d9fc7e943c63f24143551f7bd342fd3fcbe25a7e996d812e27287090d7e",
+          "items_sha256": "20cf868839f7448916ad58a73bf0309a3c9937c2f94c099302ea2013ab0552c3"
+        }
+      },
+      {
+        "source_id": "se-curriculo-ei-ef",
+        "before": {
+          "items": 0,
+          "source_sha256": "747e10c7dd9805bebe860e41b52721332420bd5601f92ba230ec6cae57374f89",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "747e10c7dd9805bebe860e41b52721332420bd5601f92ba230ec6cae57374f89",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "se-curriculo-em",
+        "before": {
+          "items": 0,
+          "source_sha256": "f874d0661262d2e9782e019039643dc43a3debd47cd3711469fb33b5666ace2f",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "f874d0661262d2e9782e019039643dc43a3debd47cd3711469fb33b5666ace2f",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "se-humanas-vol2",
+        "before": {
+          "items": 191,
+          "source_sha256": "b599ded08bd855f383b53e67caae628262e4faec6faa64073eebea1e6ef0140a",
+          "items_sha256": "9950991dc032978f39a018c093238b857fa3727ea74fe356cf67db7f6e64e26e"
+        },
+        "after": {
+          "items": 191,
+          "source_sha256": "b599ded08bd855f383b53e67caae628262e4faec6faa64073eebea1e6ef0140a",
+          "items_sha256": "9950991dc032978f39a018c093238b857fa3727ea74fe356cf67db7f6e64e26e"
+        }
+      },
+      {
+        "source_id": "se-linguagens-parte2-vol2",
+        "before": {
+          "items": 295,
+          "source_sha256": "971f8b55acd3c497c06907fb8435cbc4e4f50e247b4f0452433d42544e5969ed",
+          "items_sha256": "86d7f21435d1df924089882999bc118d6adf83be7d3b18cf8992a2d04eaf8253"
+        },
+        "after": {
+          "items": 295,
+          "source_sha256": "971f8b55acd3c497c06907fb8435cbc4e4f50e247b4f0452433d42544e5969ed",
+          "items_sha256": "86d7f21435d1df924089882999bc118d6adf83be7d3b18cf8992a2d04eaf8253"
+        }
+      },
+      {
+        "source_id": "se-linguagens-vol2",
+        "before": {
+          "items": 286,
+          "source_sha256": "7094ab6898c242192745e5c7682cfecc518dab518a3727dd0d1248573cb27d87",
+          "items_sha256": "86b91932f36da0cc77e4adc3d0045e1aada4b9cecd5a7b1bb61e8599c1c3b3b1"
+        },
+        "after": {
+          "items": 286,
+          "source_sha256": "7094ab6898c242192745e5c7682cfecc518dab518a3727dd0d1248573cb27d87",
+          "items_sha256": "86b91932f36da0cc77e4adc3d0045e1aada4b9cecd5a7b1bb61e8599c1c3b3b1"
+        }
+      },
+      {
+        "source_id": "se-matematica-vol2",
+        "before": {
+          "items": 181,
+          "source_sha256": "4b54b6fd696a5819350277262f49af79a52e050a40b7116f5347632d62f44fd0",
+          "items_sha256": "88bf57be894be9d674819536116737133098aae40cc4a605cea72088fb4c62e9"
+        },
+        "after": {
+          "items": 181,
+          "source_sha256": "4b54b6fd696a5819350277262f49af79a52e050a40b7116f5347632d62f44fd0",
+          "items_sha256": "88bf57be894be9d674819536116737133098aae40cc4a605cea72088fb4c62e9"
+        }
+      },
+      {
+        "source_id": "se-natureza-vol2",
+        "before": {
+          "items": 280,
+          "source_sha256": "79bc59bc8f78ad27abbaec13872d7d8e29c4ccefd53c2bedfd9e135e5580ec67",
+          "items_sha256": "1b2db8f1911e68d7fc87308128af4e8a8485654d86187926165a813d0e9423f2"
+        },
+        "after": {
+          "items": 280,
+          "source_sha256": "79bc59bc8f78ad27abbaec13872d7d8e29c4ccefd53c2bedfd9e135e5580ec67",
+          "items_sha256": "1b2db8f1911e68d7fc87308128af4e8a8485654d86187926165a813d0e9423f2"
+        }
+      },
+      {
+        "source_id": "se-projeto-vida",
+        "before": {
+          "items": 19,
+          "source_sha256": "f81dbe81a4c67347b6f8edbce28c4ed58c0980f47a3868cb3314c75b2950a939",
+          "items_sha256": "ab5f7fcfc6de0e5cbc822e52f06a0b03158e50da19075644fcb834bbe033ea76"
+        },
+        "after": {
+          "items": 19,
+          "source_sha256": "f81dbe81a4c67347b6f8edbce28c4ed58c0980f47a3868cb3314c75b2950a939",
+          "items_sha256": "ab5f7fcfc6de0e5cbc822e52f06a0b03158e50da19075644fcb834bbe033ea76"
+        }
+      },
+      {
+        "source_id": "sp-curriculo-eief-isbn",
+        "before": {
+          "items": 0,
+          "source_sha256": "da44210b20f33caf62935d7e18841a8868611bafb352e21ae5a124278c80ef71",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "da44210b20f33caf62935d7e18841a8868611bafb352e21ae5a124278c80ef71",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "sp-curriculo-em-isbn",
+        "before": {
+          "items": 766,
+          "source_sha256": "8fc95c64f3e82a67089f55cd551b0f1123e7cd43460860272fca616008aa55ab",
+          "items_sha256": "a6d6c69c94d1a849763835218f7eace8e1d874caa7ac6ca16ee01fd3526878d2"
+        },
+        "after": {
+          "items": 766,
+          "source_sha256": "8fc95c64f3e82a67089f55cd551b0f1123e7cd43460860272fca616008aa55ab",
+          "items_sha256": "a6d6c69c94d1a849763835218f7eace8e1d874caa7ac6ca16ee01fd3526878d2"
+        }
+      },
+      {
+        "source_id": "sp-educacao-digital-midiatica-2026",
+        "before": {
+          "items": 561,
+          "source_sha256": "691a8075b6d869733a0475490ee55d292382b814131b45ca4fd3bd78fa5f810c",
+          "items_sha256": "d341c9495ed7f887dd96425d6a60f310f12ad78da2683108e65b91b074463790"
+        },
+        "after": {
+          "items": 561,
+          "source_sha256": "691a8075b6d869733a0475490ee55d292382b814131b45ca4fd3bd78fa5f810c",
+          "items_sha256": "d341c9495ed7f887dd96425d6a60f310f12ad78da2683108e65b91b074463790"
+        }
+      },
+      {
+        "source_id": "to-dct-ef-ch-er",
+        "before": {
+          "items": 0,
+          "source_sha256": "6fd585a4f00bdd9824846efaf5ebd5348c7eb01ead03459b9cf1286e4dd7c188",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "6fd585a4f00bdd9824846efaf5ebd5348c7eb01ead03459b9cf1286e4dd7c188",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "to-dct-ef-cn-mat",
+        "before": {
+          "items": 0,
+          "source_sha256": "8a34e92b77849a202bfd64a124cce4f5e1c304ed7a5ea9fda0a78456950aa2eb",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "8a34e92b77849a202bfd64a124cce4f5e1c304ed7a5ea9fda0a78456950aa2eb",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "to-dct-ef-linguagens",
+        "before": {
+          "items": 0,
+          "source_sha256": "95c5da97cfe72ab8429c5ea7d0909e3df4c0be4419f7ba046fb01dd72effea5f",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "95c5da97cfe72ab8429c5ea7d0909e3df4c0be4419f7ba046fb01dd72effea5f",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "to-dct-ei",
+        "before": {
+          "items": 0,
+          "source_sha256": "098c6f1a3039db94119ecf2756682719820fed29d7089cbdd9b952c7dbcc4365",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "098c6f1a3039db94119ecf2756682719820fed29d7089cbdd9b952c7dbcc4365",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "to-dct-em",
+        "before": {
+          "items": 111,
+          "source_sha256": "0d08a8a13b895616624a5758d7d3b904e1f8ceffdb2f1a8f7d1298d8789d7064",
+          "items_sha256": "a3285e98f99666f6fe7cbbaf9f66daeb002b40aedf5babcced2a71e4184cf12e"
+        },
+        "after": {
+          "items": 111,
+          "source_sha256": "0d08a8a13b895616624a5758d7d3b904e1f8ceffdb2f1a8f7d1298d8789d7064",
+          "items_sha256": "a3285e98f99666f6fe7cbbaf9f66daeb002b40aedf5babcced2a71e4184cf12e"
+        }
+      },
+      {
+        "source_id": "to-dct-em-caderno1",
+        "before": {
+          "items": 0,
+          "source_sha256": "85650698f041ec384244c3cf0b4542c2afe6836f628da4eece265191c8597bcb",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "85650698f041ec384244c3cf0b4542c2afe6836f628da4eece265191c8597bcb",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "to-dct-em-ch-313853",
+        "before": {
+          "items": 205,
+          "source_sha256": "1418d9291566cc852bcfceca90c713245ee5871c50d8566eec12730747ef2083",
+          "items_sha256": "2e1b75fc014eccf0749a28e353fbda01742e2c178602f47be51e925b8ac5fc74"
+        },
+        "after": {
+          "items": 205,
+          "source_sha256": "1418d9291566cc852bcfceca90c713245ee5871c50d8566eec12730747ef2083",
+          "items_sha256": "2e1b75fc014eccf0749a28e353fbda01742e2c178602f47be51e925b8ac5fc74"
+        }
+      },
+      {
+        "source_id": "to-dct-em-ch-314419",
+        "before": {
+          "items": 0,
+          "source_sha256": "f36d7f5853e0dab7d064e0c86165bb5da3ca570534ae58d938a678634539c55c",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "f36d7f5853e0dab7d064e0c86165bb5da3ca570534ae58d938a678634539c55c",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "to-dct-em-cn-313851",
+        "before": {
+          "items": 47,
+          "source_sha256": "25fe0a1d031fc69b1f85fc6fdfbe848984c610ab7c302a6a7caeeac5d365a0d7",
+          "items_sha256": "c73b779a468d7ced2b2c58b367f00ed434ef267e99d67cf62e9820766ff7a184"
+        },
+        "after": {
+          "items": 47,
+          "source_sha256": "25fe0a1d031fc69b1f85fc6fdfbe848984c610ab7c302a6a7caeeac5d365a0d7",
+          "items_sha256": "c73b779a468d7ced2b2c58b367f00ed434ef267e99d67cf62e9820766ff7a184"
+        }
+      },
+      {
+        "source_id": "to-dct-em-cn-314418",
+        "before": {
+          "items": 0,
+          "source_sha256": "03888cfd4d016f666dd7ca83baa2d1298e796f751210b5c7a1a94a7d57d51c03",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "03888cfd4d016f666dd7ca83baa2d1298e796f751210b5c7a1a94a7d57d51c03",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "to-dct-em-eletivas-314423",
+        "before": {
+          "items": 0,
+          "source_sha256": "ee228fed1c6e6084da072316bdf7965ca56f4203420f7176e2a78fc4466308ee",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "ee228fed1c6e6084da072316bdf7965ca56f4203420f7176e2a78fc4466308ee",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "to-dct-em-eletivas-379617",
+        "before": {
+          "items": 0,
+          "source_sha256": "a8c27474d37f063f1ed3d8f030990173e964e5f79a8acdef902743bb75c46148",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "a8c27474d37f063f1ed3d8f030990173e964e5f79a8acdef902743bb75c46148",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "to-dct-em-ftp-314424",
+        "before": {
+          "items": 0,
+          "source_sha256": "29b1bf4ce7e66717bbccd5954892093486704148f1d59d4537bbbbf473a4b40b",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "29b1bf4ce7e66717bbccd5954892093486704148f1d59d4537bbbbf473a4b40b",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "to-dct-em-lg-313847",
+        "before": {
+          "items": 144,
+          "source_sha256": "f2178fda720c7b0fc3f6394042f2273563a155530702601e182512e6d180e61d",
+          "items_sha256": "ace4f3c8cc71c8c1284958090b192c28c592419fbfa239d611667b9434dcca30"
+        },
+        "after": {
+          "items": 144,
+          "source_sha256": "f2178fda720c7b0fc3f6394042f2273563a155530702601e182512e6d180e61d",
+          "items_sha256": "ace4f3c8cc71c8c1284958090b192c28c592419fbfa239d611667b9434dcca30"
+        }
+      },
+      {
+        "source_id": "to-dct-em-lg-314420",
+        "before": {
+          "items": 0,
+          "source_sha256": "cb9aa0d4c9e6930ea3a340864c48feaec2226c0446d82f75e5f289e08b3abda5",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "cb9aa0d4c9e6930ea3a340864c48feaec2226c0446d82f75e5f289e08b3abda5",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "to-dct-em-mat-313849",
+        "before": {
+          "items": 0,
+          "source_sha256": "f0a2d0ca5895b54fb54392c6c01c29c80198fc9a9a9e08a3b0d4232e13f8d393",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "f0a2d0ca5895b54fb54392c6c01c29c80198fc9a9a9e08a3b0d4232e13f8d393",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "to-dct-em-mat-314421",
+        "before": {
+          "items": 0,
+          "source_sha256": "4c53c54c4e85f7fe9b6caf504f2a8a2700a9c59d83ba973787ea1e5537060be2",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "4c53c54c4e85f7fe9b6caf504f2a8a2700a9c59d83ba973787ea1e5537060be2",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "to-dct-em-trilhas-314422",
+        "before": {
+          "items": 0,
+          "source_sha256": "2eddca4ed7256778fba99b0f85513d47c69eda9bde7074afd824c0d74e963cf5",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "after": {
+          "items": 0,
+          "source_sha256": "2eddca4ed7256778fba99b0f85513d47c69eda9bde7074afd824c0d74e963cf5",
+          "items_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360810",
+        "before": {
+          "items": 175,
+          "source_sha256": "0cce46cd666da48f469fca4e5c72b214aeed0e83a68a06be337c5c1a83a9193c",
+          "items_sha256": "3cab707c9fe9a56fcc0464ff5fa50f95509a5b729c4df1ca99debb33ba69a5fb"
+        },
+        "after": {
+          "items": 175,
+          "source_sha256": "0cce46cd666da48f469fca4e5c72b214aeed0e83a68a06be337c5c1a83a9193c",
+          "items_sha256": "3cab707c9fe9a56fcc0464ff5fa50f95509a5b729c4df1ca99debb33ba69a5fb"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360811",
+        "before": {
+          "items": 85,
+          "source_sha256": "f0ec73d23ac69ef9ba8bf9cf9f07803a85f40a915668f9795996eb988578e88d",
+          "items_sha256": "3c93e521896acd669fa49f5d27e6a023f9ad7e634da055ce57afcf18c9fa2d23"
+        },
+        "after": {
+          "items": 85,
+          "source_sha256": "f0ec73d23ac69ef9ba8bf9cf9f07803a85f40a915668f9795996eb988578e88d",
+          "items_sha256": "3c93e521896acd669fa49f5d27e6a023f9ad7e634da055ce57afcf18c9fa2d23"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360812",
+        "before": {
+          "items": 85,
+          "source_sha256": "e45073320775845fea562fa0497209103adb2193c8ecaedc2e0fdd003d750fb5",
+          "items_sha256": "35cc2b7d4b06ed38dc8efcd7a0b820c85c88d8a490e72fc1005262ba86c047f1"
+        },
+        "after": {
+          "items": 85,
+          "source_sha256": "e45073320775845fea562fa0497209103adb2193c8ecaedc2e0fdd003d750fb5",
+          "items_sha256": "35cc2b7d4b06ed38dc8efcd7a0b820c85c88d8a490e72fc1005262ba86c047f1"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360813",
+        "before": {
+          "items": 90,
+          "source_sha256": "cdb28c5a4355262e36a7aebd209e2f504e1871b4a27fdd4d408011419850ffd7",
+          "items_sha256": "742363cbca19489034fb3a17bf781e94fd2bdec028cf89fa7ffeb63f62d83cf4"
+        },
+        "after": {
+          "items": 90,
+          "source_sha256": "cdb28c5a4355262e36a7aebd209e2f504e1871b4a27fdd4d408011419850ffd7",
+          "items_sha256": "742363cbca19489034fb3a17bf781e94fd2bdec028cf89fa7ffeb63f62d83cf4"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360814",
+        "before": {
+          "items": 85,
+          "source_sha256": "bff92d87abf741f9237633d43d0770318f75c3ef3d46e6fa979fbdff8a6d2b84",
+          "items_sha256": "74f42879b3a0e4d0da1f7e915ae9e7a1500fc70501dbc8a44ccebf72b1878e20"
+        },
+        "after": {
+          "items": 85,
+          "source_sha256": "bff92d87abf741f9237633d43d0770318f75c3ef3d46e6fa979fbdff8a6d2b84",
+          "items_sha256": "74f42879b3a0e4d0da1f7e915ae9e7a1500fc70501dbc8a44ccebf72b1878e20"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360815",
+        "before": {
+          "items": 96,
+          "source_sha256": "50ed638672285e3ebb2ac4b601eb9a456b7238d3bee27605d07189fcc2b2cffc",
+          "items_sha256": "0ee4ddce0e6081bed2bee664a7c502e2fcbbb12fda5105535fa0ebff4af6faa8"
+        },
+        "after": {
+          "items": 96,
+          "source_sha256": "50ed638672285e3ebb2ac4b601eb9a456b7238d3bee27605d07189fcc2b2cffc",
+          "items_sha256": "0ee4ddce0e6081bed2bee664a7c502e2fcbbb12fda5105535fa0ebff4af6faa8"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360817",
+        "before": {
+          "items": 57,
+          "source_sha256": "918084b92473851cd468d4b1147ce0ce45661a362831cdf6698243fec46efb1f",
+          "items_sha256": "9d368b77cbe8d27d3d221553ec1eef2a1ab7162f42749f6cd4eb80b37dffcd6c"
+        },
+        "after": {
+          "items": 57,
+          "source_sha256": "918084b92473851cd468d4b1147ce0ce45661a362831cdf6698243fec46efb1f",
+          "items_sha256": "9d368b77cbe8d27d3d221553ec1eef2a1ab7162f42749f6cd4eb80b37dffcd6c"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360818",
+        "before": {
+          "items": 86,
+          "source_sha256": "7d58778880a95f11d7e2ddc87e9b80de0103255288243015bd642750fe39d9d1",
+          "items_sha256": "b9b585ee7b1e5f677dfe2c2bc5e095575052d3ce8c4ec3a1053cc9c18a385ac3"
+        },
+        "after": {
+          "items": 86,
+          "source_sha256": "7d58778880a95f11d7e2ddc87e9b80de0103255288243015bd642750fe39d9d1",
+          "items_sha256": "b9b585ee7b1e5f677dfe2c2bc5e095575052d3ce8c4ec3a1053cc9c18a385ac3"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360819",
+        "before": {
+          "items": 50,
+          "source_sha256": "fe86080655cd3498ebce2edb6d1ba3ad4fc0c45ae1b823dafa64e7f3ae8700c0",
+          "items_sha256": "90b8492401c058f7e0245e7d73048a01670c8c18635890d338a785429b9bbe18"
+        },
+        "after": {
+          "items": 50,
+          "source_sha256": "fe86080655cd3498ebce2edb6d1ba3ad4fc0c45ae1b823dafa64e7f3ae8700c0",
+          "items_sha256": "90b8492401c058f7e0245e7d73048a01670c8c18635890d338a785429b9bbe18"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360820",
+        "before": {
+          "items": 70,
+          "source_sha256": "091092c9897f0432fad5d494f71d9ace8a172d80363d826e9857f2e9cc9e353e",
+          "items_sha256": "c809aecff2fa07108c0b4d2e080cf7f2840fc9f7099cbb9a57c21a02e2141b3b"
+        },
+        "after": {
+          "items": 70,
+          "source_sha256": "091092c9897f0432fad5d494f71d9ace8a172d80363d826e9857f2e9cc9e353e",
+          "items_sha256": "c809aecff2fa07108c0b4d2e080cf7f2840fc9f7099cbb9a57c21a02e2141b3b"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360821",
+        "before": {
+          "items": 81,
+          "source_sha256": "3e41f7c9e255f65bceae39c3ec3710f060c20a9d261a5c34799ea0301799dfcb",
+          "items_sha256": "2c6792773c8fc7dd52216c2f63c9fbe50d19ee32e9e0ffd96adebf53e31cdf38"
+        },
+        "after": {
+          "items": 81,
+          "source_sha256": "3e41f7c9e255f65bceae39c3ec3710f060c20a9d261a5c34799ea0301799dfcb",
+          "items_sha256": "2c6792773c8fc7dd52216c2f63c9fbe50d19ee32e9e0ffd96adebf53e31cdf38"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360822",
+        "before": {
+          "items": 59,
+          "source_sha256": "b7d3519ef652ca1cf3511772c71e3de5c5a7d11cf96218549f531745c278d40d",
+          "items_sha256": "626612b926c79e0d7da3695ef02a4ccadcfee182a611b6c9a6f0dd07c2b98945"
+        },
+        "after": {
+          "items": 59,
+          "source_sha256": "b7d3519ef652ca1cf3511772c71e3de5c5a7d11cf96218549f531745c278d40d",
+          "items_sha256": "626612b926c79e0d7da3695ef02a4ccadcfee182a611b6c9a6f0dd07c2b98945"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360823",
+        "before": {
+          "items": 57,
+          "source_sha256": "851ac8c29240a8bce375f0260ed9903d0c0265f3366cd089317f35e997062a02",
+          "items_sha256": "9de7207313a0c6ae997c6d523221eca708044068b1b29737361f6dc08884320e"
+        },
+        "after": {
+          "items": 57,
+          "source_sha256": "851ac8c29240a8bce375f0260ed9903d0c0265f3366cd089317f35e997062a02",
+          "items_sha256": "9de7207313a0c6ae997c6d523221eca708044068b1b29737361f6dc08884320e"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360824",
+        "before": {
+          "items": 41,
+          "source_sha256": "19417308fd5fb0f48d519dd37a455fdd83aa743bebcfa838bda7a9f7b591392b",
+          "items_sha256": "a064b14f5510d72beb6e177e69a100939970eaa91d2a2b7e591df41f5efeebbb"
+        },
+        "after": {
+          "items": 41,
+          "source_sha256": "19417308fd5fb0f48d519dd37a455fdd83aa743bebcfa838bda7a9f7b591392b",
+          "items_sha256": "a064b14f5510d72beb6e177e69a100939970eaa91d2a2b7e591df41f5efeebbb"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360825",
+        "before": {
+          "items": 41,
+          "source_sha256": "b8ef1626938eae6d1544e6e7e1536abf5f9a5b965b89a507951874d2b86c2db2",
+          "items_sha256": "d96c4c8e76a906ae7162bd4f0f14f947587adfc2657f10daf64cb3f87510b84d"
+        },
+        "after": {
+          "items": 41,
+          "source_sha256": "b8ef1626938eae6d1544e6e7e1536abf5f9a5b965b89a507951874d2b86c2db2",
+          "items_sha256": "d96c4c8e76a906ae7162bd4f0f14f947587adfc2657f10daf64cb3f87510b84d"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360826",
+        "before": {
+          "items": 47,
+          "source_sha256": "ab0c42a0aca437229827c5555f2470d600048aae04985d9f9fd40e601a385bd1",
+          "items_sha256": "b048baa397a9b65a00b454d12c60f4b6a54e6a73e50126e1a1879deba9f214d6"
+        },
+        "after": {
+          "items": 47,
+          "source_sha256": "ab0c42a0aca437229827c5555f2470d600048aae04985d9f9fd40e601a385bd1",
+          "items_sha256": "b048baa397a9b65a00b454d12c60f4b6a54e6a73e50126e1a1879deba9f214d6"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360827",
+        "before": {
+          "items": 89,
+          "source_sha256": "24df43fbf89e0b36ac77f3638dc541b3d9d13149ae618f97e5cf1235685e8ed0",
+          "items_sha256": "dea4e63e44e64ae320ae340910a6acf5fa4287d279832f8b83eec385e6f6b5be"
+        },
+        "after": {
+          "items": 89,
+          "source_sha256": "24df43fbf89e0b36ac77f3638dc541b3d9d13149ae618f97e5cf1235685e8ed0",
+          "items_sha256": "dea4e63e44e64ae320ae340910a6acf5fa4287d279832f8b83eec385e6f6b5be"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360828",
+        "before": {
+          "items": 85,
+          "source_sha256": "98183ceafc7c00d8904a0d7b91a4bf3941e25a5c74f6a4a0f0cfe01b7edbf0e0",
+          "items_sha256": "55d4099deae864512af4a4f7d86ae7deb362fa7dbfe89cbab550160920193b0b"
+        },
+        "after": {
+          "items": 85,
+          "source_sha256": "98183ceafc7c00d8904a0d7b91a4bf3941e25a5c74f6a4a0f0cfe01b7edbf0e0",
+          "items_sha256": "55d4099deae864512af4a4f7d86ae7deb362fa7dbfe89cbab550160920193b0b"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360829",
+        "before": {
+          "items": 85,
+          "source_sha256": "ffd42aa7f03890be24d0de62abb12694ac3c7406d502f5c3291f410ad7f2fb25",
+          "items_sha256": "263a60a4d85bbf76f8467d13a2d2152fa19cf51e82bc3699074cdc56d14942d5"
+        },
+        "after": {
+          "items": 85,
+          "source_sha256": "ffd42aa7f03890be24d0de62abb12694ac3c7406d502f5c3291f410ad7f2fb25",
+          "items_sha256": "263a60a4d85bbf76f8467d13a2d2152fa19cf51e82bc3699074cdc56d14942d5"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360830",
+        "before": {
+          "items": 147,
+          "source_sha256": "025594e91a9697ebcd6f4994457feabbc1154250f7d938479524e53890bfc329",
+          "items_sha256": "09766f424878b37923d5e203fbd895dc79e9efd4241b66ed2c890d9459897f3d"
+        },
+        "after": {
+          "items": 147,
+          "source_sha256": "025594e91a9697ebcd6f4994457feabbc1154250f7d938479524e53890bfc329",
+          "items_sha256": "09766f424878b37923d5e203fbd895dc79e9efd4241b66ed2c890d9459897f3d"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360831",
+        "before": {
+          "items": 85,
+          "source_sha256": "f3009da97d40a166a2b289f09849e205de32def3f00e394ab891958ab669d2de",
+          "items_sha256": "c446a4bceb1f74e9cd93524885020958e79480135c5425a6035b5a1e0fab86d0"
+        },
+        "after": {
+          "items": 85,
+          "source_sha256": "f3009da97d40a166a2b289f09849e205de32def3f00e394ab891958ab669d2de",
+          "items_sha256": "c446a4bceb1f74e9cd93524885020958e79480135c5425a6035b5a1e0fab86d0"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360832",
+        "before": {
+          "items": 110,
+          "source_sha256": "7cdb8797d3c4873dbfa975a1e3448b7753ae8a47b6c8a34728b36bbfd72daf8b",
+          "items_sha256": "1eb455633b4de64b6652f93c78c3d6b08c7b70472c185a8627c1787a227d89ac"
+        },
+        "after": {
+          "items": 110,
+          "source_sha256": "7cdb8797d3c4873dbfa975a1e3448b7753ae8a47b6c8a34728b36bbfd72daf8b",
+          "items_sha256": "1eb455633b4de64b6652f93c78c3d6b08c7b70472c185a8627c1787a227d89ac"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360833",
+        "before": {
+          "items": 97,
+          "source_sha256": "9fc83ba2f86d9a0244150c85cbcb6d2cc9590790cb1e013d6a9672b2f1d461c0",
+          "items_sha256": "6764a73a7ed20901da5cc6f3ffc13eb5ae791f6dcb78437ba0b2e2aab631e993"
+        },
+        "after": {
+          "items": 97,
+          "source_sha256": "9fc83ba2f86d9a0244150c85cbcb6d2cc9590790cb1e013d6a9672b2f1d461c0",
+          "items_sha256": "6764a73a7ed20901da5cc6f3ffc13eb5ae791f6dcb78437ba0b2e2aab631e993"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360834",
+        "before": {
+          "items": 73,
+          "source_sha256": "7bfa378f2720165c2a117c1f8c4b4f4e9c919516f8a821f021b7152ce7ba7434",
+          "items_sha256": "b02c4fd4665a0f41db3b691934db6512631023d116101acff214065e59085eab"
+        },
+        "after": {
+          "items": 73,
+          "source_sha256": "7bfa378f2720165c2a117c1f8c4b4f4e9c919516f8a821f021b7152ce7ba7434",
+          "items_sha256": "b02c4fd4665a0f41db3b691934db6512631023d116101acff214065e59085eab"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360835",
+        "before": {
+          "items": 57,
+          "source_sha256": "ae84d47173c576bb712e4e1146ce5bc08905837c7d6c817bbf08701426ab4efd",
+          "items_sha256": "ceb48dd4e03bccbb25154870a81fa0c84dbb6447ad4727a5e227195b9d3f8c30"
+        },
+        "after": {
+          "items": 57,
+          "source_sha256": "ae84d47173c576bb712e4e1146ce5bc08905837c7d6c817bbf08701426ab4efd",
+          "items_sha256": "ceb48dd4e03bccbb25154870a81fa0c84dbb6447ad4727a5e227195b9d3f8c30"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360836",
+        "before": {
+          "items": 81,
+          "source_sha256": "7f94f84b79981a4355accf1b1191f1cf7fcb70628e4566010b2a9933189c7da1",
+          "items_sha256": "cc21945a06df688ab9b4c518d5f4277ce6034133ae32ebc8962752d23485eadb"
+        },
+        "after": {
+          "items": 81,
+          "source_sha256": "7f94f84b79981a4355accf1b1191f1cf7fcb70628e4566010b2a9933189c7da1",
+          "items_sha256": "cc21945a06df688ab9b4c518d5f4277ce6034133ae32ebc8962752d23485eadb"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360837",
+        "before": {
+          "items": 87,
+          "source_sha256": "a3db293ea8e107d1373212b63ed07ddd4e8c652fc9112e621919ad885ad961ed",
+          "items_sha256": "4a102e30bb61c253940e61294b2f9b43194d127b04bd4cbb4f78b9a2b32990ea"
+        },
+        "after": {
+          "items": 87,
+          "source_sha256": "a3db293ea8e107d1373212b63ed07ddd4e8c652fc9112e621919ad885ad961ed",
+          "items_sha256": "4a102e30bb61c253940e61294b2f9b43194d127b04bd4cbb4f78b9a2b32990ea"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360838",
+        "before": {
+          "items": 50,
+          "source_sha256": "88afd2ba553efc02e026242db459a02aa94a9adfa270d8bb7d700e61155d8325",
+          "items_sha256": "c2a1329c594f365e7df763a026fe1c174f81b8d713e1254e7747ff82cabb259e"
+        },
+        "after": {
+          "items": 50,
+          "source_sha256": "88afd2ba553efc02e026242db459a02aa94a9adfa270d8bb7d700e61155d8325",
+          "items_sha256": "c2a1329c594f365e7df763a026fe1c174f81b8d713e1254e7747ff82cabb259e"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360839",
+        "before": {
+          "items": 57,
+          "source_sha256": "7e612de5fef9f4c9522610471ed017831d50c33378b229e106c9d78cbe9a22c8",
+          "items_sha256": "64a90883271e926e85ebf597db571b418b5c3b15f21bd633284f735c7d197c7a"
+        },
+        "after": {
+          "items": 57,
+          "source_sha256": "7e612de5fef9f4c9522610471ed017831d50c33378b229e106c9d78cbe9a22c8",
+          "items_sha256": "64a90883271e926e85ebf597db571b418b5c3b15f21bd633284f735c7d197c7a"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360840",
+        "before": {
+          "items": 41,
+          "source_sha256": "f1b352bf2754b99aa98728be37b2096e2e48a086b559cedb743dddf001eda510",
+          "items_sha256": "f25d4e65f6375434dff006550b0ad07509cb4ccfe4a47cc35b9a025fb68198cb"
+        },
+        "after": {
+          "items": 41,
+          "source_sha256": "f1b352bf2754b99aa98728be37b2096e2e48a086b559cedb743dddf001eda510",
+          "items_sha256": "f25d4e65f6375434dff006550b0ad07509cb4ccfe4a47cc35b9a025fb68198cb"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360841",
+        "before": {
+          "items": 59,
+          "source_sha256": "81dd0d322f549b4df0db5e5e1a17bbd09a5079b8196bb61989c38aa7143782c1",
+          "items_sha256": "c02f00cb387bca7ae132cd78536fbdeb6eb539163406a523cb04e3109c9d2e9e"
+        },
+        "after": {
+          "items": 59,
+          "source_sha256": "81dd0d322f549b4df0db5e5e1a17bbd09a5079b8196bb61989c38aa7143782c1",
+          "items_sha256": "c02f00cb387bca7ae132cd78536fbdeb6eb539163406a523cb04e3109c9d2e9e"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360842",
+        "before": {
+          "items": 41,
+          "source_sha256": "0c19e81ad982b7843458f07dbce757150fd50423a5beeac43da6e584403de7e4",
+          "items_sha256": "ee35d0cc445a49feb6291117b2f5a3ae40973ebd10e23009557bef255186090f"
+        },
+        "after": {
+          "items": 41,
+          "source_sha256": "0c19e81ad982b7843458f07dbce757150fd50423a5beeac43da6e584403de7e4",
+          "items_sha256": "ee35d0cc445a49feb6291117b2f5a3ae40973ebd10e23009557bef255186090f"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360843",
+        "before": {
+          "items": 47,
+          "source_sha256": "712e6777d8eecf32f4b9317272a7e6b6a84187ee69cd9de73dea462fa7f3e650",
+          "items_sha256": "f64ef03bfd795f820bedd62e22906274d0e93c1b96cc5d404606f14aee64115d"
+        },
+        "after": {
+          "items": 47,
+          "source_sha256": "712e6777d8eecf32f4b9317272a7e6b6a84187ee69cd9de73dea462fa7f3e650",
+          "items_sha256": "f64ef03bfd795f820bedd62e22906274d0e93c1b96cc5d404606f14aee64115d"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360844",
+        "before": {
+          "items": 85,
+          "source_sha256": "82ed82f8a28fa3dc92e8905adb8e9e1d8808da91affc13d61e4ded0e70473b21",
+          "items_sha256": "1d387444a6ab7f7cf4ffc3c4e61810005de3a09b748cca942b050dc3bce7570d"
+        },
+        "after": {
+          "items": 85,
+          "source_sha256": "82ed82f8a28fa3dc92e8905adb8e9e1d8808da91affc13d61e4ded0e70473b21",
+          "items_sha256": "1d387444a6ab7f7cf4ffc3c4e61810005de3a09b748cca942b050dc3bce7570d"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360845",
+        "before": {
+          "items": 161,
+          "source_sha256": "c244d686d0610b9b8821d18450162cf50e9e282408eca7891564152a260cb097",
+          "items_sha256": "6ead87648e4e491dfa74322acc8cb7b6c322d75119a86f062c8a7a285b35db8f"
+        },
+        "after": {
+          "items": 161,
+          "source_sha256": "c244d686d0610b9b8821d18450162cf50e9e282408eca7891564152a260cb097",
+          "items_sha256": "6ead87648e4e491dfa74322acc8cb7b6c322d75119a86f062c8a7a285b35db8f"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360846",
+        "before": {
+          "items": 41,
+          "source_sha256": "d9355ce749d50b73ba1724e7027b86dd963ae8b9bbba059da90e24fe2d5fcfcf",
+          "items_sha256": "75d945cb3dd26520713164f721cee363159a3d300a9ff6befeec4d864f6c8167"
+        },
+        "after": {
+          "items": 41,
+          "source_sha256": "d9355ce749d50b73ba1724e7027b86dd963ae8b9bbba059da90e24fe2d5fcfcf",
+          "items_sha256": "75d945cb3dd26520713164f721cee363159a3d300a9ff6befeec4d864f6c8167"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360847",
+        "before": {
+          "items": 100,
+          "source_sha256": "d24fc86d59a7401256f1b7931f131d7caf8730e81f871919e1c52735dd8b4e33",
+          "items_sha256": "cb6728f9705cf9f870b7824c5de67f88f0547313c6fc6f01e1527f96b674afc5"
+        },
+        "after": {
+          "items": 100,
+          "source_sha256": "d24fc86d59a7401256f1b7931f131d7caf8730e81f871919e1c52735dd8b4e33",
+          "items_sha256": "cb6728f9705cf9f870b7824c5de67f88f0547313c6fc6f01e1527f96b674afc5"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360848",
+        "before": {
+          "items": 50,
+          "source_sha256": "d79db3a4696d58587f0d2c34b29034bb835f7790280dedcd7aa1631512016110",
+          "items_sha256": "d80d5e1a8927a1cae507084c77dc5f3c97b8cabf7ad6dd8d052722b54c8de63d"
+        },
+        "after": {
+          "items": 50,
+          "source_sha256": "d79db3a4696d58587f0d2c34b29034bb835f7790280dedcd7aa1631512016110",
+          "items_sha256": "d80d5e1a8927a1cae507084c77dc5f3c97b8cabf7ad6dd8d052722b54c8de63d"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360849",
+        "before": {
+          "items": 97,
+          "source_sha256": "74e881934ab7315f7c654322f84a98914bd8fc707c416098babdefd4e5b3bb7d",
+          "items_sha256": "93f7024484dfaa1a804573d8db4a59826d5136c4cb6bca9e647d32b3a2830447"
+        },
+        "after": {
+          "items": 97,
+          "source_sha256": "74e881934ab7315f7c654322f84a98914bd8fc707c416098babdefd4e5b3bb7d",
+          "items_sha256": "93f7024484dfaa1a804573d8db4a59826d5136c4cb6bca9e647d32b3a2830447"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360850",
+        "before": {
+          "items": 88,
+          "source_sha256": "1125eeb9705186ff067e873103a198b419b166511a7c69880baac1b2b83e3702",
+          "items_sha256": "a917bbc390450a205fcbad3e167ea4ca1abc8c7625926a9e4beda9288f5440f7"
+        },
+        "after": {
+          "items": 88,
+          "source_sha256": "1125eeb9705186ff067e873103a198b419b166511a7c69880baac1b2b83e3702",
+          "items_sha256": "a917bbc390450a205fcbad3e167ea4ca1abc8c7625926a9e4beda9288f5440f7"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-360851",
+        "before": {
+          "items": 59,
+          "source_sha256": "3f7d5efd5a43aad5deb8423c0adb04e86473c10e83cee202221ebfb16d1b2748",
+          "items_sha256": "24cd98b4b08918055a102909e861609716e800343626013f17935f12ccc4dab4"
+        },
+        "after": {
+          "items": 59,
+          "source_sha256": "3f7d5efd5a43aad5deb8423c0adb04e86473c10e83cee202221ebfb16d1b2748",
+          "items_sha256": "24cd98b4b08918055a102909e861609716e800343626013f17935f12ccc4dab4"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-370322",
+        "before": {
+          "items": 10,
+          "source_sha256": "1dee79a33003a530b0da980c9e44e0b5b07491a4c41b33a891e68d65a4b1e838",
+          "items_sha256": "2ec4544f586867333b1151e2f6ebba209ac3899a7181c723d32d72e1ed1561fa"
+        },
+        "after": {
+          "items": 10,
+          "source_sha256": "1dee79a33003a530b0da980c9e44e0b5b07491a4c41b33a891e68d65a4b1e838",
+          "items_sha256": "2ec4544f586867333b1151e2f6ebba209ac3899a7181c723d32d72e1ed1561fa"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-370323",
+        "before": {
+          "items": 14,
+          "source_sha256": "1453b2f040a5f76fadc9d6f5444b3e7ea88a290e96112e1b6e407ed5fd0f728b",
+          "items_sha256": "f73cb48dd308301398f388d47837deaebda870ddbbb3acf30f2c061830c2abdc"
+        },
+        "after": {
+          "items": 14,
+          "source_sha256": "1453b2f040a5f76fadc9d6f5444b3e7ea88a290e96112e1b6e407ed5fd0f728b",
+          "items_sha256": "f73cb48dd308301398f388d47837deaebda870ddbbb3acf30f2c061830c2abdc"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-370324",
+        "before": {
+          "items": 15,
+          "source_sha256": "a7c6e0624e8f5d07da07eceabfcfa21dad09d6547ade4d180856a2998d378da1",
+          "items_sha256": "5b12e732ec963fc0696ab6e43edc5a3395dc4ebd673af9e20e2b1bb5d63d136a"
+        },
+        "after": {
+          "items": 15,
+          "source_sha256": "a7c6e0624e8f5d07da07eceabfcfa21dad09d6547ade4d180856a2998d378da1",
+          "items_sha256": "5b12e732ec963fc0696ab6e43edc5a3395dc4ebd673af9e20e2b1bb5d63d136a"
+        }
+      },
+      {
+        "source_id": "to-dct-trilha-370325",
+        "before": {
+          "items": 19,
+          "source_sha256": "0bcee36096cdbf959f8947db91a742148f91e8d6bb245cf9359032d182b22c05",
+          "items_sha256": "55895cfd28f8b8b85a0a81543b37c6ae8ef297c9e7825dedacbe4575a688ecc8"
+        },
+        "after": {
+          "items": 19,
+          "source_sha256": "0bcee36096cdbf959f8947db91a742148f91e8d6bb245cf9359032d182b22c05",
+          "items_sha256": "55895cfd28f8b8b85a0a81543b37c6ae8ef297c9e7825dedacbe4575a688ecc8"
+        }
+      }
+    ],
+    "relations_excluding_target": {
+      "before_count": 13007,
+      "after_count": 13007,
+      "before_sha256": "23311d92a8e19e2e5a04e621dd073d522e399ec0b0b1329c6b5a28ddc783cffb",
+      "after_sha256": "23311d92a8e19e2e5a04e621dd073d522e399ec0b0b1329c6b5a28ddc783cffb"
+    },
+    "coverage_excluding_target": {
+      "before_count": 307,
+      "after_count": 307,
+      "before_sha256": "474de250869e7320d80b3f5c1e5b5443c08ab767532fd6c83975f354b5eefd65",
+      "after_sha256": "474de250869e7320d80b3f5c1e5b5443c08ab767532fd6c83975f354b5eefd65"
+    },
+    "actor_id": "curriculos-abertos:real-update-rehearsal",
+    "actor_type": "automated",
+    "method": "base-plus-source-update-v1: ordered complete payload SHA-256 with normalized JSON number spelling AND independent PostgreSQL JSONB value equality (including exact numeric precision), complete inventory/counts, immutable base and outside-target preservation"
+  },
+  "publication_event": {
+    "id": "2",
+    "publication_id": "ca-update-e93e7f67dee4718af70cc37f2fc0cedc",
+    "previous_id": "ca-77fb8076598b567e1ba3",
+    "actor_id": "isolated-global-update-publisher",
+    "actor_type": "automated",
+    "created_at": "2026-10-28T14:45:50.725Z"
+  },
+  "peak_rss_bytes": 424574976,
+  "exit_code": 0
+}

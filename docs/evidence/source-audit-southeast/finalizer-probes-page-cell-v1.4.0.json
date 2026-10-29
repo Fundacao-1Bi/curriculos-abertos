@@ -1,0 +1,1202 @@
+{
+  "executed_at": "2026-10-28T04:52:18.103448+00:00",
+  "actor_type": "automated",
+  "actor_id": "data_bncc_southeast",
+  "revision": "page-cell-v1.4.0",
+  "method": "Actual current extractor plus finalizer, real official source pages, independent visually inspected text/code/location/position expectations, isolated scoped caches. Does not prove complete source reconciliation or publication.",
+  "published_data_modified": false,
+  "summary": {
+    "passed": 14,
+    "failed_text_or_missing": 2
+  },
+  "passed": false,
+  "probes": [
+    {
+      "source_id": "sp-curriculo-eief-isbn",
+      "sha256": "f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500",
+      "pages": [
+        47,
+        85
+      ],
+      "items": 29,
+      "warnings": []
+    },
+    {
+      "source_id": "sp-curriculo-em-isbn",
+      "sha256": "e4c262968644a78181a308af6dea4f7d06260e4c232b61548479fe69b4d2da04",
+      "pages": [
+        75,
+        76
+      ],
+      "items": 10,
+      "warnings": []
+    },
+    {
+      "source_id": "sp-educacao-digital-midiatica-2026",
+      "sha256": "a59a5e3f64ce19a016eb93b24c90899c4af9eafcbeeae8a15ab125c3ef1eeb93",
+      "pages": [
+        28
+      ],
+      "items": 11,
+      "warnings": []
+    },
+    {
+      "source_id": "mg-crmg-eief-atualizada",
+      "sha256": "792857369c0c80dd87fff092137053e7a5cbed1c61fcbbd6caa6efbc072154ea",
+      "pages": [
+        72
+      ],
+      "items": 2,
+      "warnings": []
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "sha256": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
+      "pages": [
+        118
+      ],
+      "items": 7,
+      "warnings": []
+    },
+    {
+      "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+      "sha256": "5e720424ec0bc771440dc9b0b331fe6460ee0aa3c5aad0ee69e608ec1a1a1035",
+      "pages": [
+        72
+      ],
+      "items": 4,
+      "warnings": []
+    },
+    {
+      "source_id": "es-em-linguagens",
+      "sha256": "46fc39fb5834ac63b87d34410d775e797198ea0f2fc0c0c568ec59d3366f013d",
+      "pages": [
+        9
+      ],
+      "items": 8,
+      "warnings": []
+    },
+    {
+      "source_id": "es-em-l-ngua-portuguesa",
+      "sha256": "b3405b1e5ffeb82df9d2817e86e8949199c3ae14c9cd59daf69b69bac48773d8",
+      "pages": [
+        3
+      ],
+      "items": 6,
+      "warnings": []
+    },
+    {
+      "source_id": "es-ifa-cntmat",
+      "sha256": "e0600fd2fe84e7a62a79fea438a541fabc59adece3307fa6aa6694695f482f0a",
+      "pages": [
+        26
+      ],
+      "items": 10,
+      "warnings": []
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "sha256": "b915967926c621164aba46d5cbdbd74406a658410695199ef6ae3926de138bf6",
+      "pages": [
+        135
+      ],
+      "items": 10,
+      "warnings": []
+    },
+    {
+      "source_id": "rj-em-curriculo-referencial",
+      "sha256": "d5b0700da3a2ef3ca10ab46ec4e69691968f1b00b377ce7d12e8d83683fd38b8",
+      "pages": [
+        32
+      ],
+      "items": 3,
+      "warnings": []
+    },
+    {
+      "source_id": "rj-em-itinerarios",
+      "sha256": "77b9009c0880120860ca53b1743df572a5ed3dcf836149296bbbc7a08e978a76",
+      "pages": [
+        16
+      ],
+      "items": 8,
+      "warnings": []
+    },
+    {
+      "source_id": "mg-crmg-computacao-2025",
+      "sha256": "47f6a0e132e319635cae06aa74ffa9dd01f2bc98cb97956e9a976b13c4f1409d",
+      "pages": [
+        118
+      ],
+      "items": 5,
+      "warnings": []
+    }
+  ],
+  "checks": [
+    {
+      "source_id": "sp-curriculo-eief-isbn",
+      "code": "EI01EO01",
+      "page": 47,
+      "expected_text": "Perceber que suas ações têm efeitos nas outras crianças e nos adultos ao participar das situações de interações e brincadeiras.",
+      "expected_position": {
+        "stage": "EI",
+        "age_group": "Bebês (Zero a 1 ano e 6 meses)",
+        "component": "O eu, o outro e o nós"
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/sp-curriculo-eief-isbn-EI01EO01.png",
+      "passed": true,
+      "result": "passed",
+      "item_id": "ca:sp-curriculo-eief-isbn:acd1090b5f95b731f3ab",
+      "positions": [
+        {
+          "stage": "EI",
+          "component": "O eu, o outro e o nós",
+          "area": "Campos de experiências",
+          "years": null,
+          "year_label": null,
+          "age_group": "Bebês (zero a 1 ano e 6 meses)",
+          "period": null,
+          "position_origin": "national_code_convention",
+          "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+        }
+      ],
+      "issues": [],
+      "actual_text": "Perceber que suas ações têm efeitos nas outras crianças e nos adultos ao participar das situações de interações e brincadeiras.",
+      "evidence": [
+        {
+          "source_id": "sp-curriculo-eief-isbn",
+          "page": 47,
+          "printed_page": null,
+          "section": "Tabela 1, linha 17",
+          "excerpt": "Perceber que suas ações têm efeitos nas outras crianças e nos adultos ao participar das situações de interações e brincadeiras.",
+          "locator": "table:0/row:16/cell:0",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            33.51110967000326,
+            270.1699741908482,
+            194.70846322866586,
+            360.04998779296875
+          ],
+          "page_normalization": {
+            "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+            "original_rotation": 0,
+            "native_body_rotation_applied": 0,
+            "inverse_display_matrix": null,
+            "source_file_modified": false
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "sp-curriculo-eief-isbn",
+      "code": "EF01LP10A",
+      "page": 85,
+      "expected_text": "Nomear as letras do alfabeto.",
+      "expected_position": {
+        "stage": "EF",
+        "years": [
+          1
+        ],
+        "component": "Língua Portuguesa"
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/sp-curriculo-eief-isbn-p85.png",
+      "passed": true,
+      "result": "passed",
+      "item_id": "ca:sp-curriculo-eief-isbn:7f5cadbe79449436c7ae",
+      "positions": [
+        {
+          "stage": "EF",
+          "component": "Língua Portuguesa",
+          "area": null,
+          "years": [
+            1
+          ],
+          "year_label": "1º ano",
+          "age_group": null,
+          "period": null,
+          "position_origin": "documented_source_code_rule",
+          "position_note": "Bloco preservado conforme convenção do código nacional; não implica período letivo local.",
+          "position_evidence": {
+            "source_id": "sp-curriculo-eief-isbn",
+            "page": 30,
+            "printed_page": null,
+            "section": "Código alfanumérico para o Ensino Fundamental",
+            "excerpt": "A existência de letra após o número da habilidade representa que essa habilidade foi desdobrada a partir de uma habilidade da BNCC."
+          },
+          "position_rule_id": "sp-ef-sufixo-letra-desdobramento"
+        }
+      ],
+      "issues": [],
+      "actual_text": "Nomear as letras do alfabeto.",
+      "evidence": [
+        {
+          "source_id": "sp-curriculo-eief-isbn",
+          "page": 85,
+          "printed_page": null,
+          "section": "Tabela 1, linha 11",
+          "excerpt": "Nomear as letras do alfabeto.",
+          "locator": "table:0/row:10/cell:3",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            218.24529760024126,
+            345.5299835205078,
+            422.91842490748354,
+            407.08998107910156
+          ],
+          "page_normalization": {
+            "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+            "original_rotation": 0,
+            "native_body_rotation_applied": 0,
+            "inverse_display_matrix": null,
+            "source_file_modified": false
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "sp-curriculo-eief-isbn",
+      "code": "EF01LP06",
+      "page": 85,
+      "expected_text": "Segmentar oralmente as palavras.",
+      "expected_position": {
+        "stage": "EF",
+        "years": [
+          1
+        ],
+        "component": "Língua Portuguesa"
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/sp-curriculo-eief-isbn-p85.png",
+      "passed": true,
+      "result": "passed",
+      "item_id": "ca:sp-curriculo-eief-isbn:640af3d0e9a4155be50f",
+      "positions": [
+        {
+          "stage": "EF",
+          "component": "Língua Portuguesa",
+          "area": null,
+          "years": [
+            1
+          ],
+          "year_label": "1º ano",
+          "age_group": null,
+          "period": null,
+          "position_origin": "national_code_convention",
+          "position_note": "Bloco preservado conforme convenção do código nacional; não implica período letivo local."
+        }
+      ],
+      "issues": [],
+      "actual_text": "Segmentar oralmente as palavras.",
+      "evidence": [
+        {
+          "source_id": "sp-curriculo-eief-isbn",
+          "page": 85,
+          "printed_page": null,
+          "section": "Tabela 1, linha 15",
+          "excerpt": "Segmentar oralmente as palavras.",
+          "locator": "table:0/row:14/cell:3",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            218.24529760024126,
+            577.8699951171875,
+            422.91842490748354,
+            639.4599609375
+          ],
+          "page_normalization": {
+            "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+            "original_rotation": 0,
+            "native_body_rotation_applied": 0,
+            "inverse_display_matrix": null,
+            "source_file_modified": false
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "sp-curriculo-em-isbn",
+      "code": "EM13LP02A",
+      "page": 75,
+      "expected_text": "Estabelecer relações entre as partes do texto, tanto na produção como na leitura/escuta, considerando a construção composicional e o estilo do gênero.",
+      "expected_position": {
+        "stage": "EM",
+        "component": "Língua Portuguesa",
+        "years": null
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/sp-curriculo-em-isbn-p75.png",
+      "passed": true,
+      "result": "passed",
+      "item_id": "ca:sp-curriculo-em-isbn:0fa510716655e8319ea1",
+      "positions": [
+        {
+          "stage": "EM",
+          "component": "Língua Portuguesa",
+          "area": "Linguagens e suas Tecnologias",
+          "years": null,
+          "year_label": null,
+          "age_group": null,
+          "period": null,
+          "position_origin": "documented_source_code_rule",
+          "position_note": "O código EM não determina série; a fonte deve explicitar o posicionamento.",
+          "position_evidence": {
+            "source_id": "sp-curriculo-em-isbn",
+            "page": 49,
+            "printed_page": null,
+            "section": "Composição do código alfanumérico da Formação Geral Básica",
+            "excerpt": "Para as habilidades que foram desmembradas inclui-se uma letra no final do código, por exemplo, EM13LGG103A e EM13LGG103B, o que significa que a habilidade 3, da competência 1, foi desmembrada em duas habilidades (A e B)."
+          },
+          "position_rule_id": "sp-em-sufixo-letra-desmembramento"
+        }
+      ],
+      "issues": [],
+      "actual_text": "Estabelecer relações entre as partes do texto, tanto na produção como na leitura/escuta, considerando a construção composicional e o estilo do gênero.",
+      "evidence": [
+        {
+          "source_id": "sp-curriculo-em-isbn",
+          "page": 75,
+          "printed_page": null,
+          "section": "Tabela 1, linha 3",
+          "excerpt": "Estabelecer relações entre as partes do texto, tanto na produção como na leitura/escuta, considerando a construção composicional e o estilo do gênero.",
+          "locator": "table:0/row:2/cell:1",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            205.45999908447266,
+            442.90000915527344,
+            389.8100128173828,
+            535.4880004882813
+          ],
+          "page_normalization": {
+            "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+            "original_rotation": 0,
+            "native_body_rotation_applied": 0,
+            "inverse_display_matrix": null,
+            "source_file_modified": false
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "sp-curriculo-em-isbn",
+      "code": "EM13LP02B",
+      "page": 75,
+      "expected_text": "Reconhecer adequadamente elementos e recursos coesivos diversos que contribuam. para a coerência, a continuidade do texto e sua progressão temática, organizando informações, tendo em vista as condições de produção.",
+      "expected_position": {
+        "stage": "EM",
+        "component": "Língua Portuguesa",
+        "years": null
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/sp-curriculo-em-isbn-p75.png",
+      "passed": true,
+      "result": "passed",
+      "item_id": "ca:sp-curriculo-em-isbn:9b543d0a615311f82055",
+      "positions": [
+        {
+          "stage": "EM",
+          "component": "Língua Portuguesa",
+          "area": "Linguagens e suas Tecnologias",
+          "years": null,
+          "year_label": null,
+          "age_group": null,
+          "period": null,
+          "position_origin": "documented_source_code_rule",
+          "position_note": "O código EM não determina série; a fonte deve explicitar o posicionamento.",
+          "position_evidence": {
+            "source_id": "sp-curriculo-em-isbn",
+            "page": 49,
+            "printed_page": null,
+            "section": "Composição do código alfanumérico da Formação Geral Básica",
+            "excerpt": "Para as habilidades que foram desmembradas inclui-se uma letra no final do código, por exemplo, EM13LGG103A e EM13LGG103B, o que significa que a habilidade 3, da competência 1, foi desmembrada em duas habilidades (A e B)."
+          },
+          "position_rule_id": "sp-em-sufixo-letra-desmembramento"
+        }
+      ],
+      "issues": [],
+      "actual_text": "Reconhecer adequadamente elementos e recursos coesivos diversos que contribuam. para a coerência, a continuidade do texto e sua progressão temática, organizando informações, tendo em vista as condições de produção.",
+      "evidence": [
+        {
+          "source_id": "sp-curriculo-em-isbn",
+          "page": 75,
+          "printed_page": null,
+          "section": "Tabela 1, linha 3",
+          "excerpt": "Reconhecer adequadamente",
+          "locator": "table:0/row:2/cell:1",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            205.45999908447266,
+            442.90000915527344,
+            389.8100128173828,
+            535.4880004882813
+          ],
+          "page_normalization": {
+            "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+            "original_rotation": 0,
+            "native_body_rotation_applied": 0,
+            "inverse_display_matrix": null,
+            "source_file_modified": false
+          }
+        },
+        {
+          "source_id": "sp-curriculo-em-isbn",
+          "page": 76,
+          "printed_page": null,
+          "section": "Continuação de célula na página seguinte",
+          "excerpt": "elementos e recursos coesivos diversos que contribuam. para a coerência, a continuidade do texto e sua progressão temática, organizando informações, tendo em vista as condições de produção.",
+          "locator": "table:0/row:0/cell:1",
+          "bbox": [
+            205.45999908447266,
+            85.29201049804688,
+            389.8100128173828,
+            223.84999084472656
+          ],
+          "method": "cross-page-cell-continuation"
+        }
+      ]
+    },
+    {
+      "source_id": "sp-educacao-digital-midiatica-2026",
+      "code": "EI03CO01",
+      "page": 28,
+      "expected_text": "Reconhecer padrão de repetição em sequência de sons, movimentos e desenhos.",
+      "expected_position": {
+        "stage": "EI",
+        "component": "Computação"
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/sp-educacao-digital-midiatica-2026-EI03CO01.png",
+      "passed": true,
+      "result": "passed",
+      "item_id": "ca:sp-educacao-digital-midiatica-2026:d410665196345c5ea7c2",
+      "positions": [
+        {
+          "stage": "EI",
+          "component": "Computação",
+          "area": "Campos de experiências",
+          "years": null,
+          "year_label": null,
+          "age_group": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+          "period": null,
+          "position_origin": "national_code_convention",
+          "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+        }
+      ],
+      "issues": [],
+      "actual_text": "Reconhecer padrão de repetição em sequência de sons, movimentos e desenhos.",
+      "evidence": [
+        {
+          "source_id": "sp-educacao-digital-midiatica-2026",
+          "page": 28,
+          "printed_page": null,
+          "section": "Tabela 1, linha 2",
+          "excerpt": "Reconhecer padrão de repetição em sequência de sons, movimentos e desenhos.",
+          "locator": "table:0/row:1/cell:1",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            272.5465087890625,
+            246.27001953125,
+            615.419677734375,
+            360.8699951171875
+          ],
+          "page_normalization": {
+            "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+            "original_rotation": 0,
+            "native_body_rotation_applied": 0,
+            "inverse_display_matrix": null,
+            "source_file_modified": false
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "mg-crmg-eief-atualizada",
+      "code": "EI01EO07MG",
+      "page": 72,
+      "expected_text": "Construir progressivamente sua identidade pessoal, desenvolvendo imagem positiva de si mesma, sentimento de autoestima, autonomia e confiança.",
+      "expected_position": {
+        "stage": "EI",
+        "age_group": "Bebês (zero a 1 ano e 6 meses)",
+        "component": "O eu, o outro e o nós"
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/mg-crmg-eief-atualizada-p72.png",
+      "passed": false,
+      "result": "failed_text_or_missing",
+      "actual_candidates": [
+        {
+          "id": "ca:mg-crmg-eief-atualizada:250cc6ad1ab8f9697ba0",
+          "curriculum_id": "mg:mg-crmg-eief-atualizada",
+          "source_id": "mg-crmg-eief-atualizada",
+          "uf": "MG",
+          "code": "EI01EO07MG",
+          "text": "Construir progres- sivamente sua identidade pessoal, desenvolvendo imagem positiva de si mesma, sentimento de autoestima, autonomia e confiança.",
+          "normalized_text": "construir progressivamente sua identidade pessoal, desenvolvendo imagem positiva de si mesma, sentimento de autoestima, autonomia e confianca.",
+          "editorial_note": null,
+          "kind": "objetivo_aprendizagem",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EI",
+              "component": "O eu, o outro e o nós",
+              "area": "Campos de experiências",
+              "years": null,
+              "year_label": null,
+              "age_group": "Bebês (zero a 1 ano e 6 meses)",
+              "period": null,
+              "position_origin": "national_code_convention",
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido."
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "mg-crmg-eief-atualizada",
+              "page": 72,
+              "printed_page": null,
+              "section": "Tabela 1, linha 11",
+              "excerpt": "Construir progres- sivamente sua identidade pessoal, desenvolvendo imagem positiva de si mesma, sentimento de autoestima, autonomia e confiança.",
+              "locator": "table:0/row:10/cell:1",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                182.38306087917752,
+                309.58001708984375,
+                270.4125044080946,
+                789.875
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_documentary_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_documentary_review",
+              "at": "2026-10-28T04:52:14.458046+00:00"
+            }
+          ],
+          "source_context": {
+            "table_row": {
+              "1": "(EI01EO07MG)\nConstruir progres-\nsivamente sua\nidentidade pessoal,\ndesenvolvendo\nimagem positiva de\nsi mesma,\nsentimento de\nautoestima,\nautonomia e\nconfiança.",
+              "2": "Os bebês manifestam necessidades,\né importante que o professor(a)\naproveite as situações cotidianas\npara contribuir no processo de au-\ntoconhecimento delas, ajudando-as\na perceber seus limites, possibilida-\ndes e intervindo na perspectiva de\nque construam uma identidade au-\ntônoma e uma imagem positiva de\nsi mesma.\nNesta fase os bebês utilizam-se dos\nobjetos de transição, que têm como\nfunção protegê-los e acalmá-los,\ntransmitindo-lhes segurança e con-\nforto. São usados pelos bebês e\ncrianças bem pequenas e ganham\nimportância na medida em que as\najudam a adquirir autonomia e in-\ndependência ao separar-se dos seus\npais, ao adormecer e/ou em outros\nmomentos em que se sentem fragi-\nlizadas.",
+              "3": "- Atender quando cha-\nmado pelo nome.\n- Valorizar, reconhecer a\nimportância do seu nome\nna construção de sua\nidentidade pessoal e so-\ncial.\n- Estabelecer e ampliar as\nrelações afetivas.\n- Conviver em grupo e\ndesenvolver e criar víncu-\nlos afetivos."
+            },
+            "column_headers": {
+              "0": " CAMPO DE EXPERIÊNCIAS: O EU, O OUTRO E O NÓS ",
+              "1": "  ",
+              "2": "  ",
+              "3": "  "
+            },
+            "source_column_index": 1,
+            "source_table_index": 0
+          },
+          "code_search_form": "EI01EO07MG"
+        }
+      ]
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13LGG106MG",
+      "page": 118,
+      "expected_text": "Analisar o tratamento linguístico da informação nos diversos gêneros textuais/ discursivos e digitais e seus suportes e plataformas (revistas, jornais, sites, blogs, etc.), de forma produtiva e autônoma, considerando suas relações com o público-alvo.",
+      "expected_position": {
+        "stage": "EM",
+        "component": "Linguagens e suas Tecnologias",
+        "years": null
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/mg-crmg-em-EM13LGG106MG.png",
+      "passed": true,
+      "result": "passed",
+      "item_id": "ca:mg-crmg-em:fe3f97a544a740048ee8",
+      "positions": [
+        {
+          "stage": "EM",
+          "component": null,
+          "area": "Linguagens e suas Tecnologias",
+          "years": null,
+          "year_label": null,
+          "age_group": null,
+          "period": null,
+          "position_origin": "national_code_convention",
+          "position_note": "O código EM não determina série; a fonte deve explicitar o posicionamento."
+        }
+      ],
+      "issues": [],
+      "actual_text": "Analisar o tratamento linguístico da informação nos diversos gêneros textuais/ discursivos e digitais e seus suportes e plataformas (revistas, jornais, sites, blogs, etc.), de forma produtiva e autônoma, considerando suas relações com o público-alvo.",
+      "evidence": [
+        {
+          "source_id": "mg-crmg-em",
+          "page": 118,
+          "printed_page": null,
+          "section": "Tabela 1, linha 2",
+          "excerpt": "Analisar o tratamento linguístico da informação nos diversos gêneros textuais/ discursivos e digitais e seus suportes e plataformas (revistas, jornais, sites, blogs, etc.), de forma produtiva e autônoma, considerando suas relações com o público-alvo.",
+          "locator": "table:0/row:1/cell:0",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            85.36245962289664,
+            180.5599822998047,
+            211.10696854129915,
+            468.38197631835936
+          ],
+          "page_normalization": {
+            "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+            "original_rotation": 0,
+            "native_body_rotation_applied": 0,
+            "inverse_display_matrix": null,
+            "source_file_modified": false
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+      "code": "EI01EO01/ES",
+      "page": 72,
+      "expected_text": "Relacionar-se com o outro, percebendo que suas ações têm efeitos nas outras crianças e nos adultos.",
+      "expected_position": {
+        "stage": "EI",
+        "age_group": "Bebês (Zero a 1 ano e 6 meses)",
+        "component": "O eu, o outro e o nós"
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/es-curriculo-es-2020-vol-01-educacao-infantil-rev2026-p72.png",
+      "passed": true,
+      "result": "passed",
+      "item_id": "ca:es-curriculo-es-2020-vol-01-educacao-infantil-rev2026:1a3dc120fcaedb12e5cf",
+      "positions": [
+        {
+          "stage": "EI",
+          "component": "O eu, o outro e o nós",
+          "area": "Campos de experiências",
+          "years": null,
+          "year_label": null,
+          "age_group": "Bebês (Zero a 1 ano e 6 meses)",
+          "period": null,
+          "position_origin": "source_document_physical_row",
+          "position_evidence": [
+            {
+              "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+              "page": 72,
+              "section": "Campo de experiência e grupo etário da linha física",
+              "excerpt": "Campo de Experiência “O Eu, o Outro e o Nós”"
+            },
+            {
+              "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+              "page": 72,
+              "section": "Grupo etário da mesma linha física",
+              "excerpt": "Bebês\n(Zero a 1 ano e 6 meses)",
+              "bbox": [
+                57.013555738661026,
+                137.39979044596353,
+                168.84017181396484,
+                248.27979532877603
+              ]
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "actual_text": "Relacionar-se com o outro, percebendo que suas ações têm efeitos nas outras crianças e nos adultos.",
+      "evidence": [
+        {
+          "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+          "page": 72,
+          "printed_page": null,
+          "section": null,
+          "excerpt": "Relacionar-se com o outro, percebendo que suas ações têm efeitos nas outras crianças e nos adultos.",
+          "locator": "layout:es-ei-physical-code-and-objective-row/table:0/row:1",
+          "method": "declared-separate-ruled-row",
+          "bbox": [
+            233.9,
+            137.79979044596354,
+            492.6,
+            247.87979532877603
+          ],
+          "coordinate_space": "display_pdf_after_remove_rotation",
+          "page_normalization": {
+            "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+            "original_rotation": 0,
+            "native_body_rotation_applied": 0,
+            "inverse_display_matrix": null,
+            "source_file_modified": false
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "es-em-linguagens",
+      "code": "EM13LGG101ARTa/ES",
+      "page": 9,
+      "expected_text": "Compreender e analisar processos de produção e circulação de discursos das artes visuais, do audiovisual, da dança, do teatro, das artes circenses e da música, para fazer escolhas fundamentadas em função de interesses pessoais e coletivos, contribuindo para a construção de identidades e de projetos de vida.",
+      "expected_position": {
+        "stage": "EM",
+        "years": [
+          1
+        ],
+        "component": "Arte"
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/es-em-linguagens-EM13LGG101ART.png",
+      "passed": true,
+      "result": "passed",
+      "item_id": "ca:es-em-linguagens:6db12bdc6a37ddb31448",
+      "positions": [
+        {
+          "stage": "EM",
+          "component": "Arte",
+          "area": "Linguagens e suas Tecnologias",
+          "years": [
+            1
+          ],
+          "year_label": "1ª Série",
+          "age_group": null,
+          "period": null,
+          "position_origin": "source_document_context",
+          "position_evidence": [
+            {
+              "source_id": "es-em-linguagens",
+              "page": 9,
+              "section": "Cabeçalho/rodapé curricular explícito",
+              "excerpt": "Linguagens– Arte - 1ª Série do Ensino Médio",
+              "verification": "Full document scanned for this explicit component and school-year heading; page-scoped assignment only."
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "actual_text": "Compreender e analisar processos de produção e circulação de discursos das artes visuais, do audiovisual, da dança, do teatro, das artes circenses e da música, para fazer escolhas fundamentadas em função de interesses pessoais e coletivos, contribuindo para a construção de identidades e de projetos de vida.",
+      "evidence": [
+        {
+          "source_id": "es-em-linguagens",
+          "page": 9,
+          "printed_page": null,
+          "section": null,
+          "excerpt": "Compreender e analisar processos de produção e circulação de discursos das artes visuais, do audiovisual, da dança, do teatro, das artes circenses e da música, para fazer escolhas fundamentadas em função de interesses pessoais e coletivos, contribuindo para a construção de identidades e de projetos de vida.",
+          "locator": "layout:es-em-linguagens-ruled-code-and-text-columns/anchor:0",
+          "method": "declared-document-columns",
+          "bbox": [
+            291.5,
+            171.1899871826172,
+            497,
+            245.58995056152344
+          ],
+          "coordinate_space": "display_pdf_after_remove_rotation",
+          "page_normalization": {
+            "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+            "original_rotation": 0,
+            "native_body_rotation_applied": 0,
+            "inverse_display_matrix": null,
+            "source_file_modified": false
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "es-em-l-ngua-portuguesa",
+      "code": "EM13LP01",
+      "page": 3,
+      "expected_text": "Relacionar o texto, tanto na produção como na leitura/escuta, com suas condições de produção e seu contexto sócio-histórico de circulação (leitor/audiência previstos, objetivos, pontos de vista e perspectivas, papel social do autor, época, gênero do discurso etc.), de forma a ampliar as possibilidades de construção de sentidos e de análise crítica e produzir textos adequados a diferentes situações.",
+      "expected_position": {
+        "stage": "EM",
+        "years": [
+          1
+        ],
+        "component": "Língua Portuguesa"
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/es-em-l-ngua-portuguesa-EM13LP01.png",
+      "passed": true,
+      "result": "passed",
+      "item_id": "ca:es-em-l-ngua-portuguesa:43435c2e9eb1ade2f635",
+      "positions": [
+        {
+          "stage": "EM",
+          "component": "Língua Portuguesa",
+          "area": "Linguagens e suas Tecnologias",
+          "years": [
+            1
+          ],
+          "year_label": "1ª Série",
+          "age_group": null,
+          "period": null,
+          "position_origin": "source_document_context",
+          "position_evidence": [
+            {
+              "source_id": "es-em-l-ngua-portuguesa",
+              "page": 3,
+              "section": "Cabeçalho/rodapé curricular explícito",
+              "excerpt": "Linguagens - Língua Portuguesa – 1ª Série do Ensino Médio",
+              "verification": "Full document scanned for this explicit component and school-year heading; page-scoped assignment only."
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "actual_text": "Relacionar o texto, tanto na produção como na leitura/escuta, com suas condições de produção e seu contexto sócio-histórico de circulação (leitor/audiência previstos, objetivos, pontos de vista e perspectivas, papel social do autor, época, gênero do discurso etc.), de forma a ampliar as possibilidades de construção de sentidos e de análise crítica e produzir textos adequados a diferentes situações.",
+      "evidence": [
+        {
+          "source_id": "es-em-l-ngua-portuguesa",
+          "page": 3,
+          "printed_page": null,
+          "section": "Tabela 1, linha 2",
+          "excerpt": "Relacionar o texto, tanto na produção como na leitura/escuta, com suas condições de produção e seu contexto sócio-histórico de circulação (leitor/audiência previstos, objetivos, pontos de vista e perspectivas, papel social do autor, época, gênero do discurso etc.), de forma a ampliar as possibilidades de construção de sentidos e de análise crítica e produzir textos adequados a diferentes situações.",
+          "locator": "table:0/row:1/cell:4",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            260.1645050048828,
+            131.5999755859375,
+            325.34339447021483,
+            245.36248779296875
+          ],
+          "page_normalization": {
+            "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+            "original_rotation": 0,
+            "native_body_rotation_applied": 0,
+            "inverse_display_matrix": null,
+            "source_file_modified": false
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "es-ifa-cntmat",
+      "code": "EMIFACNT201",
+      "page": 26,
+      "expected_text": "Utilizar os conhecimentos das Ciências da Natureza na análise de desafios contemporâneos, apontando soluções relacionadas à sustentabilidade ambiental, saúde individual e coletiva, transição energética e cadeias produtivas;",
+      "expected_position": {
+        "stage": "EM",
+        "component": "Ciências da Natureza e suas Tecnologias",
+        "years": null
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/es-ifa-cntmat-EMIFACNT201.png",
+      "passed": true,
+      "result": "passed",
+      "item_id": "ca:es-ifa-cntmat:fe649be0c0ac25264be0",
+      "positions": [
+        {
+          "stage": "EM",
+          "component": null,
+          "area": "Ciências da Natureza e suas Tecnologias",
+          "years": null,
+          "year_label": null,
+          "age_group": null,
+          "period": null,
+          "position_origin": "source_document_context",
+          "position_evidence": [
+            {
+              "source_id": "es-ifa-cntmat",
+              "page": 25,
+              "section": "Competências e habilidades específicas das áreas",
+              "excerpt": "8.1 CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS",
+              "verification": "Original numbered area heading and its physical coded rows checked up to the next area/table section. Exact code/page scopes avoid assigning one area to mixed narrative page27. No school year assigned."
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "actual_text": "Utilizar os conhecimentos das Ciências da Natureza na análise de desafios contemporâneos, apontando soluções relacionadas à sustentabilidade ambiental, saúde individual e coletiva, transição energética e cadeias produtivas;",
+      "evidence": [
+        {
+          "source_id": "es-ifa-cntmat",
+          "page": 26,
+          "printed_page": null,
+          "section": null,
+          "excerpt": "Utilizar os conhecimentos das Ciências da Natureza na análise de desafios contemporâneos, apontando soluções relacionadas à sustentabilidade ambiental, saúde individual e coletiva, transição energética e cadeias produtivas;",
+          "locator": "anchor:1/y:195.61",
+          "method": "pymupdf-coordinate-candidate",
+          "bbox": [
+            62.58399963378906,
+            193.6148223876953,
+            576.4000244140625,
+            235.6947784423828
+          ],
+          "page_normalization": {
+            "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+            "original_rotation": 0,
+            "native_body_rotation_applied": 0,
+            "inverse_display_matrix": null,
+            "source_file_modified": false
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF01LP01",
+      "page": 135,
+      "expected_text": "Reconhecer que textos são lidos e escritos da esquerda para a direita e de cima para baixo da página.",
+      "expected_position": {
+        "stage": "EF",
+        "years": [
+          1
+        ],
+        "component": "Língua Portuguesa"
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/rj-doc-eief-2019-EF01LP01.png",
+      "passed": true,
+      "result": "passed",
+      "item_id": "ca:rj-doc-eief-2019:557f82a8b1f2552a4ee1",
+      "positions": [
+        {
+          "stage": "EF",
+          "component": "Língua Portuguesa",
+          "area": null,
+          "years": [
+            1
+          ],
+          "year_label": "1º ano",
+          "age_group": null,
+          "period": null,
+          "position_origin": "national_code_convention",
+          "position_note": "Bloco preservado conforme convenção do código nacional; não implica período letivo local."
+        }
+      ],
+      "issues": [],
+      "actual_text": "Reconhecer que textos são lidos e escritos da esquerda para a direita e de cima para baixo da página.",
+      "evidence": [
+        {
+          "source_id": "rj-doc-eief-2019",
+          "page": 135,
+          "printed_page": null,
+          "section": "Tabela 1, linha 3",
+          "excerpt": "Reconhecer que textos são lidos e escritos da esquerda para a direita e de cima para baixo da página.",
+          "locator": "table:0/row:2/cell:9",
+          "method": "pymupdf-ruled-cell",
+          "bbox": [
+            412.55001576741535,
+            126.58998107910156,
+            567.076952063519,
+            187.82000732421875
+          ],
+          "page_normalization": {
+            "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+            "original_rotation": 0,
+            "native_body_rotation_applied": 0,
+            "inverse_display_matrix": null,
+            "source_file_modified": false
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "rj-em-curriculo-referencial",
+      "code": "EM13LP01",
+      "page": 32,
+      "expected_text": "Relacionar o texto, tanto na produção como na leitura/escuta, com suas condições de produção e seu contexto sócio-histórico de circulação (leitor/audiência previstos, objetivos, pontos de vista e perspectivas, papel social do autor, época, gênero do discurso etc.), de forma a ampliar as possibilidades de construção de sentidos e de análise crítica e produzir textos adequados a diferentes situações.",
+      "expected_position": {
+        "stage": "EM",
+        "years": [
+          1
+        ],
+        "component": "Língua Portuguesa",
+        "period": "1º Bimestre"
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/rj-em-curriculo-referencial-EM13LP01.png",
+      "passed": false,
+      "result": "failed_text_or_missing",
+      "actual_candidates": [
+        {
+          "id": "ca:rj-em-curriculo-referencial:5cff8346b6cff6c21e79",
+          "curriculum_id": "rj:rj-em-curriculo-referencial",
+          "source_id": "rj-em-curriculo-referencial",
+          "uf": "RJ",
+          "code": "EM13LP01",
+          "text": "possibilidades literária e os campos de Tecnologias: social,",
+          "normalized_text": "possibilidades literaria e os campos de tecnologias: social,",
+          "editorial_note": null,
+          "kind": "habilidade",
+          "parent_id": null,
+          "positions": [
+            {
+              "stage": "EM",
+              "component": "Língua Portuguesa",
+              "area": "Linguagens e suas Tecnologias",
+              "years": [
+                1
+              ],
+              "year_label": "1ª Série",
+              "age_group": null,
+              "period": "1º Bimestre",
+              "position_origin": "source_document_context",
+              "position_evidence": [
+                {
+                  "source_id": "rj-em-curriculo-referencial",
+                  "page": 32,
+                  "section": "Cabeçalho/rodapé curricular explícito",
+                  "excerpt": "Componente Curricular: Língua Portuguesa                        1ª Série – Ensino Médio",
+                  "verification": "Full document scanned for this explicit component and school-year heading; page-scoped assignment only."
+                },
+                {
+                  "source_id": "rj-em-curriculo-referencial",
+                  "page": 32,
+                  "section": "Período curricular explícito",
+                  "excerpt": "1º Bimestre"
+                },
+                {
+                  "source_id": "rj-em-curriculo-referencial",
+                  "page": 5,
+                  "section": "Apresentação — organização explícita das quatro áreas",
+                  "excerpt": "Na Área de Linguagens e Suas Tecnologias, destacam-se os componentes curriculares de Artes, Educação\nFísica, Língua Inglesa e Língua Portuguesa. A Matemática é abordada na Área de Matemática e Suas Tecnologias,\nenquanto a Área de Ciências da Natureza e Suas Tecnologias engloba Biologia, Física e Química. Por sua vez, a Área\nde Ciências Humanas e Sociais Aplicadas contempla Filosofia, Geografia, História e Sociologia.",
+                  "verification": "Area follows original explicit component listing. Artes/Arte display alias is also used in original introduction page8."
+                }
+              ]
+            }
+          ],
+          "evidence": [
+            {
+              "source_id": "rj-em-curriculo-referencial",
+              "page": 32,
+              "printed_page": null,
+              "section": null,
+              "excerpt": "possibilidades literária e os campos de Tecnologias: social,",
+              "locator": "anchor:2/y:396.85",
+              "method": "pymupdf-coordinate-candidate",
+              "bbox": [
+                246.5104522705078,
+                394.8547668457031,
+                314.4704284667969,
+                571.0
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 90,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ],
+          "extraction_revision": "page-cell-v1.4.0",
+          "extraction_status": "pending_layout_review",
+          "technical_validation_status": "source_locator_available_documentary_validation_pending",
+          "pedagogical_review_status": "not_reviewed",
+          "publication_status": "extracted_candidate",
+          "canonical_text_policy": "PDF line wraps normalized; spelling/punctuation unaltered",
+          "review_events": [
+            {
+              "actor_type": "automated",
+              "actor_id": "curriculos-abertos:page-cell-extractor",
+              "method": "page-cell-v1.4.0",
+              "result": "pending_layout_review",
+              "at": "2026-10-28T04:52:17.027490+00:00"
+            }
+          ],
+          "extraction_flags": [
+            "unruled_layout_requires_review"
+          ],
+          "code_search_form": "EM13LP01"
+        }
+      ]
+    },
+    {
+      "source_id": "rj-em-itinerarios",
+      "code": "EM13LGG101",
+      "page": 16,
+      "expected_text": "Compreender e analisar processos de produção e circulação de discursos, nas diferentes linguagens, para fazer escolhas fundamentadas em função de interesses pessoais e coletivos.",
+      "expected_position": {
+        "stage": "EM",
+        "component": "Linguagens e suas Tecnologias",
+        "years": null
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/rj-em-itinerarios-EM13LGG101.png",
+      "passed": true,
+      "result": "passed",
+      "item_id": "ca:rj-em-itinerarios:f263ef32073a1dd00161",
+      "positions": [
+        {
+          "stage": "EM",
+          "component": null,
+          "area": "Linguagens e suas Tecnologias",
+          "years": null,
+          "year_label": null,
+          "age_group": null,
+          "period": null,
+          "position_origin": "national_code_convention",
+          "position_note": "O código EM não determina série; a fonte deve explicitar o posicionamento."
+        }
+      ],
+      "issues": [],
+      "actual_text": "Compreender e analisar processos de produção e circulação de discursos, nas diferentes linguagens, para fazer escolhas fundamentadas em função de interesses pessoais e coletivos.",
+      "evidence": [
+        {
+          "source_id": "rj-em-itinerarios",
+          "page": 16,
+          "printed_page": null,
+          "section": null,
+          "excerpt": "Compreender e analisar processos de produção e circulação de discursos, nas diferentes linguagens, para fazer escolhas fundamentadas em função de interesses pessoais e coletivos.",
+          "locator": "table:0/column:109.7-499.3/anchor:0",
+          "method": "ruled-column-continuation-recovery",
+          "bbox": [
+            109.66000366210938,
+            112.52796936035156,
+            499.29400634765625,
+            175.56800842285156
+          ],
+          "page_normalization": {
+            "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+            "original_rotation": 0,
+            "native_body_rotation_applied": 0,
+            "inverse_display_matrix": null,
+            "source_file_modified": false
+          }
+        }
+      ]
+    },
+    {
+      "source_id": "mg-crmg-computacao-2025",
+      "code": "EM13CO01",
+      "page": 118,
+      "expected_text": "Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+      "expected_position": {
+        "stage": "EM",
+        "component": "Computação",
+        "years": null
+      },
+      "screenshot": "docs/evidence/source-audit-southeast/mg-crmg-computacao-2025-p118.png",
+      "passed": true,
+      "result": "passed",
+      "item_id": "ca:mg-crmg-computacao-2025:3663359c83ee171eef03",
+      "positions": [
+        {
+          "stage": "EM",
+          "component": "Computação",
+          "area": "Computação",
+          "years": null,
+          "year_label": null,
+          "age_group": null,
+          "period": null,
+          "position_origin": "national_code_convention",
+          "position_note": "O código EM não determina série; a fonte deve explicitar o posicionamento."
+        }
+      ],
+      "issues": [],
+      "actual_text": "Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+      "evidence": [
+        {
+          "source_id": "mg-crmg-computacao-2025",
+          "page": 118,
+          "printed_page": null,
+          "section": null,
+          "excerpt": "Explorar e construir a solução de problemas por meio da reutilização de partes de soluções existentes.",
+          "locator": "layout:mg-computacao-em-anexo3-first-column/anchor:0",
+          "method": "declared-document-columns",
+          "bbox": [
+            66,
+            271.5733642578125,
+            225,
+            384.1333312988281
+          ],
+          "coordinate_space": "display_pdf_after_remove_rotation",
+          "page_normalization": {
+            "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+            "original_rotation": 0,
+            "native_body_rotation_applied": 0,
+            "inverse_display_matrix": null,
+            "source_file_modified": false
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2593 @@
+{
+  "adapter_path": "data/manifests/uncoded/ro-eletivas-skill-fields-v2.json",
+  "adapter_sha256": "bcbdf02dd68566aeec6b2e22ad51f192454ea81c3e50f74854c4d3ec9c8797fd",
+  "all_primary_code_occurrences": 332,
+  "base415_preserved": true,
+  "binding_ready": true,
+  "code_only_references": 58,
+  "coded_statements": 274,
+  "command": "var/venv-pipeline/bin/python docs/evidence/source-audit-ro/build_eletivas_skills.py",
+  "engine": {
+    "pymupdf": "1.26.7",
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "kinds": {
+    "capacidade": 4,
+    "competencia_especifica": 1,
+    "competencia_geral": 1,
+    "grupo_curricular": 62,
+    "habilidade": 274,
+    "habilidade_local_sem_codigo": 40,
+    "objetivo_aprendizagem": 157,
+    "objetivo_formativo": 75,
+    "referencia_no_documento": 58,
+    "secao_normativa": 137
+  },
+  "ready": false,
+  "real_finalizer_schema_records": 809,
+  "reconciled": false,
+  "records": 809,
+  "remaining_scope": [
+    "Full competency-field atomization, objects/axis/context/rubric and introductory chapter structure still pending."
+  ],
+  "skill_fields": [
+    {
+      "bbox": [
+        105.76464080810547,
+        1174.8001708984375,
+        951.734619140625,
+        1389.2860107421875
+      ],
+      "field_key": "projeto-LGG1-p24-campo-3",
+      "native_sha256": "47421e1d19a1f9ddb85e48bed268e65defddac3b8abac5e7b2a5aaaec4470f51",
+      "page": 24,
+      "project": "LGG1",
+      "units": [
+        {
+          "code": "EM13CNT207",
+          "key": "projeto-LGG1-p24-campo-3-codigo-1-EM13CNT207",
+          "kind": "habilidade",
+          "text_sha256": "5d8d0ecac95188953101d523a84f4c2eb6cea866f3a7727741ca1510e715f0f8"
+        },
+        {
+          "code": "EM13LGG503",
+          "key": "projeto-LGG1-p24-campo-3-codigo-2-EM13LGG503",
+          "kind": "habilidade",
+          "text_sha256": "9751a5b80a86d28519becc7f38f0b08f1dc0e9ecf77602fc87085c4495fbb04b"
+        },
+        {
+          "key": "projeto-LGG1-p24-campo-3-rotulo-3",
+          "kind": "grupo_curricular",
+          "text_sha256": "75247e73fcbdda405d3609911fb9997c11ef7b1c3a6120a7b362a21d55ca71f9"
+        },
+        {
+          "key": "projeto-LGG1-p24-campo-3-sem-codigo-4",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "7ca0bc9a6ed19f1d34039d287674dbcdfb6119c88df388e068444104456df965"
+        },
+        {
+          "key": "projeto-LGG1-p24-campo-3-sem-codigo-5",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "d5b0e9e677e11d0d0d301161444835ad2e8603778f70ef94c9225b3d507dcdb7"
+        },
+        {
+          "key": "projeto-LGG1-p24-campo-3-sem-codigo-6",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "690c3cf01d5873f25bfcdd99be08b8acce736372375a4e699baff1fa087e0e27"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        534.8831787109375,
+        831.2137451171875,
+        942.9769287109375,
+        983.0626220703125
+      ],
+      "field_key": "projeto-LGG2-p27-campo-6",
+      "native_sha256": "948798256dd38be99fbf71d755ef7647a602d4987de66774f9ac885c3d729382",
+      "page": 27,
+      "project": "LGG2",
+      "units": [
+        {
+          "code": "EM13LGG101",
+          "key": "projeto-LGG2-p27-campo-6-codigo-1-EM13LGG101",
+          "kind": "habilidade",
+          "text_sha256": "0e562f1037818990026a2532ab936a388fabe229928340533e164a8bd1da870c"
+        },
+        {
+          "code": "EM13LGG303",
+          "key": "projeto-LGG2-p27-campo-6-codigo-2-EM13LGG303",
+          "kind": "habilidade",
+          "text_sha256": "3843a6f46e23b9be606edd915ba4e98f56df50110dcbb6d69e4a63b420d0f314"
+        },
+        {
+          "code": "EM13ART103",
+          "key": "projeto-LGG2-p27-campo-6-codigo-3-EM13ART103",
+          "kind": "habilidade",
+          "text_sha256": "1b6bd34ac390ced6ed66c31d9a8e5ac102dab80af7b6730227f7701c12dc50c1"
+        },
+        {
+          "code": "EM13CHS301",
+          "key": "projeto-LGG2-p27-campo-6-codigo-4-EM13CHS301",
+          "kind": "habilidade",
+          "text_sha256": "0ab075ab35f9009243b9a3730e5129fbd44dd6dce51b4387da0cb54ecc350a79"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        562.384765625,
+        601.4306030273438,
+        951.740478515625,
+        1425.79150390625
+      ],
+      "field_key": "projeto-LGG3-p29-campo-9",
+      "native_sha256": "42dcb1bb22537012acd98847e02f57877f813215fab15dd3d042bdedd9aeb5e8",
+      "page": 29,
+      "project": "LGG3",
+      "units": [
+        {
+          "code": "EMIFCG01",
+          "key": "projeto-LGG3-p29-campo-9-codigo-1-EMIFCG01",
+          "kind": "habilidade",
+          "text_sha256": "86f2e158e88ec19f8a9c4867d665fcccffe316737d208b10244be1a0c26ce87d"
+        },
+        {
+          "code": "EMIFCG02",
+          "key": "projeto-LGG3-p29-campo-9-codigo-2-EMIFCG02",
+          "kind": "habilidade",
+          "text_sha256": "e46ec256942950ad48764a8690c6626a08090dbd8bb8266c817f86c6f4bec1c8"
+        },
+        {
+          "code": "EMIFCG03",
+          "key": "projeto-LGG3-p29-campo-9-codigo-3-EMIFCG03",
+          "kind": "habilidade",
+          "text_sha256": "880a7e93b7c4e9f8315545f98e83d4f72554ec6cbee92113b5c740dd455d68de"
+        },
+        {
+          "code": "EMIFCG04",
+          "key": "projeto-LGG3-p29-campo-9-codigo-4-EMIFCG04",
+          "kind": "habilidade",
+          "text_sha256": "35b25f755c4ac9054378da9ce9723ffa3a30cb1492d40f525aa7ed91c53a98ab"
+        },
+        {
+          "code": "EMIFCG05",
+          "key": "projeto-LGG3-p29-campo-9-codigo-5-EMIFCG05",
+          "kind": "habilidade",
+          "text_sha256": "f81e13ab2d7b78b1e9642a30f298cc9a7cb96f855ac879a6fabdda47de61c3be"
+        },
+        {
+          "code": "EMIFCG06",
+          "key": "projeto-LGG3-p29-campo-9-codigo-6-EMIFCG06",
+          "kind": "habilidade",
+          "text_sha256": "68562d6e22f544d0e71631d8302873e788e1a47353ac2d04e3c4f6b8c7c0c9ab"
+        },
+        {
+          "code": "EMIFCG07",
+          "key": "projeto-LGG3-p29-campo-9-codigo-7-EMIFCG07",
+          "kind": "habilidade",
+          "text_sha256": "9bcff173a8b184f1004c552dc2afd86ff9ab2a02dea15227691ff69829508463"
+        },
+        {
+          "code": "EMIFCG08",
+          "key": "projeto-LGG3-p29-campo-9-codigo-8-EMIFCG08",
+          "kind": "habilidade",
+          "text_sha256": "f86d1d0f2cf5d734e14498cb009b0139bc96216b90f28ce44b9d642e3c79df5a"
+        },
+        {
+          "code": "EMIFCG09",
+          "key": "projeto-LGG3-p29-campo-9-codigo-9-EMIFCG09",
+          "kind": "habilidade",
+          "text_sha256": "fb9aa2676c84e7d3e822ae94c1945dc231de2a184eb29dea05f85f1a01e709b1"
+        },
+        {
+          "code": "EMIFCG10",
+          "key": "projeto-LGG3-p29-campo-9-codigo-10-EMIFCG10",
+          "kind": "habilidade",
+          "text_sha256": "24edcf9c0057bec549a41df937969c48d7560c73dade2f3858e3b3811a08cf22"
+        },
+        {
+          "code": "EMIFCG11",
+          "key": "projeto-LGG3-p29-campo-9-codigo-11-EMIFCG11",
+          "kind": "habilidade",
+          "text_sha256": "d13f787939a645f46653824c24c3151b71204b18c633d6d202a049d17dae4094"
+        },
+        {
+          "code": "EMIFCG12",
+          "key": "projeto-LGG3-p29-campo-9-codigo-12-EMIFCG12",
+          "kind": "habilidade",
+          "text_sha256": "a4a6d8d671c3ca1f1a8d461ee5b25aaa71b6b52e0ed0d17aa7a11fb755f50a82"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75,
+        1071.577392578125,
+        555.081787109375,
+        1503.17626953125
+      ],
+      "field_key": "projeto-LGG4-p31-campo-12",
+      "native_sha256": "04373f17615741b12d07f5f7a8e17102348fd16be33a1a894d65e0388296489f",
+      "page": 31,
+      "project": "LGG4",
+      "units": [
+        {
+          "code": "EF69LP07",
+          "key": "projeto-LGG4-p31-campo-12-codigo-1-EF69LP07",
+          "kind": "habilidade",
+          "text_sha256": "635e44ae8c2ff1f898283f364294666fd77f844b046d0675a4ae820983dbc5a2"
+        },
+        {
+          "code": "EMIFLGG07",
+          "key": "projeto-LGG4-p31-campo-12-codigo-2-EMIFLGG07",
+          "kind": "habilidade",
+          "text_sha256": "57d3ae52aac0e7133e0a73c2a91551afad1f3c677e10c22ca886a863a57ebbf1"
+        },
+        {
+          "code": "EI03EO03",
+          "key": "projeto-LGG4-p31-campo-12-codigo-3-EI03EO03",
+          "kind": "habilidade",
+          "text_sha256": "3ec9c2e618d155887dea3acc14e8afc0955fbe98804a03f4d97e3a933fc6956e"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        548.2871704101562,
+        633.108154296875,
+        951.7399291992188,
+        956.5768432617188
+      ],
+      "field_key": "projeto-LGG5-p34-campo-15",
+      "native_sha256": "25481717f2170df0308a14972205d5553d280eaba6a170fc4e9a7f947c7cf375",
+      "page": 34,
+      "project": "LGG5",
+      "units": [
+        {
+          "code": "EM13LP15",
+          "key": "projeto-LGG5-p34-campo-15-codigo-1-EM13LP15",
+          "kind": "habilidade",
+          "text_sha256": "3f9d13918a47efa642a028183ad8be51b3563eaa8edf9b5fed4791ffc14cf229"
+        },
+        {
+          "code": "EM13LGG305",
+          "key": "projeto-LGG5-p34-campo-15-codigo-2-EM13LGG305",
+          "kind": "habilidade",
+          "text_sha256": "503d8aca13ee97aa3141bbb0dea5440c3f0437b89fba11ca084785d4b11d0be1"
+        },
+        {
+          "code": "EM13LGG703",
+          "key": "projeto-LGG5-p34-campo-15-codigo-3-EM13LGG703",
+          "kind": "habilidade",
+          "text_sha256": "ff0910580337c893b7a828e90d199afb587418b7e30bd7ae57efcfb08636ce68"
+        },
+        {
+          "code": "EM13LGG704",
+          "key": "projeto-LGG5-p34-campo-15-codigo-4-EM13LGG704",
+          "kind": "habilidade",
+          "text_sha256": "2da328b15b3a0f164e7ef4e765da874b1b2ff23b1438363319b0779c80f06424"
+        },
+        {
+          "code": "EM13LP15",
+          "key": "projeto-LGG5-p34-campo-15-codigo-5-EM13LP15",
+          "kind": "habilidade",
+          "text_sha256": "3f9d13918a47efa642a028183ad8be51b3563eaa8edf9b5fed4791ffc14cf229"
+        },
+        {
+          "code": "EM13LGG305",
+          "key": "projeto-LGG5-p34-campo-15-codigo-6-EM13LGG305",
+          "kind": "habilidade",
+          "text_sha256": "503d8aca13ee97aa3141bbb0dea5440c3f0437b89fba11ca084785d4b11d0be1"
+        },
+        {
+          "code": "EM13LGG703",
+          "key": "projeto-LGG5-p34-campo-15-codigo-7-EM13LGG703",
+          "kind": "habilidade",
+          "text_sha256": "ff0910580337c893b7a828e90d199afb587418b7e30bd7ae57efcfb08636ce68"
+        },
+        {
+          "code": "EM13LGG704",
+          "key": "projeto-LGG5-p34-campo-15-codigo-8-EM13LGG704",
+          "kind": "habilidade",
+          "text_sha256": "2da328b15b3a0f164e7ef4e765da874b1b2ff23b1438363319b0779c80f06424"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        568.83837890625,
+        528.6109619140625,
+        951.7486572265625,
+        1374.2120361328125
+      ],
+      "field_key": "projeto-LGG6-p35-campo-18",
+      "native_sha256": "a32c1f780cfbed45f75aca3c5e624cd643e360339762908cd9316daafe520e18",
+      "page": 35,
+      "project": "LGG6",
+      "units": [
+        {
+          "code": "EMIFLGG01",
+          "key": "projeto-LGG6-p35-campo-18-codigo-1-EMIFLGG01",
+          "kind": "habilidade",
+          "text_sha256": "0f3fd32ae9f914645cbd757daf728a1eb7f4c2b1e1413c6d9720d08206238c7e"
+        },
+        {
+          "code": "EMIFLGG02",
+          "key": "projeto-LGG6-p35-campo-18-codigo-2-EMIFLGG02",
+          "kind": "habilidade",
+          "text_sha256": "7fbb9754d17019c554302280f9f6702302e621e0270732d10e7e7bcd0c0010ee"
+        },
+        {
+          "code": "EMIFCG03",
+          "key": "projeto-LGG6-p35-campo-18-codigo-3-EMIFCG03",
+          "kind": "habilidade",
+          "text_sha256": "06bedc51ec108bd7821cf0845e93e9934fa5520b96cc6a98372dc13e5e1975b3"
+        },
+        {
+          "code": "EM13LGG401",
+          "key": "projeto-LGG6-p35-campo-18-codigo-4-EM13LGG401",
+          "kind": "habilidade",
+          "text_sha256": "b34f57154fcadb5cbb6d57023a3365bafabb45a4bf884e387fe5b50c3225250b"
+        },
+        {
+          "code": "EMIFLGG06",
+          "key": "projeto-LGG6-p35-campo-18-codigo-5-EMIFLGG06",
+          "kind": "habilidade",
+          "text_sha256": "0b4cc74f0f37d1ee8d117d2952f2e9b42cf811aac165a685b57021439534a812"
+        },
+        {
+          "code": "EM13LP33",
+          "key": "projeto-LGG6-p35-campo-18-codigo-6-EM13LP33",
+          "kind": "habilidade",
+          "text_sha256": "84caf0b5cfdd8ea02efcdd0bccd3e1c1560f15e125993838745e85941b35fa8f"
+        },
+        {
+          "code": "EM13LP34",
+          "key": "projeto-LGG6-p35-campo-18-codigo-7-EM13LP34",
+          "kind": "habilidade",
+          "text_sha256": "91a8f97f76d35860ef7c78bc225cc0bd8209915b78a1cb897b4e4d70a82e58d2"
+        },
+        {
+          "code": "EM13LP51",
+          "key": "projeto-LGG6-p35-campo-18-codigo-8-EM13LP51",
+          "kind": "habilidade",
+          "text_sha256": "4ca90726e169ec207d2b38e3addfaa9e1160b11add2f4b4b73af89526fa926bd"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75407409667969,
+        130.2913818359375,
+        950.99658203125,
+        579.1402587890625
+      ],
+      "field_key": "projeto-LGG7-p36-campo-21",
+      "native_sha256": "b88e7ddfa172815e3f63feff5f9363daf190482cc9ad43b59b9e0f7e00e5c8bf",
+      "page": 37,
+      "project": "LGG7",
+      "units": [
+        {
+          "code": "EM13LGG101",
+          "key": "projeto-LGG7-p36-campo-21-codigo-1-EM13LGG101",
+          "kind": "habilidade",
+          "text_sha256": "2344e229a5786ba9a6e37f4f6a7f7a655ebde4c49d95d34a5633449b394e2f03"
+        },
+        {
+          "code": "EM13LGG102",
+          "key": "projeto-LGG7-p36-campo-21-codigo-2-EM13LGG102",
+          "kind": "habilidade",
+          "text_sha256": "dca9011f3243e6eb354adfa8fc05eb15f0c73aad6d175f3705bbc383d381b438"
+        },
+        {
+          "code": "EM13LGG103",
+          "key": "projeto-LGG7-p36-campo-21-codigo-3-EM13LGG103",
+          "kind": "habilidade",
+          "text_sha256": "60c3593b519762235edf3e2ea41b64bb6e60e67097a8410eb8d9ec9f918896df"
+        },
+        {
+          "code": "EM13LGG105",
+          "key": "projeto-LGG7-p36-campo-21-codigo-4-EM13LGG105",
+          "kind": "habilidade",
+          "text_sha256": "89bd2a3a6ce49065199fbfe9ecad1824db94eb3cc185e00c5d737cc8d0371977"
+        },
+        {
+          "code": "EM13LGG704",
+          "key": "projeto-LGG7-p36-campo-21-codigo-5-EM13LGG704",
+          "kind": "habilidade",
+          "text_sha256": "50cc78c731b9e7c1f2ccb8eaf4d21cb44cb11a970d4a42637513223bf12fba66"
+        },
+        {
+          "code": "EMIFLGG01",
+          "key": "projeto-LGG7-p36-campo-21-codigo-6-EMIFLGG01",
+          "kind": "habilidade",
+          "text_sha256": "70999227e0e0d4b631e539489aaeb3a5949a5c0f45c46d11348c6564efe298c2"
+        },
+        {
+          "code": "EMIFCG04",
+          "key": "projeto-LGG7-p36-campo-21-codigo-7-EMIFCG04",
+          "kind": "habilidade",
+          "text_sha256": "e2fe191f08938db5aa6743ae26c6e37f2d33da7c5ec133413318ecc62d5c4965"
+        },
+        {
+          "code": "EMIFCG05",
+          "key": "projeto-LGG7-p36-campo-21-codigo-8-EMIFCG05",
+          "kind": "habilidade",
+          "text_sha256": "450570c56d0c9cf430b240d15d75b9a01e429870cec9b05fa4fed32bfa876342"
+        },
+        {
+          "code": "EMIFCG06",
+          "key": "projeto-LGG7-p36-campo-21-codigo-9-EMIFCG06",
+          "kind": "habilidade",
+          "text_sha256": "e8d485230a9869b105d50796e695df31aa3fd63a93e7248c1dacb58654dce7dd"
+        },
+        {
+          "code": "EMIFLGG04",
+          "key": "projeto-LGG7-p36-campo-21-codigo-10-EMIFLGG04",
+          "kind": "habilidade",
+          "text_sha256": "92f87a75df475b283ec1ca2def861d20e3d079768dda25f01361e9638cc88dc2"
+        },
+        {
+          "code": "EMIFLGG05",
+          "key": "projeto-LGG7-p36-campo-21-codigo-11-EMIFLGG05",
+          "kind": "habilidade",
+          "text_sha256": "9b82c4b483aa61ed300a5bee201dcec138ef835c3e97806c68436f1116129c5c"
+        },
+        {
+          "code": "EMIFLGG06",
+          "key": "projeto-LGG7-p36-campo-21-codigo-12-EMIFLGG06",
+          "kind": "habilidade",
+          "text_sha256": "c6157dc99fb0ecae832231f81ad01732c9743ae90c0921215d70655522ae2831"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.28751373291016,
+        1026.350341796875,
+        951.7450561523438,
+        1581.747314453125
+      ],
+      "field_key": "projeto-LGG8-p40-campo-24",
+      "native_sha256": "dcb16dbbf021137328521e167fd0e529fda0ac8670a9f17ef7faf37e95fa73d6",
+      "page": 40,
+      "project": "LGG8",
+      "units": [
+        {
+          "code": "EM13LGG101",
+          "key": "projeto-LGG8-p40-campo-24-codigo-1-EM13LGG101",
+          "kind": "habilidade",
+          "text_sha256": "77b03ae3cce0b297b94683875286f0ff90c84fc18081cf07e74368a0eff00452"
+        },
+        {
+          "code": "EM13LGG102",
+          "key": "projeto-LGG8-p40-campo-24-codigo-2-EM13LGG102",
+          "kind": "habilidade",
+          "text_sha256": "7c15df0000bf939c8b45a2fcca7dd4e1dfbd5b07cb0e3dd7c432fc383bd1a3ff"
+        },
+        {
+          "code": "EM13LGG103",
+          "key": "projeto-LGG8-p40-campo-24-codigo-3-EM13LGG103",
+          "kind": "habilidade",
+          "text_sha256": "b11f2e171fe518666c56a69b56937e3ece5e037b7077a240049dff6b2c111cc4"
+        },
+        {
+          "code": "EM13LGG105",
+          "key": "projeto-LGG8-p40-campo-24-codigo-4-EM13LGG105",
+          "kind": "habilidade",
+          "text_sha256": "eda405d96585f5ecf8dd60e5b9759eb5261036c4d9eca372f0e8774f92de473f"
+        },
+        {
+          "code": "EM13LGG704",
+          "key": "projeto-LGG8-p40-campo-24-codigo-5-EM13LGG704",
+          "kind": "habilidade",
+          "text_sha256": "d14b589e3bf2ab49110c21780946c3621a9365fb106893932c05738f237c8249"
+        },
+        {
+          "code": "EM13LP01",
+          "key": "projeto-LGG8-p40-campo-24-codigo-6-EM13LP01",
+          "kind": "habilidade",
+          "text_sha256": "53dd5c712c7efbc088ed6cf3578ffb28e4f07337cbc1cc7d064ec00759ddb844"
+        },
+        {
+          "code": "EMIFLGG01",
+          "key": "projeto-LGG8-p40-campo-24-codigo-7-EMIFLGG01",
+          "kind": "habilidade",
+          "text_sha256": "5dac8c5feff8ca52e814a371923008d9ae3b11ab2b448d7eefd4ad2eb0569fc7"
+        },
+        {
+          "code": "EMIFLGG02",
+          "key": "projeto-LGG8-p40-campo-24-codigo-8-EMIFLGG02",
+          "kind": "habilidade",
+          "text_sha256": "2094cf20e3b7fea644fd0bf8b865398ff83808dffd7aa9f205999f2426e80814"
+        },
+        {
+          "code": "EMIFLGG03",
+          "key": "projeto-LGG8-p40-campo-24-codigo-9-EMIFLGG03",
+          "kind": "habilidade",
+          "text_sha256": "a58d463e626657e6bbff978c6de5ecd161dc3a919910765d644d3f8965af68c9"
+        },
+        {
+          "code": "EM13LP06",
+          "key": "projeto-LGG8-p40-campo-24-codigo-10-EM13LP06",
+          "kind": "habilidade",
+          "text_sha256": "4c4ffe1b3034bd268b9c4cd77759f0970e1cacc2de91c9c736d6c3e4517290d9"
+        },
+        {
+          "code": "EM13LP11",
+          "key": "projeto-LGG8-p40-campo-24-codigo-11-EM13LP11",
+          "kind": "habilidade",
+          "text_sha256": "6295b36f225a28646d450800b7130200a60ba4f6e44a4b21fd17181faea5227b"
+        },
+        {
+          "code": "EM13LP31",
+          "key": "projeto-LGG8-p40-campo-24-codigo-12-EM13LP31",
+          "kind": "habilidade",
+          "text_sha256": "f0b4fc093ebcbc89a3d154fbb8170f94a6fa5f21205af4afa29de2b07c2abaec"
+        },
+        {
+          "code": "EM13LP38",
+          "key": "projeto-LGG8-p40-campo-24-codigo-13-EM13LP38",
+          "kind": "habilidade",
+          "text_sha256": "08c888e0c245e6f0ac2e6101807421ee49ece8fcece54b8d08f78539027a6a2a"
+        },
+        {
+          "code": "EM13LP40",
+          "key": "projeto-LGG8-p40-campo-24-codigo-14-EM13LP40",
+          "kind": "habilidade",
+          "text_sha256": "17cbbf19c35b8b1c3ad366bba3b3646444509371bb8eea9a595ae017736bd1bb"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        525.127197265625,
+        838.0205688476562,
+        949.5776977539062,
+        1255.367919921875
+      ],
+      "field_key": "projeto-LGG9-p44-campo-27",
+      "native_sha256": "8f85ae740b4c29a5a5704405fa7eb9444194d21c131f003510d84a5875795ad8",
+      "page": 44,
+      "project": "LGG9",
+      "units": [
+        {
+          "code": "EM13LGG101",
+          "key": "projeto-LGG9-p44-campo-27-codigo-1-EM13LGG101",
+          "kind": "habilidade",
+          "text_sha256": "435bd0b451e7c43800f58c825307ea540bdabbbd6bf6c917ab73479ca7e0b175"
+        },
+        {
+          "code": "EM13LGG104",
+          "key": "projeto-LGG9-p44-campo-27-codigo-2-EM13LGG104",
+          "kind": "habilidade",
+          "text_sha256": "1ca5b2de2fd334ff67bb1700b065a8fc1ecadef86ae71c8c8a6fff68cab385ad"
+        },
+        {
+          "code": "EM13LGG201",
+          "key": "projeto-LGG9-p44-campo-27-codigo-3-EM13LGG201",
+          "kind": "habilidade",
+          "text_sha256": "7547a2bae00b96c786949a9ba57e90ae1a91d658ae1750ee3ff85d8157b02905"
+        },
+        {
+          "code": "EM13LGG202",
+          "key": "projeto-LGG9-p44-campo-27-codigo-4-EM13LGG202",
+          "kind": "habilidade",
+          "text_sha256": "caf64bb6d33602702c60a7866e4c9efc1d956d178857693fe1b00718d2dad079"
+        },
+        {
+          "code": "EM13LGG303",
+          "key": "projeto-LGG9-p44-campo-27-codigo-5-EM13LGG303",
+          "kind": "habilidade",
+          "text_sha256": "9b0725f2b36d36291a1e75f22e1ef3cb9ed38b17a541699ab3051bf39f299414"
+        },
+        {
+          "code": "EM13LGG304",
+          "key": "projeto-LGG9-p44-campo-27-codigo-6-EM13LGG304",
+          "kind": "habilidade",
+          "text_sha256": "ccf5718f05d7fa2364bef839d3e1c38cfdb12f14de5265a980e47416ef0c605a"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75575256347656,
+        1200.4813232421875,
+        522.0057373046875,
+        1302.1781005859375
+      ],
+      "field_key": "projeto-LGG10-p47-campo-30",
+      "native_sha256": "00ce8117999bcfd0254cdf3a82f24720b14a97a9a2b2f675fbc1656ddf61d965",
+      "page": 47,
+      "project": "LGG10",
+      "units": [
+        {
+          "code": "EM13LGG101",
+          "key": "projeto-LGG10-p47-campo-30-codigo-1-EM13LGG101",
+          "kind": "habilidade",
+          "text_sha256": "1d0db9ad7bee4c1a0d1d9d1ffde8ad10c3f446112309c2ab2117f1acba8fac68"
+        },
+        {
+          "code": "EM13LGG303",
+          "key": "projeto-LGG10-p47-campo-30-codigo-2-EM13LGG303",
+          "kind": "habilidade",
+          "text_sha256": "adab8e8270b65ae173f5b8a73af971fee25b37bce60040e33599fa46771329b4"
+        },
+        {
+          "code": "EM13CNT201",
+          "key": "projeto-LGG10-p47-campo-30-codigo-3-EM13CNT201",
+          "kind": "habilidade",
+          "text_sha256": "975772a426c67c934c635dc30a37e61ed6c5cb9436ea4e4b9ca05e48702cf224"
+        },
+        {
+          "code": "EM13CHS401",
+          "key": "projeto-LGG10-p47-campo-30-codigo-4-EM13CHS401",
+          "kind": "habilidade",
+          "text_sha256": "004133c00ef12b93d8339664c4a594cc954e9bd421be5dd49a55677c69677398"
+        },
+        {
+          "code": "EM13MAT401",
+          "key": "projeto-LGG10-p47-campo-30-codigo-5-EM13MAT401",
+          "kind": "habilidade",
+          "text_sha256": "17de0202189c23c2b8bc7514aa28fd34e357de78f2a31436958c70a7e93ebad9"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        546.5135498046875,
+        866.3226928710938,
+        951.27880859375,
+        1118.046875
+      ],
+      "field_key": "projeto-MAT1-p54-campo-32",
+      "native_sha256": "a7e7a1fb915d5780bcaf088d1a2ba12a2da536bf13a2dba4ab2d0f9f0f508b23",
+      "page": 54,
+      "project": "MAT1",
+      "units": [
+        {
+          "key": "projeto-MAT1-p54-campo-32-sem-codigo-1",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "05bd4302e8ac07a9e3738c0d149cbd09826a0fba46e9e9b846adeb789c26f568"
+        },
+        {
+          "key": "projeto-MAT1-p54-campo-32-sem-codigo-2",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "13df5ab5c2b652487eb3c29f1ca53573658b2d28a249d8426459734288210c1c"
+        },
+        {
+          "key": "projeto-MAT1-p54-campo-32-sem-codigo-3",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "52836c349ff721dc1d40b5e2c9831ec0c453d63af8f6ea65310fa814f711bc4e"
+        },
+        {
+          "key": "projeto-MAT1-p54-campo-32-sem-codigo-4",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "992aee4d06ec370db7a17573adcbd72e5bf0c78bea5257b16199f601af7643c2"
+        },
+        {
+          "key": "projeto-MAT1-p54-campo-32-sem-codigo-5",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "5420e6e4722fa58422edab9e870ba525e415c8838a06cc588be6bb4063eb0e3c"
+        },
+        {
+          "key": "projeto-MAT1-p54-campo-32-sem-codigo-6",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "a920edb8baf6244264b51d3261c1e828e320f3a6add1f5c7fe9f2efa00c9c405"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75,
+        722.305419921875,
+        559.21875,
+        949.096435546875
+      ],
+      "field_key": "projeto-MAT2-p56-campo-36",
+      "native_sha256": "31ae06bf68233dcf09ed8185f01d3e709ea88790fbd08f3d0e60d0780102c9ec",
+      "page": 56,
+      "project": "MAT2",
+      "units": [
+        {
+          "code": "EM13MAT401",
+          "key": "projeto-MAT2-p56-campo-36-codigo-1-EM13MAT401",
+          "kind": "habilidade",
+          "text_sha256": "2f9d8666c5aaec5a59f43c9a0128b1a88a69a7a1e42b8971dc632920717641f0"
+        },
+        {
+          "code": "EM13MAT203",
+          "key": "projeto-MAT2-p56-campo-36-codigo-2-EM13MAT203",
+          "kind": "habilidade",
+          "text_sha256": "54bcf7598d68d0554466eb6858efba040a74c05c88f519aa0921c07848947029"
+        },
+        {
+          "code": "EM13MAT303",
+          "key": "projeto-MAT2-p56-campo-36-codigo-3-EM13MAT303",
+          "kind": "habilidade",
+          "text_sha256": "de9fba6243dab6cbdd4df083d3e1dda1180e666f5bc653d923094b8d55662931"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        534.5424194335938,
+        828.121337890625,
+        951.7479248046875,
+        1342.46044921875
+      ],
+      "field_key": "projeto-MAT3-p57-campo-38",
+      "native_sha256": "183413418a33f0359e647559e73e16532f0bf1e84be26b025ceec05d487a7d80",
+      "page": 57,
+      "project": "MAT3",
+      "units": [
+        {
+          "code": "EM13MAT101",
+          "key": "projeto-MAT3-p57-campo-38-codigo-1-EM13MAT101",
+          "kind": "habilidade",
+          "text_sha256": "00c448d0476ba23fc5ccd4461f7b8950812f8808bd5a98303d04f74b548e7ae9"
+        },
+        {
+          "code": "EM13MAT104",
+          "key": "projeto-MAT3-p57-campo-38-codigo-2-EM13MAT104",
+          "kind": "habilidade",
+          "text_sha256": "4716f6dbe0c5475466ccb84870ff3be9564c64f3dd64f315b099231f1716a5ac"
+        },
+        {
+          "code": "EM13MAT102",
+          "key": "projeto-MAT3-p57-campo-38-codigo-3-EM13MAT102",
+          "kind": "habilidade",
+          "text_sha256": "71cab064422f9a85eba4db554676b0e804465dcc0109f3f1f133f92ed38e3b58"
+        },
+        {
+          "code": "EM13MAT106",
+          "key": "projeto-MAT3-p57-campo-38-codigo-4-EM13MAT106",
+          "kind": "habilidade",
+          "text_sha256": "b8bab96570beb2ef18c9aeb9cfcbb31995953711bac8482c463c552d0fa7739a"
+        },
+        {
+          "code": "EM13MAT203",
+          "key": "projeto-MAT3-p57-campo-38-codigo-5-EM13MAT203",
+          "kind": "habilidade",
+          "text_sha256": "3cde38986bfbb871daa4283f10785b17cd0c1ff615231a2b40af48b9a4f92c9c"
+        },
+        {
+          "code": "EM13MAT104",
+          "key": "projeto-MAT3-p57-campo-38-codigo-6-EM13MAT104",
+          "kind": "habilidade",
+          "text_sha256": "91ad0a2d51949a42153321f120226d7678245d52d1d413214a9384db2507e238"
+        },
+        {
+          "code": "EM13MAT301",
+          "key": "projeto-MAT3-p57-campo-38-codigo-7-EM13MAT301",
+          "kind": "habilidade",
+          "text_sha256": "fd01725582800c11af3f96838b1a218a029a6ed6a8a77917666397618a921a6a"
+        },
+        {
+          "code": "EM13MAT105",
+          "key": "projeto-MAT3-p57-campo-38-codigo-8-EM13MAT105",
+          "kind": "habilidade",
+          "text_sha256": "a85ae59396e3d55fd3f6501b6efe7ff50d9d81f5525832fac582d6f118f1b5be"
+        },
+        {
+          "code": "EM13CNT101",
+          "key": "projeto-MAT3-p57-campo-38-codigo-9-EM13CNT101",
+          "kind": "habilidade",
+          "text_sha256": "d1d67a93739c9661dca880f36a15c768b5be68e8d9cd34512fe3fff13e0c0f1a"
+        },
+        {
+          "code": "EM13MAT101",
+          "key": "projeto-MAT3-p57-campo-38-codigo-10-EM13MAT101",
+          "kind": "habilidade",
+          "text_sha256": "4ede73ab29df17c94a91da4a8c630bd82db379caacb75fedc095b080f9c609e2"
+        },
+        {
+          "code": "EM13CNT102",
+          "key": "projeto-MAT3-p57-campo-38-codigo-11-EM13CNT102",
+          "kind": "habilidade",
+          "text_sha256": "56605094be35a928512fb39752a53b9e2865c2063f74b9b1b88cff9883dbd347"
+        },
+        {
+          "code": "EM13MAT102",
+          "key": "projeto-MAT3-p57-campo-38-codigo-12-EM13MAT102",
+          "kind": "habilidade",
+          "text_sha256": "6b84e2623934f9f6cf12a2ff9e2c6c4bbb824d8f6b08dfa52ebb737f19c99617"
+        },
+        {
+          "code": "EM13LGG101",
+          "key": "projeto-MAT3-p57-campo-38-codigo-13-EM13LGG101",
+          "kind": "habilidade",
+          "text_sha256": "7b11861591f68de854d16522a927a6581e6aaec194fa211c7975b234faca58cc"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        554.6495971679688,
+        545.68212890625,
+        951.7438354492188,
+        832.4451904296875
+      ],
+      "field_key": "projeto-MAT4-p59-campo-41",
+      "native_sha256": "705bed12aec3b6f08da06efb22e4adc6ae86c4477d694d17f5559f31409b57bc",
+      "page": 59,
+      "project": "MAT4",
+      "units": [
+        {
+          "key": "projeto-MAT4-p59-campo-41-sem-codigo-1",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "be2b17a34ed8a05988f61430431adf5afc85116ce9078a6ff0ef031348ed3bb8"
+        },
+        {
+          "key": "projeto-MAT4-p59-campo-41-sem-codigo-2",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "9a110999d0e2e2f716d38d089392ef83221f3f9fae31a91cd903a4e3f04071c1"
+        },
+        {
+          "key": "projeto-MAT4-p59-campo-41-sem-codigo-3",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "96e82154558873bc373b62455841a9cfc3980bb90ea8a44d686e71d7c43fdbca"
+        },
+        {
+          "key": "projeto-MAT4-p59-campo-41-sem-codigo-4",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "d786d89ca67f31e2c0a8a29bfc2580f6f7adb9ceb52d9e9cc39345fbba3477b4"
+        },
+        {
+          "key": "projeto-MAT4-p59-campo-41-sem-codigo-5",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "1e46b549a1a81affadf994199505a3278d8addce21489b27629645b77c0e04c8"
+        },
+        {
+          "key": "projeto-MAT4-p59-campo-41-sem-codigo-6",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "769782dd5b38456164e7a0825bb7a3cb092e23c3961198394da009be285e9689"
+        },
+        {
+          "key": "projeto-MAT4-p59-campo-41-sem-codigo-7",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "cc6b61b1eac89609c72c80288d56e82ba7d4dba4d0438a208bfae954cb5e3e1f"
+        },
+        {
+          "key": "projeto-MAT4-p59-campo-41-sem-codigo-8",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "cb5fab4ee8c58de997a9cd1f93de6697f28f265b41110e36343ca0c9b8330b77"
+        },
+        {
+          "key": "projeto-MAT4-p59-campo-41-sem-codigo-9",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "1a839779bf39146ffd2c797cf41094fc06206dda0b614f09c13d51691a52a60e"
+        },
+        {
+          "key": "projeto-MAT4-p59-campo-41-sem-codigo-10",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "a371e51e503d451c7b47c7310906154e6e5c9a24c5c93ec827f22e06572f233d"
+        },
+        {
+          "key": "projeto-MAT4-p59-campo-41-sem-codigo-11",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "2121e7600fcd3e1226120d6d8a71edf44323a527439fcdd43fdfd691b5aace5f"
+        },
+        {
+          "key": "projeto-MAT4-p59-campo-41-sem-codigo-12",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "ca80029eee6bcdaa53939790f70f7932de67d4a38e3d8482d9f33f028cf7122a"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        537.552001953125,
+        738.9349365234375,
+        951.740234375,
+        928.6707763671875
+      ],
+      "field_key": "projeto-MAT5-p61-campo-44",
+      "native_sha256": "ab59633041a4d0ed4b7ce5daf0731f8a01abf9999e232fb456a3accc27d0e9cf",
+      "page": 61,
+      "project": "MAT5",
+      "units": [
+        {
+          "code": "EF07MA01",
+          "key": "projeto-MAT5-p61-campo-44-codigo-1-EF07MA01",
+          "kind": "habilidade",
+          "text_sha256": "36f309b1bd7e56d347be5e0528a1dd161520c1cf1f6fe8e09faa2caed10fd02a"
+        },
+        {
+          "code": "EF07MA02",
+          "key": "projeto-MAT5-p61-campo-44-codigo-2-EF07MA02",
+          "kind": "habilidade",
+          "text_sha256": "eef78310657e9b595f54aa93143e68dcef1cd39527e6954a912e7750010bce9f"
+        },
+        {
+          "code": "EF07MA12",
+          "key": "projeto-MAT5-p61-campo-44-codigo-3-EF07MA12",
+          "kind": "habilidade",
+          "text_sha256": "632342c46359321b92e13fface4d5299860103488946df465e389bdaf6779e71"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        538.1688232421875,
+        577.6926879882812,
+        950.5338134765625,
+        675.9503784179688
+      ],
+      "field_key": "projeto-MAT6-p63-campo-47",
+      "native_sha256": "24a34c7187f44785298112c8e02067c1da6f02a3606c4e1a4ce4c1b96c4f4143",
+      "page": 63,
+      "project": "MAT6",
+      "units": [
+        {
+          "key": "projeto-MAT6-p63-campo-47-sem-codigo-1",
+          "kind": "capacidade",
+          "text_sha256": "54ba41f15b5549a694eb3faad655e72374717e8e751bced7abec3ca65226ab1f"
+        },
+        {
+          "key": "projeto-MAT6-p63-campo-47-sem-codigo-2",
+          "kind": "capacidade",
+          "text_sha256": "20932cf93cb87b73cfc17c7b7971137ab0bc55c1fda4c86f96e154945ae079a3"
+        },
+        {
+          "key": "projeto-MAT6-p63-campo-47-sem-codigo-3",
+          "kind": "capacidade",
+          "text_sha256": "b8da96d0d1672c73d6258ccfb8bf24e1d3748fe798759c185b2b45a9d5d7cdc9"
+        },
+        {
+          "key": "projeto-MAT6-p63-campo-47-sem-codigo-4",
+          "kind": "capacidade",
+          "text_sha256": "6fd71438025fe9c320cf8ca1b7516b9fe1b6aa10d81995b060674a19bcbef0db"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.77999877929688,
+        845.6917724609375,
+        951.7200927734375,
+        936.4276123046875
+      ],
+      "field_key": "projeto-MAT7-p64-campo-49",
+      "native_sha256": "2f5d07c3ab7a281bc67349af6ff97fb8ad331af8838e5b8c98d58d1547c52d84",
+      "page": 64,
+      "project": "MAT7",
+      "units": [
+        {
+          "key": "projeto-MAT7-p64-campo-49-sem-codigo-1",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "bef7a0607d6dafbeb52414190faa01beccc3d4fdb4879297556d95a2552acce6"
+        },
+        {
+          "key": "projeto-MAT7-p64-campo-49-sem-codigo-2",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "8026b201917d0ab5f03ab6ead77bb9d57ae4a2a90413f5d51d8c8867b0033fac"
+        },
+        {
+          "key": "projeto-MAT7-p64-campo-49-sem-codigo-3",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "3fa0374019af5b403cf9f54e84846b65a71875ee9d76684bf0a362023be2a456"
+        },
+        {
+          "key": "projeto-MAT7-p64-campo-49-sem-codigo-4",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "57091887903989404a2df781f5cd117e5847ba4558d0d93cb65b02c4a6042040"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75575256347656,
+        941.7254028320312,
+        952.063232421875,
+        1461.461181640625
+      ],
+      "field_key": "projeto-MAT8-p66-campo-53",
+      "native_sha256": "855d8e5d3e543dae23417a8f41360d55d22773f77ffc84d93583318860c5d72d",
+      "page": 66,
+      "project": "MAT8",
+      "units": [
+        {
+          "code": "EM13LGG101",
+          "key": "projeto-MAT8-p66-campo-53-codigo-1-EM13LGG101",
+          "kind": "habilidade",
+          "text_sha256": "2344e229a5786ba9a6e37f4f6a7f7a655ebde4c49d95d34a5633449b394e2f03"
+        },
+        {
+          "code": "EMIFLGG11",
+          "key": "projeto-MAT8-p66-campo-53-codigo-2-EMIFLGG11",
+          "kind": "habilidade",
+          "text_sha256": "afc874e454f7ee5d45d4c97d90c88aefc2a275187c11be6cb6f3136f59a9bb7a"
+        },
+        {
+          "code": "EM13CNT101",
+          "key": "projeto-MAT8-p66-campo-53-codigo-3-EM13CNT101",
+          "kind": "habilidade",
+          "text_sha256": "5e61b4bbff7220d773850e28b80332dbd97dec15b6127a4424c82f6c23912600"
+        },
+        {
+          "code": "EM13CNT104",
+          "key": "projeto-MAT8-p66-campo-53-codigo-4-EM13CNT104",
+          "kind": "habilidade",
+          "text_sha256": "b15ec023e621fee11cb1864447a8e9d0a3edd8c89c3acf8efa651d3c6afed4d4"
+        },
+        {
+          "code": "EM13MAT405",
+          "key": "projeto-MAT8-p66-campo-53-codigo-5-EM13MAT405",
+          "kind": "habilidade",
+          "text_sha256": "3dad3164713c5c038d78e3fc0eb285911d54e375c244e452b0b4ab7659829897"
+        },
+        {
+          "code": "EM13CNT103",
+          "key": "projeto-MAT8-p66-campo-53-codigo-6-EM13CNT103",
+          "kind": "habilidade",
+          "text_sha256": "0ac432c64b2d3f0021311f259dfde288a0fc583b6bbb9ba5a84bb0850fde0c5b"
+        },
+        {
+          "code": "EM13CNT301",
+          "key": "projeto-MAT8-p66-campo-53-codigo-7-EM13CNT301",
+          "kind": "habilidade",
+          "text_sha256": "d9c5d10de112dd5f1a661566db2ee911c58ffd9e77ef82e64991a3e6abb374ea"
+        },
+        {
+          "code": "EM13MAT403",
+          "key": "projeto-MAT8-p66-campo-53-codigo-8-EM13MAT403",
+          "kind": "habilidade",
+          "text_sha256": "358ea8ab7b0fe509c08154f46cc10bbe15a867e172aa113f4908d16eba201911"
+        },
+        {
+          "code": "EM13MAT401",
+          "key": "projeto-MAT8-p66-campo-53-codigo-9-EM13MAT401",
+          "kind": "habilidade",
+          "text_sha256": "ff5aed154e51de9d52f8a95392fe8d770875b5aefb8c5c3020e63a53097cd03e"
+        },
+        {
+          "code": "EM13MAT403",
+          "key": "projeto-MAT8-p66-campo-53-codigo-10-EM13MAT403",
+          "kind": "habilidade",
+          "text_sha256": "239e4faf5c8e56a5d688207fbb06d08911f576499809a9eb85e355146f44597e"
+        },
+        {
+          "code": "EM13MAT405",
+          "key": "projeto-MAT8-p66-campo-53-codigo-11-EM13MAT405",
+          "kind": "habilidade",
+          "text_sha256": "3dad3164713c5c038d78e3fc0eb285911d54e375c244e452b0b4ab7659829897"
+        },
+        {
+          "code": "EM13CNT302",
+          "key": "projeto-MAT8-p66-campo-53-codigo-12-EM13CNT302",
+          "kind": "habilidade",
+          "text_sha256": "6058f187e2a093f6eaf081af48f7103c940f2e8e7b2df7bae502350bd10d9bc6"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.76919555664062,
+        923.45654296875,
+        951.731689453125,
+        1078.6923828125
+      ],
+      "field_key": "projeto-MAT9-p68-campo-55",
+      "native_sha256": "e434cc868cfab3b3e4d3f2526ed60ba8d70a9616e78676bad6d3b994e4d86634",
+      "page": 68,
+      "project": "MAT9",
+      "units": [
+        {
+          "code": "EM13LGG204",
+          "key": "projeto-MAT9-p68-campo-55-codigo-1-EM13LGG204",
+          "kind": "habilidade",
+          "text_sha256": "22f9fc0e11b68af545cc028dcf49d620181cc1fe402b2bb5dee01b64cc63143c"
+        },
+        {
+          "code": "EM13LGG604",
+          "key": "projeto-MAT9-p68-campo-55-codigo-2-EM13LGG604",
+          "kind": "habilidade",
+          "text_sha256": "419eca624dffd4bf49b5ad029031f207df3108020ad0404e66f2f92d5baa1f81"
+        },
+        {
+          "code": "EM13LGG301",
+          "key": "projeto-MAT9-p68-campo-55-codigo-3-EM13LGG301",
+          "kind": "habilidade",
+          "text_sha256": "0e6112209a97556349e37e808be9ccda41a59d77d8816fcf2736ad0546a846fe"
+        },
+        {
+          "code": "EM13LGG602",
+          "key": "projeto-MAT9-p68-campo-55-codigo-4-EM13LGG602",
+          "kind": "habilidade",
+          "text_sha256": "2439fb5a117a3fe32d6fe3ebdc815f96c782c1085ee7f0b4f47b848dc8ccf1d6"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        104.56391906738281,
+        1027.309326171875,
+        951.8613891601562,
+        1184.0452880859375
+      ],
+      "field_key": "projeto-MAT10-p70-campo-56",
+      "native_sha256": "1c7320c69ed6791ae41eb3eac85e4d2feda9078692d1f561348829aef0d7d11b",
+      "page": 70,
+      "project": "MAT10",
+      "units": [
+        {
+          "code": "MAT11IF",
+          "key": "projeto-MAT10-p70-campo-56-codigo-1-MAT11IF",
+          "kind": "habilidade",
+          "text_sha256": "0ff7a538f13447e13455020f6391cba236c144864fad49525e5288a64e93746b"
+        },
+        {
+          "code": "LGG02IF",
+          "key": "projeto-MAT10-p70-campo-56-codigo-2-LGG02IF",
+          "kind": "habilidade",
+          "text_sha256": "9ac551d14f8cbeb44b0d40cda1fe1f62c957332f6c9ce55c9d014cb50c5d9192"
+        },
+        {
+          "code": "CN11IF",
+          "key": "projeto-MAT10-p70-campo-56-codigo-3-CN11IF",
+          "kind": "habilidade",
+          "text_sha256": "21126451224cc2b06c93b0e7b26472d49f623591dd922d4fc5e40fe6c1529b7e"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        545.503173828125,
+        598.6757202148438,
+        951.2051391601562,
+        1248.206787109375
+      ],
+      "field_key": "projeto-CNT1-p74-campo-60",
+      "native_sha256": "d0e035a4af77282e5320732abdf9a491d4ea19b9d1d662eb764363fe98b5bb44",
+      "page": 74,
+      "project": "CNT1",
+      "units": [
+        {
+          "code": "EM13CNT302",
+          "key": "projeto-CNT1-p74-campo-60-codigo-1-EM13CNT302",
+          "kind": "habilidade",
+          "text_sha256": "af9423dd5e8bc3a04474c9902582720f14d05ab52c3956942d3513b371552554"
+        },
+        {
+          "key": "projeto-CNT1-p74-campo-60-rotulo-2",
+          "kind": "grupo_curricular",
+          "text_sha256": "ac948f8e258b50e6b9d1202c2dd41d80b62e0c1f1fec8ef83d6277cf412a75d6"
+        },
+        {
+          "key": "projeto-CNT1-p74-campo-60-sem-codigo-3",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "65c3c2987c9ce2f174e07e228408b5049a4a053fb0c36af1e87d5ba7afaa8ca3"
+        },
+        {
+          "key": "projeto-CNT1-p74-campo-60-sem-codigo-4",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "4cc2a7c25d4e36b6a0b4c0091bc63a46f21c11666a0555a528dba0d1d854ead1"
+        },
+        {
+          "key": "projeto-CNT1-p74-campo-60-sem-codigo-5",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "629255a0d0402f9b9003345775969fd8524529c0ab1e36ef0e6c3b4d9d813432"
+        },
+        {
+          "key": "projeto-CNT1-p74-campo-60-rotulo-6",
+          "kind": "grupo_curricular",
+          "text_sha256": "ef73ab911243b0cfe5a29a603dd1c41ca48d550df34759e4a1f1559de612ef6b"
+        },
+        {
+          "key": "projeto-CNT1-p74-campo-60-sem-codigo-7",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "57fab5e55b434caf7d4faf15f401e62eefd65025755930a3cad887c652c7dcc4"
+        },
+        {
+          "key": "projeto-CNT1-p74-campo-60-sem-codigo-8",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "d6ace20a58900b99f41b6400d6e971488d0e00ca52cf79d62470694809e0f618"
+        },
+        {
+          "key": "projeto-CNT1-p74-campo-60-sem-codigo-9",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "b5d1910af3b35248c08908eba28cf22f862d19794d8db844413367926837872b"
+        },
+        {
+          "key": "projeto-CNT1-p74-campo-60-rotulo-10",
+          "kind": "grupo_curricular",
+          "text_sha256": "f2d8f6987d2736ff768eb63ce5e818801d987f1a93b885c6ccc6ff742b015f24"
+        },
+        {
+          "key": "projeto-CNT1-p74-campo-60-sem-codigo-11",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "da781cf1fb7b17d1afaa50b1e9bdf23f07dd67927841a68de0b727ae422cbc42"
+        },
+        {
+          "key": "projeto-CNT1-p74-campo-60-sem-codigo-12",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "0f363c1c5c7587f4a1f8f95b9cb4ecce526036b7e90d0966aeb134247018d14d"
+        },
+        {
+          "key": "projeto-CNT1-p74-campo-60-sem-codigo-13",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "8bdce39927c1fa420f3434438573184f43623ca653eb58be33fa912cba218fe0"
+        },
+        {
+          "key": "projeto-CNT1-p74-campo-60-rotulo-14",
+          "kind": "grupo_curricular",
+          "text_sha256": "c92b73d67922244e94b1b5c8fc1807d2045af0143145e5bfd3fc1b5dfd8e14c0"
+        },
+        {
+          "key": "projeto-CNT1-p74-campo-60-sem-codigo-15",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "aabd01a929228e253e94451d4526c2afef171e9f512501c113081e4f18ed12c8"
+        },
+        {
+          "key": "projeto-CNT1-p74-campo-60-sem-codigo-16",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "d3d46ec455c44f483cb2b8c7e23e2698e075bbab71cc88e8dce9852d0d92cd02"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        538.7567749023438,
+        616.3193969726562,
+        951.7442626953125,
+        1004.8037109375
+      ],
+      "field_key": "projeto-CNT2-p76-campo-63",
+      "native_sha256": "8e8825b9af951fb21592c7ae6ebf4b86169bbf38aeb8eede4ece949d7a9a7605",
+      "page": 76,
+      "project": "CNT2",
+      "units": [
+        {
+          "code": "EM13CNT101",
+          "key": "projeto-CNT2-p76-campo-63-codigo-1-EM13CNT101",
+          "kind": "habilidade",
+          "text_sha256": "8628d04615f59887ebdf53aafb92c26f260408c2da47c279fbb5e47d2fced21a"
+        },
+        {
+          "code": "EM13CNT204",
+          "key": "projeto-CNT2-p76-campo-63-codigo-2-EM13CNT204",
+          "kind": "habilidade",
+          "text_sha256": "b6d61d934c702758b96753080dc759d145b1f85bb160893a4c0165dab1eebad7"
+        },
+        {
+          "code": "EM13CNT107",
+          "key": "projeto-CNT2-p76-campo-63-codigo-3-EM13CNT107",
+          "kind": "habilidade",
+          "text_sha256": "f281ca064c1a122b9445c0919f4021fdd8eca4aaae805e829a36f066f8683c68"
+        },
+        {
+          "code": "EM13CNT102",
+          "key": "projeto-CNT2-p76-campo-63-codigo-4-EM13CNT102",
+          "kind": "habilidade",
+          "text_sha256": "a37b9524394945fb78762b47200d6400948c14f5e5321d22872aa708c801d003"
+        },
+        {
+          "code": "EM13CNT101",
+          "key": "projeto-CNT2-p76-campo-63-codigo-5-EM13CNT101",
+          "kind": "habilidade",
+          "text_sha256": "f235ce7dc7652dd8c663290e5ad2b3775de55c123b25e7b2e1aaba07ef0df695"
+        },
+        {
+          "code": "EM13CNT302",
+          "key": "projeto-CNT2-p76-campo-63-codigo-6-EM13CNT302",
+          "kind": "habilidade",
+          "text_sha256": "265a3fa7cc1b082eeeb1045510ecf8120ef980d5f2e4412e06dcda85a4b6d358"
+        },
+        {
+          "code": "EM13CNT205",
+          "key": "projeto-CNT2-p76-campo-63-codigo-7-EM13CNT205",
+          "kind": "habilidade",
+          "text_sha256": "a7d4bf6d081315374df675175c41a8c5085eea626e0da66123a9703a1cdeac9b"
+        },
+        {
+          "code": "EM13CNT106",
+          "key": "projeto-CNT2-p76-campo-63-codigo-8-EM13CNT106",
+          "kind": "habilidade",
+          "text_sha256": "2be631a82dbd357d3b0fadc545bb19752e691776e671c285cc0a1bf34c868e04"
+        },
+        {
+          "code": "EM13CNT102",
+          "key": "projeto-CNT2-p76-campo-63-codigo-9-EM13CNT102",
+          "kind": "habilidade",
+          "text_sha256": "8f55870d415fb3d2bccd8a96419673096d6ed2ff81166ea81ea219591077635b"
+        },
+        {
+          "code": "EM13CNT103",
+          "key": "projeto-CNT2-p76-campo-63-codigo-10-EM13CNT103",
+          "kind": "habilidade",
+          "text_sha256": "ce91c0a8cfd453deaea062b27fc924af30f6c3c6b7b55ad8b015b461260d337a"
+        },
+        {
+          "code": "EM13CNT302",
+          "key": "projeto-CNT2-p76-campo-63-codigo-11-EM13CNT302",
+          "kind": "habilidade",
+          "text_sha256": "66fac114e924ff3d1e4fe498e0d66eca162cce9b3c0c9c7f617bc859b50cd64a"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75503540039062,
+        130.29296875,
+        951.74755859375,
+        798.5272216796875
+      ],
+      "field_key": "projeto-CNT3-p78-campo-66",
+      "native_sha256": "d55f047e668622c9ed7ac2a0eae380b1791adde13661b0295213f859d9bf7e13",
+      "page": 79,
+      "project": "CNT3",
+      "units": [
+        {
+          "code": "EM13LGG101",
+          "key": "projeto-CNT3-p78-campo-66-codigo-1-EM13LGG101",
+          "kind": "habilidade",
+          "text_sha256": "2344e229a5786ba9a6e37f4f6a7f7a655ebde4c49d95d34a5633449b394e2f03"
+        },
+        {
+          "code": "EM13CNT206",
+          "key": "projeto-CNT3-p78-campo-66-codigo-2-EM13CNT206",
+          "kind": "habilidade",
+          "text_sha256": "d0b01adf361bdb737a2725962cb7bb589d0bcc40d539f995fbe7b620c2db8c7b"
+        },
+        {
+          "code": "EM13CNT101",
+          "key": "projeto-CNT3-p78-campo-66-codigo-3-EM13CNT101",
+          "kind": "habilidade",
+          "text_sha256": "3cebd97c9a9683fc5fd1e2bf87a2c9673f8d8b98bb1b5e818dd39805e07c1c2c"
+        },
+        {
+          "code": "EM13CNT104",
+          "key": "projeto-CNT3-p78-campo-66-codigo-4-EM13CNT104",
+          "kind": "habilidade",
+          "text_sha256": "c93785734b09814c132386835071e738e443e11f188b22e8a24e2772d634084f"
+        },
+        {
+          "code": "EM13CNT102",
+          "key": "projeto-CNT3-p78-campo-66-codigo-5-EM13CNT102",
+          "kind": "habilidade",
+          "text_sha256": "fc1ed997e99aff3516280e5937974016f53a6755894e1a6bf2dd4861323f2061"
+        },
+        {
+          "code": "EM13CNT308",
+          "key": "projeto-CNT3-p78-campo-66-codigo-6-EM13CNT308",
+          "kind": "habilidade",
+          "text_sha256": "2aba11b8cfa373b749e214fa3f9ef1556d9f1cccb22ddbd4a4eddca70e4dcf0b"
+        },
+        {
+          "code": "EM13CNT307",
+          "key": "projeto-CNT3-p78-campo-66-codigo-7-EM13CNT307",
+          "kind": "habilidade",
+          "text_sha256": "b262d6e0383422bb3980adff60cfafe36e2d0dae15581f20450722c6b311fd85"
+        },
+        {
+          "code": "EM13CNT309",
+          "key": "projeto-CNT3-p78-campo-66-codigo-8-EM13CNT309",
+          "kind": "habilidade",
+          "text_sha256": "81dce7bf6cf8c262a444adb5167320fd19dc3ea9c22bb7b0172e840a0ee14602"
+        },
+        {
+          "code": "EM13CNT103",
+          "key": "projeto-CNT3-p78-campo-66-codigo-9-EM13CNT103",
+          "kind": "habilidade",
+          "text_sha256": "fab9daddbba782109ec64967ab56f9bbbc72800ae7f8262cd69542adbb3c630c"
+        },
+        {
+          "code": "EM13CNT304",
+          "key": "projeto-CNT3-p78-campo-66-codigo-10-EM13CNT304",
+          "kind": "habilidade",
+          "text_sha256": "f94297230d4723ce2ca7fa4dd764c894b7e0bd6c2cf7c0739f439713dae382e3"
+        },
+        {
+          "code": "EM13CNT202",
+          "key": "projeto-CNT3-p78-campo-66-codigo-11-EM13CNT202",
+          "kind": "habilidade",
+          "text_sha256": "65aaba269dc33e8327869410bd811858de6b18c8731c4d441c6a953e83267092"
+        },
+        {
+          "code": "EM13CNT301",
+          "key": "projeto-CNT3-p78-campo-66-codigo-12-EM13CNT301",
+          "kind": "habilidade",
+          "text_sha256": "140fe867c70ea0a5b9558cef09e48fd18a8c91af9e6314bde88ea0e6b21049f4"
+        },
+        {
+          "code": "EM13CNT301",
+          "key": "projeto-CNT3-p78-campo-66-codigo-13-EM13CNT301",
+          "kind": "habilidade",
+          "text_sha256": "140fe867c70ea0a5b9558cef09e48fd18a8c91af9e6314bde88ea0e6b21049f4"
+        },
+        {
+          "code": "EM13CNT302",
+          "key": "projeto-CNT3-p78-campo-66-codigo-14-EM13CNT302",
+          "kind": "habilidade",
+          "text_sha256": "6058f187e2a093f6eaf081af48f7103c940f2e8e7b2df7bae502350bd10d9bc6"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        543.040771484375,
+        512.0885314941406,
+        951.7435302734375,
+        732.47802734375
+      ],
+      "field_key": "projeto-CNT4-p80-campo-69",
+      "native_sha256": "7c013399cc5536bea29dd92ec8bf720041055600814b227f1f9b6cb7efedc9cb",
+      "page": 80,
+      "project": "CNT4",
+      "units": [
+        {
+          "code": "EM13CNT102",
+          "key": "projeto-CNT4-p80-campo-69-codigo-1-EM13CNT102",
+          "kind": "habilidade",
+          "text_sha256": "68fa24e25a554d18726229a821ff93192156d44ff0afb06da31a5d51a2cb6b2f"
+        },
+        {
+          "code": "EM13CNT106",
+          "key": "projeto-CNT4-p80-campo-69-codigo-2-EM13CNT106",
+          "kind": "habilidade",
+          "text_sha256": "98a0192dcc566a5aafe0d3153c3dcbcc9b03a3f4ca10c280bab33e5ae944adc4"
+        },
+        {
+          "code": "EM13CNT201",
+          "key": "projeto-CNT4-p80-campo-69-codigo-3-EM13CNT201",
+          "kind": "habilidade",
+          "text_sha256": "be41746b070d80e09c7b5e4d40491a657b3506ab15cc2d6450c5fb21572e8816"
+        },
+        {
+          "code": "EM13CHS103",
+          "key": "projeto-CNT4-p80-campo-69-codigo-4-EM13CHS103",
+          "kind": "habilidade",
+          "text_sha256": "6ddbadbaf1862fdc13432e78cde547e38205ed50093e53094e4144fd5ec7c631"
+        },
+        {
+          "code": "EM13MAT405",
+          "key": "projeto-CNT4-p80-campo-69-codigo-5-EM13MAT405",
+          "kind": "habilidade",
+          "text_sha256": "d5f16f73c720cbbbbf8f91a2918f65d9f87064538609d72fbc16ad361b52b3f4"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        544.372802734375,
+        660.7853393554688,
+        951.7450561523438,
+        1032.0196533203125
+      ],
+      "field_key": "projeto-CNT5-p82-campo-72",
+      "native_sha256": "6e690ab12601bb05a59f00e293a20c3e5c7f5bf803a595930bb2b97655b548f8",
+      "page": 82,
+      "project": "CNT5",
+      "units": [
+        {
+          "code": "EMIFCG07",
+          "key": "projeto-CNT5-p82-campo-72-codigo-1-EMIFCG07",
+          "kind": "habilidade",
+          "text_sha256": "96c005a94de2cf3bc7b0e56896da9da7167946af05c8293792a15ee0cec789fc"
+        },
+        {
+          "code": "EMIFCG09",
+          "key": "projeto-CNT5-p82-campo-72-codigo-2-EMIFCG09",
+          "kind": "habilidade",
+          "text_sha256": "afd2bee08cba20b1bb84b196eeb2899c2ff70b58b2e597b1fee4ff16fe34a79c"
+        },
+        {
+          "code": "EMIFCNT08",
+          "key": "projeto-CNT5-p82-campo-72-codigo-3-EMIFCNT08",
+          "kind": "habilidade",
+          "text_sha256": "25076f428a6d4a61d7b84f79a6ac97d5fbb2b40f99a93e07c2e8cec71b0d2d65"
+        },
+        {
+          "code": "EMIFCNT09",
+          "key": "projeto-CNT5-p82-campo-72-codigo-4-EMIFCNT09",
+          "kind": "habilidade",
+          "text_sha256": "e94cfd0ae3d598b2539f2f3b19e135581ab33a94fe881e06986817652b34fc6d"
+        },
+        {
+          "code": "EMIFCG03",
+          "key": "projeto-CNT5-p82-campo-72-codigo-5-EMIFCG03",
+          "kind": "habilidade",
+          "text_sha256": "3535b21ca70e7b65e8b3ad65e21f9d6255d4218b6aead3ee6ca738ee3babb5bf"
+        },
+        {
+          "code": "EMIFCG05",
+          "key": "projeto-CNT5-p82-campo-72-codigo-6-EMIFCG05",
+          "kind": "habilidade",
+          "text_sha256": "771f112874681c86262184256738cc43731246354e40c1b7e107700272618d79"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        531.5159912109375,
+        664.6529541015625,
+        950.3775024414062,
+        1001.71240234375
+      ],
+      "field_key": "projeto-CNT6-p84-campo-75",
+      "native_sha256": "e461e4208cffea04f828d4b61861f9e0fabb605601d66d0591683542eb47e85d",
+      "page": 84,
+      "project": "CNT6",
+      "units": [
+        {
+          "code": "EM13CHS401",
+          "key": "projeto-CNT6-p84-campo-75-codigo-1-EM13CHS401",
+          "kind": "habilidade",
+          "text_sha256": "00ee9716d38e346b7e35b9a5f5b0dde55255783293844a63bc5139fb9d487141"
+        },
+        {
+          "code": "EM13CHS602",
+          "key": "projeto-CNT6-p84-campo-75-codigo-2-EM13CHS602",
+          "kind": "habilidade",
+          "text_sha256": "aa38c70909a50a504e5b8bac11b0671241ced411ec27a7ce78c06e365bc5e621"
+        },
+        {
+          "code": "EM13CNT301",
+          "key": "projeto-CNT6-p84-campo-75-codigo-3-EM13CNT301",
+          "kind": "habilidade",
+          "text_sha256": "056f6733c7fe74f93247cae9b84719c614158e42de6ff1a074355c2e7389ba93"
+        },
+        {
+          "code": "EM13CHS104",
+          "key": "projeto-CNT6-p84-campo-75-codigo-4-EM13CHS104",
+          "kind": "habilidade",
+          "text_sha256": "a455576f3bc0b8d8779e81925a0674ea267168e4d4c1c72edb684fe1180e8a2c"
+        },
+        {
+          "key": "projeto-CNT6-p84-campo-75-sem-codigo-5",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "4330820e361e151ad595107cb4a1396c334339552168daa0ff061ccd4d3ccc20"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.76607513427734,
+        128.79296875,
+        951.7360229492188,
+        320.0272521972656
+      ],
+      "field_key": "projeto-CNT7-p86-campo-78",
+      "native_sha256": "774723e6f3dc653d4d753885bd3ccd2b696571ceb9d506c687ca9b362bd2534b",
+      "page": 87,
+      "project": "CNT7",
+      "units": [
+        {
+          "code": "EM13CNT101",
+          "key": "projeto-CNT7-p86-campo-78-codigo-1-EM13CNT101",
+          "kind": "habilidade",
+          "text_sha256": "babd0fa3884eae37d7acf9189ac3b748464afd59c9794397b63efb6533415b5a"
+        },
+        {
+          "code": "EM13CNT301",
+          "key": "projeto-CNT7-p86-campo-78-codigo-2-EM13CNT301",
+          "kind": "habilidade",
+          "text_sha256": "912f7482a15e6287820c8d7ee3df1e159b470700955e956a7c5106979f19c206"
+        },
+        {
+          "code": "EM13CNT106",
+          "key": "projeto-CNT7-p86-campo-78-codigo-3-EM13CNT106",
+          "kind": "habilidade",
+          "text_sha256": "443c1439810a4929a26ea1bc1b48e5709867b3ae6659fc12b37cd123533eb580"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        536.0279541015625,
+        649.5269775390625,
+        951.7387084960938,
+        1139.36279296875
+      ],
+      "field_key": "projeto-CNT8-p88-campo-81",
+      "native_sha256": "d09b381d5b4d3b2165e139c01d3489de045d99464cc86726bc7560c12a167bf8",
+      "page": 88,
+      "project": "CNT8",
+      "units": [
+        {
+          "code": "EM13CNT104",
+          "key": "projeto-CNT8-p88-campo-81-codigo-1-EM13CNT104",
+          "kind": "habilidade",
+          "text_sha256": "b50258271a842079be1c92d9ab6f95d3f8c027b4615cf265ee718ff23372c34e"
+        },
+        {
+          "code": "EM13CNT101",
+          "key": "projeto-CNT8-p88-campo-81-codigo-2-EM13CNT101",
+          "kind": "habilidade",
+          "text_sha256": "f8de805483c9dc5dc63e74b66507c4484768d4c5213d99dc5b7405748a0d4e5b"
+        },
+        {
+          "code": "EM13CNT301",
+          "key": "projeto-CNT8-p88-campo-81-codigo-3-EM13CNT301",
+          "kind": "habilidade",
+          "text_sha256": "8ede212ea8aca4eaf17b0792165d57579f27f1c53d93029829c04697ac37aef4"
+        },
+        {
+          "code": "EM13CNT303",
+          "key": "projeto-CNT8-p88-campo-81-codigo-4-EM13CNT303",
+          "kind": "habilidade",
+          "text_sha256": "175f3757a6c59d637b5983a19651fce30de7f0385e057c4b4a1b661fccedb3ea"
+        },
+        {
+          "code": "EM13CNT309",
+          "key": "projeto-CNT8-p88-campo-81-codigo-5-EM13CNT309",
+          "kind": "habilidade",
+          "text_sha256": "0e788f4afd0eae3b8991019687f667a8c566509fa781caf2630c2fceca75d4af"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75,
+        688.5077514648438,
+        521.4607543945312,
+        1587.73193359375
+      ],
+      "field_key": "projeto-CNT9-p90-campo-84",
+      "native_sha256": "6ac85ed92d9ec6b0e1896a7628df1c8a5f088e4f87b45de541c35ce1cf162772",
+      "page": 90,
+      "project": "CNT9",
+      "units": [
+        {
+          "key": "projeto-CNT9-p90-campo-84-rotulo-1",
+          "kind": "grupo_curricular",
+          "text_sha256": "0966d9fc8c2e39d35b93e08c0cc0a129f9169faa55d90684ffecaa87c4293f48"
+        },
+        {
+          "key": "projeto-CNT9-p90-campo-84-rotulo-2",
+          "kind": "grupo_curricular",
+          "text_sha256": "d80423cdf3dd89e80d044894324b2adb3ce21b10ff6c486ea0f52f37ea34c298"
+        },
+        {
+          "code": "EMIFCG01",
+          "key": "projeto-CNT9-p90-campo-84-codigo-3-EMIFCG01",
+          "kind": "habilidade",
+          "text_sha256": "62f0de70db74894d5b45f5a891a1240749ee19146c0f083e788e3c50e02fcbf2"
+        },
+        {
+          "key": "projeto-CNT9-p90-campo-84-rotulo-4",
+          "kind": "grupo_curricular",
+          "text_sha256": "895bed5af8572c2a202cfb214c04474144abc4d600c765f5032776b695490f50"
+        },
+        {
+          "code": "EMIFCG04",
+          "key": "projeto-CNT9-p90-campo-84-codigo-5-EMIFCG04",
+          "kind": "habilidade",
+          "text_sha256": "eaeb25e2ff03e684125bea5d60c1fa2d9434b008dde1fa362d85f468c8c363e3"
+        },
+        {
+          "code": "EMIFCG05",
+          "key": "projeto-CNT9-p90-campo-84-codigo-6-EMIFCG05",
+          "kind": "habilidade",
+          "text_sha256": "63c76ad7b420b4199de88dd2d1c2a34e79b6bb2e607a8329b5732bb3bf78b3dc"
+        },
+        {
+          "key": "projeto-CNT9-p90-campo-84-rotulo-7",
+          "kind": "grupo_curricular",
+          "text_sha256": "d4bcbb71a111a75286323c963cfea0664fd03d3e054b422029a5e03e0ab260b1"
+        },
+        {
+          "code": "EMIFCG07",
+          "key": "projeto-CNT9-p90-campo-84-codigo-8-EMIFCG07",
+          "kind": "habilidade",
+          "text_sha256": "f7bc97beedcc5f0049f371d9977ae4511ca56d002f6816c1f47aa883668c973e"
+        },
+        {
+          "key": "projeto-CNT9-p90-campo-84-rotulo-9",
+          "kind": "grupo_curricular",
+          "text_sha256": "a0d799820a014ce44e2741bc9dd04cc6934f070d4f361d7e2da231ce7f2b7f41"
+        },
+        {
+          "code": "EMIFCG12",
+          "key": "projeto-CNT9-p90-campo-84-codigo-10-EMIFCG12",
+          "kind": "habilidade",
+          "text_sha256": "ca60d56180a0213bf01fda76ebd30eb4f3057e7fef6082c06e956f01a99a752c"
+        },
+        {
+          "key": "projeto-CNT9-p90-campo-84-rotulo-11",
+          "kind": "grupo_curricular",
+          "text_sha256": "d45b1def2c4aaf070a0ae348b99cceac42d167ddce36359af0353fdd8c2ef25c"
+        },
+        {
+          "key": "projeto-CNT9-p90-campo-84-rotulo-12",
+          "kind": "grupo_curricular",
+          "text_sha256": "d80423cdf3dd89e80d044894324b2adb3ce21b10ff6c486ea0f52f37ea34c298"
+        },
+        {
+          "code": "EMIFCNT01",
+          "key": "projeto-CNT9-p90-campo-84-codigo-13-EMIFCNT01",
+          "kind": "habilidade",
+          "text_sha256": "3f7c53dcc5ed10c29d34f428bd52adcc3a31361e928c3a8078742eeee376e011"
+        },
+        {
+          "key": "projeto-CNT9-p90-campo-84-rotulo-14",
+          "kind": "grupo_curricular",
+          "text_sha256": "895bed5af8572c2a202cfb214c04474144abc4d600c765f5032776b695490f50"
+        },
+        {
+          "code": "EMIFCNT05",
+          "key": "projeto-CNT9-p90-campo-84-codigo-15-EMIFCNT05",
+          "kind": "habilidade",
+          "text_sha256": "b749bc52529cf0c7ff40636ece42618f1fa082c1572685e913aebd113bc2e93e"
+        },
+        {
+          "code": "EMIFCNT06",
+          "key": "projeto-CNT9-p90-campo-84-codigo-16-EMIFCNT06",
+          "kind": "habilidade",
+          "text_sha256": "397fdbb39fbd7a48cda6cf304544cdea5d51a9b1a58fdf7f60e768ef7520909d"
+        },
+        {
+          "key": "projeto-CNT9-p90-campo-84-rotulo-17",
+          "kind": "grupo_curricular",
+          "text_sha256": "d4bcbb71a111a75286323c963cfea0664fd03d3e054b422029a5e03e0ab260b1"
+        },
+        {
+          "code": "EMIFCNT07",
+          "key": "projeto-CNT9-p90-campo-84-codigo-18-EMIFCNT07",
+          "kind": "habilidade",
+          "text_sha256": "9a687af78a3bea1cb7580c530ce567f1989d007465850e337edd26835301a15c"
+        },
+        {
+          "code": "EMIFCNT08",
+          "key": "projeto-CNT9-p90-campo-84-codigo-19-EMIFCNT08",
+          "kind": "habilidade",
+          "text_sha256": "25076f428a6d4a61d7b84f79a6ac97d5fbb2b40f99a93e07c2e8cec71b0d2d65"
+        },
+        {
+          "key": "projeto-CNT9-p90-campo-84-rotulo-20",
+          "kind": "grupo_curricular",
+          "text_sha256": "a0d799820a014ce44e2741bc9dd04cc6934f070d4f361d7e2da231ce7f2b7f41"
+        },
+        {
+          "code": "EMIFCNT10",
+          "key": "projeto-CNT9-p90-campo-84-codigo-21-EMIFCNT10",
+          "kind": "habilidade",
+          "text_sha256": "3aee4f6d590944926591e51c262108e807f7dd8646b9f03bc361c9284da96d0a"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        536.0279541015625,
+        1190.1209716796875,
+        951.7387084960938,
+        1545.6044921875
+      ],
+      "field_key": "projeto-CNT10-p92-campo-87",
+      "native_sha256": "ee9ff592f0aa80a85d2c0f44f43d91fc0962be604432ee7cd6e40a268841ebe1",
+      "page": 92,
+      "project": "CNT10",
+      "units": [
+        {
+          "code": "EMIFCG01",
+          "key": "projeto-CNT10-p92-campo-87-codigo-1-EMIFCG01",
+          "kind": "habilidade",
+          "text_sha256": "933d992e159f57801ac82423f7cbfa9638b1bb4d2e4da9223e5624db448a0052"
+        },
+        {
+          "code": "EMIFCG03",
+          "key": "projeto-CNT10-p92-campo-87-codigo-2-EMIFCG03",
+          "kind": "habilidade",
+          "text_sha256": "657389a1ae194fc50784aa59d8b5054a5047bcf8c5c49a92f170b636a8adea4a"
+        },
+        {
+          "code": "EMIFCNT01",
+          "key": "projeto-CNT10-p92-campo-87-codigo-3-EMIFCNT01",
+          "kind": "habilidade",
+          "text_sha256": "89e5561e6e99b6512883fdf720420e1f06794371a2e1218e9f91312c0ee2ee04"
+        },
+        {
+          "code": "EMIFCG04",
+          "key": "projeto-CNT10-p92-campo-87-codigo-4-EMIFCG04",
+          "kind": "habilidade",
+          "text_sha256": "04dfa2d8af08a425a82503278cb15a6f48ac58663fa584245b82fab4d8af04da"
+        },
+        {
+          "code": "EMIFCG02",
+          "key": "projeto-CNT10-p92-campo-87-codigo-5-EMIFCG02",
+          "kind": "habilidade",
+          "text_sha256": "720458c645abfd5bea210bf10c7a51e3a545db8dd1f8c9625a1b436a2ebf3100"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        537.410400390625,
+        527.2877197265625,
+        951.7388916015625,
+        717.0220336914062
+      ],
+      "field_key": "projeto-CNT11-p95-campo-90",
+      "native_sha256": "6d5564b4735b3b880862148bb8bc6a1de8d2d267b9fd922b62a8c24e5bec305f",
+      "page": 95,
+      "project": "CNT11",
+      "units": [
+        {
+          "code": "EM13CNT101",
+          "key": "projeto-CNT11-p95-campo-90-codigo-1-EM13CNT101",
+          "kind": "habilidade",
+          "text_sha256": "b545e2db008d112038465a4986c4c1b5206e56a1ec3822a80fd0759175b52026"
+        },
+        {
+          "code": "EM13CNT308",
+          "key": "projeto-CNT11-p95-campo-90-codigo-2-EM13CNT308",
+          "kind": "habilidade",
+          "text_sha256": "4b2355dfd5308cac491a8121ba5bd8d4ad4c9ff79329933b5c3472273050aaa9"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        537.5615844726562,
+        557.578125,
+        950.987060546875,
+        709.0623779296875
+      ],
+      "field_key": "projeto-CNT12-p96-campo-93",
+      "native_sha256": "565f678a673a82ded28de8434b789e852ab9b8a19fb40a47b21ba9b658323bd8",
+      "page": 96,
+      "project": "CNT12",
+      "units": [
+        {
+          "code": "EM13CNT107",
+          "key": "projeto-CNT12-p96-campo-93-codigo-1-EM13CNT107",
+          "kind": "habilidade",
+          "text_sha256": "95faee6db050b97cd6cb5fe658d421d14aa2a90ba60be8f9e46a2b08aaae5149"
+        },
+        {
+          "code": "EM13MAT315",
+          "key": "projeto-CNT12-p96-campo-93-codigo-2-EM13MAT315",
+          "kind": "habilidade",
+          "text_sha256": "8d824d74a35c0b76d41ef54557c8fdbf2cee5d47077c897741063c265ffe50c5"
+        },
+        {
+          "code": "EM13LGG701",
+          "key": "projeto-CNT12-p96-campo-93-codigo-3-EM13LGG701",
+          "kind": "habilidade",
+          "text_sha256": "7f86d4bde4c578010df47315f4931c59a3f1ecffa19f328401bdb48326ed82c5"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        537.5615844726562,
+        558.3173828125,
+        950.987060546875,
+        709.8016357421875
+      ],
+      "field_key": "projeto-CNT13-p97-campo-96",
+      "native_sha256": "565f678a673a82ded28de8434b789e852ab9b8a19fb40a47b21ba9b658323bd8",
+      "page": 97,
+      "project": "CNT13",
+      "units": [
+        {
+          "code": "EM13CNT107",
+          "key": "projeto-CNT13-p97-campo-96-codigo-1-EM13CNT107",
+          "kind": "habilidade",
+          "text_sha256": "95faee6db050b97cd6cb5fe658d421d14aa2a90ba60be8f9e46a2b08aaae5149"
+        },
+        {
+          "code": "EM13MAT315",
+          "key": "projeto-CNT13-p97-campo-96-codigo-2-EM13MAT315",
+          "kind": "habilidade",
+          "text_sha256": "8d824d74a35c0b76d41ef54557c8fdbf2cee5d47077c897741063c265ffe50c5"
+        },
+        {
+          "code": "EM13LGG701",
+          "key": "projeto-CNT13-p97-campo-96-codigo-3-EM13LGG701",
+          "kind": "habilidade",
+          "text_sha256": "7f86d4bde4c578010df47315f4931c59a3f1ecffa19f328401bdb48326ed82c5"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        542.5775756835938,
+        578.142578125,
+        952.4630737304688,
+        800.8780517578125
+      ],
+      "field_key": "projeto-CHT1-p99-campo-99",
+      "native_sha256": "81729c2ba0ddab727997b51ec5b151b5b68a92e87ecf407e9d6da22ca00ba3f6",
+      "page": 99,
+      "project": "CHT1",
+      "units": [
+        {
+          "code": "EM13CHS401",
+          "key": "projeto-CHT1-p99-campo-99-codigo-1-EM13CHS401",
+          "kind": "habilidade",
+          "text_sha256": "70c83485c1d5e32cadfaba1bf34249d447303f4f43b151fc6cc402b1441367e4"
+        },
+        {
+          "code": "EM13CHS606",
+          "key": "projeto-CHT1-p99-campo-99-codigo-2-EM13CHS606",
+          "kind": "habilidade",
+          "text_sha256": "3400c5f1b9e66c53cbaa6894285119303763286a12d9cfb572ca66a182713a3b"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        539.9328002929688,
+        596.8349609375,
+        951.7413330078125,
+        1133.0670166015625
+      ],
+      "field_key": "projeto-CHT2-p101-campo-102",
+      "native_sha256": "cee9b13d2d9f29f75224b1abf9ca9bc23a3def57ef20ee468617b66abcfff27d",
+      "page": 101,
+      "project": "CHT2",
+      "units": [
+        {
+          "code": "EMIFCG01",
+          "key": "projeto-CHT2-p101-campo-102-codigo-1-EMIFCG01",
+          "kind": "habilidade",
+          "text_sha256": "62f0de70db74894d5b45f5a891a1240749ee19146c0f083e788e3c50e02fcbf2"
+        },
+        {
+          "code": "EMIFCHS01",
+          "key": "projeto-CHT2-p101-campo-102-codigo-2-EMIFCHS01",
+          "kind": "habilidade",
+          "text_sha256": "5627fc400969e038236783b2c28a0753ea7c566a68b7c0f825c201284aa5d6c9"
+        },
+        {
+          "code": "EMIFCHS02",
+          "key": "projeto-CHT2-p101-campo-102-codigo-3-EMIFCHS02",
+          "kind": "habilidade",
+          "text_sha256": "b896da6fd61423c39d2502d220a75c8ec9902ca6fa06c7c9f499b732f85fdec1"
+        },
+        {
+          "code": "EMIFCG04",
+          "key": "projeto-CHT2-p101-campo-102-codigo-4-EMIFCG04",
+          "kind": "habilidade",
+          "text_sha256": "c691325bc86c94f88c7ecf05f85ca2790ba88ffbd2da00cf7e526ca62d45c7f9"
+        },
+        {
+          "code": "EMIFCG05",
+          "key": "projeto-CHT2-p101-campo-102-codigo-5-EMIFCG05",
+          "kind": "habilidade",
+          "text_sha256": "771f112874681c86262184256738cc43731246354e40c1b7e107700272618d79"
+        },
+        {
+          "code": "EMIFCHS04",
+          "key": "projeto-CHT2-p101-campo-102-codigo-6-EMIFCHS04",
+          "kind": "habilidade",
+          "text_sha256": "328a4137367572789d783c67b8994be499efb2ee6ac4dacc102dc1eb4008c5e2"
+        },
+        {
+          "code": "EMIFCG07",
+          "key": "projeto-CHT2-p101-campo-102-codigo-7-EMIFCG07",
+          "kind": "habilidade",
+          "text_sha256": "8812bec8c8c79c4359fe78ebcbdca4aeecab0d92e888b055b288e209db92d6cf"
+        },
+        {
+          "code": "EMIFCHS06",
+          "key": "projeto-CHT2-p101-campo-102-codigo-8-EMIFCHS06",
+          "kind": "habilidade",
+          "text_sha256": "3a0ce5175924a52c99ba9a9328e8b3be0df85df9f2854f6f18e811d7976a0b15"
+        },
+        {
+          "code": "EMIFCHS07",
+          "key": "projeto-CHT2-p101-campo-102-codigo-9-EMIFCHS07",
+          "kind": "habilidade",
+          "text_sha256": "55226c99d4d662d3e52681d9437d6d4bad4d5e4df1d60af5ee8ed76a873cba30"
+        },
+        {
+          "code": "EMIFCG12",
+          "key": "projeto-CHT2-p101-campo-102-codigo-10-EMIFCG12",
+          "kind": "habilidade",
+          "text_sha256": "9af568d3571e8c906e1d72c32d5c6e2db0cb244944453a46377ba4bff7cec44d"
+        },
+        {
+          "code": "EMIFCHS09",
+          "key": "projeto-CHT2-p101-campo-102-codigo-11-EMIFCHS09",
+          "kind": "habilidade",
+          "text_sha256": "d72c2f02ceacd2b76088468345d1db9713cb2ad297d17bdcd8b9c64f5a9344f8"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        109.26360321044922,
+        965.9405517578125,
+        523.9160766601562,
+        1558.4598388671875
+      ],
+      "field_key": "projeto-CHT3-p103-campo-105",
+      "native_sha256": "711ed5e91ad511bb1038bf5b1842055d692266b128fdfe819fd87fdb574712e6",
+      "page": 103,
+      "project": "CHT3",
+      "units": [
+        {
+          "key": "projeto-CHT3-p103-campo-105-rotulo-1",
+          "kind": "grupo_curricular",
+          "text_sha256": "a2b3aaa56f6da4db885e3ada6a6b26d17b90c8ef6e42ae58c21f08714e00cf0f"
+        },
+        {
+          "code": "EM13LGG101",
+          "key": "projeto-CHT3-p103-campo-105-codigo-2-EM13LGG101",
+          "kind": "habilidade",
+          "text_sha256": "bc66ab9b337ec69eb878b467c01136e9d6a1ce2895cc32d41cad96d7b3f32ccc"
+        },
+        {
+          "code": "EM13LGG302",
+          "key": "projeto-CHT3-p103-campo-105-codigo-3-EM13LGG302",
+          "kind": "habilidade",
+          "text_sha256": "0d5de20781ff937aab71f20a1c7380cc31b29adc620843c2d879951105e85b85"
+        },
+        {
+          "key": "projeto-CHT3-p103-campo-105-rotulo-4",
+          "kind": "grupo_curricular",
+          "text_sha256": "dc3143e8c38808a18fd23d289e61d331caf318a14eb3264534a2e010e5b2064a"
+        },
+        {
+          "code": "EM13CHS101",
+          "key": "projeto-CHT3-p103-campo-105-codigo-5-EM13CHS101",
+          "kind": "habilidade",
+          "text_sha256": "e7594db31f568729ac359c89b2f4bf0cabc7e283cbdfe699acee36a38d7d9813"
+        },
+        {
+          "code": "EM13CHS202",
+          "key": "projeto-CHT3-p103-campo-105-codigo-6-EM13CHS202",
+          "kind": "habilidade",
+          "text_sha256": "6e54e804deaebb941bede835f3b3cd180453a793732d898ef50c0f9871782870"
+        },
+        {
+          "code": "EM13CHS601",
+          "key": "projeto-CHT3-p103-campo-105-codigo-7-EM13CHS601",
+          "kind": "habilidade",
+          "text_sha256": "247a7994c0230d25745f99b0901c3a43d27ec8b137715314545253e2468cb5f8"
+        },
+        {
+          "key": "projeto-CHT3-p103-campo-105-rotulo-8",
+          "kind": "grupo_curricular",
+          "text_sha256": "98841655d53a4e289210bf58060c29afe6c3a33e3c9a791fc72adc3f2f97bef5"
+        },
+        {
+          "code": "EM13GEO101",
+          "key": "projeto-CHT3-p103-campo-105-codigo-9-EM13GEO101",
+          "kind": "habilidade",
+          "text_sha256": "3be256bf6de593c80b5281507d49ac4b7049db53ac0a32ef35950a9009529b25"
+        },
+        {
+          "code": "EM13GEO201",
+          "key": "projeto-CHT3-p103-campo-105-codigo-10-EM13GEO201",
+          "kind": "habilidade",
+          "text_sha256": "e231aec3d5d5ac718366e426098370746794d68af66600f0ef54ea116aac7c1f"
+        },
+        {
+          "code": "EM13GEO401",
+          "key": "projeto-CHT3-p103-campo-105-codigo-11-EM13GEO401",
+          "kind": "habilidade",
+          "text_sha256": "f650e67e5015aaf4129354dd41dce1debacc3085bd598afe9bc70081de279cbe"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        537.095947265625,
+        592.0433349609375,
+        951.740234375,
+        1094.445556640625
+      ],
+      "field_key": "projeto-CHT4-p105-campo-108",
+      "native_sha256": "70ad98842f78ab8bd7e91fe481b62204a989df079942da9b6f9674f0516b497f",
+      "page": 105,
+      "project": "CHT4",
+      "units": [
+        {
+          "code": "EM13CHS101",
+          "key": "projeto-CHT4-p105-campo-108-codigo-1-EM13CHS101",
+          "kind": "habilidade",
+          "text_sha256": "0cc406c721e435a1e8baceb23b6411331424c815e68b1203a027b87b98f865d7"
+        },
+        {
+          "code": "EM13CHS502",
+          "key": "projeto-CHT4-p105-campo-108-codigo-2-EM13CHS502",
+          "kind": "habilidade",
+          "text_sha256": "ca9e6dec036229f7ae2b3f7b18dda560a5c18245fbe92a15bcca049cd6b573f6"
+        },
+        {
+          "code": "EM13CHS602",
+          "key": "projeto-CHT4-p105-campo-108-codigo-3-EM13CHS602",
+          "kind": "habilidade",
+          "text_sha256": "94b939c7898b7fc48ec91f9dddcbad3ed5206fe5576717d238dffd391389dbb4"
+        },
+        {
+          "code": "EM13LGG101",
+          "key": "projeto-CHT4-p105-campo-108-codigo-4-EM13LGG101",
+          "kind": "habilidade",
+          "text_sha256": "49a355025762a206faf34f2ff9717d5f09b754ee68e27e69bc7bd6da8db647d8"
+        },
+        {
+          "code": "EM13LGG502",
+          "key": "projeto-CHT4-p105-campo-108-codigo-5-EM13LGG502",
+          "kind": "habilidade",
+          "text_sha256": "9ac66a302c989d5e94527a3d26a5c7f241b442db95444571c27089ed7bc959f5"
+        },
+        {
+          "code": "EMIFLGG01",
+          "key": "projeto-CHT4-p105-campo-108-codigo-6-EMIFLGG01",
+          "kind": "habilidade",
+          "text_sha256": "4deb11400bf7e078f581ce78bd8ab104a9f65b1a83a9257662c36808e84fb603"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        536.0303955078125,
+        537.6485595703125,
+        951.7366943359375,
+        743.8828125
+      ],
+      "field_key": "projeto-CHT5-p108-campo-111",
+      "native_sha256": "6e69b32f8d2d5448ae11e025f7019f06697185e3968ccdbd47268e90f4db1910",
+      "page": 108,
+      "project": "CHT5",
+      "units": [
+        {
+          "code": "EM13CHS401",
+          "key": "projeto-CHT5-p108-campo-111-codigo-1-EM13CHS401",
+          "kind": "habilidade",
+          "text_sha256": "ddadc681ef73db8f338110526e8f5147043f0492c4176d9aa340bd9923331ab4"
+        },
+        {
+          "code": "EM13CHS502",
+          "key": "projeto-CHT5-p108-campo-111-codigo-2-EM13CHS502",
+          "kind": "habilidade",
+          "text_sha256": "15c56c91734fa86b3150f9b96f5f5b7e7e37a0ad73f97980466446b5d3aa7373"
+        },
+        {
+          "code": "EM13CHS603",
+          "key": "projeto-CHT5-p108-campo-111-codigo-3-EM13CHS603",
+          "kind": "habilidade",
+          "text_sha256": "d989dd9f44bf8675cc9e5cbeece10f29173598151365bc791522d903dc0a8a16"
+        },
+        {
+          "code": "EM13CHS604",
+          "key": "projeto-CHT5-p108-campo-111-codigo-4-EM13CHS604",
+          "kind": "habilidade",
+          "text_sha256": "86c83966afec953207c412a038e6e4e204c8fc70ab07365d8cf7f99c34632288"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        536.0327758789062,
+        557.7581787109375,
+        951.7360229492188,
+        730.992431640625
+      ],
+      "field_key": "projeto-CHT6-p110-campo-113",
+      "native_sha256": "64f5e66e5fba073aac8e26b58bbe87e05cb4f2ed9067cbfb927550696e981235",
+      "page": 110,
+      "project": "CHT6",
+      "units": [
+        {
+          "code": "EM13CHS103",
+          "key": "projeto-CHT6-p110-campo-113-codigo-1-EM13CHS103",
+          "kind": "habilidade",
+          "text_sha256": "41b573fc36e46f24a77071dbceb9915cbda93e97bdb6858b47a8e2892d35f113"
+        },
+        {
+          "code": "EM13CHS104",
+          "key": "projeto-CHT6-p110-campo-113-codigo-2-EM13CHS104",
+          "kind": "habilidade",
+          "text_sha256": "9cbbc215a54f13914026a6e74fcf5fae9fe0ed9e451af64b5d91d0e82888f768"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        533.7407836914062,
+        557.7293701171875,
+        951.8920288085938,
+        643.7881469726562
+      ],
+      "field_key": "projeto-CHT7-p111-campo-117",
+      "native_sha256": "64b33a00cb8e358dc883baa4d7508fe3379ec613d534b3cb6e9bf081fb85c3d7",
+      "page": 111,
+      "project": "CHT7",
+      "units": [
+        {
+          "key": "projeto-CHT7-p111-campo-117-sem-codigo-1",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "5a9ee9cba39de5e9b7fc0a2ed537ee9957cc3eddf922938966cd0ac75802d15b"
+        },
+        {
+          "key": "projeto-CHT7-p111-campo-117-sem-codigo-2",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "f0ca14e55ea48f19e92c39927255d0a8d749b785eedda25d131be698ede2120e"
+        },
+        {
+          "key": "projeto-CHT7-p111-campo-117-sem-codigo-3",
+          "kind": "habilidade_local_sem_codigo",
+          "text_sha256": "9d71b49cf11f607640da6436c7f22c7ad348fadda26bbe09866fa6b258157bd4"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        536.0279541015625,
+        565.7753295898438,
+        951.7387084960938,
+        904.7596435546875
+      ],
+      "field_key": "projeto-CHT8-p112-campo-120",
+      "native_sha256": "060b7d818832dc8df2a43af742488670ac6589e55e7e96317e8da249d88ee78e",
+      "page": 112,
+      "project": "CHT8",
+      "units": [
+        {
+          "code": "EM13CHS101",
+          "key": "projeto-CHT8-p112-campo-120-codigo-1-EM13CHS101",
+          "kind": "habilidade",
+          "text_sha256": "0cc406c721e435a1e8baceb23b6411331424c815e68b1203a027b87b98f865d7"
+        },
+        {
+          "code": "EM13CHS103",
+          "key": "projeto-CHT8-p112-campo-120-codigo-2-EM13CHS103",
+          "kind": "habilidade",
+          "text_sha256": "5f4fee8a8166928637820d17e99391141c38cbdd92718b520fb6bb135be479bd"
+        },
+        {
+          "code": "EM13CHS201",
+          "key": "projeto-CHT8-p112-campo-120-codigo-3-EM13CHS201",
+          "kind": "habilidade",
+          "text_sha256": "95c3e24d511cb304ce6dfb3752f84e7bfc4d9ffe04473e123991c1d0e06de770"
+        },
+        {
+          "code": "EM13CHS205",
+          "key": "projeto-CHT8-p112-campo-120-codigo-4-EM13CHS205",
+          "kind": "habilidade",
+          "text_sha256": "4354ddc9122cd6e369703ab3fa74f7f86a5c6b76ec0d00dff93fe3a093aa5571"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        106.75007629394531,
+        120.5445556640625,
+        951.7450561523438,
+        1463.008056640625
+      ],
+      "field_key": "projeto-CHT9-p114-campo-123",
+      "native_sha256": "f3c2305329e759370d18283ad21130ad0dcf41c44b978116410401c9079b9cd7",
+      "page": 115,
+      "project": "CHT9",
+      "units": [
+        {
+          "code": "EMIFCHS01",
+          "key": "projeto-CHT9-p114-campo-123-codigo-1-EMIFCHS01",
+          "kind": "habilidade",
+          "text_sha256": "d0b3e5fa1dc3cb2405d1ae328f768b205c3e8852b1de66f46cc5fb989ac62d4f"
+        },
+        {
+          "code": "EMIFCHS02",
+          "key": "projeto-CHT9-p114-campo-123-codigo-2-EMIFCHS02",
+          "kind": "habilidade",
+          "text_sha256": "a375011d8ed33c16fd6b60a064069a3aa776ff36878b43b13190b004ef5ad3e9"
+        },
+        {
+          "code": "EMIFCHS03",
+          "key": "projeto-CHT9-p114-campo-123-codigo-3-EMIFCHS03",
+          "kind": "habilidade",
+          "text_sha256": "73a68ef5d170659e9a79b912c34e9e0d3f69ae9d9b0f346bfdbe7fb62dbbb2a5"
+        },
+        {
+          "code": "EMIFCHS04",
+          "key": "projeto-CHT9-p114-campo-123-codigo-4-EMIFCHS04",
+          "kind": "habilidade",
+          "text_sha256": "10231339a0b9f1fcc431a7a22bddbf0577835865103438369d882ce22c087fa9"
+        },
+        {
+          "code": "EMIFCHS05",
+          "key": "projeto-CHT9-p114-campo-123-codigo-5-EMIFCHS05",
+          "kind": "habilidade",
+          "text_sha256": "3df7b1e68be24e088eb718e99cd1227c0c86102f273837b8155e4787c12cd10c"
+        },
+        {
+          "code": "EMIFCHS06",
+          "key": "projeto-CHT9-p114-campo-123-codigo-6-EMIFCHS06",
+          "kind": "habilidade",
+          "text_sha256": "3652fed0d16966bf37d8498d883c52524a5c1ba1f632b1e544efea667a56c2a8"
+        },
+        {
+          "code": "EMIFCHS07",
+          "key": "projeto-CHT9-p114-campo-123-codigo-7-EMIFCHS07",
+          "kind": "habilidade",
+          "text_sha256": "44131340d06786e088dc2c0a0f0e70498fe41ef98b12663fc9bdcbd33b024145"
+        },
+        {
+          "code": "EMIFCHS08",
+          "key": "projeto-CHT9-p114-campo-123-codigo-8-EMIFCHS08",
+          "kind": "habilidade",
+          "text_sha256": "e514ea99bfa82d788dfd9693136faa17ad00a0786a1da76907db8484c3f4250a"
+        },
+        {
+          "code": "EMIFCHS09",
+          "key": "projeto-CHT9-p114-campo-123-codigo-9-EMIFCHS09",
+          "kind": "habilidade",
+          "text_sha256": "c50889b6e396d4158bbd535270c14853936a79381b0aec85d2f50f83ce1a4ae2"
+        },
+        {
+          "code": "EMIFCHS10",
+          "key": "projeto-CHT9-p114-campo-123-codigo-10-EMIFCHS10",
+          "kind": "habilidade",
+          "text_sha256": "880fc525bd1fec102959726eda7a0e86d85296cd82f9d6af681757989cc43905"
+        },
+        {
+          "code": "EMIFCHS11",
+          "key": "projeto-CHT9-p114-campo-123-codigo-11-EMIFCHS11",
+          "kind": "habilidade",
+          "text_sha256": "d40dfc3537fb909daf5838dec6d6a283b6901e11255912267eaa550569c2b858"
+        },
+        {
+          "code": "EMIFCHS12",
+          "key": "projeto-CHT9-p114-campo-123-codigo-12-EMIFCHS12",
+          "kind": "habilidade",
+          "text_sha256": "cb4327a7dcd1b202a6c1a99f6a4c11e290ed8d884f1f7dc451761bbc88d60195"
+        },
+        {
+          "code": "EMIFCG01",
+          "key": "projeto-CHT9-p114-campo-123-codigo-13-EMIFCG01",
+          "kind": "habilidade",
+          "text_sha256": "7faeb931e1c13a6d062fc53f66de270e35263c26976f2353797e8499a6d5efff"
+        },
+        {
+          "code": "EMIFCG02",
+          "key": "projeto-CHT9-p114-campo-123-codigo-14-EMIFCG02",
+          "kind": "habilidade",
+          "text_sha256": "c10bc5a8798afdd08b65f64bf6972b8bbd1f7d9500153026ac9297725a7e36b7"
+        },
+        {
+          "code": "EMIFCG03",
+          "key": "projeto-CHT9-p114-campo-123-codigo-15-EMIFCG03",
+          "kind": "habilidade",
+          "text_sha256": "5243e20a6804abf6328f888de9cc09bdd7cc08c4611202688a5fa19fc2635547"
+        },
+        {
+          "code": "EMIFCG04",
+          "key": "projeto-CHT9-p114-campo-123-codigo-16-EMIFCG04",
+          "kind": "habilidade",
+          "text_sha256": "716d61d127c3c7d36872d3b6d4d69e748028ff78db13914190cf0bbcba946535"
+        },
+        {
+          "code": "EMIFCG05",
+          "key": "projeto-CHT9-p114-campo-123-codigo-17-EMIFCG05",
+          "kind": "habilidade",
+          "text_sha256": "d4ab2f18d8b50278d5b200e5ba3ff62581e99cedf6590a93ae591ccda053a674"
+        },
+        {
+          "code": "EMIFCG06",
+          "key": "projeto-CHT9-p114-campo-123-codigo-18-EMIFCG06",
+          "kind": "habilidade",
+          "text_sha256": "de16d3ea35d348b194bed7900fb6795e41bf414ebf661926e9af590d15b6e0f8"
+        },
+        {
+          "code": "EMIFCG07",
+          "key": "projeto-CHT9-p114-campo-123-codigo-19-EMIFCG07",
+          "kind": "habilidade",
+          "text_sha256": "8e07cf5bf67209eb06e98f389a564afa269b866f59178d6e9d85430a19027402"
+        },
+        {
+          "code": "EMIFCG08",
+          "key": "projeto-CHT9-p114-campo-123-codigo-20-EMIFCG08",
+          "kind": "habilidade",
+          "text_sha256": "35a167dc662b74606269b7611b0eb7731a76c96c6f557d32bf9cb40ef1034e5a"
+        },
+        {
+          "code": "EMIFCG09",
+          "key": "projeto-CHT9-p114-campo-123-codigo-21-EMIFCG09",
+          "kind": "habilidade",
+          "text_sha256": "67984b0a41bfb3fd54a70d89db12b2e1f40ceaa99862fd19ac870cdbdb0765f5"
+        },
+        {
+          "code": "EM13CHS103",
+          "key": "projeto-CHT9-p114-campo-123-codigo-22-EM13CHS103",
+          "kind": "habilidade",
+          "text_sha256": "bc7e97e5d2d61c0506d682c68a34855ba3a477322b100d4660823164fdbe6fa8"
+        },
+        {
+          "code": "EM13CHS304",
+          "key": "projeto-CHT9-p114-campo-123-codigo-23-EM13CHS304",
+          "kind": "habilidade",
+          "text_sha256": "fa22de424a56444f26764f2203dd588ba39583022d05fccafb74d57ed5670d3e"
+        },
+        {
+          "code": "EM13CHS501",
+          "key": "projeto-CHT9-p114-campo-123-codigo-24-EM13CHS501",
+          "kind": "habilidade",
+          "text_sha256": "e020885f5e1f1ba18df3f746be36a255630a6a715dbde209305b01dfd663a7b0"
+        },
+        {
+          "code": "EM13CHS502",
+          "key": "projeto-CHT9-p114-campo-123-codigo-25-EM13CHS502",
+          "kind": "habilidade",
+          "text_sha256": "9d34881f69c1228b3432f824a5a2373a5b3f06ff5c6f065782e275346fdcd8eb"
+        },
+        {
+          "code": "EM13CHS503",
+          "key": "projeto-CHT9-p114-campo-123-codigo-26-EM13CHS503",
+          "kind": "habilidade",
+          "text_sha256": "3762a849b50b442fc46f2d555847f6460ac29b3cc77cea4da6802a84c69ec9b4"
+        },
+        {
+          "code": "EM13CHS601",
+          "key": "projeto-CHT9-p114-campo-123-codigo-27-EM13CHS601",
+          "kind": "habilidade",
+          "text_sha256": "61461e68b580ad9838f80cbe6556edd166ca33676d99b3ab55505559cb7ce52b"
+        },
+        {
+          "code": "EM13CHS603",
+          "key": "projeto-CHT9-p114-campo-123-codigo-28-EM13CHS603",
+          "kind": "habilidade",
+          "text_sha256": "fe88efc1bdd282f822002ebb0e833e57bee01a4fc3144f0ef7b8fc9dd73cbf25"
+        },
+        {
+          "code": "EM13CHS605",
+          "key": "projeto-CHT9-p114-campo-123-codigo-29-EM13CHS605",
+          "kind": "habilidade",
+          "text_sha256": "5c9f1e93a943b3f0ad55bfda50882ec1e6f5f96ccf3157cd3240c8c990243988"
+        },
+        {
+          "code": "EM13CHS606",
+          "key": "projeto-CHT9-p114-campo-123-codigo-30-EM13CHS606",
+          "kind": "habilidade",
+          "text_sha256": "56ff4db25686364ca411339faae5b3ecd36ba7f6d861d2448ba0fd2e95f297a1"
+        },
+        {
+          "code": "EM13LGG204",
+          "key": "projeto-CHT9-p114-campo-123-codigo-31-EM13LGG204",
+          "kind": "habilidade",
+          "text_sha256": "bf3f44fe3a92c8812a91dc0ebecd8ffcb4f8f89b8e10e25511141941c373814f"
+        },
+        {
+          "code": "EM13LGG304",
+          "key": "projeto-CHT9-p114-campo-123-codigo-32-EM13LGG304",
+          "kind": "habilidade",
+          "text_sha256": "a537266ece350d6d932a586fe890d1040628f38fc7b84735276a298274d641cf"
+        },
+        {
+          "code": "EM13LGG704",
+          "key": "projeto-CHT9-p114-campo-123-codigo-33-EM13LGG704",
+          "kind": "habilidade",
+          "text_sha256": "d14b589e3bf2ab49110c21780946c3621a9365fb106893932c05738f237c8249"
+        },
+        {
+          "code": "EMIFCG01",
+          "key": "projeto-CHT9-p114-campo-123-codigo-34-EMIFCG01",
+          "kind": "habilidade",
+          "text_sha256": "7faeb931e1c13a6d062fc53f66de270e35263c26976f2353797e8499a6d5efff"
+        },
+        {
+          "code": "EMIFCG03",
+          "key": "projeto-CHT9-p114-campo-123-codigo-35-EMIFCG03",
+          "kind": "habilidade",
+          "text_sha256": "5243e20a6804abf6328f888de9cc09bdd7cc08c4611202688a5fa19fc2635547"
+        },
+        {
+          "code": "EMIFCG07",
+          "key": "projeto-CHT9-p114-campo-123-codigo-36-EMIFCG07",
+          "kind": "habilidade",
+          "text_sha256": "8e07cf5bf67209eb06e98f389a564afa269b866f59178d6e9d85430a19027402"
+        },
+        {
+          "code": "EMIFCG08",
+          "key": "projeto-CHT9-p114-campo-123-codigo-37-EMIFCG08",
+          "kind": "habilidade",
+          "text_sha256": "35a167dc662b74606269b7611b0eb7731a76c96c6f557d32bf9cb40ef1034e5a"
+        },
+        {
+          "code": "EMIFCHSA01",
+          "key": "projeto-CHT9-p114-campo-123-codigo-38-EMIFCHSA01",
+          "kind": "habilidade",
+          "text_sha256": "d0b3e5fa1dc3cb2405d1ae328f768b205c3e8852b1de66f46cc5fb989ac62d4f"
+        },
+        {
+          "code": "EMIFCHSA10",
+          "key": "projeto-CHT9-p114-campo-123-codigo-39-EMIFCHSA10",
+          "kind": "habilidade",
+          "text_sha256": "dd5cdd244d90194a687ab8810ddef90f11d1a657a8ec756a8cfc0acb90d9931d"
+        }
+      ]
+    },
+    {
+      "bbox": [
+        105.75719451904297,
+        133.29296875,
+        951.7421875,
+        584.0272216796875
+      ],
+      "field_key": "projeto-CHT10-p116-campo-126",
+      "native_sha256": "d30bad2891982a0d0c323f0814ee289b29091c5a5f0a2177087ad6e7f19e97fd",
+      "page": 117,
+      "project": "CHT10",
+      "units": [
+        {
+          "code": "EMIFCG01",
+          "key": "projeto-CHT10-p116-campo-126-codigo-1-EMIFCG01",
+          "kind": "habilidade",
+          "text_sha256": "b5c518e56f98c8d48db7bbc8236e4f54718470ebc9da9c9b85a65d78f7550dec"
+        },
+        {
+          "code": "EMIFCG02",
+          "key": "projeto-CHT10-p116-campo-126-codigo-2-EMIFCG02",
+          "kind": "habilidade",
+          "text_sha256": "a215837fc6bc2164f00ce0f28b6531d7e165ea77323be375ef6c42afeb2618e3"
+        },
+        {
+          "code": "EMIFCG03",
+          "key": "projeto-CHT10-p116-campo-126-codigo-3-EMIFCG03",
+          "kind": "habilidade",
+          "text_sha256": "383b81c8228c14c968909fb8e59d5a64b3d511f343f196fb026ff816b8eaa7b0"
+        },
+        {
+          "code": "EMIFCG04",
+          "key": "projeto-CHT10-p116-campo-126-codigo-4-EMIFCG04",
+          "kind": "habilidade",
+          "text_sha256": "587efddddaeeb9556b4ccb54d39cd65fe73a9aacd9756c014c01aaf637c6139e"
+        },
+        {
+          "code": "EMIFCG05",
+          "key": "projeto-CHT10-p116-campo-126-codigo-5-EMIFCG05",
+          "kind": "habilidade",
+          "text_sha256": "4ecf5cdd1072f497668bda1fe2030f9f594dab95be73ed13974bc3138f1e724e"
+        },
+        {
+          "code": "EMIFCG06",
+          "key": "projeto-CHT10-p116-campo-126-codigo-6-EMIFCG06",
+          "kind": "habilidade",
+          "text_sha256": "15cc48a89ed7c39150e20d66b6a0b3db64d6a28a65b6443a461e3a43c5124a0f"
+        },
+        {
+          "code": "EMIFCG07",
+          "key": "projeto-CHT10-p116-campo-126-codigo-7-EMIFCG07",
+          "kind": "habilidade",
+          "text_sha256": "c91577295181cad8e513b28486206cb48eb588b1534f54fec9faa2c1620543ec"
+        },
+        {
+          "code": "EMIFCG09",
+          "key": "projeto-CHT10-p116-campo-126-codigo-8-EMIFCG09",
+          "kind": "habilidade",
+          "text_sha256": "ec5b763ad1b6c59e532377e3406cc9952c5275d0660707980cd848f73444be9e"
+        },
+        {
+          "code": "EMIFCHS01",
+          "key": "projeto-CHT10-p116-campo-126-codigo-9-EMIFCHS01",
+          "kind": "habilidade",
+          "text_sha256": "aa50036c16278c994123491a20434e4c31639d8cb54c02fdc3d8f4df37862139"
+        },
+        {
+          "code": "EMIFCHS02",
+          "key": "projeto-CHT10-p116-campo-126-codigo-10-EMIFCHS02",
+          "kind": "habilidade",
+          "text_sha256": "d4d389d92e228650fff4527919d8757017a298898c1358df46d638e1f599ff95"
+        },
+        {
+          "code": "EMIFCHS03",
+          "key": "projeto-CHT10-p116-campo-126-codigo-11-EMIFCHS03",
+          "kind": "habilidade",
+          "text_sha256": "b082816bdc2927d79bd41b90f0de4e09aa15b35b83af2833ccd11cc7e4942ce4"
+        },
+        {
+          "code": "EMIFCHS04",
+          "key": "projeto-CHT10-p116-campo-126-codigo-12-EMIFCHS04",
+          "kind": "habilidade",
+          "text_sha256": "8b41d1262456dfec0d451d85bcdd99eef823cb79198d3525ae169a30cd2162e3"
+        },
+        {
+          "code": "EMIFCHS05",
+          "key": "projeto-CHT10-p116-campo-126-codigo-13-EMIFCHS05",
+          "kind": "habilidade",
+          "text_sha256": "c3e9b55ad1b872609fd05fb2db4937edacd6eadad0f97e57a383aba3a1ee5283"
+        }
+      ]
+    }
+  ],
+  "source_id": "ro-eletivas-2026",
+  "source_sha256": "709c00a8a8993683a3529f2cfb0d7674f2b79ced733ad45be2e8213f39217ddb"
+}

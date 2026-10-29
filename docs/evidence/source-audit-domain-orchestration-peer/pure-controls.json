@@ -1,0 +1,35 @@
+{
+  "scope": "pure-stub-control; no SQL/artifact writes; artifact verification stubbed to isolate gate",
+  "cases": [
+    {
+      "label": "absent",
+      "source_schema": "accepted",
+      "code": "PEER_SQL_ENTRY"
+    },
+    {
+      "label": "empty-array",
+      "source_schema": "accepted",
+      "code": "PEER_SQL_ENTRY"
+    },
+    {
+      "label": "object",
+      "source_schema": "accepted",
+      "code": "PEER_SQL_ENTRY"
+    },
+    {
+      "label": "null",
+      "source_schema": "accepted",
+      "code": "PEER_SQL_ENTRY"
+    },
+    {
+      "label": "string",
+      "source_schema": "accepted",
+      "code": "PEER_SQL_ENTRY"
+    },
+    {
+      "label": "nonempty-array",
+      "source_schema": "accepted",
+      "code": "INGESTION_PROVENANCE_REQUIRED"
+    }
+  ]
+}

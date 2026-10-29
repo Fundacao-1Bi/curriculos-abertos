@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "at": "2026-10-28T13:55:39.028Z",
+  "scope": "one explicitly authorized obsolete project build cache record; no image/volume/global prune",
+  "documentation": "https://docs.docker.com/reference/cli/docker/buildx/prune/",
+  "id": "6qkq1zfjnag04hq2qhs7uex4x",
+  "before": "ID:           6qkq1zfjnag04hq2qhs7uex4x\nParents:\n - nrudrc8fmb60w8j2tqcgtm6qv\nCreated at:   2026-10-28 05:23:46.562314428 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         1.424GB\nDescription:  [production 5/6] COPY --from=build --chown=node:node /app ./\nUsage count:  1\nLast used:    9 hours ago\nType:         regular\n\n",
+  "command": [
+    "docker",
+    "buildx",
+    "prune",
+    "--force",
+    "--filter",
+    "id=6qkq1zfjnag04hq2qhs7uex4x",
+    "--filter",
+    "shared=false",
+    "--filter",
+    "inuse=false"
+  ],
+  "output": "Total:\t0B\n",
+  "after": "ID:           6qkq1zfjnag04hq2qhs7uex4x\nParents:\n - nrudrc8fmb60w8j2tqcgtm6qv\nCreated at:   2026-10-28 05:23:46.562314428 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         1.424GB\nDescription:  [production 5/6] COPY --from=build --chown=node:node /app ./\nUsage count:  1\nLast used:    9 hours ago\nType:         regular\n\n",
+  "removed": false
+}

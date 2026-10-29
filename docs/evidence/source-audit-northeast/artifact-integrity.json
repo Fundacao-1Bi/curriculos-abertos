@@ -1,0 +1,832 @@
+{
+  "at": "2026-10-28T18:38:27.307760+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast",
+  "manifest": "data/manifests/northeast.json",
+  "sources": 90,
+  "acquired": 86,
+  "pages": 17486,
+  "bytes": 667622099,
+  "ufs": [
+    "AL",
+    "BA",
+    "CE",
+    "MA",
+    "PB",
+    "PE",
+    "PI",
+    "RN",
+    "SE"
+  ],
+  "status_counts": {
+    "acquired": 86,
+    "unavailable": 1,
+    "research_pending": 3
+  },
+  "fully_reconciled_sources": [
+    "pe-historia-pernambuco-2026",
+    "ma-portaria-181-2026-recomposicao-doe",
+    "ba-resolucao-125-2024-historia",
+    "ba-resolucao-266-2025-computacao"
+  ],
+  "own_source_v2_reconciled": [
+    "ba-resolucao-249-2026",
+    "pe-historia-pernambuco-2026",
+    "rn-portaria-11123-2025",
+    "ma-resolucao-211-2026-doe",
+    "ma-portaria-181-2026-recomposicao-doe",
+    "pi-resolucao-188-2025",
+    "ba-resolucao-125-2024-historia",
+    "ba-resolucao-266-2025-computacao"
+  ],
+  "legacy_source_status_labels_not_gate_proof": [
+    "ba-resolucao-249-2026",
+    "pe-historia-pernambuco-2026",
+    "rn-portaria-11123-2025",
+    "ma-resolucao-211-2026-doe",
+    "ma-portaria-181-2026-recomposicao-doe"
+  ],
+  "reconciliation_evidence": {
+    "path": "docs/evidence/source-audit-northeast/reconciliation-v2-current-verification.json",
+    "sha256": "8b53e613c619f28b111fd9cd1a4a79a36603cb950ee9b78f90a3553789cd7c5a",
+    "executed_at": "2026-10-28T18:33:39.666705+00:00"
+  },
+  "fully_reconciled_ufs": 0,
+  "scope": "Artifact integrity and separately pinned executed documentary-gate snapshot. Legacy Source flags are not reconciliation proof. Own-source and required-document closure remain distinct; source/physical page counts do not represent learnings or national completeness.",
+  "checks": [
+    {
+      "source_id": "ce-dcrc-ei-ef-2019",
+      "sha256": "0bebb123f293c102f1ce8e2da837ad1f9b238232314a60e2ee2bfab856356d19",
+      "pdf_pages": 618,
+      "bytes": 4150452,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ce-dcrc-em-2021",
+      "sha256": "244829280031e533d7f2614a649b0df2e9369b60759cb3f82528b030c010f918",
+      "pdf_pages": 411,
+      "bytes": 15939729,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ce-trilhas-aprofundamento-2023",
+      "sha256": "f4cea06b89ee1b8c51ffbed4189107af8ec938d659944ce82045338a0b51d15a",
+      "pdf_pages": 16,
+      "bytes": 46735144,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ba-dcrb-ei-ef",
+      "sha256": "5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7",
+      "pdf_pages": 482,
+      "bytes": 13563688,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ba-dcrb-em-vol2-2022",
+      "sha256": "e25aa98d630a428f75b83ac21a7d7deb18aa482c845f9d73cadb2bbdf27287f5",
+      "pdf_pages": 563,
+      "bytes": 27188691,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-curriculo-em-2021",
+      "sha256": "ff922c942334b07ee506350053c7a14e66d71277fde481eb008280ef2e233442",
+      "pdf_pages": 709,
+      "bytes": 5044846,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-curriculo-ef",
+      "sha256": "9a4361dae9a99fc97ab733799bfe91270ad03af3f71dbfbd62eb1634225c3e38",
+      "pdf_pages": 612,
+      "bytes": 8183466,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pi-curriculo-ei-ef",
+      "sha256": "609e955a2774afe6b25451b6d597005fcedc9b769cbf1a00916caaaab40f426e",
+      "pdf_pages": 313,
+      "bytes": 10068485,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pi-curriculo-em-caderno1-2021",
+      "sha256": "6862fce374669f6f5664b681aa2aba04fd90ecb984a4beac5ea53e8c050fb67c",
+      "pdf_pages": 344,
+      "bytes": 4642781,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ma-dctm-em-vol2",
+      "sha256": "ca271258eccee9bf73682267ec680e32ec7fa43bc12216e7c30ea50c77a9dcd9",
+      "pdf_pages": 254,
+      "bytes": 12789159,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-recal-ei-2019",
+      "sha256": "2725a4d1ec2f423bbc8770d41316dee27047bd61797324fc881e1025cbd2ec11",
+      "pdf_pages": 144,
+      "bytes": 3833050,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-recal-ef",
+      "sha256": "0c6b97015b1e3c6f0630306c84132518469182a1746c7b21b8721ffd74acbea5",
+      "pdf_pages": 738,
+      "bytes": 10134032,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-recal-em",
+      "sha256": "9314fbd3b27c0118e6b5591dd6ce400c4ffd857830ca9cc86158673488f6116a",
+      "pdf_pages": 539,
+      "bytes": 5043633,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "rn-referencial-em",
+      "sha256": "5f894abaa0309169597c7c9b7841aebaa9faaeb45e4cb759e5058b359e2ed845",
+      "pdf_pages": 570,
+      "bytes": 5137039,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "rn-documento-ei-2018",
+      "sha256": "3bd81df59cc129ec6cbf0646125fa5f76fdedbaa455b11d0363d845c9f14483b",
+      "pdf_pages": 177,
+      "bytes": 3147453,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pb-proposta-ei-ef",
+      "sha256": "b55786376874ab6a46064c44726d578d37f550a99a702069fe7065946ce26383",
+      "pdf_pages": 635,
+      "bytes": 7950105,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ma-dctm-ei-ef",
+      "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
+      "pdf_pages": 482,
+      "bytes": 49563761,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "rn-documento-ef-2018",
+      "sha256": "187ff82e9115f569ed328aea70e194cafce71a115d69be782d85ebd64d2e3f4c",
+      "pdf_pages": 1103,
+      "bytes": 9918369,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pi-curriculo-em-caderno2-2021",
+      "sha256": "70f5b98ccfb9b1a9d6f23931e7f507cfe4fe56774839cffbe0e90219ad8a19d8",
+      "pdf_pages": 434,
+      "bytes": 13232086,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pi-computacao-ei-ef",
+      "sha256": "34272d3bfe11b2406de9c66e38e902d1b92a7cff6f0fe55e5b5bb91b6650ccbb",
+      "pdf_pages": 147,
+      "bytes": 2595019,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "se-curriculo-ei-ef",
+      "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
+      "pdf_pages": 666,
+      "bytes": 20327179,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "se-curriculo-em",
+      "sha256": "91fb4796d01e14370b67d0ca11b7069438a4127ff9c13c068ed2a6f65c3cb69b",
+      "pdf_pages": 571,
+      "bytes": 17236565,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "se-computacao-2026",
+      "sha256": "e2989d3797e28a4c36f411eece5f94c303f10713093be740bb5943d1b8107ddd",
+      "pdf_pages": 54,
+      "bytes": 816884,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "se-bncc-computacao-2025",
+      "sha256": "b371316ed615d8074800f99b056620ab71b8d157527b2392ce4df5eb93e26722",
+      "pdf_pages": 218,
+      "bytes": 4161866,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "se-natureza-vol2",
+      "sha256": "c19110440f2cd3a399a3aa60df167c33a66d1c6c04ecdcaf95d0bc02c30f9e08",
+      "pdf_pages": 90,
+      "bytes": 2367376,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "se-humanas-vol2",
+      "sha256": "2afebf3a1df654f066ed8839b5f7f2c2e79b21778e5a966f0eb9c785c9c05fca",
+      "pdf_pages": 79,
+      "bytes": 916039,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "se-matematica-vol2",
+      "sha256": "6b8e710f2c6adeb711614b0504f465c5ccc743a6d5c1bf657b418ef34548f8ce",
+      "pdf_pages": 66,
+      "bytes": 744497,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "se-linguagens-vol2",
+      "sha256": "75948116498c8be8081704d2d242d1541cb53c5f19c0e55e6e12c83fe2135213",
+      "pdf_pages": 82,
+      "bytes": 870138,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "se-linguagens-parte2-vol2",
+      "sha256": "ec92fb4037237d268ce4f6561237b8b63a206250e482e4f7e6befb51306db077",
+      "pdf_pages": 83,
+      "bytes": 950451,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "se-projeto-vida",
+      "sha256": "24198192b4cbf2bdf59af48a666a275c45b7dca413cdcf5e77a8f97c542ba1fb",
+      "pdf_pages": 21,
+      "bytes": 581860,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ba-matrizes-em-2025",
+      "sha256": "e935a336870c6ebd9deb6f5c88b1ef7bb0262ff2c964c794903cad203507996d",
+      "pdf_pages": 20,
+      "bytes": 12913680,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ba-ementas-itinerarios",
+      "sha256": "1ec67a941e10729f3d56c40affe108b2b9cdea94605718d9502087c64328548c",
+      "pdf_pages": 13,
+      "bytes": 7366068,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ba-resolucao-249-2026",
+      "sha256": "c108df4fe4cb56dc0eb9290803025a84b4fa7c72c587d7ea00e6a3e59cee2573",
+      "pdf_pages": 7,
+      "bytes": 577570,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-curriculo-ei",
+      "sha256": "a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3",
+      "pdf_pages": 134,
+      "bytes": 2505568,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-cedim-2026",
+      "sha256": "4a0c5a6939c86b5f45e710bb4a2587d570189f9566da0b4ed33b0a9643f50851",
+      "pdf_pages": 682,
+      "bytes": 23005319,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-historia-pernambuco-2026",
+      "sha256": "1b7b6c325b74b580697325f1c7af59780799fbdb9582fe98a0dab63a9203a832",
+      "pdf_pages": 8,
+      "bytes": 483583,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ce-dcrc-computacao",
+      "sha256": "9dfd7c1c59ddbf78eaa9e9220e83dcffb771c38f21fcf4aacf88fc254c07c39b",
+      "pdf_pages": 247,
+      "bytes": 4041351,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ce-resolucao-526-2026",
+      "sha256": "b68663162c0307ca6ce11035f873bfccc0f13b89126452baafd3d70b9270edbb",
+      "pdf_pages": 4,
+      "bytes": 5343179,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-parecer-27-2026-doe",
+      "sha256": "b6c5b0c2fcd53ff45b3644f54ae977e652bfdb7038584921d59c4ef599e56a74",
+      "pdf_pages": 152,
+      "bytes": 5064037,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-recal-computacao",
+      "sha256": "311f02f24a9ddab150378c745378f9e757053cf81c301c47a19a3dfeeb8c494d",
+      "pdf_pages": 89,
+      "bytes": 15007721,
+      "result": "verified_local_artifact",
+      "publication_eligible": false,
+      "mandatory": true
+    },
+    {
+      "source_id": "rn-diretrizes-ifa",
+      "sha256": "4976f6c436dfe53cfb776194fdf2449a2798831f4de3087921f1afc4bb48fd73",
+      "pdf_pages": 167,
+      "bytes": 3037835,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "rn-trilhas-aprofundamento",
+      "sha256": "fac7333112fcfaac3d99d74f72f206bea8e9a4b256e770a9ea0f2eace99b027a",
+      "pdf_pages": 485,
+      "bytes": 6056769,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "rn-dcec-computacao",
+      "sha256": "886cdd02d96a63c50be00e93faf0fe5a9f7f305a959bd9920bcbdd429be134bd",
+      "pdf_pages": 819,
+      "bytes": 7045290,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "rn-estrutura-em-2026-diurno",
+      "sha256": "8181f900c9ecc78f100b4ee7b2d54609eb5c57d9419e4349c1f8cfe3676fcdb8",
+      "pdf_pages": 15,
+      "bytes": 3459967,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "rn-estrutura-em-2026-noturno",
+      "sha256": "de5f1a858a2078870420313e6b47e17a43cdcab9c51ec38f354c3751e41f36ac",
+      "pdf_pages": 17,
+      "bytes": 5573683,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "rn-estrutura-em-2026-em_tempo_integral",
+      "sha256": "aed766b531bd25040bc6c38785ce80127a45ab2ad74d1ee914196e661bc980f1",
+      "pdf_pages": 26,
+      "bytes": 6050263,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-matrizes-em-2026",
+      "sha256": "fba1e33e135dcb52342729fe6ab9eaef2a9864da3914f343032c3d93df14b5c1",
+      "pdf_pages": 44,
+      "bytes": 7577308,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-organizador-fgb-2025",
+      "sha256": "1f9b076cee0ad6db29250105724c9decacb2ed99c81d046dec7429a018a6845a",
+      "pdf_pages": 125,
+      "bytes": 5937147,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-ifa-pit-1-2026",
+      "sha256": "96ff789382e1a45f9767440996ba32af7b6b826575cd7eabaf3fe8e9163f1fe1",
+      "pdf_pages": 82,
+      "bytes": 25237545,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-ifa-tac-1-2026",
+      "sha256": "aeb77519094233a15d64ca4db3c235ad86fb5fa48ba67af788b503e36a150c7a",
+      "pdf_pages": 124,
+      "bytes": 13449433,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-ifa-praticas-lgg-chs-2-2026",
+      "sha256": "db735911a11f7ce6022bb767a2a808369aed0cf20e6507b264eb25accdae7569",
+      "pdf_pages": 75,
+      "bytes": 10475738,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-ifa-temas-lgg-chs-2-2026",
+      "sha256": "2620cfe459ac4f16141e1b29b38d370b7d390d9556e6c7d6f3a93a261b309f2d",
+      "pdf_pages": 129,
+      "bytes": 15665542,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-ifa-praticas-mat-cnt-2-2026",
+      "sha256": "2ef7e9596968f44a3ca60eca7e866ff886ba98e4f91caa98e6ff7ca0b4c3c93c",
+      "pdf_pages": 117,
+      "bytes": 13296418,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-ifa-temas-mat-cnt-2-2026",
+      "sha256": "96bcf67a8edca7c3e2a7f3aae442d803be534fa8b74246ac8b169e691db66fb2",
+      "pdf_pages": 122,
+      "bytes": 13360727,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-ifa-praticas-lgg-chs-3-2026",
+      "sha256": "00b393d6c12dd774d30832daf4bbc62c96e8e1c04e3993fd76a7583ed989376b",
+      "pdf_pages": 56,
+      "bytes": 12297260,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-ifa-temas-lgg-chs-3-2026",
+      "sha256": "6c82596e88f2d62772b18f90c973f0428b151082e48ce5b526362313af1388a5",
+      "pdf_pages": 133,
+      "bytes": 14321494,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-ifa-praticas-mat-cnt-3-2026",
+      "sha256": "b69a103a264fc00a4129eb3f69ce8ed88fe518ecb76699435e85c0444927bf3c",
+      "pdf_pages": 56,
+      "bytes": 10802694,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-ifa-temas-mat-cnt-3-2026",
+      "sha256": "977387a01d70a8ad204dcde6b1867830d572b75b436fac398727a650884e45f7",
+      "pdf_pages": 162,
+      "bytes": 16403506,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "al-projeto-vida-guia-1",
+      "sha256": "f0914a20b70f63685eeaea7785c1f1c5a93419e5dac69176afb8a3c8b7192872",
+      "pdf_pages": 243,
+      "bytes": 9360463,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": false
+    },
+    {
+      "source_id": "al-projeto-vida-guia-2",
+      "sha256": "92bd054cdcc91cc519e738b0552b21e6a3da2007886f7ffb307489bdf249715a",
+      "pdf_pages": 240,
+      "bytes": 9635935,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": false
+    },
+    {
+      "source_id": "al-projeto-vida-guia-3",
+      "sha256": "3730f12237b589ee46948fac5e98ca2dcc9d5344a256a117fdc7be0118433f77",
+      "pdf_pages": 228,
+      "bytes": 8364243,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": false
+    },
+    {
+      "source_id": "rn-portaria-11123-2025",
+      "sha256": "8e8a23b5e500d1ac4aae981c64bd2b6ec8f20e939f4b260701741e90ae5af8b9",
+      "pdf_pages": 57,
+      "bytes": 6743853,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-matematica-c6335b8d",
+      "sha256": "c6335b8d1961d8c3478c9a2def970dfd14d26bf606d9e3c15f427fbecdb301f4",
+      "pdf_pages": 55,
+      "bytes": 764361,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-arte-cb58c164",
+      "sha256": "cb58c1647f952ebc66761e7cf725da4a885b9acdc00d73db68fa9bd95fa3eb8b",
+      "pdf_pages": 37,
+      "bytes": 489916,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-educacao-fisica-d997d37c",
+      "sha256": "d997d37cc3c8b1a05c8ad42a3b29fd6bdea7506f86755cfc895a1d5f2213f682",
+      "pdf_pages": 59,
+      "bytes": 642119,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-lingua-inglesa-360febf4",
+      "sha256": "360febf484d1acba6567c9660cb58bf9035cf68e2740ab11c5205002cbff2a9b",
+      "pdf_pages": 32,
+      "bytes": 510077,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-lingua-portuguesa-f9f839b5",
+      "sha256": "f9f839b56f6a718515df9d5d0d2358c388258b3c2b596eecadfb1104b882b579",
+      "pdf_pages": 103,
+      "bytes": 1265489,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-filosofia-d3d771c6",
+      "sha256": "d3d771c6b0ef86b0e66736a6389da3adc4fa7c55a31495f3ffe006b4dd5eaee8",
+      "pdf_pages": 20,
+      "bytes": 401853,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-geografia-916f592c",
+      "sha256": "916f592ce7b4f230c0a2eb7f5ad7002e98cf5c9fe3fef5834ddf00e0907f393c",
+      "pdf_pages": 37,
+      "bytes": 563093,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-historia-d8799974",
+      "sha256": "d8799974119d10d3db8f483a60f959e97d7a32df75e5d5f14a7514141237636d",
+      "pdf_pages": 35,
+      "bytes": 538218,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-sociologia-7acc310e",
+      "sha256": "7acc310ee6d18afce13c8f5da0cceac8f184246b9cecc295ef628d6db0629353",
+      "pdf_pages": 17,
+      "bytes": 362413,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-biologia-7f902274",
+      "sha256": "7f9022743762eacc209bc199de2e8081fe209892d2a599fcb9a798e5f59bad5a",
+      "pdf_pages": 32,
+      "bytes": 508446,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-fisica-cd2ccadd",
+      "sha256": "cd2ccaddf37e176441928df24f02801fd5c790af8ff4a84a4b526f63d8ab1b32",
+      "pdf_pages": 30,
+      "bytes": 486288,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-fgb-trimestral-quimica-007bc04c",
+      "sha256": "007bc04c823bea7cb17d2e148219372d12228bc13ca923ca757798d6ac549ecc",
+      "pdf_pages": 24,
+      "bytes": 419034,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-ifa-matriz-anexo-i-c4ba842e",
+      "sha256": "c4ba842e9fd17f7b0af3531721586765f8304e5571b5b29c7b54b70958a5627a",
+      "pdf_pages": 37,
+      "bytes": 1904971,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pe-ifa-matriz-anexo-ii-c6f9ef30",
+      "sha256": "c6f9ef30769137afec8ea0ac713f6d5051b5b9cd4e02b95dee8b7cf7aca5c5db",
+      "pdf_pages": 45,
+      "bytes": 2705944,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pi-computacao-em-2025",
+      "sha256": "e6eda1fbcf82e4fb5554ce121ec3b6c1bdf13c9345ef716658c0946a1a71e61f",
+      "pdf_pages": 137,
+      "bytes": 2156942,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ce-matrizes-2026",
+      "sha256": "676689026bd43a8e93e9785f1575c54b2922c5467468a6f6c6c4db06a3abd701",
+      "pdf_pages": 100,
+      "bytes": 22870882,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ce-resolucao-521-2025",
+      "sha256": "16a905b5d685d9d6a2209344c9a3ef210361b802e83a4b012b7f92fe198f558c",
+      "pdf_pages": 26,
+      "bytes": 5282076,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pi-resolucao-188-2025",
+      "sha256": "154db33551a1501916dca9eaf9ba1e428d2cb4f9bb3dec41603343be2416ad10",
+      "pdf_pages": 2,
+      "bytes": 707580,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pi-parecer-190-2025",
+      "sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+      "pdf_pages": 6,
+      "bytes": 4201834,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "pb-proposta-ei-ef-cedoc",
+      "sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+      "pdf_pages": 392,
+      "bytes": 7115062,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ma-resolucao-211-2026-doe",
+      "sha256": "5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3",
+      "pdf_pages": 38,
+      "bytes": 1139909,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ma-portaria-181-2026-recomposicao-doe",
+      "sha256": "d24ce340f3d74c9461d99079d8fdf9aab9d720c024fad89b7d198af2990a8f7e",
+      "pdf_pages": 100,
+      "bytes": 2760281,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ba-resolucao-266-2025-computacao",
+      "sha256": "dae336de6d45da873386a66f01de53a483c790b502254c5faef3def5d5f00e17",
+      "pdf_pages": 21,
+      "bytes": 856939,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    },
+    {
+      "source_id": "ba-resolucao-125-2024-historia",
+      "sha256": "7861ece3cb8b64980e39d5e54f1d2fcac4db0993c8c974a0d99232cb4b93d388",
+      "pdf_pages": 2,
+      "bytes": 673340,
+      "result": "verified_local_artifact",
+      "publication_eligible": true,
+      "mandatory": true
+    }
+  ]
+}

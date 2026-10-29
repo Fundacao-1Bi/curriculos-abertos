@@ -1,0 +1,58 @@
+{
+  "at": "2026-10-28T19:02:19.669494+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast:RN_IFA_real_importer",
+  "source_id": "rn-referencial-em",
+  "artifact_sha256": "5f894abaa0309169597c7c9b7841aebaa9faaeb45e4cb759e5058b359e2ed845",
+  "sidecar_path": "data/manifests/uncoded/rn-em-ifa-items.json",
+  "sidecar_sha256": "c864aa82be21d66613a25b31e23fed253c14bd2ab87c61776447ccdb556255f5",
+  "extraction_revision": "page-cell-v1.5.0",
+  "cache_sha256": "40dd9e139c1757d18345a8568509baf4df74d60926ae0c4ad54822faac1919d8",
+  "actual_adapter_records": 146,
+  "independent_expected_IDs": 146,
+  "source_definition_occurrences": 120,
+  "distinct_printed_codes": 72,
+  "native_scope_lines": 1380,
+  "printed_footers_preserved_in_context": 14,
+  "all_native_lines_have_one_owner": true,
+  "literal_fragments_checked": 275,
+  "parents_resolved": 145,
+  "crosspage_skill_records": 9,
+  "source_wording_ends_midword_CG06_occurrences": 5,
+  "schema_failures": 0,
+  "orphans": 0,
+  "cycles": 0,
+  "idempotent_sidecar_bytes": true,
+  "by_kind": {
+    "organizador_curricular": 1,
+    "grupo_curricular": 5,
+    "eixo_estruturante": 20,
+    "habilidade_ifa": 120
+  },
+  "negative_controls": [
+    "missing_crosspage_prose_rejected",
+    "wrong_samepage_code_rejected_by_independent_physical_slot",
+    "wrong_area_axis_parent_rejected",
+    "national_wording_completion_rejected"
+  ],
+  "negative_controls_passed": 4,
+  "proposed_authority": {
+    "coded_learning_pages": [
+      545,
+      558
+    ],
+    "uncoded_page_sections_pages": [
+      546,
+      557
+    ]
+  },
+  "generic_boundary_contexts545and558_preserved": true,
+  "final_records_including_remaining_source_context": 804,
+  "actual_Source_binding_changed": false,
+  "extraction_invoked": false,
+  "peer_status": "pending",
+  "result": "passed",
+  "whole_source_reconciled": false,
+  "UF_ready": false,
+  "scope": "Complete selected7.2source wording, including120matrix-context occurrences/72codes and physical continuations; five truncated source CG06statements preserved exactly, not repaired from external national text. FGB/remaining570page source remain uncompleted; cloned Source only."
+}

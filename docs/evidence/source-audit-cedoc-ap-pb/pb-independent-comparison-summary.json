@@ -1,0 +1,157 @@
+{
+  "at": "2026-10-28T14:16:12.440462+00:00",
+  "runtime": "PyMuPDF 1.26.7",
+  "actor_type": "automated",
+  "documents": {
+    "validated635": {
+      "path": "data/raw/PB/pb-proposta-ei-ef.pdf",
+      "artifact_sha256": "b55786376874ab6a46064c44726d578d37f550a99a702069fe7065946ce26383",
+      "bytes": 7950105,
+      "pages": 635,
+      "metadata": {
+        "format": "PDF 1.5",
+        "title": "",
+        "author": "Daniel Saraiva Canabrava",
+        "subject": "",
+        "keywords": "",
+        "creator": "Microsoft® Word 2016",
+        "producer": "Microsoft® Word 2016",
+        "creationDate": "D:20181204162820-03'00'",
+        "modDate": "D:20181204162820-03'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "all_pages_native_read": 635,
+      "empty_native_pages": [
+        1
+      ]
+    },
+    "cedoc392": {
+      "path": "data/raw/PB/pb-proposta-ei-ef-cedoc.pdf",
+      "artifact_sha256": "af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453",
+      "bytes": 7115062,
+      "pages": 392,
+      "metadata": {
+        "format": "PDF 1.4",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Adobe InDesign CC 13.1 (Windows)",
+        "producer": "Adobe PDF Library 15.0",
+        "creationDate": "D:20190201095944-02'00'",
+        "modDate": "D:20190201100012-02'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "all_pages_native_read": 392,
+      "empty_native_pages": [
+        1,
+        2,
+        8,
+        16,
+        70,
+        364,
+        391,
+        392
+      ]
+    }
+  },
+  "sidecar_items": 2008,
+  "sidecar_sha256": "b64de254205f8d9700baafa3c7efde58808fff6da01398e6c5e7e652f882a514",
+  "sidecar_exact_text_present": 1701,
+  "sidecar_not_exact_text_matched": 307,
+  "exact_by_document_part": {
+    "Arte": {
+      "all": 22,
+      "exact": 17
+    },
+    "Educação Escolar Indígena": {
+      "all": 180,
+      "exact": 10
+    },
+    "Educação Infantil": {
+      "all": 103,
+      "exact": 94
+    },
+    "Ensino Fundamental": {
+      "all": 1594,
+      "exact": 1574
+    },
+    "Ensino Religioso na EJA": {
+      "all": 64,
+      "exact": 2
+    },
+    "Ensino Religioso na Educação Infantil": {
+      "all": 33,
+      "exact": 1
+    },
+    "None": {
+      "all": 12,
+      "exact": 3
+    }
+  },
+  "codes": {
+    "validated635_unique": 1233,
+    "cedoc392_unique": 1201,
+    "shared": 1198,
+    "only_validated635": [
+      "EF01MA08",
+      "EF01MA10",
+      "EF01MA16",
+      "EF01MA17",
+      "EF01MA20",
+      "EF02MA01",
+      "EF02MA03",
+      "EF02MA05",
+      "EF02MA06",
+      "EF02MA15",
+      "EF03MA05",
+      "EF03MA06",
+      "EF03MA11",
+      "EF03MA17",
+      "EF03MA26",
+      "EF04MA10",
+      "EF04MA15",
+      "EF04MA21",
+      "EF04MA22",
+      "EF04MA23",
+      "EF05MA01",
+      "EF05MA05",
+      "EF05MA07",
+      "EF05MA13",
+      "EF05MA18",
+      "EF05MA22",
+      "EF06MA20",
+      "EF06MA31",
+      "EF07MA02",
+      "EF07MA10",
+      "EF07MA25",
+      "EF07MA28",
+      "EF07MA31",
+      "EF08MA08",
+      "EF08MA18"
+    ],
+    "only_cedoc392": [
+      "EF04GE08",
+      "EF04GE10",
+      "EF04GE11"
+    ]
+  },
+  "human_pedagogical_review": false,
+  "edition": null,
+  "vigency": null,
+  "comparison_status": "raw_literal_comparison_superseded_by_documentary_triage",
+  "interpretation_warnings": [
+    "The35raw Math code misses are all explained by soft-hyphen/line-break typography; see pb-independent-code-typography-check.json. Both PDFs contain the same1231regular-shaped code tokens under comparison-only typographic joining.",
+    "94/103globallymatched EI texts are NOT same-context equality: only64/103old occurrences match samefield+age; see pb-independent-ei-context-comparison.json.",
+    "Short common texts matched outside removed modalities do not prove modality coverage.",
+    "A native whole-page miss can be caused by interleaved table columns and must not be reported as a removed objective.",
+    "The original635PDF and2008sidecar must be preserved; no equivalence/supersession/validity is inferred."
+  ],
+  "triage_evidence": [
+    "pb-independent-code-typography-check.json",
+    "pb-independent-ei-context-comparison.json",
+    "pb-independent-final-report.md"
+  ]
+}

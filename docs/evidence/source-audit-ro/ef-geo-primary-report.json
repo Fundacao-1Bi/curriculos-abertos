@@ -1,0 +1,63 @@
+{
+  "adapter_path": "data/manifests/uncoded/ro-ef-with-geografia-v4.json",
+  "adapter_sha256": "c5ddcaba1cadb7c0f62160d20fb6a03541d6416b0dcb1f9af8d6f93bea37073c",
+  "base429_preserved_exactly": true,
+  "binding_ready": false,
+  "body_continuation_fragments": 7,
+  "coded_geography_definitions": 127,
+  "command": "var/venv-pipeline/bin/python docs/evidence/source-audit-ro/build_ef_geografia.py",
+  "engine": {
+    "pymupdf": "1.26.7",
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "grade_counts": {
+    "1": 14,
+    "2": 11,
+    "3": 12,
+    "4": 11,
+    "5": 12,
+    "6": 13,
+    "7": 12,
+    "8": 24,
+    "9": 18
+  },
+  "independent_readback_passed": true,
+  "kinds": {
+    "ano_escolar": 18,
+    "area_conhecimento": 1,
+    "competencia_especifica": 90,
+    "competencia_geral": 10,
+    "componente_curricular": 2,
+    "grupo_competencias": 13,
+    "grupo_curricular": 4,
+    "habilidade": 334,
+    "objeto_conhecimento": 112,
+    "organizador_curricular": 2,
+    "unidade_tematica": 108
+  },
+  "nonstandard_local_identifiers": [
+    {
+      "code": "EF01GEO3. 1RO",
+      "page": 473
+    },
+    {
+      "code": "EF01GE05.2RO",
+      "page": 473
+    },
+    {
+      "code": "EF01GE11   -  3RO",
+      "page": 474
+    },
+    {
+      "code": "EF03GE05 – 4RO",
+      "page": 476
+    }
+  ],
+  "proposal_withheld_for_manifest_owner_checkpoint": true,
+  "ready": false,
+  "real_loader_finalizer_schema_records": 694,
+  "reconciled": false,
+  "records": 694,
+  "source_id": "ro-rcro-ef",
+  "source_sha256": "c8a25381bc5311326bf0fe1528c9941fb78d618d1b0696f0129baf6fa75f1ea2"
+}

@@ -1,0 +1,60 @@
+{
+  "at": "2026-10-28T05:03:57.462031+00:00",
+  "status": "implemented_executed_verified_local",
+  "actor_type": "automated",
+  "actor_id": "agent:pr_adapter",
+  "source_ids": [
+    "sc-cb-em-caderno-5",
+    "sc-cb-em-caderno-6"
+  ],
+  "output": "data/manifests/uncoded/sc-em-ept-items.json",
+  "output_sha256": "0ceb6883d3c79ebe702e5685e533c77f616258ccb415bd11a65b99d4a7a43d1b",
+  "records": 6314,
+  "evidence_fragments": 6674,
+  "independent_expected_ids": 4486,
+  "independent_verified_ids": 4486,
+  "source_objective_headers": 843,
+  "source_unit_headers": 678,
+  "source_skill_cells": 1484,
+  "source_continuation_regions": 14,
+  "human_review": false,
+  "remote_actions": false,
+  "commit_created": false,
+  "scripts": [
+    {
+      "path": "data/manifests/uncoded/sc-em-ept-annex.py",
+      "sha256": "fafef9b21bd7abef2fd23a85aba4754d2550229f490fe0f56de6e55ab4764df0"
+    },
+    {
+      "path": "data/manifests/uncoded/sc-em-ept-cache.py",
+      "sha256": "2f946459c148176fa19e12b8a9bb301d86021d59e4e06b17ad1b3b8832a0138d"
+    },
+    {
+      "path": "data/manifests/uncoded/sc-em-ept-extract.py",
+      "sha256": "0ca1ab8fe9207cfbeb579e5661aac60c7e10e527e2bbad92e7107c246c2a6218"
+    },
+    {
+      "path": "data/manifests/uncoded/sc-em-ept-ocr.py",
+      "sha256": "85af40aa16e763ebbaee5364afaa3f7271a04d2d81da80b3897cdfc61c4e6e0b"
+    },
+    {
+      "path": "data/manifests/uncoded/sc-em-ept-render.py",
+      "sha256": "6afce6416900b8e8616e08d54ba67a55217dc2971845cd2a09295584d2bc70e3"
+    },
+    {
+      "path": "data/manifests/uncoded/sc-em-ept-verify.py",
+      "sha256": "be64608b6b3426de72caaa9b81832cbee590337c71010c3366a349fd258dbbc4"
+    }
+  ],
+  "commands": [
+    "var/venv-pipeline/bin/python data/manifests/uncoded/sc-em-ept-ocr.py",
+    "var/venv-pipeline/bin/python data/manifests/uncoded/sc-em-ept-extract.py",
+    "var/venv-pipeline/bin/python data/manifests/uncoded/sc-em-ept-verify.py"
+  ],
+  "pending": [
+    "Independent agent audit of this adapter/source inventory",
+    "Central source uncoded_items_path integration and central ingestion/import",
+    "Central compatibility with OCR source-word proof paths for 62 normative context records",
+    "Reconciliation of coded items and other SC cadernos, followed by integrated product journeys"
+  ]
+}

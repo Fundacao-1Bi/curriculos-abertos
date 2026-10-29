@@ -1,0 +1,74 @@
+{
+  "status": "corrected_inventory_geometry_only",
+  "original_blind_path": "docs/evidence/source-audit-mg2026-peer/blind-visual-line-inventory.json",
+  "original_blind_sha256": "335a27d65c75eddfbc74bd30c0ee2642058c1a4805e5227bb1a7433083b5b2a1",
+  "primary_image_path": "var/private-evidence/source-audit-southeast-completeness/mg-matrizes2026-ocr13/page-13-original-raster.png",
+  "primary_image_sha256": "1021f223d73ec99d9c35440a7477e910d3feda54ab5d4b3bf3c1180502b2daf2",
+  "old_badge_mask": [
+    0,
+    570,
+    254,
+    719
+  ],
+  "corrected_badge_mask": [
+    0,
+    570,
+    260,
+    719
+  ],
+  "text_line_count_before_and_after": 545,
+  "changes": [
+    {
+      "page": 13,
+      "blind_visual_line": 8,
+      "old_pixel_bbox": [
+        255,
+        609,
+        1327,
+        634
+      ],
+      "corrected_pixel_bbox": [
+        264,
+        609,
+        1327,
+        634
+      ],
+      "reason": "Graphic badge border, not source textual ink, removed from blind text-line mask"
+    },
+    {
+      "page": 13,
+      "blind_visual_line": 9,
+      "old_pixel_bbox": [
+        255,
+        640,
+        1380,
+        664
+      ],
+      "corrected_pixel_bbox": [
+        267,
+        640,
+        1380,
+        664
+      ],
+      "reason": "Graphic badge border, not source textual ink, removed from blind text-line mask"
+    },
+    {
+      "page": 13,
+      "blind_visual_line": 10,
+      "old_pixel_bbox": [
+        255,
+        672,
+        631,
+        697
+      ],
+      "corrected_pixel_bbox": [
+        263,
+        672,
+        631,
+        697
+      ],
+      "reason": "Graphic badge border, not source textual ink, removed from blind text-line mask"
+    }
+  ],
+  "source_candidate_transcription_modified": false
+}

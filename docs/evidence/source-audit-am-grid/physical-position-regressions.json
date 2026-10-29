@@ -1,0 +1,723 @@
+{
+  "passed": true,
+  "module_sha256": "e79b328f6d194891566a584dcf45d29e582debe1c8273d50960db9e7db060fad",
+  "source_pages": 12,
+  "checks": [
+    {
+      "source_id": "am-rca-ef-ai",
+      "artifact_sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+      "page": 336,
+      "assertions": {
+        "primary_component": true,
+        "printed_local_year": true,
+        "prior_candidate_preserved": true,
+        "no_unknown_reason_when_confirmed": true
+      },
+      "passed": true,
+      "actual": {
+        "stage": "EF",
+        "component": "Língua Portuguesa",
+        "area": null,
+        "years": [
+          5
+        ],
+        "year_label": "5º ano",
+        "age_group": null,
+        "period": null,
+        "position_origin": "physical_source_header_OCR",
+        "position_note": "Only the physically bounded printed title/age header supplied this position; code conventions and body-word candidates were not used.",
+        "position_evidence": [
+          {
+            "source_id": "am-rca-ef-ai",
+            "page": 336,
+            "section": "Título físico colorido da tabela",
+            "excerpt": "LÍNGUA PORTUGUESA 5º ANO Ea ER",
+            "bbox": [
+              97.5999984741211,
+              0.0,
+              168.39999389648438,
+              842.0
+            ],
+            "upright_bbox": [
+              0.0,
+              97.6,
+              842.0,
+              168.4
+            ],
+            "coordinate_space": "original_pdf_display_after_ocr_inverse_transform",
+            "method": "am-physical-header-positions-v1.0.1",
+            "artifact_sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+            "OCR_proof_path": "data/extracted/am-positions/c90ae95c81cb075240fba02f0998216c3713f344138431c55071296c0bf6baab.json",
+            "OCR_result_sha256": "e2e9b78df681b66bd3a4c9819ba936081adc7c14e33fbee840c6f54fdbee4f94",
+            "actor_type": "automated",
+            "source_glyph_review_status": "OCR_transcription_pending_independent_review"
+          },
+          {
+            "source_id": "am-rca-ef-ai",
+            "page": 110,
+            "printed_page": "108",
+            "excerpt": "Língua Portuguesa",
+            "bbox": [
+              289.1,
+              110.4,
+              510.23,
+              135.6
+            ],
+            "coordinate_space": "original_pdf_page",
+            "bbox_precision": "visual_region_envelope",
+            "evidence_role": "chapter_opening",
+            "method": "automated_agent_original_image_visual_check",
+            "human_pedagogical_review": false,
+            "image_path": "var/private-evidence/source-audit-am-sections/ai-page-110-original.png",
+            "image_sha256": "2e133ba5974bd30531044f7fd435125a6a6ba96df7218f867ebad4761bb62503"
+          }
+        ]
+      },
+      "basis": "Expected labels/years visually checked on original physical title crops; test-only wrong prior values are not corpus data."
+    },
+    {
+      "source_id": "am-rca-ef-ai",
+      "artifact_sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+      "page": 411,
+      "assertions": {
+        "primary_component": true,
+        "printed_local_year": true,
+        "prior_candidate_preserved": true,
+        "no_unknown_reason_when_confirmed": true
+      },
+      "passed": true,
+      "actual": {
+        "stage": "EF",
+        "component": "Educação Física",
+        "area": null,
+        "years": [
+          1
+        ],
+        "year_label": "1º ano",
+        "age_group": null,
+        "period": null,
+        "position_origin": "physical_source_header_OCR",
+        "position_note": "Only the physically bounded printed title/age header supplied this position; code conventions and body-word candidates were not used.",
+        "position_evidence": [
+          {
+            "source_id": "am-rca-ef-ai",
+            "page": 411,
+            "section": "Título físico colorido da tabela",
+            "excerpt": "EDUCAÇÃO FÍSICA - 1ºANO",
+            "bbox": [
+              55.20000076293945,
+              0.0,
+              126.0,
+              842.0
+            ],
+            "upright_bbox": [
+              0.0,
+              55.2,
+              842.0,
+              126.0
+            ],
+            "coordinate_space": "original_pdf_display_after_ocr_inverse_transform",
+            "method": "am-physical-header-positions-v1.0.1",
+            "artifact_sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+            "OCR_proof_path": "data/extracted/am-positions/e1ee733320dce6d5ecab1468db8e5d30869eec6b5ac3a3b923f26af59dc8ed5d.json",
+            "OCR_result_sha256": "20487c745d8c502f1e326f7f192ee5b0b48227b46fa87d33a521be81b8318b25",
+            "actor_type": "automated",
+            "source_glyph_review_status": "OCR_transcription_pending_independent_review"
+          },
+          {
+            "source_id": "am-rca-ef-ai",
+            "page": 398,
+            "printed_page": "396",
+            "excerpt": "Educação Física",
+            "bbox": [
+              314.29,
+              84.0,
+              499.43,
+              109.2
+            ],
+            "coordinate_space": "original_pdf_page",
+            "bbox_precision": "visual_region_envelope",
+            "evidence_role": "chapter_opening",
+            "method": "automated_agent_original_image_visual_check",
+            "human_pedagogical_review": false,
+            "image_path": "var/private-evidence/source-audit-am-sections/ai-page-398-original.png",
+            "image_sha256": "482a9f42fcca16ae8b4f1a884dc7e4a25a7eafd238ede361737719a24d2c5242"
+          }
+        ]
+      },
+      "basis": "Expected labels/years visually checked on original physical title crops; test-only wrong prior values are not corpus data."
+    },
+    {
+      "source_id": "am-rca-ef-ai",
+      "artifact_sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+      "page": 437,
+      "assertions": {
+        "primary_component": true,
+        "printed_local_year": true,
+        "prior_candidate_preserved": true,
+        "no_unknown_reason_when_confirmed": true
+      },
+      "passed": true,
+      "actual": {
+        "stage": "EF",
+        "component": "Educação Física",
+        "area": null,
+        "years": [
+          4
+        ],
+        "year_label": "4º ano",
+        "age_group": null,
+        "period": null,
+        "position_origin": "physical_source_header_OCR",
+        "position_note": "Only the physically bounded printed title/age header supplied this position; code conventions and body-word candidates were not used.",
+        "position_evidence": [
+          {
+            "source_id": "am-rca-ef-ai",
+            "page": 437,
+            "section": "Título físico colorido da tabela",
+            "excerpt": "EDUCAÇÃO FÍSICA 4ºANO",
+            "bbox": [
+              62.0,
+              0.0,
+              141.60000610351562,
+              842.0
+            ],
+            "upright_bbox": [
+              0.0,
+              62.0,
+              842.0,
+              141.6
+            ],
+            "coordinate_space": "original_pdf_display_after_ocr_inverse_transform",
+            "method": "am-physical-header-positions-v1.0.1",
+            "artifact_sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+            "OCR_proof_path": "data/extracted/am-positions/4f515e226ec0777bc1cb875f7c76331d64ad8e45ad741775ce6cb32b72b1ea4d.json",
+            "OCR_result_sha256": "8b1db85f706ad3f8a3b8fb66fcf0e06155d9ab9f0215ec833e6f24596bdbaa6b",
+            "actor_type": "automated",
+            "source_glyph_review_status": "OCR_transcription_pending_independent_review"
+          },
+          {
+            "source_id": "am-rca-ef-ai",
+            "page": 398,
+            "printed_page": "396",
+            "excerpt": "Educação Física",
+            "bbox": [
+              314.29,
+              84.0,
+              499.43,
+              109.2
+            ],
+            "coordinate_space": "original_pdf_page",
+            "bbox_precision": "visual_region_envelope",
+            "evidence_role": "chapter_opening",
+            "method": "automated_agent_original_image_visual_check",
+            "human_pedagogical_review": false,
+            "image_path": "var/private-evidence/source-audit-am-sections/ai-page-398-original.png",
+            "image_sha256": "482a9f42fcca16ae8b4f1a884dc7e4a25a7eafd238ede361737719a24d2c5242"
+          }
+        ]
+      },
+      "basis": "Expected labels/years visually checked on original physical title crops; test-only wrong prior values are not corpus data."
+    },
+    {
+      "source_id": "am-rca-ef-ai",
+      "artifact_sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+      "page": 514,
+      "assertions": {
+        "primary_component": true,
+        "printed_local_year": true,
+        "prior_candidate_preserved": true,
+        "no_unknown_reason_when_confirmed": true
+      },
+      "passed": true,
+      "actual": {
+        "stage": "EF",
+        "component": "Língua Espanhola",
+        "area": null,
+        "years": [
+          5
+        ],
+        "year_label": "5º ano",
+        "age_group": null,
+        "period": null,
+        "position_origin": "physical_source_header_OCR",
+        "position_note": "Only the physically bounded printed title/age header supplied this position; code conventions and body-word candidates were not used.",
+        "position_evidence": [
+          {
+            "source_id": "am-rca-ef-ai",
+            "page": 514,
+            "section": "Título físico colorido da tabela",
+            "excerpt": "LÍNGUA ESPANHOLA 5º ANO Eos",
+            "bbox": [
+              85.19999694824219,
+              0.0,
+              152.8000030517578,
+              842.0
+            ],
+            "upright_bbox": [
+              0.0,
+              85.2,
+              842.0,
+              152.8
+            ],
+            "coordinate_space": "original_pdf_display_after_ocr_inverse_transform",
+            "method": "am-physical-header-positions-v1.0.1",
+            "artifact_sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+            "OCR_proof_path": "data/extracted/am-positions/6c07c09e239de500052662a1344ec6a901781253c0887541757f2628a8c47eca.json",
+            "OCR_result_sha256": "f7f1aea062b8695cdc2996a529e84426ad79d17daec7892bccecad3846f0b4ab",
+            "actor_type": "automated",
+            "source_glyph_review_status": "OCR_transcription_pending_independent_review"
+          },
+          {
+            "source_id": "am-rca-ef-ai",
+            "page": 489,
+            "printed_page": "487",
+            "excerpt": "Língua espanhola",
+            "bbox": [
+              297.1,
+              94.8,
+              523.02,
+              122.0
+            ],
+            "coordinate_space": "original_pdf_page",
+            "bbox_precision": "visual_region_envelope",
+            "evidence_role": "chapter_opening",
+            "method": "automated_agent_original_image_visual_check",
+            "human_pedagogical_review": false,
+            "image_path": "var/private-evidence/source-audit-am-sections/ai-page-489-original.png",
+            "image_sha256": "987cb1a3ade373219fed50a4dba6e09a5a5606f57c0f3942b643ef8abaa95d65"
+          }
+        ]
+      },
+      "basis": "Expected labels/years visually checked on original physical title crops; test-only wrong prior values are not corpus data."
+    },
+    {
+      "source_id": "am-rca-ef-ai",
+      "artifact_sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+      "page": 571,
+      "assertions": {
+        "primary_component": true,
+        "printed_local_year": true,
+        "prior_candidate_preserved": true,
+        "no_unknown_reason_when_confirmed": true
+      },
+      "passed": true,
+      "actual": {
+        "stage": "EF",
+        "component": "Ciências",
+        "area": null,
+        "years": [
+          2
+        ],
+        "year_label": "2º ano",
+        "age_group": null,
+        "period": null,
+        "position_origin": "physical_source_header_OCR",
+        "position_note": "Only the physically bounded printed title/age header supplied this position; code conventions and body-word candidates were not used.",
+        "position_evidence": [
+          {
+            "source_id": "am-rca-ef-ai",
+            "page": 571,
+            "section": "Título físico colorido da tabela",
+            "excerpt": "CIÊNCIAS DA NATUREZA - 2º ANO",
+            "bbox": [
+              54.400001525878906,
+              0.0,
+              119.19999694824219,
+              842.0
+            ],
+            "upright_bbox": [
+              0.0,
+              54.4,
+              842.0,
+              119.2
+            ],
+            "coordinate_space": "original_pdf_display_after_ocr_inverse_transform",
+            "method": "am-physical-header-positions-v1.0.1",
+            "artifact_sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+            "OCR_proof_path": "data/extracted/am-positions/5fcdd7df73290eb749f2f3f4836a006f1235351724e6bc5fdda083504ac6bd49.json",
+            "OCR_result_sha256": "b56da518d692d35aa337b3c18fbcca5590d19be0f921a8983e76708216927287",
+            "actor_type": "automated",
+            "source_glyph_review_status": "OCR_transcription_pending_independent_review"
+          },
+          {
+            "source_id": "am-rca-ef-ai",
+            "page": 557,
+            "printed_page": "555",
+            "excerpt": "Ciências da Natureza",
+            "bbox": [
+              262.71,
+              95.2,
+              527.02,
+              118.8
+            ],
+            "coordinate_space": "original_pdf_page",
+            "bbox_precision": "visual_region_envelope",
+            "evidence_role": "chapter_opening",
+            "method": "automated_agent_original_image_visual_check",
+            "human_pedagogical_review": false,
+            "image_path": "var/private-evidence/source-audit-am-sections/ai-page-557-original.png",
+            "image_sha256": "454e3e2e3a8cd87049def164d5f03f08a3d034cc8d6a215c57071e75b8cadde5"
+          }
+        ]
+      },
+      "basis": "Expected labels/years visually checked on original physical title crops; test-only wrong prior values are not corpus data."
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "artifact_sha256": "26285c69921d0efa4993620d140e35f974d8f6b44223c676387464d04647eb2a",
+      "page": 156,
+      "assertions": {
+        "primary_component": true,
+        "printed_local_year": true,
+        "prior_candidate_preserved": true,
+        "no_unknown_reason_when_confirmed": true
+      },
+      "passed": true,
+      "actual": {
+        "stage": "EF",
+        "component": "Língua Portuguesa",
+        "area": "Linguagens",
+        "years": [
+          7
+        ],
+        "year_label": "7º ano",
+        "age_group": null,
+        "period": null,
+        "position_origin": "physical_source_header_OCR",
+        "position_note": "Only the physically bounded printed title/age header supplied this position; code conventions and body-word candidates were not used.",
+        "position_evidence": [
+          {
+            "source_id": "am-rca-ef-af",
+            "page": 156,
+            "section": "Título físico colorido da tabela",
+            "excerpt": "LÍNGUA PORTUGUESA 7º ANO 0",
+            "bbox": [
+              88.0,
+              0.0,
+              154.8000030517578,
+              842.0
+            ],
+            "upright_bbox": [
+              0.0,
+              88.0,
+              842.0,
+              154.8
+            ],
+            "coordinate_space": "original_pdf_display_after_ocr_inverse_transform",
+            "method": "am-physical-header-positions-v1.0.1",
+            "artifact_sha256": "26285c69921d0efa4993620d140e35f974d8f6b44223c676387464d04647eb2a",
+            "OCR_proof_path": "data/extracted/am-positions/c090f9b50a5ce1b85eb8832f0a688021005b566c84dae15ee5a9a9afe643f495.json",
+            "OCR_result_sha256": "427b7e6b9e10f2f49a64bd53850bc3f45c1c2f7e0c1d12500765194152e6579e",
+            "actor_type": "automated",
+            "source_glyph_review_status": "OCR_transcription_pending_independent_review"
+          },
+          {
+            "source_id": "am-rca-ef-af",
+            "page": 101,
+            "printed_page": "101",
+            "section": "Língua Portuguesa",
+            "excerpt": "Língua Portuguesa",
+            "evidence_role": "chapter_opening",
+            "method": "original_render_visually_reviewed",
+            "image_path": "var/private-evidence/source-audit-am-sections/af-page-101.png",
+            "image_sha256": "3992284a4694bbf6d928039edb77da7adf1436a015dedcb433898d400239963a"
+          }
+        ]
+      },
+      "basis": "Expected labels/years visually checked on original physical title crops; test-only wrong prior values are not corpus data."
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "artifact_sha256": "26285c69921d0efa4993620d140e35f974d8f6b44223c676387464d04647eb2a",
+      "page": 157,
+      "assertions": {
+        "primary_component": true,
+        "printed_local_year": true,
+        "prior_candidate_preserved": true,
+        "no_unknown_reason_when_confirmed": true
+      },
+      "passed": true,
+      "actual": {
+        "stage": "EF",
+        "component": "Língua Portuguesa",
+        "area": "Linguagens",
+        "years": [
+          7
+        ],
+        "year_label": "7º ano",
+        "age_group": null,
+        "period": null,
+        "position_origin": "physical_source_header_OCR",
+        "position_note": "Only the physically bounded printed title/age header supplied this position; code conventions and body-word candidates were not used.",
+        "position_evidence": [
+          {
+            "source_id": "am-rca-ef-af",
+            "page": 157,
+            "section": "Título físico colorido da tabela",
+            "excerpt": "LÍNGUA PORTUGUESA 7º ANO",
+            "bbox": [
+              86.4000015258789,
+              0.0,
+              153.1999969482422,
+              842.0
+            ],
+            "upright_bbox": [
+              0.0,
+              86.4,
+              842.0,
+              153.2
+            ],
+            "coordinate_space": "original_pdf_display_after_ocr_inverse_transform",
+            "method": "am-physical-header-positions-v1.0.1",
+            "artifact_sha256": "26285c69921d0efa4993620d140e35f974d8f6b44223c676387464d04647eb2a",
+            "OCR_proof_path": "data/extracted/am-positions/f74cfca7201c74aae95c56bf35a2d1e7ccd745a0ba42c7d975febb4cb871af9c.json",
+            "OCR_result_sha256": "9a1d956c706f823eb6df99a24c56593789172c7e6db76712289fa963d4cf58de",
+            "actor_type": "automated",
+            "source_glyph_review_status": "OCR_transcription_pending_independent_review"
+          },
+          {
+            "source_id": "am-rca-ef-af",
+            "page": 101,
+            "printed_page": "101",
+            "section": "Língua Portuguesa",
+            "excerpt": "Língua Portuguesa",
+            "evidence_role": "chapter_opening",
+            "method": "original_render_visually_reviewed",
+            "image_path": "var/private-evidence/source-audit-am-sections/af-page-101.png",
+            "image_sha256": "3992284a4694bbf6d928039edb77da7adf1436a015dedcb433898d400239963a"
+          }
+        ]
+      },
+      "basis": "Expected labels/years visually checked on original physical title crops; test-only wrong prior values are not corpus data."
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "artifact_sha256": "26285c69921d0efa4993620d140e35f974d8f6b44223c676387464d04647eb2a",
+      "page": 286,
+      "assertions": {
+        "primary_component": true,
+        "printed_local_year": true,
+        "prior_candidate_preserved": true,
+        "no_unknown_reason_when_confirmed": true
+      },
+      "passed": true,
+      "actual": {
+        "stage": "EF",
+        "component": "Arte",
+        "area": "Linguagens",
+        "years": [
+          6
+        ],
+        "year_label": "6º ano",
+        "age_group": null,
+        "period": null,
+        "position_origin": "physical_source_header_OCR",
+        "position_note": "Only the physically bounded printed title/age header supplied this position; code conventions and body-word candidates were not used.",
+        "position_evidence": [
+          {
+            "source_id": "am-rca-ef-af",
+            "page": 286,
+            "section": "Título físico colorido da tabela",
+            "excerpt": "ARTE-6º ANO O",
+            "bbox": [
+              88.4000015258789,
+              0.0,
+              136.39999389648438,
+              842.0
+            ],
+            "upright_bbox": [
+              0.0,
+              88.4,
+              842.0,
+              136.4
+            ],
+            "coordinate_space": "original_pdf_display_after_ocr_inverse_transform",
+            "method": "am-physical-header-positions-v1.0.1",
+            "artifact_sha256": "26285c69921d0efa4993620d140e35f974d8f6b44223c676387464d04647eb2a",
+            "OCR_proof_path": "data/extracted/am-positions/be1e7c2c2d66f16e4b89480f3cf2081b3362fc0a32e693c9ed69d51e3c867c0b.json",
+            "OCR_result_sha256": "0dbd4e381512989f059a98eccc195b4bbe2fe69cce2b00571784d7da91a129e6",
+            "actor_type": "automated",
+            "source_glyph_review_status": "OCR_transcription_pending_independent_review"
+          },
+          {
+            "source_id": "am-rca-ef-af",
+            "page": 275,
+            "printed_page": "275",
+            "section": "Arte",
+            "excerpt": "Arte",
+            "evidence_role": "chapter_opening",
+            "method": "original_render_visually_reviewed",
+            "image_path": "var/private-evidence/source-audit-am-sections/af-page-275.png",
+            "image_sha256": "ff2315792b8eecae9d9fc3fc5eca465d44e531dd93d6b8bf921f93a86a4f9179"
+          }
+        ]
+      },
+      "basis": "Expected labels/years visually checked on original physical title crops; test-only wrong prior values are not corpus data."
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "artifact_sha256": "26285c69921d0efa4993620d140e35f974d8f6b44223c676387464d04647eb2a",
+      "page": 569,
+      "assertions": {
+        "primary_component": true,
+        "printed_local_year": true,
+        "prior_candidate_preserved": true,
+        "no_unknown_reason_when_confirmed": true
+      },
+      "passed": true,
+      "actual": {
+        "stage": "EF",
+        "component": "História",
+        "area": "Ciências Humanas",
+        "years": [
+          9
+        ],
+        "year_label": "9º ano",
+        "age_group": null,
+        "period": null,
+        "position_origin": "physical_source_header_OCR",
+        "position_note": "Only the physically bounded printed title/age header supplied this position; code conventions and body-word candidates were not used.",
+        "position_evidence": [
+          {
+            "source_id": "am-rca-ef-af",
+            "page": 569,
+            "section": "Título físico colorido da tabela",
+            "excerpt": "HISTÓRIA 9º ANO",
+            "bbox": [
+              85.5999984741211,
+              0.0,
+              134.39999389648438,
+              842.0
+            ],
+            "upright_bbox": [
+              0.0,
+              85.6,
+              842.0,
+              134.4
+            ],
+            "coordinate_space": "original_pdf_display_after_ocr_inverse_transform",
+            "method": "am-physical-header-positions-v1.0.1",
+            "artifact_sha256": "26285c69921d0efa4993620d140e35f974d8f6b44223c676387464d04647eb2a",
+            "OCR_proof_path": "data/extracted/am-positions/96556a8f0ae22bb7f39906feb4b7c08be2e62058bafa520af89d3278c98134aa.json",
+            "OCR_result_sha256": "33d6c16f90d7f375afd642b874b029c467a0fc0b270d8aad1b69e169f14f0d1e",
+            "actor_type": "automated",
+            "source_glyph_review_status": "OCR_transcription_pending_independent_review"
+          },
+          {
+            "source_id": "am-rca-ef-af",
+            "page": 523,
+            "printed_page": "523",
+            "section": "História",
+            "excerpt": "História",
+            "evidence_role": "chapter_opening",
+            "method": "original_render_visually_reviewed",
+            "image_path": "var/private-evidence/source-audit-am-sections/af-page-523.png",
+            "image_sha256": "fe2bdda0f41492a96a93eb66eaf5d01a3dfd804142c33ecafcb13f677b6cd703"
+          }
+        ]
+      },
+      "basis": "Expected labels/years visually checked on original physical title crops; test-only wrong prior values are not corpus data."
+    },
+    {
+      "source_id": "am-rca-ef-ai",
+      "artifact_sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+      "page": 120,
+      "assertions": {
+        "primary_component": true,
+        "printed_local_year": true,
+        "prior_candidate_preserved": true,
+        "no_unknown_reason_when_confirmed": true
+      },
+      "passed": true,
+      "actual": {
+        "stage": "EF",
+        "component": "Língua Portuguesa",
+        "area": null,
+        "years": [
+          1
+        ],
+        "year_label": "1º ano",
+        "age_group": null,
+        "period": null,
+        "position_origin": "physical_source_header_OCR",
+        "position_note": "Only the physically bounded printed title/age header supplied this position; code conventions and body-word candidates were not used.",
+        "position_evidence": [
+          {
+            "source_id": "am-rca-ef-ai",
+            "page": 120,
+            "section": "Título físico colorido da tabela",
+            "excerpt": "LÍNGUA PORTUGUESA 1º ANO PR",
+            "bbox": [
+              94.80000305175781,
+              0.0,
+              166.39999389648438,
+              842.0
+            ],
+            "upright_bbox": [
+              0.0,
+              94.8,
+              842.0,
+              166.4
+            ],
+            "coordinate_space": "original_pdf_display_after_ocr_inverse_transform",
+            "method": "am-physical-header-positions-v1.0.1",
+            "artifact_sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+            "OCR_proof_path": "data/extracted/am-positions/61c68d32b6fee0e6aec3e10720e524fd9a9055bc93c185bf7e37d904de6c295a.json",
+            "OCR_result_sha256": "f51f676eee56b20efee0376a63df15d71c3a38efad95b1eea6f25a4adf8f5ff1",
+            "actor_type": "automated",
+            "source_glyph_review_status": "OCR_transcription_pending_independent_review"
+          },
+          {
+            "source_id": "am-rca-ef-ai",
+            "page": 110,
+            "printed_page": "108",
+            "excerpt": "Língua Portuguesa",
+            "bbox": [
+              289.1,
+              110.4,
+              510.23,
+              135.6
+            ],
+            "coordinate_space": "original_pdf_page",
+            "bbox_precision": "visual_region_envelope",
+            "evidence_role": "chapter_opening",
+            "method": "automated_agent_original_image_visual_check",
+            "human_pedagogical_review": false,
+            "image_path": "var/private-evidence/source-audit-am-sections/ai-page-110-original.png",
+            "image_sha256": "2e133ba5974bd30531044f7fd435125a6a6ba96df7218f867ebad4761bb62503"
+          }
+        ]
+      },
+      "basis": "Expected labels/years visually checked on original physical title crops; test-only wrong prior values are not corpus data."
+    },
+    {
+      "source_id": "am-rca-ef-ai",
+      "page": 100,
+      "assertions": {
+        "no_body_or_code_component_fallback": true,
+        "no_code_year_fallback": true,
+        "explicit_unknown_reason": true
+      },
+      "passed": true,
+      "basis": "Actual introductory source page; a curriculum code and arbitrary prior position are supplied only as negative-control metadata."
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "page": 292,
+      "assertions": {
+        "changed_source_pixels_reject_registered_title": true,
+        "mismatch_remains_explicit": true
+      },
+      "passed": true,
+      "basis": "Test-only altered pixel digest supplied in RAM; no source/review file changed."
+    },
+    {
+      "check": "registered_review_checksum_negative",
+      "passed": true
+    }
+  ],
+  "canonical_publication_modified": false,
+  "synthetic_controls_in_corpus": false,
+  "human_review_claimed": false
+}

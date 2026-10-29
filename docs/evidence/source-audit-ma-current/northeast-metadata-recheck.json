@@ -1,0 +1,72 @@
+{
+  "actor_type": "automated",
+  "at": "2026-10-28T14:39:11.392136+00:00",
+  "integrated_source_ids": [
+    "ma-resolucao-211-2026-doe",
+    "ma-portaria-181-2026-recomposicao-doe",
+    "ma-dctma-educacao-digital-midiatica"
+  ],
+  "status": "passed",
+  "checks": [
+    {
+      "source_id": "ma-resolucao-211-2026-doe",
+      "metadata_fields_preserved": [
+        "artifact_url",
+        "sha256",
+        "local_path",
+        "document_date",
+        "application_period",
+        "bytes",
+        "pdf_pages",
+        "extraction_pages",
+        "page_regions"
+      ],
+      "normalized_components": [
+        "Computação"
+      ],
+      "source_topics": [
+        "Educação Digital e Midiática"
+      ],
+      "status": "passed"
+    },
+    {
+      "source_id": "ma-portaria-181-2026-recomposicao-doe",
+      "metadata_fields_preserved": [
+        "artifact_url",
+        "sha256",
+        "local_path",
+        "document_date",
+        "application_period",
+        "bytes",
+        "pdf_pages",
+        "extraction_pages",
+        "page_regions"
+      ],
+      "normalized_components": [
+        "Língua Portuguesa",
+        "Matemática"
+      ],
+      "source_topics": null,
+      "status": "passed"
+    },
+    {
+      "source_id": "ma-dctma-educacao-digital-midiatica",
+      "metadata_fields_preserved": [
+        "artifact_url",
+        "sha256",
+        "local_path",
+        "document_date",
+        "application_period"
+      ],
+      "normalized_components": [
+        "Computação"
+      ],
+      "source_topics": [
+        "Educação Digital e Midiática"
+      ],
+      "status": "passed"
+    }
+  ],
+  "supplement_sha256": "5e9a4ef9c8a6a9f32f6c24d4696d7508f134e50d5c2ae972ecc8386dc288794f",
+  "scope_limit": "Source metadata integration only. No claim of learning extraction, complete current curriculum acquisition or full national candidate incorporation."
+}

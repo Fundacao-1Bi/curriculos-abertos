@@ -1,0 +1,87 @@
+name: curriculos-abertos
+x-common-env: &common-env
+  NODE_ENV: production
+  DATABASE_URL: postgresql://${POSTGRES_USER:-curriculos}:${POSTGRES_PASSWORD:?Execute make configure primeiro}@db:5432/${POSTGRES_DB:-curriculos}
+  BETTER_AUTH_SECRET: ${BETTER_AUTH_SECRET:?Execute make configure primeiro}
+  PUBLIC_URL: ${PUBLIC_URL:-http://localhost:3000}
+  APP_NAME: ${APP_NAME:-Currículos Abertos}
+  STORAGE_DIR: /app/var
+  EXPORT_STORAGE_DIR: /app/var
+  OMP_THREAD_LIMIT: "2"
+  PYTHON_BIN: /opt/venv/bin/python
+  SOURCE_CHECK_ENABLED: ${SOURCE_CHECK_ENABLED:-false}
+  SOURCE_CHECK_INTERVAL_SECONDS: ${SOURCE_CHECK_INTERVAL_SECONDS:-86400}
+  DATA_MAX_STREAM_BYTES: ${DATA_MAX_STREAM_BYTES:-10737418240}
+  DATA_MAX_FILE_BYTES: ${DATA_MAX_FILE_BYTES:-268435456}
+  DATA_MAX_DECODED_BYTES: ${DATA_MAX_DECODED_BYTES:-536870912}
+  SOURCE_MAX_BYTES: ${SOURCE_MAX_BYTES:-209715200}
+  SOURCE_MAX_PAGES: ${SOURCE_MAX_PAGES:-2500}
+  SOURCE_TIMEOUT_SECONDS: ${SOURCE_TIMEOUT_SECONDS:-90}
+  JOB_TIMEOUT_SECONDS: ${JOB_TIMEOUT_SECONDS:-7200}
+  PUBLIC_RATE_LIMIT: ${PUBLIC_RATE_LIMIT:-120}
+  EXPORT_RATE_LIMIT: ${EXPORT_RATE_LIMIT:-10}
+  MCP_ALLOWED_HOSTS: ${MCP_ALLOWED_HOSTS:-localhost:3000,127.0.0.1:3000}
+services:
+  db:
+    image: ${POSTGRES_IMAGE:-postgres:17.11-bookworm}
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-curriculos}
+      POSTGRES_DB: ${POSTGRES_DB:-curriculos}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Execute make configure primeiro}
+    ports: ["127.0.0.1:${DATABASE_PORT:-55437}:5432"]
+    volumes: ["database:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    restart: unless-stopped
+  app:
+    build:
+      context: .
+      args:
+        NODE_IMAGE: ${NODE_IMAGE:-node:22.23.4-bookworm-slim}
+    image: curriculos-abertos:${RELEASE_TAG:-local}
+    environment: *common-env
+    ports: ["127.0.0.1:${PORT:-3000}:3000"]
+    volumes: ["storage:/app/var", "./data:/app/data:ro"]
+    depends_on:
+      db: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 30s
+  worker:
+    mem_limit: ${WORKER_MEMORY_LIMIT:-4g}
+    cpus: ${WORKER_CPUS:-2.0}
+    pids_limit: 256
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: ["/tmp:size=536870912,mode=1777"]
+    image: curriculos-abertos:${RELEASE_TAG:-local}
+    build:
+      context: .
+      args:
+        NODE_IMAGE: ${NODE_IMAGE:-node:22.23.4-bookworm-slim}
+    command: ["npm", "run", "worker"]
+    environment: *common-env
+    volumes: ["storage:/app/var", "./data:/app/data"]
+    depends_on:
+      db: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "node", "--import", "tsx", "scripts/ops-worker-health.ts"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 45s
+volumes:
+  database:
+    name: ${DATABASE_VOLUME:-${COMPOSE_PROJECT_NAME}_database}
+    external: ${DATABASE_VOLUME_EXTERNAL:-false}
+  storage:

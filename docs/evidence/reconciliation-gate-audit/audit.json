@@ -1,0 +1,432 @@
+{
+  "generated_at": "2026-10-28T17:06:55.095611+00:00",
+  "gate_version": "reconciliation-gate/2.0",
+  "gate_sha256": "07130afe0ffc3d05f1f3e634e060f1da6a719b3e7a94b61af644e23381c2bcfb",
+  "test_sha256": "ce054472e96a90159e5f68cf4ded221e3fbad4031d796539dcb8751129aa83ed",
+  "requirements": [
+    "ING-03",
+    "ING-05",
+    "ACE-01",
+    "ACE-03"
+  ],
+  "controlled_tests": {
+    "executed": 18,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": true
+  },
+  "manifest_receipts_audited": 10,
+  "receipts": [
+    {
+      "source_id": "ba-resolucao-249-2026",
+      "receipt_path": "data/manifests/reconciliation/ba-resolucao-249-2026.json",
+      "receipt_sha256": "8c0ac998aed20f6d76112dd0f9db4afc024e0d1f80a099d7073dca64a9dcb86a",
+      "source_registered": true,
+      "reconciliation_scope": null,
+      "has_independent_v2_inventory": false,
+      "required_parts": [
+        "Documento completo"
+      ],
+      "receipted_parts": [
+        "Documento completo"
+      ],
+      "expected_ids_union_count": 45,
+      "parts_with_content_checks": 0,
+      "ignored_manual_flags": {
+        "inventory_complete": true,
+        "reconciliation_status": "automated_documentary_reconciled"
+      },
+      "interpretation": "Receipt metadata alone does not establish completeness. Legacy ID subsets may remain partial; no national readiness is asserted.",
+      "pre_finalization_cache": {
+        "available_and_checksum_verified_under_32MiB": false
+      }
+    },
+    {
+      "source_id": "br-ifa-parametros-2025",
+      "receipt_path": "data/manifests/reconciliation/br-ifa-parametros-2025.json",
+      "receipt_sha256": "c24c6a0e177eda504e1f23572308858fe8f4c4e79dee26df0bc31cc35bcaf284",
+      "source_registered": true,
+      "reconciliation_scope": null,
+      "has_independent_v2_inventory": false,
+      "required_parts": [
+        "Texto normativo — artigos e disposições (páginas PDF1–16)",
+        "Anexo — competências comuns (páginas PDF17–18)",
+        "Anexo — objetivos de Linguagens e suas Tecnologias (páginas PDF18–19)",
+        "Anexo — objetivos de Matemática e suas Tecnologias (páginas PDF20–21)",
+        "Anexo — objetivos de Ciências da Natureza (páginas PDF21–22)",
+        "Anexo — objetivos de Ciências Humanas e Sociais Aplicadas (páginas PDF23–24)"
+      ],
+      "receipted_parts": [
+        "Anexo — competências comuns (páginas PDF17–18)",
+        "Anexo — objetivos de Linguagens e suas Tecnologias (páginas PDF18–19)",
+        "Anexo — objetivos de Matemática e suas Tecnologias (páginas PDF20–21)",
+        "Anexo — objetivos de Ciências da Natureza (páginas PDF21–22)",
+        "Anexo — objetivos de Ciências Humanas e Sociais Aplicadas (páginas PDF23–24)"
+      ],
+      "expected_ids_union_count": 58,
+      "parts_with_content_checks": 0,
+      "ignored_manual_flags": {},
+      "interpretation": "Receipt metadata alone does not establish completeness. Legacy ID subsets may remain partial; no national readiness is asserted.",
+      "pre_finalization_cache": {
+        "available_and_checksum_verified_under_32MiB": false
+      }
+    },
+    {
+      "source_id": "ma-portaria-181-2026-recomposicao-doe",
+      "receipt_path": "data/manifests/reconciliation/ma-portaria-181-2026-recomposicao-doe.json",
+      "receipt_sha256": "a4f9dcfceacefdd3ebfec5679d45bc427312d884367137a6f2b7a2115629b242",
+      "source_registered": true,
+      "reconciliation_scope": null,
+      "has_independent_v2_inventory": false,
+      "required_parts": [
+        "Portaria181/2026:25artigos em9capítulos",
+        "Anexo Único integrante:Diretrizes Pedagógicas,17seções e quadro de7etapas"
+      ],
+      "receipted_parts": [
+        "Portaria181/2026:25artigos em9capítulos",
+        "Anexo Único integrante:Diretrizes Pedagógicas,17seções e quadro de7etapas"
+      ],
+      "expected_ids_union_count": 76,
+      "parts_with_content_checks": 0,
+      "ignored_manual_flags": {
+        "inventory_complete": true,
+        "reconciliation_status": "automated_documentary_reconciled"
+      },
+      "interpretation": "Receipt metadata alone does not establish completeness. Legacy ID subsets may remain partial; no national readiness is asserted.",
+      "pre_finalization_cache": {
+        "path": "data/extracted/d24ce340f3d74c9461d99079d8fdf9aab9d720c024fad89b7d198af2990a8f7e-page-cell-v1.4.0.json",
+        "sha256": "cfb5abb77800281e96e567886489aab49c3210d924a46df39b5075b7fc5563e1",
+        "item_count": 6,
+        "candidate_ids_outside_receipt_union": 6,
+        "outside_examples": [
+          {
+            "id": "ca:ma-portaria-181-2026-recomposicao-doe:2574c29df4b9648a1d65",
+            "kind": "artigo_normativo"
+          },
+          {
+            "id": "ca:ma-portaria-181-2026-recomposicao-doe:74c916095f63570c31f0",
+            "kind": "artigo_normativo"
+          },
+          {
+            "id": "ca:ma-portaria-181-2026-recomposicao-doe:137189c7c2668339bc90",
+            "kind": "artigo_normativo"
+          },
+          {
+            "id": "ca:ma-portaria-181-2026-recomposicao-doe:38aa38b921f07c5dbeb8",
+            "kind": "artigo_normativo"
+          },
+          {
+            "id": "ca:ma-portaria-181-2026-recomposicao-doe:5eb9425a723b473d0577",
+            "kind": "artigo_normativo"
+          }
+        ],
+        "scope": "Cached parser candidates only; excludes curated sidecars and finalization. Not a claim about final publication totals."
+      },
+      "cache_only_evaluation": {
+        "gate_version": "reconciliation-gate/2.0",
+        "source_id": "ma-portaria-181-2026-recomposicao-doe",
+        "artifact_sha256": "d24ce340f3d74c9461d99079d8fdf9aab9d720c024fad89b7d198af2990a8f7e",
+        "extraction_revision": "page-cell-v1.4.0",
+        "reconciled_parts": [],
+        "partial_parts": [],
+        "part_results": [
+          {
+            "name": "Portaria181/2026:25artigos em9capítulos",
+            "status": "unreconciled"
+          },
+          {
+            "name": "Anexo Único integrante:Diretrizes Pedagógicas,17seções e quadro de7etapas",
+            "status": "unreconciled"
+          }
+        ],
+        "whole_source_reconciled": false,
+        "own_source_reconciled": false,
+        "required_related_documents": [],
+        "actual_item_count": 6,
+        "accounted_item_count": 0,
+        "unaccounted_item_ids": [
+          "ca:ma-portaria-181-2026-recomposicao-doe:137189c7c2668339bc90",
+          "ca:ma-portaria-181-2026-recomposicao-doe:2574c29df4b9648a1d65",
+          "ca:ma-portaria-181-2026-recomposicao-doe:38aa38b921f07c5dbeb8",
+          "ca:ma-portaria-181-2026-recomposicao-doe:5eb9425a723b473d0577",
+          "ca:ma-portaria-181-2026-recomposicao-doe:7174a5d2a86d7b611a6b",
+          "ca:ma-portaria-181-2026-recomposicao-doe:74c916095f63570c31f0"
+        ],
+        "issues": [
+          "whole_source_proof_missing"
+        ],
+        "required_parts": [
+          "Anexo Único integrante:Diretrizes Pedagógicas,17seções e quadro de7etapas",
+          "Portaria181/2026:25artigos em9capítulos"
+        ]
+      }
+    },
+    {
+      "source_id": "ma-resolucao-211-2026-doe",
+      "receipt_path": "data/manifests/reconciliation/ma-resolucao-211-2026-doe.json",
+      "receipt_sha256": "c43dde5d428398971c179984f6020a11d30be795ea79c430b9ec52ca013e96e3",
+      "source_registered": true,
+      "reconciliation_scope": null,
+      "has_independent_v2_inventory": false,
+      "required_parts": [
+        "Resolução211/2026: ementa, preâmbulo, oito considerandos, seis artigos e assinaturas"
+      ],
+      "receipted_parts": [
+        "Resolução211/2026: ementa, preâmbulo, oito considerandos, seis artigos e assinaturas"
+      ],
+      "expected_ids_union_count": 19,
+      "parts_with_content_checks": 0,
+      "ignored_manual_flags": {
+        "inventory_complete": true,
+        "reconciliation_status": "automated_documentary_reconciled"
+      },
+      "interpretation": "Receipt metadata alone does not establish completeness. Legacy ID subsets may remain partial; no national readiness is asserted.",
+      "pre_finalization_cache": {
+        "path": "data/extracted/5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3-page-cell-v1.4.0.json",
+        "sha256": "a05325d5b3c84c25f471df98c338f6feadf04cdb81f0e1e9f43a249b0550f8f3",
+        "item_count": 2,
+        "candidate_ids_outside_receipt_union": 2,
+        "outside_examples": [
+          {
+            "id": "ca:ma-resolucao-211-2026-doe:8d54b828fb558c459c22",
+            "kind": "artigo_normativo"
+          },
+          {
+            "id": "ca:ma-resolucao-211-2026-doe:06f2b158d56029f1f731",
+            "kind": "artigo_normativo"
+          }
+        ],
+        "scope": "Cached parser candidates only; excludes curated sidecars and finalization. Not a claim about final publication totals."
+      },
+      "cache_only_evaluation": {
+        "gate_version": "reconciliation-gate/2.0",
+        "source_id": "ma-resolucao-211-2026-doe",
+        "artifact_sha256": "5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3",
+        "extraction_revision": "page-cell-v1.4.0",
+        "reconciled_parts": [],
+        "partial_parts": [],
+        "part_results": [
+          {
+            "name": "Resolução211/2026: ementa, preâmbulo, oito considerandos, seis artigos e assinaturas",
+            "status": "unreconciled"
+          }
+        ],
+        "whole_source_reconciled": false,
+        "own_source_reconciled": false,
+        "required_related_documents": [],
+        "actual_item_count": 2,
+        "accounted_item_count": 0,
+        "unaccounted_item_ids": [
+          "ca:ma-resolucao-211-2026-doe:06f2b158d56029f1f731",
+          "ca:ma-resolucao-211-2026-doe:8d54b828fb558c459c22"
+        ],
+        "issues": [
+          "whole_source_proof_missing"
+        ],
+        "required_parts": [
+          "Resolução211/2026: ementa, preâmbulo, oito considerandos, seis artigos e assinaturas"
+        ]
+      }
+    },
+    {
+      "source_id": "ms-projeto-vida-orientacoes-2024",
+      "receipt_path": "data/manifests/reconciliation/ms-projeto-vida-orientacoes-2024.json",
+      "receipt_sha256": "1e770097c6bd27c92bd766ecbd6cc82f3b65a1f2a06cb5ceee7471e12e65fc2c",
+      "source_registered": true,
+      "reconciliation_scope": null,
+      "has_independent_v2_inventory": false,
+      "required_parts": [
+        "Concepcao, pilares, estrategias e orientacoes pedagogicas",
+        "Organizador curricular - Ensino Fundamental Anos Iniciais",
+        "Organizador curricular - Ensino Fundamental Anos Finais",
+        "Organizador curricular - Ensino Medio"
+      ],
+      "receipted_parts": [
+        "Organizador curricular - Ensino Fundamental Anos Iniciais",
+        "Organizador curricular - Ensino Fundamental Anos Finais",
+        "Organizador curricular - Ensino Medio"
+      ],
+      "expected_ids_union_count": 681,
+      "parts_with_content_checks": 0,
+      "ignored_manual_flags": {},
+      "interpretation": "Receipt metadata alone does not establish completeness. Legacy ID subsets may remain partial; no national readiness is asserted.",
+      "pre_finalization_cache": {
+        "available_and_checksum_verified_under_32MiB": false
+      }
+    },
+    {
+      "source_id": "pe-historia-pernambuco-2026",
+      "receipt_path": "data/manifests/reconciliation/pe-historia-pernambuco-2026.json",
+      "receipt_sha256": "1fa7096ddeff1a5ec1930fb07af231a04000c328b42ae81c6fc83a0d88c39f47",
+      "source_registered": true,
+      "reconciliation_scope": null,
+      "has_independent_v2_inventory": false,
+      "required_parts": [
+        "História de Pernambuco"
+      ],
+      "receipted_parts": [
+        "História de Pernambuco"
+      ],
+      "expected_ids_union_count": 91,
+      "parts_with_content_checks": 0,
+      "ignored_manual_flags": {
+        "inventory_complete": true,
+        "reconciliation_status": "automated_documentary_reconciled"
+      },
+      "interpretation": "Receipt metadata alone does not establish completeness. Legacy ID subsets may remain partial; no national readiness is asserted.",
+      "pre_finalization_cache": {
+        "path": "data/extracted/1b7b6c325b74b580697325f1c7af59780799fbdb9582fe98a0dab63a9203a832-page-cell-v1.4.0.json",
+        "sha256": "1c2931b7170358d483eacab6cf3539614c2ddf4a5dabf0d0330d80cdf0c6cec8",
+        "item_count": 8,
+        "candidate_ids_outside_receipt_union": 8,
+        "outside_examples": [
+          {
+            "id": "ca:pe-historia-pernambuco-2026:3dfbee8b1bbd59967269",
+            "kind": "secao_normativa"
+          },
+          {
+            "id": "ca:pe-historia-pernambuco-2026:5e387f6690e8223e405d",
+            "kind": "secao_normativa"
+          },
+          {
+            "id": "ca:pe-historia-pernambuco-2026:f9b1b786a27dd12f9e19",
+            "kind": "secao_normativa"
+          },
+          {
+            "id": "ca:pe-historia-pernambuco-2026:ded92cf777474feecfbc",
+            "kind": "secao_normativa"
+          },
+          {
+            "id": "ca:pe-historia-pernambuco-2026:4536b3a4fc69d5b09e63",
+            "kind": "secao_normativa"
+          }
+        ],
+        "scope": "Cached parser candidates only; excludes curated sidecars and finalization. Not a claim about final publication totals."
+      },
+      "cache_only_evaluation": {
+        "gate_version": "reconciliation-gate/2.0",
+        "source_id": "pe-historia-pernambuco-2026",
+        "artifact_sha256": "1b7b6c325b74b580697325f1c7af59780799fbdb9582fe98a0dab63a9203a832",
+        "extraction_revision": "page-cell-v1.4.0",
+        "reconciled_parts": [],
+        "partial_parts": [],
+        "part_results": [
+          {
+            "name": "História de Pernambuco",
+            "status": "unreconciled"
+          }
+        ],
+        "whole_source_reconciled": false,
+        "own_source_reconciled": false,
+        "required_related_documents": [],
+        "actual_item_count": 8,
+        "accounted_item_count": 0,
+        "unaccounted_item_ids": [
+          "ca:pe-historia-pernambuco-2026:3dfbee8b1bbd59967269",
+          "ca:pe-historia-pernambuco-2026:4536b3a4fc69d5b09e63",
+          "ca:pe-historia-pernambuco-2026:46a52dc35d769836d4ca",
+          "ca:pe-historia-pernambuco-2026:5e387f6690e8223e405d",
+          "ca:pe-historia-pernambuco-2026:ded92cf777474feecfbc",
+          "ca:pe-historia-pernambuco-2026:ede545ed5f57cc683036",
+          "ca:pe-historia-pernambuco-2026:f9b1b786a27dd12f9e19",
+          "ca:pe-historia-pernambuco-2026:fb3952bd7caff8ddc38d"
+        ],
+        "issues": [
+          "whole_source_proof_missing"
+        ],
+        "required_parts": [
+          "História de Pernambuco"
+        ]
+      }
+    },
+    {
+      "source_id": "rn-portaria-11123-2025",
+      "receipt_path": "data/manifests/reconciliation/rn-portaria-11123-2025.json",
+      "receipt_sha256": "e17b0eae72db7da59c2921b5ff25ec3becf198fbdb345f053fc750f18c698881",
+      "source_registered": true,
+      "reconciliation_scope": null,
+      "has_independent_v2_inventory": false,
+      "required_parts": [
+        "Portaria-SEI11123/2025 integral"
+      ],
+      "receipted_parts": [
+        "Portaria-SEI11123/2025 integral"
+      ],
+      "expected_ids_union_count": 12,
+      "parts_with_content_checks": 0,
+      "ignored_manual_flags": {
+        "inventory_complete": true,
+        "reconciliation_status": "automated_documentary_reconciled"
+      },
+      "interpretation": "Receipt metadata alone does not establish completeness. Legacy ID subsets may remain partial; no national readiness is asserted.",
+      "pre_finalization_cache": {
+        "available_and_checksum_verified_under_32MiB": false
+      }
+    },
+    {
+      "source_id": "sc-lingua-inglesa-ai",
+      "receipt_path": "data/manifests/reconciliation/sc-lingua-inglesa-ai.json",
+      "receipt_sha256": "db5b8580d97f24b966e4df73725082574cc222c2ce067e0052904d37819d6d77",
+      "source_registered": true,
+      "reconciliation_scope": null,
+      "has_independent_v2_inventory": false,
+      "required_parts": [
+        "Língua Inglesa – Anos Iniciais"
+      ],
+      "receipted_parts": [
+        "Língua Inglesa – Anos Iniciais"
+      ],
+      "expected_ids_union_count": 362,
+      "parts_with_content_checks": 0,
+      "ignored_manual_flags": {},
+      "interpretation": "Receipt metadata alone does not establish completeness. Legacy ID subsets may remain partial; no national readiness is asserted.",
+      "pre_finalization_cache": {
+        "available_and_checksum_verified_under_32MiB": false
+      }
+    },
+    {
+      "source_id": "sc-parecer-446-2025",
+      "receipt_path": "data/manifests/reconciliation/sc-parecer-446-2025.json",
+      "receipt_sha256": "a8b4ab6353ede7b7e6a62797b63c24b19e53f70373449b4b17993f5f24255482",
+      "source_registered": true,
+      "reconciliation_scope": null,
+      "has_independent_v2_inventory": false,
+      "required_parts": [
+        "Organização e oferta do Ensino Médio"
+      ],
+      "receipted_parts": [
+        "Organização e oferta do Ensino Médio"
+      ],
+      "expected_ids_union_count": 5,
+      "parts_with_content_checks": 0,
+      "ignored_manual_flags": {},
+      "interpretation": "Receipt metadata alone does not establish completeness. Legacy ID subsets may remain partial; no national readiness is asserted.",
+      "pre_finalization_cache": {
+        "available_and_checksum_verified_under_32MiB": false
+      }
+    },
+    {
+      "source_id": "sc-resolucao-070-2025",
+      "receipt_path": "data/manifests/reconciliation/sc-resolucao-070-2025.json",
+      "receipt_sha256": "743a515b748403e69e90f7bcb0b04d5a7f48ae1bd7e451da62c61d45fc44c856",
+      "source_registered": true,
+      "reconciliation_scope": "whole_source",
+      "has_independent_v2_inventory": true,
+      "required_parts": [
+        "Organização e oferta do Ensino Médio"
+      ],
+      "receipted_parts": [
+        "Organização e oferta do Ensino Médio"
+      ],
+      "expected_ids_union_count": 53,
+      "parts_with_content_checks": 1,
+      "ignored_manual_flags": {},
+      "interpretation": "Receipt metadata alone does not establish completeness. Legacy ID subsets may remain partial; no national readiness is asserted.",
+      "pre_finalization_cache": {
+        "available_and_checksum_verified_under_32MiB": false
+      }
+    }
+  ],
+  "scope": "Read-only manifest and bounded verified extraction-cache audit. Synthetic cases remain isolated. Final corpus, integrated coverage hook, SQL and release checks are separate verifications."
+}

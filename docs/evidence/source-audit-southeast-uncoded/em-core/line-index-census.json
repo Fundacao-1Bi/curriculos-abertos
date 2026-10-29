@@ -1,0 +1,88 @@
+{
+  "actor_type": "automated",
+  "method": "Read the same primary with TEXTFLAGS_WORDS for dictionary and words. Match exact bbox+text to original census lines; no nearest text or lexical replacement. Native word indices remain those of the frozen initial census.",
+  "sources": [
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "artifact_sha256": "22afca52472340b6ddadab143e34a219a8d6c656772fc0c3b44840eba1b5c3df",
+      "path": "var/private-evidence/es-em-core/es-em-texto-introdut-rio-line-index.json.gz",
+      "sha256": "0a55c32b7bc4be320f721920a25ea143f204a7b53228a0bc487c020d156dc847",
+      "mapped_lines": 1352,
+      "missing_lines": [],
+      "exact_subset_mappings": []
+    },
+    {
+      "source_id": "es-em-linguagens",
+      "artifact_sha256": "46fc39fb5834ac63b87d34410d775e797198ea0f2fc0c0c568ec59d3366f013d",
+      "path": "var/private-evidence/es-em-core/es-em-linguagens-line-index.json.gz",
+      "sha256": "421be95b88cec3765e9879235dcc5e1f8162053781254dda6e2cbcd724ffa647",
+      "mapped_lines": 8024,
+      "missing_lines": [],
+      "exact_subset_mappings": []
+    },
+    {
+      "source_id": "es-em-l-ngua-portuguesa",
+      "artifact_sha256": "b3405b1e5ffeb82df9d2817e86e8949199c3ae14c9cd59daf69b69bac48773d8",
+      "path": "var/private-evidence/es-em-core/es-em-l-ngua-portuguesa-line-index.json.gz",
+      "sha256": "787dff047ea3b934471fa0b09367d1b9bc1bffcefb0274146f77262db569c72a",
+      "mapped_lines": 7944,
+      "missing_lines": [],
+      "exact_subset_mappings": []
+    },
+    {
+      "source_id": "es-em-ci-ncias-da-natureza",
+      "artifact_sha256": "ed9771b0dd051602a41e3706f3453a6301f8c48fd20911b9b821e96256daa1ac",
+      "path": "var/private-evidence/es-em-core/es-em-ci-ncias-da-natureza-line-index.json.gz",
+      "sha256": "b2879a51c2b3576eb075a59e8f8a12c2f28dadfc8b18179ae00ded9e8093254e",
+      "mapped_lines": 3531,
+      "missing_lines": [],
+      "exact_subset_mappings": []
+    },
+    {
+      "source_id": "es-em-ci-ncias-humanas",
+      "artifact_sha256": "de0a2853b8ff2346830f9f1b0f29616912ca7ac4237b6ce050f91781afb486f6",
+      "path": "var/private-evidence/es-em-core/es-em-ci-ncias-humanas-line-index.json.gz",
+      "sha256": "b010d11273906fedfab57614278487a2d7482caf6f2175acde0169d400cf8873",
+      "mapped_lines": 4615,
+      "missing_lines": [],
+      "exact_subset_mappings": [
+        {
+          "page": 4,
+          "row_id": "p4:b26:l0",
+          "method": "unique_exact_word_subsequence_inside_original_line_bbox",
+          "word_indices": [
+            254,
+            255,
+            256
+          ]
+        },
+        {
+          "page": 4,
+          "row_id": "p4:b31:l0",
+          "method": "unique_exact_word_subsequence_inside_original_line_bbox",
+          "word_indices": [
+            259
+          ]
+        },
+        {
+          "page": 4,
+          "row_id": "p4:b35:l0",
+          "method": "unique_exact_word_subsequence_inside_original_line_bbox",
+          "word_indices": [
+            263,
+            264
+          ]
+        }
+      ]
+    },
+    {
+      "source_id": "es-em-matem-tica",
+      "artifact_sha256": "f54f6eb503cf56251b06e85ab42d5bc1c75050ec1941efc35492e58445667920",
+      "path": "var/private-evidence/es-em-core/es-em-matem-tica-line-index.json.gz",
+      "sha256": "00186c687267e11e99cf29f7d96095a2dbc0c78937b9f97861872d4345c7e0da",
+      "mapped_lines": 2105,
+      "missing_lines": [],
+      "exact_subset_mappings": []
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-28T22:19:16.010808+00:00",
+  "actor_type": "automated",
+  "finding": "Backup JSON was safely preserved by atomic cache replacement, but checksum hardlink shared the in-place checksum write.",
+  "old_JSON_sha256_verified_unchanged": "c6176f9eb70d473d792866c1fe6c195c13a62a655bcd30d0ffaea9d462abdd28",
+  "observed_backup_checksum_before_detach": "5ee55eb1e8559c8d168de791b06cb5952e4b4e8bdeeb0f53bdf13fa0a70732f3  af4f4447ecf26f5c09728be93702d50e44ec714ef84f8bcfc2c9289452eca453-page-cell-v1.5.0.json\n",
+  "old_checksum_inode_links": 2,
+  "action": "Detached backup checksum link and restored expected checksum from pre-refresh Source integration receipt. Current production cache and checksum unchanged.",
+  "current_cache_sha256_unchanged": "5ee55eb1e8559c8d168de791b06cb5952e4b4e8bdeeb0f53bdf13fa0a70732f3",
+  "future_backup_rule": "Hardlink immutable JSON if desired; COPY checksum bytes to an independent inode."
+}

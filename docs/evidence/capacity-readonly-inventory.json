@@ -1,0 +1,706 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-28T18:27:45.068587+00:00",
+  "read_only_inventory": true,
+  "groups": {
+    "data/extracted": {
+      "v1.5": {
+        "files": 568,
+        "logical_bytes": 1301264832,
+        "allocated_bytes": 1302913024
+      },
+      "v1.1": {
+        "files": 98,
+        "logical_bytes": 259205908,
+        "allocated_bytes": 259420160
+      },
+      "v1.4": {
+        "files": 269,
+        "logical_bytes": 1123818067,
+        "allocated_bytes": 244125696
+      },
+      "v1.3": {
+        "files": 230,
+        "logical_bytes": 129716357,
+        "allocated_bytes": 126750720
+      },
+      ".json": {
+        "files": 3929,
+        "logical_bytes": 242730846,
+        "allocated_bytes": 251043840
+      },
+      ".lock": {
+        "files": 2872,
+        "logical_bytes": 0,
+        "allocated_bytes": 0
+      },
+      ".gz": {
+        "files": 16,
+        "logical_bytes": 23829408,
+        "allocated_bytes": 23867392
+      },
+      ".sha256": {
+        "files": 2,
+        "logical_bytes": 178,
+        "allocated_bytes": 8192
+      }
+    },
+    "var/private-evidence": {
+      ".png": {
+        "files": 4260,
+        "logical_bytes": 294796152,
+        "allocated_bytes": 301989888
+      },
+      ".json": {
+        "files": 7119,
+        "logical_bytes": 1535671734,
+        "allocated_bytes": 1552674816
+      },
+      ".jpg": {
+        "files": 58,
+        "logical_bytes": 5805541,
+        "allocated_bytes": 5918720
+      },
+      ".txt": {
+        "files": 4,
+        "logical_bytes": 1209030,
+        "allocated_bytes": 1216512
+      },
+      ".tsv": {
+        "files": 11,
+        "logical_bytes": 19228,
+        "allocated_bytes": 49152
+      },
+      ".gz": {
+        "files": 25,
+        "logical_bytes": 8165891,
+        "allocated_bytes": 8216576
+      },
+      ".py": {
+        "files": 218,
+        "logical_bytes": 2907273,
+        "allocated_bytes": 3391488
+      },
+      ".pyc": {
+        "files": 61,
+        "logical_bytes": 1593474,
+        "allocated_bytes": 1740800
+      },
+      ".lock": {
+        "files": 1,
+        "logical_bytes": 0,
+        "allocated_bytes": 0
+      },
+      "": {
+        "files": 2,
+        "logical_bytes": 137816,
+        "allocated_bytes": 139264
+      },
+      ".swift": {
+        "files": 1,
+        "logical_bytes": 1106,
+        "allocated_bytes": 4096
+      },
+      ".log": {
+        "files": 1,
+        "logical_bytes": 269,
+        "allocated_bytes": 4096
+      }
+    },
+    "docs/evidence": {
+      ".log": {
+        "files": 197,
+        "logical_bytes": 891361,
+        "allocated_bytes": 1368064
+      },
+      ".json": {
+        "files": 2024,
+        "logical_bytes": 934894450,
+        "allocated_bytes": 294871040
+      },
+      ".py": {
+        "files": 314,
+        "logical_bytes": 1857366,
+        "allocated_bytes": 2469888
+      },
+      ".md": {
+        "files": 58,
+        "logical_bytes": 346714,
+        "allocated_bytes": 471040
+      },
+      ".jsonl": {
+        "files": 3,
+        "logical_bytes": 39841,
+        "allocated_bytes": 49152
+      },
+      ".pyc": {
+        "files": 73,
+        "logical_bytes": 1289030,
+        "allocated_bytes": 1441792
+      },
+      ".png": {
+        "files": 1180,
+        "logical_bytes": 140354473,
+        "allocated_bytes": 142733312
+      },
+      ".patch": {
+        "files": 7,
+        "logical_bytes": 52772,
+        "allocated_bytes": 69632
+      },
+      ".swift": {
+        "files": 1,
+        "logical_bytes": 1613,
+        "allocated_bytes": 4096
+      },
+      ".mjs": {
+        "files": 1,
+        "logical_bytes": 1424,
+        "allocated_bytes": 4096
+      },
+      "v1.3": {
+        "files": 3,
+        "logical_bytes": 301425,
+        "allocated_bytes": 307200
+      },
+      "v1.4": {
+        "files": 5,
+        "logical_bytes": 412355,
+        "allocated_bytes": 425984
+      }
+    }
+  },
+  "largest_private_json": [
+    {
+      "path": "var/private-evidence/source-audit-rn-fidelity/baseline-cache-rn-dcec-computacao.json",
+      "bytes": 32619464,
+      "allocated_bytes": 32620544,
+      "mtime_ns": 1793199885680090375
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/ae5ac0c6f7db389eac870699491b1596cfff15f685f9d3e51c4eccbf4047cde9/6bc96909d0199bd9e59d0ce4d8076eea069077ccd47f7a6a43b9f2064d2d9871.json",
+      "bytes": 22397647,
+      "allocated_bytes": 22401024,
+      "mtime_ns": 1793200639892677178
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/1be4977f947e7f57889ecb0cfc34cae7af390b3f8a8e171914a7a4c80f126d35/6bc96909d0199bd9e59d0ce4d8076eea069077ccd47f7a6a43b9f2064d2d9871.json",
+      "bytes": 22269002,
+      "allocated_bytes": 22269952,
+      "mtime_ns": 1793205104948339016
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/a9277455d65dcbc16cbd73c20a7394e096c3319c2124142e03292f31d797fa8b/6bc96909d0199bd9e59d0ce4d8076eea069077ccd47f7a6a43b9f2064d2d9871.json",
+      "bytes": 22269187,
+      "allocated_bytes": 22269952,
+      "mtime_ns": 1793205765321364997
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/c10f048a95e687fd4e68e289f7c53df389b85e7317f35c5f05405a273f27c73e/6bc96909d0199bd9e59d0ce4d8076eea069077ccd47f7a6a43b9f2064d2d9871.json",
+      "bytes": 22269187,
+      "allocated_bytes": 22269952,
+      "mtime_ns": 1793206808353475154
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/1be4977f947e7f57889ecb0cfc34cae7af390b3f8a8e171914a7a4c80f126d35/finalized-6bc96909d0199bd9e59d0ce4d8076eea069077ccd47f7a6a43b9f2064d2d9871.json",
+      "bytes": 21523235,
+      "allocated_bytes": 21524480,
+      "mtime_ns": 1793205156453722443
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/a9277455d65dcbc16cbd73c20a7394e096c3319c2124142e03292f31d797fa8b/finalized-6bc96909d0199bd9e59d0ce4d8076eea069077ccd47f7a6a43b9f2064d2d9871.json",
+      "bytes": 21507579,
+      "allocated_bytes": 21508096,
+      "mtime_ns": 1793205788441075491
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/c10f048a95e687fd4e68e289f7c53df389b85e7317f35c5f05405a273f27c73e/finalized-6bc96909d0199bd9e59d0ce4d8076eea069077ccd47f7a6a43b9f2064d2d9871.json",
+      "bytes": 21507579,
+      "allocated_bytes": 21508096,
+      "mtime_ns": 1793206818286922594
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/ae5ac0c6f7db389eac870699491b1596cfff15f685f9d3e51c4eccbf4047cde9/finalized-6bc96909d0199bd9e59d0ce4d8076eea069077ccd47f7a6a43b9f2064d2d9871.json",
+      "bytes": 21263275,
+      "allocated_bytes": 21266432,
+      "mtime_ns": 1793200708974113804
+    },
+    {
+      "path": "var/private-evidence/source-audit-rn-fidelity/candidate-rn-dcec-computacao.json",
+      "bytes": 21116833,
+      "allocated_bytes": 21118976,
+      "mtime_ns": 1793199883809236745
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/ae5ac0c6f7db389eac870699491b1596cfff15f685f9d3e51c4eccbf4047cde9/e0ab216989ee5c743722d00e5526629e44f7d8aa192e614ff6e37de7928857c2.json",
+      "bytes": 19934010,
+      "allocated_bytes": 19935232,
+      "mtime_ns": 1793200405470621416
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/1be4977f947e7f57889ecb0cfc34cae7af390b3f8a8e171914a7a4c80f126d35/e0ab216989ee5c743722d00e5526629e44f7d8aa192e614ff6e37de7928857c2.json",
+      "bytes": 19486797,
+      "allocated_bytes": 19488768,
+      "mtime_ns": 1793204895846933233
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/a9277455d65dcbc16cbd73c20a7394e096c3319c2124142e03292f31d797fa8b/e0ab216989ee5c743722d00e5526629e44f7d8aa192e614ff6e37de7928857c2.json",
+      "bytes": 19420365,
+      "allocated_bytes": 19423232,
+      "mtime_ns": 1793205670333407645
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/c10f048a95e687fd4e68e289f7c53df389b85e7317f35c5f05405a273f27c73e/e0ab216989ee5c743722d00e5526629e44f7d8aa192e614ff6e37de7928857c2.json",
+      "bytes": 19420365,
+      "allocated_bytes": 19423232,
+      "mtime_ns": 1793206718983247451
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/ae5ac0c6f7db389eac870699491b1596cfff15f685f9d3e51c4eccbf4047cde9/finalized-e0ab216989ee5c743722d00e5526629e44f7d8aa192e614ff6e37de7928857c2.json",
+      "bytes": 19327482,
+      "allocated_bytes": 19329024,
+      "mtime_ns": 1793200484262886600
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/1be4977f947e7f57889ecb0cfc34cae7af390b3f8a8e171914a7a4c80f126d35/finalized-e0ab216989ee5c743722d00e5526629e44f7d8aa192e614ff6e37de7928857c2.json",
+      "bytes": 19162869,
+      "allocated_bytes": 19165184,
+      "mtime_ns": 1793204943744205369
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/a9277455d65dcbc16cbd73c20a7394e096c3319c2124142e03292f31d797fa8b/finalized-e0ab216989ee5c743722d00e5526629e44f7d8aa192e614ff6e37de7928857c2.json",
+      "bytes": 19086738,
+      "allocated_bytes": 19087360,
+      "mtime_ns": 1793205678443395089
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/c10f048a95e687fd4e68e289f7c53df389b85e7317f35c5f05405a273f27c73e/finalized-e0ab216989ee5c743722d00e5526629e44f7d8aa192e614ff6e37de7928857c2.json",
+      "bytes": 19086738,
+      "allocated_bytes": 19087360,
+      "mtime_ns": 1793206727865979556
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/ae5ac0c6f7db389eac870699491b1596cfff15f685f9d3e51c4eccbf4047cde9/9609375a9630bc434f56f0c5ee3de908f1238b2b2c9d7e288f0f9d79264d7eee.json",
+      "bytes": 15869489,
+      "allocated_bytes": 15872000,
+      "mtime_ns": 1793200591221011906
+    },
+    {
+      "path": "var/private-evidence/source-audit-ma-fidelity/candidate-ma-dctm-ei-ef.json",
+      "bytes": 15749645,
+      "allocated_bytes": 15753216,
+      "mtime_ns": 1793196393781484400
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/1be4977f947e7f57889ecb0cfc34cae7af390b3f8a8e171914a7a4c80f126d35/cba0bfc2bda6e2985e91794eb990a1e4b2a7286d11117fb9db5ac82dd9ab1a0e.json",
+      "bytes": 15397579,
+      "allocated_bytes": 15400960,
+      "mtime_ns": 1793204762408910318
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/a9277455d65dcbc16cbd73c20a7394e096c3319c2124142e03292f31d797fa8b/cba0bfc2bda6e2985e91794eb990a1e4b2a7286d11117fb9db5ac82dd9ab1a0e.json",
+      "bytes": 15362610,
+      "allocated_bytes": 15364096,
+      "mtime_ns": 1793205621132041533
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/c10f048a95e687fd4e68e289f7c53df389b85e7317f35c5f05405a273f27c73e/cba0bfc2bda6e2985e91794eb990a1e4b2a7286d11117fb9db5ac82dd9ab1a0e.json",
+      "bytes": 15363671,
+      "allocated_bytes": 15364096,
+      "mtime_ns": 1793206671398433743
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/1be4977f947e7f57889ecb0cfc34cae7af390b3f8a8e171914a7a4c80f126d35/finalized-cba0bfc2bda6e2985e91794eb990a1e4b2a7286d11117fb9db5ac82dd9ab1a0e.json",
+      "bytes": 14872311,
+      "allocated_bytes": 14872576,
+      "mtime_ns": 1793204841928373559
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/ae5ac0c6f7db389eac870699491b1596cfff15f685f9d3e51c4eccbf4047cde9/finalized-9609375a9630bc434f56f0c5ee3de908f1238b2b2c9d7e288f0f9d79264d7eee.json",
+      "bytes": 14848307,
+      "allocated_bytes": 14852096,
+      "mtime_ns": 1793200621293988377
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/a9277455d65dcbc16cbd73c20a7394e096c3319c2124142e03292f31d797fa8b/finalized-cba0bfc2bda6e2985e91794eb990a1e4b2a7286d11117fb9db5ac82dd9ab1a0e.json",
+      "bytes": 14827193,
+      "allocated_bytes": 14827520,
+      "mtime_ns": 1793205639714203822
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/c10f048a95e687fd4e68e289f7c53df389b85e7317f35c5f05405a273f27c73e/finalized-cba0bfc2bda6e2985e91794eb990a1e4b2a7286d11117fb9db5ac82dd9ab1a0e.json",
+      "bytes": 14827214,
+      "allocated_bytes": 14827520,
+      "mtime_ns": 1793206688948777985
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/1be4977f947e7f57889ecb0cfc34cae7af390b3f8a8e171914a7a4c80f126d35/0abd9718b7b02fd6b5e49e5f0e722a7eb4af8f18872c3caa4a652daca3c1a662.json",
+      "bytes": 14044161,
+      "allocated_bytes": 14045184,
+      "mtime_ns": 1793204905983643119
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/a9277455d65dcbc16cbd73c20a7394e096c3319c2124142e03292f31d797fa8b/0abd9718b7b02fd6b5e49e5f0e722a7eb4af8f18872c3caa4a652daca3c1a662.json",
+      "bytes": 14044346,
+      "allocated_bytes": 14045184,
+      "mtime_ns": 1793205670577293077
+    },
+    {
+      "path": "var/private-evidence/source-audit-southeast-fidelity/c10f048a95e687fd4e68e289f7c53df389b85e7317f35c5f05405a273f27c73e/0abd9718b7b02fd6b5e49e5f0e722a7eb4af8f18872c3caa4a652daca3c1a662.json",
+      "bytes": 14044346,
+      "allocated_bytes": 14045184,
+      "mtime_ns": 1793206725019742496
+    }
+  ],
+  "host_free_bytes": 7163904000,
+  "build_minimum_bytes": 16106127360,
+  "build_shortfall_bytes": 8942223360,
+  "open_files_observation": {
+    "extracted_report": "var/capacity-extraction-open-files.txt",
+    "private_evidence_report": "var/capacity-private-evidence-open-files.txt",
+    "lsof_exit_code": 1,
+    "no_open_files_observed_at_inventory_time": true,
+    "not_a_lease_or_permission_to_archive": true
+  },
+  "excluded_from_recovery": [
+    "data/raw",
+    "current v1.5 caches",
+    "data/manifests",
+    "all PostgreSQL/storage/rollback volumes",
+    "private rollback backups",
+    "live old app/worker snapshots lzn/r6/mot",
+    "other project images/caches",
+    "global swap and app processes"
+  ],
+  "same_day_buildkit_records": [
+    {
+      "ID": "jwoq2qv9glsdd0zmco6fhz710",
+      "Created at": "2026-10-28 04:35:07.959899591 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "true",
+      "Size": "3.584kB",
+      "parents": [
+        "uykztfxxgzibwpnyb360u9jyo"
+      ]
+    },
+    {
+      "ID": "twvyjixzonxyhfcg1bg453mop",
+      "Created at": "2026-10-28 04:35:07.890144966 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "4.096kB",
+      "Description": "local source for context",
+      "parents": []
+    },
+    {
+      "ID": "2tc2y155lv62k9xbkohon9zmb",
+      "Created at": "2026-10-28 03:42:43.491987802 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "8.192kB",
+      "Description": "local source for dockerfile",
+      "parents": []
+    },
+    {
+      "ID": "chswnrn84zgkg60rm4cuvx6jw",
+      "Created at": "2026-10-28 04:38:58.961225628 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "8.192kB",
+      "Description": "local source for context",
+      "parents": []
+    },
+    {
+      "ID": "mpqhyq466m7xct9kh9lwvuy85",
+      "Created at": "2026-10-28 04:35:07.819823633 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "8.192kB",
+      "Description": "local source for dockerfile",
+      "parents": []
+    },
+    {
+      "ID": "rc7e5purq40rbwdf8fuv03u9q",
+      "Created at": "2026-10-28 04:35:08.332245424 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "true",
+      "Size": "8.224kB",
+      "Description": "mount / from exec /bin/sh -c node --version",
+      "parents": [
+        "jwoq2qv9glsdd0zmco6fhz710"
+      ]
+    },
+    {
+      "ID": "88gsgq1c2hel49i5u97gy8o3x",
+      "Created at": "2026-10-28 13:58:31.255039764 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "8.285kB",
+      "Description": "[dependencies 2/4] WORKDIR /app",
+      "parents": [
+        "jwoq2qv9glsdd0zmco6fhz710"
+      ]
+    },
+    {
+      "ID": "a68wf4dtgi6glqguwknavgjwr",
+      "Created at": "2026-10-28 04:38:59.05065417 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "8.285kB",
+      "Description": "[dependencies 2/4] WORKDIR /app",
+      "parents": [
+        "jwoq2qv9glsdd0zmco6fhz710"
+      ]
+    },
+    {
+      "ID": "i68rp4t5zer1xn5i4ehvn4ibe",
+      "Created at": "2026-10-28 15:29:43.777413421 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "8.285kB",
+      "Description": "[dependencies 2/4] WORKDIR /app",
+      "parents": [
+        "jwoq2qv9glsdd0zmco6fhz710"
+      ]
+    },
+    {
+      "ID": "myjc14qb01mt0yw26xmv71gdb",
+      "Created at": "2026-10-28 04:39:06.425988257 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "12.46kB",
+      "Description": "[production 3/6] COPY pipeline/requirements.txt /tmp/pipeline-requirements.txt",
+      "parents": [
+        "a68wf4dtgi6glqguwknavgjwr"
+      ]
+    },
+    {
+      "ID": "m4ol6uyntf8rv07cdet2t66rj",
+      "Created at": "2026-10-28 05:23:08.495210049 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "12.54kB",
+      "Description": "[production 3/6] COPY pipeline/requirements.txt /tmp/pipeline-requirements.txt",
+      "parents": [
+        "a68wf4dtgi6glqguwknavgjwr"
+      ]
+    },
+    {
+      "ID": "v03qefhu46cxqhdwp14h23c28",
+      "Created at": "2026-10-28 13:58:33.370047834 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "12.55kB",
+      "Description": "[production 3/6] COPY pipeline/requirements.txt /tmp/pipeline-requirements.txt",
+      "parents": [
+        "88gsgq1c2hel49i5u97gy8o3x"
+      ]
+    },
+    {
+      "ID": "ybst7ivwrt13n4eook1akrdkh",
+      "Created at": "2026-10-28 15:29:46.153531714 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "12.56kB",
+      "Description": "[production 3/6] COPY pipeline/requirements.txt /tmp/pipeline-requirements.txt",
+      "parents": [
+        "i68rp4t5zer1xn5i4ehvn4ibe"
+      ]
+    },
+    {
+      "ID": "v6gnu6wt9197wg8sxpzbfl2ir",
+      "Created at": "2026-10-28 04:35:07.932652883 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "true",
+      "Size": "21.5kB",
+      "parents": [
+        "rr55llnvbdgj285ptm3rpxhn0"
+      ]
+    },
+    {
+      "ID": "79herjsncz7rp0sa4c9k0zptd",
+      "Created at": "2026-10-28 05:36:35.806794506 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "299kB",
+      "Description": "[dependencies 3/4] COPY package.json package-lock.json ./",
+      "parents": [
+        "a68wf4dtgi6glqguwknavgjwr"
+      ]
+    },
+    {
+      "ID": "7o67b3c6dsz67kiof541tn0dh",
+      "Created at": "2026-10-28 15:29:46.176055297 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "299kB",
+      "Description": "[dependencies 3/4] COPY package.json package-lock.json ./",
+      "parents": [
+        "i68rp4t5zer1xn5i4ehvn4ibe"
+      ]
+    },
+    {
+      "ID": "i1ym742k1f02pdsreiywa9zzd",
+      "Created at": "2026-10-28 04:39:06.43601409 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "299kB",
+      "Description": "[dependencies 3/4] COPY package.json package-lock.json ./",
+      "parents": [
+        "a68wf4dtgi6glqguwknavgjwr"
+      ]
+    },
+    {
+      "ID": "k71yo7clfyrmg1p6xqjbg8y10",
+      "Created at": "2026-10-28 13:58:33.377444792 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "299kB",
+      "Description": "[dependencies 3/4] COPY package.json package-lock.json ./",
+      "parents": [
+        "88gsgq1c2hel49i5u97gy8o3x"
+      ]
+    },
+    {
+      "ID": "uyx3hxf7jze7a3m4kj0gyp1jx",
+      "Created at": "2026-10-28 05:26:22.075428208 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "299kB",
+      "Description": "[dependencies 3/4] COPY package.json package-lock.json ./",
+      "parents": [
+        "a68wf4dtgi6glqguwknavgjwr"
+      ]
+    },
+    {
+      "ID": "uykztfxxgzibwpnyb360u9jyo",
+      "Created at": "2026-10-28 04:35:07.950651591 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "true",
+      "Size": "7.217MB",
+      "parents": [
+        "nk7ccckyeoed4qush7qql5npy"
+      ]
+    },
+    {
+      "ID": "rr55llnvbdgj285ptm3rpxhn0",
+      "Created at": "2026-10-28 04:35:07.925785508 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "true",
+      "Size": "100.3MB",
+      "parents": []
+    },
+    {
+      "ID": "nk7ccckyeoed4qush7qql5npy",
+      "Created at": "2026-10-28 04:35:07.940946341 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "true",
+      "Size": "144.6MB",
+      "parents": [
+        "v6gnu6wt9197wg8sxpzbfl2ir"
+      ]
+    },
+    {
+      "ID": "r6ldlil6v76qvwhrmrbxo6yyc",
+      "Created at": "2026-10-28 14:54:06.058651168 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "331.7MB",
+      "Description": "mount / from exec /bin/sh -c mkdir -p /app/var /app/data/raw /app/data/extracted && chown -R node:node /app/var /app/data",
+      "parents": [
+        "lznmgx833qprpv6b37g7y6tn4"
+      ]
+    },
+    {
+      "ID": "motzs2fb1c99tek718ra86fkn",
+      "Created at": "2026-10-28 13:58:59.61517718 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "443.4MB",
+      "Description": "mount / from exec /bin/sh -c apt-get update && apt-get install -y --no-install-recommends python3 python3-venv poppler-utils tesseract-ocr tesseract-ocr-por tesseract-ocr-osd ca-certificates && rm -rf /var/lib/apt/lists/*  && python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r /tmp/pipeline-requirements.txt && npm install --global npm@11.6.2",
+      "parents": [
+        "v03qefhu46cxqhdwp14h23c28"
+      ]
+    },
+    {
+      "ID": "frj56tl6ndn3lc8um7i9nzmkd",
+      "Created at": "2026-10-28 15:30:16.978413464 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "443.5MB",
+      "Description": "mount / from exec /bin/sh -c apt-get update && apt-get install -y --no-install-recommends python3 python3-venv poppler-utils tesseract-ocr tesseract-ocr-por tesseract-ocr-osd ca-certificates && rm -rf /var/lib/apt/lists/*  && python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r /tmp/pipeline-requirements.txt && npm install --global npm@11.6.2",
+      "parents": [
+        "ybst7ivwrt13n4eook1akrdkh"
+      ]
+    },
+    {
+      "ID": "lznmgx833qprpv6b37g7y6tn4",
+      "Created at": "2026-10-28 14:54:02.271757972 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "2.231GB",
+      "Description": "[production 5/6] COPY --from=build --chown=node:node /app ./",
+      "parents": [
+        "motzs2fb1c99tek718ra86fkn"
+      ]
+    }
+  ],
+  "proven_own_large_buildkit_records": [
+    {
+      "ID": "r6ldlil6v76qvwhrmrbxo6yyc",
+      "Created at": "2026-10-28 14:54:06.058651168 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "331.7MB",
+      "Description": "mount / from exec /bin/sh -c mkdir -p /app/var /app/data/raw /app/data/extracted && chown -R node:node /app/var /app/data",
+      "parents": [
+        "lznmgx833qprpv6b37g7y6tn4"
+      ]
+    },
+    {
+      "ID": "motzs2fb1c99tek718ra86fkn",
+      "Created at": "2026-10-28 13:58:59.61517718 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "443.4MB",
+      "Description": "mount / from exec /bin/sh -c apt-get update && apt-get install -y --no-install-recommends python3 python3-venv poppler-utils tesseract-ocr tesseract-ocr-por tesseract-ocr-osd ca-certificates && rm -rf /var/lib/apt/lists/*  && python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r /tmp/pipeline-requirements.txt && npm install --global npm@11.6.2",
+      "parents": [
+        "v03qefhu46cxqhdwp14h23c28"
+      ]
+    },
+    {
+      "ID": "frj56tl6ndn3lc8um7i9nzmkd",
+      "Created at": "2026-10-28 15:30:16.978413464 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "443.5MB",
+      "Description": "mount / from exec /bin/sh -c apt-get update && apt-get install -y --no-install-recommends python3 python3-venv poppler-utils tesseract-ocr tesseract-ocr-por tesseract-ocr-osd ca-certificates && rm -rf /var/lib/apt/lists/*  && python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r /tmp/pipeline-requirements.txt && npm install --global npm@11.6.2",
+      "parents": [
+        "ybst7ivwrt13n4eook1akrdkh"
+      ]
+    },
+    {
+      "ID": "lznmgx833qprpv6b37g7y6tn4",
+      "Created at": "2026-10-28 14:54:02.271757972 +0000 UTC",
+      "Reclaimable": "true",
+      "Shared": "false",
+      "Size": "2.231GB",
+      "Description": "[production 5/6] COPY --from=build --chown=node:node /app ./",
+      "parents": [
+        "motzs2fb1c99tek718ra86fkn"
+      ]
+    }
+  ],
+  "other_same_day_records_ownership_not_asserted": true,
+  "reader_coordination": {
+    "pipeline": "No current1.4 reads; prefer keeping paths because remaining244MB already compressed",
+    "northeast": "Current gates use1.5; historical verify-combined-reconciled-acts.py/verify-targeted-regressions.py require oldpaths if replayed",
+    "north": "RG correction: only current hardcode1.4 found in docs/evidence/source-audit-ro/build_em_progression_positions.py:66; AM proposal files no longer hardcode1.4. Current gates use1.5; preserve historical restore.",
+    "rs_adapter": "No1.4 dependency; AM OCR/vision peer caches protected and not recovery candidates",
+    "pr_adapter": "No current1.4 readers; preserve historical baselines and paths",
+    "auditor": "No1.4 dependency in active ES proof",
+    "private_southeast": "pr_adapter/es_positions confirms no writer; only frozen finalized reads"
+  },
+  "archive_decision": "Not archived; preserve1.4 paths for historical reproducibility. Tiny remaining gain does not solve deficit.",
+  "private_apfs_compression_executed_this_round": false
+}

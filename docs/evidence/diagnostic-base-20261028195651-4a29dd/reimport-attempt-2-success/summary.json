@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "diagnostic_only": true,
+  "national_release_asserted": false,
+  "source_tree_sha256": "ba309e4c7acb53d2e17ac37db9eef46341748b654f451481ac2b092a5a6dcc98",
+  "publication": "ca-7d302a9c674a97b83278",
+  "national": {
+    "publication": "ca-7d302a9c674a97b83278",
+    "items": 200724,
+    "relations": 57425,
+    "sources": 303,
+    "download_sha256": "1f9afaebe64ed6a72600c37ba10abdf47ce82624c5bc8c39f0ed60617f0f0b1a",
+    "download_bytes": 1451121538,
+    "parts_verified": 74,
+    "metadata_verified": true,
+    "records_verified": true,
+    "reimported": true,
+    "idempotent": true,
+    "passed": true
+  },
+  "slice": {
+    "publication": "ca-7d302a9c674a97b83278-slice-a916319deb5cd303",
+    "items": 21074,
+    "relations": 1765,
+    "sources": 34,
+    "download_sha256": "b116a9abcf41701f88d3c89612079cff5c92120ddcb8bd4999fca34caab3b5c7",
+    "download_bytes": 245144027,
+    "parts_verified": 12,
+    "metadata_verified": true,
+    "records_verified": true,
+    "reimported": true,
+    "idempotent": true,
+    "passed": true
+  },
+  "slice_uf": "ES",
+  "checks": 7,
+  "database": "curriculum_reimport_434af15bf37a",
+  "cleanup": {
+    "cleaned": [
+      {
+        "id": "8a3c8fd4-cf53-4324-aae2-f78767920c67",
+        "publication": "ca-7d302a9c674a97b83278",
+        "storage_key": "exports/8a3c8fd4-cf53-4324-aae2-f78767920c67/1-7cb4f6d0-cde5-4bea-9301-a641aa572392.json",
+        "bytes": 1451121538,
+        "sha256": "1f9afaebe64ed6a72600c37ba10abdf47ce82624c5bc8c39f0ed60617f0f0b1a",
+        "verified_at": "2026-10-28T21:33:26.979Z",
+        "phase": "owned_file_removed",
+        "receipt_path": "/app/var/qa-cleanup-receipts/8a3c8fd4-cf53-4324-aae2-f78767920c67.json",
+        "removed_at": "2026-10-28T21:33:27.349Z"
+      },
+      {
+        "id": "4f7719f8-a13b-43ba-bb74-84a09e672f38",
+        "publication": "ca-7d302a9c674a97b83278",
+        "storage_key": "exports/4f7719f8-a13b-43ba-bb74-84a09e672f38/1-7cb4f6d0-cde5-4bea-9301-a641aa572392.json",
+        "bytes": 245144027,
+        "sha256": "b116a9abcf41701f88d3c89612079cff5c92120ddcb8bd4999fca34caab3b5c7",
+        "verified_at": "2026-10-28T21:33:27.726Z",
+        "phase": "owned_file_removed",
+        "receipt_path": "/app/var/qa-cleanup-receipts/4f7719f8-a13b-43ba-bb74-84a09e672f38.json",
+        "removed_at": "2026-10-28T21:33:28.233Z"
+      }
+    ],
+    "foreign_or_preexisting_jobs_removed": false,
+    "workdir_removed": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd/var/qa-reimport/723ad1fd241d",
+    "client_files_sha256_rechecked": true,
+    "cleanup_intent": "docs/evidence/reimport-cleanup-intent.json",
+    "canonical_artifacts_and_volumes_preserved": true
+  },
+  "evidence": [
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/reimport-attempt-2-success/reimport.json",
+      "sha256": "17e9a3d918e07dd3aca81736be329e87e82ed243226ed7fb19e8c242385b68ad",
+      "bytes": 10261
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/reimport-attempt-2-success/reimport-cleanup-intent.json",
+      "sha256": "18200f9eb291527d5ef8b3dea257e0f1cdec409e3d9f1e3a6b039ae821862ec0",
+      "bytes": 1489
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/reimport-attempt-2-success/diagnostic-reimport-slice-fixed.log",
+      "sha256": "17e9a3d918e07dd3aca81736be329e87e82ed243226ed7fb19e8c242385b68ad",
+      "bytes": 10261
+    }
+  ]
+}

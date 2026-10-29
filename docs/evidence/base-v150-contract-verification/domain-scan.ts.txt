@@ -1,0 +1,59 @@
+import {createHash} from 'node:crypto';
+import {createReadStream,createWriteStream} from 'node:fs';
+import {readFile,writeFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import {createGunzip} from 'node:zlib';
+import {pathToFileURL,fileURLToPath} from 'node:url';
+import {Socket} from 'node:net';
+
+const root=process.cwd(),snapshot=resolve(process.argv[2]),output=resolve(process.argv[3]);
+if(!snapshot.startsWith(resolve('var')+'/')||!output.startsWith(resolve('var')+'/'))throw Error('Snapshot/output must remain under var/');
+// Importing the real domain initializes a lazy pool. No socket, database query,
+// schema migration or import is permitted in this read-only validation process.
+process.env.DATABASE_URL='postgresql://forbidden@127.0.0.1:1/no_database';
+let socketsAttempted=0;Socket.prototype.connect=function(){socketsAttempted++;throw Error('Network/DB connection forbidden by validation harness');} as typeof Socket.prototype.connect;
+const sha=(v:Buffer|string)=>createHash('sha256').update(v).digest('hex');
+const scannerPath=fileURLToPath(import.meta.url),scannerSha=sha(await readFile(scannerPath));
+const metadata=JSON.parse(await readFile(resolve(snapshot,'snapshot.json'),'utf8'));
+for(const [path,digest]of Object.entries(metadata.files))if(sha(await readFile(resolve(snapshot,path)))!==digest)throw Error('Snapshot checksum mismatch');
+const domain=await import(pathToFileURL(resolve(snapshot,'src/domain/publication.ts')).href);
+const shards=await import(pathToFileURL(resolve(snapshot,'src/domain/shards.ts')).href);
+const manifestPath=resolve('data/bundles/ca-7d302a9c674a97b83278.manifest.json');
+const bytes=await readFile(manifestPath),m=JSON.parse(bytes.toString());
+const baseSha='be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d';if(sha(bytes)!==baseSha)throw Error('BASE changed');
+const header={...m,items:[],relations:[]};for(const key of ['item_count','source_count','relation_count'])delete header[key];
+const sourceMap=new Map(m.sources.map((s:Record<string,unknown>)=>[s.id,s]));
+const ids=new Set<string>(),parents=new Map<string,string>(),relationIds=new Set<string>(),sourceIds=new Set<string>(m.sources.map((s:Record<string,unknown>)=>String(s.id)));
+const errors=createWriteStream(output+'.issues.jsonl');let issueCount=0;
+const counts={Source:0,Learning:0,Relation:0},failed={header:0,Source:0,Learning:0,Relation:0,hierarchy:0,whole_sharded_verifier:0};
+const byCode=new Map<string,number>(),bySource=new Map<string,number>();
+function emit(kind:keyof typeof failed,record:Record<string,unknown>,error:unknown){failed[kind]++;issueCount++;const e=error as {code?:string;message?:string};const code=e.code??'UNCLASSIFIED_DOMAIN_ERROR';byCode.set(code,(byCode.get(code)??0)+1);const sid=String(record.source_id??record.id??'(global)');bySource.set(sid,(bySource.get(sid)??0)+1);errors.write(JSON.stringify({kind,id:record.id,source_id:record.source_id,code,error:String(e.message??error).slice(0,2000)})+'\n');}
+try{domain.validateBundle(header);}catch(error){emit('header',{},error);}
+for(const source of m.sources){counts.Source++;try{domain.validateBundle({...header,sources:[source]});}catch(error){emit('Source',{id:source.id,source_id:source.id},error);}}
+for(const part of m.parts){
+ const compressed=createHash('sha256'),decoded=createHash('sha256');let records=0,size=0;
+ const input=createReadStream(resolve(root,part.path)),unzip=createGunzip();input.on('data',b=>compressed.update(b));input.on('error',e=>unzip.destroy(e));input.pipe(unzip);
+ const utf8=new TextDecoder('utf-8',{fatal:true});let pieces:Buffer[]=[],lineBytes=0;
+ const consume=(b:Buffer)=>{lineBytes+=b.length;if(lineBytes>8*1024*1024)throw Error('Record bound exceeded');pieces.push(b);};
+ const parse=()=>{if(!lineBytes)throw Error('Empty JSONL record');const line=pieces.length===1?pieces[0]:Buffer.concat(pieces,lineBytes);pieces=[];lineBytes=0;records++;const item=JSON.parse(utf8.decode(line));
+  if(part.kind==='items'){
+   counts.Learning++;if(ids.has(item.id)){emit('Learning',item,{code:'DUPLICATE_ITEM',message:'Duplicate ID in actual full collection'});}ids.add(item.id);if(item.parent_id)parents.set(item.id,item.parent_id);
+   const evidenceSourceIds=new Set([item.source_id,...(item.evidence??[]).map((e:Record<string,unknown>)=>e.source_id)]);
+   const sources=[...evidenceSourceIds].map(sid=>sourceMap.get(sid)).filter(Boolean);
+   // Exactly the actual shard importer's parent deferral: validate shape on a
+   // throwaway clone, then validate all ORIGINAL parent links globally below.
+   try{domain.validateBundle({...header,sources,items:[{...item,parent_id:null}]});}catch(error){emit('Learning',item,error);}
+  }else{counts.Relation++;try{shards.validateRelations([item],sourceIds,ids,relationIds);}catch(error){emit('Relation',item,error);}}
+ };
+ for await(const value of unzip){const chunk=value as Buffer;decoded.update(chunk);size+=chunk.length;let start=0,index:number;while((index=chunk.indexOf(0x0a,start))>=0){consume(chunk.subarray(start,index));parse();start=index+1;}if(start<chunk.length)consume(chunk.subarray(start));}if(lineBytes)parse();
+ if(compressed.digest('hex')!==part.sha256||decoded.digest('hex')!==part.decoded_sha256||records!==part.records||size!==part.decoded_bytes)throw Error('Shard checksum/count mismatch');
+ console.log(JSON.stringify({part:part.path,counts,issues:issueCount}));
+}
+try{domain.validateHierarchy(parents,ids);}catch(error){emit('hierarchy',{},error);}
+let wholeVerification:unknown=null;try{wholeVerification=await shards.verifyShardedManifest(m,resolve('data/bundles'),{schemaRoot:resolve('data/schema')});}catch(error){emit('whole_sharded_verifier',{},error);}
+if(counts.Source!==m.source_count||counts.Learning!==m.item_count||counts.Relation!==m.relation_count)throw Error('BASE count mismatch');
+for(const [path,digest]of Object.entries(metadata.files))if(sha(await readFile(resolve(snapshot,path)))!==digest)throw Error('Domain snapshot changed');
+if(sha(await readFile(scannerPath))!==scannerSha)throw Error('Scanner changed');
+await new Promise<void>((resolve,reject)=>{errors.on('error',reject);errors.end(resolve);});
+const result={generated_at:new Date().toISOString(),base_publication:m.id,base_sha256:baseSha,scanner_sha256:scannerSha,snapshot_sha256:metadata.sha256,files:metadata.files,counts,failed,issues:issueCount,by_code:Object.fromEntries(byCode),by_source:Object.fromEntries(bySource),whole_sharded_verifier:wholeVerification,sockets_attempted:socketsAttempted,database_accessed:false,canonical_payload_modified:false,passed:issueCount===0&&socketsAttempted===0,scope:'Real domain validateBundle and relation guards on every record, original hierarchy globally, and whole real verifyShardedManifest; canonical records are not rewritten.'};
+await writeFile(output,JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));

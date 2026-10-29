@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "at": "2026-10-28T15:55:48.762Z",
+  "scope": "remove only redundant legacy plain JSON after full original/gzip/decoded checksum proof; compressed published artifact retained",
+  "file": "data/bundles/ca-77fb8076598b567e1ba3.json",
+  "gzip": "data/bundles/ca-77fb8076598b567e1ba3.json.gz",
+  "original": {
+    "sha256": "c029b5eb768e4d660865000a74e41ccb398ecc252b4c6729b8e626a8407f9b1c",
+    "bytes": 237695811
+  },
+  "compressed": {
+    "sha256": "0e5bdcfa80f39712bf0751e9364289a4ce91110e300c1446c913eaa7b7bcab36",
+    "bytes": 24253561
+  },
+  "roundtrip": {
+    "sha256": "c029b5eb768e4d660865000a74e41ccb398ecc252b4c6729b8e626a8407f9b1c",
+    "bytes": 237695811
+  },
+  "mode": 420,
+  "mtime": "2026-10-28T03:50:22.051Z",
+  "restore_command": [
+    "gzip",
+    "-dk",
+    "--",
+    "data/bundles/ca-77fb8076598b567e1ba3.json.gz"
+  ],
+  "passed": true
+}

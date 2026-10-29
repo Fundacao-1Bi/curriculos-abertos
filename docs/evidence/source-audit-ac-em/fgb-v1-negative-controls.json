@@ -1,0 +1,130 @@
+{
+  "source_id": "ac-cru-em",
+  "mutations_in_memory_only": true,
+  "source_manifest_PV_core_cache_modified": false,
+  "controls": [
+    {
+      "name": "positive_primary_source_units",
+      "expected": "accept",
+      "actual": "accept",
+      "pass": true
+    },
+    {
+      "name": "drop_repeated_code_occurrence",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "drop_own_column_crosspage_continuation",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "append_neighbor_object_to_skill",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "promote_number_only_math_label_to_competence",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "invent_official_competence_code_C1",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "infer_missing_CNT_third_year_from_EM13",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "apply_opening_page_new_year_to_prior_organizer",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "collapse_explicit_multiple_components",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "promote_proposal_container_to_skill",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "promote_broken_objects_header_to_object",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "append_printed_footer_as_competence_content",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "misclassify_Spanish_IF_as_FGB",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "mutate_frozen_PV158",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "broad_authority_erases_unreviewed_FTP_IF",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "remove_literal_hyphen",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "merge_repeated_competences_by_number",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "silently_correct_literal_short_LGG_code",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "discard_out_of_grid_adaptation_footnote",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    },
+    {
+      "name": "reject_widened_bbox_including_neighbor_columns",
+      "expected": "reject",
+      "actual": "reject",
+      "pass": true
+    }
+  ],
+  "passed": 20,
+  "total": 20,
+  "result": "pass"
+}

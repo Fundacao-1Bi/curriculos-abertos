@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-10-28T05:03:39.749Z",
+  "completed_at": "2026-10-28T05:03:52.754Z",
+  "volume": "curriculos-abertos_storage",
+  "source": "host var/exports + var/jobs + var/source-monitor",
+  "staging_private": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/storage-import-01bcb190-df41-4af7-9b31-91822c5be6cc",
+  "completed_exports_verified": 7,
+  "verification": {
+    "files": 14,
+    "bytes": 534460037,
+    "uid": 1000
+  },
+  "manifest_sha256": "e9afbf8cd715e8e2f292471bc3efb1f18ea7551cd89c272feeb96e9cd53a8a36",
+  "passed": true,
+  "container_started_as_application": false,
+  "notes": "Somente volume dedicado criado; arquivos verificados por SHA-256 e propriedade node1000; nenhum app/worker iniciado.",
+  "staging_payload_removed_at": "2026-10-28T05:34:12.338Z",
+  "staging_manifest_retained": true
+}

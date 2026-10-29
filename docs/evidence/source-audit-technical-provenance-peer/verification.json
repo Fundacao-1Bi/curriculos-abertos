@@ -1,0 +1,93 @@
+{
+  "base_records_capture": 19,
+  "canonical_inputs_mutated": false,
+  "code_and_capture_pins": {
+    "pipeline/ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+    "pipeline/technical_provenance.py": "6172dc73617804e461129f61d17f9c2284adda885e8566de3e6b872e6acb7669",
+    "pipeline/tests/test_technical_provenance.py": "9d8d2b168dc73f33f7a0035033c49d6d6ccd6845aeacb823bf0cc2051f6223d0",
+    "var/technical-delta-real/HANDOFF.md": "c2cc6cc393610db18c6a21a861790de61c00a2ffba7d931032f6630110334ddd",
+    "var/technical-delta-real/input-pins.json": "c568fe6751ceff6f43a280b09746a6cd9dc429b675ba519e182090cd25644b3a",
+    "var/technical-delta-real/real-verification.json": "bc7370bb171d60c266d4b4a3d4bc1765c55c2a3b63c5b60c3170353a4845ddb0"
+  },
+  "command": "env PYTHONDONTWRITEBYTECODE=1 var/venv-pipeline/bin/python docs/evidence/source-audit-technical-provenance-peer/verify_peer.py",
+  "counterfactuals": {
+    "canonical_inputs_mutated": false,
+    "invalid_hex_base_sha_accepted": true,
+    "relation_conflicting_id": "ca:relation:a16d5a2d803084dfe37eb283",
+    "relation_conflicting_payload_same_id_accepted": true,
+    "same_id_third_text_accepted": true,
+    "same_id_third_text_effect": "documented_historical_text_correction",
+    "same_id_third_text_hash": "8f31334d087870360705e7000be77f29f226a298328b73d1e556faf7a28ea4f6"
+  },
+  "current_base_effects": {
+    "supersedes_item_from_pinned_base": 18
+  },
+  "current_producer_diagnostic_global_id": "ca-update-fa01cad5a62f15da814c1101bd8b75a0",
+  "current_producer_events_sha256": "c2eb1a2b33b6a51dc3c43b0fc0f7634c636069873dcf100052e1f082e6414045",
+  "current_producer_id_published": false,
+  "database_imported": false,
+  "engine": {
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "extraction_or_build_run": false,
+  "generated_at": "2026-10-28T21:40:01.001614+00:00",
+  "input_pin_drift": [
+    {
+      "actual_sha256": "3808cc1a5ab930bfac8edeebc853bc6f5716e1abd394fd0352de792c13eda2b3",
+      "expected_sha256": "419a4d06b40d8099b6684b0f04dc3bc614d03b8d5b4099d9d5bec84cf3817cab",
+      "path": "pipeline/raster_review_scoped.py"
+    }
+  ],
+  "legacy_digest_is_distinct_producer": true,
+  "legacy_evidence_pins_verified": {
+    "var/technical-delta-real/fresh-raw-id-sets.json": "c36ae9e8281875bdef204d48e24aaa798f959d84820984829fbeed99b3125ba8",
+    "var/technical-delta-real/negative-and-identity-tests.json": "b4187f217702376b84351e777821ff7a2295da0ae6267ca4653e51eb6ee56f74",
+    "var/technical-delta-real/raw-replay-verification.json": "2f95db010d6f89b4c39cfa8fd89bfabd5868d4a80b13642685c69d27f625d96a",
+    "var/technical-delta-real/real-technical-evaluation.json": "d3ccd7665a90acc4a6a6dd7b0a797faf6e5b3f682996a9521c0f3681dbcc8d7d",
+    "var/technical-delta-real/real-technical-identity.json": "67a3e9f9d0976297b9f211aa4d14910cb4a315e1f91eaa4ddc38da47f5a6fb5b",
+    "var/technical-delta-real/same-id-before-after.json": "b58186bd6c63fe7ded7a23eb8c7e179a70572061fab1417d950bea3f975a3c2a",
+    "var/technical-delta-real/targeted-base-records.json": "a097f44b0c3a60031915f03886d20755a28c06fb843f91545b063ff5c545d455"
+  },
+  "limits": [
+    "Real RAW shards and the 19-record BASE capture are independently hash checked; the national BASE shard census is historical, not repeated by this peer.",
+    "Counterfactual payloads exist only in memory and do not describe actual BASE drift.",
+    "The standalone helper is not a complete schema/corpus validator or a publisher.",
+    "Current producer fingerprints intentionally change the old diagnostic event digest."
+  ],
+  "national_base_shards_rescanned": false,
+  "original_input_pins_checked": 99,
+  "producer_fingerprint": {
+    "algorithm": "sha256-of-canonical-producer-and-dependencies-v1",
+    "dependencies": {
+      "_hashlib": "1e015c6118cdd4c9247c1304e38f9071680f5107eb1983e51c581ce85374c3e1",
+      "_json": "83dc6cb12a09193f6f0bb9447744e955cbfa23147bc3025429c1a6b2f6c67d84",
+      "copy": "27dcfc53a4b9d4fbc3d90c74e549eb6eca9301524d6d2fbff9a6589cf51b6fd5",
+      "hashlib": "e2bffb462e4d43e6637b9450e259e8ba2a56626ba3037d68aa1cee68b3f61d4a",
+      "json": "d5d41e2c29049515d295d81a6d40b4890fbec8d8482cfb401630f8ef2f77e4d5",
+      "json.decoder": "9f02654649816145bc76f8c210a5fe3ba1de142d4d97a1c93105732e747c285b",
+      "json.encoder": "af7bd40a0d0d0a3e726a9b4b3a2a543019f6ab97a340d0162a9c29ca9da97869",
+      "json.scanner": "8604d9d03786d0d509abb49e9f069337278ea988c244069ae8ca2c89acc2cb08",
+      "pathlib": "3b21ac188fd9ac20bacc8ccd976fabd5d8ccf5000f8e157d3dfff005b228fb3d"
+    },
+    "producer_file_sha256": "6172dc73617804e461129f61d17f9c2284adda885e8566de3e6b872e6acb7669",
+    "revision": "technical-provenance-v1.0.0",
+    "runtime": {
+      "cache_tag": "cpython-311",
+      "implementation": "cpython",
+      "version": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+    },
+    "sha256": "2b7b24d2cadd116a095cf5141058413c103d13203b0ab592090b7e2e8c4797a2"
+  },
+  "raw_items": 15276,
+  "raw_relations": 3037,
+  "release_readiness_asserted": false,
+  "same_id_current_effect": "corrects_text_in_pinned_base",
+  "standalone_pure_tests_observed": {
+    "command": "env PYTHONDONTWRITEBYTECODE=1 var/venv-pipeline/bin/python -m unittest discover -s pipeline/tests -p test_technical_provenance.py -v",
+    "elapsed_seconds": 12.479,
+    "failures": 0,
+    "rerun_by_this_script": false,
+    "skips": 0,
+    "tests": 14
+  }
+}

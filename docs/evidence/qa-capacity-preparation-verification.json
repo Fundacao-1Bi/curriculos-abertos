@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "completed_at": "2026-10-28T18:52:34.311854+00:00",
+  "actor_type": "automated",
+  "implemented": [
+    "image guard before QA env/volume creation",
+    "per-stage artifact+largestUF+measuredPG disk budgets",
+    "new isolated exports/root-only cleanup after byte/SQL proof",
+    "restore file+storage SHA verification and owned DB/extract cleanup",
+    "data/bundles excluded from standard/fallback context, host artifacts preserved"
+  ],
+  "verification": {
+    "unit_tests": {
+      "command": [
+        "node",
+        "--import",
+        "tsx",
+        "--test",
+        "tests/qa-ops-capacity.test.ts"
+      ],
+      "exit_code": 0,
+      "tests": 3,
+      "passed": 3,
+      "skipped": 0,
+      "log": "docs/evidence/qa-capacity-unit-tests.log"
+    },
+    "typecheck": {
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exit_code": 0
+    },
+    "lint": {
+      "scope": "modified QA/ops files and capacity tests",
+      "exit_code": 0
+    },
+    "negative_real_before_env": "docs/evidence/qa-image-guard-before-env-negative.json",
+    "embedded_cleanup_js_parse": true,
+    "fallback_tar_bundle_exclusion_verified_empty": true,
+    "independent_auditor_review": "No P1 foreign deletion found; DELETE before unlink + per-job receipts now avoids the observed dangling-job P2.",
+    "embedded_storage_measurement_and_marker_js_parse": true
+  },
+  "not_executed": [
+    "final image build/up",
+    "positive production/reimport/recovery QA",
+    "fresh J11",
+    "runtime/volume recreation",
+    "cache archival/prune/global actions"
+  ],
+  "pending": "Frozen FULL artifact and code, sufficient provisioned disk, final real Docker/SQL/file cleanup verification."
+}

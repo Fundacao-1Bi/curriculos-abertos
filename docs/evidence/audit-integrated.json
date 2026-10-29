@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "actor_type": "automated",
+  "actor_id": "codex-independent-auditor",
+  "started_at": "2026-10-28T03:40:47.740Z",
+  "completed_at": "2026-10-28T03:40:48.047Z",
+  "base_url": "http://localhost:3000",
+  "publication": "ca-64e60bb2c92be368dcd7",
+  "source_tree_sha256": "d5f360d1779254da4629ee806af8512473ac3cd32bb2a5a65b6ab3b2bb4d4aea",
+  "bundle": "data/bundles/ca-64e60bb2c92be368dcd7.json",
+  "bundle_sha256": "5d826c55e7f2b646d743425283b08deca1ce8a1048e0c765a25a7b0f9210311c",
+  "sample_count": 8,
+  "checks": [
+    {
+      "name": "bundles contêm registros reais sem fixture sintética declarada",
+      "passed": true
+    },
+    {
+      "name": "todos itens têm UF e etapa coerentes com fonte e evidência localizável",
+      "passed": false,
+      "detail": "Posicionamento ca:sp-curriculo-eief-isbn:76eea56cedf2f11edfde"
+    },
+    {
+      "name": "direção e dimensões das relações preservadas sem equivalência inferida por código",
+      "passed": true
+    },
+    {
+      "name": "catálogo nacional mantém exatamente 27 UFs e contagens reais do corpus",
+      "passed": true
+    },
+    {
+      "name": "nenhuma UF pronta apenas por cadastro/um exemplo/etapa parcial",
+      "passed": true
+    },
+    {
+      "name": "API/bundle texto+IDs+fontes da amostra ca:sp-curriculo-eief-isbn:c5e93793412c5601be2e",
+      "passed": true
+    },
+    {
+      "name": "API/bundle texto+IDs+fontes da amostra ca:sp-curriculo-eief-isbn:c8e5942620263edd9605",
+      "passed": true
+    },
+    {
+      "name": "API/bundle texto+IDs+fontes da amostra ca:sp-curriculo-eief-isbn:c7270c1ad54abfcbeef7",
+      "passed": true
+    },
+    {
+      "name": "API/bundle texto+IDs+fontes da amostra ca:sp-curriculo-eief-isbn:42f3ace78ea7a870af32",
+      "passed": true
+    },
+    {
+      "name": "API/bundle texto+IDs+fontes da amostra ca:sp-curriculo-eief-isbn:90108ba8655b6262462c",
+      "passed": true
+    },
+    {
+      "name": "API/bundle texto+IDs+fontes da amostra ca:sp-curriculo-eief-isbn:ad5de656b62fc359934e",
+      "passed": true
+    },
+    {
+      "name": "API/bundle texto+IDs+fontes da amostra ca:sp-curriculo-eief-isbn:4f771bc23193011fc394",
+      "passed": true
+    },
+    {
+      "name": "API/bundle texto+IDs+fontes da amostra ca:sp-curriculo-eief-isbn:58475f003f71ab71591b",
+      "passed": true
+    },
+    {
+      "name": "item nacional real necessário ao panorama",
+      "passed": false
+    },
+    {
+      "name": "admin GET sem sessão é recusado diretamente",
+      "passed": true
+    },
+    {
+      "name": "admin POST sem sessão é recusado diretamente",
+      "passed": true
+    },
+    {
+      "name": "origem não autorizada recusada",
+      "passed": true
+    },
+    {
+      "name": "MCP origem não autorizada recusada",
+      "passed": true
+    },
+    {
+      "name": "dependências essenciais fixadas e segredos locais ignorados",
+      "passed": true
+    },
+    {
+      "name": "testes relevantes não estão skip/todo",
+      "passed": true
+    }
+  ],
+  "passed": false,
+  "limitations": [
+    "Auditoria automatizada não é revisão pedagógica humana.",
+    "Integridade código/texto/evidência do bundle não substitui reconciliação visual documental; corpus é avaliado separadamente pelo gate do pipeline."
+  ]
+}

@@ -1,0 +1,471 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex-independent-es-em-core-auditor",
+  "figure_fields_census_sha256": "903d204b434192c98789db762ef37e262136d058e58b3f3a4f6e984731deb725",
+  "sources": [
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "records": 334,
+      "native_diagram_fields": 0,
+      "raster_fields": 20,
+      "sidecar_sha256": "9d96012e9266071233c7359eb85075e961bdddcdc815a2310e9f5174855d9d2c"
+    },
+    {
+      "source_id": "es-em-linguagens",
+      "records": 1031,
+      "native_diagram_fields": 0,
+      "raster_fields": 0,
+      "sidecar_sha256": "abbe0aead25894c0c322cbe94403b3429cd5b73220fd642323a857527e788bef"
+    },
+    {
+      "source_id": "es-em-l-ngua-portuguesa",
+      "records": 899,
+      "native_diagram_fields": 0,
+      "raster_fields": 0,
+      "sidecar_sha256": "8b3e980a5df1e166da442cfbad1fd779bd12b93f40ce7da0ab77637245fffebf"
+    },
+    {
+      "source_id": "es-em-ci-ncias-da-natureza",
+      "records": 673,
+      "native_diagram_fields": 0,
+      "raster_fields": 0,
+      "sidecar_sha256": "4e4498c2d91ba93490d97730c27d62844d6f571c2518981a93e42353aa19239a"
+    },
+    {
+      "source_id": "es-em-ci-ncias-humanas",
+      "records": 692,
+      "native_diagram_fields": 6,
+      "raster_fields": 0,
+      "sidecar_sha256": "d52212e96e593c1876100a2bfe4bcb298320ad166016c0e57e2b3a32cec01c3b"
+    },
+    {
+      "source_id": "es-em-matem-tica",
+      "records": 324,
+      "native_diagram_fields": 0,
+      "raster_fields": 6,
+      "sidecar_sha256": "ca0ebcba38bc582697ab803d07c9d30882c25d286f49f17eb4334990bcf17ecf"
+    }
+  ],
+  "OCR_observations": [
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-linguagens",
+      "page": 26,
+      "bbox": [
+        211.5,
+        241.5,
+        293.0,
+        299.5
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-linguagens.json",
+      "proof_sha256": "f00d741cd13c73c5d21488d53d6be0a0ff3355392f68daceaf0ff86f99b99715",
+      "raw_ocr": "Linguagens\ne suas\ntecnologias",
+      "transcription": "Linguagens e suas tecnologias",
+      "equal_ignoring_whitespace": true
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-matematica",
+      "page": 26,
+      "bbox": [
+        309.5,
+        241.0,
+        400.5,
+        299.5
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-matematica.json",
+      "proof_sha256": "487d2024e0918ab2d7500072ca724485796d72f874a9582553ea009a620e4bd5",
+      "raw_ocr": "Matemática\ne suas\ntecnologias",
+      "transcription": "Matemática e suas tecnologias",
+      "equal_ignoring_whitespace": true
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-humanas",
+      "page": 26,
+      "bbox": [
+        208.0,
+        335.0,
+        298.0,
+        406.0
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-humanas.json",
+      "proof_sha256": "774957a348ada8e3c081513d3d37424435d957b91904369935ae772b7efaae7a",
+      "raw_ocr": "Ciências *\nHumanas e\nSociais\naplicadas",
+      "transcription": "Ciências Humanas e Sociais aplicadas",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-natureza",
+      "page": 26,
+      "bbox": [
+        313.0,
+        336.0,
+        405.0,
+        406.0
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-natureza.json",
+      "proof_sha256": "2ef2a3d5891568518b59c1c0663afbddd92f5c22af464dde28603ddf726cb864",
+      "raw_ocr": "Ciências da\n\nNatureza e\nsuas\n\ntecnologias",
+      "transcription": "Ciências da Natureza e suas tecnologias",
+      "equal_ignoring_whitespace": true
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-linguagens-component-1",
+      "page": 26,
+      "bbox": [
+        102.5,
+        180.0,
+        144.5,
+        194.5
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-linguagens-component-1.json",
+      "proof_sha256": "bebb325dc3d8995201f5f8831ce1df6db271ce64e51d49502f49ca5a23dedf4a",
+      "raw_ocr": "Arte",
+      "transcription": "• Arte",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-linguagens-component-2",
+      "page": 26,
+      "bbox": [
+        102.5,
+        193.5,
+        187.5,
+        208.0
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-linguagens-component-2.json",
+      "proof_sha256": "5296fb3eb783d5ea22422d5ab239dd520ecd2393c7eb1280c8e49c4ba1d50424",
+      "raw_ocr": "*Educação Física",
+      "transcription": "• Educação Física",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-linguagens-component-3",
+      "page": 26,
+      "bbox": [
+        102.5,
+        206.5,
+        146.5,
+        220.5
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-linguagens-component-3.json",
+      "proof_sha256": "17b8a35d31f99cc5217c8696c5bb71551760ab474c51e80e00bcb8499a6c5eb9",
+      "raw_ocr": "eInglês",
+      "transcription": "• Inglês",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-linguagens-component-4",
+      "page": 26,
+      "bbox": [
+        102.5,
+        219.5,
+        194.5,
+        233.5
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-linguagens-component-4.json",
+      "proof_sha256": "93bc8ff30f9e2aedf42b83ddad64175bbd3ec77aa9b5414091c363d2c50c8ec1",
+      "raw_ocr": "“Língua Portuguesa",
+      "transcription": "• Língua Portuguesa",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-matematica-component-1",
+      "page": 26,
+      "bbox": [
+        400.5,
+        170.0,
+        478.0,
+        186.5
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-matematica-component-1.json",
+      "proof_sha256": "e0e5b4d0753898f593944aeafb6246c6f2d53fa52afb4575b23a804d09d9018b",
+      "raw_ocr": "* Matemática",
+      "transcription": "• Matemática",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-humanas-component-1",
+      "page": 26,
+      "bbox": [
+        102.5,
+        409.0,
+        156.5,
+        424.5
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-humanas-component-1.json",
+      "proof_sha256": "b8276f0acfcda28f48c85f5ff38b2cc94158fc050d531e6fa803106db642d9e8",
+      "raw_ocr": "* Filosofia",
+      "transcription": "• Filosofia",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-humanas-component-2",
+      "page": 26,
+      "bbox": [
+        102.5,
+        424.0,
+        157.5,
+        439.0
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-humanas-component-2.json",
+      "proof_sha256": "e1122249a80f00ba8d346e21927a351caf6de0f9ac744a14c35f7e450c88e86f",
+      "raw_ocr": "* Geografi",
+      "transcription": "• Geografia",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-humanas-component-3",
+      "page": 26,
+      "bbox": [
+        102.5,
+        438.5,
+        153.5,
+        454.0
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-humanas-component-3.json",
+      "proof_sha256": "2570daa488c82b6b0514a96ab5e591604c9c6b56bb2df76ed0868cb135929314",
+      "raw_ocr": "* História",
+      "transcription": "• História",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-humanas-component-4",
+      "page": 26,
+      "bbox": [
+        102.5,
+        453.0,
+        163.0,
+        469.5
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-humanas-component-4.json",
+      "proof_sha256": "2723b21c2c7cb7568eb4bb12b1a34c328d0f745466a6fc6b7adae4433bec3d59",
+      "raw_ocr": "* Sociologic",
+      "transcription": "• Sociologia",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-natureza-component-1",
+      "page": 26,
+      "bbox": [
+        401.0,
+        408.0,
+        465.5,
+        424.0
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-natureza-component-1.json",
+      "proof_sha256": "f880a8ff595d4cef4dbd9c7159c29dd7cc41a0e6289639ddc397ec2318993cba",
+      "raw_ocr": "A Biologia",
+      "transcription": "• Biologia",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-natureza-component-2",
+      "page": 26,
+      "bbox": [
+        401.0,
+        423.0,
+        453.0,
+        439.0
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-natureza-component-2.json",
+      "proof_sha256": "babd58db8a95068b3ed615ed04369eefb8c5d0181320d1f3265f6c826b3d8e12",
+      "raw_ocr": "* Física",
+      "transcription": "• Física",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-area-natureza-component-3",
+      "page": 26,
+      "bbox": [
+        401.0,
+        438.0,
+        459.5,
+        454.5
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-area-natureza-component-3.json",
+      "proof_sha256": "f1cf4d93ce0b59bf46e276cb2db66cf7e5331edbdf5ab358d147213b4ac8fbc2",
+      "raw_ocr": "* Química",
+      "transcription": "• Química",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-axis-summary-1",
+      "page": 28,
+      "bbox": [
+        78.0,
+        393.5,
+        530.5,
+        455.5
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-axis-summary-1.json",
+      "proof_sha256": "9a5b8aaee9ff8534f143852cd9ad3770b2c0a874200436bcc646c3829f69c8bd",
+      "raw_ocr": "*Supõe o aprofundamento de conceitos fundantes das ciências. interpretação de ideias,\nfntmen E oc pra er ld em dinenos e i voltados ao\nenfrentamento de situações cotidianas. E das locais “mea ctnenção",
+      "transcription": "1 INVESTIGAÇÃO CIENTÍFICA • Supõe o aprofundamento de conceitos fundantes das ciências para a interpretação de ideias, fenômenos e processos para serem utilizados em procedimentos de investigação voltados ao enfrentamento de situações cotidianas e demandas locais e coletivas, e a proposição de intervenções que considerem o desenvolvimento local e a melhoria da qualidade de vida da comunidade.",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-axis-summary-2",
+      "page": 28,
+      "bbox": [
+        78.0,
+        456.0,
+        530.5,
+        522.5
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-axis-summary-2.json",
+      "proof_sha256": "3802d5c3ce170f5b74ce6a4bf5b5d0ba113a1c0be5bce6b032a32a0a3c51da6f",
+      "raw_ocr": "PROCESSOS CRIATIVOS\n\n*Supõe o uso e o aprofundamento do conhecimento científico na construção e criação de\nexperimentos, modelos, protótipos para a criação de processos ou produtos que atendam a\ndemandas pela resolução de problemas identificados na sociedade.",
+      "transcription": "2 PROCESSOS CRIATIVOS • Supõe o uso e o aprofundamento do conhecimento científico na construção e criação de experimentos, modelos ou protótipos para a criação de processos ou produtos que atendam a demandas pela resolução de problemas identificados na sociedade.",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-axis-summary-3",
+      "page": 28,
+      "bbox": [
+        78.0,
+        523.0,
+        530.5,
+        588.5
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-axis-summary-3.json",
+      "proof_sha256": "3995afda799c09298ce88c52dd1c881a7b1dbbe6035dc0d2d40959120a0e7c91",
+      "raw_ocr": "MEDIAÇÃO E INTERVENÇÃO SOCIOCULTURAL\n+ Supõe a mobilização de conhecimentos de uma ou mais áreas para mediar conflitos, promover\nentendimento e implementar soluções para questões e problemas identificados na comunidade.",
+      "transcription": "3 MEDIAÇÃO E INTERVENÇÃO SOCIOCULTURAL • Supõe a mobilização de conhecimentos de uma ou mais áreas para mediar conflitos, promover entendimento e implementar soluções para questões e problemas identificados na comunidade.",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-texto-introdut-rio",
+      "key": "em-core-image-axis-summary-4",
+      "page": 28,
+      "bbox": [
+        78.0,
+        589.0,
+        530.5,
+        648.0
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-axis-summary-4.json",
+      "proof_sha256": "20bbc4f21ec09fe05fe4a687de1b95073cad3e75875512d96f169f673173494d",
+      "raw_ocr": "EMPREENDEDORISMO\n* supõe a mobilização de conhecimentos de diferentes áreas para a formação de organizações\ncom variadas missões voltadas ao desenvolvimento de produtos ou prestação de serviços\ninovadorescom o uso dastecnologias.",
+      "transcription": "4 EMPREENDEDORISMO • supõe a mobilização de conhecimentos de diferentes áreas para a formação de organizações com variadas missões voltadas ao desenvolvimento de produtos ou prestação de serviços inovadores com o uso das tecnologias.",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-matem-tica",
+      "key": "em-core-image-math-orientation",
+      "page": 2,
+      "bbox": [
+        92.5,
+        351.0,
+        501.5,
+        396.5
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-math-orientation.json",
+      "proof_sha256": "e2a8d73e93bbeeecdbb53d15e3dab2fd7b95f0cf82124e5e1fa0c4b42fb4a710",
+      "raw_ocr": "Retomar — Ampliar — Aprofundar",
+      "transcription": "Retomar – Ampliar – Aprofundar",
+      "equal_ignoring_whitespace": false
+    },
+    {
+      "source_id": "es-em-matem-tica",
+      "key": "em-core-image-math-axis-1",
+      "page": 3,
+      "bbox": [
+        96.5,
+        381.5,
+        230.0,
+        424.0
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-math-axis-1.json",
+      "proof_sha256": "65a2a07c54bdd4484865777fc308aa8bc1bc7c7f69cac45c5b93037fa7f33276",
+      "raw_ocr": "Números",
+      "transcription": "Números",
+      "equal_ignoring_whitespace": true
+    },
+    {
+      "source_id": "es-em-matem-tica",
+      "key": "em-core-image-math-axis-2",
+      "page": 3,
+      "bbox": [
+        246.5,
+        381.5,
+        383.0,
+        424.0
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-math-axis-2.json",
+      "proof_sha256": "2ed73be2a679b21b1601d2b11ff710bc68b1954946dd5eb4b2faed308e9a8c94",
+      "raw_ocr": "Grandezas e\nMedidas",
+      "transcription": "Grandezas e Medidas",
+      "equal_ignoring_whitespace": true
+    },
+    {
+      "source_id": "es-em-matem-tica",
+      "key": "em-core-image-math-axis-3",
+      "page": 3,
+      "bbox": [
+        400.0,
+        381.5,
+        533.0,
+        424.0
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-math-axis-3.json",
+      "proof_sha256": "40989045c6142e4ff3750f608d6eacb838712782d490709647c9db64879560e0",
+      "raw_ocr": "Álgebra e Funções",
+      "transcription": "Álgebra e Funções",
+      "equal_ignoring_whitespace": true
+    },
+    {
+      "source_id": "es-em-matem-tica",
+      "key": "em-core-image-math-axis-4",
+      "page": 3,
+      "bbox": [
+        160.5,
+        437.5,
+        296.0,
+        476.0
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-math-axis-4.json",
+      "proof_sha256": "f5415357d595d342b183da7e6c75ee5b21cf75ae9faf49d92ea60e6247ca1ceb",
+      "raw_ocr": "Estatística e\nProbabilidade",
+      "transcription": "Estatística e Probabilidade",
+      "equal_ignoring_whitespace": true
+    },
+    {
+      "source_id": "es-em-matem-tica",
+      "key": "em-core-image-math-axis-5",
+      "page": 3,
+      "bbox": [
+        326.5,
+        437.5,
+        462.5,
+        476.0
+      ],
+      "proof": "data/manifests/uncoded/es-em-core-figure-proof-em-core-image-math-axis-5.json",
+      "proof_sha256": "cf8145cd1f3fbe7cee0e0be06c40d9debb2d879588b1d085e71aa65b394469bf",
+      "raw_ocr": "Geometria E",
+      "transcription": "Geometria",
+      "equal_ignoring_whitespace": false
+    }
+  ],
+  "images_redistributed": false,
+  "source_manifest_modified": false,
+  "core_modified": false,
+  "human_pedagogical_review_claimed": false
+}

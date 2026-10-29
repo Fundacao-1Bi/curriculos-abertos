@@ -1,0 +1,34 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:df_digital",
+  "method": "Independent physical source inventories compared with output snapshots by page/literal identifier and original table header; no extracted IDs used as denominator",
+  "frozen_helper_sha256": "f85f208c88957570f85fc6802745fff53b358f58c3c2c46a99e5aec1bee16e4e",
+  "owner_completed_output_marker_checked": true,
+  "ms": {
+    "snapshot_path": "docs/evidence/source-audit-central-south/ms-cr-eief-v110-helper-items.json",
+    "snapshot_sha256": "4ac535d3b09ab55ff73257c206f67f6add80408b5e135e29ab520bbafb868cd8",
+    "independent_header_regions": 713,
+    "independent_definition_occurrences": 1737,
+    "helper_item_count": 1737,
+    "missing_original_occurrences": [],
+    "extra_or_truncated_identifiers": [],
+    "positions_checked": 1737,
+    "position_failures": [],
+    "own_page_number_in_text_diagnostic": []
+  },
+  "rs": {
+    "snapshot_path": "docs/evidence/source-audit-central-south/rs-rcg-ei-2018-helper-items.json",
+    "snapshot_sha256": "f6c0a0032c3c02f584580ee5b31b3e82c98717d813e6cbc09d7c43c0abdcf8d9",
+    "independent_anchor_occurrences": 340,
+    "helper_item_count": 340,
+    "missing": [],
+    "extra": [],
+    "positions_checked": 340,
+    "position_failures": []
+  },
+  "limits": [
+    "This is the captured output snapshot; owner fixes require refreshed snapshots.",
+    "MS identifier anomalies are preserved literally, including inner spaces, missing opening parenthesis, extra dot and digit after closing parenthesis.",
+    "Full narrative/competency/uncoded structure and every item text boundary require separate reconciliation; no source/UF readiness inferred."
+  ]
+}

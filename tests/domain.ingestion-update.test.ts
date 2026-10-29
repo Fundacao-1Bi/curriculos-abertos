@@ -1,0 +1,142 @@
+/** Public curriculum fixtures are synthetic and isolated to the harness-owned test DB. */
+import {test,before,after} from 'node:test';
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {mkdir,mkdtemp,rm,readFile,writeFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import {migrate} from '../scripts/migrate';
+import {pool} from '../src/db/client';
+import {testDatabaseName} from './domain-safety';
+import {importBundle,setDefaultPublication} from '../src/domain/publication';
+import {getLearning,listSources,resolvePublication} from '../src/domain/service';
+import {exportIngestionBase,prepareGlobalIngestionUpdate,publishGlobalIngestionUpdate,verifyGlobalIngestionPreservation,revalidatePreparedIngestionProvenance} from '../src/domain/ingestion-update';
+import {writeShardedArtifact} from '../src/domain/shard-writer';
+import {evaluateIngestionProvenance,provenanceDigest} from '../src/domain/ingestion-provenance';
+import type {Bundle,Learning,Relation,Source} from '../src/shared/contracts';
+const allowed=process.env.DOMAIN_INTEGRATION_TEST==='1';
+const source=(id:string,uf:'BR'|'SP'|'RJ'):Source=>({id,uf,title:'TEST ONLY '+id,issuer:'Synthetic isolated fixture',official_url:'https://example.org/source',artifact_url:'https://example.org/source.pdf',stages:['EF'],components:['Matemática'],edition:'fixture-1',document_date:null,homologation_date:null,application_period:null,document_type:'test_fixture',normative_parts:['part'],redistribution:'Test only',collected_at:null,sha256:null,local_path:null,status:'test',metadata_preserved:{nested:['unchanged',1]}});
+const sources=[source('update-BR','BR'),source('update-SP','SP'),source('update-SP-other','SP'),source('update-RJ','RJ')];
+const item=(id:string,source_id:string,text=id):Learning=>({id,curriculum_id:source_id,source_id,uf:sources.find(s=>s.id===source_id)!.uf,code:id,text,normalized_text:'canonical producer form',editorial_note:null,kind:'habilidade',parent_id:null,positions:[{stage:'EF',component:'Matemática',area:null,years:[6,7],year_label:'6º e 7º',age_group:null,period:null}],evidence:[{source_id,page:2,printed_page:'3',section:'Fixture',excerpt:text}],extraction_revision:'fixture-1',extraction_flags:['preserve'],custom_metadata:{array:['a','b']}});
+const items=[item('national-a','update-BR'),item('national-b','update-BR'),item('local-a','update-SP'),item('local-b','update-SP'),item('other-sp','update-SP-other'),item('other-rj','update-RJ')];
+const relation=(id:string,from:string[],to:string[]):Relation=>({id,members:[...from.map(item_id=>({item_id,role:'source' as const,scope:'partial explicit documentary scope'})),...to.map(item_id=>({item_id,role:'target' as const,scope:'national reference only'}))],relation_type:'relacao_generica',origin:'declaracao_fonte',technical_validation_status:'literal_code_checked',pedagogical_review_status:'contested',publication_status:'documented_reference',method:'fixture documented many-to-many',evidence:[{source_id:'update-BR',page:2,printed_page:null,section:null,excerpt:'Documentary fixture'}],review_events:[{actor_type:'automated',actor_id:'isolated-test',reason:'Preserve independent dimensions'}],equivalence_asserted:false});
+const relations=[relation('update-r1',['local-a','local-b'],['national-a','national-b']),relation('outside-r2',['other-rj'],['national-a']),relation('outside-r3',['other-sp'],['national-b'])];
+const parts=(id:string)=>({source_id:id,part:'part',edition:'fixture-1'});
+const sharedCoverage={uf:'SP',stage:'EF',component:'Matemática',source_ids:['update-SP','update-SP-other'],expected_parts:[parts('update-SP'),parts('update-SP-other')],processed_parts:[parts('update-SP'),parts('update-SP-other')],reconciled_parts:[parts('update-SP-other')],expected_parts_count:2,processed_parts_count:2,reconciled_parts_count:1,item_count:3,ready:false,reconciled:false,pending:['Target reconciliation missing'],custom_inventory:'preserve outside source parts'};
+const outsideCoverage={uf:'RJ',stage:'EF',component:'Matemática',source_ids:['update-RJ'],expected_parts:[parts('update-RJ')],processed_parts:[parts('update-RJ')],reconciled_parts:[],item_count:1,ready:false,reconciled:false,pending:['Original documentary uncertainty'],custom_note:{preserve:true}};
+const base:Bundle={id:'ingestion-base-fixture',schema_version:'1.1.0',schema_path:'data/schema/1.1.0.json',schema_sha256:'cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df',created_at:'2026-10-28T00:00:00Z',extraction_revision:'fixture-1',mapping_revision:'fixture-1',sources,items,relations,coverage:[sharedCoverage,outsideCoverage],changelog:[{type:'test_fixture'}],rights:{preserve:'unchanged outside metadata'}};
+before(async()=>{if(!allowed)return;const name=testDatabaseName(process.env.DATABASE_URL);assert.equal((await pool.query('SELECT current_database() name')).rows[0].name,name);await pool.query('DROP SCHEMA public CASCADE');await pool.query('CREATE SCHEMA public');await migrate();await importBundle(base,{makeDefault:true});});
+after(async()=>{await pool.end();});
+const iterable=<T>(values:T[])=>(async function*(){for(const value of values)yield value;})();
+test('global source update preserves all non-target canonical data and publishes only with base CAS',{skip:!allowed},async()=>{
+ await mkdir('data/bundles',{recursive:true});const directory=await mkdtemp(resolve('data/bundles','domain-update-test-'));
+ try{
+  const context=await exportIngestionBase({base_publication:base.id,directory:resolve(directory,'context')});
+  const changed={...item('local-a','update-SP','Corrected target text'),positions:[{...items[2].positions[0],years:[5]}]};
+  const added=item('local-c','update-SP','New target documentary item');
+  const newRelation={...relation('update-r1',['local-a','local-c'],['national-a','national-b']),publication_status:'contested',technical_validation_status:'documented_source_rule_applied'};
+  const rawHeader={id:'raw-ingestion-fixture',schema_version:'1.1.0',schema_path:'data/schema/1.1.0.json',schema_sha256:'cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df',created_at:'2026-10-28T01:00:00Z',extraction_revision:'fixture-2',mapping_revision:'fixture-2',sources:sources.filter(s=>['update-BR','update-SP'].includes(s.id)),coverage:[{...sharedCoverage,source_ids:['update-SP'],expected_parts:[parts('update-SP')],processed_parts:[parts('update-SP')],reconciled_parts:[],expected_parts_count:1,processed_parts_count:1,reconciled_parts_count:0,item_count:2}],changelog:[],publication_kind:'source_update_receipt',base_publication:base.id,base_publication_sha256:context.base_publication_sha256,base_artifact_sha256:context.artifact_sha256,target_source_ids:['update-SP'],context_source_ids:['update-BR'],national_release_ready:false};
+  const raw=await writeShardedArtifact(rawHeader,{items:iterable([...items.filter(i=>i.uf==='BR'),changed,added]),relations:iterable([newRelation])},{directory:resolve(directory,'raw')});
+  const input={base_publication:base.id,target_source_ids:['update-SP'],raw_artifact:raw.filename,raw_artifact_sha256:raw.sha256,base_artifact_sha256:context.artifact_sha256,output_directory:resolve(directory,'global'),actor_id:'ingestion-job:isolated-fixture'};
+  const result=await prepareGlobalIngestionUpdate(input);
+  assert.notEqual(result.publication,raw.manifest.id);assert.notEqual(result.artifact_sha256,raw.sha256);assert.equal(result.import_receipt.already_imported,false);assert.equal(await resolvePublication(),base.id);
+  await assert.rejects(()=>getLearning('local-a',{publication:result.publication}),e=>e instanceof Error&&'status'in e&&e.status===404);
+  const sourceProof=result.update_scope.unaffected_sources;assert.equal(sourceProof.length,3);assert.ok(sourceProof.every(p=>JSON.stringify(p.before)===JSON.stringify(p.after)));assert.equal(result.update_scope.relations_excluding_target.before_count,2);assert.equal(result.update_scope.coverage_excluding_target.before_count,1);
+  const prepared=(await pool.query("SELECT payload->'update_scope' scope FROM publications WHERE id=$1",[result.publication])).rows[0].scope;assert.equal(prepared.base_publication,base.id);assert.equal(prepared.preservation_expected.unaffected_sources.length,3);
+  assert.equal((await prepareGlobalIngestionUpdate(input)).import_receipt.already_imported,true);
+  const candidateItems=(await pool.query('SELECT id,payload FROM items WHERE publication_id=$1 ORDER BY id',[result.publication])).rows;
+  assert.deepEqual(candidateItems.find(i=>i.id==='other-sp')?.payload,items.find(i=>i.id==='other-sp'));assert.deepEqual(candidateItems.find(i=>i.id==='other-rj')?.payload,items.find(i=>i.id==='other-rj'));assert.ok(!candidateItems.some(i=>i.id==='local-b'));assert.deepEqual(candidateItems.find(i=>i.id==='local-a')?.payload,changed);
+  const updatedRelations=(await pool.query('SELECT payload FROM relations WHERE publication_id=$1 ORDER BY id',[result.publication])).rows.map(x=>x.payload);assert.deepEqual(updatedRelations.find(r=>r.id==='outside-r2'),relations[1]);assert.deepEqual(updatedRelations.find(r=>r.id==='outside-r3'),relations[2]);assert.deepEqual(updatedRelations.find(r=>r.id==='update-r1'),newRelation);assert.equal(newRelation.members.length,4);
+  const updatedCoverage=(await pool.query('SELECT payload FROM publication_coverage WHERE publication_id=$1 ORDER BY row_index',[result.publication])).rows.map(x=>x.payload);assert.deepEqual(updatedCoverage.find(c=>c.uf==='RJ'),outsideCoverage);const shared=updatedCoverage.find(c=>c.uf==='SP');assert.equal(shared.item_count,3);assert.equal(shared.ready,false);assert.ok(shared.expected_parts.some((p:{source_id:string})=>p.source_id==='update-SP-other'));assert.ok(shared.reconciled_parts.some((p:{source_id:string})=>p.source_id==='update-SP-other'));
+  const intervening={...base,id:'ingestion-concurrent-fixture'};await importBundle(intervening,{makeDefault:true});
+  await assert.rejects(()=>publishGlobalIngestionUpdate(result.publication,base.id,{id:'test-publisher',actor_type:'automated',reason:'Concurrent candidate publication must fail.'}),e=>e instanceof Error&&'code'in e&&e.code==='STALE_INGESTION_BASE');assert.equal(await resolvePublication(),intervening.id);assert.equal((await pool.query('SELECT status FROM publication_visibility WHERE publication_id=$1',[result.publication])).rows[0].status,'prepared');assert.equal((await pool.query('SELECT count(*)::int count FROM publication_events WHERE publication_id=$1',[result.publication])).rows[0].count,0);
+  await setDefaultPublication(base.id,{id:'isolated-test',actor_type:'automated',reason:'Restore pinned base to exercise explicit CAS success.'});
+  const published=await publishGlobalIngestionUpdate(result.publication,base.id,{id:'test-publisher',actor_type:'automated',reason:'Explicitly publish verified global source update.'});assert.equal(published.previous_id,base.id);assert.ok(published.publication_event.id);assert.equal(published.publication_event.previous_id,base.id);assert.equal(await resolvePublication(),result.publication);assert.equal((await listSources()).total,4);assert.equal((await getLearning('local-a')).data.text,changed.text);assert.equal((await getLearning('local-a',{publication:base.id})).data.text,items[2].text);
+  const {streamExportToFile}=await import('../src/domain/stream-exports');const csvPath=resolve(directory,'pinned-export.csv');const csv=await streamExportToFile({publication:result.publication,source_id:'update-SP'},'csv',csvPath);assert.equal(csv.manifest.schema_path,base.schema_path);assert.equal(csv.manifest.schema_sha256,base.schema_sha256);assert.ok((await readFile(csvPath,'utf8')).includes(String(base.schema_sha256)));
+  assert.deepEqual(await verifyGlobalIngestionPreservation(base.id,result.publication,['update-SP'],'ingestion-job:isolated-fixture'),result.update_scope);
+  const altered=await writeShardedArtifact({...rawHeader,id:'raw-altered-national-context'},{items:iterable([...items.filter(i=>i.uf==='BR').map(i=>({...i,text:'Altered BR text'})),changed,added]),relations:iterable([newRelation])},{directory:resolve(directory,'bad-context')});
+  await assert.rejects(()=>prepareGlobalIngestionUpdate({...input,raw_artifact:altered.filename,raw_artifact_sha256:altered.sha256,output_directory:resolve(directory,'bad-global')}),e=>e instanceof Error&&'code'in e&&e.code==='NATIONAL_CONTEXT_CHANGED');
+  await assert.rejects(()=>prepareGlobalIngestionUpdate({...input,base_artifact_sha256:'a'.repeat(64)}),e=>e instanceof Error&&'code'in e&&e.code==='RAW_UPDATE_SCOPE_MISMATCH');
+ }finally{await rm(directory,{recursive:true,force:true});}
+});
+
+test('forged update lineage cannot authorize publication of a snapshot that drops unrelated sources',{skip:!allowed},async()=>{
+ const forged={...base,id:'forged-global-update',sources:base.sources.filter(s=>s.id!=='update-RJ'),items:base.items.filter(i=>i.source_id!=='update-RJ'),relations:base.relations.filter(r=>r.id!=='outside-r2'),coverage:[sharedCoverage],update_scope:{mode:'base-plus-source-update',base_publication:base.id,target_source_ids:['update-SP'],affected_coverage_keys:[JSON.stringify(['SP','EF','Matemática'])]}};
+ await importBundle(forged,{makeDefault:false});
+ await assert.rejects(()=>verifyGlobalIngestionPreservation(base.id,forged.id,['update-SP']),e=>e instanceof Error&&'code'in e&&e.code==='OUTSIDE_SOURCE_CHANGED');
+ await assert.rejects(()=>publishGlobalIngestionUpdate(forged.id,base.id,{id:'test-publisher',actor_type:'automated',reason:'Forged metadata must not authorize data loss.'}),e=>e instanceof Error&&'code'in e&&e.code==='OUTSIDE_SOURCE_CHANGED');
+ assert.equal((await pool.query('SELECT status FROM publication_visibility WHERE publication_id=$1',[forged.id])).rows[0].status,'prepared');
+ const masked={...base,id:'forged-coverage-exclusion',coverage:[sharedCoverage,{...outsideCoverage,custom_note:{preserve:false}}],update_scope:{mode:'base-plus-source-update',base_publication:base.id,target_source_ids:['update-SP'],affected_coverage_keys:[JSON.stringify(['SP','EF','Matemática']),JSON.stringify(['RJ','EF','Matemática'])]}};
+ await importBundle(masked,{makeDefault:false});await assert.rejects(()=>verifyGlobalIngestionPreservation(base.id,masked.id,['update-SP']),e=>e instanceof Error&&'code'in e&&e.code==='UPDATE_COVERAGE_SCOPE_MISMATCH');
+});
+
+test('cross-source documentary evidence and mixed-source many-to-many memberships cannot disappear silently',{skip:!allowed},async()=>{
+ await mkdir('data/bundles',{recursive:true});const directory=await mkdtemp(resolve('data/bundles','domain-update-dependency-'));
+ try{
+  for(const kind of ['evidence','membership'] as const){
+   const edition={...base,id:'dependency-base-'+kind,items:kind==='evidence'?base.items.map(i=>i.id==='other-rj'?{...i,evidence:[...i.evidence,{source_id:'update-SP',page:4,printed_page:null,section:null,excerpt:'Evidence from the previous source edition'}]}:i):base.items,relations:kind==='membership'?base.relations.map(r=>r.id==='update-r1'?{...r,members:[...r.members,{item_id:'other-rj',role:'source' as const,scope:'Documented membership outside target'}]}:r):base.relations};
+   await importBundle(edition,{makeDefault:true});
+   const context=await exportIngestionBase({base_publication:edition.id,directory:resolve(directory,kind,'context')});
+   const rawHeader={id:'raw-dependency-'+kind,schema_version:'1.1.0',schema_path:'data/schema/1.1.0.json',schema_sha256:'cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df',created_at:'2026-10-28T03:00:00Z',extraction_revision:'fixture-2',mapping_revision:'fixture-2',sources:base.sources.filter(s=>['update-SP','update-BR'].includes(s.id)).map(s=>kind==='evidence'&&s.id==='update-SP'?{...s,title:'New source edition metadata'}:s),coverage:[{...sharedCoverage,source_ids:['update-SP'],expected_parts:[parts('update-SP')],processed_parts:[parts('update-SP')],reconciled_parts:[],expected_parts_count:1,processed_parts_count:1,reconciled_parts_count:0}],changelog:[],publication_kind:'source_update_receipt',base_publication:edition.id,base_publication_sha256:context.base_publication_sha256,base_artifact_sha256:context.artifact_sha256,target_source_ids:['update-SP'],context_source_ids:['update-BR']};
+   const raw=await writeShardedArtifact(rawHeader,{items:iterable(base.items.filter(i=>['update-SP','update-BR'].includes(i.source_id))),relations:iterable([base.relations[0]])},{directory:resolve(directory,kind,'raw')});
+   await assert.rejects(()=>prepareGlobalIngestionUpdate({base_publication:edition.id,target_source_ids:['update-SP'],raw_artifact:raw.filename,raw_artifact_sha256:raw.sha256,base_artifact_sha256:context.artifact_sha256,output_directory:resolve(directory,kind,'global'),actor_id:'isolated-dependency-check'}),e=>e instanceof Error&&'code'in e&&e.code===(kind==='evidence'?'CROSS_SOURCE_EVIDENCE_DEPENDENCY':'CROSS_SOURCE_RELATION_DEPENDENCY'));
+   assert.equal(await resolvePublication(),edition.id);
+  }
+ }finally{await rm(directory,{recursive:true,force:true});}
+});
+
+test('preservation checks exact PostgreSQL numeric values even when JS serialization hashes would collide',{skip:!allowed},async()=>{
+ const numericBase={...base,id:'numeric-preservation-base',items:base.items.map(i=>i.id==='other-rj'?{...i,custom_metadata:{array:['a','b'],precise:9007199254740992}}:i)};await importBundle(numericBase,{makeDefault:false});
+ const id='numeric-preservation-adversarial',scope={mode:'base-plus-source-update',base_publication:numericBase.id,target_source_ids:['update-SP'],affected_coverage_keys:[JSON.stringify(['SP','EF','Matemática'])]};
+ // Insert a separate adversarial fixture, never update an immutable row or bypass its triggers.
+ await pool.query(`INSERT INTO publications(id,schema_version,created_at,extraction_revision,mapping_revision,sha256,item_count,source_count,relation_count,payload,storage_format) SELECT $1,schema_version,created_at,extraction_revision,mapping_revision,$3,item_count,source_count,relation_count,payload||$4::jsonb,storage_format FROM publications WHERE id=$2`,[id,numericBase.id,'a'.repeat(64),JSON.stringify({id,update_scope:scope})]);
+ await pool.query('INSERT INTO sources(publication_id,id,uf,payload) SELECT $1,id,uf,payload FROM sources WHERE publication_id=$2',[id,numericBase.id]);
+ await pool.query(`INSERT INTO items(publication_id,id,uf,curriculum_id,source_id,code,text,normalized_text,kind,positions,evidence,payload) SELECT $1,id,uf,curriculum_id,source_id,code,text,normalized_text,kind,positions,evidence,CASE WHEN id='other-rj' THEN jsonb_set(payload,'{custom_metadata,precise}','9007199254740993'::jsonb) ELSE payload END FROM items WHERE publication_id=$2`,[id,numericBase.id]);
+ await pool.query('INSERT INTO relations(publication_id,id,relation_type,origin,technical_validation_status,pedagogical_review_status,publication_status,payload) SELECT $1,id,relation_type,origin,technical_validation_status,pedagogical_review_status,publication_status,payload FROM relations WHERE publication_id=$2',[id,numericBase.id]);
+ await pool.query('INSERT INTO relation_members(publication_id,relation_id,item_id,role,scope) SELECT $1,relation_id,item_id,role,scope FROM relation_members WHERE publication_id=$2',[id,numericBase.id]);
+ await pool.query('INSERT INTO publication_coverage(publication_id,row_index,uf,stage,component,payload) SELECT $1,row_index,uf,stage,component,payload FROM publication_coverage WHERE publication_id=$2',[id,numericBase.id]);
+ assert.equal(JSON.parse('9007199254740992'),JSON.parse('9007199254740993'));
+ await assert.rejects(()=>verifyGlobalIngestionPreservation(numericBase.id,id,['update-SP']),e=>e instanceof Error&&'code'in e&&e.code==='OUTSIDE_CANONICAL_VALUE_CHANGED');
+});
+
+test('bounded relation verification advances past entire pages affected by the target without omitting outside links',{skip:!allowed},async()=>{
+ const graph={...base,id:'paged-relations-base',relations:[...Array.from({length:55},(_,index)=>relation('a-target-'+String(index).padStart(3,'0'),['local-a'],['national-a'])),...Array.from({length:7},(_,index)=>relation('z-outside-'+index,['other-rj'],['national-b']))]};
+ await importBundle(graph,{makeDefault:false});const candidate={...graph,id:'paged-relations-candidate',update_scope:{mode:'base-plus-source-update',base_publication:graph.id,target_source_ids:['update-SP'],affected_coverage_keys:[JSON.stringify(['SP','EF','Matemática'])]}};await importBundle(candidate,{makeDefault:false});
+ const proof=await verifyGlobalIngestionPreservation(graph.id,candidate.id,['update-SP']);assert.equal(proof.relations_excluding_target.before_count,7);assert.equal(proof.relations_excluding_target.after_count,7);assert.equal(proof.relations_excluding_target.before_sha256,proof.relations_excluding_target.after_sha256);assert.equal(proof.unaffected_sources.length,3);
+});
+
+test('orchestrated update uses SQL before/after, immutable proofs and code-bound global identity',{skip:!allowed},async()=>{
+ const h=(text:string)=>createHash('sha256').update(text).digest('hex');
+ await mkdir('var',{recursive:true});await mkdir('data/manifests',{recursive:true});await mkdir('data/bundles',{recursive:true});
+ const receipts=await mkdtemp(resolve('var','domain-provenance-')),proofdir=await mkdtemp(resolve('data/manifests','domain-provenance-')),directory=await mkdtemp(resolve('data/bundles','domain-provenance-'));
+ const rel=(path:string)=>path.slice(process.cwd().length+1);
+ try{
+  const proofPath=resolve(proofdir,'source-proof.json'),proofText=JSON.stringify({test_fixture:true,scope:'Synthetic isolated DB only',literal_after:'Target corrected by technical proof'});await writeFile(proofPath,proofText);
+  const ledger={format:'record_text_corrections_v1',source_id:'update-SP',source_sha256:'a'.repeat(64),actor_type:'automated',actor_id:'isolated-fixture',previous_publications_immutable:true,official_curriculum_edition_changed:false,records:[{item_id:'local-a',before_text:'local-a',after_text:'Target corrected by technical proof',before_text_sha256:h('local-a'),after_text_sha256:h('Target corrected by technical proof'),reason:'Synthetic technical correction test; not production data',proofs:[{path:rel(proofPath),sha256:h(proofText)}]}]};
+  const ledgerPath=resolve(proofdir,'ledger.json'),ledgerText=JSON.stringify(ledger);await writeFile(ledgerPath,ledgerText);
+  const targetSource={...sources[1],sha256:'a'.repeat(64),technical_extraction_corrections:[{path:rel(ledgerPath),sha256:h(ledgerText),format:'record_text_corrections_v1',scope:'technical_extraction_correction'}]};
+  const edition={...base,id:'orchestrated-base-fixture',sources:base.sources.map(source=>source.id==='update-SP'?targetSource:source)};await importBundle(edition,{makeDefault:true});
+  const context=await exportIngestionBase({base_publication:edition.id,directory:resolve(directory,'context')});
+  const changed=item('local-a','update-SP',ledger.records[0].after_text);
+  const rawHeader={id:'orchestrated-raw-fixture',schema_version:'1.1.0',schema_path:base.schema_path,schema_sha256:base.schema_sha256,created_at:'2026-10-28T01:00:00Z',extraction_revision:'fixture-2',mapping_revision:'fixture-2',sources:[sources[0],targetSource],coverage:[{...sharedCoverage,source_ids:['update-SP'],expected_parts:[parts('update-SP')],processed_parts:[parts('update-SP')],reconciled_parts:[],expected_parts_count:1,processed_parts_count:1,reconciled_parts_count:0,item_count:2}],changelog:[],publication_kind:'source_update_receipt',base_publication:edition.id,base_publication_sha256:context.base_publication_sha256,base_artifact_sha256:context.artifact_sha256,target_source_ids:['update-SP'],context_source_ids:['update-BR'],national_release_ready:false};
+  const raw=await writeShardedArtifact(rawHeader,{items:iterable([...items.filter(i=>i.uf==='BR'),changed,items[3]]),relations:iterable([relations[0]])},{directory:resolve(directory,'raw')});
+  const rawReceipt={publication:raw.manifest.id,artifact:rel(raw.filename),artifact_sha256:raw.sha256};
+  const scope={base_publication:edition.id,base_publication_sha256:context.base_publication_sha256,base_artifact_sha256:context.artifact_sha256,target_source_ids:['update-SP'],context_source_ids:['update-BR']};
+  const evaluation=await evaluateIngestionProvenance({effective_raw_receipt:rawReceipt,job_scope:scope,receipt_directory:rel(receipts)});
+  const input={base_publication:edition.id,target_source_ids:['update-SP'],raw_artifact:raw.filename,raw_artifact_sha256:raw.sha256,base_artifact_sha256:context.artifact_sha256,output_directory:resolve(directory,'global'),actor_id:'ingestion-job:provenance-fixture',provenance:{original_raw_receipt:rawReceipt,raster_stage_receipt:null,technical_evaluation_receipt:evaluation,receipt_directory:rel(receipts)}};
+  const prepared=await prepareGlobalIngestionUpdate(input);assert.equal(await resolvePublication(),edition.id);assert.ok(prepared.provenance_receipt);
+  const metadata=(await pool.query("SELECT payload->'changelog' AS changelog,payload->'orchestration_provenance' AS orchestration,payload->>'orchestration_sha256' AS digest FROM publications WHERE id=$1",[prepared.publication])).rows[0];
+  assert.equal(metadata.digest,provenanceDigest(metadata.orchestration));const event=metadata.changelog.find((v:{same_id?:boolean})=>v.same_id);assert.equal(event.observed_effect,'corrects_text_in_pinned_base');assert.equal(event.current_base_before_text_sha256,h('local-a'));
+  const captures=metadata.orchestration.technical_stage.base_record_capture;const capture=JSON.parse(await readFile(captures.path,'utf8'));assert.deepEqual(capture.queried_item_ids,['local-a']);assert.equal(capture.records[0].text,'local-a');
+  assert.deepEqual(await revalidatePreparedIngestionProvenance(input,prepared.publication),prepared.provenance_receipt);assert.equal((await prepareGlobalIngestionUpdate(input)).publication,prepared.publication);
+  await assert.rejects(()=>prepareGlobalIngestionUpdate({...input,provenance:undefined}),e=>e instanceof Error&&'code'in e&&e.code==='INGESTION_PROVENANCE_REQUIRED');
+  await assert.rejects(()=>prepareGlobalIngestionUpdate({...input,provenance:{...input.provenance,original_raw_receipt:{...rawReceipt,artifact_sha256:'f'.repeat(64)}}}),e=>e instanceof Error&&'code'in e&&e.code==='INGESTION_PROVENANCE_MISMATCH');
+  await writeFile(proofPath,JSON.stringify({test_fixture:true,literal_after:'Unapproved proof mutation'}));
+  await assert.rejects(()=>revalidatePreparedIngestionProvenance(input,prepared.publication),e=>e instanceof Error&&'code'in e&&(e.code==='INGESTION_PROVENANCE_MISMATCH'||e.code==='TECHNICAL_PROVENANCE_REPLAY_FAILED'));await writeFile(proofPath,proofText);
+  // A repinned legitimate proof changes the evaluation and orchestration identity, while RAW records stay equal.
+  const proof2=JSON.stringify({test_fixture:true,scope:'same literal, new independent proof metadata',literal_after:ledger.records[0].after_text});await writeFile(proofPath,proof2);const revisedLedger={...ledger,records:[{...ledger.records[0],proofs:[{path:rel(proofPath),sha256:h(proof2)}]}]};const revisedText=JSON.stringify(revisedLedger);await writeFile(ledgerPath,revisedText);
+  const revisedSource={...targetSource,technical_extraction_corrections:[{...targetSource.technical_extraction_corrections[0],sha256:h(revisedText)}]};
+  const raw2=await writeShardedArtifact({...rawHeader,id:'repinned-raw-fixture',sources:[sources[0],revisedSource]},{items:iterable([...items.filter(i=>i.uf==='BR'),changed,items[3]]),relations:iterable([relations[0]])},{directory:resolve(directory,'raw2')});
+  const receipt2={publication:raw2.manifest.id,artifact:rel(raw2.filename),artifact_sha256:raw2.sha256},eval2=await evaluateIngestionProvenance({effective_raw_receipt:receipt2,job_scope:scope,receipt_directory:rel(receipts)});
+  const second=await prepareGlobalIngestionUpdate({...input,raw_artifact:raw2.filename,raw_artifact_sha256:raw2.sha256,output_directory:resolve(directory,'global2'),provenance:{...input.provenance,original_raw_receipt:receipt2,technical_evaluation_receipt:eval2}});assert.notEqual(second.publication,prepared.publication);assert.notEqual(second.provenance_receipt?.orchestration_sha256,prepared.provenance_receipt?.orchestration_sha256);assert.equal(await resolvePublication(),edition.id);
+ }finally{await rm(receipts,{recursive:true,force:true});await rm(proofdir,{recursive:true,force:true});await rm(directory,{recursive:true,force:true});}
+});

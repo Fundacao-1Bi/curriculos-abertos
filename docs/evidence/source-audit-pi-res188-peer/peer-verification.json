@@ -1,0 +1,410 @@
+{
+  "actor_type": "automated",
+  "source_id": "pi-resolucao-188-2025",
+  "source_sha256": "154db33551a1501916dca9eaf9ba1e428d2cb4f9bb3dec41603343be2416ad10",
+  "source_hash_matches_original": true,
+  "sidecar_sha256": "fa56051d8e4677615a33e5d2d1edea7634cdde1330b9b274698377b7f56180e2",
+  "independent_public_visual_units": 15,
+  "output_nodes": 14,
+  "unique_keys": 14,
+  "visual_unit_checks": [
+    {
+      "visual_unit": "issuer",
+      "page": 1,
+      "matching_node_keys": [
+        "issuer_heading_and_public_contact"
+      ],
+      "passed": true
+    },
+    {
+      "visual_unit": "process_header",
+      "page": 1,
+      "matching_node_keys": [
+        "process_and_act_header_date"
+      ],
+      "passed": true
+    },
+    {
+      "visual_unit": "issue_place_date",
+      "page": 1,
+      "matching_node_keys": [
+        "process_and_act_header_date"
+      ],
+      "passed": true
+    },
+    {
+      "visual_unit": "resolution_title",
+      "page": 1,
+      "matching_node_keys": [
+        "resolution_title_188_2025"
+      ],
+      "passed": true
+    },
+    {
+      "visual_unit": "abstract",
+      "page": 1,
+      "matching_node_keys": [
+        "ementa_approves_parecer190_computation_eiefem"
+      ],
+      "passed": true
+    },
+    {
+      "visual_unit": "issuing_authority",
+      "page": 1,
+      "matching_node_keys": [
+        "authority_preamble_president_in_exercise"
+      ],
+      "passed": true
+    },
+    {
+      "visual_unit": "consideration_process",
+      "page": 1,
+      "matching_node_keys": [
+        "considerando_process_request"
+      ],
+      "passed": true
+    },
+    {
+      "visual_unit": "consideration_plenary",
+      "page": 1,
+      "matching_node_keys": [
+        "considerando_plenary_16dec2025"
+      ],
+      "passed": true
+    },
+    {
+      "visual_unit": "resolve",
+      "page": 1,
+      "matching_node_keys": [
+        "resolve_marker"
+      ],
+      "passed": true
+    },
+    {
+      "visual_unit": "sole_article",
+      "page": 1,
+      "matching_node_keys": [
+        "article_1_approves_parecer190"
+      ],
+      "passed": true
+    },
+    {
+      "visual_unit": "meeting_venue_date",
+      "page": 1,
+      "matching_node_keys": [
+        "plenary_session_venue_and_date"
+      ],
+      "passed": true
+    },
+    {
+      "visual_unit": "council_signature",
+      "page": 1,
+      "matching_node_keys": [
+        "president_name_and_public_function"
+      ],
+      "passed": true
+    },
+    {
+      "visual_unit": "homologation",
+      "page": 1,
+      "matching_node_keys": [
+        "homologation_statement_page1_continues_with_signature_page2"
+      ],
+      "passed": true
+    },
+    {
+      "visual_unit": "homologation_signature",
+      "page": 2,
+      "matching_node_keys": [
+        "secretary_name_and_public_function"
+      ],
+      "passed": true
+    },
+    {
+      "visual_unit": "safe_document_footer",
+      "page": 2,
+      "matching_node_keys": [
+        "process_and_document_identification_footer"
+      ],
+      "passed": true
+    },
+    {
+      "node_key": "resolution_title_188_2025",
+      "visual_unit_count": 1,
+      "exact_nonwhitespace_case_punctuation_match": true
+    },
+    {
+      "node_key": "issuer_heading_and_public_contact",
+      "visual_unit_count": 1,
+      "exact_nonwhitespace_case_punctuation_match": true
+    },
+    {
+      "node_key": "process_and_act_header_date",
+      "visual_unit_count": 2,
+      "exact_nonwhitespace_case_punctuation_match": true
+    },
+    {
+      "node_key": "ementa_approves_parecer190_computation_eiefem",
+      "visual_unit_count": 1,
+      "exact_nonwhitespace_case_punctuation_match": true
+    },
+    {
+      "node_key": "authority_preamble_president_in_exercise",
+      "visual_unit_count": 1,
+      "exact_nonwhitespace_case_punctuation_match": true
+    },
+    {
+      "node_key": "considerando_process_request",
+      "visual_unit_count": 1,
+      "exact_nonwhitespace_case_punctuation_match": true
+    },
+    {
+      "node_key": "considerando_plenary_16dec2025",
+      "visual_unit_count": 1,
+      "exact_nonwhitespace_case_punctuation_match": true
+    },
+    {
+      "node_key": "resolve_marker",
+      "visual_unit_count": 1,
+      "exact_nonwhitespace_case_punctuation_match": true
+    },
+    {
+      "node_key": "article_1_approves_parecer190",
+      "visual_unit_count": 1,
+      "exact_nonwhitespace_case_punctuation_match": true
+    },
+    {
+      "node_key": "plenary_session_venue_and_date",
+      "visual_unit_count": 1,
+      "exact_nonwhitespace_case_punctuation_match": true
+    },
+    {
+      "node_key": "president_name_and_public_function",
+      "visual_unit_count": 1,
+      "exact_nonwhitespace_case_punctuation_match": true
+    },
+    {
+      "node_key": "homologation_statement_page1_continues_with_signature_page2",
+      "visual_unit_count": 1,
+      "exact_nonwhitespace_case_punctuation_match": true
+    },
+    {
+      "node_key": "secretary_name_and_public_function",
+      "visual_unit_count": 1,
+      "exact_nonwhitespace_case_punctuation_match": true
+    },
+    {
+      "node_key": "process_and_document_identification_footer",
+      "visual_unit_count": 1,
+      "exact_nonwhitespace_case_punctuation_match": true
+    }
+  ],
+  "output_wording_extras": [],
+  "hierarchy_findings": [],
+  "private_receipt_leak_findings": [],
+  "sole_article_count": 1,
+  "two_considerations": true,
+  "homologation_signature_parent_across_pages_passed": true,
+  "images": [
+    {
+      "page": 1,
+      "existing_private_render": "var/private-evidence/source-audit-northeast/pi-res188-p1.png",
+      "sha256": "d29b53ae7c6e136876355409b1bdefdbb10a0497a4ac538d23303ae37a647163",
+      "pixel_dimensions": [
+        893,
+        1263
+      ],
+      "visually_read_in_full": true
+    },
+    {
+      "page": 2,
+      "existing_private_render": "var/private-evidence/source-audit-northeast/pi-res188-p2.png",
+      "sha256": "a5b2b73adcd4b1f26c2f2d000d8eaee09eae057a83ef805fa999b3c4c76895ec",
+      "pixel_dimensions": [
+        893,
+        1263
+      ],
+      "visually_read_in_full": true
+    }
+  ],
+  "new_renders_created": false,
+  "source_or_sidecar_modified": false,
+  "signature_validity_verified": false,
+  "source_ready": false,
+  "passed": true,
+  "scope": "All public normative wording of the two-page act visually verified, including dates, distinct process references and P1homologation→P2signature. Fifteen visible textual units are losslessly represented by14nodes because process header and issue date are grouped. Technical source_order is graph order(root title first), not a claim about physical top-to-bottom reading. Excluded employee receipts/QR/CRC remain private; no cryptographic signature, legal vigency advice, pedagogical human review or UF readiness claimed.",
+  "macro_region_geometry_review": {
+    "pdf_page_size_points": [
+      595.3200073242188,
+      841.9200439453125
+    ],
+    "existing_render_pixels": [
+      893,
+      1263
+    ],
+    "scale_about": 1.5,
+    "all14macro_rectangles_visually_localized": true,
+    "footer_pixel_row_ink_runs_observed": [
+      [
+        485,
+        485
+      ],
+      [
+        488,
+        488
+      ],
+      [
+        495,
+        503
+      ]
+    ],
+    "safe_footer_evidence_pixel_y_range": [
+      487.5,
+      510.0
+    ],
+    "source_coordinate_space": "original PDF display points, confirmed by mapping to the existing raster",
+    "boxes": [
+      [
+        1,
+        1,
+        [
+          40,
+          237,
+          560,
+          255
+        ]
+      ],
+      [
+        2,
+        1,
+        [
+          40,
+          124,
+          565,
+          184
+        ]
+      ],
+      [
+        3,
+        1,
+        [
+          40,
+          192,
+          565,
+          228
+        ]
+      ],
+      [
+        4,
+        1,
+        [
+          240,
+          284,
+          565,
+          343
+        ]
+      ],
+      [
+        5,
+        1,
+        [
+          40,
+          388,
+          565,
+          420
+        ]
+      ],
+      [
+        6,
+        1,
+        [
+          110,
+          441,
+          565,
+          463
+        ]
+      ],
+      [
+        7,
+        1,
+        [
+          110,
+          484,
+          565,
+          502
+        ]
+      ],
+      [
+        8,
+        1,
+        [
+          260,
+          525,
+          340,
+          541
+        ]
+      ],
+      [
+        9,
+        1,
+        [
+          40,
+          565,
+          565,
+          623
+        ]
+      ],
+      [
+        10,
+        1,
+        [
+          40,
+          669,
+          565,
+          700
+        ]
+      ],
+      [
+        11,
+        1,
+        [
+          170,
+          723,
+          445,
+          761
+        ]
+      ],
+      [
+        12,
+        1,
+        [
+          40,
+          782,
+          565,
+          815
+        ]
+      ],
+      [
+        13,
+        2,
+        [
+          180,
+          49,
+          445,
+          86
+        ]
+      ],
+      [
+        14,
+        2,
+        [
+          35,
+          325,
+          565,
+          340
+        ]
+      ]
+    ],
+    "note": "Broad source-block boxes are localization regions, not claims that they contain only glyphs of the transcribed text. No private electronic-receipt block enters the public canonical14records."
+  }
+}

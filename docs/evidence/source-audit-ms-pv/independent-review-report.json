@@ -1,0 +1,93 @@
+{
+  "source_id": "ms-projeto-vida-orientacoes-2024",
+  "artifact_sha256": "eff8fcd19d69b1f5d614cbb2ca1599d98e11c697772084b56694a142fecf7048",
+  "adapter_sha256": "77eb9feaa003382a73741f36f3379d83aa945debae1cd128b7ad95513e781f08",
+  "actor_type": "automated",
+  "actor_id": "agent:ms-independent-auditor",
+  "review_status": "technical_automated_review_passed",
+  "pedagogical_review_status": "not_reviewed",
+  "requirements": [
+    "ING-03",
+    "DAT-01",
+    "DAT-05",
+    "ESC-02"
+  ],
+  "implementation": "independent-inventory.py and independent-compare-adapter.py; no import of adapter extraction code or shared glyph helper",
+  "executed_commands": [
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-ms-pv/independent-inventory.py",
+    "var/venv-pipeline/bin/python docs/evidence/source-audit-ms-pv/independent-compare-adapter.py",
+    "pdftoppm -f 103 -singlefile -r 120 -png data/raw/MS/ms-orientacoes-projeto-vida-2024.pdf docs/evidence/source-audit-ms-pv/independent-poppler-p103"
+  ],
+  "denominator": {
+    "source_pages_scanned": 127,
+    "tables": 73,
+    "physical_coded_rows": 141,
+    "pillar_occurrences": 226,
+    "explicit_year_bimester_contexts": 48,
+    "all_expected_record_keys": 681
+  },
+  "verified": {
+    "exhaustive_cell_checks": 508,
+    "failures": 0,
+    "header_pages_visually_inspected": 48,
+    "risky_continuation_pages_visually_inspected": [
+      103,
+      111,
+      114
+    ],
+    "secondary_renderer_page": 103
+  },
+  "findings": [
+    {
+      "id": "MS-PV-01",
+      "severity": "systematic_extraction_error",
+      "status": "resolved_in_final_adapter",
+      "finding": "Semantic/ActualText extraction corrupts rendered words and duplicates invisible characters in274of423curricular cells. Visible glyph transcription preserves source typography.",
+      "evidence": "independent-native-vs-rendered-discrepancies.json"
+    },
+    {
+      "id": "MS-PV-02",
+      "severity": "systematic_position_and_text_error",
+      "status": "resolved_in_final_adapter",
+      "finding": "Fourteen old first-bimester labels are overpainted by later opaque rectangles; two more are white-on-white inside skill cells. These are not visible headers. Using them would misassign periods or contaminate skill prose.",
+      "evidence": [
+        "independent-denominator.json",
+        "independent-poppler-p103.png",
+        "independent-invisible-white-p111.png",
+        "independent-invisible-white-p114.png"
+      ]
+    },
+    {
+      "id": "MS-PV-03",
+      "severity": "content_duplication",
+      "status": "resolved_in_final_adapter",
+      "finding": "In p59row2pillar2, a regular-font closing quote shared the title baseline. Initial adapter repeated Compromisso Etico inside the object body; final77ebadapter preserves full title and begins object at Conscientizacao.",
+      "evidence": "independent-adapter-comparison.json"
+    },
+    {
+      "id": "MS-PV-04",
+      "severity": "documentary_feature",
+      "status": "preserved",
+      "finding": "Two Cidadania e Compromisso Etico pillars visibly occur in the same physical row on p59. Both occurrences retained; no deduplication based on title alone.",
+      "evidence": "independent-contact-EF2.png"
+    },
+    {
+      "id": "MS-PV-05",
+      "severity": "documentary_feature",
+      "status": "preserved",
+      "finding": "Vertically centred codes must be paired by whole physical row, not code baseline. Colhimento p51 and long codes MS.EM13LP12325/MS.EM13LP2740 are visible source content.",
+      "evidence": [
+        "independent-contact-EF1.png",
+        "independent-contact-EM2.png"
+      ]
+    }
+  ],
+  "limitations": [
+    "This review validates the73organizer tables and associated divider/year/table hierarchy. Complete ingestion of the narrative foundations outside the organizer remains a separate pipeline reconciliation responsibility.",
+    "No API/MCP/database import or national-publication release was executed by this auditor.",
+    "No human pedagogical review or institutional homologation occurred."
+  ],
+  "owned_files_pattern": "docs/evidence/source-audit-ms-pv/independent-*",
+  "remote_actions": false,
+  "commits": false
+}

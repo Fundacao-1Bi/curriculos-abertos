@@ -1,0 +1,38 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:data_central_south",
+  "baseline_records_preserved": 1565,
+  "context_records": 172,
+  "context_kinds": {
+    "secao_normativa": 168,
+    "orientacao_metodologica": 4
+  },
+  "records": 1737,
+  "records_by_source": {
+    "df-competencias-digitais-vol2": 552,
+    "df-competencias-digitais-vol3": 1185
+  },
+  "output_sha256": {
+    "df-competencias-digitais-vol2": "f40c428c23f93e11b386524b64e14ca05657647744889505157d6f623caae04a",
+    "df-competencias-digitais-vol3": "75a37ea54a1f1cd524ebb9ca9cd99b41dba16311e2d29c4a53910696f939d6ce"
+  },
+  "import_failures": [],
+  "unresolved_parent_ids": [],
+  "baseline_changed_ids": [],
+  "source_metadata_proposal": {
+    "df-competencias-digitais-vol2": {
+      "uncoded_items_path": "data/manifests/uncoded/df-digital-complete-context-df-competencias-digitais-vol2.json",
+      "native_text_order": "glyph_cluster_stream"
+    },
+    "df-competencias-digitais-vol3": {
+      "uncoded_items_path": "data/manifests/uncoded/df-digital-complete-context-df-competencias-digitais-vol3.json",
+      "native_text_order": "glyph_cluster_stream"
+    }
+  },
+  "pending_real_work": [
+    "Exact primary text binding and independent ID denominator for all organizer paragraphs; wholeSource V2 gate.",
+    "Whole217-page final record union after core extraction; whole native page text already compared once, graphic covers now validated by region OCR, decorative6by original render."
+  ],
+  "whole_source_claim": false,
+  "uf_ready_claim": false
+}

@@ -1,0 +1,77 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:ma-current-inventory",
+  "at": "2026-10-28T14:56:20.867282+00:00",
+  "basis_source_id": "ma-portaria-181-2026-recomposicao-doe",
+  "basis_artifact_sha256": "d24ce340f3d74c9461d99079d8fdf9aab9d720c024fad89b7d198af2990a8f7e",
+  "basis_locator": {
+    "page": 35,
+    "section": "Anexo Único, seção5, continuação à esquerda",
+    "bbox": [
+      41.1,
+      70.5,
+      291.5,
+      256.3
+    ]
+  },
+  "referenced_groups": [
+    {
+      "label_from_act": "Matrizes de Recomposição",
+      "artifact_url": null,
+      "edition": null,
+      "status": "location_and_typology_pending"
+    },
+    {
+      "label_from_act": "materiais didáticos estruturados fornecidos pela SEDUC em parceria com o Grupo Eureka",
+      "artifact_url": null,
+      "edition": null,
+      "status": "teaching_material_reference_inventory_pending"
+    }
+  ],
+  "scope_limit": "The act establishes use as reference for prioritization, while explicitly preserving all BNCC/DCTMA rights/objectives. No original material was acquired and no identity with GPD/FGB or a new learning catalogue is inferred. ESC02 does not make every teaching resource automatically mandatory.",
+  "queries": [
+    "site:educacao.ma.gov.br \"Matrizes de Recomposição\"",
+    "site:educacao.ma.gov.br \"Eureka\" \"2026\"",
+    "site:sites.google.com/edu.ma.gov.br/sugeda \"Matrizes de Recomposição\""
+  ],
+  "official_news_probe": {
+    "label": "Official EMdeVerdade launch",
+    "url": "https://www.educacao.ma.gov.br/seduc-lanca-programa-ensino-medio-de-verdade/",
+    "at": "2026-10-28T14:56:19.831010+00:00",
+    "actor_type": "automated",
+    "http_status": 200,
+    "final_url": "https://www.educacao.ma.gov.br/seduc-lanca-programa-ensino-medio-de-verdade/",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 64475,
+    "response_sha256": "3c219f48a167b86c36c76820d99b94cd0acf443fb2250fa4e63cd762489e4008",
+    "private_snapshot_path": "data/raw/MA/3c219f48a167b86c36c76820d99b94cd0acf443fb2250fa4e63cd762489e4008.html",
+    "relevant_links": [],
+    "date_mentions": [
+      "22/06/2026"
+    ],
+    "short_locators": [
+      {
+        "needle": "Organizadores Curriculares",
+        "found": false
+      },
+      {
+        "needle": "Guias da Prática Docente",
+        "found": false
+      },
+      {
+        "needle": "matrizes curriculares",
+        "found": false
+      },
+      {
+        "needle": "2026",
+        "found": true
+      },
+      {
+        "needle": "SUGEDA",
+        "found": false
+      }
+    ],
+    "status": "public_metadata_read"
+  },
+  "search_outcome": "Official programme news confirms partnership and partial-EM scope; no public original matrix/material URL located by these queries."
+}

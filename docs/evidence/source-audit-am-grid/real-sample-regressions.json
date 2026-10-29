@@ -1,0 +1,79 @@
+{
+  "revision": "am-raster-grid-tsv-v1.1.2",
+  "helper_sha256": "6f64346bf9d9de5c195f1338bfadc638eccf5b27a34b2c9c70bec76281ca3420",
+  "passed": true,
+  "checks": [
+    {
+      "source_id": "am-rca-em",
+      "artifact_sha256": "46dd801703b5bca3a849df1c8b16fef800f4d07538bf177797cb1ee1f3640313",
+      "page": 40,
+      "assertions": {
+        "full_primary_skill": true,
+        "next_skill_words_excluded": true,
+        "nine_primary_rows": true,
+        "printed_footer_excluded": true
+      },
+      "passed": true,
+      "raw_OCR_sha256": "0c25422432c0179e9ba146a5a202f8a331f0b83bea1711f8e4e5f3219e8bf3fa",
+      "raster_sha256": "8928fcada53d7e736a8efeea49b774b1a42c69979700bb65ff97f807fa1d4554",
+      "canonical_excerpt": "Compreender e analisar processos de produção e circulação de discursos, nas diferentes linguagens, para fazer escolhas fundamentadas em função de interesses pessoais e coletivos.",
+      "expected_excerpt": "Compreender e analisar processos de produção e circulação de discursos, nas diferentes linguagens, para fazer escolhas fundamentadas em função de interesses pessoais e coletivos.",
+      "visual_source": "Original page rendered and inspected by automated agent; no human review claimed."
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "artifact_sha256": "26285c69921d0efa4993620d140e35f974d8f6b44223c676387464d04647eb2a",
+      "page": 106,
+      "assertions": {
+        "full_primary_skill": true,
+        "object_column_excluded": true,
+        "detail_column_excluded": true,
+        "five_primary_skills": true,
+        "ambiguous_code_not_official": true
+      },
+      "passed": true,
+      "raw_OCR_sha256": "8c17f1f108620871954a04fa24f70d5efb3d1ea43d946e93431ee4d7ef991c09",
+      "raster_sha256": "52e8840db7a88360f51bb25b4184c95e15183e4cf723a536fea425ac4dc6d7ad",
+      "canonical_excerpt": "Comparar informações sobre um mes- mo fato divulgadas em diferentes veículos e mídias, analisando e avaliando a confiabilidade.",
+      "expected_excerpt": "Comparar informações sobre um mes- mo fato divulgadas em diferentes veículos e mídias, analisando e avaliando a confiabilidade.",
+      "visual_source": "Original page rendered and inspected by automated agent; no human review claimed."
+    },
+    {
+      "source_id": "am-rca-ei",
+      "artifact_sha256": "d2fe6b304d4f9e6aee101b5cf5683125fc255184c87a597d39ee111c3ae80fd8",
+      "page": 69,
+      "assertions": {
+        "first_primary_objective": true,
+        "three_physical_columns": true,
+        "five_printed_code_occurrences": true,
+        "no_silent_code_repairs": true,
+        "neighbor_age_text_excluded": true,
+        "separate_local_code_preserved": true
+      },
+      "passed": true,
+      "raw_OCR_sha256": "b25c42fdf1df823cc8f17f2039c75b259cce27f68b36bb3de3a8ca4087756205",
+      "raster_sha256": "9e715670fe64ca4555d3bc126c605e0ef297b21f5a259b0ef4249022fb315aea",
+      "canonical_excerpt": "Perceber que suas ações têm efeitos nas outras crianças e nos adultos.",
+      "expected_excerpt": "Perceber que suas ações têm efeitos nas outras crianças e nos adultos.",
+      "visual_source": "Original page rendered and inspected by automated agent; no human review claimed."
+    },
+    {
+      "source_id": "am-rca-ef-ai",
+      "artifact_sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+      "page": 120,
+      "assertions": {
+        "full_primary_skill": true,
+        "object_column_excluded": true,
+        "teacher_guidance_excluded": true,
+        "one_primary_skill": true
+      },
+      "passed": true,
+      "raw_OCR_sha256": "42799d45fd9b7a8b606495d5e91b0c9fc4d8e395d7666d4806ddab39df043bf6",
+      "raster_sha256": "02d489a4d323fe88bd3a68b78a19b629cce6378309e5937706c15fb657be11b9",
+      "canonical_excerpt": "Copiar textos breves, mantendo suas características e voltando para o texto sempre que tiver dúvidas sobre sua distribuição gráfica espaçamento entre as palavras, escrita das palavras e pontuação.",
+      "expected_excerpt": "Copiar textos breves, mantendo suas características e voltando para o texto sempre que tiver dúvidas sobre sua distribuição gráfica espaçamento entre as palavras, escrita das palavras e pontuação.",
+      "visual_source": "Original page rendered and inspected by automated agent; no human review claimed."
+    }
+  ],
+  "scope": "Primary visual samples for each scanned AM document plus negative column/next-row/footer/code-repair assertions. This does not assert full OCR character accuracy on every page."
+}

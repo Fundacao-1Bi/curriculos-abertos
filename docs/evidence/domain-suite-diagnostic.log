@@ -1,0 +1,124 @@
+
+> curriculos-abertos@0.1.0 test
+> tsx scripts/test-all.ts
+
+{"event":"test_database_ready","mode":"disposable_container","container":"ca-tests-0b0dbc22faa2","database":"curriculum_test_0b0dbc22faa2","files":21,"fixture_policy":"Isolated owned test database only; published data untouched."}
+✔ reporter administrativo remove segredos de falhas sem perder contexto acionável (2.09325ms)
+✔ suite administrativa tem desktop/mobile e não herda trace/video/screenshot de autenticação (1.694958ms)
+✔ consulta etária aceita somente inteiro ou faixa crescente inclusiva 0–1800 (11.863834ms)
+✔ posição preserva limites explícitos e evidência sem inferir idade de rótulos (5.027166ms)
+✔ OpenAPI expõe faixa documental nos inputs e posição com evidência na saída (0.607ms)
+✔ consulta aceita aliases e fixa paginação/publicação sem alterar código (18.989375ms)
+✔ comparação livre exige 2 ou 3 UFs distintas e lote preserva entrada inválida por item (7.235042ms)
+✔ contribuição admite URL relativa, restringe protocolos e evita campos privados inesperados (1.374416ms)
+✔ HTTP recusa DNS rebinding e origem não autorizada sem confiar em proxy automaticamente (59.674334ms)
+✔ leitor JSON aplica teto ao corpo recebido, inclusive sem content-length (5.237459ms)
+✔ OpenAPI documenta todas operações obrigatórias, exports e contribuições (0.233584ms)
+✔ exportação valida contexto antes de enfileirar trabalho persistente (5.406875ms)
+✔ limite de uso recusa excesso com retry-after sem ampliar confiança no proxy (0.994625ms)
+✔ JSON nacional é validado registro a registro e reconcilia contagens/IDs/texto/evidência (90.380083ms)
+✔ CSV incremental preserva JSON relacionado com vírgulas/aspas/quebras de linha e rejeita perda de referência (13.567125ms)
+✔ download usa bytes em fluxo e confere SHA256 sem Response.text/JSON.parse nacional (63.264084ms)
+✔ estrutura preserva agrupamento antigo, evidências e hierarquia sem confundir seus denominadores (18.018875ms)
+✔ contrato impede contagens falsas, ID duplicado e perda do localizador na hierarquia (1.924209ms)
+✔ filtro parent_id preserva ID opaco; aliases de busca nunca substituem código canônico (9.398542ms)
+✔ OpenAPI declara resposta estrutural e parent_id em busca, preservando aliases na saída (0.277958ms)
+✔ auditor lê todas partes e compara amostra por conteúdo, independente da ordem JSONB (95.426875ms)
+✔ erro semântico na última parte de itens é encontrado, sem aceitar apenas manifesto/primeira parte (47.992042ms)
+✔ contagens independentes distinguem aprendizagens, hierarquia e membros de relações nacionais (48.993959ms)
+✔ corrupção gzip, checksum decodificado e parte fora da raiz bloqueiam a inspeção (115.805125ms)
+✔ JSON Schema declarado deve existir dentro da distribuição e conservar checksum (42.566708ms)
+✔ age range parses only bounded inclusive documented months without guessing from group labels (4.354834ms)
+✔ age SQL uses parameterized intersection and both original labels; unknowns require an explicit opt-in (1.423209ms)
+✔ compressed bundle verifies compressed and decoded checksums with bounded decompression (20.902792ms)
+✔ uncompressed bundle requires a matching artifact hash and rejects root traversal (7.243875ms)
+✔ coverage inventory retains every outside-source part and replaces only explicitly targeted entries (21.39975ms)
+✔ coverage processed/reconciled parts preserve attribution and deterministic first occurrence (0.347333ms)
+✔ legacy mixed aggregate or unattributed inventories fail explicitly without dropping outside parts (4.264208ms)
+✔ critical errors retain only attributable outside-base and target-raw diagnostics (0.394917ms)
+✔ coverage helpers never fabricate inventory entries from positive raw aggregates (0.268375ms)
+{"event":"migration_applied","name":"001-domain.sql","sha256":"8f510934477eb058263031f4208d105fb7cbe4a85ecd9f148b0fb9bafbb3ac46"}
+{"event":"migration_applied","name":"002-admin.sql","sha256":"8f30dfff0ba46b80f83f02d1d9d1cc44d198d2f750221b8952e72c31e62cf98b"}
+{"event":"migration_applied","name":"003-draft-revision.sql","sha256":"c49d8af72a677786111c14443fbc238431fe69f4934d634285ece8040ec7c576"}
+{"event":"migration_applied","name":"004-domain-search.sql","sha256":"73ee404adf457f74d21e5133f1f08fd4d15a73454cdf676f58b58e281056d4d2"}
+{"event":"migration_applied","name":"005-domain-metadata.sql","sha256":"e9fdf7dcfb11634dc3f443780b5446e40e907d1c4b9f3d7e435d442f4b5f2def"}
+{"event":"migration_applied","name":"006-relational-publications.sql","sha256":"e0061e134edb154711ae3fcaf51b0a92bbe5b21d47231775c451e8f49462803f"}
+{"event":"migration_applied","name":"007-hierarchy-and-code-aliases.sql","sha256":"e66d3d52d73382930aae11a8c114c694429f8a0e3539b46d7331433aef132bed"}
+{"event":"migration_applied","name":"008-publication-visibility.sql","sha256":"acb01ee2cf41e614ec2015c37a837dc7859427f14258effe24b8c9fb6501bdb7"}
+{"event":"migration_applied","name":"009-compact-code-search.sql","sha256":"727327c7b78cfcea66a9038265baee564bdd54d08e22d1a140a44fc850488ee7"}
+{"event":"migration_applied","name":"010-pdf-word-search.sql","sha256":"d7178f0a4e9972f1acd1c1890bebb9847e7e925c2fa69dd862efd3812c956168"}
+✔ global source update preserves all non-target canonical data and publishes only with base CAS (1210.595ms)
+✔ forged update lineage cannot authorize publication of a snapshot that drops unrelated sources (113.694875ms)
+✔ cross-source documentary evidence and mixed-source many-to-many memberships cannot disappear silently (253.640125ms)
+✔ preservation checks exact PostgreSQL numeric values even when JS serialization hashes would collide (65.942ms)
+✔ bounded relation verification advances past entire pages affected by the target without omitting outside links (161.121792ms)
+{"event":"migration_applied","name":"001-domain.sql","sha256":"8f510934477eb058263031f4208d105fb7cbe4a85ecd9f148b0fb9bafbb3ac46"}
+{"event":"migration_applied","name":"002-admin.sql","sha256":"8f30dfff0ba46b80f83f02d1d9d1cc44d198d2f750221b8952e72c31e62cf98b"}
+{"event":"migration_applied","name":"003-draft-revision.sql","sha256":"c49d8af72a677786111c14443fbc238431fe69f4934d634285ece8040ec7c576"}
+{"event":"migration_applied","name":"004-domain-search.sql","sha256":"73ee404adf457f74d21e5133f1f08fd4d15a73454cdf676f58b58e281056d4d2"}
+{"event":"migration_applied","name":"005-domain-metadata.sql","sha256":"e9fdf7dcfb11634dc3f443780b5446e40e907d1c4b9f3d7e435d442f4b5f2def"}
+{"event":"migration_applied","name":"006-relational-publications.sql","sha256":"e0061e134edb154711ae3fcaf51b0a92bbe5b21d47231775c451e8f49462803f"}
+{"event":"migration_applied","name":"007-hierarchy-and-code-aliases.sql","sha256":"e66d3d52d73382930aae11a8c114c694429f8a0e3539b46d7331433aef132bed"}
+{"event":"migration_applied","name":"008-publication-visibility.sql","sha256":"acb01ee2cf41e614ec2015c37a837dc7859427f14258effe24b8c9fb6501bdb7"}
+{"event":"migration_applied","name":"009-compact-code-search.sql","sha256":"727327c7b78cfcea66a9038265baee564bdd54d08e22d1a140a44fc850488ee7"}
+{"event":"migration_applied","name":"010-pdf-word-search.sql","sha256":"d7178f0a4e9972f1acd1c1890bebb9847e7e925c2fa69dd862efd3812c956168"}
+✔ bundle validation rejects duplicate IDs, dangling sources and missing localizers (276.459458ms)
+✔ CSV neutralizes executable formulas and quotes without altering canonical JSON (0.284833ms)
+✔ real PostgreSQL contracts and filters (581.561875ms)
+✔ immutable import, snapshot pinning and auditable rollback (113.392375ms)
+✔ positionless items remain unknown and enter year filters only through explicit option and documented source context (66.622583ms)
+✔ destructive integration guard validates the database path rather than credentials/host substrings (0.659625ms)
+✔ real sharded import verifies every part before atomic promotion and streams self-contained snapshots (390.723541ms)
+✔ curation clones relational snapshots without embedding collections or turning publication approval into pedagogy (136.521375ms)
+✔ documented code aliases preserve canonical glyphs and hierarchy supports direct child navigation (76.623292ms)
+✔ prepared visibility cannot be bypassed by IDs or direct default-pointer writes (73.904791ms)
+✔ national matrix excludes structural/legal records but includes explicitly classified uncoded competencies (122.058917ms)
+✔ SQL matrix and local cohorts include literal uncoded competencies/capacities while retaining non-learning documentary roles (340.192958ms)
+✔ local curriculum filters project unique national references while preserving unmatched local items and other UF contexts (184.895916ms)
+✔ many-to-many comparison never promotes an unpaged local group member to national reference (54.974125ms)
+✔ Portuguese search indexes joined PDF line-break words while preserving canonical hyphens and list markers (95.977042ms)
+✔ documented age months intersect inclusive headers without inferring macro labels; relation and matrix filters retain the cut (74.715167ms)
+✔ documented uncoded expectations differ from formation purposes, rights, assessment and reference context (3.435459ms)
+✔ every kind in the real uncoded sidecar inventory has an explicit reviewed category (2175.922042ms)
+✔ experience counts preserve a disjoint exhaustive decomposition without inflating learning outcomes (0.29925ms)
+✔ snapshot conversion preserves canonical records and metadata while emitting bounded deterministic shards (6228.891875ms)
+✔ gzip snapshots validate both byte identities and preserve the same publication and texts (32.00475ms)
+✔ conversion rejects raw corruption, decoded corruption and a modified cached shard (30.136667ms)
+✔ stream bounds and grammar guards fail without changing the input artifact (631.608792ms)
+✔ JSONL preserves Unicode line and paragraph separators inside canonical strings (49.224708ms)
+✔ PDF search joins only letter-hyphen-whitespace-letter sequences (249.8035ms)
+✔ partial PDF search indexes find auxiliary words and preserve canonical records (60.801042ms)
+✔ only supported versions and complete immutable version/path/hash pins are accepted (1.983959ms)
+✔ actual pinned JSON Schema governs records, including 1.0 versus 1.1 null artifact URLs (38.615542ms)
+✔ changed, oversized, symlinked or missing local schemas fail before reading national parts (45.358875ms)
+✔ restored repository root verifies its own schema and relative parts rather than the original workspace (39.63825ms)
+✔ flat and sharded importer pin failures occur before obtaining a PostgreSQL connection (275.295667ms)
+✔ streamed legacy JSON transcode preserves schema pins and schema-root identity (26.411666ms)
+✔ Node and Python consume the same immutable schema definitions for supported edge cases (321.656875ms)
+✔ stream writer roundtrips every record, exact collection hashes and deterministic immutable retries (1792.244625ms)
+✔ stream writer rolls parts at the decoded byte limit and rejects oversized records (1313.422416ms)
+✔ stream writer refuses collisions and damaged sidecars without replacing immutable bytes (36.193916ms)
+✔ stream writer rejects path escapes, non-JSON records and generator failure without publishing a manifest (10.442209ms)
+✔ empty collections retain SHA256 identities and bounded metadata without emitting empty parts (8.553083ms)
+✔ unresolved printed codes are never presented as originally uncoded or guessed from an OCR candidate (2.027292ms)
+✔ OCR code-like token remains an unconfirmed observation, without asserting official presence (0.240917ms)
+✔ QA impõe volumes/DB/portas próprios mesmo com overrides herdados da produção (33.814791ms)
+✔ evidência exige código/publicação e artefatos íntegros, nunca somente um pronto manual (6.840834ms)
+✔ hash de código muda com alteração e independe de docs de progresso (3.192458ms)
+✔ gate recusa execução de navegador filtrada ou teste parcial antes de iniciar processo (1.092458ms)
+✔ schema público de dados invalida evidência quando adicionado, alterado ou removido (3.08925ms)
+✔ mudança de Source ou adapter invalida prova anterior de ingestão mesmo sem mudar publicação (4.460917ms)
+✔ help não pode se passar por build, tipos ou lint executados com sucesso (1.627417ms)
+✔ J11 parcial não comprova atualização global; retenção precisa de inventário, hashes e evento de base (0.962583ms)
+✔ unknown artifact address remains explicit null in transport and immutable import validation (9.109167ms)
+✔ unknown URL does not authorize omitting the field or using executable/non-HTTP addresses (1.597166ms)
+✔ partial source dates never acquire an invented month or day (3.383416ms)
+✔ calendar dates remain the same under different execution timezones (25.097667ms)
+ℹ tests 91
+ℹ suites 0
+ℹ pass 91
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 38389.992958

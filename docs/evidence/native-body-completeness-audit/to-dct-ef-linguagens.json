@@ -1,0 +1,2761 @@
+{
+  "source_id": "to-dct-ef-linguagens",
+  "uf": "TO",
+  "artifact_sha256": "7fe5f562674ec7f73572fd5807d75a5c038ec1c2e96c6f3dfc3126eae82a1db0",
+  "cache_path": "data/extracted/7fe5f562674ec7f73572fd5807d75a5c038ec1c2e96c6f3dfc3126eae82a1db0-page-cell-v1.5.0.json",
+  "status": "read_completed_with_explicit_scope",
+  "audit_revision": "independent-vector-rules-native-code-boundaries-v3",
+  "counts": {
+    "coded_cache_records": 1589,
+    "primary_pages_read": 329,
+    "independently_bounded_native_bodies": 1497,
+    "bounded_body_equal": 1438,
+    "primary_code_boundary_not_indexed_on_page": 408,
+    "body_prefix_not_aligned_to_independent_column_start": 87,
+    "strict_prefix_candidates": 57,
+    "prefix_definition_candidate": 55,
+    "text_too_short_for_prefix_alignment": 5,
+    "prefix_role_unresolved": 2,
+    "extracted_extends_primary_page_region_not_truncation": 1,
+    "bounded_body_other_mismatch_or_layout_ambiguity": 1
+  },
+  "negative_examples": [
+    {
+      "case": "equal_complete_body",
+      "code": "EF12LP04",
+      "page": 37,
+      "cache_item_id": "ca:to-dct-ef-linguagens:a5709659834845ebc3d7",
+      "result": "not_truncation",
+      "body_sha256": "2163b84d66243ef74c65f58d96452b1ea71397c9eb15c1b356a53153d7c8697c"
+    },
+    {
+      "case": "equal_complete_body",
+      "code": "EF01LP17",
+      "page": 37,
+      "cache_item_id": "ca:to-dct-ef-linguagens:77cf9219cd967c194ed3",
+      "result": "not_truncation",
+      "body_sha256": "65367b072ca29c5615238c984147d918de2131d8b3055e251cf597eee54c912a"
+    },
+    {
+      "case": "extracted_extends_bounded_page_region",
+      "code": "EF12EF01",
+      "page": 351,
+      "cache_item_id": "ca:to-dct-ef-linguagens:11bca5fe566afd5e48cb",
+      "result": "not_classified_as_truncation",
+      "evidence_pages": [
+        351
+      ],
+      "extracted_tail": " e regional, e recriá-los, respeitando as diferenças individuais e de desempenho corporal, especialmente do Tocantins. (",
+      "bounded_page_tail": "io e regional, e recriá-los, respeitando as diferenças individuais e de desempenho corporal, especialmente do Tocantins."
+    }
+  ],
+  "findings": [
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF35LP21",
+      "page": 84,
+      "cache_item_id": "ca:to-dct-ef-linguagens:8b5c3ca9b919619ca152",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:204dd395ea8a84062bbe",
+      "evidence_locator": "table:0/row:3/cell:4",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 73,
+      "physical_expected_characters": 137,
+      "extracted_sha256": "51f7c619bba03fc51fd33d9b807fa1f70c732bfd26ac8fbbb398b30c7fa42f81",
+      "physical_expected_sha256": "4391d16817c52f78605948dc0d47c346011a3739d67f6de639b0c086e6968f4d",
+      "extracted_head": "e (EF15LP15), (EF35LP22); (EF35LP30); (EF35LP03); (EF35LP04); (EF35LP05);",
+      "extracted_tail": "e (EF15LP15), (EF35LP22); (EF35LP30); (EF35LP03); (EF35LP04); (EF35LP05);",
+      "expected_tail": "e (EF15LP15), (EF35LP22); (EF35LP30); (EF35LP03); (EF35LP04); (EF35LP05); (EF15LP19); (EF03LP07) e (EF03LP10), a partir dos livros lidos.",
+      "extra_normalized_prefix": " (ef15lp19); (ef03lp07) e (ef03lp10), a partir dos livros lidos.",
+      "independent_boundary": {
+        "anchor": [
+          480.5639953613281,
+          419.39239501953125,
+          520.4609985351562,
+          429.39239501953125
+        ],
+        "body_bbox": [
+          473.13,
+          419.39239501953125,
+          840.56,
+          442.39239501953125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 442.39239501953125,
+        "column": [
+          473.13,
+          840.56
+        ]
+      },
+      "cached_header_hint": {
+        "0": "CA VIDA COTIDIANA/TODOS OS CAMPOS DE ATUAÇÃO ",
+        "1": "EIXO Análise linguís­\ntica/semiótica\n(ortográfica) ",
+        "2": "HABILIDADES (EF03LP01) Ler e escrever palavras com\ncorrespondências regulares contextuais\nentre grafemas e fonemas – c/qu; g/gu;\nr/rr; s/ss; o (e não u) e e (e não i) em\nsílaba átona em final de palavra – e com\nmarcas de nasalidade (til, m, n). (EF03LP03) Ler e escrever corretamen­\nte palavras com os dígrafos lh, nh, ch.",
+        "3": "OBJETOS DE\nCONHECIMENTO Escrita de pa lavras com – c/qu;\ng/gu; r/rr; s/ss. Dígrafos lh, nh e ch.",
+        "4": "SUGESTÕES PEDAGÓGICAS Essa habilidade trata dos casos em que o contexto interno da palavra é que determina que letra\nusar em sua grafia: c/qu; g/gu; r/rr; s/ss. A estratégia indicada é a construção de regras pelo\npróprio estudante, a partir da análise comparativa das ocorrências em listas de palavras, o que\ncontribui para a compreensão da regra. Sugere-se a realização de um ditado diagnóstico para\naveriguação das dificuldades ortográficas dos estudantes. Propor atividade de intervenções\nnecessárias com diferentes tipos de ocorrências, que orientem a análise de grupo de palavras\ndo tipo das previstas na habilidade, para levantamento de semelhanças e diferenças, seguido\ndo registro das conclusões. Ainda que o estudante não chegue a formalizar as regras, esses re­\ngistros poderão ser consultados até que a grafia correta esteja automatizada. Deve-se observar\nque a construção da ortografia só se inicia após a aquisição da base alfabética. A efetivação da habilidade consiste em compreender e registrar a grafia de diferentes palavras,\npara tanto, é necessário analisar listas de palavras com ocorrências que possam gerar dúvidas,\nseja por grafia semelhantes (nh/lh), seja por sons semelhantes (ch/x). Todo trabalho com a\nortografia deve ser primeiro realizado nos textos já estudados."
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF01LI02",
+      "page": 223,
+      "cache_item_id": "ca:to-dct-ef-linguagens:bddbc911d9046476c138",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:66c7ec832f244d0db6a1",
+      "evidence_locator": "table:0/row:4/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 47,
+      "physical_expected_characters": 121,
+      "extracted_sha256": "19dd98f1d60690980604784246cb873d81c271de3cfc327a9f3cd5cefa710d14",
+      "physical_expected_sha256": "b77d52e206ff137a226964a15e846666ee2afeaadc89e2e83bd44c236578bac2",
+      "extracted_head": "Fazer predições embasadas em estímulos visuais.",
+      "extracted_tail": "Fazer predições embasadas em estímulos visuais.",
+      "expected_tail": "Fazer predições embasadas em estímulos visuais. (EF01LI03) Usar associações mentais para ajudar a lembrar-se de palavras.",
+      "extra_normalized_prefix": " (ef01li03) usar associacoes mentais para ajudar a lembrar-se de palavras.",
+      "independent_boundary": {
+        "anchor": [
+          78.97589874267578,
+          237.680419921875,
+          118.55791473388672,
+          251.1404266357422
+        ],
+        "body_bbox": [
+          70.54,
+          237.680419921875,
+          343.02,
+          273.680419921875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 273.680419921875,
+        "physical_bottom_rule_y": 273.680419921875,
+        "column": [
+          70.54,
+          343.02
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 1º ANO 1º BIMESTRE EIXOS: ORALIDADE - PRÁTICAS DE LETRAMENTO - DIMENSÃO INTERCULTURAL",
+        "1": "  ",
+        "2": "  ",
+        "3": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF01LI02",
+      "page": 224,
+      "cache_item_id": "ca:to-dct-ef-linguagens:2f8d35dbf567af22c7d1",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:674bd66aaaa80a5344f1",
+      "evidence_locator": "table:1/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 47,
+      "physical_expected_characters": 121,
+      "extracted_sha256": "19dd98f1d60690980604784246cb873d81c271de3cfc327a9f3cd5cefa710d14",
+      "physical_expected_sha256": "b77d52e206ff137a226964a15e846666ee2afeaadc89e2e83bd44c236578bac2",
+      "extracted_head": "Fazer predições embasadas em estímulos visuais.",
+      "extracted_tail": "Fazer predições embasadas em estímulos visuais.",
+      "expected_tail": "Fazer predições embasadas em estímulos visuais. (EF01LI03) Usar associações mentais para ajudar a lembrar-se de palavras.",
+      "extra_normalized_prefix": " (ef01li03) usar associacoes mentais para ajudar a lembrar-se de palavras.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          417.1968078613281,
+          119.69171905517578,
+          430.65679931640625
+        ],
+        "body_bbox": [
+          71.67,
+          417.1968078613281,
+          323.55,
+          450.1968078613281
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 450.1968078613281,
+        "physical_bottom_rule_y": 450.1968078613281,
+        "column": [
+          71.67,
+          323.55
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 1º ANO - 2º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF01LI02",
+      "page": 225,
+      "cache_item_id": "ca:to-dct-ef-linguagens:855f1ea2d80e7be3e07b",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:fa1ef53070fb5fb6411f",
+      "evidence_locator": "table:0/row:4/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 47,
+      "physical_expected_characters": 121,
+      "extracted_sha256": "19dd98f1d60690980604784246cb873d81c271de3cfc327a9f3cd5cefa710d14",
+      "physical_expected_sha256": "b77d52e206ff137a226964a15e846666ee2afeaadc89e2e83bd44c236578bac2",
+      "extracted_head": "Fazer predições embasadas em estímulos visuais.",
+      "extracted_tail": "Fazer predições embasadas em estímulos visuais.",
+      "expected_tail": "Fazer predições embasadas em estímulos visuais. (EF01LI03) Usar associações mentais para ajudar a lembrar-se de palavras.",
+      "extra_normalized_prefix": " (ef01li03) usar associacoes mentais para ajudar a lembrar-se de palavras.",
+      "independent_boundary": {
+        "anchor": [
+          80.10980224609375,
+          473.1816101074219,
+          119.69181823730469,
+          486.6416015625
+        ],
+        "body_bbox": [
+          71.67,
+          473.1816101074219,
+          323.55,
+          506.1816101074219
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 506.1816101074219,
+        "physical_bottom_rule_y": 506.1816101074219,
+        "column": [
+          71.67,
+          323.55
+        ]
+      },
+      "cached_header_hint": {
+        "0": "(EF01LI07) Identificar características comuns em grupos de\npalavras e elementos.\n(EF01LI08) Desenvolver uma linguagem espontânea, por meio\nde atividades que deem um propósito real para se comunicar\nem situações significativas.\n(EF01LI09) Identificar similaridades e diferenças entre a cultu­\nra local e a de outros países.\n(EF01LI10) Participar de atividades lúdicas (cantar, dançar,\nbrincar, criar) para utilizar, em diferentes contextos, o repertó­\nrio linguístico estudado. LÍNGUA INGLESA - 1º ANO - 3º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL",
+        "1": ".  ",
+        "2": "  ",
+        "3": "Fazer perguntas aos estudantes, utilizando as\nestruturas comunicativas e, na sequência, os\nestudantes perguntam uns aos outros.\nAfixar os números em local de boa visibilidade para\nreferência visual.\nCriar crafts (atividades artesanais) de algum animal da\nfazenda para ensinar brincando.\nDesenvolver atividades lúdicas, agrupando as crianças\nem Learning Centers (Centros de Aprendizagem).\nOs estudantes classificam os números em inglês e\ndepositam as quantidades em pratinhos numerados.\nSeparar os estudantes em Centros de Aprendizagem e\nsolicitar que as crianças façam sorting (classificação)\ndos números, enquanto o professor circula pela sala\ncom uma prancheta, avaliando as habilidades de\ncontagem e classificação.\nSolicitar que as crianças perguntem e respondam\nos nomes dos animais, utilizando flashcards com as\nestruturas comunicativas.\nConfeccionar, junto com os estudantes, crafts\n(atividades artesanais) sobre a família.\nCriar, com os estudantes, graphing (gráficos) sobre\n“How many people are there in your family?” Esse\npoderá ser um trabalho interdisciplinar com o\nprofessor de Matemática.  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF01LI02",
+      "page": 226,
+      "cache_item_id": "ca:to-dct-ef-linguagens:30ec4c9fa86a86813a93",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:c3d7b56b05245b7e7d18",
+      "evidence_locator": "table:1/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 47,
+      "physical_expected_characters": 123,
+      "extracted_sha256": "19dd98f1d60690980604784246cb873d81c271de3cfc327a9f3cd5cefa710d14",
+      "physical_expected_sha256": "2f043acf05eb9893311627958e4e57fa95068eeab9151ecb9695c8edb7fd5144",
+      "extracted_head": "Fazer predições embasadas em estímulos visuais.",
+      "extracted_tail": "Fazer predições embasadas em estímulos visuais.",
+      "expected_tail": "Fazer predições embasadas em estímulos visuais. (EF01LI03) Usar associações mentais para ajudar a lembrar-se de pa­ lavras.",
+      "extra_normalized_prefix": " (ef01li03) usar associacoes mentais para ajudar a lembrar-se de palavras.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          334.3594970703125,
+          119.69171905517578,
+          347.8194885253906
+        ],
+        "body_bbox": [
+          71.67,
+          334.3594970703125,
+          355.17,
+          370.3594970703125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 370.3594970703125,
+        "physical_bottom_rule_y": 370.3594970703125,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 1º ANO - 4º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI01",
+      "page": 231,
+      "cache_item_id": "ca:to-dct-ef-linguagens:08583e24127e74691862",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:4a8492c6155fce970609",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 47,
+      "physical_expected_characters": 131,
+      "extracted_sha256": "396e9648ff00e1350d12739d672897e7abed4bd5bb2f3e6607216cd40e255e6d",
+      "physical_expected_sha256": "f4da22422b2c11458b7b30ec2d13f66657dcae642f8547085219a023e1a3c7ee",
+      "extracted_head": "Identificar o enredo e o cenário em narrativas.",
+      "extracted_tail": "Identificar o enredo e o cenário em narrativas.",
+      "expected_tail": "Identificar o enredo e o cenário em narrativas. (EF03LI02) Executar tarefas comunicativas simples, usando palavras e frases curtas.",
+      "extra_normalized_prefix": " (ef03li02) executar tarefas comunicativas simples, usando palavras e frases curtas.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          152.38311767578125,
+          119.69171905517578,
+          165.84312438964844
+        ],
+        "body_bbox": [
+          71.67,
+          152.38311767578125,
+          355.17,
+          188.38311767578125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 188.38311767578125,
+        "physical_bottom_rule_y": 188.38311767578125,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 3º ANO - 1º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI04",
+      "page": 231,
+      "cache_item_id": "ca:to-dct-ef-linguagens:f211835e0009d5414a4a",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:ea959e24dcba91a4e671",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 46,
+      "physical_expected_characters": 103,
+      "extracted_sha256": "f52195abe71a37a8456038e602d08e3295eb90bf9b82a64adeef6a3a4757449f",
+      "physical_expected_sha256": "a2e43cddf3e1d327a9dadf40907a7b55267c4fd3a481af05b61cfcd51c296f02",
+      "extracted_head": "Escrever frases simples, utilizando um modelo.",
+      "extracted_tail": "Escrever frases simples, utilizando um modelo.",
+      "expected_tail": "Escrever frases simples, utilizando um modelo. (EF03LI05) Identificar e empregar formas interrogativas.",
+      "extra_normalized_prefix": " (ef03li05) identificar e empregar formas interrogativas.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          212.38311767578125,
+          119.69171905517578,
+          225.84312438964844
+        ],
+        "body_bbox": [
+          71.67,
+          212.38311767578125,
+          355.17,
+          236.38311767578125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 236.38311767578125,
+        "physical_bottom_rule_y": 236.38311767578125,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 3º ANO - 1º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI05",
+      "page": 231,
+      "cache_item_id": "ca:to-dct-ef-linguagens:283ace5d5eeaf988920e",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:8fa60999bfebba1e9034",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 45,
+      "physical_expected_characters": 144,
+      "extracted_sha256": "b665298db56f91dff0a58224921dec49431a30b5253edce5b88c27d205aae479",
+      "physical_expected_sha256": "0d9de9e2d91e1eb50253f646eb5d7147e4a04ff75b37eebcc652d42c9767636c",
+      "extracted_head": "Identificar e empregar formas interrogativas.",
+      "extracted_tail": "Identificar e empregar formas interrogativas.",
+      "expected_tail": "Identificar e empregar formas interrogativas. (EF03LI06) Conhecer histórias infantis de diferentes povos e culturas, por meio da Língua Inglesa.",
+      "extra_normalized_prefix": " (ef03li06) conhecer historias infantis de diferentes povos e culturas, por meio da lingua inglesa.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          224.38311767578125,
+          119.69171905517578,
+          237.84312438964844
+        ],
+        "body_bbox": [
+          71.67,
+          224.38311767578125,
+          355.17,
+          260.38311767578125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 260.38311767578125,
+        "physical_bottom_rule_y": 260.38311767578125,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 3º ANO - 1º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI07",
+      "page": 231,
+      "cache_item_id": "ca:to-dct-ef-linguagens:84d3c1a665d49a6a66a2",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:456032e9d1b71690b315",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 32,
+      "physical_expected_characters": 318,
+      "extracted_sha256": "4870dfc5b7317d4b30077e1d4fbe97342863b3a87fe00880d11cb2e7be7bef61",
+      "physical_expected_sha256": "4fb9f6c0cc3864e959044eb334aeac1fb1236ef7fa1f95617f9420eb1bc63f2e",
+      "extracted_head": "Ler, em voz alta, texto simples.",
+      "extracted_tail": "Ler, em voz alta, texto simples.",
+      "expected_tail": "texto simples. (EF03LI08)Experimentar atividades primordialmente lúdicas, com jo­ gos e brincadeiras, a partir de ações como cantar, desenhar, adivinhar e pintar, acompanhadas de práticas que explorem e desenvolvam habili­ dades como reconhecer, localizar e reproduzir (oralmente, visualmente, etc.).",
+      "extra_normalized_prefix": " (ef03li08)experimentar atividades primordialmente ludicas, com jogos e brincadeiras, a partir de acoes como cantar, desenhar, adivinhar e pintar, acompanhadas de praticas que explorem e desenvolvam habilidades como reco",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          260.38311767578125,
+          119.69171905517578,
+          273.8431091308594
+        ],
+        "body_bbox": [
+          71.67,
+          260.38311767578125,
+          355.17,
+          332.38311767578125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 332.38311767578125,
+        "physical_bottom_rule_y": 332.38311767578125,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 3º ANO - 1º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI01",
+      "page": 232,
+      "cache_item_id": "ca:to-dct-ef-linguagens:1649c3a454492dd20d58",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:b44fb03f89e9f57be563",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 47,
+      "physical_expected_characters": 131,
+      "extracted_sha256": "396e9648ff00e1350d12739d672897e7abed4bd5bb2f3e6607216cd40e255e6d",
+      "physical_expected_sha256": "f4da22422b2c11458b7b30ec2d13f66657dcae642f8547085219a023e1a3c7ee",
+      "extracted_head": "Identificar o enredo e o cenário em narrativas.",
+      "extracted_tail": "Identificar o enredo e o cenário em narrativas.",
+      "expected_tail": "Identificar o enredo e o cenário em narrativas. (EF03LI02) Executar tarefas comunicativas simples, usando palavras e frases curtas.",
+      "extra_normalized_prefix": " (ef03li02) executar tarefas comunicativas simples, usando palavras e frases curtas.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          157.34371948242188,
+          119.69171905517578,
+          170.80372619628906
+        ],
+        "body_bbox": [
+          71.67,
+          157.34371948242188,
+          355.17,
+          193.34371948242188
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 193.34371948242188,
+        "physical_bottom_rule_y": 193.34371948242188,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 3º ANO - 2º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI04",
+      "page": 232,
+      "cache_item_id": "ca:to-dct-ef-linguagens:f86a4a5669622a8e24cb",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:59815185c87e5e89674e",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 45,
+      "physical_expected_characters": 102,
+      "extracted_sha256": "ab494cd006c722e8bfb54fdcf8ee5eed71d81419739f66a0e6556cfa05bcb95e",
+      "physical_expected_sha256": "04817db0aeedd957536b9b5499033dc4c4d26617ce8e7e8162780c092f01a0f6",
+      "extracted_head": "Escrever frases simples utilizando um modelo.",
+      "extracted_tail": "Escrever frases simples utilizando um modelo.",
+      "expected_tail": "Escrever frases simples utilizando um modelo. (EF03LI05) Identificar e empregar formas interrogativas.",
+      "extra_normalized_prefix": " (ef03li05) identificar e empregar formas interrogativas.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          217.34371948242188,
+          119.69171905517578,
+          230.80372619628906
+        ],
+        "body_bbox": [
+          71.67,
+          217.34371948242188,
+          355.17,
+          241.34371948242188
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 241.34371948242188,
+        "physical_bottom_rule_y": 241.34371948242188,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 3º ANO - 2º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI05",
+      "page": 232,
+      "cache_item_id": "ca:to-dct-ef-linguagens:a6064d4cf8e66fd8cd17",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:efb616f7bb4af7589e8d",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 45,
+      "physical_expected_characters": 144,
+      "extracted_sha256": "b665298db56f91dff0a58224921dec49431a30b5253edce5b88c27d205aae479",
+      "physical_expected_sha256": "0d9de9e2d91e1eb50253f646eb5d7147e4a04ff75b37eebcc652d42c9767636c",
+      "extracted_head": "Identificar e empregar formas interrogativas.",
+      "extracted_tail": "Identificar e empregar formas interrogativas.",
+      "expected_tail": "Identificar e empregar formas interrogativas. (EF03LI06) Conhecer histórias infantis de diferentes povos e culturas, por meio da Língua Inglesa.",
+      "extra_normalized_prefix": " (ef03li06) conhecer historias infantis de diferentes povos e culturas, por meio da lingua inglesa.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          229.34371948242188,
+          119.69171905517578,
+          242.80372619628906
+        ],
+        "body_bbox": [
+          71.67,
+          229.34371948242188,
+          355.17,
+          265.3437194824219
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 265.3437194824219,
+        "physical_bottom_rule_y": 265.3437194824219,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 3º ANO - 2º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI07",
+      "page": 232,
+      "cache_item_id": "ca:to-dct-ef-linguagens:6f2b6a53bf2cb39ca3d7",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:b124bcc9a8a0e2f000fe",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 33,
+      "physical_expected_characters": 317,
+      "extracted_sha256": "292f63c939636159e330d7344fb8f3d9e6426e1af5ab48fcaab104e8776ea9c0",
+      "physical_expected_sha256": "8c76eafb7b5a6b27fecec5d66d3b7819847bc58113d5a4cf5b61caa1bc02f14a",
+      "extracted_head": "Ler, em voz alta, textos simples.",
+      "extracted_tail": "Ler, em voz alta, textos simples.",
+      "expected_tail": " textos simples. (EF03LI08)Experimentar atividades primordialmente lúdicas, com jo­ gos e brincadeiras, a partir de ações como cantar, desenhar, adivinhar, pintar, acompanhadas de práticas que explorem e desenvolvam habili­ dades como reconhecer, localizar e reproduzir (oralmente, visualmente, etc.)",
+      "extra_normalized_prefix": " (ef03li08)experimentar atividades primordialmente ludicas, com jogos e brincadeiras, a partir de acoes como cantar, desenhar, adivinhar, pintar, acompanhadas de praticas que explorem e desenvolvam habilidades como recon",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          265.3437194824219,
+          119.69171905517578,
+          278.8037109375
+        ],
+        "body_bbox": [
+          71.67,
+          265.3437194824219,
+          355.17,
+          337.3437194824219
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 337.3437194824219,
+        "physical_bottom_rule_y": 337.3437194824219,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 3º ANO - 2º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI01",
+      "page": 233,
+      "cache_item_id": "ca:to-dct-ef-linguagens:aab19481bc878bb9bf7e",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:a17b6b8582e0f9c4435c",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 47,
+      "physical_expected_characters": 131,
+      "extracted_sha256": "396e9648ff00e1350d12739d672897e7abed4bd5bb2f3e6607216cd40e255e6d",
+      "physical_expected_sha256": "f4da22422b2c11458b7b30ec2d13f66657dcae642f8547085219a023e1a3c7ee",
+      "extracted_head": "Identificar o enredo e o cenário em narrativas.",
+      "extracted_tail": "Identificar o enredo e o cenário em narrativas.",
+      "expected_tail": "Identificar o enredo e o cenário em narrativas. (EF03LI02) Executar tarefas comunicativas simples, usando palavras e frases curtas.",
+      "extra_normalized_prefix": " (ef03li02) executar tarefas comunicativas simples, usando palavras e frases curtas.",
+      "independent_boundary": {
+        "anchor": [
+          80.10980224609375,
+          157.34371948242188,
+          119.69181823730469,
+          170.80372619628906
+        ],
+        "body_bbox": [
+          71.67,
+          157.34371948242188,
+          355.17,
+          193.34371948242188
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 193.34371948242188,
+        "physical_bottom_rule_y": 193.34371948242188,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 3º ANO - 3º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI04",
+      "page": 233,
+      "cache_item_id": "ca:to-dct-ef-linguagens:eec6186708bc73483b78",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:b355e4daecad6be16235",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 45,
+      "physical_expected_characters": 102,
+      "extracted_sha256": "ab494cd006c722e8bfb54fdcf8ee5eed71d81419739f66a0e6556cfa05bcb95e",
+      "physical_expected_sha256": "04817db0aeedd957536b9b5499033dc4c4d26617ce8e7e8162780c092f01a0f6",
+      "extracted_head": "Escrever frases simples utilizando um modelo.",
+      "extracted_tail": "Escrever frases simples utilizando um modelo.",
+      "expected_tail": "Escrever frases simples utilizando um modelo. (EF03LI05) Identificar e empregar formas interrogativas.",
+      "extra_normalized_prefix": " (ef03li05) identificar e empregar formas interrogativas.",
+      "independent_boundary": {
+        "anchor": [
+          80.10980224609375,
+          217.34371948242188,
+          119.69181823730469,
+          230.80372619628906
+        ],
+        "body_bbox": [
+          71.67,
+          217.34371948242188,
+          355.17,
+          241.34371948242188
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 241.34371948242188,
+        "physical_bottom_rule_y": 241.34371948242188,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 3º ANO - 3º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI05",
+      "page": 233,
+      "cache_item_id": "ca:to-dct-ef-linguagens:cd8c38964a3d0de18d6d",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:f3a066a250df39eab27f",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 45,
+      "physical_expected_characters": 144,
+      "extracted_sha256": "b665298db56f91dff0a58224921dec49431a30b5253edce5b88c27d205aae479",
+      "physical_expected_sha256": "0d9de9e2d91e1eb50253f646eb5d7147e4a04ff75b37eebcc652d42c9767636c",
+      "extracted_head": "Identificar e empregar formas interrogativas.",
+      "extracted_tail": "Identificar e empregar formas interrogativas.",
+      "expected_tail": "Identificar e empregar formas interrogativas. (EF03LI06) Conhecer histórias infantis de diferentes povos e culturas, por meio da Língua Inglesa.",
+      "extra_normalized_prefix": " (ef03li06) conhecer historias infantis de diferentes povos e culturas, por meio da lingua inglesa.",
+      "independent_boundary": {
+        "anchor": [
+          80.10980224609375,
+          229.34371948242188,
+          119.69181823730469,
+          242.80372619628906
+        ],
+        "body_bbox": [
+          71.67,
+          229.34371948242188,
+          355.17,
+          265.3437194824219
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 265.3437194824219,
+        "physical_bottom_rule_y": 265.3437194824219,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 3º ANO - 3º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI07",
+      "page": 233,
+      "cache_item_id": "ca:to-dct-ef-linguagens:15c8ab83167aa605543c",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:889c6a1a985ea4053b3d",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 33,
+      "physical_expected_characters": 317,
+      "extracted_sha256": "292f63c939636159e330d7344fb8f3d9e6426e1af5ab48fcaab104e8776ea9c0",
+      "physical_expected_sha256": "fed8b4e84aa00e24c304ef5d56d87da748b3f9809e70f809650101fdf308bf32",
+      "extracted_head": "Ler, em voz alta, textos simples.",
+      "extracted_tail": "Ler, em voz alta, textos simples.",
+      "expected_tail": " textos simples. (EF03LI08) Experimentar atividades primordialmente lúdicas com jo­ gos e brincadeiras a partir de ações como cantar, desenhar, adivinhar, pintar, acompanhadas de práticas que explorem e desenvolvam habili­ dades como reconhecer, localizar e reproduzir (oralmente, visualmente, etc.).",
+      "extra_normalized_prefix": " (ef03li08) experimentar atividades primordialmente ludicas com jogos e brincadeiras a partir de acoes como cantar, desenhar, adivinhar, pintar, acompanhadas de praticas que explorem e desenvolvam habilidades como reconh",
+      "independent_boundary": {
+        "anchor": [
+          80.10980224609375,
+          265.3437194824219,
+          119.69181823730469,
+          278.8037109375
+        ],
+        "body_bbox": [
+          71.67,
+          265.3437194824219,
+          355.17,
+          337.3437194824219
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 337.3437194824219,
+        "physical_bottom_rule_y": 337.3437194824219,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 3º ANO - 3º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI01",
+      "page": 233,
+      "cache_item_id": "ca:to-dct-ef-linguagens:745183df4c0b8fed4d27",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:2ffcc320ab7f94887734",
+      "evidence_locator": "table:1/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 47,
+      "physical_expected_characters": 131,
+      "extracted_sha256": "396e9648ff00e1350d12739d672897e7abed4bd5bb2f3e6607216cd40e255e6d",
+      "physical_expected_sha256": "f4da22422b2c11458b7b30ec2d13f66657dcae642f8547085219a023e1a3c7ee",
+      "extracted_head": "Identificar o enredo e o cenário em narrativas.",
+      "extracted_tail": "Identificar o enredo e o cenário em narrativas.",
+      "expected_tail": "Identificar o enredo e o cenário em narrativas. (EF03LI02) Executar tarefas comunicativas simples, usando palavras e frases curtas.",
+      "extra_normalized_prefix": " (ef03li02) executar tarefas comunicativas simples, usando palavras e frases curtas.",
+      "independent_boundary": {
+        "anchor": [
+          80.10980224609375,
+          481.9093933105469,
+          119.69181823730469,
+          495.369384765625
+        ],
+        "body_bbox": [
+          71.67,
+          481.9093933105469,
+          355.17,
+          517.909423828125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 517.909423828125,
+        "physical_bottom_rule_y": 517.909423828125,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 3º ANO - 4º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI03",
+      "page": 233,
+      "cache_item_id": "ca:to-dct-ef-linguagens:bf9bceee0b367716c78c",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:0f151cd4340a70e01429",
+      "evidence_locator": "table:1/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 60,
+      "physical_expected_characters": 118,
+      "extracted_sha256": "2d0b943a0c64d93997b484c75e68e939de13227ea2863cb92088fd988ca769ec",
+      "physical_expected_sha256": "4279f9f297dfdc28912ee79b349651364e3e20c33213e4ee39174a69990f7352",
+      "extracted_head": "Identificar algumas palavras e frases familiares na escrita.",
+      "extracted_tail": "Identificar algumas palavras e frases familiares na escrita.",
+      "expected_tail": "Identificar algumas palavras e frases familiares na escrita. (EF03LI04) Escrever frases simples, utilizando um modelo.",
+      "extra_normalized_prefix": " (ef03li04) escrever frases simples, utilizando um modelo.",
+      "independent_boundary": {
+        "anchor": [
+          80.10980224609375,
+          517.909423828125,
+          119.69181823730469,
+          531.369384765625
+        ],
+        "body_bbox": [
+          71.67,
+          517.909423828125,
+          355.17,
+          555.37939453125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 555.37939453125,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 3º ANO - 4º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI05",
+      "page": 234,
+      "cache_item_id": "ca:to-dct-ef-linguagens:69195da8d0e75f196de0",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:a514d3eebd9e334c7f90",
+      "evidence_locator": "table:0/row:0/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 45,
+      "physical_expected_characters": 144,
+      "extracted_sha256": "b665298db56f91dff0a58224921dec49431a30b5253edce5b88c27d205aae479",
+      "physical_expected_sha256": "0d9de9e2d91e1eb50253f646eb5d7147e4a04ff75b37eebcc652d42c9767636c",
+      "extracted_head": "Identificar e empregar formas interrogativas.",
+      "extracted_tail": "Identificar e empregar formas interrogativas.",
+      "expected_tail": "Identificar e empregar formas interrogativas. (EF03LI06) Conhecer histórias infantis de diferentes povos e culturas, por meio da Língua Inglesa.",
+      "extra_normalized_prefix": " (ef03li06) conhecer historias infantis de diferentes povos e culturas, por meio da lingua inglesa.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          95.24142456054688,
+          119.69171905517578,
+          108.70142364501953
+        ],
+        "body_bbox": [
+          71.67,
+          95.24142456054688,
+          355.17,
+          131.24142456054688
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 131.24142456054688,
+        "physical_bottom_rule_y": 131.24142456054688,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "(EF03LI05) Identificar e empregar formas interrogativas.\n(EF03LI06) Conhecer histórias infantis de diferentes povos e culturas,\npor meio da Língua Inglesa.\n(EF03LI07) Ler, em voz alta, textos simples.\n(EF03LI08) Experimentar atividades primordialmente lúdicas, com jo­\ngos e brincadeiras, a partir de ações como cantar, desenhar, adivinhar,\npintar, acompanhadas de práticas que explorem e desenvolvam habili­\ndades como reconhecer, localizar e reproduzir (oralmente, visualmente,\netc.).\n(EF03LI09)Comparar festivais e celebrações em diferentes culturas.",
+        "1": "",
+        "2": "A: Can you swim?\nB: Yes, I can.\nMerry Christmas!",
+        "3": "Utilizar flashcards para a prática de pronúncia, estratégia\nde aprendizagem do vocabulário e da estrutura relacio­\nnada.\nTrabalhar atividades diversificadas, com jogos e desenhos\nsobre os animais da floresta em Learning Centers (Centros\nde Aprendizagem).\nCriar pôsteres usando a interrogativa “Can you......?” e as\nrespostas “Yes, I can” ou “No, I cant.”\nConfeccionar, junto com os estudantes, crafts (atividades\nartesanais), simbolizando o Natal.\nMostrar aos estudantes, por meio de vídeos, as diferentes\ncelebrações das festas Natalinas ao redor do mundo."
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF03LI07",
+      "page": 234,
+      "cache_item_id": "ca:to-dct-ef-linguagens:85d593e595ca02f64970",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:e38247c7528dd90c07e8",
+      "evidence_locator": "table:0/row:0/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 33,
+      "physical_expected_characters": 319,
+      "extracted_sha256": "292f63c939636159e330d7344fb8f3d9e6426e1af5ab48fcaab104e8776ea9c0",
+      "physical_expected_sha256": "f1ba9371aaffff64846ab02e2408202ac1108f432cfe2e79f996b6573cf7f07e",
+      "extracted_head": "Ler, em voz alta, textos simples.",
+      "extracted_tail": "Ler, em voz alta, textos simples.",
+      "expected_tail": "extos simples. (EF03LI08) Experimentar atividades primordialmente lúdicas, com jo­ gos e brincadeiras, a partir de ações como cantar, desenhar, adivinhar, pintar, acompanhadas de práticas que explorem e desenvolvam habili­ dades como reconhecer, localizar e reproduzir (oralmente, visualmente, etc.).",
+      "extra_normalized_prefix": " (ef03li08) experimentar atividades primordialmente ludicas, com jogos e brincadeiras, a partir de acoes como cantar, desenhar, adivinhar, pintar, acompanhadas de praticas que explorem e desenvolvam habilidades como reco",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          131.24142456054688,
+          119.69171905517578,
+          144.70143127441406
+        ],
+        "body_bbox": [
+          71.67,
+          131.24142456054688,
+          355.17,
+          203.24139404296875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 203.24139404296875,
+        "physical_bottom_rule_y": 203.24139404296875,
+        "column": [
+          71.67,
+          355.17
+        ]
+      },
+      "cached_header_hint": {
+        "0": "(EF03LI05) Identificar e empregar formas interrogativas.\n(EF03LI06) Conhecer histórias infantis de diferentes povos e culturas,\npor meio da Língua Inglesa.\n(EF03LI07) Ler, em voz alta, textos simples.\n(EF03LI08) Experimentar atividades primordialmente lúdicas, com jo­\ngos e brincadeiras, a partir de ações como cantar, desenhar, adivinhar,\npintar, acompanhadas de práticas que explorem e desenvolvam habili­\ndades como reconhecer, localizar e reproduzir (oralmente, visualmente,\netc.).\n(EF03LI09)Comparar festivais e celebrações em diferentes culturas.",
+        "1": "",
+        "2": "A: Can you swim?\nB: Yes, I can.\nMerry Christmas!",
+        "3": "Utilizar flashcards para a prática de pronúncia, estratégia\nde aprendizagem do vocabulário e da estrutura relacio­\nnada.\nTrabalhar atividades diversificadas, com jogos e desenhos\nsobre os animais da floresta em Learning Centers (Centros\nde Aprendizagem).\nCriar pôsteres usando a interrogativa “Can you......?” e as\nrespostas “Yes, I can” ou “No, I cant.”\nConfeccionar, junto com os estudantes, crafts (atividades\nartesanais), simbolizando o Natal.\nMostrar aos estudantes, por meio de vídeos, as diferentes\ncelebrações das festas Natalinas ao redor do mundo."
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI01",
+      "page": 234,
+      "cache_item_id": "ca:to-dct-ef-linguagens:8ff036549440ba264bc9",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:000953b6ef3c96fe274f",
+      "evidence_locator": "table:1/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 33,
+      "physical_expected_characters": 102,
+      "extracted_sha256": "aa58e85b1a80b78443efaf246062ab367ed2a48beca85dd7bd18553d09258a69",
+      "physical_expected_sha256": "0f634049f904e41f5b81d9453749a53bf3cb20d3b72d5d5ee983a263df5169da",
+      "extracted_head": "Identificar o tema em narrativas.",
+      "extracted_tail": "Identificar o tema em narrativas.",
+      "expected_tail": "Identificar o tema em narrativas. (EF04LI02) Perguntar e responder a perguntas sobre tópicos diversos.",
+      "extra_normalized_prefix": " (ef04li02) perguntar e responder a perguntas sobre topicos diversos.",
+      "independent_boundary": {
+        "anchor": [
+          80.10980224609375,
+          313.77679443359375,
+          119.69181823730469,
+          327.2367858886719
+        ],
+        "body_bbox": [
+          71.67,
+          313.77679443359375,
+          355.22,
+          335.77679443359375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 335.77679443359375,
+        "physical_bottom_rule_y": 335.77679443359375,
+        "column": [
+          71.67,
+          355.22
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 4º ANO - 1º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI02",
+      "page": 234,
+      "cache_item_id": "ca:to-dct-ef-linguagens:d0456f258b2548773480",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:074d163eac353db049de",
+      "evidence_locator": "table:1/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 57,
+      "physical_expected_characters": 142,
+      "extracted_sha256": "73059363321e720c2d4b1d923539aae0fc7edd9cb2c937dc19563d692c86523d",
+      "physical_expected_sha256": "dec45cfd3fbceffa5fa6de3346a9a184ae390946ca500e1e51477a86870270fa",
+      "extracted_head": "Perguntar e responder a perguntas sobre tópicos diversos.",
+      "extracted_tail": "Perguntar e responder a perguntas sobre tópicos diversos.",
+      "expected_tail": "Perguntar e responder a perguntas sobre tópicos diversos. (EF04LI03) Acompanhar a leitura de um texto curto, escutando e lendo ao mesmo tempo.",
+      "extra_normalized_prefix": " (ef04li03) acompanhar a leitura de um texto curto, escutando e lendo ao mesmo tempo.",
+      "independent_boundary": {
+        "anchor": [
+          80.10980224609375,
+          324.77679443359375,
+          119.69181823730469,
+          338.2367858886719
+        ],
+        "body_bbox": [
+          71.67,
+          324.77679443359375,
+          355.22,
+          357.77679443359375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 357.77679443359375,
+        "physical_bottom_rule_y": 357.77679443359375,
+        "column": [
+          71.67,
+          355.22
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 4º ANO - 1º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI07",
+      "page": 234,
+      "cache_item_id": "ca:to-dct-ef-linguagens:5cebc159fa0ef479120f",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:7f58f7473c8f347e27ec",
+      "evidence_locator": "table:1/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 27,
+      "physical_expected_characters": 136,
+      "extracted_sha256": "950d2835240db9c5c7ead1a377dc5d043d55c75f549a34ba7b4736c66e87c5ad",
+      "physical_expected_sha256": "95b63ff9079a5912cda787f2afd6403a62c8a6a40f3e6c26bd4757759e6e25fd",
+      "extracted_head": "Expressar opiniões simples.",
+      "extracted_tail": "Expressar opiniões simples.",
+      "expected_tail": "Expressar opiniões simples. (EF04LI08) Conhecer alguns aspectos da vida cotidiana de outros paí­ ses e compará-las com os seus próprios.",
+      "extra_normalized_prefix": " (ef04li08) conhecer alguns aspectos da vida cotidiana de outros paises e compara-las com os seus proprios.",
+      "independent_boundary": {
+        "anchor": [
+          80.10980224609375,
+          423.7768249511719,
+          119.69181823730469,
+          437.23681640625
+        ],
+        "body_bbox": [
+          71.67,
+          423.7768249511719,
+          355.22,
+          456.7768249511719
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 456.7768249511719,
+        "physical_bottom_rule_y": 456.7768249511719,
+        "column": [
+          71.67,
+          355.22
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 4º ANO - 1º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI09",
+      "page": 234,
+      "cache_item_id": "ca:to-dct-ef-linguagens:4f2d097ac16d3615e866",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:4cebfb195b1a12615cd0",
+      "evidence_locator": "table:1/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 32,
+      "physical_expected_characters": 316,
+      "extracted_sha256": "0cb508f589ca967d9a0e795048b19b3809d5a442bf74bd9b5562047c098dcb30",
+      "physical_expected_sha256": "7d66bd6d225d78fa3687231a137db941f3a77807470780afe6cdbe340f91849e",
+      "extracted_head": "Comparar histórias tradicionais.",
+      "extracted_tail": "Comparar histórias tradicionais.",
+      "expected_tail": "as tradicionais. (EF03LI10)Experimentar atividades primordialmente lúdicas com jo­ gos e brincadeiras, a partir de ações como cantar, desenhar, adivinhar, pintar, acompanhadas de práticas que explorem e desenvolvam habili­ dades como reconhecer, localizar e reproduzir (oralmente, visualmente, etc.).",
+      "extra_normalized_prefix": " (ef03li10)experimentar atividades primordialmente ludicas com jogos e brincadeiras, a partir de acoes como cantar, desenhar, adivinhar, pintar, acompanhadas de praticas que explorem e desenvolvam habilidades como reconh",
+      "independent_boundary": {
+        "anchor": [
+          80.10980224609375,
+          456.7768249511719,
+          119.69181823730469,
+          470.23681640625
+        ],
+        "body_bbox": [
+          71.67,
+          456.7768249511719,
+          355.22,
+          570.2625122070312
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 570.2625122070312,
+        "column": [
+          71.67,
+          355.22
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 4º ANO - 1º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI01",
+      "page": 235,
+      "cache_item_id": "ca:to-dct-ef-linguagens:a6f3cbe73b1a81fa04da",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:90bfd57e69672e1b8410",
+      "evidence_locator": "table:1/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 33,
+      "physical_expected_characters": 90,
+      "extracted_sha256": "aa58e85b1a80b78443efaf246062ab367ed2a48beca85dd7bd18553d09258a69",
+      "physical_expected_sha256": "794946add870103c458f3fb0c900820b7ee236e94481706b47d669eded62f402",
+      "extracted_head": "Identificar o tema em narrativas.",
+      "extracted_tail": "Identificar o tema em narrativas.",
+      "expected_tail": "Identificar o tema em narrativas. (EF04LI02) Perguntar e responder sobre tópicos diversos.",
+      "extra_normalized_prefix": " (ef04li02) perguntar e responder sobre topicos diversos.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          394.7980041503906,
+          119.69171905517578,
+          408.25799560546875
+        ],
+        "body_bbox": [
+          71.67,
+          394.7980041503906,
+          348.12,
+          416.7980041503906
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 416.7980041503906,
+        "physical_bottom_rule_y": 416.7980041503906,
+        "column": [
+          71.67,
+          348.12
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 4º ANO - 2º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI02",
+      "page": 235,
+      "cache_item_id": "ca:to-dct-ef-linguagens:1629cbdbeef25905530d",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:c8327db31397aca31ce3",
+      "evidence_locator": "table:1/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 45,
+      "physical_expected_characters": 119,
+      "extracted_sha256": "a725970e294c9b4bb7422b8538f821128a0e2b6fd9095d4526fa0b202f0c4d36",
+      "physical_expected_sha256": "f23b1477852e12a7e80ab887cf3fa00e37305560dfc90020dc870c136582de4a",
+      "extracted_head": "Perguntar e responder sobre tópicos diversos.",
+      "extracted_tail": "Perguntar e responder sobre tópicos diversos.",
+      "expected_tail": "Perguntar e responder sobre tópicos diversos. (EF04LI03) Acompanhar a leitura de um texto curto, lido pelo pro­ fessor.",
+      "extra_normalized_prefix": " (ef04li03) acompanhar a leitura de um texto curto, lido pelo professor.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          405.7980041503906,
+          119.69171905517578,
+          419.25799560546875
+        ],
+        "body_bbox": [
+          71.67,
+          405.7980041503906,
+          348.12,
+          438.7980041503906
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 438.7980041503906,
+        "physical_bottom_rule_y": 438.7980041503906,
+        "column": [
+          71.67,
+          348.12
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 4º ANO - 2º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI09",
+      "page": 236,
+      "cache_item_id": "ca:to-dct-ef-linguagens:ce455eff2851e5d266c4",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:3c3ef22a346f1550988e",
+      "evidence_locator": "table:0/row:0/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Cached header hint only, not accepted as independent whole-source reconciliation.",
+      "extracted_characters": 32,
+      "physical_expected_characters": 317,
+      "extracted_sha256": "0cb508f589ca967d9a0e795048b19b3809d5a442bf74bd9b5562047c098dcb30",
+      "physical_expected_sha256": "b8de7d158be9445b0bb7ccd37f0bd6763158082a59003cb67bca84d59067adf0",
+      "extracted_head": "Comparar histórias tradicionais.",
+      "extracted_tail": "Comparar histórias tradicionais.",
+      "expected_tail": "s tradicionais. (EF03LI10)Experimentar atividades primordialmente lúdicas, com jogos e brincadeiras, a partir de ações como cantar, desenhar, adivi­ nhar, pintar, acompanhadas de práticas que explorem e desenvolvam habilidades como reconhecer, localizar e reproduzir (oralmente, visu­ almente, etc.).",
+      "extra_normalized_prefix": " (ef03li10)experimentar atividades primordialmente ludicas, com jogos e brincadeiras, a partir de acoes como cantar, desenhar, adivinhar, pintar, acompanhadas de praticas que explorem e desenvolvam habilidades como recon",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          110.15469360351562,
+          119.69171905517578,
+          123.61469268798828
+        ],
+        "body_bbox": [
+          71.67,
+          110.15469360351562,
+          348.12,
+          180.62469482421875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 257.7113037109375,
+        "physical_bottom_rule_y": 180.62469482421875,
+        "column": [
+          71.67,
+          348.12
+        ]
+      },
+      "cached_header_hint": {
+        "0": "(EF04LI08) Conhecer alguns aspectos da vida cotidiana de outros pa­\níses e compará-las com os seus próprios.\n(EF04LI09) Comparar histórias tradicionais.\n(EF03LI10)Experimentar atividades primordialmente lúdicas, com\njogos e brincadeiras, a partir de ações como cantar, desenhar, adivi­\nnhar, pintar, acompanhadas de práticas que explorem e desenvolvam\nhabilidades como reconhecer, localizar e reproduzir (oralmente, visu­\nalmente, etc.).",
+        "1": "",
+        "2": "",
+        "3": "Distribuir folhas com recortes de partes da casa. As crian­\nças podem colorir, recortar e montar os recortes para a\nprática oral do vocabulário e da estrutura relacionada, ex­\nplorando sua criatividade. Após a conclusão da atividade,\nas crianças podem guardar suas produções no portfólio.\nRealizar jogos divertidos com as crianças, utilizando o vo­\ncabulário estudado."
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI01",
+      "page": 236,
+      "cache_item_id": "ca:to-dct-ef-linguagens:ac89798812b6012ee3a9",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:955c5239cf149bf2dd0b",
+      "evidence_locator": "table:1/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 33,
+      "physical_expected_characters": 90,
+      "extracted_sha256": "aa58e85b1a80b78443efaf246062ab367ed2a48beca85dd7bd18553d09258a69",
+      "physical_expected_sha256": "794946add870103c458f3fb0c900820b7ee236e94481706b47d669eded62f402",
+      "extracted_head": "Identificar o tema em narrativas.",
+      "extracted_tail": "Identificar o tema em narrativas.",
+      "expected_tail": "Identificar o tema em narrativas. (EF04LI02) Perguntar e responder sobre tópicos diversos.",
+      "extra_normalized_prefix": " (ef04li02) perguntar e responder sobre topicos diversos.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          257.7113037109375,
+          119.69171905517578,
+          271.1712951660156
+        ],
+        "body_bbox": [
+          71.67,
+          257.7113037109375,
+          370.97,
+          279.7113037109375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 279.7113037109375,
+        "physical_bottom_rule_y": 279.7113037109375,
+        "column": [
+          71.67,
+          370.97
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 4º ANO - 3º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI02",
+      "page": 236,
+      "cache_item_id": "ca:to-dct-ef-linguagens:5733c95c3d66d547a8ba",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:5ab91be37bd46f7f5717",
+      "evidence_locator": "table:1/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 45,
+      "physical_expected_characters": 117,
+      "extracted_sha256": "a725970e294c9b4bb7422b8538f821128a0e2b6fd9095d4526fa0b202f0c4d36",
+      "physical_expected_sha256": "c00428ad23c07c25c64d507322eb12d9a9e3eae22856600a6b69d39b11fb928b",
+      "extracted_head": "Perguntar e responder sobre tópicos diversos.",
+      "extracted_tail": "Perguntar e responder sobre tópicos diversos.",
+      "expected_tail": "Perguntar e responder sobre tópicos diversos. (EF04LI03) Acompanhar a leitura de um texto curto, lido pelo professor.",
+      "extra_normalized_prefix": " (ef04li03) acompanhar a leitura de um texto curto, lido pelo professor.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          268.7113037109375,
+          119.69171905517578,
+          282.1712951660156
+        ],
+        "body_bbox": [
+          71.67,
+          268.7113037109375,
+          370.97,
+          290.7113037109375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 290.7113037109375,
+        "physical_bottom_rule_y": 290.7113037109375,
+        "column": [
+          71.67,
+          370.97
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 4º ANO - 3º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI03",
+      "page": 236,
+      "cache_item_id": "ca:to-dct-ef-linguagens:c62065b3af2591c575c9",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:01d721f5deef9966731d",
+      "evidence_locator": "table:1/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 60,
+      "physical_expected_characters": 165,
+      "extracted_sha256": "24bad551c91cad422f7f771319679701f1451fb9c57d01df52f0152e1a9c7cce",
+      "physical_expected_sha256": "dcdc2c0276ab1c10949bb308d04526ac96e6f560b8a78bf146b09ad3bfc91cdf",
+      "extracted_head": "Acompanhar a leitura de um texto curto, lido pelo professor.",
+      "extracted_tail": "Acompanhar a leitura de um texto curto, lido pelo professor.",
+      "expected_tail": "Acompanhar a leitura de um texto curto, lido pelo professor. (EF04LI04)Escrever palavras e frases simples, utilizando um modelo e vo­ cabulário estudado previamente.",
+      "extra_normalized_prefix": " (ef04li04)escrever palavras e frases simples, utilizando um modelo e vocabulario estudado previamente.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          279.7113037109375,
+          119.69171905517578,
+          293.1712951660156
+        ],
+        "body_bbox": [
+          71.67,
+          279.7113037109375,
+          370.97,
+          312.7113037109375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 312.7113037109375,
+        "physical_bottom_rule_y": 312.7113037109375,
+        "column": [
+          71.67,
+          370.97
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 4º ANO - 3º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI07",
+      "page": 236,
+      "cache_item_id": "ca:to-dct-ef-linguagens:19e682790928bc43bce0",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:fc61f62e581233e253d7",
+      "evidence_locator": "table:1/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 27,
+      "physical_expected_characters": 134,
+      "extracted_sha256": "950d2835240db9c5c7ead1a377dc5d043d55c75f549a34ba7b4736c66e87c5ad",
+      "physical_expected_sha256": "18ef8e61398fc39867adb339a4e2056dca5cb6fad5f93038220ce2411449a38a",
+      "extracted_head": "Expressar opiniões simples.",
+      "extracted_tail": "Expressar opiniões simples.",
+      "expected_tail": "Expressar opiniões simples. (EF04LI08) Conhecer alguns aspectos da vida cotidiana de outros países e compará-los com os seus próprios.",
+      "extra_normalized_prefix": " (ef04li08) conhecer alguns aspectos da vida cotidiana de outros paises e compara-los com os seus proprios.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          356.7113037109375,
+          119.69171905517578,
+          370.1712951660156
+        ],
+        "body_bbox": [
+          71.67,
+          356.7113037109375,
+          370.97,
+          389.7113037109375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 389.7113037109375,
+        "physical_bottom_rule_y": 389.7113037109375,
+        "column": [
+          71.67,
+          370.97
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 4º ANO - 3º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI09",
+      "page": 236,
+      "cache_item_id": "ca:to-dct-ef-linguagens:fa9c97037594e75714ce",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:f3c1233683733d5bc833",
+      "evidence_locator": "table:1/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 32,
+      "physical_expected_characters": 314,
+      "extracted_sha256": "0cb508f589ca967d9a0e795048b19b3809d5a442bf74bd9b5562047c098dcb30",
+      "physical_expected_sha256": "3a860b12960868443d10dd1e14a7e6a48dcc07e623b83dd93695a3633509ef5c",
+      "extracted_head": "Comparar histórias tradicionais.",
+      "extracted_tail": "Comparar histórias tradicionais.",
+      "expected_tail": "rias tradicionais. (EF03LI10) Experimentar atividades primordialmente lúdicas, com jogos e brincadeiras, a partir de ações como cantar, desenhar, adivinhar, pintar, acompanhadas de práticas que explorem e desenvolvam habilidades como reconhecer, localizar e reproduzir (oralmente, visualmente, etc.).",
+      "extra_normalized_prefix": " (ef03li10) experimentar atividades primordialmente ludicas, com jogos e brincadeiras, a partir de acoes como cantar, desenhar, adivinhar, pintar, acompanhadas de praticas que explorem e desenvolvam habilidades como reco",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          389.7113037109375,
+          119.69171905517578,
+          403.1712951660156
+        ],
+        "body_bbox": [
+          71.67,
+          389.7113037109375,
+          370.97,
+          562.8663940429688
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 562.8663940429688,
+        "column": [
+          71.67,
+          370.97
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 4º ANO - 3º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI01",
+      "page": 237,
+      "cache_item_id": "ca:to-dct-ef-linguagens:1f8a7d034f37591d8e01",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:dc6727c0cbf5293bd167",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 33,
+      "physical_expected_characters": 90,
+      "extracted_sha256": "aa58e85b1a80b78443efaf246062ab367ed2a48beca85dd7bd18553d09258a69",
+      "physical_expected_sha256": "794946add870103c458f3fb0c900820b7ee236e94481706b47d669eded62f402",
+      "extracted_head": "Identificar o tema em narrativas.",
+      "extracted_tail": "Identificar o tema em narrativas.",
+      "expected_tail": "Identificar o tema em narrativas. (EF04LI02) Perguntar e responder sobre tópicos diversos.",
+      "extra_normalized_prefix": " (ef04li02) perguntar e responder sobre topicos diversos.",
+      "independent_boundary": {
+        "anchor": [
+          78.97589874267578,
+          147.93301391601562,
+          118.55791473388672,
+          161.3930206298828
+        ],
+        "body_bbox": [
+          70.54,
+          147.93301391601562,
+          369.84,
+          171.93301391601562
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 171.93301391601562,
+        "physical_bottom_rule_y": 171.93301391601562,
+        "column": [
+          70.54,
+          369.84
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 4º ANO - 4º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI02",
+      "page": 237,
+      "cache_item_id": "ca:to-dct-ef-linguagens:72fa4efd54ea2276afe8",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:2abd71a57b671bc52a87",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 45,
+      "physical_expected_characters": 117,
+      "extracted_sha256": "a725970e294c9b4bb7422b8538f821128a0e2b6fd9095d4526fa0b202f0c4d36",
+      "physical_expected_sha256": "c00428ad23c07c25c64d507322eb12d9a9e3eae22856600a6b69d39b11fb928b",
+      "extracted_head": "Perguntar e responder sobre tópicos diversos.",
+      "extracted_tail": "Perguntar e responder sobre tópicos diversos.",
+      "expected_tail": "Perguntar e responder sobre tópicos diversos. (EF04LI03) Acompanhar a leitura de um texto curto, lido pelo professor.",
+      "extra_normalized_prefix": " (ef04li03) acompanhar a leitura de um texto curto, lido pelo professor.",
+      "independent_boundary": {
+        "anchor": [
+          78.97589874267578,
+          159.93301391601562,
+          118.55791473388672,
+          173.3930206298828
+        ],
+        "body_bbox": [
+          70.54,
+          159.93301391601562,
+          369.84,
+          183.93301391601562
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 183.93301391601562,
+        "physical_bottom_rule_y": 183.93301391601562,
+        "column": [
+          70.54,
+          369.84
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 4º ANO - 4º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI03",
+      "page": 237,
+      "cache_item_id": "ca:to-dct-ef-linguagens:23cc091091b62c1f1747",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:3940fe2e6d3ce57a9f36",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 60,
+      "physical_expected_characters": 166,
+      "extracted_sha256": "24bad551c91cad422f7f771319679701f1451fb9c57d01df52f0152e1a9c7cce",
+      "physical_expected_sha256": "4924fb9a3211bef0e17fe522d6082a61363b3c8d81accf26c52e4ecdb7284f81",
+      "extracted_head": "Acompanhar a leitura de um texto curto, lido pelo professor.",
+      "extracted_tail": "Acompanhar a leitura de um texto curto, lido pelo professor.",
+      "expected_tail": "Acompanhar a leitura de um texto curto, lido pelo professor. (EF04LI04) Escrever palavras e frases simples, utilizando um modelo e vo­ cabulário estudado previamente.",
+      "extra_normalized_prefix": " (ef04li04) escrever palavras e frases simples, utilizando um modelo e vocabulario estudado previamente.",
+      "independent_boundary": {
+        "anchor": [
+          78.97589874267578,
+          171.93301391601562,
+          118.55791473388672,
+          185.3930206298828
+        ],
+        "body_bbox": [
+          70.54,
+          171.93301391601562,
+          369.84,
+          207.93301391601562
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 207.93301391601562,
+        "physical_bottom_rule_y": 207.93301391601562,
+        "column": [
+          70.54,
+          369.84
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 4º ANO - 4º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF04LI07",
+      "page": 237,
+      "cache_item_id": "ca:to-dct-ef-linguagens:61f7112a9171a8bf498c",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:8791f8153f54aed60c3c",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 27,
+      "physical_expected_characters": 134,
+      "extracted_sha256": "950d2835240db9c5c7ead1a377dc5d043d55c75f549a34ba7b4736c66e87c5ad",
+      "physical_expected_sha256": "8244b8d26fdd1e242155ebccb5d9068e7a07ac323217a49a594d0987c3ed5e3b",
+      "extracted_head": "Expressar opiniões simples.",
+      "extracted_tail": "Expressar opiniões simples.",
+      "expected_tail": "Expressar opiniões simples. (EF04LI08) Conhecer alguns aspectos da vida cotidiana de outros países e compará-las com os seus próprios.",
+      "extra_normalized_prefix": " (ef04li08) conhecer alguns aspectos da vida cotidiana de outros paises e compara-las com os seus proprios.",
+      "independent_boundary": {
+        "anchor": [
+          78.97589874267578,
+          255.93301391601562,
+          118.55791473388672,
+          269.39300537109375
+        ],
+        "body_bbox": [
+          70.54,
+          255.93301391601562,
+          369.84,
+          291.9330139160156
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 291.9330139160156,
+        "physical_bottom_rule_y": 291.9330139160156,
+        "column": [
+          70.54,
+          369.84
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 4º ANO - 4º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF05LI07",
+      "page": 238,
+      "cache_item_id": "ca:to-dct-ef-linguagens:9f787cf1c92c2e37affb",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:93214c82368093ca8df3",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 62,
+      "physical_expected_characters": 131,
+      "extracted_sha256": "9cff78cc42235d60e43027df0e70bf25472c26c0b43bbef891869c0dcc4668c4",
+      "physical_expected_sha256": "aa7faafaf331f974037c41846feca291acb861ee05da513c32dc6397ea6d1ba0",
+      "extracted_head": "Explorar formação de frases por meio da variação de elementos.",
+      "extracted_tail": "Explorar formação de frases por meio da variação de elementos.",
+      "expected_tail": "Explorar formação de frases por meio da variação de elementos. (EF05LI08) Conhecer diferentes gêneros textuais (autênticos ou não).",
+      "extra_normalized_prefix": " (ef05li08) conhecer diferentes generos textuais (autenticos ou nao).",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          299.01971435546875,
+          119.69171905517578,
+          312.4797058105469
+        ],
+        "body_bbox": [
+          71.67,
+          299.01971435546875,
+          370.97,
+          323.01971435546875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 323.01971435546875,
+        "physical_bottom_rule_y": 323.01971435546875,
+        "column": [
+          71.67,
+          370.97
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 5º ANO - 1º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF05LI08",
+      "page": 238,
+      "cache_item_id": "ca:to-dct-ef-linguagens:754dbdd7529bbda727ca",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:f3e92811132b673c9d22",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 57,
+      "physical_expected_characters": 158,
+      "extracted_sha256": "41347ea8d4e37d326c8af01689ad3a2c3a911485722f25468e2ee0c342d49eb5",
+      "physical_expected_sha256": "18da8d8bd5543631557a8022780fbb5665a002bb95f32678ad378d196d7bf776",
+      "extracted_head": "Conhecer diferentes gêneros textuais (autênticos ou não).",
+      "extracted_tail": "Conhecer diferentes gêneros textuais (autênticos ou não).",
+      "expected_tail": "Conhecer diferentes gêneros textuais (autênticos ou não). (EF05LI09) Observar aspectos da vida cotidiana, a partir da perspectiva de pessoas de outros países.",
+      "extra_normalized_prefix": " (ef05li09) observar aspectos da vida cotidiana, a partir da perspectiva de pessoas de outros paises.",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          311.01971435546875,
+          119.69171905517578,
+          324.4797058105469
+        ],
+        "body_bbox": [
+          71.67,
+          311.01971435546875,
+          370.97,
+          347.01971435546875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 347.01971435546875,
+        "physical_bottom_rule_y": 347.01971435546875,
+        "column": [
+          71.67,
+          370.97
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 5º ANO - 1º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF05LI05",
+      "page": 239,
+      "cache_item_id": "ca:to-dct-ef-linguagens:97b2ce30eb9111a7a669",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:d6fb7b6518aca2002571",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 62,
+      "physical_expected_characters": 207,
+      "extracted_sha256": "f4536280f225f15fcf654230bfafe6b70359c1b0f7a7a266f3634f11e908699c",
+      "physical_expected_sha256": "92e8920e054e1705a774204f059989cec6d9418ba62500507eff0fcc8769de4c",
+      "extracted_head": "Escrever palavras e pequenas frases utilizando uma referência.",
+      "extracted_tail": "Escrever palavras e pequenas frases utilizando uma referência.",
+      "expected_tail": "Escrever palavras e pequenas frases utilizando uma referência. (EF04LI06) Identificar palavras em inglês, por meio da visualização de ima­ gens em jogos (bingo, jogo da velha, jogo da memória, entre outros).",
+      "extra_normalized_prefix": " (ef04li06) identificar palavras em ingles, por meio da visualizacao de imagens em jogos (bingo, jogo da velha, jogo da memoria, entre outros).",
+      "independent_boundary": {
+        "anchor": [
+          78.97589874267578,
+          263.01971435546875,
+          118.55791473388672,
+          276.4797058105469
+        ],
+        "body_bbox": [
+          70.54,
+          263.01971435546875,
+          369.84,
+          299.01971435546875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 299.01971435546875,
+        "physical_bottom_rule_y": 299.01971435546875,
+        "column": [
+          70.54,
+          369.84
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 5º ANO - 2º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF05LI07",
+      "page": 239,
+      "cache_item_id": "ca:to-dct-ef-linguagens:f5b9f5d6ddd29b3bcf84",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:49c1c714f8c01039f9d7",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 62,
+      "physical_expected_characters": 131,
+      "extracted_sha256": "9cff78cc42235d60e43027df0e70bf25472c26c0b43bbef891869c0dcc4668c4",
+      "physical_expected_sha256": "aa7faafaf331f974037c41846feca291acb861ee05da513c32dc6397ea6d1ba0",
+      "extracted_head": "Explorar formação de frases por meio da variação de elementos.",
+      "extracted_tail": "Explorar formação de frases por meio da variação de elementos.",
+      "expected_tail": "Explorar formação de frases por meio da variação de elementos. (EF05LI08) Conhecer diferentes gêneros textuais (autênticos ou não).",
+      "extra_normalized_prefix": " (ef05li08) conhecer diferentes generos textuais (autenticos ou nao).",
+      "independent_boundary": {
+        "anchor": [
+          78.97589874267578,
+          299.01971435546875,
+          118.55791473388672,
+          312.4797058105469
+        ],
+        "body_bbox": [
+          70.54,
+          299.01971435546875,
+          369.84,
+          323.01971435546875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 323.01971435546875,
+        "physical_bottom_rule_y": 323.01971435546875,
+        "column": [
+          70.54,
+          369.84
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 5º ANO - 2º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF05LI08",
+      "page": 239,
+      "cache_item_id": "ca:to-dct-ef-linguagens:0a588459efa715d35214",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:b58268950d9319898dd1",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 57,
+      "physical_expected_characters": 157,
+      "extracted_sha256": "41347ea8d4e37d326c8af01689ad3a2c3a911485722f25468e2ee0c342d49eb5",
+      "physical_expected_sha256": "4639356bff990be9fb34694da46cde3a758e3ee203dc08a3c3d232d713cef5a0",
+      "extracted_head": "Conhecer diferentes gêneros textuais (autênticos ou não).",
+      "extracted_tail": "Conhecer diferentes gêneros textuais (autênticos ou não).",
+      "expected_tail": "Conhecer diferentes gêneros textuais (autênticos ou não). (EF05LI09) Observar aspectos da vida cotidiana a partir da perspectiva de pessoas de outros países.",
+      "extra_normalized_prefix": " (ef05li09) observar aspectos da vida cotidiana a partir da perspectiva de pessoas de outros paises.",
+      "independent_boundary": {
+        "anchor": [
+          78.97589874267578,
+          311.01971435546875,
+          118.55791473388672,
+          324.4797058105469
+        ],
+        "body_bbox": [
+          70.54,
+          311.01971435546875,
+          369.84,
+          347.01971435546875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 347.01971435546875,
+        "physical_bottom_rule_y": 347.01971435546875,
+        "column": [
+          70.54,
+          369.84
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 5º ANO - 2º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF05LI05",
+      "page": 240,
+      "cache_item_id": "ca:to-dct-ef-linguagens:27e3231112738d2708dd",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:108768295045a4562c0a",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 63,
+      "physical_expected_characters": 208,
+      "extracted_sha256": "824aee028390f067cdf2d591662e54a795268838c288b861d8ed6238022ab12c",
+      "physical_expected_sha256": "014f5355d82266652c48aa7ae9cc986c255008361e6873f5040b9097883fad41",
+      "extracted_head": "Escrever palavras e pequenas frases, utilizando uma referência.",
+      "extracted_tail": "Escrever palavras e pequenas frases, utilizando uma referência.",
+      "expected_tail": "Escrever palavras e pequenas frases, utilizando uma referência. (EF04LI06) Identificar palavras em inglês, por meio da visualização de ima­ gens em jogos (bingo, jogo da velha, jogo da memória, entre outros).",
+      "extra_normalized_prefix": " (ef04li06) identificar palavras em ingles, por meio da visualizacao de imagens em jogos (bingo, jogo da velha, jogo da memoria, entre outros).",
+      "independent_boundary": {
+        "anchor": [
+          80.10970306396484,
+          257.35040283203125,
+          119.69171905517578,
+          270.8103942871094
+        ],
+        "body_bbox": [
+          71.67,
+          257.35040283203125,
+          370.97,
+          293.35040283203125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 293.35040283203125,
+        "physical_bottom_rule_y": 293.35040283203125,
+        "column": [
+          71.67,
+          370.97
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 5º ANO - 3º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF05LI05",
+      "page": 241,
+      "cache_item_id": "ca:to-dct-ef-linguagens:196f51424c5ab4c98e49",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:c77791587e91c7374965",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 63,
+      "physical_expected_characters": 204,
+      "extracted_sha256": "824aee028390f067cdf2d591662e54a795268838c288b861d8ed6238022ab12c",
+      "physical_expected_sha256": "5f7119007d79ae3b5bbf5c4a10a5de5ebc1c52101bfd0d7719f347c0f201f9d6",
+      "extracted_head": "Escrever palavras e pequenas frases, utilizando uma referência.",
+      "extracted_tail": "Escrever palavras e pequenas frases, utilizando uma referência.",
+      "expected_tail": "Escrever palavras e pequenas frases, utilizando uma referência. (EF04LI06) Reconhecer palavras em inglês por meio da visualização de imagens em jogos (bingo, jogo da velha, jogo da memória, entre outros).",
+      "extra_normalized_prefix": " (ef04li06) reconhecer palavras em ingles por meio da visualizacao de imagens em jogos (bingo, jogo da velha, jogo da memoria, entre outros).",
+      "independent_boundary": {
+        "anchor": [
+          80.10980224609375,
+          257.35040283203125,
+          119.69181823730469,
+          270.8103942871094
+        ],
+        "body_bbox": [
+          71.67,
+          257.35040283203125,
+          370.97,
+          293.35040283203125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 293.35040283203125,
+        "physical_bottom_rule_y": 293.35040283203125,
+        "column": [
+          71.67,
+          370.97
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 5º ANO - 4º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF05LI08",
+      "page": 241,
+      "cache_item_id": "ca:to-dct-ef-linguagens:836e229525e5ddd8d8cd",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:0ca479a6bb78cafcf922",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 57,
+      "physical_expected_characters": 158,
+      "extracted_sha256": "41347ea8d4e37d326c8af01689ad3a2c3a911485722f25468e2ee0c342d49eb5",
+      "physical_expected_sha256": "18da8d8bd5543631557a8022780fbb5665a002bb95f32678ad378d196d7bf776",
+      "extracted_head": "Conhecer diferentes gêneros textuais (autênticos ou não).",
+      "extracted_tail": "Conhecer diferentes gêneros textuais (autênticos ou não).",
+      "expected_tail": "Conhecer diferentes gêneros textuais (autênticos ou não). (EF05LI09) Observar aspectos da vida cotidiana, a partir da perspectiva de pessoas de outros países.",
+      "extra_normalized_prefix": " (ef05li09) observar aspectos da vida cotidiana, a partir da perspectiva de pessoas de outros paises.",
+      "independent_boundary": {
+        "anchor": [
+          80.10980224609375,
+          317.35040283203125,
+          119.69181823730469,
+          330.8103942871094
+        ],
+        "body_bbox": [
+          71.67,
+          317.35040283203125,
+          370.97,
+          353.35040283203125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 353.35040283203125,
+        "physical_bottom_rule_y": 353.35040283203125,
+        "column": [
+          71.67,
+          370.97
+        ]
+      },
+      "cached_header_hint": {
+        "0": "LÍNGUA INGLESA - 5º ANO - 4º BIMESTRE EIXO: ORALIDADE, PRÁTICAS DE LETRAMENTO, DIMENSÃO INTERCULTURAL HABILIDADES",
+        "1": "  OBJETOS DE CONHECIMENTO",
+        "2": "  ",
+        "3": "  SUGESTÕES METODOLÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF69AR15",
+      "page": 317,
+      "cache_item_id": "ca:to-dct-ef-linguagens:65de30228fc4a30f900b",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:08261af1b29a4c9990f3",
+      "evidence_locator": "table:0/row:3/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Cached header hint only, not accepted as independent whole-source reconciliation.",
+      "extracted_characters": 144,
+      "physical_expected_characters": 178,
+      "extracted_sha256": "907b0b614d9626a00716a9d5617578f54da98ffd8e74aef12293e05ac52695eb",
+      "physical_expected_sha256": "8d6d02fec542b1603ad87238ca64a503aff1437f44d95446d9adc20365d9d8e0",
+      "extracted_head": "Discutir as experiências pessoais e coletivas em dança vivenciadas na escola e em outros contextos, problematizando estereótipos e preconceitos.",
+      "extracted_tail": "Discutir as experiências pessoais e coletivas em dança vivenciadas na escola e em outros contextos, problematizando estereótipos e preconceitos.",
+      "expected_tail": "Discutir as experiências pessoais e cole­ tivas em dança vivenciadas na escola e em outros con­ textos, problematizando estereótipos e preconceitos. Curricular | Tocantins | Arte",
+      "extra_normalized_prefix": " curricular | tocantins | arte",
+      "independent_boundary": {
+        "anchor": [
+          156.70970153808594,
+          367.4020080566406,
+          200.0087127685547,
+          380.86199951171875
+        ],
+        "body_bbox": [
+          149.27,
+          367.4020080566406,
+          366.32,
+          665.6220092773438
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 665.6220092773438,
+        "column": [
+          149.27,
+          366.32
+        ]
+      },
+      "cached_header_hint": {
+        "0": "ARTE – 6º ANO - 4º BIMESTRE UNIDADES\nTEMÁTICAS ARTES VISUAIS",
+        "1": " HABILIDADES (EF69AR08) Diferenciar as categorias de artista, arte­\nsão, produtor cultural, curador, designer, entre outras,\nestabelecendo relações entre os profissionais do siste­\nma das artes visuais.",
+        "2": " OBJETOS DE CONHECIMENTO Sistemas da linguagem\nIdentificação da presença da arte rupestre,\ngrega, romana e indígena em produções de\nartistas plásticos, artistas de rua, artesãos,\nceramistas, entre outros, que desenvolvem\ntrabalhos na comunidade local e/ou regio­\nnal.",
+        "3": " SUGESTÕES PEDAGÓGICAS Essa habilidade amplia a compreensão das categorias do sistema das artes\nvisuais por meio da diferenciação entre os trabalhos realizados por cada pro­\nfissional envolvido, de acordo com as categorias em que cada um se insere.\nÉ possível propor aos estudantes a experiência de montar uma exposição na\nescola, perpassando a pesquisa com a seleção do tema, a curadoria na seleção\ndas obras que narram o tema proposto. O professor assume o papel de facili­\ntador e orientador, viabilizando as trocas de como foi a experiência em desen­\nvolver uma das profissões do sistema de arte, possibilitando a construção de\nconhecimento individual e em conjunto."
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF12EF06",
+      "page": 351,
+      "cache_item_id": "ca:to-dct-ef-linguagens:0af3700a85c31830bd16",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:e649afe787e769caac84",
+      "evidence_locator": "table:0/row:0/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Cached header hint only, not accepted as independent whole-source reconciliation.",
+      "extracted_characters": 147,
+      "physical_expected_characters": 168,
+      "extracted_sha256": "5de9df427b2658d80faa7b15e92b2048c2d72a53f19130b20477e3c25979d0ea",
+      "physical_expected_sha256": "4d8cc3c61bdc1bf4d844447f6bb1259ef05ed1df67ac671a13d56d73199cc2a0",
+      "extracted_head": "Discutir a importância da observação das normas e das regras dos esportes de marca para assegurar a integridade própria e dos demais participantes.",
+      "extracted_tail": "Discutir a importância da observação das normas e das regras dos esportes de marca para assegurar a integridade própria e dos demais participantes.",
+      "expected_tail": "Discutir a importância da observação das normas e das regras dos esportes de marca para assegurar a integridade própria e dos demais participantes. EDUCAÇÃO HABILIDADES",
+      "extra_normalized_prefix": " educacao habilidades",
+      "independent_boundary": {
+        "anchor": [
+          112.60970306396484,
+          126.58981323242188,
+          154.24371337890625,
+          140.04981994628906
+        ],
+        "body_bbox": [
+          105.17,
+          126.58981323242188,
+          429.19,
+          401.9248046875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 401.9248046875,
+        "physical_bottom_rule_y": 401.9248046875,
+        "column": [
+          105.17,
+          429.19
+        ]
+      },
+      "cached_header_hint": {
+        "0": "ESPORTES EDUCAÇÃO FÍSICA - 1º ANO - 3º BIMESTRE U T",
+        "1": "(EF12EF05) Experimentar e fruir, prezando pelo trabalho coletivo e pelo protago­\nnismo, a prática de esportes de marca, identificando os elementos comuns a esses\nesportes.\n(EF12EF06) Discutir a importância da observação das normas e das regras dos\nesportes de marca para assegurar a integridade própria e dos demais participantes.  HABILIDADES",
+        "2": "Esportes de marca.\nEx: atletismo (iniciação à corrida\ne ao salto em distância e altura),\nlevantamento de peso olímpico,\ndentre outros esportes de marca,\nrealizados de forma lúdica.  OBJETOS DE CONHECIMENTO",
+        "3": "Experimentar os esportes significa se apropriar de aprendizagens que\nsó podem ser acessadas pela experiência corporal, ou seja, devem ser\nefetivamente vivenciadas. O fruir se relaciona às aprendizagens que per­\nmitem ao estudante desfrutar da realização de uma determinada prática\ncorporal ou apreciá-la quando realizada por outros. O trabalho coleti­\nvo e o protagonismo são ações importantes presentes nos esportes. O\nprotagonismo prevalece nas modalidades individuais, como no salto em\ndistância e em altura, por exemplo, mas é importante também nos es­\nportes coletivos, como por exemplo nas provas de revezamento, visto\nque o estudante deve se empenhar em realizar a sua função para o bem\ncoletivo. O trabalho coletivo ocorre quando um grupo se dedica a reali­\nzar uma tarefa, que possibilita a troca de experiências, a ajuda mútua, a\naprendizagem de novas habilidades motoras e o compartilhamento de\ndecisões. Os estudantes devem identificar os elementos comuns aos es­\nportes de marca, que se caracterizam em comparar resultados registra­\ndos em segundos, metros ou quilos. A experimentação dos esportes de\nmarca e a identificação de suas características serão utilizadas em anos\nposteriores e conectam essa habilidade às habilidades (EF67EF03),\n(EF67EF04) e (EF67EF05).\nO atletismo pode ser desenvolvido nas escolas por meio de jogos e\nbrincadeiras voltados à iniciação do esporte, e o levantamento de peso\nusando materiais alternativos como bastões de madeira, garrafas pets,\ndentre outros.  SUGESTÕES PEDAGÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF12EF12",
+      "page": 351,
+      "cache_item_id": "ca:to-dct-ef-linguagens:9dcd2af72fff0f8aa596",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:6b1bc1f718199aae1052",
+      "evidence_locator": "table:0/row:4/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 165,
+      "physical_expected_characters": 220,
+      "extracted_sha256": "ff91031e280ff0c75dc863a03e7ed5078e3e6b1529e9665905f874023af9fa9e",
+      "physical_expected_sha256": "53b3ab3d228e564f7ade5ba84e06f40660841a530d02c716123e19e1f10efcfe",
+      "extracted_head": "Identificar os elementos constitutivos (ritmo, espaço, gestos) das danças do contexto comunitário, valorizando e respeitando as manifestações de diferentes cult",
+      "extracted_tail": "Identificar os elementos constitutivos (ritmo, espaço, gestos) das danças do contexto comunitário, valorizando e respeitando as manifestações de diferentes culturas.",
+      "expected_tail": "Identificar os elementos constitutivos (ritmo, espaço, gestos) das dan­ ças do contexto comunitário, valorizando e respeitando as manifestações de dife­ rentes culturas. Documento Curricular | Tocantins | Educação Física",
+      "extra_normalized_prefix": " documento curricular | tocantins | educacao fisica",
+      "independent_boundary": {
+        "anchor": [
+          112.60970306396484,
+          525.703125,
+          154.24371337890625,
+          539.1630859375
+        ],
+        "body_bbox": [
+          105.17,
+          525.703125,
+          429.19,
+          665.6220092773438
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 665.6220092773438,
+        "column": [
+          105.17,
+          429.19
+        ]
+      },
+      "cached_header_hint": {
+        "0": "ESPORTES EDUCAÇÃO FÍSICA - 1º ANO - 3º BIMESTRE U T",
+        "1": "(EF12EF05) Experimentar e fruir, prezando pelo trabalho coletivo e pelo protago­\nnismo, a prática de esportes de marca, identificando os elementos comuns a esses\nesportes.\n(EF12EF06) Discutir a importância da observação das normas e das regras dos\nesportes de marca para assegurar a integridade própria e dos demais participantes.  HABILIDADES",
+        "2": "Esportes de marca.\nEx: atletismo (iniciação à corrida\ne ao salto em distância e altura),\nlevantamento de peso olímpico,\ndentre outros esportes de marca,\nrealizados de forma lúdica.  OBJETOS DE CONHECIMENTO",
+        "3": "Experimentar os esportes significa se apropriar de aprendizagens que\nsó podem ser acessadas pela experiência corporal, ou seja, devem ser\nefetivamente vivenciadas. O fruir se relaciona às aprendizagens que per­\nmitem ao estudante desfrutar da realização de uma determinada prática\ncorporal ou apreciá-la quando realizada por outros. O trabalho coleti­\nvo e o protagonismo são ações importantes presentes nos esportes. O\nprotagonismo prevalece nas modalidades individuais, como no salto em\ndistância e em altura, por exemplo, mas é importante também nos es­\nportes coletivos, como por exemplo nas provas de revezamento, visto\nque o estudante deve se empenhar em realizar a sua função para o bem\ncoletivo. O trabalho coletivo ocorre quando um grupo se dedica a reali­\nzar uma tarefa, que possibilita a troca de experiências, a ajuda mútua, a\naprendizagem de novas habilidades motoras e o compartilhamento de\ndecisões. Os estudantes devem identificar os elementos comuns aos es­\nportes de marca, que se caracterizam em comparar resultados registra­\ndos em segundos, metros ou quilos. A experimentação dos esportes de\nmarca e a identificação de suas características serão utilizadas em anos\nposteriores e conectam essa habilidade às habilidades (EF67EF03),\n(EF67EF04) e (EF67EF05).\nO atletismo pode ser desenvolvido nas escolas por meio de jogos e\nbrincadeiras voltados à iniciação do esporte, e o levantamento de peso\nusando materiais alternativos como bastões de madeira, garrafas pets,\ndentre outros.  SUGESTÕES PEDAGÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF35EF05",
+      "page": 355,
+      "cache_item_id": "ca:to-dct-ef-linguagens:b6583dbfbd176abd2a18",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:74fde905cd5e9e3a6d2a",
+      "evidence_locator": "table:0/row:6/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 221,
+      "physical_expected_characters": 274,
+      "extracted_sha256": "982a2599c64312f82dceee1993cd354f7847cc0bce422501ca2045a32ae6cff5",
+      "physical_expected_sha256": "956bd93210be226bd042ffd162843055e4a468562e71e0bcf88fafae80550e55",
+      "extracted_head": "Experimentar e fruir diversos tipos de esportes de invasão, identificando seus elementos comuns e criando estratégias individuais e coletivas básicas para sua e",
+      "extracted_tail": "portes de invasão, identificando seus elementos comuns e criando estratégias individuais e coletivas básicas para sua execução, prezando pelo trabalho coletivo e pelo protagonismo.",
+      "expected_tail": "Experimentar e fruir diversos tipos de esportes de invasão, identifi­ cando seus elementos comuns e criando estratégias individuais e coletivas básicas para sua execução, prezando pelo trabalho coletivo e pelo protagonismo. Documento Curricular | Tocantins | Educação Física",
+      "extra_normalized_prefix": " documento curricular | tocantins | educacao fisica",
+      "independent_boundary": {
+        "anchor": [
+          112.60970306396484,
+          439.5621032714844,
+          154.24371337890625,
+          453.0220947265625
+        ],
+        "body_bbox": [
+          105.17,
+          439.5621032714844,
+          429.19,
+          665.6220092773438
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 665.6220092773438,
+        "column": [
+          105.17,
+          429.19
+        ]
+      },
+      "cached_header_hint": {
+        "0": "EDUCAÇÃO FÍSICA - 3º ANO - 1º BIMESTRE U T BRINCADEIRAS E JOGOS",
+        "1": " HABILIDADES (EF35EF01) Experimentar e fruir brincadeiras e jogos populares de matriz indí­\ngena e africana, e recriá-los, valorizando a importância desse patrimônio histórico\ncultural.\n(EF35EF02) Planejar e utilizar estratégias para possibilitar a participação segura\nde todos os estudantes em brincadeiras e jogos populares de matriz indígena e afri­\ncana.\n(EF35EF03) Descrever, por meio de múltiplas linguagens (corporal, oral, escrita,\naudiovisual), as brincadeiras e jogos de matriz indígena e africana, explicando suas\ncaracterísticas e a importância desse patrimônio histórico cultural na preservação\ndas diferentes culturas.\n(EF35EF04) Recriar, individual e coletivamente, e experimentar, na escola e fora\ndela, brincadeiras e jogos de matriz indígena e africana, e demais práticas corpo­\nrais tematizadas na escola, adequando-as aos espaços públicos disponíveis.",
+        "2": " OBJETOS DE CONHECIMENTO Brincadeiras e jogos de matriz in­\ndígena e africana.\nEx.: jogos de matriz indígena - cabo\nde guerra, arremesso de lança, cor­\nrida de varinha de bambu, corrida\nde tora, zarabatana, dentre outros.\nEx.: jogos de matriz africana - jogo\nda velha, mancala, bolinha de gude,\ndentre outros.",
+        "3": " SUGESTÕES PEDAGÓGICAS No 3º ano, nesse bimestre, optou-se pelas brincadeiras e jogos das\nmatrizes indígena e africana, devido à proximidade dessas comuni­\ndades com os estudantes do Tocantins, partindo assim do contexto\nmais familiar para o menos familiar.\nA escola tem a liberdade de escolher as brincadeiras e jogos que me­\nlhor se adéquem a sua realidade, oportunizando que os estudantes\nentrem em contato com as práticas corporais das matrizes indígena\ne africana, iniciando sempre por aquelas que eles já conhecem ou\nouviram falar, dando significado às práticas, partindo do contexto\ntocantinense."
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF35EF15",
+      "page": 357,
+      "cache_item_id": "ca:to-dct-ef-linguagens:f65e484b26f17e7e3371",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:237b4bcfae49cb5efd3e",
+      "evidence_locator": "table:0/row:3/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Cached header hint only, not accepted as independent whole-source reconciliation.",
+      "extracted_characters": 159,
+      "physical_expected_characters": 212,
+      "extracted_sha256": "ed0daddccab3f950384f23729f796253cba8d48e3dea91f352c1277bc8506184",
+      "physical_expected_sha256": "ce2c3490c965c6f0655d4f2b28aed20fc01ce72ee2516011d41c79cd4ea401c2",
+      "extracted_head": "Identificar as características das lutas do contexto comunitário, reconhecendo as diferenças entre lutas e brigas e entre lutas e as demais práticas corporais.",
+      "extracted_tail": "Identificar as características das lutas do contexto comunitário, reconhecendo as diferenças entre lutas e brigas e entre lutas e as demais práticas corporais.",
+      "expected_tail": "Identificar as características das lutas do contexto comunitário, re­ conhecendo as diferenças entre lutas e brigas e entre lutas e as demais práticas corporais. Documento Curricular | Tocantins | Educação Física",
+      "extra_normalized_prefix": " documento curricular | tocantins | educacao fisica",
+      "independent_boundary": {
+        "anchor": [
+          112.60970306396484,
+          448.1217041015625,
+          154.24371337890625,
+          461.5816955566406
+        ],
+        "body_bbox": [
+          105.17,
+          448.1217041015625,
+          429.19,
+          665.6220092773438
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 665.6220092773438,
+        "column": [
+          105.17,
+          429.19
+        ]
+      },
+      "cached_header_hint": {
+        "0": "EDUCAÇÃO FÍSICA - 3º ANO - 4º BIMESTRE U T GINÁSTICAS",
+        "1": " HABILIDADES (EF35EF07) Experimentar e fruir, de forma coletiva, combinações de diferentes\nelementos da ginástica geral (equilíbrios, saltos, giros, rotações, balanceios, cor­\nridas, caminhadas, ondulações, extensões, rolamentos, acrobacias, com, em e sem\nmateriais), propondo coreografias com diferentes temas do cotidiano.\n(EF35EF08) Planejar e utilizar estratégias para resolver desafios na execução de\nelementos básicos de apresentações coletivas de ginástica geral, reconhecendo as\npotencialidades e os limites do corpo e adotando procedimentos de segurança.",
+        "2": " OBJETOS DE CONHECIMENTO Ginástica geral: iniciação à coreo­\ngrafia (ritmo, harmonia, sincronia,\nformação, direção, trajetória, pla­\nnos, dentre outros).",
+        "3": " SUGESTÕES PEDAGÓGICAS Após os estudantes experimentarem nos anos anteriores os elemen­\ntos constitutivos da ginástica geral e as acrobacias, no 3º ano, já po­\ndem entrar em contato com a iniciação à coreografia.\nPor ser a proposição de coreografias um processo complexo, que\nprecisa de outras aprendizagens, experimentam-se elementos como\nritmo, harmonia, sincronia, direção, trajetória, planos, dentre outros,\npartindo de suas próprias experiências e dos movimentos que conse­\nguem realizar, para só depois propor combinações entre eles.\nDurante a vivência dos movimentos de rotação, saltos, acrobacias e\noutros, os estudantes podem reconhecer as regiões corporais e as es­\ntruturas envolvidas.\nEx: sequência de saltos que exigem principalmente os membros in­\nferiores e as articulações do tornozelo, joelho e quadril para amorte­\ncer o impacto na aterrissagem. Esse conhecimento faz relação com\no componente Ciências e possibilita a autonomia para adotar essas\nmedidas não só durante as aulas, mas também em outros momentos\ndo dia a dia."
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF35EF05",
+      "page": 359,
+      "cache_item_id": "ca:to-dct-ef-linguagens:fd95a2fa77958c6afa20",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:db81116a44452239dcca",
+      "evidence_locator": "table:0/row:0/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Cached header hint only, not accepted as independent whole-source reconciliation.",
+      "extracted_characters": 226,
+      "physical_expected_characters": 251,
+      "extracted_sha256": "ed87c189180aecfe8fe4a7356bd1aada0321331b346fff22c11c1f9d2f636fbf",
+      "physical_expected_sha256": "e9bc8459c4f3c35561f58fae3ffb36789f95aadfa0d1fa65259809765afd77d2",
+      "extracted_head": "Experimentar e fruir diversos tipos de esportes de campo e taco, identificando seus elementos comuns e criando estratégias individuais e coletivas básicas para ",
+      "extracted_tail": "s de campo e taco, identificando seus elementos comuns e criando estratégias individuais e coletivas básicas para sua execução, prezando pelo trabalho coletivo e pelo protagonismo.",
+      "expected_tail": "Experimentar e fruir diversos tipos de esportes de campo e taco, iden­ tificando seus elementos comuns e criando estratégias individuais e coletivas bási­ cas para sua execução, prezando pelo trabalho coletivo e pelo protagonismo. EDUCAÇÃO HABILIDADES",
+      "extra_normalized_prefix": " educacao habilidades",
+      "independent_boundary": {
+        "anchor": [
+          112.60970306396484,
+          94.24142456054688,
+          154.24371337890625,
+          107.70142364501953
+        ],
+        "body_bbox": [
+          105.17,
+          94.24142456054688,
+          429.19,
+          213.5762939453125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 213.5762939453125,
+        "physical_bottom_rule_y": 213.5762939453125,
+        "column": [
+          105.17,
+          429.19
+        ]
+      },
+      "cached_header_hint": {
+        "0": "ESPORTES EDUCAÇÃO FÍSICA - 4º ANO - 3º BIMESTRE U T",
+        "1": "(EF35EF05) Experimentar e fruir diversos tipos de esportes de campo e taco, iden­\ntificando seus elementos comuns e criando estratégias individuais e coletivas bási­\ncas para sua execução, prezando pelo trabalho coletivo e pelo protagonismo.  HABILIDADES",
+        "2": "Esportes de campo e taco.\nEx: beisebol, críquete, softbol, den­\ntre outros.  OBJETOS DE CONHECIMENTO",
+        "3": "Além de experimentar e fruir de esportes de campo e taco, os es­\ntudantes podem refletir sobre a importância do trabalho em equipe\npara se atingir o objetivo comum, valorizando as aprendizagens rela­\ncionadas à participação.\nEx: Criação de estratégias para tentar recuperar uma bola rebatida\nnos esportes de campo e taco, procurando distribuir melhor os joga­\ndores pelo espaço.  SUGESTÕES PEDAGÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF35EF02cTO",
+      "page": 359,
+      "cache_item_id": "ca:to-dct-ef-linguagens:815b15b7b7b4c815ed91",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:4f624fc9ac1a74ba9f9b",
+      "evidence_locator": "table:0/row:3/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 129,
+      "physical_expected_characters": 143,
+      "extracted_sha256": "ba6fd9edd06c4a6e46ad97fd2a498865e4e7cb7e104f089690ee89bd9df01bea",
+      "physical_expected_sha256": "0299979c4aea2455bee5100c1a9a752c49d5cb48299e7434ff6c17770d19cf68",
+      "extracted_head": "Planejar e utilizar estratégias para possibilitar a participação segura de todos os estudantes em brincadeiras e jogos populares.",
+      "extracted_tail": "Planejar e utilizar estratégias para possibilitar a participação segura de todos os estudantes em brincadeiras e jogos populares.",
+      "expected_tail": "Planejar e utilizar estratégias para possibilitar a participação se­ gura de todos os estudantes em brincadeiras e jogos populares. HABILIDADES",
+      "extra_normalized_prefix": " habilidades",
+      "independent_boundary": {
+        "anchor": [
+          112.60970306396484,
+          249.5762939453125,
+          170.2232208251953,
+          263.0362854003906
+        ],
+        "body_bbox": [
+          105.17,
+          249.5762939453125,
+          429.19,
+          375.0627136230469
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 375.0627136230469,
+        "physical_bottom_rule_y": 375.0627136230469,
+        "column": [
+          105.17,
+          429.19
+        ]
+      },
+      "cached_header_hint": {
+        "0": "ESPORTES EDUCAÇÃO FÍSICA - 4º ANO - 3º BIMESTRE U T",
+        "1": "(EF35EF05) Experimentar e fruir diversos tipos de esportes de campo e taco, iden­\ntificando seus elementos comuns e criando estratégias individuais e coletivas bási­\ncas para sua execução, prezando pelo trabalho coletivo e pelo protagonismo.  HABILIDADES",
+        "2": "Esportes de campo e taco.\nEx: beisebol, críquete, softbol, den­\ntre outros.  OBJETOS DE CONHECIMENTO",
+        "3": "Além de experimentar e fruir de esportes de campo e taco, os es­\ntudantes podem refletir sobre a importância do trabalho em equipe\npara se atingir o objetivo comum, valorizando as aprendizagens rela­\ncionadas à participação.\nEx: Criação de estratégias para tentar recuperar uma bola rebatida\nnos esportes de campo e taco, procurando distribuir melhor os joga­\ndores pelo espaço.  SUGESTÕES PEDAGÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF35EF12",
+      "page": 359,
+      "cache_item_id": "ca:to-dct-ef-linguagens:a83c7e41081bbe624c0e",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:765bf0ed82723229210d",
+      "evidence_locator": "table:0/row:5/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 163,
+      "physical_expected_characters": 216,
+      "extracted_sha256": "0257ff619306b25c0789b4fab36782ddeefe46a142e1b2892f558a29713d3cf6",
+      "physical_expected_sha256": "d8a22355841f3834ca09669be199d14f84d3e87c90420edd52c71c8ed93817e2",
+      "extracted_head": "Identificar situações de injustiça e preconceito geradas e/ou presentes no contexto das danças e demais práticas corporais e discutir alternativas para superá-l",
+      "extracted_tail": "Identificar situações de injustiça e preconceito geradas e/ou presentes no contexto das danças e demais práticas corporais e discutir alternativas para superá-las.",
+      "expected_tail": "Identificar situações de injustiça e preconceito geradas e/ou presen­ tes no contexto das danças e demais práticas corporais e discutir alternativas para superá-las. Documento Curricular | Tocantins | Educação Física",
+      "extra_normalized_prefix": " documento curricular | tocantins | educacao fisica",
+      "independent_boundary": {
+        "anchor": [
+          112.60970306396484,
+          459.0627136230469,
+          154.24371337890625,
+          472.522705078125
+        ],
+        "body_bbox": [
+          105.17,
+          459.0627136230469,
+          429.19,
+          665.6220092773438
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 665.6220092773438,
+        "column": [
+          105.17,
+          429.19
+        ]
+      },
+      "cached_header_hint": {
+        "0": "ESPORTES EDUCAÇÃO FÍSICA - 4º ANO - 3º BIMESTRE U T",
+        "1": "(EF35EF05) Experimentar e fruir diversos tipos de esportes de campo e taco, iden­\ntificando seus elementos comuns e criando estratégias individuais e coletivas bási­\ncas para sua execução, prezando pelo trabalho coletivo e pelo protagonismo.  HABILIDADES",
+        "2": "Esportes de campo e taco.\nEx: beisebol, críquete, softbol, den­\ntre outros.  OBJETOS DE CONHECIMENTO",
+        "3": "Além de experimentar e fruir de esportes de campo e taco, os es­\ntudantes podem refletir sobre a importância do trabalho em equipe\npara se atingir o objetivo comum, valorizando as aprendizagens rela­\ncionadas à participação.\nEx: Criação de estratégias para tentar recuperar uma bola rebatida\nnos esportes de campo e taco, procurando distribuir melhor os joga­\ndores pelo espaço.  SUGESTÕES PEDAGÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF35EF15",
+      "page": 360,
+      "cache_item_id": "ca:to-dct-ef-linguagens:a4ef6c54c7c91f12c3c1",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:addacfd904de52dd6b79",
+      "evidence_locator": "table:0/row:3/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Cached header hint only, not accepted as independent whole-source reconciliation.",
+      "extracted_characters": 214,
+      "physical_expected_characters": 235,
+      "extracted_sha256": "d3f64dd84e102ed9eb161b8166c7d27db80f9141f0e3e00e84222800d4de930a",
+      "physical_expected_sha256": "4290c4c152e579f64bd75cd2e7af18b59b6f45436f085f48f98c49d3d736b7fb",
+      "extracted_head": "Identificar as características das lutas presentes no contexto regional (Regiões do Tocantins e Região Norte do Brasil), reconhecendo as diferenças entre lutas ",
+      "extracted_tail": " lutas presentes no contexto regional (Regiões do Tocantins e Região Norte do Brasil), reconhecendo as diferenças entre lutas e brigas e entre lutas e as demais práticas corporais.",
+      "expected_tail": "Identificar as características das lutas presentes no contexto regional (Regiões do Tocantins e Região Norte do Brasil), reconhecendo as diferenças entre lutas e brigas e entre lutas e as demais práticas corporais. EDUCAÇÃO HABILIDADES",
+      "extra_normalized_prefix": " educacao habilidades",
+      "independent_boundary": {
+        "anchor": [
+          112.60970306396484,
+          369.5762939453125,
+          154.24371337890625,
+          383.0362854003906
+        ],
+        "body_bbox": [
+          105.17,
+          369.5762939453125,
+          429.19,
+          446.4632873535156
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 446.4632873535156,
+        "physical_bottom_rule_y": 446.4632873535156,
+        "column": [
+          105.17,
+          429.19
+        ]
+      },
+      "cached_header_hint": {
+        "0": "EDUCAÇÃO FÍSICA - 4º ANO - 4º BIMESTRE U T GINÁSTICAS",
+        "1": " HABILIDADES (EF35EF07) Experimentar e fruir, de forma coletiva, combinações de diferentes\nelementos da ginástica geral (equilíbrios, saltos, giros, rotações, balanceios, cor­\nridas, caminhadas, ondulações, extensões, rolamentos, acrobacias, com, em e sem\nmateriais), propondo coreografias com diferentes temas do cotidiano.\n(EF35EF08) Planejar e utilizar estratégias para resolver desafios na execução de\nelementos básicos de apresentações em pequenos grupos, reconhecendo as poten­\ncialidades e os limites do corpo e adotando procedimentos de segurança.",
+        "2": " OBJETOS DE CONHECIMENTO Ginástica geral: percepção de pos­\nsibilidades de movimentos indi­\nviduais e coreografias em peque­\nnos grupos: elementos básicos de\napresentações em pequenos gru­\npos, ritmo, harmonia, sincronia,\ndireção, trajetória, planos, dentre\noutros.",
+        "3": " SUGESTÕES PEDAGÓGICAS As coreografias de ginástica geral podem ser presenciadas em aber­\nturas de jogos olímpicos e torneios mundiais de futebol, o que possi­\nbilita que os estudantes possam apreciar e conhecer os elementos da\nginástica e as possibilidades de coreografias, por meio da televisão e\nda internet.\nÉ interessante que os estudantes observem que as coreografias\ncontam uma história. Sendo assim, é necessário que os estudantes\npesquisem sobre elementos da cultura local, como lendas, mitos ou\noutros do folclore, propondo sequências de movimentos ginásticos\nque representem esses eventos, criando também temas mais próximos\nda realidade. Nesse processo, o trabalho interdisciplinar acontece com\nArte (música, dança e seus elementos) e Matemática (formações core­\nográficas: direção, trajetória e planos).\nAs coreografias partem dos movimentos de ginástica simples para os\nmais complexos, que exigem mais das estruturas corporais."
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF35EF06",
+      "page": 361,
+      "cache_item_id": "ca:to-dct-ef-linguagens:88f0a5a98a4e1ce16a60",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:1dca1ad36fa3012a89ae",
+      "evidence_locator": "table:0/row:3/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 172,
+      "physical_expected_characters": 195,
+      "extracted_sha256": "82f16b1690f1f3a50e962678988e657a1a5137544397ac366f73283f981a846c",
+      "physical_expected_sha256": "c0fba194515e6da788223160b9bc65bfd3935d08b3ad17237e195ed1ee769427",
+      "extracted_head": "Diferenciar os conceitos de jogo e esporte, identificando as características que os constituem na contemporaneidade e suas manifestações (profissional e comunit",
+      "extracted_tail": "Diferenciar os conceitos de jogo e esporte, identificando as características que os constituem na contemporaneidade e suas manifestações (profissional e comunitária/lazer).",
+      "expected_tail": "Diferenciar os conceitos de jogo e esporte, identificando as caracterís­ ticas que os constituem na contemporaneidade e suas manifestações (profissional e comunitária/lazer). EDUCAÇÃO HABILIDADES",
+      "extra_normalized_prefix": " educacao habilidades",
+      "independent_boundary": {
+        "anchor": [
+          112.60970306396484,
+          285.5762939453125,
+          154.24371337890625,
+          299.0362854003906
+        ],
+        "body_bbox": [
+          105.17,
+          285.5762939453125,
+          429.19,
+          419.9696044921875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 419.9696044921875,
+        "physical_bottom_rule_y": 419.9696044921875,
+        "column": [
+          105.17,
+          429.19
+        ]
+      },
+      "cached_header_hint": {
+        "0": "EDUCAÇÃO FÍSICA - 5º ANO - 2º BIMESTRE U T BRINCADEIRS E JOGOS",
+        "1": " HABILIDADES (EF35EF01dTO) Experimentar e fruir brincadeiras e jogos de regras, valorizando\na inclusão de todos.\n(EF35EF02dTO) Planejar e utilizar estratégias para possibilitar a participação\nsegura de todos os estudantes em brincadeiras e jogos de regras, primando pela\ninclusão de todos.\n(EF35EF04dTO) Recriar, individual e coletivamente, e experimentar, na escola e\nfora dela, brincadeiras e jogos de regras e demais práticas corporais tematizadas\nna escola, adequando-as aos espaços públicos disponíveis e primando pela inclusão\nde todos.",
+        "2": " OBJETOS DE CONHECIMENTO Jogos de regras.",
+        "3": " SUGESTÕES PEDAGÓGICAS No 4º ano, os jogos de regras vêm contribuir para a compreensão da\nvida em sociedade e suas regras estabelecidas, levando à reflexão e\nplanejamento de estratégias e novas regras para a participação de\ntodos durante a prática. Podendo as habilidades motoras serem mais\ncomplexas nessa fase."
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF35EF02eTO",
+      "page": 361,
+      "cache_item_id": "ca:to-dct-ef-linguagens:357593ce9bd5670a824c",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:1bae38a035b3380e57dc",
+      "evidence_locator": "table:0/row:6/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 142,
+      "physical_expected_characters": 195,
+      "extracted_sha256": "8949f08230960bbd28de013ab914ce610572550f7ce1f65ebba27a87318993a4",
+      "physical_expected_sha256": "cade673b2cbd688679d5652cd3be7180c087f66781c5d0aaf988921432e24de3",
+      "extracted_head": "Planejar e utilizar estratégias para possibilitar a participação segura de todos os estudantes em brincadeiras e jogos populares do Tocantins.",
+      "extracted_tail": "Planejar e utilizar estratégias para possibilitar a participação segura de todos os estudantes em brincadeiras e jogos populares do Tocantins.",
+      "expected_tail": "Planejar e utilizar estratégias para possibilitar a participação se­ gura de todos os estudantes em brincadeiras e jogos populares do Tocantins. Documento Curricular | Tocantins | Educação Física",
+      "extra_normalized_prefix": " documento curricular | tocantins | educacao fisica",
+      "independent_boundary": {
+        "anchor": [
+          112.60970306396484,
+          455.9696044921875,
+          170.78213500976562,
+          469.4295959472656
+        ],
+        "body_bbox": [
+          105.17,
+          455.9696044921875,
+          429.19,
+          665.6220092773438
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 665.6220092773438,
+        "column": [
+          105.17,
+          429.19
+        ]
+      },
+      "cached_header_hint": {
+        "0": "EDUCAÇÃO FÍSICA - 5º ANO - 2º BIMESTRE U T BRINCADEIRS E JOGOS",
+        "1": " HABILIDADES (EF35EF01dTO) Experimentar e fruir brincadeiras e jogos de regras, valorizando\na inclusão de todos.\n(EF35EF02dTO) Planejar e utilizar estratégias para possibilitar a participação\nsegura de todos os estudantes em brincadeiras e jogos de regras, primando pela\ninclusão de todos.\n(EF35EF04dTO) Recriar, individual e coletivamente, e experimentar, na escola e\nfora dela, brincadeiras e jogos de regras e demais práticas corporais tematizadas\nna escola, adequando-as aos espaços públicos disponíveis e primando pela inclusão\nde todos.",
+        "2": " OBJETOS DE CONHECIMENTO Jogos de regras.",
+        "3": " SUGESTÕES PEDAGÓGICAS No 4º ano, os jogos de regras vêm contribuir para a compreensão da\nvida em sociedade e suas regras estabelecidas, levando à reflexão e\nplanejamento de estratégias e novas regras para a participação de\ntodos durante a prática. Podendo as habilidades motoras serem mais\ncomplexas nessa fase."
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "to-dct-ef-linguagens",
+      "code": "EF35EF12",
+      "page": 362,
+      "cache_item_id": "ca:to-dct-ef-linguagens:ce09a89c8a1472b602bd",
+      "finalized_id_if_retained": "ca:to-dct-ef-linguagens:4dcdfc61b64cd66cd0a5",
+      "evidence_locator": "table:0/row:0/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Cached header hint only, not accepted as independent whole-source reconciliation.",
+      "extracted_characters": 163,
+      "physical_expected_characters": 186,
+      "extracted_sha256": "35365d5c46bbbbdd4abc5936895f139c43e03141efa5adb3930b99725c3eb183",
+      "physical_expected_sha256": "3d7f959e96ca8d54da39a2ffc7233daa5f70784972c082aaa80e4895036f73c7",
+      "extracted_head": "Identificar situações de injustiça e preconceito gerados e/ou presentes no contexto das danças e demais práticas corporais e discutir alternativas para superá-l",
+      "extracted_tail": "Identificar situações de injustiça e preconceito gerados e/ou presentes no contexto das danças e demais práticas corporais e discutir alternativas para superá-las.",
+      "expected_tail": "Identificar situações de injustiça e preconceito gerados e/ou presen­ tes no contexto das danças e demais práticas corporais e discutir alternativas para superá-las. EDUCAÇÃO HABILIDADES",
+      "extra_normalized_prefix": " educacao habilidades",
+      "independent_boundary": {
+        "anchor": [
+          112.60970306396484,
+          178.24139404296875,
+          154.24371337890625,
+          191.70140075683594
+        ],
+        "body_bbox": [
+          105.17,
+          178.24139404296875,
+          429.19,
+          257.95941162109375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 257.95941162109375,
+        "physical_bottom_rule_y": 257.95941162109375,
+        "column": [
+          105.17,
+          429.19
+        ]
+      },
+      "cached_header_hint": {
+        "0": "DANÇAS EDUCAÇÃO FÍSICA - 5º ANO - 4º BIMESTRE U T",
+        "1": "(EF35EF09) Experimentar, recriar e fruir danças populares do mundo, valorizando\ne respeitando os diferentes sentidos e significados dessas danças em suas culturas\nde origem.\n(EF35EF10) Comparar e identificar os elementos constitutivos comuns e diferen­\ntes (ritmo, espaço, gestos) em danças populares do mundo.\n(EF35EF11) Formular e utilizar estratégias para a execução de elementos constitu­\ntivos das danças populares do mundo.\n(EF35EF12) Identificar situações de injustiça e preconceito gerados e/ou presen­\ntes no contexto das danças e demais práticas corporais e discutir alternativas para\nsuperá-las.  HABILIDADES",
+        "2": "Danças populares do mundo.\nEx: jazz, balé, dança contemporâ­\nnea, dentre outras.  OBJETOS DE CONHECIMENTO",
+        "3": "Depois de entrarem em contato com as danças do contexto comuni­\ntário, regional e do Brasil, agora os estudantes já podem identificar,\nexperimentar e comparar as danças populares do mundo com as dos\nanos anteriores, observando os significados e intenções dessas prá­\nticas dependendo dos ambientes onde ocorrem (lazer, apresentação,\nritual, celebração) de forma interdisciplinar com Geografia, no que\nse refere a espaços e com História, no que diz respeito às origens das\ndanças.  SUGESTÕES PEDAGÓGICAS"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    }
+  ],
+  "reader_failures": [],
+  "limits": [
+    "Ruled native columns only; unavailable geometry/anchors remain unverified, not absent.",
+    "Strict physical prefix candidates need role/documentary review. This is not SourceWhole reconciliation."
+  ],
+  "cache_sha256": "f836e04fcdede262b89b2a42bbf832e38ee4a90f5a217a2f9cb11dcd8306091e",
+  "cache_meta": {
+    "source_id": "to-dct-ef-linguagens",
+    "sha256": "7fe5f562674ec7f73572fd5807d75a5c038ec1c2e96c6f3dfc3126eae82a1db0",
+    "extraction_revision": "page-cell-v1.5.0",
+    "page_count": 396,
+    "document_page_count": 396,
+    "items": 1978,
+    "pages": 396,
+    "quality": {
+      "documentary_page_sections_not_typed_as_learning": 389,
+      "meaning": "Execution, code transcription and primary-document reconciliation are separate; OCR execution completion is not glyph or pedagogical verification. An OCR code-like token does not certify an official printed code.",
+      "ocr_execution_pending": false,
+      "ocr_transcription_review_pending": true,
+      "unassigned_ocr_code_tokens": 0,
+      "unresolved_ocr_code_like_records": 0,
+      "unresolved_printed_code_records": 0
+    },
+    "parser_fingerprint": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+  },
+  "primary_page_count": 396,
+  "cache_unchanged_after_audit": true
+}

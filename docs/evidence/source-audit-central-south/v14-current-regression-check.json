@@ -1,0 +1,103 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:data_central_south",
+  "checked_at": "2026-10-28T13:56:41.032298+00:00",
+  "scope": "Regression observations only; independent original code anchors, not full source reconciliation",
+  "sources": {
+    "mt-drc-ei-primario-2018": {
+      "cache_sha256": "e4a7b24ef8e470593ec2eda23b5eabb72e952085277c9cc53d8ad4e12ce3dd94",
+      "artifact_sha256": "2e09792783f770cb97325ebf3acc92ad672988a168519de9d84bdd5ac20eb30c",
+      "extracted_at": "2026-10-28T13:49:32.826249+00:00",
+      "expected_distinct_codes": 93,
+      "actual_distinct_codes": 93,
+      "missing": {}
+    },
+    "rs-rcg-ei-2018": {
+      "cache_sha256": "711457821136725bb41aa7d3bf2927642b52669d3c911c3b416a9a7edcf9312c",
+      "artifact_sha256": "8396c57829603eb037b1a72bebde39662a6db137ad90ac5a0abfbafd4fe091a2",
+      "extracted_at": "2026-10-28T04:42:13.420233+00:00",
+      "page": 88,
+      "independent_expected_codes": [
+        "EI01EO01",
+        "EI01EO01RS-01",
+        "EI01EO01RS-02",
+        "EI01EO01RS-03",
+        "EI01EO02",
+        "EI01EO02RS-01",
+        "EI01EO02RS-02",
+        "EI01EO03",
+        "EI01EO03RS-01"
+      ],
+      "actual_items": [
+        {
+          "code": "EI01EO01",
+          "text": "Perceber que suas ações têm efeitos nas outras crianças e nos adultos."
+        },
+        {
+          "code": "EI01EO01RS-01",
+          "text": "Mostrar-se ativa, sem a intervenção constante de um adulto."
+        },
+        {
+          "code": "EI01EO01RS-02",
+          "text": "Envolver-se em jogos simples de dar e receber, lançar objetos no chão e manifestar-se ao recebê- los de volta."
+        },
+        {
+          "code": "EI01EO01RS-03",
+          "text": "Demonstrar interesse em seguir algumas normas em atividades da rotina, participando em contextos de convívio social, como brincar ao lado de outras crianças imitando ou mostrando suas ações."
+        },
+        {
+          "code": "EI01EO01RS-01",
+          "text": "Mostrar-se ativa, sem a intervenção"
+        },
+        {
+          "code": "EI01EO01RS-02",
+          "text": "Envolver-se em jogos simples de dar e"
+        },
+        {
+          "code": "EI01EO01RS-03",
+          "text": "Demonstrar interesse em seguir algumas"
+        },
+        {
+          "code": "EI01EO02",
+          "text": "Perceber as possibilidades e os limites de seu corpo nas brincadeiras e interações das quais participa."
+        },
+        {
+          "code": "EI01EO02RS-01",
+          "text": "Desenvolver a linguagem corporal, a atenção e a curiosidade por tudo que a rodeia."
+        },
+        {
+          "code": "EI01EO02RS-02",
+          "text": "Interessar-se por experimentar novos movimentos ao explorar objetos ou brinquedos conhecidos, como segurar objetos nas mãos e levá-los à altura dos olhos na busca por explorá-los, subir em objetos volumosos, lançar objetos em determinada direção."
+        },
+        {
+          "code": "EI01EO02RS-01",
+          "text": "Desenvolver a linguagem corporal, a"
+        },
+        {
+          "code": "EI01EO02RS-02",
+          "text": "Interessar-se por experimentar novos"
+        },
+        {
+          "code": "EI01EO03",
+          "text": "Interagir com crianças da mesma faixa etária e adultos ao explorar espaços, materiais, objetos, brinquedos."
+        },
+        {
+          "code": "EI01EO03",
+          "text": "Interagir com crianças da"
+        }
+      ]
+    },
+    "ms-cr-eief-v110": {
+      "cache_sha256": "e7f2c317e78305f0503880fefb1b3d285678022c2f73b2ab9d0c3101f668fd21",
+      "artifact_sha256": "176d738032cba747e02e1ce2c73bb1a7e8d2d0e1d7f875340a2215e599e37271",
+      "extracted_at": "2026-10-28T04:58:53.212959+00:00",
+      "page": 155,
+      "independent_expected_codes": [
+        "MS.EF02LP10.s.10",
+        "MS.EF02LP11.s.11",
+        "MS.EF02LP12.s.12"
+      ],
+      "actual_items": []
+    }
+  }
+}

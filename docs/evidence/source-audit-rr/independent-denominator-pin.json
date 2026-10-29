@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-28T17:22:25.769777+00:00",
+  "source_id": "rr-dcr-ei-ef",
+  "artifact_sha256": "e95761f67d1733660b9b9bd2acee10707ed07301249c322cbf39fd86a3453112",
+  "census_path": "docs/evidence/source-audit-rr/independent-source-census.json",
+  "census_sha256": "52e215f3e67ead3c6e2aba1da1c28e88a981312d745d8491b134301f4c9205d0",
+  "census_script_sha256": "3666e4bc30c571c8de55bfd9bb59de937ef6f8f9434440668cf38c538d1ed6be",
+  "candidate_opened": false,
+  "primary_native_code_multiset_equals_physical_objective_cells": true,
+  "counts": {
+    "organizers": 15,
+    "physical_rows": 109,
+    "objective_anchors": 90,
+    "unique_objective_codes": 89,
+    "cells_by_role": {
+      "direitos": 109,
+      "faixa_etaria": 109,
+      "objetivo": 109,
+      "experiencias": 109,
+      "abordagens": 109,
+      "orientacao": 109
+    },
+    "nonempty_cells_by_role": {
+      "direitos": 89,
+      "faixa_etaria": 89,
+      "objetivo": 91,
+      "experiencias": 60,
+      "abordagens": 109,
+      "orientacao": 90
+    },
+    "no_new_objective_rows": 19
+  },
+  "corrections_before_freeze": [
+    "Physical CG/TS headers have7 finder columns due an empty right sliver; six labelled roles were recovered from actual header cells, never from code or expected counts."
+  ]
+}

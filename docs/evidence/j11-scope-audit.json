@@ -1,0 +1,91 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex-independent-auditor",
+  "generated_at": "2026-10-28T14:08:39.683Z",
+  "source_tree_sha256": "da7fd5a9bb259f394dc2642e9ac4e7e2e0ec89e4adfac239535cb7a1301b41fc",
+  "requirements": [
+    "ING-02",
+    "DAT-04",
+    "ADM-02",
+    "SEG-02",
+    "QA-02/J11",
+    "OPS-04",
+    "ACE-03"
+  ],
+  "finding": {
+    "priority": "P1",
+    "title": "Source-only ingestion can replace the global default with an unrelated-cache-dependent partial candidate",
+    "status": "confirmed_by_static_code_path; destructive promotion not observed",
+    "mechanism": [
+      "pipeline.ingest builds items from selected extraction plus whichever caches match current runtime/config; no pinned published base is merged",
+      "validateIngestCandidate checks internal integrity and counts but does not compare scope or unrelated records with current publication",
+      "publishIngestCandidate calls setDefaultPublication on any technically valid ingested candidate",
+      "QA workflow checks source parse, resume/idempotence and old-history visibility; these do not prove unrelated source retention in the new default"
+    ],
+    "references": [
+      "pipeline/ingest.py:ingest",
+      "src/admin/candidates.ts:validateIngestCandidate",
+      "src/admin/candidates.ts:publishIngestCandidate",
+      "scripts/qa-ingestion-admin.ts"
+    ],
+    "effect": "A partial candidate may be structurally valid and explicitly labelled incomplete, yet publishing it as default can remove other sources from unpinned public queries. Prior snapshot remains immutable and recoverable."
+  },
+  "observed_read_only": {
+    "current_default": "ca-77fb8076598b567e1ba3",
+    "baseline": {
+      "id": "ca-77fb8076598b567e1ba3",
+      "item_count": 38322,
+      "source_count": 247,
+      "relation_count": 13007,
+      "sources_with_items": 135
+    },
+    "target_source": "pe-historia-pernambuco-2026",
+    "target": {
+      "source_metadata_rows": 1,
+      "item_count": 8
+    },
+    "jobs": [
+      {
+        "id": "ba36e7da-6bd6-4762-9af4-0b2c4a84b135",
+        "status": "paused",
+        "source": "pe-historia-pernambuco-2026",
+        "cached_only": "true",
+        "event": "fatal",
+        "progress_error": "No valid extraction cache available; existing candidate/publication left untouched",
+        "result_publication": null
+      },
+      {
+        "id": "dc2b475a-72e1-4e03-a960-f78187c8caee",
+        "status": "paused",
+        "source": "pe-historia-pernambuco-2026",
+        "cached_only": "true",
+        "event": "fatal",
+        "progress_error": "Unresolved NUL in record ca:rn-documento-ef-2018:1c98e4abda01b69b1481",
+        "result_publication": null
+      },
+      {
+        "id": "2768a007-fa84-4919-955d-64945b593c1c",
+        "status": "paused",
+        "source": "pe-historia-pernambuco-2026",
+        "cached_only": "true",
+        "event": "fatal",
+        "progress_error": "Uncoded adapter text/code/page verification failed: pr-referencial-eief-2025 pr-objective-column:x3575/y2647",
+        "result_publication": null
+      }
+    ],
+    "default_changed_by_auditor": false,
+    "candidate_promoted_by_auditor": false
+  },
+  "acceptance": {
+    "mechanical_scope": "Can demonstrate genuine parse + pause/restart/resume + private preparation + explicit version exposure + rollback",
+    "global_update_scope": "Not demonstrated by a partial-source candidate; remains pending",
+    "gate": "ingestionScopeErrors rejects partial-candidate or missing preservation evidence independently of passed=true"
+  },
+  "recommendation": {
+    "source_update": "Pin base publication at enqueue, merge only selected source revision and dependent links/ancestors into the immutable base, preserve all unrelated records and coverage",
+    "full_rebuild": "Alternatively require a complete validated prepared artifact with explicit scope reconciliation against baseline/inventory before default promotion",
+    "publication": "Show exact additions/changes/removals and disappeared source/UF/stage/components before decision; atomically compare expected default/base when publishing",
+    "verification": "Compare canonical hashes and counts for every untargeted source, all relationships not touching target, and unaffected coverage. Verify the actual publication event replaced the pinned base. Keep prior-publication immutability/history checks as a separate proof."
+  },
+  "national_release_asserted": false
+}

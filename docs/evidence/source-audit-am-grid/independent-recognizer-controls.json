@@ -1,0 +1,85 @@
+{
+  "passed": false,
+  "scope": "One primary glyph transcription visually confirmed plus synthetic blank and real source object-column negatives. The synthetic control is never corpus data.",
+  "tests": [
+    {
+      "name": "primary_EI01EO01",
+      "input_path": "var/private-evidence/source-audit-am-grid/ei01eo01-code.png",
+      "input_file_sha256": "d7b4ad2b59929d9eb94c23b64ac81eb633ad57f52e5df0a2ee6a0c89fcccd846",
+      "recognizer_output": {
+        "engine": "Apple Vision VNRecognizeTextRequest",
+        "framework_version": "9.5.4",
+        "language": "en-US",
+        "languageCorrection": false,
+        "operating_system": "Version 26.6.2 (Build 25G83)",
+        "results": [
+          {
+            "bbox": [
+              -0.0012158103401973945,
+              0.1302186277379953,
+              0.9941671702487409,
+              0.7395627498626709
+            ],
+            "candidates": [
+              {
+                "confidence": 1,
+                "text": "(E101EO01)"
+              }
+            ]
+          }
+        ],
+        "revision": 3
+      },
+      "passed": false,
+      "candidate_or_dictionary_supplied": false
+    },
+    {
+      "name": "synthetic_blank_negative_only",
+      "input_path": "var/private-evidence/source-audit-am-grid/negative-blank-code-control.png",
+      "input_file_sha256": "8ee6bb8ac8b92540f8f09da0cb55f3025cfb12bdd8e57f17f740f094da236188",
+      "recognizer_output": {
+        "engine": "Apple Vision VNRecognizeTextRequest",
+        "framework_version": "9.5.4",
+        "language": "en-US",
+        "languageCorrection": false,
+        "operating_system": "Version 26.6.2 (Build 25G83)",
+        "results": [],
+        "revision": 3
+      },
+      "passed": true,
+      "candidate_or_dictionary_supplied": false
+    },
+    {
+      "name": "primary_object_column_negative",
+      "input_path": "var/private-evidence/source-audit-am-grid/negative-original-object-column.png",
+      "input_file_sha256": "379578ffea4c11f899d9fe824ca07089e7f7b04adeff761f913095ac076c45b6",
+      "recognizer_output": {
+        "engine": "Apple Vision VNRecognizeTextRequest",
+        "framework_version": "9.5.4",
+        "language": "en-US",
+        "languageCorrection": false,
+        "operating_system": "Version 26.6.2 (Build 25G83)",
+        "results": [
+          {
+            "bbox": [
+              0.056521734826087,
+              0.6190476157142858,
+              0.8304347826086956,
+              0.33333333333333337
+            ],
+            "candidates": [
+              {
+                "confidence": 1,
+                "text": "Relação entre textos."
+              }
+            ]
+          }
+        ],
+        "revision": 3
+      },
+      "passed": true,
+      "candidate_or_dictionary_supplied": false
+    }
+  ],
+  "canonical_publication_modified": false
+}

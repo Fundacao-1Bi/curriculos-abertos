@@ -1,0 +1,51 @@
+{
+  "actor_type": "automated",
+  "source_slot_denominator": 2629,
+  "pages": 1038,
+  "reviewed_slots": 2629,
+  "unreviewed_slots": 0,
+  "visual_statuses": {
+    "confirmed_primary_code_only": 2628,
+    "not_a_code_in_this_crop": 1
+  },
+  "emitted_code_only_proposals": 2628,
+  "primary_crops_replayed": 2629,
+  "replay_is_new_code_reading": false,
+  "primary_replay_method": "Original embedded image byte SHA, native RGB crop pixels, orthogonal rotation, PNG pixels and PDF transform; no renderer or OCR.",
+  "literal_review_method": "Explicit automated visual reading records, not inferred by this mechanical verifier.",
+  "negative_controls": {
+    "mutated_literal_rejected": true,
+    "body_verified_claim_rejected": true,
+    "inferred_position_rejected": true,
+    "unconfirmed_slot_cannot_emit": true,
+    "shifted_primary_crop_rejected": true
+  },
+  "manifest_count": 55,
+  "output_pins": [
+    {
+      "path": "data/manifests/uncoded/am-primary-code-references-ef-af.json",
+      "sha256": "25a640a5de81d6bac15c35db20f679e239705ef0353574682db244b0bbb644b8",
+      "items": 1202
+    },
+    {
+      "path": "data/manifests/uncoded/am-primary-code-references-ef-ai.json",
+      "sha256": "a24e5483f0f339f52fa79f14e87acf4fad9621395487415a225f0b5c1b062d95",
+      "items": 1017
+    },
+    {
+      "path": "data/manifests/uncoded/am-primary-code-references-ei.json",
+      "sha256": "8c4c957361483d556039860d27cb252655fdb031ddaf78b6ec1f00b3049fea0b",
+      "items": 152
+    },
+    {
+      "path": "data/manifests/uncoded/am-primary-code-references-em.json",
+      "sha256": "1061efc1adc70fb7670f008a2859e3791a2a5a4d861f9bcee3c3bd11d55f4062",
+      "items": 257
+    }
+  ],
+  "ledger_sha256": "3666f1af298cb5a64a5d6ef3c00a6de58c31ce5af9e8cd0c31e90110d5b3afcf",
+  "reviews_sha256": "0c81dec5f3dbb30c79eefc4af80ce3f3317354889b73a2b5973b9fcd60746979",
+  "source_binding_or_core_modified": false,
+  "body_or_source_completeness_certified": false,
+  "elapsed_seconds": 59.48
+}

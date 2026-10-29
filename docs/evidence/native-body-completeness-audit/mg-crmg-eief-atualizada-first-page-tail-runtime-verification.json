@@ -1,0 +1,26 @@
+{
+  "source_id": "mg-crmg-eief-atualizada",
+  "source_sha256": "792857369c0c80dd87fff092137053e7a5cbed1c61fcbbd6caa6efbc072154ea",
+  "receipt_path": "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-body-diff.json",
+  "receipt_sha256": "10d8e25aa1e87a2863f3606528b5a1efe7428140c5f832cc8157d49f418d7d7b",
+  "counts": {
+    "records_considered": 1826,
+    "no_generic_strict_bounds_special_case": 12,
+    "eligible_cell_end_to_next_literal_code_intervals": 1813,
+    "empty_contiguous_cells": 1296,
+    "unproved_contiguous_vertical_scope": 524,
+    "body_already_closed_before_strict_cell_end": 1
+  },
+  "findings": [],
+  "negative_role_exclusions": [],
+  "unclassified_primary_labels_outside_repair_set": [],
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:body-runtime-verifier",
+  "whole_source_reconciled": false,
+  "uf_ready": false,
+  "limits": [
+    "Diagnostic scope: only first-page records whose independently recorded body end equals the strict-cell end.",
+    "Actual codes in both body and adjacent code column stop the scope, including mentions; unfamiliar namespaces are lexical boundaries, not automatic definitions. Zero findings is not proof of whole-Source completeness.",
+    "Unavailable/non-contiguous rulers remain unverified; no verb or sentence-shape boundary heuristic is used."
+  ]
+}

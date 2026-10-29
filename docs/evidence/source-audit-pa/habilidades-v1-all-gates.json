@@ -1,0 +1,66 @@
+{
+  "source_id": "pa-dcepa-ei-ef",
+  "artifact_sha256": "6b101a029e7fc40b10feb79969309251337eb01fc2491c9e0b38563094fa8ec5",
+  "additive_sha256": "2ecc8449b8723bbc56264aa3eda770f8924bea778e79e2a9cbe762e6d06667ca",
+  "combined_sha256": "7294cebd0c8cd3008c7f9498312cd66268843aeabcbd94c4a158651cd7de9ed6",
+  "primary_definitions": 2055,
+  "native_fragment_checks": {
+    "checked": 2141,
+    "passed": 2141,
+    "source_words_checked": 66088
+  },
+  "physical_source_cell_partition": {
+    "checked": 2117,
+    "passed": 2117
+  },
+  "literal_code_occurrences": 2055,
+  "frozen1972_prefix_unchanged": true,
+  "combined_records": 4027,
+  "actual_loader": {
+    "loaded": 4027,
+    "errors": []
+  },
+  "actual_finalizer": {
+    "finalized": 4027,
+    "own_habilidade_roundtrip_errors": []
+  },
+  "current_learning_schema": {
+    "checked": 4027,
+    "errors": []
+  },
+  "scoped_generic_suppression_probe": {
+    "generic_snapshot_items_supplied": 2147,
+    "remaining_generic_coded_in_scope": 0,
+    "result_count": 4027,
+    "boundaries": {
+      "72": false,
+      "73": true,
+      "88": true,
+      "89": false,
+      "111": false,
+      "112": true,
+      "323": true,
+      "324": false
+    }
+  },
+  "runtime_before": {
+    "pipeline/ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+    "pipeline/runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce",
+    "src/shared/contracts.ts": "ec1013e7bb9aba48e021dc3d0d598b55c743f08372e69b059a93ded40fbae2c7",
+    "data/schema/1.1.0.json": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df"
+  },
+  "runtime_after": {
+    "pipeline/ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+    "pipeline/runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce",
+    "src/shared/contracts.ts": "ec1013e7bb9aba48e021dc3d0d598b55c743f08372e69b059a93ded40fbae2c7",
+    "data/schema/1.1.0.json": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df"
+  },
+  "runtime_stable": true,
+  "issues": [],
+  "result": "pass",
+  "no_manifest_core_bundle_database_mutation": true,
+  "limitations": [
+    "This validates the additive right-column scope and integration of frozen1972 values; no UF/whole-source/current-edition readiness asserted.",
+    "Automatic literal/documentary verification is not human pedagogical review."
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "at": "2026-10-28T04:47:47.928404+00:00",
+  "actor_type": "automated",
+  "checkpoint": "var/jobs/north-ocr-pages.json",
+  "status": "page_caches_complete",
+  "expected_pages": 2131,
+  "completed_pages": 2131,
+  "failed_pages": 0,
+  "sources_expected": {
+    "am-rca-ei": 226,
+    "am-rca-em": 292,
+    "ap-rca-ei-ef": 339,
+    "am-rca-ef-af": 604,
+    "am-rca-ef-ai": 670
+  },
+  "low_text_pages": [
+    {
+      "source_id": "am-rca-ei",
+      "page": 14,
+      "words": 0,
+      "characters": 0,
+      "rotation": 0
+    },
+    {
+      "source_id": "am-rca-ei",
+      "page": 18,
+      "words": 0,
+      "characters": 0,
+      "rotation": 0
+    },
+    {
+      "source_id": "am-rca-ei",
+      "page": 22,
+      "words": 5,
+      "characters": 11,
+      "rotation": 0
+    },
+    {
+      "source_id": "ap-rca-ei-ef",
+      "page": 30,
+      "words": 0,
+      "characters": 0,
+      "rotation": 0
+    },
+    {
+      "source_id": "ap-rca-ei-ef",
+      "page": 74,
+      "words": 1,
+      "characters": 2,
+      "rotation": 0
+    },
+    {
+      "source_id": "ap-rca-ei-ef",
+      "page": 184,
+      "words": 0,
+      "characters": 0,
+      "rotation": 0
+    },
+    {
+      "source_id": "ap-rca-ei-ef",
+      "page": 194,
+      "words": 0,
+      "characters": 0,
+      "rotation": 0
+    },
+    {
+      "source_id": "ap-rca-ei-ef",
+      "page": 206,
+      "words": 0,
+      "characters": 0,
+      "rotation": 0
+    },
+    {
+      "source_id": "ap-rca-ei-ef",
+      "page": 258,
+      "words": 0,
+      "characters": 0,
+      "rotation": 0
+    },
+    {
+      "source_id": "ap-rca-ei-ef",
+      "page": 274,
+      "words": 0,
+      "characters": 0,
+      "rotation": 0
+    },
+    {
+      "source_id": "ap-rca-ei-ef",
+      "page": 294,
+      "words": 0,
+      "characters": 0,
+      "rotation": 0
+    },
+    {
+      "source_id": "ap-rca-ei-ef",
+      "page": 316,
+      "words": 0,
+      "characters": 0,
+      "rotation": 0
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "page": 14,
+      "words": 3,
+      "characters": 6,
+      "rotation": 0
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "page": 274,
+      "words": 6,
+      "characters": 16,
+      "rotation": 0
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "page": 316,
+      "words": 1,
+      "characters": 2,
+      "rotation": 0
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "page": 408,
+      "words": 1,
+      "characters": 1,
+      "rotation": 0
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "page": 446,
+      "words": 10,
+      "characters": 22,
+      "rotation": 270
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "page": 474,
+      "words": 5,
+      "characters": 12,
+      "rotation": 0
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "page": 590,
+      "words": 5,
+      "characters": 11,
+      "rotation": 0
+    },
+    {
+      "source_id": "am-rca-ef-af",
+      "page": 604,
+      "words": 0,
+      "characters": 0,
+      "rotation": 0
+    },
+    {
+      "source_id": "am-rca-ef-ai",
+      "page": 14,
+      "words": 0,
+      "characters": 0,
+      "rotation": 0
+    }
+  ],
+  "rotation_counts": {
+    "270": 7,
+    "0": 975,
+    "90": 1144,
+    "180": 5
+  },
+  "ocr_revision": "tesseract-tsv-por-v1.2.1",
+  "rasterizer": "PyMuPDF1.26.7",
+  "scope": "Raw OCR page cache; no claim of full semantic extraction, reconciliation, human review or UF acceptance.",
+  "additional_batch": {
+    "status": "page_caches_complete",
+    "expected_pages": 26,
+    "completed_pages": 26,
+    "failed_pages": 0,
+    "sources_expected": {
+      "to-dct-guia-ei-ef": 24,
+      "am-aprovacao-em-85-2021": 2
+    },
+    "checkpoint": "var/jobs/north-ocr-guides.json"
+  },
+  "total_pages_across_batches": 2157
+}

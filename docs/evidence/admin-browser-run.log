@@ -1,0 +1,83 @@
+{
+  "kind": "admin-browser",
+  "actor_type": "automated",
+  "run_id": "96fd615f-31b6-4dca-9a78-bcb17d2e24c5",
+  "base": "http://localhost:3000",
+  "started_at": "2026-10-28T05:39:30.699Z",
+  "checks": [
+    {
+      "name": "temporary_automated_account_created_by_secure_cli",
+      "passed": true
+    },
+    {
+      "name": "only_owned_temporary_account_removed_and_sessions_revoked",
+      "passed": true
+    }
+  ],
+  "trace": "off",
+  "video": "off",
+  "password_transport": "CLI stdin; browser child memory environment; never saved",
+  "result": "failed",
+  "publication": "ca-77fb8076598b567e1ba3",
+  "real_item_id": "ca:ac-cru-em:0090948210886854c3a6",
+  "actor_id": "842bc911-b0d0-46ab-b0e7-e76633a7d027",
+  "browser_results": "docs/evidence/admin-browser/96fd615f-31b6-4dca-9a78-bcb17d2e24c5/results.json",
+  "browser_summary": {
+    "kind": "admin-browser",
+    "finished_at": "2026-10-28T05:40:04.733Z",
+    "status": "failed",
+    "trace": "off",
+    "video": "off",
+    "automatic_screenshots": "off",
+    "tests": [
+      {
+        "title": "administração real: login, fontes, registro fixado, curadoria segura, teclado e acessibilidade",
+        "project": "admin-desktop",
+        "status": "failed",
+        "duration_ms": 16211,
+        "errors": [
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByLabel('Candidato ingerido', { exact: true })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByLabel('Candidato ingerido', { exact: true }) with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Candidato ingerido', { exact: true })\u001b[22m\n"
+        ],
+        "annotations": [
+          {
+            "type": "publication",
+            "description": "ca-77fb8076598b567e1ba3"
+          },
+          {
+            "type": "actor_type",
+            "description": "automated"
+          },
+          {
+            "type": "scope",
+            "description": "rascunho idêntico + validação técnica, sem preparar/publicar"
+          }
+        ]
+      },
+      {
+        "title": "administração real: login, fontes, registro fixado, curadoria segura, teclado e acessibilidade",
+        "project": "admin-mobile",
+        "status": "failed",
+        "duration_ms": 15813,
+        "errors": [
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByLabel('Candidato ingerido', { exact: true })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByLabel('Candidato ingerido', { exact: true }) with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Candidato ingerido', { exact: true })\u001b[22m\n"
+        ],
+        "annotations": [
+          {
+            "type": "publication",
+            "description": "ca-77fb8076598b567e1ba3"
+          },
+          {
+            "type": "actor_type",
+            "description": "automated"
+          },
+          {
+            "type": "scope",
+            "description": "navegação, inspeção, seleção e acessibilidade; sem duplicar snapshot"
+          }
+        ]
+      }
+    ]
+  },
+  "error": "Jornadas reais de navegador falharam; veja evidência sanitizada.\n\n1 !== 0\n",
+  "finished_at": "2026-10-28T05:40:04.755Z"
+}

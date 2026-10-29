@@ -1,0 +1,29 @@
+{
+  "all_primary_source_mentions_scanned": 773,
+  "eligible_explicit_inline_definition_boundaries": [
+    {
+      "page": 177,
+      "code": "EF15CI06",
+      "bbox": [
+        161.3035011291504,
+        177.38067626953125,
+        277.9764938354492,
+        770.77392578125
+      ],
+      "locator": "table:0/row:2/cell:1",
+      "boundary": "stratégias \ne resultados.EF15CI06 \n– Utilizar diferentes \n"
+    }
+  ],
+  "source_visual_path": "var/private-evidence/source-audit-rn-fidelity/rn-dcec-computacao-p177-inline-definition.png",
+  "visual_render_sha256": "79a4df004644d493eda5a15647a4f2601a35087d6f6833b9cfd327b75a7a21f4",
+  "visually_reviewed": true,
+  "review_actor_type": "automated",
+  "new_items": [
+    [
+      "EF15CI06",
+      "Utilizar diferentes linguagens e tecnologias digitais de informação e comunicação para se comunicar, acessar e disseminar informações, produzir conhecimentos e resolver problemas das Ciências da Natureza de forma crítica, significativa, reflexiva e ética."
+    ]
+  ],
+  "rule": "Only explicit HABILIDADE physical region, sentence terminator immediately preceding literal code, and printed dash following code. Other code citations do not activate this rule.",
+  "scope": "The independent source occurrence confrontation caught this one missing definition despite zero literal substring failures; it is not silently waived."
+}

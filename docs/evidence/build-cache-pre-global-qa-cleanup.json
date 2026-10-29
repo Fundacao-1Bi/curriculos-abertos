@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "completed_at": "2026-10-28T14:58:43.491Z",
+  "scope": "four exact obsolete COPY/RUN cache IDs from this task technical builds13:44 and13:59; no image/volume/global prune",
+  "records": [
+    {
+      "parent": "qxpah8vors9n2omz44lvvub6h",
+      "child": "b6d697pdyulj9hnv0kau7mjm2",
+      "hour": "13:44",
+      "before": {
+        "parent": "ID:           qxpah8vors9n2omz44lvvub6h\nParents:\n - nrudrc8fmb60w8j2tqcgtm6qv\nCreated at:   2026-10-28 13:44:16.27102034 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         1.569GB\nDescription:  [production 5/6] COPY --from=build --chown=node:node /app ./\nUsage count:  1\nLast used:    About an hour ago\nType:         regular\n\n",
+        "child": "ID:           b6d697pdyulj9hnv0kau7mjm2\nParents:\n - qxpah8vors9n2omz44lvvub6h\nCreated at:   2026-10-28 13:44:16.753440549 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         159.6MB\nDescription:  mount / from exec /bin/sh -c mkdir -p /app/var /app/data/raw /app/data/extracted && chown -R node:node /app/var /app/data\nUsage count:  1\nLast used:    About an hour ago\nType:         regular\n\n"
+      }
+    },
+    {
+      "parent": "tgbrzh0xmg8glc9y5r2jhnxtb",
+      "child": "8bhhfh2dr8hquy8b4bdudd1op",
+      "hour": "13:59",
+      "before": {
+        "parent": "ID:           tgbrzh0xmg8glc9y5r2jhnxtb\nParents:\n - motzs2fb1c99tek718ra86fkn\nCreated at:   2026-10-28 13:59:06.655025335 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         1.786GB\nDescription:  [production 5/6] COPY --from=build --chown=node:node /app ./\nUsage count:  1\nLast used:    58 minutes ago\nType:         regular\n\n",
+        "child": "ID:           8bhhfh2dr8hquy8b4bdudd1op\nParents:\n - tgbrzh0xmg8glc9y5r2jhnxtb\nCreated at:   2026-10-28 13:59:07.156884836 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         255.6MB\nDescription:  mount / from exec /bin/sh -c mkdir -p /app/var /app/data/raw /app/data/extracted && chown -R node:node /app/var /app/data\nUsage count:  1\nLast used:    58 minutes ago\nType:         regular\n\n"
+      }
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "docker",
+        "image",
+        "inspect",
+        "curriculos-abertos:local",
+        "--format",
+        "{{.Id}}"
+      ],
+      "exit_code": 0,
+      "stdout": "sha256:c2eb90fd88ac746bc8839cdcecae574101ef99c245a3a5abb257c8fdde8758b0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=qxpah8vors9n2omz44lvvub6h",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "ID:           qxpah8vors9n2omz44lvvub6h\nParents:\n - nrudrc8fmb60w8j2tqcgtm6qv\nCreated at:   2026-10-28 13:44:16.27102034 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         1.569GB\nDescription:  [production 5/6] COPY --from=build --chown=node:node /app ./\nUsage count:  1\nLast used:    About an hour ago\nType:         regular\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=b6d697pdyulj9hnv0kau7mjm2",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "ID:           b6d697pdyulj9hnv0kau7mjm2\nParents:\n - qxpah8vors9n2omz44lvvub6h\nCreated at:   2026-10-28 13:44:16.753440549 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         159.6MB\nDescription:  mount / from exec /bin/sh -c mkdir -p /app/var /app/data/raw /app/data/extracted && chown -R node:node /app/var /app/data\nUsage count:  1\nLast used:    About an hour ago\nType:         regular\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=b6d697pdyulj9hnv0kau7mjm2"
+      ],
+      "exit_code": 0,
+      "stdout": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nb6d697pdyulj9hnv0kau7mjm2               \ttrue \t\t159.6MB   \tAbout an hour ago\nTotal:\t159.6MB\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=b6d697pdyulj9hnv0kau7mjm2",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=qxpah8vors9n2omz44lvvub6h"
+      ],
+      "exit_code": 0,
+      "stdout": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nqxpah8vors9n2omz44lvvub6h               \ttrue \t\t1.569GB   \tAbout an hour ago\nTotal:\t1.569GB\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=qxpah8vors9n2omz44lvvub6h",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=tgbrzh0xmg8glc9y5r2jhnxtb",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "ID:           tgbrzh0xmg8glc9y5r2jhnxtb\nParents:\n - motzs2fb1c99tek718ra86fkn\nCreated at:   2026-10-28 13:59:06.655025335 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         1.786GB\nDescription:  [production 5/6] COPY --from=build --chown=node:node /app ./\nUsage count:  1\nLast used:    58 minutes ago\nType:         regular\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=8bhhfh2dr8hquy8b4bdudd1op",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "ID:           8bhhfh2dr8hquy8b4bdudd1op\nParents:\n - tgbrzh0xmg8glc9y5r2jhnxtb\nCreated at:   2026-10-28 13:59:07.156884836 +0000 UTC\nMutable:      false\nReclaimable:  true\nShared:       false\nSize:         255.6MB\nDescription:  mount / from exec /bin/sh -c mkdir -p /app/var /app/data/raw /app/data/extracted && chown -R node:node /app/var /app/data\nUsage count:  1\nLast used:    58 minutes ago\nType:         regular\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=8bhhfh2dr8hquy8b4bdudd1op"
+      ],
+      "exit_code": 0,
+      "stdout": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\n8bhhfh2dr8hquy8b4bdudd1op               \ttrue \t\t255.6MB   \t59 minutes ago\nTotal:\t255.6MB\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=8bhhfh2dr8hquy8b4bdudd1op",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=tgbrzh0xmg8glc9y5r2jhnxtb"
+      ],
+      "exit_code": 0,
+      "stdout": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\ntgbrzh0xmg8glc9y5r2jhnxtb               \ttrue \t\t1.786GB   \t59 minutes ago\nTotal:\t1.786GB\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "du",
+        "--filter",
+        "id=tgbrzh0xmg8glc9y5r2jhnxtb",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "image",
+        "inspect",
+        "curriculos-abertos:local",
+        "--format",
+        "{{.Id}}"
+      ],
+      "exit_code": 0,
+      "stdout": "sha256:c2eb90fd88ac746bc8839cdcecae574101ef99c245a3a5abb257c8fdde8758b0\n",
+      "stderr": ""
+    }
+  ],
+  "protected_image": "sha256:c2eb90fd88ac746bc8839cdcecae574101ef99c245a3a5abb257c8fdde8758b0",
+  "passed": true
+}

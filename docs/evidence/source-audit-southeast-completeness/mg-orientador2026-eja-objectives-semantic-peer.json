@@ -1,0 +1,57 @@
+{
+  "at": "2026-10-28T21:08:56.616504+00:00",
+  "actor_id": "agent:domain:mg-eja-objectives-semantic-peer",
+  "actor_type": "automated",
+  "human_review_claimed": false,
+  "review_scope": "Documentary semantic role only; not extraction completeness, transcription approval or pedagogical evaluation.",
+  "source_id": "mg-em-documento-orientador-2026",
+  "artifact_path": "data/raw/MG/mg-em-documento-orientador-2026.pdf",
+  "artifact_sha256": "f01771f8c350285760eb2a83460f583a40aa97900aaeddbcbd7690785360d7c6",
+  "physical_page": 33,
+  "printed_page": "32",
+  "source_frame": {
+    "table_columns": [
+      "Período",
+      "Componente Curricular",
+      "Acesso ao material",
+      "Resumo do material"
+    ],
+    "period": "3º Período",
+    "component": "Soluções Matemáticas",
+    "modality": "EJA",
+    "literal_label": "Objetivos específicos:",
+    "material_scope": "O material apresenta 3 (três) sequências didáticas que envolvem problemas do cotidiano adulto"
+  },
+  "decision": {
+    "existing_kind": "objetivo_curricular",
+    "category": "formative_purpose",
+    "granularity": "source_material_summary_objectives_block",
+    "learning_objective_claim": false,
+    "preserve_bullets": 3,
+    "split_into_atomic_learning_items": false,
+    "rationale": "A unidade é o resumo dos objetivos de um material de apoio que agrega três sequências didáticas. Os bullets misturam finalidade de ensino (Contribuir; Contextualizar) e resultado discente (Compreender). O bloco integral não afirma uma habilidade atômica homogênea. Não se promove o último bullet isoladamente pela palavra Compreender.",
+    "literal_qualifications": [
+      "Contribuir para a educação financeira do estudante da EJA",
+      "Contextualizar as noções de geometria na construção civil",
+      "Compreender princípios e procedimentos de pesquisas amostrais"
+    ],
+    "position_limits": "Preservar EM/EJA e o período documental quando declarado; não converter 3ºPeríodo em3ºano nem inferir idade.",
+    "new_enum_required": false
+  },
+  "methods": [
+    "Original PDF SHA verified before inspection",
+    "Native sort=True full physical page read",
+    "Physical page33 rendered and visually inspected, including the summary column and cell borders"
+  ],
+  "preservation": {
+    "source_manifest_edited": false,
+    "candidate_edited": false,
+    "enum_core_edited": false,
+    "pdf_edited": false
+  },
+  "limits": [
+    "NoSourceWhole/UF/nationalreadiness approval.",
+    "The material linked by the PDF was not opened; no claim of completeness of the underlying three sequences.",
+    "This role classification does not approve OCR/transcription or imply human review."
+  ]
+}

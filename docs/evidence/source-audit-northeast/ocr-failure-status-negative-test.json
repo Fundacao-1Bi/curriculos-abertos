@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-28T04:41:09.523221+00:00",
+  "actor_type": "automated",
+  "source_id": "ce-resolucao-526-2026",
+  "negative_test": "missing OCR language model directory, write_json mocked to avoid changing caches",
+  "extraction_revision": "page-cell-v1.4.0",
+  "failed_ocr_pages": 4,
+  "ocr_pending_returned": false,
+  "warnings": [
+    {
+      "page": 1,
+      "issue": "no_extractable_text_or_ocr_failed",
+      "error": "Cannot fingerprint installed OCR language model por; configure TESSDATA_PREFIX explicitly."
+    },
+    {
+      "page": 2,
+      "issue": "no_extractable_text_or_ocr_failed",
+      "error": "Cannot fingerprint installed OCR language model por; configure TESSDATA_PREFIX explicitly."
+    },
+    {
+      "page": 3,
+      "issue": "no_extractable_text_or_ocr_failed",
+      "error": "Cannot fingerprint installed OCR language model por; configure TESSDATA_PREFIX explicitly."
+    },
+    {
+      "page": 4,
+      "issue": "no_extractable_text_or_ocr_failed",
+      "error": "Cannot fingerprint installed OCR language model por; configure TESSDATA_PREFIX explicitly."
+    }
+  ],
+  "issue": "ocr_pending_false_after_actual_ocr_failure"
+}

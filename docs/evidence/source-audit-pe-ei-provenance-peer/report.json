@@ -1,0 +1,110 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex-independent-pe-ei-provenance-auditor",
+  "generated_at": "2026-10-28T20:42:38.829026+00:00",
+  "source_id": "pe-curriculo-ei",
+  "target_artifact_sha256": "a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3",
+  "target_artifact_bytes": 2505568,
+  "target_artifact_pages": 134,
+  "source_record_canonical_sha256_at_review": "5fd03ec4de035f866380fba67970d625b033a4a218a8e19d0c7282ddac45b7d9",
+  "observed_current_provenance_status": "pending_primary_distribution_chain",
+  "observed_current_primary_distribution_verified": false,
+  "research_scope_completed": true,
+  "Source_validation_completed": false,
+  "recommended_status_to_preserve": "pending_primary_distribution_chain",
+  "primary_distribution_path_established": false,
+  "verified_positive_findings": {
+    "official_normative_recognition_of_EI_EF_work": {
+      "parecer": "CEE/PE114/2018-CEE",
+      "plenary_approval_reported_date": "2018-12-20",
+      "SEE_portaria": "5570/2018",
+      "portaria_issued": "2018-12-28",
+      "DOE_publication": "2018-12-29",
+      "DOE_pdf_page": 24,
+      "official_CEPE_PDF_sha256": "80a054a0feee9ebe2358a2f1d1d91675d42f2956acd86e05318fd8392befc2fd",
+      "primary_issuer_route": "https://www.portal.cepe.com.br/ → linked DiarioOficial app → app.config serverUrl and HomeService.getJornal public download API",
+      "legal_scope": "Reference curriculum in four volumes including EI; respects federated and school autonomy. No universal municipal adoption or current edition inference.",
+      "cryptographic_signature_validity_tested": false
+    },
+    "edition_imprint_on_collected_PDF": "2019, bibliographic physical page4; technical PDFium file creation metadata2024 is not an editorial date",
+    "GoogleSite_to_exact_Drive_ID_verified": true,
+    "live_Drive_bytes_equal_registered_snapshot": true
+  },
+  "distribution_graph": [
+    {
+      "from": "google_landing",
+      "to": "drive_file",
+      "verified": true,
+      "evidence": {
+        "snapshot_sha256": "1c8afdaf7f6ab2e12362741c3491110f755bed6d0386b5c19b0a096bfc486de9",
+        "HTML_attribute": "data-embed-doc-id/data-embed-download-url",
+        "Drive_ID": "1hnNk221nOEBv7fgxPtCDjRhMyDZ9sEBk"
+      }
+    },
+    {
+      "from": "drive_file",
+      "to": "acquired_artifact",
+      "verified": true,
+      "evidence": {
+        "retrieved_at": "2026-10-28T20:24:26.755492+00:00",
+        "bytes": 2505568,
+        "sha256": "a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3"
+      }
+    },
+    {
+      "from": "issuer_SEE_CEE",
+      "to": "google_landing",
+      "verified": false,
+      "evidence": "Not established by the bounded institutional searches; title, logos, self-declared credits and third-party citations were not accepted as ownership proof."
+    },
+    {
+      "from": "issuer_SEE_CEE",
+      "to": "curriculum_work",
+      "verified": true,
+      "edge_type": "normative_recognition_of_work_not_binary_distribution",
+      "evidence": {
+        "act": "Portaria SEE5570/2018; Parecer114/2018",
+        "DOE_date": "2018-12-29",
+        "PDF_page": 24,
+        "official_downloaded_PDF_sha256": "80a054a0feee9ebe2358a2f1d1d91675d42f2956acd86e05318fd8392befc2fd"
+      }
+    }
+  ],
+  "missing_evidence": "A verifiable publication by the state issuer or authenticated coissuer linking the exact Google Site/Drive resource, or a primary institutional artifact with proven exact identity to this snapshot. The old self-cited SEE article4419 returned404 in both HTTP/HTTPS attempts.",
+  "not_accepted_as_authentication": [
+    "Google Sites program name or visual branding",
+    "Bibliographic credits and cover alone",
+    "An act recognizing a named curriculum without binding the exact distributed file",
+    "Municipal/university/private mirrors and secondary citations",
+    "Similarity of title or edition to a different official volume"
+  ],
+  "bounded_search_scope": {
+    "official_SEE_media_rows": 9,
+    "official_SEE_curriculo_posts": 89,
+    "official_SEE_alfabetizada_posts": 31,
+    "SEE_home_checked": true,
+    "old_publication_URL_checked": true,
+    "CEE_act_URLs_checked": true,
+    "UNDIME_document_catalogs_checked": true,
+    "exact_GoogleSite_Drive_and_filename_web_queries": true,
+    "no_claim_all_possible_publications_exhausted": true
+  },
+  "Source_core_cache_database_publication_modified": false,
+  "SourceWhole_UF_ready_human_pedagogical_review_current_adoption_claimed": false,
+  "evidence_files": {
+    "docs/evidence/source-audit-pe-ei-provenance-peer/fetch-log.json": "c32cde05c8e9c5211e244ba576229da7457f7e50652b0da8e58761a8125433e1",
+    "docs/evidence/source-audit-pe-ei-provenance-peer/source-imprint.json": "e5a1e3f4b9eb1e8a866ade7d2a4b773d2837b80272343a90a5fa244b303b1af5",
+    "docs/evidence/source-audit-pe-ei-provenance-peer/portaria-5570-primary-proof.json": "e915f81e2e9b05a4544ae47766d61147a455459ecf3a4275018d38d3e6e85fdb",
+    "docs/evidence/source-audit-pe-ei-provenance-peer/official-catalog-search.json": "7b8ca5b444e7ae86c221a10d50bb41fc2bbdb57d1b41fa4159c6f60e5279a454",
+    "docs/evidence/source-audit-pe-ei-provenance-peer/search-log.json": "a94ce7fcfa0ec1f3386135e4f70edc04b12e56c95ad89978f7e89adb2afd7e6d"
+  },
+  "scripts": {
+    "docs/evidence/source-audit-pe-ei-provenance-peer/compile-evidence.py": "7d4e2cdada1a6f1dca72d07ebecd56d8b36dacea5e16acbea920b9b94795fa65",
+    "docs/evidence/source-audit-pe-ei-provenance-peer/fetch-cepe-config.py": "b64497d6affe580855617c03f7e93e75d1c2355052954bd973e8156a5f069919",
+    "docs/evidence/source-audit-pe-ei-provenance-peer/fetch-coissuer.py": "b918df36c2e3858780d33a6fed79f3cfc1098ba817371dc2ec1f8b4836c75e09",
+    "docs/evidence/source-audit-pe-ei-provenance-peer/fetch-last.py": "a157a787cfc75cb6e17fd3168bf09367034c030750339a9856eee9925467cc0a",
+    "docs/evidence/source-audit-pe-ei-provenance-peer/fetch-more.py": "3ec07d9b6e617c50f1e80ea71c9897f25375fcf0e2cd80b37e93a219d6b5610c",
+    "docs/evidence/source-audit-pe-ei-provenance-peer/fetch-signed-doe.py": "373fa64befb58de90e7d8809824ff174c5b4038653001d9324b7a4b1f8b3064a",
+    "docs/evidence/source-audit-pe-ei-provenance-peer/fetch.py": "a9d66868dfb5c000446b1a1faddd878a46a37e26f8f1e9fe004edd92d728302c"
+  }
+}

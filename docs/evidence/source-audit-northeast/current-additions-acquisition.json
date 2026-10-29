@@ -1,0 +1,101 @@
+{
+  "actor_type": "automated",
+  "results": [
+    {
+      "candidate_id": "pi-computacao-em",
+      "uf": "PI",
+      "attempts": [
+        {
+          "at": "2026-10-28T14:05:11.854143+00:00",
+          "url": "https://seduc.pi.gov.br/download/diretrizes/Curriculo_de_Computacao___EM.pdf",
+          "http_status": 200,
+          "content_type": "application/pdf",
+          "final_url": "https://seduc.pi.gov.br/download/diretrizes/Curriculo_de_Computacao___EM.pdf",
+          "bytes": 2156942,
+          "sha256": "e6eda1fbcf82e4fb5554ce121ec3b6c1bdf13c9345ef716658c0946a1a71e61f",
+          "local_path": "data/raw/PI/pi-computacao-em.pdf",
+          "is_pdf": true,
+          "pages": 137,
+          "metadata": {
+            "format": "PDF 1.5",
+            "title": "",
+            "author": "",
+            "subject": "",
+            "keywords": "",
+            "creator": "PDFsam Basic v5.4.1",
+            "producer": "SAMBox 3.0.28",
+            "creationDate": "",
+            "modDate": "D:20260202143600-03'00'",
+            "trapped": "",
+            "encryption": null
+          }
+        }
+      ]
+    },
+    {
+      "candidate_id": "ce-matrizes-2026-original",
+      "uf": "CE",
+      "attempts": [
+        {
+          "at": "2026-10-28T14:05:11.854470+00:00",
+          "url": "https://www.seduc.ce.gov.br/wp-content/uploads/sites/37/2025/12/Matrizes-Curriculares-2026-V2.pdf",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+        },
+        {
+          "at": "2026-10-28T14:05:12.089841+00:00",
+          "url": "https://www.seduc.ce.gov.br/wp-content/uploads/sites/37/2025/12/Matrizes-Curriculares-2026-V2.pdf",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+        }
+      ]
+    },
+    {
+      "candidate_id": "ce-matrizes-2026-migrated",
+      "uf": "CE",
+      "attempts": [
+        {
+          "at": "2026-10-28T14:05:11.854645+00:00",
+          "url": "https://www.ce.gov.br/seduc/wp-content/uploads/sites/63/2025/12/Matrizes-Curriculares-2026-V2.pdf",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+        },
+        {
+          "at": "2026-10-28T14:05:12.095207+00:00",
+          "url": "https://www.ce.gov.br/seduc/wp-content/uploads/sites/63/2025/12/Matrizes-Curriculares-2026-V2.pdf",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+        }
+      ]
+    },
+    {
+      "candidate_id": "ce-atos-index",
+      "uf": "CE",
+      "attempts": [
+        {
+          "at": "2026-10-28T14:05:11.854789+00:00",
+          "url": "https://legislacao.cee.ce.gov.br/legislacao/resolucoes/conselho-estadual-de-educacao/",
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "final_url": "https://legislacao.cee.ce.gov.br/legislacao/resolucoes/conselho-estadual-de-educacao/",
+          "bytes": 26797,
+          "sha256": "47b2a96214b31f8f7351389df99bde22c735d5362497b07fb4724cf960f4760e",
+          "local_path": "data/raw/CE/ce-atos-index.html",
+          "is_pdf": false
+        }
+      ]
+    },
+    {
+      "candidate_id": "ce-matrizes-news",
+      "uf": "CE",
+      "attempts": [
+        {
+          "at": "2026-10-28T14:05:11.854945+00:00",
+          "url": "https://www.ce.gov.br/seduc/2025/12/17/seduc-divulga-matrizes-curriculares-2026/",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+        },
+        {
+          "at": "2026-10-28T14:05:12.100501+00:00",
+          "url": "https://www.ce.gov.br/seduc/2025/12/17/seduc-divulga-matrizes-curriculares-2026/",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+        }
+      ]
+    }
+  ]
+}

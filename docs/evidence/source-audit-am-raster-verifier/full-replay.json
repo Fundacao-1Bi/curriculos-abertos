@@ -1,0 +1,85 @@
+{
+  "producer_revision": "primary-raster-code-reference-verifier-v1.0.0",
+  "producer_sha256": "8774d4372d0c0d83e73ccabd80d98dafec28f0723e7e5da8ead0c9aa78413781",
+  "handoff_path": "docs/evidence/source-audit-am-code-peer/am-code-review-handoff.json",
+  "handoff_sha256": "fdb2256668c0fc0fa323e232ae701f4792bdea8cc5289cfa20e39ef197792cca",
+  "ledger_sha256": "3666f1af298cb5a64a5d6ef3c00a6de58c31ce5af9e8cd0c31e90110d5b3afcf",
+  "review_sha256": "0c81dec5f3dbb30c79eefc4af80ce3f3317354889b73a2b5973b9fcd60746979",
+  "slots_verified": 2629,
+  "primary_pages_verified": 1038,
+  "references_produced": 2628,
+  "by_source": {
+    "am-rca-ef-af": 1202,
+    "am-rca-ef-ai": 1017,
+    "am-rca-ei": 152,
+    "am-rca-em": 257
+  },
+  "rejected_slots": [
+    {
+      "slot_id": "am-rca-ei:p114:slot001",
+      "code": null,
+      "reason": "not_a_code_in_this_crop"
+    }
+  ],
+  "proof_trace_sha256": "be645228dee9f9347ea25438f8d999acb6e66e9d77a3494bad0e3800ad5177be",
+  "reference_records_sha256": {
+    "am-rca-ef-af": "b0efe7fd4678d032c9f2675159338a6da3df72eceb305e3e68a258270fb86ab4",
+    "am-rca-ef-ai": "7316afb50cb99a1ee8e2f16d10f0deb3d9d740c4d06433c099be1cc912d08d08",
+    "am-rca-ei": "731b011e3708109bc1ebbcc26fb085efecfad8a3b5100bdcb3002cbcfe2f7c66",
+    "am-rca-em": "c0b9125386d318fd93f8b3f9d0407a7d81145d3ab65effb2f5dfa2e957875067"
+  },
+  "actor_type": "automated",
+  "actor_id": "codex:primary-raster-reference-verifier",
+  "source_artifacts": [
+    {
+      "source_id": "am-rca-ef-af",
+      "sha256": "26285c69921d0efa4993620d140e35f974d8f6b44223c676387464d04647eb2a",
+      "local_path": "data/raw/AM/am-rca-ef-af.pdf"
+    },
+    {
+      "source_id": "am-rca-ef-ai",
+      "sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+      "local_path": "data/raw/AM/am-rca-ef-ai.pdf"
+    },
+    {
+      "source_id": "am-rca-ei",
+      "sha256": "d2fe6b304d4f9e6aee101b5cf5683125fc255184c87a597d39ee111c3ae80fd8",
+      "local_path": "data/raw/AM/am-rca-ei.pdf"
+    },
+    {
+      "source_id": "am-rca-em",
+      "sha256": "46dd801703b5bca3a849df1c8b16fef800f4d07538bf177797cb1ee1f3640313",
+      "local_path": "data/raw/AM/am-rca-em.pdf"
+    }
+  ],
+  "proposal_pins": [
+    {
+      "path": "data/manifests/uncoded/am-primary-code-references-ef-af.json",
+      "sha256": "25a640a5de81d6bac15c35db20f679e239705ef0353574682db244b0bbb644b8",
+      "items": 1202
+    },
+    {
+      "path": "data/manifests/uncoded/am-primary-code-references-ef-ai.json",
+      "sha256": "a24e5483f0f339f52fa79f14e87acf4fad9621395487415a225f0b5c1b062d95",
+      "items": 1017
+    },
+    {
+      "path": "data/manifests/uncoded/am-primary-code-references-ei.json",
+      "sha256": "8c4c957361483d556039860d27cb252655fdb031ddaf78b6ec1f00b3049fea0b",
+      "items": 152
+    },
+    {
+      "path": "data/manifests/uncoded/am-primary-code-references-em.json",
+      "sha256": "1061efc1adc70fb7670f008a2859e3791a2a5a4d861f9bcee3c3bd11d55f4062",
+      "items": 257
+    }
+  ],
+  "OCR_used_as_evidence": false,
+  "body_verified": false,
+  "full_source_coverage_verified": false,
+  "human_review_claimed": false,
+  "equivalence_asserted": false,
+  "production_integration_performed": false,
+  "source_registry_modified": false,
+  "cache_or_publication_modified": false
+}

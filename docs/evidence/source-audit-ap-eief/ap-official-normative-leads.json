@@ -1,0 +1,36 @@
+{
+  "scope": "Additional primary discovery evidence; no new PDF downloaded and no edition/act equivalence asserted",
+  "leads": [
+    {
+      "url": "https://basenacionalcomum.mec.gov.br/images/implementacao/curriculos_estados/ap_curriculo_amapa.pdf",
+      "official_host": "MEC",
+      "indexed_title": "LIVRO corrigido 1.cdr",
+      "indexed_cover_claim": "Aprovado pela Resolução Nº 15/2019 Conselho Estadual de Educação/Amapá",
+      "requests": [
+        {
+          "channel": "web open",
+          "status": 403,
+          "interpretation": "Failed in this channel only; no bypass attempted"
+        },
+        {
+          "channel": "ordinary curl HEAD with default headers",
+          "status": 200,
+          "content_type": "application/pdf",
+          "content_length": 29560905,
+          "last_modified": "Thu, 16 Jan 2020 13:34:32 GMT",
+          "request_date": "Wed, 28 Oct 2026 16:49:39 GMT"
+        }
+      ],
+      "manifest_comparison": "Current artifact URL differed, but source owner has established byte identity; source339 is29560905bytes, not91MB. Earlier size assertion in conversation was incorrect.",
+      "pending": "Original cover approval wording and the normative act must be reconciled separately; no new Source or duplicate adapter.",
+      "resolution": "Source owner acquired ordinary curl GET and proved byte identity to existing339:29560905bytes,339pages,SHAfc40788a0165eb6fa61d713cee87d4b0b95b45435e496b43bb477f9471a103c4; official mirror only, no new edition or OCR improvement",
+      "owner_proof_path": "docs/evidence/source-audit-ap-eief/ap-mec-aprovado-candidate-acquisition.json"
+    },
+    {
+      "url": "https://diofe.portal.ap.gov.br/portal/edicoes/visualizar_pdf/2126/",
+      "official_host": "Diário Oficial do Amapá",
+      "indexed_claim_paraphrase": "A later official passage refers to Parecer111/2018-CEE/AP approval and Resolução15/2019-CEE/AP homologation published22February2019 for EI/EF RCA.",
+      "verification_limit": "Search-index lead only in this scoped audit; underlying normative act and its exact scope/attachment still require primary documentary reconciliation. No present-day vigency inferred."
+    }
+  ]
+}

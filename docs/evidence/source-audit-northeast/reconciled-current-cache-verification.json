@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-28T17:34:55.363206+00:00",
+  "actor_type": "automated",
+  "revision": "page-cell-v1.5.0",
+  "checks": [
+    {
+      "source_id": "ba-resolucao-249-2026",
+      "status": "passed",
+      "records": 45,
+      "literal_fragments": 49,
+      "proof": "docs/evidence/source-audit-northeast/runtime-v150/ba-resolucao-249-2026.json"
+    },
+    {
+      "source_id": "pe-historia-pernambuco-2026",
+      "status": "current_source_config_refresh_pending"
+    },
+    {
+      "source_id": "rn-portaria-11123-2025",
+      "status": "passed",
+      "records": 12,
+      "literal_fragments": 12,
+      "proof": "docs/evidence/source-audit-northeast/runtime-v150/rn-portaria-11123-2025.json"
+    },
+    {
+      "source_id": "ma-resolucao-211-2026-doe",
+      "status": "passed",
+      "records": 19,
+      "literal_fragments": 20,
+      "proof": "docs/evidence/source-audit-northeast/runtime-v150/ma-resolucao-211-2026-doe.json"
+    },
+    {
+      "source_id": "ma-portaria-181-2026-recomposicao-doe",
+      "status": "passed",
+      "records": 76,
+      "literal_fragments": 98,
+      "proof": "docs/evidence/source-audit-northeast/runtime-v150/ma-portaria-181-2026-recomposicao-doe.json"
+    }
+  ],
+  "passed": 4,
+  "pending": 1,
+  "scope": "Current cache availability/proofs only. Pending sources remain pending and were not re-extracted by this command."
+}

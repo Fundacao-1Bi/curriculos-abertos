@@ -1,0 +1,82 @@
+{
+  "at": "2026-10-28T20:46:31.667986+00:00",
+  "actor_type": "automated",
+  "source_id": "pe-curriculo-ei",
+  "target_snapshot_sha256": "a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3",
+  "peer_report": "docs/evidence/source-audit-pe-ei-provenance-peer/report.json",
+  "peer_report_sha256": "6f1c2e885e5486842ed738504e38f530697487c1a77e0d8e9b7b51fd3ebeb346",
+  "corroborated_snapshot_imprint": {
+    "value": "2019",
+    "PDF_page": 4,
+    "scope": "Editorial imprint on collected snapshot; does not establish issuer distribution, current adoption or legal applicability of this binary."
+  },
+  "normative_recognition_of_named_work_only": {
+    "parecer": "CEE/PE114/2018-CEE",
+    "plenary_approval_reported_date": "2018-12-20",
+    "SEE_portaria": "5570/2018",
+    "portaria_issued": "2018-12-28",
+    "DOE_publication": "2018-12-29",
+    "DOE_pdf_page": 24,
+    "official_CEPE_PDF_sha256": "80a054a0feee9ebe2358a2f1d1d91675d42f2956acd86e05318fd8392befc2fd",
+    "primary_issuer_route": "https://www.portal.cepe.com.br/ → linked DiarioOficial app → app.config serverUrl and HomeService.getJornal public download API",
+    "legal_scope": "Reference curriculum in four volumes including EI; respects federated and school autonomy. No universal municipal adoption or current edition inference.",
+    "cryptographic_signature_validity_tested": false
+  },
+  "distribution_graph": [
+    {
+      "from": "google_landing",
+      "to": "drive_file",
+      "verified": true,
+      "evidence": {
+        "snapshot_sha256": "1c8afdaf7f6ab2e12362741c3491110f755bed6d0386b5c19b0a096bfc486de9",
+        "HTML_attribute": "data-embed-doc-id/data-embed-download-url",
+        "Drive_ID": "1hnNk221nOEBv7fgxPtCDjRhMyDZ9sEBk"
+      }
+    },
+    {
+      "from": "drive_file",
+      "to": "acquired_artifact",
+      "verified": true,
+      "evidence": {
+        "retrieved_at": "2026-10-28T20:24:26.755492+00:00",
+        "bytes": 2505568,
+        "sha256": "a54f4801045b826ef20700074495ebea9b4b145bcabbdb24bd217845914a64d3"
+      }
+    },
+    {
+      "from": "issuer_SEE_CEE",
+      "to": "google_landing",
+      "verified": false,
+      "evidence": "Not established by the bounded institutional searches; title, logos, self-declared credits and third-party citations were not accepted as ownership proof."
+    },
+    {
+      "from": "issuer_SEE_CEE",
+      "to": "curriculum_work",
+      "verified": true,
+      "edge_type": "normative_recognition_of_work_not_binary_distribution",
+      "evidence": {
+        "act": "Portaria SEE5570/2018; Parecer114/2018",
+        "DOE_date": "2018-12-29",
+        "PDF_page": 24,
+        "official_downloaded_PDF_sha256": "80a054a0feee9ebe2358a2f1d1d91675d42f2956acd86e05318fd8392befc2fd"
+      }
+    }
+  ],
+  "uncertain_association": "A verifiable publication by the state issuer or authenticated coissuer linking the exact Google Site/Drive resource, or a primary institutional artifact with proven exact identity to this snapshot. The old self-cited SEE article4419 returned404 in both HTTP/HTTPS attempts.",
+  "provenance_status_preserved": "pending_primary_distribution_chain",
+  "primary_distribution_verified_preserved": false,
+  "canonical_Source_fields_preserved": {
+    "edition": "2019",
+    "document_date": null,
+    "homologation_date": null,
+    "application_date": null,
+    "provenance_status": "pending_primary_distribution_chain",
+    "primary_distribution_verified": false
+  },
+  "Source_manifest_modified": false,
+  "native_cache_modified": false,
+  "refresh_required_for_this_separate_evidence": false,
+  "future_Source_pointer_update": "Deferred to a coordinated manifest/candidate update; current Source/cache/replay pins remain intact.",
+  "whole_source_reconciled": false,
+  "UF_ready": false
+}

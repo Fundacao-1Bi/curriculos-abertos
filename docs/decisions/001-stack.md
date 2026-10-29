@@ -1,0 +1,5 @@
+# 001 — Monólito e publicação explícita
+
+Adotar stack padrão do mandato. Dependências exatas verificadas no registry em 2026-10-28, documentação oficial Next.js/MCP consultada. PostgreSQL 17, JSONB para payload canônico e índices relacionais de consulta, migrations SQL versionadas. Artefatos de dados locais versionados por hash e publicação transacional. A edição/vigência desconhecida permanece desconhecida. Dados extraídos não equivalem a reconciliação documental. Não publicar lançamento nacional enquanto houver parte normativa pendente.
+
+Atualização integração: TypeScript 6.0.3 fixado porque o parser ESLint mantido pelo Next16 suporta <6.1; TS7 mais recente gerava incompatibilidade de peer. ESLint9.39.5 é a série compatível com os plugins instalados. O servidor usa `next build` + `next start` em imagem completa compartilhada com worker, sem `output: standalone`, que não era aproveitado pelo empacotamento e gerava warning de inicialização. Exports são servidos de volume em runtime e excluídos do tracing, assim como segredos e PDFs privados.

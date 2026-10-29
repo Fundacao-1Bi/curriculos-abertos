@@ -1,0 +1,104 @@
+{
+  "at": "2026-10-28T17:41:07.729149+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast:v2_negative_probes",
+  "gate_version": "reconciliation-gate/2.0",
+  "extraction_revision": "page-cell-v1.5.0",
+  "baseline_source_id": "ma-portaria-181-2026-recomposicao-doe",
+  "baseline_own_and_dependency_gate_passed": true,
+  "negative_cases": 10,
+  "correctly_rejected": 10,
+  "checks": [
+    {
+      "case": "canonical_text_changed",
+      "rejected": true,
+      "issues": [
+        "part_content_proof_failed:Portaria181/2026:25artigos em9capítulos",
+        "inventory_unit:ma-portaria-181-2026-recomposicao-doe:documentary-unit:1:item_text_changed_or_unbound:ca:ma-portaria-181-2026-recomposicao-doe:section:portaria-181",
+        "inventory_unit:ma-portaria-181-2026-recomposicao-doe:documentary-unit:1:verified_records_do_not_match_independent_denominator",
+        "mandatory_parts_not_fully_verified",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ]
+    },
+    {
+      "case": "actual_record_missing",
+      "rejected": true,
+      "issues": [
+        "inventory_unit:ma-portaria-181-2026-recomposicao-doe:documentary-unit:2:checked_item_absent:ca:ma-portaria-181-2026-recomposicao-doe:section:annex-section-17",
+        "inventory_unit:ma-portaria-181-2026-recomposicao-doe:documentary-unit:2:verified_records_do_not_match_independent_denominator",
+        "mandatory_parts_not_fully_verified",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ]
+    },
+    {
+      "case": "extra_actual_record",
+      "rejected": true,
+      "issues": [
+        "actual_records_not_fully_accounted"
+      ]
+    },
+    {
+      "case": "inventory_unit_removed",
+      "rejected": true,
+      "issues": [
+        "mandatory_parts_not_fully_verified",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ]
+    },
+    {
+      "case": "processed_page_missing",
+      "rejected": true,
+      "issues": [
+        "declared_source_pages_not_fully_processed"
+      ]
+    },
+    {
+      "case": "source_scope_digest_forged",
+      "rejected": true,
+      "issues": [
+        "independent_inventory_source_scope_mismatch"
+      ]
+    },
+    {
+      "case": "source_denominator_inflated",
+      "rejected": true,
+      "issues": [
+        "inventory_unit:ma-portaria-181-2026-recomposicao-doe:documentary-unit:1:independent_record_denominator_missing_or_inconsistent",
+        "inventory_unit:ma-portaria-181-2026-recomposicao-doe:documentary-unit:1:verified_records_do_not_match_independent_denominator",
+        "mandatory_parts_not_fully_verified",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ]
+    },
+    {
+      "case": "legacy_id_only_receipt",
+      "rejected": true,
+      "issues": [
+        "independent_document_inventory_missing"
+      ]
+    },
+    {
+      "case": "item_documentary_evidence_removed",
+      "rejected": true,
+      "issues": [
+        "inventory_unit:ma-portaria-181-2026-recomposicao-doe:documentary-unit:1:missing_item_documentary_evidence:ca:ma-portaria-181-2026-recomposicao-doe:section:portaria-181",
+        "inventory_unit:ma-portaria-181-2026-recomposicao-doe:documentary-unit:1:verified_records_do_not_match_independent_denominator",
+        "mandatory_parts_not_fully_verified",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ]
+    },
+    {
+      "case": "missing_required_document_not_satisfied_by_ready_flags",
+      "rejected": true,
+      "own_source_preserved": true,
+      "issues": [
+        "related_document:DCRB-EM2026 integral aprovado e adotado pelo Art2:explicit_source_hash_or_declaration_evidence_missing"
+      ]
+    }
+  ],
+  "scope": "In-memory mutations only against actual current-cache complete generic+adapter results. No Source, sidecar, original PDF, extraction cache or receipt modified."
+}

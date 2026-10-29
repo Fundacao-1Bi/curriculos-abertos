@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "actor_type": "automated",
+  "completed_at": "2026-10-28T20:15:37.489094+00:00",
+  "diagnostic_only": true,
+  "national_release_asserted": false,
+  "base": {
+    "publication": "ca-7d302a9c674a97b83278",
+    "manifest_sha256": "be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d",
+    "items": 200724,
+    "relations": 57425,
+    "sources": 303,
+    "national_release_ready": false,
+    "known_documentary_errors": 3012,
+    "scope": "BASE predates six ES bindings and later integrations; not a final distribution"
+  },
+  "snapshot": {
+    "root": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd",
+    "captured_source_tree_sha256": "1ad19dcd1094cbeb2674649f32014d6f54d50e235b0b7c73d0ccc076d567718f",
+    "amended_source_tree_sha256": "58dad59390009174f945c8a4069fb7429db0f81b91255ae371762769147ef972",
+    "correspondence_scope": "private captured context plus approved read-only-probe tmpfs fix",
+    "matches_current_original_repository_asserted": false
+  },
+  "image": {
+    "id": "sha256:e14d8dfeb847a545869d11280f57bfddb9204b35ace483dcd41ea0065c420b41",
+    "tag": "curriculos-abertos:diag-base-20261028t195651-4a29dd",
+    "verified": true
+  },
+  "production_install": {
+    "exit_code": 1,
+    "passed": false,
+    "created_qa_environment_files": 0,
+    "created_qa_services": false,
+    "created_qa_volumes": false,
+    "failure_stage": "artifact contract inspection before environment creation",
+    "sample_error_count_capped": 50,
+    "first_error": {
+      "kind": "item",
+      "id": "ca:pe-fgb-trimestral-arte-cb58c164:f10e1cdc5e6053beac3a",
+      "message": "[\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"positions\",\n      0,\n      \"area\"\n    ],\n    \"message\": \"Invalid input: expected string, received undefined\"\n  },\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"positions\",\n      0,\n      \"age_group\"\n    ],\n    \"message\": \"Invalid input: expected string, received undefined\"\n  }\n]"
+    },
+    "resolution_owner": "api_mcp assigned by root; await tested contract alignment without altering BASE"
+  },
+  "main_default_preserved": "ca-77fb8076598b567e1ba3",
+  "artifacts": [
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-1/capture.json",
+      "sha256": "3c5894481402dadcf43e64e00aed6291d02aea19fec0e8696956c1eecb30ee7e",
+      "bytes": 1380
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-1/probe-fix-patch.json",
+      "sha256": "32d38e3c35356b72ce50ac89fb79b6d9756f74bdcfab64167fd38427fd75e8c9",
+      "bytes": 1138
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-1/preflight.json",
+      "sha256": "85548dae09a5eecf64337463bc2674641ed8bbf2a09573b36d9051c9fd85d42e",
+      "bytes": 956
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-1/build-initial.log",
+      "sha256": "d40376b93f38c0f6610e702799d2828000ec21508158e0c3b1cea70d3cdc3beb",
+      "bytes": 80962
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-1/initial-image-verification-failed.json",
+      "sha256": "cf147d53e61a02dd7fed65f865ac4a8046b816d622a7c61218bcc05dc16fa961",
+      "bytes": 2530
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-1/build-probe-fixed.log",
+      "sha256": "6f6453eac8ee0489bab944f93cb3f282753e94489da47bb8bec74bd7b0ddaffb",
+      "bytes": 34014
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-1/image-verification.json",
+      "sha256": "0f998897f6bf4b3987077e298ec800c6de611441e5b2893257e26c04b9a9b61e",
+      "bytes": 1178
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-1/runtime-versions.json",
+      "sha256": "813d245a9b2b0277ccb24545437338529a1a4d8efb68152192011b46a0fc6f4f",
+      "bytes": 178
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-1/production-install.log",
+      "sha256": "625e4dc530b814e1a76ae6e538bd5cbd438f41a6fb91a3e73ce726165cca516a",
+      "bytes": 33169
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-1/production-install.json",
+      "sha256": "625e4dc530b814e1a76ae6e538bd5cbd438f41a6fb91a3e73ce726165cca516a",
+      "bytes": 33169
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-1/types.log",
+      "sha256": "02e35bf0eaf0150ec7911ffcbe2df519a799a6ad76bd497210557e6ed4028fd9",
+      "bytes": 54
+    },
+    {
+      "path": "docs/evidence/diagnostic-base-20261028195651-4a29dd/attempt-1/lint.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "host_free_bytes": 66268520448,
+  "rerun_started": false
+}

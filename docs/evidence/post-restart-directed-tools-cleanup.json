@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-10-28T16:49:46.091762+00:00",
+  "preconditions": [
+    "Normal Docker build is proven; this image is obsolete fallback tooling only",
+    "Only own 2026-10-28 unshared reclaimable runtime cache entries selected",
+    "No container references fallback image, active app/worker snapshots and all official bases preserved"
+  ],
+  "operations": [
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=go7ahtq9r63t6ct7095h8kd3m"
+      ],
+      "exit_code": 0,
+      "stdout": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\ngo7ahtq9r63t6ct7095h8kd3m               \ttrue \t\t407.6MB   \t12 hours ago\nTotal:\t407.6MB\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "buildx",
+        "prune",
+        "--force",
+        "--filter",
+        "id=nrudrc8fmb60w8j2tqcgtm6qv"
+      ],
+      "exit_code": 0,
+      "stdout": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nnrudrc8fmb60w8j2tqcgtm6qv               \ttrue \t\t412.5MB   \t3 hours ago\nTotal:\t412.5MB\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "docker",
+        "image",
+        "rm",
+        "curriculos-runtime-tools:node22-pdf-v1"
+      ],
+      "exit_code": 0,
+      "stdout": "Untagged: curriculos-runtime-tools:node22-pdf-v1\nDeleted: sha256:53f34b33069f43300fa9fe95aed176832af8bd2749b74b499b68426f1d3ea69d\n",
+      "stderr": ""
+    }
+  ],
+  "fallback_image": "sha256:53f34b33069f43300fa9fe95aed176832af8bd2749b74b499b68426f1d3ea69d",
+  "completed_at": "2026-10-28T16:49:46.821547+00:00",
+  "free_bytes": 15056695296
+}

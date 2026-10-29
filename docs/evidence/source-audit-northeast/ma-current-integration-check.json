@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-28T14:38:21.568055+00:00",
+  "actor_type": "automated",
+  "proposal_sha256": "be209ea8132b6f34f4e168dc1cfd2f12c7704b123c8c19371615075473f1f7a1",
+  "activated_sources": [
+    {
+      "source_id": "ma-resolucao-211-2026-doe",
+      "status": "acquired",
+      "sha256": "5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3",
+      "physical_pages": 38,
+      "selected_pages": [
+        20,
+        21
+      ],
+      "region_bounds_pass": true
+    },
+    {
+      "source_id": "ma-portaria-181-2026-recomposicao-doe",
+      "status": "acquired",
+      "sha256": "d24ce340f3d74c9461d99079d8fdf9aab9d720c024fad89b7d198af2990a8f7e",
+      "physical_pages": 100,
+      "selected_pages": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ],
+      "region_bounds_pass": true
+    },
+    {
+      "source_id": "ma-dctma-educacao-digital-midiatica",
+      "status": "research_pending"
+    }
+  ],
+  "pending_typology_source_ids": [
+    "ma-decreto-42532-2026-em-verdade",
+    "ma-portaria-167-2026-em-verdade",
+    "ma-resolucao-162-2025-eiti-doe"
+  ],
+  "catalogue_candidate_count": 21,
+  "whole_UF_ready": false,
+  "limitations": [
+    "Three other acquired acts remain visibly pending scope classification in proposal, not silently excluded.",
+    "This integrates resolution/portaria and missing curriculum reference; no complete learning or source hierarchy reconciliation claimed.",
+    "Digital document original title is retained in source_topics; query facetComputação is taxonomy only, not an official title/identifier replacement."
+  ]
+}

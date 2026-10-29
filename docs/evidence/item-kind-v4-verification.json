@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-28T17:43:41.915645+00:00",
+  "classification": "focused_pure_diagnostic_not_full_or_release_validation",
+  "policy_version": "documentary-item-roles-2026-10-28-v4",
+  "learning_kind_count": 22,
+  "commands": [
+    {
+      "command": "node --import tsx --test tests/domain.item-kinds.test.ts tests/domain.age.test.ts",
+      "exit_code": 0,
+      "tests": 7,
+      "pass": 7,
+      "skipped": 0,
+      "log": "docs/evidence/item-kind-v4-pure-tests.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "exit_code": 0
+    },
+    {
+      "command": "npx eslint src/domain/item-kinds.ts tests/domain.item-kinds.test.ts",
+      "exit_code": 0
+    }
+  ],
+  "files_sha256": {
+    "src/domain/item-kinds.ts": "fecb6f8bb86302fee254019bf91b3f1ef6834449d54a2da766ab162ef89e5606",
+    "tests/domain.item-kinds.test.ts": "ebcd6e5c1d78ebf10294564ffded330c4c5d0c4e04d662e795edb78a235b323c",
+    "docs/methodology.md": "a02d0e8e4e2fa979510f1869c9582026d7a36a04ee5e6a5c39bfcd2dcf550c3d",
+    "docs/evidence/item-kind-decisions-v4.json": "a2bad671808eaff9d6c788356ccca79e94b0046f3b55c3a9318a75271253e99c",
+    "docs/evidence/item-kind-inventory.json": "78f6e6e16a959df1468aaf60f48326017bc01cf36d850d9429addae3b66dd7b0"
+  },
+  "scope": "No SQL suite, database mutation, pipeline/core edits or build performed in this policy round. Previous 91/91 predates v4 and is not verification of this policy revision.",
+  "initial_test_failure": "New test incorrectly assumed all221teacher actions had the Dicas column; eleven belong to the principle table p60. Corrected only that test assumption; strict inventory gate unchanged. Failed log preserved."
+}

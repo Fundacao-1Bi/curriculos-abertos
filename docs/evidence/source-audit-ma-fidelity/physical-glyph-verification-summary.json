@@ -1,0 +1,38 @@
+{
+  "sources": [
+    {
+      "source_id": "ma-dctm-em-vol2",
+      "source_sha256": "ca271258eccee9bf73682267ec680e32ec7fa43bc12216e7c30ea50c77a9dcd9",
+      "all_pages": 254,
+      "all_cells": 1526,
+      "cell_matches": 1526,
+      "cell_findings": 0,
+      "native_physical_clusters": 731172,
+      "unmatched_nonwhitespace_glyphs": 1420,
+      "typography_witnesses": {}
+    },
+    {
+      "source_id": "ma-dctm-ei-ef",
+      "source_sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
+      "all_pages": 482,
+      "all_cells": 6152,
+      "cell_matches": 6152,
+      "cell_findings": 0,
+      "native_physical_clusters": 1638870,
+      "unmatched_nonwhitespace_glyphs": 384,
+      "typography_witnesses": {
+        "source_actualtext_soft_hyphen_same_physical_glyph": 3713,
+        "unicode_ligature_same_physical_glyph": 30,
+        "source_hyphen_nominal_soft_hyphen_same_physical_glyph": 19
+      }
+    }
+  ],
+  "pages": 736,
+  "cells": 7678,
+  "cell_findings": 0,
+  "unmatched_nonwhitespace_glyphs": 1804,
+  "expanded_or_typographic_glyph_witnesses": 16645,
+  "source_text_modified": false,
+  "production_modified": false,
+  "method": "Full-page rawdict native-order clusters independently paired with physical get_texttrace glyphs by source font and exact origin. Soft hyphen/nominal space or hyphen and Unicode ligature expansion recognized only for the same physical glyph. Proposed source text is never changed by witness comparison."
+}

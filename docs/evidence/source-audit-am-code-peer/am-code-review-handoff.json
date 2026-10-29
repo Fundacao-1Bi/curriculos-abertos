@@ -1,0 +1,118 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:visual-primary-code-peer",
+  "implemented": "Exact inventory, explicit visual reading ledger, private original-pixel crops, data-only code-reference proposals, complete mechanical replay verifier.",
+  "executed": {
+    "reviewed_slots": 2629,
+    "known_slot_pages": 1038,
+    "primary_pixel_crops_replayed": 2629,
+    "proposal_regeneration_byte_identical": true
+  },
+  "verified": {
+    "confirmed_primary_code_only": 2628,
+    "not_a_code_in_this_crop": 1,
+    "unreviewed": 0,
+    "ambiguous_active": 0,
+    "negative_controls": {
+      "mutated_literal_rejected": true,
+      "body_verified_claim_rejected": true,
+      "inferred_position_rejected": true,
+      "unconfirmed_slot_cannot_emit": true,
+      "shifted_primary_crop_rejected": true
+    }
+  },
+  "scope_limits": {
+    "all_printed_source_codes_censused": false,
+    "definition_bodies_verified": false,
+    "positions_or_BNCC_equivalence_inferred": false,
+    "pedagogical_or_human_review": false,
+    "Source_binding_modified": false,
+    "core_modified": false,
+    "old_caches_modified": false,
+    "publication_performed": false
+  },
+  "pending": [
+    "Core producer/data-only raster review contract and explicit Source binding decision; proposals are not ingested.",
+    "Definition wording and full-source curriculum completeness remain outside this code-pixel review.",
+    "MS681 sharded read-only verification still awaits explicit final immutable manifest path and SHA from pipeline."
+  ],
+  "rejected_location": {
+    "slot_id": "am-rca-ei:p114:slot001",
+    "global_index": 2309,
+    "code": null,
+    "observed_prose": "e folhear livros.",
+    "absence_of_skill_asserted": false
+  },
+  "evidence_pins": [
+    {
+      "path": "docs/evidence/source-audit-am-code-peer/am-code-slot-ledger.json",
+      "sha256": "3666f1af298cb5a64a5d6ef3c00a6de58c31ce5af9e8cd0c31e90110d5b3afcf"
+    },
+    {
+      "path": "docs/evidence/source-audit-am-code-peer/am-code-visual-reviews.json",
+      "sha256": "0c81dec5f3dbb30c79eefc4af80ce3f3317354889b73a2b5973b9fcd60746979"
+    },
+    {
+      "path": "docs/evidence/source-audit-am-code-peer/am-primary-code-reference-proposal.json",
+      "sha256": "2cee3ac904005707b79787d6e60dcfe8086aa43f1c7f67c6327f88cbb784fe4d"
+    },
+    {
+      "path": "docs/evidence/source-audit-am-code-peer/am-code-review-verification.json",
+      "sha256": "15ebf4235a577e2de0b9d501bc54abcf638424e47b4228b51d59840aede512bb"
+    },
+    {
+      "path": "docs/evidence/source-audit-am-code-peer/am-code-proposal-idempotence.json",
+      "sha256": "91acd8e09c0ab66b81e67285711937d5b5debc9c42c065da794cf564271369a8"
+    },
+    {
+      "path": "docs/evidence/source-audit-am-code-peer/am-code-primary-versus-OCR-differences.json",
+      "sha256": "93d779c30f05aff81ae809d2accfe19534aa6df919dad29adc2bad3defe67443"
+    },
+    {
+      "path": "docs/evidence/source-audit-am-code-peer/build-inventory.py",
+      "sha256": "b2568b504a83ae7b821e3ce96a9ad14b6ca2bca0b644919212b62d2c659c68ff"
+    },
+    {
+      "path": "docs/evidence/source-audit-am-code-peer/build-contact-sheets.py",
+      "sha256": "85df505226a7c7a9d702b45a760e8c2017c6e4019b33a062989803711df7e4b8"
+    },
+    {
+      "path": "docs/evidence/source-audit-am-code-peer/record-visual-review.py",
+      "sha256": "cab3760c4eb9fe0b5ce028160f14043873f868b031266188ad7dc0965127cb30"
+    },
+    {
+      "path": "docs/evidence/source-audit-am-code-peer/build-reference-proposal.py",
+      "sha256": "5ff9627a87b91760445b83277968483e0d088401a30928bbb054410a76eef00b"
+    },
+    {
+      "path": "docs/evidence/source-audit-am-code-peer/verify-primary-code-review.py",
+      "sha256": "83f77b0264ffd53b3228b3de34ef99900575f717fd7e139278aad11bfdd2b79c"
+    },
+    {
+      "path": "docs/evidence/source-audit-am-code-peer/README.md",
+      "sha256": "813f3fb44f3618e3df1a6c4d020b782e57e83a33987cafb8258a687d91857b19"
+    }
+  ],
+  "proposals": [
+    {
+      "path": "data/manifests/uncoded/am-primary-code-references-ef-af.json",
+      "sha256": "25a640a5de81d6bac15c35db20f679e239705ef0353574682db244b0bbb644b8",
+      "items": 1202
+    },
+    {
+      "path": "data/manifests/uncoded/am-primary-code-references-ef-ai.json",
+      "sha256": "a24e5483f0f339f52fa79f14e87acf4fad9621395487415a225f0b5c1b062d95",
+      "items": 1017
+    },
+    {
+      "path": "data/manifests/uncoded/am-primary-code-references-ei.json",
+      "sha256": "8c4c957361483d556039860d27cb252655fdb031ddaf78b6ec1f00b3049fea0b",
+      "items": 152
+    },
+    {
+      "path": "data/manifests/uncoded/am-primary-code-references-em.json",
+      "sha256": "1061efc1adc70fb7670f008a2859e3791a2a5a4d861f9bcee3c3bd11d55f4062",
+      "items": 257
+    }
+  ]
+}

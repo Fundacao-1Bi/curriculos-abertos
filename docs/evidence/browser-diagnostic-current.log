@@ -1,0 +1,237 @@
+
+Running 8 tests using 1 worker
+
+(node:34756) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › tests/product.spec.ts:7:1 › consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade (6.6s)
+(node:34824) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [desktop] › tests/product.spec.ts:44:1 › busca vazia, código local, panorama nacional e contribuição persistida (1.2s)
+  ✘  3 [desktop] › tests/product.spec.ts:60:1 › J01 nacional: cada UF expõe registros reais e fontes na mesma publicação (1.6s)
+(node:34851) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  4 [desktop] › tests/product.spec.ts:76:1 › J01 estrutura documental: navegar até filhos e evidência sem conhecer código (190ms)
+(node:34864) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  5 [mobile] › tests/product.spec.ts:7:1 › consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade (6.5s)
+(node:34926) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  6 [mobile] › tests/product.spec.ts:44:1 › busca vazia, código local, panorama nacional e contribuição persistida (1.7s)
+  ✘  7 [mobile] › tests/product.spec.ts:60:1 › J01 nacional: cada UF expõe registros reais e fontes na mesma publicação (1.6s)
+(node:34952) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  8 [mobile] › tests/product.spec.ts:76:1 › J01 estrutura documental: navegar até filhos e evidência sem conhecer código (208ms)
+
+
+  1) [desktop] › tests/product.spec.ts:7:1 › consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected: "http://localhost:3000/buscar?q=CHSA01FG&publication=ca-77fb8076598b567e1ba3"
+    Received: "http://localhost:3000/?publication=ca-77fb8076598b567e1ba3"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        - waiting for "http://localhost:3000/?publication=ca-77fb8076598b567e1ba3" navigation to finish...
+        - navigated to "http://localhost:3000/?publication=ca-77fb8076598b567e1ba3"
+        14 × locator resolved to <html lang="pt-BR">…</html>
+           - unexpected value "http://localhost:3000/?publication=ca-77fb8076598b567e1ba3"
+
+
+      17 |  const searchUrl=page.url();await page.locator('.learning-list a').first().click();
+      18 |  await expect(page.locator('h1')).toBeVisible();await expect(page.getByText(item.text,{exact:false}).first()).toBeVisible();
+    > 19 |  await page.goBack();await expect(page).toHaveURL(searchUrl);
+         |                                         ^
+      20 |  await page.goto('/fontes?publication='+encodeURIComponent(found.publication));await expect(page.locator('main')).toContainText(/Fonte|fonte/);
+      21 |  await page.goto('/comparar?uf=SP&publication='+encodeURIComponent(found.publication));
+      22 |  await expect(page.locator('h1')).toBeVisible();
+        at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:19:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests/product.spec.ts:60:1 › J01 nacional: cada UF expõe registros reais e fontes na mesma publicação 
+
+    Error: AM precisa registros reais, não apenas cadastro
+
+    expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      64 |   const response=await request.get('/api/v1/aprendizagens?uf='+uf.uf+'&limit=1&publication='+encodeURIComponent(catalog.publication));
+      65 |   expect(response.ok()).toBeTruthy();const result=await response.json();
+    > 66 |   expect(result.data.length,uf.uf+' precisa registros reais, não apenas cadastro').toBeGreaterThan(0);
+         |                                                                                    ^
+      67 |   const item=result.data[0];expect(item.evidence.length).toBeGreaterThan(0);expect(item.uf).toBe(uf.uf);
+      68 |   await page.goto('/ufs/'+uf.uf+'?publication='+encodeURIComponent(catalog.publication));
+      69 |   await expect(page.locator('main')).toContainText(uf.name);
+        at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:66:84
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/product-J01-nacional-cada--f135b--fontes-na-mesma-publicação-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/product-J01-nacional-cada--f135b--fontes-na-mesma-publicação-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/product-J01-nacional-cada--f135b--fontes-na-mesma-publicação-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/product-J01-nacional-cada--f135b--fontes-na-mesma-publicação-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [desktop] › tests/product.spec.ts:76:1 › J01 estrutura documental: navegar até filhos e evidência sem conhecer código 
+
+    Error: Hierarquia original com nós sem código e filhos documentados necessária
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      84 |   if(node){selected={curriculum:curriculum.id,node};break;}
+      85 |  }
+    > 86 |  expect(selected,'Hierarquia original com nós sem código e filhos documentados necessária').toBeDefined();
+         |                                                                                             ^
+      87 |  const {curriculum,node}=selected!;
+      88 |  await page.goto('/curriculos/'+encodeURIComponent(curriculum)+'?publication='+encodeURIComponent(catalog.publication));
+      89 |  await page.getByRole('searchbox',{name:'Buscar na estrutura'}).fill(node.text);
+        at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:86:93
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/product-J01-estrutura-docu-1b2f6-idência-sem-conhecer-código-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/product-J01-estrutura-docu-1b2f6-idência-sem-conhecer-código-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/product-J01-estrutura-docu-1b2f6-idência-sem-conhecer-código-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/product-J01-estrutura-docu-1b2f6-idência-sem-conhecer-código-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [mobile] › tests/product.spec.ts:7:1 › consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected: "http://localhost:3000/buscar?q=CHSA01FG&publication=ca-77fb8076598b567e1ba3"
+    Received: "http://localhost:3000/?publication=ca-77fb8076598b567e1ba3"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        - waiting for "http://localhost:3000/?publication=ca-77fb8076598b567e1ba3" navigation to finish...
+        - navigated to "http://localhost:3000/?publication=ca-77fb8076598b567e1ba3"
+        13 × locator resolved to <html lang="pt-BR">…</html>
+           - unexpected value "http://localhost:3000/?publication=ca-77fb8076598b567e1ba3"
+
+
+      17 |  const searchUrl=page.url();await page.locator('.learning-list a').first().click();
+      18 |  await expect(page.locator('h1')).toBeVisible();await expect(page.getByText(item.text,{exact:false}).first()).toBeVisible();
+    > 19 |  await page.goBack();await expect(page).toHaveURL(searchUrl);
+         |                                         ^
+      20 |  await page.goto('/fontes?publication='+encodeURIComponent(found.publication));await expect(page.locator('main')).toContainText(/Fonte|fonte/);
+      21 |  await page.goto('/comparar?uf=SP&publication='+encodeURIComponent(found.publication));
+      22 |  await expect(page.locator('h1')).toBeVisible();
+        at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:19:41
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/product-consulta-integrada-8b318-comparação-e-acessibilidade-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [mobile] › tests/product.spec.ts:60:1 › J01 nacional: cada UF expõe registros reais e fontes na mesma publicação 
+
+    Error: AM precisa registros reais, não apenas cadastro
+
+    expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      64 |   const response=await request.get('/api/v1/aprendizagens?uf='+uf.uf+'&limit=1&publication='+encodeURIComponent(catalog.publication));
+      65 |   expect(response.ok()).toBeTruthy();const result=await response.json();
+    > 66 |   expect(result.data.length,uf.uf+' precisa registros reais, não apenas cadastro').toBeGreaterThan(0);
+         |                                                                                    ^
+      67 |   const item=result.data[0];expect(item.evidence.length).toBeGreaterThan(0);expect(item.uf).toBe(uf.uf);
+      68 |   await page.goto('/ufs/'+uf.uf+'?publication='+encodeURIComponent(catalog.publication));
+      69 |   await expect(page.locator('main')).toContainText(uf.name);
+        at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:66:84
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/product-J01-nacional-cada--f135b--fontes-na-mesma-publicação-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/product-J01-nacional-cada--f135b--fontes-na-mesma-publicação-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/product-J01-nacional-cada--f135b--fontes-na-mesma-publicação-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/product-J01-nacional-cada--f135b--fontes-na-mesma-publicação-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [mobile] › tests/product.spec.ts:76:1 › J01 estrutura documental: navegar até filhos e evidência sem conhecer código 
+
+    Error: Hierarquia original com nós sem código e filhos documentados necessária
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      84 |   if(node){selected={curriculum:curriculum.id,node};break;}
+      85 |  }
+    > 86 |  expect(selected,'Hierarquia original com nós sem código e filhos documentados necessária').toBeDefined();
+         |                                                                                             ^
+      87 |  const {curriculum,node}=selected!;
+      88 |  await page.goto('/curriculos/'+encodeURIComponent(curriculum)+'?publication='+encodeURIComponent(catalog.publication));
+      89 |  await page.getByRole('searchbox',{name:'Buscar na estrutura'}).fill(node.text);
+        at /Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/product.spec.ts:86:93
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/product-J01-estrutura-docu-1b2f6-idência-sem-conhecer-código-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/product-J01-estrutura-docu-1b2f6-idência-sem-conhecer-código-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/product-J01-estrutura-docu-1b2f6-idência-sem-conhecer-código-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/product-J01-estrutura-docu-1b2f6-idência-sem-conhecer-código-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6 failed
+    [desktop] › tests/product.spec.ts:7:1 › consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade 
+    [desktop] › tests/product.spec.ts:60:1 › J01 nacional: cada UF expõe registros reais e fontes na mesma publicação 
+    [desktop] › tests/product.spec.ts:76:1 › J01 estrutura documental: navegar até filhos e evidência sem conhecer código 
+    [mobile] › tests/product.spec.ts:7:1 › consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade 
+    [mobile] › tests/product.spec.ts:60:1 › J01 nacional: cada UF expõe registros reais e fontes na mesma publicação 
+    [mobile] › tests/product.spec.ts:76:1 › J01 estrutura documental: navegar até filhos e evidência sem conhecer código 
+  2 passed (22.6s)

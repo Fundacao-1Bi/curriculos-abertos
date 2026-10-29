@@ -1,0 +1,97 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:data_central_south",
+  "method": "Only3independently reviewed crosspage paragraph breaks; exact original source-line text and geometry re-read before candidate adapter generation. No blanket morphological boundary rule.",
+  "rules": [
+    {
+      "source_id": "df-competencias-digitais-vol2",
+      "artifact_sha256": "61ce27903cc1e113a8b9e282c207cce6de6a275847dc935adc052b8417b744c7",
+      "column": 1,
+      "before": {
+        "page": 40,
+        "text": "de ações corporais",
+        "bbox": [
+          169.92568969726562,
+          534.0637817382812,
+          251.79649353027344,
+          548.1327514648438
+        ]
+      },
+      "after": {
+        "page": 41,
+        "text": "Participar de pesquisas",
+        "bbox": [
+          163.0699005126953,
+          52.79429626464844,
+          257.96942138671875,
+          66.86329650878906
+        ]
+      },
+      "decision": "explicit_reviewed_source_page_boundary",
+      "reason": "Accept directed documentary boundary: new printed infinitive at next page, prior clause complete without terminal punctuation. Preserve this explicit reviewed case rather than blindly splitting all page breaks.",
+      "actor_type": "automated",
+      "actor_id": "codex:api_mcp:df-digital-peer",
+      "independent_review_path": "docs/evidence/source-audit-df-digital-peer/directed-boundary-review.json"
+    },
+    {
+      "source_id": "df-competencias-digitais-vol2",
+      "artifact_sha256": "61ce27903cc1e113a8b9e282c207cce6de6a275847dc935adc052b8417b744c7",
+      "column": 0,
+      "before": {
+        "page": 68,
+        "text": "existentes entre eles",
+        "bbox": [
+          57.254825592041016,
+          527.9945068359375,
+          139.85874938964844,
+          542.0634765625
+        ]
+      },
+      "after": {
+        "page": 69,
+        "text": "Participar e reconhecer",
+        "bbox": [
+          51.48429870605469,
+          52.79429626464844,
+          145.8168182373047,
+          66.86329650878906
+        ]
+      },
+      "decision": "explicit_reviewed_source_page_boundary",
+      "reason": "Accept directed documentary boundary: new printed infinitive at next page, prior clause complete without terminal punctuation. Preserve this explicit reviewed case rather than blindly splitting all page breaks.",
+      "actor_type": "automated",
+      "actor_id": "codex:api_mcp:df-digital-peer",
+      "independent_review_path": "docs/evidence/source-audit-df-digital-peer/directed-boundary-review.json"
+    },
+    {
+      "source_id": "df-competencias-digitais-vol3",
+      "artifact_sha256": "39e5f657705d0db6866e8966302ca00cc2eea697e40715d5aac209b9aed7aedd",
+      "column": 1,
+      "before": {
+        "page": 72,
+        "text": "cones",
+        "bbox": [
+          198.7079620361328,
+          527.9945678710938,
+          222.99595642089844,
+          542.0635375976562
+        ]
+      },
+      "after": {
+        "page": 73,
+        "text": "Utilizar noções de",
+        "bbox": [
+          172.23208618164062,
+          52.79441833496094,
+          249.493896484375,
+          66.86341857910156
+        ]
+      },
+      "decision": "explicit_reviewed_source_page_boundary",
+      "reason": "Accept directed documentary boundary: new printed infinitive at next page, prior clause complete without terminal punctuation. Preserve this explicit reviewed case rather than blindly splitting all page breaks.",
+      "actor_type": "automated",
+      "actor_id": "codex:api_mcp:df-digital-peer",
+      "independent_review_path": "docs/evidence/source-audit-df-digital-peer/directed-boundary-review.json"
+    }
+  ]
+}

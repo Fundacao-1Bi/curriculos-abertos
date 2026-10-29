@@ -1,0 +1,104 @@
+{
+  "source_id": "mg-crmg-em",
+  "source_sha256": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
+  "receipt_path": "docs/evidence/native-body-completeness-audit/mg-crmg-em-body-diff.json",
+  "receipt_sha256": "2cdff3b9819e62e7463518d82292bf0fdfcc05c64839cfbf3f00ad3d4271bd41",
+  "counts": {
+    "records_considered": 117,
+    "eligible_cell_end_to_next_literal_code_intervals": 87,
+    "unproved_contiguous_vertical_scope": 81,
+    "body_already_closed_before_strict_cell_end": 30,
+    "explicit_adjacent_role_ends_scope": 6
+  },
+  "findings": [],
+  "negative_role_exclusions": [
+    {
+      "page": 294,
+      "code": "EMIFMAT03",
+      "locator": "table:0/row:27/cell:1",
+      "bbox": [
+        134.78,
+        471.31,
+        510.1,
+        745.5699999999999
+      ],
+      "reason": "Explicit primary adjacent label changes documentary role.",
+      "adjacent_label": "Pressupostos Metodológic os"
+    },
+    {
+      "page": 295,
+      "code": "EMIFMAT06",
+      "locator": "table:0/row:42/cell:1",
+      "bbox": [
+        134.78,
+        452.59,
+        510.1,
+        642.1
+      ],
+      "reason": "Explicit primary adjacent label changes documentary role.",
+      "adjacent_label": "Pressupostos Metodológic os"
+    },
+    {
+      "page": 296,
+      "code": "EMIFMAT09",
+      "locator": "table:0/row:11/cell:1",
+      "bbox": [
+        134.78,
+        205.22,
+        510.1,
+        403.01
+      ],
+      "reason": "Explicit primary adjacent label changes documentary role.",
+      "adjacent_label": "Pressupostos Metodológic os"
+    },
+    {
+      "page": 299,
+      "code": "EMIFLGG03",
+      "locator": "table:0/row:25/cell:1",
+      "bbox": [
+        134.78,
+        491.10999999999996,
+        510.1,
+        746.23
+      ],
+      "reason": "Explicit primary adjacent label changes documentary role.",
+      "adjacent_label": "Pressupostos Metodológic os"
+    },
+    {
+      "page": 300,
+      "code": "EMIFLGG03",
+      "locator": "table:0/row:41/cell:1",
+      "bbox": [
+        134.78,
+        457.15000000000003,
+        510.1,
+        533.95
+      ],
+      "reason": "Explicit primary adjacent label changes documentary role.",
+      "adjacent_label": "Pressupostos Metodológic os"
+    },
+    {
+      "page": 319,
+      "code": "EMIFCHSA12",
+      "locator": "table:0/row:10/cell:1",
+      "bbox": [
+        154.46,
+        221.17999999999998,
+        510.1,
+        360.17
+      ],
+      "reason": "Explicit primary adjacent label changes documentary role.",
+      "adjacent_label": "Pressupostos Metodológicos"
+    }
+  ],
+  "unclassified_primary_labels_outside_repair_set": [],
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:body-runtime-verifier",
+  "whole_source_reconciled": false,
+  "uf_ready": false,
+  "limits": [
+    "Diagnostic scope: only first-page records whose independently recorded body end equals the strict-cell end.",
+    "Actual codes in both body and adjacent code column stop the scope, including mentions; unfamiliar namespaces are lexical boundaries, not automatic definitions. Zero findings is not proof of whole-Source completeness.",
+    "Unavailable/non-contiguous rulers remain unverified; no verb or sentence-shape boundary heuristic is used."
+  ]
+}

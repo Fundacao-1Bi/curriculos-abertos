@@ -1,0 +1,29 @@
+{
+  "snapshot_path": "var/private-evidence/source-audit-southeast-fidelity/snapshots/eb72ade7b1fd04439b0c4e6452bdf70c708ae27921b20f368062ae33b21e73a0/pipeline",
+  "source_path": "pipeline",
+  "files": {
+    "am_ocr_grid.py": "7b7e7f69141f67674171ea0c899b62bf42a4edf8e616ae2ea338f5b2b6f08883",
+    "am_positions.py": "350da7a503f331329616dadf8926909e59f15c4d1fa85ddd22f056f1b0a9f742",
+    "batch.py": "7ed9ddede22ff0a68eec37030e329b89bd91a594b5bf2cdf11a6caeb0ce780f9",
+    "correspondence.py": "24730b98ec8bfcb423fac8aba9a5007fae92fada1fda160ff305880b9b954b46",
+    "distribution.py": "88e0d758369eedb70418a7d65da33450b109038b128c4a52d34530bfa2e09f6e",
+    "es_ei_rows.py": "37f73cc3140e9ce2b696f7f6e8df5d7c0e299a3d71630fc23b7610f8178c1f72",
+    "es_geometry.py": "2ebd068da503da36fdc989901c02c727b0a8392b2fc3fea2dbd8096341916c68",
+    "geometry.py": "99b1dd2df6c73008a782baa8fd49ea32f45abf4b629a3fba2660693acfe88bc8",
+    "ingest.py": "0144cb7104de8c761abf5fe8f9eec38951491cf072ba2d15ae73703d4936a56d",
+    "ingestion_context.py": "faa3780952c77bd35c84461b73bce62125ccdad9afa66a58e84921ae1e141073",
+    "ms_glyphs.py": "b763a98f2c3691d05bdfbdf506804982bfdb37ef807a5fe8a7b7b85a043d21f1",
+    "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
+    "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
+    "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
+    "preflight.py": "71d7f702cce7b53b2e4b4f84ae361677ada7ea5b8c6d8ed7a7790e096e8ba7f1",
+    "probe.py": "a69b76b66c00490321609a98e1924dc7458612d4dc035fd9ec8b86ca6edd25ea",
+    "release_check.py": "2b634dc6b76a27e01a600458443d9883e637d7f888a34c990a68c39dc8934bf7",
+    "rn_document_roles.py": "a805aefdf01c19908b23059b7f4e5bcabaa28be58f0e2efdcb5314c4eedf67c7",
+    "rs_ms_geometry.py": "0104e06793e275bb420369323350c5341f06c39a2ecb5eb4682b7d84f045a3e7",
+    "runtime.py": "f1fc086e7155bc0106219da51892d8c80adf05b788b5daaf12b8e69493851b00",
+    "validate_artifact.py": "2a7f3e6b672d0b723ed1ca973776871da2fc0a07c7272a0c9c446d527c141e35"
+  },
+  "all_snapshot_bytes_equal_production_at_capture": true,
+  "purpose": "Integrated ES geometry immutable current parser; runtime guard enabled; data sources read only; cache and checksum writes intercepted."
+}

@@ -1,0 +1,15 @@
+# Published data contract and transport compatibility
+
+The immutable schema1.1.0 requires only `stage` in a Position. It permits omission or explicit null for component, area, years, year_label, age_group and period. Evidence requires source_id, page and excerpt; printed_page/section are optional, with a positive page or nonempty section required for localization. The Source dates/edition/hash/local path metadata are also optional as declared in the published contract.
+
+REST/MCP Zod validation and internal TypeScript declarations now preserve that distinction. No default, coercion, empty string or null is inserted for an absent field. Existing data and schema1.1.0 bytes remain unchanged. When supplied, field types, stage, school-year integer range1–12, evidence bbox shape, nonempty excerpt and localization are validated. Documentary age evidence/bounds checks remain enforced. OpenAPI is generated from the same corrected schemas.
+
+The complete BASE scan before the correction found3,393 records/4,422 transport issues across positions.period(2,443), positions.area(901), positions.age_group(901) and evidence.printed_page(177). JSON Schema validation already passed those records. After the correction, an independently captured validator snapshot scanned all303 Sources,200,724 items and57,425 relations: zero published-schema failures, zero REST/MCP schema failures and zero payload changes. The BASE SHA remained `be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d`.
+
+`verification.json` pins the code/tests/schema and records13 passing contract/age/hierarchy tests, global TypeScript and focused ESLint. The before/after scanner reports are retained alongside it. Installation failed before service creation in the first diagnostic image; an updated image and a separate installation run must verify deployment. These checks do not establish documentary completeness, national readiness or production installation.
+
+## Complete import path
+
+The second installation attempt exposed the same optional-field mismatch in the manual domain importer. It was corrected in `publication.ts`, the sharded relation path and a shared non-mutating Evidence guard. Source's optional dates/hash/local path, all six optional Position fields and optional Evidence printed_page/section are handled coherently. Mandatory artifact_url/page/stage, supplied types/ranges, source references, hierarchy, review actors and schema pins remain guarded.
+
+`after-manual-domain-fix-report.json` independently scanned every BASE Source/item/relation through the actual manual validators and then ran `verifyShardedManifest` over all parts: zero issues, with sockets/database access blocked. `manual-import-verification.json` records four passing tests with no skips on an owned PostgreSQL17.11 container: embedded import, sharded import, exact JSONB payload conservation of omitted versus explicit null, idempotence and rejection without a partially persisted publication. Only the owned test container was removed afterward. The production installer still requires its separate new image/run; no installation success is claimed here.

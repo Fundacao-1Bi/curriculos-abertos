@@ -1,0 +1,565 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 778B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.04kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/node:22.23.4-bookworm-slim
+#3 DONE 0.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 435B done
+#4 DONE 0.0s
+
+#5 [dependencies 1/4] FROM docker.io/library/node:22.23.4-bookworm-slim@sha256:0ad4c2bbb7c43cdb0b7b1726ef3a8485174f477596942378b548ee60d4e229e6
+#5 resolve docker.io/library/node:22.23.4-bookworm-slim@sha256:0ad4c2bbb7c43cdb0b7b1726ef3a8485174f477596942378b548ee60d4e229e6 done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 376.21kB 0.2s done
+#6 DONE 0.2s
+
+#7 [dependencies 2/4] WORKDIR /app
+#7 CACHED
+
+#8 [dependencies 3/4] COPY package.json package-lock.json ./
+#8 CACHED
+
+#9 [dependencies 4/4] RUN npm install --global npm@11.6.2 && npm ci
+#9 CACHED
+
+#10 [build 1/2] COPY . .
+#10 DONE 5.5s
+
+#11 [build 2/2] RUN npm run build
+#11 0.349 
+#11 0.349 > curriculos-abertos@0.1.0 build
+#11 0.349 > next build
+#11 0.349 
+#11 0.627 ▲ Next.js 16.4.3 (Turbopack)
+#11 0.689 ✓ Running next.config.ts took 62ms
+#11 0.695 
+#11 0.707   Creating an optimized production build ...
+#11 6.711 ✓ Compiled successfully in 6.0s
+#11 6.717   Running TypeScript ...
+#11 12.40   Finished TypeScript in 5.7s ...
+#11 12.40   Collecting page data using 9 workers ...
+#11 13.24   Generating static pages using 9 workers (0/4) ...
+#11 13.34   Generating static pages using 9 workers (1/4) 
+#11 13.36   Generating static pages using 9 workers (2/4) 
+#11 13.36   Generating static pages using 9 workers (3/4) 
+#11 13.36 ✓ Generating static pages using 9 workers (4/4) in 124ms
+#11 13.36 Turbopack build encountered 13 warnings:
+#11 13.36 ./src/domain/bundle-file.ts:38:57
+#11 13.36 Warning: Dynamic filesystem access causes tracing of the whole project
+#11 13.36   [90m36 |[0m ...(rootInput);[36mlet[0m latest:([33mBundleFileExpected[0m&{path?:string})|[36mundefined[0m;
+#11 13.36   [90m37 |[0m ...latest=[33mJSON[0m.parse([36mawait[0m readFile(resolve(root,[32m'latest.json'[0m),[32m'utf8'[0m));}[36mcatch[0m(error){[36mif[0m(...
+#11 13.36 [33m[1m>[0m [90m38 |[0m ...licit||latest?.path?[36mundefined[0m:([36mawait[0m readdir(root)).filter(x=>[35m/\.json(?:\.gz)?$/[0m.test(x...
+#11 13.36   [90m   |[0m                                         [33m[1m^^^^^^^^^^^^^[0m
+#11 13.36   [90m39 |[0m ...licit??latest?.path??(fallback?resolve(root,fallback):[36mundefined[0m);
+#11 13.36   [90m40 |[0m ... [33mError[0m([32m'Nenhuma publicação entregue em data/bundles.'[0m);
+#11 13.36   [90m41 |[0m ...e(filename),expected:explicit?[36mundefined[0m:latest,root};
+#11 13.36 
+#11 13.36 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#11 13.36 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#11 13.36 This can slow down deployments or lead to failures when size limits are exceeded.
+#11 13.36 To resolve this, you can
+#11 13.36 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#11 13.36 - only use them in development, or
+#11 13.36 - opt out by adding an ignore comment to the highlighted call: fs.readdir(/*turbopackIgnore: true*/ ...), or
+#11 13.36 - remove them.
+#11 13.36 
+#11 13.36 Import traces:
+#11 13.36   #1 [App Route]:
+#11 13.36     ./src/domain/bundle-file.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36   #2 [App Route]:
+#11 13.36     ./src/domain/bundle-file.ts
+#11 13.36     ./src/domain/shard-writer.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36 
+#11 13.36 ./src/domain/bundle-file.ts:14:19
+#11 13.36 Warning: Dynamic filesystem access causes tracing of the whole project
+#11 13.36   [90m12 |[0m [90m/** Verifies compressed bytes before bounded decompression, then verifies the decoded arti...[0m
+#11 13.36   [90m13 |[0m [36mexport[0m [36masync[0m [36mfunction[0m loadBundleFile(filename:string,options:[33mBundleFileOptions[0m={}) {
+#11 13.36 [33m[1m>[0m [90m14 |[0m  [36mconst[0m root=[36mawait[0m realpath(resolve(options.root??[32m'data/bundles'[0m)),path=[36mawait[0m realpath(reso...
+#11 13.36   [90m   |[0m                   [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#11 13.36   [90m15 |[0m  [36mif[0m(!path.startsWith(root+sep)||![35m/\.json(?:\.gz)?$/[0m.test(path))[36mthrow[0m [33mError[0m([32m'Bundle precisa...[0m
+#11 13.36   [90m16 |[0m  [36mconst[0m compressed=path.endsWith([32m'.gz'[0m);
+#11 13.36   [90m17 |[0m  [36mconst[0m maxFileBytes=bound(options.maxFileBytes,[33mNumber[0m(process.env.[33mDATA_MAX_FILE_BYTES[0m??[35m268...[0m
+#11 13.36 
+#11 13.36 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#11 13.36 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#11 13.36 This can slow down deployments or lead to failures when size limits are exceeded.
+#11 13.36 To resolve this, you can
+#11 13.36 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#11 13.36 - only use them in development, or
+#11 13.36 - opt out by adding an ignore comment to the highlighted call: fs.realpath(/*turbopackIgnore: true*/ ...), or
+#11 13.36 - remove them.
+#11 13.36 
+#11 13.36 Import traces:
+#11 13.36   #1 [App Route]:
+#11 13.36     ./src/domain/bundle-file.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36   #2 [App Route]:
+#11 13.36     ./src/domain/bundle-file.ts
+#11 13.36     ./src/domain/shard-writer.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36 
+#11 13.36 ./src/domain/bundle-file.ts:14:28
+#11 13.36 Warning: Dynamic filesystem access causes tracing of the whole project
+#11 13.36   [90m12 |[0m ...[90m* Verifies compressed bytes before bounded decompression, then verifies the decoded art...[0m
+#11 13.36   [90m13 |[0m ...[36mport[0m [36masync[0m [36mfunction[0m loadBundleFile(filename:string,options:[33mBundleFileOptions[0m={}) {
+#11 13.36 [33m[1m>[0m [90m14 |[0m ...[36monst[0m root=[36mawait[0m realpath(resolve(options.root??[32m'data/bundles'[0m)),path=[36mawait[0m realpath(res...
+#11 13.36   [90m   |[0m                             [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#11 13.36   [90m15 |[0m ...[36mf[0m(!path.startsWith(root+sep)||![35m/\.json(?:\.gz)?$/[0m.test(path))[36mthrow[0m [33mError[0m([32m'Bundle precis...[0m
+#11 13.36   [90m16 |[0m ...[36monst[0m compressed=path.endsWith([32m'.gz'[0m);
+#11 13.36   [90m17 |[0m ...[36monst[0m maxFileBytes=bound(options.maxFileBytes,[33mNumber[0m(process.env.[33mDATA_MAX_FILE_BYTES[0m??[35m26...[0m
+#11 13.36 
+#11 13.36 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#11 13.36 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#11 13.36 This can slow down deployments or lead to failures when size limits are exceeded.
+#11 13.36 To resolve this, you can
+#11 13.36 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#11 13.36 - only use them in development, or
+#11 13.36 - opt out by adding an ignore comment to the highlighted call: path.resolve(/*turbopackIgnore: true*/ ...), or
+#11 13.36 - remove them.
+#11 13.36 
+#11 13.36 Import traces:
+#11 13.36   #1 [App Route]:
+#11 13.36     ./src/domain/bundle-file.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36   #2 [App Route]:
+#11 13.36     ./src/domain/bundle-file.ts
+#11 13.36     ./src/domain/shard-writer.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36 
+#11 13.36 ./src/domain/bundle-file.ts:36:13
+#11 13.36 Warning: Dynamic filesystem access causes tracing of the whole project
+#11 13.36   [90m34 |[0m }
+#11 13.36   [90m35 |[0m [36mexport[0m [36masync[0m [36mfunction[0m resolveBundleFile(explicit?:string,rootInput=[32m'data/bundles'[0m) {
+#11 13.36 [33m[1m>[0m [90m36 |[0m  [36mconst[0m root=resolve(rootInput);[36mlet[0m latest:([33mBundleFileExpected[0m&{path?:string})|[36mundefined[0m;
+#11 13.36   [90m   |[0m             [33m[1m^^^^^^^^^^^^^^^^^^[0m
+#11 13.36   [90m37 |[0m  [36mif[0m(!explicit){[36mtry[0m{latest=[33mJSON[0m.parse([36mawait[0m readFile(resolve(root,[32m'latest.json'[0m),[32m'utf8'[0m));}[36m...[0m
+#11 13.36   [90m38 |[0m  [36mconst[0m fallback=explicit||latest?.path?[36mundefined[0m:([36mawait[0m readdir(root)).filter(x=>[35m/\.json(?...[0m
+#11 13.36   [90m39 |[0m  [36mconst[0m filename=explicit??latest?.path??(fallback?resolve(root,fallback):[36mundefined[0m);
+#11 13.36 
+#11 13.36 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#11 13.36 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#11 13.36 This can slow down deployments or lead to failures when size limits are exceeded.
+#11 13.36 To resolve this, you can
+#11 13.36 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#11 13.36 - only use them in development, or
+#11 13.36 - opt out by adding an ignore comment to the highlighted call: path.resolve(/*turbopackIgnore: true*/ ...), or
+#11 13.36 - remove them.
+#11 13.36 
+#11 13.36 Import traces:
+#11 13.36   #1 [App Route]:
+#11 13.36     ./src/domain/bundle-file.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36   #2 [App Route]:
+#11 13.36     ./src/domain/bundle-file.ts
+#11 13.36     ./src/domain/shard-writer.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36 
+#11 13.36 ./src/domain/json-snapshot-file.ts:72:25
+#11 13.36 Warning: Dynamic filesystem access causes tracing of the whole project
+#11 13.36   [90m70 |[0m ...[90mConverts complete JSON snapshots without retaining their national item/relation arrays. */[0m
+#11 13.36   [90m71 |[0m ...[36mrt[0m [36masync[0m [36mfunction[0m convertSnapshotFileToShards(filename:string,options:[33mSnapshotConversio...[0m
+#11 13.36 [33m[1m>[0m [90m72 |[0m ...[36mst[0m sourceRoot=[36mawait[0m realpath(resolve(options.root??[32m'data/bundles'[0m));
+#11 13.36   [90m   |[0m                        [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#11 13.36   [90m73 |[0m ...[36mst[0m path=[36mawait[0m realpath(resolve(filename));
+#11 13.36   [90m74 |[0m ...!path.startsWith(sourceRoot+sep)||![35m/\.json(?:\.gz)?$/[0m.test(path))[36mthrow[0m [33mError[0m([32m'Snapshot ...[0m
+#11 13.36   [90m75 |[0m ...[36mst[0m maxDecoded=streamLimit();[36mconst[0m info=[36mawait[0m stat(path);[36mif[0m(!info.isFile()||info.size<[35m1[0m|...
+#11 13.36 
+#11 13.36 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#11 13.36 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#11 13.36 This can slow down deployments or lead to failures when size limits are exceeded.
+#11 13.36 To resolve this, you can
+#11 13.36 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#11 13.36 - only use them in development, or
+#11 13.36 - opt out by adding an ignore comment to the highlighted call: fs.realpath(/*turbopackIgnore: true*/ ...), or
+#11 13.36 - remove them.
+#11 13.36 
+#11 13.36 Import traces:
+#11 13.36   #1 [App Route]:
+#11 13.36     ./src/domain/json-snapshot-file.ts
+#11 13.36     ./src/domain/shard-writer.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36   #2 [App Route]:
+#11 13.36     ./src/domain/json-snapshot-file.ts
+#11 13.36     ./src/domain/shards.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36 
+#11 13.36 ./src/domain/json-snapshot-file.ts:86:24
+#11 13.36 Warning: Dynamic filesystem access causes tracing of the whole project
+#11 13.36   [90m84 |[0m  [36mconst[0m cacheExpected={...options.expected,decoded_sha256:expectedDecoded};
+#11 13.36   [90m85 |[0m  [36mconst[0m cacheRoot=resolve(options.cacheRoot??[32m'data/extracted'[0m);workspaceRelative(cacheRoot).[36m..[0m
+#11 13.36 [33m[1m>[0m [90m86 |[0m  [36mconst[0m cacheBase=[36mawait[0m realpath(cacheRoot);workspaceRelative(cacheBase);
+#11 13.36   [90m   |[0m                        [33m[1m^^^^^^^^^^^^^^^^^^^[0m
+#11 13.36   [90m87 |[0m  [36mconst[0m directory=resolve(cacheBase,[32m`import-[0m${rawHash[32m}`[0m);
+#11 13.36   [90m88 |[0m  [36mconst[0m previous=[36mawait[0m cachedResult(directory,rawHash,info.size,cacheExpected,maxDecoded);[36mi.[0m..
+#11 13.36   [90m89 |[0m  [36mconst[0m temporary=[36mawait[0m mkdtemp(resolve(cacheBase,[32m`.import-[0m${rawHash[32m}-tmp-`[0m));
+#11 13.36 
+#11 13.36 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#11 13.36 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#11 13.36 This can slow down deployments or lead to failures when size limits are exceeded.
+#11 13.36 To resolve this, you can
+#11 13.36 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#11 13.36 - only use them in development, or
+#11 13.36 - opt out by adding an ignore comment to the highlighted call: fs.realpath(/*turbopackIgnore: true*/ ...), or
+#11 13.36 - remove them.
+#11 13.36 
+#11 13.36 Import traces:
+#11 13.36   #1 [App Route]:
+#11 13.36     ./src/domain/json-snapshot-file.ts
+#11 13.36     ./src/domain/shard-writer.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36   #2 [App Route]:
+#11 13.36     ./src/domain/json-snapshot-file.ts
+#11 13.36     ./src/domain/shards.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36 
+#11 13.36 ./src/domain/json-snapshot-file.ts:72:34
+#11 13.36 Warning: Dynamic filesystem access causes tracing of the whole project
+#11 13.36   [90m70 |[0m ...[90merts complete JSON snapshots without retaining their national item/relation arrays. */[0m
+#11 13.36   [90m71 |[0m ...[36msync[0m [36mfunction[0m convertSnapshotFileToShards(filename:string,options:[33mSnapshotConversionOpt...[0m
+#11 13.36 [33m[1m>[0m [90m72 |[0m ...ourceRoot=[36mawait[0m realpath(resolve(options.root??[32m'data/bundles'[0m));
+#11 13.36   [90m   |[0m                             [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#11 13.36   [90m73 |[0m ...ath=[36mawait[0m realpath(resolve(filename));
+#11 13.36   [90m74 |[0m ...h.startsWith(sourceRoot+sep)||![35m/\.json(?:\.gz)?$/[0m.test(path))[36mthrow[0m [33mError[0m([32m'Snapshot prec...[0m
+#11 13.36   [90m75 |[0m ...axDecoded=streamLimit();[36mconst[0m info=[36mawait[0m stat(path);[36mif[0m(!info.isFile()||info.size<[35m1[0m||inf...
+#11 13.36 
+#11 13.36 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#11 13.36 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#11 13.36 This can slow down deployments or lead to failures when size limits are exceeded.
+#11 13.36 To resolve this, you can
+#11 13.36 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#11 13.36 - only use them in development, or
+#11 13.36 - opt out by adding an ignore comment to the highlighted call: path.resolve(/*turbopackIgnore: true*/ ...), or
+#11 13.36 - remove them.
+#11 13.36 
+#11 13.36 Import traces:
+#11 13.36   #1 [App Route]:
+#11 13.36     ./src/domain/json-snapshot-file.ts
+#11 13.36     ./src/domain/shard-writer.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36   #2 [App Route]:
+#11 13.36     ./src/domain/json-snapshot-file.ts
+#11 13.36     ./src/domain/shards.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36 
+#11 13.36 ./src/domain/json-snapshot-file.ts:85:18
+#11 13.36 Warning: Dynamic filesystem access causes tracing of the whole project
+#11 13.36   [90m83 |[0m  [36mif[0m(options.expected?.decoded_bytes!==[36mundefined[0m&&(![33mNumber[0m.isSafeInteger(options.expected.d...
+#11 13.36   [90m84 |[0m  [36mconst[0m cacheExpected={...options.expected,decoded_sha256:expectedDecoded};
+#11 13.36 [33m[1m>[0m [90m85 |[0m  [36mconst[0m cacheRoot=resolve(options.cacheRoot??[32m'data/extracted'[0m);workspaceRelative(cacheRoot).[36m..[0m
+#11 13.36   [90m   |[0m                  [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#11 13.36   [90m86 |[0m  [36mconst[0m cacheBase=[36mawait[0m realpath(cacheRoot);workspaceRelative(cacheBase);
+#11 13.36   [90m87 |[0m  [36mconst[0m directory=resolve(cacheBase,[32m`import-[0m${rawHash[32m}`[0m);
+#11 13.36   [90m88 |[0m  [36mconst[0m previous=[36mawait[0m cachedResult(directory,rawHash,info.size,cacheExpected,maxDecoded);[36mi.[0m..
+#11 13.36 
+#11 13.36 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#11 13.36 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#11 13.36 This can slow down deployments or lead to failures when size limits are exceeded.
+#11 13.36 To resolve this, you can
+#11 13.36 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#11 13.36 - only use them in development, or
+#11 13.36 - opt out by adding an ignore comment to the highlighted call: path.resolve(/*turbopackIgnore: true*/ ...), or
+#11 13.36 - remove them.
+#11 13.36 
+#11 13.36 Import traces:
+#11 13.36   #1 [App Route]:
+#11 13.36     ./src/domain/json-snapshot-file.ts
+#11 13.36     ./src/domain/shard-writer.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36   #2 [App Route]:
+#11 13.36     ./src/domain/json-snapshot-file.ts
+#11 13.36     ./src/domain/shards.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36 
+#11 13.36 ./src/domain/schema-pin.ts:50:20
+#11 13.36 Warning: Dynamic filesystem access causes tracing of the whole project
+#11 13.36   [90m48 |[0m  [36mtry[0m{
+#11 13.36   [90m49 |[0m   [36mif[0m(([36mawait[0m lstat(root)).isSymbolicLink()||([36mawait[0m lstat(path)).isSymbolicLink())fail([32m'SCHE...[0m
+#11 13.36 [33m[1m>[0m [90m50 |[0m   [36mconst[0m base=[36mawait[0m realpath(root),located=[36mawait[0m realpath(path);[36mif[0m(located!==join(base,vers...
+#11 13.36   [90m   |[0m                    [33m[1m^^^^^^^^^^^^^^[0m
+#11 13.36   [90m51 |[0m   [36mconst[0m file=[36mawait[0m open(located,constants.[33mO_RDONLY[0m|constants.[33mO_NOFOLLOW[0m);[36mlet[0m bytes:[33mBuffer[0m;
+#11 13.36   [90m52 |[0m   [36mtry[0m{[36mconst[0m info=[36mawait[0m file.stat();[36mif[0m(!info.isFile()||info.size<[35m1[0m||info.size>[33mMAX_SCHEMA_BY...[0m
+#11 13.36   [90m53 |[0m   [36mconst[0m hash=createHash([32m'sha256'[0m).update(bytes).digest([32m'hex'[0m);[36mif[0m(hash!==[33mPUBLICATION_SCHEMA.[0m..
+#11 13.36 
+#11 13.36 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#11 13.36 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#11 13.36 This can slow down deployments or lead to failures when size limits are exceeded.
+#11 13.36 To resolve this, you can
+#11 13.36 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#11 13.36 - only use them in development, or
+#11 13.36 - opt out by adding an ignore comment to the highlighted call: fs.realpath(/*turbopackIgnore: true*/ ...), or
+#11 13.36 - remove them.
+#11 13.36 
+#11 13.36 Import traces:
+#11 13.36   #1 [App Route]:
+#11 13.36     ./src/domain/schema-pin.ts
+#11 13.36     ./src/domain/publication.ts
+#11 13.36     ./src/admin/curation.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36   #2 [Server Component]:
+#11 13.36     ./src/domain/schema-pin.ts
+#11 13.36     ./src/domain/publication.ts
+#11 13.36     ./src/domain/service.ts
+#11 13.36     ./src/app/downloads/page.tsx
+#11 13.36 
+#11 13.36   #3 [App Route]:
+#11 13.36     ./src/domain/schema-pin.ts
+#11 13.36     ./src/domain/shard-writer.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36 
+#11 13.36 ./src/domain/schema-pin.ts:44:13
+#11 13.36 Warning: Dynamic filesystem access causes tracing of the whole project
+#11 13.36   [90m42 |[0m [90m/** Original/restore bundle roots share data/schema; transcode caches explicitly retain th...[0m
+#11 13.36   [90m43 |[0m [36mexport[0m [36mfunction[0m schemaRootForBundleRoot(bundleRoot?:string):string{
+#11 13.36 [33m[1m>[0m [90m44 |[0m  [36mconst[0m root=resolve(bundleRoot??[32m'data/bundles'[0m);[36mreturn[0m basename(root)===[32m'bundles'[0m&&basenam...
+#11 13.36   [90m   |[0m             [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#11 13.36   [90m45 |[0m }
+#11 13.36   [90m46 |[0m [36mexport[0m [36masync[0m [36mfunction[0m verifyPublicationSchema(value:[33mDeclaration[0m,options:[33mSchemaPinOptions[0m={...
+#11 13.36   [90m47 |[0m  [36mconst[0m version=assertSchemaDeclaration(value),root=resolve(options.schemaRoot??[32m'data/schem..[0m.
+#11 13.36 
+#11 13.36 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#11 13.36 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#11 13.36 This can slow down deployments or lead to failures when size limits are exceeded.
+#11 13.36 To resolve this, you can
+#11 13.36 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#11 13.36 - only use them in development, or
+#11 13.36 - opt out by adding an ignore comment to the highlighted call: path.resolve(/*turbopackIgnore: true*/ ...), or
+#11 13.36 - remove them.
+#11 13.36 
+#11 13.36 Import traces:
+#11 13.36   #1 [App Route]:
+#11 13.36     ./src/domain/schema-pin.ts
+#11 13.36     ./src/domain/publication.ts
+#11 13.36     ./src/admin/curation.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36   #2 [Server Component]:
+#11 13.36     ./src/domain/schema-pin.ts
+#11 13.36     ./src/domain/publication.ts
+#11 13.36     ./src/domain/service.ts
+#11 13.36     ./src/app/downloads/page.tsx
+#11 13.36 
+#11 13.36   #3 [App Route]:
+#11 13.36     ./src/domain/schema-pin.ts
+#11 13.36     ./src/domain/shard-writer.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36 
+#11 13.36 ./src/domain/schema-pin.ts:47:52
+#11 13.36 Warning: Dynamic filesystem access causes tracing of the whole project
+#11 13.36   [90m45 |[0m ...
+#11 13.36   [90m46 |[0m ...ublicationSchema(value:[33mDeclaration[0m,options:[33mSchemaPinOptions[0m={}):[33mPromise[0m<[33mVerifiedPublica...[0m
+#11 13.36 [33m[1m>[0m [90m47 |[0m ...claration(value),root=resolve(options.schemaRoot??[32m'data/schema'[0m),path=join(root,version.[32m..[0m
+#11 13.36   [90m   |[0m                          [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#11 13.36   [90m48 |[0m ...
+#11 13.36   [90m49 |[0m ...mbolicLink()||([36mawait[0m lstat(path)).isSymbolicLink())fail([32m'SCHEMA_PATH_ESCAPE'[0m,[32m'JSON Sche...[0m
+#11 13.36   [90m50 |[0m ...oot),located=[36mawait[0m realpath(path);[36mif[0m(located!==join(base,version+[32m'.json'[0m))fail([32m'SCHEMA_...[0m
+#11 13.36 
+#11 13.36 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#11 13.36 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#11 13.36 This can slow down deployments or lead to failures when size limits are exceeded.
+#11 13.36 To resolve this, you can
+#11 13.36 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#11 13.36 - only use them in development, or
+#11 13.36 - opt out by adding an ignore comment to the highlighted call: path.resolve(/*turbopackIgnore: true*/ ...), or
+#11 13.36 - remove them.
+#11 13.36 
+#11 13.36 Import traces:
+#11 13.36   #1 [App Route]:
+#11 13.36     ./src/domain/schema-pin.ts
+#11 13.36     ./src/domain/publication.ts
+#11 13.36     ./src/admin/curation.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36   #2 [Server Component]:
+#11 13.36     ./src/domain/schema-pin.ts
+#11 13.36     ./src/domain/publication.ts
+#11 13.36     ./src/domain/service.ts
+#11 13.36     ./src/app/downloads/page.tsx
+#11 13.36 
+#11 13.36   #3 [App Route]:
+#11 13.36     ./src/domain/schema-pin.ts
+#11 13.36     ./src/domain/shard-writer.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36 
+#11 13.36 ./src/domain/shard-writer.ts:107:61
+#11 13.36 Warning: Dynamic filesystem access causes tracing of the whole project
+#11 13.36   [90m105 |[0m ...ath(process.cwd());[36mconst[0m requestedRoot=resolve(options.root??[32m'data/bundles'[0m);
+#11 13.36   [90m106 |[0m ...rkspace))[36mthrow[0m [33mError[0m([32m'Raiz do artefato deve estar no workspace.'[0m);
+#11 13.36 [33m[1m>[0m [90m107 |[0m ...requestedRoot);[36mconst[0m root=[36mawait[0m realpath(requestedRoot);
+#11 13.36   [90m    |[0m                                    [33m[1m^^^^^^^^^^^^^^^^^^^^^^^[0m
+#11 13.36   [90m108 |[0m ...[36mthrow[0m [33mError[0m([32m'Raiz física do artefato fora do workspace.'[0m);
+#11 13.36   [90m109 |[0m ...solve(options.directory);
+#11 13.36   [90m110 |[0m ...ry,root))[36mthrow[0m [33mError[0m([32m'Diretório de artefato fora da raiz permitida.'[0m);
+#11 13.36 
+#11 13.36 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#11 13.36 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#11 13.36 This can slow down deployments or lead to failures when size limits are exceeded.
+#11 13.36 To resolve this, you can
+#11 13.36 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#11 13.36 - only use them in development, or
+#11 13.36 - opt out by adding an ignore comment to the highlighted call: fs.realpath(/*turbopackIgnore: true*/ ...), or
+#11 13.36 - remove them.
+#11 13.36 
+#11 13.36 Import trace:
+#11 13.36   App Route:
+#11 13.36     ./src/domain/shard-writer.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36 
+#11 13.36 ./src/domain/shard-writer.ts:105:68
+#11 13.36 Warning: Dynamic filesystem access causes tracing of the whole project
+#11 13.36   [90m103 |[0m ...
+#11 13.36   [90m104 |[0m ...[32mers'[0m,[32m'contributions'[0m,[32m'admin'[0m,[32m'sessions'[0m,[32m'passwords'[0m])[36mif[0m([33mObject[0m.hasOwn(header,key))[36mthro.[0m.[33m.[0m
+#11 13.36 [33m[1m>[0m [90m105 |[0m ...d());[36mconst[0m requestedRoot=resolve(options.root??[32m'data/bundles'[0m);
+#11 13.36   [90m    |[0m                             [33m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+#11 13.36   [90m106 |[0m ... [33mError[0m([32m'Raiz do artefato deve estar no workspace.'[0m);
+#11 13.36   [90m107 |[0m ...;[36mconst[0m root=[36mawait[0m realpath(requestedRoot);
+#11 13.36   [90m108 |[0m ...[32maiz física do artefato fora do workspace.'[0m);
+#11 13.36 
+#11 13.36 Static analysis determined that this filesystem access causes the whole project to be traced and included in the output.
+#11 13.36 This is usually unintentional and leads to all source files (including the public folder) to be deployed as part of the server code.
+#11 13.36 This can slow down deployments or lead to failures when size limits are exceeded.
+#11 13.36 To resolve this, you can
+#11 13.36 - make sure the path is statically scoped to some subfolder, for example path.join(process.cwd(), 'data', bar), or
+#11 13.36 - only use them in development, or
+#11 13.36 - opt out by adding an ignore comment to the highlighted call: path.resolve(/*turbopackIgnore: true*/ ...), or
+#11 13.36 - remove them.
+#11 13.36 
+#11 13.36 Import trace:
+#11 13.36   App Route:
+#11 13.36     ./src/domain/shard-writer.ts
+#11 13.36     ./src/domain/ingestion-update.ts
+#11 13.36     ./src/admin/candidates.ts
+#11 13.36     ./src/app/api/admin/[...path]/route.ts
+#11 13.36 
+#11 13.36 
+#11 13.36   Finalizing page optimization ...
+#11 13.37 
+#11 13.38 Route (app)
+#11 13.38 ┌ ƒ /
+#11 13.38 ├ ○ /_not-found
+#11 13.38 ├ ƒ /admin
+#11 13.38 ├ ƒ /analises
+#11 13.38 ├ ƒ /api/admin/[...path]
+#11 13.38 ├ ƒ /api/auth/[...all]
+#11 13.38 ├ ƒ /api/health
+#11 13.38 ├ ƒ /api/metrics
+#11 13.38 ├ ƒ /api/ready
+#11 13.38 ├ ƒ /api/v1/[[...path]]
+#11 13.38 ├ ƒ /aprendizagens/[id]
+#11 13.38 ├ ƒ /buscar
+#11 13.38 ├ ƒ /comparar
+#11 13.38 ├ ƒ /contribuir
+#11 13.38 ├ ƒ /curriculos/[id]
+#11 13.38 ├ ƒ /desenvolvedores
+#11 13.38 ├ ƒ /desenvolvedores/openapi
+#11 13.38 ├ ƒ /downloads
+#11 13.38 ├ ƒ /fontes
+#11 13.38 ├ ○ /icon.svg
+#11 13.38 ├ ƒ /mcp
+#11 13.38 ├ ƒ /panorama/[id]
+#11 13.38 ├ ƒ /publicacoes
+#11 13.38 └ ƒ /ufs/[uf]
+#11 13.38 
+#11 13.38 
+#11 13.38 ○  (Static)   prerendered as static content
+#11 13.38 ƒ  (Dynamic)  server-rendered on demand
+#11 13.38 
+#11 DONE 13.5s
+
+#12 [production 3/6] COPY pipeline/requirements.txt /tmp/pipeline-requirements.txt
+#12 CACHED
+
+#13 [production 4/6] RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-venv poppler-utils tesseract-ocr tesseract-ocr-por tesseract-ocr-osd ca-certificates && rm -rf /var/lib/apt/lists/*  && python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r /tmp/pipeline-requirements.txt && npm install --global npm@11.6.2
+#13 CACHED
+
+#14 [production 5/6] COPY --from=build --chown=node:node /app ./
+#14 DONE 4.8s
+
+#15 [production 6/6] RUN mkdir -p /app/var /app/data/raw /app/data/extracted && chown node:node /app/var /app/data /app/data/raw /app/data/extracted
+#15 DONE 0.2s
+
+#16 exporting to image
+#16 exporting layers
+#16 exporting layers 24.0s done
+#16 exporting manifest sha256:63229fc73cabe06df12d9752f29eab733fa2a5ec89d4f58ac7fd476f50cf15eb done
+#16 exporting config sha256:7b0c4f572b03462a0d80418dd6154fde148775714d3d10f2f7bcd914f699e2ac done
+#16 exporting attestation manifest sha256:50157792cf3f7c300ecffe520da06491618f5d903c94d6e34163ee0842b2ad8b done
+#16 exporting manifest list sha256:edf22936409b349fbba836a7ae565f7b6d7a2fd816f217aff59574aa96701bd0 done
+#16 naming to docker.io/library/curriculos-abertos:diag-base-20261028t195651-4a29dd done
+#16 unpacking to docker.io/library/curriculos-abertos:diag-base-20261028t195651-4a29dd
+#16 unpacking to docker.io/library/curriculos-abertos:diag-base-20261028t195651-4a29dd 7.8s done
+#16 DONE 32.0s
+
+#17 resolving provenance for metadata file
+#17 DONE 0.1s
+ curriculos-abertos:diag-base-20261028t195651-4a29dd  Built

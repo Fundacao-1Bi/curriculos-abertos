@@ -1,0 +1,30 @@
+{
+  "actor_type": "automated",
+  "actor_id": "agent:rs_adapter:rn-backcover-visual-check",
+  "source_id": "rn-trilhas-aprofundamento",
+  "source_sha256": "fac7333112fcfaac3d99d74f72f206bea8e9a4b256e770a9ea0f2eace99b027a",
+  "page": 485,
+  "native_text_empty": true,
+  "classification": "graphic_back_cover_not_curricular_body",
+  "render_observation": "Brasão, RIO GRANDE DO NORTE / GOVERNO DO ESTADO / SECRETARIA DE ESTADO DA EDUCAÇÃO, DA CULTURA, DO ESPORTE E DO LAZER — SEEC and ISBN/barcode. No curricular objectives, fields or codes. Not a blank page.",
+  "private_render_path": "var/private-evidence/source-audit-rn-uncoded/p485-empty-native-check.png",
+  "private_render_sha256": "efd412938890acdaf92a6fd0c3a05192fe68737e5d5bc34de7188cad7cbed827",
+  "real_parser_warnings": [
+    {
+      "page": 485,
+      "issue": "no_extractable_text_or_ocr_failed",
+      "error": "Cannot fingerprint installed OCR language model por; configure TESSDATA_PREFIX explicitly."
+    }
+  ],
+  "real_parser_ocr_pending": true,
+  "real_parser_pages": [
+    {
+      "page": 485,
+      "method": "pymupdf-native",
+      "ocr_required": true,
+      "ocr_completed": false
+    }
+  ],
+  "source_scope_change_not_applied": true,
+  "scope_note": "All485 original pages inspected; body ends484. Any OCR exclusion requires explicit Source owner metadata, never a fabricated OCR success."
+}

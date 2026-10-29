@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "actor_type": "automated",
+  "started_at": "2026-10-28T13:46:19.741Z",
+  "completed_at": "2026-10-28T13:47:23.642Z",
+  "source": "pe-historia-pernambuco-2026",
+  "job_id": "dc2b475a-72e1-4e03-a960-f78187c8caee",
+  "publication": null,
+  "original_default": "ca-77fb8076598b567e1ba3",
+  "checks": [
+    {
+      "name": "temporary_automated_administrator_logged_in",
+      "passed": true
+    },
+    {
+      "name": "official_cached_source_enqueued_through_authenticated_api",
+      "passed": true,
+      "detail": {
+        "job_id": "dc2b475a-72e1-4e03-a960-f78187c8caee",
+        "source": "pe-historia-pernambuco-2026"
+      }
+    }
+  ],
+  "passed": false,
+  "error": "Pipeline real recusou montar o candidato: Unresolved NUL in record ca:rn-documento-ef-2018:1c98e4abda01b69b1481"
+}

@@ -1,0 +1,45 @@
+{
+  "actor_type": "automated",
+  "scope": "One literal code comparison only, no claim of equivalent edition, wording, ID, or automatic alias. OCR spelling is only a locator candidate, not accepted source code.",
+  "crops": [
+    {
+      "label": "339-page-116",
+      "artifact": "data/raw/AP/ap-rca-ei-ef.pdf",
+      "artifact_sha256": "fc40788a0165eb6fa61d713cee87d4b0b95b45435e496b43bb477f9471a103c4",
+      "page": 116,
+      "bbox": [
+        307.6000061035156,
+        241.1999969482422,
+        376.3999938964844,
+        255.1999969482422
+      ],
+      "private_image_path": "var/private-evidence/source-audit-ap-peer/339-page-116-printed-code.png",
+      "png_sha256": "e5a4900c1af9e1389251aec6b24c4a348cead022890b343d93ac288e5402bf0d"
+    },
+    {
+      "label": "614-page-240",
+      "artifact": "data/raw/AP/ap-native-ei-ef.pdf",
+      "artifact_sha256": "23c42348e0b0e00d4135a108366141a257bec54b7b1bff79e521c822d9903f89",
+      "page": 240,
+      "bbox": [
+        342.2099914550781,
+        246.03001403808594,
+        431.04998779296875,
+        263.4100036621094
+      ],
+      "private_image_path": "var/private-evidence/source-audit-ap-peer/614-page-240-printed-code.png",
+      "png_sha256": "60d43081eb7c1c9ae178916c652427262523947019b764c70a1011e6c47802f2"
+    }
+  ],
+  "new_OCR_executed": false,
+  "human_pedagogical_review_claimed": false,
+  "visual_observation": {
+    "actor_type": "automated",
+    "method": "Direct visual inspection of both private primary pixel crops",
+    "printed_code_339_page116": "EF15LP-AP01",
+    "printed_code_614_page240": "EF15LP-AP01",
+    "same_literal_in_this_probe": true,
+    "OCR_candidate_EFISLR_APD1_is_not_accepted_source_code": true,
+    "does_not_establish_edition_or_wording_equivalence": true
+  }
+}

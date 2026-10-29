@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-28T18:46:04.628Z",
+  "not_a_full_corpus_measurement": true,
+  "basis": "Provisioning scenario before the final FULL artifact exists; actual stage budgets replace these inputs. Main PostgreSQL measured1.55GB/155487items across5pub; historic ca77 fullJSON~241.5MB/38322items.",
+  "scenario": {
+    "artifact": {
+      "publication": "planning-scenario-only",
+      "compressed_bytes": 209715200,
+      "decoded_bytes": 1610612736,
+      "metadata_bytes": 4194304,
+      "items": 200000,
+      "largest_uf": "SP",
+      "largest_uf_primary_bytes": 209715200,
+      "largest_uf_items": 30000,
+      "national_json_upper_bytes": 3221225472
+    },
+    "database": {
+      "database_bytes": 2147483648,
+      "item_payload_bytes": 1342177280,
+      "relation_payload_bytes": 214748364,
+      "source_payload_bytes": 4194304,
+      "metadata_bytes": 4194304,
+      "coverage_bytes": 4194304,
+      "id_bytes": 16777216,
+      "items": 200000,
+      "largest_uf": "SP",
+      "largest_uf_primary_bytes": 209715200,
+      "largest_uf_items": 30000,
+      "national_json_upper_bytes": 1610612736
+    }
+  },
+  "budgets": {
+    "production": {
+      "stage": "production",
+      "components": [
+        {
+          "name": "new database including indexes",
+          "bytes": 6442450944,
+          "basis": "estimate: 2 × verified artifact JSON upper bound; replaced by measured PG size after import"
+        },
+        {
+          "name": "WAL during import",
+          "bytes": 6442450944,
+          "basis": "one estimated database or 1GiB"
+        },
+        {
+          "name": "index build workspace",
+          "bytes": 1610612736,
+          "basis": "25% of estimated database"
+        }
+      ],
+      "subtotal_bytes": 14495514624,
+      "reserve_bytes": 2899102925,
+      "required_free_bytes": 17394617549,
+      "notes": [
+        "Estimated before the first database exists; no claim of measured FULL runtime size.",
+        "Existing main/rollback databases and the production image are already allocated and are not reclaimable budget inputs."
+      ]
+    },
+    "reimport": {
+      "stage": "reimport",
+      "components": [
+        {
+          "name": "server exports national + largest-UF closure",
+          "bytes": 3221225472,
+          "basis": "measured SQL payload upper bound; UF support bounded by entire national graph"
+        },
+        {
+          "name": "client HTTP downloads national + largest-UF closure",
+          "bytes": 3221225472,
+          "basis": "second complete copy, both checked before cleanup"
+        },
+        {
+          "name": "stream-converted shards and manifests",
+          "bytes": 3296722944,
+          "basis": "allow gzip output as large as decoded JSON plus two metadata headers and bounded chunk workspace"
+        },
+        {
+          "name": "disposable reimport database: national + UF",
+          "bytes": 4294967296,
+          "basis": "twice measured clean database, including its indexes"
+        },
+        {
+          "name": "WAL and sort workspace",
+          "bytes": 2684354560,
+          "basis": "one database of WAL and 25% index workspace"
+        }
+      ],
+      "subtotal_bytes": 16718495744,
+      "reserve_bytes": 3343699149,
+      "required_free_bytes": 20062194893,
+      "notes": [
+        "Largest primary UF SP: 30000 items/209715200 SQL bytes.",
+        "Delivered artifact: 1610612736 decoded/209715200 compressed bytes.",
+        "The national and UF copies coexist until complete byte/record verification. Cleanup occurs only after evidence, not as an assumption that reduces peak.",
+        "No fixed 3-GiB allowance; measured PostgreSQL and full payload sizes drive this budget."
+      ]
+    },
+    "recovery": {
+      "stage": "recovery",
+      "components": [
+        {
+          "name": "pg_dump archive and restored database",
+          "bytes": 4294967296,
+          "basis": "measured clean PostgreSQL size, two copies"
+        },
+        {
+          "name": "WAL and restore index workspace",
+          "bytes": 2684354560,
+          "basis": "one database of WAL and 25% workspace"
+        },
+        {
+          "name": "data archive + extracted data",
+          "bytes": 2147483648,
+          "basis": "measured logical bytes in manifests/bundles/schema/coverage"
+        },
+        {
+          "name": "storage archive + restored storage",
+          "bytes": 214748364,
+          "basis": "measured files in the isolated QA storage volume"
+        }
+      ],
+      "subtotal_bytes": 9341553868,
+      "reserve_bytes": 2147483648,
+      "required_free_bytes": 11489037516,
+      "notes": [
+        "Private backup archives remain preserved.",
+        "Only the uniquely named restored database and extracted QA copies may be removed after complete restore verification."
+      ]
+    }
+  },
+  "build_minimum_gib_unchanged": 15,
+  "host_free_bytes": 7166398464,
+  "build_shortfall_bytes": 8939728896,
+  "provisional_free_space_target_gib": 40,
+  "why_target_is_not_an_acceptance_threshold": "40GiB is a provisioning envelope for one final build plus main FULL/J11 snapshots and sequential QA; the frozen artifact and measured PG sizes determine actual per-stage guards."
+}

@@ -1,0 +1,186 @@
+{
+  "format": "record_replacement_pairs_v1",
+  "source_id": "pi-curriculo-ei-ef",
+  "source_sha256": "609e955a2774afe6b25451b6d597005fcedc9b769cbf1a00916caaaab40f426e",
+  "cache_sha256": "fa8ad3f4feeceb3032e7fc7e5ed89efbc8725ceb288c39254f70f13c16db889f",
+  "previous_full_cache_sha256": "18087f5d7d80975c943577d56228d984678645f56fc84ff382843df096a12d5e",
+  "previous_full_cache_preserved_at": "var/ne-pi-eief-glyph-candidate/previous-full-cache.json",
+  "candidate_scoped_cache_path": "var/ne-pi-eief-glyph-candidate/isolated-extraction.json",
+  "candidate_scoped_cache_sha256": "fa8ad3f4feeceb3032e7fc7e5ed89efbc8725ceb288c39254f70f13c16db889f",
+  "actor_type": "automated",
+  "actor_id": "codex:data_northeast:pi_glyph_locator_migration",
+  "at": "2026-10-28T21:17:42.820888+00:00",
+  "scope": "technical_extraction_correction",
+  "previous_publications_immutable": true,
+  "official_curriculum_edition_changed": false,
+  "pairs": [
+    {
+      "old_id": "ca:pi-curriculo-ei-ef:2bdd74bbd89e92b209db",
+      "new_id": "ca:pi-curriculo-ei-ef:dd91a91fca300c28f7be",
+      "old_code": "EF02GE03",
+      "new_code": "EF02GE03",
+      "page": 257,
+      "old_locator": "table:0/column:158.5-380.6/anchor:0",
+      "new_locator": "table:0/row:2/cell:1",
+      "locator": "table:0/row:2/cell:1",
+      "reason": "The same literal skill occurrence is now read directly from its actual ruled cell; the former continuation-recovery fallback record is technically superseded. Glyph order correction, not a new official skill or edition.",
+      "old_method": "ruled-column-continuation-recovery",
+      "new_method": "pymupdf-ruled-cell",
+      "proof_sha256": "6f77c52390703d5c118957f7051f09fc7423b1cb97ffbf7b8dcad41d5321a098",
+      "proof_selector": {
+        "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+        "array": "six_locator_changes",
+        "old_id": "ca:pi-curriculo-ei-ef:2bdd74bbd89e92b209db"
+      },
+      "review": {
+        "actor_type": "automated",
+        "actor_id": "codex:data_northeast:physical_occurrence_correspondence",
+        "method": "Unique page/code pair plus identical kind/positions/parent and actual printed-cell code evidence; literal output checked against pinned source."
+      }
+    },
+    {
+      "old_id": "ca:pi-curriculo-ei-ef:65e5bdc59df2a397dcd7",
+      "new_id": "ca:pi-curriculo-ei-ef:c1ac0ab5d972199cc6bb",
+      "old_code": "EF02GE11",
+      "new_code": "EF02GE11",
+      "page": 257,
+      "old_locator": "table:0/column:158.5-380.6/anchor:9",
+      "new_locator": "table:0/row:10/cell:1",
+      "locator": "table:0/row:10/cell:1",
+      "reason": "The same literal skill occurrence is now read directly from its actual ruled cell; the former continuation-recovery fallback record is technically superseded. Glyph order correction, not a new official skill or edition.",
+      "old_method": "ruled-column-continuation-recovery",
+      "new_method": "pymupdf-ruled-cell",
+      "proof_sha256": "1c7b85ed6395532e871baa54913a15471f93a442feeca7fba1d57c005d4383bb",
+      "proof_selector": {
+        "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+        "array": "six_locator_changes",
+        "old_id": "ca:pi-curriculo-ei-ef:65e5bdc59df2a397dcd7"
+      },
+      "review": {
+        "actor_type": "automated",
+        "actor_id": "codex:data_northeast:physical_occurrence_correspondence",
+        "method": "Unique page/code pair plus identical kind/positions/parent and actual printed-cell code evidence; literal output checked against pinned source."
+      }
+    },
+    {
+      "old_id": "ca:pi-curriculo-ei-ef:22a9853fd8cd87c44517",
+      "new_id": "ca:pi-curriculo-ei-ef:159486c52575199e446c",
+      "old_code": "EF07GE011.01PI",
+      "new_code": "EF07GE011.01PI",
+      "page": 265,
+      "old_locator": "table:0/column:157.8-380.6/anchor:2",
+      "new_locator": "table:0/row:3/cell:1",
+      "locator": "table:0/row:3/cell:1",
+      "reason": "The same literal skill occurrence is now read directly from its actual ruled cell; the former continuation-recovery fallback record is technically superseded. Glyph order correction, not a new official skill or edition.",
+      "old_method": "ruled-column-continuation-recovery",
+      "new_method": "pymupdf-ruled-cell",
+      "proof_sha256": "645cc10cae44a431362855be84af12c33e7796ed79d93f8606735ef372ec387e",
+      "proof_selector": {
+        "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+        "array": "six_locator_changes",
+        "old_id": "ca:pi-curriculo-ei-ef:22a9853fd8cd87c44517"
+      },
+      "review": {
+        "actor_type": "automated",
+        "actor_id": "codex:data_northeast:physical_occurrence_correspondence",
+        "method": "Unique page/code pair plus identical kind/positions/parent and actual printed-cell code evidence; literal output checked against pinned source."
+      }
+    },
+    {
+      "old_id": "ca:pi-curriculo-ei-ef:6ad894381d37513e7885",
+      "new_id": "ca:pi-curriculo-ei-ef:fdffdbbcc0a9966ccb9a",
+      "old_code": "EF09GE04",
+      "new_code": "EF09GE04",
+      "page": 269,
+      "old_locator": "table:0/column:158.5-380.6/anchor:0",
+      "new_locator": "table:0/row:2/cell:1",
+      "locator": "table:0/row:2/cell:1",
+      "reason": "The same literal skill occurrence is now read directly from its actual ruled cell; the former continuation-recovery fallback record is technically superseded. Glyph order correction, not a new official skill or edition.",
+      "old_method": "ruled-column-continuation-recovery",
+      "new_method": "pymupdf-ruled-cell",
+      "proof_sha256": "3b11b824de96147c70f8d0bfd1ca65622a59bd20a0fbaf96d0cb6fb6a592b483",
+      "proof_selector": {
+        "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+        "array": "six_locator_changes",
+        "old_id": "ca:pi-curriculo-ei-ef:6ad894381d37513e7885"
+      },
+      "review": {
+        "actor_type": "automated",
+        "actor_id": "codex:data_northeast:physical_occurrence_correspondence",
+        "method": "Unique page/code pair plus identical kind/positions/parent and actual printed-cell code evidence; literal output checked against pinned source."
+      }
+    },
+    {
+      "old_id": "ca:pi-curriculo-ei-ef:3a1486e15040a3dadcb7",
+      "new_id": "ca:pi-curriculo-ei-ef:81a0fab811f3233442e3",
+      "old_code": "EF05HI06",
+      "new_code": "EF05HI06",
+      "page": 279,
+      "old_locator": "table:0/column:158.7-380.6/anchor:4",
+      "new_locator": "table:0/row:5/cell:1",
+      "locator": "table:0/row:5/cell:1",
+      "reason": "The same literal skill occurrence is now read directly from its actual ruled cell; the former continuation-recovery fallback record is technically superseded. Glyph order correction, not a new official skill or edition.",
+      "old_method": "ruled-column-continuation-recovery",
+      "new_method": "pymupdf-ruled-cell",
+      "proof_sha256": "149c27edcfe622230587903d80548fbd7757a90a20f645a2cf4c97f65dd7bd4a",
+      "proof_selector": {
+        "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+        "array": "six_locator_changes",
+        "old_id": "ca:pi-curriculo-ei-ef:3a1486e15040a3dadcb7"
+      },
+      "review": {
+        "actor_type": "automated",
+        "actor_id": "codex:data_northeast:physical_occurrence_correspondence",
+        "method": "Unique page/code pair plus identical kind/positions/parent and actual printed-cell code evidence; literal output checked against pinned source."
+      }
+    },
+    {
+      "old_id": "ca:pi-curriculo-ei-ef:dde53e90233ee1b7dcab",
+      "new_id": "ca:pi-curriculo-ei-ef:5ec949cddfafd679e13f",
+      "old_code": "EF06HI16",
+      "new_code": "EF06HI16",
+      "page": 281,
+      "old_locator": "table:0/column:158.5-380.6/anchor:6",
+      "new_locator": "table:0/row:5/cell:1",
+      "locator": "table:0/row:5/cell:1",
+      "reason": "The same literal skill occurrence is now read directly from its actual ruled cell; the former continuation-recovery fallback record is technically superseded. Glyph order correction, not a new official skill or edition.",
+      "old_method": "ruled-column-continuation-recovery",
+      "new_method": "pymupdf-ruled-cell",
+      "proof_sha256": "112a2bb1608a9a85d59a8d1a8bb32684bb3b526a3cbcb1cd915369168ad959a7",
+      "proof_selector": {
+        "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+        "array": "six_locator_changes",
+        "old_id": "ca:pi-curriculo-ei-ef:dde53e90233ee1b7dcab"
+      },
+      "review": {
+        "actor_type": "automated",
+        "actor_id": "codex:data_northeast:physical_occurrence_correspondence",
+        "method": "Unique page/code pair plus identical kind/positions/parent and actual printed-cell code evidence; literal output checked against pinned source."
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "path": "docs/evidence/source-audit-northeast/pi-eief-locator-migration-proof.json",
+      "sha256": "3e525559dbb394f4a84443c6080db86266ac16ad95fa5f20c7e5478331f433b8"
+    },
+    {
+      "path": "docs/evidence/source-audit-northeast/pi-eief-glyph-audit-summary.json",
+      "sha256": "a692deb1385f97433978efb50ea8b38ac908393e23d6dc00a7de93e4e68f7708"
+    },
+    {
+      "path": "docs/evidence/source-audit-northeast/pi-eief-isolated-parser-probe.json",
+      "sha256": "5046a92b080154433b09dff84b0747c64f1c6a78d67ef2c881775cb70a15ad84"
+    }
+  ],
+  "technical_acceptance": {
+    "coordinator": "/root",
+    "independent_runtime_verification_passed": false,
+    "independent_peer_status": "requested_before_Source_binding",
+    "human_review": false
+  },
+  "integration_instruction": "Only after independent peer and Root acceptance: bind this pinned ledger through Source.technical_supersessions, emit all6pairs/proofhashes in the next extraction changelog/provenance. Never rewrite historical publications or repoint old IDs silently. Refresh the complete313page Source; scoped37page cache is not publication cache.",
+  "Source_or_production_cache_modified": false,
+  "whole_source_reconciled": false,
+  "UF_ready": false
+}

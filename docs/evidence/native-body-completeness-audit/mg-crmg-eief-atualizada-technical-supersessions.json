@@ -1,0 +1,74 @@
+{
+  "format": "record_replacement_pairs_v1",
+  "source_id": "mg-crmg-eief-atualizada",
+  "source_sha256": "792857369c0c80dd87fff092137053e7a5cbed1c61fcbbd6caa6efbc072154ea",
+  "cache_sha256": "262906229515c7c821f8196986eeab3ccf01719d73c2a7461e88f2f4c9c97768",
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:native-coded-body",
+  "scope": "technical_extraction_correction",
+  "previous_publications_immutable": true,
+  "official_curriculum_edition_changed": false,
+  "pairs": [
+    {
+      "old_id": "ca:mg-crmg-eief-atualizada:55aeb8be0c9aca5ce461",
+      "new_id": "ca:mg-crmg-eief-atualizada:ca453e79fe374da2dd40",
+      "old_code": "EI01TS04",
+      "new_code": "EI01TS04 MG",
+      "page": 49,
+      "locator": "table:0/row:22/cell:1",
+      "reason": "Source identifier printed with literal MG suffix in its own row; generic extraction consumed suffix as body. No official curriculum change.",
+      "proof_sha256": "4986208c08ba60562903317cc1eed3f5dd522e4fa4d98898c133d17432c025d4",
+      "proof_selector": {
+        "path": "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-body-diff.json",
+        "array": "superseded",
+        "old_id": "ca:mg-crmg-eief-atualizada:55aeb8be0c9aca5ce461"
+      }
+    },
+    {
+      "old_id": "ca:mg-crmg-eief-atualizada:916f09b1964be9d344a4",
+      "new_id": "ca:mg-crmg-eief-atualizada:6f91ab7834900cc02711",
+      "old_code": "EI02TS04",
+      "new_code": "EI02TS04 MG",
+      "page": 49,
+      "locator": "table:0/row:22/cell:4",
+      "reason": "Source identifier printed with literal MG suffix in its own row; generic extraction consumed suffix as body. No official curriculum change.",
+      "proof_sha256": "ad2c080c4ce323afa96629ff3e6059ef5dbbd85f9ca3e670db213585c3d9bc06",
+      "proof_selector": {
+        "path": "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-body-diff.json",
+        "array": "superseded",
+        "old_id": "ca:mg-crmg-eief-atualizada:916f09b1964be9d344a4"
+      }
+    },
+    {
+      "old_id": "ca:mg-crmg-eief-atualizada:75778bd7ce5571e36cb4",
+      "new_id": "ca:mg-crmg-eief-atualizada:76d1cc69f566ea387ba3",
+      "old_code": "EI03TS04",
+      "new_code": "EI03TS04 MG",
+      "page": 49,
+      "locator": "table:0/row:22/cell:7",
+      "reason": "Source identifier printed with literal MG suffix in its own row; generic extraction consumed suffix as body. No official curriculum change.",
+      "proof_sha256": "f64d62751785bd7594cb7b9791b3b15d077d5d3a6643c9cc25919df7068ffaec",
+      "proof_selector": {
+        "path": "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-body-diff.json",
+        "array": "superseded",
+        "old_id": "ca:mg-crmg-eief-atualizada:75778bd7ce5571e36cb4"
+      }
+    }
+  ],
+  "proofs": [
+    {
+      "path": "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-body-diff.json",
+      "sha256": "10d8e25aa1e87a2863f3606528b5a1efe7428140c5f832cc8157d49f418d7d7b"
+    },
+    {
+      "path": "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-runtime-verification.json",
+      "sha256": "c01b55905fecafbcf75e12237009b3cdd281cc2ea4f47e71d3e345a453316cbf"
+    }
+  ],
+  "technical_acceptance": {
+    "coordinator": "/root",
+    "independent_runtime_verification_passed": true,
+    "human_review": false
+  },
+  "integration_instruction": "Emit all three replacement pairs and pinned proofs in the next extraction changelog/provenance; never rewrite earlier published snapshots. Preserve literal MG suffixes and do not infer national-code aliases."
+}

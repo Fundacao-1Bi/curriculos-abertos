@@ -1,0 +1,68 @@
+{
+  "at": "2026-10-28T22:11:45.419008+00:00",
+  "actor_id": "agent:domain:orchestration-integration",
+  "actor_type": "automated",
+  "human_review_claimed": false,
+  "result": "targeted_sql_and_independent_followup_passed",
+  "code_sha256": {
+    "src/domain/ingestion-provenance.ts": "8d37ab39c750d87f93e4fac77221433418774f06d85b7779bf151f54ccabe94c",
+    "src/domain/ingestion-update.ts": "6315fbebdd40eff7696cdcb37c7ed031145e4cc1c04ea2fc4cb589b20127b1ab",
+    "tests/domain.ingestion-provenance.test.ts": "eebaf49eaaaead66de8c2a8499e94fbba3ef9d9acea594582b762a6ab361ea14",
+    "tests/domain.ingestion-update.test.ts": "107d13c3d7e3030fec70b533306b16314e491fa68acb1783fa5905b1cf555318",
+    "scripts/technical-ingestion-provenance.py": "3ed860b04c16ad23cd9afc10978ec3564e708637b676c4abeb485b0001cb8ad2",
+    "pipeline/technical_provenance.py": "bc00fa550bd0147f2ac440accdb5581436480d27938bd468ebfcc2f91fca3c2b"
+  },
+  "checks": {
+    "typecheck_exit": 0,
+    "eslint_exit": 0,
+    "sql_tests": 10,
+    "sql_passed": 10,
+    "sql_failed": 0,
+    "sql_skipped": 0,
+    "python_typescript_real_envelope_digests": "evaluation and identity passed",
+    "postgres_image": "postgres:17.11-bookworm",
+    "owned_database": {
+      "event": "owned_test_database_ready",
+      "container": "ca-domain-provenance-cf18ca3a6305",
+      "database": "curriculum_test_cf18ca3a6305",
+      "port": "58821",
+      "files": [
+        "tests/domain.ingestion-provenance.test.ts",
+        "tests/domain.ingestion-update.test.ts"
+      ],
+      "scope": "Small synthetic SQL fixtures only; no QA/main access"
+    },
+    "cleanup": {
+      "event": "owned_test_container_removed",
+      "container": "ca-domain-provenance-cf18ca3a6305",
+      "automatic_anonymous_volume_cleanup": true
+    }
+  },
+  "evidence_sha256": {
+    "docs/evidence/domain-orchestration-verification/sql-tests-after-peer.log": "08642096bb89a133d43f9099535d56f271eb7a19aebfcf3d4a4dd6c90984d66c",
+    "docs/evidence/domain-orchestration-verification/sql-tests-final.log": "cdf6794df81aaf09f70a7ae08b01bc35b434b58e8caa26533bace9c63a38262a",
+    "docs/evidence/domain-orchestration-verification/sql-tests-attempt-1.log": "9eec9ad4e99fd9bdfb637f95cda57f605598abe882087d6d645f7cfc7c2e4713",
+    "docs/evidence/domain-orchestration-verification/sql-tests-attempt-2.log": "02fb85fb7810272069aadf1d41bd78e924768f284cd7566e1322e9dece2d96ac",
+    "docs/evidence/domain-orchestration-verification/typecheck.log": "02e35bf0eaf0150ec7911ffcbe2df519a799a6ad76bd497210557e6ed4028fd9",
+    "docs/evidence/domain-orchestration-verification/lint.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/evidence/domain-orchestration-verification/run-isolated-tests.ts": "9a0f8ad22e624ba92a3c8b9bb5f67e7fb248f07f8695d026c29eec412a5a4095"
+  },
+  "scope": [
+    "Only synthetic fixtures in an owned disposable PostgreSQL database.",
+    "No QA database, main database, published default, pipeline core, Source manifest or extraction cache changed.",
+    "Native production parser and existing BASE/RAW artifacts remain immutable.",
+    "No full national import, performance load, HTTP/worker E2E or release claim.",
+    "Initial independent peer found3P2, corrected and independently revalidated."
+  ],
+  "independent_peer": {
+    "path": "docs/evidence/source-audit-domain-orchestration-peer/FOLLOWUP.md",
+    "sha256": "2e62ff1dc14bf97247bc136d63ab13c3cedd1b8aadc1e515327fd65f32584409",
+    "result": "3P2 corrected; no new blocker in inspected delta",
+    "controls": [
+      "12malformed-property gate cases",
+      "writer abort rollback1/commit0/import0",
+      "loaded runtime drift rejected",
+      "own child ignoredTERM thenSIGKILL5004ms andPIDabsent"
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "producer_sha256": "3808cc1a5ab930bfac8edeebc853bc6f5716e1abd394fd0352de792c13eda2b3",
+  "handoff_sha256": "fdb2256668c0fc0fa323e232ae701f4792bdea8cc5289cfa20e39ef197792cca",
+  "elapsed_seconds": 11.789,
+  "references": 152,
+  "slots": 153,
+  "present_private_assets": 158,
+  "only_primary_target_read": [
+    "data/raw/AM/am-rca-ei.pdf"
+  ],
+  "compared_equal_fields": [
+    "reference_records_sha256",
+    "proof_trace_sha256",
+    "slots_verified",
+    "references_produced",
+    "rejected_slots",
+    "global_catalog"
+  ],
+  "verification": {
+    "producer_revision": "primary-raster-source-scoped-verifier-v1.0.0",
+    "producer_sha256": "3808cc1a5ab930bfac8edeebc853bc6f5716e1abd394fd0352de792c13eda2b3",
+    "handoff_path": "docs/evidence/source-audit-am-code-peer/am-code-review-handoff.json",
+    "handoff_sha256": "fdb2256668c0fc0fa323e232ae701f4792bdea8cc5289cfa20e39ef197792cca",
+    "ledger_sha256": "3666f1af298cb5a64a5d6ef3c00a6de58c31ce5af9e8cd0c31e90110d5b3afcf",
+    "review_sha256": "0c81dec5f3dbb30c79eefc4af80ce3f3317354889b73a2b5973b9fcd60746979",
+    "slots_verified": 153,
+    "primary_pages_verified": 35,
+    "references_produced": 152,
+    "by_source": {
+      "am-rca-ei": 152
+    },
+    "rejected_slots": [
+      {
+        "slot_id": "am-rca-ei:p114:slot001",
+        "code": null,
+        "reason": "not_a_code_in_this_crop"
+      }
+    ],
+    "proof_trace_sha256": "8ba32ae2117db37c190313f4e1b8abd5592150809fa362bc122e092410f4db89",
+    "reference_records_sha256": {
+      "am-rca-ei": "731b011e3708109bc1ebbcc26fb085efecfad8a3b5100bdcb3002cbcfe2f7c66"
+    },
+    "actor_type": "automated",
+    "actor_id": "codex:primary-raster-reference-verifier",
+    "source_artifacts": [
+      {
+        "source_id": "am-rca-ei",
+        "sha256": "d2fe6b304d4f9e6aee101b5cf5683125fc255184c87a597d39ee111c3ae80fd8",
+        "local_path": "data/raw/AM/am-rca-ei.pdf"
+      }
+    ],
+    "proposal_pins": [
+      {
+        "path": "data/manifests/uncoded/am-primary-code-references-ei.json",
+        "sha256": "8c4c957361483d556039860d27cb252655fdb031ddaf78b6ec1f00b3049fea0b",
+        "items": 152
+      }
+    ],
+    "OCR_used_as_evidence": false,
+    "body_verified": false,
+    "full_source_coverage_verified": false,
+    "human_review_claimed": false,
+    "equivalence_asserted": false,
+    "production_integration_performed": false,
+    "source_registry_modified": false,
+    "cache_or_publication_modified": false,
+    "dependency_verifier_sha256": "8774d4372d0c0d83e73ccabd80d98dafec28f0723e7e5da8ead0c9aa78413781",
+    "selected_source_ids": [
+      "am-rca-ei"
+    ],
+    "global_catalog": {
+      "reviewed_slots": 2629,
+      "confirmed_code_only": 2628,
+      "rejected_slots": [
+        "am-rca-ei:p114:slot001"
+      ]
+    },
+    "primary_proof_method": "source embedded-image reconstruction against pinned reviewed pixel hashes",
+    "private_assets_required_for_publication_install": false,
+    "non_target_primary_artifacts_read": false
+  },
+  "body_or_full_source_review_claimed": false,
+  "Source_cache_publication_modified": false
+}

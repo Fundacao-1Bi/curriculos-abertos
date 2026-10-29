@@ -1,0 +1,36 @@
+{
+  "source_id": "rr-dcr-ei-ef",
+  "artifact_sha256": "e95761f67d1733660b9b9bd2acee10707ed07301249c322cbf39fd86a3453112",
+  "adapter_sha256": "98992856b485be462bac63fdaaf071c8c375d7584f8a01cadab70bedcc60a206",
+  "binding_ready": true,
+  "fields": {
+    "uncoded_items_path": "data/manifests/uncoded/rr-ei-organizers-age-v2-items.json",
+    "adapter_authority": {
+      "coded_learning_pages": [
+        28,
+        99
+      ]
+    },
+    "adapter_part_verification": {
+      "actor_type": "automated",
+      "review_path": "docs/evidence/source-audit-rr/independent-final-summary.json",
+      "review_sha256": "0b6393d9c4d51de12a553945002804f8a778f8eb156de726fa0e0b58652c896d",
+      "sidecar_sha256": "98992856b485be462bac63fdaaf071c8c375d7584f8a01cadab70bedcc60a206",
+      "scope": "Only primary EI legend28 and organizers29–99; EF and other contexts not declared complete.",
+      "old_snapshot_preserved": true,
+      "intervals_only_from_original_physical_age_captions": true
+    }
+  },
+  "technical_revision": "documented-ei-age-intervals-v2",
+  "prior_sidecar_path": "data/manifests/uncoded/rr-ei-organizers-items.json",
+  "prior_sidecar_sha256": "f8a5d668ced4ab21e2223d8fb4e73926968806d1c23142e4f220f63d681ace84",
+  "whole_document_reconciled": false,
+  "independent_verification": {
+    "path": "docs/evidence/source-audit-rr/independent-final-summary.json",
+    "sha256": "0b6393d9c4d51de12a553945002804f8a778f8eb156de726fa0e0b58652c896d",
+    "actor_type": "automated",
+    "checks": 3595,
+    "failed": 0,
+    "negative_cases_blocked": 9
+  }
+}

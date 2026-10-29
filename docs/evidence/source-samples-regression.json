@@ -1,0 +1,330 @@
+{
+  "publication": "ca-9d9b45e82947bd8fe35c",
+  "bundle_sha256": "b0550dc21fe55d2c9bc28f2b848bfb7fd787976a643ca574b471a69c618c9c68",
+  "created_at": "2026-10-28T04:46:12.642355+00:00",
+  "producer": "scripts/qa-source-samples.py",
+  "item_records_read": 20612,
+  "item_parts": [
+    {
+      "path": "data/bundles/ca-9d9b45e82947bd8fe35c/items-0001.jsonl.gz",
+      "records": 4581,
+      "sha256": "375dccefbe67cd569bce8111c657c6e3d2261b3ad92b3573e8cb801d4992d67f",
+      "passed": true
+    },
+    {
+      "path": "data/bundles/ca-9d9b45e82947bd8fe35c/items-0002.jsonl.gz",
+      "records": 3958,
+      "sha256": "eaf477510533d8d07309d6cf1fdce826686edc5cb961dc05f0bec9a094c468e9",
+      "passed": true
+    },
+    {
+      "path": "data/bundles/ca-9d9b45e82947bd8fe35c/items-0003.jsonl.gz",
+      "records": 3669,
+      "sha256": "4ef030607fe889c1f45c9fe433a2e245406771e9e9f9a55a67d0f841269da120",
+      "passed": true
+    },
+    {
+      "path": "data/bundles/ca-9d9b45e82947bd8fe35c/items-0004.jsonl.gz",
+      "records": 3158,
+      "sha256": "ca8c5cb971c4ccdb5b96a371463220eb24ceca84159c3d2b5dedbd1ae9759862",
+      "passed": true
+    },
+    {
+      "path": "data/bundles/ca-9d9b45e82947bd8fe35c/items-0005.jsonl.gz",
+      "records": 3410,
+      "sha256": "5f238c346f2c5b05a7411c74118e17f164036dbe05607e220936aaed24d3f9b2",
+      "passed": true
+    },
+    {
+      "path": "data/bundles/ca-9d9b45e82947bd8fe35c/items-0006.jsonl.gz",
+      "records": 1836,
+      "sha256": "37bbad23ba3d8f93c0e2e020001245e4496031ea3c36e26762e80114dd9bfb0a",
+      "passed": true
+    }
+  ],
+  "checks": [
+    {
+      "source_id": "sp-curriculo-eief-isbn",
+      "code": "EI01EO01",
+      "page": 47,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": false,
+      "position_matches": false,
+      "source_hash_matches": true,
+      "passed": false,
+      "actual_candidates": [],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    },
+    {
+      "source_id": "sp-curriculo-eief-isbn",
+      "code": "EF01LP10A",
+      "page": 85,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": false,
+      "position_matches": false,
+      "source_hash_matches": true,
+      "passed": false,
+      "actual_candidates": [],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    },
+    {
+      "source_id": "sp-curriculo-eief-isbn",
+      "code": "EF01LP06",
+      "page": 85,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": false,
+      "position_matches": false,
+      "source_hash_matches": true,
+      "passed": false,
+      "actual_candidates": [],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    },
+    {
+      "source_id": "sp-curriculo-em-isbn",
+      "code": "EM13LP02A",
+      "page": 75,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": true,
+      "position_matches": true,
+      "source_hash_matches": true,
+      "passed": true,
+      "actual_candidates": [
+        {
+          "id": "ca:sp-curriculo-em-isbn:0fa510716655e8319ea1",
+          "text": "Estabelecer relações entre as partes do texto, tanto na produção como na leitura/escuta, considerando a construção composicional e o estilo do gênero.",
+          "positions": [
+            {
+              "age_group": null,
+              "area": "Linguagens e suas Tecnologias",
+              "component": "Língua Portuguesa",
+              "period": null,
+              "position_evidence": {
+                "excerpt": "Para as habilidades que foram desmembradas inclui-se uma letra no final do código, por exemplo, EM13LGG103A e EM13LGG103B, o que significa que a habilidade 3, da competência 1, foi desmembrada em duas habilidades (A e B).",
+                "page": 49,
+                "printed_page": null,
+                "section": "Composição do código alfanumérico da Formação Geral Básica",
+                "source_id": "sp-curriculo-em-isbn"
+              },
+              "position_note": "O código EM não determina série; a fonte deve explicitar o posicionamento.",
+              "position_origin": "documented_source_code_rule",
+              "position_rule_id": "sp-em-sufixo-letra-desmembramento",
+              "stage": "EM",
+              "year_label": null,
+              "years": null
+            }
+          ]
+        }
+      ],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    },
+    {
+      "source_id": "sp-curriculo-em-isbn",
+      "code": "EM13LP02B",
+      "page": 75,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": true,
+      "position_matches": true,
+      "source_hash_matches": true,
+      "passed": true,
+      "actual_candidates": [
+        {
+          "id": "ca:sp-curriculo-em-isbn:9b543d0a615311f82055",
+          "text": "Reconhecer adequadamente elementos e recursos coesivos diversos que contribuam. para a coerência, a continuidade do texto e sua progressão temática, organizando informações, tendo em vista as condições de produção.",
+          "positions": [
+            {
+              "age_group": null,
+              "area": "Linguagens e suas Tecnologias",
+              "component": "Língua Portuguesa",
+              "period": null,
+              "position_evidence": {
+                "excerpt": "Para as habilidades que foram desmembradas inclui-se uma letra no final do código, por exemplo, EM13LGG103A e EM13LGG103B, o que significa que a habilidade 3, da competência 1, foi desmembrada em duas habilidades (A e B).",
+                "page": 49,
+                "printed_page": null,
+                "section": "Composição do código alfanumérico da Formação Geral Básica",
+                "source_id": "sp-curriculo-em-isbn"
+              },
+              "position_note": "O código EM não determina série; a fonte deve explicitar o posicionamento.",
+              "position_origin": "documented_source_code_rule",
+              "position_rule_id": "sp-em-sufixo-letra-desmembramento",
+              "stage": "EM",
+              "year_label": null,
+              "years": null
+            }
+          ]
+        }
+      ],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    },
+    {
+      "source_id": "sp-educacao-digital-midiatica-2026",
+      "code": "EI03CO01",
+      "page": 28,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": true,
+      "position_matches": true,
+      "source_hash_matches": true,
+      "passed": true,
+      "actual_candidates": [
+        {
+          "id": "ca:sp-educacao-digital-midiatica-2026:d410665196345c5ea7c2",
+          "text": "Reconhecer padrão de repetição em sequência de sons, movimentos e desenhos.",
+          "positions": [
+            {
+              "age_group": "Crianças pequenas (4 anos a 5 anos e 11 meses)",
+              "area": "Campos de experiências",
+              "component": "Computação",
+              "period": null,
+              "position_note": "Grupo etário explicitado pela convenção nacional do código; posicionamento local adicional não inferido.",
+              "position_origin": "national_code_convention",
+              "stage": "EI",
+              "year_label": null,
+              "years": null
+            }
+          ]
+        }
+      ],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    },
+    {
+      "source_id": "mg-crmg-eief-atualizada",
+      "code": "EI01EO07MG",
+      "page": 72,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": false,
+      "position_matches": false,
+      "source_hash_matches": true,
+      "passed": false,
+      "actual_candidates": [],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13LGG106MG",
+      "page": 118,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": false,
+      "position_matches": false,
+      "source_hash_matches": true,
+      "passed": false,
+      "actual_candidates": [],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    },
+    {
+      "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+      "code": "EI01EO01/ES",
+      "page": 72,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": false,
+      "position_matches": false,
+      "source_hash_matches": true,
+      "passed": false,
+      "actual_candidates": [],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    },
+    {
+      "source_id": "es-em-linguagens",
+      "code": "EM13LGG101ARTa/ES",
+      "page": 9,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": false,
+      "position_matches": false,
+      "source_hash_matches": true,
+      "passed": false,
+      "actual_candidates": [],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    },
+    {
+      "source_id": "es-em-l-ngua-portuguesa",
+      "code": "EM13LP01",
+      "page": 3,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": false,
+      "position_matches": false,
+      "source_hash_matches": true,
+      "passed": false,
+      "actual_candidates": [],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    },
+    {
+      "source_id": "es-ifa-cntmat",
+      "code": "EMIFACNT201",
+      "page": 26,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": false,
+      "position_matches": false,
+      "source_hash_matches": true,
+      "passed": false,
+      "actual_candidates": [],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF01LP01",
+      "page": 135,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": false,
+      "position_matches": false,
+      "source_hash_matches": true,
+      "passed": false,
+      "actual_candidates": [],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    },
+    {
+      "source_id": "rj-em-curriculo-referencial",
+      "code": "EM13LP01",
+      "page": 32,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": false,
+      "position_matches": false,
+      "source_hash_matches": true,
+      "passed": false,
+      "actual_candidates": [],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    },
+    {
+      "source_id": "rj-em-itinerarios",
+      "code": "EM13LGG101",
+      "page": 16,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": false,
+      "position_matches": false,
+      "source_hash_matches": true,
+      "passed": false,
+      "actual_candidates": [],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    },
+    {
+      "source_id": "mg-crmg-computacao-2025",
+      "code": "EM13CO01",
+      "page": 118,
+      "expected_file": "docs/evidence/source-audit-southeast/expected.json",
+      "text_matches": false,
+      "position_matches": false,
+      "source_hash_matches": true,
+      "passed": false,
+      "actual_candidates": [],
+      "verifier_type": "automated",
+      "scope": "Independent visual sample regression, not whole-document reconciliation"
+    }
+  ],
+  "passed": false,
+  "limitations": [
+    "Directed independent visual samples; passing does not establish national completeness.",
+    "Relationship shards are outside this visual regression; the independent artifact auditor verifies them."
+  ]
+}

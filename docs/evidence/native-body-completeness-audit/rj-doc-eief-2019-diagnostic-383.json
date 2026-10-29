@@ -1,0 +1,33 @@
+{
+  "source_id": "rj-doc-eief-2019",
+  "source_sha256": "b915967926c621164aba46d5cbdbd74406a658410695199ef6ae3926de138bf6",
+  "source_cache_sha256": "89031218928e0b1630fee0fc5dacd87e0ce84969e2a4b0ac8405e382bd661376",
+  "technical_revision": "native-coded-body-completeness-v1",
+  "official_curriculum_edition_changed": false,
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:native-coded-body",
+  "target_pages": [
+    383
+  ],
+  "proved_pages": [
+    383
+  ],
+  "proved_records": 4,
+  "changed_bodies": 1,
+  "superseded_invalid_code_records": [
+    {
+      "old_id": "ca:rj-doc-eief-2019:2a06518986d550be2dcb",
+      "old_code": "EF07CI15Interpretar",
+      "old_text": "fenômenos naturais (como vulcões, terremotos e tsunamis) e justificar a rara ocorrência desses fenômenos no Brasil, com base no modelo das placas tectônicas, identificando os fenômenos naturais que influenciam e ocorra na localidade, cidade e medidas para prevenção de desastre.",
+      "new_code": "EF07CI15",
+      "locator": "table:0/row:17/cell:6",
+      "page": 383,
+      "source_token_literal": "(EF07CI15Interpretar",
+      "reason": "Native source omits the separator after its nine identifier glyphs; generic lexer incorrectly consumed body word Interpretar into the code. Directed technical restoration only; no official curriculum change.",
+      "requires_root_technical_acceptance": true
+    }
+  ],
+  "blocked_pages": [],
+  "source_ready": false,
+  "whole_source_reconciled": false
+}

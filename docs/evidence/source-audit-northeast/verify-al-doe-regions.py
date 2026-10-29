@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+"""Verify AL curricular act column regions before allowing candidate text packaging."""
+import json,pathlib,sys,copy,datetime,hashlib
+ROOT=pathlib.Path(__file__).resolve().parents[3];sys.path.insert(0,str(ROOT/'pipeline'));import ingest
+P=ROOT/'data/manifests/northeast.json';ss=json.loads(P.read_text());original=next(x for x in ss if x['id']=='al-parecer-27-2026-doe');source=copy.deepcopy(original);regions=[]
+for n in [34,35,36,37]:
+ regions.append({'page':n,'regions':[[28,50,295,800],[302,50,570,380 if n==37 else 800]],'reading_order':'as_declared','coordinate_space':'original_pdf_page','evidence':{'page':n,'section':'Parecer27/2026' if n<36 else 'Resolução10/2026','verification':'Source two-column reading order. Pages34–36 are curricular acts throughout. Page37 left continues tobottom; right ends atsignature/protocol beforeSEFAZy391.899. Original152pagePDF remainsprivate.'}})
+source['page_regions']=regions;source['include_in_corpus']=True
+ex=ingest.extract_pdf(source,ROOT/source['local_path'],force=True);assert [p['page'] for p in ex['pages']]==[34,35,36,37];p37=next(p['text'] for p in ex['pages'] if p['page']==37)
+for term in ['Art. 11.','Art. 12.','Art. 13.','Art. 17.','1074603']:assert term in p37,term
+assert p37.index('Art. 11.')<p37.index('Art. 12.')<p37.index('Art. 13.')<p37.index('Art. 17.')
+for page in ex['pages']:
+ for excluded in ['SEFAZ','26.889.181','INTIMAÇÃO FISCAL','GERÊNCIA DE FISCALIZAÇÃO','YA 3174675318']:assert excluded not in page['text'],(page['page'],excluded)
+assert not ex['ocr_pending'];assert ex['coded_items']==0
+stamp=datetime.datetime.now(datetime.timezone.utc).isoformat();report={'at':stamp,'actor_type':'automated','actor_id':'codex:data_northeast','source_id':source['id'],'artifact_sha256':source['sha256'],'extraction_revision':ex['extraction_revision'],'config_sha256':ex['extraction_config_sha256'],'document_pages_private':ex['document_page_count'],'processed_pages':[p['page'] for p in ex['pages']],'page_regions':regions,'article_order_11_12_13_17':'passed','curricular_signature_protocol_preserved':True,'unrelated_fiscal_markers_absent':True,'coded_learning_items':ex['coded_items'],'ocr_pending':ex['ocr_pending'],'warnings':ex['warnings'],'result':'safe_curated_region_candidate','scope':'Spatial/privacy/order verification only. Whole-document transcription/glyph quality and semantic structure still require documentary reconciliation.'}
+(ROOT/'docs/evidence/source-audit-northeast/al-doe-regions-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+# Only after all checks have passed, make the same verified source configuration eligible for candidate packaging.
+ss=json.loads(P.read_text());target=next(x for x in ss if x['id']==source['id']);target.update(page_regions=regions,include_in_corpus=True,processing_scope='curated_normative_regions',privacy_note='Preserve only declared two-column curricular regions of34–37; whole152pageDOE remainsprivate. Fiscal material starts in right column of37belowthe selected region.',extraction_regions_verification='docs/evidence/source-audit-northeast/al-doe-regions-verification.json');target.pop('exclusion_reason',None);target['reconciliation_status']='pending_structure_and_transcription_review';P.write_text(json.dumps(ss,ensure_ascii=False,indent=2)+'\n');print('AL_DOE_REGIONS_VERIFIED',report['processed_pages'],report['result'])
+# Refresh the source whose component inventory changed after the prior batch snapshot.
+al=next(x for x in ss if x['id']=='al-recal-ei-2019');r=ingest.extract_pdf(al,ROOT/al['local_path']);(ROOT/'docs/evidence/source-audit-northeast/al-ei-refresh.json').write_text(json.dumps({'at':ingest.now(),'source_id':al['id'],'artifact_sha256':al['sha256'],'extraction_revision':r['extraction_revision'],'config_sha256':r['extraction_config_sha256'],'processed_pages':r['page_count'],'coded_candidates':r['coded_items'],'ocr_pending':r['ocr_pending'],'warnings':r['warnings'],'source_reconciliation_complete':False},ensure_ascii=False,indent=2)+'\n');print('AL_EI_REFRESH',r['page_count'],r['coded_items'],r['ocr_pending'])

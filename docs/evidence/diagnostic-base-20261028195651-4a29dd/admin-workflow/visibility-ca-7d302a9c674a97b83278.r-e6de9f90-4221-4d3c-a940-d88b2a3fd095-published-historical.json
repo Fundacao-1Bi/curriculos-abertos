@@ -1,0 +1,35 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex-independent-auditor",
+  "producer": "scripts/qa-prepared-boundary.ts",
+  "started_at": "2026-10-28T22:16:25.418Z",
+  "completed_at": "2026-10-28T22:16:26.150Z",
+  "source_tree_sha256": "ba309e4c7acb53d2e17ac37db9eef46341748b654f451481ac2b092a5a6dcc98",
+  "publication": "ca-7d302a9c674a97b83278.r-e6de9f90-4221-4d3c-a940-d88b2a3fd095",
+  "default_publication": "ca-7d302a9c674a97b83278",
+  "phase": "published-historical",
+  "base": "http://localhost:3002",
+  "mcp_transport": "Streamable HTTP",
+  "mcp_protocol": "2025-11-25",
+  "checks": [
+    {
+      "name": "API lista contém publicação autorizada",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "API aprendizagem publicada acessível por versão",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "MCP lista contém publicação autorizada",
+      "passed": true
+    },
+    {
+      "name": "MCP consulta publicada acessível por versão",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

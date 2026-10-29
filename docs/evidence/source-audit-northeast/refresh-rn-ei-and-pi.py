@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+"""Refresh changed official artifact/layout configurations, then verify PI's independent93goal inventory."""
+import json,pathlib,sys,datetime,hashlib
+ROOT=pathlib.Path(__file__).resolve().parents[3];sys.path.insert(0,str(ROOT/'pipeline'));import ingest
+ss={s['id']:s for s in json.loads((ROOT/'data/manifests/northeast.json').read_text())};results=[]
+for sid in ['rn-documento-ei-2018','pi-curriculo-ei-ef']:
+ s=ss[sid];ex=ingest.extract_pdf(s,ROOT/s['local_path']);results.append({'source_id':sid,'artifact_sha256':s['sha256'],'extraction_revision':ex['extraction_revision'],'extraction_config_sha256':ex['extraction_config_sha256'],'document_pages':ex['document_page_count'],'processed_pages':ex['page_count'],'coded_candidates':ex['coded_items'],'ocr_pending':ex['ocr_pending'],'warnings':ex['warnings']})
+ if sid=='pi-curriculo-ei-ef':
+  inv=json.loads((ROOT/'docs/evidence/source-audit-northeast/pi-ei-objective-column-inventory.json').read_text());actual={i['id']:i for i in ingest.finalize_items(ex['items'],[s])};checks=[]
+  for expected in inv['expected_objectives']:
+   item=actual.get(expected['expected_final_id']);matches=bool(item and item.get('code')==expected['code'] and ingest.normalize(item['text'])==ingest.normalize(expected['objective_excerpt']));checks.append({'page':expected['page'],'code':expected['code'],'expected_final_id':expected['expected_final_id'],'result':'passed' if matches else 'failed','source_objective_excerpt':expected['objective_excerpt'],'actual_text':item['text'] if item else None})
+  report={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'actor_type':'automated','actor_id':'codex:data_northeast','source_id':sid,'artifact_sha256':s['sha256'],'extraction_revision':ex['extraction_revision'],'config_sha256':ex['extraction_config_sha256'],'independent_expected_count':93,'passed':sum(x['result']=='passed' for x in checks),'failed':sum(x['result']=='failed' for x in checks),'checks':checks,'scope':'EI93objective-code/prose subset only; pedagogical possibilities, otherEIstructures andEFsourcepart not asserted reconciled.'};(ROOT/'docs/evidence/source-audit-northeast/pi-ei-objective-column-verification.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print('PI93_LITERAL_VERIFICATION',report['passed'],report['failed']);assert report['failed']==0
+(ROOT/'docs/evidence/source-audit-northeast/rn-ei-pi-refresh-results.json').write_text(json.dumps({'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'actor_type':'automated','results':results,'whole_uf_reconciliation_asserted':False},ensure_ascii=False,indent=2)+'\n');print(json.dumps([{k:v for k,v in r.items() if k!='warnings'} for r in results],ensure_ascii=False,indent=2))

@@ -1,0 +1,1810 @@
+{
+  "source_id": "rj-doc-eief-2019",
+  "uf": "RJ",
+  "artifact_sha256": "b915967926c621164aba46d5cbdbd74406a658410695199ef6ae3926de138bf6",
+  "cache_path": "data/extracted/b915967926c621164aba46d5cbdbd74406a658410695199ef6ae3926de138bf6-page-cell-v1.5.0.json",
+  "status": "read_completed_with_explicit_scope",
+  "audit_revision": "independent-vector-rules-native-code-boundaries-v3",
+  "counts": {
+    "coded_cache_records": 1521,
+    "primary_pages_read": 314,
+    "independently_bounded_native_bodies": 1442,
+    "bounded_body_equal": 1343,
+    "extracted_extends_primary_page_region_not_truncation": 61,
+    "body_prefix_not_aligned_to_independent_column_start": 79,
+    "bounded_body_other_mismatch_or_layout_ambiguity": 5,
+    "primary_code_boundary_not_indexed_on_page": 2,
+    "strict_prefix_candidates": 33,
+    "prefix_definition_candidate": 2,
+    "prefix_role_unresolved": 31
+  },
+  "negative_examples": [
+    {
+      "case": "equal_complete_body",
+      "code": "EF01LP01",
+      "page": 135,
+      "cache_item_id": "ca:rj-doc-eief-2019:0c84ac746798fe28fefe",
+      "result": "not_truncation",
+      "body_sha256": "3c7f5f8556ceb5631af3d858fb206abec984b7a3879e89521339556b671c60b8"
+    },
+    {
+      "case": "equal_complete_body",
+      "code": "EF01LP02",
+      "page": 135,
+      "cache_item_id": "ca:rj-doc-eief-2019:5a53af53d0e611709414",
+      "result": "not_truncation",
+      "body_sha256": "6dda81d67db81edf2ae423490370fc2c9dda7454514fc71cefd106f4944fa598"
+    },
+    {
+      "case": "extracted_extends_bounded_page_region",
+      "code": "EF01LP21",
+      "page": 137,
+      "cache_item_id": "ca:rj-doc-eief-2019:725cc8d817ee17e36c13",
+      "result": "not_classified_as_truncation",
+      "evidence_pages": [
+        137,
+        138
+      ],
+      "extracted_tail": "colar, dentre outros gêneros do campo da atuação cidadã, considerando a situação comunicativa e o tema/assunto do texto.",
+      "bounded_page_tail": " regulamentos que organizam a vida na comunidade escolar, dentre outros gêneros do campo da atuação cidadã, considerando"
+    },
+    {
+      "case": "extracted_extends_bounded_page_region",
+      "code": "EF15LP15",
+      "page": 146,
+      "cache_item_id": "ca:rj-doc-eief-2019:2d2fba32d5bfa1181a70",
+      "result": "not_classified_as_truncation",
+      "evidence_pages": [
+        146,
+        147
+      ],
+      "extracted_tail": " dimensão lúdica, de encantamento, valorizando-os, em sua diversidade cultural, como patrimônio artístico da humanidade.",
+      "bounded_page_tail": "Reconhecer que os textos literários fazem parte do mundo do imaginário e apresentam uma dimensão"
+    }
+  ],
+  "findings": [
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF01CI01",
+      "page": 359,
+      "cache_item_id": "ca:rj-doc-eief-2019:af136cf2bfd73ea88f28",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:82bdc397446770deebbf",
+      "evidence_locator": "table:0/row:2/cell:4",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 27,
+      "physical_expected_characters": 190,
+      "extracted_sha256": "6c23e8aa84f38f0e31ddd223449bc58f59e39e6fcb7d06a20abbe98a6ce37b71",
+      "physical_expected_sha256": "403beaadf5758c40b679d3f3619b1581ef13362e27c67229f40049afa244a4e0",
+      "extracted_head": "Comparar características de",
+      "extracted_tail": "Comparar características de",
+      "expected_tail": "Comparar características de diferentes materiais presentes em objetos de uso cotidiano, discutindo sua origem, os modos como são descartados e como podem ser usados de forma mais consciente.",
+      "extra_normalized_prefix": " diferentes materiais presentes em objetos de uso cotidiano, discutindo sua origem, os modos como sao descartados e como podem ser usados de forma mais consciente.",
+      "independent_boundary": {
+        "anchor": [
+          396.05511474609375,
+          594.0699462890625,
+          437.5213623046875,
+          605.1099853515625
+        ],
+        "body_bbox": [
+          389.83,
+          594.0699462890625,
+          580.44,
+          679.2999877929688
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 683.6199340820312,
+        "physical_bottom_rule_y": 679.2999877929688,
+        "column": [
+          389.83,
+          580.44
+        ]
+      },
+      "cached_header_hint": {
+        "0": " COMPONENTE Ciências",
+        "1": " ANO/FAIXA 1º",
+        "2": "UNIDADES TEMÁTICAS Matéria e\nenergia",
+        "3": "ONJETOS DE CONHECIMENTO Característica dos materiais",
+        "4": " HABILIDADES (EF01CI01) Comparar características de"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF01CI02",
+      "page": 359,
+      "cache_item_id": "ca:rj-doc-eief-2019:9502ba33c376a8c92f7e",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:ee0c085c192ecc34b968",
+      "evidence_locator": "table:0/row:9/cell:4",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 19,
+      "physical_expected_characters": 119,
+      "extracted_sha256": "5c54401c0346bb27d66ca571705a787565de8e6ea15a22533be414b5e6779f3d",
+      "physical_expected_sha256": "6156139896d46e4698bd5bcc31c17443d93c8723ff2d5114d72d1d3f379bf611",
+      "extracted_head": "Localizar, nomear e",
+      "extracted_tail": "Localizar, nomear e",
+      "expected_tail": "Localizar, nomear e representar graficamente (por meio de desenhos) partes do corpo humano e explicar suas funções. 359",
+      "extra_normalized_prefix": " representar graficamente (por meio de desenhos) partes do corpo humano e explicar suas funcoes. 359",
+      "independent_boundary": {
+        "anchor": [
+          396.05511474609375,
+          683.6199340820312,
+          437.5213623046875,
+          694.6599731445312
+        ],
+        "body_bbox": [
+          389.83,
+          683.6199340820312,
+          580.44,
+          841.9199829101562
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 841.9199829101562,
+        "column": [
+          389.83,
+          580.44
+        ]
+      },
+      "cached_header_hint": {
+        "0": " COMPONENTE Ciências",
+        "1": " ANO/FAIXA 1º",
+        "2": "UNIDADES TEMÁTICAS Matéria e\nenergia",
+        "3": "ONJETOS DE CONHECIMENTO Característica dos materiais",
+        "4": " HABILIDADES (EF01CI01) Comparar características de"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF01CI03",
+      "page": 360,
+      "cache_item_id": "ca:rj-doc-eief-2019:c5583988ba47e56584d5",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:59eccba209b6557b8523",
+      "evidence_locator": "table:0/row:0/cell:4",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 30,
+      "physical_expected_characters": 258,
+      "extracted_sha256": "b9ce1c98c360ba53656018c5a1dc85a995ecabcfb0edab2893d6113f6eb00a52",
+      "physical_expected_sha256": "ff64ae6839c3f00c293132e11da7308c4e6e3bf993e31cd7a8f44f0b959dfb2c",
+      "extracted_head": "Discutir as razões pelas quais",
+      "extracted_tail": "Discutir as razões pelas quais",
+      "expected_tail": "Discutir as razões pelas quais os hábitos de higiene do corpo (lavar as mãos antes de comer, escovar os dentes, limpar os olhos, o nariz e as orelhas etc.) são necessários para a manutenção da saúde individual e coletiva, em um processo de reflexão empática.",
+      "extra_normalized_prefix": " os habitos de higiene do corpo (lavar as maos antes de comer, escovar os dentes, limpar os olhos, o nariz e as orelhas etc.) sao necessarios para a manutencao da saude individual e coletiva, em um processo de reflexao e",
+      "independent_boundary": {
+        "anchor": [
+          396.05511474609375,
+          61.199981689453125,
+          437.5213623046875,
+          72.23998260498047
+        ],
+        "body_bbox": [
+          389.83,
+          61.199981689453125,
+          580.44,
+          183.1400146484375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 214.33999633789062,
+        "physical_bottom_rule_y": 183.1400146484375,
+        "column": [
+          389.83,
+          580.44
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências  ",
+        "1": "1º  ",
+        "2": "Vida e evolução  ",
+        "3": "Corpo humano\nRespeito à diversidade  ",
+        "4": "(EF01CI03) Discutir as razões pelas quais os hábitos de higiene do corpo (lavar as mãos antes de comer, escovar os dentes,"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF01CI04",
+      "page": 360,
+      "cache_item_id": "ca:rj-doc-eief-2019:f8aaad549fe7086e5119",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:c0c87a28e9f0eae44c8a",
+      "evidence_locator": "table:0/row:11/cell:4",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 24,
+      "physical_expected_characters": 153,
+      "extracted_sha256": "b622eec80434a24c98c7776b7c63fe9d56d0f6956a3485e2ae3ad55ca08c01d8",
+      "physical_expected_sha256": "4096ec98d4b07f178039ee3dc87dad8498a92af1f309203896dd606b83b4c9d4",
+      "extracted_head": "Comparar características",
+      "extracted_tail": "Comparar características",
+      "expected_tail": "Comparar características físicas entre os colegas, reconhecendo a diversidade e a importância da valorização, do acolhimento e do respeito às diferenças.",
+      "extra_normalized_prefix": " fisicas entre os colegas, reconhecendo a diversidade e a importancia da valorizacao, do acolhimento e do respeito as diferencas.",
+      "independent_boundary": {
+        "anchor": [
+          396.05511474609375,
+          214.33999633789062,
+          437.5213623046875,
+          225.37998962402344
+        ],
+        "body_bbox": [
+          389.83,
+          214.33999633789062,
+          580.44,
+          320.69000244140625
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 324.8899841308594,
+        "physical_bottom_rule_y": 320.69000244140625,
+        "column": [
+          389.83,
+          580.44
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências  ",
+        "1": "1º  ",
+        "2": "Vida e evolução  ",
+        "3": "Corpo humano\nRespeito à diversidade  ",
+        "4": "(EF01CI03) Discutir as razões pelas quais os hábitos de higiene do corpo (lavar as mãos antes de comer, escovar os dentes,"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF06CI04",
+      "page": 377,
+      "cache_item_id": "ca:rj-doc-eief-2019:5a11d798cf44c728bf1f",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:0315c6c32577a02edd29",
+      "evidence_locator": "table:0/row:18/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 21,
+      "physical_expected_characters": 208,
+      "extracted_sha256": "f207d4be2edb0d7b5dc311d57dfb31ae723c03e79b6f244646b6aa4d44ddeed9",
+      "physical_expected_sha256": "22e5cc6aa4808b957d07156ecf9a7e4b431247b4cf40aa9a7a4fada06fa32337",
+      "extracted_head": "Discutir e Associar a",
+      "extracted_tail": "Discutir e Associar a",
+      "expected_tail": "Discutir e Associar a produção de medicamentos e outros materiais sintéticos ao desenvolvimento científico e tecnológico, reconhecendo benefícios e avaliando impactos socioambientais no ambiente em que vivem.",
+      "extra_normalized_prefix": " producao de medicamentos e outros materiais sinteticos ao desenvolvimento cientifico e tecnologico, reconhecendo beneficios e avaliando impactos socioambientais no ambiente em que vivem.",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          464.3499755859375,
+          442.2099914550781,
+          476.3499755859375
+        ],
+        "body_bbox": [
+          389.83,
+          464.3499755859375,
+          581.28,
+          579.3099975585938
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 596.5899658203125,
+        "physical_bottom_rule_y": 579.3099975585938,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": " Ciências ",
+        "1": " 6º ",
+        "2": " Matéria e\nenergia ",
+        "3": "Instrumentos óticos  ",
+        "4": " Misturas homogêneas e heterogêneas",
+        "5": "  ",
+        "6": " (EF06CI01)Selecionar e Classificar\ncomo homogênea ou heterogênea, a\nmistura de dois ou mais materiais\n(água e sal, água e óleo, água e areia\netc.), reconhecendo os principais\nmétodos de separação de matérias,\naplicados em situações do cotidiano. ",
+        "7": "  ",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF06CI14",
+      "page": 379,
+      "cache_item_id": "ca:rj-doc-eief-2019:14379a955383f3b46d88",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:8420dcb03c0777f5d0d0",
+      "evidence_locator": "table:0/row:3/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 23,
+      "physical_expected_characters": 338,
+      "extracted_sha256": "bd541d194f64190c8f07a2f9ca303d1d0a6cb52ee510a6e92158959cb2f1570f",
+      "physical_expected_sha256": "40a6eb26d8fa7ebe7361d95bb4c38db5175c90ab9372448955633080c1338970",
+      "extracted_head": "Inferir que as mudanças",
+      "extracted_tail": "Inferir que as mudanças",
+      "expected_tail": "ma vara (gnômon) ao longo do dia em diferentes períodos do ano são uma evidência dos movimentos relativos entre a Terra e o Sol, que podem ser explicados por meio dos movimentos de rotação e translação da Terra e da inclinação de seu eixo de rotação em relação ao plano de sua órbita em torno do Sol.",
+      "extra_normalized_prefix": " na sombra de uma vara (gnomon) ao longo do dia em diferentes periodos do ano sao uma evidencia dos movimentos relativos entre a terra e o sol, que podem ser explicados por meio dos movimentos de rotacao e translacao da ",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          443.4499816894531,
+          442.2099914550781,
+          455.4499816894531
+        ],
+        "body_bbox": [
+          389.83,
+          443.4499816894531,
+          581.28,
+          587.7099609375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 619.75,
+        "physical_bottom_rule_y": 587.7099609375,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências Ciências Ciências",
+        "1": "6º 6º 6º",
+        "2": "Terra e\nUniverso Terra e\nUniverso Terra e\nUniverso",
+        "3": "Forma, estrutura e\nmovimentos da Terra Forma, estrutura e\nmovimentos da Terra Forma, estrutura e\nmovimentos da Terra",
+        "4": "  ",
+        "5": "  ",
+        "6": "(EF06CI11) Descrever as diferentes\ncamadas que estruturam o planeta\nTerra (da estrutura interna à\natmosfera) e suas principais\ncaracterísticas, identificando a escola\nno ambiente em que vivemos na\nTerra. (EF06CI12) Nomear os diferentes\ntipos de rocha, relacionando a\nformação de fósseis, a rochas\nsedimentares em diferentes períodos\ngeológicos e reconhecendo os\nfenômenos físicos e químicos\nenvolvidos na dinâmica da Terra. (EF06CI13)Selecionar argumentos e\nevidências que demonstrem a\nesfericidade da Terra.",
+        "7": "  ",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF07CI03",
+      "page": 380,
+      "cache_item_id": "ca:rj-doc-eief-2019:57c82b6bb7abc94c89ee",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:cba78857f701a846f2b0",
+      "evidence_locator": "table:0/row:10/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 23,
+      "physical_expected_characters": 334,
+      "extracted_sha256": "8f8c2c609a110bf2cfdd74d4ab8566039fd0c1738020130987bc14e8770fa21b",
+      "physical_expected_sha256": "607d5410834243a6199cf03a353420d67a1eb6e0df5e40127b5f2e4238e2dd6e",
+      "extracted_head": "Reconhecer e Utilizar o",
+      "extracted_tail": "Reconhecer e Utilizar o",
+      "expected_tail": "to das formas de propagação do calor para justificar a utilização de determinados materiais (condutores e isolantes) na vida cotidiana, explicar o princípio de funcionamento de alguns equipamentos (garrafa térmica, coletor solar etc.) e/ou construir soluções tecnológicas a partir desse conhecimento.",
+      "extra_normalized_prefix": " conhecimento das formas de propagacao do calor para justificar a utilizacao de determinados materiais (condutores e isolantes) na vida cotidiana, explicar o principio de funcionamento de alguns equipamentos (garrafa ter",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          210.13995361328125,
+          442.2099914550781,
+          222.13995361328125
+        ],
+        "body_bbox": [
+          389.83,
+          210.13995361328125,
+          581.28,
+          369.16998291015625
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 401.0899963378906,
+        "physical_bottom_rule_y": 369.16998291015625,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências  ",
+        "1": "7º  ",
+        "2": "Matéria e\nenergia  ",
+        "3": "  ",
+        "4": "Máquinas simples  Formas de propagação do",
+        "5": "  ",
+        "6": "(EF07CI02)Investigar e diferenciar\ntemperatura, calor e sensação\ntérmica nas diferentes situações de\nequilíbrio termodinâmico cotidianas.  ",
+        "7": "  ",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF07CI07",
+      "page": 381,
+      "cache_item_id": "ca:rj-doc-eief-2019:0a94aedfc8c160bedbaf",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:fafd1c0c04b2b9ba679c",
+      "evidence_locator": "table:0/row:10/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 26,
+      "physical_expected_characters": 424,
+      "extracted_sha256": "2a2c8c527abfa0a422e5b95293bda6e1db9d99d8708a3e8f2aebae6ada5c93f7",
+      "physical_expected_sha256": "3a7a4282edb1a12fec0d06decef143031d37363a7a6e15ea0951cfd9eed9171c",
+      "extracted_head": "Caracterizar os principais",
+      "extracted_tail": "Caracterizar os principais",
+      "expected_tail": "ade de luz solar, à temperatura etc., correlacionando essas características à flora e fauna específicas, Enumerando as diversas formar de aproveitamento do solo nas atividades humanas, processos de culturas sustentáveis como a agricultura familiar e a agroecologia na produção e consumo de alimentos.",
+      "extra_normalized_prefix": " ecossistemas brasileiros quanto a paisagem, a quantidade de agua, ao tipo de solo, a disponibilidade de luz solar, a temperatura etc., correlacionando essas caracteristicas a flora e fauna especificas, enumerando as div",
+      "independent_boundary": {
+        "anchor": [
+          396.42999267578125,
+          206.65997314453125,
+          441.6100158691406,
+          218.65997314453125
+        ],
+        "body_bbox": [
+          389.83,
+          206.65997314453125,
+          581.28,
+          424.24998474121094
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 426.8899841308594,
+        "physical_bottom_rule_y": 424.24998474121094,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências  ",
+        "1": "7º  ",
+        "2": "Matéria e\nenergia  ",
+        "3": "  ",
+        "4": "Máquinas simples  Formas de propagação do",
+        "5": "  ",
+        "6": "(EF07CI06) Discutir e avaliar\nmudanças econômicas, culturais e\nsociais, tanto na vida cotidiana\nquanto no mundo do trabalho,\ndecorrentes do desenvolvimento de\nnovos materiais e tecnologias (como\nautomação e informatização).  ",
+        "7": "  ",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF07CI08",
+      "page": 381,
+      "cache_item_id": "ca:rj-doc-eief-2019:643df3da37c88b499901",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:4f9978b5a985daa4c90b",
+      "evidence_locator": "table:0/row:25/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 24,
+      "physical_expected_characters": 548,
+      "extracted_sha256": "bc4703fb277f83d3f34228c4526014093ec5d56e453eaff5185af391c74269bd",
+      "physical_expected_sha256": "53db89d68357945ad4528f156dde511a1c2f2b6b3ff70ec3f2c4c22c8e79049e",
+      "extracted_head": "Avaliar como os impactos",
+      "extracted_tail": "Avaliar como os impactos",
+      "expected_tail": " Percebendo a existência de relações harmônicas e desarmônicas intraespecíficas e interespecíficas, reconhecendo a água como elemento indispensável à vida e como hábitat para muitos seres vivos e a importância de medidas necessárias para tornar a água adequada ao uso, tratamento e saneamento básico.",
+      "extra_normalized_prefix": " provocados por catastrofes naturais ou mudancas nos componentes fisicos, biologicos ou sociais de um ecossistema afetam suas populacoes, podendo surgir ameacas ou a extincao de especies, alteracao de habitos, migracao e",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          426.8899841308594,
+          442.2099914550781,
+          438.8899841308594
+        ],
+        "body_bbox": [
+          389.83,
+          426.8899841308594,
+          581.28,
+          688.4199829101562
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 691.0599975585938,
+        "physical_bottom_rule_y": 688.4199829101562,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências  ",
+        "1": "7º  ",
+        "2": "Matéria e\nenergia  ",
+        "3": "  ",
+        "4": "Máquinas simples  Formas de propagação do",
+        "5": "  ",
+        "6": "(EF07CI06) Discutir e avaliar\nmudanças econômicas, culturais e\nsociais, tanto na vida cotidiana\nquanto no mundo do trabalho,\ndecorrentes do desenvolvimento de\nnovos materiais e tecnologias (como\nautomação e informatização).  ",
+        "7": "  ",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF07CI09",
+      "page": 381,
+      "cache_item_id": "ca:rj-doc-eief-2019:7cbb0b6320546e0b3bce",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:53e34f44c27c052fab41",
+      "evidence_locator": "table:0/row:43/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 24,
+      "physical_expected_characters": 123,
+      "extracted_sha256": "a0f9038f93d36c903672f55a1a68ae4fec3be484980d5713d5f7f6d38eff27f4",
+      "physical_expected_sha256": "8f4041faedecf9be17e8414a57e531eca204bf7fdebeb15fd3ba259ba9e1e68b",
+      "extracted_head": "Interpretar as condições",
+      "extracted_tail": "Interpretar as condições",
+      "expected_tail": "Interpretar as condições de saúde da comunidade, cidade ou estado, com base na análise e comparação de indicadores de saúde",
+      "extra_normalized_prefix": " de saude da comunidade, cidade ou estado, com base na analise e comparacao de indicadores de saude",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          691.0599975585938,
+          442.2099914550781,
+          703.0599975585938
+        ],
+        "body_bbox": [
+          389.83,
+          691.0599975585938,
+          581.28,
+          747.5759887695312
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 747.5759887695312,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências  ",
+        "1": "7º  ",
+        "2": "Matéria e\nenergia  ",
+        "3": "  ",
+        "4": "Máquinas simples  Formas de propagação do",
+        "5": "  ",
+        "6": "(EF07CI06) Discutir e avaliar\nmudanças econômicas, culturais e\nsociais, tanto na vida cotidiana\nquanto no mundo do trabalho,\ndecorrentes do desenvolvimento de\nnovos materiais e tecnologias (como\nautomação e informatização).  ",
+        "7": "  ",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF07CI10",
+      "page": 382,
+      "cache_item_id": "ca:rj-doc-eief-2019:19a06c2cb25201c2a5c9",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:67db3d39e086abf30f4b",
+      "evidence_locator": "table:0/row:6/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 23,
+      "physical_expected_characters": 265,
+      "extracted_sha256": "ca5f89fd4ab24344774f006fd86f2ee60cb8ff29eae03838016a50437c0a2470",
+      "physical_expected_sha256": "fb9a5fe78dc8955ee8ad2e14cd1697d693069b52898560ae7eb12bbcf7c21d71",
+      "extracted_head": "Reconhecer e argumentar",
+      "extracted_tail": "Reconhecer e argumentar",
+      "expected_tail": "Reconhecer e argumentar sobre a importância da vacinação para a saúde pública, com base em informações sobre a maneira como a vacina atua no organismo e o papel histórico da vacinação para a manutenção da saúde individual e coletiva e para a erradicação de doenças.",
+      "extra_normalized_prefix": " sobre a importancia da vacinacao para a saude publica, com base em informacoes sobre a maneira como a vacina atua no organismo e o papel historico da vacinacao para a manutencao da saude individual e coletiva e para a e",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          147.97998046875,
+          442.2099914550781,
+          159.97998046875
+        ],
+        "body_bbox": [
+          389.83,
+          147.97998046875,
+          581.28,
+          277.72998046875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 280.3699951171875,
+        "physical_bottom_rule_y": 277.72998046875,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "  ",
+        "2": "  ",
+        "3": "impactos ambientais\nProgramas e indicadores\nde saúde pública  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "(como taxa de mortalidade infantil, cobertura de saneamento básico e incidência de doenças de veiculação",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF07CI11",
+      "page": 382,
+      "cache_item_id": "ca:rj-doc-eief-2019:6d7568d467f452b2e96b",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:553b26afe2d52c564b57",
+      "evidence_locator": "table:0/row:15/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 25,
+      "physical_expected_characters": 384,
+      "extracted_sha256": "ae4d4496603fc2bed012e68c85b03908ae1c1814a7b257a1fcf0cd60325154f0",
+      "physical_expected_sha256": "1dee62e99a68e13b98892f7af3ea9a9af5f45b2732b82e4c8f2d078ef13ea8b9",
+      "extracted_head": "Analisar historicamente o",
+      "extracted_tail": "Analisar historicamente o",
+      "expected_tail": "ensões da vida humana, considerando indicadores ambientais e de qualidade de vida, pesquisando e descrevendo uma situação problema local, na área de saúde , tendo como proposta um plano de ação, identificando e selecionando estratégias que sejam consideradas científicas e tecnologicamente adequadas.",
+      "extra_normalized_prefix": " uso da tecnologia, incluindo a digital, nas diferentes dimensoes da vida humana, considerando indicadores ambientais e de qualidade de vida, pesquisando e descrevendo uma situacao problema local, na area de saude , tend",
+      "independent_boundary": {
+        "anchor": [
+          396.42999267578125,
+          280.3699951171875,
+          441.6100158691406,
+          292.3699951171875
+        ],
+        "body_bbox": [
+          389.83,
+          280.3699951171875,
+          581.28,
+          468.6699676513672
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 485.9499816894531,
+        "physical_bottom_rule_y": 468.6699676513672,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "  ",
+        "2": "  ",
+        "3": "impactos ambientais\nProgramas e indicadores\nde saúde pública  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "(como taxa de mortalidade infantil, cobertura de saneamento básico e incidência de doenças de veiculação",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF07CI13",
+      "page": 382,
+      "cache_item_id": "ca:rj-doc-eief-2019:d4722ca5db61c8f44ff2",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:560a0410fc5be80fe4a8",
+      "evidence_locator": "table:0/row:40/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 22,
+      "physical_expected_characters": 215,
+      "extracted_sha256": "b641476ab8ef02e7838c0ea5260df87c2194657b078548f40bf6c2b1a290925c",
+      "physical_expected_sha256": "92e350fe81f9d90374b2e00bbadf31121709566c2cbfa73f6463edecd8ae1835",
+      "extracted_head": "Nomear e implementar o",
+      "extracted_tail": "Nomear e implementar o",
+      "expected_tail": "Nomear e implementar o mecanismo natural do efeito estufa, seu papel fundamental para o desenvolvimento da vida na Terra, discutindo as ações humanas responsáveis pelo seu aumento artificial (queima dos combustíveis",
+      "extra_normalized_prefix": " mecanismo natural do efeito estufa, seu papel fundamental para o desenvolvimento da vida na terra, discutindo as acoes humanas responsaveis pelo seu aumento artificial (queima dos combustiveis",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          647.6199951171875,
+          442.2099914550781,
+          659.6199951171875
+        ],
+        "body_bbox": [
+          389.83,
+          647.6199951171875,
+          581.28,
+          748.0559387207031
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 748.0559387207031,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "  ",
+        "2": "  ",
+        "3": "impactos ambientais\nProgramas e indicadores\nde saúde pública  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "(como taxa de mortalidade infantil, cobertura de saneamento básico e incidência de doenças de veiculação",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF08CI01",
+      "page": 383,
+      "cache_item_id": "ca:rj-doc-eief-2019:09d32b68ade050063e72",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:93abfd85cc83bffb2be0",
+      "evidence_locator": "table:0/row:41/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 22,
+      "physical_expected_characters": 191,
+      "extracted_sha256": "ead5614fe25cad9cea7e3226e2b40485117664c0bf631fc19db0e62051e1f4bc",
+      "physical_expected_sha256": "d36d742f9b9d65ac964bd7b94cd394ea259bd8d09ff22e00eae7e9d5f887fbb4",
+      "extracted_head": "Classificar diferentes",
+      "extracted_tail": "Classificar diferentes",
+      "expected_tail": "Classificar diferentes fontes (renováveis e não renováveis) e tipos de energia utilizados em residências, comunidades ou cidades, reconhecendo os métodos para a obtenção de nutrientes/energia",
+      "extra_normalized_prefix": " fontes (renovaveis e nao renovaveis) e tipos de energia utilizados em residencias, comunidades ou cidades, reconhecendo os metodos para a obtencao de nutrientes/energia",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          662.260009765625,
+          442.2099914550781,
+          674.260009765625
+        ],
+        "body_bbox": [
+          389.83,
+          662.260009765625,
+          581.28,
+          748.0559387207031
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 748.0559387207031,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "  ",
+        "2": "  ",
+        "3": "  ",
+        "4": "(vulcões, terremotos e tsunamis) ",
+        "5": "  ",
+        "6": "fósseis, desmatamento, queimadas\netc.) e selecionando e\nimplementando propostas para a\nreversão ou controle desse quadro.  ",
+        "7": "  ",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF08CI03",
+      "page": 384,
+      "cache_item_id": "ca:rj-doc-eief-2019:32e27e4c339ef447df49",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:eb0b27f4ea69aae2c357",
+      "evidence_locator": "table:0/row:17/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 24,
+      "physical_expected_characters": 350,
+      "extracted_sha256": "affa5b74c53208741dd7211f2d1750613a0c93b502f9da029d1111684a23de9c",
+      "physical_expected_sha256": "14389c0cbf5fa218510e022cd03a49cf45b8bb67428bb853669b2281d5580e1d",
+      "extracted_head": "Classificar equipamentos",
+      "extracted_tail": "Classificar equipamentos",
+      "expected_tail": "huveiro, ferro, lâmpadas, TV, rádio, geladeira etc.) de acordo com o tipo de transformação de energia (da energia elétrica para a térmica, luminosa, sonora e mecânica, por exemplo) e pesquisando evidências sobre processos de conservação, transformação e dissipação de energia em situações cotidianas.",
+      "extra_normalized_prefix": " eletricos residenciais (chuveiro, ferro, lampadas, tv, radio, geladeira etc.) de acordo com o tipo de transformacao de energia (da energia eletrica para a termica, luminosa, sonora e mecanica, por exemplo) e pesquisando",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          309.64996337890625,
+          442.2099914550781,
+          321.64996337890625
+        ],
+        "body_bbox": [
+          389.83,
+          309.64996337890625,
+          581.28,
+          468.6699676513672
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 478.6299743652344,
+        "physical_bottom_rule_y": 468.6699676513672,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "  ",
+        "2": "  ",
+        "3": "Circuitos elétricos\nUso consciente de energia\nelétrica  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "entre os organismos vivos, associando-os aos modos de vida e aos ambientes onde habitam e",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF08CI05",
+      "page": 384,
+      "cache_item_id": "ca:rj-doc-eief-2019:4d9007f2185a4e3d437b",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:ab50595b0066b7862332",
+      "evidence_locator": "table:0/row:39/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 22,
+      "physical_expected_characters": 260,
+      "extracted_sha256": "3efa00d0f7228aa476c6fa8017990a10971c8d7462d39060d990e514f0720e72",
+      "physical_expected_sha256": "459495c02e7320d2423de2b2690fff0373608cf0a3bd97bdae892f89be988d37",
+      "extracted_head": "Propor ações coletivas",
+      "extracted_tail": "Propor ações coletivas",
+      "expected_tail": "Propor ações coletivas para otimização do uso consciente de energia elétrica em sua escola e/ou comunidade, com base na seleção de equipamentos segundo critérios de sustentabilidade (consumo de energia e eficiência energética) e hábitos de consumo responsável,",
+      "extra_normalized_prefix": " para otimizacao do uso consciente de energia eletrica em sua escola e/ou comunidade, com base na selecao de equipamentos segundo criterios de sustentabilidade (consumo de energia e eficiencia energetica) e habitos de co",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          632.949951171875,
+          442.2099914550781,
+          644.949951171875
+        ],
+        "body_bbox": [
+          389.83,
+          632.949951171875,
+          581.28,
+          748.0559387207031
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 748.0559387207031,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "  ",
+        "2": "  ",
+        "3": "Circuitos elétricos\nUso consciente de energia\nelétrica  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "entre os organismos vivos, associando-os aos modos de vida e aos ambientes onde habitam e",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF08CI07",
+      "page": 385,
+      "cache_item_id": "ca:rj-doc-eief-2019:7a53a7c4d54d2e228725",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:0c0f79e30ea61954216a",
+      "evidence_locator": "table:0/row:12/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 24,
+      "physical_expected_characters": 482,
+      "extracted_sha256": "7d2942040508d363b8fc3fea9f2d7c7810fafaf5a32aa5d725dadfe23cc42b49",
+      "physical_expected_sha256": "5c7468b528f75389d84443cbd37a94951ca5a45e4284969a0ba6a8471de3768d",
+      "extracted_head": "Reconhecer a importância",
+      "extracted_tail": "Reconhecer a importância",
+      "expected_tail": "lantas e animais em relação aos mecanismos adaptativos e evolutivos, reconhecendo os órgãos reprodutivos de diferentes seres vivos, os sistemas genitais masculino e feminino, identificando suas partes e compreendendo as diferentes etapas da reprodução humana (ovulação, fecundação, gestação e parto).",
+      "extra_normalized_prefix": " da evolucao biologica como processo historico em relacao a ancestralidade e descendentes da vida na terra e comparar os diferentes sistemas reprodutivos em plantas e animais em relacao aos mecanismos adaptativos e evolu",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          304.25,
+          442.2099914550781,
+          316.25
+        ],
+        "body_bbox": [
+          389.83,
+          304.25,
+          581.28,
+          536.469970703125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 539.22998046875,
+        "physical_bottom_rule_y": 536.469970703125,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": " Ciências ",
+        "1": " 8º ",
+        "2": " Matéria e\nenergia ",
+        "3": "Uso consciente de energia\nelétrica  ",
+        "4": " Fontes e tipos de energia ",
+        "5": "  ",
+        "6": "associando a movimentação do ar ao\nseu aproveitamento para geração de\nenergia elétrica. (EF08CI06) Discutir e avaliar usinas de\ngeração de energia elétrica\n(termelétricas, hidrelétricas, eólicas\netc.), suas semelhanças e diferenças,\nseus impactos socioambientais, e\ncomo essa energia chega e é usada\nem sua cidade, comunidade, casa ou\nescola. ",
+        "7": "  ",
+        "8": "  ",
+        "9": "  ",
+        "10": "  ",
+        "11": "  ",
+        "12": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF08CI08",
+      "page": 385,
+      "cache_item_id": "ca:rj-doc-eief-2019:9ce2c7fdd018374be5b7",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:8ec79c9bf0f33cb9cb9e",
+      "evidence_locator": "table:0/row:28/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 22,
+      "physical_expected_characters": 283,
+      "extracted_sha256": "5e4df7df8c14d41041fe5d39b9e09eb9201880b177a6edd05b67ea612f55a833",
+      "physical_expected_sha256": "6c7b7da55aa08adfc966e5da640f913db5b14ac455f2c464d5f8f0bb7506db5e",
+      "extracted_head": "Analisar e explicar as",
+      "extracted_tail": "Analisar e explicar as",
+      "expected_tail": "Analisar e explicar as transformações que ocorrem na puberdade considerando a atuação dos hormônios sexuais e do sistema nervoso, distinguindo as funções dos sistemas endócrino e nervoso , identificando a ação dos hormônios como protagonistas das emoções e sensações do corpo humano.",
+      "extra_normalized_prefix": " transformacoes que ocorrem na puberdade considerando a atuacao dos hormonios sexuais e do sistema nervoso, distinguindo as funcoes dos sistemas endocrino e nervoso , identificando a acao dos hormonios como protagonistas",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          539.22998046875,
+          442.2099914550781,
+          551.22998046875
+        ],
+        "body_bbox": [
+          389.83,
+          539.22998046875,
+          581.28,
+          668.8599853515625
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 671.5,
+        "physical_bottom_rule_y": 668.8599853515625,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": " Ciências ",
+        "1": " 8º ",
+        "2": " Matéria e\nenergia ",
+        "3": "Uso consciente de energia\nelétrica  ",
+        "4": " Fontes e tipos de energia ",
+        "5": "  ",
+        "6": "associando a movimentação do ar ao\nseu aproveitamento para geração de\nenergia elétrica. (EF08CI06) Discutir e avaliar usinas de\ngeração de energia elétrica\n(termelétricas, hidrelétricas, eólicas\netc.), suas semelhanças e diferenças,\nseus impactos socioambientais, e\ncomo essa energia chega e é usada\nem sua cidade, comunidade, casa ou\nescola. ",
+        "7": "  ",
+        "8": "  ",
+        "9": "  ",
+        "10": "  ",
+        "11": "  ",
+        "12": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF08CI09",
+      "page": 385,
+      "cache_item_id": "ca:rj-doc-eief-2019:bac07b9160da487d07c7",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:ba5df4e9ca2fa637315f",
+      "evidence_locator": "table:0/row:37/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 21,
+      "physical_expected_characters": 149,
+      "extracted_sha256": "0df1b264b17f70cc86e24ecd1086aa388c9515aac15e78b6724d59521ce15531",
+      "physical_expected_sha256": "861de89be7ed7cc6f1a37c4990b4e0c256f8162aeae8f0a5a08c45b21a0874e3",
+      "extracted_head": "Conhecer e Comparar o",
+      "extracted_tail": "Conhecer e Comparar o",
+      "expected_tail": "Conhecer e Comparar o modo de ação e a eficácia dos diversos métodos contraceptivos, justificando a necessidade de compartilhar a responsabilidade na",
+      "extra_normalized_prefix": " modo de acao e a eficacia dos diversos metodos contraceptivos, justificando a necessidade de compartilhar a responsabilidade na",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          671.5,
+          442.2099914550781,
+          683.5
+        ],
+        "body_bbox": [
+          389.83,
+          671.5,
+          581.28,
+          742.656005859375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 742.656005859375,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": " Ciências ",
+        "1": " 8º ",
+        "2": " Matéria e\nenergia ",
+        "3": "Uso consciente de energia\nelétrica  ",
+        "4": " Fontes e tipos de energia ",
+        "5": "  ",
+        "6": "associando a movimentação do ar ao\nseu aproveitamento para geração de\nenergia elétrica. (EF08CI06) Discutir e avaliar usinas de\ngeração de energia elétrica\n(termelétricas, hidrelétricas, eólicas\netc.), suas semelhanças e diferenças,\nseus impactos socioambientais, e\ncomo essa energia chega e é usada\nem sua cidade, comunidade, casa ou\nescola. ",
+        "7": "  ",
+        "8": "  ",
+        "9": "  ",
+        "10": "  ",
+        "11": "  ",
+        "12": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF08CI10",
+      "page": 386,
+      "cache_item_id": "ca:rj-doc-eief-2019:8754088f204256abe1fe",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:d52d88e7cee15cf8a7f7",
+      "evidence_locator": "table:0/row:7/cell:5",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 25,
+      "physical_expected_characters": 200,
+      "extracted_sha256": "4c5863d4562a88f6dcdc3be79b66f3b30b85b51aaafd8586785291343f943dee",
+      "physical_expected_sha256": "60ee4f2877a35072120941dca16856f2d61554bc8986ad652bbaf530e71d995a",
+      "extracted_head": "Identificar os principais",
+      "extracted_tail": "Identificar os principais",
+      "expected_tail": "Identificar os principais sintomas, modos de transmissão e tratamento de algumas IST (com ênfase na AIDS), e discutir estratégias e métodos de prevenção, evidenciando casos relevantes nas localidades.",
+      "extra_normalized_prefix": " sintomas, modos de transmissao e tratamento de algumas ist (com enfase na aids), e discutir estrategias e metodos de prevencao, evidenciando casos relevantes nas localidades.",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          162.6199951171875,
+          442.2099914550781,
+          174.6199951171875
+        ],
+        "body_bbox": [
+          389.83,
+          162.6199951171875,
+          581.28,
+          263.05999755859375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 265.70001220703125,
+        "physical_bottom_rule_y": 263.05999755859375,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "  ",
+        "2": "  ",
+        "3": "  ",
+        "4": "  ",
+        "5": "escolha e na utilização do método mais adequado à prevenção da gravidez precoce e indesejada, de",
+        "6": "  ",
+        "7": "  ",
+        "8": "  ",
+        "9": "  ",
+        "10": "  ",
+        "11": "  ",
+        "12": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF08CI11",
+      "page": 386,
+      "cache_item_id": "ca:rj-doc-eief-2019:f9ba067509e2df30704f",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:a6eea1a15f17c381971c",
+      "evidence_locator": "table:0/row:14/cell:5",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 21,
+      "physical_expected_characters": 126,
+      "extracted_sha256": "b85ea3b47757c0d7be31f87be86e9045ad4fc7bd2018db7528d1cc202a4bb2fb",
+      "physical_expected_sha256": "f1acf0b45bb56192cc3b7812299e26de037d9813537dc8d073c0c66b22295af3",
+      "extracted_head": "Selecionar argumentos",
+      "extracted_tail": "Selecionar argumentos",
+      "expected_tail": "Selecionar argumentos que evidenciem as múltiplas dimensões da sexualidade humana (biológica, sociocultural, afetiva e ética).",
+      "extra_normalized_prefix": " que evidenciem as multiplas dimensoes da sexualidade humana (biologica, sociocultural, afetiva e etica).",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          265.70001220703125,
+          442.2099914550781,
+          277.70001220703125
+        ],
+        "body_bbox": [
+          389.83,
+          265.70001220703125,
+          581.28,
+          336.7699890136719
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 343.1299743652344,
+        "physical_bottom_rule_y": 336.7699890136719,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "  ",
+        "2": "  ",
+        "3": "  ",
+        "4": "  ",
+        "5": "escolha e na utilização do método mais adequado à prevenção da gravidez precoce e indesejada, de",
+        "6": "  ",
+        "7": "  ",
+        "8": "  ",
+        "9": "  ",
+        "10": "  ",
+        "11": "  ",
+        "12": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF08CI15",
+      "page": 387,
+      "cache_item_id": "ca:rj-doc-eief-2019:13f21c91730664ce4775",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:7fb31c073a06111c1f94",
+      "evidence_locator": "table:0/row:0/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 23,
+      "physical_expected_characters": 131,
+      "extracted_sha256": "45d88fe9897201a18a6ed98f0d631feca4b930b74670283d40d3bc698648907b",
+      "physical_expected_sha256": "5376c6e18eeeb4183f994ef01df413cabc3f4dfe13e589c1b6b6ba72fea114d2",
+      "extracted_head": "Identificar e nomear as",
+      "extracted_tail": "Identificar e nomear as",
+      "expected_tail": "Identificar e nomear as principais variáveis envolvidas na previsão do tempo e simular situações nas quais elas possam ser medidas.",
+      "extra_normalized_prefix": " principais variaveis envolvidas na previsao do tempo e simular situacoes nas quais elas possam ser medidas.",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          59.63995361328125,
+          442.2099914550781,
+          71.63995361328125
+        ],
+        "body_bbox": [
+          389.83,
+          59.63995361328125,
+          581.28,
+          130.70001220703125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 164.41998291015625,
+        "physical_bottom_rule_y": 130.70001220703125,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências  ",
+        "1": "8º  ",
+        "2": "Terra e\nUniverso  ",
+        "3": "Sistema Sol, Terra e Lua\nClima  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "(EF08CI15) Identificar e nomear as principais variáveis envolvidas na previsão do tempo e simular",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF09CI04",
+      "page": 387,
+      "cache_item_id": "ca:rj-doc-eief-2019:4b3f339bdd12dbc29483",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:8fab6f82209173a5d8ed",
+      "evidence_locator": "table:0/row:21/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 19,
+      "physical_expected_characters": 227,
+      "extracted_sha256": "6411cfbabefe48f4e4ee045095ab3bbfce78ddf0d4e05b24daee1ce60c9db011",
+      "physical_expected_sha256": "f40b9b225810bdea09703f91ffc895472372cdb70b38409b610a79eff0b8df40",
+      "extracted_head": "Planejar e executar",
+      "extracted_tail": "Planejar e executar",
+      "expected_tail": "Planejar e executar experimentos que evidenciem que todas as cores de luz podem ser formadas pela composição das três cores primárias da luz e que a cor de um objeto está relacionada também à cor da luz que o ilumina e perceber",
+      "extra_normalized_prefix": " experimentos que evidenciem que todas as cores de luz podem ser formadas pela composicao das tres cores primarias da luz e que a cor de um objeto esta relacionada tambem a cor da luz que o ilumina e perceber",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          640.510009765625,
+          442.2099914550781,
+          652.510009765625
+        ],
+        "body_bbox": [
+          389.83,
+          640.510009765625,
+          581.28,
+          740.8599853515625
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 740.8599853515625,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências  ",
+        "1": "8º  ",
+        "2": "Terra e\nUniverso  ",
+        "3": "Sistema Sol, Terra e Lua\nClima  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "(EF08CI15) Identificar e nomear as principais variáveis envolvidas na previsão do tempo e simular",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF09CI06",
+      "page": 388,
+      "cache_item_id": "ca:rj-doc-eief-2019:37d22e4a1c04ac95f73b",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:5b1408b603863f942fbf",
+      "evidence_locator": "table:0/row:10/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 24,
+      "physical_expected_characters": 231,
+      "extracted_sha256": "84b3ccca4b32a77b425873a3d429e908c98c00f5d54a9dd112a654a0a2ff2a12",
+      "physical_expected_sha256": "84f7f6eb6eae87763a2fc1f9bc7ae58b468804888ac642d4f207ea5aa2d5fe86",
+      "extracted_head": "Reconhecer e Classificar",
+      "extracted_tail": "Reconhecer e Classificar",
+      "expected_tail": "Reconhecer e Classificar as radiações eletromagnéticas por suas frequências, fontes e aplicações, discutindo e avaliando as implicações de seu uso em controle remoto, telefone celular, raio X, forno de micro-ondas, fotocélulas etc.",
+      "extra_normalized_prefix": " as radiacoes eletromagneticas por suas frequencias, fontes e aplicacoes, discutindo e avaliando as implicacoes de seu uso em controle remoto, telefone celular, raio x, forno de micro-ondas, fotocelulas etc.",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          207.13995361328125,
+          442.2099914550781,
+          219.13995361328125
+        ],
+        "body_bbox": [
+          389.83,
+          207.13995361328125,
+          581.28,
+          307.489990234375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 310.1300048828125,
+        "physical_bottom_rule_y": 307.489990234375,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "  ",
+        "2": "  ",
+        "3": "  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "que a poluição luminosa é prejudicial à visão do céu e à saúde dos seres vivos.",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF09CI07",
+      "page": 388,
+      "cache_item_id": "ca:rj-doc-eief-2019:76cdb26c410d5f214c80",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:02fd2b9d414def9c752e",
+      "evidence_locator": "table:0/row:17/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 26,
+      "physical_expected_characters": 241,
+      "extracted_sha256": "895b14af7705dcc0f8406148ebc65531b9b9d26cfaba5c1b9b867cd3a2508b16",
+      "physical_expected_sha256": "a0538add790d21cf5f255236f788b6fe21a7af46a42130ba5ccff92bc01d4779",
+      "extracted_head": "Discutir o papel do avanço",
+      "extracted_tail": "Discutir o papel do avanço",
+      "expected_tail": "Discutir o papel do avanço tecnológico na aplicação das radiações na medicina diagnóstica (raio X, ultrassom, ressonância nuclear magnética) e no tratamento de doenças (radioterapia, cirurgia ótica a laser, infravermelho, ultravioleta etc.).",
+      "extra_normalized_prefix": " tecnologico na aplicacao das radiacoes na medicina diagnostica (raio x, ultrassom, ressonancia nuclear magnetica) e no tratamento de doencas (radioterapia, cirurgia otica a laser, infravermelho, ultravioleta etc.).",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          310.1300048828125,
+          442.2099914550781,
+          322.1300048828125
+        ],
+        "body_bbox": [
+          389.83,
+          310.1300048828125,
+          581.28,
+          425.2099914550781
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 429.3799743652344,
+        "physical_bottom_rule_y": 425.2099914550781,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "  ",
+        "2": "  ",
+        "3": "  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "que a poluição luminosa é prejudicial à visão do céu e à saúde dos seres vivos.",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF09CI08",
+      "page": 388,
+      "cache_item_id": "ca:rj-doc-eief-2019:ec95601ec9a6953dce4b",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:d4515f1fb40920dcd470",
+      "evidence_locator": "table:0/row:25/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 16,
+      "physical_expected_characters": 327,
+      "extracted_sha256": "0c286f07d673afa28b8ebc955470197b2e9d7a6a741590b76479e116f726088a",
+      "physical_expected_sha256": "9f43659f64faf29d9b89f8cc99d5b4118bb058bad8c7d0a46946cb01672eeca4",
+      "extracted_head": "Levantar dados e",
+      "extracted_tail": "Levantar dados e",
+      "expected_tail": "s para identificação e comparação de diferentes explicações relacionadas à origem das espécies, levando em consideração os princípios, padrões e valores das diferentes épocas e associar os gametas à transmissão das características hereditárias, estabelecendo relações entre ancestrais e descendentes.",
+      "extra_normalized_prefix": " informacoes para identificacao e comparacao de diferentes explicacoes relacionadas a origem das especies, levando em consideracao os principios, padroes e valores das diferentes epocas e associar os gametas a transmissa",
+      "independent_boundary": {
+        "anchor": [
+          396.4478759765625,
+          429.3799743652344,
+          433.97711181640625,
+          439.3399658203125
+        ],
+        "body_bbox": [
+          389.83,
+          429.3799743652344,
+          581.28,
+          601.510009765625
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 604.1499633789062,
+        "physical_bottom_rule_y": 601.510009765625,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "  ",
+        "2": "  ",
+        "3": "  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "que a poluição luminosa é prejudicial à visão do céu e à saúde dos seres vivos.",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF09CI09",
+      "page": 388,
+      "cache_item_id": "ca:rj-doc-eief-2019:608319a43f22444b2cf9",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:81e8dec1d9c8f3ecc32b",
+      "evidence_locator": "table:0/row:37/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 21,
+      "physical_expected_characters": 231,
+      "extracted_sha256": "e7b93d93e65e17e7c8336401feefa24ccf981edd7e67e57bf9defdd312287e12",
+      "physical_expected_sha256": "22bed9a0325ca9f35f1ac0ea540569b464545b7f26842ba68b2d01da67923709",
+      "extracted_head": "Discutir as ideias de",
+      "extracted_tail": "Discutir as ideias de",
+      "expected_tail": "Discutir as ideias de Mendel sobre hereditariedade (fatores hereditários, segregação, gametas, fecundação), considerando- as para resolver problemas envolvendo a transmissão de características hereditárias em diferentes organismos.",
+      "extra_normalized_prefix": " mendel sobre hereditariedade (fatores hereditarios, segregacao, gametas, fecundacao), considerandoas para resolver problemas envolvendo a transmissao de caracteristicas hereditarias em diferentes organismos.",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          604.1499633789062,
+          442.2099914550781,
+          616.1499633789062
+        ],
+        "body_bbox": [
+          389.83,
+          604.1499633789062,
+          581.28,
+          719.2599792480469
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 719.2599792480469,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "  ",
+        "2": "  ",
+        "3": "  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "que a poluição luminosa é prejudicial à visão do céu e à saúde dos seres vivos.",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF09CI10",
+      "page": 389,
+      "cache_item_id": "ca:rj-doc-eief-2019:bb19794468614f2227cf",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:df04f01d340597df3f7e",
+      "evidence_locator": "table:0/row:0/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 18,
+      "physical_expected_characters": 217,
+      "extracted_sha256": "34defaa736342a6357f3022523244aea00bfb83b92841016caf1e116826f520d",
+      "physical_expected_sha256": "fc616b759405bfc1c86963f8654f1507b76b020781d560140155f34876575dd7",
+      "extracted_head": "Comparar as ideias",
+      "extracted_tail": "Comparar as ideias",
+      "expected_tail": "Comparar as ideias evolucionistas de Lamarck e Darwin apresentadas em textos científicos e históricos, identificando semelhanças e diferenças entre essas ideias e sua importância para explicar a diversidade biológica.",
+      "extra_normalized_prefix": " evolucionistas de lamarck e darwin apresentadas em textos cientificos e historicos, identificando semelhancas e diferencas entre essas ideias e sua importancia para explicar a diversidade biologica.",
+      "independent_boundary": {
+        "anchor": [
+          397.0299987792969,
+          59.63995361328125,
+          442.2100524902344,
+          71.63995361328125
+        ],
+        "body_bbox": [
+          389.83,
+          59.63995361328125,
+          581.28,
+          159.97998046875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 162.6199951171875,
+        "physical_bottom_rule_y": 159.97998046875,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências  ",
+        "1": "9º  ",
+        "2": "Vida e\nevolução  ",
+        "3": "Hereditariedade\nIdeias evolucionistas\nPreservação da\nbiodiversidade  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "(EF09CI10) Comparar as ideias evolucionistas de Lamarck e Darwin apresentadas em textos científicos e",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF09CI11",
+      "page": 389,
+      "cache_item_id": "ca:rj-doc-eief-2019:19d979d8d343b5691e3e",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:d59ada54a50b58f78a45",
+      "evidence_locator": "table:0/row:7/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 23,
+      "physical_expected_characters": 245,
+      "extracted_sha256": "45f9d6dea0b5e64095947866f64c54ddf0ed4e66f3a515a60f152233798774c8",
+      "physical_expected_sha256": "019cdc9ae29dd80d28e81ec16cc0dc80135ab8f030d463ccc986dea1ec910a87",
+      "extracted_head": "Discutir a evolução e a",
+      "extracted_tail": "Discutir a evolução e a",
+      "expected_tail": "Discutir a evolução e a diversidade das espécies com base na atuação da seleção natural sobre as variantes de uma mesma espécie, resultantes de processo reprodutivo e reconhecer que as adaptações dos seres vivos resultam de processos evolutivos.",
+      "extra_normalized_prefix": " diversidade das especies com base na atuacao da selecao natural sobre as variantes de uma mesma especie, resultantes de processo reprodutivo e reconhecer que as adaptacoes dos seres vivos resultam de processos evolutivo",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          162.6199951171875,
+          442.2099914550781,
+          174.6199951171875
+        ],
+        "body_bbox": [
+          389.83,
+          162.6199951171875,
+          581.28,
+          277.72998046875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 280.3699951171875,
+        "physical_bottom_rule_y": 277.72998046875,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências  ",
+        "1": "9º  ",
+        "2": "Vida e\nevolução  ",
+        "3": "Hereditariedade\nIdeias evolucionistas\nPreservação da\nbiodiversidade  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "(EF09CI10) Comparar as ideias evolucionistas de Lamarck e Darwin apresentadas em textos científicos e",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF09CI12",
+      "page": 389,
+      "cache_item_id": "ca:rj-doc-eief-2019:23fff6b322b726f7d5e4",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:cd5bf2cbf4d6a988e86e",
+      "evidence_locator": "table:0/row:15/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 24,
+      "physical_expected_characters": 262,
+      "extracted_sha256": "42a1569b2696a3f45cd2c6f40ae5edfb1d12ff841eee5ddaf8a847c19b44ffaa",
+      "physical_expected_sha256": "d80d5d0b79e9a9557025596e63962ecbfeee15edad265268c6feada27cb98d2d",
+      "extracted_head": "Justificar a importância",
+      "extracted_tail": "Justificar a importância",
+      "expected_tail": "Justificar a importância das unidades de conservação para a preservação da biodiversidade e do patrimônio nacional, considerando os diferentes tipos de unidades (parques, reservas e florestas nacionais), as populações humanas e as atividades a eles relacionados.",
+      "extra_normalized_prefix": " das unidades de conservacao para a preservacao da biodiversidade e do patrimonio nacional, considerando os diferentes tipos de unidades (parques, reservas e florestas nacionais), as populacoes humanas e as atividades a ",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          280.3699951171875,
+          442.2099914550781,
+          292.3699951171875
+        ],
+        "body_bbox": [
+          389.83,
+          280.3699951171875,
+          581.28,
+          395.4499816894531
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 398.0899963378906,
+        "physical_bottom_rule_y": 395.4499816894531,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências  ",
+        "1": "9º  ",
+        "2": "Vida e\nevolução  ",
+        "3": "Hereditariedade\nIdeias evolucionistas\nPreservação da\nbiodiversidade  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "(EF09CI10) Comparar as ideias evolucionistas de Lamarck e Darwin apresentadas em textos científicos e",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF09CI13",
+      "page": 389,
+      "cache_item_id": "ca:rj-doc-eief-2019:ebd8fe554105d83ccc99",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:e1c4fcf87775fba4e890",
+      "evidence_locator": "table:0/row:23/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 18,
+      "physical_expected_characters": 197,
+      "extracted_sha256": "cc34f56931ce9ac08777642fa066564520a7e4a6aa041f3c3b9f27543e447ab9",
+      "physical_expected_sha256": "ee5084f0a78642d4bcae0ad432bfd0b0fe06565defdb0be990db7a787bf182e8",
+      "extracted_head": "Propor iniciativas",
+      "extracted_tail": "Propor iniciativas",
+      "expected_tail": "Propor iniciativas individuais e coletivas para a solução de problemas ambientais da cidade ou da comunidade, com base na análise de ações de consumo consciente e de sustentabilidade bem-sucedidas.",
+      "extra_normalized_prefix": " individuais e coletivas para a solucao de problemas ambientais da cidade ou da comunidade, com base na analise de acoes de consumo consciente e de sustentabilidade bem-sucedidas.",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          398.0899963378906,
+          442.2099914550781,
+          410.0899963378906
+        ],
+        "body_bbox": [
+          389.83,
+          398.0899963378906,
+          581.28,
+          498.42999267578125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 530.469970703125,
+        "physical_bottom_rule_y": 498.42999267578125,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências  ",
+        "1": "9º  ",
+        "2": "Vida e\nevolução  ",
+        "3": "Hereditariedade\nIdeias evolucionistas\nPreservação da\nbiodiversidade  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "(EF09CI10) Comparar as ideias evolucionistas de Lamarck e Darwin apresentadas em textos científicos e",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF09CI16",
+      "page": 389,
+      "cache_item_id": "ca:rj-doc-eief-2019:0e9f78be9bcf624df143",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:635e50cffca961b1cb2e",
+      "evidence_locator": "table:0/row:42/cell:7",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 21,
+      "physical_expected_characters": 162,
+      "extracted_sha256": "b85ea3b47757c0d7be31f87be86e9045ad4fc7bd2018db7528d1cc202a4bb2fb",
+      "physical_expected_sha256": "d178f94f5aa407053fee4740537150ff294f71f6d1608499aca038a010d05b78",
+      "extracted_head": "Selecionar argumentos",
+      "extracted_tail": "Selecionar argumentos",
+      "expected_tail": "Selecionar argumentos sobre a viabilidade da sobrevivência humana fora da Terra, com base nas condições necessárias à vida, nas características dos planetas e nas",
+      "extra_normalized_prefix": " sobre a viabilidade da sobrevivencia humana fora da terra, com base nas condicoes necessarias a vida, nas caracteristicas dos planetas e nas",
+      "independent_boundary": {
+        "anchor": [
+          397.06597900390625,
+          677.3800048828125,
+          442.2099914550781,
+          689.3800048828125
+        ],
+        "body_bbox": [
+          389.83,
+          677.3800048828125,
+          581.28,
+          748.5360107421875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 748.5360107421875,
+        "column": [
+          389.83,
+          581.28
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências  ",
+        "1": "9º  ",
+        "2": "Vida e\nevolução  ",
+        "3": "Hereditariedade\nIdeias evolucionistas\nPreservação da\nbiodiversidade  ",
+        "4": "  ",
+        "5": "  ",
+        "6": "  ",
+        "7": "(EF09CI10) Comparar as ideias evolucionistas de Lamarck e Darwin apresentadas em textos científicos e",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "code": "EF04GE02.RJ",
+      "page": 410,
+      "cache_item_id": "ca:rj-doc-eief-2019:0194bc27638097f67c89",
+      "finalized_id_if_retained": "ca:rj-doc-eief-2019:b638622cee50469c8868",
+      "evidence_locator": "table:0/row:0/cell:4",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 101,
+      "physical_expected_characters": 209,
+      "extracted_sha256": "099bb37395a527b8e2db303f9be4adede4ca1875323def594a122d9dc940d3b4",
+      "physical_expected_sha256": "55c88b95471e3d6712fc5d08067f16710aa94c721d231f606365b71585e07f51",
+      "extracted_head": "Identificar ações da Agenda 21 que contemplem as unidades de conservação do estado do Rio de Janeiro.",
+      "extracted_tail": "Identificar ações da Agenda 21 que contemplem as unidades de conservação do estado do Rio de Janeiro.",
+      "expected_tail": "Identificar ações da Agenda 21 que contemplem as unidades de conservação do estado do Rio de Janeiro. (EF04GE02.RJ)Identificar políticas e ações diversas que contemplem a preservação e conservação da natureza.",
+      "extra_normalized_prefix": " (ef04ge02.rj)identificar politicas e acoes diversas que contemplem a preservacao e conservacao da natureza.",
+      "independent_boundary": {
+        "anchor": [
+          423.7751159667969,
+          61.439971923828125,
+          481.19415283203125,
+          72.47997283935547
+        ],
+        "body_bbox": [
+          414.91,
+          61.439971923828125,
+          574.2,
+          190.0999755859375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 228.73995971679688,
+        "physical_bottom_rule_y": 190.0999755859375,
+        "column": [
+          414.91,
+          574.2
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Geografia Geografia Geografia",
+        "1": "4º Ano 5º Ano 5º Ano",
+        "2": "Natureza, ambientes\ne qualidade de\nvida O sujeito e seu lugar\nno mundo O sujeito e seu lugar\nno mundo",
+        "3": "Conservação e\ndegradação da natureza Dinâmica populacional\nA população\nfluminense:\nmovimentos, questões\neconômicas, culturais e\nsociais\nMovimentos\nmigratórios e suas\ncontribuições para a\nformação da sociedade\nfluminense Diferenças étnicoraciais\ne étnicoculturais e\ndesigualdades sociais\nAs diferenças étnicas\nraciais e culturais da\npopulação brasileira\nAs desigualdades\nsocioeconômicas no\nBrasil",
+        "4": "(EF04GE02.RJ) Identificar ações\nda Agenda 21 que contemplem\nas unidades de conservação do\nestado do Rio de Janeiro.\n(EF04GE02.RJ)Identificar políticas\ne ações diversas que\ncontemplem a preservação e\nconservação da natureza. (EF05GE01) Descrever e analisar\ndinâmicas populacionais na\nUnidade da Federação em que\nvive, estabelecendo relações\nentre migrações e condições de\ninfraestrutura. Diferenças\nétnicoraciais e étnico-culturais e\ndesigualdades sociais. (EF05GE02) Identificar diferenças\nétnico-raciais e étnico-culturais e\ndesigualdades sociais entre\ngrupos em diferentes territórios."
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    }
+  ],
+  "reader_failures": [],
+  "limits": [
+    "Ruled native columns only; unavailable geometry/anchors remain unverified, not absent.",
+    "Strict physical prefix candidates need role/documentary review. This is not SourceWhole reconciliation."
+  ],
+  "cache_sha256": "a9d5b13566bbbc4bc2b6f8928e78788c35147d189dda5644b69bf5546ed04a97",
+  "cache_meta": {
+    "source_id": "rj-doc-eief-2019",
+    "sha256": "b915967926c621164aba46d5cbdbd74406a658410695199ef6ae3926de138bf6",
+    "extraction_revision": "page-cell-v1.5.0",
+    "page_count": 508,
+    "document_page_count": 508,
+    "items": 2028,
+    "pages": 508,
+    "quality": {
+      "documentary_page_sections_not_typed_as_learning": 507,
+      "meaning": "Execution, code transcription and primary-document reconciliation are separate; OCR execution completion is not glyph or pedagogical verification. An OCR code-like token does not certify an official printed code.",
+      "ocr_execution_pending": false,
+      "ocr_transcription_review_pending": true,
+      "unassigned_ocr_code_tokens": 0,
+      "unresolved_ocr_code_like_records": 0,
+      "unresolved_printed_code_records": 0
+    },
+    "parser_fingerprint": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+  },
+  "primary_page_count": 508,
+  "cache_unchanged_after_audit": true
+}

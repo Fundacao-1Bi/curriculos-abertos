@@ -1,0 +1,74 @@
+{
+  "source_id": "pa-dcepa-ei-ef",
+  "method": "sequential complete replay from immutable source-only census through literal comparison, extraction, actual loader/finalizer/schema gates and negative controls",
+  "before": {
+    "data/raw/PA/pa-dcepa-ei-ef.pdf": "6b101a029e7fc40b10feb79969309251337eb01fc2491c9e0b38563094fa8ec5",
+    "data/manifests/uncoded/pa-dcepa-items.json": "946e4f16523b127bbbf35e15947655bd52a6d890920cc3e7cce49753b35c424b",
+    "data/manifests/uncoded/pa-dcepa-habilidades-v1-items.json": "2ecc8449b8723bbc56264aa3eda770f8924bea778e79e2a9cbe762e6d06667ca",
+    "data/manifests/uncoded/pa-dcepa-habilidades-v1-combined-items.json": "7294cebd0c8cd3008c7f9498312cd66268843aeabcbd94c4a158651cd7de9ed6",
+    "docs/evidence/source-audit-pa/habilidades-primary-denominator.json": "350de3b480f19bc49899418b0f8970b58f8daf44ec1aa022e0138576c71a8ec1",
+    "docs/evidence/source-audit-pa/habilidades-primary-definition-stream.json": "0805d050d9f0f7052f04e153df74e53fcd9fe36d1f94563b4b2f134f10c6e774",
+    "pipeline/ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+    "pipeline/runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce",
+    "src/shared/contracts.ts": "ec1013e7bb9aba48e021dc3d0d598b55c743f08372e69b059a93ded40fbae2c7",
+    "data/schema/1.1.0.json": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df"
+  },
+  "after": {
+    "data/raw/PA/pa-dcepa-ei-ef.pdf": "6b101a029e7fc40b10feb79969309251337eb01fc2491c9e0b38563094fa8ec5",
+    "data/manifests/uncoded/pa-dcepa-items.json": "946e4f16523b127bbbf35e15947655bd52a6d890920cc3e7cce49753b35c424b",
+    "data/manifests/uncoded/pa-dcepa-habilidades-v1-items.json": "2ecc8449b8723bbc56264aa3eda770f8924bea778e79e2a9cbe762e6d06667ca",
+    "data/manifests/uncoded/pa-dcepa-habilidades-v1-combined-items.json": "7294cebd0c8cd3008c7f9498312cd66268843aeabcbd94c4a158651cd7de9ed6",
+    "docs/evidence/source-audit-pa/habilidades-primary-denominator.json": "350de3b480f19bc49899418b0f8970b58f8daf44ec1aa022e0138576c71a8ec1",
+    "docs/evidence/source-audit-pa/habilidades-primary-definition-stream.json": "0805d050d9f0f7052f04e153df74e53fcd9fe36d1f94563b4b2f134f10c6e774",
+    "pipeline/ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+    "pipeline/runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce",
+    "src/shared/contracts.ts": "ec1013e7bb9aba48e021dc3d0d598b55c743f08372e69b059a93ded40fbae2c7",
+    "data/schema/1.1.0.json": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df"
+  },
+  "changed_files": [],
+  "runs": [
+    {
+      "script": "docs/evidence/source-audit-pa/habilidades-source-census.py",
+      "exit_code": 0,
+      "elapsed_seconds": 9.868,
+      "stdout_tail": "{\n  \"physical_boards\": 64,\n  \"components\": 10,\n  \"physical_nonempty_habilidades_cells\": 2117,\n  \"coded_definition_occurrences\": 2055,\n  \"distinct_literal_codes\": 1543,\n  \"uncoded_continuation_cells\": 68,\n  \"multicode_cells\": 6,\n  \"independent_native_anchors\": 2055,\n  \"standalone_uncoded_skill_cells\": 0\n}\n{\n  \"Língua Portuguesa\": 787,\n  \"Educação Física\": 119,\n  \"Arte\": 79,\n  \"Língua Inglesa\": 129,\n  \"História\": 162,\n  \"Geografia\": 123,\n  \"Estudos Amazônicos\": 108,\n  \"Ciências\": 147,\n  \"Matemática\": 264,\n  \"Ensino Religioso\": 137\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "docs/evidence/source-audit-pa/habilidades-compare-generic.py",
+      "exit_code": 0,
+      "elapsed_seconds": 4.225,
+      "stdout_tail": "           353.6199951171875,\n              \"falas\"\n            ],\n            [\n              651.4904174804688,\n              342.1600036621094,\n              664.5804443359375,\n              353.6199951171875,\n              \"das\"\n            ],\n            [\n              666.8704833984375,\n              342.1600036621094,\n              714.2906494140625,\n              353.6199951171875,\n              \"personagens\"\n            ],\n            [\n              716.5806884765625,\n              342.1600036621094,\n              721.1406860351562,\n              353.6199951171875,\n              \"e\"\n            ],\n            [\n              723.3707275390625,\n              342.1600036621094,\n              732.520751953125,\n              353.6199951171875,\n              \"de\"\n            ],\n            [\n              734.7507934570312,\n              342.1600036621094,\n              752.4908447265625,\n              353.6199951171875,\n              \"cena\"\n            ]\n          ],\n          \"bbox\": [\n            402.0400085449219,\n            342.1600036621094,\n            752.4908447265625,\n            353.6199951171875\n          ]\n        }\n      ]\n    }\n  ],\n  \"unpaired_generic\": []\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "data/manifests/uncoded/pa-dcepa-habilidades-v1-extract.py",
+      "exit_code": 0,
+      "elapsed_seconds": 9.757,
+      "stdout_tail": "{\n  \"source_id\": \"pa-dcepa-ei-ef\",\n  \"artifact_sha256\": \"6b101a029e7fc40b10feb79969309251337eb01fc2491c9e0b38563094fa8ec5\",\n  \"baseline_sha256\": \"946e4f16523b127bbbf35e15947655bd52a6d890920cc3e7cce49753b35c424b\",\n  \"baseline_records_unchanged\": true,\n  \"baseline_records_canonical_sha256\": \"501fd7f75bb3a3031d354a121716833d4618e64f61ab5dadd4488390a92b2d59\",\n  \"additive_count\": 2055,\n  \"additive_kind_counts\": {\n    \"habilidade\": 2055\n  },\n  \"additive_sha256\": \"2ecc8449b8723bbc56264aa3eda770f8924bea778e79e2a9cbe762e6d06667ca\",\n  \"combined_count\": 4027,\n  \"combined_kind_counts\": {\n    \"competencia\": 41,\n    \"direito_aprendizagem\": 6,\n    \"secao_normativa\": 749,\n    \"objetivo_aprendizagem\": 1176,\n    \"habilidade\": 2055\n  },\n  \"combined_sha256\": \"7294cebd0c8cd3008c7f9498312cd66268843aeabcbd94c4a158651cd7de9ed6\",\n  \"multi_code_cell_definition_count\": 12,\n  \"cross_page_definition_count\": 68,\n  \"official_literal_codes_distinct\": 1543,\n  \"manifest_modified\": false,\n  \"core_modified\": false,\n  \"scope_global_ready_claimed\": false\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "data/manifests/uncoded/pa-dcepa-habilidades-v1-verify.py",
+      "exit_code": 0,
+      "elapsed_seconds": 19.461,
+      "stdout_tail": " }\n  },\n  \"runtime_before\": {\n    \"pipeline/ingest.py\": \"43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368\",\n    \"pipeline/runtime.py\": \"2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce\",\n    \"src/shared/contracts.ts\": \"ec1013e7bb9aba48e021dc3d0d598b55c743f08372e69b059a93ded40fbae2c7\",\n    \"data/schema/1.1.0.json\": \"cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df\"\n  },\n  \"runtime_after\": {\n    \"pipeline/ingest.py\": \"43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368\",\n    \"pipeline/runtime.py\": \"2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce\",\n    \"src/shared/contracts.ts\": \"ec1013e7bb9aba48e021dc3d0d598b55c743f08372e69b059a93ded40fbae2c7\",\n    \"data/schema/1.1.0.json\": \"cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df\"\n  },\n  \"runtime_stable\": true,\n  \"issues\": [],\n  \"result\": \"pass\",\n  \"no_manifest_core_bundle_database_mutation\": true,\n  \"limitations\": [\n    \"This validates the additive right-column scope and integration of frozen1972 values; no UF/whole-source/current-edition readiness asserted.\",\n    \"Automatic literal/documentary verification is not human pedagogical review.\"\n  ]\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "data/manifests/uncoded/pa-dcepa-habilidades-v1-negative-controls.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.613,
+      "stdout_tail": "ar_overrides_three_year_local_block_rejected\",\n      \"passed\": true,\n      \"gate\": \"Physical source board1º2º3º, not code convention\"\n    },\n    {\n      \"name\": \"code_letters_override_estudos_amazonicos_rejected\",\n      \"passed\": true,\n      \"gate\": \"Actual local component header, notGE code letters\"\n    },\n    {\n      \"name\": \"own_definition_demoted_to_reference_rejected\",\n      \"passed\": true,\n      \"gate\": \"Own Habilidades column role remains definition regardless of left-column association\"\n    },\n    {\n      \"name\": \"baseline1972_value_mutation_rejected\",\n      \"passed\": true,\n      \"gate\": \"Frozen baseline record prefix exact-value gate\"\n    },\n    {\n      \"name\": \"unproven_authority_gap_suppression_rejected\",\n      \"passed\": true,\n      \"gate\": \"Disjoint ranges must preserve89–111; broad range is not the proposal\"\n    },\n    {\n      \"name\": \"local_suffix_silently_removed_rejected\",\n      \"passed\": true,\n      \"gate\": \"Original literal source code, no inferred equivalence\"\n    }\n  ],\n  \"passed\": 13,\n  \"total\": 13,\n  \"result\": \"pass\",\n  \"method\": \"In-memory mutations only. Source PDF, frozen1972, manifests, core, DB and bundles unchanged. Positive primary control included.\"\n}\n",
+      "stderr_tail": ""
+    }
+  ],
+  "result": "pass",
+  "source_and_baseline_unchanged": true,
+  "new_sidecars_byte_identical": true,
+  "runtime_fingerprints_unchanged": true,
+  "actual_gate_results": {
+    "all_gates": "pass",
+    "negative_controls": "pass"
+  }
+}

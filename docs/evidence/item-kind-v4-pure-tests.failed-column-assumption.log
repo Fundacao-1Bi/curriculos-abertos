@@ -1,0 +1,36 @@
+✔ age range parses only bounded inclusive documented months without guessing from group labels (5.889125ms)
+✔ age SQL uses parameterized intersection and both original labels; unknowns require an explicit opt-in (13.792083ms)
+✔ documented uncoded expectations differ from formation purposes, rights, assessment and reference context (19.013584ms)
+✔ every kind in the real uncoded sidecar inventory has an explicit reviewed category (5122.790875ms)
+✔ experience counts preserve a disjoint exhaustive decomposition without inflating learning outcomes (1.045167ms)
+✖ reviewed ES component purposes, teacher guidance and observation indicators retain distinct documentary roles (124.527959ms)
+✔ ES learning synthesis keeps its source warning, pending OCR and unknown ages while remaining distinct from conceptual exposition (97.044208ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 6
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5908.313291
+
+✖ failing tests:
+
+test at tests/domain.item-kinds.test.ts:1:3365
+✖ reviewed ES component purposes, teacher guidance and observation indicators retain distinct documentary roles (124.527959ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'Dicas para o Planejamento'
+  
+      at TestContext.<anonymous> (/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests/domain.item-kinds.test.ts:30:136)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:788:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'Dicas para o Planejamento',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

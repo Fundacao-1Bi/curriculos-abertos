@@ -1,0 +1,115 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 661B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.01kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/node:22.23.4-bookworm-slim
+#3 DONE 0.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 272B done
+#4 DONE 0.0s
+
+#5 [dependencies 1/4] FROM docker.io/library/node:22.23.4-bookworm-slim@sha256:0ad4c2bbb7c43cdb0b7b1726ef3a8485174f477596942378b548ee60d4e229e6
+#5 resolve docker.io/library/node:22.23.4-bookworm-slim@sha256:0ad4c2bbb7c43cdb0b7b1726ef3a8485174f477596942378b548ee60d4e229e6 done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 51.16MB 0.8s done
+#6 DONE 0.8s
+
+#7 [dependencies 3/4] COPY package.json package-lock.json ./
+#7 CACHED
+
+#8 [dependencies 2/4] WORKDIR /app
+#8 CACHED
+
+#9 [dependencies 4/4] RUN npm install --global npm@11.6.2 && npm ci
+#9 CACHED
+
+#10 [build 1/2] COPY . .
+#10 DONE 1.3s
+
+#11 [build 2/2] RUN npm run build
+#11 0.277 
+#11 0.277 > curriculos-abertos@0.1.0 build
+#11 0.277 > next build
+#11 0.277 
+#11 0.713 ▲ Next.js 16.4.3 (Turbopack)
+#11 0.791 ✓ Running next.config.ts took 77ms
+#11 0.800 
+#11 0.823   Creating an optimized production build ...
+#11 5.717 ✓ Compiled successfully in 4.9s
+#11 5.743   Running TypeScript ...
+#11 13.15   Finished TypeScript in 7.4s ...
+#11 13.16   Collecting page data using 9 workers ...
+#11 14.13   Generating static pages using 9 workers (0/4) ...
+#11 14.31   Generating static pages using 9 workers (1/4) 
+#11 14.35   Generating static pages using 9 workers (2/4) 
+#11 14.35   Generating static pages using 9 workers (3/4) 
+#11 14.35 ✓ Generating static pages using 9 workers (4/4) in 216ms
+#11 14.36   Finalizing page optimization ...
+#11 14.38 
+#11 14.39 Route (app)
+#11 14.39 ┌ ƒ /
+#11 14.39 ├ ○ /_not-found
+#11 14.39 ├ ƒ /admin
+#11 14.39 ├ ƒ /analises
+#11 14.39 ├ ƒ /api/admin/[...path]
+#11 14.39 ├ ƒ /api/auth/[...all]
+#11 14.39 ├ ƒ /api/health
+#11 14.39 ├ ƒ /api/metrics
+#11 14.39 ├ ƒ /api/ready
+#11 14.39 ├ ƒ /api/v1/[[...path]]
+#11 14.39 ├ ƒ /aprendizagens/[id]
+#11 14.39 ├ ƒ /buscar
+#11 14.39 ├ ƒ /comparar
+#11 14.39 ├ ƒ /contribuir
+#11 14.39 ├ ƒ /curriculos/[id]
+#11 14.39 ├ ƒ /desenvolvedores
+#11 14.39 ├ ƒ /desenvolvedores/openapi
+#11 14.39 ├ ƒ /downloads
+#11 14.39 ├ ƒ /fontes
+#11 14.39 ├ ○ /icon.svg
+#11 14.39 ├ ƒ /mcp
+#11 14.39 ├ ƒ /panorama/[id]
+#11 14.39 ├ ƒ /publicacoes
+#11 14.39 └ ƒ /ufs/[uf]
+#11 14.39 
+#11 14.39 
+#11 14.39 ○  (Static)   prerendered as static content
+#11 14.39 ƒ  (Dynamic)  server-rendered on demand
+#11 14.39 
+#11 DONE 14.5s
+
+#12 [production 3/6] COPY pipeline/requirements.txt /tmp/pipeline-requirements.txt
+#12 CACHED
+
+#13 [production 4/6] RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-venv poppler-utils tesseract-ocr tesseract-ocr-por tesseract-ocr-osd ca-certificates && rm -rf /var/lib/apt/lists/*  && python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir -r /tmp/pipeline-requirements.txt && npm install --global npm@11.6.2
+#13 CACHED
+
+#14 [production 5/6] COPY --from=build --chown=node:node /app ./
+#14 DONE 5.0s
+
+#15 [production 6/6] RUN mkdir -p /app/var /app/data/raw /app/data/extracted && chown -R node:node /app/var /app/data
+#15 DONE 0.8s
+
+#16 exporting to image
+#16 exporting layers
+#16 exporting layers 21.1s done
+#16 exporting manifest sha256:9e76ca5b91577e475f24ca1acd5278f74f8f596e4cef862a7df00af78051bccf
+#16 exporting manifest sha256:9e76ca5b91577e475f24ca1acd5278f74f8f596e4cef862a7df00af78051bccf done
+#16 exporting config sha256:3f4054f1c418cac46990ad0da7cc4655e127ec304093fdfa4ced8d3555f4d1e5 done
+#16 exporting attestation manifest sha256:13f3c8d4881e8b371bb796ee7b44bb6d5d8e050c77dd191911916449310b9aa7 done
+#16 exporting manifest list sha256:e2a22710ec79cd6a55069315c5513982ac7998b360465d103ed2a38c511c8286 done
+#16 naming to docker.io/library/curriculos-abertos:local done
+#16 unpacking to docker.io/library/curriculos-abertos:local
+#16 unpacking to docker.io/library/curriculos-abertos:local 4.4s done
+#16 DONE 25.6s
+
+#17 resolving provenance for metadata file
+#17 DONE 0.0s
+ curriculos-abertos:local  Built

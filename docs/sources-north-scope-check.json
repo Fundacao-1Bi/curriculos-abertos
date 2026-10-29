@@ -1,0 +1,133 @@
+{
+  "at": "2026-10-28T04:45:56.304759+00:00",
+  "actor_type": "automated",
+  "scoped_sources": [
+    {
+      "source_id": "ap-plano-em-001-2026",
+      "artifact_sha256": "34761767efc3b08cb11fe396cdd7577b170bb193d197cdcce87c1b2a61b9d87a",
+      "regions": [
+        {
+          "page": 80,
+          "regions": [
+            [
+              30,
+              56,
+              566,
+              808
+            ]
+          ],
+          "reading_order": "as_declared",
+          "coordinate_space": "original_pdf_page",
+          "evidence": {
+            "page": 80,
+            "section": "Parecer043/2025",
+            "verification": "Página integral do parecer, sem atos alheios."
+          }
+        },
+        {
+          "page": 81,
+          "regions": [
+            [
+              30,
+              56,
+              296,
+              405
+            ],
+            [
+              302,
+              360,
+              566,
+              808
+            ]
+          ],
+          "reading_order": "as_declared",
+          "coordinate_space": "original_pdf_page",
+          "evidence": {
+            "page": 81,
+            "section": "Fim Parecer043/2025 e início Resolução001/2026",
+            "verification": "Inspeção visual e bbox nativo: parecer encerra y403àesquerda; resolução001 começa y361àdireita. O ato escolar002/2026entre essas regiões foi excluído."
+          }
+        },
+        {
+          "page": 82,
+          "regions": [
+            [
+              30,
+              56,
+              296,
+              236
+            ]
+          ],
+          "reading_order": "as_declared",
+          "coordinate_space": "original_pdf_page",
+          "evidence": {
+            "page": 82,
+            "section": "Final Resolução001/2026",
+            "verification": "Inspeção visual e bbox: artigos3/4,assinatura e protocolo terminam y235àesquerda; SecretariaFazenda inicia a seguir; direita contém dados fiscais excluídos."
+          }
+        }
+      ],
+      "verification": {
+        "at": "2026-10-28T04:45:56.296695+00:00",
+        "actor_type": "automated",
+        "extraction_revision": "page-cell-v1.4.0",
+        "pages": 3,
+        "documentary_sections": 3,
+        "warnings": 0,
+        "result": "passed_includes_acts043_and001_excludes_school_recognition_and_fiscal_identifiers"
+      }
+    },
+    {
+      "source_id": "ac-computacao-667-2025",
+      "artifact_sha256": "71d47a5067d527a5a1428a5a59aa77a7b669625e9215d23ede15e0124c0d284e",
+      "regions": [
+        {
+          "page": 39,
+          "regions": [
+            [
+              15,
+              320,
+              583,
+              824
+            ]
+          ],
+          "reading_order": "as_declared",
+          "coordinate_space": "original_pdf_page",
+          "evidence": {
+            "page": 39,
+            "section": "Início Resolução667/2025",
+            "verification": "Renderização e bbox nativos conferidos: órgão emissor inicia y324; ato contratual anterior termina acima. Região restringe a norma curricular."
+          }
+        },
+        {
+          "page": 40,
+          "regions": [
+            [
+              15,
+              40,
+              583,
+              480
+            ]
+          ],
+          "reading_order": "as_declared",
+          "coordinate_space": "original_pdf_page",
+          "evidence": {
+            "page": 40,
+            "section": "Continuação e final Resolução667/2025",
+            "verification": "Renderização e bbox conferidos: continuaçãoIII y42.85; assinatura/aprovação terminam y477.56; próximaResolução468 começa no órgão emissor y490.7 e fica fora."
+          }
+        }
+      ],
+      "verification": {
+        "at": "2026-10-28T04:45:56.296976+00:00",
+        "actor_type": "automated",
+        "extraction_revision": "page-cell-v1.4.0",
+        "pages": 2,
+        "documentary_sections": 2,
+        "warnings": 0,
+        "result": "passed_includes667_excludes_previous_contract_and_next468"
+      }
+    }
+  ],
+  "not_asserted": "No learning definitions were manufactured from normative sections; full incorporated curricular documents remain separately pending."
+}

@@ -1,0 +1,609 @@
+{
+  "command": "var/venv-pipeline/bin/python docs/evidence/source-audit-ro/census_digital_resources.py",
+  "confirmed": "Pinned PyMuPDF reports these resource names while extracting text from the listed primary pages; source checksum matches manifest.",
+  "diagnostic_resource_name_occurrences": {
+    "Xg1FC": 4,
+    "Xg1FE": 4,
+    "Xg1FF": 7,
+    "Xg20D": 7,
+    "Xg20F": 12,
+    "Xg210": 6,
+    "Xg211": 5,
+    "Xg213": 9,
+    "Xg215": 8,
+    "Xg3E9": 2
+  },
+  "engine": {
+    "pymupdf": "1.26.7",
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]"
+  },
+  "external_block_confirmed": false,
+  "no_download_performed": true,
+  "no_render_performed": true,
+  "not_confirmed": [
+    "Whether the missing resource affects a logo, diagram, text or learning content.",
+    "Whether the publisher file, transport acquisition or this parser explains the observation.",
+    "Visual completeness, independent alternate-parser rendering and independently acquired official bytes."
+  ],
+  "pages": [
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg210'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X65 452 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg210"
+      ],
+      "native_text_characters": 2973,
+      "native_text_sha256": "7b82922343649631d09e04cadcb9cfdeea9f6b987ab68a00af139abf53585ce0",
+      "page": 7,
+      "page_xref": 10
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg1FC'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X70 472 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg1FC"
+      ],
+      "native_text_characters": 1353,
+      "native_text_sha256": "f7423048b88aaf18168ea0611e119575d45655aadb875ae621ad91433752ab39",
+      "page": 8,
+      "page_xref": 11
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg20D'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X78 494 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg20D"
+      ],
+      "native_text_characters": 3446,
+      "native_text_sha256": "ceed3e2f55865a47aa14620ff5be19994c0730007592a6b3df742db5efed562c",
+      "page": 9,
+      "page_xref": 12
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg20F'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg3E9'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X86 514 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg20F",
+        "Xg3E9"
+      ],
+      "native_text_characters": 1128,
+      "native_text_sha256": "71ef293ca99bfc0f0f7a410ace1c668b625861af85492a7c92100598d143f18e",
+      "page": 10,
+      "page_xref": 13
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg1FE'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X134 598 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg1FE"
+      ],
+      "native_text_characters": 3964,
+      "native_text_sha256": "db07c6b7c486520bf332312c7e8bc9514c7663639375ca72bfd5584550349491",
+      "page": 15,
+      "page_xref": 18
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg20F'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg211'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X142 612 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg20F",
+        "Xg211"
+      ],
+      "native_text_characters": 1738,
+      "native_text_sha256": "e796174502dde66a3a156142c8e19cad1658e141a526e1b9c097b68cfa907428",
+      "page": 16,
+      "page_xref": 19
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg20D'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X166 642 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg20D"
+      ],
+      "native_text_characters": 3548,
+      "native_text_sha256": "09080ff31a2326859c1d1010c81e874213f6e0c3969e0ade1b9404bb4d485a5f",
+      "page": 19,
+      "page_xref": 22
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg213'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X216 738 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg213"
+      ],
+      "native_text_characters": 3252,
+      "native_text_sha256": "20991a74cca347b66dd51b93b98a2bb74e20f40f38ddc32f3ac6d620f8c424e8",
+      "page": 23,
+      "page_xref": 26
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg1FF'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X224 756 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg1FF"
+      ],
+      "native_text_characters": 3177,
+      "native_text_sha256": "8bf69e94c71934cb320775b0eacb2e8cb7b97e7e8c974301fc8536fc15422eab",
+      "page": 24,
+      "page_xref": 27
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg211'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X240 789 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg211"
+      ],
+      "native_text_characters": 3942,
+      "native_text_sha256": "da2e52cd94ec7323342bb956a098f6bb332349ae7d313e2b5e83c371103e31d3",
+      "page": 26,
+      "page_xref": 29
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg20F'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X289 871 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg20F"
+      ],
+      "native_text_characters": 2988,
+      "native_text_sha256": "503a90f10fbfb6ba1c950824dec27c18aae9fe72c78ac9004c2e4360e1477390",
+      "page": 31,
+      "page_xref": 34
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg213'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X319 931 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg213"
+      ],
+      "native_text_characters": 3787,
+      "native_text_sha256": "d4e8c6f452bceaecc69e3bd8d6d89909c97f17c921f1dbf2f159a8e50a0222ce",
+      "page": 33,
+      "page_xref": 36
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg210'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg213'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X408 1117 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg210",
+        "Xg213"
+      ],
+      "native_text_characters": 3989,
+      "native_text_sha256": "6a2a968f28c4c781fbbec8098c8ae80aea7e70ef714f4e7fd9a75b940fbd65e8",
+      "page": 37,
+      "page_xref": 40
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg1FC'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X428 1157 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg1FC"
+      ],
+      "native_text_characters": 3547,
+      "native_text_sha256": "27ffbb986b14cc9c45d33ee9b55b9787ff89d850b8a4b46768a0920adaaf2f1f",
+      "page": 38,
+      "page_xref": 41
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg1FF'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg210'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X611 1504 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg1FF",
+        "Xg210"
+      ],
+      "native_text_characters": 3483,
+      "native_text_sha256": "a300c474d654b939a03a4f280d75b533674eb2f043bb44588e5a57e9b5d1ad67",
+      "page": 47,
+      "page_xref": 50
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg1FE'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X687 1764 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg1FE"
+      ],
+      "native_text_characters": 2900,
+      "native_text_sha256": "8896252ba9306379e67f61104a79b52895708710021c2867d7b1c6d02498baec",
+      "page": 51,
+      "page_xref": 54
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg213'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X735 1929 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg213"
+      ],
+      "native_text_characters": 3426,
+      "native_text_sha256": "146029ac01f6cf3f4ce27aad28e6d9196cb1596b9b2314f4783f3ed850226cf1",
+      "page": 53,
+      "page_xref": 56
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg1FF'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X755 1969 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg1FF"
+      ],
+      "native_text_characters": 3427,
+      "native_text_sha256": "5e4381ddf5683a89d0b1109c667661b9b2221d0678259a2ac5fc74f4d5292600",
+      "page": 54,
+      "page_xref": 57
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg1FC'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg1FE'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X808 2090 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg1FC",
+        "Xg1FE"
+      ],
+      "native_text_characters": 168,
+      "native_text_sha256": "cb9e07c5f67076ca39d916cabbf6a23a82ab4e6ef2a2ec091ce0f1be1dda8e1c",
+      "page": 58,
+      "page_xref": 61
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg20F'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg211'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X833 2130 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg20F",
+        "Xg211"
+      ],
+      "native_text_characters": 3218,
+      "native_text_sha256": "6e0d413cf89878e53a68a5d5ca3ca5aa0df19f119a9aa446d5fd802c4e07be0b",
+      "page": 61,
+      "page_xref": 64
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg20D'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg210'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X995 2400 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg20D",
+        "Xg210"
+      ],
+      "native_text_characters": 2286,
+      "native_text_sha256": "09c70e7190b544f9e83679f315f6fc1d531ab113722ae0b7636f9eb07e47cb83",
+      "page": 79,
+      "page_xref": 82
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg20D'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X1107 2580 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg20D"
+      ],
+      "native_text_characters": 1900,
+      "native_text_sha256": "6190b3767d189025274ee641667bac3943560fac9dff8ef0f48c0d79d1492c4b",
+      "page": 93,
+      "page_xref": 96
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg1FF'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg20D'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X1115 2597 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg1FF",
+        "Xg20D"
+      ],
+      "native_text_characters": 2359,
+      "native_text_sha256": "3880f7a64154b6bffaae4424a55c29fc8fa96919a79b54ee9576b64c3a0668c7",
+      "page": 94,
+      "page_xref": 97
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg20F'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg215'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg3E9'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X1179 2702 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg20F",
+        "Xg215",
+        "Xg3E9"
+      ],
+      "native_text_characters": 3210,
+      "native_text_sha256": "db1ff5bea8441fe03bf4c6e7997766e725402fe69ba96c34003e27b3234c01b0",
+      "page": 102,
+      "page_xref": 105
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg20F'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg213'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X1187 2719 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg20F",
+        "Xg213"
+      ],
+      "native_text_characters": 3228,
+      "native_text_sha256": "8d0c540434b5cf027a8bad1f02728b51da1ee542f3555609d5d5fbaa9b132a29",
+      "page": 103,
+      "page_xref": 106
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg20F'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg213'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg215'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X1460 3317 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg20F",
+        "Xg213",
+        "Xg215"
+      ],
+      "native_text_characters": 2132,
+      "native_text_sha256": "a8d9fbf86eb33196e6ece7d9697751d93976f00a6617b9f7b9e572deb6fb42d8",
+      "page": 123,
+      "page_xref": 126
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg1FF'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg20F'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X1722 3725 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg1FF",
+        "Xg20F"
+      ],
+      "native_text_characters": 3462,
+      "native_text_sha256": "4020e126b3b17ca58e2bd9297123e20001487c5f982c5b53f3f5347361efbcde",
+      "page": 154,
+      "page_xref": 157
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg1FE'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X1730 3735 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg1FE"
+      ],
+      "native_text_characters": 1350,
+      "native_text_sha256": "2a9bd65e325e0e4359b8a81821af34ba4f7295774f8fda381a49e8ecfd569f37",
+      "page": 155,
+      "page_xref": 158
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg20F'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg210'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg211'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X1898 3993 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg20F",
+        "Xg210",
+        "Xg211"
+      ],
+      "native_text_characters": 2307,
+      "native_text_sha256": "7397a0e6558ac72c4830927d6278d867aeadbce5bd82ec7ee962a6b4d972211e",
+      "page": 176,
+      "page_xref": 179
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg20F'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg210'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X1906 4010 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg20F",
+        "Xg210"
+      ],
+      "native_text_characters": 3293,
+      "native_text_sha256": "02eef4a598570b6b031f0369400b1aef002c2b9e05235db9c210296025416109",
+      "page": 177,
+      "page_xref": 180
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg215'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X2090 4291 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg215"
+      ],
+      "native_text_characters": 5399,
+      "native_text_sha256": "97c3de963457b141f16f5b28ec4628ba1e092736498d70c8fd3013143e7c8b6c",
+      "page": 200,
+      "page_xref": 203
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg1FF'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg20F'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg215'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X2385 4808 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg1FF",
+        "Xg20F",
+        "Xg215"
+      ],
+      "native_text_characters": 3260,
+      "native_text_sha256": "57f765ff894f1c01d6c4da6dbc8fb077c17507f809425e84c430f7a5b4051571",
+      "page": 214,
+      "page_xref": 217
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg20D'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg20F'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X2426 4883 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg20D",
+        "Xg20F"
+      ],
+      "native_text_characters": 3445,
+      "native_text_sha256": "4a1d99d65f92a908f1e833918e7e651da135979b76aeb02bd10ed7721647c645",
+      "page": 219,
+      "page_xref": 222
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg20D'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg215'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X2541 5113 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg20D",
+        "Xg215"
+      ],
+      "native_text_characters": 3458,
+      "native_text_sha256": "a85b7e5ac445757a35b77b28c62ae2893cbd3175a2fbd1f2a46e348a547d3812",
+      "page": 229,
+      "page_xref": 232
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg1FF'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg213'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X2598 5244 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg1FF",
+        "Xg213"
+      ],
+      "native_text_characters": 3730,
+      "native_text_sha256": "c021e1c97bffb1e8c66aee4b010fa2015c2c03732929e5a4dd6e1b447f579874",
+      "page": 234,
+      "page_xref": 237
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg213'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg215'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X2607 5267 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg213",
+        "Xg215"
+      ],
+      "native_text_characters": 1134,
+      "native_text_sha256": "cb8240945626bd9d1063cfd4f4cbd9650b2c46bbb3f8f523b8e0c689c43ba66d",
+      "page": 235,
+      "page_xref": 238
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg1FC'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X2725 5555 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg1FC"
+      ],
+      "native_text_characters": 4918,
+      "native_text_sha256": "8a42723feded52dfdfd5f0c9ce064b91e8ded12a85bdfeb0dbf683141dcf26cc",
+      "page": 248,
+      "page_xref": 251
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg213'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg215'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X2771 5641 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg213",
+        "Xg215"
+      ],
+      "native_text_characters": 2450,
+      "native_text_sha256": "c152c8f5b3c25c46c4b64b9dd267d5250d1df5580eec31dc05bb06319a6c8e1a",
+      "page": 253,
+      "page_xref": 256
+    },
+    {
+      "diagnostic": "syntax error: cannot find XObject resource 'Xg211'\nencountered syntax errors; page may not be correct\nsyntax error: cannot find XObject resource 'Xg215'\nencountered syntax errors; page may not be correct",
+      "direct_page_XObject_dictionary": [
+        "dict",
+        "<</X2865 5825 0 R>>"
+      ],
+      "missing_resource_names_observed": [
+        "Xg211",
+        "Xg215"
+      ],
+      "native_text_characters": 2022,
+      "native_text_sha256": "095920b8c0a9bb2235b3ebd5d5cd557102e94464327f8051a5b5e9c4f34f5aac",
+      "page": 260,
+      "page_xref": 263
+    }
+  ],
+  "pages_with_native_diagnostic": 39,
+  "ready": false,
+  "reconciled": false,
+  "source_id": "ro-educacao-digital-2026",
+  "source_modified": false,
+  "source_sha256": "204eeeca5ba1c84319ea503e1025f09872d78a322e812650270ef99627c3df8e",
+  "status": "visual_integrity_investigation_pending",
+  "total_pages": 267
+}

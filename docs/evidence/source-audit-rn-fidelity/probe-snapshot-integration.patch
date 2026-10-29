@@ -1,0 +1,191 @@
+--- a/pipeline/ingest.py
++++ b/pipeline/ingest.py
+@@ -41,6 +41,7 @@
+ TIMEOUT = int(os.getenv('SOURCE_TIMEOUT_SECONDS', '90'))
+ MAX_ATTEMPTS = 3
+ STOP = False
++RN_ROLE_REPORTS=[]
+ # National and local forms. A national-code occurrence is not automatically a learning.
+ # Local suffixes remain part of the canonical code (MG, /ES, ART, QUI, FIL, *, ...).
+ NATIONAL_PATTERN = r'(?:EI\d{2}[A-Z]{2}\d{2}|EF\d{2}[A-Z]{2}\d{2,3}|EM\d{2}(?:[A-Z]{3}\d{3}|LP\d{1,4}|CO\d{2}))'
+@@ -577,6 +578,9 @@
+             if grid_report.get('unassigned_code_tokens'):warnings.append({'page':page_number,'issue':'ocr_grid_unassigned_code_tokens','tokens':grid_report['unassigned_code_tokens'],'status':'requires_primary_glyph_and_column_review'})
+         if region_rule:
+             page_items=[item for item in page_items if all(not evidence.get('bbox') or any(evidence['bbox'][0]>=region[0]-1 and evidence['bbox'][1]>=region[1]-1 and evidence['bbox'][2]<=region[2]+1 and evidence['bbox'][3]<=region[3]+1 for region in region_rule['regions']) for evidence in item['evidence'])]
++        from rn_document_roles import rewrite_page
++        page_items,rn_report=rewrite_page(source,page_number,page,tables,page_items,CODE_ANY,make_item,clean_text)
++        RN_ROLE_REPORTS.append({'source_id':source['id'],'page':page_number,**rn_report})
+         for item in page_items:
+             for evidence in item['evidence']:
+                 evidence['page_normalization']=page_normalization
+--- a/pipeline/runtime.py
++++ b/pipeline/runtime.py
+@@ -4,7 +4,7 @@
+ from pathlib import Path
+ 
+ ROOT=Path(__file__).resolve().parent
+-PARSER_FILES=('ingest.py','geometry.py','ocr.py','es_ei_rows.py','ms_glyphs.py','ne_geometry.py','am_ocr_grid.py','native_glyphs.py','rs_ms_geometry.py','runtime.py')
++PARSER_FILES=('ingest.py','geometry.py','ocr.py','es_ei_rows.py','ms_glyphs.py','ne_geometry.py','am_ocr_grid.py','native_glyphs.py','rs_ms_geometry.py','runtime.py')+('rn_document_roles.py',)
+ 
+ 
+ def parser_fingerprint():
+--- /dev/null
++++ b/pipeline/rn_document_roles.py
+@@ -0,0 +1,157 @@
++"""Source-scoped RN reference/definition roles. Proposed helper; no core mutation.
++
++Code-only cards and citations in EXPLICAÇÃO/EXEMPLOS/SUGESTÕES are retained as
++literal references, with their entire physical cell in source_context. They do
++not acquire the neighboring Ementa/teacher prose as a new coded learning item.
++Unknown headers and real HABILIDADE definitions are deliberately preserved.
++"""
++import re, unicodedata
++from native_glyphs import NativeGlyphText
++SOURCES={
++ 'rn-trilhas-aprofundamento':'fac7333112fcfaac3d99d74f72f206bea8e9a4b256e770a9ea0f2eace99b027a',
++ 'rn-dcec-computacao':'886cdd02d96a63c50be00e93faf0fe5a9f7f305a959bd9920bcbdd429be134bd',
++}
++REFERENCE_ROLES={'explanation_reference_context','example_reference_context','pedagogical_reference_context','knowledge_object_context','explicit_reference_code_card'}
++def norm(s):return re.sub(r'\s+',' ',''.join(c for c in unicodedata.normalize('NFKD',s or'').casefold()if not unicodedata.combining(c))).strip()
++def role_of(label):
++ t=norm(label)
++ # Some source headers occur twice at precisely the same displayed location.
++ t=re.sub(r'\b(habilidade|exemplos)(?: \1)+\b',r'\1',t)
++ if t in ('habilidade','habilidades'):return'learning_definition'
++ if t.startswith('explicacao')and'habilidade'in t:return'explanation_reference_context'
++ if t.startswith('exemplos'):return'example_reference_context'
++ if t.startswith('sugestoes didaticas'):return'pedagogical_reference_context'
++ if t.startswith('objeto')and'conhecimento'in t:return'knowledge_object_context'
++ return None
++def contains(box,x,y):return box[0]<=x<box[2]and box[1]<=y<box[3]
++def code_occurrences(reader,code_re):
++ """Locate actual stream occurrences, including duplicates; never search first hit."""
++ text=[];mapping=[]
++ for line in reader.lines:
++  for cluster in line:
++   text.extend(cluster['text']);mapping.extend([cluster['box']]*len(cluster['text']))
++  text.append('\n');mapping.append(None)
++ text=''.join(text);output=[]
++ for ordinal,m in enumerate(code_re.finditer(text)):
++  boxes=[b for b in mapping[m.start():m.end()]if b is not None]
++  if not boxes:continue
++  box=[min(b[0]for b in boxes),min(b[1]for b in boxes),max(b[2]for b in boxes),max(b[3]for b in boxes)]
++  output.append({'code':m.group(),'ordinal_in_page':ordinal,'bbox':box,'native_context':text[max(0,m.start()-45):m.end()+100]})
++ return output
++
++def physical_regions(source,page,tables,code_re,reader=None):
++ if source.get('id')not in SOURCES:return[]
++ if source.get('sha256')!=SOURCES[source['id']]:raise ValueError('RN role helper source hash mismatch')
++ reader=reader or NativeGlyphText(page);regions=[]
++ if source['id']=='rn-trilhas-aprofundamento':
++  labels={'investigacao cientifica','processos criativos','mediacao e intervencao sociocultural','empreendedorismo'}
++  # The four complete definition sheets precede the unit reference cards.
++  # Require an actual printed HABILIDADES heading, large outlined cells and prose.
++  full_text=reader.text();heading=next((line for line in full_text.splitlines()if re.match(r'^HABILIDADES\s*[-–]',line.strip())),None)
++  if heading:
++   for pi,path in enumerate(page.get_drawings()):
++    box=path['rect']
++    if path['type']!='s'or box.width<page.rect.width*.6 or not 40<box.height<page.rect.height*.45 or len(path['items'])!=1 or path['items'][0][0]not in('qu','re'):continue
++    text=reader.text(box)
++    if len(code_re.findall(text))<1 or len(code_re.sub('',text))<100:continue
++    regions.append({'role':'learning_definition','bbox':list(box),'text':text,'header':heading,'locator':f'vector-definition-cell:{pi}','path_index':pi})
++  for pi,path in enumerate(page.get_drawings()):
++   box=path['rect']
++   if path['type']!='s'or not 40<box.width<page.rect.width*.7 or not 18<box.height<160 or len(path['items'])!=1 or path['items'][0][0]not in('qu','re'):continue
++   text=reader.text(box)
++   if not code_re.search(text):continue
++   residue=norm(code_re.sub('',text)).strip(' ();:,.[]/–—-')
++   if residue not in labels:continue
++   regions.append({'role':'explicit_reference_code_card','bbox':list(box),'text':text,'header':residue,'locator':f'vector-reference-card:{pi}','path_index':pi})
++ else:
++  for ti,table in enumerate(tables):
++   headers=[]
++   for ri,row in enumerate(table.rows[:4]):
++    for ci,box in enumerate(row.cells):
++     if not box:continue
++     text=reader.text(box);role=role_of(text)
++     if role:headers.append({'role':role,'bbox':list(box),'text':text,'row':ri,'column':ci})
++   for ri,row in enumerate(table.rows):
++    for ci,box in enumerate(row.cells):
++     if not box:continue
++     x=(box[0]+box[2])/2
++     applicable=[h for h in headers if h['bbox'][0]-.5<=x<h['bbox'][2]+.5 and box[1]>=h['bbox'][3]-.5]
++     if not applicable:continue
++     h=min(applicable,key=lambda h:h['bbox'][2]-h['bbox'][0]);text=reader.text(box)
++     if not text.strip():continue
++     regions.append({'role':h['role'],'bbox':list(box),'text':text,'header':h['text'],'header_bbox':h['bbox'],'locator':f'table:{ti}/row:{ri}/cell:{ci}','table':ti,'row':ri,'column':ci})
++ return regions
++
++def split_inline_primary_definitions(source,page_number,regions,items,code_re,make_item,clean_text):
++ """A printed sentence terminator + code + dash is a definition boundary.
++
++ Only inside the source's explicit HABILIDADE region. Ordinary inline citations,
++ explanations and code-only references cannot activate this recovery.
++ """
++ if source['id']!='rn-dcec-computacao':return items,[]
++ recovered=[]
++ for region in regions:
++  if region['role']!='learning_definition':continue
++  matches=list(code_re.finditer(region['text']))
++  for ci,match in enumerate(matches):
++   prefix=region['text'][:match.start()];after=region['text'][match.end():]
++   if not prefix.rstrip().endswith(('.', '!', '?'))or not re.match(r'^\s*\)?\s*[-–—]\s*\S',after):continue
++   end=matches[ci+1].start()if ci+1<len(matches)else len(region['text']);tail=region['text'][match.end():end];tail=re.sub(r'^[\s():;\-–—]+','',tail).strip();text=clean_text(tail)
++   if not text:raise ValueError('Explicit inline definition has no wording')
++   # The prior candidate may have swallowed the second printed definition.
++   for item in items:
++    if item.get('code')==match.group()or not item.get('code'):continue
++    b=item['evidence'][0].get('bbox')
++    if b and all(abs(b[j]-region['bbox'][j])<1 for j in range(4))and match.group()in item['text']:
++     first=item['text'].split(match.group(),1)[0].rstrip(' (');rebuilt=make_item(source,item['code'],first,page_number,item['evidence'][0]['method'],item['evidence'][0]['locator']);item['text']=first;item['normalized_text']=rebuilt['normalized_text'];item['evidence'][0]['excerpt']=first
++   already=[i for i in items if i.get('code')==match.group()and i['evidence'][0]['page']==page_number and i['evidence'][0].get('bbox')and all(abs(i['evidence'][0]['bbox'][j]-region['bbox'][j])<1 for j in range(4))]
++   if already:continue
++   item=make_item(source,match.group(),text,page_number,'rn-inline-explicit-definition-v1',region['locator']+f'/inline-definition:{ci}',context=region['header'],quality='literal_definition_boundary_checked');item['evidence'][0].update(bbox=region['bbox'],excerpt=text);item['source_context']={'documentary_role':'learning_definition','original_cell_text':region['text'],'cell_bbox':region['bbox'],'header':region['header'],'inline_definition_boundary':'sentence_terminator_then_code_then_dash','source_code_start':match.start()};item['document_specific_adapter']='rn-document-roles-v1';items.append(item);recovered.append({'code':match.group(),'page':page_number,'locator':item['evidence'][0]['locator'],'original_boundary':region['text'][max(0,match.start()-25):match.end()+25]})
++ return items,recovered
++
++def rewrite_page(source,page_number,page,tables,items,code_re,make_item,clean_text):
++ """Retain primary/unknown candidates; replace only geometrically proved references."""
++ if source.get('id')not in SOURCES:return items,{'applicable':False}
++ reader=NativeGlyphText(page);regions=physical_regions(source,page,tables,code_re,reader);anchors=code_occurrences(reader,code_re);classified=[]
++ for a in anchors:
++  x,y=(a['bbox'][0]+a['bbox'][2])/2,(a['bbox'][1]+a['bbox'][3])/2
++  matches=[r for r in regions if contains(r['bbox'],x,y)]
++  region=min(matches,key=lambda r:(r['bbox'][2]-r['bbox'][0])*(r['bbox'][3]-r['bbox'][1]))if matches else None
++  classified.append((a,region))
++ kept=[];removed=[]
++ for item in items:
++  box=item['evidence'][0].get('bbox');code=item.get('code');matches=[]
++  if box and code:
++   for a,r in classified:
++    x,y=(a['bbox'][0]+a['bbox'][2])/2,(a['bbox'][1]+a['bbox'][3])/2
++    if a['code']==code and contains(box,x,y):matches.append((a,r))
++  roles=[r['role']if r else'unknown'for a,r in matches]
++  if roles and (all(role in REFERENCE_ROLES for role in roles)or(source['id']=='rn-trilhas-aprofundamento'and all(role=='learning_definition'for role in roles))):
++   removed.append({'code':code,'locator':item['evidence'][0].get('locator'),'roles':roles,'old_text':item['text']})
++  else:kept.append(item)
++ definitions=[]
++ if source['id']=='rn-trilhas-aprofundamento':
++  for region in regions:
++   if region['role']!='learning_definition':continue
++   matches=list(code_re.finditer(region['text']))
++   for ci,match in enumerate(matches):
++    end=matches[ci+1].start()if ci+1<len(matches)else len(region['text']);tail=region['text'][match.end():end]
++    tail=re.sub(r'^[\s():;\-–—]+','',tail).strip()
++    if ci+1<len(matches)and tail.endswith('(')and tail.count('(')>tail.count(')'):tail=tail[:-1].rstrip()
++    text=clean_text(tail)
++    if not text:raise ValueError('Definition cell has code without wording; requires review')
++    item=make_item(source,match.group(),text,page_number,'rn-explicit-definition-cell-v1',region['locator']+f'/definition:{ci}',context=region['header'],quality='literal_definition_cell_checked')
++    item['evidence'][0].update(bbox=region['bbox'],excerpt=text)
++    item['source_context']={'documentary_role':'learning_definition','original_cell_text':region['text'],'cell_bbox':region['bbox'],'header':region['header'],'definition_order_in_cell':ci}
++    item['extraction_original_text']=region['text'];item['document_specific_adapter']='rn-document-roles-v1';definitions.append(item)
++ references=[]
++ for a,r in classified:
++  if not r or r['role']not in REFERENCE_ROLES:continue
++  locator=r['locator']+f'/reference-occurrence:{a["ordinal_in_page"]}'
++  item=make_item(source,a['code'],a['code'],page_number,'rn-explicit-document-reference-v1',locator,context=r['header'],quality='literal_reference_role_checked')
++  item.update(kind='referencia_no_documento',positions=[],position_unknown_reason='Referência literal em cartão/célula de contexto; nenhum posicionamento ou texto nacional herdado automaticamente.',document_specific_adapter='rn-document-roles-v1')
++  item['evidence'][0].update(bbox=a['bbox'],excerpt=a['code'],evidence_role='literal_code_reference')
++  item['source_context']={'documentary_role':r['role'],'original_cell_text':r['text'],'cell_bbox':r['bbox'],'header':r['header'],'header_bbox':r.get('header_bbox'),'reference_semantics':'Literal citation only. Neighboring/context prose is retained here; it is not the wording of this code. No equivalence or learning definition inferred.'}
++  item['extraction_original_text']=r['text'];references.append(item)
++ output,inline_recovery=split_inline_primary_definitions(source,page_number,regions,kept+definitions+references,code_re,make_item,clean_text)
++ return output,{'applicable':True,'inline_definition_recovery':inline_recovery,'definition_records':len(definitions),'removed_candidates':removed,'reference_records':len(references),'preserved_candidates':len(kept),'primary_source_anchors':sum(r is not None and r['role']=='learning_definition'for a,r in classified),'unknown_source_anchors':sum(r is None for a,r in classified)}

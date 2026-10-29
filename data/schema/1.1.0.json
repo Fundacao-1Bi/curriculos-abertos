@@ -1,0 +1,533 @@
+{
+  "$comment": "Shared publication record schema. Unknown source metadata is preserved. API transport schema/version is separate. No remote schema resolution is required. Version 1.1.0 permits explicit null artifact_url for a source whose document address has not been found. Provenance landing pages are not fabricated download URLs.",
+  "$defs": {
+    "Evidence": {
+      "additionalProperties": true,
+      "anyOf": [
+        {
+          "properties": {
+            "page": {
+              "minimum": 1,
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "properties": {
+            "section": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "section"
+          ]
+        }
+      ],
+      "properties": {
+        "bbox": {
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 4,
+          "minItems": 4,
+          "type": [
+            "array",
+            "null"
+          ]
+        },
+        "excerpt": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "page": {
+          "minimum": 1,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "printed_page": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "section": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "page",
+        "excerpt"
+      ],
+      "type": "object"
+    },
+    "Learning": {
+      "additionalProperties": true,
+      "properties": {
+        "code": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "minLength": 1,
+              "type": "string"
+            }
+          ]
+        },
+        "curriculum_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "editorial_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "extraction_revision": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "kind": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "normalized_text": {
+          "type": "string"
+        },
+        "parent_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "positions": {
+          "items": {
+            "$ref": "#/$defs/Position"
+          },
+          "type": "array"
+        },
+        "review_events": {
+          "items": {
+            "$ref": "#/$defs/Review"
+          },
+          "type": "array"
+        },
+        "source_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "text": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "uf": {
+          "enum": [
+            "AC",
+            "AL",
+            "AM",
+            "AP",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MG",
+            "MS",
+            "MT",
+            "PA",
+            "PB",
+            "PE",
+            "PI",
+            "PR",
+            "RJ",
+            "RN",
+            "RO",
+            "RR",
+            "RS",
+            "SC",
+            "SE",
+            "SP",
+            "TO",
+            "BR"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "curriculum_id",
+        "source_id",
+        "uf",
+        "code",
+        "text",
+        "normalized_text",
+        "editorial_note",
+        "kind",
+        "parent_id",
+        "positions",
+        "evidence",
+        "extraction_revision"
+      ],
+      "type": "object"
+    },
+    "Member": {
+      "additionalProperties": true,
+      "properties": {
+        "item_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "source",
+            "target"
+          ]
+        },
+        "scope": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "item_id",
+        "role",
+        "scope"
+      ],
+      "type": "object"
+    },
+    "Position": {
+      "additionalProperties": true,
+      "properties": {
+        "age_group": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "area": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "component": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "period": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "stage": {
+          "enum": [
+            "EI",
+            "EF",
+            "EM"
+          ]
+        },
+        "year_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "years": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "items": {
+                "maximum": 12,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "type": "array"
+            }
+          ]
+        }
+      },
+      "required": [
+        "stage"
+      ],
+      "type": "object"
+    },
+    "Relation": {
+      "additionalProperties": true,
+      "properties": {
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "type": "array"
+        },
+        "id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "members": {
+          "items": {
+            "$ref": "#/$defs/Member"
+          },
+          "minItems": 2,
+          "type": "array"
+        },
+        "method": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "origin": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "pedagogical_review_status": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "publication_status": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "relation_type": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "review_events": {
+          "items": {
+            "$ref": "#/$defs/Review"
+          },
+          "type": "array"
+        },
+        "technical_validation_status": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "members",
+        "relation_type",
+        "origin",
+        "technical_validation_status",
+        "pedagogical_review_status",
+        "publication_status",
+        "method",
+        "evidence"
+      ],
+      "type": "object"
+    },
+    "Review": {
+      "additionalProperties": true,
+      "properties": {
+        "actor_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "actor_type": {
+          "enum": [
+            "human",
+            "automated"
+          ]
+        },
+        "at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "method": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "actor_type",
+        "actor_id"
+      ],
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": true,
+      "properties": {
+        "application_period": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "artifact_url": {
+          "pattern": "^https?://",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "collected_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "components": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "document_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "document_type": {
+          "type": "string"
+        },
+        "edition": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "homologation_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "id": {
+          "maxLength": 240,
+          "minLength": 1,
+          "type": "string"
+        },
+        "issuer": {
+          "type": "string"
+        },
+        "local_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "normative_parts": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "official_url": {
+          "pattern": "^https?://",
+          "type": "string"
+        },
+        "redistribution": {
+          "type": "string"
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "pattern": "^[a-f0-9]{64}$",
+              "type": "string"
+            }
+          ]
+        },
+        "stages": {
+          "items": {
+            "enum": [
+              "EI",
+              "EF",
+              "EM"
+            ]
+          },
+          "type": "array"
+        },
+        "status": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "uf": {
+          "enum": [
+            "AC",
+            "AL",
+            "AM",
+            "AP",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MG",
+            "MS",
+            "MT",
+            "PA",
+            "PB",
+            "PE",
+            "PI",
+            "PR",
+            "RJ",
+            "RN",
+            "RO",
+            "RR",
+            "RS",
+            "SC",
+            "SE",
+            "SP",
+            "TO",
+            "BR"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "uf",
+        "title",
+        "issuer",
+        "official_url",
+        "artifact_url",
+        "stages",
+        "components",
+        "document_type",
+        "normative_parts",
+        "redistribution",
+        "status"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:curriculos-abertos:schema:1.1.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Currículos Abertos canonical records 1.1.0"
+}

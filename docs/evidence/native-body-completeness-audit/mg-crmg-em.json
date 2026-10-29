@@ -1,0 +1,2294 @@
+{
+  "source_id": "mg-crmg-em",
+  "uf": "MG",
+  "artifact_sha256": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
+  "cache_path": "data/extracted/2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44-page-cell-v1.5.0.json",
+  "status": "read_completed_with_explicit_scope",
+  "audit_revision": "independent-vector-rules-native-code-boundaries-v3",
+  "counts": {
+    "coded_cache_records": 338,
+    "primary_pages_read": 118,
+    "independent_vertical_rules_unavailable": 1,
+    "independently_bounded_native_bodies": 191,
+    "bounded_body_equal": 134,
+    "strict_prefix_candidates": 48,
+    "prefix_role_unresolved": 18,
+    "extracted_extends_primary_page_region_not_truncation": 9,
+    "text_too_short_for_prefix_alignment": 5,
+    "body_prefix_not_aligned_to_independent_column_start": 141,
+    "prefix_definition_candidate": 30
+  },
+  "negative_examples": [
+    {
+      "case": "equal_complete_body",
+      "code": "EM13LGG101",
+      "page": 114,
+      "cache_item_id": "ca:mg-crmg-em:7ccd5cefa30f34328bd2",
+      "result": "not_truncation",
+      "body_sha256": "b533f3a29c37b742ab0c88fe5a6aad537c19038476516871c2da539d8160fc2e"
+    },
+    {
+      "case": "equal_complete_body",
+      "code": "EM13LGG102",
+      "page": 115,
+      "cache_item_id": "ca:mg-crmg-em:b6a9b2df6bad43b29a23",
+      "result": "not_truncation",
+      "body_sha256": "0a03f6f50b6a599f894d0c0e998260189286ecc18b9785e448fa9e6d0231533b"
+    },
+    {
+      "case": "extracted_extends_bounded_page_region",
+      "code": "EM13LGG103",
+      "page": 115,
+      "cache_item_id": "ca:mg-crmg-em:79f30bee1a5abfe7ba44",
+      "result": "not_classified_as_truncation",
+      "evidence_pages": [
+        115,
+        116
+      ],
+      "extracted_tail": "ara interpretar e produzir criticamente discursos em textos de diversas semioses (visuais, verbais, sonoras e gestuais).",
+      "bounded_page_tail": "Analisar o funcionamento das linguagens, para interpretar e produzir criticamente discursos em textos de"
+    },
+    {
+      "case": "extracted_extends_bounded_page_region",
+      "code": "EM13LGG207MG",
+      "page": 123,
+      "cache_item_id": "ca:mg-crmg-em:c69e248c40805643af63",
+      "result": "not_classified_as_truncation",
+      "evidence_pages": [
+        123,
+        124
+      ],
+      "extracted_tail": ", desrespeito aos direitos humanos e valores democráticos decorrentes de preconceitos, estereótipos e relações de poder.",
+      "bounded_page_tail": "Conhecer canais de denúncia contra crimes e injustiças sociais, desrespeito aos direitos humanos e valores"
+    }
+  ],
+  "findings": [
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13LGG102",
+      "page": 115,
+      "cache_item_id": "ca:mg-crmg-em:be32b6731ef7c34e88b7",
+      "finalized_id_if_retained": "ca:mg-crmg-em:7cbe1c6b316eea8fa153",
+      "evidence_locator": "table:0/row:1/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 18,
+      "physical_expected_characters": 231,
+      "extracted_sha256": "f6cccadccccdc2239195f9b2be4928d53cdd53ae75f60240e652cc88768d211f",
+      "physical_expected_sha256": "0a03f6f50b6a599f894d0c0e998260189286ecc18b9785e448fa9e6d0231533b",
+      "extracted_head": "Analisar visões de",
+      "extracted_tail": "Analisar visões de",
+      "expected_tail": "Analisar visões de mundo, conflitos de interesse, preconceitos e ideologias presentes nos discursos veiculados nas diferentes mídias, ampliando suas possibilidades de explicação, interpretação e intervenção crítica da/na realidade.",
+      "extra_normalized_prefix": " mundo, conflitos de interesse, preconceitos e ideologias presentes nos discursos veiculados nas diferentes midias, ampliando suas possibilidades de explicacao, interpretacao e intervencao critica da/na realidade.",
+      "independent_boundary": {
+        "anchor": [
+          92.41523742675781,
+          165.1086883544922,
+          143.92713928222656,
+          174.5403289794922
+        ],
+        "body_bbox": [
+          85.34,
+          165.1086883544922,
+          212.69,
+          692.3799743652344
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 695.8286743164062,
+        "physical_bottom_rule_y": 692.3799743652344,
+        "column": [
+          85.34,
+          212.69
+        ]
+      },
+      "cached_header_hint": {
+        "0": " (EM13LGG102) Analisar visões de\nmundo, conflitos de interesse,\npreconceitos e ideologias presentes\nnos discursos veiculados nas\ndiferentes mídias, ampliando suas\npossibilidades de explicação,\ninterpretação e intervenção crítica\nda/na realidade. ",
+        "1": " (EM13LGG102) Analisar visões de mundo, conflitos de interesse,",
+        "2": " Condições de\nprodução, circulação e\nrecepção de discursos ",
+        "3": " Condições de produção, circulação e",
+        "4": "● Tratamento ideológico e linguístico da\ninformação, a linha editorial e o público-alvo.\n● Seleção lexical.\n● Variedades linguísticas.\n● Estratégias linguísticas e efeitos de sentido.\n● Vozes do discurso.  ",
+        "5": " Arte "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13LP02",
+      "page": 141,
+      "cache_item_id": "ca:mg-crmg-em:1a8923165efebc22334a",
+      "finalized_id_if_retained": "ca:mg-crmg-em:7e521fccdb758ca2bf62",
+      "evidence_locator": "table:0/row:5/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 29,
+      "physical_expected_characters": 510,
+      "extracted_sha256": "8b56dfa566eb7e2191a00961b7885a5d96153a4dd960426d31a929b2807df624",
+      "physical_expected_sha256": "8c4d3eb0298a8f08a9c05e90ff04233c5378799a8f9d0535f9eb5111deafe3dd",
+      "extracted_head": "Estabelecer relações entre as",
+      "extracted_tail": "Estabelecer relações entre as",
+      "expected_tail": "ivos diversos que contribuam para a coerência, a continuidade do texto e sua progressão temática, e organizando informações, tendo em vista as condições de produção e as relações lógico-discursivas envolvidas (causa/efeito ou consequência; tese/argumentos; problema/solução; definição/exemplos etc.).",
+      "extra_normalized_prefix": " partes do texto, tanto na producao como na leitura/escuta, considerando a construcao composicional e o estilo do genero, usando/reconhecendo adequadamente elementos e recursos coesivos diversos que contribuam para a coe",
+      "independent_boundary": {
+        "anchor": [
+          91.57524108886719,
+          223.90867614746094,
+          131.2187957763672,
+          233.34031677246094
+        ],
+        "body_bbox": [
+          85.34,
+          223.90867614746094,
+          255.41,
+          354.2899627685547
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 358.33868408203125,
+        "physical_bottom_rule_y": 354.2899627685547,
+        "column": [
+          85.34,
+          255.41
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": " Habilidade ",
+        "2": "  ",
+        "3": "  ",
+        "4": " Unidade Temática ",
+        "5": "  ",
+        "6": "  ",
+        "7": " Objeto de Conhecimento ",
+        "8": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13LP13",
+      "page": 143,
+      "cache_item_id": "ca:mg-crmg-em:e715d2b1650aa6226a96",
+      "finalized_id_if_retained": "ca:mg-crmg-em:8c256981d43f0c66541a",
+      "evidence_locator": "table:0/row:8/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 33,
+      "physical_expected_characters": 365,
+      "extracted_sha256": "02fa592d1ee027a0ebdb8ed498ce7f19dccb3145c0a54b200e50cf37533667e4",
+      "physical_expected_sha256": "b4a64dce9312ffe848acc96d8573792043e98a87a7372d82ab0cc82a61c5e4c6",
+      "extracted_head": "Analisar, a partir de referências",
+      "extracted_tail": "Analisar, a partir de referências",
+      "expected_tail": "ais, efeitos de sentido decorrentes de escolhas de elementos sonoros (volume, timbre, intensidade, pausas, ritmo, efeitos sonoros, sincronização etc.) e de suas relações com o verbal, levando-os em conta na produção de áudios, para ampliar as possibilidades de construção de sentidos e de apreciação.",
+      "extra_normalized_prefix": " contextuais, esteticas e culturais, efeitos de sentido decorrentes de escolhas de elementos sonoros (volume, timbre, intensidade, pausas, ritmo, efeitos sonoros, sincronizacao etc.) e de suas relacoes com o verbal, leva",
+      "independent_boundary": {
+        "anchor": [
+          91.57524108886719,
+          225.7086639404297,
+          131.2187957763672,
+          235.1403045654297
+        ],
+        "body_bbox": [
+          85.34,
+          225.7086639404297,
+          255.41,
+          316.969970703125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 321.0186767578125,
+        "physical_bottom_rule_y": 316.969970703125,
+        "column": [
+          85.34,
+          255.41
+        ]
+      },
+      "cached_header_hint": {
+        "0": " (EM13LP11) Fazer curadoria de informação,\ntendo em vista diferentes propósitos e projetos\ndiscursivos. ",
+        "1": "  ",
+        "2": "  ",
+        "3": " Todos os campos de\natuação social ",
+        "4": "  ",
+        "5": " ● Estratégia de análise e curadoria da informação.",
+        "6": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13LP27",
+      "page": 146,
+      "cache_item_id": "ca:mg-crmg-em:9ad1708379f97a04d3ad",
+      "finalized_id_if_retained": "ca:mg-crmg-em:9c1f3e45fb49bb44019b",
+      "evidence_locator": "table:0/row:26/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 30,
+      "physical_expected_characters": 418,
+      "extracted_sha256": "26955400871f71789983dedcc55fc32479f74d776bd6facf70f059abbc4ddec4",
+      "physical_expected_sha256": "e748b50a5731f9d69a3b255a611f024449ba96527ede9c67c4c647460bd3f776",
+      "extracted_head": "Engajar-se na busca de solução",
+      "extracted_tail": "Engajar-se na busca de solução",
+      "expected_tail": "izando e/ou participando de discussões, campanhas e debates, produzindo textos reivindicatórios, normativos, entre outras possibilidades, como forma de fomentar os princípios democráticos e uma atuação pautada pela ética da responsabilidade, pelo consumo consciente e pela consciência socioambiental.",
+      "extra_normalized_prefix": " para problemas que envolvam a coletividade, denunciando o desrespeito a direitos, organizando e/ou participando de discussoes, campanhas e debates, produzindo textos reivindicatorios, normativos, entre outras possibilid",
+      "independent_boundary": {
+        "anchor": [
+          91.57524108886719,
+          578.918701171875,
+          131.2187957763672,
+          588.350341796875
+        ],
+        "body_bbox": [
+          85.34,
+          578.918701171875,
+          255.53,
+          680.02001953125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 680.02001953125,
+        "column": [
+          85.34,
+          255.53
+        ]
+      },
+      "cached_header_hint": {
+        "0": " artísticas, produções culturais, intervenções\nurbanas e formas de expressão típica das\nculturas juvenis que pretendam expor uma\nproblemática ou promover uma reflexão/ação,\nposicionando-se em relação a essas produções e\nmanifestações. ",
+        "1": "  ",
+        "2": "  ",
+        "3": "  ",
+        "4": "  ",
+        "5": " ● Apreciação e análise de expressões típicas das culturas juvenis.",
+        "6": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13LP44",
+      "page": 150,
+      "cache_item_id": "ca:mg-crmg-em:588fb1be36381c5b6828",
+      "finalized_id_if_retained": "ca:mg-crmg-em:17d1cf587dc1cc3c9ffc",
+      "evidence_locator": "table:0/row:20/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 30,
+      "physical_expected_characters": 702,
+      "extracted_sha256": "fd32f9f04e83544f2db6e172574f1db65605fe963e22b6a769133d87d8d6a68e",
+      "physical_expected_sha256": "2df9ad969205b38fd926a2ce8fc55ffa9343dfb835943c320067412dbf7b18f5",
+      "extracted_head": "Analisar formas contemporâneas",
+      "extracted_tail": "Analisar formas contemporâneas",
+      "expected_tail": "onstruindo estereótipos, destacando estratégias de engajamento e viralização e explicando os mecanismos de persuasão utilizados e os efeitos de sentido provocados pelas escolhas feitas em termos de elementos e recursos linguístico-discursivos, imagéticos, sonoros, gestuais e espaciais, entre outros.",
+      "extra_normalized_prefix": " de publicidade em contexto digital (advergame, anuncios em videos, social advertising, unboxing, narrativa mercadologica, entre outras), e pecas de campanhas publicitarias e politicas (cartazes, folhetos, anuncios, prop",
+      "independent_boundary": {
+        "anchor": [
+          91.57524108886719,
+          555.5186767578125,
+          131.2187957763672,
+          564.9503173828125
+        ],
+        "body_bbox": [
+          85.34,
+          555.5186767578125,
+          255.53,
+          725.02001953125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 725.02001953125,
+        "column": [
+          85.34,
+          255.53
+        ]
+      },
+      "cached_header_hint": {
+        "0": "uma postura flexível que permita rever crenças e\nopiniões quando fatos apurados as\ncontradisserem. (EM13LP41) Analisar os processos humanos e\nautomáticos de curadoria que operam nas redes\nsociais e outros domínios da internet,\ncomparando os feeds de diferentes páginas de\nredes sociais e discutindo os efeitos desses\nmodelos de curadoria, de forma a ampliar as\npossibilidades de trato com o diferente e\nminimizar o efeito bolha e a manipulação de\nterceiros. ",
+        "1": "  ",
+        "2": "  ",
+        "3": " Campo Jornalístico-\nMidiático ",
+        "4": "● Curadoria em fontes confiáveis. ● Manipulação através de textos (vlogs, fotos, blogs, fake News) Curadoria;",
+        "5": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13MAT101",
+      "page": 165,
+      "cache_item_id": "ca:mg-crmg-em:fc92a09082df06a6a773",
+      "finalized_id_if_retained": "ca:mg-crmg-em:643b36f050af437fa002",
+      "evidence_locator": "table:0/row:3/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 24,
+      "physical_expected_characters": 75,
+      "extracted_sha256": "6cb81c767c981dc9303cb7ff969f97f325fcefc57ffae58d4a2fa130c7001609",
+      "physical_expected_sha256": "ac92d114ce2747a8c2f66dc3886231e7e53edff9e7564f5b425883041fd55f00",
+      "extracted_head": "Interpretar criticamente",
+      "extracted_tail": "Interpretar criticamente",
+      "expected_tail": "Interpretar criticamente situações econômicas, sociais e fatos relativos às",
+      "extra_normalized_prefix": " situacoes economicas, sociais e fatos relativos as",
+      "independent_boundary": {
+        "anchor": [
+          90.37523651123047,
+          720.668701171875,
+          143.21624755859375,
+          730.100341796875
+        ],
+        "body_bbox": [
+          85.46,
+          720.668701171875,
+          256.13,
+          744.5759582519531
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 744.5759582519531,
+        "column": [
+          85.46,
+          256.13
+        ]
+      },
+      "cached_header_hint": {
+        "0": "HABILIDADES  (EM13MAT104) Interpretar taxas e índices de\nnatureza socioeconômica (índice de\ndesenvolvimento humano, taxas de inflação,\nentre outros), investigando os processos de\ncálculo desses números, para analisar\ncriticamente a realidade e produzir argumentos.",
+        "1": "UNIDADE TEMÁTICA NÚMEROS E\nÁLGEBRA",
+        "2": "OBJETO DE CONHECIMENTO  ● Estatística: pesquisa e organização de\ndados.\n● Porcentagens: cálculo de índices, taxas\ne coeficientes.\n● Estatística: interpretação de gráficos,\nmedidas de tendência central e\nmedidas de dispersão."
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13MAT105",
+      "page": 166,
+      "cache_item_id": "ca:mg-crmg-em:07f8fcd82d153f25ab81",
+      "finalized_id_if_retained": "ca:mg-crmg-em:304e2ab3c48e656f35c6",
+      "evidence_locator": "table:0/row:12/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 21,
+      "physical_expected_characters": 277,
+      "extracted_sha256": "72169fde4100e986286b782d805a64a5e72c1e18d9b4d6d0b68d9e6e0cc4f9da",
+      "physical_expected_sha256": "3418dec9eaa42bd5c7ce33f6a707cc8766202d2c9cdd1455ebe8f77632ad7a50",
+      "extracted_head": "Utilizar as noções de",
+      "extracted_tail": "Utilizar as noções de",
+      "expected_tail": "Utilizar as noções de transformações isométricas (translação, reflexão, rotação e composições destas) e transformações homotéticas para construir figuras e analisar elementos da natureza e diferentes produções humanas (fractais, construções civis, obras de arte, entre outras).",
+      "extra_normalized_prefix": " transformacoes isometricas (translacao, reflexao, rotacao e composicoes destas) e transformacoes homoteticas para construir figuras e analisar elementos da natureza e diferentes producoes humanas (fractais, construcoes ",
+      "independent_boundary": {
+        "anchor": [
+          90.37523651123047,
+          352.69866943359375,
+          143.21624755859375,
+          362.13031005859375
+        ],
+        "body_bbox": [
+          85.46,
+          352.69866943359375,
+          256.13,
+          423.1699676513672
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 425.898681640625,
+        "physical_bottom_rule_y": 423.1699676513672,
+        "column": [
+          85.46,
+          256.13
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências da Natureza que envolvam a variação de grandezas, pela análise dos gráficos das funções representadas e das taxas de variação, com ou",
+        "1": "  ",
+        "2": "● Sistemas e unidades de medida: leitura e conversão de unidades de grandezas diversas."
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13MAT106",
+      "page": 166,
+      "cache_item_id": "ca:mg-crmg-em:e38f9a7982de2a9f8248",
+      "finalized_id_if_retained": "ca:mg-crmg-em:f43eaa655185749e651c",
+      "evidence_locator": "table:0/row:20/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 29,
+      "physical_expected_characters": 230,
+      "extracted_sha256": "5aeccd379bdbce17edef8daec75f2107e8d1b7fc6cff7e17fb5b878abf7d30ce",
+      "physical_expected_sha256": "e2e80b526c05b3761c1e6342c7ae4456195936cfff5e408e459ae767a18b3465",
+      "extracted_head": "Identificar situações da vida",
+      "extracted_tail": "Identificar situações da vida",
+      "expected_tail": "Identificar situações da vida cotidiana nas quais seja necessário fazer escolhas levando-se em conta os riscos probabilísticos (usar este ou aquele método contraceptivo, optar por um tratamento médico em detrimento de outro etc.).",
+      "extra_normalized_prefix": " cotidiana nas quais seja necessario fazer escolhas levando-se em conta os riscos probabilisticos (usar este ou aquele metodo contraceptivo, optar por um tratamento medico em detrimento de outro etc.).",
+      "independent_boundary": {
+        "anchor": [
+          90.37523651123047,
+          571.2386474609375,
+          143.21624755859375,
+          580.6702880859375
+        ],
+        "body_bbox": [
+          85.46,
+          571.2386474609375,
+          256.13,
+          694.4199829101562
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 694.4199829101562,
+        "column": [
+          85.46,
+          256.13
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Ciências da Natureza que envolvam a variação de grandezas, pela análise dos gráficos das funções representadas e das taxas de variação, com ou",
+        "1": "  ",
+        "2": "● Sistemas e unidades de medida: leitura e conversão de unidades de grandezas diversas."
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13MAT201",
+      "page": 167,
+      "cache_item_id": "ca:mg-crmg-em:ad549667bc2a1b9db77e",
+      "finalized_id_if_retained": "ca:mg-crmg-em:32ab3affdcbbd6a7d985",
+      "evidence_locator": "table:0/row:5/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 29,
+      "physical_expected_characters": 193,
+      "extracted_sha256": "3559223639f7bdef21c2ac99da42e73f1491ac9c3987cb895cee0031b7485f28",
+      "physical_expected_sha256": "367f91222cf1756f96b026f744d39f9dc64a9f91f3519c9f8f21fb2911bac5f9",
+      "extracted_head": "Propor ou participar de ações",
+      "extracted_tail": "Propor ou participar de ações",
+      "expected_tail": "Propor ou participar de ações adequadas às demandas da região, preferencialmente para sua comunidade, envolvendo medições e cálculos de perímetro, de área, de volume, de capacidade ou de massa.",
+      "extra_normalized_prefix": " adequadas as demandas da regiao, preferencialmente para sua comunidade, envolvendo medicoes e calculos de perimetro, de area, de volume, de capacidade ou de massa.",
+      "independent_boundary": {
+        "anchor": [
+          90.37523651123047,
+          330.378662109375,
+          143.21624755859375,
+          339.810302734375
+        ],
+        "body_bbox": [
+          85.46,
+          330.378662109375,
+          255.65,
+          412.00999450683594
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 414.7386779785156,
+        "physical_bottom_rule_y": 412.00999450683594,
+        "column": [
+          85.46,
+          255.65
+        ]
+      },
+      "cached_header_hint": {
+        "0": " HABILIDADES ",
+        "1": "UNIDADE  TEMÁTICA",
+        "2": " OBJETO DE CONHECIMENTO "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13MAT202B",
+      "page": 167,
+      "cache_item_id": "ca:mg-crmg-em:cb64e3f85c25229cc9f4",
+      "finalized_id_if_retained": "ca:mg-crmg-em:f8cc074569c06082a466",
+      "evidence_locator": "table:0/row:15/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Cached header hint only, not accepted as independent whole-source reconciliation.",
+      "extracted_characters": 26,
+      "physical_expected_characters": 222,
+      "extracted_sha256": "38af2dee5767410893961a31d16ef02567ae193775bb9addbc4477b64a80b001",
+      "physical_expected_sha256": "feeed4af2e7a39fa34af94c343a7c9343c6ab38ba2735b0616c239155a423956",
+      "extracted_head": "Comunicar os resultados de",
+      "extracted_tail": "Comunicar os resultados de",
+      "expected_tail": "Comunicar os resultados de pesquisas por meio de relatório contendo gráficos e interpretação das medidas de tendência central e das medidas de dispersão (amplitude e desvio padrão), utilizando ou não recursos tecnológicos.",
+      "extra_normalized_prefix": " pesquisas por meio de relatorio contendo graficos e interpretacao das medidas de tendencia central e das medidas de dispersao (amplitude e desvio padrao), utilizando ou nao recursos tecnologicos.",
+      "independent_boundary": {
+        "anchor": [
+          90.37523651123047,
+          508.95867919921875,
+          148.95021057128906,
+          518.3903198242188
+        ],
+        "body_bbox": [
+          85.46,
+          508.95867919921875,
+          255.65,
+          559.8699951171875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 559.8699951171875,
+        "column": [
+          85.46,
+          255.65
+        ]
+      },
+      "cached_header_hint": {
+        "0": " HABILIDADES ",
+        "1": "UNIDADE  TEMÁTICA",
+        "2": " OBJETO DE CONHECIMENTO "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13MAT302B",
+      "page": 168,
+      "cache_item_id": "ca:mg-crmg-em:d94fed71f3f1d5756409",
+      "finalized_id_if_retained": "ca:mg-crmg-em:e9b8999d9747eec50665",
+      "evidence_locator": "table:0/row:5/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 17,
+      "physical_expected_characters": 147,
+      "extracted_sha256": "37f7ffe8a0a119b1376ddfe73d0344b3a774329c6211cdc45811f963a0f0e5ec",
+      "physical_expected_sha256": "1d4f772f64c70098dacd997e3542bcad72f4371620975990990b9f11dcb6e855",
+      "extracted_head": "Construir modelos",
+      "extracted_tail": "Construir modelos",
+      "expected_tail": "Construir modelos empregando as funções polinomiais de 2º, para resolver problemas em contextos diversos, com ou sem apoio de tecnologias digitais.",
+      "extra_normalized_prefix": " empregando as funcoes polinomiais de 2o, para resolver problemas em contextos diversos, com ou sem apoio de tecnologias digitais.",
+      "independent_boundary": {
+        "anchor": [
+          90.61524200439453,
+          184.90867614746094,
+          149.19021606445312,
+          194.34031677246094
+        ],
+        "body_bbox": [
+          85.46,
+          184.90867614746094,
+          255.65,
+          243.07998657226562
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 246.4686737060547,
+        "physical_bottom_rule_y": 243.07998657226562,
+        "column": [
+          85.46,
+          255.65
+        ]
+      },
+      "cached_header_hint": {
+        "0": " HABILIDADES ",
+        "1": "UNIDADE  TEMÁTICA",
+        "2": " OBJETO DE CONHECIMENTO "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13MAT304",
+      "page": 168,
+      "cache_item_id": "ca:mg-crmg-em:3a364411f131281cc115",
+      "finalized_id_if_retained": "ca:mg-crmg-em:78a2afd9929f727462bd",
+      "evidence_locator": "table:0/row:12/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Cached header hint only, not accepted as independent whole-source reconciliation.",
+      "extracted_characters": 29,
+      "physical_expected_characters": 203,
+      "extracted_sha256": "bd2962a1f002cc26c113bf7a001bede2771fecfb01c79ca8018dd15d36e55f0c",
+      "physical_expected_sha256": "479abf86c02f3a26799959989eee27553ae0294b13f31a6abf253351d1e98ad1",
+      "extracted_head": "Resolver e elaborar problemas",
+      "extracted_tail": "Resolver e elaborar problemas",
+      "expected_tail": "Resolver e elaborar problemas com funções exponenciais nos quais seja necessário compreender e interpretar a variação das grandezas envolvidas, em contextos como o da Matemática Financeira, entre outros.",
+      "extra_normalized_prefix": " com funcoes exponenciais nos quais seja necessario compreender e interpretar a variacao das grandezas envolvidas, em contextos como o da matematica financeira, entre outros.",
+      "independent_boundary": {
+        "anchor": [
+          90.61524200439453,
+          308.898681640625,
+          143.4562530517578,
+          318.330322265625
+        ],
+        "body_bbox": [
+          85.46,
+          308.898681640625,
+          255.65,
+          358.1899719238281
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 361.57867431640625,
+        "physical_bottom_rule_y": 358.1899719238281,
+        "column": [
+          85.46,
+          255.65
+        ]
+      },
+      "cached_header_hint": {
+        "0": " HABILIDADES ",
+        "1": "UNIDADE  TEMÁTICA",
+        "2": " OBJETO DE CONHECIMENTO "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13MAT306",
+      "page": 168,
+      "cache_item_id": "ca:mg-crmg-em:07ee6eb772e5d3422b8a",
+      "finalized_id_if_retained": "ca:mg-crmg-em:4a02e1c7bf1417c8c9df",
+      "evidence_locator": "table:0/row:18/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Cached header hint only, not accepted as independent whole-source reconciliation.",
+      "extracted_characters": 29,
+      "physical_expected_characters": 286,
+      "extracted_sha256": "bd2962a1f002cc26c113bf7a001bede2771fecfb01c79ca8018dd15d36e55f0c",
+      "physical_expected_sha256": "cc72f8088b019a46942d486d39dc761f0ef448427cc5e27ce6f991ae86e5b12d",
+      "extracted_head": "Resolver e elaborar problemas",
+      "extracted_tail": "Resolver e elaborar problemas",
+      "expected_tail": "Resolver e elaborar problemas em contextos que envolvem fenômenos periódicos reais (ondas sonoras, fases da lua, movimentos cíclicos, entre outros) e comparar suas representações com as funções seno e cosseno, no plano cartesiano, com ou sem apoio de aplicativos de álgebra e geometria.",
+      "extra_normalized_prefix": " em contextos que envolvem fenomenos periodicos reais (ondas sonoras, fases da lua, movimentos ciclicos, entre outros) e comparar suas representacoes com as funcoes seno e cosseno, no plano cartesiano, com ou sem apoio d",
+      "independent_boundary": {
+        "anchor": [
+          90.61524200439453,
+          432.878662109375,
+          143.4562530517578,
+          442.310302734375
+        ],
+        "body_bbox": [
+          85.46,
+          432.878662109375,
+          255.65,
+          522.6099853515625
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 525.9986572265625,
+        "physical_bottom_rule_y": 522.6099853515625,
+        "column": [
+          85.46,
+          255.65
+        ]
+      },
+      "cached_header_hint": {
+        "0": " HABILIDADES ",
+        "1": "UNIDADE  TEMÁTICA",
+        "2": " OBJETO DE CONHECIMENTO "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13MAT315",
+      "page": 168,
+      "cache_item_id": "ca:mg-crmg-em:aac639678e23a724155b",
+      "finalized_id_if_retained": "ca:mg-crmg-em:10a100988041aa62c2ee",
+      "evidence_locator": "table:0/row:30/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Cached header hint only, not accepted as independent whole-source reconciliation.",
+      "extracted_characters": 32,
+      "physical_expected_characters": 105,
+      "extracted_sha256": "f864a776eca7eda230ca543aafeb93b2c3d7e0ec498e7707bbf566afda196d6b",
+      "physical_expected_sha256": "65f655cc1cf3711cbad9e7348a4151ecd2cf4c2d08e088c553eb309149613768",
+      "extracted_head": "Investigar e registrar, por meio",
+      "extracted_tail": "Investigar e registrar, por meio",
+      "expected_tail": "Investigar e registrar, por meio de um fluxograma, quando possível, um algoritmo que resolve um problema.",
+      "extra_normalized_prefix": " de um fluxograma, quando possivel, um algoritmo que resolve um problema.",
+      "independent_boundary": {
+        "anchor": [
+          90.61524200439453,
+          588.398681640625,
+          143.4562530517578,
+          597.830322265625
+        ],
+        "body_bbox": [
+          85.46,
+          588.398681640625,
+          255.65,
+          634.47998046875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 637.86865234375,
+        "physical_bottom_rule_y": 634.47998046875,
+        "column": [
+          85.46,
+          255.65
+        ]
+      },
+      "cached_header_hint": {
+        "0": " HABILIDADES ",
+        "1": "UNIDADE  TEMÁTICA",
+        "2": " OBJETO DE CONHECIMENTO "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13MAT307B",
+      "page": 168,
+      "cache_item_id": "ca:mg-crmg-em:6696f771b897014e0d3a",
+      "finalized_id_if_retained": "ca:mg-crmg-em:d4f1d3c211fb912fb83b",
+      "evidence_locator": "table:0/row:35/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Cached header hint only, not accepted as independent whole-source reconciliation.",
+      "extracted_characters": 21,
+      "physical_expected_characters": 175,
+      "extracted_sha256": "3952241e82d599c16b32b0dcc7901b91432b9e179d42e6364052bb852048dc66",
+      "physical_expected_sha256": "51bb4cbcae6490882ebf75430f4d9764ea0a635f85a88460db84401d6949fcc9",
+      "extracted_head": "Deduzir expressões de",
+      "extracted_tail": "Deduzir expressões de",
+      "expected_tail": "Deduzir expressões de cálculo para aplicá-las em situações reais (como o remanejamento e a distribuição de plantações, entre outros), com ou sem apoio de tecnologias digitais.",
+      "extra_normalized_prefix": " calculo para aplica-las em situacoes reais (como o remanejamento e a distribuicao de plantacoes, entre outros), com ou sem apoio de tecnologias digitais.",
+      "independent_boundary": {
+        "anchor": [
+          90.61524200439453,
+          687.1886596679688,
+          149.19021606445312,
+          696.6203002929688
+        ],
+        "body_bbox": [
+          85.46,
+          687.1886596679688,
+          255.65,
+          736.47998046875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 736.47998046875,
+        "column": [
+          85.46,
+          255.65
+        ]
+      },
+      "cached_header_hint": {
+        "0": " HABILIDADES ",
+        "1": "UNIDADE  TEMÁTICA",
+        "2": " OBJETO DE CONHECIMENTO "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13MAT309B",
+      "page": 169,
+      "cache_item_id": "ca:mg-crmg-em:389c7d759d34d045a946",
+      "finalized_id_if_retained": "ca:mg-crmg-em:c6a73e8518ff3fa5ea16",
+      "evidence_locator": "table:0/row:1/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 19,
+      "physical_expected_characters": 239,
+      "extracted_sha256": "f39a553237612cc57dfc28bc74b8e995a3c055eb7c0664eaf32c176d583893eb",
+      "physical_expected_sha256": "5f2e4776492bba8245c9c609d66a45106655e1add4cb7b3c348d7ee6c5cd8809",
+      "extracted_head": "Resolver e elaborar",
+      "extracted_tail": "Resolver e elaborar",
+      "expected_tail": "Resolver e elaborar problemas que envolvem o cálculo de volumes de prismas, pirâmides e corpos redondos em situações reais (como o cálculo da capacidade de uma caixa d’água em diferentes formatos), com ou sem apoio de tecnologias digitais.",
+      "extra_normalized_prefix": " problemas que envolvem o calculo de volumes de prismas, piramides e corpos redondos em situacoes reais (como o calculo da capacidade de uma caixa dagua em diferentes formatos), com ou sem apoio de tecnologias digitais.",
+      "independent_boundary": {
+        "anchor": [
+          90.61524200439453,
+          155.38865661621094,
+          149.19021606445312,
+          164.82029724121094
+        ],
+        "body_bbox": [
+          85.46,
+          155.38865661621094,
+          255.65,
+          214.51998901367188
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 217.78868103027344,
+        "physical_bottom_rule_y": 214.51998901367188,
+        "column": [
+          85.46,
+          255.65
+        ]
+      },
+      "cached_header_hint": {
+        "0": "(EM13MAT309A): Resolver e elaborar\nproblemas que envolvem o cálculo de áreas totais\nde prismas, pirâmides e corpos redondos em\nsituações reais (como o cálculo do gasto de\nmaterial para revestimento ou pinturas de objetos\ncujos formatos sejam composições dos sólidos\nestudados), com ou sem apoio de tecnologias\ndigitais. (EM13MAT309B): Resolver e elaborar problemas que envolvem o cálculo de volumes",
+        "1": "GEOMETRIA E\nMEDIDAS GEOMETRIA E MEDIDAS",
+        "2": "● Geometria Métrica: poliedros e corpos\nredondos. Área total de prismas,\npirâmides e corpos redondos. ● Geometria Métrica: poliedros e corpos redondos. Volume de prismas,"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13MAT311B",
+      "page": 169,
+      "cache_item_id": "ca:mg-crmg-em:4bea723d5b1ec75cd1a7",
+      "finalized_id_if_retained": "ca:mg-crmg-em:78b97c77dc814500827b",
+      "evidence_locator": "table:0/row:19/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 19,
+      "physical_expected_characters": 70,
+      "extracted_sha256": "f39a553237612cc57dfc28bc74b8e995a3c055eb7c0664eaf32c176d583893eb",
+      "physical_expected_sha256": "bd65a03b6156e871d41a60a0a96fdec66b866a7cf3a8676bc18b034ce87876b6",
+      "extracted_head": "Resolver e elaborar",
+      "extracted_tail": "Resolver e elaborar",
+      "expected_tail": "Resolver e elaborar problemas que envolvem o cálculo de probabilidade.",
+      "extra_normalized_prefix": " problemas que envolvem o calculo de probabilidade.",
+      "independent_boundary": {
+        "anchor": [
+          90.61524200439453,
+          549.638671875,
+          149.19021606445312,
+          559.0703125
+        ],
+        "body_bbox": [
+          85.46,
+          549.638671875,
+          255.65,
+          585.8499755859375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 589.2386474609375,
+        "physical_bottom_rule_y": 585.8499755859375,
+        "column": [
+          85.46,
+          255.65
+        ]
+      },
+      "cached_header_hint": {
+        "0": "(EM13MAT309A): Resolver e elaborar\nproblemas que envolvem o cálculo de áreas totais\nde prismas, pirâmides e corpos redondos em\nsituações reais (como o cálculo do gasto de\nmaterial para revestimento ou pinturas de objetos\ncujos formatos sejam composições dos sólidos\nestudados), com ou sem apoio de tecnologias\ndigitais. (EM13MAT309B): Resolver e elaborar problemas que envolvem o cálculo de volumes",
+        "1": "GEOMETRIA E\nMEDIDAS GEOMETRIA E MEDIDAS",
+        "2": "● Geometria Métrica: poliedros e corpos\nredondos. Área total de prismas,\npirâmides e corpos redondos. ● Geometria Métrica: poliedros e corpos redondos. Volume de prismas,"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13MAT402",
+      "page": 170,
+      "cache_item_id": "ca:mg-crmg-em:a74309d73e6f28bd8a06",
+      "finalized_id_if_retained": "ca:mg-crmg-em:8beb1b085d6ff82e9191",
+      "evidence_locator": "table:0/row:5/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 24,
+      "physical_expected_characters": 318,
+      "extracted_sha256": "8ca8c6bbc650df5dd8dd028ac20d3fc9d5fc3a45dc4bde725904ef043ecb420c",
+      "physical_expected_sha256": "e7ed4fc2930a4035e47fef27147161ceb9abd8570442409186e70c07b039fc63",
+      "extracted_head": "Converter representações",
+      "extracted_tail": "Converter representações",
+      "expected_tail": "tações algébricas de funções polinomiais de 2º grau em representações geométricas no plano cartesiano, distinguindo os casos nos quais uma variável for diretamente proporcional ao quadrado da outra, recorrendo ou não a softwares ou aplicativos de álgebra e geometria dinâmica, entre outros materiais.",
+      "extra_normalized_prefix": " algebricas de funcoes polinomiais de 2o grau em representacoes geometricas no plano cartesiano, distinguindo os casos nos quais uma variavel for diretamente proporcional ao quadrado da outra, recorrendo ou nao a softwar",
+      "independent_boundary": {
+        "anchor": [
+          90.61524200439453,
+          309.4986572265625,
+          143.4562530517578,
+          318.9302978515625
+        ],
+        "body_bbox": [
+          85.46,
+          309.4986572265625,
+          255.65,
+          409.0699768066406
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 412.33868408203125,
+        "physical_bottom_rule_y": 409.0699768066406,
+        "column": [
+          85.46,
+          255.65
+        ]
+      },
+      "cached_header_hint": {
+        "0": " HABILIDADES ",
+        "1": "UNIDADE  TEMÁTICA",
+        "2": " OBJETO DE CONHECIMENTO "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13MAT403B",
+      "page": 170,
+      "cache_item_id": "ca:mg-crmg-em:b781135c15540d5a2801",
+      "finalized_id_if_retained": "ca:mg-crmg-em:cde9609054b08925f139",
+      "evidence_locator": "table:0/row:17/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Cached header hint only, not accepted as independent whole-source reconciliation.",
+      "extracted_characters": 28,
+      "physical_expected_characters": 168,
+      "extracted_sha256": "1915664fc95ce6c9c3ae6dc71f2fee693bd1305094de75c8389afab079b954e6",
+      "physical_expected_sha256": "e2c1fee9533a6178257259d509a5b479271e2a5175c5b57a5fbd84b2c9c8b897",
+      "extracted_head": "Estabelecer relações, com ou",
+      "extracted_tail": "Estabelecer relações, com ou",
+      "expected_tail": "Estabelecer relações, com ou sem apoio de tecnologias digitais, entre as representações de funções exponencial e logarítmica expressas em tabelas e em plano cartesiano.",
+      "extra_normalized_prefix": " sem apoio de tecnologias digitais, entre as representacoes de funcoes exponencial e logaritmica expressas em tabelas e em plano cartesiano.",
+      "independent_boundary": {
+        "anchor": [
+          90.61524200439453,
+          505.5986328125,
+          149.19021606445312,
+          515.0302734375
+        ],
+        "body_bbox": [
+          85.46,
+          505.5986328125,
+          255.65,
+          580.9299926757812
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 584.3186645507812,
+        "physical_bottom_rule_y": 580.9299926757812,
+        "column": [
+          85.46,
+          255.65
+        ]
+      },
+      "cached_header_hint": {
+        "0": " HABILIDADES ",
+        "1": "UNIDADE  TEMÁTICA",
+        "2": " OBJETO DE CONHECIMENTO "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EM13MAT511B",
+      "page": 172,
+      "cache_item_id": "ca:mg-crmg-em:a0818be715eec6e00a0d",
+      "finalized_id_if_retained": "ca:mg-crmg-em:9df89cbcaff7721ff4fc",
+      "evidence_locator": "table:0/row:33/cell:0",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 25,
+      "physical_expected_characters": 147,
+      "extracted_sha256": "7282e7c1813cd3993b9e8727690ff38e70dc1fffb45042496973064a804ffdc0",
+      "physical_expected_sha256": "2c8b2e48864acc483b5cc8449838884a5743b668e0a9517610190a10621f6100",
+      "extracted_head": "Investigar implicações de",
+      "extracted_tail": "Investigar implicações de",
+      "expected_tail": "Investigar implicações de diferentes tipos de espaços amostrais, discretos ou não, e de eventos, equiprováveis ou não no cálculo de probabilidades.",
+      "extra_normalized_prefix": " diferentes tipos de espacos amostrais, discretos ou nao, e de eventos, equiprovaveis ou nao no calculo de probabilidades.",
+      "independent_boundary": {
+        "anchor": [
+          90.61524200439453,
+          586.358642578125,
+          149.19021606445312,
+          595.790283203125
+        ],
+        "body_bbox": [
+          85.46,
+          586.358642578125,
+          255.65,
+          644.5599670410156
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 644.5599670410156,
+        "column": [
+          85.46,
+          255.65
+        ]
+      },
+      "cached_header_hint": {
+        "0": "Financeira ou Cinemática, entre outros, com apoio de tecnologias digitais. ",
+        "1": "  ",
+        "2": "● Pontos críticos de uma função quadrática: concavidade, pontos de máximo ou de mínimo."
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFCG01",
+      "page": 294,
+      "cache_item_id": "ca:mg-crmg-em:241f6ae26a90d8f7d318",
+      "finalized_id_if_retained": "ca:mg-crmg-em:f4f424428995aadf8e2b",
+      "evidence_locator": "table:0/row:4/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 97,
+      "physical_expected_characters": 172,
+      "extracted_sha256": "6d6d79f959bfa2212c7fe685093175422de855d19ee5d94b19c08e5917cb42c1",
+      "physical_expected_sha256": "d330b70255a6a23074c4d8f98e1b50fbe25c46f49808649ceecc1dbd4813ed96",
+      "extracted_head": "Identificar, selecionar, processar e analisar dados, fatos e evidências com curiosidade, atenção,",
+      "extracted_tail": "Identificar, selecionar, processar e analisar dados, fatos e evidências com curiosidade, atenção,",
+      "expected_tail": "Identificar, selecionar, processar e analisar dados, fatos e evidências com curiosidade, atenção, criticidade e ética, inclusive utilizando o apoio de tecnologias digitais.",
+      "extra_normalized_prefix": " criticidade e etica, inclusive utilizando o apoio de tecnologias digitais.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          250.90867614746094,
+          180.40902709960938,
+          260.34033203125
+        ],
+        "body_bbox": [
+          134.78,
+          250.90867614746094,
+          510.1,
+          280.33868408203125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 280.33868408203125,
+        "physical_bottom_rule_y": 280.33868408203125,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": " INVESTIGAÇÃO CIENTÍTICA ",
+        "1": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFCG02",
+      "page": 294,
+      "cache_item_id": "ca:mg-crmg-em:8096632f8c7ed8867a74",
+      "finalized_id_if_retained": "ca:mg-crmg-em:5e5e9f2c7292dba13a1b",
+      "evidence_locator": "table:0/row:7/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 94,
+      "physical_expected_characters": 355,
+      "extracted_sha256": "b6ab55c8e009a95b6f9781f3d373dda1c13a56e6b48e89d22d500823bea1274b",
+      "physical_expected_sha256": "aadd46e21fcc7251bc9a779068011d2ac6beb4cd300b99dec6bcdd2e7559c8dc",
+      "extracted_head": "Posicionar-se com base em critérios científicos, éticos e estéticos, utilizando dados, fatos e",
+      "extracted_tail": "Posicionar-se com base em critérios científicos, éticos e estéticos, utilizando dados, fatos e",
+      "expected_tail": " e estéticos, utilizando dados, fatos e evidências para respaldar conclusões, opiniões e argumentos, por meio de afirmações claras, ordenadas, coerentes e compreensíveis, sempre respeitando valores universais, como liberdade, democracia, justiça social, pluralidade, solidariedade e sustentabilidade.",
+      "extra_normalized_prefix": " evidencias para respaldar conclusoes, opinioes e argumentos, por meio de afirmacoes claras, ordenadas, coerentes e compreensiveis, sempre respeitando valores universais, como liberdade, democracia, justica social, plura",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          280.33868408203125,
+          180.40902709960938,
+          289.77032470703125
+        ],
+        "body_bbox": [
+          134.78,
+          280.33868408203125,
+          510.1,
+          329.1786804199219
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 329.1786804199219,
+        "physical_bottom_rule_y": 329.1786804199219,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": " INVESTIGAÇÃO CIENTÍTICA ",
+        "1": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFCG03",
+      "page": 294,
+      "cache_item_id": "ca:mg-crmg-em:112bd189fd19d2e84bb8",
+      "finalized_id_if_retained": "ca:mg-crmg-em:0a0fd21a7fa9004f1ac9",
+      "evidence_locator": "table:0/row:12/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 96,
+      "physical_expected_characters": 140,
+      "extracted_sha256": "128c4143714515a9872e84c523546aac815b6ed50e65f1ff8fcf039408280131",
+      "physical_expected_sha256": "5243e20a6804abf6328f888de9cc09bdd7cc08c4611202688a5fa19fc2635547",
+      "extracted_head": "Utilizar informações, conhecimentos e ideias resultantes de investigações científicas para criar",
+      "extracted_tail": "Utilizar informações, conhecimentos e ideias resultantes de investigações científicas para criar",
+      "expected_tail": "Utilizar informações, conhecimentos e ideias resultantes de investigações científicas para criar ou propor soluções para problemas diversos.",
+      "extra_normalized_prefix": " ou propor solucoes para problemas diversos.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          329.1786804199219,
+          180.40902709960938,
+          338.6103210449219
+        ],
+        "body_bbox": [
+          134.78,
+          329.1786804199219,
+          510.1,
+          349.0699768066406
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 352.45867919921875,
+        "physical_bottom_rule_y": 349.0699768066406,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": " INVESTIGAÇÃO CIENTÍTICA ",
+        "1": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFMAT01",
+      "page": 294,
+      "cache_item_id": "ca:mg-crmg-em:e538070cda95908ed0e3",
+      "finalized_id_if_retained": "ca:mg-crmg-em:6385b5bc17828631c1c9",
+      "evidence_locator": "table:0/row:14/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 83,
+      "physical_expected_characters": 169,
+      "extracted_sha256": "02fe51328c23e325391772041234b03b3107812a59fb5e33d8289ec8131d57f4",
+      "physical_expected_sha256": "ca649ce74c65db29bc3b9b8f3829c238b87c8736686606626d2bf19747f35697",
+      "extracted_head": "Investigar e analisar situações problema identificando e selecionando conhecimentos",
+      "extracted_tail": "Investigar e analisar situações problema identificando e selecionando conhecimentos",
+      "expected_tail": "Investigar e analisar situações problema identificando e selecionando conhecimentos matemáticos relevantes para dada situação, elaborando modelos para sua representação.",
+      "extra_normalized_prefix": " matematicos relevantes para dada situacao, elaborando modelos para sua representacao.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          352.45867919921875,
+          187.49765014648438,
+          361.89031982421875
+        ],
+        "body_bbox": [
+          134.78,
+          352.45867919921875,
+          510.1,
+          381.7386779785156
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 381.7386779785156,
+        "physical_bottom_rule_y": 381.7386779785156,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": " INVESTIGAÇÃO CIENTÍTICA ",
+        "1": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFMAT02",
+      "page": 294,
+      "cache_item_id": "ca:mg-crmg-em:1b0d83404eea1a2fa849",
+      "finalized_id_if_retained": "ca:mg-crmg-em:34b7de69744e9b9fb584",
+      "evidence_locator": "table:0/row:19/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 92,
+      "physical_expected_characters": 277,
+      "extracted_sha256": "b3781d5495971d34d66cdbaa8ad7f96fcda011b5f87f8e9ef8ba35fe8b67f9e2",
+      "physical_expected_sha256": "18a087ec1cb9ecffb02c15c21b91b490ca215ecc998b67649f1d6eda4a5625e4",
+      "extracted_head": "Levantar e testar hipóteses sobre variáveis que interferem na explicação ou resolução de uma",
+      "extracted_tail": "Levantar e testar hipóteses sobre variáveis que interferem na explicação ou resolução de uma",
+      "expected_tail": "Levantar e testar hipóteses sobre variáveis que interferem na explicação ou resolução de uma situação-problema elaborando modelos com a linguagem matemática para analisá-la e avaliar sua adequação em termos de possíveis limitações, eficiência e possibilidades de generalização.",
+      "extra_normalized_prefix": " situacao-problema elaborando modelos com a linguagem matematica para analisa-la e avaliar sua adequacao em termos de possiveis limitacoes, eficiencia e possibilidades de generalizacao.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          381.7386779785156,
+          187.49765014648438,
+          391.1703186035156
+        ],
+        "body_bbox": [
+          134.78,
+          381.7386779785156,
+          510.1,
+          420.8586730957031
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 420.8586730957031,
+        "physical_bottom_rule_y": 420.8586730957031,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": " INVESTIGAÇÃO CIENTÍTICA ",
+        "1": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFMAT03",
+      "page": 294,
+      "cache_item_id": "ca:mg-crmg-em:411b92673bb8d89f954f",
+      "finalized_id_if_retained": "ca:mg-crmg-em:2725aa46847dd016caf2",
+      "evidence_locator": "table:0/row:27/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 92,
+      "physical_expected_characters": 517,
+      "extracted_sha256": "e8adc09627742884f67312bfcb0940cda226ea41438d8b0db519da9a38403f77",
+      "physical_expected_sha256": "55db041eb2b08bfc5cfff3a6a440a7107e1215604e64ada34733e6d84e3d73b5",
+      "extracted_head": "Selecionar e sistematizar, com base em estudos e/ ou pesquisas (bibliográfica, exploratória,",
+      "extracted_tail": "Selecionar e sistematizar, com base em estudos e/ ou pesquisas (bibliográfica, exploratória,",
+      "expected_tail": " de natureza científica, social, profissional, cultural, de processos tecnológicos, identificando os diversos pontos de vista e posicionando-se mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+      "extra_normalized_prefix": " de campo, experimental etc.) em fontes confiaveis, informacoes sobre a contribuicao da matematica na explicacao de fenomenos de natureza cientifica, social, profissional, cultural, de processos tecnologicos, identifican",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          420.8586730957031,
+          187.49765014648438,
+          430.2903137207031
+        ],
+        "body_bbox": [
+          134.78,
+          420.8586730957031,
+          510.1,
+          470.16998291015625
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 470.16998291015625,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": " INVESTIGAÇÃO CIENTÍTICA ",
+        "1": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFCG04",
+      "page": 295,
+      "cache_item_id": "ca:mg-crmg-em:5c59fe09aab5680a1e14",
+      "finalized_id_if_retained": "ca:mg-crmg-em:bb9e202fa29d78715d34",
+      "evidence_locator": "table:0/row:15/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 93,
+      "physical_expected_characters": 199,
+      "extracted_sha256": "f57af478a1ea3fb993bc1db0fcf940d40ec85431cd6b4e978bb21d7718ecf7b4",
+      "physical_expected_sha256": "b40596ea1df09c25f1f9d37993e3fdf48d984a7bbce6007295600f94eff2e268",
+      "extracted_head": "Reconhecer e analisar diferentes manifestações criativas, artísticas e culturais, por meio de",
+      "extracted_tail": "Reconhecer e analisar diferentes manifestações criativas, artísticas e culturais, por meio de",
+      "expected_tail": "Reconhecer e analisar diferentes manifestações criativas, artísticas e culturais, por meio de vivências presenciais e virtuais que ampliem a visão de mundo, sensibilidade, criticidade e criatividade.",
+      "extra_normalized_prefix": " vivencias presenciais e virtuais que ampliem a visao de mundo, sensibilidade, criticidade e criatividade.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          232.3086395263672,
+          180.40902709960938,
+          241.7402801513672
+        ],
+        "body_bbox": [
+          134.78,
+          232.3086395263672,
+          510.1,
+          261.61865234375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 261.61865234375,
+        "physical_bottom_rule_y": 261.61865234375,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "refutar as ideias iniciais, concluir e generalizar, argumentar utilizando os conceitos matemáticos, comunicar de diferentes maneiras (algébrica, geométrica, fluxogramas etc.). Tomemos, como exemplo, o uso das equações como modelos para representar situações problemas. Por exemplo, a conversão de uma moeda em"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFCG05",
+      "page": 295,
+      "cache_item_id": "ca:mg-crmg-em:016febf6ba0b69fd9521",
+      "finalized_id_if_retained": "ca:mg-crmg-em:7bb24b85856d70b7a592",
+      "evidence_locator": "table:0/row:21/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 97,
+      "physical_expected_characters": 205,
+      "extracted_sha256": "7c448e321fcf84f637f64158ee2a214bbd3b02a3c5d8137d7218fd3ef897573a",
+      "physical_expected_sha256": "752da7de8fc3056b04acd2ea04ffe67381443d4495d1a90811f8d0cb88c84fb4",
+      "extracted_head": "Questionar, modificar e adaptar ideias existentes e criar propostas, obras ou soluções criativas,",
+      "extracted_tail": "Questionar, modificar e adaptar ideias existentes e criar propostas, obras ou soluções criativas,",
+      "expected_tail": "Questionar, modificar e adaptar ideias existentes e criar propostas, obras ou soluções criativas, originais ou inovadoras, avaliando e assumindo riscos para lidar com as incertezas e colocá-las em prática.",
+      "extra_normalized_prefix": " originais ou inovadoras, avaliando e assumindo riscos para lidar com as incertezas e coloca-las em pratica.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          261.61865234375,
+          180.40902709960938,
+          271.05029296875
+        ],
+        "body_bbox": [
+          134.78,
+          261.61865234375,
+          510.1,
+          290.898681640625
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 290.898681640625,
+        "physical_bottom_rule_y": 290.898681640625,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "refutar as ideias iniciais, concluir e generalizar, argumentar utilizando os conceitos matemáticos, comunicar de diferentes maneiras (algébrica, geométrica, fluxogramas etc.). Tomemos, como exemplo, o uso das equações como modelos para representar situações problemas. Por exemplo, a conversão de uma moeda em"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFCG06",
+      "page": 295,
+      "cache_item_id": "ca:mg-crmg-em:de33e9b3acb24e2e3dcd",
+      "finalized_id_if_retained": "ca:mg-crmg-em:27800ffb0bbf9a1a76db",
+      "evidence_locator": "table:0/row:27/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 93,
+      "physical_expected_characters": 212,
+      "extracted_sha256": "dd3ad949e5de730deea843aed889ea44e15fd3b5b45a8d38d0d85774ada0fdb0",
+      "physical_expected_sha256": "64be897b07a00521a23a6e5db38ebd3092cc528dd559497b509b58d00a2881d7",
+      "extracted_head": "Difundir novas ideias, propostas, obras ou soluções por meio de diferentes linguagens, mídias",
+      "extracted_tail": "Difundir novas ideias, propostas, obras ou soluções por meio de diferentes linguagens, mídias",
+      "expected_tail": "Difundir novas ideias, propostas, obras ou soluções por meio de diferentes linguagens, mídias e plataformas, analógicas e digitais, com confiança e coragem, assegurando que alcancem os interlocutores pretendidos.",
+      "extra_normalized_prefix": " e plataformas, analogicas e digitais, com confianca e coragem, assegurando que alcancem os interlocutores pretendidos.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          290.898681640625,
+          180.40902709960938,
+          300.330322265625
+        ],
+        "body_bbox": [
+          134.78,
+          290.898681640625,
+          510.1,
+          320.6299743652344
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 324.0186767578125,
+        "physical_bottom_rule_y": 320.6299743652344,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "refutar as ideias iniciais, concluir e generalizar, argumentar utilizando os conceitos matemáticos, comunicar de diferentes maneiras (algébrica, geométrica, fluxogramas etc.). Tomemos, como exemplo, o uso das equações como modelos para representar situações problemas. Por exemplo, a conversão de uma moeda em"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFMAT04",
+      "page": 295,
+      "cache_item_id": "ca:mg-crmg-em:d5dbeba8a9714751b1dd",
+      "finalized_id_if_retained": "ca:mg-crmg-em:a7548996d627e2b484a6",
+      "evidence_locator": "table:0/row:33/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 95,
+      "physical_expected_characters": 205,
+      "extracted_sha256": "02a97e478ec81144a1e146392a88e3a0447bc876eebfb0c281bc4175506330b2",
+      "physical_expected_sha256": "eedefb3cf1921e10b45b6fa4b188213bffeed2dfc6514735f6646a6afde14d87",
+      "extracted_head": "Reconhecer produtos e/ ou processos criativos por meio de fruição, vivências e reflexão crítica",
+      "extracted_tail": "Reconhecer produtos e/ ou processos criativos por meio de fruição, vivências e reflexão crítica",
+      "expected_tail": "Reconhecer produtos e/ ou processos criativos por meio de fruição, vivências e reflexão crítica na produção do conhecimento matemático e sua aplicação no desenvolvimento de processos tecnológicos diversos.",
+      "extra_normalized_prefix": " na producao do conhecimento matematico e sua aplicacao no desenvolvimento de processos tecnologicos diversos.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          324.0186767578125,
+          187.49765014648438,
+          333.4503173828125
+        ],
+        "body_bbox": [
+          134.78,
+          324.0186767578125,
+          510.1,
+          363.138671875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 363.138671875,
+        "physical_bottom_rule_y": 363.138671875,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "refutar as ideias iniciais, concluir e generalizar, argumentar utilizando os conceitos matemáticos, comunicar de diferentes maneiras (algébrica, geométrica, fluxogramas etc.). Tomemos, como exemplo, o uso das equações como modelos para representar situações problemas. Por exemplo, a conversão de uma moeda em"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFMAT05",
+      "page": 295,
+      "cache_item_id": "ca:mg-crmg-em:344ee2ba09de8bdf2ffe",
+      "finalized_id_if_retained": "ca:mg-crmg-em:0919f3f47210e65abebd",
+      "evidence_locator": "table:0/row:37/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 89,
+      "physical_expected_characters": 359,
+      "extracted_sha256": "0ad2e52dd177b7713495eb10e9379933dc8481e0c014ec5d3648afc52e15822a",
+      "physical_expected_sha256": "e203384241947248baa97fcc03139463dbf30de85977df9aaa8627ff00190460",
+      "extracted_head": "Selecionar e mobilizar intencionalmente recursos criativos relacionados à Matemática para",
+      "extracted_tail": "Selecionar e mobilizar intencionalmente recursos criativos relacionados à Matemática para",
+      "expected_tail": "relacionados à Matemática para resolver problemas de natureza diversa, incluindo aqueles que permitam a produção de novos conhecimentos matemáticos, comunicando com precisão suas ações e reflexões relacionadas a constatações, interpretações e argumentos, bem como adequando-os às situações originais.",
+      "extra_normalized_prefix": " resolver problemas de natureza diversa, incluindo aqueles que permitam a producao de novos conhecimentos matematicos, comunicando com precisao suas acoes e reflexoes relacionadas a constatacoes, interpretacoes e argumen",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          363.138671875,
+          187.49765014648438,
+          372.5703125
+        ],
+        "body_bbox": [
+          134.78,
+          363.138671875,
+          510.1,
+          411.9786682128906
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 411.9786682128906,
+        "physical_bottom_rule_y": 411.9786682128906,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "refutar as ideias iniciais, concluir e generalizar, argumentar utilizando os conceitos matemáticos, comunicar de diferentes maneiras (algébrica, geométrica, fluxogramas etc.). Tomemos, como exemplo, o uso das equações como modelos para representar situações problemas. Por exemplo, a conversão de uma moeda em"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFMAT06",
+      "page": 295,
+      "cache_item_id": "ca:mg-crmg-em:c224bfc403385efa1623",
+      "finalized_id_if_retained": "ca:mg-crmg-em:052ef319574e12551972",
+      "evidence_locator": "table:0/row:42/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 88,
+      "physical_expected_characters": 308,
+      "extracted_sha256": "25542f36dabbdcdcb67a6c45085294210db700303c57c31a23a730118c77fc41",
+      "physical_expected_sha256": "9242a44174511796236f7d307e66c2465acb3e3225bca49b871ef05d3428f529",
+      "extracted_head": "Propor e testar soluções éticas, estéticas, criativas e inovadoras para problemas reais,",
+      "extracted_tail": "Propor e testar soluções éticas, estéticas, criativas e inovadoras para problemas reais,",
+      "expected_tail": " testar soluções éticas, estéticas, criativas e inovadoras para problemas reais, considerando a aplicação dos conhecimentos matemáticos associados ao domínio de operações e relações matemáticas simbólicas e formais, de modo a desenvolver novas abordagens e estratégias para enfrentar novas situações.",
+      "extra_normalized_prefix": " considerando a aplicacao dos conhecimentos matematicos associados ao dominio de operacoes e relacoes matematicas simbolicas e formais, de modo a desenvolver novas abordagens e estrategias para enfrentar novas situacoes.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          411.9786682128906,
+          187.49765014648438,
+          421.4103088378906
+        ],
+        "body_bbox": [
+          134.78,
+          411.9786682128906,
+          510.1,
+          451.4499816894531
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 673.388671875,
+        "physical_bottom_rule_y": 451.4499816894531,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "refutar as ideias iniciais, concluir e generalizar, argumentar utilizando os conceitos matemáticos, comunicar de diferentes maneiras (algébrica, geométrica, fluxogramas etc.). Tomemos, como exemplo, o uso das equações como modelos para representar situações problemas. Por exemplo, a conversão de uma moeda em"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFCG07",
+      "page": 295,
+      "cache_item_id": "ca:mg-crmg-em:b6d03fec1cb886b53892",
+      "finalized_id_if_retained": "ca:mg-crmg-em:24ff0aa0c6f78695f71d",
+      "evidence_locator": "table:0/row:69/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 88,
+      "physical_expected_characters": 239,
+      "extracted_sha256": "00a2b4ea65e2d4e6484973a7a6411c3c40cbcfbe44fb9df6f69131b3db53c524",
+      "physical_expected_sha256": "39570e02e1bc86a88cbf0457a56c23a1456e6b3acf6e09f1bff409130aa794ff",
+      "extracted_head": "Reconhecer e analisar questões sociais, culturais e ambientais diversas, identificando e",
+      "extracted_tail": "Reconhecer e analisar questões sociais, culturais e ambientais diversas, identificando e",
+      "expected_tail": "Reconhecer e analisar questões sociais, culturais e ambientais diversas, identificando e incorporando valores importantes para si e para o coletivo que assegurem a tomada de decisões conscientes, consequentes, colaborativas e responsáveis.",
+      "extra_normalized_prefix": " incorporando valores importantes para si e para o coletivo que assegurem a tomada de decisoes conscientes, consequentes, colaborativas e responsaveis.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          673.388671875,
+          180.40902709960938,
+          682.8203125
+        ],
+        "body_bbox": [
+          134.78,
+          673.388671875,
+          510.1,
+          712.5086669921875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 712.5086669921875,
+        "physical_bottom_rule_y": 712.5086669921875,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "refutar as ideias iniciais, concluir e generalizar, argumentar utilizando os conceitos matemáticos, comunicar de diferentes maneiras (algébrica, geométrica, fluxogramas etc.). Tomemos, como exemplo, o uso das equações como modelos para representar situações problemas. Por exemplo, a conversão de uma moeda em"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFCG08",
+      "page": 295,
+      "cache_item_id": "ca:mg-crmg-em:8c543deea46ec02e1cc1",
+      "finalized_id_if_retained": "ca:mg-crmg-em:bb0fd3b7a363c4c94f2e",
+      "evidence_locator": "table:0/row:73/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 91,
+      "physical_expected_characters": 253,
+      "extracted_sha256": "7b9e67c4f3ce8e6a8b24c32415d16404b22e56701391270adab5b7c5bf44c6cf",
+      "physical_expected_sha256": "0cfae1a8caba2c8fdb5ccebc56dd97ab6492bde99524773f8e7fb53877a2e196",
+      "extracted_head": "Compreender e considerar a situação, a opinião e o sentimento do outro, agindo com empatia,",
+      "extracted_tail": "Compreender e considerar a situação, a opinião e o sentimento do outro, agindo com empatia,",
+      "expected_tail": "Compreender e considerar a situação, a opinião e o sentimento do outro, agindo com empatia, flexibilidade e resiliência para promover o diálogo, a colaboração, a mediação e resolução de conflitos, o combate ao preconceito e a valorização da diversidade.",
+      "extra_normalized_prefix": " flexibilidade e resiliencia para promover o dialogo, a colaboracao, a mediacao e resolucao de conflitos, o combate ao preconceito e a valorizacao da diversidade.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          712.5086669921875,
+          180.40902709960938,
+          721.9403076171875
+        ],
+        "body_bbox": [
+          134.78,
+          712.5086669921875,
+          510.1,
+          742.2359924316406
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 742.2359924316406,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "refutar as ideias iniciais, concluir e generalizar, argumentar utilizando os conceitos matemáticos, comunicar de diferentes maneiras (algébrica, geométrica, fluxogramas etc.). Tomemos, como exemplo, o uso das equações como modelos para representar situações problemas. Por exemplo, a conversão de uma moeda em"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFCG09",
+      "page": 296,
+      "cache_item_id": "ca:mg-crmg-em:c601a92caaf76ff667cf",
+      "finalized_id_if_retained": "ca:mg-crmg-em:9a4567054c5d7a912db2",
+      "evidence_locator": "table:0/row:1/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 88,
+      "physical_expected_characters": 250,
+      "extracted_sha256": "7e47ede398909b96dde1e7f3289a8b763bf8a1ac2b204b0bdb0dffd4d3bfd6f1",
+      "physical_expected_sha256": "21cb0c5d93aeb06fbf320c843f1e18b59babb24d8f58862d61933e7b9b1bcc8d",
+      "extracted_head": "Participar ativamente da proposição, implementação e avaliação de solução para problemas",
+      "extracted_tail": "Participar ativamente da proposição, implementação e avaliação de solução para problemas",
+      "expected_tail": "Participar ativamente da proposição, implementação e avaliação de solução para problemas socioculturais e/ou ambientais em nível local, regional, nacional e/ou global, corresponsabilizando-se pela realização de ações e projetos voltados ao bem comum.",
+      "extra_normalized_prefix": " socioculturais e/ou ambientais em nivel local, regional, nacional e/ou global, corresponsabilizando-se pela realizacao de acoes e projetos voltados ao bem comum.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          83.02867126464844,
+          180.40902709960938,
+          92.46031188964844
+        ],
+        "body_bbox": [
+          134.78,
+          83.02867126464844,
+          510.1,
+          112.75997924804688
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 115.78868103027344,
+        "physical_bottom_rule_y": 112.75997924804688,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "as Gerais da BNCC ",
+        "1": " (EMIFCG09) Participar ativamente da proposição, implementação e avaliação de solução para problemas socioculturais e/ou ambientais em nível local, regional, nacional e/ou global, corresponsabilizando-se pela"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFMAT07",
+      "page": 296,
+      "cache_item_id": "ca:mg-crmg-em:4ad824e1af561222faa3",
+      "finalized_id_if_retained": "ca:mg-crmg-em:ec99f2d069193e440053",
+      "evidence_locator": "table:0/row:4/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 85,
+      "physical_expected_characters": 172,
+      "extracted_sha256": "89cb9b8bd1c807c52901442a3b1f18cbb1999842eeb9b758d64e351314e23e87",
+      "physical_expected_sha256": "78d143612609a7f6acb1029bd8ed5b3215d64d0598d9fd658142c9f1bc505283",
+      "extracted_head": "Identificar e explicar questões socioculturais e ambientais aplicando conhecimentos e",
+      "extracted_tail": "Identificar e explicar questões socioculturais e ambientais aplicando conhecimentos e",
+      "expected_tail": "Identificar e explicar questões socioculturais e ambientais aplicando conhecimentos e habilidades matemáticas para avaliar e tomar decisões em relação ao que foi observado.",
+      "extra_normalized_prefix": " habilidades matematicas para avaliar e tomar decisoes em relacao ao que foi observado.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          115.78868103027344,
+          187.49765014648438,
+          125.22032165527344
+        ],
+        "body_bbox": [
+          134.78,
+          115.78868103027344,
+          510.1,
+          145.1886444091797
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 145.1886444091797,
+        "physical_bottom_rule_y": 145.1886444091797,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "as Gerais da BNCC ",
+        "1": " (EMIFCG09) Participar ativamente da proposição, implementação e avaliação de solução para problemas socioculturais e/ou ambientais em nível local, regional, nacional e/ou global, corresponsabilizando-se pela"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFMAT08",
+      "page": 296,
+      "cache_item_id": "ca:mg-crmg-em:1eb3a5fb96cf9c6262fa",
+      "finalized_id_if_retained": "ca:mg-crmg-em:f490ca69e212614aa028",
+      "evidence_locator": "table:0/row:7/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 88,
+      "physical_expected_characters": 202,
+      "extracted_sha256": "6db035f97e8a5fa3d985eb8d46acb201e0ce0132fbec853f5131cd1a79ed0c4d",
+      "physical_expected_sha256": "7674e27036e95fe9ef074b55b207ff053341f4d17a4e11456587c0d5571a0bc6",
+      "extracted_head": "Selecionar e mobilizar intencionalmente conhecimentos e recursos matemáticos para propor",
+      "extracted_tail": "Selecionar e mobilizar intencionalmente conhecimentos e recursos matemáticos para propor",
+      "expected_tail": "Selecionar e mobilizar intencionalmente conhecimentos e recursos matemáticos para propor ações individuais e/ou coletivas de mediação e intervenção sobre problemas socioculturais e problemas ambientais.",
+      "extra_normalized_prefix": " acoes individuais e/ou coletivas de mediacao e intervencao sobre problemas socioculturais e problemas ambientais.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          145.1886444091797,
+          187.49765014648438,
+          154.6202850341797
+        ],
+        "body_bbox": [
+          134.78,
+          145.1886444091797,
+          510.1,
+          184.3086395263672
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 184.3086395263672,
+        "physical_bottom_rule_y": 184.3086395263672,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "as Gerais da BNCC ",
+        "1": " (EMIFCG09) Participar ativamente da proposição, implementação e avaliação de solução para problemas socioculturais e/ou ambientais em nível local, regional, nacional e/ou global, corresponsabilizando-se pela"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFMAT09",
+      "page": 296,
+      "cache_item_id": "ca:mg-crmg-em:485281453a202c927364",
+      "finalized_id_if_retained": "ca:mg-crmg-em:3e4c480f26d5ba8af309",
+      "evidence_locator": "table:0/row:11/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 89,
+      "physical_expected_characters": 154,
+      "extracted_sha256": "d8d69034ecfd64100ff8e5558cdca4b9b9e7543ce45537a8cf03742c33a196c2",
+      "physical_expected_sha256": "92c62432cb31bade6622f73e5bbd6ef664b8ebeeca30a6ce8e37afd64240dfd4",
+      "extracted_head": "Propor e testar estratégias de mediação e intervenção para resolver problemas de natureza",
+      "extracted_tail": "Propor e testar estratégias de mediação e intervenção para resolver problemas de natureza",
+      "expected_tail": "Propor e testar estratégias de mediação e intervenção para resolver problemas de natureza sociocultural e de natureza ambiental relacionados à Matemática.",
+      "extra_normalized_prefix": " sociocultural e de natureza ambiental relacionados a matematica.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          184.3086395263672,
+          187.49765014648438,
+          193.7402801513672
+        ],
+        "body_bbox": [
+          134.78,
+          184.3086395263672,
+          510.1,
+          204.19998168945312
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 444.0386657714844,
+        "physical_bottom_rule_y": 204.19998168945312,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "as Gerais da BNCC ",
+        "1": " (EMIFCG09) Participar ativamente da proposição, implementação e avaliação de solução para problemas socioculturais e/ou ambientais em nível local, regional, nacional e/ou global, corresponsabilizando-se pela"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFCG10",
+      "page": 296,
+      "cache_item_id": "ca:mg-crmg-em:91583fe99bc1ed06620e",
+      "finalized_id_if_retained": "ca:mg-crmg-em:ed76d8f218315c29d1fc",
+      "evidence_locator": "table:0/row:35/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 94,
+      "physical_expected_characters": 257,
+      "extracted_sha256": "5833d91782d201cad614d0784c5c8939b80bfbd8f61f32db71ad29782d54b38f",
+      "physical_expected_sha256": "ceb9539d84782e7a10bfdbff00ae923424c3c4245b6340b4d230fd759bcf0a99",
+      "extracted_head": "Reconhecer e utilizar qualidades e fragilidades pessoais com confiança para superar desafios e",
+      "extracted_tail": "Reconhecer e utilizar qualidades e fragilidades pessoais com confiança para superar desafios e",
+      "expected_tail": "Reconhecer e utilizar qualidades e fragilidades pessoais com confiança para superar desafios e alcançar objetivos pessoais e profissionais, agindo de forma proativa e empreendedora e perseverando em situações de estresse, frustração, fracasso e adversidade.",
+      "extra_normalized_prefix": " alcancar objetivos pessoais e profissionais, agindo de forma proativa e empreendedora e perseverando em situacoes de estresse, frustracao, fracasso e adversidade.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          444.0386657714844,
+          180.40902709960938,
+          453.4703063964844
+        ],
+        "body_bbox": [
+          134.78,
+          444.0386657714844,
+          510.1,
+          497.19866943359375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 497.19866943359375,
+        "physical_bottom_rule_y": 497.19866943359375,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "as Gerais da BNCC ",
+        "1": " (EMIFCG09) Participar ativamente da proposição, implementação e avaliação de solução para problemas socioculturais e/ou ambientais em nível local, regional, nacional e/ou global, corresponsabilizando-se pela"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFCG11",
+      "page": 296,
+      "cache_item_id": "ca:mg-crmg-em:e845943e7f56697c5886",
+      "finalized_id_if_retained": "ca:mg-crmg-em:7e197b2cbf243eadfa14",
+      "evidence_locator": "table:0/row:42/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 87,
+      "physical_expected_characters": 236,
+      "extracted_sha256": "27382529c9a67db3d0402605d19cb4e1fac1773a35d3bb7731fd85f1e63f836a",
+      "physical_expected_sha256": "53a38674030585e38a2c88272f7d73ad9e2fb36d422e81ca8eb6b030cb93ca96",
+      "extracted_head": "Utilizar estratégias de planejamento, organização e empreendedorismo para estabelecer e",
+      "extracted_tail": "Utilizar estratégias de planejamento, organização e empreendedorismo para estabelecer e",
+      "expected_tail": "Utilizar estratégias de planejamento, organização e empreendedorismo para estabelecer e adaptar metas, identificar caminhos, mobilizar apoios e recursos, para realizar projetos pessoais e produtivos com foco, persistência e efetividade.",
+      "extra_normalized_prefix": " adaptar metas, identificar caminhos, mobilizar apoios e recursos, para realizar projetos pessoais e produtivos com foco, persistencia e efetividade.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          497.19866943359375,
+          180.40902709960938,
+          506.63031005859375
+        ],
+        "body_bbox": [
+          134.78,
+          497.19866943359375,
+          510.1,
+          550.2386474609375
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 550.2386474609375,
+        "physical_bottom_rule_y": 550.2386474609375,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "as Gerais da BNCC ",
+        "1": " (EMIFCG09) Participar ativamente da proposição, implementação e avaliação de solução para problemas socioculturais e/ou ambientais em nível local, regional, nacional e/ou global, corresponsabilizando-se pela"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFCG12",
+      "page": 296,
+      "cache_item_id": "ca:mg-crmg-em:406d8d795b685b35b144",
+      "finalized_id_if_retained": "ca:mg-crmg-em:29295546b3310b1d7ff8",
+      "evidence_locator": "table:0/row:49/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 91,
+      "physical_expected_characters": 281,
+      "extracted_sha256": "ca785287980a9b53d6cd6689e8fac355f73fc065ffe16e5c65ff0452c8cab29a",
+      "physical_expected_sha256": "9bbae862b74d8a08f29ec3246777c586e9c5e1356fcf98e21628958c72bef4f6",
+      "extracted_head": "Refletir continuamente sobre seu próprio desenvolvimento e sobre seus objetivos presentes e",
+      "extracted_tail": "Refletir continuamente sobre seu próprio desenvolvimento e sobre seus objetivos presentes e",
+      "expected_tail": "Refletir continuamente sobre seu próprio desenvolvimento e sobre seus objetivos presentes e futuros, identificando aspirações e oportunidades, inclusive relacionadas ao mundo do trabalho, que orientem escolhas, esforços e ações em relação à sua vida pessoal, profissional e cidadã.",
+      "extra_normalized_prefix": " futuros, identificando aspiracoes e oportunidades, inclusive relacionadas ao mundo do trabalho, que orientem escolhas, esforcos e acoes em relacao a sua vida pessoal, profissional e cidada.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          550.2386474609375,
+          180.40902709960938,
+          559.6702880859375
+        ],
+        "body_bbox": [
+          134.78,
+          550.2386474609375,
+          510.1,
+          579.969970703125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 583.11865234375,
+        "physical_bottom_rule_y": 579.969970703125,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "as Gerais da BNCC ",
+        "1": " (EMIFCG09) Participar ativamente da proposição, implementação e avaliação de solução para problemas socioculturais e/ou ambientais em nível local, regional, nacional e/ou global, corresponsabilizando-se pela"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFMAT10",
+      "page": 296,
+      "cache_item_id": "ca:mg-crmg-em:34dd480e3ef549888903",
+      "finalized_id_if_retained": "ca:mg-crmg-em:cf10868e030e400b38f8",
+      "evidence_locator": "table:0/row:52/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "definition_candidate",
+      "role_reason": "Primary page contains a learning header above this ruled column; final confirmation remains documentary.",
+      "extracted_characters": 88,
+      "physical_expected_characters": 232,
+      "extracted_sha256": "d4bd714fd5d596063517b59cf3a6fb6c48222ff09dfd0f6355af439d8ed97527",
+      "physical_expected_sha256": "0e93952501a914150d25469de8aa740c0ac7d938e219357a1d4a86f331b549ab",
+      "extracted_head": "Avaliar como oportunidades, conhecimentos e recursos relacionados à Matemática podem ser",
+      "extracted_tail": "Avaliar como oportunidades, conhecimentos e recursos relacionados à Matemática podem ser",
+      "expected_tail": "Avaliar como oportunidades, conhecimentos e recursos relacionados à Matemática podem ser utilizados na concretização de projetos pessoais ou produtivos, considerando as diversas tecnologias disponíveis e os impactos socioambientais.",
+      "extra_normalized_prefix": " utilizados na concretizacao de projetos pessoais ou produtivos, considerando as diversas tecnologias disponiveis e os impactos socioambientais.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          583.11865234375,
+          187.49765014648438,
+          592.55029296875
+        ],
+        "body_bbox": [
+          134.78,
+          583.11865234375,
+          510.1,
+          636.1886596679688
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 636.1886596679688,
+        "physical_bottom_rule_y": 636.1886596679688,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "as Gerais da BNCC ",
+        "1": " (EMIFCG09) Participar ativamente da proposição, implementação e avaliação de solução para problemas socioculturais e/ou ambientais em nível local, regional, nacional e/ou global, corresponsabilizando-se pela"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFMAT11",
+      "page": 296,
+      "cache_item_id": "ca:mg-crmg-em:64d3c5dd12645afd5bc8",
+      "finalized_id_if_retained": "ca:mg-crmg-em:5ad1c7c4304a1cac09b1",
+      "evidence_locator": "table:0/row:59/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 83,
+      "physical_expected_characters": 146,
+      "extracted_sha256": "b3b7ab9122845a9481905380b5cf7e1c6a14f1baeae0cd870f8837e6816006db",
+      "physical_expected_sha256": "134e2e98f69bb6fdc642285feb2924a3817d157ceb222b36036c626fc53f7c90",
+      "extracted_head": "Selecionar e mobilizar intencionalmente conhecimentos e recursos da Matemática para",
+      "extracted_tail": "Selecionar e mobilizar intencionalmente conhecimentos e recursos da Matemática para",
+      "expected_tail": "Selecionar e mobilizar intencionalmente conhecimentos e recursos da Matemática para desenvolver um projeto pessoal ou um empreendimento produtivo.",
+      "extra_normalized_prefix": " desenvolver um projeto pessoal ou um empreendimento produtivo.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          636.1886596679688,
+          187.49765014648438,
+          645.6203002929688
+        ],
+        "body_bbox": [
+          134.78,
+          636.1886596679688,
+          510.1,
+          679.5086669921875
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 679.5086669921875,
+        "physical_bottom_rule_y": 679.5086669921875,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "as Gerais da BNCC ",
+        "1": " (EMIFCG09) Participar ativamente da proposição, implementação e avaliação de solução para problemas socioculturais e/ou ambientais em nível local, regional, nacional e/ou global, corresponsabilizando-se pela"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFMAT12",
+      "page": 296,
+      "cache_item_id": "ca:mg-crmg-em:3dbfb4498204b4373f29",
+      "finalized_id_if_retained": "ca:mg-crmg-em:68dc1232501abbef2a79",
+      "evidence_locator": "table:0/row:65/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 81,
+      "physical_expected_characters": 163,
+      "extracted_sha256": "2ca4ed78af13d27407a26a18090bc42a008a560dbaf92ee4e6e7f6da2245ec0f",
+      "physical_expected_sha256": "d457d54c5688f4e59f181652a17229adc2d72bbc6291ffc93df6e187dd02552a",
+      "extracted_head": "Desenvolver projetos pessoais ou produtivos, utilizando processos e conhecimentos",
+      "extracted_tail": "Desenvolver projetos pessoais ou produtivos, utilizando processos e conhecimentos",
+      "expected_tail": "Desenvolver projetos pessoais ou produtivos, utilizando processos e conhecimentos matemáticos para formular propostas concretas, articuladas com o projeto de vida.",
+      "extra_normalized_prefix": " matematicos para formular propostas concretas, articuladas com o projeto de vida.",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          679.5086669921875,
+          187.49765014648438,
+          688.9403076171875
+        ],
+        "body_bbox": [
+          134.78,
+          679.5086669921875,
+          510.1,
+          699.5199890136719
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 699.5199890136719,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "as Gerais da BNCC ",
+        "1": " (EMIFCG09) Participar ativamente da proposição, implementação e avaliação de solução para problemas socioculturais e/ou ambientais em nível local, regional, nacional e/ou global, corresponsabilizando-se pela"
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFLGG03",
+      "page": 299,
+      "cache_item_id": "ca:mg-crmg-em:6c08a8c780c4f25b58c5",
+      "finalized_id_if_retained": "ca:mg-crmg-em:1341443e5d78c54db6e3",
+      "evidence_locator": "table:0/row:25/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 94,
+      "physical_expected_characters": 717,
+      "extracted_sha256": "c84b5aa783b600d58c9700bc9d37a8502fcd7dbd070253a369f76b0846c58702",
+      "physical_expected_sha256": "220df14cb732ec373f747a88ac2b61211fcd850de60d1f8b2cb24b4005407a38",
+      "extracted_head": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de",
+      "extracted_tail": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de",
+      "expected_tail": "státicas e em movimento; música; linguagens corporais e do movimento, entre outras), identificando os diversos pontos de vista e posicionando e mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+      "extra_normalized_prefix": " campo, experimental etc.) em fontes confiaveis, informacoes sobre portugues brasileiro, lingua(s) e/ ou linguagem(ns) especificas, visando fundamentar reflexoes e hipoteses sobre a organizacao, o funcionamento e/ou os e",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          421.0986633300781,
+          186.0492706298828,
+          430.5303039550781
+        ],
+        "body_bbox": [
+          134.78,
+          421.0986633300781,
+          510.1,
+          489.969970703125
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": null,
+        "physical_bottom_rule_y": 489.969970703125,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": " INVESTIGAÇÃO CIENTÍFICA: SAÚDE INTEGRAL ",
+        "1": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFLGG03",
+      "page": 300,
+      "cache_item_id": "ca:mg-crmg-em:746524aba23cb7d864f8",
+      "finalized_id_if_retained": "ca:mg-crmg-em:c0a665bfbc6388a2de22",
+      "evidence_locator": "table:0/row:41/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 94,
+      "physical_expected_characters": 717,
+      "extracted_sha256": "c84b5aa783b600d58c9700bc9d37a8502fcd7dbd070253a369f76b0846c58702",
+      "physical_expected_sha256": "220df14cb732ec373f747a88ac2b61211fcd850de60d1f8b2cb24b4005407a38",
+      "extracted_head": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de",
+      "extracted_tail": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de",
+      "expected_tail": "státicas e em movimento; música; linguagens corporais e do movimento, entre outras), identificando os diversos pontos de vista e posicionando e mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+      "extra_normalized_prefix": " campo, experimental etc.) em fontes confiaveis, informacoes sobre portugues brasileiro, lingua(s) e/ ou linguagem(ns) especificas, visando fundamentar reflexoes e hipoteses sobre a organizacao, o funcionamento e/ou os e",
+      "independent_boundary": {
+        "anchor": [
+          139.8112335205078,
+          387.2586669921875,
+          186.0492706298828,
+          396.6903076171875
+        ],
+        "body_bbox": [
+          134.78,
+          387.2586669921875,
+          510.1,
+          456.1299743652344
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 587.6787109375,
+        "physical_bottom_rule_y": 456.1299743652344,
+        "column": [
+          134.78,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": "  ",
+        "1": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFCHSA03",
+      "page": 318,
+      "cache_item_id": "ca:mg-crmg-em:f7a23fca6eda1a7536e1",
+      "finalized_id_if_retained": "ca:mg-crmg-em:f97bbbdb6ba4bc1fec7e",
+      "evidence_locator": "table:0/row:12/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 77,
+      "physical_expected_characters": 522,
+      "extracted_sha256": "4c64db16995357f13d09e386765358d7acecb654dbe10b673c00ac450767c1e2",
+      "physical_expected_sha256": "1c41824c73e859b86d4745f7acf9c10d2a67c9dddf04b7311b82a17e0c8bc889",
+      "extracted_head": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica,",
+      "extracted_tail": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica,",
+      "expected_tail": "ilosófica, política e/ou cultural, em âmbito local, regional, nacional e/ou global, identificando os diversos pontos de vista e posicionando-se mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+      "extra_normalized_prefix": " exploratoria, de campo, experimental etc.) em fontes confiaveis, informacoes sobre temas e processos de natureza historica, social, economica, filosofica, politica e/ou cultural, em ambito local, regional, nacional e/ou",
+      "independent_boundary": {
+        "anchor": [
+          159.49122619628906,
+          190.1886444091797,
+          210.99462890625,
+          199.6202850341797
+        ],
+        "body_bbox": [
+          154.46,
+          190.1886444091797,
+          510.1,
+          249.19998168945312
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 271.57867431640625,
+        "physical_bottom_rule_y": 249.19998168945312,
+        "column": [
+          154.46,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": " INVESTIGAÇÃO CIENTÍFICA ",
+        "1": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "code": "EMIFCHSA10",
+      "page": 319,
+      "cache_item_id": "ca:mg-crmg-em:51a43afba0aba6768a4e",
+      "finalized_id_if_retained": "ca:mg-crmg-em:661e2da22255401b521d",
+      "evidence_locator": "table:0/row:3/cell:1",
+      "classification": "candidate_requires_documentary_review",
+      "role": "role_unresolved",
+      "role_reason": "Learning-looking code is insufficient to establish a definition; inspect primary organiser.",
+      "extracted_characters": 77,
+      "physical_expected_characters": 354,
+      "extracted_sha256": "3032730d50540d8e21311e6ccb17924f13d91b0ab49c8420a67fefab8f370820",
+      "physical_expected_sha256": "37d681b48b8fcba446199a2c211685c4e3e1e330e9d7f0fe129da20cb4e25bef",
+      "extracted_head": "Avaliar como oportunidades, conhecimentos e recursos relacionados às Ciências",
+      "extracted_tail": "Avaliar como oportunidades, conhecimentos e recursos relacionados às Ciências",
+      "expected_tail": "elacionados às Ciências Humanas e Sociais Aplicadas podem ser utilizadas na concretização de projetos pessoais ou produtivos, em âmbito local, regional, nacional e/ou global, considerando as diversas tecnologias disponíveis, os impactos socioambientais, os direitos humanos e a promoção da cidadania.",
+      "extra_normalized_prefix": " humanas e sociais aplicadas podem ser utilizadas na concretizacao de projetos pessoais ou produtivos, em ambito local, regional, nacional e/ou global, considerando as diversas tecnologias disponiveis, os impactos socioa",
+      "independent_boundary": {
+        "anchor": [
+          159.49122619628906,
+          93.82865905761719,
+          210.99462890625,
+          103.26029968261719
+        ],
+        "body_bbox": [
+          154.46,
+          93.82865905761719,
+          510.1,
+          146.98863220214844
+        ],
+        "mode": "same_code_column",
+        "next_same_column_code_y": 146.98863220214844,
+        "physical_bottom_rule_y": 146.98863220214844,
+        "column": [
+          154.46,
+          510.1
+        ]
+      },
+      "cached_header_hint": {
+        "0": " EMPREENDEDORISMO ",
+        "1": "  "
+      },
+      "method": "Primary vector rules plus actual native code anchors in the same column; words ordered by visual baselines. Extractor bbox used only to disambiguate repeated code occurrence, never as the body boundary."
+    }
+  ],
+  "reader_failures": [],
+  "limits": [
+    "Ruled native columns only; unavailable geometry/anchors remain unverified, not absent.",
+    "Strict physical prefix candidates need role/documentary review. This is not SourceWhole reconciliation."
+  ],
+  "cache_sha256": "75ee0bf20d34ad3f49f76f79f295021099976c9a22245c742c740924d483f2c3",
+  "cache_meta": {
+    "source_id": "mg-crmg-em",
+    "sha256": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
+    "extraction_revision": "page-cell-v1.5.0",
+    "page_count": 496,
+    "document_page_count": 496,
+    "items": 823,
+    "pages": 496,
+    "quality": {
+      "documentary_page_sections_not_typed_as_learning": 485,
+      "meaning": "Execution, code transcription and primary-document reconciliation are separate; OCR execution completion is not glyph or pedagogical verification. An OCR code-like token does not certify an official printed code.",
+      "ocr_execution_pending": false,
+      "ocr_transcription_review_pending": false,
+      "unassigned_ocr_code_tokens": 0,
+      "unresolved_ocr_code_like_records": 0,
+      "unresolved_printed_code_records": 0
+    },
+    "parser_fingerprint": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+  },
+  "primary_page_count": 496,
+  "cache_unchanged_after_audit": true
+}

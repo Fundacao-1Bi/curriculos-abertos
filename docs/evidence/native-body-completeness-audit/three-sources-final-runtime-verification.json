@@ -1,0 +1,373 @@
+{
+  "result": "passed",
+  "actor_type": "automated",
+  "actor_id": "codex:api_mcp:body-runtime-verifier",
+  "implemented": [
+    "Additive composition with pinned original structured/context snapshots",
+    "Real production loader, finalizer, schema and literal-evidence checks",
+    "Original native/vector/strict-cell full-body character rederivation",
+    "Protected canonical IDs, code, locators, positions, hierarchy, unaffected records and automated revalidation provenance",
+    "Real source-driven negative/positive controls and explicit invalid-code supersession ledgers"
+  ],
+  "executed_commands": [
+    "var/venv-pipeline/bin/python docs/evidence/native-body-completeness-audit/verify-repairs.py --source mg-crmg-eief-atualizada",
+    "var/venv-pipeline/bin/python docs/evidence/native-body-completeness-audit/verify-repairs.py --source mg-crmg-em",
+    "var/venv-pipeline/bin/python docs/evidence/native-body-completeness-audit/verify-repairs.py --source rj-doc-eief-2019"
+  ],
+  "verified_totals": {
+    "sources": 3,
+    "full_primary_body_receipts": 2143,
+    "composed_adapter_records": 2755,
+    "final_schema_records": 6544,
+    "explicit_invalid_identifier_supersessions": 4,
+    "documentary_EI_age_enrichments": 99
+  },
+  "sources": [
+    {
+      "source_id": "mg-crmg-eief-atualizada",
+      "report_path": "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-runtime-verification.json",
+      "report_sha256": "c01b55905fecafbcf75e12237009b3cdd281cc2ea4f47e71d3e345a453316cbf",
+      "composed_path": "data/manifests/uncoded/mg-coded-body-composed-mg-crmg-eief-atualizada-v1-items.json",
+      "composed_sha256": "1ed931e9183b540f7baed54f9093a2082fa2aba5db5f7f781b6190b88b2be8ba",
+      "binding_proposal_path": "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-binding-proposal-runtime-verification.json",
+      "binding_proposal_sha256": "a4d9c0b1ba9fbc7d1e14882db23729f4c4e8c8ecb0aa0c6c876285f08c858fed",
+      "counts": {
+        "cache_items": 3067,
+        "baseline_items": 3180,
+        "body_repairs": 1826,
+        "composed_adapter_records": 2207,
+        "real_loader_records": 2207,
+        "real_finalizer_records": 3461,
+        "schema_passed": 3461,
+        "literal_adapter_evidence_passed": 2207,
+        "complete_character_receipts": 1826,
+        "valid_coded_id_context_preserved": 1810,
+        "valid_coded_full_context_exact": 1711,
+        "unaffected_records_preserved": 1367,
+        "unaffected_records_exact_including_review_time": 1254,
+        "automated_revalidation_event_timestamps": 113,
+        "explicit_invalid_supersessions": 3,
+        "new_canonical_records": 284,
+        "documentary_EI_age_context_enrichments": 99
+      },
+      "negative_controls": [
+        {
+          "case": "strict_prefix_with_matching_excerpt_cannot_replace_complete_body",
+          "blocked": true
+        },
+        {
+          "case": "duplicate_record_even_if_every_character_matches",
+          "blocked": true
+        },
+        {
+          "case": "same_length_single_character_change",
+          "blocked": true
+        },
+        {
+          "case": "omit_actual_same_column_cross_page_continuation",
+          "blocked": true
+        },
+        {
+          "case": "actual_MG_EI02ET08_p134_to_p135_complete",
+          "positive_passed": true,
+          "fragment_pages": [
+            134,
+            135
+          ],
+          "last_fragment_sha256": "716db7578437c1c5fd836eb7474e9d2ce7e922be8db4b3fdf151aa7ee4f9e5a3"
+        },
+        {
+          "case": "absorb_next_literal_source_P1_code_and_body",
+          "blocked": true,
+          "prior_code": "EF15AR01P1",
+          "next_literal_code": "EF15AR27MGP1",
+          "page": 320,
+          "native_code_anchor_bbox": [
+            265.8819885253906,
+            171.64996337890625,
+            329.1699523925781,
+            182.51296997070312
+          ]
+        },
+        {
+          "case": "same_caption_text_but_code_anchor_in_another_actual_column",
+          "blocked": true
+        },
+        {
+          "case": "different_numeric_age_interval_with_unchanged_header_excerpt",
+          "blocked": true
+        },
+        {
+          "case": "another_existing_age_group_node_as_parent",
+          "blocked": true
+        },
+        {
+          "case": "existing_valid_documentary_parent_preserved_exactly",
+          "positive_passed": true,
+          "control_type": "in_memory_existing_parent_invariant",
+          "existing_parent_id": "ca:mg-crmg-eief-atualizada:section:mg-ei-organizer:field:2ffc1840643029b3"
+        }
+      ],
+      "final_first_page_tail_census": {
+        "path": "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-first-page-tail-runtime-verification.json",
+        "sha256": "cc37d9d347889feb425cd31a03945f0977152929024a9a40015241a4c0aa9b11",
+        "counts": {
+          "records_considered": 1826,
+          "no_generic_strict_bounds_special_case": 12,
+          "eligible_cell_end_to_next_literal_code_intervals": 1813,
+          "empty_contiguous_cells": 1296,
+          "unproved_contiguous_vertical_scope": 524,
+          "body_already_closed_before_strict_cell_end": 1
+        },
+        "candidate_cells": 0,
+        "scope_unverified_is_not_absence": true
+      },
+      "technical_supersession_ledger": {
+        "path": "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-technical-supersessions.json",
+        "sha256": "bae4c560cc62d35c861d42533c0003f84ccde50705155d6884ed4e485ae1d559"
+      }
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "report_path": "docs/evidence/native-body-completeness-audit/mg-crmg-em-runtime-verification.json",
+      "report_sha256": "1845b8f3b4b9045de35825de14805a40db32f2ea879882512b6883f286ecb298",
+      "composed_path": "data/manifests/uncoded/mg-coded-body-composed-mg-crmg-em-v1-items.json",
+      "composed_sha256": "dc29bd01a862f0445820ee6710bcaf045457b96f98dd2a7c29afcaccf1db42e4",
+      "binding_proposal_path": "docs/evidence/native-body-completeness-audit/mg-crmg-em-binding-proposal-runtime-verification.json",
+      "binding_proposal_sha256": "41f6296ea8e18097058d8bc8f65d526455425d3d03444cb443871c2574d129dc",
+      "counts": {
+        "cache_items": 823,
+        "baseline_items": 918,
+        "body_repairs": 117,
+        "composed_adapter_records": 212,
+        "real_loader_records": 212,
+        "real_finalizer_records": 918,
+        "schema_passed": 918,
+        "literal_adapter_evidence_passed": 212,
+        "complete_character_receipts": 117,
+        "valid_coded_id_context_preserved": 117,
+        "valid_coded_full_context_exact": 117,
+        "unaffected_records_preserved": 801,
+        "unaffected_records_exact_including_review_time": 706,
+        "automated_revalidation_event_timestamps": 95,
+        "explicit_invalid_supersessions": 0,
+        "new_canonical_records": 0,
+        "documentary_EI_age_context_enrichments": 0
+      },
+      "negative_controls": [
+        {
+          "case": "strict_prefix_with_matching_excerpt_cannot_replace_complete_body",
+          "blocked": true
+        },
+        {
+          "case": "duplicate_record_even_if_every_character_matches",
+          "blocked": true
+        },
+        {
+          "case": "same_length_single_character_change",
+          "blocked": true
+        },
+        {
+          "case": "omit_actual_same_column_cross_page_continuation",
+          "blocked": true
+        },
+        {
+          "case": "absorb_new_explicit_cell_EMIFMAT03_p294_to_EMIFMAT04_p295",
+          "blocked": true
+        },
+        {
+          "case": "absorb_real_methodological_cell_after_EMIFMAT12_p296_to_p297",
+          "blocked": true,
+          "source_sha256": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
+          "primary_adjacent_role_label": "Pressupostos Metodológic os",
+          "label_bbox": [
+            85.343994140625,
+            71.519970703125,
+            134.77999877929688,
+            370.585986328125
+          ],
+          "foreign_role_body_bbox": [
+            134.77999877929688,
+            71.519970703125,
+            510.21999104817706,
+            370.585986328125
+          ],
+          "foreign_role_body_sha256": "8cd88f4a253fc39ac90ada10c7da6618ad6eb56b0547bd6ebb760f6c1f206222"
+        },
+        {
+          "case": "absorb_real_methodological_cell_after_EMIFMAT03_p294_to_p294",
+          "blocked": true,
+          "source_sha256": "2638963b93f1c6b789dda972545f964949d8b1c4df7e5c7b6bdff421d521ee44",
+          "primary_adjacent_role_label": "Pressupostos Metodológic os",
+          "label_bbox": [
+            85.42399342854817,
+            471.3099822998047,
+            134.77999877929688,
+            745.7519775390625
+          ],
+          "foreign_role_body_bbox": [
+            134.77999877929688,
+            471.3099822998047,
+            510.1399909125434,
+            745.7519775390625
+          ],
+          "foreign_role_body_sha256": "6539c8ee2bf85531fadd3982e9578493a66b1e0cfd51d4c7c3ed2b1a79f9070e"
+        }
+      ],
+      "final_first_page_tail_census": {
+        "path": "docs/evidence/native-body-completeness-audit/mg-crmg-em-first-page-tail-runtime-verification.json",
+        "sha256": "054c39a5fad9f9fccdf472dc32fa752cf3db13563090287c3855be5ac2493b54",
+        "counts": {
+          "records_considered": 117,
+          "eligible_cell_end_to_next_literal_code_intervals": 87,
+          "unproved_contiguous_vertical_scope": 81,
+          "body_already_closed_before_strict_cell_end": 30,
+          "explicit_adjacent_role_ends_scope": 6
+        },
+        "candidate_cells": 0,
+        "scope_unverified_is_not_absence": true
+      }
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "report_path": "docs/evidence/native-body-completeness-audit/rj-doc-eief-2019-runtime-verification.json",
+      "report_sha256": "f3ac87b639caf6d61e030c746bbbdeccf0f20d9adaefbe27f1fd5ff55e6a0088",
+      "composed_path": "data/manifests/uncoded/rj-coded-body-composed-rj-doc-eief-2019-v1-items.json",
+      "composed_sha256": "6048e83c63dbbd0d44f48eee3af64bc635c6cf500494589812552a9bf90b25d5",
+      "binding_proposal_path": "docs/evidence/native-body-completeness-audit/rj-doc-eief-2019-binding-proposal-runtime-verification.json",
+      "binding_proposal_sha256": "86cb3d9d999e390266eee3a4a100202b70f0849db6d02717a797c1ec1f4be9a9",
+      "counts": {
+        "cache_items": 2028,
+        "baseline_items": 2164,
+        "body_repairs": 200,
+        "composed_adapter_records": 336,
+        "real_loader_records": 336,
+        "real_finalizer_records": 2165,
+        "schema_passed": 2165,
+        "literal_adapter_evidence_passed": 336,
+        "complete_character_receipts": 200,
+        "valid_coded_id_context_preserved": 198,
+        "valid_coded_full_context_exact": 198,
+        "unaffected_records_preserved": 1965,
+        "unaffected_records_exact_including_review_time": 1829,
+        "automated_revalidation_event_timestamps": 136,
+        "explicit_invalid_supersessions": 1,
+        "new_canonical_records": 2,
+        "documentary_EI_age_context_enrichments": 0
+      },
+      "negative_controls": [
+        {
+          "case": "strict_prefix_with_matching_excerpt_cannot_replace_complete_body",
+          "blocked": true
+        },
+        {
+          "case": "duplicate_record_even_if_every_character_matches",
+          "blocked": true
+        },
+        {
+          "case": "same_length_single_character_change",
+          "blocked": true
+        },
+        {
+          "case": "omit_actual_same_column_cross_page_continuation",
+          "blocked": true
+        },
+        {
+          "case": "absorb_new_explicit_cell_EF08CI01_p383_to_EF08CI02_p384",
+          "blocked": true
+        },
+        {
+          "case": "omit_second_actual_LP34_same_page_continuation_cell_p203",
+          "blocked": true,
+          "primary_boundary_ys": [
+            56.88,
+            181.22,
+            338.93
+          ],
+          "primary_body_bbox": [
+            427.51,
+            56.88,
+            560.02,
+            338.93
+          ],
+          "complete_primary_tail_sha256": "2d22c141902153075694e44b8394aaab01fd3fb24dcbb27b53119da20fa4927d",
+          "candidate_fragment_count": 2
+        }
+      ],
+      "final_first_page_tail_census": {
+        "path": "docs/evidence/native-body-completeness-audit/rj-doc-eief-2019-first-page-tail-runtime-verification.json",
+        "sha256": "f4895c472d8fb5266a7377968271f882d5c10a1ec9cc4910454708d13e069942",
+        "counts": {
+          "records_considered": 200,
+          "eligible_cell_end_to_next_literal_code_intervals": 191,
+          "unproved_contiguous_vertical_scope": 104,
+          "body_already_closed_before_strict_cell_end": 7,
+          "no_generic_strict_bounds_special_case": 2,
+          "empty_contiguous_cells": 88
+        },
+        "candidate_cells": 0,
+        "scope_unverified_is_not_absence": true
+      },
+      "technical_supersession_ledger": {
+        "path": "docs/evidence/native-body-completeness-audit/rj-doc-eief-2019-technical-supersessions.json",
+        "sha256": "77d5c60b840671a9671ee8b5de21d43289b5a9f5d300583826b3cdf2892a0f59"
+      }
+    }
+  ],
+  "pending": [
+    "Final publication/database/portal/API/MCP integration belongs to the coordinator; these bounded runtime adapter proofs do not establish production deployment.",
+    "Whole-Source documentary reconciliation, UF readiness and human pedagogical approval are not claimed."
+  ],
+  "whole_source_reconciled": false,
+  "uf_ready": false,
+  "human_review": false,
+  "manifest_modified": false,
+  "verifier_sha256": "ad510309336fef970c29a3909723d46766c439a9168d4a470081ec755fc02cec",
+  "provenance_clarification": "Every copied input adapter record remains exact. Finalized unaffected records may differ only in explicitly listed automatically regenerated review_events[*].at; actor/method/result and every other field remain exact. Exactly99MG EI objectives have separately enumerated original-header age/parent enrichment.",
+  "rj_lexical_prefix_review": {
+    "path": "docs/evidence/native-body-completeness-audit/rj-doc-eief-2019-lexical-prefix-review-runtime-verification.json",
+    "sha256": "8a90eed331727558fe2472c04f3773cc12f0bd092ddb2233f9c1c8cecb657877",
+    "resolved_format_components": 19,
+    "remaining_unclassified_labels": 0
+  },
+  "post_verification_manifest_observation": [
+    {
+      "source_id": "mg-crmg-eief-atualizada",
+      "observed_manifest_path": "data/manifests/bncc-southeast.json",
+      "observed_uncoded_items_path": "data/manifests/uncoded/mg-coded-body-composed-mg-crmg-eief-atualizada-v1-items.json",
+      "matches_verified_composed_path": true,
+      "observed_technical_supersessions": [
+        {
+          "format": "record_replacement_pairs_v1",
+          "path": "docs/evidence/native-body-completeness-audit/mg-crmg-eief-atualizada-technical-supersessions.json",
+          "sha256": "bae4c560cc62d35c861d42533c0003f84ccde50705155d6884ed4e485ae1d559",
+          "scope": "technical_extraction_correction"
+        }
+      ],
+      "observed_only_no_manifest_write": true
+    },
+    {
+      "source_id": "mg-crmg-em",
+      "observed_manifest_path": "data/manifests/bncc-southeast.json",
+      "observed_uncoded_items_path": "data/manifests/uncoded/mg-coded-body-composed-mg-crmg-em-v1-items.json",
+      "matches_verified_composed_path": true,
+      "observed_technical_supersessions": [],
+      "observed_only_no_manifest_write": true
+    },
+    {
+      "source_id": "rj-doc-eief-2019",
+      "observed_manifest_path": "data/manifests/bncc-southeast.json",
+      "observed_uncoded_items_path": "data/manifests/uncoded/rj-coded-body-composed-rj-doc-eief-2019-v1-items.json",
+      "matches_verified_composed_path": true,
+      "observed_technical_supersessions": [
+        {
+          "format": "record_replacement_pairs_v1",
+          "path": "docs/evidence/native-body-completeness-audit/rj-doc-eief-2019-technical-supersessions.json",
+          "sha256": "77d5c60b840671a9671ee8b5de21d43289b5a9f5d300583826b3cdf2892a0f59",
+          "scope": "technical_extraction_correction"
+        }
+      ],
+      "observed_only_no_manifest_write": true
+    }
+  ]
+}

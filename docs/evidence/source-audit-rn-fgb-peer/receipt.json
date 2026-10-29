@@ -1,0 +1,271 @@
+{
+  "format": "independent_source_first_peer_v1",
+  "generated_at": "2026-10-28T22:19:09.542734+00:00",
+  "actor_type": "automated",
+  "actor_id": "codex-independent-rn-fgb-peer",
+  "source_id": "rn-referencial-em",
+  "primary_artifact_path": "data/raw/RN/rn-referencial-oficial.pdf",
+  "primary_artifact_sha256": "5f894abaa0309169597c7c9b7841aebaa9faaeb45e4cb759e5058b359e2ed845",
+  "source_document_pages": 570,
+  "scope_pdf_pages": [
+    72,
+    540
+  ],
+  "scope_page_count": 469,
+  "candidate_path": "var/ne-rn-fgb-inventory/fgb-physical-complete-candidate.json",
+  "candidate_sha256": "505ef93e5f24f36d0d03c537f5dcfea5823be56df4c5d3bbe83432cdc69a3050",
+  "primary_census_fixed_before_candidate_read": true,
+  "prospective_primary_checkpoint_sha256": "ec6b60c0c04dc413b74d27f4e18060771ed3f58fc536cea10331b6f700f2cf63",
+  "prospective_structure_checkpoint_sha256": "95e6c69844fcc971ade6fcab8549c971dab3ec73ffe3dac0dd5b9151d80f1a54",
+  "verified": {
+    "native_primary_code_anchors_in_matrices": 667,
+    "complete_coded_bodies_from_independent_word_geometry": 667,
+    "primary_matrix_context_regions": 1178,
+    "primary_header_occurrences": 2045,
+    "outside_grid_native_page_sequences": 469,
+    "real_importer_finalizer_schema_nodes": 3681,
+    "real_repeated_contextual_occurrences": 695,
+    "real_runtime_negative_controls": 6,
+    "independent_completeness_negative_controls": 7,
+    "independent_nested_table_order_mutation_blocked": 1,
+    "character_content_coverage_is_not_universal_visual_reading_order": true
+  },
+  "open_findings": [
+    {
+      "id": "RN-FGB-P1-NESTED-TABLE-READING-ORDER",
+      "priority": "P1",
+      "status": "open",
+      "page": 311,
+      "continued_on_page": 312,
+      "candidate_key": "fgb-cell-p311-table0-row3-column2",
+      "primary_nested_table_bbox": [
+        437.1300048828125,
+        264.8699951171875,
+        716.47998046875,
+        374.6499938964844
+      ],
+      "primary_table_shape": {
+        "rows": 8,
+        "columns": 8,
+        "unique_detected_regions": 50,
+        "nonempty_regions": 10,
+        "native_words": 17
+      },
+      "primary_placement": "Between paragraph ending cada uma delas. and paragraph starting Propor aos estudantes que se organizem em grupos",
+      "candidate_placement": "After the unfinished final clause ...suficiente para atender; before continuation p312 aos objetivos...",
+      "finding": "Flattened native stream moves embedded table words to end of prose and loses nested grid structure. Literal/word-stream identity alone cannot approve primary reading order.",
+      "evidence": [
+        "primary-census.json",
+        "context-comparison.json",
+        "private-renders.json",
+        "nested-table-order.json"
+      ],
+      "required_correction": "Represent embedded documentary table in its primary placement with explicit geometry/rows/columns, or separate verified textual fragments and table context. Preserve all source characters, pins and existing coded records.",
+      "producer_acknowledged": true,
+      "producer_correction_plan": "After this pinned receipt: preserve primary BEFORE → nested table → AFTER ordering with explicit 50-region grid and continuation311–312. No candidate/binding change yet."
+    },
+    {
+      "id": "RN-FGB-P2-PAGINATION-ROLE",
+      "priority": "P2",
+      "status": "open",
+      "affected_records": 388,
+      "evidence": "outside-comparison.json",
+      "finding": "Page-number-only nodes are classified narrativa_curricular. Preserve pagination in metadata or an explicit documentary marker role; do not count it as curricular narrative.",
+      "producer_acknowledged": true,
+      "producer_correction_plan": "After pinned receipt, reclassify isolated pagination as documentary metadata. No change yet."
+    }
+  ],
+  "pending_full_acceptance_axes": [
+    {
+      "id": "context_logical_continuity",
+      "status": "pending",
+      "examples": [
+        [
+          399,
+          400
+        ],
+        [
+          500,
+          501
+        ],
+        [
+          311,
+          312
+        ]
+      ],
+      "observed": "Full physical regions retained; contextual continuation beyond cells explicitly unapproved. Native coverage is not full logical structure."
+    },
+    {
+      "id": "raster_figures",
+      "status": "pending",
+      "embedded_image_occurrences": 4,
+      "pages": [
+        73,
+        74,
+        75
+      ],
+      "evidence": "figure-pins.json",
+      "observed": "Native captions retained; visual diagram/example content not structurally transcribed/approved."
+    },
+    {
+      "id": "vector_color_semantics",
+      "status": "pending",
+      "native_social_field_label_occurrences": 1155,
+      "evidence": "source-only-structure.json",
+      "observed": "Text tokens retained but visual selected/unselected distinction not approved as data."
+    }
+  ],
+  "full_FGB_acceptance": false,
+  "binding_approved_by_peer": false,
+  "whole_Source_or_UF_ready": false,
+  "human_or_pedagogical_review": false,
+  "runtime_fingerprint": "541aa3377fd409f9c172e1580ae988f5869b25e5331c98528ab68fb9a09360db",
+  "Source_record_sha256_unchanged": "3f26c919d7bcf1d0ef4abb40658de8b3e899da4b02bcd6d0d84d31657d4e980d",
+  "production_cache_sha256_unchanged": "e7be003c936281bdb6b1230c88eff030073811b56971f329bdb81eff9aa30763",
+  "Source_core_cache_candidate_IFA_DB_publication_modified_by_peer": false,
+  "external_blockers": [],
+  "pending_is_implementation_or_documentary_verification_not_external_block": true,
+  "limits": [
+    "Native coverage is verified within pinned469pages; P1nested table reading order and P2pagination roles remain open.",
+    "Figures/vector-color semantics and logical context continuations remain pending; no whole-FGB/570page Source completeness claim.",
+    "Coded body oracle leading-prefix fix occurred after output inspection and is disclosed with the initial19-difference diagnostic preserved.",
+    "No binding, core/parser mutation, DB, worker, publication or IFA composition/replacement performed."
+  ],
+  "evidence_pins": [
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/README.md",
+      "sha256": "89be0610dce63c2017026ef9046b5490f157ef27fa8d8f3b9dc1196b49bd0b58",
+      "bytes": 9938
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/coded-comparison-before-leading-fragment-recheck.json",
+      "sha256": "78c6b1c9d086567206106e3a09660569255fa5c30161bb001b438740d41de80d",
+      "bytes": 1147642
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/coded-comparison.json",
+      "sha256": "449ea685b07351bd8a3be1bc7e0987dabbc127549c2d435f2d92167f784819c4",
+      "bytes": 1162058
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/compare-coded.py",
+      "sha256": "0069f80754e856e93af3e57ac32a28d92f7a2e2f2ac06c19b23246ebe5099d8e",
+      "bytes": 5044
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/compare-context.py",
+      "sha256": "da2bcd9598d5af4b79461dcaba5c27edb29d1b51ea18b34eb7d17da0eb2771e7",
+      "bytes": 2850
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/compare-headers.py",
+      "sha256": "72be5e4fc450c47a21390abb82524fbf2c6407a72b3cf3bc56c8b03d50b83408",
+      "bytes": 1942
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/compare-outside.py",
+      "sha256": "8b10f16eb9ada3b2023a1f044ce5a5e8e786435d8b020445c41dcd71c5bd661b",
+      "bytes": 2124
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/context-comparison.json",
+      "sha256": "8041a3b176a136a82df48434cabda600cf1567907f6bf3cbb2ddb8c1ee8f1bb5",
+      "bytes": 1908080
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/figure-pins.json",
+      "sha256": "fbc240336c992fbcd905be320c31cb302a2259a041c71903b562d1e70e7f24f4",
+      "bytes": 3291
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/findings.json",
+      "sha256": "7fce9653487d818d724bfcf029ca3a63e3a71e172767eac9d797f2cd8e4128d9",
+      "bytes": 3728
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/header-comparison.json",
+      "sha256": "cd48fdd15a22392af7250dff11e4ee1329b48d5f73d1cf3c0650c46877db8333",
+      "bytes": 1063584
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/negative-completeness.json",
+      "sha256": "39baaa68564f095b59f50d173a0119f251c52aba2e8474c7869edb91b1963094",
+      "bytes": 1353
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/negative-completeness.py",
+      "sha256": "76e8bdf92859003742b1c5160b7eb1dd0c2667f05991068d3babc379b7d5a580",
+      "bytes": 3791
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/nested-table-order.json",
+      "sha256": "68f59aacf48229ff196eba71c0764285a9b0f2f6dfa30db7229d068984d00a96",
+      "bytes": 48598
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/nested-table-order.py",
+      "sha256": "1e66b1ae02f4b54c656fb4f6966833e1804e4ecec53918511ed0b5f66c487ee6",
+      "bytes": 3202
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/outside-comparison.json",
+      "sha256": "1bde574141085a357295e75a38bce9f1f0a5d37279da52fbe096768e45e70bbb",
+      "bytes": 430838
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/primary-cells.jsonl",
+      "sha256": "6b518656c99112bfa6c97e2a4f1e1283b1b97e81374cf1057863ca2bfd968d98",
+      "bytes": 21017398
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/primary-census.json",
+      "sha256": "ec6b60c0c04dc413b74d27f4e18060771ed3f58fc536cea10331b6f700f2cf63",
+      "bytes": 3444727
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/primary-census.log",
+      "sha256": "aa84b6ca6e9357bfd5184c3b02df6cb4cc6d43fb5ec382018c02e1a914d6ac6a",
+      "bytes": 980
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/primary-census.py",
+      "sha256": "a906208014213c9001159c3dbafe2af9e59cafd3641aed435413859d53b18ec7",
+      "bytes": 7636
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/private-renders.json",
+      "sha256": "e378b2735deff1a89f7c093026f2a6109e799c7d99e5f0ca228aa2d9bbbbe310",
+      "bytes": 2393
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/runtime.json",
+      "sha256": "5856add95d02c51ae1faeb63d85c12160cf3d587422519f63beafc21ad4573b9",
+      "bytes": 1813
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/runtime.log",
+      "sha256": "952e88ba843eb3577df44475a878dc5014598a4ed485c895bc5a0872efb2936f",
+      "bytes": 78
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/runtime.py",
+      "sha256": "0c1cb865960b4f67845e7d287c8f8c38bf63376d44db0dbdbc11302d1638feb8",
+      "bytes": 6325
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/seal.py",
+      "sha256": "2f07f349b3ecba3dcf3de7377290edb6d25668e616c159a385dc1b5fce285698",
+      "bytes": 5738
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/source-only-structure.json",
+      "sha256": "95e6c69844fcc971ade6fcab8549c971dab3ec73ffe3dac0dd5b9151d80f1a54",
+      "bytes": 3635292
+    },
+    {
+      "path": "docs/evidence/source-audit-rn-fgb-peer/source-only-structure.py",
+      "sha256": "00af819fb05b76093bb1713fc0172df3bfc503aa06fd3e7d44202d6fdd6baa78",
+      "bytes": 5366
+    }
+  ]
+}

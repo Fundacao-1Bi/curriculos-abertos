@@ -1,0 +1,71 @@
+{
+  "actor_type": "automated",
+  "scope": "All manual importer optional-field guards, embedded and sharded PostgreSQL round-trips.",
+  "code_files": [
+    {
+      "path": "src/domain/publication.ts",
+      "sha256": "238b1716025240797583cc1000aeb0856b5e0c59f2e87d74679dc9cd74d7d0ec"
+    },
+    {
+      "path": "src/domain/shards.ts",
+      "sha256": "b6ec62cc12c3dad42c665821d7d80a1547d98c0308ec0cd2aab618f99e894dd5"
+    },
+    {
+      "path": "src/domain/record-contract.ts",
+      "sha256": "a550ae86cb66680b2da2fd72c1c32939684b50b71db40a1575861a01f1986dff"
+    },
+    {
+      "path": "tests/domain.published-optionals.test.ts",
+      "sha256": "98c75f6d5c880aa100b321cac9e46ad9b218aec18b23054106bbc54db58720ae"
+    }
+  ],
+  "published_schema_modified": false,
+  "base_modified": false,
+  "database_test": {
+    "image": "postgres:17.11-bookworm",
+    "image_id": "sha256:8cd540d6ac172b5f392d9c70e67dad05b54074f75a144bb32e0f4f36793ac777",
+    "owned_container": "ca-contract-import-3e945dc0053e",
+    "owned_database": "curriculum_test_3e945dc0053e",
+    "host_binding": "127.0.0.1 only; ephemeral local test port",
+    "tests": 4,
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0,
+    "database_state_after_tests": {
+      "server_version": "17.11 (Debian 17.11-1.pgdg12+2)",
+      "database": "curriculum_test_3e945dc0053e",
+      "publications": 2,
+      "items": 4,
+      "relations": 2
+    },
+    "only_owned_container_removed": true,
+    "container_absence_verified": true,
+    "main_or_forensic_qa_databases_accessed": false,
+    "log": {
+      "path": "docs/evidence/transport-contract-compatibility/postgres-isolated-tests.log",
+      "sha256": "9b41ceea6c4329089cfe98ab521fc351a5c1589926f0e4c0754b2636e58ff7c0"
+    }
+  },
+  "checks": [
+    {
+      "command": "npx eslint src/domain/publication.ts src/domain/shards.ts src/domain/record-contract.ts tests/domain.published-optionals.test.ts",
+      "exit_code": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "exit_code": 0
+    }
+  ],
+  "complete_manual_scan": {
+    "path": "docs/evidence/transport-contract-compatibility/after-manual-domain-fix-report.json",
+    "sha256": "8fa8edcf275da9cbafb7d48e08505b483ebeb866b06d5e251c42eb6aa042b1ff",
+    "sources": 303,
+    "items": 200724,
+    "relations": 57425,
+    "issues": 0,
+    "real_verifyShardedManifest_passed": true,
+    "network_or_database_access_in_scan": false
+  },
+  "harness_correction": "The first sharded test invocation used a directory in the required manifest-hash argument; corrected the test invocation and reran all four checks. The required checksum guard was retained.",
+  "production_reexecution": "Pending separate ops image installation; no production success claimed."
+}

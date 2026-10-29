@@ -1,0 +1,162 @@
+{
+  "at": "2026-10-28T18:10:45.019860+00:00",
+  "actor_type": "automated",
+  "actor_id": "agent:domain:independent_primary_peer",
+  "human_review_claimed": false,
+  "result": "passed",
+  "source_id": "ba-resolucao-266-2025-computacao",
+  "pins": {
+    "pdf": "dae336de6d45da873386a66f01de53a483c790b502254c5faef3def5d5f00e17",
+    "sidecar": "d5c589d18aa686b57b8db39c2b352de58989efc3c906a47e2374e39d0fe13d82",
+    "producer_census": "b36d6db94578e9477ca3a7ac979b56a37b6e360e8a811a59d319e54d629feb27"
+  },
+  "sidecar_bytes": 667849,
+  "native_census": "primary-census.json",
+  "denominators": {
+    "pages": 21,
+    "physical_footer_markers": 21,
+    "body_lines": 688,
+    "resolution_nodes": 123,
+    "parecer_nodes": 18,
+    "total_nodes": 141,
+    "evidence_fragments": 155,
+    "articles": 21,
+    "paragraphs": 17,
+    "incisos_total": 57,
+    "incisos_kind": 49,
+    "EI_postulacoes": 8,
+    "table_body_rows": 2,
+    "table_columns": 2,
+    "footnotes": 2
+  },
+  "full_line_partition": {
+    "assigned_once": 688,
+    "unassigned": 0,
+    "multiple": 0,
+    "compared": "independent native page line text and bounding boxes, not candidate line_refs"
+  },
+  "glyph_trace": {
+    "checked_fragments": 155,
+    "failures": 0,
+    "trace_only_extras": [
+      {
+        "page": 16,
+        "unicode": "U+F0B7",
+        "font": "Symbol",
+        "glyph_id": 120,
+        "bbox": [
+          222.77000427246094,
+          506.587890625,
+          228.06875610351562,
+          518.10791015625
+        ],
+        "native_text_absent": true,
+        "rendered_crop": "primary-table-crop.png",
+        "visual_result": "No extra bullet visible in either table label; exact rendering cause not asserted."
+      },
+      {
+        "page": 16,
+        "unicode": "U+F0B7",
+        "font": "Symbol",
+        "glyph_id": 120,
+        "bbox": [
+          222.77000427246094,
+          546.0328369140625,
+          228.28953552246094,
+          558.0328369140625
+        ],
+        "native_text_absent": true,
+        "rendered_crop": "primary-table-crop.png",
+        "visual_result": "No extra bullet visible in either table label; exact rendering cause not asserted."
+      }
+    ],
+    "method": "page.get_texttrace Unicode chars in evidence rectangle, whitespace-only compact comparison preserving punctuation/digits/glyphs; two exact trace-only Symbol glyphs explicitly recorded and visually absent in table crop, never a generic PUA removal rule"
+  },
+  "production": {
+    "revision": "page-cell-v1.5.0",
+    "cache_sha256": "32b07923f3469c2a88873778135d54d9a33f41cc99a2795e1f305c553831a292",
+    "old_cache_config_matches_current_Source": false,
+    "generic_inputs": 21,
+    "adapter_inputs": 141,
+    "final_items": 141,
+    "all_final_literals_checked_with_sortTrue_native_pages": true,
+    "schema": "1.1.0",
+    "schema_sha256": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df",
+    "schema_failures": 0,
+    "Source_schema_validated": true,
+    "Source_clone_only": true,
+    "cloned_authority": {
+      "uncoded_page_sections_pages": [
+        1,
+        21
+      ]
+    }
+  },
+  "roles": {
+    "postulacao_curricular": "Art10 literal pedagogical propositions/organisation of EI experiences; no automatically assigned learning kind/code/equivalence",
+    "parecer_quotes": "documentary citations/argument, not new BA skill definitions",
+    "table": "historical programme illustration; two columns without printed column-header labels; editorial descriptive labels in source_context are not official headers",
+    "source_caption": "physical Fonte label below historical table, not table header and not new learning item"
+  },
+  "visual_pages": [
+    7,
+    12,
+    13,
+    16
+  ],
+  "visual_review": "completed_by_automated_peer",
+  "negative_controls": [
+    {
+      "name": "drop_last_Art10_incisoVIII",
+      "result": "rejected"
+    },
+    {
+      "name": "change_text_article-10-inciso-VIII",
+      "result": "rejected"
+    },
+    {
+      "name": "change_text_article-17-inciso-III",
+      "result": "rejected"
+    },
+    {
+      "name": "wrong_parent_incisoVIII",
+      "result": "rejected"
+    },
+    {
+      "name": "wrong_stage_Art10",
+      "result": "rejected"
+    },
+    {
+      "name": "approval_replaced_by_effectiveness_date",
+      "result": "rejected"
+    },
+    {
+      "name": "publication_homologation_swap",
+      "result": "rejected"
+    },
+    {
+      "name": "table_source_attached_to_report",
+      "result": "rejected"
+    }
+  ],
+  "runtime_sha256": {
+    "pipeline/ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+    "pipeline/es_geometry.py": "0c765d49f58355a8ff50e46c3e1aa8cf3d724ae50ba45609b2e918e9d7a9f80f",
+    "pipeline/geometry.py": "f0f2f7230602a051712fd116bce3c9d62bcb3e316d07412f8ed7ff3cda37467d",
+    "data/schema/1.1.0.json": "cfe3c8cf165f34faa7aa29fda55245df4ce1bfa47d3b4c8bde15eec6f588d5df"
+  },
+  "immutability": {
+    "pdf_unchanged": true,
+    "sidecar_unchanged": true,
+    "producer_census_unchanged": true,
+    "runtime_unchanged": true
+  },
+  "limitations": [
+    "Selected pinned21pageartifact only, no proof allBArequiredparts/UF/nationalreconciliation.",
+    "Current actualSourcecache identity mismatch acknowledged; cloned in-memoryimport is not post-bindingcurrent-configpreflight.",
+    "NoDBimport, Sourcebinding, core/pipelineedit, OCRorlarge render performed.",
+    "Nohumanpedagogicalreview; native/literal/documentary verification is separate.",
+    "Sourceprints bibliographic inconsistencies; preserved and not verified as external legal facts.",
+    "Table caption refers to references at end, but selected PDF ends signatures at21; no invented bibliography."
+  ]
+}

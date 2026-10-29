@@ -1,0 +1,574 @@
+{
+  "at": "2026-10-28T17:37:26.916Z",
+  "policy_version": "documentary-item-roles-2026-10-28-v3",
+  "actor_type": "automated",
+  "actor_id": "agent:domain",
+  "human_pedagogical_review_claimed": false,
+  "learning_kinds_changed": false,
+  "scope": "Documentary role classification of sixteen kinds newly observed in reviewed sidecars; occurrences overlap and are not publication denominators.",
+  "coordination": {
+    "to_label_role": "confirmed_by_source_owner_data_north",
+    "rj_component_purpose_role": "confirmed_by_source_owner_portal",
+    "es_ambiguous_roles": "conservative_source_role_interpretation; owner pr_adapter consulted, confirmation pending at generation"
+  },
+  "decisions": [
+    {
+      "kind": "acao_docente",
+      "category": "context",
+      "basis": "Coluna Dicas para o Planejamento: ação dirigida ao professor, separada dos objetivos discentes.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/es-ei-items.json",
+          "sha256": "f902d3329425890bdb993ba64fa7fcbcf5bf779b1ad899f3fd70d3f4c8346d3d",
+          "sidecar_occurrences": 221,
+          "sample": {
+            "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+            "kind": "acao_docente",
+            "code": null,
+            "text": "• Valorizar as ações dos bebês, suas iniciativas, suas\nformas de expressão, manifestação de interesses e\nnecessidades, acolhê-los e acariciá-los por meio do\ncontato físico positivo, do acalanto;",
+            "page": 73,
+            "source_context": {
+              "column_title": "Dicas para o Planejamento",
+              "paired_objectives": [
+                {
+                  "code": "EI01EO01/ES",
+                  "page": 72,
+                  "bbox": [
+                    168.84017181396484,
+                    137.39979044596353,
+                    233.4000015258789,
+                    248.27979532877603
+                  ],
+                  "locator": "layout:es-ei-physical-code-and-objective-row/table:0/row:1"
+                },
+                {
+                  "code": "EI01EO02",
+                  "page": 72,
+                  "bbox": [
+                    168.84017181396484,
+                    248.27979532877603,
+                    233.4000015258789,
+                    368.3999786376953
+                  ],
+                  "locator": "layout:es-ei-physical-code-and-objective-row/table:0/row:2"
+                },
+                {
+                  "code": "EI01EO03/ES",
+                  "page": 72,
+                  "bbox": [
+                    168.84017181396484,
+                    368.3999786376953,
+                    233.4000015258789,
+                    474.63976711697046
+                  ],
+                  "locator": "layout:es-ei-physical-code-and-objective-row/table:0/row:3"
+                }
+              ],
+              "experience_field": "EO",
+              "bullet_present": true,
+              "not_equivalent_to_paired_objective": true,
+              "experience_field_label": "O Eu, o Outro e o Nós"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "contexto_curricular",
+      "category": "context",
+      "basis": "Exposição curricular explicitamente conservada como contexto, sem alegação de objetivo individual.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/es-ei-items.json",
+          "sha256": "f902d3329425890bdb993ba64fa7fcbcf5bf779b1ad899f3fd70d3f4c8346d3d",
+          "sidecar_occurrences": 539,
+          "sample": {
+            "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+            "kind": "contexto_curricular",
+            "code": null,
+            "text": "“A educação é o ponto em que decidimos se amamos o mundo o bastante para\nassumirmos a responsabilidade por ele e, com tal gesto, salvá-lo da ruína que\nseria inevitável não fosse a renovação e a vinda dos novos e dos jovens. A\neducação é, também, onde decidimos se amamos nossas crianças o bastante\npara não expulsá-las de nosso mundo e abandoná-las aos seus próprios\nrecursos, e tampouco arrancar de suas mãos a oportunidade de empreender\nalguma coisa nova e imprevista para nós, preparando-as, em vez disso, para\na tarefa de renovar um mundo comum”.",
+            "page": 11,
+            "source_context": {
+              "experience_field": null,
+              "classification_basis": "explicit_source_section_and_paragraph",
+              "learning_objective_claim": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "contexto_observacao",
+      "category": "context",
+      "basis": "Prosa explicativa na coluna Vale Observar Se; distinta dos indicadores assinalados.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/es-ei-items.json",
+          "sha256": "f902d3329425890bdb993ba64fa7fcbcf5bf779b1ad899f3fd70d3f4c8346d3d",
+          "sidecar_occurrences": 22,
+          "sample": {
+            "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+            "kind": "contexto_observacao",
+            "code": null,
+            "text": "Desde pequenos os bebês têm a iniciativa de busca por\ninteragir com os adultos e seus pares, aprendendo\nassim sobre o mundo a sua volta. Por isso, é\nimportante o estabelecimento de uma relação segura\ne de confiança, onde o adulto responda de forma\npositiva a suas ações e reações, fazendo uso de\ndiferentes formas de comunicação e expressão.",
+            "page": 73,
+            "source_context": {
+              "column_title": "Vale Observar Se",
+              "paired_objectives": [
+                {
+                  "code": "EI01EO01/ES",
+                  "page": 72,
+                  "bbox": [
+                    168.84017181396484,
+                    137.39979044596353,
+                    233.4000015258789,
+                    248.27979532877603
+                  ],
+                  "locator": "layout:es-ei-physical-code-and-objective-row/table:0/row:1"
+                },
+                {
+                  "code": "EI01EO02",
+                  "page": 72,
+                  "bbox": [
+                    168.84017181396484,
+                    248.27979532877603,
+                    233.4000015258789,
+                    368.3999786376953
+                  ],
+                  "locator": "layout:es-ei-physical-code-and-objective-row/table:0/row:2"
+                },
+                {
+                  "code": "EI01EO03/ES",
+                  "page": 72,
+                  "bbox": [
+                    168.84017181396484,
+                    368.3999786376953,
+                    233.4000015258789,
+                    474.63976711697046
+                  ],
+                  "locator": "layout:es-ei-physical-code-and-objective-row/table:0/row:3"
+                }
+              ],
+              "experience_field": "EO",
+              "bullet_present": false,
+              "not_equivalent_to_paired_objective": true,
+              "experience_field_label": "O Eu, o Outro e o Nós"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "contexto_planejamento",
+      "category": "context",
+      "basis": "Prosa sobre organização do trabalho docente na coluna Dicas para o Planejamento.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/es-ei-items.json",
+          "sha256": "f902d3329425890bdb993ba64fa7fcbcf5bf779b1ad899f3fd70d3f4c8346d3d",
+          "sidecar_occurrences": 29,
+          "sample": {
+            "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+            "kind": "contexto_planejamento",
+            "code": null,
+            "text": "O convívio entre bebês e seus pares assim como com\nos adultos enfatiza a acolhida, o afeto e o cuidado de si\ne com o outro. Nos primeiros meses de vida, o bebê\naprende a reconhecer as pessoas e a localizar-se no\nambiente, à medida que é atendido em suas\nnecessidades básicas. Inicialmente, por meio de uma\npercepção de aconchego junto aos adultos que\ninteragem com ele, que vai se aprimorando e se\nestendendo para outras pessoas, outros aspectos\n(movimentos, sons, cheiros) e outros ambientes. O\nfoco do trabalho do professor ganha força e expressão\nà medida que organiza situações e formas de estimular\no desenvolvimento da autonomia infantil em relação a\nrelacionar-se com os companheiros, e conhecer-se e\ncuidar de si.",
+            "page": 73,
+            "source_context": {
+              "column_title": "Dicas para o Planejamento",
+              "paired_objectives": [
+                {
+                  "code": "EI01EO01/ES",
+                  "page": 72,
+                  "bbox": [
+                    168.84017181396484,
+                    137.39979044596353,
+                    233.4000015258789,
+                    248.27979532877603
+                  ],
+                  "locator": "layout:es-ei-physical-code-and-objective-row/table:0/row:1"
+                },
+                {
+                  "code": "EI01EO02",
+                  "page": 72,
+                  "bbox": [
+                    168.84017181396484,
+                    248.27979532877603,
+                    233.4000015258789,
+                    368.3999786376953
+                  ],
+                  "locator": "layout:es-ei-physical-code-and-objective-row/table:0/row:2"
+                },
+                {
+                  "code": "EI01EO03/ES",
+                  "page": 72,
+                  "bbox": [
+                    168.84017181396484,
+                    368.3999786376953,
+                    233.4000015258789,
+                    474.63976711697046
+                  ],
+                  "locator": "layout:es-ei-physical-code-and-objective-row/table:0/row:3"
+                }
+              ],
+              "experience_field": "EO",
+              "bullet_present": false,
+              "not_equivalent_to_paired_objective": true,
+              "experience_field_label": "O Eu, o Outro e o Nós"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "contexto_temas_integradores",
+      "category": "context",
+      "basis": "Organização e exposição de temas integradores, não lista de resultados discentes.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/es-temas-items.json",
+          "sha256": "917160fabe55d76c2d99bd9f0ee9a0a7565e6bcaae4f81087dda38cec5358760",
+          "sidecar_occurrences": 74,
+          "sample": {
+            "source_id": "es-tema-integrador-final-24-10",
+            "kind": "contexto_temas_integradores",
+            "code": null,
+            "text": "TEMAS INTEGRADORES",
+            "page": 2,
+            "source_context": {
+              "learning_objective_claim": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "indicador_observacao",
+      "category": "assessment",
+      "basis": "Coluna Vale Observar Se: indicador de observação/avaliação, não objetivo novo.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/es-ei-items.json",
+          "sha256": "f902d3329425890bdb993ba64fa7fcbcf5bf779b1ad899f3fd70d3f4c8346d3d",
+          "sidecar_occurrences": 259,
+          "sample": {
+            "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+            "kind": "indicador_observacao",
+            "code": null,
+            "text": "• Percebem sua capacidade de conseguir reações\nespecíficas em suas ações;",
+            "page": 73,
+            "source_context": {
+              "column_title": "Vale Observar Se",
+              "paired_objectives": [
+                {
+                  "code": "EI01EO01/ES",
+                  "page": 72,
+                  "bbox": [
+                    168.84017181396484,
+                    137.39979044596353,
+                    233.4000015258789,
+                    248.27979532877603
+                  ],
+                  "locator": "layout:es-ei-physical-code-and-objective-row/table:0/row:1"
+                },
+                {
+                  "code": "EI01EO02",
+                  "page": 72,
+                  "bbox": [
+                    168.84017181396484,
+                    248.27979532877603,
+                    233.4000015258789,
+                    368.3999786376953
+                  ],
+                  "locator": "layout:es-ei-physical-code-and-objective-row/table:0/row:2"
+                },
+                {
+                  "code": "EI01EO03/ES",
+                  "page": 72,
+                  "bbox": [
+                    168.84017181396484,
+                    368.3999786376953,
+                    233.4000015258789,
+                    474.63976711697046
+                  ],
+                  "locator": "layout:es-ei-physical-code-and-objective-row/table:0/row:3"
+                }
+              ],
+              "experience_field": "EO",
+              "bullet_present": true,
+              "not_equivalent_to_paired_objective": true,
+              "experience_field_label": "O Eu, o Outro e o Nós"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "objetivo_curricular",
+      "category": "formative_purpose",
+      "basis": "Propósitos gerais do componente Ensino Religioso na figura Objetivos do Componente Curricular (ES AI195/AF251); tratamento conservador como finalidade, não expectativa individual inferida.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/es-ef-competencies-prose-items.json",
+          "sha256": "fa99f01571389a5efdfdc68836f8f1c3c71736ace534a62698b6356bae8990e6",
+          "sidecar_occurrences": 8,
+          "sample": {
+            "source_id": "es-curr-culo-es-2019-vol-03-ensino-fundamental-anos-iniciais-rea-de-ci-ncias-humanas-e-ensino-religioso",
+            "kind": "objetivo_curricular",
+            "code": null,
+            "text": "Proporcionar a aprendizagem dos conhecimentos religiosos, culturais e estéticos, a partir das manifestações religiosas percebidas na realidade dos educandos.",
+            "page": 195,
+            "source_context": {
+              "source_typology": "objetivos_do_componente_curricular",
+              "source_figure_caption": "Figura 25 - Objetivos do Componente Curricular Ensino Religioso a partir da BNCC.",
+              "source_component_label": {
+                "text": "Ensino Religioso",
+                "bbox": [
+                  420.1199951171875,
+                  44.35742950439453,
+                  545.2626953125,
+                  63.063255310058594
+                ],
+                "dir": [
+                  1,
+                  0
+                ],
+                "page": 195
+              },
+              "source_objective_introduction": {
+                "text": "âmbito da BNCC, o Ensino Religioso deve atender aos seguintes objetivos:",
+                "bbox": [
+                  85.08000183105469,
+                  414.857666015625,
+                  400.5130615234375,
+                  426.5312194824219
+                ],
+                "dir": [
+                  1,
+                  0
+                ],
+                "page": 195
+              },
+              "original_card_order": 1,
+              "official_enumeration_present": false,
+              "official_identifier_present": false,
+              "scope_note": "Explicit curricular component purposes, not automatically classified as an individual student competence or teacher methodology."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "orientacao_avaliacao",
+      "category": "assessment",
+      "basis": "Orientação sobre o processo de avaliação, preservada na categoria avaliação.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/es-ei-items.json",
+          "sha256": "f902d3329425890bdb993ba64fa7fcbcf5bf779b1ad899f3fd70d3f4c8346d3d",
+          "sidecar_occurrences": 5,
+          "sample": {
+            "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+            "kind": "orientacao_avaliacao",
+            "code": null,
+            "text": "A avaliação na Educação Infantil tem por finalidade acompanhar o trabalho pedagógico e avaliar o processo\nde desenvolvimento e aprendizagem da criança sem o objetivo de seleção, promoção ou classificação,\ngarantindo:",
+            "page": 131,
+            "source_context": {
+              "experience_field": null,
+              "classification_basis": "explicit_source_section_and_paragraph",
+              "learning_objective_claim": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "orientacao_implementacao",
+      "category": "context",
+      "basis": "Orientação de implementação curricular, não resultado individual.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/es-temas-items.json",
+          "sha256": "917160fabe55d76c2d99bd9f0ee9a0a7565e6bcaae4f81087dda38cec5358760",
+          "sidecar_occurrences": 36,
+          "sample": {
+            "source_id": "es-tema-integrador-final-24-10",
+            "kind": "orientacao_implementacao",
+            "code": null,
+            "text": "Os temas integradores representam aspectos essenciais para a formação",
+            "page": 15,
+            "source_context": {
+              "learning_objective_claim": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "orientacao_transicao",
+      "category": "context",
+      "basis": "Orientação relativa às transições da criança na organização escolar.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/es-ei-items.json",
+          "sha256": "f902d3329425890bdb993ba64fa7fcbcf5bf779b1ad899f3fd70d3f4c8346d3d",
+          "sidecar_occurrences": 7,
+          "sample": {
+            "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+            "kind": "orientacao_transicao",
+            "code": null,
+            "text": "Ao ingressar na Educação Infantil, a criança passa por muitos momentos de transição que podem afetar\ndiretamente seu processo de desenvolvimento e aprendizagem:",
+            "page": 132,
+            "source_context": {
+              "experience_field": null,
+              "classification_basis": "explicit_source_section_and_paragraph",
+              "learning_objective_claim": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "pilar_matriz_saberes",
+      "category": "context",
+      "basis": "Título de pilar conceitual Aprender a Conhecer/Fazer/Conviver/Ser (ES36–39), não habilidade individual enumerada.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/es-ei-items.json",
+          "sha256": "f902d3329425890bdb993ba64fa7fcbcf5bf779b1ad899f3fd70d3f4c8346d3d",
+          "sidecar_occurrences": 4,
+          "sample": {
+            "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+            "kind": "pilar_matriz_saberes",
+            "code": null,
+            "text": "Aprender a Conhecer",
+            "page": 36,
+            "source_context": {}
+          }
+        }
+      ]
+    },
+    {
+      "kind": "reflexao_docente",
+      "category": "context",
+      "basis": "Texto/reflexão dirigida à prática docente, explicitamente distinta dos objetivos do quadro.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/es-ei-items.json",
+          "sha256": "f902d3329425890bdb993ba64fa7fcbcf5bf779b1ad899f3fd70d3f4c8346d3d",
+          "sidecar_occurrences": 45,
+          "sample": {
+            "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+            "kind": "reflexao_docente",
+            "code": null,
+            "text": "A ação docente deve promover práticas que estejam voltadas para a observação e escuta atenta dos\ninteresses, desejos e necessidades das crianças. Com a intenção de garantir as aprendizagens e o\ndesenvolvimento por meio dos objetivos deste campo de experiências, o trabalho pedagógico da Educação\nInfantil ganha força ao promover situações que contemplem experiências em relação ao cuidado de si\nmesmo, ao autoconhecimento e relacionamento com o outro. Assim, algumas reflexões se fazem necessárias\nnesse processo:",
+            "page": 80,
+            "source_context": {
+              "experience_field": "EO",
+              "classification_basis": "explicit_source_section_and_paragraph",
+              "learning_objective_claim": false,
+              "experience_field_label": "O Eu, o Outro e o Nós"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "rotulo_direito",
+      "category": "context",
+      "basis": "Nome repetido de direito em cabeçalho; owner TO confirmou distinção dos enunciados completos.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/to-ei-rights-v3-items.json",
+          "sha256": "3e15a87ca5489c9afd5b6aca6e9aa2970e0ff6fe391d32fe168534ac9e1beeab",
+          "sidecar_occurrences": 30,
+          "sample": {
+            "source_id": "to-dct-ei",
+            "kind": "rotulo_direito",
+            "code": null,
+            "text": "conviver",
+            "page": 54,
+            "source_context": {
+              "explicit_right_label_only": true,
+              "not_a_reconstructed_right_definition": true,
+              "technical_kind_correction": {
+                "previous_kind": "direito_aprendizagem",
+                "current_kind": "rotulo_direito",
+                "reason": "Repeated organizer header names are labels, not the complete field-specific right statements."
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "saber_curricular",
+      "category": "context",
+      "basis": "Parágrafos explicativos dos quatro pilares ES36–40; tratamento conservador como contexto teórico, sem converter 15 fragmentos em resultados individuais.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/es-ei-items.json",
+          "sha256": "f902d3329425890bdb993ba64fa7fcbcf5bf779b1ad899f3fd70d3f4c8346d3d",
+          "sidecar_occurrences": 15,
+          "sample": {
+            "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+            "kind": "saber_curricular",
+            "code": null,
+            "text": "O “aprender a conhecer” aborda a aquisição de instrumentos do conhecimento que possibilitem aos sujeitos\nde aprendizagem o desejo por compreender, conhecer e descobrir, que inclui o conhecimento científico e o\nestímulo ao desenvolvimento do pensamento investigativo, crítico e criativo, a predisposição em aprender\ne a estabelecer processos de aprendizagem que o acompanhem e continuem em desenvolvimento ao longo\nda vida.",
+            "page": 36,
+            "source_context": {
+              "experience_field": null,
+              "classification_basis": "explicit_source_section_and_paragraph",
+              "learning_objective_claim": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "tema_integrador",
+      "category": "context",
+      "basis": "Tema integrador e sua explicação contextual, não objetivo de aprendizagem infantil.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/es-temas-items.json",
+          "sha256": "917160fabe55d76c2d99bd9f0ee9a0a7565e6bcaae4f81087dda38cec5358760",
+          "sidecar_occurrences": 19,
+          "sample": {
+            "source_id": "es-tema-integrador-final-24-10",
+            "kind": "tema_integrador",
+            "code": "TI 01.",
+            "text": "TI 01. Direito da Criança e do Adolescente\nO tema Direito da Criança e do Adolescente está em\nconformidade com o Estatuto da Criança e do Adolescente\n(BRASIL, 1990) e deve ser considerado na Educação Básica,\nfazendo parte de práticas pedagógicas cotidianas. Em todas as\náreas de conhecimento, o estudante deve vivenciar a cidadania\nde maneira participativa, conhecendo e praticando seus\ndeveres e direitos.",
+            "page": 6,
+            "source_context": {
+              "local_identifier": true,
+              "identifier_basis": "page5 explicit TI notation",
+              "source_heading_text": "TI 01. Direito da Criança e do Adolescente",
+              "not_a_child_learning_objective": true,
+              "source_code_typographic_note": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "kind": "valor_principio",
+      "category": "context",
+      "basis": "Princípio/valor formativo de organização curricular, não habilidade individual.",
+      "witnesses": [
+        {
+          "path": "data/manifests/uncoded/es-ei-items.json",
+          "sha256": "f902d3329425890bdb993ba64fa7fcbcf5bf779b1ad899f3fd70d3f4c8346d3d",
+          "sidecar_occurrences": 3,
+          "sample": {
+            "source_id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
+            "kind": "valor_principio",
+            "code": null,
+            "text": "Valorização da autonomia, da\nresponsabilidade, da\nsolidariedade e do respeito ao\nbem comum, ao meio\nambiente e às diferentes\nculturas, identidades e\nsingularidades.",
+            "page": 60,
+            "source_context": {}
+          }
+        }
+      ]
+    }
+  ]
+}

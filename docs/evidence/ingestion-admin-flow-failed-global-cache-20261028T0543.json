@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "actor_type": "automated",
+  "started_at": "2026-10-28T05:41:53.909Z",
+  "completed_at": "2026-10-28T05:43:01.050Z",
+  "source": "pe-historia-pernambuco-2026",
+  "job_id": "2768a007-fa84-4919-955d-64945b593c1c",
+  "publication": null,
+  "original_default": "ca-77fb8076598b567e1ba3",
+  "checks": [
+    {
+      "name": "temporary_automated_administrator_logged_in",
+      "passed": true
+    },
+    {
+      "name": "official_cached_source_enqueued_through_authenticated_api",
+      "passed": true,
+      "detail": {
+        "job_id": "2768a007-fa84-4919-955d-64945b593c1c",
+        "source": "pe-historia-pernambuco-2026"
+      }
+    }
+  ],
+  "passed": false,
+  "error": "Job terminou antes da pausa controlada: {\"status\":\"paused\",\"error\":\"Pipeline terminou com código 1; consulte o checkpoint do job.\"}"
+}

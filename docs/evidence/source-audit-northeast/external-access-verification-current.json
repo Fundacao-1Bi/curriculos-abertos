@@ -1,0 +1,17 @@
+{
+  "actor_type": "automated",
+  "checks": [
+    {
+      "source_id": "pb-pcem",
+      "at": "2026-10-28T14:03:09.338102+00:00",
+      "url": "https://paraiba.pb.gov.br/arquivos/pdfs/PropostaCurriculardoEnsinoMdiodaParabaPCEMPB23.pdf",
+      "method": "Unauthenticated standard HTTP GET; bounded8192-byte prefix; no challenge solving, credentials or bypass.",
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes_sampled": 8192,
+      "prefix_sha256": "cb9fa75eedf1fb77bde51a17bb6afe4064a2a02474b336d8835eb85f2eb7d826",
+      "is_pdf": false,
+      "challenge_detected": true
+    }
+  ]
+}

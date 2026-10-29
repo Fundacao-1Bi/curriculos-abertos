@@ -1,0 +1,166 @@
+{
+  "items": [],
+  "report": {
+    "applicable": true,
+    "revision": "am-raster-grid-tsv-v1.1.1",
+    "source_id": "am-rca-em",
+    "page": 164,
+    "ocr_cache_key": "9c12fd9cb41eb4fcd5d68667bcd9b777fd09ece39a97fec347a24b60a9c214bf",
+    "ocr_result_sha256": "fb43e9b6d0cf99a1dc3f89e18f0c9c03b77a26693fecb9164ecbc0797fb685ac",
+    "anchor_count": 1,
+    "official_code_repairs_applied": 0,
+    "grid": {
+      "columns": [],
+      "rejected_non_learning_columns": [],
+      "header_learning_words": [
+        {
+          "x0": 405.2,
+          "top": 228.8,
+          "x1": 450.4,
+          "bottom": 235.2,
+          "text": "Habilidade",
+          "confidence": 81.697754,
+          "block": -2,
+          "paragraph": 1,
+          "line": 2,
+          "method": "binary90"
+        }
+      ],
+      "header_words": [
+        {
+          "x0": 259.6,
+          "top": 204.4,
+          "x1": 385.2,
+          "bottom": 213.2,
+          "text": "A",
+          "confidence": 41.766762,
+          "block": -2,
+          "paragraph": 1,
+          "line": 1,
+          "method": "binary90"
+        },
+        {
+          "x0": 159.2,
+          "top": 231.6,
+          "x1": 186.8,
+          "bottom": 237.6,
+          "text": "Ensino",
+          "confidence": 46.83374,
+          "block": -2,
+          "paragraph": 1,
+          "line": 2,
+          "method": "binary90"
+        },
+        {
+          "x0": 191.6,
+          "top": 230.8,
+          "x1": 217.6,
+          "bottom": 237.2,
+          "text": "Médio",
+          "confidence": 75.054993,
+          "block": -2,
+          "paragraph": 1,
+          "line": 2,
+          "method": "binary90"
+        },
+        {
+          "x0": 368.8,
+          "top": 229.2,
+          "x1": 393.6,
+          "bottom": 235.6,
+          "text": "tndica",
+          "confidence": 3.086348,
+          "block": -2,
+          "paragraph": 1,
+          "line": 2,
+          "method": "binary90"
+        },
+        {
+          "x0": 397.6,
+          "top": 231.2,
+          "x1": 401.2,
+          "bottom": 235.6,
+          "text": "a",
+          "confidence": 95.589806,
+          "block": -2,
+          "paragraph": 1,
+          "line": 2,
+          "method": "binary90"
+        },
+        {
+          "x0": 405.2,
+          "top": 228.8,
+          "x1": 450.4,
+          "bottom": 235.2,
+          "text": "Habilidade",
+          "confidence": 81.697754,
+          "block": -2,
+          "paragraph": 1,
+          "line": 2,
+          "method": "binary90"
+        }
+      ],
+      "header_proof": {
+        "cache_key": "85894fc3e216903085e83283025fe34f58de325bc20faada86f07b0fcbaf1992",
+        "cache_hit": false,
+        "configuration": {
+          "method": "am-header-TSV-PSM6-gray-and-binary90-v1",
+          "source_sha256": "46dd801703b5bca3a849df1c8b16fef800f4d07538bf177797cb1ee1f3640313",
+          "page": 164,
+          "crop": [
+            0,
+            511,
+            1488,
+            749
+          ],
+          "pixel_sha256": "fe864da97a61586e915e2af90bd7487d19465ab7ea0f2ac1a3cf6e70ccf7422b",
+          "OCR_configuration": {
+            "autorotate": true,
+            "engine": "tesseract 5.5.2",
+            "language": "por",
+            "max_dimension": 2200,
+            "model_sha256": {
+              "por": "c4932b937207a9514b7514d518b931a99938c02a28a5a5a553f8599ed58b7deb"
+            },
+            "orientation_model_sha256": "9cf5d576fcc47564f11265841e5ca839001e7e6f38ff7f7aacf46d15a96b00ff",
+            "psm": 3,
+            "rasterizer": "PyMuPDF 1.26.7",
+            "revision": "tesseract-tsv-por-v1.2.1",
+            "threads": 1
+          },
+          "Pillow": "13.0.0"
+        }
+      },
+      "table_bottom": null,
+      "vertical_rules": [
+        {
+          "x": 250.4,
+          "pixel_range": [
+            624,
+            628
+          ],
+          "support_pixels": 505,
+          "max_vertical_support": 103
+        }
+      ],
+      "raster_sha256": "22cfb4bca541cd478ae478498da7731b0b1befe1169223673564f65fe0e56345",
+      "raster_dimensions": [
+        1488,
+        2105
+      ],
+      "method": "source_raster_long_rules_no_synthetic_edges",
+      "engine": {
+        "rasterizer": "PyMuPDF 1.26.7",
+        "raster_geometry": "Pillow 13.0.0"
+      },
+      "opening_half_span_pixels": 30,
+      "pixel_thresholds": {
+        "dark": 145,
+        "channel_spread": 40,
+        "filled_row_ratio": 0.45
+      }
+    },
+    "status": "code_occurrences_in_explicit_example_or_code_legend",
+    "items": 0
+  }
+}

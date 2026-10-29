@@ -1,0 +1,15 @@
+{"event":"ingestion_qa_check","name":"official_local_artifact_sha256_verified_inside_worker","detail":{"source_id":"pe-historia-pernambuco-2026","path":"data/raw/PE/pe-historia-pernambuco-2026.pdf","sha256":"1b7b6c325b74b580697325f1c7af59780799fbdb9582fe98a0dab63a9203a832","bytes":483583,"network_acquisition_required":false}}
+{"event":"ingestion_qa_check","name":"temporary_automated_administrator_logged_in"}
+{"event":"ingestion_qa_check","name":"official_source_enqueued_through_authenticated_api","detail":{"job_id":"78f1f727-a029-4b6b-b6c1-1d4eb2490a8c","source":"pe-historia-pernambuco-2026","cached_only":false,"method":"parse verified local official artifact in current worker runtime"}}
+{"event":"ingestion_qa_check","name":"ingestion_job_pins_published_base_sha256_and_explicit_target_sources","detail":{"base_publication":"ca-7d302a9c674a97b83278","base_publication_sha256":"be4427301b0300d3ac751f9bb0627216ad84e5be16b9b733273e71522ec5360d","target_source_ids":["pe-historia-pernambuco-2026"]}}
+{"event":"ingestion_qa_progress","job_id":"78f1f727-a029-4b6b-b6c1-1d4eb2490a8c","status":"queued","stage":"queued"}
+{"event":"ingestion_qa_progress","job_id":"78f1f727-a029-4b6b-b6c1-1d4eb2490a8c","status":"running","stage":"source_started"}
+{"event":"ingestion_qa_progress","job_id":"78f1f727-a029-4b6b-b6c1-1d4eb2490a8c","status":"running","stage":"extraction_cache_hit"}
+{"event":"ingestion_qa_progress","job_id":"78f1f727-a029-4b6b-b6c1-1d4eb2490a8c","status":"running","stage":"composing_global_candidate"}
+{"event":"ingestion_qa_check","name":"real_ingestion_paused_during_prepared_import"}
+Expected values to be strictly equal:
++ actual - expected
+
++ 'running'
+- 'paused'
+

@@ -1,0 +1,146 @@
+{
+  "actor_type": "automated",
+  "actor_id": "codex-independent-auditor",
+  "producer": "scripts/qa-prepared-boundary.ts",
+  "started_at": "2026-10-28T05:41:18.264Z",
+  "completed_at": "2026-10-28T05:41:18.509Z",
+  "source_tree_sha256": "f12e31a467b5d6d1ee9f76f7688d18668e14370fb5583fdbce74ab9beb902da9",
+  "publication": "ca-77fb8076598b567e1ba3.r-1e4bc6d6-e20a-465d-b4b1-1c14a0c857ab",
+  "phase": "prepared-hidden",
+  "base": "http://localhost:3000",
+  "mcp_transport": "Streamable HTTP",
+  "mcp_protocol": "2025-11-25",
+  "export_job_probe": "e7333c90-862d-40a1-8697-907c4d31f1d3",
+  "checks": [
+    {
+      "name": "API lista pública exclui preparada",
+      "passed": true,
+      "status": 200
+    },
+    {
+      "name": "API preparada GET ufs",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET redes",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET curriculos",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET aprendizagens?limit=1",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET aprendizagens/ca%3Aac-cru-em%3A0090948210886854c3a6",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET correspondencias?limit=1",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET bncc/aprendizagens/ca%3Aac-cru-em%3A0090948210886854c3a6/panorama",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET analises?limit=1",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET cobertura",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET fontes",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET fontes/ac-cru-em",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada GET publicacoes",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada POST aprendizagens/consulta-lote",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada POST comparacoes",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API preparada POST exportacoes",
+      "passed": true,
+      "status": 404,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "API job preparado status",
+      "passed": true,
+      "status": 404
+    },
+    {
+      "name": "API job preparado /arquivo",
+      "passed": true,
+      "status": 404
+    },
+    {
+      "name": "MCP lista pública exclui preparada",
+      "passed": true
+    },
+    {
+      "name": "MCP preparada consultar_publicacoes",
+      "passed": true,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "MCP preparada consultar_aprendizagens",
+      "passed": true,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "MCP preparada consultar_fontes",
+      "passed": true,
+      "code": "PUBLICATION_NOT_FOUND"
+    },
+    {
+      "name": "MCP preparada consultar_cobertura",
+      "passed": true,
+      "code": "PUBLICATION_NOT_FOUND"
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,241 @@
+{
+  "actor_type": "automated",
+  "actor_id": "pr_adapter:es-full-isolated-import",
+  "parser_fingerprint": {
+    "algorithm": "sha256-of-sorted-parser-file-digests",
+    "sha256": "28e2f9005b7091f391e46d607868a3aa7f60d7b8c810fa2cfaa4fae0b07ee747",
+    "files": {
+      "ingest.py": "fdea19f73dd9e94d70f9aee1be5cdbad776a19ad6a2ee378d14a3cacd366bd11",
+      "geometry.py": "85e273ee3efc47cf764a499d1601cf938914e0d1f857991021f2be4f85f2811c",
+      "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
+      "es_ei_rows.py": "37f73cc3140e9ce2b696f7f6e8df5d7c0e299a3d71630fc23b7610f8178c1f72",
+      "ms_glyphs.py": "b763a98f2c3691d05bdfbdf506804982bfdb37ef807a5fe8a7b7b85a043d21f1",
+      "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
+      "am_ocr_grid.py": "162e44aa7f109d2ccf33a55e865506965e2486e335dcb9c4263adc09d96d0fe8",
+      "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
+      "rs_ms_geometry.py": "b98b3b45bb929b5973d2b268c8e1b343480f0e26a1664e62732a446745e6f029",
+      "runtime.py": "872329c4965d0a043cc256a3a5bd46912c7f4aab54f0a28da048eea9989c6699"
+    }
+  },
+  "extraction_revision": "page-cell-v1.4.0",
+  "pipeline_module_sha256": "fdea19f73dd9e94d70f9aee1be5cdbad776a19ad6a2ee378d14a3cacd366bd11",
+  "sources": [
+    {
+      "source_id": "es-em-l-ngua-portuguesa",
+      "artifact_sha256": "b3405b1e5ffeb82df9d2817e86e8949199c3ae14c9cd59daf69b69bac48773d8",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/03b98956b1815f22894ca6a22e5ff70fab689756dc1c467c7e6263d4b7232174/b3405b1e5ffeb82df9d2817e86e8949199c3ae14c9cd59daf69b69bac48773d8.json",
+      "candidate_sha256": "49bb1cc07d40f173eef61b543032a77a75a894a447e6dc34bfa12caf50197290",
+      "coded_items": 3,
+      "coded_fragments": 6,
+      "literal_failed_items": [],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [],
+      "production_cache_before_sha256": "71199ef555fb53d23e0ba39a585af005bdf2db37fe16dd9a61b2d779ab57827b",
+      "production_cache_after_sha256": "71199ef555fb53d23e0ba39a585af005bdf2db37fe16dd9a61b2d779ab57827b",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 182,
+      "independent_inventory_code_cells": 187,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-em-ci-ncias-da-natureza",
+      "artifact_sha256": "ed9771b0dd051602a41e3706f3453a6301f8c48fd20911b9b821e96256daa1ac",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/03b98956b1815f22894ca6a22e5ff70fab689756dc1c467c7e6263d4b7232174/ed9771b0dd051602a41e3706f3453a6301f8c48fd20911b9b821e96256daa1ac.json",
+      "candidate_sha256": "fa02ac9e9ea0554bf406051fa3a70f6b457b852d1352acfb3210dbd0603f0015",
+      "coded_items": 2,
+      "coded_fragments": 3,
+      "literal_failed_items": [],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [],
+      "production_cache_before_sha256": "8b6c33d4e1e438d032f354f4309b7a32b89fafcb08f879012e9cc046c9aab1cd",
+      "production_cache_after_sha256": "8b6c33d4e1e438d032f354f4309b7a32b89fafcb08f879012e9cc046c9aab1cd",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 130,
+      "independent_inventory_code_cells": 130,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-em-ci-ncias-humanas",
+      "artifact_sha256": "de0a2853b8ff2346830f9f1b0f29616912ca7ac4237b6ce050f91781afb486f6",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/03b98956b1815f22894ca6a22e5ff70fab689756dc1c467c7e6263d4b7232174/de0a2853b8ff2346830f9f1b0f29616912ca7ac4237b6ce050f91781afb486f6.json",
+      "candidate_sha256": "c0b8cdeb91c3889785525e10ec056cbc039457dc5ea9a5cbbb07f34d0c0537e3",
+      "coded_items": 3,
+      "coded_fragments": 3,
+      "literal_failed_items": [],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [
+        {
+          "code": "EM13CHS210GEO/ES",
+          "page": 35,
+          "locator": "table:0/column:228.1-327.4/anchor:3",
+          "old": [
+            "EM13CHS2016GEO/E S"
+          ],
+          "new": []
+        }
+      ],
+      "production_cache_before_sha256": "a7a1c48d68c2d489fa3169fb7d6e42037d2f2c44ffc928fad8d0763b9cf7f374",
+      "production_cache_after_sha256": "a7a1c48d68c2d489fa3169fb7d6e42037d2f2c44ffc928fad8d0763b9cf7f374",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 148,
+      "independent_inventory_code_cells": 148,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-ifa-lingchsa-6-1",
+      "artifact_sha256": "d5ac69230fe71ac97de5c6fe0953a6a627da35bb3348fe1738c907c4ed3161cf",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/03b98956b1815f22894ca6a22e5ff70fab689756dc1c467c7e6263d4b7232174/d5ac69230fe71ac97de5c6fe0953a6a627da35bb3348fe1738c907c4ed3161cf.json",
+      "candidate_sha256": "05239d8cc1f4ec8518b59d57df9e7897a003ea8563ecc3ea073a09aa59108336",
+      "coded_items": 8,
+      "coded_fragments": 8,
+      "literal_failed_items": [],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [],
+      "production_cache_before_sha256": "02a9e61feeefd312b20747560c0098bf630dae674882786516cca1d3e7b23cf6",
+      "production_cache_after_sha256": "02a9e61feeefd312b20747560c0098bf630dae674882786516cca1d3e7b23cf6",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 152,
+      "independent_inventory_code_cells": 51,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-curriculoem-aprofundamento-da-area-de-chsa",
+      "artifact_sha256": "a5f9bc957d202514209462c4f8a76e1b3b3270fe9818d01fadd7cc09c827de80",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/03b98956b1815f22894ca6a22e5ff70fab689756dc1c467c7e6263d4b7232174/a5f9bc957d202514209462c4f8a76e1b3b3270fe9818d01fadd7cc09c827de80.json",
+      "candidate_sha256": "fa0682c4c172566c97d5899b35dc08edafbcd59fddd3a0a7a55d5c4e0d684237",
+      "coded_items": 27,
+      "coded_fragments": 27,
+      "literal_failed_items": [
+        {
+          "id": "ca:es-curriculoem-aprofundamento-da-area-de-chsa:2a20a4de4a21d03b9cc3",
+          "code": "EMIFCHSA03",
+          "page": 35,
+          "locator": "table:0/row:1/cell:0",
+          "text": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de campo, experimental etc.) em fontes confiáveis, informações sobre temas e processos de natureza histórica, social, econômica filosófica, política e/ou cultural, em âmbito local, regional, nacional e/ou global, identificando os diversos pontos de vista e posicionando-se mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+          "evidence": [
+            {
+              "source_id": "es-curriculoem-aprofundamento-da-area-de-chsa",
+              "page": 35,
+              "printed_page": null,
+              "section": "Tabela 1, linha 2",
+              "excerpt": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de campo, experimental etc.) em fontes confiáveis, informações sobre temas e processos de natureza histórica, social, econômica filosófica, política e/ou cultural, em âmbito local, regional, nacional e/ou global, identificando os diversos pontos de vista e posicionando-se mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+              "locator": "table:0/row:1/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                56.99127388000488,
+                117.86119384765625,
+                538.689980246804,
+                276.6099853515625
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        }
+      ],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [],
+      "production_cache_before_sha256": "0dc889ed94fa36ad5a41a014a5f5fc04a2c72e1ed5c58e889c6f908e6d1a7a71",
+      "production_cache_after_sha256": "0dc889ed94fa36ad5a41a014a5f5fc04a2c72e1ed5c58e889c6f908e6d1a7a71",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 236,
+      "independent_inventory_code_cells": 125,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-curriculo-em-aprofundamento-entreareas-cn-chsa-mat-e-linguagens-alterado-20-04-22",
+      "artifact_sha256": "23223e7993fd20bf59642c94a5503e909b311aec739255dcf4d362ea21edf6f1",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/03b98956b1815f22894ca6a22e5ff70fab689756dc1c467c7e6263d4b7232174/23223e7993fd20bf59642c94a5503e909b311aec739255dcf4d362ea21edf6f1.json",
+      "candidate_sha256": "af4c031ae0bf4f2a2b2d65bfe654bd2ba5f1d44f7827f2aea4b062c5fe78253d",
+      "coded_items": 0,
+      "coded_fragments": 0,
+      "literal_failed_items": [],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [],
+      "production_cache_before_sha256": "3b7491f52f7dcd9c7c7fd3f6675213ac56a0e1a127c5693345d6f2a3f3986e8f",
+      "production_cache_after_sha256": "3b7491f52f7dcd9c7c7fd3f6675213ac56a0e1a127c5693345d6f2a3f3986e8f",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 462,
+      "independent_inventory_code_cells": 354,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    },
+    {
+      "source_id": "es-curriculo-em-aprofundamento-entreareas-chsa-e-cn-alterado-20-04-22",
+      "artifact_sha256": "0abd9718b7b02fd6b5e49e5f0e722a7eb4af8f18872c3caa4a652daca3c1a662",
+      "candidate_path": "var/private-evidence/source-audit-southeast-fidelity/03b98956b1815f22894ca6a22e5ff70fab689756dc1c467c7e6263d4b7232174/0abd9718b7b02fd6b5e49e5f0e722a7eb4af8f18872c3caa4a652daca3c1a662.json",
+      "candidate_sha256": "41dd0d12324dc7ccc415f1b6ae01e2a1c101cfe1bfb8181b784f5522c23f083a",
+      "coded_items": 15,
+      "coded_fragments": 15,
+      "literal_failed_items": [
+        {
+          "id": "ca:es-curriculo-em-aprofundamento-entreareas-chsa-e-cn-alterado-20-04-22:ac7b7f89139e4ec92b54",
+          "code": "EMIFCHSA03",
+          "page": 31,
+          "locator": "table:0/row:1/cell:0",
+          "text": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de campo experimental etc.) em fontes confiáveis, informações sobre temas e processos de natureza histórica, social, econômica filosófica, política e/ou cultural, em âmbito local, regional, nacional e/ou global, identificando os diversos pontos de vista e posicionando-se mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+          "evidence": [
+            {
+              "source_id": "es-curriculo-em-aprofundamento-entreareas-chsa-e-cn-alterado-20-04-22",
+              "page": 31,
+              "printed_page": null,
+              "section": "Tabela 1, linha 2",
+              "excerpt": "Selecionar e sistematizar, com base em estudos e/ou pesquisas (bibliográfica, exploratória, de campo experimental etc.) em fontes confiáveis, informações sobre temas e processos de natureza histórica, social, econômica filosófica, política e/ou cultural, em âmbito local, regional, nacional e/ou global, identificando os diversos pontos de vista e posicionando-se mediante argumentação, com o cuidado de citar as fontes dos recursos utilizados na pesquisa e buscando apresentar conclusões com o uso de diferentes mídias.",
+              "locator": "table:0/row:1/cell:0",
+              "method": "pymupdf-ruled-cell",
+              "bbox": [
+                56.99127388000488,
+                103.6999755859375,
+                538.689980246804,
+                262.6899871826172
+              ],
+              "page_normalization": {
+                "method": "pdf-rotation-and-dominant-glyph-direction-v1",
+                "original_rotation": 0,
+                "native_body_rotation_applied": 0,
+                "inverse_display_matrix": null,
+                "source_file_modified": false
+              }
+            }
+          ]
+        }
+      ],
+      "rawdict_unmatched_fragments": [],
+      "trace_unmatched_fragments": [],
+      "canonical_changes_against_old_cache": [],
+      "production_cache_before_sha256": "a7a8510bbd434f3068224da66bd4d70b829bad13be91d4cd7bff7989f4234f38",
+      "production_cache_after_sha256": "a7a8510bbd434f3068224da66bd4d70b829bad13be91d4cd7bff7989f4234f38",
+      "production_checksum_unchanged": true,
+      "independent_inventory_code_occurrences": 313,
+      "independent_inventory_code_cells": 168,
+      "ocr_skipped_explicitly": true,
+      "ocr_pending": false,
+      "extraction_warnings": []
+    }
+  ],
+  "human_review": false,
+  "production_files_modified": false,
+  "native_only_ocr_skipped": true
+}
