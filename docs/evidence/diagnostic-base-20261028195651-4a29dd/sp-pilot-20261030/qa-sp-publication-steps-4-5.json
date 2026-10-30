@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "diagnostic_only": true,
+  "national_release_asserted": false,
+  "actor_type": "automated",
+  "started_at": "2026-10-30T16:36:54.309Z",
+  "completed_at": "2026-10-30T17:57:12.605Z",
+  "original_default": "ca-update-f60967e81884a60a20fed6d32ca88237",
+  "final_default": "ca-update-45e4555b35896d3d3b1fec188bf8cb80",
+  "steps": [
+    {
+      "source": "sp-curriculo-em-isbn",
+      "job_id": "883cad13-8311-487d-ba75-1bb7498c8f35",
+      "attempts": 1,
+      "base_publication": "ca-update-f60967e81884a60a20fed6d32ca88237",
+      "publication": "ca-update-3dfe14914e050849bbc4928213af08da",
+      "raw_receipt": "ca-01f1abdeeb317f3be639",
+      "artifact_sha256": "781433ee2d7c62cf752a64c172f4120ef26ac16ac3010caa2375391045113937",
+      "counts": {
+        "items": 202512,
+        "sources": 303,
+        "relations": 57417
+      },
+      "validation": {
+        "valid": true,
+        "global_update_verified": true,
+        "human_pedagogical_approval": false
+      },
+      "publication_event": "11"
+    },
+    {
+      "source": "sp-curriculo-eief-isbn",
+      "job_id": "24fab25d-45fb-4da8-9df4-245d9a001d3b",
+      "attempts": 1,
+      "base_publication": "ca-update-3dfe14914e050849bbc4928213af08da",
+      "publication": "ca-update-45e4555b35896d3d3b1fec188bf8cb80",
+      "raw_receipt": "ca-8ffc98ce2cf6f09a73ab",
+      "artifact_sha256": "e87d255be69c351c6b92713db722797dd8d9d3ba65ccfc9df75a8aa2addc226b",
+      "counts": {
+        "items": 206380,
+        "sources": 303,
+        "relations": 57422
+      },
+      "validation": {
+        "valid": true,
+        "global_update_verified": true,
+        "human_pedagogical_approval": false
+      },
+      "publication_event": "12"
+    }
+  ],
+  "passed": true
+}

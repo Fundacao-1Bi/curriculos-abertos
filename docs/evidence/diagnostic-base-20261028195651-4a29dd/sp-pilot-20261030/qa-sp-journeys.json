@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "diagnostic_only": true,
+  "national_release_asserted": false,
+  "base": "http://localhost:3002",
+  "started_at": "2026-10-30T18:02:54.586Z",
+  "journeys": {
+    "api_publication": {
+      "passed": true,
+      "publication": "ca-update-45e4555b35896d3d3b1fec188bf8cb80",
+      "source_count": 303,
+      "relation_count": 57422,
+      "uf_row": {
+        "uf": "SP",
+        "name": "São Paulo",
+        "item_count": 9071,
+        "source_count": 5,
+        "ready": false,
+        "status": "processamento_parcial",
+        "stages": [
+          "EF",
+          "EI",
+          "EM"
+        ]
+      },
+      "ms": 95
+    },
+    "api_sources": {
+      "passed": true,
+      "sources": [
+        "sp-curriculo-eief-isbn",
+        "sp-curriculo-em-isbn",
+        "sp-educacao-digital-midiatica-2026",
+        "sp-seduc156-anexos-matrizes-2026",
+        "sp-seduc156-corpo-2026"
+      ],
+      "ms": 97
+    },
+    "api_coverage": {
+      "passed": true,
+      "rows": 25,
+      "rows_matching_delta": 23,
+      "extra_empty_rows": [
+        "[\"EI\",null]",
+        "[\"EF\",null]"
+      ],
+      "ready_rows": 0,
+      "delta_ready_rows": 23,
+      "items_in_scopes": 7670,
+      "pending": [
+        "Reconciliação documental por parte não concluída",
+        "Reconciliação integral das fontes deste recorte não comprovada por inventário independente e união exata de registros/textos",
+        "Atualização de fonte exige nova reconciliação documental deste recorte.",
+        "Candidatos com fronteiras/estrutura pendentes de revisão"
+      ],
+      "ms": 20
+    },
+    "api_learnings": {
+      "passed": true,
+      "total": 9071,
+      "delta_artifact_sp_items": 9071,
+      "per_source": {
+        "sp-seduc156-corpo-2026": 88,
+        "sp-seduc156-anexos-matrizes-2026": 38,
+        "sp-educacao-digital-midiatica-2026": 1211,
+        "sp-curriculo-em-isbn": 1423,
+        "sp-curriculo-eief-isbn": 6311
+      },
+      "per_stage": {
+        "EI": 215,
+        "EF": 6275,
+        "EM": 1344
+      },
+      "ms": 787
+    },
+    "api_samples_157": {
+      "passed": true,
+      "samples": 157,
+      "found": 157,
+      "ms": 31
+    },
+    "api_curricula_structure": {
+      "passed": true,
+      "curricula": [
+        {
+          "id": "sp:sp-curriculo-eief-isbn",
+          "nodes": 3970
+        },
+        {
+          "id": "sp:sp-curriculo-em-isbn",
+          "nodes": 571
+        },
+        {
+          "id": "sp:sp-educacao-digital-midiatica-2026",
+          "nodes": 856
+        },
+        {
+          "id": "sp:sp-seduc156-anexos-matrizes-2026",
+          "nodes": 26
+        },
+        {
+          "id": "sp:sp-seduc156-corpo-2026",
+          "nodes": 87
+        }
+      ],
+      "ms": 1351
+    },
+    "api_compare_sp_pe": {
+      "passed": true,
+      "columns": [
+        {
+          "uf": "SP",
+          "total": 9071
+        },
+        {
+          "uf": "PE",
+          "total": 11693
+        }
+      ],
+      "ms": 185
+    },
+    "mcp_http": {
+      "passed": true,
+      "checks": [
+        "consultar_fontes=API",
+        "consultar_cobertura=API",
+        "listar_curriculos=API",
+        "buscar_aprendizagens=API",
+        "buscar_por_etapa",
+        "consultar_aprendizagens_20_amostras",
+        "comparar_curriculos=API"
+      ],
+      "ms": 1342
+    },
+    "export_sp_json_csv": {
+      "passed": true,
+      "slice_id": "ca-update-45e4555b35896d3d3b1fec188bf8cb80-slice-f9ba5f6f657e97eb",
+      "matched_items": 9071,
+      "json": {
+        "job": "84a603c0-fc7e-4596-a505-21ce5c0b299a",
+        "record_count": 9071,
+        "saved": {
+          "path": "var/qa-downloads/sp-pilot-84a603c0-fc7e-4596-a505-21ce5c0b299a.json",
+          "bytes": 45084999,
+          "sha256": "1e09828625c7d28f23dc04d1fdf9ca3eb32e9886e76568a7977a91ddd394ac13"
+        },
+        "summary": {
+          "id": "ca-update-45e4555b35896d3d3b1fec188bf8cb80-slice-f9ba5f6f657e97eb",
+          "schema_version": "1.1.0",
+          "sources": 8,
+          "items": 10888,
+          "relations": 1802,
+          "coverage": 25,
+          "sample_matches": 1,
+          "max_record_bytes": 174373,
+          "parser": "stream-json@3.7.0; record-by-record",
+          "json_valid": true,
+          "references_valid": true
+        }
+      },
+      "csv": {
+        "job": "49173177-d296-45d1-b6c5-6585bce0d4c6",
+        "record_count": 9071,
+        "saved": {
+          "path": "var/qa-downloads/sp-pilot-49173177-d296-45d1-b6c5-6585bce0d4c6.csv",
+          "bytes": 48141267,
+          "sha256": "538ab0225eb46668bb4e5256e148b9b856da32e7c7579c6dfdaf2aecb0b79ff5"
+        },
+        "summary": {
+          "id": "ca-update-45e4555b35896d3d3b1fec188bf8cb80",
+          "schema_version": "1.1.0",
+          "sources": 8,
+          "items": 10888,
+          "relations": 1802,
+          "coverage": 25,
+          "sample_matches": 1,
+          "max_record_bytes": 174373,
+          "parser": "stream-json@3.7.0; record-by-record",
+          "json_valid": true,
+          "references_valid": true
+        }
+      },
+      "ms": 6444
+    },
+    "export_comparison_sp_pe": {
+      "passed": true,
+      "job": "6d3d16c9-3700-4545-a08a-d29ccd3a8fac",
+      "columns": [
+        {
+          "uf": "SP",
+          "total": 9071
+        },
+        {
+          "uf": "PE",
+          "total": 11693
+        }
+      ],
+      "ms": 2925
+    },
+    "portal_pages": {
+      "passed": true,
+      "pages": [
+        {
+          "path": "/",
+          "status": 200,
+          "bytes": 45338,
+          "has_publication": true
+        },
+        {
+          "path": "/ufs/SP",
+          "status": 200,
+          "bytes": 66645,
+          "has_publication": true
+        },
+        {
+          "path": "/buscar?uf=SP",
+          "status": 200,
+          "bytes": 106269,
+          "has_publication": true
+        },
+        {
+          "path": "/fontes?uf=SP",
+          "status": 200,
+          "bytes": 48090,
+          "has_publication": true
+        },
+        {
+          "path": "/curriculos/sp%3Asp-curriculo-eief-isbn",
+          "status": 200,
+          "bytes": 7213556,
+          "has_publication": true
+        },
+        {
+          "path": "/curriculos/sp%3Asp-curriculo-em-isbn",
+          "status": 200,
+          "bytes": 1914242,
+          "has_publication": true
+        },
+        {
+          "path": "/curriculos/sp%3Asp-educacao-digital-midiatica-2026",
+          "status": 200,
+          "bytes": 1703672,
+          "has_publication": true
+        },
+        {
+          "path": "/curriculos/sp%3Asp-seduc156-anexos-matrizes-2026",
+          "status": 200,
+          "bytes": 1272576,
+          "has_publication": true
+        },
+        {
+          "path": "/curriculos/sp%3Asp-seduc156-corpo-2026",
+          "status": 200,
+          "bytes": 380016,
+          "has_publication": true
+        },
+        {
+          "path": "/aprendizagens/ca%3Asp-curriculo-eief-isbn%3Asection%3Aorg%3Aarte%3Ap162%3At0%3Ar0%3AEF02AR13",
+          "status": 200,
+          "bytes": 22955,
+          "has_publication": true
+        },
+        {
+          "path": "/comparar?uf1=SP&uf2=PE",
+          "status": 200,
+          "bytes": 191079,
+          "has_publication": true
+        },
+        {
+          "path": "/downloads",
+          "status": 200,
+          "bytes": 32235,
+          "has_publication": true
+        }
+      ],
+      "ms": 4455
+    }
+  },
+  "findings": [
+    "Cobertura SP publicada no QA: 0/25 recortes ready (pending_revalidation_after_source_update, imposto por mergeIngestionCoverage). O recibo delta no host tem 23/23 ready."
+  ],
+  "finished_at": "2026-10-30T18:03:12.322Z",
+  "passed": true
+}

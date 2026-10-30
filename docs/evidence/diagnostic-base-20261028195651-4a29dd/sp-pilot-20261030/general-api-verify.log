@@ -1,0 +1,57 @@
+{
+  "started_at": "2026-10-30T18:03:20.443Z",
+  "base": "http://localhost:3002",
+  "client": "Node fetch HTTP",
+  "checks": [
+    {
+      "name": "GET openapi.json",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET publicacoes",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET ufs?publication=ca-update-45e4555b35896d3d3b1fec188bf8cb80",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET ufs?publication=ca-update-45e4555b35896d3d3b1fec188bf8cb80",
+      "status": 304,
+      "success": true
+    },
+    {
+      "name": "GET redes?publication=ca-update-45e4555b35896d3d3b1fec188bf8cb80",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET curriculos?publication=ca-update-45e4555b35896d3d3b1fec188bf8cb80",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET cobertura?publication=ca-update-45e4555b35896d3d3b1fec188bf8cb80",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET fontes?publication=ca-update-45e4555b35896d3d3b1fec188bf8cb80",
+      "status": 200,
+      "success": true
+    },
+    {
+      "name": "GET analises?publication=ca-update-45e4555b35896d3d3b1fec188bf8cb80",
+      "status": 500,
+      "success": false
+    }
+  ],
+  "data_failures": [],
+  "publication": "ca-update-45e4555b35896d3d3b1fec188bf8cb80",
+  "success": false,
+  "error": "analises?publication=ca-update-45e4555b35896d3d3b1fec188bf8cb80: {\"error\":{\"code\":\"INTERNAL_ERROR\",\"message\":\"Não foi possível concluir a operação.\",\"request_id\":\"2f36e24e-cc4a-4168-b9da-427fd5d28613\"}}\n\n500 !== 200\n",
+  "finished_at": "2026-10-30T18:03:22.505Z"
+}

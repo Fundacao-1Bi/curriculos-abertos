@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "diagnostic_only": true,
+  "national_release_asserted": false,
+  "ace01_acceptance_asserted": false,
+  "base_url": "http://localhost:3002",
+  "base_publication": "ca-7d302a9c674a97b83278",
+  "final_publication": "ca-update-45e4555b35896d3d3b1fec188bf8cb80",
+  "delta_receipt": "ca-49197c6e9f80e2646e61",
+  "snapshot_amendment": "amendment-7.json",
+  "publication_chain": [
+    {
+      "source": "sp-seduc156-corpo-2026",
+      "job_id": "4e9178bb-93ce-4746-a7bc-d7a798c022a9",
+      "base_publication": "ca-7d302a9c674a97b83278",
+      "publication": "ca-update-438c4e761861cb67e544060490fd7a77",
+      "attempts": 1,
+      "validation": {
+        "valid": true,
+        "global_update_verified": true,
+        "human_pedagogical_approval": false
+      },
+      "counts": {
+        "items": 200811,
+        "sources": 303,
+        "relations": 57425
+      }
+    },
+    {
+      "source": "sp-seduc156-anexos-matrizes-2026",
+      "job_id": "781dee40-6594-4b06-9763-33520e47661e",
+      "base_publication": "ca-update-438c4e761861cb67e544060490fd7a77",
+      "publication": "ca-update-daacd86fafadb3a6d1252d0f1c13e78d",
+      "attempts": 1,
+      "validation": {
+        "valid": true,
+        "global_update_verified": true,
+        "human_pedagogical_approval": false
+      },
+      "counts": {
+        "items": 200837,
+        "sources": 303,
+        "relations": 57425
+      }
+    },
+    {
+      "source": "sp-educacao-digital-midiatica-2026",
+      "job_id": "678a6451-9bbb-452c-ac28-320e3b8bdbe2",
+      "base_publication": "ca-update-daacd86fafadb3a6d1252d0f1c13e78d",
+      "publication": "ca-update-f60967e81884a60a20fed6d32ca88237",
+      "attempts": 1,
+      "validation": {
+        "valid": true,
+        "global_update_verified": true,
+        "human_pedagogical_approval": false
+      },
+      "counts": {
+        "items": 201834,
+        "sources": 303,
+        "relations": 57432
+      }
+    },
+    {
+      "source": "sp-curriculo-em-isbn",
+      "job_id": "883cad13-8311-487d-ba75-1bb7498c8f35",
+      "base_publication": "ca-update-f60967e81884a60a20fed6d32ca88237",
+      "publication": "ca-update-3dfe14914e050849bbc4928213af08da",
+      "attempts": 1,
+      "validation": {
+        "valid": true,
+        "global_update_verified": true,
+        "human_pedagogical_approval": false
+      },
+      "counts": {
+        "items": 202512,
+        "sources": 303,
+        "relations": 57417
+      }
+    },
+    {
+      "source": "sp-curriculo-eief-isbn",
+      "job_id": "24fab25d-45fb-4da8-9df4-245d9a001d3b",
+      "base_publication": "ca-update-3dfe14914e050849bbc4928213af08da",
+      "publication": "ca-update-45e4555b35896d3d3b1fec188bf8cb80",
+      "attempts": 1,
+      "validation": {
+        "valid": true,
+        "global_update_verified": true,
+        "human_pedagogical_approval": false
+      },
+      "counts": {
+        "items": 206380,
+        "sources": 303,
+        "relations": 57422
+      }
+    }
+  ],
+  "publication_passed": true,
+  "journeys_passed": true,
+  "journeys": {
+    "api_publication": true,
+    "api_sources": true,
+    "api_coverage": true,
+    "api_learnings": true,
+    "api_samples_157": true,
+    "api_curricula_structure": true,
+    "api_compare_sp_pe": true,
+    "mcp_http": true,
+    "export_sp_json_csv": true,
+    "export_comparison_sp_pe": true,
+    "portal_pages": true
+  },
+  "sp_items": 9071,
+  "sp_items_delta_artifact": 9071,
+  "findings": [
+    "Cobertura SP no QA: 0/25 recortes ready. mergeIngestionCoverage (src/domain/ingestion-coverage.ts) força ready=false/pending_revalidation em todo recorte tocado por atualização de fonte em runtime; o recibo delta do host tem 23/23 ready. 23 recortes e item_count idênticos ao recibo; 2 linhas extras vazias (EI/EF sem componente) herdadas do BASE.",
+    "Verificadores gerais api-verify e mcp-verify falham em /analises no QA (HTTP 500 / MCP 53100) também para o BASE ca-7d30: PostgreSQL do QA sem /dev/shm (ShmSize 64MB, 'could not resize shared memory segment ... No space left on device'). Não é específico de SP; :3000 responde 200.",
+    "Driver: timeout de 1h insuficiente para composição global (21→32→42→70→65 min); retomado no mesmo job sem reenfileirar."
+  ],
+  "pending_for_ace01": [
+    "publicação real (não QA diagnóstico) + release-check",
+    "decisão sobre revalidação de prontidão após atualização de fonte em runtime",
+    "corrigir shm do PostgreSQL do QA e repetir verificadores gerais",
+    "revisão pedagógica humana (human_pedagogical_approval=false)"
+  ]
+}

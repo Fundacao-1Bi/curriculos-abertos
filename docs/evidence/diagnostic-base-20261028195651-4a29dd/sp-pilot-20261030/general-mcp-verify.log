@@ -1,0 +1,62 @@
+{
+  "started_at": "2026-10-30T18:03:24.172Z",
+  "base": "http://localhost:3002",
+  "client": "@modelcontextprotocol/sdk Client",
+  "sdk": "1.32.2",
+  "protocol_advertised": "2025-11-25",
+  "protocol_supported": [
+    "2025-11-25",
+    "2025-06-18",
+    "2025-03-26",
+    "2024-11-05",
+    "2024-10-07"
+  ],
+  "results": [
+    {
+      "transport": "http",
+      "server": {
+        "name": "curriculos-abertos",
+        "version": "0.1.0"
+      },
+      "capabilities": {
+        "tools": {
+          "listChanged": true
+        }
+      },
+      "protocol_negotiated": "2025-11-25",
+      "checks": [
+        "initialize",
+        "tools/list",
+        "consultar_publicacoes",
+        "buscar_aprendizagens",
+        "consultar_aprendizagens",
+        "buscar_aprendizagens",
+        "buscar_aprendizagens",
+        "consultar_panorama_bncc",
+        "comparar_curriculos",
+        "consultar_correspondencias",
+        "listar_curriculos"
+      ],
+      "success": false,
+      "tools": [
+        "listar_curriculos",
+        "buscar_aprendizagens",
+        "consultar_aprendizagens",
+        "consultar_correspondencias",
+        "consultar_panorama_bncc",
+        "comparar_curriculos",
+        "consultar_analises",
+        "consultar_fontes",
+        "consultar_cobertura",
+        "consultar_publicacoes"
+      ],
+      "publication": "ca-update-45e4555b35896d3d3b1fec188bf8cb80",
+      "real_item_id": "ca:sc-cb-em-caderno-6:29e2cd41f1b220b48fc0"
+    },
+    {
+      "transport": "http",
+      "error": "consultar_analises: [{\"type\":\"text\",\"text\":\"{\\\"error\\\":{\\\"code\\\":\\\"53100\\\",\\\"message\\\":\\\"Consulta indisponível no momento. Verifique a publicação carregada e tente novamente.\\\"}}\"}]"
+    }
+  ],
+  "success": false
+}

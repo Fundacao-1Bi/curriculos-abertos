@@ -140,3 +140,20 @@ Frente ativa: **UF-piloto SP até ACE-01**, escolhida pelo usuário em vez de te
 - **Currículo EI/EF** (`sp-curriculo-eief-isbn`): `sp-eief/verify_independent.py` PASS (sem importar adaptador; 13 negativos rejeitados) e `sp-eief/reconcile_sp_eief.py` com 100 unidades → gate own/whole=true, 6.311/6.311, 0 falhas literais, recibo instalado. Denominadores das listas (competências/direitos/campos) em `sp-eief/primary-census-lists.json`, contados só do PDF. Escolhas do agente declaradas no `method`: textos gerais/multicomponente em "Fundamentos"; contexto de página EI p47–53 no campo do primeiro rótulo; páginas em branco 388–390 em Fundamentos.
 - Testes do pipeline: 115 OK. `scripts/uf-readiness-dryrun.py SP` → `uf_ready_diagnostic: true` (23/23 linhas, 5/5 fontes, 157 amostras, 0 estratos/recortes faltando). JSON em `var/source-delta-sp-em-20261030/dryrun-final.json`.
 - **Próximo passo:** publicar a candidata SP pelo modo delta ou fluxo J11 em QA isolado (não `ingest --cached-only` sem contexto) e rodar jornadas portal/API/MCP/exportação filtradas para SP. Diagnóstico não é aceite: ACE-01 exige publicação real + release-check + jornadas.
+
+## Piloto SP publicado no QA isolado — 2026-10-30
+
+- Recibo delta `ca-49197c6e9f80e2646e61` (job `source-delta-sp-20261030`): SP 23/23 ready, 157/157 amostras literais, ponteiros intactos. A emenda 7 do snapshot QA copiou só artefatos SP (`sp-pilot-20261030/amendment-7.json`).
+- Publicação J11 em `localhost:3002`, uma fonte por job, cada uma sobre a anterior: corpo → anexos/matrizes → educação digital → EM → EI/EF. As 5 tiveram `valid` e `global_update_verified` na 1ª tentativa. Padrão final do QA: `ca-update-45e4555b35896d3d3b1fec188bf8cb80` (206.380 itens, 303 Sources).
+  - Caches do host são recusados no worker porque o hash de configuração inclui o Python (3.11.15 no host, 3.11.2 no worker). Por isso usar `cached_only=false`.
+  - A composição global cresce a cada fonte (21–70 min). O driver aceita `SP_RESUME_JOB`/`SP_TIMEOUT_MS`.
+- Jornadas SP (`qa-sp-journeys.ts`): **11/11 PASS**.
+  - API: 5 fontes; 9.071 itens, igual ao artefato delta; 157 amostras por lote; estrutura dos 5 currículos; comparação SP×PE.
+  - MCP HTTP: igual à API.
+  - Exportação JSON/CSV: recorte `-slice-f9ba5f6f657e97eb`, 9.071 casados e 10.888 com suporte. Também o relatório de comparação.
+  - Portal: 12 páginas.
+- **Achados:**
+  1. A cobertura SP publicada no QA fica com 0/25 recortes `ready`. `mergeIngestionCoverage` força `pending_revalidation` após qualquer atualização de fonte em runtime. Os recortes e as contagens são idênticos ao recibo.
+  2. `/analises` dá 500 no QA para qualquer publicação, inclusive o BASE: o `/dev/shm` de 64 MB do Postgres do QA esgota. Por isso `api-verify`/`mcp-verify` gerais falham no QA. `:3000` OK.
+- Continua `diagnostic_only`. Não é aceite ACE-01, `latest.json` segue no BASE ca-7d30 e `:3000` não foi tocado. Resumo em `docs/evidence/diagnostic-base-20261028195651-4a29dd/sp-pilot-20261030/summary.json`.
+- **Próximo passo:** decidir como revalidar a prontidão após atualização de fonte em runtime. Depois, aumentar `shm_size` do Postgres do QA, o que recria o contêiner e exige autorização, e repetir os verificadores gerais.

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "diagnostic_only": true,
+  "started_at": "2026-10-30T13:54:44.022Z",
+  "failed_at": "2026-10-30T16:36:15.695Z",
+  "original_default": "ca-7d302a9c674a97b83278",
+  "current_default": "ca-update-f60967e81884a60a20fed6d32ca88237",
+  "steps": [
+    {
+      "source": "sp-seduc156-corpo-2026",
+      "job_id": "4e9178bb-93ce-4746-a7bc-d7a798c022a9",
+      "attempts": 1,
+      "base_publication": "ca-7d302a9c674a97b83278",
+      "publication": "ca-update-438c4e761861cb67e544060490fd7a77",
+      "raw_receipt": "ca-e9fe5370e4c3c08f1dd9",
+      "artifact_sha256": "6b9ab3b98fc5d145891a342c1d714861b50a52383f8dc34e78391266639a0b9b",
+      "counts": {
+        "items": 200811,
+        "sources": 303,
+        "relations": 57425
+      },
+      "validation": {
+        "valid": true,
+        "global_update_verified": true,
+        "human_pedagogical_approval": false
+      },
+      "publication_event": "8"
+    },
+    {
+      "source": "sp-seduc156-anexos-matrizes-2026",
+      "job_id": "781dee40-6594-4b06-9763-33520e47661e",
+      "attempts": 1,
+      "base_publication": "ca-update-438c4e761861cb67e544060490fd7a77",
+      "publication": "ca-update-daacd86fafadb3a6d1252d0f1c13e78d",
+      "raw_receipt": "ca-21e9bc140eba80868bc7",
+      "artifact_sha256": "1a10196fa3f54a70a1d146bab95f5aa5962de821f0e798a35c74678af252ca3d",
+      "counts": {
+        "items": 200837,
+        "sources": 303,
+        "relations": 57425
+      },
+      "validation": {
+        "valid": true,
+        "global_update_verified": true,
+        "human_pedagogical_approval": false
+      },
+      "publication_event": "9"
+    },
+    {
+      "source": "sp-educacao-digital-midiatica-2026",
+      "job_id": "678a6451-9bbb-452c-ac28-320e3b8bdbe2",
+      "attempts": 1,
+      "base_publication": "ca-update-daacd86fafadb3a6d1252d0f1c13e78d",
+      "publication": "ca-update-f60967e81884a60a20fed6d32ca88237",
+      "raw_receipt": "ca-e648ef35a8f9d72c32aa",
+      "artifact_sha256": "d90325f3ed347da32791864169f4252948db6b6077008bdc899dac8939508fa1",
+      "counts": {
+        "items": 201834,
+        "sources": 303,
+        "relations": 57432
+      },
+      "validation": {
+        "valid": true,
+        "global_update_verified": true,
+        "human_pedagogical_approval": false
+      },
+      "publication_event": "10"
+    }
+  ],
+  "passed": false,
+  "error": "job 883cad13-8311-487d-ba75-1bb7498c8f35 exceeded 3600000 ms"
+}
