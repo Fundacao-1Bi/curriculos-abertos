@@ -1,0 +1,62 @@
+{
+ "source_id": "sp-curriculo-eief-isbn",
+ "written_at": "2026-10-30T13:38:15.305831+00:00",
+ "actor_id": "agent:sp-eief-whole-source-audit",
+ "steps_done": [
+  "Primary independent census of 401 pages (census_primary.py -> primary-census.json): 1987 organizer definition labels, 1685 organizer rows, 14 non-definition code tokens (p30/75/159/190 prose, p76 example table), 34 blank + 1 image-only + 16 divider pages, 350 pages with >=100 native chars.",
+  "Organizer adapter sp-eief-organizer-v1 (5802 records) built; self-check with ingest.source_uncoded_items: 0 literal failures.",
+  "Composed v4 sidecar = v3 (159, preserved exactly) + organizer (5802) = 5961.",
+  "Manifest entry patched via scripts/manifest-source-edit.py (uncoded_items_path v4, adapter_authority.coded_learning_ranges, structured_adapter_binding). Pre-patch entry and cache backed up in var/source-delta-sp-eief-20261030/.",
+  "Cache refreshed with OCR (TESSDATA_PREFIX=var/tessdata) ; whole_source_receipt.Context passes freshness checks; final records 6311 (350 page sections + 5961 adapter); Context.literal_failures() = 0.",
+  "Independent second verifier verify_independent.py (no adapter/pipeline imports; cells from vector rule segments, native words between label anchors): passed, 5961/5961 sidecar records verified, 13 controlled negatives rejected.",
+  "reconcile_sp_eief.py: census reconfirmed on PDF; PDF-only list census written to primary-census-lists.json (12 competency lists/96 items, 42 rights, 5 campo descriptions); 100 units (10 zero-record) over 15 parts; 6311 records bound once; gate reconciliation-gate/2.0 own_source_reconciled=true, whole_source_reconciled=true, issues=[]; literal_failures=0; receipt installed at data/manifests/reconciliation/sp-curriculo-eief-isbn.json.",
+  "Pipeline unittest: 115 tests OK."
+ ],
+ "files": {
+  "docs/evidence/source-audit-sp-whole/sp-eief/census_primary.py": "9e09d5881ac9bdd318d07b1ea042dc17eb80a0c5dd842462dcfeb520a90569d1",
+  "docs/evidence/source-audit-sp-whole/sp-eief/primary-census.json": "6c652a2f66b47294dea83f62c38cdcb19077c902add042afe01ebe5cfcb0014a",
+  "docs/evidence/source-audit-sp-whole/sp-eief/organizer-v1-build-report.json": "6430ececb765648219973b175efde81ffb7c76b0ccec73298163b1f3ebb7a2e6",
+  "docs/evidence/source-audit-sp-whole/sp-eief/manifest-patch-v4.json": "ddf14d5121ef10ef2fbbfd5140b903fbbdb6f52191a10b5bc0ab00f42c2d0f4b",
+  "docs/evidence/source-audit-sp-whole/sp-eief/compose-v4-proof.json": "334a99da6dbd9febb36bb91d2867a59d88ae4b79a1c593170fc7a6b781f8cb70",
+  "data/manifests/uncoded/sp-eief-organizer-v1-adapter.py": "0a8d33bc86847f3ab8d97f253327835d9073363fb2ca407399e6610e39fd7857",
+  "data/manifests/uncoded/sp-eief-organizer-v1-items.json": "e685ecab683ff89c26fc05d35081fd0c329c66ec93c560bde1c1d9466e7a5dee",
+  "data/manifests/uncoded/sp-eief-compose-v4.py": "fa7fd58d3c8cbafa7d031cabe2568b0e44699331ff9116a10e5d92d164302521",
+  "data/manifests/uncoded/sp-eief-structured-v4-items.json": "e959cb409a1cfdff60c28f25a8545ffdb71e96c0f231336ff1f0238056e0b9e7",
+  "data/manifests/bncc-southeast.json": "e825acea52cbb97283adf47fb03fd739ebbc35d2c8bfec4a310b20afc288ce2b",
+  "data/extracted/f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500-page-cell-v1.5.0.json": "53844970befdcd06ed6b98aeec75e06a5f1a8a8e70f75d688b36d07ce5b6d374",
+  "docs/evidence/source-audit-sp-whole/sp-eief/verify_independent.py": "e769dcde20970dbe2ffbdf0760725acfeb1de4710a5acfc182ec7bad28798a3d",
+  "docs/evidence/source-audit-sp-whole/sp-eief/independent-verification.json": "7c5d28d6bbd0bb9ed890539ae519e066a1793cfd515275b7758f3cb887e923c3",
+  "docs/evidence/source-audit-sp-whole/sp-eief/reconcile_sp_eief.py": "11281dd2699b11b2e4f255d0cb6fd29ae5f7058324f3adb3423144701e907e17",
+  "docs/evidence/source-audit-sp-whole/sp-eief/primary-census-lists.json": "56ec7026d5a63f0d2583c2a1c0b8202135d0aa871b6db0471761a7b448abc8c2",
+  "docs/evidence/source-audit-sp-whole/sp-eief/sp-curriculo-eief-isbn-whole-source-receipt.json": "9f1891878eb4a7b3c971f706b0061622ca056f293a150c2635160770ceea1d60",
+  "docs/evidence/source-audit-sp-whole/sp-eief/sp-curriculo-eief-isbn-whole-source-verification.json": "c24da046100932b831c8f8d93c7e30abd15cc3fc981cc35c1ae63b720cfd0abd",
+  "data/manifests/reconciliation/sp-curriculo-eief-isbn.json": "9f1891878eb4a7b3c971f706b0061622ca056f293a150c2635160770ceea1d60"
+ },
+ "manifest_patch_applied": true,
+ "cache_matches_extraction_config_hash": true,
+ "cache_ocr_pending": false,
+ "literal_sample_failures": {
+  "ca:sp-curriculo-eief-isbn:317cd079673cf50b145c (EI03EF09 p51)": "resolved",
+  "ca:sp-curriculo-eief-isbn:cb07a14c13cfb5999b81 (EI03ET08 p53)": "resolved",
+  "root_cause": "Hidden zero-width folio text spans (x0==x1≈564, y≈802-815) are collected by find_tables cell text (TEXT_COLLECT_STYLES flags) but not by standard page text; the generic ruled-cell parser appended \" 51\"/\" 53\" to the bottom-row EI cells. Systematic fix: all organizer cells on 47-53 and EF organizer pages are now rebuilt by the adapter from standard native clip text, and generic coded cells there are suppressed by adapter_authority. Current literal_failures over all 6311 records: 0."
+ },
+ "pending_next_steps": [
+  "Optional: var/venv-pipeline/bin/python scripts/uf-readiness-dryrun.py SP (UF readiness also needs the other mandatory SP Sources)."
+ ],
+ "resume_commands": [
+  "var/venv-pipeline/bin/python docs/evidence/source-audit-sp-whole/sp-eief/verify_independent.py",
+  "TESSDATA_PREFIX=$PWD/var/tessdata var/venv-pipeline/bin/python docs/evidence/source-audit-sp-whole/sp-eief/reconcile_sp_eief.py",
+  "cd pipeline && ../var/venv-pipeline/bin/python -c \"import whole_source_receipt as w; c=w.Context('sp-curriculo-eief-isbn'); print(len(c.items), len(c.literal_failures()))\"  # expect 6311 0",
+  "If cache stale: TESSDATA_PREFIX=$PWD/var/tessdata var/venv-pipeline/bin/python pipeline/ingest.py extract --source sp-curriculo-eief-isbn --force  (OCR prefix is required, otherwise ocr_pending=True)"
+ ],
+ "receipt_installed": "data/manifests/reconciliation/sp-curriculo-eief-isbn.json",
+ "gate_result": {
+  "own_source_reconciled": true,
+  "whole_source_reconciled": true,
+  "issues": [],
+  "literal_failures": 0,
+  "records": 6311,
+  "units": 100,
+  "zero_record_units": 10
+ }
+}

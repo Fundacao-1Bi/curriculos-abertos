@@ -1,0 +1,18 @@
+{
+ "uncoded_items_path": "data/manifests/uncoded/sp-em-whole-v2-items.json",
+ "adapter_authority": {
+  "coded_learning_ranges": [[73,111],[121,133],[154,167],[180,196],[205,209],[213,218],[223,229],[236,240],[245,249],[252,295]],
+  "mode": "sidecar_authoritative_for_every_printed_code_label_in_the_15_ruled_organizer_tables",
+  "scope_note": "Generic code cells inside these physical organizer pages are suppressed: the document adapter carries all 552 printed label occurrences (generic cells had lost 107 labels, swapped/truncated/merged bodies). Generic page-context sections are retained for all 300 pages with native text.",
+  "evidence": "docs/evidence/source-audit-sp-whole/sp-em/"
+ },
+ "structured_adapter_binding": {
+  "sidecar_sha256": "7a39f3534eb7745e4247ba9ff0a8af6cd102c005812056b57341175c28ce084a",
+  "records": 1123,
+  "actor_type": "automated",
+  "scope": "15 organizer tables (552 printed code-label occurrences, 407 FGB row cells, 44 itinerary methodological cells, 48 eixo + 4 grouping headings, 15 organizer headings), enumerated prose lists (CHS itinerary 1-6 + lead-in, Biologia 3, itinerary purposes 3, eixos I-IV), 40 v1 competency records (CNT list item 3 over-run corrected).",
+  "builder": "data/manifests/uncoded/sp-em-whole-v2-adapter.py",
+  "independent_verifier": "docs/evidence/source-audit-sp-whole/sp-em/verify_independent.py",
+  "whole_source_ready_claimed": false
+ }
+}

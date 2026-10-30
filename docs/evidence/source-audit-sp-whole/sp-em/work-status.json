@@ -1,0 +1,50 @@
+{
+ "source_id": "sp-curriculo-em-isbn",
+ "updated_at": "2026-10-30T13:25:24.957072+00:00",
+ "state": "RECONCILED V2 (own_source and whole_source reconciled, receipt installed)",
+ "steps": {
+  "1_primary_census": "done (552 printed code labels; FGB rows 103/43/26/32; 11 itinerary tables x 4 eixos; 6 structured enumerated lists; page 1 image-only cover)",
+  "2_adapter": "done: 1123 records; all pass ingest.evidence_check (tested before binding)",
+  "3_manifest_binding": "done via scripts/manifest-source-edit.py (uncoded_items_path -> sp-em-whole-v2-items.json, adapter_authority.coded_learning_ranges for the 15 organizer tables, structured_adapter_binding)",
+  "4_cache_refresh": "done 2026-10-30 with TESSDATA_PREFIX (backup in var/source-delta-sp-em-20261030/cache-before; log refresh.log); 745 generic + 1123 adapter -> 1423 final records",
+  "5_independent_verifier": "re-run after refresh: PASSED (C1-C8), problem_counts {}",
+  "6_reconcile_receipt": "done: reconcile_sp_em.py, 106 units (35 census-section page contexts, 4 FGB x 5, 11 IF x 4-5, 6 prose lists), 1423/1423 bound, literal_failures 0, gate own/whole=true, issues [], 6/6 negatives rejected, installed data/manifests/reconciliation/sp-curriculo-em-isbn.json. Competency and non-empty FGB column 2/3 counts derived in the script from vector column rules + native words (LGG 7/102/103, MAT 5/43/43, CNT 3/26/26, CHS 6/32/32; only empty cell p90 EM13LGG301 CAMPOS).",
+  "7_pipeline_tests": "done: 115 tests OK"
+ },
+ "manifest_patch_applied": true,
+ "cache_path": "data/extracted/e4c262968644a78181a308af6dea4f7d06260e4c232b61548479fe69b4d2da04-page-cell-v1.5.0.json",
+ "cache_sha256": "82e10e84612c959496c148ec5426e7c79c03bd05d119e8c87f6755204cb4372d",
+ "cache_matches_extraction_config_hash": true,
+ "files_sha256": {
+  "data/manifests/uncoded/sp-em-whole-v2-adapter.py": "360bc5390229f50e4a71a08a9aa6177b1b28f77f636383c0fd4eb3a5a12f09ad",
+  "data/manifests/uncoded/sp-em-whole-v2-items.json": "7a39f3534eb7745e4247ba9ff0a8af6cd102c005812056b57341175c28ce084a",
+  "docs/evidence/source-audit-sp-whole/sp-em/census_primary.py": "6279fcde1ed7383654bbae0995c6631be40ceb68d5ab5ffff736497e919cafe7",
+  "docs/evidence/source-audit-sp-whole/sp-em/sp-em-primary-census.json": "c4c806d87847c17f97b71badb6a3d2300e1fe07e527cdafb7653f451cc1001ae",
+  "docs/evidence/source-audit-sp-whole/sp-em/verify_independent.py": "e139e99797c28076861cdd6743a562c2591245673a832d259bcbe61590a734ee",
+  "docs/evidence/source-audit-sp-whole/sp-em/sp-em-independent-verification.json": "9e1a14ea6bcf087c3c5420b8c98ac1c4d016a0a729753f96ca7eeddc2edb6c41",
+  "docs/evidence/source-audit-sp-whole/sp-em/manifest-patch.json": "289f54f702ae688c8bc0df493e1120dbd41eafe153cb248d15f1a3188605244d",
+  "data/manifests/bncc-southeast.json": "e825acea52cbb97283adf47fb03fd739ebbc35d2c8bfec4a310b20afc288ce2b",
+  "docs/evidence/source-audit-sp-whole/sp-em/reconcile_sp_em.py": "2c7571e0821171b7f7102d066286e8697593878848854451d72388b641106598",
+  "docs/evidence/source-audit-sp-whole/sp-em/sp-curriculo-em-isbn-whole-source-receipt.json": "1377658466292dd7729e07a5e09ba596f4d3cc2c257de132113e4511adebd1e2",
+  "docs/evidence/source-audit-sp-whole/sp-em/sp-curriculo-em-isbn-whole-source-verification.json": "6607d7f868c8cdfc6855b491d6b8b102f8ca05bb308e15ed571bb7148ddabcd2",
+  "data/manifests/reconciliation/sp-curriculo-em-isbn.json": "1377658466292dd7729e07a5e09ba596f4d3cc2c257de132113e4511adebd1e2"
+ },
+ "defects_found": [
+  "generic cells: 107 of 552 printed code labels missing (445 extracted)",
+  "code/text swaps between neighbouring cells (e.g. EMIFMAT02/03 p252, EMIFCHS02/03 p258, EMIFCNT02/03 p264/279)",
+  "page-crossing bodies truncated (e.g. EM13LP25 p87, EMIFCG11 p239/270/293, EMIFCNT03 p223, EM13CHS602 p194)",
+  "neighbour label merged into body (EMIFMAT05+(EMIFMAT 06) p254; EMIFMAT07 + (EMIFMAT08) p215)",
+  "v1 sidecar: CNT list competency 3 (p152) over-ran ~1000 chars of following prose; corrected",
+  "uncoded content previously unstructured: objetos de conhecimento/campos/unidades/categorias per FGB row, pressupostos metodológicos per eixo, eixo headings, CHS itinerary expectations 1-6, Biologia 3 items, itinerary purposes 3, eixos I-IV"
+ ],
+ "source_findings": [
+  "EM13LGG301 row (p90) has an empty CAMPOS DE ATUAÇÃO SOCIAL cell in the original",
+  "EMIFCG06 printed twice in integrated tables (under Processos criativos and Mediação) - both occurrences kept",
+  "EMIFCG09 absent from several integrated tables as printed - not invented",
+  "23 SP wording variants vs national texts confirmed in the PDF (e.g. EMIFMAT03 lacks \"cultural, de processos\" on p213)"
+ ],
+ "next_steps": [
+  "var/venv-pipeline/bin/python scripts/uf-readiness-dryrun.py SP --json ...  # confirm EM scopes clear"
+ ],
+ "cache_ocr_pending": false
+}

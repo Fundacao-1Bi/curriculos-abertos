@@ -1,0 +1,1013 @@
+{
+  "UF_ready": false,
+  "command": "TESSDATA_PREFIX=$PWD/var/tessdata var/venv-pipeline/bin/python docs/evidence/source-audit-sp-whole/sp-eief/reconcile_sp_eief.py",
+  "current_applicability_verified": false,
+  "documentary_observations": [
+    "Hidden zero-width folio glyphs (x0==x1, census degenerate_zero_width_spans on 70 pages) were captured by the generic ruled-cell parser into bottom cells of p51/p53 (\" 51\"/\" 53\"); the organizer adapter rebuilds those cells from standard native text and the independent verifier drops zero-width words; a negative re-appending \" 51\" is rejected.",
+    "Vertical table rules on Geografia/História pages (e.g. p316, p323, p350) are stroked in pieces with gaps; the independent verifier bounds cells by vertical strokes inside the row band rather than strokes crossing each point.",
+    "Nonstandard printed identifiers preserved literally: EIO2TS04/EIO3TS04 (p50, letter O), EF069AR16 (p169), EF9AR10 (Arte). Joint labels (EF02HI04 e EF02HI05) p345, (EF08HI08 e EF08HI09) p359, (EF09HI29 e EF09HI30) p367 share one statement. 237 labels sit mid-cell (B/C/D desmembramentos).",
+    "p76 reproduces 4 organizer rows as an illustrative table (\"Como se pode ver no quadro anterior\"); recorded as referencia_no_documento only.",
+    "Non-definition code tokens: p30 (5, explanation of the asterisk/letter convention), p75 (1), p159 (2), p190 (2) are prose citations; no records.",
+    "Census assigns blank pages 388-390 to the Ensino Religioso extent (they precede \"Documentos oficiais\" on p391); the recorded decision places p388-401 with the references in Fundamentos. They carry no records."
+  ],
+  "engine": {
+    "implementation": "CPython",
+    "pillow": "13.0.0",
+    "pymupdf": "1.26.7",
+    "python": "3.11.15"
+  },
+  "gate_result": {
+    "accounted_item_count": 6311,
+    "actual_item_count": 6311,
+    "artifact_sha256": "f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500",
+    "expected_scope_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      282,
+      283,
+      284,
+      285,
+      286,
+      287,
+      288,
+      289,
+      290,
+      291,
+      292,
+      293,
+      294,
+      295,
+      296,
+      297,
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319,
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      351,
+      352,
+      353,
+      354,
+      355,
+      356,
+      357,
+      358,
+      359,
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368,
+      369,
+      370,
+      371,
+      372,
+      373,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384,
+      385,
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399,
+      400,
+      401
+    ],
+    "extraction_revision": "page-cell-v1.5.0",
+    "gate_version": "reconciliation-gate/2.0",
+    "issues": [],
+    "own_source_reconciled": true,
+    "part_results": [
+      {
+        "name": "Fundamentos e competências gerais",
+        "status": "content_verified_part",
+        "verified_item_count": 103
+      },
+      {
+        "name": "EI — O eu, o outro e o nós",
+        "status": "content_verified_part",
+        "verified_item_count": 32
+      },
+      {
+        "name": "EI — Corpo, gestos e movimentos",
+        "status": "content_verified_part",
+        "verified_item_count": 26
+      },
+      {
+        "name": "EI — Traços, sons, cores e formas",
+        "status": "content_verified_part",
+        "verified_item_count": 23
+      },
+      {
+        "name": "EI — Escuta, fala, pensamento e imaginação",
+        "status": "content_verified_part",
+        "verified_item_count": 38
+      },
+      {
+        "name": "EI — Espaços, tempos, quantidades, relações e transformações",
+        "status": "content_verified_part",
+        "verified_item_count": 34
+      },
+      {
+        "name": "EF — Língua Portuguesa",
+        "status": "content_verified_part",
+        "verified_item_count": 1850
+      },
+      {
+        "name": "EF — Arte",
+        "status": "content_verified_part",
+        "verified_item_count": 688
+      },
+      {
+        "name": "EF — Educação Física",
+        "status": "content_verified_part",
+        "verified_item_count": 467
+      },
+      {
+        "name": "EF — Língua Inglesa",
+        "status": "content_verified_part",
+        "verified_item_count": 373
+      },
+      {
+        "name": "EF — Matemática",
+        "status": "content_verified_part",
+        "verified_item_count": 849
+      },
+      {
+        "name": "EF — Ciências",
+        "status": "content_verified_part",
+        "verified_item_count": 422
+      },
+      {
+        "name": "EF — Geografia",
+        "status": "content_verified_part",
+        "verified_item_count": 654
+      },
+      {
+        "name": "EF — História",
+        "status": "content_verified_part",
+        "verified_item_count": 541
+      },
+      {
+        "name": "EF — Ensino Religioso",
+        "status": "content_verified_part",
+        "verified_item_count": 211
+      }
+    ],
+    "partial_parts": [],
+    "reconciled_parts": [
+      "EF — Arte",
+      "EF — Ciências",
+      "EF — Educação Física",
+      "EF — Ensino Religioso",
+      "EF — Geografia",
+      "EF — História",
+      "EF — Língua Inglesa",
+      "EF — Língua Portuguesa",
+      "EF — Matemática",
+      "EI — Corpo, gestos e movimentos",
+      "EI — Escuta, fala, pensamento e imaginação",
+      "EI — Espaços, tempos, quantidades, relações e transformações",
+      "EI — O eu, o outro e o nós",
+      "EI — Traços, sons, cores e formas",
+      "Fundamentos e competências gerais"
+    ],
+    "required_parts": [
+      "EF — Arte",
+      "EF — Ciências",
+      "EF — Educação Física",
+      "EF — Ensino Religioso",
+      "EF — Geografia",
+      "EF — História",
+      "EF — Língua Inglesa",
+      "EF — Língua Portuguesa",
+      "EF — Matemática",
+      "EI — Corpo, gestos e movimentos",
+      "EI — Escuta, fala, pensamento e imaginação",
+      "EI — Espaços, tempos, quantidades, relações e transformações",
+      "EI — O eu, o outro e o nós",
+      "EI — Traços, sons, cores e formas",
+      "Fundamentos e competências gerais"
+    ],
+    "required_related_documents": [],
+    "source_id": "sp-curriculo-eief-isbn",
+    "unaccounted_item_ids": [],
+    "whole_source_reconciled": true
+  },
+  "installed": "data/manifests/reconciliation/sp-curriculo-eief-isbn.json",
+  "literal_failures": [],
+  "literal_fragments_checked": 8776,
+  "negative_probes": [
+    {
+      "issues": [
+        "inventory_unit:sp-curriculo-eief-isbn:fundamentos-e-competencias-gerais:page_contexts:checked_item_absent:ca:sp-curriculo-eief-isbn:b60f1876f8555ed212c3",
+        "inventory_unit:sp-curriculo-eief-isbn:fundamentos-e-competencias-gerais:page_contexts:verified_records_do_not_match_independent_denominator",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ],
+      "mutation": "missing_one_record",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "part_content_proof_failed:EF — Ensino Religioso",
+        "inventory_unit:sp-curriculo-eief-isbn:ef-ensino-religioso:objects:item_text_changed_or_unbound:ca:sp-curriculo-eief-isbn:section:org:er:p387:t0:r9:objeto_conhecimento",
+        "inventory_unit:sp-curriculo-eief-isbn:ef-ensino-religioso:objects:verified_records_do_not_match_independent_denominator",
+        "actual_records_not_fully_accounted"
+      ],
+      "mutation": "last_record_text_changed",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "declared_source_pages_not_fully_processed"
+      ],
+      "mutation": "missing_one_declared_page",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "document_pages_not_fully_inventoried"
+      ],
+      "mutation": "missing_one_inventory_unit",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "actual_records_not_fully_accounted"
+      ],
+      "mutation": "extra_unaccounted_record",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "mandatory_inventory_part_mismatch",
+        "independent_inventory_source_scope_mismatch",
+        "mandatory_parts_not_fully_verified"
+      ],
+      "mutation": "editorial_scope_changed",
+      "rejected": true
+    }
+  ],
+  "part_assignment_decision": [
+    "Part assignment is the classification of agent:sp-eief-whole-source-audit, NOT declared by the document: general stage texts and texts of areas with more than one component (EI p31-46, EF p55-66, Ciências Humanas p295-300, references p388-401) go to \"Fundamentos e competências gerais\"; single-component areas (Matemática p219-222, Ciências da Natureza p267-274, Ensino Religioso p369-376) stay with their own component.",
+    "EI organizer pages 47-53 hold several campos; their page-context records are assigned to the campo of the first definition label printed on the page (census token part) - agent classification, not declared by the document."
+  ],
+  "production_incorporation_verified": false,
+  "receipt_path": "docs/evidence/source-audit-sp-whole/sp-eief/sp-curriculo-eief-isbn-whole-source-receipt.json",
+  "receipt_sha256": "9f1891878eb4a7b3c971f706b0061622ca056f293a150c2635160770ceea1d60",
+  "records_checked": 6311,
+  "source_id": "sp-curriculo-eief-isbn",
+  "unit_counts": {
+    "ef-arte:competencies": [
+      9,
+      9
+    ],
+    "ef-arte:definitions": [
+      217,
+      217
+    ],
+    "ef-arte:dimensions": [
+      217,
+      217
+    ],
+    "ef-arte:dividers": [
+      1,
+      1
+    ],
+    "ef-arte:list_headings": [
+      1,
+      1
+    ],
+    "ef-arte:no-text-pages": [
+      0,
+      0
+    ],
+    "ef-arte:objects": [
+      217,
+      217
+    ],
+    "ef-arte:page_contexts": [
+      26,
+      26
+    ],
+    "ef-ciencias:competencies": [
+      8,
+      8
+    ],
+    "ef-ciencias:definitions": [
+      141,
+      141
+    ],
+    "ef-ciencias:dimensions": [
+      124,
+      124
+    ],
+    "ef-ciencias:dividers": [
+      2,
+      2
+    ],
+    "ef-ciencias:list_headings": [
+      1,
+      1
+    ],
+    "ef-ciencias:no-text-pages": [
+      0,
+      0
+    ],
+    "ef-ciencias:objects": [
+      124,
+      124
+    ],
+    "ef-ciencias:page_contexts": [
+      22,
+      22
+    ],
+    "ef-educacao-fisica:competencies": [
+      10,
+      10
+    ],
+    "ef-educacao-fisica:definitions": [
+      148,
+      148
+    ],
+    "ef-educacao-fisica:dimensions": [
+      143,
+      143
+    ],
+    "ef-educacao-fisica:dividers": [
+      1,
+      1
+    ],
+    "ef-educacao-fisica:list_headings": [
+      1,
+      1
+    ],
+    "ef-educacao-fisica:no-text-pages": [
+      0,
+      0
+    ],
+    "ef-educacao-fisica:objects": [
+      143,
+      143
+    ],
+    "ef-educacao-fisica:page_contexts": [
+      21,
+      21
+    ],
+    "ef-ensino-religioso:competencies": [
+      6,
+      6
+    ],
+    "ef-ensino-religioso:definitions": [
+      63,
+      63
+    ],
+    "ef-ensino-religioso:dimensions": [
+      63,
+      63
+    ],
+    "ef-ensino-religioso:dividers": [
+      2,
+      2
+    ],
+    "ef-ensino-religioso:list_headings": [
+      1,
+      1
+    ],
+    "ef-ensino-religioso:no-text-pages": [
+      0,
+      0
+    ],
+    "ef-ensino-religioso:objects": [
+      63,
+      63
+    ],
+    "ef-ensino-religioso:page_contexts": [
+      13,
+      13
+    ],
+    "ef-geografia:competencies": [
+      7,
+      7
+    ],
+    "ef-geografia:definitions": [
+      213,
+      213
+    ],
+    "ef-geografia:dimensions": [
+      200,
+      200
+    ],
+    "ef-geografia:dividers": [
+      1,
+      1
+    ],
+    "ef-geografia:list_headings": [
+      1,
+      1
+    ],
+    "ef-geografia:no-text-pages": [
+      0,
+      0
+    ],
+    "ef-geografia:objects": [
+      200,
+      200
+    ],
+    "ef-geografia:page_contexts": [
+      32,
+      32
+    ],
+    "ef-historia:competencies": [
+      9,
+      9
+    ],
+    "ef-historia:definitions": [
+      180,
+      180
+    ],
+    "ef-historia:dimensions": [
+      160,
+      160
+    ],
+    "ef-historia:dividers": [
+      1,
+      1
+    ],
+    "ef-historia:list_headings": [
+      1,
+      1
+    ],
+    "ef-historia:no-text-pages": [
+      0,
+      0
+    ],
+    "ef-historia:objects": [
+      160,
+      160
+    ],
+    "ef-historia:page_contexts": [
+      30,
+      30
+    ],
+    "ef-lingua-inglesa:competencies": [
+      6,
+      6
+    ],
+    "ef-lingua-inglesa:definitions": [
+      88,
+      88
+    ],
+    "ef-lingua-inglesa:dimensions": [
+      176,
+      176
+    ],
+    "ef-lingua-inglesa:dividers": [
+      1,
+      1
+    ],
+    "ef-lingua-inglesa:list_headings": [
+      1,
+      1
+    ],
+    "ef-lingua-inglesa:no-text-pages": [
+      0,
+      0
+    ],
+    "ef-lingua-inglesa:objects": [
+      88,
+      88
+    ],
+    "ef-lingua-inglesa:page_contexts": [
+      13,
+      13
+    ],
+    "ef-lingua-portuguesa:competencies": [
+      10,
+      10
+    ],
+    "ef-lingua-portuguesa:definitions": [
+      576,
+      576
+    ],
+    "ef-lingua-portuguesa:dimensions": [
+      784,
+      784
+    ],
+    "ef-lingua-portuguesa:dividers": [
+      1,
+      1
+    ],
+    "ef-lingua-portuguesa:example_references": [
+      4,
+      4
+    ],
+    "ef-lingua-portuguesa:list_headings": [
+      1,
+      1
+    ],
+    "ef-lingua-portuguesa:no-text-pages": [
+      0,
+      0
+    ],
+    "ef-lingua-portuguesa:objects": [
+      392,
+      392
+    ],
+    "ef-lingua-portuguesa:page_contexts": [
+      82,
+      82
+    ],
+    "ef-matematica:competencies": [
+      8,
+      8
+    ],
+    "ef-matematica:definitions": [
+      265,
+      265
+    ],
+    "ef-matematica:dimensions": [
+      265,
+      265
+    ],
+    "ef-matematica:dividers": [
+      2,
+      2
+    ],
+    "ef-matematica:list_headings": [
+      1,
+      1
+    ],
+    "ef-matematica:no-text-pages": [
+      0,
+      0
+    ],
+    "ef-matematica:objects": [
+      265,
+      265
+    ],
+    "ef-matematica:page_contexts": [
+      43,
+      43
+    ],
+    "ei-corpo-gestos-e-movimentos:definitions": [
+      15,
+      15
+    ],
+    "ei-corpo-gestos-e-movimentos:ei_structure": [
+      4,
+      4
+    ],
+    "ei-corpo-gestos-e-movimentos:page_contexts": [
+      1,
+      1
+    ],
+    "ei-corpo-gestos-e-movimentos:rights": [
+      6,
+      6
+    ],
+    "ei-escuta-fala-pensamento-e-imaginacao:definitions": [
+      27,
+      27
+    ],
+    "ei-escuta-fala-pensamento-e-imaginacao:ei_structure": [
+      4,
+      4
+    ],
+    "ei-escuta-fala-pensamento-e-imaginacao:page_contexts": [
+      1,
+      1
+    ],
+    "ei-escuta-fala-pensamento-e-imaginacao:rights": [
+      6,
+      6
+    ],
+    "ei-espacos-tempos-quantidades-relacoes-e-transformacoes:definitions": [
+      22,
+      22
+    ],
+    "ei-espacos-tempos-quantidades-relacoes-e-transformacoes:ei_structure": [
+      4,
+      4
+    ],
+    "ei-espacos-tempos-quantidades-relacoes-e-transformacoes:page_contexts": [
+      2,
+      2
+    ],
+    "ei-espacos-tempos-quantidades-relacoes-e-transformacoes:rights": [
+      6,
+      6
+    ],
+    "ei-o-eu-o-outro-e-o-nos:definitions": [
+      20,
+      20
+    ],
+    "ei-o-eu-o-outro-e-o-nos:ei_structure": [
+      4,
+      4
+    ],
+    "ei-o-eu-o-outro-e-o-nos:page_contexts": [
+      2,
+      2
+    ],
+    "ei-o-eu-o-outro-e-o-nos:rights": [
+      6,
+      6
+    ],
+    "ei-tracos-sons-cores-e-formas:definitions": [
+      12,
+      12
+    ],
+    "ei-tracos-sons-cores-e-formas:ei_structure": [
+      4,
+      4
+    ],
+    "ei-tracos-sons-cores-e-formas:page_contexts": [
+      1,
+      1
+    ],
+    "ei-tracos-sons-cores-e-formas:rights": [
+      6,
+      6
+    ],
+    "fundamentos-e-competencias-gerais:campo_descriptions": [
+      5,
+      5
+    ],
+    "fundamentos-e-competencias-gerais:competencies": [
+      23,
+      23
+    ],
+    "fundamentos-e-competencias-gerais:dividers": [
+      4,
+      4
+    ],
+    "fundamentos-e-competencias-gerais:list_headings": [
+      4,
+      4
+    ],
+    "fundamentos-e-competencias-gerais:no-text-pages": [
+      0,
+      0
+    ],
+    "fundamentos-e-competencias-gerais:page_contexts": [
+      61,
+      61
+    ],
+    "fundamentos-e-competencias-gerais:rights": [
+      6,
+      6
+    ]
+  }
+}

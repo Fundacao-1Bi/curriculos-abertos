@@ -1,0 +1,99 @@
+{
+  "UF_ready": false,
+  "command": "var/venv-pipeline/bin/python docs/evidence/source-audit-sp-whole/reconcile_seduc156.py",
+  "current_applicability_verified": false,
+  "engine": {
+    "implementation": "CPython",
+    "pillow": "13.0.0",
+    "pymupdf": "1.26.7",
+    "python": "3.11.15"
+  },
+  "gate_result": {
+    "accounted_item_count": 88,
+    "actual_item_count": 88,
+    "artifact_sha256": "39a8918214b36291b1c7a19dda605f2c1168fdcab1730680feecdd8965e08960",
+    "expected_scope_pages": [
+      1
+    ],
+    "extraction_revision": "page-cell-v1.5.0",
+    "gate_version": "reconciliation-gate/2.0",
+    "issues": [],
+    "own_source_reconciled": true,
+    "part_results": [
+      {
+        "name": "Artigos1–16 da Resolução156/2025; anexos em fonte complementar própria",
+        "status": "content_verified_part",
+        "verified_item_count": 88
+      }
+    ],
+    "partial_parts": [],
+    "reconciled_parts": [
+      "Artigos1–16 da Resolução156/2025; anexos em fonte complementar própria"
+    ],
+    "required_parts": [
+      "Artigos1–16 da Resolução156/2025; anexos em fonte complementar própria"
+    ],
+    "required_related_documents": [],
+    "source_id": "sp-seduc156-corpo-2026",
+    "unaccounted_item_ids": [],
+    "whole_source_reconciled": true
+  },
+  "installed": "data/manifests/reconciliation/sp-seduc156-corpo-2026.json",
+  "literal_failures": [],
+  "literal_fragments_checked": 256,
+  "negative_probes": [
+    {
+      "issues": [
+        "inventory_unit:sp-seduc156-corpo-2026:page-context:checked_item_absent:ca:sp-seduc156-corpo-2026:377be900f11bccc5a6f4",
+        "inventory_unit:sp-seduc156-corpo-2026:page-context:verified_records_do_not_match_independent_denominator"
+      ],
+      "mutation": "missing_one_record",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "part_content_proof_failed:Artigos1–16 da Resolução156/2025; anexos em fonte complementar própria",
+        "inventory_unit:sp-seduc156-corpo-2026:act-hierarchy:item_text_changed_or_unbound:ca:sp-seduc156-corpo-2026:section:sp-seduc156:line:291",
+        "inventory_unit:sp-seduc156-corpo-2026:act-hierarchy:verified_records_do_not_match_independent_denominator",
+        "actual_records_not_fully_accounted"
+      ],
+      "mutation": "last_record_text_changed",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "declared_source_pages_not_fully_processed"
+      ],
+      "mutation": "missing_one_declared_page",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "actual_records_not_fully_accounted"
+      ],
+      "mutation": "missing_one_inventory_unit",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "actual_records_not_fully_accounted"
+      ],
+      "mutation": "extra_unaccounted_record",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "mandatory_inventory_part_mismatch",
+        "independent_inventory_source_scope_mismatch",
+        "mandatory_parts_not_fully_verified"
+      ],
+      "mutation": "editorial_scope_changed",
+      "rejected": true
+    }
+  ],
+  "production_incorporation_verified": false,
+  "receipt_path": "docs/evidence/source-audit-sp-whole/sp-seduc156-corpo-2026-whole-source-receipt.json",
+  "receipt_sha256": "172514576d4fa175ce698975144c24d7a85df1840ee87fc29948c1a8d6bee15f",
+  "records_checked": 88,
+  "source_id": "sp-seduc156-corpo-2026"
+}

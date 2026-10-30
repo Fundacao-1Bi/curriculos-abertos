@@ -1,0 +1,229 @@
+{
+ "source_id": "sp-curriculo-eief-isbn",
+ "artifact_sha256": "f66612bba5f7a5e282a05bdcdfaad9761f34a2097b701f02b55321f1d9ffb500",
+ "items_path": "data/manifests/uncoded/sp-eief-structured-v4-items.json",
+ "items_sha256": "e959cb409a1cfdff60c28f25a8545ffdb71e96c0f231336ff1f0238056e0b9e7",
+ "census_path": "docs/evidence/source-audit-sp-whole/sp-eief/primary-census.json",
+ "census_sha256": "6c652a2f66b47294dea83f62c38cdcb19077c902add042afe01ebe5cfcb0014a",
+ "records": 5961,
+ "organizer_pages_reconstructed": 212,
+ "label_row_bands_checked": 1688,
+ "verified_by_check": {
+  "O2_ei_objectives": 96,
+  "O5_example_references": 4,
+  "O2_ef_skills": 1891,
+  "O3_dimensions": 2132,
+  "O3_objects": 1652,
+  "O4_age_headers": 15,
+  "V2_dividers": 16,
+  "V1_competencies": 96,
+  "V1_competency_groups": 12,
+  "V2_general_rights": 6,
+  "V2_rights_group": 1,
+  "V2_campo_headings": 5,
+  "V2_campo_rights": 30,
+  "V2_campo_descriptions": 5
+ },
+ "records_verified": 5961,
+ "failures": [],
+ "negatives": [
+  {
+   "mutation": "drop_one_skill",
+   "rejected": true,
+   "first_failures": [
+    [
+     "O2_records_for_label",
+     "169",
+     "EF069AR16",
+     "0"
+    ]
+   ]
+  },
+  {
+   "mutation": "one_character_changed_in_mid_cell_split_skill",
+   "rejected": true,
+   "first_failures": [
+    [
+     "O2_statement_differs",
+     "org:lp:p85:t0:r10:EF01LP10B",
+     "Recitor as letras do alfabeto sequencialmente.",
+     "Recitar as letras do alfabeto sequencialmente."
+    ]
+   ]
+  },
+  {
+   "mutation": "swap_statements_across_mid_cell_label",
+   "rejected": true,
+   "first_failures": [
+    [
+     "O2_statement_differs",
+     "org:lp:p85:t0:r10:EF01LP10A",
+     "Recitar as letras do alfabeto sequencialmente.",
+     "Nomear as letras do alfabeto."
+    ],
+    [
+     "O2_statement_differs",
+     "org:lp:p85:t0:r10:EF01LP10B",
+     "Nomear as letras do alfabeto.",
+     "Recitar as letras do alfabeto sequencialmente."
+    ]
+   ]
+  },
+  {
+   "mutation": "joint_label_code_relabelled",
+   "rejected": true,
+   "first_failures": [
+    [
+     "O2_records_for_label",
+     "345",
+     "EF02HI05",
+     "0"
+    ],
+    [
+     "O2_records_for_label",
+     "345",
+     "EF02HI06",
+     "2"
+    ],
+    [
+     "O1_coded_record_without_printed_label",
+     "org:hi:p345:t0:r2:EF02HI05"
+    ]
+   ]
+  },
+  {
+   "mutation": "drop_one_object_of_knowledge",
+   "rejected": true,
+   "first_failures": [
+    [
+     "O3_records_for_cell",
+     "234",
+     "(453.8, 585.3)",
+     "objeto_conhecimento"
+    ]
+   ]
+  },
+  {
+   "mutation": "dimension_cell_text_extended",
+   "rejected": true,
+   "first_failures": [
+    [
+     "O3_cell_text_differs",
+     "org:ge:p313:t0:r4:unidade_tematica",
+     "O sujeito e seu lugar no mundo Natureza",
+     "O sujeito e seu lugar no mundo"
+    ]
+   ]
+  },
+  {
+   "mutation": "year_not_from_same_row",
+   "rejected": true,
+   "first_failures": [
+    [
+     "O3_year_not_same_row_cell",
+     "org:ci:p279:t0:r4:EF01CI01A",
+     "9º",
+     "1º"
+    ]
+   ]
+  },
+  {
+   "mutation": "age_group_from_other_column",
+   "rejected": true,
+   "first_failures": [
+    [
+     "O4_age_group_not_from_column",
+     "org:ei:p47:r16:c1:EI01EO01",
+     "Crianças Pequenas (4 anos a 5 anos e 11 meses)",
+     "3"
+    ]
+   ]
+  },
+  {
+   "mutation": "hidden_folio_glyph_appended_p51",
+   "rejected": true,
+   "first_failures": [
+    [
+     "O2_statement_differs",
+     "org:ei:p51:r7:c1:EI01EF09",
+     "Conhecer e manipular diferentes instrumentos e suportes de e",
+     "Conhecer e manipular diferentes instrumentos e suportes de e"
+    ]
+   ]
+  },
+  {
+   "mutation": "drop_one_numbered_competency",
+   "rejected": true,
+   "first_failures": [
+    [
+     "V1_numbered_list_count",
+     "competency-group:arte",
+     "[1, 2, 3, 4, 5, 6, 7, 8, 9]",
+     "8"
+    ],
+    [
+     "C_records_not_verified",
+     "9",
+     "['competency-group:arte', 'arte:number:2', 'arte:number:3', 'arte:number:4', 'arte:number:5', 'arte:number:6', 'arte:number:7', 'arte:number:8', 'arte:number:9']"
+    ]
+   ]
+  },
+  {
+   "mutation": "drop_one_campo_right",
+   "rejected": true,
+   "first_failures": [
+    [
+     "V2_campo_rights",
+     "50",
+     "['conviver', 'brincar', 'explorar', 'participar', 'expressar', 'conhecer-se']",
+     "5"
+    ],
+    [
+     "C_records_not_verified",
+     "5",
+     "['ei-field-rights:p50:right:conviver', 'ei-field-rights:p50:right:brincar', 'ei-field-rights:p50:right:participar', 'ei-field-rights:p50:right:expressar', 'ei-field-rights:p50:right:conhecer-se']"
+    ]
+   ]
+  },
+  {
+   "mutation": "example_reference_promoted_to_skill",
+   "rejected": true,
+   "first_failures": [
+    [
+     "O5_example_code_not_reference",
+     "org:lp:p76:t0:r6:EF03LP18"
+    ]
+   ]
+  },
+  {
+   "mutation": "duplicate_skill_record",
+   "rejected": true,
+   "first_failures": [
+    [
+     "O2_records_for_label",
+     "169",
+     "EF069AR16",
+     "2"
+    ],
+    [
+     "O1_coded_record_without_printed_label",
+     "sp-nonstandard-code:p169:EF069AR16"
+    ],
+    [
+     "O1_coded_record_without_printed_label",
+     "probe:duplicate"
+    ]
+   ]
+  }
+ ],
+ "all_negatives_rejected": true,
+ "passed": true,
+ "engine": {
+  "PyMuPDF": "1.26.7",
+  "python": "3.11.15"
+ },
+ "independence": "No import of the organizer adapter, v4 composer, census or pipeline modules. Cells from vector rule segments (not find_tables), text from get_text(words) by word centre (not clipped get_text), zero-width hidden glyphs dropped.",
+ "command": "var/venv-pipeline/bin/python docs/evidence/source-audit-sp-whole/sp-eief/verify_independent.py",
+ "actor_type": "automated",
+ "actor_id": "agent:sp-eief-whole-source-audit:independent-verifier"
+}

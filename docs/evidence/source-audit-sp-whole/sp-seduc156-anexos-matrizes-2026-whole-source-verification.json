@@ -1,0 +1,170 @@
+{
+  "UF_ready": false,
+  "command": "var/venv-pipeline/bin/python docs/evidence/source-audit-sp-whole/reconcile_seduc156.py",
+  "current_applicability_verified": false,
+  "engine": {
+    "implementation": "CPython",
+    "pillow": "13.0.0",
+    "pymupdf": "1.26.7",
+    "python": "3.11.15"
+  },
+  "gate_result": {
+    "accounted_item_count": 38,
+    "actual_item_count": 38,
+    "artifact_sha256": "2b3df1722955b4516115039de0f5598f6632f85eaaf45e1277831d0fa3fd948d",
+    "expected_scope_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "extraction_revision": "page-cell-v1.5.0",
+    "gate_version": "reconciliation-gate/2.0",
+    "issues": [],
+    "own_source_reconciled": true,
+    "part_results": [
+      {
+        "name": "Anexo I — diurno MAT/CNT (PDF1)",
+        "status": "content_verified_part",
+        "verified_item_count": 3
+      },
+      {
+        "name": "Anexo II — diurno LGG/CHS (PDF1–2)",
+        "status": "content_verified_part",
+        "verified_item_count": 4
+      },
+      {
+        "name": "Anexo III — noturno MAT/CNT (PDF2–3)",
+        "status": "content_verified_part",
+        "verified_item_count": 5
+      },
+      {
+        "name": "Anexo IV — noturno LGG/CHS (PDF3–4)",
+        "status": "content_verified_part",
+        "verified_item_count": 4
+      },
+      {
+        "name": "Anexo V — PEI7 MAT/CNT (PDF4–5)",
+        "status": "content_verified_part",
+        "verified_item_count": 4
+      },
+      {
+        "name": "Anexo VI — PEI7 LGG/CHS (PDF6)",
+        "status": "content_verified_part",
+        "verified_item_count": 3
+      },
+      {
+        "name": "Anexo VII — PEI9 MAT/CNT (PDF7)",
+        "status": "content_verified_part",
+        "verified_item_count": 4
+      },
+      {
+        "name": "Anexo VIII — PEI9 LGG/CHS (PDF8)",
+        "status": "content_verified_part",
+        "verified_item_count": 2
+      },
+      {
+        "name": "Anexo IX — formação docente/componentes (PDF10–13)",
+        "status": "content_verified_part",
+        "verified_item_count": 9
+      }
+    ],
+    "partial_parts": [],
+    "reconciled_parts": [
+      "Anexo I — diurno MAT/CNT (PDF1)",
+      "Anexo II — diurno LGG/CHS (PDF1–2)",
+      "Anexo III — noturno MAT/CNT (PDF2–3)",
+      "Anexo IV — noturno LGG/CHS (PDF3–4)",
+      "Anexo IX — formação docente/componentes (PDF10–13)",
+      "Anexo V — PEI7 MAT/CNT (PDF4–5)",
+      "Anexo VI — PEI7 LGG/CHS (PDF6)",
+      "Anexo VII — PEI9 MAT/CNT (PDF7)",
+      "Anexo VIII — PEI9 LGG/CHS (PDF8)"
+    ],
+    "required_parts": [
+      "Anexo I — diurno MAT/CNT (PDF1)",
+      "Anexo II — diurno LGG/CHS (PDF1–2)",
+      "Anexo III — noturno MAT/CNT (PDF2–3)",
+      "Anexo IV — noturno LGG/CHS (PDF3–4)",
+      "Anexo IX — formação docente/componentes (PDF10–13)",
+      "Anexo V — PEI7 MAT/CNT (PDF4–5)",
+      "Anexo VI — PEI7 LGG/CHS (PDF6)",
+      "Anexo VII — PEI9 MAT/CNT (PDF7)",
+      "Anexo VIII — PEI9 LGG/CHS (PDF8)"
+    ],
+    "required_related_documents": [],
+    "source_id": "sp-seduc156-anexos-matrizes-2026",
+    "unaccounted_item_ids": [],
+    "whole_source_reconciled": true
+  },
+  "installed": "data/manifests/reconciliation/sp-seduc156-anexos-matrizes-2026.json",
+  "literal_failures": [],
+  "literal_fragments_checked": 1816,
+  "negative_probes": [
+    {
+      "issues": [
+        "inventory_unit:sp-seduc156-anexos-matrizes-2026:annex-I:page-context:checked_item_absent:ca:sp-seduc156-anexos-matrizes-2026:92db451f130ad8d5da70",
+        "inventory_unit:sp-seduc156-anexos-matrizes-2026:annex-I:page-context:verified_records_do_not_match_independent_denominator"
+      ],
+      "mutation": "missing_one_record",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "part_content_proof_failed:Anexo IX — formação docente/componentes (PDF10–13)",
+        "inventory_unit:sp-seduc156-anexos-matrizes-2026:annex-IX:item_text_changed_or_unbound:ca:sp-seduc156-anexos-matrizes-2026:section:sp-seduc156:annex:IX:p13:block0",
+        "inventory_unit:sp-seduc156-anexos-matrizes-2026:annex-IX:verified_records_do_not_match_independent_denominator",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ],
+      "mutation": "last_record_text_changed",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "declared_source_pages_not_fully_processed"
+      ],
+      "mutation": "missing_one_declared_page",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "actual_records_not_fully_accounted"
+      ],
+      "mutation": "missing_one_inventory_unit",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "actual_records_not_fully_accounted"
+      ],
+      "mutation": "extra_unaccounted_record",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "mandatory_inventory_part_mismatch",
+        "independent_inventory_source_scope_mismatch",
+        "mandatory_parts_not_fully_verified"
+      ],
+      "mutation": "editorial_scope_changed",
+      "rejected": true
+    }
+  ],
+  "production_incorporation_verified": false,
+  "receipt_path": "docs/evidence/source-audit-sp-whole/sp-seduc156-anexos-matrizes-2026-whole-source-receipt.json",
+  "receipt_sha256": "549af0c6f778675258d69a25c2ffd76d7b7e8d19e0b1fc650c959d4f723cedf0",
+  "records_checked": 38,
+  "source_id": "sp-seduc156-anexos-matrizes-2026"
+}

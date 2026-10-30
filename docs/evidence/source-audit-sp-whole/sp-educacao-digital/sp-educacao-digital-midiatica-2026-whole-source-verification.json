@@ -1,0 +1,230 @@
+{
+  "UF_ready": false,
+  "command": "TESSDATA_PREFIX=$PWD/var/tessdata var/venv-pipeline/bin/python docs/evidence/source-audit-sp-whole/reconcile_sp_edm.py",
+  "current_applicability_verified": false,
+  "documentary_observations": [
+    "Generic extraction defects replaced by the adapter: records EF02HI04/EF02HI08 with text \"e\" (p33/p34, connector between cited codes); EM13MAT315 promoted to habilidade (p65, a BNCC Matemática code cited inside an Exemplos cell, now referencia_no_documento); EF04CO03/EF04CO08/EF05CO04/EF09CO07 texts contaminated by the printed folio and EM13CO15 with glyph order \"refel xão\"; 70 page-level secao_normativa blocks duplicating table text; pages 11/22/71 without records (their headings are now records).",
+    "EF05CO011 (p41) and EF04GE013 (p38, cited) are printed with three final digits; verified on glyphs and preserved as printed.",
+    "p52: label printed \"EF07CO08)\" without the opening parenthesis; p52 the synthetic Objeto de Conhecimento cell of the \"Produção digital\" row is empty in the original.",
+    "p35: the suggestion cells of EF03CO01/EF03CO02 and the Exemplos cell of EF03CO02 reproduce exactly the cells of EF02CO03/EF02CO04 on p34 (EF02 codes); preserved literally, not corrected.",
+    "EM: competency cells of the organizer (p64-70) differ in wording from the numbered list on p63 for competencies 4, 5 and 7; both kept literally and linked (grupo_competencias -> competencia_especifica).",
+    "Asterisks after cited Currículo Paulista codes are explained by the footnote on p43 and kept as asterisk_marker; codes are stored without them."
+  ],
+  "engine": {
+    "implementation": "CPython",
+    "pillow": "13.0.0",
+    "pymupdf": "1.26.7",
+    "python": "3.11.15"
+  },
+  "gate_result": {
+    "accounted_item_count": 1211,
+    "actual_item_count": 1211,
+    "artifact_sha256": "a59a5e3f64ce19a016eb93b24c90899c4af9eafcbeeae8a15ab125c3ef1eeb93",
+    "expected_scope_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74
+    ],
+    "extraction_revision": "page-cell-v1.5.0",
+    "gate_version": "reconciliation-gate/2.0",
+    "issues": [],
+    "own_source_reconciled": true,
+    "part_results": [
+      {
+        "name": "Educação digital e midiática — Currículo Paulista",
+        "status": "content_verified_part",
+        "verified_item_count": 1211
+      }
+    ],
+    "partial_parts": [],
+    "reconciled_parts": [
+      "Educação digital e midiática — Currículo Paulista"
+    ],
+    "required_parts": [
+      "Educação digital e midiática — Currículo Paulista"
+    ],
+    "required_related_documents": [],
+    "source_id": "sp-educacao-digital-midiatica-2026",
+    "unaccounted_item_ids": [],
+    "whole_source_reconciled": true
+  },
+  "installed": "data/manifests/reconciliation/sp-educacao-digital-midiatica-2026.json",
+  "literal_failures": [],
+  "literal_fragments_checked": 1434,
+  "negative_probes": [
+    {
+      "issues": [
+        "inventory_unit:sp-educacao-digital-midiatica-2026:front_matter:checked_item_absent:ca:sp-educacao-digital-midiatica-2026:section:p2:front",
+        "inventory_unit:sp-educacao-digital-midiatica-2026:front_matter:verified_records_do_not_match_independent_denominator",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ],
+      "mutation": "missing_one_record",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "part_content_proof_failed:Educação digital e midiática — Currículo Paulista",
+        "inventory_unit:sp-educacao-digital-midiatica-2026:text:item_text_changed_or_unbound:ca:sp-educacao-digital-midiatica-2026:section:p74:r2",
+        "inventory_unit:sp-educacao-digital-midiatica-2026:text:verified_records_do_not_match_independent_denominator",
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ],
+      "mutation": "last_record_text_changed",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "declared_source_pages_not_fully_processed"
+      ],
+      "mutation": "missing_one_declared_page",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "document_pages_not_fully_inventoried",
+        "actual_records_not_fully_accounted"
+      ],
+      "mutation": "missing_one_inventory_unit",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "actual_records_not_fully_accounted"
+      ],
+      "mutation": "extra_unaccounted_record",
+      "rejected": true
+    },
+    {
+      "issues": [
+        "mandatory_inventory_part_mismatch",
+        "independent_inventory_source_scope_mismatch",
+        "mandatory_parts_not_fully_verified"
+      ],
+      "mutation": "editorial_scope_changed",
+      "rejected": true
+    }
+  ],
+  "production_incorporation_verified": false,
+  "receipt_path": "docs/evidence/source-audit-sp-whole/sp-educacao-digital/sp-educacao-digital-midiatica-2026-whole-source-receipt.json",
+  "receipt_sha256": "2a19f881f608115e01f2a1644654b74ff51ba89ea120cd92435d1bbb51259da9",
+  "records_checked": 1211,
+  "source_id": "sp-educacao-digital-midiatica-2026",
+  "unit_counts": {
+    "af": [
+      319,
+      319
+    ],
+    "ai": [
+      524,
+      524
+    ],
+    "cover": [
+      0,
+      0
+    ],
+    "ei": [
+      27,
+      27
+    ],
+    "em": [
+      96,
+      96
+    ],
+    "front_matter": [
+      5,
+      5
+    ],
+    "quadro": [
+      9,
+      9
+    ],
+    "statement_lists": [
+      46,
+      46
+    ],
+    "tct": [
+      13,
+      13
+    ],
+    "text": [
+      150,
+      150
+    ],
+    "toc": [
+      22,
+      22
+    ]
+  }
+}

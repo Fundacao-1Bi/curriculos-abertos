@@ -1,0 +1,19 @@
+{
+ "uncoded_items_path": "data/manifests/uncoded/sp-eief-structured-v4-items.json",
+ "adapter_authority": {
+  "coded_learning_ranges": [[47,53],[76,76],[85,150],[160,178],[191,201],[209,217],[234,265],[279,293],[313,334],[344,368],[383,387]],
+  "mode": "sidecar_authoritative_for_all_coded_organizer_cells_and_p76_example_table",
+  "scope_note": "Generic coded cell records on these organizer pages are suppressed; sp-eief-organizer-v1 (composed in v4) rebuilds every row: split mid-cell and joint labels, malformed EF9AR10, hidden folio glyphs excluded, explicit year/age positions, objects of knowledge and matrix dimensions. Page-level documentary sections are retained. p76 codes are an illustrative reproduction (referencia_no_documento).",
+  "evidence": "docs/evidence/source-audit-sp-whole/sp-eief/organizer-v1-build-report.json",
+  "review_status": "automated_primary_documentary_audit_not_human_pedagogical_review"
+ },
+ "structured_adapter_binding": {
+  "actor_type": "automated",
+  "actor_id": "agent:sp-eief-whole-source-audit",
+  "sidecar_sha256": "e959cb409a1cfdff60c28f25a8545ffdb71e96c0f231336ff1f0238056e0b9e7",
+  "records": 5961,
+  "scope": "v3 (159, preserved exactly) + organizer-v1 (5802)",
+  "generic_coded_and_page_sections_preserved": "page sections preserved; generic coded cells superseded only inside adapter_authority.coded_learning_ranges",
+  "whole_source_ready_claimed": false
+ }
+}

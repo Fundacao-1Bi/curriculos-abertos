@@ -1,0 +1,164 @@
+{
+ "source_id": "sp-educacao-digital-midiatica-2026",
+ "artifact_sha256": "a59a5e3f64ce19a016eb93b24c90899c4af9eafcbeeae8a15ab125c3ef1eeb93",
+ "items_path": "data/manifests/uncoded/sp-edm-v1-items.json",
+ "items_sha256": "3a5767ab90eacedab5828b0646d31b379ca05cccbdbfe8243570a66a7702ea92",
+ "records": 1211,
+ "pages": 74,
+ "failures": [],
+ "non_record_tokens": {
+  "folio": 64,
+  "code_label": 141,
+  "ordinal": 14,
+  "ano": 68,
+  "connector": 2,
+  "dash": 9
+ },
+ "generic_corroborated_skills": 136,
+ "generic_extractor_differences": [
+  {
+   "key": "p38:t0:r3c3",
+   "code": "EF04CO03",
+   "adapter": "Criar e simular algoritmos representados em linguagem oral, escrita ou pictográfica, que incluam sequências e repetições simples e aninhadas (iterações definidas e indefinidas), para resolver problemas de forma independente e em colaboração.",
+   "generic": "Criar e simular algoritmos representados em linguagem oral, escrita ou pictográfica, que incluam sequências e repetições simples e aninhadas (iterações definidas e indefinidas), para resolver problemas de forma independente e em colabora3ç8ão.",
+   "adapter_literal_checks_passed": true
+  },
+  {
+   "key": "p39:t0:r5c3",
+   "code": "EF04CO08",
+   "adapter": "Reconhecer a importância de verificar a confiabilidade das fontes de informações obtidas na Internet.",
+   "generic": "Reconhecer a importância de verificar a confiabilidade das fontes de informações obtidas na Internet. 39",
+   "adapter_literal_checks_passed": true
+  },
+  {
+   "key": "p40:t0:r4c3",
+   "code": "EF05CO04",
+   "adapter": "Criar e simular algoritmos representados em linguagem oral, escrita ou pictográfica, que incluam sequências, repetições e seleções condicionais para resolver problemas de forma independente e em colaboração.",
+   "generic": "Criar e simular algoritmos representados em linguagem oral, escrita ou pictográfica, que incluam sequências, repetições e seleções condicionais para resolver problemas de forma independente e em colaboração. 40",
+   "adapter_literal_checks_passed": true
+  },
+  {
+   "key": "p57:t0:r5c4",
+   "code": "EF09CO07",
+   "adapter": "Avaliar aplicações e implicações políticas, socioambientais e culturais das tecnologias digitais para propor alternativas aos desafios do mundo contemporâneo, incluindo aqueles relativos ao mundo do trabalho.",
+   "generic": "Avaliar aplicações e implicações políticas, socioambientais e culturais das tecnologias digitais para propor alternativas aos desafios do mundo contemporâneo, incluindo aqueles relativos ao mundo do 57 trabalho.",
+   "adapter_literal_checks_passed": true
+  },
+  {
+   "key": "p67:t0:r4c1",
+   "code": "EM13CO15",
+   "adapter": "Analisar a interação entre usuários e artefatos computacionais, abordando aspectos da experiência do usuário e promovendo reflexão sobre a qualidade do uso dos artefatos nas esferas do trabalho, do lazer e do estudo.",
+   "generic": "Analisar a interação entre usuários e artefatos computacionais, abordando aspectos da experiência do usuário e promovendo refel xão sobre a qualidade do uso dos artefatos nas esferas do trabalho, do lazer e do estudo.",
+   "adapter_literal_checks_passed": true
+  }
+ ],
+ "generic_cache_used": "data/extracted/a59a5e3f64ce19a016eb93b24c90899c4af9eafcbeeae8a15ab125c3ef1eeb93-page-cell-v1.5.0.json",
+ "negatives": [
+  {
+   "mutation": "drop_one_narrative_record",
+   "rejected": true,
+   "first_failures": [
+    [
+     "unexplained_word",
+     "8",
+     "Este"
+    ],
+    [
+     "unexplained_word",
+     "8",
+     "capítulo"
+    ],
+    [
+     "unexplained_word",
+     "8",
+     "é"
+    ]
+   ]
+  },
+  {
+   "mutation": "duplicate_one_skill",
+   "rejected": true,
+   "first_failures": [
+    [
+     "glyph_multiset",
+     "32",
+     "{}"
+    ],
+    [
+     "code_accounting",
+     "32",
+     "{}"
+    ]
+   ]
+  },
+  {
+   "mutation": "one_character_changed",
+   "rejected": true,
+   "first_failures": [
+    [
+     "glyph_multiset",
+     "46",
+     "{'a': 1}"
+    ],
+    [
+     "text_not_joined_fragments",
+     "p46:t0:r2c5"
+    ]
+   ]
+  },
+  {
+   "mutation": "cited_code_promoted_to_skill",
+   "rejected": true,
+   "first_failures": [
+    [
+     "learning_with_foreign_or_missing_code",
+     "p32:t0:r1c4:ref0"
+    ],
+    [
+     "skill_parent_kind",
+     "p32:t0:r1c4:ref0"
+    ]
+   ]
+  },
+  {
+   "mutation": "skill_code_swapped",
+   "rejected": true,
+   "first_failures": [
+    [
+     "code_accounting",
+     "32",
+     "{'EF01CO01': 1}"
+    ],
+    [
+     "generic_text_differs_and_adapter_not_literal",
+     "p32:t0:r1c3"
+    ]
+   ]
+  },
+  {
+   "mutation": "drop_one_reference",
+   "rejected": true,
+   "first_failures": [
+    [
+     "unexplained_word",
+     "32",
+     "EF01HI01"
+    ],
+    [
+     "code_accounting",
+     "32",
+     "{'EF01HI01': 1}"
+    ]
+   ]
+  }
+ ],
+ "all_negatives_rejected": true,
+ "passed": true,
+ "engine": {
+  "PyMuPDF": "1.26.7",
+  "python": "3.11.15"
+ },
+ "independence": "No import of the adapter, census or pipeline modules; glyphs via get_texttrace, words via get_text(words).",
+ "actor_type": "automated",
+ "actor_id": "agent:sp-edm-whole-source-audit:independent-verifier"
+}

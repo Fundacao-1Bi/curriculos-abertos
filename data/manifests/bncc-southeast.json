@@ -154,15 +154,67 @@
         "scope": "Desdobramento declarado por regra da fonte. Não afirma equivalência integral, união automática de cobertura nem pré-requisito."
       }
     ],
-    "uncoded_items_path": "data/manifests/uncoded/sp-eief-structured-v3-items.json",
+    "uncoded_items_path": "data/manifests/uncoded/sp-eief-structured-v4-items.json",
     "structured_adapter_binding": {
       "actor_type": "automated",
-      "actor_id": "curriculos-abertos:integration-coordinator",
-      "sidecar_sha256": "a9fa43bc464021b5c9f6e7ed497a44ae083d9660f5f942eb7e4c6cca91a7261a",
-      "records": 159,
-      "scope": "SP/MG/RJ additive source-specific structure",
-      "generic_coded_and_page_sections_preserved": true,
+      "actor_id": "agent:sp-eief-whole-source-audit",
+      "sidecar_sha256": "e959cb409a1cfdff60c28f25a8545ffdb71e96c0f231336ff1f0238056e0b9e7",
+      "records": 5961,
+      "scope": "v3 (159, preserved exactly) + organizer-v1 (5802)",
+      "generic_coded_and_page_sections_preserved": "page sections preserved; generic coded cells superseded only inside adapter_authority.coded_learning_ranges",
       "whole_source_ready_claimed": false
+    },
+    "adapter_authority": {
+      "coded_learning_ranges": [
+        [
+          47,
+          53
+        ],
+        [
+          76,
+          76
+        ],
+        [
+          85,
+          150
+        ],
+        [
+          160,
+          178
+        ],
+        [
+          191,
+          201
+        ],
+        [
+          209,
+          217
+        ],
+        [
+          234,
+          265
+        ],
+        [
+          279,
+          293
+        ],
+        [
+          313,
+          334
+        ],
+        [
+          344,
+          368
+        ],
+        [
+          383,
+          387
+        ]
+      ],
+      "mode": "sidecar_authoritative_for_all_coded_organizer_cells_and_p76_example_table",
+      "scope_note": "Generic coded cell records on these organizer pages are suppressed; sp-eief-organizer-v1 (composed in v4) rebuilds every row: split mid-cell and joint labels, malformed EF9AR10, hidden folio glyphs excluded, explicit year/age positions, objects of knowledge and matrix dimensions. Page-level documentary sections are retained. p76 codes are an illustrative reproduction (referencia_no_documento).",
+      "evidence": "docs/evidence/source-audit-sp-whole/sp-eief/organizer-v1-build-report.json",
+      "review_status": "automated_primary_documentary_audit_not_human_pedagogical_review"
     }
   },
   {
@@ -276,13 +328,62 @@
         "scope": "Desmembramento declarado por regra da fonte. Não atribui série específica por ordem ou por EM13."
       }
     ],
-    "uncoded_items_path": "data/manifests/uncoded/sp-em-structured-v1-items.json",
+    "uncoded_items_path": "data/manifests/uncoded/sp-em-whole-v2-items.json",
     "structured_adapter_binding": {
-      "sidecar_sha256": "29c174ab9c54c8089c086a9bf858ac0aef080ea06eb67daec30024e32b387473",
-      "records": 40,
+      "sidecar_sha256": "7a39f3534eb7745e4247ba9ff0a8af6cd102c005812056b57341175c28ce084a",
+      "records": 1123,
       "actor_type": "automated",
-      "scope": "10general+3Natureza list paragraphs,21area organizer paragraphs,6headings; all repeated original occurrences retained as checked secondary evidence. No page authority or readiness claim.",
+      "scope": "15 organizer tables (552 printed code-label occurrences, 407 FGB row cells, 44 itinerary methodological cells, 48 eixo + 4 grouping headings, 15 organizer headings), enumerated prose lists (CHS itinerary 1-6 + lead-in, Biologia 3, itinerary purposes 3, eixos I-IV), 40 v1 competency records (CNT list item 3 over-run corrected).",
+      "builder": "data/manifests/uncoded/sp-em-whole-v2-adapter.py",
+      "independent_verifier": "docs/evidence/source-audit-sp-whole/sp-em/verify_independent.py",
       "whole_source_ready_claimed": false
+    },
+    "adapter_authority": {
+      "coded_learning_ranges": [
+        [
+          73,
+          111
+        ],
+        [
+          121,
+          133
+        ],
+        [
+          154,
+          167
+        ],
+        [
+          180,
+          196
+        ],
+        [
+          205,
+          209
+        ],
+        [
+          213,
+          218
+        ],
+        [
+          223,
+          229
+        ],
+        [
+          236,
+          240
+        ],
+        [
+          245,
+          249
+        ],
+        [
+          252,
+          295
+        ]
+      ],
+      "mode": "sidecar_authoritative_for_every_printed_code_label_in_the_15_ruled_organizer_tables",
+      "scope_note": "Generic code cells inside these physical organizer pages are suppressed: the document adapter carries all 552 printed label occurrences (generic cells had lost 107 labels, swapped/truncated/merged bodies). Generic page-context sections are retained for all 300 pages with native text.",
+      "evidence": "docs/evidence/source-audit-sp-whole/sp-em/"
     }
   },
   {
@@ -357,7 +458,83 @@
       "local_path": "data/raw/SP/sp-educacao-digital-midiatica-2026.code-index.json"
     },
     "expected_document_pages": 74,
-    "scope_note": "Documento inteiro selecionado, inclusive partes integradas sem código. Inventário de páginas não substitui estruturação/reconciliação das aprendizagens."
+    "scope_note": "Documento inteiro selecionado, inclusive partes integradas sem código. Inventário de páginas não substitui estruturação/reconciliação das aprendizagens.",
+    "uncoded_items_path": "data/manifests/uncoded/sp-edm-v1-items.json",
+    "adapter_authority": {
+      "coded_learning_pages": [
+        1,
+        74
+      ],
+      "uncoded_page_sections_pages": [
+        1,
+        74
+      ],
+      "mode": "versioned_sidecar_authoritative_for_whole_document_regions_and_ruled_cells",
+      "scope_note": "O adaptador sp-edm-v1 cobre todas as 74 páginas: cada região de texto nativo e cada célula com texto das tabelas regradas vira exatamente um registro (exceto fólios, células Ano, ordinais 01-07, marcadores '-' e o conector 'e', registrados como disposições). Códigos de outros componentes citados na coluna 'Sugestão para componente transversal' e dentro de exemplos são referencia_no_documento, nunca habilidades desta Fonte. Suprime os registros genéricos codificados e as seções de página genéricas, que continham dois registros espúrios ('e' com EF02HI04/EF02HI08), um código citado promovido a habilidade (EM13MAT315), cinco textos com fólio/glifos embaralhados e blocos de página que duplicavam tabelas.",
+      "evidence": "docs/evidence/source-audit-sp-whole/sp-educacao-digital/",
+      "review_status": "automated_primary_documentary_scope_reconciled_not_human_pedagogical_or_UF_acceptance"
+    },
+    "stage_component_inventory": {
+      "EI": [
+        "Computação"
+      ],
+      "EF": [
+        "Computação"
+      ],
+      "EM": [
+        "Computação"
+      ]
+    },
+    "stage_component_inventory_evidence": [
+      {
+        "stage": "EI",
+        "components": [
+          "Computação"
+        ],
+        "source_pages": [
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "excerpt": "Organizador Curricular da Educação Digital e Midiática para a Educação Infantil",
+        "scope_note": "Organizador EI p28-29 por 'Eixos da Computação' com objetivos EI03CO01-EI03CO11 (sigla CO = 'abreviatura de Computação', Figura 1 p27). O documento chama o componente de Educação Digital e Midiática (implementação transversal na EI, p25); 'Computação' segue o código e a convenção nacional dos demais Sources."
+      },
+      {
+        "stage": "EF",
+        "components": [
+          "Computação"
+        ],
+        "source_pages": [
+          29,
+          30,
+          31,
+          32,
+          44,
+          45,
+          46,
+          59,
+          61
+        ],
+        "excerpt": "Organizador Curricular da Educação Digital e Midiática para os Anos Iniciais / para os Anos Finais",
+        "scope_note": "Habilidades EF01CO01-EF05CO011, EF15CO01-09 (Anos Iniciais, com ano por célula 'Ano') e EF06CO01-EF09CO10, EF69CO01-12 (Anos Finais, faixa de anos no cabeçalho de cada tabela); sete competências da Computação para o EF na p30."
+      },
+      {
+        "stage": "EM",
+        "components": [
+          "Computação"
+        ],
+        "source_pages": [
+          62,
+          63,
+          64,
+          70
+        ],
+        "excerpt": "A BNCC estabelece 7 competências gerais para a Computação no Ensino Médio",
+        "scope_note": "Organizador EM p64-70 por competência específica com habilidades EM13CO01-EM13CO26; articulação FGB/IF descrita na p62 sem inferir área ou série."
+      }
+    ]
   },
   {
     "id": "mg-crmg-eief-atualizada",
@@ -137302,6 +137479,19 @@
       "actor_type": "automated",
       "scope": "Full original SEDUC156act only, three columns with16articles and6chapters. Adjacent preceding PEPact/following158 explicitly outside this Source156 adapter. Generic page preserved pending owner decision; no authority requested. Annexes remain separate Source.",
       "whole_source_ready_claimed": false
+    },
+    "organization_type": "non_component_normative",
+    "organization_type_evidence": {
+      "actor_type": "automated",
+      "actor": "agent:sp-whole-source-documentary-audit",
+      "basis": "primary_document_review",
+      "method": "Primary census docs/evidence/source-audit-southeast-completeness/sp-seduc156-act-v1-source-denominator.json: the single page is a legal act organized by 6 chapters/16 articles/20 paragraphs/34 incisos; no curricular component sections. EM stage is explicit in the act; components are not an organizing axis.",
+      "evidence": [
+        {
+          "page": 1,
+          "excerpt": "RESOLUÇÃO SEDUC Nº 156, DE 28 DE NOVEMBRO DE 2025"
+        }
+      ]
     }
   },
   {
@@ -137375,6 +137565,19 @@
       "actor_type": "automated",
       "scope": "All9originalannexes/15matrixfragments/1804source lines,12nonblankphysicalpages,explicitblank9/14/15 verified. Normative/formation context only; original raw grid is documentary, not inferred semantic rows. No page authority or Source/UFready claim.",
       "whole_source_ready_claimed": false
+    },
+    "organization_type": "non_component_normative",
+    "organization_type_evidence": {
+      "actor_type": "automated",
+      "actor": "agent:sp-whole-source-documentary-audit",
+      "basis": "primary_document_review",
+      "method": "Primary census docs/evidence/source-audit-southeast-completeness/sp-seduc156-annexes-v1-source-denominator.json: 9 normative annexes (15 ruled tables) are weekly-hour matrices by offer/shift and a teacher-qualification table; components appear as matrix rows, not as curricular sections with learning content.",
+      "evidence": [
+        {
+          "page": 1,
+          "excerpt": "ANEXO I- ENSINO MÉDIO – TEMPO PARCIAL - DIURNO"
+        }
+      ]
     }
   },
   {

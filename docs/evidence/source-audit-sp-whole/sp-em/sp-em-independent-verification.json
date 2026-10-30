@@ -1,0 +1,451 @@
+{
+ "source_id": "sp-curriculo-em-isbn",
+ "artifact_sha256": "e4c262968644a78181a308af6dea4f7d06260e4c232b61548479fe69b4d2da04",
+ "verifier": "pypdf 6.16.1 text-show positions; independent of adapter/pipeline code",
+ "sidecar_path": "data/manifests/uncoded/sp-em-whole-v2-items.json",
+ "sidecar_sha256": "7a39f3534eb7745e4247ba9ff0a8af6cd102c005812056b57341175c28ce084a",
+ "census_path": "docs/evidence/source-audit-sp-whole/sp-em/sp-em-primary-census.json",
+ "census_sha256": "c4c806d87847c17f97b71badb6a3d2300e1fe07e527cdafb7653f451cc1001ae",
+ "records": 1123,
+ "results": {
+  "C2_printed_labels": {
+   "pypdf": 552,
+   "census": 552,
+   "adapter_code_records": 552
+  },
+  "C3_fragments_rederived": 1310,
+  "C4_ownership": {
+   "owned_by_one_record": 15230,
+   "allowed_unowned": {
+    "folio": 155,
+    "column_caption": 161,
+    "repeated_competency_column": 683
+   }
+  },
+  "C5_region_overlaps": 0,
+  "C6_enumerated_lists": {
+   "general_competencies_numbered_1_10": 10,
+   "cnt_specific_competencies_numbered_1_3": 3,
+   "chs_itinerary_expected_capabilities_1_6": 6,
+   "biology_esteja_preparado_para_dashed_3": 3,
+   "itinerary_objectives_checkmarks_3": 3,
+   "eixos_estruturantes_roman_I_IV": 4
+  },
+  "C7_national_wording": {
+   "equal": 510,
+   "local_desmembramento_differs_from_national_parent": 19,
+   "sp_wording_variant": 23
+  },
+  "C7_sp_wording_variants": [
+   {
+    "code": "EM13LP08",
+    "page": 77,
+    "ratio": 0.999,
+    "edits": [
+     [
+      "replace",
+      "efeitos",
+      "efeito"
+     ]
+    ]
+   },
+   {
+    "code": "EM13LP25",
+    "page": 80,
+    "ratio": 0.999,
+    "edits": [
+     [
+      "delete",
+      "o",
+      ""
+     ]
+    ]
+   },
+   {
+    "code": "EM13LP25",
+    "page": 94,
+    "ratio": 0.999,
+    "edits": [
+     [
+      "delete",
+      "o",
+      ""
+     ]
+    ]
+   },
+   {
+    "code": "EM13CHS601",
+    "page": 189,
+    "ratio": 0.997,
+    "edits": [
+     [
+      "replace",
+      "os",
+      "as"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFMAT03",
+    "page": 213,
+    "ratio": 0.976,
+    "edits": [
+     [
+      "replace",
+      "e/ou",
+      "e/ ou"
+     ],
+     [
+      "insert",
+      "",
+      "cultural, de processos"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFMAT04",
+    "page": 214,
+    "ratio": 0.993,
+    "edits": [
+     [
+      "replace",
+      "e/ou",
+      "e/ ou"
+     ],
+     [
+      "insert",
+      "",
+      "e"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFMAT11",
+    "page": 217,
+    "ratio": 0.997,
+    "edits": [
+     [
+      "replace",
+      "produtivo.",
+      "produtivo"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFCHS05",
+    "page": 237,
+    "ratio": 0.994,
+    "edits": [
+     [
+      "insert",
+      "",
+      "a"
+     ],
+     [
+      "replace",
+      "processo",
+      "processos"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFCHS09",
+    "page": 239,
+    "ratio": 0.998,
+    "edits": [
+     [
+      "replace",
+      "Aplicadas",
+      "Aplicadas."
+     ]
+    ]
+   },
+   {
+    "code": "EMIFMAT02",
+    "page": 252,
+    "ratio": 0.995,
+    "edits": [
+     [
+      "delete",
+      "a",
+      ""
+     ],
+     [
+      "replace",
+      "eficiências",
+      "eficiência"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFMAT03",
+    "page": 253,
+    "ratio": 0.994,
+    "edits": [
+     [
+      "replace",
+      "e/ou",
+      "e/ ou"
+     ],
+     [
+      "replace",
+      "etc.",
+      "etc.)"
+     ],
+     [
+      "replace",
+      "matemática",
+      "Matemática"
+     ],
+     [
+      "replace",
+      "argumentação",
+      "argumentação,"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFMAT11",
+    "page": 256,
+    "ratio": 0.997,
+    "edits": [
+     [
+      "replace",
+      "produtivo.",
+      "produtivo"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFMAT02",
+    "page": 258,
+    "ratio": 0.995,
+    "edits": [
+     [
+      "delete",
+      "a",
+      ""
+     ],
+     [
+      "replace",
+      "eficiências",
+      "eficiência"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFMAT03",
+    "page": 258,
+    "ratio": 0.994,
+    "edits": [
+     [
+      "replace",
+      "e/ou",
+      "e/ ou"
+     ],
+     [
+      "replace",
+      "etc.",
+      "etc.)"
+     ],
+     [
+      "replace",
+      "matemática",
+      "Matemática"
+     ],
+     [
+      "replace",
+      "argumentação",
+      "argumentação,"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFCHS05",
+    "page": 260,
+    "ratio": 0.996,
+    "edits": [
+     [
+      "insert",
+      "",
+      "a"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFMAT11",
+    "page": 262,
+    "ratio": 0.997,
+    "edits": [
+     [
+      "replace",
+      "produtivo.",
+      "produtivo"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFMAT02",
+    "page": 264,
+    "ratio": 0.991,
+    "edits": [
+     [
+      "replace",
+      "situação problema",
+      "situação-problema"
+     ],
+     [
+      "delete",
+      "a",
+      ""
+     ],
+     [
+      "replace",
+      "eficiências",
+      "eficiência"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFMAT03",
+    "page": 264,
+    "ratio": 0.994,
+    "edits": [
+     [
+      "replace",
+      "e/ou",
+      "e/ ou"
+     ],
+     [
+      "replace",
+      "etc.",
+      "etc.)"
+     ],
+     [
+      "replace",
+      "matemática",
+      "Matemática"
+     ],
+     [
+      "replace",
+      "argumentação",
+      "argumentação,"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFMAT11",
+    "page": 270,
+    "ratio": 0.997,
+    "edits": [
+     [
+      "replace",
+      "produtivo.",
+      "produtivo"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFCHS05",
+    "page": 274,
+    "ratio": 0.996,
+    "edits": [
+     [
+      "insert",
+      "",
+      "a"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFCHS09",
+    "page": 275,
+    "ratio": 0.998,
+    "edits": [
+     [
+      "replace",
+      "Aplicadas",
+      "Aplicadas."
+     ]
+    ]
+   },
+   {
+    "code": "EMIFCHS05",
+    "page": 289,
+    "ratio": 0.996,
+    "edits": [
+     [
+      "insert",
+      "",
+      "a"
+     ]
+    ]
+   },
+   {
+    "code": "EMIFCHS09",
+    "page": 292,
+    "ratio": 0.998,
+    "edits": [
+     [
+      "replace",
+      "Aplicadas",
+      "Aplicadas."
+     ]
+    ]
+   }
+  ]
+ },
+ "problems": {},
+ "passed": true,
+ "command": "python3 docs/evidence/source-audit-sp-whole/sp-em/verify_independent.py",
+ "negative_probes": [
+  {
+   "mutation": "drop_one_code_record",
+   "rejected": true,
+   "failed_checks": [
+    "C2",
+    "C4"
+   ]
+  },
+  {
+   "mutation": "swap_text_between_neighbour_codes",
+   "rejected": true,
+   "failed_checks": [
+    "C3",
+    "C7"
+   ]
+  },
+  {
+   "mutation": "truncate_page_crossing_body",
+   "rejected": true,
+   "failed_checks": [
+    "C4"
+   ]
+  },
+  {
+   "mutation": "inject_citation_code_from_p49",
+   "rejected": true,
+   "failed_checks": [
+    "C2",
+    "C3",
+    "C8"
+   ]
+  },
+  {
+   "mutation": "move_fragment_to_other_page",
+   "rejected": true,
+   "failed_checks": [
+    "C3",
+    "C4",
+    "C5"
+   ]
+  },
+  {
+   "mutation": "invent_grade",
+   "rejected": true,
+   "failed_checks": [
+    "C8"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "source_id": "sp-educacao-digital-midiatica-2026",
+ "written_at": "2026-10-30T13:03:39.817419+00:00",
+ "actor": "agent:sp-edm-whole-source-audit",
+ "steps_done": [
+  "primary census (74 pages, 6880 native lines, 496 code tokens, 1211 expected records)",
+  "adapter sp-edm-v1 (1211 records)",
+  "independent verifier passed with 6 negatives rejected",
+  "cache backup in var/source-delta-sp-edm-2026-10-29/cache-before",
+  "manifest patch applied via scripts/manifest-source-edit.py",
+  "cache refreshed with TESSDATA_PREFIX (OCR complete)",
+  "reconcile_sp_edm.py: gate reconciliation-gate/2.0 own/whole_source_reconciled=true, issues=[], literal_failures=0, receipt installed",
+  "pipeline unittest: 115 tests OK"
+ ],
+ "manifest_patch_applied": true,
+ "cache_matches_extraction_config_hash": true,
+ "cache_ocr_pending": false,
+ "files": {
+  "docs/evidence/source-audit-sp-whole/sp-educacao-digital/census.py": "90b781238d904a03781930d298f718b46c1bbe5dc210f5e6040609091e7e19a1",
+  "docs/evidence/source-audit-sp-whole/sp-educacao-digital/census.json": "8084de1d907ef4b15222bd992e18e43ff413ee8b4a52b586654934fcb449d80b",
+  "data/manifests/uncoded/sp-edm-v1-adapter.py": "2b67522dc8d931df0bd30e0baf0cefc232df8c39363e57c453a7826cbe6da8a5",
+  "data/manifests/uncoded/sp-edm-v1-items.json": "3a5767ab90eacedab5828b0646d31b379ca05cccbdbfe8243570a66a7702ea92",
+  "docs/evidence/source-audit-sp-whole/sp-educacao-digital/verify_independent.py": "56f2a604d75784886faee045135426c91fce99f778c85973641be27ecff139cc",
+  "docs/evidence/source-audit-sp-whole/sp-educacao-digital/independent-verification.json": "1831e2f5993ec7cd3a9651ad4565c4c164c51f3d2d3b46978a4b33b3158bc22f",
+  "docs/evidence/source-audit-sp-whole/reconcile_sp_edm.py": "15f33a27e823fea9e3ceb4098097e920c2ce56ed445a528739bca5c0832d745b",
+  "docs/evidence/source-audit-sp-whole/sp-educacao-digital/sp-educacao-digital-midiatica-2026-whole-source-receipt.json": "2a19f881f608115e01f2a1644654b74ff51ba89ea120cd92435d1bbb51259da9",
+  "docs/evidence/source-audit-sp-whole/sp-educacao-digital/sp-educacao-digital-midiatica-2026-whole-source-verification.json": "2d6977d2863f5a80f3791db24bd0f079ffe4cc67c1aac9106e53343cc042a64f",
+  "data/manifests/reconciliation/sp-educacao-digital-midiatica-2026.json": "2a19f881f608115e01f2a1644654b74ff51ba89ea120cd92435d1bbb51259da9",
+  "var/source-delta-sp-edm-2026-10-29/manifest-patch.json": "6f0ba8fc66eb71a5c589fc3d9b6d4e1dc3a73aa7c8fc6a2589e41902a8a66faf",
+  "data/extracted/a59a5e3f64ce19a016eb93b24c90899c4af9eafcbeeae8a15ab125c3ef1eeb93-page-cell-v1.5.0.json": "95e1f8c328009b6cb5a83a1c117f0878b6a765ba6bcbc94df9be298a144b8f6d"
+ },
+ "pending": [
+  "Optional: var/venv-pipeline/bin/python scripts/uf-readiness-dryrun.py SP to confirm (SP,EI,None)/(SP,EF,None) scopes disappeared (not run because of reboot pause)."
+ ],
+ "resume_commands": [
+  "TESSDATA_PREFIX=$PWD/var/tessdata var/venv-pipeline/bin/python docs/evidence/source-audit-sp-whole/reconcile_sp_edm.py  # re-check only; refresh cache first with: TESSDATA_PREFIX=$PWD/var/tessdata var/venv-pipeline/bin/python pipeline/ingest.py extract --source sp-educacao-digital-midiatica-2026 --force (only if config hash mismatches)",
+  "var/venv-pipeline/bin/python scripts/uf-readiness-dryrun.py SP"
+ ],
+ "note": "Without TESSDATA_PREFIX the refresh leaves ocr_pending=true (pages 1/11/22/71 raster) and whole_source_receipt.Context refuses the cache."
+}
