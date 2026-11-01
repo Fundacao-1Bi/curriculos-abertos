@@ -1,0 +1,26 @@
+{
+  "timestamp_utc": "2026-11-01T12:15:05.628969+00:00",
+  "scope": "duplicate local downloads; retained original exports in active QA volume, with succeeded job links verified",
+  "files": [
+    {
+      "host": "var/qa-downloads/1bb6ec30-a180-445e-89fa-ec4817e7679b.csv",
+      "job": "1bb6ec30-a180-445e-89fa-ec4817e7679b",
+      "retained_volume": "curriculos-abertos-clean-20261028205403-f517a7_storage",
+      "retained_storage_key": "exports/1bb6ec30-a180-445e-89fa-ec4817e7679b/1-39750e66-fe2a-4524-9d20-1f7804f8f734.csv",
+      "sha256": "80865385ff55a197211d624bfd3bbef647a54fb2e9fd38623ccc7b704a8597e3",
+      "bytes": 1597383163
+    },
+    {
+      "host": "var/qa-downloads/c629210c-6c87-421e-85c3-744bdcecfbfc.json",
+      "job": "c629210c-6c87-421e-85c3-744bdcecfbfc",
+      "retained_volume": "curriculos-abertos-clean-20261028205403-f517a7_storage",
+      "retained_storage_key": "exports/c629210c-6c87-421e-85c3-744bdcecfbfc/1-39750e66-fe2a-4524-9d20-1f7804f8f734.json",
+      "sha256": "0361c05e42af21f6ef5eab9794530fc5bee564c790d9d6810086c3f75f22b886",
+      "bytes": 1526149327
+    }
+  ],
+  "available_before_bytes": 2536775680,
+  "phase": "completed",
+  "limitation": "Local paths must be restored from retained volume for reports expecting the original pathname; volume is not a backup or remote copy.",
+  "available_after_bytes": 5657112576
+}
