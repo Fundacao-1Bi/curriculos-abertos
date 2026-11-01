@@ -11,6 +11,10 @@ export interface Check {id:string; passed:boolean; detail:string; evidence:strin
 const trackedRoots=['src','scripts','pipeline','tests','data/schema','data/manifests'];
 const trackedFiles=['package.json','package-lock.json','tsconfig.json','next.config.ts','Dockerfile','compose.yaml','Makefile','.env.example','.dockerignore','eslint.config.mjs','playwright.config.ts','docs/requirements.md'];
 export const sha256=(data:string|Buffer)=>createHash('sha256').update(data).digest('hex');
+function pipelinePython(root:string):string {
+  const pinned=join(root,'var/venv-pipeline/bin/python');
+  return existsSync(pinned)?pinned:'python3';
+}
 export function sourceTreeHash(root=process.cwd()):string {
   const paths:string[]=[];
   function walk(path:string){ if(!existsSync(path))return; for(const entry of readdirSync(path,{withFileTypes:true})){if(entry.name.startsWith('.')||entry.name==='__pycache__')continue;const p=join(path,entry.name);if(entry.isDirectory())walk(p);else if(entry.isFile()&&!p.endsWith('.pyc'))paths.push(p);} }
@@ -91,7 +95,8 @@ export function recordExecution(kind:EvidenceKind, args:string[], root=process.c
   let publication=option(args,'--publication')||null;
   const producer=kind==='containers'?'Dockerfile':kind==='types'||kind==='build'||kind==='lint'||kind==='tests'?'package.json':kind==='browser'?'playwright.config.ts':kind==='sources'?'scripts/sources-check.sh':expected[2]||expected[1];
   const source_tree_sha256=sourceTreeHash(root), started_at=new Date().toISOString();
-  const result=spawnSync(command[0],command.slice(1),{cwd:root,encoding:'utf8',timeout:600_000,maxBuffer:32*1024*1024,env:process.env});
+  const timeout=kind==='ingestion'?3_600_000:600_000;
+  const result=spawnSync(command[0],command.slice(1),{cwd:root,encoding:'utf8',timeout,maxBuffer:32*1024*1024,env:process.env});
   const completed_at=new Date().toISOString(), prefix=`docs/evidence/executions/${kind}`;
   mkdirSync(join(root,dirname(prefix)),{recursive:true});
   const log=(result.stdout||'')+(result.stderr||'')+(result.error?`\n${result.error.message}\n`:'');
@@ -146,13 +151,14 @@ export function evaluateRelease(root=process.cwd(), bundleArg?:string){
  const requirements=readFileSync(join(root,'docs/requirements.md'),'utf8');
  const ids=[...requirements.matchAll(/^### ([A-Z]+-\d+)\. (.+)$/gm)].map(m=>({id:m[1],title:m[2]}));
  let dataReport:unknown=null, publication:string|null=null;
- const dataCommand=['python3','pipeline/release_check.py','--json',...(bundleArg?['--bundle',bundleArg]:[])];
+ const python=pipelinePython(root);
+ const dataCommand=[python,'pipeline/release_check.py','--json',...(bundleArg?['--bundle',bundleArg]:[])];
  const data=spawnSync(dataCommand[0],dataCommand.slice(1),{cwd:root,encoding:'utf8',timeout:180_000,maxBuffer:16*1024*1024});
  try{dataReport=JSON.parse(data.stdout||'null');publication=(dataReport as {publication?:string;publication_id?:string})?.publication||(dataReport as {publication_id?:string})?.publication_id||null;}catch{/* parser error is blocking */}
  const documentary=dataReport as {passed?:boolean;checks?:unknown[]}|null;
  const dataPassed=data.status===0&&Boolean(publication)&&documentary?.passed===true&&Array.isArray(documentary.checks)&&documentary.checks.length>0;
  checks.push({id:'data',passed:dataPassed,detail:dataPassed?'Corpus e reconciliação aprovados pelo validador documental':'Corpus nacional não aprovado; detalhes no resultado documental',evidence:['pipeline/release_check.py','data/coverage-manifest.json']});
- const negative=spawnSync('python3',['pipeline/release_check.py','--self-test'],{cwd:root,encoding:'utf8',timeout:30_000,maxBuffer:1024*1024});let negativeReport:Record<string,unknown>|null=null;try{negativeReport=JSON.parse(negative.stdout);}catch{/* fail closed */}
+ const negative=spawnSync(python,['pipeline/release_check.py','--self-test'],{cwd:root,encoding:'utf8',timeout:30_000,maxBuffer:1024*1024});let negativeReport:Record<string,unknown>|null=null;try{negativeReport=JSON.parse(negative.stdout);}catch{/* fail closed */}
  const negativePassed=negative.status===0&&negativeReport?.passed===true&&negativeReport.fixture_isolated===true&&negativeReport.published_data_modified===false&&negativeReport.baseline_passed===true&&negativeReport.mutated_passed===false&&typeof negativeReport.baseline_sha256==='string'&&negativeReport.baseline_sha256!==negativeReport.mutated_sha256&&Array.isArray(negativeReport.newly_missing_scope)&&negativeReport.newly_missing_scope.length>0;
  checks.push({id:'negative',passed:negativePassed,detail:negativePassed?'Recorte isolado passa antes e bloqueia após remoção controlada de componente obrigatório':'Caso negativo documental não demonstrado',evidence:['docs/evidence/data-release-negative.json']});
  const evidenceDetails:Record<string,unknown>={};

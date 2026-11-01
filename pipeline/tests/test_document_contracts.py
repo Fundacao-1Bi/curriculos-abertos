@@ -23,24 +23,29 @@ class DocumentaryContracts(unittest.TestCase):
         self.assertEqual(len(expected_source_parts(source)),2)
         extracts={'local':{'sha256':'a'*64,'ocr_pending':False},'related':{'sha256':'b'*64,'ocr_pending':False}}
         reports={'local':{'reconciled_parts':['objetivos'],'partial_parts':[],'whole_source_reconciled':True,'issues':[],'unaccounted_item_ids':[]},'related':{'artifact_sha256':'b'*64,'whole_source_reconciled':True}}
-        row=next(row for row in coverage_for([source],extracts,[],[],reports) if row['uf']=='AC' and row['stage']=='EI' and row['component']=='Campo')
-        self.assertTrue(row['ready']);self.assertEqual(row['reconciled_parts_count'],2)
+        with patch('ingest.coverage_scope_part_mappings',return_value=({('local','objetivos','EI','Campo')},{'valid':True})):
+            row=next(row for row in coverage_for([source],extracts,[],[],reports) if row['uf']=='AC' and row['stage']=='EI' and row['component']=='Campo')
+        self.assertTrue(row['ready']);self.assertEqual(row['reconciled_parts_count'],1)
         reports['local']['whole_source_reconciled']=False;reports['related']['whole_source_reconciled']=False
-        row=next(row for row in coverage_for([source],extracts,[],[],reports) if row['uf']=='AC' and row['stage']=='EI' and row['component']=='Campo')
+        with patch('ingest.coverage_scope_part_mappings',return_value=({('local','objetivos','EI','Campo')},{'valid':True})):
+            row=next(row for row in coverage_for([source],extracts,[],[],reports) if row['uf']=='AC' and row['stage']=='EI' and row['component']=='Campo')
         self.assertFalse(row['ready'])
 
     def test_partial_part_receipt_cannot_mark_a_source_or_coverage_ready(self):
         source={'id':'local','uf':'AC','stages':['EI'],'components':['Campo'],'normative_parts':['objetivos']}
         extracted={'local':{'ocr_pending':False}}
         report={'local':{'reconciled_parts':[],'partial_parts':['objetivos'],'whole_source_reconciled':False,'issues':['legacy_subset_only'],'unaccounted_item_ids':['extra']}}
-        row=next(row for row in coverage_for([source],extracted,[],[],report) if row['uf']=='AC' and row['stage']=='EI' and row['component']=='Campo')
+        with patch('ingest.coverage_scope_part_mappings',return_value=({('local','objetivos','EI','Campo')},{'valid':True})):
+            row=next(row for row in coverage_for([source],extracted,[],[],report) if row['uf']=='AC' and row['stage']=='EI' and row['component']=='Campo')
         self.assertFalse(row['ready']);self.assertEqual(row['partial_parts_count'],1)
         self.assertEqual(row['whole_sources_pending'],['local'])
         report['local'].update(reconciled_parts=['objetivos'],partial_parts=[],whole_source_reconciled=True,issues=[],unaccounted_item_ids=[])
-        row=next(row for row in coverage_for([source],extracted,[],[],report) if row['uf']=='AC' and row['stage']=='EI' and row['component']=='Campo')
+        with patch('ingest.coverage_scope_part_mappings',return_value=({('local','objetivos','EI','Campo')},{'valid':True})):
+            row=next(row for row in coverage_for([source],extracted,[],[],report) if row['uf']=='AC' and row['stage']=='EI' and row['component']=='Campo')
         self.assertTrue(row['ready'])
         source['processing_error']='An independently observed processing failure'
-        row=next(row for row in coverage_for([source],extracted,[],[],report) if row['uf']=='AC' and row['stage']=='EI' and row['component']=='Campo')
+        with patch('ingest.coverage_scope_part_mappings',return_value=({('local','objetivos','EI','Campo')},{'valid':True})):
+            row=next(row for row in coverage_for([source],extracted,[],[],report) if row['uf']=='AC' and row['stage']=='EI' and row['component']=='Campo')
         self.assertFalse(row['ready'])
 
     def test_disjoint_authority_preserves_gap_pages_and_adapter_records(self):

@@ -1,30 +1,124 @@
 import {createHash} from 'node:crypto';
 import {relative,resolve} from 'node:path';
-import {readFile} from 'node:fs/promises';
+import {existsSync} from 'node:fs';
+import {mkdir,readFile,stat} from 'node:fs/promises';
+import {spawn} from 'node:child_process';
 import type pg from 'pg';
 import {pool} from '../db/client';
 import type {Learning,Relation,Source} from '../shared/contracts';
 import {DomainError} from './errors';
 import {loadBundleFile} from './bundle-file';
 import {importShardedManifest,shardRecords,verifyShardedManifest,type ShardedManifest} from './shards';
-import {writeShardedArtifact} from './shard-writer';
+import {hashShardedRecords,rewritePrivateShardedManifest,writeShardedArtifact} from './shard-writer';
 import {publishVisibility,type PublicationActor} from './visibility';
 import {mergeIngestionCoverage} from './ingestion-coverage';
 import {prepareIngestionProvenance,assertIngestionProvenanceUnchanged,provenanceDigest,type IngestionProvenanceInput,type PreparedIngestionProvenance} from './ingestion-provenance';
 
-const VERSION='base-plus-source-update-v1';
-const digest=(value:string)=>createHash('sha256').update(value).digest('hex');
+const VERSION='base-plus-source-update-v4';
+const RELEASE_CHECK='pipeline/release_check.py';
+const RECONCILIATION_PENDING='Atualização de fonte exige nova reconciliação documental deste recorte.';
+const digest=(value:string|Buffer)=>createHash('sha256').update(value).digest('hex');
 // JSON numeric spelling (1.0/1) is not a changed value; exact JSONB equality is checked separately below.
 const semanticJson=(text:string)=>JSON.stringify(JSON.parse(text));
 async function diagnosticStep<T>(label:string,action:()=>Promise<T>):Promise<T>{try{return await action();}catch(error){if(error instanceof Error)error.message=label+': '+error.message;throw error;}}
 const hashValid=(value:string)=>/^[a-f0-9]{64}$/.test(value);
+const stableJson=(value:unknown):string=>Array.isArray(value)?'['+value.map(stableJson).join(',')+']':value&&typeof value==='object'?'{'+Object.entries(value).sort(([a],[b])=>a.localeCompare(b)).map(([key,item])=>JSON.stringify(key)+':'+stableJson(item)).join(',')+'}':JSON.stringify(value)??'null';
+function comparableCandidateHeader(value:Record<string,unknown>){
+ const output={...value};for(const key of ['format','storage_format','content_identity','source_content_identity','export_source_content_identity','transcode_provenance','item_count','source_count','relation_count','parts'])delete output[key];
+ if(Array.isArray(output.coverage))output.coverage=output.coverage.map(value=>{if(!value||typeof value!=='object'||Array.isArray(value))return value;const row={...(value as Record<string,unknown>)};for(const key of ['ready','reconciled','national_release_ready','editorial_completeness','mapping_coverage','pending','coverage_revalidation'])delete row[key];return row;});
+ return stableJson(output);
+}
+async function revalidateCoverage(result:Awaited<ReturnType<typeof writeShardedArtifact>>,affectedKeys:string[],signal?:AbortSignal,mode:'prepare'|'replay'='prepare'){
+ signal?.throwIfAborted();const reportRoot=resolve('var/ingestion-revalidation'),reportPath=resolve(reportRoot,mode==='prepare'?`${result.manifest.id}.json`:`${result.manifest.id}-current-${result.sha256}.json`);await mkdir(reportRoot,{recursive:true});
+ const python=process.env.PIPELINE_PYTHON||process.env.PYTHON_BIN||(existsSync('var/venv-pipeline/bin/python')?resolve('var/venv-pipeline/bin/python'):'python3');let stderr='';
+ const exitCode=await new Promise<number>((accept,reject)=>{const child=spawn(python,[RELEASE_CHECK,'--bundle',result.filename,'--output',relative(process.cwd(),reportPath),'--json'],{stdio:['ignore','ignore','pipe']});let aborted=false,timedOut=false,killer:NodeJS.Timeout|undefined;const terminate=()=>{if(child.exitCode!==null)return;child.kill('SIGTERM');if(!killer){killer=setTimeout(()=>child.kill('SIGKILL'),5000);killer.unref();}};const onAbort=()=>{aborted=true;terminate();};signal?.addEventListener('abort',onAbort,{once:true});if(signal?.aborted)onAbort();const timeout=setTimeout(()=>{timedOut=true;terminate();},Math.max(1000,Number(process.env.JOB_TIMEOUT_SECONDS||7200)*1000));timeout.unref();const cleanup=()=>{clearTimeout(timeout);if(killer)clearTimeout(killer);signal?.removeEventListener('abort',onAbort);};child.stderr.on('data',chunk=>{stderr=(stderr+chunk.toString()).slice(-16000);});child.once('error',error=>{cleanup();reject(error);});child.once('close',code=>{cleanup();if(aborted)reject(signal?.reason??new Error('Ingestion aborted'));else if(timedOut)reject(new DomainError(409,'COVERAGE_REVALIDATION_TIMEOUT','Revalidação da cobertura excedeu o prazo do job.'));else if(code===0||code===1)accept(code??1);else reject(new DomainError(409,'COVERAGE_REVALIDATION_FAILED','Checker documental recusou candidato: '+stderr.slice(-1200)));});});
+ signal?.throwIfAborted();const reportBytes=await readFile(reportPath);const report=JSON.parse(reportBytes.toString('utf8')) as Record<string,unknown>;
+ if(report.publication!==result.manifest.id||report.bundle_sha256!==result.sha256||!Array.isArray(report.scope_readiness))throw new DomainError(409,'COVERAGE_REVALIDATION_BINDING_FAILED','Relatório do checker não se vincula ao manifesto candidato atual.');
+ const evaluated=new Map<string,Record<string,unknown>>();for(const value of report.scope_readiness){if(!value||typeof value!=='object'||Array.isArray(value))continue;const row=value as Record<string,unknown>;if(typeof row.uf==='string'&&typeof row.stage==='string'&&(typeof row.component==='string'||row.component===null))evaluated.set(coverageKey(row),row);}
+ const reportSha256=digest(reportBytes);const scopes=result.manifest.coverage.map(value=>value as unknown as Record<string,unknown>);let checked=0;let persistedReportPath:string|undefined,persistedReportSha:string|undefined,persistedCandidateSha:string|undefined;
+ for(const row of scopes){const key=coverageKey(row);if(!affectedKeys.includes(key))continue;const proof=evaluated.get(key);if(!proof||!Array.isArray(proof.issues)||typeof proof.ready!=='boolean')throw new DomainError(409,'COVERAGE_REVALIDATION_SCOPE_MISSING','Checker não produziu veredito para um recorte afetado.');const ready=proof.ready===true;
+  if(mode==='prepare'){row.ready=ready;row.reconciled=ready;row.national_release_ready=false;row.editorial_completeness=ready?'reconciled':'pending_revalidation';row.mapping_coverage=ready?'verified_against_current_bundle':'pending_revalidation_after_source_update';const previous=Array.isArray(row.pending)?row.pending.filter(item=>item!==RECONCILIATION_PENDING):[];row.pending=ready?previous:[...new Set([...previous,RECONCILIATION_PENDING])];row.coverage_revalidation={version:'scope-readiness/1',method:'pipeline/release_check.py',candidate_manifest_sha256:result.sha256,candidate_content_identity:result.manifest.content_identity,report_path:relative(process.cwd(),reportPath),report_sha256:reportSha256,ready,issues:proof.issues,source_ids:proof.source_ids,checker_exit_code:exitCode};}
+  else{
+   const saved=row.coverage_revalidation as Record<string,unknown>|undefined;
+   if(!saved||saved.version!=='scope-readiness/1'||saved.candidate_content_identity===undefined||JSON.stringify(saved.candidate_content_identity)!==JSON.stringify(result.manifest.content_identity)||saved.ready!==ready||row.ready!==ready||row.reconciled!==ready||JSON.stringify(saved.issues)!==JSON.stringify(proof.issues)||JSON.stringify(saved.source_ids)!==JSON.stringify(proof.source_ids))throw new DomainError(409,'COVERAGE_REVALIDATION_REPLAY_MISMATCH','Prontidão ou os motivos persistidos divergem das evidências atuais.');
+   if(typeof saved.report_path!=='string'||typeof saved.report_sha256!=='string'||typeof saved.candidate_manifest_sha256!=='string'||!saved.report_path.startsWith('var/ingestion-revalidation/'))throw new DomainError(409,'COVERAGE_REVALIDATION_REPLAY_PROOF_MISSING','Prova original da revalidação não está no armazenamento permitido.');
+   if(persistedReportPath&&persistedReportPath!==saved.report_path||persistedReportSha&&persistedReportSha!==saved.report_sha256||persistedCandidateSha&&persistedCandidateSha!==saved.candidate_manifest_sha256)throw new DomainError(409,'COVERAGE_REVALIDATION_REPLAY_PROOF_MISMATCH','Recortes afetados apontam para relatórios de revalidação diferentes.');persistedReportPath=saved.report_path;persistedReportSha=saved.report_sha256;persistedCandidateSha=saved.candidate_manifest_sha256;
+  }
+  checked++;
+ }
+ if(mode==='replay'){
+  if(!persistedReportPath||!persistedReportSha)throw new DomainError(409,'COVERAGE_REVALIDATION_REPLAY_PROOF_MISSING','Manifesto não contém a prova original da revalidação.');
+  if(!persistedCandidateSha)throw new DomainError(409,'COVERAGE_REVALIDATION_REPLAY_PROOF_MISSING','Hash do manifesto preliminar está ausente.');
+  const originalPath=resolve(persistedReportPath),originalRelative=relative(reportRoot,originalPath);if(originalRelative.startsWith('..'))throw new DomainError(409,'COVERAGE_REVALIDATION_REPLAY_PROOF_MISSING','Relatório original escapou do diretório de provas permitido.');
+  const originalBytes=await readFile(originalPath);if(digest(originalBytes)!==persistedReportSha)throw new DomainError(409,'COVERAGE_REVALIDATION_REPLAY_PROOF_MISMATCH','Checksum do relatório original de revalidação diverge.');
+  const original=JSON.parse(originalBytes.toString('utf8')) as Record<string,unknown>;if(original.publication!==result.manifest.id||original.bundle_sha256!==persistedCandidateSha||!Array.isArray(original.scope_readiness))throw new DomainError(409,'COVERAGE_REVALIDATION_REPLAY_PROOF_MISMATCH','Relatório original não pertence à publicação ou ao manifesto candidato declarado.');
+  const originalScopes=new Map<string,Record<string,unknown>>();for(const value of original.scope_readiness){if(value&&typeof value==='object'&&!Array.isArray(value)){const row=value as Record<string,unknown>;originalScopes.set(coverageKey(row),row);}}
+  for(const row of scopes){if(!affectedKeys.includes(coverageKey(row)))continue;const saved=row.coverage_revalidation as Record<string,unknown>;const proof=originalScopes.get(coverageKey(row));if(!proof||proof.ready!==saved.ready||JSON.stringify(proof.issues)!==JSON.stringify(saved.issues))throw new DomainError(409,'COVERAGE_REVALIDATION_REPLAY_PROOF_MISMATCH','Escopo persistido diverge do relatório original.');}
+  return{result,report_path:relative(process.cwd(),reportPath),report_sha256:reportSha256,scopes_checked:checked,scopes_ready:scopes.filter(row=>affectedKeys.includes(coverageKey(row))&&row.ready===true).length};
+ }
+ if(checked!==affectedKeys.length)throw new DomainError(409,'COVERAGE_REVALIDATION_SCOPE_COUNT_MISMATCH','Quantidade de recortes afetados diverge do relatório do checker.');
+ const updated=await rewritePrivateShardedManifest(result,{...result.manifest,coverage:scopes as unknown as typeof result.manifest.coverage});return{result:updated,report_path:relative(process.cwd(),reportPath),report_sha256:reportSha256,scopes_checked:checked,scopes_ready:scopes.filter(row=>affectedKeys.includes(coverageKey(row))&&row.ready===true).length};
+}
+export async function revalidatePersistedGlobalIngestionCoverage(input:{manifest:ShardedManifest;filename:string;sha256:string;signal?:AbortSignal}){
+ const scope=input.manifest.update_scope as Record<string,unknown>|undefined,keys=scope?.affected_coverage_keys;
+ if(scope?.mode!=='base-plus-source-update'||!Array.isArray(keys)||keys.some(key=>typeof key!=='string'))throw new DomainError(409,'COVERAGE_REVALIDATION_REPLAY_SCOPE_INVALID','Manifesto salvo não contém o escopo original da revalidação.');
+ const filename=resolve(input.filename),info=await stat(filename);if(!info.isFile())throw new DomainError(409,'COVERAGE_REVALIDATION_REPLAY_ARTIFACT_INVALID','Manifesto salvo não é um arquivo regular.');
+ const result=await revalidateCoverage({manifest:input.manifest,filename,sha256:input.sha256,bytes:info.size,root:resolve('data/bundles')},keys as string[],input.signal,'replay');
+ return{report_path:result.report_path,report_sha256:result.report_sha256,scopes_checked:result.scopes_checked,scopes_ready:result.scopes_ready};
+}
 function targets(input:string[]){if(!Array.isArray(input)||!input.length||input.length>500||input.some(x=>typeof x!=='string'||!x||x.length>500)||new Set(input).size!==input.length)throw new DomainError(422,'INVALID_UPDATE_TARGETS','Declare fontes alvo únicas e explícitas.');return[...input].sort();}
+function scopedVerificationSamples(verification:unknown,inventorySourceIds:Set<string>,targetSourceIds:Set<string>,scope:'base'|'raw'){
+ if(verification===undefined||verification===null)return[] as Record<string,unknown>[];
+ if(typeof verification!=='object'||Array.isArray(verification))throw new DomainError(409,'UPDATE_SAMPLE_INVALID','Verificação de amostras da publicação é inválida.');
+ const samples=(verification as Record<string,unknown>).samples;if(samples===undefined)return[] as Record<string,unknown>[];
+ if(!Array.isArray(samples))throw new DomainError(409,'UPDATE_SAMPLE_INVALID','Lista de amostras da publicação é inválida.');
+ const seen=new Set<string>();
+ return samples.flatMap(sample=>{
+  if(!sample||typeof sample!=='object'||Array.isArray(sample))throw new DomainError(409,'UPDATE_SAMPLE_INVALID','Amostra não é um objeto válido.');
+  const row=sample as Record<string,unknown>;
+  if(typeof row.source_id!=='string'||typeof row.item_id!=='string'||typeof row.uf!=='string'||typeof row.stage!=='string'||!(typeof row.component==='string'||row.component===null)||!Number.isInteger(row.page)||Number(row.page)<1||typeof row.artifact_sha256!=='string'||!hashValid(row.artifact_sha256)||typeof row.literal_text_in_page!=='boolean')throw new DomainError(409,'UPDATE_SAMPLE_INVALID','Amostra não tem âncora, escopo, página ou hash válidos.');
+  if(!inventorySourceIds.has(row.source_id))throw new DomainError(409,'UPDATE_SAMPLE_OUTSIDE_SCOPE','Amostra não pertence ao inventário pinado da atualização.');
+  const isTarget=targetSourceIds.has(row.source_id);
+  if(scope==='raw'&&!isTarget)throw new DomainError(409,'UPDATE_SAMPLE_OUTSIDE_SCOPE','Amostra RAW fora do escopo de fontes alvo.');
+  const key=JSON.stringify([row.uf,row.stage,row.component,row.item_id]);
+  if(seen.has(key))throw new DomainError(409,'UPDATE_SAMPLE_DUPLICATE','Amostras duplicadas para o mesmo item e estrato.');
+  seen.add(key);
+  return scope==='base'&&!isTarget? [row] : scope==='raw'? [row] : [];
+ });
+}
+function mergeSourceReconciliationReports(baseValue:unknown,rawValue:unknown,targetSourceIds:string[],baseSourceIds:string[],rawSourceIds:string[]){
+ if(!Array.isArray(baseValue)||!Array.isArray(rawValue))throw new DomainError(409,'UPDATE_RECONCILIATION_REPORT_INVALID','Relatórios de reconciliação da base ou do recibo RAW estão ausentes.');
+ const target=new Set(targetSourceIds);
+ const validate=(rows:unknown[],name:string)=>{
+  const seen=new Set<string>();
+  for(const row of rows){
+   if(!row||typeof row!=='object'||Array.isArray(row)||typeof (row as Record<string,unknown>).source_id!=='string')throw new DomainError(409,'UPDATE_RECONCILIATION_REPORT_INVALID',`Relatório de reconciliação inválido em ${name}.`);
+   const sourceId=(row as Record<string,unknown>).source_id as string;
+   if(seen.has(sourceId))throw new DomainError(409,'UPDATE_RECONCILIATION_REPORT_DUPLICATE',`Relatório de reconciliação duplicado para ${sourceId} em ${name}.`);
+   seen.add(sourceId);
+  }
+  return seen;
+ };
+ const baseIds=validate(baseValue,'base');
+ const rawIds=validate(rawValue,'RAW');
+ const exactInventory=(actual:Set<string>,expected:string[],name:string)=>{
+  const expectedIds=new Set(expected);
+  if(actual.size!==expectedIds.size||expectedIds.size!==expected.length||[...expectedIds].some(sourceId=>!actual.has(sourceId)))throw new DomainError(409,'UPDATE_RECONCILIATION_INVENTORY_MISMATCH',`Relatórios de reconciliação não correspondem ao inventário de fontes ${name}.`);
+ };
+ exactInventory(baseIds,baseSourceIds,'da base');
+ exactInventory(rawIds,rawSourceIds,'do RAW');
+ if(targetSourceIds.some(sourceId=>!baseIds.has(sourceId)||!rawIds.has(sourceId)))throw new DomainError(409,'UPDATE_RECONCILIATION_REPORT_MISSING_TARGET','Fonte alvo sem relatório na base e no RAW.');
+ const replacements=rawValue.filter(row=>target.has((row as Record<string,unknown>).source_id as string));
+ if(replacements.length!==target.size)throw new DomainError(409,'UPDATE_RECONCILIATION_REPORT_MISSING_TARGET','O recibo RAW não tem um relatório único para cada fonte alvo.');
+ return [...baseValue.filter(row=>!target.has((row as Record<string,unknown>).source_id as string)),...replacements]
+  .sort((left,right)=>((left as Record<string,unknown>).source_id as string).localeCompare((right as Record<string,unknown>).source_id as string));
+}
 async function baseRecord(client:pg.PoolClient,id:string){
  const row=(await client.query(`SELECT p.id,p.sha256,p.schema_version,p.created_at,p.extraction_revision,p.mapping_revision,(p.payload-'items'-'relations'-'sources'-'coverage'-'parts') AS metadata FROM publications p JOIN publication_visibility v ON v.publication_id=p.id AND v.status='published' WHERE p.id=$1`,[id])).rows[0];
  if(!row)throw new DomainError(404,'PUBLICATION_NOT_FOUND','Base publicada inexistente.');return row;
 }
 async function* queryRecords<T>(client:pg.PoolClient,table:'items'|'relations'|'ingestion_items'|'ingestion_relations',publication?:string,where='',signal?:AbortSignal):AsyncGenerator<T>{
- let last='';for(;;){signal?.throwIfAborted();const values=publication?[publication,last]:[last];const rows=await client.query(`SELECT id,payload FROM ${table} WHERE ${publication?'publication_id=$1 AND id>$2':'id>$1'} ${where} ORDER BY id LIMIT 50`,values);if(!rows.rowCount)break;for(const row of rows.rows){signal?.throwIfAborted();last=row.id;yield row.payload as T;}}
+ let last='';for(;;){signal?.throwIfAborted();const values=publication?[publication,last]:[last];const rows=await client.query(`SELECT id,payload FROM ${table} WHERE ${publication?'publication_id=$1 AND id>$2':'id>$1'} ${where} ORDER BY id LIMIT 1000`,values);if(!rows.rowCount)break;for(const row of rows.rows){signal?.throwIfAborted();last=row.id;yield row.payload as T;}}
 }
 /** Immutable BR context exported from the pinned DB snapshot, never from unrelated extraction caches. */
 export async function exportIngestionBase(input:{base_publication:string;directory:string}){
@@ -45,14 +139,14 @@ async function sourceProofs(client:pg.PoolClient,publication:string,excluded:str
  const sources=await client.query('SELECT id,payload::text AS content FROM sources WHERE publication_id=$1 AND NOT(id=ANY($2::text[])) ORDER BY id',[publication,excluded]);
  const summaries=new Map(sources.rows.map(source=>[source.id as string,{source_id:source.id as string,items:0,source_sha256:digest(semanticJson(source.content)),hash:createHash('sha256')}]));
  // One indexed scan per publication, rather than a fresh global item scan for each of hundreds of sources.
- let last='';for(;;){const rows=await client.query('SELECT id,source_id,payload::text AS content FROM items WHERE publication_id=$1 AND NOT(source_id=ANY($2::text[])) AND id>$3 ORDER BY id LIMIT 50',[publication,excluded,last]);if(!rows.rowCount)break;for(const row of rows.rows){const source=summaries.get(row.source_id);if(!source)throw new DomainError(409,'UPDATE_DANGLING_SOURCE','Item sem fonte no inventário da publicação verificada.');source.hash.update(row.id).update('\0').update(semanticJson(row.content)).update('\n');source.items++;last=row.id;}}
+ let last='';for(;;){const rows=await client.query('SELECT id,source_id,payload::text AS content FROM items WHERE publication_id=$1 AND NOT(source_id=ANY($2::text[])) AND id>$3 ORDER BY id LIMIT 1000',[publication,excluded,last]);if(!rows.rowCount)break;for(const row of rows.rows){const source=summaries.get(row.source_id);if(!source)throw new DomainError(409,'UPDATE_DANGLING_SOURCE','Item sem fonte no inventário da publicação verificada.');source.hash.update(row.id).update('\0').update(semanticJson(row.content)).update('\n');source.items++;last=row.id;}}
  return[...summaries.values()].map(source=>({source_id:source.source_id,items:source.items,source_sha256:source.source_sha256,items_sha256:source.hash.digest('hex')}));
 }
 async function relationProof(client:pg.PoolClient,publication:string,excluded:string[],comparePublication?:string){
  const hash=createHash('sha256');let count=0,last='';
  for(;;){
   // Apply LIMIT before inspecting membership. A correlated anti-join rebuilt the entire source/member join for every page.
-  const rows=(await client.query('SELECT id,payload::text AS content FROM relations WHERE publication_id=$1 AND id>$2 ORDER BY id LIMIT 50',[publication,last])).rows;
+  const rows=(await client.query('SELECT id,payload::text AS content FROM relations WHERE publication_id=$1 AND id>$2 ORDER BY id LIMIT 1000',[publication,last])).rows;
   if(!rows.length)break;
   const records=rows.map(row=>{const record=JSON.parse(row.content) as Relation;return{id:row.id as string,record,content:JSON.stringify(record)};});
   const memberIds=[...new Set(records.flatMap(row=>row.record.members.map(member=>member.item_id)))],membership=new Map<string,boolean>();
@@ -75,6 +169,7 @@ async function coverageProof(client:pg.PoolClient,publication:string,excluded:st
 export async function verifyGlobalIngestionPreservation(basePublication:string,candidatePublication:string,targetSourceIds:string[],actorId='curriculos-abertos:global-update-verifier'){
  const target=targets(targetSourceIds),client=await pool.connect();try{
   await client.query('BEGIN ISOLATION LEVEL REPEATABLE READ READ ONLY');
+  await client.query("SET LOCAL statement_timeout='0'");
   const candidate=(await client.query("SELECT payload->'update_scope' AS scope FROM publications WHERE id=$1",[candidatePublication])).rows[0];if(!candidate||candidate.scope?.mode!=='base-plus-source-update'||candidate.scope.base_publication!==basePublication||JSON.stringify(candidate.scope.target_source_ids)!==JSON.stringify(target))throw new DomainError(409,'UPDATE_LINEAGE_MISMATCH','Linhagem do candidato não corresponde à base e fontes declaradas.');
   const before=await diagnosticStep('base source preservation hashes',()=>sourceProofs(client,basePublication,target)),after=await diagnosticStep('candidate source preservation hashes',()=>sourceProofs(client,candidatePublication,target));
   if(JSON.stringify(before)!==JSON.stringify(after))throw new DomainError(409,'OUTSIDE_SOURCE_CHANGED','Fonte ou item fora do escopo foi removido ou alterado.');
@@ -86,7 +181,12 @@ export async function verifyGlobalIngestionPreservation(basePublication:string,c
   if(JSON.stringify(beforeRelations)!==JSON.stringify(afterRelations))throw new DomainError(409,'OUTSIDE_RELATIONS_CHANGED','Relações fora do escopo foram removidas ou alteradas.');
   if(JSON.stringify(beforeCoverage)!==JSON.stringify(afterCoverage))throw new DomainError(409,'OUTSIDE_COVERAGE_CHANGED','Cobertura fora do escopo foi removida ou alterada.');
   // This database-side check also catches unsafe JS numeric rounding, which a serialization hash alone cannot prove absent.
-  for(const table of ['sources','items'] as const){const filter=table==='sources'?'b.id':'b.source_id';const changed=(await diagnosticStep('canonical equality '+table,()=>client.query(`SELECT b.id FROM ${table} b LEFT JOIN ${table} a ON a.publication_id=$3 AND a.id=b.id WHERE b.publication_id=$1 AND NOT(${filter}=ANY($2::text[])) AND b.payload IS DISTINCT FROM a.payload LIMIT 1`,[basePublication,target,candidatePublication]))).rows[0];if(changed)throw new DomainError(409,'OUTSIDE_CANONICAL_VALUE_CHANGED','Valor canônico fora do alvo mudou; a atualização foi recusada, inclusive para números que perderiam precisão.');}
+  // A new candidate publication has no useful MCV statistics yet. With nested loops enabled PostgreSQL can estimate
+  // its side as one row and compare every base row against the entire candidate. Force a merge/hash-capable plan for
+  // this full-payload equality check; the composite publication/id index supplies the merge order when chosen.
+  const nestedLoopSetting=(await client.query('SHOW enable_nestloop')).rows[0].enable_nestloop==='on'?'on':'off';
+  await client.query('SET LOCAL enable_nestloop=off');
+  try{for(const table of ['sources','items'] as const){const filter=table==='sources'?'b.id':'b.source_id';const changed=(await diagnosticStep('canonical equality '+table,()=>client.query(`SELECT b.id FROM ${table} b LEFT JOIN ${table} a ON a.publication_id=$3 AND a.id=b.id WHERE b.publication_id=$1 AND NOT(${filter}=ANY($2::text[])) AND b.payload IS DISTINCT FROM a.payload LIMIT 1`,[basePublication,target,candidatePublication]))).rows[0];if(changed)throw new DomainError(409,'OUTSIDE_CANONICAL_VALUE_CHANGED','Valor canônico fora do alvo mudou; a atualização foi recusada, inclusive para números que perderiam precisão.');}}finally{await client.query(`SET LOCAL enable_nestloop=${nestedLoopSetting}`);}
   const coverageFilter=`NOT EXISTS(SELECT 1 FROM jsonb_array_elements_text(coalesce(payload->'source_ids','[]'::jsonb)) sid WHERE sid=ANY($2::text[])) AND NOT EXISTS(SELECT 1 FROM jsonb_array_elements($4::jsonb) k WHERE k=jsonb_build_array(payload->'uf',payload->'stage',payload->'component'))`;
   const changedCoverage=(await client.query(`WITH b AS(SELECT row_number() OVER(ORDER BY row_index) n,payload FROM publication_coverage WHERE publication_id=$1 AND ${coverageFilter}),a AS(SELECT row_number() OVER(ORDER BY row_index) n,payload FROM publication_coverage WHERE publication_id=$3 AND ${coverageFilter}) SELECT b.n FROM b FULL JOIN a USING(n) WHERE b.payload IS DISTINCT FROM a.payload LIMIT 1`,[basePublication,target,candidatePublication,JSON.stringify(affectedKeys.map(key=>JSON.parse(key)))])).rows[0];if(changedCoverage)throw new DomainError(409,'OUTSIDE_CANONICAL_VALUE_CHANGED','Valor canônico de cobertura fora do alvo mudou.');
   const baseSources=(await client.query('SELECT id FROM sources WHERE publication_id=$1 ORDER BY id',[basePublication])).rows.map(x=>x.id as string).sort();
@@ -107,9 +207,9 @@ export async function prepareGlobalIngestionUpdate(input:GlobalIngestionInput){
  const technicalRequired=raw.sources.some(source=>input.target_source_ids.includes(source.id)&&(['am-rca-ei','am-rca-ef-ai','am-rca-ef-af','am-rca-em'].includes(source.id)||Object.hasOwn(source,'technical_supersessions')||Object.hasOwn(source,'technical_extraction_corrections')));
  if(technicalRequired&&!input.provenance)throw new DomainError(422,'INGESTION_PROVENANCE_REQUIRED','Esta fonte exige etapa raster/técnica e recibos de orquestração verificáveis.');
  if(raw.publication_kind!=='source_update_receipt'||raw.base_publication!==input.base_publication||raw.base_artifact_sha256!==input.base_artifact_sha256||JSON.stringify(targets(raw.target_source_ids as string[]))!==JSON.stringify(target))throw new DomainError(409,'RAW_UPDATE_SCOPE_MISMATCH','Recibo parcial não demonstra a mesma base, contexto SHA e fontes alvo fixadas no job.');
- const client=await pool.connect();let global:Awaited<ReturnType<typeof writeShardedArtifact>>,provenance:PreparedIngestionProvenance|undefined;
+ const client=await pool.connect();let global:Awaited<ReturnType<typeof writeShardedArtifact>>,provenance:PreparedIngestionProvenance|undefined,affectedKeys:string[]=[],revalidationMode:'prepare'|'replay'='prepare';
  try{
-  await client.query('BEGIN ISOLATION LEVEL REPEATABLE READ');const base=await baseRecord(client,input.base_publication);
+  await client.query('BEGIN ISOLATION LEVEL REPEATABLE READ');await client.query("SET LOCAL statement_timeout='0'");const base=await baseRecord(client,input.base_publication);
   if(raw.base_publication_sha256!==base.sha256)throw new DomainError(409,'RAW_BASE_CHECKSUM_MISMATCH','Checksum da base no recibo não corresponde à publicação fixada.');
   const baseSources=(await client.query('SELECT payload FROM sources WHERE publication_id=$1 ORDER BY id',[base.id])).rows.map(x=>x.payload as Source);
   const nationalSources=baseSources.filter(s=>s.uf==='BR'),contextIds=nationalSources.map(s=>s.id).sort();
@@ -119,6 +219,9 @@ export async function prepareGlobalIngestionUpdate(input:GlobalIngestionInput){
   for(const source of nationalSources){const supplied=raw.sources.find(s=>s.id===source.id);if(!supplied||(await client.query('SELECT $1::jsonb=$2::jsonb AS equal',[JSON.stringify(source),JSON.stringify(supplied)])).rows[0].equal!==true)throw new DomainError(409,'NATIONAL_CONTEXT_CHANGED','Metadados BR diferem da base imutável.');}
   for(const source of baseSources.filter(s=>target.includes(s.id))){const replacement=raw.sources.find(s=>s.id===source.id)!;const unchanged=(await client.query('SELECT $1::jsonb=$2::jsonb AS equal',[JSON.stringify(source),JSON.stringify(replacement)])).rows[0].equal;if(!unchanged){const dependency=(await client.query("SELECT i.id FROM items i CROSS JOIN LATERAL jsonb_array_elements(i.evidence)e WHERE i.publication_id=$1 AND NOT(i.source_id=ANY($2::text[])) AND e->>'source_id'=$3 LIMIT 1",[base.id,target,source.id])).rows[0];if(dependency)throw new DomainError(409,'CROSS_SOURCE_EVIDENCE_DEPENDENCY','Itens fora do alvo citam a edição desta fonte. A alteração exige escopo editorial explícito dessas dependências.');}}
   const sourceUnion=[...baseSources.filter(s=>!target.includes(s.id)),...raw.sources.filter(s=>target.includes(s.id))].sort((a,b)=>a.id.localeCompare(b.id));
+  const targetSet=new Set(target),baseSampleSources=new Set(baseSources.map(source=>source.id)),rawSampleSources=new Set(raw.sources.map(source=>source.id));
+  const verificationSamples=[...scopedVerificationSamples(base.metadata.verification,baseSampleSources,targetSet,'base'),...scopedVerificationSamples(raw.verification,rawSampleSources,targetSet,'raw')];
+  const sampleKeys=new Set<string>();for(const sample of verificationSamples){const key=JSON.stringify([sample.uf,sample.stage,sample.component,sample.item_id]);if(sampleKeys.has(key))throw new DomainError(409,'UPDATE_SAMPLE_CONFLICT','Amostras da base e do recibo conflitam no mesmo item e estrato.');sampleKeys.add(key);}
   if(input.provenance)provenance=await prepareIngestionProvenance(client,{base:{id:base.id,sha256:base.sha256},target_source_ids:target,raw,effective_raw_receipt:{publication:raw.id,artifact:relative(process.cwd(),resolve(input.raw_artifact)),artifact_sha256:input.raw_artifact_sha256},provenance:input.provenance,signal:input.signal});
   await client.query('CREATE TEMP TABLE ingestion_scope(base_id text,target_ids text[]) ON COMMIT DROP');await client.query('INSERT INTO ingestion_scope VALUES($1,$2)',[base.id,target]);
   await client.query('CREATE TEMP TABLE ingestion_raw_items(id text PRIMARY KEY,source_id text NOT NULL,kind text NOT NULL,positions jsonb NOT NULL,evidence jsonb NOT NULL,payload jsonb NOT NULL) ON COMMIT DROP');
@@ -142,21 +245,38 @@ export async function prepareGlobalIngestionUpdate(input:GlobalIngestionInput){
   const dangling=(await client.query('SELECT m.item_id FROM ingestion_members m LEFT JOIN ingestion_items i ON i.id=m.item_id WHERE i.id IS NULL LIMIT 1')).rows[0];if(dangling)throw new DomainError(409,'UPDATE_DANGLING_MEMBER','Um vínculo recalculado ou preservado aponta para item ausente.');
   const baseCoverage=(await client.query('SELECT payload FROM publication_coverage WHERE publication_id=$1 ORDER BY row_index',[base.id])).rows.map(x=>x.payload);
   const coverage=await mergeIngestionCoverage(client,baseCoverage,raw.coverage as Record<string,unknown>[],target,sourceUnion);
-  const affectedKeys=[...new Set([...baseCoverage,...raw.coverage as Record<string,unknown>[]].filter(row=>rowTargets(row,target)).map(coverageKey))].sort();
+  affectedKeys=[...new Set([...baseCoverage,...raw.coverage as Record<string,unknown>[]].filter(row=>rowTargets(row,target)).map(coverageKey))].sort();
   const preservation={unaffected_sources:await sourceProofs(client,base.id,target),relations_excluding_target:await relationProof(client,base.id,target),coverage_excluding_target:await coverageProof(client,base.id,target,affectedKeys)};
   const updateScope={mode:'base-plus-source-update',version:VERSION,base_publication:base.id,base_publication_sha256:base.sha256,base_artifact_sha256:input.base_artifact_sha256,base_source_ids:baseSources.map(s=>s.id).sort(),target_source_ids:target,affected_coverage_keys:affectedKeys,preservation_expected:preservation,raw_publication:raw.id,raw_artifact_sha256:input.raw_artifact_sha256,actor_id:input.actor_id,actor_type:'automated',method:'Pinned immutable base + exact scoped replacement; target relations recalculated by producer against exact base BR context; no correspondence/review flags coerced. Expected preservation is independently verified after import in the job receipt.'};
   const id='ca-update-'+digest(JSON.stringify({version:VERSION,base:base.id,base_sha256:base.sha256,raw_sha256:input.raw_artifact_sha256,target,actor_id:input.actor_id,...(provenance?{orchestration_sha256:provenance.orchestration_sha256,technical_events_sha256:provenance.technical_events_sha256}:{} )})).slice(0,32);
+  const sourceReconciliation=mergeSourceReconciliationReports(base.metadata.source_reconciliation,raw.source_reconciliation,target,baseSources.map(source=>source.id),raw.sources.map(source=>source.id));
   const metadata={...base.metadata};for(const key of ['format','storage_format','content_identity','item_count','source_count','relation_count','update_scope','verification','export_manifest','orchestration_provenance','orchestration_sha256','technical_identity_payload','technical_events_sha256'])delete metadata[key];
-  const header={...metadata,id,schema_version:raw.schema_version,schema_path:raw.schema_path??base.metadata.schema_path??null,schema_sha256:raw.schema_sha256??base.metadata.schema_sha256??null,created_at:raw.created_at,extraction_revision:raw.extraction_revision,mapping_revision:raw.mapping_revision,sources:sourceUnion,coverage,...(provenance?{orchestration_provenance:provenance.orchestration_provenance,orchestration_sha256:provenance.orchestration_sha256,technical_identity_payload:provenance.technical_identity_payload,technical_events_sha256:provenance.technical_events_sha256}:{}),changelog:[...(Array.isArray(base.metadata.changelog)?base.metadata.changelog:[]),...(provenance?.technical_events??[]),{type:'source_update',base_publication:base.id,target_source_ids:target,raw_publication:raw.id,raw_artifact_sha256:input.raw_artifact_sha256,description:'Substituição delimitada de fontes sobre base publicada imutável. Demais fontes, itens, relações e cobertura preservados; não representa mudança oficial dos currículos.'}],parent_publication:base.id,parent_content_identity:base.metadata.content_identity??null,publication_kind:'global_source_update_candidate',national_release_ready:false,coverage_statement:'Atualização global por fontes delimitadas; recortes afetados requerem reconciliação. Não constitui aprovação pedagógica humana nem lançamento nacional.',update_scope:updateScope,verification:{actor_type:'automated',actor_id:input.actor_id,method:VERSION,raw_verification:raw.verification??null,base_verification:base.metadata.verification??null,human_pedagogical_review:false}};
-  global=await writeShardedArtifact(header,{items:queryRecords<Learning>(client,'ingestion_items',undefined,'',input.signal),relations:queryRecords<Relation>(client,'ingestion_relations',undefined,'',input.signal)},{directory:input.output_directory});
+  const header={...metadata,id,schema_version:raw.schema_version,schema_path:raw.schema_path??base.metadata.schema_path??null,schema_sha256:raw.schema_sha256??base.metadata.schema_sha256??null,created_at:raw.created_at,extraction_revision:raw.extraction_revision,mapping_revision:raw.mapping_revision,sources:sourceUnion,coverage,source_reconciliation:sourceReconciliation,...(provenance?{orchestration_provenance:provenance.orchestration_provenance,orchestration_sha256:provenance.orchestration_sha256,technical_identity_payload:provenance.technical_identity_payload,technical_events_sha256:provenance.technical_events_sha256}:{}),changelog:[...(Array.isArray(base.metadata.changelog)?base.metadata.changelog:[]),...(provenance?.technical_events??[]),{type:'source_update',base_publication:base.id,target_source_ids:target,raw_publication:raw.id,raw_artifact_sha256:input.raw_artifact_sha256,description:'Substituição delimitada de fontes sobre base publicada imutável. Demais fontes, itens, relações e cobertura preservados; não representa mudança oficial dos currículos.'}],parent_publication:base.id,parent_content_identity:base.metadata.content_identity??null,publication_kind:'global_source_update_candidate',national_release_ready:false,coverage_statement:'Atualização global por fontes delimitadas; recortes afetados requerem reconciliação. Não constitui aprovação pedagógica humana nem lançamento nacional.',update_scope:updateScope,verification:{actor_type:'automated',actor_id:input.actor_id,method:VERSION,samples:verificationSamples,raw_verification:raw.verification??null,base_verification:base.metadata.verification??null,human_pedagogical_review:false}};
+  const outputRecords={items:queryRecords<Learning>(client,'ingestion_items',undefined,'',input.signal),relations:queryRecords<Relation>(client,'ingestion_relations',undefined,'',input.signal)};
+  const existingFilename=resolve(input.output_directory,'snapshot.manifest.json');
+  if(existsSync(existingFilename)){
+   const loaded=await loadBundleFile(existingFilename);const existing=loaded.bundle as unknown as ShardedManifest;
+   if(existing.format!=='curriculos-abertos/sharded-v1'||existing.id!==id||comparableCandidateHeader(existing as unknown as Record<string,unknown>)!==comparableCandidateHeader(header))throw new DomainError(409,'UPDATE_CANDIDATE_COLLISION','Artefato existente não corresponde à atualização global fixada.');
+   const actualIdentity=await hashShardedRecords(outputRecords),savedIdentity=existing.content_identity as {items_jsonl_sha256?:string;relations_jsonl_sha256?:string};
+   if(stableJson(actualIdentity)!==stableJson({items_jsonl_sha256:savedIdentity?.items_jsonl_sha256,relations_jsonl_sha256:savedIdentity?.relations_jsonl_sha256}))throw new DomainError(409,'UPDATE_CANDIDATE_CONTENT_MISMATCH','Conteúdo persistido do candidato diverge da composição atual.');
+   await verifyShardedManifest(existing,resolve('data/bundles'));
+   const proofs=existing.coverage.filter(value=>affectedKeys.includes(coverageKey(value as unknown as Record<string,unknown>))).map(value=>(value as unknown as Record<string,unknown>).coverage_revalidation);
+   if(proofs.some(Boolean)&&proofs.some(value=>!value))throw new DomainError(409,'UPDATE_CANDIDATE_REVALIDATION_PARTIAL','Manifesto existente contém provas de revalidação incompletas.');
+   if(proofs.length!==affectedKeys.length)throw new DomainError(409,'UPDATE_CANDIDATE_SCOPE_MISMATCH','Recortes afetados do artefato existente divergem da atualização.');
+   revalidationMode=proofs.length&&proofs.every(Boolean)?'replay':'prepare';
+   global={manifest:existing,filename:loaded.path,sha256:loaded.file_sha256,bytes:loaded.bytes,root:resolve('data/bundles')};
+  }else global=await writeShardedArtifact(header,outputRecords,{directory:input.output_directory});
   input.signal?.throwIfAborted();if(provenance)await assertIngestionProvenanceUnchanged(provenance);input.signal?.throwIfAborted();
   await client.query('COMMIT');
  }catch(error){await client.query('ROLLBACK');throw error;}finally{client.release();}
  input.signal?.throwIfAborted();
+ const coverageRevalidation=await revalidateCoverage(global,affectedKeys,input.signal,revalidationMode);global=coverageRevalidation.result;
+ const coverageRevalidationReceipt={report_path:coverageRevalidation.report_path,report_sha256:coverageRevalidation.report_sha256,scopes_checked:coverageRevalidation.scopes_checked,scopes_ready:coverageRevalidation.scopes_ready};
+ input.signal?.throwIfAborted();
  const receipt=await importShardedManifest(global.manifest,global.sha256,{root:global.root,makeDefault:false});
  input.signal?.throwIfAborted();
  const proof=await verifyGlobalIngestionPreservation(input.base_publication,receipt.id,target,input.actor_id);
- return{publication:receipt.id,artifact:relative(process.cwd(),global.filename),artifact_sha256:global.sha256,import_receipt:receipt,raw_receipt:{publication:raw.id,artifact:relative(process.cwd(),resolve(input.raw_artifact)),artifact_sha256:input.raw_artifact_sha256},update_scope:proof,...(provenance?{provenance_receipt:{orchestration_provenance:provenance.orchestration_provenance,orchestration_sha256:provenance.orchestration_sha256,technical_events_sha256:provenance.technical_events_sha256}}:{})};
+ return{publication:receipt.id,artifact:relative(process.cwd(),global.filename),artifact_sha256:global.sha256,import_receipt:receipt,raw_receipt:{publication:raw.id,artifact:relative(process.cwd(),resolve(input.raw_artifact)),artifact_sha256:input.raw_artifact_sha256},update_scope:proof,coverage_revalidation:coverageRevalidationReceipt,...(provenance?{provenance_receipt:{orchestration_provenance:provenance.orchestration_provenance,orchestration_sha256:provenance.orchestration_sha256,technical_events_sha256:provenance.technical_events_sha256}}:{})};
 }
 
 /** Explicit candidate publication: CAS, visibility and the audit event share one locked transaction. */

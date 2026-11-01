@@ -9,6 +9,8 @@ const database=`curriculum_test_${suffix}`;
 const password=randomBytes(32).toString('hex');
 let createdContainer=false,createdDatabase=false;
 let admin:pg.Client|undefined;
+let databaseRuntime:Record<string,unknown>|undefined;
+async function readDatabaseRuntime(client:pg.Client){return(await client.query("SELECT current_setting('server_version') AS server_version,current_setting('server_version_num') AS server_version_num,d.datcollate AS lc_collate,d.datctype AS lc_ctype FROM pg_database d WHERE d.datname=current_database()")).rows[0] as Record<string,unknown>;}
 function run(command:string,args:string[],env:NodeJS.ProcessEnv=process.env,capture=false):Promise<string> {
  return new Promise((resolve,reject)=>{const child=spawn(command,args,{env,stdio:['ignore',capture?'pipe':'inherit',capture?'pipe':'inherit']});let output='';if(capture){child.stdout?.on('data',c=>output+=c.toString());child.stderr?.on('data',c=>output+=c.toString());}child.on('error',reject);child.on('close',code=>code===0?resolve(output):reject(new Error(`${command} exited ${code}. ${capture?output.slice(-1200):''}`)));});
 }
@@ -17,7 +19,7 @@ try {
  if(process.env.TEST_DATABASE_ADMIN_URL) {
   // Explicitly configured administration capability; the generated identifier cannot target an existing application DB.
   if(!/^curriculum_test_[a-f0-9]{12}$/.test(database))throw Error('Generated test database identifier invalid.');
-  admin=new pg.Client({connectionString:process.env.TEST_DATABASE_ADMIN_URL,connectionTimeoutMillis:5000});await admin.connect();
+  admin=new pg.Client({connectionString:process.env.TEST_DATABASE_ADMIN_URL,connectionTimeoutMillis:5000});await admin.connect();databaseRuntime=await readDatabaseRuntime(admin);
   await admin.query(`CREATE DATABASE "${database}"`);createdDatabase=true;
   const parsed=new URL(process.env.TEST_DATABASE_ADMIN_URL);parsed.pathname='/'+database;url=parsed.toString();
  }else {
@@ -28,11 +30,20 @@ try {
   const port=portOutput.match(/127\.0\.0\.1:(\d+)/)?.[1];if(!port)throw Error('Disposable PostgreSQL port not found.');
   url=`postgresql://curriculum_test:${password}@127.0.0.1:${port}/${database}`;
  }
- let ready=false;for(let attempt=0;attempt<40;attempt++){const client=new pg.Client({connectionString:url,connectionTimeoutMillis:500});try{await client.connect();await client.query('SELECT 1');ready=true;break;}catch{await new Promise(r=>setTimeout(r,250));}finally{await client.end().catch(()=>{});}}
- if(!ready)throw Error('Disposable PostgreSQL failed readiness.');
+ let ready=false,lastReadinessError='No connection attempt completed.';
+ for(let attempt=0;attempt<40;attempt++){
+  const client=new pg.Client({connectionString:url,connectionTimeoutMillis:1000});
+  try{await client.connect();databaseRuntime=await readDatabaseRuntime(client);ready=true;break;}
+  catch(error){lastReadinessError=(error as Error).message;await new Promise(r=>setTimeout(r,250));}
+  finally{await client.end().catch(()=>{});}
+ }
+ if(!ready){
+  const logs=createdContainer?await run('docker',['logs','--tail','60',container],process.env,true).catch(error=>`Unable to read disposable PostgreSQL logs: ${(error as Error).message}`):'';
+  throw Error(`Disposable PostgreSQL failed readiness. Last attempt: ${lastReadinessError}${logs?`\nContainer logs:\n${logs}`:''}`);
+ }
  const files=(await readdir('tests')).filter(n=>n.endsWith('.test.ts')).sort().map(n=>'tests/'+n);
  if(!files.length)throw Error('No test files found.');
- console.log(JSON.stringify({event:'test_database_ready',mode:createdDatabase?'explicit_admin_connection':'disposable_container',container:createdContainer?container:undefined,database,files:files.length,fixture_policy:'Isolated owned test database only; published data untouched.'}));
+ console.log(JSON.stringify({event:'test_database_ready',mode:createdDatabase?'explicit_admin_connection':'disposable_container',container:createdContainer?container:undefined,database,database_runtime:databaseRuntime,node_runtime:process.version,files:files.length,fixture_policy:'Isolated owned test database only; published data untouched.'}));
  await run(process.execPath,['--import','tsx','--test','--test-concurrency=1',...files],{...process.env,DATABASE_URL:url,DOMAIN_INTEGRATION_TEST:'1',OPTIONAL_CONTRACT_INTEGRATION:'1'});
 }catch(error){console.error((error as Error).message);process.exitCode=1;}finally{
  if(createdDatabase&&admin){try{await admin.query(`DROP DATABASE "${database}" WITH (FORCE)`);}catch{console.error('Owned test database cleanup failed: '+database);process.exitCode=1;}}
