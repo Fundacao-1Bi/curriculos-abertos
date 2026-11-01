@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "at": "2026-11-01T12:23:50.804160+00:00",
+  "root": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap",
+  "operation": "apfs_clone_duplicate_files",
+  "targets": [
+    "var/qa-es-source-update-candidate-20261031/data",
+    "var/qa-toei-eval-root-20261101/data"
+  ],
+  "guards": {
+    "at": "2026-11-01T12:23:51.851284+00:00",
+    "processes_sha256": "7076636385eeb11ae36c4e4bad3e31eaff923773e5d89ade01eb73804b44db1a",
+    "mounts_sha256": "eda18310e2f25ae7fb2bf721c40f167538e8bde3dd672fe68d838fdc38709b4f",
+    "docker_bind_mounts": [
+      {
+        "container": "/curriculos-abertos-clean-20261101045455-a3f8cd-worker-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "rw": false
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261101045455-a3f8cd-app-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "rw": false
+      },
+      {
+        "container": "/curriculos-abertos-clean-toei-20261101-app-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/qa-toei-candidate-data-20261101",
+        "rw": false
+      },
+      {
+        "container": "/curriculos-abertos-clean-toei-20261101-worker-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/qa-toei-candidate-data-20261101",
+        "rw": true
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261031222510-a65573-app-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/qa-ingestion-data-20261031",
+        "rw": false
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261031222510-a65573-worker-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/qa-ingestion-data-20261031",
+        "rw": true
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261031214824-a1f735-worker-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "rw": true
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261031214824-a1f735-app-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "rw": false
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261031210426-b6fa71-app-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "rw": false
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261031210426-b6fa71-worker-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "rw": true
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261028205403-f517a7-worker-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd/data",
+        "rw": true
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261028205403-f517a7-app-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd/data",
+        "rw": false
+      },
+      {
+        "container": "/curriculos-abertos-worker-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "rw": true
+      },
+      {
+        "container": "/curriculos-abertos-app-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "rw": false
+      },
+      {
+        "container": "/contentizap-payload-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/ContentiZAP",
+        "rw": true
+      }
+    ],
+    "target_open_files": [],
+    "passed": true
+  },
+  "available_before_bytes": 672550912,
+  "minimum_file_bytes": 262144,
+  "files": [],
+  "skipped": {
+    "extended attributes present": 5580,
+    "canonical path missing": 554,
+    "Only regular files with one link are eligible": 24,
+    "size differs": 14
+  },
+  "duplicate_logical_bytes": 0,
+  "physical_savings_not_guaranteed": true
+}

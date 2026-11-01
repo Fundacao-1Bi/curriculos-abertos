@@ -1,0 +1,954 @@
+{
+  "at": "2026-11-01T12:32:28.443868+00:00",
+  "receipt": "docs/evidence/storage-consolidation-receipt-20261101.json",
+  "receipt_sha256": "29053493f8485c8afc852b9626ec2b398e0a6552390fbe055c2f9c6143ea475e",
+  "status": "intentionally_stopped_no_material_gain",
+  "files_verified": 188,
+  "logical_bytes_verified": 6127950536,
+  "observed_free_delta_bytes": 5935104,
+  "no_pending_replace_intents": true,
+  "paths_bytes_metadata_xattrs_acl_and_cow_verified": true,
+  "files": [
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/DF/df-catalogo-ifa-2026.pdf",
+      "sha256": "1bc5dbcbb5bc44efdb6c4917c565f82afe947fefd2d16b9e95a44d84dd578da8",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/DF/df-catalogo-ifa-2026.pdf",
+      "sha256": "1bc5dbcbb5bc44efdb6c4917c565f82afe947fefd2d16b9e95a44d84dd578da8",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/AP/ap-rca-em-independent-retry.pdf",
+      "sha256": "991aa4b3aa94c8a40ed9c9609421bcbfb4a1a7a8486ca4c7dcdf12905443bdfe",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/AP/ap-rca-em.pdf",
+      "sha256": "991aa4b3aa94c8a40ed9c9609421bcbfb4a1a7a8486ca4c7dcdf12905443bdfe",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/AP/ap-rca-em-independent-retry.pdf",
+      "sha256": "991aa4b3aa94c8a40ed9c9609421bcbfb4a1a7a8486ca4c7dcdf12905443bdfe",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/AP/ap-rca-em.pdf",
+      "sha256": "991aa4b3aa94c8a40ed9c9609421bcbfb4a1a7a8486ca4c7dcdf12905443bdfe",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/PR/pr-referencial-em-2025.pdf",
+      "sha256": "a6aff047ef49628ca1e09f37b84597b62d72c9fbfbcd0c6ebdbfb2a618f71a04",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/PR/pr-referencial-em-2025.pdf",
+      "sha256": "a6aff047ef49628ca1e09f37b84597b62d72c9fbfbcd0c6ebdbfb2a618f71a04",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/AM/am-rca-ef-ai.pdf",
+      "sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/AM/am-rca-ef-ai.pdf",
+      "sha256": "38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/ca-5a893e4a816bf6081100.manifest.json",
+      "sha256": "85619a2f838f4bba401c6c339f1ca24ab038b483a79e504b933e4a3c9db65020",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/ca-5a893e4a816bf6081100.manifest.json",
+      "sha256": "85619a2f838f4bba401c6c339f1ca24ab038b483a79e504b933e4a3c9db65020",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/AM/am-rca-ef-af.pdf",
+      "sha256": "26285c69921d0efa4993620d140e35f974d8f6b44223c676387464d04647eb2a",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/AM/am-rca-ef-af.pdf",
+      "sha256": "26285c69921d0efa4993620d140e35f974d8f6b44223c676387464d04647eb2a",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/AM/am-native-ef-ai.pdf",
+      "sha256": "33cc60dac2cb169711229648350759a80a28872747da2ccb8cefac99147cae03",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/AM/am-native-ef-ai.pdf",
+      "sha256": "33cc60dac2cb169711229648350759a80a28872747da2ccb8cefac99147cae03",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/AC/ac-cedmac-proposta-organization.mp4",
+      "sha256": "3879dfabe011645831cd1d88dde5caab0d352e229934c8962af1a16fe6318608",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/AC/ac-cedmac-proposta-organization.mp4",
+      "sha256": "3879dfabe011645831cd1d88dde5caab0d352e229934c8962af1a16fe6318608",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/MA/ma-dctm-ei-ef.pdf",
+      "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/MA/ma-dctm-ei-ef.pdf",
+      "sha256": "8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/manifests/reconciliation/ac-cru-ei-ef.json",
+      "sha256": "bf1713a16b8c35d7af099c83250294fe11bd0beab6c05982825cd984adceef3b",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/manifests/reconciliation/ac-cru-ei-ef.json",
+      "sha256": "bf1713a16b8c35d7af099c83250294fe11bd0beab6c05982825cd984adceef3b",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/CE/ce-trilhas-aprofundamento-2023.pdf",
+      "sha256": "f4cea06b89ee1b8c51ffbed4189107af8ec938d659944ce82045338a0b51d15a",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/CE/ce-trilhas-aprofundamento-2023.pdf",
+      "sha256": "f4cea06b89ee1b8c51ffbed4189107af8ec938d659944ce82045338a0b51d15a",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/PB/pb-cedoc-392-layout-cache.json",
+      "sha256": "9aa04195471c4ad0a47d91cd92546c250488374e8748cbfb42b29d107dca95a6",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/PB/pb-cedoc-392-layout-cache.json",
+      "sha256": "9aa04195471c4ad0a47d91cd92546c250488374e8748cbfb42b29d107dca95a6",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/AM/am-native-ei.pdf",
+      "sha256": "b83cd551703efe29828e43f0db2659bb3f2327eebd004acfcb44150538ac5e67",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/AM/am-native-ei.pdf",
+      "sha256": "b83cd551703efe29828e43f0db2659bb3f2327eebd004acfcb44150538ac5e67",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/AP/ap-rca-em-qpdf.pdf",
+      "sha256": "e809b797076fcd20a1dc63d1a230ef8067cd63cee935e98a5e375c764711de94",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/AP/ap-rca-em-qpdf.pdf",
+      "sha256": "e809b797076fcd20a1dc63d1a230ef8067cd63cee935e98a5e375c764711de94",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/AM/am-native-em.pdf",
+      "sha256": "46dd801703b5bca3a849df1c8b16fef800f4d07538bf177797cb1ee1f3640313",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/AM/am-rca-em.pdf",
+      "sha256": "46dd801703b5bca3a849df1c8b16fef800f4d07538bf177797cb1ee1f3640313",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/AM/am-native-em.pdf",
+      "sha256": "46dd801703b5bca3a849df1c8b16fef800f4d07538bf177797cb1ee1f3640313",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/AM/am-rca-em.pdf",
+      "sha256": "46dd801703b5bca3a849df1c8b16fef800f4d07538bf177797cb1ee1f3640313",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/SC/sc-educacao-digital.pdf",
+      "sha256": "6ce6e2b404b1caf79fb0a684b9b8e8ba21139b34a17e6b4e4e59b87f64b9be57",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/SC/sc-educacao-digital.pdf",
+      "sha256": "6ce6e2b404b1caf79fb0a684b9b8e8ba21139b34a17e6b4e4e59b87f64b9be57",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/886cdd02d96a63c50be00e93faf0fe5a9f7f305a959bd9920bcbdd429be134bd-page-cell-v1.4.0.json",
+      "sha256": "c334ad3503c7ee3c3e510d47e5ffaa18c38b8714b34a8061ba5d727d70748a5e",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/886cdd02d96a63c50be00e93faf0fe5a9f7f305a959bd9920bcbdd429be134bd-page-cell-v1.4.0.json",
+      "sha256": "c334ad3503c7ee3c3e510d47e5ffaa18c38b8714b34a8061ba5d727d70748a5e",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/ca-845675113f0a0386c410.manifest.json",
+      "sha256": "873d6d9fe9af17219f42f6e77fbad823d5f19b5b98aac43a827422f5c8d8a079",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/ca-845675113f0a0386c410.manifest.json",
+      "sha256": "873d6d9fe9af17219f42f6e77fbad823d5f19b5b98aac43a827422f5c8d8a079",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/north-venv/lib/python3.9/site-packages/pymupdf/libmupdf.dylib",
+      "sha256": "f53d1420303860ffc586ed40e67cae4aec376e6d3263c3f7458ed10fd6878aa0",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/north-venv/lib/python3.9/site-packages/pymupdf/libmupdf.dylib",
+      "sha256": "f53d1420303860ffc586ed40e67cae4aec376e6d3263c3f7458ed10fd6878aa0",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/PA/pa-computacao-577-2025.pdf",
+      "sha256": "3b346b2b75dc1fc59ec903165e63318c5704501f96f4122742b4880d9b8244c3",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/PA/pa-computacao-577-2025.pdf",
+      "sha256": "3b346b2b75dc1fc59ec903165e63318c5704501f96f4122742b4880d9b8244c3",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/4a0c5a6939c86b5f45e710bb4a2587d570189f9566da0b4ed33b0a9643f50851-page-cell-v1.4.0.json",
+      "sha256": "2cbb96fda9ae95bdfda8062f97e027a56148d8c39dd53022ad8caa5af19e474b",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/4a0c5a6939c86b5f45e710bb4a2587d570189f9566da0b4ed33b0a9643f50851-page-cell-v1.4.0.json",
+      "sha256": "2cbb96fda9ae95bdfda8062f97e027a56148d8c39dd53022ad8caa5af19e474b",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/cbcd7249582d043ad893416c3c2fc0c8cb5056aee6f0e89eceb212aed680bf33-page-cell-v1.5.0.json",
+      "sha256": "da0e3ec536769cc0e177c670056cb00c5671413d227fc2999e978bb123565dd9",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/cbcd7249582d043ad893416c3c2fc0c8cb5056aee6f0e89eceb212aed680bf33-page-cell-v1.5.0.json",
+      "sha256": "da0e3ec536769cc0e177c670056cb00c5671413d227fc2999e978bb123565dd9",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/cbcd7249582d043ad893416c3c2fc0c8cb5056aee6f0e89eceb212aed680bf33-page-cell-v1.4.0.json",
+      "sha256": "27ee017f6447027988adb3aa2e33bee48d773af739d4a859935d5962a74dc4a6",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/cbcd7249582d043ad893416c3c2fc0c8cb5056aee6f0e89eceb212aed680bf33-page-cell-v1.4.0.json",
+      "sha256": "27ee017f6447027988adb3aa2e33bee48d773af739d4a859935d5962a74dc4a6",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/AP/ap-rca-ei-ef.pdf",
+      "sha256": "fc40788a0165eb6fa61d713cee87d4b0b95b45435e496b43bb477f9471a103c4",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/AP/ap-rca-ei-ef.pdf",
+      "sha256": "fc40788a0165eb6fa61d713cee87d4b0b95b45435e496b43bb477f9471a103c4",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/431fc24a61648b95e84786bf684b68295a1aa22ed2bee27b43407f67a63c32e3-page-cell-v1.4.0.json",
+      "sha256": "2502f9ec487cbcd878431ff26ce8ccca63e7cbe16e0eab2bfd0bc9c48deff651",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/431fc24a61648b95e84786bf684b68295a1aa22ed2bee27b43407f67a63c32e3-page-cell-v1.4.0.json",
+      "sha256": "2502f9ec487cbcd878431ff26ce8ccca63e7cbe16e0eab2bfd0bc9c48deff651",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/ce72aefb003c006d41e0912bc0744eaf2fb6dfca941d6de716293b593a495f46-page-cell-v1.5.0.json",
+      "sha256": "db07b35076410abe259dfa8f7bb9c09dfdb99a61809f9f79726ba064e81e216a",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/ce72aefb003c006d41e0912bc0744eaf2fb6dfca941d6de716293b593a495f46-page-cell-v1.5.0.json",
+      "sha256": "db07b35076410abe259dfa8f7bb9c09dfdb99a61809f9f79726ba064e81e216a",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/ce72aefb003c006d41e0912bc0744eaf2fb6dfca941d6de716293b593a495f46-page-cell-v1.4.0.json",
+      "sha256": "ed13473e84381015d6f2c8ff0a506e5ed1191a2fb3ec918ed05fae2e94ba7ede",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/ce72aefb003c006d41e0912bc0744eaf2fb6dfca941d6de716293b593a495f46-page-cell-v1.4.0.json",
+      "sha256": "ed13473e84381015d6f2c8ff0a506e5ed1191a2fb3ec918ed05fae2e94ba7ede",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/431fc24a61648b95e84786bf684b68295a1aa22ed2bee27b43407f67a63c32e3-page-cell-v1.5.0.json",
+      "sha256": "e0b872c98439bcd58240a256acbb5879b0ed3783a985bda86747923b0a676f76",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/431fc24a61648b95e84786bf684b68295a1aa22ed2bee27b43407f67a63c32e3-page-cell-v1.5.0.json",
+      "sha256": "e0b872c98439bcd58240a256acbb5879b0ed3783a985bda86747923b0a676f76",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/0bebb123f293c102f1ce8e2da837ad1f9b238232314a60e2ee2bfab856356d19-page-cell-v1.5.0.json",
+      "sha256": "f19c76931d79765c0e2114ce4fc3eef1589694672c9c62d2f43740d456291c76",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/0bebb123f293c102f1ce8e2da837ad1f9b238232314a60e2ee2bfab856356d19-page-cell-v1.5.0.json",
+      "sha256": "f19c76931d79765c0e2114ce4fc3eef1589694672c9c62d2f43740d456291c76",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/0bebb123f293c102f1ce8e2da837ad1f9b238232314a60e2ee2bfab856356d19-page-cell-v1.4.0.json",
+      "sha256": "5ff1fc926f0b0118284630ae14f1623972c25d3eac96b069dd1a1947918d7ab5",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/0bebb123f293c102f1ce8e2da837ad1f9b238232314a60e2ee2bfab856356d19-page-cell-v1.4.0.json",
+      "sha256": "5ff1fc926f0b0118284630ae14f1623972c25d3eac96b069dd1a1947918d7ab5",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/4a0c5a6939c86b5f45e710bb4a2587d570189f9566da0b4ed33b0a9643f50851-page-cell-v1.5.0.json",
+      "sha256": "ef415c4e10870f1870437bf758b7b2b9e06040673ec7cd20332d4217848c46c8",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/4a0c5a6939c86b5f45e710bb4a2587d570189f9566da0b4ed33b0a9643f50851-page-cell-v1.5.0.json",
+      "sha256": "ef415c4e10870f1870437bf758b7b2b9e06040673ec7cd20332d4217848c46c8",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/187ff82e9115f569ed328aea70e194cafce71a115d69be782d85ebd64d2e3f4c-page-cell-v1.5.0.json",
+      "sha256": "a94c11d7beb8141b0a05fbc3d2f705456d49ef1228a4b708f20d31d5f5c443da",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/187ff82e9115f569ed328aea70e194cafce71a115d69be782d85ebd64d2e3f4c-page-cell-v1.5.0.json",
+      "sha256": "a94c11d7beb8141b0a05fbc3d2f705456d49ef1228a4b708f20d31d5f5c443da",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/BA/ba-dcrb-em-consultado.pdf",
+      "sha256": "e25aa98d630a428f75b83ac21a7d7deb18aa482c845f9d73cadb2bbdf27287f5",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/BA/ba-dcrb-em-consultado.pdf",
+      "sha256": "e25aa98d630a428f75b83ac21a7d7deb18aa482c845f9d73cadb2bbdf27287f5",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/SC/sc-cb-em-caderno-6.pdf",
+      "sha256": "1fa4e94263494ce01f76f30d87d6cc41c71dd8d61e9569e9dc2907a746f5ad78",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/SC/sc-cb-em-caderno-6.pdf",
+      "sha256": "1fa4e94263494ce01f76f30d87d6cc41c71dd8d61e9569e9dc2907a746f5ad78",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/187ff82e9115f569ed328aea70e194cafce71a115d69be782d85ebd64d2e3f4c-page-cell-v1.4.0.json",
+      "sha256": "02bab17cbdcb465cfea21657d56129d875b5b57ce5c325dd8ffc70313fd7ba07",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/187ff82e9115f569ed328aea70e194cafce71a115d69be782d85ebd64d2e3f4c-page-cell-v1.4.0.json",
+      "sha256": "02bab17cbdcb465cfea21657d56129d875b5b57ce5c325dd8ffc70313fd7ba07",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/0bebb123f293c102f1ce8e2da837ad1f9b238232314a60e2ee2bfab856356d19-page-cell-v1.1.0.json",
+      "sha256": "db18959786da54db050e5c696ea1ad09935093f8357266a57880a4cd114aed95",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/0bebb123f293c102f1ce8e2da837ad1f9b238232314a60e2ee2bfab856356d19-page-cell-v1.1.0.json",
+      "sha256": "db18959786da54db050e5c696ea1ad09935093f8357266a57880a4cd114aed95",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/AL/al-gdrive-1H-6m3OnuTcYiUr--UkQSjI3p0gApR3UU.pdf",
+      "sha256": "96ff789382e1a45f9767440996ba32af7b6b826575cd7eabaf3fe8e9163f1fe1",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/AL/al-gdrive-1H-6m3OnuTcYiUr--UkQSjI3p0gApR3UU.pdf",
+      "sha256": "96ff789382e1a45f9767440996ba32af7b6b826575cd7eabaf3fe8e9163f1fe1",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/ca-77fb8076598b567e1ba3.json.gz",
+      "sha256": "0e5bdcfa80f39712bf0751e9364289a4ce91110e300c1446c913eaa7b7bcab36",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/ca-77fb8076598b567e1ba3.json.gz",
+      "sha256": "0e5bdcfa80f39712bf0751e9364289a4ce91110e300c1446c913eaa7b7bcab36",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/AC/ac-doe-14191-20260121.pdf",
+      "sha256": "71d47a5067d527a5a1428a5a59aa77a7b669625e9215d23ede15e0124c0d284e",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/AC/ac-doe-14191-20260121.pdf",
+      "sha256": "71d47a5067d527a5a1428a5a59aa77a7b669625e9215d23ede15e0124c0d284e",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/PE/pe-cedim-2026.pdf",
+      "sha256": "4a0c5a6939c86b5f45e710bb4a2587d570189f9566da0b4ed33b0a9643f50851",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/PE/pe-cedim-2026.pdf",
+      "sha256": "4a0c5a6939c86b5f45e710bb4a2587d570189f9566da0b4ed33b0a9643f50851",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/CE/ce-matrizes-2026.pdf",
+      "sha256": "676689026bd43a8e93e9785f1575c54b2922c5467468a6f6c6c4db06a3abd701",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/CE/ce-matrizes-2026.pdf",
+      "sha256": "676689026bd43a8e93e9785f1575c54b2922c5467468a6f6c6c4db06a3abd701",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/6bc96909d0199bd9e59d0ce4d8076eea069077ccd47f7a6a43b9f2064d2d9871-page-cell-v1.5.0.json",
+      "sha256": "1357d2718887e5ff75dd1972c303492b3fbe1f38c8697ba8300a8b48a454cd12",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/6bc96909d0199bd9e59d0ce4d8076eea069077ccd47f7a6a43b9f2064d2d9871-page-cell-v1.5.0.json",
+      "sha256": "1357d2718887e5ff75dd1972c303492b3fbe1f38c8697ba8300a8b48a454cd12",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/886cdd02d96a63c50be00e93faf0fe5a9f7f305a959bd9920bcbdd429be134bd-page-cell-v1.5.0.json",
+      "sha256": "2013599bdf1f1df2e1fc7d684be6b29b18644c1129c807121c5b2e8cc9e31d04",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/886cdd02d96a63c50be00e93faf0fe5a9f7f305a959bd9920bcbdd429be134bd-page-cell-v1.5.0.json",
+      "sha256": "2013599bdf1f1df2e1fc7d684be6b29b18644c1129c807121c5b2e8cc9e31d04",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/RS/rs-rcg-ef.pdf",
+      "sha256": "431fc24a61648b95e84786bf684b68295a1aa22ed2bee27b43407f67a63c32e3",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/RS/rs-rcg-ef.pdf",
+      "sha256": "431fc24a61648b95e84786bf684b68295a1aa22ed2bee27b43407f67a63c32e3",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/manifests/uncoded/sc-em-ept-items.json",
+      "sha256": "0ceb6883d3c79ebe702e5685e533c77f616258ccb415bd11a65b99d4a7a43d1b",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/manifests/uncoded/sc-em-ept-items.json",
+      "sha256": "0ceb6883d3c79ebe702e5685e533c77f616258ccb415bd11a65b99d4a7a43d1b",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/b614dff56ebcf6f216c0723adf9f9df06fb3bc93eef322acb5e977f3bc744bb3-page-cell-v1.5.0.json",
+      "sha256": "c6954dbbd6a95a143f78e9694ac66d3d162016064652d4ff0b31328bd4edb43d",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/b614dff56ebcf6f216c0723adf9f9df06fb3bc93eef322acb5e977f3bc744bb3-page-cell-v1.5.0.json",
+      "sha256": "c6954dbbd6a95a143f78e9694ac66d3d162016064652d4ff0b31328bd4edb43d",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/b614dff56ebcf6f216c0723adf9f9df06fb3bc93eef322acb5e977f3bc744bb3-page-cell-v1.4.0.json",
+      "sha256": "875e3f8b0ef82b06d990d043231647abe808b1897d35651f1deefc2e7d6e7d20",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/b614dff56ebcf6f216c0723adf9f9df06fb3bc93eef322acb5e977f3bc744bb3-page-cell-v1.4.0.json",
+      "sha256": "875e3f8b0ef82b06d990d043231647abe808b1897d35651f1deefc2e7d6e7d20",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/176d738032cba747e02e1ce2c73bb1a7e8d2d0e1d7f875340a2215e599e37271-page-cell-v1.4.0.json",
+      "sha256": "e7f2c317e78305f0503880fefb1b3d285678022c2f73b2ab9d0c3101f668fd21",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/176d738032cba747e02e1ce2c73bb1a7e8d2d0e1d7f875340a2215e599e37271-page-cell-v1.4.0.json",
+      "sha256": "e7f2c317e78305f0503880fefb1b3d285678022c2f73b2ab9d0c3101f668fd21",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/26285c69921d0efa4993620d140e35f974d8f6b44223c676387464d04647eb2a-page-cell-v1.5.0.json",
+      "sha256": "ad6f2b0361ff4ea2cca807d0d0b456f366679197fdf8fab688a4cb93b7c1a627",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/26285c69921d0efa4993620d140e35f974d8f6b44223c676387464d04647eb2a-page-cell-v1.5.0.json",
+      "sha256": "ad6f2b0361ff4ea2cca807d0d0b456f366679197fdf8fab688a4cb93b7c1a627",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/656b8669fe35750533400ead193c26e41ae2f12c6a31a7f20b984788a24a3088-page-cell-v1.5.0.json",
+      "sha256": "a8bad0cce7bce154c7a7ad69ac52c87d411839274e64eb2f96079180d55678b3",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/656b8669fe35750533400ead193c26e41ae2f12c6a31a7f20b984788a24a3088-page-cell-v1.5.0.json",
+      "sha256": "a8bad0cce7bce154c7a7ad69ac52c87d411839274e64eb2f96079180d55678b3",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/656b8669fe35750533400ead193c26e41ae2f12c6a31a7f20b984788a24a3088-page-cell-v1.4.0.json",
+      "sha256": "d47707a6c866f4e09b228f47d0dac8991cf1ff3718fb4f83a7c031feb4c60fac",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/656b8669fe35750533400ead193c26e41ae2f12c6a31a7f20b984788a24a3088-page-cell-v1.4.0.json",
+      "sha256": "d47707a6c866f4e09b228f47d0dac8991cf1ff3718fb4f83a7c031feb4c60fac",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/7a1d9ba3f4616219ef927dae652dabb9e1c1dbbba0b1b360244386905287a6e1-page-cell-v1.4.0.json",
+      "sha256": "e7670b6ec0ad740acb808d8b158dd406b2fcd79fb3c122dd8ac2507a0e9577f3",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/7a1d9ba3f4616219ef927dae652dabb9e1c1dbbba0b1b360244386905287a6e1-page-cell-v1.4.0.json",
+      "sha256": "e7670b6ec0ad740acb808d8b158dd406b2fcd79fb3c122dd8ac2507a0e9577f3",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/SE/se-curriculo-ei-ef.pdf",
+      "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/SE/se-curriculo-ei-ef.pdf",
+      "sha256": "974408a6d661c81aca12497be642d39f45aa8fa72b03e3ead7bc5fe19f1a033d",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/AC/ac-cedmac-participation.mp4",
+      "sha256": "9ee369d4549033d94b7dcc2b95f0c61a7d6c30a1bc34b91b16bafac09cf3059c",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/AC/ac-cedmac-participation.mp4",
+      "sha256": "9ee369d4549033d94b7dcc2b95f0c61a7d6c30a1bc34b91b16bafac09cf3059c",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508-page-cell-v1.5.0.json",
+      "sha256": "7e63bb657c116831bac648cd6ad5efa6b4415d3bcbdfc39a3fceb80e561dfb18",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/38d9b9c5bf7534f48d9f5182fd9b43bc07555f56944eca2eaa11a9e120f82508-page-cell-v1.5.0.json",
+      "sha256": "7e63bb657c116831bac648cd6ad5efa6b4415d3bcbdfc39a3fceb80e561dfb18",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/RN/rn-documento-ei-2018.pdf",
+      "sha256": "f79982d796d12a9ad54ffc6dd7db887c59e070cdb2993957f307c73ed1318651",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/RN/rn-documento-ei-2018.pdf",
+      "sha256": "f79982d796d12a9ad54ffc6dd7db887c59e070cdb2993957f307c73ed1318651",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/AL/al-gdrive-1EIrqth8nnoZLr1dfRvxsxUP_ENwiGEai.pdf",
+      "sha256": "71470b78330ce47acf88aa1353889d93bbb24407bf001646ab40f4cde4391287",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/AL/al-gdrive-1EIrqth8nnoZLr1dfRvxsxUP_ENwiGEai.pdf",
+      "sha256": "71470b78330ce47acf88aa1353889d93bbb24407bf001646ab40f4cde4391287",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/manifests/uncoded/pb-pcem-items.json",
+      "sha256": "c80a391d15199fbe0a713c53e847dd26b07dcb07e7432715eef6d9a889348557",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/manifests/uncoded/pb-pcem-items.json",
+      "sha256": "c80a391d15199fbe0a713c53e847dd26b07dcb07e7432715eef6d9a889348557",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/e0ab216989ee5c743722d00e5526629e44f7d8aa192e614ff6e37de7928857c2-page-cell-v1.5.0.json",
+      "sha256": "c22ed2f6d3ec064689a181a2f92490feaba8a3267a2de663f9ccfe9ebfd12047",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/e0ab216989ee5c743722d00e5526629e44f7d8aa192e614ff6e37de7928857c2-page-cell-v1.5.0.json",
+      "sha256": "c22ed2f6d3ec064689a181a2f92490feaba8a3267a2de663f9ccfe9ebfd12047",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/0c6b97015b1e3c6f0630306c84132518469182a1746c7b21b8721ffd74acbea5-page-cell-v1.5.0.json",
+      "sha256": "ddde5d940951cc781476bdabe0800c75a60210e3f8d6bdb57d635599ef2e6025",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/0c6b97015b1e3c6f0630306c84132518469182a1746c7b21b8721ffd74acbea5-page-cell-v1.5.0.json",
+      "sha256": "ddde5d940951cc781476bdabe0800c75a60210e3f8d6bdb57d635599ef2e6025",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/0c6b97015b1e3c6f0630306c84132518469182a1746c7b21b8721ffd74acbea5-page-cell-v1.4.0.json",
+      "sha256": "0ce6e391f799ba9df2a6d93f6a372aa6b5bf0bcb249299d2b927b289cb409567",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/0c6b97015b1e3c6f0630306c84132518469182a1746c7b21b8721ffd74acbea5-page-cell-v1.4.0.json",
+      "sha256": "0ce6e391f799ba9df2a6d93f6a372aa6b5bf0bcb249299d2b927b289cb409567",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/e95761f67d1733660b9b9bd2acee10707ed07301249c322cbf39fd86a3453112-page-cell-v1.5.0.json",
+      "sha256": "83bb0cf2a7ec9ea816eae7784f9b1b68aebeb3722df8f9b986b5157d4067b7b2",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/e95761f67d1733660b9b9bd2acee10707ed07301249c322cbf39fd86a3453112-page-cell-v1.5.0.json",
+      "sha256": "83bb0cf2a7ec9ea816eae7784f9b1b68aebeb3722df8f9b986b5157d4067b7b2",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/e95761f67d1733660b9b9bd2acee10707ed07301249c322cbf39fd86a3453112-page-cell-v1.4.0.json",
+      "sha256": "582fc11b2300dc735fe5ee989df454ba4096aa6749fcd97181911dc925f711f9",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/e95761f67d1733660b9b9bd2acee10707ed07301249c322cbf39fd86a3453112-page-cell-v1.4.0.json",
+      "sha256": "582fc11b2300dc735fe5ee989df454ba4096aa6749fcd97181911dc925f711f9",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/manifests/reconciliation/sp-curriculo-eief-isbn.json",
+      "sha256": "9f1891878eb4a7b3c971f706b0061622ca056f293a150c2635160770ceea1d60",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/manifests/reconciliation/sp-curriculo-eief-isbn.json",
+      "sha256": "9f1891878eb4a7b3c971f706b0061622ca056f293a150c2635160770ceea1d60",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a-page-cell-v1.4.0.json",
+      "sha256": "16b4aca611f4f32091c4a768d8e4512cd8ca7b4f8c632b7cfa9c49a826f71c00",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/8a1203d9794205738dfaf7ad2b34719d76b21b8559ca042fb498082bdea9af9a-page-cell-v1.4.0.json",
+      "sha256": "16b4aca611f4f32091c4a768d8e4512cd8ca7b4f8c632b7cfa9c49a826f71c00",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7-page-cell-v1.5.0.json",
+      "sha256": "08af2a2b46662d1f3d82be95664667c62ca5d26c445ee833bbffcf3cfe43a826",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/5dae60f020f85ecf71ea102464063859a4f7f65b8c5d88d8f32d4c53174987d7-page-cell-v1.5.0.json",
+      "sha256": "08af2a2b46662d1f3d82be95664667c62ca5d26c445ee833bbffcf3cfe43a826",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/77b9009c0880120860ca53b1743df572a5ed3dcf836149296bbbc7a08e978a76-page-cell-v1.5.0.json",
+      "sha256": "2a231faac0cf3d0537e9c680ed0def5bbce392ca6773d06c045174e873c2517e",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/77b9009c0880120860ca53b1743df572a5ed3dcf836149296bbbc7a08e978a76-page-cell-v1.5.0.json",
+      "sha256": "2a231faac0cf3d0537e9c680ed0def5bbce392ca6773d06c045174e873c2517e",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/77b9009c0880120860ca53b1743df572a5ed3dcf836149296bbbc7a08e978a76-page-cell-v1.4.0.json",
+      "sha256": "e2a5038b6b86daec28ca06ebbd0ef2ab2196377055b189625b6eec68b3621684",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/77b9009c0880120860ca53b1743df572a5ed3dcf836149296bbbc7a08e978a76-page-cell-v1.4.0.json",
+      "sha256": "e2a5038b6b86daec28ca06ebbd0ef2ab2196377055b189625b6eec68b3621684",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/es-5777-global-qa-ca297-v2/snapshot.manifest.json",
+      "sha256": "49216ad16734c72cc65e99b5ad1c1eaccdc43ef5c5db74c8f8cbe9d24a219981",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/es-5777-global-qa-ca297-v2/snapshot.manifest.json",
+      "sha256": "49216ad16734c72cc65e99b5ad1c1eaccdc43ef5c5db74c8f8cbe9d24a219981",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/d31b7a843ecef96921434877db1bf3955b6942a3125747b11059dc3765fe5db8-page-cell-v1.5.0.json",
+      "sha256": "6ccc3f20b4fc19f332a1e477d8038ae6625eee3273431c6067e8e732f5780a13",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/d31b7a843ecef96921434877db1bf3955b6942a3125747b11059dc3765fe5db8-page-cell-v1.5.0.json",
+      "sha256": "6ccc3f20b4fc19f332a1e477d8038ae6625eee3273431c6067e8e732f5780a13",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/manifests/uncoded/pa-dcepa-habilidades-v1-combined-items.json",
+      "sha256": "7294cebd0c8cd3008c7f9498312cd66268843aeabcbd94c4a158651cd7de9ed6",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/manifests/uncoded/pa-dcepa-habilidades-v1-combined-items.json",
+      "sha256": "7294cebd0c8cd3008c7f9498312cd66268843aeabcbd94c4a158651cd7de9ed6",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/176d738032cba747e02e1ce2c73bb1a7e8d2d0e1d7f875340a2215e599e37271-page-cell-v1.5.0.json",
+      "sha256": "f93e6658abcc37a5e34b52eee147bae3dfe3629a70a8454bdf4b7d50c0b307eb",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/176d738032cba747e02e1ce2c73bb1a7e8d2d0e1d7f875340a2215e599e37271-page-cell-v1.5.0.json",
+      "sha256": "f93e6658abcc37a5e34b52eee147bae3dfe3629a70a8454bdf4b7d50c0b307eb",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/2b350b8a53e5072ba915489c749f55b91284f4d23531a08faf5ea7fed89ae1a9-page-cell-v1.5.0.json",
+      "sha256": "1eaf54571b915a34fd34c8da4d0a45ac0994c7b8e037c7381e1cde3a7476c509",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/2b350b8a53e5072ba915489c749f55b91284f4d23531a08faf5ea7fed89ae1a9-page-cell-v1.5.0.json",
+      "sha256": "1eaf54571b915a34fd34c8da4d0a45ac0994c7b8e037c7381e1cde3a7476c509",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/2b350b8a53e5072ba915489c749f55b91284f4d23531a08faf5ea7fed89ae1a9-page-cell-v1.4.0.json",
+      "sha256": "3f1c21811628fb1a61ef364dcc853ae87d89e463b154fda206a92ba7b0029545",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/2b350b8a53e5072ba915489c749f55b91284f4d23531a08faf5ea7fed89ae1a9-page-cell-v1.4.0.json",
+      "sha256": "3f1c21811628fb1a61ef364dcc853ae87d89e463b154fda206a92ba7b0029545",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/7fe5f562674ec7f73572fd5807d75a5c038ec1c2e96c6f3dfc3126eae82a1db0-page-cell-v1.5.0.json",
+      "sha256": "f836e04fcdede262b89b2a42bbf832e38ee4a90f5a217a2f9cb11dcd8306091e",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/7fe5f562674ec7f73572fd5807d75a5c038ec1c2e96c6f3dfc3126eae82a1db0-page-cell-v1.5.0.json",
+      "sha256": "f836e04fcdede262b89b2a42bbf832e38ee4a90f5a217a2f9cb11dcd8306091e",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/7fe5f562674ec7f73572fd5807d75a5c038ec1c2e96c6f3dfc3126eae82a1db0-page-cell-v1.4.0.json",
+      "sha256": "74112a7aa7c02d7b8f136b2fa1e219a94228301feac0549eaa4fc65a19906268",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/7fe5f562674ec7f73572fd5807d75a5c038ec1c2e96c6f3dfc3126eae82a1db0-page-cell-v1.4.0.json",
+      "sha256": "74112a7aa7c02d7b8f136b2fa1e219a94228301feac0549eaa4fc65a19906268",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/792857369c0c80dd87fff092137053e7a5cbed1c61fcbbd6caa6efbc072154ea-page-cell-v1.4.0.json",
+      "sha256": "63d1f6251b422ad9d78d00102058d6ed942deef3549876ae1bf54d298a05cd4a",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/792857369c0c80dd87fff092137053e7a5cbed1c61fcbbd6caa6efbc072154ea-page-cell-v1.4.0.json",
+      "sha256": "63d1f6251b422ad9d78d00102058d6ed942deef3549876ae1bf54d298a05cd4a",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/ingestion-update-sp-ac-es-pi190-acem-rj-eleven-source-current-reissue-qa/snapshot.manifest.json",
+      "sha256": "e69c960d8ca1c3c19ca46c34cb98b04fa80b059e6d6ab926c7e80b821521213a",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/ingestion-update-sp-ac-es-pi190-acem-rj-eleven-source-current-reissue-qa/snapshot.manifest.json",
+      "sha256": "e69c960d8ca1c3c19ca46c34cb98b04fa80b059e6d6ab926c7e80b821521213a",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/GO/go-eletivas-2026.pdf",
+      "sha256": "51778ac9246e6b25db6199895ac26a7373c71d481b74b3447902e683bc6a99b4",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/GO/go-eletivas-2026.pdf",
+      "sha256": "51778ac9246e6b25db6199895ac26a7373c71d481b74b3447902e683bc6a99b4",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/ingestion-update-sp-ac-es-pi190-acem-ten-current-receipts-reissue-qa/snapshot.manifest.json",
+      "sha256": "df486de8d957917bb288555f917a3e2b376a7bd8f1f745e00821c83ee302be1f",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/ingestion-update-sp-ac-es-pi190-acem-ten-current-receipts-reissue-qa/snapshot.manifest.json",
+      "sha256": "df486de8d957917bb288555f917a3e2b376a7bd8f1f745e00821c83ee302be1f",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/ingestion-update-sp-ac-es-pi190-acem-ten-current-receipts-qa/snapshot.manifest.json",
+      "sha256": "ddad19382fcb18b4b215a69e843a1537a7fb8860eb5f1532a75c0d632ac0f169",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/ingestion-update-sp-ac-es-pi190-acem-ten-current-receipts-qa/snapshot.manifest.json",
+      "sha256": "ddad19382fcb18b4b215a69e843a1537a7fb8860eb5f1532a75c0d632ac0f169",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/raw/SE/se-curriculo-em.pdf",
+      "sha256": "91fb4796d01e14370b67d0ca11b7069438a4127ff9c13c068ed2a6f65c3cb69b",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/raw/SE/se-curriculo-em.pdf",
+      "sha256": "91fb4796d01e14370b67d0ca11b7069438a4127ff9c13c068ed2a6f65c3cb69b",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/ingestion-update-pi-sp-ac-es-nine-source-qa/snapshot.manifest.json",
+      "sha256": "e5c8dcb773ee61aa26ff7947bea3eaac4fdb41edd47f32ee603ec6b01341e4b6",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/ingestion-update-pi-sp-ac-es-nine-source-qa/snapshot.manifest.json",
+      "sha256": "e5c8dcb773ee61aa26ff7947bea3eaac4fdb41edd47f32ee603ec6b01341e4b6",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/ingestion-update-sp-ac-es-pi190-eight-current-receipts-qa/snapshot.manifest.json",
+      "sha256": "8266fce1a4fbe6dcd25da70a457cd84d66cf4a3511277a47c093580c8118916a",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/ingestion-update-sp-ac-es-pi190-eight-current-receipts-qa/snapshot.manifest.json",
+      "sha256": "8266fce1a4fbe6dcd25da70a457cd84d66cf4a3511277a47c093580c8118916a",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/ingestion-update-sp-ac-es-seven-source-qa/snapshot.manifest.json",
+      "sha256": "cd237dad26350eb535c2617e014618fa34dc529f726414b5f5eb908ef34d8af9",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/ingestion-update-sp-ac-es-seven-source-qa/snapshot.manifest.json",
+      "sha256": "cd237dad26350eb535c2617e014618fa34dc529f726414b5f5eb908ef34d8af9",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/ingestion-update-sp-ac-six-source-qa/snapshot.manifest.json",
+      "sha256": "6714d8c80f541cda658376795a0c8cab76c8c51a92e86b74a61fff92cec5dfdd",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/ingestion-update-sp-ac-six-source-qa/snapshot.manifest.json",
+      "sha256": "6714d8c80f541cda658376795a0c8cab76c8c51a92e86b74a61fff92cec5dfdd",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/ingestion-update-sp-ac-four-source-qa/snapshot.manifest.json",
+      "sha256": "902f10f7397e2f34fa0028553aed80fce105ed0d6b96136a5e2f8d358646e77d",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/ingestion-update-sp-ac-four-source-qa/snapshot.manifest.json",
+      "sha256": "902f10f7397e2f34fa0028553aed80fce105ed0d6b96136a5e2f8d358646e77d",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/ingestion-update-ac-p625-role-fix-qa/snapshot.manifest.json",
+      "sha256": "b3e96f7833014ef88f8983914278a29fe269c24ba5b225928127cf604715a86f",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/ingestion-update-ac-p625-role-fix-qa/snapshot.manifest.json",
+      "sha256": "b3e96f7833014ef88f8983914278a29fe269c24ba5b225928127cf604715a86f",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/ingestion-update-ac-v3-local-qa/snapshot.manifest.json",
+      "sha256": "1af09365d55f3fbd0b50fab50db059b360aade59400aefa9ad5f974ba8a3f00c",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/ingestion-update-ac-v3-local-qa/snapshot.manifest.json",
+      "sha256": "1af09365d55f3fbd0b50fab50db059b360aade59400aefa9ad5f974ba8a3f00c",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/ingestion-update-pi190-qa/snapshot.manifest.json",
+      "sha256": "6e5bd0661fe411124b32bec907950080596059da61de803d229e03918d372299",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/ingestion-update-pi190-qa/snapshot.manifest.json",
+      "sha256": "6e5bd0661fe411124b32bec907950080596059da61de803d229e03918d372299",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/bundles/ingestion-update-am85-qa/snapshot.manifest.json",
+      "sha256": "6a5efdaac1f6a4c5d09326e048c05712c5e0b740c43a9bdea36521b01f2b6592",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/bundles/ingestion-update-am85-qa/snapshot.manifest.json",
+      "sha256": "6a5efdaac1f6a4c5d09326e048c05712c5e0b740c43a9bdea36521b01f2b6592",
+      "passed": true
+    },
+    {
+      "path": "var/qa-es-source-update-candidate-20261031/data/extracted/ff922c942334b07ee506350053c7a14e66d71277fde481eb008280ef2e233442-page-cell-v1.4.0.json",
+      "sha256": "d903db4f5baa35eca9b4be61928af723747c9bbac387d81fd7898deb12b712a4",
+      "passed": true
+    },
+    {
+      "path": "var/qa-toei-eval-root-20261101/data/extracted/ff922c942334b07ee506350053c7a14e66d71277fde481eb008280ef2e233442-page-cell-v1.4.0.json",
+      "sha256": "d903db4f5baa35eca9b4be61928af723747c9bbac387d81fd7898deb12b712a4",
+      "passed": true
+    }
+  ],
+  "note": "Snapshots already appear to share APFS blocks. Do not apply remaining plan expecting logical duplicate size as physical recovery. Inodes/ctime/birthtime may change, as recorded."
+}

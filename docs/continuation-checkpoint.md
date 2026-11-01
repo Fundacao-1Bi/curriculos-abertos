@@ -1,5 +1,12 @@
 # Retomada da integração
 
+Nota operacional de 01/11/2026: cinco QAs históricos foram aposentados com
+autorização do usuário; permanecem principal e QA `a3f8cd`. Antes de retomar,
+consultar `docs/storage-consolidation-20261101.md` e
+`docs/experiment-consolidation-20261101.md`. Os registros históricos abaixo
+não significam que aqueles bancos ainda existam. Arquivos curriculares,
+candidatos, backups e evidências do host foram preservados.
+
 Atualização: 2026-10-31 — retomada após diagnóstico de branches e gate nacional
 
 Produto ainda em integração, sem aceite nacional. A especificação integral está em docs/requirements.md. Não substituir os requisitos por contagens de PDFs, códigos ou amostras.

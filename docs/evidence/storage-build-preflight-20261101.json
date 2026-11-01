@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-01T12:32:01.275929+00:00",
+  "command": "node --import tsx scripts/ops-preflight.ts --disk-only",
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "{\"event\":\"ops_preflight_failed\",\"at\":\"2026-11-01T12:32:01.269Z\",\"disk_only\":true,\"checks\":[{\"name\":\"Limite de espa\u00e7o v\u00e1lido\",\"passed\":true},{\"name\":\"Espa\u00e7o livre para o pico de build e uma reserva\",\"passed\":false,\"detail\":{\"available_bytes\":651100160,\"minimum_bytes\":16106127360,\"available_gib\":0.61}}],\"error\":\"Espa\u00e7o livre para o pico de build e uma reserva\",\"action\":\"Nenhum build foi iniciado. Libere espa\u00e7o pr\u00f3prio ou corrija o daemon/configura\u00e7\u00e3o antes de continuar.\"}",
+  "build_started": false
+}

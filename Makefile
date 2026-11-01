@@ -1,5 +1,6 @@
 SHELL := /bin/bash
 COMPOSE ?= docker compose
+VERIFY_ENV_FILE ?= .env
 ADMIN_TTY := $(shell if test -t 0; then printf '%s' ''; else printf '%s' '-T'; fi)
 .PHONY: configure preflight runtime-images image bootstrap up down verify release-check data-import data-ingest sources-check backup restore admin-create admin-reset logs
 configure:
@@ -29,10 +30,11 @@ down:
 	$(COMPOSE) down
 verify:
 	$(COMPOSE) exec -T app npm run typecheck
-	$(COMPOSE) exec -T app sh -c 'TEST_DATABASE_ADMIN_URL="$$DATABASE_URL" npm test' 
+	# Mutating QA entrypoints run on the host so all sessions share one executor lock.
+	node --env-file="$(VERIFY_ENV_FILE)" --import tsx scripts/local-run.ts -- /bin/sh -c 'PUBLIC_URL="http://127.0.0.1:$${PORT:-3000}" TEST_BASE_URL="http://127.0.0.1:$${PORT:-3000}" npm test'
 	$(COMPOSE) exec -T app npm exec -- tsx scripts/mcp-verify.ts
 	$(COMPOSE) exec -T app npm exec -- tsx scripts/ops-smoke.ts
-	$(COMPOSE) exec -T app npm exec -- tsx scripts/api-verify.ts
+	node --env-file="$(VERIFY_ENV_FILE)" --import tsx scripts/local-run.ts -- /bin/sh -c 'PUBLIC_URL="http://127.0.0.1:$${PORT:-3000}" TEST_BASE_URL="http://127.0.0.1:$${PORT:-3000}" node --import tsx scripts/api-verify.ts'
 release-check:
 	$(COMPOSE) run --rm --no-deps -T -v "$(CURDIR)/docs:/app/docs" app npm exec -- tsx scripts/release-check.ts
 

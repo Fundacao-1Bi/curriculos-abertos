@@ -1,0 +1,64 @@
+{
+  "at": "2026-11-01T12:41:12.874198+00:00",
+  "retirement_receipt": "docs/evidence/qa-retirement-receipt-20261101.json",
+  "retired_containers": 15,
+  "retired_volumes": 10,
+  "health_checks": [
+    {
+      "url": "http://127.0.0.1:3000/api/health",
+      "status": 200,
+      "body_sha256": "23444be9e1c22d82105d2c60b6807f90ef0de0e587113a9ec6c5d25790b594cb",
+      "body": {
+        "status": "ok",
+        "service": "curriculos-abertos",
+        "at": "2026-11-01T12:41:12.659Z"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:3000/api/ready",
+      "status": 200,
+      "body_sha256": "f7e984cf71d1b6a0ad41e4650c4bfa68cc272c5de292cd2538113c51419d1a1e",
+      "body": {
+        "status": "ready",
+        "database": "ok",
+        "publication": "ca-77fb8076598b567e1ba3",
+        "worker": "ok"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:3107/api/health",
+      "status": 200,
+      "body_sha256": "12258cf9fdc26ec54369b6ed20595f91b15a4be837f85e719cc48cd76eaab0d2",
+      "body": {
+        "status": "ok",
+        "service": "curriculos-abertos",
+        "at": "2026-11-01T12:41:12.768Z"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:3107/api/ready",
+      "status": 200,
+      "body_sha256": "2726f3716e31298f4982268f3685f365664e50bfe1c2a1fe5d4ce0915ffa16bb",
+      "body": {
+        "status": "ready",
+        "database": "ok",
+        "publication": "ca-7d302a9c674a97b83278",
+        "worker": "ok"
+      }
+    }
+  ],
+  "available_before_retirement_bytes": 355192832,
+  "available_after_async_reclamation_bytes": 92695064576,
+  "observed_free_delta_bytes": 92339871744,
+  "available_after_gib": 86.32900619506836,
+  "observed_delta_gib": 85.99820709228516,
+  "docker_raw_allocated_before_bytes": 213756637184,
+  "docker_raw_allocated_after_bytes": 121426325504,
+  "latest_sha256": "dfc9e7b208d2dc0a814d3484900baf6b3f7937ffe514539c9370fb52be1881bd",
+  "concurrent_host_activity_caveat": true,
+  "disk_preflight_passed": true,
+  "national_acceptance_test_run": false,
+  "full_restore_of_private_metadata_tested": false,
+  "host_source_data_backups_images_and_other_projects_preserved": true,
+  "passed": true
+}

@@ -66,6 +66,18 @@ Configurações do cliente, negociação, ferramentas e limites estão em [docs/
 
 ## Desenvolvimento e verificação
 
+Antes de executar os comandos abaixo, consulte a
+[política de disco e ciclo de vida dos experimentos](docs/storage-policy.md)
+e o [AGENTS.md](AGENTS.md). Ela exige orçamento, uma operação pesada por vez,
+registro dos recursos antes da criação e decisão de retenção ao encerrar.
+O executor comum protege as entradas de QA listadas na política. Builds,
+extrações e comandos manuais fora dessas entradas ainda exigem coordenação
+explícita. Para inspecionar execuções e retenções:
+
+```sh
+node --import tsx scripts/qa-executor.ts list
+```
+
 ```sh
 npm run typecheck
 npm run lint

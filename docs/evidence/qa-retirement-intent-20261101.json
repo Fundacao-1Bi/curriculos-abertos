@@ -1,0 +1,438 @@
+{
+  "schema_version": 1,
+  "at": "2026-11-01T12:40:01.783692+00:00",
+  "authorization": "User explicitly selected Autorizar aposentadoria desses cinco QAs in current session",
+  "plan": "docs/evidence/qa-retirement-plan-20261101.json",
+  "plan_sha256": "45d67cc41b166c4e08deefa5caeeb949cf1578cbc64701812cabf1e3d3e3c27a",
+  "context": "desktop-linux",
+  "server_id": "08cd5fa5-a9fa-4665-9cb5-c09167ea6bba",
+  "archive_indices_sha256": {
+    "docs/evidence/qa-f517-private-retention-index-20261101.json": "ee10395b28461f326a86e4e3f633552021f74744eee1c0af1d3e037ecaaf163e",
+    "docs/evidence/qa-retention-metadata-index-20261101.json": "dc9d921b938cc2104d184c709608fff88182a1b86febfdbead2deab2424ec04d"
+  },
+  "scope": [
+    "curriculos-abertos-clean-20261028205403-f517a7",
+    "curriculos-abertos-clean-20261031210426-b6fa71",
+    "curriculos-abertos-clean-20261031214824-a1f735",
+    "curriculos-abertos-clean-20261031222510-a65573",
+    "curriculos-abertos-clean-toei-20261101"
+  ],
+  "containers": [
+    {
+      "id": "1e07bccec84f80c3e55241dd666b4542de6b148fcefea2c24d4fd418fa1a4a1f",
+      "name": "curriculos-abertos-clean-toei-20261101-app-1",
+      "project": "curriculos-abertos-clean-toei-20261101",
+      "created": "2026-11-01T03:16:30.737615677Z",
+      "state": "running",
+      "image_id": "sha256:0206bea8a6c5b7a724f20aafec85e1881dc61429d05dbabc0520ac6e913f277d",
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/host_mnt/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/qa-toei-candidate-data-20261101",
+          "Destination": "/app/data",
+          "RW": false
+        },
+        {
+          "Type": "volume",
+          "Name": "curriculos-abertos-clean-toei-20261101_storage",
+          "Source": "/var/lib/docker/volumes/curriculos-abertos-clean-toei-20261101_storage/_data",
+          "Destination": "/app/var",
+          "RW": true
+        }
+      ]
+    },
+    {
+      "id": "5722ca2a07c6073a625bc5c338120005950a4d995d62e8315404cab61809be1b",
+      "name": "curriculos-abertos-clean-toei-20261101-worker-1",
+      "project": "curriculos-abertos-clean-toei-20261101",
+      "created": "2026-11-01T03:16:30.736967052Z",
+      "state": "running",
+      "image_id": "sha256:0206bea8a6c5b7a724f20aafec85e1881dc61429d05dbabc0520ac6e913f277d",
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/host_mnt/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/qa-toei-candidate-data-20261101",
+          "Destination": "/app/data",
+          "RW": true
+        },
+        {
+          "Type": "volume",
+          "Name": "curriculos-abertos-clean-toei-20261101_storage",
+          "Source": "/var/lib/docker/volumes/curriculos-abertos-clean-toei-20261101_storage/_data",
+          "Destination": "/app/var",
+          "RW": true
+        }
+      ]
+    },
+    {
+      "id": "bba62b20125e4ecd03a4623fe84820a57f796e94d7b8ab06437f52f4e606643d",
+      "name": "curriculos-abertos-clean-toei-20261101-db-1",
+      "project": "curriculos-abertos-clean-toei-20261101",
+      "created": "2026-11-01T03:03:31.91782497Z",
+      "state": "running",
+      "image_id": "sha256:8cd540d6ac172b5f392d9c70e67dad05b54074f75a144bb32e0f4f36793ac777",
+      "mounts": [
+        {
+          "Type": "volume",
+          "Name": "curriculos-abertos-clean-toei-20261101_database",
+          "Source": "/var/lib/docker/volumes/curriculos-abertos-clean-toei-20261101_database/_data",
+          "Destination": "/var/lib/postgresql/data",
+          "RW": true
+        }
+      ]
+    },
+    {
+      "id": "d9a55798066d3831646753f5c06f9602056284c27a24b2c798363aa070d83471",
+      "name": "curriculos-abertos-clean-20261031222510-a65573-app-1",
+      "project": "curriculos-abertos-clean-20261031222510-a65573",
+      "created": "2026-11-01T00:49:14.322163971Z",
+      "state": "running",
+      "image_id": "sha256:432163b205ad5da5e68c1138fcaa62c246b621f65dd34936d2ce5f1b46781216",
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/host_mnt/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/qa-ingestion-data-20261031",
+          "Destination": "/app/data",
+          "RW": false
+        },
+        {
+          "Type": "volume",
+          "Name": "curriculos-abertos-clean-20261031222510-a65573_storage",
+          "Source": "/var/lib/docker/volumes/curriculos-abertos-clean-20261031222510-a65573_storage/_data",
+          "Destination": "/app/var",
+          "RW": true
+        }
+      ]
+    },
+    {
+      "id": "34e5af37b8fa04e5c95804540d12fbc2220e3ae65a5d6d492d8d22b475467bdc",
+      "name": "curriculos-abertos-clean-20261031222510-a65573-worker-1",
+      "project": "curriculos-abertos-clean-20261031222510-a65573",
+      "created": "2026-11-01T00:49:14.321916471Z",
+      "state": "running",
+      "image_id": "sha256:432163b205ad5da5e68c1138fcaa62c246b621f65dd34936d2ce5f1b46781216",
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/host_mnt/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/qa-ingestion-data-20261031",
+          "Destination": "/app/data",
+          "RW": true
+        },
+        {
+          "Type": "volume",
+          "Name": "curriculos-abertos-clean-20261031222510-a65573_storage",
+          "Source": "/var/lib/docker/volumes/curriculos-abertos-clean-20261031222510-a65573_storage/_data",
+          "Destination": "/app/var",
+          "RW": true
+        }
+      ]
+    },
+    {
+      "id": "daffd222070858f6e7730524d4054a4cfb17cfc2adbadb5c1968cb955307c25d",
+      "name": "curriculos-abertos-clean-20261031222510-a65573-db-1",
+      "project": "curriculos-abertos-clean-20261031222510-a65573",
+      "created": "2026-10-31T22:25:37.647526172Z",
+      "state": "running",
+      "image_id": "sha256:8cd540d6ac172b5f392d9c70e67dad05b54074f75a144bb32e0f4f36793ac777",
+      "mounts": [
+        {
+          "Type": "volume",
+          "Name": "curriculos-abertos-clean-20261031222510-a65573_database",
+          "Source": "/var/lib/docker/volumes/curriculos-abertos-clean-20261031222510-a65573_database/_data",
+          "Destination": "/var/lib/postgresql/data",
+          "RW": true
+        }
+      ]
+    },
+    {
+      "id": "eec5b64b70bf19153acdd020deb5044c722e8907bfbf985ee90e44edfb4a5152",
+      "name": "curriculos-abertos-clean-20261031214824-a1f735-worker-1",
+      "project": "curriculos-abertos-clean-20261031214824-a1f735",
+      "created": "2026-10-31T21:52:30.938539335Z",
+      "state": "exited",
+      "image_id": "sha256:fd85675e3d704f614bf71be2ed6dc886ae811a68d8590f2ca6288fef5e4ec82d",
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+          "Destination": "/app/data",
+          "RW": true
+        },
+        {
+          "Type": "volume",
+          "Name": "curriculos-abertos-clean-20261031214824-a1f735_storage",
+          "Source": "/var/lib/docker/volumes/curriculos-abertos-clean-20261031214824-a1f735_storage/_data",
+          "Destination": "/app/var",
+          "RW": true
+        }
+      ]
+    },
+    {
+      "id": "fd0a2eecd01ff98132253ad909818d3ccadfdf0f72537f7166048407a7a42c4f",
+      "name": "curriculos-abertos-clean-20261031214824-a1f735-app-1",
+      "project": "curriculos-abertos-clean-20261031214824-a1f735",
+      "created": "2026-10-31T21:52:30.938291419Z",
+      "state": "exited",
+      "image_id": "sha256:fd85675e3d704f614bf71be2ed6dc886ae811a68d8590f2ca6288fef5e4ec82d",
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/host_mnt/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+          "Destination": "/app/data",
+          "RW": false
+        },
+        {
+          "Type": "volume",
+          "Name": "curriculos-abertos-clean-20261031214824-a1f735_storage",
+          "Source": "/var/lib/docker/volumes/curriculos-abertos-clean-20261031214824-a1f735_storage/_data",
+          "Destination": "/app/var",
+          "RW": true
+        }
+      ]
+    },
+    {
+      "id": "a2419de51b5c6cadd74ca1718e7bb505dd99345675446d54722aac503780489f",
+      "name": "curriculos-abertos-clean-20261031214824-a1f735-db-1",
+      "project": "curriculos-abertos-clean-20261031214824-a1f735",
+      "created": "2026-10-31T21:48:57.119316542Z",
+      "state": "exited",
+      "image_id": "sha256:8cd540d6ac172b5f392d9c70e67dad05b54074f75a144bb32e0f4f36793ac777",
+      "mounts": [
+        {
+          "Type": "volume",
+          "Name": "curriculos-abertos-clean-20261031214824-a1f735_database",
+          "Source": "/var/lib/docker/volumes/curriculos-abertos-clean-20261031214824-a1f735_database/_data",
+          "Destination": "/var/lib/postgresql/data",
+          "RW": true
+        }
+      ]
+    },
+    {
+      "id": "10da46d334f79e987bc10ec3ee0740fd8d4110d8ed91bcdb5caa3e93f815b959",
+      "name": "curriculos-abertos-clean-20261031210426-b6fa71-app-1",
+      "project": "curriculos-abertos-clean-20261031210426-b6fa71",
+      "created": "2026-10-31T21:08:13.916909634Z",
+      "state": "running",
+      "image_id": "sha256:dfc564471b9ab8dee3baf523cdd02a6cbcb19946f9e4f5d91fdbecd05de5fbd0",
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/host_mnt/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+          "Destination": "/app/data",
+          "RW": false
+        },
+        {
+          "Type": "volume",
+          "Name": "curriculos-abertos-clean-20261031210426-b6fa71_storage",
+          "Source": "/var/lib/docker/volumes/curriculos-abertos-clean-20261031210426-b6fa71_storage/_data",
+          "Destination": "/app/var",
+          "RW": true
+        }
+      ]
+    },
+    {
+      "id": "c0000b7e74ee79127fd11b200caceb966aedc9ae7641812cfdcaf32d69bbbac1",
+      "name": "curriculos-abertos-clean-20261031210426-b6fa71-worker-1",
+      "project": "curriculos-abertos-clean-20261031210426-b6fa71",
+      "created": "2026-10-31T21:08:13.915790842Z",
+      "state": "running",
+      "image_id": "sha256:dfc564471b9ab8dee3baf523cdd02a6cbcb19946f9e4f5d91fdbecd05de5fbd0",
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/host_mnt/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+          "Destination": "/app/data",
+          "RW": true
+        },
+        {
+          "Type": "volume",
+          "Name": "curriculos-abertos-clean-20261031210426-b6fa71_storage",
+          "Source": "/var/lib/docker/volumes/curriculos-abertos-clean-20261031210426-b6fa71_storage/_data",
+          "Destination": "/app/var",
+          "RW": true
+        }
+      ]
+    },
+    {
+      "id": "24dc02bff2c254ede1acc98981a3ab9b5a5165b28673db88ae7b7e12a9463e45",
+      "name": "curriculos-abertos-clean-20261031210426-b6fa71-db-1",
+      "project": "curriculos-abertos-clean-20261031210426-b6fa71",
+      "created": "2026-10-31T21:04:44.821730009Z",
+      "state": "running",
+      "image_id": "sha256:8cd540d6ac172b5f392d9c70e67dad05b54074f75a144bb32e0f4f36793ac777",
+      "mounts": [
+        {
+          "Type": "volume",
+          "Name": "curriculos-abertos-clean-20261031210426-b6fa71_database",
+          "Source": "/var/lib/docker/volumes/curriculos-abertos-clean-20261031210426-b6fa71_database/_data",
+          "Destination": "/var/lib/postgresql/data",
+          "RW": true
+        }
+      ]
+    },
+    {
+      "id": "1c6e8b09218b8f4d732ff0f72af3d84785d8db88af0ec93aa858f5cab1c68d02",
+      "name": "curriculos-abertos-clean-20261028205403-f517a7-db-1",
+      "project": "curriculos-abertos-clean-20261028205403-f517a7",
+      "created": "2026-10-30T18:38:31.584743792Z",
+      "state": "running",
+      "image_id": "sha256:8cd540d6ac172b5f392d9c70e67dad05b54074f75a144bb32e0f4f36793ac777",
+      "mounts": [
+        {
+          "Type": "volume",
+          "Name": "curriculos-abertos-clean-20261028205403-f517a7_database",
+          "Source": "/var/lib/docker/volumes/curriculos-abertos-clean-20261028205403-f517a7_database/_data",
+          "Destination": "/var/lib/postgresql/data",
+          "RW": true
+        }
+      ]
+    },
+    {
+      "id": "0fc642a0a89055e27481d9be1747e72f0fa9c42c8486a67d95d060fefce2555e",
+      "name": "curriculos-abertos-clean-20261028205403-f517a7-worker-1",
+      "project": "curriculos-abertos-clean-20261028205403-f517a7",
+      "created": "2026-10-29T15:46:11.390466963Z",
+      "state": "running",
+      "image_id": "sha256:9ea498032eabfae9f1b4ec49a6645cf5ec8bd6616f28c5a83f71c02d1cf8336c",
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/host_mnt/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd/data",
+          "Destination": "/app/data",
+          "RW": true
+        },
+        {
+          "Type": "volume",
+          "Name": "curriculos-abertos-clean-20261028205403-f517a7_storage",
+          "Source": "/var/lib/docker/volumes/curriculos-abertos-clean-20261028205403-f517a7_storage/_data",
+          "Destination": "/app/var",
+          "RW": true
+        }
+      ]
+    },
+    {
+      "id": "ee88fb967f98a432d55746023a50668d5d0c559f5db7240c378d6795b0c89be1",
+      "name": "curriculos-abertos-clean-20261028205403-f517a7-app-1",
+      "project": "curriculos-abertos-clean-20261028205403-f517a7",
+      "created": "2026-10-29T15:46:11.389372046Z",
+      "state": "running",
+      "image_id": "sha256:9ea498032eabfae9f1b4ec49a6645cf5ec8bd6616f28c5a83f71c02d1cf8336c",
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "/host_mnt/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd/data",
+          "Destination": "/app/data",
+          "RW": false
+        },
+        {
+          "Type": "volume",
+          "Name": "curriculos-abertos-clean-20261028205403-f517a7_storage",
+          "Source": "/var/lib/docker/volumes/curriculos-abertos-clean-20261028205403-f517a7_storage/_data",
+          "Destination": "/app/var",
+          "RW": true
+        }
+      ]
+    }
+  ],
+  "volumes": [
+    "curriculos-abertos-clean-20261028205403-f517a7_database",
+    "curriculos-abertos-clean-20261028205403-f517a7_storage",
+    "curriculos-abertos-clean-20261031210426-b6fa71_database",
+    "curriculos-abertos-clean-20261031210426-b6fa71_storage",
+    "curriculos-abertos-clean-20261031214824-a1f735_database",
+    "curriculos-abertos-clean-20261031214824-a1f735_storage",
+    "curriculos-abertos-clean-20261031222510-a65573_database",
+    "curriculos-abertos-clean-20261031222510-a65573_storage",
+    "curriculos-abertos-clean-toei-20261101_database",
+    "curriculos-abertos-clean-toei-20261101_storage"
+  ],
+  "preserved_containers_before": [
+    {
+      "id": "4d030b0d497224eec62aaf700be2bfee37db25082f0a4ef153735ace9d5b723a",
+      "name": "/curriculos-abertos-clean-20261101045455-a3f8cd-worker-1",
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:b59080d5ff491b94ee9c5b9a02cb9302c91fa3c1caca3b035e47d08e2dc8809a",
+      "project": "curriculos-abertos-clean-20261101045455-a3f8cd"
+    },
+    {
+      "id": "9f5173cb5bace3753f2bd0ca5032031c1a96c9f1b3a7e4241774426e3ac4f091",
+      "name": "/curriculos-abertos-clean-20261101045455-a3f8cd-app-1",
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:b59080d5ff491b94ee9c5b9a02cb9302c91fa3c1caca3b035e47d08e2dc8809a",
+      "project": "curriculos-abertos-clean-20261101045455-a3f8cd"
+    },
+    {
+      "id": "64030ec0d90096def692bb04c196a108233f61f0b36d003236a8e366c4561b4d",
+      "name": "/curriculos-abertos-clean-20261101045455-a3f8cd-db-1",
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:8cd540d6ac172b5f392d9c70e67dad05b54074f75a144bb32e0f4f36793ac777",
+      "project": "curriculos-abertos-clean-20261101045455-a3f8cd"
+    },
+    {
+      "id": "7f65f3764b1ea5948c5edd38d4a70621c64740b7427e21aa0ab021b54d0faa0f",
+      "name": "/curriculos-abertos-worker-1",
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:c2eb90fd88ac746bc8839cdcecae574101ef99c245a3a5abb257c8fdde8758b0",
+      "project": "curriculos-abertos"
+    },
+    {
+      "id": "8e80c95a49569b4598462b8d3af4ecb5618afb1d694b502ce471cefaae29a383",
+      "name": "/curriculos-abertos-app-1",
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:c2eb90fd88ac746bc8839cdcecae574101ef99c245a3a5abb257c8fdde8758b0",
+      "project": "curriculos-abertos"
+    },
+    {
+      "id": "783ff1bcba3e738c4f7993f508e8f5676946220874b20fd28e76e98aa39f5453",
+      "name": "/curriculos-abertos-db-1",
+      "status": "running",
+      "health": "healthy",
+      "image_id": "sha256:8cd540d6ac172b5f392d9c70e67dad05b54074f75a144bb32e0f4f36793ac777",
+      "project": "curriculos-abertos"
+    },
+    {
+      "id": "15d6fee7dcc21552822c5327a21494ebabb363ca907d31652475e38f7322bbe5",
+      "name": "/contentizap-payload-1",
+      "status": "exited",
+      "health": null,
+      "image_id": "sha256:1b2479dd35a99687d6638f5976fd235e26c5b37e8122f786fcd5fe231d63de5b",
+      "project": "contentizap"
+    },
+    {
+      "id": "112684466a57f2eee8b63c631778eab0cf4280d25933439f331a9eb069a42910",
+      "name": "/contentizap-postgres-1",
+      "status": "running",
+      "health": null,
+      "image_id": "sha256:bac8128cd62a35471a1e97966861aa2ac88c8d2f408767a425ae70695a607c99",
+      "project": "contentizap"
+    }
+  ],
+  "job_status_counts_before": {
+    "/curriculos-abertos-clean-toei-20261101-db-1": {
+      "succeeded": 2
+    },
+    "/curriculos-abertos-clean-20261031222510-a65573-db-1": {
+      "paused": 3,
+      "succeeded": 9
+    },
+    "/curriculos-abertos-clean-20261031210426-b6fa71-db-1": {
+      "succeeded": 1
+    },
+    "/curriculos-abertos-clean-20261028205403-f517a7-db-1": {
+      "failed": 1,
+      "paused": 4,
+      "succeeded": 20
+    }
+  },
+  "paused_job_disposition": "Metadata retained; direct execution abandoned with explicitly authorized historical QA databases; no handlers resumed/cancelled",
+  "a1f735_disposition": "Already stopped; not started or SQL-inspected; historical DB discarded under explicit scope authorization",
+  "archive_limit": "Selected work metadata, not a full database backup or tested full restore; national storage exports removed with authorized storage volumes",
+  "available_before_bytes": 355192832,
+  "docker_raw_allocated_before_bytes": 213756637184,
+  "steps": []
+}

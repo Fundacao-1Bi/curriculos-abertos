@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "at": "2026-11-01T13:43:06.347359+00:00",
+  "implementation": "Common QA executor with mandatory entrypoint integration",
+  "test_run": "qa-tests-8a20cfb2-304b-428d-b89f-556f21a39c2d",
+  "retention_path": "var/jobs/qa-tests-8a20cfb2-304b-428d-b89f-556f21a39c2d/retention.json",
+  "retention_sha256": "571b0263f299a43d50b495098721f9b2a1354327adcb6142463fe669a2a0b5d5",
+  "source_code_sha256": "c1aafd7445b8e3eca07a66d69f8f19776b48e714f6589558be1d3a14d52bd28a",
+  "validation": {
+    "npm_test": {
+      "exit_code": 0,
+      "tests": 165,
+      "passed": 165,
+      "skipped": 0,
+      "postgresql": "17.11",
+      "test_files": 30
+    },
+    "typescript": {
+      "command": "npx tsc --noEmit --incremental false",
+      "exit_code": 0
+    },
+    "eslint_changed_files": {
+      "exit_code": 0
+    },
+    "python_watchdog": {
+      "tests": 23,
+      "passed": 23,
+      "real_docker": false
+    },
+    "git_diff_check": {
+      "exit_code": 0
+    },
+    "bash_syntax": {
+      "command": "bash -n scripts/ops-backup.sh scripts/ops-restore.sh",
+      "exit_code": 0
+    }
+  },
+  "closure": {
+    "all_owned_disposables_cleaned": true,
+    "owned_resources": 16,
+    "fixture_container_absent": true,
+    "fixture_volume_absent": true,
+    "workspace_lock_absent": true,
+    "existing_container_names": [
+      "curriculos-abertos-clean-20261101045455-a3f8cd-worker-1",
+      "curriculos-abertos-clean-20261101045455-a3f8cd-app-1",
+      "curriculos-abertos-clean-20261101045455-a3f8cd-db-1",
+      "curriculos-abertos-worker-1",
+      "curriculos-abertos-app-1",
+      "curriculos-abertos-db-1",
+      "contentizap-payload-1",
+      "contentizap-postgres-1"
+    ],
+    "host_free_bytes": 69086113792,
+    "canonical_latest_unchanged": true
+  },
+  "limitations": [
+    "No national corpus import/export/restore executed for this change",
+    "Watchdog backend cancellation and container ownership were tested with simulated Docker, not a national restore",
+    "Builds, Python extractions and manual Docker/SQL outside integrated QA entrypoints still require explicit coordination",
+    "Public deduplicated export ownership is unknown: server jobs retained under count limits, no automatic deletion or hard server filesystem quota"
+  ],
+  "test_file_sha256": {
+    "tests/admin-browser-safety.test.ts": "35fd672a160e6c0131ad2d701f2da36dd93688b6cd7fe0331fb44ff80c0b7ca2",
+    "tests/api-age.test.ts": "e095e31dc913f5f03b6aa4c85581e8dc26fdf820993c2fea17496ab120140959",
+    "tests/api-contract.test.ts": "94bbc3fa95294170dd598f33837cd9436af7492be7e6c6c599f81585f68abeb0",
+    "tests/api-published-contract.test.ts": "3ae379d208c7a28c4e34379c44ec042fbfb2370e4f92809dca3e4b826b464a95",
+    "tests/api-stream.test.ts": "fc73ca8bc6b5c0621259ba2f87bf25c6ef660fdf529cf5be928769571e38f1ed",
+    "tests/api-structure.test.ts": "b9815a8f2d7c5103645184a9405194f6075ef04a4634be3bd6c923a1b6aa834e",
+    "tests/audit-artifact.test.ts": "9e1ae77c948387aa2227e85852369f8361aa50201cddfe18fec3ad67c5bc44c8",
+    "tests/domain.age.test.ts": "54ecbe164a9ebc2b825fa0d99b880ecf98b3243f2eec136d2b7b38001e3e7bcf",
+    "tests/domain.bundle-file.test.ts": "347979591f74ffae35fd280e9ef849ee37437c81ba3f3b16c996abeae5c37c6f",
+    "tests/domain.ingestion-coverage.test.ts": "e954e1b93e303eaa35eb445835ded49fcd26cc752c65f6df5047e50be85b7192",
+    "tests/domain.ingestion-provenance.test.ts": "c9f9bf9ccf0152aef9ca0f2078bf37591ecc8d0d836ae2087ef379853f6c5df6",
+    "tests/domain.ingestion-update.test.ts": "deb4ee68b2b7cf2db916208f46e3c83e673bbcff7784120228ee949a30a5c2de",
+    "tests/domain.integration.test.ts": "860ec606ed7acb588155962002282569cadace0eea1dba2d0ff04456fc62b8da",
+    "tests/domain.item-kinds.test.ts": "4ecc559b131a48539c1eb219f1ebfa0e18f546699004d050c45a8b72cc349897",
+    "tests/domain.json-snapshot-file.test.ts": "458aeaf6fc86ae51eb1b74218a46010eb91f3f84f0b85fa31f3352274fc287f6",
+    "tests/domain.pdf-word-search.test.ts": "21107e0bea98bdc20a3c9c7f1be901d708afc9fdff4ef35a3cf785fad3e9165c",
+    "tests/domain.published-optionals.test.ts": "98c75f6d5c880aa100b321cac9e46ad9b218aec18b23054106bbc54db58720ae",
+    "tests/domain.schema-pin.test.ts": "08eccfed0fc9b54c9f2a967176ab08e4ee39f91819dc072527d833d7e636077c",
+    "tests/domain.search-union.test.ts": "6114186049b6b1c7cfb4e08ee764f145bafc2aa85a0010846634daf75fe75220",
+    "tests/domain.shard-writer.test.ts": "ce10ac4bcb97bf033ea1dd15fe947a8dc7439468890c2ff780ae702b58735654",
+    "tests/learning-code.test.ts": "88f0b8c69fb20a547e284869a54f6cdd5d72be45b271f6915ab244c4a958d716",
+    "tests/qa-executor-job-guard.test.ts": "7c0d17e2eae3195ea5ec1f786c9671a0a94065776ad7a29c61dad1693b2826bb",
+    "tests/qa-executor.test.ts": "70b32d6b7e588a22e7fcc20ec2d3e2b7ff4f06686a65f01780082f21ed32e591",
+    "tests/qa-isolation.test.ts": "cc13f882bc542d789167c66bedffd97c2a67278509375566420937d20d689ced",
+    "tests/qa-ops-capacity.test.ts": "c236a5cccd5af067d5d8416c19c4193a50f919234f585bbe795537ee489c9719",
+    "tests/qa-parent-guard.test.ts": "9ff26e335deb5860bce6c7b57250a8c6316d27b0d32df736b4bce6afddddc88b",
+    "tests/release-check.test.ts": "465a15223ffcbed2269d0faa3a010f846798f369c3ce1c5e6e7bc787dbe6fd9d",
+    "tests/source-contract.test.ts": "c2c7eb47fb0a65e85b68d77b8a2d215f6637177323da84571d43f2c7eba28842",
+    "tests/source-dates.test.ts": "b92d9d0be7ce8624f2b11503d8634a0bdbf3429b9cbd040cffdc80eb6e5c6f14",
+    "tests/worker.ingestion-contract.test.ts": "43c93d5a38aa7a6c560e5bf40aafda201ab657faec3273fd83c6e2b57f10d73a"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "at": "2026-11-01T12:36:18.562229+00:00",
+  "scope": "Only regenerable local Next.js compiler caches; authorized by project disk consolidation request",
+  "impact": "Next build regenerates compiler cache; application output, data, backups and Docker resources preserved",
+  "available_before_bytes": 650272768,
+  "paths": [
+    {
+      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/.next/cache/turbopack",
+      "du_bytes": 154447872
+    },
+    {
+      "path": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/.next/cache/webpack",
+      "du_bytes": 182677504
+    }
+  ],
+  "guards": {
+    "at": "2026-11-01T12:36:19.181874+00:00",
+    "processes_sha256": "f71484983314948bc28e1835c99e678699fa003756f0684ac3ad9e0be36f8420",
+    "mounts_sha256": "eda18310e2f25ae7fb2bf721c40f167538e8bde3dd672fe68d838fdc38709b4f",
+    "docker_bind_mounts": [
+      {
+        "container": "/curriculos-abertos-clean-20261101045455-a3f8cd-worker-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "destination": "/app/data",
+        "rw": false
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261101045455-a3f8cd-app-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "destination": "/app/data",
+        "rw": false
+      },
+      {
+        "container": "/curriculos-abertos-clean-toei-20261101-app-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/qa-toei-candidate-data-20261101",
+        "destination": "/app/data",
+        "rw": false
+      },
+      {
+        "container": "/curriculos-abertos-clean-toei-20261101-worker-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/qa-toei-candidate-data-20261101",
+        "destination": "/app/data",
+        "rw": true
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261031222510-a65573-app-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/qa-ingestion-data-20261031",
+        "destination": "/app/data",
+        "rw": false
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261031222510-a65573-worker-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/qa-ingestion-data-20261031",
+        "destination": "/app/data",
+        "rw": true
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261031214824-a1f735-worker-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "destination": "/app/data",
+        "rw": true
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261031214824-a1f735-app-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "destination": "/app/data",
+        "rw": false
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261031210426-b6fa71-app-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "destination": "/app/data",
+        "rw": false
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261031210426-b6fa71-worker-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "destination": "/app/data",
+        "rw": true
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261028205403-f517a7-worker-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd/data",
+        "destination": "/app/data",
+        "rw": true
+      },
+      {
+        "container": "/curriculos-abertos-clean-20261028205403-f517a7-app-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/var/diagnostic-context-20261028195651-4a29dd/data",
+        "destination": "/app/data",
+        "rw": false
+      },
+      {
+        "container": "/curriculos-abertos-worker-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "destination": "/app/data",
+        "rw": true
+      },
+      {
+        "container": "/curriculos-abertos-app-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/data",
+        "destination": "/app/data",
+        "rw": false
+      },
+      {
+        "container": "/contentizap-payload-1",
+        "source": "/Users/otacilio.maia/Desktop/AprendiZAP/ContentiZAP",
+        "destination": "/home/node/app",
+        "rw": true
+      }
+    ],
+    "no_open_files": true,
+    "no_tracked_files": true,
+    "no_mount_overlap": true
+  },
+  "phase": "completed",
+  "finished_at": "2026-11-01T12:37:17.857494+00:00",
+  "available_after_bytes": 544202752,
+  "verified_absent": true,
+  "concurrent_activity_caveat": true,
+  "partial_interruption": "After removing turbopack, the second batch guard expected both original paths to exist and stopped. Remaining webpack path was rechecked independently before removal; no scope expansion.",
+  "final_processes_sha256": "4e8841602710fdec3d2e84257e8fe133a889f85b72e7b09c57861cf6e37a49e3",
+  "final_mounts_sha256": "eda18310e2f25ae7fb2bf721c40f167538e8bde3dd672fe68d838fdc38709b4f",
+  "observed_free_delta_bytes": -106070016
+}
