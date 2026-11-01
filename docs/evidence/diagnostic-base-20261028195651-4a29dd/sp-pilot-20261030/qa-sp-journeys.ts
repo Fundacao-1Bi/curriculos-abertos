@@ -7,7 +7,7 @@ import { readFile, writeFile, readdir } from 'node:fs/promises';
 import { createGunzip } from 'node:zlib';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
-import { downloadAndHash, validatePublishedJsonFile, validatePublishedCsvFile } from '../../scripts/api-export-stream';
+import { downloadAndHash, validatePublishedJsonFile, validatePublishedCsvFile } from '../../../../scripts/api-export-stream';
 
 const base = 'http://localhost:3002';
 const expectedPublication = process.env.SP_PUBLICATION || 'ca-update-45e4555b35896d3d3b1fec188bf8cb80';
@@ -189,6 +189,6 @@ await step('portal_pages', async () => {
 
 report.finished_at = new Date().toISOString();
 report.passed = Object.values(j).every((s: any) => s.passed);
-await writeFile(`${dir}/qa-sp-journeys.json`, JSON.stringify(report, null, 2) + '\n');
+await writeFile(process.env.SP_JOURNEYS_OUT || `${dir}/qa-sp-journeys.json`, JSON.stringify(report, null, 2) + '\n');
 console.log(JSON.stringify({ passed: report.passed, findings: report.findings }));
 if (!report.passed) process.exitCode = 1;

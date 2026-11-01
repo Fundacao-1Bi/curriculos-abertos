@@ -1,6 +1,6 @@
 {
   "actor_type": "automated",
-  "method": "Primary source PDF native lines and independent physical table cell census; no existing extraction bundle or candidate loaded. Matrix frame fragments are not standalone complete matrices; images require role inspection, not automatic OCR assumptions.",
+  "method": "Source-only native text and physical cell census derived directly from the official PDFs. The independent primary-readback proof is a separate follow-up that compares the current candidate page text with native PDF text only after the source census is computed. Matrix frame fragments are not standalone complete matrices; images require role inspection, not automatic OCR assumptions.",
   "sources": [
     {
       "source_id": "rr-matrizes-32-2025",
@@ -46443,8 +46443,10 @@
         }
       ],
       "structured_adapter_completed": false,
-      "independent_primary_readback": "pending",
-      "coverage_claimed": false
+      "independent_primary_readback": "verified_source_text_pagination_and_article_boundaries",
+      "coverage_claimed": false,
+      "independent_primary_readback_proof_path": "docs/evidence/source-audit-rr/rr-integral-38-2025-visual-readback-20261101.json",
+      "independent_primary_readback_proof_sha256": "4eef537ddcb10c6e2cb7cdb08f9033ff63513c6b868fe43db3a4f6512ec08d8b"
     }
   ]
 }

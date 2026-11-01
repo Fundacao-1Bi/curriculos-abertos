@@ -1,9 +1,9 @@
 {
   "producer": "scripts/qa-performance.ts",
   "command": "npx tsx scripts/qa-performance.ts",
-  "started_at": "2026-10-28T04:05:45.935Z",
-  "completed_at": "2026-10-28T04:05:52.737Z",
-  "publication": "ca-77fb8076598b567e1ba3",
+  "started_at": "2026-11-01T05:15:58.610Z",
+  "completed_at": "2026-11-01T05:16:08.050Z",
+  "publication": "ca-7d302a9c674a97b83278",
   "environment": {
     "platform": "darwin",
     "arch": "arm64",
@@ -14,40 +14,40 @@
     "reference": "4 vCPU / 8 GB; medição no host entregue, sem normalizar metas"
   },
   "dataset": {
-    "visible_total": 38322,
+    "visible_total": 200724,
     "local_count": 200
   },
-  "scope_note": "Medição sobre a publicação identificada; completude nacional é verificada separadamente pelo gate documental.",
+  "scope_note": "Medição sobre a publicação identificada; completude nacional é verificada separadamente pelo gate documental. O caso de código usa um código BNCC representativo; um fragmento numérico curto e ambíguo é registrado à parte, sem substituir as metas.",
   "concurrency": 10,
   "requests": 200,
   "initial": [
     {
       "kind": "id",
-      "ms": 25.465333999999984,
+      "ms": 7.1163329999999405,
       "status": 200,
       "ok": true
     },
     {
       "kind": "code",
-      "ms": 27.89133300000003,
+      "ms": 25.94229200000018,
       "status": 200,
       "ok": true
     },
     {
       "kind": "search",
-      "ms": 343.15999999999997,
+      "ms": 354.10679100000016,
       "status": 200,
       "ok": true
     },
     {
       "kind": "panorama",
-      "ms": 43.113249999999994,
+      "ms": 31.186333999999988,
       "status": 200,
       "ok": true
     },
     {
       "kind": "compare",
-      "ms": 140.53429100000005,
+      "ms": 120.15795800000001,
       "status": 200,
       "ok": true
     }
@@ -56,8 +56,8 @@
     {
       "operation": "id",
       "requests": 40,
-      "p50_ms": 130.04533300000003,
-      "p95_ms": 258.3197909999999,
+      "p50_ms": 212.3105830000004,
+      "p95_ms": 318.07337499999994,
       "target_p95_ms": 500,
       "errors": 0,
       "passed": true
@@ -65,8 +65,8 @@
     {
       "operation": "code",
       "requests": 40,
-      "p50_ms": 114.71058399999993,
-      "p95_ms": 221.96691599999986,
+      "p50_ms": 187.289084,
+      "p95_ms": 266.67866700000013,
       "target_p95_ms": 500,
       "errors": 0,
       "passed": true
@@ -74,8 +74,8 @@
     {
       "operation": "search",
       "requests": 40,
-      "p50_ms": 619.5766669999994,
-      "p95_ms": 996.7357499999998,
+      "p50_ms": 592.2592500000001,
+      "p95_ms": 722.2073330000003,
       "target_p95_ms": 1500,
       "errors": 0,
       "passed": true
@@ -83,8 +83,8 @@
     {
       "operation": "panorama",
       "requests": 40,
-      "p50_ms": 240.63616700000057,
-      "p95_ms": 423.172333,
+      "p50_ms": 404.70079199999964,
+      "p95_ms": 511.3325410000002,
       "target_p95_ms": 1500,
       "errors": 0,
       "passed": true
@@ -92,13 +92,21 @@
     {
       "operation": "compare",
       "requests": 40,
-      "p50_ms": 261.3831659999996,
-      "p95_ms": 403.18945800000006,
+      "p50_ms": 444.17041700000027,
+      "p95_ms": 524.941167,
       "target_p95_ms": 3000,
       "errors": 0,
       "passed": true
     }
   ],
+  "diagnostics": {
+    "ambiguous_numeric_fragment": {
+      "kind": "ambiguous_numeric_fragment_diagnostic",
+      "ms": 445.1115000000009,
+      "status": 200,
+      "ok": true
+    }
+  },
   "assertions": [
     {
       "name": "mandatory_operations_present",

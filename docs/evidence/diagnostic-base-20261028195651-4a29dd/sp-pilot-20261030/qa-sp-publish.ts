@@ -6,7 +6,7 @@ import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 import { randomBytes, randomUUID } from 'node:crypto';
 import { writeFile } from 'node:fs/promises';
-import { pool } from '../../src/db/client';
+import { pool } from '../../../../src/db/client';
 
 const base = 'http://localhost:3002', origin = base;
 const sources = (process.env.SP_SOURCES || 'sp-seduc156-corpo-2026,sp-seduc156-anexos-matrizes-2026,sp-educacao-digital-midiatica-2026,sp-curriculo-em-isbn,sp-curriculo-eief-isbn').split(',');

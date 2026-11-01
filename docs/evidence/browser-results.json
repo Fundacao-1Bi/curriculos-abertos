@@ -3,9 +3,7 @@
     "argv": [
       "/opt/homebrew/Cellar/node/25.2.1/bin/node",
       "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/node_modules/.bin/playwright",
-      "test",
-      "--grep",
-      "J02 ficha"
+      "test"
     ],
     "configFile": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/playwright.config.ts",
     "rootDir": "/Users/otacilio.maia/Desktop/AprendiZAP/Curriculo-Aprendizap/tests",
@@ -73,7 +71,7 @@
         "testMatch": "product.spec.ts",
         "timeout": 60000,
         "use": {
-          "baseURL": "http://localhost:3000",
+          "baseURL": "http://localhost:3107",
           "trace": "retain-on-failure",
           "screenshot": "only-on-failure",
           "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
@@ -110,7 +108,7 @@
         "testMatch": "product.spec.ts",
         "timeout": 60000,
         "use": {
-          "baseURL": "http://localhost:3000",
+          "baseURL": "http://localhost:3107",
           "trace": "retain-on-failure",
           "screenshot": "only-on-failure",
           "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Mobile/15E148 Safari/604.1",
@@ -165,7 +163,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "J02 ficha preserva relações ao chegar de uma página posterior da busca",
+          "title": "consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade",
           "ok": true,
           "tags": [],
           "tests": [
@@ -174,7 +172,7 @@
               "annotations": [
                 {
                   "type": "data-publication",
-                  "description": "ca-77fb8076598b567e1ba3"
+                  "description": "ca-7d302a9c674a97b83278"
                 }
               ],
               "expectedStatus": "passed",
@@ -185,16 +183,192 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 926,
+                  "duration": 7421,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-28T14:01:47.619Z",
+                  "startTime": "2026-11-01T05:11:04.103Z",
                   "annotations": [
                     {
                       "type": "data-publication",
-                      "description": "ca-77fb8076598b567e1ba3"
+                      "description": "ca-7d302a9c674a97b83278"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-ae3ed8571cbad8afac32",
+          "file": "product.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "busca vazia, código local, panorama nacional e contribuição persistida",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-7d302a9c674a97b83278"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2124,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T05:11:11.800Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-7d302a9c674a97b83278"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-33faabc29c3535b8ddce",
+          "file": "product.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "J01 nacional: cada UF expõe registros reais e fontes na mesma publicação",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-7d302a9c674a97b83278"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 98652,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T05:11:13.929Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-7d302a9c674a97b83278"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-91294337bb68163e41bb",
+          "file": "product.spec.ts",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "J01 estrutura documental: navegar até filhos e evidência sem conhecer código",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-7d302a9c674a97b83278"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4779,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T05:12:52.586Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-7d302a9c674a97b83278"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-642fa690a30614eb314b",
+          "file": "product.spec.ts",
+          "line": 79,
+          "column": 1
+        },
+        {
+          "title": "J02 ficha preserva relações ao chegar de uma página posterior da busca",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-7d302a9c674a97b83278"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 571,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T05:12:57.371Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-7d302a9c674a97b83278"
                     }
                   ],
                   "attachments": []
@@ -209,7 +383,7 @@
           "column": 1
         },
         {
-          "title": "J02 ficha preserva relações ao chegar de uma página posterior da busca",
+          "title": "consulta integrada, fontes, 27 UFs, filtros, comparação e acessibilidade",
           "ok": true,
           "tags": [],
           "tests": [
@@ -218,7 +392,7 @@
               "annotations": [
                 {
                   "type": "data-publication",
-                  "description": "ca-77fb8076598b567e1ba3"
+                  "description": "ca-7d302a9c674a97b83278"
                 }
               ],
               "expectedStatus": "passed",
@@ -229,16 +403,192 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 632,
+                  "duration": 9013,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-28T14:01:49.319Z",
+                  "startTime": "2026-11-01T05:12:58.427Z",
                   "annotations": [
                     {
                       "type": "data-publication",
-                      "description": "ca-77fb8076598b567e1ba3"
+                      "description": "ca-7d302a9c674a97b83278"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-65017dbf7e1a70ac5d21",
+          "file": "product.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "busca vazia, código local, panorama nacional e contribuição persistida",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-7d302a9c674a97b83278"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2530,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T05:13:07.532Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-7d302a9c674a97b83278"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-c810bf864211c3546938",
+          "file": "product.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "J01 nacional: cada UF expõe registros reais e fontes na mesma publicação",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-7d302a9c674a97b83278"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 121038,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T05:13:10.067Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-7d302a9c674a97b83278"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-e609a9c021ed0dfdc965",
+          "file": "product.spec.ts",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "J01 estrutura documental: navegar até filhos e evidência sem conhecer código",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-7d302a9c674a97b83278"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4207,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T05:15:11.112Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-7d302a9c674a97b83278"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2fa8ab87beca8e7f39ce-e0443cae904d54de8a7e",
+          "file": "product.spec.ts",
+          "line": 79,
+          "column": 1
+        },
+        {
+          "title": "J02 ficha preserva relações ao chegar de uma página posterior da busca",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "data-publication",
+                  "description": "ca-7d302a9c674a97b83278"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 591,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-01T05:15:15.324Z",
+                  "annotations": [
+                    {
+                      "type": "data-publication",
+                      "description": "ca-7d302a9c674a97b83278"
                     }
                   ],
                   "attachments": []
@@ -257,9 +607,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-28T14:01:47.228Z",
-    "duration": 2866.074,
-    "expected": 2,
+    "startTime": "2026-11-01T05:11:03.770Z",
+    "duration": 252320.064,
+    "expected": 10,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
