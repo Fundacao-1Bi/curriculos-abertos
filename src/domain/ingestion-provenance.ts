@@ -20,7 +20,7 @@ export interface IngestionProvenanceInput {
  receipt_directory:string;
 }
 const CLI='scripts/technical-ingestion-provenance.py';
-const RUNTIME_FILES=['src/domain/ingestion-provenance.ts','src/domain/ingestion-update.ts','src/domain/ingestion-coverage.ts','src/domain/shard-writer.ts','src/domain/shards.ts','src/domain/publication.ts','src/domain/visibility.ts','src/worker/ingestion.ts','src/worker/main.ts','src/worker/jobs.ts','scripts/technical-ingestion-provenance.py','pipeline/technical_provenance.py','pipeline/validate_artifact.py','pipeline/distribution.py','pipeline/requirements.txt','package.json','package-lock.json'];
+const RUNTIME_FILES=['src/domain/ingestion-provenance.ts','src/domain/ingestion-update.ts','src/domain/ingestion-coverage.ts','src/domain/shard-writer.ts','src/domain/shards.ts','src/domain/publication.ts','src/domain/visibility.ts','src/worker/ingestion.ts','src/worker/main.ts','src/worker/jobs.ts','scripts/technical-ingestion-provenance.py','pipeline/technical_provenance.py','pipeline/validate_artifact.py','pipeline/distribution.py','pipeline/release_check.py','pipeline/requirements.txt','package.json','package-lock.json'];
 const MAX_RECEIPT=64*1024*1024;
 // Freeze the source bytes observed when this module is loaded, not only when a job starts.
 const LOADED_RUNTIME_PINS=Object.fromEntries(RUNTIME_FILES.map(path=>[path,createHash('sha256').update(readFileSync(resolve(path))).digest('hex')]));

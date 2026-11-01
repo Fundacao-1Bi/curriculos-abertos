@@ -51,6 +51,31 @@ test('immutable import, snapshot pinning and auditable rollback',{skip:!allowed}
  await migrate();
 });
 
+test('concurrent identical revision prepares take their repeatable-read snapshots after the writer lock',{skip:!allowed},async()=>{
+ const {prepareRelationalRevision}=await import('../src/domain/revisions');
+ const meta={id:'test-relational-revision-concurrent',created_at:'2026-10-28T04:30:00Z',extraction_revision:'test-curation',mapping_revision:'test-curation'};
+ const changes=[{entity:'item' as const,record_id:'sp-a',text:'Transcrição concorrente idempotente.',reason:'Regressão de concorrência no banco isolado.',actor_id:'automated-test-runner',actor_type:'automated' as const,at:'2026-10-28T04:30:00Z'}];
+ const blocker=await pool.connect();let blockerTransaction=false;let concurrent:Promise<Awaited<ReturnType<typeof prepareRelationalRevision>>[]>|undefined;let waiting=0;
+ try{
+  await blocker.query('BEGIN');blockerTransaction=true;await blocker.query('SELECT pg_advisory_xact_lock(81726354)');
+  concurrent=Promise.all([prepareRelationalRevision(bundle.id,changes,meta),prepareRelationalRevision(bundle.id,changes,meta)]);
+  const deadline=Date.now()+10_000;
+  while(Date.now()<deadline){
+   waiting=(await pool.query("SELECT count(*)::int AS n FROM pg_stat_activity WHERE datname=current_database() AND pid<>pg_backend_pid() AND wait_event_type='Lock' AND (query LIKE '%pg_advisory_lock(81726354)%' OR query LIKE '%pg_advisory_xact_lock(81726354)%')")).rows[0].n;
+   if(waiting>=2)break;
+   await new Promise(resolve=>setTimeout(resolve,25));
+  }
+ }finally{
+  if(blockerTransaction){try{await blocker.query('ROLLBACK');}catch{}}
+  blocker.release();
+ }
+ assert.ok(concurrent);
+ const results=await concurrent;
+ assert.equal(waiting,2,'Both prepares must be queued behind the test-owned writer lock before it is released.');
+ assert.deepEqual(results.map(result=>result.already_imported).sort(),[false,true]);
+ assert.equal(results[0].sha256,results[1].sha256);
+});
+
 test('positionless items remain unknown and enter year filters only through explicit option and documented source context',{skip:!allowed},async()=>{
  const unknown={...item('sp-positionless','SP','UNCLASSIFIED',null,'Seção com posicionamento não identificado.'),code:null,positions:[],kind:'secao_normativa',position_unknown_reason:'Posicionamento não identificado na extração.'};
  const edition={...bundle,id:'test-unpositioned-publication',items:[...bundle.items,unknown]};await importBundle(edition,{makeDefault:true});

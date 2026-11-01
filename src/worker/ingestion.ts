@@ -5,7 +5,7 @@ import {createHash,randomUUID} from 'node:crypto';
 import {resolve,sep,basename,relative,isAbsolute,dirname} from 'node:path';
 import {z} from 'zod';
 import {pool} from '../db/client';
-import {exportIngestionBase,prepareGlobalIngestionUpdate,verifyGlobalIngestionPreservation,revalidatePreparedIngestionProvenance,type GlobalIngestionInput} from '../domain/ingestion-update';
+import {exportIngestionBase,prepareGlobalIngestionUpdate,verifyGlobalIngestionPreservation,revalidatePreparedIngestionProvenance,revalidatePersistedGlobalIngestionCoverage,type GlobalIngestionInput} from '../domain/ingestion-update';
 import {evaluateIngestionProvenance,canonicalProvenance,type IngestionArtifactReceipt,type IngestionProvenanceInput} from '../domain/ingestion-provenance';
 import {loadBundleFile} from '../domain/bundle-file';
 import {importShardedManifest,verifyShardedManifest,type ShardedManifest} from '../domain/shards';
@@ -131,9 +131,10 @@ export async function importPreparedIngestion(job:Job,owner:string,signal?:Abort
  if(replay){
   const proof=await revalidatePreparedIngestionProvenance(input,replay.publication);same(proof,replay.provenance_receipt,'Proveniência revalidada difere do recibo global persistido.');signal?.throwIfAborted();await lease(job,owner);
   const savedPath=await artifactPath(replay.artifact,replay.publication,resolve('data/bundles','ingestion-update-'+job.id)),saved=await loadBundleFile(savedPath,{expected:{sha256:replay.artifact_sha256}});
+  const coverageRevalidation=await revalidatePersistedGlobalIngestionCoverage({manifest:saved.bundle as unknown as ShardedManifest,filename:savedPath,sha256:replay.artifact_sha256,signal});
   const receipt=await importShardedManifest(saved.bundle as unknown as ShardedManifest,replay.artifact_sha256,{root:resolve('data/bundles'),makeDefault:false});
   if(receipt.id!==replay.publication||receipt.sha256!==replay.import_receipt.sha256)throw new Error('Snapshot global persistido diverge do recibo da tentativa anterior.');
-  signal?.throwIfAborted();prepared={publication:receipt.id,artifact:replay.artifact,artifact_sha256:replay.artifact_sha256,import_receipt:receipt,raw_receipt:effective,provenance_receipt:proof,update_scope:await verifyGlobalIngestionPreservation(pin.base_publication,receipt.id,pin.target_sources,actorId)};
+  signal?.throwIfAborted();prepared={publication:receipt.id,artifact:replay.artifact,artifact_sha256:replay.artifact_sha256,import_receipt:receipt,raw_receipt:effective,provenance_receipt:proof,update_scope:await verifyGlobalIngestionPreservation(pin.base_publication,receipt.id,pin.target_sources,actorId),coverage_revalidation:coverageRevalidation};
  }else prepared=await prepareGlobalIngestionUpdate(input);
  signal?.throwIfAborted();await lease(job,owner);
  same(prepared.raw_receipt,effective,'Compositor não recebeu o RAW efetivo verificado.');

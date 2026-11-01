@@ -7,22 +7,25 @@ const base=process.env.TEST_BASE_URL??process.env.VERIFY_BASE_URL??process.env.P
 const checks:{name:string;status:number;success:boolean}[]=[];
 const dataFailures:string[]=[];
 const started_at=new Date().toISOString();
+const verificationTimeoutMs=Math.max(5_000,Math.min(550_000,Number(process.env.API_VERIFY_TIMEOUT_MS)||540_000));
+const verificationDeadline=Date.now()+verificationTimeoutMs;
 let publication:string|undefined;let expectedSources:number|undefined,expectedRelations:number|undefined,expectedSample:{id:string;text:string;evidence?:unknown}|undefined;
+const exportTimeoutMs=Math.max(1_000,Math.min(500_000,Number(process.env.API_EXPORT_TIMEOUT_MS)||240_000));
 async function request(path:string,expected=200,init?:RequestInit){
- const response=await fetch(base+'/api/v1/'+path,init);checks.push({name:`${init?.method??'GET'} ${path}`,status:response.status,success:response.status===expected});
+ const response=await fetch(base+'/api/v1/'+path,{...init,signal:init?.signal??AbortSignal.timeout(30_000)});checks.push({name:`${init?.method??'GET'} ${path}`,status:response.status,success:response.status===expected});
  if(response.status!==expected)assert.equal(response.status,expected,`${path}: ${(await response.text()).slice(0,4000)}`);assert.ok(response.headers.get('x-request-id'),'Request ID obrigatório');return response;
 }
 async function json(path:string,expected=200,init?:RequestInit){const response=await request(path,expected,init);return response.json();}
 const post=(body:unknown)=>({method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
 const pin=(path:string)=>`${path}${path.includes('?')?'&':'?'}publication=${encodeURIComponent(publication!)}`;
 async function exportAndRead(format:'json'|'csv',extra:Record<string,unknown>={}){
- const job=await json('exportacoes',202,post({publication,format,...extra}));assert.ok(job.id);assert.equal(job.publication,publication);let status=job;
- for(let attempt=0;attempt<120;attempt++){
+ const job=await json('exportacoes',202,post({publication,format,...extra}));assert.ok(job.id);assert.equal(job.publication,publication);let status=job;const exportStarted=Date.now(),deadline=Math.min(exportStarted+exportTimeoutMs,verificationDeadline);let fileUnavailableChecked=false;
+ while(Date.now()<deadline){
   status=await json(`exportacoes/${job.id}`);assert.equal(status.publication,publication,'Job pendente deve preservar sua publicação fixada.');if(status.status==='succeeded')break;if(status.status==='failed')throw new Error(`Exportação ${job.id} falhou.`);
-  if(attempt===0)await json(`exportacoes/${job.id}/arquivo`,409);
-  await new Promise(resolve=>setTimeout(resolve,1000));
+  if(!fileUnavailableChecked){await json(`exportacoes/${job.id}/arquivo`,409);fileUnavailableChecked=true;}
+  await new Promise(resolve=>setTimeout(resolve,Math.min(1000,Math.max(1,deadline-Date.now()))));
  }
- assert.equal(status.status,'succeeded','Worker deve concluir exportação.');assert.equal(status.publication,publication);assert.ok(status.download_url);assert.ok(status.sha256);
+ assert.equal(status.status,'succeeded',`Exportação ${job.id} não concluiu em ${Date.now()-exportStarted} ms (limite ${exportTimeoutMs} ms; estado ${status.status}).`);assert.equal(status.publication,publication);assert.ok(status.download_url);assert.ok(status.sha256);
  const file=await request(`exportacoes/${job.id}/arquivo`);assert.equal(file.headers.get('x-data-publication'),publication);
  const saved=await downloadAndHash(file,`var/qa-downloads/${job.id}.${format}`);assert.equal(saved.sha256,status.sha256);assert.equal(saved.bytes,status.size);
  if(extra.view&&extra.view!=='search'){assert.ok(saved.bytes<128*1024*1024,'Relatório excede o teto de materialização do teste; usar parser incremental também neste recorte.');const payload=JSON.parse(await readFile(saved.path,'utf8'));assert.equal(payload.publication,publication);assert.equal(payload.export_manifest.publication,publication);assert.equal(payload.export_manifest.unpaginated,true);assert.ok(Array.isArray(payload.sources));return payload;}

@@ -1,6 +1,6 @@
 import { createReadStream, createWriteStream } from 'node:fs';
 import { createHash } from 'node:crypto';
-import { link, lstat, mkdir, mkdtemp, realpath, rm, writeFile } from 'node:fs/promises';
+import { link, lstat, mkdir, mkdtemp, realpath, rename, rm, writeFile, readFile } from 'node:fs/promises';
 import { basename, dirname, relative, resolve, sep } from 'node:path';
 import { Transform } from 'node:stream';
 import { pipeline } from 'node:stream/promises';
@@ -61,6 +61,13 @@ function canonical(value:unknown, limit:number):Buffer {
  const result=Buffer.from(JSON.stringify(walk(value,0))+'\n');
  if(result.length>limit)throw Error('JSON excede limite de tamanho documentado.');
  return result;
+}
+
+/** Compute the exact JSONL collection identities without writing duplicate shards. */
+export async function hashShardedRecords(records:{items:AsyncIterable<Learning>;relations:AsyncIterable<Relation>}){
+ const identities={items:createHash('sha256'),relations:createHash('sha256')};
+ for(const kind of ['items','relations'] as const)for await(const record of records[kind])identities[kind].update(canonical(record,MAX_RECORD));
+ return{items_jsonl_sha256:identities.items.digest('hex'),relations_jsonl_sha256:identities.relations.digest('hex')};
 }
 
 async function sameFile(filename:string, bytes:number, sha256:string):Promise<boolean> {
@@ -148,4 +155,21 @@ export async function writeShardedArtifact(
   }
   return{manifest:manifest as ShardedManifest,filename:resolve(directory,name),sha256,bytes:manifestBytes.length,root};
  }finally{if(active)await active.abort();await rm(stage,{recursive:true,force:true});}
+}
+
+/** Rewrite metadata on a private, freshly written candidate without touching its immutable data shards. */
+export async function rewritePrivateShardedManifest(result:ShardedArtifactResult,manifest:ShardedManifest):Promise<ShardedArtifactResult>{
+ validateShardedManifest(manifest);
+ const current=await readFile(result.filename);
+ if(digest(current)!==result.sha256)throw Error('Manifesto privado mudou antes da revalidação.');
+ const oldSidecar=await readFile(result.filename+'.sha256','utf8');
+ if(oldSidecar.split(/\s+/)[0]!==result.sha256)throw Error('Checksum do manifesto privado diverge antes da revalidação.');
+ const bytes=canonical(manifest,MAX_METADATA),sha256=digest(bytes),name=basename(result.filename),sidecar=Buffer.from(sha256+'  '+name+'\n');
+ const stage=await mkdtemp(resolve(dirname(result.filename),'.manifest-rewrite-'));
+ try{
+  const stagedManifest=resolve(stage,name),stagedSidecar=resolve(stage,name+'.sha256');
+  await writeFile(stagedManifest,bytes,{flag:'wx',mode:0o600});await writeFile(stagedSidecar,sidecar,{flag:'wx',mode:0o600});
+  await rename(stagedSidecar,result.filename+'.sha256');await rename(stagedManifest,result.filename);
+ }finally{await rm(stage,{recursive:true,force:true});}
+ return{...result,manifest,sha256,bytes:bytes.length};
 }

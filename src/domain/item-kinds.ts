@@ -20,6 +20,7 @@ export const ITEM_KIND_GROUPS={
   'referencial','grupo_curricular','etapa','componente_curricular','campo_experiencias','descricao_campo_experiencias','grupo_etario','unidade_tematica','eixo','campo_atuacao','pratica_linguagem',
   'orientacao_docente','campo_experiencia','ciclo_escolar','ano_escolar','linguagem_artistica','curso_tecnico','itinerario_formativo','unidade_curricular','eixo_estruturante','orientacao_metodologica',
   'apresentacao','secao_curricular','abordagem_interdisciplinar','periodo_curricular','tematica','desdobramento','tema_transversal','producao_sugerida','volume_documental','quadro_curricular',
+  'autenticacao_documental',
   'eixo_computacao','etapa_curricular','pilar_estruturante','etapa_fluxo_pedagogico','referencia_no_documento','mencao_codigo','ementa','narrativa_curricular','credito_documental','rotulo_documental','organizador_curricular','metadado_documental','registro_documental','detalhamento_objetivo','orientacao_didatica','cartao_referencias_eixo','documento_curricular','ementa_curricular','entrada_indice_curricular','formacao_docente','grupo_areas_conhecimento','grupo_objetivos','grupo_referencias_eixos','indice_unidades_curriculares','matriz_curricular','modulo_curricular','problematica_curricular','quadro_habilidades_eixos','referencia_bibliografica','sugestao_didatico_metodologica','tema_contemporaneo_transversal','titulo_trilha','trilha_aprofundamento',
  ],
 } as const;

@@ -54,7 +54,13 @@ export function itemFilter(q:Query,publication:string,alias='i'):Filter {
  if(q.age_months!==undefined){const range=parseAgeMonths(q.age_months),lo=bind(range.min),hi=bind(range.max);const ageMin="CASE WHEN p->>'age_min_months' ~ '^[0-9]{1,4}$' THEN (p->>'age_min_months')::integer END",ageMax="CASE WHEN p->>'age_max_months' ~ '^[0-9]{1,4}$' THEN (p->>'age_max_months')::integer END";const known=`(${ageMin})>=0 AND (${ageMax})<=1800 AND (${ageMin})<=(${ageMax}) AND jsonb_typeof(p->'age_evidence')='array' AND p->'age_evidence'<>'[]'::jsonb`;const overlap=`((${known}) AND (${ageMin})<=${hi} AND (${ageMax})>=${lo})`;positionConditions.push(q.include_unknown_positions===true||q.include_unknown_positions==='true'?`(${overlap} OR (${ageMin}) IS NULL OR (${ageMax}) IS NULL OR p->'age_evidence' IS NULL OR p->'age_evidence'='null'::jsonb OR p->'age_evidence'='[]'::jsonb)`:overlap);}
  if(q.period)positionConditions.push(`p->>'period'=${bind(q.period)}`);
  if(q.year){const yearText=String(q.year);if(!/^\d{1,2}(-\d{1,2})?$/.test(yearText))throw new DomainError(400,'INVALID_YEAR','Ano deve ser inteiro ou faixa, como 6-9.');const[a,b]=yearText.split('-').map(Number);const end=b??a;if(a<1||end>12||a>end)throw new DomainError(400,'INVALID_YEAR','Faixa de anos inválida.');const years=Array.from({length:end-a+1},(_,n)=>String(a+n));const match=`EXISTS(SELECT 1 FROM jsonb_array_elements_text(CASE WHEN jsonb_typeof(p->'years')='array' THEN p->'years' ELSE '[]'::jsonb END) y WHERE y=ANY(${bind(years)}::text[]))`;positionConditions.push(q.include_unknown_positions===true||q.include_unknown_positions==='true'?`(${match} OR p->'years' IS NULL OR p->'years'='null'::jsonb)`:match);}
- if(positionConditions.length){const positioned=`EXISTS(SELECT 1 FROM jsonb_array_elements(${alias}.positions) p WHERE ${positionConditions.join(' AND ')})`;const includeUnknown=q.include_unknown_positions===true||q.include_unknown_positions==='true';
+ const includeUnknownPositions=q.include_unknown_positions===true||q.include_unknown_positions==='true';
+ // JSONB containment uses the existing positions GIN index to narrow stage
+ // searches before the exact per-position predicate below. Keep the EXISTS as
+ // the semantic check, and omit this prefilter when unknown positions are
+ // explicitly included because that path also admits empty position arrays.
+ if(q.stage&&!includeUnknownPositions)conditions.push(`${alias}.positions @> ${bind(JSON.stringify([{stage:q.stage}]))}::jsonb`);
+ if(positionConditions.length){const positioned=`EXISTS(SELECT 1 FROM jsonb_array_elements(${alias}.positions) p WHERE ${positionConditions.join(' AND ')})`;const includeUnknown=includeUnknownPositions;
   if(includeUnknown&&!q.area&&!q.age_group&&!q.period){const sourceContext=[`sx.publication_id=${alias}.publication_id`,`sx.id=${alias}.source_id`];if(q.stage)sourceContext.push(`sx.payload->'stages' @> ${bind(JSON.stringify([q.stage]))}::jsonb`);if(q.component)sourceContext.push(`jsonb_array_length(sx.payload->'components')=1 AND lower(unaccent(sx.payload->'components'->>0))=${bind(normalize(String(q.component)))}`);conditions.push(`(${positioned} OR (jsonb_array_length(${alias}.positions)=0 AND EXISTS(SELECT 1 FROM sources sx WHERE ${sourceContext.join(' AND ')})))`);}else conditions.push(positioned);
  }
  let rank='(0+0)';let searchPredicates:string[]=[];
@@ -85,9 +91,21 @@ export function itemFilter(q:Query,publication:string,alias='i'):Filter {
 
 async function searchAt(q:Query&{page:number;limit:number},publication:string) {
  const f=itemFilter(q,publication);
- const counts=await pool.query(`SELECT count(*)::int AS total FROM items i WHERE ${f.where}`,f.values);const total=counts.rows[0].total as number;
- const data=await pool.query(`SELECT i.payload FROM items i WHERE ${f.where} ORDER BY ${f.rank} DESC,i.code NULLS LAST,i.id LIMIT $${f.values.length+1} OFFSET $${f.values.length+2}`,[...f.values,q.limit,(q.page-1)*q.limit]);
- return result(publication,data.rows.map(r=>r.payload as Learning),{total,page:q.page,limit:q.limit,next:nextPage(q,publication,total),filters:q,age_filter_policy:'Interseção inclusiva de limites em meses documentados com evidência. age_group compara o grupo e o rótulo etário da fonte com normalização de português. Sem limites documentados o posicionamento fica fora do filtro em meses, salvo include_unknown_positions=true. Nunca se inferem idades por código, ordem ou rótulo macro.',year_filter_policy:'Interseção de anos documentados. include_unknown_positions=true inclui anos desconhecidos e posições vazias quando a etapa consta da fonte; componente vazio só quando a fonte tem componente único compatível. Nenhum ano ou posicionamento é atribuído ao registro.',methodology});
+ const limit=`$${f.values.length+1}`,offset=`$${f.values.length+2}`;
+ const rows=await pool.query(`WITH matches AS MATERIALIZED (
+  SELECT i.id FROM items i WHERE ${f.where}
+ ), totals AS (
+  SELECT count(*)::int AS total FROM matches
+ ), page AS (
+  SELECT i.id,i.code,${f.rank} AS score FROM matches m
+  JOIN items i ON i.publication_id=$1 AND i.id=m.id
+  ORDER BY score DESC,i.code NULLS LAST,i.id LIMIT ${limit} OFFSET ${offset}
+ )
+ SELECT page.id,i.payload,totals.total FROM totals LEFT JOIN page ON true
+ LEFT JOIN items i ON i.publication_id=$1 AND i.id=page.id
+ ORDER BY page.score DESC,page.code NULLS LAST,page.id`,[...f.values,q.limit,(q.page-1)*q.limit]);
+ const total=Number(rows.rows[0]?.total??0),data=rows.rows.flatMap(row=>row.payload===null?[]:[row.payload as Learning]);
+ return result(publication,data,{total,page:q.page,limit:q.limit,next:nextPage(q,publication,total),filters:q,age_filter_policy:'Interseção inclusiva de limites em meses documentados com evidência. age_group compara o grupo e o rótulo etário da fonte com normalização de português. Sem limites documentados o posicionamento fica fora do filtro em meses, salvo include_unknown_positions=true. Nunca se inferem idades por código, ordem ou rótulo macro.',year_filter_policy:'Interseção de anos documentados. include_unknown_positions=true inclui anos desconhecidos e posições vazias quando a etapa consta da fonte; componente vazio só quando a fonte tem componente único compatível. Nenhum ano ou posicionamento é atribuído ao registro.',methodology});
 }
 export async function searchLearnings(input:Query={}) {const q=boundedQuery(input);return searchAt(q,await resolvePublication(q.publication));}
 /** Authenticated administrative inspection; never registered as a public API/MCP operation. */

@@ -162,11 +162,23 @@ def negative_probes(ctx: Context, receipt: dict) -> list[dict]:
     """Controlled mutations that the gate must reject for this exact receipt."""
     items, ex, source = ctx.items, ctx.extracted, ctx.source
     units = receipt['document_inventory']['units']
+    # Removing a zero-record unit can be observationally equivalent to keeping
+    # it: a blank continuation or a zero-record page may still be covered by
+    # another unit's page range, and the gate has no external registry of unit
+    # IDs. Exercise the invariant that the receipt accounts for every record
+    # by removing one unit that actually binds at least one record.
+    record_bearing = next((unit for unit in units
+                           if isinstance(unit, dict)
+                           and isinstance(unit.get('item_checks'), list)
+                           and unit['item_checks']), None)
+    if record_bearing is None:
+        raise AssertionError('whole-source receipt has no record-bearing inventory unit')
+    units_without_record_bearing = [unit for unit in units if unit is not record_bearing]
     probes = [
         ('missing_one_record', items[1:], ex, source, receipt),
         ('last_record_text_changed', [*items[:-1], {**items[-1], 'text': items[-1]['text'] + 'X'}], ex, source, receipt),
         ('missing_one_declared_page', items, {**ex, 'pages': ex['pages'][:-1]}, source, receipt),
-        ('missing_one_inventory_unit', items, ex, source, {**receipt, 'document_inventory': {**receipt['document_inventory'], 'units': units[:-1]}}),
+        ('missing_one_inventory_unit', items, ex, source, {**receipt, 'document_inventory': {**receipt['document_inventory'], 'units': units_without_record_bearing}}),
         ('extra_unaccounted_record', [*items, {**items[0], 'id': items[0]['id'] + ':probe'}], ex, source, receipt),
         ('editorial_scope_changed', items, ex, {**source, 'normative_parts': [*source['normative_parts'], 'Parte inexistente']}, receipt),
     ]

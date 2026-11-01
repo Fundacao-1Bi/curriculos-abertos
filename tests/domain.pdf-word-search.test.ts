@@ -79,7 +79,7 @@ test('partial PDF search indexes find auxiliary words and preserve canonical rec
    // A tiny publication is cheaper through its B-tree. Verify expression-index
    // eligibility independently of that unrelated publication selectivity.
    const plan = await client.query(`EXPLAIN (FORMAT JSON) SELECT id FROM public.items WHERE ${predicate} AND ${expression}`);
-   assert.match(JSON.stringify(plan.rows), new RegExp(index === 0 ? 'items_pdf_joined_text_trgm_idx' : 'items_pdf_joined_text_fts_idx'));
+   assert.match(JSON.stringify(plan.rows), new RegExp(index === 0 ? 'items_publication_pdf_joined_text_trgm_idx' : 'items_publication_pdf_joined_text_fts_idx'));
   }
   assert.equal((await client.query(`SELECT count(*)::int AS count FROM public.items WHERE publication_id=$1 AND ${predicate}`, [publication])).rows[0].count, 1);
   await client.query('ROLLBACK');
@@ -87,7 +87,7 @@ test('partial PDF search indexes find auxiliary words and preserve canonical rec
   await client.query('ROLLBACK');
   throw error;
  } finally { client.release(); }
- const indexes = await pool.query("SELECT indexname,indexdef FROM pg_catalog.pg_indexes WHERE schemaname='public' AND indexname IN ('items_pdf_joined_text_trgm_idx','items_pdf_joined_text_fts_idx') ORDER BY indexname");
+ const indexes = await pool.query("SELECT indexname,indexdef FROM pg_catalog.pg_indexes WHERE schemaname='public' AND indexname IN ('items_publication_pdf_joined_text_trgm_idx','items_publication_pdf_joined_text_fts_idx') ORDER BY indexname");
  assert.equal(indexes.rows.length, 2);
  for (const row of indexes.rows) assert.match(row.indexdef, /WHERE \(normalized_text ~/);
  await migrate(); // Ledger prevents reapplying/rebuilding an already applied migration.

@@ -54,6 +54,12 @@ test('UNION retains all seven independent indexed branches and every contextual 
  assert.equal((filter.where.match(/SELECT i.id FROM items i WHERE/g)??[]).length,7);
  assert.equal((filter.where.match(/i.publication_id=\$1/g)??[]).length,8);
  for(const predicate of ['i.uf=ANY','i.source_id=','i.payload->>\'parent_id\'=','jsonb_array_elements(i.positions)','relation_members rm JOIN relations rr'])assert.equal(filter.where.split(predicate).length-1,8,predicate);
+ assert.match(filter.where,/i\.positions @> \$\d+::jsonb/);
+ assert.ok(filter.values.includes('[{"stage":"EF"}]'));
+ assert.match(filter.where,/EXISTS\(SELECT 1 FROM jsonb_array_elements\(i\.positions\) p WHERE p->>\'stage\'=\$\d+/);
+ const unknownPositions=itemFilter({stage:'EF',include_unknown_positions:true},publication);
+ assert.doesNotMatch(unknownPositions.where,/i\.positions @>/);
+ assert.match(unknownPositions.where,/jsonb_array_length\(i\.positions\)=0/);
  assert.equal(itemFilter({},publication).where,'i.publication_id=$1');
 });
 
@@ -67,6 +73,13 @@ test('real PostgreSQL old OR and UNION return identical complete ordered IDs for
  assert.deepEqual(await ids(itemFilter({q:'LIT_%\\Z'},publication)),['literal']);
  assert.deepEqual(await ids(itemFilter({q:'100%'},publication)),['literal']);
  assert.equal((await pool.query('SELECT payload FROM items WHERE publication_id=$1 AND id=$2',[publication,'pdf'])).rows[0].payload.text,items.find(i=>i.id==='pdf')!.text);
+});
+
+test('real PostgreSQL stage prefilter preserves exact matches and unknown-position fallback',{skip:!enabled},async()=>{
+ const expected=items.filter(item=>item.positions.some(position=>position.stage==='EF')).map(item=>item.id).sort();
+ assert.deepEqual((await ids(itemFilter({stage:'EF'},publication))).sort(),expected);
+ const unknownExpected=[...expected,'union-parent'].sort();
+ assert.deepEqual((await ids(itemFilter({stage:'EF',include_unknown_positions:true},publication))).sort(),unknownExpected);
 });
 
 test('real PostgreSQL combined filters and origin aliases apply identically in every branch',{skip:!enabled},async()=>{

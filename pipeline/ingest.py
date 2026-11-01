@@ -1058,6 +1058,18 @@ def expected_source_parts(source):
     return parts
 
 
+def coverage_scope_part_mappings(sources):
+    """Return only hash-pinned whole-part mappings explicitly assigned to scopes."""
+    from release_check import load_scope_part_mappings
+    # Incremental ingestion passes only target sources plus its pinned BR context
+    # to coverage_for. The mapping audit is global, so validate against the full
+    # manifest inventory and project only entries that match the rows being built.
+    mappings,evidence=load_scope_part_mappings(load_sources())
+    if evidence.get('valid') is not True:
+        return set(),evidence
+    return {(key[0],key[1],scope[0],scope[1]) for key,scope in mappings.items()},evidence
+
+
 def source_reconciliation_reports(sources,extracts,items):
     from reconciliation import evaluate_source_reconciliation,resolve_source_dependencies
     by_source=collections.defaultdict(list)
@@ -1075,6 +1087,7 @@ def coverage_for(sources, extracts, items, relations, reconciliation_reports=Non
     by_source=collections.defaultdict(list)
     for item in items: by_source[item['source_id']].append(item)
     reconciliation_reports=reconciliation_reports if reconciliation_reports is not None else source_reconciliation_reports(sources,extracts,items)
+    mapped_parts,mapping_evidence=coverage_scope_part_mappings(sources)
     relation_index=collections.defaultdict(set)
     relation_by_id={r['id']:r for r in relations}
     for relation in relations:
@@ -1088,7 +1101,8 @@ def coverage_for(sources, extracts, items, relations, reconciliation_reports=Non
             for component in components:
                 source_ids=[s['id'] for s in scoped if (component is None and not s.get('stage_component_inventory',{}).get(stage,s.get('components',[]) if len(s.get('stages',[]))==1 else [])) or component in s.get('stage_component_inventory',{}).get(stage,s.get('components',[]) if len(s.get('stages',[]))==1 else [])]
                 stage_items=[i for sid in source_ids for i in by_source[sid] if any(p.get('stage')==stage and (component is None or p.get('component')==component or p.get('area')==component) for p in i.get('positions',[]))]
-                expected=[part for s in scoped if s['id'] in source_ids for part in expected_source_parts(s)]
+                expected=[part for s in scoped if s['id'] in source_ids for part in expected_source_parts(s)
+                          if (s['id'],part['part'],stage,component) in mapped_parts]
                 def entry_processed(entry):
                     sid=entry.get('related_source_id') if entry.get('required_related_document_pending') else entry['source_id']
                     extracted=extracts.get(sid)
@@ -1108,6 +1122,7 @@ def coverage_for(sources, extracts, items, relations, reconciliation_reports=Non
                 applicable_relations=[relation_by_id[rid] for rid in relation_ids]
                 errors=[{'source_id':s['id'],'error':s.get('processing_error')} for s in scoped if s.get('processing_error')]
                 pending=[]
+                if mapping_evidence.get('valid') is not True:pending.append('Evidência hash-pinned de associação de partes ao recorte ausente ou inválida')
                 if errors:pending.append('Falhas críticas de processamento das fontes deste recorte')
                 if not scoped: pending.append('Inventário oficial deste recorte não concluído')
                 if len(processed)<len(expected): pending.append('Documentos/partes obrigatórias não processados')
