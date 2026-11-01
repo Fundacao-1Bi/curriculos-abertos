@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-11-01T12:13:13.653919+00:00",
+  "scope": "failed QA container that never started and its verified empty database volume",
+  "container": "curriculos-abertos-clean-20261028205058-c3b319-db-1",
+  "container_id": "c69b3391fd6bde4755e15fd53c0a0f023d03ea2ce3089c1545028bb38ffecaaf",
+  "started_at": "0001-01-01T00:00:00Z",
+  "failure": "failed to set up container networking: driver failed programming external connectivity on endpoint curriculos-abertos-clean-20261028205058-c3b319-db-1 (93d9102a1824d3343c6a95b8a21b70e07cdcbc26f29190bb73b03e38520f5095): Bind for 127.0.0.1:55438 failed: port is already allocated",
+  "volume": "curriculos-abertos-clean-20261028205058-c3b319_database",
+  "volume_empty_verified": true,
+  "only_container_reference_verified": true,
+  "available_before_bytes": 5213712384,
+  "phase": "completed",
+  "available_after_bytes": 5210501120
+}
