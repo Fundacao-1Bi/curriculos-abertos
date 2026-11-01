@@ -10,6 +10,7 @@ import hashlib
 import json
 import pathlib
 import sys
+import argparse
 
 import jsonschema
 import pymupdf
@@ -151,10 +152,15 @@ def plan(source, old):
 
 
 sources = read('data/manifests/northeast.json')
-selected = ['ba-resolucao-249-2026', 'pe-historia-pernambuco-2026',
-            'rn-portaria-11123-2025', 'ma-resolucao-211-2026-doe',
-            'ma-portaria-181-2026-recomposicao-doe', 'pi-resolucao-188-2025',
-            'ba-resolucao-125-2024-historia','ba-resolucao-266-2025-computacao']
+parser = argparse.ArgumentParser(description='Refresh V2 receipts from current caches; optionally limit to one audited source.')
+parser.add_argument('--source', choices=[s['id'] for s in sources])
+args = parser.parse_args()
+selected = [args.source] if args.source else [
+    'ba-resolucao-249-2026', 'pe-historia-pernambuco-2026',
+    'rn-portaria-11123-2025', 'ma-resolucao-211-2026-doe',
+    'ma-portaria-181-2026-recomposicao-doe', 'pi-resolucao-188-2025',
+    'ba-resolucao-125-2024-historia', 'ba-resolucao-266-2025-computacao',
+]
 schema = read('data/schema/1.1.0.json')
 learning_schema = {'$ref': '#/$defs/Learning', '$defs': schema['$defs']}
 results = []
