@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-11-01T11:49:53.873071+00:00",
+  "reason": "User-authorized removal of two verified duplicate QA exports",
+  "method": "Compared SHA-256 of each original to decompressed gzip, checked original with lsof, then unlinked originals",
+  "available_before_bytes": 513110016,
+  "available_after_bytes": 3480629248,
+  "files": [
+    {
+      "removed": "var/qa-downloads/422ebd36-8e4f-43a2-9c49-9031d72298f6.csv",
+      "retained_gzip": "var/qa-downloads/67f25ed4-c15b-43b2-bd60-aef9ccaf32d7.csv.gz",
+      "uncompressed_sha256": "f349df0ecb435f181b70dc485afb387d9f56a416078872762c467caa211d8a60"
+    },
+    {
+      "removed": "var/qa-downloads/ef7396a5-2216-445f-9dc8-21aa0da79ec9.json",
+      "retained_gzip": "var/qa-downloads/16912f30-1bad-4667-9152-10077c1af07e.json.gz",
+      "uncompressed_sha256": "1f9afaebe64ed6a72600c37ba10abdf47ce82624c5bc8c39f0ed60617f0f0b1a"
+    }
+  ],
+  "limitation": "Reports referencing original paths require restoration by decompression; retained files are local and not versioned."
+}

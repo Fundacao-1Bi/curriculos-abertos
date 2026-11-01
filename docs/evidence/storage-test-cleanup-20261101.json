@@ -1,0 +1,85 @@
+{
+  "timestamp_utc": "2026-11-01T12:03:25.359863+00:00",
+  "scope": "test image and selected build cache created by storage optimization test",
+  "image_removed": "sha256:d8111e58f4486930e8a5464de5a9176e4a898960b82873e1a56d7533e8934f54",
+  "available_before_bytes": 10345709568,
+  "available_after_bytes": 10346106880,
+  "records": [
+    {
+      "before": {
+        "CreatedAt": "2026-11-01 11:59:35.374742094 +0000 UTC",
+        "Description": "[production 1/3] COPY pipeline/requirements.txt /tmp/pipeline-requirements.txt",
+        "ID": "3rbl3iui5n5h299vf6sh1y7ge",
+        "LastUsedAt": "59 seconds ago",
+        "Mutable": false,
+        "Parents": [
+          "4d2eo3esy2sj1xtgmd5uzmkiw"
+        ],
+        "Reclaimable": true,
+        "Shared": false,
+        "Size": "12.55kB",
+        "Type": "regular",
+        "UsageCount": 1
+      },
+      "output": "Total:\t0B\n",
+      "remaining": true
+    },
+    {
+      "before": {
+        "CreatedAt": "2026-11-01 11:59:35.348874011 +0000 UTC",
+        "Description": "mount / from exec /bin/sh -c npm run build",
+        "ID": "4d2eo3esy2sj1xtgmd5uzmkiw",
+        "LastUsedAt": "About a minute ago",
+        "Mutable": false,
+        "Parents": [
+          "s7h9gg4e4lk2hxh86lcsd1k3z"
+        ],
+        "Reclaimable": true,
+        "Shared": false,
+        "Size": "177.7MB",
+        "Type": "regular",
+        "UsageCount": 1
+      },
+      "output": "Total:\t0B\n",
+      "remaining": true
+    },
+    {
+      "before": {
+        "CreatedAt": "2026-11-01 11:59:16.852247752 +0000 UTC",
+        "Description": "[build 1/2] COPY --chown=node:node . .",
+        "ID": "s7h9gg4e4lk2hxh86lcsd1k3z",
+        "LastUsedAt": "About a minute ago",
+        "Mutable": false,
+        "Parents": [
+          "je2d8efcqc1wm9zco2y1w3vf7"
+        ],
+        "Reclaimable": true,
+        "Shared": false,
+        "Size": "3.587GB",
+        "Type": "regular",
+        "UsageCount": 1
+      },
+      "output": "Total:\t0B\n",
+      "remaining": true
+    },
+    {
+      "before": {
+        "CreatedAt": "2026-11-01 11:59:09.075399513 +0000 UTC",
+        "Description": "mount / from exec /bin/sh -c npm ci --cache /tmp/npm-cache && rm -rf /tmp/npm-cache",
+        "ID": "je2d8efcqc1wm9zco2y1w3vf7",
+        "LastUsedAt": "About a minute ago",
+        "Mutable": false,
+        "Parents": [
+          "ph2ejtys5z3ytqoiilo9h3ese"
+        ],
+        "Reclaimable": true,
+        "Shared": false,
+        "Size": "844.7MB",
+        "Type": "regular",
+        "UsageCount": 1
+      },
+      "output": "Total:\t0B\n",
+      "remaining": true
+    }
+  ]
+}

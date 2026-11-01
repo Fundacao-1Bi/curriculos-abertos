@@ -6,6 +6,9 @@ node_modules
 .venv
 .venv-*
 var
+# Ad hoc QA workspaces can contain whole copies of the project and are never
+# needed by the app, worker, or build.
+tmp
 data/raw
 data/extracted
 # Runtime artifacts remain on the host and are mounted by both Compose services.

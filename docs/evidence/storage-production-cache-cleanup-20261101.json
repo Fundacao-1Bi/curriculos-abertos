@@ -1,0 +1,47 @@
+{
+  "timestamp_utc": "2026-11-01T11:55:37.467968+00:00",
+  "scope": "two project production COPY build-cache records; images and volumes preserved",
+  "available_before_bytes": 11152015360,
+  "available_after_bytes": 14263070720,
+  "records": [
+    {
+      "before": {
+        "CreatedAt": "2026-11-01 05:56:00.929742587 +0000 UTC",
+        "Description": "[production 5/6] COPY --from=build --chown=node:node /app ./",
+        "ID": "zrsv3muqx5hlj5o6w5zyz5yxp",
+        "LastUsedAt": "5 hours ago",
+        "Mutable": false,
+        "Parents": [
+          "tkmicrtpv9q4du7pmcqjy2smc"
+        ],
+        "Reclaimable": true,
+        "Shared": false,
+        "Size": "3.554GB",
+        "Type": "regular",
+        "UsageCount": 2
+      },
+      "output": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nzrsv3muqx5hlj5o6w5zyz5yxp               \ttrue \t\t3.554GB   \t5 hours ago\nTotal:\t3.554GB\n",
+      "remaining": false
+    },
+    {
+      "before": {
+        "CreatedAt": "2026-11-01 06:04:17.152042755 +0000 UTC",
+        "Description": "[production 5/6] COPY --from=build --chown=node:node /app ./",
+        "ID": "zcukdh7hj6tk1109myys1e72a",
+        "LastUsedAt": "4 minutes ago",
+        "Mutable": false,
+        "Parents": [
+          "tkmicrtpv9q4du7pmcqjy2smc"
+        ],
+        "Reclaimable": true,
+        "Shared": false,
+        "Size": "3.143GB",
+        "Type": "regular",
+        "UsageCount": 2
+      },
+      "output": "ID\t\t\t\t\t\tRECLAIMABLE\tSIZE\t\tLAST ACCESSED\nzcukdh7hj6tk1109myys1e72a               \ttrue \t\t3.143GB   \t4 minutes ago\nTotal:\t3.143GB\n",
+      "remaining": false
+    }
+  ],
+  "note": "Docker cache sizes may overlap with other layers and are not physical disk reclaimed."
+}
