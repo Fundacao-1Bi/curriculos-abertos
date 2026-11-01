@@ -1,17 +1,345 @@
 {
-  "source_id": "rn-portaria-11123-2025",
-  "artifact_sha256": "8e8a23b5e500d1ac4aae981c64bd2b6ec8f20e939f4b260701741e90ae5af8b9",
-  "extraction_revision": "page-cell-v1.5.0",
-  "actor_type": "automated",
   "actor_id": "codex:data_northeast:documentary_gate_v2",
-  "reviewed_at": "2026-10-28T18:33:22.194529+00:00",
-  "method": "Independent primary-document census and structural keys, all selected source lines/glyphs accounted, secondary source review where recorded, complete current frozen-runtime generic+adapter finalization, literal evidence/schema/parent checks. No pedagogical human review.",
-  "reconciliation_status": "automated_own_source_documentary_reconciled_v2",
+  "actor_type": "automated",
+  "artifact_sha256": "8e8a23b5e500d1ac4aae981c64bd2b6ec8f20e939f4b260701741e90ae5af8b9",
+  "document_inventory": {
+    "basis": "primary_document_review",
+    "evidence": [
+      {
+        "excerpt": "Art. 1º Homologar o Parecer nº 160/2025 - CEB/CEE-RN.",
+        "page": 21,
+        "section": "Portaria-SEI11123/2025",
+        "source_id": "rn-portaria-11123-2025",
+        "verification": "Homologação literal e escopo de educação básica, sem atribuir adoção universal municipal; região conserva integral ato e exclui matérias adjacentes."
+      }
+    ],
+    "method": "Explicit source-derived documentary units and denominators, covering every declared source page and actual record exactly once; own-source and required-related-source gates remain separate.",
+    "required_parts": [
+      "Portaria-SEI11123/2025 integral"
+    ],
+    "source_scope_sha256": "40353c3b739e76af3e6f0af6cc829ca2e0ca4fb7fb773d2a248a054684a06722",
+    "units": [
+      {
+        "denominator": {
+          "basis": "primary_document_review",
+          "evidence": [
+            {
+              "excerpt": "Art. 1º Homologar o Parecer nº 160/2025 - CEB/CEE-RN.",
+              "page": 21,
+              "section": "Portaria-SEI11123/2025",
+              "source_id": "rn-portaria-11123-2025",
+              "verification": "Homologação literal e escopo de educação básica, sem atribuir adoção universal municipal; região conserva integral ato e exclui matérias adjacentes."
+            }
+          ],
+          "expected_count": 12,
+          "method": "Independent complete visual/native region reading, explicit headings/5considerandos/2articles and once-only original-line partition. No expectedIDs copied from extraction outputs.",
+          "source_inventory_path": "docs/evidence/source-audit-northeast/rn-portaria11123-inventory.json",
+          "source_inventory_sha256": "ed9ed9ea76b1a462ca9714507721ffce591b46f33007feeb775948584536aa06",
+          "unit": "documentary_records"
+        },
+        "evidence": [
+          {
+            "excerpt": "Art. 1º Homologar o Parecer nº 160/2025 - CEB/CEE-RN.",
+            "page": 21,
+            "section": "Portaria-SEI11123/2025",
+            "source_id": "rn-portaria-11123-2025",
+            "verification": "Homologação literal e escopo de educação básica, sem atribuir adoção universal municipal; região conserva integral ato e exclui matérias adjacentes."
+          }
+        ],
+        "expected_record_count": 12,
+        "item_checks": [
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  28,
+                  560,
+                  395,
+                  800
+                ],
+                "excerpt": "Portaria-SEI Nº 11123, de 12 de dezembro de 2025.",
+                "locator": "norma:portaria11123/ato",
+                "method": "independent_native_region_and_original_line_partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "Portaria-SEI11123/2025 / ato",
+                "source_id": "rn-portaria-11123-2025"
+              }
+            ],
+            "item_id": "ca:rn-portaria-11123-2025:section:ato",
+            "text_sha256": "348beea835bdcb379b90c7d5bd6676dc44382253c61d6e821b5f8ba12df3039a"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  28,
+                  560,
+                  395,
+                  800
+                ],
+                "excerpt": "A SECRETÁRIA DE ESTADO DA EDUCAÇÃO, DO ESPORTE E DO LAZER DO RIO GRANDE DO NOR­\nTE, no uso de suas atribuições e,",
+                "locator": "norma:portaria11123/preambulo",
+                "method": "independent_native_region_and_original_line_partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "Portaria-SEI11123/2025 / preambulo",
+                "source_id": "rn-portaria-11123-2025"
+              }
+            ],
+            "item_id": "ca:rn-portaria-11123-2025:section:preambulo",
+            "text_sha256": "7eeb91ff098cd027fbff091e66513ab6dfeefd58d71bb084c13683587091bc75"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  28,
+                  560,
+                  395,
+                  800
+                ],
+                "excerpt": "Considerando o que consta no Processo SEI nº 00410019.001583/2025-95 SEEC/RN;",
+                "locator": "norma:portaria11123/considerando-1",
+                "method": "independent_native_region_and_original_line_partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "Portaria-SEI11123/2025 / considerando-1",
+                "source_id": "rn-portaria-11123-2025"
+              }
+            ],
+            "item_id": "ca:rn-portaria-11123-2025:section:considerando-1",
+            "text_sha256": "37b573dda2284588c93f2c19dd6dee6aeb0563d07d09b008457ead9267392b5d"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  28,
+                  560,
+                  395,
+                  800
+                ],
+                "excerpt": "Considerando o pedido quanto às Diretrizes Curriculares do Ensino de Computação na Educação Básica do Rio\nGrande do Norte (DCEC);",
+                "locator": "norma:portaria11123/considerando-2",
+                "method": "independent_native_region_and_original_line_partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "Portaria-SEI11123/2025 / considerando-2",
+                "source_id": "rn-portaria-11123-2025"
+              }
+            ],
+            "item_id": "ca:rn-portaria-11123-2025:section:considerando-2",
+            "text_sha256": "fb73cec030f599208fb6b993fce5dbf43113c2dcdcd2861fca20f52bf6303a6f"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  28,
+                  560,
+                  395,
+                  800
+                ],
+                "excerpt": "Considerando os votos dos Conselheiros no Parecer nº 160/2025, em 26 de novembro de 2025, que se posicio­\nnam “FAVORAVELMENTE à APROVAÇÃO das Diretrizes Curriculares do Ensino de Computação na Educação\nBásica do Rio Grande do Norte (DCEC), destacando sua relevância para a formação integral e tecnológica dos\nestudantes da Educação Básica no Estado. A fim de reforçar a reflexão pedagógica e a discussão qualificada sobre\na gestão do ensino, recomenda-se que a adesão às Diretrizes Curriculares do Ensino de Computação na Educação\nBásica do Rio Grande do Norte (DCEC), tanto nos municípios que constituem Sistema como naqueles que não\nconstituem, mas que dispõem de Conselho Municipal de Educação, seja formalizada com a anuência desse Órgão”;",
+                "locator": "norma:portaria11123/considerando-3",
+                "method": "independent_native_region_and_original_line_partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "Portaria-SEI11123/2025 / considerando-3",
+                "source_id": "rn-portaria-11123-2025"
+              }
+            ],
+            "item_id": "ca:rn-portaria-11123-2025:section:considerando-3",
+            "text_sha256": "3fc42cb08a79ee7919a060e1f60da24c005906733052d7a97a0a69554f467283"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  28,
+                  560,
+                  395,
+                  800
+                ],
+                "excerpt": "Considerando que a Câmara de Educação Básica (CEB), reunida em 26 de novembro de 2025, aprovou por unani­\nmidade, o Parecer nº 160/2025, nos termos dos votos dos Conselheiros;",
+                "locator": "norma:portaria11123/considerando-4",
+                "method": "independent_native_region_and_original_line_partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "Portaria-SEI11123/2025 / considerando-4",
+                "source_id": "rn-portaria-11123-2025"
+              }
+            ],
+            "item_id": "ca:rn-portaria-11123-2025:section:considerando-4",
+            "text_sha256": "413bc3b70daf7b768adcfe99eb5b7fca3f5048d767254fc72d9fb64d4bef91fd"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  28,
+                  560,
+                  395,
+                  800
+                ],
+                "excerpt": "Considerando a decisão do Conselho Estadual de Educação (CEE), reunido em Sessão Plena, em 03 de dezembro\nde 2025, que acolheu o Parecer nº 160/2025 - originário da Câmara de Educação Básica, deliberou por unanimida­\nde, aprovar a conclusão apresentada e tomada nos termos dos votos dos Conselheiros.",
+                "locator": "norma:portaria11123/considerando-5",
+                "method": "independent_native_region_and_original_line_partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "Portaria-SEI11123/2025 / considerando-5",
+                "source_id": "rn-portaria-11123-2025"
+              }
+            ],
+            "item_id": "ca:rn-portaria-11123-2025:section:considerando-5",
+            "text_sha256": "8220ad164ed8ed950529bd210ea3f78798e8280b60e5f57bcbf2566a0c331061"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  28,
+                  560,
+                  395,
+                  800
+                ],
+                "excerpt": "RESOLVE:",
+                "locator": "norma:portaria11123/resolve",
+                "method": "independent_native_region_and_original_line_partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "Portaria-SEI11123/2025 / resolve",
+                "source_id": "rn-portaria-11123-2025"
+              }
+            ],
+            "item_id": "ca:rn-portaria-11123-2025:section:resolve",
+            "text_sha256": "22158f36212aecb73e3fb2f2ccb7f87aca7424b5815b862eb775aaba51c785b8"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  28,
+                  560,
+                  395,
+                  800
+                ],
+                "excerpt": "Art. 1º Homologar o Parecer nº 160/2025 - CEB/CEE-RN.",
+                "locator": "norma:portaria11123/artigo-1",
+                "method": "independent_native_region_and_original_line_partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "Portaria-SEI11123/2025 / artigo-1",
+                "source_id": "rn-portaria-11123-2025"
+              }
+            ],
+            "item_id": "ca:rn-portaria-11123-2025:section:artigo-1",
+            "text_sha256": "a2dd2b6b93d4c15b24737df2582333074a48794b0f89e24afc031311c0994fd2"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  28,
+                  560,
+                  395,
+                  800
+                ],
+                "excerpt": "Art. 2º Esta Portaria entra em vigor na data de sua publicação, revogadas as disposições em contrário.",
+                "locator": "norma:portaria11123/artigo-2",
+                "method": "independent_native_region_and_original_line_partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "Portaria-SEI11123/2025 / artigo-2",
+                "source_id": "rn-portaria-11123-2025"
+              }
+            ],
+            "item_id": "ca:rn-portaria-11123-2025:section:artigo-2",
+            "text_sha256": "f317f43810fbd8aee71e86639480a0ece04e01f0a613d46687b38d8273a33a0b"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  28,
+                  560,
+                  395,
+                  800
+                ],
+                "excerpt": "Publique-se. Registre-se. Cumpra-se.",
+                "locator": "norma:portaria11123/publicacao",
+                "method": "independent_native_region_and_original_line_partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "Portaria-SEI11123/2025 / publicacao",
+                "source_id": "rn-portaria-11123-2025"
+              }
+            ],
+            "item_id": "ca:rn-portaria-11123-2025:section:publicacao",
+            "text_sha256": "16497ebe22cf88650f11778e93d3c8a9b2beba7228c97631eda4196599d7fc55"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  28,
+                  560,
+                  395,
+                  800
+                ],
+                "excerpt": "Maria do Socorro da Silva Batista\nSecretária de Estado da Educação, do Esporte e do Lazer",
+                "locator": "norma:portaria11123/assinatura",
+                "method": "independent_native_region_and_original_line_partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "Portaria-SEI11123/2025 / assinatura",
+                "source_id": "rn-portaria-11123-2025"
+              }
+            ],
+            "item_id": "ca:rn-portaria-11123-2025:section:assinatura",
+            "text_sha256": "8f186c6438425957f6c3a0e95c898c1f33827b919bed062d9b4a2e1373a33abc"
+          }
+        ],
+        "method": "Independent complete visual/native region reading, explicit headings/5considerandos/2articles and once-only original-line partition. No expectedIDs copied from extraction outputs.",
+        "page_ranges": [
+          [
+            21,
+            21
+          ]
+        ],
+        "part": "Portaria-SEI11123/2025 integral",
+        "role": "normative",
+        "unit_id": "rn-portaria-11123-2025:documentary-unit:1"
+      }
+    ]
+  },
+  "extraction_revision": "page-cell-v1.5.0",
+  "findings": [],
   "inventory_complete": true,
-  "pedagogical_review_status": "not_reviewed",
+  "latest_runtime_verification": {
+    "cache_sha256": "d4af118b2428b110733ea62362f9f952aab5eca613211967ea59a63642f54c96",
+    "extraction_revision": "page-cell-v1.5.0",
+    "path": "docs/evidence/source-audit-northeast/runtime-v150/rn-portaria-11123-2025.json",
+    "sha256": "5e6e37c835d7097259dc3034a3fa31d46aa504950d0d7a2f743d23932cb5f2f6",
+    "source_config_sha256": "6d15dd1468aca97f5539b4ad098a6869c24f28500c45efc76808570d6462bcdc",
+    "status": "passed"
+  },
+  "limits": [
+    "V2 own-source proof does not establish missing related artifacts, UF completeness, actual public production incorporation or human pedagogical review."
+  ],
+  "method": "Independent primary-document census and structural keys, all selected source lines/glyphs accounted, secondary source review where recorded, complete current frozen-runtime generic+adapter finalization, literal evidence/schema/parent checks. No pedagogical human review.",
   "parts": [
     {
-      "name": "Portaria-SEI11123/2025 integral",
+      "evidence": [
+        {
+          "excerpt": "Art. 1º Homologar o Parecer nº 160/2025 - CEB/CEE-RN.",
+          "page": 21,
+          "section": "Portaria-SEI11123/2025",
+          "source_id": "rn-portaria-11123-2025",
+          "verification": "Homologação literal e escopo de educação básica, sem atribuir adoção universal municipal; região conserva integral ato e exclui matérias adjacentes."
+        }
+      ],
       "expected_item_ids": [
         "ca:rn-portaria-11123-2025:section:ato",
         "ca:rn-portaria-11123-2025:section:preambulo",
@@ -26,6 +354,262 @@
         "ca:rn-portaria-11123-2025:section:publicacao",
         "ca:rn-portaria-11123-2025:section:assinatura"
       ],
+      "findings": [],
+      "item_checks": [
+        {
+          "evidence": [
+            {
+              "bbox": [
+                28,
+                560,
+                395,
+                800
+              ],
+              "excerpt": "Portaria-SEI Nº 11123, de 12 de dezembro de 2025.",
+              "locator": "norma:portaria11123/ato",
+              "method": "independent_native_region_and_original_line_partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "Portaria-SEI11123/2025 / ato",
+              "source_id": "rn-portaria-11123-2025"
+            }
+          ],
+          "item_id": "ca:rn-portaria-11123-2025:section:ato",
+          "text_sha256": "348beea835bdcb379b90c7d5bd6676dc44382253c61d6e821b5f8ba12df3039a"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                28,
+                560,
+                395,
+                800
+              ],
+              "excerpt": "A SECRETÁRIA DE ESTADO DA EDUCAÇÃO, DO ESPORTE E DO LAZER DO RIO GRANDE DO NOR­\nTE, no uso de suas atribuições e,",
+              "locator": "norma:portaria11123/preambulo",
+              "method": "independent_native_region_and_original_line_partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "Portaria-SEI11123/2025 / preambulo",
+              "source_id": "rn-portaria-11123-2025"
+            }
+          ],
+          "item_id": "ca:rn-portaria-11123-2025:section:preambulo",
+          "text_sha256": "7eeb91ff098cd027fbff091e66513ab6dfeefd58d71bb084c13683587091bc75"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                28,
+                560,
+                395,
+                800
+              ],
+              "excerpt": "Considerando o que consta no Processo SEI nº 00410019.001583/2025-95 SEEC/RN;",
+              "locator": "norma:portaria11123/considerando-1",
+              "method": "independent_native_region_and_original_line_partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "Portaria-SEI11123/2025 / considerando-1",
+              "source_id": "rn-portaria-11123-2025"
+            }
+          ],
+          "item_id": "ca:rn-portaria-11123-2025:section:considerando-1",
+          "text_sha256": "37b573dda2284588c93f2c19dd6dee6aeb0563d07d09b008457ead9267392b5d"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                28,
+                560,
+                395,
+                800
+              ],
+              "excerpt": "Considerando o pedido quanto às Diretrizes Curriculares do Ensino de Computação na Educação Básica do Rio\nGrande do Norte (DCEC);",
+              "locator": "norma:portaria11123/considerando-2",
+              "method": "independent_native_region_and_original_line_partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "Portaria-SEI11123/2025 / considerando-2",
+              "source_id": "rn-portaria-11123-2025"
+            }
+          ],
+          "item_id": "ca:rn-portaria-11123-2025:section:considerando-2",
+          "text_sha256": "fb73cec030f599208fb6b993fce5dbf43113c2dcdcd2861fca20f52bf6303a6f"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                28,
+                560,
+                395,
+                800
+              ],
+              "excerpt": "Considerando os votos dos Conselheiros no Parecer nº 160/2025, em 26 de novembro de 2025, que se posicio­\nnam “FAVORAVELMENTE à APROVAÇÃO das Diretrizes Curriculares do Ensino de Computação na Educação\nBásica do Rio Grande do Norte (DCEC), destacando sua relevância para a formação integral e tecnológica dos\nestudantes da Educação Básica no Estado. A fim de reforçar a reflexão pedagógica e a discussão qualificada sobre\na gestão do ensino, recomenda-se que a adesão às Diretrizes Curriculares do Ensino de Computação na Educação\nBásica do Rio Grande do Norte (DCEC), tanto nos municípios que constituem Sistema como naqueles que não\nconstituem, mas que dispõem de Conselho Municipal de Educação, seja formalizada com a anuência desse Órgão”;",
+              "locator": "norma:portaria11123/considerando-3",
+              "method": "independent_native_region_and_original_line_partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "Portaria-SEI11123/2025 / considerando-3",
+              "source_id": "rn-portaria-11123-2025"
+            }
+          ],
+          "item_id": "ca:rn-portaria-11123-2025:section:considerando-3",
+          "text_sha256": "3fc42cb08a79ee7919a060e1f60da24c005906733052d7a97a0a69554f467283"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                28,
+                560,
+                395,
+                800
+              ],
+              "excerpt": "Considerando que a Câmara de Educação Básica (CEB), reunida em 26 de novembro de 2025, aprovou por unani­\nmidade, o Parecer nº 160/2025, nos termos dos votos dos Conselheiros;",
+              "locator": "norma:portaria11123/considerando-4",
+              "method": "independent_native_region_and_original_line_partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "Portaria-SEI11123/2025 / considerando-4",
+              "source_id": "rn-portaria-11123-2025"
+            }
+          ],
+          "item_id": "ca:rn-portaria-11123-2025:section:considerando-4",
+          "text_sha256": "413bc3b70daf7b768adcfe99eb5b7fca3f5048d767254fc72d9fb64d4bef91fd"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                28,
+                560,
+                395,
+                800
+              ],
+              "excerpt": "Considerando a decisão do Conselho Estadual de Educação (CEE), reunido em Sessão Plena, em 03 de dezembro\nde 2025, que acolheu o Parecer nº 160/2025 - originário da Câmara de Educação Básica, deliberou por unanimida­\nde, aprovar a conclusão apresentada e tomada nos termos dos votos dos Conselheiros.",
+              "locator": "norma:portaria11123/considerando-5",
+              "method": "independent_native_region_and_original_line_partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "Portaria-SEI11123/2025 / considerando-5",
+              "source_id": "rn-portaria-11123-2025"
+            }
+          ],
+          "item_id": "ca:rn-portaria-11123-2025:section:considerando-5",
+          "text_sha256": "8220ad164ed8ed950529bd210ea3f78798e8280b60e5f57bcbf2566a0c331061"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                28,
+                560,
+                395,
+                800
+              ],
+              "excerpt": "RESOLVE:",
+              "locator": "norma:portaria11123/resolve",
+              "method": "independent_native_region_and_original_line_partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "Portaria-SEI11123/2025 / resolve",
+              "source_id": "rn-portaria-11123-2025"
+            }
+          ],
+          "item_id": "ca:rn-portaria-11123-2025:section:resolve",
+          "text_sha256": "22158f36212aecb73e3fb2f2ccb7f87aca7424b5815b862eb775aaba51c785b8"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                28,
+                560,
+                395,
+                800
+              ],
+              "excerpt": "Art. 1º Homologar o Parecer nº 160/2025 - CEB/CEE-RN.",
+              "locator": "norma:portaria11123/artigo-1",
+              "method": "independent_native_region_and_original_line_partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "Portaria-SEI11123/2025 / artigo-1",
+              "source_id": "rn-portaria-11123-2025"
+            }
+          ],
+          "item_id": "ca:rn-portaria-11123-2025:section:artigo-1",
+          "text_sha256": "a2dd2b6b93d4c15b24737df2582333074a48794b0f89e24afc031311c0994fd2"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                28,
+                560,
+                395,
+                800
+              ],
+              "excerpt": "Art. 2º Esta Portaria entra em vigor na data de sua publicação, revogadas as disposições em contrário.",
+              "locator": "norma:portaria11123/artigo-2",
+              "method": "independent_native_region_and_original_line_partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "Portaria-SEI11123/2025 / artigo-2",
+              "source_id": "rn-portaria-11123-2025"
+            }
+          ],
+          "item_id": "ca:rn-portaria-11123-2025:section:artigo-2",
+          "text_sha256": "f317f43810fbd8aee71e86639480a0ece04e01f0a613d46687b38d8273a33a0b"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                28,
+                560,
+                395,
+                800
+              ],
+              "excerpt": "Publique-se. Registre-se. Cumpra-se.",
+              "locator": "norma:portaria11123/publicacao",
+              "method": "independent_native_region_and_original_line_partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "Portaria-SEI11123/2025 / publicacao",
+              "source_id": "rn-portaria-11123-2025"
+            }
+          ],
+          "item_id": "ca:rn-portaria-11123-2025:section:publicacao",
+          "text_sha256": "16497ebe22cf88650f11778e93d3c8a9b2beba7228c97631eda4196599d7fc55"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                28,
+                560,
+                395,
+                800
+              ],
+              "excerpt": "Maria do Socorro da Silva Batista\nSecretária de Estado da Educação, do Esporte e do Lazer",
+              "locator": "norma:portaria11123/assinatura",
+              "method": "independent_native_region_and_original_line_partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "Portaria-SEI11123/2025 / assinatura",
+              "source_id": "rn-portaria-11123-2025"
+            }
+          ],
+          "item_id": "ca:rn-portaria-11123-2025:section:assinatura",
+          "text_sha256": "8f186c6438425957f6c3a0e95c898c1f33827b919bed062d9b4a2e1373a33abc"
+        }
+      ],
+      "name": "Portaria-SEI11123/2025 integral",
       "verified_item_ids": [
         "ca:rn-portaria-11123-2025:section:ato",
         "ca:rn-portaria-11123-2025:section:preambulo",
@@ -39,660 +623,92 @@
         "ca:rn-portaria-11123-2025:section:artigo-2",
         "ca:rn-portaria-11123-2025:section:publicacao",
         "ca:rn-portaria-11123-2025:section:assinatura"
-      ],
-      "evidence": [
-        {
-          "page": 21,
-          "section": "Portaria-SEI11123/2025",
-          "excerpt": "Art. 1º Homologar o Parecer nº 160/2025 - CEB/CEE-RN.",
-          "verification": "Homologação literal e escopo de educação básica, sem atribuir adoção universal municipal; região conserva integral ato e exclui matérias adjacentes.",
-          "source_id": "rn-portaria-11123-2025"
-        }
-      ],
-      "item_checks": [
-        {
-          "item_id": "ca:rn-portaria-11123-2025:section:ato",
-          "text_sha256": "348beea835bdcb379b90c7d5bd6676dc44382253c61d6e821b5f8ba12df3039a",
-          "evidence": [
-            {
-              "source_id": "rn-portaria-11123-2025",
-              "page": 21,
-              "printed_page": "21",
-              "section": "Portaria-SEI11123/2025 / ato",
-              "excerpt": "Portaria-SEI Nº 11123, de 12 de dezembro de 2025.",
-              "bbox": [
-                28,
-                560,
-                395,
-                800
-              ],
-              "locator": "norma:portaria11123/ato",
-              "method": "independent_native_region_and_original_line_partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:rn-portaria-11123-2025:section:preambulo",
-          "text_sha256": "7eeb91ff098cd027fbff091e66513ab6dfeefd58d71bb084c13683587091bc75",
-          "evidence": [
-            {
-              "source_id": "rn-portaria-11123-2025",
-              "page": 21,
-              "printed_page": "21",
-              "section": "Portaria-SEI11123/2025 / preambulo",
-              "excerpt": "A SECRETÁRIA DE ESTADO DA EDUCAÇÃO, DO ESPORTE E DO LAZER DO RIO GRANDE DO NOR­\nTE, no uso de suas atribuições e,",
-              "bbox": [
-                28,
-                560,
-                395,
-                800
-              ],
-              "locator": "norma:portaria11123/preambulo",
-              "method": "independent_native_region_and_original_line_partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:rn-portaria-11123-2025:section:considerando-1",
-          "text_sha256": "37b573dda2284588c93f2c19dd6dee6aeb0563d07d09b008457ead9267392b5d",
-          "evidence": [
-            {
-              "source_id": "rn-portaria-11123-2025",
-              "page": 21,
-              "printed_page": "21",
-              "section": "Portaria-SEI11123/2025 / considerando-1",
-              "excerpt": "Considerando o que consta no Processo SEI nº 00410019.001583/2025-95 SEEC/RN;",
-              "bbox": [
-                28,
-                560,
-                395,
-                800
-              ],
-              "locator": "norma:portaria11123/considerando-1",
-              "method": "independent_native_region_and_original_line_partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:rn-portaria-11123-2025:section:considerando-2",
-          "text_sha256": "fb73cec030f599208fb6b993fce5dbf43113c2dcdcd2861fca20f52bf6303a6f",
-          "evidence": [
-            {
-              "source_id": "rn-portaria-11123-2025",
-              "page": 21,
-              "printed_page": "21",
-              "section": "Portaria-SEI11123/2025 / considerando-2",
-              "excerpt": "Considerando o pedido quanto às Diretrizes Curriculares do Ensino de Computação na Educação Básica do Rio\nGrande do Norte (DCEC);",
-              "bbox": [
-                28,
-                560,
-                395,
-                800
-              ],
-              "locator": "norma:portaria11123/considerando-2",
-              "method": "independent_native_region_and_original_line_partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:rn-portaria-11123-2025:section:considerando-3",
-          "text_sha256": "3fc42cb08a79ee7919a060e1f60da24c005906733052d7a97a0a69554f467283",
-          "evidence": [
-            {
-              "source_id": "rn-portaria-11123-2025",
-              "page": 21,
-              "printed_page": "21",
-              "section": "Portaria-SEI11123/2025 / considerando-3",
-              "excerpt": "Considerando os votos dos Conselheiros no Parecer nº 160/2025, em 26 de novembro de 2025, que se posicio­\nnam “FAVORAVELMENTE à APROVAÇÃO das Diretrizes Curriculares do Ensino de Computação na Educação\nBásica do Rio Grande do Norte (DCEC), destacando sua relevância para a formação integral e tecnológica dos\nestudantes da Educação Básica no Estado. A fim de reforçar a reflexão pedagógica e a discussão qualificada sobre\na gestão do ensino, recomenda-se que a adesão às Diretrizes Curriculares do Ensino de Computação na Educação\nBásica do Rio Grande do Norte (DCEC), tanto nos municípios que constituem Sistema como naqueles que não\nconstituem, mas que dispõem de Conselho Municipal de Educação, seja formalizada com a anuência desse Órgão”;",
-              "bbox": [
-                28,
-                560,
-                395,
-                800
-              ],
-              "locator": "norma:portaria11123/considerando-3",
-              "method": "independent_native_region_and_original_line_partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:rn-portaria-11123-2025:section:considerando-4",
-          "text_sha256": "413bc3b70daf7b768adcfe99eb5b7fca3f5048d767254fc72d9fb64d4bef91fd",
-          "evidence": [
-            {
-              "source_id": "rn-portaria-11123-2025",
-              "page": 21,
-              "printed_page": "21",
-              "section": "Portaria-SEI11123/2025 / considerando-4",
-              "excerpt": "Considerando que a Câmara de Educação Básica (CEB), reunida em 26 de novembro de 2025, aprovou por unani­\nmidade, o Parecer nº 160/2025, nos termos dos votos dos Conselheiros;",
-              "bbox": [
-                28,
-                560,
-                395,
-                800
-              ],
-              "locator": "norma:portaria11123/considerando-4",
-              "method": "independent_native_region_and_original_line_partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:rn-portaria-11123-2025:section:considerando-5",
-          "text_sha256": "8220ad164ed8ed950529bd210ea3f78798e8280b60e5f57bcbf2566a0c331061",
-          "evidence": [
-            {
-              "source_id": "rn-portaria-11123-2025",
-              "page": 21,
-              "printed_page": "21",
-              "section": "Portaria-SEI11123/2025 / considerando-5",
-              "excerpt": "Considerando a decisão do Conselho Estadual de Educação (CEE), reunido em Sessão Plena, em 03 de dezembro\nde 2025, que acolheu o Parecer nº 160/2025 - originário da Câmara de Educação Básica, deliberou por unanimida­\nde, aprovar a conclusão apresentada e tomada nos termos dos votos dos Conselheiros.",
-              "bbox": [
-                28,
-                560,
-                395,
-                800
-              ],
-              "locator": "norma:portaria11123/considerando-5",
-              "method": "independent_native_region_and_original_line_partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:rn-portaria-11123-2025:section:resolve",
-          "text_sha256": "22158f36212aecb73e3fb2f2ccb7f87aca7424b5815b862eb775aaba51c785b8",
-          "evidence": [
-            {
-              "source_id": "rn-portaria-11123-2025",
-              "page": 21,
-              "printed_page": "21",
-              "section": "Portaria-SEI11123/2025 / resolve",
-              "excerpt": "RESOLVE:",
-              "bbox": [
-                28,
-                560,
-                395,
-                800
-              ],
-              "locator": "norma:portaria11123/resolve",
-              "method": "independent_native_region_and_original_line_partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:rn-portaria-11123-2025:section:artigo-1",
-          "text_sha256": "a2dd2b6b93d4c15b24737df2582333074a48794b0f89e24afc031311c0994fd2",
-          "evidence": [
-            {
-              "source_id": "rn-portaria-11123-2025",
-              "page": 21,
-              "printed_page": "21",
-              "section": "Portaria-SEI11123/2025 / artigo-1",
-              "excerpt": "Art. 1º Homologar o Parecer nº 160/2025 - CEB/CEE-RN.",
-              "bbox": [
-                28,
-                560,
-                395,
-                800
-              ],
-              "locator": "norma:portaria11123/artigo-1",
-              "method": "independent_native_region_and_original_line_partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:rn-portaria-11123-2025:section:artigo-2",
-          "text_sha256": "f317f43810fbd8aee71e86639480a0ece04e01f0a613d46687b38d8273a33a0b",
-          "evidence": [
-            {
-              "source_id": "rn-portaria-11123-2025",
-              "page": 21,
-              "printed_page": "21",
-              "section": "Portaria-SEI11123/2025 / artigo-2",
-              "excerpt": "Art. 2º Esta Portaria entra em vigor na data de sua publicação, revogadas as disposições em contrário.",
-              "bbox": [
-                28,
-                560,
-                395,
-                800
-              ],
-              "locator": "norma:portaria11123/artigo-2",
-              "method": "independent_native_region_and_original_line_partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:rn-portaria-11123-2025:section:publicacao",
-          "text_sha256": "16497ebe22cf88650f11778e93d3c8a9b2beba7228c97631eda4196599d7fc55",
-          "evidence": [
-            {
-              "source_id": "rn-portaria-11123-2025",
-              "page": 21,
-              "printed_page": "21",
-              "section": "Portaria-SEI11123/2025 / publicacao",
-              "excerpt": "Publique-se. Registre-se. Cumpra-se.",
-              "bbox": [
-                28,
-                560,
-                395,
-                800
-              ],
-              "locator": "norma:portaria11123/publicacao",
-              "method": "independent_native_region_and_original_line_partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:rn-portaria-11123-2025:section:assinatura",
-          "text_sha256": "8f186c6438425957f6c3a0e95c898c1f33827b919bed062d9b4a2e1373a33abc",
-          "evidence": [
-            {
-              "source_id": "rn-portaria-11123-2025",
-              "page": 21,
-              "printed_page": "21",
-              "section": "Portaria-SEI11123/2025 / assinatura",
-              "excerpt": "Maria do Socorro da Silva Batista\nSecretária de Estado da Educação, do Esporte e do Lazer",
-              "bbox": [
-                28,
-                560,
-                395,
-                800
-              ],
-              "locator": "norma:portaria11123/assinatura",
-              "method": "independent_native_region_and_original_line_partition"
-            }
-          ]
-        }
-      ],
-      "findings": []
+      ]
     }
   ],
-  "verification_evidence": "docs/evidence/source-audit-northeast/rn-portaria11123-verification.json",
+  "pedagogical_review_status": "not_reviewed",
+  "pending_parts": [],
   "prior_extraction_revisions": [
     "page-cell-v1.4.0"
   ],
-  "latest_runtime_verification": {
-    "path": "docs/evidence/source-audit-northeast/runtime-v150/rn-portaria-11123-2025.json",
-    "sha256": "5e6e37c835d7097259dc3034a3fa31d46aa504950d0d7a2f743d23932cb5f2f6",
-    "extraction_revision": "page-cell-v1.5.0",
-    "cache_sha256": "d4af118b2428b110733ea62362f9f952aab5eca613211967ea59a63642f54c96",
-    "source_config_sha256": "6d15dd1468aca97f5539b4ad098a6869c24f28500c45efc76808570d6462bcdc",
-    "status": "passed"
-  },
   "reconciliation_scope": "whole_source",
-  "findings": [],
-  "pending_parts": [],
-  "document_inventory": {
-    "basis": "primary_document_review",
-    "method": "Explicit source-derived documentary units and denominators, covering every declared source page and actual record exactly once; own-source and required-related-source gates remain separate.",
-    "evidence": [
-      {
-        "page": 21,
-        "section": "Portaria-SEI11123/2025",
-        "excerpt": "Art. 1º Homologar o Parecer nº 160/2025 - CEB/CEE-RN.",
-        "verification": "Homologação literal e escopo de educação básica, sem atribuir adoção universal municipal; região conserva integral ato e exclui matérias adjacentes.",
-        "source_id": "rn-portaria-11123-2025"
-      }
+  "reconciliation_status": "automated_own_source_documentary_reconciled_v2",
+  "reviewed_at": "2026-10-28T18:33:22.194529+00:00",
+  "runtime_refresh": {
+    "actor_id": "local-venv-cache-refresh-2026-11-01",
+    "actor_type": "automated",
+    "current_cache_sha256": "f4e21b408d55e0404353d8597291a3c710808708b641098bd85d335eef5f99bc",
+    "method": "Forced extraction in the pinned local venv; accepted only after exact item payloads (excluding event timestamps), page text, and active-publication source reconciliation matched.",
+    "page_text_unchanged": true,
+    "previous_cache_sha256": "d4af118b2428b110733ea62362f9f952aab5eca613211967ea59a63642f54c96",
+    "refreshed_at": "2026-11-01T03:49:33.699938+00:00",
+    "semantic_items_unchanged": true,
+    "source_gate_issues": [
+      "related_document:Parecer160/2025 CEB/CEE-RN homologado: identidade integral do DCEC aprovado ainda não confrontada:explicit_source_hash_or_declaration_evidence_missing"
     ],
-    "required_parts": [
-      "Portaria-SEI11123/2025 integral"
-    ],
-    "source_scope_sha256": "40353c3b739e76af3e6f0af6cc829ca2e0ca4fb7fb773d2a248a054684a06722",
-    "units": [
-      {
-        "unit_id": "rn-portaria-11123-2025:documentary-unit:1",
-        "part": "Portaria-SEI11123/2025 integral",
-        "role": "normative",
-        "page_ranges": [
-          [
-            21,
-            21
-          ]
-        ],
-        "expected_record_count": 12,
-        "method": "Independent complete visual/native region reading, explicit headings/5considerandos/2articles and once-only original-line partition. No expectedIDs copied from extraction outputs.",
-        "evidence": [
-          {
-            "page": 21,
-            "section": "Portaria-SEI11123/2025",
-            "excerpt": "Art. 1º Homologar o Parecer nº 160/2025 - CEB/CEE-RN.",
-            "verification": "Homologação literal e escopo de educação básica, sem atribuir adoção universal municipal; região conserva integral ato e exclui matérias adjacentes.",
-            "source_id": "rn-portaria-11123-2025"
-          }
-        ],
-        "denominator": {
-          "basis": "primary_document_review",
-          "unit": "documentary_records",
-          "expected_count": 12,
-          "method": "Independent complete visual/native region reading, explicit headings/5considerandos/2articles and once-only original-line partition. No expectedIDs copied from extraction outputs.",
-          "evidence": [
-            {
-              "page": 21,
-              "section": "Portaria-SEI11123/2025",
-              "excerpt": "Art. 1º Homologar o Parecer nº 160/2025 - CEB/CEE-RN.",
-              "verification": "Homologação literal e escopo de educação básica, sem atribuir adoção universal municipal; região conserva integral ato e exclui matérias adjacentes.",
-              "source_id": "rn-portaria-11123-2025"
-            }
-          ],
-          "source_inventory_path": "docs/evidence/source-audit-northeast/rn-portaria11123-inventory.json",
-          "source_inventory_sha256": "ed9ed9ea76b1a462ca9714507721ffce591b46f33007feeb775948584536aa06"
-        },
-        "item_checks": [
-          {
-            "item_id": "ca:rn-portaria-11123-2025:section:ato",
-            "text_sha256": "348beea835bdcb379b90c7d5bd6676dc44382253c61d6e821b5f8ba12df3039a",
-            "evidence": [
-              {
-                "source_id": "rn-portaria-11123-2025",
-                "page": 21,
-                "printed_page": "21",
-                "section": "Portaria-SEI11123/2025 / ato",
-                "excerpt": "Portaria-SEI Nº 11123, de 12 de dezembro de 2025.",
-                "bbox": [
-                  28,
-                  560,
-                  395,
-                  800
-                ],
-                "locator": "norma:portaria11123/ato",
-                "method": "independent_native_region_and_original_line_partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:rn-portaria-11123-2025:section:preambulo",
-            "text_sha256": "7eeb91ff098cd027fbff091e66513ab6dfeefd58d71bb084c13683587091bc75",
-            "evidence": [
-              {
-                "source_id": "rn-portaria-11123-2025",
-                "page": 21,
-                "printed_page": "21",
-                "section": "Portaria-SEI11123/2025 / preambulo",
-                "excerpt": "A SECRETÁRIA DE ESTADO DA EDUCAÇÃO, DO ESPORTE E DO LAZER DO RIO GRANDE DO NOR­\nTE, no uso de suas atribuições e,",
-                "bbox": [
-                  28,
-                  560,
-                  395,
-                  800
-                ],
-                "locator": "norma:portaria11123/preambulo",
-                "method": "independent_native_region_and_original_line_partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:rn-portaria-11123-2025:section:considerando-1",
-            "text_sha256": "37b573dda2284588c93f2c19dd6dee6aeb0563d07d09b008457ead9267392b5d",
-            "evidence": [
-              {
-                "source_id": "rn-portaria-11123-2025",
-                "page": 21,
-                "printed_page": "21",
-                "section": "Portaria-SEI11123/2025 / considerando-1",
-                "excerpt": "Considerando o que consta no Processo SEI nº 00410019.001583/2025-95 SEEC/RN;",
-                "bbox": [
-                  28,
-                  560,
-                  395,
-                  800
-                ],
-                "locator": "norma:portaria11123/considerando-1",
-                "method": "independent_native_region_and_original_line_partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:rn-portaria-11123-2025:section:considerando-2",
-            "text_sha256": "fb73cec030f599208fb6b993fce5dbf43113c2dcdcd2861fca20f52bf6303a6f",
-            "evidence": [
-              {
-                "source_id": "rn-portaria-11123-2025",
-                "page": 21,
-                "printed_page": "21",
-                "section": "Portaria-SEI11123/2025 / considerando-2",
-                "excerpt": "Considerando o pedido quanto às Diretrizes Curriculares do Ensino de Computação na Educação Básica do Rio\nGrande do Norte (DCEC);",
-                "bbox": [
-                  28,
-                  560,
-                  395,
-                  800
-                ],
-                "locator": "norma:portaria11123/considerando-2",
-                "method": "independent_native_region_and_original_line_partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:rn-portaria-11123-2025:section:considerando-3",
-            "text_sha256": "3fc42cb08a79ee7919a060e1f60da24c005906733052d7a97a0a69554f467283",
-            "evidence": [
-              {
-                "source_id": "rn-portaria-11123-2025",
-                "page": 21,
-                "printed_page": "21",
-                "section": "Portaria-SEI11123/2025 / considerando-3",
-                "excerpt": "Considerando os votos dos Conselheiros no Parecer nº 160/2025, em 26 de novembro de 2025, que se posicio­\nnam “FAVORAVELMENTE à APROVAÇÃO das Diretrizes Curriculares do Ensino de Computação na Educação\nBásica do Rio Grande do Norte (DCEC), destacando sua relevância para a formação integral e tecnológica dos\nestudantes da Educação Básica no Estado. A fim de reforçar a reflexão pedagógica e a discussão qualificada sobre\na gestão do ensino, recomenda-se que a adesão às Diretrizes Curriculares do Ensino de Computação na Educação\nBásica do Rio Grande do Norte (DCEC), tanto nos municípios que constituem Sistema como naqueles que não\nconstituem, mas que dispõem de Conselho Municipal de Educação, seja formalizada com a anuência desse Órgão”;",
-                "bbox": [
-                  28,
-                  560,
-                  395,
-                  800
-                ],
-                "locator": "norma:portaria11123/considerando-3",
-                "method": "independent_native_region_and_original_line_partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:rn-portaria-11123-2025:section:considerando-4",
-            "text_sha256": "413bc3b70daf7b768adcfe99eb5b7fca3f5048d767254fc72d9fb64d4bef91fd",
-            "evidence": [
-              {
-                "source_id": "rn-portaria-11123-2025",
-                "page": 21,
-                "printed_page": "21",
-                "section": "Portaria-SEI11123/2025 / considerando-4",
-                "excerpt": "Considerando que a Câmara de Educação Básica (CEB), reunida em 26 de novembro de 2025, aprovou por unani­\nmidade, o Parecer nº 160/2025, nos termos dos votos dos Conselheiros;",
-                "bbox": [
-                  28,
-                  560,
-                  395,
-                  800
-                ],
-                "locator": "norma:portaria11123/considerando-4",
-                "method": "independent_native_region_and_original_line_partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:rn-portaria-11123-2025:section:considerando-5",
-            "text_sha256": "8220ad164ed8ed950529bd210ea3f78798e8280b60e5f57bcbf2566a0c331061",
-            "evidence": [
-              {
-                "source_id": "rn-portaria-11123-2025",
-                "page": 21,
-                "printed_page": "21",
-                "section": "Portaria-SEI11123/2025 / considerando-5",
-                "excerpt": "Considerando a decisão do Conselho Estadual de Educação (CEE), reunido em Sessão Plena, em 03 de dezembro\nde 2025, que acolheu o Parecer nº 160/2025 - originário da Câmara de Educação Básica, deliberou por unanimida­\nde, aprovar a conclusão apresentada e tomada nos termos dos votos dos Conselheiros.",
-                "bbox": [
-                  28,
-                  560,
-                  395,
-                  800
-                ],
-                "locator": "norma:portaria11123/considerando-5",
-                "method": "independent_native_region_and_original_line_partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:rn-portaria-11123-2025:section:resolve",
-            "text_sha256": "22158f36212aecb73e3fb2f2ccb7f87aca7424b5815b862eb775aaba51c785b8",
-            "evidence": [
-              {
-                "source_id": "rn-portaria-11123-2025",
-                "page": 21,
-                "printed_page": "21",
-                "section": "Portaria-SEI11123/2025 / resolve",
-                "excerpt": "RESOLVE:",
-                "bbox": [
-                  28,
-                  560,
-                  395,
-                  800
-                ],
-                "locator": "norma:portaria11123/resolve",
-                "method": "independent_native_region_and_original_line_partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:rn-portaria-11123-2025:section:artigo-1",
-            "text_sha256": "a2dd2b6b93d4c15b24737df2582333074a48794b0f89e24afc031311c0994fd2",
-            "evidence": [
-              {
-                "source_id": "rn-portaria-11123-2025",
-                "page": 21,
-                "printed_page": "21",
-                "section": "Portaria-SEI11123/2025 / artigo-1",
-                "excerpt": "Art. 1º Homologar o Parecer nº 160/2025 - CEB/CEE-RN.",
-                "bbox": [
-                  28,
-                  560,
-                  395,
-                  800
-                ],
-                "locator": "norma:portaria11123/artigo-1",
-                "method": "independent_native_region_and_original_line_partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:rn-portaria-11123-2025:section:artigo-2",
-            "text_sha256": "f317f43810fbd8aee71e86639480a0ece04e01f0a613d46687b38d8273a33a0b",
-            "evidence": [
-              {
-                "source_id": "rn-portaria-11123-2025",
-                "page": 21,
-                "printed_page": "21",
-                "section": "Portaria-SEI11123/2025 / artigo-2",
-                "excerpt": "Art. 2º Esta Portaria entra em vigor na data de sua publicação, revogadas as disposições em contrário.",
-                "bbox": [
-                  28,
-                  560,
-                  395,
-                  800
-                ],
-                "locator": "norma:portaria11123/artigo-2",
-                "method": "independent_native_region_and_original_line_partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:rn-portaria-11123-2025:section:publicacao",
-            "text_sha256": "16497ebe22cf88650f11778e93d3c8a9b2beba7228c97631eda4196599d7fc55",
-            "evidence": [
-              {
-                "source_id": "rn-portaria-11123-2025",
-                "page": 21,
-                "printed_page": "21",
-                "section": "Portaria-SEI11123/2025 / publicacao",
-                "excerpt": "Publique-se. Registre-se. Cumpra-se.",
-                "bbox": [
-                  28,
-                  560,
-                  395,
-                  800
-                ],
-                "locator": "norma:portaria11123/publicacao",
-                "method": "independent_native_region_and_original_line_partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:rn-portaria-11123-2025:section:assinatura",
-            "text_sha256": "8f186c6438425957f6c3a0e95c898c1f33827b919bed062d9b4a2e1373a33abc",
-            "evidence": [
-              {
-                "source_id": "rn-portaria-11123-2025",
-                "page": 21,
-                "printed_page": "21",
-                "section": "Portaria-SEI11123/2025 / assinatura",
-                "excerpt": "Maria do Socorro da Silva Batista\nSecretária de Estado da Educação, do Esporte e do Lazer",
-                "bbox": [
-                  28,
-                  560,
-                  395,
-                  800
-                ],
-                "locator": "norma:portaria11123/assinatura",
-                "method": "independent_native_region_and_original_line_partition"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "source_gate_revalidated": true
   },
+  "source_id": "rn-portaria-11123-2025",
   "v2_current_runtime_verification": {
-    "path": "data/extracted/8e8a23b5e500d1ac4aae981c64bd2b6ec8f20e939f4b260701741e90ae5af8b9-page-cell-v1.5.0.json",
-    "sha256": "d4af118b2428b110733ea62362f9f952aab5eca613211967ea59a63642f54c96",
-    "extraction_config_sha256": "6d15dd1468aca97f5539b4ad098a6869c24f28500c45efc76808570d6462bcdc",
+    "cache_path": "data/extracted/8e8a23b5e500d1ac4aae981c64bd2b6ec8f20e939f4b260701741e90ae5af8b9-page-cell-v1.5.0.json",
+    "cache_sha256": "f4e21b408d55e0404353d8597291a3c710808708b641098bd85d335eef5f99bc",
+    "extraction_config_sha256": "477b804833774c4bf32adf3b6e845eda8a9aff3d532a329a319b6aa4eb7b0cb9",
     "extraction_revision": "page-cell-v1.5.0",
     "parser_fingerprint": {
       "algorithm": "sha256-of-sorted-parser-file-digests",
       "files": {
         "document_roles.py": "ea4e0b161d015f6e87e4fa2b7dde202e1605815efff1e6ec48adf137f311a20f",
         "geometry.py": "f0f2f7230602a051712fd116bce3c9d62bcb3e316d07412f8ed7ff3cda37467d",
-        "ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+        "ingest.py": "78e9c44bec289453a81b0513a65bfd4665bf0304bd307466902416b8840d20da",
         "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
         "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
         "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
         "runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce"
       },
-      "sha256": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+      "sha256": "64de1291c5a58d4b5705c3580ef061c8a153c16fb4447ecec61552e04f8b3f9f"
     },
+    "path": "data/extracted/8e8a23b5e500d1ac4aae981c64bd2b6ec8f20e939f4b260701741e90ae5af8b9-page-cell-v1.5.0.json",
     "runtime": {
       "implementation": "CPython",
       "pillow": "13.0.0",
       "pymupdf": "1.26.7",
       "python": "3.11.15"
-    }
+    },
+    "sha256": "f4e21b408d55e0404353d8597291a3c710808708b641098bd85d335eef5f99bc"
   },
   "v2_gate_result": {
+    "accounted_item_count": 12,
+    "actual_item_count": 12,
     "gate_version": "reconciliation-gate/2.0",
+    "issues": [
+      "related_document:Parecer160/2025 CEB/CEE-RN homologado: identidade integral do DCEC aprovado ainda não confrontada:explicit_source_hash_or_declaration_evidence_missing"
+    ],
     "own_source_reconciled": true,
-    "whole_source_reconciled": false,
     "required_related_documents": [
       {
-        "title": "Parecer160/2025 CEB/CEE-RN homologado: identidade integral do DCEC aprovado ainda não confrontada",
-        "related_source_id": null,
         "artifact_sha256": null,
         "evidence": [
           {
-            "source_id": "rn-portaria-11123-2025",
-            "page": 21,
-            "printed_page": "21",
-            "section": "Portaria-SEI11123/2025 / artigo-1",
-            "excerpt": "Art. 1º Homologar o Parecer nº 160/2025 - CEB/CEE-RN.",
             "bbox": [
               28,
               560,
               395,
               800
             ],
+            "excerpt": "Art. 1º Homologar o Parecer nº 160/2025 - CEB/CEE-RN.",
             "locator": "norma:portaria11123/artigo-1",
-            "method": "independent_native_region_and_original_line_partition"
+            "method": "independent_native_region_and_original_line_partition",
+            "page": 21,
+            "printed_page": "21",
+            "section": "Portaria-SEI11123/2025 / artigo-1",
+            "source_id": "rn-portaria-11123-2025"
           }
-        ]
+        ],
+        "related_source_id": null,
+        "title": "Parecer160/2025 CEB/CEE-RN homologado: identidade integral do DCEC aprovado ainda não confrontada"
       }
     ],
-    "issues": [
-      "related_document:Parecer160/2025 CEB/CEE-RN homologado: identidade integral do DCEC aprovado ainda não confrontada:explicit_source_hash_or_declaration_evidence_missing"
-    ],
-    "actual_item_count": 12,
-    "accounted_item_count": 12
+    "whole_source_reconciled": false
   },
-  "limits": [
-    "V2 own-source proof does not establish missing related artifacts, UF completeness, actual public production incorporation or human pedagogical review."
-  ]
+  "verification_evidence": "docs/evidence/source-audit-northeast/rn-portaria11123-verification.json"
 }

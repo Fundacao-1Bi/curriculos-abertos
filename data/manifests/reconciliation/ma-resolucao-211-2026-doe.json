@@ -1,17 +1,641 @@
 {
-  "source_id": "ma-resolucao-211-2026-doe",
-  "artifact_sha256": "5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3",
-  "extraction_revision": "page-cell-v1.5.0",
-  "actor_type": "automated",
   "actor_id": "codex:data_northeast:documentary_gate_v2",
-  "reviewed_at": "2026-10-28T18:33:23.202513+00:00",
-  "method": "Independent primary-document census and structural keys, all selected source lines/glyphs accounted, secondary source review where recorded, complete current frozen-runtime generic+adapter finalization, literal evidence/schema/parent checks. No pedagogical human review.",
-  "reconciliation_status": "automated_own_source_documentary_reconciled_v2",
+  "actor_type": "automated",
+  "artifact_sha256": "5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3",
+  "document_inventory": {
+    "basis": "primary_document_review",
+    "evidence": [
+      {
+        "bbox": [
+          306.1416931152344,
+          671.1541748046875,
+          556.4277954101562,
+          726.6212158203125
+        ],
+        "excerpt": "Art. 1º Aprovar o Documento Curricular do Território Ma­ ranhense (DCTMA) – Educação Digital e Midiática, elaborado pela Secretaria de Estado da Educação do Maranhão (SEDUC/MA), como documento normativo complementar para a Educação Básica no âm­ bito do Sistema Estadual de Ensino do Maranhão.",
+        "page": 20,
+        "section": "article-1",
+        "source_id": "ma-resolucao-211-2026-doe",
+        "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation."
+      },
+      {
+        "bbox": [
+          41.10240173339844,
+          434.6373291015625,
+          291.40130615234375,
+          481.10430908203125
+        ],
+        "excerpt": "Art. 5º Este Conselho Estadual de Educação emitirá, em ato normativo posterior, as diretrizes operacionais complementares relativas aos prazos de transição, formação docente, governança e salvaguardas de proteção à infância no ambiente digital.",
+        "page": 21,
+        "section": "article-5",
+        "source_id": "ma-resolucao-211-2026-doe",
+        "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation."
+      },
+      {
+        "bbox": [
+          41.10240173339844,
+          491.6373291015625,
+          289.1338195800781,
+          515.3043212890625
+        ],
+        "excerpt": "Art. 6ºEsta Resolução entra em vigor na data de sua pu­ blicação.",
+        "page": 21,
+        "section": "article-6",
+        "source_id": "ma-resolucao-211-2026-doe",
+        "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation."
+      }
+    ],
+    "method": "Explicit source-derived documentary units and denominators, covering every declared source page and actual record exactly once; own-source and required-related-source gates remain separate.",
+    "required_parts": [
+      "Resolução211/2026: ementa, preâmbulo, oito considerandos, seis artigos e assinaturas"
+    ],
+    "source_scope_sha256": "cb99081540c6cd599a2c30970fd27aebbea08ea8a2bc4aa7e86e609e7ff95957",
+    "units": [
+      {
+        "denominator": {
+          "basis": "primary_document_review",
+          "evidence": [
+            {
+              "bbox": [
+                306.1416931152344,
+                671.1541748046875,
+                556.4277954101562,
+                726.6212158203125
+              ],
+              "excerpt": "Art. 1º Aprovar o Documento Curricular do Território Ma­ ranhense (DCTMA) – Educação Digital e Midiática, elaborado pela Secretaria de Estado da Educação do Maranhão (SEDUC/MA), como documento normativo complementar para a Educação Básica no âm­ bito do Sistema Estadual de Ensino do Maranhão.",
+              "page": 20,
+              "section": "article-1",
+              "source_id": "ma-resolucao-211-2026-doe",
+              "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation."
+            },
+            {
+              "bbox": [
+                41.10240173339844,
+                434.6373291015625,
+                291.40130615234375,
+                481.10430908203125
+              ],
+              "excerpt": "Art. 5º Este Conselho Estadual de Educação emitirá, em ato normativo posterior, as diretrizes operacionais complementares relativas aos prazos de transição, formação docente, governança e salvaguardas de proteção à infância no ambiente digital.",
+              "page": 21,
+              "section": "article-5",
+              "source_id": "ma-resolucao-211-2026-doe",
+              "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation."
+            },
+            {
+              "bbox": [
+                41.10240173339844,
+                491.6373291015625,
+                289.1338195800781,
+                515.3043212890625
+              ],
+              "excerpt": "Art. 6ºEsta Resolução entra em vigor na data de sua pu­ blicação.",
+              "page": 21,
+              "section": "article-6",
+              "source_id": "ma-resolucao-211-2026-doe",
+              "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation."
+            }
+          ],
+          "expected_count": 19,
+          "method": "Independent original-region census and fixed structural keys: articles/considerandos/chapters/annex sections, full once-only source-line partition and secondary peer. Not keys collected from generic extractor output.",
+          "source_inventory_path": "docs/evidence/source-audit-ma-current/ma-normative-source-census.json",
+          "source_inventory_sha256": "b565fb10c1fdf41f780f7b16033fc182d282778fff9f6fdc3db35ce5174f97f8",
+          "unit": "documentary_records"
+        },
+        "evidence": [
+          {
+            "bbox": [
+              306.1416931152344,
+              671.1541748046875,
+              556.4277954101562,
+              726.6212158203125
+            ],
+            "excerpt": "Art. 1º Aprovar o Documento Curricular do Território Ma­ ranhense (DCTMA) – Educação Digital e Midiática, elaborado pela Secretaria de Estado da Educação do Maranhão (SEDUC/MA), como documento normativo complementar para a Educação Básica no âm­ bito do Sistema Estadual de Ensino do Maranhão.",
+            "page": 20,
+            "section": "article-1",
+            "source_id": "ma-resolucao-211-2026-doe",
+            "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation."
+          },
+          {
+            "bbox": [
+              41.10240173339844,
+              434.6373291015625,
+              291.40130615234375,
+              481.10430908203125
+            ],
+            "excerpt": "Art. 5º Este Conselho Estadual de Educação emitirá, em ato normativo posterior, as diretrizes operacionais complementares relativas aos prazos de transição, formação docente, governança e salvaguardas de proteção à infância no ambiente digital.",
+            "page": 21,
+            "section": "article-5",
+            "source_id": "ma-resolucao-211-2026-doe",
+            "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation."
+          },
+          {
+            "bbox": [
+              41.10240173339844,
+              491.6373291015625,
+              289.1338195800781,
+              515.3043212890625
+            ],
+            "excerpt": "Art. 6ºEsta Resolução entra em vigor na data de sua pu­ blicação.",
+            "page": 21,
+            "section": "article-6",
+            "source_id": "ma-resolucao-211-2026-doe",
+            "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation."
+          }
+        ],
+        "expected_record_count": 19,
+        "item_checks": [
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  306.1416931152344,
+                  153.2982177734375,
+                  547.9033203125,
+                  210.81021118164062
+                ],
+                "excerpt": "SECRETARIA DE ESTADO DA EDUCAÇÃO Conselho Estadual de Educação do Maranhão - CEE/MA RESOLUÇÃO 211/2026 – CEE/MA",
+                "locator": "ma-normative/resolution-211",
+                "method": "document-specific-normative-partition",
+                "page": 20,
+                "printed_page": "20",
+                "section": "resolution-211",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:resolution-211",
+            "text_sha256": "6dca7f9256e41997bbab36d09ebb542acbf967a4cef75d553f168caa453b1b86"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  405.35430908203125,
+                  220.0981903076172,
+                  556.4365234375,
+                  286.22119140625
+                ],
+                "excerpt": "Aprova o Documento Curricular do Terri­ tório Maranhense (DCTMA) – Educação Digital e Midiática, no âmbito do Sistema Estadual de Ensino do Maranhão, estabe­ lece recomendações para sua implemen­ tação e dá outras providências.",
+                "locator": "ma-normative/ementa",
+                "method": "document-specific-normative-partition",
+                "page": 20,
+                "printed_page": "20",
+                "section": "ementa",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:ementa",
+            "text_sha256": "90346bb6c6ee416f8533a8356a4bc84822051ecc5d5d5d246a151738f3648c11"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  306.1416931152344,
+                  295.5542297363281,
+                  556.4710083007812,
+                  350.6212158203125
+                ],
+                "excerpt": "O CONSELHO ESTADUAL DE EDUCAÇÃO DO MA­ RANHÃO, no uso de suas atribuições legais e considerando o Parecer nº 242/2026 – CEE/MA, tendo em vista o constante no Processo nº 2026.110220.17132 – CEE/MA, por unanimidade aprovado em Ses­ são Plenária hoje realizada, e",
+                "locator": "ma-normative/preamble",
+                "method": "document-specific-normative-partition",
+                "page": 20,
+                "printed_page": "20",
+                "section": "preamble",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:preamble",
+            "text_sha256": "f4178409eeb1740e511bbf5762c4a90e370a851d0e71ca1953109eddb29c200c"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  306.1416931152344,
+                  359.2982177734375,
+                  556.4182739257812,
+                  381.82122802734375
+                ],
+                "excerpt": "CONSIDERANDO o disposto no art. 205 da Constituição Federal de 1988;",
+                "locator": "ma-normative/considerando-1",
+                "method": "document-specific-normative-partition",
+                "page": 20,
+                "printed_page": "20",
+                "section": "considerando-1",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-1",
+            "text_sha256": "056a08e9fc2b039f3e0a9db89b70bd3aacc0d621fd175fbaa813027eae3adfb3"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  306.1416931152344,
+                  390.49822998046875,
+                  554.173095703125,
+                  413.0212097167969
+                ],
+                "excerpt": "CONSIDERANDO a Lei Federal nº 9.394, de 20 de dezem­ bro de 1996 (LDB);",
+                "locator": "ma-normative/considerando-2",
+                "method": "document-specific-normative-partition",
+                "page": 20,
+                "printed_page": "20",
+                "section": "considerando-2",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-2",
+            "text_sha256": "8dfbae245c8f0ec2c0f4986b1b87391ac29074ee3652ca009e4066513fbb7a70"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  306.1416931152344,
+                  421.6982421875,
+                  556.4362182617188,
+                  444.2212219238281
+                ],
+                "excerpt": "CONSIDERANDO a Base Nacional Comum Curricular (BNCC) e a BNCC Computação (Resolução CNE/CEB nº 1/2022);",
+                "locator": "ma-normative/considerando-3",
+                "method": "document-specific-normative-partition",
+                "page": 20,
+                "printed_page": "20",
+                "section": "considerando-3",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-3",
+            "text_sha256": "43684227c80b8800f51353b72e78c93e25748f852c47f32d5ebf49bbbd5be612"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  306.1416931152344,
+                  452.8982238769531,
+                  556.4263916015625,
+                  485.82122802734375
+                ],
+                "excerpt": "CONSIDERANDO a Lei Federal nº 14.533, de 11 de ja­ neiro de 2023, que institui a Política Nacional de Educação Digital (PNED);",
+                "locator": "ma-normative/considerando-4",
+                "method": "document-specific-normative-partition",
+                "page": 20,
+                "printed_page": "20",
+                "section": "considerando-4",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-4",
+            "text_sha256": "6ab761cbfbdc6b95efcf1bf0738e327a855e66740857a7579ee1a948d7eb0437"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  306.1416931152344,
+                  494.49822998046875,
+                  556.429931640625,
+                  517.0211791992188
+                ],
+                "excerpt": "CONSIDERANDO a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD);",
+                "locator": "ma-normative/considerando-5",
+                "method": "document-specific-normative-partition",
+                "page": 20,
+                "printed_page": "20",
+                "section": "considerando-5",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-5",
+            "text_sha256": "bc687d9d5247510be83382504fb88fe5218e040cdd224a4d64a054eb637a1c72"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  306.1416931152344,
+                  525.6982421875,
+                  556.4244384765625,
+                  558.6212158203125
+                ],
+                "excerpt": "CONSIDERANDO as Diretrizes Operacionais para a Educação Digital e Midiática fixadas pela Resolução CNE/CEB nº 2/2025;",
+                "locator": "ma-normative/considerando-6",
+                "method": "document-specific-normative-partition",
+                "page": 20,
+                "printed_page": "20",
+                "section": "considerando-6",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-6",
+            "text_sha256": "c8b76d0c56c356f412cb06064e8f367490520026c71a458e4809957dc4c7a5e5"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  306.1416931152344,
+                  567.2982177734375,
+                  554.173095703125,
+                  610.6212158203125
+                ],
+                "excerpt": "CONSIDERANDO que o Documento Curricular do Terri­ tório Maranhense (DCTMA) – Educação Digital e Midiática apresen­ ta coerência teórico-metodológica e organização curricular compatí­ vel com as diretrizes e normas nacionais vigentes;",
+                "locator": "ma-normative/considerando-7",
+                "method": "document-specific-normative-partition",
+                "page": 20,
+                "printed_page": "20",
+                "section": "considerando-7",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-7",
+            "text_sha256": "7517b061dc3a45e42a98280509ab306163f3f3b60c9841f98dbea0343b3bf1cb"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  306.1416931152344,
+                  619.2982177734375,
+                  556.431640625,
+                  641.8212280273438
+                ],
+                "excerpt": "CONSIDERANDO o teor do Processo nº 2026.110220.17132 – CEE/MA,",
+                "locator": "ma-normative/considerando-8",
+                "method": "document-specific-normative-partition",
+                "page": 20,
+                "printed_page": "20",
+                "section": "considerando-8",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-8",
+            "text_sha256": "12ec708d9d568ef0548d32390323a68fdc341ff0d1dd15bf0322fa8b4a0c5f1f"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  407.565185546875,
+                  650.3541870117188,
+                  452.74969482421875,
+                  662.8102416992188
+                ],
+                "excerpt": "RESOLVE:",
+                "locator": "ma-normative/resolve",
+                "method": "document-specific-normative-partition",
+                "page": 20,
+                "printed_page": "20",
+                "section": "resolve",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:resolve",
+            "text_sha256": "22158f36212aecb73e3fb2f2ccb7f87aca7424b5815b862eb775aaba51c785b8"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  306.1416931152344,
+                  671.1541748046875,
+                  556.4277954101562,
+                  726.6212158203125
+                ],
+                "excerpt": "Art. 1º Aprovar o Documento Curricular do Território Ma­ ranhense (DCTMA) – Educação Digital e Midiática, elaborado pela Secretaria de Estado da Educação do Maranhão (SEDUC/MA), como documento normativo complementar para a Educação Básica no âm­ bito do Sistema Estadual de Ensino do Maranhão.",
+                "locator": "ma-normative/article-1",
+                "method": "document-specific-normative-partition",
+                "page": 20,
+                "printed_page": "20",
+                "section": "article-1",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:article-1",
+            "text_sha256": "e526f6a77c914c67b2371da0e23b4e1b536150f34b1d4b0c4deb26ae66b0d8f7"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  306.1416931152344,
+                  735.9541625976562,
+                  556.4381713867188,
+                  791.4212036132812
+                ],
+                "excerpt": "Art. 2º A implementação do DCTMA – Educação Digital e Midiática orientar-se-á pelos eixos estruturantes do Pensamento Computacional, Mundo Digital e Cultura Digital, em articulação transversal com os componentes curriculares da Educação Básica e com observância às etapas e modalidades de ensino.",
+                "locator": "ma-normative/article-2",
+                "method": "document-specific-normative-partition",
+                "page": 20,
+                "printed_page": "20",
+                "section": "article-2",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:article-2",
+            "text_sha256": "fb94f84812bfd10a87b32e50ac001b77120f1b5f52d2fa5848a81d1b6bb8ba5f"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  41.10240173339844,
+                  70.43728637695312,
+                  291.3942565917969,
+                  116.30419921875
+                ],
+                "excerpt": "Art. 3º As redes de ensino e instituições escolares integran­ tes do Sistema Estadual de Ensino do Maranhão deverão promover a adequação progressiva de suas Propostas Pedagógicas e Regimentos Escolares às diretrizes estabelecidas no documento ora aprovado.",
+                "locator": "ma-normative/article-3",
+                "method": "document-specific-normative-partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "article-3",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:article-3",
+            "text_sha256": "c6a9aa2120ce613b4949f43837610d7b38d111104d90911b0e613e80c970f12f"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  41.10240173339844,
+                  126.83731079101562,
+                  291.4005126953125,
+                  424.10430908203125
+                ],
+                "excerpt": "Art. 4º Para assegurar a efetividade, a qualidade técnica e a equidade na implementação do DCTMA – Educação Digital e Midiá­ tica, este Conselho estabelece as seguintes RECOMENDAÇÕES aos sistemas e redes de ensino: I – Política Permanente de Formação Docente: fortaleci­ mento e institucionalização de programas de formação continuada focados nos Saberes Digitais Docentes (com base nas Dimensões D_1 Ensino e Aprendizagem, D_2 Cidadania Digital e D_3 Desen­ volvimento Profissional); II – Infraestrutura e Equidade: garantia contínua de suporte técnico, conectividade pedagógica e distribuição equitativa de equi­ pamentos para as unidades escolares, priorizando a redução das desi­ gualdades territoriais e digitais no estado; III – Monitoramento e Avaliação: estabelecimento de uma rotina de monitoramento e avaliação bienal do processo de imple­ mentação curricular e do desenvolvimento de competências digitais dos estudantes; IV – Grupos de Trabalho (GTs): criação, no âmbito dos municípios, de Grupos de Trabalho dedicados a acompanhar a exe­ cução local, visando garantir a legitimidade, a qualidade técnica e a aplicabilidade das Diretrizes Curriculares de Educação Digital do Maranhão às suas realidades estruturais.",
+                "locator": "ma-normative/article-4",
+                "method": "document-specific-normative-partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "article-4",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:article-4",
+            "text_sha256": "4809990ccfcb011a23986201fb9c14e2f206d3f19bc6ce62a8eaeb27409d87fa"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  41.10240173339844,
+                  434.6373291015625,
+                  291.40130615234375,
+                  481.10430908203125
+                ],
+                "excerpt": "Art. 5º Este Conselho Estadual de Educação emitirá, em ato normativo posterior, as diretrizes operacionais complementares relativas aos prazos de transição, formação docente, governança e salvaguardas de proteção à infância no ambiente digital.",
+                "locator": "ma-normative/article-5",
+                "method": "document-specific-normative-partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "article-5",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:article-5",
+            "text_sha256": "89d81181df1aa4311e965e55e6bf2dd3ad937ec58298493e3e3efb3ab6dee400"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  41.10240173339844,
+                  491.6373291015625,
+                  289.1338195800781,
+                  515.3043212890625
+                ],
+                "excerpt": "Art. 6ºEsta Resolução entra em vigor na data de sua pu­ blicação.",
+                "locator": "ma-normative/article-6",
+                "method": "document-specific-normative-partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "article-6",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:article-6",
+            "text_sha256": "98aa445d4db12187fcacad7be2959185960a3f3c3d16e325c2139008882ec0dc"
+          },
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  41.10240173339844,
+                  525.8372802734375,
+                  291.3888244628906,
+                  790.1043090820312
+                ],
+                "excerpt": "SALA DAS SESSÕES PLENÁRIAS DO CONSELHO ESTADUAL DE EDUCAÇÃO DO MARANHÃO, em São Luís (MA), 21 de julho de 2026. Geraldo Castro Sobrinho Presidente CEE/MA Sônia Maria Corrêa Pereira Mugschl Vice-Presidente CEE/MA Adriana Campos Marques Presidente CEB-CEE/MA Fábio Henrique Ramos Braga Presidente CES-CEE/MA Antônio Fernando Jansen Pereira Mitoso Bernardo de Jesus Araújo da Silveira Leite Júnior Elsa Helena Almeida Silva Balluz Isabela Maria Barros Cabral de Lima José de Jesus Pinheiro Carvalho Luzia Maria Muniz Rodrigues de Carvalho Maria Elizabeth Gomes Braga Maria Vitória Bouças Bahia Silva",
+                "locator": "ma-normative/signature",
+                "method": "document-specific-normative-partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "signature",
+                "source_id": "ma-resolucao-211-2026-doe"
+              },
+              {
+                "bbox": [
+                  342.32159423828125,
+                  70.58128356933594,
+                  512.3272094726562,
+                  137.10430908203125
+                ],
+                "excerpt": "Mari-Silva Maia da Silva Márnia Suamy Mendes Pereira Neurimar Almeida Roberto Mauro Gurgel Rocha Soraia Raquel Alves da Silva Virgínia Helena Almeida Silva de Albuquerque",
+                "locator": "ma-normative/signature/page-21/fragment-1",
+                "method": "document-specific-normative-partition",
+                "page": 21,
+                "printed_page": "21",
+                "section": "signature",
+                "source_id": "ma-resolucao-211-2026-doe"
+              }
+            ],
+            "item_id": "ca:ma-resolucao-211-2026-doe:section:signature",
+            "text_sha256": "39e27633457db014f6c5ddb18b5a62251c9a6736b7475534d94ae7f1fc45889d"
+          }
+        ],
+        "method": "Independent original-region census and fixed structural keys: articles/considerandos/chapters/annex sections, full once-only source-line partition and secondary peer. Not keys collected from generic extractor output.",
+        "page_ranges": [
+          [
+            20,
+            21
+          ]
+        ],
+        "part": "Resolução211/2026: ementa, preâmbulo, oito considerandos, seis artigos e assinaturas",
+        "role": "normative",
+        "unit_id": "ma-resolucao-211-2026-doe:documentary-unit:1"
+      }
+    ]
+  },
+  "extraction_revision": "page-cell-v1.5.0",
+  "findings": [],
+  "independent_inventory_path": "docs/evidence/source-audit-ma-current/ma-normative-source-census.json",
+  "independent_inventory_sha256": "b565fb10c1fdf41f780f7b16033fc182d282778fff9f6fdc3db35ce5174f97f8",
   "inventory_complete": true,
-  "pedagogical_review_status": "not_reviewed",
+  "latest_runtime_verification": {
+    "cache_sha256": "fe45346a3c01c537834b292b82c6306adda3150a42791f1e6bc594d266290e75",
+    "extraction_revision": "page-cell-v1.5.0",
+    "path": "docs/evidence/source-audit-northeast/runtime-v150/ma-resolucao-211-2026-doe.json",
+    "sha256": "59e4d11b80cb1e14f4b9b00f87adcf55b30c75735aaaa1f74235efc1aa56313d",
+    "source_config_sha256": "bafc2b9fbe871ffb56a728141cdfaac678d62c67001234f0829da3c4cf9996b9",
+    "status": "passed"
+  },
+  "limits": [
+    "This act/annex only; original diaries outside selected regions excluded.",
+    "Does not acquire the separate DCTMA digital complement or current GPD/matrices.",
+    "No all-MA reconciliation, full candidate incorporation, database import or UF/national readiness claim.",
+    "V2 own-source proof does not establish missing related artifacts, UF completeness, actual public production incorporation or human pedagogical review."
+  ],
+  "literal_fragment_count": 20,
+  "method": "Independent primary-document census and structural keys, all selected source lines/glyphs accounted, secondary source review where recorded, complete current frozen-runtime generic+adapter finalization, literal evidence/schema/parent checks. No pedagogical human review.",
   "parts": [
     {
-      "name": "Resolução211/2026: ementa, preâmbulo, oito considerandos, seis artigos e assinaturas",
+      "evidence": [
+        {
+          "bbox": [
+            306.1416931152344,
+            671.1541748046875,
+            556.4277954101562,
+            726.6212158203125
+          ],
+          "excerpt": "Art. 1º Aprovar o Documento Curricular do Território Ma­ ranhense (DCTMA) – Educação Digital e Midiática, elaborado pela Secretaria de Estado da Educação do Maranhão (SEDUC/MA), como documento normativo complementar para a Educação Básica no âm­ bito do Sistema Estadual de Ensino do Maranhão.",
+          "page": 20,
+          "section": "article-1",
+          "source_id": "ma-resolucao-211-2026-doe",
+          "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation."
+        },
+        {
+          "bbox": [
+            41.10240173339844,
+            434.6373291015625,
+            291.40130615234375,
+            481.10430908203125
+          ],
+          "excerpt": "Art. 5º Este Conselho Estadual de Educação emitirá, em ato normativo posterior, as diretrizes operacionais complementares relativas aos prazos de transição, formação docente, governança e salvaguardas de proteção à infância no ambiente digital.",
+          "page": 21,
+          "section": "article-5",
+          "source_id": "ma-resolucao-211-2026-doe",
+          "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation."
+        },
+        {
+          "bbox": [
+            41.10240173339844,
+            491.6373291015625,
+            289.1338195800781,
+            515.3043212890625
+          ],
+          "excerpt": "Art. 6ºEsta Resolução entra em vigor na data de sua pu­ blicação.",
+          "page": 21,
+          "section": "article-6",
+          "source_id": "ma-resolucao-211-2026-doe",
+          "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation."
+        }
+      ],
       "expected_item_ids": [
         "ca:ma-resolucao-211-2026-doe:section:resolution-211",
         "ca:ma-resolucao-211-2026-doe:section:ementa",
@@ -33,6 +657,424 @@
         "ca:ma-resolucao-211-2026-doe:section:article-6",
         "ca:ma-resolucao-211-2026-doe:section:signature"
       ],
+      "findings": [],
+      "item_checks": [
+        {
+          "evidence": [
+            {
+              "bbox": [
+                306.1416931152344,
+                153.2982177734375,
+                547.9033203125,
+                210.81021118164062
+              ],
+              "excerpt": "SECRETARIA DE ESTADO DA EDUCAÇÃO Conselho Estadual de Educação do Maranhão - CEE/MA RESOLUÇÃO 211/2026 – CEE/MA",
+              "locator": "ma-normative/resolution-211",
+              "method": "document-specific-normative-partition",
+              "page": 20,
+              "printed_page": "20",
+              "section": "resolution-211",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:resolution-211",
+          "text_sha256": "6dca7f9256e41997bbab36d09ebb542acbf967a4cef75d553f168caa453b1b86"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                405.35430908203125,
+                220.0981903076172,
+                556.4365234375,
+                286.22119140625
+              ],
+              "excerpt": "Aprova o Documento Curricular do Terri­ tório Maranhense (DCTMA) – Educação Digital e Midiática, no âmbito do Sistema Estadual de Ensino do Maranhão, estabe­ lece recomendações para sua implemen­ tação e dá outras providências.",
+              "locator": "ma-normative/ementa",
+              "method": "document-specific-normative-partition",
+              "page": 20,
+              "printed_page": "20",
+              "section": "ementa",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:ementa",
+          "text_sha256": "90346bb6c6ee416f8533a8356a4bc84822051ecc5d5d5d246a151738f3648c11"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                306.1416931152344,
+                295.5542297363281,
+                556.4710083007812,
+                350.6212158203125
+              ],
+              "excerpt": "O CONSELHO ESTADUAL DE EDUCAÇÃO DO MA­ RANHÃO, no uso de suas atribuições legais e considerando o Parecer nº 242/2026 – CEE/MA, tendo em vista o constante no Processo nº 2026.110220.17132 – CEE/MA, por unanimidade aprovado em Ses­ são Plenária hoje realizada, e",
+              "locator": "ma-normative/preamble",
+              "method": "document-specific-normative-partition",
+              "page": 20,
+              "printed_page": "20",
+              "section": "preamble",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:preamble",
+          "text_sha256": "f4178409eeb1740e511bbf5762c4a90e370a851d0e71ca1953109eddb29c200c"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                306.1416931152344,
+                359.2982177734375,
+                556.4182739257812,
+                381.82122802734375
+              ],
+              "excerpt": "CONSIDERANDO o disposto no art. 205 da Constituição Federal de 1988;",
+              "locator": "ma-normative/considerando-1",
+              "method": "document-specific-normative-partition",
+              "page": 20,
+              "printed_page": "20",
+              "section": "considerando-1",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-1",
+          "text_sha256": "056a08e9fc2b039f3e0a9db89b70bd3aacc0d621fd175fbaa813027eae3adfb3"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                306.1416931152344,
+                390.49822998046875,
+                554.173095703125,
+                413.0212097167969
+              ],
+              "excerpt": "CONSIDERANDO a Lei Federal nº 9.394, de 20 de dezem­ bro de 1996 (LDB);",
+              "locator": "ma-normative/considerando-2",
+              "method": "document-specific-normative-partition",
+              "page": 20,
+              "printed_page": "20",
+              "section": "considerando-2",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-2",
+          "text_sha256": "8dfbae245c8f0ec2c0f4986b1b87391ac29074ee3652ca009e4066513fbb7a70"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                306.1416931152344,
+                421.6982421875,
+                556.4362182617188,
+                444.2212219238281
+              ],
+              "excerpt": "CONSIDERANDO a Base Nacional Comum Curricular (BNCC) e a BNCC Computação (Resolução CNE/CEB nº 1/2022);",
+              "locator": "ma-normative/considerando-3",
+              "method": "document-specific-normative-partition",
+              "page": 20,
+              "printed_page": "20",
+              "section": "considerando-3",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-3",
+          "text_sha256": "43684227c80b8800f51353b72e78c93e25748f852c47f32d5ebf49bbbd5be612"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                306.1416931152344,
+                452.8982238769531,
+                556.4263916015625,
+                485.82122802734375
+              ],
+              "excerpt": "CONSIDERANDO a Lei Federal nº 14.533, de 11 de ja­ neiro de 2023, que institui a Política Nacional de Educação Digital (PNED);",
+              "locator": "ma-normative/considerando-4",
+              "method": "document-specific-normative-partition",
+              "page": 20,
+              "printed_page": "20",
+              "section": "considerando-4",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-4",
+          "text_sha256": "6ab761cbfbdc6b95efcf1bf0738e327a855e66740857a7579ee1a948d7eb0437"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                306.1416931152344,
+                494.49822998046875,
+                556.429931640625,
+                517.0211791992188
+              ],
+              "excerpt": "CONSIDERANDO a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD);",
+              "locator": "ma-normative/considerando-5",
+              "method": "document-specific-normative-partition",
+              "page": 20,
+              "printed_page": "20",
+              "section": "considerando-5",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-5",
+          "text_sha256": "bc687d9d5247510be83382504fb88fe5218e040cdd224a4d64a054eb637a1c72"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                306.1416931152344,
+                525.6982421875,
+                556.4244384765625,
+                558.6212158203125
+              ],
+              "excerpt": "CONSIDERANDO as Diretrizes Operacionais para a Educação Digital e Midiática fixadas pela Resolução CNE/CEB nº 2/2025;",
+              "locator": "ma-normative/considerando-6",
+              "method": "document-specific-normative-partition",
+              "page": 20,
+              "printed_page": "20",
+              "section": "considerando-6",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-6",
+          "text_sha256": "c8b76d0c56c356f412cb06064e8f367490520026c71a458e4809957dc4c7a5e5"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                306.1416931152344,
+                567.2982177734375,
+                554.173095703125,
+                610.6212158203125
+              ],
+              "excerpt": "CONSIDERANDO que o Documento Curricular do Terri­ tório Maranhense (DCTMA) – Educação Digital e Midiática apresen­ ta coerência teórico-metodológica e organização curricular compatí­ vel com as diretrizes e normas nacionais vigentes;",
+              "locator": "ma-normative/considerando-7",
+              "method": "document-specific-normative-partition",
+              "page": 20,
+              "printed_page": "20",
+              "section": "considerando-7",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-7",
+          "text_sha256": "7517b061dc3a45e42a98280509ab306163f3f3b60c9841f98dbea0343b3bf1cb"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                306.1416931152344,
+                619.2982177734375,
+                556.431640625,
+                641.8212280273438
+              ],
+              "excerpt": "CONSIDERANDO o teor do Processo nº 2026.110220.17132 – CEE/MA,",
+              "locator": "ma-normative/considerando-8",
+              "method": "document-specific-normative-partition",
+              "page": 20,
+              "printed_page": "20",
+              "section": "considerando-8",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-8",
+          "text_sha256": "12ec708d9d568ef0548d32390323a68fdc341ff0d1dd15bf0322fa8b4a0c5f1f"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                407.565185546875,
+                650.3541870117188,
+                452.74969482421875,
+                662.8102416992188
+              ],
+              "excerpt": "RESOLVE:",
+              "locator": "ma-normative/resolve",
+              "method": "document-specific-normative-partition",
+              "page": 20,
+              "printed_page": "20",
+              "section": "resolve",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:resolve",
+          "text_sha256": "22158f36212aecb73e3fb2f2ccb7f87aca7424b5815b862eb775aaba51c785b8"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                306.1416931152344,
+                671.1541748046875,
+                556.4277954101562,
+                726.6212158203125
+              ],
+              "excerpt": "Art. 1º Aprovar o Documento Curricular do Território Ma­ ranhense (DCTMA) – Educação Digital e Midiática, elaborado pela Secretaria de Estado da Educação do Maranhão (SEDUC/MA), como documento normativo complementar para a Educação Básica no âm­ bito do Sistema Estadual de Ensino do Maranhão.",
+              "locator": "ma-normative/article-1",
+              "method": "document-specific-normative-partition",
+              "page": 20,
+              "printed_page": "20",
+              "section": "article-1",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:article-1",
+          "text_sha256": "e526f6a77c914c67b2371da0e23b4e1b536150f34b1d4b0c4deb26ae66b0d8f7"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                306.1416931152344,
+                735.9541625976562,
+                556.4381713867188,
+                791.4212036132812
+              ],
+              "excerpt": "Art. 2º A implementação do DCTMA – Educação Digital e Midiática orientar-se-á pelos eixos estruturantes do Pensamento Computacional, Mundo Digital e Cultura Digital, em articulação transversal com os componentes curriculares da Educação Básica e com observância às etapas e modalidades de ensino.",
+              "locator": "ma-normative/article-2",
+              "method": "document-specific-normative-partition",
+              "page": 20,
+              "printed_page": "20",
+              "section": "article-2",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:article-2",
+          "text_sha256": "fb94f84812bfd10a87b32e50ac001b77120f1b5f52d2fa5848a81d1b6bb8ba5f"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                41.10240173339844,
+                70.43728637695312,
+                291.3942565917969,
+                116.30419921875
+              ],
+              "excerpt": "Art. 3º As redes de ensino e instituições escolares integran­ tes do Sistema Estadual de Ensino do Maranhão deverão promover a adequação progressiva de suas Propostas Pedagógicas e Regimentos Escolares às diretrizes estabelecidas no documento ora aprovado.",
+              "locator": "ma-normative/article-3",
+              "method": "document-specific-normative-partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "article-3",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:article-3",
+          "text_sha256": "c6a9aa2120ce613b4949f43837610d7b38d111104d90911b0e613e80c970f12f"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                41.10240173339844,
+                126.83731079101562,
+                291.4005126953125,
+                424.10430908203125
+              ],
+              "excerpt": "Art. 4º Para assegurar a efetividade, a qualidade técnica e a equidade na implementação do DCTMA – Educação Digital e Midiá­ tica, este Conselho estabelece as seguintes RECOMENDAÇÕES aos sistemas e redes de ensino: I – Política Permanente de Formação Docente: fortaleci­ mento e institucionalização de programas de formação continuada focados nos Saberes Digitais Docentes (com base nas Dimensões D_1 Ensino e Aprendizagem, D_2 Cidadania Digital e D_3 Desen­ volvimento Profissional); II – Infraestrutura e Equidade: garantia contínua de suporte técnico, conectividade pedagógica e distribuição equitativa de equi­ pamentos para as unidades escolares, priorizando a redução das desi­ gualdades territoriais e digitais no estado; III – Monitoramento e Avaliação: estabelecimento de uma rotina de monitoramento e avaliação bienal do processo de imple­ mentação curricular e do desenvolvimento de competências digitais dos estudantes; IV – Grupos de Trabalho (GTs): criação, no âmbito dos municípios, de Grupos de Trabalho dedicados a acompanhar a exe­ cução local, visando garantir a legitimidade, a qualidade técnica e a aplicabilidade das Diretrizes Curriculares de Educação Digital do Maranhão às suas realidades estruturais.",
+              "locator": "ma-normative/article-4",
+              "method": "document-specific-normative-partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "article-4",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:article-4",
+          "text_sha256": "4809990ccfcb011a23986201fb9c14e2f206d3f19bc6ce62a8eaeb27409d87fa"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                41.10240173339844,
+                434.6373291015625,
+                291.40130615234375,
+                481.10430908203125
+              ],
+              "excerpt": "Art. 5º Este Conselho Estadual de Educação emitirá, em ato normativo posterior, as diretrizes operacionais complementares relativas aos prazos de transição, formação docente, governança e salvaguardas de proteção à infância no ambiente digital.",
+              "locator": "ma-normative/article-5",
+              "method": "document-specific-normative-partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "article-5",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:article-5",
+          "text_sha256": "89d81181df1aa4311e965e55e6bf2dd3ad937ec58298493e3e3efb3ab6dee400"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                41.10240173339844,
+                491.6373291015625,
+                289.1338195800781,
+                515.3043212890625
+              ],
+              "excerpt": "Art. 6ºEsta Resolução entra em vigor na data de sua pu­ blicação.",
+              "locator": "ma-normative/article-6",
+              "method": "document-specific-normative-partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "article-6",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:article-6",
+          "text_sha256": "98aa445d4db12187fcacad7be2959185960a3f3c3d16e325c2139008882ec0dc"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                41.10240173339844,
+                525.8372802734375,
+                291.3888244628906,
+                790.1043090820312
+              ],
+              "excerpt": "SALA DAS SESSÕES PLENÁRIAS DO CONSELHO ESTADUAL DE EDUCAÇÃO DO MARANHÃO, em São Luís (MA), 21 de julho de 2026. Geraldo Castro Sobrinho Presidente CEE/MA Sônia Maria Corrêa Pereira Mugschl Vice-Presidente CEE/MA Adriana Campos Marques Presidente CEB-CEE/MA Fábio Henrique Ramos Braga Presidente CES-CEE/MA Antônio Fernando Jansen Pereira Mitoso Bernardo de Jesus Araújo da Silveira Leite Júnior Elsa Helena Almeida Silva Balluz Isabela Maria Barros Cabral de Lima José de Jesus Pinheiro Carvalho Luzia Maria Muniz Rodrigues de Carvalho Maria Elizabeth Gomes Braga Maria Vitória Bouças Bahia Silva",
+              "locator": "ma-normative/signature",
+              "method": "document-specific-normative-partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "signature",
+              "source_id": "ma-resolucao-211-2026-doe"
+            },
+            {
+              "bbox": [
+                342.32159423828125,
+                70.58128356933594,
+                512.3272094726562,
+                137.10430908203125
+              ],
+              "excerpt": "Mari-Silva Maia da Silva Márnia Suamy Mendes Pereira Neurimar Almeida Roberto Mauro Gurgel Rocha Soraia Raquel Alves da Silva Virgínia Helena Almeida Silva de Albuquerque",
+              "locator": "ma-normative/signature/page-21/fragment-1",
+              "method": "document-specific-normative-partition",
+              "page": 21,
+              "printed_page": "21",
+              "section": "signature",
+              "source_id": "ma-resolucao-211-2026-doe"
+            }
+          ],
+          "item_id": "ca:ma-resolucao-211-2026-doe:section:signature",
+          "text_sha256": "39e27633457db014f6c5ddb18b5a62251c9a6736b7475534d94ae7f1fc45889d"
+        }
+      ],
+      "name": "Resolução211/2026: ementa, preâmbulo, oito considerandos, seis artigos e assinaturas",
       "verified_item_ids": [
         "ca:ma-resolucao-211-2026-doe:section:resolution-211",
         "ca:ma-resolucao-211-2026-doe:section:ementa",
@@ -53,1125 +1095,99 @@
         "ca:ma-resolucao-211-2026-doe:section:article-5",
         "ca:ma-resolucao-211-2026-doe:section:article-6",
         "ca:ma-resolucao-211-2026-doe:section:signature"
-      ],
-      "evidence": [
-        {
-          "page": 20,
-          "section": "article-1",
-          "excerpt": "Art. 1º Aprovar o Documento Curricular do Território Ma­ ranhense (DCTMA) – Educação Digital e Midiática, elaborado pela Secretaria de Estado da Educação do Maranhão (SEDUC/MA), como documento normativo complementar para a Educação Básica no âm­ bito do Sistema Estadual de Ensino do Maranhão.",
-          "bbox": [
-            306.1416931152344,
-            671.1541748046875,
-            556.4277954101562,
-            726.6212158203125
-          ],
-          "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation.",
-          "source_id": "ma-resolucao-211-2026-doe"
-        },
-        {
-          "page": 21,
-          "section": "article-5",
-          "excerpt": "Art. 5º Este Conselho Estadual de Educação emitirá, em ato normativo posterior, as diretrizes operacionais complementares relativas aos prazos de transição, formação docente, governança e salvaguardas de proteção à infância no ambiente digital.",
-          "bbox": [
-            41.10240173339844,
-            434.6373291015625,
-            291.40130615234375,
-            481.10430908203125
-          ],
-          "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation.",
-          "source_id": "ma-resolucao-211-2026-doe"
-        },
-        {
-          "page": 21,
-          "section": "article-6",
-          "excerpt": "Art. 6ºEsta Resolução entra em vigor na data de sua pu­ blicação.",
-          "bbox": [
-            41.10240173339844,
-            491.6373291015625,
-            289.1338195800781,
-            515.3043212890625
-          ],
-          "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation.",
-          "source_id": "ma-resolucao-211-2026-doe"
-        }
-      ],
-      "item_checks": [
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:resolution-211",
-          "text_sha256": "6dca7f9256e41997bbab36d09ebb542acbf967a4cef75d553f168caa453b1b86",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 20,
-              "printed_page": "20",
-              "section": "resolution-211",
-              "excerpt": "SECRETARIA DE ESTADO DA EDUCAÇÃO Conselho Estadual de Educação do Maranhão - CEE/MA RESOLUÇÃO 211/2026 – CEE/MA",
-              "bbox": [
-                306.1416931152344,
-                153.2982177734375,
-                547.9033203125,
-                210.81021118164062
-              ],
-              "locator": "ma-normative/resolution-211",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:ementa",
-          "text_sha256": "90346bb6c6ee416f8533a8356a4bc84822051ecc5d5d5d246a151738f3648c11",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 20,
-              "printed_page": "20",
-              "section": "ementa",
-              "excerpt": "Aprova o Documento Curricular do Terri­ tório Maranhense (DCTMA) – Educação Digital e Midiática, no âmbito do Sistema Estadual de Ensino do Maranhão, estabe­ lece recomendações para sua implemen­ tação e dá outras providências.",
-              "bbox": [
-                405.35430908203125,
-                220.0981903076172,
-                556.4365234375,
-                286.22119140625
-              ],
-              "locator": "ma-normative/ementa",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:preamble",
-          "text_sha256": "f4178409eeb1740e511bbf5762c4a90e370a851d0e71ca1953109eddb29c200c",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 20,
-              "printed_page": "20",
-              "section": "preamble",
-              "excerpt": "O CONSELHO ESTADUAL DE EDUCAÇÃO DO MA­ RANHÃO, no uso de suas atribuições legais e considerando o Parecer nº 242/2026 – CEE/MA, tendo em vista o constante no Processo nº 2026.110220.17132 – CEE/MA, por unanimidade aprovado em Ses­ são Plenária hoje realizada, e",
-              "bbox": [
-                306.1416931152344,
-                295.5542297363281,
-                556.4710083007812,
-                350.6212158203125
-              ],
-              "locator": "ma-normative/preamble",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-1",
-          "text_sha256": "056a08e9fc2b039f3e0a9db89b70bd3aacc0d621fd175fbaa813027eae3adfb3",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 20,
-              "printed_page": "20",
-              "section": "considerando-1",
-              "excerpt": "CONSIDERANDO o disposto no art. 205 da Constituição Federal de 1988;",
-              "bbox": [
-                306.1416931152344,
-                359.2982177734375,
-                556.4182739257812,
-                381.82122802734375
-              ],
-              "locator": "ma-normative/considerando-1",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-2",
-          "text_sha256": "8dfbae245c8f0ec2c0f4986b1b87391ac29074ee3652ca009e4066513fbb7a70",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 20,
-              "printed_page": "20",
-              "section": "considerando-2",
-              "excerpt": "CONSIDERANDO a Lei Federal nº 9.394, de 20 de dezem­ bro de 1996 (LDB);",
-              "bbox": [
-                306.1416931152344,
-                390.49822998046875,
-                554.173095703125,
-                413.0212097167969
-              ],
-              "locator": "ma-normative/considerando-2",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-3",
-          "text_sha256": "43684227c80b8800f51353b72e78c93e25748f852c47f32d5ebf49bbbd5be612",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 20,
-              "printed_page": "20",
-              "section": "considerando-3",
-              "excerpt": "CONSIDERANDO a Base Nacional Comum Curricular (BNCC) e a BNCC Computação (Resolução CNE/CEB nº 1/2022);",
-              "bbox": [
-                306.1416931152344,
-                421.6982421875,
-                556.4362182617188,
-                444.2212219238281
-              ],
-              "locator": "ma-normative/considerando-3",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-4",
-          "text_sha256": "6ab761cbfbdc6b95efcf1bf0738e327a855e66740857a7579ee1a948d7eb0437",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 20,
-              "printed_page": "20",
-              "section": "considerando-4",
-              "excerpt": "CONSIDERANDO a Lei Federal nº 14.533, de 11 de ja­ neiro de 2023, que institui a Política Nacional de Educação Digital (PNED);",
-              "bbox": [
-                306.1416931152344,
-                452.8982238769531,
-                556.4263916015625,
-                485.82122802734375
-              ],
-              "locator": "ma-normative/considerando-4",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-5",
-          "text_sha256": "bc687d9d5247510be83382504fb88fe5218e040cdd224a4d64a054eb637a1c72",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 20,
-              "printed_page": "20",
-              "section": "considerando-5",
-              "excerpt": "CONSIDERANDO a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD);",
-              "bbox": [
-                306.1416931152344,
-                494.49822998046875,
-                556.429931640625,
-                517.0211791992188
-              ],
-              "locator": "ma-normative/considerando-5",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-6",
-          "text_sha256": "c8b76d0c56c356f412cb06064e8f367490520026c71a458e4809957dc4c7a5e5",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 20,
-              "printed_page": "20",
-              "section": "considerando-6",
-              "excerpt": "CONSIDERANDO as Diretrizes Operacionais para a Educação Digital e Midiática fixadas pela Resolução CNE/CEB nº 2/2025;",
-              "bbox": [
-                306.1416931152344,
-                525.6982421875,
-                556.4244384765625,
-                558.6212158203125
-              ],
-              "locator": "ma-normative/considerando-6",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-7",
-          "text_sha256": "7517b061dc3a45e42a98280509ab306163f3f3b60c9841f98dbea0343b3bf1cb",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 20,
-              "printed_page": "20",
-              "section": "considerando-7",
-              "excerpt": "CONSIDERANDO que o Documento Curricular do Terri­ tório Maranhense (DCTMA) – Educação Digital e Midiática apresen­ ta coerência teórico-metodológica e organização curricular compatí­ vel com as diretrizes e normas nacionais vigentes;",
-              "bbox": [
-                306.1416931152344,
-                567.2982177734375,
-                554.173095703125,
-                610.6212158203125
-              ],
-              "locator": "ma-normative/considerando-7",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-8",
-          "text_sha256": "12ec708d9d568ef0548d32390323a68fdc341ff0d1dd15bf0322fa8b4a0c5f1f",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 20,
-              "printed_page": "20",
-              "section": "considerando-8",
-              "excerpt": "CONSIDERANDO o teor do Processo nº 2026.110220.17132 – CEE/MA,",
-              "bbox": [
-                306.1416931152344,
-                619.2982177734375,
-                556.431640625,
-                641.8212280273438
-              ],
-              "locator": "ma-normative/considerando-8",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:resolve",
-          "text_sha256": "22158f36212aecb73e3fb2f2ccb7f87aca7424b5815b862eb775aaba51c785b8",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 20,
-              "printed_page": "20",
-              "section": "resolve",
-              "excerpt": "RESOLVE:",
-              "bbox": [
-                407.565185546875,
-                650.3541870117188,
-                452.74969482421875,
-                662.8102416992188
-              ],
-              "locator": "ma-normative/resolve",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:article-1",
-          "text_sha256": "e526f6a77c914c67b2371da0e23b4e1b536150f34b1d4b0c4deb26ae66b0d8f7",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 20,
-              "printed_page": "20",
-              "section": "article-1",
-              "excerpt": "Art. 1º Aprovar o Documento Curricular do Território Ma­ ranhense (DCTMA) – Educação Digital e Midiática, elaborado pela Secretaria de Estado da Educação do Maranhão (SEDUC/MA), como documento normativo complementar para a Educação Básica no âm­ bito do Sistema Estadual de Ensino do Maranhão.",
-              "bbox": [
-                306.1416931152344,
-                671.1541748046875,
-                556.4277954101562,
-                726.6212158203125
-              ],
-              "locator": "ma-normative/article-1",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:article-2",
-          "text_sha256": "fb94f84812bfd10a87b32e50ac001b77120f1b5f52d2fa5848a81d1b6bb8ba5f",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 20,
-              "printed_page": "20",
-              "section": "article-2",
-              "excerpt": "Art. 2º A implementação do DCTMA – Educação Digital e Midiática orientar-se-á pelos eixos estruturantes do Pensamento Computacional, Mundo Digital e Cultura Digital, em articulação transversal com os componentes curriculares da Educação Básica e com observância às etapas e modalidades de ensino.",
-              "bbox": [
-                306.1416931152344,
-                735.9541625976562,
-                556.4381713867188,
-                791.4212036132812
-              ],
-              "locator": "ma-normative/article-2",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:article-3",
-          "text_sha256": "c6a9aa2120ce613b4949f43837610d7b38d111104d90911b0e613e80c970f12f",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 21,
-              "printed_page": "21",
-              "section": "article-3",
-              "excerpt": "Art. 3º As redes de ensino e instituições escolares integran­ tes do Sistema Estadual de Ensino do Maranhão deverão promover a adequação progressiva de suas Propostas Pedagógicas e Regimentos Escolares às diretrizes estabelecidas no documento ora aprovado.",
-              "bbox": [
-                41.10240173339844,
-                70.43728637695312,
-                291.3942565917969,
-                116.30419921875
-              ],
-              "locator": "ma-normative/article-3",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:article-4",
-          "text_sha256": "4809990ccfcb011a23986201fb9c14e2f206d3f19bc6ce62a8eaeb27409d87fa",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 21,
-              "printed_page": "21",
-              "section": "article-4",
-              "excerpt": "Art. 4º Para assegurar a efetividade, a qualidade técnica e a equidade na implementação do DCTMA – Educação Digital e Midiá­ tica, este Conselho estabelece as seguintes RECOMENDAÇÕES aos sistemas e redes de ensino: I – Política Permanente de Formação Docente: fortaleci­ mento e institucionalização de programas de formação continuada focados nos Saberes Digitais Docentes (com base nas Dimensões D_1 Ensino e Aprendizagem, D_2 Cidadania Digital e D_3 Desen­ volvimento Profissional); II – Infraestrutura e Equidade: garantia contínua de suporte técnico, conectividade pedagógica e distribuição equitativa de equi­ pamentos para as unidades escolares, priorizando a redução das desi­ gualdades territoriais e digitais no estado; III – Monitoramento e Avaliação: estabelecimento de uma rotina de monitoramento e avaliação bienal do processo de imple­ mentação curricular e do desenvolvimento de competências digitais dos estudantes; IV – Grupos de Trabalho (GTs): criação, no âmbito dos municípios, de Grupos de Trabalho dedicados a acompanhar a exe­ cução local, visando garantir a legitimidade, a qualidade técnica e a aplicabilidade das Diretrizes Curriculares de Educação Digital do Maranhão às suas realidades estruturais.",
-              "bbox": [
-                41.10240173339844,
-                126.83731079101562,
-                291.4005126953125,
-                424.10430908203125
-              ],
-              "locator": "ma-normative/article-4",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:article-5",
-          "text_sha256": "89d81181df1aa4311e965e55e6bf2dd3ad937ec58298493e3e3efb3ab6dee400",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 21,
-              "printed_page": "21",
-              "section": "article-5",
-              "excerpt": "Art. 5º Este Conselho Estadual de Educação emitirá, em ato normativo posterior, as diretrizes operacionais complementares relativas aos prazos de transição, formação docente, governança e salvaguardas de proteção à infância no ambiente digital.",
-              "bbox": [
-                41.10240173339844,
-                434.6373291015625,
-                291.40130615234375,
-                481.10430908203125
-              ],
-              "locator": "ma-normative/article-5",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:article-6",
-          "text_sha256": "98aa445d4db12187fcacad7be2959185960a3f3c3d16e325c2139008882ec0dc",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 21,
-              "printed_page": "21",
-              "section": "article-6",
-              "excerpt": "Art. 6ºEsta Resolução entra em vigor na data de sua pu­ blicação.",
-              "bbox": [
-                41.10240173339844,
-                491.6373291015625,
-                289.1338195800781,
-                515.3043212890625
-              ],
-              "locator": "ma-normative/article-6",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        },
-        {
-          "item_id": "ca:ma-resolucao-211-2026-doe:section:signature",
-          "text_sha256": "39e27633457db014f6c5ddb18b5a62251c9a6736b7475534d94ae7f1fc45889d",
-          "evidence": [
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 21,
-              "printed_page": "21",
-              "section": "signature",
-              "excerpt": "SALA DAS SESSÕES PLENÁRIAS DO CONSELHO ESTADUAL DE EDUCAÇÃO DO MARANHÃO, em São Luís (MA), 21 de julho de 2026. Geraldo Castro Sobrinho Presidente CEE/MA Sônia Maria Corrêa Pereira Mugschl Vice-Presidente CEE/MA Adriana Campos Marques Presidente CEB-CEE/MA Fábio Henrique Ramos Braga Presidente CES-CEE/MA Antônio Fernando Jansen Pereira Mitoso Bernardo de Jesus Araújo da Silveira Leite Júnior Elsa Helena Almeida Silva Balluz Isabela Maria Barros Cabral de Lima José de Jesus Pinheiro Carvalho Luzia Maria Muniz Rodrigues de Carvalho Maria Elizabeth Gomes Braga Maria Vitória Bouças Bahia Silva",
-              "bbox": [
-                41.10240173339844,
-                525.8372802734375,
-                291.3888244628906,
-                790.1043090820312
-              ],
-              "locator": "ma-normative/signature",
-              "method": "document-specific-normative-partition"
-            },
-            {
-              "source_id": "ma-resolucao-211-2026-doe",
-              "page": 21,
-              "printed_page": "21",
-              "section": "signature",
-              "excerpt": "Mari-Silva Maia da Silva Márnia Suamy Mendes Pereira Neurimar Almeida Roberto Mauro Gurgel Rocha Soraia Raquel Alves da Silva Virgínia Helena Almeida Silva de Albuquerque",
-              "bbox": [
-                342.32159423828125,
-                70.58128356933594,
-                512.3272094726562,
-                137.10430908203125
-              ],
-              "locator": "ma-normative/signature/page-21/fragment-1",
-              "method": "document-specific-normative-partition"
-            }
-          ]
-        }
-      ],
-      "findings": []
+      ]
     }
   ],
-  "sidecar_path": "data/manifests/uncoded/ma-211-items.json",
-  "sidecar_sha256": "7e62414648b4172dcf6eae4d3f028046ab0eb0351ec93f7f28d9fe3963bfdc64",
-  "independent_inventory_path": "docs/evidence/source-audit-ma-current/ma-normative-source-census.json",
-  "verification_evidence": "docs/evidence/source-audit-ma-current/ma-normative-import-verification.json",
+  "pedagogical_review_status": "not_reviewed",
   "peer_evidence": "docs/evidence/source-audit-ma-current/acts/adapter-peer-review.json",
-  "source_line_count": 107,
-  "record_count": 19,
-  "literal_fragment_count": 20,
-  "limits": [
-    "This act/annex only; original diaries outside selected regions excluded.",
-    "Does not acquire the separate DCTMA digital complement or current GPD/matrices.",
-    "No all-MA reconciliation, full candidate incorporation, database import or UF/national readiness claim.",
-    "V2 own-source proof does not establish missing related artifacts, UF completeness, actual public production incorporation or human pedagogical review."
-  ],
-  "verification_evidence_sha256": "2cbda47f62e6506adba5d51270b6daafc1ffc874c291b3775dac1667cbe5f7f3",
   "peer_evidence_sha256": "072945487a907416d0f637287e39ac5766efdb83c55362ebfe940aae9ebfdaf6",
-  "independent_inventory_sha256": "b565fb10c1fdf41f780f7b16033fc182d282778fff9f6fdc3db35ce5174f97f8",
+  "pending_parts": [],
   "prior_extraction_revisions": [
     "page-cell-v1.4.0"
   ],
-  "latest_runtime_verification": {
-    "path": "docs/evidence/source-audit-northeast/runtime-v150/ma-resolucao-211-2026-doe.json",
-    "sha256": "59e4d11b80cb1e14f4b9b00f87adcf55b30c75735aaaa1f74235efc1aa56313d",
-    "extraction_revision": "page-cell-v1.5.0",
-    "cache_sha256": "fe45346a3c01c537834b292b82c6306adda3150a42791f1e6bc594d266290e75",
-    "source_config_sha256": "bafc2b9fbe871ffb56a728141cdfaac678d62c67001234f0829da3c4cf9996b9",
-    "status": "passed"
-  },
   "reconciliation_scope": "whole_source",
-  "findings": [],
-  "pending_parts": [],
-  "document_inventory": {
-    "basis": "primary_document_review",
-    "method": "Explicit source-derived documentary units and denominators, covering every declared source page and actual record exactly once; own-source and required-related-source gates remain separate.",
-    "evidence": [
-      {
-        "page": 20,
-        "section": "article-1",
-        "excerpt": "Art. 1º Aprovar o Documento Curricular do Território Ma­ ranhense (DCTMA) – Educação Digital e Midiática, elaborado pela Secretaria de Estado da Educação do Maranhão (SEDUC/MA), como documento normativo complementar para a Educação Básica no âm­ bito do Sistema Estadual de Ensino do Maranhão.",
-        "bbox": [
-          306.1416931152344,
-          671.1541748046875,
-          556.4277954101562,
-          726.6212158203125
-        ],
-        "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation.",
-        "source_id": "ma-resolucao-211-2026-doe"
-      },
-      {
-        "page": 21,
-        "section": "article-5",
-        "excerpt": "Art. 5º Este Conselho Estadual de Educação emitirá, em ato normativo posterior, as diretrizes operacionais complementares relativas aos prazos de transição, formação docente, governança e salvaguardas de proteção à infância no ambiente digital.",
-        "bbox": [
-          41.10240173339844,
-          434.6373291015625,
-          291.40130615234375,
-          481.10430908203125
-        ],
-        "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation.",
-        "source_id": "ma-resolucao-211-2026-doe"
-      },
-      {
-        "page": 21,
-        "section": "article-6",
-        "excerpt": "Art. 6ºEsta Resolução entra em vigor na data de sua pu­ blicação.",
-        "bbox": [
-          41.10240173339844,
-          491.6373291015625,
-          289.1338195800781,
-          515.3043212890625
-        ],
-        "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation.",
-        "source_id": "ma-resolucao-211-2026-doe"
-      }
+  "reconciliation_status": "automated_own_source_documentary_reconciled_v2",
+  "record_count": 19,
+  "reviewed_at": "2026-10-28T18:33:23.202513+00:00",
+  "runtime_refresh": {
+    "actor_id": "local-venv-cache-refresh-2026-11-01",
+    "actor_type": "automated",
+    "current_cache_sha256": "62a584fd1d77d6846672c91a916c6ada3e8c1d264ebfa5d9a7c1af5e07e9f754",
+    "method": "Forced extraction in the pinned local venv; accepted only after exact item payloads (excluding event timestamps), page text, and active-publication source reconciliation matched.",
+    "page_text_unchanged": true,
+    "previous_cache_sha256": "fe45346a3c01c537834b292b82c6306adda3150a42791f1e6bc594d266290e75",
+    "refreshed_at": "2026-11-01T03:49:33.462546+00:00",
+    "semantic_items_unchanged": true,
+    "source_gate_issues": [
+      "related_document:DCTMA Educação Digital e Midiática integral aprovado pelo Art1:explicit_source_hash_or_declaration_evidence_missing"
     ],
-    "required_parts": [
-      "Resolução211/2026: ementa, preâmbulo, oito considerandos, seis artigos e assinaturas"
-    ],
-    "source_scope_sha256": "cb99081540c6cd599a2c30970fd27aebbea08ea8a2bc4aa7e86e609e7ff95957",
-    "units": [
-      {
-        "unit_id": "ma-resolucao-211-2026-doe:documentary-unit:1",
-        "part": "Resolução211/2026: ementa, preâmbulo, oito considerandos, seis artigos e assinaturas",
-        "role": "normative",
-        "page_ranges": [
-          [
-            20,
-            21
-          ]
-        ],
-        "expected_record_count": 19,
-        "method": "Independent original-region census and fixed structural keys: articles/considerandos/chapters/annex sections, full once-only source-line partition and secondary peer. Not keys collected from generic extractor output.",
-        "evidence": [
-          {
-            "page": 20,
-            "section": "article-1",
-            "excerpt": "Art. 1º Aprovar o Documento Curricular do Território Ma­ ranhense (DCTMA) – Educação Digital e Midiática, elaborado pela Secretaria de Estado da Educação do Maranhão (SEDUC/MA), como documento normativo complementar para a Educação Básica no âm­ bito do Sistema Estadual de Ensino do Maranhão.",
-            "bbox": [
-              306.1416931152344,
-              671.1541748046875,
-              556.4277954101562,
-              726.6212158203125
-            ],
-            "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation.",
-            "source_id": "ma-resolucao-211-2026-doe"
-          },
-          {
-            "page": 21,
-            "section": "article-5",
-            "excerpt": "Art. 5º Este Conselho Estadual de Educação emitirá, em ato normativo posterior, as diretrizes operacionais complementares relativas aos prazos de transição, formação docente, governança e salvaguardas de proteção à infância no ambiente digital.",
-            "bbox": [
-              41.10240173339844,
-              434.6373291015625,
-              291.40130615234375,
-              481.10430908203125
-            ],
-            "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation.",
-            "source_id": "ma-resolucao-211-2026-doe"
-          },
-          {
-            "page": 21,
-            "section": "article-6",
-            "excerpt": "Art. 6ºEsta Resolução entra em vigor na data de sua pu­ blicação.",
-            "bbox": [
-              41.10240173339844,
-              491.6373291015625,
-              289.1338195800781,
-              515.3043212890625
-            ],
-            "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation.",
-            "source_id": "ma-resolucao-211-2026-doe"
-          }
-        ],
-        "denominator": {
-          "basis": "primary_document_review",
-          "unit": "documentary_records",
-          "expected_count": 19,
-          "method": "Independent original-region census and fixed structural keys: articles/considerandos/chapters/annex sections, full once-only source-line partition and secondary peer. Not keys collected from generic extractor output.",
-          "evidence": [
-            {
-              "page": 20,
-              "section": "article-1",
-              "excerpt": "Art. 1º Aprovar o Documento Curricular do Território Ma­ ranhense (DCTMA) – Educação Digital e Midiática, elaborado pela Secretaria de Estado da Educação do Maranhão (SEDUC/MA), como documento normativo complementar para a Educação Básica no âm­ bito do Sistema Estadual de Ensino do Maranhão.",
-              "bbox": [
-                306.1416931152344,
-                671.1541748046875,
-                556.4277954101562,
-                726.6212158203125
-              ],
-              "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation.",
-              "source_id": "ma-resolucao-211-2026-doe"
-            },
-            {
-              "page": 21,
-              "section": "article-5",
-              "excerpt": "Art. 5º Este Conselho Estadual de Educação emitirá, em ato normativo posterior, as diretrizes operacionais complementares relativas aos prazos de transição, formação docente, governança e salvaguardas de proteção à infância no ambiente digital.",
-              "bbox": [
-                41.10240173339844,
-                434.6373291015625,
-                291.40130615234375,
-                481.10430908203125
-              ],
-              "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation.",
-              "source_id": "ma-resolucao-211-2026-doe"
-            },
-            {
-              "page": 21,
-              "section": "article-6",
-              "excerpt": "Art. 6ºEsta Resolução entra em vigor na data de sua pu­ blicação.",
-              "bbox": [
-                41.10240173339844,
-                491.6373291015625,
-                289.1338195800781,
-                515.3043212890625
-              ],
-              "verification": "Every selected-source line and literal fragment checked, with real importer/finalizer; typed source/visual sample, no pedagogical or human validation.",
-              "source_id": "ma-resolucao-211-2026-doe"
-            }
-          ],
-          "source_inventory_path": "docs/evidence/source-audit-ma-current/ma-normative-source-census.json",
-          "source_inventory_sha256": "b565fb10c1fdf41f780f7b16033fc182d282778fff9f6fdc3db35ce5174f97f8"
-        },
-        "item_checks": [
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:resolution-211",
-            "text_sha256": "6dca7f9256e41997bbab36d09ebb542acbf967a4cef75d553f168caa453b1b86",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 20,
-                "printed_page": "20",
-                "section": "resolution-211",
-                "excerpt": "SECRETARIA DE ESTADO DA EDUCAÇÃO Conselho Estadual de Educação do Maranhão - CEE/MA RESOLUÇÃO 211/2026 – CEE/MA",
-                "bbox": [
-                  306.1416931152344,
-                  153.2982177734375,
-                  547.9033203125,
-                  210.81021118164062
-                ],
-                "locator": "ma-normative/resolution-211",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:ementa",
-            "text_sha256": "90346bb6c6ee416f8533a8356a4bc84822051ecc5d5d5d246a151738f3648c11",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 20,
-                "printed_page": "20",
-                "section": "ementa",
-                "excerpt": "Aprova o Documento Curricular do Terri­ tório Maranhense (DCTMA) – Educação Digital e Midiática, no âmbito do Sistema Estadual de Ensino do Maranhão, estabe­ lece recomendações para sua implemen­ tação e dá outras providências.",
-                "bbox": [
-                  405.35430908203125,
-                  220.0981903076172,
-                  556.4365234375,
-                  286.22119140625
-                ],
-                "locator": "ma-normative/ementa",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:preamble",
-            "text_sha256": "f4178409eeb1740e511bbf5762c4a90e370a851d0e71ca1953109eddb29c200c",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 20,
-                "printed_page": "20",
-                "section": "preamble",
-                "excerpt": "O CONSELHO ESTADUAL DE EDUCAÇÃO DO MA­ RANHÃO, no uso de suas atribuições legais e considerando o Parecer nº 242/2026 – CEE/MA, tendo em vista o constante no Processo nº 2026.110220.17132 – CEE/MA, por unanimidade aprovado em Ses­ são Plenária hoje realizada, e",
-                "bbox": [
-                  306.1416931152344,
-                  295.5542297363281,
-                  556.4710083007812,
-                  350.6212158203125
-                ],
-                "locator": "ma-normative/preamble",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-1",
-            "text_sha256": "056a08e9fc2b039f3e0a9db89b70bd3aacc0d621fd175fbaa813027eae3adfb3",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 20,
-                "printed_page": "20",
-                "section": "considerando-1",
-                "excerpt": "CONSIDERANDO o disposto no art. 205 da Constituição Federal de 1988;",
-                "bbox": [
-                  306.1416931152344,
-                  359.2982177734375,
-                  556.4182739257812,
-                  381.82122802734375
-                ],
-                "locator": "ma-normative/considerando-1",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-2",
-            "text_sha256": "8dfbae245c8f0ec2c0f4986b1b87391ac29074ee3652ca009e4066513fbb7a70",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 20,
-                "printed_page": "20",
-                "section": "considerando-2",
-                "excerpt": "CONSIDERANDO a Lei Federal nº 9.394, de 20 de dezem­ bro de 1996 (LDB);",
-                "bbox": [
-                  306.1416931152344,
-                  390.49822998046875,
-                  554.173095703125,
-                  413.0212097167969
-                ],
-                "locator": "ma-normative/considerando-2",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-3",
-            "text_sha256": "43684227c80b8800f51353b72e78c93e25748f852c47f32d5ebf49bbbd5be612",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 20,
-                "printed_page": "20",
-                "section": "considerando-3",
-                "excerpt": "CONSIDERANDO a Base Nacional Comum Curricular (BNCC) e a BNCC Computação (Resolução CNE/CEB nº 1/2022);",
-                "bbox": [
-                  306.1416931152344,
-                  421.6982421875,
-                  556.4362182617188,
-                  444.2212219238281
-                ],
-                "locator": "ma-normative/considerando-3",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-4",
-            "text_sha256": "6ab761cbfbdc6b95efcf1bf0738e327a855e66740857a7579ee1a948d7eb0437",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 20,
-                "printed_page": "20",
-                "section": "considerando-4",
-                "excerpt": "CONSIDERANDO a Lei Federal nº 14.533, de 11 de ja­ neiro de 2023, que institui a Política Nacional de Educação Digital (PNED);",
-                "bbox": [
-                  306.1416931152344,
-                  452.8982238769531,
-                  556.4263916015625,
-                  485.82122802734375
-                ],
-                "locator": "ma-normative/considerando-4",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-5",
-            "text_sha256": "bc687d9d5247510be83382504fb88fe5218e040cdd224a4d64a054eb637a1c72",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 20,
-                "printed_page": "20",
-                "section": "considerando-5",
-                "excerpt": "CONSIDERANDO a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD);",
-                "bbox": [
-                  306.1416931152344,
-                  494.49822998046875,
-                  556.429931640625,
-                  517.0211791992188
-                ],
-                "locator": "ma-normative/considerando-5",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-6",
-            "text_sha256": "c8b76d0c56c356f412cb06064e8f367490520026c71a458e4809957dc4c7a5e5",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 20,
-                "printed_page": "20",
-                "section": "considerando-6",
-                "excerpt": "CONSIDERANDO as Diretrizes Operacionais para a Educação Digital e Midiática fixadas pela Resolução CNE/CEB nº 2/2025;",
-                "bbox": [
-                  306.1416931152344,
-                  525.6982421875,
-                  556.4244384765625,
-                  558.6212158203125
-                ],
-                "locator": "ma-normative/considerando-6",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-7",
-            "text_sha256": "7517b061dc3a45e42a98280509ab306163f3f3b60c9841f98dbea0343b3bf1cb",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 20,
-                "printed_page": "20",
-                "section": "considerando-7",
-                "excerpt": "CONSIDERANDO que o Documento Curricular do Terri­ tório Maranhense (DCTMA) – Educação Digital e Midiática apresen­ ta coerência teórico-metodológica e organização curricular compatí­ vel com as diretrizes e normas nacionais vigentes;",
-                "bbox": [
-                  306.1416931152344,
-                  567.2982177734375,
-                  554.173095703125,
-                  610.6212158203125
-                ],
-                "locator": "ma-normative/considerando-7",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:considerando-8",
-            "text_sha256": "12ec708d9d568ef0548d32390323a68fdc341ff0d1dd15bf0322fa8b4a0c5f1f",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 20,
-                "printed_page": "20",
-                "section": "considerando-8",
-                "excerpt": "CONSIDERANDO o teor do Processo nº 2026.110220.17132 – CEE/MA,",
-                "bbox": [
-                  306.1416931152344,
-                  619.2982177734375,
-                  556.431640625,
-                  641.8212280273438
-                ],
-                "locator": "ma-normative/considerando-8",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:resolve",
-            "text_sha256": "22158f36212aecb73e3fb2f2ccb7f87aca7424b5815b862eb775aaba51c785b8",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 20,
-                "printed_page": "20",
-                "section": "resolve",
-                "excerpt": "RESOLVE:",
-                "bbox": [
-                  407.565185546875,
-                  650.3541870117188,
-                  452.74969482421875,
-                  662.8102416992188
-                ],
-                "locator": "ma-normative/resolve",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:article-1",
-            "text_sha256": "e526f6a77c914c67b2371da0e23b4e1b536150f34b1d4b0c4deb26ae66b0d8f7",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 20,
-                "printed_page": "20",
-                "section": "article-1",
-                "excerpt": "Art. 1º Aprovar o Documento Curricular do Território Ma­ ranhense (DCTMA) – Educação Digital e Midiática, elaborado pela Secretaria de Estado da Educação do Maranhão (SEDUC/MA), como documento normativo complementar para a Educação Básica no âm­ bito do Sistema Estadual de Ensino do Maranhão.",
-                "bbox": [
-                  306.1416931152344,
-                  671.1541748046875,
-                  556.4277954101562,
-                  726.6212158203125
-                ],
-                "locator": "ma-normative/article-1",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:article-2",
-            "text_sha256": "fb94f84812bfd10a87b32e50ac001b77120f1b5f52d2fa5848a81d1b6bb8ba5f",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 20,
-                "printed_page": "20",
-                "section": "article-2",
-                "excerpt": "Art. 2º A implementação do DCTMA – Educação Digital e Midiática orientar-se-á pelos eixos estruturantes do Pensamento Computacional, Mundo Digital e Cultura Digital, em articulação transversal com os componentes curriculares da Educação Básica e com observância às etapas e modalidades de ensino.",
-                "bbox": [
-                  306.1416931152344,
-                  735.9541625976562,
-                  556.4381713867188,
-                  791.4212036132812
-                ],
-                "locator": "ma-normative/article-2",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:article-3",
-            "text_sha256": "c6a9aa2120ce613b4949f43837610d7b38d111104d90911b0e613e80c970f12f",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 21,
-                "printed_page": "21",
-                "section": "article-3",
-                "excerpt": "Art. 3º As redes de ensino e instituições escolares integran­ tes do Sistema Estadual de Ensino do Maranhão deverão promover a adequação progressiva de suas Propostas Pedagógicas e Regimentos Escolares às diretrizes estabelecidas no documento ora aprovado.",
-                "bbox": [
-                  41.10240173339844,
-                  70.43728637695312,
-                  291.3942565917969,
-                  116.30419921875
-                ],
-                "locator": "ma-normative/article-3",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:article-4",
-            "text_sha256": "4809990ccfcb011a23986201fb9c14e2f206d3f19bc6ce62a8eaeb27409d87fa",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 21,
-                "printed_page": "21",
-                "section": "article-4",
-                "excerpt": "Art. 4º Para assegurar a efetividade, a qualidade técnica e a equidade na implementação do DCTMA – Educação Digital e Midiá­ tica, este Conselho estabelece as seguintes RECOMENDAÇÕES aos sistemas e redes de ensino: I – Política Permanente de Formação Docente: fortaleci­ mento e institucionalização de programas de formação continuada focados nos Saberes Digitais Docentes (com base nas Dimensões D_1 Ensino e Aprendizagem, D_2 Cidadania Digital e D_3 Desen­ volvimento Profissional); II – Infraestrutura e Equidade: garantia contínua de suporte técnico, conectividade pedagógica e distribuição equitativa de equi­ pamentos para as unidades escolares, priorizando a redução das desi­ gualdades territoriais e digitais no estado; III – Monitoramento e Avaliação: estabelecimento de uma rotina de monitoramento e avaliação bienal do processo de imple­ mentação curricular e do desenvolvimento de competências digitais dos estudantes; IV – Grupos de Trabalho (GTs): criação, no âmbito dos municípios, de Grupos de Trabalho dedicados a acompanhar a exe­ cução local, visando garantir a legitimidade, a qualidade técnica e a aplicabilidade das Diretrizes Curriculares de Educação Digital do Maranhão às suas realidades estruturais.",
-                "bbox": [
-                  41.10240173339844,
-                  126.83731079101562,
-                  291.4005126953125,
-                  424.10430908203125
-                ],
-                "locator": "ma-normative/article-4",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:article-5",
-            "text_sha256": "89d81181df1aa4311e965e55e6bf2dd3ad937ec58298493e3e3efb3ab6dee400",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 21,
-                "printed_page": "21",
-                "section": "article-5",
-                "excerpt": "Art. 5º Este Conselho Estadual de Educação emitirá, em ato normativo posterior, as diretrizes operacionais complementares relativas aos prazos de transição, formação docente, governança e salvaguardas de proteção à infância no ambiente digital.",
-                "bbox": [
-                  41.10240173339844,
-                  434.6373291015625,
-                  291.40130615234375,
-                  481.10430908203125
-                ],
-                "locator": "ma-normative/article-5",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:article-6",
-            "text_sha256": "98aa445d4db12187fcacad7be2959185960a3f3c3d16e325c2139008882ec0dc",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 21,
-                "printed_page": "21",
-                "section": "article-6",
-                "excerpt": "Art. 6ºEsta Resolução entra em vigor na data de sua pu­ blicação.",
-                "bbox": [
-                  41.10240173339844,
-                  491.6373291015625,
-                  289.1338195800781,
-                  515.3043212890625
-                ],
-                "locator": "ma-normative/article-6",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          },
-          {
-            "item_id": "ca:ma-resolucao-211-2026-doe:section:signature",
-            "text_sha256": "39e27633457db014f6c5ddb18b5a62251c9a6736b7475534d94ae7f1fc45889d",
-            "evidence": [
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 21,
-                "printed_page": "21",
-                "section": "signature",
-                "excerpt": "SALA DAS SESSÕES PLENÁRIAS DO CONSELHO ESTADUAL DE EDUCAÇÃO DO MARANHÃO, em São Luís (MA), 21 de julho de 2026. Geraldo Castro Sobrinho Presidente CEE/MA Sônia Maria Corrêa Pereira Mugschl Vice-Presidente CEE/MA Adriana Campos Marques Presidente CEB-CEE/MA Fábio Henrique Ramos Braga Presidente CES-CEE/MA Antônio Fernando Jansen Pereira Mitoso Bernardo de Jesus Araújo da Silveira Leite Júnior Elsa Helena Almeida Silva Balluz Isabela Maria Barros Cabral de Lima José de Jesus Pinheiro Carvalho Luzia Maria Muniz Rodrigues de Carvalho Maria Elizabeth Gomes Braga Maria Vitória Bouças Bahia Silva",
-                "bbox": [
-                  41.10240173339844,
-                  525.8372802734375,
-                  291.3888244628906,
-                  790.1043090820312
-                ],
-                "locator": "ma-normative/signature",
-                "method": "document-specific-normative-partition"
-              },
-              {
-                "source_id": "ma-resolucao-211-2026-doe",
-                "page": 21,
-                "printed_page": "21",
-                "section": "signature",
-                "excerpt": "Mari-Silva Maia da Silva Márnia Suamy Mendes Pereira Neurimar Almeida Roberto Mauro Gurgel Rocha Soraia Raquel Alves da Silva Virgínia Helena Almeida Silva de Albuquerque",
-                "bbox": [
-                  342.32159423828125,
-                  70.58128356933594,
-                  512.3272094726562,
-                  137.10430908203125
-                ],
-                "locator": "ma-normative/signature/page-21/fragment-1",
-                "method": "document-specific-normative-partition"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "source_gate_revalidated": true
   },
+  "sidecar_path": "data/manifests/uncoded/ma-211-items.json",
+  "sidecar_sha256": "7e62414648b4172dcf6eae4d3f028046ab0eb0351ec93f7f28d9fe3963bfdc64",
+  "source_id": "ma-resolucao-211-2026-doe",
+  "source_line_count": 107,
   "v2_current_runtime_verification": {
-    "path": "data/extracted/5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3-page-cell-v1.5.0.json",
-    "sha256": "fe45346a3c01c537834b292b82c6306adda3150a42791f1e6bc594d266290e75",
-    "extraction_config_sha256": "bafc2b9fbe871ffb56a728141cdfaac678d62c67001234f0829da3c4cf9996b9",
+    "cache_path": "data/extracted/5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3-page-cell-v1.5.0.json",
+    "cache_sha256": "62a584fd1d77d6846672c91a916c6ada3e8c1d264ebfa5d9a7c1af5e07e9f754",
+    "extraction_config_sha256": "fe21187a0b45d0f148dfd0662f60ab85182d66a2f8d595b8bda2b69a98e417e8",
     "extraction_revision": "page-cell-v1.5.0",
     "parser_fingerprint": {
       "algorithm": "sha256-of-sorted-parser-file-digests",
       "files": {
         "document_roles.py": "ea4e0b161d015f6e87e4fa2b7dde202e1605815efff1e6ec48adf137f311a20f",
         "geometry.py": "f0f2f7230602a051712fd116bce3c9d62bcb3e316d07412f8ed7ff3cda37467d",
-        "ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+        "ingest.py": "78e9c44bec289453a81b0513a65bfd4665bf0304bd307466902416b8840d20da",
         "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
         "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
         "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
         "runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce"
       },
-      "sha256": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+      "sha256": "64de1291c5a58d4b5705c3580ef061c8a153c16fb4447ecec61552e04f8b3f9f"
     },
+    "path": "data/extracted/5ee757e123fcd51f2dd93e18f4844dca85185f7e96cd0d0fb68ab3fe4967eaf3-page-cell-v1.5.0.json",
     "runtime": {
       "implementation": "CPython",
       "pillow": "13.0.0",
       "pymupdf": "1.26.7",
       "python": "3.11.15"
-    }
+    },
+    "sha256": "62a584fd1d77d6846672c91a916c6ada3e8c1d264ebfa5d9a7c1af5e07e9f754"
   },
   "v2_gate_result": {
+    "accounted_item_count": 19,
+    "actual_item_count": 19,
     "gate_version": "reconciliation-gate/2.0",
+    "issues": [
+      "related_document:DCTMA Educação Digital e Midiática integral aprovado pelo Art1:explicit_source_hash_or_declaration_evidence_missing"
+    ],
     "own_source_reconciled": true,
-    "whole_source_reconciled": false,
     "required_related_documents": [
       {
-        "title": "DCTMA Educação Digital e Midiática integral aprovado pelo Art1",
-        "related_source_id": "ma-dctma-educacao-digital-midiatica",
         "artifact_sha256": null,
         "evidence": [
           {
-            "source_id": "ma-resolucao-211-2026-doe",
-            "page": 20,
-            "printed_page": "20",
-            "section": "article-1",
-            "excerpt": "Art. 1º Aprovar o Documento Curricular do Território Ma­ ranhense (DCTMA) – Educação Digital e Midiática, elaborado pela Secretaria de Estado da Educação do Maranhão (SEDUC/MA), como documento normativo complementar para a Educação Básica no âm­ bito do Sistema Estadual de Ensino do Maranhão.",
             "bbox": [
               306.1416931152344,
               671.1541748046875,
               556.4277954101562,
               726.6212158203125
             ],
+            "excerpt": "Art. 1º Aprovar o Documento Curricular do Território Ma­ ranhense (DCTMA) – Educação Digital e Midiática, elaborado pela Secretaria de Estado da Educação do Maranhão (SEDUC/MA), como documento normativo complementar para a Educação Básica no âm­ bito do Sistema Estadual de Ensino do Maranhão.",
             "locator": "ma-normative/article-1",
-            "method": "document-specific-normative-partition"
+            "method": "document-specific-normative-partition",
+            "page": 20,
+            "printed_page": "20",
+            "section": "article-1",
+            "source_id": "ma-resolucao-211-2026-doe"
           }
-        ]
+        ],
+        "related_source_id": "ma-dctma-educacao-digital-midiatica",
+        "title": "DCTMA Educação Digital e Midiática integral aprovado pelo Art1"
       }
     ],
-    "issues": [
-      "related_document:DCTMA Educação Digital e Midiática integral aprovado pelo Art1:explicit_source_hash_or_declaration_evidence_missing"
-    ],
-    "actual_item_count": 19,
-    "accounted_item_count": 19
-  }
+    "whole_source_reconciled": false
+  },
+  "verification_evidence": "docs/evidence/source-audit-ma-current/ma-normative-import-verification.json",
+  "verification_evidence_sha256": "2cbda47f62e6506adba5d51270b6daafc1ffc874c291b3775dac1667cbe5f7f3"
 }

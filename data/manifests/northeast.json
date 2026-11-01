@@ -7455,7 +7455,7 @@
       ]
     },
     "uncoded_adapter_verification": {
-      "sidecar_sha256": "551f90cca125541f09975b3d62f8457695a4cdc7a742f096360f609854749602",
+      "sidecar_sha256": "269729c19ae872c599586306f84c6f229612d427ccd387d570e580590504028c",
       "actor_type": "automated",
       "peer_evidence": "docs/evidence/source-audit-rn-fidelity/rn-uncoded-peer-summary.json",
       "peer_evidence_sha256": "008f8b9645d838805f5a574456c89e5076d721a4c06ed8e5d8fa41b904436be4",
@@ -7469,7 +7469,16 @@
       "full_execution_evidence": "docs/evidence/source-audit-rn-uncoded/rn-trilhas-full-verification.json",
       "full_execution_sha256": "cb85f3747424e7d2af2d92dc98829fb8b709ffafcf6ff41a37f18c054ae48c1a",
       "handoff_evidence": "docs/evidence/source-audit-rn-uncoded/rn-trilhas-integration-handoff.json",
-      "handoff_sha256": "5258e26306ab1eb3c0b8a4abf6cd5d668675710d7442b537c3eebe24f5463552"
+      "handoff_sha256": "5258e26306ab1eb3c0b8a4abf6cd5d668675710d7442b537c3eebe24f5463552",
+      "post_verification_revision": {
+        "generated_at": "2026-10-31",
+        "evidence_path": "docs/evidence/source-audit-rn-uncoded/rn-trilhas-cross-column-scope-fix-20261031.json",
+        "evidence_sha256": "7271df13f98fc1f3dea36e486b89863c7a1e605d973ee0a88cf59525fda80d69",
+        "prior_verified_sidecar_sha256": "551f90cca125541f09975b3d62f8457695a4cdc7a742f096360f609854749602",
+        "current_sidecar_sha256": "269729c19ae872c599586306f84c6f229612d427ccd387d570e580590504028c",
+        "status": "adapter_regenerated_full_import_and_parser_reverification_pending",
+        "source_ready": false
+      }
     }
   },
   {
@@ -12900,9 +12909,9 @@
     "pdf_pages": 6,
     "pages": 6,
     "bytes": 4201834,
-    "inventory_complete": false,
-    "inventory_status": "scanned_act_acquired_OCR_and_structure_pending",
-    "reconciliation_status": "pending_documentary_reconciliation",
+    "inventory_complete": true,
+    "inventory_status": "complete",
+    "reconciliation_status": "automated_own_source_documentary_reconciled_v2",
     "inventory_evidence": [
       {
         "page": 1,
@@ -12915,11 +12924,27 @@
         "section": "Deliberação/relato",
         "excerpt": "16/12/2025",
         "note": "Date of plenary/report differs from header date; preserved separately."
+      },
+      {
+        "page": 1,
+        "section": "Full-source visual inventory and transcription review",
+        "excerpt": "The six-page opinion contains seven numbered sections, an identification header, two electronic-signature blocks and an SEI authentication record; all are represented by pinned records.",
+        "method": "Full-page original-PDF visual cotejo with independent primary inventory",
+        "evidence_path": "docs/evidence/source-audit-northeast/pi-parecer190-primary-inventory-20261031.json",
+        "evidence_sha256": "93fa58488a0565272c7d9a40520e51a7501cbe1661c31f7a09ccf35ab55931f6"
       }
     ],
     "approval_or_report_date": "2025-12-16",
     "date_scope_note": "18/12 is document header date;16/12 is plenary/report. Resolution index lists15.12.25; conflicting catalogue value is not silently substituted. Homologation19/12 is visible electronic signature on resolutionPDFp2. No verified application period inferred.",
     "acquisition_evidence": "docs/evidence/source-audit-northeast/pi-parecer190-acquisition.json",
+    "uncoded_items_path": "data/manifests/uncoded/pi-parecer-190-2025-items.json",
+    "adapter_authority": {
+      "uncoded_page_sections_pages": [
+        1,
+        6
+      ]
+    },
+    "source_inventory_evidence_path": "docs/evidence/source-audit-northeast/pi-parecer190-primary-inventory-20261031.json",
     "document_verification": {
       "actor_type": "automated",
       "actor_id": "codex:data_northeast",

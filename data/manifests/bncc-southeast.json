@@ -1182,7 +1182,16 @@
       "local_path": "data/raw/ES/es-resolucao-cee-es-no-5-777-2020-ensino-medio.code-index.json"
     },
     "expected_document_pages": 2,
-    "scope_note": "Documento inteiro selecionado, inclusive partes integradas sem código. Inventário de páginas não substitui estruturação/reconciliação das aprendizagens."
+    "scope_note": "Documento inteiro selecionado, inclusive partes integradas sem código. Inventário de páginas não substitui estruturação/reconciliação das aprendizagens.",
+    "uncoded_items_path": "data/manifests/uncoded/es-complements-resolucao-cee-es-no-5-777-2020-ensino-medio.json",
+    "adapter_authority": {
+      "uncoded_page_sections_ranges": [
+        [
+          1,
+          2
+        ]
+      ]
+    }
   },
   {
     "id": "es-curriculo-es-2020-vol-01-educacao-infantil-rev2026",
@@ -137152,7 +137161,20 @@
       "drive.googleusercontent.com"
     ],
     "expected_document_pages": 5,
-    "scope_note": "Documento inteiro selecionado, inclusive partes integradas sem código. Inventário de páginas não substitui estruturação/reconciliação das aprendizagens."
+    "scope_note": "Documento inteiro selecionado, inclusive partes integradas sem código. Inventário de páginas não substitui estruturação/reconciliação das aprendizagens.",
+    "uncoded_items_path": "data/manifests/uncoded/rj-em-lab-linguagens-2025-skills-v1.json",
+    "adapter_authority": {
+      "coded_learning_ranges": [
+        [
+          3,
+          3
+        ]
+      ],
+      "mode": "sidecar_authoritative_for_three_skill_cells_on_page_3",
+      "scope_note": "The 3 coded skill rows in the ruled Habilidades column are transcribed by the verified sidecar; the generic coded cell is suppressed on p.3 to avoid duplicate or truncated records. Page-section records remain extracted.",
+      "evidence": "docs/evidence/source-audit-rj-linguagens-20261101/visual-inventory.json",
+      "review_status": "automated_visual_source_review_not_pedagogical_review"
+    }
   },
   {
     "id": "rj-em-lab-humanas-2025",
@@ -137223,7 +137245,16 @@
       "drive.googleusercontent.com"
     ],
     "expected_document_pages": 8,
-    "scope_note": "Documento inteiro selecionado, inclusive partes integradas sem código. Inventário de páginas não substitui estruturação/reconciliação das aprendizagens."
+    "scope_note": "Documento inteiro selecionado, inclusive partes integradas sem código. Inventário de páginas não substitui estruturação/reconciliação das aprendizagens.",
+    "uncoded_items_path": "data/manifests/uncoded/rj-em-lab-humanas-2025-skills-v1.json",
+    "adapter_authority": {
+      "coded_learning_ranges": [
+        [
+          4,
+          8
+        ]
+      ]
+    }
   },
   {
     "id": "br-dcn-em-2024",

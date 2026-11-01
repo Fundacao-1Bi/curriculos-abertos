@@ -1,0 +1,1509 @@
+{
+  "actor_id": "codex:pi190-source-audit",
+  "actor_type": "automated",
+  "artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+  "document_inventory": {
+    "basis": "primary_document_review",
+    "evidence": [
+      {
+        "excerpt": "Visual inventory partitions the original six-page opinion into the declared documentary units.",
+        "method": "source_visual_primary_inventory",
+        "page": 1,
+        "path": "docs/evidence/source-audit-northeast/pi-parecer190-primary-inventory-20261031.json",
+        "sha256": "93fa58488a0565272c7d9a40520e51a7501cbe1661c31f7a09ccf35ab55931f6",
+        "source_id": "pi-parecer-190-2025"
+      },
+      {
+        "excerpt": "Full page visual comparison of the original opinion and OCR cache, including correction ledger.",
+        "method": "independent_full_page_ocr_visual_cotejo",
+        "page": 1,
+        "path": "docs/evidence/source-audit-northeast/pi-parecer190-visual-structure-review-20261031.json",
+        "sha256": "514732127a9528d95ae36a99a4f9bb08aa5d90aab65dc151d37758b48b5306e0",
+        "source_id": "pi-parecer-190-2025"
+      }
+    ],
+    "method": "Independent visual census of the header, seven numbered sections, two signature blocks and SEI authentication record; 11 granular documentary units.",
+    "required_parts": [
+      "Identificação,processo e relatório",
+      "Introdução e documentos submetidos",
+      "Análise e fundamentação",
+      "Voto,conclusão e decisão",
+      "Assinaturas"
+    ],
+    "source_scope_sha256": "1fc2afc1b8c9c80627cba5381b203f9eaec4750ec041931e9a176141b549ed5c",
+    "units": [
+      {
+        "denominator": {
+          "basis": "primary_document_review",
+          "evidence": [
+            {
+              "excerpt": "Processo nº 00011.022297/2025-00\nTeresina-PI, 18 de dezembro de 2025\nPARECER CEE/PI Nº 190/2025\nOpina pela autorização do Currículo da Computação para\na Educação Infantil, o Ensino Fundamental e o Ensino\nMédio do Sistema Estadual de Ensino ",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 1,
+              "section": "pi190-identification_case_header",
+              "source_id": "pi-parecer-190-2025"
+            }
+          ],
+          "expected_count": 1,
+          "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+          "source_inventory_path": "docs/evidence/source-audit-northeast/pi-parecer190-primary-inventory-20261031.json",
+          "source_inventory_sha256": "93fa58488a0565272c7d9a40520e51a7501cbe1661c31f7a09ccf35ab55931f6",
+          "unit": "documentary_records"
+        },
+        "evidence": [
+          {
+            "excerpt": "Processo nº 00011.022297/2025-00\nTeresina-PI, 18 de dezembro de 2025\nPARECER CEE/PI Nº 190/2025\nOpina pela autorização do Currículo da Computação para\na Educação Infantil, o Ensino Fundamental e o Ensino\nMédio do Sistema Estadual de Ensino ",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 1,
+            "section": "pi190-identification_case_header",
+            "source_id": "pi-parecer-190-2025"
+          }
+        ],
+        "expected_record_count": 1,
+        "item_checks": [
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "Processo nº 00011.022297/2025-00\nTeresina-PI, 18 de dezembro de 2025\nPARECER CEE/PI Nº 190/2025\nOpina pela autorização do Currículo da Computação para\na Educação Infantil, o Ensino Fundamental e o Ensino\nMédio do Sistema Estadual de Ensino do Piauí.\nPROCESSO SEI: 00011.079381/2025-97\nASSUNTO: Autorização do Currículo da Computação para a Educação Infantil, o Ensino Fundamental e o\nEnsino Médio do Sistema Estadual de Ensino do Piauí\nINTERESSADO: Secretaria de Estado da Educação do Piauí\nRELATORA: Consª Ana Célia Furtado Orsano\nRELATADO: 16/12/2025",
+                "locator": "pi190/identification_case_header",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page1.json",
+                "ocr_reference_sha256": "952ffcc362476984a78437979c0bda80b60ab5bc0ae7ef1367575360c15efe53",
+                "page": 1,
+                "section": "identification_case_header",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "94f8e40804d506a5ce7ba481c640d0b7db044559bfa16c8271b2b829dc00681a"
+              }
+            ],
+            "item_id": "ca:pi-parecer-190-2025:section:identification_case_header",
+            "text_sha256": "f40ed3664182c2efa35ea0251ce385cf55e5fff362dd45bc8872f55a33612ae4"
+          }
+        ],
+        "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+        "page_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "part": "Identificação,processo e relatório",
+        "role": "documentary_context",
+        "unit_id": "pi190-identification_case_header"
+      },
+      {
+        "denominator": {
+          "basis": "primary_document_review",
+          "evidence": [
+            {
+              "excerpt": "I – INTRODUÇÃO\nTrata-se de solicitação encaminhada pela Secretaria de Estado da Educação do Piauí —\nSEDUC/PI, por meio da Superintendência de Ensino (SUPEN), submetendo a este Conselho Estadual de\nEducação, para análise e manifestação, os d",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 1,
+              "section": "pi190-section_i_introduction",
+              "source_id": "pi-parecer-190-2025"
+            }
+          ],
+          "expected_count": 1,
+          "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+          "source_inventory_path": "docs/evidence/source-audit-northeast/pi-parecer190-primary-inventory-20261031.json",
+          "source_inventory_sha256": "93fa58488a0565272c7d9a40520e51a7501cbe1661c31f7a09ccf35ab55931f6",
+          "unit": "documentary_records"
+        },
+        "evidence": [
+          {
+            "excerpt": "I – INTRODUÇÃO\nTrata-se de solicitação encaminhada pela Secretaria de Estado da Educação do Piauí —\nSEDUC/PI, por meio da Superintendência de Ensino (SUPEN), submetendo a este Conselho Estadual de\nEducação, para análise e manifestação, os d",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 1,
+            "section": "pi190-section_i_introduction",
+            "source_id": "pi-parecer-190-2025"
+          }
+        ],
+        "expected_record_count": 1,
+        "item_checks": [
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "I – INTRODUÇÃO\nTrata-se de solicitação encaminhada pela Secretaria de Estado da Educação do Piauí —\nSEDUC/PI, por meio da Superintendência de Ensino (SUPEN), submetendo a este Conselho Estadual de\nEducação, para análise e manifestação, os documentos curriculares referentes à implementação da\nComputação na Educação Infantil, no Ensino Fundamental e no Ensino Médio do Sistema Estadual.\nForam apresentados, para fins de apreciação, o Currículo de Computação para o Ensino\nMédio (SEI nº 0021327173) e Currículo de Computação para a Educação Infantil e o Ensino Fundamental\n(SEI nº 0021327177), protocolados no sistema SEI em 24 de novembro de 2025, os quais compõem os\nautos encaminhados para emissão de parecer.",
+                "locator": "pi190/section_i_introduction",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page1.json",
+                "ocr_reference_sha256": "952ffcc362476984a78437979c0bda80b60ab5bc0ae7ef1367575360c15efe53",
+                "page": 1,
+                "section": "section_i_introduction",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "94f8e40804d506a5ce7ba481c640d0b7db044559bfa16c8271b2b829dc00681a"
+              }
+            ],
+            "item_id": "ca:pi-parecer-190-2025:section:section_i_introduction",
+            "text_sha256": "6109ecc1763da2c6edcf45d46f284fe662ef68c24357e14516178e65966be8e5"
+          }
+        ],
+        "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+        "page_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "part": "Introdução e documentos submetidos",
+        "role": "normative",
+        "unit_id": "pi190-section_i_introduction"
+      },
+      {
+        "denominator": {
+          "basis": "primary_document_review",
+          "evidence": [
+            {
+              "excerpt": "II – CONTEXTO DA REALIDADE DA EDUCAÇÃO BRASILEIRA\nDesde a Constituição Federal de 1988 e a consolidação da Lei de Diretrizes e Bases da\nEducação Nacional — LDB nº 9.394/1996, o sistema educacional brasileiro vem buscando a construção de\nref",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 1,
+              "section": "pi190-section_ii_context",
+              "source_id": "pi-parecer-190-2025"
+            },
+            {
+              "excerpt": "- Diretrizes Curriculares Nacionais Gerais da Educação Básica (Resolução CNE/CEB nº\n4/2010).\n- A aprovação da Base Nacional Comum Curricular (BNCC), por meio da Resolução CNE/CP\nnº 2/2017, representou um marco fundamental na garantia do dir",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 2,
+              "section": "pi190-section_ii_context",
+              "source_id": "pi-parecer-190-2025"
+            }
+          ],
+          "expected_count": 1,
+          "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+          "source_inventory_path": "docs/evidence/source-audit-northeast/pi-parecer190-primary-inventory-20261031.json",
+          "source_inventory_sha256": "93fa58488a0565272c7d9a40520e51a7501cbe1661c31f7a09ccf35ab55931f6",
+          "unit": "documentary_records"
+        },
+        "evidence": [
+          {
+            "excerpt": "II – CONTEXTO DA REALIDADE DA EDUCAÇÃO BRASILEIRA\nDesde a Constituição Federal de 1988 e a consolidação da Lei de Diretrizes e Bases da\nEducação Nacional — LDB nº 9.394/1996, o sistema educacional brasileiro vem buscando a construção de\nref",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 1,
+            "section": "pi190-section_ii_context",
+            "source_id": "pi-parecer-190-2025"
+          },
+          {
+            "excerpt": "- Diretrizes Curriculares Nacionais Gerais da Educação Básica (Resolução CNE/CEB nº\n4/2010).\n- A aprovação da Base Nacional Comum Curricular (BNCC), por meio da Resolução CNE/CP\nnº 2/2017, representou um marco fundamental na garantia do dir",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 2,
+            "section": "pi190-section_ii_context",
+            "source_id": "pi-parecer-190-2025"
+          }
+        ],
+        "expected_record_count": 1,
+        "item_checks": [
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "II – CONTEXTO DA REALIDADE DA EDUCAÇÃO BRASILEIRA\nDesde a Constituição Federal de 1988 e a consolidação da Lei de Diretrizes e Bases da\nEducação Nacional — LDB nº 9.394/1996, o sistema educacional brasileiro vem buscando a construção de\nreferenciais curriculares que garantam uma formação comum, equitativa e de qualidade para todos os\nestudantes.\nNesse percurso, destacam-se:\n- Parâmetros Curriculares Nacionais (PCNs);\n- Referenciais Curriculares Nacionais para a Educação Infantil (RCNEI);\n- Diretrizes Curriculares Nacionais (DCNs) para EI, EF e EM;",
+                "locator": "pi190/section_ii_context",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page1.json",
+                "ocr_reference_sha256": "952ffcc362476984a78437979c0bda80b60ab5bc0ae7ef1367575360c15efe53",
+                "page": 1,
+                "section": "section_ii_context",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "94f8e40804d506a5ce7ba481c640d0b7db044559bfa16c8271b2b829dc00681a"
+              },
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "- Diretrizes Curriculares Nacionais Gerais da Educação Básica (Resolução CNE/CEB nº\n4/2010).\n- A aprovação da Base Nacional Comum Curricular (BNCC), por meio da Resolução CNE/CP\nnº 2/2017, representou um marco fundamental na garantia do direito à aprendizagem e ao\ndesenvolvimento, consolidando competências gerais e habilidades essenciais para toda a Educação\nBásica. Estabelece a competencia 5 sobre Cultura Digital, além de outras referencias à competencias\ndigitais.\nEm 2021, a Lei 14.180/2021 — Política de Inovação Educação Conectada (PIEC)\n(Universalização do acesso à internet nase colas e formação docente para o uso pedagógico das\ntecnologias.)\nEm 2022, com a publicação da Resolução CNE/CEB nº 1/2022 e do Parecer CNE/CEB nº\n2/2022, a Computação foi incluída como área obrigatória, estruturada em três eixos: Pensamento\nComputacional, Mundo Digital e Cultura Digital, devendo integrar os currículos de todas as redes de\nensino.\nA instituição da Política Nacional de Educação Digital (PNED — Lei nº 14.533/2023) reforçou\na necessidade de inclusão digital, formação docente, práticas inovadoras, conectividade e integração ética\ne crítica das tecnologias e da Inteligência Artificial ao currículo escolar.\n- Decreto 11.713/2023 — Estratégia Nacional de Escolas Conectadas (ENEC).\n- Referencial de Saberes Digitais Docentes e Ferramenta de Autodiagnóstico, avançando na\nformação de professores para o uso pedagógico das tecnologias.\n- Lei nº 15.100, de 13 de janeiro de 2025: dispõe sobre a utilização, por estudantes, de\naparelhos eletrônicos portáteis pessoais nos estabelecimentos públicos e privados de ensino da educação\nbásica.\n- Decreto nº 12.385, de 18 de fevereiro de 2025 - Regulamenta a Lei nº 15.100, de 13 de\njaneiro de 2025, para tratar da proibição do uso, por estudantes, de aparelhos eletrônicos portáteis\npessoais durante a aula, o recreio ou o intervalo entre as aulas, para todas as etapas da educação básica,\ncom o objetivo de preservar a saúde mental, física e psíquica das crianças e dos adolescentes.\nA partir desse cenário, estados e municípios vêm adequando seus currículos para\nresponder às demandas contemporâneas, às transformações digitais e às mudanças sociais, garantindo o\ndesenvolvimento de competências essenciais para o século XXI.",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page2.json",
+                "ocr_reference_sha256": "2511c2761011bef638b2ad439919912c23404ded18608cc63374ed21c6a3025a",
+                "page": 2,
+                "section": "section_ii_context",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "78bee0d4eb8026b09cf26fac643de3b1db14c773517d33017661fa148457a1bb"
+              }
+            ],
+            "item_id": "ca:pi-parecer-190-2025:section:section_ii_context",
+            "text_sha256": "85657e3d811e01f8608c15bde98404995e6c21c73a746330d759ef07a2e86b69"
+          }
+        ],
+        "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+        "page_ranges": [
+          [
+            1,
+            2
+          ]
+        ],
+        "part": "Análise e fundamentação",
+        "role": "normative",
+        "unit_id": "pi190-section_ii_context"
+      },
+      {
+        "denominator": {
+          "basis": "primary_document_review",
+          "evidence": [
+            {
+              "excerpt": "III – ANÁLISE DO CURRÍCULO DA COMPUTAÇÃO DO ESTADO DO PIAUÍ\nO Currículo apresentado contempla Educação Infantil, Ensino Fundamental (Anos Iniciais e\nAnos Finais) e Ensino Médio, e se fundamenta na BNCC, na legislação vigente e nos referenci",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 2,
+              "section": "pi190-section_iii_analysis",
+              "source_id": "pi-parecer-190-2025"
+            }
+          ],
+          "expected_count": 1,
+          "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+          "source_inventory_path": "docs/evidence/source-audit-northeast/pi-parecer190-primary-inventory-20261031.json",
+          "source_inventory_sha256": "93fa58488a0565272c7d9a40520e51a7501cbe1661c31f7a09ccf35ab55931f6",
+          "unit": "documentary_records"
+        },
+        "evidence": [
+          {
+            "excerpt": "III – ANÁLISE DO CURRÍCULO DA COMPUTAÇÃO DO ESTADO DO PIAUÍ\nO Currículo apresentado contempla Educação Infantil, Ensino Fundamental (Anos Iniciais e\nAnos Finais) e Ensino Médio, e se fundamenta na BNCC, na legislação vigente e nos referenci",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 2,
+            "section": "pi190-section_iii_analysis",
+            "source_id": "pi-parecer-190-2025"
+          }
+        ],
+        "expected_record_count": 1,
+        "item_checks": [
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "III – ANÁLISE DO CURRÍCULO DA COMPUTAÇÃO DO ESTADO DO PIAUÍ\nO Currículo apresentado contempla Educação Infantil, Ensino Fundamental (Anos Iniciais e\nAnos Finais) e Ensino Médio, e se fundamenta na BNCC, na legislação vigente e nos referenciais nacionais\nda Computação.\nO documento apresenta:\n- sólida fundamentação teórica;\n- coerência com a BNCC e com a Res. CNE/CEB nº 1/2022;\n- alinhamento à PNED/2023;\n- contextualização com políticas estaduais (IA, Robótica Educacional, EM em Tempo\nIntegral, EJATEC etc.);\n- clareza na organização das competências e habilidades;\n- diretrizes para metodologia, avaliação, formação docente e infraestrutura.\nTrata-se de um documento robusto, orgânico e alinhado à legislação nacional.",
+                "locator": "pi190/section_iii_analysis",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page2.json",
+                "ocr_reference_sha256": "2511c2761011bef638b2ad439919912c23404ded18608cc63374ed21c6a3025a",
+                "page": 2,
+                "section": "section_iii_analysis",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "78bee0d4eb8026b09cf26fac643de3b1db14c773517d33017661fa148457a1bb"
+              }
+            ],
+            "item_id": "ca:pi-parecer-190-2025:section:section_iii_analysis",
+            "text_sha256": "6cdf48996406177a116d0a5d260998094343597a7341a92a1013886fde992218"
+          }
+        ],
+        "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+        "page_ranges": [
+          [
+            2,
+            2
+          ]
+        ],
+        "part": "Análise e fundamentação",
+        "role": "normative",
+        "unit_id": "pi190-section_iii_analysis"
+      },
+      {
+        "denominator": {
+          "basis": "primary_document_review",
+          "evidence": [
+            {
+              "excerpt": "IV — ANÁLISE POR ETAPA DA EDUCAÇÃO BÁSICA\n1. Educação Infantil\nO currículo da Educação Infantil integra a Computação por meio de práticas lúdicas,\ninterativas e contextualizadas, respeitando os princípios das DCNEI (Resolução CNE/CEB nº 5/2",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 3,
+              "section": "pi190-section_iv_stages",
+              "source_id": "pi-parecer-190-2025"
+            },
+            {
+              "excerpt": "Computação em abordagens interdisciplinares, materializadas em projetos integrados, uso pedagógico de\ntecnologias, metodologias ativas e práticas colaborativas, garantindo articulação com as demais áreas do\nconhecimento.\nObserva-se, ainda, ",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 4,
+              "section": "pi190-section_iv_stages",
+              "source_id": "pi-parecer-190-2025"
+            }
+          ],
+          "expected_count": 1,
+          "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+          "source_inventory_path": "docs/evidence/source-audit-northeast/pi-parecer190-primary-inventory-20261031.json",
+          "source_inventory_sha256": "93fa58488a0565272c7d9a40520e51a7501cbe1661c31f7a09ccf35ab55931f6",
+          "unit": "documentary_records"
+        },
+        "evidence": [
+          {
+            "excerpt": "IV — ANÁLISE POR ETAPA DA EDUCAÇÃO BÁSICA\n1. Educação Infantil\nO currículo da Educação Infantil integra a Computação por meio de práticas lúdicas,\ninterativas e contextualizadas, respeitando os princípios das DCNEI (Resolução CNE/CEB nº 5/2",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 3,
+            "section": "pi190-section_iv_stages",
+            "source_id": "pi-parecer-190-2025"
+          },
+          {
+            "excerpt": "Computação em abordagens interdisciplinares, materializadas em projetos integrados, uso pedagógico de\ntecnologias, metodologias ativas e práticas colaborativas, garantindo articulação com as demais áreas do\nconhecimento.\nObserva-se, ainda, ",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 4,
+            "section": "pi190-section_iv_stages",
+            "source_id": "pi-parecer-190-2025"
+          }
+        ],
+        "expected_record_count": 1,
+        "item_checks": [
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "IV — ANÁLISE POR ETAPA DA EDUCAÇÃO BÁSICA\n1. Educação Infantil\nO currículo da Educação Infantil integra a Computação por meio de práticas lúdicas,\ninterativas e contextualizadas, respeitando os princípios das DCNEI (Resolução CNE/CEB nº 5/2009) e os\ndireitos de aprendizagem previstos na BNCC.\nA abordagem enfatiza:\n- exploração;\n- observação;\n- identificação de padrões;\n- sequências;\n- resolução de problemas simples;\n- atividades plugadas e desplugadas.\nO documento está adequado, preservando a infância e garantindo experiências\ncomputacionais pertinentes.\n2. Ensino Fundamental\nO currículo diferencia de forma adequada os Anos Iniciais e os Anos Finais, conforme\nprevisto nas orientações nacionais e na Res. CNE/CEB nº 1/2022.\n2.1 Anos Iniciais (1º ao 5º ano)\nNos Anos Iniciais do Ensino Fundamental, a organização curricular adota o modelo\ninterdisciplinar, no qual a Computação não se apresenta como componente curricular específico, mas\ncomo prática pedagógica integrada às áreas previstas na BNCC. Nessa etapa, os conteúdos e abordagens\nrelacionadas à Computação articulam-se especialmente com Matemática, Língua Portuguesa, Ciências e\nArtes, com ênfase na utilização de jogos digitais, no desenvolvimento do raciocínio lógico, na resolução de\nproblemas e na promoção da cultura digital.\nEssa integração contribui para o fortalecimento de aspectos fundamentais do processo de\naprendizagem, como linguagem, raciocínio lógico, criatividade, resolução de problemas e cultura digital,\nassegurando uma progressão coerente com o desenvolvimento cognitivo esperado para essa faixa etária.\nAs atividades propostas articulam brincadeiras, exploração e práticas desplugadas, favorecendo\nexperiências formativas contextualizadas e adequadas ao universo infantil.\nConclui-se que a proposta apresentada para os Anos Iniciais se encontra tecnicamente\ncorreta e alinhada às normativas nacionais relativas ao componente de Computação no Ensino\nFundamental.\n2.2 Anos Finais (6º ao 9º ano)\nO currículo adota o modelo híbrido, combinando um componente curricular próprio com\npráticas interdisciplinares que articulam Computação, Matemática e Ciências da Natureza. Essa\nconfiguração assegura continuidade formativa, aplicação prática dos conceitos e fortalecimento das\ncompetências digitais. Nos Anos Finais do Ensino Fundamental, o Estado do Piauí utiliza esse modelo,\nconforme autorizado pelo Ofício CNE nº 88/2024, o que implica tanto a existência de um componente\ncurricular específico de Computação quanto sua integração a práticas pedagógicas de caráter transversal.\nNo que se refere ao componente curricular próprio, o documento apresenta habilidades\ndistribuídas em três campos — Pensamento Computacional, Mundo Digital e Cultura Digital —\nestruturadas de forma progressiva do 6º ao 9º ano. Paralelamente, o currículo evidencia a presença da",
+                "locator": "pi190/section_iv_stages",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page3.json",
+                "ocr_reference_sha256": "32fd9890c05f2e941df4b567e698a20936e1c50a092528adb5294139bcbc4e9b",
+                "page": 3,
+                "section": "section_iv_stages",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "60387492dfb9143c1e01702ab07ceb30588db5594f601dc73bd84a515397e1da"
+              },
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "Computação em abordagens interdisciplinares, materializadas em projetos integrados, uso pedagógico de\ntecnologias, metodologias ativas e práticas colaborativas, garantindo articulação com as demais áreas do\nconhecimento.\nObserva-se, ainda, a articulação com o componente de Inteligência Artificial no 9º ano,\nalinhada às políticas educacionais do Estado, que orientam a preparação do estudante para o Ensino\nMédio mediante a introdução de noções iniciais de IA, ética de dados e automação.\nConclui-se que o modelo híbrido adotado é adequado, contemporâneo e juridicamente\nrespaldado, apresentando alinhamento técnico à BNCC, ao PNED e ao Referencial do MEC, além de\ndemonstrar coerência pedagógica e progressão consistente.\nAs habilidades associadas previstas para a integração interdisciplinar ou transversal,\nentretanto, não se encontram explicitadas nos documentos analisados, assim como não consta a\ndefinição da carga horária destinada ao componente curricular.\n3. Ensino Médio\nNo Ensino Médio, o currículo estadual adota o modelo de transversalidade da Computação,\nconforme previsto no Ofício CNE nº 88/2024 e na PNED/2023, fortalecendo-o por meio do componente\ncurricular de Inteligência Artificial. A Computação é apresentada de forma integrada às quatro áreas da\nFormação Geral Básica — Linguagens, Matemática, Ciências da Natureza e Ciências Humanas —\nestabelecendo articulação direta com os eixos estruturantes da cultura digital. O documento traz matrizes\ncurriculares consistentes, nas quais as habilidades previstas demonstram alinhamento com os eixos da\nComputação e indicam progressão adequada para o desenvolvimento das competências digitais.\nA transversalidade é reforçada pela presença explícita do componente curricular de\nInteligência Artificial, que aborda conteúdos como sistemas algorítmicos, análise de dados, ética e\ncidadania digital, impactos sociais das tecnologias e pensamento computacional em nível avançado. Essa\norganização evidencia uma estrutura formativa contemporânea, colocando o Estado do Piauí em posição\nde destaque nacional no campo da cultura digital e na incorporação de temas emergentes no currículo do\nEnsino Médio.\nConclui-se que a organização curricular apresentada para essa etapa de ensino revela-se\ncoerente, inovadora e alinhada às diretrizes nacionais aplicáveis à matéria.",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page4.json",
+                "ocr_reference_sha256": "8c23415524ba2e5c0fe27505fc026b41daf1888f3fb26cba94be46f3a9225360",
+                "page": 4,
+                "section": "section_iv_stages",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "25a0710cf5dff18f497a5a63dabcca7ecf83e4b12f6ca82ea653daf878e10f41"
+              }
+            ],
+            "item_id": "ca:pi-parecer-190-2025:section:section_iv_stages",
+            "text_sha256": "94f56fabd67ab1e63bc8da4e551bca4ee0c2e0a9889db2304163f483ca6b598e"
+          }
+        ],
+        "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+        "page_ranges": [
+          [
+            3,
+            4
+          ]
+        ],
+        "part": "Análise e fundamentação",
+        "role": "normative",
+        "unit_id": "pi190-section_iv_stages"
+      },
+      {
+        "denominator": {
+          "basis": "primary_document_review",
+          "evidence": [
+            {
+              "excerpt": "V – FORMAÇÃO DOCENTE, INFRAESTRUTURA E AVALIAÇÃO\nO currículo estabelece medidas de implementação alinhadas às:\n- Resoluções CNE/CP nº 2/2015, nº 1/2020 e nº 4/2024 (formação docente);\n- Política Nacional de Educação Digital;\n- Meta 7.15 do ",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 4,
+              "section": "pi190-section_v_teacher_infrastructure_assessment",
+              "source_id": "pi-parecer-190-2025"
+            }
+          ],
+          "expected_count": 1,
+          "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+          "source_inventory_path": "docs/evidence/source-audit-northeast/pi-parecer190-primary-inventory-20261031.json",
+          "source_inventory_sha256": "93fa58488a0565272c7d9a40520e51a7501cbe1661c31f7a09ccf35ab55931f6",
+          "unit": "documentary_records"
+        },
+        "evidence": [
+          {
+            "excerpt": "V – FORMAÇÃO DOCENTE, INFRAESTRUTURA E AVALIAÇÃO\nO currículo estabelece medidas de implementação alinhadas às:\n- Resoluções CNE/CP nº 2/2015, nº 1/2020 e nº 4/2024 (formação docente);\n- Política Nacional de Educação Digital;\n- Meta 7.15 do ",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 4,
+            "section": "pi190-section_v_teacher_infrastructure_assessment",
+            "source_id": "pi-parecer-190-2025"
+          }
+        ],
+        "expected_record_count": 1,
+        "item_checks": [
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "V – FORMAÇÃO DOCENTE, INFRAESTRUTURA E AVALIAÇÃO\nO currículo estabelece medidas de implementação alinhadas às:\n- Resoluções CNE/CP nº 2/2015, nº 1/2020 e nº 4/2024 (formação docente);\n- Política Nacional de Educação Digital;\n- Meta 7.15 do PNE (conectividade);\n- Programas Educação Conectada, Robótica Educacional e Trilhas Formativas.\nAs estratégias propostas demonstram:\n- coerência pedagógica;\n- responsabilidade formativa;\n- sustentabilidade tecnológica;\n- acompanhamento sistemático.",
+                "locator": "pi190/section_v_teacher_infrastructure_assessment",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page4.json",
+                "ocr_reference_sha256": "8c23415524ba2e5c0fe27505fc026b41daf1888f3fb26cba94be46f3a9225360",
+                "page": 4,
+                "section": "section_v_teacher_infrastructure_assessment",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "25a0710cf5dff18f497a5a63dabcca7ecf83e4b12f6ca82ea653daf878e10f41"
+              }
+            ],
+            "item_id": "ca:pi-parecer-190-2025:section:section_v_teacher_infrastructure_assessment",
+            "text_sha256": "2c76ae1800510b8a8cb4d28c96bc2d6c3a6b89b36350a7eb5be83605c533c7a5"
+          }
+        ],
+        "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+        "page_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "part": "Análise e fundamentação",
+        "role": "normative",
+        "unit_id": "pi190-section_v_teacher_infrastructure_assessment"
+      },
+      {
+        "denominator": {
+          "basis": "primary_document_review",
+          "evidence": [
+            {
+              "excerpt": "VI — CONSIDERAÇÕES E RECOMENDAÇÕES\nApós a análise dos documentos submetidos, verifica-se que o currículo de Computação\napresentado cumpre integralmente as diretrizes estabelecidas pela Base Nacional Comum Curricular, pela",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 4,
+              "section": "pi190-section_vi_considerations",
+              "source_id": "pi-parecer-190-2025"
+            },
+            {
+              "excerpt": "Resolução CNE/CEB nº 1/2022, pela Política Nacional de Educação Digital (PNED/2023) e pelos demais\nmarcos legais aplicáveis. Observa-se que as estruturas de implementação previstas para a Educação\nInfantil, Anos Iniciais, Anos Finais e Ensi",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 5,
+              "section": "pi190-section_vi_considerations",
+              "source_id": "pi-parecer-190-2025"
+            }
+          ],
+          "expected_count": 1,
+          "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+          "source_inventory_path": "docs/evidence/source-audit-northeast/pi-parecer190-primary-inventory-20261031.json",
+          "source_inventory_sha256": "93fa58488a0565272c7d9a40520e51a7501cbe1661c31f7a09ccf35ab55931f6",
+          "unit": "documentary_records"
+        },
+        "evidence": [
+          {
+            "excerpt": "VI — CONSIDERAÇÕES E RECOMENDAÇÕES\nApós a análise dos documentos submetidos, verifica-se que o currículo de Computação\napresentado cumpre integralmente as diretrizes estabelecidas pela Base Nacional Comum Curricular, pela",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 4,
+            "section": "pi190-section_vi_considerations",
+            "source_id": "pi-parecer-190-2025"
+          },
+          {
+            "excerpt": "Resolução CNE/CEB nº 1/2022, pela Política Nacional de Educação Digital (PNED/2023) e pelos demais\nmarcos legais aplicáveis. Observa-se que as estruturas de implementação previstas para a Educação\nInfantil, Anos Iniciais, Anos Finais e Ensi",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 5,
+            "section": "pi190-section_vi_considerations",
+            "source_id": "pi-parecer-190-2025"
+          }
+        ],
+        "expected_record_count": 1,
+        "item_checks": [
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "VI — CONSIDERAÇÕES E RECOMENDAÇÕES\nApós a análise dos documentos submetidos, verifica-se que o currículo de Computação\napresentado cumpre integralmente as diretrizes estabelecidas pela Base Nacional Comum Curricular, pela",
+                "locator": "pi190/section_vi_considerations",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page4.json",
+                "ocr_reference_sha256": "8c23415524ba2e5c0fe27505fc026b41daf1888f3fb26cba94be46f3a9225360",
+                "page": 4,
+                "section": "section_vi_considerations",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "25a0710cf5dff18f497a5a63dabcca7ecf83e4b12f6ca82ea653daf878e10f41"
+              },
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "Resolução CNE/CEB nº 1/2022, pela Política Nacional de Educação Digital (PNED/2023) e pelos demais\nmarcos legais aplicáveis. Observa-se que as estruturas de implementação previstas para a Educação\nInfantil, Anos Iniciais, Anos Finais e Ensino Médio encontram-se tecnicamente fundamentadas, com\nmodelos alinhados às orientações nacionais e coerentes com as especificidades de cada etapa de ensino.\nO currículo demonstra consistência teórica e clareza operacional, evidenciando forte\nalinhamento às políticas de inovação educacional do Estado do Piauí. A governança proposta —\nenvolvendo Gerências Regionais de Educação, escolas, equipes de tecnologia, currículo, formação e\navaliação — está organizada de maneira clara e integrada, assegurando condições adequadas para a\nexecução das ações previstas. Destaca-se, ainda, que a proposta atende plenamente ao princípio\nconstitucional do direito à aprendizagem, contemplando progressão formativa e o desenvolvimento das\ncompetências digitais ao longo de toda a trajetória escolar.\nRegistra-se, por fim, como encaminhamentos pertinentes à implementação, a conveniência\nda criação de indicadores de avaliação e monitoramento, bem como a elaboração de um caderno com\norientações práticas destinado às escolas, de modo a apoiar a operacionalização e o acompanhamento do\ncurrículo na rede estadual de ensino.",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page5.json",
+                "ocr_reference_sha256": "bd32e13478c162dc8d5f12880f4650e91b8d206b481ba87ef4c837b913b20301",
+                "page": 5,
+                "section": "section_vi_considerations",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "dd536507585c4b4bcfdc4c0034786a097ce22981bb35d0d1f429f91f3c2e8aaf"
+              }
+            ],
+            "item_id": "ca:pi-parecer-190-2025:section:section_vi_considerations",
+            "text_sha256": "60a5bc6cdfdb10b5377984847e6abad22513834863888afa8f5085ac33fc0650"
+          }
+        ],
+        "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+        "page_ranges": [
+          [
+            4,
+            5
+          ]
+        ],
+        "part": "Análise e fundamentação",
+        "role": "normative",
+        "unit_id": "pi190-section_vi_considerations"
+      },
+      {
+        "denominator": {
+          "basis": "primary_document_review",
+          "evidence": [
+            {
+              "excerpt": "VII – CONCLUSÃO E VOTO\nDiante do exposto, OPINO FAVORAVELMENTE à aprovação do Currículo da Computação do\nSistema Estadual do Piauí, contemplando a Educação Infantil, o Ensino Fundamental (Anos Iniciais em\nmodelo interdisciplinar e transvers",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 5,
+              "section": "pi190-section_vii_conclusion_vote",
+              "source_id": "pi-parecer-190-2025"
+            }
+          ],
+          "expected_count": 1,
+          "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+          "source_inventory_path": "docs/evidence/source-audit-northeast/pi-parecer190-primary-inventory-20261031.json",
+          "source_inventory_sha256": "93fa58488a0565272c7d9a40520e51a7501cbe1661c31f7a09ccf35ab55931f6",
+          "unit": "documentary_records"
+        },
+        "evidence": [
+          {
+            "excerpt": "VII – CONCLUSÃO E VOTO\nDiante do exposto, OPINO FAVORAVELMENTE à aprovação do Currículo da Computação do\nSistema Estadual do Piauí, contemplando a Educação Infantil, o Ensino Fundamental (Anos Iniciais em\nmodelo interdisciplinar e transvers",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 5,
+            "section": "pi190-section_vii_conclusion_vote",
+            "source_id": "pi-parecer-190-2025"
+          }
+        ],
+        "expected_record_count": 1,
+        "item_checks": [
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "VII – CONCLUSÃO E VOTO\nDiante do exposto, OPINO FAVORAVELMENTE à aprovação do Currículo da Computação do\nSistema Estadual do Piauí, contemplando a Educação Infantil, o Ensino Fundamental (Anos Iniciais em\nmodelo interdisciplinar e transversal e Anos Finais em modelo híbrido) e o Ensino Médio (modelo\ntransversal fortalecido pelo componente curricular de Inteligência Artificial).\nRecomenda-se sua implementação imediata no Sistema Estadual de Ensino, com\nacompanhamento contínuo das condições pedagógicas, formativas e tecnológicas.\nÉ o parecer, s.m.j.\nSala das Sessões Plenárias “PROFESSOR MARIANO DA SILVA NETO” do Conselho Estadual\nde Educação do Piauí, em Teresina, 16 de dezembro de 2025.\nConsª Ana Célia Furtado Orsano — Relatora\nO Plenário do Conselho Estadual de Educação do Piauí aprovou por unanimidade o parecer do relator.\nConsª Débora de Fátima Mendonça S. Cavalcanti\nPresidente do CEE/PI — em exercício",
+                "locator": "pi190/section_vii_conclusion_vote",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page5.json",
+                "ocr_reference_sha256": "bd32e13478c162dc8d5f12880f4650e91b8d206b481ba87ef4c837b913b20301",
+                "page": 5,
+                "section": "section_vii_conclusion_vote",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "dd536507585c4b4bcfdc4c0034786a097ce22981bb35d0d1f429f91f3c2e8aaf"
+              }
+            ],
+            "item_id": "ca:pi-parecer-190-2025:section:section_vii_conclusion_vote",
+            "text_sha256": "d10fc54445125a467c57b9738c55a461d8db29c02e5eb98120dbcfe77779f7fe"
+          }
+        ],
+        "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+        "page_ranges": [
+          [
+            5,
+            5
+          ]
+        ],
+        "part": "Voto,conclusão e decisão",
+        "role": "normative",
+        "unit_id": "pi190-section_vii_conclusion_vote"
+      },
+      {
+        "denominator": {
+          "basis": "primary_document_review",
+          "evidence": [
+            {
+              "excerpt": "Documento assinado eletronicamente por DEBORA DE FÁTIMA MENDONÇA SANTOS -",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 5,
+              "section": "pi190-electronic_signature_block_1",
+              "source_id": "pi-parecer-190-2025"
+            },
+            {
+              "excerpt": "Conselheiro(a), em 18/12/2025, às 14:02, conforme horário oficial de Brasília, com fundamento no Cap. III, Art. 14 do Decreto Estadual nº 18.142, de 28 de fevereiro de 2019.",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 5,
+              "section": "pi190-electronic_signature_block_1",
+              "source_id": "pi-parecer-190-2025"
+            }
+          ],
+          "expected_count": 1,
+          "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+          "source_inventory_path": "docs/evidence/source-audit-northeast/pi-parecer190-primary-inventory-20261031.json",
+          "source_inventory_sha256": "93fa58488a0565272c7d9a40520e51a7501cbe1661c31f7a09ccf35ab55931f6",
+          "unit": "documentary_records"
+        },
+        "evidence": [
+          {
+            "excerpt": "Documento assinado eletronicamente por DEBORA DE FÁTIMA MENDONÇA SANTOS -",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 5,
+            "section": "pi190-electronic_signature_block_1",
+            "source_id": "pi-parecer-190-2025"
+          },
+          {
+            "excerpt": "Conselheiro(a), em 18/12/2025, às 14:02, conforme horário oficial de Brasília, com fundamento no Cap. III, Art. 14 do Decreto Estadual nº 18.142, de 28 de fevereiro de 2019.",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 5,
+            "section": "pi190-electronic_signature_block_1",
+            "source_id": "pi-parecer-190-2025"
+          }
+        ],
+        "expected_record_count": 1,
+        "item_checks": [
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "Documento assinado eletronicamente por DEBORA DE FÁTIMA MENDONÇA SANTOS -",
+                "locator": "pi190/electronic_signature_block_1",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page5.json",
+                "ocr_reference_sha256": "bd32e13478c162dc8d5f12880f4650e91b8d206b481ba87ef4c837b913b20301",
+                "page": 5,
+                "section": "electronic_signature_block_1",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "dd536507585c4b4bcfdc4c0034786a097ce22981bb35d0d1f429f91f3c2e8aaf"
+              },
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "Conselheiro(a), em 18/12/2025, às 14:02, conforme horário oficial de Brasília, com fundamento no Cap. III, Art. 14 do Decreto Estadual nº 18.142, de 28 de fevereiro de 2019.",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page5.json",
+                "ocr_reference_sha256": "bd32e13478c162dc8d5f12880f4650e91b8d206b481ba87ef4c837b913b20301",
+                "page": 5,
+                "section": "electronic_signature_block_1",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "dd536507585c4b4bcfdc4c0034786a097ce22981bb35d0d1f429f91f3c2e8aaf"
+              }
+            ],
+            "item_id": "ca:pi-parecer-190-2025:section:electronic_signature_block_1",
+            "text_sha256": "2fe27d5523d91fd3229af01c971563d095d2b32392d9c5ebf05a4f73a7a2c771"
+          }
+        ],
+        "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+        "page_ranges": [
+          [
+            5,
+            5
+          ]
+        ],
+        "part": "Assinaturas",
+        "role": "documentary_context",
+        "unit_id": "pi190-electronic_signature_block_1"
+      },
+      {
+        "denominator": {
+          "basis": "primary_document_review",
+          "evidence": [
+            {
+              "excerpt": "Documento assinado eletronicamente por ANA CELIA FURTADO ORSANO -",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 5,
+              "section": "pi190-electronic_signature_block_2",
+              "source_id": "pi-parecer-190-2025"
+            },
+            {
+              "excerpt": "Conselheiro(a), em 19/12/2025, às 11:11, conforme horário oficial de Brasília, com fundamento no Cap. III, Art. 14 do Decreto Estadual nº 18.142, de 28 de fevereiro de 2019.",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 5,
+              "section": "pi190-electronic_signature_block_2",
+              "source_id": "pi-parecer-190-2025"
+            }
+          ],
+          "expected_count": 1,
+          "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+          "source_inventory_path": "docs/evidence/source-audit-northeast/pi-parecer190-primary-inventory-20261031.json",
+          "source_inventory_sha256": "93fa58488a0565272c7d9a40520e51a7501cbe1661c31f7a09ccf35ab55931f6",
+          "unit": "documentary_records"
+        },
+        "evidence": [
+          {
+            "excerpt": "Documento assinado eletronicamente por ANA CELIA FURTADO ORSANO -",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 5,
+            "section": "pi190-electronic_signature_block_2",
+            "source_id": "pi-parecer-190-2025"
+          },
+          {
+            "excerpt": "Conselheiro(a), em 19/12/2025, às 11:11, conforme horário oficial de Brasília, com fundamento no Cap. III, Art. 14 do Decreto Estadual nº 18.142, de 28 de fevereiro de 2019.",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 5,
+            "section": "pi190-electronic_signature_block_2",
+            "source_id": "pi-parecer-190-2025"
+          }
+        ],
+        "expected_record_count": 1,
+        "item_checks": [
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "Documento assinado eletronicamente por ANA CELIA FURTADO ORSANO -",
+                "locator": "pi190/electronic_signature_block_2",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page5.json",
+                "ocr_reference_sha256": "bd32e13478c162dc8d5f12880f4650e91b8d206b481ba87ef4c837b913b20301",
+                "page": 5,
+                "section": "electronic_signature_block_2",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "dd536507585c4b4bcfdc4c0034786a097ce22981bb35d0d1f429f91f3c2e8aaf"
+              },
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "Conselheiro(a), em 19/12/2025, às 11:11, conforme horário oficial de Brasília, com fundamento no Cap. III, Art. 14 do Decreto Estadual nº 18.142, de 28 de fevereiro de 2019.",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page5.json",
+                "ocr_reference_sha256": "bd32e13478c162dc8d5f12880f4650e91b8d206b481ba87ef4c837b913b20301",
+                "page": 5,
+                "section": "electronic_signature_block_2",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "dd536507585c4b4bcfdc4c0034786a097ce22981bb35d0d1f429f91f3c2e8aaf"
+              }
+            ],
+            "item_id": "ca:pi-parecer-190-2025:section:electronic_signature_block_2",
+            "text_sha256": "b3d1ee783b81fb0c8c2e1c0061f93cf2d259ccbc3b80c1350c31c103bfd861e6"
+          }
+        ],
+        "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+        "page_ranges": [
+          [
+            5,
+            5
+          ]
+        ],
+        "part": "Assinaturas",
+        "role": "documentary_context",
+        "unit_id": "pi190-electronic_signature_block_2"
+      },
+      {
+        "denominator": {
+          "basis": "primary_document_review",
+          "evidence": [
+            {
+              "excerpt": "A autenticidade deste documento pode ser conferida no site\nhttps://sei.pi.gov.br/sei/controlador_externo.php?acao=documento_conferir&id_orgao_acesso_externo=0, informando o código verificador\n0021707429 e o código CRC E060E53E.",
+              "method": "full_page_visual_cotejo_of_original_pdf",
+              "page": 6,
+              "section": "pi190-sei_validation_record",
+              "source_id": "pi-parecer-190-2025"
+            }
+          ],
+          "expected_count": 1,
+          "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+          "source_inventory_path": "docs/evidence/source-audit-northeast/pi-parecer190-primary-inventory-20261031.json",
+          "source_inventory_sha256": "93fa58488a0565272c7d9a40520e51a7501cbe1661c31f7a09ccf35ab55931f6",
+          "unit": "documentary_records"
+        },
+        "evidence": [
+          {
+            "excerpt": "A autenticidade deste documento pode ser conferida no site\nhttps://sei.pi.gov.br/sei/controlador_externo.php?acao=documento_conferir&id_orgao_acesso_externo=0, informando o código verificador\n0021707429 e o código CRC E060E53E.",
+            "method": "full_page_visual_cotejo_of_original_pdf",
+            "page": 6,
+            "section": "pi190-sei_validation_record",
+            "source_id": "pi-parecer-190-2025"
+          }
+        ],
+        "expected_record_count": 1,
+        "item_checks": [
+          {
+            "evidence": [
+              {
+                "bbox": [
+                  0,
+                  0,
+                  10000,
+                  10000
+                ],
+                "excerpt": "A autenticidade deste documento pode ser conferida no site\nhttps://sei.pi.gov.br/sei/controlador_externo.php?acao=documento_conferir&id_orgao_acesso_externo=0, informando o código verificador\n0021707429 e o código CRC E060E53E.",
+                "locator": "pi190/sei_validation_record",
+                "method": "source-image-visual-reviewed-ocr-partition-v1",
+                "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page6.json",
+                "ocr_reference_sha256": "17fc13d37c8763b13a734d2d37ebd4be9c9932b17c818df03910a52916b1f4cb",
+                "page": 6,
+                "section": "sei_validation_record",
+                "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+                "source_id": "pi-parecer-190-2025",
+                "source_image_sha256": "20c4146843823ccce4d0ecb76e4b8e3f11b4c412549ba8c093f768cefdb4e5bf"
+              }
+            ],
+            "item_id": "ca:pi-parecer-190-2025:section:sei_validation_record",
+            "text_sha256": "0b5fe489472e43c11f7a1f6db808a04608b565393d704a3bb04bf4db4b672239"
+          }
+        ],
+        "method": "Visual census of original scanned PDF section/header/signature/authentication units, independently cotejado against the pinned OCR cache.",
+        "page_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "part": "Assinaturas",
+        "role": "documentary_context",
+        "unit_id": "pi190-sei_validation_record"
+      }
+    ]
+  },
+  "extraction_revision": "page-cell-v1.5.0",
+  "findings": [],
+  "limits": [
+    "The opinion itself is reconciled; the exact identity and edition of SEI attachments 0021327173 and 0021327177 remain unverified and are not inferred from local SEDUC curriculum PDFs.",
+    "The visual review did not assess legal merits or authenticate the SEI record externally.",
+    "Electronic employee registration numbers are preserved in the private source and visual OCR proof but omitted from structured signature text.",
+    "This receipt establishes the documentary opinion only; it does not claim PI curriculum coverage or UF readiness."
+  ],
+  "method": "Full-page visual OCR cotejo, fixed source-unit partition and exact evidence fragments bound to the six-page original PDF.",
+  "parts": [
+    {
+      "evidence": [
+        {
+          "excerpt": "Processo nº 00011.022297/2025-00\nTeresina-PI, 18 de dezembro de 2025\nPARECER CEE/PI Nº 190/2025\nOpina pela autorização do Currículo da Computação para\na Educação Infantil, o Ensino Fundamental e o Ensino\nMédio do Sistema Estadual de Ensino ",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 1,
+          "section": "pi190-identification_case_header",
+          "source_id": "pi-parecer-190-2025"
+        }
+      ],
+      "expected_item_ids": [
+        "ca:pi-parecer-190-2025:section:identification_case_header"
+      ],
+      "findings": [],
+      "item_checks": [
+        {
+          "evidence": [
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "Processo nº 00011.022297/2025-00\nTeresina-PI, 18 de dezembro de 2025\nPARECER CEE/PI Nº 190/2025\nOpina pela autorização do Currículo da Computação para\na Educação Infantil, o Ensino Fundamental e o Ensino\nMédio do Sistema Estadual de Ensino do Piauí.\nPROCESSO SEI: 00011.079381/2025-97\nASSUNTO: Autorização do Currículo da Computação para a Educação Infantil, o Ensino Fundamental e o\nEnsino Médio do Sistema Estadual de Ensino do Piauí\nINTERESSADO: Secretaria de Estado da Educação do Piauí\nRELATORA: Consª Ana Célia Furtado Orsano\nRELATADO: 16/12/2025",
+              "locator": "pi190/identification_case_header",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page1.json",
+              "ocr_reference_sha256": "952ffcc362476984a78437979c0bda80b60ab5bc0ae7ef1367575360c15efe53",
+              "page": 1,
+              "section": "identification_case_header",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "94f8e40804d506a5ce7ba481c640d0b7db044559bfa16c8271b2b829dc00681a"
+            }
+          ],
+          "item_id": "ca:pi-parecer-190-2025:section:identification_case_header",
+          "text_sha256": "f40ed3664182c2efa35ea0251ce385cf55e5fff362dd45bc8872f55a33612ae4"
+        }
+      ],
+      "name": "Identificação,processo e relatório",
+      "verified_item_ids": [
+        "ca:pi-parecer-190-2025:section:identification_case_header"
+      ]
+    },
+    {
+      "evidence": [
+        {
+          "excerpt": "I – INTRODUÇÃO\nTrata-se de solicitação encaminhada pela Secretaria de Estado da Educação do Piauí —\nSEDUC/PI, por meio da Superintendência de Ensino (SUPEN), submetendo a este Conselho Estadual de\nEducação, para análise e manifestação, os d",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 1,
+          "section": "pi190-section_i_introduction",
+          "source_id": "pi-parecer-190-2025"
+        }
+      ],
+      "expected_item_ids": [
+        "ca:pi-parecer-190-2025:section:section_i_introduction"
+      ],
+      "findings": [],
+      "item_checks": [
+        {
+          "evidence": [
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "I – INTRODUÇÃO\nTrata-se de solicitação encaminhada pela Secretaria de Estado da Educação do Piauí —\nSEDUC/PI, por meio da Superintendência de Ensino (SUPEN), submetendo a este Conselho Estadual de\nEducação, para análise e manifestação, os documentos curriculares referentes à implementação da\nComputação na Educação Infantil, no Ensino Fundamental e no Ensino Médio do Sistema Estadual.\nForam apresentados, para fins de apreciação, o Currículo de Computação para o Ensino\nMédio (SEI nº 0021327173) e Currículo de Computação para a Educação Infantil e o Ensino Fundamental\n(SEI nº 0021327177), protocolados no sistema SEI em 24 de novembro de 2025, os quais compõem os\nautos encaminhados para emissão de parecer.",
+              "locator": "pi190/section_i_introduction",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page1.json",
+              "ocr_reference_sha256": "952ffcc362476984a78437979c0bda80b60ab5bc0ae7ef1367575360c15efe53",
+              "page": 1,
+              "section": "section_i_introduction",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "94f8e40804d506a5ce7ba481c640d0b7db044559bfa16c8271b2b829dc00681a"
+            }
+          ],
+          "item_id": "ca:pi-parecer-190-2025:section:section_i_introduction",
+          "text_sha256": "6109ecc1763da2c6edcf45d46f284fe662ef68c24357e14516178e65966be8e5"
+        }
+      ],
+      "name": "Introdução e documentos submetidos",
+      "verified_item_ids": [
+        "ca:pi-parecer-190-2025:section:section_i_introduction"
+      ]
+    },
+    {
+      "evidence": [
+        {
+          "excerpt": "II – CONTEXTO DA REALIDADE DA EDUCAÇÃO BRASILEIRA\nDesde a Constituição Federal de 1988 e a consolidação da Lei de Diretrizes e Bases da\nEducação Nacional — LDB nº 9.394/1996, o sistema educacional brasileiro vem buscando a construção de\nref",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 1,
+          "section": "pi190-section_ii_context",
+          "source_id": "pi-parecer-190-2025"
+        },
+        {
+          "excerpt": "- Diretrizes Curriculares Nacionais Gerais da Educação Básica (Resolução CNE/CEB nº\n4/2010).\n- A aprovação da Base Nacional Comum Curricular (BNCC), por meio da Resolução CNE/CP\nnº 2/2017, representou um marco fundamental na garantia do dir",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 2,
+          "section": "pi190-section_ii_context",
+          "source_id": "pi-parecer-190-2025"
+        },
+        {
+          "excerpt": "III – ANÁLISE DO CURRÍCULO DA COMPUTAÇÃO DO ESTADO DO PIAUÍ\nO Currículo apresentado contempla Educação Infantil, Ensino Fundamental (Anos Iniciais e\nAnos Finais) e Ensino Médio, e se fundamenta na BNCC, na legislação vigente e nos referenci",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 2,
+          "section": "pi190-section_iii_analysis",
+          "source_id": "pi-parecer-190-2025"
+        },
+        {
+          "excerpt": "IV — ANÁLISE POR ETAPA DA EDUCAÇÃO BÁSICA\n1. Educação Infantil\nO currículo da Educação Infantil integra a Computação por meio de práticas lúdicas,\ninterativas e contextualizadas, respeitando os princípios das DCNEI (Resolução CNE/CEB nº 5/2",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 3,
+          "section": "pi190-section_iv_stages",
+          "source_id": "pi-parecer-190-2025"
+        },
+        {
+          "excerpt": "Computação em abordagens interdisciplinares, materializadas em projetos integrados, uso pedagógico de\ntecnologias, metodologias ativas e práticas colaborativas, garantindo articulação com as demais áreas do\nconhecimento.\nObserva-se, ainda, ",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 4,
+          "section": "pi190-section_iv_stages",
+          "source_id": "pi-parecer-190-2025"
+        },
+        {
+          "excerpt": "V – FORMAÇÃO DOCENTE, INFRAESTRUTURA E AVALIAÇÃO\nO currículo estabelece medidas de implementação alinhadas às:\n- Resoluções CNE/CP nº 2/2015, nº 1/2020 e nº 4/2024 (formação docente);\n- Política Nacional de Educação Digital;\n- Meta 7.15 do ",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 4,
+          "section": "pi190-section_v_teacher_infrastructure_assessment",
+          "source_id": "pi-parecer-190-2025"
+        },
+        {
+          "excerpt": "VI — CONSIDERAÇÕES E RECOMENDAÇÕES\nApós a análise dos documentos submetidos, verifica-se que o currículo de Computação\napresentado cumpre integralmente as diretrizes estabelecidas pela Base Nacional Comum Curricular, pela",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 4,
+          "section": "pi190-section_vi_considerations",
+          "source_id": "pi-parecer-190-2025"
+        },
+        {
+          "excerpt": "Resolução CNE/CEB nº 1/2022, pela Política Nacional de Educação Digital (PNED/2023) e pelos demais\nmarcos legais aplicáveis. Observa-se que as estruturas de implementação previstas para a Educação\nInfantil, Anos Iniciais, Anos Finais e Ensi",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 5,
+          "section": "pi190-section_vi_considerations",
+          "source_id": "pi-parecer-190-2025"
+        }
+      ],
+      "expected_item_ids": [
+        "ca:pi-parecer-190-2025:section:section_ii_context",
+        "ca:pi-parecer-190-2025:section:section_iii_analysis",
+        "ca:pi-parecer-190-2025:section:section_iv_stages",
+        "ca:pi-parecer-190-2025:section:section_v_teacher_infrastructure_assessment",
+        "ca:pi-parecer-190-2025:section:section_vi_considerations"
+      ],
+      "findings": [],
+      "item_checks": [
+        {
+          "evidence": [
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "II – CONTEXTO DA REALIDADE DA EDUCAÇÃO BRASILEIRA\nDesde a Constituição Federal de 1988 e a consolidação da Lei de Diretrizes e Bases da\nEducação Nacional — LDB nº 9.394/1996, o sistema educacional brasileiro vem buscando a construção de\nreferenciais curriculares que garantam uma formação comum, equitativa e de qualidade para todos os\nestudantes.\nNesse percurso, destacam-se:\n- Parâmetros Curriculares Nacionais (PCNs);\n- Referenciais Curriculares Nacionais para a Educação Infantil (RCNEI);\n- Diretrizes Curriculares Nacionais (DCNs) para EI, EF e EM;",
+              "locator": "pi190/section_ii_context",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page1.json",
+              "ocr_reference_sha256": "952ffcc362476984a78437979c0bda80b60ab5bc0ae7ef1367575360c15efe53",
+              "page": 1,
+              "section": "section_ii_context",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "94f8e40804d506a5ce7ba481c640d0b7db044559bfa16c8271b2b829dc00681a"
+            },
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "- Diretrizes Curriculares Nacionais Gerais da Educação Básica (Resolução CNE/CEB nº\n4/2010).\n- A aprovação da Base Nacional Comum Curricular (BNCC), por meio da Resolução CNE/CP\nnº 2/2017, representou um marco fundamental na garantia do direito à aprendizagem e ao\ndesenvolvimento, consolidando competências gerais e habilidades essenciais para toda a Educação\nBásica. Estabelece a competencia 5 sobre Cultura Digital, além de outras referencias à competencias\ndigitais.\nEm 2021, a Lei 14.180/2021 — Política de Inovação Educação Conectada (PIEC)\n(Universalização do acesso à internet nase colas e formação docente para o uso pedagógico das\ntecnologias.)\nEm 2022, com a publicação da Resolução CNE/CEB nº 1/2022 e do Parecer CNE/CEB nº\n2/2022, a Computação foi incluída como área obrigatória, estruturada em três eixos: Pensamento\nComputacional, Mundo Digital e Cultura Digital, devendo integrar os currículos de todas as redes de\nensino.\nA instituição da Política Nacional de Educação Digital (PNED — Lei nº 14.533/2023) reforçou\na necessidade de inclusão digital, formação docente, práticas inovadoras, conectividade e integração ética\ne crítica das tecnologias e da Inteligência Artificial ao currículo escolar.\n- Decreto 11.713/2023 — Estratégia Nacional de Escolas Conectadas (ENEC).\n- Referencial de Saberes Digitais Docentes e Ferramenta de Autodiagnóstico, avançando na\nformação de professores para o uso pedagógico das tecnologias.\n- Lei nº 15.100, de 13 de janeiro de 2025: dispõe sobre a utilização, por estudantes, de\naparelhos eletrônicos portáteis pessoais nos estabelecimentos públicos e privados de ensino da educação\nbásica.\n- Decreto nº 12.385, de 18 de fevereiro de 2025 - Regulamenta a Lei nº 15.100, de 13 de\njaneiro de 2025, para tratar da proibição do uso, por estudantes, de aparelhos eletrônicos portáteis\npessoais durante a aula, o recreio ou o intervalo entre as aulas, para todas as etapas da educação básica,\ncom o objetivo de preservar a saúde mental, física e psíquica das crianças e dos adolescentes.\nA partir desse cenário, estados e municípios vêm adequando seus currículos para\nresponder às demandas contemporâneas, às transformações digitais e às mudanças sociais, garantindo o\ndesenvolvimento de competências essenciais para o século XXI.",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page2.json",
+              "ocr_reference_sha256": "2511c2761011bef638b2ad439919912c23404ded18608cc63374ed21c6a3025a",
+              "page": 2,
+              "section": "section_ii_context",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "78bee0d4eb8026b09cf26fac643de3b1db14c773517d33017661fa148457a1bb"
+            }
+          ],
+          "item_id": "ca:pi-parecer-190-2025:section:section_ii_context",
+          "text_sha256": "85657e3d811e01f8608c15bde98404995e6c21c73a746330d759ef07a2e86b69"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "III – ANÁLISE DO CURRÍCULO DA COMPUTAÇÃO DO ESTADO DO PIAUÍ\nO Currículo apresentado contempla Educação Infantil, Ensino Fundamental (Anos Iniciais e\nAnos Finais) e Ensino Médio, e se fundamenta na BNCC, na legislação vigente e nos referenciais nacionais\nda Computação.\nO documento apresenta:\n- sólida fundamentação teórica;\n- coerência com a BNCC e com a Res. CNE/CEB nº 1/2022;\n- alinhamento à PNED/2023;\n- contextualização com políticas estaduais (IA, Robótica Educacional, EM em Tempo\nIntegral, EJATEC etc.);\n- clareza na organização das competências e habilidades;\n- diretrizes para metodologia, avaliação, formação docente e infraestrutura.\nTrata-se de um documento robusto, orgânico e alinhado à legislação nacional.",
+              "locator": "pi190/section_iii_analysis",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page2.json",
+              "ocr_reference_sha256": "2511c2761011bef638b2ad439919912c23404ded18608cc63374ed21c6a3025a",
+              "page": 2,
+              "section": "section_iii_analysis",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "78bee0d4eb8026b09cf26fac643de3b1db14c773517d33017661fa148457a1bb"
+            }
+          ],
+          "item_id": "ca:pi-parecer-190-2025:section:section_iii_analysis",
+          "text_sha256": "6cdf48996406177a116d0a5d260998094343597a7341a92a1013886fde992218"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "IV — ANÁLISE POR ETAPA DA EDUCAÇÃO BÁSICA\n1. Educação Infantil\nO currículo da Educação Infantil integra a Computação por meio de práticas lúdicas,\ninterativas e contextualizadas, respeitando os princípios das DCNEI (Resolução CNE/CEB nº 5/2009) e os\ndireitos de aprendizagem previstos na BNCC.\nA abordagem enfatiza:\n- exploração;\n- observação;\n- identificação de padrões;\n- sequências;\n- resolução de problemas simples;\n- atividades plugadas e desplugadas.\nO documento está adequado, preservando a infância e garantindo experiências\ncomputacionais pertinentes.\n2. Ensino Fundamental\nO currículo diferencia de forma adequada os Anos Iniciais e os Anos Finais, conforme\nprevisto nas orientações nacionais e na Res. CNE/CEB nº 1/2022.\n2.1 Anos Iniciais (1º ao 5º ano)\nNos Anos Iniciais do Ensino Fundamental, a organização curricular adota o modelo\ninterdisciplinar, no qual a Computação não se apresenta como componente curricular específico, mas\ncomo prática pedagógica integrada às áreas previstas na BNCC. Nessa etapa, os conteúdos e abordagens\nrelacionadas à Computação articulam-se especialmente com Matemática, Língua Portuguesa, Ciências e\nArtes, com ênfase na utilização de jogos digitais, no desenvolvimento do raciocínio lógico, na resolução de\nproblemas e na promoção da cultura digital.\nEssa integração contribui para o fortalecimento de aspectos fundamentais do processo de\naprendizagem, como linguagem, raciocínio lógico, criatividade, resolução de problemas e cultura digital,\nassegurando uma progressão coerente com o desenvolvimento cognitivo esperado para essa faixa etária.\nAs atividades propostas articulam brincadeiras, exploração e práticas desplugadas, favorecendo\nexperiências formativas contextualizadas e adequadas ao universo infantil.\nConclui-se que a proposta apresentada para os Anos Iniciais se encontra tecnicamente\ncorreta e alinhada às normativas nacionais relativas ao componente de Computação no Ensino\nFundamental.\n2.2 Anos Finais (6º ao 9º ano)\nO currículo adota o modelo híbrido, combinando um componente curricular próprio com\npráticas interdisciplinares que articulam Computação, Matemática e Ciências da Natureza. Essa\nconfiguração assegura continuidade formativa, aplicação prática dos conceitos e fortalecimento das\ncompetências digitais. Nos Anos Finais do Ensino Fundamental, o Estado do Piauí utiliza esse modelo,\nconforme autorizado pelo Ofício CNE nº 88/2024, o que implica tanto a existência de um componente\ncurricular específico de Computação quanto sua integração a práticas pedagógicas de caráter transversal.\nNo que se refere ao componente curricular próprio, o documento apresenta habilidades\ndistribuídas em três campos — Pensamento Computacional, Mundo Digital e Cultura Digital —\nestruturadas de forma progressiva do 6º ao 9º ano. Paralelamente, o currículo evidencia a presença da",
+              "locator": "pi190/section_iv_stages",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page3.json",
+              "ocr_reference_sha256": "32fd9890c05f2e941df4b567e698a20936e1c50a092528adb5294139bcbc4e9b",
+              "page": 3,
+              "section": "section_iv_stages",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "60387492dfb9143c1e01702ab07ceb30588db5594f601dc73bd84a515397e1da"
+            },
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "Computação em abordagens interdisciplinares, materializadas em projetos integrados, uso pedagógico de\ntecnologias, metodologias ativas e práticas colaborativas, garantindo articulação com as demais áreas do\nconhecimento.\nObserva-se, ainda, a articulação com o componente de Inteligência Artificial no 9º ano,\nalinhada às políticas educacionais do Estado, que orientam a preparação do estudante para o Ensino\nMédio mediante a introdução de noções iniciais de IA, ética de dados e automação.\nConclui-se que o modelo híbrido adotado é adequado, contemporâneo e juridicamente\nrespaldado, apresentando alinhamento técnico à BNCC, ao PNED e ao Referencial do MEC, além de\ndemonstrar coerência pedagógica e progressão consistente.\nAs habilidades associadas previstas para a integração interdisciplinar ou transversal,\nentretanto, não se encontram explicitadas nos documentos analisados, assim como não consta a\ndefinição da carga horária destinada ao componente curricular.\n3. Ensino Médio\nNo Ensino Médio, o currículo estadual adota o modelo de transversalidade da Computação,\nconforme previsto no Ofício CNE nº 88/2024 e na PNED/2023, fortalecendo-o por meio do componente\ncurricular de Inteligência Artificial. A Computação é apresentada de forma integrada às quatro áreas da\nFormação Geral Básica — Linguagens, Matemática, Ciências da Natureza e Ciências Humanas —\nestabelecendo articulação direta com os eixos estruturantes da cultura digital. O documento traz matrizes\ncurriculares consistentes, nas quais as habilidades previstas demonstram alinhamento com os eixos da\nComputação e indicam progressão adequada para o desenvolvimento das competências digitais.\nA transversalidade é reforçada pela presença explícita do componente curricular de\nInteligência Artificial, que aborda conteúdos como sistemas algorítmicos, análise de dados, ética e\ncidadania digital, impactos sociais das tecnologias e pensamento computacional em nível avançado. Essa\norganização evidencia uma estrutura formativa contemporânea, colocando o Estado do Piauí em posição\nde destaque nacional no campo da cultura digital e na incorporação de temas emergentes no currículo do\nEnsino Médio.\nConclui-se que a organização curricular apresentada para essa etapa de ensino revela-se\ncoerente, inovadora e alinhada às diretrizes nacionais aplicáveis à matéria.",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page4.json",
+              "ocr_reference_sha256": "8c23415524ba2e5c0fe27505fc026b41daf1888f3fb26cba94be46f3a9225360",
+              "page": 4,
+              "section": "section_iv_stages",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "25a0710cf5dff18f497a5a63dabcca7ecf83e4b12f6ca82ea653daf878e10f41"
+            }
+          ],
+          "item_id": "ca:pi-parecer-190-2025:section:section_iv_stages",
+          "text_sha256": "94f56fabd67ab1e63bc8da4e551bca4ee0c2e0a9889db2304163f483ca6b598e"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "V – FORMAÇÃO DOCENTE, INFRAESTRUTURA E AVALIAÇÃO\nO currículo estabelece medidas de implementação alinhadas às:\n- Resoluções CNE/CP nº 2/2015, nº 1/2020 e nº 4/2024 (formação docente);\n- Política Nacional de Educação Digital;\n- Meta 7.15 do PNE (conectividade);\n- Programas Educação Conectada, Robótica Educacional e Trilhas Formativas.\nAs estratégias propostas demonstram:\n- coerência pedagógica;\n- responsabilidade formativa;\n- sustentabilidade tecnológica;\n- acompanhamento sistemático.",
+              "locator": "pi190/section_v_teacher_infrastructure_assessment",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page4.json",
+              "ocr_reference_sha256": "8c23415524ba2e5c0fe27505fc026b41daf1888f3fb26cba94be46f3a9225360",
+              "page": 4,
+              "section": "section_v_teacher_infrastructure_assessment",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "25a0710cf5dff18f497a5a63dabcca7ecf83e4b12f6ca82ea653daf878e10f41"
+            }
+          ],
+          "item_id": "ca:pi-parecer-190-2025:section:section_v_teacher_infrastructure_assessment",
+          "text_sha256": "2c76ae1800510b8a8cb4d28c96bc2d6c3a6b89b36350a7eb5be83605c533c7a5"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "VI — CONSIDERAÇÕES E RECOMENDAÇÕES\nApós a análise dos documentos submetidos, verifica-se que o currículo de Computação\napresentado cumpre integralmente as diretrizes estabelecidas pela Base Nacional Comum Curricular, pela",
+              "locator": "pi190/section_vi_considerations",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page4.json",
+              "ocr_reference_sha256": "8c23415524ba2e5c0fe27505fc026b41daf1888f3fb26cba94be46f3a9225360",
+              "page": 4,
+              "section": "section_vi_considerations",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "25a0710cf5dff18f497a5a63dabcca7ecf83e4b12f6ca82ea653daf878e10f41"
+            },
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "Resolução CNE/CEB nº 1/2022, pela Política Nacional de Educação Digital (PNED/2023) e pelos demais\nmarcos legais aplicáveis. Observa-se que as estruturas de implementação previstas para a Educação\nInfantil, Anos Iniciais, Anos Finais e Ensino Médio encontram-se tecnicamente fundamentadas, com\nmodelos alinhados às orientações nacionais e coerentes com as especificidades de cada etapa de ensino.\nO currículo demonstra consistência teórica e clareza operacional, evidenciando forte\nalinhamento às políticas de inovação educacional do Estado do Piauí. A governança proposta —\nenvolvendo Gerências Regionais de Educação, escolas, equipes de tecnologia, currículo, formação e\navaliação — está organizada de maneira clara e integrada, assegurando condições adequadas para a\nexecução das ações previstas. Destaca-se, ainda, que a proposta atende plenamente ao princípio\nconstitucional do direito à aprendizagem, contemplando progressão formativa e o desenvolvimento das\ncompetências digitais ao longo de toda a trajetória escolar.\nRegistra-se, por fim, como encaminhamentos pertinentes à implementação, a conveniência\nda criação de indicadores de avaliação e monitoramento, bem como a elaboração de um caderno com\norientações práticas destinado às escolas, de modo a apoiar a operacionalização e o acompanhamento do\ncurrículo na rede estadual de ensino.",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page5.json",
+              "ocr_reference_sha256": "bd32e13478c162dc8d5f12880f4650e91b8d206b481ba87ef4c837b913b20301",
+              "page": 5,
+              "section": "section_vi_considerations",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "dd536507585c4b4bcfdc4c0034786a097ce22981bb35d0d1f429f91f3c2e8aaf"
+            }
+          ],
+          "item_id": "ca:pi-parecer-190-2025:section:section_vi_considerations",
+          "text_sha256": "60a5bc6cdfdb10b5377984847e6abad22513834863888afa8f5085ac33fc0650"
+        }
+      ],
+      "name": "Análise e fundamentação",
+      "verified_item_ids": [
+        "ca:pi-parecer-190-2025:section:section_ii_context",
+        "ca:pi-parecer-190-2025:section:section_iii_analysis",
+        "ca:pi-parecer-190-2025:section:section_iv_stages",
+        "ca:pi-parecer-190-2025:section:section_v_teacher_infrastructure_assessment",
+        "ca:pi-parecer-190-2025:section:section_vi_considerations"
+      ]
+    },
+    {
+      "evidence": [
+        {
+          "excerpt": "VII – CONCLUSÃO E VOTO\nDiante do exposto, OPINO FAVORAVELMENTE à aprovação do Currículo da Computação do\nSistema Estadual do Piauí, contemplando a Educação Infantil, o Ensino Fundamental (Anos Iniciais em\nmodelo interdisciplinar e transvers",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 5,
+          "section": "pi190-section_vii_conclusion_vote",
+          "source_id": "pi-parecer-190-2025"
+        }
+      ],
+      "expected_item_ids": [
+        "ca:pi-parecer-190-2025:section:section_vii_conclusion_vote"
+      ],
+      "findings": [],
+      "item_checks": [
+        {
+          "evidence": [
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "VII – CONCLUSÃO E VOTO\nDiante do exposto, OPINO FAVORAVELMENTE à aprovação do Currículo da Computação do\nSistema Estadual do Piauí, contemplando a Educação Infantil, o Ensino Fundamental (Anos Iniciais em\nmodelo interdisciplinar e transversal e Anos Finais em modelo híbrido) e o Ensino Médio (modelo\ntransversal fortalecido pelo componente curricular de Inteligência Artificial).\nRecomenda-se sua implementação imediata no Sistema Estadual de Ensino, com\nacompanhamento contínuo das condições pedagógicas, formativas e tecnológicas.\nÉ o parecer, s.m.j.\nSala das Sessões Plenárias “PROFESSOR MARIANO DA SILVA NETO” do Conselho Estadual\nde Educação do Piauí, em Teresina, 16 de dezembro de 2025.\nConsª Ana Célia Furtado Orsano — Relatora\nO Plenário do Conselho Estadual de Educação do Piauí aprovou por unanimidade o parecer do relator.\nConsª Débora de Fátima Mendonça S. Cavalcanti\nPresidente do CEE/PI — em exercício",
+              "locator": "pi190/section_vii_conclusion_vote",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page5.json",
+              "ocr_reference_sha256": "bd32e13478c162dc8d5f12880f4650e91b8d206b481ba87ef4c837b913b20301",
+              "page": 5,
+              "section": "section_vii_conclusion_vote",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "dd536507585c4b4bcfdc4c0034786a097ce22981bb35d0d1f429f91f3c2e8aaf"
+            }
+          ],
+          "item_id": "ca:pi-parecer-190-2025:section:section_vii_conclusion_vote",
+          "text_sha256": "d10fc54445125a467c57b9738c55a461d8db29c02e5eb98120dbcfe77779f7fe"
+        }
+      ],
+      "name": "Voto,conclusão e decisão",
+      "verified_item_ids": [
+        "ca:pi-parecer-190-2025:section:section_vii_conclusion_vote"
+      ]
+    },
+    {
+      "evidence": [
+        {
+          "excerpt": "Documento assinado eletronicamente por DEBORA DE FÁTIMA MENDONÇA SANTOS -",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 5,
+          "section": "pi190-electronic_signature_block_1",
+          "source_id": "pi-parecer-190-2025"
+        },
+        {
+          "excerpt": "Conselheiro(a), em 18/12/2025, às 14:02, conforme horário oficial de Brasília, com fundamento no Cap. III, Art. 14 do Decreto Estadual nº 18.142, de 28 de fevereiro de 2019.",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 5,
+          "section": "pi190-electronic_signature_block_1",
+          "source_id": "pi-parecer-190-2025"
+        },
+        {
+          "excerpt": "Documento assinado eletronicamente por ANA CELIA FURTADO ORSANO -",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 5,
+          "section": "pi190-electronic_signature_block_2",
+          "source_id": "pi-parecer-190-2025"
+        },
+        {
+          "excerpt": "Conselheiro(a), em 19/12/2025, às 11:11, conforme horário oficial de Brasília, com fundamento no Cap. III, Art. 14 do Decreto Estadual nº 18.142, de 28 de fevereiro de 2019.",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 5,
+          "section": "pi190-electronic_signature_block_2",
+          "source_id": "pi-parecer-190-2025"
+        },
+        {
+          "excerpt": "A autenticidade deste documento pode ser conferida no site\nhttps://sei.pi.gov.br/sei/controlador_externo.php?acao=documento_conferir&id_orgao_acesso_externo=0, informando o código verificador\n0021707429 e o código CRC E060E53E.",
+          "method": "full_page_visual_cotejo_of_original_pdf",
+          "page": 6,
+          "section": "pi190-sei_validation_record",
+          "source_id": "pi-parecer-190-2025"
+        }
+      ],
+      "expected_item_ids": [
+        "ca:pi-parecer-190-2025:section:electronic_signature_block_1",
+        "ca:pi-parecer-190-2025:section:electronic_signature_block_2",
+        "ca:pi-parecer-190-2025:section:sei_validation_record"
+      ],
+      "findings": [],
+      "item_checks": [
+        {
+          "evidence": [
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "Documento assinado eletronicamente por DEBORA DE FÁTIMA MENDONÇA SANTOS -",
+              "locator": "pi190/electronic_signature_block_1",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page5.json",
+              "ocr_reference_sha256": "bd32e13478c162dc8d5f12880f4650e91b8d206b481ba87ef4c837b913b20301",
+              "page": 5,
+              "section": "electronic_signature_block_1",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "dd536507585c4b4bcfdc4c0034786a097ce22981bb35d0d1f429f91f3c2e8aaf"
+            },
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "Conselheiro(a), em 18/12/2025, às 14:02, conforme horário oficial de Brasília, com fundamento no Cap. III, Art. 14 do Decreto Estadual nº 18.142, de 28 de fevereiro de 2019.",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page5.json",
+              "ocr_reference_sha256": "bd32e13478c162dc8d5f12880f4650e91b8d206b481ba87ef4c837b913b20301",
+              "page": 5,
+              "section": "electronic_signature_block_1",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "dd536507585c4b4bcfdc4c0034786a097ce22981bb35d0d1f429f91f3c2e8aaf"
+            }
+          ],
+          "item_id": "ca:pi-parecer-190-2025:section:electronic_signature_block_1",
+          "text_sha256": "2fe27d5523d91fd3229af01c971563d095d2b32392d9c5ebf05a4f73a7a2c771"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "Documento assinado eletronicamente por ANA CELIA FURTADO ORSANO -",
+              "locator": "pi190/electronic_signature_block_2",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page5.json",
+              "ocr_reference_sha256": "bd32e13478c162dc8d5f12880f4650e91b8d206b481ba87ef4c837b913b20301",
+              "page": 5,
+              "section": "electronic_signature_block_2",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "dd536507585c4b4bcfdc4c0034786a097ce22981bb35d0d1f429f91f3c2e8aaf"
+            },
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "Conselheiro(a), em 19/12/2025, às 11:11, conforme horário oficial de Brasília, com fundamento no Cap. III, Art. 14 do Decreto Estadual nº 18.142, de 28 de fevereiro de 2019.",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page5.json",
+              "ocr_reference_sha256": "bd32e13478c162dc8d5f12880f4650e91b8d206b481ba87ef4c837b913b20301",
+              "page": 5,
+              "section": "electronic_signature_block_2",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "dd536507585c4b4bcfdc4c0034786a097ce22981bb35d0d1f429f91f3c2e8aaf"
+            }
+          ],
+          "item_id": "ca:pi-parecer-190-2025:section:electronic_signature_block_2",
+          "text_sha256": "b3d1ee783b81fb0c8c2e1c0061f93cf2d259ccbc3b80c1350c31c103bfd861e6"
+        },
+        {
+          "evidence": [
+            {
+              "bbox": [
+                0,
+                0,
+                10000,
+                10000
+              ],
+              "excerpt": "A autenticidade deste documento pode ser conferida no site\nhttps://sei.pi.gov.br/sei/controlador_externo.php?acao=documento_conferir&id_orgao_acesso_externo=0, informando o código verificador\n0021707429 e o código CRC E060E53E.",
+              "locator": "pi190/sei_validation_record",
+              "method": "source-image-visual-reviewed-ocr-partition-v1",
+              "ocr_reference_path": "var/private-evidence/source-audit-northeast/pi190-reviewed-page6.json",
+              "ocr_reference_sha256": "17fc13d37c8763b13a734d2d37ebd4be9c9932b17c818df03910a52916b1f4cb",
+              "page": 6,
+              "section": "sei_validation_record",
+              "source_artifact_sha256": "049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea",
+              "source_id": "pi-parecer-190-2025",
+              "source_image_sha256": "20c4146843823ccce4d0ecb76e4b8e3f11b4c412549ba8c093f768cefdb4e5bf"
+            }
+          ],
+          "item_id": "ca:pi-parecer-190-2025:section:sei_validation_record",
+          "text_sha256": "0b5fe489472e43c11f7a1f6db808a04608b565393d704a3bb04bf4db4b672239"
+        }
+      ],
+      "name": "Assinaturas",
+      "verified_item_ids": [
+        "ca:pi-parecer-190-2025:section:electronic_signature_block_1",
+        "ca:pi-parecer-190-2025:section:electronic_signature_block_2",
+        "ca:pi-parecer-190-2025:section:sei_validation_record"
+      ]
+    }
+  ],
+  "pedagogical_review_status": "not_reviewed",
+  "pending_parts": [],
+  "reconciliation_scope": "whole_source",
+  "reconciliation_status": "automated_own_source_documentary_reconciled_v2",
+  "reviewed_at": "2026-10-31T13:36:29.907612+00:00",
+  "source_id": "pi-parecer-190-2025",
+  "v2_current_runtime_verification": {
+    "adapter_candidate_path": "data/manifests/uncoded/pi-parecer-190-2025-items.json",
+    "adapter_sha256": "d208c91f20f7ac59f816c0a13dad4f9f304e5774db7235a2caec2dc875c77b20",
+    "cache_path": "data/extracted/049a17c458d44478b91f4a25bc78ebde1f08f38f7a72d549eaa9c2e71e02f3ea-page-cell-v1.5.0.json",
+    "cache_sha256": "5ad94adb2b5a1d52cf366873166993d79b2f24c0358c40fea458087b43393eb9",
+    "extraction_config_sha256": "d9fc0dccd0f9631555e8460a4633c091d08e835355d89e7c23b6cfc66b7b72e6",
+    "parser_fingerprint": {
+      "algorithm": "sha256-of-sorted-parser-file-digests",
+      "files": {
+        "document_roles.py": "ea4e0b161d015f6e87e4fa2b7dde202e1605815efff1e6ec48adf137f311a20f",
+        "geometry.py": "f0f2f7230602a051712fd116bce3c9d62bcb3e316d07412f8ed7ff3cda37467d",
+        "ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+        "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
+        "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
+        "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
+        "runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce"
+      },
+      "sha256": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+    },
+    "primary_inventory_path": "docs/evidence/source-audit-northeast/pi-parecer190-primary-inventory-20261031.json",
+    "primary_inventory_sha256": "93fa58488a0565272c7d9a40520e51a7501cbe1661c31f7a09ccf35ab55931f6",
+    "privacy_policy": "employee_registration_numbers_omitted_from_public_signature_items",
+    "runtime": {
+      "implementation": "CPython",
+      "pillow": "13.0.0",
+      "pymupdf": "1.26.7",
+      "python": "3.11.15"
+    },
+    "visual_review_pages": 6,
+    "visual_review_path": "docs/evidence/source-audit-northeast/pi-parecer190-visual-structure-review-20261031.json",
+    "visual_review_sha256": "514732127a9528d95ae36a99a4f9bb08aa5d90aab65dc151d37758b48b5306e0",
+    "visual_review_status": "complete_all_pages"
+  },
+  "v2_gate_result": {
+    "accounted_item_count": 11,
+    "actual_item_count": 11,
+    "gate_version": "reconciliation-gate/2.0",
+    "issues": [],
+    "own_source_reconciled": true,
+    "required_related_documents": [],
+    "whole_source_reconciled": true
+  }
+}

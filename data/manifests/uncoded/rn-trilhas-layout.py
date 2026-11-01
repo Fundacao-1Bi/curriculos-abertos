@@ -73,12 +73,16 @@ def scopes_for_units(pages,census,cards=None):
    if not b['printed_scope_label'] and covers:
     redundant.append({'page':b['page'],'path_index':b['path_index'],'bbox':b['bbox'],'covered_by_path_index':covers[0]['path_index']});continue
    bars.append(b)
-  bynumber={};previous_scope=None;sequence=[]
+  bynumber={};sequence=[]
   for b in bars:
    label=b['printed_scope_label']
    if not label:
-    assert previous_scope is not None
-    b['scope_role']=previous_scope['scope_role'];b['continued_scope_from']={'page':previous_scope['page'],'path_index':previous_scope['path_index'],'label_evidence':previous_scope['label_evidence']};b['effective_label']=previous_scope['effective_label'];b['label_evidence']=previous_scope['label_evidence']
+    # A bare vector line has no printed module/UC identity. In particular,
+    # carrying the previous label across a column or page can assign the line
+    # to an unrelated module. Keep the geometry in the evidence, but do not
+    # let it create module identity or ownership.
+    b['scope_role']='unmatched';b['scope_disposition']='unclassified_visual_line_without_printed_scope_label'
+    continue
    else:
     b['effective_label']=label['text'];b['label_evidence']={'page':b['page'],'bbox':label['bbox'],'text':label['text']}
    if b['scope_role']=='module':
@@ -87,7 +91,6 @@ def scopes_for_units(pages,census,cards=None):
     module=bynumber[number];module['physical_scopes'].append({'page':b['page'],'column':b['column'],'path_index':b['path_index'],'bbox':b['bbox'],'printed_label':label,'continued_scope_from':b.get('continued_scope_from')});b['owner_key']=module['technical_key']
     if not sequence or sequence[-1]!=number:sequence.append(number)
    else:b['owner_key']=unit['technical_key']
-   previous_scope=b
   if set(bynumber)!=set(['1','2']) or sequence!=['1','2']:
    anomalies.append({'unit_key':unit['technical_key'],'printed_module_numbers':list(bynumber),'printed_label_sequence':sequence,'disposition':'Literal module labels preserved; no number inferred or repaired.'})
   results.append({'unit':unit,'bars':bars,'modules':list(bynumber.values()),'redundant_unlabelled_strokes':redundant})
@@ -127,7 +130,7 @@ def body_chunks(displays,units):
  for u in units:
   unit=u['unit'];key=unit['technical_key'];states={};prev_global=None;column_last={}
   def owner(line):
-   _,cy=center(line['bbox']);matches=[b for b in u['bars'] if b['page']==line['page'] and b['column']==line['column'] and b['bbox'][1]-.5<=cy<=b['bbox'][3]+.5]
+   _,cy=center(line['bbox']);matches=[b for b in u['bars'] if b.get('owner_key') and b['page']==line['page'] and b['column']==line['column'] and b['bbox'][1]-.5<=cy<=b['bbox'][3]+.5]
    return min(matches,key=lambda b:b['bbox'][3]-b['bbox'][1])['owner_key'] if matches else key
   for pn in range(unit['start_page'],unit['end_page']+1):
    for col in [0,1]:

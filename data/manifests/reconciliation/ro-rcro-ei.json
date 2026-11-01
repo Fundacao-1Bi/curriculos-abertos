@@ -159208,12 +159208,24 @@
   "reconciliation_scope": "whole_source",
   "reconciliation_status": "automated_own_source_documentary_reconciled_v2",
   "reviewed_at": "2026-10-28T18:55:05.899177+00:00",
+  "runtime_refresh": {
+    "actor_id": "local-venv-cache-refresh-2026-11-01",
+    "actor_type": "automated",
+    "current_cache_sha256": "891044bb504c7398300d9a72be05f16d6df414ff3d052d8a66f4777ea489872e",
+    "method": "Forced extraction in the pinned local venv; accepted only after exact item payloads (excluding event timestamps), page text, and active-publication source reconciliation matched.",
+    "page_text_unchanged": true,
+    "previous_cache_sha256": "52a9372c6dc355a5af90e554918562395e4f3626f3d31c8315e4ccc16232e9cd",
+    "refreshed_at": "2026-11-01T03:49:37.597211+00:00",
+    "semantic_items_unchanged": true,
+    "source_gate_issues": [],
+    "source_gate_revalidated": true
+  },
   "source_id": "ro-rcro-ei",
   "v2_current_runtime_verification": {
     "adapter_sha256": "614d26c2a9ef233ad290d0b879a934954a7eaa9be0eca209c31177b539e9d8a7",
     "cache_path": "data/extracted/ab2d01a92bf251cd0f6177013a840543eb3ca837ede374f74b2c2d2f0abd355d-page-cell-v1.5.0.json",
-    "cache_sha256": "52a9372c6dc355a5af90e554918562395e4f3626f3d31c8315e4ccc16232e9cd",
-    "extraction_config_sha256": "776401766aff1c037826e22c1f2072e1c5ada89db048f9cb4574ef304e53f179",
+    "cache_sha256": "891044bb504c7398300d9a72be05f16d6df414ff3d052d8a66f4777ea489872e",
+    "extraction_config_sha256": "cf5aee5cb1a5f0905456bbcf5e98d1e0d666ed0adb32ea86142eb5777f9e3fe9",
     "painted_glyph_census_execution_method": "Equivalent inline get_texttrace census executed in this session before the no-additional-parser coordination notice. Script saved afterward; not reexecuted during pressure. Per-page output was not retained, and is not invented here.",
     "painted_glyph_census_sha256": "a20927a2e45ac8141598eac5c882462ad58624fe7f4659d25f2e492546e53e0b",
     "parser_fingerprint": {
@@ -159221,20 +159233,22 @@
       "files": {
         "document_roles.py": "ea4e0b161d015f6e87e4fa2b7dde202e1605815efff1e6ec48adf137f311a20f",
         "geometry.py": "f0f2f7230602a051712fd116bce3c9d62bcb3e316d07412f8ed7ff3cda37467d",
-        "ingest.py": "43596d25adc3db4ae40b54bf16ff1b78ff789cff0ab37f89d559866a8aa32368",
+        "ingest.py": "78e9c44bec289453a81b0513a65bfd4665bf0304bd307466902416b8840d20da",
         "native_glyphs.py": "1d5a0330415ba3cd3797a3e3f43aa82fcd67600d4f23ab0956b3cb13db013fba",
         "ne_geometry.py": "177a140bb1907a5f585cd7eaf8ddfd70593bd3c8fffee5b70f5cd2f4b0529aca",
         "ocr.py": "1578f81200498d598dd986f4f2c23eb072448a9f0e483ecec2ec548868d3a56f",
         "runtime.py": "2c0af19c250a4abaa47a32fe343d0716a747840a78848733e8c17652bd615bce"
       },
-      "sha256": "a2188a0ed10a80f7a71a38e0a9a716d77f2c034f48b83e69bc461ee8614d94df"
+      "sha256": "64de1291c5a58d4b5705c3580ef061c8a153c16fb4447ecec61552e04f8b3f9f"
     },
+    "path": "data/extracted/ab2d01a92bf251cd0f6177013a840543eb3ca837ede374f74b2c2d2f0abd355d-page-cell-v1.5.0.json",
     "runtime": {
       "implementation": "CPython",
       "pillow": "13.0.0",
       "pymupdf": "1.26.7",
       "python": "3.11.15"
     },
+    "sha256": "891044bb504c7398300d9a72be05f16d6df414ff3d052d8a66f4777ea489872e",
     "source_inventory_sha256": "9d6d9d942a64a65b64434bd92c418ed48d0c55aef7a9f1a5faf1de45ecca3339"
   },
   "v2_gate_result": {

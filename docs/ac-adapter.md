@@ -37,14 +37,25 @@ Os seis códigos nativos `EIO2EF03`, `EIO2EF04`, `EIO2EF08`, `EIO3EF03`, `EIO3EF
 
 Problemas encontrados e corrigidos sistematicamente: menções em prosa a Quadro Organizador confundidas com títulos; cabeçalhos na página seguinte; continuações acima de um novo título na mesma página; sugestões de experiências no singular; 17 parágrafos normativos sem bullet; e o título `4.2 Anos finais` sem ponto final, que poderia anexar narrativa ao objetivo anterior. O diagnóstico de parágrafos remanescentes e os resultados de borda estão preservados junto às evidências.
 
+## Contexto documental adicional e composição atual
+
+O sidecar de aprendizagem continua com 2.191 itens, SHA-256 `6309ec0a74b6b8ddb63b6c07ec59ad15f165bd0c7f07e19067ff2a075def3886`. O manifesto agora aponta `uncoded_items_path` para o composto `data/manifests/uncoded/ac-source-items.json`, SHA-256 `7d81517fc115dc60deb667fdf8f9ec5650f39afd8b041598bf8d3d7b17d502c7`: os 2.191 itens originais, byte a byte, mais dois fragmentos contextuais curtos das pp.625 e 830. Eles estão em `kind=secao_normativa`, sem código, ano ou tipagem de aprendizagem; qualquer etapa/componente finalizado vem apenas da faixa de seção já mapeada no manifesto.
+
+- p.625: continuação de uma célula de avaliação do quadro de Ginásticas, 8º ano de Educação Física: `identificá-los no contexto em que os alunos vivem, dentro e fora da escola.`
+- p.830: bullet na coluna de conteúdos da tabela de Espanhol, continuação de p.829–831: `Respeito às diferenças.` A ocorrência da p.830 foi mantida mesmo com repetição literal na página anterior porque é uma localização física distinta.
+
+O gerador `data/manifests/uncoded/ac-compose-source-items.py` valida o SHA do PDF, o SHA do sidecar-base e a literalidade de ambos os fragmentos antes de escrever o composto. A cache v1.5 foi reextraída após a troca do `uncoded_items_path`; a auditoria atual conta 3.885 itens finais com zero falhas literais. Isso preserva contexto curto, mas não substitui o inventário documental integral nem torna a fonte pronta.
+
 ## Arquivos e reprodução
 
-Sidecar: `data/manifests/uncoded/ac-objectives-items.json` (2.191 itens). SHA-256: `6309ec0a74b6b8ddb63b6c07ec59ad15f165bd0c7f07e19067ff2a075def3886`.
+Sidecar-base de aprendizagem: `data/manifests/uncoded/ac-objectives-items.json` (2.191 itens). SHA-256: `6309ec0a74b6b8ddb63b6c07ec59ad15f165bd0c7f07e19067ff2a075def3886`. O consumidor do pipeline usa o sidecar composto `ac-source-items.json` descrito acima.
 
 ```sh
 # Python 3.11.15 e PyMuPDF 1.26.7 preparados no ambiente
 var/venv-pipeline/bin/python data/manifests/uncoded/ac-extract-objectives.py --render-samples
 var/venv-pipeline/bin/python data/manifests/uncoded/ac-independent-inventory.py
+# Após regenerar a sidecar-base, compor e validar os fragmentos contextuais.
+var/venv-pipeline/bin/python data/manifests/uncoded/ac-compose-source-items.py
 # Apenas repetir conferência de fragmentos já extraídos
 var/venv-pipeline/bin/python data/manifests/uncoded/ac-extract-objectives.py --validate-only
 ```
@@ -55,6 +66,6 @@ Os comandos retornam código diferente de zero quando as suas verificações fal
 
 **Implementado, executado e verificado:** a extração integral das colunas de objetivos/capacidades e dos recortes normativos acima, com proveniência, hierarquia, denominador independente e conferência técnica. Não há bloqueio externo nesta frente.
 
-**Não equivale a fonte ou UF pronta:** introdução, competências gerais/de área, demais contextos normativos, vigência/edição e a reconciliação final de todas as partes permanecem responsabilidade da integração documental nacional. `source_ready` permanece falso no relatório independente para impedir que este passe de aprendizagem seja utilizado como aprovação automática da fonte inteira. A publicação nacional e as jornadas API/MCP/portal do snapshot integrado devem ser verificadas pela coordenação após a carga deste sidecar.
+**Não equivale a fonte ou UF pronta:** o recibo SourceWhole V2 instalado localmente reconcilia o documento fixado, incluindo páginas preliminares agrupadas sob `Texto introdutório` somente como contexto documental, sem alegar pertencimento curricular. Edição, vigência, aplicabilidade atual, aprovação pedagógica e prontidão da UF continuam sem comprovação. `source_ready` permanece falso no relatório independente de âncoras; o passe de aprendizagem e o recibo técnico não substituem aprovação atual da fonte inteira. A publicação nacional e as jornadas API/MCP/portal do snapshot integrado devem ser verificadas pela coordenação após a carga deste sidecar.
 
 Checkpoint: não reimplementar este adaptador nem substituir os registros por páginas genéricas. Reutilizar os arquivos, checksums e inventários existentes; alterações de fonte devem gerar reprocessamento identificável. O portal não foi alterado durante esta frente.

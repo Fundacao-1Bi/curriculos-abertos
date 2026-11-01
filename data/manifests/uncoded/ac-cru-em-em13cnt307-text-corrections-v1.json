@@ -1,0 +1,32 @@
+{
+  "format": "record_text_corrections_v1",
+  "source_id": "ac-cru-em",
+  "source_sha256": "9ff75d1d5d9397aa145dccedd8023a01ed3b862692f58bb7d2cb2c84fc7602ad",
+  "actor_type": "automated",
+  "actor_id": "curriculos-abertos:ac-cru-em-literal-correction",
+  "generated_at": "2026-10-31T15:53:45.140847+00:00",
+  "previous_publications_immutable": true,
+  "official_curriculum_edition_changed": false,
+  "records": [
+    {
+      "item_id": "ca:ac-cru-em:c17ec3acf54fb31d73ae",
+      "before_text_sha256": "9a3299ddb824d94ed79f89715d7afbf13f990b0dcfb1a9dc81ef80264c5fc96f",
+      "after_text_sha256": "40a78ef06fa438b65588da0cecb41085d5252cd46a7c7be8fa631109a7f738b6",
+      "before_text": "Analisar aplicações (industriais, sustentáveis considerando empedra mais? Por fogo e gelo (nem todo micro-ondas e a química coletadas junto aos cozinha.",
+      "after_text": "Analisar as propriedades dos materiais para avaliar a adequação de seu uso em diferentes aplicações (industriais, cotidianas, arquitetônicas ou tecnológicas) e/ ou propor soluções seguras e sustentáveis considerando seu contexto local e cotidiano.",
+      "reason": "OCR/layout extraction mixed this skill with the neighboring Conteúdo Programático and Metodologia paragraphs. The source PDF and page image show the exact same-code skill body within the pinned Habilidades e Competências heading. The correction is limited to literal text; the unreviewed source position remains unchanged.",
+      "proofs": [
+        {
+          "path": "docs/evidence/source-audit-ac/ac-cru-em-em13cnt307-text-correction-proof-20261031.json",
+          "sha256": "74464626585a20cf969924f07ad2bdd3c8920fcabc492fefbce40f79871d1d0b",
+          "selector": {
+            "source_id": "ac-cru-em",
+            "item_id": "ca:ac-cru-em:c17ec3acf54fb31d73ae",
+            "physical_page": 58,
+            "code": "EM13CNT307"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -344,7 +344,11 @@
         "status": "pending_primary_curricular_artifact"
       }
     ],
-    "uncoded_items_path": "data/manifests/uncoded/ac-objectives-items.json",
+    "non_curricular_code_pages": [
+      1416,
+      1444
+    ],
+    "uncoded_items_path": "data/manifests/uncoded/ac-source-items.json",
     "adapter_authority": {
       "coded_learning_pages": [
         47,
@@ -446,7 +450,15 @@
       "records": 1292,
       "actor_type": "automated",
       "scope": "AC EM FGB reviewed pages and previous PV, not whole source"
-    }
+    },
+    "technical_extraction_corrections": [
+      {
+        "format": "record_text_corrections_v1",
+        "path": "data/manifests/uncoded/ac-cru-em-em13cnt307-text-corrections-v1.json",
+        "sha256": "9dbaa38236e1e6fec1a3c2f5f781f3d975a5cb0865153ddd62502c9dc73d30c4",
+        "scope": "technical_extraction_correction"
+      }
+    ]
   },
   {
     "id": "am-rca-ei",
@@ -12371,7 +12383,14 @@
     "application_period": null,
     "document_type": "referencial_curricular",
     "normative_parts": [
-      "Documento integral; reconciliação de índice e partes pendente"
+      "Elementos pré-textuais (capa, créditos e sumário; páginas físicas 1–14)",
+      "Apresentação (página física 15)",
+      "Capítulo I — Educação Infantil como política (páginas físicas 16–24)",
+      "Capítulo II — Diversidade e identidade cultural do Tocantins (páginas físicas 25–30)",
+      "Capítulo III — Os profissionais e a formação docente (páginas físicas 31–35)",
+      "Capítulo IV — Organização do trabalho pedagógico (páginas físicas 36–48)",
+      "Capítulo V — Direitos de aprendizagem e experiências cotidianas (páginas físicas 49–103)",
+      "Referências e elementos finais (páginas físicas 104–110)"
     ],
     "redistribution": "Condição de redistribuição não estabelecida; snapshot privado para conferência. Direitos da fonte preservados.",
     "collected_at": "2026-10-28T03:28:09.202061+00:00",
@@ -12409,6 +12428,43 @@
         "Espaços, tempos, quantidades, relações e transformações"
       ]
     },
+    "stage_component_inventory_evidence": [
+      {
+        "stage": "EI",
+        "components": ["O eu, o outro e o nós"],
+        "source_pages": [54, 55, 56, 57, 58, 59, 60, 61, 62, 63],
+        "excerpt": "Campo de experiência ‘O eu, o outro e o nós’ (p. 54); os objetivos EI01EO01–EI03EO07 estão no organizador das páginas físicas 54–63.",
+        "scope_note": "Associação de escopo restrita ao cabeçalho e às células de objetivos, detalhamentos e sugestões do campo EO, contabilizadas independentemente por código. Não projeta a parte inteira do Capítulo V, que contém outros campos e definições comuns de direitos."
+      },
+      {
+        "stage": "EI",
+        "components": ["Corpo, gestos e movimentos"],
+        "source_pages": [65, 66, 67, 68, 69, 70, 71],
+        "excerpt": "Campo de experiência ‘Corpo, gestos e movimentos’ (p. 65); os objetivos EI01CG01–EI03CG05 estão no organizador das páginas físicas 65–71.",
+        "scope_note": "Associação de escopo restrita ao cabeçalho e às células de objetivos, detalhamentos e sugestões do campo CG, contabilizadas independentemente por código. Não projeta a parte inteira do Capítulo V, que contém outros campos e definições comuns de direitos."
+      },
+      {
+        "stage": "EI",
+        "components": ["Traços, sons, cores e formas"],
+        "source_pages": [73, 74, 75, 76],
+        "excerpt": "Campo de experiência ‘Traços, sons, cores e formas’ (p. 73); os objetivos EI01TS01–EI03TS03 estão no organizador das páginas físicas 73–76.",
+        "scope_note": "Associação de escopo restrita ao cabeçalho e às células de objetivos, detalhamentos e sugestões do campo TS, contabilizadas independentemente por código. Não projeta a parte inteira do Capítulo V, que contém outros campos e definições comuns de direitos."
+      },
+      {
+        "stage": "EI",
+        "components": ["Escuta, fala, pensamento e imaginação"],
+        "source_pages": [78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91],
+        "excerpt": "Campo de experiência ‘Escuta, fala, pensamento e imaginação’ (p. 78); os objetivos EI01EF01–EI03EF09 estão no organizador das páginas físicas 78–91.",
+        "scope_note": "Associação de escopo restrita ao cabeçalho e às células de objetivos, detalhamentos e sugestões do campo EF, contabilizadas independentemente por código. Não projeta a parte inteira do Capítulo V, que contém outros campos e definições comuns de direitos."
+      },
+      {
+        "stage": "EI",
+        "components": ["Espaços, tempos, quantidades, relações e transformações"],
+        "source_pages": [93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103],
+        "excerpt": "Campo de experiência ‘Espaços, tempos, quantidades, relações e transformações’ (p. 93); os objetivos EI01ET01–EI03ET08 estão no organizador das páginas físicas 93–103.",
+        "scope_note": "Associação de escopo restrita ao cabeçalho e às células de objetivos, detalhamentos e sugestões do campo ET, contabilizadas independentemente por código. Não projeta a parte inteira do Capítulo V, que contém outros campos e definições comuns de direitos."
+      }
+    ],
     "temporal_note": "Resolução24/2019 citada na apresentação confirma homologação; edição/data de publicação específica não inferidas dessa data.",
     "uncoded_items_path": "data/manifests/uncoded/to-ei-rights-v3-items.json",
     "adapter_authority": {
@@ -17353,8 +17409,8 @@
     "status": "acquired",
     "mandatory": true,
     "expected": true,
-    "inventory_status": "in_progress",
-    "reconciliation_status": "pending",
+    "inventory_status": "complete_primary_document_visual_inventory",
+    "reconciliation_status": "whole_source_reconciled_v2",
     "allowed_redirect_hosts": [
       "drive.usercontent.google.com"
     ],
@@ -17384,6 +17440,49 @@
       "page": 1,
       "verification": "visual_source_page_and_OCR",
       "image_path": "data/raw/AM/am-aprovacao-em-85-2021.p1.png"
+    },
+    "uncoded_items_path": "data/manifests/uncoded/am-aprovacao-em-85-2021-items.json",
+    "adapter_authority": {
+      "uncoded_page_sections_pages": [
+        1,
+        2
+      ]
+    },
+    "inventory_complete": true,
+    "inventory_evidence": [
+      {
+        "page": 1,
+        "section": "Resolution text: heading, preamble and Articles 1–3",
+        "method": "source-image-visual-reviewed-ocr-partition-v1",
+        "path": "docs/evidence/source-audit-am-85-2021/primary-visual-inventory.json",
+        "sha256": "1b86e4203a64adac4042c063737e6af4615f1b5d14bedf16a3823e142d5c99a8",
+        "excerpt": "RESOLUÇÃO AD REFERENDUM N.º 085, DE 21 DE JULHO DE 2021."
+      },
+      {
+        "page": 2,
+        "section": "Publication and signatory block",
+        "method": "source-image-visual-reviewed-ocr-partition-v1",
+        "path": "docs/evidence/source-audit-am-85-2021/primary-visual-inventory.json",
+        "sha256": "1b86e4203a64adac4042c063737e6af4615f1b5d14bedf16a3823e142d5c99a8",
+        "excerpt": "CIENTIFIQUE-SE, PUBLIQUE-SE E CUMPRA-SE."
+      }
+    ],
+    "visual_transcription_sidecar_sha256": "6c6575be19e8759fe388d28ef41adc5d38a7bd2257f84e38f005347f54fdb124",
+    "document_verification": {
+      "actor_type": "automated",
+      "actor_id": "codex:am85-primary-visual-review",
+      "source_sha256": "b2e542813b6b5432a0d25a62e11824129a6c5c97d6552b48ae31b2e47d7053c4",
+      "inventory_path": "docs/evidence/source-audit-am-85-2021/primary-visual-inventory.json",
+      "inventory_sha256": "1b86e4203a64adac4042c063737e6af4615f1b5d14bedf16a3823e142d5c99a8",
+      "sidecar_path": "data/manifests/uncoded/am-aprovacao-em-85-2021-items.json",
+      "sidecar_sha256": "6c6575be19e8759fe388d28ef41adc5d38a7bd2257f84e38f005347f54fdb124",
+      "pages_visually_reviewed": 2,
+      "pedagogical_review": false,
+      "whole_source_reconciled": true,
+      "reconciliation_receipt_path": "data/manifests/reconciliation/am-aprovacao-em-85-2021.json",
+      "reconciliation_receipt_sha256": "cccf13b43fc0a611772c3f2afeb27c5e0d0ab841851e60c30f6891e068b8d172",
+      "runtime_verification_path": "data/extracted/b2e542813b6b5432a0d25a62e11824129a6c5c97d6552b48ae31b2e47d7053c4-page-cell-v1.5.0.json",
+      "runtime_verification_sha256": "f52c6965644d5667adb827905f49fc62f293890821a2e7848164c402080102a8"
     }
   },
   {
